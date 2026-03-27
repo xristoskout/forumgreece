@@ -1,825 +1,739 @@
 "use client";
 
+import { useMemo, useState } from "react";
 import Link from "next/link";
-import { useState } from "react";
 
 type Lang = "en" | "el";
 
-type CardItem = {
-  title: string;
-  subtitle?: string;
-  description: string;
+type Localized = {
+  en: string;
+  el: string;
+};
+
+type Category = {
+  title: Localized;
+  description: Localized;
+  emoji: string;
+};
+
+type Destination = {
+  name: string;
+  region: Localized;
+  blurb: Localized;
   image: string;
-  href?: string;
+};
+
+type GuideCard = {
+  title: Localized;
+  description: Localized;
+  image: string;
+};
+
+type HotelCard = {
+  name: string;
+  place: string;
+  info: Localized;
+  image: string;
   badge?: string;
 };
 
-type FeatureTile = {
-  title: string;
-  description: string;
+type FoodCard = {
+  title: Localized;
+  place: string;
+  info: Localized;
+  image: string;
 };
 
-type TextBundle = {
-  brandTagline: string;
-  nav: string[];
-  heroBadge: string;
-  heroTitle: string;
-  heroDescription: string;
-  heroPrimary: string;
-  heroSecondary: string;
-  sectionLabels: {
-    collections: string;
-    destinations: string;
-    travelInfo: string;
-    hotels: string;
-    eatDrink: string;
-    community: string;
-  };
-  sectionTitles: {
-    collections: string;
-    destinations: string;
-    travelInfo: string;
-    hotels: string;
-    eatDrink: string;
-    community: string;
-  };
-  sectionDescriptions: {
-    collections: string;
-    destinations: string;
-    travelInfo: string;
-    hotels: string;
-    eatDrink: string;
-    community: string;
-  };
-  featureTiles: FeatureTile[];
-  destinations: CardItem[];
-  travelInfo: CardItem[];
-  hotels: CardItem[];
-  eatDrink: CardItem[];
-  communities: CardItem[];
-  footer: {
-    description: string;
-    links: string[];
-  };
-  discoverMoreLabel: string;
-  openPageLabel: string;
+type CommunityCard = {
+  title: Localized;
+  description: Localized;
+  href: string;
 };
-
-const content: Record<Lang, TextBundle> = {
-  en: {
-    brandTagline: "Greece travel guide, destinations and communities",
-    nav: ["Destinations", "Travel Info", "Hotels", "Eat & Drink", "Communities"],
-    heroBadge: "Destinations • Travel Info • Hotels • Eat & Drink",
-    heroTitle: "Explore Greece with a modern travel-guide style",
-    heroDescription:
-      "ForumGreece becomes a modern Greece travel portal with destination inspiration, practical travel tips, hotel suggestions, food guides and travel communities.",
-    heroPrimary: "Explore Destinations",
-    heroSecondary: "Travel to Greece",
-    sectionLabels: {
-      collections: "Main sections",
-      destinations: "Destinations",
-      travelInfo: "Travel Info",
-      hotels: "Hotels",
-      eatDrink: "Eat & Drink",
-      community: "Travel to Greece",
-    },
-    sectionTitles: {
-      collections: "A structure closer to a premium Greece travel portal",
-      destinations: "Popular destinations in Greece",
-      travelInfo: "Useful travel info before you go",
-      hotels: "Suggested hotel collections",
-      eatDrink: "Where to eat and drink",
-      community: "Travel forums and Facebook communities",
-    },
-    sectionDescriptions: {
-      collections:
-        "The homepage is organized around the travel mindset you asked for: destination discovery, practical planning, accommodation, food and community.",
-      destinations:
-        "Each destination can later open into beaches, things to do, hotels, restaurants and local tips.",
-      travelInfo:
-        "These cards work as entry points for transport, island hopping, family travel, maps and practical planning.",
-      hotels:
-        "A dedicated accommodation section gives the site a stronger tourism identity and opens the door for sponsored listings.",
-      eatDrink:
-        "Food and nightlife content gives the portal a warmer and more lifestyle-driven feeling.",
-      community:
-        "This section can lead to your Facebook forums, destination groups and future community pages.",
-    },
-    featureTiles: [
-      {
-        title: "Destinations",
-        description: "Islands, mainland, cities and beach escapes",
-      },
-      {
-        title: "Travel Info",
-        description: "Ferries, airports, transport and planning tips",
-      },
-      {
-        title: "Hotels",
-        description: "Accommodation suggestions and premium listings",
-      },
-      {
-        title: "Eat & Drink",
-        description: "Restaurants, tavernas, bars and local flavors",
-      },
-    ],
-    destinations: [
-      {
-        title: "Santorini",
-        subtitle: "Cyclades",
-        description:
-          "Volcanic views, iconic villages, sunset spots and romantic stays.",
-        image: "/images/santorini.jpg",
-      },
-      {
-        title: "Crete",
-        subtitle: "Greek Islands",
-        description:
-          "Big landscapes, beaches, food culture and unforgettable road trips.",
-        image: "/images/crete.jpg",
-      },
-      {
-        title: "Corfu",
-        subtitle: "Ionian Islands",
-        description:
-          "Elegant old town, green scenery, beaches and family-friendly escapes.",
-        image: "/images/corfu.jpg",
-      },
-      {
-        title: "Nafplio",
-        subtitle: "Mainland Greece",
-        description:
-          "Weekend breaks, seaside walks, history and atmospheric dining.",
-        image: "/images/nafplio.jpg",
-      },
-    ],
-    travelInfo: [
-      {
-        title: "How to Travel Around Greece",
-        description:
-          "Flights, ferries, buses, car rental and island-hopping ideas.",
-        image: "/images/ferries.jpg",
-      },
-      {
-        title: "Best Time to Visit",
-        description:
-          "Seasonal tips for summer islands, spring escapes and autumn road trips.",
-        image: "/images/seasons.jpg",
-      },
-      {
-        title: "Family Travel Tips",
-        description:
-          "Ideas for parents, calmer beaches, kid-friendly stays and easy routes.",
-        image: "/images/family.jpg",
-      },
-      {
-        title: "Maps & Local Planning",
-        description:
-          "How to organize beaches, attractions, day trips and local experiences.",
-        image: "/images/map.jpg",
-      },
-    ],
-    hotels: [
-      {
-        title: "Boutique Hotels",
-        description:
-          "Stylish stays for couples, city breaks and romantic island holidays.",
-        image: "/images/hotel-boutique.jpg",
-        badge: "Featured",
-      },
-      {
-        title: "Family Resorts",
-        description:
-          "Comfortable stays with pools, beach access and easy family planning.",
-        image: "/images/hotel-family.jpg",
-        badge: "Sponsored",
-      },
-      {
-        title: "Seaside Villas",
-        description:
-          "Private space, sea views and premium summer accommodation ideas.",
-        image: "/images/hotel-villa.jpg",
-        badge: "Top pick",
-      },
-    ],
-    eatDrink: [
-      {
-        title: "Traditional Taverns",
-        description:
-          "Authentic Greek food, local recipes and warm village atmosphere.",
-        image: "/images/taverna.jpg",
-      },
-      {
-        title: "Beach Bars",
-        description:
-          "Sunset cocktails, coastal views and summer island energy.",
-        image: "/images/beach-bar.jpg",
-      },
-      {
-        title: "Food Experiences",
-        description:
-          "Greek breakfast, wine tasting, seafood spots and local desserts.",
-        image: "/images/food.jpg",
-      },
-    ],
-    communities: [
-      {
-        title: "Travel to Greece",
-        description:
-          "The main page with all your Facebook destination forums and travel groups.",
-        image: "/images/community-main.jpg",
-        href: "/travel-to-greece",
-      },
-      {
-        title: "Island Forums",
-        description:
-          "Separate groups for Santorini, Corfu, Crete, Lefkada and more.",
-        image: "/images/community-islands.jpg",
-        href: "/travel-to-greece",
-      },
-      {
-        title: "City & Food Communities",
-        description:
-          "Groups for city breaks, restaurants, local tips and hidden gems.",
-        image: "/images/community-city.jpg",
-        href: "/travel-to-greece",
-      },
-    ],
-    footer: {
-      description:
-        "a bilingual Greece travel portal with destinations, hotels, food guides and communities.",
-      links: ["About", "Contact", "Privacy"],
-    },
-    discoverMoreLabel: "Discover more →",
-    openPageLabel: "Open page →",
-  },
-
-  el: {
-    brandTagline: "Ταξιδιωτικός οδηγός Ελλάδας, προορισμοί και κοινότητες",
-    nav: ["Προορισμοί", "Travel Info", "Ξενοδοχεία", "Φαγητό & Ποτό", "Κοινότητες"],
-    heroBadge: "Προορισμοί • Travel Info • Ξενοδοχεία • Φαγητό & Ποτό",
-    heroTitle: "Ανακάλυψε την Ελλάδα με πιο σύγχρονη travel-guide αισθητική",
-    heroDescription:
-      "Το ForumGreece γίνεται ένα μοντέρνο portal για την Ελλάδα με προορισμούς, πρακτικές ταξιδιωτικές πληροφορίες, προτάσεις ξενοδοχείων, γευστικούς οδηγούς και ταξιδιωτικές κοινότητες.",
-    heroPrimary: "Δες τους προορισμούς",
-    heroSecondary: "Travel to Greece",
-    sectionLabels: {
-      collections: "Κύριες ενότητες",
-      destinations: "Προορισμοί",
-      travelInfo: "Travel Info",
-      hotels: "Ξενοδοχεία",
-      eatDrink: "Φαγητό & Ποτό",
-      community: "Travel to Greece",
-    },
-    sectionTitles: {
-      collections: "Δομή πιο κοντά σε premium ταξιδιωτικό portal για την Ελλάδα",
-      destinations: "Δημοφιλείς προορισμοί στην Ελλάδα",
-      travelInfo: "Χρήσιμες ταξιδιωτικές πληροφορίες πριν φύγεις",
-      hotels: "Προτεινόμενες κατηγορίες διαμονής",
-      eatDrink: "Πού να φας και να πιεις",
-      community: "Travel forums και Facebook κοινότητες",
-    },
-    sectionDescriptions: {
-      collections:
-        "Η αρχική σελίδα οργανώνεται πλέον με λογική travel portal: ανακάλυψη προορισμών, σωστός προγραμματισμός, διαμονή, φαγητό και κοινότητα.",
-      destinations:
-        "Κάθε προορισμός μπορεί αργότερα να ανοίγει σε παραλίες, αξιοθέατα, ξενοδοχεία, εστιατόρια και τοπικά tips.",
-      travelInfo:
-        "Αυτές οι κάρτες λειτουργούν ως είσοδοι για μετακινήσεις, ακτοπλοϊκά, οικογενειακά ταξίδια, χάρτες και πρακτικό planning.",
-      hotels:
-        "Μια ξεχωριστή ενότητα διαμονής δίνει πιο τουριστικό χαρακτήρα και ανοίγει χώρο για premium καταχωρήσεις.",
-      eatDrink:
-        "Το περιεχόμενο φαγητού και εξόδου κάνει το portal πιο ζεστό, πιο lifestyle και πιο ελκυστικό.",
-      community:
-        "Αυτή η ενότητα μπορεί να οδηγεί στα Facebook forums, στις destination ομάδες και στις μελλοντικές community σελίδες σου.",
-    },
-    featureTiles: [
-      {
-        title: "Προορισμοί",
-        description:
-          "Νησιά, ηπειρωτική Ελλάδα, πόλεις και παραθαλάσσιες αποδράσεις",
-      },
-      {
-        title: "Travel Info",
-        description: "Πλοία, αεροδρόμια, μετακινήσεις και χρήσιμες συμβουλές",
-      },
-      {
-        title: "Ξενοδοχεία",
-        description: "Προτάσεις διαμονής και premium προβολές",
-      },
-      {
-        title: "Φαγητό & Ποτό",
-        description: "Εστιατόρια, ταβέρνες, bars και τοπικές γεύσεις",
-      },
-    ],
-    destinations: [
-      {
-        title: "Σαντορίνη",
-        subtitle: "Κυκλάδες",
-        description:
-          "Ηφαιστειακά τοπία, εμβληματικά χωριά, sunset σημεία και ρομαντική διαμονή.",
-        image: "/images/santorini.jpg",
-      },
-      {
-        title: "Κρήτη",
-        subtitle: "Ελληνικά νησιά",
-        description:
-          "Μεγάλα τοπία, παραλίες, δυνατή γαστρονομία και αξέχαστες διαδρομές.",
-        image: "/images/crete.jpg",
-      },
-      {
-        title: "Κέρκυρα",
-        subtitle: "Ιόνιο",
-        description:
-          "Αριστοκρατική παλιά πόλη, πράσινο τοπίο, παραλίες και οικογενειακές αποδράσεις.",
-        image: "/images/corfu.jpg",
-      },
-      {
-        title: "Ναύπλιο",
-        subtitle: "Ηπειρωτική Ελλάδα",
-        description:
-          "Weekend αποδράσεις, βόλτες δίπλα στη θάλασσα, ιστορία και όμορφο φαγητό.",
-        image: "/images/nafplio.jpg",
-      },
-    ],
-    travelInfo: [
-      {
-        title: "Πώς να ταξιδέψεις στην Ελλάδα",
-        description:
-          "Αεροπλάνα, πλοία, λεωφορεία, ενοικίαση αυτοκινήτου και island hopping ιδέες.",
-        image: "/images/ferries.jpg",
-      },
-      {
-        title: "Πότε να έρθεις",
-        description:
-          "Συμβουλές ανά εποχή για νησιά, ανοιξιάτικες αποδράσεις και φθινοπωρινά road trips.",
-        image: "/images/seasons.jpg",
-      },
-      {
-        title: "Συμβουλές για οικογένειες",
-        description:
-          "Ιδέες για γονείς, πιο ήσυχες παραλίες, kid-friendly διαμονή και εύκολες διαδρομές.",
-        image: "/images/family.jpg",
-      },
-      {
-        title: "Χάρτες & οργάνωση",
-        description:
-          "Πώς να οργανώσεις παραλίες, αξιοθέατα, μονοήμερες εκδρομές και τοπικές εμπειρίες.",
-        image: "/images/map.jpg",
-      },
-    ],
-    hotels: [
-      {
-        title: "Boutique Ξενοδοχεία",
-        description:
-          "Καλαίσθητη διαμονή για ζευγάρια, city breaks και ρομαντικές διακοπές.",
-        image: "/images/hotel-boutique.jpg",
-        badge: "Featured",
-      },
-      {
-        title: "Οικογενειακά Resorts",
-        description:
-          "Άνετη διαμονή με πισίνες, κοντά στη θάλασσα και πιο εύκολο family planning.",
-        image: "/images/hotel-family.jpg",
-        badge: "Sponsored",
-      },
-      {
-        title: "Βίλες δίπλα στη θάλασσα",
-        description:
-          "Ιδιωτικότητα, θέα στο γαλάζιο και premium ιδέες για καλοκαιρινή διαμονή.",
-        image: "/images/hotel-villa.jpg",
-        badge: "Top pick",
-      },
-    ],
-    eatDrink: [
-      {
-        title: "Παραδοσιακές ταβέρνες",
-        description:
-          "Αυθεντικό ελληνικό φαγητό, τοπικές συνταγές και ζεστή ατμόσφαιρα.",
-        image: "/images/taverna.jpg",
-      },
-      {
-        title: "Beach Bars",
-        description:
-          "Cocktails στο ηλιοβασίλεμα, θέα στη θάλασσα και καλοκαιρινή ενέργεια.",
-        image: "/images/beach-bar.jpg",
-      },
-      {
-        title: "Γευστικές εμπειρίες",
-        description:
-          "Ελληνικό πρωινό, wine tasting, ψαροταβέρνες και τοπικά γλυκά.",
-        image: "/images/food.jpg",
-      },
-    ],
-    communities: [
-      {
-        title: "Travel to Greece",
-        description:
-          "Η κεντρική σελίδα με όλα τα Facebook forums και τις ταξιδιωτικές ομάδες σου.",
-        image: "/images/community-main.jpg",
-        href: "/travel-to-greece",
-      },
-      {
-        title: "Forums για νησιά",
-        description:
-          "Ξεχωριστές ομάδες για Σαντορίνη, Κέρκυρα, Κρήτη, Λευκάδα και άλλα μέρη.",
-        image: "/images/community-islands.jpg",
-        href: "/travel-to-greece",
-      },
-      {
-        title: "Πόλεις & γεύσεις",
-        description:
-          "Ομάδες για city breaks, εστιατόρια, τοπικά tips και κρυφά σημεία.",
-        image: "/images/community-city.jpg",
-        href: "/travel-to-greece",
-      },
-    ],
-    footer: {
-      description:
-        "δίγλωσσο portal για την Ελλάδα με προορισμούς, ξενοδοχεία, φαγητό και κοινότητες.",
-      links: ["About", "Contact", "Privacy"],
-    },
-    discoverMoreLabel: "Δες περισσότερα →",
-    openPageLabel: "Άνοιγμα σελίδας →",
-  },
-};
-
-function ImageCard({
-  item,
-  dark = false,
-  ctaLabel,
-}: {
-  item: CardItem;
-  dark?: boolean;
-  ctaLabel: string;
-}) {
-  return (
-    <article className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
-      <div
-        className="relative h-64 bg-slate-300 bg-cover bg-center"
-        style={{ backgroundImage: `url(${item.image})` }}
-      >
-        <div
-          className={`absolute inset-0 ${
-            dark ? "bg-slate-950/35" : "bg-slate-950/20"
-          }`}
-        />
-
-        {item.badge ? (
-          <div className="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-slate-900">
-            {item.badge}
-          </div>
-        ) : null}
-
-        {item.subtitle ? (
-          <div className="absolute bottom-4 left-4 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-slate-900">
-            {item.subtitle}
-          </div>
-        ) : null}
-      </div>
-
-      <div className="p-6">
-        <h3 className="text-2xl font-semibold tracking-tight text-slate-900">
-          {item.title}
-        </h3>
-        <p className="mt-3 text-sm leading-7 text-slate-600">
-          {item.description}
-        </p>
-
-        {item.href ? (
-          <Link
-            href={item.href}
-            className="mt-5 inline-flex text-sm font-semibold text-sky-700 hover:text-sky-900"
-          >
-            {ctaLabel}
-          </Link>
-        ) : (
-          <a
-            href="#"
-            className="mt-5 inline-flex text-sm font-semibold text-sky-700 hover:text-sky-900"
-          >
-            {ctaLabel}
-          </a>
-        )}
-      </div>
-    </article>
-  );
-}
 
 export default function HomePage() {
   const [lang, setLang] = useState<Lang>("en");
-  const t = content[lang];
+
+  const t = useMemo(
+    () => ({
+      brandLine: {
+        en: "Greece travel guide, destinations and local experiences",
+        el: "Ταξιδιωτικός οδηγός Ελλάδας, προορισμοί και τοπικές εμπειρίες",
+      },
+      navDestinations: { en: "Destinations", el: "Προορισμοί" },
+      navTravelInfo: { en: "Travel Info", el: "Travel Info" },
+      navHotels: { en: "Hotels", el: "Ξενοδοχεία" },
+      navEatDrink: { en: "Eat & Drink", el: "Φαγητό & Ποτό" },
+      navForums: { en: "Travel to Greece", el: "Travel to Greece" },
+
+      heroBadge: {
+        en: "Travel portal • Destinations • Hotels • Food • Communities",
+        el: "Travel portal • Προορισμοί • Ξενοδοχεία • Φαγητό • Κοινότητες",
+      },
+      heroTitle: {
+        en: "Plan your trip to Greece with destinations, travel tips and authentic local ideas",
+        el: "Οργάνωσε το ταξίδι σου στην Ελλάδα με προορισμούς, travel tips και αυθεντικές τοπικές προτάσεις",
+      },
+      heroText: {
+        en: "ForumGreece is becoming a complete Greece travel portal with destination guides, travel information, hotels, beaches, restaurants and Facebook travel communities.",
+        el: "Το ForumGreece εξελίσσεται σε ένα πλήρες travel portal για την Ελλάδα με οδηγούς προορισμών, ταξιδιωτικές πληροφορίες, ξενοδοχεία, παραλίες, εστιατόρια και Facebook travel communities.",
+      },
+      heroPrimary: { en: "Explore destinations", el: "Δες προορισμούς" },
+      heroSecondary: { en: "Travel to Greece", el: "Travel to Greece" },
+
+      destinationEyebrow: {
+        en: "Top Destinations",
+        el: "Δημοφιλείς Προορισμοί",
+      },
+      destinationTitle: {
+        en: "Discover the best places in Greece",
+        el: "Ανακάλυψε τα καλύτερα μέρη της Ελλάδας",
+      },
+      destinationText: {
+        en: "Inspired by top Greece travel portals, the homepage now focuses on clear destination discovery, practical travel information and bookable-style sections.",
+        el: "Με έμπνευση από κορυφαία travel portals για την Ελλάδα, η αρχική δίνει έμφαση στην εύκολη ανακάλυψη προορισμών, στις πρακτικές πληροφορίες και στις ενότητες τύπου booking guide.",
+      },
+
+      travelInfoEyebrow: { en: "Travel Info", el: "Travel Info" },
+      travelInfoTitle: {
+        en: "Everything useful before you go",
+        el: "Όλα όσα χρειάζεσαι πριν ταξιδέψεις",
+      },
+      travelInfoText: {
+        en: "Useful planning content about how to get there, when to go and how to move around.",
+        el: "Χρήσιμο περιεχόμενο για το πώς θα έρθεις, πότε να ταξιδέψεις και πώς να μετακινηθείς.",
+      },
+
+      hotelsEyebrow: { en: "Hotels", el: "Ξενοδοχεία" },
+      hotelsTitle: {
+        en: "Featured stays in Greece",
+        el: "Προτεινόμενα καταλύματα στην Ελλάδα",
+      },
+      hotelsText: {
+        en: "A stronger accommodation section gives the homepage a more travel-oriented and premium feel.",
+        el: "Μια πιο δυνατή ενότητα διαμονής δίνει στην αρχική πιο τουριστικό και premium χαρακτήρα.",
+      },
+
+      foodEyebrow: { en: "Eat & Drink", el: "Φαγητό & Ποτό" },
+      foodTitle: {
+        en: "Taste Greece through local food and drinks",
+        el: "Γνώρισε την Ελλάδα μέσα από το τοπικό φαγητό και ποτό",
+      },
+      foodText: {
+        en: "From tavernas and seafood to sunset cocktails and local specialties.",
+        el: "Από ταβέρνες και θαλασσινά μέχρι cocktails στο ηλιοβασίλεμα και τοπικές γεύσεις.",
+      },
+
+      communitiesEyebrow: { en: "Travel to Greece", el: "Travel to Greece" },
+      communitiesTitle: {
+        en: "Facebook travel forums and communities",
+        el: "Facebook travel forums και κοινότητες",
+      },
+      communitiesText: {
+        en: "A dedicated hub for all the Facebook travel forums you will create for islands, cities and holiday regions across Greece.",
+        el: "Ένα ξεχωριστό hub για όλα τα Facebook travel forums που θα δημιουργήσετε για νησιά, πόλεις και τουριστικές περιοχές της Ελλάδας.",
+      },
+
+      footerText: {
+        en: "ForumGreece — destinations, travel info, hotels, food and local communities.",
+        el: "ForumGreece — προορισμοί, travel info, ξενοδοχεία, φαγητό και τοπικές κοινότητες.",
+      },
+
+      ctaAd: {
+        en: "Advertise your business",
+        el: "Διαφήμισε την επιχείρησή σου",
+      },
+      readMore: { en: "Read more →", el: "Περισσότερα →" },
+      openForum: { en: "Open forum →", el: "Άνοιγμα forum →" },
+      viewGuide: { en: "View guide →", el: "Δες τον οδηγό →" },
+      viewHotels: { en: "View hotels →", el: "Δες ξενοδοχεία →" },
+      discoverFood: { en: "Discover more →", el: "Ανακάλυψε περισσότερα →" },
+    }),
+    []
+  );
+
+  const categories: Category[] = [
+    {
+      title: { en: "Destinations", el: "Προορισμοί" },
+      description: {
+        en: "Travel guides for islands, mainland escapes, famous beaches and beautiful Greek towns.",
+        el: "Ταξιδιωτικοί οδηγοί για νησιά, ηπειρωτικές αποδράσεις, διάσημες παραλίες και όμορφες ελληνικές πόλεις.",
+      },
+      emoji: "🏝️",
+    },
+    {
+      title: { en: "Travel Info", el: "Travel Info" },
+      description: {
+        en: "Useful tips about ferries, airports, best time to visit, transport and practical planning.",
+        el: "Χρήσιμες πληροφορίες για πλοία, αεροδρόμια, καλύτερη εποχή, μετακινήσεις και πρακτικό προγραμματισμό.",
+      },
+      emoji: "🧭",
+    },
+    {
+      title: { en: "Hotels", el: "Ξενοδοχεία" },
+      description: {
+        en: "Curated stays, boutique hotels, family resorts and beautiful places to stay across Greece.",
+        el: "Επιλεγμένα καταλύματα, boutique ξενοδοχεία, family resorts και όμορφα μέρη για διαμονή σε όλη την Ελλάδα.",
+      },
+      emoji: "🏨",
+    },
+    {
+      title: { en: "Eat & Drink", el: "Φαγητό & Ποτό" },
+      description: {
+        en: "Restaurants, tavernas, bars and local flavors that help visitors experience Greece authentically.",
+        el: "Εστιατόρια, ταβέρνες, bars και τοπικές γεύσεις που βοηθούν τον επισκέπτη να ζήσει αυθεντικά την Ελλάδα.",
+      },
+      emoji: "🍷",
+    },
+  ];
+
+  const destinations: Destination[] = [
+    {
+      name: "Santorini",
+      region: { en: "Cyclades", el: "Κυκλάδες" },
+      blurb: {
+        en: "Sunset views, caldera stays, beaches and romantic holidays.",
+        el: "Ηλιοβασιλέματα, διαμονή στην καλντέρα, παραλίες και ρομαντικές αποδράσεις.",
+      },
+      image: "/images/santorini.jpg",
+    },
+    {
+      name: "Mykonos",
+      region: { en: "Cyclades", el: "Κυκλάδες" },
+      blurb: {
+        en: "Cosmopolitan vibes, beaches, nightlife and stylish hotels.",
+        el: "Κοσμοπολίτικη ατμόσφαιρα, παραλίες, νυχτερινή ζωή και κομψά ξενοδοχεία.",
+      },
+      image: "/images/mykonos.jpg",
+    },
+    {
+      name: "Crete",
+      region: { en: "Crete", el: "Κρήτη" },
+      blurb: {
+        en: "Big landscapes, cuisine, history, road trips and family holidays.",
+        el: "Μεγάλα τοπία, κουζίνα, ιστορία, road trips και οικογενειακές διακοπές.",
+      },
+      image: "/images/crete.jpg",
+    },
+    {
+      name: "Corfu",
+      region: { en: "Ionian Islands", el: "Ιόνια Νησιά" },
+      blurb: {
+        en: "Green scenery, elegant town life, beaches and island charm.",
+        el: "Πράσινα τοπία, αρχοντική πόλη, παραλίες και νησιώτικη γοητεία.",
+      },
+      image: "/images/corfu.jpg",
+    },
+    {
+      name: "Nafplio",
+      region: { en: "Peloponnese", el: "Πελοπόννησος" },
+      blurb: {
+        en: "Romantic old town, seaside walks and easy weekend escapes.",
+        el: "Ρομανική παλιά πόλη, βόλτες δίπλα στη θάλασσα και εύκολες αποδράσεις.",
+      },
+      image: "/images/nafplio.jpg",
+    },
+    {
+      name: "Thessaloniki",
+      region: { en: "Northern Greece", el: "Βόρεια Ελλάδα" },
+      blurb: {
+        en: "Food, culture, nightlife and urban travel experiences.",
+        el: "Φαγητό, πολιτισμός, νυχτερινή ζωή και αστικές ταξιδιωτικές εμπειρίες.",
+      },
+      image: "/images/thessaloniki.jpg",
+    },
+  ];
+
+  const travelInfo: GuideCard[] = [
+    {
+      title: { en: "How to get to Greece", el: "Πώς να έρθεις στην Ελλάδα" },
+      description: {
+        en: "Flights, ferries, island hopping ideas and airport tips for first-time visitors.",
+        el: "Πτήσεις, πλοία, ιδέες για island hopping και συμβουλές αεροδρομίων για νέους επισκέπτες.",
+      },
+      image: "/images/travel-arrival.jpg",
+    },
+    {
+      title: { en: "Best time to visit", el: "Καλύτερη εποχή για ταξίδι" },
+      description: {
+        en: "When to visit Greece for beaches, sightseeing, food, sailing and quieter holidays.",
+        el: "Πότε να επισκεφθείς την Ελλάδα για παραλίες, sightseeing, φαγητό, sailing και πιο ήσυχες διακοπές.",
+      },
+      image: "/images/travel-season.jpg",
+    },
+    {
+      title: { en: "Getting around", el: "Μετακινήσεις στην Ελλάδα" },
+      description: {
+        en: "Cars, buses, ferries and local transport to move easily between regions and islands.",
+        el: "Αυτοκίνητα, λεωφορεία, πλοία και τοπικές μετακινήσεις για εύκολη πρόσβαση σε περιοχές και νησιά.",
+      },
+      image: "/images/travel-transport.jpg",
+    },
+  ];
+
+  const hotels: HotelCard[] = [
+    {
+      name: "Caldera Blue Suites",
+      place: "Santorini",
+      info: {
+        en: "Elegant cave-style suites with sea views and a luxury island feeling.",
+        el: "Κομψές cave-style σουίτες με θέα στη θάλασσα και luxury νησιώτικη αίσθηση.",
+      },
+      image: "/images/hotel-santorini.jpg",
+      badge: "Featured",
+    },
+    {
+      name: "Ionian Garden Resort",
+      place: "Corfu",
+      info: {
+        en: "A relaxed family-friendly stay close to beaches, restaurants and green scenery.",
+        el: "Χαλαρή οικογενειακή διαμονή κοντά σε παραλίες, εστιατόρια και πράσινα τοπία.",
+      },
+      image: "/images/hotel-corfu.jpg",
+      badge: "Sponsored",
+    },
+    {
+      name: "Old Town Boutique House",
+      place: "Nafplio",
+      info: {
+        en: "Boutique accommodation for romantic city breaks and stylish weekends.",
+        el: "Boutique διαμονή για ρομαντικά city breaks και κομψά Σαββατοκύριακα.",
+      },
+      image: "/images/hotel-nafplio.jpg",
+      badge: "Top pick",
+    },
+  ];
+
+  const food: FoodCard[] = [
+    {
+      title: { en: "Seafood by the harbor", el: "Θαλασσινά δίπλα στο λιμάνι" },
+      place: "Nafplio",
+      info: {
+        en: "Fresh fish, local meze and a classic seaside Greek dining experience.",
+        el: "Φρέσκο ψάρι, τοπικοί μεζέδες και μια κλασική παραθαλάσσια ελληνική εμπειρία φαγητού.",
+      },
+      image: "/images/food-nafplio.jpg",
+    },
+    {
+      title: {
+        en: "Sunset cocktails & dinner",
+        el: "Cocktails και δείπνο στο ηλιοβασίλεμα",
+      },
+      place: "Santorini",
+      info: {
+        en: "A more premium side of Greece with views, drinks and memorable evenings.",
+        el: "Μια πιο premium πλευρά της Ελλάδας με θέα, ποτά και αξέχαστα βράδια.",
+      },
+      image: "/images/food-santorini.jpg",
+    },
+    {
+      title: {
+        en: "Traditional tavern flavors",
+        el: "Γεύσεις παραδοσιακής ταβέρνας",
+      },
+      place: "Crete",
+      info: {
+        en: "Simple authentic food, local ingredients and warm Greek hospitality.",
+        el: "Απλό αυθεντικό φαγητό, τοπικά προϊόντα και ζεστή ελληνική φιλοξενία.",
+      },
+      image: "/images/food-crete.jpg",
+    },
+  ];
+
+  const communities: CommunityCard[] = [
+    {
+      title: { en: "Forum Greece", el: "Forum Greece" },
+      description: {
+        en: "The central Facebook community for Greece travel ideas, questions and recommendations.",
+        el: "Η κεντρική Facebook κοινότητα για ταξιδιωτικές ιδέες, ερωτήσεις και προτάσεις για την Ελλάδα.",
+      },
+      href: "/travel-to-greece",
+    },
+    {
+      title: { en: "Forum Santorini", el: "Forum Santorini" },
+      description: {
+        en: "A dedicated travel forum for Santorini holidays, tips, hotels and beaches.",
+        el: "Ένα ξεχωριστό travel forum για διακοπές στη Σαντορίνη, tips, ξενοδοχεία και παραλίες.",
+      },
+      href: "/travel-to-greece",
+    },
+    {
+      title: { en: "Forum Corfu", el: "Forum Corfu" },
+      description: {
+        en: "A place for Corfu travel discussions, local ideas and useful visitor recommendations.",
+        el: "Ένας χώρος για ταξιδιωτικές συζητήσεις για την Κέρκυρα, τοπικές ιδέες και χρήσιμες προτάσεις.",
+      },
+      href: "/travel-to-greece",
+    },
+  ];
 
   return (
-    <main className="min-h-screen bg-[#f8fbff] text-slate-900">
-      <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/90 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-4">
+    <main className="min-h-screen bg-[#f7fbff] text-slate-900">
+      <section className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
+        <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 py-5">
           <div>
-            <div className="text-2xl font-bold tracking-tight text-[#0d2a52]">
+            <div className="text-2xl font-bold tracking-tight text-sky-900">
               ForumGreece
             </div>
-            <div className="text-sm text-slate-500">{t.brandTagline}</div>
+            <div className="text-sm text-slate-500">{t.brandLine[lang]}</div>
           </div>
 
           <nav className="hidden gap-6 text-sm font-medium text-slate-700 lg:flex">
             <a href="#destinations" className="hover:text-sky-700">
-              {t.nav[0]}
+              {t.navDestinations[lang]}
             </a>
             <a href="#travel-info" className="hover:text-sky-700">
-              {t.nav[1]}
+              {t.navTravelInfo[lang]}
             </a>
             <a href="#hotels" className="hover:text-sky-700">
-              {t.nav[2]}
+              {t.navHotels[lang]}
             </a>
-            <a href="#eat-drink" className="hover:text-sky-700">
-              {t.nav[3]}
+            <a href="#food" className="hover:text-sky-700">
+              {t.navEatDrink[lang]}
             </a>
             <Link href="/travel-to-greece" className="hover:text-sky-700">
-              {t.nav[4]}
+              {t.navForums[lang]}
             </Link>
           </nav>
 
           <div className="flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 p-1">
             <button
               onClick={() => setLang("en")}
-              className={`rounded-full px-4 py-2 text-sm font-semibold transition ${
-                lang === "en"
-                  ? "bg-[#0d2a52] text-white"
-                  : "text-slate-600 hover:text-slate-900"
+              className={`rounded-full px-3 py-1.5 text-sm font-semibold transition ${
+                lang === "en" ? "bg-sky-600 text-white" : "text-slate-600"
               }`}
             >
               EN
             </button>
             <button
               onClick={() => setLang("el")}
-              className={`rounded-full px-4 py-2 text-sm font-semibold transition ${
-                lang === "el"
-                  ? "bg-[#0d2a52] text-white"
-                  : "text-slate-600 hover:text-slate-900"
+              className={`rounded-full px-3 py-1.5 text-sm font-semibold transition ${
+                lang === "el" ? "bg-sky-600 text-white" : "text-slate-600"
               }`}
             >
-              EL
+              GR
             </button>
           </div>
         </div>
-      </header>
+      </section>
 
       <section
-        className="relative overflow-hidden bg-slate-900 text-white"
+        className="relative overflow-hidden text-white"
         style={{
           backgroundImage:
-            "linear-gradient(90deg, rgba(8,26,48,0.82) 0%, rgba(8,26,48,0.56) 40%, rgba(8,26,48,0.28) 100%), url('/images/hero-greece.jpg')",
+            "linear-gradient(90deg, rgba(7,24,44,0.82) 0%, rgba(7,24,44,0.55) 45%, rgba(7,24,44,0.25) 100%), url('/images/hero-greece.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <div className="mx-auto grid min-h-[620px] max-w-7xl items-center gap-10 px-6 py-20 lg:grid-cols-[1.15fr_0.85fr]">
-          <div className="max-w-3xl">
-            <div className="inline-flex rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm font-medium text-white/90 backdrop-blur">
-              {t.heroBadge}
-            </div>
+        <div className="mx-auto grid min-h-[640px] max-w-7xl gap-10 px-6 py-20 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+          <div>
+            <span className="inline-flex rounded-full bg-white/15 px-4 py-1 text-sm font-medium backdrop-blur">
+              {t.heroBadge[lang]}
+            </span>
 
-            <h1 className="mt-6 text-5xl font-bold leading-tight md:text-7xl">
-              {t.heroTitle}
+            <h1 className="mt-6 max-w-4xl text-4xl font-bold leading-tight md:text-6xl">
+              {t.heroTitle[lang]}
             </h1>
 
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-white/85">
-              {t.heroDescription}
+            <p className="mt-5 max-w-2xl text-lg leading-8 text-white/90">
+              {t.heroText[lang]}
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
               <a
                 href="#destinations"
-                className="rounded-full bg-white px-7 py-3 text-sm font-semibold text-[#0d2a52] transition hover:-translate-y-0.5"
+                className="rounded-full bg-white px-6 py-3 font-semibold text-sky-900 shadow-sm transition hover:-translate-y-0.5"
               >
-                {t.heroPrimary}
+                {t.heroPrimary[lang]}
               </a>
-
               <Link
                 href="/travel-to-greece"
-                className="rounded-full border border-white/30 bg-white/10 px-7 py-3 text-sm font-semibold text-white backdrop-blur transition hover:bg-white/20"
+                className="rounded-full border border-white/40 px-6 py-3 font-semibold text-white transition hover:bg-white/10"
               >
-                {t.heroSecondary}
+                {t.heroSecondary[lang]}
               </Link>
             </div>
           </div>
 
           <div className="grid gap-4 sm:grid-cols-2">
-            {t.featureTiles.map((tile) => (
-              <div
-                key={tile.title}
-                className="rounded-[28px] border border-white/15 bg-white/10 p-6 backdrop-blur"
+            {categories.map((item) => (
+              <article
+                key={item.title.en}
+                className="rounded-3xl bg-white/16 p-6 backdrop-blur-md shadow-lg"
               >
-                <div className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-100">
-                  {tile.title}
-                </div>
-                <p className="mt-3 text-sm leading-7 text-white/85">
-                  {tile.description}
+                <div className="text-3xl">{item.emoji}</div>
+                <h3 className="mt-4 text-xl font-semibold">
+                  {item.title[lang]}
+                </h3>
+                <p className="mt-2 text-sm leading-6 text-white/90">
+                  {item.description[lang]}
                 </p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="destinations" className="mx-auto max-w-7xl px-6 py-16">
+        <div className="mb-8 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
+              {t.destinationEyebrow[lang]}
+            </p>
+            <h2 className="mt-2 text-3xl font-bold tracking-tight">
+              {t.destinationTitle[lang]}
+            </h2>
+          </div>
+          <p className="max-w-3xl text-sm leading-6 text-slate-600">
+            {t.destinationText[lang]}
+          </p>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {destinations.map((item) => (
+            <article
+              key={item.name}
+              className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+            >
+              <div
+                className="h-56 bg-cover bg-center"
+                style={{ backgroundImage: `url('${item.image}')` }}
+              />
+              <div className="p-6">
+                <div className="flex items-center justify-between gap-4">
+                  <h3 className="text-2xl font-semibold">{item.name}</h3>
+                  <span className="rounded-full bg-sky-100 px-3 py-1 text-xs font-semibold text-sky-800">
+                    {item.region[lang]}
+                  </span>
+                </div>
+                <p className="mt-4 text-sm leading-6 text-slate-600">
+                  {item.blurb[lang]}
+                </p>
+                <a
+                  href="#"
+                  className="mt-5 inline-block text-sm font-semibold text-sky-800 hover:text-sky-950"
+                >
+                  {t.viewGuide[lang]}
+                </a>
               </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section id="travel-info" className="bg-white py-16">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="mb-8">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
+              {t.travelInfoEyebrow[lang]}
+            </p>
+            <h2 className="mt-2 text-3xl font-bold tracking-tight">
+              {t.travelInfoTitle[lang]}
+            </h2>
+            <p className="mt-3 max-w-3xl text-sm leading-6 text-slate-600">
+              {t.travelInfoText[lang]}
+            </p>
+          </div>
+
+          <div className="grid gap-6 lg:grid-cols-3">
+            {travelInfo.map((item) => (
+              <article
+                key={item.title.en}
+                className="overflow-hidden rounded-[28px] border border-slate-200 bg-slate-50 shadow-sm transition hover:shadow-lg"
+              >
+                <div
+                  className="h-48 bg-cover bg-center"
+                  style={{ backgroundImage: `url('${item.image}')` }}
+                />
+                <div className="p-6">
+                  <div className="text-3xl">🧳</div>
+                  <h3 className="mt-4 text-2xl font-semibold leading-snug">
+                    {item.title[lang]}
+                  </h3>
+                  <p className="mt-4 text-sm leading-6 text-slate-600">
+                    {item.description[lang]}
+                  </p>
+                  <a
+                    href="#"
+                    className="mt-6 inline-block text-sm font-semibold text-sky-800 hover:text-sky-950"
+                  >
+                    {t.readMore[lang]}
+                  </a>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="hotels" className="mx-auto max-w-7xl px-6 py-16">
+        <div className="mb-8 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
+              {t.hotelsEyebrow[lang]}
+            </p>
+            <h2 className="mt-2 text-3xl font-bold tracking-tight">
+              {t.hotelsTitle[lang]}
+            </h2>
+            <p className="mt-3 max-w-3xl text-sm leading-6 text-slate-600">
+              {t.hotelsText[lang]}
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-amber-200 bg-gradient-to-br from-amber-50 to-orange-50 p-6 shadow-sm lg:max-w-sm">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-amber-700">
+              Sponsored
+            </p>
+            <h3 className="mt-2 text-xl font-bold text-slate-900">
+              {lang === "en"
+                ? "Promote your hotel or travel business"
+                : "Πρόβαλε το ξενοδοχείο ή το travel business σου"}
+            </h3>
+            <button className="mt-4 rounded-2xl bg-amber-500 px-5 py-3 font-semibold text-white transition hover:bg-amber-600">
+              {t.ctaAd[lang]}
+            </button>
+          </div>
+        </div>
+
+        <div className="grid gap-6 lg:grid-cols-3">
+          {hotels.map((item) => (
+            <article
+              key={item.name}
+              className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm transition hover:shadow-xl"
+            >
+              <div
+                className="relative h-52 bg-cover bg-center"
+                style={{ backgroundImage: `url('${item.image}')` }}
+              >
+                {item.badge ? (
+                  <span className="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-slate-900">
+                    {item.badge}
+                  </span>
+                ) : null}
+              </div>
+
+              <div className="p-6">
+                <div className="flex items-center justify-between gap-4">
+                  <h3 className="text-xl font-semibold">{item.name}</h3>
+                  <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600">
+                    {item.place}
+                  </span>
+                </div>
+                <p className="mt-4 text-sm leading-6 text-slate-600">
+                  {item.info[lang]}
+                </p>
+                <a
+                  href="#"
+                  className="mt-5 inline-block text-sm font-semibold text-sky-800 hover:text-sky-950"
+                >
+                  {t.viewHotels[lang]}
+                </a>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section id="food" className="bg-white py-16">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="mb-8">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
+              {t.foodEyebrow[lang]}
+            </p>
+            <h2 className="mt-2 text-3xl font-bold tracking-tight">
+              {t.foodTitle[lang]}
+            </h2>
+            <p className="mt-3 max-w-3xl text-sm leading-6 text-slate-600">
+              {t.foodText[lang]}
+            </p>
+          </div>
+
+          <div className="grid gap-6 lg:grid-cols-3">
+            {food.map((item) => (
+              <article
+                key={item.title.en}
+                className="overflow-hidden rounded-[28px] border border-slate-200 bg-gradient-to-br from-white to-amber-50 shadow-sm transition hover:shadow-lg"
+              >
+                <div
+                  className="h-52 bg-cover bg-center"
+                  style={{ backgroundImage: `url('${item.image}')` }}
+                />
+                <div className="p-6">
+                  <div className="flex items-center justify-between gap-4">
+                    <div className="text-3xl">🍴</div>
+                    <span className="rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-800">
+                      {item.place}
+                    </span>
+                  </div>
+                  <h3 className="mt-4 text-2xl font-semibold leading-snug">
+                    {item.title[lang]}
+                  </h3>
+                  <p className="mt-4 text-sm leading-6 text-slate-600">
+                    {item.info[lang]}
+                  </p>
+                  <a
+                    href="#"
+                    className="mt-6 inline-block text-sm font-semibold text-sky-800 hover:text-sky-950"
+                  >
+                    {t.discoverFood[lang]}
+                  </a>
+                </div>
+              </article>
             ))}
           </div>
         </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-16">
-        <div className="mb-8 max-w-3xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.22em] text-sky-700">
-            {t.sectionLabels.collections}
+        <div className="overflow-hidden rounded-[32px] bg-gradient-to-r from-sky-800 via-cyan-700 to-emerald-500 p-8 text-white shadow-xl md:p-10">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-white/75">
+            {t.communitiesEyebrow[lang]}
           </p>
-          <h2 className="mt-3 text-4xl font-bold tracking-tight text-[#0d2a52]">
-            {t.sectionTitles.collections}
+          <h2 className="mt-2 text-3xl font-bold tracking-tight md:text-4xl">
+            {t.communitiesTitle[lang]}
           </h2>
-          <p className="mt-4 text-base leading-8 text-slate-600">
-            {t.sectionDescriptions.collections}
+          <p className="mt-4 max-w-3xl text-sm leading-7 text-white/90">
+            {t.communitiesText[lang]}
           </p>
-        </div>
 
-        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-          {t.featureTiles.map((tile) => (
-            <div
-              key={tile.title}
-              className="rounded-[26px] border border-slate-200 bg-white p-6 shadow-sm"
-            >
-              <div className="text-lg font-semibold text-[#0d2a52]">
-                {tile.title}
-              </div>
-              <p className="mt-3 text-sm leading-7 text-slate-600">
-                {tile.description}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section id="destinations" className="bg-white py-16">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="mb-8 max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-sky-700">
-              {t.sectionLabels.destinations}
-            </p>
-            <h2 className="mt-3 text-4xl font-bold tracking-tight text-[#0d2a52]">
-              {t.sectionTitles.destinations}
-            </h2>
-            <p className="mt-4 text-base leading-8 text-slate-600">
-              {t.sectionDescriptions.destinations}
-            </p>
-          </div>
-
-          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {t.destinations.map((item) => (
-              <ImageCard
-                key={item.title}
-                item={item}
-                dark
-                ctaLabel={t.discoverMoreLabel}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="travel-info" className="mx-auto max-w-7xl px-6 py-16">
-        <div className="mb-8 max-w-3xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.22em] text-sky-700">
-            {t.sectionLabels.travelInfo}
-          </p>
-          <h2 className="mt-3 text-4xl font-bold tracking-tight text-[#0d2a52]">
-            {t.sectionTitles.travelInfo}
-          </h2>
-          <p className="mt-4 text-base leading-8 text-slate-600">
-            {t.sectionDescriptions.travelInfo}
-          </p>
-        </div>
-
-        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-          {t.travelInfo.map((item) => (
-            <ImageCard
-              key={item.title}
-              item={item}
-              ctaLabel={t.discoverMoreLabel}
-            />
-          ))}
-        </div>
-      </section>
-
-      <section id="hotels" className="bg-white py-16">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="mb-8 max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-sky-700">
-              {t.sectionLabels.hotels}
-            </p>
-            <h2 className="mt-3 text-4xl font-bold tracking-tight text-[#0d2a52]">
-              {t.sectionTitles.hotels}
-            </h2>
-            <p className="mt-4 text-base leading-8 text-slate-600">
-              {t.sectionDescriptions.hotels}
-            </p>
-          </div>
-
-          <div className="grid gap-6 lg:grid-cols-3">
-            {t.hotels.map((item) => (
-              <ImageCard
-                key={item.title}
-                item={item}
-                ctaLabel={t.discoverMoreLabel}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="eat-drink" className="mx-auto max-w-7xl px-6 py-16">
-        <div className="mb-8 max-w-3xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.22em] text-sky-700">
-            {t.sectionLabels.eatDrink}
-          </p>
-          <h2 className="mt-3 text-4xl font-bold tracking-tight text-[#0d2a52]">
-            {t.sectionTitles.eatDrink}
-          </h2>
-          <p className="mt-4 text-base leading-8 text-slate-600">
-            {t.sectionDescriptions.eatDrink}
-          </p>
-        </div>
-
-        <div className="grid gap-6 lg:grid-cols-3">
-          {t.eatDrink.map((item) => (
-            <ImageCard
-              key={item.title}
-              item={item}
-              ctaLabel={t.discoverMoreLabel}
-            />
-          ))}
-        </div>
-      </section>
-
-      <section className="bg-[#0d2a52] py-16 text-white">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="grid gap-8 lg:grid-cols-[1fr_1.3fr] lg:items-center">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-200">
-                {t.sectionLabels.community}
-              </p>
-              <h2 className="mt-3 text-4xl font-bold tracking-tight">
-                {t.sectionTitles.community}
-              </h2>
-              <p className="mt-4 text-base leading-8 text-white/80">
-                {t.sectionDescriptions.community}
-              </p>
-
-              <Link
-                href="/travel-to-greece"
-                className="mt-7 inline-flex rounded-full bg-white px-7 py-3 text-sm font-semibold text-[#0d2a52] transition hover:-translate-y-0.5"
+          <div className="mt-8 grid gap-6 lg:grid-cols-3">
+            {communities.map((item) => (
+              <article
+                key={item.title.en}
+                className="rounded-3xl bg-white/12 p-6 backdrop-blur-md"
               >
-                {t.heroSecondary}
-              </Link>
-            </div>
-
-            <div className="grid gap-6 lg:grid-cols-3">
-              {t.communities.map((item) => (
-                <article
-                  key={item.title}
-                  className="overflow-hidden rounded-[28px] border border-white/10 bg-white/10 backdrop-blur"
+                <div className="text-3xl">🌴</div>
+                <h3 className="mt-4 text-xl font-semibold">
+                  {item.title[lang]}
+                </h3>
+                <p className="mt-3 text-sm leading-6 text-white/90">
+                  {item.description[lang]}
+                </p>
+                <Link
+                  href={item.href}
+                  className="mt-5 inline-block text-sm font-semibold text-white hover:text-cyan-100"
                 >
-                  <div
-                    className="h-48 bg-slate-300 bg-cover bg-center"
-                    style={{
-                      backgroundImage: `linear-gradient(rgba(4,16,32,0.15), rgba(4,16,32,0.3)), url(${item.image})`,
-                    }}
-                  />
-
-                  <div className="p-6">
-                    <h3 className="text-2xl font-semibold">{item.title}</h3>
-                    <p className="mt-3 text-sm leading-7 text-white/80">
-                      {item.description}
-                    </p>
-                    <Link
-                      href={item.href || "/travel-to-greece"}
-                      className="mt-5 inline-flex text-sm font-semibold text-cyan-200 hover:text-white"
-                    >
-                      {t.openPageLabel}
-                    </Link>
-                  </div>
-                </article>
-              ))}
-            </div>
+                  {t.openForum[lang]}
+                </Link>
+              </article>
+            ))}
           </div>
         </div>
       </section>
 
       <footer className="border-t border-slate-200 bg-white">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-slate-500 md:flex-row md:items-center md:justify-between">
-          <div>
-            <span className="font-semibold text-slate-800">ForumGreece</span> —{" "}
-            {t.footer.description}
-          </div>
-
+          <div>{t.footerText[lang]}</div>
           <div className="flex gap-5">
-            {t.footer.links.map((link) => (
-              <a key={link} href="#" className="hover:text-slate-800">
-                {link}
-              </a>
-            ))}
+            <a href="#" className="hover:text-slate-800">
+              About
+            </a>
+            <a href="#" className="hover:text-slate-800">
+              Contact
+            </a>
+            <a href="#" className="hover:text-slate-800">
+              Privacy
+            </a>
           </div>
         </div>
       </footer>
