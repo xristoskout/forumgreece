@@ -16,6 +16,7 @@ type ForumCard = {
   description: Localized;
   category: Localized;
   href: string;
+  image?: string;
 };
 
 export default function TravelToGreecePage() {
@@ -78,6 +79,9 @@ export default function TravelToGreecePage() {
         en: "ForumGreece — travel forums, destinations and local communities.",
         el: "ForumGreece — travel forums, προορισμοί και τοπικές κοινότητες.",
       },
+      footerAbout: { en: "About", el: "Σχετικά" },
+      footerContact: { en: "Contact", el: "Επικοινωνία" },
+      footerPrivacy: { en: "Privacy", el: "Απόρρητο" },
     }),
     []
   );
@@ -92,6 +96,7 @@ export default function TravelToGreecePage() {
         el: "Tips για θέα στην καλντέρα, χωριά, ξενοδοχεία, παραλίες και ρομαντικές διακοπές στη Σαντορίνη.",
       },
       href: "https://facebook.com",
+      image: "/images/forums/santorini.jpg",
     },
     {
       title: "Forum Mykonos",
@@ -102,6 +107,7 @@ export default function TravelToGreecePage() {
         el: "Παραλίες, νυχτερινή ζωή, κομψή διαμονή και καλοκαιρινές εμπειρίες στη Μύκονο.",
       },
       href: "https://facebook.com",
+      image: "/images/forums/mykonos.jpg",
     },
     {
       title: "Forum Corfu",
@@ -112,6 +118,7 @@ export default function TravelToGreecePage() {
         el: "Βόλτες στην παλιά πόλη, παραλίες, πράσινα τοπία και οικογενειακές ταξιδιωτικές ιδέες για την Κέρκυρα.",
       },
       href: "https://facebook.com",
+      image: "/images/forums/corfu.jpg",
     },
     {
       title: "Forum Crete",
@@ -122,6 +129,29 @@ export default function TravelToGreecePage() {
         el: "Road trips, παραλίες, χωριά, γαστρονομία και ταξιδιωτικός σχεδιασμός για την Κρήτη.",
       },
       href: "https://facebook.com",
+      image: "/images/forums/crete.jpg",
+    },
+    {
+      title: "Forum Lesvos",
+      region: { en: "North Aegean", el: "Βόρειο Αιγαίο" },
+      category: { en: "Island forum", el: "Forum νησιού" },
+      description: {
+        en: "Villages, beaches, local food, culture and relaxing escapes in Lesvos.",
+        el: "Χωριά, παραλίες, τοπικές γεύσεις, πολιτισμός και χαλαρές αποδράσεις στη Λέσβο.",
+      },
+      href: "https://facebook.com",
+      image: "/images/forums/lesvos.jpg",
+    },
+    {
+      title: "Forum Kefalonia",
+      region: { en: "Ionian Islands", el: "Ιόνια Νησιά" },
+      category: { en: "Island forum", el: "Forum νησιού" },
+      description: {
+        en: "Blue waters, famous beaches, villages and summer holidays in Kefalonia.",
+        el: "Γαλάζια νερά, διάσημες παραλίες, χωριά και καλοκαιρινές διακοπές στην Κεφαλονιά.",
+      },
+      href: "https://facebook.com",
+      image: "/images/forums/kefalonia.jpg",
     },
   ];
 
@@ -135,6 +165,7 @@ export default function TravelToGreecePage() {
         el: "Ιδέες για ρομαντικές αποδράσεις, φαγητό, βόλτες στην παλιά πόλη και σύντομα ταξίδια γύρω από το Ναύπλιο.",
       },
       href: "https://facebook.com",
+      image: "/images/forums/nafplio.jpg",
     },
     {
       title: "Forum Thessaloniki",
@@ -145,6 +176,7 @@ export default function TravelToGreecePage() {
         el: "Φαγητό, πολιτισμός, νυχτερινή ζωή, τοπικά tips και εμπειρίες πόλης στη Θεσσαλονίκη.",
       },
       href: "https://facebook.com",
+      image: "/images/forums/thessaloniki.jpg",
     },
     {
       title: "Forum Athens",
@@ -155,6 +187,7 @@ export default function TravelToGreecePage() {
         el: "Επισκέψεις στην Ακρόπολη, γειτονιές, εστιατόρια, ξενοδοχεία και οργάνωση διαμονής στην Αθήνα.",
       },
       href: "https://facebook.com",
+      image: "/images/forums/athens.jpg",
     },
   ];
 
@@ -168,6 +201,7 @@ export default function TravelToGreecePage() {
         el: "Όμορφες παραλίες, κρυφοί κολπίσκοι, family-friendly επιλογές και ιδέες για καλοκαιρινές βουτιές.",
       },
       href: "https://facebook.com",
+      image: "/images/forums/beaches.jpg",
     },
     {
       title: "Greek Food Lovers",
@@ -178,6 +212,7 @@ export default function TravelToGreecePage() {
         el: "Παραδοσιακές ταβέρνες, θαλασσινά, γλυκά, κρασί και τοπικές γευστικές ανακαλύψεις σε όλη την Ελλάδα.",
       },
       href: "https://facebook.com",
+      image: "/images/forums/food.jpg",
     },
     {
       title: "Travel Inspiration Greece",
@@ -188,6 +223,7 @@ export default function TravelToGreecePage() {
         el: "Φωτογραφίες, ιδέες προορισμών, weekend αποδράσεις και έμπνευση για κάθε εποχή.",
       },
       href: "https://facebook.com",
+      image: "/images/forums/inspiration.jpg",
     },
   ];
 
@@ -233,7 +269,20 @@ export default function TravelToGreecePage() {
               key={item.title}
               className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
             >
-              <div className={`h-44 bg-gradient-to-br ${accentStyles.card}`} />
+              <div
+                className={
+                  item.image
+                    ? "h-44 bg-cover bg-center"
+                    : `h-44 bg-gradient-to-br ${accentStyles.card}`
+                }
+                style={
+                  item.image
+                    ? {
+                        backgroundImage: `linear-gradient(to top, rgba(15,23,42,0.28), rgba(15,23,42,0.06)), url('${item.image}')`,
+                      }
+                    : undefined
+                }
+              />
               <div className="p-6">
                 <div className="flex items-center justify-between gap-4">
                   <span
@@ -344,7 +393,7 @@ export default function TravelToGreecePage() {
                 className="h-[280px] bg-cover bg-center"
                 style={{
                   backgroundImage:
-                    "linear-gradient(to top, rgba(15,23,42,0.28), rgba(15,23,42,0.02)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80')",
+                    "linear-gradient(to top, rgba(15,23,42,0.28), rgba(15,23,42,0.02)), url('/images/hero/greece-main.jpg')",
                 }}
               />
             </div>
@@ -353,7 +402,7 @@ export default function TravelToGreecePage() {
                 className="h-[180px] bg-cover bg-center"
                 style={{
                   backgroundImage:
-                    "linear-gradient(to top, rgba(15,23,42,0.2), rgba(15,23,42,0.04)), url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80')",
+                    "linear-gradient(to top, rgba(15,23,42,0.2), rgba(15,23,42,0.04)), url('/images/hero/greece-small-1.jpg')",
                 }}
               />
             </div>
@@ -362,7 +411,7 @@ export default function TravelToGreecePage() {
                 className="h-[180px] bg-cover bg-center"
                 style={{
                   backgroundImage:
-                    "linear-gradient(to top, rgba(15,23,42,0.2), rgba(15,23,42,0.04)), url('https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1200&q=80')",
+                    "linear-gradient(to top, rgba(15,23,42,0.2), rgba(15,23,42,0.04)), url('/images/hero/greece-small-2.jpg')",
                 }}
               />
             </div>
@@ -411,9 +460,15 @@ export default function TravelToGreecePage() {
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-slate-500 md:flex-row md:items-center md:justify-between">
           <div>{t.footerText[lang]}</div>
           <div className="flex gap-5">
-            <a href="#" className="hover:text-slate-800">About</a>
-            <a href="#" className="hover:text-slate-800">Contact</a>
-            <a href="#" className="hover:text-slate-800">Privacy</a>
+            <a href="#" className="hover:text-slate-800">
+              {t.footerAbout[lang]}
+            </a>
+            <a href="#" className="hover:text-slate-800">
+              {t.footerContact[lang]}
+            </a>
+            <a href="#" className="hover:text-slate-800">
+              {t.footerPrivacy[lang]}
+            </a>
           </div>
         </div>
       </footer>
