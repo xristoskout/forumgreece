@@ -74,8 +74,8 @@ export default function HomePage() {
         el: "Οργάνωσε το ταξίδι σου στην Ελλάδα με προορισμούς, travel tips και αυθεντικές τοπικές προτάσεις",
       },
       heroText: {
-        en: "ForumGreece is becoming a complete Greece travel portal with destination guides, travel information, hotels, beaches, restaurants and Facebook travel communities.",
-        el: "Το ForumGreece εξελίσσεται σε ένα πλήρες travel portal για την Ελλάδα με οδηγούς προορισμών, ταξιδιωτικές πληροφορίες, ξενοδοχεία, παραλίες, εστιατόρια και Facebook travel communities.",
+        en: "GoGreeceNow is becoming a complete Greece travel portal with destination guides, travel information, hotels, beaches, restaurants and Facebook travel communities.",
+        el: "Το GoGreeceNow εξελίσσεται σε ένα πλήρες travel portal για την Ελλάδα με οδηγούς προορισμών, ταξιδιωτικές πληροφορίες, ξενοδοχεία, παραλίες, εστιατόρια και Facebook travel communities.",
       },
       heroPrimary: { en: "Explore destinations", el: "Δες προορισμούς" },
       heroSecondary: { en: "Travel to Greece", el: "Travel to Greece" },
@@ -134,8 +134,8 @@ export default function HomePage() {
       },
 
       footerText: {
-        en: "ForumGreece — destinations, travel info, hotels, food and local communities.",
-        el: "ForumGreece — προορισμοί, travel info, ξενοδοχεία, φαγητό και τοπικές κοινότητες.",
+        en: "GoGreeceNow — destinations, travel info, hotels, food and local communities.",
+        el: "GoGreeceNow — προορισμοί, travel info, ξενοδοχεία, φαγητό και τοπικές κοινότητες.",
       },
 
       ctaAd: {
@@ -372,7 +372,7 @@ export default function HomePage() {
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 py-5">
           <div>
             <div className="text-2xl font-bold tracking-tight text-sky-900">
-              ForumGreece
+              GoGreeceNow
             </div>
             <div className="text-sm text-slate-500">{t.brandLine[lang]}</div>
           </div>

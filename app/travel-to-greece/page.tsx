@@ -76,8 +76,8 @@ export default function TravelToGreecePage() {
         el: "Άνοιγμα Facebook forum →",
       },
       footerText: {
-        en: "ForumGreece — travel forums, destinations and local communities.",
-        el: "ForumGreece — travel forums, προορισμοί και τοπικές κοινότητες.",
+        en: "GoGreeceNow — travel forums, destinations and local communities.",
+        el: "GoGreeceNow — travel forums, προορισμοί και τοπικές κοινότητες.",
       },
       footerAbout: { en: "About", el: "Σχετικά" },
       footerContact: { en: "Contact", el: "Επικοινωνία" },
@@ -325,7 +325,7 @@ export default function TravelToGreecePage() {
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 py-5">
           <div>
             <div className="text-2xl font-bold tracking-tight text-sky-900">
-              ForumGreece
+              GoGreeceNow
             </div>
             <div className="text-sm text-slate-500">{t.brandLine[lang]}</div>
           </div>
