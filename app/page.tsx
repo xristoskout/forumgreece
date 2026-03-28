@@ -1,374 +1,116 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-
-type Lang = "en" | "el";
-
-type Localized = {
-  en: string;
-  el: string;
-};
-
-type Category = {
-  title: Localized;
-  description: Localized;
-  emoji: string;
-};
-
-type Destination = {
-  name: string;
-  region: Localized;
-  blurb: Localized;
-  image: string;
-};
-
-type GuideCard = {
-  title: Localized;
-  description: Localized;
-  image: string;
-};
-
-type HotelCard = {
-  name: string;
-  place: string;
-  info: Localized;
-  image: string;
-  badge?: string;
-};
-
-type FoodCard = {
-  title: Localized;
-  place: string;
-  info: Localized;
-  image: string;
-};
-
-type CommunityCard = {
-  title: Localized;
-  description: Localized;
-  href: string;
-};
+import {
+  Lang,
+  categories,
+  communities,
+  destinations,
+  food,
+  hotels,
+  siteBrand,
+  siteBrandLine,
+  travelInfoGuides,
+} from "../lib/content";
 
 export default function HomePage() {
   const [lang, setLang] = useState<Lang>("en");
 
-  const t = useMemo(
-    () => ({
-      brandLine: {
-        en: "Greece travel guide, destinations and local experiences",
-        el: "Ταξιδιωτικός οδηγός Ελλάδας, προορισμοί και τοπικές εμπειρίες",
-      },
-      navDestinations: { en: "Destinations", el: "Προορισμοί" },
-      navTravelInfo: { en: "Travel Info", el: "Travel Info" },
-      navHotels: { en: "Hotels", el: "Ξενοδοχεία" },
-      navEatDrink: { en: "Eat & Drink", el: "Φαγητό & Ποτό" },
-      navForums: { en: "Travel to Greece", el: "Travel to Greece" },
+  const t = {
+    navDestinations: { en: "Destinations", el: "Προορισμοί" },
+    navTravelInfo: { en: "Travel Info", el: "Travel Info" },
+    navHotels: { en: "Hotels", el: "Ξενοδοχεία" },
+    navEatDrink: { en: "Eat & Drink", el: "Φαγητό & Ποτό" },
+    navForums: { en: "Travel to Greece", el: "Travel to Greece" },
 
-      heroBadge: {
-        en: "Travel portal • Destinations • Hotels • Food • Communities",
-        el: "Travel portal • Προορισμοί • Ξενοδοχεία • Φαγητό • Κοινότητες",
-      },
-      heroTitle: {
-        en: "Plan your trip to Greece with destinations, travel tips and authentic local ideas",
-        el: "Οργάνωσε το ταξίδι σου στην Ελλάδα με προορισμούς, travel tips και αυθεντικές τοπικές προτάσεις",
-      },
-      heroText: {
-        en: "GoGreeceNow is becoming a complete Greece travel portal with destination guides, travel information, hotels, beaches, restaurants and Facebook travel communities.",
-        el: "Το GoGreeceNow εξελίσσεται σε ένα πλήρες travel portal για την Ελλάδα με οδηγούς προορισμών, ταξιδιωτικές πληροφορίες, ξενοδοχεία, παραλίες, εστιατόρια και Facebook travel communities.",
-      },
-      heroPrimary: { en: "Explore destinations", el: "Δες προορισμούς" },
-      heroSecondary: { en: "Travel to Greece", el: "Travel to Greece" },
+    heroBadge: {
+      en: "Travel portal • Destinations • Hotels • Food • Communities",
+      el: "Travel portal • Προορισμοί • Ξενοδοχεία • Φαγητό • Κοινότητες",
+    },
+    heroTitle: {
+      en: "Plan your trip to Greece with destinations, travel tips and authentic local ideas",
+      el: "Οργάνωσε το ταξίδι σου στην Ελλάδα με προορισμούς, travel tips και αυθεντικές τοπικές προτάσεις",
+    },
+    heroText: {
+      en: "GoGreeceNow is becoming a complete Greece travel portal with destination guides, travel information, hotels, beaches, restaurants and Facebook travel communities.",
+      el: "Το GoGreeceNow εξελίσσεται σε ένα πλήρες travel portal για την Ελλάδα με οδηγούς προορισμών, ταξιδιωτικές πληροφορίες, ξενοδοχεία, παραλίες, εστιατόρια και Facebook travel communities.",
+    },
+    heroPrimary: { en: "Explore destinations", el: "Δες προορισμούς" },
+    heroSecondary: { en: "Travel to Greece", el: "Travel to Greece" },
 
-      destinationEyebrow: {
-        en: "Top Destinations",
-        el: "Δημοφιλείς Προορισμοί",
-      },
-      destinationTitle: {
-        en: "Discover the best places in Greece",
-        el: "Ανακάλυψε τα καλύτερα μέρη της Ελλάδας",
-      },
-      destinationText: {
-        en: "Inspired by top Greece travel portals, the homepage now focuses on clear destination discovery, practical travel information and bookable-style sections.",
-        el: "Με έμπνευση από κορυφαία travel portals για την Ελλάδα, η αρχική δίνει έμφαση στην εύκολη ανακάλυψη προορισμών, στις πρακτικές πληροφορίες και στις ενότητες τύπου booking guide.",
-      },
+    destinationEyebrow: {
+      en: "Top Destinations",
+      el: "Δημοφιλείς Προορισμοί",
+    },
+    destinationTitle: {
+      en: "Discover the best places in Greece",
+      el: "Ανακάλυψε τα καλύτερα μέρη της Ελλάδας",
+    },
+    destinationText: {
+      en: "Explore island and city guides across Greece, including new pages for Kefalonia, Lesvos and Athens.",
+      el: "Ανακάλυψε οδηγούς για νησιά και πόλεις της Ελλάδας, μαζί με νέες σελίδες για Κεφαλονιά, Λέσβο και Αθήνα.",
+    },
 
-      travelInfoEyebrow: { en: "Travel Info", el: "Travel Info" },
-      travelInfoTitle: {
-        en: "Everything useful before you go",
-        el: "Όλα όσα χρειάζεσαι πριν ταξιδέψεις",
-      },
-      travelInfoText: {
-        en: "Useful planning content about how to get there, when to go and how to move around.",
-        el: "Χρήσιμο περιεχόμενο για το πώς θα έρθεις, πότε να ταξιδέψεις και πώς να μετακινηθείς.",
-      },
+    travelInfoEyebrow: { en: "Travel Info", el: "Travel Info" },
+    travelInfoTitle: {
+      en: "Everything useful before you go",
+      el: "Όλα όσα χρειάζεσαι πριν ταξιδέψεις",
+    },
+    travelInfoText: {
+      en: "Useful planning content about how to get there, when to go and how to move around.",
+      el: "Χρήσιμο περιεχόμενο για το πώς θα έρθεις, πότε να ταξιδέψεις και πώς να μετακινηθείς.",
+    },
 
-      hotelsEyebrow: { en: "Hotels", el: "Ξενοδοχεία" },
-      hotelsTitle: {
-        en: "Featured stays in Greece",
-        el: "Προτεινόμενα καταλύματα στην Ελλάδα",
-      },
-      hotelsText: {
-        en: "A stronger accommodation section gives the homepage a more travel-oriented and premium feel.",
-        el: "Μια πιο δυνατή ενότητα διαμονής δίνει στην αρχική πιο τουριστικό και premium χαρακτήρα.",
-      },
+    hotelsEyebrow: { en: "Hotels", el: "Ξενοδοχεία" },
+    hotelsTitle: {
+      en: "Featured stays in Greece",
+      el: "Προτεινόμενα καταλύματα στην Ελλάδα",
+    },
+    hotelsText: {
+      en: "Each hotel card now opens to its own dedicated subpage with the same site style.",
+      el: "Κάθε hotel card πλέον ανοίγει στη δική του ξεχωριστή υποσελίδα με το ίδιο ύφος του site.",
+    },
 
-      foodEyebrow: { en: "Eat & Drink", el: "Φαγητό & Ποτό" },
-      foodTitle: {
-        en: "Taste Greece through local food and drinks",
-        el: "Γνώρισε την Ελλάδα μέσα από το τοπικό φαγητό και ποτό",
-      },
-      foodText: {
-        en: "From tavernas and seafood to sunset cocktails and local specialties.",
-        el: "Από ταβέρνες και θαλασσινά μέχρι cocktails στο ηλιοβασίλεμα και τοπικές γεύσεις.",
-      },
+    foodEyebrow: { en: "Eat & Drink", el: "Φαγητό & Ποτό" },
+    foodTitle: {
+      en: "Taste Greece through local food and drinks",
+      el: "Γνώρισε την Ελλάδα μέσα από το τοπικό φαγητό και ποτό",
+    },
+    foodText: {
+      en: "Food and drink suggestions now lead to separate pages with more travel-style presentation.",
+      el: "Οι προτάσεις για φαγητό και ποτό οδηγούν πλέον σε ξεχωριστές σελίδες με πιο travel-style παρουσίαση.",
+    },
 
-      communitiesEyebrow: { en: "Travel to Greece", el: "Travel to Greece" },
-      communitiesTitle: {
-        en: "Facebook travel forums and communities",
-        el: "Facebook travel forums και κοινότητες",
-      },
-      communitiesText: {
-        en: "A dedicated hub for all the Facebook travel forums you will create for islands, cities and holiday regions across Greece.",
-        el: "Ένα ξεχωριστό hub για όλα τα Facebook travel forums που θα δημιουργήσετε για νησιά, πόλεις και τουριστικές περιοχές της Ελλάδας.",
-      },
+    communitiesEyebrow: { en: "Travel to Greece", el: "Travel to Greece" },
+    communitiesTitle: {
+      en: "Facebook travel forums and communities",
+      el: "Facebook travel forums και κοινότητες",
+    },
+    communitiesText: {
+      en: "A dedicated hub for all the Facebook travel forums you will create for islands, cities and holiday regions across Greece.",
+      el: "Ένα ξεχωριστό hub για όλα τα Facebook travel forums που θα δημιουργήσεις για νησιά, πόλεις και τουριστικές περιοχές της Ελλάδας.",
+    },
 
-      footerText: {
-        en: "GoGreeceNow — destinations, travel info, hotels, food and local communities.",
-        el: "GoGreeceNow — προορισμοί, travel info, ξενοδοχεία, φαγητό και τοπικές κοινότητες.",
-      },
+    footerText: {
+      en: "GoGreeceNow — destinations, travel info, hotels, food and local communities.",
+      el: "GoGreeceNow — προορισμοί, travel info, ξενοδοχεία, φαγητό και τοπικές κοινότητες.",
+    },
 
-      ctaAd: {
-        en: "Advertise your business",
-        el: "Διαφήμισε την επιχείρησή σου",
-      },
-      readMore: { en: "Read more →", el: "Περισσότερα →" },
-      openForum: { en: "Open forum →", el: "Άνοιγμα forum →" },
-      viewGuide: { en: "View guide →", el: "Δες τον οδηγό →" },
-      viewHotels: { en: "View hotels →", el: "Δες ξενοδοχεία →" },
-      discoverFood: { en: "Discover more →", el: "Ανακάλυψε περισσότερα →" },
-      footerAbout: { en: "About", el: "Σχετικά" },
-      footerContact: { en: "Contact", el: "Επικοινωνία" },
-      footerPrivacy: { en: "Privacy", el: "Απόρρητο" },
-    }),
-    []
-  );
-
-  const categories: Category[] = [
-    {
-      title: { en: "Destinations", el: "Προορισμοί" },
-      description: {
-        en: "Travel guides for islands, mainland escapes, famous beaches and beautiful Greek towns.",
-        el: "Ταξιδιωτικοί οδηγοί για νησιά, ηπειρωτικές αποδράσεις, διάσημες παραλίες και όμορφες ελληνικές πόλεις.",
-      },
-      emoji: "🏝️",
+    ctaAd: {
+      en: "Advertise your business",
+      el: "Διαφήμισε την επιχείρησή σου",
     },
-    {
-      title: { en: "Travel Info", el: "Travel Info" },
-      description: {
-        en: "Useful tips about ferries, airports, best time to visit, transport and practical planning.",
-        el: "Χρήσιμες πληροφορίες για πλοία, αεροδρόμια, καλύτερη εποχή, μετακινήσεις και πρακτικό προγραμματισμό.",
-      },
-      emoji: "🧭",
-    },
-    {
-      title: { en: "Hotels", el: "Ξενοδοχεία" },
-      description: {
-        en: "Curated stays, boutique hotels, family resorts and beautiful places to stay across Greece.",
-        el: "Επιλεγμένα καταλύματα, boutique ξενοδοχεία, family resorts και όμορφα μέρη για διαμονή σε όλη την Ελλάδα.",
-      },
-      emoji: "🏨",
-    },
-    {
-      title: { en: "Eat & Drink", el: "Φαγητό & Ποτό" },
-      description: {
-        en: "Restaurants, tavernas, bars and local flavors that help visitors experience Greece authentically.",
-        el: "Εστιατόρια, ταβέρνες, bars και τοπικές γεύσεις που βοηθούν τον επισκέπτη να ζήσει αυθεντικά την Ελλάδα.",
-      },
-      emoji: "🍷",
-    },
-  ];
-
-  const destinations: Destination[] = [
-    {
-      name: "Santorini",
-      region: { en: "Cyclades", el: "Κυκλάδες" },
-      blurb: {
-        en: "Sunset views, caldera stays, beaches and romantic holidays.",
-        el: "Ηλιοβασιλέματα, διαμονή στην καλντέρα, παραλίες και ρομαντικές αποδράσεις.",
-      },
-      image: "/images/santorini.jpg",
-    },
-    {
-      name: "Mykonos",
-      region: { en: "Cyclades", el: "Κυκλάδες" },
-      blurb: {
-        en: "Cosmopolitan vibes, beaches, nightlife and stylish hotels.",
-        el: "Κοσμοπολίτικη ατμόσφαιρα, παραλίες, νυχτερινή ζωή και κομψά ξενοδοχεία.",
-      },
-      image: "/images/mykonos.jpg",
-    },
-    {
-      name: "Crete",
-      region: { en: "Crete", el: "Κρήτη" },
-      blurb: {
-        en: "Big landscapes, cuisine, history, road trips and family holidays.",
-        el: "Μεγάλα τοπία, κουζίνα, ιστορία, road trips και οικογενειακές διακοπές.",
-      },
-      image: "/images/crete.jpg",
-    },
-    {
-      name: "Corfu",
-      region: { en: "Ionian Islands", el: "Ιόνια Νησιά" },
-      blurb: {
-        en: "Green scenery, elegant town life, beaches and island charm.",
-        el: "Πράσινα τοπία, αρχοντική πόλη, παραλίες και νησιώτικη γοητεία.",
-      },
-      image: "/images/corfu.jpg",
-    },
-    {
-      name: "Nafplio",
-      region: { en: "Peloponnese", el: "Πελοπόννησος" },
-      blurb: {
-        en: "Romantic old town, seaside walks and easy weekend escapes.",
-        el: "Ρομανική παλιά πόλη, βόλτες δίπλα στη θάλασσα και εύκολες αποδράσεις.",
-      },
-      image: "/images/nafplio.jpg",
-    },
-    {
-      name: "Thessaloniki",
-      region: { en: "Northern Greece", el: "Βόρεια Ελλάδα" },
-      blurb: {
-        en: "Food, culture, nightlife and urban travel experiences.",
-        el: "Φαγητό, πολιτισμός, νυχτερινή ζωή και αστικές ταξιδιωτικές εμπειρίες.",
-      },
-      image: "/images/thessaloniki.jpg",
-    },
-  ];
-
-  const travelInfo: GuideCard[] = [
-    {
-      title: { en: "How to get to Greece", el: "Πώς να έρθεις στην Ελλάδα" },
-      description: {
-        en: "Flights, ferries, island hopping ideas and airport tips for first-time visitors.",
-        el: "Πτήσεις, πλοία, ιδέες για island hopping και συμβουλές αεροδρομίων για νέους επισκέπτες.",
-      },
-      image: "/images/travel-arrival.jpg",
-    },
-    {
-      title: { en: "Best time to visit", el: "Καλύτερη εποχή για ταξίδι" },
-      description: {
-        en: "When to visit Greece for beaches, sightseeing, food, sailing and quieter holidays.",
-        el: "Πότε να επισκεφθείς την Ελλάδα για παραλίες, sightseeing, φαγητό, sailing και πιο ήσυχες διακοπές.",
-      },
-      image: "/images/travel-season.jpg",
-    },
-    {
-      title: { en: "Getting around", el: "Μετακινήσεις στην Ελλάδα" },
-      description: {
-        en: "Cars, buses, ferries and local transport to move easily between regions and islands.",
-        el: "Αυτοκίνητα, λεωφορεία, πλοία και τοπικές μετακινήσεις για εύκολη πρόσβαση σε περιοχές και νησιά.",
-      },
-      image: "/images/travel-transport.jpg",
-    },
-  ];
-
-  const hotels: HotelCard[] = [
-    {
-      name: "Caldera Blue Suites",
-      place: "Santorini",
-      info: {
-        en: "Elegant cave-style suites with sea views and a luxury island feeling.",
-        el: "Κομψές cave-style σουίτες με θέα στη θάλασσα και luxury νησιώτικη αίσθηση.",
-      },
-      image: "/images/hotel-santorini.jpg",
-      badge: "Featured",
-    },
-    {
-      name: "Ionian Garden Resort",
-      place: "Corfu",
-      info: {
-        en: "A relaxed family-friendly stay close to beaches, restaurants and green scenery.",
-        el: "Χαλαρή οικογενειακή διαμονή κοντά σε παραλίες, εστιατόρια και πράσινα τοπία.",
-      },
-      image: "/images/hotel-corfu.jpg",
-      badge: "Sponsored",
-    },
-    {
-      name: "Old Town Boutique House",
-      place: "Nafplio",
-      info: {
-        en: "Boutique accommodation for romantic city breaks and stylish weekends.",
-        el: "Boutique διαμονή για ρομαντικά city breaks και κομψά Σαββατοκύριακα.",
-      },
-      image: "/images/hotel-nafplio.jpg",
-      badge: "Top pick",
-    },
-  ];
-
-  const food: FoodCard[] = [
-    {
-      title: { en: "Seafood by the harbor", el: "Θαλασσινά δίπλα στο λιμάνι" },
-      place: "Nafplio",
-      info: {
-        en: "Fresh fish, local meze and a classic seaside Greek dining experience.",
-        el: "Φρέσκο ψάρι, τοπικοί μεζέδες και μια κλασική παραθαλάσσια ελληνική εμπειρία φαγητού.",
-      },
-      image: "/images/food-nafplio.jpg",
-    },
-    {
-      title: {
-        en: "Sunset cocktails & dinner",
-        el: "Cocktails και δείπνο στο ηλιοβασίλεμα",
-      },
-      place: "Santorini",
-      info: {
-        en: "A more premium side of Greece with views, drinks and memorable evenings.",
-        el: "Μια πιο premium πλευρά της Ελλάδας με θέα, ποτά και αξέχαστα βράδια.",
-      },
-      image: "/images/food-santorini.jpg",
-    },
-    {
-      title: {
-        en: "Traditional tavern flavors",
-        el: "Γεύσεις παραδοσιακής ταβέρνας",
-      },
-      place: "Crete",
-      info: {
-        en: "Simple authentic food, local ingredients and warm Greek hospitality.",
-        el: "Απλό αυθεντικό φαγητό, τοπικά προϊόντα και ζεστή ελληνική φιλοξενία.",
-      },
-      image: "/images/food-crete.jpg",
-    },
-  ];
-
-  const communities: CommunityCard[] = [
-    {
-      title: { en: "Forum Greece", el: "Forum Greece" },
-      description: {
-        en: "The central Facebook community for Greece travel ideas, questions and recommendations.",
-        el: "Η κεντρική Facebook κοινότητα για ταξιδιωτικές ιδέες, ερωτήσεις και προτάσεις για την Ελλάδα.",
-      },
-      href: "/travel-to-greece",
-    },
-    {
-      title: { en: "Forum Santorini", el: "Forum Santorini" },
-      description: {
-        en: "A dedicated travel forum for Santorini holidays, tips, hotels and beaches.",
-        el: "Ένα ξεχωριστό travel forum για διακοπές στη Σαντορίνη, tips, ξενοδοχεία και παραλίες.",
-      },
-      href: "/travel-to-greece",
-    },
-    {
-      title: { en: "Forum Corfu", el: "Forum Corfu" },
-      description: {
-        en: "A place for Corfu travel discussions, local ideas and useful visitor recommendations.",
-        el: "Ένας χώρος για ταξιδιωτικές συζητήσεις για την Κέρκυρα, τοπικές ιδέες και χρήσιμες προτάσεις.",
-      },
-      href: "/travel-to-greece",
-    },
-  ];
+    readMore: { en: "Read more →", el: "Περισσότερα →" },
+    openForum: { en: "Open forum →", el: "Άνοιγμα forum →" },
+    viewGuide: { en: "View guide →", el: "Δες τον οδηγό →" },
+    viewHotels: { en: "View hotel →", el: "Δες το ξενοδοχείο →" },
+    discoverFood: { en: "Discover more →", el: "Ανακάλυψε περισσότερα →" },
+    footerAbout: { en: "About", el: "Σχετικά" },
+    footerContact: { en: "Contact", el: "Επικοινωνία" },
+    footerPrivacy: { en: "Privacy", el: "Απόρρητο" },
+  };
 
   return (
     <main className="min-h-screen bg-[#f7fbff] text-slate-900">
@@ -378,16 +120,18 @@ export default function HomePage() {
             <Image
               src="/images/logo/gogreecenow-logo.png"
               alt="GoGreeceNow logo"
-              width={52}
-              height={52}
-              className="h-18 w-18 object-contain"
+              width={56}
+              height={56}
+              className="h-14 w-14 object-contain"
               priority
             />
             <div>
               <div className="text-2xl font-bold tracking-tight text-sky-900 transition group-hover:text-sky-700">
-                GoGreeceNow
+                {siteBrand}
               </div>
-              <div className="text-sm text-slate-500">{t.brandLine[lang]}</div>
+              <div className="text-sm text-slate-500">
+                {siteBrandLine[lang]}
+              </div>
             </div>
           </Link>
 
@@ -506,7 +250,7 @@ export default function HomePage() {
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {destinations.map((item) => (
             <article
-              key={item.name}
+              key={item.slug}
               className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
             >
               <div
@@ -523,12 +267,12 @@ export default function HomePage() {
                 <p className="mt-4 text-sm leading-6 text-slate-600">
                   {item.blurb[lang]}
                 </p>
-                <a
-                  href="#"
+                <Link
+                  href={`/destinations/${item.slug}`}
                   className="mt-5 inline-block text-sm font-semibold text-sky-800 hover:text-sky-950"
                 >
                   {t.viewGuide[lang]}
-                </a>
+                </Link>
               </div>
             </article>
           ))}
@@ -550,9 +294,9 @@ export default function HomePage() {
           </div>
 
           <div className="grid gap-6 lg:grid-cols-3">
-            {travelInfo.map((item) => (
+            {travelInfoGuides.map((item) => (
               <article
-                key={item.title.en}
+                key={item.slug}
                 className="overflow-hidden rounded-[28px] border border-slate-200 bg-slate-50 shadow-sm transition hover:shadow-lg"
               >
                 <div
@@ -567,12 +311,12 @@ export default function HomePage() {
                   <p className="mt-4 text-sm leading-6 text-slate-600">
                     {item.description[lang]}
                   </p>
-                  <a
-                    href="#"
+                  <Link
+                    href={`/travel-info/${item.slug}`}
                     className="mt-6 inline-block text-sm font-semibold text-sky-800 hover:text-sky-950"
                   >
                     {t.readMore[lang]}
-                  </a>
+                  </Link>
                 </div>
               </article>
             ))}
@@ -612,7 +356,7 @@ export default function HomePage() {
         <div className="grid gap-6 lg:grid-cols-3">
           {hotels.map((item) => (
             <article
-              key={item.name}
+              key={item.slug}
               className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm transition hover:shadow-xl"
             >
               <div
@@ -636,12 +380,12 @@ export default function HomePage() {
                 <p className="mt-4 text-sm leading-6 text-slate-600">
                   {item.info[lang]}
                 </p>
-                <a
-                  href="#"
+                <Link
+                  href={`/hotels/${item.slug}`}
                   className="mt-5 inline-block text-sm font-semibold text-sky-800 hover:text-sky-950"
                 >
                   {t.viewHotels[lang]}
-                </a>
+                </Link>
               </div>
             </article>
           ))}
@@ -665,7 +409,7 @@ export default function HomePage() {
           <div className="grid gap-6 lg:grid-cols-3">
             {food.map((item) => (
               <article
-                key={item.title.en}
+                key={item.slug}
                 className="overflow-hidden rounded-[28px] border border-slate-200 bg-gradient-to-br from-white to-amber-50 shadow-sm transition hover:shadow-lg"
               >
                 <div
@@ -685,12 +429,12 @@ export default function HomePage() {
                   <p className="mt-4 text-sm leading-6 text-slate-600">
                     {item.info[lang]}
                   </p>
-                  <a
-                    href="#"
+                  <Link
+                    href={`/eat-drink/${item.slug}`}
                     className="mt-6 inline-block text-sm font-semibold text-sky-800 hover:text-sky-950"
                   >
                     {t.discoverFood[lang]}
-                  </a>
+                  </Link>
                 </div>
               </article>
             ))}
