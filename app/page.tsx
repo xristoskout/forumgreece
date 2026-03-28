@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 type Lang = "en" | "el";
 
@@ -147,6 +148,9 @@ export default function HomePage() {
       viewGuide: { en: "View guide →", el: "Δες τον οδηγό →" },
       viewHotels: { en: "View hotels →", el: "Δες ξενοδοχεία →" },
       discoverFood: { en: "Discover more →", el: "Ανακάλυψε περισσότερα →" },
+      footerAbout: { en: "About", el: "Σχετικά" },
+      footerContact: { en: "Contact", el: "Επικοινωνία" },
+      footerPrivacy: { en: "Privacy", el: "Απόρρητο" },
     }),
     []
   );
@@ -370,12 +374,22 @@ export default function HomePage() {
     <main className="min-h-screen bg-[#f7fbff] text-slate-900">
       <section className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 py-5">
-          <div>
-            <div className="text-2xl font-bold tracking-tight text-sky-900">
-              GoGreeceNow
+          <Link href="/" className="group flex shrink-0 items-center gap-3">
+            <Image
+              src="/images/logo/gogreecenow-logo.png"
+              alt="GoGreeceNow logo"
+              width={52}
+              height={52}
+              className="h-18 w-18 object-contain"
+              priority
+            />
+            <div>
+              <div className="text-2xl font-bold tracking-tight text-sky-900 transition group-hover:text-sky-700">
+                GoGreeceNow
+              </div>
+              <div className="text-sm text-slate-500">{t.brandLine[lang]}</div>
             </div>
-            <div className="text-sm text-slate-500">{t.brandLine[lang]}</div>
-          </div>
+          </Link>
 
           <nav className="hidden gap-6 text-sm font-medium text-slate-700 lg:flex">
             <a href="#destinations" className="hover:text-sky-700">
@@ -459,7 +473,7 @@ export default function HomePage() {
             {categories.map((item) => (
               <article
                 key={item.title.en}
-                className="rounded-3xl bg-white/16 p-6 backdrop-blur-md shadow-lg"
+                className="rounded-3xl bg-white/16 p-6 shadow-lg backdrop-blur-md"
               >
                 <div className="text-3xl">{item.emoji}</div>
                 <h3 className="mt-4 text-xl font-semibold">
@@ -726,13 +740,13 @@ export default function HomePage() {
           <div>{t.footerText[lang]}</div>
           <div className="flex gap-5">
             <a href="#" className="hover:text-slate-800">
-              About
+              {t.footerAbout[lang]}
             </a>
             <a href="#" className="hover:text-slate-800">
-              Contact
+              {t.footerContact[lang]}
             </a>
             <a href="#" className="hover:text-slate-800">
-              Privacy
+              {t.footerPrivacy[lang]}
             </a>
           </div>
         </div>

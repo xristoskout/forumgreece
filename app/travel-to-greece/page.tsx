@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 type Lang = "en" | "el";
 
@@ -323,12 +324,22 @@ export default function TravelToGreecePage() {
     <main className="min-h-screen bg-[#f8fbff] text-slate-900">
       <section className="border-b border-slate-200 bg-white/95 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 py-5">
-          <div>
-            <div className="text-2xl font-bold tracking-tight text-sky-900">
-              GoGreeceNow
+          <Link href="/" className="group flex shrink-0 items-center gap-3">
+            <Image
+              src="/images/logo/gogreecenow-logo.png"
+              alt="GoGreeceNow logo"
+              width={52}
+              height={52}
+              className="h-12 w-12 object-contain"
+              priority
+            />
+            <div>
+              <div className="text-2xl font-bold tracking-tight text-sky-900 transition group-hover:text-sky-700">
+                GoGreeceNow
+              </div>
+              <div className="text-sm text-slate-500">{t.brandLine[lang]}</div>
             </div>
-            <div className="text-sm text-slate-500">{t.brandLine[lang]}</div>
-          </div>
+          </Link>
 
           <nav className="hidden gap-6 text-sm font-medium text-slate-700 lg:flex">
             <Link href="/" className="hover:text-sky-700">
