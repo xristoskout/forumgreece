@@ -13,6 +13,7 @@ import {
   siteBrand,
   siteBrandLine,
   travelInfoGuides,
+  tours,
 } from "../lib/content";
 
 export default function HomePage() {
@@ -20,25 +21,26 @@ export default function HomePage() {
 
   const t = {
     navDestinations: { en: "Destinations", el: "Προορισμοί" },
-    navTravelInfo: { en: "Travel Info", el: "Travel Info" },
+    navTravelInfo: { en: "Travel Info", el: "Ταξιδιωτικές Πληροφορίες" },
     navHotels: { en: "Hotels", el: "Ξενοδοχεία" },
+    navTours: { en: "Tours", el: "Εκδρομές" },
     navEatDrink: { en: "Eat & Drink", el: "Φαγητό & Ποτό" },
-    navForums: { en: "Travel to Greece", el: "Travel to Greece" },
+    navForums: { en: "Travel to Greece", el: "Ταξίδι στην Ελλάδα" },
 
     heroBadge: {
-      en: "Travel portal • Destinations • Hotels • Food • Communities",
-      el: "Travel portal • Προορισμοί • Ξενοδοχεία • Φαγητό • Κοινότητες",
+      en: "Travel portal • Destinations • Hotels • Tours • Food • Communities",
+      el: "Travel portal • Προορισμοί • Ξενοδοχεία • Εκδρομές • Φαγητό • Κοινότητες",
     },
     heroTitle: {
       en: "Plan your trip to Greece with destinations, travel tips and authentic local ideas",
       el: "Οργάνωσε το ταξίδι σου στην Ελλάδα με προορισμούς, travel tips και αυθεντικές τοπικές προτάσεις",
     },
     heroText: {
-      en: "GoGreeceNow is becoming a complete Greece travel portal with destination guides, travel information, hotels, beaches, restaurants and Facebook travel communities.",
-      el: "Το GoGreeceNow εξελίσσεται σε ένα πλήρες travel portal για την Ελλάδα με οδηγούς προορισμών, ταξιδιωτικές πληροφορίες, ξενοδοχεία, παραλίες, εστιατόρια και Facebook travel communities.",
+      en: "GoGreeceNow is becoming a complete Greece travel portal with destination guides, travel information, hotels, tours, beaches, restaurants and Facebook travel communities.",
+      el: "Το GoGreeceNow εξελίσσεται σε ένα πλήρες travel portal για την Ελλάδα με οδηγούς προορισμών, ταξιδιωτικές πληροφορίες, ξενοδοχεία, εκδρομές, παραλίες, εστιατόρια και Facebook travel communities.",
     },
     heroPrimary: { en: "Explore destinations", el: "Δες προορισμούς" },
-    heroSecondary: { en: "Travel to Greece", el: "Travel to Greece" },
+    heroSecondary: { en: "Travel to Greece", el: "Ταξίδι στην Ελλάδα" },
 
     destinationEyebrow: {
       en: "Top Destinations",
@@ -53,7 +55,7 @@ export default function HomePage() {
       el: "Ανακάλυψε οδηγούς για νησιά και πόλεις της Ελλάδας, μαζί με νέες σελίδες για Κεφαλονιά, Λέσβο και Αθήνα.",
     },
 
-    travelInfoEyebrow: { en: "Travel Info", el: "Travel Info" },
+    travelInfoEyebrow: { en: "Travel Info", el: "Ταξιδιωτικές Πληροφορίες" },
     travelInfoTitle: {
       en: "Everything useful before you go",
       el: "Όλα όσα χρειάζεσαι πριν ταξιδέψεις",
@@ -73,6 +75,16 @@ export default function HomePage() {
       el: "Κάθε hotel card πλέον ανοίγει στη δική του ξεχωριστή υποσελίδα με το ίδιο ύφος του site.",
     },
 
+    toursEyebrow: { en: "Tours", el: "Εκδρομές" },
+    toursTitle: {
+      en: "Discover the best Greece tours",
+      el: "Ανακάλυψε τις καλύτερες εκδρομές στην Ελλάδα",
+    },
+    toursText: {
+      en: "Explore curated tour ideas in Kefalonia, Lesvos and Crete with local experiences, island highlights and easy travel inspiration.",
+      el: "Ανακάλυψε επιλεγμένες προτάσεις για εκδρομές στην Κεφαλονιά, τη Λέσβο και την Κρήτη, με τοπικές εμπειρίες, κορυφαία σημεία και έμπνευση για το ταξίδι σου.",
+    },
+
     foodEyebrow: { en: "Eat & Drink", el: "Φαγητό & Ποτό" },
     foodTitle: {
       en: "Taste Greece through local food and drinks",
@@ -83,7 +95,7 @@ export default function HomePage() {
       el: "Οι προτάσεις για φαγητό και ποτό οδηγούν πλέον σε ξεχωριστές σελίδες με πιο travel-style παρουσίαση.",
     },
 
-    communitiesEyebrow: { en: "Travel to Greece", el: "Travel to Greece" },
+    communitiesEyebrow: { en: "Travel to Greece", el: "Ταξίδι στην Ελλάδα" },
     communitiesTitle: {
       en: "Facebook travel forums and communities",
       el: "Facebook travel forums και κοινότητες",
@@ -94,8 +106,8 @@ export default function HomePage() {
     },
 
     footerText: {
-      en: "GoGreeceNow — destinations, travel info, hotels, food and local communities.",
-      el: "GoGreeceNow — προορισμοί, travel info, ξενοδοχεία, φαγητό και τοπικές κοινότητες.",
+      en: "GoGreeceNow — destinations, travel info, hotels, tours, food and local communities.",
+      el: "GoGreeceNow — προορισμοί, ταξιδιωτικές πληροφορίες, ξενοδοχεία, εκδρομές, φαγητό και τοπικές κοινότητες.",
     },
 
     ctaAd: {
@@ -106,6 +118,7 @@ export default function HomePage() {
     openForum: { en: "Open forum →", el: "Άνοιγμα forum →" },
     viewGuide: { en: "View guide →", el: "Δες τον οδηγό →" },
     viewHotels: { en: "View hotel →", el: "Δες το ξενοδοχείο →" },
+    viewTour: { en: "View tour →", el: "Δες την εκδρομή →" },
     discoverFood: { en: "Discover more →", el: "Ανακάλυψε περισσότερα →" },
     footerAbout: { en: "About", el: "Σχετικά" },
     footerContact: { en: "Contact", el: "Επικοινωνία" },
@@ -144,6 +157,9 @@ export default function HomePage() {
             </a>
             <a href="#hotels" className="hover:text-sky-700">
               {t.navHotels[lang]}
+            </a>
+            <a href="#tours" className="hover:text-sky-700">
+              {t.navTours[lang]}
             </a>
             <a href="#food" className="hover:text-sky-700">
               {t.navEatDrink[lang]}
@@ -389,6 +405,61 @@ export default function HomePage() {
               </div>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section id="tours" className="bg-slate-50 py-16">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="mb-8 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
+                {t.toursEyebrow[lang]}
+              </p>
+              <h2 className="mt-2 text-3xl font-bold tracking-tight">
+                {t.toursTitle[lang]}
+              </h2>
+            </div>
+            <p className="max-w-3xl text-sm leading-6 text-slate-600">
+              {t.toursText[lang]}
+            </p>
+          </div>
+
+          <div className="grid gap-6 lg:grid-cols-3">
+            {tours.map((item) => (
+              <article
+                key={item.slug}
+                className="overflow-hidden rounded-[28px] border border-slate-200 bg-gradient-to-br from-white to-sky-50 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+              >
+                <div
+                  className="h-52 bg-cover bg-center"
+                  style={{ backgroundImage: `url('${item.image}')` }}
+                />
+                <div className="p-6">
+                  <div className="flex items-center justify-between gap-4">
+                    <div className="text-3xl">🗺️</div>
+                    <span className="rounded-full bg-sky-100 px-3 py-1 text-xs font-semibold text-sky-800">
+                      {item.place}
+                    </span>
+                  </div>
+
+                  <h3 className="mt-4 text-2xl font-semibold leading-snug">
+                    {item.title[lang]}
+                  </h3>
+
+                  <p className="mt-4 text-sm leading-6 text-slate-600">
+                    {item.info[lang]}
+                  </p>
+
+                  <Link
+                    href={`/tours/${item.slug}`}
+                    className="mt-6 inline-block text-sm font-semibold text-sky-800 hover:text-sky-950"
+                  >
+                    {t.viewTour[lang]}
+                  </Link>
+                </div>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
