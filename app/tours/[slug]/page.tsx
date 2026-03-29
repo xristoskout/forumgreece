@@ -12,6 +12,33 @@ type TourPageProps = {
   params: Promise<{ slug: string }>;
 };
 
+function getTourPageData(slug: string) {
+  const landing = experienceLandings.find((item) => item.slug === slug);
+
+  if (landing) {
+    const businesses = experienceBusinesses.filter(
+      (item) => item.landingSlug === slug
+    );
+
+    return {
+      type: "landing" as const,
+      landing,
+      businesses,
+    };
+  }
+
+  const tour = tours.find((item) => item.slug === slug);
+
+  if (tour) {
+    return {
+      type: "tour" as const,
+      tour,
+    };
+  }
+
+  return null;
+}
+
 export async function generateStaticParams() {
   const slugs = Array.from(
     new Set([
@@ -27,95 +54,83 @@ export async function generateMetadata({
   params,
 }: TourPageProps): Promise<Metadata> {
   const { slug } = await params;
+  const pageData = getTourPageData(slug);
 
-  const landing = experienceLandings.find((item) => item.slug === slug);
-  const landingBusinesses = experienceBusinesses.filter(
-    (item) => item.landingSlug === slug
-  );
-
-  if (landing) {
-    const image = landingBusinesses[0]?.image ?? "/images/tours/kefalonia-tours.jpg";
-
-    return {
-      title: `${landing.title.en} | GoGreeceNow`,
-      description: landing.description.en,
-      openGraph: {
-        title: `${landing.title.en} | GoGreeceNow`,
-        description: landing.description.en,
-        images: [
-          {
-            url: image,
-            width: 1200,
-            height: 630,
-            alt: landing.title.en,
-          },
-        ],
-      },
-      twitter: {
-        card: "summary_large_image",
-        title: `${landing.title.en} | GoGreeceNow`,
-        description: landing.description.en,
-        images: [image],
-      },
-    };
-  }
-
-  const tour = tours.find((item) => item.slug === slug);
-
-  if (!tour) {
+  if (!pageData) {
     return {
       title: "Tour Not Found | GoGreeceNow",
       description: "The requested tour page could not be found.",
     };
   }
 
+  if (pageData.type === "landing") {
+    const image =
+      pageData.businesses[0]?.image ?? "/images/default-og.jpg";
+
+    return {
+      title: `${pageData.landing.title.en} | GoGreeceNow`,
+      description: pageData.landing.description.en,
+      openGraph: {
+        title: `${pageData.landing.title.en} | GoGreeceNow`,
+        description: pageData.landing.description.en,
+        images: [
+          {
+            url: image,
+            width: 1200,
+            height: 630,
+            alt: pageData.landing.title.en,
+          },
+        ],
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: `${pageData.landing.title.en} | GoGreeceNow`,
+        description: pageData.landing.description.en,
+        images: [image],
+      },
+    };
+  }
+
   return {
-    title: `${tour.title.en} | ${tour.place} | GoGreeceNow`,
-    description: tour.description.en,
+    title: `${pageData.tour.title.en} | ${pageData.tour.place} | GoGreeceNow`,
+    description: pageData.tour.description.en,
     openGraph: {
-      title: `${tour.title.en} | GoGreeceNow`,
-      description: tour.description.en,
+      title: `${pageData.tour.title.en} | GoGreeceNow`,
+      description: pageData.tour.description.en,
       images: [
         {
-          url: tour.image,
+          url: pageData.tour.image,
           width: 1200,
           height: 630,
-          alt: tour.title.en,
+          alt: pageData.tour.title.en,
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: `${tour.title.en} | GoGreeceNow`,
-      description: tour.description.en,
-      images: [tour.image],
+      title: `${pageData.tour.title.en} | GoGreeceNow`,
+      description: pageData.tour.description.en,
+      images: [pageData.tour.image],
     },
   };
 }
 
 export default async function TourPage({ params }: TourPageProps) {
   const { slug } = await params;
+  const pageData = getTourPageData(slug);
 
-  const landing = experienceLandings.find((item) => item.slug === slug);
+  if (!pageData) {
+    notFound();
+  }
 
-  if (landing) {
-    const businesses = experienceBusinesses.filter(
-      (item) => item.landingSlug === slug
-    );
-
+  if (pageData.type === "landing") {
     return (
       <ExperienceDetailsClient
-        landing={landing}
-        businesses={businesses}
+        landing={pageData.landing}
+        businesses={pageData.businesses}
       />
     );
   }
 
-  const tour = tours.find((item) => item.slug === slug);
-
-  if (!tour) {
-    notFound();
-  }
-
-  return <TourDetailsClient tour={tour} />;
+  return <TourDetailsClient tour={pageData.tour} />;
 }
