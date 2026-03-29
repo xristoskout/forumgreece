@@ -75,8 +75,8 @@ const previewBusinesses =
   return (
     <main className="min-h-screen bg-[#f7fbff] text-slate-900">
       <section className="border-b border-slate-200 bg-white/95 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 py-5">
-          <Link href="/" className="group flex shrink-0 items-center gap-3">
+        <div className="mx-auto flex max-w-7xl items-center justify-between gap-2 px-0 py-3 sm:gap-6 sm:px-6 sm:py-5">
+          <Link href="/" className="group flex min-w-0 items-center gap-2 sm:gap-3">
             <Image
               src="/images/logo/gogreecenow-logo.png"
               alt="GoGreeceNow logo"
@@ -85,12 +85,14 @@ const previewBusinesses =
               className="h-14 w-14 object-contain"
               priority
             />
-            <div>
-              <div className="text-2xl font-bold tracking-tight text-sky-900 transition group-hover:text-sky-700">
-                {siteBrand}
-              </div>
-              <div className="text-sm text-slate-500">{siteBrandLine[lang]}</div>
-            </div>
+            <div className="min-w-0">
+  <div className="truncate text-lg font-bold tracking-tight text-sky-900 transition group-hover:text-sky-700 sm:text-2xl">
+    {siteBrand}
+  </div>
+  <div className="hidden text-sm text-slate-500 sm:block">
+    {siteBrandLine[lang]}
+  </div>
+</div>
           </Link>
 
           <div className="flex items-center gap-4">

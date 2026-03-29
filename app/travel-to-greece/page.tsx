@@ -323,22 +323,24 @@ export default function TravelToGreecePage() {
   return (
     <main className="min-h-screen bg-[#f8fbff] text-slate-900">
       <section className="border-b border-slate-200 bg-white/95 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 py-5">
-          <Link href="/" className="group flex shrink-0 items-center gap-3">
+        <div className="mx-auto flex max-w-7xl items-center justify-between gap-2 px-0 py-3 sm:gap-6 sm:px-6 sm:py-5">
+          <Link href="/" className="group flex min-w-0 items-center gap-2 sm:gap-3">
             <Image
               src="/images/logo/gogreecenow-logo.png"
               alt="GoGreeceNow logo"
               width={52}
               height={52}
-              className="h-12 w-12 object-contain"
+              className="h-10 w-10 shrink-0 object-contain sm:h-12 sm:w-12"
               priority
             />
-            <div>
-              <div className="text-2xl font-bold tracking-tight text-sky-900 transition group-hover:text-sky-700">
-                GoGreeceNow
-              </div>
-              <div className="text-sm text-slate-500">{t.brandLine[lang]}</div>
-            </div>
+            <div className="min-w-0">
+  <div className="truncate text-lg font-bold tracking-tight text-sky-900 transition group-hover:text-sky-700 sm:text-2xl">
+    GoGreeceNow
+  </div>
+  <div className="hidden text-sm text-slate-500 sm:block">
+    {t.brandLine[lang]}
+  </div>
+</div>
           </Link>
 
           <nav className="hidden gap-6 text-sm font-medium text-slate-700 lg:flex">
