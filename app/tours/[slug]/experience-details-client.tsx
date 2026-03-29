@@ -60,7 +60,8 @@ export default function ExperienceDetailsClient({
     travelToGreece:
       lang === "en" ? "Travel to Greece" : "Travel to Greece",
   };
-
+  
+  const heroImage = businesses[0]?.image ?? "/images/tours/kefalonia-tours.jpg";
   return (
     <main className="min-h-screen bg-[#f7fbff] text-slate-900">
       <section className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
@@ -110,8 +111,22 @@ export default function ExperienceDetailsClient({
         </div>
       </section>
 
-      <section className="relative overflow-hidden bg-sky-950 text-white">
-        <div className="mx-auto grid min-h-[520px] max-w-7xl gap-10 px-6 py-20 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+      <section className="relative overflow-hidden text-white">
+          <div className="absolute inset-0">
+    <Image
+      src={heroImage}
+      alt={landing.title[lang]}
+      fill
+      priority
+      className="object-cover"
+      sizes="100vw"
+    />
+  </div>
+
+  <div className="absolute inset-0 bg-sky-950/65" />
+  <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(2,132,199,0.45),rgba(3,105,161,0.15),rgba(15,23,42,0.72))]" />
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.16),transparent_28%),radial-gradient(circle_at_bottom_left,rgba(255,255,255,0.08),transparent_30%)]" />
+        <div className="relative mx-auto grid min-h-[520px] max-w-7xl gap-10 px-6 py-20 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <div>
             <span className="inline-flex rounded-full bg-white/15 px-4 py-1 text-sm font-medium backdrop-blur">
               {t.localExperiences}

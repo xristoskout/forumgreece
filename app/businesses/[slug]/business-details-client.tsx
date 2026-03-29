@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import BusinessGallery from "./business-gallery";
 import type { Lang } from "../../../lib/content";
@@ -165,7 +166,21 @@ export default function BusinessDetailsClient({
           </div>
         </div>
 
-        <section className="relative mt-6 overflow-hidden rounded-[36px] bg-gradient-to-br from-sky-950 via-sky-900 to-cyan-800 text-white shadow-[0_20px_70px_rgba(2,132,199,0.22)]">
+        <section className="relative mt-6 overflow-hidden rounded-[36px] text-white shadow-[0_20px_70px_rgba(2,132,199,0.22)]">
+            <div className="absolute inset-0">
+    <Image
+      src={business.image}
+      alt={business.name}
+      fill
+      priority
+      className="object-cover"
+      sizes="100vw"
+    />
+  </div>
+
+  <div className="absolute inset-0 bg-sky-950/60" />
+  <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(2,132,199,0.40),rgba(3,105,161,0.14),rgba(15,23,42,0.80))]" />
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.18),transparent_30%),radial-gradient(circle_at_bottom_left,rgba(255,255,255,0.08),transparent_35%)]" />
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.18),transparent_30%),radial-gradient(circle_at_bottom_left,rgba(255,255,255,0.08),transparent_35%)]" />
 
           <div className="relative grid gap-8 px-8 py-10 lg:grid-cols-[1.1fr_0.9fr] lg:px-10 lg:py-12">
