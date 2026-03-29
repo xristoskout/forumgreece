@@ -9,6 +9,7 @@ import {
   type Lang,
 } from "../../../lib/content";
 import { destinationSections } from "../../../lib/destination-sections";
+import { destinationDetails } from "../../../lib/destination-details";
 
 export default function DestinationDetailsClient({
   destination,
@@ -17,6 +18,7 @@ export default function DestinationDetailsClient({
 }) {
   const [lang, setLang] = useState<Lang>("en");
   const sections = destinationSections[destination.slug] ?? [];
+  const details = destinationDetails[destination.slug];
 
   return (
     <main className="min-h-screen bg-[#f7fbff] text-slate-900">
@@ -73,7 +75,7 @@ export default function DestinationDetailsClient({
             </h1>
 
             <p className="mt-5 max-w-2xl text-lg leading-8 text-white/90">
-              {destination.overview[lang]}
+              {details ? details.overview[lang] : destination.overview[lang]}
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
@@ -123,7 +125,7 @@ export default function DestinationDetailsClient({
                 {destination.name}
               </h2>
               <p className="mt-5 text-base leading-8 text-slate-600">
-                {destination.overview[lang]}
+                {details ? details.overview[lang] : destination.overview[lang]}
               </p>
             </article>
 
@@ -146,6 +148,44 @@ export default function DestinationDetailsClient({
           </div>
 
           <aside className="space-y-6">
+            {details && (
+              <>
+                <article className="rounded-[28px] border border-slate-200 bg-gradient-to-br from-white to-cyan-50 p-8 shadow-sm">
+                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
+                    {lang === "en" ? "What This Page Includes" : "Τι Περιλαμβάνει Αυτή η Σελίδα"}
+                  </p>
+
+                  <div className="mt-5 grid gap-3">
+                    {details.pageIncludes[lang].map((point) => (
+                      <div
+                        key={point}
+                        className="rounded-2xl border border-cyan-100 bg-white px-4 py-3 text-sm font-medium text-slate-700"
+                      >
+                        ✓ {point}
+                      </div>
+                    ))}
+                  </div>
+                </article>
+
+                <article className="rounded-[28px] border border-slate-200 bg-white p-8 shadow-sm">
+                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
+                    {lang === "en" ? "Perfect For" : "Ιδανικό Για"}
+                  </p>
+
+                  <div className="mt-5 grid gap-3">
+                    {details.perfectFor[lang].map((point) => (
+                      <div
+                        key={point}
+                        className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-medium text-slate-700"
+                      >
+                        ✨ {point}
+                      </div>
+                    ))}
+                  </div>
+                </article>
+              </>
+            )}
+
             <article className="rounded-[28px] border border-slate-200 bg-gradient-to-br from-white to-cyan-50 p-8 shadow-sm">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
                 {lang === "en" ? "Highlights" : "Σημεία που Ξεχωρίζουν"}

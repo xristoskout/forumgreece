@@ -340,19 +340,24 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="hotels" className="mx-auto max-w-7xl px-6 py-16">
+      <section id="hotels" className="bg-gradient-to-b from-amber-50/70 to-white py-16">
+  <div className="mx-auto max-w-7xl px-6">
         <div className="mb-8 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
-              {t.hotelsEyebrow[lang]}
-            </p>
-            <h2 className="mt-2 text-3xl font-bold tracking-tight">
-              {t.hotelsTitle[lang]}
-            </h2>
-            <p className="mt-3 max-w-3xl text-sm leading-6 text-slate-600">
-              {t.hotelsText[lang]}
-            </p>
-          </div>
+  <span className="inline-flex rounded-full bg-amber-100 px-4 py-1 text-sm font-semibold uppercase tracking-[0.18em] text-amber-800">
+    🏨 {t.hotelsEyebrow[lang]}
+  </span>
+
+  <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-900">
+    {t.hotelsTitle[lang]}
+  </h2>
+
+  <div className="mt-4 h-1 w-24 rounded-full bg-gradient-to-r from-amber-500 to-orange-400" />
+
+  <p className="mt-4 max-w-3xl rounded-3xl border border-amber-100 bg-white/80 px-5 py-4 text-sm leading-6 text-slate-600 shadow-sm">
+    {t.hotelsText[lang]}
+  </p>
+</div>
 
           <div className="rounded-3xl border border-amber-200 bg-gradient-to-br from-amber-50 to-orange-50 p-6 shadow-sm lg:max-w-sm">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-amber-700">
@@ -371,144 +376,238 @@ export default function HomePage() {
 
         <div className="grid gap-6 lg:grid-cols-3">
           {hotels.map((item) => (
-            <article
-              key={item.slug}
-              className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm transition hover:shadow-xl"
-            >
-              <div
-                className="relative h-52 bg-cover bg-center"
-                style={{ backgroundImage: `url('${item.image}')` }}
-              >
-                {item.badge ? (
-                  <span className="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-slate-900">
-                    {item.badge}
-                  </span>
-                ) : null}
-              </div>
+  <article
+    key={item.slug}
+    className="overflow-hidden rounded-[30px] border border-amber-200 bg-gradient-to-br from-white via-amber-50/70 to-orange-50 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+  >
+    <div
+      className="relative h-52 bg-cover bg-center"
+      style={{ backgroundImage: `url('${item.image}')` }}
+    >
+      <div className="absolute inset-0 bg-gradient-to-t from-[#2a1606]/35 via-transparent to-transparent" />
 
-              <div className="p-6">
-                <div className="flex items-center justify-between gap-4">
-                  <h3 className="text-xl font-semibold">{item.name}</h3>
-                  <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600">
-                    {item.place}
-                  </span>
-                </div>
-                <p className="mt-4 text-sm leading-6 text-slate-600">
-                  {item.info[lang]}
-                </p>
-                <Link
-                  href={`/hotels/${item.slug}`}
-                  className="mt-5 inline-block text-sm font-semibold text-sky-800 hover:text-sky-950"
-                >
-                  {t.viewHotels[lang]}
-                </Link>
-              </div>
-            </article>
-          ))}
+      {item.badge ? (
+        <span className="absolute left-4 top-4 rounded-full bg-amber-500 px-3 py-1 text-xs font-semibold text-white shadow-sm">
+          {item.badge}
+        </span>
+      ) : null}
+
+      <span className="absolute right-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-amber-800 backdrop-blur">
+        {lang === "en" ? "Stay" : "Διαμονή"}
+      </span>
+    </div>
+
+    <div className="p-6">
+      <div className="flex items-center gap-3">
+        <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-amber-100 text-2xl">
+          🏨
         </div>
-      </section>
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-amber-700">
+            {lang === "en" ? "Featured stay" : "Προτεινόμενη διαμονή"}
+          </p>
+          <h3 className="mt-1 text-xl font-semibold">{item.name}</h3>
+        </div>
+      </div>
 
-      <section id="tours" className="bg-slate-50 py-16">
+      <div className="mt-4">
+        <span className="rounded-full bg-white px-3 py-1 text-xs font-medium text-slate-700 shadow-sm">
+          {item.place}
+        </span>
+      </div>
+
+      <p className="mt-4 text-sm leading-6 text-slate-600">
+        {item.info[lang]}
+      </p>
+
+      <div className="mt-5 flex flex-wrap gap-2">
+        {item.features[lang].slice(0, 3).map((feature) => (
+          <span
+            key={feature}
+            className="rounded-full border border-amber-100 bg-white px-3 py-1 text-xs font-medium text-amber-900"
+          >
+            {feature}
+          </span>
+        ))}
+      </div>
+
+      <Link
+        href={`/hotels/${item.slug}`}
+        className="mt-6 inline-flex rounded-2xl bg-amber-500 px-5 py-3 text-sm font-semibold text-white transition hover:bg-amber-600"
+      >
+        {t.viewHotels[lang]}
+      </Link>
+    </div>
+  </article>
+))}
+        </div>
+      </div>
+    </section>
+
+      <section id="tours" className="bg-gradient-to-b from-sky-50 to-cyan-50/60 py-16">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="mb-8 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
-                {t.toursEyebrow[lang]}
-              </p>
-              <h2 className="mt-2 text-3xl font-bold tracking-tight">
-                {t.toursTitle[lang]}
-              </h2>
-            </div>
-            <p className="max-w-3xl text-sm leading-6 text-slate-600">
-              {t.toursText[lang]}
-            </p>
-          </div>
+          <div className="mb-8 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
+  <div>
+    <span className="inline-flex rounded-full bg-cyan-100 px-4 py-1 text-sm font-semibold uppercase tracking-[0.18em] text-cyan-800">
+      ⚓ {t.toursEyebrow[lang]}
+    </span>
+
+    <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-900">
+      {t.toursTitle[lang]}
+    </h2>
+
+    <div className="mt-4 h-1 w-24 rounded-full bg-gradient-to-r from-cyan-500 to-sky-500" />
+  </div>
+
+  <p className="max-w-3xl rounded-3xl border border-cyan-100 bg-white/80 px-5 py-4 text-sm leading-6 text-slate-600 shadow-sm">
+    {t.toursText[lang]}
+  </p>
+</div>
 
           <div className="grid gap-6 lg:grid-cols-3">
             {tours.map((item) => (
-              <article
-                key={item.slug}
-                className="overflow-hidden rounded-[28px] border border-slate-200 bg-gradient-to-br from-white to-sky-50 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
-              >
-                <div
-                  className="h-52 bg-cover bg-center"
-                  style={{ backgroundImage: `url('${item.image}')` }}
-                />
-                <div className="p-6">
-                  <div className="flex items-center justify-between gap-4">
-                    <div className="text-3xl">🗺️</div>
-                    <span className="rounded-full bg-sky-100 px-3 py-1 text-xs font-semibold text-sky-800">
-                      {item.place}
-                    </span>
-                  </div>
+  <article
+    key={item.slug}
+    className="overflow-hidden rounded-[30px] border border-cyan-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+  >
+    <div className="relative">
+      <div
+        className="h-52 bg-cover bg-center"
+        style={{ backgroundImage: `url('${item.image}')` }}
+      />
+      <div className="absolute inset-x-0 top-0 flex items-center justify-between p-4">
+        <span className="rounded-full bg-cyan-600 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-white shadow-sm">
+          {lang === "en" ? "Experiences" : "Εμπειρίες"}
+        </span>
+        <span className="rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-cyan-800 backdrop-blur">
+          {item.place}
+        </span>
+      </div>
+    </div>
 
-                  <h3 className="mt-4 text-2xl font-semibold leading-snug">
-                    {item.title[lang]}
-                  </h3>
+    <div className="p-6">
+      <div className="flex items-center gap-3">
+        <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-cyan-50 text-2xl">
+          ⚓
+        </div>
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-cyan-700">
+            {lang === "en" ? "Local tours & activities" : "Τοπικές εκδρομές & δραστηριότητες"}
+          </p>
+          <h3 className="mt-1 text-2xl font-semibold leading-snug">
+            {item.title[lang]}
+          </h3>
+        </div>
+      </div>
 
-                  <p className="mt-4 text-sm leading-6 text-slate-600">
-                    {item.info[lang]}
-                  </p>
+      <p className="mt-4 text-sm leading-6 text-slate-600">
+        {item.info[lang]}
+      </p>
 
-                  <Link
-                    href={`/tours/${item.slug}`}
-                    className="mt-6 inline-block text-sm font-semibold text-sky-800 hover:text-sky-950"
-                  >
-                    {t.viewTour[lang]}
-                  </Link>
-                </div>
-              </article>
-            ))}
+      <div className="mt-5 flex flex-wrap gap-2">
+        {item.highlights[lang].slice(0, 3).map((point) => (
+          <span
+            key={point}
+            className="rounded-full border border-cyan-100 bg-cyan-50 px-3 py-1 text-xs font-medium text-cyan-900"
+          >
+            {point}
+          </span>
+        ))}
+      </div>
+
+      <Link
+        href={`/tours/${item.slug}`}
+        className="mt-6 inline-flex rounded-2xl bg-cyan-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-cyan-800"
+      >
+        {t.viewTour[lang]}
+      </Link>
+    </div>
+  </article>
+))}
           </div>
         </div>
       </section>
 
-      <section id="food" className="bg-white py-16">
+      <section id="food" className="bg-gradient-to-b from-orange-50/50 to-amber-50/40 py-16">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-8">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
-              {t.foodEyebrow[lang]}
-            </p>
-            <h2 className="mt-2 text-3xl font-bold tracking-tight">
-              {t.foodTitle[lang]}
-            </h2>
-            <p className="mt-3 max-w-3xl text-sm leading-6 text-slate-600">
-              {t.foodText[lang]}
-            </p>
-          </div>
+  <span className="inline-flex rounded-full bg-orange-100 px-4 py-1 text-sm font-semibold uppercase tracking-[0.18em] text-orange-800">
+    🍷 {t.foodEyebrow[lang]}
+  </span>
+
+  <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-900">
+    {t.foodTitle[lang]}
+  </h2>
+
+  <div className="mt-4 h-1 w-24 rounded-full bg-gradient-to-r from-orange-500 to-amber-400" />
+
+  <p className="mt-4 max-w-3xl rounded-3xl border border-orange-100 bg-white/85 px-5 py-4 text-sm leading-6 text-slate-600 shadow-sm">
+    {t.foodText[lang]}
+  </p>
+</div>
 
           <div className="grid gap-6 lg:grid-cols-3">
             {food.map((item) => (
-              <article
-                key={item.slug}
-                className="overflow-hidden rounded-[28px] border border-slate-200 bg-gradient-to-br from-white to-amber-50 shadow-sm transition hover:shadow-lg"
-              >
-                <div
-                  className="h-52 bg-cover bg-center"
-                  style={{ backgroundImage: `url('${item.image}')` }}
-                />
-                <div className="p-6">
-                  <div className="flex items-center justify-between gap-4">
-                    <div className="text-3xl">🍴</div>
-                    <span className="rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-800">
-                      {item.place}
-                    </span>
-                  </div>
-                  <h3 className="mt-4 text-2xl font-semibold leading-snug">
-                    {item.title[lang]}
-                  </h3>
-                  <p className="mt-4 text-sm leading-6 text-slate-600">
-                    {item.info[lang]}
-                  </p>
-                  <Link
-                    href={`/eat-drink/${item.slug}`}
-                    className="mt-6 inline-block text-sm font-semibold text-sky-800 hover:text-sky-950"
-                  >
-                    {t.discoverFood[lang]}
-                  </Link>
-                </div>
-              </article>
-            ))}
+  <article
+    key={item.slug}
+    className="overflow-hidden rounded-[30px] border border-orange-200 bg-gradient-to-br from-white via-orange-50/80 to-amber-100/70 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+  >
+    <div className="relative">
+      <div
+        className="h-52 bg-cover bg-center"
+        style={{ backgroundImage: `url('${item.image}')` }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#4a2207]/35 via-transparent to-transparent" />
+
+      <div className="absolute inset-x-0 top-0 flex items-center justify-between p-4">
+        <span className="rounded-full bg-orange-500 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-white shadow-sm">
+          {lang === "en" ? "Food & Drink" : "Φαγητό & Ποτό"}
+        </span>
+        <span className="rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-orange-800 backdrop-blur">
+          {item.place}
+        </span>
+      </div>
+    </div>
+
+    <div className="p-6">
+      <div className="flex items-center gap-3">
+        <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-orange-100 text-2xl">
+          🍷
+        </div>
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-orange-700">
+            {lang === "en" ? "Local flavors" : "Τοπικές γεύσεις"}
+          </p>
+          <h3 className="mt-1 text-2xl font-semibold leading-snug">
+            {item.title[lang]}
+          </h3>
+        </div>
+      </div>
+
+      <p className="mt-4 text-sm leading-6 text-slate-600">
+        {item.info[lang]}
+      </p>
+
+      <div className="mt-5 flex flex-wrap gap-2">
+        {item.specialties[lang].slice(0, 3).map((specialty) => (
+          <span
+            key={specialty}
+            className="rounded-full border border-orange-100 bg-white px-3 py-1 text-xs font-medium text-orange-900"
+          >
+            {specialty}
+          </span>
+        ))}
+      </div>
+
+      <Link
+        href={`/eat-drink/${item.slug}`}
+        className="mt-6 inline-flex rounded-2xl bg-orange-500 px-5 py-3 text-sm font-semibold text-white transition hover:bg-orange-600"
+      >
+        {t.discoverFood[lang]}
+      </Link>
+    </div>
+  </article>
+))}
           </div>
         </div>
       </section>

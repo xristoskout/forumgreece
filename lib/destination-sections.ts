@@ -38,4 +38,70 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       },
     },
   ],
+
+  lesvos: [
+    {
+      title: {
+        en: "A cultural island to explore slowly",
+        el: "Ένα πολιτιστικό νησί για αργή εξερεύνηση",
+      },
+      text: {
+        en: "Lesvos rewards visitors who prefer depth over speed. Instead of focusing only on famous postcard spots, the island invites travelers to discover atmosphere, architecture, traditions and food culture, creating a more personal connection with the destination.",
+        el: "Η Λέσβος ανταμείβει τον επισκέπτη που προτιμά το βάθος αντί για την ταχύτητα. Αντί να εστιάζει μόνο σε γνωστά φωτογραφικά σημεία, το νησί σε καλεί να ανακαλύψεις ατμόσφαιρα, αρχιτεκτονική, παραδόσεις και γαστρονομία, δημιουργώντας μια πιο προσωπική σχέση με τον προορισμό.",
+      },
+    },
+    {
+      title: {
+        en: "Villages, flavors and local identity",
+        el: "Χωριά, γεύσεις και τοπική ταυτότητα",
+      },
+      text: {
+        en: "One of the biggest strengths of Lesvos is how naturally local identity enters the travel experience. Village squares, harbor tavernas, olive landscapes and traditional neighborhoods all help shape a stay that feels genuine and memorable.",
+        el: "Ένα από τα μεγαλύτερα πλεονεκτήματα της Λέσβου είναι ο φυσικός τρόπος με τον οποίο η τοπική ταυτότητα μπαίνει στην ταξιδιωτική εμπειρία. Πλατείες χωριών, ταβέρνες σε λιμάνια, ελαιώνες και παραδοσιακές γειτονιές δημιουργούν μια διαμονή που μοιάζει αληθινή και αξέχαστη.",
+      },
+    },
+    {
+      title: {
+        en: "Ideal for meaningful travel",
+        el: "Ιδανική για ουσιαστικό ταξίδι",
+      },
+      text: {
+        en: "Lesvos is a destination for travelers who want more than surface-level sightseeing. Content for the island works best when it brings visitors closer to the local rhythm and shows why Lesvos feels rich in character rather than simply busy with attractions.",
+        el: "Η Λέσβος είναι προορισμός για ταξιδιώτες που θέλουν κάτι περισσότερο από επιφανειακό sightseeing. Το περιεχόμενο για το νησί λειτουργεί καλύτερα όταν φέρνει τον επισκέπτη πιο κοντά στον τοπικό ρυθμό και δείχνει γιατί η Λέσβος είναι γεμάτη χαρακτήρα και όχι απλώς γεμάτη αξιοθέατα.",
+      },
+    },
+  ],
+
+  crete: [
+    {
+      title: {
+        en: "A destination with many travel layers",
+        el: "Ένας προορισμός με πολλά ταξιδιωτικά επίπεδα",
+      },
+      text: {
+        en: "Crete is not a one-style destination. It can feel historical, coastal, rural and culinary all at once. This makes destination content especially valuable, because good planning helps visitors understand how much variety the island can offer in a single trip.",
+        el: "Η Κρήτη δεν είναι προορισμός ενός μόνο τύπου. Μπορεί να είναι ταυτόχρονα ιστορική, παραθαλάσσια, αγροτική και γαστρονομική. Γι’ αυτό το περιεχόμενο για τον προορισμό έχει ιδιαίτερη αξία, αφού ο σωστός σχεδιασμός βοηθά τον επισκέπτη να καταλάβει πόση ποικιλία μπορεί να προσφέρει το νησί μέσα σε ένα μόνο ταξίδι.",
+      },
+    },
+    {
+      title: {
+        en: "History, landscapes and hospitality",
+        el: "Ιστορία, τοπία και φιλοξενία",
+      },
+      text: {
+        en: "The most memorable stays in Crete often work because they combine contrast: ancient sites and modern villages, rugged mountains and relaxed beaches, local tavernas and old towns full of character. The island feels generous, textured and full of stories.",
+        el: "Οι πιο δυνατές διαμονές στην Κρήτη λειτουργούν συχνά επειδή συνδυάζουν αντιθέσεις: αρχαίους χώρους και σύγχρονα χωριά, άγρια βουνά και ήρεμες παραλίες, τοπικές ταβέρνες και παλιές πόλεις γεμάτες χαρακτήρα. Το νησί μοιάζει πλούσιο, πολυεπίπεδο και γεμάτο ιστορίες.",
+      },
+    },
+    {
+      title: {
+        en: "Great for full and varied itineraries",
+        el: "Ιδανική για γεμάτα και πολυδιάστατα προγράμματα",
+      },
+      text: {
+        en: "Crete supports travel content that feels broad and satisfying. Visitors can imagine a whole day or even multiple days of discovery without repeating the same mood. That is why Crete works so well as a featured destination within a Greece travel portal.",
+        el: "Η Κρήτη υποστηρίζει ταξιδιωτικό περιεχόμενο που μοιάζει πλούσιο και ολοκληρωμένο. Ο επισκέπτης μπορεί να φανταστεί μια ολόκληρη μέρα ή ακόμη και πολλές μέρες εξερεύνησης χωρίς να επαναλαμβάνεται η ίδια εμπειρία. Γι’ αυτό η Κρήτη λειτουργεί τόσο καλά ως featured προορισμός μέσα σε ένα travel portal για την Ελλάδα.",
+      },
+    },
+  ],
 };
