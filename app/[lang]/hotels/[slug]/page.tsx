@@ -1,15 +1,41 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { useParams } from "next/navigation";
-import { hotels, Lang, siteBrand, siteBrandLine } from "../../../lib/content";
+import { useParams, usePathname, useRouter } from "next/navigation";
+import { hotels, type Lang, siteBrand, siteBrandLine } from "../../../../lib/content";
 
 export default function HotelDetailPage() {
-  const [lang, setLang] = useState<Lang>("en");
-  const params = useParams<{ slug: string }>();
-  const item = hotels.find((entry) => entry.slug === params.slug);
+  const params = useParams<{ lang: string; slug: string }>();
+  const pathname = usePathname();
+  const router = useRouter();
+
+  const lang: Lang = params?.lang === "el" ? "el" : "en";
+  const slug = params?.slug;
+
+  const item = hotels.find((entry) => entry.slug === slug);
+
+  function stripLocale(path: string) {
+    const stripped = path.replace(/^\/(en|el)(?=\/|$)/, "");
+    return stripped || "/";
+  }
+
+  function withLang(path: string, locale: Lang = lang) {
+    if (/^https?:\/\//i.test(path)) return path;
+
+    const normalized = path.startsWith("/") ? path : `/${path}`;
+    const cleanPath = stripLocale(normalized);
+
+    if (cleanPath === "/") {
+      return `/${locale}`;
+    }
+
+    return `/${locale}${cleanPath}`;
+  }
+
+  function switchLanguage(nextLang: Lang) {
+    router.push(withLang(pathname, nextLang));
+  }
 
   const t = {
     navHome: { en: "Home", el: "Αρχική" },
@@ -19,7 +45,10 @@ export default function HotelDetailPage() {
     features: { en: "Key features", el: "Βασικά χαρακτηριστικά" },
     location: { en: "Location", el: "Τοποθεσία" },
     back: { en: "Back to homepage", el: "Επιστροφή στην αρχική" },
-    notFound: { en: "Hotel not found.", el: "Το ξενοδοχείο δεν βρέθηκε." },
+    notFound: {
+      en: "Hotel not found.",
+      el: "Το ξενοδοχείο δεν βρέθηκε.",
+    },
   };
 
   if (!item) {
@@ -30,7 +59,10 @@ export default function HotelDetailPage() {
     <main className="min-h-screen bg-[#f7fbff] text-slate-900">
       <section className="border-b border-slate-200 bg-white/95 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-2 px-0 py-3 sm:gap-6 sm:px-6 sm:py-5">
-          <Link href="/" className="group flex min-w-0 items-center gap-2 sm:gap-3">
+          <Link
+            href={withLang("/")}
+            className="group flex min-w-0 items-center gap-2 sm:gap-3"
+          >
             <Image
               src="/images/logo/gogreecenow-logo.png"
               alt="GoGreeceNow logo"
@@ -40,18 +72,18 @@ export default function HotelDetailPage() {
               priority
             />
             <div className="min-w-0">
-  <div className="truncate text-lg font-bold tracking-tight text-sky-900 transition group-hover:text-sky-700 sm:text-2xl">
-    {siteBrand}
-  </div>
-  <div className="hidden text-sm text-slate-500 sm:block">
-    {siteBrandLine[lang]}
-  </div>
-</div>
+              <div className="truncate text-lg font-bold tracking-tight text-sky-900 transition group-hover:text-sky-700 sm:text-2xl">
+                {siteBrand}
+              </div>
+              <div className="hidden text-sm text-slate-500 sm:block">
+                {siteBrandLine[lang]}
+              </div>
+            </div>
           </Link>
 
           <div className="flex items-center gap-4">
             <Link
-              href="/"
+              href={withLang("/")}
               className="text-sm font-medium text-slate-700 hover:text-sky-700"
             >
               {t.navHome[lang]}
@@ -62,7 +94,7 @@ export default function HotelDetailPage() {
 
             <div className="flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 p-1">
               <button
-                onClick={() => setLang("en")}
+                onClick={() => switchLanguage("en")}
                 className={`rounded-full px-3 py-1.5 text-sm font-semibold ${
                   lang === "en" ? "bg-sky-600 text-white" : "text-slate-600"
                 }`}
@@ -70,7 +102,7 @@ export default function HotelDetailPage() {
                 EN
               </button>
               <button
-                onClick={() => setLang("el")}
+                onClick={() => switchLanguage("el")}
                 className={`rounded-full px-3 py-1.5 text-sm font-semibold ${
                   lang === "el" ? "bg-sky-600 text-white" : "text-slate-600"
                 }`}
@@ -135,7 +167,7 @@ export default function HotelDetailPage() {
 
       <section className="mx-auto max-w-7xl px-6 py-12">
         <Link
-          href="/"
+          href={withLang("/")}
           className="inline-flex rounded-2xl border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-800 transition hover:bg-slate-50"
         >
           {t.back[lang]}

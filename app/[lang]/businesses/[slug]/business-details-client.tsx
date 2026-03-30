@@ -1,14 +1,16 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 import BusinessGallery from "./business-gallery";
-import type { Lang } from "../../../lib/content";
-import type { ExperienceBusiness } from "../../../lib/experiences";
+import type { Lang } from "../../../../lib/content";
+import type { ExperienceBusiness } from "../../../../lib/experiences";
 
 type BusinessDetailsClientProps = {
   business: ExperienceBusiness;
+  lang: Lang;
 };
 
 type ListCardProps = {
@@ -74,8 +76,32 @@ function getYouTubeVideoId(url: string) {
 
 export default function BusinessDetailsClient({
   business,
+  lang,
 }: BusinessDetailsClientProps) {
-  const [lang, setLang] = useState<Lang>("en");
+  const pathname = usePathname();
+  const router = useRouter();
+
+  function stripLocale(path: string) {
+    const stripped = path.replace(/^\/(en|el)(?=\/|$)/, "");
+    return stripped || "/";
+  }
+
+  function withLang(path: string, locale: Lang = lang) {
+    if (/^https?:\/\//i.test(path)) return path;
+
+    const normalized = path.startsWith("/") ? path : `/${path}`;
+    const cleanPath = stripLocale(normalized);
+
+    if (cleanPath === "/") {
+      return `/${locale}`;
+    }
+
+    return `/${locale}${cleanPath}`;
+  }
+
+  function switchLanguage(nextLang: Lang) {
+    router.push(withLang(pathname, nextLang));
+  }
 
   const galleryImages = useMemo(() => {
     if (business.galleryCount && business.galleryCount > 0) {
@@ -137,7 +163,7 @@ export default function BusinessDetailsClient({
       <section className="mx-auto max-w-7xl px-6 py-10">
         <div className="flex flex-wrap items-center justify-between gap-4">
           <Link
-            href={`/tours/${business.landingSlug}`}
+            href={withLang(`/tours/${business.landingSlug}`)}
             className="inline-flex items-center rounded-full border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-slate-700 transition hover:border-sky-300 hover:text-sky-800"
           >
             {t.backToTours}
@@ -146,7 +172,7 @@ export default function BusinessDetailsClient({
           <div className="flex items-center gap-2 rounded-full border border-slate-200 bg-white p-1 shadow-sm">
             <button
               type="button"
-              onClick={() => setLang("en")}
+              onClick={() => switchLanguage("en")}
               className={`rounded-full px-3 py-1.5 text-sm font-semibold transition ${
                 lang === "en" ? "bg-sky-600 text-white" : "text-slate-600"
               }`}
@@ -156,7 +182,7 @@ export default function BusinessDetailsClient({
 
             <button
               type="button"
-              onClick={() => setLang("el")}
+              onClick={() => switchLanguage("el")}
               className={`rounded-full px-3 py-1.5 text-sm font-semibold transition ${
                 lang === "el" ? "bg-sky-600 text-white" : "text-slate-600"
               }`}
@@ -167,21 +193,20 @@ export default function BusinessDetailsClient({
         </div>
 
         <section className="relative mt-6 overflow-hidden rounded-[36px] text-white shadow-[0_20px_70px_rgba(2,132,199,0.22)]">
-            <div className="absolute inset-0">
-    <Image
-      src={business.image}
-      alt={business.name}
-      fill
-      priority
-      className="object-cover"
-      sizes="100vw"
-    />
-  </div>
+          <div className="absolute inset-0">
+            <Image
+              src={business.image}
+              alt={business.name}
+              fill
+              priority
+              className="object-cover"
+              sizes="100vw"
+            />
+          </div>
 
-  <div className="absolute inset-0 bg-sky-950/60" />
-  <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(2,132,199,0.40),rgba(3,105,161,0.14),rgba(15,23,42,0.80))]" />
-  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.18),transparent_30%),radial-gradient(circle_at_bottom_left,rgba(255,255,255,0.08),transparent_35%)]" />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.18),transparent_30%),radial-gradient(circle_at_bottom_left,rgba(255,255,255,0.08),transparent_35%)]" />
+          <div className="absolute inset-0 bg-[#03a9f4]/8" />
+<div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(3,169,244,0.08),rgba(129,212,250,0.03),rgba(2,136,209,0.04))]" />
+<div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.08),transparent_30%),radial-gradient(circle_at_bottom_left,rgba(255,255,255,0.04),transparent_35%)]" />
 
           <div className="relative grid gap-8 px-8 py-10 lg:grid-cols-[1.1fr_0.9fr] lg:px-10 lg:py-12">
             <div>

@@ -1,8 +1,9 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname, useRouter } from "next/navigation";
 
 type Lang = "en" | "el";
 
@@ -21,7 +22,32 @@ type ForumCard = {
 };
 
 export default function TravelToGreecePage() {
-  const [lang, setLang] = useState<Lang>("en");
+  const pathname = usePathname();
+  const router = useRouter();
+
+  const lang: Lang = pathname.startsWith("/el") ? "el" : "en";
+
+  function stripLocale(path: string) {
+    const stripped = path.replace(/^\/(en|el)(?=\/|$)/, "");
+    return stripped || "/";
+  }
+
+  function withLang(path: string, locale: Lang = lang) {
+    if (/^https?:\/\//i.test(path)) return path;
+
+    const normalized = path.startsWith("/") ? path : `/${path}`;
+    const cleanPath = stripLocale(normalized);
+
+    if (cleanPath === "/") {
+      return `/${locale}`;
+    }
+
+    return `/${locale}${cleanPath}`;
+  }
+
+  function switchLanguage(nextLang: Lang) {
+    router.push(withLang(pathname, nextLang));
+  }
 
   const t = useMemo(
     () => ({
@@ -29,8 +55,14 @@ export default function TravelToGreecePage() {
         en: "Destinations, travel guides, hotels and local experiences in Greece",
         el: "Προορισμοί, ταξιδιωτικοί οδηγοί, ξενοδοχεία και τοπικές εμπειρίες στην Ελλάδα",
       },
-      navHome: { en: "Home", el: "Αρχική" },
-      navForums: { en: "Travel to Greece", el: "Travel to Greece" },
+      navHome: {
+        en: "Home",
+        el: "Αρχική",
+      },
+      navForums: {
+        en: "Travel to Greece",
+        el: "Ταξίδι στην Ελλάδα",
+      },
       heroEyebrow: {
         en: "Facebook Travel Forums",
         el: "Facebook Travel Forums",
@@ -43,9 +75,18 @@ export default function TravelToGreecePage() {
         en: "This page brings together all your Facebook travel communities for islands, cities, beaches, food ideas and destination inspiration across Greece.",
         el: "Αυτή η σελίδα συγκεντρώνει όλες τις Facebook travel κοινότητές σου για νησιά, πόλεις, παραλίες, ιδέες φαγητού και ταξιδιωτική έμπνευση σε όλη την Ελλάδα.",
       },
-      heroPrimary: { en: "Browse forums", el: "Δες τα forums" },
-      heroSecondary: { en: "Back to homepage", el: "Επιστροφή στην αρχική" },
-      introEyebrow: { en: "Travel to Greece", el: "Travel to Greece" },
+      heroPrimary: {
+        en: "Browse forums",
+        el: "Δες τα forums",
+      },
+      heroSecondary: {
+        en: "Back to homepage",
+        el: "Επιστροφή στην αρχική",
+      },
+      introEyebrow: {
+        en: "Travel to Greece",
+        el: "Ταξίδι στην Ελλάδα",
+      },
       introTitle: {
         en: "A central page for all destination communities",
         el: "Μια κεντρική σελίδα για όλες τις destination κοινότητες",
@@ -54,7 +95,10 @@ export default function TravelToGreecePage() {
         en: "Use this page as the main directory for every Facebook forum you create for Greek islands, mainland destinations, themed travel groups and local inspiration.",
         el: "Χρησιμοποίησε αυτή τη σελίδα ως τον βασικό κατάλογο για κάθε Facebook forum που θα δημιουργείς για ελληνικά νησιά, ηπειρωτικούς προορισμούς, θεματικές travel ομάδες και τοπική έμπνευση.",
       },
-      islandsEyebrow: { en: "Island Forums", el: "Forums για νησιά" },
+      islandsEyebrow: {
+        en: "Island Forums",
+        el: "Forums για νησιά",
+      },
       islandsTitle: {
         en: "Popular island communities",
         el: "Δημοφιλείς νησιωτικές κοινότητες",
@@ -67,7 +111,10 @@ export default function TravelToGreecePage() {
         en: "Cities and mainland destinations",
         el: "Πόλεις και προορισμοί ηπειρωτικής Ελλάδας",
       },
-      themedEyebrow: { en: "Themed Communities", el: "Θεματικές κοινότητες" },
+      themedEyebrow: {
+        en: "Themed Communities",
+        el: "Θεματικές κοινότητες",
+      },
       themedTitle: {
         en: "Food, beaches and travel inspiration",
         el: "Φαγητό, παραλίες και ταξιδιωτική έμπνευση",
@@ -80,9 +127,18 @@ export default function TravelToGreecePage() {
         en: "GoGreeceNow — travel forums, destinations and local communities.",
         el: "GoGreeceNow — travel forums, προορισμοί και τοπικές κοινότητες.",
       },
-      footerAbout: { en: "About", el: "Σχετικά" },
-      footerContact: { en: "Contact", el: "Επικοινωνία" },
-      footerPrivacy: { en: "Privacy", el: "Απόρρητο" },
+      footerAbout: {
+        en: "About",
+        el: "Σχετικά",
+      },
+      footerContact: {
+        en: "Contact",
+        el: "Επικοινωνία",
+      },
+      footerPrivacy: {
+        en: "Privacy",
+        el: "Απόρρητο",
+      },
     }),
     []
   );
@@ -284,6 +340,7 @@ export default function TravelToGreecePage() {
                     : undefined
                 }
               />
+
               <div className="p-6">
                 <div className="flex items-center justify-between gap-4">
                   <span
@@ -291,6 +348,7 @@ export default function TravelToGreecePage() {
                   >
                     {item.category[lang]}
                   </span>
+
                   <span className="text-xs font-medium text-slate-500">
                     {item.region[lang]}
                   </span>
@@ -324,7 +382,10 @@ export default function TravelToGreecePage() {
     <main className="min-h-screen bg-[#f8fbff] text-slate-900">
       <section className="border-b border-slate-200 bg-white/95 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-2 px-0 py-3 sm:gap-6 sm:px-6 sm:py-5">
-          <Link href="/" className="group flex min-w-0 items-center gap-2 sm:gap-3">
+          <Link
+            href={withLang("/")}
+            className="group flex min-w-0 items-center gap-2 sm:gap-3"
+          >
             <Image
               src="/images/logo/gogreecenow-logo.png"
               alt="GoGreeceNow logo"
@@ -334,17 +395,17 @@ export default function TravelToGreecePage() {
               priority
             />
             <div className="min-w-0">
-  <div className="truncate text-lg font-bold tracking-tight text-sky-900 transition group-hover:text-sky-700 sm:text-2xl">
-    GoGreeceNow
-  </div>
-  <div className="hidden text-sm text-slate-500 sm:block">
-    {t.brandLine[lang]}
-  </div>
-</div>
+              <div className="truncate text-lg font-bold tracking-tight text-sky-900 transition group-hover:text-sky-700 sm:text-2xl">
+                GoGreeceNow
+              </div>
+              <div className="hidden text-sm text-slate-500 sm:block">
+                {t.brandLine[lang]}
+              </div>
+            </div>
           </Link>
 
           <nav className="hidden gap-6 text-sm font-medium text-slate-700 lg:flex">
-            <Link href="/" className="hover:text-sky-700">
+            <Link href={withLang("/")} className="hover:text-sky-700">
               {t.navHome[lang]}
             </Link>
             <span className="text-sky-700">{t.navForums[lang]}</span>
@@ -352,17 +413,22 @@ export default function TravelToGreecePage() {
 
           <div className="flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 p-1">
             <button
-              onClick={() => setLang("en")}
+              onClick={() => switchLanguage("en")}
               className={`rounded-full px-3 py-1.5 text-sm font-semibold transition ${
-                lang === "en" ? "bg-sky-600 text-white" : "text-slate-600"
+                lang === "en"
+                  ? "bg-sky-600 text-white"
+                  : "text-slate-600"
               }`}
             >
               EN
             </button>
+
             <button
-              onClick={() => setLang("el")}
+              onClick={() => switchLanguage("el")}
               className={`rounded-full px-3 py-1.5 text-sm font-semibold transition ${
-                lang === "el" ? "bg-sky-600 text-white" : "text-slate-600"
+                lang === "el"
+                  ? "bg-sky-600 text-white"
+                  : "text-slate-600"
               }`}
             >
               GR
@@ -377,9 +443,11 @@ export default function TravelToGreecePage() {
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-sky-700">
               {t.heroEyebrow[lang]}
             </p>
+
             <h1 className="mt-4 max-w-4xl text-4xl font-bold leading-tight text-slate-900 md:text-6xl">
               {t.heroTitle[lang]}
             </h1>
+
             <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-600">
               {t.heroText[lang]}
             </p>
@@ -391,8 +459,9 @@ export default function TravelToGreecePage() {
               >
                 {t.heroPrimary[lang]}
               </a>
+
               <Link
-                href="/"
+                href={withLang("/")}
                 className="inline-flex h-12 items-center justify-center rounded-2xl border border-slate-300 bg-white px-6 text-sm font-semibold text-slate-800 transition hover:bg-slate-50"
               >
                 {t.heroSecondary[lang]}
@@ -410,6 +479,7 @@ export default function TravelToGreecePage() {
                 }}
               />
             </div>
+
             <div className="overflow-hidden rounded-[28px] shadow-lg">
               <div
                 className="h-[180px] bg-cover bg-center"
@@ -419,6 +489,7 @@ export default function TravelToGreecePage() {
                 }}
               />
             </div>
+
             <div className="overflow-hidden rounded-[28px] shadow-lg">
               <div
                 className="h-[180px] bg-cover bg-center"
@@ -437,9 +508,11 @@ export default function TravelToGreecePage() {
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
             {t.introEyebrow[lang]}
           </p>
+
           <h2 className="mt-2 text-3xl font-bold tracking-tight md:text-4xl">
             {t.introTitle[lang]}
           </h2>
+
           <p className="mt-4 max-w-3xl text-sm leading-7 text-slate-600">
             {t.introText[lang]}
           </p>
@@ -472,6 +545,7 @@ export default function TravelToGreecePage() {
       <footer className="border-t border-slate-200 bg-white">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-slate-500 md:flex-row md:items-center md:justify-between">
           <div>{t.footerText[lang]}</div>
+
           <div className="flex gap-5">
             <a href="#" className="hover:text-slate-800">
               {t.footerAbout[lang]}

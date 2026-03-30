@@ -1,22 +1,59 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
+import { useParams, usePathname, useRouter } from "next/navigation";
+
 import {
   siteBrand,
   siteBrandLine,
-  type Destination,
+  destinations,
   type Lang,
-} from "../../../lib/content";
-import { destinationSections } from "../../../lib/destination-sections";
-import { destinationDetails } from "../../../lib/destination-details";
+} from "../../../../lib/content";
+import { destinationSections } from "../../../../lib/destination-sections";
+import { destinationDetails } from "../../../../lib/destination-details";
 
-export default function DestinationDetailsClient({
-  destination,
-}: {
-  destination: Destination;
-}) {
-  const [lang, setLang] = useState<Lang>("en");
+export default function DestinationDetailsPage() {
+  const params = useParams<{ lang: string; slug: string }>();
+  const pathname = usePathname();
+  const router = useRouter();
+
+  const lang: Lang = params?.lang === "el" ? "el" : "en";
+  const slug = params?.slug;
+
+  const destination = destinations.find((item) => item.slug === slug);
+
+  function stripLocale(path: string) {
+    const stripped = path.replace(/^\/(en|el)(?=\/|$)/, "");
+    return stripped || "/";
+  }
+
+  function withLang(path: string, locale: Lang = lang) {
+    if (/^https?:\/\//i.test(path)) return path;
+
+    const normalized = path.startsWith("/") ? path : `/${path}`;
+    const cleanPath = stripLocale(normalized);
+
+    if (cleanPath === "/") {
+      return `/${locale}`;
+    }
+
+    return `/${locale}${cleanPath}`;
+  }
+
+  function switchLanguage(nextLang: Lang) {
+    router.push(withLang(pathname, nextLang));
+  }
+
+  if (!destination) {
+    return (
+      <div className="p-10">
+        {lang === "en"
+          ? "Destination not found."
+          : "Ο προορισμός δεν βρέθηκε."}
+      </div>
+    );
+  }
+
   const sections = destinationSections[destination.slug] ?? [];
   const details = destinationDetails[destination.slug];
 
@@ -24,7 +61,10 @@ export default function DestinationDetailsClient({
     <main className="min-h-screen bg-[#f7fbff] text-slate-900">
       <section className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 py-5">
-          <Link href="/" className="group flex shrink-0 items-center gap-3">
+          <Link
+            href={withLang("/")}
+            className="group flex shrink-0 items-center gap-3"
+          >
             <div>
               <div className="text-2xl font-bold tracking-tight text-sky-900 transition group-hover:text-sky-700">
                 {siteBrand}
@@ -37,17 +77,22 @@ export default function DestinationDetailsClient({
 
           <div className="flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 p-1">
             <button
-              onClick={() => setLang("en")}
+              onClick={() => switchLanguage("en")}
               className={`rounded-full px-3 py-1.5 text-sm font-semibold transition ${
-                lang === "en" ? "bg-sky-600 text-white" : "text-slate-600"
+                lang === "en"
+                  ? "bg-sky-600 text-white"
+                  : "text-slate-600"
               }`}
             >
               EN
             </button>
+
             <button
-              onClick={() => setLang("el")}
+              onClick={() => switchLanguage("el")}
               className={`rounded-full px-3 py-1.5 text-sm font-semibold transition ${
-                lang === "el" ? "bg-sky-600 text-white" : "text-slate-600"
+                lang === "el"
+                  ? "bg-sky-600 text-white"
+                  : "text-slate-600"
               }`}
             >
               GR
@@ -80,14 +125,16 @@ export default function DestinationDetailsClient({
 
             <div className="mt-8 flex flex-wrap gap-4">
               <Link
-                href="/#destinations"
+                href={withLang("/#destinations")}
                 className="rounded-full bg-white px-6 py-3 font-semibold text-sky-900 shadow-sm transition hover:-translate-y-0.5"
               >
-                {lang === "en" ? "Back to destinations" : "Επιστροφή στους προορισμούς"}
+                {lang === "en"
+                  ? "Back to destinations"
+                  : "Επιστροφή στους προορισμούς"}
               </Link>
 
               <Link
-                href="/"
+                href={withLang("/")}
                 className="rounded-full border border-white/40 px-6 py-3 font-semibold text-white transition hover:bg-white/10"
               >
                 {lang === "en" ? "Home page" : "Αρχική"}
@@ -119,11 +166,15 @@ export default function DestinationDetailsClient({
           <div className="space-y-6">
             <article className="rounded-[28px] border border-slate-200 bg-white p-8 shadow-sm">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
-                {lang === "en" ? "Destination Overview" : "Περιγραφή Προορισμού"}
+                {lang === "en"
+                  ? "Destination Overview"
+                  : "Περιγραφή Προορισμού"}
               </p>
+
               <h2 className="mt-3 text-3xl font-bold tracking-tight">
                 {destination.name}
               </h2>
+
               <p className="mt-5 text-base leading-8 text-slate-600">
                 {details ? details.overview[lang] : destination.overview[lang]}
               </p>
@@ -137,9 +188,11 @@ export default function DestinationDetailsClient({
                 <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
                   {destination.name}
                 </p>
+
                 <h3 className="mt-3 text-2xl font-bold tracking-tight">
                   {section.title[lang]}
                 </h3>
+
                 <p className="mt-5 text-base leading-8 text-slate-600">
                   {section.text[lang]}
                 </p>
@@ -152,7 +205,9 @@ export default function DestinationDetailsClient({
               <>
                 <article className="rounded-[28px] border border-slate-200 bg-gradient-to-br from-white to-cyan-50 p-8 shadow-sm">
                   <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
-                    {lang === "en" ? "What This Page Includes" : "Τι Περιλαμβάνει Αυτή η Σελίδα"}
+                    {lang === "en"
+                      ? "What This Page Includes"
+                      : "Τι Περιλαμβάνει Αυτή Η Σελίδα"}
                   </p>
 
                   <div className="mt-5 grid gap-3">
@@ -205,25 +260,30 @@ export default function DestinationDetailsClient({
 
             <article className="rounded-[28px] border border-slate-200 bg-white p-8 shadow-sm">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
-                {lang === "en" ? "Travel Note" : "Travel Note"}
+                {lang === "en" ? "Travel Note" : "Σημείωση Ταξιδιού"}
               </p>
+
               <p className="mt-4 text-sm leading-7 text-slate-600">
                 {destination.blurb[lang]}
               </p>
 
               <div className="mt-8 space-y-3">
                 <Link
-                  href="/#destinations"
+                  href={withLang("/#destinations")}
                   className="block rounded-2xl bg-sky-700 px-5 py-3 text-center font-semibold text-white transition hover:bg-sky-800"
                 >
-                  {lang === "en" ? "Explore more destinations" : "Δες περισσότερους προορισμούς"}
+                  {lang === "en"
+                    ? "Explore more destinations"
+                    : "Δες περισσότερους προορισμούς"}
                 </Link>
 
                 <Link
-                  href="/"
+                  href={withLang("/")}
                   className="block rounded-2xl border border-slate-200 px-5 py-3 text-center font-semibold text-slate-700 transition hover:bg-slate-50"
                 >
-                  {lang === "en" ? "Back to homepage" : "Επιστροφή στην αρχική"}
+                  {lang === "en"
+                    ? "Back to homepage"
+                    : "Επιστροφή στην αρχική"}
                 </Link>
               </div>
             </article>
@@ -240,14 +300,22 @@ export default function DestinationDetailsClient({
           </div>
 
           <div className="flex gap-5">
-            <Link href="/" className="hover:text-slate-800">
+            <Link href={withLang("/")} className="hover:text-slate-800">
               {lang === "en" ? "Home" : "Αρχική"}
             </Link>
-            <Link href="/#destinations" className="hover:text-slate-800">
+
+            <Link
+              href={withLang("/#destinations")}
+              className="hover:text-slate-800"
+            >
               {lang === "en" ? "Destinations" : "Προορισμοί"}
             </Link>
-            <Link href="/travel-to-greece" className="hover:text-slate-800">
-              {lang === "en" ? "Travel to Greece" : "Travel to Greece"}
+
+            <Link
+              href={withLang("/travel-to-greece")}
+              className="hover:text-slate-800"
+            >
+              {lang === "en" ? "Travel to Greece" : "Ταξίδι στην Ελλάδα"}
             </Link>
           </div>
         </div>

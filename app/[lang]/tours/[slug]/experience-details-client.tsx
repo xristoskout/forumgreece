@@ -1,37 +1,67 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname, useRouter } from "next/navigation";
+
 import {
   siteBrand,
   siteBrandLine,
   type Lang,
-} from "../../../lib/content";
+} from "../../../../lib/content";
 import {
   type ExperienceBusiness,
   type ExperienceLanding,
-} from "../../../lib/experiences";
+} from "../../../../lib/experiences";
+
+type ExperienceDetailsClientProps = {
+  landing: ExperienceLanding;
+  businesses: ExperienceBusiness[];
+  lang: Lang;
+};
 
 export default function ExperienceDetailsClient({
   landing,
   businesses,
-}: {
-  landing: ExperienceLanding;
-  businesses: ExperienceBusiness[];
-}) {
-  const [lang, setLang] = useState<Lang>("en");
+  lang,
+}: ExperienceDetailsClientProps) {
+  const pathname = usePathname();
+  const router = useRouter();
+
+  function stripLocale(path: string) {
+    const stripped = path.replace(/^\/(en|el)(?=\/|$)/, "");
+    return stripped || "/";
+  }
+
+  function withLang(path: string, locale: Lang = lang) {
+    if (/^https?:\/\//i.test(path)) return path;
+
+    const normalized = path.startsWith("/") ? path : `/${path}`;
+    const cleanPath = stripLocale(normalized);
+
+    if (cleanPath === "/") {
+      return `/${locale}`;
+    }
+
+    return `/${locale}${cleanPath}`;
+  }
+
+  function switchLanguage(nextLang: Lang) {
+    router.push(withLang(pathname, nextLang));
+  }
+
+  function isExternalUrl(url: string) {
+    return /^https?:\/\//i.test(url);
+  }
 
   const t = {
     localExperiences:
       lang === "en" ? "Local Experiences" : "Τοπικές Εμπειρίες",
-    backToTours:
-      lang === "en" ? "Back to tours" : "Επιστροφή στις εκδρομές",
+    backToTours: lang === "en" ? "Back to tours" : "Επιστροφή στις εκδρομές",
     homePage: lang === "en" ? "Home page" : "Αρχική",
-    pageOverview:
-      lang === "en" ? "Page Overview" : "Περιγραφή Σελίδας",
+    pageOverview: lang === "en" ? "Page Overview" : "Περιγραφή Σελίδας",
     featuredBusinesses:
-      lang === "en" ? "Featured Businesses" : "Featured Επιχειρήσεις",
+      lang === "en" ? "Featured Businesses" : "Προτεινόμενες Επιχειρήσεις",
     pageHighlights:
       lang === "en" ? "Page Highlights" : "Σημεία που Ξεχωρίζουν",
     travelNote: lang === "en" ? "Travel Note" : "Σημείωση",
@@ -58,16 +88,18 @@ export default function ExperienceDetailsClient({
     home: lang === "en" ? "Home" : "Αρχική",
     tours: lang === "en" ? "Tours" : "Εκδρομές",
     travelToGreece:
-      lang === "en" ? "Travel to Greece" : "Travel to Greece",
+      lang === "en" ? "Travel to Greece" : "Ταξίδι στην Ελλάδα",
   };
-  
-  const heroImage = businesses[0]?.image ?? "/images/tours/kefalonia-tours.jpg";
+
+  const heroImage =
+    businesses[0]?.image ?? "/images/tours/kefalonia-tours.jpg";
+
   return (
     <main className="min-h-screen bg-[#f7fbff] text-slate-900">
       <section className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-2 px-0 py-3 sm:gap-6 sm:px-6 sm:py-5">
           <Link
-            href="/"
+            href={withLang("/")}
             className="group flex min-w-0 items-center gap-2 sm:gap-3"
           >
             <Image
@@ -91,18 +123,23 @@ export default function ExperienceDetailsClient({
           <div className="flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 p-1">
             <button
               type="button"
-              onClick={() => setLang("en")}
+              onClick={() => switchLanguage("en")}
               className={`rounded-full px-3 py-1.5 text-sm font-semibold transition ${
-                lang === "en" ? "bg-sky-600 text-white" : "text-slate-600"
+                lang === "en"
+                  ? "bg-sky-600 text-white"
+                  : "text-slate-600"
               }`}
             >
               EN
             </button>
+
             <button
               type="button"
-              onClick={() => setLang("el")}
+              onClick={() => switchLanguage("el")}
               className={`rounded-full px-3 py-1.5 text-sm font-semibold transition ${
-                lang === "el" ? "bg-sky-600 text-white" : "text-slate-600"
+                lang === "el"
+                  ? "bg-sky-600 text-white"
+                  : "text-slate-600"
               }`}
             >
               GR
@@ -112,20 +149,21 @@ export default function ExperienceDetailsClient({
       </section>
 
       <section className="relative overflow-hidden text-white">
-          <div className="absolute inset-0">
-    <Image
-      src={heroImage}
-      alt={landing.title[lang]}
-      fill
-      priority
-      className="object-cover"
-      sizes="100vw"
-    />
-  </div>
+        <div className="absolute inset-0">
+          <Image
+            src={heroImage}
+            alt={landing.title[lang]}
+            fill
+            priority
+            className="object-cover"
+            sizes="100vw"
+          />
+        </div>
 
-  <div className="absolute inset-0 bg-sky-950/65" />
-  <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(2,132,199,0.45),rgba(3,105,161,0.15),rgba(15,23,42,0.72))]" />
-  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.16),transparent_28%),radial-gradient(circle_at_bottom_left,rgba(255,255,255,0.08),transparent_30%)]" />
+        <div className="absolute inset-0 bg-[#03a9f4]/8" />
+<div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(3,169,244,0.08),rgba(129,212,250,0.03),rgba(2,136,209,0.04))]" />
+<div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.08),transparent_30%),radial-gradient(circle_at_bottom_left,rgba(255,255,255,0.04),transparent_35%)]" />
+
         <div className="relative mx-auto grid min-h-[520px] max-w-7xl gap-10 px-6 py-20 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <div>
             <span className="inline-flex rounded-full bg-white/15 px-4 py-1 text-sm font-medium backdrop-blur">
@@ -142,14 +180,14 @@ export default function ExperienceDetailsClient({
 
             <div className="mt-8 flex flex-wrap gap-4">
               <Link
-                href="/#tours"
+                href={withLang("/#tours")}
                 className="rounded-full bg-white px-6 py-3 font-semibold text-sky-900 shadow-sm transition hover:-translate-y-0.5"
               >
                 {t.backToTours}
               </Link>
 
               <Link
-                href="/"
+                href={withLang("/")}
                 className="rounded-full border border-white/40 px-6 py-3 font-semibold text-white transition hover:bg-white/10"
               >
                 {t.homePage}
@@ -181,9 +219,11 @@ export default function ExperienceDetailsClient({
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
                 {t.pageOverview}
               </p>
+
               <h2 className="mt-3 text-3xl font-bold tracking-tight">
                 {landing.title[lang]}
               </h2>
+
               <p className="mt-5 text-base leading-8 text-slate-600">
                 {landing.overview[lang]}
               </p>
@@ -200,63 +240,79 @@ export default function ExperienceDetailsClient({
                 </p>
               ) : (
                 <div className="mt-6 space-y-8">
-                  {businesses.map((business) => (
-                    <article
-                      key={business.slug}
-                      className="overflow-hidden rounded-[28px] border border-slate-200 bg-slate-50 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
-                    >
-                      <div className="grid gap-0 lg:grid-cols-[1fr_1.1fr]">
-                        <div className="relative h-[260px] w-full bg-slate-100 sm:h-[320px] lg:h-full min-h-[280px]">
-                          <Image
-                            src={business.image}
-                            alt={business.name}
-                            fill
-                            className="object-cover"
-                            sizes="(max-width: 1024px) 100vw, 40vw"
-                          />
-                        </div>
+                  {businesses.map((business) => {
+                    const businessHref =
+                      business.href || `/businesses/${business.slug}`;
 
-                        <div className="flex flex-col justify-between p-6 md:p-8">
-                          <div>
-                            <div className="flex flex-wrap items-center justify-between gap-3">
-                              <div>
-                                <div className="text-sm font-semibold uppercase tracking-[0.18em] text-sky-700">
-                                  {business.category[lang]}
+                    return (
+                      <article
+                        key={business.slug}
+                        className="overflow-hidden rounded-[28px] border border-slate-200 bg-slate-50 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+                      >
+                        <div className="grid gap-0 lg:grid-cols-[1fr_1.1fr]">
+                          <div className="relative min-h-[280px] h-[260px] w-full bg-slate-100 sm:h-[320px] lg:h-full">
+                            <Image
+                              src={business.image}
+                              alt={business.name}
+                              fill
+                              className="object-cover"
+                              sizes="(max-width: 1024px) 100vw, 40vw"
+                            />
+                          </div>
+
+                          <div className="flex flex-col justify-between p-6 md:p-8">
+                            <div>
+                              <div className="flex flex-wrap items-center justify-between gap-3">
+                                <div>
+                                  <div className="text-sm font-semibold uppercase tracking-[0.18em] text-sky-700">
+                                    {business.category[lang]}
+                                  </div>
+
+                                  <h3 className="mt-2 text-2xl font-bold text-slate-900 md:text-3xl">
+                                    {business.name}
+                                  </h3>
+
+                                  <p className="mt-3 text-sm font-medium text-slate-500">
+                                    {business.place}
+                                  </p>
                                 </div>
 
-                                <h3 className="mt-2 text-2xl font-bold text-slate-900 md:text-3xl">
-                                  {business.name}
-                                </h3>
-
-                                <p className="mt-3 text-sm font-medium text-slate-500">
-                                  {business.place}
-                                </p>
+                                {business.badge && (
+                                  <span className="inline-flex rounded-full bg-sky-100 px-3 py-1 text-sm font-semibold text-sky-800">
+                                    {business.badge}
+                                  </span>
+                                )}
                               </div>
 
-                              {business.badge && (
-                                <span className="inline-flex rounded-full bg-sky-100 px-3 py-1 text-sm font-semibold text-sky-800">
-                                  {business.badge}
-                                </span>
-                              )}
+                              <p className="mt-6 text-base leading-8 text-slate-600">
+                                {business.info[lang]}
+                              </p>
                             </div>
 
-                            <p className="mt-6 text-base leading-8 text-slate-600">
-                              {business.info[lang]}
-                            </p>
-                          </div>
-
-                          <div className="mt-8">
-                            <Link
-                              href={business.href || `/businesses/${business.slug}`}
-                              className="inline-flex items-center justify-center rounded-2xl bg-sky-700 px-6 py-3 text-sm font-semibold text-white transition hover:bg-sky-800"
-                            >
-                              {business.name}
-                            </Link>
+                            <div className="mt-8">
+                              {isExternalUrl(businessHref) ? (
+                                <a
+                                  href={businessHref}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="inline-flex items-center justify-center rounded-2xl bg-sky-700 px-6 py-3 text-sm font-semibold text-white transition hover:bg-sky-800"
+                                >
+                                  {business.name}
+                                </a>
+                              ) : (
+                                <Link
+                                  href={withLang(businessHref)}
+                                  className="inline-flex items-center justify-center rounded-2xl bg-sky-700 px-6 py-3 text-sm font-semibold text-white transition hover:bg-sky-800"
+                                >
+                                  {business.name}
+                                </Link>
+                              )}
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </article>
-                  ))}
+                      </article>
+                    );
+                  })}
                 </div>
               )}
             </article>
@@ -284,20 +340,21 @@ export default function ExperienceDetailsClient({
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
                 {t.travelNote}
               </p>
+
               <p className="mt-4 text-sm leading-7 text-slate-600">
                 {t.travelNoteText}
               </p>
 
               <div className="mt-8 space-y-3">
                 <Link
-                  href="/#tours"
+                  href={withLang("/#tours")}
                   className="block rounded-2xl bg-sky-700 px-5 py-3 text-center font-semibold text-white transition hover:bg-sky-800"
                 >
                   {t.exploreMoreTours}
                 </Link>
 
                 <Link
-                  href="/"
+                  href={withLang("/")}
                   className="block rounded-2xl border border-slate-200 px-5 py-3 text-center font-semibold text-slate-700 transition hover:bg-slate-50"
                 >
                   {t.backToHomepage}
@@ -313,13 +370,18 @@ export default function ExperienceDetailsClient({
           <div>{t.footerText}</div>
 
           <div className="flex gap-5">
-            <Link href="/" className="hover:text-slate-800">
+            <Link href={withLang("/")} className="hover:text-slate-800">
               {t.home}
             </Link>
-            <Link href="/#tours" className="hover:text-slate-800">
+
+            <Link href={withLang("/#tours")} className="hover:text-slate-800">
               {t.tours}
             </Link>
-            <Link href="/travel-to-greece" className="hover:text-slate-800">
+
+            <Link
+              href={withLang("/travel-to-greece")}
+              className="hover:text-slate-800"
+            >
               {t.travelToGreece}
             </Link>
           </div>

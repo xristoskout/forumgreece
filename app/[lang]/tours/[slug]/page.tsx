@@ -1,16 +1,22 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { tours } from "../../../lib/content";
+import { tours, type Lang } from "../../../../lib/content";
 import {
   experienceBusinesses,
   experienceLandings,
-} from "../../../lib/experiences";
+} from "../../../../lib/experiences";
 import ExperienceDetailsClient from "./experience-details-client";
 import TourDetailsClient from "./tour-details-client";
 
 type TourPageProps = {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ lang: string; slug: string }>;
 };
+
+const supportedLangs: Lang[] = ["en", "el"];
+
+function isValidLang(value: string): value is Lang {
+  return value === "en" || value === "el";
+}
 
 function getTourPageData(slug: string) {
   const landing = experienceLandings.find((item) => item.slug === slug);
@@ -47,76 +53,104 @@ export async function generateStaticParams() {
     ])
   );
 
-  return slugs.map((slug) => ({ slug }));
+  return supportedLangs.flatMap((lang) =>
+    slugs.map((slug) => ({
+      lang,
+      slug,
+    }))
+  );
 }
 
 export async function generateMetadata({
   params,
 }: TourPageProps): Promise<Metadata> {
-  const { slug } = await params;
+  const { lang, slug } = await params;
+
+  if (!isValidLang(lang)) {
+    return {
+      title: "Page Not Found | GoGreeceNow",
+      description: "The requested page could not be found.",
+    };
+  }
+
   const pageData = getTourPageData(slug);
 
   if (!pageData) {
     return {
-      title: "Tour Not Found | GoGreeceNow",
-      description: "The requested tour page could not be found.",
+      title:
+        lang === "el"
+          ? "Η εκδρομή δεν βρέθηκε | GoGreeceNow"
+          : "Tour Not Found | GoGreeceNow",
+      description:
+        lang === "el"
+          ? "Η σελίδα εκδρομής που ζητήσατε δεν βρέθηκε."
+          : "The requested tour page could not be found.",
     };
   }
 
   if (pageData.type === "landing") {
-    const image =
-      pageData.businesses[0]?.image ?? "/images/default-og.jpg";
+    const image = pageData.businesses[0]?.image ?? "/images/default-og.jpg";
+    const title = `${pageData.landing.title[lang]} | GoGreeceNow`;
+    const description = pageData.landing.description[lang];
 
     return {
-      title: `${pageData.landing.title.en} | GoGreeceNow`,
-      description: pageData.landing.description.en,
+      title,
+      description,
       openGraph: {
-        title: `${pageData.landing.title.en} | GoGreeceNow`,
-        description: pageData.landing.description.en,
+        title,
+        description,
         images: [
           {
             url: image,
             width: 1200,
             height: 630,
-            alt: pageData.landing.title.en,
+            alt: pageData.landing.title[lang],
           },
         ],
       },
       twitter: {
         card: "summary_large_image",
-        title: `${pageData.landing.title.en} | GoGreeceNow`,
-        description: pageData.landing.description.en,
+        title,
+        description,
         images: [image],
       },
     };
   }
 
+  const title = `${pageData.tour.title[lang]} | ${pageData.tour.place} | GoGreeceNow`;
+  const description = pageData.tour.description[lang];
+
   return {
-    title: `${pageData.tour.title.en} | ${pageData.tour.place} | GoGreeceNow`,
-    description: pageData.tour.description.en,
+    title,
+    description,
     openGraph: {
-      title: `${pageData.tour.title.en} | GoGreeceNow`,
-      description: pageData.tour.description.en,
+      title: `${pageData.tour.title[lang]} | GoGreeceNow`,
+      description,
       images: [
         {
           url: pageData.tour.image,
           width: 1200,
           height: 630,
-          alt: pageData.tour.title.en,
+          alt: pageData.tour.title[lang],
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: `${pageData.tour.title.en} | GoGreeceNow`,
-      description: pageData.tour.description.en,
+      title: `${pageData.tour.title[lang]} | GoGreeceNow`,
+      description,
       images: [pageData.tour.image],
     },
   };
 }
 
 export default async function TourPage({ params }: TourPageProps) {
-  const { slug } = await params;
+  const { lang, slug } = await params;
+
+  if (!isValidLang(lang)) {
+    notFound();
+  }
+
   const pageData = getTourPageData(slug);
 
   if (!pageData) {
@@ -128,9 +162,10 @@ export default async function TourPage({ params }: TourPageProps) {
       <ExperienceDetailsClient
         landing={pageData.landing}
         businesses={pageData.businesses}
+        lang={lang}
       />
     );
   }
 
-  return <TourDetailsClient tour={pageData.tour} />;
+  return <TourDetailsClient tour={pageData.tour} lang={lang} />;
 }
