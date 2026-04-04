@@ -9,6 +9,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
+  --font-el: var(--font-greek-sans);
   --font-mono: var(--font-geist-mono);
 }
 
@@ -17,4 +18,8 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
+}
+
+[lang="el"] {
+  font-family: var(--font-el), var(--font-sans), Arial, Helvetica, sans-serif;
 }

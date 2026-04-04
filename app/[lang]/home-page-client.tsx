@@ -610,15 +610,13 @@ export default function HomePageClient({
             backgroundAttachment: "fixed",
           }}
         />
-        <div className="absolute inset-0 z-0 bg-gradient-to-b from-white/70 via-white/80 to-[#f8fbff]" />
-
         <div className="relative z-10 w-full max-w-7xl mx-auto px-6 py-16 lg:grid-cols-[1.2fr_0.8fr] gap-12 lg:pb-32 grid lg:items-end">
           <div className="animate-fade-in-up mt-10 md:mt-0">
             <div className="inline-flex rounded-full border border-indigo-200 bg-white/80 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-indigo-700 backdrop-blur-md shadow-sm mb-6 relative overflow-hidden group">
                <span className="relative z-10">{copy.heroBadge}</span>
             </div>
 
-            <h1 className="max-w-4xl text-5xl md:text-7xl font-extrabold leading-[1.1] text-slate-900 drop-shadow-xl tracking-tight mb-6">
+            <h1 className="max-w-4xl text-5xl md:text-7xl font-extrabold leading-[1.1] text-white drop-shadow-xl tracking-tight mb-6">
               {copy.heroTitle}
             </h1>
 
@@ -770,16 +768,16 @@ export default function HomePageClient({
                 className="absolute inset-0 bg-cover bg-center transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
                 style={{ backgroundImage: `url('${item.image}')` }}
               />
-              <div className="absolute inset-0 bg-white/80 transition-opacity duration-700 group-hover:bg-[#f4f7fb]/20" />
+              <div className="absolute inset-0 bg-transparent transition-opacity duration-700" />
 
               <div className="relative p-7 md:p-8">
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-900/75">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/90 drop-shadow-md">
                   {item.eyebrow[lang]}
                 </p>
-                <h3 className="mt-3 max-w-xl text-2xl font-bold leading-tight md:text-3xl">
+                <h3 className="mt-3 max-w-xl text-2xl font-bold leading-tight text-white drop-shadow-lg md:text-3xl">
                   {item.title[lang]}
                 </h3>
-                <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-900/88">
+                <p className="mt-4 max-w-2xl text-sm leading-7 text-white/95 drop-shadow-md">
                   {item.description[lang]}
                 </p>
 
@@ -787,14 +785,14 @@ export default function HomePageClient({
                   {item.tags[lang].map((tag) => (
                     <span
                       key={tag}
-                      className="border border-white/25 bg-slate-50 px-3 py-1 text-xs font-medium text-slate-900"
+                      className="border border-white/30 bg-black/25 px-3 py-1 text-xs font-medium text-white backdrop-blur-sm"
                     >
                       {tag}
                     </span>
                   ))}
                 </div>
 
-                <span className="mt-6 inline-block bg-white backdrop-blur-md px-4 py-2 text-sm font-semibold text-slate-900 transition group-hover:bg-slate-100">
+                <span className="mt-6 inline-block bg-white/90 backdrop-blur-md px-4 py-2 text-sm font-semibold text-slate-900 transition group-hover:bg-white">
                   {item.cta[lang]}
                 </span>
               </div>
@@ -846,11 +844,11 @@ export default function HomePageClient({
                     </span>
                   </div>
 
-                  <h3 className="mb-2 text-3xl font-extrabold tracking-tight text-slate-900 drop-shadow-md">
+                  <h3 className="mb-2 text-3xl font-extrabold tracking-tight text-white drop-shadow-md">
                     {item.name}
                   </h3>
 
-                  <p className="mb-6 text-sm leading-relaxed text-slate-600 line-clamp-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                  <p className="mb-6 text-sm leading-relaxed text-white/95 line-clamp-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
                     {item.blurb[lang]}
                   </p>
 

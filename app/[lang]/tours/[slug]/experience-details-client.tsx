@@ -148,7 +148,7 @@ export default function ExperienceDetailsClient({
         </div>
       </section>
 
-      <section className="relative overflow-hidden text-slate-900">
+      <section className="relative overflow-hidden text-white">
         <div className="absolute inset-0">
           <Image
             src={heroImage}
@@ -170,11 +170,11 @@ export default function ExperienceDetailsClient({
               {t.localExperiences}
             </span>
 
-            <h1 className="mt-6 max-w-4xl text-4xl font-bold leading-tight md:text-6xl">
+            <h1 className="mt-6 max-w-4xl text-4xl font-bold leading-tight text-white md:text-6xl">
               {landing.title[lang]}
             </h1>
 
-            <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-900/90">
+            <p className="mt-5 max-w-2xl text-lg leading-8 text-white/95">
               {landing.description[lang]}
             </p>
 
@@ -188,7 +188,7 @@ export default function ExperienceDetailsClient({
 
               <Link
                 href={withLang("/")}
-                className="rounded-full border border-white/40 px-6 py-3 font-semibold text-slate-900 transition hover:bg-slate-50"
+                className="rounded-full border border-white/60 px-6 py-3 font-semibold text-white transition hover:bg-white/10"
               >
                 {t.homePage}
               </Link>
@@ -203,7 +203,7 @@ export default function ExperienceDetailsClient({
               >
                 <div className="text-3xl">⚓</div>
                 <h3 className="mt-4 text-xl font-semibold">{highlight}</h3>
-                <p className="mt-2 text-sm leading-6 text-slate-900/90">
+                <p className="mt-2 text-sm leading-6 text-white/90">
                   {t.highlightReason}
                 </p>
               </article>
