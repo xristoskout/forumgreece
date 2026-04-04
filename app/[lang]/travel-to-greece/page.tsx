@@ -379,7 +379,7 @@ export default function TravelToGreecePage() {
   };
 
   return (
-    <main className="min-h-screen bg-transparent text-slate-900">
+    <main className="min-h-screen bg-white text-slate-900">
       <section className="border-b border-slate-200 bg-white backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-2 px-0 py-3 sm:gap-6 sm:px-6 sm:py-5">
           <Link
@@ -437,8 +437,7 @@ export default function TravelToGreecePage() {
         </div>
       </section>
 
-      <section className="relative overflow-hidden bg-[#f4f7fb]">
-        <div className="absolute inset-0 bg-gradient-to-br from-indigo-950/20 via-slate-950 to-slate-50 z-0"></div>
+      <section className="relative overflow-hidden bg-white">
         <div className="mx-auto grid max-w-7xl gap-10 px-6 py-16 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:py-24 relative z-10">
           <div>
             <div className="inline-flex rounded-full border border-indigo-200 bg-indigo-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-indigo-800 backdrop-blur-md mb-6 relative overflow-hidden group">

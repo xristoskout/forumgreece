@@ -170,7 +170,7 @@ export default function TravelInfoHubPage() {
             backgroundAttachment: "fixed",
           }}
         />
-        <div className="absolute inset-0 z-0 bg-gradient-to-b from-black/60/60 via-slate-950/40 to-slate-50" />
+        <div className="absolute inset-0 z-0 bg-gradient-to-b from-black/55 via-black/35 to-black/20" />
 
         <div className="relative z-10 mx-auto max-w-7xl px-6 py-16 md:py-20 text-center flex flex-col items-center">
           <div className="inline-flex rounded-full border border-indigo-200 bg-indigo-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-indigo-800 backdrop-blur-md mb-6 relative overflow-hidden group">
@@ -178,11 +178,11 @@ export default function TravelInfoHubPage() {
              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-indigo-500/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></div>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-slate-900 mb-6 drop-shadow-xl">
+          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-white mb-6 drop-shadow-xl">
             {t.heroTitle[lang]}
           </h1>
 
-          <p className="max-w-2xl text-lg md:text-xl leading-relaxed text-slate-600 font-light mb-12">
+          <p className="max-w-2xl text-lg md:text-xl leading-relaxed text-white/95 font-light mb-12">
             {t.heroText[lang]}
           </p>
 
