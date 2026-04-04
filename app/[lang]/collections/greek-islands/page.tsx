@@ -92,12 +92,12 @@ export default async function GreekIslandsCollectionPage({
   const featuredDestinations = destinations.slice(0, 6);
 
   return (
-    <main className="min-h-screen bg-[#f7fbff] text-slate-900">
+    <main className="min-h-screen bg-transparent text-slate-900">
       <SiteHeader />
 
-      <section className="border-b border-slate-200 bg-white">
+      <section className="border-b border-slate-200 bg-white backdrop-blur-md">
         <div className="mx-auto max-w-7xl px-6 py-14">
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-sky-700">
+          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-indigo-700">
             {lang === "en"
               ? "Greek Islands Collection"
               : "Συλλογή για Ελληνικά Νησιά"}
@@ -109,7 +109,7 @@ export default async function GreekIslandsCollectionPage({
               : "Οδηγοί για ελληνικά νησιά με παραλίες, τοπία και πρακτική οργάνωση ταξιδιού"}
           </h1>
 
-          <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-600">
+          <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-500">
             {lang === "en"
               ? "Use this hub to discover Greek islands, compare destination styles and move from inspiration into practical planning for your next trip."
               : "Χρησιμοποίησε αυτό το hub για να ανακαλύψεις ελληνικά νησιά, να συγκρίνεις διαφορετικά travel styles και να περάσεις από την έμπνευση στην πρακτική οργάνωση του επόμενου ταξιδιού σου."}
@@ -118,7 +118,7 @@ export default async function GreekIslandsCollectionPage({
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
               href={withLang("/travel-info", lang)}
-              className="bg-sky-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-sky-800"
+              className="bg-indigo-600 border-none px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-indigo-500"
             >
               {lang === "en"
                 ? "Read Greece travel planning guides →"
@@ -127,7 +127,7 @@ export default async function GreekIslandsCollectionPage({
 
             <Link
               href={withLang("/", lang)}
-              className="border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-50"
+              className="border border-slate-200 bg-white backdrop-blur-md px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-white hover:bg-slate-50"
             >
               {lang === "en"
                 ? "Back to homepage →"
@@ -140,7 +140,7 @@ export default async function GreekIslandsCollectionPage({
       <section className="mx-auto max-w-7xl px-6 py-14">
         <div className="mb-8 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-sky-700">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-indigo-700">
               {lang === "en"
                 ? "Featured Island Guides"
                 : "Προτεινόμενοι Οδηγοί Νησιών"}
@@ -153,7 +153,7 @@ export default async function GreekIslandsCollectionPage({
             </h2>
           </div>
 
-          <p className="max-w-3xl text-sm leading-6 text-slate-600">
+          <p className="max-w-3xl text-sm leading-6 text-slate-500">
             {lang === "en"
               ? "These destination guides help travelers compare atmosphere, scenery and highlights before choosing the right island."
               : "Αυτοί οι οδηγοί προορισμών βοηθούν τον ταξιδιώτη να συγκρίνει ατμόσφαιρα, τοπία και highlights πριν διαλέξει το σωστό νησί."}
@@ -164,7 +164,7 @@ export default async function GreekIslandsCollectionPage({
           {featuredDestinations.map((item) => (
             <article
               key={item.slug}
-              className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+              className="overflow-hidden rounded-xl border border-slate-200 bg-white backdrop-blur-md shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
             >
               <div
                 className="h-52 bg-cover bg-center"
@@ -173,11 +173,11 @@ export default async function GreekIslandsCollectionPage({
 
               <div className="p-6">
                 <div className="flex flex-wrap items-center gap-2">
-                  <span className="rounded-md bg-sky-50 px-3 py-1 text-xs font-semibold text-sky-800">
+                  <span className="rounded-md bg-sky-50 px-3 py-1 text-xs font-semibold text-indigo-700">
                     {lang === "en" ? "Island Guide" : "Οδηγός Νησιού"}
                   </span>
 
-                  <span className="rounded-md bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-600">
+                  <span className="rounded-md bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-500">
                     {item.region[lang]}
                   </span>
                 </div>
@@ -186,13 +186,13 @@ export default async function GreekIslandsCollectionPage({
                   {item.name}
                 </h3>
 
-                <p className="mt-3 text-sm leading-7 text-slate-600">
+                <p className="mt-3 text-sm leading-7 text-slate-500">
                   {item.blurb[lang]}
                 </p>
 
                 <Link
                   href={withLang(`/destinations/${item.slug}`, lang)}
-                  className="mt-6 inline-flex bg-slate-900 px-4 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
+                  className="mt-6 inline-flex bg-white px-4 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-100"
                 >
                   {lang === "en"
                     ? `${item.name} travel guide →`
@@ -204,16 +204,16 @@ export default async function GreekIslandsCollectionPage({
         </div>
       </section>
 
-      <section className="bg-white py-14">
+      <section className="bg-white backdrop-blur-md py-14">
         <div className="mx-auto grid max-w-7xl gap-6 px-6 lg:grid-cols-3">
-          <article className="border border-slate-200 bg-slate-50 p-6">
+          <article className="border border-slate-200 bg-white hover:bg-slate-50 p-6">
             <h3 className="text-xl font-semibold text-slate-900">
               {lang === "en"
                 ? "How to plan island travel"
                 : "Πώς να οργανώσεις island travel"}
             </h3>
 
-            <p className="mt-3 text-sm leading-7 text-slate-600">
+            <p className="mt-3 text-sm leading-7 text-slate-500">
               {lang === "en"
                 ? "Start with practical Greece travel info before choosing ferries, flights and the right season for your island trip."
                 : "Ξεκίνα με τις πρακτικές ταξιδιωτικές πληροφορίες για την Ελλάδα πριν επιλέξεις πλοία, πτήσεις και τη σωστή εποχή για το νησιωτικό σου ταξίδι."}
@@ -221,7 +221,7 @@ export default async function GreekIslandsCollectionPage({
 
             <Link
               href={withLang("/travel-info", lang)}
-              className="mt-5 inline-block text-sm font-semibold text-sky-800"
+              className="mt-5 inline-block text-sm font-semibold text-indigo-700"
             >
               {lang === "en"
                 ? "Go to travel info →"
@@ -229,14 +229,14 @@ export default async function GreekIslandsCollectionPage({
             </Link>
           </article>
 
-          <article className="border border-slate-200 bg-slate-50 p-6">
+          <article className="border border-slate-200 bg-white hover:bg-slate-50 p-6">
             <h3 className="text-xl font-semibold text-slate-900">
               {lang === "en"
                 ? "Add tours and experiences"
                 : "Πρόσθεσε εκδρομές και εμπειρίες"}
             </h3>
 
-            <p className="mt-3 text-sm leading-7 text-slate-600">
+            <p className="mt-3 text-sm leading-7 text-slate-500">
               {lang === "en"
                 ? "Once you choose an island, add boat trips, local tours and activity ideas to shape the rest of your itinerary."
                 : "Αφού επιλέξεις νησί, πρόσθεσε boat trips, τοπικές εκδρομές και ιδέες δραστηριοτήτων για να ολοκληρώσεις το itinerary σου."}
@@ -244,7 +244,7 @@ export default async function GreekIslandsCollectionPage({
 
             <Link
               href={withLang("/collections/greece-tours-and-experiences", lang)}
-              className="mt-5 inline-block text-sm font-semibold text-sky-800"
+              className="mt-5 inline-block text-sm font-semibold text-indigo-700"
             >
               {lang === "en"
                 ? "Explore tours hub →"
@@ -252,14 +252,14 @@ export default async function GreekIslandsCollectionPage({
             </Link>
           </article>
 
-          <article className="border border-slate-200 bg-slate-50 p-6">
+          <article className="border border-slate-200 bg-white hover:bg-slate-50 p-6">
             <h3 className="text-xl font-semibold text-slate-900">
               {lang === "en"
                 ? "Taste local island food"
                 : "Γνώρισε τις τοπικές γεύσεις των νησιών"}
             </h3>
 
-            <p className="mt-3 text-sm leading-7 text-slate-600">
+            <p className="mt-3 text-sm leading-7 text-slate-500">
               {lang === "en"
                 ? "Food and drink can change the feel of a destination, so use local cuisine guides to enrich your island planning."
                 : "Το φαγητό και το ποτό αλλάζουν την αίσθηση ενός προορισμού, γι’ αυτό χρησιμοποίησε γαστρονομικούς οδηγούς για να εμπλουτίσεις την οργάνωση του island trip σου."}
@@ -267,7 +267,7 @@ export default async function GreekIslandsCollectionPage({
 
             <Link
               href={withLang("/collections/greece-food-and-drink", lang)}
-              className="mt-5 inline-block text-sm font-semibold text-sky-800"
+              className="mt-5 inline-block text-sm font-semibold text-indigo-700"
             >
               {lang === "en"
                 ? "Explore food hub →"

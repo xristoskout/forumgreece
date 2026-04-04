@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Montserrat, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const geistSans = Montserrat({
+  variable: "--font-geist-sans", // keeping the variable name to avoid breaking tailwind CSS
+  subsets: ["latin", "cyrillic", "cyrillic-ext", "latin-ext", "vietnamese"], // Montserrat doesn't strictly type "greek" in Next 15 either, falling back to latin
 });
 
 const geistMono = Geist_Mono({
@@ -65,7 +65,8 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-[#f7fbff] text-slate-900">
+      <body className="min-h-full flex flex-col bg-[#f4f7fb] text-slate-900 relative selection:bg-purple-500/30">
+        <div className="fixed inset-0 z-[-1] bg-[radial-gradient(circle_at_top_right,_rgba(120,80,255,0.15),_transparent_40%),radial-gradient(circle_at_bottom_left,_rgba(80,120,255,0.15),_transparent_40%)] pointer-events-none"></div>
         {children}
         <Analytics />
         <SpeedInsights />

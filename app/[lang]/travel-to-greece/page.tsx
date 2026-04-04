@@ -298,67 +298,67 @@ export default function TravelToGreecePage() {
     const accentStyles =
       accent === "sky"
         ? {
-            pill: "bg-sky-100 text-sky-800",
-            card: "from-sky-300 via-cyan-200 to-blue-100",
+            pill: "bg-sky-500/20 border border-sky-500/30 text-sky-300",
+            card: "from-sky-900/40 via-slate-900/40 to-slate-50",
           }
         : accent === "emerald"
         ? {
-            pill: "bg-emerald-100 text-emerald-800",
-            card: "from-emerald-300 via-teal-200 to-cyan-100",
+            pill: "bg-emerald-500/20 border border-emerald-500/30 text-emerald-300",
+            card: "from-emerald-900/40 via-slate-900/40 to-slate-50",
           }
         : {
-            pill: "bg-amber-100 text-amber-800",
-            card: "from-amber-300 via-orange-200 to-yellow-100",
+            pill: "bg-amber-500/20 border border-amber-500/30 text-amber-300",
+            card: "from-amber-900/40 via-slate-900/40 to-slate-50",
           };
 
     return (
-      <section className="mx-auto max-w-7xl px-6 py-12">
-        <div className="mb-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
+      <section className="mx-auto max-w-7xl px-6 py-16">
+        <div className="mb-12 text-center">
+          <p className="inline-flex rounded-full border border-indigo-200 bg-indigo-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-indigo-700 backdrop-blur-md">
             {eyebrow}
           </p>
-          <h2 className="mt-2 text-3xl font-bold tracking-tight">{title}</h2>
+          <h2 className="mt-4 text-4xl font-extrabold tracking-tight">{title}</h2>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
           {items.map((item) => (
             <article
               key={item.title}
-              className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+              className="group relative overflow-hidden rounded-[2.5rem] border border-slate-200 bg-white/90 backdrop-blur-md shadow-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(0,0,0,0.06)]"
             >
               <div
                 className={
                   item.image
-                    ? "h-44 bg-cover bg-center"
-                    : `h-44 bg-gradient-to-br ${accentStyles.card}`
+                    ? "h-48 bg-cover bg-center transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
+                    : `h-48 bg-gradient-to-br transition-all duration-700 group-hover:scale-110 group-hover:brightness-110 ${accentStyles.card}`
                 }
                 style={
                   item.image
                     ? {
-                        backgroundImage: `linear-gradient(to top, rgba(15,23,42,0.28), rgba(15,23,42,0.06)), url('${item.image}')`,
+                        backgroundImage: `linear-gradient(to top, rgba(15,23,42,0.6), rgba(15,23,42,0.1)), url('${item.image}')`,
                       }
                     : undefined
                 }
               />
 
-              <div className="p-6">
+              <div className="p-8 relative z-10 bg-white/80 backdrop-blur-md flex-1 flex flex-col h-[60%]">
                 <div className="flex items-center justify-between gap-4">
                   <span
-                    className={`rounded-full px-3 py-1 text-xs font-semibold ${accentStyles.pill}`}
+                    className={`rounded-full px-3 py-1.5 text-xs font-semibold ${accentStyles.pill} transition-colors group-hover:bg-opacity-40`}
                   >
                     {item.category[lang]}
                   </span>
 
                   <span className="text-xs font-medium text-slate-500">
-                    {item.region[lang]}
+                     📍 {item.region[lang]}
                   </span>
                 </div>
 
-                <h3 className="mt-4 text-2xl font-semibold leading-snug">
+                <h3 className="mt-6 text-2xl font-bold leading-snug group-hover:text-indigo-800 transition-colors">
                   {item.title}
                 </h3>
 
-                <p className="mt-4 text-sm leading-7 text-slate-600">
+                <p className="mt-4 text-sm leading-relaxed text-slate-500 flex-1">
                   {item.description[lang]}
                 </p>
 
@@ -366,7 +366,7 @@ export default function TravelToGreecePage() {
                   href={item.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="mt-6 inline-block text-sm font-semibold text-sky-800 hover:text-sky-950"
+                  className="mt-8 inline-block text-sm font-bold text-indigo-700 hover:text-indigo-800 transition-colors"
                 >
                   {t.ctaOpen[lang]}
                 </a>
@@ -379,8 +379,8 @@ export default function TravelToGreecePage() {
   };
 
   return (
-    <main className="min-h-screen bg-[#f8fbff] text-slate-900">
-      <section className="border-b border-slate-200 bg-white/95 backdrop-blur">
+    <main className="min-h-screen bg-transparent text-slate-900">
+      <section className="border-b border-slate-200 bg-white backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-2 px-0 py-3 sm:gap-6 sm:px-6 sm:py-5">
           <Link
             href={withLang("/")}
@@ -395,7 +395,7 @@ export default function TravelToGreecePage() {
               priority
             />
             <div className="min-w-0">
-              <div className="truncate text-lg font-bold tracking-tight text-sky-900 transition group-hover:text-sky-700 sm:text-2xl">
+              <div className="truncate text-lg font-bold tracking-tight text-indigo-800 transition group-hover:text-indigo-700 sm:text-2xl">
                 GoGreeceNow
               </div>
               <div className="hidden text-sm text-slate-500 sm:block">
@@ -404,20 +404,20 @@ export default function TravelToGreecePage() {
             </div>
           </Link>
 
-          <nav className="hidden gap-6 text-sm font-medium text-slate-700 lg:flex">
-            <Link href={withLang("/")} className="hover:text-sky-700">
+          <nav className="hidden gap-6 text-sm font-medium text-slate-600 lg:flex">
+            <Link href={withLang("/")} className="hover:text-indigo-700 transition-colors">
               {t.navHome[lang]}
             </Link>
-            <span className="text-sky-700">{t.navForums[lang]}</span>
+            <span className="text-indigo-700 font-semibold">{t.navForums[lang]}</span>
           </nav>
 
-          <div className="flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 p-1">
+          <div className="flex items-center gap-2 rounded-full border border-slate-200 bg-white/90 shadow-md backdrop-blur-md p-1">
             <button
               onClick={() => switchLanguage("en")}
               className={`rounded-full px-3 py-1.5 text-sm font-semibold transition ${
                 lang === "en"
-                  ? "bg-sky-600 text-white"
-                  : "text-slate-600"
+                  ? "bg-indigo-600 text-slate-900"
+                  : "text-slate-500 hover:text-slate-900"
               }`}
             >
               EN
@@ -427,8 +427,8 @@ export default function TravelToGreecePage() {
               onClick={() => switchLanguage("el")}
               className={`rounded-full px-3 py-1.5 text-sm font-semibold transition ${
                 lang === "el"
-                  ? "bg-sky-600 text-white"
-                  : "text-slate-600"
+                  ? "bg-indigo-600 text-slate-900"
+                  : "text-slate-500 hover:text-slate-900"
               }`}
             >
               GR
@@ -437,65 +437,67 @@ export default function TravelToGreecePage() {
         </div>
       </section>
 
-      <section className="relative overflow-hidden bg-white">
-        <div className="mx-auto grid max-w-7xl gap-10 px-6 py-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:py-16">
+      <section className="relative overflow-hidden bg-[#f4f7fb]">
+        <div className="absolute inset-0 bg-gradient-to-br from-indigo-950/20 via-slate-950 to-slate-50 z-0"></div>
+        <div className="mx-auto grid max-w-7xl gap-10 px-6 py-16 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:py-24 relative z-10">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-sky-700">
-              {t.heroEyebrow[lang]}
-            </p>
+            <div className="inline-flex rounded-full border border-indigo-200 bg-indigo-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-indigo-800 backdrop-blur-md mb-6 relative overflow-hidden group">
+              <span className="relative z-10">{t.heroEyebrow[lang]}</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-indigo-500/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></div>
+            </div>
 
-            <h1 className="mt-4 max-w-4xl text-4xl font-bold leading-tight text-slate-900 md:text-6xl">
+            <h1 className="max-w-4xl text-5xl font-extrabold leading-tight text-slate-900 md:text-6xl drop-shadow-xl">
               {t.heroTitle[lang]}
             </h1>
 
-            <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-600">
+            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-600">
               {t.heroText[lang]}
             </p>
 
-            <div className="mt-6 flex flex-wrap gap-3">
+            <div className="mt-10 flex flex-wrap gap-4">
               <a
                 href="#islands"
-                className="inline-flex h-12 items-center justify-center rounded-2xl bg-sky-600 px-6 text-sm font-semibold text-white transition hover:bg-sky-700"
+                className="inline-flex h-14 items-center justify-center rounded-xl bg-indigo-600 px-8 text-sm font-semibold text-slate-900 shadow-xl transition-all hover:scale-105 hover:bg-indigo-500 hover:shadow-indigo-500/25 border-none"
               >
                 {t.heroPrimary[lang]}
               </a>
 
               <Link
                 href={withLang("/")}
-                className="inline-flex h-12 items-center justify-center rounded-2xl border border-slate-300 bg-white px-6 text-sm font-semibold text-slate-800 transition hover:bg-slate-50"
+                className="inline-flex h-14 items-center justify-center rounded-xl border border-slate-200 bg-white/90 backdrop-blur-md px-8 text-sm font-semibold text-slate-600 transition-all hover:bg-slate-50"
               >
                 {t.heroSecondary[lang]}
               </Link>
             </div>
           </div>
 
-          <div className="grid gap-4 sm:grid-cols-2">
-            <div className="sm:col-span-2 overflow-hidden rounded-[32px] shadow-xl">
+          <div className="grid gap-6 sm:grid-cols-2">
+            <div className="sm:col-span-2 group overflow-hidden rounded-[2.5rem] shadow-xl border border-slate-200 transition-all duration-700 hover:shadow-[0_10px_40px_rgba(0,0,0,0.06)]">
               <div
-                className="h-[280px] bg-cover bg-center"
+                className="h-[320px] bg-cover bg-center transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
                 style={{
                   backgroundImage:
-                    "linear-gradient(to top, rgba(15,23,42,0.28), rgba(15,23,42,0.02)), url('/images/hero/greece-main.jpg')",
+                    "linear-gradient(to top, rgba(15,23,42,0.4), rgba(15,23,42,0.1)), url('/images/hero/greece-main.jpg')",
                 }}
               />
             </div>
 
-            <div className="overflow-hidden rounded-[28px] shadow-lg">
+            <div className="group overflow-hidden rounded-[2.5rem] shadow-xl border border-slate-200 transition-all duration-700 hover:shadow-[0_10px_40px_rgba(0,0,0,0.06)]">
               <div
-                className="h-[180px] bg-cover bg-center"
+                className="h-[200px] bg-cover bg-center transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
                 style={{
                   backgroundImage:
-                    "linear-gradient(to top, rgba(15,23,42,0.2), rgba(15,23,42,0.04)), url('/images/hero/greece-small-1.jpg')",
+                    "linear-gradient(to top, rgba(15,23,42,0.4), rgba(15,23,42,0.1)), url('/images/hero/greece-small-1.jpg')",
                 }}
               />
             </div>
 
-            <div className="overflow-hidden rounded-[28px] shadow-lg">
+            <div className="group overflow-hidden rounded-[2.5rem] shadow-xl border border-slate-200 transition-all duration-700 hover:shadow-[0_10px_40px_rgba(0,0,0,0.06)]">
               <div
-                className="h-[180px] bg-cover bg-center"
+                className="h-[200px] bg-cover bg-center transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
                 style={{
                   backgroundImage:
-                    "linear-gradient(to top, rgba(15,23,42,0.2), rgba(15,23,42,0.04)), url('/images/hero/greece-small-2.jpg')",
+                    "linear-gradient(to top, rgba(15,23,42,0.4), rgba(15,23,42,0.1)), url('/images/hero/greece-small-2.jpg')",
                 }}
               />
             </div>
@@ -503,17 +505,17 @@ export default function TravelToGreecePage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-12">
-        <div className="overflow-hidden rounded-[32px] border border-slate-200 bg-white p-8 shadow-sm md:p-10">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
+      <section className="mx-auto max-w-7xl px-6 py-20 relative z-20">
+        <div className="group overflow-hidden rounded-[2.5rem] border border-slate-200 bg-white/90 backdrop-blur-md p-10 shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_0_40px_rgba(99,102,241,0.15)] flex flex-col items-center text-center">
+          <p className="text-sm font-semibold uppercase tracking-widest text-indigo-700">
             {t.introEyebrow[lang]}
           </p>
 
-          <h2 className="mt-2 text-3xl font-bold tracking-tight md:text-4xl">
+          <h2 className="mt-4 text-4xl font-bold tracking-tight">
             {t.introTitle[lang]}
           </h2>
 
-          <p className="mt-4 max-w-3xl text-sm leading-7 text-slate-600">
+          <p className="mt-6 max-w-3xl text-lg leading-relaxed text-slate-600">
             {t.introText[lang]}
           </p>
         </div>
@@ -542,18 +544,18 @@ export default function TravelToGreecePage() {
         accent="amber"
       />
 
-      <footer className="border-t border-slate-200 bg-white">
+      <footer className="border-t border-slate-200 bg-white backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-slate-500 md:flex-row md:items-center md:justify-between">
           <div>{t.footerText[lang]}</div>
 
           <div className="flex gap-5">
-            <a href="#" className="hover:text-slate-800">
+            <a href="#" className="hover:text-slate-900">
               {t.footerAbout[lang]}
             </a>
-            <a href="#" className="hover:text-slate-800">
+            <a href="#" className="hover:text-slate-900">
               {t.footerContact[lang]}
             </a>
-            <a href="#" className="hover:text-slate-800">
+            <a href="#" className="hover:text-slate-900">
               {t.footerPrivacy[lang]}
             </a>
           </div>

@@ -58,11 +58,11 @@ export default function TravelInfoGuidePage() {
   }
 
   return (
-    <main className="min-h-screen bg-[#f7fbff] text-slate-900">
+    <main className="min-h-screen bg-transparent text-slate-900">
       <SiteHeader />
 
       <section className="mx-auto max-w-7xl px-6 py-12">
-        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
+        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700">
           {t.eyebrow[lang]}
         </p>
         <h1 className="mt-2 text-4xl font-bold tracking-tight md:text-5xl">
@@ -80,9 +80,9 @@ export default function TravelInfoGuidePage() {
       </section>
 
       <section className="mx-auto grid max-w-7xl gap-8 px-6 py-8 lg:grid-cols-[1.2fr_0.8fr]">
-        <div className="rounded-[32px] border border-slate-200 bg-white p-8 shadow-sm">
+        <div className="rounded-[32px] border border-slate-200 bg-white backdrop-blur-md p-8 shadow-sm">
           <h2 className="text-2xl font-bold">{t.overview[lang]}</h2>
-          <p className="mt-4 text-base leading-8 text-slate-600">
+          <p className="mt-4 text-base leading-8 text-slate-500">
             {item.overview[lang]}
           </p>
           <p className="mt-6 text-sm leading-7 text-slate-500">
@@ -90,11 +90,11 @@ export default function TravelInfoGuidePage() {
           </p>
         </div>
 
-        <div className="rounded-[32px] border border-slate-200 bg-white p-8 shadow-sm">
+        <div className="rounded-[32px] border border-slate-200 bg-white backdrop-blur-md p-8 shadow-sm">
           <h2 className="text-2xl font-bold">{t.highlights[lang]}</h2>
-          <ul className="mt-4 space-y-3 text-slate-600">
+          <ul className="mt-4 space-y-3 text-slate-500">
             {item.points[lang].map((point) => (
-              <li key={point} className="rounded-2xl bg-slate-50 px-4 py-3">
+              <li key={point} className="rounded-2xl bg-white hover:bg-slate-50 px-4 py-3">
                 {point}
               </li>
             ))}
@@ -105,7 +105,7 @@ export default function TravelInfoGuidePage() {
       <section className="mx-auto max-w-7xl px-6 py-12">
         <Link
           href={withLang("/")}
-          className="inline-flex rounded-2xl border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-800 transition hover:bg-slate-50"
+          className="inline-flex rounded-2xl border border-slate-200 bg-white backdrop-blur-md px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-white hover:bg-slate-50"
         >
           {t.back[lang]}
         </Link>

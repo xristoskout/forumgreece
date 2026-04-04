@@ -13,11 +13,67 @@ import {
   tours,
 } from "../../lib/content";
 
-type HomePageClientProps = {
-  lang: Lang;
+type HomePageContent = {
+  heroBadge?: string;
+  heroTitle?: string;
+  heroText?: string;
+  heroPrimary?: string;
+  heroSecondary?: string;
+
+  heroPanelEyebrow?: string;
+  heroPanelTitle?: string;
+  heroPanelText?: string;
+
+  startPlanningEyebrow?: string;
+  startPlanningTitle?: string;
+  startPlanningText?: string;
+
+  featuredCollectionsEyebrow?: string;
+  featuredCollectionsTitle?: string;
+  featuredCollectionsText?: string;
+
+  destinationEyebrow?: string;
+  destinationTitle?: string;
+  destinationText?: string;
+
+  travelHubEyebrow?: string;
+  travelHubTitle?: string;
+  travelHubText?: string;
+  travelHubCta?: string;
+
+  hotelsEyebrow?: string;
+  hotelsTitle?: string;
+  hotelsText?: string;
+  hotelsPromoTitle?: string;
+
+  toursEyebrow?: string;
+  toursTitle?: string;
+  toursText?: string;
+
+  foodEyebrow?: string;
+  foodTitle?: string;
+  foodText?: string;
+
+  communitiesEyebrow?: string;
+  communitiesTitle?: string;
+  communitiesText?: string;
+
+  footerText?: string;
+  ctaAd?: string;
+  footerAbout?: string;
+  footerContact?: string;
+  footerPrivacy?: string;
 };
 
-export default function HomePageClient({ lang }: HomePageClientProps) {
+type HomePageClientProps = {
+  lang: Lang;
+  content?: HomePageContent | null;
+};
+
+export default function HomePageClient({
+  lang,
+  content,
+}: HomePageClientProps) {
   function stripLocale(path: string) {
     const stripped = path.replace(/^\/(en|el)(?=\/|$)/, "");
     return stripped || "/";
@@ -213,6 +269,82 @@ export default function HomePageClient({ lang }: HomePageClientProps) {
     footerAbout: { en: "About", el: "Σχετικά" },
     footerContact: { en: "Contact", el: "Επικοινωνία" },
     footerPrivacy: { en: "Privacy", el: "Απόρρητο" },
+  };
+
+  const copy = {
+    heroBadge: content?.heroBadge ?? t.heroBadge[lang],
+    heroTitle: content?.heroTitle ?? t.heroTitle[lang],
+    heroText: content?.heroText ?? t.heroText[lang],
+    heroPrimary: content?.heroPrimary ?? t.heroPrimary[lang],
+    heroSecondary: content?.heroSecondary ?? t.heroSecondary[lang],
+
+    heroPanelEyebrow: content?.heroPanelEyebrow ?? t.heroPanelEyebrow[lang],
+    heroPanelTitle: content?.heroPanelTitle ?? t.heroPanelTitle[lang],
+    heroPanelText:
+      content?.heroPanelText ??
+      (lang === "en"
+        ? "GoGreeceNow brings destination ideas, practical travel advice, stays, tours and local food inspiration together so travelers can plan each part of a Greece trip in one place."
+        : "Το GoGreeceNow συγκεντρώνει ιδέες για προορισμούς, πρακτικές ταξιδιωτικές συμβουλές, διαμονή, εκδρομές και τοπικές γεύσεις ώστε ο ταξιδιώτης να οργανώνει κάθε κομμάτι του ταξιδιού στην Ελλάδα σε ένα μέρος."),
+
+    startPlanningEyebrow:
+      content?.startPlanningEyebrow ?? t.startPlanningEyebrow[lang],
+    startPlanningTitle:
+      content?.startPlanningTitle ?? t.startPlanningTitle[lang],
+    startPlanningText:
+      content?.startPlanningText ?? t.startPlanningText[lang],
+
+    featuredCollectionsEyebrow:
+      content?.featuredCollectionsEyebrow ??
+      (lang === "en"
+        ? "Featured Greece Collections"
+        : "Επιλεγμένες Συλλογές Ελλάδας"),
+    featuredCollectionsTitle:
+      content?.featuredCollectionsTitle ??
+      (lang === "en"
+        ? "Explore Greece through stronger travel themes"
+        : "Ανακάλυψε την Ελλάδα μέσα από πιο δυνατές ταξιδιωτικές θεματικές"),
+    featuredCollectionsText:
+      content?.featuredCollectionsText ??
+      (lang === "en"
+        ? "These editorial hubs help travelers move from broad inspiration into practical, indexable topic pages about islands, planning, experiences and food."
+        : "Αυτά τα editorial hubs βοηθούν τον ταξιδιώτη να περάσει από τη γενική έμπνευση σε πιο συγκεκριμένες, χρήσιμες και indexable θεματικές σελίδες για νησιά, οργάνωση, εμπειρίες και γαστρονομία."),
+
+    destinationEyebrow: content?.destinationEyebrow ?? t.destinationEyebrow[lang],
+    destinationTitle: content?.destinationTitle ?? t.destinationTitle[lang],
+    destinationText: content?.destinationText ?? t.destinationText[lang],
+
+    travelHubEyebrow: content?.travelHubEyebrow ?? t.travelHubEyebrow[lang],
+    travelHubTitle: content?.travelHubTitle ?? t.travelHubTitle[lang],
+    travelHubText: content?.travelHubText ?? t.travelHubText[lang],
+    travelHubCta: content?.travelHubCta ?? t.travelHubCta[lang],
+
+    hotelsEyebrow: content?.hotelsEyebrow ?? t.hotelsEyebrow[lang],
+    hotelsTitle: content?.hotelsTitle ?? t.hotelsTitle[lang],
+    hotelsText: content?.hotelsText ?? t.hotelsText[lang],
+    hotelsPromoTitle:
+      content?.hotelsPromoTitle ??
+      (lang === "en"
+        ? "Promote your hotel or travel business"
+        : "Πρόβαλε το ξενοδοχείο ή το travel business σου"),
+
+    toursEyebrow: content?.toursEyebrow ?? t.toursEyebrow[lang],
+    toursTitle: content?.toursTitle ?? t.toursTitle[lang],
+    toursText: content?.toursText ?? t.toursText[lang],
+
+    foodEyebrow: content?.foodEyebrow ?? t.foodEyebrow[lang],
+    foodTitle: content?.foodTitle ?? t.foodTitle[lang],
+    foodText: content?.foodText ?? t.foodText[lang],
+
+    communitiesEyebrow:
+      content?.communitiesEyebrow ?? t.communitiesEyebrow[lang],
+    communitiesTitle: content?.communitiesTitle ?? t.communitiesTitle[lang],
+    communitiesText: content?.communitiesText ?? t.communitiesText[lang],
+
+    footerText: content?.footerText ?? t.footerText[lang],
+    ctaAd: content?.ctaAd ?? t.ctaAd[lang],
+    footerAbout: content?.footerAbout ?? t.footerAbout[lang],
+    footerContact: content?.footerContact ?? t.footerContact[lang],
+    footerPrivacy: content?.footerPrivacy ?? t.footerPrivacy[lang],
   };
 
   const quickFacts = [
@@ -465,122 +597,82 @@ export default function HomePageClient({ lang }: HomePageClientProps) {
   ];
 
   return (
-    <main className="min-h-screen bg-[#f7fbff] text-slate-900">
+    <main className="min-h-screen bg-[#f8fbff] text-slate-900">
       <SiteHeader />
 
-      <section className="relative overflow-hidden">
+      <section className="relative overflow-hidden min-h-screen flex items-center pt-20">
         <div
-          className="absolute inset-0"
+          className="absolute inset-0 z-0"
           style={{
             backgroundImage: "url('/images/hero-greece.jpg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
-            opacity: 0.96,
+            backgroundAttachment: "fixed",
           }}
         />
-        <div className="absolute inset-0 bg-sky-900/8" />
+        <div className="absolute inset-0 z-0 bg-gradient-to-b from-white/70 via-white/80 to-[#f8fbff]" />
 
-        <div className="relative mx-auto grid min-h-[700px] max-w-7xl gap-8 px-6 py-16 lg:grid-cols-[1.08fr_0.92fr] lg:items-center lg:py-20">
-          <div className="border border-white/60 bg-white/72 p-6 shadow-[0_14px_40px_rgba(15,23,42,0.10)] backdrop-blur-sm md:p-8">
-            <span className="inline-flex border border-sky-200 bg-white/80 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-sky-800">
-              {t.heroBadge[lang]}
-            </span>
-
-            <h1 className="mt-5 max-w-4xl text-4xl font-bold leading-tight text-slate-900 md:text-6xl">
-              {t.heroTitle[lang]}
-            </h1>
-
-            <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-700">
-              {t.heroText[lang]}
-            </p>
-
-            <div className="mt-8 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
-              {quickFacts.map((fact) => (
-                <div
-                  key={`${fact.value}-${fact.label.en}`}
-                  className="border border-slate-200 bg-white/78 px-4 py-4"
-                >
-                  <div className="text-2xl font-bold leading-none text-slate-900">
-                    {fact.value}
-                  </div>
-                  <div className="mt-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-500">
-                    {fact.label[lang]}
-                  </div>
-                </div>
-              ))}
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 py-16 lg:grid-cols-[1.2fr_0.8fr] gap-12 lg:pb-32 grid lg:items-end">
+          <div className="animate-fade-in-up mt-10 md:mt-0">
+            <div className="inline-flex rounded-full border border-indigo-200 bg-white/80 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-indigo-700 backdrop-blur-md shadow-sm mb-6 relative overflow-hidden group">
+               <span className="relative z-10">{copy.heroBadge}</span>
             </div>
 
-            <div className="mt-8 flex flex-wrap gap-3">
+            <h1 className="max-w-4xl text-5xl md:text-7xl font-extrabold leading-[1.1] text-slate-900 drop-shadow-xl tracking-tight mb-6">
+              {copy.heroTitle}
+            </h1>
+
+            <p className="max-w-2xl text-lg md:text-xl leading-relaxed text-slate-600 font-light drop-shadow-lg mb-10">
+              {copy.heroText}
+            </p>
+
+            <div className="flex flex-wrap gap-4 mb-12">
               <a
                 href="#destinations"
-                className="bg-sky-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-sky-800"
+                className="group relative overflow-hidden rounded-2xl bg-indigo-600 px-8 py-4 text-base font-semibold text-slate-900 shadow-[0_0_20px_rgba(79,70,229,0.4)] transition-all hover:scale-105 hover:shadow-[0_0_30px_rgba(79,70,229,0.6)]"
               >
-                {t.heroPrimary[lang]}
+                <span className="relative z-10 flex items-center gap-2">
+                  {copy.heroPrimary} <span className="group-hover:translate-x-1 transition-transform">→</span>
+                </span>
               </a>
 
               <Link
                 href={withLang("/travel-info")}
-                className="border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-50"
+                className="group rounded-2xl border border-slate-300 bg-white backdrop-blur-md px-8 py-4 text-base font-semibold text-slate-900 transition-all hover:bg-slate-50 hover:border-white/30"
               >
-                {t.heroSecondary[lang]}
+                {copy.heroSecondary}
               </Link>
             </div>
-
-            <div className="mt-8 flex flex-wrap gap-2">
-              {heroJumpLinks.map((item) =>
-                item.kind === "route" ? (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    className="border border-slate-300 bg-white/88 px-3 py-2 text-sm font-medium text-slate-700 transition hover:bg-white"
-                  >
-                    {item.label[lang]}
-                  </Link>
-                ) : (
-                  <a
-                    key={item.href}
-                    href={item.href}
-                    className="border border-slate-300 bg-white/88 px-3 py-2 text-sm font-medium text-slate-700 transition hover:bg-white"
-                  >
-                    {item.label[lang]}
-                  </a>
-                )
-              )}
-            </div>
-          </div>
-
-          <div className="border border-white/60 bg-white/72 p-6 shadow-[0_14px_40px_rgba(15,23,42,0.10)] backdrop-blur-sm md:p-7">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-sky-800">
-              {t.heroPanelEyebrow[lang]}
-            </p>
-
-            <h2 className="mt-3 text-2xl font-bold leading-tight text-slate-900 md:text-3xl">
-              {t.heroPanelTitle[lang]}
-            </h2>
-
-            <div className="mt-6 grid gap-4 sm:grid-cols-2">
-              {categories.map((item) => (
-                <article
-                  key={item.title.en}
-                  className="border border-slate-200 bg-white/82 p-5"
-                >
-                  <div className="text-3xl">{item.emoji}</div>
-                  <h3 className="mt-4 text-lg font-semibold text-slate-900">
-                    {item.title[lang]}
-                  </h3>
-                  <p className="mt-2 text-sm leading-6 text-slate-600">
-                    {item.description[lang]}
-                  </p>
-                </article>
+            
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+              {quickFacts.map((fact) => (
+                <div key={`${fact.value}-${fact.label.en}`} className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white backdrop-blur-lg px-5 py-5 transition hover:bg-slate-50 hover:border-slate-300">
+                  <div className="text-3xl font-bold text-slate-900 mb-2">{fact.value}</div>
+                  <div className="text-[10px] font-semibold tracking-widest uppercase text-indigo-800">{fact.label[lang]}</div>
+                </div>
               ))}
             </div>
-
-            <div className="mt-6 border border-slate-200 bg-slate-50 p-5">
-              <p className="text-sm leading-7 text-slate-700">
-                {lang === "en"
-                  ? "GoGreeceNow brings destination ideas, practical travel advice, stays, tours and local food inspiration together so travelers can plan each part of a Greece trip in one place."
-                  : "Το GoGreeceNow συγκεντρώνει ιδέες για προορισμούς, πρακτικές ταξιδιωτικές συμβουλές, διαμονή, εκδρομές και τοπικές γεύσεις ώστε ο ταξιδιώτης να οργανώνει κάθε κομμάτι του ταξιδιού στην Ελλάδα σε ένα μέρος."}
+          </div>
+          
+          <div className="relative mt-12 lg:mt-0 lg:translate-y-16">
+            <div className="absolute -inset-1 rounded-[2rem] bg-gradient-to-br from-indigo-500/20 to-purple-500/20 blur-xl"></div>
+            <div className="relative rounded-[2rem] border border-slate-200 bg-white/80 p-8 shadow-xl backdrop-blur-2xl">
+              <p className="text-xs font-bold uppercase tracking-[0.2em] text-indigo-700 mb-4">
+                {copy.heroPanelEyebrow}
               </p>
+              <h2 className="text-3xl font-bold text-slate-900 mb-8">
+                {copy.heroPanelTitle}
+              </h2>
+              
+              <div className="grid gap-4 sm:grid-cols-2">
+                {categories.map((item) => (
+                   <article key={item.title.en} className="group rounded-2xl border border-white/5 bg-white p-4 transition-all hover:bg-slate-50 hover:-translate-y-1">
+                      <div className="text-3xl mb-3 drop-shadow-[0_2px_10px_rgba(0,0,0,0.1)]">{item.emoji}</div>
+                      <h3 className="font-semibold text-slate-900 mb-1 group-hover:text-indigo-800 transition-colors">{item.title[lang]}</h3>
+                      <p className="text-xs text-slate-500 leading-relaxed">{item.description[lang]}</p>
+                   </article>
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -588,19 +680,19 @@ export default function HomePageClient({ lang }: HomePageClientProps) {
 
       <section className="relative z-10 -mt-10 pb-8">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="border border-slate-200 bg-white p-6 shadow-[0_16px_50px_rgba(15,23,42,0.08)] md:p-8">
+          <div className="border border-slate-200 bg-white backdrop-blur-md p-6 shadow-xl shadow-black/50 md:p-8">
             <div className="mb-8 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
               <div>
-                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
-                  {t.startPlanningEyebrow[lang]}
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700">
+                  {copy.startPlanningEyebrow}
                 </p>
                 <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900">
-                  {t.startPlanningTitle[lang]}
+                  {copy.startPlanningTitle}
                 </h2>
               </div>
 
-              <p className="max-w-3xl text-sm leading-6 text-slate-600">
-                {t.startPlanningText[lang]}
+              <p className="max-w-3xl text-sm leading-6 text-slate-500">
+                {copy.startPlanningText}
               </p>
             </div>
 
@@ -610,18 +702,18 @@ export default function HomePageClient({ lang }: HomePageClientProps) {
                   <Link
                     key={item.title.en}
                     href={item.href}
-                    className="group border border-slate-200 bg-slate-50 p-6 transition hover:-translate-y-1 hover:border-sky-200 hover:bg-white hover:shadow-lg"
+                    className="group border border-slate-200 bg-white hover:bg-slate-50 p-6 transition hover:-translate-y-1 hover:border-indigo-200 hover:bg-white backdrop-blur-md hover:shadow-lg"
                   >
-                    <div className="flex h-12 w-12 items-center justify-center bg-sky-100 text-2xl">
+                    <div className="flex h-12 w-12 items-center justify-center bg-indigo-100 text-indigo-800 text-2xl">
                       {item.icon}
                     </div>
                     <h3 className="mt-5 text-xl font-semibold text-slate-900">
                       {item.title[lang]}
                     </h3>
-                    <p className="mt-3 text-sm leading-6 text-slate-600">
+                    <p className="mt-3 text-sm leading-6 text-slate-500">
                       {item.description[lang]}
                     </p>
-                    <span className="mt-5 inline-block text-sm font-semibold text-sky-800 transition group-hover:text-sky-950">
+                    <span className="mt-5 inline-block text-sm font-semibold text-indigo-700 transition group-hover:text-indigo-200">
                       {item.cta[lang]}
                     </span>
                   </Link>
@@ -629,18 +721,18 @@ export default function HomePageClient({ lang }: HomePageClientProps) {
                   <a
                     key={item.title.en}
                     href={item.href}
-                    className="group border border-slate-200 bg-slate-50 p-6 transition hover:-translate-y-1 hover:border-sky-200 hover:bg-white hover:shadow-lg"
+                    className="group border border-slate-200 bg-white hover:bg-slate-50 p-6 transition hover:-translate-y-1 hover:border-indigo-200 hover:bg-white backdrop-blur-md hover:shadow-lg"
                   >
-                    <div className="flex h-12 w-12 items-center justify-center bg-sky-100 text-2xl">
+                    <div className="flex h-12 w-12 items-center justify-center bg-indigo-100 text-indigo-800 text-2xl">
                       {item.icon}
                     </div>
                     <h3 className="mt-5 text-xl font-semibold text-slate-900">
                       {item.title[lang]}
                     </h3>
-                    <p className="mt-3 text-sm leading-6 text-slate-600">
+                    <p className="mt-3 text-sm leading-6 text-slate-500">
                       {item.description[lang]}
                     </p>
-                    <span className="mt-5 inline-block text-sm font-semibold text-sky-800 transition group-hover:text-sky-950">
+                    <span className="mt-5 inline-block text-sm font-semibold text-indigo-700 transition group-hover:text-indigo-200">
                       {item.cta[lang]}
                     </span>
                   </a>
@@ -654,22 +746,16 @@ export default function HomePageClient({ lang }: HomePageClientProps) {
       <section className="mx-auto max-w-7xl px-6 py-12">
         <div className="mb-8 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
-              {lang === "en"
-                ? "Featured Greece Collections"
-                : "Επιλεγμένες Συλλογές Ελλάδας"}
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700">
+              {copy.featuredCollectionsEyebrow}
             </p>
             <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900">
-              {lang === "en"
-                ? "Explore Greece through stronger travel themes"
-                : "Ανακάλυψε την Ελλάδα μέσα από πιο δυνατές ταξιδιωτικές θεματικές"}
+              {copy.featuredCollectionsTitle}
             </h2>
           </div>
 
-          <p className="max-w-3xl text-sm leading-6 text-slate-600">
-            {lang === "en"
-              ? "These editorial hubs help travelers move from broad inspiration into practical, indexable topic pages about islands, planning, experiences and food."
-              : "Αυτά τα editorial hubs βοηθούν τον ταξιδιώτη να περάσει από τη γενική έμπνευση σε πιο συγκεκριμένες, χρήσιμες και indexable θεματικές σελίδες για νησιά, οργάνωση, εμπειρίες και γαστρονομία."}
+          <p className="max-w-3xl text-sm leading-6 text-slate-500">
+            {copy.featuredCollectionsText}
           </p>
         </div>
 
@@ -678,22 +764,22 @@ export default function HomePageClient({ lang }: HomePageClientProps) {
             <Link
               key={item.title.en}
               href={item.href}
-              className="group relative overflow-hidden border border-slate-200 bg-slate-900 text-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+              className="group relative overflow-hidden rounded-[2rem] border border-slate-200 bg-white text-slate-900 transition-all duration-700 hover:-translate-y-2 hover:scale-[1.03] hover:z-30 hover:shadow-[0_15px_50px_rgba(0,0,0,0.1)]"
             >
               <div
-                className="absolute inset-0 bg-cover bg-center transition duration-500 group-hover:scale-[1.03]"
+                className="absolute inset-0 bg-cover bg-center transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
                 style={{ backgroundImage: `url('${item.image}')` }}
               />
-              <div className="absolute inset-0 bg-slate-950/38" />
+              <div className="absolute inset-0 bg-white/80 transition-opacity duration-700 group-hover:bg-[#f4f7fb]/20" />
 
               <div className="relative p-7 md:p-8">
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/75">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-900/75">
                   {item.eyebrow[lang]}
                 </p>
                 <h3 className="mt-3 max-w-xl text-2xl font-bold leading-tight md:text-3xl">
                   {item.title[lang]}
                 </h3>
-                <p className="mt-4 max-w-2xl text-sm leading-7 text-white/88">
+                <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-900/88">
                   {item.description[lang]}
                 </p>
 
@@ -701,14 +787,14 @@ export default function HomePageClient({ lang }: HomePageClientProps) {
                   {item.tags[lang].map((tag) => (
                     <span
                       key={tag}
-                      className="border border-white/25 bg-white/10 px-3 py-1 text-xs font-medium text-white"
+                      className="border border-white/25 bg-slate-50 px-3 py-1 text-xs font-medium text-slate-900"
                     >
                       {tag}
                     </span>
                   ))}
                 </div>
 
-                <span className="mt-6 inline-block bg-white px-4 py-2 text-sm font-semibold text-slate-900 transition group-hover:bg-slate-100">
+                <span className="mt-6 inline-block bg-white backdrop-blur-md px-4 py-2 text-sm font-semibold text-slate-900 transition group-hover:bg-slate-100">
                   {item.cta[lang]}
                 </span>
               </div>
@@ -723,188 +809,100 @@ export default function HomePageClient({ lang }: HomePageClientProps) {
       >
         <div className="mb-10 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
-              {t.destinationEyebrow[lang]}
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700">
+              {copy.destinationEyebrow}
             </p>
             <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
-              {t.destinationTitle[lang]}
+              {copy.destinationTitle}
             </h2>
           </div>
 
-          <p className="max-w-3xl text-sm leading-6 text-slate-600">
-            {t.destinationText[lang]}
+          <p className="max-w-3xl text-sm leading-6 text-slate-500">
+            {copy.destinationText}
           </p>
         </div>
 
-        <div className="grid gap-6 xl:grid-cols-[1.15fr_0.85fr]">
-          {destinations[0] ? (
-            <article className="group relative overflow-hidden border border-slate-200 bg-slate-900 text-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
-              <div
-                className="absolute inset-0 bg-cover bg-center transition duration-500 group-hover:scale-[1.03]"
-                style={{ backgroundImage: `url('${destinations[0].image}')` }}
-              />
-              <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(15,23,42,0.08),rgba(15,23,42,0.72))]" />
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {destinations.map((item, index) => {
+            const meta = destinationCardMeta[index % destinationCardMeta.length];
+            return (
+              <article
+                key={item.slug}
+                className="group relative flex flex-col justify-end overflow-hidden rounded-[2.5rem] border border-slate-200 bg-white shadow-xl transition-all duration-700 hover:-translate-y-3 hover:scale-[1.05] hover:z-30 hover:shadow-[0_15px_50px_rgba(0,0,0,0.1)] min-h-[450px]"
+              >
+                <div
+                  className="absolute inset-0 bg-cover bg-center transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
+                  style={{ backgroundImage: `url('${item.image}')` }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-90 transition-opacity duration-700 group-hover:opacity-75" />
 
-              <div className="relative flex min-h-[520px] flex-col justify-end p-7 md:p-9">
-                <div className="max-w-2xl">
-                  <span className="inline-flex border border-white/20 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-white/85">
-                    {destinationCardMeta[0].eyebrow[lang]}
-                  </span>
-
-                  <div className="mt-5 flex flex-wrap items-center gap-3">
-                    <h3 className="text-3xl font-bold tracking-tight md:text-5xl">
-                      {destinations[0].name}
-                    </h3>
-                    <span className="border border-white/20 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-white/85">
-                      {destinations[0].region[lang]}
+                <div className="relative p-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                  <div className="mb-4 flex flex-wrap items-center gap-2">
+                    <span className="rounded-full border border-indigo-200 bg-indigo-100 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-indigo-800 backdrop-blur-md">
+                      {meta.eyebrow[lang]}
+                    </span>
+                    <span className="rounded-full border border-slate-300 bg-slate-50 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-slate-900/90 backdrop-blur-md">
+                      {item.region[lang]}
                     </span>
                   </div>
 
-                  <p className="mt-5 max-w-xl text-base leading-7 text-white/90 md:text-lg">
-                    {destinations[0].blurb[lang]}
-                  </p>
+                  <h3 className="mb-2 text-3xl font-extrabold tracking-tight text-slate-900 drop-shadow-md">
+                    {item.name}
+                  </h3>
 
-                  <p className="mt-4 max-w-xl text-sm leading-7 text-white/80">
-                    {destinationCardMeta[0].summary[lang]}
+                  <p className="mb-6 text-sm leading-relaxed text-slate-600 line-clamp-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                    {item.blurb[lang]}
                   </p>
-
-                  <div className="mt-5 flex flex-wrap gap-2">
-                    {destinationCardMeta[0].tags[lang].map((tag) => (
-                      <span
-                        key={tag}
-                        className="border border-white/20 bg-white/10 px-3 py-1 text-xs font-medium text-white"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
 
                   <Link
-                    href={withLang(`/destinations/${destinations[0].slug}`)}
-                    className="mt-7 inline-flex bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-100"
-                    aria-label={
-                      lang === "en"
-                        ? `Read the ${destinations[0].name} travel guide`
-                        : `Δες τον οδηγό για ${destinations[0].name}`
-                    }
+                    href={withLang(`/destinations/${item.slug}`)}
+                    className="inline-flex w-full items-center justify-center rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-semibold text-slate-900 backdrop-blur-md transition-all hover:bg-indigo-600 hover:border-transparent hover:text-slate-900"
+                    aria-label={lang === "en" ? `Explore ${item.name}` : `Οδηγός για ${item.name}`}
                   >
-                    {lang === "en"
-                      ? `${destinations[0].name} travel guide →`
-                      : `Οδηγός για ${destinations[0].name} →`}
+                    {lang === "en" ? `Explore ${item.name} →` : `Εξερεύνηση →`}
                   </Link>
                 </div>
-              </div>
-            </article>
-          ) : null}
-
-          <div className="grid gap-6">
-            {destinations.slice(1).map((item, index) => {
-              const meta =
-                destinationCardMeta[
-                  (index + 1) % destinationCardMeta.length
-                ];
-
-              return (
-                <article
-                  key={item.slug}
-                  className="group overflow-hidden border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
-                >
-                  <div className="grid md:grid-cols-[220px_1fr]">
-                    <div
-                      className="min-h-[220px] bg-cover bg-center"
-                      style={{ backgroundImage: `url('${item.image}')` }}
-                    />
-
-                    <div className="p-6 md:p-7">
-                      <div className="flex flex-wrap items-center gap-2">
-                        <span className="border border-sky-200 bg-sky-50 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-sky-800">
-                          {meta.eyebrow[lang]}
-                        </span>
-                        <span className="border border-slate-200 bg-slate-50 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-600">
-                          {item.region[lang]}
-                        </span>
-                      </div>
-
-                      <h3 className="mt-4 text-2xl font-bold tracking-tight text-slate-900">
-                        {item.name}
-                      </h3>
-
-                      <p className="mt-3 text-sm leading-7 text-slate-600">
-                        {item.blurb[lang]}
-                      </p>
-
-                      <p className="mt-3 text-sm leading-7 text-slate-500">
-                        {meta.summary[lang]}
-                      </p>
-
-                      <div className="mt-5 flex flex-wrap gap-2">
-                        {meta.tags[lang].map((tag) => (
-                          <span
-                            key={tag}
-                            className="border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700"
-                          >
-                            {tag}
-                          </span>
-                        ))}
-                      </div>
-
-                      <Link
-                        href={withLang(`/destinations/${item.slug}`)}
-                        className="mt-6 inline-flex bg-slate-900 px-4 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
-                        aria-label={
-                          lang === "en"
-                            ? `Read the ${item.name} travel guide`
-                            : `Δες τον οδηγό για ${item.name}`
-                        }
-                      >
-                        {lang === "en"
-                          ? `${item.name} travel guide →`
-                          : `Οδηγός για ${item.name} →`}
-                      </Link>
-                    </div>
-                  </div>
-                </article>
-              );
-            })}
-          </div>
+              </article>
+            );
+          })}
         </div>
       </section>
 
-      <section id="travel-info" className="scroll-mt-28 bg-white py-14">
+      <section id="travel-info" className="scroll-mt-28 bg-white backdrop-blur-md py-14">
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid gap-6 xl:grid-cols-[0.95fr_1.05fr]">
-            <div className="border border-slate-200 bg-slate-50 p-7 md:p-8">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
-                {t.travelHubEyebrow[lang]}
+            <div className="border border-slate-200 bg-white hover:bg-slate-50 p-7 md:p-8">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700">
+                {copy.travelHubEyebrow}
               </p>
               <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
-                {t.travelHubTitle[lang]}
+                {copy.travelHubTitle}
               </h2>
-              <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-600">
-                {t.travelHubText[lang]}
+              <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-500">
+                {copy.travelHubText}
               </p>
 
               <Link
                 href={withLang("/travel-info")}
-                className="mt-6 inline-flex bg-slate-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
+                className="mt-6 inline-flex bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-100"
               >
-                {t.travelHubCta[lang]}
+                {copy.travelHubCta}
               </Link>
             </div>
 
             <div className="grid gap-4 md:grid-cols-3">
               <Link
                 href={withLang("/travel-info/how-to-get-to-greece")}
-                className="group border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+                className="group border border-slate-200 bg-white backdrop-blur-md p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
               >
                 <div className="text-3xl">✈️</div>
                 <h3 className="mt-4 text-xl font-semibold text-slate-900">
                   {t.travelMini1Title[lang]}
                 </h3>
-                <p className="mt-3 text-sm leading-6 text-slate-600">
+                <p className="mt-3 text-sm leading-6 text-slate-500">
                   {t.travelMini1Text[lang]}
                 </p>
-                <span className="mt-4 inline-block text-sm font-semibold text-sky-800">
+                <span className="mt-4 inline-block text-sm font-semibold text-indigo-700">
                   {lang === "en"
                     ? "Read how to get to Greece →"
                     : "Δες πώς να έρθεις στην Ελλάδα →"}
@@ -913,16 +911,16 @@ export default function HomePageClient({ lang }: HomePageClientProps) {
 
               <Link
                 href={withLang("/travel-info/best-time-to-visit-greece")}
-                className="group border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+                className="group border border-slate-200 bg-white backdrop-blur-md p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
               >
                 <div className="text-3xl">🗓️</div>
                 <h3 className="mt-4 text-xl font-semibold text-slate-900">
                   {t.travelMini2Title[lang]}
                 </h3>
-                <p className="mt-3 text-sm leading-6 text-slate-600">
+                <p className="mt-3 text-sm leading-6 text-slate-500">
                   {t.travelMini2Text[lang]}
                 </p>
-                <span className="mt-4 inline-block text-sm font-semibold text-sky-800">
+                <span className="mt-4 inline-block text-sm font-semibold text-indigo-700">
                   {lang === "en"
                     ? "Read the best time to visit Greece guide →"
                     : "Δες τον οδηγό για το πότε να ταξιδέψεις →"}
@@ -931,16 +929,16 @@ export default function HomePageClient({ lang }: HomePageClientProps) {
 
               <Link
                 href={withLang("/travel-info/getting-around-greece")}
-                className="group border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+                className="group border border-slate-200 bg-white backdrop-blur-md p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
               >
                 <div className="text-3xl">🧭</div>
                 <h3 className="mt-4 text-xl font-semibold text-slate-900">
                   {t.travelMini3Title[lang]}
                 </h3>
-                <p className="mt-3 text-sm leading-6 text-slate-600">
+                <p className="mt-3 text-sm leading-6 text-slate-500">
                   {t.travelMini3Text[lang]}
                 </p>
-                <span className="mt-4 inline-block text-sm font-semibold text-sky-800">
+                <span className="mt-4 inline-block text-sm font-semibold text-indigo-700">
                   {lang === "en"
                     ? "Read the getting around Greece guide →"
                     : "Δες τον οδηγό μετακίνησης στην Ελλάδα →"}
@@ -959,14 +957,14 @@ export default function HomePageClient({ lang }: HomePageClientProps) {
           <div className="mb-8 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
             <div>
               <span className="inline-flex rounded-md bg-amber-100 px-4 py-1 text-sm font-semibold uppercase tracking-[0.18em] text-amber-800">
-                🏨 {t.hotelsEyebrow[lang]}
+                🏨 {copy.hotelsEyebrow}
               </span>
               <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-900">
-                {t.hotelsTitle[lang]}
+                {copy.hotelsTitle}
               </h2>
               <div className="mt-4 h-1 w-24 rounded-md bg-gradient-to-r from-amber-500 to-orange-400" />
-              <p className="mt-4 max-w-3xl rounded-xl border border-amber-100 bg-white/80 px-5 py-4 text-sm leading-6 text-slate-600 shadow-sm">
-                {t.hotelsText[lang]}
+              <p className="mt-4 max-w-3xl rounded-xl border border-amber-100 bg-white backdrop-blur-md px-5 py-4 text-sm leading-6 text-slate-500 shadow-sm">
+                {copy.hotelsText}
               </p>
             </div>
 
@@ -975,12 +973,10 @@ export default function HomePageClient({ lang }: HomePageClientProps) {
                 Sponsored
               </p>
               <h3 className="mt-2 text-xl font-bold text-slate-900">
-                {lang === "en"
-                  ? "Promote your hotel or travel business"
-                  : "Πρόβαλε το ξενοδοχείο ή το travel business σου"}
+                {copy.hotelsPromoTitle}
               </h3>
-              <button className="mt-4 rounded-md bg-amber-500 px-5 py-3 font-semibold text-white transition hover:bg-amber-600">
-                {t.ctaAd[lang]}
+              <button className="mt-4 rounded-md bg-amber-500 px-5 py-3 font-semibold text-slate-900 transition hover:bg-amber-600">
+                {copy.ctaAd}
               </button>
             </div>
           </div>
@@ -998,7 +994,7 @@ export default function HomePageClient({ lang }: HomePageClientProps) {
                   <div className="absolute inset-0 bg-gradient-to-t from-[#2a1606]/35 via-transparent to-transparent" />
 
                   {item.badge ? (
-                    <span className="absolute left-4 top-4 rounded-md bg-amber-500 px-3 py-1 text-xs font-semibold text-white shadow-sm">
+                    <span className="absolute left-4 top-4 rounded-md bg-amber-500 px-3 py-1 text-xs font-semibold text-slate-900 shadow-sm">
                       {item.badge}
                     </span>
                   ) : null}
@@ -1026,12 +1022,12 @@ export default function HomePageClient({ lang }: HomePageClientProps) {
                   </div>
 
                   <div className="mt-4">
-                    <span className="rounded-md bg-white px-3 py-1 text-xs font-medium text-slate-700 shadow-sm">
+                    <span className="rounded-md bg-white backdrop-blur-md px-3 py-1 text-xs font-medium text-slate-600 shadow-sm">
                       {item.place}
                     </span>
                   </div>
 
-                  <p className="mt-4 text-sm leading-6 text-slate-600">
+                  <p className="mt-4 text-sm leading-6 text-slate-500">
                     {item.info[lang]}
                   </p>
 
@@ -1039,7 +1035,7 @@ export default function HomePageClient({ lang }: HomePageClientProps) {
                     {item.features[lang].slice(0, 3).map((feature) => (
                       <span
                         key={feature}
-                        className="rounded-md border border-amber-100 bg-white px-3 py-1 text-xs font-medium text-amber-900"
+                        className="rounded-md border border-amber-100 bg-white backdrop-blur-md px-3 py-1 text-xs font-medium text-amber-900"
                       >
                         {feature}
                       </span>
@@ -1048,7 +1044,7 @@ export default function HomePageClient({ lang }: HomePageClientProps) {
 
                   <Link
                     href={withLang(`/hotels/${item.slug}`)}
-                    className="mt-6 inline-flex rounded-md bg-amber-500 px-5 py-3 text-sm font-semibold text-white transition hover:bg-amber-600"
+                    className="mt-6 inline-flex rounded-md bg-amber-500 px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-amber-600"
                     aria-label={
                       lang === "en"
                         ? `Read where to stay in ${item.place}`
@@ -1074,16 +1070,16 @@ export default function HomePageClient({ lang }: HomePageClientProps) {
           <div className="mb-8 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
             <div>
               <span className="inline-flex rounded-md bg-cyan-100 px-4 py-1 text-sm font-semibold uppercase tracking-[0.18em] text-cyan-800">
-                ⚓ {t.toursEyebrow[lang]}
+                ⚓ {copy.toursEyebrow}
               </span>
               <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-900">
-                {t.toursTitle[lang]}
+                {copy.toursTitle}
               </h2>
               <div className="mt-4 h-1 w-24 rounded-md bg-gradient-to-r from-cyan-500 to-sky-500" />
             </div>
 
-            <p className="max-w-3xl rounded-xl border border-cyan-100 bg-white/80 px-5 py-4 text-sm leading-6 text-slate-600 shadow-sm">
-              {t.toursText[lang]}
+            <p className="max-w-3xl rounded-xl border border-cyan-100 bg-white backdrop-blur-md px-5 py-4 text-sm leading-6 text-slate-500 shadow-sm">
+              {copy.toursText}
             </p>
           </div>
 
@@ -1091,7 +1087,7 @@ export default function HomePageClient({ lang }: HomePageClientProps) {
             {tours.map((item) => (
               <article
                 key={item.slug}
-                className="overflow-hidden rounded-xl border border-cyan-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+                className="overflow-hidden rounded-xl border border-cyan-200 bg-white backdrop-blur-md shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
               >
                 <div className="relative">
                   <div
@@ -1099,7 +1095,7 @@ export default function HomePageClient({ lang }: HomePageClientProps) {
                     style={{ backgroundImage: `url('${item.image}')` }}
                   />
                   <div className="absolute inset-x-0 top-0 flex items-center justify-between p-4">
-                    <span className="rounded-md bg-cyan-600 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-white shadow-sm">
+                    <span className="rounded-md bg-cyan-600 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-slate-900 shadow-sm">
                       {lang === "en" ? "Experiences" : "Εμπειρίες"}
                     </span>
                     <span className="rounded-md bg-white/90 px-3 py-1 text-xs font-semibold text-cyan-800 backdrop-blur">
@@ -1125,7 +1121,7 @@ export default function HomePageClient({ lang }: HomePageClientProps) {
                     </div>
                   </div>
 
-                  <p className="mt-4 text-sm leading-6 text-slate-600">
+                  <p className="mt-4 text-sm leading-6 text-slate-500">
                     {item.info[lang]}
                   </p>
 
@@ -1142,7 +1138,7 @@ export default function HomePageClient({ lang }: HomePageClientProps) {
 
                   <Link
                     href={withLang(`/tours/${item.slug}`)}
-                    className="mt-6 inline-flex rounded-md bg-cyan-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-cyan-800"
+                    className="mt-6 inline-flex rounded-md bg-cyan-700 px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-cyan-800"
                     aria-label={
                       lang === "en"
                         ? `Read the ${item.place} tours guide`
@@ -1167,14 +1163,14 @@ export default function HomePageClient({ lang }: HomePageClientProps) {
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-8">
             <span className="inline-flex rounded-md bg-orange-100 px-4 py-1 text-sm font-semibold uppercase tracking-[0.18em] text-orange-800">
-              🍷 {t.foodEyebrow[lang]}
+              🍷 {copy.foodEyebrow}
             </span>
             <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-900">
-              {t.foodTitle[lang]}
+              {copy.foodTitle}
             </h2>
             <div className="mt-4 h-1 w-24 rounded-md bg-gradient-to-r from-orange-500 to-amber-400" />
-            <p className="mt-4 max-w-3xl rounded-xl border border-orange-100 bg-white/85 px-5 py-4 text-sm leading-6 text-slate-600 shadow-sm">
-              {t.foodText[lang]}
+            <p className="mt-4 max-w-3xl rounded-xl border border-orange-100 bg-white/85 px-5 py-4 text-sm leading-6 text-slate-500 shadow-sm">
+              {copy.foodText}
             </p>
           </div>
 
@@ -1192,7 +1188,7 @@ export default function HomePageClient({ lang }: HomePageClientProps) {
                   <div className="absolute inset-0 bg-gradient-to-t from-[#4a2207]/35 via-transparent to-transparent" />
 
                   <div className="absolute inset-x-0 top-0 flex items-center justify-between p-4">
-                    <span className="rounded-md bg-orange-500 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-white shadow-sm">
+                    <span className="rounded-md bg-orange-500 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-slate-900 shadow-sm">
                       {lang === "en" ? "Food & Drink" : "Φαγητό & Ποτό"}
                     </span>
                     <span className="rounded-md bg-white/90 px-3 py-1 text-xs font-semibold text-orange-800 backdrop-blur">
@@ -1216,7 +1212,7 @@ export default function HomePageClient({ lang }: HomePageClientProps) {
                     </div>
                   </div>
 
-                  <p className="mt-4 text-sm leading-6 text-slate-600">
+                  <p className="mt-4 text-sm leading-6 text-slate-500">
                     {item.info[lang]}
                   </p>
 
@@ -1224,7 +1220,7 @@ export default function HomePageClient({ lang }: HomePageClientProps) {
                     {item.specialties[lang].slice(0, 3).map((specialty) => (
                       <span
                         key={specialty}
-                        className="rounded-md border border-orange-100 bg-white px-3 py-1 text-xs font-medium text-orange-900"
+                        className="rounded-md border border-orange-100 bg-white backdrop-blur-md px-3 py-1 text-xs font-medium text-orange-900"
                       >
                         {specialty}
                       </span>
@@ -1233,7 +1229,7 @@ export default function HomePageClient({ lang }: HomePageClientProps) {
 
                   <Link
                     href={withLang(`/eat-drink/${item.slug}`)}
-                    className="mt-6 inline-flex rounded-md bg-orange-500 px-5 py-3 text-sm font-semibold text-white transition hover:bg-orange-600"
+                    className="mt-6 inline-flex rounded-md bg-orange-500 px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-orange-600"
                     aria-label={
                       lang === "en"
                         ? `Read the ${item.place} food guide`
@@ -1252,17 +1248,17 @@ export default function HomePageClient({ lang }: HomePageClientProps) {
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-16">
-        <div className="overflow-hidden rounded-xl bg-gradient-to-r from-sky-800 via-cyan-700 to-emerald-500 p-8 text-white shadow-xl md:p-10">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-white/75">
-            {t.communitiesEyebrow[lang]}
+        <div className="overflow-hidden rounded-xl bg-gradient-to-r from-sky-800 via-cyan-700 to-emerald-500 p-8 text-slate-900 shadow-xl md:p-10">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-900/75">
+            {copy.communitiesEyebrow}
           </p>
 
           <h2 className="mt-2 text-3xl font-bold tracking-tight md:text-4xl">
-            {t.communitiesTitle[lang]}
+            {copy.communitiesTitle}
           </h2>
 
-          <p className="mt-4 max-w-3xl text-sm leading-7 text-white/90">
-            {t.communitiesText[lang]}
+          <p className="mt-4 max-w-3xl text-sm leading-7 text-slate-900/90">
+            {copy.communitiesText}
           </p>
 
           <div className="mt-8 grid gap-6 lg:grid-cols-3">
@@ -1275,14 +1271,14 @@ export default function HomePageClient({ lang }: HomePageClientProps) {
                 <h3 className="mt-4 text-xl font-semibold">
                   {item.title[lang]}
                 </h3>
-                <p className="mt-3 text-sm leading-6 text-white/90">
+                <p className="mt-3 text-sm leading-6 text-slate-900/90">
                   {item.description[lang]}
                 </p>
 
                 {isExternalUrl(item.href) ? (
                   <a
                     href={item.href}
-                    className="mt-5 inline-block text-sm font-semibold text-white hover:text-cyan-100"
+                    className="mt-5 inline-block text-sm font-semibold text-slate-900 hover:text-cyan-100"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -1293,7 +1289,7 @@ export default function HomePageClient({ lang }: HomePageClientProps) {
                 ) : (
                   <Link
                     href={withLang(item.href)}
-                    className="mt-5 inline-block text-sm font-semibold text-white hover:text-cyan-100"
+                    className="mt-5 inline-block text-sm font-semibold text-slate-900 hover:text-cyan-100"
                   >
                     {lang === "en"
                       ? `Open ${item.title.en} forum →`
@@ -1306,19 +1302,19 @@ export default function HomePageClient({ lang }: HomePageClientProps) {
         </div>
       </section>
 
-      <footer className="border-t border-slate-200 bg-white">
+      <footer className="border-t border-slate-200 bg-white backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-slate-500 md:flex-row md:items-center md:justify-between">
-          <div>{t.footerText[lang]}</div>
+          <div>{copy.footerText}</div>
 
           <div className="flex gap-5">
-            <a href="#" className="hover:text-slate-800">
-              {t.footerAbout[lang]}
+            <a href="#" className="hover:text-slate-900">
+              {copy.footerAbout}
             </a>
-            <a href="#" className="hover:text-slate-800">
-              {t.footerContact[lang]}
+            <a href="#" className="hover:text-slate-900">
+              {copy.footerContact}
             </a>
-            <a href="#" className="hover:text-slate-800">
-              {t.footerPrivacy[lang]}
+            <a href="#" className="hover:text-slate-900">
+              {copy.footerPrivacy}
             </a>
           </div>
         </div>

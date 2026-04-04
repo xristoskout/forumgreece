@@ -1,11 +1,65 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import HomePageClient from "./home-page-client";
+import { client } from "../../lib/sanity/client";
+import { HOME_PAGE_QUERY } from "../../lib/sanity/queries";
 
 type Lang = "en" | "el";
 
 type Props = {
   params: Promise<{ lang: string }>;
+};
+
+type HomePageContent = {
+  heroBadge?: string;
+  heroTitle?: string;
+  heroText?: string;
+  heroPrimary?: string;
+  heroSecondary?: string;
+
+  heroPanelEyebrow?: string;
+  heroPanelTitle?: string;
+  heroPanelText?: string;
+
+  startPlanningEyebrow?: string;
+  startPlanningTitle?: string;
+  startPlanningText?: string;
+
+  featuredCollectionsEyebrow?: string;
+  featuredCollectionsTitle?: string;
+  featuredCollectionsText?: string;
+
+  destinationEyebrow?: string;
+  destinationTitle?: string;
+  destinationText?: string;
+
+  travelHubEyebrow?: string;
+  travelHubTitle?: string;
+  travelHubText?: string;
+  travelHubCta?: string;
+
+  hotelsEyebrow?: string;
+  hotelsTitle?: string;
+  hotelsText?: string;
+  hotelsPromoTitle?: string;
+
+  toursEyebrow?: string;
+  toursTitle?: string;
+  toursText?: string;
+
+  foodEyebrow?: string;
+  foodTitle?: string;
+  foodText?: string;
+
+  communitiesEyebrow?: string;
+  communitiesTitle?: string;
+  communitiesText?: string;
+
+  footerText?: string;
+  ctaAd?: string;
+  footerAbout?: string;
+  footerContact?: string;
+  footerPrivacy?: string;
 };
 
 const SITE_URL = "https://gogreecenow.com";
@@ -91,6 +145,8 @@ function HomeStructuredData({ lang }: { lang: Lang }) {
   );
 }
 
+export const revalidate = 60;
+
 export function generateStaticParams() {
   return [{ lang: "en" }, { lang: "el" }];
 }
@@ -148,10 +204,14 @@ export default async function Page({ params }: Props) {
     notFound();
   }
 
+  const content = await client.fetch<HomePageContent | null>(HOME_PAGE_QUERY, {
+    lang,
+  });
+
   return (
     <>
       <HomeStructuredData lang={lang} />
-      <HomePageClient lang={lang} />
+      <HomePageClient lang={lang} content={content} />
     </>
   );
 }

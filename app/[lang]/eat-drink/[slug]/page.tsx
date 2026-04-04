@@ -78,7 +78,7 @@ export default function EatDrinkDetailPage() {
   }
 
   return (
-    <main className="min-h-screen bg-[#f7fbff] text-slate-900">
+    <main className="min-h-screen bg-transparent text-slate-900">
       <section className="border-b border-slate-200 bg-white/95 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-2 px-0 py-3 sm:gap-6 sm:px-6 sm:py-5">
           <Link
@@ -94,7 +94,7 @@ export default function EatDrinkDetailPage() {
               priority
             />
             <div className="min-w-0">
-              <div className="truncate text-lg font-bold tracking-tight text-sky-900 transition group-hover:text-sky-700 sm:text-2xl">
+              <div className="truncate text-lg font-bold tracking-tight text-indigo-800 transition group-hover:text-indigo-700 sm:text-2xl">
                 {siteBrand}
               </div>
               <div className="hidden text-sm text-slate-500 sm:block">
@@ -106,20 +106,20 @@ export default function EatDrinkDetailPage() {
           <div className="flex items-center gap-4">
             <Link
               href={withLang("/")}
-              className="text-sm font-medium text-slate-700 hover:text-sky-700"
+              className="text-sm font-medium text-slate-600 hover:text-indigo-700"
             >
               {t.navHome[lang]}
             </Link>
 
-            <span className="text-sm font-medium text-sky-700">
+            <span className="text-sm font-medium text-indigo-700">
               {t.navSection[lang]}
             </span>
 
-            <div className="flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 p-1">
+            <div className="flex items-center gap-2 rounded-full border border-slate-200 bg-white hover:bg-slate-50 p-1">
               <button
                 onClick={() => switchLanguage("en")}
                 className={`rounded-full px-3 py-1.5 text-sm font-semibold ${
-                  lang === "en" ? "bg-sky-600 text-white" : "text-slate-600"
+                  lang === "en" ? "bg-sky-600 text-slate-900" : "text-slate-500"
                 }`}
               >
                 EN
@@ -128,7 +128,7 @@ export default function EatDrinkDetailPage() {
               <button
                 onClick={() => switchLanguage("el")}
                 className={`rounded-full px-3 py-1.5 text-sm font-semibold ${
-                  lang === "el" ? "bg-sky-600 text-white" : "text-slate-600"
+                  lang === "el" ? "bg-sky-600 text-slate-900" : "text-slate-500"
                 }`}
               >
                 GR
@@ -138,64 +138,79 @@ export default function EatDrinkDetailPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-12">
-        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
-          {t.eyebrow[lang]}
-        </p>
-
-        <h1 className="mt-2 text-4xl font-bold tracking-tight md:text-5xl">
-          {item.title[lang]}
-        </h1>
-
-        <p className="mt-4 inline-flex rounded-full bg-amber-100 px-3 py-1 text-sm font-semibold text-amber-800">
-          {t.place[lang]}: {item.place}
-        </p>
+      <section className="mx-auto max-w-7xl px-6 py-20">
+        <div className="flex flex-col items-center text-center">
+          <div className="inline-flex rounded-full border border-indigo-200 bg-indigo-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-indigo-800 backdrop-blur-md mb-6 relative overflow-hidden group">
+            <span className="relative z-10">{t.eyebrow[lang]}</span>
+             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-indigo-500/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></div>
+          </div>
+          <div className="mt-2 flex flex-wrap items-center justify-center gap-4">
+            <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight drop-shadow-xl">
+              {item.title[lang]}
+            </h1>
+          </div>
+          <p className="mt-6 inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/90 backdrop-blur-md px-5 py-2 text-sm font-medium text-slate-600">
+            <span className="text-indigo-700">📍</span> {t.place[lang]}: {item.place}
+          </p>
+        </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 pb-10">
-        <div className="overflow-hidden rounded-[32px] shadow-xl">
+      <section className="mx-auto max-w-7xl px-6 pb-20">
+        <div className="group relative overflow-hidden rounded-[2.5rem] shadow-xl border border-slate-200 transition-all duration-700 hover:shadow-[0_10px_40px_rgba(0,0,0,0.06)]">
           <div
-            className="h-[380px] bg-cover bg-center"
+            className="h-[450px] bg-cover bg-center transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
             style={{ backgroundImage: `url('${item.image}')` }}
           />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60" />
         </div>
       </section>
 
-      <section className="mx-auto grid max-w-7xl gap-8 px-6 py-8 lg:grid-cols-[1.2fr_0.8fr]">
-        <div className="rounded-[32px] border border-slate-200 bg-white p-8 shadow-sm">
-          <h2 className="text-2xl font-bold">{t.overview[lang]}</h2>
-
-          <p className="mt-4 text-base leading-8 text-slate-600">
+      <section className="mx-auto grid max-w-7xl gap-8 px-6 pb-20 lg:grid-cols-[1.2fr_0.8fr]">
+        <div className="group rounded-[2.5rem] border border-slate-200 bg-white/90 backdrop-blur-md p-10 shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)] flex flex-col justify-center">
+          <p className="text-sm font-semibold uppercase tracking-widest text-indigo-700 mb-4">
+            {t.overview[lang]}
+          </p>
+          <h2 className="text-3xl font-bold tracking-tight mb-6">
+            The Experience
+          </h2>
+          <p className="text-lg leading-relaxed text-slate-600 mb-8">
             {item.overview[lang]}
           </p>
-
-          <p className="mt-6 text-sm leading-7 text-slate-500">
-            {item.info[lang]}
-          </p>
+          <div className="rounded-2xl border border-indigo-500/20 bg-indigo-500/5 p-6 backdrop-blur-md">
+             <div className="flex items-start gap-4">
+               <div className="text-indigo-700 text-2xl">💡</div>
+               <p className="text-sm leading-relaxed text-slate-600">
+                 {item.info[lang]}
+               </p>
+             </div>
+          </div>
         </div>
 
-        <div className="rounded-[32px] border border-slate-200 bg-white p-8 shadow-sm">
-          <h2 className="text-2xl font-bold">{t.specialties[lang]}</h2>
-
-          <ul className="mt-4 space-y-3 text-slate-600">
+        <div className="group rounded-[2.5rem] border border-slate-200 bg-indigo-50/80 backdrop-blur-md p-10 shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)]">
+          <p className="text-sm font-semibold uppercase tracking-widest text-indigo-700 mb-4">
+            {t.specialties[lang]}
+          </p>
+          <h2 className="text-3xl font-bold tracking-tight mb-8">
+            Highlights
+          </h2>
+          <ul className="space-y-4 text-slate-600">
             {item.specialties[lang].map((specialty) => (
-              <li
-                key={specialty}
-                className="rounded-2xl bg-slate-50 px-4 py-3"
-              >
-                {specialty}
+              <li key={specialty} className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-white backdrop-blur-md px-5 py-4 transition-all hover:bg-slate-50">
+                <span className="text-indigo-700">✨</span> {specialty}
               </li>
             ))}
           </ul>
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-12">
+      <section className="mx-auto max-w-7xl px-6 pb-24 text-center flex justify-center">
         <Link
           href={withLang("/")}
-          className="inline-flex rounded-2xl border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-800 transition hover:bg-slate-50"
+          className="group relative inline-flex overflow-hidden rounded-full border border-slate-300 bg-slate-50 px-8 py-4 text-sm font-semibold text-slate-900 shadow-xl transition-all hover:scale-105 hover:bg-indigo-600 hover:border-indigo-500 backdrop-blur-md"
         >
-          {t.back[lang]}
+          <span className="relative z-10 flex items-center gap-2">
+            ← {t.back[lang]}
+          </span>
         </Link>
       </section>
     </main>

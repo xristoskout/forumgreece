@@ -95,7 +95,7 @@ export default function ExperienceDetailsClient({
     businesses[0]?.image ?? "/images/tours/kefalonia-tours.jpg";
 
   return (
-    <main className="min-h-screen bg-[#f7fbff] text-slate-900">
+    <main className="min-h-screen bg-transparent text-slate-900">
       <section className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-2 px-0 py-3 sm:gap-6 sm:px-6 sm:py-5">
           <Link
@@ -111,7 +111,7 @@ export default function ExperienceDetailsClient({
               priority
             />
             <div className="min-w-0">
-              <div className="truncate text-lg font-bold tracking-tight text-sky-900 transition group-hover:text-sky-700 sm:text-2xl">
+              <div className="truncate text-lg font-bold tracking-tight text-indigo-800 transition group-hover:text-indigo-700 sm:text-2xl">
                 {siteBrand}
               </div>
               <div className="hidden text-sm text-slate-500 sm:block">
@@ -120,14 +120,14 @@ export default function ExperienceDetailsClient({
             </div>
           </Link>
 
-          <div className="flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 p-1">
+          <div className="flex items-center gap-2 rounded-full border border-slate-200 bg-white hover:bg-slate-50 p-1">
             <button
               type="button"
               onClick={() => switchLanguage("en")}
               className={`rounded-full px-3 py-1.5 text-sm font-semibold transition ${
                 lang === "en"
-                  ? "bg-sky-600 text-white"
-                  : "text-slate-600"
+                  ? "bg-sky-600 text-slate-900"
+                  : "text-slate-500"
               }`}
             >
               EN
@@ -138,8 +138,8 @@ export default function ExperienceDetailsClient({
               onClick={() => switchLanguage("el")}
               className={`rounded-full px-3 py-1.5 text-sm font-semibold transition ${
                 lang === "el"
-                  ? "bg-sky-600 text-white"
-                  : "text-slate-600"
+                  ? "bg-sky-600 text-slate-900"
+                  : "text-slate-500"
               }`}
             >
               GR
@@ -148,7 +148,7 @@ export default function ExperienceDetailsClient({
         </div>
       </section>
 
-      <section className="relative overflow-hidden text-white">
+      <section className="relative overflow-hidden text-slate-900">
         <div className="absolute inset-0">
           <Image
             src={heroImage}
@@ -174,21 +174,21 @@ export default function ExperienceDetailsClient({
               {landing.title[lang]}
             </h1>
 
-            <p className="mt-5 max-w-2xl text-lg leading-8 text-white/90">
+            <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-900/90">
               {landing.description[lang]}
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
               <Link
                 href={withLang("/#tours")}
-                className="rounded-full bg-white px-6 py-3 font-semibold text-sky-900 shadow-sm transition hover:-translate-y-0.5"
+                className="rounded-full bg-white backdrop-blur-md px-6 py-3 font-semibold text-indigo-800 shadow-sm transition hover:-translate-y-0.5"
               >
                 {t.backToTours}
               </Link>
 
               <Link
                 href={withLang("/")}
-                className="rounded-full border border-white/40 px-6 py-3 font-semibold text-white transition hover:bg-white/10"
+                className="rounded-full border border-white/40 px-6 py-3 font-semibold text-slate-900 transition hover:bg-slate-50"
               >
                 {t.homePage}
               </Link>
@@ -203,7 +203,7 @@ export default function ExperienceDetailsClient({
               >
                 <div className="text-3xl">⚓</div>
                 <h3 className="mt-4 text-xl font-semibold">{highlight}</h3>
-                <p className="mt-2 text-sm leading-6 text-white/90">
+                <p className="mt-2 text-sm leading-6 text-slate-900/90">
                   {t.highlightReason}
                 </p>
               </article>
@@ -215,8 +215,8 @@ export default function ExperienceDetailsClient({
       <section className="mx-auto max-w-7xl px-6 py-16">
         <div className="grid gap-6 xl:grid-cols-[1.15fr_0.85fr]">
           <div className="space-y-6">
-            <article className="rounded-[28px] border border-slate-200 bg-white p-8 shadow-sm">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
+            <article className="rounded-[28px] border border-slate-200 bg-white backdrop-blur-md p-8 shadow-sm">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700">
                 {t.pageOverview}
               </p>
 
@@ -224,18 +224,18 @@ export default function ExperienceDetailsClient({
                 {landing.title[lang]}
               </h2>
 
-              <p className="mt-5 text-base leading-8 text-slate-600">
+              <p className="mt-5 text-base leading-8 text-slate-500">
                 {landing.overview[lang]}
               </p>
             </article>
 
-            <article className="rounded-[28px] border border-slate-200 bg-white p-8 shadow-sm">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
+            <article className="rounded-[28px] border border-slate-200 bg-white backdrop-blur-md p-8 shadow-sm">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700">
                 {t.featuredBusinesses}
               </p>
 
               {businesses.length === 0 ? (
-                <p className="mt-6 text-base leading-8 text-slate-600">
+                <p className="mt-6 text-base leading-8 text-slate-500">
                   {t.emptyBusinesses}
                 </p>
               ) : (
@@ -247,7 +247,7 @@ export default function ExperienceDetailsClient({
                     return (
                       <article
                         key={business.slug}
-                        className="overflow-hidden rounded-[28px] border border-slate-200 bg-slate-50 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+                        className="overflow-hidden rounded-[28px] border border-slate-200 bg-white hover:bg-slate-50 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
                       >
                         <div className="grid gap-0 lg:grid-cols-[1fr_1.1fr]">
                           <div className="relative min-h-[280px] h-[260px] w-full bg-slate-100 sm:h-[320px] lg:h-full">
@@ -264,7 +264,7 @@ export default function ExperienceDetailsClient({
                             <div>
                               <div className="flex flex-wrap items-center justify-between gap-3">
                                 <div>
-                                  <div className="text-sm font-semibold uppercase tracking-[0.18em] text-sky-700">
+                                  <div className="text-sm font-semibold uppercase tracking-[0.18em] text-indigo-700">
                                     {business.category[lang]}
                                   </div>
 
@@ -278,13 +278,13 @@ export default function ExperienceDetailsClient({
                                 </div>
 
                                 {business.badge && (
-                                  <span className="inline-flex rounded-full bg-sky-100 px-3 py-1 text-sm font-semibold text-sky-800">
+                                  <span className="inline-flex rounded-full bg-indigo-100 text-indigo-800 px-3 py-1 text-sm font-semibold text-indigo-700">
                                     {business.badge}
                                   </span>
                                 )}
                               </div>
 
-                              <p className="mt-6 text-base leading-8 text-slate-600">
+                              <p className="mt-6 text-base leading-8 text-slate-500">
                                 {business.info[lang]}
                               </p>
                             </div>
@@ -295,14 +295,14 @@ export default function ExperienceDetailsClient({
                                   href={businessHref}
                                   target="_blank"
                                   rel="noopener noreferrer"
-                                  className="inline-flex items-center justify-center rounded-2xl bg-sky-700 px-6 py-3 text-sm font-semibold text-white transition hover:bg-sky-800"
+                                  className="inline-flex items-center justify-center rounded-2xl bg-indigo-600 border-none px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-indigo-500"
                                 >
                                   {business.name}
                                 </a>
                               ) : (
                                 <Link
                                   href={withLang(businessHref)}
-                                  className="inline-flex items-center justify-center rounded-2xl bg-sky-700 px-6 py-3 text-sm font-semibold text-white transition hover:bg-sky-800"
+                                  className="inline-flex items-center justify-center rounded-2xl bg-indigo-600 border-none px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-indigo-500"
                                 >
                                   {business.name}
                                 </Link>
@@ -320,7 +320,7 @@ export default function ExperienceDetailsClient({
 
           <aside className="space-y-6">
             <article className="rounded-[28px] border border-slate-200 bg-gradient-to-br from-white to-cyan-50 p-8 shadow-sm">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700">
                 {t.pageHighlights}
               </p>
 
@@ -328,7 +328,7 @@ export default function ExperienceDetailsClient({
                 {landing.highlights[lang].map((highlight) => (
                   <div
                     key={highlight}
-                    className="rounded-2xl border border-cyan-100 bg-white px-4 py-3 text-sm font-medium text-slate-700"
+                    className="rounded-2xl border border-cyan-100 bg-white backdrop-blur-md px-4 py-3 text-sm font-medium text-slate-600"
                   >
                     ⚓ {highlight}
                   </div>
@@ -336,26 +336,26 @@ export default function ExperienceDetailsClient({
               </div>
             </article>
 
-            <article className="rounded-[28px] border border-slate-200 bg-white p-8 shadow-sm">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
+            <article className="rounded-[28px] border border-slate-200 bg-white backdrop-blur-md p-8 shadow-sm">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700">
                 {t.travelNote}
               </p>
 
-              <p className="mt-4 text-sm leading-7 text-slate-600">
+              <p className="mt-4 text-sm leading-7 text-slate-500">
                 {t.travelNoteText}
               </p>
 
               <div className="mt-8 space-y-3">
                 <Link
                   href={withLang("/#tours")}
-                  className="block rounded-2xl bg-sky-700 px-5 py-3 text-center font-semibold text-white transition hover:bg-sky-800"
+                  className="block rounded-2xl bg-indigo-600 border-none px-5 py-3 text-center font-semibold text-slate-900 transition hover:bg-indigo-500"
                 >
                   {t.exploreMoreTours}
                 </Link>
 
                 <Link
                   href={withLang("/")}
-                  className="block rounded-2xl border border-slate-200 px-5 py-3 text-center font-semibold text-slate-700 transition hover:bg-slate-50"
+                  className="block rounded-2xl border border-slate-200 px-5 py-3 text-center font-semibold text-slate-600 transition hover:bg-white hover:bg-slate-50"
                 >
                   {t.backToHomepage}
                 </Link>
@@ -365,22 +365,22 @@ export default function ExperienceDetailsClient({
         </div>
       </section>
 
-      <footer className="border-t border-slate-200 bg-white">
+      <footer className="border-t border-slate-200 bg-white backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-slate-500 md:flex-row md:items-center md:justify-between">
           <div>{t.footerText}</div>
 
           <div className="flex gap-5">
-            <Link href={withLang("/")} className="hover:text-slate-800">
+            <Link href={withLang("/")} className="hover:text-slate-900">
               {t.home}
             </Link>
 
-            <Link href={withLang("/#tours")} className="hover:text-slate-800">
+            <Link href={withLang("/#tours")} className="hover:text-slate-900">
               {t.tours}
             </Link>
 
             <Link
               href={withLang("/travel-to-greece")}
-              className="hover:text-slate-800"
+              className="hover:text-slate-900"
             >
               {t.travelToGreece}
             </Link>

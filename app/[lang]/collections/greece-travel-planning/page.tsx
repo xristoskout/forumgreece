@@ -85,12 +85,12 @@ export default async function GreeceTravelPlanningCollectionPage({
   const featuredHotels = hotels.slice(0, 3);
 
   return (
-    <main className="min-h-screen bg-[#f7fbff] text-slate-900">
+    <main className="min-h-screen bg-transparent text-slate-900">
       <SiteHeader />
 
-      <section className="border-b border-slate-200 bg-white">
+      <section className="border-b border-slate-200 bg-white backdrop-blur-md">
         <div className="mx-auto max-w-7xl px-6 py-14">
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-sky-700">
+          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-indigo-700">
             {lang === "en"
               ? "Greece Travel Planning Hub"
               : "Hub Οργάνωσης Ταξιδιού στην Ελλάδα"}
@@ -102,7 +102,7 @@ export default async function GreeceTravelPlanningCollectionPage({
               : "Πρακτική οργάνωση ταξιδιού στην Ελλάδα, από την πρώτη ιδέα μέχρι την τελική κράτηση"}
           </h1>
 
-          <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-600">
+          <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-500">
             {lang === "en"
               ? "Use this editorial hub to organize the key parts of a Greece trip: where to go, where to stay and how to move through the planning process with less friction."
               : "Χρησιμοποίησε αυτό το editorial hub για να οργανώσεις τα βασικά κομμάτια ενός ταξιδιού στην Ελλάδα: πού να πας, πού να μείνεις και πώς να προχωρήσεις την οργάνωση με λιγότερη τριβή."}
@@ -111,7 +111,7 @@ export default async function GreeceTravelPlanningCollectionPage({
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
               href={withLang("/travel-info", lang)}
-              className="bg-sky-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-sky-800"
+              className="bg-indigo-600 border-none px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-indigo-500"
             >
               {lang === "en"
                 ? "Open travel info hub →"
@@ -120,7 +120,7 @@ export default async function GreeceTravelPlanningCollectionPage({
 
             <Link
               href={withLang("/", lang)}
-              className="border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-50"
+              className="border border-slate-200 bg-white backdrop-blur-md px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-white hover:bg-slate-50"
             >
               {lang === "en"
                 ? "Back to homepage →"
@@ -132,14 +132,14 @@ export default async function GreeceTravelPlanningCollectionPage({
 
       <section className="mx-auto max-w-7xl px-6 py-14">
         <div className="grid gap-6 lg:grid-cols-3">
-          <article className="border border-slate-200 bg-white p-6 shadow-sm">
+          <article className="border border-slate-200 bg-white backdrop-blur-md p-6 shadow-sm">
             <h2 className="text-xl font-semibold text-slate-900">
               {lang === "en"
                 ? "Step 1: Start with the practical basics"
                 : "Βήμα 1: Ξεκίνα από τα πρακτικά βασικά"}
             </h2>
 
-            <p className="mt-3 text-sm leading-7 text-slate-600">
+            <p className="mt-3 text-sm leading-7 text-slate-500">
               {lang === "en"
                 ? "Answer transport, timing and everyday travel questions first so the rest of the planning becomes easier."
                 : "Απάντησε πρώτα στα ερωτήματα για μετακίνηση, εποχές και καθημερινή οργάνωση ώστε τα υπόλοιπα βήματα να γίνουν πιο εύκολα."}
@@ -147,7 +147,7 @@ export default async function GreeceTravelPlanningCollectionPage({
 
             <Link
               href={withLang("/travel-info", lang)}
-              className="mt-5 inline-block text-sm font-semibold text-sky-800"
+              className="mt-5 inline-block text-sm font-semibold text-indigo-700"
             >
               {lang === "en"
                 ? "Read Greece travel info →"
@@ -155,14 +155,14 @@ export default async function GreeceTravelPlanningCollectionPage({
             </Link>
           </article>
 
-          <article className="border border-slate-200 bg-white p-6 shadow-sm">
+          <article className="border border-slate-200 bg-white backdrop-blur-md p-6 shadow-sm">
             <h2 className="text-xl font-semibold text-slate-900">
               {lang === "en"
                 ? "Step 2: Choose the right destination"
                 : "Βήμα 2: Διάλεξε τον σωστό προορισμό"}
             </h2>
 
-            <p className="mt-3 text-sm leading-7 text-slate-600">
+            <p className="mt-3 text-sm leading-7 text-slate-500">
               {lang === "en"
                 ? "Compare island and regional destination guides to match your trip style, budget and available days."
                 : "Σύγκρινε οδηγούς για νησιά και περιοχές ώστε να ταιριάξεις το ταξίδι με το στυλ, το budget και τις διαθέσιμες μέρες σου."}
@@ -170,7 +170,7 @@ export default async function GreeceTravelPlanningCollectionPage({
 
             <Link
               href={withLang("/collections/greek-islands", lang)}
-              className="mt-5 inline-block text-sm font-semibold text-sky-800"
+              className="mt-5 inline-block text-sm font-semibold text-indigo-700"
             >
               {lang === "en"
                 ? "Explore Greek island guides →"
@@ -178,14 +178,14 @@ export default async function GreeceTravelPlanningCollectionPage({
             </Link>
           </article>
 
-          <article className="border border-slate-200 bg-white p-6 shadow-sm">
+          <article className="border border-slate-200 bg-white backdrop-blur-md p-6 shadow-sm">
             <h2 className="text-xl font-semibold text-slate-900">
               {lang === "en"
                 ? "Step 3: Add stays and experiences"
                 : "Βήμα 3: Πρόσθεσε διαμονή και εμπειρίες"}
             </h2>
 
-            <p className="mt-3 text-sm leading-7 text-slate-600">
+            <p className="mt-3 text-sm leading-7 text-slate-500">
               {lang === "en"
                 ? "Once the destination is clear, use hotel and experience pages to shape the trip into a complete itinerary."
                 : "Μόλις ξεκαθαρίσει ο προορισμός, χρησιμοποίησε σελίδες για ξενοδοχεία και εμπειρίες ώστε να φτιάξεις ένα ολοκληρωμένο itinerary."}
@@ -193,7 +193,7 @@ export default async function GreeceTravelPlanningCollectionPage({
 
             <Link
               href={withLang("/collections/greece-tours-and-experiences", lang)}
-              className="mt-5 inline-block text-sm font-semibold text-sky-800"
+              className="mt-5 inline-block text-sm font-semibold text-indigo-700"
             >
               {lang === "en"
                 ? "Explore tours and experiences →"
@@ -203,10 +203,10 @@ export default async function GreeceTravelPlanningCollectionPage({
         </div>
       </section>
 
-      <section className="bg-white py-14">
+      <section className="bg-white backdrop-blur-md py-14">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-8">
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-sky-700">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-indigo-700">
               {lang === "en"
                 ? "Destination Planning"
                 : "Οργάνωση ανά Προορισμό"}
@@ -223,19 +223,19 @@ export default async function GreeceTravelPlanningCollectionPage({
             {featuredDestinations.map((item) => (
               <article
                 key={item.slug}
-                className="border border-slate-200 bg-slate-50 p-6"
+                className="border border-slate-200 bg-white hover:bg-slate-50 p-6"
               >
                 <h3 className="text-2xl font-bold text-slate-900">
                   {item.name}
                 </h3>
 
-                <p className="mt-3 text-sm leading-7 text-slate-600">
+                <p className="mt-3 text-sm leading-7 text-slate-500">
                   {item.blurb[lang]}
                 </p>
 
                 <Link
                   href={withLang(`/destinations/${item.slug}`, lang)}
-                  className="mt-5 inline-block text-sm font-semibold text-sky-800"
+                  className="mt-5 inline-block text-sm font-semibold text-indigo-700"
                 >
                   {lang === "en"
                     ? `Read the ${item.name} travel guide →`
@@ -249,7 +249,7 @@ export default async function GreeceTravelPlanningCollectionPage({
 
       <section className="mx-auto max-w-7xl px-6 py-14">
         <div className="mb-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-sky-700">
+          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-indigo-700">
             {lang === "en" ? "Where to Stay" : "Πού να Μείνεις"}
           </p>
 
@@ -264,7 +264,7 @@ export default async function GreeceTravelPlanningCollectionPage({
           {featuredHotels.map((item) => (
             <article
               key={item.slug}
-              className="border border-slate-200 bg-white p-6 shadow-sm"
+              className="border border-slate-200 bg-white backdrop-blur-md p-6 shadow-sm"
             >
               <h3 className="text-xl font-semibold text-slate-900">
                 {item.name}
@@ -274,13 +274,13 @@ export default async function GreeceTravelPlanningCollectionPage({
                 {item.place}
               </p>
 
-              <p className="mt-3 text-sm leading-7 text-slate-600">
+              <p className="mt-3 text-sm leading-7 text-slate-500">
                 {item.info[lang]}
               </p>
 
               <Link
                 href={withLang(`/hotels/${item.slug}`, lang)}
-                className="mt-5 inline-block text-sm font-semibold text-sky-800"
+                className="mt-5 inline-block text-sm font-semibold text-indigo-700"
               >
                 {lang === "en"
                   ? `Where to stay in ${item.place} →`

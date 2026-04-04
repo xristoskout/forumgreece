@@ -100,7 +100,7 @@ export default function SiteHeader() {
   );
 
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-200/90 bg-white/88 backdrop-blur-md">
+    <header className="fixed top-0 w-full z-50 border-b border-slate-200 bg-white/80 backdrop-blur-md text-slate-900 transition-all duration-300">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="flex min-h-[78px] items-center justify-between gap-3">
           <Link
@@ -120,7 +120,7 @@ export default function SiteHeader() {
             </div>
 
             <div className="min-w-0">
-              <div className="truncate text-lg font-bold tracking-tight text-sky-900 sm:text-xl">
+              <div className="truncate text-lg font-bold tracking-tight text-indigo-800 sm:text-xl">
                 {siteBrand}
               </div>
               <div className="hidden h-5 w-[180px] truncate text-sm text-slate-500 sm:block lg:w-[240px]">
@@ -136,8 +136,8 @@ export default function SiteHeader() {
                 href={item.href}
                 className={`px-4 py-2 text-sm font-medium transition ${
                   item.active
-                    ? "bg-sky-50 text-sky-800"
-                    : "text-slate-700 hover:bg-slate-50 hover:text-slate-900"
+                    ? "bg-sky-50 text-indigo-700"
+                    : "text-slate-600 hover:bg-white hover:bg-slate-50 hover:text-slate-900"
                 }`}
               >
                 {item.label}
@@ -146,14 +146,14 @@ export default function SiteHeader() {
           </nav>
 
           <div className="flex shrink-0 items-center gap-2">
-            <div className="hidden items-center border border-slate-200 bg-slate-50 sm:flex">
+            <div className="hidden items-center border border-slate-200 bg-white hover:bg-slate-50 sm:flex">
               <button
                 onClick={() => switchLanguage("en")}
                 aria-pressed={lang === "en"}
                 className={`w-11 px-0 py-2 text-sm font-semibold transition ${
                   lang === "en"
-                    ? "bg-sky-700 text-white"
-                    : "text-slate-600 hover:bg-white"
+                    ? "bg-indigo-600 border-none text-slate-900"
+                    : "text-slate-500 hover:bg-white backdrop-blur-md"
                 }`}
               >
                 EN
@@ -163,8 +163,8 @@ export default function SiteHeader() {
                 aria-pressed={lang === "el"}
                 className={`w-11 px-0 py-2 text-sm font-semibold transition ${
                   lang === "el"
-                    ? "bg-sky-700 text-white"
-                    : "text-slate-600 hover:bg-white"
+                    ? "bg-indigo-600 border-none text-slate-900"
+                    : "text-slate-500 hover:bg-white backdrop-blur-md"
                 }`}
               >
                 GR
@@ -176,7 +176,7 @@ export default function SiteHeader() {
               onClick={() => setMenuOpen((prev) => !prev)}
               aria-expanded={menuOpen}
               aria-label={menuOpen ? t.close[lang] : t.menu[lang]}
-              className="inline-flex h-11 w-11 items-center justify-center border border-slate-200 bg-white text-slate-700 transition hover:bg-slate-50 xl:hidden"
+              className="inline-flex h-11 w-11 items-center justify-center border border-slate-200 bg-white backdrop-blur-md text-slate-600 transition hover:bg-white hover:bg-slate-50 xl:hidden"
             >
               {menuOpen ? (
                 <svg
@@ -214,16 +214,16 @@ export default function SiteHeader() {
       </div>
 
       {menuOpen ? (
-        <div className="border-t border-slate-200 bg-white xl:hidden">
+        <div className="border-t border-slate-200 bg-white backdrop-blur-md xl:hidden">
           <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6">
-            <div className="mb-4 flex items-center border border-slate-200 bg-slate-50 sm:hidden">
+            <div className="mb-4 flex items-center border border-slate-200 bg-white hover:bg-slate-50 sm:hidden">
               <button
                 onClick={() => switchLanguage("en")}
                 aria-pressed={lang === "en"}
                 className={`w-1/2 py-2.5 text-sm font-semibold transition ${
                   lang === "en"
-                    ? "bg-sky-700 text-white"
-                    : "text-slate-600 hover:bg-white"
+                    ? "bg-indigo-600 border-none text-slate-900"
+                    : "text-slate-500 hover:bg-white backdrop-blur-md"
                 }`}
               >
                 EN
@@ -233,8 +233,8 @@ export default function SiteHeader() {
                 aria-pressed={lang === "el"}
                 className={`w-1/2 py-2.5 text-sm font-semibold transition ${
                   lang === "el"
-                    ? "bg-sky-700 text-white"
-                    : "text-slate-600 hover:bg-white"
+                    ? "bg-indigo-600 border-none text-slate-900"
+                    : "text-slate-500 hover:bg-white backdrop-blur-md"
                 }`}
               >
                 GR
@@ -248,8 +248,8 @@ export default function SiteHeader() {
                   href={item.href}
                   className={`border px-4 py-3 text-sm font-medium transition ${
                     item.active
-                      ? "border-sky-200 bg-sky-50 text-sky-800"
-                      : "border-slate-200 bg-white text-slate-700 hover:bg-slate-50"
+                      ? "border-indigo-200 bg-sky-50 text-indigo-700"
+                      : "border-slate-200 bg-white backdrop-blur-md text-slate-600 hover:bg-white hover:bg-slate-50"
                   }`}
                 >
                   {item.label}
