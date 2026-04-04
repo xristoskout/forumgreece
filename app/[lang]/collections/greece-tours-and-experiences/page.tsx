@@ -92,12 +92,12 @@ export default async function GreeceToursAndExperiencesCollectionPage({
   const featuredTours = tours.slice(0, 6);
 
   return (
-    <main className="min-h-screen bg-[#f7fbff] text-slate-900">
+    <main className="min-h-screen bg-transparent text-slate-900">
       <SiteHeader />
 
-      <section className="border-b border-slate-200 bg-white">
+      <section className="border-b border-slate-200 bg-white backdrop-blur-md">
         <div className="mx-auto max-w-7xl px-6 py-14">
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-sky-700">
+          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-indigo-700">
             {lang === "en"
               ? "Greece Tours & Experiences Hub"
               : "Hub Εκδρομών & Εμπειριών στην Ελλάδα"}
@@ -109,7 +109,7 @@ export default async function GreeceToursAndExperiencesCollectionPage({
               : "Boat trips, τοπικές εκδρομές και ξεχωριστές εμπειρίες σε όλη την Ελλάδα"}
           </h1>
 
-          <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-600">
+          <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-500">
             {lang === "en"
               ? "Use this hub to discover tours and activities that add more depth to a Greece trip, from island experiences to easy day-trip ideas."
               : "Χρησιμοποίησε αυτό το hub για να ανακαλύψεις εκδρομές και δραστηριότητες που δίνουν περισσότερο βάθος σε ένα ταξίδι στην Ελλάδα, από island experiences μέχρι εύκολες ιδέες για day trips."}
@@ -118,7 +118,7 @@ export default async function GreeceToursAndExperiencesCollectionPage({
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
               href={withLang("/collections/greek-islands", lang)}
-              className="bg-sky-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-sky-800"
+              className="bg-indigo-600 border-none px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-indigo-500"
             >
               {lang === "en"
                 ? "Explore Greek island guides →"
@@ -127,7 +127,7 @@ export default async function GreeceToursAndExperiencesCollectionPage({
 
             <Link
               href={withLang("/", lang)}
-              className="border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-50"
+              className="border border-slate-200 bg-white backdrop-blur-md px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-white hover:bg-slate-50"
             >
               {lang === "en"
                 ? "Back to homepage →"
@@ -140,7 +140,7 @@ export default async function GreeceToursAndExperiencesCollectionPage({
       <section className="mx-auto max-w-7xl px-6 py-14">
         <div className="mb-8 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-sky-700">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-indigo-700">
               {lang === "en"
                 ? "Featured Tours"
                 : "Προτεινόμενες Εκδρομές"}
@@ -153,7 +153,7 @@ export default async function GreeceToursAndExperiencesCollectionPage({
             </h2>
           </div>
 
-          <p className="max-w-3xl text-sm leading-6 text-slate-600">
+          <p className="max-w-3xl text-sm leading-6 text-slate-500">
             {lang === "en"
               ? "These pages help travelers move beyond sightseeing and add more memorable experiences to their Greece itinerary."
               : "Αυτές οι σελίδες βοηθούν τον ταξιδιώτη να πάει πέρα από το απλό sightseeing και να προσθέσει πιο δυνατές εμπειρίες στο itinerary του στην Ελλάδα."}
@@ -164,7 +164,7 @@ export default async function GreeceToursAndExperiencesCollectionPage({
           {featuredTours.map((item) => (
             <article
               key={item.slug}
-              className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+              className="overflow-hidden rounded-xl border border-slate-200 bg-white backdrop-blur-md shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
             >
               <div
                 className="h-52 bg-cover bg-center"
@@ -179,7 +179,7 @@ export default async function GreeceToursAndExperiencesCollectionPage({
                       : "Οδηγός Εμπειριών"}
                   </span>
 
-                  <span className="rounded-md bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-600">
+                  <span className="rounded-md bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-500">
                     {item.place}
                   </span>
                 </div>
@@ -188,13 +188,13 @@ export default async function GreeceToursAndExperiencesCollectionPage({
                   {item.title[lang]}
                 </h3>
 
-                <p className="mt-3 text-sm leading-7 text-slate-600">
+                <p className="mt-3 text-sm leading-7 text-slate-500">
                   {item.info[lang]}
                 </p>
 
                 <Link
                   href={withLang(`/tours/${item.slug}`, lang)}
-                  className="mt-6 inline-flex bg-cyan-700 px-4 py-3 text-sm font-semibold text-white transition hover:bg-cyan-800"
+                  className="mt-6 inline-flex bg-cyan-700 px-4 py-3 text-sm font-semibold text-slate-900 transition hover:bg-cyan-800"
                 >
                   {lang === "en"
                     ? `${item.place} tours guide →`
@@ -206,16 +206,16 @@ export default async function GreeceToursAndExperiencesCollectionPage({
         </div>
       </section>
 
-      <section className="bg-white py-14">
+      <section className="bg-white backdrop-blur-md py-14">
         <div className="mx-auto grid max-w-7xl gap-6 px-6 lg:grid-cols-3">
-          <article className="border border-slate-200 bg-slate-50 p-6">
+          <article className="border border-slate-200 bg-white hover:bg-slate-50 p-6">
             <h3 className="text-xl font-semibold text-slate-900">
               {lang === "en"
                 ? "Plan the destination first"
                 : "Οργάνωσε πρώτα τον προορισμό"}
             </h3>
 
-            <p className="mt-3 text-sm leading-7 text-slate-600">
+            <p className="mt-3 text-sm leading-7 text-slate-500">
               {lang === "en"
                 ? "Tours work better when they match the destination, the length of your trip and the kind of experience you want."
                 : "Οι εκδρομές λειτουργούν καλύτερα όταν ταιριάζουν με τον προορισμό, τη διάρκεια του ταξιδιού και το είδος εμπειρίας που θέλεις."}
@@ -223,7 +223,7 @@ export default async function GreeceToursAndExperiencesCollectionPage({
 
             <Link
               href={withLang("/collections/greek-islands", lang)}
-              className="mt-5 inline-block text-sm font-semibold text-sky-800"
+              className="mt-5 inline-block text-sm font-semibold text-indigo-700"
             >
               {lang === "en"
                 ? "Go to Greek islands hub →"
@@ -231,14 +231,14 @@ export default async function GreeceToursAndExperiencesCollectionPage({
             </Link>
           </article>
 
-          <article className="border border-slate-200 bg-slate-50 p-6">
+          <article className="border border-slate-200 bg-white hover:bg-slate-50 p-6">
             <h3 className="text-xl font-semibold text-slate-900">
               {lang === "en"
                 ? "Use travel info before booking"
                 : "Δες travel info πριν κλείσεις"}
             </h3>
 
-            <p className="mt-3 text-sm leading-7 text-slate-600">
+            <p className="mt-3 text-sm leading-7 text-slate-500">
               {lang === "en"
                 ? "Transport timing and practical travel questions can affect which activities make sense for your itinerary."
                 : "Το timing των μετακινήσεων και τα πρακτικά ταξιδιωτικά ερωτήματα επηρεάζουν το ποιες δραστηριότητες ταιριάζουν τελικά στο itinerary σου."}
@@ -246,7 +246,7 @@ export default async function GreeceToursAndExperiencesCollectionPage({
 
             <Link
               href={withLang("/travel-info", lang)}
-              className="mt-5 inline-block text-sm font-semibold text-sky-800"
+              className="mt-5 inline-block text-sm font-semibold text-indigo-700"
             >
               {lang === "en"
                 ? "Read Greece travel info →"
@@ -254,14 +254,14 @@ export default async function GreeceToursAndExperiencesCollectionPage({
             </Link>
           </article>
 
-          <article className="border border-slate-200 bg-slate-50 p-6">
+          <article className="border border-slate-200 bg-white hover:bg-slate-50 p-6">
             <h3 className="text-xl font-semibold text-slate-900">
               {lang === "en"
                 ? "Pair experiences with local food"
                 : "Συνδύασε εμπειρίες με τοπικές γεύσεις"}
             </h3>
 
-            <p className="mt-3 text-sm leading-7 text-slate-600">
+            <p className="mt-3 text-sm leading-7 text-slate-500">
               {lang === "en"
                 ? "Food and drink often shape the memory of a trip, so combine activities with destination-based cuisine ideas."
                 : "Το φαγητό και το ποτό συχνά καθορίζουν την ανάμνηση ενός ταξιδιού, οπότε συνδύασε δραστηριότητες με γαστρονομικές ιδέες ανά προορισμό."}
@@ -269,7 +269,7 @@ export default async function GreeceToursAndExperiencesCollectionPage({
 
             <Link
               href={withLang("/collections/greece-food-and-drink", lang)}
-              className="mt-5 inline-block text-sm font-semibold text-sky-800"
+              className="mt-5 inline-block text-sm font-semibold text-indigo-700"
             >
               {lang === "en"
                 ? "Explore food hub →"

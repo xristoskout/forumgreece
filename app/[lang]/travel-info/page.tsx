@@ -157,95 +157,77 @@ export default function TravelInfoHubPage() {
   ];
 
   return (
-    <main className="min-h-screen bg-[#f7fbff] text-slate-900">
+    <main className="min-h-screen bg-transparent text-slate-900">
       <SiteHeader />
 
-      <section className="relative overflow-hidden border-b border-slate-200 bg-white">
+      <section className="relative overflow-hidden min-h-screen flex items-center justify-center pt-20 border-b border-slate-200">
         <div
-          className="absolute inset-0"
+          className="absolute inset-0 z-0"
           style={{
             backgroundImage: "url('/images/hero-greece.jpg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
-            opacity: 0.2,
+            backgroundAttachment: "fixed",
           }}
         />
-        <div className="absolute inset-0 bg-white/82" />
+        <div className="absolute inset-0 z-0 bg-gradient-to-b from-black/60/60 via-slate-950/40 to-slate-50" />
 
-        <div className="relative mx-auto max-w-7xl px-6 py-16 md:py-20">
-          <div className="max-w-4xl border border-slate-200 bg-white/85 p-7 shadow-sm md:p-9">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
-              {t.heroEyebrow[lang]}
-            </p>
+        <div className="relative z-10 mx-auto max-w-7xl px-6 py-16 md:py-20 text-center flex flex-col items-center">
+          <div className="inline-flex rounded-full border border-indigo-200 bg-indigo-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-indigo-800 backdrop-blur-md mb-6 relative overflow-hidden group">
+            <span className="relative z-10">{t.heroEyebrow[lang]}</span>
+             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-indigo-500/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></div>
+          </div>
 
-            <h1 className="mt-3 text-4xl font-bold tracking-tight text-slate-900 md:text-6xl">
-              {t.heroTitle[lang]}
-            </h1>
+          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-slate-900 mb-6 drop-shadow-xl">
+            {t.heroTitle[lang]}
+          </h1>
 
-            <p className="mt-5 max-w-3xl text-base leading-8 text-slate-600 md:text-lg">
-              {t.heroText[lang]}
-            </p>
+          <p className="max-w-2xl text-lg md:text-xl leading-relaxed text-slate-600 font-light mb-12">
+            {t.heroText[lang]}
+          </p>
 
-            <div className="mt-8 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
-              <div className="border border-slate-200 bg-slate-50 px-4 py-4">
-                <div className="text-lg font-bold text-slate-900">01</div>
-                <div className="mt-2 text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
-                  {t.quick1[lang]}
+          <div className="mt-8 grid gap-4 grid-cols-2 md:grid-cols-4 max-w-4xl mx-auto">
+            {[
+               { id: "01", label: t.quick1[lang] },
+               { id: "02", label: t.quick2[lang] },
+               { id: "03", label: t.quick3[lang] },
+               { id: "04", label: t.quick4[lang] }
+            ].map((q) => (
+              <div key={q.id} className="group overflow-hidden rounded-2xl border border-slate-200 bg-white backdrop-blur-lg px-6 py-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-indigo-500/20">
+                <div className="text-3xl font-black text-slate-900/50 mb-2 group-hover:text-slate-900 transition-colors">{q.id}</div>
+                <div className="text-xs font-semibold uppercase tracking-widest text-indigo-800">
+                  {q.label}
                 </div>
               </div>
-
-              <div className="border border-slate-200 bg-slate-50 px-4 py-4">
-                <div className="text-lg font-bold text-slate-900">02</div>
-                <div className="mt-2 text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
-                  {t.quick2[lang]}
-                </div>
-              </div>
-
-              <div className="border border-slate-200 bg-slate-50 px-4 py-4">
-                <div className="text-lg font-bold text-slate-900">03</div>
-                <div className="mt-2 text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
-                  {t.quick3[lang]}
-                </div>
-              </div>
-
-              <div className="border border-slate-200 bg-slate-50 px-4 py-4">
-                <div className="text-lg font-bold text-slate-900">04</div>
-                <div className="mt-2 text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
-                  {t.quick4[lang]}
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-14">
-        <div className="mb-8 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
-              {t.topicsEyebrow[lang]}
-            </p>
-            <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900">
-              {t.topicsTitle[lang]}
-            </h2>
-          </div>
-
-          <p className="max-w-3xl text-sm leading-6 text-slate-600">
+      <section className="relative z-20 mx-auto max-w-7xl px-6 py-20 -mt-20">
+        <div className="mb-12 text-center md:text-left">
+          <p className="text-sm font-semibold uppercase tracking-widest text-indigo-700">
+            {t.topicsEyebrow[lang]}
+          </p>
+          <h2 className="mt-2 text-4xl font-bold tracking-tight text-slate-900">
+            {t.topicsTitle[lang]}
+          </h2>
+          <p className="mt-4 max-w-2xl text-slate-500 leading-relaxed md:mx-0">
             {t.topicsText[lang]}
           </p>
         </div>
 
-        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           {planningTopics.map((topic) => (
             <article
               key={topic.title.en}
-              className="border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+              className="group rounded-[2rem] border border-slate-200 bg-white/90 backdrop-blur-md p-8 shadow-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(99,102,241,0.2)]"
             >
-              <div className="text-3xl">{topic.icon}</div>
-              <h3 className="mt-4 text-xl font-semibold text-slate-900">
+              <div className="text-5xl mb-6 group-hover:scale-110 group-hover:rotate-6 transition-transform duration-500 drop-shadow-xl">{topic.icon}</div>
+              <h3 className="mb-3 text-xl font-bold text-slate-900 group-hover:text-indigo-800 transition-colors">
                 {topic.title[lang]}
               </h3>
-              <p className="mt-3 text-sm leading-7 text-slate-600">
+              <p className="text-sm leading-relaxed text-slate-500">
                 {topic.text[lang]}
               </p>
             </article>
@@ -253,50 +235,52 @@ export default function TravelInfoHubPage() {
         </div>
       </section>
 
-      <section className="bg-white py-14">
+      <section className="relative z-10 border-y border-slate-200 bg-white/80 backdrop-blur-md py-20">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="mb-8 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+          <div className="mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
+              <p className="text-sm font-semibold uppercase tracking-widest text-indigo-700">
                 {t.guidesEyebrow[lang]}
               </p>
-              <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900">
+              <h2 className="mt-2 text-4xl font-bold tracking-tight text-slate-900">
                 {t.guidesTitle[lang]}
               </h2>
             </div>
-
-            <p className="max-w-3xl text-sm leading-6 text-slate-600">
+            <p className="max-w-xl text-slate-500 leading-relaxed">
               {t.guidesText[lang]}
             </p>
           </div>
 
-          <div className="grid gap-6 lg:grid-cols-3">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {travelInfoGuides.map((item) => (
               <article
                 key={item.slug}
-                className="overflow-hidden border border-slate-200 bg-slate-50 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+                className="group relative flex flex-col overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(99,102,241,0.2)] min-h-[400px]"
               >
                 <div
-                  className="h-52 bg-cover bg-center"
+                  className="absolute inset-0 bg-cover bg-center transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
                   style={{ backgroundImage: `url('${item.image}')` }}
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-90 transition-opacity duration-500 group-hover:opacity-100" />
 
-                <div className="p-6">
-                  <div className="inline-flex border border-sky-200 bg-sky-50 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-sky-800">
-                    {lang === "en" ? "Travel Guide" : "Travel Guide"}
+                <div className="relative flex-1 p-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-500 flex flex-col justify-end">
+                  <div className="mb-4">
+                    <span className="rounded-full border border-indigo-200 bg-indigo-100 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-indigo-800 backdrop-blur-md">
+                      {lang === "en" ? "Travel Guide" : "Travel Guide"}
+                    </span>
                   </div>
 
-                  <h3 className="mt-4 text-2xl font-bold tracking-tight text-slate-900">
+                  <h3 className="mb-3 text-3xl font-bold tracking-tight text-slate-900 drop-shadow-md">
                     {item.title[lang]}
                   </h3>
 
-                  <p className="mt-4 text-sm leading-7 text-slate-600">
+                  <p className="mb-6 text-sm leading-relaxed text-slate-600 line-clamp-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 hidden group-hover:block">
                     {item.description[lang]}
                   </p>
 
                   <Link
                     href={withLang(`/travel-info/${item.slug}`)}
-                    className="mt-6 inline-flex bg-slate-900 px-4 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
+                    className="inline-flex w-full items-center justify-center rounded-xl bg-slate-50 px-4 py-3 text-sm font-semibold text-slate-900 backdrop-blur-md transition-all hover:bg-indigo-600 hover:text-slate-900"
                   >
                     {t.readGuide[lang]}
                   </Link>
@@ -307,26 +291,26 @@ export default function TravelInfoHubPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-14">
-        <div className="mb-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
+      <section className="mx-auto max-w-4xl px-6 py-20">
+        <div className="mb-12 text-center">
+          <p className="text-sm font-semibold uppercase tracking-widest text-indigo-700">
             {t.faqEyebrow[lang]}
           </p>
-          <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900">
+          <h2 className="mt-2 text-4xl font-bold tracking-tight text-slate-900">
             {t.faqTitle[lang]}
           </h2>
         </div>
 
-        <div className="grid gap-4">
+        <div className="grid gap-6">
           {faqItems.map((item) => (
             <article
               key={item.q.en}
-              className="border border-slate-200 bg-white p-6 shadow-sm"
+              className="group overflow-hidden rounded-2xl border border-slate-200 bg-white backdrop-blur-md p-8 shadow-lg transition-colors hover:bg-slate-50"
             >
-              <h3 className="text-xl font-semibold text-slate-900">
+              <h3 className="text-xl font-bold text-slate-900 group-hover:text-indigo-800 transition-colors">
                 {item.q[lang]}
               </h3>
-              <p className="mt-3 text-sm leading-7 text-slate-600">
+              <p className="mt-4 text-slate-500 leading-relaxed">
                 {item.a[lang]}
               </p>
             </article>
@@ -334,12 +318,14 @@ export default function TravelInfoHubPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-12">
+      <section className="mx-auto max-w-7xl px-6 py-12 flex justify-center pb-24">
         <Link
           href={withLang("/")}
-          className="inline-flex border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-800 transition hover:bg-slate-50"
+          className="group relative inline-flex overflow-hidden rounded-full border border-slate-300 bg-slate-50 px-8 py-4 text-sm font-semibold text-slate-900 shadow-xl transition-all hover:scale-105 hover:bg-indigo-600 hover:border-indigo-500 backdrop-blur-md"
         >
-          {t.backHome[lang]}
+          <span className="relative z-10 flex items-center gap-2">
+            ← {t.backHome[lang]}
+          </span>
         </Link>
       </section>
     </main>

@@ -29,7 +29,7 @@ export default function BusinessGallery({
 
   return (
     <>
-      <div className="mt-8 overflow-hidden rounded-[32px] bg-white shadow-xl">
+      <div className="mt-8 overflow-hidden rounded-[32px] bg-white backdrop-blur-md shadow-xl">
         <div className="relative h-[260px] w-full bg-slate-100 sm:h-[360px] lg:h-[480px]">
           <Image
             src={selectedImage}
@@ -49,7 +49,7 @@ export default function BusinessGallery({
             type="button"
             onClick={() => setSelectedImage(src)}
             aria-label={`View image ${index + 1} of ${name}`}
-            className={`overflow-hidden rounded-[20px] border bg-white shadow-sm transition ${
+            className={`overflow-hidden rounded-[20px] border bg-white backdrop-blur-md shadow-sm transition ${
               selectedImage === src
                 ? "border-sky-500 ring-2 ring-sky-200"
                 : "border-slate-200 hover:border-sky-300"

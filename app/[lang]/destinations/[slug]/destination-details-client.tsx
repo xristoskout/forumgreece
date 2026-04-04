@@ -50,7 +50,7 @@ export default function DestinationDetailsClient({
   }
 
   return (
-    <main className="min-h-screen bg-[#f7fbff] text-slate-900">
+    <main className="min-h-screen bg-transparent text-slate-900">
       <section className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 py-5">
           <Link
@@ -58,7 +58,7 @@ export default function DestinationDetailsClient({
             className="group flex shrink-0 items-center gap-3"
           >
             <div>
-              <div className="text-2xl font-bold tracking-tight text-sky-900 transition group-hover:text-sky-700">
+              <div className="text-2xl font-bold tracking-tight text-indigo-800 transition group-hover:text-indigo-700">
                 {siteBrand}
               </div>
               <div className="text-sm text-slate-500">
@@ -67,13 +67,13 @@ export default function DestinationDetailsClient({
             </div>
           </Link>
 
-          <div className="flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 p-1">
+          <div className="flex items-center gap-2 rounded-full border border-slate-200 bg-white hover:bg-slate-50 p-1">
             <button
               onClick={() => switchLanguage("en")}
               className={`rounded-full px-3 py-1.5 text-sm font-semibold transition ${
                 lang === "en"
-                  ? "bg-sky-600 text-white"
-                  : "text-slate-600"
+                  ? "bg-sky-600 text-slate-900"
+                  : "text-slate-500"
               }`}
             >
               EN
@@ -83,8 +83,8 @@ export default function DestinationDetailsClient({
               onClick={() => switchLanguage("el")}
               className={`rounded-full px-3 py-1.5 text-sm font-semibold transition ${
                 lang === "el"
-                  ? "bg-sky-600 text-white"
-                  : "text-slate-600"
+                  ? "bg-sky-600 text-slate-900"
+                  : "text-slate-500"
               }`}
             >
               GR
@@ -94,7 +94,7 @@ export default function DestinationDetailsClient({
       </section>
 
       <section
-        className="relative overflow-hidden text-white"
+        className="relative overflow-hidden text-slate-900"
         style={{
           backgroundImage: `linear-gradient(90deg, rgba(7,24,44,0.82) 0%, rgba(7,24,44,0.55) 45%, rgba(7,24,44,0.25) 100%), url('${destination.image}')`,
           backgroundSize: "cover",
@@ -111,14 +111,14 @@ export default function DestinationDetailsClient({
               {destination.name}
             </h1>
 
-            <p className="mt-5 max-w-2xl text-lg leading-8 text-white/90">
+            <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-900/90">
               {details ? details.overview[lang] : destination.overview[lang]}
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
               <Link
                 href={withLang("/#destinations")}
-                className="rounded-full bg-white px-6 py-3 font-semibold text-sky-900 shadow-sm transition hover:-translate-y-0.5"
+                className="rounded-full bg-white backdrop-blur-md px-6 py-3 font-semibold text-indigo-800 shadow-sm transition hover:-translate-y-0.5"
               >
                 {lang === "en"
                   ? "Back to destinations"
@@ -127,7 +127,7 @@ export default function DestinationDetailsClient({
 
               <Link
                 href={withLang("/")}
-                className="rounded-full border border-white/40 px-6 py-3 font-semibold text-white transition hover:bg-white/10"
+                className="rounded-full border border-white/40 px-6 py-3 font-semibold text-slate-900 transition hover:bg-slate-50"
               >
                 {lang === "en" ? "Home page" : "Αρχική"}
               </Link>
@@ -142,7 +142,7 @@ export default function DestinationDetailsClient({
               >
                 <div className="text-3xl">📍</div>
                 <h3 className="mt-4 text-xl font-semibold">{highlight}</h3>
-                <p className="mt-2 text-sm leading-6 text-white/90">
+                <p className="mt-2 text-sm leading-6 text-slate-900/90">
                   {lang === "en"
                     ? "A key reason this destination stands out for travelers."
                     : "Ένας από τους βασικούς λόγους που αυτός ο προορισμός ξεχωρίζει."}
@@ -153,21 +153,21 @@ export default function DestinationDetailsClient({
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-16">
-        <div className="grid gap-6 xl:grid-cols-[1.15fr_0.85fr]">
-          <div className="space-y-6">
-            <article className="rounded-[28px] border border-slate-200 bg-white p-8 shadow-sm">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
+      <section className="mx-auto max-w-7xl px-6 py-20">
+        <div className="grid gap-8 xl:grid-cols-[1.15fr_0.85fr]">
+          <div className="space-y-8">
+            <article className="group rounded-[2rem] border border-slate-200 bg-white/90 backdrop-blur-md p-10 shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)]">
+              <p className="text-sm font-semibold uppercase tracking-widest text-indigo-700">
                 {lang === "en"
                   ? "Destination Overview"
                   : "Περιγραφή Προορισμού"}
               </p>
 
-              <h2 className="mt-3 text-3xl font-bold tracking-tight">
+              <h2 className="mt-3 text-4xl font-extrabold tracking-tight">
                 {destination.name}
               </h2>
 
-              <p className="mt-5 text-base leading-8 text-slate-600">
+              <p className="mt-6 text-lg leading-relaxed text-slate-600">
                 {details ? details.overview[lang] : destination.overview[lang]}
               </p>
             </article>
@@ -175,55 +175,60 @@ export default function DestinationDetailsClient({
             {sections.map((section) => (
               <article
                 key={section.title.en}
-                className="rounded-[28px] border border-slate-200 bg-white p-8 shadow-sm"
+                className="group rounded-[2rem] border border-slate-200 bg-white/90 backdrop-blur-md p-10 shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)]"
               >
-                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
-                  {destination.name}
-                </p>
+                <div className="flex items-center gap-3 mb-4">
+                   <div className="w-10 h-10 rounded-xl bg-indigo-100 flex items-center justify-center text-indigo-700 shadow-inner">
+                     📍
+                   </div>
+                   <p className="text-sm font-semibold uppercase tracking-widest text-indigo-700">
+                     {destination.name}
+                   </p>
+                </div>
 
-                <h3 className="mt-3 text-2xl font-bold tracking-tight">
+                <h3 className="text-3xl font-bold tracking-tight">
                   {section.title[lang]}
                 </h3>
 
-                <p className="mt-5 text-base leading-8 text-slate-600">
+                <p className="mt-5 text-lg leading-relaxed text-slate-600">
                   {section.text[lang]}
                 </p>
               </article>
             ))}
           </div>
 
-          <aside className="space-y-6">
+          <aside className="space-y-8">
             {details && (
               <>
-                <article className="rounded-[28px] border border-slate-200 bg-gradient-to-br from-white to-cyan-50 p-8 shadow-sm">
-                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
+                <article className="group rounded-[2rem] border border-slate-200 bg-indigo-50/80 backdrop-blur-md p-8 shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)]">
+                  <p className="text-sm font-semibold uppercase tracking-widest text-indigo-700">
                     {lang === "en"
                       ? "What This Page Includes"
                       : "Τι Περιλαμβάνει Αυτή Η Σελίδα"}
                   </p>
 
-                  <div className="mt-5 grid gap-3">
+                  <div className="mt-6 grid gap-3">
                     {details.pageIncludes[lang].map((point) => (
                       <div
                         key={point}
-                        className="rounded-2xl border border-cyan-100 bg-white px-4 py-3 text-sm font-medium text-slate-700"
+                        className="rounded-2xl border border-indigo-500/20 bg-indigo-500/10 px-4 py-3 text-sm font-medium text-indigo-200 transition-colors group-hover:bg-indigo-100"
                       >
-                        ✓ {point}
+                        <span className="text-indigo-700 mr-2">✓</span> {point}
                       </div>
                     ))}
                   </div>
                 </article>
 
-                <article className="rounded-[28px] border border-slate-200 bg-white p-8 shadow-sm">
-                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
+                <article className="group rounded-[2rem] border border-slate-200 bg-white/90 backdrop-blur-md p-8 shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)]">
+                  <p className="text-sm font-semibold uppercase tracking-widest text-indigo-700">
                     {lang === "en" ? "Perfect For" : "Ιδανικό Για"}
                   </p>
 
-                  <div className="mt-5 grid gap-3">
+                  <div className="mt-6 grid gap-3">
                     {details.perfectFor[lang].map((point) => (
                       <div
                         key={point}
-                        className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-medium text-slate-700"
+                        className="rounded-2xl border border-slate-200 bg-white backdrop-blur-md px-4 py-3 text-sm font-medium text-slate-600 transition-colors group-hover:bg-slate-50"
                       >
                         ✨ {point}
                       </div>
@@ -233,45 +238,45 @@ export default function DestinationDetailsClient({
               </>
             )}
 
-            <article className="rounded-[28px] border border-slate-200 bg-gradient-to-br from-white to-cyan-50 p-8 shadow-sm">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
+            <article className="sticky top-32 group rounded-[2rem] border border-slate-200 bg-indigo-50/80 backdrop-blur-md p-8 shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)]">
+              <p className="text-sm font-semibold uppercase tracking-widest text-indigo-700">
                 {lang === "en" ? "Highlights" : "Σημεία που Ξεχωρίζουν"}
               </p>
 
-              <div className="mt-5 grid gap-3">
+              <div className="mt-6 grid gap-3">
                 {destination.highlights[lang].map((highlight) => (
                   <div
                     key={highlight}
-                    className="rounded-2xl border border-cyan-100 bg-white px-4 py-3 text-sm font-medium text-slate-700"
+                    className="flex items-center gap-3 rounded-2xl border border-indigo-500/20 bg-white backdrop-blur-md px-4 py-3 text-sm font-medium text-slate-600 transition-all hover:bg-slate-50"
                   >
-                    ✨ {highlight}
+                    <div className="text-indigo-700">📍</div> {highlight}
                   </div>
                 ))}
               </div>
             </article>
 
-            <article className="rounded-[28px] border border-slate-200 bg-white p-8 shadow-sm">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
+            <article className="group rounded-[2rem] border border-slate-200 bg-white/90 backdrop-blur-md p-8 shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)]">
+              <p className="text-sm font-semibold uppercase tracking-widest text-indigo-700">
                 {lang === "en" ? "Travel Note" : "Σημείωση Ταξιδιού"}
               </p>
 
-              <p className="mt-4 text-sm leading-7 text-slate-600">
+              <p className="mt-4 text-sm leading-relaxed text-slate-600">
                 {destination.blurb[lang]}
               </p>
 
-              <div className="mt-8 space-y-3">
+              <div className="mt-8 space-y-4">
                 <Link
                   href={withLang("/#destinations")}
-                  className="block rounded-2xl bg-sky-700 px-5 py-3 text-center font-semibold text-white transition hover:bg-sky-800"
+                  className="block rounded-xl bg-indigo-600 border-none px-5 py-4 text-center font-semibold text-slate-900 shadow-lg transition-all hover:bg-indigo-500 hover:scale-105 hover:shadow-indigo-500/25"
                 >
                   {lang === "en"
-                    ? "Explore more destinations"
-                    : "Δες περισσότερους προορισμούς"}
+                    ? "Explore more destinations →"
+                    : "Δες περισσότερους προορισμούς →"}
                 </Link>
 
                 <Link
                   href={withLang("/")}
-                  className="block rounded-2xl border border-slate-200 px-5 py-3 text-center font-semibold text-slate-700 transition hover:bg-slate-50"
+                  className="block rounded-xl border border-slate-200 px-5 py-4 text-center font-semibold text-slate-600 transition-all hover:bg-slate-50"
                 >
                   {lang === "en"
                     ? "Back to homepage"
@@ -283,7 +288,7 @@ export default function DestinationDetailsClient({
         </div>
       </section>
 
-      <footer className="border-t border-slate-200 bg-white">
+      <footer className="border-t border-slate-200 bg-white backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-slate-500 md:flex-row md:items-center md:justify-between">
           <div>
             {lang === "en"
@@ -292,20 +297,20 @@ export default function DestinationDetailsClient({
           </div>
 
           <div className="flex gap-5">
-            <Link href={withLang("/")} className="hover:text-slate-800">
+            <Link href={withLang("/")} className="hover:text-slate-900">
               {lang === "en" ? "Home" : "Αρχική"}
             </Link>
 
             <Link
               href={withLang("/#destinations")}
-              className="hover:text-slate-800"
+              className="hover:text-slate-900"
             >
               {lang === "en" ? "Destinations" : "Προορισμοί"}
             </Link>
 
             <Link
               href={withLang("/travel-to-greece")}
-              className="hover:text-slate-800"
+              className="hover:text-slate-900"
             >
               {lang === "en" ? "Travel to Greece" : "Ταξίδι στην Ελλάδα"}
             </Link>

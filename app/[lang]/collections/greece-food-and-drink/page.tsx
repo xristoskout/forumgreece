@@ -87,12 +87,12 @@ export default async function GreeceFoodAndDrinkCollectionPage({
   const featuredFood = food.slice(0, 6);
 
   return (
-    <main className="min-h-screen bg-[#f7fbff] text-slate-900">
+    <main className="min-h-screen bg-transparent text-slate-900">
       <SiteHeader />
 
-      <section className="border-b border-slate-200 bg-white">
+      <section className="border-b border-slate-200 bg-white backdrop-blur-md">
         <div className="mx-auto max-w-7xl px-6 py-14">
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-sky-700">
+          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-indigo-700">
             {lang === "en"
               ? "Greek Food & Drink Hub"
               : "Hub Ελληνικής Γαστρονομίας & Ποτού"}
@@ -104,7 +104,7 @@ export default async function GreeceFoodAndDrinkCollectionPage({
               : "Τοπικά πιάτα, γεύσεις και γαστρονομικοί οδηγοί από όλη την Ελλάδα"}
           </h1>
 
-          <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-600">
+          <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-500">
             {lang === "en"
               ? "Use this hub to discover Greek food and drink ideas that can shape the feel of a trip, from regional specialties to destination-based food inspiration."
               : "Χρησιμοποίησε αυτό το hub για να ανακαλύψεις ιδέες γύρω από το ελληνικό φαγητό και ποτό που μπορούν να αλλάξουν την αίσθηση ενός ταξιδιού, από τοπικές σπεσιαλιτέ μέχρι γαστρονομική έμπνευση ανά προορισμό."}
@@ -113,7 +113,7 @@ export default async function GreeceFoodAndDrinkCollectionPage({
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
               href={withLang("/collections/greek-islands", lang)}
-              className="bg-sky-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-sky-800"
+              className="bg-indigo-600 border-none px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-indigo-500"
             >
               {lang === "en"
                 ? "Explore Greek island guides →"
@@ -122,7 +122,7 @@ export default async function GreeceFoodAndDrinkCollectionPage({
 
             <Link
               href={withLang("/", lang)}
-              className="border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-50"
+              className="border border-slate-200 bg-white backdrop-blur-md px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-white hover:bg-slate-50"
             >
               {lang === "en"
                 ? "Back to homepage →"
@@ -135,7 +135,7 @@ export default async function GreeceFoodAndDrinkCollectionPage({
       <section className="mx-auto max-w-7xl px-6 py-14">
         <div className="mb-8 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-sky-700">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-indigo-700">
               {lang === "en"
                 ? "Featured Food Guides"
                 : "Προτεινόμενοι Γαστρονομικοί Οδηγοί"}
@@ -147,7 +147,7 @@ export default async function GreeceFoodAndDrinkCollectionPage({
             </h2>
           </div>
 
-          <p className="max-w-3xl text-sm leading-6 text-slate-600">
+          <p className="max-w-3xl text-sm leading-6 text-slate-500">
             {lang === "en"
               ? "These guides help travelers connect destination planning with local food culture, specialties and memorable meals."
               : "Αυτοί οι οδηγοί βοηθούν τον ταξιδιώτη να συνδέσει την οργάνωση του προορισμού με την τοπική γαστρονομία, τις σπεσιαλιτέ και τα πιο αξέχαστα γεύματα."}
@@ -158,7 +158,7 @@ export default async function GreeceFoodAndDrinkCollectionPage({
           {featuredFood.map((item) => (
             <article
               key={item.slug}
-              className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+              className="overflow-hidden rounded-xl border border-slate-200 bg-white backdrop-blur-md shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
             >
               <div
                 className="h-52 bg-cover bg-center"
@@ -170,7 +170,7 @@ export default async function GreeceFoodAndDrinkCollectionPage({
                   <span className="rounded-md bg-orange-50 px-3 py-1 text-xs font-semibold text-orange-800">
                     {lang === "en" ? "Food Guide" : "Γαστρονομικός Οδηγός"}
                   </span>
-                  <span className="rounded-md bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-600">
+                  <span className="rounded-md bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-500">
                     {item.place}
                   </span>
                 </div>
@@ -179,7 +179,7 @@ export default async function GreeceFoodAndDrinkCollectionPage({
                   {item.title[lang]}
                 </h3>
 
-                <p className="mt-3 text-sm leading-7 text-slate-600">
+                <p className="mt-3 text-sm leading-7 text-slate-500">
                   {item.info[lang]}
                 </p>
 
@@ -187,7 +187,7 @@ export default async function GreeceFoodAndDrinkCollectionPage({
                   {item.specialties[lang].slice(0, 3).map((specialty) => (
                     <span
                       key={specialty}
-                      className="rounded-md border border-orange-100 bg-white px-3 py-1 text-xs font-medium text-orange-900"
+                      className="rounded-md border border-orange-100 bg-white backdrop-blur-md px-3 py-1 text-xs font-medium text-orange-900"
                     >
                       {specialty}
                     </span>
@@ -196,7 +196,7 @@ export default async function GreeceFoodAndDrinkCollectionPage({
 
                 <Link
                   href={withLang(`/eat-drink/${item.slug}`, lang)}
-                  className="mt-6 inline-flex rounded-md bg-orange-500 px-4 py-3 text-sm font-semibold text-white transition hover:bg-orange-600"
+                  className="mt-6 inline-flex rounded-md bg-orange-500 px-4 py-3 text-sm font-semibold text-slate-900 transition hover:bg-orange-600"
                 >
                   {lang === "en"
                     ? `${item.place} food guide →`
@@ -208,22 +208,22 @@ export default async function GreeceFoodAndDrinkCollectionPage({
         </div>
       </section>
 
-      <section className="bg-white py-14">
+      <section className="bg-white backdrop-blur-md py-14">
         <div className="mx-auto grid max-w-7xl gap-6 px-6 lg:grid-cols-3">
-          <article className="border border-slate-200 bg-slate-50 p-6">
+          <article className="border border-slate-200 bg-white hover:bg-slate-50 p-6">
             <h3 className="text-xl font-semibold text-slate-900">
               {lang === "en"
                 ? "Use food to choose a destination"
                 : "Χρησιμοποίησε το φαγητό για να διαλέξεις προορισμό"}
             </h3>
-            <p className="mt-3 text-sm leading-7 text-slate-600">
+            <p className="mt-3 text-sm leading-7 text-slate-500">
               {lang === "en"
                 ? "Cuisine can change the whole feel of a trip, especially when choosing between islands, cities and regional experiences."
                 : "Η γαστρονομία μπορεί να αλλάξει όλη την αίσθηση ενός ταξιδιού, ειδικά όταν επιλέγεις ανάμεσα σε νησιά, πόλεις και διαφορετικές περιοχές."}
             </p>
             <Link
               href={withLang("/collections/greek-islands", lang)}
-              className="mt-5 inline-block text-sm font-semibold text-sky-800"
+              className="mt-5 inline-block text-sm font-semibold text-indigo-700"
             >
               {lang === "en"
                 ? "Go to Greek islands hub →"
@@ -231,20 +231,20 @@ export default async function GreeceFoodAndDrinkCollectionPage({
             </Link>
           </article>
 
-          <article className="border border-slate-200 bg-slate-50 p-6">
+          <article className="border border-slate-200 bg-white hover:bg-slate-50 p-6">
             <h3 className="text-xl font-semibold text-slate-900">
               {lang === "en"
                 ? "Combine local food with experiences"
                 : "Συνδύασε τοπικές γεύσεις με εμπειρίες"}
             </h3>
-            <p className="mt-3 text-sm leading-7 text-slate-600">
+            <p className="mt-3 text-sm leading-7 text-slate-500">
               {lang === "en"
                 ? "Boat trips, local tours and destination activities become more memorable when they connect with the food culture of the place."
                 : "Τα boat trips, οι τοπικές εκδρομές και οι δραστηριότητες γίνονται πιο αξέχαστα όταν συνδέονται με τη γαστρονομική ταυτότητα του τόπου."}
             </p>
             <Link
               href={withLang("/collections/greece-tours-and-experiences", lang)}
-              className="mt-5 inline-block text-sm font-semibold text-sky-800"
+              className="mt-5 inline-block text-sm font-semibold text-indigo-700"
             >
               {lang === "en"
                 ? "Explore tours hub →"
@@ -252,20 +252,20 @@ export default async function GreeceFoodAndDrinkCollectionPage({
             </Link>
           </article>
 
-          <article className="border border-slate-200 bg-slate-50 p-6">
+          <article className="border border-slate-200 bg-white hover:bg-slate-50 p-6">
             <h3 className="text-xl font-semibold text-slate-900">
               {lang === "en"
                 ? "Plan the practical side too"
                 : "Οργάνωσε και την πρακτική πλευρά"}
             </h3>
-            <p className="mt-3 text-sm leading-7 text-slate-600">
+            <p className="mt-3 text-sm leading-7 text-slate-500">
               {lang === "en"
                 ? "The best food ideas work better when transport, timing and everyday travel details are already clear."
                 : "Οι καλύτερες γαστρονομικές ιδέες λειτουργούν ακόμη καλύτερα όταν έχουν ήδη ξεκαθαρίσει οι μετακινήσεις, το timing και οι πρακτικές λεπτομέρειες του ταξιδιού."}
             </p>
             <Link
               href={withLang("/collections/greece-travel-planning", lang)}
-              className="mt-5 inline-block text-sm font-semibold text-sky-800"
+              className="mt-5 inline-block text-sm font-semibold text-indigo-700"
             >
               {lang === "en"
                 ? "Go to travel planning hub →"

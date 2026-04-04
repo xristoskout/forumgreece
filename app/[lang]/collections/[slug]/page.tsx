@@ -107,10 +107,10 @@ export default async function CollectionHubPage({ params }: Props) {
   }
 
   return (
-    <main className="min-h-screen bg-[#f7fbff] text-slate-900">
+    <main className="min-h-screen bg-transparent text-slate-900">
       <SiteHeader />
 
-      <section className="border-b border-slate-200 bg-white">
+      <section className="border-b border-slate-200 bg-white backdrop-blur-md">
         <div className="mx-auto max-w-7xl px-6 py-4 text-sm text-slate-500">
           <nav className="flex flex-wrap items-center gap-2">
             <Link href={withLang("/", lang)} className="hover:text-slate-900">
@@ -124,7 +124,7 @@ export default async function CollectionHubPage({ params }: Props) {
         </div>
       </section>
 
-      <section className="relative overflow-hidden bg-white">
+      <section className="relative overflow-hidden bg-white backdrop-blur-md">
         <div
           className="absolute inset-0 opacity-10"
           style={{
@@ -134,7 +134,7 @@ export default async function CollectionHubPage({ params }: Props) {
           }}
         />
         <div className="relative mx-auto max-w-7xl px-6 py-16 md:py-20">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700">
             {hub.eyebrow[lang]}
           </p>
 
@@ -142,14 +142,14 @@ export default async function CollectionHubPage({ params }: Props) {
             {hub.title[lang]}
           </h1>
 
-          <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-700">
+          <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-600">
             {hub.description[lang]}
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
               href={withLang("/travel-info", lang)}
-              className="bg-sky-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-sky-800"
+              className="bg-indigo-600 border-none px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-indigo-500"
             >
               {lang === "en"
                 ? "Read Greece travel planning guides →"
@@ -158,7 +158,7 @@ export default async function CollectionHubPage({ params }: Props) {
 
             <Link
               href={withLang("/", lang)}
-              className="border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-50"
+              className="border border-slate-200 bg-white backdrop-blur-md px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-white hover:bg-slate-50"
             >
               {lang === "en" ? "Back to homepage →" : "Επιστροφή στην αρχική →"}
             </Link>
@@ -168,16 +168,16 @@ export default async function CollectionHubPage({ params }: Props) {
 
       <section className="mx-auto max-w-7xl px-6 py-14">
         <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
-          <div className="border border-slate-200 bg-white p-8 shadow-sm">
+          <div className="border border-slate-200 bg-white backdrop-blur-md p-8 shadow-sm">
             <h2 className="text-2xl font-bold tracking-tight text-slate-900">
               {lang === "en" ? "Why this hub matters" : "Γιατί αξίζει αυτό το hub"}
             </h2>
-            <p className="mt-4 text-base leading-8 text-slate-700">
+            <p className="mt-4 text-base leading-8 text-slate-600">
               {hub.intro[lang]}
             </p>
           </div>
 
-          <aside className="border border-slate-200 bg-slate-50 p-8">
+          <aside className="border border-slate-200 bg-white hover:bg-slate-50 p-8">
             <h2 className="text-2xl font-bold tracking-tight text-slate-900">
               {lang === "en" ? "On this page" : "Σε αυτή τη σελίδα"}
             </h2>
@@ -187,7 +187,7 @@ export default async function CollectionHubPage({ params }: Props) {
                 <a
                   key={section.id}
                   href={`#${section.id}`}
-                  className="block border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-700 transition hover:border-sky-200 hover:text-sky-900"
+                  className="block border border-slate-200 bg-white backdrop-blur-md px-4 py-3 text-sm font-medium text-slate-600 transition hover:border-indigo-200 hover:text-indigo-800"
                 >
                   {section.title[lang]}
                 </a>
@@ -203,12 +203,12 @@ export default async function CollectionHubPage({ params }: Props) {
             <article
               key={section.id}
               id={section.id}
-              className="scroll-mt-28 border border-slate-200 bg-white p-8 shadow-sm"
+              className="scroll-mt-28 border border-slate-200 bg-white backdrop-blur-md p-8 shadow-sm"
             >
               <h2 className="text-2xl font-bold tracking-tight text-slate-900">
                 {section.title[lang]}
               </h2>
-              <p className="mt-4 max-w-4xl text-base leading-8 text-slate-700">
+              <p className="mt-4 max-w-4xl text-base leading-8 text-slate-600">
                 {section.body[lang]}
               </p>
             </article>
@@ -219,7 +219,7 @@ export default async function CollectionHubPage({ params }: Props) {
       <section className="mx-auto max-w-7xl px-6 py-14">
         <div className="mb-8 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700">
               {lang === "en" ? "Related pages" : "Σχετικές σελίδες"}
             </p>
             <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900">
@@ -229,7 +229,7 @@ export default async function CollectionHubPage({ params }: Props) {
             </h2>
           </div>
 
-          <p className="max-w-3xl text-sm leading-6 text-slate-600">
+          <p className="max-w-3xl text-sm leading-6 text-slate-500">
             {lang === "en"
               ? "Use these pages to keep moving from broad inspiration into practical trip planning."
               : "Χρησιμοποίησε αυτές τις σελίδες για να περάσεις από τη γενική έμπνευση στην πρακτική οργάνωση του ταξιδιού σου."}
@@ -241,15 +241,15 @@ export default async function CollectionHubPage({ params }: Props) {
             <Link
               key={`${card.href}-${card.title.en}`}
               href={withLang(card.href, lang)}
-              className="group border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-sky-200 hover:shadow-lg"
+              className="group border border-slate-200 bg-white backdrop-blur-md p-6 shadow-sm transition hover:-translate-y-1 hover:border-indigo-200 hover:shadow-lg"
             >
               <h3 className="text-xl font-semibold text-slate-900">
                 {card.title[lang]}
               </h3>
-              <p className="mt-3 text-sm leading-7 text-slate-600">
+              <p className="mt-3 text-sm leading-7 text-slate-500">
                 {card.description[lang]}
               </p>
-              <span className="mt-5 inline-block text-sm font-semibold text-sky-800 transition group-hover:text-sky-950">
+              <span className="mt-5 inline-block text-sm font-semibold text-indigo-700 transition group-hover:text-indigo-200">
                 {lang === "en" ? "Open guide →" : "Άνοιγμα οδηγού →"}
               </span>
             </Link>

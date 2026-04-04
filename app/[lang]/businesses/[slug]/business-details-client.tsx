@@ -23,23 +23,24 @@ function ListCard({ title, items, icon = "•" }: ListCardProps) {
   if (!items || items.length === 0) return null;
 
   return (
-    <section className="rounded-[30px] border border-slate-200 bg-white p-8 shadow-[0_12px_40px_rgba(15,23,42,0.08)]">
-      <div className="flex items-center gap-3">
-        <div className="grid h-10 w-10 place-items-center rounded-2xl bg-sky-100 font-bold text-sky-700">
+    <section className="group rounded-[2rem] border border-slate-200 bg-white/90 backdrop-blur-md p-10 shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)]">
+      <div className="flex items-center gap-4">
+        <div className="grid h-12 w-12 place-items-center rounded-2xl bg-indigo-100 text-indigo-700 font-bold text-xl shadow-inner group-hover:scale-110 transition-transform duration-500">
           {icon}
         </div>
 
-        <h2 className="text-2xl font-bold tracking-tight text-slate-900">
+        <h2 className="text-3xl font-bold tracking-tight text-slate-900 group-hover:text-indigo-800 transition-colors">
           {title}
         </h2>
       </div>
 
-      <div className="mt-6 grid gap-3">
+      <div className="mt-8 grid gap-3">
         {items.map((item, index) => (
           <div
             key={`${title}-${item}-${index}`}
-            className="rounded-2xl border border-slate-100 bg-slate-50 px-5 py-4 text-sm leading-7 text-slate-700"
+            className="flex items-start gap-4 rounded-2xl border border-slate-200 bg-white hover:bg-slate-50 px-6 py-4 text-sm leading-relaxed text-slate-600 transition-all duration-300"
           >
+            <span className="text-indigo-700 mt-0.5">•</span>
             {item}
           </div>
         ))}
@@ -159,22 +160,22 @@ export default function BusinessDetailsClient({
   };
 
   return (
-    <main className="min-h-screen bg-[linear-gradient(180deg,#f7fbff_0%,#eef7ff_100%)] text-slate-900">
+    <main className="min-h-screen bg-transparent text-slate-900">
       <section className="mx-auto max-w-7xl px-6 py-10">
         <div className="flex flex-wrap items-center justify-between gap-4">
           <Link
             href={withLang(`/tours/${business.landingSlug}`)}
-            className="inline-flex items-center rounded-full border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-slate-700 transition hover:border-sky-300 hover:text-sky-800"
+            className="inline-flex items-center rounded-full border border-slate-200 bg-white/90 backdrop-blur-md px-6 py-2.5 text-sm font-semibold text-slate-600 transition hover:border-indigo-400 hover:text-indigo-800 shadow-md"
           >
-            {t.backToTours}
+            ← {t.backToTours}
           </Link>
 
-          <div className="flex items-center gap-2 rounded-full border border-slate-200 bg-white p-1 shadow-sm">
+          <div className="flex items-center gap-2 rounded-full border border-slate-200 bg-white/90 backdrop-blur-md p-1 shadow-md">
             <button
               type="button"
               onClick={() => switchLanguage("en")}
-              className={`rounded-full px-3 py-1.5 text-sm font-semibold transition ${
-                lang === "en" ? "bg-sky-600 text-white" : "text-slate-600"
+              className={`rounded-full px-4 py-1.5 text-sm font-semibold transition ${
+                lang === "en" ? "bg-indigo-600 text-slate-900" : "text-slate-500 hover:text-slate-900"
               }`}
             >
               EN
@@ -183,8 +184,8 @@ export default function BusinessDetailsClient({
             <button
               type="button"
               onClick={() => switchLanguage("el")}
-              className={`rounded-full px-3 py-1.5 text-sm font-semibold transition ${
-                lang === "el" ? "bg-sky-600 text-white" : "text-slate-600"
+              className={`rounded-full px-4 py-1.5 text-sm font-semibold transition ${
+                lang === "el" ? "bg-indigo-600 text-slate-900" : "text-slate-500 hover:text-slate-900"
               }`}
             >
               GR
@@ -192,8 +193,8 @@ export default function BusinessDetailsClient({
           </div>
         </div>
 
-        <section className="relative mt-6 overflow-hidden rounded-[36px] text-white shadow-[0_20px_70px_rgba(2,132,199,0.22)]">
-          <div className="absolute inset-0">
+        <section className="relative mt-8 overflow-hidden rounded-[3rem] text-slate-900 shadow-xl border border-slate-200 group">
+          <div className="absolute inset-0 transition-all duration-700 group-hover:scale-110 group-hover:brightness-110">
             <Image
               src={business.image}
               alt={business.name}
@@ -204,14 +205,12 @@ export default function BusinessDetailsClient({
             />
           </div>
 
-          <div className="absolute inset-0 bg-[#03a9f4]/8" />
-<div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(3,169,244,0.08),rgba(129,212,250,0.03),rgba(2,136,209,0.04))]" />
-<div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.08),transparent_30%),radial-gradient(circle_at_bottom_left,rgba(255,255,255,0.04),transparent_35%)]" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-slate-50/20 opacity-90" />
 
-          <div className="relative grid gap-8 px-8 py-10 lg:grid-cols-[1.1fr_0.9fr] lg:px-10 lg:py-12">
+          <div className="relative grid gap-8 px-8 py-12 lg:grid-cols-[1.1fr_0.9fr] lg:px-12 lg:py-16">
             <div>
               <div className="flex flex-wrap items-center gap-3">
-                <span className="inline-flex rounded-full bg-white/12 px-4 py-1.5 text-sm font-semibold backdrop-blur">
+                <span className="inline-flex rounded-full border border-indigo-200 bg-indigo-100 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-indigo-800 backdrop-blur-md">
                   {business.category[lang]}
                 </span>
 
@@ -226,11 +225,11 @@ export default function BusinessDetailsClient({
                 {business.name}
               </h1>
 
-              <p className="mt-4 inline-flex rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm font-medium text-white/95 backdrop-blur">
+              <p className="mt-4 inline-flex rounded-full border border-white/15 bg-slate-50 px-4 py-2 text-sm font-medium text-slate-900/95 backdrop-blur">
                 {business.place}
               </p>
 
-              <p className="mt-6 max-w-3xl text-base leading-8 text-white/90">
+              <p className="mt-6 max-w-3xl text-base leading-8 text-slate-900/90">
                 {business.info[lang]}
               </p>
 
@@ -238,20 +237,20 @@ export default function BusinessDetailsClient({
                 {business.highlights[lang].map((item, index) => (
                   <span
                     key={`hero-highlight-${item}-${index}`}
-                    className="rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm font-medium text-white/95 backdrop-blur"
+                    className="rounded-full border border-white/15 bg-slate-50 px-4 py-2 text-sm font-medium text-slate-900/95 backdrop-blur"
                   >
                     {item}
                   </span>
                 ))}
               </div>
 
-              <p className="mt-8 max-w-2xl text-sm leading-7 text-white/80">
+              <p className="mt-8 max-w-2xl text-sm leading-7 text-slate-900/80">
                 {t.premiumNote}
               </p>
             </div>
 
-            <div className="rounded-[30px] border border-white/12 bg-white/10 p-6 backdrop-blur-xl">
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-100">
+            <div className="rounded-[2.5rem] border border-slate-200 bg-white/90 p-8 backdrop-blur-md shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-indigo-500/10">
+              <p className="text-sm font-bold uppercase tracking-widest text-indigo-700">
                 {t.quickAccess}
               </p>
 
@@ -259,7 +258,7 @@ export default function BusinessDetailsClient({
                 {business.phone && (
                   <a
                     href={`tel:${business.phone}`}
-                    className="rounded-2xl border border-white/10 bg-white/10 px-4 py-3 text-sm font-medium text-white transition hover:bg-white/15"
+                    className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-medium text-slate-900 transition hover:bg-white/15"
                   >
                     {business.phone}
                   </a>
@@ -268,7 +267,7 @@ export default function BusinessDetailsClient({
                 {business.email && (
                   <a
                     href={`mailto:${business.email}`}
-                    className="rounded-2xl border border-white/10 bg-white/10 px-4 py-3 text-sm font-medium text-white transition hover:bg-white/15"
+                    className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-medium text-slate-900 transition hover:bg-white/15"
                   >
                     {business.email}
                   </a>
@@ -279,7 +278,7 @@ export default function BusinessDetailsClient({
                     href={business.youtube}
                     target="_blank"
                     rel="noreferrer"
-                    className="rounded-2xl border border-white/10 bg-white/10 px-4 py-3 text-sm font-medium text-white transition hover:bg-white/15"
+                    className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-medium text-slate-900 transition hover:bg-white/15"
                   >
                     {t.youtube}
                   </a>
@@ -290,14 +289,14 @@ export default function BusinessDetailsClient({
                     href={mapLink}
                     target="_blank"
                     rel="noreferrer"
-                    className="rounded-2xl bg-white px-4 py-3 text-center text-sm font-semibold text-sky-900 transition hover:bg-sky-50"
+                    className="rounded-2xl bg-white backdrop-blur-md px-4 py-3 text-center text-sm font-semibold text-indigo-800 transition hover:bg-sky-50"
                   >
                     {t.openMap}
                   </a>
                 )}
               </div>
 
-              <div className="mt-6 rounded-2xl border border-white/10 bg-white/8 p-5">
+              <div className="mt-6 rounded-2xl border border-slate-200 bg-white/8 p-5">
                 <p className="text-sm font-semibold text-cyan-100">
                   {t.perfectFor}
                 </p>
@@ -306,7 +305,7 @@ export default function BusinessDetailsClient({
                   {business.perfectFor[lang].map((item, index) => (
                     <div
                       key={`perfect-for-${item}-${index}`}
-                      className="rounded-2xl bg-white/10 px-4 py-3 text-sm leading-6 text-white/90"
+                      className="rounded-2xl bg-slate-50 px-4 py-3 text-sm leading-6 text-slate-900/90"
                     >
                       {item}
                     </div>
@@ -334,18 +333,18 @@ export default function BusinessDetailsClient({
         <section className="mt-10 grid gap-6 xl:grid-cols-[1.12fr_0.88fr]">
           <div className="space-y-6">
             {business.description?.[lang] && (
-              <section className="rounded-[30px] border border-slate-200 bg-white p-8 shadow-[0_12px_40px_rgba(15,23,42,0.08)]">
-                <div className="flex items-center gap-3">
-                  <div className="grid h-10 w-10 place-items-center rounded-2xl bg-sky-100 font-bold text-sky-700">
+              <section className="group rounded-[2rem] border border-slate-200 bg-white/90 backdrop-blur-md p-10 shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)]">
+                <div className="flex items-center gap-4">
+                  <div className="grid h-12 w-12 place-items-center rounded-2xl bg-indigo-100 text-indigo-700 font-bold text-xl shadow-inner group-hover:scale-110 transition-transform duration-500">
                     ≈
                   </div>
 
-                  <h2 className="text-2xl font-bold tracking-tight text-slate-900">
+                  <h2 className="text-3xl font-bold tracking-tight text-slate-900 group-hover:text-indigo-800 transition-colors">
                     {t.about}
                   </h2>
                 </div>
 
-                <p className="mt-6 text-base leading-8 text-slate-700">
+                <p className="mt-8 text-lg leading-relaxed text-slate-600">
                   {business.description[lang]}
                 </p>
               </section>
@@ -358,18 +357,18 @@ export default function BusinessDetailsClient({
             />
 
             {business.story?.[lang] && (
-              <section className="rounded-[30px] border border-slate-200 bg-white p-8 shadow-[0_12px_40px_rgba(15,23,42,0.08)]">
-                <div className="flex items-center gap-3">
-                  <div className="grid h-10 w-10 place-items-center rounded-2xl bg-sky-100 font-bold text-sky-700">
+              <section className="group rounded-[2rem] border border-slate-200 bg-white/90 backdrop-blur-md p-10 shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)]">
+                <div className="flex items-center gap-4">
+                  <div className="grid h-12 w-12 place-items-center rounded-2xl bg-indigo-100 text-indigo-700 font-bold text-xl shadow-inner group-hover:scale-110 transition-transform duration-500">
                     ✦
                   </div>
 
-                  <h2 className="text-2xl font-bold tracking-tight text-slate-900">
+                  <h2 className="text-3xl font-bold tracking-tight text-slate-900 group-hover:text-indigo-800 transition-colors">
                     {t.story}
                   </h2>
                 </div>
 
-                <p className="mt-6 text-base leading-8 text-slate-700">
+                <p className="mt-8 text-lg leading-relaxed text-slate-600">
                   {business.story[lang]}
                 </p>
               </section>
@@ -392,13 +391,13 @@ export default function BusinessDetailsClient({
             />
 
             {mapSrc && (
-              <section className="overflow-hidden rounded-[30px] border border-slate-200 bg-white shadow-[0_12px_40px_rgba(15,23,42,0.08)]">
-                <div className="border-b border-slate-200 px-8 py-6">
-                  <h2 className="text-2xl font-bold tracking-tight text-slate-900">
+              <section className="group overflow-hidden rounded-[2.5rem] border border-slate-200 bg-white/90 backdrop-blur-md shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)]">
+                <div className="border-b border-slate-200 p-8">
+                  <h2 className="text-2xl font-bold tracking-tight text-slate-900 group-hover:text-indigo-800 transition-colors">
                     {t.location}
                   </h2>
 
-                  <p className="mt-2 text-sm leading-6 text-slate-600">
+                  <p className="mt-2 text-sm leading-relaxed text-slate-500">
                     {business.place}
                   </p>
                 </div>
@@ -410,18 +409,18 @@ export default function BusinessDetailsClient({
                     height="100%"
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    className="absolute inset-0 h-full w-full border-0"
+                    className="absolute inset-0 h-full w-full border-0 filter opacity-80 mix-blend-luminosity hover:mix-blend-normal hover:opacity-100 transition-all duration-500"
                     title={`${business.name} map`}
                   />
                 </div>
 
                 {mapLink && (
-                  <div className="px-8 py-6">
+                  <div className="p-8">
                     <a
                       href={mapLink}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex rounded-2xl bg-sky-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-sky-800"
+                      className="inline-flex rounded-xl bg-indigo-600 border-none px-6 py-4 text-sm font-semibold text-slate-900 transition-all shadow-md hover:bg-indigo-500 hover:scale-105"
                     >
                       {t.openMap}
                     </a>
@@ -431,14 +430,14 @@ export default function BusinessDetailsClient({
             )}
 
             {videoEmbedUrl && (
-              <section className="overflow-hidden rounded-[30px] border border-slate-200 bg-white shadow-[0_12px_40px_rgba(15,23,42,0.08)]">
-                <div className="border-b border-slate-200 px-8 py-6">
-                  <h2 className="text-2xl font-bold tracking-tight text-slate-900">
+              <section className="group overflow-hidden rounded-[2.5rem] border border-slate-200 bg-white/90 backdrop-blur-md shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)]">
+                <div className="border-b border-slate-200 p-8">
+                  <h2 className="text-2xl font-bold tracking-tight text-slate-900 group-hover:text-indigo-800 transition-colors">
                     {t.video}
                   </h2>
                 </div>
 
-                <div className="aspect-video w-full bg-slate-100">
+                <div className="aspect-video w-full bg-[#f4f7fb]">
                   <iframe
                     src={videoEmbedUrl}
                     title={`${business.name} video`}
@@ -449,12 +448,12 @@ export default function BusinessDetailsClient({
                 </div>
 
                 {business.youtube && (
-                  <div className="px-8 py-6">
+                  <div className="p-8">
                     <a
                       href={business.youtube}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex rounded-2xl border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-800 transition hover:bg-slate-50"
+                      className="inline-flex rounded-xl border border-slate-200 bg-white backdrop-blur-md px-6 py-4 text-sm font-semibold text-slate-900 transition-all hover:bg-slate-50"
                     >
                       {t.youtube}
                     </a>
@@ -464,16 +463,16 @@ export default function BusinessDetailsClient({
             )}
 
             {hasContact && (
-              <section className="rounded-[30px] border border-slate-200 bg-white p-8 shadow-[0_12px_40px_rgba(15,23,42,0.08)]">
-                <h2 className="text-2xl font-bold tracking-tight text-slate-900">
+              <section className="group rounded-[2.5rem] border border-slate-200 bg-white/90 backdrop-blur-md p-10 shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)]">
+                <h2 className="text-2xl font-bold tracking-tight text-slate-900 group-hover:text-indigo-800 transition-colors">
                   {t.contact}
                 </h2>
 
-                <div className="mt-6 grid gap-3">
+                <div className="mt-8 grid gap-4">
                   {business.phone && (
                     <a
                       href={`tel:${business.phone}`}
-                      className="rounded-2xl bg-slate-50 px-5 py-4 text-sm font-medium text-slate-700 transition hover:bg-slate-100"
+                      className="rounded-2xl border border-slate-200 bg-white hover:bg-slate-50 px-6 py-4 text-sm font-medium text-slate-600 transition-all hover:-translate-y-0.5 hover:shadow-lg"
                     >
                       {business.phone}
                     </a>
@@ -482,7 +481,7 @@ export default function BusinessDetailsClient({
                   {business.email && (
                     <a
                       href={`mailto:${business.email}`}
-                      className="rounded-2xl bg-slate-50 px-5 py-4 text-sm font-medium text-slate-700 transition hover:bg-slate-100"
+                      className="rounded-2xl border border-slate-200 bg-white hover:bg-slate-50 px-6 py-4 text-sm font-medium text-slate-600 transition-all hover:-translate-y-0.5 hover:shadow-lg"
                     >
                       {business.email}
                     </a>
@@ -493,7 +492,7 @@ export default function BusinessDetailsClient({
                       href={business.youtube}
                       target="_blank"
                       rel="noreferrer"
-                      className="rounded-2xl bg-slate-50 px-5 py-4 text-sm font-medium text-slate-700 transition hover:bg-slate-100"
+                      className="rounded-2xl border border-slate-200 bg-white hover:bg-slate-50 px-6 py-4 text-sm font-medium text-slate-600 transition-all hover:-translate-y-0.5 hover:shadow-lg"
                     >
                       {t.youtube}
                     </a>
