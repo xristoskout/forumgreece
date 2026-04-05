@@ -270,11 +270,11 @@ export default function TravelInfoHubPage() {
                     </span>
                   </div>
 
-                  <h3 className="mb-3 text-3xl font-bold tracking-tight text-slate-900 drop-shadow-md">
+                  <h3 className="mb-3 text-3xl font-bold tracking-tight text-white drop-shadow-md">
                     {item.title[lang]}
                   </h3>
 
-                  <p className="mb-6 text-sm leading-relaxed text-slate-600 line-clamp-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 hidden group-hover:block">
+                  <p className="mb-6 text-sm leading-relaxed text-white/90 line-clamp-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 hidden group-hover:block">
                     {item.description[lang]}
                   </p>
 

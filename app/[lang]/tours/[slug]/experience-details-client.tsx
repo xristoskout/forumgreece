@@ -196,18 +196,24 @@ export default function ExperienceDetailsClient({
           </div>
 
           <div className="grid gap-4 sm:grid-cols-2">
-            {landing.highlights[lang].map((highlight) => (
-              <article
-                key={highlight}
-                className="rounded-3xl bg-white/16 p-6 shadow-lg backdrop-blur-md"
-              >
-                <div className="text-3xl">⚓</div>
-                <h3 className="mt-4 text-xl font-semibold">{highlight}</h3>
-                <p className="mt-2 text-sm leading-6 text-white/90">
-                  {t.highlightReason}
-                </p>
-              </article>
-            ))}
+            {landing.highlights[lang].map((highlight, index) => {
+              const emojis = ["📍", "🌟", "⚓", "✨"];
+              const emoji = emojis[index % emojis.length];
+              const reason = landing.highlightReasons ? landing.highlightReasons[lang][index] : t.highlightReason;
+              
+              return (
+                <article
+                  key={highlight}
+                  className="rounded-3xl bg-white/16 p-6 shadow-lg backdrop-blur-md"
+                >
+                  <div className="text-3xl">{emoji}</div>
+                  <h3 className="mt-4 text-xl font-semibold">{highlight}</h3>
+                  <p className="mt-2 text-sm leading-6 text-white/90">
+                    {reason}
+                  </p>
+                </article>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -325,14 +331,20 @@ export default function ExperienceDetailsClient({
               </p>
 
               <div className="mt-5 grid gap-3">
-                {landing.highlights[lang].map((highlight) => (
-                  <div
-                    key={highlight}
-                    className="rounded-2xl border border-cyan-100 bg-white backdrop-blur-md px-4 py-3 text-sm font-medium text-slate-600"
-                  >
-                    ⚓ {highlight}
-                  </div>
-                ))}
+                {landing.highlights[lang].map((highlight, index) => {
+                  const emojis = ["📍", "🌟", "⚓", "✨"];
+                  const emoji = emojis[index % emojis.length];
+
+                  return (
+                    <div
+                      key={highlight}
+                      className="rounded-2xl border border-cyan-100 bg-white backdrop-blur-md px-4 py-3 text-sm font-medium text-slate-600 flex items-center gap-2"
+                    >
+                      <span className="text-lg">{emoji}</span>
+                      <span>{highlight}</span>
+                    </div>
+                  );
+                })}
               </div>
             </article>
 

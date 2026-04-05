@@ -620,7 +620,7 @@ export default function HomePageClient({
               {copy.heroTitle}
             </h1>
 
-            <p className="max-w-2xl text-lg md:text-xl leading-relaxed text-slate-600 font-light drop-shadow-lg mb-10">
+            <p className="max-w-2xl text-lg md:text-xl leading-relaxed text-white/95 font-light drop-shadow-lg mb-10">
               {copy.heroText}
             </p>
 
@@ -966,17 +966,6 @@ export default function HomePageClient({
               </p>
             </div>
 
-            <div className="rounded-xl border border-amber-200 bg-gradient-to-br from-amber-50 to-orange-50 p-6 shadow-sm lg:max-w-sm">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-amber-700">
-                Sponsored
-              </p>
-              <h3 className="mt-2 text-xl font-bold text-slate-900">
-                {copy.hotelsPromoTitle}
-              </h3>
-              <button className="mt-4 rounded-md bg-amber-500 px-5 py-3 font-semibold text-slate-900 transition hover:bg-amber-600">
-                {copy.ctaAd}
-              </button>
-            </div>
           </div>
 
           <div className="grid gap-6 lg:grid-cols-3">
@@ -1300,20 +1289,42 @@ export default function HomePageClient({
         </div>
       </section>
 
+      <section className="bg-slate-900 py-20 text-center border-t border-slate-800">
+        <div className="mx-auto max-w-4xl px-6 relative z-10">
+          <span className="inline-flex rounded-full border border-indigo-500/30 bg-indigo-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-indigo-300 mb-6 backdrop-blur-md">
+            Sponsored / Promote
+          </span>
+          <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-6">
+            {lang === "en" ? "Promote your business today" : "Προώθησε την επιχείρησή σου σήμερα"}
+          </h2>
+          <p className="mt-4 mb-10 text-lg md:text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto font-light">
+            {lang === "en" ? "Reach thousands of travelers planning their trip to Greece. Get personalized exposure for your hotel, restaurant or travel service." : "Προσέγγισε χιλιάδες ταξιδιώτες που οργανώνουν το ταξίδι τους στην Ελλάδα. Απόκτησε προσωποποιημένη προβολή για την επιχείρησή σου."}
+          </p>
+          <div className="flex justify-center gap-4">
+            <Link
+              href={withLang("/promotion")}
+              className="inline-flex items-center justify-center rounded-full bg-indigo-500 px-8 py-4 text-base font-bold text-white shadow-[0_0_20px_rgba(99,102,241,0.4)] transition-all hover:scale-105 hover:bg-indigo-400"
+            >
+              {lang === "en" ? "View our promotion services →" : "Δες τις υπηρεσίες προβολής →"}
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <footer className="border-t border-slate-200 bg-white backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-slate-500 md:flex-row md:items-center md:justify-between">
           <div>{copy.footerText}</div>
 
           <div className="flex gap-5">
-            <a href="#" className="hover:text-slate-900">
+            <Link href={withLang("/about")} className="hover:text-slate-900">
               {copy.footerAbout}
-            </a>
-            <a href="#" className="hover:text-slate-900">
+            </Link>
+            <Link href={withLang("/contact")} className="hover:text-slate-900">
               {copy.footerContact}
-            </a>
-            <a href="#" className="hover:text-slate-900">
+            </Link>
+            <Link href={withLang("/privacy")} className="hover:text-slate-900">
               {copy.footerPrivacy}
-            </a>
+            </Link>
           </div>
         </div>
       </footer>

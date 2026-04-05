@@ -6,6 +6,7 @@ export type ExperienceLanding = {
   description: Localized;
   overview: Localized;
   highlights: LocalizedList;
+  highlightReasons: LocalizedList;
 };
 
 export type ExperienceBusiness = {
@@ -24,6 +25,7 @@ export type ExperienceBusiness = {
   ctaLabel: Localized;
   phone?: string;
   email?: string;
+  website?: string;
   youtube?: string;
   description?: Localized;
   services?: LocalizedList;
@@ -38,29 +40,43 @@ export const experienceLandings: ExperienceLanding[] = [
   {
     slug: "kefalonia-tours",
     title: {
-      en: "Boat Trips & Local Experiences in Kefalonia",
-      el: "Boat Trips & Τοπικές Εμπειρίες στην Κεφαλονιά",
+      en: "Local Experiences & Businesses in Kefalonia",
+      el: "Τοπικές Εμπειρίες & Επιχειρήσεις στην Κεφαλονιά",
     },
     description: {
-      en: "Discover selected local businesses in Kefalonia, from boat trips and boat rentals to sea experiences that add something special to your island holiday.",
-      el: "Ανακάλυψε επιλεγμένες τοπικές επιχειρήσεις στην Κεφαλονιά, από boat trips και ενοικιάσεις σκαφών μέχρι θαλάσσιες εμπειρίες που προσθέτουν κάτι ξεχωριστό στις διακοπές σου.",
+      en: "Discover selected local businesses in Kefalonia, from boat trips and organized tours to taxis and island services that enrich your stay.",
+      el: "Ανακάλυψε επιλεγμένες τοπικές επιχειρήσεις στην Κεφαλονιά, από boat trips και οργανωμένες εκδρομές μέχρι ταξί και υπηρεσίες που εμπλουτίζουν τη διαμονή σου.",
     },
     overview: {
-      en: "This page is designed as a curated guide to local experiences in Kefalonia. Instead of presenting only generic tour inspiration, it highlights businesses and operators that help visitors enjoy the island in a more direct, memorable and authentic way.",
-      el: "Αυτή η σελίδα έχει σχεδιαστεί ως curated οδηγός τοπικών εμπειριών στην Κεφαλονιά. Αντί να παρουσιάζει μόνο γενική ταξιδιωτική έμπνευση, αναδεικνύει επιχειρήσεις και επαγγελματίες που βοηθούν τον επισκέπτη να απολαύσει το νησί με πιο άμεσο, αξέχαστο και αυθεντικό τρόπο.",
+      en: "This page is designed as a curated guide to local experiences in Kefalonia. Instead of focusing only on general inspiration, it is built to feature real businesses, tours, and visitor-friendly experiences that bring travelers closer to the island's culture and natural beauty.",
+      el: "Αυτή η σελίδα έχει σχεδιαστεί ως curated οδηγός τοπικών εμπειριών στην Κεφαλονιά. Αντί να εστιάζει μόνο σε γενική ταξιδιωτική έμπνευση, είναι φτιαγμένη για να προβάλλει πραγματικές επιχειρήσεις, εκδρομές και εμπειρίες που φέρνουν τον ταξιδιώτη πιο κοντά στον πολιτισμό και τη φυσική ομορφιά του νησιού.",
     },
     highlights: {
       en: [
         "Featured local businesses",
-        "Boat trips and sea experiences",
+        "Tours, taxis & boat trips",
         "Curated options for visitors",
-        "A more practical way to plan experiences",
+        "A practical way to plan",
       ],
       el: [
         "Featured τοπικές επιχειρήσεις",
-        "Boat trips και θαλάσσιες εμπειρίες",
+        "Εκδρομές, ταξί & boat trips",
         "Επιλεγμένες επιλογές για επισκέπτες",
-        "Πιο πρακτικός τρόπος οργάνωσης εμπειριών",
+        "Πρακτική οργάνωση ταξιδιού",
+      ],
+    },
+    highlightReasons: {
+      en: [
+        "We handpick real, operating businesses that rely on quality service instead of just generic tourist traps.",
+        "From road transfers to sea explorations, find the exact local service you need.",
+        "Carefully selected options ensuring you get the most authentic side of Kefalonia.",
+        "Save time by browsing clear, structured information before you even arrive.",
+      ],
+      el: [
+        "Επιλέγουμε πραγματικές επιχειρήσεις που βασίζονται στην ποιοτική εξυπηρέτηση και όχι σε τουριστικές παγίδες.",
+        "Από οδικές μεταφορές μέχρι εξερευνήσεις στη θάλασσα, βρες την ιδανική τοπική υπηρεσία.",
+        "Προσεκτικά επιλεγμένες προτάσεις για να ζήσεις την πιο αυθεντική πλευρά της Κεφαλονιάς.",
+        "Γλιτώστε χρόνο συγκεντρώνοντας ξεκάθαρες πληροφορίες πριν καν φτάσετε στο νησί.",
       ],
     },
   },
@@ -89,7 +105,21 @@ export const experienceLandings: ExperienceLanding[] = [
         "Featured τοπικές επιχειρήσεις",
         "Αυθεντικό φαγητό και πολιτισμός",
         "Εμπειρίες για επισκέπτες",
-        "Πρακτικός τρόπος οργάνωσης διαμονής",
+        "Πρακτικός τρόπος οργάνωσης",
+      ],
+    },
+    highlightReasons: {
+      en: [
+        "We support local entrepreneurs who sustain the true heritage of Lesvos.",
+        "Taste traditional recipes and immerse yourself in centuries-old practices.",
+        "Activities designed with the modern traveler in mind, easy to join and access.",
+        "An organized hub so you don't miss out on what makes this island special.",
+      ],
+      el: [
+        "Στηρίζουμε τοπικούς επιχειρηματίες που διατηρούν την αληθινή κληρονομιά της Λέσβου.",
+        "Δοκίμασε παραδοσιακές συνταγές και βίωσε πρακτικές αιώνων.",
+        "Δραστηριότητες σχεδιασμένες για τον σύγχρονο ταξιδιώτη, εύκολες στη συμμετοχή.",
+        "Ένας οργανωμένος κόμβος για να μη χάσεις όσα κάνουν αυτό το νησί ξεχωριστό.",
       ],
     },
   },
@@ -119,6 +149,20 @@ export const experienceLandings: ExperienceLanding[] = [
         "Γεύση, πολιτισμός και ακτογραμμή",
         "Επιλεγμένες επιλογές για επισκέπτες",
         "Πιο πρακτική σελίδα οργάνωσης",
+      ],
+    },
+    highlightReasons: {
+      en: [
+        "Showcasing Cretan hospitality through reliable, top-rated local operators.",
+        "From mountain villages to pristine beaches, discover the breadth of Crete.",
+        "Skip the endless searching and find highly recommended activities instantly.",
+        "Plan your days properly and secure your spots in popular local experiences.",
+      ],
+      el: [
+        "Αναδεικνύουμε την Κρητική φιλοξενία μέσα από αξιόπιστους τοπικούς επαγγελματίες.",
+        "Από ορεινά χωριά μέχρι απάτητες παραλίες, ανακάλυψε τον πλούτο της Κρήτης.",
+        "Δώσε τέλος στην ατελείωτη αναζήτηση και βρες άμεσα τις καλύτερες δραστηριότητες.",
+        "Οργάνωσε σωστά τις μέρες σου και εξασφάλισε τη θέση σου σε κορυφαίες εμπειρίες.",
       ],
     },
   },
@@ -239,6 +283,7 @@ practicalInfo: {
   },
   phone: "+306984331377",
   email: "deepbluemarine23@gmail.com",
+  website: "https://www.facebook.com/profile.php?id=100090475029196",
   youtube: "https://www.youtube.com/watch?v=gBbpOTZjDgE&t=6s",
 }
 ];

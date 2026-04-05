@@ -26,6 +26,11 @@ export type Destination = {
   highlights: LocalizedList;
 };
 
+export type GuideSection = {
+  title: Localized;
+  content: Localized;
+};
+
 export type GuideCard = {
   slug: string;
   title: Localized;
@@ -33,6 +38,7 @@ export type GuideCard = {
   image: string;
   overview: Localized;
   points: LocalizedList;
+  sections?: GuideSection[];
 };
 
 export type HotelCard = {
@@ -293,53 +299,152 @@ export const travelInfoGuides: GuideCard[] = [
     slug: "how-to-get-to-greece",
     title: { en: "How to get to Greece", el: "Πώς να έρθεις στην Ελλάδα" },
     description: {
-      en: "Flights, ferries, island hopping ideas and airport tips for first-time visitors.",
-      el: "Πτήσεις, πλοία, ιδέες για island hopping και συμβουλές αεροδρομίων για νέους επισκέπτες.",
+      en: "Flights, ferries, island hopping ideas and airport tips for first-time visitors solving the puzzle of Greek transport.",
+      el: "Πτήσεις, πλοία, ιδέες για island hopping και αναλυτικές συμβουλές για αεροδρόμια, ειδικά για όσους έρχονται πρώτη φορά."
     },
     image: "/images/travel-arrival.jpg",
     overview: {
-      en: "This guide helps visitors understand the best arrival options by air, sea and seasonal routes.",
-      el: "Αυτός ο οδηγός βοηθά τους επισκέπτες να καταλάβουν τις καλύτερες επιλογές άφιξης αεροπορικώς, ακτοπλοϊκώς και εποχικά.",
+      en: "Greece is highly accessible but its island geography makes planning crucial. This guide covers your main entry points—primary and regional airports, major ferry ports, and international transport links—so you can pick the smartest route for your itinerary.",
+      el: "Η Ελλάδα είναι εξαιρετικά προσβάσιμη, αλλά η γεωγραφία της απαιτεί σωστό προγραμματισμό. Αυτός ο οδηγός καλύπτει τα κύρια σημεία εισόδου (κεντρικά και περιφερειακά αεροδρόμια, κεντρικά λιμάνια και χερσαία σύνορα) για να επιλέξεις τη σωστή διαδρομή."
     },
     points: {
-      en: ["International airports", "Ferry connections", "Island-hopping planning"],
-      el: ["Διεθνή αεροδρόμια", "Ακτοπλοϊκές συνδέσεις", "Σχεδιασμός island-hopping"],
+      en: [
+        "Athens (ATH) is the central aviation hub",
+        "Piraeus is the massive main port for Aegean islands",
+        "Direct flights to islands save transit time",
+        "Ferry hopping requires buffer time between connections"
+      ],
+      el: [
+        "Το αεροδρόμιο της Αθήνας είναι ο κεντρικός κόμβος",
+        "Ο Πειραιάς είναι το βασικό λιμάνι για το Αιγαίο",
+        "Οι απευθείας πτήσεις στα νησιά εξοικονομούν πολύ χρόνο",
+        "Οι συνδέσεις πλοίων θέλουν πάντα χρόνο ασφαλείας"
+      ]
     },
+    sections: [
+      {
+        title: { en: "Flying into Greece", el: "Αεροπορική Άφιξη" },
+        content: {
+          en: "The immense majority of international travelers use Athens International Airport (ATH) as their primary gateway. It’s a modern hub connecting to all major European cities and offering direct flights from the US and the Middle East. If you plan to head straight to popular islands like Santorini, Mykonos, Crete, or Rhodes, consider flying directly into their international airports (especially during summer), as it saves you a day of transit. Thessaloniki (SKG) serves the north and is perfect for exploring Halkidiki, Olympus, or Epirus.",
+          el: "Η συντριπτική πλειοψηφία των διεθνών ταξιδιωτών χρησιμοποιεί το αεροδρόμιο της Αθήνας (Ελ. Βενιζέλος) ως βασικό σημείο εισόδου. Ενώνει την Ελλάδα με όλη την Ευρώπη, την Αμερική και τη Μέση Ανατολή. Εάν ο τελικός σου προορισμός είναι δημοφιλή νησιά (όπως Σαντορίνη, Μύκονος, Κρήτη), αξίζει συχνά να ψάξεις για απευθείας πτήση εκεί (τους θερινούς μήνες), γλιτώνοντας μία έξτρα μέρα μετακίνησης. Το αεροδρόμιο της Θεσσαλονίκης ή «Μακεδονία» (SKG) είναι ιδανικό αν ορίζεις ως βάση τη Βόρεια Ελλάδα."
+        }
+      },
+      {
+        title: { en: "Ferry Connections & Ports", el: "Λιμάνια και Ακτοπλοΐα" },
+        content: {
+          en: "If you land in Athens, you’ll likely use the Port of Piraeus, the largest passenger port in Europe. Piraeus connects to nearly every island in the Aegean. For a more relaxed experience with fast ferries to the Cyclades (like Andros, Tinos, Mykonos), the smaller Port of Rafina is actually closer to the Athens Airport. From Italy (Ancona, Bari, Brindisi, Venice), massive car ferries sail into Patras and Igoumenitsa on the west coast, making it a great option for road-trippers arriving from central Europe.",
+          el: "Από την Αθήνα, η βασική αφετηρία για το Αιγαίο είναι το λιμάνι του Πειραιά, το μεγαλύτερο επιβατικό λιμάνι της Ευρώπης. Αν ωστόσο θέλεις να πας σε νησιά των Κυκλάδων (όπως Άνδρο, Τήνο, Μύκονο), το λιμάνι της Ραφήνας είναι πιο κοντά στο αεροδρόμιο και συχνά πιο βολικό. Για όσους έρχονται οδικώς από την Ιταλία, υπάρχουν τεράστια επιβατηγά-οχηματαγωγά (ferries) που αναχωρούν από Βενετία, Ανκόνα, Μπάρι κ.ά. και δένουν στην Πάτρα και στην Ηγουμενίτσα."
+        }
+      },
+      {
+        title: { en: "Land Borders and Trains", el: "Χερσαία Σύνορα και Τρένα" },
+        content: {
+          en: "Road trips into Greece usually transit through the Balkans, entering via stations like Evzones (North Macedonia) or Promachonas (Bulgaria). Long-distance buses connect major Balkan cities with Thessaloniki and Athens. While Greece has a rail network, it is largely domestic (primarily the Athens-Thessaloniki axis), and international train connections are often suspended or complicated. A car or a cross-border coach is definitely the easiest way overland.",
+          el: "Τα οδικά ταξίδια προς Ελλάδα περνούν συνήθως από τα Βαλκάνια, με κύριους σταθμούς εισόδου τους Ευζώνους (Βόρεια Μακεδονία) και τον Προμαχώνα (Βουλγαρία). Διεθνή λεωφορεία συνδέουν μεγάλες πρωτεύουσες με τη Θεσσαλονίκη και την Αθήνα. Αν και η Ελλάδα διαθέτει σιδηροδρομικό δίκτυο (κυρίως στον άξονα Αθήνας - Θεσσαλονίκης), οι διεθνείς διελεύσεις τρένων είναι συχνά περιορισμένες. Επομένως, το αυτοκίνητο ή το λεωφορείο αποτελούν τις πιο αξιόπιστες χερσαίες λύσεις."
+        }
+      }
+    ]
   },
   {
-    slug: "best-time-to-visit",
-    title: { en: "Best time to visit", el: "Καλύτερη εποχή για ταξίδι" },
+    slug: "best-time-to-visit-greece",
+    title: { en: "Best time to visit Greece", el: "Η Καλύτερη Εποχή για Ταξίδι" },
     description: {
-      en: "When to visit Greece for beaches, sightseeing, food, sailing and quieter holidays.",
-      el: "Πότε να επισκεφθείς την Ελλάδα για παραλίες, sightseeing, φαγητό, sailing και πιο ήσυχες διακοπές.",
+      en: "Discover exactly when to visit based on your passion: swimming, historical sightseeing, local food, sailing, or simply avoiding the massive crowds.",
+      el: "Ανακάλυψε ακριβώς πότε να επισκεφτείς την Ελλάδα ανάλογα με το τι θέλεις: μπάνιο, ιστορία, φαγητό ή απλά την αποφυγή της τουριστικής πολυκοσμίας."
     },
     image: "/images/travel-season.jpg",
     overview: {
-      en: "A practical seasonal guide for choosing the right months depending on your travel style.",
-      el: "Ένας πρακτικός εποχικός οδηγός για να διαλέξεις τους σωστούς μήνες ανάλογα με το είδος ταξιδιού που θέλεις.",
+      en: "Greece is famous for its summer sun, but limiting your perspective to July and August means missing out. The shoulder seasons (Spring and Autumn) reveal a stunningly green landscape, lower prices, and comfortable temperatures for sightseeing. Winter offers charming mountain villages and a lively urban city-break scene.",
+      el: "Η Ελλάδα είναι διάσημη για το καλοκαίρι της, αλλά αν περιοριστείς στον Ιούλιο και τον Αύγουστο χάνεις πολλές εμπειρίες. Οι ενδιάμεσες εποχές (άνοιξη και φθινόπωρο) αποκαλύπτουν μια πιο πράσινη και αυθεντική πλευρά, με χαμηλότερες τιμές και ευχάριστες θερμοκρασίες. Ακόμη και ο χειμώνας, έχει υπέροχα ορεινά χωριά."
     },
     points: {
-      en: ["Summer beaches", "Spring city breaks", "Shoulder season value"],
-      el: ["Καλοκαιρινές παραλίες", "Ανοιξιάτικα city breaks", "Value season επιλογές"],
+      en: [
+        "Summer is peak season with very hot weather",
+        "September is the absolute sweet spot for island hopping",
+        "Spring brings rare greenery and rich traditions (Easter)",
+        "Winter focuses on Athens, Thessaloniki & highland escapes"
+      ],
+      el: [
+        "Το καλοκαίρι είναι the peak season με αρκετή ζέστη",
+        "Ο Σεπτέμβριος είναι συχνά ο καλύτερος μήνας για το Αιγαίο",
+        "Η άνοιξη γιορτάζεται έντονα (ιδιαίτερα το Πάσχα)",
+        "Τον χειμώνα προτιμάμε city breaks και ορεινούς προορισμούς"
+      ]
     },
+    sections: [
+      {
+        title: { en: "High Summer (July & August)", el: "Το Ζεστό Καλοκαίρι (Ιούλιος & Αύγουστος)" },
+        content: {
+          en: "If your goal is endless sun, warm seas, and the classic buzzing island lifestyle, high summer is your time. It’s perfect for beach clubs, sailing the Saronic, and finding late-night energy in Mykonos or Ios. However, expect crowded ferries, high accommodation prices, and intense heat (frequently above 35°C / 95°F). To escape the deepest crowds, aim for lesser-known islands like Folegandros, Amorgos, or the expansive beaches of Crete and the Peloponnese.",
+          el: "Αν στόχος σου είναι ο ήλιος, η ζεστή θάλασσα και η κλασική πολύβουη νησιωτική ζωή, τότε το καλοκαίρι είναι για σένα. Ιδανικό για beach clubs, sailing και ξενύχτι. Όμως, η πολυκοσμία είναι μεγάλη, οι τιμές φτάνουν στο αποκορύφωμα, και η ζέστη γίνεται έντονη (πάνω από 35°C). Εάν θέλεις πιο ήσυχες καλοκαιρινές διακοπές, προτίμησε λιγότερο γνωστά νησιά, όπως η Φολέγανδρος και η Αμοργός, ή τα μεγάλα τοπία της νότιας Κρήτης και της Πελοποννήσου."
+        }
+      },
+      {
+        title: { en: "The Sweet Spot (May/June & September/October)", el: "Το Ιδανικό Παράθυρο (Μάιος/Ιούνιος & Σεπτέμβριος/Οκτώβριος)" },
+        content: {
+          en: "This is universally considered the best time to visit. In May and June, the weather is warm but fresh, seas are warming up, and the landscape is full of wildflowers. September is magical: the sea is incredibly warm from the summer sun, but the massive tourist crowds have departed. Early October is still beautiful in the south (Crete, Rhodes), making it a fantastic time for a relaxed, authentic experience without the exhaustion of peak heat.",
+          el: "Η καλύτερη περίοδος για τους περισσότερους. Τον Μάιο και τον Ιούνιο, ο καιρός είναι ζεστός αλλά δροσερός, η φύση καταπράσινη, και οι θάλασσες αρχίζουν να ζεσταίνονται. Ο Σεπτέμβριος είναι ίσως ο κορυφαίος μήνας: η θάλασσα έχει κρατήσει τη ζέστη όλου του καλοκαιριού ενώ ο έντονος όγκος τουριστών έχει πια φύγει. Ακόμα και ο πρώιμος Οκτώβριος είναι πανέμορφος στα νότια (Κρήτη, Ρόδος), συνδυάζοντας μπάνιο και αρχαιολογικούς περιπάτους."
+        }
+      },
+      {
+        title: { en: "The Unknown Winter & Spring", el: "Ο Χειμώνας και η Άνοιξη" },
+        content: {
+          en: "From November to March, island ferries run on minimal schedules, and resort towns hibernate. Yet, this is when Athens and Thessaloniki truly shine with a vibrant local culture, fantastic dining, and distraction-free archaeological sites. Winter is also the time for mainland road trips to dramatic highland villages like Zagorohoria or Pelion. Come April, Greek Easter transforms the countryside with profound traditions and celebrations, marking the start of the tourist reboot.",
+          el: "Από τον Νοέμβριο ως τον Μάρτιο τα νησιά μπαίνουν σε μια χειμερία νάρκη, αφού τα δρομολόγια πλοίων ελαχιστοποιούνται. Τότε όμως λάμπουν η Αθήνα και η Θεσσαλονίκη! Μοναδική γαστρονομία, local κουλτούρα και αρχαιολογικοί χώροι χωρίς καμία αναμονή. Ο χειμώνας ανήκει επίσης στα γραφικά ορεινά χωριά της Ελλάδας (Ζαγοροχώρια, Πήλιο). Τον Απρίλιο, το Ελληνικό Πάσχα αποτελεί μια μοναδική εμπειρία γεμάτη παράδοση, που σηματοδοτεί και την έναρξη της νέας σεζόν."
+        }
+      }
+    ]
   },
   {
-    slug: "getting-around",
-    title: { en: "Getting around", el: "Μετακινήσεις στην Ελλάδα" },
+    slug: "getting-around-greece",
+    title: { en: "Getting around Greece", el: "Μετακινήσεις στην Ελλάδα" },
     description: {
-      en: "Cars, buses, ferries and local transport to move easily between regions and islands.",
-      el: "Αυτοκίνητα, λεωφορεία, πλοία και τοπικές μετακινήσεις για εύκολη πρόσβαση σε περιοχές και νησιά.",
+      en: "From domestic flights and fast ferries to local buses and car rentals, navigate the diverse Greek landscape efficiently and comfortably.",
+      el: "Από τοπικές πτήσεις και γρήγορα πλοία μέχρι λεωφορεία και ενοικιάσεις αυτοκινήτων, οργάνωσε τις μετακινήσεις σου αποδοτικά και άνετα."
     },
     image: "/images/travel-transport.jpg",
     overview: {
-      en: "This guide covers the most practical ways to move around mainland Greece and the islands.",
-      el: "Αυτός ο οδηγός καλύπτει τους πιο πρακτικούς τρόπους μετακίνησης στην ηπειρωτική Ελλάδα και στα νησιά.",
+      en: "Navigating Greece means learning two different transport systems: the intricate web of Aegean and Ionian ferries, and the extensive mainland road and bus network. With a bit of strategic planning, you can easily combine flights, ferries, and cars to craft the ultimate itinerary across mountains and islands.",
+      el: "Η μετακίνηση στην Ελλάδα βασίζεται σε δύο διαφορετικά συστήματα: το δίκτυο των πλοίων σε Αιγαίο και Ιόνιο, και τους αυτοκινητόδρομους στην ηπειρωτική χώρα. Η έξυπνη αξιοποίηση πτήσεων, πλοίων και ΚΤΕΛ (λεωφορείων) θα απογειώσει την εμπειρία σου, αρκεί να κατανοήσεις τη δομή τους."
     },
     points: {
-      en: ["Car rentals", "Buses and ferries", "Regional transport tips"],
-      el: ["Ενοικιάσεις αυτοκινήτων", "Λεωφορεία και πλοία", "Τοπικές συμβουλές μετακίνησης"],
+      en: [
+        "Ferries are the lifeblood, but schedules change heavily by season",
+        "Renting a car is essential for large islands (Crete, Corfu)",
+        "KTEL buses are the primary inter-city public transport",
+        "Internal flights drastically cut travel time to far islands"
+      ],
+      el: [
+        "Τα πλοία είναι η ψυχή των νησιών, αλλά τα δρομολόγια αλλάζουν εποχικά",
+        "Το αυτοκίνητο είναι απαραίτητο για τα μεγάλα νησιά (πχ. Κρήτη)",
+        "Τα λεωφορεία ΚΤΕΛ είναι το κύριο δημόσιο μέσο εκτός πόλεων",
+        "Οι εσωτερικές πτήσεις σώζουν πολύ χρόνο για τα μακρινά νησιά"
+      ]
     },
-  },
+    sections: [
+      {
+        title: { en: "Mastering the Ferry System", el: "Το Δίκτυο των Πλοίων" },
+        content: {
+          en: "The ferry network is expansive. You have standard car ferries (slower, cheaper, open decks) and high-speed catamarans (seajets, hydrofoils) which cut travel time by half but can be bumpy on windy days. Ferry logistics dictate that you should group islands within the same cluster (e.g., sticking to the Cyclades, or exploring the Dodecanese) rather than jumping between completely different island chains, which often requires routing back through Athens.",
+          el: "Υπάρχουν δύο είδη πλοίων: τα συμβατικά οχηματαγωγά (πιο αργά, αξιόπιστα, με κατάστρωμα) και τα ταχύπλοα/καταμαράν (πιο ακριβά, εξοικονομούν το μισό χρόνο αλλά 'κουνάνε' όταν φυσάει). Ο 'χρυσός κανόνας' για island hopping είναι να μένεις μέσα στο ίδιο σύμπλεγμα (π.χ. μόνο Κυκλάδες, μόνο Ιόνιο). Το να πας από ένα νησί του Ιονίου σε ένα των Κυκλάδων προϋποθέτει επιστροφή στην Αθήνα."
+        }
+      },
+      {
+        title: { en: "Car Rentals and Driving", el: "Οδήγηση και Ενοικίαση Οχήματος" },
+        content: {
+          en: "On small islands (like Hydra where cars are banned, or central Cyclades), public buses or scooters are enough. But for mainland excursions like the Peloponnese or massively scaled islands (Crete, Rhodes, Kefalonia), a rental car opens up secret beaches and mountain villages you’d never otherwise see. Greek roads are generally good, but mountain passes can be winding and very narrow. An international driving permit is required for most non-EU drivers.",
+          el: "Στα μικρά νησιά τα τοπικά λεωφορεία είναι συχνά αρκετά, ενώ σε μέρη όπως η Ύδρα τα αυτοκίνητα απαγορεύονται πλήρως. Ωστόσο, για την ηπειρωτική Ελλάδα (Πελοπόννησος, Ήπειρος) και για τεράστια νησιά όπως η Κρήτη ή η Ρόδος, το ενοικιαζόμενο αυτοκίνητο είναι απολύτως απαραίτητο για να ανακαλύψεις κρυφές παραλίες. Οι κεντρικοί δρόμοι είναι πολύ καλοί, αλλά η επαρχία απαιτεί προσοχή λόγω πολλών στροφών."
+        }
+      },
+      {
+        title: { en: "The KTEL Bus Network", el: "Τα υπεραστικά Λεωφορεία (ΚΤΕΛ)" },
+        content: {
+          en: "Forget trains for most of Greece; the true public transport network is the KTEL bus system. It’s highly reliable, relatively cheap, and connects Athens/Thessaloniki to virtually every town, port, and village in the country. Buses even roll onto ferries for island connections. For budget travelers or those wary of driving mountain roads, the KTEL system is a superb, comfortable option to cross regions easily.",
+          el: "Αν δεν έχεις αυτοκίνητο, η πιο αξιόπιστη δημόσια συγκοινωνία είναι τα ΚΤΕΛ (τα εθνικά υπεραστικά λεωφορεία). Έχουν συχνά δρομολόγια, καθαρά λεωφορεία, και συνδέουν την Αθήνα ή τη Θεσσαλονίκη με κάθε χωριό ή λιμάνι της χώρας. Μάλιστα, μπαίνουν και στα πλοία, επιτρέποντας το ενιαίο ταξίδι. Είναι μια πολύ budget-friendly και άνετη επιλογή για όσους δεν θέλουν να οδηγήσουν."
+        }
+      }
+    ]
+  }
 ];
 
 export const hotels: HotelCard[] = [
