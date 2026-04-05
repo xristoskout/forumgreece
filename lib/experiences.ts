@@ -7,6 +7,7 @@ export type ExperienceLanding = {
   overview: Localized;
   highlights: LocalizedList;
   highlightReasons: LocalizedList;
+  image?: string;
 };
 
 export type ExperienceBusiness = {
@@ -122,6 +123,7 @@ export const experienceLandings: ExperienceLanding[] = [
         "Ένας οργανωμένος κόμβος για να μη χάσεις όσα κάνουν αυτό το νησί ξεχωριστό.",
       ],
     },
+    image: "/images/lesvos-goods-v2.jpg",
   },
   {
     slug: "crete-tours",
@@ -285,5 +287,217 @@ practicalInfo: {
   email: "deepbluemarine23@gmail.com",
   website: "https://www.facebook.com/profile.php?id=100090475029196",
   youtube: "https://www.youtube.com/watch?v=gBbpOTZjDgE&t=6s",
-}
+},
+  {
+    slug: "taxi-express-patras",
+    landingSlug: "getting-around-greece",
+    name: "Ταξί Express Πάτρας",
+    category: {
+      en: "Taxi & Transfers",
+      el: "Ταξί / Μεταφορές",
+    },
+    place: "Patras, Achaia",
+    info: {
+      en: "24/7 taxi services in Patras and western Greece. Fast, reliable transfers with a modern fleet and VIP options. You can book by phone or easily through their Mr Booky app.",
+      el: "24/7 υπηρεσίες ταξί στην Πάτρα. Γρήγορες, αξιόπιστες μετακινήσεις με σύγχρονο στόλο και VIP επιλογές. Μπορείς να κλείσεις τηλεφωνικά ή μέσω της εφαρμογής Mr Booky.",
+    },
+    image: "/images/businesses/taxi-express-patras/taxi-express.jpg",
+    href: "https://taxiexpresspatras.gr/",
+    badge: "24/7",
+    overview: {
+      en: "Taxi Express Patras offers reliable, 24/7 taxi services covering Patras and key transport hubs like Araxos Airport, the port of Patras, KTEL buses, and the train station. They provide instant phone support and online bookings via their innovative Mr Booky app.",
+      el: "Το Ράδιο Ταξί Express Πάτρας προσφέρει αξιόπιστες υπηρεσίες ταξί 24/7 στην πόλη της Πάτρας. Καλύπτει μεταφορές από/προς το Αεροδρόμιο Αράξου, λιμάνι, ΚΤΕΛ και ΟΣΕ, ενώ διαθέτει την καινοτόμα εφαρμογή Mr Booky (Web & App) για εύκολη εύρεση ταξί από το κινητό σας.",
+    },
+    description: {
+      en: "Need a ride in Patras? Taxi Express Patras operates around the clock with a fleet of 170 vehicles ensuring immediate response. Whether you need a transfer to Araxos Airport, a ride from the port of Patras across Greece, or a targeted transfer to hospitals or malls, they have you covered. Use their phone line or their quick digital app 'Mr Booky' for a seamless experience.",
+      el: "Χρειάζεσαι ταξί στην Πάτρα? Το Ταξί Express Πάτρας λειτουργεί όλο το 24ωρο με ένα στόλο 170 οχημάτων εξασφαλίζοντας άμεση ανταπόκριση. Είτε χρειάζεσαι μεταφορά στο Αεροδρόμιο Αράξου, είτε από το λιμάνι της Πάτρας για όλη την Ελλάδα, καλύπτουν κάθε ανάγκη σου. Κάλεσε στο 2610 450000 ή χρησιμοποίησε την εφαρμογή 'Mr Booky' για έξυπνη κράτηση.",
+    },
+    highlights: {
+      en: [
+        "24/7 availability with 170 vehicles",
+        "Transfers to Araxos Airport & Patras Port",
+        "Online booking via Mr Booky app",
+        "VIP services, pet cages & child seats",
+      ],
+      el: [
+        "24/7 διαθεσιμότητα με 170 οχήματα",
+        "Μεταφορές σε Αεροδρόμιο Αράξου & Λιμάνι Πάτρας",
+        "Online κράτηση μέσω του Mr Booky app",
+        "VIP υπηρεσίες, κλουβιά κατοικίδιων & παιδικά καθίσματα",
+      ],
+    },
+    services: {
+      en: [
+        "Direct transportation in the center of Patras",
+        "Transfers from/to Araxos Airport and Patras Port",
+        "Transfers to KTEL bus station and OSE trains",
+        "VIP appointments and Night Taxi",
+        "Provision of pet cages and child seats",
+        "Digital app bookings (Mr Booky)",
+      ],
+      el: [
+        "Άμεση μετακίνηση στο κέντρο της Πάτρας",
+        "Μεταφορές από/προς Αεροδρόμιο Αράξου και Λιμάνι της Πάτρας",
+        "Μεταφορές προς ΚΤΕΛ Πάτρας και ΟΣΕ",
+        "VIP ραντεβού και Night Taxi",
+        "Παροχή παιδικών καθισμάτων & κλουβιών κατοικίδιων",
+        "Ψηφιακές υπηρεσίες και κλήση μέσω Mr Booky",
+      ],
+    },
+    story: {
+      en: "Driving innovation in urban transport, Taxi Express Patras recently shifted to a 'phygital' revolution introducing AI assistants and modern applications to a traditional taxi service.",
+      el: "Οδηγώντας την καινοτομία στις αστικές μεταφορές, το Ταξί Express Πάτρας έχει περάσει στη 'phygital' εποχή, συνδυάζοντας την άμεση εξυπηρέτηση ενός μεγάλου στόλου με AI βοηθούς (Mr Booky) και εξελιγμένες εφαρμογές.",
+    },
+    practicalInfo: {
+      en: [
+        "Call directly at 2610 450000 for instant response anywhere in Patras",
+        "App bookings allow tracing the driver via map live",
+        "Excursions to places like Delphi, Ancient Olympia available upon arrangement",
+      ],
+      el: [
+        "Καλέστε στο 2610 450000 24 ώρες το 24ωρο για άμεση εξυπηρέτηση",
+        "Με την εφαρμογή τους (Mr Booky) βλέπετε το ταξί στον χάρτη live",
+        "Διατίθενται μονοήμερες εκδρομές (π.χ. Αρχαία Ολυμπία, Δελφοί)",
+      ],
+    },
+    routes: {
+      en: [
+        "Araxos Airport",
+        "Patras Port",
+        "Patras City Center & Hospitals",
+        "Ancient Olympia & Delphi (excursions)",
+      ],
+      el: [
+        "Αεροδρόμιο Αράξου",
+        "Λιμάνι Πάτρας",
+        "Κέντρο Πάτρας & Νοσοκομεία",
+        "Αρχαία Ολυμπία & Δελφοί (εκδρομές)",
+      ],
+    },
+    perfectFor: {
+      en: [
+        "Travelers needing airport/port transfers",
+        "Locals and students in Patras",
+        "Visitors planning day trips from Patras",
+        "Business travelers",
+      ],
+      el: [
+        "Ταξιδιώτες για αεροδρόμιο/λιμάνι",
+        "Ντόπιους και φοιτητές στην Πάτρα",
+        "Επισκέπτες που κάνουν μονοήμερες εκδρομές",
+        "Επαγγελματίες",
+      ],
+    },
+    ctaLabel: {
+      en: "Visit Website",
+      el: "Επισκεφθείτε την ιστοσελίδα",
+    },
+    phone: "+302610450000",
+    email: "info@taxiexpresspatras.gr",
+    website: "https://taxiexpresspatras.gr/",
+    youtube: "",
+    galleryCount: 0,
+    mapQuery: "Ταξί Express Πάτρας 450000",
+  },
+  {
+    slug: "papadellis-olive-oil",
+    landingSlug: "lesvos-tours",
+    name: "Papadellis Olive Oil",
+    category: {
+      en: "Local Products / Olive Oil",
+      el: "Τοπικά Προϊόντα / Ελαιόλαδο",
+    },
+    place: "Loutropoli Thermis, Lesvos",
+    info: {
+      en: "A family-owned business in Lesvos producing high-quality extra virgin olive oils (like the premium Sapfo), nutritious olives, and natural olive oil soaps, maintaining the island's authentic tradition.",
+      el: "Οικογενειακή επιχείρηση στη Λέσβο που παράγει υψηλής ποιότητας εξαιρετικό παρθένο ελαιόλαδο (όπως το premium Sapfo), θρεπτικές ελιές και φυσικά σαπούνια, διατηρώντας την αυθεντική παράδοση του νησιού.",
+    },
+    image: "/images/businesses/papadellis/papadellis.jpg",
+    href: "https://papadellis.eu/",
+    badge: "Local Producer",
+    overview: {
+      en: "Papadellis Olive Oil is a local producer based in Loutropoli Thermis, on the island of Lesvos. With deep respect for the area's centuries-old olive oil heritage, the Papadellis family crafts premium extra virgin olive oils, table olives, and naturally formulated soaps using traditional methods. Their distinctive products act as true ambassadors of the Mediterranean diet and the fertile Lesvian land.",
+      el: "Η Papadellis Olive Oil είναι μια τοπική επιχείρηση στη Λουτρόπολη Θέρμης, στη Λέσβο. Με βαθύ σεβασμό στη μακραίωνη ελαιοκομική παράδοση της περιοχής, η οικογένεια Παπαδέλλη δημιουργεί εξαιρετικά παρθένα ελαιόλαδα, επιτραπέζιες ελιές και φυσικά σαπούνια. Τα ξεχωριστά προϊόντα τους αποτελούν πραγματικούς πρεσβευτές της Μεσογειακής διατροφής και της εύφορης λεσβιακής γης.",
+    },
+    description: {
+      en: "Discover the authentic taste of Lesvos with Papadellis Olive Oil. Operating from Loutropoli Thermis, the business produces exceptional extra virgin olive oils, starring the acclaimed 'Sapfo' brand. Beyond olive oil, they offer nutrient-rich table olives harvested directly from their privately-owned groves and purely natural olive oil soaps that are perfect for gentle skin care. A true encapsulation of the tradition and rich aromas generously offered by the island.",
+      el: "Ανακαλύψτε την αυθεντική γεύση της Λέσβου μέσα από την Papadellis Olive Oil. Με έδρα τη Λουτρόπολη Θέρμης, η επιχείρηση παράγει εξαιρετικό παρθένο ελαιόλαδο, με πρωταγωνιστή τη φημισμένη σειρά 'Sapfo'. Πέρα από το ελαιόλαδο, προσφέρουν υψηλής διατροφικής αξίας ελιές από τους ιδιόκτητους ελαιώνες τους και απολύτως φυσικά σαπούνια ελαιολάδου, ιδανικά για την περιποίηση του δέρματος. Μια ολοκληρωμένη εμπειρία παράδοσης και αρωμάτων που χαρίζει η λεσβιακή γη.",
+    },
+    highlights: {
+      en: [
+        "Premium Extra Virgin Olive Oils",
+        "Nutrient-rich table olives",
+        "Natural olive oil soaps",
+        "Directly from privately-owned groves",
+      ],
+      el: [
+        "Premium Εξαιρετικό Παρθένο Ελαιόλαδο",
+        "Θρεπτικές επιτραπέζιες ελιές",
+        "Φυσικά σαπούνια ελαιολάδου",
+        "Απευθείας από ιδιόκτητους ελαιώνες",
+      ],
+    },
+    services: {
+      en: [
+        "Extra Virgin Olive Oils (Sapfo, Alkeos, Imerti)",
+        "Olives cultivated via natural processes",
+        "Olive oil soaps for face and body care",
+        "Options for B2B and HO.RE.CA",
+      ],
+      el: [
+        "Εξαιρετικά Παρθένα Ελαιόλαδα (Sapfo, Αλκαίος, Ιμερτή)",
+        "Ελιές που καλλιεργούνται με φυσικές διαδικασίες",
+        "Σαπούνια ελαιολάδου για πρόσωπο και σώμα",
+        "Επιλογές για επιχειρήσεις B2B και HO.RE.CA",
+      ],
+    },
+    story: {
+      en: "Firmly rooted in Loutropoli Thermis on the island of Lesvos, the Papadellis family has been passionately cultivating olive trees and producing olive oil, eager to share the unique characteristics and benefits of Lesvian olive varieties with the world.",
+      el: "Με σταθερές ρίζες στη Λουτρόπολη Θέρμης Λέσβου, η οικογένεια Παπαδέλλη καλλιεργεί τα ελαιόδεντρα και παράγει ελαιόλαδο με πάθος, με στόχο να ταξιδέψει σε όλο τον κόσμο τα μοναδικά χαρακτηριστικά και οφέλη των λεσβιακών ποικιλιών ελιάς.",
+    },
+    practicalInfo: {
+      en: [
+        "Based in Loutropoli Thermis, Lesvos",
+        "Contact directly at (+30) 22510 71377 for product inquiries",
+        "Products available for purchase via their online shop",
+      ],
+      el: [
+        "Η έδρα βρίσκεται στη Λουτρόπολη Θέρμης, Λέσβος",
+        "Απευθείας επικοινωνία στο (+30) 22510 71377 για πληροφορίες προϊόντων",
+        "Τα προϊόντα είναι διαθέσιμα για αγορά μέσω του e-shop τους",
+      ],
+    },
+    routes: {
+      en: [
+        "Loutropoli Thermis",
+        "Lesvos Island",
+      ],
+      el: [
+        "Λουτρόπολη Θέρμης",
+        "Νησί της Λέσβου",
+      ],
+    },
+    perfectFor: {
+      en: [
+        "Gastronomy lovers exploring Greek olive oil",
+        "Visitors discovering the traditional products of Lesvos",
+        "Anyone who embraces the Mediterranean diet",
+      ],
+      el: [
+        "Λάτρεις της γαστρονομίας που αναζητούν αυθεντικό ελληνικό ελαιόλαδο",
+        "Επισκέπτες που ανακαλύπτουν τα παραδοσιακά προϊόντα της Λέσβου",
+        "Όσους αγαπούν και ακολουθούν τη Μεσογειακή διατροφή",
+      ],
+    },
+    ctaLabel: {
+      en: "View products",
+      el: "Δείτε τα προϊόντα",
+    },
+    phone: "+302251071377",
+    email: "info@papadellis.eu",
+    website: "https://papadellis.eu/",
+    youtube: "",
+    galleryCount: 1,
+    mapQuery: "Papadellis Olive Oil Loutropoli Thermis Lesvos",
+  }
 ];

@@ -9,8 +9,10 @@ import {
   type Destination,
   type Lang,
 } from "../../../../lib/content";
+import Image from "next/image";
 import { destinationSections } from "../../../../lib/destination-sections";
 import { destinationDetails } from "../../../../lib/destination-details";
+import { experienceBusinesses } from "../../../../lib/experiences";
 
 type DestinationDetailsClientProps = {
   destination: Destination;
@@ -26,6 +28,9 @@ export default function DestinationDetailsClient({
 
   const sections = destinationSections[destination.slug] ?? [];
   const details = destinationDetails[destination.slug];
+  const businesses = experienceBusinesses.filter(
+    (b) => b.landingSlug === `${destination.slug}-tours` || b.landingSlug === destination.slug
+  );
 
   function stripLocale(path: string) {
     const stripped = path.replace(/^\/(en|el)(?=\/|$)/, "");
@@ -195,6 +200,89 @@ export default function DestinationDetailsClient({
                 </p>
               </article>
             ))}
+
+            {businesses.length > 0 && (
+              <article className="group rounded-[2rem] border border-slate-200 bg-white/90 backdrop-blur-md p-10 shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)]">
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700">
+                  {lang === "en" ? "Featured Businesses" : "Προτεινόμενες Επιχειρήσεις"}
+                </p>
+
+                <div className="mt-8 space-y-8">
+                  {businesses.map((business) => {
+                    const businessHref = business.href || `/businesses/${business.slug}`;
+                    const isExternalUrl = /^https?:\/\//i.test(businessHref);
+
+                    return (
+                      <div
+                        key={business.slug}
+                        className="overflow-hidden rounded-[24px] border border-slate-200 bg-slate-50/50 shadow-sm transition hover:shadow-md"
+                      >
+                        <div className="grid gap-0 sm:grid-cols-[220px_1fr] md:grid-cols-[260px_1fr]">
+                          <div className="relative h-56 w-full bg-slate-100 sm:h-full">
+                            {business.image && (
+                              <Image
+                                src={business.image}
+                                alt={business.name}
+                                fill
+                                className="object-cover"
+                                sizes="(max-width: 640px) 100vw, 260px"
+                              />
+                            )}
+                          </div>
+
+                          <div className="flex flex-col justify-between p-6 md:p-8">
+                            <div>
+                              <div className="flex flex-wrap items-center justify-between gap-3 mb-2">
+                                <div className="text-sm font-extrabold uppercase tracking-widest text-indigo-600">
+                                  {business.category[lang]}
+                                </div>
+                                {business.badge && (
+                                  <span className="inline-flex rounded-full bg-indigo-100 text-indigo-800 px-3 py-1 text-xs font-bold ring-1 ring-inset ring-indigo-200">
+                                    {business.badge}
+                                  </span>
+                                )}
+                              </div>
+
+                              <h4 className="text-2xl font-black tracking-tight text-slate-900 mb-2">
+                                {business.name}
+                              </h4>
+                              
+                              <p className="text-base font-medium text-slate-600 mb-5 flex items-center gap-2">
+                                📍 {business.place}
+                              </p>
+
+                              <p className="text-base text-slate-600 leading-relaxed">
+                                {business.info[lang]}
+                              </p>
+                            </div>
+
+                            <div className="mt-8">
+                              {isExternalUrl ? (
+                                <a
+                                  href={businessHref}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="inline-flex items-center justify-center gap-2 rounded-2xl bg-indigo-600 px-6 py-3.5 text-sm font-semibold text-white shadow-md transition-all hover:bg-indigo-500 hover:shadow-lg"
+                                >
+                                  {business.ctaLabel?.[lang] || (lang === "en" ? "Visit Website" : "Επισκεφθείτε την ιστοσελίδα")}
+                                </a>
+                              ) : (
+                                <Link
+                                  href={withLang(businessHref)}
+                                  className="inline-flex items-center justify-center gap-2 rounded-2xl bg-indigo-600 px-6 py-3.5 text-sm font-semibold text-white shadow-md transition-all hover:bg-indigo-500 hover:shadow-lg"
+                                >
+                                  {business.ctaLabel?.[lang] || (lang === "en" ? "View Details" : "Δείτε Λεπτομέρειες")}
+                                </Link>
+                              )}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </article>
+            )}
           </div>
 
           <aside className="space-y-8">

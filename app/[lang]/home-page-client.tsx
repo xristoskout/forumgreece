@@ -100,7 +100,7 @@ export default function HomePageClient({
     navDestinations: { en: "Destinations", el: "Προορισμοί" },
     navTravelInfo: { en: "Travel Info", el: "Ταξιδιωτικές Πληροφορίες" },
     navHotels: { en: "Hotels", el: "Ξενοδοχεία" },
-    navTours: { en: "Tours", el: "Εκδρομές" },
+    navTours: { en: "Experiences", el: "Τοπικές Επιχειρήσεις" },
     navEatDrink: { en: "Eat & Drink", el: "Φαγητό & Ποτό" },
     navForums: { en: "Travel to Greece", el: "Ταξίδι στην Ελλάδα" },
 
@@ -225,14 +225,14 @@ export default function HomePageClient({
       el: "Δες επιλεγμένα καταλύματα σε όλη την Ελλάδα, από νησιωτικά ξενοδοχεία μέχρι city stays, με βασικά highlights και ξεχωριστές σελίδες.",
     },
 
-    toursEyebrow: { en: "Tours", el: "Εκδρομές" },
+    toursEyebrow: { en: "Experiences", el: "Τοπικές Εμπειρίες & Επιχειρήσεις" },
     toursTitle: {
-      en: "Discover the best Greece tours",
-      el: "Ανακάλυψε τις καλύτερες εκδρομές στην Ελλάδα",
+      en: "Discover local experiences & businesses in Greece",
+      el: "Ανακάλυψε κορυφαίες τοπικές εμπειρίες & επιχειρήσεις στην Ελλάδα",
     },
     toursText: {
-      en: "Explore curated tour ideas in Kefalonia, Lesvos and Crete with local experiences, island highlights and easy travel inspiration.",
-      el: "Ανακάλυψε επιλεγμένες προτάσεις για εκδρομές στην Κεφαλονιά, τη Λέσβο και την Κρήτη, με τοπικές εμπειρίες, κορυφαία σημεία και έμπνευση για το ταξίδι σου.",
+      en: "Discover selected local businesses, from authentic food experiences and cultural activities to services that enrich your stay.",
+      el: "Ανακάλυψε επιλεγμένες τοπικές επιχειρήσεις, από αυθεντικές γαστρονομικές εμπειρίες και πολιτιστικές δραστηριότητες μέχρι υπηρεσίες που εμπλουτίζουν τη διαμονή σου.",
     },
 
     foodEyebrow: { en: "Eat & Drink", el: "Φαγητό & Ποτό" },
@@ -1099,8 +1099,8 @@ export default function HomePageClient({
                     <div>
                       <p className="text-xs font-semibold uppercase tracking-[0.18em] text-cyan-700">
                         {lang === "en"
-                          ? "Local tours & activities"
-                          : "Τοπικές εκδρομές & δραστηριότητες"}
+                          ? "Local Experiences & Businesses"
+                          : "Τοπικές Εμπειρίες & Επιχειρήσεις"}
                       </p>
                       <h3 className="mt-1 text-2xl font-semibold leading-snug">
                         {item.title[lang]}
@@ -1128,13 +1128,13 @@ export default function HomePageClient({
                     className="mt-6 inline-flex rounded-md bg-cyan-700 px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-cyan-800"
                     aria-label={
                       lang === "en"
-                        ? `Read the ${item.place} tours guide`
-                        : `Δες τον οδηγό εκδρομών για ${item.place}`
+                        ? `Read the ${item.place} experiences guide`
+                        : `Δες τις τοπικές επιχειρήσεις για ${item.place}`
                     }
                   >
                     {lang === "en"
-                      ? `${item.place} tours guide →`
-                      : `Οδηγός εκδρομών για ${item.place} →`}
+                      ? `${item.place} businesses & experiences →`
+                      : `Τοπικές επιχειρήσεις στην ${item.place === "Lesvos" ? "Λέσβο" : item.place === "Crete" ? "Κρήτη" : "Κεφαλονιά"} →`}
                   </Link>
                 </div>
               </article>
