@@ -576,12 +576,12 @@ export const tours: TourItem[] = [
     image: "/images/tours/kefalonia-tours.jpg",
     place: "Kefalonia",
     title: {
-      en: "Tours in Kefalonia",
-      el: "Εκδρομές στην Κεφαλονιά",
+      en: "Experiences in Kefalonia",
+      el: "Εμπειρίες & Επιχειρήσεις στην Κεφαλονιά",
     },
     info: {
-      en: "Boat trips, hidden beaches, dramatic cliffs and charming villages make Kefalonia ideal for unforgettable island tours.",
-      el: "Βαρκάδες, κρυφές παραλίες, εντυπωσιακά τοπία και όμορφα χωριά κάνουν την Κεφαλονιά ιδανική για αξέχαστες νησιωτικές εκδρομές.",
+      en: "Discover selected local businesses in Kefalonia, from authentic spots to unique services.",
+      el: "Ανακάλυψε επιλεγμένες τοπικές επιχειρήσεις στην Κεφαλονιά.",
     },
     description: {
       en: "Discover the best of Kefalonia through handpicked tour ideas that combine famous beaches, scenic drives, caves, seaside villages and authentic local moments.",
@@ -661,12 +661,12 @@ export const tours: TourItem[] = [
     image: "/images/tours/lesvos-tours.jpg",
     place: "Lesvos",
     title: {
-      en: "Tours in Lesvos",
-      el: "Εκδρομές στη Λέσβο",
+      en: "Experiences in Lesvos",
+      el: "Εμπειρίες & Επιχειρήσεις στη Λέσβο",
     },
     info: {
-      en: "Lesvos offers cultural routes, traditional villages, thermal springs and authentic food experiences away from the crowds.",
-      el: "Η Λέσβος προσφέρει πολιτιστικές διαδρομές, παραδοσιακά χωριά, θερμές πηγές και αυθεντικές γαστρονομικές εμπειρίες μακριά από την πολυκοσμία.",
+      en: "Discover selected local businesses in Lesvos, from authentic spots to unique services.",
+      el: "Ανακάλυψε επιλεγμένες τοπικές επιχειρήσεις στη Λέσβο.",
     },
     description: {
       en: "Explore Lesvos with tours focused on culture, gastronomy, nature and heritage, from picturesque towns to unique volcanic landscapes.",
@@ -746,12 +746,12 @@ export const tours: TourItem[] = [
     image: "/images/tours/crete-tours.jpg",
     place: "Crete",
     title: {
-      en: "Tours in Crete",
-      el: "Εκδρομές στην Κρήτη",
+      en: "Experiences in Crete",
+      el: "Εμπειρίες & Επιχειρήσεις στην Κρήτη",
     },
     info: {
-      en: "From ancient sites and mountain villages to beaches and food tastings, Crete is perfect for rich full-day travel experiences.",
-      el: "Από αρχαιολογικούς χώρους και ορεινά χωριά μέχρι παραλίες και γευσιγνωσίες, η Κρήτη είναι ιδανική για πλούσιες ολοήμερες ταξιδιωτικές εμπειρίες.",
+      en: "Discover selected local businesses in Crete, from authentic spots to unique services.",
+      el: "Ανακάλυψε επιλεγμένες τοπικές επιχειρήσεις στην Κρήτη.",
     },
     description: {
       en: "Experience Crete through tours that mix history, coastline, local cuisine and traditional hospitality across one of Greece’s most diverse islands.",
