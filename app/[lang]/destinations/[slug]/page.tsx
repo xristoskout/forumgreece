@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useParams, usePathname, useRouter } from "next/navigation";
+import SiteHeader from "../../../../components/site-header";
 
 import {
   siteBrand,
@@ -59,50 +60,10 @@ export default function DestinationDetailsPage() {
 
   return (
     <main className="min-h-screen bg-transparent text-slate-900">
-      <section className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 py-5">
-          <Link
-            href={withLang("/")}
-            className="group flex shrink-0 items-center gap-3"
-          >
-            <div>
-              <div className="text-2xl font-bold tracking-tight text-indigo-800 transition group-hover:text-indigo-700">
-                {siteBrand}
-              </div>
-              <div className="text-sm text-slate-500">
-                {siteBrandLine[lang]}
-              </div>
-            </div>
-          </Link>
-
-          <div className="flex items-center gap-2 rounded-full border border-slate-200 bg-white hover:bg-slate-50 p-1">
-            <button
-              onClick={() => switchLanguage("en")}
-              className={`rounded-full px-3 py-1.5 text-sm font-semibold transition ${
-                lang === "en"
-                  ? "bg-sky-600 text-slate-900"
-                  : "text-slate-500"
-              }`}
-            >
-              EN
-            </button>
-
-            <button
-              onClick={() => switchLanguage("el")}
-              className={`rounded-full px-3 py-1.5 text-sm font-semibold transition ${
-                lang === "el"
-                  ? "bg-sky-600 text-slate-900"
-                  : "text-slate-500"
-              }`}
-            >
-              GR
-            </button>
-          </div>
-        </div>
-      </section>
+      <SiteHeader />
 
       <section
-        className="relative overflow-hidden text-slate-900"
+        className="relative overflow-hidden text-white"
         style={{
           backgroundImage: `linear-gradient(90deg, rgba(7,24,44,0.82) 0%, rgba(7,24,44,0.55) 45%, rgba(7,24,44,0.25) 100%), url('${destination.image}')`,
           backgroundSize: "cover",
@@ -119,7 +80,7 @@ export default function DestinationDetailsPage() {
               {destination.name}
             </h1>
 
-            <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-900/90">
+            <p className="mt-5 max-w-2xl text-lg leading-8 text-white/90">
               {details ? details.overview[lang] : destination.overview[lang]}
             </p>
 
@@ -135,7 +96,7 @@ export default function DestinationDetailsPage() {
 
               <Link
                 href={withLang("/")}
-                className="rounded-full border border-white/40 px-6 py-3 font-semibold text-slate-900 transition hover:bg-slate-50"
+                className="rounded-full border border-white/40 px-6 py-3 font-semibold text-white transition hover:bg-slate-50 hover:text-slate-900"
               >
                 {lang === "en" ? "Home page" : "Αρχική"}
               </Link>
@@ -150,7 +111,7 @@ export default function DestinationDetailsPage() {
               >
                 <div className="text-3xl">📍</div>
                 <h3 className="mt-4 text-xl font-semibold">{highlight}</h3>
-                <p className="mt-2 text-sm leading-6 text-slate-900/90">
+                <p className="mt-2 text-sm leading-6 text-white/90">
                   {lang === "en"
                     ? "A key reason this destination stands out for travelers."
                     : "Ένας από τους βασικούς λόγους που αυτός ο προορισμός ξεχωρίζει."}

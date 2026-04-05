@@ -11,6 +11,13 @@
   --font-sans: var(--font-geist-sans);
   --font-el: var(--font-greek-sans);
   --font-mono: var(--font-geist-mono);
+  --animate-float-playful: floatPlayful 5s ease-in-out infinite;
+}
+
+@keyframes floatPlayful {
+  0%, 100% { transform: translateY(0) rotate(0deg) scale(1); filter: drop-shadow(0 0 8px rgba(255,255,255,0.2)); }
+  33% { transform: translateY(-4px) rotate(1deg) scale(1.01); filter: drop-shadow(0 0 15px rgba(255,255,255,0.5)); }
+  66% { transform: translateY(2px) rotate(-1deg) scale(0.99); filter: drop-shadow(0 0 8px rgba(255,255,255,0.3)); }
 }
 
 body {

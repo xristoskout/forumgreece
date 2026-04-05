@@ -68,8 +68,8 @@ export default function TravelToGreecePage() {
         el: "Facebook Travel Forums",
       },
       heroTitle: {
-        en: "Discover all your Greece travel forums in one elegant hub",
-        el: "Ανακάλυψε όλα τα travel forums σου για την Ελλάδα σε ένα κομψό κεντρικό hub",
+        en: "Welcome to the most awesome Greek travel community!",
+        el: "Καλώς ήρθατε στην πιο καταπληκτική ελληνική ταξιδιωτική κοινότητα!",
       },
       heroText: {
         en: "This page brings together all your Facebook travel communities for islands, cities, beaches, food ideas and destination inspiration across Greece.",
@@ -326,20 +326,22 @@ export default function TravelToGreecePage() {
               key={item.title}
               className="group relative overflow-hidden rounded-[2.5rem] border border-slate-200 bg-white/90 backdrop-blur-md shadow-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(0,0,0,0.06)]"
             >
-              <div
-                className={
-                  item.image
-                    ? "h-48 bg-cover bg-center transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
-                    : `h-48 bg-gradient-to-br transition-all duration-700 group-hover:scale-110 group-hover:brightness-110 ${accentStyles.card}`
-                }
-                style={
-                  item.image
-                    ? {
-                        backgroundImage: `linear-gradient(to top, rgba(15,23,42,0.6), rgba(15,23,42,0.1)), url('${item.image}')`,
-                      }
-                    : undefined
-                }
-              />
+              <a href={item.href} target="_blank" rel="noreferrer" className="block overflow-hidden">
+                <div
+                  className={
+                    item.image
+                      ? "aspect-[4/3] w-full bg-cover bg-center transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
+                      : `aspect-[4/3] w-full bg-gradient-to-br transition-all duration-700 group-hover:scale-110 group-hover:brightness-110 ${accentStyles.card}`
+                  }
+                  style={
+                    item.image
+                      ? {
+                          backgroundImage: `linear-gradient(to top, rgba(15,23,42,0.6), rgba(15,23,42,0.1)), url('${item.image}')`,
+                        }
+                      : undefined
+                  }
+                />
+              </a>
 
               <div className="p-8 relative z-10 bg-white/80 backdrop-blur-md flex-1 flex flex-col h-[60%]">
                 <div className="flex items-center justify-between gap-4">
@@ -354,9 +356,11 @@ export default function TravelToGreecePage() {
                   </span>
                 </div>
 
-                <h3 className="mt-6 text-2xl font-bold leading-snug group-hover:text-indigo-800 transition-colors">
-                  {item.title}
-                </h3>
+                <a href={item.href} target="_blank" rel="noreferrer" className="mt-6 block">
+                  <h3 className="text-2xl font-bold leading-snug group-hover:text-indigo-800 transition-colors">
+                    {item.title}
+                  </h3>
+                </a>
 
                 <p className="mt-4 text-sm leading-relaxed text-slate-500 flex-1">
                   {item.description[lang]}
@@ -437,84 +441,48 @@ export default function TravelToGreecePage() {
         </div>
       </section>
 
-      <section className="relative overflow-hidden bg-white">
-        <div className="mx-auto grid max-w-7xl gap-10 px-6 py-16 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:py-24 relative z-10">
-          <div>
-            <div className="inline-flex rounded-full border border-indigo-200 bg-indigo-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-indigo-800 backdrop-blur-md mb-6 relative overflow-hidden group">
-              <span className="relative z-10">{t.heroEyebrow[lang]}</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-indigo-500/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></div>
-            </div>
-
-            <h1 className="max-w-4xl text-5xl font-extrabold leading-tight text-slate-900 md:text-6xl drop-shadow-xl">
-              {t.heroTitle[lang]}
-            </h1>
-
-            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-600">
-              {t.heroText[lang]}
-            </p>
-
-            <div className="mt-10 flex flex-wrap gap-4">
-              <a
-                href="#islands"
-                className="inline-flex h-14 items-center justify-center rounded-xl bg-indigo-600 px-8 text-sm font-semibold text-slate-900 shadow-xl transition-all hover:scale-105 hover:bg-indigo-500 hover:shadow-indigo-500/25 border-none"
-              >
-                {t.heroPrimary[lang]}
-              </a>
-
-              <Link
-                href={withLang("/")}
-                className="inline-flex h-14 items-center justify-center rounded-xl border border-slate-200 bg-white/90 backdrop-blur-md px-8 text-sm font-semibold text-slate-600 transition-all hover:bg-slate-50"
-              >
-                {t.heroSecondary[lang]}
-              </Link>
-            </div>
-          </div>
-
-          <div className="grid gap-6 sm:grid-cols-2">
-            <div className="sm:col-span-2 group overflow-hidden rounded-[2.5rem] shadow-xl border border-slate-200 transition-all duration-700 hover:shadow-[0_10px_40px_rgba(0,0,0,0.06)]">
-              <div
-                className="h-[320px] bg-cover bg-center transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
-                style={{
-                  backgroundImage:
-                    "linear-gradient(to top, rgba(15,23,42,0.4), rgba(15,23,42,0.1)), url('/images/hero/greece-main.jpg')",
-                }}
-              />
-            </div>
-
-            <div className="group overflow-hidden rounded-[2.5rem] shadow-xl border border-slate-200 transition-all duration-700 hover:shadow-[0_10px_40px_rgba(0,0,0,0.06)]">
-              <div
-                className="h-[200px] bg-cover bg-center transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
-                style={{
-                  backgroundImage:
-                    "linear-gradient(to top, rgba(15,23,42,0.4), rgba(15,23,42,0.1)), url('/images/hero/greece-small-1.jpg')",
-                }}
-              />
-            </div>
-
-            <div className="group overflow-hidden rounded-[2.5rem] shadow-xl border border-slate-200 transition-all duration-700 hover:shadow-[0_10px_40px_rgba(0,0,0,0.06)]">
-              <div
-                className="h-[200px] bg-cover bg-center transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
-                style={{
-                  backgroundImage:
-                    "linear-gradient(to top, rgba(15,23,42,0.4), rgba(15,23,42,0.1)), url('/images/hero/greece-small-2.jpg')",
-                }}
-              />
-            </div>
+      {/* Full-width Hero Section - Greeka.com vibe */}
+      <section 
+        className="relative flex min-h-[60vh] xl:min-h-[70vh] items-center justify-center bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "linear-gradient(to bottom, rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.7)), url('/images/hero/greece-main.jpg')"
+        }}
+      >
+        <div className="absolute inset-0 bg-sky-900/10 mix-blend-multiply"></div>
+        <div className="relative z-10 mx-auto max-w-5xl px-4 py-24 text-center sm:px-6">
+          <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-7xl drop-shadow-xl text-balance">
+            {t.heroTitle[lang]}
+          </h1>
+          <p className="mx-auto mt-6 max-w-2xl text-lg sm:text-2xl text-white/90 drop-shadow-md">
+            {t.heroText[lang]}
+          </p>
+          <div className="mt-10 flex flex-wrap justify-center gap-4">
+            <a
+              href="#islands"
+              className="inline-flex h-12 sm:h-14 items-center justify-center rounded-full bg-sky-600 px-8 text-sm sm:text-lg font-bold text-white shadow-[0_0_20px_rgba(2,132,199,0.4)] transition-all hover:scale-105 hover:bg-sky-500"
+            >
+              {t.heroPrimary[lang]}
+            </a>
+            <Link
+              href={withLang("/")}
+              className="inline-flex h-12 sm:h-14 items-center justify-center rounded-full border border-white/40 bg-white/10 px-8 text-sm sm:text-lg font-bold text-white backdrop-blur-md transition-all hover:bg-white/20"
+            >
+              {t.heroSecondary[lang]}
+            </Link>
           </div>
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-20 relative z-20">
-        <div className="group overflow-hidden rounded-[2.5rem] border border-slate-200 bg-white/90 backdrop-blur-md p-10 shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_0_40px_rgba(99,102,241,0.15)] flex flex-col items-center text-center">
-          <p className="text-sm font-semibold uppercase tracking-widest text-indigo-700">
+      {/* Overlapping Intro Box */}
+      <section className="relative z-20 mx-auto -mt-16 mb-8 max-w-5xl px-4 sm:px-6">
+        <div className="rounded-[2.5rem] bg-white p-8 sm:p-12 shadow-2xl text-center border border-slate-100 transition-all hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(0,0,0,0.1)]">
+          <p className="text-sm font-bold uppercase tracking-widest text-sky-600">
             {t.introEyebrow[lang]}
           </p>
-
-          <h2 className="mt-4 text-4xl font-bold tracking-tight">
+          <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
             {t.introTitle[lang]}
           </h2>
-
-          <p className="mt-6 max-w-3xl text-lg leading-relaxed text-slate-600">
+          <p className="mx-auto mt-4 max-w-3xl text-lg text-slate-600">
             {t.introText[lang]}
           </p>
         </div>
@@ -548,15 +516,15 @@ export default function TravelToGreecePage() {
           <div>{t.footerText[lang]}</div>
 
           <div className="flex gap-5">
-            <a href="#" className="hover:text-slate-900">
+            <Link href={withLang("/about")} className="hover:text-slate-900">
               {t.footerAbout[lang]}
-            </a>
-            <a href="#" className="hover:text-slate-900">
+            </Link>
+            <Link href={withLang("/contact")} className="hover:text-slate-900">
               {t.footerContact[lang]}
-            </a>
-            <a href="#" className="hover:text-slate-900">
+            </Link>
+            <Link href={withLang("/privacy")} className="hover:text-slate-900">
               {t.footerPrivacy[lang]}
-            </a>
+            </Link>
           </div>
         </div>
       </footer>

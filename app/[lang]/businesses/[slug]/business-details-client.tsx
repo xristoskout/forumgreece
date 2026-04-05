@@ -116,7 +116,7 @@ export default function BusinessDetailsClient({
   }, [business.galleryCount, business.image, business.slug]);
 
   const hasContact = Boolean(
-    business.phone || business.email || business.youtube
+    business.phone || business.email || business.youtube || business.website
   );
 
   const videoId = business.youtube ? getYouTubeVideoId(business.youtube) : null;
@@ -146,6 +146,7 @@ export default function BusinessDetailsClient({
     practicalInfo:
       lang === "en" ? "Useful Notes & Rules" : "Κανόνες & χρήσιμα",
     contact: lang === "en" ? "Contact" : "Επικοινωνία",
+    website: lang === "en" ? "Website" : "Ιστοσελίδα",
     video: lang === "en" ? "Video Preview" : "Προεπισκόπηση βίντεο",
     location: lang === "en" ? "Location" : "Τοποθεσία",
     openMap: lang === "en" ? "Open map" : "Άνοιγμα χάρτη",
@@ -221,15 +222,15 @@ export default function BusinessDetailsClient({
                 )}
               </div>
 
-              <h1 className="mt-5 text-4xl font-bold tracking-tight md:text-5xl">
+              <h1 className="mt-5 text-4xl font-bold tracking-tight text-white drop-shadow-lg md:text-5xl animate-float-playful transition-all duration-300 hover:scale-105 hover:rotate-1 hover:text-indigo-50 cursor-default">
                 {business.name}
               </h1>
 
-              <p className="mt-4 inline-flex rounded-full border border-white/15 bg-slate-50 px-4 py-2 text-sm font-medium text-slate-900/95 backdrop-blur">
+              <p className="mt-4 inline-flex rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur">
                 {business.place}
               </p>
 
-              <p className="mt-6 max-w-3xl text-base leading-8 text-slate-900/90">
+              <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-100 drop-shadow-md">
                 {business.info[lang]}
               </p>
 
@@ -237,14 +238,14 @@ export default function BusinessDetailsClient({
                 {business.highlights[lang].map((item, index) => (
                   <span
                     key={`hero-highlight-${item}-${index}`}
-                    className="rounded-full border border-white/15 bg-slate-50 px-4 py-2 text-sm font-medium text-slate-900/95 backdrop-blur"
+                    className="rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur"
                   >
                     {item}
                   </span>
                 ))}
               </div>
 
-              <p className="mt-8 max-w-2xl text-sm leading-7 text-slate-900/80">
+              <p className="mt-8 max-w-2xl text-sm leading-7 text-slate-200 drop-shadow">
                 {t.premiumNote}
               </p>
             </div>
@@ -270,6 +271,17 @@ export default function BusinessDetailsClient({
                     className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-medium text-slate-900 transition hover:bg-white/15"
                   >
                     {business.email}
+                  </a>
+                )}
+
+                {business.website && (
+                  <a
+                    href={business.website}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-medium text-slate-900 transition hover:bg-white/15"
+                  >
+                    {t.website}
                   </a>
                 )}
 
@@ -484,6 +496,17 @@ export default function BusinessDetailsClient({
                       className="rounded-2xl border border-slate-200 bg-white hover:bg-slate-50 px-6 py-4 text-sm font-medium text-slate-600 transition-all hover:-translate-y-0.5 hover:shadow-lg"
                     >
                       {business.email}
+                    </a>
+                  )}
+
+                  {business.website && (
+                    <a
+                      href={business.website}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="rounded-2xl border border-slate-200 bg-white hover:bg-slate-50 px-6 py-4 text-sm font-medium text-slate-600 transition-all hover:-translate-y-0.5 hover:shadow-lg"
+                    >
+                      {t.website}
                     </a>
                   )}
 

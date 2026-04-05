@@ -1,0 +1,197 @@
+"use client";
+
+import Link from 'next/link';
+import Image from 'next/image';
+import { usePathname } from 'next/navigation';
+import SiteHeader from "../../../components/site-header";
+
+type Lang = "en" | "el";
+
+export default function PromotionPage() {
+  const pathname = usePathname();
+  const lang: Lang = pathname.startsWith("/el") ? "el" : "en";
+  const t = {
+    title: {
+      en: "Personalized Business Promotion",
+      el: "Προσωποποιημένη Προβολή Επιχειρήσεων"
+    },
+    subtitle: {
+      en: "Connect with thousands of travelers planning their trip to Greece. Elevate your brand with targeted promotion tailored to your exact needs.",
+      el: "Συνδέσου με χιλιάδες ταξιδιώτες που οργανώνουν το ταξίδι τους στην Ελλάδα. Αναβάθμισε το brand σου με στοχευμένη προβολή προσαρμοσμένη στις δικές σου ανάγκες."
+    },
+    services_eyebrow: {
+      en: "Our Services",
+      el: "Οι Υπηρεσίες Μας"
+    },
+    services_title: {
+      en: "Why promote your business with us?",
+      el: "Γιατί να προβάλεις την επιχείρησή σου σε εμάς;"
+    },
+    service1_title: {
+      en: "Targeted Audience",
+      el: "Στοχευμένο Κοινό"
+    },
+    service1_desc: {
+      en: "Reach travelers who are actively looking for hotels, restaurants, and tours in Greece right when they are making decisions.",
+      el: "Προσέγγισε ταξιδιώτες που αναζητούν ενεργά ξενοδοχεία, εστιατόρια και εκδρομές στην Ελλάδα τη στιγμή που παίρνουν αποφάσεις."
+    },
+    service2_title: {
+      en: "Premium Placement",
+      el: "Premium Τοποθέτηση"
+    },
+    service2_desc: {
+      en: "Get featured across our top destination guides, travel hubs, and interactive tools for maximum visibility.",
+      el: "Εμφανίσου στους κορυφαίους οδηγούς προορισμών, τα travel hubs και τα διαδραστικά εργαλεία μας για μέγιστη κάλυψη."
+    },
+    service3_title: {
+      en: "Direct Bookings & SEO",
+      el: "Απευθείας Κρατήσεις & SEO"
+    },
+    service3_desc: {
+      en: "Redirect visitors straight to your website without commissions. Build strong domain authority and backlink opportunities.",
+      el: "Η κίνηση πηγαίνει κατευθείαν στη σελίδα σου χωρίς προμήθειες. Χτίζεις δυνατό SEO και αποκτάς πολύτιμα backlinks."
+    },
+    audience_eyebrow: {
+      en: "Who We Work With",
+      el: "Με Ποιους Συνεργαζόμαστε"
+    },
+    audience_title: {
+      en: "Promotion for all travel professionals",
+      el: "Προβολή για επαγγελματίες του τουρισμού"
+    },
+    audience_hotels: {
+      en: "Hotels & Villas",
+      el: "Ξενοδοχεία & Βίλες"
+    },
+    audience_tours: {
+      en: "Tours & Experiences",
+      el: "Εκδρομές & Εμπειρίες"
+    },
+    audience_food: {
+      en: "Restaurants & Bars",
+      el: "Εστιατόρια & Μπαρ"
+    },
+    cta_title: {
+      en: "Ready to grow your business?",
+      el: "Έτοιμοι να αναπτύξετε την επιχείρησή σας;"
+    },
+    cta_text: {
+      en: "Contact us today for a custom promotion plan.",
+      el: "Επικοινωνήστε μαζί μας σήμερα για να οργανώσουμε ένα πλάνο προβολής."
+    },
+    cta_button: {
+      en: "Contact us",
+      el: "Επικοινωνία"
+    }
+  };
+
+  return (
+    <main className="min-h-screen bg-white">
+      <SiteHeader />
+      {/* Hero Section */}
+      <section className="relative overflow-hidden bg-slate-900 py-32 sm:py-40">
+        <div className="absolute inset-0 z-0 opacity-30 mix-blend-luminosity">
+           {/* If user has hero images, we use a placeholder or known image, fallback to gradients */}
+           <div className="absolute inset-0 bg-gradient-to-br from-indigo-900 to-slate-900"></div>
+           <Image src="/images/hero/greece-main.jpg" alt="Greece background for business promotion" fill className="object-cover opacity-50" />
+        </div>
+        <div className="relative z-10 mx-auto max-w-5xl px-6 text-center">
+          <span className="inline-flex rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-white mb-6 backdrop-blur-md">
+            GoGreeceNow Business
+          </span>
+          <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-6xl drop-shadow-xl">
+            {t.title[lang]}
+          </h1>
+          <p className="mx-auto mt-6 max-w-3xl text-xl text-slate-200 drop-shadow-md leading-relaxed font-light">
+            {t.subtitle[lang]}
+          </p>
+        </div>
+      </section>
+
+      {/* Services/Features Section */}
+      <section className="py-24 sm:py-32 bg-white">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl text-center">
+            <h2 className="text-sm font-bold uppercase tracking-widest text-indigo-600">{t.services_eyebrow[lang]}</h2>
+            <p className="mt-2 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
+              {t.services_title[lang]}
+            </p>
+          </div>
+          <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+            <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+              {/* Feature 1 */}
+              <div className="flex flex-col items-center text-center p-10 rounded-[2.5rem] bg-slate-50 border border-slate-100 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+                <dt className="text-xl font-bold leading-7 text-slate-900 flex flex-col items-center gap-6">
+                  <div className="flex h-20 w-20 items-center justify-center rounded-full bg-indigo-100 text-4xl text-indigo-600 shadow-inner">🎯</div>
+                  {t.service1_title[lang]}
+                </dt>
+                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-slate-600 font-medium">
+                  <p className="flex-auto">{t.service1_desc[lang]}</p>
+                </dd>
+              </div>
+
+              {/* Feature 2 */}
+              <div className="flex flex-col items-center text-center p-10 rounded-[2.5rem] bg-slate-50 border border-slate-100 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+                <dt className="text-xl font-bold leading-7 text-slate-900 flex flex-col items-center gap-6">
+                  <div className="flex h-20 w-20 items-center justify-center rounded-full bg-indigo-100 text-4xl text-indigo-600 shadow-inner">⭐</div>
+                  {t.service2_title[lang]}
+                </dt>
+                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-slate-600 font-medium">
+                  <p className="flex-auto">{t.service2_desc[lang]}</p>
+                </dd>
+              </div>
+
+              {/* Feature 3 */}
+              <div className="flex flex-col items-center text-center p-10 rounded-[2.5rem] bg-slate-50 border border-slate-100 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+                <dt className="text-xl font-bold leading-7 text-slate-900 flex flex-col items-center gap-6">
+                  <div className="flex h-20 w-20 items-center justify-center rounded-full bg-indigo-100 text-4xl text-indigo-600 shadow-inner">🚀</div>
+                  {t.service3_title[lang]}
+                </dt>
+                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-slate-600 font-medium">
+                  <p className="flex-auto">{t.service3_desc[lang]}</p>
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      {/* Categories we serve */}
+      <section className="bg-slate-50 py-24 sm:py-32 border-t border-slate-200">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center">
+            <h2 className="text-sm font-bold uppercase tracking-widest text-indigo-600 mb-2">{t.audience_eyebrow[lang]}</h2>
+            <p className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl mb-12">
+              {t.audience_title[lang]}
+            </p>
+            <div className="flex flex-wrap justify-center gap-4">
+               <span className="px-6 py-3 rounded-full bg-white border border-slate-200 shadow-sm text-lg font-semibold text-slate-700">🏨 {t.audience_hotels[lang]}</span>
+               <span className="px-6 py-3 rounded-full bg-white border border-slate-200 shadow-sm text-lg font-semibold text-slate-700">⚓ {t.audience_tours[lang]}</span>
+               <span className="px-6 py-3 rounded-full bg-white border border-slate-200 shadow-sm text-lg font-semibold text-slate-700">🍷 {t.audience_food[lang]}</span>
+            </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="bg-gradient-to-br from-indigo-900 to-indigo-700">
+        <div className="mx-auto max-w-7xl px-6 py-20 lg:flex lg:items-center lg:justify-between lg:px-8">
+          <div>
+            <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+              {t.cta_title[lang]}
+            </h2>
+            <p className="mt-3 text-lg font-light text-indigo-100 max-w-xl">
+               {t.cta_text[lang]}
+            </p>
+          </div>
+          <div className="mt-10 flex items-center gap-x-6 lg:mt-0 lg:flex-shrink-0">
+            <a
+              href="mailto:contact@gogreecenow.com"
+              className="rounded-full bg-white px-10 py-5 text-lg font-bold text-indigo-600 shadow-2xl hover:bg-slate-50 hover:scale-105 transition-all"
+            >
+              {t.cta_button[lang]}
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}
