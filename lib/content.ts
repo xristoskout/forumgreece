@@ -24,6 +24,10 @@ export type Destination = {
   image: string;
   overview: Localized;
   highlights: LocalizedList;
+  seo?: {
+    title: Localized;
+    description: Localized;
+  };
 };
 
 export type GuideSection = {
@@ -147,6 +151,16 @@ export const destinations: Destination[] = [
       en: ["Oia sunsets", "Caldera hotels", "Volcanic beaches"],
       el: ["Ηλιοβασιλέματα στην Οία", "Ξενοδοχεία στην καλντέρα", "Ηφαιστειακές παραλίες"],
     },
+    seo: {
+      title: {
+        en: "Santorini: The ultimate guide (best time, attractions, beaches, food)",
+        el: "Σαντορίνη: Ο απόλυτος οδηγός (καλύτερη εποχή, αξιοθέατα, παραλίες, φαγητό)"
+      },
+      description: {
+        en: "Detailed guide to Santorini: why to go, best time to visit, how to get there, top experiences, beaches, villages, local flavors, secrets, and practical tips + FAQ.",
+        el: "Αναλυτικός οδηγός για Σαντορίνη: γιατί να πας, πότε είναι καλύτερα, πώς φτάνεις, top εμπειρίες, παραλίες, χωριά, τοπικές γεύσεις, μυστικά και πρακτικά tips + FAQ."
+      }
+    }
   },
   {
     slug: "mykonos",
@@ -162,9 +176,19 @@ export const destinations: Destination[] = [
       el: "Η Μύκονος συνδυάζει glamorous παραλίες, νυχτερινή ζωή και κομψό κυκλαδίτικο ύφος.",
     },
     highlights: {
-      en: ["Beach clubs", "Little Venice", "Luxury stays"],
-      el: ["Beach clubs", "Μικρή Βενετία", "Πολυτελής διαμονή"],
+      en: ["Windmills", "Little Venice", "Party beaches"],
+      el: ["Ανεμόμυλοι", "Μικρή Βενετία", "Party παραλίες"],
     },
+    seo: {
+      title: {
+        en: "Mykonos: The comprehensive guide (beaches, attractions, Delos, food & tips)",
+        el: "Μύκονος: Ο αναλυτικός οδηγός (παραλίες, αξιοθέατα, Δήλος, φαγητό & tips)"
+      },
+      description: {
+        en: "Complete guide to Mykonos: why to go, best time, transport, top attractions (Chora, Little Venice, windmills, Paraportiani, Delos), beaches for every style, authentic food, and secrets to enjoy it stress-free.",
+        el: "Πλήρης οδηγός για Μύκονο: γιατί να πας, καλύτερη εποχή, πώς φτάνεις, top αξιοθέατα (Χώρα, Μικρή Βενετία, ανεμόμυλοι, Παναγία Παραπορτιανή, Δήλος), παραλίες για κάθε στυλ, αυθεντικό φαγητό και μυστικά για να την απολαύσεις χωρίς άγχος."
+      }
+    }
   },
   {
     slug: "crete",
@@ -183,6 +207,16 @@ export const destinations: Destination[] = [
       en: ["Road trips", "Cretan food", "Historic sites"],
       el: ["Road trips", "Κρητική κουζίνα", "Ιστορικά αξιοθέατα"],
     },
+    seo: {
+      title: {
+        en: "Crete: The ultimate guide (beaches, gorges, Minoan palaces, food & tips)",
+        el: "Κρήτη: Ο απόλυτος οδηγός (παραλίες, φαράγγια, μινωικά ανάκτορα, φαγητό & tips)"
+      },
+      description: {
+        en: "Comprehensive guide to Crete: why it's worth it, best time to visit, how to get there, what to see (Knossos/UNESCO, Chania, Samaria, Balos, Elafonissi, Spinalonga), villages, authentic flavors and practical secrets to enjoy it.",
+        el: "Αναλυτικός οδηγός για Κρήτη: γιατί αξίζει, καλύτερη εποχή, πώς φτάνεις, τι να δεις (Κνωσός/UNESCO, Χανιά, Σαμαριά, Μπάλος, Ελαφονήσι, Σπιναλόγκα), χωριά, αυθεντικές γεύσεις και πρακτικά μυστικά για να την απολαύσεις."
+      }
+    }
   },
   {
     slug: "corfu",

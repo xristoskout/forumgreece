@@ -3,7 +3,7 @@
 import { usePathname } from 'next/navigation';
 import SiteHeader from "../../../components/site-header";
 import Image from 'next/image';
-
+import Link from 'next/link';
 type Lang = "en" | "el";
 
 export default function AboutPage() {
@@ -114,6 +114,28 @@ export default function AboutPage() {
               <p className="text-slate-600">{t.card3_text[lang]}</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-16 sm:py-24 border-t border-slate-100">
+        <div className="mx-auto max-w-4xl px-6 text-center">
+          <div className="inline-flex items-center gap-2 rounded-full border border-indigo-100 bg-indigo-50 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-indigo-600 mb-6 transition-colors hover:bg-indigo-100">
+            {lang === "en" ? "Digital Partner" : "Ψηφιακος Συνεργατης"}
+          </div>
+          <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl mb-6">
+            {lang === "en" ? "Technical Implementation by" : "Τεχνική Υλοποίηση από την"} <span className="text-indigo-600 font-extrabold block sm:inline">Focus</span>
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-600 mb-8">
+            {lang === "en" 
+              ? "Discover how Focus can transform your business with state-of-the-art web development, digital marketing, and AI solutions."
+              : "Ανακαλύψτε πώς η Focus μπορεί να μεταμορφώσει την επιχείρησή σας με σύγχρονη κατασκευή ιστοσελίδων, ψηφιακό marketing και λύσεις AI."}
+          </p>
+          <Link
+            href={lang === "en" ? "/en/focus" : "/el/focus"}
+            className="inline-flex items-center justify-center rounded-2xl bg-indigo-600 px-8 py-4 text-base font-semibold text-white shadow-lg transition-all hover:-translate-y-1 hover:bg-indigo-700 hover:shadow-indigo-500/25"
+          >
+            {lang === "en" ? "Learn More About Focus →" : "Μάθετε Περισσότερα για την Focus →"}
+          </Link>
         </div>
       </section>
 

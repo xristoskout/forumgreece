@@ -398,6 +398,11 @@ export default function ExperienceDetailsClient({
             </Link>
           </div>
         </div>
+        <div className="border-t border-slate-100 mt-4 pt-6 pb-8 flex justify-center">
+          <Link href={withLang("/focus")} className="text-xs font-semibold text-slate-400 hover:text-indigo-600 transition-colors">
+            Κατασκευή Ιστοσελίδας 2026 By Focus
+          </Link>
+        </div>
       </footer>
     </main>
   );

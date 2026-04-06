@@ -7,6 +7,72 @@ export type DestinationDetail = {
 };
 
 export const destinationDetails: Record<string, DestinationDetail> = {
+  santorini: {
+    overview: {
+      en: "Santorini (or Thira) is one of those destinations that needs no introduction — yet, once you walk its paths, you realize its fame is only the beginning. The white settlements hanging over the caldera, the jasmine-scented alleys, the dark volcanic beaches, and the volcanic wine, create a setting unlike any other in the Cyclades.",
+      el: "Η Σαντορίνη (ή Θήρα) είναι από εκείνους τους προορισμούς που δεν χρειάζονται συστάσεις — κι όμως, μόλις την περπατήσεις, καταλαβαίνεις ότι η φήμη της είναι μόνο η αρχή. Οι λευκοί οικισμοί που κρέμονται πάνω από την καλντέρα, τα δρομάκια που μυρίζουν γιασεμί, οι σκούρες ηφαιστειακές παραλίες και το κρασί που “γράφει” αλάτι και πέτρα στο στόμα, συνθέτουν ένα σκηνικό που δεν μοιάζει με κανένα άλλο στις Κυκλάδες.",
+    },
+    pageIncludes: {
+      en: [
+        "The geological miracle of the caldera",
+        "Prehistoric culture & Museums",
+        "PDO Wines & Volcanic gastronomy",
+        "Beaches & Hidden villages",
+      ],
+      el: [
+        "Γεωλογικό θαύμα της καλντέρας",
+        "Προϊστορικός πολιτισμός & Μουσεία",
+        "Οίνος ΠΟΠ & Ηφαιστειακή γαστρονομία",
+        "Παραλίες & Κρυφά χωριά",
+      ],
+    },
+    perfectFor: {
+      en: [
+        "Romantic trips and couples",
+        "Landscape and photography lovers",
+        "Gastronomic and wine journeys",
+      ],
+      el: [
+        "Ρομαντικά ταξίδια και ζευγάρια",
+        "Λάτρεις των τοπίων και της φωτογραφίας",
+        "Γαστρονομικές και οινικές αναζητήσεις",
+      ],
+    },
+  },
+  mykonos: {
+    overview: {
+      en: "Mykonos: beyond the party, an island of history, sea, and 'hidden' corners. Mykonos is one of those destinations everyone thinks they know before even setting foot there. Images of whitewashed alleys, windmills above the sea, sunset cocktails, and beach clubs playing music till late. Yes, all this exists — and at high volume. But Mykonos has another face: authentic, quiet beaches, an inland village that takes you back to the old Cyclades, museums explaining why this island became the gateway to the Aegean, and (its great asset) Delos just a breath away — one of the most important archaeological sites of the Mediterranean. If you want to put 'Mykonos' on your travel list and do it right, the secret is to see it as a multi-speed island: a bit of cosmopolitan vibe, a bit of quiet for a breather, and a bit of history to leave with something more substantial than just photos.",
+      el: "Μύκονος: πέρα από το πάρτι, ένα νησί με ιστορία, θάλασσα και “κρυφές” γωνιές. Η Μύκονος είναι από τους προορισμούς που όλοι νομίζουν ότι ξέρουν, πριν καν πατήσουν το πόδι τους εκεί. Εικόνες από κατάλευκα σοκάκια, ανεμόμυλους πάνω από τη θάλασσα, κοκτέιλ στο ηλιοβασίλεμα και beach clubs που παίζουν μουσική μέχρι αργά. Ναι, όλα αυτά υπάρχουν — και μάλιστα σε υψηλή ένταση. Αλλά η Μύκονος έχει κι ένα άλλο πρόσωπο: αυθεντικές παραλίες χωρίς φασαρία, ένα εσωτερικό χωριό που σε “γυρίζει” σε παλιές Κυκλάδες, μουσεία που εξηγούν γιατί αυτό το νησί έγινε πύλη στο Αιγαίο, και (το μεγάλο ατού) τη Δήλο σε απόσταση αναπνοής — έναν από τους σημαντικότερους αρχαιολογικούς τόπους της Μεσογείου. Αν θες να γράψεις “Μύκονος” στην ταξιδιωτική σου λίστα και να το κάνεις σωστά, το μυστικό είναι να τη δεις σαν νησί πολλών ταχυτήτων: λίγη κοσμικότητα για το vibe, λίγη ησυχία για ανάσα, και λίγη ιστορία για να φύγεις με κάτι πιο ουσιαστικό από φωτογραφίες."
+    },
+    pageIncludes: {
+      en: [
+        "Cosmopolitan Chora",
+        "Sacred Delos",
+        "Beaches for every taste",
+        "Cycladic gastronomy"
+      ],
+      el: [
+        "Η κοσμοπολίτικη Χώρα",
+        "Η ιερή Δήλος",
+        "Παραλίες για κάθε γούστο",
+        "Κυκλαδίτικη γαστρονομία"
+      ]
+    },
+    perfectFor: {
+      en: [
+        "Party lovers",
+        "Couples and friends",
+        "Luxury seekers",
+        "History explorers (Delos)"
+      ],
+      el: [
+        "Λάτρεις των parties",
+        "Ζευγάρια και φίλους",
+        "Όσους αναζητούν πολυτέλεια",
+        "Εξερευνητές της ιστορίας (Δήλος)"
+      ]
+    }
+  },
   kefalonia: {
     overview: {
       en: "Kefalonia is one of the most rewarding islands for travelers who want more than a simple beach holiday. A well-planned stay here can mix dramatic coastal views, boat excursions, turquoise waters, traditional villages and relaxed local culture in a single experience. This page presents a travel-style overview of what makes Kefalonia special and what visitors can expect when exploring the island.",
