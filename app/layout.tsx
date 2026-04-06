@@ -1,12 +1,12 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Montserrat, Geist_Mono, Noto_Sans } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 const geistSans = Montserrat({
-  variable: "--font-geist-sans", // keeping the variable name to avoid breaking tailwind CSS
-  subsets: ["latin", "cyrillic", "cyrillic-ext", "latin-ext", "vietnamese"], // Montserrat doesn't strictly type "greek" in Next 15 either, falling back to latin
+  variable: "--font-geist-sans",
+  subsets: ["latin", "cyrillic", "cyrillic-ext", "latin-ext", "vietnamese"],
 });
 
 const geistMono = Geist_Mono({
@@ -19,6 +19,10 @@ const notoGreek = Noto_Sans({
   subsets: ["greek", "greek-ext"],
 });
 
+export const viewport: Viewport = {
+  themeColor: "#f4f7fb",
+};
+
 export const metadata: Metadata = {
   title: {
     default: "GoGreeceNow",
@@ -27,6 +31,9 @@ export const metadata: Metadata = {
   description:
     "GoGreeceNow is a Greece travel portal with destinations, travel info, hotels, food guides and local communities.",
   applicationName: "GoGreeceNow",
+  appleWebApp: {
+    title: "GoGreeceNow",
+  },
   keywords: [
     "GoGreeceNow",
     "Greece travel",
