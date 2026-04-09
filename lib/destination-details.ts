@@ -177,4 +177,208 @@ export const destinationDetails: Record<string, DestinationDetail> = {
       ],
     },
   },
+  corfu: {
+    overview: {
+      en: "Corfu has that rare ability to win you over before you even arrive: aromas of lemon and cypress trees, an Old Town that looks like it was plucked from an Italian set, narrow alleys (kantounia) hiding courtyards and balconies, and a sea that changes color depending on the weather. It is no coincidence that the Old Town of Corfu has been recognized as a UNESCO World Heritage Site, mainly for its urban and port ensemble with Venetian fortifications. But Corfu is not just 'a walk in the town + a beach'. It is an island with a very strong historical layer: Venetian, French, British and Greek periods left traces in its architecture, musical tradition and food.",
+      el: "Η Κέρκυρα έχει εκείνη τη σπάνια ικανότητα να σε κερδίζει πριν καν φτάσεις: αρώματα από λεμονιές και κυπαρίσσια, μια Παλιά Πόλη που μοιάζει να ξεκόλλησε από ιταλικό σκηνικό, καντούνια που κρύβουν αυλές και μπαλκόνια, και μια θάλασσα που αλλάζει χρώμα ανάλογα με τον καιρό. Δεν είναι τυχαίο ότι η Παλιά Πόλη της Κέρκυρας έχει αναγνωριστεί ως Μνημείο Παγκόσμιας Κληρονομιάς της UNESCO, κυρίως για το αστικό και λιμενικό σύνολο με τις ενετικές οχυρώσεις. Αλλά η Κέρκυρα δεν εξαντλείται στη «βόλτα στην πόλη + μια παραλία». Είναι νησί με πολύ δυνατή ιστορική στρώση: ενετική, γαλλική, βρετανική και ελληνική περίοδος άφησαν ίχνη στην αρχιτεκτονική, στη μουσική παράδοση και στο φαγητό.",
+    },
+    pageIncludes: {
+      en: [
+        "UNESCO Old Town & Fortresses",
+        "Beaches for families, landscapes & wild vibes",
+        "Villages & inland exploration",
+        "Iconic gastronomy & local secrets",
+      ],
+      el: [
+        "Παλιά Πόλη UNESCO & Φρούρια",
+        "Παραλίες για οικογένειες, τοπία & άγρια ομορφιά",
+        "Χωριά & εξερεύνηση στην ενδοχώρα",
+        "Εμβληματική γαστρονομία & τοπικά μυστικά",
+      ],
+    },
+    perfectFor: {
+      en: [
+        "Couples and romantic getaways",
+        "Families looking for organized and natural beaches",
+        "Architecture and history enthusiasts",
+        "Explorers of culture and fine dining",
+      ],
+      el: [
+        "Ζευγάρια και ρομαντικές αποδράσεις",
+        "Οικογένειες που αναζητούν οργανωμένες αλλά και φυσικές παραλίες",
+        "Λάτρεις της αρχιτεκτονικής και της ιστορίας",
+        "Εξερευνητές πολιτισμού και καλής γαστρονομίας",
+      ],
+    },
+  },
+  "nayplio-odigos-taxidiou": {
+    overview: {
+      en: "Nafplio is the city that makes you feel like you are in a romantic movie... but with Greek coffee. It is one of those destinations that always work: weekends, holidays, spring getaways in Greece. The Old Town with its neoclassical buildings, narrow alleys, squares, and castles that you can see from everywhere, gives this rare mix of 'picturesque' without being fake. And there is a historical weight that makes the trip more meaningful: Nafplio flourished when it became the first capital of the Greek state, from 1827 to 1834.",
+      el: "Το Ναύπλιο είναι η πόλη που σε κάνει να νομίζεις πως είσαι σε ρομαντική ταινία… αλλά με ελληνικό καφέ. Είναι από εκείνους τους προορισμούς που δουλεύουν πάντα: διήμερο, τριήμερο, γιορτές, ανοιξιάτικες αποδράσεις. Η Παλιά Πόλη με τα νεοκλασικά, τα καντούνια, τις πλατείες και τα κάστρα που βλέπεις από παντού, δίνει αυτό το σπάνιο μείγμα: «γραφικό» χωρίς να είναι ψεύτικο. Και υπάρχει κι ένα ιστορικό βάρος που κάνει το ταξίδι πιο ουσιαστικό: το Ναύπλιο γνώρισε τη μεγάλη ακμή του όταν έγινε πρωτεύουσα του ελληνικού κράτους, από το 1827 έως το 1834.",
+    },
+    pageIncludes: {
+      en: [
+        "Palamidi & Bourtzi Castles",
+        "Archaeological trips (Mycenae, Epidaurus)",
+        "Old Town walks & Architecture",
+        "Beaches like Arvanitia & Karathona",
+      ],
+      el: [
+        "Παλαμήδι & Μπούρτζι",
+        "Αρχαιολογικές εκδρομές (Μυκήνες, Επίδαυρος)",
+        "Βόλτες στη Παλιά Πόλη & Αρχιτεκτονική",
+        "Παραλίες όπως η Αρβανιτιά & Καραθώνα",
+      ],
+    },
+    perfectFor: {
+      en: [
+        "Couples and romantic getaways",
+        "History and archaeology enthusiasts",
+        "City breaks and short weekend escapes",
+        "Families seeking easy walking areas",
+      ],
+      el: [
+        "Ζευγάρια και ρομαντικές αποδράσεις",
+        "Λάτρεις της ιστορίας και της αρχαιολογίας",
+        "City breaks και σύντομες αποδράσεις",
+        "Οικογένειες που αναζητούν εύκολες βόλτες",
+      ],
+    },
+  },
+  thessaloniki: {
+    overview: {
+      en: "Thessaloniki is not 'just' the second largest city in Greece. It is a capital of rhythm: coffee that becomes a ritual, a walk on the New Waterfront that feels like a daily city date, Byzantine monuments not seen behind fences but next to modern shops, and neighborhoods that change character within minutes of walking. And the most significant asset? Thessaloniki is a global cultural destination: its Early Christian and Byzantine monuments are listed by UNESCO.",
+      el: "Η Θεσσαλονίκη δεν είναι “απλώς” η δεύτερη μεγαλύτερη πόλη της Ελλάδας. Είναι μια πρωτεύουσα ρυθμού: καφές που γίνεται τελετουργία, βόλτα στη Νέα Παραλία που μοιάζει με καθημερινό ραντεβού της πόλης, βυζαντινά μνημεία που δεν τα βλέπεις πίσω από κάγκελα αλλά δίπλα σε σύγχρονα μαγαζιά, και γειτονιές που αλλάζουν χαρακτήρα μέσα σε λίγα λεπτά περπατήματος. Και το πιο “βαρύ χαρτί”; Η Θεσσαλονίκη είναι παγκόσμιος προορισμός πολιτισμού: τα Παλαιοχριστιανικά και Βυζαντινά μνημεία της είναι ενταγμένα στον κατάλογο UNESCO.",
+    },
+    pageIncludes: {
+      en: [
+        "White Tower & New Waterfront",
+        "UNESCO Byzantine monuments",
+        "Famous food markets (Kapani, Modiano)",
+        "Ano Poli (Upper Town)",
+      ],
+      el: [
+        "Λευκός Πύργος & Νέα Παραλία",
+        "Βυζαντινά μνημεία UNESCO",
+        "Διάσημες αγορές (Καπάνι, Μοδιάνο)",
+        "Άνω Πόλη",
+      ],
+    },
+    perfectFor: {
+      en: [
+        "Food lovers and culinary explorers",
+        "Young travelers and night owls",
+        "History and culture enthusiasts",
+        "Weekend city breaks",
+      ],
+      el: [
+        "Λάτρεις του φαγητού και της γαστρονομίας",
+        "Νέους ταξιδιώτες και λάτρεις της νυχτερινής ζωής",
+        "Εραστές της ιστορίας και του πολιτισμού",
+        "City breaks για το Σαββατοκύριακο",
+      ],
+    },
+  },
+  kefalonia: {
+    overview: {
+      en: "Kefalonia is one of those islands that cannot be boxed into a single category. It has an 'alpine' feel in the mountains, caves that look out of this world, beaches that change colors throughout the day, and villages that fiercely maintain their identity. Simultaneously, it is a living geological laboratory—the Kefalonia-Ithaca UNESCO Global Geopark is celebrated for its geological diversity and active tectonic environment. If you're looking for a destination combining dreamy beaches, road trips, authentic gastronomy, history, and nature, Kefalonia is one of the most complete choices in Greece.",
+      el: "Η Κεφαλονιά είναι από εκείνα τα νησιά που δεν χωράνε σε μία ταμπέλα. Είναι Ιόνιο, αλλά έχει “αλπική” αίσθηση στο βουνό, σπήλαια που μοιάζουν με σκηνικό άλλου κόσμου, παραλίες που αλλάζουν χρώμα μέσα στην ίδια μέρα και χωριά που κρατάνε την ταυτότητά τους με πείσμα. Ταυτόχρονα, είναι ένα ζωντανό “γεωλογικό εργαστήριο”: η Κεφαλονιά–Ιθάκη είναι UNESCO Global Geopark. Αν ψάχνεις προορισμό που να συνδυάζει “παραλία-όνειρο”, road trip, αυθεντική γαστρονομία, ιστορία και φυσιολατρικές εμπειρίες, η Κεφαλονιά είναι από τις πιο ολοκληρωμένες επιλογές στην Ελλάδα.",
+    },
+    pageIncludes: {
+      en: [
+        "Myrtos, Antisamos & famous beaches",
+        "Melissani & Drogarati Caves",
+        "Ainos National Park hikes",
+        "Assos & Fiskardo villages",
+      ],
+      el: [
+        "Μύρτος, Αντίσαμος & διάσημες παραλίες",
+        "Μελισσάνη & Σπήλαιο Δρογκαράτης",
+        "Εθνικός Δρυμός Αίνου",
+        "Χωριά Άσσος & Φισκάρδο",
+      ],
+    },
+    perfectFor: {
+      en: [
+        "Road trip enthusiasts",
+        "Nature and geology lovers",
+        "Families looking for diverse activities",
+        "Couples seeking romantic coastal escapes",
+      ],
+      el: [
+        "Λάτρεις των road trips",
+        "Φυσιολάτρες και εξερευνητές",
+        "Οικογένειες που αναζητούν δράσεις",
+        "Ζευγάρια για ρομαντικές αποδράσεις",
+      ],
+    },
+  },
+  lesvos: {
+    overview: {
+      en: "Lesvos is one of those islands that instantly shifts you to a different pace: not because it 'has nothing to do', but because it offers so much—on a truly continental scale. It's the third-largest Greek island, covered in a mosaic of olive groves, thermal springs, wetlands, authentic villages, major monuments, and the world-renowned Petrified Forest. Crucially, the entire island is a recognized UNESCO Global Geopark. If you like traveling with meaning, Lesvos works for everyone: families seek quiet bays, foodies explore the world of ouzo and local cheeses, nature lovers hike up to fortresses or birdwatch in the wetlands, and travelers who dislike 'copy-paste' tourism find genuine character in every corner.",
+      el: "Η Λέσβος είναι από εκείνα τα νησιά που σε βάζουν αμέσως σε άλλη ταχύτητα: όχι επειδή “δεν έχει τίποτα”, αλλά επειδή έχει πάρα πολλά — και μάλιστα σε κλίμακα ηπειρωτική. Δεν είναι τυχαίο ότι αποτελεί την τρίτη μεγαλύτερη ελληνική νήσο, με ένα μωσαϊκό από ελαιώνες, θερμές πηγές, υγροτόπους, παραδοσιακά χωριά, σπουδαία μνημεία και το διάσημο Απολιθωμένο Δάσος. Ολόκληρο το νησί έχει αναγνωριστεί ως Lesvos Island UNESCO Global Geopark. Το νησί προσφέρει απίστευτο βάθος: από οικογένειες (ήρεμοι κόλποι), στους foodies (ούζο, τυριά, ελαιόλαδο) και φυσιολάτρες (υγρότοποι, κάστρα), μέχρι ταξιδιώτες που αναζητούν την αυθεντικότητα.",
+    },
+    pageIncludes: {
+      en: [
+        "Mytilene & Molyvos Castles",
+        "Petrified Forest & Geopark",
+        "Birdwatching in Kalloni",
+        "Local Ouzo & Food",
+      ],
+      el: [
+        "Κάστρα Μυτιλήνης & Μολύβου",
+        "Απολιθωμένο Δάσος",
+        "Υγρότοποι & Ούζο Πλωμαρίου",
+        "Θερμές Πηγές & Αυθεντικά Χωριά",
+      ],
+    },
+    perfectFor: {
+      en: [
+        "Nature enthusiasts and birdwatchers",
+        "Gastronomy lovers (Ouzo & Olive oil)",
+        "Travelers looking for authentic slow-living",
+        "Families who enjoy spacious uncrowded beaches",
+      ],
+      el: [
+        "Φυσιολάτρες και εξερευνητές (Geopark)",
+        "Foodies που αγαπούν τον αληθινό μεζέ και το ούζο",
+        "Ταξιδιώτες που αναζητούν αυθεντικούς ρυθμούς",
+        "Οικογένειες για διακοπές χωρίς συνωστισμό",
+      ],
+    },
+  },
+  athens: {
+    overview: {
+      en: "Athens is one of the few places in the world where you can drink coffee next to a modern shop window, turn a corner to find 2,500-year-old marbles, and end your day with a sunset by the sea. It's a city of intensity, contrast, and real everyday life. If you rush it like a checklist, it will tire you out. If you give it your rhythm, it becomes addictive. Yes, the Acropolis is a UNESCO World Heritage site since 1987. But Athens isn't just the Acropolis. It's the neighborhoods, the markets, the modern cultural spaces, the Riviera, and the day trips that make you feel you're living here, rather than just visiting.",
+      el: "Η Αθήνα είναι από τα λίγα μέρη στον κόσμο όπου μπορείς να πιεις καφέ δίπλα σε μια σύγχρονη βιτρίνα, να στρίψεις ένα στενό και να βρεθείς μπροστά σε μάρμαρα 2.500 χρόνων, και μετά να τελειώσεις την ημέρα σου με ηλιοβασίλεμα δίπλα στη θάλασσα—χωρίς να έχεις φύγει καν από την Αττική. Είναι πόλη με ένταση, αντιθέσεις και αληθινή καθημερινότητα. Αν την “τρέξεις” σαν λίστα, θα σου φανεί κουραστική. Αν της δώσεις ρυθμό, θα γίνει εθιστική. Είναι οι γειτονιές της, οι αγορές της, οι σύγχρονοι πολιτιστικοί χώροι της, η “Ριβιέρα” της, οι μονοήμερες αποδράσεις (Σούνιο, νησιά) που σε κάνουν να νιώθεις ότι μένεις σε βάση κι όχι απλώς σε έναν ενδιάμεσο προορισμό.",
+    },
+    pageIncludes: {
+      en: [
+        "UNESCO Acropolis & Central monuments",
+        "Top-class Archaeology & Museums",
+        "Athens Riviera & Coastal vibes",
+        "Vibrant urban food & Street markets",
+      ],
+      el: [
+        "Ακρόπολη & Μνημεία (UNESCO)",
+        "Κορυφαία Μουσεία αρχαιότητας & τέχνης",
+        "Αθηναϊκή Ριβιέρα & Λίμνη Βουλιαγμένης",
+        "Ζωντανή σκηνή street food & Αγορές",
+      ],
+    },
+    perfectFor: {
+      en: [
+        "History and culture enthusiasts",
+        "Travelers seeking rich urban and coastal variety",
+        "Lovers of bustling food scenes and street food",
+        "Those planning day trips or island hopping",
+      ],
+      el: [
+        "Λάτρεις της αρχαίας ιστορίας και του πολιτισμού",
+        "Ταξιδιώτες που αναζητούν έναν ολοκληρωμένο αστικό προορισμό",
+        "Foodies που αγαπούν το street food και τις αγορές",
+        "Ταξιδιώτες που χρησιμοποιούν την Αθήνα ως βάση",
+      ],
+    },
+  },
 };

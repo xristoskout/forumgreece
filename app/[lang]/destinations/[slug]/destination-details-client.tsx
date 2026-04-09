@@ -1,5 +1,6 @@
 "use client";
 
+import { Fragment } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import SiteHeader from "../../../../components/site-header";
@@ -48,6 +49,102 @@ export default function DestinationDetailsClient({
 
   const sections = destinationSections[destination.slug] ?? [];
   const details = destinationDetails[destination.slug];
+
+  const foodSectionIndex = sections.findIndex(s => {
+    const enTitle = s.title.en.toLowerCase();
+    const elTitle = s.title.el.toLowerCase();
+    return enTitle.includes("food") || enTitle.includes("gastronomy") || elTitle.includes("γαστρονομία") || elTitle.includes("φαγητό") || elTitle.includes("να φας");
+  });
+
+  const businessInjectionIndex = foodSectionIndex !== -1 
+    ? foodSectionIndex 
+    : Math.max(0, Math.floor(sections.length / 2) - 1);
+
+  const renderBusinesses = () => {
+    if (businesses.length === 0) return null;
+    return (
+      <article className="rounded-[28px] border border-slate-200 bg-white backdrop-blur-md p-8 shadow-sm my-10">
+        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700">
+          {lang === "en" ? "Featured Businesses" : "Προτεινόμενες Επιχειρήσεις"}
+        </p>
+
+        <div className="mt-8 space-y-8">
+          {businesses.map((business) => {
+            const businessHref = business.href || `/businesses/${business.slug}`;
+            const isExternalUrl = /^https?:\/\//i.test(businessHref);
+
+            return (
+              <div
+                key={business.slug}
+                className="overflow-hidden rounded-[24px] border border-slate-200 bg-slate-50/50 shadow-sm transition hover:shadow-md"
+              >
+                <div className="grid gap-0 sm:grid-cols-[220px_1fr] md:grid-cols-[260px_1fr]">
+                  <div className="relative h-56 w-full bg-slate-100 sm:h-full">
+                    {business.image && (
+                      <Image
+                        src={business.image}
+                        alt={business.name}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 640px) 100vw, 260px"
+                      />
+                    )}
+                  </div>
+
+                  <div className="flex flex-col justify-between p-6 md:p-8">
+                    <div>
+                      <div className="flex flex-wrap items-center justify-between gap-3 mb-2">
+                        <div className="text-sm font-extrabold uppercase tracking-widest text-indigo-600">
+                          {business.category[lang]}
+                        </div>
+                        {business.badge && (
+                          <span className="inline-flex rounded-full bg-indigo-100 text-indigo-800 px-3 py-1 text-xs font-bold ring-1 ring-inset ring-indigo-200">
+                            {business.badge}
+                          </span>
+                        )}
+                      </div>
+
+                      <h4 className="text-2xl font-black tracking-tight text-slate-900 mb-2">
+                        {business.name}
+                      </h4>
+                      
+                      <p className="text-base font-medium text-slate-600 mb-5 flex items-center gap-2">
+                        📍 {business.place}
+                      </p>
+
+                      <p className="text-base text-slate-600 leading-relaxed">
+                        {business.info[lang]}
+                      </p>
+                    </div>
+
+                    <div className="mt-8">
+                      {isExternalUrl ? (
+                        <a
+                          href={businessHref}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center justify-center gap-2 rounded-2xl bg-indigo-600 px-6 py-3.5 text-sm font-semibold text-white shadow-md transition-all hover:bg-indigo-500 hover:shadow-lg"
+                        >
+                          {business.ctaLabel?.[lang] || (lang === "en" ? "Visit Website" : "Επισκεφθείτε την ιστοσελίδα")}
+                        </a>
+                      ) : (
+                        <Link
+                          href={withLang(businessHref)}
+                          className="inline-flex items-center justify-center gap-2 rounded-2xl bg-indigo-600 px-6 py-3.5 text-sm font-semibold text-white shadow-md transition-all hover:bg-indigo-500 hover:shadow-lg"
+                        >
+                          {business.ctaLabel?.[lang] || (lang === "en" ? "View Details" : "Δείτε Λεπτομέρειες")}
+                        </Link>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </article>
+    );
+  };
 
   return (
     <main className="min-h-screen bg-transparent text-slate-900">
@@ -151,156 +248,76 @@ export default function DestinationDetailsClient({
               </p>
             </article>
 
+            {sections.length === 0 && renderBusinesses()}
+
             {sections.map((section, idx) => (
-              <article
-                key={idx}
-                className="rounded-[28px] border border-slate-200 bg-white backdrop-blur-md p-8 shadow-sm"
-              >
-                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700">
-                  {destination.name}
-                </p>
-
-                <h3 className="mt-3 text-2xl font-bold tracking-tight">
-                  {section.title[lang]}
-                </h3>
-
-                {section.text && (
-                  <p className="mt-5 text-base leading-8 text-slate-500">
-                    {section.text[lang]}
+              <Fragment key={idx}>
+                <article className="rounded-[28px] border border-slate-200 bg-white backdrop-blur-md p-8 shadow-sm">
+                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700">
+                    {destination.name}
                   </p>
-                )}
 
-                {section.alert && (
-                  <div className="mt-6 rounded-2xl bg-amber-50 border border-amber-200 p-5 shadow-sm">
-                    <p className="text-sm font-medium leading-relaxed text-amber-800">
-                      💡 {section.alert[lang]}
+                  <h3 className="mt-3 text-2xl font-bold tracking-tight">
+                    {section.title[lang]}
+                  </h3>
+
+                  {section.text && (
+                    <p className="mt-5 text-base leading-8 text-slate-500">
+                      {section.text[lang]}
                     </p>
-                  </div>
-                )}
+                  )}
 
-                {section.items && section.items.length > 0 && (
-                  <div className={`mt-8 ${
-                    section.layout === "grid" ? "grid gap-4 sm:grid-cols-2" :
-                    section.layout === "numbered" ? "space-y-8" :
-                    section.layout === "faq" ? "space-y-6" :
-                    "space-y-6"
-                  }`}>
-                    {section.items.map((item, itemIdx) => (
-                      <div
-                        key={itemIdx}
-                        className={
-                          section.layout === "grid"
-                            ? "rounded-2xl border border-slate-200 bg-slate-50/50 p-6 transition-colors hover:bg-slate-50"
-                            : section.layout === "numbered"
-                            ? "relative pl-14"
-                            : section.layout === "faq"
-                            ? "border-b border-slate-100 pb-6 last:border-0 last:pb-0"
-                            : "rounded-2xl border border-slate-200 bg-slate-50/50 p-6"
-                        }
-                      >
-                        {section.layout === "numbered" && (
-                          <span className="absolute left-0 top-0 flex h-9 w-9 items-center justify-center rounded-full bg-indigo-100 text-sm font-bold text-indigo-700">
-                            {itemIdx + 1}
-                          </span>
-                        )}
-                        
-                        {item.title && (
-                          <h4 className={`font-bold ${section.layout === 'faq' ? 'text-lg text-slate-900 mb-2' : 'text-slate-900 mb-2 mt-0'}`}>
-                            {item.title[lang]}
-                          </h4>
-                        )}
-                        <p className={`text-base leading-relaxed ${section.layout === 'faq' ? 'text-slate-600' : 'text-slate-500'}`}>
-                          {item.text[lang]}
-                        </p>
-                      </div>
-                    ))}
-                  </div>
-                )}
-              </article>
-            ))}
+                  {section.alert && (
+                    <div className="mt-6 rounded-2xl bg-amber-50 border border-amber-200 p-5 shadow-sm">
+                      <p className="text-sm font-medium leading-relaxed text-amber-800">
+                        💡 {section.alert[lang]}
+                      </p>
+                    </div>
+                  )}
 
-            {businesses.length > 0 && (
-              <article className="rounded-[28px] border border-slate-200 bg-white backdrop-blur-md p-8 shadow-sm">
-                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700">
-                  {lang === "en" ? "Featured Businesses" : "Προτεινόμενες Επιχειρήσεις"}
-                </p>
-
-                <div className="mt-8 space-y-8">
-                  {businesses.map((business) => {
-                    const businessHref = business.href || `/businesses/${business.slug}`;
-                    const isExternalUrl = /^https?:\/\//i.test(businessHref);
-
-                    return (
-                      <div
-                        key={business.slug}
-                        className="overflow-hidden rounded-[24px] border border-slate-200 bg-slate-50/50 shadow-sm transition hover:shadow-md"
-                      >
-                        <div className="grid gap-0 sm:grid-cols-[220px_1fr] md:grid-cols-[260px_1fr]">
-                          <div className="relative h-56 w-full bg-slate-100 sm:h-full">
-                            {business.image && (
-                              <Image
-                                src={business.image}
-                                alt={business.name}
-                                fill
-                                className="object-cover"
-                                sizes="(max-width: 640px) 100vw, 260px"
-                              />
-                            )}
-                          </div>
-
-                          <div className="flex flex-col justify-between p-6 md:p-8">
-                            <div>
-                              <div className="flex flex-wrap items-center justify-between gap-3 mb-2">
-                                <div className="text-sm font-extrabold uppercase tracking-widest text-indigo-600">
-                                  {business.category[lang]}
-                                </div>
-                                {business.badge && (
-                                  <span className="inline-flex rounded-full bg-indigo-100 text-indigo-800 px-3 py-1 text-xs font-bold ring-1 ring-inset ring-indigo-200">
-                                    {business.badge}
-                                  </span>
-                                )}
-                              </div>
-
-                              <h4 className="text-2xl font-black tracking-tight text-slate-900 mb-2">
-                                {business.name}
-                              </h4>
-                              
-                              <p className="text-base font-medium text-slate-600 mb-5 flex items-center gap-2">
-                                📍 {business.place}
-                              </p>
-
-                              <p className="text-base text-slate-600 leading-relaxed">
-                                {business.info[lang]}
-                              </p>
-                            </div>
-
-                            <div className="mt-8">
-                              {isExternalUrl ? (
-                                <a
-                                  href={businessHref}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="inline-flex items-center justify-center gap-2 rounded-2xl bg-indigo-600 px-6 py-3.5 text-sm font-semibold text-white shadow-md transition-all hover:bg-indigo-500 hover:shadow-lg"
-                                >
-                                  {business.ctaLabel?.[lang] || (lang === "en" ? "Visit Website" : "Επισκεφθείτε την ιστοσελίδα")}
-                                </a>
-                              ) : (
-                                <Link
-                                  href={withLang(businessHref)}
-                                  className="inline-flex items-center justify-center gap-2 rounded-2xl bg-indigo-600 px-6 py-3.5 text-sm font-semibold text-white shadow-md transition-all hover:bg-indigo-500 hover:shadow-lg"
-                                >
-                                  {business.ctaLabel?.[lang] || (lang === "en" ? "View Details" : "Δείτε Λεπτομέρειες")}
-                                </Link>
-                              )}
-                            </div>
-                          </div>
+                  {section.items && section.items.length > 0 && (
+                    <div className={`mt-8 ${
+                      section.layout === "grid" ? "grid gap-4 sm:grid-cols-2" :
+                      section.layout === "numbered" ? "space-y-8" :
+                      section.layout === "faq" ? "space-y-6" :
+                      "space-y-6"
+                    }`}>
+                      {section.items.map((item, itemIdx) => (
+                        <div
+                          key={itemIdx}
+                          className={
+                            section.layout === "grid"
+                              ? "rounded-2xl border border-slate-200 bg-slate-50/50 p-6 transition-colors hover:bg-slate-50"
+                              : section.layout === "numbered"
+                              ? "relative pl-14"
+                              : section.layout === "faq"
+                              ? "border-b border-slate-100 pb-6 last:border-0 last:pb-0"
+                              : "rounded-2xl border border-slate-200 bg-slate-50/50 p-6"
+                          }
+                        >
+                          {section.layout === "numbered" && (
+                            <span className="absolute left-0 top-0 flex h-9 w-9 items-center justify-center rounded-full bg-indigo-100 text-sm font-bold text-indigo-700">
+                              {itemIdx + 1}
+                            </span>
+                          )}
+                          
+                          {item.title && (
+                            <h4 className={`font-bold ${section.layout === 'faq' ? 'text-lg text-slate-900 mb-2' : 'text-slate-900 mb-2 mt-0'}`}>
+                              {item.title[lang]}
+                            </h4>
+                          )}
+                          <p className={`text-base leading-relaxed ${section.layout === 'faq' ? 'text-slate-600' : 'text-slate-500'}`}>
+                            {item.text[lang]}
+                          </p>
                         </div>
-                      </div>
-                    );
-                  })}
-                </div>
-              </article>
-            )}
+                      ))}
+                    </div>
+                  )}
+                </article>
+
+                {idx === businessInjectionIndex && renderBusinesses()}
+              </Fragment>
+            ))}
           </div>
 
           <aside className="space-y-6">
