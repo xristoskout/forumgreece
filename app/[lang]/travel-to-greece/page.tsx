@@ -152,7 +152,7 @@ export default function TravelToGreecePage() {
         en: "Tips about caldera views, villages, hotels, beaches and romantic holidays in Santorini.",
         el: "Tips για θέα στην καλντέρα, χωριά, ξενοδοχεία, παραλίες και ρομαντικές διακοπές στη Σαντορίνη.",
       },
-      href: "https://facebook.com",
+      href: "https://www.facebook.com/groups/1590639762241655/",
       image: "/images/forums/santorini.jpg",
     },
     {
@@ -163,7 +163,7 @@ export default function TravelToGreecePage() {
         en: "Beach life, nightlife, stylish stays and summer experiences in Mykonos.",
         el: "Παραλίες, νυχτερινή ζωή, κομψή διαμονή και καλοκαιρινές εμπειρίες στη Μύκονο.",
       },
-      href: "https://facebook.com",
+      href: "https://www.facebook.com/groups/942621205287215/",
       image: "/images/forums/mykonos.jpg",
     },
     {
@@ -174,7 +174,7 @@ export default function TravelToGreecePage() {
         en: "Old town walks, beaches, green scenery and family travel ideas for Corfu.",
         el: "Βόλτες στην παλιά πόλη, παραλίες, πράσινα τοπία και οικογενειακές ταξιδιωτικές ιδέες για την Κέρκυρα.",
       },
-      href: "https://facebook.com",
+      href: "https://www.facebook.com/groups/1481830549976820/",
       image: "/images/forums/corfu.jpg",
     },
     {
@@ -185,7 +185,7 @@ export default function TravelToGreecePage() {
         en: "Road trips, beaches, villages, food culture and travel planning for Crete.",
         el: "Road trips, παραλίες, χωριά, γαστρονομία και ταξιδιωτικός σχεδιασμός για την Κρήτη.",
       },
-      href: "https://facebook.com",
+      href: "https://www.facebook.com/groups/1262658085954159/",
       image: "/images/forums/crete.jpg",
     },
     {
@@ -196,7 +196,7 @@ export default function TravelToGreecePage() {
         en: "Villages, beaches, local food, culture and relaxing escapes in Lesvos.",
         el: "Χωριά, παραλίες, τοπικές γεύσεις, πολιτισμός και χαλαρές αποδράσεις στη Λέσβο.",
       },
-      href: "https://facebook.com",
+      href: "https://www.facebook.com/groups/1365073765382008/",
       image: "/images/forums/lesvos.jpg",
     },
     {
@@ -207,7 +207,7 @@ export default function TravelToGreecePage() {
         en: "Blue waters, famous beaches, villages and summer holidays in Kefalonia.",
         el: "Γαλάζια νερά, διάσημες παραλίες, χωριά και καλοκαιρινές διακοπές στην Κεφαλονιά.",
       },
-      href: "https://facebook.com",
+      href: "https://www.facebook.com/groups/962993806185389/",
       image: "/images/forums/kefalonia.jpg",
     },
   ];

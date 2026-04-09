@@ -235,9 +235,19 @@ export const destinations: Destination[] = [
       en: ["Old Town walks", "Green scenery", "Ionian beaches"],
       el: ["Βόλτες στην Παλιά Πόλη", "Πράσινα τοπία", "Ιόνιες παραλίες"],
     },
+    seo: {
+      title: {
+        en: "Corfu: The ultimate guide (UNESCO Old Town, beaches, villages, food & secrets)",
+        el: "Κέρκυρα: Ο απόλυτος οδηγός (Παλιά Πόλη UNESCO, παραλίες, χωριά, φαγητό & μυστικά)"
+      },
+      description: {
+        en: "Detailed travel guide to Corfu: why it's worth visiting, best time, how to get there, top attractions and experiences, beaches for every taste, surprise villages, local flavors and practical tips + FAQ.",
+        el: "Αναλυτικός ταξιδιωτικός οδηγός για Κέρκυρα: γιατί αξίζει, καλύτερη εποχή, πώς φτάνεις, κορυφαία αξιοθέατα και εμπειρίες, παραλίες για κάθε γούστο, χωριά-έκπληξη, τοπικές γεύσεις και πρακτικά tips + FAQ."
+      }
+    }
   },
   {
-    slug: "nafplio",
+    slug: "nayplio-odigos-taxidiou",
     name: "Nafplio",
     region: { en: "Peloponnese", el: "Πελοπόννησος" },
     blurb: {
@@ -246,13 +256,23 @@ export const destinations: Destination[] = [
     },
     image: "/images/nafplio.jpg",
     overview: {
-      en: "Nafplio is one of the best short-break destinations in Greece for couples and relaxed city walks.",
-      el: "Το Ναύπλιο είναι ένας από τους καλύτερους προορισμούς για σύντομες αποδράσεις στην Ελλάδα, ιδανικός για ζευγάρια και χαλαρές βόλτες.",
+      en: "Nafplio combines romantic old town charm, seaside walks, elegant architecture and rich history.",
+      el: "Το Ναύπλιο συνδυάζει ρομαντική ατμόσφαιρα παλιάς πόλης, παραθαλάσσιες βόλτες, αρχοντική αρχιτεκτονική και πλούσια ιστορία.",
     },
     highlights: {
-      en: ["Old town charm", "Seafront promenades", "Weekend trips"],
-      el: ["Γοητεία παλιάς πόλης", "Παραθαλάσσιες βόλτες", "Αποδράσεις Σαββατοκύριακου"],
+      en: ["Palamidi & Bourtzi Castles", "Old Town romance", "Archaeological escapes"],
+      el: ["Παλαμήδι & Μπούρτζι", "Ρομάντζο στην Παλιά Πόλη", "Αρχαιολογικές αποδράσεις"],
     },
+    seo: {
+      title: {
+        en: "Nafplio: The ultimate guide (Palamidi, Bourtzi, beaches, food & secrets)",
+        el: "Ναύπλιο: Ο απόλυτος οδηγός (Παλαμήδι, Μπούρτζι, παραλίες, φαγητό & μυστικά)"
+      },
+      description: {
+        en: "Complete guide to Nafplio: why it's worth visiting, best time, how to go, top attractions (Old Town, Palamidi, Bourtzi, Akronafplia), beaches and nearby villages, local food, practical tips + FAQ to enjoy it like a local.",
+        el: "Πλήρης οδηγός για Ναύπλιο: γιατί αξίζει, καλύτερη εποχή, πώς θα πας, κορυφαία αξιοθέατα (Παλιά Πόλη, Παλαμήδι, Μπούρτζι, Ακροναυπλία), παραλίες και κοντινά χωριά, τοπικές γεύσεις, πρακτικά tips + FAQ για να το απολαύσεις σαν ντόπιος."
+      }
+    }
   },
   {
     slug: "thessaloniki",
@@ -264,13 +284,23 @@ export const destinations: Destination[] = [
     },
     image: "/images/thessaloniki.jpg",
     overview: {
-      en: "Thessaloniki is perfect for city breaks, nightlife, gastronomy and urban culture.",
-      el: "Η Θεσσαλονίκη είναι ιδανική για city breaks, νυχτερινή ζωή, γαστρονομία και αστικό πολιτισμό.",
+      en: "Thessaloniki combines a rich culinary scene, Byzantine history and vibrant urban culture by the sea.",
+      el: "Η Θεσσαλονίκη συνδυάζει πλούσια γαστρονομική σκηνή, βυζαντινή ιστορία και ζωντανό αστικό πολιτισμό δίπλα στη θάλασσα.",
     },
     highlights: {
-      en: ["Food scene", "Waterfront", "Nightlife"],
-      el: ["Γαστρονομική σκηνή", "Παραλία", "Νυχτερινή ζωή"],
+      en: ["UNESCO monuments", "White Tower & waterfront", "Culinary capital"],
+      el: ["Μνημεία UNESCO", "Λευκός Πύργος & παραλία", "Γαστρονομική πρωτεύουσα"],
     },
+    seo: {
+      title: {
+        en: "Thessaloniki: The ultimate guide (attractions, food, nearby beaches & secrets)",
+        el: "Θεσσαλονίκη: Ο απόλυτος οδηγός (αξιοθέατα, φαγητό, παραλίες κοντά στην πόλη & μυστικά)"
+      },
+      description: {
+        en: "Detailed guide to Thessaloniki: why it's worth it, best time, how to get there, what to see (UNESCO monuments, White Tower, Upper Town, Rotunda), where to eat (markets, bougatsa, koulouri), nearby beaches (Peraia, Agia Triada, Epanomi) and practical tips + FAQ.",
+        el: "Αναλυτικός οδηγός για Θεσσαλονίκη: γιατί αξίζει, καλύτερη εποχή, πώς φτάνεις, τι να δεις (UNESCO μνημεία, Λευκός Πύργος, Άνω Πόλη, Ροτόντα), πού να φας (αγορές, bougatsa, koulouri), κοντινές παραλίες (Περαία, Αγ. Τριάδα, Επανομή) και πρακτικά tips + FAQ."
+      }
+    }
   },
   {
     slug: "kefalonia",
@@ -282,49 +312,79 @@ export const destinations: Destination[] = [
     },
     image: "/images/kefalonia.jpg",
     overview: {
-      en: "Kefalonia stands out for beautiful beaches, scenic drives and a calm Ionian character.",
-      el: "Η Κεφαλονιά ξεχωρίζει για τις πανέμορφες παραλίες, τις γραφικές διαδρομές και τον ήρεμο ιονικό χαρακτήρα της.",
+      en: "Kefalonia stands out for its legendary beaches, geological wonders like Melissani cave, and an authentic nature-filled Ionian character.",
+      el: "Η Κεφαλονιά ξεχωρίζει για τις εντυπωσιακές παραλίες, τα γεωλογικά της θαύματα και τον αυθεντικό φυσιολατρικό επτανησιακό χαρακτήρα της.",
     },
     highlights: {
-      en: ["Myrtos Beach", "Scenic villages", "Relaxed island pace"],
-      el: ["Παραλία Μύρτος", "Γραφικά χωριά", "Ήρεμος ρυθμός διακοπών"],
+      en: ["Myrtos Beach", "Melissani Cave", "Mount Ainos"],
+      el: ["Παραλία Μύρτος", "Σπήλαιο Μελισσάνης", "Όρος Αίνος"],
     },
+    seo: {
+      title: {
+        en: "Kefalonia: The ultimate guide (beaches, caves, villages, Robola & secrets)",
+        el: "Κεφαλονιά: Ο απόλυτος οδηγός (παραλίες, σπήλαια, χωριά, Ρομπόλα & μυστικά)"
+      },
+      description: {
+        en: "Complete travel guide to Kefalonia: why it's worth it, best time, how to get there, top attractions (Myrtos, Melissani, Drogarati, Ainos, Assos, Fiskardo), beaches for every style, local food, practical tips & FAQ.",
+        el: "Πλήρης ταξιδιωτικός οδηγός για Κεφαλονιά: γιατί αξίζει, καλύτερη εποχή, πώς θα πας, κορυφαία αξιοθέατα (Μύρτος, Μελισσάνη, Δρογκαράτη, Αίνος, Άσσος, Φισκάρδο), παραλίες και χωριά για κάθε στυλ, τοπικές γεύσεις (κρεατόπιτα, Ρομπόλα), πρακτικά tips & FAQ."
+      }
+    }
   },
   {
     slug: "lesvos",
     name: "Lesvos",
     region: { en: "North Aegean", el: "Βόρειο Αιγαίο" },
     blurb: {
-      en: "Culture, villages, local food, beaches and authentic island life.",
-      el: "Πολιτισμός, χωριά, τοπικές γεύσεις, παραλίες και αυθεντική νησιωτική ζωή.",
+      en: "UNESCO Geopark, Petrified forest, castles, villages and authentic food.",
+      el: "UNESCO Geopark, Απολιθωμένο Δάσος, κάστρα, χωριά και αυθεντικό φαγητό.",
     },
     image: "/images/lesvos.jpg",
     overview: {
-      en: "Lesvos offers a more authentic Greek island experience with culture, food and slower rhythms.",
-      el: "Η Λέσβος προσφέρει μια πιο αυθεντική εμπειρία ελληνικού νησιού με πολιτισμό, γεύσεις και πιο αργούς ρυθμούς.",
+      en: "Lesvos is a vast island of continental scale, featuring the famous Petrified forest, huge castles, rich wetlands for birdwatching, thermal springs, and an unbeatable foodie scene built around world-class ouzo and olive oil.",
+      el: "Η Λέσβος είναι ένα νησί δομημένο σε ηπειρωτική κλίμακα, με όλο το έδαφός της αναγνωρισμένο ως UNESCO Global Geopark. Από το διάσημο Απολιθωμένο Δάσος μέχρι τα κάστρα της, και από τους υδρόβιους υγροτόπους ως τις θερμές πηγές και τον παγκοσμίου κλάσης μεζέ με ούζο, η Λέσβος προσφέρει αυθεντικές εμπειρίες για κάθε τύπο ταξιδιώτη.",
     },
     highlights: {
-      en: ["Traditional villages", "Local gastronomy", "Authentic atmosphere"],
-      el: ["Παραδοσιακά χωριά", "Τοπική γαστρονομία", "Αυθεντική ατμόσφαιρα"],
+      en: ["Petrified forest", "Ouzo & local food", "Castles & villages"],
+      el: ["Απολιθωμένο Δάσος", "Ούζο και μεζές", "Κάστρα & χωριά"],
     },
+    seo: {
+      title: {
+        en: "Lesvos: The ultimate guide (Mytilene, Molyvos, Petrified Forest, beaches, food)",
+        el: "Λέσβος: Ο απόλυτος οδηγός (Μυτιλήνη, Μόλυβος, Απολιθωμένο Δάσος, παραλίες, φαγητό & μυστικά)"
+      },
+      description: {
+        en: "Comprehensive guide to Lesvos: why it's worth it, best time, top attractions (UNESCO Global Geopark, Petrified Forest, Molyvos, Petra), beaches, local products (Ouzo, olive oil), and practical tips + FAQ.",
+        el: "Αναλυτικός οδηγός για Λέσβο: γιατί αξίζει, καλύτερη εποχή, πώς φτάνεις, top αξιοθέατα και εμπειρίες (UNESCO Global Geopark, Απολιθωμένο Δάσος, Μυτιλήνη, Μόλυβος, Πέτρα), παραλίες, χωριά, τοπικά προϊόντα (ούζο ΓΕ, Λαδοτύρι Μυτιλήνης ΠΟΠ), πρακτικά tips & FAQ."
+      }
+    }
   },
   {
     slug: "athens",
     name: "Athens",
     region: { en: "Attica", el: "Αττική" },
     blurb: {
-      en: "Ancient landmarks, lively neighborhoods, food and city energy.",
-      el: "Αρχαία μνημεία, ζωντανές γειτονιές, φαγητό και έντονος ρυθμός πόλης.",
+      en: "Acropolis, neighborhoods, street food, Athens Riviera & endless rhythm.",
+      el: "Ακρόπολη, γειτονιές, street food, Αθηναϊκή Ριβιέρα & ατελείωτος ρυθμός.",
     },
     image: "/images/athens.jpg",
     overview: {
-      en: "Athens blends ancient history, modern neighborhoods and a vibrant urban food scene.",
-      el: "Η Αθήνα συνδυάζει αρχαία ιστορία, σύγχρονες γειτονιές και μια ζωντανή αστική γαστρονομική σκηνή.",
+      en: "Athens is a true two-in-one destination bridging the ancient and the modern. From the UNESCO World Heritage Acropolis to vibrant urban lifestyle, the Athens Riviera and nearby islands, it requires rhythm rather than a checklist to be truly enjoyed.",
+      el: "Η Αθήνα είναι από τα λίγα μέρη στον κόσμο όπου μπορείς να πιεις καφέ δίπλα σε μια βιτρίνα, να βρεθείς μπροστά σε μάρμαρα 2.500 χρόνων, και να κλείσεις τη μέρα με ηλιοβασίλεμα στη θάλασσα. Είναι πόλη με ένταση και αληθινή καθημερινότητα.",
     },
     highlights: {
-      en: ["Acropolis", "Historic center", "Urban dining"],
-      el: ["Ακρόπολη", "Ιστορικό κέντρο", "Αστική γαστρονομία"],
+      en: ["Acropolis & Museums", "Athens Riviera", "Urban food & Neighborhoods"],
+      el: ["Ακρόπολη & Μουσεία", "Αθηναϊκή Ριβιέρα", "Γειτονιές & Γαστρονομία"],
     },
+    seo: {
+      title: {
+        en: "Athens: The ultimate guide (Acropolis, neighborhoods, food, beaches & secrets)",
+        el: "Αθήνα: Ο απόλυτος οδηγός (Ακρόπολη, γειτονιές, φαγητό, παραλίες & μυστικά για να τη ζήσεις σωστά)"
+      },
+      description: {
+        en: "Complete travel guide to Athens: why it's worth it, best time, top attractions (UNESCO Acropolis, museums, Lycabettus), neighborhoods, street food, Athenian Riviera/Vouliagmeni Lake, Saronic islands day trips + practical tips & FAQ.",
+        el: "Πλήρης ταξιδιωτικός οδηγός για Αθήνα: γιατί αξίζει, καλύτερη εποχή, πώς φτάνεις, top αξιοθέατα (Ακρόπολη UNESCO, Μουσείο Ακρόπολης, Αρχαία Αγορά, Λυκαβηττός, Καλλιμάρμαρο), γειτονιές, street food και αγορές, Αθηναϊκή Ριβιέρα/Λίμνη Βουλιαγμένης, μονοήμερες (Σούνιο, νησιά Σαρωνικού) + πρακτικά tips & FAQ."
+      }
+    }
   },
 ];
 
