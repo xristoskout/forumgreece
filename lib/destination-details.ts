@@ -39,40 +39,42 @@ export const destinationDetails: Record<string, DestinationDetail> = {
       ],
     },
   },
+
   mykonos: {
     overview: {
       en: "Mykonos: beyond the party, an island of history, sea, and 'hidden' corners. Mykonos is one of those destinations everyone thinks they know before even setting foot there. Images of whitewashed alleys, windmills above the sea, sunset cocktails, and beach clubs playing music till late. Yes, all this exists — and at high volume. But Mykonos has another face: authentic, quiet beaches, an inland village that takes you back to the old Cyclades, museums explaining why this island became the gateway to the Aegean, and (its great asset) Delos just a breath away — one of the most important archaeological sites of the Mediterranean. If you want to put 'Mykonos' on your travel list and do it right, the secret is to see it as a multi-speed island: a bit of cosmopolitan vibe, a bit of quiet for a breather, and a bit of history to leave with something more substantial than just photos.",
-      el: "Μύκονος: πέρα από το πάρτι, ένα νησί με ιστορία, θάλασσα και “κρυφές” γωνιές. Η Μύκονος είναι από τους προορισμούς που όλοι νομίζουν ότι ξέρουν, πριν καν πατήσουν το πόδι τους εκεί. Εικόνες από κατάλευκα σοκάκια, ανεμόμυλους πάνω από τη θάλασσα, κοκτέιλ στο ηλιοβασίλεμα και beach clubs που παίζουν μουσική μέχρι αργά. Ναι, όλα αυτά υπάρχουν — και μάλιστα σε υψηλή ένταση. Αλλά η Μύκονος έχει κι ένα άλλο πρόσωπο: αυθεντικές παραλίες χωρίς φασαρία, ένα εσωτερικό χωριό που σε “γυρίζει” σε παλιές Κυκλάδες, μουσεία που εξηγούν γιατί αυτό το νησί έγινε πύλη στο Αιγαίο, και (το μεγάλο ατού) τη Δήλο σε απόσταση αναπνοής — έναν από τους σημαντικότερους αρχαιολογικούς τόπους της Μεσογείου. Αν θες να γράψεις “Μύκονος” στην ταξιδιωτική σου λίστα και να το κάνεις σωστά, το μυστικό είναι να τη δεις σαν νησί πολλών ταχυτήτων: λίγη κοσμικότητα για το vibe, λίγη ησυχία για ανάσα, και λίγη ιστορία για να φύγεις με κάτι πιο ουσιαστικό από φωτογραφίες."
+      el: "Μύκονος: πέρα από το πάρτι, ένα νησί με ιστορία, θάλασσα και “κρυφές” γωνιές. Η Μύκονος είναι από τους προορισμούς που όλοι νομίζουν ότι ξέρουν, πριν καν πατήσουν το πόδι τους εκεί. Εικόνες από κατάλευκα σοκάκια, ανεμόμυλους πάνω από τη θάλασσα, κοκτέιλ στο ηλιοβασίλεμα και beach clubs που παίζουν μουσική μέχρι αργά. Ναι, όλα αυτά υπάρχουν — και μάλιστα σε υψηλή ένταση. Αλλά η Μύκονος έχει κι ένα άλλο πρόσωπο: αυθεντικές παραλίες χωρίς φασαρία, ένα εσωτερικό χωριό που σε “γυρίζει” σε παλιές Κυκλάδες, μουσεία που εξηγούν γιατί αυτό το νησί έγινε πύλη στο Αιγαίο, και (το μεγάλο ατού) τη Δήλο σε απόσταση αναπνοής — έναν από τους σημαντικότερους αρχαιολογικούς τόπους της Μεσογείου. Αν θες να γράψεις “Μύκονος” στην ταξιδιωτική σου λίστα και να το κάνεις σωστά, το μυστικό είναι να τη δεις σαν νησί πολλών ταχυτήτων: λίγη κοσμικότητα για το vibe, λίγη ησυχία για ανάσα, και λίγη ιστορία για να φύγεις με κάτι πιο ουσιαστικό από φωτογραφίες.",
     },
     pageIncludes: {
       en: [
         "Cosmopolitan Chora",
         "Sacred Delos",
         "Beaches for every taste",
-        "Cycladic gastronomy"
+        "Cycladic gastronomy",
       ],
       el: [
         "Η κοσμοπολίτικη Χώρα",
         "Η ιερή Δήλος",
         "Παραλίες για κάθε γούστο",
-        "Κυκλαδίτικη γαστρονομία"
-      ]
+        "Κυκλαδίτικη γαστρονομία",
+      ],
     },
     perfectFor: {
       en: [
         "Party lovers",
         "Couples and friends",
         "Luxury seekers",
-        "History explorers (Delos)"
+        "History explorers (Delos)",
       ],
       el: [
         "Λάτρεις των parties",
         "Ζευγάρια και φίλους",
         "Όσους αναζητούν πολυτέλεια",
-        "Εξερευνητές της ιστορίας (Δήλος)"
-      ]
-    }
+        "Εξερευνητές της ιστορίας (Δήλος)",
+      ],
+    },
   },
+
   kefalonia: {
     overview: {
       en: "Kefalonia is one of the most rewarding islands for travelers who want more than a simple beach holiday. A well-planned stay here can mix dramatic coastal views, boat excursions, turquoise waters, traditional villages and relaxed local culture in a single experience. This page presents a travel-style overview of what makes Kefalonia special and what visitors can expect when exploring the island.",
@@ -80,30 +82,30 @@ export const destinationDetails: Record<string, DestinationDetail> = {
     },
     pageIncludes: {
       en: [
-        "Iconic beach and viewpoint stops",
-        "Village and harbor exploration",
-        "Scenic island driving routes",
-        "Ideas for boat and cave experiences",
+        "Myrtos, Antisamos & famous beaches",
+        "Melissani & Drogarati Caves",
+        "Ainos National Park hikes",
+        "Assos & Fiskardo villages",
       ],
       el: [
-        "Στάσεις σε εμβληματικές παραλίες και σημεία θέας",
-        "Εξερεύνηση χωριών και λιμανιών",
-        "Γραφικές διαδρομές στο νησί",
-        "Ιδέες για βαρκάδες και εμπειρίες σε σπήλαια",
+        "Μύρτος, Αντίσαμος & διάσημες παραλίες",
+        "Μελισσάνη & Σπήλαιο Δρογκαράτης",
+        "Εθνικός Δρυμός Αίνου",
+        "Χωριά Άσσος & Φισκάρδο",
       ],
     },
     perfectFor: {
       en: [
-        "Couples and relaxed island travelers",
-        "Visitors who love beaches and scenery",
-        "Road trip style holidays",
-        "Travelers looking for authentic Ionian atmosphere",
+        "Road trip enthusiasts",
+        "Nature and geology lovers",
+        "Families looking for diverse activities",
+        "Couples seeking romantic coastal escapes",
       ],
       el: [
-        "Ζευγάρια και ταξιδιώτες που αγαπούν τη χαλάρωση",
-        "Επισκέπτες που αγαπούν παραλίες και τοπία",
-        "Διακοπές με λογική road trip",
-        "Ταξιδιώτες που αναζητούν αυθεντική ιονική ατμόσφαιρα",
+        "Λάτρεις των road trips",
+        "Φυσιολάτρες και εξερευνητές",
+        "Οικογένειες που αναζητούν δράσεις",
+        "Ζευγάρια για ρομαντικές αποδράσεις",
       ],
     },
   },
@@ -177,6 +179,7 @@ export const destinationDetails: Record<string, DestinationDetail> = {
       ],
     },
   },
+
   corfu: {
     overview: {
       en: "Corfu has that rare ability to win you over before you even arrive: aromas of lemon and cypress trees, an Old Town that looks like it was plucked from an Italian set, narrow alleys (kantounia) hiding courtyards and balconies, and a sea that changes color depending on the weather. It is no coincidence that the Old Town of Corfu has been recognized as a UNESCO World Heritage Site, mainly for its urban and port ensemble with Venetian fortifications. But Corfu is not just 'a walk in the town + a beach'. It is an island with a very strong historical layer: Venetian, French, British and Greek periods left traces in its architecture, musical tradition and food.",
@@ -211,6 +214,7 @@ export const destinationDetails: Record<string, DestinationDetail> = {
       ],
     },
   },
+
   "nayplio-odigos-taxidiou": {
     overview: {
       en: "Nafplio is the city that makes you feel like you are in a romantic movie... but with Greek coffee. It is one of those destinations that always work: weekends, holidays, spring getaways in Greece. The Old Town with its neoclassical buildings, narrow alleys, squares, and castles that you can see from everywhere, gives this rare mix of 'picturesque' without being fake. And there is a historical weight that makes the trip more meaningful: Nafplio flourished when it became the first capital of the Greek state, from 1827 to 1834.",
@@ -245,6 +249,7 @@ export const destinationDetails: Record<string, DestinationDetail> = {
       ],
     },
   },
+
   thessaloniki: {
     overview: {
       en: "Thessaloniki is not 'just' the second largest city in Greece. It is a capital of rhythm: coffee that becomes a ritual, a walk on the New Waterfront that feels like a daily city date, Byzantine monuments not seen behind fences but next to modern shops, and neighborhoods that change character within minutes of walking. And the most significant asset? Thessaloniki is a global cultural destination: its Early Christian and Byzantine monuments are listed by UNESCO.",
@@ -279,74 +284,7 @@ export const destinationDetails: Record<string, DestinationDetail> = {
       ],
     },
   },
-  kefalonia: {
-    overview: {
-      en: "Kefalonia is one of those islands that cannot be boxed into a single category. It has an 'alpine' feel in the mountains, caves that look out of this world, beaches that change colors throughout the day, and villages that fiercely maintain their identity. Simultaneously, it is a living geological laboratory—the Kefalonia-Ithaca UNESCO Global Geopark is celebrated for its geological diversity and active tectonic environment. If you're looking for a destination combining dreamy beaches, road trips, authentic gastronomy, history, and nature, Kefalonia is one of the most complete choices in Greece.",
-      el: "Η Κεφαλονιά είναι από εκείνα τα νησιά που δεν χωράνε σε μία ταμπέλα. Είναι Ιόνιο, αλλά έχει “αλπική” αίσθηση στο βουνό, σπήλαια που μοιάζουν με σκηνικό άλλου κόσμου, παραλίες που αλλάζουν χρώμα μέσα στην ίδια μέρα και χωριά που κρατάνε την ταυτότητά τους με πείσμα. Ταυτόχρονα, είναι ένα ζωντανό “γεωλογικό εργαστήριο”: η Κεφαλονιά–Ιθάκη είναι UNESCO Global Geopark. Αν ψάχνεις προορισμό που να συνδυάζει “παραλία-όνειρο”, road trip, αυθεντική γαστρονομία, ιστορία και φυσιολατρικές εμπειρίες, η Κεφαλονιά είναι από τις πιο ολοκληρωμένες επιλογές στην Ελλάδα.",
-    },
-    pageIncludes: {
-      en: [
-        "Myrtos, Antisamos & famous beaches",
-        "Melissani & Drogarati Caves",
-        "Ainos National Park hikes",
-        "Assos & Fiskardo villages",
-      ],
-      el: [
-        "Μύρτος, Αντίσαμος & διάσημες παραλίες",
-        "Μελισσάνη & Σπήλαιο Δρογκαράτης",
-        "Εθνικός Δρυμός Αίνου",
-        "Χωριά Άσσος & Φισκάρδο",
-      ],
-    },
-    perfectFor: {
-      en: [
-        "Road trip enthusiasts",
-        "Nature and geology lovers",
-        "Families looking for diverse activities",
-        "Couples seeking romantic coastal escapes",
-      ],
-      el: [
-        "Λάτρεις των road trips",
-        "Φυσιολάτρες και εξερευνητές",
-        "Οικογένειες που αναζητούν δράσεις",
-        "Ζευγάρια για ρομαντικές αποδράσεις",
-      ],
-    },
-  },
-  lesvos: {
-    overview: {
-      en: "Lesvos is one of those islands that instantly shifts you to a different pace: not because it 'has nothing to do', but because it offers so much—on a truly continental scale. It's the third-largest Greek island, covered in a mosaic of olive groves, thermal springs, wetlands, authentic villages, major monuments, and the world-renowned Petrified Forest. Crucially, the entire island is a recognized UNESCO Global Geopark. If you like traveling with meaning, Lesvos works for everyone: families seek quiet bays, foodies explore the world of ouzo and local cheeses, nature lovers hike up to fortresses or birdwatch in the wetlands, and travelers who dislike 'copy-paste' tourism find genuine character in every corner.",
-      el: "Η Λέσβος είναι από εκείνα τα νησιά που σε βάζουν αμέσως σε άλλη ταχύτητα: όχι επειδή “δεν έχει τίποτα”, αλλά επειδή έχει πάρα πολλά — και μάλιστα σε κλίμακα ηπειρωτική. Δεν είναι τυχαίο ότι αποτελεί την τρίτη μεγαλύτερη ελληνική νήσο, με ένα μωσαϊκό από ελαιώνες, θερμές πηγές, υγροτόπους, παραδοσιακά χωριά, σπουδαία μνημεία και το διάσημο Απολιθωμένο Δάσος. Ολόκληρο το νησί έχει αναγνωριστεί ως Lesvos Island UNESCO Global Geopark. Το νησί προσφέρει απίστευτο βάθος: από οικογένειες (ήρεμοι κόλποι), στους foodies (ούζο, τυριά, ελαιόλαδο) και φυσιολάτρες (υγρότοποι, κάστρα), μέχρι ταξιδιώτες που αναζητούν την αυθεντικότητα.",
-    },
-    pageIncludes: {
-      en: [
-        "Mytilene & Molyvos Castles",
-        "Petrified Forest & Geopark",
-        "Birdwatching in Kalloni",
-        "Local Ouzo & Food",
-      ],
-      el: [
-        "Κάστρα Μυτιλήνης & Μολύβου",
-        "Απολιθωμένο Δάσος",
-        "Υγρότοποι & Ούζο Πλωμαρίου",
-        "Θερμές Πηγές & Αυθεντικά Χωριά",
-      ],
-    },
-    perfectFor: {
-      en: [
-        "Nature enthusiasts and birdwatchers",
-        "Gastronomy lovers (Ouzo & Olive oil)",
-        "Travelers looking for authentic slow-living",
-        "Families who enjoy spacious uncrowded beaches",
-      ],
-      el: [
-        "Φυσιολάτρες και εξερευνητές (Geopark)",
-        "Foodies που αγαπούν τον αληθινό μεζέ και το ούζο",
-        "Ταξιδιώτες που αναζητούν αυθεντικούς ρυθμούς",
-        "Οικογένειες για διακοπές χωρίς συνωστισμό",
-      ],
-    },
-  },
+
   athens: {
     overview: {
       en: "Athens is one of the few places in the world where you can drink coffee next to a modern shop window, turn a corner to find 2,500-year-old marbles, and end your day with a sunset by the sea. It's a city of intensity, contrast, and real everyday life. If you rush it like a checklist, it will tire you out. If you give it your rhythm, it becomes addictive. Yes, the Acropolis is a UNESCO World Heritage site since 1987. But Athens isn't just the Acropolis. It's the neighborhoods, the markets, the modern cultural spaces, the Riviera, and the day trips that make you feel you're living here, rather than just visiting.",
