@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   // Change to your actual production URL
-  const baseUrl = 'https://gogreecenow.com';
+  const baseUrl = 'https://www.gogreecenow.com';
 
   const routes = [
     '',

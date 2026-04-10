@@ -24,7 +24,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://gogreecenow.com"),
+  metadataBase: new URL("https://www.gogreecenow.com"),
   title: {
     default: "GoGreeceNow",
     template: "%s | GoGreeceNow",
