@@ -12,7 +12,7 @@ type Props = {
   params: Promise<{ lang: string; slug: string }>;
 };
 
-const SITE_URL = "https://gogreecenow.com";
+const SITE_URL = "https://www.gogreecenow.com";
 
 function isLang(value: string): value is Lang {
   return value === "en" || value === "el";

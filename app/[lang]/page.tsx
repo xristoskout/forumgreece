@@ -62,7 +62,7 @@ type HomePageContent = {
   footerPrivacy?: string;
 };
 
-const SITE_URL = "https://gogreecenow.com";
+const SITE_URL = "https://www.gogreecenow.com";
 
 const homeSeo: Record<
   Lang,
