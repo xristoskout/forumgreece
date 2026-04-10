@@ -35,6 +35,8 @@ export type ExperienceBusiness = {
   story?: Localized;
   practicalInfo?: LocalizedList;
   mapQuery?: string;
+  mapIframe?: string;
+  galleryImages?: string[];
 };
 
 export const experienceLandings: ExperienceLanding[] = [
@@ -172,6 +174,79 @@ export const experienceLandings: ExperienceLanding[] = [
 
 export const experienceBusinesses: ExperienceBusiness[] = [
   {
+    slug: "iren-rooms",
+    landingSlug: "lesvos-tours",
+    name: "Iren Rooms",
+    category: {
+      en: "Accommodation",
+      el: "Διαμονή",
+    },
+    place: "Κομνηνάκη 41, Μυτιλήνη 811 00",
+    info: {
+      en: "Discover top-rated accommodation in Lesvos, offering authentic hospitality and comfortable rooms.",
+      el: "Ανακαλύψτε κορυφαία διαμονή στη Λέσβο, που προσφέρει αυθεντική φιλοξενία και άνετα δωμάτια.",
+    },
+    image: "/images/businesses/Iren/dsc-0752.jpg",
+    mapQuery: "Iren Rooms Lesvos",
+    overview: {
+      en: "Iren Rooms is an exceptional local business providing a peaceful setting, comfortable amenities, and the warm hospitality Lesvos is famous for.",
+      el: "Το Iren Rooms είναι μια εξαιρετική τοπική επιχείρηση που προσφέρει γαλήνιο περιβάλλον, άνετες παροχές και τη ζεστή φιλοξενία για την οποία φημίζεται η Λέσβος.",
+    },
+    description: {
+      en: "Looking for the perfect stay in Lesvos? Our curated guide focuses on businesses that offer real value and a genuinely relaxing experience. Our featured choice, Iren Rooms, stands out for its serene atmosphere, pristine rooms, and ideal location for exploring the beauty of Lesvos. Whether you want to relax quietly or use it as a base for island excursions, it offers exactly what you need.",
+      el: "Αναζητάτε την τέλεια διαμονή στη Λέσβο; Ο οδηγός μας εστιάζει σε επιχειρήσεις που προσφέρουν πραγματική αξία και μια αυθεντικά χαλαρωτική εμπειρία. Η προτεινόμενη επιλογή μας, Iren Rooms, ξεχωρίζει για την ήρεμη ατμόσφαιρά του, τα πεντακάθαρα δωμάτια και την ιδανική του τοποθεσία για την εξερεύνηση του νησιού. Είτε θέλετε να χαλαρώσετε είτε να το χρησιμοποιήσετε ως ορμητήριο, προσφέρει ακριβώς ό,τι χρειάζεστε.",
+    },
+    highlights: {
+      en: ["Comfortable beds & nice views", "Peaceful & authentic environment", "Local Lesvian hospitality", "Close to top beaches & villages", "Free WiFi access", "Ideal starting point for road trips"],
+      el: ["Άνετα κρεβάτια & ωραία θέα", "Ήσυχο & αυθεντικό περιβάλλον", "Τοπική λεσβιακή φιλοξενία", "Κοντά σε κορυφαίες παραλίες", "Δωρεάν WiFi", "Ιδανική αφετηρία για εξορμήσεις"],
+    },
+    services: {
+      en: ["Spacious and beautifully decorated rooms", "Daily room freshness and cleaning", "Air conditioning for hot summer days", "Local tips and guidance from the hosts", "Relaxing garden/outdoor areas"],
+      el: ["Ευρύχωρα και όμορφα διακοσμημένα δωμάτια", "Καθημερινή φροντίδα και καθαριότητα", "Κλιματισμός για τις ζεστές μέρες", "Τοπικές συμβουλές και καθοδήγηση από τους οικοδεσπότες", "Χαλαρωτικοί εξωτερικοί χώροι/κήπος"],
+    },
+    story: {
+      en: "Built with passion for true Greek hospitality, Iren Rooms serves as the ultimate retreat in Lesvos.",
+      el: "Χτισμένο με μεράκι για την αληθινή ελληνική φιλοξενία, το Iren Rooms αποτελεί το απόλυτο καταφύγιο στη Λέσβο.",
+    },
+    practicalInfo: {
+      en: ["Check-in usually in the afternoon; communicate your arrival time", "Highly recommended to rent a car to explore the surrounding Lesvos island", "Book early during July and August as availability gets limited"],
+      el: ["Το check-in γίνεται συνήθως το απόγευμα· ενημερώστε για την ώρα άφιξης", "Συνιστάται ιδιαίτερα η ενοικίαση αυτοκινήτου για την εξερεύνηση της Λέσβου", "Κάντε κράτηση νωρίς για Ιούλιο και Αύγουστο λόγω υψηλής ζήτησης"],
+    },
+    routes: {
+      en: ["Mytilene Center", "Mytilene City Break", "Exploring Lesvos"],
+      el: ["Κέντρο Μυτιλήνης", "Απόδραση στη Μυτιλήνη", "Εξορμήσεις στη Λέσβο"],
+    },
+    perfectFor: {
+      en: ["Couples looking for a romantic escape", "Families wanting a calm environment", "Travelers seeking authentic Greek hospitality", "Those exploring Lesvos on a road trip"],
+      el: ["Ζευγάρια που αναζητούν ρομαντική απόδραση", "Οικογένειες που θέλουν ήρεμο περιβάλλον", "Ταξιδιώτες που επιζητούν αυθεντική ελληνική φιλοξενία", "Όσους εξερευνούν τη Λέσβο με αυτοκίνητο"],
+    },
+    ctaLabel: {
+      en: "Book your stay",
+      el: "Κάντε κράτηση",
+    },
+    phone: "6977353672",
+    email: "",
+    website: "",
+    galleryImages: [
+      "/images/businesses/Iren/dsc-0752.jpg",
+      "/images/businesses/Iren/ireneok.jpg",
+      "/images/businesses/Iren/4.jpg",
+      "/images/businesses/Iren/dsc-0620.jpg",
+      "/images/businesses/Iren/dsc-0636.jpg",
+      "/images/businesses/Iren/dsc-0669.jpg",
+      "/images/businesses/Iren/dsc-0671.jpg",
+      "/images/businesses/Iren/dsc-0698.jpg",
+      "/images/businesses/Iren/dsc-0718.jpg",
+      "/images/businesses/Iren/dsc-0757.jpg",
+      "/images/businesses/Iren/f10.jpg",
+      "/images/businesses/Iren/unnamed (1).jpg",
+      "/images/businesses/Iren/unnamed (2).jpg",
+      "/images/businesses/Iren/unnamed (3).jpg",
+      "/images/businesses/Iren/unnamed (4).jpg"
+    ],
+    mapIframe: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3096.0263330769176!2d26.556568776352858!3d39.10587063437584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ba6709b0b785ef%3A0x5550bbe9b3d42544!2sIren%20Rooms!5e0!3m2!1sel!2sgr!4v1775805404970!5m2!1sel!2sgr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
+  },
+  {
   slug: "rolling-into-the-blue",
   landingSlug: "kefalonia-tours",
   name: "Rolling Into The Blue",
@@ -184,10 +259,10 @@ export const experienceBusinesses: ExperienceBusiness[] = [
     en: "A starting point for one of the most beautiful sea experiences in northern Kefalonia, with no-license boat rentals and private cruises with skipper from the small port of Zola near Agia Kyriaki.",
     el: "Αφετηρία για μία από τις πιο όμορφες θαλάσσιες εμπειρίες στη βόρεια Κεφαλονιά, με ενοικίαση σκαφών χωρίς άδεια και ιδιωτικές κρουαζιέρες με skipper από το λιμανάκι της Ζόλας, κοντά στην Αγία Κυριακή.",
   },
-  image: "/images/businesses/rolling-into-the-blue/1.jpg",
+  image: "/images/businesses/rolling-into-the-blue/14.jpg",
   href: "/businesses/rolling-into-the-blue",
   badge: "Featured",
-  galleryCount: 10,
+  galleryCount: 15,
   mapQuery: "Rolling Into The Blue Zola port Agia Kyriaki Kefalonia Greece",
   overview: {
     en: "Rolling Into The Blue operates from the small port of Zola, next to Agia Kyriaki beach in Kefalonia, and offers two main options: small motorboats without a license for visitors who want freedom on the water, and private cruises with skipper for guests who prefer a more relaxed and guided experience. From here, you can reach beautiful coves and beaches that are not easily accessible by road, including Fteri, Blue Lagoon, Kamari, Amidi, and parts of the wider Myrtos bay coastline.",
@@ -280,13 +355,30 @@ practicalInfo: {
     ],
   },
   ctaLabel: {
-    en: "View business",
-    el: "Δες την επιχείρηση",
+    en: "Visit Website",
+    el: "Επισκεφθείτε την ιστοσελίδα",
   },
   phone: "+306984331377",
   email: "deepbluemarine23@gmail.com",
   website: "https://www.facebook.com/profile.php?id=100090475029196",
   youtube: "https://www.youtube.com/watch?v=gBbpOTZjDgE&t=6s",
+  galleryImages: [
+    "/images/businesses/rolling-into-the-blue/11.jpg",
+    "/images/businesses/rolling-into-the-blue/1.jpg",
+    "/images/businesses/rolling-into-the-blue/2.jpg",
+    "/images/businesses/rolling-into-the-blue/3.jpg",
+    "/images/businesses/rolling-into-the-blue/4.jpg",
+    "/images/businesses/rolling-into-the-blue/5.jpg",
+    "/images/businesses/rolling-into-the-blue/6.jpg",
+    "/images/businesses/rolling-into-the-blue/7.jpg",
+    "/images/businesses/rolling-into-the-blue/8.jpg",
+    "/images/businesses/rolling-into-the-blue/9.jpg",
+    "/images/businesses/rolling-into-the-blue/10.jpg",
+    "/images/businesses/rolling-into-the-blue/12.jpg",
+    "/images/businesses/rolling-into-the-blue/13.jpg",
+    "/images/businesses/rolling-into-the-blue/14.jpg",
+    "/images/businesses/rolling-into-the-blue/15.jpg",
+  ],
 },
   {
     slug: "taxi-express-patras",

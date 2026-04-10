@@ -63,8 +63,8 @@ export default function ContactPage() {
             <h2 className="text-lg font-bold text-slate-500 uppercase tracking-widest mb-2">
               {t.email_label[lang]}
             </h2>
-            <a href="mailto:gogreecenow.gr@gmail.com" className="text-2xl sm:text-3xl font-extrabold text-indigo-600 hover:text-indigo-800 transition-colors underline decoration-indigo-200 underline-offset-8">
-              gogreecenow.gr@gmail.com
+            <a href="mailto:sales@gogreecenow.com" className="text-2xl sm:text-3xl font-extrabold text-indigo-600 hover:text-indigo-800 transition-colors underline decoration-indigo-200 underline-offset-8">
+              sales@gogreecenow.com
             </a>
           </div>
 

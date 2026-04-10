@@ -117,10 +117,10 @@ export default function FocusPage() {
             {lang === "en" ? "Ready to transform your digital presence? Reach out to us today." : "Είστε έτοιμοι να μεταμορφώσετε την ψηφιακή σας παρουσία; Επικοινωνήστε μαζί μας σήμερα."}
           </p>
           <a
-            href="mailto:gogreecenow.gr@gmail.com"
+            href="mailto:focus@gogreecenow.com"
             className="inline-flex items-center justify-center gap-3 rounded-2xl bg-indigo-600 px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all hover:-translate-y-1 hover:bg-indigo-700 hover:shadow-indigo-500/25"
           >
-            <span className="text-xl">✉️</span> gogreecenow.gr@gmail.com
+            <span className="text-xl">✉️</span> focus@gogreecenow.com
           </a>
         </div>
       </section>
