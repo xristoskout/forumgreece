@@ -187,6 +187,7 @@ export const experienceBusinesses: ExperienceBusiness[] = [
       el: "Ανακαλύψτε κορυφαία διαμονή στη Λέσβο, που προσφέρει αυθεντική φιλοξενία και άνετα δωμάτια.",
     },
     image: "/images/businesses/Iren/dsc-0752.jpg",
+    href: "/businesses/iren-rooms",
     mapQuery: "Iren Rooms Lesvos",
     overview: {
       en: "Iren Rooms is an exceptional local business providing a peaceful setting, comfortable amenities, and the warm hospitality Lesvos is famous for.",
