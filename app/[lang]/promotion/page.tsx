@@ -1,6 +1,7 @@
 "use client";
 
 import Link from 'next/link';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import SiteHeader from "../../../components/site-header";
@@ -9,6 +10,21 @@ type Lang = "en" | "el";
 
 export default function PromotionPage() {
   const pathname = usePathname();
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const name = formData.get('name') as string;
+    const email = formData.get('email') as string;
+    const message = formData.get('message') as string;
+
+    const subject = encodeURIComponent(`New Promotion Inquiry from ${name}`);
+    const body = encodeURIComponent(`Business Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+
+    window.location.href = `mailto:info@gogreecenow.com?subject=${subject}&body=${body}`;
+    setIsModalOpen(false);
+  };
   const lang: Lang = pathname.startsWith("/el") ? "el" : "en";
   const t = {
     title: {
@@ -183,15 +199,48 @@ export default function PromotionPage() {
             </p>
           </div>
           <div className="mt-10 flex items-center gap-x-6 lg:mt-0 lg:flex-shrink-0">
-            <a
-              href="mailto:contact@gogreecenow.com"
+            <button
+              onClick={() => setIsModalOpen(true)}
               className="rounded-full bg-white px-10 py-5 text-lg font-bold text-indigo-600 shadow-2xl hover:bg-slate-50 hover:scale-105 transition-all"
             >
               {t.cta_button[lang]}
-            </a>
+            </button>
           </div>
         </div>
       </section>
+
+      {/* Contact Modal */}
+      {isModalOpen && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm transition-opacity">
+           <div className="bg-white rounded-3xl shadow-2xl w-full max-w-lg overflow-hidden relative">
+              <div className="p-8">
+                 <div className="flex justify-between items-center mb-6">
+                    <h3 className="text-2xl font-bold text-slate-900">
+                      {lang === 'el' ? 'Στείλτε μας το μήνυμά σας' : 'Send us a message'}
+                    </h3>
+                    <button onClick={() => setIsModalOpen(false)} className="text-slate-400 hover:text-slate-900 transition-colors text-3xl leading-none">&times;</button>
+                 </div>
+                 <form className="space-y-5" onSubmit={handleSubmit}>
+                    <div>
+                      <label className="block text-sm font-semibold text-slate-700 mb-1">{lang === 'el' ? 'Όνομα Επιχείρησης' : 'Business Name'}</label>
+                      <input required name="name" type="text" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-slate-50" />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-semibold text-slate-700 mb-1">Email</label>
+                      <input required name="email" type="email" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-slate-50" />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-semibold text-slate-700 mb-1">{lang === 'el' ? 'Μήνυμα' : 'Message'}</label>
+                      <textarea required name="message" rows={4} className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-slate-50"></textarea>
+                    </div>
+                    <button type="submit" className="w-full bg-indigo-600 text-white font-bold py-4 rounded-xl hover:bg-indigo-700 transition-colors mt-2 shadow-lg shadow-indigo-200">
+                      {lang === 'el' ? 'Αποστολή' : 'Send'}
+                    </button>
+                 </form>
+              </div>
+           </div>
+        </div>
+      )}
     </main>
   );
 }

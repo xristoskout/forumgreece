@@ -105,6 +105,10 @@ export default function BusinessDetailsClient({
   }
 
   const galleryImages = useMemo(() => {
+    if (business.galleryImages && business.galleryImages.length > 0) {
+      return business.galleryImages;
+    }
+
     if (business.galleryCount && business.galleryCount > 0) {
       return Array.from(
         { length: business.galleryCount },
@@ -113,7 +117,7 @@ export default function BusinessDetailsClient({
     }
 
     return [business.image];
-  }, [business.galleryCount, business.image, business.slug]);
+  }, [business.galleryCount, business.image, business.slug, business.galleryImages]);
 
   const hasContact = Boolean(
     business.phone || business.email || business.youtube || business.website
@@ -154,10 +158,6 @@ export default function BusinessDetailsClient({
     gallery: lang === "en" ? "Gallery" : "Φωτογραφίες",
     quickAccess: lang === "en" ? "Quick Access" : "Γρήγορη πρόσβαση",
     youtube: lang === "en" ? "Open on YouTube" : "Άνοιγμα στο YouTube",
-    premiumNote:
-      lang === "en"
-        ? "Boat days, private cruising and hidden beaches — organized in a clean and practical way."
-        : "Boat days, ιδιωτικές κρουαζιέρες και κρυφές παραλίες — οργανωμένα με καθαρό και πρακτικό τρόπο.",
   };
 
   return (
@@ -244,10 +244,6 @@ export default function BusinessDetailsClient({
                   </span>
                 ))}
               </div>
-
-              <p className="mt-8 max-w-2xl text-sm leading-7 text-slate-200 drop-shadow">
-                {t.premiumNote}
-              </p>
             </div>
 
             <div className="rounded-[2.5rem] border border-slate-200 bg-white/90 p-8 backdrop-blur-md shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-indigo-500/10">
@@ -308,8 +304,8 @@ export default function BusinessDetailsClient({
                 )}
               </div>
 
-              <div className="mt-6 rounded-2xl border border-slate-200 bg-white/8 p-5">
-                <p className="text-sm font-semibold text-cyan-100">
+              <div className="mt-6 rounded-2xl border border-slate-200 bg-white/10 p-5 backdrop-blur-sm shadow-sm">
+                <p className="text-sm font-semibold text-slate-900">
                   {t.perfectFor}
                 </p>
 
@@ -402,7 +398,7 @@ export default function BusinessDetailsClient({
               icon="★"
             />
 
-            {mapSrc && (
+            {(mapSrc || business.mapIframe) && (
               <section className="group overflow-hidden rounded-[2.5rem] border border-slate-200 bg-white/90 backdrop-blur-md shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)]">
                 <div className="border-b border-slate-200 p-8">
                   <h2 className="text-2xl font-bold tracking-tight text-slate-900 group-hover:text-indigo-800 transition-colors">
@@ -415,15 +411,22 @@ export default function BusinessDetailsClient({
                 </div>
 
                 <div className="relative h-[280px] w-full bg-slate-100">
-                  <iframe
-                    src={mapSrc}
-                    width="100%"
-                    height="100%"
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    className="absolute inset-0 h-full w-full border-0 filter opacity-80 mix-blend-luminosity hover:mix-blend-normal hover:opacity-100 transition-all duration-500"
-                    title={`${business.name} map`}
-                  />
+                  {business.mapIframe ? (
+                    <div 
+                      className="absolute inset-0 h-full w-full border-0 filter opacity-80 mix-blend-luminosity hover:mix-blend-normal hover:opacity-100 transition-all duration-500 [&>iframe]:w-full [&>iframe]:h-full"
+                      dangerouslySetInnerHTML={{ __html: business.mapIframe }}
+                    />
+                  ) : mapSrc ? (
+                    <iframe
+                      src={mapSrc}
+                      width="100%"
+                      height="100%"
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      className="absolute inset-0 h-full w-full border-0 filter opacity-80 mix-blend-luminosity hover:mix-blend-normal hover:opacity-100 transition-all duration-500"
+                      title={`${business.name} map`}
+                    />
+                  ) : null}
                 </div>
 
                 {mapLink && (
