@@ -516,7 +516,7 @@ export const travelInfoGuides: GuideCard[] = [
     image: "/images/travel-transport.jpg",
     overview: {
       en: "Navigating Greece means learning two different transport systems: the intricate web of Aegean and Ionian ferries, and the extensive mainland road and bus network. With a bit of strategic planning, you can easily combine flights, ferries, and cars to craft the ultimate itinerary across mountains and islands.",
-      el: "Η μετακίνηση στην Ελλάδα βασίζεται σε δύο διαφορετικά συστήματα: το δίκτυο των πλοίων σε Αιγαίο και Ιόνιο, και τους αυτοκινητόδρομους στην ηπειρωτική χώρα. Η έξυπνη αξιοποίηση πτήσεων, πλοίων και ΚΤΕΛ (λεωφορείων) θα απογειώσει την εμπειρία σου, αρκεί να κατανοήσεις τη δομή τους."
+      el: "Η μετακίνηση στην Ελλάδα είναι πιο εύκολη όταν γνωρίζεις πώς λειτουργούν τα βασικά μέσα μεταφοράς. Στα νησιά, οι διαδρομές γίνονται κυρίως με πλοία και πτήσεις, ενώ στην ηπειρωτική χώρα σημαντικό ρόλο παίζουν οι αυτοκινητόδρομοι και τα ΚΤΕΛ. Με τον σωστό συνδυασμό μέσων, μπορείς να οργανώσεις το ταξίδι σου πιο άνετα, γρήγορα και έξυπνα."
     },
     points: {
       en: [
@@ -560,8 +560,8 @@ export const travelInfoGuides: GuideCard[] = [
 
 export const hotels: HotelCard[] = [
   {
-    slug: "caldera-blue-suites",
-    name: "Caldera Blue Suites",
+    slug: "santorini",
+    name: "Hotels in Santorini",
     place: "Santorini",
     info: {
       en: "Elegant cave-style suites with sea views and a luxury island feeling.",
@@ -579,8 +579,8 @@ export const hotels: HotelCard[] = [
     },
   },
   {
-    slug: "ionian-garden-resort",
-    name: "Ionian Garden Resort",
+    slug: "corfu",
+    name: "Hotels in Corfu",
     place: "Corfu",
     info: {
       en: "A relaxed family-friendly stay close to beaches, restaurants and green scenery.",
@@ -598,7 +598,7 @@ export const hotels: HotelCard[] = [
     },
   },
   {
-    slug: "old-town-boutique-house",
+    slug: "lesvos",
     name: "Hotels & Rooms to let in Lesvos",
     place: "Lesvos",
     info: {

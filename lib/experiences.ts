@@ -169,6 +169,7 @@ export const experienceLandings: ExperienceLanding[] = [
         "Οργάνωσε σωστά τις μέρες σου και εξασφάλισε τη θέση σου σε κορυφαίες εμπειρίες.",
       ],
     },
+    image: "/images/tours/crete-tours.jpg",
   },
 ];
 
@@ -194,8 +195,8 @@ export const experienceBusinesses: ExperienceBusiness[] = [
       el: "Το Iren Rooms είναι μια εξαιρετική τοπική επιχείρηση που προσφέρει γαλήνιο περιβάλλον, άνετες παροχές και τη ζεστή φιλοξενία για την οποία φημίζεται η Λέσβος.",
     },
     description: {
-      en: "Looking for the perfect stay in Lesvos? Our curated guide focuses on businesses that offer real value and a genuinely relaxing experience. Our featured choice, Iren Rooms, stands out for its serene atmosphere, pristine rooms, and ideal location for exploring the beauty of Lesvos. Whether you want to relax quietly or use it as a base for island excursions, it offers exactly what you need.",
-      el: "Αναζητάτε την τέλεια διαμονή στη Λέσβο; Ο οδηγός μας εστιάζει σε επιχειρήσεις που προσφέρουν πραγματική αξία και μια αυθεντικά χαλαρωτική εμπειρία. Η προτεινόμενη επιλογή μας, Iren Rooms, ξεχωρίζει για την ήρεμη ατμόσφαιρά του, τα πεντακάθαρα δωμάτια και την ιδανική του τοποθεσία για την εξερεύνηση του νησιού. Είτε θέλετε να χαλαρώσετε είτε να το χρησιμοποιήσετε ως ορμητήριο, προσφέρει ακριβώς ό,τι χρειάζεστε.",
+      en: "Iren Rooms is a stately 3 star mansion, with warm welcoming environment, located in the heart of Mitilini at the port, just 250 meters from the point where the ships dock and in the middle of the historical centre of the town.\n\nAll the rooms have private bathroom, air condition, TV, refrigerator, hair dryer, kettle, coffee, tea, sugar, milk and mineral water.\n\nLooking forward to hosting you.",
+      el: "Το Iren Rooms είναι ένα αρχοντικό 3 αστέρων, με ζεστό και φιλόξενο περιβάλλον, το οποίο βρίσκεται στην καρδιά της Μυτιλήνης στο λιμάνι, μόλις 250 μέτρα από το σημείο όπου δένουν τα πλοία και στη μέση του ιστορικού κέντρου της πόλης.\n\nΌλα τα δωμάτια διαθέτουν ιδιωτικό μπάνιο, κλιματισμό, τηλεόραση, ψυγείο, πιστολάκι μαλλιών, βραστήρα, καφέ, τσάι, ζάχαρη, γάλα και εμφιαλωμένο νερό.\n\nΑνυπομονούμε να σας φιλοξενήσουμε.",
     },
     highlights: {
       en: ["Comfortable beds & nice views", "Peaceful & authentic environment", "Local Lesvian hospitality", "Close to top beaches & villages", "Free WiFi access", "Ideal starting point for road trips"],
@@ -229,21 +230,29 @@ export const experienceBusinesses: ExperienceBusiness[] = [
     email: "",
     website: "",
     galleryImages: [
-      "/images/businesses/Iren/dsc-0752.jpg",
-      "/images/businesses/Iren/ireneok.jpg",
       "/images/businesses/Iren/4.jpg",
+      "/images/businesses/Iren/5.jpg",
+      "/images/businesses/Iren/6.jpg",
+      "/images/businesses/Iren/7.jpg",
+      "/images/businesses/Iren/8.jpg",
       "/images/businesses/Iren/dsc-0620.jpg",
       "/images/businesses/Iren/dsc-0636.jpg",
       "/images/businesses/Iren/dsc-0669.jpg",
       "/images/businesses/Iren/dsc-0671.jpg",
       "/images/businesses/Iren/dsc-0698.jpg",
       "/images/businesses/Iren/dsc-0718.jpg",
+      "/images/businesses/Iren/dsc-0752.jpg",
       "/images/businesses/Iren/dsc-0757.jpg",
       "/images/businesses/Iren/f10.jpg",
+      "/images/businesses/Iren/ireneok.jpg",
       "/images/businesses/Iren/unnamed (1).jpg",
       "/images/businesses/Iren/unnamed (2).jpg",
       "/images/businesses/Iren/unnamed (3).jpg",
-      "/images/businesses/Iren/unnamed (4).jpg"
+      "/images/businesses/Iren/unnamed (4).jpg",
+      "/images/businesses/Iren/unnamed (5).jpg",
+      "/images/businesses/Iren/unnamed (6).jpg",
+      "/images/businesses/Iren/unnamed (7).jpg",
+      "/images/businesses/Iren/3.jpg"
     ],
     mapIframe: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3096.0263330769176!2d26.556568776352858!3d39.10587063437584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ba6709b0b785ef%3A0x5550bbe9b3d42544!2sIren%20Rooms!5e0!3m2!1sel!2sgr!4v1775805404970!5m2!1sel!2sgr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
   },
@@ -395,7 +404,7 @@ practicalInfo: {
       el: "24/7 υπηρεσίες ταξί στην Πάτρα. Γρήγορες, αξιόπιστες μετακινήσεις με σύγχρονο στόλο και VIP επιλογές. Μπορείς να κλείσεις τηλεφωνικά ή μέσω της εφαρμογής Mr Booky.",
     },
     image: "/images/businesses/taxi-express-patras/taxi-express.jpg",
-    href: "https://taxiexpresspatras.gr/",
+    href: "/businesses/taxi-express-patras",
     badge: "24/7",
     overview: {
       en: "Taxi Express Patras offers reliable, 24/7 taxi services covering Patras and key transport hubs like Araxos Airport, the port of Patras, KTEL buses, and the train station. They provide instant phone support and online bookings via their innovative Mr Booky app.",
@@ -506,7 +515,7 @@ practicalInfo: {
       el: "Οικογενειακή επιχείρηση στη Λέσβο που παράγει υψηλής ποιότητας εξαιρετικό παρθένο ελαιόλαδο (όπως το premium Sapfo), θρεπτικές ελιές και φυσικά σαπούνια, διατηρώντας την αυθεντική παράδοση του νησιού.",
     },
     image: "/images/businesses/papadellis/papadellis.jpg",
-    href: "https://papadellis.eu/",
+    href: "/businesses/papadellis-olive-oil",
     badge: "Local Producer",
     overview: {
       en: "Papadellis Olive Oil is a local producer based in Loutropoli Thermis, on the island of Lesvos. With deep respect for the area's centuries-old olive oil heritage, the Papadellis family crafts premium extra virgin olive oils, table olives, and naturally formulated soaps using traditional methods. Their distinctive products act as true ambassadors of the Mediterranean diet and the fertile Lesvian land.",
@@ -590,7 +599,7 @@ practicalInfo: {
     email: "info@papadellis.eu",
     website: "https://papadellis.eu/",
     youtube: "",
-    galleryCount: 1,
+    galleryCount: 0,
     mapQuery: "Papadellis Olive Oil Loutropoli Thermis Lesvos",
   }
 ];

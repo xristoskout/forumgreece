@@ -55,6 +55,90 @@ export default function TravelInfoGuidePage() {
     );
   }
 
+  const renderBusinesses = () => {
+    if (businesses.length === 0) return null;
+    return (
+      <div className="rounded-[2rem] border border-slate-200 bg-gradient-to-br from-indigo-50 to-white shadow-xl shadow-slate-200/50 p-8">
+        <h3 className="text-sm font-bold uppercase tracking-[0.2em] text-indigo-600 mb-6 flex items-center gap-2">
+          <span className="w-2 h-2 rounded-full bg-indigo-500"></span>
+          {lang === "en" ? "Related Services & Businesses" : "Σχετικές Υπηρεσίες & Επιχειρήσεις"}
+        </h3>
+
+        <div className="space-y-6">
+          {businesses.map((business) => {
+            const businessHref = business.href || `/businesses/${business.slug}`;
+            const isExternalUrl = /^https?:\/\//i.test(businessHref);
+
+            return (
+              <div
+                key={business.slug}
+                className="group overflow-hidden rounded-[20px] border border-slate-200 bg-white shadow-sm transition hover:shadow-md"
+              >
+                <div className="relative h-48 w-full bg-slate-100">
+                  {business.image ? (
+                    <Image
+                      src={business.image}
+                      alt={business.name}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      sizes="(max-width: 640px) 100vw, 400px"
+                    />
+                  ) : (
+                    <div className="absolute inset-0 bg-slate-200/50 flex flex-col items-center justify-center text-slate-400">
+                      <span className="text-3xl mb-1">🚌</span>
+                      <span className="text-xs uppercase font-semibold">No Image</span>
+                    </div>
+                  )}
+                  {business.badge && (
+                    <div className="absolute top-3 right-3">
+                      <span className="inline-flex rounded-full bg-white/95 px-3 py-1 text-xs font-bold text-indigo-800 shadow-sm backdrop-blur-sm">
+                        {business.badge}
+                      </span>
+                    </div>
+                  )}
+                </div>
+
+                <div className="p-5">
+                  <div className="text-xs font-extrabold uppercase tracking-widest text-indigo-600 mb-1">
+                    {business.category[lang]}
+                  </div>
+
+                  <h4 className="text-xl font-bold tracking-tight text-slate-900 mb-2">
+                    {business.name}
+                  </h4>
+
+                  <p className="text-sm text-slate-500 line-clamp-3 mb-4">
+                    {business.info[lang]}
+                  </p>
+
+                  <div className="mt-4">
+                    {isExternalUrl ? (
+                      <a
+                        href={businessHref}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex w-full items-center justify-center gap-2 rounded-xl bg-indigo-50 px-4 py-2.5 text-sm font-semibold text-white bg-indigo-600 transition-colors hover:bg-indigo-500 shadow-sm"
+                      >
+                        {business.ctaLabel?.[lang] || (lang === "en" ? "Visit Website" : "Επισκεφθείτε την ιστοσελίδα")}
+                      </a>
+                    ) : (
+                      <Link
+                        href={withLang(businessHref)}
+                        className="flex w-full items-center justify-center gap-2 rounded-xl bg-indigo-50 px-4 py-2.5 text-sm font-semibold text-white bg-indigo-600 transition-colors hover:bg-indigo-500 shadow-sm"
+                      >
+                        {business.ctaLabel?.[lang] || (lang === "en" ? "View Details" : "Δείτε Λεπτομέρειες")}
+                      </Link>
+                    )}
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    );
+  };
+
   return (
     <main className="min-h-screen bg-slate-50 text-slate-900 selection:bg-indigo-100 selection:text-indigo-900 pb-20">
       <SiteHeader />
@@ -91,7 +175,7 @@ export default function TravelInfoGuidePage() {
             <article className="rounded-[2.5rem] border border-slate-200/60 bg-white/80 backdrop-blur-xl p-8 md:p-12 shadow-xl shadow-slate-200/50 relative overflow-hidden group">
               <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 opacity-50 group-hover:opacity-80 transition-opacity duration-1000"></div>
               <h2 className="text-sm font-bold uppercase tracking-[0.25em] text-indigo-600 mb-6 relative z-10">{t.overview[lang]}</h2>
-              <p className="text-xl md:text-2xl leading-relaxed text-slate-800 font-medium relative z-10">
+              <p className="text-lg md:text-xl leading-relaxed text-slate-700 relative z-10">
                 {item.overview[lang]}
               </p>
             </article>
@@ -113,99 +197,11 @@ export default function TravelInfoGuidePage() {
                 </div>
               </div>
             ))}
-
-            {businesses.length > 0 && (
-              <div className="mt-16 pt-12 border-t border-slate-200">
-                <h3 className="text-sm font-bold uppercase tracking-[0.25em] text-indigo-600 mb-8 flex items-center gap-3">
-                  <span className="w-8 h-px bg-indigo-200"></span>
-                  {lang === "en" ? "Related Services & Businesses" : "Σχετικές Υπηρεσίες & Επιχειρήσεις"}
-                </h3>
-                
-                <div className="space-y-6">
-                  {businesses.map((business) => {
-                    const businessHref = business.href || `/businesses/${business.slug}`;
-                    const isExternalUrl = /^https?:\/\//i.test(businessHref);
-
-                    return (
-                      <article
-                        key={business.slug}
-                        className="overflow-hidden rounded-[2rem] border border-slate-200/60 bg-white shadow-xl shadow-slate-200/50 transition duration-300 hover:border-indigo-100 hover:shadow-2xl hover:shadow-indigo-100/50"
-                      >
-                        <div className="grid gap-0 sm:grid-cols-[200px_1fr] md:grid-cols-[240px_1fr]">
-                          <div className="relative h-48 w-full bg-slate-100 sm:h-full">
-                            {business.image ? (
-                              <Image
-                                src={business.image}
-                                alt={business.name}
-                                fill
-                                className="object-cover"
-                                sizes="(max-width: 640px) 100vw, 240px"
-                              />
-                            ) : (
-                              <div className="absolute inset-0 bg-slate-200/50 flex flex-col items-center justify-center text-slate-400">
-                                <span className="text-3xl mb-1">🚌</span>
-                                <span className="text-xs uppercase font-semibold">No Image</span>
-                              </div>
-                            )}
-                          </div>
-
-                          <div className="flex flex-col justify-between p-6 md:p-8">
-                            <div>
-                              <div className="flex flex-wrap items-center justify-between gap-3 mb-2">
-                                <div className="text-xs font-bold uppercase tracking-widest text-indigo-600">
-                                  {business.category[lang]}
-                                </div>
-                                {business.badge && (
-                                  <span className="inline-flex rounded-full bg-indigo-50 text-indigo-700 px-3 py-1 text-xs font-bold ring-1 ring-inset ring-indigo-200">
-                                    {business.badge}
-                                  </span>
-                                )}
-                              </div>
-
-                              <h4 className="text-xl font-extrabold text-slate-900 mb-1">
-                                {business.name}
-                              </h4>
-                              <p className="text-sm font-medium text-slate-500 mb-4">
-                                {business.place}
-                              </p>
-
-                              <p className="text-base text-slate-600 leading-relaxed max-w-xl">
-                                {business.info[lang]}
-                              </p>
-                            </div>
-
-                            <div className="mt-6 flex items-center justify-between">
-                              {isExternalUrl ? (
-                                <a
-                                  href={businessHref}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="inline-flex items-center gap-2 rounded-xl bg-indigo-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-indigo-700"
-                                >
-                                  {business.ctaLabel?.[lang] || (lang === "en" ? "Visit Website" : "Επισκεφθείτε την ιστοσελίδα")}
-                                  <span aria-hidden="true">&rarr;</span>
-                                </a>
-                              ) : (
-                                <Link
-                                  href={withLang(businessHref)}
-                                  className="inline-flex items-center gap-2 rounded-xl bg-indigo-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-indigo-700"
-                                >
-                                  {business.ctaLabel?.[lang] || (lang === "en" ? "View Details" : "Δείτε Λεπτομέρειες")}
-                                  <span aria-hidden="true">&rarr;</span>
-                                </Link>
-                              )}
-                            </div>
-                          </div>
-                        </div>
-                      </article>
-                    );
-                  })}
-                </div>
-              </div>
-            )}
           </div>
 
           <aside className="sticky top-28 space-y-6">
+            {renderBusinesses()}
+
             <div className="rounded-[2rem] border border-slate-200 bg-white shadow-xl shadow-slate-200/50 p-8">
               <h3 className="text-sm font-bold uppercase tracking-[0.2em] text-indigo-600 mb-6 flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-indigo-500"></span>

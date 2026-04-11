@@ -4,6 +4,7 @@ import { useMemo } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
+import SiteHeader from "../../../../components/site-header";
 import BusinessGallery from "./business-gallery";
 import type { Lang } from "../../../../lib/content";
 import type { ExperienceBusiness } from "../../../../lib/experiences";
@@ -161,7 +162,8 @@ export default function BusinessDetailsClient({
   };
 
   return (
-    <main className="min-h-screen bg-transparent text-slate-900">
+    <main className="min-h-screen bg-transparent text-slate-900 pt-20">
+      <SiteHeader />
       <section className="mx-auto max-w-7xl px-6 py-10">
         <div className="flex flex-wrap items-center justify-between gap-4">
           <Link
@@ -170,28 +172,6 @@ export default function BusinessDetailsClient({
           >
             ← {t.backToTours}
           </Link>
-
-          <div className="flex items-center gap-2 rounded-full border border-slate-200 bg-white/90 backdrop-blur-md p-1 shadow-md">
-            <button
-              type="button"
-              onClick={() => switchLanguage("en")}
-              className={`rounded-full px-4 py-1.5 text-sm font-semibold transition ${
-                lang === "en" ? "bg-indigo-600 text-slate-900" : "text-slate-500 hover:text-slate-900"
-              }`}
-            >
-              EN
-            </button>
-
-            <button
-              type="button"
-              onClick={() => switchLanguage("el")}
-              className={`rounded-full px-4 py-1.5 text-sm font-semibold transition ${
-                lang === "el" ? "bg-indigo-600 text-slate-900" : "text-slate-500 hover:text-slate-900"
-              }`}
-            >
-              GR
-            </button>
-          </div>
         </div>
 
         <section className="relative mt-8 overflow-hidden rounded-[3rem] text-slate-900 shadow-xl border border-slate-200 group">
@@ -324,19 +304,21 @@ export default function BusinessDetailsClient({
           </div>
         </section>
 
-        <section className="mt-10">
-          <div className="mb-5 flex items-center justify-between">
-            <h2 className="text-2xl font-bold tracking-tight text-slate-900">
-              {t.gallery}
-            </h2>
-          </div>
+        {galleryImages.length > 1 && (
+          <section className="mt-10">
+            <div className="mb-5 flex items-center justify-between">
+              <h2 className="text-2xl font-bold tracking-tight text-slate-900">
+                {t.gallery}
+              </h2>
+            </div>
 
-          <BusinessGallery
-            name={business.name}
-            initialImage={business.image}
-            images={galleryImages}
-          />
-        </section>
+            <BusinessGallery
+              name={business.name}
+              initialImage={business.image}
+              images={galleryImages}
+            />
+          </section>
+        )}
 
         <section className="mt-10 grid gap-6 xl:grid-cols-[1.12fr_0.88fr]">
           <div className="space-y-6">
@@ -352,7 +334,7 @@ export default function BusinessDetailsClient({
                   </h2>
                 </div>
 
-                <p className="mt-8 text-lg leading-relaxed text-slate-600">
+                <p className="mt-8 text-lg leading-relaxed text-slate-600 whitespace-pre-wrap">
                   {business.description[lang]}
                 </p>
               </section>
