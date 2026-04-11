@@ -50,25 +50,15 @@ export default function DestinationDetailsClient({
   const sections = destinationSections[destination.slug] ?? [];
   const details = destinationDetails[destination.slug];
 
-  const foodSectionIndex = sections.findIndex(s => {
-    const enTitle = s.title.en.toLowerCase();
-    const elTitle = s.title.el.toLowerCase();
-    return enTitle.includes("food") || enTitle.includes("gastronomy") || elTitle.includes("γαστρονομία") || elTitle.includes("φαγητό") || elTitle.includes("να φας");
-  });
-
-  const businessInjectionIndex = foodSectionIndex !== -1 
-    ? foodSectionIndex 
-    : Math.max(0, Math.floor(sections.length / 2) - 1);
-
   const renderBusinesses = () => {
     if (businesses.length === 0) return null;
     return (
-      <article className="rounded-[28px] border border-slate-200 bg-white backdrop-blur-md p-8 shadow-sm my-10">
-        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700">
-          {lang === "en" ? "Featured Businesses" : "Προτεινόμενες Επιχειρήσεις"}
+      <article className="rounded-[28px] border border-slate-200 bg-gradient-to-br from-indigo-50 to-white backdrop-blur-md p-8 shadow-sm">
+        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700 mb-6">
+          {lang === "en" ? "Local Businesses & Services" : "Τοπικές Επιχειρήσεις & Υπηρεσίες"}
         </p>
 
-        <div className="mt-8 space-y-8">
+        <div className="space-y-6">
           {businesses.map((business) => {
             const businessHref = business.href || `/businesses/${business.slug}`;
             const isExternalUrl = /^https?:\/\//i.test(businessHref);
@@ -76,66 +66,58 @@ export default function DestinationDetailsClient({
             return (
               <div
                 key={business.slug}
-                className="overflow-hidden rounded-[24px] border border-slate-200 bg-slate-50/50 shadow-sm transition hover:shadow-md"
+                className="group overflow-hidden rounded-[20px] border border-slate-200 bg-white shadow-sm transition hover:shadow-md"
               >
-                <div className="grid gap-0 sm:grid-cols-[220px_1fr] md:grid-cols-[260px_1fr]">
-                  <div className="relative h-56 w-full bg-slate-100 sm:h-full">
-                    {business.image && (
-                      <Image
-                        src={business.image}
-                        alt={business.name}
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 640px) 100vw, 260px"
-                      />
-                    )}
+                <div className="relative h-48 w-full bg-slate-100">
+                  {business.image && (
+                    <Image
+                      src={business.image}
+                      alt={business.name}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      sizes="(max-width: 640px) 100vw, 400px"
+                    />
+                  )}
+                  {business.badge && (
+                    <div className="absolute top-3 right-3">
+                      <span className="inline-flex rounded-full bg-white/95 px-3 py-1 text-xs font-bold text-indigo-800 shadow-sm backdrop-blur-sm">
+                        {business.badge}
+                      </span>
+                    </div>
+                  )}
+                </div>
+
+                <div className="p-5">
+                  <div className="text-xs font-extrabold uppercase tracking-widest text-indigo-600 mb-1">
+                    {business.category[lang]}
                   </div>
 
-                  <div className="flex flex-col justify-between p-6 md:p-8">
-                    <div>
-                      <div className="flex flex-wrap items-center justify-between gap-3 mb-2">
-                        <div className="text-sm font-extrabold uppercase tracking-widest text-indigo-600">
-                          {business.category[lang]}
-                        </div>
-                        {business.badge && (
-                          <span className="inline-flex rounded-full bg-indigo-100 text-indigo-800 px-3 py-1 text-xs font-bold ring-1 ring-inset ring-indigo-200">
-                            {business.badge}
-                          </span>
-                        )}
-                      </div>
+                  <h4 className="text-xl font-bold tracking-tight text-slate-900 mb-2">
+                    {business.name}
+                  </h4>
 
-                      <h4 className="text-2xl font-black tracking-tight text-slate-900 mb-2">
-                        {business.name}
-                      </h4>
-                      
-                      <p className="text-base font-medium text-slate-600 mb-5 flex items-center gap-2">
-                        📍 {business.place}
-                      </p>
+                  <p className="text-sm text-slate-500 line-clamp-3 mb-4">
+                    {business.info[lang]}
+                  </p>
 
-                      <p className="text-base text-slate-600 leading-relaxed">
-                        {business.info[lang]}
-                      </p>
-                    </div>
-
-                    <div className="mt-8">
-                      {isExternalUrl ? (
-                        <a
-                          href={businessHref}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center justify-center gap-2 rounded-2xl bg-indigo-600 px-6 py-3.5 text-sm font-semibold text-white shadow-md transition-all hover:bg-indigo-500 hover:shadow-lg"
-                        >
-                          {business.ctaLabel?.[lang] || (lang === "en" ? "Visit Website" : "Επισκεφθείτε την ιστοσελίδα")}
-                        </a>
-                      ) : (
-                        <Link
-                          href={withLang(businessHref)}
-                          className="inline-flex items-center justify-center gap-2 rounded-2xl bg-indigo-600 px-6 py-3.5 text-sm font-semibold text-white shadow-md transition-all hover:bg-indigo-500 hover:shadow-lg"
-                        >
-                          {business.ctaLabel?.[lang] || (lang === "en" ? "View Details" : "Δείτε Λεπτομέρειες")}
-                        </Link>
-                      )}
-                    </div>
+                  <div className="mt-4">
+                    {isExternalUrl ? (
+                      <a
+                        href={businessHref}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex w-full items-center justify-center gap-2 rounded-xl bg-indigo-50 px-4 py-2.5 text-sm font-semibold text-white bg-indigo-600 transition-colors hover:bg-indigo-500 shadow-sm"
+                      >
+                        {business.ctaLabel?.[lang] || (lang === "en" ? "Visit Website" : "Επισκεφθείτε την ιστοσελίδα")}
+                      </a>
+                    ) : (
+                      <Link
+                        href={withLang(businessHref)}
+                        className="flex w-full items-center justify-center gap-2 rounded-xl bg-indigo-50 px-4 py-2.5 text-sm font-semibold text-white bg-indigo-600 transition-colors hover:bg-indigo-500 shadow-sm"
+                      >
+                        {business.ctaLabel?.[lang] || (lang === "en" ? "View Details" : "Δείτε Λεπτομέρειες")}
+                      </Link>
+                    )}
                   </div>
                 </div>
               </div>
@@ -248,8 +230,6 @@ export default function DestinationDetailsClient({
               </p>
             </article>
 
-            {sections.length === 0 && renderBusinesses()}
-
             {sections.map((section, idx) => (
               <Fragment key={idx}>
                 <article className="rounded-[28px] border border-slate-200 bg-white backdrop-blur-md p-8 shadow-sm">
@@ -314,13 +294,13 @@ export default function DestinationDetailsClient({
                     </div>
                   )}
                 </article>
-
-                {idx === businessInjectionIndex && renderBusinesses()}
               </Fragment>
             ))}
           </div>
 
           <aside className="space-y-6">
+            {renderBusinesses()}
+
             {details && (
               <>
                 <article className="rounded-[28px] border border-slate-200 bg-gradient-to-br from-white to-cyan-50 p-8 shadow-sm">

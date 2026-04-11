@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
+import SiteHeader from "../../../../components/site-header";
 
 import { type FoodCard, type Lang, siteBrand, siteBrandLine } from "../../../../lib/content";
 
@@ -80,65 +81,8 @@ export default function EatDrinkClient({ item, lang }: EatDrinkClientProps) {
   };
 
   return (
-    <main className="min-h-screen bg-transparent text-slate-900">
-      <section className="border-b border-slate-200 bg-white/95 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between gap-2 px-0 py-3 sm:gap-6 sm:px-6 sm:py-5">
-          <Link
-            href={withLang("/")}
-            className="group flex min-w-0 items-center gap-2 sm:gap-3"
-          >
-            <Image
-              src="/images/logo/gogreecenow-logo.png"
-              alt="GoGreeceNow logo"
-              width={56}
-              height={56}
-              className="h-10 w-10 shrink-0 object-contain sm:h-14 sm:w-14"
-              priority
-            />
-            <div className="min-w-0">
-              <div className="truncate text-lg font-bold tracking-tight text-indigo-800 transition group-hover:text-indigo-700 sm:text-2xl">
-                {siteBrand}
-              </div>
-              <div className="hidden text-sm text-slate-500 sm:block">
-                {siteBrandLine[lang]}
-              </div>
-            </div>
-          </Link>
-
-          <div className="flex items-center gap-4">
-            <Link
-              href={withLang("/")}
-              className="text-sm font-medium text-slate-600 hover:text-indigo-700"
-            >
-              {t.navHome[lang]}
-            </Link>
-
-            <span className="text-sm font-medium text-indigo-700">
-              {t.navSection[lang]}
-            </span>
-
-            <div className="flex items-center gap-2 rounded-full border border-slate-200 bg-white hover:bg-slate-50 p-1">
-              <button
-                onClick={() => switchLanguage("en")}
-                className={`rounded-full px-3 py-1.5 text-sm font-semibold ${
-                  lang === "en" ? "bg-sky-600 text-slate-900" : "text-slate-500"
-                }`}
-              >
-                EN
-              </button>
-
-              <button
-                onClick={() => switchLanguage("el")}
-                className={`rounded-full px-3 py-1.5 text-sm font-semibold ${
-                  lang === "el" ? "bg-sky-600 text-slate-900" : "text-slate-500"
-                }`}
-              >
-                GR
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+    <main className="min-h-screen bg-transparent text-slate-900 pt-20">
+      <SiteHeader />
 
       <section className="mx-auto max-w-7xl px-6 py-20">
         <div className="flex flex-col items-center text-center">
