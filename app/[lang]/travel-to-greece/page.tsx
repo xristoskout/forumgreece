@@ -257,7 +257,7 @@ export default function TravelToGreecePage() {
         en: "Beautiful beaches, hidden coves, family-friendly spots and summer swim ideas.",
         el: "Όμορφες παραλίες, κρυφοί κολπίσκοι, family-friendly επιλογές και ιδέες για καλοκαιρινές βουτιές.",
       },
-      href: "https://facebook.com",
+      href: "https://www.facebook.com/groups/1622520432339302",
       image: "/images/forums/beaches.webp",
     },
     {
@@ -268,7 +268,7 @@ export default function TravelToGreecePage() {
         en: "Traditional taverns, seafood, desserts, wine and local food discoveries across Greece.",
         el: "Παραδοσιακές ταβέρνες, θαλασσινά, γλυκά, κρασί και τοπικές γευστικές ανακαλύψεις σε όλη την Ελλάδα.",
       },
-      href: "https://facebook.com",
+      href: "https://www.facebook.com/groups/835007208943406/",
       image: "/images/forums/food.webp",
     },
     {
@@ -279,7 +279,7 @@ export default function TravelToGreecePage() {
         en: "Photos, destination ideas, weekend escapes and planning inspiration for every season.",
         el: "Φωτογραφίες, ιδέες προορισμών, weekend αποδράσεις και έμπνευση για κάθε εποχή.",
       },
-      href: "https://facebook.com",
+      href: "https://www.facebook.com/groups/2419783748445111",
       image: "/images/forums/inspiration.webp",
     },
   ];
