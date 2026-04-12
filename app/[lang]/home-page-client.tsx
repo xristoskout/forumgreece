@@ -950,6 +950,105 @@ export default function HomePageClient({
         </div>
       </section>
 
+      <section className="mx-auto max-w-7xl px-6 py-16">
+        <div className="overflow-hidden rounded-[2.5rem] border border-indigo-100 bg-gradient-to-br from-indigo-50/50 via-white to-sky-50/50 p-8 shadow-xl shadow-indigo-100/50 md:p-12 relative group">
+          
+          <div className="absolute top-0 right-0 p-12 opacity-[0.03] pointer-events-none transition-opacity group-hover:opacity-[0.06] duration-1000">
+            <svg viewBox="0 0 24 24" fill="currentColor" className="w-64 h-64 text-indigo-900">
+               <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            </svg>
+          </div>
+
+          <div className="relative z-10 text-center mb-12">
+            <span className="inline-flex rounded-full bg-indigo-100 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-indigo-800 mb-4 shadow-sm">
+              {lang === "en" ? "Ask the Community" : "Ρωτα την Κοινοτητα"}
+            </span>
+            <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 md:text-5xl mb-5">
+              {lang === "en" ? "Real answers from travelers & locals" : "Αληθινές απαντήσεις από ταξιδιώτες & ντόπιους"}
+            </h2>
+            <p className="mx-auto max-w-2xl text-lg text-slate-600 leading-relaxed font-light">
+              {lang === "en" 
+                ? "Join our Facebook communities to find verified tips, ask questions, and discover hidden gems for your Greek holiday." 
+                : "Μπες στις Facebook κοινότητές μας για να βρεις δοκιμασμένα tips, να κάνεις ερωτήσεις και να ανακαλύψεις κρυμμένα μυστικά για τις διακοπές σου."}
+            </p>
+          </div>
+
+          <div className="relative z-10 grid gap-6 md:grid-cols-3 mb-10">
+            
+            <div className="rounded-[1.5rem] border border-white/60 bg-white/80 p-7 shadow-sm backdrop-blur-md transition hover:-translate-y-1 hover:shadow-md">
+              <div className="flex items-center gap-3 mb-5">
+                <div className="h-11 w-11 flex text-lg items-center justify-center rounded-full bg-blue-100 text-blue-700 font-bold tracking-tight">SM</div>
+                <div>
+                  <div className="font-bold text-slate-900">{lang === "en" ? "Sarah M." : "Σάρα Μ."}</div>
+                  <div className="text-xs font-medium text-slate-500">2 {lang === "en" ? "hrs ago" : "ώρες πριν"}</div>
+                </div>
+              </div>
+              <p className="text-slate-800 font-medium leading-relaxed mb-5">
+                {lang === "en" 
+                  ? '"Planning a 7-day family trip to Crete, better to base in Chania or Rethymno?"' 
+                  : '"Σκοπεύω να πάω Κρήτη για 7 μέρες με τα παιδιά, προτείνετε Χανιά ή Ρέθυμνο για βάση;"'}
+              </p>
+              <div className="flex items-center gap-2 text-sm font-semibold text-slate-500 border-t border-slate-100 pt-4">
+                <span className="flex items-center gap-1 text-indigo-600">💬 42</span>
+                <span>{lang === "en" ? "comments" : "σχόλια"}</span>
+              </div>
+            </div>
+
+            <div className="rounded-[1.5rem] border border-white/60 bg-white/80 p-7 shadow-sm backdrop-blur-md transition hover:-translate-y-1 hover:shadow-md">
+              <div className="flex items-center gap-3 mb-5">
+                <div className="h-11 w-11 flex text-lg items-center justify-center rounded-full bg-emerald-100 text-emerald-700 font-bold tracking-tight">JP</div>
+                <div>
+                  <div className="font-bold text-slate-900">{lang === "en" ? "James P." : "Δημήτρης Π."}</div>
+                  <div className="text-xs font-medium text-slate-500">5 {lang === "en" ? "hrs ago" : "ώρες πριν"}</div>
+                </div>
+              </div>
+              <p className="text-slate-800 font-medium leading-relaxed mb-5">
+                {lang === "en" 
+                  ? '"Is it worth renting a car in Santorini or are the local buses enough?"' 
+                  : '"Αξίζει να νοικιάσω αυτοκίνητο στη Σαντορίνη ή να κινηθώ με ΚΤΕΛ;"'}
+              </p>
+              <div className="flex items-center gap-2 text-sm font-semibold text-slate-500 border-t border-slate-100 pt-4">
+                <span className="flex items-center gap-1 text-indigo-600">💬 28</span>
+                <span>{lang === "en" ? "comments" : "σχόλια"}</span>
+              </div>
+            </div>
+
+            <div className="rounded-[1.5rem] border border-white/60 bg-white/80 p-7 shadow-sm backdrop-blur-md transition hover:-translate-y-1 hover:shadow-md">
+              <div className="flex items-center gap-3 mb-5">
+                <div className="h-11 w-11 flex text-lg items-center justify-center rounded-full bg-rose-100 text-rose-700 font-bold tracking-tight">AL</div>
+                <div>
+                  <div className="font-bold text-slate-900">{lang === "en" ? "Anna L." : "Άννα Λ."}</div>
+                  <div className="text-xs font-medium text-slate-500">1 {lang === "en" ? "day ago" : "μέρα πριν"}</div>
+                </div>
+              </div>
+              <p className="text-slate-800 font-medium leading-relaxed mb-5">
+                {lang === "en" 
+                  ? '"Where to find the most authentic traditional meze in Nafplio Old Town?"' 
+                  : '"Πού θα φάμε τους καλύτερους παραδοσιακούς μεζέδες στο κέντρο στο Ναύπλιο;"'}
+              </p>
+              <div className="flex items-center gap-2 text-sm font-semibold text-slate-500 border-t border-slate-100 pt-4">
+                <span className="flex items-center gap-1 text-indigo-600">💬 65</span>
+                <span>{lang === "en" ? "comments" : "σχόλια"}</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div className="relative z-10 flex justify-center mt-8">
+            <Link
+              href={withLang("/travel-to-greece")}
+              className="group flex flex-wrap justify-center items-center gap-3 rounded-full bg-indigo-600 px-8 py-4 text-base font-bold text-white shadow-[0_0_20px_rgba(79,70,229,0.3)] transition-all hover:scale-105 hover:bg-indigo-500 hover:shadow-[0_0_30px_rgba(79,70,229,0.5)]"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                 <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
+              <span>{lang === "en" ? "Open forums to read the answers" : "Άνοιξε τα forums για τις απαντήσεις"}</span>
+              <span className="transition-transform group-hover:translate-x-1">→</span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <section
         id="hotels"
         className="scroll-mt-28 bg-gradient-to-b from-amber-50/70 to-white py-16"
@@ -1237,60 +1336,7 @@ export default function HomePageClient({
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-16">
-        <div className="overflow-hidden rounded-xl bg-gradient-to-r from-sky-800 via-cyan-700 to-emerald-500 p-8 text-slate-900 shadow-xl md:p-10">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-900/75">
-            {copy.communitiesEyebrow}
-          </p>
 
-          <h2 className="mt-2 text-3xl font-bold tracking-tight md:text-4xl">
-            {copy.communitiesTitle}
-          </h2>
-
-          <p className="mt-4 max-w-3xl text-sm leading-7 text-slate-900/90">
-            {copy.communitiesText}
-          </p>
-
-          <div className="mt-8 grid gap-6 lg:grid-cols-3">
-            {communities.map((item) => (
-              <article
-                key={item.title.en}
-                className="rounded-xl bg-white/12 p-6 backdrop-blur-md"
-              >
-                <div className="text-3xl">🌴</div>
-                <h3 className="mt-4 text-xl font-semibold">
-                  {item.title[lang]}
-                </h3>
-                <p className="mt-3 text-sm leading-6 text-slate-900/90">
-                  {item.description[lang]}
-                </p>
-
-                {isExternalUrl(item.href) ? (
-                  <a
-                    href={item.href}
-                    className="mt-5 inline-block text-sm font-semibold text-slate-900 hover:text-cyan-100"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {lang === "en"
-                      ? `Open ${item.title.en} forum →`
-                      : `Άνοιγμα forum για ${item.title.el} →`}
-                  </a>
-                ) : (
-                  <Link
-                    href={withLang(item.href)}
-                    className="mt-5 inline-block text-sm font-semibold text-slate-900 hover:text-cyan-100"
-                  >
-                    {lang === "en"
-                      ? `Open ${item.title.en} forum →`
-                      : `Άνοιγμα forum για ${item.title.el} →`}
-                  </Link>
-                )}
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <section className="bg-slate-900 py-20 text-center border-t border-slate-800">
         <div className="mx-auto max-w-4xl px-6 relative z-10">
