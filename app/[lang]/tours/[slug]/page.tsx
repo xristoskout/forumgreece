@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import ReactDOM from "react-dom";
 import { tours, type Lang } from "../../../../lib/content";
 import {
   experienceBusinesses,
@@ -89,7 +90,7 @@ export async function generateMetadata({
   }
 
   if (pageData.type === "landing") {
-    const image = pageData.businesses[0]?.image ?? "/images/default-og.jpg";
+    const image = pageData.businesses[0]?.image ?? "/images/default-og.webp";
     const title = `${pageData.landing.title[lang]} | GoGreeceNow`;
     const description = pageData.landing.description[lang];
 
@@ -158,6 +159,10 @@ export default async function TourPage({ params }: TourPageProps) {
   }
 
   if (pageData.type === "landing") {
+    // Preload landing image if available
+    if (pageData.landing.image) {
+      ReactDOM.preload(pageData.landing.image, { as: "image", fetchPriority: "high" });
+    }
     return (
       <ExperienceDetailsClient
         landing={pageData.landing}
@@ -165,6 +170,11 @@ export default async function TourPage({ params }: TourPageProps) {
         lang={lang}
       />
     );
+  }
+
+  // Preload tour hero LCP image
+  if (pageData.tour.image) {
+    ReactDOM.preload(pageData.tour.image, { as: "image", fetchPriority: "high" });
   }
 
   return <TourDetailsClient tour={pageData.tour} lang={lang} />;

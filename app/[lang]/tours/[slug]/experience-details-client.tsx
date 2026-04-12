@@ -93,7 +93,7 @@ export default function ExperienceDetailsClient({
   };
 
   const heroImage =
-    landing.image ?? businesses[0]?.image ?? "/images/tours/kefalonia-tours.jpg";
+    landing.image ?? businesses[0]?.image ?? "/images/tours/kefalonia-tours.webp";
 
   return (
     <main className="min-h-screen bg-transparent text-slate-900 pt-20">

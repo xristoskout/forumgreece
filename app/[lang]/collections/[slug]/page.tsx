@@ -77,7 +77,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       locale: lang === "el" ? "el_GR" : "en_US",
       images: [
         {
-          url: "/images/hero-greece.jpg",
+          url: "/images/hero-greece.webp",
           width: 1600,
           height: 900,
           alt: hub.title[lang],
@@ -88,7 +88,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       card: "summary_large_image",
       title: hub.metaTitle[lang],
       description: hub.metaDescription[lang],
-      images: ["/images/hero-greece.jpg"],
+      images: ["/images/hero-greece.webp"],
     },
   };
 }
@@ -128,7 +128,7 @@ export default async function CollectionHubPage({ params }: Props) {
         <div
           className="absolute inset-0 opacity-10"
           style={{
-            backgroundImage: "url('/images/hero-greece.jpg')",
+            backgroundImage: "url('/images/hero-greece.webp')",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}

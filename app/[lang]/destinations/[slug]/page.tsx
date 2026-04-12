@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import ReactDOM from 'react-dom';
 import { destinations, type Lang } from '../../../../lib/content';
 import DestinationDetailsClient from './destination-details-client';
 
@@ -36,5 +37,14 @@ export default async function DestinationDetailsPage({ params }: Props) {
     );
   }
 
+  // Preload the hero LCP image so browser fetches it from SSR HTML
+  // instead of waiting for the CSS background-image to be parsed.
+  if (destination.image) {
+    ReactDOM.preload(destination.image, {
+      as: "image",
+      fetchPriority: "high",
+    });
+  }
+
   return <DestinationDetailsClient destination={destination} lang={lang} />;
-}
+}

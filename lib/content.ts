@@ -159,7 +159,7 @@ export const destinations: Destination[] = [
       en: "Sunset views, caldera stays, beaches and romantic holidays.",
       el: "Ηλιοβασιλέματα, διαμονή στην καλντέρα, παραλίες και ρομαντικές αποδράσεις.",
     },
-    image: "/images/santorini.jpg",
+    image: "/images/santorini.webp",
     overview: {
       en: "Santorini is ideal for couples, caldera views, premium stays and iconic island moments.",
       el: "Η Σαντορίνη είναι ιδανική για ζευγάρια, θέα στην καλντέρα, premium διαμονή και εμβληματικές νησιωτικές στιγμές.",
@@ -170,8 +170,8 @@ export const destinations: Destination[] = [
     },
     seo: {
       title: {
-        en: "Santorini: The ultimate guide (best time, attractions, beaches, food)",
-        el: "Σαντορίνη: Ο απόλυτος οδηγός (καλύτερη εποχή, αξιοθέατα, παραλίες, φαγητό)"
+        en: "Santorini Travel Guide: Caldera, Beaches, Where to Stay & Things to Do",
+        el: "Σαντορίνη: Οδηγός Ταξιδιού — Καλντέρα, Παραλίες, Διαμονή & Αξιοθέατα"
       },
       description: {
         en: "Detailed guide to Santorini: why to go, best time to visit, how to get there, top experiences, beaches, villages, local flavors, secrets, and practical tips + FAQ.",
@@ -187,7 +187,7 @@ export const destinations: Destination[] = [
       en: "Cosmopolitan vibes, beaches, nightlife and stylish hotels.",
       el: "Κοσμοπολίτικη ατμόσφαιρα, παραλίες, νυχτερινή ζωή και κομψά ξενοδοχεία.",
     },
-    image: "/images/mykonos.jpg",
+    image: "/images/mykonos.webp",
     overview: {
       en: "Mykonos combines glamorous beaches, nightlife and polished Cycladic style.",
       el: "Η Μύκονος συνδυάζει glamorous παραλίες, νυχτερινή ζωή και κομψό κυκλαδίτικο ύφος.",
@@ -198,8 +198,8 @@ export const destinations: Destination[] = [
     },
     seo: {
       title: {
-        en: "Mykonos: The comprehensive guide (beaches, attractions, Delos, food & tips)",
-        el: "Μύκονος: Ο αναλυτικός οδηγός (παραλίες, αξιοθέατα, Δήλος, φαγητό & tips)"
+        en: "Mykonos Travel Guide: Beaches, Windmills, Delos & Things to Do",
+        el: "Μύκονος: Οδηγός Ταξιδιού — Παραλίες, Ανεμόμυλοι, Δήλος & Αξιοθέατα"
       },
       description: {
         en: "Complete guide to Mykonos: why to go, best time, transport, top attractions (Chora, Little Venice, windmills, Paraportiani, Delos), beaches for every style, authentic food, and secrets to enjoy it stress-free.",
@@ -215,7 +215,7 @@ export const destinations: Destination[] = [
       en: "Big landscapes, cuisine, history, road trips and family holidays.",
       el: "Μεγάλα τοπία, κουζίνα, ιστορία, road trips και οικογενειακές διακοπές.",
     },
-    image: "/images/crete.jpg",
+    image: "/images/crete.webp",
     overview: {
       en: "Crete offers beaches, mountains, history, local food and endless options for long stays.",
       el: "Η Κρήτη προσφέρει παραλίες, βουνά, ιστορία, τοπική κουζίνα και αμέτρητες επιλογές για μεγαλύτερες διακοπές.",
@@ -226,8 +226,8 @@ export const destinations: Destination[] = [
     },
     seo: {
       title: {
-        en: "Crete: The ultimate guide (beaches, gorges, Minoan palaces, food & tips)",
-        el: "Κρήτη: Ο απόλυτος οδηγός (παραλίες, φαράγγια, μινωικά ανάκτορα, φαγητό & tips)"
+        en: "Crete Travel Guide: Best Beaches, Gorges, Villages & Things to Do",
+        el: "Κρήτη: Οδηγός Ταξιδιού — Παραλίες, Φαράγγια, Χωριά & Αξιοθέατα"
       },
       description: {
         en: "Comprehensive guide to Crete: why it's worth it, best time to visit, how to get there, what to see (Knossos/UNESCO, Chania, Samaria, Balos, Elafonissi, Spinalonga), villages, authentic flavors and practical secrets to enjoy it.",
@@ -243,7 +243,7 @@ export const destinations: Destination[] = [
       en: "Green scenery, elegant town life, beaches and island charm.",
       el: "Πράσινα τοπία, αρχοντική πόλη, παραλίες και νησιώτικη γοητεία.",
     },
-    image: "/images/corfu.jpg",
+    image: "/images/corfu.webp",
     overview: {
       en: "Corfu mixes elegant town life, lush landscapes and easy family-friendly holidays.",
       el: "Η Κέρκυρα συνδυάζει αρχοντική ατμόσφαιρα, καταπράσινα τοπία και εύκολες οικογενειακές διακοπές.",
@@ -254,8 +254,8 @@ export const destinations: Destination[] = [
     },
     seo: {
       title: {
-        en: "Corfu: The ultimate guide (UNESCO Old Town, beaches, villages, food & secrets)",
-        el: "Κέρκυρα: Ο απόλυτος οδηγός (Παλιά Πόλη UNESCO, παραλίες, χωριά, φαγητό & μυστικά)"
+        en: "Corfu Travel Guide: Best Beaches, Old Town & Travel Tips",
+        el: "Κέρκυρα: Οδηγός Ταξιδιού — Παραλίες, Παλιά Πόλη & Χρήσιμες Συμβουλές"
       },
       description: {
         en: "Detailed travel guide to Corfu: why it's worth visiting, best time, how to get there, top attractions and experiences, beaches for every taste, surprise villages, local flavors and practical tips + FAQ.",
@@ -271,7 +271,7 @@ export const destinations: Destination[] = [
       en: "Romantic old town, seaside walks and easy weekend escapes.",
       el: "Ρομανική παλιά πόλη, βόλτες δίπλα στη θάλασσα και εύκολες αποδράσεις.",
     },
-    image: "/images/nafplio.jpg",
+    image: "/images/nafplio.webp",
     overview: {
       en: "Nafplio combines romantic old town charm, seaside walks, elegant architecture and rich history.",
       el: "Το Ναύπλιο συνδυάζει ρομαντική ατμόσφαιρα παλιάς πόλης, παραθαλάσσιες βόλτες, αρχοντική αρχιτεκτονική και πλούσια ιστορία.",
@@ -282,8 +282,8 @@ export const destinations: Destination[] = [
     },
     seo: {
       title: {
-        en: "Nafplio: The ultimate guide (Palamidi, Bourtzi, beaches, food & secrets)",
-        el: "Ναύπλιο: Ο απόλυτος οδηγός (Παλαμήδι, Μπούρτζι, παραλίες, φαγητό & μυστικά)"
+        en: "Nafplio Travel Guide: Palamidi, Bourtzi, Beaches & Things to Do",
+        el: "Ναύπλιο: Οδηγός Ταξιδιού — Παλαμήδι, Μπούρτζι, Παραλίες & Αξιοθέατα"
       },
       description: {
         en: "Complete guide to Nafplio: why it's worth visiting, best time, how to go, top attractions (Old Town, Palamidi, Bourtzi, Akronafplia), beaches and nearby villages, local food, practical tips + FAQ to enjoy it like a local.",
@@ -299,7 +299,7 @@ export const destinations: Destination[] = [
       en: "Food, culture, nightlife and urban travel experiences.",
       el: "Φαγητό, πολιτισμός, νυχτερινή ζωή και αστικές ταξιδιωτικές εμπειρίες.",
     },
-    image: "/images/thessaloniki.jpg",
+    image: "/images/thessaloniki.webp",
     overview: {
       en: "Thessaloniki combines a rich culinary scene, Byzantine history and vibrant urban culture by the sea.",
       el: "Η Θεσσαλονίκη συνδυάζει πλούσια γαστρονομική σκηνή, βυζαντινή ιστορία και ζωντανό αστικό πολιτισμό δίπλα στη θάλασσα.",
@@ -310,8 +310,8 @@ export const destinations: Destination[] = [
     },
     seo: {
       title: {
-        en: "Thessaloniki: The ultimate guide (attractions, food, nearby beaches & secrets)",
-        el: "Θεσσαλονίκη: Ο απόλυτος οδηγός (αξιοθέατα, φαγητό, παραλίες κοντά στην πόλη & μυστικά)"
+        en: "Thessaloniki Travel Guide: Attractions, Food & Best Things to Do",
+        el: "Θεσσαλονίκη: Οδηγός Ταξιδιού — Αξιοθέατα, Φαγητό & Τι να Δεις"
       },
       description: {
         en: "Detailed guide to Thessaloniki: why it's worth it, best time, how to get there, what to see (UNESCO monuments, White Tower, Upper Town, Rotunda), where to eat (markets, bougatsa, koulouri), nearby beaches (Peraia, Agia Triada, Epanomi) and practical tips + FAQ.",
@@ -327,7 +327,7 @@ export const destinations: Destination[] = [
       en: "Blue waters, dramatic beaches, villages and relaxed island holidays.",
       el: "Γαλάζια νερά, εντυπωσιακές παραλίες, χωριά και χαλαρές νησιωτικές διακοπές.",
     },
-    image: "/images/kefalonia.jpg",
+    image: "/images/kefalonia.webp",
     overview: {
       en: "Kefalonia stands out for its legendary beaches, geological wonders like Melissani cave, and an authentic nature-filled Ionian character.",
       el: "Η Κεφαλονιά ξεχωρίζει για τις εντυπωσιακές παραλίες, τα γεωλογικά της θαύματα και τον αυθεντικό φυσιολατρικό επτανησιακό χαρακτήρα της.",
@@ -338,8 +338,8 @@ export const destinations: Destination[] = [
     },
     seo: {
       title: {
-        en: "Kefalonia: The ultimate guide (beaches, caves, villages, Robola & secrets)",
-        el: "Κεφαλονιά: Ο απόλυτος οδηγός (παραλίες, σπήλαια, χωριά, Ρομπόλα & μυστικά)"
+        en: "Kefalonia Travel Guide: Myrtos Beach, Caves, Villages & Things to Do",
+        el: "Κεφαλονιά: Οδηγός Ταξιδιού — Μύρτος, Σπήλαια, Χωριά & Αξιοθέατα"
       },
       description: {
         en: "Complete travel guide to Kefalonia: why it's worth it, best time, how to get there, top attractions (Myrtos, Melissani, Drogarati, Ainos, Assos, Fiskardo), beaches for every style, local food, practical tips & FAQ.",
@@ -355,7 +355,7 @@ export const destinations: Destination[] = [
       en: "UNESCO Geopark, Petrified forest, castles, villages and authentic food.",
       el: "UNESCO Geopark, Απολιθωμένο Δάσος, κάστρα, χωριά και αυθεντικό φαγητό.",
     },
-    image: "/images/lesvos.jpg",
+    image: "/images/lesvos.webp",
     overview: {
       en: "Lesvos is a vast island of continental scale, featuring the famous Petrified forest, huge castles, rich wetlands for birdwatching, thermal springs, and an unbeatable foodie scene built around world-class ouzo and olive oil.",
       el: "Η Λέσβος είναι ένα νησί δομημένο σε ηπειρωτική κλίμακα, με όλο το έδαφός της αναγνωρισμένο ως UNESCO Global Geopark. Από το διάσημο Απολιθωμένο Δάσος μέχρι τα κάστρα της, και από τους υδρόβιους υγροτόπους ως τις θερμές πηγές και τον παγκοσμίου κλάσης μεζέ με ούζο, η Λέσβος προσφέρει αυθεντικές εμπειρίες για κάθε τύπο ταξιδιώτη.",
@@ -366,8 +366,8 @@ export const destinations: Destination[] = [
     },
     seo: {
       title: {
-        en: "Lesvos: The ultimate guide (Mytilene, Molyvos, Petrified Forest, beaches, food)",
-        el: "Λέσβος: Ο απόλυτος οδηγός (Μυτιλήνη, Μόλυβος, Απολιθωμένο Δάσος, παραλίες, φαγητό & μυστικά)"
+        en: "Lesvos Travel Guide: Mytilene, Petrified Forest, Beaches & Local Food",
+        el: "Λέσβος: Οδηγός Ταξιδιού — Μυτιλήνη, Απολιθωμένο Δάσος, Παραλίες & Τοπικές Γεύσεις"
       },
       description: {
         en: "Comprehensive guide to Lesvos: why it's worth it, best time, top attractions (UNESCO Global Geopark, Petrified Forest, Molyvos, Petra), beaches, local products (Ouzo, olive oil), and practical tips + FAQ.",
@@ -383,7 +383,7 @@ export const destinations: Destination[] = [
       en: "Acropolis, neighborhoods, street food, Athens Riviera & endless rhythm.",
       el: "Ακρόπολη, γειτονιές, street food, Αθηναϊκή Ριβιέρα & ατελείωτος ρυθμός.",
     },
-    image: "/images/athens.jpg",
+    image: "/images/athens.webp",
     overview: {
       en: "Athens is a true two-in-one destination bridging the ancient and the modern. From the UNESCO World Heritage Acropolis to vibrant urban lifestyle, the Athens Riviera and nearby islands, it requires rhythm rather than a checklist to be truly enjoyed.",
       el: "Η Αθήνα είναι από τα λίγα μέρη στον κόσμο όπου μπορείς να πιεις καφέ δίπλα σε μια βιτρίνα, να βρεθείς μπροστά σε μάρμαρα 2.500 χρόνων, και να κλείσεις τη μέρα με ηλιοβασίλεμα στη θάλασσα. Είναι πόλη με ένταση και αληθινή καθημερινότητα.",
@@ -394,8 +394,8 @@ export const destinations: Destination[] = [
     },
     seo: {
       title: {
-        en: "Athens: The ultimate guide (Acropolis, neighborhoods, food, beaches & secrets)",
-        el: "Αθήνα: Ο απόλυτος οδηγός (Ακρόπολη, γειτονιές, φαγητό, παραλίες & μυστικά για να τη ζήσεις σωστά)"
+        en: "Athens Travel Guide: Acropolis, Neighborhoods, Food & Things to Do",
+        el: "Αθήνα: Οδηγός Ταξιδιού — Ακρόπολη, Γειτονιές, Φαγητό & Αξιοθέατα"
       },
       description: {
         en: "Complete travel guide to Athens: why it's worth it, best time, top attractions (UNESCO Acropolis, museums, Lycabettus), neighborhoods, street food, Athenian Riviera/Vouliagmeni Lake, Saronic islands day trips + practical tips & FAQ.",
@@ -413,7 +413,7 @@ export const travelInfoGuides: GuideCard[] = [
       en: "Flights, ferries, island hopping ideas and airport tips for first-time visitors solving the puzzle of Greek transport.",
       el: "Πτήσεις, πλοία, ιδέες για island hopping και αναλυτικές συμβουλές για αεροδρόμια, ειδικά για όσους έρχονται πρώτη φορά."
     },
-    image: "/images/travel-arrival.jpg",
+    image: "/images/travel-arrival.webp",
     overview: {
       en: "Greece is highly accessible but its island geography makes planning crucial. This guide covers your main entry points—primary and regional airports, major ferry ports, and international transport links—so you can pick the smartest route for your itinerary.",
       el: "Η Ελλάδα είναι εξαιρετικά προσβάσιμη, αλλά η γεωγραφία της απαιτεί σωστό προγραμματισμό. Αυτός ο οδηγός καλύπτει τα κύρια σημεία εισόδου (κεντρικά και περιφερειακά αεροδρόμια, κεντρικά λιμάνια και χερσαία σύνορα) για να επιλέξεις τη σωστή διαδρομή."
@@ -463,7 +463,7 @@ export const travelInfoGuides: GuideCard[] = [
       en: "Discover exactly when to visit based on your passion: swimming, historical sightseeing, local food, sailing, or simply avoiding the massive crowds.",
       el: "Ανακάλυψε ακριβώς πότε να επισκεφτείς την Ελλάδα ανάλογα με το τι θέλεις: μπάνιο, ιστορία, φαγητό ή απλά την αποφυγή της τουριστικής πολυκοσμίας."
     },
-    image: "/images/travel-season.jpg",
+    image: "/images/travel-season.webp",
     overview: {
       en: "Greece is famous for its summer sun, but limiting your perspective to July and August means missing out. The shoulder seasons (Spring and Autumn) reveal a stunningly green landscape, lower prices, and comfortable temperatures for sightseeing. Winter offers charming mountain villages and a lively urban city-break scene.",
       el: "Η Ελλάδα είναι διάσημη για το καλοκαίρι της, αλλά αν περιοριστείς στον Ιούλιο και τον Αύγουστο χάνεις πολλές εμπειρίες. Οι ενδιάμεσες εποχές (άνοιξη και φθινόπωρο) αποκαλύπτουν μια πιο πράσινη και αυθεντική πλευρά, με χαμηλότερες τιμές και ευχάριστες θερμοκρασίες. Ακόμη και ο χειμώνας, έχει υπέροχα ορεινά χωριά."
@@ -513,7 +513,7 @@ export const travelInfoGuides: GuideCard[] = [
       en: "From domestic flights and fast ferries to local buses and car rentals, navigate the diverse Greek landscape efficiently and comfortably.",
       el: "Από τοπικές πτήσεις και γρήγορα πλοία μέχρι λεωφορεία και ενοικιάσεις αυτοκινήτων, οργάνωσε τις μετακινήσεις σου αποδοτικά και άνετα."
     },
-    image: "/images/travel-transport.jpg",
+    image: "/images/travel-transport.webp",
     overview: {
       en: "Navigating Greece means learning two different transport systems: the intricate web of Aegean and Ionian ferries, and the extensive mainland road and bus network. With a bit of strategic planning, you can easily combine flights, ferries, and cars to craft the ultimate itinerary across mountains and islands.",
       el: "Η μετακίνηση στην Ελλάδα είναι πιο εύκολη όταν γνωρίζεις πώς λειτουργούν τα βασικά μέσα μεταφοράς. Στα νησιά, οι διαδρομές γίνονται κυρίως με πλοία και πτήσεις, ενώ στην ηπειρωτική χώρα σημαντικό ρόλο παίζουν οι αυτοκινητόδρομοι και τα ΚΤΕΛ. Με τον σωστό συνδυασμό μέσων, μπορείς να οργανώσεις το ταξίδι σου πιο άνετα, γρήγορα και έξυπνα."
@@ -567,7 +567,7 @@ export const hotels: HotelCard[] = [
       en: "Elegant cave-style suites with sea views and a luxury island feeling.",
       el: "Κομψές cave-style σουίτες με θέα στη θάλασσα και luxury νησιώτικη αίσθηση.",
     },
-    image: "/images/hotel-santorini.jpg",
+    image: "/images/hotel-santorini.webp",
     badge: "Featured",
     overview: {
       en: "A premium Santorini-style stay focused on views, privacy and romantic atmosphere.",
@@ -586,7 +586,7 @@ export const hotels: HotelCard[] = [
       en: "A relaxed family-friendly stay close to beaches, restaurants and green scenery.",
       el: "Χαλαρή οικογενειακή διαμονή κοντά σε παραλίες, εστιατόρια και πράσινα τοπία.",
     },
-    image: "/images/hotel-corfu.jpg",
+    image: "/images/hotel-corfu.webp",
     badge: "Sponsored",
     overview: {
       en: "A calm Corfu accommodation concept suited to families and longer summer stays.",
@@ -605,7 +605,7 @@ export const hotels: HotelCard[] = [
       en: "Discover top-rated accommodation in Lesvos, from picturesque seaside rooms to traditional boutique stays.",
       el: "Ανακαλύψτε επιλεγμένη διαμονή στη Λέσβο, από παραθαλάσσια δωμάτια μέχρι παραδοσιακά boutique καταλύματα.",
     },
-    image: "/images/businesses/Iren/2.png",
+    image: "/images/businesses/Iren/2.webp",
     overview: {
       en: "Lesvos is a large island with highly diverse and authentic accommodation options. Rather than oversized resorts, you'll find charming local hotels and peaceful rooms to let that connect you deeply with the island's culture.",
       el: "Η Λέσβος είναι ένα μεγάλο νησί με εξαιρετικά ποικίλες και αυθεντικές επιλογές διαμονής. Αντί για απρόσωπα resorts, θα βρείτε πανέμορφα τοπικά ξενοδοχεία και ήσυχα ενοικιαζόμενα δωμάτια.",
@@ -636,8 +636,8 @@ export const food: FoodCard[] = [
     title: { en: "Lesvos Gastronomy Guide", el: "Γαστρονομικός Οδηγός Λέσβου: Πού να Φας και Τι να Δοκιμάσεις στο Νησί του Ούζου" },
     place: "Lesvos",
     metaTitle: {
-      en: "Lesvos Gastronomy Guide: Best Places to Eat & Must-Try Local Delicacies",
-      el: "Γαστρονομικός Οδηγός Λέσβου: Πού να Φας & Τοπικές Νοστιμιές που Πρέπει να Δοκιμάσεις",
+      en: "What to Eat in Lesvos: Best Taverns, Ouzo & Local Food Guide",
+      el: "Τι να Φας στη Λέσβο: Καλύτερες Ταβέρνες, Ούζο & Τοπικός Γαστρονομικός Οδηγός",
     },
     metaDescription: {
       en: "Discover the gastronomy of Lesvos: the best places to eat, seafood tavernas, ouzeris, local products and authentic recipes. A complete food guide for travelers.",
@@ -651,7 +651,7 @@ export const food: FoodCard[] = [
       en: "A complete guide to the authentic local flavors, ouzo traditions, and best eateries across the island of Lesvos.",
       el: "Ένας πλήρης οδηγός για τις αυθεντικές γεύσεις, την παράδοση του ούζου και τα καλύτερα στέκια φαγητού στη Λέσβο.",
     },
-    image: "/images/tours/lesvos-food.png",
+    image: "/images/tours/lesvos-food.webp",
     overview: {
       en: "Lesvos is one of Greece's most authentic gastronomic destinations. It's not just an island with beautiful beaches — it's a place where tradition, the sea, and Asia Minor roots meet at the table.\n\nIf you're wondering where to eat well in Lesvos and which local delicacies you shouldn't miss, this guide will give you a complete picture of Lesvian cuisine.\n\nThe cuisine of Lesvos is characterized by:\n\n• Fresh fish and seafood\n• A variety of meze for ouzo\n• Rich olive oil\n• Traditional cheeses\n• Aromatic herbs and seasonal vegetables\n\nIts geographical position opposite Asia Minor has deeply influenced its flavors. Many dishes have intense aromas, spices, and techniques that recall the East, yet remain authentically Greek.",
       el: "Η Λέσβος είναι ένας από τους πιο αυθεντικούς γαστρονομικούς προορισμούς της Ελλάδας. Δεν είναι απλώς ένα νησί με ωραίες παραλίες — είναι ένας τόπος όπου η παράδοση, η θάλασσα και οι μικρασιατικές ρίζες συναντιούνται στο τραπέζι.\n\nΑν αναρωτιέσαι πού να φας καλά στη Λέσβο και ποιες είναι οι τοπικές νοστιμιές που δεν πρέπει να χάσεις, αυτός ο οδηγός θα σου δώσει ολοκληρωμένη εικόνα για τη λεσβιακή κουζίνα.\n\nΗ κουζίνα της Λέσβου χαρακτηρίζεται από:\n\n• Φρέσκα ψάρια και θαλασσινά\n• Ποικιλία μεζέδων για ούζο\n• Πλούσιο ελαιόλαδο\n• Παραδοσιακά τυριά\n• Αρωματικά χόρτα και εποχικά λαχανικά\n\nΗ γεωγραφική της θέση απέναντι από τη Μικρά Ασία έχει επηρεάσει βαθιά τις γεύσεις. Πολλά πιάτα έχουν έντονα αρώματα, μπαχαρικά και τεχνικές που θυμίζουν ανατολή, αλλά παραμένουν αυθεντικά ελληνικά.",
@@ -707,7 +707,7 @@ export const food: FoodCard[] = [
       en: "A guide to the ultimate sunset cocktails, fine dining, and most memorable culinary experiences across the island of Santorini.",
       el: "Ο απόλυτος οδηγός για cocktails στο ηλιοβασίλεμα, fine dining και τις πιο αξέχαστες γαστρονομικές εμπειρίες στη Σαντορίνη.",
     },
-    image: "/images/food-santorini.jpg",
+    image: "/images/food-santorini.webp",
     overview: {
       en: "Santorini is not just a Greek island. It's a mood. A dramatic volcanic landscape, whitewashed villages hanging over the caldera, and sunsets that feel almost unreal.\n\nBut beyond the views, Santorini offers something else: a more refined, premium side of Greek gastronomy. Think elegant cocktails, creative Mediterranean cuisine, candlelit terraces, and unforgettable evenings overlooking the Aegean.\n\nIf you're looking for the ultimate sunset cocktails and dinner experience in Santorini, this guide will help you discover where to go, what to order, and how to enjoy the island in style.",
       el: "Η Σαντορίνη δεν είναι απλώς ένα ελληνικό νησί. Είναι μια αίσθηση. Ένα δραματικό ηφαιστειακό τοπίο, ολόλευκα χωριά που κρέμονται πάνω από την καλντέρα, και ηλιοβασιλέματα που μοιάζουν σχεδόν εξωπραγματικά.\n\nΌμως, πέρα από τη θέα, η Σαντορίνη προσφέρει και κάτι άλλο: μια πιο εκλεπτυσμένη, premium πλευρά της ελληνικής γαστρονομίας. Σκεφτείτε κομψά cocktails, δημιουργική μεσογειακή κουζίνα, βεράντες υπό το φως των κεριών και αξέχαστες βραδιές με θέα το Αιγαίο.\n\nΑν αναζητάτε την απόλυτη εμπειρία για cocktails και δείπνο στο ηλιοβασίλεμα της Σαντορίνης, αυτός ο οδηγός θα σας βοηθήσει να ανακαλύψετε πού να πάτε, τι να παραγγείλετε και πώς να απολαύσετε το νησί με στιλ.",
@@ -754,8 +754,8 @@ export const food: FoodCard[] = [
       el: "Παραδοσιακές Γεύσεις της Κρήτης",
     },
     metaTitle: {
-      en: "Traditional Tavern Flavors in Crete: The Best Local Food in Chania, Rethymno, Heraklion & Lasithi",
-      el: "Παραδοσιακές Γεύσεις της Κρήτης: Το Καλύτερο Τοπικό Φαγητό σε Χανιά, Ρέθυμνο, Ηράκλειο & Λασίθι",
+      en: "What to Eat in Crete: Traditional Dishes, Taverns & Local Food Guide",
+      el: "Τι να Φας στην Κρήτη: Παραδοσιακές Γεύσεις, Ταβέρνες & Τοπικός Γαστρονομικός Οδηγός",
     },
     metaDescription: {
       en: "Discover authentic Cretan tavern flavors across Chania, Rethymno, Heraklion and Lasithi. A documentary-style journey through Crete's regional cuisine and local specialties.",
@@ -770,7 +770,7 @@ export const food: FoodCard[] = [
       en: "A regional journey through Crete's traditional taverns.",
       el: "Ένα ταξίδι στα χωριά και τις παραδοσιακές ταβέρνες της Κρήτης.",
     },
-    image: "/images/food-crete.jpg",
+    image: "/images/food-crete.webp",
     overview: {
       en: "In Crete, every region tells a slightly different story — through fire, olive oil, mountain herbs, and sea salt.\n\nFrom the White Mountains of Chania to the rugged plateaus of Lasithi, the Cretan tavern is not a single experience. It changes with the landscape. And that’s what makes it unforgettable.",
       el: "Στην Κρήτη, κάθε περιοχή αφηγείται μια ελαφρώς διαφορετική ιστορία — μέσα από τη φωτιά, το ελαιόλαδο, τα βότανα του βουνού και το αλάτι της θάλασσας.\n\nΑπό τα Λευκά Όρη των Χανίων μέχρι τα άγρια οροπέδια του Λασιθίου, η κρητική ταβέρνα δεν είναι μια ενιαία εμπειρία. Αλλάζει μαζί με το τοπίο. Κι αυτό είναι που την κάνει αξέχαστη.",
@@ -829,7 +829,7 @@ export const food: FoodCard[] = [
 export const tours: TourItem[] = [
   {
     slug: "kefalonia-tours",
-    image: "/images/tours/kefalonia-tours.jpg",
+    image: "/images/tours/kefalonia-tours.webp",
     place: "Kefalonia",
     title: {
       en: "Experiences in Kefalonia",
@@ -914,7 +914,7 @@ export const tours: TourItem[] = [
   },
   {
     slug: "lesvos-tours",
-    image: "/images/tours/lesvos-tours.jpg",
+    image: "/images/tours/lesvos-tours.webp",
     place: "Lesvos",
     title: {
       en: "Experiences in Lesvos",
@@ -999,7 +999,7 @@ export const tours: TourItem[] = [
   },
   {
     slug: "crete-tours",
-    image: "/images/tours/crete-tours.jpg",
+    image: "/images/tours/crete-tours.webp",
     place: "Crete",
     title: {
       en: "Experiences in Crete",

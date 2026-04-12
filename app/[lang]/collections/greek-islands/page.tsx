@@ -70,7 +70,7 @@ export async function generateMetadata({
       siteName: "GoGreeceNow",
       images: [
         {
-          url: "/images/hero-greece.jpg",
+          url: "/images/hero-greece.webp",
           width: 1600,
           height: 900,
           alt: "Greek islands collection",

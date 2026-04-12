@@ -164,7 +164,7 @@ export default function TravelInfoHubPage() {
         <div
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: "url('/images/hero-greece.jpg')",
+            backgroundImage: "url('/images/hero-greece.webp')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundAttachment: "fixed",

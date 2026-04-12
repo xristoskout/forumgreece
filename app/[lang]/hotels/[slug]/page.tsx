@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import ReactDOM from "react-dom";
 import { hotels } from "../../../../lib/content";
 import HotelDetailsClient from "./hotel-details-client";
 
@@ -48,11 +49,16 @@ export async function generateMetadata({
     item.overview?.[lang] ??
     item.info.en;
 
+  const hotelTitle =
+    lang === "el"
+      ? `Πού να Μείνεις στη ${item.place}: Ξενοδοχεία & Επιλογές Διαμονής | GoGreeceNow`
+      : `Where to Stay in ${item.place}: Best Areas & Hotel Ideas | GoGreeceNow`;
+
   return {
-    title: `${item.name} | GoGreeceNow`,
+    title: { absolute: hotelTitle },
     description,
     openGraph: {
-      title: `${item.name} | GoGreeceNow`,
+      title: hotelTitle,
       description,
       images: [
         {
@@ -65,7 +71,7 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: `${item.name} | GoGreeceNow`,
+      title: hotelTitle,
       description,
       images: [item.image],
     },
@@ -84,6 +90,9 @@ export default async function HotelPage({ params }: HotelPageProps) {
   if (!item) {
     notFound();
   }
+
+  // Preload the hotel hero LCP image
+  ReactDOM.preload(item.image, { as: "image", fetchPriority: "high" });
 
   return <HotelDetailsClient />;
 }
