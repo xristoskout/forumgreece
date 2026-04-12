@@ -221,7 +221,7 @@ export default function TravelToGreecePage() {
         en: "Ideas for romantic escapes, dining, old town walks and short trips around Nafplio.",
         el: "Ιδέες για ρομαντικές αποδράσεις, φαγητό, βόλτες στην παλιά πόλη και σύντομα ταξίδια γύρω από το Ναύπλιο.",
       },
-      href: "https://facebook.com",
+      href: "https://www.facebook.com/groups/2181693449313303/",
       image: "/images/forums/nafplio.webp",
     },
     {
@@ -232,7 +232,7 @@ export default function TravelToGreecePage() {
         en: "Food, culture, nightlife, local tips and city experiences in Thessaloniki.",
         el: "Φαγητό, πολιτισμός, νυχτερινή ζωή, τοπικά tips και εμπειρίες πόλης στη Θεσσαλονίκη.",
       },
-      href: "https://facebook.com",
+      href: "https://www.facebook.com/groups/969695828757541/",
       image: "/images/forums/thessaloniki.webp",
     },
     {
@@ -243,7 +243,7 @@ export default function TravelToGreecePage() {
         en: "Acropolis visits, neighborhoods, restaurants, hotels and planning your Athens stay.",
         el: "Επισκέψεις στην Ακρόπολη, γειτονιές, εστιατόρια, ξενοδοχεία και οργάνωση διαμονής στην Αθήνα.",
       },
-      href: "https://facebook.com",
+      href: "https://www.facebook.com/groups/1689801992448097/",
       image: "/images/forums/athens.webp",
     },
   ];
