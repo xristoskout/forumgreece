@@ -614,7 +614,7 @@ export default function HomePageClient({
           />
         </div>
         <div className="relative z-10 w-full max-w-7xl mx-auto px-6 py-16 lg:grid-cols-[1.2fr_0.8fr] gap-12 lg:pb-32 grid lg:items-end">
-          <div className="animate-fade-in-up mt-10 md:mt-0">
+          <div className="mt-10 md:mt-0">
             <div className="inline-flex rounded-full border border-indigo-200 bg-white/80 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-indigo-700 backdrop-blur-md shadow-sm mb-6 relative overflow-hidden group">
                <span className="relative z-10">{copy.heroBadge}</span>
             </div>

@@ -148,15 +148,15 @@ export default function DestinationDetailsClient({
         </div>
         <div className="relative z-10 mx-auto grid min-h-[560px] max-w-7xl gap-10 px-6 py-20 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <div>
-            <span className="animate-fade-up inline-flex rounded-full bg-white/15 px-4 py-1 text-sm font-medium backdrop-blur">
+            <span className="inline-flex rounded-full bg-white/15 px-4 py-1 text-sm font-medium backdrop-blur">
               {destination.region[lang]}
             </span>
 
-            <h1 className="animate-fade-up mt-6 max-w-4xl text-4xl font-bold leading-tight md:text-6xl">
+            <h1 className="mt-6 max-w-4xl text-4xl font-bold leading-tight md:text-6xl">
               {destination.name}
             </h1>
 
-            <p className="animate-fade-up-delayed mt-5 max-w-2xl text-lg leading-8 text-white/90">
+            <p className="mt-5 max-w-2xl text-lg leading-8 text-white/90">
               {destination.overview[lang]}
             </p>
 
