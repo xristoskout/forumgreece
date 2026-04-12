@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import ReactDOM from "react-dom";
 import HomePageClient from "./home-page-client";
 import { client } from "../../lib/sanity/client";
 import { HOME_PAGE_QUERY } from "../../lib/sanity/queries";
@@ -74,14 +75,14 @@ const homeSeo: Record<
   }
 > = {
   en: {
-    title: "Greece Travel Guides, Destinations & Trip Planning | GoGreeceNow",
+    title: "GoGreeceNow | Greece Travel Guides, Destinations & Trip Planning",
     description:
       "Plan your trip to Greece with destination guides, island ideas, hotels, tours and practical travel info in one easy hub.",
     path: "/en",
     locale: "en_US",
   },
   el: {
-    title: "Οδηγοί Ελλάδας, Προορισμοί & Οργάνωση Ταξιδιού | GoGreeceNow",
+    title: "GoGreeceNow | Οδηγοί Ελλάδας, Προορισμοί & Οργάνωση Ταξιδιού",
     description:
       "Οργάνωσε το ταξίδι σου στην Ελλάδα με οδηγούς προορισμών, ιδέες για νησιά, διαμονή, εκδρομές και χρήσιμες πληροφορίες.",
     path: "/el",
@@ -104,7 +105,7 @@ function HomeStructuredData({ lang }: { lang: Lang }) {
         "@id": `${SITE_URL}/#organization`,
         name: "GoGreeceNow",
         url: SITE_URL,
-        logo: `${SITE_URL}/images/logo.png`,
+        logo: `${SITE_URL}/images/logo.webp`,
       },
       {
         "@type": "WebSite",
@@ -162,7 +163,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     metadataBase: new URL(SITE_URL),
-    title: seo.title,
+    title: { absolute: seo.title },
     description: seo.description,
     alternates: {
       canonical: seo.path,
@@ -181,7 +182,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       locale: seo.locale,
       images: [
         {
-          url: "/images/hero-greece.jpg",
+          url: "/images/hero-greece.webp",
           width: 1600,
           height: 900,
           alt: "GoGreeceNow Greece travel portal",
@@ -192,7 +193,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       card: "summary_large_image",
       title: seo.title,
       description: seo.description,
-      images: ["/images/hero-greece.jpg"],
+      images: ["/images/hero-greece.webp"],
     },
   };
 }
@@ -203,6 +204,13 @@ export default async function Page({ params }: Props) {
   if (!isLang(lang)) {
     notFound();
   }
+
+  // Preload the hero LCP image — tells browser to fetch it immediately
+  // instead of waiting for CSS background-image to be parsed client-side.
+  ReactDOM.preload("/images/hero-greece.webp", {
+    as: "image",
+    fetchPriority: "high",
+  });
 
   const content = await client.fetch<HomePageContent | null>(HOME_PAGE_QUERY, {
     lang,

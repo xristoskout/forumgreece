@@ -56,11 +56,13 @@ export async function generateMetadata({
     business.description?.en ??
     business.info.en;
 
+  const pageTitle = `${business.name} | GoGreeceNow`;
+
   return {
-    title: `${business.name} | GoGreeceNow`,
+    title: { absolute: pageTitle },
     description,
     openGraph: {
-      title: `${business.name} | GoGreeceNow`,
+      title: pageTitle,
       description,
       images: [
         {
@@ -73,7 +75,7 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: `${business.name} | GoGreeceNow`,
+      title: pageTitle,
       description,
       images: [business.image],
     },

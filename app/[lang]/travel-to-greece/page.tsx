@@ -153,7 +153,7 @@ export default function TravelToGreecePage() {
         el: "Tips για θέα στην καλντέρα, χωριά, ξενοδοχεία, παραλίες και ρομαντικές διακοπές στη Σαντορίνη.",
       },
       href: "https://www.facebook.com/groups/1590639762241655/",
-      image: "/images/forums/santorini.jpg",
+      image: "/images/forums/santorini.webp",
     },
     {
       title: "Forum Mykonos",
@@ -164,7 +164,7 @@ export default function TravelToGreecePage() {
         el: "Παραλίες, νυχτερινή ζωή, κομψή διαμονή και καλοκαιρινές εμπειρίες στη Μύκονο.",
       },
       href: "https://www.facebook.com/groups/942621205287215/",
-      image: "/images/forums/mykonos.jpg",
+      image: "/images/forums/mykonos.webp",
     },
     {
       title: "Forum Corfu",
@@ -175,7 +175,7 @@ export default function TravelToGreecePage() {
         el: "Βόλτες στην παλιά πόλη, παραλίες, πράσινα τοπία και οικογενειακές ταξιδιωτικές ιδέες για την Κέρκυρα.",
       },
       href: "https://www.facebook.com/groups/1481830549976820/",
-      image: "/images/forums/corfu.jpg",
+      image: "/images/forums/corfu.webp",
     },
     {
       title: "Forum Crete",
@@ -186,7 +186,7 @@ export default function TravelToGreecePage() {
         el: "Road trips, παραλίες, χωριά, γαστρονομία και ταξιδιωτικός σχεδιασμός για την Κρήτη.",
       },
       href: "https://www.facebook.com/groups/1262658085954159/",
-      image: "/images/forums/crete.jpg",
+      image: "/images/forums/crete.webp",
     },
     {
       title: "Forum Lesvos",
@@ -197,7 +197,7 @@ export default function TravelToGreecePage() {
         el: "Χωριά, παραλίες, τοπικές γεύσεις, πολιτισμός και χαλαρές αποδράσεις στη Λέσβο.",
       },
       href: "https://www.facebook.com/groups/1365073765382008/",
-      image: "/images/forums/lesvos.jpg",
+      image: "/images/forums/lesvos.webp",
     },
     {
       title: "Forum Kefalonia",
@@ -208,7 +208,7 @@ export default function TravelToGreecePage() {
         el: "Γαλάζια νερά, διάσημες παραλίες, χωριά και καλοκαιρινές διακοπές στην Κεφαλονιά.",
       },
       href: "https://www.facebook.com/groups/962993806185389/",
-      image: "/images/forums/kefalonia.jpg",
+      image: "/images/forums/kefalonia.webp",
     },
   ];
 
@@ -222,7 +222,7 @@ export default function TravelToGreecePage() {
         el: "Ιδέες για ρομαντικές αποδράσεις, φαγητό, βόλτες στην παλιά πόλη και σύντομα ταξίδια γύρω από το Ναύπλιο.",
       },
       href: "https://facebook.com",
-      image: "/images/forums/nafplio.jpg",
+      image: "/images/forums/nafplio.webp",
     },
     {
       title: "Forum Thessaloniki",
@@ -233,7 +233,7 @@ export default function TravelToGreecePage() {
         el: "Φαγητό, πολιτισμός, νυχτερινή ζωή, τοπικά tips και εμπειρίες πόλης στη Θεσσαλονίκη.",
       },
       href: "https://facebook.com",
-      image: "/images/forums/thessaloniki.jpg",
+      image: "/images/forums/thessaloniki.webp",
     },
     {
       title: "Forum Athens",
@@ -244,7 +244,7 @@ export default function TravelToGreecePage() {
         el: "Επισκέψεις στην Ακρόπολη, γειτονιές, εστιατόρια, ξενοδοχεία και οργάνωση διαμονής στην Αθήνα.",
       },
       href: "https://facebook.com",
-      image: "/images/forums/athens.jpg",
+      image: "/images/forums/athens.webp",
     },
   ];
 
@@ -258,7 +258,7 @@ export default function TravelToGreecePage() {
         el: "Όμορφες παραλίες, κρυφοί κολπίσκοι, family-friendly επιλογές και ιδέες για καλοκαιρινές βουτιές.",
       },
       href: "https://facebook.com",
-      image: "/images/forums/beaches.jpg",
+      image: "/images/forums/beaches.webp",
     },
     {
       title: "Greek Food Lovers",
@@ -269,7 +269,7 @@ export default function TravelToGreecePage() {
         el: "Παραδοσιακές ταβέρνες, θαλασσινά, γλυκά, κρασί και τοπικές γευστικές ανακαλύψεις σε όλη την Ελλάδα.",
       },
       href: "https://facebook.com",
-      image: "/images/forums/food.jpg",
+      image: "/images/forums/food.webp",
     },
     {
       title: "Travel Inspiration Greece",
@@ -280,7 +280,7 @@ export default function TravelToGreecePage() {
         el: "Φωτογραφίες, ιδέες προορισμών, weekend αποδράσεις και έμπνευση για κάθε εποχή.",
       },
       href: "https://facebook.com",
-      image: "/images/forums/inspiration.jpg",
+      image: "/images/forums/inspiration.webp",
     },
   ];
 
@@ -391,7 +391,7 @@ export default function TravelToGreecePage() {
             className="group flex min-w-0 items-center gap-2 sm:gap-3"
           >
             <Image
-              src="/images/logo/gogreecenow-logo.png"
+              src="/images/logo/gogreecenow-logo.webp"
               alt="GoGreeceNow logo"
               width={52}
               height={52}
@@ -445,7 +445,7 @@ export default function TravelToGreecePage() {
       <section 
         className="relative flex min-h-[60vh] xl:min-h-[70vh] items-center justify-center bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "linear-gradient(to bottom, rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.7)), url('/images/hero/greece-main.jpg')"
+          backgroundImage: "linear-gradient(to bottom, rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.7)), url('/images/hero/greece-main.webp')"
         }}
       >
         <div className="absolute inset-0 bg-sky-900/10 mix-blend-multiply"></div>

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import SiteHeader from "../../components/site-header";
 import {
   Lang,
@@ -467,7 +468,7 @@ export default function HomePageClient({
         el: "Ανακάλυψε έμπνευση για ελληνικά νησιά, θαλασσινά τοπία, παραλίες και ιδέες για καλοκαιρινά ταξίδια.",
       },
       href: withLang("/collections/greek-islands"),
-      image: destinations[0]?.image || "/images/hero-greece.jpg",
+      image: destinations[0]?.image || "/images/hero-greece.webp",
       eyebrow: {
         en: "Featured Collection",
         el: "Προτεινόμενη Συλλογή",
@@ -491,7 +492,7 @@ export default function HomePageClient({
         el: "Βρες πρακτικές ταξιδιωτικές πληροφορίες για μετακίνηση, εποχές, κρατήσεις και οργάνωση ταξιδιού στην Ελλάδα.",
       },
       href: withLang("/collections/greece-travel-planning"),
-      image: travelInfoGuides[0]?.image || "/images/hero-greece.jpg",
+      image: travelInfoGuides[0]?.image || "/images/hero-greece.webp",
       eyebrow: { en: "Practical Greece", el: "Χρήσιμη Ελλάδα" },
       tags: {
         en: ["Transport", "Travel Tips", "Planning"],
@@ -512,7 +513,7 @@ export default function HomePageClient({
         el: "Ανακάλυψε ημερήσιες εκδρομές, boat tours και εμπειρίες στα ελληνικά νησιά και στην ηπειρωτική Ελλάδα.",
       },
       href: withLang("/collections/greece-tours-and-experiences"),
-      image: tours[0]?.image || "/images/hero-greece.jpg",
+      image: tours[0]?.image || "/images/hero-greece.webp",
       eyebrow: { en: "Curated Ideas", el: "Επιλεγμένες Ιδέες" },
       tags: {
         en: ["Boat Tours", "Experiences", "Day Trips"],
@@ -533,7 +534,7 @@ export default function HomePageClient({
         el: "Ανακάλυψε τοπικά πιάτα, ποτά και food ideas από διαφορετικούς προορισμούς σε όλη την Ελλάδα.",
       },
       href: withLang("/collections/greece-food-and-drink"),
-      image: food[0]?.image || "/images/hero-greece.jpg",
+      image: food[0]?.image || "/images/hero-greece.webp",
       eyebrow: { en: "Eat & Drink", el: "Φαγητό & Ποτό" },
       tags: {
         en: ["Local Food", "Wine", "Greek Cuisine"],
@@ -601,15 +602,17 @@ export default function HomePageClient({
       <SiteHeader />
 
       <section className="relative overflow-hidden min-h-screen flex items-center pt-20">
-        <div
-          className="absolute inset-0 z-0"
-          style={{
-            backgroundImage: "url('/images/hero-greece.jpg')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundAttachment: "fixed",
-          }}
-        />
+        <div className="absolute inset-0 z-0 pointer-events-none">
+          <Image
+            src="/images/hero-greece.webp"
+            alt="GoGreeceNow Hero"
+            fill
+            priority
+            quality={90}
+            className="object-cover"
+            sizes="100vw"
+          />
+        </div>
         <div className="relative z-10 w-full max-w-7xl mx-auto px-6 py-16 lg:grid-cols-[1.2fr_0.8fr] gap-12 lg:pb-32 grid lg:items-end">
           <div className="animate-fade-in-up mt-10 md:mt-0">
             <div className="inline-flex rounded-full border border-indigo-200 bg-white/80 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-indigo-700 backdrop-blur-md shadow-sm mb-6 relative overflow-hidden group">

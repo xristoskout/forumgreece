@@ -23,13 +23,13 @@ function withLang(path: string, lang: Lang) {
 
 const seo = {
   en: {
-    title: "Greek Food & Drink Hub | GoGreeceNow",
+    title: "What to Eat in Greece: Regional Dishes, Taverns & Local Food Guides | GoGreeceNow",
     description:
       "Explore Greek food guides, regional dishes and local drinks to add more flavor to your Greece trip planning.",
     path: "/en/collections/greece-food-and-drink",
   },
   el: {
-    title: "Hub Ελληνικής Γαστρονομίας & Ποτού | GoGreeceNow",
+    title: "Τι να Φας στην Ελλάδα: Τοπικά Πιάτα, Ταβέρνες & Γαστρονομικοί Οδηγοί | GoGreeceNow",
     description:
       "Ανακάλυψε οδηγούς ελληνικής γαστρονομίας, τοπικά πιάτα και ποτά για να δώσεις περισσότερο χαρακτήρα στο ταξίδι σου στην Ελλάδα.",
     path: "/el/collections/greece-food-and-drink",
@@ -65,7 +65,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       siteName: "GoGreeceNow",
       images: [
         {
-          url: "/images/hero-greece.jpg",
+          url: "/images/hero-greece.webp",
           width: 1600,
           height: 900,
           alt: "Greek food and drink collection",

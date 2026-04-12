@@ -113,7 +113,7 @@ export default function BusinessDetailsClient({
     if (business.galleryCount && business.galleryCount > 0) {
       return Array.from(
         { length: business.galleryCount },
-        (_, index) => `/images/businesses/${business.slug}/${index + 1}.jpg`
+        (_, index) => `/images/businesses/${business.slug}/${index + 1}.webp`
       );
     }
 

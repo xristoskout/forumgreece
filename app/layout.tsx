@@ -7,16 +7,22 @@ import "./globals.css";
 const geistSans = Montserrat({
   variable: "--font-geist-sans",
   subsets: ["latin", "cyrillic", "cyrillic-ext", "latin-ext", "vietnamese"],
+  display: "swap",
+  preload: true,
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: "swap",
+  preload: false,
 });
 
 const notoGreek = Noto_Sans({
   variable: "--font-greek-sans",
   subsets: ["greek", "greek-ext"],
+  display: "swap",
+  preload: false,
 });
 
 export const viewport: Viewport = {

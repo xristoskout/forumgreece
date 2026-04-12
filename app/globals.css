@@ -20,6 +20,29 @@
   66% { transform: translateY(2px) rotate(-1deg) scale(0.99); filter: drop-shadow(0 0 8px rgba(255,255,255,0.3)); }
 }
 
+@keyframes fade-up {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float-gentle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.8s ease-out forwards;
+}
+
+.animate-fade-up-delayed {
+  animation: fade-up 0.8s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+.animate-float {
+  animation: float-gentle 4s ease-in-out infinite;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);

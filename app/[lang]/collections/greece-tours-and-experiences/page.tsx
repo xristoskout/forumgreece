@@ -23,13 +23,13 @@ function withLang(path: string, lang: Lang) {
 
 const seo = {
   en: {
-    title: "Greece Tours & Experiences Hub | GoGreeceNow",
+    title: "Things to Do in Greece: Tours, Boat Trips & Local Experiences | GoGreeceNow",
     description:
       "Browse Greece tours, boat trips and local experiences to add memorable activities and day trips to your itinerary.",
     path: "/en/collections/greece-tours-and-experiences",
   },
   el: {
-    title: "Hub Εκδρομών & Εμπειριών στην Ελλάδα | GoGreeceNow",
+    title: "Τι να Κάνεις στην Ελλάδα: Εκδρομές, Boat Trips & Τοπικές Εμπειρίες | GoGreeceNow",
     description:
       "Δες εκδρομές, boat trips και τοπικές εμπειρίες στην Ελλάδα για να εμπλουτίσεις το ταξίδι σου με δραστηριότητες και day trips.",
     path: "/el/collections/greece-tours-and-experiences",
@@ -70,7 +70,7 @@ export async function generateMetadata({
       siteName: "GoGreeceNow",
       images: [
         {
-          url: "/images/hero-greece.jpg",
+          url: "/images/hero-greece.webp",
           width: 1600,
           height: 900,
           alt: "Greece tours and experiences collection",

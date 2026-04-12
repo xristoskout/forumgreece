@@ -63,7 +63,7 @@ export default function AboutPage() {
 
       <section className="relative overflow-hidden bg-slate-900 py-32 sm:py-40">
         <div className="absolute inset-0 z-0 opacity-40 mix-blend-overlay">
-           <Image src="/images/hero/greece-main.jpg" alt="About Greece" fill className="object-cover" />
+           <Image src="/images/hero/greece-main.webp" alt="About Greece" fill className="object-cover" />
         </div>
         <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
           <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-6xl drop-shadow-xl">
@@ -87,7 +87,7 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="relative h-80 rounded-[2.5rem] overflow-hidden shadow-2xl flex items-center justify-center bg-indigo-50">
-             <Image src="/images/logo/gogreecenow-logo.png" alt="GoGreeceNow Logo" width={200} height={200} className="object-contain" />
+             <Image src="/images/logo/gogreecenow-logo.webp" alt="GoGreeceNow Logo" width={200} height={200} className="object-contain" />
           </div>
         </div>
       </section>

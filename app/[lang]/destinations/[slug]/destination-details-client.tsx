@@ -132,36 +132,21 @@ export default function DestinationDetailsClient({
     <main className="min-h-screen bg-transparent text-slate-900">
       <SiteHeader />
 
-      <style dangerouslySetInnerHTML={{__html: `
-        @keyframes fade-up {
-          0% { opacity: 0; transform: translateY(20px); }
-          100% { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes float-gentle {
-          0%, 100% { transform: translateY(0); }
-          50% { transform: translateY(-8px); }
-        }
-        .animate-fade-up {
-          animation: fade-up 0.8s ease-out forwards;
-        }
-        .animate-fade-up-delayed {
-          animation: fade-up 0.8s ease-out 0.2s forwards;
-          opacity: 0;
-        }
-        .animate-float {
-          animation: float-gentle 4s ease-in-out infinite;
-        }
-      `}} />
 
-      <section
-        className="relative overflow-hidden text-white"
-        style={{
-          backgroundImage: `linear-gradient(90deg, rgba(7,24,44,0.82) 0%, rgba(7,24,44,0.55) 45%, rgba(7,24,44,0.25) 100%), url('${destination.image}')`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="mx-auto grid min-h-[560px] max-w-7xl gap-10 px-6 py-20 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+      <section className="relative overflow-hidden text-white">
+        <div className="absolute inset-0 z-0 pointer-events-none">
+          <Image
+            src={destination.image}
+            alt={destination.name}
+            fill
+            priority
+            quality={90}
+            className="object-cover"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#07182c]/80 via-[#07182c]/55 to-[#07182c]/25" />
+        </div>
+        <div className="relative z-10 mx-auto grid min-h-[560px] max-w-7xl gap-10 px-6 py-20 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <div>
             <span className="animate-fade-up inline-flex rounded-full bg-white/15 px-4 py-1 text-sm font-medium backdrop-blur">
               {destination.region[lang]}
