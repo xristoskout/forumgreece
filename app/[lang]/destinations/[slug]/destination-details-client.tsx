@@ -370,7 +370,7 @@ export default function DestinationDetailsClient({
               <div className="mt-8 space-y-3">
                 <Link
                   href={withLang("/#destinations")}
-                  className="block rounded-2xl bg-indigo-600 border-none px-5 py-3 text-center font-semibold text-slate-900 transition hover:bg-indigo-500"
+                  className="block rounded-2xl bg-indigo-600 border-none px-5 py-3 text-center font-semibold text-white transition hover:bg-indigo-500"
                 >
                   {lang === "en"
                     ? "Explore more destinations"
@@ -392,7 +392,7 @@ export default function DestinationDetailsClient({
       </section>
 
       <footer className="border-t border-slate-200 bg-white backdrop-blur-md">
-        <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-slate-500 md:flex-row md:items-center md:justify-between">
+        <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-slate-600 md:flex-row md:items-center md:justify-between">
           <div>
             {lang === "en"
               ? `${siteBrand} — destinations, travel inspiration and local experiences across Greece.`
@@ -420,7 +420,7 @@ export default function DestinationDetailsClient({
           </div>
         </div>
         <div className="border-t border-slate-100 mt-4 pt-6 pb-8 flex justify-center">
-          <Link href={withLang("/focus")} className="text-xs font-semibold text-slate-400 hover:text-indigo-600 transition-colors">
+          <Link href={withLang("/focus")} className="text-xs font-semibold text-slate-500 hover:text-indigo-600 transition-colors">
             Κατασκευή Ιστοσελίδας 2026 By Focus
           </Link>
         </div>

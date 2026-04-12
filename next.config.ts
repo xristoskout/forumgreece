@@ -13,6 +13,11 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: '/',
+        destination: '/en',
+        permanent: true,
+      },
+      {
         source: '/businesses',
         destination: '/',
         permanent: true,
@@ -25,6 +30,16 @@ const nextConfig: NextConfig = {
       {
         source: '/el/businesses',
         destination: '/el',
+        permanent: true,
+      },
+      {
+        source: '/travel-info/best-time-to-visit',
+        destination: '/travel-info/best-time-to-visit-greece',
+        permanent: true,
+      },
+      {
+        source: '/:lang(en|el)/travel-info/best-time-to-visit',
+        destination: '/:lang/travel-info/best-time-to-visit-greece',
         permanent: true,
       },
     ];

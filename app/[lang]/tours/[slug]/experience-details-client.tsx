@@ -252,14 +252,14 @@ export default function ExperienceDetailsClient({
                                   href={businessHref}
                                   target="_blank"
                                   rel="noopener noreferrer"
-                                  className="inline-flex items-center justify-center rounded-2xl bg-indigo-600 border-none px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-indigo-500"
+                                  className="inline-flex items-center justify-center rounded-2xl bg-indigo-600 border-none px-6 py-3 text-sm font-semibold text-white transition hover:bg-indigo-500"
                                 >
                                   {business.name}
                                 </a>
                               ) : (
                                 <Link
                                   href={withLang(businessHref)}
-                                  className="inline-flex items-center justify-center rounded-2xl bg-indigo-600 border-none px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-indigo-500"
+                                  className="inline-flex items-center justify-center rounded-2xl bg-indigo-600 border-none px-6 py-3 text-sm font-semibold text-white transition hover:bg-indigo-500"
                                 >
                                   {business.name}
                                 </Link>
@@ -311,7 +311,7 @@ export default function ExperienceDetailsClient({
               <div className="mt-8 space-y-3">
                 <Link
                   href={withLang("/#tours")}
-                  className="block rounded-2xl bg-indigo-600 border-none px-5 py-3 text-center font-semibold text-slate-900 transition hover:bg-indigo-500"
+                  className="block rounded-2xl bg-indigo-600 border-none px-5 py-3 text-center font-semibold text-white transition hover:bg-indigo-500"
                 >
                   {t.exploreMoreTours}
                 </Link>
@@ -329,7 +329,7 @@ export default function ExperienceDetailsClient({
       </section>
 
       <footer className="border-t border-slate-200 bg-white backdrop-blur-md">
-        <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-slate-500 md:flex-row md:items-center md:justify-between">
+        <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-slate-600 md:flex-row md:items-center md:justify-between">
           <div>{t.footerText}</div>
 
           <div className="flex gap-5">
@@ -350,7 +350,7 @@ export default function ExperienceDetailsClient({
           </div>
         </div>
         <div className="border-t border-slate-100 mt-4 pt-6 pb-8 flex justify-center">
-          <Link href={withLang("/focus")} className="text-xs font-semibold text-slate-400 hover:text-indigo-600 transition-colors">
+          <Link href={withLang("/focus")} className="text-xs font-semibold text-slate-500 hover:text-indigo-600 transition-colors">
             Κατασκευή Ιστοσελίδας 2026 By Focus
           </Link>
         </div>

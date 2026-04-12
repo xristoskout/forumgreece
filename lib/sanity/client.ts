@@ -15,5 +15,5 @@ export const client = createClient({
   projectId,
   dataset,
   apiVersion: '2026-04-03',
-  useCdn: false,
+  useCdn: process.env.NODE_ENV === "production",
 })
