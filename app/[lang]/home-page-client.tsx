@@ -627,7 +627,7 @@ export default function HomePageClient({
             <div className="flex flex-wrap gap-4 mb-12">
               <a
                 href="#destinations"
-                className="group relative overflow-hidden rounded-2xl bg-indigo-600 px-8 py-4 text-base font-semibold text-slate-900 shadow-[0_0_20px_rgba(79,70,229,0.4)] transition-all hover:scale-105 hover:shadow-[0_0_30px_rgba(79,70,229,0.6)]"
+                className="group relative overflow-hidden rounded-2xl bg-indigo-600 px-8 py-4 text-base font-semibold text-white shadow-[0_0_20px_rgba(79,70,229,0.4)] transition-all hover:scale-105 hover:shadow-[0_0_30px_rgba(79,70,229,0.6)]"
               >
                 <span className="relative z-10 flex items-center gap-2">
                   {copy.heroPrimary} <span className="group-hover:translate-x-1 transition-transform">→</span>
@@ -1125,7 +1125,7 @@ export default function HomePageClient({
 
                   <Link
                     href={withLang(`/tours/${item.slug}`)}
-                    className="mt-6 inline-flex rounded-md bg-cyan-700 px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-cyan-800"
+                    className="mt-6 inline-flex rounded-md bg-cyan-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-cyan-800"
                     aria-label={
                       lang === "en"
                         ? `Read the ${item.place} experiences guide`
@@ -1312,7 +1312,7 @@ export default function HomePageClient({
       </section>
 
       <footer className="border-t border-slate-200 bg-white backdrop-blur-md">
-        <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-slate-500 md:flex-row md:items-center md:justify-between">
+        <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-slate-600 md:flex-row md:items-center md:justify-between">
           <div>{copy.footerText}</div>
 
           <div className="flex gap-5">
@@ -1328,7 +1328,7 @@ export default function HomePageClient({
           </div>
         </div>
         <div className="border-t border-slate-100 mt-4 pt-6 pb-8 flex justify-center">
-          <Link href={withLang("/focus")} className="text-xs font-semibold text-slate-400 hover:text-indigo-600 transition-colors">
+          <Link href={withLang("/focus")} className="text-xs font-semibold text-slate-500 hover:text-indigo-600 transition-colors">
             Κατασκευή Ιστοσελίδας 2026 By Focus
           </Link>
         </div>
