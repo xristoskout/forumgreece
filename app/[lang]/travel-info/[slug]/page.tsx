@@ -154,7 +154,7 @@ export default function TravelInfoGuidePage() {
         />
         <div className="absolute inset-0 z-0 bg-gradient-to-t from-slate-950 via-slate-900/60 to-transparent" />
 
-        <div className="relative z-10 mx-auto w-full max-w-7xl px-6 animate-fade-in-up">
+        <div className="relative z-10 mx-auto w-full max-w-7xl px-6">
           <div className="inline-flex rounded-full border border-indigo-400/30 bg-indigo-500/20 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-indigo-100 backdrop-blur-md mb-6 relative overflow-hidden group">
             <span className="relative z-10">{t.eyebrow[lang]}</span>
           </div>
