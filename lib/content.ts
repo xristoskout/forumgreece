@@ -458,15 +458,18 @@ export const travelInfoGuides: GuideCard[] = [
   },
   {
     slug: "best-time-to-visit-greece",
-    title: { en: "Best time to visit Greece", el: "Η Καλύτερη Εποχή για Ταξίδι" },
+    title: { 
+      en: "Best Time to Visit Greece: A Month-by-Month Guide", 
+      el: "Η Καλύτερη Εποχή για Ταξίδι στην Ελλάδα ανά Μήνα" 
+    },
     description: {
-      en: "Discover exactly when to visit based on your passion: swimming, historical sightseeing, local food, sailing, or simply avoiding the massive crowds.",
-      el: "Ανακάλυψε ακριβώς πότε να επισκεφτείς την Ελλάδα ανάλογα με το τι θέλεις: μπάνιο, ιστορία, φαγητό ή απλά την αποφυγή της τουριστικής πολυκοσμίας."
+      en: "A month-by-month guide to the best time to visit Greece for beaches, sightseeing, island hopping, family travel and quieter trips.",
+      el: "Ένας οδηγός ανά μήνα για την ιδανική περίοδο επίσκεψης στην Ελλάδα, από παραλίες και island hopping μέχρι πιο ήσυχα ταξίδια."
     },
     image: "/images/travel-season.webp",
     overview: {
-      en: "Greece is famous for its summer sun, but limiting your perspective to July and August means missing out. The shoulder seasons (Spring and Autumn) reveal a stunningly green landscape, lower prices, and comfortable temperatures for sightseeing. Winter offers charming mountain villages and a lively urban city-break scene.",
-      el: "Η Ελλάδα είναι διάσημη για το καλοκαίρι της, αλλά αν περιοριστείς στον Ιούλιο και τον Αύγουστο χάνεις πολλές εμπειρίες. Οι ενδιάμεσες εποχές (άνοιξη και φθινόπωρο) αποκαλύπτουν μια πιο πράσινη και αυθεντική πλευρά, με χαμηλότερες τιμές και ευχάριστες θερμοκρασίες. Ακόμη και ο χειμώνας, έχει υπέροχα ορεινά χωριά."
+      en: "Greece is famous for its summer sun, but limiting your perspective to July and August means missing out. The shoulder seasons (Spring and Autumn) reveal a stunningly green landscape, lower prices, and comfortable temperatures for sightseeing. Greece can be visited throughout the year, but the best month depends on the kind of trip you want. The country has a Mediterranean climate with plenty of sunshine, mild winters and very warm summers, while ferry schedules and island life are much more active from spring to autumn.",
+      el: "Η Ελλάδα είναι διάσημη για το καλοκαίρι της, αλλά αν περιοριστείς στον Ιούλιο και τον Αύγουστο χάνεις πολλές εμπειρίες. Οι ενδιάμεσες εποχές (άνοιξη και φθινόπωρο) αποκαλύπτουν μια πιο πράσινη πλευρά, με χαμηλότερες τιμές. Μπορείς να ταξιδέψεις όλο τον χρόνο, αλλά ο καλύτερος μήνας εξαρτάται από τον τύπο του ταξιδιού σου. Οι χειμώνες είναι ήπιοι και τα καλοκαίρια αρκετά θερμά, ενώ τα δρομολόγια των πλοίων είναι πολύ πιο συχνά από την άνοιξη μέχρι το φθινόπωρο."
     },
     points: {
       en: [
@@ -476,7 +479,7 @@ export const travelInfoGuides: GuideCard[] = [
         "Winter focuses on Athens, Thessaloniki & highland escapes"
       ],
       el: [
-        "Το καλοκαίρι είναι the peak season με αρκετή ζέστη",
+        "Το καλοκαίρι είναι peak season με αρκετή ζέστη",
         "Ο Σεπτέμβριος είναι συχνά ο καλύτερος μήνας για το Αιγαίο",
         "Η άνοιξη γιορτάζεται έντονα (ιδιαίτερα το Πάσχα)",
         "Τον χειμώνα προτιμάμε city breaks και ορεινούς προορισμούς"
@@ -502,6 +505,69 @@ export const travelInfoGuides: GuideCard[] = [
         content: {
           en: "From November to March, island ferries run on minimal schedules, and resort towns hibernate. Yet, this is when Athens and Thessaloniki truly shine with a vibrant local culture, fantastic dining, and distraction-free archaeological sites. Winter is also the time for mainland road trips to dramatic highland villages like Zagorohoria or Pelion. Come April, Greek Easter transforms the countryside with profound traditions and celebrations, marking the start of the tourist reboot.",
           el: "Από τον Νοέμβριο ως τον Μάρτιο τα νησιά μπαίνουν σε μια χειμερία νάρκη, αφού τα δρομολόγια πλοίων ελαχιστοποιούνται. Τότε όμως λάμπουν η Αθήνα και η Θεσσαλονίκη! Μοναδική γαστρονομία, local κουλτούρα και αρχαιολογικοί χώροι χωρίς καμία αναμονή. Ο χειμώνας ανήκει επίσης στα γραφικά ορεινά χωριά της Ελλάδας (Ζαγοροχώρια, Πήλιο). Τον Απρίλιο, το Ελληνικό Πάσχα αποτελεί μια μοναδική εμπειρία γεμάτη παράδοση, που σηματοδοτεί και την έναρξη της νέας σεζόν."
+        }
+      },
+      {
+        title: { en: "January to March", el: "Ιανουάριος με Μάρτιος" },
+        content: {
+          en: "Best for: city breaks, culture, slower travel, lower-season atmosphere.\n\nThese months are not the classic island-hopping season. Many islands feel quiet, and ferry services are more limited than in the warmer months.",
+          el: "Ιδανικό για: city breaks, πολιτισμό, αργό ρυθμό, χαλαρή ατμόσφαιρα.\n\nΑυτοί οι μήνες δεν είναι για island-hopping. Πολλά νησιά είναι ήσυχα και τα δρομολόγια πλοίων είναι αρκετά περιορισμένα σε σχέση με τους ζεστούς μήνες."
+        }
+      },
+      {
+        title: { en: "April", el: "Απρίλιος" },
+        content: {
+          en: "A lovely month for: spring travel, sightseeing, flowers and landscapes, fewer crowds.",
+          el: "Ένας υπέροχος μήνας για: ανοιξιάτικα ταξίδια, αξιοθέατα, ανθισμένα τοπία, αποφυγή πολυκοσμίας."
+        }
+      },
+      {
+        title: { en: "May", el: "Μάιος" },
+        content: {
+          en: "One of the best months for: first-time visitors, island trips without full peak-season pressure, walking and sightseeing, more balanced prices.",
+          el: "Ένας από τους καλύτερους μήνες για: επισκέπτες για πρώτη φορά, νησιά χωρίς την πίεση της υψηλής σεζόν, περιπάτους και αξιοθέατα, καλύτερες τιμές."
+        }
+      },
+      {
+        title: { en: "June", el: "Ιούνιος" },
+        content: {
+          en: "Excellent for: beaches, island hopping, couples, early summer energy.",
+          el: "Εξαιρετικό για: παραλίες, island hopping, ζευγάρια, αρχή του ελληνικού καλοκαιριού."
+        }
+      },
+      {
+        title: { en: "July and August", el: "Ιούλιος και Αύγουστος" },
+        content: {
+          en: "Best for: classic beach holidays, nightlife, full summer atmosphere, families on school holidays.\n\nThese are the hottest and busiest months, especially on famous islands.",
+          el: "Ιδανικό για: κλασικές διακοπές στην παραλία, νυχτερινή ζωή, καλοκαιρινή ατμόσφαιρα, οικογένειες.\n\nΕίναι οι πιο ζεστοί και πολυσύχναστοι μήνες, ειδικά στα διάσημα νησιά."
+        }
+      },
+      {
+        title: { en: "September", el: "Σεπτέμβριος" },
+        content: {
+          en: "One of the strongest overall months for Greece: warm sea, summer feel, more comfortable pace, easier all-round travel.",
+          el: "Ενδεχομένως ο καλύτερος συνολικά μήνας για την Ελλάδα: ζεστή θάλασσα, καλοκαιρινή αίσθηση, πιο άνετος ρυθμός, εύκολες μετακινήσεις."
+        }
+      },
+      {
+        title: { en: "October", el: "Οκτώβριος" },
+        content: {
+          en: "Best for: quieter islands, city + island combinations, softer shoulder-season travel.",
+          el: "Ιδανικό για: πιο ήσυχα νησιά, συνδυασμούς πόλης και νησιού, διακοπές χαμηλής σεζόν."
+        }
+      },
+      {
+        title: { en: "November and December", el: "Νοέμβριος και Δεκέμβριος" },
+        content: {
+          en: "Better for: Athens and Thessaloniki, cultural breaks, seasonal city travel, slower, non-beach-focused itineraries.",
+          el: "Καλύτερο για: Αθήνα και Θεσσαλονίκη, πολιτιστικά διαλείμματα, χειμερινά ταξίδια πόλης, αργά προγράμματα όχι προσανατολισμένα σε παραλίες."
+        }
+      },
+      {
+        title: { en: "Conclusion", el: "Συμπέρασμα" },
+        content: {
+          en: "For most first-time visitors, May, June and September are the sweet spot. For peak beach energy, July and August work best. For culture and quieter travel, spring and autumn are often more enjoyable than high summer.",
+          el: "Για τους περισσότερους επισκέπτες, ο Μάιος, ο Ιούνιος και ο Σεπτέμβριος είναι η χρυσή τομή. Για ζωντάνια και παραλίες, ο Ιούλιος και ο Αύγουστος υπερτερούν. Για πολιτισμό, η άνοιξη και το φθινόπωρο προσφέρουν συχνά περισσότερα από το καλοκαίρι."
         }
       }
     ]
@@ -552,6 +618,493 @@ export const travelInfoGuides: GuideCard[] = [
         content: {
           en: "Forget trains for most of Greece; the true public transport network is the KTEL bus system. It’s highly reliable, relatively cheap, and connects Athens/Thessaloniki to virtually every town, port, and village in the country. Buses even roll onto ferries for island connections. For budget travelers or those wary of driving mountain roads, the KTEL system is a superb, comfortable option to cross regions easily.",
           el: "Αν δεν έχεις αυτοκίνητο, η πιο αξιόπιστη δημόσια συγκοινωνία είναι τα ΚΤΕΛ (τα εθνικά υπεραστικά λεωφορεία). Έχουν συχνά δρομολόγια, καθαρά λεωφορεία, και συνδέουν την Αθήνα ή τη Θεσσαλονίκη με κάθε χωριό ή λιμάνι της χώρας. Μάλιστα, μπαίνουν και στα πλοία, επιτρέποντας το ενιαίο ταξίδι. Είναι μια πολύ budget-friendly και άνετη επιλογή για όσους δεν θέλουν να οδηγήσουν."
+        }
+      },
+      {
+        title: { en: "Taxis and Local Transfers", el: "Ταξί και Μετακινήσεις" },
+        content: {
+          en: "Taxis are a very common and affordable way to get around in Greece, actively used by locals as well as tourists. You can find taxi stands in almost every town, port, and airport, or use ride-hailing apps like FreeNow or Uber in major cities.",
+          el: "Οι μετακινήσεις με ταξί δεν κοστίζουν καθόλου ακριβά και είναι πολύ συνηθισμένες, τόσο για τους τουρίστες όσο και για τους ίδιους τους ντόπιους. Υπάρχουν πιάτσες ταξί σε σχεδόν κάθε πόλη, λιμάνι και αεροδρόμιο, ενώ στις μεγάλες πόλεις εξυπηρετούν και εφαρμογές κλήσης ταξί."
+        }
+      },
+      {
+        title: { en: "Greek Islands Without a Car", el: "Ελληνικά Νησιά Χωρίς Αυτοκίνητο" },
+        content: {
+          en: "One of the best things about Greece is that not every island trip requires a car. Some islands are easy to enjoy on foot, others have compact main towns, and some are simply better for short, slow travel. Greece’s ferry network also makes it easy to reach many islands without needing to drive there yourself.",
+          el: "Ένα από τα καλύτερα στοιχεία της Ελλάδας είναι ότι δεν απαιτείται αυτοκίνητο για κάθε νησί. Πολλά νησιά εξερευνώνται εύκολα με τα πόδια, άλλα έχουν μαζεμένες πόλεις, και μερικά είναι απλώς ιδανικά για χαλαρά σύντομα ταξίδια. Το ακτοπλοϊκό δίκτυο επιτρέπει την εύκολη πρόσβαση χωρίς οδήγηση."
+        }
+      },
+      {
+        title: { en: "Hydra", el: "Ύδρα" },
+        content: {
+          en: "Hydra is one of the most classic no-car island choices in Greece. It is perfect for a short stylish break, walking, harbor views and a relaxed rhythm.",
+          el: "Η Ύδρα είναι ίσως η πιο κλασική επιλογή νησιού χωρίς αυτοκίνητο στην Ελλάδα. Είναι ιδανική για μια σύντομη, κομψή απόδραση, περπάτημα, θέα στο λιμάνι και χαλαρούς ρυθμούς."
+        }
+      },
+      {
+        title: { en: "Spetses", el: "Σπέτσες" },
+        content: {
+          en: "Spetses also works well for travelers who want a polished island atmosphere without depending heavily on a car.",
+          el: "Οι Σπέτσες είναι επίσης εξαιρετικές για ταξιδιώτες που αναζητούν μια προσεγμένη νησιωτική ατμόσφαιρα χωρίς να εξαρτώνται έντονα από το αυτοκίνητο."
+        }
+      },
+      {
+        title: { en: "Schinoussa", el: "Σχοινούσα" },
+        content: {
+          en: "Schinoussa is one of the strongest examples of a small Greek island where a car is often unnecessary. Official destination information even notes that you do not need a car there because the island is very small.",
+          el: "Η Σχοινούσα είναι ένα από τα καλύτερα παραδείγματα μικρού νησιού όπου το αυτοκίνητο είναι συνήθως περιττό. Οι επίσημες πληροφορίες τονίζουν πως δεν θα το χρειαστείτε, καθώς το νησί περπατιέται εύκολα."
+        }
+      },
+      {
+        title: { en: "Naxos Town-based stay", el: "Διαμονή στη Χώρα της Νάξου" },
+        content: {
+          en: "While Naxos is larger overall, a traveler staying strategically near town and key beaches can still enjoy part of the island without renting a car.",
+          el: "Αν και η Νάξος είναι αρκετά μεγάλη, μπορείτε να μείνετε στρατηγικά κοντά στη Χώρα ή σε βασικές παραλίες και να απολαύσετε τμήματά της χωρίς να νοικιάσετε αυτοκίνητο."
+        }
+      },
+      {
+        title: { en: "Best Car-Free Trips Summary", el: "Σύνοψη για Ταξίδια Χωρίς Αυτοκίνητο" },
+        content: {
+          en: "For couples: Hydra or Santorini town-based stay.\nFor slow travel: Schinoussa.\nFor a short trip from Athens: Hydra or Spetses.\nFor first-timers: a compact island with a walkable base.",
+          el: "Για ζευγάρια: Ύδρα ή διαμονή στις πόλεις της Σαντορίνης.\nΓια slow travel: Σχοινούσα.\nΓια σύντομη απόδραση από την Αθήνα: Ύδρα ή Σπέτσες.\nΓια πρώτη φορά: ένα μαζεμένο νησί με βάση που περπατιέται."
+        }
+      },
+      {
+        title: { en: "Car-Free Conclusion", el: "Συμπέρασμα" },
+        content: {
+          en: "The best Greek islands without a car are not always the biggest or most famous. They are the ones where distances stay manageable, the main base is walkable and the whole trip feels simple. For many travelers, that simplicity is part of the charm.",
+          el: "Τα καλύτερα νησιά χωρίς αυτοκίνητο δεν είναι πάντα τα πιο μεγάλα ή τα πιο διάσημα. Είναι εκείνα όπου οι αποστάσεις είναι διαχειρίσιμες, η κεντρική βάση προσβάσιμη με τα πόδια, και όλο το ταξίδι αποπνέει απλότητα. Αυτή η απλότητα αποτελεί μέρος της μαγείας."
+        }
+      }
+    ]
+  },
+  {
+    slug: "first-time-in-greece",
+    title: { 
+      en: "Best Greek Islands for First-Time Visitors", 
+      el: "Τα Καλύτερα Ελληνικά Νησιά για Πρώτη Φορά" 
+    },
+    description: { 
+      en: "Discover the best Greek islands for first-time visitors, from iconic Santorini and Mykonos to easy, relaxed and family-friendly island choices for a first trip to Greece.", 
+      el: "Ανακαλύψτε τα καλύτερα ελληνικά νησιά για την πρώτη σας επίσκεψη, από τη διάσημη Σαντορίνη και τη Μύκονο μέχρι πιο εύκολες και χαλαρές επιλογές για οικογένειες." 
+    },
+    image: "/images/hero-greece.webp",
+    overview: {
+      en: "Planning your first trip to Greece can feel exciting and slightly overwhelming. With thousands of islands and very different travel styles, the hardest part is often knowing exactly where to begin. Some islands are world-famous for dramatic sunsets and luxury, others are celebrated for endless sandy beaches and easy-going family holidays, while others offer unspoiled local charm and slower travel. While the Greek ferry network beautifully connects the mainland with the Aegean and Ionian seas, picking the perfect first island matters much more than trying to squeeze everything into one frantic itinerary. This guide provides a clear, practical starting point tailored to the kind of experience you actually want to have.",
+      el: "Ο σχεδιασμός του πρώτου σας ταξιδιού στην Ελλάδα μπορεί να σας φαίνεται συναρπαστικός, αλλά ίσως και ελαφρώς χαοτικός. Με τόσα πολλά νησιά και εντελώς διαφορετικά στιλ διακοπών, το πιο δύσκολο κομμάτι είναι συχνά το να ξέρεις από πού ακριβώς να ξεκινήσεις. Κάποια νησιά φημίζονται σε όλο τον κόσμο για τα ηλιοβασιλέματα και την πολυτέλεια, άλλα για τις αμμώδεις παραλίες και τις χαλαρές οικογενειακές διακοπές, ενώ άλλα προσφέρουν αυθεντική τοπική γοητεία. Αν και τα πλοία συνδέουν υπέροχα τα νησιά μεταξύ τους, το να επιλέξετε τον σωστό πρώτο προορισμό είναι πολύ πιο σημαντικό από το να προσπαθήσετε να δείτε τα πάντα με τη μία. Αυτός ο οδηγός αποτελεί ένα ξεκάθαρο, πρακτικό σημείο εκκίνησης, προσαρμοσμένο στο είδος των διακοπών που πραγματικά θέλετε να ζήσετε."
+    },
+    points: {
+      en: [
+        "For romance and iconic views, choose Santorini.",
+        "For cosmopolitan energy and nightlife, choose Mykonos.",
+        "For greenery, beaches and variety, choose Corfu.",
+        "For a complete trip and total flexibility, choose Crete."
+      ],
+      el: [
+        "Για ρομαντισμό και την απόλυτη θέα, επίλεξε τη Σαντορίνη.",
+        "Για κοσμοπολίτικο αέρα και έντονη ζωή, επίλεξε τη Μύκονο.",
+        "Για πράσινα τοπία, παραλίες και φινέτσα, επίλεξε την Κέρκυρα.",
+        "Για μια ολοκληρωμένη εμπειρία και ανεξαρτησία, επίλεξε την Κρήτη."
+      ]
+    },
+    sections: [
+      {
+        title: { en: "1. Santorini: Best for iconic views", el: "1. Σαντορίνη: Το απόλυτο ηφαιστειακό τοπίο" },
+        content: {
+          en: "Santorini stands out as one of the most famous islands in Greece and remains a dream destination for almost all first-time visitors. Its breathtaking caldera views, dramatic cliffs lined with whitewashed cubic houses, and unique volcanic landscape make it feel unlike anywhere else. It is undeniably ideal for couples, honeymooners, and travelers who want their first Greek island experience to feel unforgettable and highly photographic right from the start. Santorini works best when you want stunning scenery, memorable sunsets, romantic boutique stays, and a shorter, high-impact trip.",
+          el: "Η Σαντορίνη ξεχωρίζει ως ένα από τα πιο διάσημα νησιά της Ελλάδας και παραμένει ονειρικός προορισμός για σχεδόν όλους όσους έρχονται για πρώτη φορά. Η εκπληκτική θέα στην καλντέρα, οι δραματικοί γκρεμοί με τα ολόλευκα σπίτια και το μοναδικό ηφαιστειακό τοπίο της δίνουν μια αίσθηση που δεν συναντάς πουθενά αλλού. Είναι αναμφισβήτητα ιδανική για ζευγάρια, ταξίδια του μέλιτος και επισκέπτες που θέλουν η πρώτη τους επαφή με τα ελληνικά νησιά να είναι αξέχαστη. Ταιριάζει απόλυτα αν αναζητάς εντυπωσιακά τοπία, πολυτελή boutique ξενοδοχεία και ένα σύντομο ταξίδι γεμάτο δυνατές εικόνες."
+        }
+      },
+      {
+        title: { en: "2. Mykonos: Best for cosmopolitan energy", el: "2. Μύκονος: Για κοσμοπολίτικο αέρα και στιλ" },
+        content: {
+          en: "Mykonos is the ultimate Greek island for first-time visitors seeking glamorous, lively, and socially energetic holidays. It is internationally renowned for its stylish beach clubs, cutting-edge nightlife, luxury accommodations, and a vibrant summer atmosphere that never sleeps. Beyond the parties, it offers quintessential Cycladic architecture, charming maze-like alleyways, and incredibly easy access to the sacred island of Delos for history enthusiasts.",
+          el: "Η Μύκονος είναι το απόλυτο ελληνικό νησί για επισκέπτες που αναζητούν λαμπερές, ζωντανές και κοσμοπολίτικες διακοπές. Είναι παγκοσμίως γνωστή για τα στιλάτα beach clubs, την έντονη νυχτερινή ζωή, την πολυτελή διαμονή και την καλοκαιρινή ατμόσφαιρα που δεν κοιμάται ποτέ. Αν εξαιρέσεις τα πάρτι, προσφέρει κλασική κυκλαδίτικη αρχιτεκτονική, μαγευτικά λαβυρινθώδη σοκάκια (όπως τα Ματογιάννια) και πολύ εύκολη πρόσβαση στο ιερό νησί της Δήλου για τους λάτρεις της ιστορίας."
+        }
+      },
+      {
+        title: { en: "3. Corfu: Best for greenery and variety", el: "3. Κέρκυρα: Για πράσινα τοπία και ποικιλία" },
+        content: {
+          en: "Corfu represents one of the easiest and most generous Greek islands for first-time visitors, offering a rich variety of experiences in one effortless trip. You get excellent beaches, an enchanting Venetian old-town with deep historical character, wonderful road-trip opportunities, exceptionally family-friendly resorts, and a softer, greener semi-mountainous Ionian landscape. It feels vastly different from the arid Cyclades and is frequently a stronger choice for travelers who want variety.",
+          el: "Η Κέρκυρα αποτελεί ένα από τα πιο εύκολα και πλούσια ελληνικά νησιά για επισκέπτες, προσφέροντας τεράστια ποικιλία εμπειριών σε ένα μόνο ταξίδι. Διαθέτει εξαιρετικές παραλίες, μια μαγευτική παλιά πόλη με έντονο βενετσιάνικο χαρακτήρα, υπέροχες διαδρομές, θέρετρα φιλικά για οικογένειες και ένα πιο ήπιο, καταπράσινο τοπίο. Η αίσθηση είναι ριζικά διαφορετική από τις άνυδρες Κυκλάδες, καθιστώντας την μια δυνατή επιλογή για όσους θέλουν βλάστηση και πολιτισμό μαζί με άφθονο μπάνιο."
+        }
+      },
+      {
+        title: { en: "4. Crete: Best for a complete trip", el: "4. Κρήτη: Για μια ολοκληρωμένη και ανεξάρτητη εμπειρία" },
+        content: {
+          en: "Crete acts almost as a small continent in itself. It beautifully combines pristine beaches, unbelievable local food, traditional mountain villages, world-class archaeological sites like Knossos, and multiple distinct regions, each with its own personality. For first-time visitors seeking a full, culturally immersive holiday with total flexibility, Crete is undoubtedly one of the safest and most rewarding choices in Greece.",
+          el: "Η Κρήτη λειτουργεί σχεδόν ως μια μικρή χώρα από μόνη της. Συνδυάζει υπέροχα εξωτικές παραλίες, απίστευτο τοπικό φαγητό, παραδοσιακά ορεινά χωριά, παγκοσμίου κήρους αρχαιολογικούς χώρους (όπως η Κνωσός) και πολλές περιοχές με εντελώς διαφορετικό χαρακτήρα. Για όσους έρχονται πρώτη φορά και θέλουν πολυήμερες, γεμάτες διακοπές με απόλυτη ανεξαρτησία, η Κρήτη είναι μια από τις πιο σίγουρες και πλούσιες επιλογές."
+        }
+      },
+      {
+        title: { en: "5. Naxos: Best for a relaxed Cyclades trip", el: "5. Νάξος: Μια ήρεμη κυκλαδίτικη εισαγωγή" },
+        content: {
+          en: "Naxos is an incredibly smart first-island choice for travelers longing for the authentic beauty of the Cyclades without the overwhelming crowds or premium prices of its famous neighbors. It provides long sandy shores, picturesque villages, remarkable farm-to-table dining, and a grounded local rhythm.",
+          el: "Η Νάξος είναι μια εξαιρετικά έξυπνη επιλογή για ταξιδιώτες που αναζητούν την αυθεντική ομορφιά των Κυκλάδων χωρίς τα τεράστια πλήθη και τις υψηλές τιμές άλλων νησιών. Προσφέρει τεράστιες αμμώδεις παραλίες, γραφικά χωριά, εξαιρετικό τοπικό φαγητό και έναν πιο ήρεμο, γειωμένο ρυθμό ζωής, ιδανικό για ζευγάρια και οικογένειες."
+        }
+      },
+      {
+        title: { en: "6. Hydra or Spetses: Best for a short trip from Athens", el: "6. Ύδρα & Σπέτσες: Αποδράσεις δίπλα στην Αθήνα" },
+        content: {
+          en: "If your time is completely tied to Athens, the Argo-Saronic islands are the perfect introductory taste of island life. They are highly popular due to their short ferry rides from Piraeus, offering beautiful waterfronts, deep seafaring heritage, and an immediate escape from the urban rush without complicated logistics.",
+          el: "Αν ο χρόνος σας είναι περιορισμένος και έχετε ως βάση την Αθήνα, τα νησιά του Αργοσαρωνικού προσφέρουν την τέλεια γεύση της νησιωτικής ζωής. Είναι εξαιρετικά δημοφιλή λόγω της κοντινής τους απόστασης από τον Πειραιά, προσφέροντας υπέροχα λιμάνια, έντονη ναυτική παράδοση και μια άμεση αλλαγή σκηνικού χωρίς πολύπλοκες ακτοπλοϊκές διαδρομές."
+        }
+      }
+    ]
+  },
+  {
+    slug: "greece-trip-planning-checklist",
+    title: { 
+      en: "Greece Trip Planning Checklist", 
+      el: "Λίστα Προετοιμασίας Ταξιδιού στην Ελλάδα" 
+    },
+    description: { 
+      en: "A practical Greece trip planning checklist covering flights, ferries, islands, hotels, transport, what to pack and how to organize your first trip smoothly.", 
+      el: "Μια πρακτική λίστα προετοιμασίας για το ταξίδι σας στην Ελλάδα, με συμβουλές για πτήσεις, πλοία, νησιά, ξενοδοχεία, μεταφορές και το τι να πακετάρετε για μια ομαλή εμπειρία." 
+    },
+    image: "/images/hero-greece.webp",
+    overview: {
+      en: "A trip to Greece looks effortless on Instagram, but good planning makes a huge difference. Between flights, ferries, islands, hotel areas and seasonal timing, a little preparation can save both money and stress. Greece can be visited year-round, thanks to its Mediterranean climate, but the experience changes a lot depending on the season and destination. Ferry services also run throughout the year, with much denser schedules from March to October. This checklist covers the practical steps that matter most before you travel.",
+      el: "Ένα ταξίδι στην Ελλάδα φαίνεται εύκολο στο Instagram, αλλά ο σωστός προγραμματισμός κάνει τεράστια διαφορά. Ανάμεσα σε πτήσεις, πλοία, επιλογή νησιών, περιοχές ξενοδοχείων και την κατάλληλη εποχή, λίγη προετοιμασία μπορεί να σας γλιτώσει χρήματα και άγχος. Η Ελλάδα είναι προσβάσιμη όλο τον χρόνο, χάρη στο μεσογειακό κλίμα της, αλλά η εμπειρία αλλάζει πολύ ανάλογα με την εποχή και τον προορισμό. Τα ακτοπλοϊκά δρομολόγια εκτελούνται επίσης όλο τον χρόνο, με πολύ μεγαλύτερη συχνότητα από τον Μάρτιο έως τον Οκτώβριο. Αυτή η λίστα καλύπτει τα πιο σημαντικά πρακτικά βήματα πριν ταξιδέψετε."
+    },
+    points: {
+      en: [
+        "Decide what kind of Greece trip you want",
+        "Choose the best travel month",
+        "Keep your itinerary realistic",
+        "Book ferries and transport early for summer",
+        "Choose the right hotel area, not just the right island",
+        "Check how much local transport you will need",
+        "Build around your arrival and departure points",
+        "Pack for sun, movement and mixed surfaces",
+        "Save your key bookings and timings offline",
+        "Leave room for Greece to surprise you"
+      ],
+      el: [
+        "Αποφασίστε τι είδους ταξίδι θέλετε",
+        "Επιλέξτε τον καλύτερο μήνα ταξιδιού",
+        "Διατηρήστε το πρόγραμμά σας ρεαλιστικό",
+        "Κλείστε νωρίς πλοία και μεταφορές για το καλοκαίρι",
+        "Επιλέξτε τη σωστή περιοχή, όχι μόνο το νησί",
+        "Ελέγξτε τις ανάγκες σας για τοπικές μετακινήσεις",
+        "Χτίστε το πλάνο σας γύρω από τις πτήσεις σας",
+        "Πακετάρετε σωστά για ήλιο και περπάτημα",
+        "Κρατήστε τις κρατήσεις σας offline",
+        "Αφήστε περιθώριο για εκπλήξεις"
+      ]
+    },
+    sections: [
+      {
+        title: { en: "1. Decide what kind of Greece trip you want", el: "1. Αποφασίστε τι είδους ταξίδι θέλετε" },
+        content: {
+          en: "Before choosing islands or hotels, decide what kind of holiday you actually want: island hopping, one island plus Athens, family beach holiday, road trip on the mainland, romantic escape, or a food-focused trip. This decision affects almost everything else, from budget to transport.",
+          el: "Πριν επιλέξετε νησιά ή ξενοδοχεία, αποφασίστε τι είδους διακοπές πραγματικά θέλετε: island hopping, ένα νησί και Αθήνα, οικογενειακές διακοπές στην παραλία, road trip στην ηπειρωτική χώρα, μια ρομαντική απόδραση ή ένα ταξίδι με επίκεντρο το φαγητό. Αυτή η απόφαση επηρεάζει σχεδόν τα πάντα, από τον προϋπολογισμό μέχρι τις μετακινήσεις."
+        }
+      },
+      {
+        title: { en: "2. Choose the best travel month", el: "2. Επιλέξτε τον καλύτερο μήνα" },
+        content: {
+          en: "Greece is sunny for much of the year, but not every month suits every traveler. Summer brings heat, beach life and peak island energy. Shoulder season is often better for sightseeing, easier logistics and a more balanced experience. Winter can work well for cities, culture and slower travel, while many islands are much quieter and ferry connections are reduced.",
+          el: "Η Ελλάδα έχει ήλιο σχεδόν όλο τον χρόνο, αλλά δεν ταιριάζουν όλοι οι μήνες σε κάθε ταξιδιώτη. Το καλοκαίρι φέρνει ζέστη, ζωή στην παραλία και έντονη ενέργεια στα νησιά. Οι ενδιάμεσες εποχές (άνοιξη, φθινόπωρο) είναι συχνά καλύτερες για αξιοθέατα, ευκολότερες μετακινήσεις και μια πιο ισορροπημένη εμπειρία. Ο χειμώνας είναι ιδανικός για πόλεις, πολιτισμό και πιο χαλαρό ρυθμό, ενώ πολλά νησιά είναι πολύ πιο ήσυχα και τα ακτοπλοϊκά μειώνονται."
+        }
+      },
+      {
+        title: { en: "3. Keep your itinerary realistic", el: "3. Διατηρήστε το πρόγραμμά σας ρεαλιστικό" },
+        content: {
+          en: "One of the biggest mistakes in Greece is trying to do too much. For a 7-day trip, one or two bases are usually enough. For 10 days, you can combine Athens with one or two islands, or do a more relaxed island pairing. The goal is not to collect destinations but to enjoy them.",
+          el: "Ένα από τα μεγαλύτερα λάθη στην Ελλάδα είναι να προσπαθείς να κάνεις πάρα πολλά. Για ένα ταξίδι 7 ημερών, μία ή δύο βάσεις είναι συνήθως αρκετές. Για 10 ημέρες, μπορείτε να συνδυάσετε την Αθήνα με ένα ή δύο νησιά, ή να κάνετε έναν πιο χαλαρό συνδυασμό νησιών. Ο στόχος δεν είναι να συλλέξετε προορισμούς αλλά να τους απολαύσετε."
+        }
+      },
+      {
+        title: { en: "4. Book ferries and transport early for summer", el: "4. Κλείστε πλοία και μεταφορές νωρίς για το καλοκαίρι" },
+        content: {
+          en: "Greece has a strong sea network and regular island connections, but summer routes are busier and the most convenient options can sell out or become expensive. If your trip depends on specific ferry times, book ahead.",
+          el: "Η Ελλάδα διαθέτει ένα ισχυρό ακτοπλοϊκό δίκτυο και τακτικές συνδέσεις νησιών, αλλά τα καλοκαιρινά δρομολόγια είναι πιο γεμάτα και οι πιο βολικές επιλογές μπορεί να εξαντληθούν ή να γίνουν ακριβές. Αν το ταξίδι σας εξαρτάται από συγκεκριμένες ώρες πλοίων, κάντε κράτηση από νωρίς."
+        }
+      },
+      {
+        title: { en: "5. Choose the right hotel area, not just the right island", el: "5. Επιλέξτε τη σωστή περιοχή, όχι μόνο το σωστό νησί" },
+        content: {
+          en: "Many travelers spend too much time choosing the island and too little time choosing the area. In Greece, hotel location shapes your whole trip. The right area can give you easier beach access, better sunset views, fewer car needs or a quieter family base.",
+          el: "Πολλοί ταξιδιώτες αφιερώνουν πολύ χρόνο για να επιλέξουν νησί και πολύ λίγο για να επιλέξουν περιοχή. Στην Ελλάδα, η τοποθεσία του ξενοδοχείου καθορίζει όλο το ταξίδι σας. Η σωστή περιοχή μπορεί να σας προσφέρει ευκολότερη πρόσβαση σε παραλία, καλύτερη θέα στο ηλιοβασίλεμα, λιγότερη ανάγκη για αυτοκίνητο ή μια πιο ήσυχη οικογενειακή βάση."
+        }
+      },
+      {
+        title: { en: "6. Check how much local transport you will need", el: "6. Ελέγξτε τις ανάγκες σας για τοπικές μετακινήσεις" },
+        content: {
+          en: "Some islands work well without a car. Others are much easier with one, especially if you want remote beaches, villages or flexible sightseeing. This is one of the most important decisions in trip planning and affects both budget and comfort.",
+          el: "Μερικά νησιά προσφέρονται και χωρίς αυτοκίνητο. Άλλα είναι πολύ πιο εύκολα με ένα όχημα, ειδικά αν θέλετε απομακρυσμένες παραλίες, χωριά ή ευελιξία στα αξιοθέατα. Αυτή είναι μια από τις πιο σημαντικές αποφάσεις στον σχεδιασμό και επηρεάζει τόσο τον προϋπολογισμό όσο και την άνεση."
+        }
+      },
+      {
+        title: { en: "7. Build around your arrival and departure points", el: "7. Χτίστε το πρόγραμμά σας γύρω από τις πτήσεις σας" },
+        content: {
+          en: "If you land in Athens, it often makes sense to pair the city with nearby islands or one efficient island route. If you fly directly to an island, your itinerary should stay simpler. Good Greece planning is really about reducing unnecessary transit.",
+          el: "Εάν προσγειωθείτε στην Αθήνα, έχει συχνά νόημα να συνδυάσετε την πόλη με κοντινά νησιά ή μια ομαλή νησιωτική διαδρομή. Αν πετάτε απευθείας σε ένα νησί, το πρόγραμμά σας θα πρέπει να παραμείνει πιο απλό. Ο καλός προγραμματισμός έχει να κάνει ουσιαστικά με τη μείωση των περιττών μετακινήσεων."
+        }
+      },
+      {
+        title: { en: "8. Pack for sun, movement and mixed surfaces", el: "8. Πακετάρετε σωστά για ήλιο και περπάτημα" },
+        content: {
+          en: "Even elegant Greek trips involve stairs, uneven streets, ports, beaches and lots of walking. Pack light, bring good shoes, sun protection and clothing that works for heat and wind. On some islands, evenings can feel breezy even in summer.",
+          el: "Ακόμα και τα πιο κομψά ελληνικά ταξίδια περιλαμβάνουν σκάλες, ανώμαλους δρόμους, λιμάνια, παραλίες και πολύ περπάτημα. Πακετάρετε ελαφριά, φέρτε καλά παπούτσια, αντηλιακή προστασία και ρούχα που είναι βολικά για ζέστη αλλά και άνεμο. Σε ορισμένα νησιά, τα βράδια μπορεί να έχουν αρκετό αεράκι ακόμα και το καλοκαίρι."
+        }
+      },
+      {
+        title: { en: "9. Save your key bookings and timings offline", el: "9. Κρατήστε τις κρατήσεις σας offline" },
+        content: {
+          en: "Keep screenshots or offline copies of flights, ferries, hotel details and transfer information. This is especially useful when moving between islands.",
+          el: "Κρατήστε screenshots ή offline αντίγραφα των πτήσεων, πλοίων, λεπτομερειών ξενοδοχείων και πληροφοριών μεταφοράς. Αυτό είναι ιδιαίτερα χρήσιμο όταν μετακινείστε μεταξύ νησιών όπου ίσως δεν έχετε καλές ταχύτητες internet."
+        }
+      },
+      {
+        title: { en: "10. Leave room for Greece to surprise you", el: "10. Αφήστε περιθώριο για εκπλήξεις" },
+        content: {
+          en: "The best trips in Greece usually include some flexibility: a slower lunch in a village, an extra swim stop, a beach you had not planned, or a local recommendation that changes your day.",
+          el: "Τα καλύτερα ταξίδια στην Ελλάδα συνήθως περιλαμβάνουν κάποια ευελιξία: ένα πιο αργό και ξεκούραστο γεύμα σε ένα χωριό, μια επιπλέον στάση για κολύμπι, μια παραλία που δεν είχατε σχεδιάσει, ή μια τοπική σύσταση που αλλάζει τη μέρα σας."
+        }
+      },
+      {
+        title: { en: "Conclusion", el: "Συμπέρασμα" },
+        content: {
+          en: "The best Greece trips are not the ones with the most stops. They are the ones that fit your pace, your season and your style. A practical checklist helps you spend less time stressing about logistics and more time enjoying what Greece does best: sea, food, scenery, culture and that easy Mediterranean feeling.",
+          el: "Τα καλύτερα ταξίδια στην Ελλάδα δεν είναι αυτά με τις περισσότερες στάσεις. Είναι αυτά που ταιριάζουν στον ρυθμό, την εποχή και το στιλ σας. Μια πρακτική λίστα προετοιμασίας σας βοηθά να ξοδεύετε λιγότερο χρόνο αγχωμένοι για τα οργανωτικά και περισσότερο χρόνο απολαμβάνοντας ό,τι κάνει καλύτερα η Ελλάδα: θάλασσα, φαγητό, τοπία, πολιτισμό και εκείνη την εύκολη μεσογειακή αίσθηση."
+        }
+      }
+    ]
+  },
+  {
+    slug: "7-and-10-days-in-greece",
+    title: { 
+      en: "7 Days in Greece / 10 Days in Greece", 
+      el: "7 Ημέρες στην Ελλάδα / 10 Ημέρες στην Ελλάδα" 
+    },
+    description: { 
+      en: "A realistic 7 or 10-day Greece itinerary for first-time visitors, with ideas for Athens plus islands, family travel, and relaxed routes.", 
+      el: "Ρεαλιστικά προγράμματα 7 ή 10 ημερών στην Ελλάδα για πρώτη φορά, με πρακτικές ιδέες για Αθήνα και νησιά." 
+    },
+    image: "/images/hero-greece.webp",
+    overview: {
+      en: "Seven days in Greece is enough for a memorable first trip, but not enough to see everything. The smartest way to plan one week is to keep your route simple and focus on quality over quantity. Greece’s island network makes multi-stop travel possible, but a short trip works best when built around two bases at most.\n\nTen days gives you much more flexibility in Greece. It is long enough to combine Athens with two islands, or to slow down and explore one larger destination properly. Because ferry and island connections become more frequent from spring through autumn, this timeframe works especially well for first-time island combinations.",
+      el: "Επτά ημέρες στην Ελλάδα είναι αρκετές για ένα αξέχαστο πρώτο ταξίδι, αλλά όχι για να τα δείτε όλα. Ο πιο έξυπνος τρόπος να οργανώσετε μια εβδομάδα είναι να διατηρήσετε μια απλή διαδρομή και να δώσετε έμφαση στην ποιότητα και όχι στην ποσότητα. Το δίκτυο των νησιών επιτρέπει μετακινήσεις, αλλά ένα σύντομο ταξίδι είναι καλύτερο όταν βασίζεται σε δύο το πολύ βάσεις.\n\nΔέκα ημέρες σας δίνουν πολύ μεγαλύτερη ευελιξία. Είναι αρκετός χρόνος για να συνδυάσετε την Αθήνα με δύο νησιά ή να επιβραδύνετε. Επειδή οι συνδέσεις γίνονται πιο συχνές από την άνοιξη έως το φθινόπωρο, αυτό το χρονικό πλαίσιο είναι ιδανικό."
+    },
+    points: {
+      en: [
+        "7 Days Option 1: Athens + Santorini",
+        "7 Days Option 2: Athens + Mykonos",
+        "7 Days Option 3: One island only",
+        "10 Days Option 1: Athens + Santorini + Naxos",
+        "10 Days Option 2: Athens + Mykonos + Paros",
+        "10 Days Option 3: Crete only + one city night",
+        "10 Days Option 4: Corfu + mainland extension"
+      ],
+      el: [
+        "7 Ημέρες: Αθήνα + Σαντορίνη",
+        "7 Ημέρες: Αθήνα + Μύκονος",
+        "7 Ημέρες: Μόνο ένα νησί",
+        "10 Ημέρες: Αθήνα + Σαντορίνη + Νάξος",
+        "10 Ημέρες: Αθήνα + Μύκονος + Πάρος",
+        "10 Ημέρες: Μόνο Κρήτη",
+        "10 Ημέρες: Κέρκυρα + ηπειρωτική χώρα"
+      ]
+    },
+    sections: [
+      {
+        title: { en: "7 Days Option 1: Athens + Santorini", el: "7 Ημέρες - Επιλογή 1: Αθήνα + Σαντορίνη" },
+        content: {
+          en: "This is the classic first trip to Greece. Spend two to three days in Athens for history and city life, then fly or ferry to Santorini for views, sunset evenings and a strong Cycladic finish. Santorini is one of Greece’s most iconic islands and works especially well for couples and first-time visitors who want a high-impact experience.",
+          el: "Αυτό είναι το κλασικό πρώτο ταξίδι στην Ελλάδα. Περάστε δύο με τρεις ημέρες στην Αθήνα για την ιστορία και τη ζωή της πόλης, και στη συνέχεια πετάξτε ή πάρτε πλοίο για τη Σαντορίνη για τη θέα, τα ηλιοβασιλέματα και ένα δυνατό κυκλαδίτικο φινάλε. Η Σαντορίνη είναι ένα από τα πιο εμβληματικά νησιά και λειτουργεί εξαιρετικά για ζευγάρια."
+        }
+      },
+      {
+        title: { en: "7 Days Option 2: Athens + Mykonos", el: "7 Ημέρες - Επιλογή 2: Αθήνα + Μύκονος" },
+        content: {
+          en: "This version works for travelers who want city, beach clubs, stylish stays and summer energy. Mykonos is known for its cosmopolitan atmosphere, beach lifestyle and nightlife.",
+          el: "Αυτή η εκδοχή ταιριάζει σε ταξιδιώτες που θέλουν πόλη, beach clubs, στιλάτη διαμονή και καλοκαιρινή ενέργεια. Η Μύκονος φημίζεται για την κοσμοπολίτικη ατμόσφαιρα, τον τρόπο ζωής στην παραλία και τη νυχτερινή της ζωή."
+        }
+      },
+      {
+        title: { en: "7 Days Option 3: One island only", el: "7 Ημέρες - Επιλογή 3: Μόνο ένα νησί" },
+        content: {
+          en: "If you dislike moving around, choose one island and stay longer. Crete and Corfu are especially good for a one-island week because they offer enough variety for beaches, towns, food and day trips.",
+          el: "Εάν δεν σας αρέσουν οι συνεχείς μετακινήσεις, επιλέξτε ένα νησί και μείνετε περισσότερο. Η Κρήτη και η Κέρκυρα είναι ιδιαίτερα καλές επιλογές για μια εβδομάδα σε ένα μόνο νησί, καθώς προσφέρουν αρκετή ποικιλία σε παραλίες, πόλεις, φαγητό και μονοήμερες εκδρομές."
+        }
+      },
+      {
+        title: { en: "Sample 7-day flow", el: "Ενδεικτικό πρόγραμμα 7 ημερών" },
+        content: {
+          en: "Day 1–2: Athens\nDay 3: travel to island\nDay 4–6: island stay\nDay 7: return or final overnight",
+          el: "Ημέρα 1–2: Αθήνα\nΗμέρα 3: Ταξίδι στο νησί\nΗμέρα 4–6: Παραμονή στο νησί\nΗμέρα 7: Επιστροφή ή τελευταία διανυκτέρευση"
+        }
+      },
+      {
+        title: { en: "7 Days Conclusion", el: "Συμπέρασμα 7 Ημερών" },
+        content: {
+          en: "A 7-day Greece trip should feel easy, not overpacked. One city plus one island, or one island only, is usually the best formula.",
+          el: "Ένα ταξίδι 7 ημερών στην Ελλάδα πρέπει να είναι χαλαρό και όχι ασφυκτικά γεμάτο. Μία πόλη συν ένα νησί, ή μόνο ένα νησί, είναι συνήθως η καλύτερη συνταγή."
+        }
+      },
+      {
+        title: { en: "10 Days Option 1: Athens + Santorini + Naxos", el: "10 Ημέρες - Επιλογή 1: Αθήνα + Σαντορίνη + Νάξος" },
+        content: {
+          en: "A balanced first trip with iconic scenery and a calmer island contrast.",
+          el: "Ένα ισορροπημένο πρώτο ταξίδι με εντυπωσιακά τοπία και πιο ήρεμη νησιωτική αντίθεση."
+        }
+      },
+      {
+        title: { en: "10 Days Option 2: Athens + Mykonos + Paros", el: "10 Ημέρες - Επιλογή 2: Αθήνα + Μύκονος + Πάρος" },
+        content: {
+          en: "Best for stylish summer travel with beaches, food and a social atmosphere.",
+          el: "Ιδανικό για στιλάτα καλοκαιρινά ταξίδια με παραλίες, φαγητό και έντονη κοινωνική ατμόσφαιρα."
+        }
+      },
+      {
+        title: { en: "10 Days Option 3: Crete only + one city night", el: "10 Ημέρες - Επιλογή 3: Μόνο Κρήτη + μία νύχτα στην πόλη" },
+        content: {
+          en: "Perfect for travelers who want beaches, food, villages and less transit.",
+          el: "Τέλειο για ταξιδιώτες που θέλουν παραλίες, φαγητό, χωριά και λιγότερες μετακινήσεις."
+        }
+      },
+      {
+        title: { en: "10 Days Option 4: Corfu + mainland extension", el: "10 Ημέρες - Επιλογή 4: Κέρκυρα + επέκταση στην ηπειρωτική χώρα" },
+        content: {
+          en: "A strong choice for green scenery, culture and a slightly different side of Greece.",
+          el: "Μια δυνατή επιλογή για καταπράσινα τοπία, πολιτισμό και μια ελαφρώς διαφορετική πλευρά της Ελλάδας."
+        }
+      },
+      {
+        title: { en: "10 Days Conclusion", el: "Συμπέρασμα 10 Ημερών" },
+        content: {
+          en: "Ten days is where Greece starts to breathe. You have time to see more, but still not so much time that you should overcomplicate things. Keep two or three bases maximum and let each destination actually feel lived in.",
+          el: "Στις δέκα ημέρες η Ελλάδα αρχίζει να αναπνέει. Έχετε χρόνο να δείτε περισσότερα, αλλά όχι τόσο πολύ χρόνο που να περιπλέξετε τα πράγματα. Κρατήστε το πολύ δύο ή τρεις βάσεις και νιώστε ουσιαστικά κάθε προορισμό."
+        }
+      }
+    ]
+  },
+  {
+    slug: "family-travel-in-greece",
+    title: { en: "Family Travel in Greece", el: "Οικογενειακές Διακοπές στην Ελλάδα" },
+    description: { 
+      en: "Plan family travel in Greece with ideas for beaches, easy destinations, island choices, museums, food and practical tips for smoother holidays with kids.", 
+      el: "Οργανώστε τις οικογενειακές διακοπές σας στην Ελλάδα με ιδέες για παραλίες, εύκολους προορισμούς, νησιά, μουσεία, φαγητό και πρακτικές συμβουλές." 
+    },
+    image: "/images/hero-greece.webp",
+    overview: {
+      en: "Greece is one of the best family holiday destinations in Europe because it combines sea, food, warm weather, local hospitality and a wide choice of destinations. Official tourism guidance highlights the Greek islands, Crete and Halkidiki among the strongest family travel options, with safe swimming areas, museums, marine parks and outdoor activities all adding to the appeal.",
+      el: "Η Ελλάδα είναι ένας από τους καλύτερους προορισμούς για οικογενειακές διακοπές στην Ευρώπη επειδή συνδυάζει θάλασσα, φαγητό, ζεστό καιρό, τοπική φιλοξενία και μεγάλη ποικιλία προορισμών. Οι ταξιδιωτικοί οδηγοί ξεχωρίζουν τα ελληνικά νησιά, την Κρήτη και τη Χαλκιδική ως τις πιο δυνατές επιλογές για οικογένειες, με ασφαλείς παραλίες, μουσεία, θαλάσσια πάρκα και υπαίθριες δραστηριότητες που ενισχύουν την εμπειρία."
+    },
+    points: {
+      en: [
+        "Beach-led holidays with safe swimming areas",
+        "Simple food children usually enjoy",
+        "Outdoor living and exploration",
+        "Family-friendly accommodation options"
+      ],
+      el: [
+        "Διακοπές επικεντρωμένες στην παραλία με ασφαλή νερά",
+        "Απλό και νόστιμο φαγητό που αρέσει στα παιδιά",
+        "Υπαίθρια ζωή και εξερεύνηση στη φύση",
+        "Καταλύματα φιλικά προς τις οικογένειες"
+      ]
+    },
+    sections: [
+      {
+        title: { en: "Crete", el: "Κρήτη" },
+        content: {
+          en: "Great for beaches, space, food and longer stays.",
+          el: "Ιδανική για παραλίες, άπλα, καταπληκτικό φαγητό και μεγαλύτερης διάρκειας παραμονή."
+        }
+      },
+      {
+        title: { en: "Corfu", el: "Κέρκυρα" },
+        content: {
+          en: "Strong for varied family holidays with town, beaches and green scenery.",
+          el: "Εξαιρετική για ποικίλες οικογενειακές διακοπές με πόλη, παραλίες και καταπράσινα τοπία."
+        }
+      },
+      {
+        title: { en: "Naxos", el: "Νάξος" },
+        content: {
+          en: "A relaxed island option with easier pace.",
+          el: "Μια χαλαρή επιλογή νησιού με πιο ήρεμους ρυθμούς."
+        }
+      },
+      {
+        title: { en: "Halkidiki", el: "Χαλκιδική" },
+        content: {
+          en: "A very strong mainland beach option for families.",
+          el: "Μια πολύ δυνατή επιλογή για οικογένειες στην ηπειρωτική χώρα."
+        }
+      },
+      {
+        title: { en: "Family travel tips", el: "Συμβουλές για οικογενειακά ταξίδια" },
+        content: {
+          en: "Keep transfers simple. Avoid too many hotel changes. Prioritize beach access over “famous name” destinations. Choose walkable areas when possible limit transit time, and travel slightly outside peak summer if you want easier pacing.",
+          el: "Κρατήστε τις μετακινήσεις απλές. Αποφύγετε τις πολλές αλλαγές ξενοδοχείων. Δώστε προτεραιότητα στην εύκολη πρόσβαση σε παραλίες αντί για υπερβολικά προβεβλημένους προορισμούς. Προτιμήστε περιοχές που περπατιούνται εύκολα και ταξιδέψτε ελαφρώς εκτός της ακραίας υψηλής περιόδου για πιο ήσυχο ρυθμό."
+        }
+      },
+      {
+        title: { en: "Conclusion", el: "Συμπέρασμα" },
+        content: {
+          en: "Family travel in Greece works best when the trip is built around ease: easier beaches, easier meals, easier movement and enough flexibility for rest. Greece is at its best for families when the itinerary feels light and enjoyable rather than overplanned.",
+          el: "Τα οικογενειακά ταξίδια στην Ελλάδα πετυχαίνουν περισσότερο όταν το ταξίδι χτίζεται γύρω από την ευκολία: εύκολες παραλίες, εύκολα γεύματα, εύκολες μετακινήσεις και αρκετή ευελιξία για ξεκούραση. Η Ελλάδα είναι στα καλύτερά της για τις οικογένειες όταν το πρόγραμμα είναι χαλαρό και απολαυστικό αντί για υπερβολικά φορτωμένο."
+        }
+      }
+    ]
+  },
+  {
+    slug: "santorini-vs-mykonos",
+    title: { en: "Santorini vs Mykonos", el: "Σαντορίνη vs Μύκονος" },
+    description: { 
+      en: "Compare Santorini vs Mykonos for first-time visitors, couples, nightlife, beaches, scenery, costs and travel style to choose the right Greek island.", 
+      el: "Συγκρίνετε τη Σαντορίνη με τη Μύκονο για πρώτη φορά, ζευγάρια, νυχτερινή ζωή, παραλίες, τοπία, κόστος και στιλ ταξιδιού για να επιλέξετε το σωστό νησί." 
+    },
+    image: "/images/hero-greece.webp",
+    overview: {
+      en: "Santorini and Mykonos are the two Greek islands most first-time visitors compare, and for good reason. Both are famous, beautiful and easy to fit into a first island itinerary. But they are not interchangeable. Santorini is built around scenery, caldera views and atmosphere, while Mykonos is better known for cosmopolitan beach culture, luxury and nightlife. Official destination descriptions reflect exactly that contrast.",
+      el: "Η Σαντορίνη και η Μύκονος είναι τα δύο ελληνικά νησιά που συγκρίνουν οι περισσότεροι επισκέπτες για πρώτη φορά, και για καλό λόγο. Και τα δύο είναι διάσημα, πανέμορφα και εύκολα να ενταχθούν σε ένα πρώτο πρόγραμμα. Όμως, δεν είναι το ίδιο πράγμα. Η Σαντορίνη στηρίζεται στο εντυπωσιακό τοπίο, τη θέα στην Καλντέρα και την ατμόσφαιρα, ενώ η Μύκονος είναι γνωστή για την κοσμοπολίτικη κουλτούρα της παραλίας, την πολυτέλεια και τη νυχτερινή ζωή."
+    },
+    points: {
+      en: [
+        "Santorini for dramatic caldera views",
+        "Mykonos for cosmopolitan energy",
+        "Santorini for romantic getaways",
+        "Mykonos for classic soft-sand beaches"
+      ],
+      el: [
+        "Σαντορίνη για δραματική θέα στην Καλντέρα",
+        "Μύκονος για έντονη κοσμοπολίτικη ενέργεια",
+        "Σαντορίνη για ρομαντικές αποδράσεις",
+        "Μύκονος για κλασικές χρυσές αμμουδιές"
+      ]
+    },
+    sections: [
+      {
+        title: { en: "Choose Santorini if you want…", el: "Επιλέξτε τη Σαντορίνη εάν θέλετε..." },
+        content: {
+          en: "Santorini is better for dramatic views, romance, honeymoon feel, unique volcanic landscape, and memorable sunset dinners. It is the island you choose when setting matters most.",
+          el: "Η Σαντορίνη είναι καλύτερη για δραματική θέα, ρομαντισμό, αίσθηση μήνα του μέλιτος, μοναδικό ηφαιστειακό τοπίο και αξέχαστα δείπνα στο ηλιοβασίλεμα. Είναι το νησί που επιλέγετε όταν το σκηνικό μετράει περισσότερο."
+        }
+      },
+      {
+        title: { en: "Choose Mykonos if you want…", el: "Επιλέξτε τη Μύκονο εάν θέλετε..." },
+        content: {
+          en: "Mykonos is better for beach clubs, nightlife, stylish atmosphere, luxury shopping and dining, and social summer energy.",
+          el: "Η Μύκονος είναι καλύτερη για beach clubs, νυχτερινή ζωή, στιλάτη ατμόσφαιρα, πολυτελή ψώνια, φαγητό και έντονη κοινωνική καλοκαιρινή δυναμική."
+        }
+      },
+      {
+        title: { en: "Which island is better for first-time visitors?", el: "Ποιο νησί είναι καλύτερο για πρώτη φορά;" },
+        content: {
+          en: "Santorini is usually better for travelers who want the “wow” factor. Mykonos is usually better for travelers who want energy and lifestyle.\n\nWhich is better for couples? Santorini.\n\nWhich is better for friends? Mykonos.\n\nWhich is better for beaches? Mykonos generally wins for classic beach-day culture, while Santorini is more about the overall landscape than typical soft-sand island expectations.",
+          el: "Η Σαντορίνη είναι συνήθως καλύτερη για ταξιδιώτες που αναζητούν το στοιχείο του εντυπωσιασμού (το 'wow' factor). Η Μύκονος ταιριάζει σε όσους θέλουν κίνηση και lifestyle.\n\nΓια ζευγάρια; Σαντορίνη.\n\nΓια παρέες φίλων; Μύκονος.\n\nΓια παραλίες; Η Μύκονος κερδίζει ξεκάθαρα, ενώ η Σαντορίνη αφορά το συνολικό ηφαιστειακό τοπίο παρά τις κλασικές αμμουδιές."
+        }
+      },
+      {
+        title: { en: "Conclusion", el: "Συμπέρασμα" },
+        content: {
+          en: "Santorini and Mykonos are both strong first-trip choices, but they deliver different versions of Greece. Santorini is about views and atmosphere. Mykonos is about social energy and beach-led lifestyle. The right choice depends less on popularity and more on the kind of trip you want to remember.",
+          el: "Η Σαντορίνη και η Μύκονος είναι δυνατές επιλογές για το πρώτο σας ταξίδι, αλλά προσφέρουν διαφορετικές εκδοχές της Ελλάδας. Η Σαντορίνη επικεντρώνεται στη θέα και την ατμόσφαιρα. Η Μύκονος στην κοινωνική ενέργεια και το lifestyle της παραλίας. Η σωστή επιλογή εξαρτάται από το τι είδους ταξίδι θέλετε να θυμάστε."
         }
       }
     ]
