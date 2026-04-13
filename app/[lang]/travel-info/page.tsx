@@ -154,6 +154,26 @@ export default function TravelInfoHubPage() {
         el: "Σε πολλούς προορισμούς, ναι. Είναι ιδιαίτερα χρήσιμο σε νησιά, χωριά και μέρη όπου τα μέσα μεταφοράς είναι περιορισμένα.",
       },
     },
+    {
+      q: {
+        en: "Is Greece a good destination for family travel?",
+        el: "Είναι η Ελλάδα καλός προορισμός για οικογενειακά ταξίδια;",
+      },
+      a: {
+        en: "Absolutely. Greece is one of Europe's top family destinations. Regions like Crete, Halkidiki, Naxos, and Corfu offer safe, shallow beaches, great food, and plenty of space for a relaxed family trip.",
+        el: "Απόλυτα. Η Ελλάδα είναι από τους κορυφαίους οικογενειακούς προορισμούς στην Ευρώπη. Περιοχές όπως η Κρήτη, η Χαλκιδική, η Νάξος και η Κέρκυρα προσφέρουν ασφαλείς παραλίες, φανταστικό φαγητό και ιδανικό περιβάλλον για ξέγνοιαστες διακοπές.",
+      },
+    },
+    {
+      q: {
+        en: "Which is better for a first trip: Santorini or Mykonos?",
+        el: "Ποιο νησί είναι καλύτερο για πρώτη φορά: Σαντορίνη ή Μύκονος;",
+      },
+      a: {
+        en: "They are very different. Santorini is ideal for breathtaking volcanic views, romantic scenery, and sunsets. Mykonos is perfect for soft-sand beaches, luxury lifestyle, and lively nightlife.",
+        el: "Είναι αρκετά διαφορετικά. Η Σαντορίνη είναι ιδανική για συγκλονιστική ηφαιστειακή θέα, ρομαντισμό και ηλιοβασιλέματα. Η Μύκονος προσφέρεται για χρυσές αμμουδιές, πολυτέλεια και έντονη νυχτερινή ζωή.",
+      },
+    }
   ];
 
   return (
