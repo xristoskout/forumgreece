@@ -497,7 +497,7 @@ export default function HomePageClient({
         el: "Βρες πρακτικές ταξιδιωτικές πληροφορίες για μετακίνηση, εποχές, κρατήσεις και οργάνωση ταξιδιού στην Ελλάδα.",
       },
       href: withLang("/collections/greece-travel-planning"),
-      image: travelInfoGuides[0]?.image || "/images/hero-greece.webp",
+      image: "/images/before-trip.webp",
       eyebrow: { en: "Practical Greece", el: "Χρήσιμη Ελλάδα" },
       tags: {
         en: ["Transport", "Travel Tips", "Planning"],
@@ -779,13 +779,13 @@ export default function HomePageClient({
               <div className="absolute inset-0 bg-transparent transition-opacity duration-700" />
 
               <div className="relative p-7 md:p-8">
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/90 drop-shadow-md">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#000000] text-shadow-premium">
                   {item.eyebrow[lang]}
                 </p>
-                <h3 className="mt-3 max-w-xl text-2xl font-bold leading-tight text-white drop-shadow-lg md:text-3xl">
+                <h3 className="mt-3 max-w-xl text-2xl font-bold leading-tight text-[#000000] text-shadow-premium md:text-3xl">
                   {item.title[lang]}
                 </h3>
-                <p className="mt-4 max-w-2xl text-sm leading-7 text-white/95 drop-shadow-md">
+                <p className="mt-4 max-w-2xl text-sm leading-7 text-[#000000] text-shadow-premium">
                   {item.description[lang]}
                 </p>
 
@@ -793,7 +793,7 @@ export default function HomePageClient({
                   {item.tags[lang].map((tag) => (
                     <span
                       key={tag}
-                      className="border border-white/30 bg-black/25 px-3 py-1 text-xs font-medium text-white backdrop-blur-sm"
+                      className="border border-[#000000]/30 bg-black/25 px-3 py-1 text-xs font-medium text-[#000000] backdrop-blur-sm"
                     >
                       {tag}
                     </span>
