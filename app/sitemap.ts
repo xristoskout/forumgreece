@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next';
-import { destinations, hotels, food, tours } from '../lib/content';
+import { destinations, hotels, food, tours, travelInfoGuides } from '../lib/content';
 import { experienceLandings, experienceBusinesses } from '../lib/experiences';
+import { homeCollectionHubSlugs } from '../lib/home-collection-hubs';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.gogreecenow.com';
@@ -14,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/privacy',
     '/about',
     '/contact',
+    '/focus',
     '/collections/greek-islands',
     '/collections/greece-travel-planning',
     '/collections/greece-tours-and-experiences',
@@ -37,6 +39,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { prefix: '/eat-drink', items: food.map(f => f.slug), priority: 0.8 },
     { prefix: '/tours', items: [...tours.map(t => t.slug), ...experienceLandings.map(l => l.slug)], priority: 0.8 },
     { prefix: '/businesses', items: experienceBusinesses.map(b => b.slug), priority: 0.7 },
+    { prefix: '/travel-info', items: travelInfoGuides.map(g => g.slug), priority: 0.7 },
+    { prefix: '/collections', items: homeCollectionHubSlugs, priority: 0.7 },
   ];
 
   langs.forEach((lang) => {
