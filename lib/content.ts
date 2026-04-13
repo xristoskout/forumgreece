@@ -407,6 +407,23 @@ export const destinations: Destination[] = [
 
 export const travelInfoGuides: GuideCard[] = [
   {
+    slug: "greece-islands-map-guide",
+    title: { en: "Greece Islands Map Guide", el: "Χάρτης & Οδηγός Ελληνικών Νησιών" },
+    description: {
+      en: "The ultimate visual guide to Greek island groups. Understand the map and choose the right region for your trip.",
+      el: "Ο απόλυτος οπτικός οδηγός για τα ελληνικά νησιωτικά συμπλέγματα. Κατανόησε τον χάρτη και διάλεξε τη σωστή περιοχή."
+    },
+    image: "/images/greece-islands-map-guide.webp",
+    overview: {
+      en: "Choosing an island is easier when you see the big picture. This guide breaks down Greece into its natural regions, helping you understand distances, ferry routes and local character.",
+      el: "Η επιλογή νησιού είναι πιο εύκολη όταν βλέπεις τη συνολική εικόνα. Αυτός ο οδηγός μοιράζει την Ελλάδα στις φυσικές της περιοχές, βοηθώντας σε να καταλάβεις αποστάσεις και χαρακτήρα."
+    },
+    points: {
+      en: ["The Cyclades", "The Ionian", "Crete", "The Dodecanese", "The Saronic"],
+      el: ["Κυκλάδες", "Ιόνιο", "Κρήτη", "Δωδεκάνησα", "Σαρωνικός"]
+    }
+  },
+  {
     slug: "how-to-get-to-greece",
     title: { en: "How to get to Greece", el: "Πώς να έρθεις στην Ελλάδα" },
     description: {
@@ -690,8 +707,8 @@ export const travelInfoGuides: GuideCard[] = [
     },
     image: "/images/first-time-greece.webp",
     overview: {
-      en: "Planning your first trip to Greece can feel exciting and slightly overwhelming. With thousands of islands and very different travel styles, the hardest part is often knowing exactly where to begin. Some islands are world-famous for dramatic sunsets and luxury, others are celebrated for endless sandy beaches and easy-going family holidays, while others offer unspoiled local charm and slower travel. While the Greek ferry network beautifully connects the mainland with the Aegean and Ionian seas, picking the perfect first island matters much more than trying to squeeze everything into one frantic itinerary. This guide provides a clear, practical starting point tailored to the kind of experience you actually want to have.",
-      el: "Ο σχεδιασμός του πρώτου σας ταξιδιού στην Ελλάδα μπορεί να σας φαίνεται συναρπαστικός, αλλά ίσως και ελαφρώς χαοτικός. Με τόσα πολλά νησιά και εντελώς διαφορετικά στιλ διακοπών, το πιο δύσκολο κομμάτι είναι συχνά το να ξέρεις από πού ακριβώς να ξεκινήσεις. Κάποια νησιά φημίζονται σε όλο τον κόσμο για τα ηλιοβασιλέματα και την πολυτέλεια, άλλα για τις αμμώδεις παραλίες και τις χαλαρές οικογενειακές διακοπές, ενώ άλλα προσφέρουν αυθεντική τοπική γοητεία. Αν και τα πλοία συνδέουν υπέροχα τα νησιά μεταξύ τους, το να επιλέξετε τον σωστό πρώτο προορισμό είναι πολύ πιο σημαντικό από το να προσπαθήσετε να δείτε τα πάντα με τη μία. Αυτός ο οδηγός αποτελεί ένα ξεκάθαρο, πρακτικό σημείο εκκίνησης, προσαρμοσμένο στο είδος των διακοπών που πραγματικά θέλετε να ζήσετε."
+      en: "Planning your first trip to Greece can feel exciting and slightly overwhelming. With thousands of islands and very different travel styles, the hardest part is often knowing exactly where to begin. Before you dive into specific islands, we recommend starting with our [Greece Islands Map Guide](/travel-info/greece-islands-map-guide) to understand the regional clusters and ferry flow.",
+      el: "Ο σχεδιασμός του πρώτου σας ταξιδιού στην Ελλάδα μπορεί να σας φαίνεται συναρπαστικός, αλλά ίσως και ελαφρώς χαοτικός. Πριν βουτήξετε σε συγκεκριμένα νησιά, σας προτείνουμε να ξεκινήσετε από τον [Χάρτη & Οδηγό Ελληνικών Νησιών](/travel-info/greece-islands-map-guide) για να κατανοήσετε τα συμπλέγματα και τη ροή των πλοίων."
     },
     points: {
       en: [
@@ -885,8 +902,8 @@ export const travelInfoGuides: GuideCard[] = [
     },
     image: "/images/7days10.webp",
     overview: {
-      en: "Seven days in Greece is enough for a memorable first trip, but not enough to see everything. The smartest way to plan one week is to keep your route simple and focus on quality over quantity. Greece’s island network makes multi-stop travel possible, but a short trip works best when built around two bases at most.\n\nTen days gives you much more flexibility in Greece. It is long enough to combine Athens with two islands, or to slow down and explore one larger destination properly. Because ferry and island connections become more frequent from spring through autumn, this timeframe works especially well for first-time island combinations.",
-      el: "Επτά ημέρες στην Ελλάδα είναι αρκετές για ένα αξέχαστο πρώτο ταξίδι, αλλά όχι για να τα δείτε όλα. Ο πιο έξυπνος τρόπος να οργανώσετε μια εβδομάδα είναι να διατηρήσετε μια απλή διαδρομή και να δώσετε έμφαση στην ποιότητα και όχι στην ποσότητα. Το δίκτυο των νησιών επιτρέπει μετακινήσεις, αλλά ένα σύντομο ταξίδι είναι καλύτερο όταν βασίζεται σε δύο το πολύ βάσεις.\n\nΔέκα ημέρες σας δίνουν πολύ μεγαλύτερη ευελιξία. Είναι αρκετός χρόνος για να συνδυάσετε την Αθήνα με δύο νησιά ή να επιβραδύνετε. Επειδή οι συνδέσεις γίνονται πιο συχνές από την άνοιξη έως το φθινόπωρο, αυτό το χρονικό πλαίσιο είναι ιδανικό."
+      en: "Seven days in Greece is enough for a memorable first trip, but not enough to see everything. For a solid start, use our [Greece Islands Map Guide](/travel-info/greece-islands-map-guide) to choose a single island region and keep your transit simple. Quality over quantity is the secret to a great 7 or 10-day itinerary.",
+      el: "Επτά ημέρες στην Ελλάδα είναι αρκετές για ένα αξέχαστο πρώτο ταξίδι. Για ένα σωστό ξεκίνημα, χρησιμοποίησε τον [Χάρτη & Οδηγό Ελληνικών Νησιών](/travel-info/greece-islands-map-guide) για να επιλέξεις ένα μόνο σύμπλεγμα νησιών. Η ποιότητα πάνω από την ποσότητα είναι το μυστικό."
     },
     points: {
       en: [
