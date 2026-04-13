@@ -688,7 +688,7 @@ export const travelInfoGuides: GuideCard[] = [
       en: "Discover the best Greek islands for first-time visitors, from iconic Santorini and Mykonos to easy, relaxed and family-friendly island choices for a first trip to Greece.", 
       el: "Ανακαλύψτε τα καλύτερα ελληνικά νησιά για την πρώτη σας επίσκεψη, από τη διάσημη Σαντορίνη και τη Μύκονο μέχρι πιο εύκολες και χαλαρές επιλογές για οικογένειες." 
     },
-    image: "/images/hero-greece.webp",
+    image: "/images/first-time-greece.webp",
     overview: {
       en: "Planning your first trip to Greece can feel exciting and slightly overwhelming. With thousands of islands and very different travel styles, the hardest part is often knowing exactly where to begin. Some islands are world-famous for dramatic sunsets and luxury, others are celebrated for endless sandy beaches and easy-going family holidays, while others offer unspoiled local charm and slower travel. While the Greek ferry network beautifully connects the mainland with the Aegean and Ionian seas, picking the perfect first island matters much more than trying to squeeze everything into one frantic itinerary. This guide provides a clear, practical starting point tailored to the kind of experience you actually want to have.",
       el: "Ο σχεδιασμός του πρώτου σας ταξιδιού στην Ελλάδα μπορεί να σας φαίνεται συναρπαστικός, αλλά ίσως και ελαφρώς χαοτικός. Με τόσα πολλά νησιά και εντελώς διαφορετικά στιλ διακοπών, το πιο δύσκολο κομμάτι είναι συχνά το να ξέρεις από πού ακριβώς να ξεκινήσεις. Κάποια νησιά φημίζονται σε όλο τον κόσμο για τα ηλιοβασιλέματα και την πολυτέλεια, άλλα για τις αμμώδεις παραλίες και τις χαλαρές οικογενειακές διακοπές, ενώ άλλα προσφέρουν αυθεντική τοπική γοητεία. Αν και τα πλοία συνδέουν υπέροχα τα νησιά μεταξύ τους, το να επιλέξετε τον σωστό πρώτο προορισμό είναι πολύ πιο σημαντικό από το να προσπαθήσετε να δείτε τα πάντα με τη μία. Αυτός ο οδηγός αποτελεί ένα ξεκάθαρο, πρακτικό σημείο εκκίνησης, προσαρμοσμένο στο είδος των διακοπών που πραγματικά θέλετε να ζήσετε."
@@ -762,7 +762,7 @@ export const travelInfoGuides: GuideCard[] = [
       en: "A practical Greece trip planning checklist covering flights, ferries, islands, hotels, transport, what to pack and how to organize your first trip smoothly.", 
       el: "Μια πρακτική λίστα προετοιμασίας για το ταξίδι σας στην Ελλάδα, με συμβουλές για πτήσεις, πλοία, νησιά, ξενοδοχεία, μεταφορές και το τι να πακετάρετε για μια ομαλή εμπειρία." 
     },
-    image: "/images/hero-greece.webp",
+    image: "/images/trip-plan.webp",
     overview: {
       en: "A trip to Greece looks effortless on Instagram, but good planning makes a huge difference. Between flights, ferries, islands, hotel areas and seasonal timing, a little preparation can save both money and stress. Greece can be visited year-round, thanks to its Mediterranean climate, but the experience changes a lot depending on the season and destination. Ferry services also run throughout the year, with much denser schedules from March to October. This checklist covers the practical steps that matter most before you travel.",
       el: "Ένα ταξίδι στην Ελλάδα φαίνεται εύκολο στο Instagram, αλλά ο σωστός προγραμματισμός κάνει τεράστια διαφορά. Ανάμεσα σε πτήσεις, πλοία, επιλογή νησιών, περιοχές ξενοδοχείων και την κατάλληλη εποχή, λίγη προετοιμασία μπορεί να σας γλιτώσει χρήματα και άγχος. Η Ελλάδα είναι προσβάσιμη όλο τον χρόνο, χάρη στο μεσογειακό κλίμα της, αλλά η εμπειρία αλλάζει πολύ ανάλογα με την εποχή και τον προορισμό. Τα ακτοπλοϊκά δρομολόγια εκτελούνται επίσης όλο τον χρόνο, με πολύ μεγαλύτερη συχνότητα από τον Μάρτιο έως τον Οκτώβριο. Αυτή η λίστα καλύπτει τα πιο σημαντικά πρακτικά βήματα πριν ταξιδέψετε."
@@ -883,7 +883,7 @@ export const travelInfoGuides: GuideCard[] = [
       en: "A realistic 7 or 10-day Greece itinerary for first-time visitors, with ideas for Athens plus islands, family travel, and relaxed routes.", 
       el: "Ρεαλιστικά προγράμματα 7 ή 10 ημερών στην Ελλάδα για πρώτη φορά, με πρακτικές ιδέες για Αθήνα και νησιά." 
     },
-    image: "/images/hero-greece.webp",
+    image: "/images/7days10.webp",
     overview: {
       en: "Seven days in Greece is enough for a memorable first trip, but not enough to see everything. The smartest way to plan one week is to keep your route simple and focus on quality over quantity. Greece’s island network makes multi-stop travel possible, but a short trip works best when built around two bases at most.\n\nTen days gives you much more flexibility in Greece. It is long enough to combine Athens with two islands, or to slow down and explore one larger destination properly. Because ferry and island connections become more frequent from spring through autumn, this timeframe works especially well for first-time island combinations.",
       el: "Επτά ημέρες στην Ελλάδα είναι αρκετές για ένα αξέχαστο πρώτο ταξίδι, αλλά όχι για να τα δείτε όλα. Ο πιο έξυπνος τρόπος να οργανώσετε μια εβδομάδα είναι να διατηρήσετε μια απλή διαδρομή και να δώσετε έμφαση στην ποιότητα και όχι στην ποσότητα. Το δίκτυο των νησιών επιτρέπει μετακινήσεις, αλλά ένα σύντομο ταξίδι είναι καλύτερο όταν βασίζεται σε δύο το πολύ βάσεις.\n\nΔέκα ημέρες σας δίνουν πολύ μεγαλύτερη ευελιξία. Είναι αρκετός χρόνος για να συνδυάσετε την Αθήνα με δύο νησιά ή να επιβραδύνετε. Επειδή οι συνδέσεις γίνονται πιο συχνές από την άνοιξη έως το φθινόπωρο, αυτό το χρονικό πλαίσιο είναι ιδανικό."
@@ -988,7 +988,7 @@ export const travelInfoGuides: GuideCard[] = [
       en: "Plan family travel in Greece with ideas for beaches, easy destinations, island choices, museums, food and practical tips for smoother holidays with kids.", 
       el: "Οργανώστε τις οικογενειακές διακοπές σας στην Ελλάδα με ιδέες για παραλίες, εύκολους προορισμούς, νησιά, μουσεία, φαγητό και πρακτικές συμβουλές." 
     },
-    image: "/images/hero-greece.webp",
+    image: "/images/family-travel.webp",
     overview: {
       en: "Greece is one of the best family holiday destinations in Europe because it combines sea, food, warm weather, local hospitality and a wide choice of destinations. Official tourism guidance highlights the Greek islands, Crete and Halkidiki among the strongest family travel options, with safe swimming areas, museums, marine parks and outdoor activities all adding to the appeal.",
       el: "Η Ελλάδα είναι ένας από τους καλύτερους προορισμούς για οικογενειακές διακοπές στην Ευρώπη επειδή συνδυάζει θάλασσα, φαγητό, ζεστό καιρό, τοπική φιλοξενία και μεγάλη ποικιλία προορισμών. Οι ταξιδιωτικοί οδηγοί ξεχωρίζουν τα ελληνικά νησιά, την Κρήτη και τη Χαλκιδική ως τις πιο δυνατές επιλογές για οικογένειες, με ασφαλείς παραλίες, μουσεία, θαλάσσια πάρκα και υπαίθριες δραστηριότητες που ενισχύουν την εμπειρία."
@@ -1059,7 +1059,7 @@ export const travelInfoGuides: GuideCard[] = [
       en: "Compare Santorini vs Mykonos for first-time visitors, couples, nightlife, beaches, scenery, costs and travel style to choose the right Greek island.", 
       el: "Συγκρίνετε τη Σαντορίνη με τη Μύκονο για πρώτη φορά, ζευγάρια, νυχτερινή ζωή, παραλίες, τοπία, κόστος και στιλ ταξιδιού για να επιλέξετε το σωστό νησί." 
     },
-    image: "/images/hero-greece.webp",
+    image: "/images/santorini-vs-mykonos.webp",
     overview: {
       en: "Santorini and Mykonos are the two Greek islands most first-time visitors compare, and for good reason. Both are famous, beautiful and easy to fit into a first island itinerary. But they are not interchangeable. Santorini is built around scenery, caldera views and atmosphere, while Mykonos is better known for cosmopolitan beach culture, luxury and nightlife. Official destination descriptions reflect exactly that contrast.",
       el: "Η Σαντορίνη και η Μύκονος είναι τα δύο ελληνικά νησιά που συγκρίνουν οι περισσότεροι επισκέπτες για πρώτη φορά, και για καλό λόγο. Και τα δύο είναι διάσημα, πανέμορφα και εύκολα να ενταχθούν σε ένα πρώτο πρόγραμμα. Όμως, δεν είναι το ίδιο πράγμα. Η Σαντορίνη στηρίζεται στο εντυπωσιακό τοπίο, τη θέα στην Καλντέρα και την ατμόσφαιρα, ενώ η Μύκονος είναι γνωστή για την κοσμοπολίτικη κουλτούρα της παραλίας, την πολυτέλεια και τη νυχτερινή ζωή."
