@@ -176,6 +176,16 @@ export default function TravelInfoHubPage() {
     }
   ];
 
+  const mapPromo = {
+    eyebrow: { en: "New & Featured", el: "Νέο & Προτεινόμενο" },
+    title: { en: "Start with the island map", el: "Ξεκίνα με τον χάρτη των νησιών" },
+    text: { 
+      en: "Choose the right island region first. Understand the clusters, ferry flow and local character before you dive into specific destinations.",
+      el: "Διάλεξε πρώτα το σωστό νησιωτικό σύμπλεγμα. Κατανόησε τις αποστάσεις και τον χαρακτήρα πριν προχωρήσεις σε συγκεκριμένους προορισμούς."
+    },
+    cta: { en: "Explore the Map Guide →", el: "Δες τον Οδηγό Χάρτη →" }
+  };
+
   return (
     <main className="min-h-screen bg-transparent text-slate-900">
       <SiteHeader />
@@ -222,6 +232,36 @@ export default function TravelInfoHubPage() {
             ))}
           </div>
         </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 pt-20 -mt-16 relative z-30">
+        <article className="relative overflow-hidden rounded-[2.5rem] bg-indigo-950 text-white shadow-2xl border border-white/10 group">
+          <div className="absolute inset-0 z-0 bg-gradient-to-r from-indigo-950 via-indigo-950/60 to-transparent" />
+          <Image 
+            src="/images/greece-islands-map-guide.webp" 
+            alt="Greece Islands Map" 
+            fill 
+            className="object-cover opacity-40 transition-transform duration-700 group-hover:scale-105"
+            priority
+          />
+          <div className="relative z-10 p-8 md:p-12 lg:p-16 max-w-2xl">
+            <span className="inline-flex rounded-full bg-indigo-500/30 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-indigo-100 backdrop-blur-md mb-6 border border-white/10">
+              {mapPromo.eyebrow[lang]}
+            </span>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 tracking-tight">
+              {mapPromo.title[lang]}
+            </h2>
+            <p className="text-lg text-indigo-100/90 mb-8 leading-relaxed font-light">
+              {mapPromo.text[lang]}
+            </p>
+            <Link 
+              href={withLang("/travel-info/greece-islands-map-guide")} 
+              className="inline-flex items-center justify-center rounded-xl bg-white px-8 py-4 text-indigo-950 font-bold hover:bg-indigo-50 transition-all shadow-xl hover:-translate-y-1"
+            >
+              {mapPromo.cta[lang]}
+            </Link>
+          </div>
+        </article>
       </section>
 
       <section className="relative z-20 mx-auto max-w-7xl px-6 py-20 -mt-20">
