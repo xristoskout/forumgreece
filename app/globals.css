@@ -53,3 +53,8 @@ body {
 [lang="el"] {
   font-family: var(--font-el), var(--font-sans), Arial, Helvetica, sans-serif;
 }
+
+.text-shadow-premium {
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.9), 0 0 20px rgba(255, 215, 0, 0.6);
+}
+

@@ -528,9 +528,9 @@ export default function TravelToGreecePage() {
           </div>
         </div>
         <div className="border-t border-slate-100 mt-4 pt-6 pb-8 flex justify-center">
-          <Link href={withLang("/focus")} className="text-xs font-semibold text-slate-500 hover:text-indigo-600 transition-colors">
-            Κατασκευή Ιστοσελίδας 2026 By Focus
-          </Link>
+          <a href="https://www.focusai.gr" target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-slate-500 hover:text-indigo-600 transition-colors">
+            {lang === "en" ? "Website Design 2026 by Focus AI" : "Κατασκευή Ιστοσελίδας 2026 By Focus AI"}
+          </a>
         </div>
       </footer>
     </main>

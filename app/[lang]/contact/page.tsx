@@ -1,6 +1,7 @@
 "use client";
 
 import { usePathname } from 'next/navigation';
+import { useState } from 'react';
 import SiteHeader from "../../../components/site-header";
 import Link from 'next/link';
 
@@ -9,6 +10,41 @@ type Lang = "en" | "el";
 export default function ContactPage() {
   const pathname = usePathname();
   const lang: Lang = pathname.startsWith("/el") ? "el" : "en";
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.currentTarget;
+    setStatus('loading');
+
+    const formData = new FormData(form);
+    const data = {
+      name: formData.get('name') as string,
+      email: formData.get('email') as string,
+      message: formData.get('message') as string,
+      website_url: formData.get('website_url') as string, // Honeypot
+      source: 'Main Contact Page'
+    };
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        setStatus('success');
+        form.reset();
+        setTimeout(() => setStatus('idle'), 5000);
+      } else {
+        setStatus('error');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      setStatus('error');
+    }
+  };
 
   const t = {
     title: {
@@ -55,17 +91,53 @@ export default function ContactPage() {
       <section className="mx-auto max-w-5xl px-6 py-16 sm:py-24 flex-1 -mt-16 w-full">
         <div className="grid gap-8 md:grid-cols-2">
             
-          {/* Email Card */}
-          <div className="bg-white rounded-[2.5rem] shadow-2xl p-10 flex flex-col items-center justify-center text-center border border-slate-100 transform transition-all hover:scale-[1.02]">
-            <div className="w-20 h-20 bg-indigo-100 rounded-full flex items-center justify-center text-4xl mb-6 shadow-inner text-indigo-600">
-              ✉️
-            </div>
-            <h2 className="text-lg font-bold text-slate-500 uppercase tracking-widest mb-2">
-              {t.email_label[lang]}
+          {/* Contact Form Card */}
+          <div className="bg-white rounded-[2.5rem] shadow-2xl p-10 border border-slate-100">
+            <h2 className="text-2xl font-bold text-slate-900 mb-6">
+              {lang === 'el' ? 'Στείλτε μας μήνυμα' : 'Send us a message'}
             </h2>
-            <a href="mailto:sales@gogreecenow.com" className="text-2xl sm:text-3xl font-extrabold text-indigo-600 hover:text-indigo-800 transition-colors underline decoration-indigo-200 underline-offset-8">
-              sales@gogreecenow.com
-            </a>
+            <form onSubmit={handleSubmit} className="space-y-4 text-left">
+              <div>
+                <label className="block text-sm font-semibold text-slate-700 mb-1">{lang === 'el' ? 'Όνομα' : 'Name'}</label>
+                <input required name="name" type="text" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-slate-50" />
+              </div>
+              <div>
+                <label className="block text-sm font-semibold text-slate-700 mb-1">Email</label>
+                <input required name="email" type="email" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-slate-50" />
+              </div>
+              <div>
+                <label className="block text-sm font-semibold text-slate-700 mb-1">{lang === 'el' ? 'Μήνυμα' : 'Message'}</label>
+                <textarea required name="message" rows={4} className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-slate-50"></textarea>
+              </div>
+
+              {/* Honeypot field (hidden) */}
+              <div className="hidden">
+                 <label>Leave this empty if you are human</label>
+                 <input name="website_url" type="text" />
+              </div>
+              <button 
+                type="submit" 
+                disabled={status === 'loading'}
+                className={`w-full text-white font-bold py-4 rounded-xl transition-all shadow-lg shadow-indigo-200 ${
+                  status === 'loading' ? 'bg-indigo-400 cursor-not-allowed' : 'bg-indigo-600 hover:bg-indigo-700'
+                }`}
+              >
+                {status === 'loading' ? (lang === 'el' ? 'Αποστολή...' : 'Sending...') : 
+                 status === 'success' ? (lang === 'el' ? 'Στάλθηκε!' : 'Sent!') :
+                 status === 'error' ? (lang === 'el' ? 'Σφάλμα!' : 'Error!') :
+                 (lang === 'el' ? 'Αποστολή' : 'Send Message')}
+              </button>
+              {status === 'success' && (
+                <p className="text-center text-sm text-green-600 font-semibold">
+                  {lang === 'el' ? 'Το μήνυμά σας στάλθηκε!' : 'Message sent successfully!'}
+                </p>
+              )}
+              {status === 'error' && (
+                <p className="text-center text-sm text-red-600 font-semibold">
+                  {lang === 'el' ? 'Σφάλμα. Δοκιμάστε ξανά.' : 'Error. Please try again.'}
+                </p>
+              )}
+            </form>
           </div>
 
           {/* Business Promo Link Card */}

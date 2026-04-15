@@ -374,6 +374,11 @@ export default function HomePageClient({
       kind: "anchor" as const,
     },
     {
+      label: { en: "Greece Islands Map", el: "Χάρτης Νησιών" },
+      href: withLang("/travel-info/greece-islands-map-guide"),
+      kind: "route" as const,
+    },
+    {
       label: { en: "How to get to Greece", el: "Πώς να έρθεις στην Ελλάδα" },
       href: withLang("/travel-info/how-to-get-to-greece"),
       kind: "route" as const,
@@ -492,7 +497,7 @@ export default function HomePageClient({
         el: "Βρες πρακτικές ταξιδιωτικές πληροφορίες για μετακίνηση, εποχές, κρατήσεις και οργάνωση ταξιδιού στην Ελλάδα.",
       },
       href: withLang("/collections/greece-travel-planning"),
-      image: travelInfoGuides[0]?.image || "/images/hero-greece.webp",
+      image: "/images/before-trip.webp",
       eyebrow: { en: "Practical Greece", el: "Χρήσιμη Ελλάδα" },
       tags: {
         en: ["Transport", "Travel Tips", "Planning"],
@@ -774,13 +779,13 @@ export default function HomePageClient({
               <div className="absolute inset-0 bg-transparent transition-opacity duration-700" />
 
               <div className="relative p-7 md:p-8">
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/90 drop-shadow-md">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#000000] text-shadow-premium">
                   {item.eyebrow[lang]}
                 </p>
-                <h3 className="mt-3 max-w-xl text-2xl font-bold leading-tight text-white drop-shadow-lg md:text-3xl">
+                <h3 className="mt-3 max-w-xl text-2xl font-bold leading-tight text-[#000000] text-shadow-premium md:text-3xl">
                   {item.title[lang]}
                 </h3>
-                <p className="mt-4 max-w-2xl text-sm leading-7 text-white/95 drop-shadow-md">
+                <p className="mt-4 max-w-2xl text-sm leading-7 text-[#000000] text-shadow-premium">
                   {item.description[lang]}
                 </p>
 
@@ -788,7 +793,7 @@ export default function HomePageClient({
                   {item.tags[lang].map((tag) => (
                     <span
                       key={tag}
-                      className="border border-white/30 bg-black/25 px-3 py-1 text-xs font-medium text-white backdrop-blur-sm"
+                      className="border border-[#000000]/30 bg-black/25 px-3 py-1 text-xs font-medium text-[#000000] backdrop-blur-sm"
                     >
                       {tag}
                     </span>
@@ -942,10 +947,43 @@ export default function HomePageClient({
                 <span className="mt-4 inline-block text-sm font-semibold text-indigo-700">
                   {lang === "en"
                     ? "Read the getting around Greece guide →"
-                    : "Δες τον οδηγό μετακίνησης στην Ελλάδα →"}
+                    : "Δες τον οδηγό μετακينةση στην Ελλάδα →"}
                 </span>
               </Link>
             </div>
+          </div>
+
+          <div className="mt-8">
+            <article className="relative overflow-hidden rounded-[2rem] bg-indigo-950 p-7 text-white shadow-xl lg:p-10 border border-white/10 group">
+              <div className="absolute inset-0 z-0 bg-gradient-to-r from-indigo-950 via-indigo-950/45 to-transparent transition-opacity duration-700 group-hover:via-indigo-950/60" />
+              <div className="absolute inset-0 z-0 opacity-40">
+                <Image 
+                  src="/images/greece-islands-map-guide.webp" 
+                  alt="Greece Island Map Guide" 
+                  fill 
+                  className="object-cover transition-transform duration-1000 group-hover:scale-110"
+                />
+              </div>
+              <div className="relative z-10 max-w-xl text-left">
+                 <span className="inline-flex rounded-full bg-indigo-500/30 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-indigo-100 backdrop-blur-md mb-4 border border-white/10">
+                   {lang === "en" ? "Visual Planning" : "Οπτική Οργάνωση"}
+                 </span>
+                 <h3 className="text-2xl md:text-3xl font-bold mb-3 tracking-tight">
+                   {lang === "en" ? "Not sure where to start? See the island map" : "Δεν ξέρεις από πού να ξεκινήσεις; Δες τον χάρτη"}
+                 </h3>
+                 <p className="text-sm md:text-base text-indigo-100/90 mb-6 leading-relaxed font-light">
+                   {lang === "en" 
+                     ? "Understand the island clusters, regions and ferry flow at a glance before you dive into destination guides." 
+                     : "Κατανόησε τα νησιωτικά συμπλέγματα, τις περιοχές και τη ροή των πλοίων με μια ματιά πριν ξεκινήσεις να διαβάζεις οδηγούς."}
+                 </p>
+                 <Link 
+                   href={withLang("/travel-info/greece-islands-map-guide")} 
+                   className="inline-flex rounded-xl bg-white px-6 py-3 text-sm font-bold text-indigo-950 hover:bg-slate-50 transition-all shadow-lg hover:-translate-y-0.5"
+                 >
+                   {lang === "en" ? "Explore the Island Map Guide →" : "Δες τον Οδηγό Χάρτη →"}
+                 </Link>
+              </div>
+            </article>
           </div>
         </div>
       </section>
@@ -1377,9 +1415,9 @@ export default function HomePageClient({
           </div>
         </div>
         <div className="border-t border-slate-100 mt-4 pt-6 pb-8 flex justify-center">
-          <Link href={withLang("/focus")} className="text-xs font-semibold text-slate-500 hover:text-indigo-600 transition-colors">
-            Κατασκευή Ιστοσελίδας 2026 By Focus
-          </Link>
+          <a href="https://www.focusai.gr" target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-slate-500 hover:text-indigo-600 transition-colors">
+            {lang === "en" ? "Website Design 2026 by Focus AI" : "Κατασκευή Ιστοσελίδας 2026 By Focus AI"}
+          </a>
         </div>
       </footer>
     </main>
