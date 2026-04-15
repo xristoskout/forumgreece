@@ -10,6 +10,7 @@ export default function SiteHeader() {
   const pathname = usePathname();
   const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const lang: Lang = pathname.startsWith("/el") ? "el" : "en";
 
@@ -43,6 +44,14 @@ export default function SiteHeader() {
   useEffect(() => {
     setMenuOpen(false);
   }, [pathname]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const t = {
     destinations: { en: "Destinations", el: "Προορισμοί" },
@@ -100,7 +109,13 @@ export default function SiteHeader() {
   );
 
   return (
-    <header className="fixed top-0 w-full z-50 glass-effect border-b border-white/20 text-slate-900 transition-all duration-300">
+    <header className={`fixed top-0 w-full z-50 transition-all duration-500 ${
+      scrolled 
+        ? "glass-effect border-b border-white/20 py-1" 
+        : isHome 
+          ? "bg-transparent border-b border-transparent py-3 text-white" 
+          : "glass-effect border-b border-white/20 py-1"
+    } ${!scrolled && !isHome ? "text-slate-900" : (scrolled ? "text-slate-900" : "text-white")}`}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="flex min-h-[78px] items-center justify-between gap-3">
           <Link
@@ -120,10 +135,14 @@ export default function SiteHeader() {
             </div>
 
             <div className="min-w-0">
-              <div className="truncate text-lg font-bold tracking-tight text-indigo-800 sm:text-xl">
+              <div className={`truncate text-lg font-bold tracking-tight transition-colors sm:text-xl ${
+                scrolled || !isHome ? "text-indigo-800" : "text-white"
+              }`}>
                 {siteBrand}
               </div>
-              <div className="hidden h-5 w-[180px] truncate text-sm text-slate-500 sm:block lg:w-[240px]">
+              <div className={`hidden h-5 w-[180px] truncate text-sm transition-colors sm:block lg:w-[240px] ${
+                scrolled || !isHome ? "text-slate-500" : "text-white/80"
+              }`}>
                 {siteBrandLine[lang]}
               </div>
             </div>
@@ -137,7 +156,9 @@ export default function SiteHeader() {
                 className={`px-4 py-2 text-sm font-bold transition-all rounded-full ${
                   item.active
                     ? "bg-indigo-600 text-white shadow-lg shadow-indigo-200"
-                    : "text-slate-600 hover:bg-white/50 hover:text-indigo-700"
+                    : scrolled || !isHome 
+                      ? "text-slate-600 hover:bg-white/50 hover:text-indigo-700" 
+                      : "text-white/90 hover:bg-white/20 hover:text-white"
                 }`}
               >
                 {item.label}

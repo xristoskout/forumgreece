@@ -601,6 +601,8 @@ export default function HomePageClient({
         el: ["Curated", "Easy Read", "Essentials"],
       },
     },
+  ];
+
   const fadeInUp = {
     initial: { opacity: 0, y: 30 },
     whileInView: { opacity: 1, y: 0 },
@@ -798,16 +800,16 @@ export default function HomePageClient({
                 className="absolute inset-0 bg-cover bg-center transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
                 style={{ backgroundImage: `url('${item.image}')` }}
               />
-              <div className="absolute inset-0 bg-transparent transition-opacity duration-700" />
+              <div className="absolute inset-0 bg-slate-900/40 transition-all duration-700 group-hover:bg-slate-900/60" />
 
               <div className="relative p-7 md:p-8">
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#000000] text-shadow-premium">
+                <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#FFD700] drop-shadow-md">
                   {item.eyebrow[lang]}
                 </p>
-                <h3 className="mt-3 max-w-xl text-2xl font-bold leading-tight text-[#000000] text-shadow-premium md:text-3xl">
+                <h3 className="mt-3 max-w-xl text-2xl font-extrabold leading-tight text-[#FFD700] drop-shadow-lg md:text-3xl">
                   {item.title[lang]}
                 </h3>
-                <p className="mt-4 max-w-2xl text-sm leading-7 text-[#000000] text-shadow-premium">
+                <p className="mt-4 max-w-2xl text-sm leading-7 text-white/90 font-medium drop-shadow-md">
                   {item.description[lang]}
                 </p>
 
@@ -815,7 +817,7 @@ export default function HomePageClient({
                   {item.tags[lang].map((tag) => (
                     <span
                       key={tag}
-                      className="border border-[#000000]/30 bg-black/25 px-3 py-1 text-xs font-medium text-[#000000] backdrop-blur-sm"
+                      className="border border-[#FFD700]/40 bg-black/40 px-3 py-1 text-xs font-bold text-[#FFD700] backdrop-blur-md"
                     >
                       {tag}
                     </span>
@@ -1398,30 +1400,25 @@ export default function HomePageClient({
 
 
 
-      <section className="bg-slate-900 py-20 text-center border-t border-slate-800">
-        <div className="mx-auto max-w-4xl px-6 relative z-10">
-          <span className="inline-flex rounded-full border border-indigo-500/30 bg-indigo-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-indigo-300 mb-6 backdrop-blur-md">
-            Sponsored / Promote
-          </span>
-          <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-6">
-            {lang === "en" ? "Promote your business today" : "Προώθησε την επιχείρησή σου σήμερα"}
+      <section className="bg-slate-950 py-12 text-center border-t border-slate-800/50">
+        <div className="mx-auto max-w-2xl px-6 relative z-10">
+          <h2 className="text-xl md:text-2xl font-extrabold tracking-tight text-white mb-2">
+            {lang === "en" ? "Promote your business today" : "Προβολή επιχείρησης"}
           </h2>
-          <p className="mt-4 mb-10 text-lg md:text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto font-light">
+          <p className="text-sm text-slate-400 mb-6 leading-relaxed">
             {lang === "en" ? "Reach thousands of travelers planning their trip to Greece. Get personalized exposure for your hotel, restaurant or travel service." : "Προσέγγισε χιλιάδες ταξιδιώτες που οργανώνουν το ταξίδι τους στην Ελλάδα. Απόκτησε προσωποποιημένη προβολή για την επιχείρησή σου."}
           </p>
-          <div className="flex justify-center gap-4">
-            <Link
-              href={withLang("/promotion")}
-              className="inline-flex items-center justify-center rounded-full bg-indigo-500 px-8 py-4 text-base font-bold text-white shadow-[0_0_20px_rgba(99,102,241,0.4)] transition-all hover:scale-105 hover:bg-indigo-400"
-            >
-              {lang === "en" ? "View our promotion services →" : "Δες τις υπηρεσίες προβολής →"}
-            </Link>
-          </div>
+          <Link
+            href={withLang("/promotion")}
+            className="inline-flex items-center justify-center rounded-full bg-indigo-600/20 border border-indigo-500/30 px-6 py-2.5 text-xs font-bold text-indigo-300 transition-all hover:bg-indigo-600 hover:text-white"
+          >
+            {lang === "en" ? "View promotion services →" : "Υπηρεσίες προβολής →"}
+          </Link>
         </div>
       </section>
 
       <footer className="border-t border-slate-200 bg-white backdrop-blur-md">
-        <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-slate-600 md:flex-row md:items-center md:justify-between">
+        <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-5 text-sm text-slate-600 md:flex-row md:items-center md:justify-between">
           <div>{copy.footerText}</div>
 
           <div className="flex gap-5">
@@ -1436,12 +1433,21 @@ export default function HomePageClient({
             </Link>
           </div>
         </div>
-        <div className="border-t border-slate-100 mt-4 pt-6 pb-8 flex justify-center">
-          <a href="https://www.focusai.gr" target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-slate-500 hover:text-indigo-600 transition-colors">
-            {lang === "en" ? "Website Design 2026 by Focus AI" : "Κατασκευή Ιστοσελίδας 2026 By Focus AI"}
+        <div className="border-t border-slate-100 mt-2 pt-5 pb-6 flex flex-col items-center gap-2">
+          <a 
+            href="https://www.focusai.gr" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="group flex items-center gap-2 text-sm font-bold tracking-widest transition-all"
+          >
+            <span className="bg-gradient-to-r from-indigo-600 to-indigo-400 bg-clip-text text-transparent group-hover:from-indigo-500 group-hover:to-purple-500 transition-all duration-500">
+              {lang === "en" ? "Website Design 2026 by Focus AI" : "Κατασκευή Ιστοσελίδας 2026 By Focus AI"}
+            </span>
+            <span className="text-indigo-400 group-hover:text-purple-500 transition-transform group-hover:translate-x-1">→</span>
           </a>
+          <p className="text-[10px] text-slate-400 uppercase tracking-[0.3em]">Premium Digital Experiences</p>
         </div>
       </footer>
-    </main>
+    </motion.main>
   );
 }
