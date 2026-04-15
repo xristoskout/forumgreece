@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import SiteHeader from "../../components/site-header";
 import {
   Lang,
@@ -600,10 +601,31 @@ export default function HomePageClient({
         el: ["Curated", "Easy Read", "Essentials"],
       },
     },
-  ];
+  const fadeInUp = {
+    initial: { opacity: 0, y: 30 },
+    whileInView: { opacity: 1, y: 0 },
+    viewport: { once: true, margin: "-100px" },
+    transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] }
+  };
+
+  const staggerContainer = {
+    initial: { opacity: 0 },
+    whileInView: { 
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1
+      }
+    },
+    viewport: { once: true }
+  };
 
   return (
-    <main className="min-h-screen bg-[#f8fbff] text-slate-900">
+    <motion.main 
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      className="min-h-screen bg-[#f8fbff] text-slate-900 mesh-gradient"
+    >
       <SiteHeader />
 
       <section className="relative overflow-hidden min-h-screen flex items-center pt-20">
