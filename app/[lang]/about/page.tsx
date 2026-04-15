@@ -123,19 +123,19 @@ export default function AboutPage() {
             {lang === "en" ? "Digital Partner" : "Ψηφιακος Συνεργατης"}
           </div>
           <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl mb-6">
-            {lang === "en" ? "Technical Implementation by" : "Τεχνική Υλοποίηση από την"} <span className="text-indigo-600 font-extrabold block sm:inline">Focus</span>
+            {lang === "en" ? "Technical Implementation by" : "Τεχνική Υλοποίηση από την"} <span className="text-indigo-600 font-extrabold block sm:inline">Focus AI</span>
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-600 mb-8">
             {lang === "en" 
-              ? "Discover how Focus can transform your business with state-of-the-art web development, digital marketing, and AI solutions."
-              : "Ανακαλύψτε πώς η Focus μπορεί να μεταμορφώσει την επιχείρησή σας με σύγχρονη κατασκευή ιστοσελίδων, ψηφιακό marketing και λύσεις AI."}
+              ? "Discover how Focus AI can transform your business with state-of-the-art web development, digital marketing, and AI solutions."
+              : "Ανακαλύψτε πώς η Focus AI μπορεί να μεταμορφώσει την επιχείρησή σας με σύγχρονη κατασκευή ιστοσελίδων, ψηφιακό marketing και λύσεις AI."}
           </p>
-          <Link
-            href={lang === "en" ? "/en/focus" : "/el/focus"}
+          <a
+            href="https://www.focusai.gr" target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-2xl bg-indigo-600 px-8 py-4 text-base font-semibold text-white shadow-lg transition-all hover:-translate-y-1 hover:bg-indigo-700 hover:shadow-indigo-500/25"
           >
-            {lang === "en" ? "Learn More About Focus →" : "Μάθετε Περισσότερα για την Focus →"}
-          </Link>
+            {lang === "en" ? "Learn More About Focus AI →" : "Μάθετε Περισσότερα για την Focus AI →"}
+          </a>
         </div>
       </section>
 
