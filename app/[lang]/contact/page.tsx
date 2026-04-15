@@ -14,9 +14,10 @@ export default function ContactPage() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const form = e.currentTarget;
     setStatus('loading');
 
-    const formData = new FormData(e.currentTarget);
+    const formData = new FormData(form);
     const data = {
       name: formData.get('name') as string,
       email: formData.get('email') as string,
@@ -34,7 +35,7 @@ export default function ContactPage() {
 
       if (response.ok) {
         setStatus('success');
-        e.currentTarget.reset();
+        form.reset();
         setTimeout(() => setStatus('idle'), 5000);
       } else {
         setStatus('error');
@@ -123,6 +124,7 @@ export default function ContactPage() {
               >
                 {status === 'loading' ? (lang === 'el' ? 'Αποστολή...' : 'Sending...') : 
                  status === 'success' ? (lang === 'el' ? 'Στάλθηκε!' : 'Sent!') :
+                 status === 'error' ? (lang === 'el' ? 'Σφάλμα!' : 'Error!') :
                  (lang === 'el' ? 'Αποστολή' : 'Send Message')}
               </button>
               {status === 'success' && (
