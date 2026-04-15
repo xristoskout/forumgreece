@@ -11,19 +11,40 @@ type Lang = "en" | "el";
 export default function PromotionPage() {
   const pathname = usePathname();
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setStatus('loading');
+
     const formData = new FormData(e.currentTarget);
-    const name = formData.get('name') as string;
-    const email = formData.get('email') as string;
-    const message = formData.get('message') as string;
+    const data = {
+      name: formData.get('name') as string,
+      email: formData.get('email') as string,
+      message: formData.get('message') as string,
+      website_url: formData.get('website_url') as string, // Honeypot
+    };
 
-    const subject = encodeURIComponent(`New Promotion Inquiry from ${name}`);
-    const body = encodeURIComponent(`Business Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
 
-    window.location.href = `mailto:info@gogreecenow.com?subject=${subject}&body=${body}`;
-    setIsModalOpen(false);
+      if (response.ok) {
+        setStatus('success');
+        setTimeout(() => {
+          setIsModalOpen(false);
+          setStatus('idle');
+        }, 3000);
+      } else {
+        setStatus('error');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      setStatus('error');
+    }
   };
   const lang: Lang = pathname.startsWith("/el") ? "el" : "en";
   const t = {
@@ -233,9 +254,34 @@ export default function PromotionPage() {
                       <label className="block text-sm font-semibold text-slate-700 mb-1">{lang === 'el' ? 'Μήνυμα' : 'Message'}</label>
                       <textarea required name="message" rows={4} className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-slate-50"></textarea>
                     </div>
-                    <button type="submit" className="w-full bg-indigo-600 text-white font-bold py-4 rounded-xl hover:bg-indigo-700 transition-colors mt-2 shadow-lg shadow-indigo-200">
-                      {lang === 'el' ? 'Αποστολή' : 'Send'}
+
+                    {/* Honeypot field (hidden) */}
+                    <div className="hidden">
+                      <label>Leave this empty if you are human</label>
+                      <input name="website_url" type="text" />
+                    </div>
+                    <button 
+                      type="submit" 
+                      disabled={status === 'loading'}
+                      className={`w-full text-white font-bold py-4 rounded-xl transition-all mt-2 shadow-lg shadow-indigo-200 ${
+                        status === 'loading' ? 'bg-indigo-400 cursor-not-allowed' : 'bg-indigo-600 hover:bg-indigo-700'
+                      }`}
+                    >
+                      {status === 'loading' ? (lang === 'el' ? 'Αποστολή...' : 'Sending...') : 
+                       status === 'success' ? (lang === 'el' ? 'Στάλθηκε!' : 'Sent!') :
+                       status === 'error' ? (lang === 'el' ? 'Σφάλμα!' : 'Error!') :
+                       (lang === 'el' ? 'Αποστολή' : 'Send')}
                     </button>
+                    {status === 'success' && (
+                      <p className="text-center text-sm text-green-600 mt-2 font-semibold">
+                        {lang === 'el' ? 'Το μήνυμά σας στάλθηκε επιτυχώς!' : 'Your message has been sent successfully!'}
+                      </p>
+                    )}
+                    {status === 'error' && (
+                      <p className="text-center text-sm text-red-600 mt-2 font-semibold">
+                        {lang === 'el' ? 'Παρουσιάστηκε σφάλμα. Δοκιμάστε ξανά.' : 'An error occurred. Please try again.'}
+                      </p>
+                    )}
                  </form>
               </div>
            </div>

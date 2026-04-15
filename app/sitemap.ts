@@ -15,7 +15,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/privacy',
     '/about',
     '/contact',
-    '/focus',
     '/collections/greek-islands',
     '/collections/greece-travel-planning',
     '/collections/greece-tours-and-experiences',
