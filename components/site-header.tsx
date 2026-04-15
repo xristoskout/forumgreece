@@ -10,6 +10,7 @@ export default function SiteHeader() {
   const pathname = usePathname();
   const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const lang: Lang = pathname.startsWith("/el") ? "el" : "en";
 
@@ -43,6 +44,14 @@ export default function SiteHeader() {
   useEffect(() => {
     setMenuOpen(false);
   }, [pathname]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const t = {
     destinations: { en: "Destinations", el: "Προορισμοί" },
@@ -100,7 +109,13 @@ export default function SiteHeader() {
   );
 
   return (
-    <header className="fixed top-0 w-full z-50 border-b border-slate-200 bg-white/80 backdrop-blur-md text-slate-900 transition-all duration-300">
+    <header className={`fixed top-0 w-full z-50 transition-all duration-500 ${
+      scrolled 
+        ? "glass-effect border-b border-white/20 py-1" 
+        : isHome 
+          ? "bg-transparent border-b border-transparent py-3 text-white" 
+          : "glass-effect border-b border-white/20 py-1"
+    } ${!scrolled && !isHome ? "text-slate-900" : (scrolled ? "text-slate-900" : "text-white")}`}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="flex min-h-[78px] items-center justify-between gap-3">
           <Link
@@ -120,10 +135,14 @@ export default function SiteHeader() {
             </div>
 
             <div className="min-w-0">
-              <div className="truncate text-lg font-bold tracking-tight text-indigo-800 sm:text-xl">
+              <div className={`truncate text-lg font-bold tracking-tight transition-colors sm:text-xl ${
+                scrolled || !isHome ? "text-indigo-800" : "text-white"
+              }`}>
                 {siteBrand}
               </div>
-              <div className="hidden h-5 w-[180px] truncate text-sm text-slate-500 sm:block lg:w-[240px]">
+              <div className={`hidden h-5 w-[180px] truncate text-sm transition-colors sm:block lg:w-[240px] ${
+                scrolled || !isHome ? "text-slate-500" : "text-white/80"
+              }`}>
                 {siteBrandLine[lang]}
               </div>
             </div>
@@ -134,10 +153,12 @@ export default function SiteHeader() {
               <Link
                 key={item.key}
                 href={item.href}
-                className={`px-4 py-2 text-sm font-medium transition ${
+                className={`px-4 py-2 text-sm font-bold transition-all rounded-full ${
                   item.active
-                    ? "bg-sky-50 text-indigo-700"
-                    : "text-slate-600 hover:bg-white hover:bg-slate-50 hover:text-slate-900"
+                    ? "bg-indigo-600 text-white shadow-lg shadow-indigo-200"
+                    : scrolled || !isHome 
+                      ? "text-slate-600 hover:bg-white/50 hover:text-indigo-700" 
+                      : "text-white/90 hover:bg-white/20 hover:text-white"
                 }`}
               >
                 {item.label}
@@ -164,14 +185,14 @@ export default function SiteHeader() {
               </svg>
             </a>
 
-            <div className="hidden items-center border border-slate-200 bg-white hover:bg-slate-50 sm:flex">
+            <div className="hidden items-center rounded-full border border-slate-200 bg-white/50 p-1 sm:flex shadow-sm">
               <button
                 onClick={() => switchLanguage("en")}
                 aria-pressed={lang === "en"}
-                className={`w-11 px-0 py-2 text-sm font-semibold transition ${
+                className={`w-10 h-8 flex items-center justify-center rounded-full text-xs font-bold transition-all ${
                   lang === "en"
-                    ? "bg-indigo-600 border-none text-slate-900"
-                    : "text-slate-500 hover:bg-white backdrop-blur-md"
+                    ? "bg-indigo-600 text-white shadow-md"
+                    : "text-slate-500 hover:text-indigo-700"
                 }`}
               >
                 EN
@@ -179,10 +200,10 @@ export default function SiteHeader() {
               <button
                 onClick={() => switchLanguage("el")}
                 aria-pressed={lang === "el"}
-                className={`w-11 px-0 py-2 text-sm font-semibold transition ${
+                className={`w-10 h-8 flex items-center justify-center rounded-full text-xs font-bold transition-all ${
                   lang === "el"
-                    ? "bg-indigo-600 border-none text-slate-900"
-                    : "text-slate-500 hover:bg-white backdrop-blur-md"
+                    ? "bg-indigo-600 text-white shadow-md"
+                    : "text-slate-500 hover:text-indigo-700"
                 }`}
               >
                 GR
