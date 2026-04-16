@@ -622,11 +622,8 @@ export default function HomePageClient({
   };
 
   return (
-    <motion.main 
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
-      className="min-h-screen bg-[#f8fbff] text-slate-900 mesh-gradient"
+    <main 
+      className="min-h-screen bg-[#f8fbff] text-slate-900 mesh-gradient animate-[fade-in_0.5s_ease-out]"
     >
       <SiteHeader />
 
@@ -1448,6 +1445,6 @@ export default function HomePageClient({
           <p className="text-[10px] text-slate-400 uppercase tracking-[0.3em]">Premium Digital Experiences</p>
         </div>
       </footer>
-    </motion.main>
+    </main>
   );
 }
