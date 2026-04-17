@@ -100,7 +100,7 @@ ${databaseContext}
       execute: async ({ writer }) => {
         try {
           const result = streamText({
-            model: google('gemini-2.0-flash'),
+            model: google('gemini-2.5-flash'),
             system: systemPrompt,
             messages: await convertToModelMessages(messages),
             temperature: 0.3,
