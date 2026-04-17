@@ -623,7 +623,7 @@ export default function HomePageClient({
 
   return (
     <main 
-      className="min-h-screen bg-[#f8fbff] text-slate-900 mesh-gradient animate-[fade-in_0.5s_ease-out]"
+      className="min-h-screen bg-[#f8fbff] text-slate-900 mesh-gradient"
     >
       <SiteHeader />
 
@@ -1415,7 +1415,7 @@ export default function HomePageClient({
       </section>
 
       <footer className="border-t border-slate-200 bg-white backdrop-blur-md">
-        <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-5 text-sm text-slate-600 md:flex-row md:items-center md:justify-between">
+        <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-5 text-sm text-slate-700 md:flex-row md:items-center md:justify-between">
           <div>{copy.footerText}</div>
 
           <div className="flex gap-5">
@@ -1442,7 +1442,7 @@ export default function HomePageClient({
             </span>
             <span className="text-indigo-400 group-hover:text-purple-500 transition-transform group-hover:translate-x-1">→</span>
           </a>
-          <p className="text-[10px] text-slate-400 uppercase tracking-[0.3em]">Premium Digital Experiences</p>
+          <p className="text-[10px] text-slate-600 uppercase tracking-[0.3em]">Premium Digital Experiences</p>
         </div>
       </footer>
     </main>
