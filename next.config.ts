@@ -12,9 +12,6 @@ const nextConfig: NextConfig = {
     ],
   },
   experimental: {
-    // Inlines critical CSS above-the-fold and defers the rest async,
-    // eliminating render-blocking stylesheet requests.
-    optimizeCss: true,
     // Tree-shake large packages that are imported with barrel imports
     optimizePackageImports: ["@vercel/analytics", "@vercel/speed-insights"],
   },

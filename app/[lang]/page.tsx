@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import ReactDOM from "react-dom";
+import { preload } from "react-dom";
 import HomePageClient from "./home-page-client";
 import { client } from "../../lib/sanity/client";
 import { HOME_PAGE_QUERY } from "../../lib/sanity/queries";
@@ -207,7 +207,7 @@ export default async function Page({ params }: Props) {
 
   // Preload the hero LCP image — tells browser to fetch it immediately
   // instead of waiting for CSS background-image to be parsed client-side.
-  ReactDOM.preload("/images/hero-greece.webp", {
+  preload("/images/hero-greece.webp", {
     as: "image",
     fetchPriority: "high",
   });

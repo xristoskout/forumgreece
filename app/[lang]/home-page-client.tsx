@@ -623,7 +623,7 @@ export default function HomePageClient({
 
   return (
     <main 
-      className="min-h-screen bg-[#f8fbff] text-slate-900 mesh-gradient animate-[fade-in_0.5s_ease-out]"
+      className="min-h-screen bg-[#f8fbff] text-slate-900 mesh-gradient"
     >
       <SiteHeader />
 
