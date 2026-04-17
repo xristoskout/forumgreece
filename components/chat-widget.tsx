@@ -48,7 +48,7 @@ export default function ChatWidget() {
   if (!mounted) return null;
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end">
+    <div className="fixed bottom-6 left-1/2 -translate-x-1/2 sm:left-auto sm:translate-x-0 sm:right-6 z-50 flex flex-col items-center sm:items-end w-[calc(100%-2rem)] sm:w-auto">
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -56,7 +56,7 @@ export default function ChatWidget() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
             transition={{ duration: 0.3 }}
-            className="mb-4 flex flex-col overflow-hidden rounded-2xl bg-white shadow-2xl ring-1 ring-slate-900/10 w-[350px] sm:w-[400px] max-h-[600px] h-[75vh]"
+            className="mb-4 flex flex-col overflow-hidden rounded-2xl bg-white shadow-2xl ring-1 ring-slate-900/10 w-full sm:w-[400px] max-h-[600px] h-[75vh]"
           >
             {/* Header */}
             <div className="bg-indigo-600 p-4 text-white shadow-sm flex items-center justify-between z-10">

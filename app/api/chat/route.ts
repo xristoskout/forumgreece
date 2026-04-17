@@ -93,23 +93,23 @@ ${databaseContext}
     `;
 
     const stream = createUIMessageStream({
-      execute: ({ writer }) => {
-        // Manually map messages to ModelMessage format to ensure 'content' is present
-        const modelMessages = (messages || []).map((m: any) => ({
-          role: m.role,
-          content: typeof m.content === 'string' && m.content 
-            ? m.content 
-            : (m.parts ? m.parts.filter((p: any) => p.type === 'text').map((p: any) => p.text).join('') : (m.content || ''))
-        }));
+      onError: (error) => {
+        console.error('AI Stream Error Callback:', error);
+        return 'An error occurred while streaming the response.';
+      },
+      execute: async ({ writer }) => {
+        try {
+          const result = streamText({
+            model: google('gemini-1.5-flash'),
+            system: systemPrompt,
+            messages: await convertToModelMessages(messages),
+            temperature: 0.3,
+          });
 
-        const result = streamText({
-          model: google('gemini-flash-latest'),
-          system: systemPrompt,
-          messages: modelMessages,
-          temperature: 0.3,
-        });
-
-        writer.merge(result.toUIMessageStream());
+          writer.merge(result.toUIMessageStream());
+        } catch (error) {
+          console.error('AI Stream Execution Error:', error);
+        }
       },
     });
 
