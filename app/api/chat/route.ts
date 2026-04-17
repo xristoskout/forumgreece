@@ -88,7 +88,7 @@ ${databaseContext}
     - Food/Restaurants: [Title](/el/eat-drink)
     - Tours: [Title](/el/tours)
     - Travel Info: [Guide Title](/el/travel-info)
-4. **LANGUAGE**: Always be polite. Default to Greek unless asked in English.
+4. **LANGUAGE**: Respond in the same language as the user's latest message. If the user writes in English, respond in English. If the user writes in Greek, respond in Greek. Always be polite.
 5. **FORMATTING**: Use Markdown for bold text and lists to keep it scannable.
     `;
 

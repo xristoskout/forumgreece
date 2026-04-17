@@ -81,9 +81,16 @@ export default function ChatWidget() {
             {/* Chat Area */}
             <div className="flex-1 overflow-y-auto p-4 bg-slate-50 space-y-4">
               {messages.length === 0 && (
-                <div className="flex h-full flex-col items-center justify-center text-center text-slate-500 space-y-3 p-4">
+                <div className="flex h-full flex-col items-center justify-center text-center text-slate-500 space-y-4 p-4">
                   <div className="text-4xl">🏝️</div>
-                  <p className="text-sm">Hi! I&apos;m the GoGreeceNow AI Assistant. Ask me for island guides, local info or travel tips!</p>
+                  <div className="space-y-3">
+                    <p className="text-sm font-medium text-slate-600">
+                      Γεια σας! Είμαι ο προσωπικός σας βοηθός ταξιδιών GoGreeceNow. Πώς μπορώ να σας βοηθήσω;
+                    </p>
+                    <p className="text-xs">
+                      Hi! I'm your GoGreeceNow personal travel assistant. How can I help you?
+                    </p>
+                  </div>
                 </div>
               )}
               
