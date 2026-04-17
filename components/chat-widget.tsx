@@ -15,8 +15,6 @@ export default function ChatWidget() {
   }, []);
 
   const { messages, sendMessage, status } = useChat({
-    api: '/api/chat',
-    initialInput: '',
     onError: (err) => {
       console.error("Chat Error:", err);
       alert("AI Error: Check your terminal/console for details. Likely missing API Key.");
@@ -102,40 +100,36 @@ export default function ChatWidget() {
                     }`}
                   >
                     <div className="whitespace-pre-wrap">
-                      {m.parts ? (
-                        m.parts.map((part, index) => {
-                          if (part.type === 'text') {
-                            return (
-                              <ReactMarkdown 
-                                key={index}
-                                components={{
-                                  a: ({ node, ...props }) => (
-                                    <a 
-                                      {...props} 
-                                      className="text-indigo-600 font-bold underline hover:text-indigo-800 transition-colors"
-                                      target="_blank" 
-                                      rel="noopener noreferrer"
-                                    />
-                                  ),
-                                  p: ({ node, ...props }) => <p {...props} className="mb-2 last:mb-0" />
-                                }}
-                              >
-                                {part.text}
-                              </ReactMarkdown>
-                            );
-                          }
-                          if (part.type === 'reasoning') {
-                            return (
-                              <div key={index} className="mb-2 text-xs text-slate-400 italic border-l-2 border-slate-200 pl-2">
-                                {part.text}
-                              </div>
-                            );
-                          }
-                          return null;
-                        })
-                      ) : (
-                        m.content
-                      )}
+                      {m.parts.map((part, index) => {
+                        if (part.type === 'text') {
+                          return (
+                            <ReactMarkdown
+                              key={index}
+                              components={{
+                                a: ({ node, ...props }) => (
+                                  <a 
+                                    {...props} 
+                                    className="text-amber-600 hover:text-amber-700 font-medium underline underline-offset-4 decoration-amber-600/30 hover:decoration-amber-600 transition-all"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                  />
+                                ),
+                                p: ({ node, ...props }) => <p {...props} className="mb-2 last:mb-0" />
+                              }}
+                            >
+                              {part.text}
+                            </ReactMarkdown>
+                          );
+                        }
+                        if (part.type === 'reasoning') {
+                          return (
+                            <div key={index} className="mb-2 text-xs text-slate-400 italic border-l-2 border-slate-200 pl-2">
+                              {part.text}
+                            </div>
+                          );
+                        }
+                        return null;
+                      })}
                     </div>
                   </div>
                 </div>
