@@ -48,7 +48,7 @@ export default function ChatWidget() {
   if (!mounted) return null;
 
   return (
-    <div className="fixed bottom-6 left-1/2 -translate-x-1/2 sm:left-auto sm:translate-x-0 sm:right-6 z-50 flex flex-col items-center sm:items-end w-[calc(100%-2rem)] sm:w-auto">
+    <div className="fixed bottom-6 left-1/2 -translate-x-1/2 sm:left-auto sm:translate-x-0 sm:right-6 z-50 flex flex-col items-end w-[calc(100%-2rem)] sm:w-auto">
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -82,12 +82,23 @@ export default function ChatWidget() {
             <div className="flex-1 overflow-y-auto p-4 bg-slate-50 space-y-4">
               {messages.length === 0 && (
                 <div className="flex h-full flex-col items-center justify-center text-center text-slate-500 space-y-4 p-4">
-                  <div className="text-4xl">🏝️</div>
+                  <motion.div 
+                    className="text-4xl"
+                    animate={{ 
+                      y: [0, -10, 0],
+                      rotate: [-3, 3, -3],
+                      scale: [1, 1.05, 1]
+                    }}
+                    transition={{ 
+                      duration: 5, 
+                      repeat: Infinity, 
+                      ease: "easeInOut" 
+                    }}
+                  >
+                    🏝️
+                  </motion.div>
                   <div className="space-y-3">
                     <p className="text-sm font-medium text-slate-600">
-                      Γεια σας! Είμαι ο προσωπικός σας βοηθός ταξιδιών GoGreeceNow. Πώς μπορώ να σας βοηθήσω;
-                    </p>
-                    <p className="text-xs">
                       Hi! I'm your GoGreeceNow personal travel assistant. How can I help you?
                     </p>
                   </div>
@@ -180,7 +191,7 @@ export default function ChatWidget() {
                 </button>
               </div>
               <div className="text-[10px] text-center text-slate-400 mt-2">
-                Powered by Google Gemini & Focus AI
+                Powered by Focus AI
               </div>
             </form>
           </motion.div>
