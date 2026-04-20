@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Montserrat, Geist_Mono, Noto_Sans } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import "./globals.css";
 import LangManager from "@/components/lang-manager";
 import ChatLoader from "@/components/chat-loader";
 
