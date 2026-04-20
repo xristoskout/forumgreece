@@ -2,9 +2,8 @@ import type { Metadata, Viewport } from "next";
 import { Montserrat, Geist_Mono, Noto_Sans } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import "./globals.css";
 import LangManager from "@/components/lang-manager";
-import ChatWidget from "@/components/chat-widget";
+import ChatLoader from "@/components/chat-loader";
 
 const geistSans = Montserrat({
   variable: "--font-geist-sans",
@@ -24,7 +23,7 @@ const notoGreek = Noto_Sans({
   variable: "--font-greek-sans",
   subsets: ["greek", "greek-ext"],
   display: "swap",
-  preload: false,
+  preload: true,
 });
 
 export const viewport: Viewport = {
@@ -101,7 +100,7 @@ export default function RootLayout({
         {children}
         <Analytics />
         <SpeedInsights />
-        <ChatWidget />
+        <ChatLoader />
       </body>
     </html>
   );

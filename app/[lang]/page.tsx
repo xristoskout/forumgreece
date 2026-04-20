@@ -205,13 +205,6 @@ export default async function Page({ params }: Props) {
     notFound();
   }
 
-  // Preload the hero LCP image — tells browser to fetch it immediately
-  // instead of waiting for CSS background-image to be parsed client-side.
-  preload("/images/hero-greece.webp", {
-    as: "image",
-    fetchPriority: "high",
-  });
-
   const content = await client.fetch<HomePageContent | null>(HOME_PAGE_QUERY, {
     lang,
   });
