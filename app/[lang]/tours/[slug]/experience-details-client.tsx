@@ -487,10 +487,19 @@ export default function ExperienceDetailsClient({
             </Link>
           </div>
         </div>
-        <div className="border-t border-slate-100 mt-4 pt-6 pb-8 flex justify-center">
-          <a href="https://www.focusai.gr" target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-slate-500 hover:text-indigo-600 transition-colors">
-            {lang === "en" ? "Website Design 2026 by Focus AI" : "Κατασκευή Ιστοσελίδας 2026 By Focus AI"}
+        <div className="border-t border-slate-100 mt-2 pt-5 pb-6 flex flex-col items-center gap-2">
+          <a 
+            href="https://www.focusai.gr" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="group flex items-center gap-2 text-sm font-bold tracking-widest transition-all"
+          >
+            <span className="bg-gradient-to-r from-indigo-600 to-indigo-400 bg-clip-text text-transparent group-hover:from-indigo-500 group-hover:to-purple-500 transition-all duration-500">
+              {lang === "en" ? "Website Design 2026 by Focus AI" : "Κατασκευή Ιστοσελίδας 2026 By Focus AI"}
+            </span>
+            <span className="text-indigo-400 group-hover:text-purple-500 transition-transform group-hover:translate-x-1">→</span>
           </a>
+          <p className="text-[10px] text-slate-600 uppercase tracking-[0.3em]">Premium Digital Experiences</p>
         </div>
       </footer>
 

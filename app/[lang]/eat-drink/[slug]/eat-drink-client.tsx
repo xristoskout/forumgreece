@@ -171,6 +171,49 @@ export default function EatDrinkClient({ item, lang }: EatDrinkClientProps) {
           </span>
         </Link>
       </section>
+      <footer className="border-t border-slate-200 bg-white backdrop-blur-md mt-20">
+        <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-slate-600 md:flex-row md:items-center md:justify-between">
+          <div>
+            {lang === "en"
+              ? `${siteBrand} — destinations, travel inspiration and local experiences across Greece.`
+              : `${siteBrand} — προορισμοί, ταξιδιωτική έμπνευση και τοπικές εμπειρίες σε όλη την Ελλάδα.`}
+          </div>
+
+          <div className="flex gap-5">
+            <Link href={withLang("/")} className="hover:text-slate-900">
+              {lang === "en" ? "Home" : "Αρχική"}
+            </Link>
+
+            <Link
+              href={withLang("/#destinations")}
+              className="hover:text-slate-900"
+            >
+              {lang === "en" ? "Destinations" : "Προορισμοί"}
+            </Link>
+
+            <Link
+              href={withLang("/travel-to-greece")}
+              className="hover:text-slate-900"
+            >
+              {lang === "en" ? "Travel to Greece" : "Ταξίδι στην Ελλάδα"}
+            </Link>
+          </div>
+        </div>
+        <div className="border-t border-slate-100 mt-2 pt-5 pb-6 flex flex-col items-center gap-2">
+          <a 
+            href="https://www.focusai.gr" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="group flex items-center gap-2 text-sm font-bold tracking-widest transition-all"
+          >
+            <span className="bg-gradient-to-r from-indigo-600 to-indigo-400 bg-clip-text text-transparent group-hover:from-indigo-500 group-hover:to-purple-500 transition-all duration-500">
+              {lang === "en" ? "Website Design 2026 by Focus AI" : "Κατασκευή Ιστοσελίδας 2026 By Focus AI"}
+            </span>
+            <span className="text-indigo-400 group-hover:text-purple-500 transition-transform group-hover:translate-x-1">→</span>
+          </a>
+          <p className="text-[10px] text-slate-600 uppercase tracking-[0.3em]">Premium Digital Experiences</p>
+        </div>
+      </footer>
     </main>
   );
 }
