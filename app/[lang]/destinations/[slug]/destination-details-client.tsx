@@ -4,12 +4,9 @@ import { Fragment } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import SiteHeader from "../../../../components/site-header";
-import {
-  siteBrand,
-  type Destination,
-  type Lang,
-} from "../../../../lib/content";
+import { siteBrand, type Destination, type Lang } from "../../../../lib/content";
 import Image from "next/image";
+import Script from "next/script";
 import { destinationSections } from "../../../../lib/destination-sections";
 import { destinationDetails } from "../../../../lib/destination-details";
 import { experienceBusinesses } from "../../../../lib/experiences";
@@ -64,63 +61,70 @@ export default function DestinationDetailsClient({
             const isExternalUrl = /^https?:\/\//i.test(businessHref);
 
             return (
-              <div
-                key={business.slug}
-                className="group overflow-hidden rounded-[20px] border border-slate-200 bg-white shadow-sm transition hover:shadow-md"
-              >
-                <div className="relative h-48 w-full bg-slate-100">
-                  {business.image && (
-                    <Image
-                      src={business.image}
-                      alt={business.name}
-                      fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
-                      sizes="(max-width: 640px) 100vw, 400px"
-                    />
-                  )}
-                  {business.badge && (
-                    <div className="absolute top-3 right-3">
-                      <span className="inline-flex rounded-full bg-white/95 px-3 py-1 text-xs font-bold text-indigo-800 shadow-sm backdrop-blur-sm">
-                        {business.badge}
-                      </span>
-                    </div>
-                  )}
-                </div>
-
-                <div className="p-5">
-                  <div className="text-xs font-extrabold uppercase tracking-widest text-indigo-600 mb-1">
-                    {business.category[lang]}
-                  </div>
-
-                  <h4 className="text-xl font-bold tracking-tight text-slate-900 mb-2">
-                    {business.name}
-                  </h4>
-
-                  <p className="text-sm text-slate-500 line-clamp-3 mb-4">
-                    {business.info[lang]}
-                  </p>
-
-                  <div className="mt-4">
-                    {isExternalUrl ? (
-                      <a
-                        href={businessHref}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex w-full items-center justify-center gap-2 rounded-xl bg-indigo-50 px-4 py-2.5 text-sm font-semibold text-white bg-indigo-600 transition-colors hover:bg-indigo-500 shadow-sm"
-                      >
-                        {business.ctaLabel?.[lang] || (lang === "en" ? "Visit Website" : "Επισκεφθείτε την ιστοσελίδα")}
-                      </a>
-                    ) : (
-                      <Link
-                        href={withLang(businessHref)}
-                        className="flex w-full items-center justify-center gap-2 rounded-xl bg-indigo-50 px-4 py-2.5 text-sm font-semibold text-white bg-indigo-600 transition-colors hover:bg-indigo-500 shadow-sm"
-                      >
-                        {business.ctaLabel?.[lang] || (lang === "en" ? "View Details" : "Δείτε Λεπτομέρειες")}
-                      </Link>
+              <Fragment key={business.slug}>
+                <div
+                  className="group overflow-hidden rounded-[20px] border border-slate-200 bg-white shadow-sm transition hover:shadow-md"
+                >
+                  <div className="relative h-48 w-full bg-slate-100">
+                    {business.image && (
+                      <Image
+                        src={business.image}
+                        alt={business.name}
+                        fill
+                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                        sizes="(max-width: 640px) 100vw, 400px"
+                      />
+                    )}
+                    {business.badge && (
+                      <div className="absolute top-3 right-3">
+                        <span className="inline-flex rounded-full bg-white/95 px-3 py-1 text-xs font-bold text-indigo-800 shadow-sm backdrop-blur-sm">
+                          {business.badge}
+                        </span>
+                      </div>
                     )}
                   </div>
+
+                  <div className="p-5">
+                    <div className="text-xs font-extrabold uppercase tracking-widest text-indigo-600 mb-1">
+                      {business.category[lang]}
+                    </div>
+
+                    <h4 className="text-xl font-bold tracking-tight text-slate-900 mb-2">
+                      {business.name}
+                    </h4>
+
+                    <p className="text-sm text-slate-500 line-clamp-3 mb-4">
+                      {business.info[lang]}
+                    </p>
+
+                    <div className="mt-4">
+                      {isExternalUrl ? (
+                        <a
+                          href={businessHref}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex w-full items-center justify-center gap-2 rounded-xl bg-indigo-50 px-4 py-2.5 text-sm font-semibold text-white bg-indigo-600 transition-colors hover:bg-indigo-500 shadow-sm"
+                        >
+                          {business.ctaLabel?.[lang] || (lang === "en" ? "Visit Website" : "Επισκεφθείτε την ιστοσελίδα")}
+                        </a>
+                      ) : (
+                        <Link
+                          href={withLang(businessHref)}
+                          className="flex w-full items-center justify-center gap-2 rounded-xl bg-indigo-50 px-4 py-2.5 text-sm font-semibold text-white bg-indigo-600 transition-colors hover:bg-indigo-500 shadow-sm"
+                        >
+                          {business.ctaLabel?.[lang] || (lang === "en" ? "View Details" : "Δείτε Λεπτομέρειες")}
+                        </Link>
+                      )}
+                    </div>
+                  </div>
                 </div>
-              </div>
+                {business.slug === "papadellis-olive-oil" && (
+                  <div className="w-full mt-6">
+                    <div data-vi-partner-id="P00298401" data-vi-widget-ref="W-b4298df4-e2de-499e-a767-1be0bd3e9b83"></div>
+                    <Script src="https://www.viator.com/orion/partner/widget.js" strategy="lazyOnload"></Script>
+                  </div>
+                )}
+              </Fragment>
             );
           })}
         </div>
@@ -285,6 +289,62 @@ export default function DestinationDetailsClient({
 
           <aside className="space-y-6">
             {renderBusinesses()}
+
+            {destination.slug === "athens" && (
+              <article className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm p-4 w-full">
+                <div data-vi-partner-id="P00298401" data-vi-widget-ref="W-611433de-c2b3-4d2e-9074-eaa7eff90944"></div>
+                <Script src="https://www.viator.com/orion/partner/widget.js" strategy="lazyOnload"></Script>
+              </article>
+            )}
+
+            {destination.slug === "santorini" && (
+              <article className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm p-4 w-full">
+                <div data-vi-partner-id="P00298401" data-vi-widget-ref="W-e577bd63-e025-4586-8f55-bdb32bf254bc"></div>
+                <Script src="https://www.viator.com/orion/partner/widget.js" strategy="lazyOnload"></Script>
+              </article>
+            )}
+
+            {destination.slug === "corfu" && (
+              <article className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm p-4 w-full">
+                <div data-vi-partner-id="P00298401" data-vi-widget-ref="W-0683e950-d0ac-488d-8a4a-a1d86709f6a7"></div>
+                <Script src="https://www.viator.com/orion/partner/widget.js" strategy="lazyOnload"></Script>
+              </article>
+            )}
+
+            {destination.slug === "mykonos" && (
+              <article className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm p-4 w-full">
+                <div data-vi-partner-id="P00298401" data-vi-widget-ref="W-db1da184-a2f1-4058-b7f1-a9e15ccf9fa6"></div>
+                <Script src="https://www.viator.com/orion/partner/widget.js" strategy="lazyOnload"></Script>
+              </article>
+            )}
+
+            {destination.slug === "crete" && (
+              <article className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm p-4 w-full">
+                <div data-vi-partner-id="P00298401" data-vi-widget-ref="W-beb6dd42-10a7-4524-8626-6fda84f9e5df"></div>
+                <Script src="https://www.viator.com/orion/partner/widget.js" strategy="lazyOnload"></Script>
+              </article>
+            )}
+
+            {destination.slug === "nayplio-odigos-taxidiou" && (
+              <article className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm p-4 w-full">
+                <div data-vi-partner-id="P00298401" data-vi-widget-ref="W-40c6533f-c44b-4cd7-bb26-8d0788a922e2"></div>
+                <Script src="https://www.viator.com/orion/partner/widget.js" strategy="lazyOnload"></Script>
+              </article>
+            )}
+
+            {destination.slug === "thessaloniki" && (
+              <article className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm p-4 w-full">
+                <div data-vi-partner-id="P00298401" data-vi-widget-ref="W-f0334037-6d06-42d6-83a2-07d3903ef04b"></div>
+                <Script src="https://www.viator.com/orion/partner/widget.js" strategy="lazyOnload"></Script>
+              </article>
+            )}
+
+            {destination.slug === "kefalonia" && (
+              <article className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm p-4 w-full">
+                <div data-vi-partner-id="P00298401" data-vi-widget-ref="W-adaa2afb-d347-48c6-abe3-9d16f6a91959"></div>
+                <Script src="https://www.viator.com/orion/partner/widget.js" strategy="lazyOnload"></Script>
+              </article>
+            )}
 
             {details && (
               <>
