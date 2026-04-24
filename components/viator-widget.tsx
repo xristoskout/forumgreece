@@ -59,7 +59,7 @@ export default function ViatorWidget({
     // The Viator script guards against double-init with window globals.
     // Deleting them forces the fresh script copy to run its full init.
     try {
-      const win = window as Record<string, unknown>;
+      const win = window as unknown as Record<string, unknown>;
       Object.keys(win).forEach((k) => {
         if (/viator/i.test(k)) {
           try {
