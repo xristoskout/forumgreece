@@ -1,12 +1,12 @@
 "use client";
 
-import { Fragment, useEffect } from "react";
+import { Fragment } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import SiteHeader from "../../../../components/site-header";
 import { siteBrand, type Destination, type Lang } from "../../../../lib/content";
 import Image from "next/image";
-import Script from "next/script";
+import ViatorWidget from "../../../../components/viator-widget";
 import { destinationSections } from "../../../../lib/destination-sections";
 import { destinationDetails } from "../../../../lib/destination-details";
 import { experienceBusinesses } from "../../../../lib/experiences";
@@ -46,14 +46,6 @@ export default function DestinationDetailsClient({
 
   const sections = destinationSections[destination.slug] ?? [];
   const details = destinationDetails[destination.slug];
-
-  useEffect(() => {
-    // @ts-ignore
-    if (window.ViatorWidgets) {
-      // @ts-ignore
-      window.ViatorWidgets.init();
-    }
-  }, [slug]);
 
   const renderBusinesses = () => {
     if (businesses.length === 0) return null;
@@ -128,7 +120,11 @@ export default function DestinationDetailsClient({
                 </div>
                 {business.slug === "papadellis-olive-oil" && (
                   <div className="w-full mt-6">
-                    <div data-vi-partner-id="P00298401" data-vi-widget-ref="W-b4298df4-e2de-499e-a767-1be0bd3e9b83"></div>
+                    <ViatorWidget
+                      key="W-b4298df4-e2de-499e-a767-1be0bd3e9b83"
+                      partnerId="P00298401"
+                      widgetRef="W-b4298df4-e2de-499e-a767-1be0bd3e9b83"
+                    />
                   </div>
                 )}
               </Fragment>
@@ -297,53 +293,25 @@ export default function DestinationDetailsClient({
           <aside className="space-y-6">
             {renderBusinesses()}
 
-            {destination.slug === "athens" && (
-              <article className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm p-4 w-full">
-                <div data-vi-partner-id="P00298401" data-vi-widget-ref="W-611433de-c2b3-4d2e-9074-eaa7eff90944"></div>
-              </article>
-            )}
-
-            {destination.slug === "santorini" && (
-              <article className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm p-4 w-full">
-                <div data-vi-partner-id="P00298401" data-vi-widget-ref="W-e577bd63-e025-4586-8f55-bdb32bf254bc"></div>
-              </article>
-            )}
-
-            {destination.slug === "corfu" && (
-              <article className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm p-4 w-full">
-                <div data-vi-partner-id="P00298401" data-vi-widget-ref="W-0683e950-d0ac-488d-8a4a-a1d86709f6a7"></div>
-              </article>
-            )}
-
-            {destination.slug === "mykonos" && (
-              <article className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm p-4 w-full">
-                <div data-vi-partner-id="P00298401" data-vi-widget-ref="W-db1da184-a2f1-4058-b7f1-a9e15ccf9fa6"></div>
-              </article>
-            )}
-
-            {destination.slug === "crete" && (
-              <article className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm p-4 w-full">
-                <div data-vi-partner-id="P00298401" data-vi-widget-ref="W-beb6dd42-10a7-4524-8626-6fda84f9e5df"></div>
-              </article>
-            )}
-
-            {destination.slug === "nayplio-odigos-taxidiou" && (
-              <article className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm p-4 w-full">
-                <div data-vi-partner-id="P00298401" data-vi-widget-ref="W-40c6533f-c44b-4cd7-bb26-8d0788a922e2"></div>
-              </article>
-            )}
-
-            {destination.slug === "thessaloniki" && (
-              <article className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm p-4 w-full">
-                <div data-vi-partner-id="P00298401" data-vi-widget-ref="W-f0334037-6d06-42d6-83a2-07d3903ef04b"></div>
-              </article>
-            )}
-
-            {destination.slug === "kefalonia" && (
-              <article className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm p-4 w-full">
-                <div data-vi-partner-id="P00298401" data-vi-widget-ref="W-adaa2afb-d347-48c6-abe3-9d16f6a91959"></div>
-              </article>
-            )}
+            {(() => {
+              const DESTINATION_WIDGETS: Record<string, string> = {
+                "athens": "W-611433de-c2b3-4d2e-9074-eaa7eff90944",
+                "santorini": "W-e577bd63-e025-4586-8f55-bdb32bf254bc",
+                "corfu": "W-0683e950-d0ac-488d-8a4a-a1d86709f6a7",
+                "mykonos": "W-db1da184-a2f1-4058-b7f1-a9e15ccf9fa6",
+                "crete": "W-beb6dd42-10a7-4524-8626-6fda84f9e5df",
+                "nayplio-odigos-taxidiou": "W-40c6533f-c44b-4cd7-bb26-8d0788a922e2",
+                "thessaloniki": "W-f0334037-6d06-42d6-83a2-07d3903ef04b",
+                "kefalonia": "W-adaa2afb-d347-48c6-abe3-9d16f6a91959",
+              };
+              const wRef = DESTINATION_WIDGETS[destination.slug];
+              if (!wRef) return null;
+              return (
+                <article className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm p-4 w-full">
+                  <ViatorWidget key={wRef} partnerId="P00298401" widgetRef={wRef} />
+                </article>
+              );
+            })()}
 
             {details && (
               <>
