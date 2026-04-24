@@ -183,7 +183,7 @@ export default function ExperienceDetailsClient({
                 {landing.title[lang]}
               </h2>
 
-              <p className="mt-5 text-base leading-8 text-slate-500">
+              <p className="mt-5 text-base leading-8 text-slate-500 whitespace-pre-wrap">
                 {landing.overview[lang]}
               </p>
             </article>
@@ -191,8 +191,14 @@ export default function ExperienceDetailsClient({
             {businesses.length > 0 && (
               <article className="rounded-[28px] border border-slate-200 bg-white backdrop-blur-md p-8 shadow-sm">
                 <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700">
-                  {t.featuredBusinesses}
+                  {lang === "en" ? "Our Recommended Local Experiences" : "Οι Προτεινόμενες Τοπικές μας Εμπειρίες"}
                 </p>
+                
+                {landing.recommendedIntro && (
+                  <p className="mt-3 text-base leading-8 text-slate-500">
+                    {landing.recommendedIntro[lang]}
+                  </p>
+                )}
 
                 <div className="mt-6 space-y-8">
                   {businesses.map((business) => {
@@ -385,6 +391,73 @@ export default function ExperienceDetailsClient({
                 </div>
               </article>
             )}
+
+            {landing.whatToBook && (
+              <article className="rounded-[28px] border border-slate-200 bg-white backdrop-blur-md p-8 shadow-sm">
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700">
+                  {landing.whatToBook.title[lang]}
+                </p>
+                <div className="mt-6 space-y-6">
+                  {landing.whatToBook.sections.map((sec, idx) => (
+                    <div key={idx}>
+                      <h3 className="text-xl font-bold text-slate-900">{sec.title[lang]}</h3>
+                      <p className="mt-2 text-base leading-7 text-slate-500">{sec.content[lang]}</p>
+                    </div>
+                  ))}
+                </div>
+              </article>
+            )}
+
+            {landing.planningTips && (
+              <article className="rounded-[28px] border border-slate-200 bg-white backdrop-blur-md p-8 shadow-sm">
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700">
+                  {landing.planningTips.title[lang]}
+                </p>
+                <ul className="mt-6 space-y-4">
+                  {landing.planningTips.tips[lang].map((tip, idx) => (
+                    <li key={idx} className="flex gap-3 items-start">
+                      <span className="text-indigo-500 mt-1">✔</span>
+                      <span className="text-base leading-7 text-slate-600">{tip}</span>
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            )}
+
+            {landing.faq && (
+              <article className="rounded-[28px] border border-slate-200 bg-white backdrop-blur-md p-8 shadow-sm">
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700">
+                  {landing.faq.title[lang]}
+                </p>
+                <div className="mt-6 space-y-6">
+                  {landing.faq.questions.map((q, idx) => (
+                    <div key={idx}>
+                      <h3 className="text-lg font-bold text-slate-900">{q.question[lang]}</h3>
+                      <p className="mt-2 text-base leading-7 text-slate-500">{q.answer[lang]}</p>
+                    </div>
+                  ))}
+                </div>
+              </article>
+            )}
+
+            {landing.internalCta && (
+              <article className="rounded-[28px] border border-indigo-100 bg-indigo-50 backdrop-blur-md p-8 shadow-sm">
+                <h3 className="text-xl font-bold text-indigo-900">
+                  {landing.internalCta.title[lang]}
+                </h3>
+                <p className="mt-3 text-base leading-7 text-indigo-700/80">
+                  {landing.internalCta.text[lang]}
+                </p>
+                <div className="mt-6">
+                  <Link
+                    href={withLang(landing.internalCta.linkHref)}
+                    className="inline-flex rounded-full bg-indigo-600 px-6 py-3 font-semibold text-white transition hover:-translate-y-0.5 hover:bg-indigo-500 hover:shadow-md"
+                  >
+                    {landing.internalCta.linkLabel[lang]}
+                  </Link>
+                </div>
+              </article>
+            )}
           </div>
 
           <aside className="space-y-6">
@@ -406,10 +479,17 @@ export default function ExperienceDetailsClient({
               const entry = TOUR_WIDGETS[landing.slug];
               if (!entry) return null;
               return (
-                <article className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm p-4 w-full">
+                <article className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm p-4 lg:p-6 w-full">
                   <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700 mb-4">
                     {entry.label[lang]}
                   </p>
+                  
+                  {landing.moreToursIntro && (
+                    <p className="mb-6 text-sm leading-6 text-slate-500">
+                      {landing.moreToursIntro[lang]}
+                    </p>
+                  )}
+                  
                   <ViatorWidget key={entry.ref} partnerId="P00298401" widgetRef={entry.ref} />
                 </article>
               );

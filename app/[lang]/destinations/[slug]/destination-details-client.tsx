@@ -44,6 +44,38 @@ export default function DestinationDetailsClient({
     return `/${locale}${cleanPath}`;
   }
 
+  const renderTextWithLinks = (text: string) => {
+    const parts = text.split(/(\[.*?\]\(.*?\))/g);
+    return parts.map((part, index) => {
+      const match = part.match(/\[(.*?)\]\((.*?)\)/);
+      if (match) {
+        const [_, label, href] = match;
+        return (
+          <Link key={index} href={withLang(href)} className="text-indigo-300 font-semibold hover:underline underline-offset-4 decoration-indigo-300/50">
+            {label}
+          </Link>
+        );
+      }
+      return <Fragment key={index}>{part}</Fragment>;
+    });
+  };
+
+  const renderTextWithLinksDark = (text: string) => {
+    const parts = text.split(/(\[.*?\]\(.*?\))/g);
+    return parts.map((part, index) => {
+      const match = part.match(/\[(.*?)\]\((.*?)\)/);
+      if (match) {
+        const [_, label, href] = match;
+        return (
+          <Link key={index} href={withLang(href)} className="text-indigo-600 font-semibold hover:underline underline-offset-4 decoration-indigo-600/50">
+            {label}
+          </Link>
+        );
+      }
+      return <Fragment key={index}>{part}</Fragment>;
+    });
+  };
+
   const sections = destinationSections[destination.slug] ?? [];
   const details = destinationDetails[destination.slug];
 
@@ -164,7 +196,7 @@ export default function DestinationDetailsClient({
             </h1>
 
             <p className="mt-5 max-w-2xl text-lg leading-8 text-white/90">
-              {destination.overview[lang]}
+              {renderTextWithLinks(destination.overview[lang])}
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
@@ -199,6 +231,24 @@ export default function DestinationDetailsClient({
                 <h3 className="text-xl font-bold tracking-tight text-white/95">{highlight}</h3>
               </div>
             ))}
+            {destination.guideLinks && destination.guideLinks.map((guide, idx) => (
+              <Link
+                key={guide.href}
+                href={withLang(guide.href)}
+                className="animate-float group flex items-center gap-4 rounded-3xl bg-indigo-600/90 px-6 py-5 shadow-lg backdrop-blur-md border border-indigo-400/50 transition-all duration-300 hover:bg-indigo-500 hover:border-indigo-300 hover:-translate-y-1 hover:shadow-2xl"
+                style={{ animationDelay: ((destination.highlights[lang].length + idx) * 0.2) + "s" }}
+              >
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white/20 text-white transition-transform duration-300 group-hover:translate-x-1 drop-shadow-md shadow-inner">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-xs font-semibold text-indigo-100 uppercase tracking-wider mb-0.5">
+                    {lang === "en" ? "Travel Guide" : "Ταξιδιωτικος Οδηγος"}
+                  </span>
+                  <h3 className="text-xl font-bold tracking-tight text-white">{guide.label[lang]}</h3>
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
@@ -218,7 +268,7 @@ export default function DestinationDetailsClient({
               </h2>
 
               <p className="mt-5 text-base leading-8 text-slate-500">
-                {details ? details.overview[lang] : destination.overview[lang]}
+                {details ? renderTextWithLinksDark(details.overview[lang]) : renderTextWithLinksDark(destination.overview[lang])}
               </p>
             </article>
 

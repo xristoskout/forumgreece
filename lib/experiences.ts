@@ -8,6 +8,32 @@ export type ExperienceLanding = {
   highlights: LocalizedList;
   highlightReasons: LocalizedList;
   image?: string;
+  seo?: {
+    title: Localized;
+    description: Localized;
+  };
+  customH1?: Localized;
+  customIntro?: Localized;
+  recommendedIntro?: Localized;
+  moreToursIntro?: Localized;
+  whatToBook?: {
+    title: Localized;
+    sections: { title: Localized; content: Localized }[];
+  };
+  planningTips?: {
+    title: Localized;
+    tips: LocalizedList;
+  };
+  faq?: {
+    title: Localized;
+    questions: { question: Localized; answer: Localized }[];
+  };
+  internalCta?: {
+    title: Localized;
+    text: Localized;
+    linkHref: string;
+    linkLabel: Localized;
+  };
 };
 
 export type ExperienceBusiness = {
@@ -42,17 +68,106 @@ export type ExperienceBusiness = {
 export const experienceLandings: ExperienceLanding[] = [
   {
     slug: "kefalonia-tours",
+    seo: {
+      title: {
+        en: "Best Tours & Experiences in Kefalonia | GoGreeceNow",
+        el: "Οι Καλύτερες Εκδρομές & Εμπειρίες στην Κεφαλονιά | GoGreeceNow",
+      },
+      description: {
+        en: "Discover the best tours and experiences in Kefalonia, from boat trips and beach excursions to local activities and day tours. Explore curated recommendations and more ideas for your trip.",
+        el: "Ανακαλύψτε τις καλύτερες εκδρομές και εμπειρίες στην Κεφαλονιά, από boat trips και εξορμήσεις σε παραλίες μέχρι τοπικές δραστηριότητες. Εξερευνήστε επιλεγμένες προτάσεις και ιδέες για το ταξίδι σας.",
+      },
+    },
     title: {
-      en: "Recommended Local Experiences in Kefalonia",
-      el: "Προτεινόμενες Τοπικές Εμπειρίες στην Κεφαλονιά",
+      en: "Best Tours & Experiences in Kefalonia",
+      el: "Οι Καλύτερες Εκδρομές & Εμπειρίες στην Κεφαλονιά",
     },
     description: {
-      en: "Kefalonia is an island of dramatic landscapes and crystal-clear waters, offering everything from world-famous beach boat trips to local food experiences and hidden gems. On this page, we feature selected local businesses and additional tours to help you explore the best of the Ionian's largest island.",
-      el: "Η Κεφαλονιά είναι ένα νησί με εντυπωσιακά τοπία και κρυστάλλινα νερά, προσφέροντας τα πάντα, από παγκοσμίου φήμης boat trips μέχρι τοπικές γαστρονομικές εμπειρίες και κρυμμένα διαμάντια. Σε αυτή τη σελίδα, παρουσιάζουμε επιλεγμένες τοπικές επιχειρήσεις και επιπλέον εκδρομές για να ανακαλύψετε τα καλύτερα του μεγαλύτερου νησιού του Ιονίου.",
+      en: "Kefalonia is one of those Greek islands that feels made for exploring. Beyond its famous beaches and postcard views, it offers some of the most rewarding travel experiences in the Ionian Sea — from boat trips and cave visits to scenic coastal drives, local food stops, and laid-back island adventures.",
+      el: "Η Κεφαλονιά είναι από τα ελληνικά νησιά που μοιάζουν φτιαγμένα για εξερεύνηση. Πέρα από τις διάσημες παραλίες της, προσφέρει μερικές από τις πιο ξεχωριστές ταξιδιωτικές εμπειρίες στο Ιόνιο — από boat trips και επισκέψεις σε σπήλαια μέχρι γραφικές παραθαλάσσιες διαδρομές και χαλαρές νησιωτικές περιπέτειες.",
     },
     overview: {
-      en: "This page is designed as a curated guide to local experiences in Kefalonia. Instead of focusing only on general inspiration, it is built to feature real businesses, tours, and visitor-friendly experiences that bring travelers closer to the island's culture and natural beauty.",
-      el: "Αυτή η σελίδα έχει σχεδιαστεί ως curated οδηγός τοπικών εμπειριών στην Κεφαλονιά. Αντί να εστιάζει μόνο σε γενική ταξιδιωτική έμπνευση, είναι φτιαγμένη για να προβάλλει πραγματικές επιχειρήσεις, εκδρομές και εμπειρίες που φέρνουν τον ταξιδιώτη πιο κοντά στον πολιτισμό και τη φυσική ομορφιά του νησιού.",
+      en: "Whether you are visiting for a few days or planning a longer stay, choosing the right experiences can make a big difference in how much of the island you truly see. On this page, we bring together selected tours, activities, and local experiences in Kefalonia to help you plan more easily.\n\nYou will find a mix of curated recommendations, featured local experiences, and additional options for travelers who want to discover more of the island. Some visitors are looking for classic highlights such as boat excursions and beach-focused day trips, while others prefer slower and more local experiences that connect them with the island’s villages, food, and landscape.\n\nKefalonia works especially well for travelers who enjoy flexibility. It is an island where a single day can include a swim stop, a scenic drive, a harbor lunch, and a sunset back in town. That is why tours here are not only about checking off attractions — they are also about making the most of distances, local know-how, and hidden corners that many visitors would otherwise miss.",
+      el: "Είτε την επισκέπτεστε για λίγες μέρες είτε σχεδιάζετε μεγαλύτερη διαμονή, η επιλογή των σωστών εμπειριών μπορεί να κάνει μεγάλη διαφορά. Σε αυτή τη σελίδα, συγκεντρώνουμε επιλεγμένες εκδρομές, δραστηριότητες και τοπικές εμπειρίες στην Κεφαλονιά για να σας βοηθήσουμε να σχεδιάσετε το ταξίδι σας πιο εύκολα.\n\nΘα βρείτε ένα μείγμα προσεγμένων προτάσεων, επιλεγμένων τοπικών εμπειριών και επιπλέον επιλογών για ταξιδιώτες που θέλουν να ανακαλύψουν περισσότερα. Μερικοί αναζητούν κλασικά highlights όπως θαλάσσιες εκδρομές, ενώ άλλοι προτιμούν πιο χαλαρές και τοπικές εμπειρίες.\n\nΗ Κεφαλονιά ταιριάζει απόλυτα σε ταξιδιώτες που αγαπούν την ευελιξία. Είναι ένα νησί όπου μια μέρα μπορεί να περιλαμβάνει στάση για μπάνιο, γραφική οδήγηση, γεύμα σε λιμανάκι και ηλιοβασίλεμα. Γι' αυτό οι εκδρομές εδώ δεν αφορούν μόνο τα αξιοθέατα, αλλά και την τοπική γνώση.",
+    },
+    recommendedIntro: {
+      en: "These are selected local experiences and featured options we currently recommend in Kefalonia. As GoGreeceNow continues to grow, more handpicked activities and local partners will be added here.",
+      el: "Αυτές είναι επιλεγμένες τοπικές εμπειρίες που προτείνουμε στην Κεφαλονιά. Καθώς το GoGreeceNow μεγαλώνει, θα προστίθενται εδώ περισσότερες προσεγμένες δραστηριότητες και τοπικοί συνεργάτες.",
+    },
+    moreToursIntro: {
+      en: "Looking for more options? Here you can explore additional tours and activities in Kefalonia, including popular excursions, sea experiences, island highlights, and other bookable ideas for your stay.",
+      el: "Αναζητάτε περισσότερες επιλογές; Εδώ μπορείτε να εξερευνήσετε επιπλέον εκδρομές και δραστηριότητες στην Κεφαλονιά, όπως δημοφιλείς εξορμήσεις, θαλάσσιες εμπειρίες και άλλες ιδέες.",
+    },
+    whatToBook: {
+      title: { en: "What to Book in Kefalonia", el: "Τι να Κλείσετε στην Κεφαλονιά" },
+      sections: [
+        {
+          title: { en: "Boat trips and coastal experiences", el: "Boat trips και θαλάσσιες εμπειρίες" },
+          content: { en: "Kefalonia is a strong destination for sea-based experiences. Boat trips are often one of the easiest ways to enjoy the island’s coastline, access beautiful swimming spots, and add variety to your trip without spending the whole day driving.", el: "Η Κεφαλονιά είναι κορυφαίος προορισμός για θαλάσσιες εμπειρίες. Τα boat trips είναι συχνά ο πιο εύκολος τρόπος να απολαύσετε την ακτογραμμή και τα κρυφά σημεία κολύμβησης χωρίς να οδηγείτε όλη μέρα." },
+        },
+        {
+          title: { en: "Scenic island day tours", el: "Γραφικές ημερήσιες εκδρομές" },
+          content: { en: "If you want a broader overview of the island, guided or semi-guided day tours can help you combine villages, viewpoints, beaches, and key attractions in a way that feels more efficient and relaxed.", el: "Αν θέλετε μια γενική εικόνα του νησιού, οι οργανωμένες ημερήσιες εκδρομές σας βοηθούν να συνδυάσετε χωριά, σημεία θέας και παραλίες με πιο ξεκούραστο τρόπο." },
+        },
+        {
+          title: { en: "Local food and relaxed cultural experiences", el: "Τοπικό φαγητό και πολιτιστικές εμπειρίες" },
+          content: { en: "Not every experience in Kefalonia has to be high-energy. For many visitors, the most memorable moments come from local flavors, small villages, waterfront stops, and slower experiences that give the island more character.", el: "Δεν χρειάζεται κάθε εμπειρία να απαιτεί πολλή ενέργεια. Για πολλούς, οι καλύτερες στιγμές προέρχονται από τοπικές γεύσεις, μικρά χωριά και πιο αργές εμπειρίες που αναδεικνύουν τον χαρακτήρα του νησιού." },
+        },
+        {
+          title: { en: "Flexible experiences for short stays", el: "Ευέλικτες εμπειρίες για σύντομη διαμονή" },
+          content: { en: "If you only have a limited number of days in Kefalonia, booking one or two well-chosen activities can help you see more without overplanning every detail yourself.", el: "Αν έχετε περιορισμένες μέρες στην Κεφαλονιά, το κλείσιμο μίας ή δύο στοχευμένων δραστηριοτήτων μπορεί να σας βοηθήσει να δείτε περισσότερα χωρίς άγχος." },
+        },
+      ],
+    },
+    planningTips: {
+      title: { en: "Planning Tips for Kefalonia Tours", el: "Πρακτικές Συμβουλές για τις Εκδρομές" },
+      tips: {
+        en: [
+          "Book sea-based activities earlier if you are traveling in peak summer.",
+          "Keep weather and wind conditions in mind for boat experiences.",
+          "If you are staying in one part of the island, check travel times before booking activities in another area.",
+          "Mix one organized experience with slower free days to keep your trip balanced.",
+          "If you are traveling as a family, prioritize easy-access and half-day experiences where possible.",
+        ],
+        el: [
+          "Κλείστε τις θαλάσσιες δραστηριότητες νωρίς αν ταξιδεύετε στην αιχμή του καλοκαιριού.",
+          "Λάβετε υπόψη τον καιρό και τους ανέμους για τις βαρκάδες.",
+          "Ελέγξτε τους χρόνους μετακίνησης πριν κλείσετε δραστηριότητες στην άλλη πλευρά του νησιού.",
+          "Συνδυάστε μια οργανωμένη εκδρομή με ελεύθερες μέρες για να κρατήσετε το ταξίδι σας ισορροπημένο.",
+          "Αν ταξιδεύετε με οικογένεια, προτιμήστε εύκολες και μισής μέρας εμπειρίες όπου είναι δυνατόν.",
+        ],
+      },
+    },
+    faq: {
+      title: { en: "FAQ About Tours in Kefalonia", el: "Συχνές Ερωτήσεις για τις Εκδρομές στην Κεφαλονιά" },
+      questions: [
+        {
+          question: { en: "Are tours in Kefalonia worth it?", el: "Αξίζουν οι εκδρομές στην Κεφαλονιά;" },
+          answer: { en: "Yes, especially if you want to combine convenience with local insight. Tours can save time, reduce driving stress, and help you experience parts of the island more efficiently.", el: "Ναι, ειδικά αν θέλετε να συνδυάσετε την άνεση με την τοπική γνώση. Οι εκδρομές εξοικονομούν χρόνο, μειώνουν το άγχος της οδήγησης και σας βοηθούν να δείτε μέρη πιο αποτελεσματικά." },
+        },
+        {
+          question: { en: "What kind of tours are best in Kefalonia?", el: "Τι είδους εκδρομές είναι καλύτερες στην Κεφαλονιά;" },
+          answer: { en: "Boat trips, scenic island tours, beach-focused experiences, and relaxed local activities are usually among the best choices for first-time visitors.", el: "Boat trips, γραφικές διαδρομές στο νησί, εξορμήσεις σε παραλίες και χαλαρές τοπικές δραστηριότητες είναι συνήθως οι καλύτερες επιλογές." },
+        },
+        {
+          question: { en: "Do I need to book Kefalonia tours in advance?", el: "Πρέπει να κλείσω εκδρομές από πριν;" },
+          answer: { en: "In the high season, booking in advance is a good idea, especially for popular sea experiences and limited-capacity activities.", el: "Στην υψηλή περίοδο (high season), η προκράτηση είναι καλή ιδέα, ειδικά για δημοφιλείς θαλάσσιες εμπειρίες." },
+        },
+        {
+          question: { en: "Is Kefalonia good for family-friendly tours?", el: "Είναι η Κεφαλονιά καλή για οικογενειακές εκδρομές;" },
+          answer: { en: "Yes. Kefalonia can work very well for families if you choose easier, well-paced experiences and avoid overloading the itinerary.", el: "Ναι. Η Κεφαλονιά ταιριάζει πολύ καλά σε οικογένειες αν επιλέξετε πιο εύκολες και ξεκούραστες εμπειρίες και αποφύγετε τα υπερφορτωμένα προγράμματα." },
+        },
+        {
+          question: { en: "Where can I learn more about the island before booking?", el: "Πού μπορώ να μάθω περισσότερα για το νησί πριν κλείσω;" },
+          answer: { en: "You can also explore our Kefalonia destination guide for more ideas, practical tips, and travel inspiration.", el: "Μπορείτε επίσης να εξερευνήσετε τον πλήρη οδηγό προορισμού μας για την Κεφαλονιά για περισσότερες ιδέες και ταξιδιωτική έμπνευση." },
+        },
+      ],
+    },
+    internalCta: {
+      title: { en: "Continue planning your trip", el: "Συνεχίστε την οργάνωση του ταξιδιού σας" },
+      text: { en: "Explore our Kefalonia destination guide for beaches, places to stay, food ideas, and practical travel inspiration.", el: "Εξερευνήστε τον οδηγό μας για την Κεφαλονιά για παραλίες, μέρη για διαμονή, ιδέες για φαγητό και πρακτική ταξιδιωτική έμπνευση." },
+      linkHref: "/destinations/kefalonia",
+      linkLabel: { en: "Kefalonia Guide", el: "Οδηγός Κεφαλονιάς" },
     },
     highlights: {
       en: [
@@ -85,17 +200,106 @@ export const experienceLandings: ExperienceLanding[] = [
   },
   {
     slug: "lesvos-tours",
+    seo: {
+      title: {
+        en: "Best Tours & Experiences in Lesvos | GoGreeceNow",
+        el: "Οι Καλύτερες Εκδρομές & Εμπειρίες στη Λέσβο | GoGreeceNow",
+      },
+      description: {
+        en: "Explore the best tours and experiences in Lesvos, from local activities and island highlights to curated recommendations and bookable ideas for your trip.",
+        el: "Εξερευνήστε τις καλύτερες εκδρομές και εμπειρίες στη Λέσβο, από τοπικές δραστηριότητες μέχρι επιλεγμένες προτάσεις και ιδέες για το ταξίδι σας.",
+      },
+    },
     title: {
-      en: "Recommended Local Experiences in Lesvos",
-      el: "Προτεινόμενες Τοπικές Εμπειρίες στη Λέσβο",
+      en: "Best Tours & Experiences in Lesvos",
+      el: "Οι Καλύτερες Εκδρομές & Εμπειρίες στη Λέσβο",
     },
     description: {
-      en: "Lesvos is a land of authentic tradition and rich history, famous for its olive oil, ouzo, and unique culinary heritage. On this page, we feature selected local producers and experiences along with additional activities to help you discover the true soul of the North Aegean.",
-      el: "Η Λέσβος είναι ένας τόπος αυθεντικής παράδοσης και πλούσιας ιστορίας, φημισμένος για το ελαιόλαδο, το ούζο και τη μοναδική γαστρονομική του κληρονομιά. Σε αυτή τη σελίδα, παρουσιάζουμε επιλεγμένους τοπικούς παραγωγούς και εμπειρίες μαζί με επιπλέον δραστηριότητες για να ανακαλύψετε την αληθινή ψυχή του Βορείου Αιγαίου.",
+      en: "Lesvos is one of the most authentic and varied islands in Greece, and that is exactly why tours and experiences here can be so rewarding. It is a destination with a very different rhythm from the more heavily visited islands. Instead of feeling built around a single hotspot, Lesvos unfolds through villages, coastal roads, thermal traditions, local food, beaches, cultural heritage, and a strong sense of place.",
+      el: "Η Λέσβος είναι ένα από τα πιο αυθεντικά και πολύμορφα νησιά της Ελλάδας, και γι' αυτό ακριβώς οι εκδρομές και οι εμπειρίες εδώ είναι τόσο ξεχωριστές. Είναι ένας προορισμός με εντελώς διαφορετικό ρυθμό από τα πιο πολυσύχναστα νησιά. Αντί να περιστρέφεται γύρω από ένα μόνο αξιοθέατο, η Λέσβος ξεδιπλώνεται μέσα από χωριά, παραθαλάσσιους δρόμους, ιαματικές παραδόσεις, τοπικό φαγητό, πολιτιστική κληρονομιά και μια έντονη αίσθηση τοπικότητας.",
     },
     overview: {
-      en: "This page is designed as a curated guide to local experiences in Lesvos. Instead of focusing only on general inspiration, it is built to feature real businesses and visitor-friendly experiences that bring travelers closer to the island’s culture, food and local identity.",
-      el: "Αυτή η σελίδα έχει σχεδιαστεί ως curated οδηγός τοπικών εμπειριών στη Λέσβο. Αντί να εστιάζει μόνο σε γενική ταξιδιωτική έμπνευση, είναι φτιαγμένη για να προβάλλει πραγματικές επιχειρήσεις και εμπειρίες για επισκέπτες που φέρνουν τον ταξιδιώτη πιο κοντά στον πολιτισμό, τις γεύσεις και την τοπική ταυτότητα του νησιού.",
+      en: "For travelers who want more than a quick checklist of sights, this island offers experiences that feel more grounded and memorable. On this page, we bring together selected tours, local experiences, and additional activities that can help visitors discover Lesvos more meaningfully.\n\nSome travelers come for the beaches and relaxed atmosphere. Others are interested in village life, nature, history, food, and the quieter side of the Aegean. That mix is exactly what makes Lesvos special — and it also means that the best experiences are not always the loudest or the most commercial.\n\nOur goal is to highlight both curated local recommendations and additional options that may help you shape your stay, whether you are based in Mytilene, Plomari, Molyvos, Eressos, or another part of the island. Lesvos is large enough that a well-chosen tour or activity can save time, add context, and help you discover places you might otherwise miss.",
+      el: "Σε αυτή τη σελίδα, συγκεντρώνουμε επιλεγμένες εκδρομές, τοπικές εμπειρίες και δραστηριότητες που βοηθούν τους επισκέπτες να ανακαλύψουν τη Λέσβο πιο ουσιαστικά. Μερικοί ταξιδιώτες έρχονται για τις παραλίες και τη χαλαρή ατμόσφαιρα. Άλλοι ενδιαφέρονται για τη ζωή στο χωριό, τη φύση, την ιστορία, το φαγητό και την πιο ήσυχη πλευρά του Αιγαίου.\n\nΑυτός ο συνδυασμός είναι ακριβώς που κάνει τη Λέσβο ξεχωριστή — και σημαίνει επίσης ότι οι καλύτερες εμπειρίες δεν είναι πάντα οι πιο εμπορικές. Στόχος μας είναι να αναδείξουμε επιλεγμένες τοπικές προτάσεις και επιπλέον επιλογές που θα σας βοηθήσουν να διαμορφώσετε τη διαμονή σας.\n\nΕίτε μένετε στη Μυτιλήνη, το Πλωμάρι, τον Μόλυβο, την Ερεσό είτε σε άλλο σημείο, η Λέσβος είναι αρκετά μεγάλη. Επομένως, μια καλά επιλεγμένη εκδρομή μπορεί να εξοικονομήσει χρόνο, να προσθέσει αξία και να σας βοηθήσει να ανακαλύψετε μέρη που αλλιώς μπορεί να χάνατε.",
+    },
+    recommendedIntro: {
+      en: "These are selected local experiences and featured recommendations we currently highlight in Lesvos. We are building this section gradually and prioritizing quality over quantity.",
+      el: "Αυτές είναι επιλεγμένες τοπικές εμπειρίες και προτάσεις που ξεχωρίζουμε στη Λέσβο. Χτίζουμε αυτή την ενότητα σταδιακά και δίνουμε προτεραιότητα στην ποιότητα αντί για την ποσότητα.",
+    },
+    moreToursIntro: {
+      en: "If you want additional inspiration, you can also browse more activities and travel experiences in Lesvos below, including island discovery ideas, local outings, and bookable options for your stay.",
+      el: "Αν αναζητάτε επιπλέον έμπνευση, μπορείτε να εξερευνήσετε περισσότερες δραστηριότητες και ταξιδιωτικές εμπειρίες στη Λέσβο παρακάτω, όπως ιδέες εξερεύνησης του νησιού και τοπικές εξορμήσεις.",
+    },
+    whatToBook: {
+      title: { en: "What Kind of Experiences Work Best in Lesvos", el: "Ποιες Εμπειρίες Ταιριάζουν Περισσότερο στη Λέσβο" },
+      sections: [
+        {
+          title: { en: "Village and culture-focused experiences", el: "Χωριά και πολιτιστικές εμπειρίες" },
+          content: { en: "Lesvos is ideal for travelers who enjoy local character, traditional settlements, slower exploration, and places with a strong identity rather than only resort-style tourism.", el: "Η Λέσβος είναι ιδανική για ταξιδιώτες που απολαμβάνουν τον τοπικό χαρακτήρα, τους παραδοσιακούς οικισμούς, την πιο αργή εξερεύνηση και τα μέρη με ισχυρή ταυτότητα αντί για μαζικό τουρισμό." },
+        },
+        {
+          title: { en: "Food, local products, and authentic stops", el: "Φαγητό, τοπικά προϊόντα και αυθεντικές στάσεις" },
+          content: { en: "The island is particularly rewarding for visitors who want to connect with local flavors, olive heritage, seafood, ouzo culture, and regional traditions.", el: "Το νησί είναι ιδιαίτερα ανταποδοτικό για όσους θέλουν να γνωρίσουν τις τοπικές γεύσεις, την κληρονομιά του ελαιολάδου, τα θαλασσινά, την κουλτούρα του ούζου και τις παραδόσεις της περιοχής." },
+        },
+        {
+          title: { en: "Nature and scenic island discovery", el: "Φύση και γραφική εξερεύνηση" },
+          content: { en: "Because Lesvos is large and geographically varied, day trips and island exploration experiences can add real value. They help travelers discover more without needing to organize every stop alone.", el: "Επειδή η Λέσβος είναι μεγάλη και έχει γεωγραφική ποικιλία, οι ημερήσιες εκδρομές μπορούν να προσθέσουν πραγματική αξία. Βοηθούν τους ταξιδιώτες να δουν περισσότερα χωρίς να χρειάζεται να οργανώσουν κάθε στάση μόνοι τους." },
+        },
+        {
+          title: { en: "Relaxed experiences for travelers who want depth", el: "Χαλαρές εμπειρίες για ταξιδιώτες που αναζητούν βάθος" },
+          content: { en: "Lesvos works best when approached with a slower mindset. Many of the best experiences are not about speed, but about atmosphere, perspective, and local life.", el: "Η Λέσβος προσεγγίζεται καλύτερα με πιο αργούς ρυθμούς. Πολλές από τις καλύτερες εμπειρίες δεν αφορούν την ταχύτητα, αλλά την ατμόσφαιρα και την τοπική ζωή." },
+        },
+      ],
+    },
+    planningTips: {
+      title: { en: "Planning Tips for Lesvos Tours", el: "Πρακτικές Συμβουλές για τις Εκδρομές στη Λέσβο" },
+      tips: {
+        en: [
+          "Choose activities based on the part of the island where you are staying.",
+          "Lesvos is larger than many visitors expect, so driving times matter.",
+          "Do not overpack your itinerary — the island rewards slower travel.",
+          "Balance sightseeing with beach time, food stops, and village exploration.",
+          "If you want a more local feel, prioritize experiences with regional character rather than generic tourist formats.",
+        ],
+        el: [
+          "Επιλέξτε δραστηριότητες με βάση την περιοχή του νησιού όπου μένετε.",
+          "Η Λέσβος είναι μεγαλύτερη από όσο περιμένουν πολλοί επισκέπτες, οπότε ο χρόνος οδήγησης έχει σημασία.",
+          "Μην υπερφορτώνετε το πρόγραμμά σας — το νησί ανταμείβει τους πιο χαλαρούς ρυθμούς.",
+          "Ισορροπήστε την περιήγηση με χρόνο στις παραλίες, στάσεις για φαγητό και εξερεύνηση των χωριών.",
+          "Αν θέλετε μια πιο αυθεντική αίσθηση, προτιμήστε εμπειρίες με τοπικό χαρακτήρα.",
+        ],
+      },
+    },
+    faq: {
+      title: { en: "FAQ About Tours in Lesvos", el: "Συχνές Ερωτήσεις για τις Εκδρομές στη Λέσβο" },
+      questions: [
+        {
+          question: { en: "Are tours in Lesvos worth booking?", el: "Αξίζουν οι εκδρομές στη Λέσβο;" },
+          answer: { en: "Yes, especially if you want help exploring a larger island with many different regions and local highlights.", el: "Ναι, ειδικά αν θέλετε βοήθεια για να εξερευνήσετε ένα μεγάλο νησί με πολλές διαφορετικές περιοχές και τοπικά σημεία ενδιαφέροντος." },
+        },
+        {
+          question: { en: "What kind of experiences are best in Lesvos?", el: "Τι είδους εμπειρίες είναι καλύτερες στη Λέσβο;" },
+          answer: { en: "Village-focused outings, food and culture experiences, scenic island exploration, and slower local activities usually fit Lesvos very well.", el: "Εξορμήσεις με επίκεντρο τα χωριά, εμπειρίες φαγητού και πολιτισμού, γραφικές εξερευνήσεις και χαλαρές τοπικές δραστηριότητες ταιριάζουν πολύ στη Λέσβο." },
+        },
+        {
+          question: { en: "Is Lesvos good for independent travelers too?", el: "Είναι η Λέσβος καλή και για ανεξάρτητους ταξιδιώτες;" },
+          answer: { en: "Definitely. But a small number of well-chosen tours or experiences can still improve your trip and help you see more.", el: "Σίγουρα. Αλλά μερικές καλά επιλεγμένες εκδρομές μπορούν να βελτιώσουν το ταξίδι σας και να σας βοηθήσουν να δείτε περισσότερα." },
+        },
+        {
+          question: { en: "Should I book activities in advance?", el: "Πρέπει να κλείσω δραστηριότητες από πριν;" },
+          answer: { en: "In peak summer, booking ahead is a good idea for limited-availability experiences. Outside the busiest periods, there is often more flexibility.", el: "Στην αιχμή του καλοκαιριού, η προκράτηση είναι καλή ιδέα. Εκτός των περιόδων αιχμής, υπάρχει συχνά μεγαλύτερη ευελιξία." },
+        },
+        {
+          question: { en: "Where can I find more information about the island?", el: "Πού μπορώ να βρω περισσότερες πληροφορίες για το νησί;" },
+          answer: { en: "You can continue with our Lesvos destination guide for practical travel ideas, areas, beaches, and local inspiration.", el: "Μπορείτε να διαβάσετε τον ταξιδιωτικό μας οδηγό για τη Λέσβο για πρακτικές ιδέες, παραλίες και έμπνευση." },
+        },
+      ],
+    },
+    internalCta: {
+      title: { en: "Explore more of the island", el: "Εξερευνήστε περισσότερο το νησί" },
+      text: { en: "Visit our Lesvos destination guide for beaches, villages, food ideas, and travel planning tips.", el: "Διαβάστε τον οδηγό προορισμού μας για τη Λέσβο για παραλίες, χωριά, φαγητό και πρακτικές συμβουλές." },
+      linkHref: "/destinations/lesvos",
+      linkLabel: { en: "Lesvos Guide", el: "Οδηγός Λέσβου" },
     },
     highlights: {
       en: [
@@ -129,17 +333,114 @@ export const experienceLandings: ExperienceLanding[] = [
   },
   {
     slug: "crete-tours",
+    seo: {
+      title: {
+        en: "Best Tours & Experiences in Crete | GoGreeceNow",
+        el: "Οι Καλύτερες Εκδρομές & Εμπειρίες στην Κρήτη | GoGreeceNow",
+      },
+      description: {
+        en: "Discover the best tours and experiences in Crete, from boat trips and cultural outings to food experiences and island adventures. Explore curated recommendations and more activities for your trip.",
+        el: "Ανακαλύψτε τις καλύτερες εκδρομές και εμπειρίες στην Κρήτη, από boat trips και πολιτιστικές εξορμήσεις μέχρι γαστρονομικές εμπειρίες. Εξερευνήστε προτάσεις για το ταξίδι σας.",
+      },
+    },
     title: {
-      en: "Recommended Local Experiences in Crete",
-      el: "Προτεινόμενες Τοπικές Εμπειρίες στην Κρήτη",
+      en: "Best Tours & Experiences in Crete",
+      el: "Οι Καλύτερες Εκδρομές & Εμπειρίες στην Κρήτη",
     },
     description: {
-      en: "Crete is one of Greece’s most diverse destinations, offering everything from boat trips and food experiences to cultural tours and outdoor adventures. On this page, we feature selected local experiences along with additional tours and activities to help you plan your trip more easily.",
-      el: "Η Κρήτη είναι ένας από τους πιο ποικιλόμορφους προορισμούς της Ελλάδας, προσφέροντας τα πάντα, από boat trips και γαστρονομικές εμπειρίες μέχρι πολιτιστικές περιηγήσεις και υπαίθριες δραστηριότητες. Σε αυτή τη σελίδα, παρουσιάζουμε επιλεγμένες τοπικές εμπειρίες μαζί με επιπλέον εκδρομές και δραστηριότητες για να οργανώσετε το ταξίδι σας πιο εύκολα.",
+      en: "Crete is not just a beach destination or a single-stop island. It is a large, diverse, and layered place that can feel almost like several trips in one. Depending on where you stay, your experience of Crete may include historic towns, mountain villages, dramatic coastlines, local food culture, archaeological interest, family-friendly outings, or long scenic drives through very different landscapes.",
+      el: "Η Κρήτη δεν είναι απλώς ένας προορισμός για παραλίες. Είναι ένα μεγάλο, ποικιλόμορφο και πολυεπίπεδο μέρος που μοιάζει σαν πολλά ταξίδια σε ένα. Ανάλογα με το πού μένετε, η εμπειρία σας μπορεί να περιλαμβάνει ιστορικές πόλεις, ορεινά χωριά, εντυπωσιακές ακτογραμμές, τοπική γαστρονομία, αρχαιολογικό ενδιαφέρον, οικογενειακές εξορμήσεις ή μεγάλες γραφικές διαδρομές.",
     },
     overview: {
-      en: "This page is designed as a curated guide to local experiences in Crete. Instead of presenting only broad travel inspiration, it highlights businesses and services that help visitors enjoy the island in a richer, more direct and more practical way.",
-      el: "Αυτή η σελίδα έχει σχεδιαστεί ως curated οδηγός τοπικών εμπειριών στην Κρήτη. Αντί να παρουσιάζει μόνο γενική ταξιδιωτική έμπνευση, αναδεικνύει επιχειρήσεις και υπηρεσίες που βοηθούν τον επισκέπτη να απολαύσει το νησί με πιο πλούσιο, άμεσο και πρακτικό τρόπο.",
+      en: "That range is exactly why tours and organized experiences can be so useful here. On a destination as large as Crete, planning everything entirely on your own can become tiring, especially if you want to make the most of your time.\n\nA well-chosen tour or local experience can help you explore more efficiently, access places with better context, and add variety to your itinerary without turning your trip into something rushed. Some visitors want classic highlights and comfortable day trips. Others are looking for slower, more local experiences with food, culture, and regional character. Crete can support both styles very well.\n\nOn this page, we bring together selected local experiences, featured recommendations, and additional tours and activities to help you discover Crete in a more practical and inspiring way. Whether you are visiting Chania, Rethymno, Heraklion, Lasithi, or moving between regions, this page is designed to help you narrow down what is worth booking and what kind of experiences fit your trip best.",
+      el: "Αυτή η ποικιλία είναι ακριβώς ο λόγος που οι εκδρομές και οι οργανωμένες εμπειρίες είναι τόσο χρήσιμες εδώ. Σε έναν προορισμό τόσο μεγάλο όσο η Κρήτη, το να σχεδιάζετε τα πάντα μόνοι σας μπορεί να γίνει κουραστικό.\n\nΜια καλά επιλεγμένη εκδρομή ή τοπική εμπειρία μπορεί να σας βοηθήσει να εξερευνήσετε πιο αποτελεσματικά, να επισκεφθείτε μέρη με καλύτερη καθοδήγηση και να προσθέσετε ποικιλία στο πρόγραμμά σας χωρίς να βιάζεστε. Μερικοί θέλουν κλασικά highlights και άνετες ημερήσιες εκδρομές. Άλλοι αναζητούν πιο χαλαρές, τοπικές εμπειρίες με έμφαση στο φαγητό και τον πολιτισμό.\n\nΣε αυτή τη σελίδα, συγκεντρώνουμε επιλεγμένες τοπικές εμπειρίες, προτάσεις και επιπλέον δραστηριότητες για να σας βοηθήσουμε να ανακαλύψετε την Κρήτη με πιο πρακτικό τρόπο. Είτε επισκέπτεστε τα Χανιά, το Ρέθυμνο, το Ηράκλειο, το Λασίθι, είτε μετακινείστε μεταξύ νομών, αυτή η σελίδα έχει σχεδιαστεί για να σας βοηθήσει να αποφασίσετε ποιες εμπειρίες ταιριάζουν στο ταξίδι σας.",
+    },
+    recommendedIntro: {
+      en: "These are selected local experiences and featured recommendations we currently highlight in Crete. We are building this section carefully and adding more quality options over time.",
+      el: "Αυτές είναι επιλεγμένες τοπικές εμπειρίες και προτάσεις που ξεχωρίζουμε αυτή τη στιγμή στην Κρήτη. Χτίζουμε αυτή την ενότητα προσεκτικά και προσθέτουμε σταδιακά περισσότερες ποιοτικές επιλογές.",
+    },
+    moreToursIntro: {
+      en: "Below you can also explore additional tours and activities in Crete, including sea experiences, cultural outings, food-focused ideas, scenic day trips, and more options for different travel styles.",
+      el: "Παρακάτω μπορείτε να εξερευνήσετε επιπλέον εκδρομές και δραστηριότητες στην Κρήτη, συμπεριλαμβανομένων θαλάσσιων εμπειριών, πολιτιστικών εξορμήσεων, ιδεών γαστρονομίας και ημερήσιων εκδρομών.",
+    },
+    whatToBook: {
+      title: { en: "What to Book in Crete", el: "Τι να Κλείσετε στην Κρήτη" },
+      sections: [
+        {
+          title: { en: "Boat trips and coastal excursions", el: "Boat trips και θαλάσσιες εκδρομές" },
+          content: { en: "Crete offers many opportunities for sea-based experiences, and these are often among the most memorable activities for visitors who want to combine scenery, swimming, and a more relaxed day.", el: "Η Κρήτη προσφέρει πολλές ευκαιρίες για θαλάσσιες εμπειρίες, οι οποίες είναι συχνά οι πιο αξέχαστες δραστηριότητες για επισκέπτες που θέλουν να συνδυάσουν τοπίο, κολύμπι και χαλάρωση." },
+        },
+        {
+          title: { en: "Food and local culture experiences", el: "Εμπειρίες φαγητού και πολιτισμού" },
+          content: { en: "For travelers who want to understand Crete beyond its beaches, food-oriented and locally grounded experiences can add a lot of depth to the trip.", el: "Για ταξιδιώτες που θέλουν να κατανοήσουν την Κρήτη πέρα από τις παραλίες της, οι εμπειρίες με επίκεντρο το φαγητό και την τοπική παράδοση προσθέτουν μεγάλο βάθος στο ταξίδι." },
+        },
+        {
+          title: { en: "Scenic day trips across regions", el: "Γραφικές ημερήσιες εκδρομές" },
+          content: { en: "Because Crete is so large, structured day trips can be especially useful. They help travelers connect important highlights without spending too much energy on logistics.", el: "Επειδή η Κρήτη είναι τόσο μεγάλη, οι οργανωμένες ημερήσιες εκδρομές είναι ιδιαίτερα χρήσιμες. Βοηθούν τους ταξιδιώτες να δουν σημαντικά σημεία χωρίς να ξοδεύουν ενέργεια στις μετακινήσεις." },
+        },
+        {
+          title: { en: "Experiences for first-time visitors", el: "Εμπειρίες για νέους επισκέπτες" },
+          content: { en: "If this is your first trip to Crete, a balanced mix of one or two organized experiences plus independent exploration often works best.", el: "Αν είναι το πρώτο σας ταξίδι στην Κρήτη, ο καλύτερος συνδυασμός είναι συνήθως μία ή δύο οργανωμένες εμπειρίες μαζί με ελεύθερη εξερεύνηση." },
+        },
+        {
+          title: { en: "Family-friendly activity options", el: "Οικογενειακές δραστηριότητες" },
+          content: { en: "Crete can work very well for families, especially when activities are chosen based on pace, distance, and the region where you are staying.", el: "Η Κρήτη είναι εξαιρετική για οικογένειες, ειδικά όταν οι δραστηριότητες επιλέγονται με βάση τον ρυθμό, την απόσταση και την περιοχή όπου μένετε." },
+        },
+      ],
+    },
+    planningTips: {
+      title: { en: "Planning Tips for Crete Tours", el: "Πρακτικές Συμβουλές για Εκδρομές στην Κρήτη" },
+      tips: {
+        en: [
+          "Base your bookings on the region where you are staying, not just on island-wide popularity.",
+          "Travel times in Crete can be longer than many visitors expect.",
+          "Mix organized experiences with open days for beaches, towns, and meals.",
+          "Prioritize quality and fit over trying to do too much.",
+          "If you are traveling in summer, reserve higher-demand activities earlier.",
+        ],
+        el: [
+          "Κάντε κρατήσεις με βάση τον νομό όπου μένετε, όχι μόνο με βάση το πόσο δημοφιλής είναι μια δραστηριότητα σε όλο το νησί.",
+          "Οι χρόνοι μετακίνησης στην Κρήτη μπορεί να είναι μεγαλύτεροι από ό,τι περιμένουν πολλοί επισκέπτες.",
+          "Συνδυάστε οργανωμένες εμπειρίες με ελεύθερες μέρες για παραλίες, βόλτες και φαγητό.",
+          "Δώστε προτεραιότητα στην ποιότητα αντί να προσπαθείτε να κάνετε υπερβολικά πολλά.",
+          "Αν ταξιδεύετε το καλοκαίρι, κλείστε νωρίτερα τις δραστηριότητες με υψηλή ζήτηση.",
+        ],
+      },
+    },
+    faq: {
+      title: { en: "FAQ About Tours in Crete", el: "Συχνές Ερωτήσεις για τις Εκδρομές στην Κρήτη" },
+      questions: [
+        {
+          question: { en: "Are tours in Crete worth it?", el: "Αξίζουν οι εκδρομές στην Κρήτη;" },
+          answer: { en: "Yes. Crete is large enough that tours can save time, reduce planning stress, and help visitors see more of the island in a structured way.", el: "Ναι. Η Κρήτη είναι αρκετά μεγάλη ώστε οι εκδρομές να εξοικονομούν χρόνο, να μειώνουν το άγχος οργάνωσης και να βοηθούν τους επισκέπτες να δουν περισσότερα πιο δομημένα." },
+        },
+        {
+          question: { en: "What are the best tours for first-time visitors to Crete?", el: "Ποιες είναι οι καλύτερες εκδρομές για νέους επισκέπτες;" },
+          answer: { en: "That depends on your region and travel style, but boat trips, scenic day tours, food-focused experiences, and balanced cultural outings are usually strong options.", el: "Αυτό εξαρτάται από τον νομό και το στιλ σας, αλλά τα boat trips, οι γραφικές ημερήσιες εκδρομές και οι εμπειρίες φαγητού είναι συνήθως δυνατές επιλογές." },
+        },
+        {
+          question: { en: "Should I book Crete tours in advance?", el: "Πρέπει να κλείσω εκδρομές από πριν;" },
+          answer: { en: "For summer travel and popular experiences, booking ahead is recommended.", el: "Για καλοκαιρινά ταξίδια και δημοφιλείς εμπειρίες, συνιστάται η προκράτηση." },
+        },
+        {
+          question: { en: "Is Crete good for family-friendly experiences?", el: "Είναι η Κρήτη καλή για οικογενειακές εμπειρίες;" },
+          answer: { en: "Yes. Crete has a wide range of options for families, especially when you choose activities with manageable timing and easy access.", el: "Ναι. Η Κρήτη διαθέτει ευρύ φάσμα επιλογών για οικογένειες, ειδικά αν επιλέξετε δραστηριότητες με εύκολη πρόσβαση και διαχειρίσιμο χρόνο." },
+        },
+        {
+          question: { en: "Can I combine independent travel with organized activities in Crete?", el: "Μπορώ να συνδυάσω ελεύθερο ταξίδι με οργανωμένες δραστηριότητες;" },
+          answer: { en: "Absolutely. In fact, that is often the best way to experience the island.", el: "Απολύτως. Στην πραγματικότητα, αυτός είναι συχνά ο καλύτερος τρόπος για να ζήσετε το νησί." },
+        },
+        {
+          question: { en: "Where can I find more inspiration for my trip?", el: "Πού μπορώ να βρω περισσότερη έμπνευση για το ταξίδι μου;" },
+          answer: { en: "You can continue with our Crete destination guide for more ideas on areas, attractions, food, and planning.", el: "Μπορείτε να συνεχίσετε με τον ταξιδιωτικό μας οδηγό για την Κρήτη για περισσότερες ιδέες, αξιοθέατα και φαγητό." },
+        },
+      ],
+    },
+    internalCta: {
+      title: { en: "Continue planning your trip", el: "Συνεχίστε την οργάνωση του ταξιδιού σας" },
+      text: { en: "Explore our Crete destination guide for where to stay, what to see, local flavors, and travel inspiration.", el: "Εξερευνήστε τον οδηγό μας για την Κρήτη για διαμονή, αξιοθέατα, τοπικές γεύσεις και ταξιδιωτική έμπνευση." },
+      linkHref: "/destinations/crete",
+      linkLabel: { en: "Crete Guide", el: "Οδηγός Κρήτης" },
     },
     highlights: {
       en: [
