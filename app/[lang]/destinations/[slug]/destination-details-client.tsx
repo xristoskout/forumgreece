@@ -1,6 +1,6 @@
 "use client";
 
-import { Fragment } from "react";
+import { Fragment, useEffect } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import SiteHeader from "../../../../components/site-header";
@@ -46,6 +46,14 @@ export default function DestinationDetailsClient({
 
   const sections = destinationSections[destination.slug] ?? [];
   const details = destinationDetails[destination.slug];
+
+  useEffect(() => {
+    // @ts-ignore
+    if (window.ViatorWidgets) {
+      // @ts-ignore
+      window.ViatorWidgets.init();
+    }
+  }, [slug]);
 
   const renderBusinesses = () => {
     if (businesses.length === 0) return null;
@@ -121,7 +129,6 @@ export default function DestinationDetailsClient({
                 {business.slug === "papadellis-olive-oil" && (
                   <div className="w-full mt-6">
                     <div data-vi-partner-id="P00298401" data-vi-widget-ref="W-b4298df4-e2de-499e-a767-1be0bd3e9b83"></div>
-                    <Script src="https://www.viator.com/orion/partner/widget.js" strategy="lazyOnload"></Script>
                   </div>
                 )}
               </Fragment>
@@ -293,56 +300,48 @@ export default function DestinationDetailsClient({
             {destination.slug === "athens" && (
               <article className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm p-4 w-full">
                 <div data-vi-partner-id="P00298401" data-vi-widget-ref="W-611433de-c2b3-4d2e-9074-eaa7eff90944"></div>
-                <Script src="https://www.viator.com/orion/partner/widget.js" strategy="lazyOnload"></Script>
               </article>
             )}
 
             {destination.slug === "santorini" && (
               <article className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm p-4 w-full">
                 <div data-vi-partner-id="P00298401" data-vi-widget-ref="W-e577bd63-e025-4586-8f55-bdb32bf254bc"></div>
-                <Script src="https://www.viator.com/orion/partner/widget.js" strategy="lazyOnload"></Script>
               </article>
             )}
 
             {destination.slug === "corfu" && (
               <article className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm p-4 w-full">
                 <div data-vi-partner-id="P00298401" data-vi-widget-ref="W-0683e950-d0ac-488d-8a4a-a1d86709f6a7"></div>
-                <Script src="https://www.viator.com/orion/partner/widget.js" strategy="lazyOnload"></Script>
               </article>
             )}
 
             {destination.slug === "mykonos" && (
               <article className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm p-4 w-full">
                 <div data-vi-partner-id="P00298401" data-vi-widget-ref="W-db1da184-a2f1-4058-b7f1-a9e15ccf9fa6"></div>
-                <Script src="https://www.viator.com/orion/partner/widget.js" strategy="lazyOnload"></Script>
               </article>
             )}
 
             {destination.slug === "crete" && (
               <article className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm p-4 w-full">
                 <div data-vi-partner-id="P00298401" data-vi-widget-ref="W-beb6dd42-10a7-4524-8626-6fda84f9e5df"></div>
-                <Script src="https://www.viator.com/orion/partner/widget.js" strategy="lazyOnload"></Script>
               </article>
             )}
 
             {destination.slug === "nayplio-odigos-taxidiou" && (
               <article className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm p-4 w-full">
                 <div data-vi-partner-id="P00298401" data-vi-widget-ref="W-40c6533f-c44b-4cd7-bb26-8d0788a922e2"></div>
-                <Script src="https://www.viator.com/orion/partner/widget.js" strategy="lazyOnload"></Script>
               </article>
             )}
 
             {destination.slug === "thessaloniki" && (
               <article className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm p-4 w-full">
                 <div data-vi-partner-id="P00298401" data-vi-widget-ref="W-f0334037-6d06-42d6-83a2-07d3903ef04b"></div>
-                <Script src="https://www.viator.com/orion/partner/widget.js" strategy="lazyOnload"></Script>
               </article>
             )}
 
             {destination.slug === "kefalonia" && (
               <article className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm p-4 w-full">
                 <div data-vi-partner-id="P00298401" data-vi-widget-ref="W-adaa2afb-d347-48c6-abe3-9d16f6a91959"></div>
-                <Script src="https://www.viator.com/orion/partner/widget.js" strategy="lazyOnload"></Script>
               </article>
             )}
 

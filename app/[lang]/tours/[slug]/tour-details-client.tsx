@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname, useRouter, useParams } from "next/navigation";
+import { useEffect } from "react";
 import SiteHeader from "../../../../components/site-header";
 
 import {
@@ -23,6 +24,16 @@ export default function TourDetailsClient({
 }: TourDetailsClientProps) {
   const pathname = usePathname();
   const router = useRouter();
+  const params = useParams();
+  const slug = params?.slug;
+
+  useEffect(() => {
+    // @ts-ignore
+    if (window.ViatorWidgets) {
+      // @ts-ignore
+      window.ViatorWidgets.init();
+    }
+  }, [slug]);
 
   function stripLocale(path: string) {
     const stripped = path.replace(/^\/(en|el)(?=\/|$)/, "");

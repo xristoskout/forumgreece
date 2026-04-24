@@ -1,9 +1,9 @@
 "use client";
 
-import { useMemo } from "react";
+import { useMemo, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname, useRouter, useParams } from "next/navigation";
 import SiteHeader from "../../../../components/site-header";
 import BusinessGallery from "./business-gallery";
 import type { Lang } from "../../../../lib/content";
@@ -82,6 +82,16 @@ export default function BusinessDetailsClient({
 }: BusinessDetailsClientProps) {
   const pathname = usePathname();
   const router = useRouter();
+  const params = useParams();
+  const slug = params?.slug;
+
+  useEffect(() => {
+    // @ts-ignore
+    if (window.ViatorWidgets) {
+      // @ts-ignore
+      window.ViatorWidgets.init();
+    }
+  }, [slug]);
 
   function stripLocale(path: string) {
     const stripped = path.replace(/^\/(en|el)(?=\/|$)/, "");

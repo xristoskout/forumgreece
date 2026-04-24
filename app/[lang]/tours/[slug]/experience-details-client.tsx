@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Script from "next/script";
 import { usePathname, useRouter } from "next/navigation";
+import { useEffect } from "react";
 import SiteHeader from "../../../../components/site-header";
 
 import {
@@ -29,6 +30,14 @@ export default function ExperienceDetailsClient({
 }: ExperienceDetailsClientProps) {
   const pathname = usePathname();
   const router = useRouter();
+
+  useEffect(() => {
+    // @ts-ignore
+    if (window.ViatorWidgets) {
+      // @ts-ignore
+      window.ViatorWidgets.init();
+    }
+  }, [landing.slug]);
 
   function stripLocale(path: string) {
     const stripped = path.replace(/^\/(en|el)(?=\/|$)/, "");
@@ -503,17 +512,6 @@ export default function ExperienceDetailsClient({
         </div>
       </footer>
 
-      <Script 
-        src="https://www.viator.com/orion/partner/widget.js" 
-        strategy="afterInteractive"
-        onReady={() => {
-          // @ts-ignore
-          if (window.ViatorWidgets) {
-            // @ts-ignore
-            window.ViatorWidgets.init();
-          }
-        }}
-      />
     </main>
   );
 }

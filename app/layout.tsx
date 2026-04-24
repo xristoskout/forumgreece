@@ -114,6 +114,10 @@ export default function RootLayout({
             `,
           }}
         />
+        <Script 
+          src="https://www.viator.com/orion/partner/widget.js" 
+          strategy="afterInteractive"
+        />
         <LangManager />
         <div className="fixed inset-0 z-[-1] bg-[radial-gradient(circle_at_top_right,_rgba(120,80,255,0.15),_transparent_40%),radial-gradient(circle_at_bottom_left,_rgba(80,120,255,0.15),_transparent_40%)] pointer-events-none"></div>
         {children}
