@@ -153,7 +153,7 @@ export default function HotelDetailsClient() {
     <main className="min-h-screen bg-transparent text-slate-900 pt-20">
       <SiteHeader />
 
-      <section className="mx-auto max-w-7xl px-6 py-10">
+      <div className="mx-auto max-w-7xl px-6 py-10">
         <div className="flex flex-wrap items-center justify-between gap-4">
           <Link
             href={withLang("/")}
@@ -163,7 +163,7 @@ export default function HotelDetailsClient() {
           </Link>
         </div>
 
-        <section className="relative mt-8 overflow-hidden rounded-[3rem] text-slate-900 shadow-xl border border-slate-200 group">
+        <section className="relative mt-6 overflow-hidden rounded-[2.5rem] text-slate-900 shadow-xl border border-slate-200 group">
           <div className="absolute inset-0 transition-all duration-700 group-hover:scale-110 group-hover:brightness-110">
             <Image
               src={item.image}
@@ -175,23 +175,17 @@ export default function HotelDetailsClient() {
             />
           </div>
 
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-slate-50/20 opacity-90" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-slate-900/5 opacity-95" />
 
-          <div className="relative grid gap-8 px-8 py-12 lg:grid-cols-[1.1fr_0.9fr] lg:px-12 lg:py-16">
+          <div className="relative grid gap-8 px-6 py-8 lg:grid-cols-2 lg:items-center lg:px-10">
             <div>
               <div className="flex flex-wrap items-center gap-3">
                 <span className="inline-flex rounded-full border border-indigo-200 bg-indigo-100 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-indigo-800 backdrop-blur-md">
-                  {t.eyebrow[lang]}
+                  {item.badge || "Featured"}
                 </span>
-
-                {item.badge && (
-                  <span className="inline-flex rounded-full bg-amber-300/20 px-4 py-1.5 text-sm font-semibold text-amber-100 backdrop-blur">
-                    {item.badge}
-                  </span>
-                )}
               </div>
 
-              <h1 className="mt-5 text-4xl font-bold tracking-tight text-white drop-shadow-lg md:text-5xl animate-float-playful transition-all duration-300 hover:scale-105 hover:rotate-1 hover:text-indigo-50 cursor-default">
+              <h1 className="mt-5 text-4xl font-bold tracking-tight text-white drop-shadow-lg md:text-6xl animate-float-playful transition-all duration-300 hover:scale-105 hover:rotate-1 hover:text-indigo-50 cursor-default">
                 {item.name}
               </h1>
 
@@ -219,7 +213,7 @@ export default function HotelDetailsClient() {
               </p>
             </div>
 
-            <div className="rounded-[2.5rem] border border-slate-200 bg-white/90 p-8 backdrop-blur-md shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-indigo-500/10">
+            <div className="rounded-[2.5rem] border border-slate-200 bg-white/90 p-8 lg:p-10 backdrop-blur-md shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-indigo-500/10">
               <p className="text-sm font-bold uppercase tracking-widest text-indigo-700">
                 {t.quickAccess[lang]}
               </p>
@@ -264,32 +258,52 @@ export default function HotelDetailsClient() {
                     {t.openMap[lang]}
                   </a>
                 )}
-              </div>
 
-              {item.perfectFor && (
-                <div className="mt-6 rounded-2xl border border-slate-200 bg-white/8 p-5">
-                  <p className="text-sm font-semibold text-cyan-800">
-                    {t.perfectFor[lang]}
-                  </p>
-
-                  <div className="mt-4 grid gap-3">
-                    {item.perfectFor[lang].map((pf, index) => (
-                      <div
-                        key={`perfect-for-${pf}-${index}`}
-                        className="rounded-2xl bg-slate-50 px-4 py-3 text-sm leading-6 text-slate-900/90"
-                      >
-                        {pf}
-                      </div>
-                    ))}
+                {slug === "santorini" && (
+                  <div className="mt-4 overflow-hidden rounded-2xl border border-slate-200">
+                    <iframe 
+                      id="stay22-widget-santorini" 
+                      width="100%" 
+                      height="428" 
+                      src="https://stay22.com/embed/69eb77823fa26d2af687fe19" 
+                      frameBorder="0"
+                      title="Stay22 Santorini Hotels Map"
+                    ></iframe>
                   </div>
-                </div>
-              )}
+                )}
+
+                {slug === "corfu" && (
+                  <div className="mt-4 overflow-hidden rounded-2xl border border-slate-200">
+                    <iframe 
+                      id="stay22-widget-corfu" 
+                      width="100%" 
+                      height="428" 
+                      src="https://stay22.com/embed/69eb79623fa26d2af68804f7" 
+                      frameBorder="0"
+                      title="Stay22 Corfu Hotels Map"
+                    ></iframe>
+                  </div>
+                )}
+
+                {slug === "lesvos" && (
+                  <div className="mt-4 overflow-hidden rounded-2xl border border-slate-200">
+                    <iframe 
+                      id="stay22-widget-lesvos" 
+                      width="100%" 
+                      height="428" 
+                      src="https://stay22.com/embed/69eb79de3fa26d2af68806f8" 
+                      frameBorder="0"
+                      title="Stay22 Lesvos Hotels Map"
+                    ></iframe>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </section>
 
         {galleryImages.length > 1 && (
-          <section className="mt-10">
+          <section className="mt-16">
             <div className="mb-5 flex items-center justify-between">
               <h2 className="text-2xl font-bold tracking-tight text-slate-900">
                 {t.gallery[lang]}
@@ -304,8 +318,8 @@ export default function HotelDetailsClient() {
           </section>
         )}
 
-        <section className="mt-10 grid gap-6 xl:grid-cols-[1.12fr_0.88fr]">
-          <div className="space-y-6">
+        <div className="mt-16 grid gap-10 xl:grid-cols-[1.12fr_0.88fr]">
+          <div className="space-y-8">
             <section className="group rounded-[2rem] border border-slate-200 bg-white/90 backdrop-blur-md p-10 shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)]">
               <div className="flex items-center gap-4">
                 <div className="grid h-12 w-12 place-items-center rounded-2xl bg-indigo-100 text-indigo-700 font-bold text-xl shadow-inner group-hover:scale-110 transition-transform duration-500">
@@ -335,7 +349,7 @@ export default function HotelDetailsClient() {
             />
           </div>
 
-          <aside className="space-y-6">
+          <aside className="space-y-8">
             <ListCard
               title={t.features[lang]}
               items={item.features[lang]}
@@ -414,10 +428,10 @@ export default function HotelDetailsClient() {
               </section>
             )}
           </aside>
-        </section>
+        </div>
 
         {item.featuredBusinesses && item.featuredBusinesses.length > 0 && (
-          <section className="mt-16 border-t border-slate-200 pt-16">
+          <section className="mt-20 border-t border-slate-200 pt-16">
             <div className="mb-10 text-center flex flex-col items-center">
               <span className="inline-flex rounded-full bg-indigo-100 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-indigo-800">
                 {lang === "en" ? "Featured Suggestions" : "Προτεινόμενες Επιλογές"}
@@ -444,7 +458,51 @@ export default function HotelDetailsClient() {
             </div>
           </section>
         )}
-      </section>
+      </div>
+
+      <footer className="border-t border-slate-200 bg-white backdrop-blur-md mt-20">
+        <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-slate-600 md:flex-row md:items-center md:justify-between">
+          <div>
+            {lang === "en"
+              ? `${siteBrand} — destinations, travel inspiration and local experiences across Greece.`
+              : `${siteBrand} — προορισμοί, ταξιδιωτική έμπνευση και τοπικές εμπειρίες σε όλη την Ελλάδα.`}
+          </div>
+
+          <div className="flex gap-5">
+            <Link href={withLang("/")} className="hover:text-slate-900">
+              {lang === "en" ? "Home" : "Αρχική"}
+            </Link>
+
+            <Link
+              href={withLang("/#hotels")}
+              className="hover:text-slate-900"
+            >
+              {lang === "en" ? "Hotels" : "Ξενοδοχεία"}
+            </Link>
+
+            <Link
+              href={withLang("/travel-to-greece")}
+              className="hover:text-slate-900"
+            >
+              {lang === "en" ? "Travel to Greece" : "Ταξίδι στην Ελλάδα"}
+            </Link>
+          </div>
+        </div>
+        <div className="border-t border-slate-100 mt-2 pt-5 pb-6 flex flex-col items-center gap-2">
+          <a 
+            href="https://www.focusai.gr" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="group flex items-center gap-2 text-sm font-bold tracking-widest transition-all"
+          >
+            <span className="bg-gradient-to-r from-indigo-600 to-indigo-400 bg-clip-text text-transparent group-hover:from-indigo-500 group-hover:to-purple-500 transition-all duration-500">
+              {lang === "en" ? "Website Design 2026 by Focus AI" : "Κατασκευή Ιστοσελίδας 2026 By Focus AI"}
+            </span>
+            <span className="text-indigo-400 group-hover:text-purple-500 transition-transform group-hover:translate-x-1">→</span>
+          </a>
+          <p className="text-[10px] text-slate-600 uppercase tracking-[0.3em]">Premium Digital Experiences</p>
+        </div>
+      </footer>
     </main>
   );
 }

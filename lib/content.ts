@@ -1192,10 +1192,6 @@ export const hotels: HotelCard[] = [
       en: ["Spacious and beautifully decorated rooms", "Daily room freshness and cleaning", "Air conditioning for hot summer days"],
       el: ["Ευρύχωρα και όμορφα διακοσμημένα δωμάτια", "Καθημερινή φροντίδα και καθαριότητα", "Κλιματισμός για τις ζεστές μέρες"],
     },
-    perfectFor: {
-      en: ["Couples looking for a romantic escape", "Families wanting a calm environment", "Those exploring Lesvos on a road trip"],
-      el: ["Ζευγάρια που αναζητούν ρομαντική απόδραση", "Οικογένειες που θέλουν ήρεμο περιβάλλον", "Όσους εξερευνούν τη Λέσβο με αυτοκίνητο"],
-    },
     featuredBusinesses: ["iren-rooms"],
   },
 ];
