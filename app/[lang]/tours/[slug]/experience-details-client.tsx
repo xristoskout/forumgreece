@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import Script from "next/script";
 import { usePathname, useRouter } from "next/navigation";
 import SiteHeader from "../../../../components/site-header";
 
@@ -276,6 +277,27 @@ export default function ExperienceDetailsClient({
           </div>
 
           <aside className="space-y-6">
+            {landing.slug === "kefalonia-tours" && (
+              <article className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm p-4 w-full">
+                <div data-vi-partner-id="P00298401" data-vi-widget-ref="W-adaa2afb-d347-48c6-abe3-9d16f6a91959"></div>
+                <Script src="https://www.viator.com/orion/partner/widget.js" strategy="lazyOnload"></Script>
+              </article>
+            )}
+
+            {landing.slug === "lesvos-tours" && (
+              <article className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm p-4 w-full">
+                <div data-vi-partner-id="P00298401" data-vi-widget-ref="W-b4298df4-e2de-499e-a767-1be0bd3e9b83"></div>
+                <Script src="https://www.viator.com/orion/partner/widget.js" strategy="lazyOnload"></Script>
+              </article>
+            )}
+
+            {landing.slug === "crete-tours" && (
+              <article className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm p-4 w-full">
+                <div data-vi-partner-id="P00298401" data-vi-widget-ref="W-beb6dd42-10a7-4524-8626-6fda84f9e5df"></div>
+                <Script src="https://www.viator.com/orion/partner/widget.js" strategy="lazyOnload"></Script>
+              </article>
+            )}
+
             <article className="rounded-[28px] border border-slate-200 bg-gradient-to-br from-white to-cyan-50 p-8 shadow-sm">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700">
                 {t.pageHighlights}
