@@ -2,10 +2,9 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import Script from "next/script";
 import { usePathname, useRouter } from "next/navigation";
-import { useEffect } from "react";
 import SiteHeader from "../../../../components/site-header";
+import ViatorWidget from "../../../../components/viator-widget";
 
 import {
   siteBrand,
@@ -31,13 +30,6 @@ export default function ExperienceDetailsClient({
   const pathname = usePathname();
   const router = useRouter();
 
-  useEffect(() => {
-    // @ts-ignore
-    if (window.ViatorWidgets) {
-      // @ts-ignore
-      window.ViatorWidgets.init();
-    }
-  }, [landing.slug]);
 
   function stripLocale(path: string) {
     const stripped = path.replace(/^\/(en|el)(?=\/|$)/, "");
@@ -396,32 +388,32 @@ export default function ExperienceDetailsClient({
           </div>
 
           <aside className="space-y-6">
-            {landing.slug === "kefalonia-tours" && (
-              <article className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm p-4 w-full">
-                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700 mb-4">
-                  {lang === "en" ? "More Tours & Activities in Kefalonia" : "Περισσότερες Εκδρομές & Δραστηριότητες στην Κεφαλονιά"}
-                </p>
-                <div data-vi-partner-id="P00298401" data-vi-widget-ref="W-adaa2afb-d347-48c6-abe3-9d16f6a91959"></div>
-              </article>
-            )}
-
-            {landing.slug === "lesvos-tours" && (
-              <article className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm p-4 w-full">
-                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700 mb-4">
-                  {lang === "en" ? "More Tours & Activities in Lesvos" : "Περισσότερες Εκδρομές & Δραστηριότητες στη Λέσβο"}
-                </p>
-                <div data-vi-partner-id="P00298401" data-vi-widget-ref="W-b4298df4-e2de-499e-a767-1be0bd3e9b83"></div>
-              </article>
-            )}
-
-            {landing.slug === "crete-tours" && (
-              <article className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm p-4 w-full">
-                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700 mb-4">
-                  {lang === "en" ? "More Tours & Activities in Crete" : "Περισσότερες Εκδρομές & Δραστηριότητες στην Κρήτη"}
-                </p>
-                <div data-vi-partner-id="P00298401" data-vi-widget-ref="W-beb6dd42-10a7-4524-8626-6fda84f9e5df"></div>
-              </article>
-            )}
+            {(() => {
+              const TOUR_WIDGETS: Record<string, { label: { en: string; el: string }; ref: string }> = {
+                "kefalonia-tours": {
+                  label: { en: "More Tours & Activities in Kefalonia", el: "Περισσότερες Εκδρομές & Δραστηριότητες στην Κεφαλονιά" },
+                  ref: "W-adaa2afb-d347-48c6-abe3-9d16f6a91959",
+                },
+                "lesvos-tours": {
+                  label: { en: "More Tours & Activities in Lesvos", el: "Περισσότερες Εκδρομές & Δραστηριότητες στη Λέσβο" },
+                  ref: "W-b4298df4-e2de-499e-a767-1be0bd3e9b83",
+                },
+                "crete-tours": {
+                  label: { en: "More Tours & Activities in Crete", el: "Περισσότερες Εκδρομές & Δραστηριότητες στην Κρήτη" },
+                  ref: "W-beb6dd42-10a7-4524-8626-6fda84f9e5df",
+                },
+              };
+              const entry = TOUR_WIDGETS[landing.slug];
+              if (!entry) return null;
+              return (
+                <article className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm p-4 w-full">
+                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700 mb-4">
+                    {entry.label[lang]}
+                  </p>
+                  <ViatorWidget key={entry.ref} partnerId="P00298401" widgetRef={entry.ref} />
+                </article>
+              );
+            })()}
 
             <article className="rounded-[28px] border border-slate-200 bg-gradient-to-br from-white to-cyan-50 p-8 shadow-sm">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700">
