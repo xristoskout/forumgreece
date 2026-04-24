@@ -28,6 +28,10 @@ export type Destination = {
     title: Localized;
     description: Localized;
   };
+  guideLinks?: {
+    href: string;
+    label: Localized;
+  }[];
 };
 
 export type GuideSection = {
@@ -161,13 +165,19 @@ export const destinations: Destination[] = [
     },
     image: "/images/santorini.webp",
     overview: {
-      en: "Santorini is ideal for couples, caldera views, premium stays and iconic island moments.",
-      el: "Η Σαντορίνη είναι ιδανική για ζευγάρια, θέα στην καλντέρα, premium διαμονή και εμβληματικές νησιωτικές στιγμές.",
+      en: "Santorini is ideal for couples, caldera views, premium stays and iconic island moments. If you're wondering [Where to Stay in Santorini](/travel-info/where-to-stay-in-santorini), the caldera edge offers the most dramatic views.",
+      el: "Η Σαντορίνη είναι ιδανική για ζευγάρια, θέα στην καλντέρα, premium διαμονή και εμβληματικές νησιωτικές στιγμές. Αν αναρωτιέστε [Πού να μείνετε στη Σαντορίνη](/travel-info/where-to-stay-in-santorini), η άκρη της καλντέρας προσφέρει την πιο εντυπωσιακή θέα.",
     },
     highlights: {
       en: ["Oia sunsets", "Caldera hotels", "Volcanic beaches"],
       el: ["Ηλιοβασιλέματα στην Οία", "Ξενοδοχεία στην καλντέρα", "Ηφαιστειακές παραλίες"],
     },
+    guideLinks: [
+      {
+        href: "/travel-info/where-to-stay-in-santorini",
+        label: { en: "Where to Stay in Santorini", el: "Πού να μείνεις στη Σαντορίνη" }
+      }
+    ],
     seo: {
       title: {
         en: "Santorini Travel Guide: Caldera, Beaches, Where to Stay & Things to Do",
@@ -189,13 +199,19 @@ export const destinations: Destination[] = [
     },
     image: "/images/mykonos.webp",
     overview: {
-      en: "Mykonos combines glamorous beaches, nightlife and polished Cycladic style.",
-      el: "Η Μύκονος συνδυάζει glamorous παραλίες, νυχτερινή ζωή και κομψό κυκλαδίτικο ύφος.",
+      en: "Mykonos combines glamorous beaches, nightlife and polished Cycladic style. To make the most of it, explore the [Best Tours in Mykonos](/travel-info/best-tours-in-mykonos) to see Delos or sail the Aegean.",
+      el: "Η Μύκονος συνδυάζει glamorous παραλίες, νυχτερινή ζωή και κομψό κυκλαδίτικο ύφος. Ανακαλύψτε τις [Καλύτερες Εκδρομές στη Μύκονο](/travel-info/best-tours-in-mykonos) για να δείτε τη Δήλο ή να κάνετε ιστιοπλοΐα.",
     },
     highlights: {
       en: ["Windmills", "Little Venice", "Party beaches"],
       el: ["Ανεμόμυλοι", "Μικρή Βενετία", "Party παραλίες"],
     },
+    guideLinks: [
+      {
+        href: "/travel-info/best-tours-in-mykonos",
+        label: { en: "Best Tours in Mykonos", el: "Καλύτερες Εκδρομές στη Μύκονο" }
+      }
+    ],
     seo: {
       title: {
         en: "Mykonos Travel Guide: Beaches, Windmills, Delos & Things to Do",
@@ -217,13 +233,19 @@ export const destinations: Destination[] = [
     },
     image: "/images/crete.webp",
     overview: {
-      en: "Crete offers beaches, mountains, history, local food and endless options for long stays.",
-      el: "Η Κρήτη προσφέρει παραλίες, βουνά, ιστορία, τοπική κουζίνα και αμέτρητες επιλογές για μεγαλύτερες διακοπές.",
+      en: "Crete offers beaches, mountains, history, local food and endless options for long stays. It's fantastic for all ages, especially if you pick the [Best Hotels in Crete for Families](/travel-info/best-hotels-in-crete-for-families).",
+      el: "Η Κρήτη προσφέρει παραλίες, βουνά, ιστορία, τοπική κουζίνα και αμέτρητες επιλογές για μεγαλύτερες διακοπές. Είναι φανταστική για όλες τις ηλικίες, ειδικά αν επιλέξετε τα [Καλύτερα Οικογενειακά Ξενοδοχεία στην Κρήτη](/travel-info/best-hotels-in-crete-for-families).",
     },
     highlights: {
       en: ["Road trips", "Cretan food", "Historic sites"],
       el: ["Road trips", "Κρητική κουζίνα", "Ιστορικά αξιοθέατα"],
     },
+    guideLinks: [
+      {
+        href: "/travel-info/best-hotels-in-crete-for-families",
+        label: { en: "Best Family Hotels", el: "Οικογενειακά Ξενοδοχεία" }
+      }
+    ],
     seo: {
       title: {
         en: "Crete Travel Guide: Best Beaches, Gorges, Villages & Things to Do",
@@ -329,13 +351,19 @@ export const destinations: Destination[] = [
     },
     image: "/images/kefalonia.webp",
     overview: {
-      en: "Kefalonia stands out for its legendary beaches, geological wonders like Melissani cave, and an authentic nature-filled Ionian character.",
-      el: "Η Κεφαλονιά ξεχωρίζει για τις εντυπωσιακές παραλίες, τα γεωλογικά της θαύματα και τον αυθεντικό φυσιολατρικό επτανησιακό χαρακτήρα της.",
+      en: "Kefalonia stands out for its legendary beaches, geological wonders like Melissani cave, and an authentic nature-filled Ionian character. Discover the coastline by booking the [Best Boat Trips in Kefalonia](/travel-info/best-boat-trips-in-kefalonia).",
+      el: "Η Κεφαλονιά ξεχωρίζει για τις εντυπωσιακές παραλίες, τα γεωλογικά της θαύματα και τον αυθεντικό φυσιολατρικό επτανησιακό χαρακτήρα της. Εξερευνήστε τις ακτές μέσα από τις [Καλύτερες Εκδρομές με Σκάφος στην Κεφαλονιά](/travel-info/best-boat-trips-in-kefalonia).",
     },
     highlights: {
       en: ["Myrtos Beach", "Melissani Cave", "Mount Ainos"],
       el: ["Παραλία Μύρτος", "Σπήλαιο Μελισσάνης", "Όρος Αίνος"],
     },
+    guideLinks: [
+      {
+        href: "/travel-info/best-boat-trips-in-kefalonia",
+        label: { en: "Best Boat Trips", el: "Εκδρομές με Σκάφος" }
+      }
+    ],
     seo: {
       title: {
         en: "Kefalonia Travel Guide: Myrtos Beach, Caves, Villages & Things to Do",
@@ -357,13 +385,19 @@ export const destinations: Destination[] = [
     },
     image: "/images/lesvos.webp",
     overview: {
-      en: "Lesvos is a vast island of continental scale, featuring the famous Petrified forest, huge castles, rich wetlands for birdwatching, thermal springs, and an unbeatable foodie scene built around world-class ouzo and olive oil.",
-      el: "Η Λέσβος είναι ένα νησί δομημένο σε ηπειρωτική κλίμακα, με όλο το έδαφός της αναγνωρισμένο ως UNESCO Global Geopark. Από το διάσημο Απολιθωμένο Δάσος μέχρι τα κάστρα της, και από τους υδρόβιους υγροτόπους ως τις θερμές πηγές και τον παγκοσμίου κλάσης μεζέ με ούζο, η Λέσβος προσφέρει αυθεντικές εμπειρίες για κάθε τύπο ταξιδιώτη.",
+      en: "Lesvos is a vast island of continental scale, featuring the famous Petrified forest, huge castles, rich wetlands for birdwatching, thermal springs, and an unbeatable foodie scene. Check out the top [Things to Do in Lesvos](/travel-info/things-to-do-in-lesvos) to plan your days.",
+      el: "Η Λέσβος είναι ένα νησί δομημένο σε ηπειρωτική κλίμακα, με όλο το έδαφός της αναγνωρισμένο ως UNESCO Global Geopark. Δείτε [Τι να Κάνετε στη Λέσβο](/travel-info/things-to-do-in-lesvos) για να γεμίσετε τις μέρες σας με αυθεντικές εμπειρίες.",
     },
     highlights: {
       en: ["Petrified forest", "Ouzo & local food", "Castles & villages"],
       el: ["Απολιθωμένο Δάσος", "Ούζο και μεζές", "Κάστρα & χωριά"],
     },
+    guideLinks: [
+      {
+        href: "/travel-info/things-to-do-in-lesvos",
+        label: { en: "Things to Do in Lesvos", el: "Τι να Κάνεις στη Λέσβο" }
+      }
+    ],
     seo: {
       title: {
         en: "Lesvos Travel Guide: Mytilene, Petrified Forest, Beaches & Local Food",
@@ -385,13 +419,19 @@ export const destinations: Destination[] = [
     },
     image: "/images/athens.webp",
     overview: {
-      en: "Athens is a true two-in-one destination bridging the ancient and the modern. From the UNESCO World Heritage Acropolis to vibrant urban lifestyle, the Athens Riviera and nearby islands, it requires rhythm rather than a checklist to be truly enjoyed.",
-      el: "Η Αθήνα είναι από τα λίγα μέρη στον κόσμο όπου μπορείς να πιεις καφέ δίπλα σε μια βιτρίνα, να βρεθείς μπροστά σε μάρμαρα 2.500 χρόνων, και να κλείσεις τη μέρα με ηλιοβασίλεμα στη θάλασσα. Είναι πόλη με ένταση και αληθινή καθημερινότητα.",
+      en: "Athens is a true two-in-one destination bridging the ancient and the modern. To start your trip right, learn [Where to Stay in Athens for First-Time Visitors](/travel-info/where-to-stay-in-athens-for-first-time-visitors).",
+      el: "Η Αθήνα είναι από τα λίγα μέρη στον κόσμο όπου μπορείς να πιεις καφέ δίπλα σε μια βιτρίνα, να βρεθείς μπροστά σε μάρμαρα 2.500 χρόνων, και να κλείσεις τη μέρα στη θάλασσα. Μάθετε [Πού να Μείνετε στην Αθήνα (Πρώτη Φορά)](/travel-info/where-to-stay-in-athens-for-first-time-visitors).",
     },
     highlights: {
       en: ["Acropolis & Museums", "Athens Riviera", "Urban food & Neighborhoods"],
       el: ["Ακρόπολη & Μουσεία", "Αθηναϊκή Ριβιέρα", "Γειτονιές & Γαστρονομία"],
     },
+    guideLinks: [
+      {
+        href: "/travel-info/where-to-stay-in-athens-for-first-time-visitors",
+        label: { en: "Where to Stay (First Timers)", el: "Πού να Μείνεις (Πρώτη Φορά)" }
+      }
+    ],
     seo: {
       title: {
         en: "Athens Travel Guide: Acropolis, Neighborhoods, Food & Things to Do",
@@ -1122,6 +1162,253 @@ export const travelInfoGuides: GuideCard[] = [
         content: {
           en: "Santorini and Mykonos are both strong first-trip choices, but they deliver different versions of Greece. Santorini is about views and atmosphere. Mykonos is about social energy and beach-led lifestyle. The right choice depends less on popularity and more on the kind of trip you want to remember.",
           el: "Η Σαντορίνη και η Μύκονος είναι δυνατές επιλογές για το πρώτο σας ταξίδι, αλλά προσφέρουν διαφορετικές εκδοχές της Ελλάδας. Η Σαντορίνη επικεντρώνεται στη θέα και την ατμόσφαιρα. Η Μύκονος στην κοινωνική ενέργεια και το lifestyle της παραλίας. Η σωστή επιλογή εξαρτάται από το τι είδους ταξίδι θέλετε να θυμάστε."
+        }
+      }
+    ]
+  },
+  {
+    slug: "where-to-stay-in-santorini",
+    title: { en: "Where to Stay in Santorini", el: "Πού να Μείνεις στη Σαντορίνη" },
+    description: {
+      en: "A guide to the best areas to stay in Santorini, comparing the caldera edge towns (Oia, Fira, Imerovigli) with the beach resorts (Kamari, Perissa).",
+      el: "Ένας οδηγός για τις καλύτερες περιοχές διαμονής στη Σαντορίνη, συγκρίνοντας την καλντέρα (Οία, Φηρά, Ημεροβίγλι) με τα παραθαλάσσια θέρετρα (Καμάρι, Περίσσα)."
+    },
+    image: "/images/santorini.webp",
+    overview: {
+      en: "Choosing where to stay in Santorini defines your entire experience. The island is essentially split into two worlds: the dramatic, cliffside towns offering the famous sunset views, and the more relaxed, budget-friendly beach villages on the east coast.",
+      el: "Η επιλογή της διαμονής στη Σαντορίνη καθορίζει όλη σας την εμπειρία. Το νησί χωρίζεται ουσιαστικά σε δύο κόσμους: τους δραματικούς οικισμούς στον γκρεμό με τη διάσημη θέα, και τα πιο χαλαρά, οικονομικά παραθαλάσσια χωριά στην ανατολική πλευρά."
+    },
+    points: {
+      en: ["Oia is best for luxury and iconic views", "Fira is best for nightlife and transport", "Imerovigli is best for quiet romance", "Kamari/Perissa are best for beaches and budgets"],
+      el: ["Η Οία είναι ιδανική για πολυτέλεια και θέα", "Τα Φηρά είναι καλύτερα για νυχτερινή ζωή και μετακινήσεις", "Το Ημεροβίγλι είναι το καλύτερο για ρομαντική ηρεμία", "Το Καμάρι/Περίσσα είναι καλύτερα για παραλίες και budget"]
+    },
+    sections: [
+      {
+        title: { en: "1. Oia: The iconic luxury", el: "1. Οία: Η απόλυτη πολυτέλεια" },
+        content: {
+          en: "Oia is the postcard image of Santorini. It offers the most spectacular sunsets and luxury boutique hotels with infinity pools. However, it is also the most crowded and expensive area, especially during peak season.",
+          el: "Η Οία είναι η καρτ-ποστάλ της Σαντορίνης. Προσφέρει τα πιο εντυπωσιακά ηλιοβασιλέματα και πολυτελή boutique ξενοδοχεία. Ωστόσο, είναι και η πιο πολυσύχναστη και ακριβή περιοχή."
+        }
+      },
+      {
+        title: { en: "2. Fira: The vibrant capital", el: "2. Φηρά: Η ζωντανή πρωτεύουσα" },
+        content: {
+          en: "Fira is the heart of the island's nightlife and dining scene. It still offers incredible caldera views but is busier, noisier, and serves as the main transport hub for buses across the island.",
+          el: "Τα Φηρά είναι η καρδιά της νυχτερινής ζωής και της γαστρονομίας του νησιού. Προσφέρουν απίστευτη θέα στην καλντέρα, αλλά είναι πιο θορυβώδη και αποτελούν τον κεντρικό κόμβο μεταφορών."
+        }
+      },
+      {
+        title: { en: "3. Imerovigli: The romantic balcony", el: "3. Ημεροβίγλι: Το ρομαντικό μπαλκόνι" },
+        content: {
+          en: "Often called the 'balcony to the Aegean', Imerovigli sits at the highest point of the caldera. It offers the same stunning views as Oia but with much less crowd, making it perfect for honeymooners.",
+          el: "Συχνά αποκαλείται το 'μπαλκόνι του Αιγαίου', το Ημεροβίγλι βρίσκεται στο ψηλότερο σημείο της καλντέρας. Προσφέρει εξίσου εντυπωσιακή θέα με την Οία αλλά με πολύ λιγότερο κόσμο."
+        }
+      },
+      {
+        title: { en: "4. Beach Towns (Kamari & Perissa)", el: "4. Παραθαλάσσια θέρετρα (Καμάρι & Περίσσα)" },
+        content: {
+          en: "If you prefer to wake up and walk straight to the beach, head to the east coast. Kamari and Perissa offer black volcanic sand, family-friendly environments, and significantly lower hotel prices.",
+          el: "Αν προτιμάτε να ξυπνάτε και να πηγαίνετε κατευθείαν στην παραλία, επιλέξτε την ανατολική ακτή. Το Καμάρι και η Περίσσα προσφέρουν μαύρη άμμο, οικογενειακό περιβάλλον και χαμηλότερες τιμές."
+        }
+      }
+    ]
+  },
+  {
+    slug: "best-hotels-in-crete-for-families",
+    title: { en: "Best Hotels in Crete for Families", el: "Τα Καλύτερα Οικογενειακά Ξενοδοχεία στην Κρήτη" },
+    description: {
+      en: "Discover the top family-friendly hotels and resorts in Crete, offering kids clubs, water parks, and spacious suites for a stress-free holiday.",
+      el: "Ανακαλύψτε τα κορυφαία φιλικά προς την οικογένεια ξενοδοχεία στην Κρήτη, με παιδικά clubs, νεροτσουλήθρες και ευρύχωρες σουίτες."
+    },
+    image: "/images/crete.webp",
+    overview: {
+      en: "Crete is arguably the most family-friendly destination in Greece. Its large scale means it has room for sprawling resorts with excellent child-focused amenities, safe shallow beaches, and plenty of activities to keep everyone entertained.",
+      el: "Η Κρήτη είναι ίσως ο πιο φιλικός προορισμός για οικογένειες στην Ελλάδα. Το μέγεθός της επιτρέπει μεγάλα resorts με εξαιρετικές παροχές για παιδιά, ασφαλείς ρηχές παραλίες και πολλές δραστηριότητες."
+    },
+    points: {
+      en: ["Look for resorts near Chania or Elounda", "Waterparks are common in larger resorts", "All-inclusive options reduce daily stress", "Ensure beach access is child-friendly (sandy, shallow)"],
+      el: ["Αναζητήστε resorts κοντά στα Χανιά ή την Ελούντα", "Οι νεροτσουλήθρες είναι συχνές στα μεγάλα resorts", "Οι all-inclusive επιλογές μειώνουν το άγχος", "Βεβαιωθείτε ότι η παραλία είναι φιλική για παιδιά (αμμώδης, ρηχή)"]
+    },
+    sections: [
+      {
+        title: { en: "1. Why Crete for families?", el: "1. Γιατί Κρήτη για οικογένειες;" },
+        content: {
+          en: "Unlike the steep cliffs of Santorini or the party vibe of Mykonos, Crete offers space, safety, and infrastructure. Resorts here are designed with families in mind, often featuring multiple pools, kids clubs, and easy access to sandy beaches.",
+          el: "Σε αντίθεση με τους γκρεμούς της Σαντορίνης ή τη Μύκονο, η Κρήτη προσφέρει χώρο, ασφάλεια και υποδομές. Τα resorts εδώ έχουν σχεδιαστεί με γνώμονα τις οικογένειες, με πολλές πισίνες και εύκολη πρόσβαση στην παραλία."
+        }
+      },
+      {
+        title: { en: "2. Chania Region Resorts", el: "2. Resorts στην περιοχή Χανίων" },
+        content: {
+          en: "The coastline west of Chania (Agia Marina, Platanias) is packed with excellent family hotels. The beaches are sandy and shallow, and you're close enough to the Old Town for an evening stroll.",
+          el: "Η ακτογραμμή δυτικά των Χανίων είναι γεμάτη με εξαιρετικά οικογενειακά ξενοδοχεία. Οι παραλίες είναι αμμώδεις και ρηχές, και είστε αρκετά κοντά στην Παλιά Πόλη για βόλτα."
+        }
+      },
+      {
+        title: { en: "3. Elounda & Agios Nikolaos", el: "3. Ελούντα & Άγιος Νικόλαος" },
+        content: {
+          en: "If you're looking for luxury family resorts, the eastern side of Crete is the place to be. Elounda hosts some of the most prestigious properties in Greece, complete with private beaches, childcare services, and gourmet dining.",
+          el: "Αν αναζητάτε πολυτελή οικογενειακά resorts, η ανατολική πλευρά της Κρήτης είναι το ιδανικό μέρος. Η Ελούντα φιλοξενεί μερικά από τα καλύτερα ξενοδοχεία στην Ελλάδα, με ιδιωτικές παραλίες και υπηρεσίες φύλαξης."
+        }
+      }
+    ]
+  },
+  {
+    slug: "best-boat-trips-in-kefalonia",
+    title: { en: "Best Boat Trips in Kefalonia", el: "Οι Καλύτερες Εκδρομές με Σκάφος στην Κεφαλονιά" },
+    description: {
+      en: "Explore the hidden beaches, sea caves, and neighboring islands with the best boat tours and cruises available from Kefalonia.",
+      el: "Εξερευνήστε κρυφές παραλίες, θαλάσσιες σπηλιές και γειτονικά νησιά με τις καλύτερες εκδρομές και κρουαζιέρες από την Κεφαλονιά."
+    },
+    image: "/images/kefalonia.webp",
+    overview: {
+      en: "Kefalonia's coastline is dramatic and diverse, but many of its best spots are inaccessible by car. Taking a boat trip is essential to truly appreciate the island's turquoise waters, hidden coves, and close proximity to Ithaca and Zakynthos.",
+      el: "Η ακτογραμμή της Κεφαλονιάς είναι εντυπωσιακή, αλλά πολλά από τα καλύτερα σημεία της δεν είναι προσβάσιμα με αυτοκίνητο. Η εκδρομή με σκάφος είναι απαραίτητη για να εκτιμήσετε τα γαλαζοπράσινα νερά και τους κρυφούς όρμους."
+    },
+    points: {
+      en: ["Sail to mythical Ithaca for a day trip", "Discover the hidden beaches of the north coast", "Spot Caretta-Caretta turtles in Argostoli", "Rent a private motorboat in Fiskardo"],
+      el: ["Ταξιδέψτε στη μυθική Ιθάκη για μια ημερήσια εκδρομή", "Ανακαλύψτε τις κρυφές παραλίες της βόρειας ακτής", "Δείτε χελώνες Caretta-Caretta στο Αργοστόλι", "Ενοικιάστε ιδιωτικό σκάφος στο Φισκάρδο"]
+    },
+    sections: [
+      {
+        title: { en: "1. Day Cruises to Ithaca", el: "1. Ημερήσιες κρουαζιέρες στην Ιθάκη" },
+        content: {
+          en: "The most popular boat trip from Kefalonia is the crossing to Odysseus's homeland, Ithaca. These full-day cruises usually depart from Sami or Skala and include swimming stops in pristine bays and a visit to Vathy or Kioni.",
+          el: "Η πιο δημοφιλής εκδρομή με σκάφος από την Κεφαλονιά είναι το πέρασμα στην πατρίδα του Οδυσσέα, την Ιθάκη. Οι κρουαζιέρες αναχωρούν συνήθως από τη Σάμη ή τη Σκάλα."
+        }
+      },
+      {
+        title: { en: "2. Glass Bottom Tours & Turtles", el: "2. Tours με γυάλινο πάτο & Χελώνες" },
+        content: {
+          en: "Perfect for families, glass-bottom boat tours operate mainly out of Argostoli. They offer a great chance to spot the resident Loggerhead turtles (Caretta-Caretta) swimming near the harbor.",
+          el: "Ιδανικά για οικογένειες, τα tours με γυάλινο πάτο αναχωρούν κυρίως από το Αργοστόλι. Προσφέρουν μια εξαιρετική ευκαιρία να δείτε τις χελώνες Caretta-Caretta κοντά στο λιμάνι."
+        }
+      },
+      {
+        title: { en: "3. Private Boat Hire (Fiskardo)", el: "3. Ενοικίαση ιδιωτικού σκάφους (Φισκάρδο)" },
+        content: {
+          en: "In the north, renting a small motorboat (no license required) from Fiskardo is a highlight. You can explore the narrow strait between Kefalonia and Ithaca, dropping anchor in completely deserted coves.",
+          el: "Στα βόρεια, η ενοικίαση ενός μικρού μηχανοκίνητου σκάφους από το Φισκάρδο είναι μοναδική εμπειρία. Μπορείτε να εξερευνήσετε το στενό μεταξύ Κεφαλονιάς και Ιθάκης."
+        }
+      }
+    ]
+  },
+  {
+    slug: "things-to-do-in-lesvos",
+    title: { en: "Things to Do in Lesvos", el: "Τι να Κάνεις στη Λέσβο" },
+    description: {
+      en: "Top attractions, activities, and local experiences in Lesvos, from the Petrified Forest to traditional ouzo tasting.",
+      el: "Κορυφαία αξιοθέατα και τοπικές εμπειρίες στη Λέσβο, από το Απολιθωμένο Δάσος μέχρι την παραδοσιακή γευσιγνωσία ούζου."
+    },
+    image: "/images/lesvos.webp",
+    overview: {
+      en: "Lesvos is an island for explorers and food lovers. It's not a destination for rapid sightseeing, but a place to slow down, visit traditional villages, explore geological wonders, and enjoy some of the best culinary traditions in the Aegean.",
+      el: "Η Λέσβος είναι ένα νησί για εξερευνητές και λάτρεις του φαγητού. Δεν είναι προορισμός για γρήγορο sightseeing, αλλά ένα μέρος για να χαλαρώσεις, να επισκεφτείς παραδοσιακά χωριά και να απολαύσεις κορυφαία γαστρονομία."
+    },
+    points: {
+      en: ["Marvel at the UNESCO Petrified Forest", "Taste world-class Ouzo in Plomari", "Wander the cobbled streets of Molyvos", "Relax in ancient thermal springs"],
+      el: ["Θαυμάστε το Απολιθωμένο Δάσος (UNESCO)", "Δοκιμάστε παγκόσμιας κλάσης Ούζο στο Πλωμάρι", "Περπατήστε στα πλακόστρωτα του Μολύβου", "Χαλαρώστε σε αρχαίες ιαματικές πηγές"]
+    },
+    sections: [
+      {
+        title: { en: "1. The Petrified Forest of Sigri", el: "1. Το Απολιθωμένο Δάσος Σιγρίου" },
+        content: {
+          en: "A UNESCO Global Geopark, this rare geological monument was formed 20 million years ago by volcanic eruptions. The Natural History Museum in Sigri provides incredible context to the colorful fossilized tree trunks scattered across the landscape.",
+          el: "Ένα Παγκόσμιο Γεωπάρκο της UNESCO, αυτό το σπάνιο γεωλογικό μνημείο σχηματίστηκε πριν από 20 εκατομμύρια χρόνια. Το Μουσείο Φυσικής Ιστορίας στο Σίγρι παρέχει απίστευτες πληροφορίες."
+        }
+      },
+      {
+        title: { en: "2. Ouzo Tasting in Plomari", el: "2. Γευσιγνωσία Ούζου στο Πλωμάρι" },
+        content: {
+          en: "Lesvos is the spiritual home of Ouzo. The town of Plomari is filled with historic distilleries where you can learn about the anise-flavored spirit's production and, of course, enjoy tastings paired with local meze.",
+          el: "Η Λέσβος είναι η πνευματική πατρίδα του Ούζου. Το Πλωμάρι είναι γεμάτο ιστορικά αποστακτήρια όπου μπορείτε να μάθετε για την παραγωγή του και να κάνετε γευσιγνωσία με τοπικούς μεζέδες."
+        }
+      },
+      {
+        title: { en: "3. Molyvos Castle and Village", el: "3. Κάστρο και Οικισμός Μολύβου" },
+        content: {
+          en: "Crowned by a Byzantine castle, Molyvos (Mithymna) is one of the most beautiful traditional villages in Greece. Its stone houses, wisteria-draped alleys, and vibrant harbor make it a must-visit.",
+          el: "Στεφανωμένος από ένα βυζαντινό κάστρο, ο Μόλυβος είναι ένα από τα πιο όμορφα παραδοσιακά χωριά της Ελλάδας. Τα πέτρινα σπίτια και το γραφικό λιμάνι τον καθιστούν ιδανικό προορισμό."
+        }
+      }
+    ]
+  },
+  {
+    slug: "best-tours-in-mykonos",
+    title: { en: "Best Tours in Mykonos", el: "Οι Καλύτερες Εκδρομές στη Μύκονο" },
+    description: {
+      en: "Discover the best guided tours, sailing trips, and historical excursions in Mykonos to upgrade your island experience.",
+      el: "Ανακαλύψτε τις καλύτερες ξεναγήσεις, ιστιοπλοϊκές εκδρομές και ιστορικές εξορμήσεις στη Μύκονο για να αναβαθμίσετε την εμπειρία σας."
+    },
+    image: "/images/mykonos.webp",
+    overview: {
+      en: "Beyond the beach clubs and vibrant nightlife, Mykonos offers incredible experiences on the water and a deep dive into ancient history. Booking a tour is the best way to see the island's quieter side and the sacred neighboring island of Delos.",
+      el: "Πέρα από τα beach clubs και την έντονη νυχτερινή ζωή, η Μύκονος προσφέρει απίστευτες εμπειρίες στο νερό και μια βαθιά βουτιά στην αρχαία ιστορία. Η κράτηση μιας εκδρομής είναι ο καλύτερος τρόπος για να δείτε την πιο ήσυχη πλευρά του νησιού."
+    },
+    points: {
+      en: ["Take a guided archaeological tour of Delos", "Sail to the uninhabited island of Rhenia", "Join a traditional cooking class", "Explore the island by Jeep safari"],
+      el: ["Ξενάγηση στον αρχαιολογικό χώρο της Δήλου", "Ιστιοπλοΐα στο ακατοίκητο νησί της Ρήνειας", "Συμμετοχή σε παραδοσιακό μάθημα μαγειρικής", "Εξερεύνηση του νησιού με Jeep safari"]
+    },
+    sections: [
+      {
+        title: { en: "1. The Sacred Island of Delos", el: "1. Το ιερό νησί της Δήλου" },
+        content: {
+          en: "Just a short boat ride from Mykonos lies Delos, the mythological birthplace of Apollo and Artemis. It is one of the most important archaeological sites in Greece. A guided tour is highly recommended to understand the ruins.",
+          el: "Σε μικρή απόσταση με το πλοίο από τη Μύκονο βρίσκεται η Δήλος, η μυθολογική γενέτειρα του Απόλλωνα και της Άρτεμης. Αποτελεί έναν από τους σημαντικότερους αρχαιολογικούς χώρους στην Ελλάδα."
+        }
+      },
+      {
+        title: { en: "2. Catamaran Sailing to Rhenia", el: "2. Ιστιοπλοΐα με καταμαράν στη Ρήνεια" },
+        content: {
+          en: "Escape the crowds by sailing to Rhenia, an uninhabited island next to Delos. Catamaran cruises offer swimming in crystal-clear waters, snorkeling, and onboard BBQ lunches.",
+          el: "Ξεφύγετε από τα πλήθη ταξιδεύοντας στη Ρήνεια, ένα ακατοίκητο νησί δίπλα στη Δήλο. Οι κρουαζιέρες με καταμαράν προσφέρουν κολύμπι σε κρυστάλλινα νερά και BBQ στο σκάφος."
+        }
+      },
+      {
+        title: { en: "3. Jeep Safaris & Hidden Beaches", el: "3. Jeep Safaris & Κρυφές Παραλίες" },
+        content: {
+          en: "The rugged interior of Mykonos is often ignored by visitors. A Jeep safari takes you to hidden chapels, quiet northern beaches (like Fokos), and offers panoramic views of the Cyclades.",
+          el: "Το τραχύ εσωτερικό της Μυκόνου συχνά αγνοείται από τους επισκέπτες. Ένα Jeep safari σας πηγαίνει σε κρυφά ξωκλήσια, ήσυχες βόρειες παραλίες και προσφέρει πανοραμική θέα."
+        }
+      }
+    ]
+  },
+  {
+    slug: "where-to-stay-in-athens-for-first-time-visitors",
+    title: { en: "Where to Stay in Athens for First-Timers", el: "Πού να Μείνεις στην Αθήνα (Πρώτη Φορά)" },
+    description: {
+      en: "A guide to the best neighborhoods in Athens for first-time visitors, comparing Plaka, Monastiraki, Koukaki, and Syntagma.",
+      el: "Ένας οδηγός για τις καλύτερες γειτονιές της Αθήνας για όσους την επισκέπτονται πρώτη φορά."
+    },
+    image: "/images/athens.webp",
+    overview: {
+      en: "Athens is a sprawling metropolis, but the historic center is surprisingly compact. For first-time visitors, staying central is crucial to minimize transit time and maximize your ability to walk to the Acropolis and major museums.",
+      el: "Η Αθήνα είναι μια τεράστια μητρόπολη, αλλά το ιστορικό της κέντρο είναι εκπληκτικά συμπαγές. Για τους επισκέπτες που έρχονται πρώτη φορά, η διαμονή στο κέντρο είναι καθοριστική για να μπορούν να περπατήσουν μέχρι την Ακρόπολη."
+    },
+    points: {
+      en: ["Plaka is best for romance and village feel", "Monastiraki is best for vibrant street life", "Syntagma is best for transport and luxury", "Koukaki is best for local vibes near the Acropolis"],
+      el: ["Η Πλάκα είναι ιδανική για ρομάντζο", "Το Μοναστηράκι είναι καλύτερο για ζωντανή ατμόσφαιρα", "Το Σύνταγμα είναι καλύτερο για συγκοινωνίες και πολυτέλεια", "Το Κουκάκι είναι καλύτερο για τοπική αίσθηση κοντά στην Ακρόπολη"]
+    },
+    sections: [
+      {
+        title: { en: "1. Plaka: The Neighborhood of the Gods", el: "1. Πλάκα: Η γειτονιά των Θεών" },
+        content: {
+          en: "Nestled right under the Acropolis, Plaka is the oldest and most picturesque neighborhood in Athens. It is almost entirely pedestrianized, filled with neoclassical homes, tavernas, and bougainvillea-draped alleys.",
+          el: "Χτισμένη ακριβώς κάτω από την Ακρόπολη, η Πλάκα είναι η παλαιότερη και πιο γραφική γειτονιά της Αθήνας. Είναι σχεδόν εξ ολοκλήρου πεζοδρομημένη, γεμάτη με νεοκλασικά σπίτια και ταβέρνες."
+        }
+      },
+      {
+        title: { en: "2. Syntagma Square: The Beating Heart", el: "2. Πλατεία Συντάγματος: Η καρδιά της πόλης" },
+        content: {
+          en: "Syntagma is the political and transport hub of Athens. It offers the best connectivity (direct metro to the airport) and houses many of the city's historic 5-star hotels. It's busy but incredibly convenient.",
+          el: "Το Σύνταγμα είναι ο πολιτικός και συγκοινωνιακός κόμβος της Αθήνας. Προσφέρει την καλύτερη συνδεσιμότητα (απευθείας μετρό για αεροδρόμιο) και φιλοξενεί πολλά από τα ιστορικά ξενοδοχεία 5 αστέρων της πόλης."
+        }
+      },
+      {
+        title: { en: "3. Koukaki: The Cool Local Choice", el: "3. Κουκάκι: Η τοπική, αυθεντική επιλογή" },
+        content: {
+          en: "Located just south of the Acropolis Museum, Koukaki has transformed into a trendy neighborhood with excellent specialty coffee shops, brunch spots, and authentic bistros, while still feeling residential.",
+          el: "Τοποθετημένο ακριβώς νότια του Μουσείου Ακρόπολης, το Κουκάκι έχει μετατραπεί σε μια μοντέρνα γειτονιά με εξαιρετικά καφέ, μέρη για brunch και αυθεντικά bistros, διατηρώντας παράλληλα τον οικιστικό του χαρακτήρα."
         }
       }
     ]

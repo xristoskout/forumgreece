@@ -91,8 +91,8 @@ export async function generateMetadata({
 
   if (pageData.type === "landing") {
     const image = pageData.businesses[0]?.image ?? "/images/default-og.webp";
-    const title = `${pageData.landing.title[lang]} | GoGreeceNow`;
-    const description = pageData.landing.description[lang];
+    const title = pageData.landing.seo?.title[lang] ?? `${pageData.landing.title[lang]} | GoGreeceNow`;
+    const description = pageData.landing.seo?.description[lang] ?? pageData.landing.description[lang];
 
     return {
       title,
