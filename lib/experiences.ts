@@ -43,12 +43,12 @@ export const experienceLandings: ExperienceLanding[] = [
   {
     slug: "kefalonia-tours",
     title: {
-      en: "Local Experiences & Businesses in Kefalonia",
-      el: "Τοπικές Εμπειρίες & Επιχειρήσεις στην Κεφαλονιά",
+      en: "Recommended Local Experiences in Kefalonia",
+      el: "Προτεινόμενες Τοπικές Εμπειρίες στην Κεφαλονιά",
     },
     description: {
-      en: "Discover selected local businesses in Kefalonia, from boat trips and organized tours to taxis and island services that enrich your stay.",
-      el: "Ανακάλυψε επιλεγμένες τοπικές επιχειρήσεις στην Κεφαλονιά, από boat trips και οργανωμένες εκδρομές μέχρι ταξί και υπηρεσίες που εμπλουτίζουν τη διαμονή σου.",
+      en: "Kefalonia is an island of dramatic landscapes and crystal-clear waters, offering everything from world-famous beach boat trips to local food experiences and hidden gems. On this page, we feature selected local businesses and additional tours to help you explore the best of the Ionian's largest island.",
+      el: "Η Κεφαλονιά είναι ένα νησί με εντυπωσιακά τοπία και κρυστάλλινα νερά, προσφέροντας τα πάντα, από παγκοσμίου φήμης boat trips μέχρι τοπικές γαστρονομικές εμπειρίες και κρυμμένα διαμάντια. Σε αυτή τη σελίδα, παρουσιάζουμε επιλεγμένες τοπικές επιχειρήσεις και επιπλέον εκδρομές για να ανακαλύψετε τα καλύτερα του μεγαλύτερου νησιού του Ιονίου.",
     },
     overview: {
       en: "This page is designed as a curated guide to local experiences in Kefalonia. Instead of focusing only on general inspiration, it is built to feature real businesses, tours, and visitor-friendly experiences that bring travelers closer to the island's culture and natural beauty.",
@@ -86,12 +86,12 @@ export const experienceLandings: ExperienceLanding[] = [
   {
     slug: "lesvos-tours",
     title: {
-      en: "Local Experiences & Businesses in Lesvos",
-      el: "Τοπικές Εμπειρίες & Επιχειρήσεις στη Λέσβο",
+      en: "Recommended Local Experiences in Lesvos",
+      el: "Προτεινόμενες Τοπικές Εμπειρίες στη Λέσβο",
     },
     description: {
-      en: "Discover selected local businesses in Lesvos, from authentic food experiences and cultural activities to island services that enrich your stay.",
-      el: "Ανακάλυψε επιλεγμένες τοπικές επιχειρήσεις στη Λέσβο, από αυθεντικές γαστρονομικές εμπειρίες και πολιτιστικές δραστηριότητες μέχρι υπηρεσίες που εμπλουτίζουν τη διαμονή σου.",
+      en: "Lesvos is a land of authentic tradition and rich history, famous for its olive oil, ouzo, and unique culinary heritage. On this page, we feature selected local producers and experiences along with additional activities to help you discover the true soul of the North Aegean.",
+      el: "Η Λέσβος είναι ένας τόπος αυθεντικής παράδοσης και πλούσιας ιστορίας, φημισμένος για το ελαιόλαδο, το ούζο και τη μοναδική γαστρονομική του κληρονομιά. Σε αυτή τη σελίδα, παρουσιάζουμε επιλεγμένους τοπικούς παραγωγούς και εμπειρίες μαζί με επιπλέον δραστηριότητες για να ανακαλύψετε την αληθινή ψυχή του Βορείου Αιγαίου.",
     },
     overview: {
       en: "This page is designed as a curated guide to local experiences in Lesvos. Instead of focusing only on general inspiration, it is built to feature real businesses and visitor-friendly experiences that bring travelers closer to the island’s culture, food and local identity.",
@@ -130,12 +130,12 @@ export const experienceLandings: ExperienceLanding[] = [
   {
     slug: "crete-tours",
     title: {
-      en: "Local Experiences & Businesses in Crete",
-      el: "Τοπικές Εμπειρίες & Επιχειρήσεις στην Κρήτη",
+      en: "Recommended Local Experiences in Crete",
+      el: "Προτεινόμενες Τοπικές Εμπειρίες στην Κρήτη",
     },
     description: {
-      en: "Discover selected local businesses in Crete, from food experiences and cultural activities to coastal outings and practical visitor options across the island.",
-      el: "Ανακάλυψε επιλεγμένες τοπικές επιχειρήσεις στην Κρήτη, από γαστρονομικές εμπειρίες και πολιτιστικές δραστηριότητες μέχρι παραθαλάσσιες εξορμήσεις και πρακτικές επιλογές για επισκέπτες σε όλο το νησί.",
+      en: "Crete is one of Greece’s most diverse destinations, offering everything from boat trips and food experiences to cultural tours and outdoor adventures. On this page, we feature selected local experiences along with additional tours and activities to help you plan your trip more easily.",
+      el: "Η Κρήτη είναι ένας από τους πιο ποικιλόμορφους προορισμούς της Ελλάδας, προσφέροντας τα πάντα, από boat trips και γαστρονομικές εμπειρίες μέχρι πολιτιστικές περιηγήσεις και υπαίθριες δραστηριότητες. Σε αυτή τη σελίδα, παρουσιάζουμε επιλεγμένες τοπικές εμπειρίες μαζί με επιπλέον εκδρομές και δραστηριότητες για να οργανώσετε το ταξίδι σας πιο εύκολα.",
     },
     overview: {
       en: "This page is designed as a curated guide to local experiences in Crete. Instead of presenting only broad travel inspiration, it highlights businesses and services that help visitors enjoy the island in a richer, more direct and more practical way.",

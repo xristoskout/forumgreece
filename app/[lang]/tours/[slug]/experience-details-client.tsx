@@ -187,16 +187,12 @@ export default function ExperienceDetailsClient({
               </p>
             </article>
 
-            <article className="rounded-[28px] border border-slate-200 bg-white backdrop-blur-md p-8 shadow-sm">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700">
-                {t.featuredBusinesses}
-              </p>
-
-              {businesses.length === 0 ? (
-                <p className="mt-6 text-base leading-8 text-slate-500">
-                  {t.emptyBusinesses}
+            {businesses.length > 0 && (
+              <article className="rounded-[28px] border border-slate-200 bg-white backdrop-blur-md p-8 shadow-sm">
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700">
+                  {t.featuredBusinesses}
                 </p>
-              ) : (
+
                 <div className="mt-6 space-y-8">
                   {businesses.map((business) => {
                     const businessHref =
@@ -272,29 +268,149 @@ export default function ExperienceDetailsClient({
                     );
                   })}
                 </div>
-              )}
-            </article>
+              </article>
+            )}
+
+            {landing.slug === "kefalonia-tours" && (
+              <article className="rounded-[28px] border border-slate-200 bg-white backdrop-blur-md p-8 shadow-sm">
+                <h2 className="text-2xl font-bold text-slate-900">FAQ</h2>
+                <div className="mt-8 space-y-8">
+                  <div>
+                    <h3 className="text-lg font-bold text-indigo-700">
+                      {lang === "en" ? "Which are the best boat tours in Kefalonia?" : "Ποιες είναι οι καλύτερες βόλτες με σκάφος στην Κεφαλονιά;"}
+                    </h3>
+                    <p className="mt-3 text-base leading-7 text-slate-600">
+                      {lang === "en" 
+                        ? "The boat trip from Agia Kyriaki to Fteri and Amidi beaches is a top pick. Cruises around Fiskardo and the Ithaca coast are also legendary. For a unique experience, don't miss the Melissani Lake rowboat tour."
+                        : "Η βόλτα με σκάφος από την Αγία Κυριακή προς τις παραλίες Φτέρη και Αμίδι είναι από τις κορυφαίες επιλογές. Επίσης, οι κρουαζιέρες γύρω από το Φισκάρδο και τις ακτές της Ιθάκης είναι μοναδικές. Μην παραλείψετε τη βόλτα με τη βάρκα στη Λίμνη Μελισσάνη."}
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-indigo-700">
+                      {lang === "en" ? "Do I need to book tours in advance in Kefalonia?" : "Χρειάζεται να κλείσω εκδρομές από πριν στην Κεφαλονιά;"}
+                    </h3>
+                    <p className="mt-3 text-base leading-7 text-slate-600">
+                      {lang === "en"
+                        ? "Yes, especially during July and August. Popular private boat rentals and guided tours can book up quickly. We recommend reserving your spot at least 1-2 weeks in advance during peak season."
+                        : "Ναι, ειδικά κατά τον Ιούλιο και τον Αύγουστο. Οι δημοφιλείς ενοικιάσεις σκαφών και οι ξεναγήσεις εξαντλούνται γρήγορα. Προτείνουμε να κάνετε κράτηση τουλάχιστον 1-2 εβδομάδες πριν κατά την περίοδο αιχμής."}
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-indigo-700">
+                      {lang === "en" ? "What are the must-see natural attractions in Kefalonia?" : "Ποια είναι τα φυσικά αξιοθέατα που πρέπει να δω στην Κεφαλονιά;"}
+                    </h3>
+                    <p className="mt-3 text-base leading-7 text-slate-600">
+                      {lang === "en"
+                        ? "Myrtos Beach, Melissani Cave, Drogarati Cave, and the Ainos National Park are the absolute must-sees. Each offers a completely different but equally stunning natural perspective of the island."
+                        : "Η παραλία του Μύρτου, το σπήλαιο Μελισσάνη, το σπήλαιο Δρογκαράτη και ο Εθνικός Δρυμός του Αίνου είναι τα απόλυτα must-see. Κάθε ένα προσφέρει μια εντελώς διαφορετική αλλά εξίσου εντυπωσιακή φυσική ομορφιά."}
+                    </p>
+                  </div>
+                </div>
+              </article>
+            )}
+
+            {landing.slug === "lesvos-tours" && (
+              <article className="rounded-[28px] border border-slate-200 bg-white backdrop-blur-md p-8 shadow-sm">
+                <h2 className="text-2xl font-bold text-slate-900">FAQ</h2>
+                <div className="mt-8 space-y-8">
+                  <div>
+                    <h3 className="text-lg font-bold text-indigo-700">
+                      {lang === "en" ? "Is Lesvos good for family vacations?" : "Είναι η Λέσβος κατάλληλη για οικογενειακές διακοπές;"}
+                    </h3>
+                    <p className="mt-3 text-base leading-7 text-slate-600">
+                      {lang === "en" 
+                        ? "Absolutely. Lesvos is a very safe and hospitable island with many sandy beaches and educational activities like the Petrified Forest Museum. It’s perfect for families looking for a relaxed and authentic environment."
+                        : "Απολύτως. Η Λέσβος είναι ένα πολύ ασφαλές και φιλόξενο νησί με πολλές αμμώδεις παραλίες και εκπαιδευτικές δραστηριότητες, όπως το Μουσείο Απολιθωμένου Δάσους. Είναι ιδανική για οικογένειες που αναζητούν ένα ήρεμο και αυθεντικό περιβάλλον."}
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-indigo-700">
+                      {lang === "en" ? "What are the best food experiences in Lesvos?" : "Ποιες είναι οι καλύτερες γαστρονομικές εμπειρίες στη Λέσβο;"}
+                    </h3>
+                    <p className="mt-3 text-base leading-7 text-slate-600">
+                      {lang === "en"
+                        ? "Don't miss an olive oil tasting at a local mill, a visit to an Ouzo distillery in Plomari, and tasting the famous Kalloni sardines. The local cheese (Ladotyri) and honey are also exceptional."
+                        : "Μην χάσετε μια γευσιγνωσία ελαιολάδου σε ένα τοπικό ελαιοτριβείο, μια επίσκεψη σε ποτοποιία ούζου στο Πλωμάρι και τη δοκιμή της διάσημης σαρδέλας Καλλονής. Το τοπικό τυρί (λαδοτύρι) και το μέλι είναι επίσης εξαιρετικά."}
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-indigo-700">
+                      {lang === "en" ? "When is the best time to visit Lesvos for activities?" : "Πότε είναι η καλύτερη εποχή να επισκεφτώ τη Λέσβο για δραστηριότητες;"}
+                    </h3>
+                    <p className="mt-3 text-base leading-7 text-slate-600">
+                      {lang === "en"
+                        ? "Late spring (May-June) and early autumn (September) are ideal. The weather is perfect for hiking and birdwatching, and the island is blooming with life without the high summer heat."
+                        : "Η αργά την άνοιξη (Μάιος-Ιούνιος) και οι αρχές του φθινοπώρου (Σεπτέμβριος) είναι ιδανικές περίοδοι. Ο καιρός είναι τέλειος για πεζοπορία και παρατήρηση πουλιών, και το νησί σφύζει από ζωή χωρίς την έντονη ζέστη του καλοκαιριού."}
+                    </p>
+                  </div>
+                </div>
+              </article>
+            )}
+
+            {landing.slug === "crete-tours" && (
+              <article className="rounded-[28px] border border-slate-200 bg-white backdrop-blur-md p-8 shadow-sm">
+                <h2 className="text-2xl font-bold text-slate-900">FAQ</h2>
+                <div className="mt-8 space-y-8">
+                  <div>
+                    <h3 className="text-lg font-bold text-indigo-700">
+                      {lang === "en" ? "Are tours in Crete worth booking in advance?" : "Αξίζει να κλείσω εκδρομές στην Κρήτη εκ των προτέρων;"}
+                    </h3>
+                    <p className="mt-3 text-base leading-7 text-slate-600">
+                      {lang === "en" 
+                        ? "Absolutely. Crete is a top destination, and high-demand tours—such as boat trips to Balos Lagoon or guided visits to the Palace of Knossos—frequently sell out weeks in advance during summer. Early booking also helps you secure better rates and guaranteed availability."
+                        : "Απολύτως. Η Κρήτη είναι κορυφαίος προορισμός και οι εκδρομές με μεγάλη ζήτηση — όπως τα boat trips στον Μπάλο ή οι ξεναγήσεις στην Κνωσό — εξαντλούνται συχνά εβδομάδες πριν κατά τη διάρκεια του καλοκαιριού. Η έγκαιρη κράτηση σας εξασφαλίζει τη διαθεσιμότητα και συχνά καλύτερες τιμές."}
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-indigo-700">
+                      {lang === "en" ? "Which part of Crete is best for boat trips?" : "Ποιο μέρος της Κρήτης είναι το καλύτερο για βόλτες με σκάφος;"}
+                    </h3>
+                    <p className="mt-3 text-base leading-7 text-slate-600">
+                      {lang === "en"
+                        ? "It depends on what you are looking for. Kissamos (Chania) is the gateway to Balos and Gramvousa. Elounda and Agios Nikolaos are famous for Spinalonga island cruises. For a more rugged experience, the south coast (Sfakia/Loutro) offers stunning secluded coves accessible only by boat."
+                        : "Εξαρτάται από το τι αναζητάτε. Ο Κίσσαμος (Χανιά) είναι η πύλη για τον Μπάλο και τη Γραμβούσα. Η Ελούντα και ο Άγιος Νικόλαος φημίζονται για τις κρουαζιέρες στη Σπιναλόγκα. Για μια πιο άγρια εμπειρία, η νότια ακτή (Σφακιά/Λουτρό) προσφέρει εντυπωσιακούς απομονωμένους κόλπους προσβάσιμους μόνο με σκάφος."}
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-indigo-700">
+                      {lang === "en" ? "What are the best family-friendly tours in Crete?" : "Ποιες είναι οι καλύτερες εκδρομές για οικογένειες στην Κρήτη;"}
+                    </h3>
+                    <p className="mt-3 text-base leading-7 text-slate-600">
+                      {lang === "en"
+                        ? "Families love the Cretaquarium near Heraklion and the interactive experience at Labyrinth Park. Traditional Cretan farm visits, where kids can see local animals and learn about olive oil, are also very popular. Easy boat trips with swimming stops in shallow waters are another excellent choice."
+                        : "Οι οικογένειες λατρεύουν το Cretaquarium κοντά στο Ηράκλειο και το Labyrinth Park. Οι επισκέψεις σε παραδοσιακές κρητικές φάρμες, όπου τα παιδιά βλέπουν ζώα και μαθαίνουν για το λάδι, είναι επίσης πολύ δημοφιλείς. Οι εύκολες βόλτες με σκάφος και στάσεις για κολύμπι σε ρηχά νερά είναι άλλη μια εξαιρετική επιλογή."}
+                    </p>
+                  </div>
+                </div>
+              </article>
+            )}
           </div>
 
           <aside className="space-y-6">
             {landing.slug === "kefalonia-tours" && (
               <article className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm p-4 w-full">
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700 mb-4">
+                  {lang === "en" ? "More Tours & Activities in Kefalonia" : "Περισσότερες Εκδρομές & Δραστηριότητες στην Κεφαλονιά"}
+                </p>
                 <div data-vi-partner-id="P00298401" data-vi-widget-ref="W-adaa2afb-d347-48c6-abe3-9d16f6a91959"></div>
-                <Script src="https://www.viator.com/orion/partner/widget.js" strategy="lazyOnload"></Script>
               </article>
             )}
 
             {landing.slug === "lesvos-tours" && (
               <article className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm p-4 w-full">
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700 mb-4">
+                  {lang === "en" ? "More Tours & Activities in Lesvos" : "Περισσότερες Εκδρομές & Δραστηριότητες στη Λέσβο"}
+                </p>
                 <div data-vi-partner-id="P00298401" data-vi-widget-ref="W-b4298df4-e2de-499e-a767-1be0bd3e9b83"></div>
-                <Script src="https://www.viator.com/orion/partner/widget.js" strategy="lazyOnload"></Script>
               </article>
             )}
 
             {landing.slug === "crete-tours" && (
               <article className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm p-4 w-full">
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700 mb-4">
+                  {lang === "en" ? "More Tours & Activities in Crete" : "Περισσότερες Εκδρομές & Δραστηριότητες στην Κρήτη"}
+                </p>
                 <div data-vi-partner-id="P00298401" data-vi-widget-ref="W-beb6dd42-10a7-4524-8626-6fda84f9e5df"></div>
-                <Script src="https://www.viator.com/orion/partner/widget.js" strategy="lazyOnload"></Script>
               </article>
             )}
 
@@ -377,6 +493,18 @@ export default function ExperienceDetailsClient({
           </a>
         </div>
       </footer>
+
+      <Script 
+        src="https://www.viator.com/orion/partner/widget.js" 
+        strategy="afterInteractive"
+        onReady={() => {
+          // @ts-ignore
+          if (window.ViatorWidgets) {
+            // @ts-ignore
+            window.ViatorWidgets.init();
+          }
+        }}
+      />
     </main>
   );
 }
