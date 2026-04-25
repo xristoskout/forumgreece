@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import { useChat } from "@ai-sdk/react";
+import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import ReactMarkdown from 'react-markdown';
 
@@ -9,12 +10,16 @@ export default function ChatWidget() {
   const [isOpen, setIsOpen] = useState(false);
   const [text, setText] = useState("");
   const [mounted, setMounted] = useState(false);
+  const pathname = usePathname();
+
+  const lang = pathname?.startsWith("/el") ? "el" : "en";
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
   const { messages, sendMessage, status } = useChat({
+    body: { lang },
     onError: (err) => {
       console.error("Chat Error:", err);
       alert("AI Error: Check your terminal/console for details. Likely missing API Key.");
@@ -64,13 +69,17 @@ export default function ChatWidget() {
                 <div className="flex h-8 w-8 items-center justify-center rounded-full bg-white/20 text-lg">🤖</div>
                 <div>
                   <h3 className="font-bold">GoGreeceNow AI</h3>
-                  <p className="text-xs text-indigo-100 opacity-90">Ask anything about your destinations!</p>
+                  <p className="text-xs text-indigo-100 opacity-90">
+                    {lang === 'el' 
+                      ? 'Ρωτήστε οτιδήποτε για τους προορισμούς στη γλώσσα σας!' 
+                      : 'Ask anything about your destinations in your language!'}
+                  </p>
                 </div>
               </div>
               <button
                 onClick={() => setIsOpen(false)}
                 className="rounded-full p-2 text-white/80 transition hover:bg-white/20 hover:text-white"
-                aria-label="Close Chat"
+                aria-label={lang === 'el' ? 'Κλείσιμο' : 'Close Chat'}
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M18 6 6 18"/><path d="m6 6 12 12"/>
@@ -99,7 +108,9 @@ export default function ChatWidget() {
                   </motion.div>
                   <div className="space-y-3">
                     <p className="text-sm font-medium text-slate-600">
-                      Hi! I'm your GoGreeceNow personal travel assistant. How can I help you?
+                      {lang === 'el' 
+                        ? "Γεια! Είμαι ο βοηθός του GoGreeceNow. Μπορώ να σας βοηθήσω σε οποιαδήποτε γλώσσα!" 
+                        : "Hi! I'm your GoGreeceNow assistant. I can help you in any language!"}
                     </p>
                   </div>
                 </div>
@@ -174,7 +185,7 @@ export default function ChatWidget() {
                   type="text"
                   value={text}
                   onChange={(e) => setText(e.target.value)}
-                  placeholder="Type your question..."
+                  placeholder={lang === 'el' ? "Πληκτρολογήστε την ερώτησή σας..." : "Type your question..."}
                   className="w-full rounded-full border border-slate-300 bg-slate-50 px-4 py-3 pr-12 text-sm text-slate-900 focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 transition-all placeholder:text-slate-400 pointer-events-auto"
                   autoFocus
                 />

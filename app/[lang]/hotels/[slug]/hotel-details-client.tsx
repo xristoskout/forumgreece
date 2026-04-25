@@ -175,9 +175,9 @@ export default function HotelDetailsClient() {
             />
           </div>
 
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-slate-900/5 opacity-95" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent opacity-90" />
 
-          <div className="relative grid gap-8 px-6 py-8 lg:grid-cols-2 lg:items-center lg:px-10">
+          <div className="relative px-6 py-12 lg:py-16 lg:px-10 max-w-4xl">
             <div>
               <div className="flex flex-wrap items-center gap-3">
                 <span className="inline-flex rounded-full border border-indigo-200 bg-indigo-100 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-indigo-800 backdrop-blur-md">
@@ -212,95 +212,26 @@ export default function HotelDetailsClient() {
                 {t.premiumNote[lang]}
               </p>
             </div>
-
-            <div className="rounded-[2.5rem] border border-slate-200 bg-white/90 p-8 lg:p-10 backdrop-blur-md shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-indigo-500/10">
-              <p className="text-sm font-bold uppercase tracking-widest text-indigo-700">
-                {t.quickAccess[lang]}
-              </p>
-
-              <div className="mt-5 grid gap-3">
-                {item.phone && (
-                  <a
-                    href={`tel:${item.phone}`}
-                    className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-medium text-slate-900 transition hover:bg-white/15"
-                  >
-                    {item.phone}
-                  </a>
-                )}
-
-                {item.email && (
-                  <a
-                    href={`mailto:${item.email}`}
-                    className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-medium text-slate-900 transition hover:bg-white/15"
-                  >
-                    {item.email}
-                  </a>
-                )}
-
-                {item.website && (
-                  <a
-                    href={item.website}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-medium text-slate-900 transition hover:bg-white/15"
-                  >
-                    {t.website[lang]}
-                  </a>
-                )}
-                
-                {mapLink && (
-                  <a
-                    href={mapLink}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="rounded-2xl bg-white backdrop-blur-md px-4 py-3 text-center text-sm font-semibold text-indigo-800 transition hover:bg-sky-50"
-                  >
-                    {t.openMap[lang]}
-                  </a>
-                )}
-
-                {slug === "santorini" && (
-                  <div className="mt-4 overflow-hidden rounded-2xl border border-slate-200">
-                    <iframe 
-                      id="stay22-widget-santorini" 
-                      width="100%" 
-                      height="428" 
-                      src="https://stay22.com/embed/69eb77823fa26d2af687fe19" 
-                      frameBorder="0"
-                      title="Stay22 Santorini Hotels Map"
-                    ></iframe>
-                  </div>
-                )}
-
-                {slug === "corfu" && (
-                  <div className="mt-4 overflow-hidden rounded-2xl border border-slate-200">
-                    <iframe 
-                      id="stay22-widget-corfu" 
-                      width="100%" 
-                      height="428" 
-                      src="https://stay22.com/embed/69eb79623fa26d2af68804f7" 
-                      frameBorder="0"
-                      title="Stay22 Corfu Hotels Map"
-                    ></iframe>
-                  </div>
-                )}
-
-                {slug === "lesvos" && (
-                  <div className="mt-4 overflow-hidden rounded-2xl border border-slate-200">
-                    <iframe 
-                      id="stay22-widget-lesvos" 
-                      width="100%" 
-                      height="428" 
-                      src="https://stay22.com/embed/69eb79de3fa26d2af68806f8" 
-                      frameBorder="0"
-                      title="Stay22 Lesvos Hotels Map"
-                    ></iframe>
-                  </div>
-                )}
-              </div>
-            </div>
           </div>
         </section>
+
+        {(slug === "santorini" || slug === "corfu" || slug === "lesvos") && (
+          <section className="mt-10 overflow-hidden rounded-[2.5rem] border border-slate-200 shadow-xl bg-white p-3">
+             <iframe 
+              id={`stay22-widget-top-${slug}`}
+              width="100%" 
+              height="600" 
+              src={
+                slug === "santorini" ? "https://stay22.com/embed/69eb77823fa26d2af687fe19" :
+                slug === "corfu" ? "https://stay22.com/embed/69eb79623fa26d2af68804f7" :
+                "https://stay22.com/embed/69eb79de3fa26d2af68806f8"
+              }
+              frameBorder="0"
+              title={`Stay22 ${slug} Hotels Map`}
+              className="rounded-[2.2rem]"
+            ></iframe>
+          </section>
+        )}
 
         {galleryImages.length > 1 && (
           <section className="mt-16">
