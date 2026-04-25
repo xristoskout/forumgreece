@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import { useChat } from "@ai-sdk/react";
+import { DefaultChatTransport } from "ai";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import ReactMarkdown from 'react-markdown';
@@ -19,7 +20,10 @@ export default function ChatWidget() {
   }, []);
 
   const { messages, sendMessage, status } = useChat({
-    body: { lang },
+    transport: new DefaultChatTransport({
+      api: '/api/chat',
+      body: { lang }
+    }),
     onError: (err) => {
       console.error("Chat Error:", err);
       alert("AI Error: Check your terminal/console for details. Likely missing API Key.");
