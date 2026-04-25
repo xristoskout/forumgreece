@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { food, type Lang } from "../../../../lib/content";
+import { experienceBusinesses } from "../../../../lib/experiences";
 import EatDrinkClient from "./eat-drink-client";
 
 type Params = Promise<{ lang: string; slug: string }>;
@@ -53,5 +54,7 @@ export default async function EatDrinkPage({ params }: { params: Params }) {
     notFound();
   }
 
-  return <EatDrinkClient item={item} lang={lang} />;
+  const relatedBusinesses = experienceBusinesses.filter(b => b.landingSlug === slug);
+
+  return <EatDrinkClient item={item} lang={lang} businesses={relatedBusinesses} />;
 }

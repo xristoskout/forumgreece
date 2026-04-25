@@ -262,93 +262,6 @@ export const destinations: Destination[] = [
     }
   },
   {
-    slug: "corfu",
-    name: "Corfu",
-    region: { en: "Ionian Islands", el: "Ιόνια Νησιά" },
-    blurb: {
-      en: "Green scenery, elegant town life, beaches and island charm.",
-      el: "Πράσινα τοπία, αρχοντική πόλη, παραλίες και νησιώτικη γοητεία.",
-    },
-    image: "/images/corfu.webp",
-    overview: {
-      en: "Corfu mixes elegant town life, lush landscapes and easy family-friendly holidays.",
-      el: "Η Κέρκυρα συνδυάζει αρχοντική ατμόσφαιρα, καταπράσινα τοπία και εύκολες οικογενειακές διακοπές.",
-    },
-    highlights: {
-      en: ["Old Town walks", "Green scenery", "Ionian beaches"],
-      el: ["Βόλτες στην Παλιά Πόλη", "Πράσινα τοπία", "Ιόνιες παραλίες"],
-    },
-    featured: true,
-    seo: {
-      title: {
-        en: "Corfu Travel Guide: Best Beaches, Old Town & Travel Tips",
-        el: "Κέρκυρα: Οδηγός Ταξιδιού — Παραλίες, Παλιά Πόλη & Χρήσιμες Συμβουλές"
-      },
-      description: {
-        en: "Detailed travel guide to Corfu: why it's worth visiting, best time, how to get there, top attractions and experiences, beaches for every taste, surprise villages, local flavors and practical tips + FAQ.",
-        el: "Αναλυτικός ταξιδιωτικός οδηγός για Κέρκυρα: γιατί αξίζει, καλύτερη εποχή, πώς φτάνεις, κορυφαία αξιοθέατα και εμπειρίες, παραλίες για κάθε γούστο, χωριά-έκπληξη, τοπικές γεύσεις και πρακτικά tips + FAQ."
-      }
-    }
-  },
-  {
-    slug: "nayplio-odigos-taxidiou",
-    name: "Nafplio",
-    region: { en: "Peloponnese", el: "Πελοπόννησος" },
-    blurb: {
-      en: "Romantic old town, seaside walks and easy weekend escapes.",
-      el: "Ρομανική παλιά πόλη, βόλτες δίπλα στη θάλασσα και εύκολες αποδράσεις.",
-    },
-    image: "/images/nafplio.webp",
-    overview: {
-      en: "Nafplio combines romantic old town charm, seaside walks, elegant architecture and rich history.",
-      el: "Το Ναύπλιο συνδυάζει ρομαντική ατμόσφαιρα παλιάς πόλης, παραθαλάσσιες βόλτες, αρχοντική αρχιτεκτονική και πλούσια ιστορία.",
-    },
-    highlights: {
-      en: ["Palamidi & Bourtzi Castles", "Old Town romance", "Archaeological escapes"],
-      el: ["Παλαμήδι & Μπούρτζι", "Ρομάντζο στην Παλιά Πόλη", "Αρχαιολογικές αποδράσεις"],
-    },
-    featured: true,
-    seo: {
-      title: {
-        en: "Nafplio Travel Guide: Palamidi, Bourtzi, Beaches & Things to Do",
-        el: "Ναύπλιο: Οδηγός Ταξιδιού — Παλαμήδι, Μπούρτζι, Παραλίες & Αξιοθέατα"
-      },
-      description: {
-        en: "Complete guide to Nafplio: why it's worth visiting, best time, how to go, top attractions (Old Town, Palamidi, Bourtzi, Akronafplia), beaches and nearby villages, local food, practical tips + FAQ to enjoy it like a local.",
-        el: "Πλήρης οδηγός για Ναύπλιο: γιατί αξίζει, καλύτερη εποχή, πώς θα πας, κορυφαία αξιοθέατα (Παλιά Πόλη, Παλαμήδι, Μπούρτζι, Ακροναυπλία), παραλίες και κοντινά χωριά, τοπικές γεύσεις, πρακτικά tips + FAQ για να το απολαύσεις σαν ντόπιος."
-      }
-    }
-  },
-  {
-    slug: "thessaloniki",
-    name: "Thessaloniki",
-    region: { en: "Northern Greece", el: "Βόρεια Ελλάδα" },
-    blurb: {
-      en: "Food, culture, nightlife and urban travel experiences.",
-      el: "Φαγητό, πολιτισμός, νυχτερινή ζωή και αστικές ταξιδιωτικές εμπειρίες.",
-    },
-    image: "/images/thessaloniki.webp",
-    overview: {
-      en: "Thessaloniki combines a rich culinary scene, Byzantine history and vibrant urban culture by the sea.",
-      el: "Η Θεσσαλονίκη συνδυάζει πλούσια γαστρονομική σκηνή, βυζαντινή ιστορία και ζωντανό αστικό πολιτισμό δίπλα στη θάλασσα.",
-    },
-    highlights: {
-      en: ["UNESCO monuments", "White Tower & waterfront", "Culinary capital"],
-      el: ["Μνημεία UNESCO", "Λευκός Πύργος & παραλία", "Γαστρονομική πρωτεύουσα"],
-    },
-    featured: true,
-    seo: {
-      title: {
-        en: "Thessaloniki Travel Guide: Attractions, Food & Best Things to Do",
-        el: "Θεσσαλονίκη: Οδηγός Ταξιδιού — Αξιοθέατα, Φαγητό & Τι να Δεις"
-      },
-      description: {
-        en: "Detailed guide to Thessaloniki: why it's worth it, best time, how to get there, what to see (UNESCO monuments, White Tower, Upper Town, Rotunda), where to eat (markets, bougatsa, koulouri), nearby beaches (Peraia, Agia Triada, Epanomi) and practical tips + FAQ.",
-        el: "Αναλυτικός οδηγός για Θεσσαλονίκη: γιατί αξίζει, καλύτερη εποχή, πώς φτάνεις, τι να δεις (UNESCO μνημεία, Λευκός Πύργος, Άνω Πόλη, Ροτόντα), πού να φας (αγορές, bougatsa, koulouri), κοντινές παραλίες (Περαία, Αγ. Τριάδα, Επανομή) και πρακτικά tips + FAQ."
-      }
-    }
-  },
-  {
     slug: "kefalonia",
     name: "Kefalonia",
     region: { en: "Ionian Islands", el: "Ιόνια Νησιά" },
@@ -450,6 +363,93 @@ export const destinations: Destination[] = [
       description: {
         en: "Complete travel guide to Athens: why it's worth it, best time, top attractions (UNESCO Acropolis, museums, Lycabettus), neighborhoods, street food, Athenian Riviera/Vouliagmeni Lake, Saronic islands day trips + practical tips & FAQ.",
         el: "Πλήρης ταξιδιωτικός οδηγός για Αθήνα: γιατί αξίζει, καλύτερη εποχή, πώς φτάνεις, top αξιοθέατα (Ακρόπολη UNESCO, Μουσείο Ακρόπολης, Αρχαία Αγορά, Λυκαβηττός, Καλλιμάρμαρο), γειτονιές, street food και αγορές, Αθηναϊκή Ριβιέρα/Λίμνη Βουλιαγμένης, μονοήμερες (Σούνιο, νησιά Σαρωνικού) + πρακτικά tips & FAQ."
+      }
+    }
+  },
+  {
+    slug: "corfu",
+    name: "Corfu",
+    region: { en: "Ionian Islands", el: "Ιόνια Νησιά" },
+    blurb: {
+      en: "Green scenery, elegant town life, beaches and island charm.",
+      el: "Πράσινα τοπία, αρχοντική πόλη, παραλίες και νησιώτικη γοητεία.",
+    },
+    image: "/images/corfu.webp",
+    overview: {
+      en: "Corfu mixes elegant town life, lush landscapes and easy family-friendly holidays.",
+      el: "Η Κέρκυρα συνδυάζει αρχοντική ατμόσφαιρα, καταπράσινα τοπία και εύκολες οικογενειακές διακοπές.",
+    },
+    highlights: {
+      en: ["Old Town walks", "Green scenery", "Ionian beaches"],
+      el: ["Βόλτες στην Παλιά Πόλη", "Πράσινα τοπία", "Ιόνιες παραλίες"],
+    },
+    featured: true,
+    seo: {
+      title: {
+        en: "Corfu Travel Guide: Best Beaches, Old Town & Travel Tips",
+        el: "Κέρκυρα: Οδηγός Ταξιδιού — Παραλίες, Παλιά Πόλη & Χρήσιμες Συμβουλές"
+      },
+      description: {
+        en: "Detailed travel guide to Corfu: why it's worth visiting, best time, how to get there, top attractions and experiences, beaches for every taste, surprise villages, local flavors and practical tips + FAQ.",
+        el: "Αναλυτικός ταξιδιωτικός οδηγός για Κέρκυρα: γιατί αξίζει, καλύτερη εποχή, πώς φτάνεις, κορυφαία αξιοθέατα και εμπειρίες, παραλίες για κάθε γούστο, χωριά-έκπληξη, τοπικές γεύσεις και πρακτικά tips + FAQ."
+      }
+    }
+  },
+  {
+    slug: "nayplio-odigos-taxidiou",
+    name: "Nafplio",
+    region: { en: "Peloponnese", el: "Πελοπόννησος" },
+    blurb: {
+      en: "Romantic old town, seaside walks and easy weekend escapes.",
+      el: "Ρομανική παλιά πόλη, βόλτες δίπλα στη θάλασσα και εύκολες αποδράσεις.",
+    },
+    image: "/images/nafplio.webp",
+    overview: {
+      en: "Nafplio combines romantic old town charm, seaside walks, elegant architecture and rich history.",
+      el: "Το Ναύπλιο συνδυάζει ρομαντική ατμόσφαιρα παλιάς πόλης, παραθαλάσσιες βόλτες, αρχοντική αρχιτεκτονική και πλούσια ιστορία.",
+    },
+    highlights: {
+      en: ["Palamidi & Bourtzi Castles", "Old Town romance", "Archaeological escapes"],
+      el: ["Παλαμήδι & Μπούρτζι", "Ρομάντζο στην Παλιά Πόλη", "Αρχαιολογικές αποδράσεις"],
+    },
+    featured: true,
+    seo: {
+      title: {
+        en: "Nafplio Travel Guide: Palamidi, Bourtzi, Beaches & Things to Do",
+        el: "Ναύπλιο: Οδηγός Ταξιδιού — Παλαμήδι, Μπούρτζι, Παραλίες & Αξιοθέατα"
+      },
+      description: {
+        en: "Complete guide to Nafplio: why it's worth visiting, best time, how to go, top attractions (Old Town, Palamidi, Bourtzi, Akronafplia), beaches and nearby villages, local food, practical tips + FAQ to enjoy it like a local.",
+        el: "Πλήρης οδηγός για Ναύπλιο: γιατί αξίζει, καλύτερη εποχή, πώς θα πας, κορυφαία αξιοθέατα (Παλιά Πόλη, Παλαμήδι, Μπούρτζι, Ακροναυπλία), παραλίες και κοντινά χωριά, τοπικές γεύσεις, πρακτικά tips + FAQ για να το απολαύσεις σαν ντόπιος."
+      }
+    }
+  },
+  {
+    slug: "thessaloniki",
+    name: "Thessaloniki",
+    region: { en: "Northern Greece", el: "Βόρεια Ελλάδα" },
+    blurb: {
+      en: "Food, culture, nightlife and urban travel experiences.",
+      el: "Φαγητό, πολιτισμός, νυχτερινή ζωή και αστικές ταξιδιωτικές εμπειρίες.",
+    },
+    image: "/images/thessaloniki.webp",
+    overview: {
+      en: "Thessaloniki combines a rich culinary scene, Byzantine history and vibrant urban culture by the sea.",
+      el: "Η Θεσσαλονίκη συνδυάζει πλούσια γαστρονομική σκηνή, βυζαντινή ιστορία και ζωντανό αστικό πολιτισμό δίπλα στη θάλασσα.",
+    },
+    highlights: {
+      en: ["UNESCO monuments", "White Tower & waterfront", "Culinary capital"],
+      el: ["Μνημεία UNESCO", "Λευκός Πύργος & παραλία", "Γαστρονομική πρωτεύουσα"],
+    },
+    featured: true,
+    seo: {
+      title: {
+        en: "Thessaloniki Travel Guide: Attractions, Food & Best Things to Do",
+        el: "Θεσσαλονίκη: Οδηγός Ταξιδιού — Αξιοθέατα, Φαγητό & Τι να Δεις"
+      },
+      description: {
+        en: "Detailed guide to Thessaloniki: why it's worth it, best time, how to get there, what to see (UNESCO monuments, White Tower, Upper Town, Rotunda), where to eat (markets, bougatsa, koulouri), nearby beaches (Peraia, Agia Triada, Epanomi) and practical tips + FAQ.",
+        el: "Αναλυτικός οδηγός για Θεσσαλονίκη: γιατί αξίζει, καλύτερη εποχή, πώς φτάνεις, τι να δεις (UNESCO μνημεία, Λευκός Πύργος, Άνω Πόλη, Ροτόντα), πού να φας (αγορές, bougatsa, koulouri), κοντινές παραλίες (Περαία, Αγ. Τριάδα, Επανομή) και πρακτικά tips + FAQ."
       }
     }
   },

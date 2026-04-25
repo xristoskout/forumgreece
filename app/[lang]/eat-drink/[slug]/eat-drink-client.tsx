@@ -6,13 +6,15 @@ import { usePathname, useRouter } from "next/navigation";
 import SiteHeader from "../../../../components/site-header";
 
 import { type FoodCard, type Lang, siteBrand, siteBrandLine } from "../../../../lib/content";
+import { type ExperienceBusiness } from "../../../../lib/experiences";
 
 type EatDrinkClientProps = {
   item: FoodCard;
   lang: Lang;
+  businesses: ExperienceBusiness[];
 };
 
-export default function EatDrinkClient({ item, lang }: EatDrinkClientProps) {
+export default function EatDrinkClient({ item, lang, businesses }: EatDrinkClientProps) {
   const pathname = usePathname();
   const router = useRouter();
 
@@ -67,6 +69,10 @@ export default function EatDrinkClient({ item, lang }: EatDrinkClientProps) {
       en: "Back to homepage",
       el: "Επιστροφή στην αρχική",
     },
+    localBusinesses: {
+      en: "Featured Local Producers & Businesses",
+      el: "Προτεινόμενοι Τοπικοί Παραγωγοί & Επιχειρήσεις",
+    },
   };
 
   const renderText = (text: string) => {
@@ -111,9 +117,9 @@ export default function EatDrinkClient({ item, lang }: EatDrinkClientProps) {
         </div>
       </section>
 
-      <section className="mx-auto grid max-w-7xl gap-8 px-6 pb-20 lg:grid-cols-[1.2fr_0.8fr]">
-        <div className="group rounded-[2.5rem] border border-slate-200 bg-white/90 backdrop-blur-md p-10 shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)] flex flex-col justify-center">
-          <p className="text-sm font-semibold uppercase tracking-widest text-indigo-700 mb-4">
+      <section className="mx-auto grid max-w-7xl gap-8 px-6 pb-12 lg:grid-cols-[1.2fr_0.8fr]">
+        <div className="group rounded-[2.5rem] border border-slate-200 bg-white/90 backdrop-blur-md p-10 shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)] flex flex-col justify-center h-fit">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700 mb-4">
             {t.overview[lang]}
           </p>
           <h2 className="text-3xl font-bold tracking-tight mb-6">
@@ -144,20 +150,64 @@ export default function EatDrinkClient({ item, lang }: EatDrinkClientProps) {
           </div>
         </div>
 
-        <div className="group rounded-[2.5rem] border border-slate-200 bg-indigo-50/80 backdrop-blur-md p-10 shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)] h-fit sticky top-24">
-          <p className="text-sm font-semibold uppercase tracking-widest text-indigo-700 mb-4">
-            {t.specialties[lang]}
-          </p>
-          <h2 className="text-3xl font-bold tracking-tight mb-8">
-            Highlights
-          </h2>
-          <ul className="space-y-4 text-slate-600">
-            {item.specialties[lang].map((specialty) => (
-              <li key={specialty} className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-white backdrop-blur-md px-5 py-4 transition-all hover:bg-slate-50">
-                <span className="text-indigo-700">✨</span> {specialty}
-              </li>
-            ))}
-          </ul>
+        <div className="space-y-8 h-fit lg:sticky lg:top-24">
+          {/* Featured Businesses Section */}
+          {businesses.length > 0 && (
+            <div className="rounded-[2.5rem] border border-slate-200 bg-white/90 backdrop-blur-md p-8 shadow-xl">
+              <p className="text-xs font-bold uppercase tracking-[0.3em] text-indigo-700 mb-6">
+                {t.localBusinesses[lang]}
+              </p>
+              
+              <div className="space-y-6">
+                {businesses.map((business) => (
+                  <Link
+                    key={business.slug}
+                    href={withLang(business.href || `/businesses/${business.slug}`)}
+                    className="group block overflow-hidden rounded-3xl border border-slate-100 bg-slate-50 transition-all hover:bg-white hover:shadow-lg hover:-translate-y-1"
+                  >
+                    <div className="relative h-40 w-full overflow-hidden">
+                      <Image
+                        src={business.image}
+                        alt={business.name}
+                        fill
+                        className="object-cover transition-transform duration-700 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent" />
+                      <div className="absolute bottom-3 left-4">
+                        <span className="rounded-full bg-white/90 px-3 py-1 text-[9px] font-bold uppercase tracking-widest text-indigo-700 shadow-sm">
+                          {business.category[lang]}
+                        </span>
+                      </div>
+                    </div>
+                    <div className="p-5">
+                      <h3 className="text-lg font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">
+                        {business.name}
+                      </h3>
+                      <p className="mt-2 text-xs text-slate-500 line-clamp-2 font-light leading-relaxed">
+                        {business.info[lang]}
+                      </p>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
+
+          <div className="group rounded-[2.5rem] border border-slate-200 bg-indigo-50/80 backdrop-blur-md p-10 shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)]">
+            <p className="text-sm font-semibold uppercase tracking-widest text-indigo-700 mb-4">
+              {t.specialties[lang]}
+            </p>
+            <h2 className="text-3xl font-bold tracking-tight mb-8">
+              Highlights
+            </h2>
+            <ul className="space-y-4 text-slate-600">
+              {item.specialties[lang].map((specialty) => (
+                <li key={specialty} className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-white backdrop-blur-md px-5 py-4 transition-all hover:bg-slate-50">
+                  <span className="text-indigo-700">✨</span> {specialty}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
 
