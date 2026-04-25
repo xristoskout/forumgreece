@@ -150,16 +150,16 @@ export default function HomePageClient({
     },
 
     destinationEyebrow: {
-      en: "Top Destinations",
-      el: "Δημοφιλείς Προορισμοί",
+      en: "Featured Destinations",
+      el: "Προτεινόμενοι Προορισμοί",
     },
     destinationTitle: {
-      en: "Explore Greece through destination guides",
-      el: "Ανακάλυψε την Ελλάδα μέσα από οδηγούς προορισμών",
+      en: "Top picks across Greece",
+      el: "Κορυφαίες επιλογές σε όλη την Ελλάδα",
     },
     destinationText: {
-      en: "Find island, city and regional guides with highlights, planning tips and ideas to help you decide where to go in Greece.",
-      el: "Βρες οδηγούς για νησιά, πόλεις και περιοχές με highlights, πρακτικές συμβουλές και ιδέες για να αποφασίσεις πού θα πας στην Ελλάδα.",
+      en: "A curated selection of must-visit destinations — from iconic Cycladic islands to mainland escapes. Browse all regions below.",
+      el: "Μια επιλεγμένη συλλογή από must-visit προορισμούς — από εμβληματικά κυκλαδίτικα νησιά μέχρι ηπειρωτικές αποδράσεις. Εξερεύνησε όλες τις περιοχές παρακάτω.",
     },
 
     travelHubEyebrow: {
@@ -851,7 +851,7 @@ export default function HomePageClient({
         </div>
 
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {destinations.map((item, index) => {
+          {destinations.filter(d => d.featured).slice(0, 6).map((item, index) => {
             const meta = destinationCardMeta[index % destinationCardMeta.length];
             return (
               <article
@@ -893,6 +893,33 @@ export default function HomePageClient({
               </article>
             );
           })}
+        </div>
+
+        {/* Level 2 CTA — All Destinations by Region */}
+        <div className="mt-14 relative overflow-hidden rounded-[2rem] bg-gradient-to-r from-indigo-600 via-indigo-700 to-slate-800 p-8 md:p-10 flex flex-col md:flex-row items-center gap-8 shadow-2xl">
+          <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 80% 50%, rgba(255,255,255,0.4) 0%, transparent 60%)' }} />
+          <div className="relative flex-1 text-left">
+            <p className="text-xs font-bold uppercase tracking-[0.2em] text-indigo-200 mb-2">
+              {lang === "en" ? "Full Directory — Browse by Region" : "Πλήρης Κατάλογος — Ανά Περιοχή"}
+            </p>
+            <h3 className="text-2xl md:text-3xl font-extrabold text-white mb-3 tracking-tight">
+              {lang === "en" ? "Explore all Greek destinations" : "Εξερεύνησε όλους τους ελληνικούς προορισμούς"}
+            </h3>
+            <p className="text-indigo-200/80 text-sm leading-relaxed max-w-xl">
+              {lang === "en"
+                ? "Browse the complete destination directory organised by region — Cyclades, Ionian Islands, Crete, Peloponnese, Northern Greece, Meteora and more."
+                : "Εξερεύνησε τον πλήρη κατάλογο ανά γεωγραφική ενότητα — Κυκλάδες, Ιόνια Νησιά, Κρήτη, Πελοπόννησος, Βόρεια Ελλάδα, Μετέωρα και άλλα."}
+            </p>
+          </div>
+          <div className="relative shrink-0">
+            <Link
+              href={withLang("/destinations")}
+              className="group inline-flex items-center gap-3 rounded-2xl bg-white px-7 py-4 text-base font-bold text-indigo-700 shadow-lg transition-all hover:bg-indigo-50 hover:scale-105"
+            >
+              🗺️ {lang === "en" ? "All Destinations (By Region)" : "Όλοι οι Προορισμοί (Ανά Περιοχή)"}
+              <span className="transition-transform group-hover:translate-x-1">→</span>
+            </Link>
+          </div>
         </div>
       </section>
 
