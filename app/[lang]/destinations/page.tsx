@@ -1,8 +1,7 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
-import Image from 'next/image';
 import { destinations, type Lang } from '../../../lib/content';
 import SiteHeader from '../../../components/site-header';
+import DestinationsClient from './destinations-client';
 
 type Props = {
   params: Promise<{ lang: string }>;
@@ -18,12 +17,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const t = {
     title: {
-      en: 'Explore Greece: Destination Guides & Island Ideas | GoGreeceNow',
-      el: 'Εξερευνήστε την Ελλάδα: Οδηγοί Προορισμών | GoGreeceNow',
+      en: 'All Destinations in Greece — Browse by Region | GoGreeceNow',
+      el: 'Όλοι οι Προορισμοί στην Ελλάδα — Ανά Περιοχή | GoGreeceNow',
     },
     description: {
-      en: 'Discover the most breathtaking destinations in Greece. Detailed guides for Santorini, Mykonos, Crete, Corfu and more.',
-      el: 'Ανακαλύψτε τους πιο μαγευτικούς προορισμούς στην Ελλάδα. Αναλυτικοί οδηγοί για Σαντορίνη, Μύκονο, Κρήτη, Κέρκυρα και άλλα.',
+      en: 'Explore all Greek destinations organized by region: Cyclades, Ionian Islands, Crete, Peloponnese, Northern Greece and more.',
+      el: 'Εξερευνήστε όλους τους ελληνικούς προορισμούς ανά περιοχή: Κυκλάδες, Ιόνια Νησιά, Κρήτη, Πελοπόννησος, Βόρεια Ελλάδα και άλλα.',
     },
   };
 
@@ -33,63 +32,139 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+// Geographic regions in display order
+const regionOrder = [
+  {
+    key: 'Cyclades',
+    label: { en: 'Cyclades', el: 'Κυκλάδες' },
+    emoji: '🌊',
+    description: {
+      en: 'The iconic island group with whitewashed villages, caldera views and crystal Aegean waters.',
+      el: 'Το εμβληματικό νησιωτικό σύμπλεγμα με ασπρισμένα χωριά, θέα στην καλντέρα και κρυστάλλινα νερά.',
+    },
+  },
+  {
+    key: 'Ionian Islands',
+    label: { en: 'Ionian Islands', el: 'Ιόνια Νησιά' },
+    emoji: '🌿',
+    description: {
+      en: 'Lush green islands with Venetian heritage, turquoise waters and relaxed holiday atmosphere.',
+      el: 'Καταπράσινα νησιά με ενετική κληρονομιά, τυρκουάζ νερά και χαλαρή διακοπεύτικη ατμόσφαιρα.',
+    },
+  },
+  {
+    key: 'Crete',
+    label: { en: 'Crete', el: 'Κρήτη' },
+    emoji: '🏔️',
+    description: {
+      en: "Greece's largest island — a world of its own with gorges, beaches, food and history.",
+      el: 'Το μεγαλύτερο νησί της Ελλάδας — ένας κόσμος από μόνο του με φαράγγια, παραλίες, γαστρονομία και ιστορία.',
+    },
+  },
+  {
+    key: 'Dodecanese',
+    label: { en: 'Dodecanese', el: 'Δωδεκάνησα' },
+    emoji: '🏰',
+    description: {
+      en: 'Knights castles, medieval towns and warm Aegean waters close to the Turkish coast.',
+      el: 'Κάστρα Ιπποτών, μεσαιωνικές πόλεις και ζεστά αιγαιοπελαγίτικα νερά κοντά στις τουρκικές ακτές.',
+    },
+  },
+  {
+    key: 'North Aegean',
+    label: { en: 'North Aegean', el: 'Βόρειο Αιγαίο' },
+    emoji: '🫒',
+    description: {
+      en: 'Authentic, less-traveled islands with strong local identity, food culture and wild nature.',
+      el: 'Αυθεντικά, λιγότερο τουριστικά νησιά με ισχυρή τοπική ταυτότητα, γαστρονομία και άγρια φύση.',
+    },
+  },
+  {
+    key: 'Peloponnese',
+    label: { en: 'Peloponnese', el: 'Πελοπόννησος' },
+    emoji: '🏛️',
+    description: {
+      en: 'Ancient ruins, medieval fortresses, romantic old towns and unspoiled coastline.',
+      el: 'Αρχαίες ακροπόλεις, μεσαιωνικά κάστρα, ρομαντικές παλιές πόλεις και ανέγγιχτες ακτές.',
+    },
+  },
+  {
+    key: 'Attica',
+    label: { en: 'Attica', el: 'Αττική' },
+    emoji: '🏙️',
+    description: {
+      en: 'Athens and the Attica coast — ancient wonders, urban culture and Riviera escapes.',
+      el: 'Αθήνα και αττική ακτή — αρχαία θαύματα, αστική κουλτούρα και αποδράσεις στη Ριβιέρα.',
+    },
+  },
+  {
+    key: 'Northern Greece',
+    label: { en: 'Northern Greece', el: 'Βόρεια Ελλάδα' },
+    emoji: '🌲',
+    description: {
+      en: 'Cosmopolitan Thessaloniki, crystal peninsulas of Halkidiki and Mount Olympus country.',
+      el: 'Κοσμοπολίτικη Θεσσαλονίκη, κρυστάλλινες χερσόνησοι Χαλκιδικής και η χώρα του Ολύμπου.',
+    },
+  },
+  {
+    key: 'Thessaly',
+    label: { en: 'Thessaly', el: 'Θεσσαλία' },
+    emoji: '🪨',
+    description: {
+      en: 'Otherworldly Meteora rock formations and monasteries — a UNESCO World Heritage site.',
+      el: 'Οι υπερκόσμιοι βράχοι των Μετεώρων και τα μοναστήρια τους — μνημείο UNESCO.',
+    },
+  },
+  {
+    key: 'Epirus',
+    label: { en: 'Epirus', el: 'Ήπειρος' },
+    emoji: '🏡',
+    description: {
+      en: 'Wild mountains, river gorges and charming Ionian coast towns like Parga.',
+      el: 'Άγρια βουνά, ποτάμια φαράγγια και γραφικές ιόνιες πόλεις σαν την Πάργα.',
+    },
+  },
+  {
+    key: 'Mainland escapes',
+    label: { en: 'Mainland Escapes', el: 'Ηπειρωτική Ελλάδα' },
+    emoji: '🗿',
+    description: {
+      en: 'Ancient oracle sites, mountain villages and historic routes off the main tourist trail.',
+      el: 'Αρχαία μαντεία, ορεινά χωριά και ιστορικές διαδρομές μακριά από τα τουριστικά μονοπάτια.',
+    },
+  },
+];
+
 export default async function DestinationsListingPage({ params }: Props) {
   const { lang: rawLang } = await params;
   const lang = (rawLang === 'el' ? 'el' : 'en') as Lang;
 
-  const t = {
-    h1: { en: 'Explore Greece', el: 'Εξερευνήστε την Ελλάδα' },
-    sub: {
-      en: 'Discover the most breathtaking destinations, hidden gems, and authentic local experiences across the Aegean and Ionian seas.',
-      el: 'Ανακαλύψτε τους πιο μαγευτικούς προορισμούς, κρυμμένα διαμάντια και αυθεντικές τοπικές εμπειρίες στο Αιγαίο και το Ιόνιο.',
-    },
-    explore: { en: 'Explore', el: 'Εξερεύνηση' },
-  };
+  // Group destinations by region key (English name)
+  const byRegionMap = new Map<string, typeof destinations>();
+  for (const dest of destinations) {
+    const key = dest.region.en;
+    if (!byRegionMap.has(key)) byRegionMap.set(key, []);
+    byRegionMap.get(key)!.push(dest);
+  }
+
+  // Convert Map to plain object for client component
+  const byRegion: Record<string, typeof destinations> = {};
+  for (const [key, val] of byRegionMap.entries()) {
+    byRegion[key] = val;
+  }
+
+  const activeRegions = regionOrder.filter((r) => byRegionMap.has(r.key));
 
   return (
-    <main className="min-h-screen bg-[#f8fbff] mesh-gradient">
+    <>
       <SiteHeader />
-      
-      <div className="container mx-auto px-6 py-32">
-        <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-7xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 via-indigo-500 to-slate-600 tracking-tight">
-            {t.h1[lang]}
-          </h1>
-          <p className="text-slate-500 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-light">
-            {t.sub[lang]}
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
-          {destinations.map((dest) => (
-            <Link href={`/${lang}/destinations/${dest.slug}`} key={dest.slug}>
-              <article className="group relative h-[500px] rounded-[2.5rem] overflow-hidden cursor-pointer border border-slate-200 shadow-2xl transition-all duration-700 hover:-translate-y-4 hover:scale-[1.02]">
-                <Image 
-                  src={dest.image} 
-                  alt={dest.name} 
-                  fill
-                  className="absolute inset-0 object-cover group-hover:scale-110 group-hover:rotate-1 transition-transform duration-1000 ease-out" 
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent transition-opacity duration-500 group-hover:opacity-60"></div>
-                
-                <div className="absolute bottom-10 left-10 right-10 transition-transform duration-500 group-hover:-translate-y-2">
-                  <span className="inline-block px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-widest mb-4 border border-white/20">
-                    {dest.region[lang]}
-                  </span>
-                  <h2 className="text-4xl font-black text-white drop-shadow-2xl mb-3 tracking-tight">{dest.name}</h2>
-                  <p className="text-white/80 text-sm line-clamp-2 mb-6 font-light leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
-                    {dest.blurb[lang]}
-                  </p>
-                  <div className="flex items-center text-white text-sm font-bold opacity-0 group-hover:opacity-100 transition-all duration-500 delay-200">
-                    <span className="border-b border-white/40 pb-1">{t.explore[lang]} {dest.name}</span>
-                    <span className="ml-2 transition-transform group-hover:translate-x-2">→</span>
-                  </div>
-                </div>
-              </article>
-            </Link>
-          ))}
-        </div>
-      </div>
-    </main>
+      <DestinationsClient
+        lang={lang}
+        destinations={destinations}
+        regionOrder={regionOrder}
+        byRegion={byRegion}
+        activeRegions={activeRegions}
+      />
+    </>
   );
 }

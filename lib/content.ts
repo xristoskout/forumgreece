@@ -32,6 +32,7 @@ export type Destination = {
     href: string;
     label: Localized;
   }[];
+  featured?: boolean;
 };
 
 export type GuideSection = {
@@ -178,6 +179,7 @@ export const destinations: Destination[] = [
         label: { en: "Where to Stay in Santorini", el: "Πού να μείνεις στη Σαντορίνη" }
       }
     ],
+    featured: true,
     seo: {
       title: {
         en: "Santorini Travel Guide: Caldera, Beaches, Where to Stay & Things to Do",
@@ -212,6 +214,7 @@ export const destinations: Destination[] = [
         label: { en: "Best Tours in Mykonos", el: "Καλύτερες Εκδρομές στη Μύκονο" }
       }
     ],
+    featured: true,
     seo: {
       title: {
         en: "Mykonos Travel Guide: Beaches, Windmills, Delos & Things to Do",
@@ -246,6 +249,7 @@ export const destinations: Destination[] = [
         label: { en: "Best Family Hotels", el: "Οικογενειακά Ξενοδοχεία" }
       }
     ],
+    featured: true,
     seo: {
       title: {
         en: "Crete Travel Guide: Best Beaches, Gorges, Villages & Things to Do",
@@ -274,6 +278,7 @@ export const destinations: Destination[] = [
       en: ["Old Town walks", "Green scenery", "Ionian beaches"],
       el: ["Βόλτες στην Παλιά Πόλη", "Πράσινα τοπία", "Ιόνιες παραλίες"],
     },
+    featured: true,
     seo: {
       title: {
         en: "Corfu Travel Guide: Best Beaches, Old Town & Travel Tips",
@@ -302,6 +307,7 @@ export const destinations: Destination[] = [
       en: ["Palamidi & Bourtzi Castles", "Old Town romance", "Archaeological escapes"],
       el: ["Παλαμήδι & Μπούρτζι", "Ρομάντζο στην Παλιά Πόλη", "Αρχαιολογικές αποδράσεις"],
     },
+    featured: true,
     seo: {
       title: {
         en: "Nafplio Travel Guide: Palamidi, Bourtzi, Beaches & Things to Do",
@@ -330,6 +336,7 @@ export const destinations: Destination[] = [
       en: ["UNESCO monuments", "White Tower & waterfront", "Culinary capital"],
       el: ["Μνημεία UNESCO", "Λευκός Πύργος & παραλία", "Γαστρονομική πρωτεύουσα"],
     },
+    featured: true,
     seo: {
       title: {
         en: "Thessaloniki Travel Guide: Attractions, Food & Best Things to Do",
@@ -364,6 +371,7 @@ export const destinations: Destination[] = [
         label: { en: "Best Boat Trips", el: "Εκδρομές με Σκάφος" }
       }
     ],
+    featured: true,
     seo: {
       title: {
         en: "Kefalonia Travel Guide: Myrtos Beach, Caves, Villages & Things to Do",
@@ -398,6 +406,7 @@ export const destinations: Destination[] = [
         label: { en: "Things to Do in Lesvos", el: "Τι να Κάνεις στη Λέσβο" }
       }
     ],
+    featured: true,
     seo: {
       title: {
         en: "Lesvos Travel Guide: Mytilene, Petrified Forest, Beaches & Local Food",
@@ -432,6 +441,7 @@ export const destinations: Destination[] = [
         label: { en: "Where to Stay (First Timers)", el: "Πού να Μείνεις (Πρώτη Φορά)" }
       }
     ],
+    featured: true,
     seo: {
       title: {
         en: "Athens Travel Guide: Acropolis, Neighborhoods, Food & Things to Do",
@@ -443,6 +453,106 @@ export const destinations: Destination[] = [
       }
     }
   },
+  {
+    slug: "paros",
+    name: "Paros",
+    region: { en: "Cyclades", el: "Κυκλάδες" },
+    blurb: { en: "Traditional villages, beaches and balanced Cycladic charm.", el: "Παραδοσιακά χωριά, παραλίες και κυκλαδίτικη γοητεία." },
+    image: "/images/mykonos.webp",
+    overview: { en: "Paros is the perfect middle ground between high energy and relaxed island life.", el: "Η Πάρος είναι η χρυσή τομή ανάμεσα στην έντονη ζωή και τη χαλαρή νησιώτικη ατμόσφαιρα." },
+    highlights: { en: ["Naoussa harbor", "Parikia old town", "Golden Beach"], el: ["Λιμανάκι Νάουσας", "Παροικιά", "Χρυσή Ακτή"] },
+    featured: false
+  },
+  {
+    slug: "milos",
+    name: "Milos",
+    region: { en: "Cyclades", el: "Κυκλάδες" },
+    blurb: { en: "Volcanic coastline, rare rock formations and turquoise waters.", el: "Ηφαιστειακό τοπίο, σπάνιοι σχηματισμοί και τυρκουάζ νερά." },
+    image: "/images/santorini.webp",
+    overview: { en: "Milos is famous for its unique geology and some of the best beaches in the Aegean.", el: "Η Μήλος φημίζεται για τη γεωλογία της και μερικές από τις ομορφότερες παραλίες του Αιγαίου." },
+    highlights: { en: ["Sarakiniko beach", "Kleftiko caves", "Colorful Syrmata"], el: ["Σαρακίνικο", "Κλέφτικο", "Σύρματα"] },
+    featured: false
+  },
+  {
+    slug: "zakynthos",
+    name: "Zakynthos",
+    region: { en: "Ionian Islands", el: "Ιόνια Νησιά" },
+    blurb: { en: "Shipwreck beach, sea turtles and dramatic blue caves.", el: "Ναυάγιο, θαλάσσιες χελώνες και μπλε σπηλιές." },
+    image: "/images/corfu.webp",
+    overview: { en: "Zakynthos offers stunning natural beauty and vibrant summer holidays.", el: "Η Ζάκυνθος προσφέρει εκπληκτική φυσική ομορφιά και ζωντανές καλοκαιρινές διακοπές." },
+    highlights: { en: ["Navagio Beach", "Blue Caves", "Caretta-Caretta"], el: ["Ναυάγιο", "Γαλάζιες Σπηλιές", "Χελώνες Καρέτα-Καρέτα"] },
+    featured: false
+  },
+  {
+    slug: "rhodes",
+    name: "Rhodes",
+    region: { en: "Dodecanese", el: "Δωδεκάνησα" },
+    blurb: { en: "Medieval history, grand scale and diverse coastline.", el: "Μεσαιωνική ιστορία, μεγάλα τοπία και ποικιλόμορφη ακτογραμμή." },
+    image: "/images/hero-greece.webp",
+    overview: { en: "Rhodes combines the UNESCO Medieval City with endless beaches and sunny weather.", el: "Η Ρόδος συνδυάζει τη Μεσαιωνική Πόλη της UNESCO με ατελείωτες παραλίες και ηλιοφάνεια." },
+    highlights: { en: ["Medieval Old Town", "Lindos Acropolis", "Prasonisi beach"], el: ["Μεσαιωνική Πόλη", "Ακρόπολη Λίνδου", "Πρασονήσι"] },
+    featured: false
+  },
+  {
+    slug: "halkidiki",
+    name: "Halkidiki",
+    region: { en: "Northern Greece", el: "Βόρεια Ελλάδα" },
+    blurb: { en: "Crystal waters, pine forests and three unique peninsulas.", el: "Κρυστάλλινα νερά, πευκοδάση και τρεις μοναδικές χερσόνησοι." },
+    image: "/images/thessaloniki.webp",
+    overview: { en: "Halkidiki is the ultimate summer destination for Northern Greece enthusiasts.", el: "Η Χαλκιδική είναι ο κορυφαίος καλοκαιρινός προορισμός για τους λάτρεις της Βόρειας Ελλάδας." },
+    highlights: { en: ["Kassandra nightlife", "Sithonia beaches", "Mount Athos views"], el: ["Νυχτερινή ζωή Κασσάνδρας", "Παραλίες Σιθωνίας", "Θέα Άθω"] },
+    featured: false
+  },
+  {
+    slug: "meteora",
+    name: "Meteora",
+    region: { en: "Thessaly", el: "Θεσσαλία" },
+    blurb: { en: "Monasteries perched on giant rocks, a spiritual landscape.", el: "Μοναστήρια σκαρφαλωμένα σε βράχους, ένα πνευματικό τοπίο." },
+    image: "/images/nafplio.webp",
+    overview: { en: "Meteora is a UNESCO World Heritage site known for its vertical rock formations and historic monasteries.", el: "Τα Μετέωρα είναι μνημείο της UNESCO, γνωστό για τους βράχους και τα ιστορικά μοναστήρια." },
+    highlights: { en: ["Great Meteoron", "Sunset views", "Hiking trails"], el: ["Μεγάλο Μετέωρο", "Ηλιοβασίλεμα", "Μονοπάτια"] },
+    featured: false
+  },
+  {
+    slug: "monemvasia",
+    name: "Monemvasia",
+    region: { en: "Peloponnese", el: "Πελοπόννησος" },
+    blurb: { en: "Medieval fortress city built on a massive sea rock.", el: "Μεσαιωνική καστροπολιτεία χτισμένη πάνω στο βράχο." },
+    image: "/images/nafplio.webp",
+    overview: { en: "Monemvasia offers a journey back in time within its perfectly preserved stone walls.", el: "Η Μονεμβασιά προσφέρει ένα ταξίδι στο χρόνο μέσα από τα πέτρινα καλντερίμια της." },
+    highlights: { en: ["Upper Town views", "Stone alleys", "Byzantine churches"], el: ["Θέα από την Άνω Πόλη", "Πέτρινα σοκάκια", "Βυζαντινές εκκλησίες"] },
+    featured: false
+  },
+  {
+    slug: "chania",
+    name: "Chania",
+    region: { en: "Crete", el: "Κρήτη" },
+    blurb: { en: "Venetian harbor, lighthouse and charming old town alleys.", el: "Ενετικό λιμάνι, φάρος και γραφικά σοκάκια." },
+    image: "/images/crete.webp",
+    overview: { en: "Chania is one of the most beautiful and atmospheric cities in Crete.", el: "Τα Χανιά είναι από τις ομορφότερες και πιο ατμοσφαιρικές πόλεις της Κρήτης." },
+    highlights: { en: ["Venetian Harbor", "Old Market", "Seaside dining"], el: ["Ενετικό Λιμάνι", "Παλιά Αγορά", "Φαγητό δίπλα στη θάλασσα"] },
+    featured: false
+  },
+  {
+    slug: "parga",
+    name: "Parga",
+    region: { en: "Epirus", el: "Ήπειρος" },
+    blurb: { en: "Amphitheater town with island vibes and a Venetian castle.", el: "Αμφιθεατρική πόλη με νησιώτικο αέρα και ενετικό κάστρο." },
+    image: "/images/kefalonia.webp",
+    overview: { en: "Parga combines the beauty of the Ionian sea with the charm of the Epirus coast.", el: "Η Πάργα συνδυάζει την ομορφιά του Ιονίου με τη γοητεία των ηπειρωτικών ακτών." },
+    highlights: { en: ["Venetian Castle", "Valtos Beach", "Islet of Panagia"], el: ["Ενετικό Κάστρο", "Παραλία Βάλτου", "Νησάκι Παναγιάς"] },
+    featured: false
+  },
+  {
+    slug: "delphi",
+    name: "Delphi",
+    region: { en: "Mainland escapes", el: "Ηπειρωτική Ελλάδα" },
+    blurb: { en: "The ancient 'Navel of the World' on the slopes of Parnassus.", el: "Ο αρχαίος 'Ομφαλός της Γης' στις πλαγιές του Παρνασσού." },
+    image: "/images/athens.webp",
+    overview: { en: "Delphi is a spiritual and historic site with breathtaking mountain views.", el: "Οι Δελφοί είναι ένας πνευματικός και ιστορικός χώρος με εκπληκτική θέα στο βουνό." },
+    highlights: { en: ["Apollo Temple", "Ancient Theater", "Delphi Museum"], el: ["Ναός Απόλλωνα", "Αρχαίο Θέατρο", "Μουσείο Δελφών"] },
+    featured: false
+  }
 ];
 
 export const travelInfoGuides: GuideCard[] = [
