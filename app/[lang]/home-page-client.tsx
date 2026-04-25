@@ -1329,6 +1329,33 @@ export default function HomePageClient({
               </article>
             ))}
           </div>
+
+          {/* Level 2 CTA — All Tours Directory */}
+          <div className="mt-14 relative overflow-hidden rounded-[2rem] bg-gradient-to-r from-cyan-600 via-cyan-700 to-slate-800 p-8 md:p-10 flex flex-col md:flex-row items-center gap-8 shadow-2xl">
+            <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 80% 50%, rgba(255,255,255,0.4) 0%, transparent 60%)' }} />
+            <div className="relative flex-1 text-left">
+              <p className="text-xs font-bold uppercase tracking-[0.2em] text-cyan-200 mb-2">
+                {lang === "en" ? "Full Directory — Explore Greece" : "Πλήρης Κατάλογος — Εξερεύνησε την Ελλάδα"}
+              </p>
+              <h3 className="text-2xl md:text-3xl font-extrabold text-white mb-3 tracking-tight">
+                {lang === "en" ? "Discover more tours across Greece" : "Εξερεύνησε περισσότερες εκδρομές σε όλη την Ελλάδα"}
+              </h3>
+              <p className="text-cyan-200/80 text-sm leading-relaxed max-w-xl">
+                {lang === "en"
+                  ? "Explore our comprehensive directory of tours, boat trips and local experiences organised by region — Athens, Santorini, Mykonos, Corfu, Crete and more."
+                  : "Εξερεύνησε τον πλήρη κατάλογο με εκδρομές, θαλάσσιες εμπειρίες και τοπικές δραστηριότητες ανά περιοχή — Αθήνα, Σαντορίνη, Μύκονος, Κέρκυρα, Κρήτη και άλλα."}
+              </p>
+            </div>
+            <div className="relative shrink-0">
+              <Link
+                href={withLang("/tours/all")}
+                className="group inline-flex items-center gap-3 rounded-2xl bg-white px-7 py-4 text-base font-bold text-cyan-700 shadow-lg transition-all hover:bg-cyan-50 hover:scale-105"
+              >
+                🗺️ {lang === "en" ? "Explore more tours across Greece" : "Εξερεύνηση περισσότερων εκδρομών"}
+                <span className="transition-transform group-hover:translate-x-1">→</span>
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 

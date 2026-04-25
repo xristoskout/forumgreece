@@ -804,7 +804,7 @@ practicalInfo: {
   },
   {
     slug: "papadellis-olive-oil",
-    landingSlug: "lesvos-tours",
+    landingSlug: "seafood-by-the-harbor",
     name: "Papadellis Olive Oil",
     category: {
       en: "Local Products / Olive Oil",
@@ -904,3 +904,15 @@ practicalInfo: {
     mapQuery: "Papadellis Olive Oil Loutropoli Thermis Lesvos",
   }
 ];
+
+export const VIATOR_WIDGET_MAPPING: Record<string, string> = {
+  "Athens": "W-611433de-c2b3-4d2e-9074-eaa7eff90944",
+  "Santorini": "W-e577bd63-e025-4586-8f55-bdb32bf254bc",
+  "Corfu": "W-0683e950-d0ac-488d-8a4a-a1d86709f6a7",
+  "Mykonos": "W-db1da184-a2f1-4058-b7f1-a9e15ccf9fa6",
+  "Crete": "W-beb6dd42-10a7-4524-8626-6fda84f9e5df",
+  "Nafplio": "W-40c6533f-c44b-4cd7-bb26-8d0788a922e2",
+  "Thessaloniki": "W-f0334037-6d06-42d6-83a2-07d3903ef04b",
+  "Kefalonia": "W-adaa2afb-d347-48c6-abe3-9d16f6a91959",
+  "Lesvos": "W-b4298df4-e2de-499e-a767-1be0bd3e9b83",
+};
