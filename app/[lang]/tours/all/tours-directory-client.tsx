@@ -187,6 +187,7 @@ export default function ToursDirectoryClient({ lang, tours }: Props) {
                               src={tour.image}
                               alt={tour.title[lang]}
                               fill
+                              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                               className="object-cover transition-transform duration-700 group-hover/card:scale-110"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-0 transition-opacity group-hover/card:opacity-100" />

@@ -1,57 +1,29 @@
-import type { Metadata } from 'next';
-import Link from 'next/link';
-import Image from 'next/image';
-import { hotels, type Lang } from '../../../lib/content';
-import SiteHeader from '../../../components/site-header';
+"use client";
 
-type Props = {
-  params: Promise<{ lang: string }>;
-};
+import Link from "next/link";
+import Image from "next/image";
+import { type Lang, type HotelCard } from "../../../../lib/content";
 
-export async function generateStaticParams() {
-  return [{ lang: 'en' }, { lang: 'el' }];
-}
-
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { lang: rawLang } = await params;
-  const lang = (rawLang === 'el' ? 'el' : 'en') as Lang;
-
-  const t = {
-    title: {
-      en: 'Curated Hotels & Boutique Stays in Greece | GoGreeceNow',
-      el: 'Επιλεγμένα Ξενοδοχεία & Καταλύματα στην Ελλάδα | GoGreeceNow',
-    },
-    description: {
-      en: 'Discover unique places to stay in Greece. From Santorini cave suites to Corfu family resorts and authentic Lesvos rooms.',
-      el: 'Ανακαλύψτε μοναδικά μέρη για διαμονή στην Ελλάδα. Από υπόσκαφες σουίτες στη Σαντορίνη μέχρι family resorts στην Κέρκυρα.',
-    },
-  };
-
-  return {
-    title: t.title[lang],
-    description: t.description[lang],
-  };
-}
-
-export default async function HotelsListingPage({ params }: Props) {
-  const { lang: rawLang } = await params;
-  const lang = (rawLang === 'el' ? 'el' : 'en') as Lang;
-
+export default function HotelsDirectoryClient({
+  lang,
+  hotels,
+}: {
+  lang: Lang;
+  hotels: HotelCard[];
+}) {
   const t = {
     h1: { en: "All Destinations", el: "Όλοι οι Προορισμοί" },
     sub: {
       en: "Discover our comprehensive guides on where to stay across Greece's top destinations.",
       el: "Ανακαλύψτε τους αναλυτικούς οδηγούς μας για το πού να μείνετε στους κορυφαίους προορισμούς της Ελλάδας.",
     },
-    view: { en: 'View Guide', el: 'Προβολή Οδηγού' },
-    place: { en: 'Location', el: 'Τοποθεσία' },
+    view: { en: "View Guide", el: "Προβολή Οδηγού" },
+    place: { en: "Location", el: "Τοποθεσία" },
     tag: { en: "Where to Stay", el: "Διαμονή" }
   };
 
   return (
-    <main className="min-h-screen bg-[#fcfdff] mesh-gradient">
-      <SiteHeader />
-      
+    <main className="min-h-screen bg-[#fcfdff] mesh-gradient pb-20">
       <div className="container mx-auto px-6 py-32">
         <div className="text-center mb-16">
           <span className="mb-4 inline-flex justify-center rounded-full bg-indigo-500/10 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-indigo-700 backdrop-blur-md border border-indigo-400/20">

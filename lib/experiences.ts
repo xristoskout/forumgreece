@@ -39,6 +39,8 @@ export type ExperienceLanding = {
 export type ExperienceBusiness = {
   slug: string;
   landingSlug: string;
+  /** Extra travel-info page slug this business should appear on (in addition to landingSlug). */
+  travelInfoSlug?: string;
   name: string;
   category: Localized;
   place: string;
@@ -560,6 +562,7 @@ export const experienceBusinesses: ExperienceBusiness[] = [
   {
   slug: "rolling-into-the-blue",
   landingSlug: "kefalonia-tours",
+  travelInfoSlug: "best-boat-trips-in-kefalonia",
   name: "Rolling Into The Blue",
   category: {
     en: "Boat rental & boat trips",

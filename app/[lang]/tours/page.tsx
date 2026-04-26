@@ -86,7 +86,7 @@ export default async function ToursListingPage({ params }: Props) {
                     {tour.info[lang]}
                   </p>
                   <div className="flex items-center text-teal-300 text-xs font-bold">
-                    {t.discover[lang]} <span className="ml-2 group-hover:translate-x-2 transition-transform">→</span>
+                    {tour.cta?.[lang] ?? `${t.discover[lang]} →`}
                   </div>
                 </div>
               </article>
