@@ -19,7 +19,9 @@ export default function TravelInfoGuidePage() {
   const slug = params?.slug;
 
   const item = travelInfoGuides.find((entry) => entry.slug === slug);
-  const businesses = experienceBusinesses.filter((b) => b.landingSlug === slug);
+  const businesses = experienceBusinesses.filter(
+    (b) => b.landingSlug === slug || b.travelInfoSlug === slug
+  );
 
   function stripLocale(path: string) {
     const stripped = path.replace(/^\/(en|el)(?=\/|$)/, "");

@@ -352,7 +352,6 @@ export default function DestinationDetailsClient({
                 "crete": "W-beb6dd42-10a7-4524-8626-6fda84f9e5df",
                 "nayplio-odigos-taxidiou": "W-40c6533f-c44b-4cd7-bb26-8d0788a922e2",
                 "thessaloniki": "W-f0334037-6d06-42d6-83a2-07d3903ef04b",
-                "kefalonia": "W-adaa2afb-d347-48c6-abe3-9d16f6a91959",
               };
               const wRef = DESTINATION_WIDGETS[destination.slug];
               if (!wRef) return null;

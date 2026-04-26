@@ -104,6 +104,8 @@ export type TourItem = {
   place: string;
   title: Localized;
   info: Localized;
+  /** Optional per-destination CTA label shown on the tours listing card. */
+  cta?: Localized;
   description: Localized;
   overview: Localized;
   highlights: LocalizedList;
@@ -1763,19 +1765,19 @@ export const hotels: HotelCard[] = [
     name: "Where to Stay in Santorini",
     place: "Santorini",
     info: {
-      en: "Choosing where to stay in Santorini defines your entire experience. The island is essentially split into two worlds: the dramatic cliffside and the relaxed beaches.",
+      en: "Choosing where to stay in Santorini shapes the whole trip — from iconic caldera views and romantic sunsets to lively central bases and easier beach-side stays.",
       el: "Η επιλογή της διαμονής στη Σαντορίνη καθορίζει όλη σας την εμπειρία. Το νησί χωρίζεται ουσιαστικά σε δύο κόσμους: την καλντέρα και τις παραλίες.",
     },
     image: "/images/hotel-santorini.webp",
-    badge: "Best Areas Guide",
+    badge: "Featured stay",
     overview: {
       en: "Choosing where to stay in Santorini defines your entire experience. The island is essentially split into two worlds: the dramatic, cliffside towns offering the famous sunset views, and the more relaxed, budget-friendly beach villages on the east coast.",
       el: "Η επιλογή της διαμονής στη Σαντορίνη καθορίζει όλη σας την εμπειρία. Το νησί χωρίζεται ουσιαστικά σε δύο κόσμους: τους δραματικούς οικισμούς στον γκρεμό με τη διάσημη θέα, και τα πιο χαλαρά, οικονομικά παραθαλάσσια χωριά στην ανατολική πλευρά.",
     },
 
     features: {
-      en: ["Oia (Luxury)", "Fira (Nightlife)", "Imerovigli (Romance)", "Beach Resorts (Budget)"],
-      el: ["Οία (Πολυτέλεια)", "Φηρά (Διασκέδαση)", "Ημεροβίγλι (Ρομαντισμός)", "Παραλίες (Οικονομικά)"],
+      en: ["Oia (Luxury)", "Fira (Nightlife)", "Imerovigli (Romance)"],
+      el: ["Οία (Πολυτέλεια)", "Φηρά (Διασκέδαση)", "Ημεροβίγλι (Ρομαντισμός)"],
     },
     sections: [
       {
@@ -1864,6 +1866,311 @@ export const hotels: HotelCard[] = [
     },
     featuredBusinesses: ["iren-rooms"],
   },
+
+  {
+    slug: "mykonos",
+    name: "Where to Stay in Mykonos",
+    place: "Mykonos",
+    info: {
+      en: "Find the best places to stay in Mykonos, from stylish beach areas and lively nightlife bases to quieter corners with a more relaxed island feel.",
+      el: "Ανακαλύψτε τις καλύτερες περιοχές και ξενοδοχεία για διαμονή στη Μύκονο.",
+    },
+    image: "/images/mykonos.webp",
+    badge: "Featured stay",
+    overview: {
+      en: "A detailed guide on where to stay in Mykonos is coming soon. For now, explore our interactive map to find the best accommodation options.",
+      el: "Ένας αναλυτικός οδηγός για το πού να μείνετε στη Μύκονο έρχεται σύντομα. Προς το παρόν, εξερευνήστε τον διαδραστικό μας χάρτη για να βρείτε τις καλύτερες επιλογές διαμονής.",
+    },
+    features: {
+      en: ["Mykonos Town", "Psarou & Ornos", "Platis Gialos"],
+      el: ["Χώρα Μυκόνου", "Ψαρού & Ορνός", "Πλατύς Γιαλός"],
+    },
+  },
+  {
+    slug: "crete",
+    name: "Where to Stay in Crete",
+    place: "Crete",
+    info: {
+      en: "Discover the best areas and hotels to stay in Crete.",
+      el: "Ανακαλύψτε τις καλύτερες περιοχές και ξενοδοχεία για διαμονή στη Crete.",
+    },
+    image: "/images/crete.webp",
+    badge: "Upcoming Guide",
+    overview: {
+      en: "A detailed guide on where to stay in Crete is coming soon. For now, explore our interactive map to find the best accommodation options.",
+      el: "Ένας αναλυτικός οδηγός για το πού να μείνετε στη Crete έρχεται σύντομα. Προς το παρόν, εξερευνήστε τον διαδραστικό μας χάρτη για να βρείτε τις καλύτερες επιλογές διαμονής.",
+    },
+    features: {
+      en: ["Hotels", "Resorts", "Apartments"],
+      el: ["Ξενοδοχεία", "Resorts", "Διαμερίσματα"],
+    },
+  },
+  {
+    slug: "kefalonia",
+    name: "Where to Stay in Kefalonia",
+    place: "Kefalonia",
+    info: {
+      en: "Discover the best areas and hotels to stay in Kefalonia.",
+      el: "Ανακαλύψτε τις καλύτερες περιοχές και ξενοδοχεία για διαμονή στη Kefalonia.",
+    },
+    image: "/images/kefalonia.webp",
+    badge: "Upcoming Guide",
+    overview: {
+      en: "A detailed guide on where to stay in Kefalonia is coming soon. For now, explore our interactive map to find the best accommodation options.",
+      el: "Ένας αναλυτικός οδηγός για το πού να μείνετε στη Kefalonia έρχεται σύντομα. Προς το παρόν, εξερευνήστε τον διαδραστικό μας χάρτη για να βρείτε τις καλύτερες επιλογές διαμονής.",
+    },
+    features: {
+      en: ["Hotels", "Resorts", "Apartments"],
+      el: ["Ξενοδοχεία", "Resorts", "Διαμερίσματα"],
+    },
+  },
+  {
+    slug: "athens",
+    name: "Where to Stay in Athens",
+    place: "Athens",
+    info: {
+      en: "Choose the right area to stay in Athens, from central neighborhoods near the Acropolis to stylish city districts for food, culture, and easier sightseeing.",
+      el: "Ανακαλύψτε τις καλύτερες περιοχές και ξενοδοχεία για διαμονή στην Αθήνα.",
+    },
+    image: "/images/athens.webp",
+    badge: "Featured stay",
+    overview: {
+      en: "A detailed guide on where to stay in Athens is coming soon. For now, explore our interactive map to find the best accommodation options.",
+      el: "Ένας αναλυτικός οδηγός για το πού να μείνετε στην Αθήνα έρχεται σύντομα. Προς το παρόν, εξερευνήστε τον διαδραστικό μας χάρτη για να βρείτε τις καλύτερες επιλογές διαμονής.",
+    },
+    features: {
+      en: ["Plaka", "Koukaki", "Syntagma"],
+      el: ["Πλάκα", "Κουκάκι", "Σύνταγμα"],
+    },
+  },
+  {
+    slug: "nayplio-odigos-taxidiou",
+    name: "Where to Stay in Nafplio",
+    place: "Nafplio",
+    info: {
+      en: "Discover the best areas and hotels to stay in Nafplio.",
+      el: "Ανακαλύψτε τις καλύτερες περιοχές και ξενοδοχεία για διαμονή στη Nafplio.",
+    },
+    image: "/images/nafplio.webp",
+    badge: "Upcoming Guide",
+    overview: {
+      en: "A detailed guide on where to stay in Nafplio is coming soon. For now, explore our interactive map to find the best accommodation options.",
+      el: "Ένας αναλυτικός οδηγός για το πού να μείνετε στη Nafplio έρχεται σύντομα. Προς το παρόν, εξερευνήστε τον διαδραστικό μας χάρτη για να βρείτε τις καλύτερες επιλογές διαμονής.",
+    },
+    features: {
+      en: ["Hotels", "Resorts", "Apartments"],
+      el: ["Ξενοδοχεία", "Resorts", "Διαμερίσματα"],
+    },
+  },
+  {
+    slug: "thessaloniki",
+    name: "Where to Stay in Thessaloniki",
+    place: "Thessaloniki",
+    info: {
+      en: "Discover the best areas and hotels to stay in Thessaloniki.",
+      el: "Ανακαλύψτε τις καλύτερες περιοχές και ξενοδοχεία για διαμονή στη Thessaloniki.",
+    },
+    image: "/images/thessaloniki.webp",
+    badge: "Upcoming Guide",
+    overview: {
+      en: "A detailed guide on where to stay in Thessaloniki is coming soon. For now, explore our interactive map to find the best accommodation options.",
+      el: "Ένας αναλυτικός οδηγός για το πού να μείνετε στη Thessaloniki έρχεται σύντομα. Προς το παρόν, εξερευνήστε τον διαδραστικό μας χάρτη για να βρείτε τις καλύτερες επιλογές διαμονής.",
+    },
+    features: {
+      en: ["Hotels", "Resorts", "Apartments"],
+      el: ["Ξενοδοχεία", "Resorts", "Διαμερίσματα"],
+    },
+  },
+  {
+    slug: "paros",
+    name: "Where to Stay in Paros",
+    place: "Paros",
+    info: {
+      en: "Discover the best areas and hotels to stay in Paros.",
+      el: "Ανακαλύψτε τις καλύτερες περιοχές και ξενοδοχεία για διαμονή στη Paros.",
+    },
+    image: "/images/paros.webp",
+    badge: "Upcoming Guide",
+    overview: {
+      en: "A detailed guide on where to stay in Paros is coming soon. For now, explore our interactive map to find the best accommodation options.",
+      el: "Ένας αναλυτικός οδηγός για το πού να μείνετε στη Paros έρχεται σύντομα. Προς το παρόν, εξερευνήστε τον διαδραστικό μας χάρτη για να βρείτε τις καλύτερες επιλογές διαμονής.",
+    },
+    features: {
+      en: ["Hotels", "Resorts", "Apartments"],
+      el: ["Ξενοδοχεία", "Resorts", "Διαμερίσματα"],
+    },
+  },
+  {
+    slug: "milos",
+    name: "Where to Stay in Milos",
+    place: "Milos",
+    info: {
+      en: "Discover the best areas and hotels to stay in Milos.",
+      el: "Ανακαλύψτε τις καλύτερες περιοχές και ξενοδοχεία για διαμονή στη Milos.",
+    },
+    image: "/images/milos.webp",
+    badge: "Upcoming Guide",
+    overview: {
+      en: "A detailed guide on where to stay in Milos is coming soon. For now, explore our interactive map to find the best accommodation options.",
+      el: "Ένας αναλυτικός οδηγός για το πού να μείνετε στη Milos έρχεται σύντομα. Προς το παρόν, εξερευνήστε τον διαδραστικό μας χάρτη για να βρείτε τις καλύτερες επιλογές διαμονής.",
+    },
+    features: {
+      en: ["Hotels", "Resorts", "Apartments"],
+      el: ["Ξενοδοχεία", "Resorts", "Διαμερίσματα"],
+    },
+  },
+  {
+    slug: "zakynthos",
+    name: "Where to Stay in Zakynthos",
+    place: "Zakynthos",
+    info: {
+      en: "Discover the best areas and hotels to stay in Zakynthos.",
+      el: "Ανακαλύψτε τις καλύτερες περιοχές και ξενοδοχεία για διαμονή στη Zakynthos.",
+    },
+    image: "/images/zakynthos.webp",
+    badge: "Upcoming Guide",
+    overview: {
+      en: "A detailed guide on where to stay in Zakynthos is coming soon. For now, explore our interactive map to find the best accommodation options.",
+      el: "Ένας αναλυτικός οδηγός για το πού να μείνετε στη Zakynthos έρχεται σύντομα. Προς το παρόν, εξερευνήστε τον διαδραστικό μας χάρτη για να βρείτε τις καλύτερες επιλογές διαμονής.",
+    },
+    features: {
+      en: ["Hotels", "Resorts", "Apartments"],
+      el: ["Ξενοδοχεία", "Resorts", "Διαμερίσματα"],
+    },
+  },
+  {
+    slug: "rhodes",
+    name: "Where to Stay in Rhodes",
+    place: "Rhodes",
+    info: {
+      en: "Discover the best areas and hotels to stay in Rhodes.",
+      el: "Ανακαλύψτε τις καλύτερες περιοχές και ξενοδοχεία για διαμονή στη Rhodes.",
+    },
+    image: "/images/rhodes.webp",
+    badge: "Upcoming Guide",
+    overview: {
+      en: "A detailed guide on where to stay in Rhodes is coming soon. For now, explore our interactive map to find the best accommodation options.",
+      el: "Ένας αναλυτικός οδηγός για το πού να μείνετε στη Rhodes έρχεται σύντομα. Προς το παρόν, εξερευνήστε τον διαδραστικό μας χάρτη για να βρείτε τις καλύτερες επιλογές διαμονής.",
+    },
+    features: {
+      en: ["Hotels", "Resorts", "Apartments"],
+      el: ["Ξενοδοχεία", "Resorts", "Διαμερίσματα"],
+    },
+  },
+  {
+    slug: "halkidiki",
+    name: "Where to Stay in Halkidiki",
+    place: "Halkidiki",
+    info: {
+      en: "Discover the best areas and hotels to stay in Halkidiki.",
+      el: "Ανακαλύψτε τις καλύτερες περιοχές και ξενοδοχεία για διαμονή στη Halkidiki.",
+    },
+    image: "/images/halkidiki.webp",
+    badge: "Upcoming Guide",
+    overview: {
+      en: "A detailed guide on where to stay in Halkidiki is coming soon. For now, explore our interactive map to find the best accommodation options.",
+      el: "Ένας αναλυτικός οδηγός για το πού να μείνετε στη Halkidiki έρχεται σύντομα. Προς το παρόν, εξερευνήστε τον διαδραστικό μας χάρτη για να βρείτε τις καλύτερες επιλογές διαμονής.",
+    },
+    features: {
+      en: ["Hotels", "Resorts", "Apartments"],
+      el: ["Ξενοδοχεία", "Resorts", "Διαμερίσματα"],
+    },
+  },
+  {
+    slug: "meteora",
+    name: "Where to Stay in Meteora",
+    place: "Meteora",
+    info: {
+      en: "Discover the best areas and hotels to stay in Meteora.",
+      el: "Ανακαλύψτε τις καλύτερες περιοχές και ξενοδοχεία για διαμονή στη Meteora.",
+    },
+    image: "/images/meteora.webp",
+    badge: "Upcoming Guide",
+    overview: {
+      en: "A detailed guide on where to stay in Meteora is coming soon. For now, explore our interactive map to find the best accommodation options.",
+      el: "Ένας αναλυτικός οδηγός για το πού να μείνετε στη Meteora έρχεται σύντομα. Προς το παρόν, εξερευνήστε τον διαδραστικό μας χάρτη για να βρείτε τις καλύτερες επιλογές διαμονής.",
+    },
+    features: {
+      en: ["Hotels", "Resorts", "Apartments"],
+      el: ["Ξενοδοχεία", "Resorts", "Διαμερίσματα"],
+    },
+  },
+  {
+    slug: "monemvasia",
+    name: "Where to Stay in Monemvasia",
+    place: "Monemvasia",
+    info: {
+      en: "Discover the best areas and hotels to stay in Monemvasia.",
+      el: "Ανακαλύψτε τις καλύτερες περιοχές και ξενοδοχεία για διαμονή στη Monemvasia.",
+    },
+    image: "/images/monemvasia.webp",
+    badge: "Upcoming Guide",
+    overview: {
+      en: "A detailed guide on where to stay in Monemvasia is coming soon. For now, explore our interactive map to find the best accommodation options.",
+      el: "Ένας αναλυτικός οδηγός για το πού να μείνετε στη Monemvasia έρχεται σύντομα. Προς το παρόν, εξερευνήστε τον διαδραστικό μας χάρτη για να βρείτε τις καλύτερες επιλογές διαμονής.",
+    },
+    features: {
+      en: ["Hotels", "Resorts", "Apartments"],
+      el: ["Ξενοδοχεία", "Resorts", "Διαμερίσματα"],
+    },
+  },
+  {
+    slug: "chania",
+    name: "Where to Stay in Chania",
+    place: "Chania",
+    info: {
+      en: "Discover the best areas and hotels to stay in Chania.",
+      el: "Ανακαλύψτε τις καλύτερες περιοχές και ξενοδοχεία για διαμονή στη Chania.",
+    },
+    image: "/images/chania.webp",
+    badge: "Upcoming Guide",
+    overview: {
+      en: "A detailed guide on where to stay in Chania is coming soon. For now, explore our interactive map to find the best accommodation options.",
+      el: "Ένας αναλυτικός οδηγός για το πού να μείνετε στη Chania έρχεται σύντομα. Προς το παρόν, εξερευνήστε τον διαδραστικό μας χάρτη για να βρείτε τις καλύτερες επιλογές διαμονής.",
+    },
+    features: {
+      en: ["Hotels", "Resorts", "Apartments"],
+      el: ["Ξενοδοχεία", "Resorts", "Διαμερίσματα"],
+    },
+  },
+  {
+    slug: "parga",
+    name: "Where to Stay in Parga",
+    place: "Parga",
+    info: {
+      en: "Discover the best areas and hotels to stay in Parga.",
+      el: "Ανακαλύψτε τις καλύτερες περιοχές και ξενοδοχεία για διαμονή στη Parga.",
+    },
+    image: "/images/parga.webp",
+    badge: "Upcoming Guide",
+    overview: {
+      en: "A detailed guide on where to stay in Parga is coming soon. For now, explore our interactive map to find the best accommodation options.",
+      el: "Ένας αναλυτικός οδηγός για το πού να μείνετε στη Parga έρχεται σύντομα. Προς το παρόν, εξερευνήστε τον διαδραστικό μας χάρτη για να βρείτε τις καλύτερες επιλογές διαμονής.",
+    },
+    features: {
+      en: ["Hotels", "Resorts", "Apartments"],
+      el: ["Ξενοδοχεία", "Resorts", "Διαμερίσματα"],
+    },
+  },
+  {
+    slug: "delphi",
+    name: "Where to Stay in Delphi",
+    place: "Delphi",
+    info: {
+      en: "Discover the best areas and hotels to stay in Delphi.",
+      el: "Ανακαλύψτε τις καλύτερες περιοχές και ξενοδοχεία για διαμονή στη Delphi.",
+    },
+    image: "/images/delphi.webp",
+    badge: "Upcoming Guide",
+    overview: {
+      en: "A detailed guide on where to stay in Delphi is coming soon. For now, explore our interactive map to find the best accommodation options.",
+      el: "Ένας αναλυτικός οδηγός για το πού να μείνετε στη Delphi έρχεται σύντομα. Προς το παρόν, εξερευνήστε τον διαδραστικό μας χάρτη για να βρείτε τις καλύτερες επιλογές διαμονής.",
+    },
+    features: {
+      en: ["Hotels", "Resorts", "Apartments"],
+      el: ["Ξενοδοχεία", "Resorts", "Διαμερίσματα"],
+    },
+  }
 ];
 
 export const food: FoodCard[] = [
@@ -2072,8 +2379,12 @@ export const tours: TourItem[] = [
       el: "Εμπειρίες & Επιχειρήσεις στην Κεφαλονιά",
     },
     info: {
-      en: "Discover selected local businesses in Kefalonia, from authentic spots to unique services.",
-      el: "Ανακάλυψε επιλεγμένες τοπικές επιχειρήσεις στην Κεφαλονιά.",
+      en: "Explore handpicked local experiences in Kefalonia, from sea-based adventures and island highlights to distinctive places and services that add more character to your trip.",
+      el: "Εξερευνήστε επιλεγμένες τοπικές εμπειρίες στην Κεφαλονιά, από θαλάσσιες περιπέτειες και highlights του νησιού μέχρι ξεχωριστά μέρη και υπηρεσίες που προσθέτουν χαρακτήρα στο ταξίδι σας.",
+    },
+    cta: {
+      en: "Explore Kefalonia experiences →",
+      el: "Εξερευνήστε εμπειρίες Κεφαλονιάς →",
     },
     description: {
       en: "Discover the best of Kefalonia through handpicked tour ideas that combine famous beaches, scenic drives, caves, seaside villages and authentic local moments.",
@@ -2157,8 +2468,12 @@ export const tours: TourItem[] = [
       el: "Εμπειρίες & Επιχειρήσεις στη Λέσβο",
     },
     info: {
-      en: "Discover selected local businesses in Lesvos, from authentic spots to unique services.",
-      el: "Ανακάλυψε επιλεγμένες τοπικές επιχειρήσεις στη Λέσβο.",
+      en: "Discover selected experiences in Lesvos shaped by village life, local tradition, coastal beauty and the slower, more authentic rhythm that makes the island so special.",
+      el: "Ανακαλύψτε επιλεγμένες εμπειρίες στη Λέσβο, που διαμορφώνονται από τη ζωή στα χωριά, την τοπική παράδοση, την ακτογραμμή και τον πιο ήρεμο, αυθεντικό ρυθμό που κάνει το νησί τόσο ξεχωριστό.",
+    },
+    cta: {
+      en: "Explore Lesvos experiences →",
+      el: "Εξερευνήστε εμπειρίες Λέσβου →",
     },
     description: {
       en: "Explore Lesvos with tours focused on culture, gastronomy, nature and heritage, from picturesque towns to unique volcanic landscapes.",
@@ -2242,8 +2557,12 @@ export const tours: TourItem[] = [
       el: "Εμπειρίες & Επιχειρήσεις στην Κρήτη",
     },
     info: {
-      en: "Discover selected local businesses in Crete, from authentic spots to unique services.",
-      el: "Ανακάλυψε επιλεγμένες τοπικές επιχειρήσεις στην Κρήτη.",
+      en: "Browse selected experiences in Crete, from iconic highlights and cultural stops to local businesses and memorable ways to explore the island's many sides.",
+      el: "Περιηγηθείτε σε επιλεγμένες εμπειρίες στην Κρήτη, από εμβληματικά σημεία και πολιτιστικές στάσεις μέχρι τοπικές επιχειρήσεις και αξέχαστους τρόπους εξερεύνησης των πολλών πλευρών του νησιού.",
+    },
+    cta: {
+      en: "Explore Crete experiences →",
+      el: "Εξερευνήστε εμπειρίες Κρήτης →",
     },
     description: {
       en: "Experience Crete through tours that mix history, coastline, local cuisine and traditional hospitality across one of Greece’s most diverse islands.",

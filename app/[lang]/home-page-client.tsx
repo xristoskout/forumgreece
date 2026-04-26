@@ -1158,7 +1158,7 @@ export default function HomePageClient({
           </div>
 
           <div className="grid gap-6 lg:grid-cols-3">
-            {hotels.map((item) => (
+            {hotels.filter(h => ["santorini", "mykonos", "athens"].includes(h.slug)).map((item) => (
               <article
                 key={item.slug}
                 className="overflow-hidden rounded-xl border border-amber-200 bg-gradient-to-br from-white via-amber-50/70 to-orange-50 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
@@ -1234,6 +1234,33 @@ export default function HomePageClient({
                 </div>
               </article>
             ))}
+          </div>
+
+          {/* Level 2 CTA — All Hotels Directory */}
+          <div className="mt-14 relative overflow-hidden rounded-[2rem] bg-gradient-to-r from-amber-500 via-orange-500 to-amber-700 p-8 md:p-10 flex flex-col md:flex-row items-center gap-8 shadow-2xl">
+            <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 80% 50%, rgba(255,255,255,0.4) 0%, transparent 60%)' }} />
+            <div className="relative flex-1 text-left">
+              <p className="text-xs font-bold uppercase tracking-[0.2em] text-amber-100 mb-2">
+                {lang === "en" ? "Full Directory — Where to Stay" : "Πλήρης Κατάλογος — Διαμονή"}
+              </p>
+              <h3 className="text-2xl md:text-3xl font-extrabold text-white mb-3 tracking-tight">
+                {lang === "en" ? "Discover more places to stay across Greece" : "Ανακάλυψε περισσότερα καταλύματα σε όλη την Ελλάδα"}
+              </h3>
+              <p className="text-amber-100/80 text-sm leading-relaxed max-w-xl">
+                {lang === "en"
+                  ? "Explore our comprehensive directory of hotels, resorts and places to stay organized by destination — Cyclades, Ionian Islands, Crete and more."
+                  : "Εξερεύνησε τον πλήρη κατάλογο με ξενοδοχεία, resorts και καταλύματα ανά προορισμό — Κυκλάδες, Ιόνια Νησιά, Κρήτη και άλλα."}
+              </p>
+            </div>
+            <div className="relative shrink-0">
+              <Link
+                href={withLang("/hotels")}
+                className="group inline-flex items-center gap-3 rounded-2xl bg-white px-7 py-4 text-base font-bold text-amber-700 shadow-lg transition-all hover:bg-amber-50 hover:scale-105"
+              >
+                🏨 {lang === "en" ? "All Places to Stay (By Destination)" : "Όλα τα Καταλύματα (Ανά Προορισμό)"}
+                <span className="transition-transform group-hover:translate-x-1">→</span>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
