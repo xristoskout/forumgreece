@@ -72,6 +72,11 @@ export type HotelCard = {
   website?: string;
   youtube?: string;
   featuredBusinesses?: string[];
+  sections?: GuideSection[];
+  seo?: {
+    title: Localized;
+    description: Localized;
+  };
 };
 
 export type FoodCard = {
@@ -458,100 +463,374 @@ export const destinations: Destination[] = [
     name: "Paros",
     region: { en: "Cyclades", el: "Κυκλάδες" },
     blurb: { en: "Traditional villages, beaches and balanced Cycladic charm.", el: "Παραδοσιακά χωριά, παραλίες και κυκλαδίτικη γοητεία." },
-    image: "/images/mykonos.webp",
-    overview: { en: "Paros is the perfect middle ground between high energy and relaxed island life.", el: "Η Πάρος είναι η χρυσή τομή ανάμεσα στην έντονη ζωή και τη χαλαρή νησιώτικη ατμόσφαιρα." },
-    highlights: { en: ["Naoussa harbor", "Parikia old town", "Golden Beach"], el: ["Λιμανάκι Νάουσας", "Παροικιά", "Χρυσή Ακτή"] },
-    featured: false
+    image: "/images/paros.webp",
+    overview: { 
+      en: "Traditional villages, golden beaches, laid-back Cycladic charm and one of the most balanced island experiences in Greece.", 
+      el: "Παραδοσιακά χωριά, χρυσές παραλίες, χαλαρή κυκλαδίτικη γοητεία και μια από τις πιο ισορροπημένες εμπειρίες στην Ελλάδα." 
+    },
+    highlights: { en: ["Naoussa harbor", "Parikia old town", "Golden Beach"], el: ["Λιμανάκι Νάουσας", "Παλιά Πόλη Παροικιάς", "Χρυσή Ακτή"] },
+    featured: true,
+    guideLinks: [
+      {
+        href: "/hotels?destination=paros",
+        label: { en: "Explore stays in Paros", el: "Ανακαλύψτε διαμονή στην Πάρο" }
+      },
+      {
+        href: "/tours/all",
+        label: { en: "See tours & experiences", el: "Δείτε εμπειρίες & tours" }
+      },
+      {
+        href: "/collections/greece-food-and-drink",
+        label: { en: "Discover local food ideas", el: "Ανακαλύψτε τοπικές γεύσεις" }
+      }
+    ],
+    seo: {
+      title: {
+        en: "Paros Travel Guide | Beaches, Villages, Food & Where to Stay | GoGreeceNow",
+        el: "Πάρος: Οδηγός Ταξιδιού | Παραλίες, Χωριά, Φαγητό & Διαμονή | GoGreeceNow"
+      },
+      description: {
+        en: "Plan your trip to Paros with our travel guide. Discover beaches, villages, food, where to stay, and the best things to do on one of the most balanced islands in the Cyclades.",
+        el: "Οργανώστε το ταξίδι σας στην Πάρο με τον οδηγό μας. Ανακαλύψτε παραλίες, χωριά, επιλογές για φαγητό, διαμονή και εμπειρίες στο πιο ισορροπημένο νησί των Κυκλάδων."
+      }
+    }
   },
   {
     slug: "milos",
     name: "Milos",
     region: { en: "Cyclades", el: "Κυκλάδες" },
     blurb: { en: "Volcanic coastline, rare rock formations and turquoise waters.", el: "Ηφαιστειακό τοπίο, σπάνιοι σχηματισμοί και τυρκουάζ νερά." },
-    image: "/images/santorini.webp",
-    overview: { en: "Milos is famous for its unique geology and some of the best beaches in the Aegean.", el: "Η Μήλος φημίζεται για τη γεωλογία της και μερικές από τις ομορφότερες παραλίες του Αιγαίου." },
-    highlights: { en: ["Sarakiniko beach", "Kleftiko caves", "Colorful Syrmata"], el: ["Σαρακίνικο", "Κλέφτικο", "Σύρματα"] },
-    featured: false
+    image: "/images/milos.webp",
+    overview: { 
+      en: "Volcanic coastline, whitewashed villages, turquoise waters and one of the most distinctive beach landscapes in Greece.", 
+      el: "Ηφαιστειακή ακτογραμμή, ολόλευκα χωριά, τυρκουάζ νερά και ένα από τα πιο ξεχωριστά παραθαλάσσια τοπία στην Ελλάδα." 
+    },
+    highlights: { en: ["Sarakiniko beach", "Kleftiko caves", "Colorful Syrmata"], el: ["Παραλία Σαρακίνικο", "Σπηλιές στο Κλέφτικο", "Πολύχρωμα Σύρματα"] },
+    featured: true,
+    guideLinks: [
+      {
+        href: "/hotels?destination=milos",
+        label: { en: "Explore stays in Milos", el: "Ανακαλύψτε διαμονή στη Μήλο" }
+      },
+      {
+        href: "/tours/all",
+        label: { en: "See tours & experiences", el: "Δείτε εμπειρίες & tours" }
+      },
+      {
+        href: "/collections/greece-food-and-drink",
+        label: { en: "Discover local food ideas", el: "Ανακαλύψτε τοπικές γεύσεις" }
+      }
+    ],
+    seo: {
+      title: {
+        en: "Milos Travel Guide | Beaches, Villages, Food & Where to Stay | GoGreeceNow",
+        el: "Μήλος: Οδηγός Ταξιδιού | Παραλίες, Χωριά, Φαγητό & Διαμονή | GoGreeceNow"
+      },
+      description: {
+        en: "Discover Milos with our travel guide. Explore beaches, villages, food, where to stay, and the best things to do on one of Greece's most scenic and distinctive islands.",
+        el: "Ανακαλύψτε τη Μήλο με τον οδηγό μας. Εξερευνήστε παραλίες, χωριά, φαγητό, διαμονή και εμπειρίες σε ένα από τα πιο γραφικά και ξεχωριστά νησιά της Ελλάδας."
+      }
+    }
   },
   {
     slug: "zakynthos",
     name: "Zakynthos",
     region: { en: "Ionian Islands", el: "Ιόνια Νησιά" },
-    blurb: { en: "Shipwreck beach, sea turtles and dramatic blue caves.", el: "Ναυάγιο, θαλάσσιες χελώνες και μπλε σπηλιές." },
-    image: "/images/corfu.webp",
-    overview: { en: "Zakynthos offers stunning natural beauty and vibrant summer holidays.", el: "Η Ζάκυνθος προσφέρει εκπληκτική φυσική ομορφιά και ζωντανές καλοκαιρινές διακοπές." },
-    highlights: { en: ["Navagio Beach", "Blue Caves", "Caretta-Caretta"], el: ["Ναυάγιο", "Γαλάζιες Σπηλιές", "Χελώνες Καρέτα-Καρέτα"] },
-    featured: false
+    blurb: { en: "Dramatic blue waters, iconic beaches and sea caves.", el: "Εντυπωσιακά γαλάζια νερά, εμβληματικές παραλίες και θαλάσσιες σπηλιές." },
+    image: "/images/zakynthos.webp",
+    overview: { 
+      en: "Dramatic blue waters, iconic beaches, sea caves and relaxed Ionian island holidays with a scenic coastal edge.", 
+      el: "Εντυπωσιακά γαλάζια νερά, εμβληματικές παραλίες, θαλάσσιες σπηλιές και χαλαρές διακοπές στο Ιόνιο με μαγευτικό παραθαλάσσιο σκηνικό." 
+    },
+    highlights: { en: ["Navagio Beach", "Blue Caves"], el: ["Παραλία Ναυάγιο", "Γαλάζιες Σπηλιές"] },
+    featured: true,
+    guideLinks: [
+      {
+        href: "/hotels?destination=zakynthos",
+        label: { en: "Explore stays in Zakynthos", el: "Ανακαλύψτε διαμονή στη Ζάκυνθο" }
+      },
+      {
+        href: "/tours/all",
+        label: { en: "See tours & experiences", el: "Δείτε εμπειρίες & tours" }
+      },
+      {
+        href: "/collections/greece-food-and-drink",
+        label: { en: "Discover local food ideas", el: "Ανακαλύψτε τοπικές γεύσεις" }
+      }
+    ],
+    seo: {
+      title: {
+        en: "Zakynthos Travel Guide | Beaches, Boat Trips, Food & Where to Stay | GoGreeceNow",
+        el: "Ζάκυνθος: Οδηγός Ταξιδιού | Παραλίες, Διαμονή & Εμπειρίες | GoGreeceNow"
+      },
+      description: {
+        en: "Plan your trip to Zakynthos with our travel guide. Discover beaches, boat trips, food, where to stay, and the best things to do on one of Greece's most scenic Ionian islands.",
+        el: "Οργανώστε το ταξίδι σας στη Ζάκυνθο με τον οδηγό μας. Ανακαλύψτε παραλίες, εκδρομές, φαγητό και διαμονή σε ένα από τα πιο γραφικά νησιά του Ιονίου."
+      }
+    }
   },
   {
     slug: "rhodes",
     name: "Rhodes",
     region: { en: "Dodecanese", el: "Δωδεκάνησα" },
     blurb: { en: "Medieval history, grand scale and diverse coastline.", el: "Μεσαιωνική ιστορία, μεγάλα τοπία και ποικιλόμορφη ακτογραμμή." },
-    image: "/images/hero-greece.webp",
-    overview: { en: "Rhodes combines the UNESCO Medieval City with endless beaches and sunny weather.", el: "Η Ρόδος συνδυάζει τη Μεσαιωνική Πόλη της UNESCO με ατελείωτες παραλίες και ηλιοφάνεια." },
-    highlights: { en: ["Medieval Old Town", "Lindos Acropolis", "Prasonisi beach"], el: ["Μεσαιωνική Πόλη", "Ακρόπολη Λίνδου", "Πρασονήσι"] },
-    featured: false
+    image: "/images/rhodes.webp",
+    overview: { 
+      en: "Medieval streets, grand island scale, sunny beaches and one of the richest mixes of history and holiday atmosphere in Greece.", 
+      el: "Μεσαιωνικά σοκάκια, μεγάλο νησιωτικό μέγεθος, ηλιόλουστες παραλίες και ένας από τους πιο πλούσιους συνδυασμούς ιστορίας και ατμόσφαιρας διακοπών στην Ελλάδα." 
+    },
+    highlights: { en: ["Medieval Old Town", "Lindos Acropolis"], el: ["Μεσαιωνική Πόλη", "Ακρόπολη Λίνδου"] },
+    featured: true,
+    guideLinks: [
+      {
+        href: "/tours/all",
+        label: { en: "See tours & experiences", el: "Δείτε εμπειρίες & tours" }
+      },
+      {
+        href: "/hotels?destination=rhodes",
+        label: { en: "Explore stays in Rhodes", el: "Ανακαλύψτε διαμονή στη Ρόδο" }
+      },
+      {
+        href: "/travel-info/greece-islands-map-guide",
+        label: { en: "Explore Greek Islands", el: "Εξερευνήστε τα Ελληνικά Νησιά" }
+      }
+    ],
+    seo: {
+      title: {
+        en: "Rhodes Travel Guide | Old Town, Beaches, Food & Where to Stay | GoGreeceNow",
+        el: "Ρόδος: Οδηγός Ταξιδιού | Παλιά Πόλη, Παραλίες, Φαγητό & Διαμονή | GoGreeceNow"
+      },
+      description: {
+        en: "Plan your trip to Rhodes with our travel guide. Discover the Old Town, beaches, food, where to stay, and the best things to do on one of Greece's most historic and diverse islands.",
+        el: "Οργανώστε το ταξίδι σας στη Ρόδο με τον οδηγό μας. Ανακαλύψτε την Παλιά Πόλη, τις παραλίες, το φαγητό, τη διαμονή και τις καλύτερες εμπειρίες σε ένα από τα πιο ιστορικά νησιά της Ελλάδας."
+      }
+    }
   },
   {
     slug: "halkidiki",
     name: "Halkidiki",
     region: { en: "Northern Greece", el: "Βόρεια Ελλάδα" },
     blurb: { en: "Crystal waters, pine forests and three unique peninsulas.", el: "Κρυστάλλινα νερά, πευκοδάση και τρεις μοναδικές χερσόνησοι." },
-    image: "/images/thessaloniki.webp",
-    overview: { en: "Halkidiki is the ultimate summer destination for Northern Greece enthusiasts.", el: "Η Χαλκιδική είναι ο κορυφαίος καλοκαιρινός προορισμός για τους λάτρεις της Βόρειας Ελλάδας." },
-    highlights: { en: ["Kassandra nightlife", "Sithonia beaches", "Mount Athos views"], el: ["Νυχτερινή ζωή Κασσάνδρας", "Παραλίες Σιθωνίας", "Θέα Άθω"] },
-    featured: false
+    image: "/images/halkidiki.webp",
+    overview: { 
+      en: "Crystal waters, pine-covered coastlines, beach escapes and one of the most varied summer regions in northern Greece.", 
+      el: "Κρυστάλλινα νερά, πευκόφυτες ακτές, αποδράσεις σε παραλίες και μία από τις πιο ποικιλόμορφες καλοκαιρινές περιοχές της βόρειας Ελλάδας." 
+    },
+    highlights: { en: ["Kassandra nightlife", "Sithonia beaches"], el: ["Νυχτερινή ζωή Κασσάνδρας", "Παραλίες Σιθωνίας"] },
+    featured: true,
+    guideLinks: [
+      {
+        href: "/tours/all",
+        label: { en: "See tours & experiences", el: "Δείτε εμπειρίες & tours" }
+      },
+      {
+        href: "/hotels?destination=halkidiki",
+        label: { en: "Explore stays in Halkidiki", el: "Ανακαλύψτε διαμονή στη Χαλκιδική" }
+      },
+      {
+        href: "/destinations/thessaloniki",
+        label: { en: "Explore Northern Greece", el: "Εξερευνήστε τη Βόρεια Ελλάδα" }
+      }
+    ],
+    seo: {
+      title: {
+        en: "Halkidiki Travel Guide | Beaches, Areas, Food & Where to Stay | GoGreeceNow",
+        el: "Χαλκιδική: Οδηγός Ταξιδιού | Παραλίες, Διαμονή & Εμπειρίες | GoGreeceNow"
+      },
+      description: {
+        en: "Plan your trip to Halkidiki with our travel guide. Discover beaches, areas, food, where to stay, and the best things to do in one of northern Greece's most popular summer destinations.",
+        el: "Οργανώστε το ταξίδι σας στη Χαλκιδική με τον οδηγό μας. Ανακαλύψτε τις παραλίες, τις καλύτερες περιοχές, το φαγητό και τη διαμονή σε έναν από τους κορυφαίους καλοκαιρινούς προορισμούς."
+      }
+    }
   },
   {
     slug: "meteora",
     name: "Meteora",
     region: { en: "Thessaly", el: "Θεσσαλία" },
     blurb: { en: "Monasteries perched on giant rocks, a spiritual landscape.", el: "Μοναστήρια σκαρφαλωμένα σε βράχους, ένα πνευματικό τοπίο." },
-    image: "/images/nafplio.webp",
-    overview: { en: "Meteora is a UNESCO World Heritage site known for its vertical rock formations and historic monasteries.", el: "Τα Μετέωρα είναι μνημείο της UNESCO, γνωστό για τους βράχους και τα ιστορικά μοναστήρια." },
-    highlights: { en: ["Great Meteoron", "Sunset views", "Hiking trails"], el: ["Μεγάλο Μετέωρο", "Ηλιοβασίλεμα", "Μονοπάτια"] },
-    featured: false
+    image: "/images/meteora.webp",
+    overview: { 
+      en: "Towering rock formations, cliff-top monasteries and one of the most extraordinary landscapes in Greece.", 
+      el: "Πανύψηλοι βράχοι, μοναστήρια στην κορυφή και ένα από τα πιο ασυνήθιστα και εντυπωσιακά τοπία στην Ελλάδα." 
+    },
+    highlights: { en: ["Great Meteoron", "Sunset views"], el: ["Μεγάλο Μετέωρο", "Ηλιοβασίλεμα"] },
+    featured: true,
+    guideLinks: [
+      {
+        href: "/tours/all",
+        label: { en: "See tours & experiences", el: "Δείτε εμπειρίες & tours" }
+      },
+      {
+        href: "/hotels?destination=meteora",
+        label: { en: "Explore stays in Meteora", el: "Ανακαλύψτε διαμονή στα Μετέωρα" }
+      },
+      {
+        href: "/destinations",
+        label: { en: "Explore Northern Greece", el: "Εξερευνήστε τη Βόρεια Ελλάδα" }
+      }
+    ],
+    seo: {
+      title: {
+        en: "Meteora Travel Guide | Monasteries, Views, Food & Where to Stay | GoGreeceNow",
+        el: "Μετέωρα: Οδηγός Ταξιδιού | Μοναστήρια, Θέα, Διαμονή & Εμπειρίες | GoGreeceNow"
+      },
+      description: {
+        en: "Plan your trip to Meteora with our travel guide. Discover monasteries, viewpoints, local food, where to stay, and the best things to do in one of Greece's most extraordinary mainland destinations.",
+        el: "Οργανώστε το ταξίδι σας στα Μετέωρα με τον οδηγό μας. Ανακαλύψτε τα μοναστήρια, τα σημεία θέας, τη διαμονή και τις καλύτερες εμπειρίες σε έναν από τους πιο εντυπωσιακούς προορισμούς."
+      }
+    }
   },
   {
     slug: "monemvasia",
     name: "Monemvasia",
     region: { en: "Peloponnese", el: "Πελοπόννησος" },
     blurb: { en: "Medieval fortress city built on a massive sea rock.", el: "Μεσαιωνική καστροπολιτεία χτισμένη πάνω στο βράχο." },
-    image: "/images/nafplio.webp",
-    overview: { en: "Monemvasia offers a journey back in time within its perfectly preserved stone walls.", el: "Η Μονεμβασιά προσφέρει ένα ταξίδι στο χρόνο μέσα από τα πέτρινα καλντερίμια της." },
-    highlights: { en: ["Upper Town views", "Stone alleys", "Byzantine churches"], el: ["Θέα από την Άνω Πόλη", "Πέτρινα σοκάκια", "Βυζαντινές εκκλησίες"] },
-    featured: false
+    image: "/images/monemvasia.webp",
+    overview: { 
+      en: "Medieval stone alleys, sea views, fortress atmosphere and one of the most distinctive romantic escapes in the Peloponnese.", 
+      el: "Μεσαιωνικά πέτρινα σοκάκια, θέα στη θάλασσα, ατμόσφαιρα κάστρου και μία από τις πιο ξεχωριστές ρομαντικές αποδράσεις στην Πελοπόννησο." 
+    },
+    highlights: { en: ["Upper Town views", "Stone alleys"], el: ["Θέα από την Άνω Πόλη", "Πέτρινα σοκάκια"] },
+    featured: true,
+    guideLinks: [
+      {
+        href: "/tours/all",
+        label: { en: "See tours & experiences", el: "Δείτε εμπειρίες & tours" }
+      },
+      {
+        href: "/hotels?destination=monemvasia",
+        label: { en: "Explore stays in Monemvasia", el: "Ανακαλύψτε διαμονή στη Μονεμβασιά" }
+      },
+      {
+        href: "/destinations",
+        label: { en: "Explore Peloponnese destinations", el: "Εξερευνήστε την Πελοπόννησο" }
+      }
+    ],
+    seo: {
+      title: {
+        en: "Monemvasia Travel Guide | Old Town, Views, Food & Where to Stay | GoGreeceNow",
+        el: "Μονεμβασιά: Οδηγός Ταξιδιού | Παλιά Πόλη, Φαγητό & Διαμονή | GoGreeceNow"
+      },
+      description: {
+        en: "Plan your trip to Monemvasia with our travel guide. Discover the old town, sea views, local food, where to stay, and the best things to do in one of the Peloponnese's most unique destinations.",
+        el: "Οργανώστε το ταξίδι σας στη Μονεμβασιά με τον οδηγό μας. Ανακαλύψτε την παλιά πόλη, την τοπική γαστρονομία, τη διαμονή και τις καλύτερες εμπειρίες σε έναν από τους πιο μοναδικούς προορισμούς."
+      }
+    }
   },
   {
     slug: "chania",
     name: "Chania",
     region: { en: "Crete", el: "Κρήτη" },
     blurb: { en: "Venetian harbor, lighthouse and charming old town alleys.", el: "Ενετικό λιμάνι, φάρος και γραφικά σοκάκια." },
-    image: "/images/crete.webp",
-    overview: { en: "Chania is one of the most beautiful and atmospheric cities in Crete.", el: "Τα Χανιά είναι από τις ομορφότερες και πιο ατμοσφαιρικές πόλεις της Κρήτης." },
-    highlights: { en: ["Venetian Harbor", "Old Market", "Seaside dining"], el: ["Ενετικό Λιμάνι", "Παλιά Αγορά", "Φαγητό δίπλα στη θάλασσα"] },
-    featured: false
+    image: "/images/chania.webp",
+    overview: { 
+      en: "Venetian harbor charm, old town alleys, great food, and some of the most memorable beach and road trip experiences in Crete.", 
+      el: "Γοητεία ενετικού λιμανιού, σοκάκια παλιάς πόλης, εξαιρετικό φαγητό και μερικές από τις πιο αξέχαστες εμπειρίες σε παραλίες και road trips στην Κρήτη." 
+    },
+    highlights: { en: ["Venetian Harbor", "Old Market"], el: ["Ενετικό Λιμάνι", "Παλιά Αγορά"] },
+    featured: true,
+    guideLinks: [
+      {
+        href: "/destinations/crete",
+        label: { en: "Explore Crete Guide", el: "Οδηγός Ταξιδιού Κρήτης" }
+      },
+      {
+        href: "/hotels?destination=chania",
+        label: { en: "Explore stays in Chania", el: "Ανακαλύψτε διαμονή στα Χανιά" }
+      },
+      {
+        href: "/tours/all",
+        label: { en: "See tours & experiences", el: "Δείτε εμπειρίες & tours" }
+      },
+      {
+        href: "/collections/greece-food-and-drink",
+        label: { en: "Discover local food ideas", el: "Ανακαλύψτε τοπικές γεύσεις" }
+      }
+    ],
+    seo: {
+      title: {
+        en: "Chania Travel Guide | Old Town, Beaches, Food & Where to Stay | GoGreeceNow",
+        el: "Χανιά: Οδηγός Ταξιδιού | Παλιά Πόλη, Παραλίες, Φαγητό & Διαμονή | GoGreeceNow"
+      },
+      description: {
+        en: "Plan your trip to Chania with our travel guide. Discover the old town, beaches, food, where to stay, and the best things to do in one of Crete's most beautiful destinations.",
+        el: "Οργανώστε το ταξίδι σας στα Χανιά με τον οδηγό μας. Ανακαλύψτε την παλιά πόλη, τις παραλίες, το φαγητό, τη διαμονή και τις καλύτερες εμπειρίες σε έναν από τους ομορφότερους προορισμούς της Κρήτης."
+      }
+    }
   },
   {
     slug: "parga",
     name: "Parga",
     region: { en: "Epirus", el: "Ήπειρος" },
     blurb: { en: "Amphitheater town with island vibes and a Venetian castle.", el: "Αμφιθεατρική πόλη με νησιώτικο αέρα και ενετικό κάστρο." },
-    image: "/images/kefalonia.webp",
-    overview: { en: "Parga combines the beauty of the Ionian sea with the charm of the Epirus coast.", el: "Η Πάργα συνδυάζει την ομορφιά του Ιονίου με τη γοητεία των ηπειρωτικών ακτών." },
-    highlights: { en: ["Venetian Castle", "Valtos Beach", "Islet of Panagia"], el: ["Ενετικό Κάστρο", "Παραλία Βάλτου", "Νησάκι Παναγιάς"] },
-    featured: false
+    image: "/images/parga.webp",
+    overview: { 
+      en: "Colorful hillside houses, Ionian waters, a Venetian castle and one of mainland Greece’s most charming seaside escapes.", 
+      el: "Πολύχρωμα αμφιθεατρικά σπίτια, νερά του Ιονίου, ένα ενετικό κάστρο και μία από τις πιο γοητευτικές παραθαλάσσιες αποδράσεις της ηπειρωτικής Ελλάδας." 
+    },
+    highlights: { en: ["Venetian Castle", "Valtos Beach"], el: ["Ενετικό Κάστρο", "Παραλία Βάλτου"] },
+    featured: true,
+    guideLinks: [
+      {
+        href: "/tours/all",
+        label: { en: "See tours & experiences", el: "Δείτε εμπειρίες & tours" }
+      },
+      {
+        href: "/hotels?destination=parga",
+        label: { en: "Explore stays in Parga", el: "Ανακαλύψτε διαμονή στην Πάργα" }
+      },
+      {
+        href: "/destinations",
+        label: { en: "Explore Epirus destinations", el: "Εξερευνήστε την Ήπειρο" }
+      }
+    ],
+    seo: {
+      title: {
+        en: "Parga Travel Guide | Beaches, Old Town, Food & Where to Stay | GoGreeceNow",
+        el: "Πάργα: Οδηγός Ταξιδιού | Παραλίες, Παλιά Πόλη, Διαμονή & Εμπειρίες | GoGreeceNow"
+      },
+      description: {
+        en: "Plan your trip to Parga with our travel guide. Discover beaches, the old town, food, where to stay, and the best things to do in one of Epirus' most charming coastal destinations.",
+        el: "Οργανώστε το ταξίδι σας στην Πάργα με τον οδηγό μας. Ανακαλύψτε τις παραλίες, την παλιά πόλη, τη διαμονή και τις καλύτερες εμπειρίες στον πιο γοητευτικό προορισμό της Ηπείρου."
+      }
+    }
   },
   {
     slug: "delphi",
     name: "Delphi",
     region: { en: "Mainland escapes", el: "Ηπειρωτική Ελλάδα" },
     blurb: { en: "The ancient 'Navel of the World' on the slopes of Parnassus.", el: "Ο αρχαίος 'Ομφαλός της Γης' στις πλαγιές του Παρνασσού." },
-    image: "/images/athens.webp",
-    overview: { en: "Delphi is a spiritual and historic site with breathtaking mountain views.", el: "Οι Δελφοί είναι ένας πνευματικός και ιστορικός χώρος με εκπληκτική θέα στο βουνό." },
-    highlights: { en: ["Apollo Temple", "Ancient Theater", "Delphi Museum"], el: ["Ναός Απόλλωνα", "Αρχαίο Θέατρο", "Μουσείο Δελφών"] },
-    featured: false
+    image: "/images/delphi.webp",
+    overview: { 
+      en: "Ancient sanctuary, mountain slopes, deep history and one of Greece’s most powerful cultural landscapes.", 
+      el: "Αρχαίο ιερό, πλαγιές του Παρνασσού, βαθιά ιστορία και ένα από τα πιο ισχυρά πολιτιστικά τοπία της Ελλάδας." 
+    },
+    highlights: { en: ["Apollo Temple", "Ancient Theater"], el: ["Ναός Απόλλωνα", "Αρχαίο Θέατρο"] },
+    featured: true,
+    guideLinks: [
+      {
+        href: "/tours/all",
+        label: { en: "See tours & experiences", el: "Δείτε εμπειρίες & tours" }
+      },
+      {
+        href: "/hotels?destination=delphi",
+        label: { en: "Explore stays in Delphi", el: "Ανακαλύψτε διαμονή στους Δελφούς" }
+      },
+      {
+        href: "/destinations",
+        label: { en: "Explore Mainland Escapes", el: "Εξερευνήστε την Ηπειρωτική Ελλάδα" }
+      }
+    ],
+    seo: {
+      title: {
+        en: "Delphi Travel Guide | Ancient Site, Views, Food & Where to Stay | GoGreeceNow",
+        el: "Δελφοί: Οδηγός Ταξιδιού | Αρχαίο Μαντείο, Διαμονή & Εμπειρίες | GoGreeceNow"
+      },
+      description: {
+        en: "Plan your trip to Delphi with our travel guide. Discover the ancient site, mountain views, local food, where to stay, and the best things to do in one of Greece's most symbolic mainland destinations.",
+        el: "Οργανώστε το ταξίδι σας στους Δελφούς με τον οδηγό μας. Ανακαλύψτε τον αρχαιολογικό χώρο, τη διαμονή και τις καλύτερες εμπειρίες σε έναν από τους πιο συμβολικούς προορισμούς."
+      }
+    }
   }
 ];
 
@@ -1277,53 +1556,6 @@ export const travelInfoGuides: GuideCard[] = [
     ]
   },
   {
-    slug: "where-to-stay-in-santorini",
-    title: { en: "Where to Stay in Santorini", el: "Πού να Μείνεις στη Σαντορίνη" },
-    description: {
-      en: "A guide to the best areas to stay in Santorini, comparing the caldera edge towns (Oia, Fira, Imerovigli) with the beach resorts (Kamari, Perissa).",
-      el: "Ένας οδηγός για τις καλύτερες περιοχές διαμονής στη Σαντορίνη, συγκρίνοντας την καλντέρα (Οία, Φηρά, Ημεροβίγλι) με τα παραθαλάσσια θέρετρα (Καμάρι, Περίσσα)."
-    },
-    image: "/images/santorini.webp",
-    overview: {
-      en: "Choosing where to stay in Santorini defines your entire experience. The island is essentially split into two worlds: the dramatic, cliffside towns offering the famous sunset views, and the more relaxed, budget-friendly beach villages on the east coast.",
-      el: "Η επιλογή της διαμονής στη Σαντορίνη καθορίζει όλη σας την εμπειρία. Το νησί χωρίζεται ουσιαστικά σε δύο κόσμους: τους δραματικούς οικισμούς στον γκρεμό με τη διάσημη θέα, και τα πιο χαλαρά, οικονομικά παραθαλάσσια χωριά στην ανατολική πλευρά."
-    },
-    points: {
-      en: ["Oia is best for luxury and iconic views", "Fira is best for nightlife and transport", "Imerovigli is best for quiet romance", "Kamari/Perissa are best for beaches and budgets"],
-      el: ["Η Οία είναι ιδανική για πολυτέλεια και θέα", "Τα Φηρά είναι καλύτερα για νυχτερινή ζωή και μετακινήσεις", "Το Ημεροβίγλι είναι το καλύτερο για ρομαντική ηρεμία", "Το Καμάρι/Περίσσα είναι καλύτερα για παραλίες και budget"]
-    },
-    sections: [
-      {
-        title: { en: "1. Oia: The iconic luxury", el: "1. Οία: Η απόλυτη πολυτέλεια" },
-        content: {
-          en: "Oia is the postcard image of Santorini. It offers the most spectacular sunsets and luxury boutique hotels with infinity pools. However, it is also the most crowded and expensive area, especially during peak season.",
-          el: "Η Οία είναι η καρτ-ποστάλ της Σαντορίνης. Προσφέρει τα πιο εντυπωσιακά ηλιοβασιλέματα και πολυτελή boutique ξενοδοχεία. Ωστόσο, είναι και η πιο πολυσύχναστη και ακριβή περιοχή."
-        }
-      },
-      {
-        title: { en: "2. Fira: The vibrant capital", el: "2. Φηρά: Η ζωντανή πρωτεύουσα" },
-        content: {
-          en: "Fira is the heart of the island's nightlife and dining scene. It still offers incredible caldera views but is busier, noisier, and serves as the main transport hub for buses across the island.",
-          el: "Τα Φηρά είναι η καρδιά της νυχτερινής ζωής και της γαστρονομίας του νησιού. Προσφέρουν απίστευτη θέα στην καλντέρα, αλλά είναι πιο θορυβώδη και αποτελούν τον κεντρικό κόμβο μεταφορών."
-        }
-      },
-      {
-        title: { en: "3. Imerovigli: The romantic balcony", el: "3. Ημεροβίγλι: Το ρομαντικό μπαλκόνι" },
-        content: {
-          en: "Often called the 'balcony to the Aegean', Imerovigli sits at the highest point of the caldera. It offers the same stunning views as Oia but with much less crowd, making it perfect for honeymooners.",
-          el: "Συχνά αποκαλείται το 'μπαλκόνι του Αιγαίου', το Ημεροβίγλι βρίσκεται στο ψηλότερο σημείο της καλντέρας. Προσφέρει εξίσου εντυπωσιακή θέα με την Οία αλλά με πολύ λιγότερο κόσμο."
-        }
-      },
-      {
-        title: { en: "4. Beach Towns (Kamari & Perissa)", el: "4. Παραθαλάσσια θέρετρα (Καμάρι & Περίσσα)" },
-        content: {
-          en: "If you prefer to wake up and walk straight to the beach, head to the east coast. Kamari and Perissa offer black volcanic sand, family-friendly environments, and significantly lower hotel prices.",
-          el: "Αν προτιμάτε να ξυπνάτε και να πηγαίνετε κατευθείαν στην παραλία, επιλέξτε την ανατολική ακτή. Το Καμάρι και η Περίσσα προσφέρουν μαύρη άμμο, οικογενειακό περιβάλλον και χαμηλότερες τιμές."
-        }
-      }
-    ]
-  },
-  {
     slug: "best-hotels-in-crete-for-families",
     title: { en: "Best Hotels in Crete for Families", el: "Τα Καλύτερα Οικογενειακά Ξενοδοχεία στην Κρήτη" },
     description: {
@@ -1528,21 +1760,62 @@ export const travelInfoGuides: GuideCard[] = [
 export const hotels: HotelCard[] = [
   {
     slug: "santorini",
-    name: "Hotels in Santorini",
+    name: "Where to Stay in Santorini",
     place: "Santorini",
     info: {
-      en: "Elegant cave-style suites with sea views and a luxury island feeling.",
-      el: "Κομψές cave-style σουίτες με θέα στη θάλασσα και luxury νησιώτικη αίσθηση.",
+      en: "Choosing where to stay in Santorini defines your entire experience. The island is essentially split into two worlds: the dramatic cliffside and the relaxed beaches.",
+      el: "Η επιλογή της διαμονής στη Σαντορίνη καθορίζει όλη σας την εμπειρία. Το νησί χωρίζεται ουσιαστικά σε δύο κόσμους: την καλντέρα και τις παραλίες.",
     },
     image: "/images/hotel-santorini.webp",
-    badge: "Featured",
+    badge: "Best Areas Guide",
     overview: {
-      en: "A premium Santorini-style stay focused on views, privacy and romantic atmosphere.",
-      el: "Μια premium διαμονή τύπου Σαντορίνης με έμφαση στη θέα, την ιδιωτικότητα και τη ρομαντική ατμόσφαιρα.",
+      en: "Choosing where to stay in Santorini defines your entire experience. The island is essentially split into two worlds: the dramatic, cliffside towns offering the famous sunset views, and the more relaxed, budget-friendly beach villages on the east coast.",
+      el: "Η επιλογή της διαμονής στη Σαντορίνη καθορίζει όλη σας την εμπειρία. Το νησί χωρίζεται ουσιαστικά σε δύο κόσμους: τους δραματικούς οικισμούς στον γκρεμό με τη διάσημη θέα, και τα πιο χαλαρά, οικονομικά παραθαλάσσια χωριά στην ανατολική πλευρά.",
     },
+
     features: {
-      en: ["Caldera views", "Romantic setting", "Boutique luxury"],
-      el: ["Θέα στην καλντέρα", "Ρομανική ατμόσφαιρα", "Boutique πολυτέλεια"],
+      en: ["Oia (Luxury)", "Fira (Nightlife)", "Imerovigli (Romance)", "Beach Resorts (Budget)"],
+      el: ["Οία (Πολυτέλεια)", "Φηρά (Διασκέδαση)", "Ημεροβίγλι (Ρομαντισμός)", "Παραλίες (Οικονομικά)"],
+    },
+    sections: [
+      {
+        title: { en: "1. Oia: The iconic luxury", el: "1. Οία: Η απόλυτη πολυτέλεια" },
+        content: {
+          en: "Oia is the postcard image of Santorini. It offers the most spectacular sunsets and luxury boutique hotels with infinity pools. However, it is also the most crowded and expensive area, especially during peak season.",
+          el: "Η Οία είναι η καρτ-ποστάλ της Σαντορίνης. Προσφέρει τα πιο εντυπωσιακά ηλιοβασιλέματα και πολυτελή boutique ξενοδοχεία. Ωστόσο, είναι και η πιο πολυσύχναστη και ακριβή περιοχή."
+        }
+      },
+      {
+        title: { en: "2. Fira: The vibrant capital", el: "2. Φηρά: Η ζωντανή πρωτεύουσα" },
+        content: {
+          en: "Fira is the heart of the island's nightlife and dining scene. It still offers incredible caldera views but is busier, noisier, and serves as the main transport hub for buses across the island.",
+          el: "Τα Φηρά είναι η καρδιά της νυχτερινής ζωής και της γαστρονομίας του νησιού. Προσφέρουν απίστευτη θέα στην καλντέρα, αλλά είναι πιο θορυβώδη και αποτελούν τον κεντρικό κόμβο μεταφορών."
+        }
+      },
+      {
+        title: { en: "3. Imerovigli: The romantic balcony", el: "3. Ημεροβίγλι: Το ρομαντικό μπαλκόνι" },
+        content: {
+          en: "Often called the 'balcony to the Aegean', Imerovigli sits at the highest point of the caldera. It offers the same stunning views as Oia but with much less crowd, making it perfect for honeymooners.",
+          el: "Συχνά αποκαλείται το 'μπαλκόνι του Αιγαίου', το Ημεροβίγλι βρίσκεται στο ψηλότερο σημείο της καλντέρας. Προσφέρει εξίσου εντυπωσιακή θέα με την Οία αλλά με πολύ λιγότερο κόσμο."
+        }
+      },
+      {
+        title: { en: "4. Beach Towns (Kamari & Perissa)", el: "4. Παραθαλάσσια θέρετρα (Καμάρι & Περίσσα)" },
+        content: {
+          en: "If you prefer to wake up and walk straight to the beach, head to the east coast. Kamari and Perissa offer black volcanic sand, family-friendly environments, and significantly lower hotel prices.",
+          el: "Αν προτιμάτε να ξυπνάτε και να πηγαίνετε κατευθείαν στην παραλία, επιλέξτε την ανατολική ακτή. Το Καμάρι και η Περίσσα προσφέρουν μαύρη άμμο, οικογενειακό περιβάλλον και χαμηλότερες τιμές."
+        }
+      }
+    ],
+    seo: {
+      title: {
+        en: "Where to Stay in Santorini | Best Areas & Hotels | GoGreeceNow",
+        el: "Πού να μείνετε στη Σαντορίνη | Καλύτερες Περιοχές & Ξενοδοχεία | GoGreeceNow"
+      },
+      description: {
+        en: "Plan your trip to Santorini with our guide on where to stay. Discover the best areas, caldera views, beach resorts, and hotel recommendations for an unforgettable stay.",
+        el: "Οργανώστε τη διαμονή σας στη Σαντορίνη. Ανακαλύψτε τις καλύτερες περιοχές, τη θέα στην καλντέρα, τα παραθαλάσσια θέρετρα και προτάσεις ξενοδοχείων."
+      }
     },
   },
   {

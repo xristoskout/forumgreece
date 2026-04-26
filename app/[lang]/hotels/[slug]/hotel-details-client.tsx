@@ -266,6 +266,25 @@ export default function HotelDetailsClient() {
                 {item.description ? item.description[lang] : item.overview[lang]}
               </p>
             </section>
+            
+            {item.sections && item.sections.length > 0 && (
+              <div className="space-y-10 mt-10">
+                {item.sections.map((section, idx) => (
+                  <section 
+                    key={`hotel-section-${idx}`}
+                    className="group rounded-[2rem] border border-slate-200 bg-white/90 backdrop-blur-md p-10 shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)]"
+                  >
+                    <h2 className="text-3xl font-bold tracking-tight text-slate-900 group-hover:text-indigo-800 transition-colors">
+                      {section.title[lang]}
+                    </h2>
+                    <div className="mt-8 text-lg leading-relaxed text-slate-600 whitespace-pre-line">
+                      {section.content[lang]}
+                    </div>
+                  </section>
+                ))}
+              </div>
+            )}
+
 
             <ListCard
               title={t.services[lang]}

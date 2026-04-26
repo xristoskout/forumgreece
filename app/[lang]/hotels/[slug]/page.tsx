@@ -44,15 +44,17 @@ export async function generateMetadata({
   }
 
   const description =
+    item.seo?.description?.[lang] ??
     item.description?.[lang] ??
     item.info?.[lang] ??
     item.overview?.[lang] ??
     item.info.en;
 
   const hotelTitle =
-    lang === "el"
+    item.seo?.title?.[lang] ??
+    (lang === "el"
       ? `Πού να Μείνεις στη ${item.place}: Ξενοδοχεία & Επιλογές Διαμονής | GoGreeceNow`
-      : `Where to Stay in ${item.place}: Best Areas & Hotel Ideas | GoGreeceNow`;
+      : `Where to Stay in ${item.place}: Best Areas & Hotel Ideas | GoGreeceNow`);
 
   return {
     title: { absolute: hotelTitle },
