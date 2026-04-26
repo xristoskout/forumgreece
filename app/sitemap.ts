@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/privacy',
     '/about',
     '/contact',
+    '/tours/all',
     '/collections/greek-islands',
     '/collections/greece-travel-planning',
     '/collections/greece-tours-and-experiences',
@@ -33,13 +34,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   });
 
   const dynamicSources = [
-    { prefix: '/destinations', items: destinations.map(d => d.slug), priority: 0.9 },
-    { prefix: '/hotels', items: hotels.map(h => h.slug), priority: 0.8 },
-    { prefix: '/eat-drink', items: food.map(f => f.slug), priority: 0.8 },
-    { prefix: '/tours', items: [...tours.map(t => t.slug), ...experienceLandings.map(l => l.slug)], priority: 0.8 },
-    { prefix: '/businesses', items: experienceBusinesses.map(b => b.slug), priority: 0.7 },
-    { prefix: '/travel-info', items: travelInfoGuides.map(g => g.slug), priority: 0.7 },
-    { prefix: '/collections', items: homeCollectionHubSlugs, priority: 0.7 },
+    { prefix: '/destinations', items: Array.from(new Set(destinations.map(d => d.slug))), priority: 0.9 },
+    { prefix: '/hotels', items: Array.from(new Set(hotels.map(h => h.slug))), priority: 0.8 },
+    { prefix: '/eat-drink', items: Array.from(new Set(food.map(f => f.slug))), priority: 0.8 },
+    { prefix: '/tours', items: Array.from(new Set([...tours.map(t => t.slug), ...experienceLandings.map(l => l.slug)])), priority: 0.8 },
+    { prefix: '/businesses', items: Array.from(new Set(experienceBusinesses.map(b => b.slug))), priority: 0.7 },
+    { prefix: '/travel-info', items: Array.from(new Set(travelInfoGuides.map(g => g.slug))), priority: 0.7 },
+    { prefix: '/collections', items: Array.from(new Set(homeCollectionHubSlugs)), priority: 0.7 },
   ];
 
   langs.forEach((lang) => {

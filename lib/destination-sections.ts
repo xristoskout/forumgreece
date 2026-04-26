@@ -3149,4 +3149,1702 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       ],
     },
   ],
+
+  paros: [
+    {
+      title: { en: "Why Visit Paros", el: "Γιατί να επισκεφθείς την Πάρο" },
+      text: { 
+        en: "Paros is a strong choice for travelers who want a Greek island with real variety. For many people, Paros feels like one of the easiest islands to recommend because it does not rely on just one thing. It is not only about nightlife, not only about luxury, and not only about beaches. It is more balanced than that.",
+        el: "Η Πάρος είναι μια εξαιρετική επιλογή για ταξιδιώτες που θέλουν ένα ελληνικό νησί με πραγματική ποικιλία. Για πολλούς, είναι από τα πιο εύκολα νησιά να προτείνει κανείς γιατί δεν βασίζεται σε ένα μόνο πράγμα. Δεν αφορά μόνο τη νυχτερινή ζωή, ούτε μόνο την πολυτέλεια, ούτε μόνο τις παραλίες. Είναι πολύ πιο ισορροπημένη από αυτό." 
+      },
+      layout: "list",
+      items: [
+        {
+          title: { en: "Attractive villages and harbor towns", el: "Γραφικά χωριά και λιμανάκια" },
+          text: { en: "Naoussa and Parikia offer some of the best walking and dining experiences in the Cyclades.", el: "Η Νάουσα και η Παροικιά προσφέρουν μερικές από τις καλύτερες εμπειρίες περιπάτου και φαγητού στις Κυκλάδες." }
+        },
+        {
+          title: { en: "A good balance between style and simplicity", el: "Ισορροπία ανάμεσα στο στιλ και την απλότητα" },
+          text: { en: "It blends cosmopolitan elegance with traditional Aegean charm seamlessly.", el: "Συνδυάζει την κοσμοπολίτικη κομψότητα με την παραδοσιακή γοητεία του Αιγαίου αρμονικά." }
+        },
+        {
+          title: { en: "Dining and nightlife without feeling too extreme", el: "Φαγητό και διασκέδαση χωρίς ακρότητες" },
+          text: { en: "You can find vibrant bars in Naoussa or quiet tavernas by the sea, offering the perfect mix.", el: "Μπορείς να βρεις ζωντανά μπαρ στη Νάουσα ή ήσυχες ταβέρνες δίπλα στο κύμα, προσφέροντας το τέλειο μείγμα." }
+        },
+        {
+          title: { en: "A central Cyclades location", el: "Κεντρική τοποθεσία στις Κυκλάδες" },
+          text: { en: "Its position makes island travel and day trips significantly easier.", el: "Η θέση της καθιστά το island hopping και τις ημερήσιες εκδρομές πολύ πιο εύκολες." }
+        }
+      ]
+    },
+    {
+      title: { en: "Best Areas and Highlights in Paros", el: "Οι καλύτερες περιοχές και σημεία της Πάρου" },
+      layout: "grid",
+      items: [
+        {
+          title: { en: "Naoussa", el: "Νάουσα" },
+          text: { en: "Naoussa is the island's most stylish and photogenic base. It combines a charming harbor setting with whitewashed lanes, restaurants, bars, boutique atmosphere, and easy access to some of Paros' most popular beaches.", el: "Η Νάουσα είναι η πιο κομψή και φωτογενής βάση του νησιού. Συνδυάζει το γραφικό λιμανάκι με τα λευκά σοκάκια, τα εστιατόρια, τα μπαρ και την εύκολη πρόσβαση στις δημοφιλείς παραλίες." }
+        },
+        {
+          title: { en: "Parikia", el: "Παροικιά" },
+          text: { en: "Parikia is the main port town and often the most practical base. It has a more everyday island feel, good dining, local life, transport convenience, and a historic old town area that still feels pleasant to explore.", el: "Η Παροικιά είναι το κεντρικό λιμάνι και η πιο πρακτική βάση. Έχει πιο καθημερινή νησιωτική αίσθηση, καλό φαγητό, τοπική ζωή, συγκοινωνίες και μια ιστορική παλιά πόλη που χαίρεσαι να εξερευνάς." }
+        },
+        {
+          title: { en: "Lefkes", el: "Λεύκες" },
+          text: { en: "Lefkes offers a different side of Paros. Inland, quieter, and more traditional, it brings out the village character of the island and adds depth beyond the beach-and-harbor picture many visitors initially expect.", el: "Οι Λεύκες προσφέρουν μια άλλη πλευρά της Πάρου. Πιο ορεινές, ήσυχες και παραδοσιακές, αναδεικνύουν τον χωριάτικο χαρακτήρα του νησιού και προσθέτουν βάθος πέρα από την εικόνα της παραλίας." }
+        },
+        {
+          title: { en: "Golden Beach (Southeast)", el: "Χρυσή Ακτή & Νοτιοανατολικά" },
+          text: { en: "This part of the island is ideal for beach-focused stays, especially for travelers who want a calmer base and easy access to long sandy stretches.", el: "Αυτό το τμήμα του νησιού είναι ιδανικό για όσους εστιάζουν στις παραλίες, ειδικά για ταξιδιώτες που θέλουν μια πιο ήρεμη βάση και εύκολη πρόσβαση σε μεγάλες αμμουδιές." }
+        }
+      ]
+    },
+    {
+      title: { en: "Beaches and Attractions in Paros", el: "Παραλίες και Αξιοθέατα στην Πάρο" },
+      text: { en: "Paros has enough beach variety to keep different travel styles happy. Some beaches feel organized and easy, while others feel softer and more open.", el: "Η Πάρος έχει αρκετή ποικιλία παραλιών για να ικανοποιήσει διαφορετικά στιλ διακοπών. Κάποιες είναι οργανωμένες και εύκολες, ενώ άλλες πιο ήσυχες και ανοιχτές." },
+      layout: "list",
+      items: [
+        {
+          title: { en: "Kolymbithres", el: "Κολυμπήθρες" },
+          text: { en: "Famous for its unusual rock formations and scenic setting, this is one of the most recognizable beach landscapes on the island.", el: "Διάσημη για τους ασυνήθιστους βραχώδεις σχηματισμούς και το γραφικό της περιβάλλον, είναι ένα από τα πιο αναγνωρίσιμα παραθαλάσσια τοπία του νησιού." }
+        },
+        {
+          title: { en: "Golden Beach", el: "Χρυσή Ακτή" },
+          text: { en: "One of the island's most famous beach areas, known for its wide stretch of sand and easy holiday feel.", el: "Μία από τις πιο γνωστές παραλίες του νησιού, φημισμένη για τη μεγάλη αμμουδιά της και τη χαλαρή αίσθηση διακοπών." }
+        },
+        {
+          title: { en: "Santa Maria", el: "Σάντα Μαρία" },
+          text: { en: "Popular and lively, especially in summer, with a more active beach atmosphere.", el: "Δημοφιλής και ζωντανή, ειδικά το καλοκαίρι, με μια πιο δραστήρια και beach-club ατμόσφαιρα." }
+        },
+        {
+          title: { en: "Naoussa harbor", el: "Λιμανάκι της Νάουσας" },
+          text: { en: "Naoussa is one of the strongest visual highlights of Paros and a major part of its appeal, especially in the evening.", el: "Η Νάουσα είναι ένα από τα πιο δυνατά οπτικά highlights της Πάρου και μεγάλο μέρος της γοητείας της, ειδικά το βράδυ." }
+        }
+      ]
+    },
+    {
+      title: { en: "Food and Local Flavors in Paros", el: "Φαγητό και Τοπικές Γεύσεις στην Πάρο" },
+      text: { en: "Paros is a very enjoyable island for food, especially if you like the combination of island simplicity and slightly more polished dining settings. Food here is part of the island's appeal, but it usually feels approachable rather than overly formal.", el: "Η Πάρος είναι ένα πολύ απολαυστικό νησί για φαγητό, ειδικά αν σου αρέσει ο συνδυασμός της νησιωτικής απλότητας με πιο προσεγμένα περιβάλλοντα εστίασης. Το φαγητό είναι κομμάτι της γοητείας του, αλλά παραμένει προσιτό και όχι υπερβολικά στημένο." },
+      layout: "list",
+      items: [
+        {
+          title: { en: "Waterfront seafood meals", el: "Θαλασσινά δίπλα στο νερό" },
+          text: { en: "Enjoying fresh fish and traditional meze right by the fishing boats in Naoussa or Piso Livadi.", el: "Απόλαυσε φρέσκο ψάρι και παραδοσιακούς μεζέδες δίπλα στις ψαρόβαρκες στη Νάουσα ή στο Πίσω Λιβάδι." }
+        },
+        {
+          title: { en: "Traditional tavern dishes", el: "Παραδοσιακά πιάτα σε ταβέρνες" },
+          text: { en: "Look for local specialties like Gouna (sun-dried mackerel) and classic Cycladic summer dining in inland villages.", el: "Αναζήτησε τοπικές σπεσιαλιτέ όπως η Γούνα (λιαστό σκουμπρί) και κλασικό κυκλαδίτικο φαγητό στα ορεινά χωριά." }
+        },
+        {
+          title: { en: "Stylish dinner settings", el: "Κομψά δείπνα σε Νάουσα και Παροικιά" },
+          text: { en: "Some of the best moments in Paros are simple: fresh fish, shared plates, and long evening meals by the harbor.", el: "Μερικές από τις καλύτερες στιγμές στην Πάρο είναι απλές: φρέσκο ψάρι, πιάτα στη μέση και μεγάλα βραδινά τραπέζια στο λιμάνι." }
+        }
+      ]
+    },
+    {
+      title: { en: "Where to Stay in Paros", el: "Πού να μείνεις στην Πάρο" },
+      text: { en: "Where you stay in Paros will shape the kind of trip you have.", el: "Η περιοχή που θα επιλέξεις να μείνεις θα διαμορφώσει το είδος των διακοπών σου." },
+      layout: "list",
+      items: [
+        {
+          title: { en: "Stay in Naoussa if...", el: "Μείνε στη Νάουσα αν..." },
+          text: { en: "You want atmosphere, restaurants, harbor life, and stylish but still relaxed evenings in one of the island's most attractive bases.", el: "Θέλεις ατμόσφαιρα, εστιατόρια, ζωή στο λιμάνι και κομψά αλλά χαλαρά βράδια σε μια από τις πιο όμορφες βάσεις." }
+        },
+        {
+          title: { en: "Stay in Parikia if...", el: "Μείνε στην Παροικιά αν..." },
+          text: { en: "You want convenience, easier transport connections, a practical base with town life, and are arriving without wanting complicated logistics.", el: "Θέλεις ευκολία στις μετακινήσεις, μια πρακτική βάση με ζωή πόλης και απλότητα στον προγραμματισμό σου." }
+        },
+        {
+          title: { en: "Stay near Golden Beach if...", el: "Μείνε κοντά στη Χρυσή Ακτή αν..." },
+          text: { en: "Your trip is more beach-oriented, you want a quieter holiday base, and prefer slower days with direct sea access.", el: "Το ταξίδι σου είναι προσανατολισμένο στις παραλίες, θέλεις πιο ήρεμη βάση και προτιμάς αργές μέρες με άμεση πρόσβαση στη θάλασσα." }
+        }
+      ]
+    },
+    {
+      title: { en: "Things to Do in Paros", el: "Τι να κάνεις στην Πάρο" },
+      text: { en: "Paros is not an island that needs an overpacked itinerary, but it does reward a little planning. It works best when you leave room for both movement and stillness.", el: "Η Πάρος δεν είναι νησί που χρειάζεται ένα υπερβολικά φορτωμένο πρόγραμμα, αλλά ανταμείβει τον σωστό προγραμματισμό. Λειτουργεί καλύτερα όταν αφήνεις χρόνο τόσο για εξερεύνηση όσο και για ξεκούραση." },
+      layout: "numbered",
+      items: [
+        {
+          title: { en: "Explore Naoussa and Parikia on foot", el: "Εξερεύνησε τη Νάουσα και την Παροικιά με τα πόδια" },
+          text: { en: "Get lost in the whitewashed alleys, discover small boutiques, and enjoy the classic Cycladic architecture.", el: "Χάσου στα ολόλευκα σοκάκια, ανακάλυψε μικρές μπουτίκ και απόλαυσε την κλασική κυκλαδίτικη αρχιτεκτονική." }
+        },
+        {
+          title: { en: "Visit inland villages like Lefkes", el: "Επισκέψου ορεινά χωριά όπως οι Λεύκες" },
+          text: { en: "Walk the Byzantine road and enjoy a slower, more traditional pace away from the sea.", el: "Περπάτησε το Βυζαντινό μονοπάτι και απόλαυσε έναν πιο αργό, παραδοσιακό ρυθμό μακριά από τη θάλασσα." }
+        },
+        {
+          title: { en: "Take boat-based or sea-focused outings", el: "Κάνε θαλάσσιες εκδρομές" },
+          text: { en: "A day trip to neighboring Antiparos is incredibly easy and highly recommended for a change of scenery.", el: "Μια ημερήσια εκδρομή στη γειτονική Αντίπαρο είναι εξαιρετικά εύκολη και συστήνεται ανεπιφύλακτα για αλλαγή παραστάσεων." }
+        }
+      ]
+    },
+    {
+      title: { en: "Best Time to Visit Paros", el: "Η καλύτερη εποχή για την Πάρο" },
+      layout: "list",
+      items: [
+        {
+          title: { en: "June and September", el: "Ιούνιος και Σεπτέμβριος" },
+          text: { en: "Especially attractive for many travelers because the weather is warm and the island often feels more balanced.", el: "Ιδιαίτερα ελκυστικοί μήνες, καθώς ο καιρός είναι ζεστός και το νησί έχει την τέλεια ισορροπία σε κόσμο και ρυθμό." }
+        },
+        {
+          title: { en: "July and August", el: "Ιούλιος και Αύγουστος" },
+          text: { en: "Bring the liveliest summer atmosphere, but also more people and higher energy.", el: "Φέρνουν την πιο έντονη καλοκαιρινή ατμόσφαιρα, αλλά μαζί και περισσότερο κόσμο και κίνηση." }
+        },
+        {
+          title: { en: "Late spring and early autumn", el: "Αργά την άνοιξη και νωρίς το φθινόπωρο" },
+          text: { en: "Can work very well for travelers who care more about atmosphere, walking, and relaxed exploration than peak beach heat.", el: "Λειτουργούν άψογα για όσους ενδιαφέρονται περισσότερο για την ατμόσφαιρα, το περπάτημα και τη χαλαρή εξερεύνηση παρά για την πολλή ζέστη." }
+        }
+      ]
+    },
+    {
+      title: { en: "FAQ About Paros", el: "Συχνές Ερωτήσεις για την Πάρο" },
+      layout: "faq",
+      items: [
+        {
+          title: { en: "Is Paros worth visiting?", el: "Αξίζει να επισκεφθώ την Πάρο;" },
+          text: { en: "Yes. Paros is one of the most balanced Greek islands for travelers who want beaches, villages, food, and a relaxed but attractive atmosphere.", el: "Ναι. Η Πάρος είναι από τα πιο ισορροπημένα νησιά για ταξιδιώτες που θέλουν παραλίες, χωριά, καλό φαγητό και μια χαλαρή αλλά κομψή ατμόσφαιρα." }
+        },
+        {
+          title: { en: "Is Paros better for couples or families?", el: "Η Πάρος είναι καλύτερη για ζευγάρια ή οικογένειες;" },
+          text: { en: "It can work for both. That is part of its strength. Some areas feel more stylish and lively, while others are calmer and more practical.", el: "Λειτουργεί και για τα δύο. Αυτό είναι το δυνατό της σημείο. Κάποιες περιοχές είναι πιο κοσμικές, ενώ άλλες πιο ήρεμες και πρακτικές." }
+        },
+        {
+          title: { en: "How many days do you need in Paros?", el: "Πόσες μέρες χρειάζονται στην Πάρο;" },
+          text: { en: "A few days can give you a good impression, but Paros is better when you have enough time to enjoy both beaches and villages without rushing (ideally 4-6 days).", el: "Λίγες μέρες δίνουν μια καλή εικόνα, αλλά η Πάρος είναι ιδανική όταν έχεις χρόνο να απολαύσεις παραλίες και χωριά χωρίς βιασύνη (ιδανικά 4-6 μέρες)." }
+        },
+        {
+          title: { en: "Where should first-time visitors stay?", el: "Πού να μείνουν όσοι την επισκέπτονται πρώτη φορά;" },
+          text: { en: "Naoussa and Parikia are the most common starting points, depending on whether you want atmosphere or practicality.", el: "Η Νάουσα και η Παροικιά είναι τα πιο συνηθισμένα σημεία εκκίνησης, ανάλογα με το αν θέλεις περισσότερη ατμόσφαιρα ή πρακτικότητα." }
+        }
+      ]
+    }
+  ],
+  milos: [
+    {
+      title: { en: "Why Visit Milos", el: "Γιατί να επισκεφθείς τη Μήλο" },
+      text: { 
+        en: "Milos is ideal for travelers who want a more distinctive island landscape. This is not an island you visit only to sit in one town the whole time. Milos is best when you move around and let the coastline shape the trip.",
+        el: "Η Μήλος είναι ιδανική για ταξιδιώτες που θέλουν ένα πιο ξεχωριστό τοπίο. Δεν είναι ένα νησί που το επισκέπτεσαι μόνο για να κάθεσαι σε ένα μέρος. Η Μήλος είναι στα καλύτερά της όταν κινείσαι και αφήνεις την ακτογραμμή να καθοδηγήσει το ταξίδι." 
+      },
+      layout: "list",
+      items: [
+        {
+          title: { en: "Exceptional beach variety", el: "Εξαιρετική ποικιλία παραλιών" },
+          text: { en: "The geology creates bays, caves, and lunar landscapes that look entirely different from each other.", el: "Η γεωλογία δημιουργεί κόλπους, σπηλιές και σεληνιακά τοπία που διαφέρουν εντελώς το ένα από το άλλο." }
+        },
+        {
+          title: { en: "Dramatic coastal scenery", el: "Εντυπωσιακό παραθαλάσσιο τοπίο" },
+          text: { en: "The raw beauty of its volcanic cliffs and turquoise waters is unmatched in the Cyclades.", el: "Η άγρια ομορφιά των ηφαιστειακών γκρεμών και των τυρκουάζ νερών είναι ασύγκριτη στις Κυκλάδες." }
+        },
+        {
+          title: { en: "Boat experiences and exploration-led days", el: "Εμπειρίες με σκάφος και ημέρες εξερεύνησης" },
+          text: { en: "Some of the best parts of the island, like Kleftiko, are accessible only by sea.", el: "Ορισμένα από τα καλύτερα σημεία του νησιού, όπως το Κλέφτικο, είναι προσβάσιμα μόνο από τη θάλασσα." }
+        },
+        {
+          title: { en: "Quieter Cycladic charm", el: "Πιο ήσυχη κυκλαδίτικη γοητεία" },
+          text: { en: "It offers authentic village life without the extreme commercialization of bigger islands.", el: "Προσφέρει αυθεντική ζωή στα χωριά χωρίς την ακραία εμπορευματοποίηση των μεγαλύτερων νησιών." }
+        }
+      ]
+    },
+    {
+      title: { en: "Best Areas and Highlights in Milos", el: "Οι καλύτερες περιοχές και σημεία της Μήλου" },
+      text: { en: "Much of the character of Milos comes from the coastline itself rather than from one dominant town. The beaches and sea-access areas are the real stars here.", el: "Μεγάλο μέρος του χαρακτήρα της Μήλου προέρχεται από την ίδια την ακτογραμμή παρά από κάποια κυρίαρχη πόλη. Οι παραλίες και η θάλασσα είναι οι πραγματικοί πρωταγωνιστές εδώ." },
+      layout: "grid",
+      items: [
+        {
+          title: { en: "Adamas", el: "Αδάμας" },
+          text: { en: "Adamas is the island's main port and the most practical base for many visitors. It offers convenience, accommodation options, dining, and easy access for arrivals and departures.", el: "Ο Αδάμας είναι το κεντρικό λιμάνι και η πιο πρακτική βάση. Προσφέρει ευκολία, επιλογές διαμονής, φαγητό και άμεση πρόσβαση για αφίξεις/αναχωρήσεις." }
+        },
+        {
+          title: { en: "Plaka", el: "Πλάκα" },
+          text: { en: "Plaka gives you one of the most charming village settings on the island, with Cycladic lanes, elevated views, and a more classic island feel.", el: "Η Πλάκα προσφέρει ένα από τα πιο όμορφα χωριάτικα σκηνικά, με κυκλαδίτικα σοκάκια, υπέροχη θέα από ψηλά και κλασική νησιωτική αίσθηση." }
+        },
+        {
+          title: { en: "Pollonia", el: "Πολλώνια" },
+          text: { en: "Pollonia is one of the island's most appealing relaxed bases, especially for travelers who want a calmer coastal atmosphere and an easy holiday pace.", el: "Τα Πολλώνια είναι μια από τις πιο ελκυστικές και χαλαρές βάσεις, ιδανική για όσους θέλουν ήρεμη παραθαλάσσια ατμόσφαιρα και αργό ρυθμό." }
+        },
+        {
+          title: { en: "The colorful Syrmata", el: "Τα πολύχρωμα Σύρματα" },
+          text: { en: "Villages like Klima and Firopotamos feature unique 'syrmata' — traditional fishermen's houses carved into the rocks with brightly painted doors.", el: "Χωριά όπως το Κλήμα και ο Φυροπόταμος διαθέτουν τα μοναδικά 'σύρματα' — παραδοσιακά σπίτια ψαράδων σκαλισμένα στα βράχια με πολύχρωμες πόρτες." }
+        }
+      ]
+    },
+    {
+      title: { en: "Beaches and Attractions in Milos", el: "Παραλίες και Αξιοθέατα στη Μήλο" },
+      text: { en: "This is where Milos becomes especially distinctive. The island works best if you build the trip around its varied coastline.", el: "Εδώ είναι που η Μήλος γίνεται πραγματικά ξεχωριστή. Το νησί προσφέρει τα μέγιστα αν χτίσεις το ταξίδι σου γύρω από την ποικιλόμορφη ακτογραμμή της." },
+      layout: "list",
+      items: [
+        {
+          title: { en: "Sarakiniko", el: "Σαρακίνικο" },
+          text: { en: "The island's most iconic landscape, with white volcanic formations and a setting that feels unlike almost anywhere else in Greece.", el: "Το πιο εμβληματικό τοπίο του νησιού, με λευκούς ηφαιστειακούς σχηματισμούς που δεν μοιάζουν με σχεδόν τίποτα άλλο στην Ελλάδα." }
+        },
+        {
+          title: { en: "Kleftiko", el: "Κλέφτικο" },
+          text: { en: "One of the most famous sea experiences around Milos, known for dramatic rock formations and crystal-clear waters. Best accessed by a boat trip.", el: "Μια από τις πιο διάσημες θαλάσσιες εμπειρίες, γνωστό για τους εντυπωσιακούς βράχους και τα κρυστάλλινα νερά. Προσεγγίζεται ιδανικά με σκάφος." }
+        },
+        {
+          title: { en: "Firopotamos", el: "Φυροπόταμος" },
+          text: { en: "A smaller coastal setting that combines water, charm, and a picturesque atmosphere.", el: "Ένα μικρότερο παραθαλάσσιο σκηνικό που συνδυάζει κρυστάλλινα νερά με γραφική ατμόσφαιρα." }
+        },
+        {
+          title: { en: "Plaka and its viewpoints", el: "Η Πλάκα και η θέα της" },
+          text: { en: "If you want one of the island's best overall visual impressions and a stunning sunset, this is a key area to include.", el: "Αν αναζητάς μία από τις καλύτερες οπτικές εντυπώσεις του νησιού και ένα εκπληκτικό ηλιοβασίλεμα, η Πλάκα είναι must." }
+        }
+      ]
+    },
+    {
+      title: { en: "Food and Local Flavors in Milos", el: "Φαγητό και Γεύσεις στη Μήλο" },
+      text: { en: "Food in Milos is often less about urban dining variety and more about atmosphere, simplicity, and memorable meals in the right setting. Harbor-side seafood, village tavern meals, and relaxed dinners after a beach day tend to define the food experience.", el: "Το φαγητό στη Μήλο δεν έχει να κάνει με τεράστια ποικιλία εστιατορίων, αλλά με την ατμόσφαιρα, την απλότητα και το σωστό σκηνικό. Θαλασσινά δίπλα στο λιμάνι, ταβέρνες σε χωριά και χαλαρά δείπνα μετά την παραλία καθορίζουν την εμπειρία." },
+      layout: "list",
+      items: [
+        {
+          title: { en: "Pitarakia & Local Cheeses", el: "Πιταράκια & Τοπικά τυριά" },
+          text: { en: "Traditional small pies filled with local cheese (manoura) and herbs.", el: "Παραδοσιακές μικρές πίτες γεμιστές με τοπικό τυρί (μανούρα) και μυρωδικά." }
+        },
+        {
+          title: { en: "Watermelon pie (Karpouzopita)", el: "Καρπουζόπιτα" },
+          text: { en: "A unique, sweet and savory traditional pie made from watermelon, honey, and sesame.", el: "Μια μοναδική, γλυκιά και αλμυρή παραδοσιακή πίτα με καρπούζι, μέλι και σουσάμι." }
+        },
+        {
+          title: { en: "Honest Greek food in scenic surroundings", el: "Τίμιο ελληνικό φαγητό σε γραφικό περιβάλλον" },
+          text: { en: "This is an island where setting matters: the sea nearby, a simple table, a sunset, and the feeling that you do not need much more.", el: "Εδώ το σκηνικό μετράει: η θάλασσα δίπλα, ένα απλό τραπέζι, το ηλιοβασίλεμα, και η αίσθηση ότι δεν χρειάζεσαι τίποτα παραπάνω." }
+        }
+      ]
+    },
+    {
+      title: { en: "Where to Stay in Milos", el: "Πού να μείνεις στη Μήλο" },
+      text: { en: "Where you stay in Milos should depend on the pace and style of trip you want.", el: "Η επιλογή διαμονής θα πρέπει να εξαρτάται από τον ρυθμό και το στιλ διακοπών που επιθυμείς." },
+      layout: "list",
+      items: [
+        {
+          title: { en: "Stay in Adamas if...", el: "Μείνε στον Αδάμαντα αν..." },
+          text: { en: "You want convenience and transport ease, you like having a practical base, and you are planning to move around the island a lot.", el: "Θέλεις ευκολία στις μετακινήσεις, σου αρέσει να έχεις μια πρακτική βάση και σκοπεύεις να γυρίσεις πολύ το νησί." }
+        },
+        {
+          title: { en: "Stay in Pollonia if...", el: "Μείνε στα Πολλώνια αν..." },
+          text: { en: "You want a quieter seaside atmosphere, you prefer a more relaxed and polished coastal base, and your trip is about slower island living.", el: "Θέλεις μια πιο ήσυχη παραθαλάσσια ατμόσφαιρα, προτιμάς μια κομψή βάση και το ταξίδι σου αφορά πιο αργούς ρυθμούς." }
+        },
+        {
+          title: { en: "Stay near Plaka if...", el: "Μείνε κοντά στην Πλάκα αν..." },
+          text: { en: "You want village character and views, and you prefer a more classic Cycladic setting.", el: "Θέλεις χωριάτικο χαρακτήρα, απίστευτη θέα και προτιμάς το κλασικό κυκλαδίτικο σκηνικό." }
+        }
+      ]
+    },
+    {
+      title: { en: "Things to Do in Milos", el: "Τι να κάνεις στη Μήλο" },
+      text: { en: "Milos is one of the strongest islands in Greece for travelers who enjoy a mix of beach exploration, scenic drives, and sea excursions.", el: "Η Μήλος είναι από τα πιο δυνατά νησιά για ταξιδιώτες που αγαπούν τον συνδυασμό εξερεύνησης παραλιών, γραφικών διαδρομών και θαλάσσιων εκδρομών." },
+      layout: "numbered",
+      items: [
+        {
+          title: { en: "Build your trip around its coastline", el: "Χτίσε το ταξίδι γύρω από την ακτογραμμή" },
+          text: { en: "One of the most common mistakes is to think of Milos as a place where one beach is enough. Move between very different coastal settings to see its true variety.", el: "Συχνό λάθος είναι να πιστεύει κανείς ότι στη Μήλο αρκεί μία παραλία. Μετακινήσου σε διαφορετικά σημεία για να δεις την πραγματική ποικιλία της." }
+        },
+        {
+          title: { en: "Take a boat tour to Kleftiko", el: "Κάνε εκδρομή με σκάφος στο Κλέφτικο" },
+          text: { en: "Sailing around the island allows you to see the true scale of the volcanic cliffs and swim in caves.", el: "Κάνοντας τον γύρο του νησιού θα δεις το πραγματικό μέγεθος των ηφαιστειακών βράχων και θα κολυμπήσεις σε σπηλιές." }
+        },
+        {
+          title: { en: "Wander around the Syrmata of Klima", el: "Περπάτησε στα Σύρματα του Κλήματος" },
+          text: { en: "The colorful fisherman houses right on the water create one of the most picturesque spots in the Aegean.", el: "Τα πολύχρωμα σπιτάκια ακριβώς πάνω στο νερό συνθέτουν ένα από τα πιο γραφικά σημεία στο Αιγαίο." }
+        }
+      ]
+    },
+    {
+      title: { en: "Best Time to Visit Milos", el: "Η καλύτερη εποχή για τη Μήλο" },
+      text: { en: "Because so much of Milos revolves around sea conditions and coastal exploring, weather and wind matter more here than on some other islands.", el: "Επειδή μεγάλο μέρος της Μήλου βασίζεται στη θάλασσα και την εξερεύνηση των ακτών, ο καιρός και ο άνεμος παίζουν μεγαλύτερο ρόλο εδώ απ' ό,τι σε άλλα νησιά." },
+      layout: "list",
+      items: [
+        {
+          title: { en: "June and September", el: "Ιούνιος και Σεπτέμβριος" },
+          text: { en: "Often offer one of the best balances of weather and pace, ideal for boat tours with calmer winds.", el: "Προσφέρουν την καλύτερη ισορροπία καιρού και ρυθμού, ιδανικοί μήνες για εκδρομές με σκάφος λόγω πιο ήπιων ανέμων." }
+        },
+        {
+          title: { en: "July and August", el: "Ιούλιος και Αύγουστος" },
+          text: { en: "Bring the strongest summer energy and busiest beaches. The Meltemi winds can be stronger during this time.", el: "Έχουν την πιο έντονη καλοκαιρινή ενέργεια. Οι άνεμοι (μελτέμια) μπορεί να είναι πιο ισχυροί αυτή την περίοδο." }
+        },
+        {
+          title: { en: "Shoulder season (May & October)", el: "Μάιος & Οκτώβριος" },
+          text: { en: "Excellent for travelers who care about scenery, walking, and a calmer atmosphere.", el: "Εξαιρετικοί μήνες για όσους ενδιαφέρονται για το τοπίο, το περπάτημα και μια πολύ πιο ήρεμη ατμόσφαιρα." }
+        }
+      ]
+    },
+    {
+      title: { en: "FAQ About Milos", el: "Συχνές Ερωτήσεις για τη Μήλο" },
+      layout: "faq",
+      items: [
+        {
+          title: { en: "Is Milos worth visiting?", el: "Αξίζει να επισκεφθώ τη Μήλο;" },
+          text: { en: "Yes. Milos is one of the most visually distinctive islands in Greece and is especially rewarding for travelers who care about beaches, scenery, and sea-based experiences.", el: "Ναι. Η Μήλος είναι ένα από τα πιο οπτικά ξεχωριστά νησιά της Ελλάδας και ανταμείβει όσους ενδιαφέρονται για παραλίες, τοπία και θαλάσσιες εμπειρίες." }
+        },
+        {
+          title: { en: "What is Milos best known for?", el: "Για τι φημίζεται η Μήλος;" },
+          text: { en: "It is best known for its dramatic coastline, Sarakiniko, boat-access scenery (Kleftiko), and unusual beach landscapes.", el: "Είναι πιο γνωστή για την εντυπωσιακή της ακτογραμμή, το Σαρακίνικο, τα τοπία προσβάσιμα με σκάφος (όπως το Κλέφτικο) και τις ασυνήθιστες παραλίες." }
+        },
+        {
+          title: { en: "How many days should you spend in Milos?", el: "Πόσες μέρες πρέπει να μείνω στη Μήλο;" },
+          text: { en: "Milos is better with enough time to explore more than one area and to include both beaches and boat experiences (at least 4-5 days).", el: "Η Μήλος απαιτεί αρκετό χρόνο για να εξερευνήσεις διαφορετικές περιοχές, παραλίες και να κάνεις εκδρομή με σκάφος (τουλάχιστον 4-5 μέρες)." }
+        },
+        {
+          title: { en: "Is Milos better for couples or families?", el: "Είναι καλύτερη για ζευγάρια ή οικογένειες;" },
+          text: { en: "It can work for both, but it is especially strong for couples and travelers who enjoy exploration and scenery-led trips.", el: "Κάνει και για τα δύο, αλλά είναι ιδιαίτερα δυνατή επιλογή για ζευγάρια και ταξιδιώτες που αγαπούν την εξερεύνηση." }
+        },
+        {
+          title: { en: "Do you need a car in Milos?", el: "Χρειάζομαι αυτοκίνητο στη Μήλο;" },
+          text: { en: "Many travelers find it useful, because the island's appeal is spread across different areas and beaches.", el: "Ναι, οι περισσότεροι ταξιδιώτες το βρίσκουν απαραίτητο, γιατί η ομορφιά του νησιού είναι απλωμένη σε διάφορες παραλίες και περιοχές." }
+        }
+      ]
+    }
+  ],
+  zakynthos: [
+    {
+      title: { en: "Why Visit Zakynthos", el: "Γιατί να επισκεφθείς τη Ζάκυνθο" },
+      text: { 
+        en: "Zakynthos is a strong choice for travelers who want a mix of famous scenic beaches, boat trips, and clear Ionian waters. It is one of those islands where the sea shapes the whole trip.",
+        el: "Η Ζάκυνθος είναι μια δυνατή επιλογή για ταξιδιώτες που αναζητούν διάσημες γραφικές παραλίες, εκδρομές με σκάφος και τα κρυστάλλινα νερά του Ιονίου. Είναι από τα νησιά όπου η θάλασσα καθορίζει όλο το ταξίδι." 
+      },
+      layout: "list",
+      items: [
+        {
+          title: { en: "Famous scenic beaches and viewpoints", el: "Διάσημες γραφικές παραλίες και σημεία θέας" },
+          text: { en: "Home to iconic spots like Navagio that define the Greek island experience.", el: "Φιλοξενεί εμβληματικά σημεία όπως το Ναυάγιο, που ορίζουν την εμπειρία των ελληνικών νησιών." }
+        },
+        {
+          title: { en: "Boat trips and sea-based experiences", el: "Εκδρομές με σκάφος και θαλάσσιες εμπειρίες" },
+          text: { en: "Exploring the island by boat is an essential part of the trip.", el: "Η εξερεύνηση του νησιού με σκάφος είναι αναπόσπαστο κομμάτι του ταξιδιού." }
+        },
+        {
+          title: { en: "Clear Ionian waters and dramatic coastline", el: "Κρυστάλλινα νερά και εντυπωσιακή ακτογραμμή" },
+          text: { en: "The raw beauty of its coastal edge leaves a lasting impression.", el: "Η άγρια ομορφιά των ακτών της αφήνει μια μόνιμη εντύπωση." }
+        },
+        {
+          title: { en: "A mix of lively and relaxed holiday areas", el: "Συνδυασμός ζωντανών και ήρεμων περιοχών" },
+          text: { en: "A destination that works perfectly for couples, families, and summer travelers alike.", el: "Ένας προορισμός που λειτουργεί άψογα για ζευγάρια, οικογένειες και κάθε είδους καλοκαιρινούς ταξιδιώτες." }
+        }
+      ]
+    },
+    {
+      title: { en: "Best Areas and Highlights in Zakynthos", el: "Οι καλύτερες περιοχές και σημεία της Ζακύνθου" },
+      layout: "grid",
+      items: [
+        {
+          title: { en: "Zakynthos Town", el: "Πόλη της Ζακύνθου" },
+          text: { en: "The island's capital and a practical base for travelers who want a more local feel, access to restaurants, and an easier connection to the island's wider road network.", el: "Η πρωτεύουσα του νησιού και πρακτική βάση για ταξιδιώτες που αναζητούν μια πιο τοπική αίσθηση, πρόσβαση σε εστιατόρια και ευκολότερη σύνδεση με το οδικό δίκτυο." }
+        },
+        {
+          title: { en: "Tsilivi", el: "Τσιλιβί" },
+          text: { en: "One of the island's most popular holiday areas, especially for travelers who want an easy beach base with restaurants, family-friendly options, and a balanced summer atmosphere.", el: "Μια από τις πιο δημοφιλείς περιοχές, ιδανική για όσους θέλουν μια εύκολη βάση με παραλία, εστιατόρια και μια ισορροπημένη καλοκαιρινή ατμόσφαιρα." }
+        },
+        {
+          title: { en: "Vasilikos", el: "Βασιλικός" },
+          text: { en: "Vasilikos offers a softer, greener, and often more relaxed side of Zakynthos. It suits travelers who want beaches, quieter surroundings, and a more laid-back holiday base.", el: "Ο Βασιλικός προσφέρει μια πιο πράσινη και ήρεμη πλευρά της Ζακύνθου. Ταιριάζει σε ταξιδιώτες που θέλουν όμορφες παραλίες και χαλαρό περιβάλλον." }
+        },
+        {
+          title: { en: "Laganas & Northwest Coast", el: "Λαγανάς & Βορειοδυτική Ακτή" },
+          text: { en: "Laganas serves those who want an energetic summer scene, while the northwest coast is essential for dramatic scenery and boat-based highlights.", el: "Ο Λαγανάς εξυπηρετεί όσους αναζητούν έντονη διασκέδαση, ενώ η βορειοδυτική ακτή είναι απαραίτητη για τα εντυπωσιακά τοπία και τις θαλάσσιες εκδρομές." }
+        }
+      ]
+    },
+    {
+      title: { en: "Beaches and Attractions in Zakynthos", el: "Παραλίες και Αξιοθέατα στη Ζάκυνθο" },
+      text: { en: "Zakynthos is above all a beach and sea destination, and many of its most memorable attractions are coastal.", el: "Η Ζάκυνθος είναι πάνω απ' όλα ένας προορισμός για παραλίες και θάλασσα, με πολλά από τα αξιοθέατά της να είναι καθαρά παραθαλάσσια." },
+      layout: "list",
+      items: [
+        {
+          title: { en: "Navagio Beach", el: "Παραλία Ναυάγιο" },
+          text: { en: "The island's most famous landmark. Even when access conditions vary, the viewpoint and the surrounding scenery remain major highlights.", el: "Το πιο διάσημο ορόσημο του νησιού. Ακόμα κι όταν η πρόσβαση είναι περιορισμένη, το σημείο θέας και το τοπίο παραμένουν κορυφαία." }
+        },
+        {
+          title: { en: "Blue Caves", el: "Γαλάζιες Σπηλιές" },
+          text: { en: "One of the best-known natural attractions in Zakynthos, especially popular through boat trips and sea excursions.", el: "Ένα από τα πιο γνωστά φυσικά αξιοθέατα της Ζακύνθου, ιδιαίτερα δημοφιλές μέσα από τις εκδρομές με σκάφος." }
+        },
+        {
+          title: { en: "Gerakas Beach", el: "Παραλία Γέρακας" },
+          text: { en: "A beautiful sandy beach known for its natural setting and its connection to the island's sea turtle environment.", el: "Μια όμορφη αμμώδης παραλία, γνωστή για το φυσικό της περιβάλλον και την παρουσία των θαλάσσιων χελωνών Caretta-Caretta." }
+        },
+        {
+          title: { en: "Porto Limnionas & Cameo Island", el: "Πόρτο Λιμνιώνας & Άγιος Σώστης (Cameo)" },
+          text: { en: "Scenic swimming spots that are more about a dramatic setting and unique water experiences than classic sandy beach days.", el: "Γραφικά σημεία για κολύμπι που εστιάζουν περισσότερο στο εντυπωσιακό τοπίο και την εμπειρία του νερού παρά στην κλασική αμμουδιά." }
+        }
+      ]
+    },
+    {
+      title: { en: "Food and Local Flavors in Zakynthos", el: "Φαγητό και Γεύσεις στη Ζάκυνθο" },
+      text: { en: "Zakynthos has the easy-going food rhythm that many travelers hope to find on a Greek island. The island's food scene is not only about refined dining, but the atmosphere around the meal.", el: "Η Ζάκυνθος έχει αυτόν τον χαλαρό ρυθμό στο φαγητό που όλοι αναζητούν σε ένα ελληνικό νησί. Το φαγητό εδώ βασίζεται κυρίως στην ατμόσφαιρα γύρω από το τραπέζι." },
+      layout: "list",
+      items: [
+        {
+          title: { en: "Seafood by the sea", el: "Θαλασσινά δίπλα στο κύμα" },
+          text: { en: "Enjoying the catch of the day in a relaxed setting along the coast.", el: "Απόλαυσε φρέσκο ψάρι σε ένα χαλαρό περιβάλλον κατά μήκος των ακτών." }
+        },
+        {
+          title: { en: "Relaxed tavern meals", el: "Χαλαρά γεύματα σε ταβέρνες" },
+          text: { en: "Summer dinners in coastal resorts or more traditional inland settings.", el: "Καλοκαιρινά δείπνα σε παραθαλάσσια θέρετρα ή σε πιο παραδοσιακά χωριά της ενδοχώρας." }
+        },
+        {
+          title: { en: "Simple Greek flavors", el: "Απλές ελληνικές γεύσεις" },
+          text: { en: "Casual lunches after the beach, enjoying familiar local recipes in an easy holiday environment.", el: "Χαλαρά μεσημεριανά μετά την παραλία, απολαμβάνοντας τοπικές συνταγές σε καλοκαιρινή διάθεση." }
+        }
+      ]
+    },
+    {
+      title: { en: "Where to Stay in Zakynthos", el: "Πού να μείνεις στη Ζάκυνθο" },
+      text: { en: "Where you stay in Zakynthos will shape the tone of your holiday quite a lot.", el: "Η περιοχή που θα επιλέξεις να μείνεις θα διαμορφώσει σε μεγάλο βαθμό τον τόνο των διακοπών σου." },
+      layout: "list",
+      items: [
+        {
+          title: { en: "Stay in Tsilivi if...", el: "Μείνε στο Τσιλιβί αν..." },
+          text: { en: "You want an easy and popular beach base, you like convenience, and you are traveling as a couple or family.", el: "Θέλεις μια εύκολη παραθαλάσσια βάση, σου αρέσει η άνεση και ταξιδεύεις ως ζευγάρι ή οικογένεια." }
+        },
+        {
+          title: { en: "Stay in Zakynthos Town if...", el: "Μείνε στην Πόλη της Ζακύνθου αν..." },
+          text: { en: "You prefer a more local and practical base, you want town life, and you plan to explore more of the island by car.", el: "Προτιμάς μια πιο πρακτική βάση με ζωή πόλης και σκοπεύεις να εξερευνήσεις το νησί με αυτοκίνητο." }
+        },
+        {
+          title: { en: "Stay in Vasilikos if...", el: "Μείνε στον Βασιλικό αν..." },
+          text: { en: "You want a quieter and greener part of the island, and your trip is more about beaches and relaxation.", el: "Αναζητάς μια πιο ήσυχη και πράσινη πλευρά του νησιού, εστιάζοντας στις παραλίες και τη χαλάρωση." }
+        },
+        {
+          title: { en: "Stay in Laganas if...", el: "Μείνε στον Λαγανά αν..." },
+          text: { en: "You specifically want a lively summer atmosphere where nightlife is an important part of your trip.", el: "Αναζητάς έντονη καλοκαιρινή διασκέδαση και η νυχτερινή ζωή είναι βασικό κομμάτι του ταξιδιού σου." }
+        }
+      ]
+    },
+    {
+      title: { en: "Things to Do in Zakynthos", el: "Τι να κάνεις στη Ζάκυνθο" },
+      text: { en: "Zakynthos is one of the islands where sea-based activity is a major part of the experience. The island works best when you do more than stay in one beach area.", el: "Στη Ζάκυνθο, οι δραστηριότητες γύρω από τη θάλασσα αποτελούν σημαντικό κομμάτι της εμπειρίας. Το νησί αναδεικνύεται καλύτερα όταν εξερευνάς διάφορα σημεία." },
+      layout: "numbered",
+      items: [
+        {
+          title: { en: "Take a boat trip along the coast", el: "Κάνε μια εκδρομή με σκάφος" },
+          text: { en: "Visiting the Blue Caves and exploring scenic coastal spots is essential.", el: "Η επίσκεψη στις Γαλάζιες Σπηλιές και τις μαγευτικές ακτές είναι απαραίτητη εμπειρία." }
+        },
+        {
+          title: { en: "Explore scenic beaches and viewpoints", el: "Εξερεύνησε σημεία θέας και παραλίες" },
+          text: { en: "Enjoy coastal drives and take in the dramatic landscapes from above.", el: "Απόλαυσε παραθαλάσσιες διαδρομές και θαύμασε τα εντυπωσιακά τοπία από ψηλά." }
+        },
+        {
+          title: { en: "Balance resort time with island exploration", el: "Συνδύασε ξεκούραση και εξερεύνηση" },
+          text: { en: "Combine boat experiences with independent exploring and relaxed evenings in your base area.", el: "Συνδύασε τις θαλάσσιες εκδρομές με την αυτόνομη εξερεύνηση και τα χαλαρά βράδια." }
+        }
+      ]
+    },
+    {
+      title: { en: "Best Time to Visit Zakynthos", el: "Η καλύτερη εποχή για τη Ζάκυνθο" },
+      layout: "list",
+      items: [
+        {
+          title: { en: "June and September", el: "Ιούνιος και Σεπτέμβριος" },
+          text: { en: "Especially attractive for travelers who want warm weather with a slightly more balanced pace.", el: "Ιδιαίτερα ελκυστικοί μήνες για όσους αναζητούν ζεστό καιρό με πιο ισορροπημένους ρυθμούς." }
+        },
+        {
+          title: { en: "July and August", el: "Ιούλιος και Αύγουστος" },
+          text: { en: "Peak summer months with the busiest beaches and strongest holiday energy.", el: "Η καρδιά του καλοκαιριού με τις πιο πολυσύχναστες παραλίες και την πιο έντονη ενέργεια." }
+        },
+        {
+          title: { en: "Late spring and early autumn", el: "Άνοιξη και φθινόπωρο" },
+          text: { en: "Work very well for visitors who care about sightseeing, coastal drives, and a more relaxed atmosphere.", el: "Λειτουργούν πολύ καλά για όσους ενδιαφέρονται για αξιοθέατα, όμορφες διαδρομές και ηρεμία." }
+        }
+      ]
+    },
+    {
+      title: { en: "FAQ About Zakynthos", el: "Συχνές Ερωτήσεις για τη Ζάκυνθο" },
+      layout: "faq",
+      items: [
+        {
+          title: { en: "Is Zakynthos worth visiting?", el: "Αξίζει να επισκεφθώ τη Ζάκυνθο;" },
+          text: { en: "Yes. Zakynthos is one of the most visually attractive Ionian islands and is especially rewarding for travelers who love beaches and coastal experiences.", el: "Ναι. Η Ζάκυνθος είναι ένα από τα πιο όμορφα νησιά του Ιονίου και ανταμείβει όσους αγαπούν τις παραλίες και την ακτογραμμή." }
+        },
+        {
+          title: { en: "What is Zakynthos best known for?", el: "Για τι φημίζεται η Ζάκυνθος;" },
+          text: { en: "It is best known for Navagio Beach, the Blue Caves, turquoise waters, and its dramatic coastal scenery.", el: "Είναι γνωστή για το Ναυάγιο, τις Γαλάζιες Σπηλιές, τα γαλαζοπράσινα νερά και τα εντυπωσιακά της τοπία." }
+        },
+        {
+          title: { en: "Is Zakynthos good for families?", el: "Είναι καλή για οικογένειες;" },
+          text: { en: "Yes. Some parts of the island, such as Tsilivi and quieter beach areas, can work very well for families.", el: "Ναι. Ορισμένες περιοχές, όπως το Τσιλιβί και οι πιο ήσυχες παραλίες, είναι ιδανικές για οικογένειες." }
+        },
+        {
+          title: { en: "Is Zakynthos only for nightlife?", el: "Είναι μόνο για διασκέδαση;" },
+          text: { en: "No. While some areas are lively, the island overall offers much more than nightlife, including scenic beaches, relaxed stays, and boat trips.", el: "Όχι. Ενώ κάποιες περιοχές είναι ζωντανές, το νησί συνολικά προσφέρει γραφικές παραλίες, χαλάρωση και όμορφες εκδρομές." }
+        },
+        {
+          title: { en: "How many days do you need in Zakynthos?", el: "Πόσες μέρες χρειάζονται στη Ζάκυνθο;" },
+          text: { en: "A few days are enough to enjoy the highlights, but the island is more rewarding when you have time to combine beach days and slower exploration.", el: "Λίγες μέρες αρκούν για τα βασικά, αλλά ιδανικά χρειάζεσαι περισσότερο χρόνο για να συνδυάσεις παραλίες και πιο αργή εξερεύνηση." }
+        },
+        {
+          title: { en: "Do you need a car in Zakynthos?", el: "Χρειάζομαι αυτοκίνητο;" },
+          text: { en: "It can be very useful, especially if you want to explore different beaches, viewpoints, and regions of the island at your own pace.", el: "Είναι πολύ χρήσιμο, ειδικά αν θέλεις να εξερευνήσεις διαφορετικές παραλίες και περιοχές με τον δικό σου ρυθμό." }
+        }
+      ]
+    }
+  ],
+
+  chania: [
+    {
+      layout: "list",
+      title: { en: "Why Visit Chania", el: "Γιατί να πας στα Χανιά" },
+      text: {
+        en: "Chania is a strong choice for travelers who want a beautiful and walkable old town, one of the most photogenic harbor settings in Crete, excellent food and dining atmosphere, and access to famous beaches and scenic drives. It is a destination that works both as a base and as a standalone trip.\n\nIt is one of the few places in Crete that feels equally good for couples, first-time visitors, road-trippers, and travelers who want both town life and beach access.",
+        el: "Τα Χανιά είναι μια εξαιρετική επιλογή για όσους αναζητούν μια πανέμορφη παλιά πόλη για περπάτημα, ένα από τα πιο φωτογενή λιμάνια της Κρήτης, εξαιρετικό φαγητό, και πρόσβαση σε διάσημες παραλίες και γραφικές διαδρομές. Είναι ένας προορισμός που λειτουργεί άψογα τόσο ως βάση όσο και ως αυτόνομο ταξίδι.\n\nΑποτελεί ένα από τα λίγα μέρη στην Κρήτη που ταιριάζει εξίσου σε ζευγάρια, ταξιδιώτες που έρχονται πρώτη φορά, λάτρεις των road trips και σε όσους θέλουν συνδυασμό πόλης και παραλίας."
+      }
+    },
+    {
+      layout: "grid",
+      title: { en: "Best Areas and Highlights in Chania", el: "Οι Καλύτερες Περιοχές & Αξιοθέατα" },
+      text: {
+        en: "Where to base your stay or focus your time in and around the city.",
+        el: "Πού να μείνετε ή να αφιερώσετε τον χρόνο σας μέσα και γύρω από την πόλη."
+      },
+      items: [
+        {
+          title: { en: "Old Town", el: "Παλιά Πόλη" },
+          text: {
+            en: "The old town is the heart of Chania's appeal. It is where you will find narrow lanes, historic architecture, small squares, and much of the destination's classic atmosphere. It is ideal for travelers who want to stay close to the most charming side of the city.",
+            el: "Η παλιά πόλη είναι η καρδιά της γοητείας των Χανίων. Εκεί θα βρείτε στενά δρομάκια, ιστορική αρχιτεκτονική, μικρές πλατείες και μεγάλο μέρος της κλασικής ατμόσφαιρας. Ιδανικό για όσους θέλουν να μείνουν κοντά στην πιο ρομαντική πλευρά της πόλης."
+          }
+        },
+        {
+          title: { en: "Venetian Harbor", el: "Ενετικό Λιμάνι" },
+          text: {
+            en: "This is the visual centerpiece of Chania and one of the most recognizable waterfront settings in Crete. It is especially enjoyable in the evening, when the area becomes one of the city's strongest dining and walking zones.",
+            el: "Το οπτικό επίκεντρο των Χανίων και ένα από τα πιο αναγνωρίσιμα παραθαλάσσια σημεία της Κρήτης. Είναι ιδιαίτερα απολαυστικό το βράδυ, όταν η περιοχή μετατρέπεται σε κέντρο για φαγητό και περίπατο."
+          }
+        },
+        {
+          title: { en: "Nea Chora", el: "Νέα Χώρα" },
+          text: {
+            en: "A more relaxed seaside area close to the center, useful for travelers who want easier beach access while still staying near the city.",
+            el: "Μια πιο χαλαρή παραθαλάσσια περιοχή κοντά στο κέντρο, χρήσιμη για ταξιδιώτες που θέλουν εύκολη πρόσβαση σε παραλία χωρίς να απομακρυνθούν από την πόλη."
+          }
+        },
+        {
+          title: { en: "The wider Chania region", el: "Η ευρύτερη περιοχή" },
+          text: {
+            en: "Part of Chania's value comes from what surrounds it: western Crete road trips, mountain villages, famous beaches, and some of the island's most rewarding day-trip landscapes.",
+            el: "Μέρος της αξίας των Χανίων προέρχεται από το τι τα περιβάλλει: road trips στη δυτική Κρήτη, ορεινά χωριά, διάσημες παραλίες και εκπληκτικά τοπία για ημερήσιες εκδρομές."
+          }
+        }
+      ]
+    },
+    {
+      layout: "list",
+      title: { en: "Beaches and Attractions", el: "Παραλίες & Αξιοθέατα" },
+      text: {
+        en: "Chania is not only about the town itself. It is also a gateway to some of Crete's best-known natural highlights.\n\n**Venetian Harbor and lighthouse**\nThe harbor is the city's most iconic attraction and one of the main reasons travelers choose Chania in the first place.\n\n**Old Town streets and historic corners**\nWalking through the old town is one of the most enjoyable parts of a stay here. The city rewards slow exploring more than rushed sightseeing.\n\n**Nea Chora beach area**\nA practical and pleasant beach option close to the city, especially useful if you want sea access without planning a full excursion.\n\n**Day trip access to western Crete highlights**\nChania works as a base for some of Crete's most famous beach and nature experiences, which is why so many visitors choose to stay here longer than expected.\n\n**Markets, alleys, and local neighborhoods**\nBeyond the postcard side, Chania also offers a more local urban rhythm that gives the destination more substance.",
+        el: "Τα Χανιά δεν είναι μόνο η ίδια η πόλη. Αποτελούν επίσης την πύλη για ορισμένα από τα πιο γνωστά φυσικά αξιοθέατα της Κρήτης.\n\n**Ενετικό Λιμάνι και φάρος**\nΤο λιμάνι είναι το πιο εμβληματικό αξιοθέατο της πόλης και ένας από τους κύριους λόγους που οι ταξιδιώτες επιλέγουν τα Χανιά.\n\n**Δρομάκια και ιστορικές γωνιές στην Παλιά Πόλη**\nΤο περπάτημα στην παλιά πόλη είναι ένα από τα πιο ευχάριστα κομμάτια της διαμονής εδώ. Η πόλη ανταμείβει την αργή εξερεύνηση πολύ περισσότερο από την επιφανειακή περιήγηση.\n\n**Περιοχή της Νέας Χώρας**\nΜια πρακτική και ευχάριστη επιλογή παραλίας κοντά στην πόλη, ιδανική αν θέλετε θάλασσα χωρίς να οργανώσετε ολόκληρη εκδρομή.\n\n**Εξορμήσεις στα αξιοθέατα της δυτικής Κρήτης**\nΤα Χανιά λειτουργούν ως βάση για τις πιο διάσημες εμπειρίες παραλίας και φύσης στην Κρήτη, γι' αυτό πολλοί μένουν εδώ περισσότερο από όσο υπολόγιζαν.\n\n**Αγορές, σοκάκια και τοπικές γειτονιές**\nΠέρα από τις εικόνες για καρτ-ποστάλ, τα Χανιά διαθέτουν κι έναν αυθεντικό αστικό ρυθμό που προσδίδει βάθος στον προορισμό."
+      }
+    },
+    {
+      layout: "list",
+      title: { en: "Food and Local Flavors", el: "Φαγητό & Τοπικές Γεύσεις" },
+      text: {
+        en: "Chania is one of the strongest food destinations in Crete. The city and region offer a combination of traditional Cretan taverns, harbor-side seafood meals, local ingredients and village-style flavors, modern dining in historic settings, and relaxed evenings built around shared dishes and wine.\n\nFood here is not just an extra. It is one of the main reasons the destination feels rich and memorable. Chania works well for travelers who want both traditional and slightly more polished dining experiences, especially in the old town and waterfront areas. At the same time, the broader region adds more local depth through village flavors, Cretan products, and countryside food culture.\n\n[Explore our Crete food guides for more inspiration](/collections/greece-food-and-drink).",
+        el: "Τα Χανιά είναι ένας από τους πιο δυνατούς γαστρονομικούς προορισμούς στην Κρήτη. Η πόλη και η περιοχή προσφέρουν συνδυασμό παραδοσιακών κρητικών ταβερνών, θαλασσινών στο λιμάνι, τοπικών υλικών και γεύσεων χωριού, μοντέρνας εστίασης σε ιστορικό περιβάλλον, και χαλαρών βραδιών με μοιρασιάτικα πιάτα και κρασί.\n\nΤο φαγητό εδώ δεν είναι απλώς ένα έξτρα. Είναι ένας από τους βασικούς λόγους που ο προορισμός μένει αξέχαστος. Τα Χανιά είναι ιδανικά για όσους αναζητούν τόσο παραδοσιακές όσο και ελαφρώς πιο προσεγμένες εμπειρίες φαγητού, ειδικά στην παλιά πόλη και την προκυμαία. Παράλληλα, η ευρύτερη περιοχή προσθέτει βάθος μέσα από γεύσεις χωριού και την τοπική κουλτούρα της υπαίθρου.\n\n[Ανακαλύψτε τοπικές γεύσεις στους οδηγούς μας](/collections/greece-food-and-drink)."
+      }
+    },
+    {
+      layout: "numbered",
+      title: { en: "Where to Stay in Chania", el: "Πού να Μείνετε στα Χανιά" },
+      text: {
+        en: "Where you stay in Chania depends on the kind of trip you want. [Explore our Chania hotel recommendations](/hotels?destination=chania).",
+        el: "Η επιλογή περιοχής εξαρτάται από το είδος του ταξιδιού που επιθυμείτε. [Ανακαλύψτε τις προτάσεις μας για διαμονή](/hotels?destination=chania)."
+      },
+      items: [
+        {
+          title: { en: "Stay in the Old Town if", el: "Μείνετε στην Παλιά Πόλη αν" },
+          text: {
+            en: "You want character, atmosphere, and walkable charm. You enjoy being close to restaurants and evening life. The historic setting matters to your trip.",
+            el: "Θέλετε χαρακτήρα, ατμόσφαιρα και γραφικότητα για περπάτημα. Απολαμβάνετε να είστε κοντά σε εστιατόρια και νυχτερινή ζωή. Το ιστορικό σκηνικό είναι σημαντικό για εσάς."
+          }
+        },
+        {
+          title: { en: "Stay near the Venetian Harbor if", el: "Μείνετε κοντά στο Ενετικό Λιμάνι αν" },
+          text: {
+            en: "You want one of the most scenic and central bases. You are happy to stay in one of the liveliest parts of the city.",
+            el: "Θέλετε μία από τις πιο εντυπωσιακές και κεντρικές βάσεις. Προτιμάτε να βρίσκεστε στο πιο ζωντανό κομμάτι της πόλης."
+          }
+        },
+        {
+          title: { en: "Stay in Nea Chora if", el: "Μείνετε στη Νέα Χώρα αν" },
+          text: {
+            en: "You want a slightly calmer base with sea access. You still want to be close to the center without staying right in the busiest old town area.",
+            el: "Αναζητάτε μια λίγο πιο ήρεμη βάση με πρόσβαση σε θάλασσα. Θέλετε να είστε κοντά στο κέντρο αποφεύγοντας την πολυκοσμία της παλιάς πόλης."
+          }
+        },
+        {
+          title: { en: "Stay outside the city if", el: "Μείνετε εκτός πόλης αν" },
+          text: {
+            en: "Your trip is more road-trip focused. You want quieter surroundings and easier regional beach access.",
+            el: "Το ταξίδι σας εστιάζει περισσότερο σε road trips. Επιθυμείτε πιο ήσυχο περιβάλλον και ευκολότερη πρόσβαση στις παραλίες της περιοχής."
+          }
+        }
+      ]
+    },
+    {
+      layout: "list",
+      title: { en: "Things to Do in Chania", el: "Τι να Κάνετε στα Χανιά" },
+      text: {
+        en: "Chania works best when you combine the city itself with the wider region around it. Some of the best ways to experience the destination include walking through the old town and harbor, enjoying long meals and evening strolls, using Chania as a base for beach days and scenic drives, exploring western Crete more deeply, and balancing town atmosphere with day trips and coastal experiences.\n\nIt is one of those destinations that does not need aggressive sightseeing to feel rewarding. A well-paced trip in Chania can include architecture, food, sea views, nearby beaches, and excursions — all without feeling overloaded.\n\n[Explore our Chania tours and experiences](/tours/all).",
+        el: "Τα Χανιά είναι στα καλύτερά τους όταν συνδυάζετε την πόλη με την ευρύτερη περιοχή. Οι καλύτεροι τρόποι για να ζήσετε τον προορισμό περιλαμβάνουν βόλτες στην παλιά πόλη και το λιμάνι, μεγάλα γεύματα και απογευματινούς περιπάτους, χρήση της πόλης ως βάσης για road trips και ημέρες στην παραλία, και εξισορρόπηση της αστικής ατμόσφαιρας με εξορμήσεις.\n\nΕίναι ένας προορισμός που δεν απαιτεί εξαντλητικό sightseeing για να σας γεμίσει. Ένα σωστά ρυθμισμένο ταξίδι εδώ μπορεί να περιλαμβάνει αρχιτεκτονική, φαγητό, θάλασσα, κοντινές παραλίες και εκδρομές - όλα χωρίς πίεση.\n\n[Δείτε εμπειρίες και tours στα Χανιά](/tours/all)."
+      }
+    },
+    {
+      layout: "list",
+      title: { en: "Best Time to Visit", el: "Η Καλύτερη Εποχή για να Πάτε" },
+      text: {
+        en: "Chania is rewarding across much of the travel season, especially from spring to early autumn.\n\nMay, June, and September are excellent for travelers who want warmth, easier walking conditions, and a more balanced atmosphere. July and August are the liveliest and busiest summer months. Shoulder season can be especially attractive if your trip is focused on the city, food, and regional exploring rather than only peak beach time.\n\nBecause Chania combines urban strolling with day-trip potential, it works well in a wider seasonal range than some purely beach-driven destinations.",
+        el: "Τα Χανιά αξίζουν στο μεγαλύτερο μέρος της σεζόν, ειδικά από την άνοιξη μέχρι τις αρχές του φθινοπώρου.\n\nΟ Μάιος, ο Ιούνιος και ο Σεπτέμβριος είναι εξαιρετικοί μήνες για όσους αναζητούν ζέστη, ευχάριστο περπάτημα και πιο ισορροπημένη ατμόσφαιρα. Ο Ιούλιος και ο Αύγουστος είναι οι πιο έντονοι και πολυσύχναστοι μήνες του καλοκαιριού. Οι ενδιάμεσες εποχές είναι ιδανικές αν το ταξίδι σας εστιάζει στην πόλη, τη γαστρονομία και την εξερεύνηση της περιοχής αντί για τις ολοήμερες παραλίες.\n\nΚαθώς συνδυάζουν αστικούς περιπάτους με δυνατότητες για ημερήσιες, τα Χανιά λειτουργούν εξαιρετικά σε ευρύτερο φάσμα της σεζόν σε σύγκριση με νησιά που βασίζονται μόνο στη θάλασσα."
+      }
+    },
+    {
+      layout: "faq",
+      title: { en: "FAQ About Chania", el: "Συχνές Ερωτήσεις για τα Χανιά" },
+      text: {
+        en: "Common questions for planning your trip.",
+        el: "Συχνές ερωτήσεις για να οργανώσετε το ταξίδι σας."
+      },
+      items: [
+        {
+          title: { en: "Is Chania worth visiting?", el: "Αξίζει να πάω στα Χανιά;" },
+          text: {
+            en: "Yes. Chania is one of the most rewarding destinations in Crete for travelers who want beauty, food, atmosphere, and a strong base for wider exploration.",
+            el: "Ναι. Τα Χανιά είναι από τους πιο ανταποδοτικούς προορισμούς στην Κρήτη για όσους αναζητούν ομορφιά, φαγητό, ατμόσφαιρα και μια εξαιρετική βάση για ευρύτερη εξερεύνηση."
+          }
+        },
+        {
+          title: { en: "What is Chania best known for?", el: "Για τι φημίζονται τα Χανιά;" },
+          text: {
+            en: "It is best known for its Venetian harbor, old town, charming streets, and access to some of western Crete's most famous landscapes.",
+            el: "Φημίζονται κυρίως για το ενετικό τους λιμάνι, την παλιά πόλη, τα γραφικά σοκάκια, και την πρόσβαση σε ορισμένα από τα διασημότερα τοπία της δυτικής Κρήτης."
+          }
+        },
+        {
+          title: { en: "Is Chania better than Heraklion?", el: "Είναι τα Χανιά καλύτερα από το Ηράκλειο;" },
+          text: {
+            en: "They serve different travel styles, but many visitors prefer Chania for its visual charm, old town atmosphere, and stronger leisure appeal.",
+            el: "Εξυπηρετούν διαφορετικά στυλ ταξιδιού, ωστόσο πολλοί επισκέπτες προτιμούν τα Χανιά για την οπτική τους γοητεία, την ατμόσφαιρα της παλιάς πόλης και τον πιο χαλαρωτικό χαρακτήρα τους."
+          }
+        },
+        {
+          title: { en: "How many days should you spend in Chania?", el: "Πόσες μέρες χρειάζομαι στα Χανιά;" },
+          text: {
+            en: "Chania works well for a few days, but it becomes even more rewarding if you have enough time to combine the city with nearby beaches and regional day trips.",
+            el: "Τα Χανιά είναι υπέροχα για λίγες μέρες, αλλά γίνονται ακόμα πιο απολαυστικά αν έχετε χρόνο να συνδυάσετε την πόλη με κοντινές παραλίες και ημερήσιες εκδρομές."
+          }
+        },
+        {
+          title: { en: "Is Chania good for couples?", el: "Είναι τα Χανιά ιδανικά για ζευγάρια;" },
+          text: {
+            en: "Yes. It is one of the best places in Crete for couples, especially because of its harbor setting, walkable old town, and dining atmosphere.",
+            el: "Ναι. Είναι ένα από τα καλύτερα μέρη της Κρήτης για ζευγάρια, χάρη στο σκηνικό του λιμανιού, την παλιά πόλη που προσφέρεται για περίπατο και τη ρομαντική ατμόσφαιρα στα εστιατόρια."
+          }
+        },
+        {
+          title: { en: "Do you need a car in Chania?", el: "Χρειάζομαι αυτοκίνητο στα Χανιά;" },
+          text: {
+            en: "Not always for the city itself, but it is very useful if you want to explore the wider Chania region and western Crete more fully.",
+            el: "Όχι απαραίτητα μέσα στην πόλη, αλλά είναι εξαιρετικά χρήσιμο αν θέλετε να εξερευνήσετε πλήρως την ευρύτερη περιοχή των Χανίων και τη δυτική Κρήτη."
+          }
+        }
+      ]
+    }
+  ],
+
+  rhodes: [
+    {
+      layout: "list",
+      title: { en: "Why Visit Rhodes", el: "Γιατί να πας στη Ρόδο" },
+      text: {
+        en: "Rhodes is a strong choice for travelers who want one of the most impressive historic centers in Greece, a destination that combines culture and beach time, a large island with plenty of variety, resort convenience with room for day trips and exploration, and a Greek island that works for couples, families, and mixed travel styles.\n\nWhat makes Rhodes stand out is not only that it has many attractions, but that those attractions feel genuinely different from each other. The island can feel historic, coastal, lively, scenic, and relaxed depending on where you are.",
+        el: "Η Ρόδος είναι μια εξαιρετική επιλογή για ταξιδιώτες που αναζητούν ένα από τα πιο εντυπωσιακά ιστορικά κέντρα στην Ελλάδα, έναν προορισμό που συνδυάζει πολιτισμό και θάλασσα, ένα μεγάλο νησί με τεράστια ποικιλία, την άνεση ενός resort με περιθώριο για εκδρομές και εξερεύνηση, και ένα ελληνικό νησί που λειτουργεί άψογα για ζευγάρια, οικογένειες και μεικτά στυλ διακοπών.\n\nΑυτό που κάνει τη Ρόδο να ξεχωρίζει δεν είναι μόνο ότι διαθέτει πολλά αξιοθέατα, αλλά ότι αυτά τα αξιοθέατα είναι πραγματικά διαφορετικά μεταξύ τους. Το νησί μπορεί να μοιάζει ιστορικό, παραθαλάσσιο, ζωντανό, γραφικό ή χαλαρό, ανάλογα με το πού βρίσκεστε."
+      }
+    },
+    {
+      layout: "grid",
+      title: { en: "Best Areas and Highlights in Rhodes", el: "Οι Καλύτερες Περιοχές & Αξιοθέατα" },
+      text: {
+        en: "Where to base your stay or focus your time in and around the island.",
+        el: "Πού να μείνετε ή να αφιερώσετε τον χρόνο σας μέσα και γύρω από το νησί."
+      },
+      items: [
+        {
+          title: { en: "Rhodes Old Town", el: "Παλιά Πόλη της Ρόδου" },
+          text: {
+            en: "The Old Town is the island's historic heart and one of its most memorable features. Its walls, streets, architecture, and atmosphere give Rhodes a distinct identity that immediately separates it from many other Greek islands.",
+            el: "Η Παλιά Πόλη είναι η ιστορική καρδιά του νησιού και ένα από τα πιο αξέχαστα χαρακτηριστικά του. Τα τείχη, τα σοκάκια, η αρχιτεκτονική και η ατμόσφαιρά της δίνουν στη Ρόδο μια ξεχωριστή ταυτότητα που τη διαφοροποιεί αμέσως από πολλά άλλα ελληνικά νησιά."
+          }
+        },
+        {
+          title: { en: "Rhodes Town", el: "Πόλη της Ρόδου (Εκτός Τειχών)" },
+          text: {
+            en: "Outside the old medieval core, Rhodes Town offers a broader urban base with restaurants, services, coastal access, and a practical center for travelers who want convenience and activity.",
+            el: "Έξω από τον παλιό μεσαιωνικό πυρήνα, η πόλη της Ρόδου προσφέρει μια ευρύτερη αστική βάση με εστιατόρια, υπηρεσίες, πρόσβαση στη θάλασσα και ένα πρακτικό κέντρο για ταξιδιώτες που θέλουν άνεση και δραστηριότητα."
+          }
+        },
+        {
+          title: { en: "Lindos", el: "Λίνδος" },
+          text: {
+            en: "Lindos is one of the island's major highlights, known for its whitewashed appearance, dramatic setting, and famous acropolis. It gives Rhodes one of its strongest visual contrasts.",
+            el: "Η Λίνδος είναι ένα από τα σημαντικότερα αξιοθέατα του νησιού, γνωστή για την ολόλευκη όψη της, το δραματικό της σκηνικό και τη διάσημη ακρόπολη. Προσφέρει στη Ρόδο μία από τις πιο δυνατές οπτικές αντιθέσεις της."
+          }
+        },
+        {
+          title: { en: "The east coast", el: "Η ανατολική ακτή" },
+          text: {
+            en: "This side of the island is often associated with many of the best-known holiday areas, easier beach access, and a more resort-friendly atmosphere.",
+            el: "Αυτή η πλευρά του νησιού συνδέεται συχνά με πολλές από τις πιο γνωστές περιοχές διακοπών, την ευκολότερη πρόσβαση σε παραλίες και μια πιο φιλική προς τα resorts ατμόσφαιρα."
+          }
+        },
+        {
+          title: { en: "The wider island", el: "Η ευρύτερη περιοχή" },
+          text: {
+            en: "Rhodes is large enough that it should not be thought of only as a town-and-beach destination. Regional drives, smaller villages, and different coastal areas all add to the experience.",
+            el: "Η Ρόδος είναι αρκετά μεγάλη ώστε να μην θεωρείται απλώς ένας προορισμός 'πόλη και παραλία'. Οι διαδρομές στην ενδοχώρα, τα μικρότερα χωριά και οι διαφορετικές παράκτιες περιοχές προσθέτουν πολλά στην εμπειρία."
+          }
+        }
+      ]
+    },
+    {
+      layout: "list",
+      title: { en: "Beaches and Attractions in Rhodes", el: "Παραλίες & Αξιοθέατα" },
+      text: {
+        en: "Rhodes has more range than many travelers expect, and that applies both to history and coastline.\n\n**Medieval Old Town**\nThis is one of the island's defining attractions and one of the strongest reasons to visit Rhodes in the first place. It is best explored slowly, with time to walk, stop, and absorb the atmosphere rather than rushing through it.\n\n**Lindos Acropolis**\nOne of the most famous historic sights on the island, combining cultural value with a visually dramatic setting.\n\n**Beach areas along the east coast**\nMany visitors choose Rhodes for beach holidays, and the island has enough developed and relaxed coastal areas to support different travel styles.\n\n**Harbor and town areas**\nRhodes Town offers more than just access and logistics. It also gives the island an urban holiday side with dining, movement, and useful base value.\n\n**Regional exploration**\nBecause the island is large, part of its appeal comes from seeing more than one side of it rather than staying fixed in a single place the entire time.",
+        el: "Η Ρόδος έχει μεγαλύτερη ποικιλία από ό,τι περιμένουν πολλοί ταξιδιώτες, και αυτό ισχύει τόσο για την ιστορία όσο και για την ακτογραμμή.\n\n**Μεσαιωνική Παλιά Πόλη**\nΑυτό είναι ένα από τα καθοριστικά αξιοθέατα του νησιού και ένας από τους βασικότερους λόγους για να επισκεφθείτε τη Ρόδο εξ αρχής. Εξερευνάται καλύτερα με αργούς ρυθμούς, με χρόνο για περπάτημα, στάσεις και απορρόφηση της ατμόσφαιρας, αντί για βιαστικό πέρασμα.\n\n**Ακρόπολη Λίνδου**\nΈνα από τα πιο διάσημα ιστορικά αξιοθέατα του νησιού, που συνδυάζει την πολιτιστική αξία με ένα οπτικά εντυπωσιακό σκηνικό.\n\n**Παραλίες κατά μήκος της ανατολικής ακτής**\nΠολλοί επισκέπτες επιλέγουν τη Ρόδο για παραθαλάσσιες διακοπές, και το νησί διαθέτει αρκετές οργανωμένες αλλά και χαλαρές παράκτιες περιοχές για να υποστηρίξει διαφορετικά στυλ ταξιδιού.\n\n**Περιοχές γύρω από το λιμάνι και την πόλη**\nΗ πόλη της Ρόδου προσφέρει πολλά περισσότερα από απλή πρόσβαση και υποδομές. Προσδίδει επίσης στο νησί μια αστική πλευρά διακοπών, με εστιατόρια, ζωντάνια και μεγάλη πρακτική αξία ως βάση.\n\n**Εξερεύνηση στην ενδοχώρα**\nΛόγω του μεγέθους του νησιού, μέρος της γοητείας του προέρχεται από το να δείτε περισσότερες από μία πλευρές του, αντί να μείνετε κολλημένοι σε ένα μόνο μέρος σε όλη τη διάρκεια του ταξιδιού."
+      }
+    },
+    {
+      layout: "list",
+      title: { en: "Food and Local Flavors", el: "Φαγητό & Τοπικές Γεύσεις" },
+      text: {
+        en: "Rhodes offers one of the more varied food experiences among Greek islands, partly because it combines a major town, holiday zones, historic settings, and local traditions. Visitors can enjoy traditional Greek and island taverns, meals in historic surroundings, seaside dining, easy summer resort dining, and local flavors in more regional settings.\n\nThe island works well for travelers who want both comfort and character. Some meals are about location and atmosphere, especially in or around the old town. Others are simpler, more local, and more relaxed. That balance helps Rhodes feel broad rather than one-dimensional.\n\n[Explore our Greece food & drink guides for more local ideas](/collections/greece-food-and-drink).",
+        el: "Η Ρόδος προσφέρει μία από τις πιο ποικιλόμορφες γαστρονομικές εμπειρίες στα ελληνικά νησιά, εν μέρει επειδή συνδυάζει μια μεγάλη πόλη, ζώνες διακοπών, ιστορικά σκηνικά και τοπικές παραδόσεις. Οι επισκέπτες μπορούν να απολαύσουν παραδοσιακές ελληνικές και νησιώτικες ταβέρνες, γεύματα σε ιστορικό περιβάλλον, δείπνο δίπλα στη θάλασσα, εύκολο φαγητό σε καλοκαιρινά resorts και τοπικές γεύσεις σε πιο ορεινές και αγροτικές περιοχές.\n\nΤο νησί λειτουργεί τέλεια για ταξιδιώτες που θέλουν τόσο άνεση όσο και χαρακτήρα. Ορισμένα γεύματα έχουν να κάνουν με την τοποθεσία και την ατμόσφαιρα, ειδικά μέσα ή γύρω από την παλιά πόλη. Άλλα είναι πιο απλά, πιο τοπικά και πιο χαλαρά. Αυτή η ισορροπία βοηθά τη Ρόδο να έχει εύρος αντί να είναι μονοδιάστατη.\n\n[Εξερευνήστε τους οδηγούς φαγητού της Ελλάδας για περισσότερες ιδέες](/collections/greece-food-and-drink)."
+      }
+    },
+    {
+      layout: "numbered",
+      title: { en: "Where to Stay in Rhodes", el: "Πού να Μείνετε στη Ρόδο" },
+      text: {
+        en: "Where you stay in Rhodes depends heavily on what kind of trip you want. [Explore our Rhodes hotel recommendations](/hotels?destination=rhodes).",
+        el: "Η επιλογή της περιοχής που θα μείνετε στη Ρόδο εξαρτάται σε μεγάλο βαθμό από το είδος του ταξιδιού που θέλετε. [Ανακαλύψτε τις προτάσεις μας για διαμονή στη Ρόδο](/hotels?destination=rhodes)."
+      },
+      items: [
+        {
+          title: { en: "Stay in Rhodes Town if", el: "Μείνετε στην πόλη της Ρόδου αν" },
+          text: {
+            en: "You want convenience, restaurants, and easy access to the Old Town. You prefer a practical and active base. You want to combine history with town energy.",
+            el: "Θέλετε ανέσεις, εστιατόρια και εύκολη πρόσβαση στην Παλιά Πόλη. Προτιμάτε μια πρακτική και ενεργή βάση. Θέλετε να συνδυάσετε την ιστορία με την ενέργεια της πόλης."
+          }
+        },
+        {
+          title: { en: "Stay near the Old Town if", el: "Μείνετε κοντά στην Παλιά Πόλη αν" },
+          text: {
+            en: "Atmosphere and historic setting matter a lot to your trip. You want a more memorable and character-driven stay.",
+            el: "Η ατμόσφαιρα και το ιστορικό σκηνικό είναι πολύ σημαντικά για το ταξίδι σας. Θέλετε μια πιο αξέχαστη διαμονή με έντονο χαρακτήρα."
+          }
+        },
+        {
+          title: { en: "Stay near Lindos if", el: "Μείνετε κοντά στη Λίνδο αν" },
+          text: {
+            en: "You want one of the island's most scenic and distinctive areas. Your trip is more about beauty, coastal atmosphere, and a slightly more special setting.",
+            el: "Αναζητάτε μία από τις πιο γραφικές και ξεχωριστές περιοχές του νησιού. Το ταξίδι σας αφορά περισσότερο την ομορφιά, την παραθαλάσσια ατμόσφαιρα και ένα ελαφρώς πιο ιδιαίρετο σκηνικό."
+          }
+        },
+        {
+          title: { en: "Stay in a beach or resort area if", el: "Μείνετε σε παραλία ή περιοχή resort αν" },
+          text: {
+            en: "Your trip is focused more on sea, relaxation, and holiday ease. You want a simpler beach-first base.",
+            el: "Το ταξίδι σας επικεντρώνεται περισσότερο στη θάλασσα, τη χαλάρωση και την ευκολία των διακοπών. Θέλετε μια πιο απλή βάση, εστιασμένη στην παραλία."
+          }
+        }
+      ]
+    },
+    {
+      layout: "list",
+      title: { en: "Things to Do in Rhodes", el: "Τι να Κάνετε στη Ρόδο" },
+      text: {
+        en: "Rhodes works best when you give room to both its historic side and its holiday side. Some of the best ways to experience the island include exploring the Old Town on foot, visiting Lindos and its acropolis, balancing beach time with cultural stops, using the island's size to explore different regions, and mixing urban atmosphere, scenic coast, and slower local moments.\n\nThe island rewards travelers who do more than stay inside one resort bubble. Even a few well-chosen outings can completely change how rich the trip feels.\n\n[Explore our Rhodes tours and experiences](/tours/all).",
+        el: "Η Ρόδος είναι στα καλύτερά της όταν δίνετε χώρο τόσο στην ιστορική της πλευρά όσο και σε αυτή των διακοπών. Οι καλύτεροι τρόποι για να ζήσετε το νησί περιλαμβάνουν την εξερεύνηση της Παλιάς Πόλης με τα πόδια, την επίσκεψη στη Λίνδο και την ακρόπολή της, την εξισορρόπηση του χρόνου στην παραλία με πολιτιστικές στάσεις, τη χρήση του μεγέθους του νησιού για να εξερευνήσετε διαφορετικές περιοχές και τη μίξη της αστικής ατμόσφαιρας, των γραφικών ακτών και των πιο ήρεμων τοπικών στιγμών.\n\nΤο νησί ανταμείβει τους ταξιδιώτες που κάνουν κάτι περισσότερο από το να μένουν κλεισμένοι στη φούσκα ενός resort. Ακόμα και λίγες, καλά επιλεγμένες εξορμήσεις μπορούν να αλλάξουν εντελώς το πόσο πλούσιο νιώθετε το ταξίδι σας.\n\n[Δείτε εμπειρίες και tours στη Ρόδο](/tours/all)."
+      }
+    },
+    {
+      layout: "list",
+      title: { en: "Best Time to Visit", el: "Η Καλύτερη Εποχή για να Πάτε" },
+      text: {
+        en: "Rhodes is popular across a long warm season and works well for travelers looking for sun, sightseeing, and beach time.\n\nMay, June, and September are very good months for travelers who want a more balanced pace. July and August are the peak summer months, with the busiest resort and beach atmosphere. Shoulder season can be especially attractive because Rhodes has enough historic and urban interest to stay rewarding even when the trip is not purely beach-focused.\n\nIts mix of culture and coastline makes Rhodes useful across a broad travel window.",
+        el: "Η Ρόδος είναι δημοφιλής σε όλη τη διάρκεια της μακράς θερμής περιόδου και λειτουργεί άψογα για ταξιδιώτες που αναζητούν ήλιο, αξιοθέατα και χρόνο στην παραλία.\n\nΟ Μάιος, ο Ιούνιος και ο Σεπτέμβριος είναι πολύ καλοί μήνες για όσους θέλουν έναν πιο ισορροπημένο ρυθμό. Ο Ιούλιος και ο Αύγουστος είναι οι μήνες αιχμής του καλοκαιριού, με την πιο πολυσύχναστη ατμόσφαιρα σε resorts και παραλίες. Η ενδιάμεση εποχή μπορεί να είναι ιδιαίτερα ελκυστική επειδή η Ρόδος έχει αρκετό ιστορικό και αστικό ενδιαφέρον για να παραμένει συναρπαστική ακόμα κι όταν το ταξίδι δεν είναι αμιγώς εστιασμένο στην παραλία.\n\nΟ συνδυασμός πολιτισμού και ακτογραμμής κάνει τη Ρόδο ιδανική σε ένα πολύ ευρύ χρονικό παράθυρο ταξιδιού."
+      }
+    },
+    {
+      layout: "faq",
+      title: { en: "FAQ About Rhodes", el: "Συχνές Ερωτήσεις για τη Ρόδο" },
+      text: {
+        en: "Common questions for planning your trip.",
+        el: "Συχνές ερωτήσεις για να οργανώσετε το ταξίδι σας."
+      },
+      items: [
+        {
+          title: { en: "Is Rhodes worth visiting?", el: "Αξίζει να πάω στη Ρόδο;" },
+          text: {
+            en: "Yes. Rhodes is one of the most complete Greek islands for travelers who want both history and beach holiday appeal.",
+            el: "Ναι. Η Ρόδος είναι ένα από τα πιο ολοκληρωμένα ελληνικά νησιά για ταξιδιώτες που θέλουν να συνδυάσουν την ιστορία με τη γοητεία των παραθαλάσσιων διακοπών."
+          }
+        },
+        {
+          title: { en: "What is Rhodes best known for?", el: "Για τι φημίζεται η Ρόδος;" },
+          text: {
+            en: "It is best known for its Medieval Old Town, Lindos, beaches, and its combination of history with large-island holiday infrastructure.",
+            el: "Φημίζεται κυρίως για τη Μεσαιωνική Παλιά Πόλη, τη Λίνδο, τις παραλίες της, και τον συνδυασμό της ιστορίας με την τουριστική υποδομή ενός μεγάλου νησιού."
+          }
+        },
+        {
+          title: { en: "Is Rhodes good for families?", el: "Είναι η Ρόδος καλή για οικογένειες;" },
+          text: {
+            en: "Yes. Rhodes can work very well for families because it offers beach options, practical bases, and enough variety for different ages and trip styles.",
+            el: "Ναι. Η Ρόδος είναι ιδανική για οικογένειες επειδή προσφέρει επιλογές παραλίας, πρακτικές βάσεις και αρκετή ποικιλία για διαφορετικές ηλικίες και στυλ ταξιδιού."
+          }
+        },
+        {
+          title: { en: "How many days should you spend in Rhodes?", el: "Πόσες μέρες χρειάζομαι στη Ρόδο;" },
+          text: {
+            en: "Rhodes is best when you have enough time to experience more than one side of the island, including historic areas, beaches, and regional exploration.",
+            el: "Η Ρόδος είναι στα καλύτερά της όταν έχετε αρκετό χρόνο για να ζήσετε περισσότερες από μία πλευρές του νησιού, όπως τις ιστορικές περιοχές, τις παραλίες και την ενδοχώρα."
+          }
+        },
+        {
+          title: { en: "Is Rhodes only a resort destination?", el: "Είναι η Ρόδος μόνο προορισμός για resorts;" },
+          text: {
+            en: "No. While it has strong resort zones, Rhodes is much more than that. Its historic identity and island scale give it more depth than a typical beach-only destination.",
+            el: "Όχι. Παρόλο που έχει ισχυρές ζώνες με resorts, η Ρόδος είναι πολλά περισσότερα. Η ιστορική της ταυτότητα και το μέγεθός της της δίνουν μεγαλύτερο βάθος από έναν τυπικό προορισμό μόνο για θάλασσα."
+          }
+        },
+        {
+          title: { en: "Do you need a car in Rhodes?", el: "Χρειάζομαι αυτοκίνητο στη Ρόδο;" },
+          text: {
+            en: "Not always for town-based stays, but it is very useful if you want to explore more of the island beyond your base.",
+            el: "Όχι απαραίτητα για διαμονή μέσα στην πόλη, αλλά είναι εξαιρετικά χρήσιμο αν θέλετε να εξερευνήσετε περισσότερο το νησί έξω από τη βάση σας."
+          }
+        }
+      ]
+    }
+  ],
+
+  monemvasia: [
+    {
+      layout: "list",
+      title: { en: "Why Visit Monemvasia", el: "Γιατί να πας στη Μονεμβασιά" },
+      text: {
+        en: "Monemvasia is a strong choice for travelers who want a destination with real historic atmosphere, a romantic setting for a slower trip, stone-built architecture and medieval character, sea views combined with old-world charm, and a memorable stop in the Peloponnese beyond the usual weekend escapes.\n\nUnlike broader beach destinations, Monemvasia is more about the experience of place. It rewards travelers who enjoy mood, walking, architecture, and strong visual identity.",
+        el: "Η Μονεμβασιά είναι μια εξαιρετική επιλογή για ταξιδιώτες που αναζητούν έναν προορισμό με πραγματική ιστορική ατμόσφαιρα, ένα ρομαντικό σκηνικό για πιο αργούς ρυθμούς, πετρόχτιστη αρχιτεκτονική και μεσαιωνικό χαρακτήρα, θέα στη θάλασσα σε συνδυασμό με την αίγλη του παρελθόντος, και μια αξέχαστη στάση στην Πελοπόννησο, πέρα από τις συνηθισμένες αποδράσεις του Σαββατοκύριακου.\n\nΣε αντίθεση με τους ευρύτερους παραθαλάσσιους προορισμούς, η Μονεμβασιά εστιάζει περισσότερο στην ίδια την εμπειρία του τόπου. Ανταμείβει τους ταξιδιώτες που απολαμβάνουν την ατμόσφαιρα, το περπάτημα, την αρχιτεκτονική και την ισχυρή οπτική ταυτότητα."
+      }
+    },
+    {
+      layout: "grid",
+      title: { en: "Best Areas and Highlights in Monemvasia", el: "Οι Καλύτερες Περιοχές & Αξιοθέατα" },
+      text: {
+        en: "Where to base your stay or focus your time in and around the rock.",
+        el: "Πού να μείνετε ή να αφιερώσετε τον χρόνο σας μέσα και γύρω από τον βράχο."
+      },
+      items: [
+        {
+          title: { en: "Lower Town", el: "Κάτω Πόλη" },
+          text: {
+            en: "The Lower Town is where most visitors spend their time. It is the heart of Monemvasia's atmosphere, with stone alleys, small squares, historic buildings, boutique stays, and a strong sense of enclosure and character.",
+            el: "Στην Κάτω Πόλη περνούν τον περισσότερο χρόνο τους οι επισκέπτες. Είναι η καρδιά της ατμόσφαιρας της Μονεμβασιάς, με πέτρινα σοκάκια, μικρές πλατείες, ιστορικά κτίρια, boutique καταλύματα και μια έντονη αίσθηση περίκλειστου χαρακτήρα."
+          }
+        },
+        {
+          title: { en: "Upper Town", el: "Άνω Πόλη" },
+          text: {
+            en: "The Upper Town adds a more dramatic and elevated dimension to the destination. It is less about daily strolling and more about views, history, and the feeling of the site's original fortified scale.",
+            el: "Η Άνω Πόλη προσθέτει μια πιο δραματική και υπερυψωμένη διάσταση στον προορισμό. Προσφέρεται λιγότερο για καθημερινό περίπατο και περισσότερο για τη θέα, την ιστορία και την αίσθηση της αρχικής οχυρωματικής κλίμακας."
+          }
+        },
+        {
+          title: { en: "The sea-facing edge of the rock", el: "Η πλευρά του βράχου προς τη θάλασσα" },
+          text: {
+            en: "Part of Monemvasia's charm comes from how closely the town and sea interact. Even simple walks here feel scenic and distinctive.",
+            el: "Μέρος της γοητείας της Μονεμβασιάς προέρχεται από το πόσο στενά αλληλεπιδρούν η πόλη και η θάλασσα. Ακόμα και οι απλοί περίπατοι εδώ είναι γραφικοί και ξεχωριστοί."
+          }
+        },
+        {
+          title: { en: "The mainland approach and surrounding area", el: "Η πρόσβαση από την ακτή και η γύρω περιοχή" },
+          text: {
+            en: "The view of the rock from outside Monemvasia is part of the experience too. It gives the destination a strong arrival moment that sets it apart from most other towns in Greece.",
+            el: "Η θέα του βράχου έξω από τη Μονεμβασιά είναι επίσης μέρος της εμπειρίας. Χαρίζει στον προορισμό μια δυνατή στιγμή άφιξης που τον ξεχωρίζει από τις περισσότερες πόλεις στην Ελλάδα."
+          }
+        }
+      ]
+    },
+    {
+      layout: "list",
+      title: { en: "Attractions and Experiences", el: "Αξιοθέατα & Εμπειρίες" },
+      text: {
+        en: "Monemvasia is more about atmosphere and setting than long sightseeing lists, but that is exactly what makes it rewarding.\n\n**The medieval old town**\nWalking through the old town is the essential experience here. The lanes, stone facades, and quiet corners are what give Monemvasia its identity.\n\n**Upper Town views**\nThe elevated perspective is one of the key highlights, especially for travelers who want a fuller sense of the rock, the fortification, and the surrounding sea.\n\n**Churches, walls, and architectural character**\nMuch of Monemvasia's appeal comes from the way history is embedded in the built environment, not only in isolated monuments.\n\n**Seaside walks and slow evenings**\nThis is one of the best destinations in Greece for travelers who enjoy ending the day with a walk, a view, and a long dinner rather than high-energy nightlife.\n\n**A memorable Peloponnese stop**\nWhether as a dedicated stay or part of a wider route, Monemvasia often becomes one of the most distinctive memories of a Peloponnese trip.",
+        el: "Η Μονεμβασιά αφορά περισσότερο την ατμόσφαιρα και το σκηνικό παρά τις μεγάλες λίστες αξιοθέατων, αλλά αυτό ακριβώς την κάνει να αξίζει.\n\n**Η μεσαιωνική παλιά πόλη**\nΤο περπάτημα στην παλιά πόλη είναι η απόλυτη εμπειρία εδώ. Τα σοκάκια, οι πέτρινες προσόψεις και οι ήσυχες γωνιές δίνουν στη Μονεμβασιά την ταυτότητά της.\n\n**Η θέα από την Άνω Πόλη**\nΗ πανοραμική οπτική γωνία είναι ένα από τα βασικά highlights, ειδικά για τους ταξιδιώτες που θέλουν να κατανοήσουν πλήρως τον βράχο, την οχύρωση και τη θάλασσα γύρω του.\n\n**Εκκλησίες, τείχη και αρχιτεκτονικός χαρακτήρας**\nΜεγάλο μέρος της γοητείας της Μονεμβασιάς προέρχεται από τον τρόπο που η ιστορία είναι ενσωματωμένη στο δομημένο περιβάλλον, και όχι μόνο σε μεμονωμένα μνημεία.\n\n**Παραθαλάσσιοι περίπατοι και ήσυχα βράδια**\nΕίναι από τους καλύτερους προορισμούς στην Ελλάδα για όσους απολαμβάνουν να κλείνουν τη μέρα τους με μια βόλτα, θέα και ένα μακρύ δείπνο αντί για έντονη νυχτερινή ζωή.\n\n**Μια αξέχαστη στάση στην Πελοπόννησο**\nΕίτε ως αυτόνομος προορισμός είτε ως μέρος μιας ευρύτερης διαδρομής, η Μονεμβασιά γίνεται συχνά μία από τις πιο ξεχωριστές αναμνήσεις ενός ταξιδιού στην Πελοπόννησο."
+      }
+    },
+    {
+      layout: "list",
+      title: { en: "Food and Local Flavors", el: "Φαγητό & Τοπικές Γεύσεις" },
+      text: {
+        en: "Food in Monemvasia is closely tied to atmosphere. It is the kind of destination where a meal often feels more memorable because of the setting around it: stone architecture, quiet alleys, sea air, and slower evenings.\n\nVisitors can expect traditional tavern-style meals, seafood and regional dishes, dinners in historic surroundings, relaxed wine-and-view evenings, and a more intimate dining feel than a fast-paced culinary scene.\n\nMonemvasia is not about endless restaurant variety. It is about a more focused and atmospheric food experience, where the destination itself becomes part of the meal.\n\n[Explore our Greece food & drink guides for more local ideas](/collections/greece-food-and-drink).",
+        el: "Το φαγητό στη Μονεμβασιά είναι στενά συνδεδεμένο με την ατμόσφαιρα. Είναι το είδος του προορισμού όπου ένα γεύμα συχνά μένει αξέχαστο χάρη στο σκηνικό γύρω του: πέτρινη αρχιτεκτονική, ήσυχα σοκάκια, θαλασσινός αέρας και ήρεμα βράδια.\n\nΟι επισκέπτες μπορούν να περιμένουν παραδοσιακά γεύματα σε στυλ ταβέρνας, θαλασσινά και τοπικά πιάτα, δείπνα σε ιστορικό περιβάλλον, χαλαρές βραδιές με κρασί και θέα, καθώς και μια πιο ζεστή και οικεία αίσθηση εστίασης σε σύγκριση με τα πολύβουα γαστρονομικά κέντρα.\n\nΗ Μονεμβασιά δεν προσφέρει ατελείωτη ποικιλία εστιατορίων. Προσφέρει μια πιο εστιασμένη και ατμοσφαιρική εμπειρία φαγητού, όπου ο ίδιος ο προορισμός γίνεται κομμάτι του γεύματος.\n\n[Ανακαλύψτε τοπικές γεύσεις στους οδηγούς μας](/collections/greece-food-and-drink)."
+      }
+    },
+    {
+      layout: "numbered",
+      title: { en: "Where to Stay in Monemvasia", el: "Πού να Μείνετε στη Μονεμβασιά" },
+      text: {
+        en: "Where you stay matters a lot in Monemvasia because the atmosphere is such a big part of the experience. [Explore our Monemvasia hotel recommendations](/hotels?destination=monemvasia).",
+        el: "Το πού θα μείνετε στη Μονεμβασιά παίζει μεγάλο ρόλο, καθώς η ατμόσφαιρα είναι βασικό κομμάτι της εμπειρίας. [Ανακαλύψτε τις προτάσεις μας για διαμονή](/hotels?destination=monemvasia)."
+      },
+      items: [
+        {
+          title: { en: "Stay inside the castle town if", el: "Μείνετε μέσα στην καστροπολιτεία αν" },
+          text: {
+            en: "You want the strongest sense of place. The romantic and historic atmosphere is central to your trip. You want to experience Monemvasia beyond a day visit.",
+            el: "Θέλετε την πιο δυνατή αίσθηση του τόπου. Η ρομαντική και ιστορική ατμόσφαιρα είναι το επίκεντρο του ταξιδιού σας. Θέλετε να ζήσετε τη Μονεμβασιά πέρα από μια απλή ημερήσια επίσκεψη."
+          }
+        },
+        {
+          title: { en: "Stay near the mainland side if", el: "Μείνετε στην απέναντι ακτή αν" },
+          text: {
+            en: "You want easier access or more practical logistics. You prefer a simpler base while still being very close to the old town.",
+            el: "Αναζητάτε ευκολότερη πρόσβαση και πιο πρακτικές μετακινήσεις. Προτιμάτε μια πιο απλή βάση, παραμένοντας παράλληλα πολύ κοντά στην παλιά πόλη."
+          }
+        },
+        {
+          title: { en: "Choose a view-focused stay if", el: "Επιλέξτε ένα κατάλυμα με θέα αν" },
+          text: {
+            en: "The setting and evening atmosphere matter most to you. You want the destination to feel more like a special escape than a transit stop.",
+            el: "Το σκηνικό και η βραδινή ατμόσφαιρα είναι το πιο σημαντικό για εσάς. Θέλετε ο προορισμός να μοιάζει περισσότερο με μια ξεχωριστή απόδραση παρά με μια ενδιάμεση στάση."
+          }
+        }
+      ]
+    },
+    {
+      layout: "list",
+      title: { en: "Things to Do in Monemvasia", el: "Τι να Κάνετε στη Μονεμβασιά" },
+      text: {
+        en: "Monemvasia is not a destination that needs to be rushed. The best way to experience it usually includes walking through the old town slowly, climbing for broader views where possible, enjoying long meals and quieter evenings, staying overnight rather than only visiting briefly, and combining the destination with a wider Peloponnese route.\n\nThis is one of those places where doing less, but doing it well, often creates the better trip.\n\n[Explore our Monemvasia tours and experiences](/tours/all).",
+        el: "Η Μονεμβασιά δεν είναι ένας προορισμός που πρέπει να δείτε βιαστικά. Ο καλύτερος τρόπος για να τη ζήσετε συνήθως περιλαμβάνει το αργό περπάτημα στην παλιά πόλη, την ανάβαση για πιο πανοραμική θέα, την απόλαυση μεγάλων γευμάτων και πιο ήσυχων βραδιών, τη διανυκτέρευση αντί της σύντομης επίσκεψης, και τον συνδυασμό του προορισμού με μια ευρύτερη διαδρομή στην Πελοπόννησο.\n\nΕίναι από εκείνα τα μέρη όπου κάνοντας λιγότερα, αλλά απολαμβάνοντάς τα στο έπακρο, δημιουργείται συχνά το καλύτερο ταξίδι.\n\n[Δείτε εμπειρίες και tours στη Μονεμβασιά](/tours/all)."
+      }
+    },
+    {
+      layout: "list",
+      title: { en: "Best Time to Visit", el: "Η Καλύτερη Εποχή για να Πάτε" },
+      text: {
+        en: "Monemvasia can be rewarding across much of the year, especially because it is not only a summer beach destination.\n\nSpring and autumn are particularly attractive for walking, atmosphere, and more balanced temperatures. Summer can still be very enjoyable, especially when paired with nearby coastal stops and slower evenings. Shoulder season suits Monemvasia especially well because the destination's appeal depends heavily on strolling, views, and overall mood.\n\nIt is one of the Peloponnese destinations that can work beautifully outside peak summer.",
+        el: "Η Μονεμβασιά μπορεί να είναι απολαυστική στο μεγαλύτερο μέρος του χρόνου, ειδικά επειδή δεν είναι απλώς ένας καλοκαιρινός παραθαλάσσιος προορισμός.\n\nΗ άνοιξη και το φθινόπωρο είναι ιδιαίτερα ελκυστικά για περπάτημα, ατμόσφαιρα και πιο ισορροπημένες θερμοκρασίες. Το καλοκαίρι παραμένει πολύ ευχάριστο, ειδικά όταν συνδυάζεται με κοντινές παραθαλάσσιες στάσεις και ήρεμα βράδια. Η ενδιάμεση εποχή ταιριάζει εξαιρετικά στη Μονεμβασιά, καθώς η γοητεία του προορισμού βασίζεται κυρίως στους περιπάτους, τη θέα και τη γενικότερη διάθεση.\n\nΕίναι από τους προορισμούς της Πελοποννήσου που λειτουργούν υπέροχα και εκτός της καλοκαιρινής αιχμής."
+      }
+    },
+    {
+      layout: "faq",
+      title: { en: "FAQ About Monemvasia", el: "Συχνές Ερωτήσεις για τη Μονεμβασιά" },
+      text: {
+        en: "Common questions for planning your trip.",
+        el: "Συχνές ερωτήσεις για να οργανώσετε το ταξίδι σας."
+      },
+      items: [
+        {
+          title: { en: "Is Monemvasia worth visiting?", el: "Αξίζει να πάω στη Μονεμβασιά;" },
+          text: {
+            en: "Yes. Monemvasia is one of the most unique and atmospheric destinations in Greece, especially for travelers who appreciate history, architecture, and setting.",
+            el: "Ναι. Η Μονεμβασιά είναι ένας από τους πιο μοναδικούς και ατμοσφαιρικούς προορισμούς στην Ελλάδα, ειδικά για όσους εκτιμούν την ιστορία, την αρχιτεκτονική και το τοπίο."
+          }
+        },
+        {
+          title: { en: "What is Monemvasia best known for?", el: "Για τι φημίζεται η Μονεμβασιά;" },
+          text: {
+            en: "It is best known for its medieval fortress town, stone alleys, sea-rock setting, and romantic atmosphere.",
+            el: "Είναι κυρίως γνωστή για τη μεσαιωνική καστροπολιτεία της, τα πέτρινα σοκάκια, το σκηνικό πάνω στον βράχο και τη ρομαντική της ατμόσφαιρα."
+          }
+        },
+        {
+          title: { en: "Is Monemvasia good for couples?", el: "Είναι η Μονεμβασιά ιδανική για ζευγάρια;" },
+          text: {
+            en: "Very much so. It is one of the strongest romantic destinations in the Peloponnese because of its mood, architecture, and slower travel style.",
+            el: "Πάρα πολύ. Είναι ένας από τους κορυφαίους ρομαντικούς προορισμούς στην Πελοπόννησο χάρη στην ατμόσφαιρά της, την αρχιτεκτονική της και τον πιο χαλαρό ρυθμό ταξιδιού."
+          }
+        },
+        {
+          title: { en: "How many days do you need in Monemvasia?", el: "Πόσες μέρες χρειάζομαι στη Μονεμβασιά;" },
+          text: {
+            en: "It can be seen briefly, but it is far more rewarding when you stay overnight and experience the destination after day visitors leave.",
+            el: "Μπορείτε να τη δείτε έστω και για λίγο, αλλά είναι πολύ πιο απολαυστική όταν διανυκτερεύσετε και ζήσετε τον προορισμό αφού φύγουν οι επισκέπτες της ημέρας."
+          }
+        },
+        {
+          title: { en: "Is Monemvasia only for history lovers?", el: "Είναι η Μονεμβασιά μόνο για λάτρεις της ιστορίας;" },
+          text: {
+            en: "No. Even travelers who are not deeply interested in history often enjoy it because the appeal is also visual, atmospheric, and emotional.",
+            el: "Όχι. Ακόμα και ταξιδιώτες που δεν ενδιαφέρονται έντονα για την ιστορία, συχνά τη λατρεύουν, καθώς η γοητεία της είναι εξίσου οπτική, ατμοσφαιρική και συναισθηματική."
+          }
+        },
+        {
+          title: { en: "Can Monemvasia be part of a wider Peloponnese trip?", el: "Μπορεί να συνδυαστεί με ένα ταξίδι στην Πελοπόννησο;" },
+          text: {
+            en: "Yes. It works very well as a distinctive stop within a broader Peloponnese route.",
+            el: "Ναι. Λειτουργεί εξαιρετικά ως μια ξεχωριστή στάση στο πλαίσιο μιας ευρύτερης διαδρομής στην Πελοπόννησο."
+          }
+        }
+      ]
+    }
+  ],
+
+  halkidiki: [
+    {
+      layout: "list",
+      title: { en: "Why Visit Halkidiki", el: "Γιατί να πας στη Χαλκιδική" },
+      text: {
+        en: "Halkidiki is a strong choice for travelers who want some of the best summer beaches in northern Greece, a destination with many different base options, easy access by road compared with many islands, a mix of lively and quieter coastal areas, and pine scenery combined with clear sea and beach-focused travel.\n\nIt is one of those destinations that works especially well when you choose the right area for your travel style.",
+        el: "Η Χαλκιδική είναι μια εξαιρετική επιλογή για ταξιδιώτες που αναζητούν μερικές από τις καλύτερες καλοκαιρινές παραλίες στη βόρεια Ελλάδα, έναν προορισμό με πολλές διαφορετικές επιλογές βάσης, εύκολη οδική πρόσβαση σε σύγκριση με πολλά νησιά, έναν συνδυασμό από ζωντανές αλλά και πιο ήσυχες παράκτιες περιοχές, και τοπία με πεύκα που σμίγουν με την καθαρή θάλασσα.\n\nΕίναι από τους προορισμούς που λειτουργούν εξαιρετικά καλά όταν επιλέγετε τη σωστή περιοχή για το προσωπικό σας στυλ ταξιδιού."
+      }
+    },
+    {
+      layout: "grid",
+      title: { en: "Best Areas and Highlights in Halkidiki", el: "Οι Καλύτερες Περιοχές & Αξιοθέατα" },
+      text: {
+        en: "Where to base your stay or focus your time in the region.",
+        el: "Πού να μείνετε ή να αφιερώσετε τον χρόνο σας στην περιοχή."
+      },
+      items: [
+        {
+          title: { en: "Kassandra", el: "Κασσάνδρα" },
+          text: {
+            en: "Kassandra is usually the most developed and lively part of Halkidiki for holiday travel. It suits visitors who want beach clubs, resort comfort, active summer atmosphere, and easy access to organized beaches and dining.",
+            el: "Η Κασσάνδρα είναι συνήθως το πιο ανεπτυγμένο και ζωντανό κομμάτι της Χαλκιδικής. Ταιριάζει σε επισκέπτες που θέλουν beach clubs, ανέσεις resort, έντονη καλοκαιρινή ατμόσφαιρα και εύκολη πρόσβαση σε οργανωμένες παραλίες και φαγητό."
+          }
+        },
+        {
+          title: { en: "Sithonia", el: "Σιθωνία" },
+          text: {
+            en: "Sithonia is often the choice for travelers who want a more scenic and relaxed trip. It feels greener, more spacious, and in many cases more naturally beautiful. It is especially appealing for beach lovers, couples, and travelers who prefer a slower rhythm.",
+            el: "Η Σιθωνία είναι συχνά η επιλογή για ταξιδιώτες που επιθυμούν ένα πιο γραφικό και χαλαρό ταξίδι. Έχει πιο πράσινη αίσθηση, περισσότερους χώρους και εντυπωσιακή φυσική ομορφιά. Ελκύει κυρίως τους λάτρεις της παραλίας και τα ζευγάρια."
+          }
+        },
+        {
+          title: { en: "The Mount Athos side", el: "Η πλευρά του Άθω" },
+          text: {
+            en: "This part of Halkidiki adds a different dimension to the region. Even for visitors who are not specifically traveling for religious or cultural reasons, it gives Halkidiki more depth and a sense of place beyond the standard summer-coast format.",
+            el: "Αυτό το κομμάτι προσθέτει μια διαφορετική διάσταση στην περιοχή. Ακόμα και για επισκέπτες που δεν ταξιδεύουν για θρησκευτικούς λόγους, δίνει στη Χαλκιδική βάθος και μια αίσθηση του τόπου πέρα από το τυπικό καλοκαιρινό μοτίβο."
+          }
+        },
+        {
+          title: { en: "The wider northern Greece context", el: "Η ευρύτερη περιοχή της Βόρειας Ελλάδας" },
+          text: {
+            en: "Halkidiki also works well as part of a broader northern Greece itinerary, especially when combined with Thessaloniki or other regional road-trip ideas.",
+            el: "Η Χαλκιδική λειτουργεί άψογα και ως μέρος ενός ευρύτερου προγράμματος στη βόρεια Ελλάδα, ειδικά όταν συνδυάζεται με τη Θεσσαλονίκη ή άλλα τοπικά road trips."
+          }
+        }
+      ]
+    },
+    {
+      layout: "list",
+      title: { en: "Beaches and Attractions", el: "Παραλίες & Αξιοθέατα" },
+      text: {
+        en: "Halkidiki is above all a summer sea destination, but its variety is what makes it stand out.\n\n**Kassandra beach life**\nThis side is often chosen for ease, beach energy, nightlife access, and classic organized summer atmosphere.\n\n**Sithonia beaches**\nSithonia offers some of the region's most attractive swimming spots, often with greener surroundings and a more relaxed visual character.\n\n**Coastal drives and scenic stops**\nPart of the pleasure of Halkidiki comes from moving between beach areas, viewpoints, pine-covered roads, and different coastal moods.\n\n**Village and seaside bases**\nAlthough beaches are central, Halkidiki also benefits from having different small bases and local centers that shape the tone of each trip.\n\n**A summer region with range**\nThe region's strength is not one single attraction but the fact that travelers can tailor the experience to their own pace and style.",
+        el: "Η Χαλκιδική είναι πάνω απ' όλα ένας καλοκαιρινός παραθαλάσσιος προορισμός, αλλά η ποικιλία της είναι αυτό που την κάνει να ξεχωρίζει.\n\n**Η ζωή στις παραλίες της Κασσάνδρας**\nΑυτή η πλευρά επιλέγεται συχνά για την ευκολία, την ενέργεια, την πρόσβαση στη νυχτερινή ζωή και την κλασική οργανωμένη καλοκαιρινή ατμόσφαιρα.\n\n**Παραλίες της Σιθωνίας**\nΗ Σιθωνία προσφέρει μερικά από τα πιο ελκυστικά σημεία για κολύμπι στην περιοχή, συχνά με πιο πράσινο περιβάλλον και πιο χαλαρό οπτικό χαρακτήρα.\n\n**Παράκτιες διαδρομές και γραφικές στάσεις**\nΜέρος της απόλαυσης στη Χαλκιδική προέρχεται από την οδήγηση ανάμεσα σε περιοχές, σημεία με θέα, πευκόφυτους δρόμους και διαφορετικές παραθαλάσσιες εικόνες.\n\n**Χωριά και παραθαλάσσιες βάσεις**\nΑν και οι παραλίες είναι στο επίκεντρο, η Χαλκιδική διαθέτει επίσης μικρά κέντρα και χωριά που διαμορφώνουν τον τόνο κάθε ταξιδιού.\n\n**Μια καλοκαιρινή περιοχή με εύρος**\nΗ δύναμη της περιοχής δεν είναι ένα μεμονωμένο αξιοθέατο, αλλά το γεγονός ότι οι ταξιδιώτες μπορούν να προσαρμόσουν την εμπειρία στους δικούς τους ρυθμούς."
+      }
+    },
+    {
+      layout: "list",
+      title: { en: "Food and Local Flavors", el: "Φαγητό & Τοπικές Γεύσεις" },
+      text: {
+        en: "Food in Halkidiki is closely tied to the summer holiday experience. Many of the best moments here are simple: seafood by the sea, relaxed tavern meals after the beach, long summer lunches, dinners in coastal bases, and familiar Greek holiday flavors in easy, scenic settings.\n\nHalkidiki is not only about resort food. In the right places, the region can also offer more local and grounded meals that connect well with northern Greek traditions and the slower side of seaside travel. The destination works best when food is treated as part of the day's rhythm rather than only a practical stop between beach visits.\n\n[Explore our Greece food & drink guides for more local travel ideas](/collections/greece-food-and-drink).",
+        el: "Το φαγητό στη Χαλκιδική είναι στενά συνδεδεμένο με την εμπειρία των καλοκαιρινών διακοπών. Πολλές από τις καλύτερες στιγμές εδώ είναι απλές: θαλασσινά δίπλα στο κύμα, χαλαρά γεύματα σε ταβέρνες μετά το μπάνιο, μακρόσυρτα καλοκαιρινά μεσημεριανά, δείπνα στα χωριά και γνώριμες ελληνικές γεύσεις σε γραφικά σκηνικά.\n\nΗ Χαλκιδική δεν εξαντλείται στο φαγητό των resorts. Στα κατάλληλα σημεία, η περιοχή μπορεί να προσφέρει πιο τοπικά και αυθεντικά γεύματα, συνδεδεμένα με τις παραδόσεις της βόρειας Ελλάδας. Ο προορισμός λειτουργεί καλύτερα όταν το φαγητό αντιμετωπίζεται ως μέρος του ρυθμού της ημέρας, και όχι απλώς ως μια πρακτική στάση ενδιάμεσα στις παραλίες.\n\n[Ανακαλύψτε τοπικές γεύσεις στους οδηγούς μας](/collections/greece-food-and-drink)."
+      }
+    },
+    {
+      layout: "numbered",
+      title: { en: "Where to Stay in Halkidiki", el: "Πού να Μείνετε στη Χαλκιδική" },
+      text: {
+        en: "Where you stay in Halkidiki is one of the most important decisions, because the region changes a lot from area to area. [Explore our Halkidiki hotel recommendations](/hotels?destination=halkidiki).",
+        el: "Η περιοχή που θα επιλέξετε για διαμονή είναι από τις πιο σημαντικές αποφάσεις, καθώς η Χαλκιδική αλλάζει ριζικά ανάλογα με τη χερσόνησο. [Ανακαλύψτε τις προτάσεις μας για διαμονή](/hotels?destination=halkidiki)."
+      },
+      items: [
+        {
+          title: { en: "Stay in Kassandra if", el: "Μείνετε στην Κασσάνδρα αν" },
+          text: {
+            en: "You want a classic summer holiday base. Beach clubs, nightlife, and organized resorts matter to your trip. You prefer convenience and activity.",
+            el: "Θέλετε μια κλασική βάση καλοκαιρινών διακοπών. Τα beach clubs, η νυχτερινή ζωή και τα οργανωμένα resorts είναι σημαντικά για το ταξίδι σας. Προτιμάτε την άνεση και τη δράση."
+          }
+        },
+        {
+          title: { en: "Stay in Sithonia if", el: "Μείνετε στη Σιθωνία αν" },
+          text: {
+            en: "You want a more scenic and relaxed coastal atmosphere. Your trip is more about beaches, nature, and slower exploration. You prefer a less built-up feel.",
+            el: "Αναζητάτε μια πιο γραφική και χαλαρή παραθαλάσσια ατμόσφαιρα. Το ταξίδι σας αφορά περισσότερο τις παραλίες, τη φύση και την αργή εξερεύνηση. Προτιμάτε ένα λιγότερο δομημένο περιβάλλον."
+          }
+        },
+        {
+          title: { en: "Choose your base carefully if", el: "Επιλέξτε τη βάση σας προσεκτικά αν" },
+          text: {
+            en: "You want to minimize driving. You are traveling with family. You are deciding between social energy and quiet beach time.",
+            el: "Θέλετε να ελαχιστοποιήσετε την οδήγηση. Ταξιδεύετε με την οικογένειά σας. Αμφιταλαντεύεστε ανάμεσα στην κοινωνική ενέργεια και τις ήσυχες στιγμές στην παραλία."
+          }
+        }
+      ]
+    },
+    {
+      layout: "list",
+      title: { en: "Things to Do in Halkidiki", el: "Τι να Κάνετε στη Χαλκιδική" },
+      text: {
+        en: "Halkidiki works best when you build your trip around the coast and your chosen base. Some of the best ways to enjoy the region include spending full days at different beaches, exploring more than one peninsula if time allows, mixing organized beach days with quieter scenic spots, enjoying coastal drives and seaside meals, and balancing easy summer rhythm with a bit of regional discovery.\n\nThis is not a destination that needs a long sightseeing checklist to feel rewarding. In many cases, the real pleasure of Halkidiki comes from choosing the right area, the right beaches, and the right pace.\n\n[Explore our Halkidiki tours and experiences](/tours/all).",
+        el: "Η Χαλκιδική είναι στα καλύτερά της όταν χτίζετε το ταξίδι σας γύρω από την ακτογραμμή και τη βάση σας. Οι καλύτεροι τρόποι για να την απολαύσετε περιλαμβάνουν την αφιέρωση ολόκληρων ημερών σε διαφορετικές παραλίες, την εξερεύνηση περισσότερων της μίας χερσονήσου, τον συνδυασμό οργανωμένων παραλιών με πιο ήσυχα σημεία, τις παραθαλάσσιες διαδρομές, και την ισορροπία ανάμεσα στον χαλαρό καλοκαιρινό ρυθμό και τη στοιχειώδη ανακάλυψη της περιοχής.\n\nΔεν χρειάζεστε μεγάλες λίστες με αξιοθέατα για να νιώσετε ικανοποίηση. Η πραγματική απόλαυση εδώ έρχεται από την επιλογή της σωστής περιοχής, των σωστών παραλιών και του σωστού ρυθμού.\n\n[Δείτε εμπειρίες και tours στη Χαλκιδική](/tours/all)."
+      }
+    },
+    {
+      layout: "list",
+      title: { en: "Best Time to Visit", el: "Η Καλύτερη Εποχή για να Πάτε" },
+      text: {
+        en: "Halkidiki is primarily a warm-season destination and is especially popular from late spring to early autumn.\n\nJune and September are often excellent months for travelers who want very good weather with a more balanced pace. July and August are the busiest summer months, especially in more popular holiday areas. Late spring and early autumn can work very well for beach-focused travelers who prefer less pressure than peak season.\n\nThe destination is strongest when sea conditions, sunshine, and beach life can fully shape the trip.",
+        el: "Η Χαλκιδική είναι κυρίως ένας προορισμός για τη θερμή περίοδο και είναι ιδιαίτερα δημοφιλής από τα τέλη της άνοιξης έως τις αρχές του φθινοπώρου.\n\nΟ Ιούνιος και ο Σεπτέμβριος είναι συχνά εξαιρετικοί μήνες για ταξιδιώτες που θέλουν πολύ καλό καιρό με πιο ισορροπημένο ρυθμό. Ο Ιούλιος και ο Αύγουστος είναι οι πιο πολυσύχναστοι μήνες, ειδικά στις δημοφιλείς περιοχές. Το τέλος της άνοιξης και οι αρχές του φθινοπώρου προσφέρονται για όσους αγαπούν τη θάλασσα αλλά θέλουν λιγότερη πολυκοσμία.\n\nΟ προορισμός είναι στα καλύτερά του όταν οι συνθήκες της θάλασσας, η ηλιοφάνεια και η ζωή στην παραλία μπορούν να καθορίσουν πλήρως το ταξίδι."
+      }
+    },
+    {
+      layout: "faq",
+      title: { en: "FAQ About Halkidiki", el: "Συχνές Ερωτήσεις για τη Χαλκιδική" },
+      text: {
+        en: "Common questions for planning your trip.",
+        el: "Συχνές ερωτήσεις για να οργανώσετε το ταξίδι σας."
+      },
+      items: [
+        {
+          title: { en: "Is Halkidiki worth visiting?", el: "Αξίζει να πάω στη Χαλκιδική;" },
+          text: {
+            en: "Yes. Halkidiki is one of the most appealing summer destinations in northern Greece, especially for travelers who want beaches, coastal variety, and a choice of different holiday bases.",
+            el: "Ναι. Η Χαλκιδική είναι ένας από τους πιο ελκυστικούς καλοκαιρινούς προορισμούς στη βόρεια Ελλάδα, ειδικά για όσους αναζητούν παραλίες, παράκτια ποικιλία και πολλές επιλογές για βάση διακοπών."
+          }
+        },
+        {
+          title: { en: "What is Halkidiki best known for?", el: "Για τι φημίζεται η Χαλκιδική;" },
+          text: {
+            en: "It is best known for its three peninsulas, clear waters, pine scenery, and its mix of lively and quieter beach areas.",
+            el: "Είναι κυρίως γνωστή για τις τρεις χερσονήσους της, τα καθαρά νερά, τα πευκόφυτα τοπία και τον συνδυασμό ζωντανών και ήσυχων παραλιών."
+          }
+        },
+        {
+          title: { en: "Which is better, Kassandra or Sithonia?", el: "Τι είναι καλύτερο, η Κασσάνδρα ή η Σιθωνία;" },
+          text: {
+            en: "That depends on your travel style. Kassandra is usually more lively and developed, while Sithonia is often more scenic and relaxed.",
+            el: "Αυτό εξαρτάται από το στυλ του ταξιδιού σας. Η Κασσάνδρα είναι συνήθως πιο ζωντανή και ανεπτυγμένη, ενώ η Σιθωνία είναι πιο γραφική και χαλαρή."
+          }
+        },
+        {
+          title: { en: "Is Halkidiki good for families?", el: "Είναι η Χαλκιδική καλή για οικογένειες;" },
+          text: {
+            en: "Yes. Many areas in Halkidiki can work very well for families, especially when you choose a base that fits your pace and beach preferences.",
+            el: "Ναι. Πολλές περιοχές στη Χαλκιδική λειτουργούν εξαιρετικά για οικογένειες, ειδικά όταν επιλέγετε μια βάση που ταιριάζει στους δικούς σας ρυθμούς."
+          }
+        },
+        {
+          title: { en: "Do you need a car in Halkidiki?", el: "Χρειάζομαι αυτοκίνητο στη Χαλκιδική;" },
+          text: {
+            en: "It is often very useful, especially if you want to explore different beaches or compare areas rather than staying in one resort zone the whole time.",
+            el: "Είναι συνήθως πολύ χρήσιμο, ειδικά αν θέλετε να εξερευνήσετε διαφορετικές παραλίες ή να συγκρίνετε περιοχές, αντί να μείνετε σε ένα μόνο resort καθ' όλη τη διάρκεια."
+          }
+        },
+        {
+          title: { en: "Can Halkidiki be combined with Thessaloniki?", el: "Μπορεί να συνδυαστεί με τη Θεσσαλονίκη;" },
+          text: {
+            en: "Yes. It often works very well as part of a broader northern Greece trip, especially for travelers who want to combine city time with beach time.",
+            el: "Ναι. Συνδυάζεται άψογα στο πλαίσιο ενός ευρύτερου ταξιδιού στη βόρεια Ελλάδα, ειδικά για ταξιδιώτες που θέλουν να μοιράσουν τον χρόνο τους ανάμεσα στην πόλη και την παραλία."
+          }
+        }
+      ]
+    }
+  ],
+
+  meteora: [
+    {
+      layout: "list",
+      title: { en: "Why Visit Meteora", el: "Γιατί να πας στα Μετέωρα" },
+      text: {
+        en: "Meteora is a strong choice for travelers who want one of the most unique landscapes in Greece, a destination with UNESCO-level historic and cultural significance, dramatic viewpoints and memorable photography, monastery visits and a deeper sense of place, and a rewarding mainland stop that feels very different from beach-driven Greece.\n\nThis is not a destination built around nightlife, shopping, or resort life. It is about landscape, atmosphere, scale, and meaning.",
+        el: "Τα Μετέωρα είναι μια εξαιρετική επιλογή για ταξιδιώτες που αναζητούν ένα από τα πιο μοναδικά τοπία στην Ελλάδα, έναν προορισμό με ιστορική και πολιτιστική σημασία επιπέδου UNESCO, δραματικά σημεία θέας και αξέχαστη φωτογραφία, επισκέψεις σε μοναστήρια και μια βαθύτερη αίσθηση του τόπου, καθώς και μια ικανοποιητική στάση στην ηπειρωτική χώρα που διαφέρει πολύ από την παραθαλάσσια Ελλάδα.\n\nΑυτός δεν είναι ένας προορισμός χτισμένος γύρω από τη νυχτερινή ζωή, τα ψώνια ή τη ζωή στα resorts. Εδώ, το επίκεντρο είναι το τοπίο, η ατμόσφαιρα, η κλίμακα και το νόημα."
+      }
+    },
+    {
+      layout: "grid",
+      title: { en: "Best Areas and Highlights in Meteora", el: "Οι Καλύτερες Περιοχές & Αξιοθέατα" },
+      text: {
+        en: "Where to base your stay or focus your time in the region.",
+        el: "Πού να μείνετε ή να αφιερώσετε τον χρόνο σας στην περιοχή."
+      },
+      items: [
+        {
+          title: { en: "Kalambaka", el: "Καλαμπάκα" },
+          text: {
+            en: "Kalambaka is the main base for most visitors and the most practical place to stay. It offers easy access to the Meteora area, useful services, accommodation options, and a straightforward starting point for exploring the monasteries and viewpoints.",
+            el: "Η Καλαμπάκα είναι η κύρια βάση για τους περισσότερους επισκέπτες και το πιο πρακτικό μέρος για διαμονή. Προσφέρει εύκολη πρόσβαση στην περιοχή των Μετεώρων, χρήσιμες υπηρεσίες, επιλογές διαμονής και μια απλή αφετηρία για την εξερεύνηση των μοναστηριών και των σημείων θέας."
+          }
+        },
+        {
+          title: { en: "Kastraki", el: "Καστράκι" },
+          text: {
+            en: "Kastraki has a quieter and more scenic village feel and is often preferred by travelers who want a more atmospheric stay close to the rock formations themselves.",
+            el: "Το Καστράκι έχει μια πιο ήσυχη και γραφική αίσθηση χωριού και συχνά προτιμάται από ταξιδιώτες που αναζητούν μια πιο ατμοσφαιρική διαμονή κοντά στους ίδιους τους βραχώδεις σχηματισμούς."
+          }
+        },
+        {
+          title: { en: "The monastery zone", el: "Η ζώνη των μοναστηριών" },
+          text: {
+            en: "This is the core of the experience and the reason most visitors come. The monasteries and the surrounding roads, viewpoints, and dramatic rock backdrop define the destination.",
+            el: "Αυτός είναι ο πυρήνας της εμπειρίας και ο λόγος που έρχονται οι περισσότεροι επισκέπτες. Τα μοναστήρια, οι γύρω δρόμοι, τα σημεία θέας και το εντυπωσιακό φόντο των βράχων καθορίζουν τον προορισμό."
+          }
+        },
+        {
+          title: { en: "Sunset and panoramic points", el: "Σημεία για ηλιοβασίλεμα και πανοραμική θέα" },
+          text: {
+            en: "Part of Meteora's appeal is not only visiting individual places, but also experiencing the broader landscape from different angles and at different times of day.",
+            el: "Μέρος της γοητείας των Μετεώρων δεν είναι μόνο η επίσκεψη σε μεμονωμένα μέρη, αλλά και η εμπειρία του ευρύτερου τοπίου από διαφορετικές οπτικές γωνίες και σε διαφορετικές ώρες της ημέρας."
+          }
+        }
+      ]
+    },
+    {
+      layout: "list",
+      title: { en: "Main Attractions in Meteora", el: "Βασικά Αξιοθέατα" },
+      text: {
+        en: "Meteora is a destination where the main attractions are tied closely to the landscape itself.\n\n**The cliff-top monasteries**\nThese are the defining landmarks of the region and the main reason Meteora feels so extraordinary. Even visitors who are not deeply religious usually find the setting deeply impressive.\n\n**The rock formations**\nThe geological scale of Meteora is a major part of the experience. The landscape creates a sense of height, isolation, and calm that is rare.\n\n**Viewpoints and scenic drives**\nMany of the most memorable moments in Meteora come from stopping, looking, and taking in the wider panorama rather than rushing from one point to another.\n\n**Kastraki and the surrounding base villages**\nThe villages add practical value and a softer human scale to a destination that might otherwise feel purely monumental.\n\n**Sunrise and sunset atmosphere**\nLighting changes the whole mood of Meteora, which is why timing matters here more than in many other destinations.",
+        el: "Τα Μετέωρα είναι ένας προορισμός όπου τα κύρια αξιοθέατα είναι στενά συνδεδεμένα με το ίδιο το τοπίο.\n\n**Τα μοναστήρια στις κορυφές των βράχων**\nΑυτά είναι τα καθοριστικά ορόσημα της περιοχής και ο κύριος λόγος που τα Μετέωρα φαίνονται τόσο εξωπραγματικά. Ακόμα και επισκέπτες που δεν είναι βαθιά θρησκευόμενοι συνήθως βρίσκουν το σκηνικό εξαιρετικά εντυπωσιακό.\n\n**Οι βραχώδεις σχηματισμοί**\nΗ γεωλογική κλίμακα των Μετεώρων είναι σημαντικό κομμάτι της εμπειρίας. Το τοπίο δημιουργεί μια σπάνια αίσθηση ύψους, απομόνωσης και γαλήνης.\n\n**Σημεία θέας και γραφικές διαδρομές**\nΠολλές από τις πιο αξέχαστες στιγμές προέρχονται από το να σταματήσετε, να κοιτάξετε και να απορροφήσετε το ευρύτερο πανόραμα, παρά να βιαστείτε από το ένα σημείο στο άλλο.\n\n**Το Καστράκι και τα γύρω χωριά**\nΤα χωριά προσθέτουν πρακτική αξία και μια πιο ήπια ανθρώπινη κλίμακα σε έναν προορισμό που διαφορετικά θα φάνταζε αμιγώς μνημειακός.\n\n**Η ατμόσφαιρα κατά την ανατολή και τη δύση**\nΟ φωτισμός αλλάζει ολόκληρη τη διάθεση των Μετεώρων, γι' αυτό και ο σωστός συγχρονισμός έχει εδώ μεγαλύτερη σημασία από ό,τι σε πολλούς άλλους προορισμούς."
+      }
+    },
+    {
+      layout: "list",
+      title: { en: "Food and Local Flavors", el: "Φαγητό & Τοπικές Γεύσεις" },
+      text: {
+        en: "Food in Meteora is less about big-city variety and more about grounding the trip in something simple and local after the scale of the landscape. Many visitors enjoy traditional Greek meals after sightseeing, relaxed tavern dinners, regional mainland flavors, quiet meals with mountain and rock views, and slower evenings after a day of walking and exploring.\n\nThis is not a destination where food overwhelms the experience. Instead, it supports it. A good meal in Meteora often feels like part of the calm that follows the visual intensity of the day.\n\n[Explore our Greece food & drink guides for more local travel ideas](/collections/greece-food-and-drink).",
+        el: "Το φαγητό στα Μετέωρα δεν αφορά την ποικιλία μιας μεγαλούπολης, αλλά προσφέρει μια απλή, τοπική προσγείωση μετά το δέος του τοπίου. Πολλοί επισκέπτες απολαμβάνουν παραδοσιακά ελληνικά γεύματα μετά τις περιηγήσεις, χαλαρά δείπνα σε ταβέρνες, γεύσεις της ηπειρωτικής ενδοχώρας, ήσυχα γεύματα με θέα τα βουνά και τους βράχους, και αργά βράδια μετά από μια μέρα περπατήματος και εξερεύνησης.\n\nΔεν πρόκειται για προορισμό όπου το φαγητό επισκιάζει την εμπειρία. Αντίθετα, την υποστηρίζει. Ένα καλό γεύμα στα Μετέωρα μοιάζει συχνά με μέρος της ηρεμίας που ακολουθεί την οπτική ένταση της ημέρας.\n\n[Ανακαλύψτε τοπικές γεύσεις στους οδηγούς μας](/collections/greece-food-and-drink)."
+      }
+    },
+    {
+      layout: "numbered",
+      title: { en: "Where to Stay in Meteora", el: "Πού να Μείνετε στα Μετέωρα" },
+      text: {
+        en: "Where you stay in Meteora depends on the kind of atmosphere you want. [Explore our Meteora hotel recommendations](/hotels?destination=meteora).",
+        el: "Η περιοχή που θα επιλέξετε για διαμονή στα Μετέωρα εξαρτάται από το είδος της ατμόσφαιρας που επιθυμείτε. [Ανακαλύψτε τις προτάσεις μας για διαμονή](/hotels?destination=meteora)."
+      },
+      items: [
+        {
+          title: { en: "Stay in Kalambaka if", el: "Μείνετε στην Καλαμπάκα αν" },
+          text: {
+            en: "You want the most practical and convenient base. You prefer easier access to services and transport. You are building Meteora into a broader mainland trip.",
+            el: "Θέλετε την πιο πρακτική και βολική βάση. Προτιμάτε ευκολότερη πρόσβαση σε υπηρεσίες και συγκοινωνίες. Εντάσσετε τα Μετέωρα σε ένα ευρύτερο ταξίδι στην ηπειρωτική χώρα."
+          }
+        },
+        {
+          title: { en: "Stay in Kastraki if", el: "Μείνετε στο Καστράκι αν" },
+          text: {
+            en: "You want a quieter and more atmospheric setting. Being close to the rock formations matters more to your trip. You prefer a more scenic and intimate base.",
+            el: "Αναζητάτε ένα πιο ήσυχο και ατμοσφαιρικό περιβάλλον. Το να είστε κοντά στους βράχους είναι πολύ σημαντικό για εσάς. Προτιμάτε μια πιο γραφική και οικεία βάση."
+          }
+        },
+        {
+          title: { en: "Choose a view-oriented stay if", el: "Επιλέξτε διαμονή με θέα αν" },
+          text: {
+            en: "Landscape and overall atmosphere are central to your experience. You want your stay to feel more connected to the destination itself rather than just functional.",
+            el: "Το τοπίο και η συνολική ατμόσφαιρα βρίσκονται στο επίκεντρο της εμπειρίας σας. Θέλετε η διαμονή σας να έχει μια βαθύτερη σύνδεση με τον ίδιο τον προορισμό και όχι απλώς πρακτική αξία."
+          }
+        }
+      ]
+    },
+    {
+      layout: "list",
+      title: { en: "Things to Do in Meteora", el: "Τι να Κάνετε στα Μετέωρα" },
+      text: {
+        en: "Meteora is best experienced at a steady pace. Some of the most rewarding ways to spend time here include visiting selected monasteries rather than trying to rush through everything, stopping at viewpoints and scenic roads, spending time in Kalambaka or Kastraki between visits, planning around light, weather, and quieter moments, and combining cultural interest with walking, photography, and simple exploration.\n\nThis is one of those places where quality matters more than quantity. A smaller number of meaningful stops usually creates a better trip than trying to “complete” everything too quickly.\n\n[Explore our Meteora tours and experiences](/tours/all).",
+        el: "Τα Μετέωρα βιώνονται καλύτερα με σταθερό και ήρεμο ρυθμό. Μερικοί από τους καλύτερους τρόπους για να περάσετε τον χρόνο σας περιλαμβάνουν την επίσκεψη σε επιλεγμένα μοναστήρια αντί για ένα βιαστικό πέρασμα από όλα, στάσεις σε σημεία θέας και γραφικούς δρόμους, χρόνο στην Καλαμπάκα ή το Καστράκι, προγραμματισμό με βάση τον φωτισμό και τις πιο ήσυχες ώρες, και συνδυασμό πολιτιστικού ενδιαφέροντος με περπάτημα, φωτογραφία και απλή εξερεύνηση.\n\nΕίναι από εκείνα τα μέρη όπου η ποιότητα μετράει περισσότερο από την ποσότητα. Λιγότερες, αλλά πιο ουσιαστικές στάσεις συνήθως δημιουργούν ένα καλύτερο ταξίδι.\n\n[Δείτε εμπειρίες και tours στα Μετέωρα](/tours/all)."
+      }
+    },
+    {
+      layout: "list",
+      title: { en: "Best Time to Visit", el: "Η Καλύτερη Εποχή για να Πάτε" },
+      text: {
+        en: "Meteora can be rewarding well beyond peak summer, which makes it different from many of Greece's more seasonal destinations.\n\nSpring and autumn are especially attractive for walking, views, and more balanced temperatures. Summer can still work well, especially for travelers combining Meteora with a broader mainland route, but midday heat can affect the pace. Shoulder season often suits Meteora very well because the destination is driven more by landscape and cultural interest than by beach weather.\n\nWeather, visibility, and time of day all affect the experience more here than in many other destinations.",
+        el: "Τα Μετέωρα μπορεί να είναι ένας απολαυστικός προορισμός πολύ πέρα από το απόγειο του καλοκαιριού, γεγονός που τα διαφοροποιεί από πολλούς άλλους εποχιακού προορισμούς στην Ελλάδα.\n\nΗ άνοιξη και το φθινόπωρο είναι ιδιαίτερα ελκυστικά για περπάτημα, θέα και πιο ισορροπημένες θερμοκρασίες. Το καλοκαίρι μπορεί επίσης να είναι υπέροχο, ειδικά αν τα Μετέωρα είναι μέρος μιας ευρύτερης διαδρομής, ωστόσο η μεσημεριανή ζέστη μπορεί να επηρεάσει τους ρυθμούς σας. Η ενδιάμεση εποχή συχνά ταιριάζει εξαιρετικά στα Μετέωρα, επειδή ο προορισμός βασίζεται περισσότερο στο τοπίο και το πολιτιστικό ενδιαφέρον, παρά στον καιρό για μπάνιο.\n\nΟ καιρός, η ορατότητα και η ώρα της ημέρας επηρεάζουν την εμπειρία εδώ πολύ περισσότερο από ό,τι σε άλλους προορισμούς."
+      }
+    },
+    {
+      layout: "faq",
+      title: { en: "FAQ About Meteora", el: "Συχνές Ερωτήσεις για τα Μετέωρα" },
+      text: {
+        en: "Common questions for planning your trip.",
+        el: "Συχνές ερωτήσεις για να οργανώσετε το ταξίδι σας."
+      },
+      items: [
+        {
+          title: { en: "Is Meteora worth visiting?", el: "Αξίζει να πάω στα Μετέωρα;" },
+          text: {
+            en: "Yes. Meteora is one of the most unique and memorable destinations in Greece, especially for travelers interested in landscapes, monasteries, and cultural significance.",
+            el: "Ναι. Τα Μετέωρα είναι ένας από τους πιο μοναδικούς και αξέχαστους προορισμούς στην Ελλάδα, ειδικά για όσους ενδιαφέρονται για φυσικά τοπία, μοναστήρια και πολιτιστική κληρονομιά."
+          }
+        },
+        {
+          title: { en: "What is Meteora best known for?", el: "Για τι φημίζονται τα Μετέωρα;" },
+          text: {
+            en: "It is best known for its giant rock formations and monasteries built high above the surrounding landscape.",
+            el: "Φημίζονται κυρίως για τους γιγάντιους βραχώδεις σχηματισμούς και τα μοναστήρια που είναι χτισμένα ψηλά πάνω από το τοπίο."
+          }
+        },
+        {
+          title: { en: "How many days do you need in Meteora?", el: "Πόσες μέρες χρειάζομαι στα Μετέωρα;" },
+          text: {
+            en: "Many travelers visit briefly, but Meteora is more rewarding when you have enough time for views, monastery visits, and a slower pace.",
+            el: "Πολλοί περνούν μόνο για λίγο, αλλά τα Μετέωρα είναι πολύ πιο ικανοποιητικά όταν αφιερώσετε αρκετό χρόνο για τη θέα, τις επισκέψεις στα μοναστήρια και μια πιο ήρεμη εξερεύνηση."
+          }
+        },
+        {
+          title: { en: "Is Meteora only for religious travelers?", el: "Είναι μόνο για θρησκευτικό τουρισμό;" },
+          text: {
+            en: "No. Even travelers without a religious focus often find Meteora deeply impressive because of its landscape, history, and atmosphere.",
+            el: "Όχι. Ακόμα και ταξιδιώτες χωρίς θρησκευτικό ενδιαφέρον συνήθως εντυπωσιάζονται βαθιά από το τοπίο, την ιστορία και την ατμόσφαιρα."
+          }
+        },
+        {
+          title: { en: "Should you stay in Kalambaka or Kastraki?", el: "Να μείνω Καλαμπάκα ή Καστράκι;" },
+          text: {
+            en: "Kalambaka is more practical, while Kastraki is often more atmospheric and scenic.",
+            el: "Η Καλαμπάκα είναι πιο πρακτική και εξυπηρετική, ενώ το Καστράκι είναι συχνά πιο ατμοσφαιρικό και γραφικό."
+          }
+        },
+        {
+          title: { en: "Can Meteora be part of a mainland Greece road trip?", el: "Συνδυάζεται με road trip στην ενδοχώρα;" },
+          text: {
+            en: "Yes. It works very well as part of a broader route through northern or central Greece.",
+            el: "Ναι. Συνδυάζεται εξαιρετικά ως σταθμός μιας ευρύτερης διαδρομής στη βόρεια ή κεντρική Ελλάδα."
+          }
+        }
+      ]
+    }
+  ],
+
+  parga: [
+    {
+      layout: "list",
+      title: { en: "Why Visit Parga", el: "Γιατί να πας στην Πάργα" },
+      text: {
+        en: "Parga is a strong choice for travelers who want a picturesque seaside town with strong visual charm, easy beach access without going to an island, a destination that works well for short stays and summer escapes, a balance of waterfront atmosphere, swimming, and relaxed evenings, and a coastal base with a softer Ionian feel.\n\nIt is the kind of place that feels immediately pleasant and does not need much effort to enjoy.",
+        el: "Η Πάργα είναι μια εξαιρετική επιλογή για ταξιδιώτες που θέλουν μια γραφική παραθαλάσσια πόλη με έντονη οπτική γοητεία, εύκολη πρόσβαση σε παραλίες χωρίς να πάνε σε νησί, έναν προορισμό ιδανικό για σύντομες διαμονές και καλοκαιρινές αποδράσεις, μια ισορροπία ανάμεσα σε ατμόσφαιρα προκυμαίας, κολύμπι και χαλαρά βράδια, και μια παραθαλάσσια βάση με πιο απαλή αίσθηση Ιονίου.\n\nΕίναι το είδος του μέρους που σε κάνει να νιώθεις αμέσως όμορφα και δεν απαιτεί ιδιαίτερη προσπάθεια για να το απολαύσεις."
+      }
+    },
+    {
+      layout: "grid",
+      title: { en: "Best Areas and Highlights in Parga", el: "Οι Καλύτερες Περιοχές & Αξιοθέατα" },
+      text: {
+        en: "Where to base your stay or focus your time in the region.",
+        el: "Πού να μείνετε ή να αφιερώσετε τον χρόνο σας στην περιοχή."
+      },
+      items: [
+        {
+          title: { en: "The Old Town and waterfront", el: "Η Παλιά Πόλη και η προκυμαία" },
+          text: {
+            en: "This is the heart of Parga's atmosphere. The waterfront, colorful houses, small streets, and harbor setting create the destination's most memorable first impression.",
+            el: "Αυτή είναι η καρδιά της ατμόσφαιρας της Πάργας. Η προκυμαία, τα πολύχρωμα σπίτια, τα στενά δρομάκια και το λιμάνι δημιουργούν την πιο αξέχαστη πρώτη εντύπωση του προορισμού."
+          }
+        },
+        {
+          title: { en: "The Venetian Castle", el: "Το Ενετικό Κάστρο" },
+          text: {
+            en: "The castle is one of the town's defining landmarks and adds both historic character and some of the best views over the bay and coastline.",
+            el: "Το κάστρο είναι ένα από τα καθοριστικά ορόσημα της πόλης και προσθέτει τόσο ιστορικό χαρακτήρα όσο και μερικές από τις καλύτερες θέες στον κόλπο και την ακτογραμμή."
+          }
+        },
+        {
+          title: { en: "Valtos Beach", el: "Παραλία Βάλτου" },
+          text: {
+            en: "Valtos is one of the best-known beach areas in Parga and an important part of the destination's holiday appeal. It adds an easy swim-and-relax side to the town experience.",
+            el: "Ο Βάλτος είναι μία από τις πιο γνωστές περιοχές της Πάργας και σημαντικό κομμάτι της καλοκαιρινής της γοητείας. Προσθέτει μια εύκολη και χαλαρωτική διάσταση κολύμβησης στην εμπειρία της πόλης."
+          }
+        },
+        {
+          title: { en: "The wider Parga coast", el: "Η ευρύτερη ακτή της Πάργας" },
+          text: {
+            en: "Part of the appeal of Parga is that it is not only about the postcard center. The surrounding coast, nearby beaches, and western Greece road access add more flexibility to the trip.",
+            el: "Μέρος της γοητείας της Πάργας είναι ότι δεν περιορίζεται μόνο στο 'καρτποσταλικό' κέντρο της. Η γύρω ακτή, οι κοντινές παραλίες και η οδική πρόσβαση της δυτικής Ελλάδας δίνουν μεγαλύτερη ευελιξία στο ταξίδι."
+          }
+        }
+      ]
+    },
+    {
+      layout: "list",
+      title: { en: "Beaches and Attractions", el: "Παραλίες & Αξιοθέατα" },
+      text: {
+        en: "Parga combines town charm with a very easy beach rhythm, which is a big reason travelers enjoy it so much.\n\n**Valtos Beach**\nOne of the destination's strongest assets, offering an easy beach extension to a stay in town and making Parga work well for classic summer holidays.\n\n**The Venetian Castle**\nThe castle gives Parga both identity and elevation. It is one of the best places to appreciate the shape of the town and the wider coastal setting.\n\n**The harbor and promenade**\nThis is where much of the destination's social atmosphere comes alive, especially in the evening.\n\n**Old town lanes and hillside views**\nParga is rewarding for slow walking, short climbs, and simply taking in the visual layout of the town.\n\n**Nearby coastal outings**\nAlthough the town itself is the main attraction, nearby sea and beach options can make the stay more varied and satisfying.",
+        el: "Η Πάργα συνδυάζει τη γοητεία της πόλης με έναν πολύ εύκολο ρυθμό παραλίας, πράγμα που είναι ένας μεγάλος λόγος για τον οποίο οι ταξιδιώτες την απολαμβάνουν τόσο πολύ.\n\n**Παραλία Βάλτου**\nΈνα από τα πιο δυνατά χαρτιά του προορισμού, προσφέροντας μια εύκολη επέκταση παραλίας στη διαμονή στην πόλη και καθιστώντας την Πάργα ιδανική για κλασικές καλοκαιρινές διακοπές.\n\n**Το Ενετικό Κάστρο**\nΤο κάστρο δίνει στην Πάργα ταυτότητα και ύψος. Είναι ένα από τα καλύτερα μέρη για να εκτιμήσετε το σχήμα της πόλης και το ευρύτερο παραθαλάσσιο σκηνικό.\n\n**Το λιμάνι και η προκυμαία**\nΕδώ ζωντανεύει μεγάλο μέρος της κοινωνικής ατμόσφαιρας του προορισμού, ειδικά το βράδυ.\n\n**Σοκάκια της παλιάς πόλης και θέα από ψηλά**\nΗ Πάργα ανταμείβει το αργό περπάτημα, τις σύντομες αναβάσεις και την απλή απόλαυση της οπτικής διάταξης της πόλης.\n\n**Κοντινές παραθαλάσσιες εξορμήσεις**\nΑν και η ίδια η πόλη είναι το κύριο αξιοθέατο, οι κοντινές επιλογές σε θάλασσα και παραλίες μπορούν να κάνουν τη διαμονή σας πιο ποικιλόμορφη και ικανοποιητική."
+      }
+    },
+    {
+      layout: "list",
+      title: { en: "Food and Local Flavors", el: "Φαγητό & Τοπικές Γεύσεις" },
+      text: {
+        en: "Food in Parga is deeply tied to the destination's summer atmosphere. Many of the best moments here are simple: seafood and Greek dishes by the waterfront, evening dinners near the sea, casual lunches after the beach, relaxed tavern meals in a scenic setting, and easy holiday dining without needing much planning.\n\nParga is not a destination defined by high gastronomy. Its appeal lies more in setting, pace, and the pleasure of eating well in a beautiful place. It suits travelers who enjoy seaside dining, long summer evenings, and meals that feel naturally built into the day.\n\n[Explore our Greece food & drink guides for more local ideas](/collections/greece-food-and-drink).",
+        el: "Το φαγητό στην Πάργα είναι άρρηκτα συνδεδεμένο με την καλοκαιρινή ατμόσφαιρα του προορισμού. Πολλές από τις καλύτερες στιγμές εδώ είναι απλές: θαλασσινά και ελληνικά πιάτα στην προκυμαία, βραδινά δείπνα κοντά στη θάλασσα, χαλαρά γεύματα μετά την παραλία, γεύματα σε γραφικές ταβέρνες και εύκολο φαγητό διακοπών χωρίς πολλή οργάνωση.\n\nΗ Πάργα δεν είναι ένας προορισμός που ορίζεται από την υψηλή γαστρονομία. Η γοητεία της βρίσκεται περισσότερο στο σκηνικό, τον ρυθμό και την απόλαυση του καλού φαγητού σε ένα όμορφο μέρος. Ταιριάζει σε ταξιδιώτες που απολαμβάνουν το φαγητό δίπλα στη θάλασσα, τα μεγάλα καλοκαιρινά βράδια και τα γεύματα που μοιάζουν φυσικά ενσωματωμένα στη μέρα.\n\n[Ανακαλύψτε τοπικές γεύσεις στους οδηγούς μας](/collections/greece-food-and-drink)."
+      }
+    },
+    {
+      layout: "numbered",
+      title: { en: "Where to Stay in Parga", el: "Πού να Μείνετε στην Πάργα" },
+      text: {
+        en: "Where you stay in Parga can shape whether your trip feels more lively, more scenic, or more beach-oriented. [Explore our Parga hotel recommendations](/hotels?destination=parga).",
+        el: "Το πού θα μείνετε στην Πάργα μπορεί να καθορίσει αν το ταξίδι σας θα έχει πιο ζωντανό, πιο γραφικό ή πιο παραθαλάσσιο χαρακτήρα. [Ανακαλύψτε τις προτάσεις μας για διαμονή](/hotels?destination=parga)."
+      },
+      items: [
+        {
+          title: { en: "Stay near the town center if", el: "Μείνετε κοντά στο κέντρο αν" },
+          text: {
+            en: "You want to be close to the promenade, restaurants, and evening walks. Atmosphere and convenience matter most to your trip. You want to enjoy Parga on foot.",
+            el: "Θέλετε να είστε κοντά στον παραλιακό δρόμο, τα εστιατόρια και τους βραδινούς περιπάτους. Η ατμόσφαιρα και η ευκολία είναι το πιο σημαντικό για το ταξίδι σας. Θέλετε να απολαύσετε την Πάργα με τα πόδια."
+          }
+        },
+        {
+          title: { en: "Stay near Valtos if", el: "Μείνετε κοντά στον Βάλτο αν" },
+          text: {
+            en: "Beach time is a big part of your holiday. You want a more relaxed base close to the sea. You prefer easier access to swimming and quieter day rhythm.",
+            el: "Ο χρόνος στην παραλία είναι μεγάλο μέρος των διακοπών σας. Θέλετε μια πιο χαλαρή βάση κοντά στη θάλασσα. Προτιμάτε ευκολότερη πρόσβαση στο κολύμπι και πιο ήσυχο ημερήσιο ρυθμό."
+          }
+        },
+        {
+          title: { en: "Choose a view-oriented stay if", el: "Επιλέξτε κατάλυμα με θέα αν" },
+          text: {
+            en: "The visual charm of Parga is central to your trip. You want the destination to feel more romantic or special.",
+            el: "Η οπτική γοητεία της Πάργας είναι στο επίκεντρο του ταξιδιού σας. Θέλετε ο προορισμός να έχει μια πιο ρομαντική ή ξεχωριστή αίσθηση."
+          }
+        }
+      ]
+    },
+    {
+      layout: "list",
+      title: { en: "Things to Do in Parga", el: "Τι να Κάνετε στην Πάργα" },
+      text: {
+        en: "Parga works best when you keep the trip simple and let the town itself do part of the work. Some of the best ways to enjoy the destination include walking through the old town and waterfront, spending time at Valtos Beach, visiting the castle for views and atmosphere, enjoying relaxed evenings by the harbor, and using Parga as a base for a slower coastal holiday.\n\nIt is a destination that often feels best when not overplanned. The combination of sea, walking, and atmosphere is already a large part of the experience.\n\n[Explore our Parga tours and experiences](/tours/all).",
+        el: "Η Πάργα είναι καλύτερη όταν κρατάτε το ταξίδι σας απλό και αφήνετε την ίδια την πόλη να κάνει μέρος της δουλειάς. Μερικοί από τους καλύτερους τρόπους για να απολαύσετε τον προορισμό περιλαμβάνουν το περπάτημα στην παλιά πόλη και την προκυμαία, τον χρόνο στην παραλία του Βάλτου, την επίσκεψη στο κάστρο για θέα και ατμόσφαιρα, τα χαλαρά βράδια στο λιμάνι και τη χρήση της Πάργας ως βάση για πιο ήρεμες παραθαλάσσιες διακοπές.\n\nΕίναι ένας προορισμός που συχνά έχει καλύτερη αίσθηση όταν δεν είναι υπερβολικά σχεδιασμένος. Ο συνδυασμός της θάλασσας, του περπατήματος και της ατμόσφαιρας αποτελεί ήδη μεγάλο μέρος της εμπειρίας.\n\n[Δείτε εμπειρίες και tours στην Πάργα](/tours/all)."
+      }
+    },
+    {
+      layout: "list",
+      title: { en: "Best Time to Visit", el: "Η Καλύτερη Εποχή για να Πάτε" },
+      text: {
+        en: "Parga is primarily a warm-season destination and is especially rewarding from late spring to early autumn.\n\nJune and September are often excellent for travelers who want good weather and a more balanced pace. July and August bring the liveliest summer atmosphere. Shoulder season can work very well for those who care about scenery, walking, and slower seaside time.\n\nBecause the destination is so tied to the waterfront and beach atmosphere, it feels strongest when the weather supports outdoor living.",
+        el: "Η Πάργα είναι κατά κύριο λόγο ένας προορισμός για τη θερμή περίοδο και είναι ιδιαίτερα ικανοποιητική από τα τέλη της άνοιξης έως τις αρχές του φθινοπώρου.\n\nΟ Ιούνιος και ο Σεπτέμβριος είναι συχνά εξαιρετικοί για τους ταξιδιώτες που θέλουν καλό καιρό και έναν πιο ισορροπημένο ρυθμό. Ο Ιούλιος και ο Αύγουστος φέρνουν την πιο ζωντανή καλοκαιρινή ατμόσφαιρα. Η ενδιάμεση εποχή μπορεί να λειτουργήσει πολύ καλά για όσους ενδιαφέρονται για το τοπίο, το περπάτημα και τον πιο αργό χρόνο δίπλα στη θάλασσα.\n\nΕπειδή ο προορισμός είναι τόσο στενά συνδεδεμένος με την προκυμαία και την ατμόσφαιρα της παραλίας, αναδεικνύεται περισσότερο όταν ο καιρός ευνοεί τη ζωή σε εξωτερικούς χώρους."
+      }
+    },
+    {
+      layout: "faq",
+      title: { en: "FAQ About Parga", el: "Συχνές Ερωτήσεις για την Πάργα" },
+      text: {
+        en: "Common questions for planning your trip.",
+        el: "Συχνές ερωτήσεις για να οργανώσετε το ταξίδι σας."
+      },
+      items: [
+        {
+          title: { en: "Is Parga worth visiting?", el: "Αξίζει να πάω στην Πάργα;" },
+          text: {
+            en: "Yes. Parga is one of the most charming seaside destinations in mainland Greece, especially for travelers who want a scenic and easy summer escape.",
+            el: "Ναι. Η Πάργα είναι ένας από τους πιο γοητευτικούς παραθαλάσσιους προορισμούς στην ηπειρωτική Ελλάδα, ειδικά για όσους θέλουν μια γραφική και εύκολη καλοκαιρινή απόδραση."
+          }
+        },
+        {
+          title: { en: "What is Parga best known for?", el: "Για τι φημίζεται η Πάργα;" },
+          text: {
+            en: "It is best known for its colorful seaside setting, Venetian castle, and beach-friendly holiday atmosphere.",
+            el: "Είναι κυρίως γνωστή για το πολύχρωμο παραθαλάσσιο σκηνικό της, το ενετικό κάστρο και την ιδανική για παραλία καλοκαιρινή ατμόσφαιρα."
+          }
+        },
+        {
+          title: { en: "Is Parga like an island?", el: "Μοιάζει η Πάργα με νησί;" },
+          text: {
+            en: "In some ways, yes. Many travelers like Parga because it has an island-style feel while remaining on the mainland.",
+            el: "Από ορισμένες απόψεις, ναι. Σε πολλούς αρέσει η Πάργα επειδή προσφέρει την αίσθηση ενός νησιού παραμένοντας στην ηπειρωτική χώρα."
+          }
+        },
+        {
+          title: { en: "Is Parga good for couples?", el: "Είναι η Πάργα καλή επιλογή για ζευγάρια;" },
+          text: {
+            en: "Yes. It works very well for couples because of its visual charm, evening atmosphere, and relaxed coastal setting.",
+            el: "Ναι. Λειτουργεί εξαιρετικά για ζευγάρια χάρη στην οπτική της γοητεία, τη βραδινή της ατμόσφαιρα και το χαλαρό παραθαλάσσιο σκηνικό της."
+          }
+        },
+        {
+          title: { en: "How many days do you need in Parga?", el: "Πόσες μέρες χρειάζομαι στην Πάργα;" },
+          text: {
+            en: "It works well for a few days, but it can also be part of a longer western Greece or Epirus route.",
+            el: "Είναι ιδανική για λίγες μέρες, αλλά μπορεί κάλλιστα να αποτελέσει μέρος μιας μεγαλύτερης διαδρομής στη δυτική Ελλάδα ή την Ήπειρο."
+          }
+        },
+        {
+          title: { en: "Do you need a car in Parga?", el: "Χρειάζομαι αυτοκίνητο στην Πάργα;" },
+          text: {
+            en: "Not necessarily for the town itself, but it can be useful if you want to explore more of the wider coast and region.",
+            el: "Όχι απαραίτητα για την ίδια την πόλη, αλλά μπορεί να φανεί χρήσιμο αν θέλετε να εξερευνήσετε περισσότερο την ευρύτερη ακτή και την περιοχή."
+          }
+        }
+      ]
+    }
+  ],
+
+  delphi: [
+    {
+      layout: "list",
+      title: { en: "Why Visit Delphi", el: "Γιατί να πας στους Δελφούς" },
+      text: {
+        en: "Delphi is a strong choice for travelers who want one of Greece's most important archaeological sites, a destination with real symbolic and cultural depth, mountain scenery combined with ancient heritage, a rewarding mainland stop beyond the standard island route, and a place that feels thoughtful, memorable, and distinct.\n\nThis is not a destination built around entertainment or resort life. It is about history, atmosphere, and one of the strongest cultural landscapes in Greece.",
+        el: "Οι Δελφοί είναι μια εξαιρετική επιλογή για ταξιδιώτες που θέλουν να επισκεφθούν έναν από τους σημαντικότερους αρχαιολογικούς χώρους της Ελλάδας, έναν προορισμό με πραγματικό συμβολικό και πολιτισμικό βάθος, ορεινά τοπία σε συνδυασμό με την αρχαία κληρονομιά, μια ικανοποιητική στάση στην ηπειρωτική χώρα πέρα από τη συνηθισμένη διαδρομή των νησιών, και ένα μέρος που αποπνέει στοχασμό, μνήμη και ξεχωριστό χαρακτήρα.\n\nΔεν πρόκειται για προορισμό χτισμένο γύρω από τη διασκέδαση ή τη ζωή των resort. Αφορά την ιστορία, την ατμόσφαιρα και ένα από τα πιο ισχυρά πολιτιστικά τοπία στην Ελλάδα."
+      }
+    },
+    {
+      layout: "grid",
+      title: { en: "Best Areas and Highlights in Delphi", el: "Οι Καλύτερες Περιοχές & Αξιοθέατα" },
+      text: {
+        en: "Where to base your stay or focus your time in the region.",
+        el: "Πού να μείνετε ή να αφιερώσετε τον χρόνο σας στην περιοχή."
+      },
+      items: [
+        {
+          title: { en: "The archaeological site", el: "Ο αρχαιολογικός χώρος" },
+          text: {
+            en: "This is the center of Delphi's identity and the main reason most travelers visit. The site is not only historically important, but also visually dramatic because of its position on the mountain slope.",
+            el: "Αυτό είναι το κέντρο της ταυτότητας των Δελφών και ο κύριος λόγος που οι περισσότεροι ταξιδιώτες τους επισκέπτονται. Ο χώρος δεν είναι μόνο ιστορικά σημαντικός, αλλά και οπτικά εντυπωσιακός λόγω της θέσης του στην πλαγιά του βουνού."
+          }
+        },
+        {
+          title: { en: "The modern village of Delphi", el: "Το σύγχρονο χωριό των Δελφών" },
+          text: {
+            en: "The village gives the destination its practical base, with accommodation, restaurants, and views that support the experience without overpowering it.",
+            el: "Το χωριό δίνει στον προορισμό την πρακτική του βάση, με διαμονή, εστιατόρια και θέα που υποστηρίζουν την εμπειρία χωρίς να την επισκιάζουν."
+          }
+        },
+        {
+          title: { en: "The slopes of Parnassus", el: "Οι πλαγιές του Παρνασσού" },
+          text: {
+            en: "The wider mountain setting is part of what makes Delphi feel special. Even outside the archaeological core, the natural surroundings contribute strongly to the destination's atmosphere.",
+            el: "Το ευρύτερο ορεινό σκηνικό είναι μέρος αυτού που κάνει τους Δελφούς να μοιάζουν ξεχωριστοί. Ακόμα και έξω από τον αρχαιολογικό πυρήνα, το φυσικό περιβάλλον συμβάλλει καθοριστικά στην ατμόσφαιρα του προορισμού."
+          }
+        },
+        {
+          title: { en: "The valley views", el: "Η θέα στην κοιλάδα" },
+          text: {
+            en: "One of the most memorable elements of Delphi is how open and expansive it feels. The views beyond the site are part of the experience, not just the background.",
+            el: "Ένα από τα πιο αξέχαστα στοιχεία των Δελφών είναι το πόσο ανοιχτοί και ευρύχωροι φαίνονται. Η θέα πέρα από τον χώρο είναι μέρος της εμπειρίας, όχι απλώς το φόντο."
+          }
+        }
+      ]
+    },
+    {
+      layout: "list",
+      title: { en: "Main Attractions in Delphi", el: "Βασικά Αξιοθέατα" },
+      text: {
+        en: "Delphi is a destination where the value lies in both individual monuments and the wider setting around them.\n\n**The Temple of Apollo**\nThe symbolic heart of ancient Delphi and one of the most recognizable points within the archaeological site.\n\n**The ancient theater**\nThis is one of the most striking parts of the site, both for its historical importance and for the way it opens toward the landscape.\n\n**The sanctuary setting**\nPart of the power of Delphi comes from the fact that the site does not feel isolated from nature. The terrain, slope, and views all shape the experience.\n\n**The village and surrounding viewpoints**\nBeyond the archaeological visit, the village area gives the destination a quieter rhythm and a more grounded human scale.\n\n**A meaningful stop in mainland Greece**\nDelphi is often at its best when understood not only as a checklist site, but as a place to pause, look, and take in.",
+        el: "Οι Δελφοί είναι ένας προορισμός όπου η αξία βρίσκεται τόσο στα μεμονωμένα μνημεία όσο και στο ευρύτερο σκηνικό γύρω τους.\n\n**Ο Ναός του Απόλλωνα**\nΗ συμβολική καρδιά των αρχαίων Δελφών και ένα από τα πιο αναγνωρίσιμα σημεία μέσα στον αρχαιολογικό χώρο.\n\n**Το αρχαίο θέατρο**\nΑυτό είναι ένα από τα πιο εντυπωσιακά τμήματα του χώρου, τόσο για την ιστορική του σημασία όσο και για τον τρόπο που ανοίγεται προς το τοπίο.\n\n**Το σκηνικό του ιερού**\nΜέρος της δύναμης των Δελφών προέρχεται από το γεγονός ότι ο χώρος δεν μοιάζει αποκομμένος από τη φύση. Το έδαφος, η κλίση και η θέα διαμορφώνουν την εμπειρία.\n\n**Το χωριό και τα γύρω σημεία θέας**\nΠέρα από την αρχαιολογική επίσκεψη, η περιοχή του χωριού δίνει στον προορισμό έναν πιο ήσυχο ρυθμό και μια πιο γειωμένη ανθρώπινη κλίμακα.\n\n**Μια ουσιαστική στάση στην ηπειρωτική Ελλάδα**\nΟι Δελφοί είναι συχνά στα καλύτερά τους όταν τους κατανοείς όχι μόνο ως ένα μέρος για 'τσεκάρισμα' στη λίστα, αλλά ως έναν τόπο για να σταθείς, να κοιτάξεις και να αφομοιώσεις."
+      }
+    },
+    {
+      layout: "list",
+      title: { en: "Food and Local Flavors", el: "Φαγητό & Τοπικές Γεύσεις" },
+      text: {
+        en: "Food in Delphi is more about complementing the trip than defining it. Many visitors enjoy traditional Greek meals after visiting the site, quieter restaurant settings with mountain or valley views, simple tavern food that suits a slower mainland itinerary, and meals that feel grounded and regional rather than heavily touristic.\n\nDelphi is not a destination where food competes with the cultural experience. Instead, it supports it. A relaxed lunch or evening meal here often becomes part of the calm that follows a day of walking through history and landscape.\n\n[Explore our Greece food & drink guides for more ideas across the country](/collections/greece-food-and-drink).",
+        el: "Το φαγητό στους Δελφούς αφορά περισσότερο τη συμπλήρωση του ταξιδιού παρά τον καθορισμό του. Πολλοί επισκέπτες απολαμβάνουν παραδοσιακά ελληνικά γεύματα μετά την επίσκεψη στον χώρο, πιο ήσυχα εστιατόρια με θέα στο βουνό ή την κοιλάδα, απλό φαγητό ταβέρνας που ταιριάζει σε ένα πιο αργό ηπειρωτικό δρομολόγιο, και γεύματα που μοιάζουν γειωμένα και τοπικά, αντί για βαριά τουριστικά.\n\nΟι Δελφοί δεν είναι ένας προορισμός όπου το φαγητό ανταγωνίζεται την πολιτιστική εμπειρία. Αντίθετα, την υποστηρίζει. Ένα χαλαρό μεσημεριανό ή βραδινό γεύμα εδώ γίνεται συχνά μέρος της ηρεμίας που ακολουθεί μια μέρα περιπάτου μέσα από την ιστορία και το τοπίο.\n\n[Ανακαλύψτε τοπικές γεύσεις στους οδηγούς μας](/collections/greece-food-and-drink)."
+      }
+    },
+    {
+      layout: "numbered",
+      title: { en: "Where to Stay in Delphi", el: "Πού να Μείνετε στους Δελφούς" },
+      text: {
+        en: "Where you stay in Delphi usually depends on whether you want convenience, atmosphere, or a broader mainland route base. [Explore our Delphi hotel recommendations](/hotels?destination=delphi).",
+        el: "Το πού θα μείνετε στους Δελφούς συνήθως εξαρτάται από το αν θέλετε ευκολία, ατμόσφαιρα ή μια ευρύτερη βάση για διαδρομές στην ηπειρωτική χώρα. [Ανακαλύψτε τις προτάσεις μας για διαμονή](/hotels?destination=delphi)."
+      },
+      items: [
+        {
+          title: { en: "Stay in Delphi village if", el: "Μείνετε στο χωριό των Δελφών αν" },
+          text: {
+            en: "You want direct access to the archaeological site. You prefer the most practical and straightforward base. Your trip is centered specifically on the destination itself.",
+            el: "Θέλετε άμεση πρόσβαση στον αρχαιολογικό χώρο. Προτιμάτε την πιο πρακτική και απλή βάση. Το ταξίδι σας είναι επικεντρωμένο ειδικά στον ίδιο τον προορισμό."
+          }
+        },
+        {
+          title: { en: "Choose a view-oriented stay if", el: "Επιλέξτε κατάλυμα με θέα αν" },
+          text: {
+            en: "The landscape and overall atmosphere matter a lot to your trip. You want Delphi to feel more like a memorable stop than just a short visit.",
+            el: "Το τοπίο και η συνολική ατμόσφαιρα έχουν μεγάλη σημασία για το ταξίδι σας. Θέλετε οι Δελφοί να μοιάζουν περισσότερο με μια αξέχαστη στάση παρά με μια απλή σύντομη επίσκεψη."
+          }
+        },
+        {
+          title: { en: "Use Delphi as an overnight stop if", el: "Επιλέξτε διανυκτέρευση αν" },
+          text: {
+            en: "You are combining it with a broader central or southern Greece route. You want to experience the site without rushing in and out on the same day.",
+            el: "Τους συνδυάζετε με μια ευρύτερη διαδρομή στην κεντρική ή νότια Ελλάδα. Θέλετε να ζήσετε την εμπειρία του χώρου χωρίς να βιαστείτε να φύγετε την ίδια μέρα."
+          }
+        }
+      ]
+    },
+    {
+      layout: "list",
+      title: { en: "Things to Do in Delphi", el: "Τι να Κάνετε στους Δελφούς" },
+      text: {
+        en: "Delphi is best experienced with a slower, more attentive pace. Some of the most rewarding ways to spend time here include walking through the archaeological site carefully, taking time at the theater and major sanctuary points, pausing for views rather than rushing from monument to monument, staying long enough to see the destination in different light, and combining Delphi with nearby mainland drives or broader cultural routes.\n\nThis is one of those places where a calm and focused visit usually creates a better experience than trying to treat it like a quick stop between other destinations.\n\n[Explore our Delphi tours and experiences](/tours/all).",
+        el: "Η καλύτερη εμπειρία στους Δελφούς έρχεται με έναν πιο αργό και προσεκτικό ρυθμό. Μερικοί από τους καλύτερους τρόπους να περάσετε τον χρόνο σας περιλαμβάνουν το προσεκτικό περπάτημα στον αρχαιολογικό χώρο, την αφιέρωση χρόνου στο θέατρο και τα κύρια σημεία του ιερού, τις στάσεις για τη θέα αντί για τη βιασύνη από μνημείο σε μνημείο, τη διαμονή για αρκετό χρόνο ώστε να δείτε τον προορισμό σε διαφορετικό φως, και τον συνδυασμό των Δελφών με κοντινές οδικές διαδρομές ή ευρύτερες πολιτιστικές διαδρομές.\n\nΕίναι από εκείνα τα μέρη όπου μια ήρεμη και εστιασμένη επίσκεψη συνήθως δημιουργεί μια καλύτερη εμπειρία, παρά το να τους αντιμετωπίσετε ως μια γρήγορη στάση ανάμεσα σε άλλους προορισμούς.\n\n[Δείτε εμπειρίες και tours στους Δελφούς](/tours/all)."
+      }
+    },
+    {
+      layout: "list",
+      title: { en: "Best Time to Visit", el: "Η Καλύτερη Εποχή για να Πάτε" },
+      text: {
+        en: "Delphi can be rewarding through much of the year, which makes it different from strongly seasonal destinations.\n\nSpring and autumn are especially attractive for walking, views, and balanced temperatures. Summer still works well, but midday heat can affect the pace of the archaeological visit. Shoulder season often suits Delphi very well because the destination is driven by history, setting, and landscape rather than beach weather.\n\nLighting, temperature, and visibility matter here more than nightlife or seasonal holiday energy.",
+        el: "Οι Δελφοί μπορούν να είναι ικανοποιητικοί για μεγάλο μέρος του χρόνου, γεγονός που τους διαφοροποιεί από τους έντονα εποχιακούς προορισμούς.\n\nΗ άνοιξη και το φθινόπωρο είναι ιδιαίτερα ελκυστικά για περπάτημα, θέα και ισορροπημένες θερμοκρασίες. Το καλοκαίρι εξακολουθεί να λειτουργεί καλά, αλλά η ζέστη το μεσημέρι μπορεί να επηρεάσει τον ρυθμό της αρχαιολογικής επίσκεψης. Η ενδιάμεση εποχή συχνά ταιριάζει πολύ καλά στους Δελφούς, καθώς ο προορισμός βασίζεται στην ιστορία, το σκηνικό και το τοπίο, κι όχι στον καιρό για μπάνιο.\n\nΟ φωτισμός, η θερμοκρασία και η ορατότητα έχουν εδώ μεγαλύτερη σημασία από τη νυχτερινή ζωή ή την ενέργεια των εποχιακών διακοπών."
+      }
+    },
+    {
+      layout: "faq",
+      title: { en: "FAQ About Delphi", el: "Συχνές Ερωτήσεις για τους Δελφούς" },
+      text: {
+        en: "Common questions for planning your trip.",
+        el: "Συχνές ερωτήσεις για να οργανώσετε το ταξίδι σας."
+      },
+      items: [
+        {
+          title: { en: "Is Delphi worth visiting?", el: "Αξίζει να πάω στους Δελφούς;" },
+          text: {
+            en: "Yes. Delphi is one of the most important and rewarding historic destinations in Greece, especially for travelers interested in culture, archaeology, and landscape.",
+            el: "Ναι. Οι Δελφοί είναι ένας από τους πιο σημαντικούς και ικανοποιητικούς ιστορικούς προορισμούς στην Ελλάδα, ειδικά για ταξιδιώτες που ενδιαφέρονται για τον πολιτισμό, την αρχαιολογία και το τοπίο."
+          }
+        },
+        {
+          title: { en: "What is Delphi best known for?", el: "Για τι φημίζονται οι Δελφοί;" },
+          text: {
+            en: "It is best known for the ancient oracle, the Temple of Apollo, and its role as one of the most symbolic sacred sites of the ancient Greek world.",
+            el: "Είναι κυρίως γνωστοί για το αρχαίο μαντείο, τον Ναό του Απόλλωνα και τον ρόλο τους ως ένας από τους πιο συμβολικούς ιερούς τόπους του αρχαίου ελληνικού κόσμου."
+          }
+        },
+        {
+          title: { en: "How many days do you need in Delphi?", el: "Πόσες μέρες χρειάζομαι στους Δελφούς;" },
+          text: {
+            en: "Many travelers visit briefly, but an overnight stay often makes the experience more rewarding and less rushed.",
+            el: "Πολλοί ταξιδιώτες πραγματοποιούν σύντομες επισκέψεις, αλλά η διανυκτέρευση συχνά κάνει την εμπειρία πιο ικανοποιητική και λιγότερο βιαστική."
+          }
+        },
+        {
+          title: { en: "Is Delphi only for history lovers?", el: "Είναι οι Δελφοί μόνο για λάτρεις της ιστορίας;" },
+          text: {
+            en: "No. Even travelers without a strong academic interest in history often find Delphi memorable because of its setting, atmosphere, and visual power.",
+            el: "Όχι. Ακόμα και ταξιδιώτες χωρίς έντονο ακαδημαϊκό ενδιαφέρον για την ιστορία συχνά βρίσκουν τους Δελφούς αξέχαστους χάρη στο σκηνικό, την ατμόσφαιρα και την οπτική τους δύναμη."
+          }
+        },
+        {
+          title: { en: "Can Delphi be part of a mainland Greece route?", el: "Συνδυάζονται με road trip στην ενδοχώρα;" },
+          text: {
+            en: "Yes. Delphi works very well as part of a broader trip through mainland Greece and central Greece.",
+            el: "Ναι. Λειτουργούν εξαιρετικά ως μέρος ενός ευρύτερου ταξιδιού στην ηπειρωτική και κεντρική Ελλάδα."
+          }
+        },
+        {
+          title: { en: "Do you need a car in Delphi?", el: "Χρειάζομαι αυτοκίνητο στους Δελφούς;" },
+          text: {
+            en: "Not necessarily if Delphi is your main stop, but it can be useful if you are combining it with a wider road trip.",
+            el: "Όχι απαραίτητα αν οι Δελφοί είναι ο κύριος σταθμός σας, αλλά μπορεί να φανεί χρήσιμο αν τους συνδυάσετε με ένα ευρύτερο road trip."
+          }
+        }
+      ]
+    }
+  ],
 };

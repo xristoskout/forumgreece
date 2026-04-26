@@ -47,6 +47,16 @@ const nextConfig: NextConfig = {
         destination: '/:lang/travel-info/best-time-to-visit-greece',
         permanent: true,
       },
+      {
+        source: '/:lang(en|el)/travel-info/where-to-stay-in-santorini',
+        destination: '/:lang/hotels/santorini',
+        permanent: true,
+      },
+      {
+        source: '/travel-info/where-to-stay-in-santorini',
+        destination: '/en/hotels/santorini',
+        permanent: true,
+      },
     ];
   },
 };

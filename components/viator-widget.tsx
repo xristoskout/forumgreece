@@ -10,54 +10,15 @@ type ViatorWidgetProps = {
 
 const VIATOR_SCRIPT_SRC = "https://www.viator.com/orion/partner/widget.js";
 
-/**
- * ViatorWidget
- *
- * The core problem with third-party widgets in SPAs:
- *   1. The widget script sets global flags like window.ViatorWidgets
- *   2. On Next.js client-side navigation the script is NOT re-downloaded
- *   3. Even if we inject a new <script>, the fresh copy sees the global
- *      flag and exits early — so the widget never renders.
- *
- * Fix:
- *   1. Wipe ALL window properties whose name contains "viator" (case-insensitive)
- *      so the fresh copy of the script sees a clean global state.
- *   2. Remove every existing <script> that points at the Viator CDN.
- *   3. Re-create the placeholder <div> inside the container ref.
- *   4. Append a brand-new <script> to document.body (scripts appended to
- *      nested divs are not always executed by all browsers).
- *   5. Use a cache-buster (?_=timestamp) so the browser re-downloads
- *      the script instead of serving a cached + already-run copy.
- *   6. Callers should also pass key={widgetRef} so React fully unmounts
- *      and remounts this component on every route change.
- */
-export default function ViatorWidget({
-  partnerId,
-  widgetRef,
-  className = "",
-}: ViatorWidgetProps) {
-  const containerRef = useRef<HTMLDivElement | null>(null);
-  // "ready" delays the effect by one tick so React has fully committed
-  // the container div to the DOM before we start manipulating it.
-  const [ready, setReady] = useState(false);
+let viatorScriptTimeout: ReturnType<typeof setTimeout> | null = null;
 
-  useEffect(() => {
-    // Small delay ensures the container is in the DOM
-    const timer = setTimeout(() => setReady(true), 50);
-    return () => {
-      clearTimeout(timer);
-      setReady(false);
-    };
-  }, [partnerId, widgetRef]);
-
-  useEffect(() => {
-    if (!ready) return;
-    const container = containerRef.current;
-    if (!container) return;
-
+function injectViatorScript() {
+  if (viatorScriptTimeout) {
+    clearTimeout(viatorScriptTimeout);
+  }
+  
+  viatorScriptTimeout = setTimeout(() => {
     // ── Step 1: Wipe Viator global state ──────────────────────────────
-    // The Viator script guards against double-init with window globals.
-    // Deleting them forces the fresh script copy to run its full init.
     try {
       const win = window as unknown as Record<string, unknown>;
       Object.keys(win).forEach((k) => {
@@ -65,12 +26,12 @@ export default function ViatorWidget({
           try {
             delete win[k];
           } catch {
-            // Some globals (e.g. on Safari) can't be deleted; ignore.
+            // Some globals can't be deleted; ignore.
           }
         }
       });
     } catch {
-      // If Object.keys(window) throws, continue anyway.
+      // Ignore if Object.keys throws
     }
 
     // ── Step 2: Remove all existing Viator <script> tags ─────────────
@@ -78,28 +39,76 @@ export default function ViatorWidget({
       .querySelectorAll(`script[src*="viator.com"]`)
       .forEach((el) => el.remove());
 
-    // ── Step 3: Clear the container and add the placeholder <div> ────
+    // ── Step 3: Inject a fresh script to document.body ───────────────
+    const script = document.createElement("script");
+    script.src = `${VIATOR_SCRIPT_SRC}?_=${Date.now()}`;
+    script.async = true;
+    document.body.appendChild(script);
+  }, 200);
+}
+
+/**
+ * ViatorWidget
+ *
+ * Optimized to fix performance issues on pages with multiple widgets (e.g. /tours/all).
+ * 1. Uses IntersectionObserver to lazy-load the widget only when it scrolls near the viewport.
+ * 2. Uses a global debounced function (injectViatorScript) so that if multiple widgets
+ *    become visible at the exact same time, the heavy script is only injected ONCE.
+ */
+export default function ViatorWidget({
+  partnerId,
+  widgetRef,
+  className = "",
+}: ViatorWidgetProps) {
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  // Lazy load using IntersectionObserver
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect(); // Only load once
+        }
+      },
+      { rootMargin: "600px" } // Load slightly before it comes into view
+    );
+
+    observer.observe(container);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  // Initialize placeholder and script once visible
+  useEffect(() => {
+    if (!isVisible) return;
+    
+    const container = containerRef.current;
+    if (!container) return;
+
+    // Clear the container and add the placeholder <div>
     container.innerHTML = "";
     const placeholder = document.createElement("div");
     placeholder.setAttribute("data-vi-partner-id", partnerId);
     placeholder.setAttribute("data-vi-widget-ref", widgetRef);
     container.appendChild(placeholder);
 
-    // ── Step 4: Inject a fresh script to document.body ───────────────
-    // Scripts MUST be appended to body/head to be reliably executed.
-    // Cache-buster forces re-download so the browser re-runs the code.
-    const script = document.createElement("script");
-    script.src = `${VIATOR_SCRIPT_SRC}?_=${Date.now()}`;
-    script.async = true;
-    document.body.appendChild(script);
+    // Call the globally debounced script injector
+    injectViatorScript();
 
     return () => {
-      script.remove();
       if (containerRef.current) {
         containerRef.current.innerHTML = "";
       }
     };
-  }, [ready, partnerId, widgetRef]);
+  }, [isVisible, partnerId, widgetRef]);
 
-  return <div ref={containerRef} className={className} />;
+  // Give the container a min-height to avoid layout shift before widget loads
+  return <div ref={containerRef} className={className} style={{ minHeight: "400px" }} />;
 }
