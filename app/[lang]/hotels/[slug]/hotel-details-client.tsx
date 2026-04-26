@@ -215,14 +215,30 @@ export default function HotelDetailsClient() {
           </div>
         </section>
 
-        {(slug === "santorini" || slug === "corfu" || slug === "lesvos") && (
+        {(slug === "santorini" || slug === "corfu" || slug === "lesvos" || slug === "mykonos" || slug === "crete" || slug === "kefalonia" || slug === "athens" || slug === "nayplio-odigos-taxidiou" || slug === "thessaloniki" || slug === "paros" || slug === "milos" || slug === "zakynthos" || slug === "rhodes" || slug === "halkidiki" || slug === "meteora" || slug === "monemvasia" || slug === "chania" || slug === "parga" || slug === "delphi") && (
           <section className="mt-10 overflow-hidden rounded-[2.5rem] border border-slate-200 shadow-xl bg-white p-3">
              <iframe 
-              id={`stay22-widget-top-${slug}`}
+              id="stay22-widget"
               width="100%" 
-              height="600" 
+              height="428" 
               src={
                 slug === "santorini" ? "https://stay22.com/embed/69eb77823fa26d2af687fe19" :
+                slug === "mykonos" ? "https://stay22.com/embed/69ee3a9d4e520cef98dea92a" :
+                slug === "crete" ? "https://stay22.com/embed/69ee3b284d8b00b0283f8d3f" :
+                slug === "kefalonia" ? "https://stay22.com/embed/69ee3b9db13cd4c6bacc2fbc" :
+                slug === "athens" ? "https://stay22.com/embed/69ee3bf84e520cef98dead1e" :
+                slug === "nayplio-odigos-taxidiou" ? "https://stay22.com/embed/69ee3c9a4e520cef98deae24" :
+                slug === "thessaloniki" ? "https://stay22.com/embed/69ee3cf34e520cef98deaf0d" :
+                slug === "paros" ? "https://stay22.com/embed/69ee3d424d8b00b0283f916d" :
+                slug === "milos" ? "https://stay22.com/embed/69ee3d8c4e520cef98deb0c3" :
+                slug === "zakynthos" ? "https://stay22.com/embed/69ee3e1c1c09e44123fd027c" :
+                slug === "rhodes" ? "https://stay22.com/embed/69ee3ea44e520cef98deb2ec" :
+                slug === "halkidiki" ? "https://stay22.com/embed/69ee3f1a1c09e44123fd04c7" :
+                slug === "meteora" ? "https://stay22.com/embed/69ee3f7cb13cd4c6bacc38c1" :
+                slug === "monemvasia" ? "https://stay22.com/embed/69ee3fdf4e520cef98deb56d" :
+                slug === "chania" ? "https://stay22.com/embed/69ee406d1c09e44123fd07ce" :
+                slug === "parga" ? "https://stay22.com/embed/69ee40b84e520cef98deb77b" :
+                slug === "delphi" ? "https://stay22.com/embed/69ee410f4e520cef98deb892" :
                 slug === "corfu" ? "https://stay22.com/embed/69eb79623fa26d2af68804f7" :
                 "https://stay22.com/embed/69eb79de3fa26d2af68806f8"
               }
