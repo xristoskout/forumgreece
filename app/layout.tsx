@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Montserrat, Geist_Mono, Noto_Sans } from "next/font/google";
+import { Montserrat, Geist_Mono, Noto_Sans, Playfair_Display } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Script from "next/script";
@@ -24,6 +24,13 @@ const geistMono = Geist_Mono({
 const notoGreek = Noto_Sans({
   variable: "--font-greek-sans",
   subsets: ["greek", "greek-ext"],
+  display: "swap",
+  preload: true,
+});
+
+const playfair = Playfair_Display({
+  variable: "--font-serif",
+  subsets: ["latin", "latin-ext", "greek", "greek-ext"],
   display: "swap",
   preload: true,
 });
@@ -94,7 +101,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${notoGreek.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${notoGreek.variable} ${playfair.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-[#f4f7fb] text-slate-900 relative selection:bg-purple-500/30">
         <Script

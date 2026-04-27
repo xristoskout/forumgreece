@@ -69,6 +69,118 @@ export type ExperienceBusiness = {
 
 export const experienceLandings: ExperienceLanding[] = [
   {
+    slug: "mykonos-tours",
+    seo: {
+      title: {
+        en: "Mykonos Tours & Experiences | Delos Trips, Beaches & Luxury Boat Tours",
+        el: "Εκδρομές & Εμπειρίες στη Μύκονο | Δήλος, Παραλίες & Luxury Boat Tours",
+      },
+      description: {
+        en: "Explore the best Mykonos tours and experiences, from Delos island day trips and luxury boat tours to beach hopping, Mykonos Town walks, and sunset cruises.",
+        el: "Ανακαλύψτε τις καλύτερες εκδρομές στη Μύκονο: από ημερήσιες στη Δήλο και luxury boat tours μέχρι βόλτες στη Χώρα, παραλίες και κρουαζιέρες στο ηλιοβασίλεμα.",
+      },
+    },
+    title: {
+      en: "Mykonos Tours & Experiences",
+      el: "Εκδρομές & Εμπειρίες στη Μύκονο",
+    },
+    description: {
+      en: "Mykonos combines cosmopolitan island life, iconic beaches, whitewashed streets, luxury experiences, and easy access to the sacred island of Delos.",
+      el: "Η Μύκονος συνδυάζει την κοσμοπολίτικη ζωή, τις εμβληματικές παραλίες, τα κυκλαδίτικα σοκάκια, τις luxury εμπειρίες και την άμεση πρόσβαση στο ιερό νησί της Δήλου.",
+    },
+    overview: {
+      en: "Mykonos is famous for beach clubs, nightlife, and glamorous summer energy. But beyond the famous party scene, the island has quiet morning streets, small chapels, windmills, traditional houses, and one of the most important archaeological sites in Greece just a short boat ride away.\n\nMykonos tours help you see the island with more balance. Whether you are visiting for the beaches, the shopping, or the history of Delos, there are plenty of ways to experience the island beyond the usual postcards.",
+      el: "Η Μύκονος είναι διάσημη για τα beach clubs και την έντονη ζωή της. Όμως, πέρα από τη λάμψη, το νησί έχει ήσυχα πρωινά στα σοκάκια, μικρά ξωκλήσια, μύλους και έναν από τους σημαντικότερους αρχαιολογικούς χώρους της Ελλάδας σε απόσταση αναπνοής.\n\nΟι εκδρομές στη Μύκονο σας βοηθούν να δείτε την ισορροπημένη πλευρά του νησιού. Είτε έρχεστε για τις παραλίες, είτε για την ιστορία της Δήλου, υπάρχουν πολλοί τρόποι να ζήσετε το νησί πέρα από τις κλασικές φωτογραφίες.",
+    },
+    highlights: {
+      en: ["Delos Island Tours", "Luxury Boat Trips", "Mykonos Town Walks", "Sunset Cruises"],
+      el: ["Εκδρομές στη Δήλο", "Luxury Boat Trips", "Βόλτες στη Χώρα", "Κρουαζιέρες Ηλιοβασιλέματος"],
+    },
+    highlightReasons: {
+      en: [
+        "Explore the sacred birthplace of Apollo and Artemis.",
+        "Swim in secluded coves and clear turquoise waters.",
+        "Discover the hidden alleys and history of Mykonos Town.",
+        "Watch the sunset from the sea with a view of Little Venice.",
+      ],
+      el: [
+        "Εξερευνήστε το ιερό νησί, γενέτειρα του Απόλλωνα και της Άρτεμης.",
+        "Κολυμπήστε σε απομονωμένους κόλπους με τυρκουάζ νερά.",
+        "Ανακαλύψτε τα κρυφά σοκάκια και την ιστορία της Χώρας.",
+        "Δείτε το ηλιοβασίλεμα από τη θάλασσα με θέα τη Μικρή Βενετία.",
+      ],
+    },
+    image: "/images/mykonos.webp",
+    whatToBook: {
+      title: { en: "Best things to do in Mykonos", el: "Τα καλύτερα πράγματα να κάνετε στη Μύκονο" },
+      sections: [
+        {
+          title: { en: "Delos Island Tours", el: "Εκδρομές στη Δήλο" },
+          content: {
+            en: "Delos is one of the most important archaeological sites in Greece. A guided tour helps you understand the ruins, temples, and mosaics of this sacred ancient center.",
+            el: "Η Δήλος είναι ένας από τους σημαντικότερους αρχαιολογικούς χώρους της Ελλάδας. Μια ξενάγηση θα σας βοηθήσει να κατανοήσετε τους ναούς και τα ψηφιδωτά αυτού του αρχαίου κέντρου.",
+          },
+        },
+        {
+          title: { en: "Luxury Boat Trips", el: "Luxury Boat Trips" },
+          content: {
+            en: "A boat day lets you see the island from the water, swim in clear coves like Rhenia, and visit beaches without the crowds. Private and small-group options are available.",
+            el: "Μια μέρα με σκάφος σας επιτρέπει να δείτε το νησί από το νερό, να κολυμπήσετε στη Ρήνεια και να επισκεφθείτε παραλίες μακριά από την πολυκοσμία.",
+          },
+        },
+        {
+          title: { en: "Mykonos Town Walks", el: "Βόλτες στη Χώρα Μυκόνου" },
+          content: {
+            en: "Explore the narrow white streets of Chora, visit Little Venice and the windmills, and discover the stories behind the island's most famous landmarks.",
+            el: "Εξερευνήστε τα στενά λευκά σοκάκια της Χώρας, επισκεφθείτε τη Μικρή Βενετία και τους Μύλους, και ανακαλύψτε την ιστορία πίσω από τα εμβληματικά ορόσημα.",
+          },
+        },
+        {
+          title: { en: "Beaches & Beach Clubs", el: "Παραλίες & Beach Clubs" },
+          content: {
+            en: "From the famous party beaches to quieter swimming spots, a beach tour can help you experience the different moods of the Mykonos coastline.",
+            el: "Από τις διάσημες κοσμοπολίτικες παραλίες μέχρι τις πιο ήσυχες γωνιές, ένα beach tour θα σας δείξει όλες τις πτυχές της ακτογραμμής.",
+          },
+        },
+      ],
+    },
+    faq: {
+      title: { en: "Frequently Asked Questions", el: "Συχνές Ερωτήσεις" },
+      questions: [
+        {
+          question: { en: "What are the best tours in Mykonos?", el: "Ποιες είναι οι καλύτερες εκδρομές στη Μύκονο;" },
+          answer: {
+            en: "The top experiences include Delos island trips, luxury boat tours, beach cruises, and walking tours of Mykonos Town.",
+            el: "Οι κορυφαίες εμπειρίες περιλαμβάνουν επισκέψεις στη Δήλο, luxury boat tours, κρουαζιέρες σε παραλίες και περιπάτους στη Χώρα.",
+          },
+        },
+        {
+          question: { en: "Is Delos worth visiting?", el: "Αξίζει η επίσκεψη στη Δήλο;" },
+          answer: {
+            en: "Yes, it is one of the world's most significant open-air museums. A guided tour is highly recommended to fully appreciate the history.",
+            el: "Ναι, είναι ένα από τα σημαντικότερα υπαίθρια μουσεία του κόσμου. Η ξενάγηση συστήνεται ανεπιφύλακτα για να κατανοήσετε την ιστορία.",
+          },
+        },
+        {
+          question: { en: "How many days do I need in Mykonos?", el: "Πόσες μέρες χρειάζομαι στη Μύκονο;" },
+          answer: {
+            en: "3 to 4 days give you enough time for Mykonos Town, the beaches, a boat trip to Delos, and some relaxed meals.",
+            el: "3 με 4 μέρες είναι ιδανικές για να δείτε τη Χώρα, τις παραλίες, να πάτε στη Δήλο και να απολαύσετε το φαγητό σας.",
+          },
+        },
+      ],
+    },
+    internalCta: {
+      title: { en: "Explore Mykonos with style", el: "Εξερευνήστε τη Μύκονο με στυλ" },
+      text: {
+        en: "Choose the Mykonos experiences that fit your trip and discover the island beyond the glamour.",
+        el: "Επιλέξτε τις εμπειρίες που σας ταιριάζουν και ανακαλύψτε τη Μύκονο πέρα από τη λάμψη.",
+      },
+      linkHref: "/destinations/mykonos",
+      linkLabel: { en: "Explore Mykonos Guide", el: "Δείτε τον Οδηγό Μυκόνου" },
+    },
+  },
+  {
     slug: "kefalonia-tours",
     seo: {
       title: {
@@ -169,7 +281,7 @@ export const experienceLandings: ExperienceLanding[] = [
       title: { en: "Continue planning your trip", el: "Συνεχίστε την οργάνωση του ταξιδιού σας" },
       text: { en: "Explore our Kefalonia destination guide for beaches, places to stay, food ideas, and practical travel inspiration.", el: "Εξερευνήστε τον οδηγό μας για την Κεφαλονιά για παραλίες, μέρη για διαμονή, ιδέες για φαγητό και πρακτική ταξιδιωτική έμπνευση." },
       linkHref: "/destinations/kefalonia",
-      linkLabel: { en: "Kefalonia Guide", el: "Οδηγός Κεφαλονιάς" },
+      linkLabel: { en: "Explore Kefalonia Guide", el: "Οδηγός Κεφαλονιάς" },
     },
     highlights: {
       en: [
@@ -301,7 +413,7 @@ export const experienceLandings: ExperienceLanding[] = [
       title: { en: "Explore more of the island", el: "Εξερευνήστε περισσότερο το νησί" },
       text: { en: "Visit our Lesvos destination guide for beaches, villages, food ideas, and travel planning tips.", el: "Διαβάστε τον οδηγό προορισμού μας για τη Λέσβο για παραλίες, χωριά, φαγητό και πρακτικές συμβουλές." },
       linkHref: "/destinations/lesvos",
-      linkLabel: { en: "Lesvos Guide", el: "Οδηγός Λέσβου" },
+      linkLabel: { en: "Explore Lesvos Guide", el: "Οδηγός Λέσβου" },
     },
     highlights: {
       en: [
@@ -442,7 +554,7 @@ export const experienceLandings: ExperienceLanding[] = [
       title: { en: "Continue planning your trip", el: "Συνεχίστε την οργάνωση του ταξιδιού σας" },
       text: { en: "Explore our Crete destination guide for where to stay, what to see, local flavors, and travel inspiration.", el: "Εξερευνήστε τον οδηγό μας για την Κρήτη για διαμονή, αξιοθέατα, τοπικές γεύσεις και ταξιδιωτική έμπνευση." },
       linkHref: "/destinations/crete",
-      linkLabel: { en: "Crete Guide", el: "Οδηγός Κρήτης" },
+      linkLabel: { en: "Explore Crete Guide", el: "Οδηγός Κρήτης" },
     },
     highlights: {
       en: [
@@ -473,6 +585,280 @@ export const experienceLandings: ExperienceLanding[] = [
       ],
     },
     image: "/images/tours/crete-tours.webp",
+  },
+  {
+    slug: "athens-tours",
+    seo: {
+      title: {
+        en: "Athens Tours & Experiences | Acropolis, Walking Tours & Saronic Gulf Trips",
+        el: "Εκδρομές & Εμπειρίες στην Αθήνα | Ακρόπολη, Walking Tours & Σαρωνικός",
+      },
+      description: {
+        en: "Explore the best Athens tours and experiences, from Acropolis guided visits and historic walking tours to Greek food tours, Cape Sounion sunsets, and Saronic Gulf boat trips.",
+        el: "Ανακαλύψτε τις καλύτερες εκδρομές στην Αθήνα: ξεναγήσεις στην Ακρόπολη, walking tours, γαστρονομικές εμπειρίες, ηλιοβασίλεμα στο Σούνιο και κρουαζιέρες στον Σαρωνικό.",
+      },
+    },
+    title: {
+      en: "Athens Tours & Experiences",
+      el: "Εκδρομές & Εμπειρίες στην Αθήνα",
+    },
+    description: {
+      en: "Athens is where ancient history, modern Greek life, food, sea views, and neighborhood energy all meet in one place.",
+      el: "Η Αθήνα είναι το μέρος όπου η αρχαία ιστορία, η σύγχρονη ελληνική ζωή, το φαγητό, η θέα στη θάλασσα και η ενέργεια των γειτονιών συναντιούνται σε ένα σημείο.",
+    },
+    overview: {
+      en: "Discover Athens beyond the obvious. Athens is famous for the Acropolis, and yes, it deserves the attention. But the city is much more than one monument. It is morning coffee under old balconies, narrow streets in Plaka, street art in Psiri, ancient ruins next to busy cafés, rooftop views at sunset, and small tavernas where the food somehow becomes part of the memory.\n\nAthens tours are a good way to understand the city faster. A guided walk can turn a simple visit to ancient sites into a real story, while food tours, evening walks, and short boat trips help you see the more relaxed side of the Greek capital.\n\nWhether you are visiting Athens for one day, a weekend, or using it as the starting point for a longer Greece itinerary, the city gives you plenty of ways to experience history, culture, food, and the sea without going far.",
+      el: "Ανακαλύψτε την Αθήνα πέρα από τα προφανή. Η Αθήνα είναι διάσημη για την Ακρόπολη, και ναι, αξίζει όλη την προσοχή. Αλλά η πόλη είναι πολλά περισσότερα από ένα μνημείο. Είναι ο πρωινός καφές κάτω από παλιά μπαλκόνια, τα στενά δρομάκια στην Πλάκα, η street art στου Ψυρρή, οι αρχαίες ανασκαφές δίπλα σε πολυσύχναστα καφέ, η θέα από τις ταράτσες στο ηλιοβασίλεμα και οι μικρές ταβέρνες όπου το φαγητό γίνεται μέρος της ανάμνησης.\n\nΟι εκδρομές στην Αθήνα είναι ένας καλός τρόπος να γνωρίσετε την πόλη πιο γρήγορα. Μια ξενάγηση μπορεί να μετατρέψει μια απλή επίσκεψη σε αρχαιολογικούς χώρους σε μια ζωντανή ιστορία, ενώ τα food tours, οι βραδινοί περίπατοι και οι σύντομες θαλάσσιες αποδράσεις σας βοηθούν να δείτε την πιο χαλαρή πλευρά της ελληνικής πρωτεύουσας.\n\nΕίτε επισκέπτεστε την Αθήνα για μία μέρα, είτε για ένα Σαββατοκύριακο, είτε την χρησιμοποιείτε ως αφετηρία για ένα μεγαλύτερο ταξίδι στην Ελλάδα, η πόλη σας προσφέρει αμέτρητους τρόπους να ζήσετε την ιστορία, τον πολιτισμό, το φαγητό και τη θάλασσα χωρίς να πάτε μακριά.",
+    },
+    recommendedIntro: {
+      en: "These are selected experiences and guided options we highlight in Athens. We focus on quality and local insight to help you see the city properly.",
+      el: "Αυτές είναι επιλεγμένες εμπειρίες και ξεναγήσεις που ξεχωρίζουμε στην Αθήνα. Εστιάζουμε στην ποιότητα και την τοπική γνώση για να γνωρίσετε την πόλη σωστά.",
+    },
+    moreToursIntro: {
+      en: "Explore more bookable activities in Athens, including Acropolis visits, walking tours, food experiences, and day trips to the coast and nearby islands.",
+      el: "Εξερευνήστε περισσότερες δραστηριότητες στην Αθήνα, συμπεριλαμβανομένων επισκέψεων στην Ακρόπολη, walking tours, γαστρονομικών εμπειριών και ημερήσιων εκδρομών στην ακτή και τα κοντινά νησιά.",
+    },
+    whatToBook: {
+      title: { en: "Best Things to Do in Athens", el: "Τι να Κλείσετε στην Αθήνα" },
+      sections: [
+        {
+          title: { en: "Acropolis and ancient Athens tours", el: "Ξεναγήσεις στην Ακρόπολη & την Αρχαία Αθήνα" },
+          content: { en: "Visit the Acropolis, the Parthenon, and key archaeological sites with expert guidance to understand the myths and history behind the ruins.", el: "Επισκεφθείτε την Ακρόπολη, τον Παρθενώνα και σημαντικούς αρχαιολογικούς χώρους με έμπειρους ξεναγούς για να κατανοήσετε τους μύθους και την ιστορία πίσω από τα ερείπια." },
+        },
+        {
+          title: { en: "Historic Athens walking tours", el: "Ιστορικοί περίπατοι (Walking Tours)" },
+          content: { en: "Explore Plaka, Monastiraki, and Psiri on foot to see how ancient and modern Athens live side by side in the historic heart of the city.", el: "Εξερευνήστε την Πλάκα, το Μοναστηράκι και στου Ψυρρή με τα πόδια για να δείτε πώς η αρχαία και η σύγχρονη Αθήνα συνυπάρχουν στο ιστορικό κέντρο." },
+        },
+        {
+          title: { en: "Greek food and street food tours", el: "Food tours & Γαστρονομικές εμπειρίες" },
+          content: { en: "Taste real Greek flavors, from street food and traditional markets to hidden tavernas where locals actually eat.", el: "Δοκιμάστε αυθεντικές ελληνικές γεύσεις, από street food και παραδοσιακές αγορές μέχρι κρυμμένες ταβέρνες όπου τρώνε οι ντόπιοι." },
+        },
+        {
+          title: { en: "Saronic Gulf boat trips", el: "Κρουαζιέρες στον Σαρωνικό" },
+          content: { en: "Escape for a day to islands like Aegina, Hydra, or Poros. Perfect for a taste of the Greek islands without a long ferry ride.", el: "Αποδράστε για μια μέρα σε νησιά όπως η Αίγινα, η Ύδρα ή ο Πόρος. Ιδανικό για μια γεύση από ελληνικά νησιά χωρίς μεγάλες μετακινήσεις." },
+        },
+        {
+          title: { en: "Cape Sounion sunset tours", el: "Ηλιοβασίλεμα στο Σούνιο" },
+          content: { en: "Follow the Athens Riviera to the Temple of Poseidon for one of the most dramatic and beautiful sunsets near the city.", el: "Ακολουθήστε την Αθηναϊκή Ριβιέρα μέχρι τον Ναό του Ποσειδώνα για ένα από τα πιο εντυπωσιακά ηλιοβασιλέματα κοντά στην πόλη." },
+        },
+      ],
+    },
+    planningTips: {
+      title: { en: "Planning Tips for Athens", el: "Πρακτικές Συμβουλές για την Αθήνα" },
+      tips: {
+        en: [
+          "Book Acropolis tours early in the morning to avoid the heat and crowds.",
+          "Athens is very walkable, so wear comfortable shoes for city exploration.",
+          "Use the metro for fast transport, but explore the historic center on foot.",
+          "If you have an extra day, the Saronic boat trips are the best way to see the sea.",
+          "Book popular food tours in advance as group sizes are often limited.",
+        ],
+        el: [
+          "Κλείστε τις ξεναγήσεις στην Ακρόπολη νωρίς το πρωί για να αποφύγετε τη ζέστη και την πολυκοσμία.",
+          "Η Αθήνα περπατιέται εύκολα, οπότε φορέστε άνετα παπούτσια για την εξερεύνηση της πόλης.",
+          "Χρησιμοποιήστε το μετρό για γρήγορες μετακινήσεις, αλλά δείτε το ιστορικό κέντρο με τα πόδια.",
+          "Αν έχετε μια επιπλέον μέρα, οι κρουαζιέρες στον Σαρωνικό είναι ο καλύτερος τρόπος να δείτε θάλασσα.",
+          "Κλείστε τα food tours εγκαίρως, καθώς οι θέσεις στις ομάδες είναι συχνά περιορισμένες.",
+        ],
+      },
+    },
+    faq: {
+      title: { en: "FAQ About Athens Tours", el: "Συχνές Ερωτήσεις για την Αθήνα" },
+      questions: [
+        {
+          question: { en: "Is Athens worth visiting for more than one day?", el: "Αξίζει η Αθήνα για περισσότερο από μία μέρα;" },
+          answer: { en: "Yes. Athens becomes much more interesting with two or three days. You can explore neighborhoods, try food tours, visit museums, and take short trips to the coast.", el: "Ναι. Η Αθήνα γίνεται πολύ πιο ενδιαφέρουσα με δύο ή τρεις μέρες. Μπορείτε να εξερευνήσετε γειτονιές, να κάνετε food tours, να επισκεφθείτε μουσεία και να πάτε στην ακτή." },
+        },
+        {
+          question: { en: "What are the best tours to do in Athens?", el: "Ποιες είναι οι καλύτερες εκδρομές στην Αθήνα;" },
+          answer: { en: "The most popular are Acropolis guided tours, historic walking tours, food tours, Cape Sounion sunset tours, and Saronic Gulf boat trips.", el: "Οι πιο δημοφιλείς είναι οι ξεναγήσεις στην Ακρόπολη, οι ιστορικοί περίπατοι, τα food tours, το ηλιοβασίλεμα στο Σούνιο και οι κρουαζιέρες στον Σαρωνικό." },
+        },
+        {
+          question: { en: "Can you visit Greek islands from Athens in one day?", el: "Μπορείτε να επισκεφθείτε νησιά από την Αθήνα σε μία μέρα;" },
+          answer: { en: "Yes. The Saronic Islands (Aegina, Agistri, Hydra, Poros) are the easiest island day trips from Athens, reachable by boat or ferry.", el: "Ναι. Τα νησιά του Σαρωνικού (Αίγινα, Αγκίστρι, Ύδρα, Πόρος) είναι οι πιο εύκολες ημερήσιες αποδράσεις από την Αθήνα." },
+        },
+        {
+          question: { en: "Is Athens good for food tours?", el: "Είναι η Αθήνα καλή για food tours;" },
+          answer: { en: "Athens is excellent for food tours because it combines traditional Greek food, markets, bakeries, and modern restaurants in a very compact area.", el: "Η Αθήνα είναι εξαιρετική για food tours γιατί συνδυάζει παραδοσιακό φαγητό, αγορές, φούρνους και σύγχρονα εστιατόρια σε μια πολύ κοντινή περιοχή." },
+        },
+        {
+          question: { en: "What is the best time for Athens tours?", el: "Ποια είναι η καλύτερη εποχή για εκδρομές στην Αθήνα;" },
+          answer: { en: "Spring and autumn are the most comfortable for walking and ancient sites. In summer, early morning or late afternoon tours are better to avoid the heat.", el: "Η άνοιξη και το φθινόπωρο είναι οι πιο άνετες εποχές για περπάτημα. Το καλοκαίρι, προτιμήστε νωρίς το πρωί ή αργά το απόγευμα για να αποφύγετε τη ζέστη." },
+        },
+      ],
+    },
+    internalCta: {
+      title: { en: "Start exploring Athens", el: "Ξεκινήστε την εξερεύνηση της Αθήνας" },
+      text: { en: "Athens is more than the gateway to the islands. Find the experiences that match your trip and build a better start to your Greece journey.", el: "Η Αθήνα είναι πολλά περισσότερα από την πύλη για τα νησιά. Βρείτε τις εμπειρίες που σας ταιριάζουν και ξεκινήστε το ταξίδι σας σωστά." },
+      linkHref: "/destinations/athens",
+      linkLabel: { en: "Explore Athens Guide", el: "Οδηγός Αθήνας" },
+    },
+    highlights: {
+      en: [
+        "Acropolis & Ancient Sites",
+        "Historic Neighborhood Walks",
+        "Authentic Greek Food Tours",
+        "Saronic Gulf Boat Trips",
+      ],
+      el: [
+        "Ακρόπολη & Αρχαίοι Χώροι",
+        "Περίπατοι σε Ιστορικές Γειτονιές",
+        "Αυθεντικά Food Tours",
+        "Κρουαζιέρες στον Σαρωνικό",
+      ],
+    },
+    highlightReasons: {
+      en: [
+        "Skip the generic facts and discover the real stories behind the world's most famous ruins.",
+        "Walk through Plaka and Psiri with locals who know the hidden corners and best views.",
+        "Eat where Athenians eat, from the central market to hidden neighborhood tavernas.",
+        "Escape the city heat for a day of swimming and island life just a boat ride away.",
+      ],
+      el: [
+        "Ξεχάστε τις τυποποιημένες ξεναγήσεις και ανακαλύψτε τις πραγματικές ιστορίες πίσω από τα μνημεία.",
+        "Περπατήστε στην Πλάκα και στου Ψυρρή με ανθρώπους που ξέρουν τις κρυφές γωνιές.",
+        "Φάτε εκεί που τρώνε οι Αθηναίοι, από την Κεντρική Αγορά μέχρι τις γειτονιές.",
+        "Αποδράστε από τη ζέστη της πόλης για μια μέρα στη θάλασσα και στα νησιά."
+      ],
+    },
+    image: "/images/athens.webp",
+  },
+  {
+    slug: "santorini-tours",
+    seo: {
+      title: {
+        en: "Santorini Tours & Experiences | Sunset Cruises, Wine Tours & Caldera Trips",
+        el: "Εκδρομές & Εμπειρίες στη Σαντορίνη | Κρουαζιέρες στο Ηλιοβασίλεμα & Οινογνωσία",
+      },
+      description: {
+        en: "Explore the best Santorini tours and experiences, from caldera sunset cruises and volcanic island trips to wine tasting tours, village walks, beaches, and romantic viewpoints.",
+        el: "Ανακαλύψτε τις καλύτερες εκδρομές στη Σαντορίνη: κρουαζιέρες στην καλντέρα, οινογνωσία, εκδρομές στο ηφαίστειο, περιπάτους σε γραφικά χωριά και ρομαντικά ηλιοβασιλέματα.",
+      },
+    },
+    title: {
+      en: "Santorini Tours & Experiences",
+      el: "Εκδρομές & Εμπειρίες στη Σαντορίνη",
+    },
+    description: {
+      en: "Santorini is one of Greece’s most iconic islands, known for its caldera views, sunset villages, volcanic scenery, and romantic atmosphere.",
+      el: "Η Σαντορίνη είναι ένα από τα πιο εμβληματικά νησιά της Ελλάδας, γνωστό για τη θέα στην καλντέρα, τα χωριά στο ηλιοβασίλεμα, το ηφαιστειακό τοπίο και τη ρομαντική ατμόσφαιρα.",
+    },
+    overview: {
+      en: "Discover Santorini beyond the sunset. Santorini is famous for its sunsets, and yes, they are a big part of the island’s magic. But Santorini is more than one evening view in Oia. It is volcanic cliffs, quiet villages, old paths, wineries shaped by the island’s dry soil, black and red beaches, small chapels, boat trips, and that strange feeling of standing above a flooded volcano.\n\nSantorini tours help you understand the island better. A caldera cruise shows you the island from the sea. A wine tour introduces you to one of Greece’s most distinctive wine regions. A volcanic excursion connects the views with the island’s natural history. And a village or photography tour helps you find the quieter corners behind the famous images.\n\nWhether you are visiting Santorini for romance, photography, food, wine, beaches, or a once-in-a-lifetime Greece trip, the island offers much more than a quick sunset stop.",
+      el: "Ανακαλύψτε τη Σαντορίνη πέρα από το ηλιοβασίλεμα. Η Σαντορίνη είναι διάσημη για τα ηλιοβασιλέματά της, και ναι, αποτελούν μεγάλο μέρος της μαγείας του νησιού. Αλλά η Σαντορίνη είναι πολλά περισσότερα από μια βραδινή θέα στην Οία. Είναι οι ηφαιστειακοί βράχοι, τα ήσυχα χωριά, τα παλιά μονοπάτια, τα οινοποιεία που διαμορφώθηκαν από το ξηρό έδαφος του νησιού, οι μαύρες και κόκκινες παραλίες, τα μικρά ξωκλήσια, οι βόλτες με σκάφος και αυτή η παράξενη αίσθηση του να στέκεσαι πάνω από ένα βυθισμένο ηφαίστειο.\n\nΟι εκδρομές στη Σαντορίνη σας βοηθούν να κατανοήσετε το νησί καλύτερα. Μια κρουαζιέρα στην καλντέρα σας δείχνει το νησί από τη θάλασσα. Μια περιοδεία κρασιού σας εισάγει σε μια από τις πιο ιδιαίτερες οινοπαραγωγικές περιοχές της Ελλάδας. Μια ηφαιστειακή εκδρομή συνδέει τη θέα με τη φυσική ιστορία του νησιού. Και μια περιήγηση στα χωριά ή μια φωτογραφική περιήγηση σας βοηθά να βρείτε τις πιο ήσυχες γωνιές πίσω από τις διάσημες εικόνες.\n\nΕίτε επισκέπτεστε τη Σαντορίνη για ρομαντισμό, φωτογραφία, φαγητό, κρασί, παραλίες, είτε για ένα ταξίδι ζωής στην Ελλάδα, το νησί προσφέρει πολλά περισσότερα από μια γρήγορη στάση για το ηλιοβασίλεμα.",
+    },
+    recommendedIntro: {
+      en: "Selected experiences and guided options in Santorini. We focus on quality and local insight to help you see the island properly.",
+      el: "Επιλεγμένες εμπειρίες και ξεναγήσεις στη Σαντορίνη. Εστιάζουμε στην ποιότητα και την τοπική γνώση για να γνωρίσετε το νησί σωστά.",
+    },
+    moreToursIntro: {
+      en: "Explore more bookable activities in Santorini, including caldera cruises, volcano visits, wine tours, and village experiences.",
+      el: "Εξερευνήστε περισσότερες δραστηριότητες στη Σαντορίνη, συμπεριλαμβανομένων κρουαζιερών στην καλντέρα, επισκέψεων στο ηφαίστειο, οινογνωσίας και εμπειριών στα χωριά.",
+    },
+    whatToBook: {
+      title: { en: "Best Things to Do in Santorini", el: "Τι να Κλείσετε στη Σαντορίνη" },
+      sections: [
+        {
+          title: { en: "Caldera sunset cruises", el: "Κρουαζιέρες στην Καλντέρα & Ηλιοβασίλεμα" },
+          content: { en: "Sail around the caldera, enjoy volcano views, swimming stops, and one of the most famous sunsets in Greece from the water.", el: "Πλεύστε στην καλντέρα, απολαύστε τη θέα στο ηφαίστειο, κάντε στάσεις για κολύμπι και δείτε ένα από τα διασημότερα ηλιοβασιλέματα από τη θάλασσα." },
+        },
+        {
+          title: { en: "Santorini wine tasting tours", el: "Οινογνωσία στη Σαντορίνη" },
+          content: { en: "Visit local wineries, taste unique volcanic wines like Assyrtiko, and learn about the island's distinctive vineyard heritage.", el: "Επισκεφθείτε τοπικά οινοποιεία, δοκιμάστε μοναδικά ηφαιστειακά κρασιά όπως το Ασύρτικο και μάθετε για την ιδιαίτερη παράδοση των αμπελώνων του νησιού." },
+        },
+        {
+          title: { en: "Volcano and hot springs trips", el: "Ηφαίστειο & Ιαματικές Πηγές" },
+          content: { en: "Explore the volcanic islands inside the caldera, walk on lava landscapes, and swim in natural mineral-rich hot springs.", el: "Εξερευνήστε τα ηφαιστειακά νησιά μέσα στην καλντέρα, περπατήστε σε τοπία λάβας και κολυμπήστε σε φυσικές ιαματικές πηγές." },
+        },
+        {
+          title: { en: "Village walks (Oia, Fira, Imerovigli)", el: "Περίπατοι στα χωριά (Οία, Φηρά, Ημεροβίγλι)" },
+          content: { en: "Discover the most iconic cliffside villages, blue domes, and viewpoints with local guidance to find the best spots.", el: "Ανακαλύψτε τα εμβληματικά χωριά στους βράχους, τους μπλε τρούλους και τα καλύτερα σημεία θέας με τη βοήθεια τοπικών οδηγών." },
+        },
+        {
+          title: { en: "Akrotiri & beaches tours", el: "Ακρωτήρι & Παραλίες" },
+          content: { en: "Visit the prehistoric settlement of Akrotiri and unique beaches like the Red Beach and black-sand coastal areas.", el: "Επισκεφθείτε τον προϊστορικό οικισμό στο Ακρωτήρι και μοναδικές παραλίες όπως η Κόκκινη Παραλία και οι μαύρες αμμουδιές." },
+        },
+      ],
+    },
+    planningTips: {
+      title: { en: "Planning Tips for Santorini", el: "Πρακτικές Συμβουλές για τη Σαντορίνη" },
+      tips: {
+        en: [
+          "Book sunset cruises at least 2-3 weeks in advance during high season.",
+          "Visit Akrotiri early in the day to avoid the large tour bus groups.",
+          "Walking from Fira to Oia is a classic experience but takes 3-4 hours; bring water.",
+          "Santorini's wineries are best visited in the afternoon for vineyard views.",
+          "Bring sun protection and proper shoes for the volcano hiking trips.",
+        ],
+        el: [
+          "Κλείστε τις κρουαζιέρες στο ηλιοβασίλεμα τουλάχιστον 2-3 εβδομάδες πριν κατά την υψηλή περίοδο.",
+          "Επισκεφθείτε το Ακρωτήρι νωρίς τη μέρα για να αποφύγετε τα μεγάλα γκρουπ.",
+          "Η διαδρομή από τα Φηρά στην Οία είναι κλασική εμπειρία αλλά διαρκεί 3-4 ώρες· έχετε μαζί σας νερό.",
+          "Τα οινοποιεία της Σαντορίνης είναι καλύτερα να τα επισκεφθείτε το απόγευμα για τη θέα.",
+          "Έχετε μαζί σας αντηλιακό και κατάλληλα παπούτσια για την πεζοπορία στο ηφαίστειο.",
+        ],
+      },
+    },
+    faq: {
+      title: { en: "FAQ About Santorini Tours", el: "Συχνές Ερωτήσεις για τη Σαντορίνη" },
+      questions: [
+        {
+          question: { en: "What are the best tours to do in Santorini?", el: "Ποιες είναι οι καλύτερες εκδρομές στη Σαντορίνη;" },
+          answer: { en: "The most popular are sunset cruises, wine tasting tours, volcano excursions, and photography tours of Oia and Fira.", el: "Οι πιο δημοφιλείς είναι οι κρουαζιέρες στο ηλιοβασίλεμα, η οινογνωσία, οι εκδρομές στο ηφαίστειο και οι φωτογραφικές περιηγήσεις στην Οία και τα Φηρά." },
+        },
+        {
+          question: { en: "Is a Santorini sunset cruise worth it?", el: "Αξίζει μια κρουαζιέρα στο ηλιοβασίλεμα στη Σαντορίνη;" },
+          answer: { en: "Yes. It lets you see the caldera, volcano, and sunset from the sea, which is much more relaxed than the crowded viewpoints on land.", el: "Ναι. Σας επιτρέπει να δείτε την καλντέρα, το ηφαίστειο και το ηλιοβασίλεμα από τη θάλασσα, κάτι που είναι πολύ πιο χαλαρό από τα γεμάτα κόσμο σημεία στη στεριά." },
+        },
+        {
+          question: { en: "Are Santorini wine tours good for beginners?", el: "Είναι οι οινοπεριηγήσεις στη Σαντορίνη κατάλληλες για αρχάριους;" },
+          answer: { en: "Yes. You don't need to be an expert. The tours focus on tasting and learning about the island's unique volcanic soil and tradition.", el: "Ναι. Δεν χρειάζεται να είστε ειδικός. Οι περιηγήσεις εστιάζουν στη γευσιγνωσία και στην εκμάθηση της μοναδικής ηφαιστειακής παράδοσης του νησιού." },
+        },
+        {
+          question: { en: "Can you visit the volcano in Santorini?", el: "Μπορείτε να επισκεφθείτε το ηφαίστειο στη Σαντορίνη;" },
+          answer: { en: "Yes. Many boat tours visit the volcanic islands inside the caldera where you can walk on the lava fields.", el: "Ναι. Πολλές εκδρομές με σκάφος επισκέπτονται τα ηφαιστειακά νησιά μέσα στην καλντέρα όπου μπορείτε να περπατήσετε στα πεδία λάβας." },
+        },
+        {
+          question: { en: "How many days do you need in Santorini?", el: "Πόσες μέρες χρειάζεστε στη Σαντορίνη;" },
+          answer: { en: "Two to three days are enough for highlights, but four days allow for a better pace, including a cruise, wine tasting, and beach time.", el: "Δύο με τρεις μέρες είναι αρκετές για τα κύρια σημεία, αλλά τέσσερις μέρες επιτρέπουν καλύτερο ρυθμό, συμπεριλαμβανομένης μιας κρουαζιέρας και οινογνωσίας." },
+        },
+      ],
+    },
+    internalCta: {
+      title: { en: "Start exploring Santorini", el: "Ξεκινήστε την εξερεύνηση της Σαντορίνης" },
+      text: { en: "Santorini is famous for its views, but the real experience is in the mix of sailing, wine, and history. Find your perfect island experience.", el: "Η Σαντορίνη είναι διάσημη για τη θέα της, αλλά η πραγματική εμπειρία βρίσκεται στον συνδυασμό θάλασσας, κρασιού και ιστορίας. Βρείτε την τέλεια εμπειρία." },
+      linkHref: "/destinations/santorini",
+      linkLabel: { en: "Explore Santorini Guide", el: "Οδηγός Σαντορίνης" },
+    },
+    highlights: {
+      en: [
+        "Caldera Sunset Cruises",
+        "Volcanic Wine Tasting",
+        "Volcano & Hot Springs Trips",
+        "Iconic Cliffside Village Walks",
+      ],
+      el: [
+        "Κρουαζιέρες στην Καλντέρα",
+        "Ηφαιστειακή Οινογνωσία",
+        "Εκδρομές στο Ηφαίστειο",
+        "Περίπατοι στα Χωριά της Καλντέρας",
+      ],
+    },
+    highlightReasons: {
+      en: [
+        "Experience the island's famous sunset from the deck of a boat, away from the Oia crowds.",
+        "Discover some of Greece's most unique wines in traditional volcanic vineyards.",
+        "Walk on the actual volcano that shaped the island and swim in natural hot springs.",
+        "Explore the white-washed streets and blue domes of Oia, Fira, and Imerovigli.",
+      ],
+      el: [
+        "Ζήστε το διάσημο ηλιοβασίλεμα από το κατάστρωμα ενός σκάφους, μακριά από την πολυκοσμία της Οίας.",
+        "Ανακαλύψτε μερικά από τα πιο μοναδικά κρασιά της Ελλάδας σε παραδοσιακούς ηφαιστειακούς αμπελώνες.",
+        "Περπατήστε στο ηφαίστειο που διαμόρφωσε το νησί και κολυμπήστε σε ιαματικές πηγές.",
+        "Εξερευνήστε τα λευκά σοκάκια και τους μπλε τρούλους στην Οία, τα Φηρά και το Ημεροβίγλι."
+      ],
+    },
+    image: "/images/santorini.webp",
   },
 ];
 
@@ -896,7 +1282,7 @@ practicalInfo: {
       ],
     },
     ctaLabel: {
-      en: "View products",
+      en: "Explore products",
       el: "Δείτε τα προϊόντα",
     },
     phone: "+302251071377",
@@ -918,4 +1304,7 @@ export const VIATOR_WIDGET_MAPPING: Record<string, string> = {
   "Thessaloniki": "W-f0334037-6d06-42d6-83a2-07d3903ef04b",
   "Kefalonia": "W-adaa2afb-d347-48c6-abe3-9d16f6a91959",
   "Lesvos": "W-b4298df4-e2de-499e-a767-1be0bd3e9b83",
-};
+  "Paros": "W-287c693c-ce54-4335-b504-c99ef173eab4",
+  "Milos": "W-af2314fe-342c-4890-a5a6-b87e58c07f0d",
+  "Zakynthos": "W-6728407e-41c9-4090-be67-ef6ebbb2d2a0",
+};

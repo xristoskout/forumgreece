@@ -475,6 +475,18 @@ export default function ExperienceDetailsClient({
                   label: { en: "More Tours & Activities in Crete", el: "Περισσότερες Εκδρομές & Δραστηριότητες στην Κρήτη" },
                   ref: "W-beb6dd42-10a7-4524-8626-6fda84f9e5df",
                 },
+                "athens-tours": {
+                  label: { en: "More Tours & Activities in Athens", el: "Περισσότερες Εκδρομές & Δραστηριότητες στην Αθήνα" },
+                  ref: "W-611433de-c2b3-4d2e-9074-eaa7eff90944",
+                },
+                "santorini-tours": {
+                  label: { en: "More Tours & Activities in Santorini", el: "Περισσότερες Εκδρομές & Δραστηριότητες στη Σαντορίνη" },
+                  ref: "W-e577bd63-e025-4586-8f55-bdb32bf254bc",
+                },
+                "mykonos-tours": {
+                  label: { en: "More Tours & Activities in Mykonos", el: "Περισσότερες Εκδρομές & Δραστηριότητες στη Μύκονο" },
+                  ref: "W-db1da184-a2f1-4058-b7f1-a9e15ccf9fa6",
+                },
               };
               const entry = TOUR_WIDGETS[landing.slug];
               if (!entry) return null;
