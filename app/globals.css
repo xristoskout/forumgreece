@@ -9,6 +9,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
+  --font-serif: var(--font-serif);
   --font-el: var(--font-greek-sans);
   --font-mono: var(--font-geist-mono);
   --animate-float-playful: floatPlayful 5s ease-in-out infinite;
@@ -35,6 +36,12 @@
   50% { transform: translateY(-8px); }
 }
 
+@keyframes scroll-bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-10px); }
+  60% { transform: translateY(-5px); }
+}
+
 .animate-fade-up {
   animation: fade-up 0.8s ease-out forwards;
 }
@@ -48,6 +55,10 @@
   animation: float-gentle 4s ease-in-out infinite;
 }
 
+.animate-scroll-bounce {
+  animation: scroll-bounce 2s infinite;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -59,22 +70,36 @@ body {
   font-family: var(--font-el), var(--font-sans), Arial, Helvetica, sans-serif;
 }
 
+.font-serif {
+  font-family: var(--font-serif), serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif), serif;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
 .text-shadow-premium {
   text-shadow: 0 0 10px rgba(255, 215, 0, 0.9), 0 0 20px rgba(255, 215, 0, 0.6);
 }
 
+.text-shadow-elegant {
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
 /* Premium Utilities */
 .glass-effect {
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(12px) saturate(180%);
-  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .glass-dark {
-  background: rgba(15, 23, 42, 0.7);
-  backdrop-filter: blur(12px) saturate(180%);
-  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -103,12 +128,22 @@ body {
     radial-gradient(at 0% 100%, hsla(253, 100%, 90%, 0.5) 0px, transparent 50%);
 }
 
+.premium-card-shadow {
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1), 0 4px 10px -5px rgba(0, 0, 0, 0.05);
+}
+
 .card-hover-effect {
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .card-hover-effect:hover {
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.12);
+}
+
+.editorial-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2rem;
 }
 

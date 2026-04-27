@@ -1,99 +1,72 @@
 "use client";
 
-import { useEffect } from "react";
-import { usePathname } from "next/navigation";
-
 type ViatorWidgetProps = {
   partnerId: string;
   widgetRef: string;
   className?: string;
+  height?: number;
 };
 
 const VIATOR_SCRIPT_SRC = "https://www.viator.com/orion/partner/widget.js";
 
-// Global tracker to ensure we only inject the script once per page navigation.
-let lastInjectedPath = "";
-
 /**
- * ViatorWidget
+ * ViatorWidget — iframe srcDoc approach
  *
- * Renders a Viator booking widget.
+ * WHY iframe and not a <script> tag injection:
  *
- * How it works:
- * 1. The `<div data-vi-*>` placeholder is rendered immediately (no IntersectionObserver).
- *    This ensures that when the Viator script loads, it finds ALL placeholders on the page
- *    during its initial DOM scan, preventing the need to force re-scans.
- * 2. On mount, we check if we've already loaded the script for the current route.
- *    If not, we wipe any old Viator global state (from previous SPA pages) and inject
- *    a fresh `<script>` tag.
- * 3. Because all placeholders are in the DOM before the script runs, they all load perfectly.
- *    Because we don't wipe globals on scroll, there is zero flickering on mobile.
+ * The Viator widget script internally listens for `DOMContentLoaded` to scan
+ * the page for `[data-vi-*]` placeholder elements.  In a Next.js SPA, that
+ * event only fires once — on the very first hard load.  Every subsequent
+ * client-side navigation never re-fires it, so any `<script>` tag we inject
+ * dynamically will execute but immediately bail out because DOMContentLoaded
+ * has already passed and there is no init-on-existing-DOM code path.
+ *
+ * The iframe srcDoc approach gives the Viator script a **fresh document** every
+ * time this component mounts.  The browser fires DOMContentLoaded for that
+ * mini-document, the script finds the placeholder, and injects the booking
+ * widget reliably — on first load, on SPA navigation, every single time.
+ *
+ * USAGE RULE: Only mount this component when you actually want to show the
+ * widget (e.g. after the user clicks "Show All Activities").  Mounting it
+ * hidden/collapsed is wasteful — use conditional rendering instead.
  */
 export default function ViatorWidget({
   partnerId,
   widgetRef,
   className = "",
+  height = 720,
 }: ViatorWidgetProps) {
-  const pathname = usePathname();
-
-  useEffect(() => {
-    // If we have already injected the script for this specific page, do nothing.
-    // The script is either loading or loaded, and it will find this widget's
-    // placeholder because the placeholder was rendered synchronously.
-    if (lastInjectedPath === pathname) return;
-
-    lastInjectedPath = pathname;
-
-    // --- Clean up old state from previous page navigations ---
-    
-    // 1. Remove old script tags to prevent memory leaks or duplicate executions
-    document
-      .querySelectorAll(`script[src^="${VIATOR_SCRIPT_SRC}"]`)
-      .forEach((s) => s.remove());
-
-    // 2. Wipe Viator/LMA global variables so the fresh script doesn't bail out
-    const win = window as any;
-    const globalsToDelete = [
-      "viator",
-      "ViatorWidget",
-      "__viatorWidget",
-      "lma",
-      "LMA",
-      "letMeAllez",
-    ];
-    globalsToDelete.forEach((key) => {
-      try {
-        delete win[key];
-      } catch (e) {
-        // Ignore errors if property is not configurable
-      }
-    });
-
-    // Also attempt to clear any dynamically named viator globals
-    try {
-      Object.keys(win).forEach((key) => {
-        if (key.toLowerCase().includes("viator")) {
-          delete win[key];
-        }
-      });
-    } catch (e) {
-      // Ignore cross-origin frame access errors
-    }
-
-    // --- Inject fresh script ---
-    const script = document.createElement("script");
-    script.src = `${VIATOR_SCRIPT_SRC}?_=${Date.now()}`;
-    script.async = true;
-    document.body.appendChild(script);
-  }, [pathname]);
+  // Self-contained HTML that the iframe will render.
+  // The script tag sits right after its placeholder, exactly as Viator intends.
+  const srcDoc = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { width: 100%; background: transparent; }
+    iframe { border: none; max-width: 100%; }
+  </style>
+</head>
+<body>
+  <div data-vi-partner-id="${partnerId}" data-vi-widget-ref="${widgetRef}"></div>
+  <script src="${VIATOR_SCRIPT_SRC}"><\/script>
+</body>
+</html>`;
 
   return (
     <div
       className={className}
-      style={{ minHeight: "400px" }}
-      // Viator relies on these data attributes to find where to inject the iframe
-      data-vi-partner-id={partnerId}
-      data-vi-widget-ref={widgetRef}
-    />
+      style={{ width: "100%", minHeight: `${height}px` }}
+    >
+      <iframe
+        srcDoc={srcDoc}
+        style={{ width: "100%", height: `${height}px`, border: "none" }}
+        title={`Viator activities — ${widgetRef}`}
+        loading="lazy"
+        sandbox="allow-scripts allow-same-origin allow-popups allow-forms allow-top-navigation"
+      />
+    </div>
   );
 }
