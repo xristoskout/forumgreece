@@ -1,11 +1,12 @@
 import type { Metadata, Viewport } from "next";
-import { Montserrat, Geist_Mono, Noto_Sans, Playfair_Display } from "next/font/google";
+import { Montserrat, Geist_Mono, Noto_Sans, Playfair_Display, EB_Garamond } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Script from "next/script";
 import "./globals.css";
 import LangManager from "@/components/lang-manager";
 import ChatLoader from "@/components/chat-loader";
+import FluidCursor from "@/components/fluid-cursor";
 
 const geistSans = Montserrat({
   variable: "--font-geist-sans",
@@ -29,8 +30,15 @@ const notoGreek = Noto_Sans({
 });
 
 const playfair = Playfair_Display({
-  variable: "--font-serif",
-  subsets: ["latin", "latin-ext", "greek", "greek-ext"],
+  variable: "--font-playfair",
+  subsets: ["latin", "latin-ext"],
+  display: "swap",
+  preload: true,
+});
+
+const ebGaramond = EB_Garamond({
+  variable: "--font-eb-garamond",
+  subsets: ["greek", "greek-ext"],
   display: "swap",
   preload: true,
 });
@@ -101,7 +109,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${notoGreek.variable} ${playfair.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${notoGreek.variable} ${playfair.variable} ${ebGaramond.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-[#f4f7fb] text-slate-900 relative selection:bg-purple-500/30">
         <Script
@@ -123,6 +131,7 @@ export default function RootLayout({
         />
         <LangManager />
         <div className="fixed inset-0 z-[-1] bg-[radial-gradient(circle_at_top_right,_rgba(120,80,255,0.15),_transparent_40%),radial-gradient(circle_at_bottom_left,_rgba(80,120,255,0.15),_transparent_40%)] pointer-events-none"></div>
+        <FluidCursor />
         {children}
         <Analytics />
         <SpeedInsights />
