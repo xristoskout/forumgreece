@@ -10,25 +10,17 @@ type ViatorWidgetProps = {
 const VIATOR_SCRIPT_SRC = "https://www.viator.com/orion/partner/widget.js";
 
 /**
- * ViatorWidget — iframe srcDoc approach
+ * ViatorWidget — srcDoc iframe with popup permissions
  *
- * WHY iframe and not a <script> tag injection:
+ * We use a self-contained srcDoc iframe so the Viator script gets a fresh
+ * DOMContentLoaded on every SPA navigation (solving the Next.js re-init problem).
  *
- * The Viator widget script internally listens for `DOMContentLoaded` to scan
- * the page for `[data-vi-*]` placeholder elements.  In a Next.js SPA, that
- * event only fires once — on the very first hard load.  Every subsequent
- * client-side navigation never re-fires it, so any `<script>` tag we inject
- * dynamically will execute but immediately bail out because DOMContentLoaded
- * has already passed and there is no init-on-existing-DOM code path.
- *
- * The iframe srcDoc approach gives the Viator script a **fresh document** every
- * time this component mounts.  The browser fires DOMContentLoaded for that
- * mini-document, the script finds the placeholder, and injects the booking
- * widget reliably — on first load, on SPA navigation, every single time.
- *
- * USAGE RULE: Only mount this component when you actually want to show the
- * widget (e.g. after the user clicks "Show All Activities").  Mounting it
- * hidden/collapsed is wasteful — use conditional rendering instead.
+ * The critical fix is `allow="popups popups-to-escape-sandbox"` on the iframe.
+ * The Viator widget script internally creates its own <iframe> pointing to
+ * viator.com/widget/partner/... When the user clicks a tour inside that nested
+ * iframe, the browser blocks the navigation with "blocked:sandboxed frame"
+ * UNLESS the parent iframe explicitly grants popup/navigation permissions.
+ * This attribute is the definitive fix for ERR_BLOCKED_BY_RESPONSE.
  */
 export default function ViatorWidget({
   partnerId,
@@ -36,13 +28,12 @@ export default function ViatorWidget({
   className = "",
   height = 720,
 }: ViatorWidgetProps) {
-  // Self-contained HTML that the iframe will render.
-  // The script tag sits right after its placeholder, exactly as Viator intends.
   const srcDoc = `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <base target="_blank" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html, body { width: 100%; background: transparent; }
@@ -65,7 +56,7 @@ export default function ViatorWidget({
         style={{ width: "100%", height: `${height}px`, border: "none" }}
         title={`Viator activities — ${widgetRef}`}
         loading="lazy"
-        sandbox="allow-scripts allow-same-origin allow-popups allow-forms allow-top-navigation"
+        allow="popups popups-to-escape-sandbox"
       />
     </div>
   );
