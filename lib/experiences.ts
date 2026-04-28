@@ -1307,4 +1307,10 @@ export const VIATOR_WIDGET_MAPPING: Record<string, string> = {
   "Paros": "W-287c693c-ce54-4335-b504-c99ef173eab4",
   "Milos": "W-af2314fe-342c-4890-a5a6-b87e58c07f0d",
   "Zakynthos": "W-6728407e-41c9-4090-be67-ef6ebbb2d2a0",
+  "Rhodes": "W-36ecb7f4-99f5-4715-af3f-343be8bb540a",
+  "Halkidiki": "W-3390cb05-7269-4fd6-817a-80dca1641054",
+  "Meteora": "W-2ee6b943-87d7-4c44-96da-1ecdfe24a13d",
+  "Monemvasia": "W-d745ebb5-1804-42d6-b100-1daabbc937f4",
+  "Parga": "W-51f7e778-3ad1-4730-a549-1b278e89cb1d",
+  "Delphi": "W-32985508-a65b-4c51-b0f7-da2d07cf791d",
 };
