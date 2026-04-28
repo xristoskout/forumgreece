@@ -1,26 +1,36 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function FluidCursor() {
+  const [isMobile, setIsMobile] = useState(true); // Default to true for SSR safety and to avoid flash of canvas on mobile
+
   useEffect(() => {
-    // Only run on client
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768 || /Mobi|Android/i.test(navigator.userAgent));
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  useEffect(() => {
+    if (isMobile) return;
+
     const loadAndInit = async () => {
       try {
         const { initFluid } = await import("smokey-fluid-cursor");
         
-        // Detect if mobile to adjust parameters
-        const isMobile = typeof window !== 'undefined' && /Mobi|Android/i.test(navigator.userAgent);
-        
         initFluid({
           id: "smokey-fluid-canvas",
           transparent: true,
-          densityDissipation: 0.8, // Fades faster to look lighter
-          velocityDissipation: 0.9, // Keeps movement longer for swirls
-          splatRadius: isMobile ? 0.3 : 0.15,
-          splatForce: isMobile ? 8000 : 6000,
-          curl: 80, // High vorticity for smoke swirls
-          shading: true,
+          densityDissipation: 0.10, // Extreme fade (keeps 10% per frame)
+          velocityDissipation: 0.10, 
+          splatRadius: 0.005, // Microscopic radius
+          splatForce: 10,    // Near zero force
+          curl: 0,         
+          shading: false,   
         });
       } catch (error) {
         console.error("Failed to initialize fluid cursor:", error);
@@ -28,7 +38,9 @@ export default function FluidCursor() {
     };
 
     loadAndInit();
-  }, []);
+  }, [isMobile]);
+
+  if (isMobile) return null;
 
   return (
     <canvas
@@ -38,6 +50,7 @@ export default function FluidCursor() {
         inset: 0,
         pointerEvents: "none",
         zIndex: 9999,
+        opacity: 0.2, // Force the entire effect to be 80% transparent
       }}
     />
   );
