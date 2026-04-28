@@ -53,9 +53,31 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/tours/all',
+        destination: '/en/tours/all',
+        permanent: true,
+      },
+      {
         source: '/travel-info/where-to-stay-in-santorini',
         destination: '/en/hotels/santorini',
         permanent: true,
+      },
+    ];
+  },
+  async headers() {
+    return [
+      {
+        source: "/:path*",
+        headers: [
+          {
+            key: "Cross-Origin-Opener-Policy",
+            value: "same-origin-allow-popups",
+          },
+          {
+            key: "Cross-Origin-Resource-Policy",
+            value: "cross-origin",
+          },
+        ],
       },
     ];
   },
