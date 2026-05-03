@@ -49,7 +49,7 @@ export default async function HotelsListingPage({ params }: Props) {
   };
 
   return (
-    <main className="min-h-screen bg-[#fcfdff] mesh-gradient">
+    <main className="min-h-screen bg-gradient-to-br from-slate-50 via-indigo-50 to-white">
       <SiteHeader />
       
       <div className="container mx-auto px-6 py-32">

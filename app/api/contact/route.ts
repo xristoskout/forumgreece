@@ -1,11 +1,18 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
+import { checkRateLimit, getIP } from '../../../lib/rate-limit';
 
 export async function POST(request: Request) {
   try {
+    const ip = getIP(request);
+    const limit = checkRateLimit(`contact:${ip}`, 5, 15 * 60 * 1000);
+
+    if (!limit.allowed) {
+      return NextResponse.json({ error: 'Too many requests. Try again later.' }, { status: 429 });
+    }
+
     const { name, email, message, website_url } = await request.json();
 
-    // Honeypot check: If 'website_url' is filled, it's likely a bot.
     if (website_url) {
       console.log('Bot detected, ignoring request.');
       return NextResponse.json({ message: 'Email sent successfully' }, { status: 200 });

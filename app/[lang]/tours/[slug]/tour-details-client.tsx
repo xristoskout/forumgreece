@@ -50,15 +50,18 @@ export default function TourDetailsClient({
     <main className="min-h-screen bg-transparent text-slate-900 pt-20">
       <SiteHeader />
 
-      <section
-        className="relative overflow-hidden text-slate-900"
-        style={{
-          backgroundImage: `linear-gradient(90deg, rgba(7,24,44,0.82) 0%, rgba(7,24,44,0.55) 45%, rgba(7,24,44,0.25) 100%), url('${tour.image}')`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="mx-auto grid min-h-[560px] max-w-7xl gap-10 px-6 py-20 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+      <section className="relative overflow-hidden text-slate-900">
+        <div className="absolute inset-0">
+          <Image
+            src={tour.image}
+            alt={tour.title[lang]}
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/82 via-slate-900/55 to-slate-900/25" />
+        <div className="mx-auto grid min-h-[560px] max-w-7xl gap-10 px-6 py-20 lg:grid-cols-[1.05fr_0.95fr] lg:items-center relative z-10">
           <div>
             <span className="inline-flex rounded-full bg-white/15 px-4 py-1 text-sm font-medium backdrop-blur">
               {lang === "en" ? "Greece Tours" : "Εκδρομές στην Ελλάδα"}

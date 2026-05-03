@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import SiteHeader from "../../../../components/site-header";
 import { destinations } from "../../../../lib/content";
 
@@ -166,10 +167,9 @@ export default async function GreekIslandsCollectionPage({
               key={item.slug}
               className="overflow-hidden rounded-xl border border-slate-200 bg-white backdrop-blur-md shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
             >
-              <div
-                className="h-52 bg-cover bg-center"
-                style={{ backgroundImage: `url('${item.image}')` }}
-              />
+              <div className="relative h-52">
+                <Image src={item.image} alt={item.name} fill className="object-cover" />
+              </div>
 
               <div className="p-6">
                 <div className="flex flex-wrap items-center gap-2">

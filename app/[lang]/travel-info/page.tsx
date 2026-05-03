@@ -191,15 +191,15 @@ export default function TravelInfoHubPage() {
       <SiteHeader />
 
       <section className="relative overflow-hidden min-h-screen flex items-center justify-center pt-20 border-b border-slate-200">
-        <div
-          className="absolute inset-0 z-0"
-          style={{
-            backgroundImage: "url('/images/hero-greece.webp')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundAttachment: "fixed",
-          }}
-        />
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/hero-greece.webp"
+            alt="Greece travel planning background"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
         <div className="absolute inset-0 z-0 bg-gradient-to-b from-black/55 via-black/35 to-black/20" />
 
         <div className="relative z-10 mx-auto max-w-7xl px-6 py-16 md:py-20 text-center flex flex-col items-center">
@@ -317,10 +317,14 @@ export default function TravelInfoHubPage() {
                 key={item.slug}
                 className="group relative flex flex-col overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(99,102,241,0.2)] min-h-[400px]"
               >
-                <div
-                  className="absolute inset-0 bg-cover bg-center transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
-                  style={{ backgroundImage: `url('${item.image}')` }}
-                />
+                <div className="absolute inset-0 transition-all duration-700 group-hover:scale-110 group-hover:brightness-110">
+                  <Image
+                    src={item.image}
+                    alt={item.title[lang]}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-90 transition-opacity duration-500 group-hover:opacity-100" />
 
                 <div className="relative flex-1 p-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-500 flex flex-col justify-end">

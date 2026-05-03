@@ -8,6 +8,7 @@ import SiteHeader from "../../../../components/site-header";
 import BusinessGallery from "./business-gallery";
 import type { Lang } from "../../../../lib/content";
 import type { ExperienceBusiness } from "../../../../lib/experiences";
+import { sanitizeIframeHTML } from "../../../../lib/sanitize-iframe";
 
 type BusinessDetailsClientProps = {
   business: ExperienceBusiness;
@@ -396,7 +397,7 @@ export default function BusinessDetailsClient({
                   {business.mapIframe ? (
                     <div 
                       className="absolute inset-0 h-full w-full border-0 filter opacity-80 mix-blend-luminosity hover:mix-blend-normal hover:opacity-100 transition-all duration-500 [&>iframe]:w-full [&>iframe]:h-full"
-                      dangerouslySetInnerHTML={{ __html: business.mapIframe }}
+                      dangerouslySetInnerHTML={{ __html: sanitizeIframeHTML(business.mapIframe) || '' }}
                     />
                   ) : mapSrc ? (
                     <iframe

@@ -109,10 +109,15 @@ export default function EatDrinkClient({ item, lang, businesses }: EatDrinkClien
 
       <section className="mx-auto max-w-7xl px-6 pb-20">
         <div className="group relative overflow-hidden rounded-[2.5rem] shadow-xl border border-slate-200 transition-all duration-700 hover:shadow-[0_10px_40px_rgba(0,0,0,0.06)]">
-          <div
-            className="h-[450px] bg-cover bg-center transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
-            style={{ backgroundImage: `url('${item.image}')` }}
-          />
+          <div className="relative h-[450px] transition-all duration-700 group-hover:scale-110 group-hover:brightness-110">
+            <Image
+              src={item.image}
+              alt={item.title[lang]}
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60" />
         </div>
       </section>

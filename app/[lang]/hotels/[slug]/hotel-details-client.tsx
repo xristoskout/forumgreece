@@ -8,6 +8,7 @@ import { experienceBusinesses } from "../../../../lib/experiences";
 import BusinessGallery from "../../businesses/[slug]/business-gallery";
 import BusinessCard from "../../../../components/BusinessCard";
 import SiteHeader from "../../../../components/site-header";
+import { sanitizeIframeHTML } from "../../../../lib/sanitize-iframe";
 
 type ListCardProps = {
   title: string;
@@ -71,15 +72,15 @@ function getYouTubeVideoId(url: string) {
   }
 }
 
-export default function HotelDetailsClient() {
+export default function HotelDetailsClient({ lang: serverLang, slug: serverSlug, item: serverItem }: { lang: string; slug: string; item: typeof hotels[number] }) {
   const params = useParams<{ lang: string; slug: string }>();
   const pathname = usePathname();
   const router = useRouter();
 
-  const lang: Lang = params?.lang === "el" ? "el" : "en";
-  const slug = params?.slug;
+  const lang: Lang = serverLang === "el" ? "el" : (params?.lang === "el" ? "el" : "en");
+  const slug = serverSlug || params?.slug || "";
 
-  const item = hotels.find((entry) => entry.slug === slug);
+  const item = serverItem || hotels.find((entry) => entry.slug === slug);
 
   function stripLocale(path: string) {
     const stripped = path.replace(/^\/(en|el)(?=\/|$)/, "");
@@ -338,7 +339,7 @@ export default function HotelDetailsClient() {
                   {item.mapIframe ? (
                     <div 
                       className="absolute inset-0 h-full w-full border-0 filter opacity-80 mix-blend-luminosity hover:mix-blend-normal hover:opacity-100 transition-all duration-500 [&>iframe]:w-full [&>iframe]:h-full"
-                      dangerouslySetInnerHTML={{ __html: item.mapIframe }}
+                      dangerouslySetInnerHTML={{ __html: sanitizeIframeHTML(item.mapIframe) || '' }}
                     />
                   ) : mapSrc ? (
                     <iframe

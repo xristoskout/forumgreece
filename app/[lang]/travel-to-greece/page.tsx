@@ -326,21 +326,26 @@ export default function TravelToGreecePage() {
               key={item.title}
               className="group relative overflow-hidden rounded-[2.5rem] border border-slate-200 bg-white/90 backdrop-blur-md shadow-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(0,0,0,0.06)]"
             >
-              <a href={item.href} target="_blank" rel="noreferrer" className="block overflow-hidden">
-                <div
-                  className={
-                    item.image
-                      ? "aspect-[4/3] w-full bg-cover bg-center transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
-                      : `aspect-[4/3] w-full bg-gradient-to-br transition-all duration-700 group-hover:scale-110 group-hover:brightness-110 ${accentStyles.card}`
-                  }
-                  style={
-                    item.image
-                      ? {
-                          backgroundImage: `linear-gradient(to top, rgba(15,23,42,0.6), rgba(15,23,42,0.1)), url('${item.image}')`,
-                        }
-                      : undefined
-                  }
-                />
+              <a href={item.href} target="_blank" rel="noreferrer" className="block">
+                <div className={
+                  item.image
+                    ? "aspect-[4/3] w-full relative overflow-hidden"
+                    : `aspect-[4/3] w-full bg-gradient-to-br transition-all duration-700 group-hover:scale-110 group-hover:brightness-110 ${accentStyles.card}`
+                }>
+                  {item.image && (
+                    <>
+                      <div className="absolute inset-0 transition-all duration-700 group-hover:scale-110 group-hover:brightness-110">
+                        <Image
+                          src={item.image}
+                          alt={item.title}
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                      <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-slate-900/10" />
+                    </>
+                  )}
+                </div>
               </a>
 
               <div className="p-8 relative z-10 bg-white/80 backdrop-blur-md flex-1 flex flex-col h-[60%]">
@@ -442,13 +447,18 @@ export default function TravelToGreecePage() {
       </section>
 
       {/* Full-width Hero Section - Greeka.com vibe */}
-      <section 
-        className="relative flex min-h-[60vh] xl:min-h-[70vh] items-center justify-center bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: "linear-gradient(to bottom, rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.7)), url('/images/hero/greece-main.webp')"
-        }}
-      >
-        <div className="absolute inset-0 bg-sky-900/10 mix-blend-multiply"></div>
+      <section className="relative flex min-h-[60vh] xl:min-h-[70vh] items-center justify-center bg-no-repeat">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/hero/greece-main.webp"
+            alt="Greece travel forums background"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/40 to-slate-900/70 z-[1]" />
+        <div className="absolute inset-0 bg-sky-900/10 mix-blend-multiply z-[2]"></div>
         <div className="relative z-10 mx-auto max-w-5xl px-4 py-24 text-center sm:px-6">
           <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-7xl drop-shadow-xl text-balance">
             {t.heroTitle[lang]}

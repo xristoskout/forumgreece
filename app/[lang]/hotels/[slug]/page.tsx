@@ -96,5 +96,5 @@ export default async function HotelPage({ params }: HotelPageProps) {
   // Preload the hotel hero LCP image
   ReactDOM.preload(item.image, { as: "image", fetchPriority: "high" });
 
-  return <HotelDetailsClient />;
+  return <HotelDetailsClient lang={lang} slug={slug} item={item} />;
 }

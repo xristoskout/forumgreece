@@ -13,12 +13,22 @@ import {
   travelInfoGuides 
 } from '../../../lib/content';
 import { experienceBusinesses } from '../../../lib/experiences';
+import { checkRateLimit, getIP } from '../../../lib/rate-limit';
 
-// Allow responses up to 5 minutes
 export const maxDuration = 300;
 
 export async function POST(req: Request) {
   try {
+    const ip = getIP(req);
+    const limit = checkRateLimit(`chat:${ip}`, 10, 60 * 1000);
+
+    if (!limit.allowed) {
+      return new Response(JSON.stringify({ error: 'Too many requests. Try again later.' }), {
+        status: 429,
+        headers: { 'Content-Type': 'application/json' },
+      });
+    }
+
     const { messages, lang = 'en' } = await req.json();
     console.log(`AI Chat: Received request in "${lang}" with`, messages?.length, "messages");
 

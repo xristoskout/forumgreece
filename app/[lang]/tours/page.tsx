@@ -47,7 +47,7 @@ export default async function ToursListingPage({ params }: Props) {
   };
 
   return (
-    <main className="min-h-screen bg-[#f8faff] mesh-gradient">
+    <main className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-white">
       <SiteHeader />
       
       <div className="container mx-auto px-6 py-32">

@@ -47,7 +47,7 @@ export default async function EatDrinkListingPage({ params }: Props) {
   };
 
   return (
-    <main className="min-h-screen bg-[#fffdf8] mesh-gradient">
+    <main className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-white">
       <SiteHeader />
       
       <div className="container mx-auto px-6 py-32">
