@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import SiteHeader from "../../../../components/site-header";
@@ -167,7 +168,7 @@ export default async function GreekIslandsCollectionPage({
               className="overflow-hidden rounded-xl border border-slate-200 bg-white backdrop-blur-md shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
             >
               <div className="relative h-52">
-                <Image src={item.image} alt={item.title[lang]} fill className="object-cover" />
+                <Image src={item.image} alt={item.name} fill className="object-cover" />
               </div>
 
               <div className="p-6">

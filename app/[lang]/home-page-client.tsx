@@ -795,7 +795,7 @@ export default function HomePageClient({
               className="group relative overflow-hidden rounded-[2rem] border border-slate-200 bg-white text-slate-900 transition-all duration-700 hover:-translate-y-2 hover:scale-[1.03] hover:z-30 hover:shadow-[0_15px_50px_rgba(0,0,0,0.1)]"
             >
               <div className="absolute inset-0 transition-all duration-700 group-hover:scale-110 group-hover:brightness-110">
-                <Image src={item.image} alt={item.title[lang] || item.name} fill className="object-cover" />
+                <Image src={item.image} alt={item.title[lang]} fill className="object-cover" />
               </div>
               <div className="absolute inset-0 bg-slate-900/40 transition-all duration-700 group-hover:bg-slate-900/60" />
 
@@ -858,7 +858,7 @@ export default function HomePageClient({
                 className="group relative flex flex-col justify-end overflow-hidden rounded-[2.5rem] border border-slate-200 bg-white shadow-xl transition-all duration-700 hover:-translate-y-3 hover:scale-[1.05] hover:z-30 hover:shadow-[0_15px_50px_rgba(0,0,0,0.1)] min-h-[450px]"
               >
                 <div className="absolute inset-0 transition-all duration-700 group-hover:scale-110 group-hover:brightness-110">
-                <Image src={item.image} alt={item.title?.[lang] || "Featured destination"} fill className="object-cover" />
+                <Image src={item.image} alt={item.name || "Featured destination"} fill className="object-cover" />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-90 transition-opacity duration-700 group-hover:opacity-75" />
 
