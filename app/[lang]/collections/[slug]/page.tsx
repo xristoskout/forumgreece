@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import SiteHeader from "../../../../components/site-header";
 import {
@@ -125,14 +126,9 @@ export default async function CollectionHubPage({ params }: Props) {
       </section>
 
       <section className="relative overflow-hidden bg-white backdrop-blur-md">
-        <div
-          className="absolute inset-0 opacity-10"
-          style={{
-            backgroundImage: "url('/images/hero-greece.webp')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        />
+        <div className="absolute inset-0 opacity-10">
+          <Image src="/images/hero-greece.webp" alt="" fill className="object-cover" />
+        </div>
         <div className="relative mx-auto max-w-7xl px-6 py-16 md:py-20">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700">
             {hub.eyebrow[lang]}

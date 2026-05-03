@@ -156,3 +156,10 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 9999;
   opacity: 1;
 }
+
+@media (pointer: coarse) {
+  [style*="background-attachment: fixed"],
+  [style*="backgroundAttachment: fixed"] {
+    background-attachment: scroll !important;
+  }
+}

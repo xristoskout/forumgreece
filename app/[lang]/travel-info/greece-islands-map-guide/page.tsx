@@ -436,15 +436,15 @@ export default function GreeceIslandsMapGuidePage() {
 
       {/* ── HERO ── */}
       <section className="relative overflow-hidden min-h-[60vh] flex items-center justify-center pt-20 border-b border-slate-200">
-        <div
-          className="absolute inset-0 z-0"
-          style={{
-            backgroundImage: "url('/images/greece-islands-map-guide.webp')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundAttachment: "fixed",
-          }}
-        />
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/greece-islands-map-guide.webp"
+            alt="Greece islands map guide background"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
         <div className="absolute inset-0 z-0 bg-gradient-to-b from-black/60 via-black/40 to-black/25" />
 
         <div className="relative z-10 mx-auto max-w-5xl px-6 py-16 text-center flex flex-col items-center">

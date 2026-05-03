@@ -1,3 +1,4 @@
+import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import ReactDOM from 'react-dom';
 import { destinations, type Lang } from '../../../../lib/content';
@@ -28,13 +29,7 @@ export default async function DestinationDetailsPage({ params }: Props) {
   const destination = destinations.find((d) => d.slug === resolvedParams.slug);
 
   if (!destination) {
-    return (
-      <div className="p-10">
-        {lang === "en"
-          ? "Destination not found."
-          : "Ο προορισμός δεν βρέθηκε."}
-      </div>
-    );
+    notFound();
   }
 
   // Preload the hero LCP image so browser fetches it from SSR HTML

@@ -110,10 +110,9 @@ export default function ContactPage() {
                 <textarea required name="message" rows={4} className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-slate-50"></textarea>
               </div>
 
-              {/* Honeypot field (hidden) */}
-              <div className="hidden">
-                 <label>Leave this empty if you are human</label>
-                 <input name="website_url" type="text" />
+              {/* Honeypot field (hidden from all users including screen readers) */}
+              <div className="hidden" aria-hidden="true" tabIndex={-1}>
+                 <input name="website_url" type="text" autoComplete="off" />
               </div>
               <button 
                 type="submit" 
