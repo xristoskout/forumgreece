@@ -89,14 +89,14 @@ export default function SiteHeader() {
       {
         key: "tours",
         label: t.tours[lang],
-        href: withLangHash("#tours"),
-        active: false,
+        href: withLang("/tours/all"),
+        active: pathname.startsWith(`/${lang}/tours`),
       },
       {
         key: "food",
         label: t.food[lang],
-        href: withLangHash("#food"),
-        active: false,
+        href: withLang("/eat-drink"),
+        active: pathname.startsWith(`/${lang}/eat-drink`),
       },
       {
         key: "forums",

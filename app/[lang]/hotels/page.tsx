@@ -38,10 +38,10 @@ export default async function HotelsListingPage({ params }: Props) {
   const lang = (rawLang === 'el' ? 'el' : 'en') as Lang;
 
   const t = {
-    h1: { en: "All Destinations", el: "Όλοι οι Προορισμοί" },
+    h1: { en: "Where to Stay in Greece", el: "Πού να Μείνετε στην Ελλάδα" },
     sub: {
-      en: "Discover our comprehensive guides on where to stay across Greece's top destinations.",
-      el: "Ανακαλύψτε τους αναλυτικούς οδηγούς μας για το πού να μείνετε στους κορυφαίους προορισμούς της Ελλάδας.",
+      en: "Browse hotel and accommodation guides by destination.",
+      el: "Δείτε οδηγούς ξενοδοχείων και καταλυμάτων ανά προορισμό.",
     },
     view: { en: 'View Guide', el: 'Προβολή Οδηγού' },
     place: { en: 'Location', el: 'Τοποθεσία' },

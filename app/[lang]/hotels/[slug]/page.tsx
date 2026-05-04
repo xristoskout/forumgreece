@@ -56,9 +56,12 @@ export async function generateMetadata({
       ? `Πού να Μείνεις στη ${item.place}: Ξενοδοχεία & Επιλογές Διαμονής | GoGreeceNow`
       : `Where to Stay in ${item.place}: Best Areas & Hotel Ideas | GoGreeceNow`);
 
+  const isComingSoon = item.description?.[lang]?.includes("coming soon") ?? false;
+
   return {
     title: { absolute: hotelTitle },
     description,
+    robots: isComingSoon ? { index: false, follow: true } : undefined,
     openGraph: {
       title: hotelTitle,
       description,

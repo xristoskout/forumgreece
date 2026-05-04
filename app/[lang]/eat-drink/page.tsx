@@ -1,102 +1,252 @@
-import type { Metadata } from 'next';
-import Link from 'next/link';
-import Image from 'next/image';
-import { food, type Lang } from '../../../lib/content';
-import SiteHeader from '../../../components/site-header';
+import type { Metadata } from "next";
+import Link from "next/link";
+import Image from "next/image";
+import SiteHeader from "../../../components/site-header";
+import { food } from "../../../lib/content";
+
+type Lang = "en" | "el";
 
 type Props = {
   params: Promise<{ lang: string }>;
 };
 
-export async function generateStaticParams() {
-  return [{ lang: 'en' }, { lang: 'el' }];
+const SITE_URL = "https://www.gogreecenow.com";
+
+function isLang(value: string): value is Lang {
+  return value === "en" || value === "el";
+}
+
+function withLang(path: string, lang: Lang) {
+  const normalized = path.startsWith("/") ? path : `/${path}`;
+  return `/${lang}${normalized}`;
+}
+
+const seo = {
+  en: {
+    title: "Eat & Drink in Greece: Food Guides, Local Taverns & Regional Dishes | GoGreeceNow",
+    description:
+      "Explore Greek food guides, regional dishes and local drinks to add more flavor to your Greece trip planning.",
+    path: "/en/eat-drink",
+  },
+  el: {
+    title: "Φαγητό & Ποτό στην Ελλάδα: Γαστρονομικοί Οδηγοί, Τοπικές Ταβέρνες & Περιφερειακά Πιάτα | GoGreeceNow",
+    description:
+      "Ανακάλυψε οδηγούς ελληνικής γαστρονομίας, τοπικά πιάτα και ποτά για να δώσεις περισσότερο χαρακτήρα στο ταξίδι σου στην Ελλάδα.",
+    path: "/el/eat-drink",
+  },
+} satisfies Record<Lang, { title: string; description: string; path: string }>;
+
+export function generateStaticParams() {
+  return [{ lang: "en" }, { lang: "el" }];
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { lang: rawLang } = await params;
-  const lang = (rawLang === 'el' ? 'el' : 'en') as Lang;
+  const { lang } = await params;
 
-  const t = {
-    title: {
-      en: 'Greek Gastronomy: Best Places to Eat & Drink | GoGreeceNow',
-      el: 'Ελληνική Γαστρονομία: Φαγητό & Ποτό στην Ελλάδα | GoGreeceNow',
-    },
-    description: {
-      en: 'Explore the flavors of Greece. Authentic tavernas, sunset cocktails, and local gastronomy guides for Santorini, Crete, Lesvos and more.',
-      el: 'Εξερευνήστε τις γεύσεις της Ελλάδας. Αυθεντικές ταβέρνες, cocktails στο ηλιοβασίλεμα και γαστρονομικοί οδηγοί.',
-    },
-  };
+  if (!isLang(lang)) return {};
 
   return {
-    title: t.title[lang],
-    description: t.description[lang],
+    metadataBase: new URL(SITE_URL),
+    title: seo[lang].title,
+    description: seo[lang].description,
+    alternates: {
+      canonical: seo[lang].path,
+      languages: {
+        en: "/en/eat-drink",
+        el: "/el/eat-drink",
+        "x-default": "/en/eat-drink",
+      },
+    },
+    openGraph: {
+      type: "website",
+      url: seo[lang].path,
+      title: seo[lang].title,
+      description: seo[lang].description,
+      siteName: "GoGreeceNow",
+      images: [
+        {
+          url: "/images/hero-greece.webp",
+          width: 1600,
+          height: 900,
+          alt: "Greek food and drink hub",
+        },
+      ],
+    },
   };
 }
 
-export default async function EatDrinkListingPage({ params }: Props) {
-  const { lang: rawLang } = await params;
-  const lang = (rawLang === 'el' ? 'el' : 'en') as Lang;
+export default async function EatDrinkPage({ params }: Props) {
+  const { lang } = await params;
 
-  const t = {
-    h1: { en: 'Eat & Drink', el: 'Φαγητό & Ποτό' },
-    sub: {
-      en: 'Discover the rich flavors of Greek cuisine, from traditional village tavernas to refined sunset dining and local ouzo traditions.',
-      el: 'Ανακαλύψτε τις πλούσιες γεύσεις της ελληνικής κουζίνας, από παραδοσιακές ταβέρνες μέχρι εκλεπτυσμένο δείπνο στο ηλιοβασίλεμα.',
-    },
-    discover: { en: 'Read Guide', el: 'Διαβάστε τον Οδηγό' },
-  };
+  if (!isLang(lang)) {
+    return null;
+  }
+
+  const featuredFood = food.slice(0, 6);
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-white">
+    <main className="min-h-screen bg-transparent text-slate-900">
       <SiteHeader />
-      
-      <div className="container mx-auto px-6 py-32">
-        <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-7xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-orange-600 via-orange-400 to-amber-700 tracking-tight">
-            {t.h1[lang]}
+
+      <section className="border-b border-slate-200 bg-white backdrop-blur-md">
+        <div className="mx-auto max-w-7xl px-6 py-14">
+          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-orange-700">
+            {lang === "en" ? "Greek Food & Drink Hub" : "Hub Ελληνικής Γαστρονομίας & Ποτού"}
+          </p>
+
+          <h1 className="mt-3 max-w-4xl text-4xl font-bold tracking-tight text-slate-900 md:text-5xl">
+            {lang === "en"
+              ? "Regional dishes, local flavors and food guides across Greece"
+              : "Τοπικά πιάτα, γεύσεις και γαστρονομικοί οδηγοί από όλη την Ελλάδα"}
           </h1>
-          <p className="text-slate-500 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-light">
-            {t.sub[lang]}
+
+          <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-500">
+            {lang === "en"
+              ? "Use this hub to discover Greek food and drink ideas that can shape the feel of a trip, from regional specialties to destination-based food inspiration."
+              : "Χρησιμοποίησε αυτό το hub για να ανακαλύψεις ιδέες γύρω από το ελληνικό φαγητό και ποτό που μπορούν να αλλάξουν την αίσθηση ενός ταξιδιού, από τοπικές σπεσιαλιτέ μέχρι γαστρονομική έμπνευση ανά προορισμό."}
+          </p>
+
+          <div className="mt-8 flex flex-wrap gap-3">
+            <Link
+              href={withLang("/collections/greek-islands", lang)}
+              className="bg-orange-500 border-none px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-orange-600"
+            >
+              {lang === "en" ? "Explore Greek island guides →" : "Δες οδηγούς για ελληνικά νησιά →"}
+            </Link>
+
+            <Link
+              href={withLang("/", lang)}
+              className="border border-slate-200 bg-white backdrop-blur-md px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-white hover:bg-slate-50"
+            >
+              {lang === "en" ? "Back to homepage →" : "Επιστροφή στην αρχική →"}
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-14">
+        <div className="mb-8 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-orange-700">
+              {lang === "en" ? "Featured Food Guides" : "Προτεινόμενοι Γαστρονομικοί Οδηγοί"}
+            </p>
+            <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900">
+              {lang === "en" ? "Browse local food and drink pages" : "Δες σελίδες για τοπικό φαγητό και ποτό"}
+            </h2>
+          </div>
+
+          <p className="max-w-3xl text-sm leading-6 text-slate-500">
+            {lang === "en"
+              ? "These guides help travelers connect destination planning with local food culture, specialties and memorable meals."
+              : "Αυτοί οι οδηγοί βοηθούν τον ταξιδιώτη να συνδέσει την οργάνωση του προορισμού με την τοπική γαστρονομία, τις σπεσιαλιτέ και τα πιο αξέχαστα γεύματα."}
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
-          {food.map((item) => (
-            <Link href={`/${lang}/eat-drink/${item.slug}`} key={item.slug}>
-              <article className="group relative h-[500px] rounded-[2rem] overflow-hidden cursor-pointer bg-white shadow-xl hover:shadow-2xl transition-all duration-500">
-                <div className="h-1/2 relative overflow-hidden">
-                  <Image 
-                    src={item.image} 
-                    alt={item.title[lang]} 
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-700" 
-                  />
-                  <div className="absolute top-4 left-4">
-                    <span className="px-3 py-1 rounded-full bg-orange-500 text-white text-[10px] font-bold uppercase tracking-widest">
-                      {item.place}
-                    </span>
-                  </div>
-                </div>
-                
-                <div className="h-1/2 p-8 flex flex-col justify-between">
-                  <div>
-                    <h2 className="text-2xl font-bold text-slate-900 mb-3 line-clamp-2 leading-tight group-hover:text-orange-600 transition-colors">
-                      {item.title[lang]}
-                    </h2>
-                    <p className="text-slate-500 text-sm line-clamp-3 font-light leading-relaxed">
-                      {item.info[lang]}
-                    </p>
-                  </div>
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {featuredFood.map((item) => (
+            <article
+              key={item.slug}
+              className="overflow-hidden rounded-xl border border-slate-200 bg-white backdrop-blur-md shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+            >
+              <div className="relative h-52">
+                <Image src={item.image} alt={item.title[lang]} fill className="object-cover" sizes="(max-width: 768px) 100vw, 300px" />
+              </div>
 
-                  <div className="flex items-center text-orange-600 text-sm font-bold pt-4 border-t border-slate-100">
-                    {t.discover[lang]} <span className="ml-2 group-hover:translate-x-2 transition-transform">→</span>
-                  </div>
+              <div className="p-6">
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="rounded-md bg-orange-50 px-3 py-1 text-xs font-semibold text-orange-800">
+                    {lang === "en" ? "Food Guide" : "Γαστρονομικός Οδηγός"}
+                  </span>
+                  <span className="rounded-md bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-500">
+                    {item.place}
+                  </span>
                 </div>
-              </article>
-            </Link>
+
+                <h3 className="mt-4 text-2xl font-bold text-slate-900">
+                  {item.title[lang]}
+                </h3>
+
+                <p className="mt-3 text-sm leading-7 text-slate-500">
+                  {item.info[lang]}
+                </p>
+
+                <div className="mt-5 flex flex-wrap gap-2">
+                  {item.specialties[lang].slice(0, 3).map((specialty) => (
+                    <span
+                      key={specialty}
+                      className="rounded-md border border-orange-100 bg-white backdrop-blur-md px-3 py-1 text-xs font-medium text-orange-900"
+                    >
+                      {specialty}
+                    </span>
+                  ))}
+                </div>
+
+                <Link
+                  href={withLang(`/eat-drink/${item.slug}`, lang)}
+                  className="mt-6 inline-flex rounded-md bg-orange-500 px-4 py-3 text-sm font-semibold text-slate-900 transition hover:bg-orange-600"
+                >
+                  {lang === "en" ? `${item.place} food guide →` : `Γαστρονομικός οδηγός για ${item.place} →`}
+                </Link>
+              </div>
+            </article>
           ))}
         </div>
-      </div>
+      </section>
+
+      <section className="bg-white backdrop-blur-md py-14">
+        <div className="mx-auto grid max-w-7xl gap-6 px-6 lg:grid-cols-3">
+          <article className="border border-slate-200 bg-white hover:bg-slate-50 p-6">
+            <h3 className="text-xl font-semibold text-slate-900">
+              {lang === "en" ? "Use food to choose a destination" : "Χρησιμοποίησε το φαγητό για να διαλέξεις προορισμό"}
+            </h3>
+            <p className="mt-3 text-sm leading-7 text-slate-500">
+              {lang === "en"
+                ? "Cuisine can change the whole feel of a trip, especially when choosing between islands, cities and regional experiences."
+                : "Η γαστρονομία μπορεί να αλλάξει όλη την αίσθηση ενός ταξιδιού, ειδικά όταν επιλέγεις ανάμεσα σε νησιά, πόλεις και περιφερειακές εμπειρίες."}
+            </p>
+            <Link
+              href={withLang("/collections/greek-islands", lang)}
+              className="mt-5 inline-block text-sm font-semibold text-orange-700"
+            >
+              {lang === "en" ? "Go to Greek islands hub →" : "Πήγαινε στο hub για ελληνικά νησιά →"}
+            </Link>
+          </article>
+
+          <article className="border border-slate-200 bg-white hover:bg-slate-50 p-6">
+            <h3 className="text-xl font-semibold text-slate-900">
+              {lang === "en" ? "Combine local food with experiences" : "Συνδύασε τοπικές γεύσεις με εμπειρίες"}
+            </h3>
+            <p className="mt-3 text-sm leading-7 text-slate-500">
+              {lang === "en"
+                ? "Boat trips, local tours and destination activities become more memorable when they connect with the food culture of the place."
+                : "Τα boat trips, οι τοπικές εκδρομές και οι δραστηριότητες γίνονται πιο αξέχαστα όταν συνδέονται με τη γαστρονομική ταυτότητα του τόπου."}
+            </p>
+            <Link
+              href={withLang("/tours/all", lang)}
+              className="mt-5 inline-block text-sm font-semibold text-orange-700"
+            >
+              {lang === "en" ? "Explore tours & experiences →" : "Δες τις εκδρομές & εμπειρίες →"}
+            </Link>
+          </article>
+
+          <article className="border border-slate-200 bg-white hover:bg-slate-50 p-6">
+            <h3 className="text-xl font-semibold text-slate-900">
+              {lang === "en" ? "Plan the practical side too" : "Οργάνωσε και την πρακτική πλευρά"}
+            </h3>
+            <p className="mt-3 text-sm leading-7 text-slate-500">
+              {lang === "en"
+                ? "The best food ideas work better when transport, timing and everyday travel details are already clear."
+                : "Οι καλύτερες γαστρονομικές ιδέες λειτουργούν ακόμη καλύτερα όταν έχουν ήδη ξεκαθαρίσει οι μετακινήσεις, το timing και οι πρακτικές λεπτομέρειες του ταξιδιού."}
+            </p>
+            <Link
+              href={withLang("/travel-info", lang)}
+              className="mt-5 inline-block text-sm font-semibold text-orange-700"
+            >
+              {lang === "en" ? "Go to travel info hub →" : "Πήγαινε στο hub ταξιδιωτικών πληροφοριών →"}
+            </Link>
+          </article>
+        </div>
+      </section>
     </main>
   );
 }

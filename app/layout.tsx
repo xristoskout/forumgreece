@@ -10,9 +10,9 @@ import MediterraneanCursor from "@/components/mediterranean-cursor";
 
 const geistSans = Montserrat({
   variable: "--font-geist-sans",
-  subsets: ["latin", "cyrillic", "cyrillic-ext", "latin-ext", "vietnamese"],
+  subsets: ["latin", "latin-ext"],
   display: "swap",
-  preload: true,
+  preload: false,
 });
 
 const geistMono = Geist_Mono({
@@ -24,23 +24,23 @@ const geistMono = Geist_Mono({
 
 const notoGreek = Noto_Sans({
   variable: "--font-greek-sans",
-  subsets: ["greek", "greek-ext"],
+  subsets: ["greek", "greek-ext", "latin"],
   display: "swap",
-  preload: true,
+  preload: false,
 });
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
   subsets: ["latin", "latin-ext"],
   display: "swap",
-  preload: true,
+  preload: false,
 });
 
 const ebGaramond = EB_Garamond({
   variable: "--font-eb-garamond",
-  subsets: ["greek", "greek-ext"],
+  subsets: ["greek", "greek-ext", "latin"],
   display: "swap",
-  preload: true,
+  preload: false,
 });
 
 export const viewport: Viewport = {

@@ -795,7 +795,7 @@ export default function HomePageClient({
               className="group relative overflow-hidden rounded-[2rem] border border-slate-200 bg-white text-slate-900 transition-all duration-700 hover:-translate-y-2 hover:scale-[1.03] hover:z-30 hover:shadow-[0_15px_50px_rgba(0,0,0,0.1)]"
             >
               <div className="absolute inset-0 transition-all duration-700 group-hover:scale-110 group-hover:brightness-110">
-                <Image src={item.image} alt={item.title[lang]} fill className="object-cover" />
+                <Image src={item.image} alt={item.title[lang]} fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" />
               </div>
               <div className="absolute inset-0 bg-slate-900/40 transition-all duration-700 group-hover:bg-slate-900/60" />
 
@@ -858,7 +858,7 @@ export default function HomePageClient({
                 className="group relative flex flex-col justify-end overflow-hidden rounded-[2.5rem] border border-slate-200 bg-white shadow-xl transition-all duration-700 hover:-translate-y-3 hover:scale-[1.05] hover:z-30 hover:shadow-[0_15px_50px_rgba(0,0,0,0.1)] min-h-[450px]"
               >
                 <div className="absolute inset-0 transition-all duration-700 group-hover:scale-110 group-hover:brightness-110">
-                <Image src={item.image} alt={item.name || "Featured destination"} fill className="object-cover" />
+                <Image src={item.image} alt={item.name || "Featured destination"} fill className="object-cover" sizes="(max-width: 768px) 100vw, 25vw" />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-90 transition-opacity duration-700 group-hover:opacity-75" />
 
@@ -1162,7 +1162,7 @@ export default function HomePageClient({
                 className="overflow-hidden rounded-xl border border-amber-200 bg-gradient-to-br from-white via-amber-50/70 to-orange-50 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
               >
                 <div className="relative h-52">
-                  <Image src={item.image} alt={item.name} fill className="object-cover" />
+                  <Image src={item.image} alt={item.name} fill className="object-cover" sizes="(max-width: 768px) 100vw, 300px" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#2a1606]/35 via-transparent to-transparent" />
 
                   {item.badge ? (
@@ -1290,7 +1290,7 @@ export default function HomePageClient({
               >
                 <div className="relative">
                   <div className="relative h-52">
-                    <Image src={item.image} alt={item.title[lang]} fill className="object-cover" />
+                    <Image src={item.image} alt={item.title[lang]} fill className="object-cover" sizes="(max-width: 768px) 100vw, 300px" />
                   </div>
                   <div className="absolute inset-x-0 top-0 flex items-center justify-between p-4">
                     <span className="rounded-md bg-cyan-600 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-slate-900 shadow-sm">
@@ -1407,7 +1407,7 @@ export default function HomePageClient({
               >
                 <div className="relative">
                   <div className="relative h-52">
-                    <Image src={item.image} alt={item.title[lang]} fill className="object-cover" />
+                    <Image src={item.image} alt={item.title[lang]} fill className="object-cover" sizes="(max-width: 768px) 100vw, 300px" />
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-t from-[#4a2207]/35 via-transparent to-transparent" />
 
@@ -1440,16 +1440,16 @@ export default function HomePageClient({
                     {item.info[lang]}
                   </p>
 
-                  <div className="mt-5 flex flex-wrap gap-2">
-                    {item.specialties[lang].slice(0, 3).map((specialty) => (
-                      <span
-                        key={specialty}
+                  <ul className="mt-5 flex flex-wrap gap-2 list-none p-0">
+                    {item.specialties[lang].slice(0, 3).map((specialty, index) => (
+                      <li
+                        key={`${specialty}-${index}`}
                         className="rounded-md border border-orange-100 bg-white backdrop-blur-md px-3 py-1 text-xs font-medium text-orange-900"
                       >
                         {specialty}
-                      </span>
+                      </li>
                     ))}
-                  </div>
+                  </ul>
 
                   <Link
                     href={withLang(`/eat-drink/${item.slug}`)}

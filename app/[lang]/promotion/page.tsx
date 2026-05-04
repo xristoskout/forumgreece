@@ -130,7 +130,7 @@ export default function PromotionPage() {
         <div className="absolute inset-0 z-0 opacity-30 mix-blend-luminosity">
            {/* If user has hero images, we use a placeholder or known image, fallback to gradients */}
            <div className="absolute inset-0 bg-gradient-to-br from-indigo-900 to-slate-900"></div>
-           <Image src="/images/hero/greece-main.webp" alt="Greece background for business promotion" fill className="object-cover opacity-50" />
+            <Image src="/images/hero/greece-main.webp" alt="Greece background for business promotion" fill className="object-cover opacity-50" sizes="100vw" />
         </div>
         <div className="relative z-10 mx-auto max-w-5xl px-6 text-center">
           <span className="inline-flex rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-white mb-6 backdrop-blur-md">
