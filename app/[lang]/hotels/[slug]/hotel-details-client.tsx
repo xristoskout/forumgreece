@@ -6,7 +6,6 @@ import { useParams, usePathname, useRouter } from "next/navigation";
 import { hotels, type Lang, siteBrand, siteBrandLine } from "../../../../lib/content";
 import { experienceBusinesses } from "../../../../lib/experiences";
 import BusinessGallery from "../../businesses/[slug]/business-gallery";
-import BusinessCard from "../../../../components/BusinessCard";
 import SiteHeader from "../../../../components/site-header";
 import { sanitizeIframeHTML } from "../../../../lib/sanitize-iframe";
 
@@ -302,6 +301,30 @@ export default function HotelDetailsClient({ lang: serverLang, slug: serverSlug,
               </div>
             )}
 
+            {item.faq && item.faq.length > 0 && (
+              <section className="mt-10">
+                <h2 className="text-2xl font-bold tracking-tight text-slate-900 mb-6">
+                  {lang === "en" ? "Frequently Asked Questions" : "Συχνές Ερωτήσεις"}
+                </h2>
+                <div className="space-y-4">
+                  {item.faq.map((faq, idx) => (
+                    <details
+                      key={`faq-${idx}`}
+                      className="group rounded-2xl border border-slate-200 bg-white/90 backdrop-blur-md p-6 shadow-md transition-all duration-300 hover:shadow-lg"
+                    >
+                      <summary className="cursor-pointer list-none text-base font-semibold text-slate-800 group-hover:text-indigo-700 transition-colors flex items-center justify-between">
+                        <span>{faq.q[lang]}</span>
+                        <span className="ml-4 text-indigo-400 transition-transform duration-300 group-open:rotate-45 text-xl leading-none flex-shrink-0">+</span>
+                      </summary>
+                      <p className="mt-4 text-base leading-relaxed text-slate-600">
+                        {faq.a[lang]}
+                      </p>
+                    </details>
+                  ))}
+                </div>
+              </section>
+            )}
+
 
             <ListCard
               title={t.services[lang]}
@@ -317,6 +340,45 @@ export default function HotelDetailsClient({ lang: serverLang, slug: serverSlug,
           </div>
 
           <aside className="space-y-8">
+            {item.featuredBusinesses && item.featuredBusinesses.length > 0 && (
+              <section className="group rounded-[2.5rem] border border-indigo-200 bg-indigo-50/60 backdrop-blur-md p-8 shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(99,102,241,0.12)]">
+                <div className="flex items-center gap-3 mb-5">
+                  <span className="inline-flex rounded-full bg-indigo-100 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-indigo-800">
+                    {lang === "en" ? "Featured" : "Προτεινόμενο"}
+                  </span>
+                </div>
+                {item.featuredBusinesses
+                  .map((bSlug) => experienceBusinesses.find((b) => b.slug === bSlug))
+                  .filter(Boolean)
+                  .map((business) => (
+                    <Link href={withLang(`/businesses/${business!.slug}`)} key={business!.slug} className="block group/card">
+                      <div className="rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-lg transition-shadow">
+                        <div className="relative h-40 w-full">
+                          <Image
+                            src={business!.image}
+                            alt={business!.name}
+                            fill
+                            className="object-cover"
+                            sizes="(max-width: 768px) 100vw, 300px"
+                          />
+                        </div>
+                        <div className="p-5">
+                          <h3 className="text-lg font-bold text-slate-900 group-hover/card:text-indigo-700 transition-colors">
+                            {business!.name}
+                          </h3>
+                          <p className="mt-2 text-sm text-slate-500 line-clamp-3">
+                            {business!.info[lang]}
+                          </p>
+                          <span className="mt-3 inline-flex items-center text-xs font-semibold text-indigo-600">
+                            {lang === "en" ? "View details" : "Δείτε λεπτομέρειες"} →
+                          </span>
+                        </div>
+                      </div>
+                    </Link>
+                  ))}
+              </section>
+            )}
+
             <ListCard
               title={t.features[lang]}
               items={item.features[lang]}
@@ -396,80 +458,51 @@ export default function HotelDetailsClient({ lang: serverLang, slug: serverSlug,
             )}
           </aside>
         </div>
-
-        {item.featuredBusinesses && item.featuredBusinesses.length > 0 && (
-          <section className="mt-20 border-t border-slate-200 pt-16">
-            <div className="mb-10 text-center flex flex-col items-center">
-              <span className="inline-flex rounded-full bg-indigo-100 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-indigo-800">
-                {lang === "en" ? "Featured Suggestions" : "Προτεινόμενες Επιλογές"}
-              </span>
-              <h2 className="mt-4 text-3xl font-bold tracking-tight text-slate-900">
-                {lang === "en" ? "Top Businesses & Local Stays" : "Κορυφαίες Επιχειρήσεις & Διαμονή"}
-              </h2>
-            </div>
-            
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {item.featuredBusinesses
-                .map((bSlug) => experienceBusinesses.find((b) => b.slug === bSlug))
-                .filter(Boolean)
-                .map((business) => (
-                  <Link href={withLang(`/businesses/${business!.slug}`)} key={business!.slug} className="block h-full transition-transform hover:-translate-y-1">
-                    <BusinessCard
-                      name={business!.name}
-                      category={business!.category[lang]}
-                      imageUrl={business!.image}
-                      description={business!.info[lang]}
-                    />
-                  </Link>
-                ))}
-            </div>
-          </section>
-        )}
       </div>
 
-      <footer className="border-t border-slate-200 bg-white backdrop-blur-md mt-20">
-        <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-slate-600 md:flex-row md:items-center md:justify-between">
-          <div>
-            {lang === "en"
-              ? `${siteBrand} — destinations, travel inspiration and local experiences across Greece.`
-              : `${siteBrand} — προορισμοί, ταξιδιωτική έμπνευση και τοπικές εμπειρίες σε όλη την Ελλάδα.`}
+        <footer className="border-t border-slate-200 bg-white backdrop-blur-md mt-20">
+          <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-slate-600 md:flex-row md:items-center md:justify-between">
+            <div>
+              {lang === "en"
+                ? `${siteBrand} — destinations, travel inspiration and local experiences across Greece.`
+                : `${siteBrand} — προορισμοί, ταξιδιωτική έμπνευση και τοπικές εμπειρίες σε όλη την Ελλάδα.`}
+            </div>
+
+            <div className="flex gap-5">
+              <Link href={withLang("/")} className="hover:text-slate-900">
+                {lang === "en" ? "Home" : "Αρχική"}
+              </Link>
+
+              <Link
+                href={withLang("/#hotels")}
+                className="hover:text-slate-900"
+              >
+                {lang === "en" ? "Hotels" : "Ξενοδοχεία"}
+              </Link>
+
+              <Link
+                href={withLang("/travel-to-greece")}
+                className="hover:text-slate-900"
+              >
+                {lang === "en" ? "Travel to Greece" : "Ταξίδι στην Ελλάδα"}
+              </Link>
+            </div>
           </div>
-
-          <div className="flex gap-5">
-            <Link href={withLang("/")} className="hover:text-slate-900">
-              {lang === "en" ? "Home" : "Αρχική"}
-            </Link>
-
-            <Link
-              href={withLang("/#hotels")}
-              className="hover:text-slate-900"
+          <div className="border-t border-slate-100 mt-2 pt-5 pb-6 flex flex-col items-center gap-2">
+            <a 
+              href="https://www.focusai.gr" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="group flex items-center gap-2 text-sm font-bold tracking-widest transition-all"
             >
-              {lang === "en" ? "Hotels" : "Ξενοδοχεία"}
-            </Link>
-
-            <Link
-              href={withLang("/travel-to-greece")}
-              className="hover:text-slate-900"
-            >
-              {lang === "en" ? "Travel to Greece" : "Ταξίδι στην Ελλάδα"}
-            </Link>
+              <span className="bg-gradient-to-r from-indigo-600 to-indigo-400 bg-clip-text text-transparent group-hover:from-indigo-500 group-hover:to-purple-500 transition-all duration-500">
+                {lang === "en" ? "Website Design 2026 by Focus AI" : "Κατασκευή Ιστοσελίδας 2026 By Focus AI"}
+              </span>
+              <span className="text-indigo-400 group-hover:text-purple-500 transition-transform group-hover:translate-x-1">→</span>
+            </a>
+            <p className="text-[10px] text-slate-600 uppercase tracking-[0.3em]">Premium Digital Experiences</p>
           </div>
-        </div>
-        <div className="border-t border-slate-100 mt-2 pt-5 pb-6 flex flex-col items-center gap-2">
-          <a 
-            href="https://www.focusai.gr" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="group flex items-center gap-2 text-sm font-bold tracking-widest transition-all"
-          >
-            <span className="bg-gradient-to-r from-indigo-600 to-indigo-400 bg-clip-text text-transparent group-hover:from-indigo-500 group-hover:to-purple-500 transition-all duration-500">
-              {lang === "en" ? "Website Design 2026 by Focus AI" : "Κατασκευή Ιστοσελίδας 2026 By Focus AI"}
-            </span>
-            <span className="text-indigo-400 group-hover:text-purple-500 transition-transform group-hover:translate-x-1">→</span>
-          </a>
-          <p className="text-[10px] text-slate-600 uppercase tracking-[0.3em]">Premium Digital Experiences</p>
-        </div>
-      </footer>
+        </footer>
     </main>
   );
 }

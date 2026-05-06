@@ -50,6 +50,11 @@ export type GuideCard = {
   sections?: GuideSection[];
 };
 
+export type HotelFAQ = {
+  q: Localized;
+  a: Localized;
+};
+
 export type HotelCard = {
   slug: string;
   name: string;
@@ -73,6 +78,7 @@ export type HotelCard = {
   youtube?: string;
   featuredBusinesses?: string[];
   sections?: GuideSection[];
+  faq?: HotelFAQ[];
   seo?: {
     title: Localized;
     description: Localized;
@@ -1822,47 +1828,182 @@ export const hotels: HotelCard[] = [
   },
   {
     slug: "corfu",
-    name: "Hotels in Corfu",
-    place: "Corfu",
+    name: "Where to Stay in Corfu",
+    place: "Corfu — Ionian Islands",
     info: {
-      en: "A relaxed family-friendly stay close to beaches, restaurants and green scenery.",
-      el: "Χαλαρή οικογενειακή διαμονή κοντά σε παραλίες, εστιατόρια και πράσινα τοπία.",
+      en: "Find the best places to stay in Corfu — from the romantic Old Town and lively Kavos to family-friendly resorts in Sidari and Gouvia. A complete guide to Corfu hotels and areas.",
+      el: "Βρείτε τα καλύτερα μέρη για διαμονή στην Κέρκυρα — από τη ρομαντική Παλιά Πόλη και το ζωντανό Κάβος έως τα οικογενειακά θέρετρα στο Σιδάρι και τη Γουβιά. Ο πλήρης οδηγός για ξενοδοχεία και περιοχές.",
     },
     image: "/images/hotel-corfu.webp",
-    badge: "Sponsored",
+    badge: "Featured stay",
     overview: {
-      en: "A calm Corfu accommodation concept suited to families and longer summer stays.",
-      el: "Ένα ήρεμο concept διαμονής στην Κέρκυρα, κατάλληλο για οικογένειες και μεγαλύτερες καλοκαιρινές διακοπές.",
+      en: "Choosing where to stay in Corfu shapes the whole experience — from the cobblestone lanes of the UNESCO Old Town and the lush green north to lively beach resorts in the south and sheltered family bays in between.",
+      el: "Η επιλογή διαμονής στην Κέρκυρα καθορίζει ολόκληρη την εμπειρία — από τα πλακόστρωτα σοκάκια της UNESCO Παλιάς Πόλης και το καταπράσινο βορρά έως τα ζωντανά παραθαλάσσια θέρετρα του νότου και τους προστατευμένους οικογενειακούς όρμους.",
+    },
+    description: {
+      en: "Corfu is one of the greenest and most diverse islands in Greece, and where you choose to stay will define the kind of holiday you have. The island stretches from wild northern coastlines and UNESCO-listed architecture in its historic capital to packed beach resorts in the south and peaceful olive-grove villages inland. Unlike many Greek islands, Corfu rewards travelers who look beyond the obvious.",
+      el: "Η Κέρκυρα είναι ένα από τα πιο πράσινα και ποικιλόμορφα νησιά της Ελλάδας και η επιλογή διαμονής θα καθορίσει το είδος των διακοπών σας. Το νησί εκτείνεται από τις άγριες βόρειες ακτές και την αρχιτεκτονική UNESCO της ιστορικής πρωτεύουσας έως τα γεμάτα ζωή παραθαλάσσια θέρετρα του νότου και τα γαλήνια ελαιόδεντρα της ενδοχώρας.",
     },
     features: {
-      en: ["Family-friendly", "Near beaches", "Relaxed atmosphere"],
-      el: ["Κατάλληλο για οικογένειες", "Κοντά σε παραλίες", "Χαλαρή ατμόσφαιρα"],
+      en: ["Corfu Town (Culture)", "Paleokastritsa (Scenery)", "Sidari & North (Families)", "Kavos (Nightlife)"],
+      el: ["Πόλη Κέρκυρας (Πολιτισμός)", "Παλαιοκαστρίτσα (Θέα)", "Σιδάρι & Βορράς (Οικογένειες)", "Κάβος (Νυχτερινή ζωή)"],
     },
+    sections: [
+      {
+        title: { en: "1. Corfu Town (Kerkyra): Culture, history and the best of both worlds", el: "1. Πόλη Κέρκυρας (Κέρκυρα): Πολιτισμός, ιστορία και το καλύτερο των δύο κόσμων" },
+        content: {
+          en: "Corfu Town — known locally as Kerkyra — is the island's capital and one of the most beautiful cities in all of Greece. Its UNESCO-listed Old Town is a layered maze of Venetian alleyways, French arcades and British-era cricket pitches, all set along a dramatic seafront. Staying here puts you within walking distance of the Liston promenade, the Old and New Fortresses, and some of the island's best restaurants and cocktail bars. It suits couples, culture-seekers and anyone who wants to feel the authentic rhythm of the island rather than a resort bubble. Hotels range from boutique properties inside restored mansions to comfortable mid-range options just outside the old walls.",
+          el: "Η Πόλη της Κέρκυρας είναι η πρωτεύουσα του νησιού και μία από τις ομορφότερες πόλεις της Ελλάδας. Η Παλιά Πόλη (UNESCO) είναι ένας πολυεπίπεδος λαβύρινθος βενετσιάνικων σοκακιών, γαλλικών στοών και βρετανικών γηπέδων κρίκετ, όλα κατά μήκος της εντυπωσιακής παραλίας. Ιδανική για ζευγάρια, λάτρεις του πολιτισμού και όσους θέλουν αυθεντικό νησιωτικό ρυθμό.",
+        }
+      },
+      {
+        title: { en: "2. Paleokastritsa: Dramatic scenery and crystal-clear water", el: "2. Παλαιοκαστρίτσα: Δραματικό τοπίο και κρυστάλλινα νερά" },
+        content: {
+          en: "On the northwest coast, Paleokastritsa is widely considered one of the most scenic spots in the Ionian Islands. The area is built around a series of small, sheltered coves with turquoise water backed by forested hillsides. It is quieter and more relaxed than the resort zones, making it an excellent base for travelers who want natural beauty and easy access to boat trips, snorkeling and sea caves. Accommodation tends toward smaller family-run hotels and apartments rather than large resorts. It is slightly less convenient for nightlife, but ideal for those who would rather wake up to the sound of the sea.",
+          el: "Στη βορειοδυτική ακτή, η Παλαιοκαστρίτσα θεωρείται ευρέως ένα από τα πιο γραφικά σημεία των Ιονίων Νησιών. Η περιοχή είναι χτισμένη γύρω από μικρούς κολπίσκους με τιρκουάζ νερά και κατάφυτες πλαγιές. Ιδανική για όσους προτιμούν φυσική ομορφιά, βαρκάδες και snorkeling αντί για έντονη νυχτερινή ζωή.",
+        }
+      },
+      {
+        title: { en: "3. Sidari and the North Coast: Families, Canal d'Amour and long beaches", el: "3. Σιδάρι και Βόρεια Ακτή: Οικογένειες, Canal d'Amour και μεγάλες παραλίες" },
+        content: {
+          en: "The north of Corfu — including Sidari, Roda and Acharavi — is the island's most popular zone for families and package holidays. The beaches here are broad, sandy and shallow, with calm water well suited to children. Sidari is best known for the Canal d'Amour, a series of dramatic sandstone rock formations with small channels of water running between them. The area has a wide range of hotels and aparthotels, plenty of tavernas and a relaxed, unhurried pace. It is also one of the easier parts of the island to reach directly from the airport via the north coast road.",
+          el: "Ο βορράς της Κέρκυρας — Σιδάρι, Ρόδα και Αχαράβη — είναι η πιο δημοφιλής ζώνη για οικογένειες. Οι παραλίες είναι πλατιές, αμμώδεις και ρηχές. Το Σιδάρι φημίζεται για το Canal d'Amour, έναν εντυπωσιακό σχηματισμό αμμόλιθων με μικρά κανάλια νερού μεταξύ τους.",
+        }
+      },
+      {
+        title: { en: "4. Gouvia and the East Coast: Convenience, marinas and easy access", el: "4. Γουβιά και Ανατολική Ακτή: Ευκολία, μαρίνες και πρόσβαση" },
+        content: {
+          en: "Gouvia sits just a few kilometres north of Corfu Town on the calm east coast and offers one of the most convenient bases on the island. The marina here is one of the largest in the Ionian Sea, and the area has a good mix of hotels, beach bars and tavernas without the full resort intensity of the south. It works well for travelers who want to split their time between the capital and the beach, as buses and taxis connect easily in both directions. The water on the east coast is generally calmer than the west, making it a good choice for families who prefer flatter sea conditions.",
+          el: "Η Γουβιά βρίσκεται λίγα χιλιόμετρα βόρεια της Κέρκυρας και προσφέρει μία από τις πιο βολικές βάσεις του νησιού. Η μαρίνα είναι μία από τις μεγαλύτερες στο Ιόνιο. Ιδανική για όσους θέλουν συνδυασμό πόλης και παραλίας με εύκολη συγκοινωνία.",
+        }
+      },
+      {
+        title: { en: "5. Kavos: Beach bars, nightlife and the young traveler scene", el: "5. Κάβος: Beach bars, νυχτερινή ζωή και νεανικό κλίμα" },
+        content: {
+          en: "At the southern tip of the island, Kavos has a completely different character from the rest of Corfu. It is the island's main nightlife destination — a long strip of bars, clubs, beach parties and late-night tavernas that runs almost the entire length of the village. If you are traveling in your twenties and want a lively, social holiday with easy access to the beach and an active after-dark scene, Kavos delivers exactly that. It is not the right choice for families or those looking for tranquility, but for the right traveler it is one of the most energetic summer destinations in Greece.",
+          el: "Στο νότιο άκρο του νησιού, ο Κάβος έχει εντελώς διαφορετικό χαρακτήρα. Είναι ο κύριος προορισμός νυχτερινής ζωής — μια μεγάλη λωρίδα από μπαρ, κλαμπ, beach parties και ταβέρνες. Ιδανικός για νεαρούς ταξιδιώτες, όχι για οικογένειες.",
+        }
+      }
+    ],
+    faq: [
+      {
+        q: { en: "When is the best time to book hotels in Corfu?", el: "Πότε είναι η καλύτερη περίοδος για κράτηση ξενοδοχείων στην Κέρκυρα;" },
+        a: { en: "Corfu's peak season runs from late June to mid-August. Book at least 2–3 months in advance for this period, especially for Corfu Town boutique hotels and properties in Paleokastritsa, which fill up quickly.", el: "Η περίοδος αιχμής είναι από τέλη Ιουνίου έως μέσα Αυγούστου. Κάντε κράτηση 2-3 μήνες νωρίτερα, ειδικά για boutique ξενοδοχεία στην Κέρκυρα και Παλαιοκαστρίτσα." }
+      },
+      {
+        q: { en: "Which area of Corfu is best for families?", el: "Ποια περιοχή της Κέρκυρας είναι καλύτερη για οικογένειες;" },
+        a: { en: "The north coast — particularly Sidari, Roda and Acharavi — offers the shallowest beaches, the widest range of family-friendly hotels and the most relaxed pace for young children.", el: "Η βόρεια ακτή — ειδικά Σιδάρι, Ρόδα και Αχαράβη — προσφέρει τις πιο ρηχές παραλίες και τη μεγαλύτερη γκάμα οικογενειακών ξενοδοχείων." }
+      },
+      {
+        q: { en: "Is Corfu Town a good base for the whole holiday?", el: "Είναι η πόλη της Κέρκυρας καλή βάση για ολόκληρες τις διακοπές;" },
+        a: { en: "Yes, and it is often underrated as a hotel base. You get the character of a real city, excellent restaurants and easy access to beaches via car or bus. It suits couples and independent travelers more than large families.", el: "Ναι, και συχνά υποτιμάται. Παρέχει χαρακτήρα πραγματικής πόλης, εξαιρετικά εστιατόρια και εύκολη πρόσβαση σε παραλίες." }
+      },
+      {
+        q: { en: "Do I need a car to stay outside Corfu Town?", el: "Χρειάζομαι αυτοκίνητο για διαμονή εκτός πόλης Κέρκυρας;" },
+        a: { en: "In most cases, yes. The bus network covers the main routes but runs infrequently outside peak hours. Renting a car or scooter significantly expands your options and is strongly recommended if you want to explore freely.", el: "Στις περισσότερες περιπτώσεις, ναι. Το δίκτυο λεωφορείων καλύπτει τις κύριες διαδρομές αλλά με περιορισμένη συχνότητα. Η ενοικίαση αυτοκινήτου συνιστάται ανεπιφύλακτα." }
+      }
+    ],
+    seo: {
+      title: {
+        en: "Where to Stay in Corfu | Best Areas & Hotels | GoGreeceNow",
+        el: "Πού να Μείνετε στην Κέρκυρα | Καλύτερες Περιοχές & Ξενοδοχεία | GoGreeceNow"
+      },
+      description: {
+        en: "Find the best places to stay in Corfu — from the romantic Old Town and lively Kavos to family-friendly resorts in Sidari and Gouvia. A complete guide to Corfu hotels and areas.",
+        el: "Βρείτε τα καλύτερα μέρη για διαμονή στην Κέρκυρα — από τη ρομαντική Παλιά Πόλη έως τα οικογενειακά θέρετρα. Ο πλήρης οδηγός για ξενοδοχεία και περιοχές."
+      }
+    }
   },
   {
     slug: "lesvos",
-    name: "Hotels & Rooms to let in Lesvos",
-    place: "Lesvos",
+    name: "Where to Stay in Lesvos",
+    place: "Lesvos — North Aegean",
     info: {
-      en: "Discover top-rated accommodation in Lesvos, from picturesque seaside rooms to traditional boutique stays.",
-      el: "Ανακαλύψτε επιλεγμένη διαμονή στη Λέσβο, από παραθαλάσσια δωμάτια μέχρι παραδοσιακά boutique καταλύματα.",
+      en: "Find the best places to stay in Lesvos — from the lively waterfront of Mytilene and the medieval village of Molyvos to the quiet bays of Vatera and the ouzo capital Plomari. A complete guide to Lesvos hotels and areas.",
+      el: "Βρείτε τα καλύτερα μέρη για διαμονή στη Λέσβο — από την ζωντανή παραλία της Μυτιλήνης και το μεσαιωνικό Μόλυβο έως τους ήσυχους όρμους των Βατέρων και την πρωτεύουσα του ούζου, το Πλωμάρι.",
     },
     image: "/images/businesses/Iren/2.webp",
+    badge: "Featured stay",
     overview: {
-      en: "Lesvos is a large island with highly diverse and authentic accommodation options. Rather than oversized resorts, you'll find charming local hotels and peaceful rooms to let that connect you deeply with the island's culture.",
-      el: "Η Λέσβος είναι ένα μεγάλο νησί με εξαιρετικά ποικίλες και αυθεντικές επιλογές διαμονής. Αντί για απρόσωπα resorts, θα βρείτε πανέμορφα τοπικά ξενοδοχεία και ήσυχα ενοικιαζόμενα δωμάτια.",
+      en: "Choosing where to stay in Lesvos shapes the entire experience — from the buzzing neoclassical waterfront of Mytilene and the UNESCO Geopark landscapes of the west to the medieval clifftop village of Molyvos in the north and the long sandy beaches of the south.",
+      el: "Η επιλογή διαμονής στη Λέσβο καθορίζει ολόκληρη την εμπειρία — από την νεοκλασική προκυμαία της Μυτιλήνης και τα τοπία του UNESCO Geopark έως το μεσαιωνικό Μόλυβο και τις μεγάλες αμμώδεις παραλίες του νότου.",
     },
     description: {
-      en: "Looking for the perfect stay in Lesvos? Our curated guide focuses on businesses that offer real value and a genuinely relaxing experience. Whether you want to relax quietly or use it as a base for island excursions, Lesvos offers exactly what you need.",
-      el: "Αναζητάτε την τέλεια διαμονή στη Λέσβο; Ο οδηγός μας εστιάζει σε επιχειρήσεις που προσφέρουν πραγματική αξία και μια αυθεντικά χαλαρωτική εμπειρία. Είτε θέλετε να χαλαρώσετε είτε να το χρησιμοποιήσετε ως ορμητήριο, η Λέσβος προσφέρει ακριβώς ό,τι χρειάζεστε.",
+      en: "Lesvos is the third-largest island in Greece and one of the most underrated. Its scale means that where you base yourself genuinely determines what kind of trip you have. The island divides naturally into distinct zones — a lively, urban capital in the east, a photogenic medieval village coast in the north, a remote and volcanic far west, and quieter beach towns in the south. Unlike many Aegean islands, Lesvos rewards slow travel and rewards visitors who leave the obvious route. A car is essential for exploring properly, but choosing the right base first makes everything else easier.",
+      el: "Η Λέσβος είναι το τρίτο μεγαλύτερο νησί της Ελλάδας και από τα πιο υποτιμημένα. Το μέγεθός της σημαίνει ότι η επιλογή βάσης καθορίζει πραγματικά το είδος του ταξιδιού σας. Το νησί χωρίζεται φυσικά σε διακριτές ζώνες — μια ζωντανή αστική πρωτεύουσα στα ανατολικά, μια γραφική μεσαιωνική ακτή στα βόρεια, μια απομονωμένη ηφαιστειακή δύση και ήσυχες παραθαλάσσιες πόλεις στα νότια.",
     },
     features: {
-      en: ["Comfortable beds & nice views", "Peaceful & authentic environment", "Local Lesvian hospitality", "Close to top beaches & villages", "Free WiFi and parking essentials", "Ideal starting point for road trips"],
-      el: ["Άνετα κρεβάτια & ωραία θέα", "Ήσυχο & αυθεντικό περιβάλλον", "Τοπική λεσβιακή φιλοξενία", "Κοντά σε κορυφαίες παραλίες", "Δωρεάν WiFi & πάρκινγκ", "Ιδανική αφετηρία για εξορμήσεις"],
+      en: ["Mytilene (City & Culture)", "Molyvos (Medieval & Scenic)", "Petra & North (Relaxed)", "Plomari & South (Beaches)", "Close to top beaches & villages", "Ideal base for island road trips"],
+      el: ["Μυτιλήνη (Πόλη & Πολιτισμός)", "Μόλυβος (Μεσαιωνικό & Γραφικό)", "Πέτρα & Βορράς (Χαλαρό)", "Πλωμάρι & Νότος (Παραλίες)", "Κοντά σε κορυφαίες παραλίες", "Ιδανική βάση για οδικές εκδρομές"],
     },
-    services: {
-      en: ["Spacious and beautifully decorated rooms", "Daily room freshness and cleaning", "Air conditioning for hot summer days"],
-      el: ["Ευρύχωρα και όμορφα διακοσμημένα δωμάτια", "Καθημερινή φροντίδα και καθαριότητα", "Κλιματισμός για τις ζεστές μέρες"],
+    sections: [
+      {
+        title: { en: "1. Mytilene: The city base with culture, food and easy connections", el: "1. Μυτιλήνη: Η πόλη με πολιτισμό, φαγητό και εύκολες συνδέσεις" },
+        content: {
+          en: "Mytilene is the island's capital and main port, and it is a far more interesting base than most visitors expect. The city has a genuine urban rhythm — neoclassical architecture, a long working waterfront, a lively market district, excellent restaurants and some of the best ouzo bars in Greece. The Castle of Mytilene, one of the largest fortifications in the Mediterranean, sits above the city and offers sweeping views toward the Turkish coast. Staying here puts you at the centre of the island's transport network, making day trips in every direction straightforward. It suits independent travelers, couples and food-focused visitors who want easy access to the whole island without committing to a single coastal strip.",
+          el: "Η Μυτιλήνη είναι η πρωτεύουσα και το κύριο λιμάνι του νησιού, με πιο ενδιαφέροντα χαρακτήρα από ό,τι περιμένουν οι περισσότεροι. Νεοκλασική αρχιτεκτονική, ζωτική προκυμαία, αγορά, εξαιρετικά εστιατόρια και τα καλύτερα μπαρ ούζου. Το κάστρο προσφέρει πανοραμική θέα προς τις απέναντι ακτές. Ιδανική για ανεξάρτητους ταξιδιώτες και λάτρεις του φαγητού.",
+        }
+      },
+      {
+        title: { en: "2. Molyvos (Mithymna): Medieval architecture and the island's most scenic village", el: "2. Μόλυβος (Μήθυμνα): Μεσαιωνική αρχιτεκτονική και το πιο γραφικό χωριό" },
+        content: {
+          en: "Molyvos is widely considered the most beautiful village on Lesvos and one of the most visually striking in the entire Aegean. Its cobblestone streets rise steeply toward a Genoese castle with views stretching toward the Turkish coast, and the harbor below offers one of the most characterful settings in the North Aegean. Hotels and guesthouses here tend to be smaller and more atmospheric than the island's resort-style options — stone-built, often family-run, and packed with character. It is the right base for travelers who want a slower rhythm, beautiful evening walks, and authentic village life alongside good beaches at Anaxos and Petra just a short drive away.",
+          el: "Ο Μόλυβος θεωρείται ευρέως το ομορφότερο χωριό της Λέσβου και από τα πιο εντυπωσιακά στο Αιγαίο. Τα πλακόστρωτα σοκάκια ανηφορίζουν προς το γενοβέζικο κάστρο με θέα προς τις απέναντι ακτές, ενώ το λιμάνι προσφέρει μία από τις πιο χαρακτηριστικές ατμόσφαιρες του Βόρειου Αιγαίου. Ιδανικό για αργούς ρυθμούς, βραδινές βόλτες και αυθεντική ζωή.",
+        }
+      },
+      {
+        title: { en: "3. Petra and the Northern Coast: Relaxed, accessible and family-friendly", el: "3. Πέτρα και Βόρεια Ακτή: Χαλαρό, προσιτό και ιδανικό για οικογένειες" },
+        content: {
+          en: "Just south of Molyvos, Petra is a quieter and more practical base for the northern part of the island. It is best known for the church of Panagia Glykofiloussa, perched dramatically on top of a 40-metre volcanic rock at the centre of the village. The beach at Petra is long and sandy, the tavernas are reliable and prices are noticeably more affordable than in Molyvos. The village of Anaxos nearby adds another calm beach option with shallow water well suited to families. This stretch of coast between Petra and Molyvos is one of the best value areas on the island for a relaxed, comfortable stay without sacrificing access to Lesvos's main northern sights.",
+          el: "Νότια του Μολύβου, η Πέτρα είναι πιο ήσυχη και πρακτική βάση. Φημίζεται για την εκκλησία της Παναγίας Γλυκοφιλούσσας πάνω σε ηφαιστειακό βράχο 40 μέτρων. Η παραλία είναι μεγάλη και αμμώδης, οι τιμές προσιτές. Η γειτονική Άναξος προσφέρει επιπλέον ήσυχη επιλογή με ρηχά νερά για οικογένειες.",
+        }
+      },
+      {
+        title: { en: "4. Plomari and the South: Ouzo, long beaches and authentic village life", el: "4. Πλωμάρι και Νότος: Ούζο, μεγάλες παραλίες και αυθεντική ζωή" },
+        content: {
+          en: "Plomari is the unofficial ouzo capital of Greece, home to historic distilleries including Varvayannis and the Plomari Ouzo Museum. It sits on the southern coast surrounded by olive groves and looks out over a calm, warm sea. The town itself has a working, un-touristy feel that many visitors find refreshing after more polished destinations. The beach at Agios Isidoros nearby is one of the cleaner and calmer options on the island. Further east, Vatera offers one of the longest sandy beaches in Greece — nearly eight kilometres — backed by flat farmland and with very little development. This part of the island suits travelers who want genuine local atmosphere, easy access to the sea and a slower pace entirely.",
+          el: "Το Πλωμάρι είναι η ανεπίσημη πρωτεύουσα του ούζου, με ιστορικά αποστακτήρια και μουσείο. Βρίσκεται στη νότια ακτή, περιτριγυρισμένο από ελαιώνες. Η κοντινή παραλία του Αγίου Ισιδώρου είναι από τις πιο καθαρές. Ανατολικά, τα Βατέρα προσφέρουν μία από τις μεγαλύτερες αμμώδεις παραλίες στην Ελλάδα — σχεδόν 8 χιλιόμετρα.",
+        }
+      },
+      {
+        title: { en: "5. Sigri and the West: Remote, dramatic and ideal for the curious traveler", el: "5. Σίγρι και Δύση: Απομακρυσμένο, δραματικό και ιδανικό για περίεργους ταξιδιώτες" },
+        content: {
+          en: "The western part of Lesvos around Sigri and Skala Eresou is the least visited and arguably the most extraordinary part of the island. The UNESCO Geopark landscape here — volcanic rock formations, the open-air Petrified Forest, fossilised tree trunks millions of years old — is unlike anything else in Greece. Sigri itself is a small, whitewashed fishing village with a quiet harbor and an Ottoman castle, and the Natural History Museum of the Lesvos Petrified Forest is one of the best specialist museums in the Aegean. Accommodation is limited and simple, which is exactly the point. This is the right base for travelers who want genuine off-grid exploration, remarkable landscapes and complete escape from the mainstream island circuit.",
+          el: "Η δυτική Λέσβος γύρω από το Σίγρι και την Σκάλα Ερεσού είναι το λιγότερο επισκέψιμο και ίσως πιο εξαιρετικό τμήμα. Το τοπίο του UNESCO Geopark — ηφαιστειακοί σχηματισμοί, Απολιθωμένο Δάσος — είναι μοναδικό. Το Σίγρι είναι ένα μικρό ψαροχώρι με ήσυχο λιμάνι και οθωμανικό κάστρο. Ιδανικό για όσους θέλουν αυθεντική εξερεύνηση μακριά από τα τετριμμένα.",
+        }
+      }
+    ],
+    faq: [
+      {
+        q: { en: "Do I need a car if I'm staying in Lesvos?", el: "Χρειάζομαι αυτοκίνητο αν μένω στη Λέσβο;" },
+        a: { en: "Almost certainly yes. Lesvos is one of the largest Greek islands and its most interesting sites — the Petrified Forest, Molyvos, the Kalloni salt pans, Plomari — are spread far apart. Buses run on the main routes but infrequently. Renting a car from day one is strongly recommended.", el: "Σχεδόν σίγουρα ναι. Η Λέσβος είναι από τα μεγαλύτερα νησιά και τα αξιοθέατα είναι πολύ απομακρυσμένα. Τα λεωφορεία κινούνται σπάνια. Η ενοικίαση αυτοκινήτου συνιστάται ανεπιφύλακτα." }
+      },
+      {
+        q: { en: "How many days do I need to see Lesvos properly?", el: "Πόσες μέρες χρειάζομαι για να δω τη Λέσβο;" },
+        a: { en: "At minimum five days, ideally seven. The island divides naturally into regions — east, north, west and south — and each deserves at least a day. With less time, choose two regions and explore them well rather than rushing across the whole island.", el: "Τουλάχιστον 5 μέρες, ιδανικά 7. Το νησί χωρίζεται φυσικά σε περιοχές — ανατολή, βορράς, δύση, νότος — και η καθεμία αξίζει τουλάχιστον μία μέρα." }
+      },
+      {
+        q: { en: "Which area is best for a first visit to Lesvos?", el: "Ποια περιοχή είναι καλύτερη για πρώτη επίσκεψη;" },
+        a: { en: "Mytilene is the easiest starting point — it has the best transport connections, the widest range of accommodation and restaurants, and puts you within reach of everything. If you want more character from the start, Molyvos is the most atmospheric base on the island.", el: "Η Μυτιλήνη είναι το ευκολότερο σημείο εκκίνησης — καλύτερες συγκοινωνίες, περισσότερη διαμονή και εστιατόρια. Για περισσότερο χαρακτήρα, ο Μόλυβος είναι η πιο ατμοσφαιρική βάση." }
+      },
+      {
+        q: { en: "Is Lesvos suitable for families with children?", el: "Είναι η Λέσβος κατάλληλη για οικογένειες με παιδιά;" },
+        a: { en: "Yes, particularly the north coast around Petra and Anaxos, and the south around Vatera, which offer calm, shallow water and spacious sandy beaches. Mytilene also works well as a family base with practical amenities and easy beach access.", el: "Ναι, ειδικά η βόρεια ακτή γύρω από Πέτρα και Άναξο, και ο νότος γύρω από τα Βατέρα, που προσφέρουν ήσυχα ρηχά νερά και μεγάλες αμμώδεις παραλίες." }
+      },
+      {
+        q: { en: "When is the best time to visit Lesvos?", el: "Πότε είναι η καλύτερη εποχή για επίσκεψη;" },
+        a: { en: "Late May, June and September offer the best balance — warm enough for swimming, uncrowded enough to move freely around the island and enjoy the villages, thermal springs and geopark sites without the peak-season intensity.", el: "Τέλη Μαΐου, Ιούνιος και Σεπτέμβριος προσφέρουν την καλύτερη ισορροπία — ζέστη για κολύμπι, χωρίς συνωστισμό, ιδανικά για εξερεύνηση χωριών και αξιοθέατων." }
+      }
+    ],
+    seo: {
+      title: {
+        en: "Where to Stay in Lesvos | Best Areas & Hotels | GoGreeceNow",
+        el: "Πού να Μείνετε στη Λέσβο | Καλύτερες Περιοχές & Ξενοδοχεία | GoGreeceNow"
+      },
+      description: {
+        en: "Find the best places to stay in Lesvos — from the lively waterfront of Mytilene and the medieval village of Molyvos to the quiet bays of Vatera and the ouzo capital Plomari. A complete guide to Lesvos hotels and areas.",
+        el: "Βρείτε τα καλύτερα μέρη για διαμονή στη Λέσβο — από την Μυτιλήνη και τον Μόλυβο έως τα Βατέρα και το Πλωμάρι. Ο πλήρης οδηγός για ξενοδοχεία και περιοχές."
+      }
     },
     featuredBusinesses: ["iren-rooms"],
   },
@@ -1870,21 +2011,94 @@ export const hotels: HotelCard[] = [
   {
     slug: "mykonos",
     name: "Where to Stay in Mykonos",
-    place: "Mykonos",
+    place: "Mykonos — Cyclades",
     info: {
-      en: "Find the best places to stay in Mykonos, from stylish beach areas and lively nightlife bases to quieter corners with a more relaxed island feel.",
-      el: "Ανακαλύψτε τις καλύτερες περιοχές και ξενοδοχεία για διαμονή στη Μύκονο.",
+      en: "Find the best places to stay in Mykonos — from the iconic alleys of Mykonos Town and glamorous Psarou to lively Paradise Beach and the quieter north coast. A complete guide to Mykonos hotels and areas.",
+      el: "Βρείτε τα καλύτερα μέρη για διαμονή στη Μύκονο — από τα εμβληματικά σοκάκια της Χώρας και την κομψή Ψαρού έως την ζωντανή Paradise Beach και την ήσυχη βόρεια ακτή.",
     },
     image: "/images/mykonos.webp",
     badge: "Featured stay",
     overview: {
-      en: "A detailed guide on where to stay in Mykonos is coming soon. For now, explore our interactive map to find the best accommodation options.",
-      el: "Ένας αναλυτικός οδηγός για το πού να μείνετε στη Μύκονο έρχεται σύντομα. Προς το παρόν, εξερευνήστε τον διαδραστικό μας χάρτη για να βρείτε τις καλύτερες επιλογές διαμονής.",
+      en: "Choosing where to stay in Mykonos shapes the entire trip — from the iconic windmills and labyrinthine alleys of Chora and the glamorous beach clubs of the south coast to quieter, more affordable northern beaches and the relaxed inland village of Ano Mera.",
+      el: "Η επιλογή διαμονής στη Μύκονο καθορίζει ολόκληρο το ταξίδι — από τους εμβληματικούς ανεμόμυλους και τα λαβυρινθώδη σοκάκια της Χώρας και τα κομψά beach clubs της νότιας ακτής έως τις πιο ήσυχες βόρειες παραλίες και το χαλαρό χωριό της Άνω Μεράς.",
+    },
+    description: {
+      en: "Mykonos is one of the most recognizable islands in the world, but where you stay determines whether you experience it as a luxury escape, a party destination, a cultural base or something quieter and more personal. The island is compact enough to move between areas easily, yet each zone has a completely distinct character. Getting this choice right — before you book — is the most important decision in planning a Mykonos trip.",
+      el: "Η Μύκονος είναι από τα πιο αναγνωρίσιμα νησιά του κόσμου, αλλά η επιλογή διαμονής καθορίζει αν θα την βιώσετε ως πολυτελή απόδραση, προορισμό party, πολιτιστική βάση ή κάτι πιο ήσυχο και προσωπικό. Το νησί είναι αρκετά συμπαγές για εύκολη μετακίνηση, αλλά κάθε ζώνη έχει εντελώς διαφορετικό χαρακτήρα.",
     },
     features: {
-      en: ["Mykonos Town", "Psarou & Ornos", "Platis Gialos"],
-      el: ["Χώρα Μυκόνου", "Ψαρού & Ορνός", "Πλατύς Γιαλός"],
+      en: ["Mykonos Town (Chora)", "Psarou & Ornos", "Platis Gialos", "Paradise & South Coast", "Ano Mera & North"],
+      el: ["Χώρα Μυκόνου", "Ψαρού & Ορνός", "Πλατύς Γιαλός", "Paradise & Νότια Ακτή", "Άνω Μερά & Βορράς"],
     },
+    sections: [
+      {
+        title: { en: "1. Mykonos Town (Chora): The iconic base for culture, dining and Cycladic atmosphere", el: "1. Χώρα Μυκόνου: Η εμβληματική βάση για πολιτισμό, εστίαση και κυκλαδίτικη ατμόσφαιρα" },
+        content: {
+          en: "Mykonos Town — universally known as Chora — is the heart of the island and the most atmospheric place to stay. Its whitewashed cube houses, narrow cobblestone lanes and cascading bougainvilleas create a setting unlike anywhere else in the Cyclades. Staying here puts you within walking distance of Little Venice, the famous windmills, the Panagia Paraportiani church and the island's best restaurants, cocktail bars and boutiques. Hotels in Chora range from high-end design properties with caldera-style terraces to more intimate boutique rooms tucked inside restored captain's houses. It is the right choice for travelers who want to feel the genuine pulse of the island — morning walks before the crowds, late-night dinners in the alleys, and easy access to everything without needing transport. The downside is that it is the busiest and noisiest area during peak season, particularly around Little Venice at sunset.",
+          el: "Η Χώρα είναι η καρδιά του νησιού και η πιο ατμοσφαιρική περιοχή διαμονής. Τα ασπρισμένα κυβικά σπίτια, τα στενά πλακόστρωτα σοκάκια και οι βουκονβίλιες δημιουργούν ένα σκηνικό μοναδικό στις Κυκλάδες. Ιδανική για περπάτημα στη Μικρή Βενετία, τους ανεμόμυλους και την Παναγία Παραπορτιανή. Η μειονέκτηση είναι ο θόρυβος τους θερινούς μήνες.",
+        }
+      },
+      {
+        title: { en: "2. Psarou and Ornos: Glamour, calm water and the luxury beach scene", el: "2. Ψαρού & Ορνός: Γοητεία, ήρεμα νερά και πολυτελής παραλιακή σκηνή" },
+        content: {
+          en: "Just south of Chora, the neighboring bays of Psarou and Ornos represent two sides of the same upscale coin. Psarou is Mykonos's most exclusive beach — a small, sheltered cove with crystal-clear water and a famous beach club that has long attracted a high-profile summer crowd. Hotels and villas in this area tend toward the luxury end of the market, with infinity pools, sea views and discreet service. Ornos, immediately adjacent, is slightly more accessible and family-friendly while still offering a polished, stylish atmosphere. It is also a key departure point for the island's water taxi network, making it easy to reach other south coast beaches without a car.",
+          el: "Νότια της Χώρας, οι κόλποι της Ψαρούς και του Ορνού αντιπροσωπεύουν δύο πλευρές της ίδιας πολυτελούς εμπειρίας. Η Ψαρού είναι η πιο αποκλειστική παραλία με διάσημο beach club. Ο Ορνός είναι πιο προσιτός και οικογενειακός, αλλά εξίσου κομψός, με water taxi για άλλες παραλίες.",
+        }
+      },
+      {
+        title: { en: "3. Platis Gialos: The practical south coast hub", el: "3. Πλατύς Γιαλός: Ο πρακτικός κόμβος της νότιας ακτής" },
+        content: {
+          en: "Platis Gialos is one of the most useful bases on the island for travelers who want flexibility. The beach here is long and sandy with calm, shallow water, and it serves as the main hub for the island's water taxi service — small boats that connect easily to Paradise, Super Paradise, Agrari and Elia beaches along the southern coast. Accommodation ranges from mid-range hotels to well-appointed apartments, and the area has a good selection of tavernas and beach bars without the full intensity of the more famous spots.",
+          el: "Ο Πλατύς Γιαλός είναι μία από τις πιο χρήσιμες βάσεις για ευελιξία. Η παραλία είναι μεγάλη και αμμώδης με ήρεμα νερά, ενώ είναι ο κύριος κόμβος για water taxi προς Paradise, Super Paradise, Αγραρι και Ελιά. Διαμονή από μεσαίας κατηγορίας ξενοδοχεία έως καλά εξοπλισμένα διαμερίσματα.",
+        }
+      },
+      {
+        title: { en: "4. Paradise Beach and the South Coast: Party atmosphere and beach club energy", el: "4. Paradise Beach & Νότια Ακτή: Party ατμόσφαιρα και beach club ενέργεια" },
+        content: {
+          en: "The southern stretch of Mykonos — anchored by Paradise and Super Paradise beaches — is the engine of the island's world-famous nightlife and beach club scene. Music plays from midday until late, the crowd is young and international, and the energy is high throughout the summer. Hotels and complexes in this area are purpose-built for the beach club lifestyle, with rooms and studios steps from the waterfront. It is not the right base for families or travelers looking for peace, but for those who want to be at the centre of the Mykonos party experience, staying on the south coast removes the logistics entirely.",
+          el: "Η νότια Μύκονος — Paradise και Super Paradise — είναι η καρδιά της παγκόσμιας νυχτερινής ζωής και των beach clubs. Μουσική από το μεσημέρι έως αργά, νεανικό διεθνές κλίμα και υψηλή ενέργεια. Δεν είναι κατάλληλο για οικογένειες, αλλά ιδανικό για όσους θέλουν το κέντρο της party εμπειρίας.",
+        }
+      },
+      {
+        title: { en: "5. Ano Mera and the North: Quiet, authentic and a different side of the island", el: "5. Άνω Μερά & Βορράς: Ήσυχο, αυθεντικό και διαφορετική πλευρά του νησιού" },
+        content: {
+          en: "Ano Mera is the only significant inland village on Mykonos and offers a completely different experience from the coastal resort zones. Its central square, monastery of Panagia Tourliani and simple tavernas give a genuine sense of how the island lived before the fame arrived. The north coast beaches — including Agios Stefanos, Ftelia, Agios Sostis and Fokos — are among the quietest and most natural on the island, frequented mostly by locals and travelers who seek them out deliberately. Agios Sostis in particular has no sunbeds or music, just clear water and a single taverna.",
+          el: "Η Άνω Μερά είναι το μοναδικό σημαντικό ηπειρωτικό χωριό, με κεντρική πλατεία, μονή Παναγίας Τουρλιανής και απλές ταβέρνες. Οι βόρειες παραλίες — Άγιος Στέφανος, Φτελιά, Άγιος Σώστης, Φωκός — είναι από τις πιο ήσυχες. Ο Άγιος Σώστης δεν έχει ξαπλώστρες ή μουσική, μόνο καθαρό νερό και μια ταβέρνα.",
+        }
+      }
+    ],
+    faq: [
+      {
+        q: { en: "Which area of Mykonos is best for a first visit?", el: "Ποια περιοχή της Μυκόνου είναι καλύτερη για πρώτη επίσκεψη;" },
+        a: { en: "Mykonos Town (Chora) is the best base for first-time visitors. It gives you the full Cycladic atmosphere, the iconic sights on foot and easy access to the rest of the island. If you prioritize the beach over everything else, Platis Gialos is the most practical and flexible coastal base.", el: "Η Χώρα είναι η καλύτερη βάση για πρώτη επίσκεψη. Παρέχει πλήρη κυκλαδίτικη ατμόσφαιρα, εμβληματικά αξιοθέατα με τα πόδια και εύκολη πρόσβαση στο υπόλοιπο νησί. Αν προτιμάτε την παραλία, ο Πλατύς Γιαλός είναι η πιο πρακτική επιλογή." }
+      },
+      {
+        q: { en: "Is Mykonos Town noisy at night?", el: "Είναι η Χώρα της Μυκόνου θορυβώδης τη νύχτα;" },
+        a: { en: "Yes, particularly around Little Venice and the main bar streets during July and August. If you value quiet evenings, look for accommodation on the edges of Chora or in a different area. The noise tends to taper off after 2–3am but peak season nights can be long.", el: "Ναι, ειδικά γύρω από τη Μικρή Βενετία και τους κύριους δρόμους με μπαρ τον Ιούλιο και Αύγουστο. Αν προτιμάτε ήσυχες βραδιές, κοιτάξτε στην άκρη της Χώρας ή σε άλλη περιοχή." }
+      },
+      {
+        q: { en: "Do I need a car in Mykonos?", el: "Χρειάζομαι αυτοκίνητο στη Μύκονο;" },
+        a: { en: "Not necessarily. The island's bus network (KTEL) covers the main beaches and runs frequently in summer. The water taxi from Platis Gialos connects the south coast beaches efficiently. A car or ATV becomes useful if you want to reach the north coast beaches or explore Ano Mera on your own schedule.", el: "Όχι απαραίτητα. Το δίκτυο ΚΤΕΛ καλύπτει τις κύριες παραλίες με συχνά δρομολόγια το καλοκαίρι. Τα water taxi από τον Πλατύ Γιαλό συνδέουν αποτελεσματικά τις νότιες παραλίες. Το αυτοκίνητο ή ATV είναι χρήσιμο για βόρειες παραλίες και εξερεύνηση." }
+      },
+      {
+        q: { en: "When is the best time to visit Mykonos for a balance of atmosphere and affordability?", el: "Πότε είναι η καλύτερη εποχή για επίσκεψη στη Μύκονο;" },
+        a: { en: "May to mid-June and September to early October offer the best balance. The sea is warm, the island is active but not overwhelming, and hotel prices drop significantly compared to July and August.", el: "Μάιος έως μέσα Ιουνίου και Σεπτέμβριος έως αρχές Οκτωβρίου προσφέρουν την καλύτερη ισορροπία. Η θάλασσα είναι ζεστή, το νησί ζωντανό αλλά όχι συνωστισμένο, και οι τιμές ξενοδοχείων πέφτουν σημαντικά." }
+      },
+      {
+        q: { en: "Can I do a day trip to Delos from any base in Mykonos?", el: "Μπορώ να κάνω ημερήσια εκδρομή στη Δήλο;" },
+        a: { en: "Yes — ferries to Delos depart from the Old Port in Mykonos Town regardless of where you are staying. The trip takes about 30 minutes and the site is only open in the mornings, so an early departure is essential. This is one of the best day trips in the entire Aegean.", el: "Ναι — τα φέρι για τη Δήλο αναχωρούν από το Παλιό Λιμάνι της Χώρας. Το ταξίδι διαρκεί 30 λεπτά και ο αρχαιολογικός χώρος είναι ανοιχτός μόνο πρωί, οπότε η πρωινή αναχώρηση είναι απαραίτητη." }
+      }
+    ],
+    seo: {
+      title: {
+        en: "Where to Stay in Mykonos | Best Areas & Hotels | GoGreeceNow",
+        el: "Πού να Μείνετε στη Μύκονο | Καλύτερες Περιοχές & Ξενοδοχεία | GoGreeceNow"
+      },
+      description: {
+        en: "Find the best places to stay in Mykonos — from the iconic alleys of Mykonos Town and glamorous Psarou to lively Paradise Beach and the quieter north coast. A complete guide to Mykonos hotels and areas.",
+        el: "Βρείτε τα καλύτερα μέρη για διαμονή στη Μύκονο — από τα εμβληματικά σοκάκια της Χώρας και την κομψή Ψαρού έως την ζωντανή Paradise Beach και την ήσυχη βόρεια ακτή."
+      }
+    }
   },
   {
     slug: "crete",

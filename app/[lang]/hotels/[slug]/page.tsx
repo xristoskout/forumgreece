@@ -58,6 +58,21 @@ export async function generateMetadata({
 
   const isComingSoon = item.description?.[lang]?.includes("coming soon") ?? false;
 
+  const faqJsonLd = item.faq?.length
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: item.faq.map((faq) => ({
+          "@type": "Question",
+          name: faq.q[lang],
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: faq.a[lang],
+          },
+        })),
+      }
+    : null;
+
   return {
     title: { absolute: hotelTitle },
     description,
@@ -80,6 +95,9 @@ export async function generateMetadata({
       description,
       images: [item.image],
     },
+    other: faqJsonLd
+      ? { "script:ld+json": JSON.stringify(faqJsonLd) }
+      : undefined,
   };
 }
 

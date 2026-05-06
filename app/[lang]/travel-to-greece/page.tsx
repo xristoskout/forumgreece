@@ -69,8 +69,8 @@ export default function TravelToGreecePage() {
         el: "Facebook Travel Forums",
       },
       heroTitle: {
-        en: "Welcome to the most awesome Greek travel community!",
-        el: "Καλώς ήρθατε στην πιο καταπληκτική ελληνική ταξιδιωτική κοινότητα!",
+        en: "Welcome to the GoGreeceNow Travel Community",
+        el: "Καλώς ήρθατε στην ταξιδιωτική κοινότητα GoGreeceNow",
       },
       heroText: {
         en: "This page brings together all your Facebook travel communities for islands, cities, beaches, food ideas and destination inspiration across Greece.",
