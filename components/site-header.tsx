@@ -83,8 +83,8 @@ export default function SiteHeader() {
       {
         key: "hotels",
         label: t.hotels[lang],
-        href: withLangHash("#hotels"),
-        active: false,
+        href: withLang("/hotels"),
+        active: pathname.startsWith(`/${lang}/hotels`),
       },
       {
         key: "tours",

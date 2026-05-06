@@ -1,15 +1,26 @@
 import type { Metadata } from 'next';
 
-export function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Metadata {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const isEl = lang === 'el';
+  const title = isEl
+    ? 'Ταξίδι στην Ελλάδα: Οδηγός Σχεδιασμού & Πληροφορίες | GoGreeceNow'
+    : 'Travel to Greece: Planning Hub, Tips & Practical Info | GoGreeceNow';
+
   return {
     title: {
-      absolute: 'Travel to Greece: Planning Hub, Tips & Practical Info | GoGreeceNow',
+      absolute: title,
     },
-    description: 'Everything you need to plan your Greece trip: when to visit, how to get there, island groups, transport tips and practical travel info.',
+    description: isEl
+      ? 'Ό,τι χρειάζεσαι για να οργανώσεις το ταξίδι σου στην Ελλάδα: πότε να πας, πώς να φτάσεις, νησιωτικά σύμπλεγμα, μεταφορές και πρακτικές ταξιδιωτικές πληροφορίες.'
+      : 'Everything you need to plan your Greece trip: when to visit, how to get there, island groups, transport tips and practical travel info.',
     openGraph: {
-      title: 'Greece Travel Planning Hub | GoGreeceNow',
-      description: 'Plan your Greece trip with practical guides, island maps, timing tips and transport info.',
+      title: title,
+      description: isEl
+        ? 'Οργάνωσε το ταξίδι σου στην Ελλάδα με πρακτικούς οδηγούς, χάρτες νησιών, tips για το timing και πληροφορίες μεταφοράς.'
+        : 'Plan your Greece trip with practical guides, island maps, timing tips and transport info.',
       type: 'website',
+      locale: isEl ? 'el_GR' : 'en_US',
       images: [
         {
           url: '/images/hero-greece.webp',
@@ -21,8 +32,10 @@ export function generateMetadata({ params }: { params: Promise<{ lang: string }>
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'Greece Travel Planning Hub | GoGreeceNow',
-      description: 'Plan your Greece trip with practical guides, island maps, timing tips and transport info.',
+      title: title,
+      description: isEl
+        ? 'Οργάνωσε το ταξίδι σου στην Ελλάδα με πρακτικούς οδηγούς, χάρτες νησιών, tips για το timing και πληροφορίες μεταφοράς.'
+        : 'Plan your Greece trip with practical guides, island maps, timing tips and transport info.',
       images: ['/images/hero-greece.webp'],
     },
   };

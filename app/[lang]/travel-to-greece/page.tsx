@@ -4,6 +4,7 @@ import { useMemo } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
+import SiteHeader from "../../../components/site-header";
 
 type Lang = "en" | "el";
 
@@ -335,12 +336,13 @@ export default function TravelToGreecePage() {
                   {item.image && (
                     <>
                       <div className="absolute inset-0 transition-all duration-700 group-hover:scale-110 group-hover:brightness-110">
-                        <Image
-                          src={item.image}
-                          alt={item.title}
-                          fill
-                          className="object-cover"
-                        />
+                          <Image
+                            src={item.image}
+                            alt={item.title}
+                            fill
+                            className="object-cover"
+                            sizes="(max-width: 768px) 100vw, 33vw"
+                          />
                       </div>
                       <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-slate-900/10" />
                     </>
@@ -389,62 +391,7 @@ export default function TravelToGreecePage() {
 
   return (
     <main className="min-h-screen bg-white text-slate-900">
-      <section className="border-b border-slate-200 bg-white backdrop-blur-md">
-        <div className="mx-auto flex max-w-7xl items-center justify-between gap-2 px-0 py-3 sm:gap-6 sm:px-6 sm:py-5">
-          <Link
-            href={withLang("/")}
-            className="group flex min-w-0 items-center gap-2 sm:gap-3"
-          >
-            <Image
-              src="/images/logo/gogreecenow-logo.webp"
-              alt="GoGreeceNow logo"
-              width={52}
-              height={52}
-              className="h-10 w-10 shrink-0 object-contain sm:h-12 sm:w-12"
-              priority
-            />
-            <div className="min-w-0">
-              <div className="truncate text-lg font-bold tracking-tight text-indigo-800 transition group-hover:text-indigo-700 sm:text-2xl">
-                GoGreeceNow
-              </div>
-              <div className="hidden text-sm text-slate-500 sm:block">
-                {t.brandLine[lang]}
-              </div>
-            </div>
-          </Link>
-
-          <nav className="hidden gap-6 text-sm font-medium text-slate-600 lg:flex">
-            <Link href={withLang("/")} className="hover:text-indigo-700 transition-colors">
-              {t.navHome[lang]}
-            </Link>
-            <span className="text-indigo-700 font-semibold">{t.navForums[lang]}</span>
-          </nav>
-
-          <div className="flex items-center gap-2 rounded-full border border-slate-200 bg-white/90 shadow-md backdrop-blur-md p-1">
-            <button
-              onClick={() => switchLanguage("en")}
-              className={`rounded-full px-3 py-1.5 text-sm font-semibold transition ${
-                lang === "en"
-                  ? "bg-indigo-600 text-slate-900"
-                  : "text-slate-500 hover:text-slate-900"
-              }`}
-            >
-              EN
-            </button>
-
-            <button
-              onClick={() => switchLanguage("el")}
-              className={`rounded-full px-3 py-1.5 text-sm font-semibold transition ${
-                lang === "el"
-                  ? "bg-indigo-600 text-slate-900"
-                  : "text-slate-500 hover:text-slate-900"
-              }`}
-            >
-              GR
-            </button>
-          </div>
-        </div>
-      </section>
+      <SiteHeader />
 
       {/* Full-width Hero Section - Greeka.com vibe */}
       <section className="relative flex min-h-[60vh] xl:min-h-[70vh] items-center justify-center bg-no-repeat">
@@ -455,6 +402,7 @@ export default function TravelToGreecePage() {
             fill
             className="object-cover"
             priority
+            sizes="100vw"
           />
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-slate-900/40 to-slate-900/70 z-[1]" />
