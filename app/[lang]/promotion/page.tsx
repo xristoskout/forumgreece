@@ -45,7 +45,6 @@ export default function PromotionPage() {
       setStatus('error');
     }
   };
-  const lang: Lang = pathname.startsWith("/el") ? "el" : "en";
   const t = {
     title: {
       en: "Personalized Business Promotion",

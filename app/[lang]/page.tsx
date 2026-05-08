@@ -4,8 +4,8 @@ import { preload } from "react-dom";
 import HomePageClient from "./home-page-client";
 import { client } from "../../lib/sanity/client";
 import { HOME_PAGE_QUERY } from "../../lib/sanity/queries";
-
-type Lang = "en" | "el";
+import { SITE_URL } from "../../lib/content";
+import { Lang, isLang } from "../../lib/useLocale";
 
 type Props = {
   params: Promise<{ lang: string }>;
@@ -63,8 +63,6 @@ type HomePageContent = {
   footerPrivacy?: string;
 };
 
-const SITE_URL = "https://www.gogreecenow.com";
-
 const homeSeo: Record<
   Lang,
   {
@@ -89,10 +87,6 @@ const homeSeo: Record<
     locale: "el_GR",
   },
 };
-
-function isLang(value: string): value is Lang {
-  return value === "en" || value === "el";
-}
 
 function HomeStructuredData({ lang }: { lang: Lang }) {
   const pageUrl = `${SITE_URL}/${lang}`;
@@ -153,7 +147,8 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { lang } = await params;
+  const { lang: rawLang } = await params;
+  const lang = isLang(rawLang) ? rawLang : 'en';
 
   if (!isLang(lang)) {
     return {};
@@ -199,7 +194,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function Page({ params }: Props) {
-  const { lang } = await params;
+  const { lang: rawLang } = await params;
+  const lang = isLang(rawLang) ? rawLang : 'en';
 
   if (!isLang(lang)) {
     notFound();

@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
-import { tours, type Lang } from '../../../../lib/content';
+import { tours } from '../../../../lib/content';
 import SiteHeader from '../../../../components/site-header';
 import ToursDirectoryClient from './tours-directory-client';
+import { Lang, isLang } from '../../../../lib/useLocale';
 
 type Props = {
   params: Promise<{ lang: string }>;
@@ -13,7 +14,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang: rawLang } = await params;
-  const lang = (rawLang === 'el' ? 'el' : 'en') as Lang;
+  const lang = isLang(rawLang) ? rawLang : 'en';
 
   const t = {
     title: {
@@ -34,7 +35,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function ToursDirectoryPage({ params }: Props) {
   const { lang: rawLang } = await params;
-  const lang = (rawLang === 'el' ? 'el' : 'en') as Lang;
+  const lang = isLang(rawLang) ? rawLang : 'en';
 
   return (
     <>

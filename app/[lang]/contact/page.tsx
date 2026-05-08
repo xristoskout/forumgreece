@@ -1,15 +1,12 @@
 "use client";
 
-import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import SiteHeader from "../../../components/site-header";
 import Link from 'next/link';
-
-type Lang = "en" | "el";
+import { useLocale } from '../../../lib/useLocale';
 
 export default function ContactPage() {
-  const pathname = usePathname();
-  const lang: Lang = pathname.startsWith("/el") ? "el" : "en";
+  const { lang } = useLocale();
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

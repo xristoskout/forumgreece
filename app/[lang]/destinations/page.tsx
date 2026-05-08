@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
-import { destinations, type Lang } from '../../../lib/content';
+import { destinations } from '../../../lib/content';
 import SiteHeader from '../../../components/site-header';
 import DestinationsClient from './destinations-client';
+import { Lang, isLang } from '../../../lib/useLocale';
 
 type Props = {
   params: Promise<{ lang: string }>;
@@ -13,7 +14,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang: rawLang } = await params;
-  const lang = (rawLang === 'el' ? 'el' : 'en') as Lang;
+  const lang = isLang(rawLang) ? rawLang : 'en';
 
   const t = {
     title: {
@@ -137,7 +138,7 @@ const regionOrder = [
 
 export default async function DestinationsListingPage({ params }: Props) {
   const { lang: rawLang } = await params;
-  const lang = (rawLang === 'el' ? 'el' : 'en') as Lang;
+  const lang = isLang(rawLang) ? rawLang : 'en';
 
   // Group destinations by region key (English name)
   const byRegionMap = new Map<string, typeof destinations>();
