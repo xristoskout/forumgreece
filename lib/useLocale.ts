@@ -2,6 +2,15 @@ import { usePathname, useRouter } from "next/navigation";
 
 export type Lang = "en" | "el";
 
+export function isLang(value: string): value is Lang {
+  return value === "en" || value === "el";
+}
+
+export function withLang(path: string, lang: Lang) {
+  const normalized = path.startsWith("/") ? path : `/${path}`;
+  return `/${lang}${normalized}`;
+}
+
 export function useLocale() {
   const pathname = usePathname();
   const router = useRouter();
@@ -10,14 +19,6 @@ export function useLocale() {
   function stripLocale(path: string) {
     const stripped = path.replace(/^\/(en|el)(?=\/|$)/, "");
     return stripped || "/";
-  }
-
-  function withLang(path: string, locale: Lang = lang) {
-    if (/^https?:\/\//i.test(path)) return path;
-    const normalized = path.startsWith("/") ? path : `/${path}`;
-    const cleanPath = stripLocale(normalized);
-    if (cleanPath === "/") return `/${locale}`;
-    return `/${locale}${cleanPath}`;
   }
 
   function switchLanguage(nextLang: Lang) {

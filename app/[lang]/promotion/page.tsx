@@ -5,11 +5,10 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import SiteHeader from "../../../components/site-header";
-
-type Lang = "en" | "el";
+import { Lang, useLocale } from "../../../lib/useLocale";
 
 export default function PromotionPage() {
-  const pathname = usePathname();
+  const { lang } = useLocale();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
 

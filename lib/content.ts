@@ -3168,6 +3168,8 @@ export const tours: TourItem[] = [
   },
 ];
 
+export const SITE_URL = "https://www.gogreecenow.com";
+
 export const communities: CommunityCard[] = [
   {
     title: { en: "Forum Greece", el: "Forum Greece" },

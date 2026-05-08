@@ -4,11 +4,10 @@ import { usePathname } from 'next/navigation';
 import SiteHeader from "../../../components/site-header";
 import Image from 'next/image';
 import Link from 'next/link';
-type Lang = "en" | "el";
+import { Lang, useLocale } from "../../../lib/useLocale";
 
 export default function AboutPage() {
-  const pathname = usePathname();
-  const lang: Lang = pathname.startsWith("/el") ? "el" : "en";
+  const { lang } = useLocale();
 
   const t = {
     title: {
