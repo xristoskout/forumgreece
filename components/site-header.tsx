@@ -3,43 +3,14 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useMemo, useState } from "react";
-import { usePathname, useRouter } from "next/navigation";
-import { Lang, siteBrand, siteBrandLine } from "../lib/content";
+import { usePathname } from "next/navigation";
+import { siteBrand, siteBrandLine } from "../lib/content";
+import { Lang, useLocale } from "../lib/useLocale";
 
 export default function SiteHeader() {
-  const pathname = usePathname();
-  const router = useRouter();
+  const { lang, pathname, withLang, withLangHash, switchLanguage } = useLocale();
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-
-  const lang: Lang = pathname.startsWith("/el") ? "el" : "en";
-
-  function stripLocale(path: string) {
-    const stripped = path.replace(/^\/(en|el)(?=\/|$)/, "");
-    return stripped || "/";
-  }
-
-  function withLang(path: string, locale: Lang = lang) {
-    if (/^https?:\/\//i.test(path)) return path;
-
-    const normalized = path.startsWith("/") ? path : `/${path}`;
-    const cleanPath = stripLocale(normalized);
-
-    if (cleanPath === "/") {
-      return `/${locale}`;
-    }
-
-    return `/${locale}${cleanPath}`;
-  }
-
-  function withLangHash(hash: string, locale: Lang = lang) {
-    return `${withLang("/", locale)}${hash}`;
-  }
-
-  function switchLanguage(nextLang: Lang) {
-    setMenuOpen(false);
-    router.push(withLang(pathname, nextLang));
-  }
 
   useEffect(() => {
     setMenuOpen(false);
@@ -105,7 +76,7 @@ export default function SiteHeader() {
         active: pathname.startsWith(`/${lang}/travel-to-greece`),
       },
     ],
-    [isHome, lang, pathname]
+    [isHome, lang, pathname, withLang, withLangHash]
   );
 
   return (
@@ -251,7 +222,7 @@ export default function SiteHeader() {
           </div>
         </div>
       </div>
-
+      {/* If menu is open, show the mobile menu overlay */}
       {menuOpen ? (
         <div className="border-t border-slate-200 bg-white backdrop-blur-md xl:hidden">
           <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6">
