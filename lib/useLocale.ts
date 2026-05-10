@@ -2,10 +2,11 @@
 
 import { usePathname, useRouter } from "next/navigation";
 
-export type Lang = "en" | "el";
+export const supportedLangs = ["en", "el"] as const;
+export type Lang = (typeof supportedLangs)[number];
 
 export function isLang(value: string): value is Lang {
-  return value === "en" || value === "el";
+  return supportedLangs.includes(value as Lang);
 }
 
 export function withLang(path: string, lang: Lang) {

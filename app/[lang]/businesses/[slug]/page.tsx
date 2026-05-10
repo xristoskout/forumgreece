@@ -2,17 +2,11 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { experienceBusinesses } from "../../../../lib/experiences";
 import BusinessDetailsClient from "./business-details-client";
-
-const supportedLangs = ["en", "el"] as const;
-type Lang = (typeof supportedLangs)[number];
+import { Lang, isLang } from "../../../../lib/useLocale";
 
 type BusinessPageProps = {
   params: Promise<{ lang: string; slug: string }>;
 };
-
-function isValidLang(value: string): value is Lang {
-  return supportedLangs.includes(value as Lang);
-}
 
 export async function generateStaticParams() {
   return supportedLangs.flatMap((lang) =>

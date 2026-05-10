@@ -3,24 +3,12 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import SiteHeader from "../../../../components/site-header";
-import { tours } from "../../../../lib/content";
-
-type Lang = "en" | "el";
+import { tours, SITE_URL } from "../../../../lib/content";
+import { Lang, isLang, withLang } from "../../../../lib/useLocale";
 
 type Props = {
   params: Promise<{ lang: string }>;
 };
-
-const SITE_URL = "https://www.gogreecenow.com";
-
-function isLang(value: string): value is Lang {
-  return value === "en" || value === "el";
-}
-
-function withLang(path: string, lang: Lang) {
-  const normalized = path.startsWith("/") ? path : `/${path}`;
-  return `/${lang}${normalized}`;
-}
 
 const seo = {
   en: {

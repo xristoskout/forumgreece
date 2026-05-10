@@ -1,11 +1,135 @@
-"use client";
-
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import SiteHeader from "../../../components/site-header";
-import { Lang, useLocale } from "../../../lib/useLocale";
+import { Lang, useLocale, isLang } from "../../../lib/useLocale";
+import { SITE_URL } from "../../../lib/content";
+
+const staticText = {
+  title: {
+    en: "Personalized Business Promotion",
+    el: "Προσωποποιημένη Προβολή Επιχειρήσεων"
+  },
+  subtitle: {
+    en: "Connect with thousands of travelers planning their trip to Greece. Elevate your brand with targeted promotion tailored to your exact needs.",
+    el: "Συνδέσου με χιλιάδες ταξιδιώτες που οργανώνουν το ταξίδι τους στην Ελλάδα. Αναβάθμισε το brand σου με στοχευμένη προβολή προσαρμοσμένη στις δικές σου ανάγκες."
+  },
+  services_eyebrow: {
+    en: "Our Services",
+    el: "Οι Υπηρεσίες Μας"
+  },
+  services_title: {
+    en: "Why promote your business with us?",
+    el: "Γιατί να προβάλεις την επιχείρησή σου σε εμάς;"
+  },
+  service1_title: {
+    en: "Targeted Audience",
+    el: "Στοχευμένο Κοινό"
+  },
+  service1_desc: {
+    en: "Reach travelers who are actively looking for hotels, restaurants, and tours in Greece right when they are making decisions.",
+    el: "Προσέγγισε ταξιδιώτες που αναζητούν ενεργά ξενοδοχεία, εστιατόρια και εκδρομές στην Ελλάδα τη στιγμή που παίρνουν αποφάσεις."
+  },
+  service2_title: {
+    en: "Premium Placement",
+    el: "Premium Τοποθέτηση"
+  },
+  service2_desc: {
+    en: "Get featured across our top destination guides, travel hubs, and interactive tools for maximum visibility.",
+    el: "Εμφανίσου στους κορυφαίους οδηγούς προορισμών, τα travel hubs και τα διαδραστικά εργαλεία μας για μέγιστη κάλυψη."
+  },
+  service3_title: {
+    en: "Direct Bookings & SEO",
+    el: "Απευθείας Κρατήσεις & SEO"
+  },
+  service3_desc: {
+    en: "Redirect visitors straight to your website without commissions. Build strong domain authority and backlink opportunities.",
+    el: "Η κίνηση πηγαίνει κατευθείαν στη σελίδα σου χωρίς προμήθειες. Χτίζεις δυνατό SEO και αποκτάς πολύτιμα backlinks."
+  },
+  audience_eyebrow: {
+    en: "Who We Work With",
+    el: "Με Ποιους Συνεργαζόμαστε"
+  },
+  audience_title: {
+    en: "Promotion for all travel professionals",
+    el: "Προβολή για επαγγελματίες του τουρισμού"
+  },
+  audience_hotels: {
+    en: "Hotels & Villas",
+    el: "Ξενοδοχεία & Βίλες"
+  },
+  audience_tours: {
+    en: "Tours & Experiences",
+    el: "Εκδρομές & Εμπειρίες"
+  },
+  audience_food: {
+    en: "Restaurants & Bars",
+    el: "Εστιατόρια & Μπαρ"
+  },
+  cta_title: {
+    en: "Ready to grow your business?",
+    el: "Έτοιμοι να αναπτύξετε την επιχείρησή σας;"
+  },
+  cta_text: {
+    en: "Contact us today for a custom promotion plan.",
+    el: "Επικοινωνήστε μαζί μας σήμερα για να οργανώσουμε ένα πλάνο προβολής."
+  },
+  cta_button: {
+    en: "Contact us",
+    el: "Επικοινωνία"
+  }
+};
+
+type PromotionPageProps = {
+  params: { lang: string };
+};
+
+export async function generateMetadata({ params }: PromotionPageProps): Promise<Metadata> {
+  const lang = isLang(params.lang) ? params.lang : 'en';
+  const pageTitle = staticText.title[lang];
+  const description = staticText.subtitle[lang];
+
+  const canonicalUrl = `${SITE_URL}/${lang}/promotion`;
+  const enUrl = `${SITE_URL}/en/promotion`;
+  const elUrl = `${SITE_URL}/el/promotion`;
+
+  return {
+    metadataBase: new URL(SITE_URL),
+    title: pageTitle,
+    description: description,
+    alternates: {
+      canonical: canonicalUrl,
+      languages: {
+        en: enUrl,
+        el: elUrl,
+        'x-default': enUrl,
+      },
+    },
+    openGraph: {
+      title: pageTitle,
+      description: description,
+      url: canonicalUrl,
+      type: "website",
+      images: [
+        {
+          url: `${SITE_URL}/images/hero/greece-main.webp`,
+          width: 1600,
+          height: 900,
+          alt: "Greece background for business promotion",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: pageTitle,
+      description: description,
+      images: [`${SITE_URL}/images/hero/greece-main.webp`],
+    },
+  };
+}
+
 
 export default function PromotionPage() {
   const { lang } = useLocale();
@@ -45,80 +169,7 @@ export default function PromotionPage() {
       setStatus('error');
     }
   };
-  const t = {
-    title: {
-      en: "Personalized Business Promotion",
-      el: "Προσωποποιημένη Προβολή Επιχειρήσεων"
-    },
-    subtitle: {
-      en: "Connect with thousands of travelers planning their trip to Greece. Elevate your brand with targeted promotion tailored to your exact needs.",
-      el: "Συνδέσου με χιλιάδες ταξιδιώτες που οργανώνουν το ταξίδι τους στην Ελλάδα. Αναβάθμισε το brand σου με στοχευμένη προβολή προσαρμοσμένη στις δικές σου ανάγκες."
-    },
-    services_eyebrow: {
-      en: "Our Services",
-      el: "Οι Υπηρεσίες Μας"
-    },
-    services_title: {
-      en: "Why promote your business with us?",
-      el: "Γιατί να προβάλεις την επιχείρησή σου σε εμάς;"
-    },
-    service1_title: {
-      en: "Targeted Audience",
-      el: "Στοχευμένο Κοινό"
-    },
-    service1_desc: {
-      en: "Reach travelers who are actively looking for hotels, restaurants, and tours in Greece right when they are making decisions.",
-      el: "Προσέγγισε ταξιδιώτες που αναζητούν ενεργά ξενοδοχεία, εστιατόρια και εκδρομές στην Ελλάδα τη στιγμή που παίρνουν αποφάσεις."
-    },
-    service2_title: {
-      en: "Premium Placement",
-      el: "Premium Τοποθέτηση"
-    },
-    service2_desc: {
-      en: "Get featured across our top destination guides, travel hubs, and interactive tools for maximum visibility.",
-      el: "Εμφανίσου στους κορυφαίους οδηγούς προορισμών, τα travel hubs και τα διαδραστικά εργαλεία μας για μέγιστη κάλυψη."
-    },
-    service3_title: {
-      en: "Direct Bookings & SEO",
-      el: "Απευθείας Κρατήσεις & SEO"
-    },
-    service3_desc: {
-      en: "Redirect visitors straight to your website without commissions. Build strong domain authority and backlink opportunities.",
-      el: "Η κίνηση πηγαίνει κατευθείαν στη σελίδα σου χωρίς προμήθειες. Χτίζεις δυνατό SEO και αποκτάς πολύτιμα backlinks."
-    },
-    audience_eyebrow: {
-      en: "Who We Work With",
-      el: "Με Ποιους Συνεργαζόμαστε"
-    },
-    audience_title: {
-      en: "Promotion for all travel professionals",
-      el: "Προβολή για επαγγελματίες του τουρισμού"
-    },
-    audience_hotels: {
-      en: "Hotels & Villas",
-      el: "Ξενοδοχεία & Βίλες"
-    },
-    audience_tours: {
-      en: "Tours & Experiences",
-      el: "Εκδρομές & Εμπειρίες"
-    },
-    audience_food: {
-      en: "Restaurants & Bars",
-      el: "Εστιατόρια & Μπαρ"
-    },
-    cta_title: {
-      en: "Ready to grow your business?",
-      el: "Έτοιμοι να αναπτύξετε την επιχείρησή σας;"
-    },
-    cta_text: {
-      en: "Contact us today for a custom promotion plan.",
-      el: "Επικοινωνήστε μαζί μας σήμερα για να οργανώσουμε ένα πλάνο προβολής."
-    },
-    cta_button: {
-      en: "Contact us",
-      el: "Επικοινωνία"
-    }
-  };
+  const t = staticText;
 
   return (
     <main className="min-h-screen bg-white">

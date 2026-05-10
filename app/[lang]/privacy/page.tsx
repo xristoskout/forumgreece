@@ -2,19 +2,80 @@
 
 import { usePathname } from 'next/navigation';
 import SiteHeader from "../../../components/site-header";
+import type { Metadata } from 'next';
 import Link from 'next/link';
+import { Lang, isLang } from "../../../lib/useLocale";
+import { SITE_URL } from "../../../lib/content";
 
-type Lang = "en" | "el";
+const staticText = {
+  title: {
+    en: "Terms of Use & Privacy Policy",
+    el: "Όροι Χρήσης & Πολιτική Απορρήτου"
+  },
+  updated: {
+    en: "Last updated: April 2026",
+    el: "Τελευταία ενημέρωση: Απρίλιος 2026"
+  },
+  users_heading: {
+    en: "For Users",
+    el: "Για τους Χρήστες"
+  },
+  businesses_heading: {
+    en: "For Businesses",
+    el: "Για τις Επιχειρήσεις"
+  },
+  back_home: {
+    en: "Back to Home",
+    el: "Επιστροφή στην Αρχική"
+  }
+};
+
+type Props = {
+  params: { lang: string };
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const lang = isLang(params.lang) ? params.lang : 'en';
+  const pageTitle = staticText.title[lang];
+  const description = lang === 'el'
+    ? "Διαβάστε τους Όρους Χρήσης και την Πολιτική Απορρήτου του GoGreeceNow."
+    : "Read the Terms of Use and Privacy Policy for GoGreeceNow.";
+
+  const canonicalUrl = `${SITE_URL}/${lang}/privacy`;
+  const enUrl = `${SITE_URL}/en/privacy`;
+  const elUrl = `${SITE_URL}/el/privacy`;
+
+  return {
+    metadataBase: new URL(SITE_URL),
+    title: pageTitle,
+    description: description,
+    alternates: {
+      canonical: canonicalUrl,
+      languages: {
+        en: enUrl,
+        el: elUrl,
+        'x-default': enUrl,
+      },
+    },
+    openGraph: {
+      title: pageTitle,
+      description: description,
+      url: canonicalUrl,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: pageTitle,
+      description: description,
+    },
+  };
+}
 
 export default function PrivacyPage() {
   const pathname = usePathname();
-  const lang: Lang = pathname.startsWith("/el") ? "el" : "en";
+  const lang: Lang = isLang(pathname.split("/")[1]) ? pathname.split("/")[1] as Lang : "en";
 
-  const t = {
-    title: {
-      en: "Terms of Use & Privacy Policy",
-      el: "Όροι Χρήσης & Πολιτική Απορρήτου"
-    },
+  const t = staticText;
     updated: {
       en: "Last updated: April 2026",
       el: "Τελευταία ενημέρωση: Απρίλιος 2026"

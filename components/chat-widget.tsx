@@ -230,6 +230,8 @@ export default function ChatWidget() {
               transition={{ duration: 0.2 }}
               src="/images/chat-bot.gif"
               alt="Chat Assistant"
+              width={56} // Original button is h-14 w-14, which is 56px
+              height={56}
               className="w-full h-full rounded-full object-cover border-2 border-white/20"
             />
           ) : (

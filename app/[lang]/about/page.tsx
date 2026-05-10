@@ -1,19 +1,113 @@
 "use client";
 
+import type { Metadata } from 'next';
 import { usePathname } from 'next/navigation';
 import SiteHeader from "../../../components/site-header";
 import Image from 'next/image';
 import Link from 'next/link';
 import { Lang, useLocale } from "../../../lib/useLocale";
+import { SITE_URL } from "../../../lib/content";
+
+const staticText = {
+  title: {
+    en: "About GoGreeceNow",
+    el: "Σχετικά με το GoGreeceNow"
+  },
+  subtitle: {
+    en: "Your ultimate hub for exploring Greece. We connect travelers with authentic local experiences, pristine destinations, and a thriving community.",
+    el: "Ο απόλυτος κόμβος για την εξερεύνηση της Ελλάδας. Συνδέουμε τους ταξιδιώτες με αυθεντικές τοπικές εμπειρίες, υπέροχους προορισμούς και μια ζωντανή κοινότητα."
+  },
+  mission_title: {
+    en: "Our Mission",
+    el: "Η Αποστολή Μας"
+  },
+  mission_text: {
+    en: "At GoGreeceNow, we believe that traveling to Greece is more than just a summer holiday; it's a feeling, an experience, and a lifelong memory. Our mission is to make organizing a trip to Greece effortlessly simple and deeply inspiring. By aggregating travel guides, hotel recommendations, food spots, and an interactive community of travelers, we offer a comprehensive ecosystem for everyone—from first-time visitors to seasoned island-hoppers. We want to showcase not only the famous highlights but also the hidden gems of our beautiful country.",
+    el: "Στο GoGreeceNow, πιστεύουμε ότι το ταξίδι στην Ελλάδα είναι κάτι παραπάνω από καλοκαιρινές διακοπές· είναι συναίσθημα, εμπειρία και μια ανάμνηση ζωής. Η αποστολή μας είναι να κάνουμε την οργάνωση ενός ταξιδιού στην Ελλάδα απόλυτα απλή και γεμάτη έμπνευση. Συγκεντρώνοντας ταξιδιωτικούς οδηγούς, προτάσεις ξενοδοχείων, γαστρονομικές επιλογές και μια ισχυρή κοινότητα, προσφέρουμε ένα ολοκληρωμένο οικοσύστημα. Θέλουμε να αναδείξουμε όχι μόνο τα διάσημα μέρη, αλλά και τα κρυμμένα «διαμάντια» της όμορφης χώρας μας."
+  },
+  what_we_do_title: {
+    en: "What We Do",
+    el: "Τι Κάνουμε"
+  },
+  card1_title: {
+    en: "Destination Guides",
+    el: "Οδηγοί Προορισμών"
+  },
+  card1_text: {
+    en: "Curated insights covering pristine islands, historic mainland cities, and everything in between.",
+    el: "Προσεγμένοι οδηγοί που καλύπτουν όμορφα νησιά, ιστορικές πόλεις και ό,τι υπάρχει ενδιάμεσα."
+  },
+  card2_title: {
+    en: "Local Communities",
+    el: "Τοπικές Κοινότητες"
+  },
+  card2_text: {
+    en: "Direct access to Facebook travel forums where locals and travelers exchange real-time tips.",
+    el: "Άμεση πρόσβαση σε Facebook forums, όπου ντόπιοι και ταξιδιώτες ανταλλάσσουν tips σε πραγματικό χρόνο."
+  },
+  card3_title: {
+    en: "Business Promotion",
+    el: "Προβολή Επιχειρήσεων"
+  },
+  card3_text: {
+    en: "Helping top-tier local hotels, tours, and restaurants reach a highly targeted travel audience.",
+    el: "Βοηθάμε κορυφαία τοπικά ξενοδοχεία, εκδρομές και εστιατόρια να προσεγγίσουν ένα στοχευμένο κοινό ταξιδιωτών."
+  }
+};
+
+type Props = {
+  params: { lang: string };
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const lang = (params.lang === "el" ? "el" : "en") as Lang;
+  const pageTitle = staticText.title[lang];
+  const description = staticText.subtitle[lang];
+
+  const canonicalUrl = `${SITE_URL}/${lang}/about`;
+  const enUrl = `${SITE_URL}/en/about`;
+  const elUrl = `${SITE_URL}/el/about`;
+
+  return {
+    metadataBase: new URL(SITE_URL),
+    title: pageTitle,
+    description: description,
+    alternates: {
+      canonical: canonicalUrl,
+      languages: {
+        en: enUrl,
+        el: elUrl,
+        'x-default': enUrl,
+      },
+    },
+    openGraph: {
+      title: pageTitle,
+      description: description,
+      url: canonicalUrl,
+      type: "website",
+      images: [
+        {
+          url: `${SITE_URL}/images/hero/greece-main.webp`,
+          width: 1600,
+          height: 900,
+          alt: "About GoGreeceNow",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: pageTitle,
+      description: description,
+      images: [`${SITE_URL}/images/hero/greece-main.webp`],
+    },
+  };
+}
+
 
 export default function AboutPage() {
   const { lang } = useLocale();
 
-  const t = {
-    title: {
-      en: "About GoGreeceNow",
-      el: "Σχετικά με το GoGreeceNow"
-    },
+  const t = staticText;
     subtitle: {
       en: "Your ultimate hub for exploring Greece. We connect travelers with authentic local experiences, pristine destinations, and a thriving community.",
       el: "Ο απόλυτος κόμβος για την εξερεύνηση της Ελλάδας. Συνδέουμε τους ταξιδιώτες με αυθεντικές τοπικές εμπειρίες, υπέροχους προορισμούς και μια ζωντανή κοινότητα."
