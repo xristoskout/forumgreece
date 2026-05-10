@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { destinations, SITE_URL } from '../../../../lib/content';
 import DestinationDetailsClient from './destination-details-client';
 import { Lang, isLang } from '../../../../lib/locale';
+import { breadcrumbSchema, touristAttractionSchema } from '../../../../lib/structured-data';
 
 type Props = {
   params: Promise<{ lang: string; slug: string }>;
@@ -69,5 +70,32 @@ export default async function DestinationDetailsPage({ params }: Props) {
     notFound();
   }
 
-  return <DestinationDetailsClient destination={destination} lang={lang} />;
+  const canonicalUrl = `${SITE_URL}/${lang}/destinations/${destination.slug}`;
+
+  const breadcrumb = breadcrumbSchema(lang, [
+    { label: lang === "en" ? "Home" : "Αρχική", path: "" },
+    { label: lang === "en" ? "Destinations" : "Προορισμοί", path: "/destinations" },
+    { label: destination.name, path: `/destinations/${destination.slug}` },
+  ]);
+
+  const tourist = touristAttractionSchema({
+    name: destination.name,
+    description: destination.overview[lang],
+    image: destination.image,
+    url: canonicalUrl,
+  });
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(tourist) }}
+      />
+      <DestinationDetailsClient destination={destination} lang={lang} />
+    </>
+  );
 }

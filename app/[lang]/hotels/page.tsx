@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import { hotels, type Lang } from '../../../lib/content';
+import { hotels, SITE_URL, type Lang } from '../../../lib/content';
 import SiteHeader from '../../../components/site-header';
+import { breadcrumbSchema } from '../../../lib/structured-data';
 
 type Props = {
   params: Promise<{ lang: string }>;
@@ -48,8 +49,17 @@ export default async function HotelsListingPage({ params }: Props) {
     tag: { en: "Where to Stay", el: "Διαμονή" }
   };
 
+  const breadcrumb = breadcrumbSchema(lang, [
+    { label: lang === "en" ? "Home" : "Αρχική", path: "" },
+    { label: lang === "en" ? "Hotels" : "Ξενοδοχεία", path: "/hotels" },
+  ]);
+
   return (
     <main className="min-h-screen bg-gradient-to-br from-slate-50 via-indigo-50 to-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
+      />
       <SiteHeader />
       
       <div className="container mx-auto px-6 py-32">

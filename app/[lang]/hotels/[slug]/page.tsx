@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { hotels, SITE_URL } from "../../../../lib/content";
 import HotelDetailsClient from "./hotel-details-client";
 import { Lang, isLang, supportedLangs } from "../../../../lib/locale";
+import { breadcrumbSchema } from "../../../../lib/structured-data";
 
 type HotelPageProps = {
   params: Promise<{ lang: string; slug: string }>;
@@ -46,21 +47,6 @@ export async function generateMetadata({
 
   const isComingSoon = item.description?.[lang]?.includes("coming soon") ?? false;
 
-  const faqJsonLd = item.faq?.length
-    ? {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        mainEntity: item.faq.map((faq) => ({
-          "@type": "Question",
-          name: faq.q[lang],
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: faq.a[lang],
-          },
-        })),
-      }
-    : null;
-
   const canonicalUrl = `${SITE_URL}/${lang}/hotels/${slug}`;
   const enUrl = `${SITE_URL}/en/hotels/${slug}`;
   const elUrl = `${SITE_URL}/el/hotels/${slug}`;
@@ -96,9 +82,6 @@ export async function generateMetadata({
       description,
       images: [item.image],
     },
-    other: faqJsonLd
-      ? { "script:ld+json": JSON.stringify(faqJsonLd) }
-      : undefined,
   };
 }
 
@@ -112,9 +95,40 @@ export default async function HotelPage({ params }: HotelPageProps) {
     notFound();
   }
 
-  // Preload the hotel hero LCP image
-  // The Next.js Image component handles LCP automatically, so ReactDOM.preload is not typically necessary.
-  // ReactDOM.preload(item.image, { as: "image", fetchPriority: "high" });
+  const faqJsonLd = item.faq?.length
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: item.faq.map((faq) => ({
+          "@type": "Question",
+          name: faq.q[lang],
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: faq.a[lang],
+          },
+        })),
+      }
+    : null;
 
-  return <HotelDetailsClient lang={lang} slug={slug} item={item} />;
+  const breadcrumb = breadcrumbSchema(lang, [
+    { label: lang === "en" ? "Home" : "Αρχική", path: "" },
+    { label: lang === "en" ? "Hotels" : "Ξενοδοχεία", path: "/hotels" },
+    { label: item.name, path: `/hotels/${slug}` },
+  ]);
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
+      />
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
+      <HotelDetailsClient lang={lang} slug={slug} item={item} />
+    </>
+  );
 }

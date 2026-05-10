@@ -128,6 +128,18 @@ function HomeStructuredData({ lang }: { lang: Lang }) {
         },
         inLanguage: lang === "el" ? "el-GR" : "en-US",
       },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${pageUrl}/#breadcrumb`,
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: lang === "el" ? "Αρχική" : "Home",
+            item: pageUrl,
+          },
+        ],
+      },
     ],
   };
 

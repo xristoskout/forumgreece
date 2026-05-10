@@ -1,7 +1,8 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
-import { travelInfoGuides, type Lang } from '../../../../lib/content';
+import { travelInfoGuides, SITE_URL, type Lang } from '../../../../lib/content';
 import TravelInfoGuideClient from './travel-info-guide-client';
+import { breadcrumbSchema } from '../../../../lib/structured-data';
 
 type Props = {
   params: Promise<{ lang: string; slug: string }>;
@@ -52,5 +53,19 @@ export default async function TravelInfoGuidePage({ params }: Props) {
     notFound();
   }
 
-  return <TravelInfoGuideClient lang={lang} slug={slug} item={item} />;
+  const breadcrumb = breadcrumbSchema(lang, [
+    { label: lang === "en" ? "Home" : "Αρχική", path: "" },
+    { label: lang === "en" ? "Travel Info" : "Ταξιδιωτικές Πληροφορίες", path: "/travel-info" },
+    { label: item.title[lang], path: `/travel-info/${slug}` },
+  ]);
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
+      />
+      <TravelInfoGuideClient lang={lang} slug={slug} item={item} />
+    </>
+  );
 }

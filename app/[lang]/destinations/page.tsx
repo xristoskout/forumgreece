@@ -1,8 +1,10 @@
 import type { Metadata } from 'next';
 import { destinations } from '../../../lib/destinations-data';
+import { SITE_URL } from '../../../lib/content';
 import SiteHeader from '../../../components/site-header';
 import DestinationsClient from './destinations-client';
 import { Lang, isLang } from '../../../lib/locale';
+import { breadcrumbSchema } from '../../../lib/structured-data';
 
 type Props = {
   params: Promise<{ lang: string }>;
@@ -156,8 +158,17 @@ export default async function DestinationsListingPage({ params }: Props) {
 
   const activeRegions = regionOrder.filter((r) => byRegionMap.has(r.key));
 
+  const breadcrumb = breadcrumbSchema(lang, [
+    { label: lang === "en" ? "Home" : "Αρχική", path: "" },
+    { label: lang === "en" ? "Destinations" : "Προορισμοί", path: "/destinations" },
+  ]);
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
+      />
       <SiteHeader />
       <DestinationsClient
         lang={lang}

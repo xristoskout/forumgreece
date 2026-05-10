@@ -7,6 +7,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { type Lang } from "../../../lib/locale";
 import { siteBrand, siteBrandLine } from "../../../lib/site-config";
 import { travelInfoGuides } from "../../../lib/travel-info-data";
+import { faqPageSchema, breadcrumbSchema } from "../../../lib/structured-data";
 
 export default function TravelInfoHubPage() {
   const pathname = usePathname();
@@ -183,8 +184,28 @@ export default function TravelInfoHubPage() {
     cta: { en: "Explore the Map Guide →", el: "Δες τον Οδηγό Χάρτη →" }
   };
 
+  const travelFaqSchema = faqPageSchema(
+    faqItems.map((item) => ({
+      q: item.q[lang],
+      a: item.a[lang],
+    }))
+  );
+
+  const travelBreadcrumb = breadcrumbSchema(lang, [
+    { label: lang === "en" ? "Home" : "Αρχική", path: "" },
+    { label: lang === "en" ? "Travel Info" : "Ταξιδιωτικές Πληροφορίες", path: "/travel-info" },
+  ]);
+
   return (
     <main className="min-h-screen bg-transparent text-slate-900">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(travelBreadcrumb) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(travelFaqSchema) }}
+      />
       <SiteHeader />
 
       <section className="relative overflow-hidden min-h-screen flex items-center justify-center pt-20 border-b border-slate-200">
@@ -195,6 +216,7 @@ export default function TravelInfoHubPage() {
             fill
             className="object-cover"
             priority
+            sizes="100vw"
           />
         </div>
         <div className="absolute inset-0 z-0 bg-gradient-to-b from-black/55 via-black/35 to-black/20" />

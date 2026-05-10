@@ -3,6 +3,7 @@ import { tours } from '../../../../lib/tours-data';
 import SiteHeader from '../../../../components/site-header';
 import ToursDirectoryClient from './tours-directory-client';
 import { Lang, isLang } from '../../../../lib/locale';
+import { breadcrumbSchema } from '../../../../lib/structured-data';
 
 type Props = {
   params: Promise<{ lang: string }>;
@@ -37,8 +38,17 @@ export default async function ToursDirectoryPage({ params }: Props) {
   const { lang: rawLang } = await params;
   const lang = isLang(rawLang) ? rawLang : 'en';
 
+  const breadcrumb = breadcrumbSchema(lang, [
+    { label: lang === "en" ? "Home" : "Αρχική", path: "" },
+    { label: lang === "en" ? "Tours" : "Περιηγήσεις", path: "/tours/all" },
+  ]);
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
+      />
       <SiteHeader />
       <ToursDirectoryClient lang={lang} tours={tours} />
     </>

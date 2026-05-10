@@ -726,60 +726,195 @@ export const hotels: HotelCard[] = [
     }
   },
   {
-    slug: "thessaloniki",
-    name: "Where to Stay in Thessaloniki",
-    place: "Thessaloniki",
-    info: {
-      en: "Discover the best areas and hotels to stay in Thessaloniki.",
-      el: "Ανακαλύψτε τις καλύτερες περιοχές και ξενοδοχεία για διαμονή στη Thessaloniki.",
-    },
-    image: "/images/thessaloniki.webp",
-    badge: "Upcoming Guide",
-    overview: {
-      en: "A detailed guide on where to stay in Thessaloniki is coming soon. For now, explore our interactive map to find the best accommodation options.",
-      el: "Ένας αναλυτικός οδηγός για το πού να μείνετε στη Thessaloniki έρχεται σύντομα. Προς το παρόν, εξερευνήστε τον διαδραστικό μας χάρτη για να βρείτε τις καλύτερες επιλογές διαμονής.",
-    },
-    features: {
-      en: ["Hotels", "Resorts", "Apartments"],
-      el: ["Ξενοδοχεία", "Resorts", "Διαμερίσματα"],
-    },
-  },
-  {
     slug: "paros",
     name: "Where to Stay in Paros",
-    place: "Paros",
+    place: "Paros — Cyclades",
     info: {
-      en: "Discover the best areas and hotels to stay in Paros.",
-      el: "Ανακαλύψτε τις καλύτερες περιοχές και ξενοδοχεία για διαμονή στη Paros.",
+      en: "Find the best places to stay in Paros — from the chic harbour of Naoussa and the convenient capital Parikia to the windsurfing sands of Golden Beach, the hilltop village of Lefkes and the quiet south coast. A complete guide to Paros hotels and areas.",
+      el: "Βρείτε τα καλύτερα μέρη για διαμονή στην Πάρο — από το κομψό λιμάνι της Νάουσας και την βολική πρωτεύουσα Παροικιά έως τις αμμουδιές της Golden Beach, το μεσαιωνικό χωριό των Λευκών και την ήσυχη νότια ακτή.",
     },
     image: "/images/paros.webp",
-    badge: "Upcoming Guide",
+    badge: "Featured stay",
     overview: {
-      en: "A detailed guide on where to stay in Paros is coming soon. For now, explore our interactive map to find the best accommodation options.",
-      el: "Ένας αναλυτικός οδηγός για το πού να μείνετε στη Paros έρχεται σύντομα. Προς το παρόν, εξερευνήστε τον διαδραστικό μας χάρτη για να βρείτε τις καλύτερες επιλογές διαμονής.",
+      en: "Choosing where to stay in Paros shapes the entire trip — from the chic whitewashed harbour of Naoussa in the north and the lively, ferry-connected capital of Parikia in the west to the long windsurfing sands of Golden Beach on the east coast, the medieval hilltop village of Lefkes inland, and the quiet fishing villages of the south.",
+      el: "Η επιλογή διαμονής στην Πάρο καθορίζει ολόκληρο το ταξίδι — από το κομψό ασπρόχρωμο λιμάνι της Νάουσας στο βορρά και τη ζωντανή πρωτεύουσα Παροικιά με το λιμάνι των πλοίων έως τη μεγάλη αμμουδιά της Golden Beach με τα θαλάσσια σπορ, το μεσαιωνικό χωριό των Λευκών και τα ήσυχα ψαροχώρια του νότου.",
+    },
+    description: {
+      en: "Paros is one of the most balanced and genuinely enjoyable islands in the Cyclades — and one of the most consistent recommendations for travelers who find Santorini too dramatic and Mykonos too loud. It has excellent beaches, a strong food and wine culture, two characterful towns with very different personalities, a medieval inland village, and a ferry network that makes island-hopping to Naxos, Antiparos, Ios and the Small Cyclades effortless. Unlike many Aegean islands, Paros does not have one dominant area that suits everyone — the choice of base genuinely determines the kind of holiday you have, and the island is compact enough that exploring the whole of it by car in a day is entirely possible.",
+      el: "Η Πάρος είναι ένα από τα πιο ισορροπημένα και πραγματικά απολαυστικά νησιά των Κυκλάδων — και μια από τις πιο σταθερές συστάσεις για ταξιδιώτες που βρίσκουν τη Σαντορίνη υπερβολική και τη Μύκονο θορυβώδη. Έχει εξαιρετικές παραλίες, πλούσια γαστρονομική και οινοποιητική κουλτούρα, δύο γραφικές πόλεις με πολύ διαφορετικές προσωπικότητες, ένα μεσαιωνικό χωριό στην ενδοχώρα, και ένα δίκτυο πλοίων που κάνει το island-hopping προς Νάξο, Αντίπαρο, Ίο και Μικρές Κυκλάδες αβίαστο. Η Πάρος είναι αρκετά συμπαγής ώστε η εξερεύνηση όλου του νησιού με αυτοκίνητο σε μία μέρα να είναι απόλυτα εφικτή.",
     },
     features: {
-      en: ["Hotels", "Resorts", "Apartments"],
-      el: ["Ξενοδοχεία", "Resorts", "Διαμερίσματα"],
+      en: ["Naoussa (Chic & Scenic)", "Parikia (Capital & Convenient)", "Golden Beach (Watersports)", "Lefkes & Villages (Authentic)", "Alyki & South (Relaxed)", "7-minute ferry to Antiparos", "Gateway to Small Cyclades", "Local Parian wine & marble heritage"],
+      el: ["Νάουσα (Κομψή & Γραφική)", "Παροικιά (Πρωτεύουσα & Βολική)", "Golden Beach (Θαλάσσια σπορ)", "Λευκές & Χωριά (Αυθεντικά)", "Αλύκη & Νότος (Χαλαρά)", "7 λεπτά με πλοίο στην Αντίπαρο", "Πύλη για Μικρές Κυκλάδες", "Τοπικό κρασί & μαρμάρινη κληρονομιά"],
+    },
+    sections: [
+      {
+        title: { en: "1. Naoussa: The most atmospheric and stylish base on the island", el: "1. Νάουσα: Η πιο ατμοσφαιρική και κομψή βάση του νησιού" },
+        content: {
+          en: "Naoussa is the most photogenic and consistently praised town on Paros, and for many repeat visitors the only place they consider staying. Built around a natural harbour on the north coast, its whitewashed lanes, flowering courtyards, boutique shops, waterfront seafood restaurants and cocktail bars packed around a half-sunken 12th-century Venetian castle create a setting that rivals the most beautiful villages in the Cyclades. In the evenings, the harbour square transforms into one enormous outdoor dining room, with the boats bobbing quietly behind the terrace tables. Naoussa is also extremely well-positioned for the island's best northern beaches — Kolymbithres, with its extraordinary granite rock formations sculpted by the sea, is a short boat or taxi ride away, and Monastiri Beach is just beyond. The Moraitis winery, one of the only operating wineries on Paros, is a short drive from town. Hotels here range from intimate boutique rooms in traditional Cycladic buildings to upscale resorts just outside the centre along the Livadia beach stretch. The main consideration is peak season intensity — Naoussa becomes very busy in July and August, particularly around the harbour after sunset, and the narrow streets make noise unavoidable in central rooms. Staying just outside the village centre, on the hillside above town or along the Santa Maria road, gives you proximity to the action with significantly more quiet and privacy.",
+          el: "Η Νάουσα είναι η πιο φωτογενής και σταθερά επαινεμένη πόλη της Πάρου και για πολλούς επισκέπτες το μοναδικό μέρος που σκέφτονται για διαμονή. Χτισμένη γύρω από ένα φυσικό λιμάνι στη βόρεια ακτή, με ασπρισμένα σοκάκια, ανθισμένες αυλές, boutique καταστήματα, ψαροταβέρνες και cocktail bar γύρω από ένα ημίβυθο βενετσιάνικο κάστρο του 12ου αιώνα, δημιουργεί ένα σκηνικό που ανταγωνίζεται τα ομορφότερα χωριά των Κυκλάδων. Η Νάουσα είναι επίσης ιδανικά τοποθετημένη για τις καλύτερες βόρειες παραλίες — τον Κολυμπήθρες, με τους εντυπωσιακούς γρανιτένιους βράχους, και την παραλία Μοναστήρι. Το οινοποιείο Μωραΐτη βρίσκεται σε μικρή απόσταση. Τα ξενοδοχεία κυμαίνονται από μικρά boutique δωμάτια έως πολυτελή θέρετρα. Η κύρια παράμετρος είναι η ένταση της υψηλής περιόδου — η Νάουσα γίνεται πολύ πολυσύχναστη τον Ιούλιο και Αύγουστο.",
+        }
+      },
+      {
+        title: { en: "2. Parikia: The most practical and well-connected base for first-time visitors", el: "2. Παροικιά: Η πιο πρακτική και καλά συνδεδεμένη βάση" },
+        content: {
+          en: "Parikia is the capital and main port of Paros, and considerably more interesting than most port towns in the Cyclades. Its Old Town is a genuinely beautiful Cycladic maze of whitewashed lanes, blue-domed churches and flowering bougainvillea, anchored by the remarkable Panagia Ekatontapiliani — one of the oldest and best-preserved Byzantine churches in Greece, known as the Church of One Hundred Doors. The Frankish Castle on the hill above town was built using ancient marble from a temple of Demeter, and the waterfront promenade is one of the finest sunset-watching spots on the island, looking directly west over the open Aegean. As the island's main transport hub, Parikia gives you direct ferry access to Piraeus, Naxos, Mykonos, Antiparos and the wider Cyclades, and the central bus station here connects to Naoussa, Golden Beach and most of the island's main villages. It suits first-time visitors, independent travelers, families and anyone who wants a convenient and well-serviced base without committing to a specific coastal strip. Accommodation ranges from simple family-run pensions in the Old Town to comfortable modern hotels and well-positioned apartments along the Livadia beach promenade just north of the centre.",
+          el: "Η Παροικιά είναι η πρωτεύουσα και το κύριο λιμάνι της Πάρου, και σημαντικά πιο ενδιαφέρουσα από τις περισσότερες λιμενικές πόλεις των Κυκλάδων. Η Παλιά Πόλη είναι ένας όμορφος κυκλαδίτικος λαβύρινθος, με την Παναγία Εκατονταπυλιανή — μία από τις παλαιότερες βυζαντινές εκκλησίες στην Ελλάδα. Το Φράγκικο Κάστρο χτίστηκε με αρχαίο μάρμαρο από ναό της Δήμητρας και ο παραλιακός πεζόδρομος προσφέρει υπέροχο ηλιοβασίλεμα. Ως κύριος συγκοινωνιακός κόμβος, η Παροικιά παρέχει απευθείας συνδέσεις με Πειραιά, Νάξο, Μύκονο, Αντίπαρο και τις Κυκλάδες. Ιδανική για πρώτη επίσκεψη, ανεξάρτητους ταξιδιώτες και οικογένειες.",
+        }
+      },
+      {
+        title: { en: "3. Golden Beach (Chrissi Akti): The best base for watersports and east coast beaches", el: "3. Golden Beach (Χρυσή Ακτή): Η καλύτερη βάση για θαλάσσια σπορ" },
+        content: {
+          en: "Golden Beach — known in Greek as Chrissi Akti — sits on the east coast of Paros and is one of the finest windsurfing and kitesurfing destinations in the Mediterranean. Its long arc of golden sand faces the open Aegean and catches the reliable summer meltemi wind that makes it a pilgrimage site for board sport enthusiasts from across Europe. Several professional schools and rental centres operate directly on the beach throughout summer. The adjacent beach of Nea Chrissi Akti extends the sandy stretch further south, and the bay of Faragas nearby is calmer and better suited to swimming and snorkelling. Hotels and studios in this area are purpose-built for beach-focused stays — more functional than atmospheric, but very well-positioned for those who want to spend the majority of their time on the water. A car is essential from this base, as public transport connections to Parikia and Naoussa are infrequent. The drive to either town takes around twenty-five to thirty minutes.",
+          el: "Η Golden Beach (Χρυσή Ακτή) βρίσκεται στην ανατολική ακτή της Πάρου και είναι ένας από τους καλύτερους προορισμούς για windsurfing και kitesurfing στη Μεσόγειο. Η μεγάλη χρυσή αμμουδιά πιάνει το μελτέμι, προσελκύοντας λάτρεις των σπορ από όλη την Ευρώπη. Δίπλα, η Νέα Χρυσή Ακτή και ο κόλπος Φάραγγας είναι πιο ήρεμοι. Τα ξενοδοχεία εδώ είναι λειτουργικά και προσανατολισμένα στην παραλία. Η μετακίνηση χωρίς αυτοκίνητο είναι δύσκολη.",
+        }
+      },
+      {
+        title: { en: "4. Lefkes: The most authentic village on the island", el: "4. Λευκές: Το πιο αυθεντικό χωριό του νησιού" },
+        content: {
+          en: "Lefkes sits in the hills at the geographical centre of Paros, and was the island's capital during the Byzantine and Ottoman periods — a position that sheltered it from piracy and preserved its character almost entirely. Its marble-paved lanes, Venetian-influenced architecture, amphitheatre hillside setting and sweeping views across the island to the sea on both sides make it the most genuinely beautiful inland village in the Cyclades. The Church of Agia Triada, built from pure white Parian marble, dominates the village square. A Byzantine path — part of the old donkey trail network — connects Lefkes to the coast at Prodromos and is one of the most rewarding short hikes on the island. Accommodation here is limited to small guesthouses and traditional rooms, which is exactly the point. Lefkes suits travelers who want a quiet, authentic and genuinely Cycladic base away from the beach crowds, and who are happy to drive to the coast for swimming. It is roughly equidistant from Parikia and the east coast beaches.",
+          el: "Οι Λευκές βρίσκονται στους λόφους στο γεωγραφικό κέντρο της Πάρου και υπήρξαν πρωτεύουσα του νησιού κατά τη βυζαντινή και οθωμανική περίοδο. Τα μαρμαρόστρωτα σοκάκια, η βενετσιάνικη αρχιτεκτονική, η αμφιθεατρική θέα και στα δύο πελάγη την καθιστούν το ωραιότερο ορεινό χωριό των Κυκλάδων. Η εκκλησία της Αγίας Τριάδας είναι χτισμένη από λευκό παριανό μάρμαρο. Ένα βυζαντινό μονοπάτι συνδέει τις Λευκές με την ακτή στον Πρόδρομο. Ιδανικές για ήσυχη, αυθεντική διαμονή μακριά από τα πλήθη.",
+        }
+      },
+      {
+        title: { en: "5. Alyki and the South Coast: Calm, family-friendly and unhurried", el: "5. Αλύκη και Νότια Ακτή: Ήρεμα, οικογενειακά και χαλαρά" },
+        content: {
+          en: "The southern part of Paros — including the fishing villages of Alyki and Piso Livadi — offers the most relaxed and genuinely local version of the island. Alyki sits on a sheltered bay with calm, shallow water, a sandy beach and a small waterfront lined with tavernas serving freshly caught fish. It is just five kilometres from Paros Airport, making it an unusually convenient base for arrivals and early departures. Piso Livadi on the southeast coast is a small port village with a charming harbour, excellent seafood restaurants directly on the water, and easy boat connections to the Small Cyclades — Koufonisia, Donoussa and Iraklia — for day trips or overnight extensions. Both villages suit families with young children, couples who prefer a quieter rhythm and travelers on longer stays who want to experience Paros at a pace that the busier northern towns do not always allow. Pounda Beach on the west coast, best known as the departure point for the car ferry to Antiparos, is nearby and catches excellent west-facing sunsets.",
+          el: "Το νότιο τμήμα της Πάρου — με τα ψαροχώρια της Αλύκης και του Πίσω Λιβαδιού — προσφέρει την πιο χαλαρή και αυθεντική εκδοχή του νησιού. Η Αλύκη βρίσκεται σε προστατευμένο κόλπο με ήρεμα, ρηχά νερά και ταβέρνες με φρέσκο ψάρι. Απέχει μόλις πέντε χιλιόμετρα από το αεροδρόμιο. Το Πίσω Λιβάδι είναι ένα γραφικό λιμάνι με εξαιρετικά εστιατόρια και συνδέσεις με τις Μικρές Κυκλάδες. Και τα δύο χωριά είναι ιδανικά για οικογένειες, ζευγάρια και μακρύτερες διαμονές.",
+        }
+      },
+    ],
+    faq: [
+      {
+        q: { en: "Naoussa or Parikia — which is the better base?", el: "Νάουσα ή Παροικιά — ποια είναι η καλύτερη βάση;" },
+        a: { en: "For atmosphere, dining and the classic Cycladic experience, Naoussa is the stronger choice — most repeat visitors base themselves there. For convenience, transport connections, sunset views and a more relaxed daily pace, Parikia is the better option, particularly for first-time visitors and those without a rental car. The two towns are just fifteen minutes apart by bus or taxi, so neither choice significantly limits what you can do.", el: "Για ατμόσφαιρα, φαγητό και κλασική κυκλαδίτικη εμπειρία, η Νάουσα είναι η καλύτερη επιλογή. Για ευκολία, συγκοινωνίες, ηλιοβασίλεμα και πιο χαλαρό ρυθμό, η Παροικιά είναι προτιμότερη — ειδικά για πρώτη επίσκεψη. Απέχουν μόλις 15 λεπτά μεταξύ τους." }
+      },
+      {
+        q: { en: "Do I need a car in Paros?", el: "Χρειάζομαι αυτοκίνητο στην Πάρο;" },
+        a: { en: "Paros has one of the better bus networks in the Cyclades, with regular connections between Parikia, Naoussa and Golden Beach throughout summer. For a stay based in either of the two main towns, a car is optional. If you want to reach Lefkes, Alyki, Piso Livadi, or the quieter coves on the south and east coast at your own pace, a car or scooter is strongly recommended. Renting one for two or three days to do a full island loop is a popular and very rewarding approach.", el: "Η Πάρος έχει καλό δίκτυο λεωφορείων μεταξύ Παροικιάς, Νάουσας και Golden Beach. Για διαμονή στις δύο κύριες πόλεις, το αυτοκίνητο είναι προαιρετικό. Για Λευκές, Αλύκη, Πίσω Λιβάδι και τις ήσυχες παραλίες, συνιστάται αυτοκίνητο ή scooter." }
+      },
+      {
+        q: { en: "When should I book hotels in Paros?", el: "Πότε να κλείσω ξενοδοχείο στην Πάρο;" },
+        a: { en: "Paros is significantly less crowded than Mykonos or Santorini, but peak season — particularly the first three weeks of August — fills the island's best accommodation months in advance. Book four to six months ahead for July and August stays, especially in Naoussa. May, June and September are considerably easier and offer excellent weather with fewer crowds and lower prices.", el: "Η Πάρος είναι λιγότερο πολυσύχναστη από Μύκονο ή Σαντορίνη, αλλά η υψηλή περίοδος γεμίζει μήνες πριν. Κλείστε 4-6 μήνες νωρίτερα για Ιούλιο και Αύγουστο ειδικά στη Νάουσα. Μάιος, Ιούνιος και Σεπτέμβριος έχουν εξαιρετικό καιρό με λιγότερο κόσμο." }
+      },
+      {
+        q: { en: "Is Paros good for families with children?", el: "Είναι η Πάρος καλή για οικογένειες;" },
+        a: { en: "Yes, particularly Parikia and the south coast. Alyki's calm, shallow bay is ideal for young children, and Parikia has beaches, parks and practical amenities that suit family logistics. Golden Beach suits older children and teenagers who want watersports. Naoussa can work for families but is busier and more nightlife-oriented than the other areas.", el: "Ναι, ειδικά η Παροικιά και η νότια ακτή. Η Αλύκη έχει ήρεμα ρηχά νερά, και η Παροικιά διαθέτει παραλίες και πάρκα. Η Golden Beach είναι ιδανική για μεγαλύτερα παιδιά και θαλάσσια σπορ." }
+      },
+      {
+        q: { en: "Can I do a day trip to Antiparos from Paros?", el: "Μπορώ να κάνω ημερήσια εκδρομή στην Αντίπαρο;" },
+        a: { en: "Yes, and it is one of the best day trips in the Cyclades. A small passenger ferry runs from Parikia harbour to Antiparos town in around thirty minutes, and a car ferry from Pounta connects the two islands in just seven minutes. Antiparos is quieter, smaller and bohemian in character, with excellent beaches and the remarkable Cave of Antiparos, one of the most impressive stalactite caves in Greece.", el: "Ναι, και είναι από τις καλύτερες εκδρομές στις Κυκλάδες. Ένα μικρό πλοίο πηγαίνει από την Παροικιά στην Αντίπαρο σε 30 λεπτά. Η Αντίπαρος είναι ήσυχη και μποέμ, με εξαιρετικές παραλίες και το Σπήλαιο της Αντιπάρου." }
+      },
+      {
+        q: { en: "How many days do I need in Paros?", el: "Πόσες μέρες χρειάζομαι στην Πάρο;" },
+        a: { en: "Four to five days is the ideal minimum for experiencing the island properly — one day each for Naoussa and Parikia, a day for beaches and watersports, a day for Lefkes and the inland villages, and a day trip to Antiparos. Three days is possible but leaves most visitors planning a return. Paros consistently ranks as one of the Greek islands travelers most want to revisit.", el: "Τέσσερις με πέντε μέρες είναι το ιδανικό — μία μέρα για Νάουσα, μία για Παροικιά, μία για παραλίες, μία για Λευκές και μία εκδρομή στην Αντίπαρο. Τρεις μέρες είναι εφικτές αλλά λίγες. Η Πάρος είναι από τα νησιά που οι ταξιδιώτες θέλουν περισσότερο να ξαναεπισκεφτούν." }
+      },
+    ],
+    seo: {
+      title: {
+        en: "Where to Stay in Paros | Best Areas & Hotels | GoGreeceNow",
+        el: "Πού να Μείνετε στην Πάρο | Καλύτερες Περιοχές & Ξενοδοχεία | GoGreeceNow"
+      },
+      description: {
+        en: "Find the best places to stay in Paros — from the chic harbour of Naoussa and the convenient capital Parikia to the windsurfing sands of Golden Beach, the hilltop village of Lefkes and the quiet south coast. A complete guide to Paros hotels and areas.",
+        el: "Βρείτε τα καλύτερα μέρη για διαμονή στην Πάρο — από το κομψό λιμάνι της Νάουσας και την βολική πρωτεύουσα Παροικιά έως τις αμμουδιές της Golden Beach, το μεσαιωνικό χωριό των Λευκών και την ήσυχη νότια ακτή."
+      }
     },
   },
   {
     slug: "milos",
     name: "Where to Stay in Milos",
-    place: "Milos",
+    place: "Milos — Cyclades",
     info: {
-      en: "Discover the best areas and hotels to stay in Milos.",
-      el: "Ανακαλύψτε τις καλύτερες περιοχές και ξενοδοχεία για διαμονή στη Milos.",
+      en: "Find the best places to stay in Milos — from the convenient port of Adamas and the chic village of Pollonia to the hilltop capital Plaka, the volcanic south coast and the unique boathouse villages of Klima and Mandrakia. A complete guide to Milos hotels and areas.",
+      el: "Βρείτε τα καλύτερα μέρη για διαμονή στη Μήλο — από το βολικό λιμάνι του Αδάμαντα και το κομψό χωριό της Πολλωνίας έως την πρωτεύουσα Πλάκα στην κορυφή του λόφου, την ηφαιστειακή νότια ακτή και τα μοναδικά σύρματα του Κλήματος και της Μανδράκιας.",
     },
     image: "/images/milos.webp",
-    badge: "Upcoming Guide",
+    badge: "Featured stay",
     overview: {
-      en: "A detailed guide on where to stay in Milos is coming soon. For now, explore our interactive map to find the best accommodation options.",
-      el: "Ένας αναλυτικός οδηγός για το πού να μείνετε στη Milos έρχεται σύντομα. Προς το παρόν, εξερευνήστε τον διαδραστικό μας χάρτη για να βρείτε τις καλύτερες επιλογές διαμονής.",
+      en: "Choosing where to stay in Milos shapes the entire experience — from the lively ferry port of Adamas and the relaxed beachfront village of Pollonia in the northeast to the whitewashed hilltop capital of Plaka, the volcanic south coast beaches and the extraordinary waterfront boathouse villages that make this island unlike anywhere else in Greece.",
+      el: "Η επιλογή διαμονής στη Μήλο καθορίζει ολόκληρη την εμπειρία — από το ζωντανό λιμάνι του Αδάμαντα και το χαλαρό παραθαλάσσιο χωριό της Πολλωνίας στα βορειοανατολικά έως την ασπρόχρωμη πρωτεύουσα Πλάκα, τις ηφαιστειακές παραλίες της νότιας ακτής και τα μοναδικά σύρματα που κάνουν αυτό το νησί ανεπανάληπτο.",
+    },
+    description: {
+      en: "Milos is the most geologically dramatic island in the Cyclades and one of the most visually extraordinary destinations in the entire Mediterranean. Its volcanic origins have produced a coastline of over seventy beaches — sculpted into white moonscapes, ochre-red cliffs, sea caves reachable only by boat and hidden coves with turquoise water that changes colour by the hour. The island is also where the Venus de Milo was discovered in 1820, and its history of ancient settlement, Venetian occupation and centuries of mining has left a remarkably layered cultural landscape. A car is essential for exploring the island properly — most of the best beaches are spread across a coastline that has no footpath — but choosing the right base first determines how much of Milos's extraordinary variety you actually experience.",
+      el: "Η Μήλος είναι το πιο γεωλογικά δραματικό νησί των Κυκλάδων και ένας από τους πιο οπτικά εντυπωσιακούς προορισμούς στη Μεσόγειο. Οι ηφαιστειακές της ρίζες δημιούργησαν μια ακτογραμμή με πάνω από εβδομήντα παραλίες — λευκά σεληνιακά τοπία, κόκκινοι γκρεμοί, θαλάσσιες σπηλιές και κρυμμένοι όρμοι. Στο νησί ανακαλύφθηκε η Αφροδίτη της Μήλου το 1820. Απαραίτητο το αυτοκίνητο για εξερεύνηση.",
     },
     features: {
-      en: ["Hotels", "Resorts", "Apartments"],
-      el: ["Ξενοδοχεία", "Resorts", "Διαμερίσματα"],
+      en: ["Adamas (Hub & Convenient)", "Pollonia (Chic & Beachfront)", "Plaka (Views & Atmosphere)", "South Coast (Wild & Remote)", "Klima & Villages (Unique)", "Boat tours to Kleftiko caves", "Gateway to Kimolos by ferry", "Over 70 beaches to explore"],
+      el: ["Αδάμαντας (Κόμβος & Βολικός)", "Πολλωνία (Κομψή & Παραλία)", "Πλάκα (Θέα & Ατμόσφαιρα)", "Νότια Ακτή (Άγρια & Απόμακρη)", "Κλήμα & Χωριά (Μοναδικά)", "Εκδρομές με σκάφος στο Κλέφτικο", "Πύλη για Κίμωλο με πλοίο", "Πάνω από 70 παραλίες"],
+    },
+    sections: [
+      {
+        title: { en: "1. Adamas: The most practical base and the gateway to everything", el: "1. Αδάμαντας: Η πιο πρακτική βάση και η πύλη προς τα πάντα" },
+        content: {
+          en: "Adamas — also written as Adamantas — is the main port and largest village on Milos, and the most convenient base for first-time visitors and anyone who wants to keep logistics simple. The ferry from Piraeus and the inter-island connections all arrive here, the bus network fans out from Adamas to every corner of the island, and the day boat tours to Kleftiko — the former pirate hideout of white sea caves and turquoise arches that is the single most celebrated attraction on Milos, accessible only by water — depart from the harbour every morning. The seafront is lined with restaurants, cafés and shops, and the Mining Museum just inland gives a surprisingly rich introduction to the island's long industrial past. Two sandy beaches — Lagada and Papakinou — sit within walking distance of the village. Hotels in Adamas range from comfortable mid-range rooms to well-appointed suites and apartments, with a wide enough selection to suit most budgets. It is the right base for travelers who want easy access to the whole island without committing to a more remote location, and the most practical choice for anyone staying without a rental car.",
+          el: "Ο Αδάμαντας είναι το κύριο λιμάνι και το μεγαλύτερο χωριό της Μήλου, και η πιο βολική βάση για πρώτη επίσκεψη. Όλες οι ακτοπλοϊκές συνδέσεις φτάνουν εδώ, το δίκτυο λεωφορείων ξεκινά από τον Αδάμαντα προς κάθε γωνιά του νησιού, και οι ημερήσιες κρουαζιέρες στο Κλέφτικο αναχωρούν καθημερινά. Η παραλία έχει εστιατόρια, καφέ και μαγαζιά. Δύο αμμώδεις παραλίες — Λαγκάδα και Παπακίνου — είναι σε κοντινή απόσταση με τα πόδια. Ιδανική βάση για όσους θέλουν εύκολη πρόσβαση στο νησί χωρίς αυτοκίνητο.",
+        }
+      },
+      {
+        title: { en: "2. Pollonia: The most refined and family-friendly village on the island", el: "2. Πολλωνία: Το πιο κομψό και οικογενειακό χωριό του νησιού" },
+        content: {
+          en: "Pollonia sits on the northeastern tip of Milos and has a character entirely different from Adamas. It is a small, polished fishing village built around a long, sheltered sandy bay with calm, shallow water — the best swimming beach directly in front of accommodation anywhere on the island. The waterfront is lined with excellent seafood tavernas and a handful of cocktail bars that fill with a relaxed, cosmopolitan crowd through the summer evenings. Pollonia is also the departure point for the short ferry crossing to Kimolos, the quiet neighbouring island with pristine uncrowded beaches that makes for one of the most rewarding day trips in the western Cyclades. Hotels and boutique properties in Pollonia tend toward the upscale end — many with sea-view terraces, private pools and thoughtful design — and the village attracts couples and families who want a refined, unhurried base rather than a busy port town. The drive to Adamas takes around twenty minutes, and the ancient ruins of Phylakopi, the sea caves of Papafragas and the moonscape beach of Sarakiniko are all within easy reach to the west. Pollonia is the consistent recommendation for repeat visitors to Milos and the choice most travelers wish they had made on their first trip.",
+          el: "Η Πολλωνία βρίσκεται στο βορειοανατολικό άκρο της Μήλου και έχει εντελώς διαφορετικό χαρακτήρα από τον Αδάμαντα. Είναι ένα μικρό, κομψό ψαροχώρι γύρω από έναν προστατευμένο κόλπο με ήρεμα νερά. Η παραλία έχει εξαιρετικές ψαροταβέρνες και cocktail bar. Είναι επίσης το σημείο αναχώρησης για την Κίμωλο. Τα ξενοδοχεία εδώ είναι υψηλών προδιαγραφών, προσελκύοντας ζευγάρια και οικογένειες. Η απόσταση από τον Αδάμαντα είναι 20 λεπτά. Η Πολλωνία είναι η σταθερή σύσταση για όσους ξαναέρχονται στη Μήλο.",
+        }
+      },
+      {
+        title: { en: "3. Plaka: The most atmospheric village and the best sunsets on the island", el: "3. Πλάκα: Το πιο ατμοσφαιρικό χωριό και τα καλύτερα ηλιοβασιλέματα" },
+        content: {
+          en: "Plaka is the official capital of Milos, perched high on a hill above the bay with views that extend across the entire Aegean on clear days. Its whitewashed Cycladic lanes, cascading bougainvillea, domed churches, boutique shops and intimate cocktail bars create the most traditionally beautiful village atmosphere on the island. The hilltop Castro — the ruined medieval fortification at the very top of Plaka — is the finest sunset-watching point on Milos, and on summer evenings the narrow paths leading up to it fill with visitors arriving an hour before dusk to secure their position. The adjacent village of Trypiti is equally beautiful and slightly less visited, and together the two hillside settlements form the most photogenic and memorable part of the island for evening exploration. The legendary Methismeni Politia restaurant in Trypiti — a terrace with panoramic views and reliably excellent food — is one of the best dining experiences in the Cyclades. Accommodation in Plaka is limited to smaller guesthouses, traditional studios and boutique rooms rather than large hotels, which suits the intimate character of the village entirely. The walk up through Plaka's lanes involves slopes and stairs, so it is less suited to travelers with significant mobility limitations. A car is strongly recommended as a base here, as the bus runs hourly but stops early in the evening.",
+          el: "Η Πλάκα είναι η επίσημη πρωτεύουσα της Μήλου, χτισμένη σε έναν λόφο με θέα σε όλο το Αιγαίο. Τα ασπρισμένα κυκλαδίτικα σοκάκια, οι μπουκαμβίλιες και τα μικρά μαγαζιά δημιουργούν την πιο όμορφη παραδοσιακή ατμόσφαιρα. Το Κάστρο στην κορυφή προσφέρει το καλύτερο ηλιοβασίλεμα. Το γειτονικό χωριό Τρυπητή είναι εξίσου όμορφο. Το εστιατόριο Μεθυσμένη Πολιτεία είναι από τις καλύτερες γαστρονομικές εμπειρίες στις Κυκλάδες. Η Πλάκα έχει μικρούς ξενώνες και boutique δωμάτια.",
+        }
+      },
+      {
+        title: { en: "4. The South Coast: Volcanic beaches, dramatic colour and remote beauty", el: "4. Νότια Ακτή: Ηφαιστειακές παραλίες, δραματικό χρώμα και απόμακρη ομορφιά" },
+        content: {
+          en: "The south coast of Milos is the most geologically spectacular stretch of coastline on the island, and staying in this area — or using it for day trips from any base — is essential for understanding what makes Milos genuinely extraordinary. Paliochori Beach is a long bay of volcanic sand in multiple colours — black, red, ochre and white — with natural underwater hot springs warming the shallows in certain spots, a cluster of beach tavernas directly on the sand and a more organised atmosphere than most beaches on the island. Firiplaka nearby is one of the most visually dramatic beaches in the Cyclades, with deep red and white cliffs framing crystal-clear turquoise water and almost no development. Tsigrado, accessible only by descending a rope ladder through a narrow rock cleft, is the most adventurous beach on the island and rewards the effort with exceptional water clarity. Accommodation in the south coast area is limited but includes some of the most luxuriously positioned properties on the island — small boutique suites and resort-style rooms with direct beach access and views of the open sea. It suits travelers who want the beaches themselves as the primary experience, and who are happy to drive for everything else.",
+          el: "Η νότια ακτή της Μήλου είναι το πιο γεωλογικά εντυπωσιακό τμήμα του νησιού. Η Παλιοχώρι είναι μια μεγάλη παραλία με ηφαιστειακή άμμο πολλών χρωμάτων και φυσικές θερμές πηγές. Η Φυριπλάκα έχει εντυπωσιακούς κόκκινους και λευκούς γκρεμούς. Το Τσιγκράδι είναι προσβάσιμο μόνο με σχοινί. Τα καταλύματα εδώ είναι περιορισμένα αλλά πολυτελή, ιδανικά για όσους θέλουν τις παραλίες ως κύρια εμπειρία.",
+        }
+      },
+      {
+        title: { en: "5. Klima, Mandrakia and the Fishing Villages: The most unique stays in Greece", el: "5. Κλήμα, Μανδράκια και τα ψαροχώρια: Οι πιο μοναδικές διαμονές στην Ελλάδα" },
+        content: {
+          en: "The small fishing villages scattered around the bay of Milos — Klima, Mandrakia, Firopotamos and Areti — offer something found almost nowhere else in Greece: the chance to sleep directly inside a syrmata, a traditional colourful boathouse built at the water's edge with a boat stored on the ground floor and a living space above. These structures, painted in vivid shades of blue, red and yellow and reflected in the calm water of the bay, are among the most photographed scenes in the Aegean, and several have been converted into holiday accommodation of genuine character and quality. Klima, just below Plaka, is the most accessible and most visited of these villages, and a handful of renovated syrmatat can be booked here for a truly one-of-a-kind experience. Mandrakia on the north coast is smaller and quieter, with the excellent Medusa restaurant serving some of the freshest seafood on the island directly above the water. Staying in one of these villages is not a practical choice — there are no shops, limited parking and no transport — but for the right traveler, a night or two in a waterfront boathouse with the Aegean lapping beneath the window is one of the most memorable experiences available anywhere in the Greek islands.",
+          el: "Τα μικρά ψαροχώρια γύρω από τον κόλπο της Μήλου — Κλήμα, Μανδράκια, Φυροπόταμος and Αρέτη — προσφέρουν κάτι μοναδικό: τη διαμονή μέσα σε ένα παραδοσιακό σύρμα, το πολύχρωμο σπίτι-αποθήκη βάρκας στην άκρη του νερού. Το Κλήμα είναι το πιο γνωστό, ενώ η Μανδράκια είναι πιο ήσυχη. Μια ή δύο νύχτες σε ένα σύρμα είναι από τις πιο αξέχαστες εμπειρίες στις ελληνικές θάλασσες.",
+        }
+      },
+    ],
+    faq: [
+      {
+        q: { en: "Which area of Milos is best for a first visit?", el: "Ποια περιοχή της Μήλου είναι καλύτερη για πρώτη επίσκεψη;" },
+        a: { en: "Adamas is the most practical first base — it gives you the easiest logistics, the best transport connections and immediate access to the island's boat tours. If atmosphere and beauty matter more than convenience, Pollonia is the most consistently praised base by experienced visitors to Milos, and Plaka is the most atmospheric for evenings. All three are viable for a first trip; the choice depends on what kind of daily experience you want to wake up to.", el: "Ο Αδάμαντας είναι η πιο πρακτική πρώτη βάση. Για ατμόσφαιρα και ομορφιά, η Πολλωνία είναι η πιο δημοφιλής επιλογή. Η Πλάκα είναι η πιο ατμοσφαιρική για βραδινές εξόδους. Και οι τρεις είναι κατάλληλες για πρώτη επίσκεψη." }
+      },
+      {
+        q: { en: "Do I need a car in Milos?", el: "Χρειάζομαι αυτοκίνητο στη Μήλο;" },
+        a: { en: "Yes, for almost any meaningful exploration of the island. The bus network connects Adamas to Plaka, Pollonia and a handful of beaches, but most of Milos's finest beaches — Sarakiniko, Firiplaka, Tsigrado, the south coast — are unreachable without your own transport. The western half of the island requires a 4WD. Arranging a rental car from arrival is strongly recommended for any stay longer than two nights.", el: "Ναι, για ουσιαστική εξερεύνηση. Το λεωφορείο συνδέει Αδάμαντα, Πλάκα, Πολλωνία και κάποιες παραλίες, αλλά οι καλύτερες παραλίες είναι απρόσιτες χωρίς αυτοκίνητο. Το δυτικό μισό του νησιού απαιτεί 4Χ4." }
+      },
+      {
+        q: { en: "What is the Kleftiko boat tour and is it worth it?", el: "Τι είναι η κρουαζιέρα στο Κλέφτικο και αξίζει;" },
+        a: { en: "The Kleftiko boat tour is the single most praised experience on Milos and widely considered one of the best day excursions in the entire Aegean. Kleftiko is a series of extraordinary white sea caves, rock arches and turquoise lagoons on the southwest coast of the island that are accessible only by boat. Tours depart from Adamas harbour in the morning and typically include swimming stops, snorkelling in the caves and lunch on board. It is worth doing regardless of which part of the island you are staying in.", el: "Η κρουαζιέρα στο Κλέφτικο είναι η καλύτερη εμπειρία στη Μήλο. Πρόκειται για λευκές θαλάσσιες σπηλιές και τιρκουάζ λιμνοθάλασσες προσβάσιμες μόνο με σκάφος. Αναχωρεί από τον Αδάμαντα και περιλαμβάνει κολύμπι και φαγητό." }
+      },
+      {
+        q: { en: "How many days do I need in Milos?", el: "Πόσες μέρες χρειάζομαι στη Μήλο;" },
+        a: { en: "Four to five days is the recommended minimum. Day one for settling in and a first beach; day two for the Kleftiko boat tour; day three for a self-drive loop of Sarakiniko, Papafragas and the north coast; day four for the south coast beaches and Plaka at sunset. A fifth day allows for the crossing to Kimolos or a slower revisit of favourite beaches. Most visitors leave wishing they had stayed longer.", el: "Τέσσερις με πέντε μέρες είναι το ελάχιστο. Μία για άφιξη, μία για Κλέφτικο, μία για βόρεια ακτή, μία για νότια ακτή και Πλάκα. Η πέμπτη μέρα για Κίμωλο. Οι περισσότεροι φεύγουν θέλοντας να μείνουν περισσότερο." }
+      },
+      {
+        q: { en: "Can I visit Kimolos as a day trip from Milos?", el: "Μπορώ να επισκεφτώ την Κίμωλο ως ημερήσια εκδρομή;" },
+        a: { en: "Yes, and it is one of the best day trips in the Cyclades. A small ferry runs from Pollonia to the port of Psathi on Kimolos in around fifteen minutes throughout the day in summer. Kimolos is smaller, quieter and almost entirely undeveloped — its main village of Chorio is a remarkably well-preserved Cycladic settlement, and beaches like Prassa and Bonatsa offer white sand and turquoise water with virtually no other visitors. It is a strong contrast to the increasing popularity of Milos itself.", el: "Ναι, ένα από τα καλύτερα day trips. Το πλοίο από Πολλωνία προς Κίμωλο διαρκεί 15 λεπτά. Η Κίμωλος είναι ήσυχη και ανέγγιχτη, με όμορφο χωριό και παραλίες χωρίς πολύ κόσμο." }
+      },
+      {
+        q: { en: "When is the best time to visit Milos?", el: "Πότε είναι η καλύτερη εποχή για τη Μήλο;" },
+        a: { en: "Late May through June and September are the ideal months. The sea is warm enough for comfortable swimming from early June, the island is active but not overwhelmed, and accommodation is significantly more available and affordable than in July and August. Milos has grown rapidly in popularity over the past decade and peak season — particularly the first three weeks of August — now requires booking five to six months in advance for the best accommodation in all three main areas.", el: "Τέλη Μαΐου έως Ιούνιο και Σεπτέμβριος είναι οι ιδανικοί μήνες. Η θάλασσα είναι ζεστή, το νησί ζωντανό αλλά όχι γεμάτο. Η Μήλος έχει γίνει πολύ δημοφιλής και για Αύγουστο χρειάζεται κράτηση 5-6 μήνες νωρίτερα." }
+      },
+    ],
+    seo: {
+      title: {
+        en: "Where to Stay in Milos | Best Areas & Hotels | GoGreeceNow",
+        el: "Πού να Μείνετε στη Μήλο | Καλύτερες Περιοχές & Ξενοδοχεία | GoGreeceNow"
+      },
+      description: {
+        en: "Find the best places to stay in Milos — from the convenient port of Adamas and the chic village of Pollonia to the hilltop capital Plaka, the volcanic south coast and the unique boathouse villages of Klima and Mandrakia. A complete guide to Milos hotels and areas.",
+        el: "Βρείτε τα καλύτερα μέρη για διαμονή στη Μήλο — από το βολικό λιμάνι του Αδάμαντα και το κομψό χωριό της Πολλωνίας έως την πρωτεύουσα Πλάκα, την ηφαιστειακή νότια ακτή και τα μοναδικά σύρματα του Κλήματος και της Μανδράκιας."
+      }
     },
   },
   {
@@ -932,6 +1067,102 @@ export const hotels: HotelCard[] = [
     features: {
       en: ["Hotels", "Resorts", "Apartments"],
       el: ["Ξενοδοχεία", "Resorts", "Διαμερίσματα"],
+    },
+  },
+  {
+    slug: "thessaloniki",
+    name: "Where to Stay in Thessaloniki",
+    place: "Thessaloniki — Central Macedonia",
+    info: {
+      en: "Find the best neighborhoods to stay in Thessaloniki — from the iconic waterfront and Aristotelous Square to lively Ladadika, atmospheric Ano Poli, and the local calm of Kalamaria. A complete guide to Thessaloniki hotels and areas.",
+      el: "Βρείτε τις καλύτερες γειτονιές για διαμονή στη Θεσσαλονίκη — από το εμβληματικό παραλιακό μέτωπο και την πλατεία Αριστοτέλους έως τα ζωντανά Λαδάδικα, την ατμοσφαιρική Άνω Πόλη και την ήρεμη γειτονιά της Καλαμαριάς.",
+    },
+    image: "/images/thessaloniki.webp",
+    badge: "Featured stay",
+    overview: {
+      en: "Choosing where to stay in Thessaloniki shapes the entire experience — from the grand waterfront promenade and Aristotelous Square at the city's heart to the lively restored warehouses of Ladadika, the UNESCO Byzantine walls of Ano Poli and the relaxed seafront suburb of Kalamaria, each neighborhood gives you a distinctly different version of Greece's second city.",
+      el: "Η επιλογή διαμονής στη Θεσσαλονίκη καθορίζει ολόκληρη την εμπειρία — από τη μεγάλη παραλιακή λεωφόρο και την πλατεία Αριστοτέλους στην καρδιά της πόλης έως τις ζωντανές αναπαλαιωμένες αποθήκες των Λαδάδικων, τα βυζαντινά τείχη μνημεία UNESCO της Άνω Πόλης και το χαλαρό παραθαλάσσιο προάστιο της Καλαμαριάς.",
+    },
+    description: {
+      en: "Thessaloniki is the most underrated city in Greece and, for many travelers who visit both Athens and Thessaloniki, the more immediately enjoyable of the two. It is a genuine metropolitan city of one million people — four universities, a world-class food culture, Roman and Byzantine monuments woven into the daily urban fabric, a waterfront that stretches for kilometres along the Thermaic Gulf, and a nightlife and café scene that most European cities cannot match. Its culinary identity was forged by the Anatolian Greek refugees who arrived from Smyrna and Constantinople in the 1920s, and the result — bougatsa, mussels from the gulf, tsipouradika, the Modiano and Kapani markets — is richer and more varied than anywhere else in Greece. Getting your base right here is straightforward: the city is compact and largely walkable, and the choice between neighborhoods is more about atmosphere and noise level than about access to sights.",
+      el: "Η Θεσσαλονίκη είναι η πιο υποτιμημένη πόλη στην Ελλάδα και, για πολλούς ταξιδιώτες που επισκέπτονται και την Αθήνα και τη Θεσσαλονίκη, η πιο άμεσα απολαυστική. Είναι μια γνήσια μητρόπολη ενός εκατομμυρίου ανθρώπων — τέσσερα πανεπιστήμια, μια παγκόσμιας κλάσης γαστρονομική κουλτούρα, ρωμαϊκά και βυζαντινά μνημεία υφασμένα στον καθημερινό ιστό της πόλης, ένα παραλιακό μέτωπο που εκτείνεται για χιλιόμετρα κατά μήκος του Θερμαϊκού Κόλπου, και μια νυχτερινή ζωή και σκηνή καφέ που οι περισσότερες ευρωπαϊκές πόλεις δεν μπορούν να ανταγωνιστούν. Η γαστρονομική της ταυτότητα διαμορφώθηκε από τους Μικρασιάτες πρόσφυγες που έφτασαν από τη Σμύρνη και την Κωνσταντινούπολη τη δεκαετία του 1920, και το αποτέλεσμα — μπουγάτσα, μύδια από τον Θερμαϊκό, τσιπουράδικα, οι αγορές Μοδιάνο και Καπάνι — είναι πιο πλούσιο και ποικιλόμορφο από οπουδήποτε αλλού στην Ελλάδα. Η επιλογή της σωστής βάσης εδώ είναι απλή: η πόλη είναι συμπαγής και σε μεγάλο βαθμό προσβάσιμη με τα πόδια, και η επιλογή μεταξύ γειτονιών έχει περισσότερο να κάνει με την ατμόσφαιρα και τα επίπεδα θορύβου παρά με την πρόσβαση στα αξιοθέατα.",
+    },
+    features: {
+      en: ["City Centre & Waterfront (Central)", "Ladadika (Nightlife & Food)", "Ano Poli (History & Views)", "Roman Forum Area (Quiet & Cultural)", "Kalamaria (Seafront & Local)", "Walking distance to White Tower & Rotunda", "Gateway to Halkidiki, Vergina & Meteora", "Greece's food capital"],
+      el: ["Κέντρο & Παραλία (Κεντρικά)", "Λαδάδικα (Νυχτερινή ζωή & Φαγητό)", "Άνω Πόλη (Ιστορία & Θέα)", "Περιοχή Ρωμαϊκής Αγοράς (Ήσυχα)", "Καλαμαριά (Παραλία & Τοπική ζωή)", "Σε απόσταση με τα πόδια από Λευκό Πύργο & Ροτόντα", "Πύλη για Χαλκιδική, Βεργίνα & Μετέωρα", "Γαστρονομική πρωτεύουσα της Ελλάδας"],
+    },
+    sections: [
+      {
+        title: { en: "1. City Centre and Waterfront: The best-connected and most convenient base", el: "1. Κέντρο και Παραλία: Η καλύτερα συνδεδεμένη και πιο βολική βάση" },
+        content: {
+          en: "The city centre — anchored by Aristotelous Square and running along the Nikis Avenue waterfront — is the natural base for first-time visitors and anyone who wants maximum walkability. Aristotelous Square itself is one of the grandest urban spaces in Greece: a broad, colonnaded plaza designed by the French architect Ernest Hébrard that opens directly onto the seafront. Staying within a ten-minute walk of the square puts you within easy reach of virtually every major sight in the city — the White Tower, the Roman Forum, the Arch of Galerius, the Rotunda, the Modiano and Kapani markets, the Archaeological Museum and the Museum of Byzantine Culture. The waterfront promenade, redesigned in the 2010s, runs from the old port to the White Tower and beyond, and on clear days offers unobstructed views of Mount Olympus across the Thermaic Gulf. Hotels in this area range from Thessaloniki's finest five-star addresses — the Electra Palace on Aristotelous Square is the city's most prestigious — to well-positioned mid-range and boutique options a few streets back. It is the right base for travelers who want complete convenience and a central position from which to explore the whole city on foot.",
+          el: "Το κέντρο της πόλης — με επίκεντρο την πλατεία Αριστοτέλους και κατά μήκος της παραλιακής λεωφόρου Νίκης — είναι η φυσική βάση για όσους επισκέπτονται πρώτη φορά και για οποιονδήποτε θέλει να κινείται με τα πόδια. Η πλατεία Αριστοτέλους είναι ένας από τους πιο εντυπωσιακούς αστικούς χώρους στην Ελλάδα: μια ευρεία στοά που σχεδιάστηκε από τον Γάλλο αρχιτέκτονα Ερνέστ Εμπράρ και ανοίγεται απευθείας στη θάλασσα. Μένοντας σε απόσταση δέκα λεπτών με τα πόδια από την πλατεία, έχετε πρόσβαση σε όλα σχεδόν τα σημαντικά αξιοθέατα — τον Λευκό Πύργο, τη Ρωμαϊκή Αγορά, την Καμάρα, τη Ροτόντα, τις αγορές Μοδιάνο και Καπάνι, το Αρχαιολογικό Μουσείο και το Μουσείο Βυζαντινού Πολιτισμού. Ο παραλιακός πεζόδρομος, που αναδιαμορφώθηκε τη δεκαετία του 2010, εκτείνεται από το παλιό λιμάνι έως τον Λευκό Πύργο και προσφέρει ανεμπόδιστη θέα στον Όλυμπο. Τα ξενοδοχεία εδώ κυμαίνονται από τα πιο πολυτελή πεντάστερα — το Electra Palace στην πλατεία Αριστοτέλους είναι το πιο διάσημο — έως καλές επιλογές μεσαίας κατηγορίας λίγους δρόμους πιο πέρα. Είναι η κατάλληλη βάση για ταξιδιώτες που θέλουν απόλυτη άνεση και κεντρική θέση.",
+        }
+      },
+      {
+        title: { en: "2. Ladadika: The most vibrant neighborhood for food, nightlife and character", el: "2. Λαδάδικα: Η πιο ζωντανή γειτονιά για φαγητό, νυχτερινή ζωή και χαρακτήρα" },
+        content: {
+          en: "Ladadika sits just west of Aristotelous Square and is the most energetic and characterful neighborhood in Thessaloniki. Its name means 'oil shops' in Greek — a reference to the Ottoman-era olive oil trading district that once occupied the area — and its beautifully restored 19th-century warehouses and cobblestone streets now house the city's densest concentration of tavernas, ouzeries, bars, live music venues and boutique hotels. Egiptiou Street in particular is lined with the kind of generous meze restaurants that define Thessaloniki's food culture at its most convivial. The nightlife here continues until the early hours on weekends, which makes Ladadika one of the most exciting areas in the city to stay — and one of the noisiest. Travelers who want to be at the centre of the action, within walking distance of the old port and the city's best evening atmosphere, will find Ladadika difficult to beat. Those who value quiet evenings should choose a room on an inner courtyard or consider a base one neighborhood over. The metro station at Venizelou is a five-minute walk, connecting the area efficiently to the rest of the city.",
+          el: "Τα Λαδάδικα βρίσκονται ακριβώς δυτικά της πλατείας Αριστοτέλους και είναι η πιο ενεργητική και γεμάτη χαρακτήρα γειτονιά της Θεσσαλονίκης. Το όνομά τους προέρχεται από τα ελαιοτριβεία της οθωμανικής εποχής και οι όμορφα αναπαλαιωμένες αποθήκες του 19ου αιώνα φιλοξενούν τώρα την πιο πυκνή συγκέντρωση ταβερνών, ουζερί, μπαρ, live μουσικής και boutique ξενοδοχείων. Η οδός Αιγύπτου ειδικότερα είναι γεμάτη με τα γενναιόδωρα μεζεδοπωλεία που καθορίζουν τη γαστρονομική κουλτούρα της πόλης. Η νυχτερινή ζωή συνεχίζεται έως τις πρώτες πρωινές ώρες, κάνοντας τα Λαδάδικα μια από τις πιο συναρπαστικές — και πιο θορυβώδεις — περιοχές για διαμονή. Ο σταθμός μετρό στη Βενιζέλου απέχει πέντε λεπτά με τα πόδια.",
+        }
+      },
+      {
+        title: { en: "3. Ano Poli: The historic upper town with the best views in the city", el: "3. Άνω Πόλη: Η ιστορική επάνω πόλη με την καλύτερη θέα" },
+        content: {
+          en: "Ano Poli — literally 'Upper City' — is the only district of Thessaloniki to survive the Great Fire of 1917 almost entirely intact, and it remains the most atmospheric and historically layered part of the city. Its steep cobblestone streets, Ottoman-era wooden houses with overhanging balconies, Byzantine churches, active monasteries and UNESCO-listed city walls create a neighborhood that feels genuinely apart from the modern metropolis below. The Trigoniou Tower at the top of the district offers what many consider the finest panoramic view in northern Greece — across the entire city, the Thermaic Gulf and, on clear days, to Mount Olympus on the horizon. Vlatadon Monastery, the birthplace of Mustafa Kemal Atatürk, and the Heptapyrgion fortress are all within walking distance. Accommodation here tends toward small guesthouses, traditional stone-built properties and boutique hotels with gardens and terraces. The main consideration is the steep hillside location: the walk down to the city centre is a pleasant twenty minutes, but the return is a genuine climb. Bus lines 22 and 23 serve the neighbourhood regularly, and taxis are the practical option for late evenings. Ano Poli suits couples, slow travelers and anyone drawn to authentic neighborhood atmosphere over urban convenience.",
+          el: "Η Άνω Πόλη είναι η μοναδική συνοικία της Θεσσαλονίκης που επέζησε σχεδόν ανέπαφη από τη Μεγάλη Πυρκαγιά του 1917, και παραμένει το πιο ατμοσφαιρικό και ιστορικά πολυεπίπεδο κομμάτι της πόλης. Τα απότομα πλακόστρωτα σοκάκια, τα ξύλινα σπίτια της οθωμανικής εποχής, οι βυζαντινές εκκλησίες και τα ενεργά μοναστήρια δημιουργούν μια γειτονιά που μοιάζει αποκομμένη από τη σύγχρονη μητρόπολη. Ο Πύργος του Τριγωνίου προσφέρει αυτό που πολλοί θεωρούν την καλύτερη πανοραμική θέα στη βόρεια Ελλάδα. Τα καταλύματα εδώ είναι κυρίως μικροί ξενώνες, παραδοσιακά πέτρινα κτίρια και boutique ξενοδοχεία. Η βασική παράμετρος είναι η απότομη πλαγιά: η κάθοδος προς το κέντρο είναι είκοσι ευχάριστα λεπτά, αλλά η επιστροφή είναι πραγματική ανάβαση. Οι γραμμές λεωφορείων 22 και 23 εξυπηρετούν τη γειτονιά. Η Άνω Πόλη είναι ιδανική για ζευγάρια και ταξιδιώτες που προτιμούν την αυθεντική γειτονική ατμόσφαιρα.",
+        }
+      },
+      {
+        title: { en: "4. The Roman Forum Area: Culture, green space and a quieter central option", el: "4. Περιοχή Ρωμαϊκής Αγοράς: Πολιτισμός, πράσινο και μια πιο ήσυχη κεντρική επιλογή" },
+        content: {
+          en: "The area immediately around the Roman Forum — the ancient agora of Thessaloniki, still partially excavated and open in the heart of the city — is one of the most interesting and least discussed bases in the city. The pedestrianized Aristotelous Street connects this neighborhood directly to the waterfront square, and the forum itself is surrounded by green space, an Ottoman hammam and the kind of quiet that is unusual for a location this central. The Aigli Geni Hamam, a 15th-century bathhouse now operating as a restaurant, bar and cultural venue, is one of the most atmospheric spaces in Thessaloniki and is a few minutes walk from this area. It suits travelers who want centrality and proximity to the Byzantine and Roman monuments without the noise of the waterfront or Ladadika, and who prefer a calmer, more residential daily rhythm within easy reach of everything.",
+          el: "Η περιοχή γύρω από τη Ρωμαϊκή Αγορά — την αρχαία αγορά της Θεσσαλονίκης, ακόμη μερικώς ανασκαμμένη και ανοιχτή στην καρδιά της πόλης — είναι μια από τις πιο ενδιαφέρουσες και λιγότερο συζητημένες βάσεις. Η πεζοδρομημένη οδός Αριστοτέλους συνδέει αυτή τη γειτονιά με την παραλία, και η ίδια η αγορά περιβάλλεται από πράσινο, ένα οθωμανικό χαμάμ και την ηρεμία που είναι ασυνήθιστη για τόσο κεντρική τοποθεσία. Το Aigli Geni Hamam, ένα λουτρό του 15ου αιώνα που λειτουργεί τώρα ως εστιατόριο και πολιτιστικός χώρος, είναι ένας από τους πιο ατμοσφαιρικούς χώρους της πόλης. Ιδανική για όσους θέλουν κεντρική θέση κοντά στα μνημεία χωρίς τον θόρυβο της παραλίας ή των Λαδάδικων.",
+        }
+      },
+      {
+        title: { en: "5. Kalamaria: The seafront suburb for a local and relaxed stay", el: "5. Καλαμαριά: Το παραθαλάσσιο προάστιο για χαλαρή και τοπική διαμονή" },
+        content: {
+          en: "Kalamaria sits southeast of the city centre along the Thermaic Gulf coastline and offers a completely different kind of Thessaloniki experience. It is a genuine residential suburb — one where locals live, shop and eat — with a long seafront promenade, some of the finest fish tavernas in the region along the Aretsou marina, and a relaxed pace that contrasts sharply with the density of the city centre. The Plastira Street pedestrian zone is the commercial heart of the neighbourhood, and the views from the waterfront here — looking back toward the city and out toward the open gulf — are among the clearest in the wider area. The new Line 2 metro extension, which opened in early 2026, now connects Kalamaria directly to the city centre, making this area significantly more practical as a base than it was previously. It suits travelers on longer stays, those who prefer a local neighborhood over a tourist-oriented area, and families who want easy beach and seafront access alongside connections to the city's main cultural sights.",
+          el: "Η Καλαμαριά βρίσκεται νοτιοανατολικά του κέντρου κατά μήκος της ακτής του Θερμαϊκού Κόλπου και προσφέρει μια εντελώς διαφορετική εμπειρία Θεσσαλονίκης. Είναι γνήσιο προάστιο — όπου οι ντόπιοι ζουν, ψωνίζουν και τρώνε — με έναν μακρύ παραλιακό πεζόδρομο, μερικές από τις καλύτερες ψαροταβέρνες στην περιοχή κατά μήκος της μαρίνας Αρετσούς, και έναν χαλαρό ρυθμό που έρχεται σε αντίθεση με την πυκνότητα του κέντρου. Η νέα επέκταση της γραμμής 2 του μετρό, που άνοιξε στις αρχές του 2026, συνδέει πλέον την Καλαμαριά απευθείας με το κέντρο, κάνοντας αυτή την περιοχή σημαντικά πιο πρακτική ως βάση. Ιδανική για μεγαλύτερες διαμονές, οικογένειες και όσους προτιμούν μια τοπική γειτονιά.",
+        }
+      },
+    ],
+    faq: [
+      {
+        q: { en: "How many days do I need in Thessaloniki?", el: "Πόσες μέρες χρειάζομαι στη Θεσσαλονίκη;" },
+        a: { en: "Three to four days is the ideal minimum. The first covers the central UNESCO monuments — the Rotunda, Arch of Galerius, Hagia Sophia, Agios Dimitrios — and the Archaeological Museum. The second is best spent entirely in Ano Poli. The third is for the food culture: the Modiano and Kapani markets, a proper tsipouradiko lunch and a long evening in Ladadika. If you are using Thessaloniki as a base for day trips to Vergina, Pella or Halkidiki, add at least one day per excursion.", el: "Τρεις με τέσσερις μέρες είναι το ιδανικό ελάχιστο. Η πρώτη καλύπτει τα κεντρικά μνημεία UNESCO — Ροτόντα, Καμάρα, Αγία Σοφία, Άγιο Δημήτριο — και το Αρχαιολογικό Μουσείο. Η δεύτερη αφιερώνεται εξ ολοκλήρου στην Άνω Πόλη. Η τρίτη είναι για τη γαστρονομία: τις αγορές Μοδιάνο και Καπάνι, ένα τσιπουράδικο μεσημεριανό και μια μεγάλη βραδιά στα Λαδάδικα. Αν χρησιμοποιείτε τη Θεσσαλονίκη ως βάση για εκδρομές σε Βεργίνα, Πέλλα ή Χαλκιδική, προσθέστε τουλάχιστον μία μέρα ανά εκδρομή." }
+      },
+      {
+        q: { en: "Which neighborhood is best for a first visit to Thessaloniki?", el: "Ποια γειτονιά είναι καλύτερη για πρώτη επίσκεψη στη Θεσσαλονίκη;" },
+        a: { en: "The city centre around Aristotelous Square is the strongest first base — it puts you within walking distance of every major sight and the full length of the waterfront, and gives you an immediate sense of the city's scale and character. If you have been before and want a more atmospheric stay, Ladadika and Ano Poli are the two most characterful alternatives.", el: "Το κέντρο γύρω από την πλατεία Αριστοτέλους είναι η καλύτερη πρώτη βάση — σας φέρνει σε απόσταση με τα πόδια από όλα τα σημαντικά αξιοθέατα και σας δίνει μια άμεση αίσθηση της κλίμακας και του χαρακτήρα της πόλης. Αν έχετε ξανάρθει και θέλετε πιο ατμοσφαιρική διαμονή, τα Λαδάδικα και η Άνω Πόλη είναι οι δύο πιο γεμάτες χαρακτήρα εναλλακτικές." }
+      },
+      {
+        q: { en: "Is Thessaloniki walkable?", el: "Είναι η Θεσσαλονίκη προσβάσιμη με τα πόδια;" },
+        a: { en: "Yes, for most of the city. The waterfront, city centre, Ladadika, the Roman Forum area and the lower reaches of Ano Poli are all comfortably walkable from a central base. The upper parts of Ano Poli involve significant climbing, and Kalamaria is best reached by metro or taxi. The city is significantly more compact and easier to navigate on foot than Athens.", el: "Ναι, για το μεγαλύτερο μέρος της πόλης. Η παραλία, το κέντρο, τα Λαδάδικα, η περιοχή της Ρωμαϊκής Αγοράς και τα κατώτερα τμήματα της Άνω Πόλης είναι άνετα προσβάσιμα με τα πόδια. Τα ανώτερα τμήματα της Άνω Πόλης απαιτούν αρκετή ανάβαση. Η πόλη είναι αισθητά πιο συμπαγής και εύκολη στην πλοήγηση από την Αθήνα." }
+      },
+      {
+        q: { en: "How do I get from Thessaloniki Airport to the city centre?", el: "Πώς φτάνω από το αεροδρόμιο Θεσσαλονίκης στο κέντρο;" },
+        a: { en: "The airport bus (line X1) runs directly to the city centre and stops near several central hotels. The journey takes approximately 45 minutes depending on traffic. Taxis and pre-arranged transfers are available at the arrivals hall. The metro does not yet reach the airport, though an extension is planned.", el: "Το λεωφορείο του αεροδρομίου (γραμμή Χ1) πηγαίνει απευθείας στο κέντρο και σταματά κοντά σε πολλά κεντρικά ξενοδοχεία. Η διαδρομή διαρκεί περίπου 45 λεπτά. Ταξί είναι διαθέσιμα στην αίθουσα αφίξεων. Το μετρό δεν φτάνει ακόμη στο αεροδρόμιο, αν και σχεδιάζεται επέκταση." }
+      },
+      {
+        q: { en: "Is Thessaloniki worth visiting if I have already been to Athens?", el: "Αξίζει να επισκεφτώ τη Θεσσαλονίκη αν έχω ήδη πάει στην Αθήνα;" },
+        a: { en: "Without question. Most travelers who visit both cities find Thessaloniki more immediately enjoyable — it is smaller, more navigable, considerably cheaper, and has a food culture that is widely considered the best in Greece. The Byzantine monuments are extraordinary, the waterfront is one of the finest in the Mediterranean, and the city has a genuine urban energy that Athens, for all its scale, does not quite replicate.", el: "Αναμφίβολα. Οι περισσότεροι ταξιδιώτες βρίσκουν τη Θεσσαλονίκη πιο άμεσα απολαυστική — είναι μικρότερη, πιο εύκολη στην πλοήγηση, σημαντικά φθηνότερη και έχει μια γαστρονομική κουλτούρα που θεωρείται η καλύτερη στην Ελλάδα. Τα βυζαντινά μνημεία είναι εξαιρετικά, το παραλιακό μέτωπο είναι από τα ωραιότερα στη Μεσόγειο, και η πόλη έχει μια αυθεντική αστική ενέργεια." }
+      },
+      {
+        q: { en: "What are the best day trips from Thessaloniki?", el: "Ποιες είναι οι καλύτερες ημερήσιες εκδρομές από τη Θεσσαλονίκη;" },
+        a: { en: "Vergina — site of the royal tombs of the Macedonian kings, including Philip II, father of Alexander the Great — is 75 kilometres away and one of the most important archaeological sites in Greece. Pella, the ancient capital of Macedon, is 40 kilometres to the west. Halkidiki, the three-pronged peninsula with some of the clearest water in northern Greece, begins just 70 kilometres to the southeast. Meteora is approximately three hours by car and works well as an overnight rather than a day trip.", el: "Η Βεργίνα — ο τόπος των βασιλικών τάφων των Μακεδόνων βασιλέων, συμπεριλαμβανομένου του Φιλίππου Β', πατέρα του Μεγάλου Αλεξάνδρου — απέχει 75 χιλιόμετρα και είναι ένας από τους σημαντικότερους αρχαιολογικούς χώρους στην Ελλάδα. Η Πέλλα, αρχαία πρωτεύουσα της Μακεδονίας, απέχει 40 χιλιόμετρα δυτικά. Η Χαλκιδική ξεκινά 70 χιλιόμετρα νοτιοανατολικά. Τα Μετέωρα απέχουν περίπου τρεις ώρες με αυτοκίνητο και λειτουργούν καλύτερα ως διανυκτέρευση." }
+      },
+    ],
+    seo: {
+      title: {
+        en: "Where to Stay in Thessaloniki | Best Neighborhoods & Hotels | GoGreeceNow",
+        el: "Πού να Μείνετε στη Θεσσαλονίκη | Καλύτερες Γειτονιές & Ξενοδοχεία | GoGreeceNow"
+      },
+      description: {
+        en: "Find the best neighborhoods to stay in Thessaloniki — from the iconic waterfront and Aristotelous Square to lively Ladadika, atmospheric Ano Poli, and the local calm of Kalamaria. A complete guide to Thessaloniki hotels and areas.",
+        el: "Βρείτε τις καλύτερες γειτονιές για διαμονή στη Θεσσαλονίκη — από το εμβληματικό παραλιακό μέτωπο και την πλατεία Αριστοτέλους έως τα ζωντανά Λαδάδικα, την ατμοσφαιρική Άνω Πόλη και την ήρεμη Καλαμαριά. Ένας πλήρης οδηγός για ξενοδοχεία και περιοχές στη Θεσσαλονίκη."
+      }
     },
   }
 ];
