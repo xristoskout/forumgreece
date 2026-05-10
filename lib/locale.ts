@@ -5,7 +5,12 @@ export function isLang(value: string): value is Lang {
   return supportedLangs.includes(value as Lang);
 }
 
+function stripLocale(path: string) {
+  return path.replace(/^\/(en|el)(?=\/|$)/, "") || "/";
+}
+
 export function withLang(path: string, lang: Lang) {
   const normalized = path.startsWith("/") ? path : `/${path}`;
-  return `/${lang}${normalized}`;
+  const clean = stripLocale(normalized);
+  return `/${lang}${clean}`;
 }
