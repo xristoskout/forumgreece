@@ -4,8 +4,7 @@ import { preload } from "react-dom";
 import HomePageClient from "./home-page-client";
 import { client } from "../../lib/sanity/client";
 import { HOME_PAGE_QUERY } from "../../lib/sanity/queries";
-import { SITE_URL } from "../../lib/content";
-import { Lang, isLang } from "../../lib/useLocale";
+import { SITE_URL, Lang, isLang } from "../../lib/content";
 
 type Props = {
   params: Promise<{ lang: string }>;
