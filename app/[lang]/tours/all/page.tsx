@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { tours } from '../../../../lib/content';
 import SiteHeader from '../../../../components/site-header';
 import ToursDirectoryClient from './tours-directory-client';
-import { Lang, isLang } from '../../../../lib/useLocale';
+import { Lang, isLang } from '../../../../lib/content';
 
 type Props = {
   params: Promise<{ lang: string }>;

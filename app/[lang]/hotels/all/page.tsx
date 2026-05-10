@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { hotels } from '../../../../lib/content';
 import SiteHeader from '../../../../components/site-header';
 import HotelsDirectoryClient from './hotels-directory-client';
-import { Lang, isLang } from '../../../../lib/useLocale';
+import { Lang, isLang } from '../../../../lib/content';
 
 type Props = {
   params: Promise<{ lang: string }>;

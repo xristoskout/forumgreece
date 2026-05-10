@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Montserrat, Geist_Mono, Noto_Sans, Playfair_Display, EB_Garamond } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import Script from "next/script";
+
 import "./globals.css";
 import LangManager from "@/components/lang-manager";
 import ChatLoader from "@/components/chat-loader";
@@ -12,13 +12,13 @@ const geistSans = Montserrat({
   variable: "--font-geist-sans",
   subsets: ["latin", "latin-ext"],
   display: "swap",
-  preload: false,
+  preload: true,
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
-  display: "swap",
+  display: "optional",
   preload: false,
 });
 
@@ -26,20 +26,20 @@ const notoGreek = Noto_Sans({
   variable: "--font-greek-sans",
   subsets: ["greek", "greek-ext", "latin"],
   display: "swap",
-  preload: false,
+  preload: true,
 });
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
   subsets: ["latin", "latin-ext"],
-  display: "swap",
+  display: "optional",
   preload: false,
 });
 
 const ebGaramond = EB_Garamond({
   variable: "--font-eb-garamond",
   subsets: ["greek", "greek-ext", "latin"],
-  display: "swap",
+  display: "optional",
   preload: false,
 });
 
@@ -112,23 +112,6 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} ${notoGreek.variable} ${playfair.variable} ${ebGaramond.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-[#f4f7fb] text-slate-900 relative selection:bg-purple-500/30">
-        <Script
-          id="stay22-script"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function (s, t, a, y, twenty, two) {
-                s.Stay22 = s.Stay22 || {};
-                s.Stay22.params = { lmaID: '69eb75e6ce6579d96ef11aa3' };
-                twenty = t.createElement(a);
-                two = t.getElementsByTagName(a)[0];
-                twenty.async = 1;
-                twenty.src = y;
-                two.parentNode.insertBefore(twenty, two);
-              })(window, document, 'script', 'https://scripts.stay22.com/letmeallez.js');
-            `,
-          }}
-        />
         <LangManager />
         <div className="fixed inset-0 z-[-1] bg-[radial-gradient(circle_at_top_right,_rgba(120,80,255,0.15),_transparent_40%),radial-gradient(circle_at_bottom_left,_rgba(80,120,255,0.15),_transparent_40%)] pointer-events-none"></div>
         <MediterraneanCursor />

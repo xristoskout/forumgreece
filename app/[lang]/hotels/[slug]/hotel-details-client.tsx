@@ -7,6 +7,7 @@ import { hotels, type Lang, siteBrand, siteBrandLine } from "../../../../lib/con
 import { experienceBusinesses } from "../../../../lib/experiences";
 import BusinessGallery from "../../businesses/[slug]/business-gallery";
 import SiteHeader from "../../../../components/site-header";
+import Stay22Booking from "../../../../components/stay22-booking";
 import { sanitizeIframeHTML } from "../../../../lib/sanitize-iframe";
 
 type ListCardProps = {
@@ -217,6 +218,7 @@ export default function HotelDetailsClient({ lang: serverLang, slug: serverSlug,
 
         {(slug === "santorini" || slug === "corfu" || slug === "lesvos" || slug === "mykonos" || slug === "crete" || slug === "kefalonia" || slug === "athens" || slug === "nayplio-odigos-taxidiou" || slug === "thessaloniki" || slug === "paros" || slug === "milos" || slug === "zakynthos" || slug === "rhodes" || slug === "halkidiki" || slug === "meteora" || slug === "monemvasia" || slug === "chania" || slug === "parga" || slug === "delphi") && (
           <section className="mt-10 overflow-hidden rounded-[2.5rem] border border-slate-200 shadow-xl bg-white p-3">
+             <Stay22Booking />
              <iframe 
               id="stay22-widget"
               width="100%" 

@@ -1,4 +1,6 @@
-import { type Lang, isLang } from "./useLocale";
+import { type Lang } from "./locale";
+export type { Lang } from "./locale";
+export { isLang } from "./locale";
 
 export type Localized = {
   en: string;

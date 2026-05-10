@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { preload } from "react-dom";
+import { Lang, isLang } from "../../lib/locale";
+import { computeCopy } from "../../lib/home-translations";
 import HomePageClient from "./home-page-client";
 import { client } from "../../lib/sanity/client";
 import { HOME_PAGE_QUERY } from "../../lib/sanity/queries";
 import { SITE_URL } from "../../lib/content";
-import { Lang, isLang } from "../../lib/useLocale";
 
 type Props = {
   params: Promise<{ lang: string }>;
@@ -205,10 +206,12 @@ export default async function Page({ params }: Props) {
     lang,
   });
 
+  const copy = computeCopy(content, lang);
+
   return (
     <>
       <HomeStructuredData lang={lang} />
-      <HomePageClient lang={lang} content={content} />
+      <HomePageClient lang={lang} copy={copy} />
     </>
   );
 }

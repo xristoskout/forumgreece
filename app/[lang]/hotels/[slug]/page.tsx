@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { hotels, SITE_URL } from "../../../../lib/content";
 import HotelDetailsClient from "./hotel-details-client";
-import { Lang, isLang, supportedLangs } from "../../../../lib/useLocale";
+import { Lang, isLang, supportedLangs } from "../../../../lib/locale";
 
 type HotelPageProps = {
   params: Promise<{ lang: string; slug: string }>;

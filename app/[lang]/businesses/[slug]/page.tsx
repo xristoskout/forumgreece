@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { experienceBusinesses } from "../../../../lib/experiences";
 import { SITE_URL } from "../../../../lib/content"; // SITE_URL should come from lib/content.ts
 import BusinessDetailsClient from "./business-details-client";
-import { Lang, isLang, supportedLangs } from "../../../../lib/useLocale";
+import { Lang, isLang, supportedLangs } from "../../../../lib/locale";
 
 type BusinessPageProps = {
   params: Promise<{ lang: string; slug: string }>;

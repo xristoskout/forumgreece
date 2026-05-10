@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { destinations } from '../../../lib/content';
 import SiteHeader from '../../../components/site-header';
 import DestinationsClient from './destinations-client';
-import { Lang, isLang } from '../../../lib/useLocale';
+import { Lang, isLang } from '../../../lib/content';
 
 type Props = {
   params: Promise<{ lang: string }>;

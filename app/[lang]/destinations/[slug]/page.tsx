@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { destinations, SITE_URL } from '../../../../lib/content';
 import DestinationDetailsClient from './destination-details-client';
-import { Lang, isLang } from '../../../../lib/useLocale';
+import { Lang, isLang } from '../../../../lib/locale';
 
 type Props = {
   params: Promise<{ lang: string; slug: string }>;

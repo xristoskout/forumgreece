@@ -5,7 +5,8 @@ import { usePathname } from 'next/navigation';
 import SiteHeader from "../../../components/site-header";
 import Image from 'next/image';
 import Link from 'next/link';
-import { Lang, useLocale } from "../../../lib/useLocale";
+import { Lang } from "../../../lib/locale";
+import { useLocale } from "../../../lib/useLocale";
 import { SITE_URL } from "../../../lib/content";
 
 const staticText = {

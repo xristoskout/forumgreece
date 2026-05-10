@@ -4,7 +4,8 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import SiteHeader from "../../../components/site-header";
-import { Lang, useLocale, isLang } from "../../../lib/useLocale";
+import { Lang, isLang } from "../../../lib/locale";
+import { useLocale } from "../../../lib/useLocale";
 import { SITE_URL } from "../../../lib/content";
 
 const staticText = {

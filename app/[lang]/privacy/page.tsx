@@ -4,7 +4,7 @@ import { usePathname } from 'next/navigation';
 import SiteHeader from "../../../components/site-header";
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { Lang, isLang } from "../../../lib/useLocale";
+import { Lang, isLang } from "../../../lib/locale";
 import { SITE_URL } from "../../../lib/content";
 
 const staticText = {
@@ -75,7 +75,8 @@ import { usePathname } from 'next/navigation';
 import SiteHeader from "../../../components/site-header";
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { Lang, isLang, useLocale, withLang } from "../../../lib/useLocale";
+import { Lang, isLang, withLang } from "../../../lib/locale";
+import { useLocale } from "../../../lib/useLocale";
 import { SITE_URL } from "../../../lib/content";
 
 const staticText = {

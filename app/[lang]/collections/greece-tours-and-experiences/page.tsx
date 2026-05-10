@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import SiteHeader from "../../../../components/site-header";
 import { tours, SITE_URL } from "../../../../lib/content";
-import { Lang, isLang, withLang } from "../../../../lib/useLocale";
+import { Lang, isLang, withLang } from "../../../../lib/locale";
 
 type Props = {
   params: Promise<{ lang: string }>;

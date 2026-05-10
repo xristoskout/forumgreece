@@ -3,8 +3,8 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import SiteHeader from "../../../../components/site-header";
-import { food, SITE_URL } from "../../../../lib/content";
-import { isLang, withLang, Lang } from "../../../../lib/useLocale";
+import { food, SITE_URL, Lang, isLang } from "../../../../lib/content";
+import { withLang } from "../../../../lib/locale";
 
 type Props = {
   params: Promise<{ lang: string }>;
