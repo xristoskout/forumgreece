@@ -5,12 +5,9 @@ import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import SiteHeader from "../../../../components/site-header";
 
-import {
-  siteBrand,
-  siteBrandLine,
-  type Lang,
-  type TourItem,
-} from "../../../../lib/content";
+import { siteBrand, siteBrandLine } from "../../../../lib/site-config";
+import { type Lang } from "../../../../lib/locale";
+import { type TourItem } from "../../../../lib/types";
 
 type TourDetailsClientProps = {
   tour: TourItem;

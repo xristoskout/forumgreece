@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import SiteHeader from "../../../../components/site-header";
-import { destinations } from "../../../../lib/content";
+import { destinations } from "../../../../lib/destinations-data";
 
 type Lang = "en" | "el";
 

@@ -1,5 +1,9 @@
 import { MetadataRoute } from 'next';
-import { destinations, hotels, food, tours, travelInfoGuides } from '../lib/content';
+import { destinations } from '../lib/destinations-data';
+import { hotels } from '../lib/hotels-data';
+import { food } from '../lib/food-data';
+import { tours } from '../lib/tours-data';
+import { travelInfoGuides } from '../lib/travel-info-data';
 import { experienceLandings, experienceBusinesses } from '../lib/experiences';
 import { homeCollectionHubSlugs } from '../lib/home-collection-hubs';
 

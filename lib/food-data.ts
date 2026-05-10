@@ -1,0 +1,197 @@
+import type { FoodCard } from "./types";
+export const food: FoodCard[] = [
+  {
+    slug: "seafood-by-the-harbor",
+    title: { en: "Lesvos Gastronomy Guide", el: "Γαστρονομικός Οδηγός Λέσβου: Πού να Φας και Τι να Δοκιμάσεις στο Νησί του Ούζου" },
+    place: "Lesvos",
+    metaTitle: {
+      en: "What to Eat in Lesvos: Best Taverns, Ouzo & Local Food Guide",
+      el: "Τι να Φας στη Λέσβο: Καλύτερες Ταβέρνες, Ούζο & Τοπικός Γαστρονομικός Οδηγός",
+    },
+    metaDescription: {
+      en: "Discover the gastronomy of Lesvos: the best places to eat, seafood tavernas, ouzeris, local products and authentic recipes. A complete food guide for travelers.",
+      el: "Ανακάλυψε τη γαστρονομία της Λέσβου: τα καλύτερα μέρη για φαγητό, ψαροταβέρνες, ουζερί, τοπικά προϊόντα και αυθεντικές λεσβιακές συνταγές. Πλήρης food guide για ταξιδιώτες.",
+    },
+    keywords: {
+      en: ["Lesvos cuisine", "where to eat in Lesvos", "local Lesvos delicacies", "food in Mytilene", "Kalloni sardines", "Plomari ouzo"],
+      el: ["κουζίνα Λέσβου", "πού να φάω στη Λέσβο", "τοπικές νοστιμιές Λέσβου", "φαγητό στη Μυτιλήνη", "σαρδέλες Καλλονής", "ούζο Πλωμαρίου"],
+    },
+    info: {
+      en: "A complete guide to the authentic local flavors, ouzo traditions, and best eateries across the island of Lesvos.",
+      el: "Ένας πλήρης οδηγός για τις αυθεντικές γεύσεις, την παράδοση του ούζου και τα καλύτερα στέκια φαγητού στη Λέσβο.",
+    },
+    image: "/images/tours/lesvos-food.webp",
+    overview: {
+      en: "Lesvos is one of Greece's most authentic gastronomic destinations. It's not just an island with beautiful beaches — it's a place where tradition, the sea, and Asia Minor roots meet at the table.\n\nIf you're wondering where to eat well in Lesvos and which local delicacies you shouldn't miss, this guide will give you a complete picture of Lesvian cuisine.\n\nThe cuisine of Lesvos is characterized by:\n\n• Fresh fish and seafood\n• A variety of meze for ouzo\n• Rich olive oil\n• Traditional cheeses\n• Aromatic herbs and seasonal vegetables\n\nIts geographical position opposite Asia Minor has deeply influenced its flavors. Many dishes have intense aromas, spices, and techniques that recall the East, yet remain authentically Greek.",
+      el: "Η Λέσβος είναι ένας από τους πιο αυθεντικούς γαστρονομικούς προορισμούς της Ελλάδας. Δεν είναι απλώς ένα νησί με ωραίες παραλίες — είναι ένας τόπος όπου η παράδοση, η θάλασσα και οι μικρασιατικές ρίζες συναντιούνται στο τραπέζι.\n\nΑν αναρωτιέσαι πού να φας καλά στη Λέσβο και ποιες είναι οι τοπικές νοστιμιές που δεν πρέπει να χάσεις, αυτός ο οδηγός θα σου δώσει ολοκληρωμένη εικόνα για τη λεσβιακή κουζίνα.\n\nΗ κουζίνα της Λέσβου χαρακτηρίζεται από:\n\n• Φρέσκα ψάρια και θαλασσινά\n• Ποικιλία μεζέδων για ούζο\n• Πλούσιο ελαιόλαδο\n• Παραδοσιακά τυριά\n• Αρωματικά χόρτα και εποχικά λαχανικά\n\nΗ γεωγραφική της θέση απέναντι από τη Μικρά Ασία έχει επηρεάσει βαθιά τις γεύσεις. Πολλά πιάτα έχουν έντονα αρώματα, μπαχαρικά και τεχνικές που θυμίζουν ανατολή, αλλά παραμένουν αυθεντικά ελληνικά.",
+    },
+    specialties: {
+      en: ["Kalloni Sardines", "Ladotyri Cheese", "Local Ouzo", "Fresh Seafood"],
+      el: ["Σαρδέλες Καλλονής", "Λαδοτύρι Μυτιλήνης", "Τοπικό Ούζο", "Φρέσκα Θαλασσινά"],
+    },
+    sections: [
+      {
+        title: { en: "Where to Eat Well in Lesvos", el: "Πού να Φας Καλά στη Λέσβο" },
+        text: {
+          en: "**Mytilene – The Heart of Ouzeris**\nThe city of Mytilene is the gastronomic center of the island. Traditional ouzeris serve:\n• Ladotyri saganaki\n• Dolmadakia (yaprakia)\n• Mussel pilaf\n• Marinated anchovies\n• Assorted seafood\nHere the experience is ritualistic: you order ouzo and small plates arrive successively to accompany it.\n\n**Molyvos – Romantic Dining with a View**\nMolyvos combines good food with a unique atmosphere. Besides traditional tavernas, there are restaurants offering a modern approach to local cuisine.\nTry:\n• Lesvos Kavourmas\n• Fava with caramelized onions\n• Local cheeses with honey\n• Fresh catch of the day\n\n**Skala Eresou – Seafood Delight**\nIn Skala Eresou you will find fish tavernas right on the waves. The menu includes:\n• Fried calamari\n• Grilled octopus\n• Grilled sardines\n• Sea fennel salad\nAn ideal spot for sunset views over the Aegean.\n\n**Sigri – Authentic Fish Dining**\nSigri is quiet and authentic. Its tavernas are famous for:\n• Lakerda (pickled bonito)\n• Kalloni sardines\n• Lobster pasta (when fresh lobster is available)\nHere you eat simply, freshly, and without unnecessary frills.\n\n**Plomari – The Island of Ouzo**\nPlomari is inextricably linked to ouzo. Besides visiting distilleries, you can enjoy excellent meze by the sea.\nPair with:\n• Ladotyri\n• Chickpea fritters (revithokeftedes)\n• Seafood\n• Local ouzo",
+          el: "**Μυτιλήνη – Η Καρδιά των Ουζερί**\nΗ πόλη της Μυτιλήνης είναι το γαστρονομικό κέντρο του νησιού. Τα παραδοσιακά ουζερί σερβίρουν:\n• Λαδοτύρι σαγανάκι\n• Ντολμαδάκια (γιαπράκια)\n• Μυδοπίλαφο\n• Γαύρο μαρινάτο\n• Ποικιλία θαλασσινών\nΕδώ η εμπειρία είναι τελετουργική: παραγγέλνεις ούζο και έρχονται διαδοχικά μικρά πιάτα για να το συνοδεύσουν.\n\n**Μόλυβος – Ρομαντικό Φαγητό με Θέα**\nΟ Μόλυβος συνδυάζει καλό φαγητό και μοναδική ατμόσφαιρα. Εκτός από παραδοσιακές ταβέρνες, υπάρχουν εστιατόρια που δίνουν σύγχρονη προσέγγιση στην τοπική κουζίνα.\nΔοκίμασε:\n• Καβουρμά Λέσβου\n• Φάβα με καραμελωμένα κρεμμύδια\n• Τοπικά τυριά με μέλι\n• Φρέσκο ψάρι ημέρας\n\n**Σκάλα Ερεσού – Θαλασσινή Απόλαυση**\nΣτη Σκάλα Ερεσού θα βρεις ψαροταβέρνες πάνω στο κύμα. Το μενού περιλαμβάνει:\n• Καλαμαράκια τηγανητά\n• Χταπόδι στα κάρβουνα\n• Σαρδέλες ψητές\n• Σαλάτα με κρίταμο\nΙδανικό μέρος για ηλιοβασίλεμα με θέα το Αιγαίο.\n\n**Σίγρι – Αυθεντική Ψαροφαγία**\nΤο Σίγρι είναι ήσυχο και αυθεντικό. Οι ταβέρνες του φημίζονται για:\n• Λακέρδα\n• Σαρδέλες Καλλονής\n• Αστακομακαρονάδα (όταν υπάρχει φρέσκος αστακός)\nΕδώ τρως απλά, φρέσκα και χωρίς περιττές φιοριτούρες.\n\n**Πλωμάρι – Το Νησί του Ούζου**\nΤο Πλωμάρι είναι άρρηκτα συνδεδεμένο με το ούζο. Εκτός από επισκέψεις σε αποστακτήρια, μπορείς να απολαύσεις εξαιρετικούς μεζέδες δίπλα στη θάλασσα.\nΣυνδύασε:\n• Λαδοτύρι\n• Ρεβυθοκεφτέδες\n• Θαλασσινά\n• Τοπικό ούζο"
+        }
+      },
+      {
+        title: { en: "Must-Try Local Delicacies", el: "Τοπικές Νοστιμιές που Πρέπει να Δοκιμάσεις" },
+        text: {
+          en: "**Kalloni Sardines**\nSmall, tender and rich in flavor. Considered among the best in Greece.\n\n**Ladotyri of Mytilene**\nA spicy cheese that matures in olive oil. Ideal for meze.\n\n**Lesvos Kavourmas**\nA traditional cured meat with intense flavor.\n\n**Sougania**\nOnions stuffed with minced meat and rice, a characteristic Asia Minor dish.\n\n**Stuffed Zucchini Flowers**\nA light, aromatic summer dish.\n\n**Sweets of Lesvos**\nGastronomy doesn't stop at the main course. Try:\n• Macaroons (Amygdalota)\n• Spoon sweets\n• Baklava\n• Pasteli\nPair them with Greek coffee or liqueur.",
+          el: "**Σαρδέλες Καλλονής**\nΜικρές, τρυφερές και πλούσιες σε γεύση. Θεωρούνται από τις καλύτερες στην Ελλάδα.\n\n**Λαδοτύρι Μυτιλήνης**\nΠικάντικο τυρί που ωριμάζει μέσα σε ελαιόλαδο. Ιδανικό για μεζέ.\n\n**Καβουρμάς Λέσβου**\nΠαραδοσιακό αλλαντικό με έντονη γεύση.\n\n**Σουγάνια**\nΚρεμμύδια γεμιστά με κιμά και ρύζι, χαρακτηριστικό μικρασιατικό πιάτο.\n\n**Κολοκυθοανθοί γεμιστοί**\nΕλαφρύ, αρωματικό καλοκαιρινό πιάτο.\n\n**Γλυκά της Λέσβου**\nΗ γαστρονομία δεν σταματά στο κυρίως πιάτο. Δοκίμασε:\n• Αμυγδαλωτά\n• Γλυκά του κουταλιού\n• Μπακλαβά\n• Παστέλι\nΣυνόδευσέ τα με ελληνικό καφέ ή λικέρ."
+        }
+      },
+      {
+        title: { en: "Why Lesvos is an Ideal Destination for Food Lovers", el: "Γιατί η Λέσβος Είναι Ιδανικός Προορισμός για Food Lovers" },
+        text: {
+          en: "Lesvos offers:\n✔ Authentic flavors without touristic exaggeration\n✔ High quality local products\n✔ Great tradition in ouzo\n✔ A combination of mountain and sea at the same table\n\nIt is not about \"showcase gastronomy\", but about flavors that have depth, history and character.\n\n**Tips to Enjoy Food in Lesvos**\n• Always ask what the dish of the day is\n• Prefer seasonal ingredients\n• Don't rush — eating here is an experience\n• Try local ouzo with every meal\n\n**Conclusion**\nThe cuisine of Lesvos is authentic, deeply rooted in history and full of flavor. From Kalloni sardines to ladotyri and Plomari ouzo, the island offers a complete gastronomic experience.\n\nIf you are planning a trip to Lesvos, leave room in your itinerary — and in your stomach — to discover the local delicacies.",
+          el: "Η Λέσβος προσφέρει:\n✔ Αυθεντικές γεύσεις χωρίς τουριστική υπερβολή\n✔ Υψηλής ποιότητας τοπικά προϊόντα\n✔ Μεγάλη παράδοση στο ούζο\n✔ Συνδυασμό βουνού και θάλασσας στο ίδιο τραπέζι\n\nΔεν πρόκειται για «γαστρονομία επίδειξης», αλλά για γεύσεις που έχουν βάθος, ιστορία και χαρακτήρα.\n\n**Tips για Να Απολαύσεις το Φαγητό στη Λέσβο**\n• Ρώτησε πάντα ποιο είναι το πιάτο ημέρας\n• Προτίμησε εποχικά υλικά\n• Μην βιαστείς — το φαγητό εδώ είναι εμπειρία\n• Δοκίμασε τοπικό ούζο με κάθε γεύμα\n\n**Συμπέρασμα**\nΗ κουζίνα της Λέσβου είναι αυθεντική, βαθιά ριζωμένη στην ιστορία και γεμάτη γεύση. Από τις σαρδέλες Καλλονής μέχρι το λαδοτύρι και το ούζο Πλωμαρίου, το νησί προσφέρει μια ολοκληρωμένη γαστρονομική εμπειρία.\n\nΑν σχεδιάζεις ταξίδι στη Λέσβο, άφησε χώρο στο πρόγραμμα — και στο στομάχι σου — για να ανακαλύψεις τις τοπικές νοστιμιές."
+        }
+      }
+    ]
+  },
+  {
+    slug: "sunset-cocktails-dinner",
+    title: {
+      en: "Santorini Local Flavors",
+      el: "Τοπικές Γεύσεις Σαντορίνης",
+    },
+    metaTitle: {
+      en: "Santorini Local Flavors: Sunset Cocktails & Romantic Dinner with Caldera Views",
+      el: "Τοπικές Γεύσεις Σαντορίνης: Cocktails στο Ηλιοβασίλεμα & Ρομαντικό Δείπνο με Θέα την Καλντέρα",
+    },
+    metaDescription: {
+      en: "Discover the premium side of Santorini through sunset cocktails, fine dining with caldera views, and unforgettable evenings in Oia, Imerovigli & Fira. A complete food & drink guide.",
+      el: "Ανακαλύψτε την premium πλευρά της Σαντορίνης μέσα από cocktails στο ηλιοβασίλεμα, fine dining με θέα την καλντέρα και αξέχαστες βραδιές σε Οία, Ημεροβίγλι & Φηρά. Ένας πλήρης οδηγός φαγητού & ποτού.",
+    },
+    keywords: {
+      en: ["Santorini sunset dinner", "Santorini cocktails with view", "fine dining Santorini", "caldera restaurants", "romantic dinner Santorini", "Oia sunset drinks"],
+      el: ["δείπνο ηλιοβασίλεμα Σαντορίνη", "cocktails με θέα Σαντορίνη", "fine dining Σαντορίνη", "εστιατόρια καλντέρα", "ρομαντικό δείπνο Σαντορίνη", "ποτά στο ηλιοβασίλεμα Οία"],
+    },
+    place: "Santorini",
+    info: {
+      en: "A guide to the ultimate sunset cocktails, fine dining, and most memorable culinary experiences across the island of Santorini.",
+      el: "Ο απόλυτος οδηγός για cocktails στο ηλιοβασίλεμα, fine dining και τις πιο αξέχαστες γαστρονομικές εμπειρίες στη Σαντορίνη.",
+    },
+    image: "/images/food-santorini.webp",
+    overview: {
+      en: "Santorini is not just a Greek island. It's a mood. A dramatic volcanic landscape, whitewashed villages hanging over the caldera, and sunsets that feel almost unreal.\n\nBut beyond the views, Santorini offers something else: a more refined, premium side of Greek gastronomy. Think elegant cocktails, creative Mediterranean cuisine, candlelit terraces, and unforgettable evenings overlooking the Aegean.\n\nIf you're looking for the ultimate sunset cocktails and dinner experience in Santorini, this guide will help you discover where to go, what to order, and how to enjoy the island in style.",
+      el: "Η Σαντορίνη δεν είναι απλώς ένα ελληνικό νησί. Είναι μια αίσθηση. Ένα δραματικό ηφαιστειακό τοπίο, ολόλευκα χωριά που κρέμονται πάνω από την καλντέρα, και ηλιοβασιλέματα που μοιάζουν σχεδόν εξωπραγματικά.\n\nΌμως, πέρα από τη θέα, η Σαντορίνη προσφέρει και κάτι άλλο: μια πιο εκλεπτυσμένη, premium πλευρά της ελληνικής γαστρονομίας. Σκεφτείτε κομψά cocktails, δημιουργική μεσογειακή κουζίνα, βεράντες υπό το φως των κεριών και αξέχαστες βραδιές με θέα το Αιγαίο.\n\nΑν αναζητάτε την απόλυτη εμπειρία για cocktails και δείπνο στο ηλιοβασίλεμα της Σαντορίνης, αυτός ο οδηγός θα σας βοηθήσει να ανακαλύψετε πού να πάτε, τι να παραγγείλετε και πώς να απολαύσετε το νησί με στιλ.",
+    },
+    specialties: {
+      en: ["Sunset spots", "Cocktails", "Memorable dinners"],
+      el: ["Σημεία για ηλιοβασίλεμα", "Cocktails", "Αξέχαστα δείπνα"],
+    },
+    sections: [
+      {
+        title: { en: "The Premium Side of Greece: What Makes Santorini Dining Special", el: "Η Premium Πλευρά της Ελλάδας: Τι Κάνει το Φαγητό στη Σαντορίνη Ξεχωριστό" },
+        text: {
+          en: "Santorini stands apart from other Greek islands for three main reasons:\n\n• Caldera views that transform dinner into a spectacle\n• High-end restaurants blending tradition with fine dining\n• A strong wine culture rooted in volcanic soil\n\nThis is not the place for rushed meals. Dining in Santorini is about atmosphere, timing, and experience.\n\nYou don't just eat.\nYou watch the sun disappear into the sea while sipping a perfectly balanced cocktail.",
+          el: "Η Σαντορίνη ξεχωρίζει από τα υπόλοιπα ελληνικά νησιά για τρεις κύριους λόγους:\n\n• Η θέα στην καλντέρα που μετατρέπει το δείπνο σε υπερθέαμα\n• High-end εστιατόρια που συνδυάζουν την παράδοση με το fine dining\n• Η ισχυρή οινική κουλτούρα με ρίζες στο ηφαιστειακό έδαφος\n\nΔεν είναι το μέρος για βιαστικά γεύματα. Το δείπνο στη Σαντορίνη αφορά την ατμόσφαιρα, τον σωστό χρόνο και την εμπειρία.\n\nΔεν τρως απλά.\nΒλέπεις τον ήλιο να χάνεται στη θάλασσα ενώ απολαμβάνεις ένα τέλεια ισορροπημένο cocktail."
+        }
+      },
+      {
+        title: { en: "Best Areas for Sunset Cocktails & Dinner in Santorini", el: "Οι Καλύτερες Περιοχές για Cocktails & Δείπνο στο Ηλιοβασίλεμα" },
+        text: {
+          en: "**Oia – The Iconic Sunset Spot**\nOia is the postcard version of Santorini. Cliffside terraces, golden light, and panoramic caldera views.\nHere, sunset cocktails are an event. Arrive at least one hour before sunset to secure your table.\n\nWhat to expect:\n• Signature cocktails with local ingredients\n• Champagne and premium wine lists\n• Elegant seafood and Mediterranean tasting menus\nIdeal for: romantic dinners, anniversaries, proposals.\n\n**Imerovigli – Luxury & Serenity**\nIf you want breathtaking views without the heavy crowds, Imerovigli is your sweet spot.\nThis area offers:\n• Boutique fine dining restaurants\n• Intimate sunset terraces\n• Quiet, elevated views of the caldera\nPerfect for couples who want a more private, sophisticated atmosphere.\n\n**Fira – Cosmopolitan Energy**\nFira combines sunset views with a more vibrant nightlife vibe.\nHere you'll find:\n• Trendy cocktail bars\n• Upscale restaurants\n• Rooftop terraces with DJ sets\nIdeal for travelers who want dinner followed by drinks and a lively evening.",
+          el: "**Οία – Το Απόλυτο Σημείο για το Ηλιοβασίλεμα**\nΗ Οία είναι η καρτ-ποστάλ της Σαντορίνης. Βεράντες στο χείλος του γκρεμού, χρυσό φως και πανοραμική θέα στην καλντέρα.\nΕδώ, τα cocktails στο ηλιοβασίλεμα είναι γεγονός. Φτάστε τουλάχιστον μία ώρα πριν τη δύση για να εξασφαλίσετε το τραπέζι σας.\n\nΤι να περιμένετε:\n• Signature cocktails με τοπικά υλικά\n• Λίστες με σαμπάνιες και premium κρασιά\n• Κομψά μενού γευσιγνωσίας με θαλασσινά και μεσογειακές γεύσεις\nΙδανικό για: ρομαντικά δείπνα, επετείους, προτάσεις γάμου.\n\n**Ημεροβίγλι – Πολυτέλεια & Ηρεμία**\nΑν θέλετε θέα που κόβει την ανάσα χωρίς τα τεράστια πλήθη, το Ημεροβίγλι είναι το ιδανικό σημείο.\nΗ περιοχή προσφέρει:\n• Boutique εστιατόρια fine dining\n• Ιδιωτικές βεράντες για το ηλιοβασίλεμα\n• Ήσυχη, υπερυψωμένη θέα στην καλντέρα\nΙδανικό για ζευγάρια που αναζητούν μια πιο ιδιωτική και εκλεπτυσμένη ατμόσφαιρα.\n\n**Φηρά – Κοσμοπολίτικη Ενέργεια**\nΤα Φηρά συνδυάζουν τη θέα στο ηλιοβασίλεμα με μια πιο ζωντανή νυχτερινή ατμόσφαιρα.\nΕδώ θα βρείτε:\n• Μοντέρνα cocktail bars\n• Πολυτελή εστιατόρια\n• Rooftop βεράντες με DJ sets\nΙδανικό για ταξιδιώτες που θέλουν δείπνο, ποτό και μια ζωντανή βραδιά."
+        }
+      },
+      {
+        title: { en: "What to Drink & Eat: Signature Cocktails and Fine Dining", el: "Τι να Πιείτε και Τι να Φάτε: Signature Cocktails & Fine Dining" },
+        text: {
+          en: "**What to Drink: Signature Santorini Sunset Cocktails**\nSantorini's cocktail scene blends Greek ingredients with modern mixology.\nLook for drinks featuring Assyrtiko wine infusions, Mastiha liqueur, fresh citrus, and local herbs.\nClassic choices:\n• Santorini Spritz (twist on Aperol with Greek wine)\n• Mastiha-based martinis\n• Premium gin & tonic with Mediterranean botanicals\nFor wine lovers, a glass of Assyrtiko at sunset is almost mandatory. Its crisp acidity pairs beautifully with seafood and the island breeze.\n\n**What to Eat: Fine Dining with Local Roots**\nEven at its most premium, Santorini's cuisine remains deeply Greek.\nMust-Try Local Ingredients:\n• Cherry Tomatoes of Santorini: Intensely sweet due to volcanic soil and limited water.\n• Fava Santorinis: Creamy yellow split pea purée, often served with caramelized onions and capers.\n• White Eggplant: Delicate, less bitter than the typical variety.\n• Fresh Seafood: Sea bass, red snapper, octopus, lobster (seasonal).\n\nPopular Dinner Experiences:\n• Tasting Menus with Caldera View: Multi-course menus blending Greek tradition with modern presentation.\n• Seafood & Champagne Evenings: Grilled fish, lobster pasta, oysters, paired with sparkling wine.\n• Romantic Candlelight Dinners: Private terraces, curated wine pairings, personalized service.",
+          el: "**Τι να Πιείτε: Signature Cocktails στο Ηλιοβασίλεμα**\nΗ σκηνή των cocktails στη Σαντορίνη συνδυάζει ελληνικά υλικά με μοντέρνα mixology.\nΑναζητήστε ποτά που περιέχουν κρασί Ασύρτικο, λικέρ Μαστίχας, φρέσκα εσπεριδοειδή και τοπικά βότανα.\nΚλασικές επιλογές:\n• Santorini Spritz (παραλλαγή του Aperol με ελληνικό κρασί)\n• Martinis με βάση τη Μαστίχα\n• Premium gin & tonic με μεσογειακά βότανα\nΓια τους λάτρεις του κρασιού, ένα ποτήρι Ασύρτικο στο ηλιοβασίλεμα είναι σχεδόν υποχρεωτικό. Η ζωηρή του οξύτητα ταιριάζει υπέροχα με τα θαλασσινά και την αύρα του νησιού.\n\n**Τι να Φάτε: Fine Dining με Τοπικές Ρίζες**\nΑκόμα και στην πιο premium μορφή της, η κουζίνα της Σαντορίνης παραμένει βαθιά ελληνική.\nΤοπικά Υλικά που Πρέπει να Δοκιμάσετε:\n• Ντοματάκια Σαντορίνης: Έντονα γλυκά λόγω του ηφαιστειακού εδάφους και της έλλειψης νερού.\n• Φάβα Σαντορίνης: Κρεμώδης πουρές, που συχνά σερβίρεται με καραμελωμένα κρεμμύδια και κάπαρη.\n• Λευκή Μελιτζάνα: Πιο εκλεπτυσμένη και λιγότερο πικρή από τη συνηθισμένη.\n• Φρέσκα Θαλασσινά: Λαβράκι, φαγκρί, χταπόδι, αστακός (εποχικός).\n\nΔημοφιλείς Εμπειρίες Δείπνου:\n• Μενού Γευσιγνωσίας με Θέα την Καλντέρα: Μενού πολλών πιάτων που συνδυάζουν την ελληνική παράδοση με μοντέρνα παρουσίαση.\n• Βραδιές με Θαλασσινά & Σαμπάνια: Ψητό ψάρι, αστακομακαρονάδα, στρείδια, συνοδευόμενα από αφρώδη οίνο.\n• Ρομαντικά Δείπνα υπό το Φως των Κεριών: Ιδιωτικές βεράντες, επιλεγμένο pairing κρασιών, εξατομικευμένο service."
+        }
+      },
+      {
+        title: { en: "The Perfect Plan & Insider Tips", el: "Το Τέλειο Πλάνο & Insider Tips" },
+        text: {
+          en: "**The Perfect Santorini Sunset Dinner Plan**\nIf you want to do it right, here's the ideal flow:\n• Arrive 60–90 minutes before sunset\n• Start with a signature cocktail\n• Order light starters (fava, tomato salad, seafood meze)\n• Watch the sunset without rushing\n• Move into main course as the sky turns deep blue\n• Finish with dessert wine or cocktail\nThis timing makes all the difference.\n\n**Dress Code & Budget Expectations**\nSantorini sunset dining leans toward smart casual to elegant.\nThink linen shirts, summer dresses, minimal, chic style.\nBudget range:\n• Cocktails: €15–25\n• Fine dining dinner per person: €60–150+\n• Premium tasting menus: €120–200+\nYes, it's higher than other Greek islands — but the experience is part of what you're paying for.\n\n**When to Book & Insider Tips**\n• Always reserve in advance (especially May–September)\n• Ask for a front-row caldera table\n• Avoid peak sunset crowds by dining slightly later\n• Consider late May, June, or September for best balance of weather and atmosphere\n\n**Why Santorini Is the Ultimate Sunset Dining Destination**\nSantorini elevates the Greek dining experience into something cinematic.\nIt's not just about the food.\nIt's about light, space, atmosphere, and memory.\nSunset cocktails turn into long dinners.\nDinner turns into conversations under the stars.\nAnd suddenly, one evening feels like a scene from a movie.\nIf you're looking for a premium side of Greece — refined but still authentic — Santorini delivers it beautifully.",
+          el: "**Το Τέλειο Πλάνο για Δείπνο στο Ηλιοβασίλεμα**\nΑν θέλετε να το ζήσετε σωστά, αυτή είναι η ιδανική ροή:\n• Φτάστε 60–90 λεπτά πριν το ηλιοβασίλεμα\n• Ξεκινήστε με ένα signature cocktail\n• Παραγγείλτε ελαφριά ορεκτικά (φάβα, σαλάτα με ντοματάκια, μεζέδες θαλασσινών)\n• Δείτε το ηλιοβασίλεμα χωρίς πίεση χρόνου\n• Προχωρήστε στο κυρίως πιάτο καθώς ο ουρανός γίνεται βαθύς μπλε\n• Κλείστε με ένα επιδόρπιο κρασί ή cocktail\nΑυτό το timing κάνει όλη τη διαφορά.\n\n**Dress Code & Προσδοκίες Προϋπολογισμού**\nΤο δείπνο στη Σαντορίνη κινείται σε ρυθμούς από smart casual έως elegant.\nΣκεφτείτε λινά πουκάμισα, καλοκαιρινά φορέματα, minimal, chic στιλ.\nΕύρος τιμών:\n• Cocktails: 15–25€\n• Δείπνο fine dining ανά άτομο: 60–150€+\n• Premium μενού γευσιγνωσίας: 120–200€+\nΝαι, οι τιμές είναι υψηλότερες από άλλα ελληνικά νησιά — αλλά η εμπειρία είναι μέρος αυτού που πληρώνετε.\n\n**Πότε να Κλείσετε & Insider Tips**\n• Κάντε πάντα κράτηση εκ των προτέρων (ειδικά Μάιο–Σεπτέμβριο)\n• Ζητήστε τραπέζι στην πρώτη γραμμή της καλντέρας\n• Αποφύγετε τα μεγάλα πλήθη τρώγοντας ελαφρώς αργότερα\n• Προτιμήστε τα τέλη Μαΐου, τον Ιούνιο ή τον Σεπτέμβριο για την καλύτερη ισορροπία καιρού και ατμόσφαιρας\n\n**Γιατί η Σαντορίνη Είναι ο Απόλυτος Προορισμός Δείπνου**\nΗ Σαντορίνη απογειώνει την ελληνική εμπειρία φαγητού σε κάτι κινηματογραφικό.\nΔεν αφορά μόνο το φαγητό.\nΑφορά το φως, τον χώρο, την ατμόσφαιρα και τις αναμνήσεις.\nΤα cocktails μετατρέπονται σε μεγάλα δείπνα.\nΤο δείπνο καταλήγει σε συζητήσεις κάτω από τα αστέρια.\nΚαι ξαφνικά, ένα βράδυ μοιάζει σαν σκηνή από ταινία.\nΑν ψάχνετε για μια premium πλευρά της Ελλάδας — εκλεπτυσμένη αλλά αυθεντική — η Σαντορίνη σας την προσφέρει απλόχερα."
+        }
+      }
+    ]
+  },
+  {
+    slug: "traditional-tavern-flavors",
+    title: {
+      en: "Traditional Tavern Flavors in Crete",
+      el: "Παραδοσιακές Γεύσεις της Κρήτης",
+    },
+    metaTitle: {
+      en: "What to Eat in Crete: Traditional Dishes, Taverns & Local Food Guide",
+      el: "Τι να Φας στην Κρήτη: Παραδοσιακές Γεύσεις, Ταβέρνες & Τοπικός Γαστρονομικός Οδηγός",
+    },
+    metaDescription: {
+      en: "Discover authentic Cretan tavern flavors across Chania, Rethymno, Heraklion and Lasithi. A documentary-style journey through Crete's regional cuisine and local specialties.",
+      el: "Ανακαλύψτε αυθεντικές κρητικές γεύσεις σε Χανιά, Ρέθυμνο, Ηράκλειο και Λασίθι. Ένα γαστρονομικό ταξίδι στην τοπική κουζίνα και τις παραδοσιακές νοστιμιές της Κρήτης.",
+    },
+    keywords: {
+      en: ["traditional tavern Crete", "best food in Chania Crete", "Rethymno local cuisine", "Heraklion traditional food", "Lasithi authentic taverns", "Cretan village dining experience"],
+      el: ["παραδοσιακή ταβέρνα Κρήτη", "καλύτερο φαγητό Χανιά", "τοπική κουζίνα Ρέθυμνο", "παραδοσιακό φαγητό Ηράκλειο", "αυθεντικές ταβέρνες Λασίθι", "εμπειρία φαγητού σε χωριό της Κρήτης"],
+    },
+    place: "Crete",
+    info: {
+      en: "A regional journey through Crete's traditional taverns.",
+      el: "Ένα ταξίδι στα χωριά και τις παραδοσιακές ταβέρνες της Κρήτης.",
+    },
+    image: "/images/food-crete.webp",
+    overview: {
+      en: "In Crete, every region tells a slightly different story — through fire, olive oil, mountain herbs, and sea salt.\n\nFrom the White Mountains of Chania to the rugged plateaus of Lasithi, the Cretan tavern is not a single experience. It changes with the landscape. And that’s what makes it unforgettable.",
+      el: "Στην Κρήτη, κάθε περιοχή αφηγείται μια ελαφρώς διαφορετική ιστορία — μέσα από τη φωτιά, το ελαιόλαδο, τα βότανα του βουνού και το αλάτι της θάλασσας.\n\nΑπό τα Λευκά Όρη των Χανίων μέχρι τα άγρια οροπέδια του Λασιθίου, η κρητική ταβέρνα δεν είναι μια ενιαία εμπειρία. Αλλάζει μαζί με το τοπίο. Κι αυτό είναι που την κάνει αξέχαστη.",
+    },
+    specialties: {
+      en: ["Antikristo lamb", "Gamopilafo", "Dakos", "Cretan Hospitality"],
+      el: ["Αρνί αντικριστό", "Γαμοπίλαφο", "Ντάκος", "Κρητική Φιλοξενία"],
+    },
+    sections: [
+      {
+        title: { en: "Chania: Mountain Soul & Slow-Cooked Depth", el: "Χανιά: Ορεινή Ψυχή & Αργομαγειρεμένο Βάθος" },
+        text: {
+          en: "**Chania: Mountain Soul & Slow-Cooked Depth**\nWestern Crete carries intensity.\nThe White Mountains (Lefka Ori) shape both the terrain and the cuisine. Villages inland from Chania offer some of the most authentic tavern experiences on the island.\n\n**What to Look For in Chania Taverns:**\n• Antikristo lamb cooked over open fire\n• Goat in clay pot with wild herbs\n• Dakos with deeply flavorful local tomatoes\n• Kalitsounia (cheese or herb pies) handmade daily\n• Staka (rich Cretan dairy cream) often served with eggs or over fries\n\nIn mountain villages, meat dominates the table. Slow cooking is the rule, not the exception. Dishes are rustic, hearty, and unapologetically simple.\n\nIn seaside Chania, you'll also find:\n• Fresh grilled fish\n• Octopus with vinegar and rosemary\n• Cretan salads with local graviera cheese\n\nBest for: Travelers who want strong flavors, traditional mountain cooking, and deeply local taverns.",
+          el: "**Χανιά: Ορεινή Ψυχή & Αργομαγειρεμένο Βάθος**\nΗ δυτική Κρήτη αποπνέει ένταση.\nΤα Λευκά Όρη διαμορφώνουν τόσο το έδαφος όσο και την κουζίνα. Τα χωριά στην ενδοχώρα των Χανίων προσφέρουν μερικές από τις πιο αυθεντικές εμπειρίες ταβέρνας στο νησί.\n\n**Τι να Αναζητήσετε στις Ταβέρνες των Χανίων:**\n• Αρνί αντικριστό ψημένο σε ανοιχτή φωτιά\n• Κατσίκι στο πήλινο (τσικάλι) με άγρια βότανα\n• Ντάκο με ντόπιες γευστικές ντομάτες\n• Καλιτσούνια (με τυρί ή χόρτα) φτιαγμένα στο χέρι καθημερινά\n• Στάκα (πλούσια κρέμα από αιγοπρόβειο γάλα) σερβιρισμένη με αυγά ή πάνω σε τηγανητές πατάτες\n\nΣτα ορεινά χωριά, το κρέας κυριαρχεί στο τραπέζι. Το αργό μαγείρεμα είναι ο κανόνας, όχι η εξαίρεση. Τα πιάτα είναι ρουστίκ, χορταστικά και απροσποίητα απλά.\n\nΣτα παραθαλάσσια Χανιά, θα βρείτε επίσης:\n• Φρέσκο ψητό ψάρι\n• Χταπόδι με ξύδι και δεντρολίβανο\n• Κρητικές σαλάτες με ντόπια γραβιέρα\n\nΙδανικό για: Ταξιδιώτες που αναζητούν έντονες γεύσεις, παραδοσιακή ορεινή μαγειρική και αυθεντικές ντόπιες ταβέρνες."
+        }
+      },
+      {
+        title: { en: "Rethymno: Balance Between Tradition & Refinement", el: "Ρέθυμνο: Ισορροπία Ανάμεσα στην Παράδοση & την Εκλεπτυσμένη Γεύση" },
+        text: {
+          en: "**Rethymno: Balance Between Tradition & Refinement**\nRethymno sits between west and east — and its cuisine reflects that balance.\nHere, you'll find traditional recipes presented with slightly more finesse, especially in village taverns around the Amari Valley and inland communities.\n\n**What to Look For in Rethymno Taverns:**\n• Gamopilafo (wedding rice cooked in meat broth)\n• Lamb with artichokes or wild greens\n• Snails (xoxlioi) with rosemary and vinegar\n• Handmade pasta with slow-cooked meat\n\nRethymno's food feels slightly more layered — not modernized, but thoughtfully prepared.\nVillage taverns here often feel intimate. Stone courtyards, wooden tables, quiet evenings.\nBest for: Visitors who want authentic food with subtle refinement and traditional inland flavors.",
+          el: "**Ρέθυμνο: Ισορροπία Ανάμεσα στην Παράδοση & την Εκλεπτυσμένη Γεύση**\nΤο Ρέθυμνο βρίσκεται ανάμεσα στη δύση και την ανατολή — και η κουζίνα του αντικατοπτρίζει αυτή την ισορροπία.\nΕδώ, θα βρείτε παραδοσιακές συνταγές παρουσιασμένες με λίγη περισσότερη φινέτσα, ειδικά στις ταβέρνες των χωριών γύρω από την κοιλάδα του Αμαρίου και τις κοινότητες της ενδοχώρας.\n\n**Τι να Αναζητήσετε στις Ταβέρνες του Ρεθύμνου:**\n• Γαμοπίλαφο (ρύζι μαγειρεμένο σε ζωμό κρέατος)\n• Αρνί με αγκινάρες ή άγρια χόρτα\n• Χοχλιούς (σαλιγκάρια) μπουμπουριστούς με δεντρολίβανο και ξύδι\n• Χειροποίητα ζυμαρικά με αργομαγειρεμένο κρέας\n\nΤο φαγητό του Ρεθύμνου δίνει μια αίσθηση ότι έχει περισσότερα επίπεδα — δεν είναι εκσυγχρονισμένο, αλλά προσεγμένα προετοιμασμένο.\nΟι ταβέρνες των χωριών εδώ αποπνέουν οικειότητα. Πέτρινες αυλές, ξύλινα τραπέζια, ήσυχα βράδια.\nΙδανικό για: Επισκέπτες που θέλουν αυθεντικό φαγητό με διακριτική κομψότητα και παραδοσιακές γεύσεις της ενδοχώρας."
+        }
+      },
+      {
+        title: { en: "Heraklion: The Agricultural Heart of Crete", el: "Ηράκλειο: Η Αγροτική Καρδιά της Κρήτης" },
+        text: {
+          en: "**Heraklion: The Agricultural Heart of Crete**\nCentral Crete is fertile. Olive groves stretch endlessly. Vineyards dot the hills.\nHeraklion region offers some of the most ingredient-driven tavern experiences on the island.\n\n**What to Look For in Heraklion Taverns:**\n• Seasonal vegetable dishes (zucchini flowers, eggplants, wild greens)\n• Slow-cooked pork with wine and herbs\n• Local graviera and mizithra cheeses\n• Cretan salads with barley rusks and abundant olive oil\n\nWine culture is strong here. Many taverns serve local varietals produced nearby — earthy, structured, honest wines.\nThe cuisine feels grounded. Ingredient-first. Less focused on spectacle, more on quality.\nBest for: Food lovers interested in the Cretan diet, olive oil culture, and wine pairings with traditional dishes.",
+          el: "**Ηράκλειο: Η Αγροτική Καρδιά της Κρήτης**\nΗ κεντρική Κρήτη είναι εύφορη. Οι ελαιώνες εκτείνονται ατελείωτα. Οι αμπελώνες στολίζουν τους λόφους.\nΗ περιοχή του Ηρακλείου προσφέρει μερικές από τις πιο ταβέρνες με έμφαση στα γνήσια υλικά του νησιού.\n\n**Τι να Αναζητήσετε στις Ταβέρνες του Ηρακλείου:**\n• Πιάτα με εποχιακά λαχανικά (κολοκυθοανθοί, μελιτζάνες, άγρια χόρτα)\n• Αργομαγειρεμένο χοιρινό με κρασί και βότανα\n• Ντόπια γραβιέρα και μυζήθρα μηλίνα\n• Κρητικές σαλάτες με παξιμάδια (ντάκο) και άφθονο ελαιόλαδο\n\nΗ κουλτούρα του κρασιού είναι ισχυρή εδώ. Πολλές ταβέρνες σερβίρουν τοπικές ποικιλίες που παράγονται σε κοντινή απόσταση — γήινα, δομημένα, ειλικρινή κρασιά.\nΗ κουζίνα έχει γερές βάσεις. Πρώτα τα υλικά. Λιγότερο εστιασμένη στον εντυπωσιασμό, περισσότερο στην ποιότητα.\nΙδανικό για: Λάτρεις του φαγητού που ενδιαφέρονται για την κρητική διατροφή, την κουλτούρα του ελαιολάδου και τους συνδυασμούς κρασιού με παραδοσιακά πιάτα."
+        }
+      },
+      {
+        title: { en: "Lasithi: Wild, Remote & Deeply Authentic", el: "Λασίθι: Άγριο, Απομακρυσμένο & Βαθιά Αυθεντικό" },
+        text: {
+          en: "**Lasithi: Wild, Remote & Deeply Authentic**\nEastern Crete feels different.\nMore rugged. Less polished. Villages in the Lasithi Plateau and coastal fishing communities preserve some of the island’s most untouched tavern traditions.\n\n**What to Look For in Lasithi Taverns:**\n• Goat and lamb raised locally\n• Simple grilled meats with salt and lemon\n• Fresh seafood in coastal villages\n• Hand-cut potatoes fried in olive oil\n• Minimalist menus based entirely on what’s available that day\n\nIn Lasithi, you may encounter taverns without printed menus. The owner tells you what exists. That’s your choice.\nThe flavors are bold but unpretentious.\nBest for: Travelers seeking raw authenticity and truly off-the-beaten-path village dining.",
+          el: "**Λασίθι: Άγριο, Απομακρυσμένο & Βαθιά Αυθεντικό**\nΗ ανατολική Κρήτη έχει άλλη αίσθηση.\nΠιο τραχιά. Λιγότερο γυαλισμένη. Τα χωριά στο Οροπέδιο Λασιθίου και οι παράκτιες αλιευτικές κοινότητες διατηρούν μερικές από τις πιο ανέγγιχτες παραδόσεις ταβέρνας του νησιού.\n\n**Τι να Αναζητήσετε στις Ταβέρνες του Λασιθίου:**\n• Ντόπιο κατσίκι και αρνί ελευθέρας βοσκής\n• Απλά ψητά κρέατα με αλάτι και λεμόνι\n• Φρέσκα θαλασσινά στα παραθαλάσσια χωριά\n• Χειροποίητες τηγανητές πατάτες στο ελαιόλαδο\n• Μινιμαλιστικά μενού που βασίζονται εξ ολοκλήρου στο τι είναι διαθέσιμο εκείνη την ημέρα\n\nΣτο Λασίθι, μπορεί να συναντήσετε ταβέρνες χωρίς τυπωμένα μενού. Ο ιδιοκτήτης σας λέει τι υπάρχει. Αυτή είναι η επιλογή σας.\nΟι γεύσεις είναι τολμηρές αλλά ανεπιτήδευτες.\nΙδανικό για: Ταξιδιώτες που αναζητούν ωμή αυθεντικότητα και πραγματικά off-the-beaten-path γεύματα σε χωριά."
+        }
+      },
+      {
+        title: { en: "Mountain vs Seaside & Cretan Hospitality", el: "Ορεινές Ταβέρνες vs. Παραθαλάσσιες Ταβέρνες & Φιλοξενία" },
+        text: {
+          en: "**Mountain Taverns vs. Seaside Taverns**\nUnderstanding this distinction helps visitors choose the right experience.\nMountain Taverns: Heavier meat dishes, wood-fired cooking, rustic interiors, slower pace.\nSeaside Taverns: Grilled fish & octopus, simpler seasoning, sea breeze atmosphere, lighter summer meals.\nBoth are equally authentic — just shaped by geography.\n\n**The Constant Across All Regions: Cretan Hospitality**\nNo matter where you dine, one element remains unchanged. Philoxenia.\nYou will be offered raki at the end of the meal. You may receive fruit or dessert \"on the house.\" You will likely be asked where you're from.\nHospitality here is not strategic. It is instinctive.\n\n**What Visitors Should Expect**\n• No dress code\n• No rushed service\n• Large portions\n• Seasonal menus\n• Affordable prices (€15–35 per person in most traditional taverns)\n\nAnd above all — sincerity.",
+          el: "**Ορεινές Ταβέρνες vs. Παραθαλάσσιες Ταβέρνες**\nΗ κατανόηση αυτής της διάκρισης βοηθά τους επισκέπτες να επιλέξουν τη σωστή εμπειρία.\nΟρεινές Ταβέρνες: Πιο βαριά πιάτα με κρέας, μαγείρεμα στον ξυλόφουρνο, ρουστίκ εσωτερικοί χώροι, πιο αργοί ρυθμοί.\nΠαραθαλάσσιες Ταβέρνες: Ψητό ψάρι & χταπόδι, πιο απλά καρυκεύματα, ατμόσφαιρα θαλασσινής αύρας, ελαφρύτερα καλοκαιρινά γεύματα.\nΚαι οι δύο είναι εξίσου αυθεντικές — απλώς διαμορφώνονται από τη γεωγραφία.\n\n**Η Σταθερά σε Όλες τις Περιοχές: Η Κρητική Φιλοξενία**\nΑνεξάρτητα από το πού δειπνείτε, ένα στοιχείο παραμένει αμετάβλητο. Η Φιλοξενία.\nΘα σας προσφέρουν ρακή στο τέλος του γεύματος. Ίσως λάβετε φρούτα ή γλυκό \"κερασμένα\". Είναι πολύ πιθανό να σας ρωτήσουν από πού είστε.\nΗ φιλοξενία εδώ δεν είναι στρατηγική. Είναι ενστικτώδης.\n\n**Τι να Περιμένουν οι Επισκέπτες**\n• Κανένα αυστηρό dress code\n• Χαλαρό service χωρίς βιασύνη\n• Μεγάλες μερίδες\n• Εποχιακά μενού\n• Προσιτές τιμές (15–35€ ανά άτομο στις περισσότερες παραδοσιακές ταβέρνες)\n\nΚαι πάνω απ' όλα — ειλικρίνειά."
+        }
+      },
+      {
+        title: { en: "Frequently Asked Questions About Traditional Tavern Food in Crete", el: "Συχνές Ερωτήσεις (FAQ) για το Παραδοσιακό Φαγητό στις Ταβέρνες της Κρήτης" },
+        text: {
+          en: "**Where to eat traditional food in Crete?**\nYou can find authentic Cretan tavern food across the island, but the most genuine experiences are often in village taverns rather than tourist-heavy areas.\n• Chania: Best for antikristo lamb and handmade pies.\n• Rethymno: Ideal for gamopilafo and snail dishes.\n• Heraklion: Excellent for olive-oil based dishes and local wines.\n• Lasithi: Perfect for simple, rustic goat and lamb dishes.\n\n**What is the most traditional Cretan dish?**\nThere isn't just one — but these are considered staples: Antikristo lamb, Gamopilafo (wedding rice), Dakos, Horta (wild greens), Kalitsounia.\n\n**Is Cretan food different from the rest of Greece?**\nYes. Cretan cuisine stands out because of the heavy use of high-quality olive oil, emphasis on wild greens, slow-cooked meats, and its strong connection to the Mediterranean diet.\n\n**How much does a traditional tavern meal cost?**\nA typical meal costs €15–25 per person in most villages, and €25–35 in more popular or coastal areas.\n\n**What drink pairs best with Cretan tavern food?**\nHouse wine (red or white), local Cretan wines from the Heraklion region, and naturally, Raki (served after the meal).",
+          el: "**Πού να φάω παραδοσιακό φαγητό στην Κρήτη;**\nΜπορείτε να βρείτε αυθεντικό κρητικό φαγητό ταβέρνας σε όλο το νησί, αλλά οι πιο γνήσιες εμπειρίες βρίσκονται συχνά σε ταβέρνες χωριών και όχι σε τουριστικές περιοχές.\n• Χανιά: Κορυφαία για αρνί αντικριστό και χειροποίητες πίτες.\n• Ρέθυμνο: Ιδανικό για γαμοπίλαφο και πιάτα με σαλιγκάρια.\n• Ηράκλειο: Εξαιρετικό για πιάτα με βάση το ελαιόλαδο και τοπικά κρασιά.\n• Λασίθι: Τέλειο για απλά, ρουστίκ πιάτα με κατσίκι και αρνί.\n\n**Ποιο είναι το πιο παραδοσιακό κρητικό πιάτο;**\nΔεν υπάρχει μόνο ένα — αλλά τα εξής θεωρούνται βασικά: Αρνί αντικριστό, Γαμοπίλαφο, Ντάκος, Χόρτα (άγρια χόρτα), Καλιτσούνια.\n\n**Διαφέρει το κρητικό φαγητό από την υπόλοιπη Ελλάδα;**\nΝαι. Η κρητική κουζίνα ξεχωρίζει λόγω της έντονης χρήσης ελαιολάδου εξαιρετικής ποιότητας, της έμφασης στα άγρια χόρτα, των αργομαγειρεμένων κρεάτων και της ισχυρής σύνδεσής της με τη μεσογειακή διατροφή.\n\n**Πόσο κοστίζει ένα παραδοσιακό γεύμα σε ταβέρνα;**\nΈνα τυπικό γεύμα κοστίζει 15–25€ ανά άτομο στα περισσότερα χωριά και 25–35€ σε πιο δημοφιλείς ή παραθαλάσσιες περιοχές.\n\n**Τι ποτό ταιριάζει καλύτερα με το φαγητό της κρητικής ταβέρνας;**\nΤο χύμα κρασί (κόκκινο ή λευκό), τα τοπικά κρητικά κρασιά από την περιοχή του Ηρακλείου, και φυσικά, η Ρακή (που σερβίρεται μετά το γεύμα)."
+        }
+      }
+    ]
+  },
+];
+

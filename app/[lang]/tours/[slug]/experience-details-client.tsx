@@ -6,11 +6,8 @@ import { usePathname, useRouter } from "next/navigation";
 import SiteHeader from "../../../../components/site-header";
 import ViatorWidget from "../../../../components/viator-widget";
 
-import {
-  siteBrand,
-  siteBrandLine,
-  type Lang,
-} from "../../../../lib/content";
+import { siteBrand, siteBrandLine } from "../../../../lib/site-config";
+import { type Lang } from "../../../../lib/locale";
 import {
   type ExperienceBusiness,
   type ExperienceLanding,

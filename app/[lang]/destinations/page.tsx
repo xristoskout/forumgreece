@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
-import { destinations } from '../../../lib/content';
+import { destinations } from '../../../lib/destinations-data';
 import SiteHeader from '../../../components/site-header';
 import DestinationsClient from './destinations-client';
-import { Lang, isLang } from '../../../lib/content';
+import { Lang, isLang } from '../../../lib/locale';
 
 type Props = {
   params: Promise<{ lang: string }>;

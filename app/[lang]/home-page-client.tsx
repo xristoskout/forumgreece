@@ -3,16 +3,14 @@
 import Link from "next/link";
 import Image from "next/image";
 import SiteHeader from "../../components/site-header";
-import {
-  Lang,
-  categories,
-  communities,
-  destinations,
-  food,
-  hotels,
-  travelInfoGuides,
-  tours,
-} from "../../lib/content";
+import { Lang } from "../../lib/locale";
+import { categories } from "../../lib/site-config";
+import { communities } from "../../lib/communities-data";
+import { destinations } from "../../lib/destinations-data";
+import { food } from "../../lib/food-data";
+import { hotels } from "../../lib/hotels-data";
+import { travelInfoGuides } from "../../lib/travel-info-data";
+import { tours } from "../../lib/tours-data";
 import type { HomeContent } from "../../lib/home-translations";
 
 type HomePageClientProps = {

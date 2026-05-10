@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import SiteHeader from "../../../../components/site-header";
-import { destinations, hotels } from "../../../../lib/content";
+import { destinations } from "../../../../lib/destinations-data";
+import { hotels } from "../../../../lib/hotels-data";
 
 type Lang = "en" | "el";
 

@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
-import { hotels } from '../../../../lib/content';
+import { hotels } from '../../../../lib/hotels-data';
 import SiteHeader from '../../../../components/site-header';
 import HotelsDirectoryClient from './hotels-directory-client';
-import { Lang, isLang } from '../../../../lib/content';
+import { Lang, isLang } from '../../../../lib/locale';
 
 type Props = {
   params: Promise<{ lang: string }>;

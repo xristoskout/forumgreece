@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import SiteHeader from "../../../components/site-header";
-import { food } from "../../../lib/content";
+import { food } from "../../../lib/food-data";
 
 type Lang = "en" | "el";
 

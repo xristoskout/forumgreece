@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
-import { tours } from '../../../../lib/content';
+import { tours } from '../../../../lib/tours-data';
 import SiteHeader from '../../../../components/site-header';
 import ToursDirectoryClient from './tours-directory-client';
-import { Lang, isLang } from '../../../../lib/content';
+import { Lang, isLang } from '../../../../lib/locale';
 
 type Props = {
   params: Promise<{ lang: string }>;

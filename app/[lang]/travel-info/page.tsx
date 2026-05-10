@@ -4,12 +4,9 @@ import Link from "next/link";
 import Image from "next/image";
 import SiteHeader from "../../../components/site-header";
 import { usePathname, useRouter } from "next/navigation";
-import {
-  type Lang,
-  siteBrand,
-  siteBrandLine,
-  travelInfoGuides,
-} from "../../../lib/content";
+import { type Lang } from "../../../lib/locale";
+import { siteBrand, siteBrandLine } from "../../../lib/site-config";
+import { travelInfoGuides } from "../../../lib/travel-info-data";
 
 export default function TravelInfoHubPage() {
   const pathname = usePathname();

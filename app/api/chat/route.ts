@@ -5,13 +5,11 @@ import {
   createUIMessageStream 
 } from 'ai';
 import { google } from '@ai-sdk/google';
-import { 
-  destinations, 
-  hotels, 
-  food, 
-  tours, 
-  travelInfoGuides 
-} from '../../../lib/content';
+import { destinations } from '../../../lib/destinations-data';
+import { hotels } from '../../../lib/hotels-data';
+import { food } from '../../../lib/food-data';
+import { tours } from '../../../lib/tours-data';
+import { travelInfoGuides } from '../../../lib/travel-info-data';
 import { experienceBusinesses } from '../../../lib/experiences';
 import { checkRateLimit, getIP } from '../../../lib/rate-limit';
 
