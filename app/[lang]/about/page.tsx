@@ -1,12 +1,8 @@
-"use client";
-
 import type { Metadata } from 'next';
-import { usePathname } from 'next/navigation';
-import SiteHeader from "../../../components/site-header";
-import Image from 'next/image';
 import Link from 'next/link';
-import { Lang } from "../../../lib/locale";
-import { useLocale } from "../../../lib/useLocale";
+import Image from 'next/image';
+import SiteHeader from "../../../components/site-header";
+import { Lang, isLang, withLang } from "../../../lib/locale";
 import { SITE_URL } from "../../../lib/content";
 
 const staticText = {
@@ -57,11 +53,12 @@ const staticText = {
 };
 
 type Props = {
-  params: { lang: string };
+  params: Promise<{ lang: string }>;
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const lang = (params.lang === "el" ? "el" : "en") as Lang;
+  const { lang: raw } = await params;
+  const lang = isLang(raw) ? raw : "en";
   const pageTitle = staticText.title[lang];
   const description = staticText.subtitle[lang];
 
@@ -72,18 +69,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     metadataBase: new URL(SITE_URL),
     title: pageTitle,
-    description: description,
+    description,
     alternates: {
       canonical: canonicalUrl,
       languages: {
         en: enUrl,
         el: elUrl,
-        'x-default': enUrl,
+        "x-default": enUrl,
       },
     },
     openGraph: {
       title: pageTitle,
-      description: description,
+      description,
       url: canonicalUrl,
       type: "website",
       images: [
@@ -98,16 +95,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     twitter: {
       card: "summary_large_image",
       title: pageTitle,
-      description: description,
+      description,
       images: [`${SITE_URL}/images/hero/greece-main.webp`],
     },
   };
 }
 
-
-export default function AboutPage() {
-  const { lang } = useLocale();
-
+export default async function AboutPage({ params }: Props) {
+  const { lang: raw } = await params;
+  const lang = isLang(raw) ? raw : "en";
   const t = staticText;
 
   return (
