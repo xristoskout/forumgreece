@@ -23,9 +23,13 @@ export function useLocale() {
     return stripped || "/";
   }
 
+  function withLangHash(hash: string) {
+    return `/${lang}${hash}`;
+  }
+
   function switchLanguage(nextLang: Lang) {
     router.push(withLang(pathname, nextLang));
   }
 
-  return { lang, pathname, router, stripLocale, withLang, switchLanguage };
+  return { lang, pathname, router, stripLocale, withLang: (path: string) => withLang(path, lang), withLangHash, switchLanguage };
 }

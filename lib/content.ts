@@ -1,5 +1,9 @@
 export type Lang = "en" | "el";
 
+export function isLang(value: string): value is Lang {
+  return value === "en" || value === "el";
+}
+
 export type Localized = {
   en: string;
   el: string;
