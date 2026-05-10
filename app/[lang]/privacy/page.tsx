@@ -71,35 +71,88 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+import { usePathname } from 'next/navigation';
+import SiteHeader from "../../../components/site-header";
+import type { Metadata } from 'next';
+import Link from 'next/link';
+import { Lang, isLang, useLocale, withLang } from "../../../lib/useLocale";
+import { SITE_URL } from "../../../lib/content";
+
+const staticText = {
+  title: {
+    en: "Terms of Use & Privacy Policy",
+    el: "Όροι Χρήσης & Πολιτική Απορρήτου"
+  },
+  updated: {
+    en: "Last updated: April 2026",
+    el: "Τελευταία ενημέρωση: Απρίλιος 2026"
+  },
+  users_heading: {
+    en: "For Users",
+    el: "Για τους Χρήστες"
+  },
+  businesses_heading: {
+    en: "For Businesses",
+    el: "Για τις Επιχειρήσεις"
+  },
+  back_home: {
+    en: "Back to Home",
+    el: "Επιστροφή στην Αρχική"
+  }
+};
+
+type Props = {
+  params: { lang: string };
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const lang = isLang(params.lang) ? params.lang : 'en';
+  const pageTitle = staticText.title[lang];
+  const description = lang === 'el'
+    ? "Διαβάστε τους Όρους Χρήσης και την Πολιτική Απορρήτου του GoGreeceNow."
+    : "Read the Terms of Use and Privacy Policy for GoGreeceNow.";
+
+  const canonicalUrl = `${SITE_URL}/${lang}/privacy`;
+  const enUrl = `${SITE_URL}/en/privacy`;
+  const elUrl = `${SITE_URL}/el/privacy`;
+
+  return {
+    metadataBase: new URL(SITE_URL),
+    title: pageTitle,
+    description: description,
+    alternates: {
+      canonical: canonicalUrl,
+      languages: {
+        en: enUrl,
+        el: elUrl,
+        'x-default': enUrl,
+      },
+    },
+    openGraph: {
+      title: pageTitle,
+      description: description,
+      url: canonicalUrl,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: pageTitle,
+      description: description,
+    },
+  };
+}
+
 export default function PrivacyPage() {
-  const pathname = usePathname();
-  const lang: Lang = isLang(pathname.split("/")[1]) ? pathname.split("/")[1] as Lang : "en";
+  const { lang, withLang } = useLocale();
 
   const t = staticText;
-    updated: {
-      en: "Last updated: April 2026",
-      el: "Τελευταία ενημέρωση: Απρίλιος 2026"
-    },
-    users_heading: {
-      en: "For Users",
-      el: "Για τους Χρήστες"
-    },
-    businesses_heading: {
-      en: "For Businesses",
-      el: "Για τις Επιχειρήσεις"
-    },
-    back_home: {
-      en: "Back to Home",
-      el: "Επιστροφή στην Αρχική"
-    }
-  };
 
   const sections_users = [
     {
       title: { en: "1 | GENERAL", el: "1 | ΓΕΝΙΚΑ" },
       text: {
         en: "Welcome to the GoGreeceNow platform. Access to and use of the Website, products, and services available through this Website (hereinafter the \"Services\") are subject to the following terms and conditions (hereinafter \"Terms of Use\"). Using the Services implies unconditional acceptance of the Terms of Use, as they apply from time to time. The company reserves the right to change the Terms of Use at its discretion and without prior notice.\n\nAccess to GoGreeceNow is permitted on a temporary basis, and the company reserves the right to withdraw or amend the Services without notice. The company will not be liable if for any reason this Website is unavailable at any time or for any period.\n\nThe company makes every effort to ensure that the content of GoGreeceNow includes complete, accurate, clear, valid, informative, up-to-date, truthful, and non-misleading information. In no event is the company liable, committed or guaranteeing the safety and content. Users of GoGreeceNow accept the possibility of inability to control the entire content and services by the company.\n\nThe use of GoGreeceNow by any user is at their sole risk. The content does not constitute and cannot in any case be interpreted as a provision of advice, direct or indirect encouragement to users to take any action.",
-        el: "Καλώς ήρθατε στην πλατφόρμα GoGreeceNow. H πρόσβαση και η χρήση της Ιστοσελίδας, των προϊόντων και των υπηρεσιών που διατίθενται μέσω αυτής (εφεξής «Υπηρεσίες») υπόκεινται στους ακόλουθους όρους και προϋποθέσεις (εφεξής «Όροι Χρήσης»). Η χρήση των Υπηρεσιών, συνεπάγεται με την ανεπιφύλακτη αποδοχή των Όρων Χρήσης, όπως αυτοί ισχύουν κάθε φορά. Η εταιρία διατηρεί το δικαίωμα να αλλάξει τους Όρους Χρήσης ανάλογα με την κρίση της και χωρίς πρότερη ειδοποίηση.\n\nΗ πρόσβαση στο GoGreeceNow επιτρέπεται κατά τη διάρκεια λειτουργίας του, όμως η εταιρία διατηρεί το δικαίωμα να διακόψει ή να αποσύρει τις Υπηρεσίες της, χωρίς προηγουμένη ενημέρωση. Η εταιρία δεν φέρει καμία ευθύνη σε περίπτωση που υπάρχει αδυναμία πρόσβασης στο σύνολο ή μέρος των προβαλλόμενων υπηρεσιών για οποιοδήποτε λόγο.\n\nΗ εταιρία καταβάλει κάθε δυνατή προσπάθεια προκειμένου να εξασφαλίσει ότι το περιεχόμενο του GoGreeceNow περιλαμβάνει πλήρεις, ακριβείς, σαφείς, έγκυρες, κατατοπιστικές, επίκαιρες, αληθείς και μη παραπλανητικές πληροφορίες. Σε καμία περίπτωση δεν ευθύνεται, δεσμεύεται ή εγγυάται σχετικά με την ασφάλεια και το περιεχόμενο. Ως εκ τούτου, οι χρήστες του GoGreeceNow αποδέχονται την πιθανότητα αδυναμίας ελέγχου εκ μέρους της εταιρίας του συνόλου του περιεχομένου του και των υπηρεσιών του.\n\nΗ χρήση του GoGreeceNow από κάθε χρήστη γίνεται με δική του αποκλειστικά ευθύνη και το περιεχόμενό του δεν αποτελεί και δεν δύναται σε καμία περίπτωση να ερμηνευθεί ως παροχή συμβουλής, άμεσης ή έμμεσης προτροπής των χρηστών να προβούν σε οποιαδήποτε πράξη ή ενέργεια. Οι χρήστες είναι αποκλειστικά υπεύθυνοι για τον εξοπλισμό τους."
+        el: "Καλώς ήρθατε στην πλατφόρμα GoGreeceNow. H πρόσβαση και η χρήση της Ιστοσελίδας, των προϊόντων και των υπηρεσιών που διατίθενται μέσω αυτής (εφεξής «Υπηρεσίες») υπόκεινται στους ακόλουθους όρους και προϋποθέσεις (εφεξής «Όροι Χρήσης»). Η χρήση των Υπηρεσιών, συνεπάγεται με την ανεπιφύλακτη αποδοχή των Όρων Χρήσης, όπως αυτοί ισχύουν κάθε φορά. Η εταιρία διατηρεί το δικαίωμα να αλλάξει τους Όρους Χρήσης ανάλογα με την κρίση της και χωρίς πρότερη ειδοποίηση.\n\nΗ πρόσβαση στο GoGreeceNow επιτρέπεται κατά τη διάρκεια λειτουργίας του, όμως η εταιρία διατηρεί το δικαίωμα να διακόψει ή να αποσύρει τις Υπηρεσίες της, χωρίς προηγουμένη ενημέρωση. Η εταιρία δεν φέρει καμία ευθύνη σε περίπτωση που υπάρχει αδυναμία πρόσβασης στο σύνολο ή μέρος των προβαλλόμενων υπηρεσιών για οποιοδήποτε λόγο.\n\nΗ εταιρία καταβάλει κάθε δυνατή προσπάθεια προκειμένου να εξασφαλίσει ότι το περιεχόμενο του GoGreeceNow περιλαμβάνει πλήπρεις, ακριβείς, σαφείς, έγκυρες, κατατοπιστικές, επίκαιρες, αληθείς και μη παραπλανητικές πληροφορίες. Σε καμία περίπτωση δεν ευθύνεται, δεσμεύεται ή εγγυάται σχετικά με την ασφάλεια και το περιεχόμενο. Ως εκ τούτου, οι χρήστες του GoGreeceNow αποδέχονται την πιθανότητα αδυναμίας ελέγχου εκ μέρους της εταιρίας του συνόλου του περιεχομένου του και των υπηρεσιών του.\n\nΗ χρήση του GoGreeceNow από κάθε χρήστη γίνεται με δική του αποκλειστικά ευθύνη και το περιεχόμενό του δεν αποτελεί και δεν δύναται σε καμία περίπτωση να ερμηνευθεί ως παροχή συμβουλής, άμεσης ή έμμεσης προτροπής των χρηστών να προβούν σε οποιαδήποτε πράξη ή ενέργεια. Οι χρήστες είναι αποκλειστικά υπεύθυνοι για τον εξοπλισμό τους."
       }
     },
     {

@@ -17,7 +17,7 @@ export function withLang(path: string, lang: Lang) {
 export function useLocale() {
   const pathname = usePathname();
   const router = useRouter();
-  const lang: Lang = pathname.startsWith("/el") ? "el" : "en";
+  const lang: Lang = isLang(pathname.split("/")[1]) ? pathname.split("/")[1] as Lang : "en";
 
   function stripLocale(path: string) {
     const stripped = path.replace(/^\/(en|el)(?=\/|$)/, "");
