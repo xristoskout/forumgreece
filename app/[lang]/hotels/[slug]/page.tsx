@@ -1,19 +1,12 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import ReactDOM from "react-dom";
-import { hotels } from "../../../../lib/content";
+import { hotels, SITE_URL } from "../../../../lib/content";
 import HotelDetailsClient from "./hotel-details-client";
-
-const supportedLangs = ["en", "el"] as const;
-type Lang = (typeof supportedLangs)[number];
+import { Lang, isLang, supportedLangs } from "../../../../lib/useLocale";
 
 type HotelPageProps = {
   params: Promise<{ lang: string; slug: string }>;
 };
-
-function isValidLang(value: string): value is Lang {
-  return supportedLangs.includes(value as Lang);
-}
 
 export async function generateStaticParams() {
   return supportedLangs.flatMap((lang) =>
@@ -27,13 +20,8 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: HotelPageProps): Promise<Metadata> {
-  const { lang, slug } = await params;
-
-  if (!isValidLang(lang)) {
-    return {
-      title: "Page Not Found | GoGreeceNow",
-    };
-  }
+  const { lang: rawLang, slug } = await params;
+  const lang = isLang(rawLang) ? rawLang : 'en';
 
   const item = hotels.find((hotel) => hotel.slug === slug);
 
@@ -73,10 +61,23 @@ export async function generateMetadata({
       }
     : null;
 
+  const canonicalUrl = `${SITE_URL}/${lang}/hotels/${slug}`;
+  const enUrl = `${SITE_URL}/en/hotels/${slug}`;
+  const elUrl = `${SITE_URL}/el/hotels/${slug}`;
+
   return {
+    metadataBase: new URL(SITE_URL),
     title: { absolute: hotelTitle },
     description,
     robots: isComingSoon ? { index: false, follow: true } : undefined,
+    alternates: {
+      canonical: canonicalUrl,
+      languages: {
+        en: enUrl,
+        el: elUrl,
+        'x-default': enUrl,
+      },
+    },
     openGraph: {
       title: hotelTitle,
       description,
@@ -102,11 +103,8 @@ export async function generateMetadata({
 }
 
 export default async function HotelPage({ params }: HotelPageProps) {
-  const { lang, slug } = await params;
-
-  if (!isValidLang(lang)) {
-    notFound();
-  }
+  const { lang: rawLang, slug } = await params;
+  const lang = isLang(rawLang) ? rawLang : 'en';
 
   const item = hotels.find((entry) => entry.slug === slug);
 
@@ -115,7 +113,8 @@ export default async function HotelPage({ params }: HotelPageProps) {
   }
 
   // Preload the hotel hero LCP image
-  ReactDOM.preload(item.image, { as: "image", fetchPriority: "high" });
+  // The Next.js Image component handles LCP automatically, so ReactDOM.preload is not typically necessary.
+  // ReactDOM.preload(item.image, { as: "image", fetchPriority: "high" });
 
   return <HotelDetailsClient lang={lang} slug={slug} item={item} />;
 }

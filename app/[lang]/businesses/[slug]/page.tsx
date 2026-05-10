@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { experienceBusinesses } from "../../../../lib/experiences";
+import { experienceBusinesses, SITE_URL } from "../../../../lib/experiences";
 import BusinessDetailsClient from "./business-details-client";
-import { Lang, isLang } from "../../../../lib/useLocale";
+import { Lang, isLang, supportedLangs } from "../../../../lib/useLocale";
 
 type BusinessPageProps = {
   params: Promise<{ lang: string; slug: string }>;
@@ -20,9 +20,10 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: BusinessPageProps): Promise<Metadata> {
-  const { lang, slug } = await params;
+  const { lang: rawLang, slug } = await params;
+  const lang = isLang(rawLang) ? rawLang : 'en';
 
-  if (!isValidLang(lang)) {
+  if (!isLang(lang)) {
     return {
       title: "Page Not Found | GoGreeceNow",
       description: "The requested page could not be found.",
