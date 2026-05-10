@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { experienceBusinesses, SITE_URL } from "../../../../lib/experiences";
+import { experienceBusinesses } from "../../../../lib/experiences";
+import { SITE_URL } from "../../../../lib/content"; // SITE_URL should come from lib/content.ts
 import BusinessDetailsClient from "./business-details-client";
 import { Lang, isLang, supportedLangs } from "../../../../lib/useLocale";
 
@@ -22,13 +23,6 @@ export async function generateMetadata({
 }: BusinessPageProps): Promise<Metadata> {
   const { lang: rawLang, slug } = await params;
   const lang = isLang(rawLang) ? rawLang : 'en';
-
-  if (!isLang(lang)) {
-    return {
-      title: "Page Not Found | GoGreeceNow",
-      description: "The requested page could not be found.",
-    };
-  }
 
   const business = experienceBusinesses.find((item) => item.slug === slug);
 
@@ -54,9 +48,12 @@ export async function generateMetadata({
   const pageTitle = `${business.name} | GoGreeceNow`;
 
   return {
+    metadataBase: new URL(SITE_URL),
     title: { absolute: pageTitle },
     description,
     openGraph: {
+      type: "website",
+      url: `${SITE_URL}/${lang}/businesses/${slug}`,
       title: pageTitle,
       description,
       images: [
@@ -74,15 +71,20 @@ export async function generateMetadata({
       description,
       images: [business.image],
     },
+    alternates: {
+      canonical: `${SITE_URL}/${lang}/businesses/${slug}`,
+      languages: {
+        en: `${SITE_URL}/en/businesses/${slug}`,
+        el: `${SITE_URL}/el/businesses/${slug}`,
+        'x-default': `${SITE_URL}/en/businesses/${slug}`,
+      },
+    },
   };
 }
 
 export default async function BusinessPage({ params }: BusinessPageProps) {
-  const { lang, slug } = await params;
-
-  if (!isValidLang(lang)) {
-    notFound();
-  }
+  const { lang: rawLang, slug } = await params;
+  const lang = isLang(rawLang) ? rawLang : 'en';
 
   const business = experienceBusinesses.find((item) => item.slug === slug);
 
