@@ -920,39 +920,200 @@ export const hotels: HotelCard[] = [
   {
     slug: "zakynthos",
     name: "Where to Stay in Zakynthos",
-    place: "Zakynthos",
+    place: "Zakynthos — Ionian Islands",
     info: {
-      en: "Discover the best areas and hotels to stay in Zakynthos.",
-      el: "Ανακαλύψτε τις καλύτερες περιοχές και ξενοδοχεία για διαμονή στη Zakynthos.",
+      en: "Find the best places to stay in Zakynthos — from the authentic capital Zante Town and the family-friendly sands of Tsilivi to the famous nightlife of Laganas, the wild Vasilikos Peninsula and the quiet north coast of Alykes. A complete guide to Zakynthos hotels and areas.",
+      el: "Βρείτε τα καλύτερα μέρη για διαμονή στη Ζάκυνθο — από την αυθεντική πρωτεύουσα Ζάκυνθο Πόλη και τις οικογενειακές αμμουδιές του Τσιλιβί έως τη διάσημη νυχτερινή ζωή του Λαγανά, την άγρια χερσόνησο του Βασιλικού και την ήσυχη βόρεια ακτή των Αλυκών.",
     },
     image: "/images/zakynthos.webp",
-    badge: "Upcoming Guide",
+    badge: "Featured stay",
     overview: {
-      en: "A detailed guide on where to stay in Zakynthos is coming soon. For now, explore our interactive map to find the best accommodation options.",
-      el: "Ένας αναλυτικός οδηγός για το πού να μείνετε στη Zakynthos έρχεται σύντομα. Προς το παρόν, εξερευνήστε τον διαδραστικό μας χάρτη για να βρείτε τις καλύτερες επιλογές διαμονής.",
+      en: "Choosing where to stay in Zakynthos shapes the entire experience — from the Venetian-influenced capital of Zante Town and the organised family sands of Tsilivi to the famous nightlife strip of Laganas, the unspoiled olive-grove peninsula of Vasilikos and the calm, shallow beaches of the north coast around Alykes.",
+      el: "Η επιλογή διαμονής στη Ζάκυνθο καθορίζει ολόκληρη την εμπειρία — από την ενετική πρωτεύουσα και τις οργανωμένες οικογενειακές αμμουδιές του Τσιλιβί έως τη διάσημη νυχτερινή ζωή του Λαγανά, την ανέγγιχτη χερσόνησο του Βασιλικού με τους ελαιώνες και τις ήρεμες ρηχές παραλίες της βόρειας ακτής γύρω από τις Αλυκές.",
+    },
+    description: {
+      en: "Zakynthos — known internationally as Zante — is one of the most varied islands in the Ionian Sea, and the choice of where to stay determines almost everything about the kind of holiday you have. The island ranges from a lively, genuinely Greek capital with Venetian architecture and an active harbor, to organised family resorts on long sandy beaches, one of the most energetic nightlife destinations in Europe, and a protected southern peninsula of olive groves, loggerhead turtle nesting grounds and some of the most spectacular scenery in Greece. It also happens to be the island closest to Shipwreck Beach — Navagio — one of the most photographed places on earth, accessible by boat from the northwest coast. The right base makes all of this accessible; the wrong one can leave you feeling stranded or overwhelmed.",
+      el: "Η Ζάκυνθος είναι ένα από τα πιο ποικιλόμορφα νησιά του Ιονίου και η επιλογή διαμονής καθορίζει σχεδόν τα πάντα. Από μια ζωντανή, αυθεντικά ελληνική πρωτεύουσα με ενετική αρχιτεκτονική και οργανωμένα οικογενειακά θέρετρα έως έναν από τους πιο ενεργητικούς προορισμούς νυχτερινής ζωής στην Ευρώπη και μια προστατευμένη χερσόνησο με ελαιώνες και παραλίες ωοτοκίας της θαλάσσιας χελώνας caretta-caretta. Εδώ βρίσκεται και το Ναυάγιο — ένα από τα πιο φωτογραφημένα μέρη στη γη.",
     },
     features: {
-      en: ["Hotels", "Resorts", "Apartments"],
-      el: ["Ξενοδοχεία", "Resorts", "Διαμερίσματα"],
+      en: ["Zante Town (Authentic & Central)", "Tsilivi (Families)", "Laganas (Nightlife)", "Vasilikos (Nature & Peace)", "Alykes & North (Relaxed)", "Loggerhead turtle nesting beaches", "Boat trips to Shipwreck Beach (Navagio)", "Zakynthos National Marine Park"],
+      el: ["Ζάκυνθος Πόλη (Αυθεντική & Κεντρική)", "Τσιλιβί (Οικογένειες)", "Λαγανάς (Νυχτερινή ζωή)", "Βασιλικός (Φύση & Ηρεμία)", "Αλυκές & Βορράς (Χαλαρά)", "Παραλίες ωοτοκίας caretta-caretta", "Εκδρομές στο Ναυάγιο", "Εθνικό Θαλάσσιο Πάρκο Ζακύνθου"],
+    },
+    sections: [
+      {
+        title: { en: "1. Zakynthos Town (Zante Town): The most authentic and well-connected base", el: "1. Ζάκυνθος Πόλη: Η πιο αυθεντική και καλά συνδεδεμένη βάση" },
+        content: {
+          en: "Zakynthos Town — universally known as Zante Town — is the capital and main port of the island, and consistently the most underrated base for independent travelers. The town was almost entirely destroyed by the devastating 1953 earthquake but was rebuilt in Venetian style, and its waterfront, pedestrian lanes, neoclassical churches and broad Solomos Square — named after Dionysios Solomos, who wrote the Greek national anthem — retain genuine character and urban energy. The promenade between Solomos Square and the Church of Agios Dionysios is one of the most pleasant evening walks on the island. The Byzantine Museum here houses a remarkable collection of post-Byzantine icons rescued from churches destroyed in the earthquake. As the hub of the island's bus network and the departure point for the ferry to the Peloponnese, Zakynthos Town gives you more flexibility than any other base without a car. The beaches immediately around town are modest, but Tsilivi is just fifteen minutes north and the Vasilikos peninsula twenty minutes south. Hotels range from well-positioned harbor-front addresses to boutique rooms on the quieter inland streets, and prices are noticeably more reasonable than the resort areas.",
+          el: "Η Ζάκυνθος Πόλη είναι η πρωτεύουσα και το κύριο λιμάνι του νησιού, και η πιο υποτιμημένη βάση για ανεξάρτητους ταξιδιώτες. Η πόλη καταστράφηκε σχεδόν ολοκληρωτικά από τον σεισμό του 1953 αλλά ξαναχτίστηκε σε ενετικό ρυθμό. Η πλατεία Σολωμού και η εκκλησία του Αγίου Διονυσίου είναι από τα ωραιότερα σημεία. Ως κόμβος λεωφορείων και λιμάνι, η πόλη προσφέρει μεγαλύτερη ευελιξία από οποιαδήποτε άλλη βάση. Τα ξενοδοχεία έχουν καλύτερες τιμές από τα θέρετρα.",
+        }
+      },
+      {
+        title: { en: "2. Tsilivi: The best all-round base for families", el: "2. Τσιλιβί: Η καλύτερη all-round βάση για οικογένειες" },
+        content: {
+          en: "Tsilivi sits on the east coast of Zakynthos, five kilometres north of the capital, and is the island's most consistently recommended base for families. Its sandy beach stretches for over two kilometres with calm, clear water and a well-organised promenade of tavernas, beach bars and water sports operators directly behind the shoreline. The atmosphere here is lively but measured — active enough to feel like a proper resort, calm enough that it never tips into the intensity of Laganas. The village centre has a good mix of restaurants serving both Greek and international food, and the bus to Zakynthos Town runs regularly throughout the day. The nearby beaches of Bouka and Gaidaros provide quieter swimming alternatives for families who want to escape the main beach crowd. Hotels in Tsilivi cover the full range from family-friendly studios and apartments to mid-range resorts and some of the island's most complete four-star properties with pools, spas and children's facilities. It is the first recommendation for any family visiting Zakynthos for the first time.",
+          el: "Το Τσιλιβί βρίσκεται στην ανατολική ακτή, πέντε χιλιόμετρα βόρεια της πρωτεύουσας, και είναι η πιο σταθερή σύσταση για οικογένειες. Η αμμώδης παραλία εκτείνεται για πάνω από δύο χιλιόμετρα. Η ατμόσφαιρα είναι ζωντανή αλλά ήρεμη. Τα ξενοδοχεία καλύπτουν όλες τις κατηγορίες. Είναι η πρώτη σύσταση για κάθε οικογένεια.",
+        }
+      },
+      {
+        title: { en: "3. Laganas: Europe's most famous party resort — and more", el: "3. Λαγανάς: Το πιο διάσημο party resort της Ευρώπης" },
+        content: {
+          en: "Laganas sits on the southern coast of Zakynthos and has been one of Europe's most celebrated summer nightlife destinations for decades. Its main strip — a continuous stretch of over a hundred bars, clubs and beach venues — draws tens of thousands of young visitors every summer, and the energy from early evening until dawn is unlike almost anywhere else in Greece. Superclubs like Rescue and CherryBay, foam parties, beach events and the concentrated density of the nightlife strip give Laganas a character entirely its own. The beach itself is long and sandy, and the daytime atmosphere is more relaxed than the nighttime reputation suggests. It is worth being direct about who Laganas suits and who it does not: if you are traveling in your twenties and want a high-energy, social, sun-and-nightlife holiday at affordable prices, Laganas is excellent value and enormous fun. If you are traveling as a couple seeking quiet, as a family, or as anyone who needs to sleep before 3am, it is genuinely not the right choice. Rooms in central Laganas are frequently disturbed by noise well into the early hours throughout the peak season. Booking accommodation a short distance from the main strip significantly improves the experience for visitors who want the beach without the full nightlife intensity.",
+          el: "Ο Λαγανάς είναι εδώ και δεκαετίες ένας από τους πιο διάσημους προορισμούς νυχτερινής ζωής στην Ευρώπη. Η παραλία είναι μεγάλη και αμμώδης. Αν είστε στα 20s σας και θέλετε διακοπές ήλιου και διασκέδασης, ο Λαγανάς είναι εξαιρετική επιλογή. Αν ταξιδεύετε ως ζευγάρι ή οικογένεια, δεν είναι η κατάλληλη επιλογή.",
+        }
+      },
+      {
+        title: { en: "4. Vasilikos Peninsula: The most beautiful and peaceful corner of the island", el: "4. Χερσόνησος Βασιλικού: Η πιο όμορφη και ήσυχη γωνιά του νησιού" },
+        content: {
+          en: "The Vasilikos Peninsula extends southward from Zakynthos Town into the Zakynthos National Marine Park and is the most naturally extraordinary part of the island. Its landscape of endless olive groves, undeveloped coastline and crystal-clear water is completely distinct from the resort areas to the north, and the combination of spectacular beaches — Gerakas, Porto Roma, Banana Beach, Dafni and the hidden coves of the peninsula's eastern shore — makes it the strongest base for travelers who want nature, beauty and peace as their primary experience. Gerakas Beach in particular is one of the finest in the Ionian Islands: a long arc of pale sand backed by low cliffs, with exceptionally clear water and an important loggerhead turtle nesting area that restricts access from dusk to dawn and bans watersports entirely to protect the eggs. Banana Beach, by contrast, is well-organised for watersports and attracts a more active crowd. Accommodation across the peninsula ranges from simple studios among the olive trees to boutique villas and design-forward resort properties with infinity pools. A car is essential here — distances between beaches and services are too large for walking — but for travelers with their own transport, Vasilikos consistently receives the strongest reviews of any area on the island from visitors who return year after year.",
+          el: "Η χερσόνησος του Βασιλικού εκτείνεται νότια προς το Εθνικό Θαλάσσιο Πάρκο. Οι ατελείωτοι ελαιώνες και οι ανέγγιχτες ακτές δημιουργούν το πιο όμορφο φυσικό τοπίο του νησιού. Το Γέρακας είναι μια από τις ωραιότερες παραλίες του Ιονίου. Απαραίτητο το αυτοκίνητο. Ο Βασιλικός έχει τις καλύτερες κριτικές από επισκέπτες που επιστρέφουν χρόνο με τον χρόνο.",
+        }
+      },
+      {
+        title: { en: "5. Alykes and the North Coast: Calm beaches, shallow water and a relaxed pace", el: "5. Αλυκές και Βόρεια Ακτή: Ήρεμες παραλίες, ρηχά νερά και χαλαρός ρυθμός" },
+        content: {
+          en: "The northern stretch of Zakynthos's east coast — encompassing Alykes, Alykanas and the quieter villages beyond — is the most genuinely relaxed part of the island, and one of the most overlooked by first-time visitors. Alykes has the longest sandy beach on the eastern coast, with calm, shallow water ideal for families with young children, and a distinctive salt lake behind the beach that attracts flamingos in spring. The village has a full range of tavernas, bars and accommodation without the intensity of Tsilivi or the noise of Laganas. A car makes the north coast significantly more enjoyable, opening up the mountain villages of the interior, the Byzantine monastery of Agios Georgios at Kryonerida and the rugged western cliffs. For couples and families who want a straightforward, honest beach holiday without the pressures of the main resort zones, Alykes and the north coast offer the best balance of amenities and relaxation on the island.",
+          el: "Ο βόρειος τμήμα της ανατολικής ακτής — Αλυκές, Αλυκανάς και τα πιο ήσυχα χωριά — είναι το πιο χαλαρό μέρος του νησιού. Οι Αλυκές έχουν τη μεγαλύτερη αμμώδη παραλία στην ανατολική ακτή. Το αυτοκίνητο κάνει τη βόρεια ακτή πιο απολαυστική. Για ήσυχες οικογενειακές διακοπές, οι Αλυκές προσφέρουν την καλύτερη ισορροπία.",
+        }
+      },
+    ],
+    faq: [
+      {
+        q: { en: "Which area of Zakynthos is best for a first visit?", el: "Ποια περιοχή της Ζακύνθου είναι καλύτερη για πρώτη επίσκεψη;" },
+        a: { en: "Zakynthos Town is the most versatile first base — it gives you authentic Greek urban life, good transport connections, and easy reach of every part of the island within twenty to thirty minutes by car. For families who want to be directly on the beach from day one, Tsilivi is the stronger practical choice. Avoid Laganas as a first base unless the nightlife specifically is the main purpose of the trip.", el: "Η Ζάκυνθος Πόλη είναι η πιο ευέλικτη βάση. Για οικογένειες, το Τσιλιβί είναι καλύτερη επιλογή. Αποφύγετε τον Λαγανά εκτός αν η νυχτερινή ζωή είναι ο κύριος σκοπός." }
+      },
+      {
+        q: { en: "Can I visit Shipwreck Beach (Navagio) from any base on the island?", el: "Μπορώ να επισκεφτώ το Ναυάγιο από οποιαδήποτε βάση;" },
+        a: { en: "Yes, but the journey time varies significantly. From Zakynthos Town the drive to the northwest coast takes around 50 minutes. All boat tours to Navagio depart from the port at Agios Nikolaos on the northeast tip of the island, regardless of where you are staying. The tours typically last around two to three hours, include the Blue Caves, and run daily throughout the summer.", el: "Ναι, αλλά η διαδρομή ποικίλλει. Όλες οι εκδρομές αναχωρούν από τον Άγιο Νικόλαο. Διαρκούν 2-3 ώρες και περιλαμβάνουν και τις Γαλάζιες Σπηλιές." }
+      },
+      {
+        q: { en: "Do I need a car in Zakynthos?", el: "Χρειάζομαι αυτοκίνητο στη Ζάκυνθο;" },
+        a: { en: "For Zakynthos Town and Tsilivi, a car is optional. For the Vasilikos Peninsula, Alykes and any exploration of the island's interior, western coast or less-visited beaches, a car is essential. Arranging a rental for at least part of your stay is strongly recommended.", el: "Για την πόλη και το Τσιλιβί είναι προαιρετικό. Για τον Βασιλικό, τις Αλυκές και την εξερεύνηση του νησιού, το αυτοκίνητο είναι απαραίτητο." }
+      },
+      {
+        q: { en: "Is Zakynthos good for families with young children?", el: "Είναι η Ζάκυνθος καλή για οικογένειες;" },
+        a: { en: "Yes, particularly Tsilivi and Alykes, both of which offer long, sandy, shallow beaches with calm water and family-friendly accommodation. The Vasilikos peninsula is also excellent for families who want more space and nature. Laganas is not recommended for families.", el: "Ναι, ειδικά το Τσιλιβί και οι Αλυκές. Ο Βασιλικός είναι επίσης εξαιρετικός. Ο Λαγανάς δεν συνιστάται για οικογένειες." }
+      },
+      {
+        q: { en: "What is the best time to visit Zakynthos?", el: "Ποια είναι η καλύτερη εποχή για τη Ζάκυνθο;" },
+        a: { en: "Late May through June and September to early October are the ideal periods. The sea is warm, the island is lively without being overwhelmed, and prices are significantly lower. Peak season — particularly August — is extremely busy. The turtle nesting season runs from June to August.", el: "Τέλη Μαΐου έως Ιούνιο και Σεπτέμβριος έως αρχές Οκτωβρίου. Η περίοδος ωοτοκίας των χελωνών διαρκεί από Ιούνιο έως Αύγουστο." }
+      },
+      {
+        q: { en: "Are the loggerhead turtles (Caretta caretta) really visible in Zakynthos?", el: "Φαίνονται πραγματικά οι χελώνες caretta-caretta στη Ζάκυνθο;" },
+        a: { en: "Yes, and Zakynthos has one of the most important loggerhead turtle nesting populations in the Mediterranean. The best chances of spotting turtles in the water are on the beaches of the Vasilikos Peninsula — particularly Gerakas and Dafni — and in Laganas Bay. Hatchlings emerge between August and October. The WWF Zakynthos information centre at Gerakas Beach provides excellent guidance on how to observe the turtles without disturbing them.", el: "Ναι, η Ζάκυνθος έχει έναν από τους σημαντικότερους πληθυσμούς ωοτοκίας. Οι καλύτερες πιθανότητες είναι στον Βασιλικό και στον κόλπο του Λαγανά. Το κέντρο ενημέρωσης WWF στο Γέρακα προσφέρει χρήσιμες οδηγίες." }
+      },
+    ],
+    seo: {
+      title: {
+        en: "Where to Stay in Zakynthos | Best Areas & Hotels | GoGreeceNow",
+        el: "Πού να Μείνετε στη Ζάκυνθο | Καλύτερες Περιοχές & Ξενοδοχεία | GoGreeceNow"
+      },
+      description: {
+        en: "Find the best places to stay in Zakynthos — from the authentic capital Zante Town and the family-friendly sands of Tsilivi to the famous nightlife of Laganas, the wild Vasilikos Peninsula and the quiet north coast of Alykes. A complete guide to Zakynthos hotels and areas.",
+        el: "Βρείτε τα καλύτερα μέρη για διαμονή στη Ζάκυνθο — από την αυθεντική πρωτεύουσα Ζάκυνθο Πόλη και τις οικογενειακές αμμουδιές του Τσιλιβί έως τη διάσημη νυχτερινή ζωή του Λαγανά, την άγρια χερσόνησο του Βασιλικού και την ήσυχη βόρεια ακτή των Αλυκών."
+      }
     },
   },
   {
     slug: "rhodes",
     name: "Where to Stay in Rhodes",
-    place: "Rhodes",
+    place: "Rhodes — Dodecanese",
     info: {
-      en: "Discover the best areas and hotels to stay in Rhodes.",
-      el: "Ανακαλύψτε τις καλύτερες περιοχές και ξενοδοχεία για διαμονή στη Rhodes.",
+      en: "Find the best places to stay in Rhodes — from the UNESCO medieval Old Town and the romantic village of Lindos to the family beaches of Faliraki, the windsurfing coast of Ixia and the quiet east coast villages of Kolymbia and Pefkos. A complete guide to Rhodes hotels and areas.",
+      el: "Βρείτε τα καλύτερα μέρη για διαμονή στη Ρόδο — από την ενετική μεσαιωνική Παλιά Πόλη και το ρομαντικό χωριό της Λίνδου έως τις οικογενειακές παραλίες της Φαληράκης, την ακτή windsurfing της Ιξιάς και τα ήσυχα χωριά της ανατολικής ακτής.",
     },
     image: "/images/rhodes.webp",
-    badge: "Upcoming Guide",
+    badge: "Featured stay",
     overview: {
-      en: "A detailed guide on where to stay in Rhodes is coming soon. For now, explore our interactive map to find the best accommodation options.",
-      el: "Ένας αναλυτικός οδηγός για το πού να μείνετε στη Rhodes έρχεται σύντομα. Προς το παρόν, εξερευνήστε τον διαδραστικό μας χάρτη για να βρείτε τις καλύτερες επιλογές διαμονής.",
+      en: "Choosing where to stay in Rhodes shapes the entire experience — from the UNESCO-listed medieval Old Town and the adjacent New Town at the island's northern tip to the romantic whitewashed village of Lindos halfway down the east coast, the lively beach resort of Faliraki, the windsurfing coast of Ixia and the quieter villages of Kolymbia and Pefkos that sit between them all.",
+      el: "Η επιλογή διαμονής στη Ρόδο καθορίζει ολόκληρη την εμπειρία — από τη μεσαιωνική Παλιά Πόλη και τη Νέα Πόλη έως το ρομαντικό χωριό της Λίνδου, το ζωντανό θέρετρο της Φαληράκης, την ακτή windsurfing της Ιξιάς και τα ήσυχα χωριά Κολύμπια και Πεύκοι.",
+    },
+    description: {
+      en: "Relaxing stays, beautiful views and authentic hospitality — organized in a clear and practical way.",
+      el: "Χαλαρωτικές διαμονές, όμορφη θέα και αυθεντική φιλοξενία — οργανωμένα με σαφή και πρακτικό τρόπο.",
     },
     features: {
-      en: ["Hotels", "Resorts", "Apartments"],
-      el: ["Ξενοδοχεία", "Resorts", "Διαμερίσματα"],
+      en: ["Rhodes Old Town (UNESCO Medieval City)", "Rhodes New Town (Convenient & Connected)", "Lindos (Romantic & Historic)", "Faliraki (Beach & Families)", "Ixia & Ialyssos (Sunsets & Windsurfing)", "Kolymbia & Pefkos (Relaxed East Coast)", "Ancient Acropolis of Lindos", "Anthony Quinn Bay & Tsambika Beach"],
+      el: ["Παλιά Πόλη Ρόδου (Μνημείο UNESCO)", "Νέα Πόλη Ρόδου (Βολική & Συνδεδεμένη)", "Λίνδος (Ρομαντική & Ιστορική)", "Φαληράκι (Παραλία & Οικογένειες)", "Ιξιά & Ιαλυσός (Ηλιοβασιλέματα & Windsurfing)", "Κολύμπια & Πεύκοι (Χαλαρή Ανατολική Ακτή)", "Αρχαία Ακρόπολη Λίνδου", "Όρμος Άντονι Κουίν & Παραλία Τσαμπίκα"],
+    },
+    sections: [
+      {
+        title: { en: "1. Rhodes Old Town: The most extraordinary base in the Dodecanese", el: "1. Παλιά Πόλη Ρόδου: Η πιο εντυπωσιακή βάση στα Δωδεκάνησα" },
+        content: {
+          en: "The Old Town of Rhodes is one of the most remarkable places to stay in Greece — a fully intact medieval city enclosed by 4-kilometre walls built by the Knights of St John in the 14th century, where Byzantine churches, Ottoman mosques, Gothic palaces and Venetian fountains occupy the same cobblestone lanes. The Palace of the Grand Master of the Knights of Rhodes, the Street of the Knights — the best-preserved medieval street in Europe — and the Archaeological Museum are all within the walls and within easy walking distance of each other. Staying inside the Old Town puts you inside this living monument rather than visiting it as a day tripper. Hotels here range from simple guesthouses and boutique rooms to extraordinary luxury conversions inside genuine medieval buildings — restored knights' mansions with stone vaulted ceilings, private courtyards and exceptional character. The Old Town has no beach of its own, but Elli Beach in the New Town is a short walk through the walls. The atmosphere changes dramatically between day and afternoon: the Old Town fills with visitors during daylight hours, then empties in the evening when it becomes a more intimate, candlelit version of itself with excellent restaurants and a genuine sense of occasion. It is the right choice for history lovers, couples seeking character and anyone who wants to experience Rhodes at its most extraordinary.",
+          el: "Η Παλιά Πόλη της Ρόδου είναι μια από τις πιο αξιόλογες τοποθεσίες διαμονής στην Ελλάδα — μια πλήρως διατηρημένη μεσαιωνική πόλη. Το Παλάτι του Μεγάλου Μαγίστρου, η οδός Ιπποτών και το Αρχαιολογικό Μουσείο βρίσκονται εντός των τειχών. Η διαμονή εδώ σας τοποθετεί μέσα σε αυτό το ζωντανό μνημείο. Τα ξενοδοχεία κυμαίνονται από απλούς ξενώνες έως πολυτελείς μετατροπές σε αυθεντικά μεσαιωνικά κτίρια. Είναι η κατάλληλη επιλογή για λάτρεις της ιστορίας και ζευγάρια.",
+        }
+      },
+      {
+        title: { en: "2. Rhodes New Town and Mandraki: The most practical and well-connected base", el: "2. Νέα Πόλη Ρόδου και Μανδράκι: Η πιο πρακτική βάση" },
+        content: {
+          en: "The New Town of Rhodes surrounds the medieval walls on three sides and is the island's main hub for transport, services and day-to-day life. The Mandraki harbour — flanked by the windmills and the bronze deer statues that mark where the Colossus of Rhodes is said to have once stood — is one of the most recognizable waterfronts in the Aegean, and the pedestrian promenade behind it leads to Elli Beach, a long sandy stretch directly in front of the town with organised facilities and clear water. Staying in the New Town gives you the closest access to the Old Town — most hotels are within a five to fifteen-minute walk of the main gates — alongside the full range of restaurants, bars, shops and ferry connections that the capital provides. It suits first-time visitors who want both history and beach without having to choose between them, independent travelers who value transport connections, and anyone arriving without a car who wants to explore the island using the bus network that radiates from Rhodes Town. Hotels cover every price range, from hostels and budget rooms to well-positioned four-star addresses with rooftop pools and harbour views.",
+          el: "Η Νέα Πόλη περιβάλλει τα μεσαιωνικά τείχη και είναι το κύριο κέντρο μεταφορών και υπηρεσιών. Το λιμάνι του Μανδρακίου και η παραλία Έλλη προσφέρουν οργανωμένες εγκαταστάσεις. Η διαμονή εδώ δίνει κοντινή πρόσβαση στην Παλιά Πόλη. Είναι κατάλληλη για επισκέπτες που θέλουν ιστορία και παραλία χωρίς να διαλέξουν.",
+        }
+      },
+      {
+        title: { en: "3. Lindos: The most romantic and photogenic village on the island", el: "3. Λίνδος: Το πιο ρομαντικό χωριό του νησιού" },
+        content: {
+          en: "Lindos sits on the east coast of Rhodes, 50 kilometres south of the capital, and is widely considered the most beautiful village on the island. Its whitewashed cubic houses climb steeply up a rocky promontory to the ancient Acropolis of Lindos — a Doric temple and fortification complex perched high above two stunning bays — while the village itself is a completely car-free maze of cobblestone lanes, captain's houses with pebble-mosaic courtyards, rooftop restaurants with panoramic views and boutique shops selling ceramics and linen. The beaches of Lindos and Pallas sit directly below the village on either side of the headland, and the small, perfectly sheltered bay of St Paul's — where the apostle is said to have landed in 43 AD — is one of the most beautiful swimming spots on the island. Lindos suits couples above all other traveler types: the combination of extraordinary architecture, elevated dining with sea views and intimate scale makes it the most consistently romantic base on Rhodes. Hotels here are predominantly small boutique properties and traditional captain's houses converted into guest accommodation — there are no large resorts within the village. The price level is higher than most of the island, and peak season crowds on the Acropolis path and main village lane can be significant from mid-morning until mid-afternoon. Arriving early and staying overnight — when the day-trippers have gone — is the best way to experience Lindos at its finest.",
+          el: "Η Λίνδος βρίσκεται 50 χιλιόμετρα νότια της πρωτεύουσας. Τα ασπρισμένα σπίτια ανεβαίνουν στην αρχαία Ακρόπολη. Το χωριό είναι πεζοδρομημένο. Τα ξενοδοχεία είναι μικρές μπουτίκ και παραδοσιακά καπετανόσπιτα. Η Λίνδος είναι η πιο ρομαντική βάση της Ρόδου.",
+        }
+      },
+      {
+        title: { en: "4. Faliraki: The island's main beach resort and the east coast activity hub", el: "4. Φαληράκι: Το κύριο παραθαλάσσιο θέρετρο του νησιού" },
+        content: {
+          en: "Faliraki lies 15 kilometres south of Rhodes Town on the east coast and has evolved significantly from its reputation as a pure party resort into a more varied destination that suits a wider range of travelers. Its main beach is one of the finest on the island — a long, sandy arc with calm, shallow water, organised facilities and a full range of watersports — and the combination of a massive water park, a go-kart track and excellent family hotels makes it the strongest base for families with older children and teenagers on the island. The evening atmosphere on Bar Street (Ermou Street) remains lively and aimed at a younger crowd, but the resort has expanded enough that quieter accommodation is readily available at the southern end of the beach, away from the nightlife strip. Anthony Quinn Bay — named after the actor who filmed The Guns of Navarone here and subsequently fell in love with the island — is just two kilometres south of Faliraki and is one of the most scenic swimming spots on the east coast, a sheltered cove of exceptional clarity below dramatic pine-covered cliffs. For beach-focused travelers who want easy access to both Rhodes Town and the east coast, and the widest range of activities and accommodation on the island, Faliraki is the most practical choice.",
+          el: "Το Φαληράκι βρίσκεται 15 χιλιόμετρα νότια της πόλης. Η παραλία του είναι από τις καλύτερες στο νησί. Ο συνδυασμός υδάτινου πάρκου και οικογενειακών ξενοδοχείων το καθιστά την καλύτερη βάση για οικογένειες. Ο όρμος Άντονι Κουίν είναι ένα από τα πιο όμορφα σημεία κολύμβησης.",
+        }
+      },
+      {
+        title: { en: "5. Ixia and Ialyssos: Sunsets, windsurfing and resort comfort close to the capital", el: "5. Ιξιά και Ιαλυσός: Ηλιοβασιλέματα και windsurfing κοντά στην πόλη" },
+        content: {
+          en: "Ixia and its western extension Ialyssos sit on the northwest coast of Rhodes, just five to ten kilometres from the capital, and catch the reliable Aegean winds that funnel through the strait between Rhodes and Turkey. This makes the area the best windsurfing and kitesurfing destination on the island, with several established schools and equipment rental centres operating along the beachfront. The west-facing coast also delivers some of the finest sunsets in Rhodes — the views across the water toward the Turkish coast at dusk, with the light changing from gold to red over the open sea, are among the most memorable on the island. Hotels here tend toward the larger resort and all-inclusive end of the market, with several well-established four and five-star properties offering extensive pools, spa facilities and beach access. The beach itself is predominantly pebbly rather than sandy, which suits some travelers but is worth knowing before booking. The proximity to Rhodes Town — just ten to fifteen minutes by car or bus — makes Ixia one of the most convenient resort bases for combining beach days with Old Town evenings. It suits couples and adult travelers who want polished resort comfort, excellent sunset views and easy access to the capital without paying the premium of an Old Town address.",
+          el: "Η Ιξιά και ο Ιαλυσός βρίσκονται 5-10 χιλιόμετρα από την πόλη και πιάνουν τους ανέμους του Αιγαίου. Είναι ο καλύτερος προορισμός windsurfing στο νησί. Τα ξενοδοχεία είναι μεγάλα resort all-inclusive. Η παραλία είναι βοτσαλωτή. Είναι ιδανική για ζευγάρια που θέλουν άνεση και ηλιοβασιλέματα.",
+        }
+      },
+      {
+        title: { en: "6. Kolymbia, Pefkos and the Quiet East Coast: The best base for a relaxed family stay", el: "6. Κολύμπια, Πεύκοι και ήσυχη Ανατολική Ακτή: Χαλαρή οικογενειακή βάση" },
+        content: {
+          en: "Between Faliraki and Lindos, the east coast of Rhodes opens into a series of quieter villages and resort areas that offer a more relaxed and authentic alternative to the main tourist centres. Kolymbia sits roughly equidistant between Rhodes Town and Lindos, with a clean beach, pine-shaded promenade and a peaceful atmosphere that suits families who want a settled, comfortable base from which to explore the whole island by day. The nearby Tsambika Beach — a long arc of golden sand visible from the hilltop monastery of the same name above — is one of the most beautiful and consistently recommended beaches on the east coast. Pefkos, just south of Lindos, offers a similar Lindos atmosphere at significantly lower prices and with considerably less daytime crowding — it is popular with travelers who have visited Lindos before and want the scenery without the peak-season intensity. Further south, the villages of Lardos and Gennadi provide some of the quietest and most genuinely local beach experiences available on the island, with long stretches of uncrowded sand and very little tourist infrastructure. This entire stretch of east coast suits families, couples and independent travelers who want a base that gives them easy access to the best of Rhodes — Lindos, the east coast beaches, and Rhodes Town — without committing to any single destination as their daily environment.",
+          el: "Ανάμεσα στο Φαληράκι και τη Λίνδο, τα ήσυχα χωριά Κολύμπια, Πεύκοι, Λάρδος και Γεννάδι προσφέρουν χαλαρή εναλλακτική. Η παραλία Τσαμπίκα είναι από τις ομορφότερες. Οι Πεύκοι προσφέρουν παρόμοια ατμόσφαιρα με τη Λίνδο σε χαμηλότερες τιμές. Ιδανικό για οικογένειες και ανεξάρτητους ταξιδιώτες.",
+        }
+      },
+    ],
+    faq: [
+      {
+        q: { en: "Which area of Rhodes is best for a first visit?", el: "Ποια περιοχή της Ρόδου είναι καλύτερη για πρώτη επίσκεψη;" },
+        a: { en: "Rhodes Town — and specifically the New Town, within walking distance of the Old Town walls — is the strongest first base. It gives you the medieval Old Town on foot, Elli Beach within walking distance, the best bus connections to the rest of the island, and a full range of restaurants, bars and services without needing a car. If you are primarily interested in beaches and resort comfort, Faliraki is the most complete beach base. If romance and scenery are the priority, Lindos is unmatched but requires a car for the rest of the island.", el: "Η πόλη της Ρόδου — ειδικά η Νέα Πόλη — είναι η καλύτερη πρώτη βάση. Αν προτιμάτε παραλία και θέρετρο, το Φαληράκι είναι η πιο ολοκληρωμένη επιλογή. Αν η ρομαντική ατμόσφαιρα είναι προτεραιότητα, η Λίνδος είναι αξεπέραστη." }
+      },
+      {
+        q: { en: "How far is Lindos from Rhodes Town?", el: "Πόσο απέχει η Λίνδος από την πόλη της Ρόδου;" },
+        a: { en: "Lindos is approximately 50 kilometres from Rhodes Town on the east coast road, a journey of around 50 to 60 minutes by car depending on traffic, or around 90 minutes on the public bus which runs several times daily. Most visitors based in Rhodes Town or Faliraki do Lindos as a day trip — arriving early before the crowds — rather than staying overnight, though staying in the village is by far the most memorable way to experience it.", el: "Η Λίνδος απέχει περίπου 50 χιλιόμετρα, 50-60 λεπτά με αυτοκίνητο ή 90 λεπτά με λεωφορείο. Οι περισσότεροι επισκέπτες κάνουν ημερήσια εκδρομή." }
+      },
+      {
+        q: { en: "Do I need a car in Rhodes?", el: "Χρειάζομαι αυτοκίνητο στη Ρόδο;" },
+        a: { en: "Not necessarily, depending on your base. Rhodes Town, Faliraki and the east coast resorts are all well-connected by the island's bus network, which runs regularly between Rhodes Town and Lindos throughout summer. If you want to explore the island's interior, the wine village of Embonas, the monastery of Filerimos, the remote south coast beaches or the kitesurfing destination of Prasonisi at the island's southern tip, a car is essential. Renting one for two or three days specifically for exploration is a popular and efficient approach.", el: "Όχι απαραίτητα. Η πόλη, το Φαληράκι και τα ανατολικά θέρετρα έχουν καλές συγκοινωνίες. Για εξερεύνηση στο εσωτερικό του νησιού, το αυτοκίνητο είναι απαραίτητο." }
+      },
+      {
+        q: { en: "Is the Rhodes Old Town noisy at night?", el: "Έχει θόρυβο η Παλιά Πόλη τη νύχτα;" },
+        a: { en: "Less than you might expect. The Old Town empties of day-trippers by early evening and the streets become considerably quieter and more atmospheric after dinner. The main taverna streets retain some noise until around midnight in high summer, but the interior lanes are remarkably peaceful. The New Town immediately outside the walls has a more active bar scene. If you are a very light sleeper, choose a room on an inner courtyard or upper floor within the Old Town walls.", el: "Λιγότερο από ό,τι περιμένετε. Οι κεντρικοί δρόμοι έχουν λίγη κίνηση μέχρι τα μεσάνυχτα, αλλά τα εσωτερικά σοκάκια είναι εξαιρετικά ήσυχα." }
+      },
+      {
+        q: { en: "When is the best time to visit Rhodes?", el: "Ποια είναι η καλύτερη εποχή για τη Ρόδο;" },
+        a: { en: "May, June and September to early October offer the best balance. The sea is warm from late May, the Old Town and Lindos are pleasantly atmospheric without overwhelming crowds, and prices are significantly lower than in July and August. Peak season — particularly the last two weeks of July and all of August — brings Rhodes to full capacity, with the Acropolis of Lindos requiring queues from mid-morning and the most popular beaches very crowded by noon. Rhodes also receives visitors year-round for its climate, which is the sunniest in Greece, but most accommodation and restaurants outside the main resort areas close between November and March.", el: "Μάιος, Ιούνιος και Σεπτέμβριος έως αρχές Οκτωβρίου προσφέρουν την καλύτερη ισορροπία. Η υψηλή περίοδος Ιουλίου-Αυγούστου έχει πολύ κόσμο." }
+      },
+      {
+        q: { en: "Can I island-hop from Rhodes?", el: "Μπορώ να κάνω island-hopping από τη Ρόδο;" },
+        a: { en: "Yes, and it is one of the best-positioned islands in Greece for regional island-hopping. Regular ferry connections run from Rhodes Town to Kos, Symi, Patmos, Leros and the wider Dodecanese chain. Day trips to the tiny island of Symi — a remarkably well-preserved neoclassical village in a horseshoe harbour — are particularly popular and widely available from the Mandraki and Commercial ports in Rhodes Town.", el: "Ναι, υπάρχουν τακτικές ακτοπλοϊκές συνδέσεις προς Κω, Σύμη, Πάτμο, Λέρο και άλλα Δωδεκάνησα. Οι ημερήσιες εκδρομές στη Σύμη είναι ιδιαίτερα δημοφιλείς." }
+      },
+    ],
+    seo: {
+      title: {
+        en: "Where to Stay in Rhodes | Best Areas & Hotels | GoGreeceNow",
+        el: "Πού να Μείνετε στη Ρόδο | Καλύτερες Περιοχές & Ξενοδοχεία | GoGreeceNow"
+      },
+      description: {
+        en: "Find the best places to stay in Rhodes — from the UNESCO medieval Old Town and the romantic village of Lindos to the family beaches of Faliraki, the windsurfing coast of Ixia and the quiet east coast villages of Kolymbia and Pefkos. A complete guide to Rhodes hotels and areas.",
+        el: "Βρείτε τα καλύτερα μέρη για διαμονή στη Ρόδο — από τη μεσαιωνική Παλιά Πόλη και το ρομαντικό χωριό της Λίνδου έως τις οικογενειακές παραλίες της Φαληράκης, την ακτή windsurfing της Ιξιάς και τα ήσυχα χωριά της ανατολικής ακτής."
+      }
     },
   },
   {
