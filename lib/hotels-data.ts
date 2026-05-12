@@ -1329,20 +1329,104 @@ export const hotels: HotelCard[] = [
   {
     slug: "monemvasia",
     name: "Where to Stay in Monemvasia",
-    place: "Monemvasia",
+    place: "Monemvasia — Laconia, Peloponnese",
     info: {
-      en: "Discover the best areas and hotels to stay in Monemvasia.",
-      el: "Ανακαλύψτε τις καλύτερες περιοχές και ξενοδοχεία για διαμονή στη Monemvasia.",
+      en: "Find the best places to stay in Monemvasia — from sleeping inside a medieval Byzantine mansion in the Kastro and the convenient mainland village of Gefyra, to the luxury countryside estate of Kinsterna and the hidden beaches around the rock. The most complete guide to Monemvasia hotels and areas.",
+      el: "Βρείτε τα καλύτερα μέρη για διαμονή στη Μονεμβασιά — από τη διαμονή μέσα σε ένα μεσαιωνικό βυζαντινό αρχοντικό στο Κάστρο και το βολικό χωριό της Γέφυρας, έως το πολυτελές κτήμα της Κινστέρνας και τις κρυφές παραλίες γύρω από τον βράχο. Ο πληρέστερος οδηγός για ξενοδοχεία και περιοχές στη Μονεμβασιά.",
     },
     image: "/images/monemvasia.webp",
-    badge: "Upcoming Guide",
+    badge: "Featured stay",
     overview: {
-      en: "A detailed guide on where to stay in Monemvasia is coming soon. For now, explore our interactive map to find the best accommodation options.",
-      el: "Ένας αναλυτικός οδηγός για το πού να μείνετε στη Monemvasia έρχεται σύντομα. Προς το παρόν, εξερευνήστε τον διαδραστικό μας χάρτη για να βρείτε τις καλύτερες επιλογές διαμονής.",
+      en: "Choosing where to stay in Monemvasia is the single decision that determines whether you experience it as one of the most romantic and extraordinary overnight destinations in all of Europe — sleeping inside a restored Byzantine mansion inside the medieval walls, waking up to the sound of the Aegean below your window — or as a convenient day trip base that misses the heart of what makes this place unlike anywhere else on earth.",
+      el: "Η επιλογή διαμονής στη Μονεμβασιά καθορίζει αν θα τη ζήσετε ως έναν από τους πιο ρομαντικούς προορισμούς διανυκτέρευσης σε όλη την Ευρώπη — κοιμώμενοι μέσα σε ένα αναπαλαιωμένο βυζαντινό αρχοντικό εντός των μεσαιωνικών τειχών, ξυπνώντας με τον ήχο του Αιγαίου κάτω από το παράθυρό σας — ή ως μια βολική βάση ημερήσιας εκδρομής.",
+    },
+    description: {
+      en: "Relaxing stays, beautiful views and authentic hospitality — organized in a clear and practical way.",
+      el: "Χαλαρωτικές διαμονές, όμορφη θέα και αυθεντική φιλοξενία — οργανωμένα με καθαρό και πρακτικό τρόπο.",
     },
     features: {
-      en: ["Hotels", "Resorts", "Apartments"],
-      el: ["Ξενοδοχεία", "Resorts", "Διαμερίσματα"],
+      en: ["Kastro Lower Town (Sleep Inside the Medieval City)", "Kastro Upper Town (Agia Sofia & Secret Views)", "Gefyra (Practical, Affordable & Great Views of the Rock)", "Kinsterna Hotel (Luxury Countryside Estate & Boat Trips)", "Portelo (Swimming Through the Ancient Sea Gate)", "Pori & Elafonisos (Best Beaches Near Monemvasia)", "Mystras UNESCO Site (90 min drive)", "Gerakas — Europe's Southernmost Natural Fjord", "Pavlopetri — World's Oldest Submerged City", "The birthplace of poet Yannis Ritsos"],
+      el: ["Κάστρο Κάτω Πόλη (Διαμονή στη Μεσαιωνική Πόλη)", "Κάστρο Άνω Πόλη (Αγία Σοφία & Μυστικές Θέες)", "Γέφυρα (Πρακτική, Οικονομική & Θέα του Βράχου)", "Kinsterna Hotel (Πολυτελές Κτήμα & Εκδρομές με Βάρκα)", "Πορτέλο (Κολύμπι από την Αρχαία Θαλάσσια Πύλη)", "Πόρι & Ελαφόνησος (Καλύτερες Παραλίες)", "Μυστράς Μνημείο UNESCO (90 λεπτά)", "Γέρακας — Το Νοτιότερο Φιόρδ της Ευρώπης", "Παυλοπέτρι — Αρχαιότερη Βυθισμένη Πόλη του Κόσμου", "Γενέτειρα του ποιητή Γιάννη Ρίτσου"],
+    },
+    sections: [
+      {
+        title: { en: "1. The Kastro — Lower Town: The most extraordinary place to sleep in Greece", el: "1. Κάστρο — Κάτω Πόλη: Το πιο εντυπωσιακό μέρος για διαμονή στην Ελλάδα" },
+        content: {
+          en: "The Lower Town — always called simply the Kastro — is the inhabited portion of the medieval city, enclosed within its original Byzantine and Venetian sea walls and accessible only on foot through the single arched gate on the western wall. No cars, no motorcycles, no wheeled suitcases without serious effort — the streets inside are medieval cobblestone, uneven, narrow, stepped in places, and utterly beautiful at every turn. The single main lane, running east to west through the heart of the town, is lined on both sides with stone-built tavernas, small cafés, craft shops selling locally produced olive oil, honey, Malvasia wine and ceramics, and the kind of boutique accommodation that occupies restored Byzantine and Venetian mansions with centuries of history inside their walls. Staying inside the Kastro is an experience with no real parallel in Greece. The hotels here — almost all of them small, intimate, and individually run — occupy buildings that have stood since the 14th, 15th and 16th centuries. Stone vaulted ceilings, exposed medieval masonry, hand-carved wooden furniture, windows that frame the open sea through walls a metre thick: this is not boutique design hotel aesthetic — it is the real thing. Waking up inside the walls, with the sound of the Aegean below and the medieval lanes empty in the early morning before the day-trippers arrive, is one of the most genuinely transporting travel experiences available anywhere in southern Europe. Among the most consistently praised properties inside the Kastro, Moni Emvasis Luxury Suites occupies an imposing stone-built mansion in a prime position, with suites that combine the original medieval structure with thoughtfully contemporary interiors. Byzantino Boutique Hotel offers rooms in rich jewel-like tones behind a heritage facade. Theophano Art Hotel is a smaller, more intimate option. Likinia Hotel is frequently cited for its exceptional views. All of these properties book out weeks in advance — booking two to three months ahead is the minimum.",
+          el: "Η Κάτω Πόλη — το Κάστρο, όπως το λένε όλοι — είναι η κατοικημένη περιοχή της μεσαιωνικής πόλης, προσβάσιμη μόνο με τα πόδια μέσα από τη μονή καμάρα στο δυτικό τείχος. Δεν υπάρχουν αυτοκίνητα, οι δρόμοι είναι μεσαιωνικοί λιθόστρωτοι, ανώμαλοι, στενοί. Η διαμονή μέσα στο Κάστρο είναι μια εμπειρία χωρίς αντίστοιχο στην Ελλάδα. Τα ξενοδοχεία — όλα μικρά, οικεία — στεγάζονται σε κτίρια του 14ου, 15ου και 16ου αιώνα. Το ξύπνημα μέσα στα τείχη, με τον ήχο του Αιγαίου από κάτω και τα μεσαιωνικά σοκάκια άδεια νωρίς το πρωί, είναι μια από τις πιο συγκινητικές ταξιδιωτικές εμπειρίες της νότιας Ευρώπης. Ανάμεσα στα πιο γνωστά καταλύματα: Moni Emvasis Luxury Suites, Byzantino Boutique Hotel, Theophano Art Hotel, Likinia Hotel.",
+        }
+      },
+      {
+        title: { en: "2. The Kastro — Upper Town: The most dramatic hidden landscape on the rock", el: "2. Κάστρο — Άνω Πόλη: Το πιο εντυπωσιακό κρυφό τοπίο στον βράχο" },
+        content: {
+          en: "Above the inhabited Lower Town, a steep 15 to 20-minute climb through the ruins of the medieval city leads to the Upper Town — the part of Monemvasia that most visitors never reach. The Upper Town was once the aristocratic quarter, home to the Venetian nobility. Today it is entirely uninhabited, returned to nature and silence, with the ruins of over 500 mansions visible through dense scrubland, the remains of a 17th-century Ottoman hammam, and ancient cisterns still intact among the stones. The centrepiece is the Church of Agia Sofia — a 12th-century Byzantine church of extraordinary architectural quality, perched dramatically at the very edge of the cliff. Its half-Byzantine, half-Venetian character and the surviving fresco fragments make it one of the most significant medieval churches in Greece. It is also the finest viewpoint on the rock. Hidden gem: the path continuing beyond Agia Sofia along the northern cliff edge leads to natural rock ledges with views down the sheer northern face directly to the sea — few visitors ever reach this point.",
+          el: "Πάνω από την Κάτω Πόλη, μια απότομη 15-20λεπτη ανάβαση οδηγεί στην Άνω Πόλη — το τμήμα που οι περισσότεροι επισκέπτες δεν φτάνουν ποτέ. Σήμερα είναι ακατοίκητη, επιστραμμένη στη φύση. Κεντρικό σημείο είναι η εκκλησία της Αγίας Σοφίας — ένας βυζαντινός ναός του 12ου αιώνα στην άκρη του γκρεμού. Κρυφό διαμάντι: το μονοπάτι που συνεχίζει πέρα από την Αγία Σοφία οδηγεί σε φυσικές προεξοχές με θέα κάθετα προς τη θάλασσα.",
+        }
+      },
+      {
+        title: { en: "3. Gefyra: The most practical base — and far more characterful than it sounds", el: "3. Γέφυρα: Η πιο πρακτική βάση — με περισσότερο χαρακτήρα από όσο ακούγεται" },
+        content: {
+          en: "Gefyra is the modern mainland village directly opposite the rock, connected to the Kastro by a narrow 200-metre causeway. The village has a genuinely pleasant waterfront promenade looking directly out at the rock — the view of Monemvasia from the Gefyra side, particularly in the evening when the warm stone of the Kastro glows amber in the declining sun, is one of the most beautiful views of any medieval city in Europe. The waterfront tavernas serve excellent fresh fish at prices noticeably lower than inside the Kastro. The causeway walk from Gefyra to the Kastro gate takes around 20 minutes on foot, or 2 minutes and €1.10 on the shuttle service. Hotels range from simple family-run guesthouses to mid-range properties with sea-facing balconies. Filoxenia Hotel is the most consistently recommended in Gefyra. Gefyra suits budget travelers, families with young children, anyone arriving without a car, and travelers who want easy access to the surrounding beaches.",
+          el: "Η Γέφυρα είναι το σύγχρονο χωριό απέναντι από τον βράχο, συνδεδεμένο με το Κάστρο μέσω ενός στενού διαύλου 200 μέτρων. Η θέα της Μονεμβασιάς από τη Γέφυρα το ηλιοβασίλεμα είναι από τις ωραιότερες μεσαιωνικής πόλης στην Ευρώπη. Η απόσταση από τη Γέφυρα ως την πύλη του Κάστρου είναι 20 λεπτά με τα πόδια ή 2 λεπτά με το shuttle (€1,10). Το Filoxenia Hotel είναι η πιο σταθερή σύσταση. Η Γέφυρα ταιριάζει σε ταξιδιώτες με προϋπολογισμό, οικογένειες, και όσους φτάνουν χωρίς αυτοκίνητο.",
+        }
+      },
+      {
+        title: { en: "4. Kinsterna Hotel and the Countryside: The most complete luxury experience near Monemvasia", el: "4. Kinsterna Hotel και Εξοχή: Η πιο ολοκληρωμένη πολυτελής εμπειρία" },
+        content: {
+          en: "Seven kilometres west of Monemvasia, set on 25 acres of organic farmland, olive groves, citrus orchards and private vineyards, Kinsterna Hotel is one of the most exceptional rural hotel experiences in Greece. The property is built around a restored 18th-century Byzantine mansion with a history including use as a silk production centre and winemaking estate. The rooms range from beautifully appointed suites in the main mansion to private villas with plunge pools. The award-winning restaurant serves cuisine rooted in the agricultural traditions of Laconia. Kinsterna also offers organized boat excursions to inaccessible beaches including Damos Beach and the remarkable natural fjord at Gerakas. Kinsterna suits couples on anniversary or honeymoon trips, and anyone wanting the Monemvasia experience with full-service luxury resort comfort.",
+          el: "Επτά χιλιόμετρα δυτικά της Μονεμβασιάς, το Kinsterna Hotel είναι μια από τις πιο εξαιρετικές εμπειρίες φιλοξενίας στην Ελλάδα. Το κτήμα είναι χτισμένο γύρω από ένα αναπαλαιωμένο βυζαντινό αρχοντικό του 18ου αιώνα. Προσφέρει οργανωμένες εκδρομές με βάρκα σε απρόσιτες παραλίες. Ιδανικό για ζευγάρια και honeymoon.",
+        }
+      },
+      {
+        title: { en: "5. The Hidden Beaches Around Monemvasia: What Nobody Tells You", el: "5. Οι Κρυφές Παραλίες γύρω από τη Μονεμβασιά: Αυτό που κανείς δεν σου λέει" },
+        content: {
+          en: "Most visitors focus entirely on the rock and leave without exploring the extraordinary coastline that surrounds it. Portelo is the most dramatic swimming spot — the ancient sea gate of Monemvasia, a small opening in the southern sea wall where you can swim through into a sheltered rock pool directly beneath the fortress walls. Peri Kakavos sits 100 metres from the port with turquoise water. Mandraki Beach is the closest organized beach to town. Pori Beach is a 2-kilometre Blue Flag beach with golden sand and direct views of the rock. The Kastella Coves (5 km from Gefyra) are three completely undeveloped and generally deserted beaches. Damos Beach and Gerakas are accessible by boat only. Elafonisos Island (45 minutes by car plus a short ferry) has the famous Simos Beach — regularly listed among the finest beaches in Europe.",
+          el: "Οι περισσότεροι επισκέπτες φεύγουν χωρίς να εξερευνήσουν την εκπληκτική ακτογραμμή. Το Πορτέλο είναι το πιο εντυπωσιακό σημείο — η αρχαία θαλάσσια πύλη. Η παραλία Πόρι έχει 2 χλμ. χρυσή άμμο. Ο Ελαφόνησος με τη Σίμο είναι από τις ωραιότερες παραλίες της Ευρώπης. Οι Καβουρότρυπες της Μονεμβασιάς — τα Kastella Coves — είναι τρεις παρθένες παραλίες.",
+        }
+      },
+      {
+        title: { en: "6. Day Trips from Monemvasia: The Southern Peloponnese Unlocked", el: "6. Ημερήσιες Εκδρομές από τη Μονεμβασιά: Η Νότια Πελοπόννησος" },
+        content: {
+          en: "Monemvasia's position in the southeastern Peloponnese makes it one of the finest bases for exploring a remarkably rich region. Mystras (90 km, 1h20min) — the Byzantine ghost city, a UNESCO World Heritage Site, with remarkably well-preserved frescoes and churches. Gerakas — Europe's southernmost natural fjord, accessible by boat, with sheer limestone cliffs and emerald water. The Mani Peninsula — wild, culturally distinctive, with tower houses and the spectacular Diros Caves. Pavlopetri — the world's oldest known submerged city, dating to 3,000 BCE, visible through shallow water off the coast of Elafonisos, navigable with a snorkelling mask. The combination of Monemvasia, Mystras, Elafonisos and the Mani justifies the Peloponnese as a destination in its own right.",
+          el: "Ο Μυστράς (90 χλμ.) — η βυζαντινή πόλη-φάντασμα, μνημείο UNESCO. Ο Γέρακας — το νοτιότερο φυσικό φιόρδ της Ευρώπης. Η Μάνη — άγρια, με πύργους και το σπήλαιο Δυρού. Το Παυλοπέτρι — η αρχαιότερη βυθισμένη πόλη του κόσμου, 3.000 π.Χ., ορατή με μάσκα θαλάσσης. Ο συνδυασμός Μονεμβασιάς, Μυστρά, Ελαφονήσου και Μάνης δικαιολογεί από μόνος του την Πελοπόννησο.",
+        }
+      },
+    ],
+    faq: [
+      {
+        q: { en: "Should I stay inside the Kastro or in Gefyra?", el: "Να μείνω μέσα στο Κάστρο ή στη Γέφυρα;" },
+        a: { en: "Staying inside the Kastro is one of the most extraordinary overnight experiences in Greece — medieval walls, centuries-old stone buildings, the Aegean below your window. It costs more, books out early, and requires carrying luggage over cobblestones. Gefyra is practical, affordable, easier logistically, and offers the best external view of the rock. If budget and timing allow, at least one night inside the Kastro is strongly recommended.", el: "Η διαμονή στο Κάστρο είναι μια από τις πιο εντυπωσιακές εμπειρίες στην Ελλάδα. Η Γέφυρα είναι πρακτική και οικονομική. Αν το επιτρέπει ο προϋπολογισμός, συνιστάται τουλάχιστον μία νύχτα στο Κάστρο." }
+      },
+      {
+        q: { en: "How far in advance do I need to book hotels in Monemvasia?", el: "Πόσο νωρίς πρέπει να κλείσω ξενοδοχείο στη Μονεμβασιά;" },
+        a: { en: "For accommodation inside the Kastro during July and August, book four to six months in advance. Most properties have between three and twenty rooms. For Gefyra, three to four weeks is usually sufficient. For Kinsterna Hotel, book as early as possible regardless of season.", el: "Για διαμονή στο Κάστρο τον Ιούλιο-Αύγουστο, κλείστε 4-6 μήνες νωρίτερα. Για τη Γέφυρα, 3-4 εβδομάδες είναι αρκετές." }
+      },
+      {
+        q: { en: "Is Monemvasia suitable for families with children?", el: "Είναι η Μονεμβασιά κατάλληλη για οικογένειες;" },
+        a: { en: "For families with older children, the Kastro is magical. For families with young children or pushchairs, Gefyra is the strongly recommended base — flat ground, car access, parking, a beach and all amenities.", el: "Για μικρά παιδιά, συνιστάται η Γέφυρα. Για μεγαλύτερα παιδιά, το Κάστρο είναι μαγικό." }
+      },
+      {
+        q: { en: "Can I visit Monemvasia without a car?", el: "Μπορώ να επισκεφθώ τη Μονεμβασιά χωρίς αυτοκίνητο;" },
+        a: { en: "Yes — two daily KTEL buses run from Athens (approximately 5.5 to 6 hours). For the rock itself and the waterfront, no car is needed. For the surrounding beaches, Mystras or Elafonisos, a car is essential.", el: "Ναι — δύο καθημερινά λεωφορεία από Αθήνα. Για τον βράχο δεν χρειάζεται αυτοκίνητο, για τις γύρω παραλίες είναι απαραίτητο." }
+      },
+      {
+        q: { en: "When is the best time to visit Monemvasia?", el: "Ποια είναι η καλύτερη εποχή για τη Μονεμβασιά;" },
+        a: { en: "April through early June and September through October are the optimal periods. The spring wildflowers, the extraordinary light, and the atmosphere are at their finest. Summer weekends bring significant crowds. The local Easter celebration at the Church of Elkomenos Christos is one of the most atmospheric in Greece.", el: "Απρίλιος έως Ιούνιος και Σεπτέμβριος-Οκτώβριος. Το Πάσχα στον Ελκόμενο Χριστό είναι από τις πιο ατμοσφαιρικές εμπειρίες στην Ελλάδα." }
+      },
+      {
+        q: { en: "What practical things should I know before arriving?", el: "Τι πρακτικά πρέπει να γνωρίζω πριν φτάσω;" },
+        a: { en: "No ATM inside the Kastro — withdraw cash in Gefyra. Pack in a soft bag, not a wheeled suitcase. The shuttle between Gefyra and the Kastro gate costs €1.10. Flat soles with grip are essential for the Upper Town climb. Arrive before 9am or after 5pm in summer to avoid crowds.", el: "Δεν υπάρχει ΑΤΜ στο Κάστρο. Χρησιμοποιήστε μαλακή τσάντα όχι βαλίτσα με ρόδες. Το shuttle κοστίζει €1,10. Φτάστε πριν τις 9 π.μ. ή μετά τις 5 μ.μ." }
+      },
+    ],
+    seo: {
+      title: {
+        en: "Where to Stay in Monemvasia | Kastro, Gefyra & Hidden Gems | GoGreeceNow",
+        el: "Πού να Μείνεις στη Μονεμβασιά | Κάστρο, Γέφυρα & Κρυφά Διαμάντια | GoGreeceNow"
+      },
+      description: {
+        en: "Find the best places to stay in Monemvasia — from sleeping inside a medieval Byzantine mansion in the Kastro and the convenient mainland village of Gefyra, to the luxury countryside estate of Kinsterna and the hidden beaches around the rock. The most complete guide to Monemvasia hotels and areas.",
+        el: "Βρείτε τα καλύτερα μέρη για διαμονή στη Μονεμβασιά — από τη διαμονή μέσα σε ένα μεσαιωνικό βυζαντινό αρχοντικό στο Κάστρο και το βολικό χωριό της Γέφυρας, έως το πολυτελές κτήμα της Κινστέρνας και τις κρυφές παραλίες γύρω από τον βράχο."
+      }
     },
   },
   {
