@@ -1119,39 +1119,211 @@ export const hotels: HotelCard[] = [
   {
     slug: "halkidiki",
     name: "Where to Stay in Halkidiki",
-    place: "Halkidiki",
+    place: "Halkidiki — Central Macedonia",
     info: {
-      en: "Discover the best areas and hotels to stay in Halkidiki.",
-      el: "Ανακαλύψτε τις καλύτερες περιοχές και ξενοδοχεία για διαμονή στη Halkidiki.",
+      en: "Find the best places to stay in Halkidiki — from the cosmopolitan resorts of Sani and the lively beach atmosphere of Pefkochori on Kassandra, to the wild hidden beaches of Sithonia, the luxury retreats around Neos Marmaras and the mystical gateway of Ouranoupoli towards Mount Athos. A complete guide to Halkidiki hotels and areas.",
+      el: "Βρείτε τις καλύτερες περιοχές διαμονής στη Χαλκιδική — από τη Σάνη και το Πευκοχώρι στην Κασσάνδρα και τα πολυτελή resort της Σιθωνίας, μέχρι τα κρυφά διαμάντια γύρω από τις Καβουρότρυπες και την Ουρανούπολη. Πλήρης οδηγός για ξενοδοχεία και περιοχές στη Χαλκιδική.",
     },
     image: "/images/halkidiki.webp",
-    badge: "Upcoming Guide",
+    badge: "Featured stay",
     overview: {
-      en: "A detailed guide on where to stay in Halkidiki is coming soon. For now, explore our interactive map to find the best accommodation options.",
-      el: "Ένας αναλυτικός οδηγός για το πού να μείνετε στη Halkidiki έρχεται σύντομα. Προς το παρόν, εξερευνήστε τον διαδραστικό μας χάρτη για να βρείτε τις καλύτερες επιλογές διαμονής.",
+      en: "Choosing where to stay in Halkidiki shapes the entire experience — from the cosmopolitan resorts of Sani and the lively beach atmosphere of Pefkochori on Kassandra, to the countless hidden coves of the wild Sithonia peninsula, the luxury retreats around Neos Marmaras and the mystical gateway of Ouranoupoli towards Mount Athos.",
+      el: "Η επιλογή της περιοχής διαμονής στη Χαλκιδική καθορίζει το σύνολο της εμπειρίας σου — από τα κοσμοπολίτικα resort της Σάνης και τη ζωντανή παραλιακή ατμόσφαιρα του Πευκοχωρίου στην Κασσάνδρα, μέχρι τις σχεδόν αμέτρητες κρυφές παραλίες της αδαμάστης Σιθωνίας, τα πολυτελή καταφύγια γύρω από τον Νέο Μαρμαρά και τη μυσταγωγική πύλη της Ουρανούπολης προς τον Άθω.",
+    },
+    description: {
+      en: "Relaxing stays, stunning beaches and authentic hospitality — organized in a clear and practical way.",
+      el: "Χαλαρωτική διαμονή, εκπληκτικές παραλίες και αυθεντική φιλοξενία — οργανωμένα με καθαρό και πρακτικό τρόπο.",
     },
     features: {
-      en: ["Hotels", "Resorts", "Apartments"],
-      el: ["Ξενοδοχεία", "Resorts", "Διαμερίσματα"],
+      en: ["Kassandra (Organized & Family-friendly)", "Sithonia (Nature, Hidden Beaches & Luxury)", "Sani (Luxury Resort & Sani Festival)", "Neos Marmaras & Porto Carras (Wine Tourism & Spa)", "Ouranoupoli (Gateway to Mount Athos)", "Inland Halkidiki (Polygyros & Archaeology)", "Hidden beaches: Kavourotrypes, Armenistis, Tripiti", "70 km from Thessaloniki"],
+      el: ["Κασσάνδρα (Οργανωμένη & Οικογενειακή)", "Σιθωνία (Φύση, Κρυφές Παραλίες & Πολυτέλεια)", "Σάνη (Luxury Resort & Sani Festival)", "Νέος Μαρμαράς & Porto Carras (Οινοτουρισμός & Spa)", "Ουρανούπολη (Πύλη Αγίου Όρους & Μυστικισμός)", "Εσωτερική Χαλκιδική (Πολύγυρος & Αρχαιολογία)", "Κρυφές παραλίες: Καβουρότρυπες, Αρμενιστής, Τριπίτη", "70 χλμ. από τη Θεσσαλονίκη"],
+    },
+    sections: [
+      {
+        title: { en: "1. Kassandra: The most organized peninsula — and much more", el: "1. Κασσάνδρα: Η πιο οργανωμένη χερσόνησος — και πολύ περισσότερα από αυτό" },
+        content: {
+          en: "Kassandra is the first 'finger' of Halkidiki — the closest to Thessaloniki and the ancient land of Potidaea, the most touristically developed, and yet the easiest choice for a first visit. The road connection to Thessaloniki is direct — about an hour and a half — and the network of beaches, hotels and services covers the entire peninsula in depth developed over decades. On the northwestern side, Potidaea serves as the natural entry point: the archaeological site of the ancient city, founded by Corinthian colonists in the 7th century BC and extensively referenced by Thucydides, sits right next to the modern village. A few kilometres south, Pefkochori is one of the liveliest seaside towns in Halkidiki — the main beach bar runs from early morning, while clubs stay open until dawn. The main beach is sandy and wide, but the hidden gem here is the Glarokavos lagoon — a shallow cove with flat water, ideal for children and stand-up paddleboarding, just a few kilometres south. In the same area, Paliouri offers wide sandy beaches with minimal development — ideal for those who want peace within an organized peninsula. On the eastern side of Kassandra, Hanioti is perhaps the calmest and most family-friendly choice — three kilometres of Blue Flag beach with shallow waters that resemble a Caribbean lagoon. Just south, Kallithea offers a quieter character, while at the tip of the peninsula at Paliouri and Kavo Posidi lies one of the finest wild coasts in all of Halkidiki — still little-known, with white pebbles and pines touching the water. Kassandra suits families, young travelers who want activity and affordable hospitality, and anyone visiting Halkidiki for the first time.",
+          el: "Η Κασσάνδρα είναι το πρώτο «δάχτυλο» της Χαλκιδικής — η πιο κοντινή στη Θεσσαλονίκη και την ιστορική γη της Ποτίδαιας, η πιο τουριστικά ανεπτυγμένη, και παρ' όλα αυτά η πιο εύκολη επιλογή για μια πρώτη επίσκεψη. Ο οδικός σύνδεσμος με τη Θεσσαλονίκη είναι άμεσος — περίπου μιάμιση ώρα — και το δίκτυο παραλιών, ξενοδοχείων και υπηρεσιών καλύπτει το σύνολο της χερσονήσου σε βάθος δεκαετιών. Στη βορειοδυτική πλευρά, η Ποτίδαια αποτελεί το φυσικό σημείο εισόδου: ο ανασκαφικός χώρος της αρχαίας πόλης, που ιδρύθηκε από Κορίνθιους αποίκους τον 7ο αιώνα π.Χ. και αναφέρεται εκτενώς στον Θουκυδίδη, βρίσκεται ακριβώς δίπλα στο σύγχρονο χωριό. Λίγα χιλιόμετρα νοτιότερα, το Πευκοχώρι είναι μια από τις πιο ζωντανές παραλιακές κωμοπόλεις της Χαλκιδικής. Η κεντρική παραλία είναι αμμώδης και φαρδιά, αλλά το κρυφό διαμάντι εδώ είναι η λιμνοθάλασσα του Γλαρόκαβου — ένας αβαθής κολπίσκος με επίπεδο νερό, ιδανικός για παιδιά. Στην ανατολική πλευρά, η Χανιώτη είναι η πιο ήρεμη και οικογενειακή επιλογή, ενώ στο Κάβο-Πόσιδι βρίσκεται μια από τις ωραιότερες άγριες ακτές ολόκληρης της Χαλκιδικής.",
+        }
+      },
+      {
+        title: { en: "2. Sithonia: The wilder peninsula — for those seeking the true gem", el: "2. Σιθωνία: Η πιο φυσική χερσόνησος — για όσους ψάχνουν το αληθινό διαμάντι" },
+        content: {
+          en: "If Kassandra is the Halkidiki everyone knows, Sithonia is the one that travelers return to again and again once they discover it. The second 'finger' is more remote, more mountainous, greener — and the waters surrounding it have a deep, almost turquoise quality rarely found in mainland Greece. On the western side of Sithonia, Nikiti is a village of character that has preserved some of its old soul among the hotels. Nearby lie some of the top luxury resorts in Halkidiki, including the Danai Beach Resort & Villas — a member of The Leading Hotels of the World — with a private beach, pool villas and hospitality rivalling the great resorts of the islands. Further north at Vourvourou, a bay with multiple small islets — dormant volcanic remnants — creates a series of semi-secluded beaches with incredible blue waters. This is also home to the Ekies All Senses Resort, a member of Relais & Châteaux, with sustainability philosophy that has made it a reference for all of Europe. The hidden gem of western Sithonia is not at any resort, however — it is Armenistis Beach: a long wild coast with golden sand, shallow water and almost no human presence even in August. On the eastern side of Sithonia, Sarti is the largest seaside town — three kilometres of Blue Flag beach with shallow water and an easy daily life. From Sarti, within 8 to 15 kilometres through narrow forest roads, lie the true wonders: Kavourotrypes — a series of rocky caves opening into the sea with turquoise water that literally glows — Kriaritsi with its crystalline waters, Kalamitsi that resembles a small Fiskardo without the tourists. At the southern tip of the peninsula, Toroni offers one of the longest sandy beaches in Halkidiki — quiet, with wooden huts for shade instead of umbrellas, and the islet of Toroni with ancient acropolis ruins accessible by kayak. Sithonia suits couples, travelers seeking nature and authenticity, those who want luxury without mass tourism.",
+          el: "Αν η Κασσάνδρα είναι η Χαλκιδική που γνωρίζουν όλοι, η Σιθωνία είναι αυτή που επιστρέφουν ξανά και ξανά όσοι την ανακαλύψουν. Στη δυτική πλευρά, η Νικήτη είναι ένα χωριό με χαρακτήρα. Κοντά του βρίσκονται μερικά από τα κορυφαία πολυτελή resort της Χαλκιδικής, όπως το Danai Beach Resort & Villas. Στο Βουρβουρού, ένας κόλπος με πολλαπλές μικρές νησίδες δημιουργεί ημιεπιλεγμένες παραλίες. Το κρυφό διαμάντι είναι η παραλία Αρμενιστής. Στην ανατολική πλευρά, η Σάρτη είναι η μεγαλύτερη παραλιακή κωμόπολη. Από τη Σάρτη, μέσα από δασικά δρομάκια, κρύβονται οι Καβουρότρυπες, το Κριαρίτσι και το Καλαμίτσι. Στο νότιο άκρο, ο Τορώνης προσφέρει μια από τις μεγαλύτερες αμμώδεις παραλίες.",
+        }
+      },
+      {
+        title: { en: "3. Sani: The most luxurious resort in Halkidiki — a world of its own", el: "3. Σάνη: Το πολυτελέστερο resort της Χαλκιδικής — και ένας κόσμος μόνος του" },
+        content: {
+          en: "Sani is not just a location — it is a self-contained world on the northwestern tip of Kassandra. The Sani Resort is a complex of five different hotels (Sani Asterias, Sani Beach, Sani Club, Porto Sani, Sani Dunes) spread over hundreds of acres of pine forest and sandy beach, with a marina that welcomes private yachts, dozens of restaurants and bars, first-class wellness facilities, and the famous Sani Festival — an annual international music festival of classical, jazz and world music that transforms Sani every summer into one of the most refined cultural events in southeastern Europe. The Boúsoulas beach at Sani — a thin tongue of white sand between pine forest and sea — is one of the finest resort beaches in the entire Mediterranean. For those who want quiet outside the resort boundaries, Stavronikita beach a few kilometres north is undeveloped, sandy and almost always calm. Sani suits couples seeking exclusivity, families who want everything at their doorstep, and travelers for whom the hotel is not just the base — it is the destination itself.",
+          el: "Η Σάνη δεν είναι απλώς μια τοποθεσία — είναι ένας αυτόνομος κόσμος στη βορειοδυτική άκρη της Κασσάνδρας. Το Sani Resort αποτελεί σύμπλεγμα πέντε διαφορετικών ξενοδοχείων που απλώνονται σε εκατοντάδες στρέμματα πευκοδάσους, με μαρίνα, δεκάδες εστιατόρια και το περίφημο Sani Festival. Η παραλία του Μπούσουλα είναι μια από τις ωραιότερες παραλίες resort ολόκληρης της Μεσογείου. Η Σάνη ταιριάζει σε ζευγάρια που θέλουν αποκλειστικότητα και σε ταξιδιώτες για τους οποίους το ξενοδοχείο είναι ο ίδιος ο προορισμός.",
+        }
+      },
+      {
+        title: { en: "4. Neos Marmaras & Porto Carras: The most romantic corner of Sithonia", el: "4. Νέος Μαρμαράς & Porto Carras: Η πιο ρομαντική γωνιά της Σιθωνίας" },
+        content: {
+          en: "Neos Marmaras is one of the finest villages in Sithonia — a fishing village that became a popular summer destination without losing its authentic character. The old harbour with fishing boats, the tavernas serving fresh fish by the water, and the strolls through the village with views over the bay make Neos Marmaras one of the most romantic destinations in Halkidiki. Adjacent to it lies Porto Carras — one of the largest and most complete resort complexes in the Mediterranean, with its own vineyard and winery producing the award-winning Domaine Porto Carras wine, an 80-boat marina, three enormous lagoon-style pools, the impressive Myrthia Thermal Spa spanning 3,000 sqm with an ancient thermal spring (Nero Kanistrou), and amphitheatrical architecture ensuring sea views from every point. It is one of the few resorts in Greece combining gastronomy, wine tourism, thalasso therapy and water sports in a single cohesive environment. From the port of Neos Marmaras, boats also depart for the circumnavigation of Mount Athos — an unmissable experience. Hidden gem: a few kilometres south lies Ormos Panagias — a small, quiet bay with pine forest reaching the shore, minimal hotels and waters that rival the Cyclades.",
+          el: "Ο Νέος Μαρμαράς είναι από τα ωραιότερα χωριά της Σιθωνίας — ένα ψαροχώρι που έγινε δημοφιλής θερινός προορισμός χωρίς να χάσει τον αυθεντικό του χαρακτήρα. Δίπλα του εκτείνεται το Porto Carras, με ιδιόκτητο αμπελώνα, μαρίνα, το Myrthia Thermal Spa και αμφιθεατρική αρχιτεκτονική. Κρυφό διαμάντι: ο Όρμος Παναγιά, ένας ήσυχος κόλπος με πευκόδασος που φτάνει μέχρι την ακτή.",
+        }
+      },
+      {
+        title: { en: "5. Ouranoupoli & The Road to Mount Athos: The gateway to another world", el: "5. Ουρανούπολη & Ο Δρόμος προς τον Άθω: Η πύλη σε έναν άλλο κόσμο" },
+        content: {
+          en: "Ouranoupoli sits at the northwestern tip of the Mount Athos peninsula — the last town before the borders of the Holy Mountain, and one of the most atmospheric seaside towns in northern Greece. The Byzantine tower of Prosforion dominating the beach is one of the few intact medieval towers in Macedonia, built in the 14th century by Serbian monks. The beach of Ouranoupoli is sandy and very clean, with direct views across the bay to the mountains of Mount Athos rising on the horizon — a sight unchanged since the Middle Ages. Ouranoupoli is the only departure point for Mount Athos — the secret republic of 20 Byzantine monasteries living by the old calendar, which forbids entry to women but allows male pilgrims and travelers with a special passport (diamonitirion). Even for those without access to the interior, the boat tours circumnavigating Mount Athos by sea — passing close to monasteries clinging to rocky coasts — are among the most impressive experiences of the peninsula. Around Ouranoupoli, the beaches are far from tourist maps. Tripiti Beach — with a natural rock arch over the sea, a unique geological formation in the region — lies just a few kilometres south and is perhaps the greatest hidden gem in all of Halkidiki. Very few know of its existence. Ouranoupoli suits travelers who want to combine the sea with spiritual or cultural experiences.",
+          el: "Η Ουρανούπολη βρίσκεται στο βορειοδυτικό άκρο της χερσονήσου του Άθω — η τελευταία πόλη πριν τα σύνορα του Αγίου Όρους. Ο βυζαντινός πύργος Πρόσφορον που δεσπόζει στην παραλία είναι από τους λίγους αλώβητους μεσαιωνικούς πύργους της Μακεδονίας. Η Ουρανούπολη είναι το μοναδικό σημείο αναχώρησης για τον Άγιο Όρος. Γύρω από την Ουρανούπολη, η Παραλία Τριπίτη — με ένα φυσικό βραχώδες τόξο πάνω στη θάλασσα — αποτελεί ίσως το μεγαλύτερο κρυφό διαμάντι ολόκληρης της Χαλκιδικής.",
+        }
+      },
+      {
+        title: { en: "6. Polygyros & Inland Halkidiki: The place the tourist offices forget", el: "6. Πολύγυρος & Εσωτερική Χαλκιδική: Ο τόπος που ξεχνούν τα τουριστικά γραφεία" },
+        content: {
+          en: "Few travelers know that Halkidiki also has a mountainous, completely unspoiled inland side. Polygyros, the capital of the region, is a lively Greek town with a good market, excellent cafes, a noteworthy archaeological collection at the local museum, and some of the finest local produce — honey, olive oil, dairy products. From here the best hiking trails into the Holomonda forest begin — the largest forest in Halkidiki, with oaks and chestnuts that change colour spectacularly in autumn. For travelers interested in archaeology, Olynthia — a few kilometres south of Polygyros — hosts the archaeological site of ancient Olynthos, one of the most important ancient cities of Halkidiki founded in the 5th century BC. The mosaic floors uncovered here are among the earliest known examples of pebble mosaic in the Mediterranean. Inland Halkidiki suits travelers who want to understand the place in depth.",
+          el: "Λίγοι ταξιδιώτες γνωρίζουν ότι η Χαλκιδική έχει και μια ορεινή, εντελώς αδιάφθορη εσωτερική πλευρά. Ο Πολύγυρος, η πρωτεύουσα του νομού, είναι μια ζωντανή ελληνική κωμόπολη. Από εδώ ξεκινούν τα μονοπάτια πεζοπορίας για το δάσος του Χολομώντα. Τα Ολύνθια φιλοξενούν τον ανασκαφικό χώρο της αρχαίας Ολύνθου. Η εσωτερική Χαλκιδική ταιριάζει σε ταξιδιώτες που θέλουν να κατανοήσουν τον τόπο σε βάθος.",
+        }
+      },
+    ],
+    faq: [
+      {
+        q: { en: "Kassandra or Sithonia? Which is the better choice?", el: "Κασσάνδρα ή Σιθωνία; Ποια είναι η καλύτερη επιλογή;" },
+        a: { en: "It depends entirely on what you are looking for. Kassandra is more organized, closer, more affordable and more suitable for families and first-time visits. Sithonia is wilder, with waters that rival the best Greek islands — but requires a car and more independence. Experienced Halkidiki visitors almost always return to Sithonia.", el: "Εξαρτάται πλήρως από τι ψάχνεις. Η Κασσάνδρα είναι πιο οργανωμένη, πιο κοντινή, πιο οικονομική και πιο κατάλληλη για οικογένειες και πρώτη επίσκεψη. Η Σιθωνία είναι πιο φυσική, πιο άγρια, με νερά που ανταγωνίζονται τα καλύτερα νησιά — αλλά απαιτεί αυτοκίνητο. Οι έμπειροι επισκέπτες επιστρέφουν σχεδόν πάντα στη Σιθωνία." }
+      },
+      {
+        q: { en: "Do I need a car in Halkidiki?", el: "Χρειάζομαι αυτοκίνητο στη Χαλκιδική;" },
+        a: { en: "Yes, absolutely. Even if you are staying at an organized resort, the only way to explore the hidden beaches — Kavourotrypes, Armenistis, Tripiti, Kriaritsi — is by car. For Sithonia, an SUV or at least a high-clearance car is recommended, as some beaches have dirt road access.", el: "Ναι, ανεπιφύλακτα. Ακόμα και αν μένεις σε οργανωμένο resort, ο μόνος τρόπος να εξερευνήσεις τις κρυφές παραλίες είναι με αυτοκίνητο. Για τη Σιθωνία, συνιστάται SUV ή τουλάχιστον ψηλό αυτοκίνητο." }
+      },
+      {
+        q: { en: "When is the best time to visit Halkidiki?", el: "Πότε είναι η καλύτερη εποχή για τη Χαλκιδική;" },
+        a: { en: "June and September are the ideal months. The sea is warm, the crowds are fewer, hotels are more affordable and the weather is excellent. August is the peak month for crowds and prices — Halkidiki receives millions of visitors every summer, mainly from Thessaloniki, the Balkans and Eastern Europe.", el: "Ιούνιος και Σεπτέμβριος είναι οι ιδανικοί μήνες. Ο Αύγουστος είναι ο ψηλότερος μήνας από πλευράς κόσμου και τιμών." }
+      },
+      {
+        q: { en: "Can I visit Mount Athos?", el: "Μπορώ να επισκεφθώ τον Άγιο Όρος;" },
+        a: { en: "Male travelers can visit Mount Athos with a special permit (diamonitirion) issued by the Ministry of Foreign Affairs or from offices in Ouranoupoli. Advance booking is required. Women are not permitted to enter the territory of Mount Athos, but can take the boat tour around it from Ouranoupoli and Neos Marmaras.", el: "Άνδρες ταξιδιώτες μπορούν να επισκεφθούν το Άγιο Όρος με ειδικό έγγραφο (diamonitirion). Γυναίκες δεν επιτρέπεται να εισέλθουν, αλλά μπορούν να κάνουν το γύρο από τη θάλασσα." }
+      },
+      {
+        q: { en: "What are the most beautiful hidden beaches in Halkidiki?", el: "Ποιες είναι οι ωραιότερες και πιο άγνωστες παραλίες της Χαλκιδικής;" },
+        a: { en: "Beyond the well-known ones, seek out: Kavourotrypes (Sithonia) — sea caves with turquoise light, Armenistis (north Sithonia) — unspoiled wild coast, Tripiti (near Ouranoupoli) — natural rock arch over the sea, Kavo Posidi (south Kassandra) — white pebbles and pines, and Ormos Panagias (south Sithonia) — a quiet bay with natural shade from pine forest.", el: "Πέρα από τις γνωστές, αξίζει να ψάξεις: Καβουρότρυπες, Αρμενιστής, Τριπίτη, Κάβο Πόσιδι, και Όρμος Παναγιά." }
+      },
+      {
+        q: { en: "Is Halkidiki suitable for a day trip from Thessaloniki?", el: "Είναι η Χαλκιδική κατάλληλη για ημερήσια εκδρομή από τη Θεσσαλονίκη;" },
+        a: { en: "Yes for an introduction, no for a full experience. From Thessaloniki to Kassandra the distance is about 70 kilometres and the drive 1 to 1.5 hours. For Sithonia and Ouranoupoli you need at least two nights. Halkidiki rewards patience — its most beautiful moments are after 5 pm, when the day visitors have left.", el: "Ναι για εισαγωγή, όχι για πλήρη γνωριμία. Για τη Σιθωνία και την Ουρανούπολη χρειάζεσαι τουλάχιστον δύο νύχτες. Η Χαλκιδική ανταμείβει την υπομονή." }
+      },
+    ],
+    seo: {
+      title: {
+        en: "Where to Stay in Halkidiki | Best Areas & Hotels | GoGreeceNow",
+        el: "Πού να Μείνεις στη Χαλκιδική | Καλύτερες Περιοχές & Ξενοδοχεία | GoGreeceNow"
+      },
+      description: {
+        en: "Find the best places to stay in Halkidiki — from the cosmopolitan resorts of Sani and the lively beach atmosphere of Pefkochori on Kassandra, to the wild hidden beaches of Sithonia, the luxury retreats around Neos Marmaras and the mystical gateway of Ouranoupoli towards Mount Athos. A complete guide to Halkidiki hotels and areas.",
+        el: "Βρες τις καλύτερες περιοχές διαμονής στη Χαλκιδική — από τη Σάνη και το Πευκοχώρι στην Κασσάνδρα και τα πολυτελή resort της Σιθωνίας, μέχρι τα κρυφά διαμάντια γύρω από τις Καβουρότρυπες και την Ουρανούπολη. Πλήρης οδηγός για ξενοδοχεία και περιοχές στη Χαλκιδική."
+      }
     },
   },
   {
     slug: "meteora",
     name: "Where to Stay in Meteora",
-    place: "Meteora",
+    place: "Meteora — Thessaly",
     info: {
-      en: "Discover the best areas and hotels to stay in Meteora.",
-      el: "Ανακαλύψτε τις καλύτερες περιοχές και ξενοδοχεία για διαμονή στη Meteora.",
+      en: "Find the best places to stay in Meteora — from the practical base of Kalambaka and the atmospheric village of Kastraki nestled among the rocks, to the hidden monasteries, secret sunrise spots and day trips to Plastira Lake. The most complete guide to Meteora hotels and areas.",
+      el: "Πού να μείνεις στα Μετέωρα — από την πρακτική Καλαμπάκα και το ατμοσφαιρικό Καστράκι μέσα στους βράχους, μέχρι τα κρυφά μοναστήρια, τα sunrise σημεία που δεν ξέρει κανείς και τις ημερήσιες εκδρομές στη Λίμνη Πλαστήρα. Ο πληρέστερος ελληνικός οδηγός διαμονής για τα Μετέωρα.",
     },
     image: "/images/meteora.webp",
-    badge: "Upcoming Guide",
+    badge: "Featured stay",
     overview: {
-      en: "A detailed guide on where to stay in Meteora is coming soon. For now, explore our interactive map to find the best accommodation options.",
-      el: "Ένας αναλυτικός οδηγός για το πού να μείνετε στη Meteora έρχεται σύντομα. Προς το παρόν, εξερευνήστε τον διαδραστικό μας χάρτη για να βρείτε τις καλύτερες επιλογές διαμονής.",
+      en: "Choosing your base in Meteora is one of the most important decisions of the trip — the practical Kalambaka with direct rail connections and a wide choice of hotels, Kastraki which is literally embraced by the rocks with breathtaking views from every window, and the hidden corners of the wider region that reward travelers who dare to stray from the tourist circuit.",
+      el: "Η επιλογή βάσης στα Μετέωρα είναι μία από τις πιο σημαντικές αποφάσεις του ταξιδιού — η πρακτική Καλαμπάκα με τις άμεσες συνδέσεις και την πλατιά επιλογή ξενοδοχείων, το Καστράκι που κυριολεκτικά αγκαλιάζεται από τους βράχους και προσφέρει θέα που κόβει την ανάσα από κάθε παράθυρο, και οι αφανείς γωνιές της ευρύτερης περιοχής που ανταμείβουν τους ταξιδιώτες που τολμούν να αποκλίνουν από το τουριστικό circuit.",
+    },
+    description: {
+      en: "Relaxing stays, breathtaking views and authentic hospitality — organized in a clear and practical way.",
+      el: "Χαλαρωτική διαμονή, εκπληκτική θέα και αυθεντική φιλοξενία — οργανωμένα με καθαρό και πρακτικό τρόπο.",
     },
     features: {
-      en: ["Hotels", "Resorts", "Apartments"],
-      el: ["Ξενοδοχεία", "Resorts", "Διαμερίσματα"],
+      en: ["Kalambaka (Practical & Connected)", "Kastraki (Atmospheric & Among the Rocks)", "6 UNESCO Monastery Sites", "Hidden: Ypapantis, Bantova, Doupiani", "Sunrise & Sunset Key Spots", "Day Trip: Plastira Lake (45 km)", "Day Trip: Trikala (20 km)", "Hiking Trails Kastraki—Great Meteoron"],
+      el: ["Καλαμπάκα (Πρακτική & Συνδεδεμένη)", "Καστράκι (Ατμοσφαιρικό & Μέσα στους Βράχους)", "6 Επισκέψιμα Μοναστήρια UNESCO", "Κρυφά: Υπαπαντή, Μπάντοβας, Δουπιανή", "Sunrise & Sunset Σημεία Κλειδιά", "Εκδρομή: Λίμνη Πλαστήρα (45 χλμ.)", "Εκδρομή: Τρίκαλα (20 χλμ.)", "Πεζοπορικά Μονοπάτια Καστράκι—Μεγάλο Μετέωρο"],
+    },
+    sections: [
+      {
+        title: { en: "1. Kalambaka: The most practical base — and much more than a transit stop", el: "1. Καλαμπάκα: Η πιο πρακτική βάση — και πολλά περισσότερα από σταθμός" },
+        content: {
+          en: "Kalambaka is the main town of the region — a lively town of 12,000 inhabitants at the foot of the rocks, with a direct rail connection to Athens (about 4 hours) and Thessaloniki (about 3.5 hours), daily KTEL buses from Trikala, and the richest network of hotels, restaurants and services in the wider area. For a first-time visitor to Meteora, Kalambaka is the most logical choice: you arrive easily, find accommodation for every budget, and have restaurants open until late at night. The old town of Kalambaka, on the southeastern foothills of the rocks, is characteristically different from the centre — narrow streets, traditional courtyards, and the Early Christian Basilica of the Dormition of the Virgin (11th century), one of the most overlooked Byzantine monuments in Thessaly, with colourful mosaic floors and frescoes from the Macedonian dynasty era. Few tourists stop here — most rush towards the monasteries. Hotels in Kalambaka range from simple rooms in family-run guesthouses to fine boutique hotels with rock views from the terrace. A room with a northern or northwestern view gives direct visual contact with the rocks — a change that completely transforms the experience, especially at dawn when the mist settles in the valley. From the centre of Kalambaka, hiking trails begin towards the Monastery of Agia Triada and Agios Stefanos — worth avoiding the car for this route and doing it on foot at least once.",
+          el: "Η Καλαμπάκα είναι η κεφαλούπολη της περιοχής — μια ζωντανή κωμόπολη 12.000 κατοίκων στους πρόποδες των βράχων, με άμεση σιδηροδρομική σύνδεση με Αθήνα και Θεσσαλονίκη, καθημερινά δρομολόγια ΚΤΕΛ και το πλουσιότερο δίκτυο ξενοδοχείων στην ευρύτερη περιοχή. Η παλιά πόλη της Καλαμπάκας έχει την Παλαιοχριστιανική Βασιλική Κοίμησης Θεοτόκου (11ος αιώνας), ένα αδικαδόξαστα βυζαντινό μνημείο. Τα ξενοδοχεία ποικίλλουν από απλά δωμάτια μέχρι boutique ξενοδοχεία με θέα τους βράχους. Από το κέντρο ξεκινούν μονοπάτια για τη Μονή Αγίας Τριάδας και τον Άγιο Στέφανο.",
+        }
+      },
+      {
+        title: { en: "2. Kastraki: The most atmospheric village — built among the rocks", el: "2. Καστράκι: Το πιο ατμοσφαιρικό χωριό — χτισμένο μέσα στους βράχους" },
+        content: {
+          en: "Kastraki is just 2 kilometres from Kalambaka, but the distance in experience is measured in entire worlds. It is a village literally built among the rocks — the first meteoric formations begin at its square, the cliffs rise vertically behind every house, and the monasteries are visible from most rooms without even getting out of bed. This makes staying in Kastraki a qualitatively different experience — you do not visit Meteora, you live inside it. The architecture is traditional Thessalian — stone houses, drystone walls, narrow cobblestone alleys and vegetable gardens. Hotels here are mainly small, family-run, with character — guesthouses and boutique rooms in renovated traditional buildings, many offering terraces with direct rock views. The Doupiani House at the northwestern edge of the village, right at the foot of the Doupiani rock, is one of the most beloved boutique hotels in the area. From Kastraki the most interesting hiking trails depart — including the path leading to the Great Meteoron Monastery through the pine forest, completely avoiding the asphalt road. The walk takes about 40 minutes at a moderate pace and is one of the most rewarding in the country. Hidden gem of Kastraki: at the northwestern edge of the village, the small chapel of Panagia Doupiani — the first church of the Meteora monastic complex — accessible by a simple 10-minute path from the edge of the village.",
+          el: "Το Καστράκι είναι μόλις 2 χιλιόμετρα από την Καλαμπάκα, αλλά η απόσταση σε εμπειρία μετράται σε κόσμους. Τα ξενοδοχεία είναι κυρίως μικρά, οικογενειακά, σε ανακαινισμένα παραδοσιακά κτίρια. Το Doupiani House είναι από τα πιο αγαπημένα boutique ξενοδοχεία. Από το Καστράκι ξεκινά το μονοπάτι για τη Μονή Μεγάλου Μετεώρου μέσα από το πευκοδάσος. Κρυφό διαμάντι: το παρεκκλήσι της Παναγίας Δουπιανής, ο πρώτος ναός του μοναστικού συγκροτήματος.",
+        }
+      },
+      {
+        title: { en: "3. The Six Visit Monasteries: What to expect and where to go first", el: "3. Τα Έξι Επισκέψιμα Μοναστήρια: Τι να περιμένεις και πού να πας πρώτα" },
+        content: {
+          en: "Of the thirty monasteries that historically operated in Meteora, only six are visitable today — and each has an entirely different character, different feel, different view. Great Meteoron: the largest and highest monastery at 613 metres, founded by Saint Athanasios in the 14th century, with an impressive museum of Byzantine icons and manuscripts. Entrance via 115 steps carved into the rock. Varlaam: next to the Great Meteoron, with exceptionally well-preserved 16th-century frescoes in the main church. Roussanou: the most visually striking monastery for photography — perched on a low, steep rock shaped like a blade, surrounded by air on all sides. A women's monastery, the nuns care for visitors with exceptional warmth. Agia Triada: internationally known as the location of the James Bond film For Your Eyes Only (1981), but worth far more than that fame — the hike from Kalambaka is one of the finest in Meteora. Agios Stefanos: the only monastery reached without stairs, crossing a bridge over a deep ravine. A women's monastery with an excellent museum of ecclesiastical embroidery. Agios Nikolaos Anapafsas: the smallest and quietest of the six, often overlooked by visitors rushing to the larger monasteries — a mistake, as it has some of the finest 16th-century frescoes in Meteora.",
+          el: "Από τα τριάντα μοναστήρια που λειτούργησαν ιστορικά, σήμερα είναι επισκέψιμα μόνο έξι. Μονή Μεταμορφώσεως (Μεγάλο Μετέωρο): το μεγαλύτερο και υψηλότερο. Μονή Βαρλαάμ: με εξαιρετικές τοιχογραφίες του 16ου αιώνα. Μονή Ρουσάνου: το πιο εντυπωσιακό φωτογραφικά. Μονή Αγίας Τριάδας: γνωστή από την ταινία James Bond. Μονή Αγίου Στεφάνου: η μόνη χωρίς σκαλιά. Μονή Αγίου Νικολάου Αναπαυσά: η πιο μικρή και ήσυχη, με υπέροχες τοιχογραφίες.",
+        }
+      },
+      {
+        title: { en: "4. The Hidden Monasteries & The World Tourists Don't See", el: "4. Τα Κρυφά Μοναστήρια & Ο Κόσμος που Δεν Βλέπουν οι Τουρίστες" },
+        content: {
+          en: "Beyond the six visitable monasteries, there are 15 abandoned, ruined or non-visitable monasteries — some of which can be approached and are among the most stunning hidden gems in all of Greece. Ypapantis Monastery: built in the 14th century inside a spacious sandstone cave at a height of 70 metres, now ruined but still visitable. It stands at the edge of a massive rock and offers a unique view of Kalambaka and Kastraki that cannot be seen from any of the six main monasteries. Agios Nikolaos Bantova (or Kofinas): 14th century, built at the root of a rock in Kastraki. A short hike reveals this nearly forgotten monastery, near which the openings of caves used by ascetics are still visible. Agios Georgios Mandilas: a small chapel built on a steep rock in Kastraki, non-visitable due to its position but clearly visible from below. The Skete of Stagon — Doupiani: the first monastic building of the entire complex, built in the 13th century. Its courtyard has a simple, stunning silence found nowhere else.",
+          el: "Πέρα από τα έξι επισκέψιμα, υπάρχουν 15 ερειπωμένα ή μη επισκέψιμα μοναστήρια. Μονή Υπαπαντής: 14ος αιώνας μέσα σε σπήλαιο, με μοναδική θέα. Μονή Αγίου Νικολάου Μπάντοβα: σχεδόν λησμονημένη. Άγιος Γεώργιος Μανδηλάς: εκκλησάκι σε απόκρημνο βράχο. Η Σκήτη των Σταγών — Δουπιανή: το πρώτο μοναστικό κτίσμα του συγκροτήματος.",
+        }
+      },
+      {
+        title: { en: "5. Sunrise, Sunset & Photography Spots That Don't Appear on Tourist Maps", el: "5. Sunrise, Sunset & Τα Σημεία Φωτογραφίας που Δεν Εμφανίζονται στον Τουριστικό Χάρτη" },
+        content: {
+          en: "Meteora changes completely depending on the light — and the most impressive moments are before 8 am and after 7 pm, when the tourist groups have left and the place returns to itself. Sunrise from Roussanou: the most beautiful sunrise in Meteora is seen not from the top but from the road just before Roussanou Monastery, where the rock begins to turn golden while the rest of the valley is still in shadow. Sunset Rock: the most famous sunset spot — a natural rise northwest of Agios Nikolaos Anapafsas, where Roussanou and the surrounding rocks ignite in orange and red. Hidden sunrise spot: a rocky rise east of the old town of Kalambaka offers a view of the rocks against the rising sun that does not appear in any tourist guide. The mist experience: in autumn and early spring, the valley often fills with low mist covering the plain while the rock tops and monasteries protrude above it — a sight many consider even more impressive than the summer sunset.",
+          el: "Τα Μετέωρα αλλάζουν τελείως ανάλογα με το φως. Sunrise από τη Μονή Ρουσάνου: ο δρόμος λίγο πριν τη μονή. Sunset Rock: το πιο γνωστό σημείο δύσης. Κρυφό sunrise σημείο: βραχώδες ύψωμα ανατολικά της παλιάς πόλης. Η εμπειρία της ομίχλης το φθινόπωρο είναι μαγευτική.",
+        }
+      },
+      {
+        title: { en: "6. Day Trips: Trikala, Plastira Lake & Unknown Thessaly", el: "6. Ημερήσιες Εκδρομές: Τρίκαλα, Λίμνη Πλαστήρα & Η Άγνωστη Θεσσαλία" },
+        content: {
+          en: "Meteora is located at the geographical centre of one of the richest and least-known regions of Greece. Trikala (20 km): the capital of the prefecture, a lively city with a large student community, impressive Byzantine Fortress, the old Varousi district with neoclassical buildings and riverside square on the Lithaios river. Plastira Lake (45 km): one of the most impressive natural landscapes in mainland Greece — an artificial lake of 4,800 acres at 800 metres altitude, surrounded by fir forest, undeveloped shores and traditional mountain villages. The route from Kalambaka to Plastira Lake through mountainous Domokos is one of the finest mountain drives in central Greece. The villages of Neochori, Morfovouni and Leontari are among the best-preserved mountain villages in Thessaly. Trikala morning — Plastira midday — Meteora sunset can all be combined in a single day with a car.",
+          el: "Τρίκαλα (20 χλμ.): ζωντανή πόλη με Βυζαντινό Φρούριο και παλιά συνοικία Βαρούσι. Λίμνη Πλαστήρα (45 χλμ.): εντυπωσιακό φυσικό τοπίο με ελατόδασος και παραδοσιακά χωριά. Η διαδρομή Καλαμπάκα—Λίμνη Πλαστήρα μέσα από το ορεινό Δομοκό είναι από τις ωραιότερες στην κεντρική Ελλάδα.",
+        }
+      },
+    ],
+    faq: [
+      {
+        q: { en: "Kalambaka or Kastraki? Which is the better choice?", el: "Καλαμπάκα ή Καστράκι; Ποια είναι η καλύτερη επιλογή;" },
+        a: { en: "For a first visit and easy access, Kalambaka is the most practical. For an experience you will remember, Kastraki is incomparably superior — you live literally among the rocks, the monasteries are visible from your room, and the hiking trails start from the square. The distance between them is just 2 kilometres, so the choice is purely a matter of atmosphere.", el: "Για πρώτη επίσκεψη, η Καλαμπάκα είναι πιο πρακτική. Για εμπειρία που θα θυμάσαι, το Καστράκι είναι ανώτερο — ζεις μέσα στους βράχους." }
+      },
+      {
+        q: { en: "How many days do I need for Meteora?", el: "Πόσες μέρες χρειάζομαι για τα Μετέωρα;" },
+        a: { en: "The minimum time to see the six monasteries is two days. But if you want to see what tourists don't — the hidden monasteries, the hiking trails, the sunrise, the Plastira Lake excursion — you need at least three nights. Many who come for two days regret not staying a third night.", el: "Ελάχιστος χρόνος δύο ημέρες. Για τα κρυφά μοναστήρια και την εκδρομή στη Λίμνη Πλαστήρα, χρειάζεσαι τουλάχιστον τρεις νύχτες." }
+      },
+      {
+        q: { en: "Do I need a car in Meteora?", el: "Χρειάζεται αυτοκίνητο στα Μετέωρα;" },
+        a: { en: "For the six main monasteries there are tourist buses and taxis from Kalambaka, so a car is not essential. For the hidden monasteries, Plastira Lake, the sunrise spots early in the morning and the surrounding villages — a car makes all the difference.", el: "Για τα κύρια μοναστήρια όχι. Για τα κρυφά μοναστήρια και την εξερεύνηση σε βάθος, το αυτοκίνητο κάνει τη διαφορά." }
+      },
+      {
+        q: { en: "What is the best time to visit Meteora?", el: "Ποια είναι η καλύτερη εποχή για τα Μετέωρα;" },
+        a: { en: "Spring (April—June) and autumn (September—November) are ideal. In April the trees blossom, the weather is cool and the crowds are few. Summer (July—August) is overwhelming with visitors. Winter — especially after snowfall — gives a magical, completely different image that few have seen.", el: "Άνοιξη και φθινόπωρο είναι οι ιδανικές εποχές. Το καλοκαίρι έχει πολύ κόσμο. Ο χειμώνας με χιόνι είναι μαγικός." }
+      },
+      {
+        q: { en: "Can I reach Meteora by train or bus?", el: "Μπορώ να πάω στα Μετέωρα με τρένο ή λεωφορείο;" },
+        a: { en: "Yes. Kalambaka has a railway station with connections from Athens (change at Larissa or Palaiofarsala, total 4—4.5 hours) and Thessaloniki (3—3.5 hours). There are also KTEL buses from Athens, Thessaloniki and Trikala. From Kalambaka to the monasteries there are tourist buses (morning to midday in summer) and taxis.", el: "Ναι. Η Καλαμπάκα έχει σιδηροδρομικό σταθμό και ΚΤΕΛ. Από την Καλαμπάκα στα μοναστήρια υπάρχουν τουριστικά λεωφορεία και ταξί." }
+      },
+      {
+        q: { en: "What is the dress code for the monasteries?", el: "Ποιος ο κώδικας ενδυμασίας για τα μοναστήρια;" },
+        a: { en: "Strict and mandatory. Men: long trousers (no shorts). Women: skirt or dress below the knee, shoulders covered. Most monasteries provide wraps and skirts at the entrance free of charge or for a small fee — but it is better to bring your own out of respect.", el: "Αυστηρός. Άνδρες: μακριά παντελόνια. Γυναίκες: φούστα κάτω από το γόνατο, ώμοι σκεπαστοί." }
+      },
+      {
+        q: { en: "Is Meteora worth visiting in winter?", el: "Αξίζει η επίσκεψη το χειμώνα;" },
+        a: { en: "For most travelers, a winter visit is a revelation. The monasteries open with reduced hours but remain operational. Winter gives the rare opportunity to walk on almost empty trails, see the rocks covered in snow — one of the most majestic images in Greece — and sit in a taverna with a fireplace in Kastraki without crowds or rush. You need snow chains for the car if visiting after snowfall.", el: "Για τους περισσότερους, η χειμερινή επίσκεψη είναι αποκάλυψη. Οι βράχοι με χιόνι είναι από τις πιο μεγαλειώδεις εικόνες της Ελλάδας." }
+      },
+    ],
+    seo: {
+      title: {
+        en: "Where to Stay in Meteora | Kalambaka, Kastraki & Hidden Gems | GoGreeceNow",
+        el: "Πού να Μείνεις στα Μετέωρα | Καλαμπάκα, Καστράκι & Κρυφά Μονοπάτια | GoGreeceNow"
+      },
+      description: {
+        en: "Find the best places to stay in Meteora — from the practical base of Kalambaka and the atmospheric village of Kastraki nestled among the rocks, to the hidden monasteries, secret sunrise spots and day trips to Plastira Lake. The most complete guide to Meteora hotels and areas.",
+        el: "Πού να μείνεις στα Μετέωρα — από την πρακτική Καλαμπάκα και το ατμοσφαιρικό Καστράκι μέσα στους βράχους, μέχρι τα κρυφά μοναστήρια, τα sunrise σημεία που δεν ξέρει κανείς και τις ημερήσιες εκδρομές στη Λίμνη Πλαστήρα. Ο πληρέστερος ελληνικός οδηγός διαμονής για τα Μετέωρα."
+      }
     },
   },
   {
