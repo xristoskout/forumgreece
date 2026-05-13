@@ -19,7 +19,7 @@ export const destinations: Destination[] = [
     },
     guideLinks: [
       {
-        href: "/travel-info/where-to-stay-in-santorini",
+        href: "/hotels/santorini",
         label: { en: "Where to Stay in Santorini", el: "Πού να μείνεις στη Σαντορίνη" }
       }
     ],
@@ -53,6 +53,10 @@ export const destinations: Destination[] = [
       el: ["Ανεμόμυλοι", "Μικρή Βενετία", "Party παραλίες"],
     },
     guideLinks: [
+      {
+        href: "/hotels/mykonos",
+        label: { en: "Where to Stay in Mykonos", el: "Πού να μείνεις στη Μύκονο" }
+      },
       {
         href: "/travel-info/best-tours-in-mykonos",
         label: { en: "Best Tours in Mykonos", el: "Καλύτερες Εκδρομές στη Μύκονο" }
@@ -89,6 +93,10 @@ export const destinations: Destination[] = [
     },
     guideLinks: [
       {
+        href: "/hotels/crete",
+        label: { en: "Where to Stay in Crete", el: "Πού να μείνεις στην Κρήτη" }
+      },
+      {
         href: "/travel-info/best-hotels-in-crete-for-families",
         label: { en: "Best Family Hotels", el: "Οικογενειακά Ξενοδοχεία" }
       }
@@ -123,6 +131,10 @@ export const destinations: Destination[] = [
       el: ["Παραλία Μύρτος", "Σπήλαιο Μελισσάνης", "Όρος Αίνος"],
     },
     guideLinks: [
+      {
+        href: "/hotels/kefalonia",
+        label: { en: "Where to Stay in Kefalonia", el: "Πού να μείνεις στην Κεφαλονιά" }
+      },
       {
         href: "/travel-info/best-boat-trips-in-kefalonia",
         label: { en: "Best Boat Trips", el: "Εκδρομές με Σκάφος" }
@@ -159,6 +171,10 @@ export const destinations: Destination[] = [
     },
     guideLinks: [
       {
+        href: "/hotels/lesvos",
+        label: { en: "Where to Stay in Lesvos", el: "Πού να μείνεις στη Λέσβο" }
+      },
+      {
         href: "/travel-info/things-to-do-in-lesvos",
         label: { en: "Things to Do in Lesvos", el: "Τι να Κάνεις στη Λέσβο" }
       }
@@ -193,6 +209,10 @@ export const destinations: Destination[] = [
       el: ["Ακρόπολη & Μουσεία", "Αθηναϊκή Ριβιέρα", "Γειτονιές & Γαστρονομία"],
     },
     guideLinks: [
+      {
+        href: "/hotels/athens",
+        label: { en: "Where to Stay in Athens", el: "Πού να μείνεις στην Αθήνα" }
+      },
       {
         href: "/travel-info/where-to-stay-in-athens-for-first-time-visitors",
         label: { en: "Where to Stay (First Timers)", el: "Πού να Μείνεις (Πρώτη Φορά)" }
@@ -237,7 +257,13 @@ export const destinations: Destination[] = [
         en: "Detailed travel guide to Corfu: why it's worth visiting, best time, how to get there, top attractions and experiences, beaches for every taste, surprise villages, local flavors and practical tips + FAQ.",
         el: "Αναλυτικός ταξιδιωτικός οδηγός για Κέρκυρα: γιατί αξίζει, καλύτερη εποχή, πώς φτάνεις, κορυφαία αξιοθέατα και εμπειρίες, παραλίες για κάθε γούστο, χωριά-έκπληξη, τοπικές γεύσεις και πρακτικά tips + FAQ."
       }
-    }
+    },
+    guideLinks: [
+      {
+        href: "/hotels/corfu",
+        label: { en: "Where to Stay in Corfu", el: "Πού να μείνεις στην Κέρκυρα" }
+      }
+    ],
   },
   {
     slug: "nayplio-odigos-taxidiou",
@@ -266,7 +292,13 @@ export const destinations: Destination[] = [
         en: "Complete guide to Nafplio: why it's worth visiting, best time, how to go, top attractions (Old Town, Palamidi, Bourtzi, Akronafplia), beaches and nearby villages, local food, practical tips + FAQ to enjoy it like a local.",
         el: "Πλήρης οδηγός για Ναύπλιο: γιατί αξίζει, καλύτερη εποχή, πώς θα πας, κορυφαία αξιοθέατα (Παλιά Πόλη, Παλαμήδι, Μπούρτζι, Ακροναυπλία), παραλίες και κοντινά χωριά, τοπικές γεύσεις, πρακτικά tips + FAQ για να το απολαύσεις σαν ντόπιος."
       }
-    }
+    },
+    guideLinks: [
+      {
+        href: "/hotels/nayplio-odigos-taxidiou",
+        label: { en: "Where to Stay in Nafplio", el: "Πού να μείνεις στο Ναύπλιο" }
+      }
+    ],
   },
   {
     slug: "thessaloniki",
@@ -295,7 +327,13 @@ export const destinations: Destination[] = [
         en: "Detailed guide to Thessaloniki: why it's worth it, best time, how to get there, what to see (UNESCO monuments, White Tower, Upper Town, Rotunda), where to eat (markets, bougatsa, koulouri), nearby beaches (Peraia, Agia Triada, Epanomi) and practical tips + FAQ.",
         el: "Αναλυτικός οδηγός για Θεσσαλονίκη: γιατί αξίζει, καλύτερη εποχή, πώς φτάνεις, τι να δεις (UNESCO μνημεία, Λευκός Πύργος, Άνω Πόλη, Ροτόντα), πού να φας (αγορές, bougatsa, koulouri), κοντινές παραλίες (Περαία, Αγ. Τριάδα, Επανομή) και πρακτικά tips + FAQ."
       }
-    }
+    },
+    guideLinks: [
+      {
+        href: "/hotels/thessaloniki",
+        label: { en: "Where to Stay in Thessaloniki", el: "Πού να μείνεις στη Θεσσαλονίκη" }
+      }
+    ],
   },
   {
     slug: "paros",
@@ -311,7 +349,7 @@ export const destinations: Destination[] = [
     featured: true,
     guideLinks: [
       {
-        href: "/hotels?destination=paros",
+        href: "/hotels/paros",
         label: { en: "Explore stays in Paros", el: "Ανακαλύψτε διαμονή στην Πάρο" }
       },
       {
@@ -348,7 +386,7 @@ export const destinations: Destination[] = [
     featured: true,
     guideLinks: [
       {
-        href: "/hotels?destination=milos",
+        href: "/hotels/milos",
         label: { en: "Explore stays in Milos", el: "Ανακαλύψτε διαμονή στη Μήλο" }
       },
       {
@@ -385,7 +423,7 @@ export const destinations: Destination[] = [
     featured: true,
     guideLinks: [
       {
-        href: "/hotels?destination=zakynthos",
+        href: "/hotels/zakynthos",
         label: { en: "Explore stays in Zakynthos", el: "Ανακαλύψτε διαμονή στη Ζάκυνθο" }
       },
       {
@@ -426,7 +464,7 @@ export const destinations: Destination[] = [
         label: { en: "See tours & experiences", el: "Δείτε εμπειρίες & tours" }
       },
       {
-        href: "/hotels?destination=rhodes",
+        href: "/hotels/rhodes",
         label: { en: "Explore stays in Rhodes", el: "Ανακαλύψτε διαμονή στη Ρόδο" }
       },
       {
@@ -463,7 +501,7 @@ export const destinations: Destination[] = [
         label: { en: "See tours & experiences", el: "Δείτε εμπειρίες & tours" }
       },
       {
-        href: "/hotels?destination=halkidiki",
+        href: "/hotels/halkidiki",
         label: { en: "Explore stays in Halkidiki", el: "Ανακαλύψτε διαμονή στη Χαλκιδική" }
       },
       {
@@ -500,7 +538,7 @@ export const destinations: Destination[] = [
         label: { en: "See tours & experiences", el: "Δείτε εμπειρίες & tours" }
       },
       {
-        href: "/hotels?destination=meteora",
+        href: "/hotels/meteora",
         label: { en: "Explore stays in Meteora", el: "Ανακαλύψτε διαμονή στα Μετέωρα" }
       },
       {
@@ -537,7 +575,7 @@ export const destinations: Destination[] = [
         label: { en: "See tours & experiences", el: "Δείτε εμπειρίες & tours" }
       },
       {
-        href: "/hotels?destination=monemvasia",
+        href: "/hotels/monemvasia",
         label: { en: "Explore stays in Monemvasia", el: "Ανακαλύψτε διαμονή στη Μονεμβασιά" }
       },
       {
@@ -574,7 +612,7 @@ export const destinations: Destination[] = [
         label: { en: "Explore Crete Guide", el: "Οδηγός Ταξιδιού Κρήτης" }
       },
       {
-        href: "/hotels?destination=chania",
+        href: "/hotels/chania",
         label: { en: "Explore stays in Chania", el: "Ανακαλύψτε διαμονή στα Χανιά" }
       },
       {
@@ -615,7 +653,7 @@ export const destinations: Destination[] = [
         label: { en: "See tours & experiences", el: "Δείτε εμπειρίες & tours" }
       },
       {
-        href: "/hotels?destination=parga",
+        href: "/hotels/parga",
         label: { en: "Explore stays in Parga", el: "Ανακαλύψτε διαμονή στην Πάργα" }
       },
       {
@@ -652,7 +690,7 @@ export const destinations: Destination[] = [
         label: { en: "See tours & experiences", el: "Δείτε εμπειρίες & tours" }
       },
       {
-        href: "/hotels?destination=delphi",
+        href: "/hotels/delphi",
         label: { en: "Explore stays in Delphi", el: "Ανακαλύψτε διαμονή στους Δελφούς" }
       },
       {

@@ -1260,58 +1260,394 @@ export const hotels: HotelCard[] = [
   {
     slug: "chania",
     name: "Where to Stay in Chania",
-    place: "Chania",
+    place: "Chania — Western Crete",
     info: {
-      en: "Discover the best areas and hotels to stay in Chania.",
-      el: "Ανακαλύψτε τις καλύτερες περιοχές και ξενοδοχεία για διαμονή στη Chania.",
+      en: "Find the best neighborhoods to stay in Chania — from the iconic Venetian harbour and the bohemian Splantzia quarter to the diplomatic Halepa, the local Nea Chora seafront and the wild Akrotiri peninsula. The most complete guide to Chania hotels, hidden beaches and areas for every type of traveler.",
+      el: "Βρείτε τις καλύτερες γειτονιές για διαμονή στα Χανιά — από το εμβληματικό ενετικό λιμάνι και την μποέμικη συνοικία Σπλάντζια έως τη διπλωματική Αλεπού, το τοπικό παραλιακό μέτωπο της Νέας Χώρας και την άγρια χερσόνησο Ακρωτήρι. Ο πληρέστερος οδηγός για ξενοδοχεία, κρυφές παραλίες και περιοχές στα Χανιά.",
     },
     image: "/images/chania.webp",
-    badge: "Upcoming Guide",
+    badge: "Featured stay",
     overview: {
-      en: "A detailed guide on where to stay in Chania is coming soon. For now, explore our interactive map to find the best accommodation options.",
-      el: "Ένας αναλυτικός οδηγός για το πού να μείνετε στη Chania έρχεται σύντομα. Προς το παρόν, εξερευνήστε τον διαδραστικό μας χάρτη για να βρείτε τις καλύτερες επιλογές διαμονής.",
+      en: "Choosing where to stay in Chania determines the entire character of your trip — from the Venetian harbour and the narrow Ottoman lanes of the Old Town at the city's heart, to the bohemian café culture of Splantzia, the neoclassical mansions and former consulates of aristocratic Halepa, the beachside tavernas and family calm of Nea Chora, and the monasteries, secret coves and dramatic cliffs of the Akrotiri peninsula just across the bay.",
+      el: "Η επιλογή διαμονής στα Χανιά καθορίζει ολόκληρο τον χαρακτήρα του ταξιδιού σας — από το ενετικό λιμάνι και τα στενά οθωμανικά σοκάκια της Παλιάς Πόλης έως την μποέμικη κουλτούρα καφέ της Σπλάντζιας, τα νεοκλασικά αρχοντικά της αριστοκρατικής Αλεπούς, τις ταβέρνες δίπλα στη θάλασσα και την οικογενειακή ηρεμία της Νέας Χώρας, και τα μοναστήρια, τους κρυφούς κολπίσκους και τους εντυπωσιακούς γκρεμούς της χερσονήσου Ακρωτήρι.",
+    },
+    description: {
+      en: "Relaxing stays, beautiful views and authentic hospitality — organized in a clear and practical way.",
+      el: "Χαλαρωτικές διαμονές, όμορφη θέα και αυθεντική φιλοξενία — οργανωμένα με καθαρό και πρακτικό τρόπο.",
     },
     features: {
-      en: ["Hotels", "Resorts", "Apartments"],
-      el: ["Ξενοδοχεία", "Resorts", "Διαμερίσματα"],
+      en: ["Venetian Harbour & Kastelli (Iconic & Historic)", "Splantzia (Bohemian & Authentic Local Life)", "Koum Kapi (Quiet, Local & Beach by the Walls)", "Halepa (Elegant, Diplomatic & Venizelos Heritage)", "Nea Chora (Beach, Family & Local Marina)", "Akrotiri Peninsula (Monasteries, Hidden Beaches & Seitan Limania)", "Gateway to Balos Lagoon, Elafonisi & Samaria Gorge", "Ancient Aptera 20 min from the city", "Chania Airport on Akrotiri peninsula"],
+      el: ["Ενετικό Λιμάνι & Καστέλλι (Εμβληματική & Ιστορική)", "Σπλάντζια (Μποέμικη & Αυθεντική)", "Κουμ Καπί (Ήσυχη, Τοπική & Παραλία)", "Αλεπού (Κομψή, Διπλωματική & Βενιζέλος)", "Νέα Χώρα (Παραλία, Οικογένειες & Μαρίνα)", "Χερσόνησος Ακρωτήρι (Μοναστήρια, Κρυφές Παραλίες & Σεϊτάν Λιμάνια)", "Πύλη για Μπάλο, Ελαφονήσι & Φαράγγι Σαμαριάς", "Αρχαία Απτέρα 20 λεπτά από την πόλη", "Αεροδρόμιο Χανίων στο Ακρωτήρι"],
+    },
+    sections: [
+      {
+        title: { en: "1. The Venetian Harbour and Kastelli: The most iconic and atmospheric base in Chania", el: "1. Ενετικό Λιμάνι και Καστέλλι: Η πιο εμβληματική βάση στα Χανιά" },
+        content: {
+          en: "The Venetian harbour quarter — the area immediately surrounding the inner harbour, the lighthouse, the Firkas Fortress and the densely layered lanes of Kastelli above — is the first choice for almost every traveler visiting Chania for the first time. The harbour itself is one of the most beautiful in the Mediterranean: a crescent of honey-coloured stone buildings reflected in still water, with the famous Egyptian Lighthouse at the mouth and the domed silhouette of the Kiutsuk Hasan Mosque framing the view from the eastern quay. At dawn, before the tourists arrive, it is one of the finest views in all of Greece. Kastelli is the elevated neighbourhood above the harbour — the original settlement of ancient Kydonia, later the Venetian aristocratic quarter, and today a dense tangle of lanes and restored mansions with boutique hotels. Casa Delfino, a 17th-century Venetian mansion, is among the finest addresses. Porto Antico Hotel sits directly on the harbour. The main practical consideration is noise — waterfront restaurants stay lively until midnight. Choose accommodation one or two lanes back from the waterfront for peace.",
+          el: "Η περιοχή του ενετικού λιμανιού είναι η πρώτη επιλογή για κάθε επισκέπτη. Το λιμάνι είναι ένα από τα ομορφότερα της Μεσογείου. Το Καστέλλι είναι η συνοικία πάνω από το λιμάνι — ο αρχικός οικισμός της αρχαίας Κυδωνίας. Το Casa Delfino, ένα ενετικό αρχοντικό του 17ου αιώνα, είναι από τα καλύτερα ξενοδοχεία. Κύριο πρακτικό ζήτημα είναι ο θόρυβος — επιλέξτε δωμάτιο ένα ή δύο στενά πίσω από το λιμάνι.",
+        }
+      },
+      {
+        title: { en: "2. Splantzia: The most bohemian and genuinely local quarter of the Old Town", el: "2. Σπλάντζια: Η πιο μποέμικη γειτονιά της Παλιάς Πόλης" },
+        content: {
+          en: "If the harbour area is the face that Chania shows to the world, Splantzia is its soul. This neighbourhood, built around the leafy square of Plateia 1821, was the heart of the Ottoman city and retains a layered, multi-faith character. Its centrepiece is the Church of Agios Nikolaos — originally a Dominican monastery church built by the Venetians in the 14th century, converted to a mosque in 1645, and finally returned to the Orthodox church after 1918. The result carries both a minaret and a bell tower — a feat shared by almost no other building in the world. Beyond the church, the Street of Knives — Skridlof Street — has operated in largely the same form since the Ottoman period. The old Jewish Quarter around the Etz Hayyim Synagogue — one of the very few surviving Romaniote synagogues in Greece — lies at the western boundary. Hotels here are smaller and more personal than in the harbour area. Splantzia is the consistent recommendation for repeat visitors who want to go deeper than the harbour promenade allows.",
+          el: "Αν το λιμάνι είναι το πρόσωπο των Χανίων, η Σπλάντζια είναι η ψυχή τους. Κέντρο της είναι η εκκλησία του Αγίου Νικολάου — αρχικά δομινικανή μονή τον 14ο αιώνα, μετά τζαμί το 1645, και τέλος ορθόδοξη εκκλησία. Φέρει ταυτόχρονα μιναρέ και καμπαναριό. Ο δρόμος των Μαχαιράδων λειτουργεί από την οθωμανική περίοδο. Η Σπλάντζια είναι η σταθερή σύσταση για επισκέπτες που θέλουν κάτι βαθύτερο από την προκυμαία.",
+        }
+      },
+      {
+        title: { en: "3. Koum Kapi: The quietest and most local corner of the Old Town", el: "3. Κουμ Καπί: Η πιο ήσυχη γωνιά της Παλιάς Πόλης" },
+        content: {
+          en: "Koum Kapi occupies the southeastern edge of the Old Town, between the old Venetian sea walls and the open sea, and is the most genuinely residential part of the historic centre. Its name — from the Turkish kumkapi, meaning sand gate — refers to the remains of the Sabbionara Rampart, a Venetian-era sea gate that still stands. The neighbourhood has a café-lined seafront path along the base of the old walls — one of the most pleasant morning walks in Chania. Koum Kapi Beach is a small, informal stretch of golden sand used almost entirely by locals. The streets are quieter and more residential than Splantzia or the harbour area — better taverna value, fewer souvenir shops. For travelers who want Old Town character without the noise, Koum Kapi is the most underrated base in the city.",
+          el: "Το Κουμ Καπί βρίσκεται στο νοτιοανατολικό άκρο της Παλιάς Πόλης και είναι η πιο κατοικημένη γειτονιά του ιστορικού κέντρου. Η παραλία Κουμ Καπί είναι μια μικρή ανεπίσημη αμμουδιά που χρησιμοποιείται κυρίως από ντόπιους. Για ταξιδιώτες που θέλουν τον χαρακτήρα της Παλιάς Πόλης χωρίς τον θόρυβο, το Κουμ Καπί είναι η πιο υποτιμημένη βάση.",
+        }
+      },
+      {
+        title: { en: "4. Halepa: Chania's most elegant neighborhood and the cradle of modern Greek history", el: "4. Αλεπού: Η πιο κομψή γειτονιά των Χανίων" },
+        content: {
+          en: "Halepa lies about fifteen minutes on foot east of the Old Town, and its character is entirely distinct from anything inside the Venetian walls. This was the diplomatic quarter during the 19th and early 20th centuries, when the European powers maintained consulates here. The result is a neighbourhood of neoclassical mansions, tree-lined streets and unhurried bourgeois calm. Eleftherios Venizelos — the most important Greek statesman of the 20th century — was born in Halepa. The Venizelos Graves at the top of the hill offer what many consider the finest panoramic view in all of Chania: the Old Town, the harbour, the Akrotiri peninsula and the White Mountains. Hotels here are typically larger boutique properties in converted neoclassical buildings — quieter and more spacious than Old Town options. Halepa suits travelers who want elegance without the harbour noise.",
+          el: "Η Αλεπού βρίσκεται 15 λεπτά ανατολικά της Παλιάς Πόλης. Ήταν η διπλωματική συνοικία τον 19ο αιώνα. Ο Ελευθέριος Βενιζέλος γεννήθηκε εδώ. Οι Τάφοι Βενιζέλου προσφέρουν την ωραιότερη πανοραμική θέα των Χανίων. Τα ξενοδοχεία είναι μεγαλύτερα, σε νεοκλασικά κτίρια. Η Αλεπού ταιριάζει σε ταξιδιώτες που θέλουν κομψότητα χωρίς τον θόρυβο του λιμανιού.",
+        }
+      },
+      {
+        title: { en: "5. Nea Chora: The most family-friendly seafront neighborhood", el: "5. Νέα Χώρα: Η πιο οικογενειακή παραλιακή γειτονιά" },
+        content: {
+          en: "Nea Chora sits immediately west of the Old Town and has the atmosphere of a proper Greek seaside neighbourhood. It has its own small marina, a good stretch of sandy beach with calm water — the closest organized beach to the Old Town, ten minutes' walk — and a beachfront promenade lined with seafood tavernas. Parking is much easier here, the streets are wide and flat — ideal for families with pushchairs. The Sunday morning fish market at the harbour is one of the most authentically Cretan experiences in the city. Hotels range from family studios to mid-range hotels. Prices are generally lower than in the Old Town.",
+          el: "Η Νέα Χώρα βρίσκεται δυτικά της Παλιάς Πόλης. Έχει δική της μαρίνα, αμμώδη παραλία και παραλιακό πεζόδρομο με ταβέρνες. Η κυριακάτικη ψαραγορά είναι από τις πιο αυθεντικές κρητικές εμπειρίες. Τα ξενοδοχεία είναι πιο οικονομικά από την Παλιά Πόλη.",
+        }
+      },
+      {
+        title: { en: "6. The Akrotiri Peninsula: The hidden world across the bay", el: "6. Χερσόνησος Ακρωτήρι: Ο κρυφός κόσμος απέναντι από τον κόλπο" },
+        content: {
+          en: "The Akrotiri peninsula curves around the northeastern side of Chania Bay. Most visitors look at it without ever crossing to it — a significant mistake. Gouverneto Monastery (1537) guards the entrance to the Avlaki Gorge and the path to the Cave of Arkoudospilia and the ruined Katholiko Monastery — the oldest monastery on Crete, built into a cliff face in the 11th century. The walk through the gorge is one of the most remarkable short hikes in Crete. Agia Triada Monastery (1612) has a Venetian-style facade and produces award-winning olive oil. Stavros Beach — the lagoon where Anthony Quinn danced the Sirtaki in Zorba the Greek — is a perfectly sheltered bay. Seitan Limania — also known as Stefanou Beach — is the most dramatic and photographed beach in the Chania region: three narrow coves with sheer white marble cliffs and turquoise water. Arrive before 9am in summer. Staying on the peninsula suits travelers who want quiet, nature and the monastery circuit.",
+          el: "Η χερσόνησος Ακρωτήρι αγκαλιάζει τον κόλπο των Χανίων. Οι περισσότεροι τη βλέπουν χωρίς να την επισκεφθούν — μεγάλο λάθος. Η Μονή Γουβερνέτου και το ερειπωμένο Καθολικό Μοναστήρι προσφέρουν μια από τις ωραιότερες πεζοπορίες της Κρήτης. Η Μονή Αγίας Τριάδας παράγει βραβευμένο ελαιόλαδο. Η παραλία Σταυρός είναι η λιμνοθάλασσα του Ζορμπά. Τα Σεϊτάν Λιμάνια είναι η πιο εντυπωσιακή παραλία της περιοχής.",
+        }
+      },
+      {
+        title: { en: "7. Day Trips from Chania: The Best of Western Crete", el: "7. Ημερήσιες Εκδρομές από τα Χανιά: Η Δυτική Κρήτη" },
+        content: {
+          en: "Chania is the finest base for exploring western Crete. Balos Lagoon (55 km, 1h15min) — a sweeping double lagoon of white sand and turquoise shallows, one of the finest beaches in Europe. Elafonisi (75 km, 1h30min) — the pink-sand lagoon, beloved for its Caribbean quality. Falasarna (59 km, 1h) — golden sand on the exposed west coast with the ruins of ancient Phalassarna, one of the finest sunset beaches in Greece. Samaria Gorge (45 km to Omalos) — Europe's longest walkable gorge, 16 km from Xyloskalo to Agia Roumeli, one of the most rewarding day hikes in Greece. Aptera Ancient City (15 km, 20min) — the most undervisited archaeological site in western Crete, with a Roman theatre and sweeping views over Souda Bay. Therisso Gorge (15 km, 25min) — a short accessible walking route and traditional tavernas in the mountain village.",
+          el: "Τα Χανιά είναι η καλύτερη βάση για τη δυτική Κρήτη. Μπάλος — διπλή λιμνοθάλασσα με λευκή άμμο. Ελαφονήσι — ροζ άμμος. Φαλάσαρνα — χρυσαφένια αμμουδιά, ωραιότερο ηλιοβασίλεμα. Φαράγγι Σαμαριάς — 16 χλμ., η ωραιότερη πεζοπορία. Αρχαία Απτέρα — το πιο υποτιμημένο αρχαιολογικό μνημείο. Φαράγγι Θέρισου — σύντομη πεζοπορία και παραδοσιακές ταβέρνες.",
+        }
+      },
+    ],
+    faq: [
+      {
+        q: { en: "Which neighborhood is best for a first visit to Chania?", el: "Ποια γειτονιά είναι καλύτερη για πρώτη επίσκεψη στα Χανιά;" },
+        a: { en: "The Venetian harbour area and Kastelli give you the most extraordinary experience — the harbour at sunrise, the medieval lanes, the historic density. Splantzia is the best alternative for a more local daily rhythm. For families who want a beach on their doorstep, Nea Chora solves the logistics most effectively.", el: "Το ενετικό λιμάνι και το Καστέλλι προσφέρουν την πιο εντυπωσιακή εμπειρία. Η Σπλάντζια είναι η καλύτερη εναλλακτική. Για οικογένειες, η Νέα Χώρα είναι η πιο πρακτική επιλογή." }
+      },
+      {
+        q: { en: "Do I need a car in Chania?", el: "Χρειάζομαι αυτοκίνητο στα Χανιά;" },
+        a: { en: "For the Old Town and immediate city, no — everything is walkable. For day trips to Balos, Elafonisi, Samaria, Falasarna, the Akrotiri beaches and Aptera, a car is strongly recommended. Renting for two or three days is the most efficient approach.", el: "Για την Παλιά Πόλη, όχι. Για εκδρομές σε Μπάλο, Ελαφονήσι, Σαμαριά, το αυτοκίνητο είναι απαραίτητο." }
+      },
+      {
+        q: { en: "How many days do I need in Chania?", el: "Πόσες μέρες χρειάζομαι στα Χανιά;" },
+        a: { en: "A minimum of three nights allows one day in the Old Town, one day for the Akrotiri peninsula, and one day trip to Balos or Elafonisi. Four nights is more comfortable and allows the Samaria Gorge. Five nights transforms Chania into a proper base for western Crete.", el: "Τρεις νύχτες είναι το ελάχιστο. Τέσσερις νύχτες είναι πιο άνετες. Πέντε νύχτες κάνουν τα Χανιά πραγματική βάση για τη δυτική Κρήτη." }
+      },
+      {
+        q: { en: "Is the Venetian harbour area noisy at night?", el: "Έχει θόρυβο το ενετικό λιμάνι τη νύχτα;" },
+        a: { en: "Yes, particularly on the inner harbour waterfront. Rooms directly facing the promenade can be noisy until late. Choose accommodation one or two lanes back from the waterfront for peace.", el: "Ναι, ειδικά στην προκυμαία. Επιλέξτε δωμάτιο ένα ή δύο στενά πίσω από το λιμάνι." }
+      },
+      {
+        q: { en: "When is the best time to visit Chania?", el: "Ποια είναι η καλύτερη εποχή για τα Χανιά;" },
+        a: { en: "May through June and September through October are optimal. The sea is warm from mid-May, the city is lively without peak intensity. July and August bring full capacity — book months in advance. Winter is also rewarding with lower prices and the harbour without crowds.", el: "Μάιος-Ιούνιος και Σεπτέμβριος-Οκτώβριος. Ιούλιος-Αύγουστος έχει πολύ κόσμο. Ο χειμώνας είναι επίσης όμορφος." }
+      },
+      {
+        q: { en: "What are the most undervisited things to do near Chania?", el: "Ποια είναι τα πιο υποτιμημένα αξιοθέατα κοντά στα Χανιά;" },
+        a: { en: "The Gouverneto Monastery and Katholiko gorge walk on the Akrotiri; the ancient ruins of Aptera above Souda Bay; the Venetian quarry marks at Stavros beach; the Etz Hayyim Synagogue in Splantzia; the Sunday fish market at Nea Chora harbour; and the path along the outer base of the Venetian sea walls at Koum Kapi at sunrise.", el: "Η Μονή Γουβερνέτου, η Αρχαία Απτέρα, τα ενετικά λατομεία στον Σταυρό, η Συναγωγή Ετς Χαγίμ, η ψαραγορά Νέας Χώρας και ο περίπατος στα ενετικά τείχη στο Κουμ Καπί." }
+      },
+    ],
+    seo: {
+      title: {
+        en: "Where to Stay in Chania | Best Neighborhoods & Hotels | GoGreeceNow",
+        el: "Πού να Μείνεις στα Χανιά | Καλύτερες Γειτονιές & Ξενοδοχεία | GoGreeceNow"
+      },
+      description: {
+        en: "Find the best neighborhoods to stay in Chania — from the iconic Venetian harbour and the bohemian Splantzia quarter to the diplomatic Halepa, the local Nea Chora seafront and the wild Akrotiri peninsula. The most complete guide to Chania hotels, hidden beaches and areas for every type of traveler.",
+        el: "Βρείτε τις καλύτερες γειτονιές για διαμονή στα Χανιά — από το εμβληματικό ενετικό λιμάνι και την μποέμικη συνοικία Σπλάντζια έως τη διπλωματική Αλεπού, το τοπικό παραλιακό μέτωπο της Νέας Χώρας και την άγρια χερσόνησο Ακρωτήρι."
+      }
     },
   },
   {
     slug: "parga",
-    name: "Where to Stay in Parga",
-    place: "Parga",
+    name: "Where to Stay in Parga & Epirus",
+    place: "Parga — Epirus, Northwestern Greece",
     info: {
-      en: "Discover the best areas and hotels to stay in Parga.",
-      el: "Ανακαλύψτε τις καλύτερες περιοχές και ξενοδοχεία για διαμονή στη Parga.",
+      en: "Find the best places to stay in Parga — from the harbour Old Town and Valtos to Lichnos, Sarakiniko and Anthousa — plus the complete guide to Epirus: Sivota, Preveza, Ioannina, the Zagori villages, the Acheron River, Arta, the Tzoumerka mountains and the Paxos islands. The most complete guide to Parga and northwestern Greece.",
+      el: "Βρείτε τα καλύτερα μέρη για διαμονή στην Πάργα — από την παλιά πόλη του λιμανιού και τον Βάλτο έως τον Λίχνο, το Σαρακίνικο και την Ανθούσα — συν τον πλήρη οδηγό για την Ήπειρο: Σύβοτα, Πρέβεζα, Ιωάννινα, Ζαγόρι, Αχέροντα, Άρτα, Τζουμέρκα και Πάξο.",
     },
     image: "/images/parga.webp",
-    badge: "Upcoming Guide",
+    badge: "Featured stay",
     overview: {
-      en: "A detailed guide on where to stay in Parga is coming soon. For now, explore our interactive map to find the best accommodation options.",
-      el: "Ένας αναλυτικός οδηγός για το πού να μείνετε στη Parga έρχεται σύντομα. Προς το παρόν, εξερευνήστε τον διαδραστικό μας χάρτη για να βρείτε τις καλύτερες επιλογές διαμονής.",
+      en: "Parga is the most beautiful coastal town on the Greek mainland — a pastel-coloured harbour amphitheatrically built beneath a Venetian castle, with turquoise water, ancient olive groves tumbling to the shore and a series of beaches that rival the best of the Ionian Islands — and it is also the perfect base for one of the most extraordinary and least-explored regions in all of Greece: the mountains, rivers, stone villages, mythological landscapes and extraordinary coastline of Epirus.",
+      el: "Η Πάργα είναι η ωραιότερη παραλιακή πόλη της ηπειρωτικής Ελλάδας — ένα παστέλ λιμάνι χτισμένο αμφιθεατρικά κάτω από ένα ενετικό κάστρο, με τιρκουάζ νερά, αρχαίους ελαιώνες και παραλίες που ανταγωνίζονται τα καλύτερα νησιά του Ιονίου — και ταυτόχρονα η τέλεια βάση για μία από τις πιο εντυπωσιακές και ανεξερεύνητες περιοχές της Ελλάδας: την Ήπειρο.",
+    },
+    description: {
+      en: "Relaxing stays, beautiful views and authentic hospitality — organized in a clear and practical way.",
+      el: "Χαλαρωτικές διαμονές, όμορφη θέα και αυθεντική φιλοξενία — οργανωμένα με καθαρό και πρακτικό τρόπο.",
     },
     features: {
-      en: ["Hotels", "Resorts", "Apartments"],
-      el: ["Ξενοδοχεία", "Resorts", "Διαμερίσματα"],
+      en: ["Parga Old Town (Harbour & Castle)", "Valtos (Main Beach)", "Lichnos & Sarakiniko (Best Beaches)", "Anthousa & Countryside", "Sivota (Hidden Coves)", "Ammoudia & Acheron", "Preveza & Nikopolis", "Ioannina & Lake", "Zagori Villages", "Tzoumerka Mountains", "Paxos & Antipaxos"],
+      el: ["Παλιά Πόλη Πάργας (Λιμάνι & Κάστρο)", "Βάλτος (Κεντρική Παραλία)", "Λίχνος & Σαρακίνικο (Καλύτερες Παραλίες)", "Ανθούσα & Εξοχή", "Σύβοτα (Κρυφοί Κολπίσκοι)", "Αμμουδιά & Αχέροντας", "Πρέβεζα & Νικόπολη", "Ιωάννινα & Λίμνη", "Ζαγόρι", "Τζουμέρκα", "Παξοί & Αντίπαξοι"],
+    },
+    sections: [
+      {
+        title: { en: "1. Parga Old Town and Harbour: The most romantic base in northwestern Greece", el: "1. Παλιά Πόλη Πάργας και Λιμάνι: Η πιο ρομαντική βάση" },
+        content: {
+          en: "Parga is amphitheatrically built on a rocky promontory above a bay of exceptional beauty, its pastel-painted houses climbing the hillside from the waterfront to the Venetian castle at the summit. The effect — particularly at dusk when the castle walls catch the last light and the harbour fills with the smell of grilling fish — is unlike any other town on the mainland coast. The Old Town's cobblestone alleys and flower-hung archways are best explored in the morning or after sunset. The Venetian Castle at the summit is one of the defining views of northwestern Greece. The island of Panagia in the harbour is reached by a short rowing boat and contains a small Byzantine chapel. Krioneri Beach occupies the sheltered cove below the Old Town. Hotels range from boutique rooms with harbour-view terraces to mid-range hillside properties. Parga Inn Suites and Racconto Boutique Design Hotel are among the most praised. Car access in the Old Town is very limited — park outside the centre.",
+          el: "Η Πάργα είναι χτισμένη αμφιθεατρικά σε ένα βραχώδες ακρωτήρι, με πολύχρωμα σπίτια να σκαρφαλώνουν από το λιμάνι έως το ενετικό κάστρο. Το Ενετικό Κάστρο προσφέρει μία από τις ωραιότερες θέες. Το νησάκι Παναγιά με το βυζαντινό εκκλησάκι είναι προσβάσιμο με βαρκάδα. Η παραλία Κρυονέρι βρίσκεται κάτω από την παλιά πόλη. Η πρόσβαση με αυτοκίνητο είναι περιορισμένη.",
+        }
+      },
+      {
+        title: { en: "2. Valtos: The great beach below the castle", el: "2. Βάλτος: Η μεγάλη παραλία κάτω από το κάστρο" },
+        content: {
+          en: "Valtos is the largest and most accessible beach in the Parga area — a long arc of fine golden sand stretching for nearly three kilometres directly below the Venetian castle. The combination of that view with the quality of the water makes Valtos one of the most photographed beach scenes in Greece. The beach is organised with sunbeds, beach bars and watersports. The water is calm and the depth increases gradually — good for families. Reach it by water taxi from the harbour (€2, 4-5 minutes) or by walking 15-20 minutes around the headland. Several hotels sit on the hillside above Valtos with terraces looking directly over the bay.",
+          el: "Ο Βάλτος είναι η μεγαλύτερη παραλία της Πάργας — μια μακριά αμμώδης ακτή κάτω από το κάστρο. Οργανωμένη με ξαπλώστρες, beach bars και θαλάσσια σπορ. Προσβάσιμη με water taxi από το λιμάνι (€2) ή με τα πόδια σε 15-20 λεπτά.",
+        }
+      },
+      {
+        title: { en: "3. Lichnos: The finest beach in the Parga area", el: "3. Λίχνος: Η ωραιότερη παραλία της Πάργας" },
+        content: {
+          en: "Three kilometres south of Parga, Lichnos is widely considered the most beautiful beach in the immediate Parga area. A deep, sheltered bay of sand and fine pebble surrounded on three sides by pine-forested hillsides, with water that moves from turquoise at the shoreline through multiple shades of blue. The sea caves at the left end of Lichnos are explorable by pedalo, kayak or swimming. Enjoy Lichnos Bay Village is the most complete resort property on the bay. Hidden gem: the path beyond the sea caves leads to a series of small, unnamed coves accessible only on foot or by kayak.",
+          el: "Ο Λίχνος, τρία χιλιόμετρα νότια της Πάργας, θεωρείται η ωραιότερη παραλία της περιοχής. Οι θαλάσσιες σπηλιές στο αριστερό άκρο είναι εξερευνήσιμες με καγιάκ. Κρυφό διαμάντι: τα μικρά απρόσιτα σπήλαια πέρα από τις σπηλιές.",
+        }
+      },
+      {
+        title: { en: "4. Sarakiniko: The wild and dramatic beach south of Parga", el: "4. Σαρακίνικο: Η άγρια παραλία νότια της Πάργας" },
+        content: {
+          en: "Sarakiniko lies five kilometres south of Lichnos, at the end of a winding road through an ancient olive grove. The beach is wider and more exposed, with a backdrop of olive trees that come almost to the shoreline. The Paragaea Olive Oil Museum nearby documents the history of Epiriot olive oil production. Sarakiniko attracts a more local, relaxed crowd. The coastline south toward Ammoudia passes a succession of unnamed beaches that are among the most beautiful and least visited in northwestern Greece.",
+          el: "Το Σαρακίνικο βρίσκεται πέντε χιλιόμετρα νότια του Λίχνου, στο τέλος ενός δρόμου μέσα από αρχαίο ελαιώνα. Το Μουσείο Ελαιολάδου Παραγωγαία κοντα εκθέτει την ιστορία της ελαιοπαραγωγής. Η ακτή νότια προς Αμμουδιά έχει διαδοχικές ανώνυμες παραλίες.",
+        }
+      },
+      {
+        title: { en: "5. Anthousa: The most atmospheric village base near Parga", el: "5. Ανθούσα: Το πιο ατμοσφαιρικό χωριό κοντά στην Πάργα" },
+        content: {
+          en: "Four kilometres inland from Parga, Anthousa is a remarkably beautiful and overlooked alternative base with stone houses, narrow lanes and the dramatic hilltop Ali Pasha Castle — a well-preserved Ottoman fortification with extraordinary views over the entire bay. The village has several tavernas serving proper Epiriot food. Anthousa Waterfall is a short walk through the olive grove. My Suite Boutique Hotel is one of the most consistently praised accommodation options in the wider area.",
+          el: "Τέσσερα χιλιόμετρα από την Πάργα, η Ανθούσα είναι μια όμορφη εναλλακτική βάση με το Κάστρο του Αλή Πασά και θέα σε όλο τον κόλπο. Το My Suite Boutique Hotel είναι από τα πιο αγαπημένα καταλύματα.",
+        }
+      },
+      {
+        title: { en: "6. Sivota: The most beautiful hidden coastline of northwestern Greece", el: "6. Σύβοτα: Η ωραιότερη κρυφή ακτογραμμή" },
+        content: {
+          en: "Twenty-seven kilometres north of Parga, Sivota sits in a natural harbour surrounded by uninhabited islets and a coastline of small bays and hidden coves. The Blue Lagoon — a narrow channel between the coast and a wooded islet with luminous turquoise water — is the most photographed spot in the area. Bella Vraka Beach is accessible by wading through a shallow channel. Karavostasi Beach is the largest organised beach. Hidden gem: the abandoned hilltop village of Vrachona above Sivota — fifty ruined stone houses on a hidden plateau, linked to the mythological landscape of the Acheron.",
+          el: "Είκοσι επτά χιλιόμετρα βόρεια, τα Σύβοτα έχουν ένα φυσικό λιμάνι με ακατοίκητες νησίδες. Η Μπλε Λιμνοθάλασσα είναι το πιο φωτογραφημένο σημείο. Κρυφό διαμάντι: το εγκαταλελειμμένο χωριό Βραχώνα.",
+        }
+      },
+      {
+        title: { en: "7. The Acheron River & the Necromanteion: Greece's most mythological landscape", el: "7. Αχέροντας & Νεκρομαντείο: Το πιο μυθολογικό τοπίο" },
+        content: {
+          en: "The Acheron River flows from springs in the mountains through the Straits of Acheron to the sea at Ammoudia. In ancient Greek mythology it was one of the five rivers of the Underworld — the River of Woe. Trekking the Acheron Gorge is the finest half-day nature experience from Parga — a walk through the gorge partly along the banks and partly wading through cold, crystal-clear water. The Necromanteion of Acheron — the Oracle of the Dead — stands on a hill above the ancient Acherousian lake. The subterranean sanctuary where the living consulted the dead is still largely intact. Standing inside the underground chamber has an effect that purely historical sites rarely achieve.",
+          el: "Ο Αχέροντας ήταν ένας από τους πέντε ποταμούς του Κάτω Κόσμου. Το φαράγγι προσφέρει την ωραιότερη ημερήσια πεζοπορία. Το Νεκρομαντείο του Αχέροντα — το Μαντείο των Νεκρών — είναι ο πιο εντυπωσιακός αρχαιολογικός χώρος της Ηπείρου.",
+        }
+      },
+      {
+        title: { en: "8. Preveza and Ancient Nikopolis: The forgotten Roman city", el: "8. Πρέβεζα και Αρχαία Νικόπολη: Η ξεχασμένη ρωμαϊκή πόλη" },
+        content: {
+          en: "Preveza sits at the mouth of the Ambracian Gulf, 65 kilometres south of Parga. The town has a pedestrianised old town of neoclassical buildings and a harbour promenade. Ancient Nikopolis — one of the largest Roman archaeological sites in Greece — was founded by Octavian in 29 BC to commemorate his victory over Mark Antony at Actium. Its extensive remains include a theatre, stadium, nymphaeum and early Christian basilicas with extraordinary mosaic floors. The Monument of Zaloggo on a clifftop above Kassopi commemorates the 63 women of Souli who threw themselves from the cliff rather than submit to Ali Pasha.",
+          el: "Η Πρέβεζα έχει μια όμορφη παλιά πόλη. Η Αρχαία Νικόπολη — από τους μεγαλύτερους ρωμαϊκούς αρχαιολογικούς χώρους — ιδρύθηκε από τον Οκταβιανό το 29 π.Χ. Το Μνημείο Ζαλόγγου τιμά τις 63 γυναίκες του Σουλίου.",
+        }
+      },
+      {
+        title: { en: "9. Arta and the Byzantine City: The most overlooked cultural destination in Epirus", el: "9. Άρτα: Ο πιο υποτιμημένος πολιτιστικός προορισμός" },
+        content: {
+          en: "Arta, 80 kilometres southeast of Parga, is one of the most significantly undervisited historical cities in Greece. Built on the site of ancient Ambracia — capital of Pyrrhus — Arta served as the capital of the Despotate of Epirus from 1204 to 1337. The Church of Panagia Parigoritissa (1295) is the masterpiece of late Byzantine architecture in Epirus. The Bridge of Arta over the Arachthos River is one of the most famous bridges in Greece, subject of the folk song the Ballad of the Bridge of Arta.",
+          el: "Η Άρτα, 80 χιλιόμετρα νοτιοανατολικά, ήταν πρωτεύουσα του Δεσποτάτου της Ηπείρου. Η Παναγία Παρηγορήτισσα (1295) είναι αριστούργημα της βυζαντινής αρχιτεκτονικής. Το γεφύρι της Άρτας είναι από τα πιο διάσημα στην Ελλάδα.",
+        }
+      },
+      {
+        title: { en: "10. Ioannina: The city on the lake — the capital of Epirus", el: "10. Ιωάννινα: Η πόλη της λίμνης" },
+        content: {
+          en: "Ioannina is the capital of Epirus, 100 kilometres north of Parga — approximately 90 minutes by car. The city was the capital of Ali Pasha in the late 18th century. The Ioannina Castle at the lakeside preserves his treasury and the site of his assassination. The island of Ioannina in Lake Pamvotis — reached by a five-minute boat — has no cars, a few hundred residents, fish tavernas, and the monastery where Ali Pasha was killed. The Perama Cave on the lake's northern shore is one of the largest cave systems in Greece. Ioannina's food scene is the best in Epirus — its baklava is nationally famous. The tsipouro bars near the lake are a unique local tradition.",
+          el: "Τα Ιωάννινα, 100 χιλιόμετρα βόρεια, ήταν πρωτεύουσα του Αλή Πασά. Το Κάστρο και το νησάκι της λίμνης με τη μονή όπου δολοφονήθηκε ο Αλή Πασάς είναι μοναδικά. Η γαστρονομική σκηνή είναι η καλύτερη της Ηπείρου.",
+        }
+      },
+      {
+        title: { en: "11. The Zagori Villages and Vikos Gorge: The most spectacular mountain landscape in Greece", el: "11. Ζαγόρι & Φαράγγι Βίκου: Το πιο εντυπωσιακό ορεινό τοπίο" },
+        content: {
+          en: "The Zagori — 46 traditional stone villages in the Pindus mountain range, two hours from Parga — is one of the most extraordinary landscapes in Greece. Vikos Gorge holds the Guinness World Record for the deepest canyon relative to its width: 900 metres deep. The Voidomatis River, claimed to be the coldest in Europe, has water of impossible transparency. The Papingo rock pools are among the most beautiful natural swimming spots in Greece. Monodendri has the finest traditional architecture in central Zagori. Papingo — the twin villages — are the most photographed. Dilofo is considered the most perfectly preserved of the 46 villages. The Kipoi stone bridges are among the finest examples of vernacular stone engineering in the Balkans.",
+          el: "Το Ζαγόρι — 46 πέτρινα χωριά — είναι ένα από τα ωραιότερα ορεινά τοπία της Ελλάδας. Το Φαράγγι του Βίκου κατέχει παγκόσμιο ρεκόρ βάθους. Οι κολυμπήθρες του Πάπιγκου είναι από τα ωραιότερα φυσικά σημεία κολύμβησης. Το Δίλοφο θεωρείται το καλύτερα διατηρημένο χωριό.",
+        }
+      },
+      {
+        title: { en: "12. The Tzoumerka: The wild mountain heart of Epirus", el: "12. Τζουμέρκα: Η άγρια καρδιά της Ηπείρου" },
+        content: {
+          en: "The Tzoumerka mountain range rises to over 2,400 metres between Ioannina and Arta. For hikers and anyone drawn to wild, unspoiled mountain landscapes, the Tzoumerka is one of the last corners of Greece where you can walk for hours without meeting another person. Syrrako and Kalarites are the two most celebrated mountain villages — both at 1,000 metres altitude, both built in classic Epiriot stone style. The Tzoumerka-Peristeri-Arachtos Gorge National Park is a Natura 2000 site for exceptional biodiversity.",
+          el: "Τα Τζουμέρκα υψώνονται πάνω από 2.400 μέτρα. Το Σύρρακο και οι Καλαρρύτες είναι τα ωραιότερα ορεινά χωριά. Ο Εθνικός Δρυμός Τζουμέρκων είναι περιοχή Natura 2000.",
+        }
+      },
+      {
+        title: { en: "13. Paxos and Antipaxos: The island day trips from Parga", el: "13. Παξοί & Αντίπαξοι: Ημερήσιες νησιωτικές εκδρομές" },
+        content: {
+          en: "The island of Paxos lies 15 nautical miles from Parga — a 40-minute boat crossing. Covered almost entirely in ancient olive trees, with three harbour villages — Gaios, Loggos and Lakka — completely different in character. The Blue Caves on the western coast are among the most beautiful sea cave formations in Greece. Antipaxos, a 15-minute boat ride south, has two beaches — Vrika and Voutoumi — that are among the finest in the Ionian Sea. Voutoumi with its white pebbles and turquoise water consistently appears in lists of the best beaches in Greece.",
+          el: "Οι Παξοί απέχουν 40 λεπτά με πλοίο από την Πάργα. Τα γαλάζια σπήλαια και το γραφικό Γάιος είναι μοναδικά. Οι Αντίπαξοι με την παραλία Βουτούμι είναι από τις ωραιότερες της Ελλάδας.",
+        }
+      },
+    ],
+    faq: [
+      {
+        q: { en: "Is Parga better as a beach destination or as a base for exploring Epirus?", el: "Είναι η Πάργα καλύτερα ως παραλιακός προορισμός ή ως βάση;" },
+        a: { en: "It is genuinely both. Two to three days in Parga for beaches and the Old Town covers the coastal experience. An additional two days with a car for the Acheron, Ioannina and the Zagori villages transforms the trip into one of the most varied holidays in Greece.", el: "Και τα δύο. Δύο-τρεις μέρες για παραλίες και δύο ακόμα για Αχέροντα, Ιωάννινα και Ζαγόρι." }
+      },
+      {
+        q: { en: "Do I need a car in Parga?", el: "Χρειάζομαι αυτοκίνητο στην Πάργα;" },
+        a: { en: "For the town itself, no. For Lichnos, Sivota, the Acheron, Ioannina, the Zagori and Arta — absolutely essential. Arrange a car rental for the exploration days.", el: "Για την πόλη όχι. Για Λίχνο, Σύβοτα, Αχέροντα, Ιωάννινα και Ζαγόρι — απαραίτητο." }
+      },
+      {
+        q: { en: "When is the best time to visit Parga?", el: "Ποια είναι η καλύτερη εποχή;" },
+        a: { en: "May, June and September are ideal. The sea is warm, the beaches are active without peak crowds. July and August bring full capacity. The Zagori is most beautiful in late spring and October.", el: "Μάιος, Ιούνιος και Σεπτέμβριος. Το Ζαγόρι είναι ωραιότερο την άνοιξη και τον Οκτώβριο." }
+      },
+      {
+        q: { en: "How do I get to Parga?", el: "Πώς φτάνω στην Πάργα;" },
+        a: { en: "Preveza/Aktion Airport (PVK) is 65 km away (55 min). Ioannina Airport (IOA) is 103 km (1h20min). From Athens by car via the E65 through Arta takes about 4h30min. By ferry: Corfu to Igoumenitsa (1.5h fast ferry), then 45 minutes south by car.", el: "Αεροδρόμιο Πρέβεζας 65 χλμ., Ιωαννίνων 103 χλμ. Από Αθήνα 4,5 ώρες με αυτοκίνητο." }
+      },
+      {
+        q: { en: "Is Parga suitable for families?", el: "Είναι η Πάργα κατάλληλη για οικογένειες;" },
+        a: { en: "Exceptionally so. The calm water at Krioneri, organised beaches at Valtos and Lichnos, boat trips to Paxos and the Acheron river walk are all well-suited to families. The main caution is peak-season parking and traffic.", el: "Εξαιρετικά. Ηρεμα νερά, οργανωμένες παραλίες, εκδρομές σε Παξούς και Αχέροντα." }
+      },
+      {
+        q: { en: "Which is better as a base — Parga or Sivota?", el: "Ποιο είναι καλύτερο — Πάργα ή Σύβοτα;" },
+        a: { en: "Both have strong cases. Parga has more choice, better infrastructure and the historic Old Town. Sivota is quieter and has the most beautiful immediately local coastline. Experienced travelers increasingly recommend Sivota as a primary base with Parga as a day trip.", el: "Η Πάργα έχει περισσότερες επιλογές. Τα Σύβοτα είναι πιο ήσυχα. Έμπειροι ταξιδιώτες προτείνουν Σύβοτα με Πάργα για ημερήσια." }
+      },
+    ],
+    seo: {
+      title: {
+        en: "Where to Stay in Parga & Epirus | Best Areas, Hidden Beaches & Regional Guide | GoGreeceNow",
+        el: "Πού να Μείνεις στην Πάργα & Ήπειρο | Καλύτερες Περιοχές & Κρυφές Παραλίες | GoGreeceNow"
+      },
+      description: {
+        en: "Find the best places to stay in Parga — from the harbour Old Town and Valtos to Lichnos, Sarakiniko and Anthousa — plus the complete guide to Epirus: Sivota, Preveza, Ioannina, the Zagori villages, the Acheron River, Arta, the Tzoumerka mountains and the Paxos islands. The most complete guide to Parga and northwestern Greece.",
+        el: "Βρείτε τα καλύτερα μέρη για διαμονή στην Πάργα — από την παλιά πόλη του λιμανιού και τον Βάλτο έως τον Λίχνο, το Σαρακίνικο και την Ανθούσα — συν τον πλήρη οδηγό για την Ήπειρο: Σύβοτα, Πρέβεζα, Ιωάννινα, Ζαγόρι, Αχέροντα, Άρτα, Τζουμέρκα και Παξούς."
+      }
     },
   },
   {
     slug: "delphi",
-    name: "Where to Stay in Delphi",
-    place: "Delphi",
+    name: "Where to Stay in Delphi & Central Greece",
+    place: "Delphi — Phocis, Central Greece",
     info: {
-      en: "Discover the best areas and hotels to stay in Delphi.",
-      el: "Ανακαλύψτε τις καλύτερες περιοχές και ξενοδοχεία για διαμονή στη Delphi.",
+      en: "Find the best places to stay near Delphi — from the village itself with its UNESCO ruins and Gulf of Corinth views to chic mountain Arachova, the neoclassical harbour of Galaxidi, the Venetian gem of Nafpaktos, the mountain wilderness of Orini Nafpaktia and the Rio-Antirrion Bridge gateway to Patras. The most complete guide to staying in Delphi and central Greece.",
+      el: "Βρείτε τα καλύτερα μέρη για διαμονή κοντά στους Δελφούς — από το ίδιο το χωριό με τα μνημεία UNESCO και τη θέα στον Κορινθιακό έως την κοσμοπολίτικη Αράχοβα, το νεοκλασικό λιμάνι του Γαλαξειδιού, τη βενετσιάνικη Ναύπακτο, την ορεινή Ναυπακτία και το Ρίο-Αντίρριο.",
     },
     image: "/images/delphi.webp",
-    badge: "Upcoming Guide",
+    badge: "Featured stay",
     overview: {
-      en: "A detailed guide on where to stay in Delphi is coming soon. For now, explore our interactive map to find the best accommodation options.",
-      el: "Ένας αναλυτικός οδηγός για το πού να μείνετε στη Delphi έρχεται σύντομα. Προς το παρόν, εξερευνήστε τον διαδραστικό μας χάρτη για να βρείτε τις καλύτερες επιλογές διαμονής.",
+      en: "Choosing where to stay near Delphi shapes the entire character of the experience — from the village itself, perched on the slopes of Parnassus directly above the most sacred site in the ancient world, to the cosmopolitan mountain resort of Arachova ten minutes away, the neoclassical maritime charm of Galaxidi on the Gulf of Corinth, the extraordinary Venetian harbour of Nafpaktos across the water, and the wild mountain wilderness of Orini Nafpaktia that begins where the olive groves of the valley end.",
+      el: "Η επιλογή διαμονής κοντά στους Δελφούς καθορίζει τον χαρακτήρα του ταξιδιού — από το ίδιο το χωριό στις πλαγιές του Παρνασσού έως την κοσμοπολίτικη Αράχοβα, το Γαλαξείδι, τη βενετσιάνικη Ναύπακτο και την άγρια ορεινή Ναυπακτία.",
+    },
+    description: {
+      en: "Relaxing stays, beautiful views and authentic hospitality — organized in a clear and practical way.",
+      el: "Χαλαρωτικές διαμονές, όμορφη θέα και αυθεντική φιλοξενία — οργανωμένα με καθαρό και πρακτικό τρόπο.",
     },
     features: {
-      en: ["Hotels", "Resorts", "Apartments"],
-      el: ["Ξενοδοχεία", "Resorts", "Διαμερίσματα"],
+      en: ["Delphi Village (UNESCO & Views)", "Arachova (Mountain & Ski)", "Galaxidi (Harbour & Seafood)", "Itea (Coast & Convenience)", "Nafpaktos (Venetian Gem)", "Orini Nafpaktia (Wild Mountains)", "Rio-Antirrion & Patras (Gateway West)", "Hosios Loukas (UNESCO Monastery)", "Corycian Cave (Mountain Hike)", "Mornos Lake & Trizonia Island (Hidden Gems)"],
+      el: ["Δελφοί (UNESCO & Θέα)", "Αράχοβα (Ορεινή & Σκι)", "Γαλαξείδι (Λιμάνι & Θαλασσινά)", "Ιτέα (Ακτή & Ευκολία)", "Ναύπακτος (Βενετσιάνικο Κόσμημα)", "Ορεινή Ναυπακτία (Άγρια Βουνά)", "Ρίο-Αντίρριο & Πάτρα", "Όσιος Λουκάς (Μονή UNESCO)", "Κωρύκειο Άντρο (Ορεινή Πεζοπορία)", "Λίμνη Μόρνου & Τριζόνια"],
+    },
+    sections: [
+      {
+        title: { en: "1. Delphi Village: The most atmospheric base — and the key to seeing the site at its best", el: "1. Δελφοί: Η πιο ατμοσφαιρική βάση" },
+        content: {
+          en: "Modern Delphi village is a small settlement built immediately adjacent to the archaeological zone on the same mountainside. Its single main street is lined with hotels, restaurants and souvenir shops, but its advantage is unique: it is within ten minutes' walk of the site entrance and the museum, and it looks directly south over the Gulf of Corinth. The view from south-facing hotel balconies — the entire valley of Phocis filled with olive trees stretching to the sea — is one of the finest in Greece. The crucial advantage of staying overnight is early morning access: day-trip buses from Athens arrive from 10am, and the Sacred Way becomes crowded by midday. Visitors staying in the village can walk to the site from 8am and have the ruins almost entirely to themselves for two hours. Kastalia Boutique Hotel is the most consistently praised boutique property. Amalia Hotel Delphi is the largest with panoramic Gulf views. Hidden gem: the Museum of Angelos and Eva Sikelianos at the western end of the main street, telling the story of the revival of the Delphic Games.",
+          el: "Το χωριό των Δελφών βρίσκεται ακριβώς δίπλα στον αρχαιολογικό χώρο. Η θέα προς τον Κορινθιακό είναι από τις ωραιότερες στην Ελλάδα. Το πλεονέκτημα της διαμονής εδώ είναι η πρωινή πρόσβαση στον χώρο πριν φτάσουν τα πούλμαν από Αθήνα. Το Kastalia Boutique Hotel και το Amalia Hotel Delphi είναι από τα καλύτερα καταλύματα. Κρυφό διαμάντι: το Μουσείο Σικελιανού.",
+        }
+      },
+      {
+        title: { en: "2. The Archaeological Site: What to see and how to experience it", el: "2. Ο Αρχαιολογικός Χώρος: Τι να δείτε" },
+        content: {
+          en: "The UNESCO-listed site requires at minimum three hours — four including the museum. The Sacred Way winds upward between foundations of votive offerings. The Athenian Treasury is the best-preserved building. The Temple of Apollo is the spiritual heart, where the Pythia gave her prophecies. The Theatre seats 5,000 with a view over the valley. The Stadium at the top is one of the best-preserved ancient stadia in Greece. The Tholos at the Sanctuary of Athena Pronaia — below the main site — is the most reproduced image of Delphi. The Castalian Spring still flows from the cliff face. The Archaeological Museum is outstanding — its masterpiece is the Bronze Charioteer.",
+          el: "Ο χώρος UNESCO απαιτεί τουλάχιστον τρεις ώρες. Η Ιερά Οδός, ο Θησαυρός των Αθηναίων, ο Ναός του Απόλλωνα, το Θέατρο και το Στάδιο είναι τα κυριότερα σημεία. Ο Θόλος στο ιερό της Αθηνάς Προναίας είναι η πιο φωτογραφημένη εικόνα. Το Αρχαιολογικό Μουσείο φιλοξενεί τον περίφημο Ηνίοχο.",
+        }
+      },
+      {
+        title: { en: "3. Arachova: The most cosmopolitan mountain village in Greece", el: "3. Αράχοβα: Το πιο κοσμοπολίτικο ορεινό χωριό" },
+        content: {
+          en: "Ten minutes east of Delphi at 970 metres on Parnassus, Arachova is the ski resort capital of Greece in winter and a cooler, quieter mountain retreat in summer. Its main street is lined with shops selling local products — Arachova wine, formaella cheese, honey, trahanas. The clock tower of Agios Georgios is the landmark. The village has a lively evening scene with excellent tavernas and cocktail bars. Anemolia Mountain Resort is the most complete luxury hotel. Mons Arachova Hotel is the most central mid-range option. The Parnassus Ski Centre above Arachova (25 km) has 24 pistes. Arachova suits travelers who want atmosphere and a lively evening scene alongside the archaeological experience.",
+          el: "Η Αράχοβα, 10 λεπτά ανατολικά, είναι η πρωτεύουσα του σκι τον χειμώνα. Το καλοκαίρι είναι πιο ήσυχη και δροσερή. Τοπικά προϊόντα: κρασί, φορμαέλλα, μέλι. Το Anemolia Mountain Resort είναι το καλύτερο ξενοδοχείο. Ιδανική για όσους θέλουν ζωντανή βραδινή ατμόσφαιρα.",
+        }
+      },
+      {
+        title: { en: "4. The Corycian Cave: The first oracle — and one of Greece's most extraordinary hikes", el: "4. Κωρύκειο Άντρο: Το πρώτο μαντείο" },
+        content: {
+          en: "High on Parnassus at 1,370 metres, the Corycian Cave is one of the most remarkable and least-visited significant sites in Greece. A vast limestone cavern over 100 metres long, sacred to Pan and the Nymphs from prehistoric times, it is considered the earliest oracle site in the Parnassus region. The cave is reached by car via the ski centre road, or by a magnificent 3.5-hour hiking trail from the Delphi archaeological site through the fir forest. Thousands of votive objects spanning three thousand years were found here, displayed in the Delphi museum. Standing inside the cave connects you to a spiritual tradition that predates the sanctuary of Apollo below.",
+          el: "Το Κωρύκειο Άντρο, στα 1.370 μέτρα, είναι μια ασβεστολιθική σπηλιά αφιερωμένη στον Πάνα. Προσβάσιμο με αυτοκίνητο ή με 3,5 ώρες πεζοπορίας από τους Δελφούς. Χιλιάδες αφιερώματα τριών χιλιετιών βρέθηκαν εδώ.",
+        }
+      },
+      {
+        title: { en: "5. Hosios Loukas Monastery: The most important Byzantine building in central Greece", el: "5. Όσιος Λουκάς: Το σημαντικότερο βυζαντινό μνημείο" },
+        content: {
+          en: "Forty-five kilometres from Delphi, the Monastery of Hosios Loukas is one of only three Byzantine monuments in Greece on the UNESCO World Heritage List. Its Katholikon preserves original golden mosaics of the Pantokrator, the Resurrection and individual saints — among the finest surviving examples of middle Byzantine religious art. The crypt preserves frescoes of extraordinary delicacy. The Church of the Theotokos adjacent is slightly earlier. Most commonly visited as a stop between Athens and Delphi, it deserves more time than most visitors give it.",
+          el: "Η Μονή Οσίου Λουκά, 45 χλμ. από τους Δελφούς, είναι ένα από τα τρία βυζαντινά μνημεία UNESCO στην Ελλάδα. Τα χρυσαφιά ψηφιδωτά του Καθολικού είναι από τα ωραιότερα της βυζαντινής τέχνης.",
+        }
+      },
+      {
+        title: { en: "6. Galaxidi: The most beautiful harbour town in central Greece", el: "6. Γαλαξείδι: Το ωραιότερο λιμάνι της κεντρικής Ελλάδας" },
+        content: {
+          en: "Galaxidi, 40 km west of Delphi on the Gulf of Corinth, was one of the great maritime cities of 19th-century Greece. Its neoclassical mansions and sea captains' houses are among the finest in Greece. The Maritime Museum documents the town's remarkable shipping history. The harbour, divided between the old inner port and the new marina, is lined with tavernas and cafés. Ganimede Hotel in a restored 19th-century captain's house is the most consistently recommended accommodation. Galaxidi is also famous for the Flour War Carnival on Clean Monday.",
+          el: "Το Γαλαξείδι ήταν μια από τις μεγάλες ναυτικές πόλεις του 19ου αιώνα. Τα νεοκλασικά αρχοντικά του είναι από τα ωραιότερα στην Ελλάδα. Το Ganimede Hotel στεγάζεται σε ένα αναπαλαιωμένο καπετανόσπιτο. Διάσημο για τον πόλεμο του αλευριού την Καθαρά Δευτέρα.",
+        }
+      },
+      {
+        title: { en: "7. Itea: The most convenient coastal base below Delphi", el: "7. Ιτέα: Η πιο βολική παραθαλάσσια βάση" },
+        content: {
+          en: "Itea is the port town at the foot of the olive-grove valley below Delphi — ten kilometres downhill, fifteen minutes by car. It is a working port town with a long waterfront promenade, fish tavernas, a beach and unpretentious daily Greek life. The sunset from Itea's waterfront is one of those understated pleasures that rewards travelers without expectations. Hotels are modest and affordable — the most economical base with reasonable access to the site.",
+          el: "Η Ιτέα είναι το λιμάνι στους πρόποδες της κοιλάδας, 10 χλμ. κάτω από τους Δελφούς. Έχει μακρύ παραλιακό πεζόδρομο, ταβέρνες και παραλία. Τα ξενοδοχεία είναι οικονομικά.",
+        }
+      },
+      {
+        title: { en: "8. Nafpaktos: The most extraordinary Venetian town in western Greece", el: "8. Ναύπακτος: Το πιο εντυπωσιακό βενετσιάνικο λιμάνι" },
+        content: {
+          en: "Nafpaktos lies 60 km west of Delphi — one hour through the olive grove valley. Its perfectly circular Venetian harbour ringed by massive sea walls is one of the most photographed harbour scenes in Greece. The statue of Miguel de Cervantes commemorates the 1571 Battle of Lepanto, fought just offshore. The Castle of Nafpaktos is one of the best-preserved medieval fortifications in Greece, entirely walkable from harbour to summit. Hotels include waterfront properties and rooms in the old town. Nafpaktos is one of the most overlooked significant destinations in mainland Greece.",
+          el: "Η Ναύπακτος, 60 χλμ. δυτικά, έχει το πιο εντυπωσιακό βενετσιάνικο λιμάνι. Το άγαλμα του Θερβάντες τιμά τη Ναυμαχία της Ναυπάκτου (1571). Το Κάστρο είναι από τα καλύτερα διατηρημένα στην Ελλάδα.",
+        }
+      },
+      {
+        title: { en: "9. Orini Nafpaktia: The wild mountain world above the Gulf", el: "9. Ορεινή Ναυπακτία: Ο άγριος ορεινός κόσμος" },
+        content: {
+          en: "Rising behind Nafpaktos into the southern Pindus, Orini Nafpaktia is one of the most extraordinary and least-known mountain landscapes in Greece — dense fir and beech forests, deep gorges, stone-built villages and a network of old stone-arched bridges built by 18th and 19th-century masons. The Evinos River flows through the heart of the region. The villages — Ano Chora, Kato Chora, Ampelakiotissa, Platanos — maintain traditional hospitality. The Grammeni Oxia area at 1,300 metres has the southernmost beech forest in Europe. The drive from Nafpaktos into these mountains is one of the finest short mountain drives in central Greece.",
+          el: "Η Ορεινή Ναυπακτία είναι ένα από τα πιο άγνωστα ορεινά τοπία της Ελλάδας. Πυκνά δάση, πέτρινα χωριά, παλιά γεφύρια και ο Εύηνος ποταμός είναι τα χαρακτηριστικά της. Η διαδρομή από τη Ναύπακτο είναι υπέροχη.",
+        }
+      },
+      {
+        title: { en: "10. The Rio-Antirrion Bridge and Patras: The gateway to the western Peloponnese", el: "10. Ρίο-Αντίρριο και Πάτρα: Η πύλη προς την Πελοπόννησο" },
+        content: {
+          en: "Twelve kilometres east of Nafpaktos, the Rio-Antirrion Bridge crosses the narrowest point of the Gulf of Corinth. At 2,880 metres, it is one of the longest cable-stayed bridges in the world, opening in 2004 for the Athens Olympics. Driving across at dusk is a genuinely dramatic experience. Patras on the Peloponnese side is Greece's third-largest city and main western port — ferries to Italy, Corfu and Kefalonia. Its neoclassical upper town, Roman Odeon, Castle and the Patras Carnival (the largest in Greece) give it genuine cultural depth. The combination of Delphi and the western Peloponnese via the bridge is one of the great classical itineraries of mainland Greece.",
+          el: "Η γέφυρα Ρίο-Αντίρριο είναι από τις μεγαλύτερες καλωδιωτές γέφυρες στον κόσμο. Η Πάτρα έχει νεοκλασική άνω πόλη, Ρωμαϊκό Ωδείο και το μεγαλύτερο καρναβάλι στην Ελλάδα. Ο συνδυασμός Δελφών και Πελοποννήσου μέσω της γέφυρας είναι κλασική διαδρομή.",
+        }
+      },
+    ],
+    faq: [
+      {
+        q: { en: "Should I stay in Delphi village or in Arachova?", el: "Να μείνω στους Δελφούς ή στην Αράχοβα;" },
+        a: { en: "Delphi village is the right choice if the archaeological site is your primary purpose — early morning access before the day-trip buses is transformative. Arachova is better for atmosphere, evening scene and restaurant choice. They are ten minutes apart by car. If staying two nights, one in each is the most complete approach.", el: "Οι Δελφοί για τον αρχαιολογικό χώρο, η Αράχοβα για ατμόσφαιρα. Απέχουν 10 λεπτά." }
+      },
+      {
+        q: { en: "How long should I plan for Delphi?", el: "Πόσο χρόνο να προγραμματίσω για τους Δελφούς;" },
+        a: { en: "A minimum of one overnight stay, arriving the evening before and visiting the site first thing. Two nights allows the addition of Arachova, Galaxidi or Hosios Loukas. Three nights opens up Nafpaktos and the Corycian Cave. The day-trip version gives a fraction of what the place offers.", el: "Τουλάχιστον μία διανυκτέρευση. Δύο νύχτες επιτρέπουν Γαλαξείδι. Τρεις νύχτες ανοίγουν Ναύπακτο." }
+      },
+      {
+        q: { en: "Is Delphi worth visiting in winter?", el: "Αξίζει τους Δελφούς τον χειμώνα;" },
+        a: { en: "Exceptionally so. The site has a quietness and atmospheric intensity that summer crowds eliminate. The light on the Phaidriades with snow on Parnassus is extraordinary. The site is open year-round. Arachova is at its most lively in ski season. Winter in Delphi is one of the best-kept secrets in Greek travel.", el: "Εξαιρετικά. Η ησυχία και το φως τον χειμώνα είναι μοναδικά. Η Αράχοβα είναι ζωντανή την περίοδο του σκι." }
+      },
+      {
+        q: { en: "Can I visit Delphi from Athens as a day trip?", el: "Μπορώ να επισκεφθώ τους Δελφούς από Αθήνα σε μια μέρα;" },
+        a: { en: "Yes — the drive takes about 2h15min via the E65 highway. But arriving as a day-tripper means arriving with every other day-tripper. If a day trip is the only option, depart by 7am to arrive at opening time. An overnight stay transforms the trip entirely.", el: "Ναι, 2 ώρες 15 λεπτά. Αλλά η διανυκτέρευση μεταμορφώνει την εμπειρία." }
+      },
+      {
+        q: { en: "What is the best route from Delphi to the Peloponnese?", el: "Ποια είναι η καλύτερη διαδρομή από Δελφούς προς Πελοπόννησο;" },
+        a: { en: "West via Nafpaktos to the Rio-Antirrion Bridge — about 1h45min to the bridge crossing. This route passes Galaxidi and Nafpaktos and is one of the most scenically varied drives in central Greece.", el: "Δυτικά μέσω Ναυπάκτου προς τη γέφυρα Ρίο-Αντίρριο — 1 ώρα 45 λεπτά." }
+      },
+      {
+        q: { en: "Is the Parnassus Ski Centre worth visiting in summer?", el: "Αξίζει το Χιονοδρομικό Κέντρο Παρνασσού το καλοκαίρι;" },
+        a: { en: "Yes, for the access it provides to the high mountain landscape and the Corycian Cave. The road from Arachova through the fir forest is remarkable, and the mountain plateau at the top is open, wild and full of wildflowers. The trail to the cave from the ski centre is significantly easier than the full ascent from Delphi.", el: "Ναι, για την πρόσβαση στο Κωρύκειο Άντρο και το ορεινό τοπίο." }
+      },
+    ],
+    seo: {
+      title: {
+        en: "Where to Stay in Delphi & Central Greece | Delphi, Arachova, Galaxidi, Nafpaktos & Beyond | GoGreeceNow",
+        el: "Πού να Μείνεις στους Δελφούς & Κεντρική Ελλάδα | Δελφοί, Αράχοβα, Γαλαξείδι, Ναύπακτος | GoGreeceNow"
+      },
+      description: {
+        en: "Find the best places to stay near Delphi — from the village itself with its UNESCO ruins and Gulf of Corinth views to chic mountain Arachova, the neoclassical harbour of Galaxidi, the Venetian gem of Nafpaktos, the mountain wilderness of Orini Nafpaktia and the Rio-Antirrion Bridge gateway to Patras. The most complete guide to staying in Delphi and central Greece.",
+        el: "Βρείτε τα καλύτερα μέρη για διαμονή κοντά στους Δελφούς — από το ίδιο το χωριό με τα μνημεία UNESCO και τη θέα στον Κορινθιακό έως την κοσμοπολίτικη Αράχοβα, το Γαλαξείδι, τη Ναύπακτο, την Ορεινή Ναυπακτία και τη γέφυρα Ρίο-Αντίρριο."
+      }
     },
   },
   {
