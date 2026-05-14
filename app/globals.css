@@ -163,3 +163,12 @@ h1, h2, h3, h4, h5, h6 {
     background-attachment: scroll !important;
   }
 }
+
+.stay22-desc a, .stay22-link {
+  color: #2563eb;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.stay22-desc a:hover, .stay22-link:hover {
+  color: #1d4ed8;
+}
