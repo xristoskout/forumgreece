@@ -10,6 +10,81 @@ import SiteHeader from "../../../../components/site-header";
 import Stay22Booking from "../../../../components/stay22-booking";
 import { sanitizeIframeHTML } from "../../../../lib/sanitize-iframe";
 
+const STAY22_AID = "69eb75e6ce6579d96ef11aa3";
+const STAY22_CAMPAIGN = "forumgreece";
+
+const STAY22_EMBEDS: Record<string, string> = {
+  santorini: "https://stay22.com/embed/69eb77823fa26d2af687fe19",
+  mykonos: "https://stay22.com/embed/69ee3a9d4e520cef98dea92a",
+  crete: "https://stay22.com/embed/69ee3b284d8b00b0283f8d3f",
+  kefalonia: "https://stay22.com/embed/69ee3b9db13cd4c6bacc2fbc",
+  athens: "https://stay22.com/embed/69ee3bf84e520cef98dead1e",
+  "nayplio-odigos-taxidiou": "https://stay22.com/embed/69ee3c9a4e520cef98deae24",
+  thessaloniki: "https://stay22.com/embed/69ee3cf34e520cef98deaf0d",
+  paros: "https://stay22.com/embed/69ee3d424d8b00b0283f916d",
+  milos: "https://stay22.com/embed/69ee3d8c4e520cef98deb0c3",
+  zakynthos: "https://stay22.com/embed/69ee3e1c1c09e44123fd027c",
+  rhodes: "https://stay22.com/embed/69ee3ea44e520cef98deb2ec",
+  halkidiki: "https://stay22.com/embed/69ee3f1a1c09e44123fd04c7",
+  meteora: "https://stay22.com/embed/69ee3f7cb13cd4c6bacc38c1",
+  monemvasia: "https://stay22.com/embed/69ee3fdf4e520cef98deb56d",
+  chania: "https://stay22.com/embed/69ee406d1c09e44123fd07ce",
+  parga: "https://stay22.com/embed/69ee40b84e520cef98deb77b",
+  delphi: "https://stay22.com/embed/69ee410f4e520cef98deb892",
+  corfu: "https://stay22.com/embed/69eb79623fa26d2af68804f7",
+  lesvos: "https://stay22.com/embed/69eb79de3fa26d2af68806f8",
+};
+
+const HOTEL_NAMES: Record<string, string[]> = {
+  santorini: ["Canaves Oia Suites", "Katikies", "Perivolas", "Charisma Suites", "Esperas Traditional Houses",
+    "Canaves Oia", "Santorini Secret", "Andronis", "Mystique", "Grace Hotel", "Vedema", "Santo Maris"],
+  mykonos: ["Kouros", "Rocabella", "Myconian", "Mikri Angela", "Mykonos Blanc"],
+  crete: ["Blue Palace", "Daios Cove", "Elounda Beach", "Abaton Island"],
+  athens: ["Electra Metropolis", "Electra Palace", "Grande Bretagne", "King George", "Hilton Athens"],
+  paros: ["Paros Agnanti", "Aegeon", "Hotel Senia", "Marcelina"],
+  milos: ["Milos Breeze", "Sundays Milos", "White Rock Milos", "Aeolus"],
+  corfu: ["Corfu Imperial", "Grecotel", "Pink Palace", "Sinarades"],
+  zakynthos: ["Zante Maris", "Lesante", "Porto Zante", "Libra"],
+  kefalonia: ["Avithos", "F Zeen", "Odyssey", "Ionian Sun"],
+  rhodes: ["Atrium Palace", "Lindos Blu", "Sheraton Rhodes", "Mitsis"],
+  halkidiki: ["Sani Resort", "Eagle Beach", "Ikos Olivia"],
+  meteora: ["Doupiani House", "Meteora Central", "Alsos House"],
+  monemvasia: ["Moni Emvasis", "Byzantino", "Theophano", "Likinia"],
+  parga: ["Vegera", "Paradise Hotel", "Lichnos"],
+  delphi: ["Amalia Delphi", "Fedriades", "Amalia Hotel"],
+  thessaloniki: ["Electra Thessaloniki", "Makedonia Palace", "Hyatt Regency"],
+  lesvos: ["Lesvos Beach", "Porto Lesvos"],
+  "nayplio-odigos-taxidiou": ["Nafplio Palace", "Amalia Nafplio"],
+  chania: ["Casa Delfino", "Porto Veneziano", "Elounda Chania"],
+};
+
+function getStay22Url(slug: string): string {
+  return STAY22_EMBEDS[slug] || "https://stay22.com/embed/69eb79de3fa26d2af68806f8";
+}
+
+function getAllezSearchUrl(hotelName: string, place: string): string {
+  const addr = encodeURIComponent(place.replace(/ *—.*$/, "").trim() + ", Greece");
+  const hotel = encodeURIComponent(hotelName);
+  return `https://www.stay22.com/allez/roam?aid=${STAY22_AID}&campaign=${STAY22_CAMPAIGN}&hotelname=${hotel}&address=${addr}`;
+}
+
+function renderWithHotelLinks(text: string | undefined, slug: string, place: string) {
+  if (!text) return null;
+  const names = HOTEL_NAMES[slug] || [];
+  if (names.length === 0) return text;
+  const sorted = [...names].sort((a, b) => b.length - a.length);
+  const escaped = sorted.map(n => n.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+  const pattern = new RegExp(`(${escaped.join('|')})`, 'gi');
+  const parts = text.split(pattern);
+  return parts.map((part, i) => {
+    if (sorted.some(name => name.toLowerCase() === part.toLowerCase())) {
+      const href = getAllezSearchUrl(part, place);
+      return <a key={i} href={href} target="_blank" rel="noreferrer" className="stay22-link">{part}</a>;
+    }
+    return part;
+  });
+}
+
 type ListCardProps = {
   title: string;
   items?: string[];
@@ -216,34 +291,14 @@ export default function HotelDetailsClient({ lang: serverLang, slug: serverSlug,
           </div>
         </section>
 
-        {(slug === "santorini" || slug === "corfu" || slug === "lesvos" || slug === "mykonos" || slug === "crete" || slug === "kefalonia" || slug === "athens" || slug === "nayplio-odigos-taxidiou" || slug === "thessaloniki" || slug === "paros" || slug === "milos" || slug === "zakynthos" || slug === "rhodes" || slug === "halkidiki" || slug === "meteora" || slug === "monemvasia" || slug === "chania" || slug === "parga" || slug === "delphi") && (
+        {STAY22_EMBEDS[slug] && (
           <section className="mt-10 overflow-hidden rounded-[2.5rem] border border-slate-200 shadow-xl bg-white p-3">
              <Stay22Booking />
              <iframe 
               id="stay22-widget"
               width="100%" 
               height="428" 
-              src={
-                slug === "santorini" ? "https://stay22.com/embed/69eb77823fa26d2af687fe19" :
-                slug === "mykonos" ? "https://stay22.com/embed/69ee3a9d4e520cef98dea92a" :
-                slug === "crete" ? "https://stay22.com/embed/69ee3b284d8b00b0283f8d3f" :
-                slug === "kefalonia" ? "https://stay22.com/embed/69ee3b9db13cd4c6bacc2fbc" :
-                slug === "athens" ? "https://stay22.com/embed/69ee3bf84e520cef98dead1e" :
-                slug === "nayplio-odigos-taxidiou" ? "https://stay22.com/embed/69ee3c9a4e520cef98deae24" :
-                slug === "thessaloniki" ? "https://stay22.com/embed/69ee3cf34e520cef98deaf0d" :
-                slug === "paros" ? "https://stay22.com/embed/69ee3d424d8b00b0283f916d" :
-                slug === "milos" ? "https://stay22.com/embed/69ee3d8c4e520cef98deb0c3" :
-                slug === "zakynthos" ? "https://stay22.com/embed/69ee3e1c1c09e44123fd027c" :
-                slug === "rhodes" ? "https://stay22.com/embed/69ee3ea44e520cef98deb2ec" :
-                slug === "halkidiki" ? "https://stay22.com/embed/69ee3f1a1c09e44123fd04c7" :
-                slug === "meteora" ? "https://stay22.com/embed/69ee3f7cb13cd4c6bacc38c1" :
-                slug === "monemvasia" ? "https://stay22.com/embed/69ee3fdf4e520cef98deb56d" :
-                slug === "chania" ? "https://stay22.com/embed/69ee406d1c09e44123fd07ce" :
-                slug === "parga" ? "https://stay22.com/embed/69ee40b84e520cef98deb77b" :
-                slug === "delphi" ? "https://stay22.com/embed/69ee410f4e520cef98deb892" :
-                slug === "corfu" ? "https://stay22.com/embed/69eb79623fa26d2af68804f7" :
-                "https://stay22.com/embed/69eb79de3fa26d2af68806f8"
-              }
+               src={getStay22Url(slug)}
               frameBorder="0"
               title={`Stay22 ${slug} Hotels Map`}
               className="rounded-[2.2rem]"
@@ -280,8 +335,8 @@ export default function HotelDetailsClient({ lang: serverLang, slug: serverSlug,
                 </h2>
               </div>
 
-              <p className="mt-8 text-lg leading-relaxed text-slate-600 whitespace-pre-line">
-                {item.description ? item.description[lang] : item.overview[lang]}
+              <p className="stay22-desc mt-8 text-lg leading-relaxed text-slate-600 whitespace-pre-line">
+                {item.description ? renderWithHotelLinks(item.description[lang], slug, item.place) : renderWithHotelLinks(item.overview[lang], slug, item.place)}
               </p>
             </section>
             
@@ -295,8 +350,8 @@ export default function HotelDetailsClient({ lang: serverLang, slug: serverSlug,
                     <h2 className="text-3xl font-bold tracking-tight text-slate-900 group-hover:text-indigo-800 transition-colors">
                       {section.title[lang]}
                     </h2>
-                    <div className="mt-8 text-lg leading-relaxed text-slate-600 whitespace-pre-line">
-                      {section.content[lang]}
+                    <div className="stay22-desc mt-8 text-lg leading-relaxed text-slate-600 whitespace-pre-line">
+                      {renderWithHotelLinks(section.content[lang], slug, item.place)}
                     </div>
                   </section>
                 ))}
