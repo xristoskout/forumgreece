@@ -1716,6 +1716,299 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       ],
     },
   ],
+  nafplio: [
+    {
+      title: {
+        en: "Why visit Nafplio",
+        el: "Γιατί να επισκεφθεί κάποιος το Ναύπλιο",
+      },
+      layout: "numbered",
+      items: [
+        {
+          title: {
+            en: "It is an 'atmosphere capital' all year round",
+            el: "Είναι «πρωτεύουσα» ατμόσφαιρας όλο τον χρόνο",
+          },
+          text: {
+            en: "The city has continuous traffic throughout the year. It is not 'dead' off-season: coffee, food, walks, museums, life.",
+            el: "Ο ίδιος ο Δήμος Ναυπλιέων τονίζει ότι η πόλη έχει συνεχή κίνηση όλη τη διάρκεια του χρόνου. Αυτό σημαίνει ότι δεν είναι «νεκρό» εκτός σεζόν: καφέ, φαγητό, βόλτα, μουσεία, ζωή.",
+          },
+        },
+        {
+          title: {
+            en: "It features landmark-castles that are not just backgrounds",
+            el: "Έχει κάστρα-σύμβολα που δεν είναι απλώς φόντο",
+          },
+          text: {
+            en: "Palamidi, Bourtzi, and Akronafplia are not just 'nice photos'. They are pieces of a castle-city built in layers over centuries.",
+            el: "Το Παλαμήδι, το Μπούρτζι και η Ακροναυπλία δεν είναι «ωραίες φωτογραφίες». Είναι κομμάτια μιας καστροπολιτείας που χτίστηκε σε στρώσεις αιώνων.",
+          },
+        },
+        {
+          title: {
+            en: "It's the perfect base for top Greek highlights",
+            el: "Είναι “base” για μερικά από τα μεγαλύτερα highlights της Ελλάδας",
+          },
+          text: {
+            en: "In a short distance you can find Mycenae, Tiryns (UNESCO), and the Sanctuary of Asklepios in Epidaurus (UNESCO). You combine a city break with a cultural trip.",
+            el: "Σε μικρή απόσταση βρίσκονται οι Μυκήνες & Τίρυνθα (UNESCO) και το Ιερό του Ασκληπιού στην Επίδαυρο (UNESCO). Με λίγα λόγια: κάνεις city break που γίνεται και πολιτιστικό ταξίδι.",
+          },
+        },
+      ],
+    },
+    {
+      title: {
+        en: "Best time for Nafplio",
+        el: "Καλύτερη εποχή για Ναύπλιο",
+      },
+      layout: "list",
+      alert: {
+        en: "Secret: If you want 'Nafplio for photos', go on a weekday in spring or late September. You'll walk the Old Town without doing a slalom.",
+        el: "Μικρό μυστικό εποχής: Αν θες «Ναύπλιο για φωτογραφίες», πήγαινε καθημερινή, άνοιξη ή τέλη Σεπτεμβρίου. Θα περπατάς στην Παλιά Πόλη χωρίς να κάνεις… σλάλομ.",
+      },
+      items: [
+        {
+          title: { en: "Spring & Autumn", el: "Άνοιξη & φθινόπωρο" },
+          text: {
+            en: "Mild temperatures, blooming landscapes, fewer crowds (ideal for castles, walks, and short excursions).",
+            el: "Ήπιες θερμοκρασίες, ανθισμένα τοπία, λιγότερος κόσμος (ιδανικά για κάστρα, βόλτες, κοντινές εκδρομές).",
+          },
+        },
+        {
+          title: { en: "June & September", el: "Ιούνιος & Σεπτέμβριος" },
+          text: {
+            en: "The best compromise for swimming and town vibe, with a more relaxed atmosphere than July-August.",
+            el: "Ο πιο ωραίος συμβιβασμός για μπάνιο και πόλη, με πιο χαλαρή ατμόσφαιρα από Ιούλιο–Αύγουστο.",
+          },
+        },
+      ],
+    },
+    {
+      title: {
+        en: "How to get to Nafplio",
+        el: "Πώς φτάνεις στο Ναύπλιο",
+      },
+      layout: "grid",
+      alert: {
+        en: "Secret: If weekend bound, start early. Not because you won't 'make it', but because Nafplio is won when lived before the Old Town gets full.",
+        el: "Μικρό μυστικό πρόσβασης: Αν πας Σ/Κ, ξεκίνα νωρίς. Όχι γιατί “δεν θα προλάβεις”, αλλά γιατί το Ναύπλιο κερδίζεται όταν το ζεις πριν γεμίσει η Παλιά Πόλη.",
+      },
+      items: [
+        {
+          title: { en: "By car", el: "Με αυτοκίνητο" },
+          text: {
+            en: "From Athens, the drive is about 2 hours (via Olympia Odos, exit for Nemea towards Nafplio).",
+            el: "Από Αθήνα, η διαδρομή είναι περίπου 2 ώρες (μέσω Ολυμπίας Οδού, έξοδος για Νεμέα προς Ναύπλιο).",
+          },
+        },
+        {
+          title: { en: "By bus (KTEL)", el: "Με ΚΤΕΛ (εύκολο και συχνό)" },
+          text: {
+            en: "Argolis KTEL runs frequent daily routes. The Athens-Nafplio trip typically takes about 2 hours and 10 minutes.",
+            el: "Το ΚΤΕΛ Αργολίδας δίνει 2 ώρες & 10 λεπτά για Αθήνα–Ναύπλιο. Υπάρχουν πολλά δρομολόγια μέσα στην ημέρα.",
+          },
+        },
+      ],
+    },
+    {
+      title: {
+        en: "Top attractions & experiences",
+        el: "Top αξιοθέατα & εμπειρίες (αυτά που αξίζει όντως να κάνεις)",
+      },
+      layout: "numbered",
+      items: [
+        {
+          title: { en: "Old Town & Syntagma Square", el: "Παλιά Πόλη & Πλατεία Συντάγματος: το “σαλόνι” του Ναυπλίου" },
+          text: {
+            en: "The center of gravity featuring significant buildings like the Venetian Fleet Warehouse. Secret: Take two walks—one in the morning (clear light) and one at night (vibe/food).",
+            el: "Η Πλατεία Συντάγματος είναι το κέντρο βάρους. Μυστικό: Κάνε 2 βόλτες: μία πρωί (καθαρό φως, ήσυχες γωνίες) και μία βράδυ (ατμόσφαιρα, φαγητό, κόσμο).",
+          },
+        },
+        {
+          title: { en: "Archaeological Museum", el: "Αρχαιολογικό Μουσείο Ναυπλίου: μικρό “κλειδί” για όλη την Αργολίδα" },
+          text: {
+            en: "Housed in a 1713 Venetian building. Secret: Go before visiting Mycenae/Tiryns—you will understand the sites much better.",
+            el: "Στεγάζεται σε κτήριο της Ενετοκρατίας (1713). Μυστικό: Πήγαινε πριν από Μυκήνες/Τίρυνθα ή μετά—θα καταλάβεις πολύ καλύτερα όσα βλέπεις στους χώρους.",
+          },
+        },
+        {
+          title: { en: "Palamidi Castle", el: "Παλαμήδι: το κάστρο-τεστ αντοχής (με ανταμοιβή θέας)" },
+          text: {
+            en: "A Venetian fortress from the early 18th century. Secret: If you don't want the ~857 steps, drive up and save the steps for the descent.",
+            el: "Ενετικό οχυρωματικό έργο αρχών του 18ου αιώνα (εδώ και η φυλακή του Κολοκοτρώνη). Μικρό μυστικό: Τα «999 σκαλοπάτια» είναι μύθος, είναι 857. Αν δεν θες σκαλιά, ανέβα με δρόμο.",
+          },
+        },
+        {
+          title: { en: "Bourtzi", el: "Μπούρτζι: το κάστρο-νησί που φύλαγε το λιμάνι με αλυσίδα" },
+          text: {
+            en: "Fortified in 1471, it used to have a chain blocking enemy ships. Secret: Don't just view it from the shore; take the boat across. The city view is incredible.",
+            el: "Οχυρώθηκε το 1471–1472. Μυστικό: Μη το δεις μόνο «απ' έξω». Έστω και μία φορά, πέρασε απέναντι—η θέα προς την πόλη είναι άλλο έργο.",
+          },
+        },
+        {
+          title: { en: "Akronafplia", el: "Ακροναυπλία: η «παλιά» ακρόπολη πάνω από την πόλη" },
+          text: {
+            en: "The best way to enjoy it is a panoramic walk overlooking the Argolic Gulf, Bourtzi, and the Old Town rooftops.",
+            el: "Ο πιο ωραίος τρόπος να την απολαύσεις είναι σαν περίπατο/θέα: κοιτάς από ψηλά τον Αργολικό, το Μπούρτζι και τις στέγες της Παλιάς Πόλης.",
+          },
+        },
+        {
+          title: { en: "Arvanitia Promenade", el: "Αρβανιτιά: παραλία + περίπατος που είναι «σήμα κατατεθέν»" },
+          text: {
+            en: "The beach lies below Palamidi. The 'Arvanitia Round' is the favorite seaside stroll. Secret: Go late afternoon for cinematic lighting.",
+            el: "Απλώνεται κάτω από το Παλαμήδι (Γαλάζια Σημαία). Ο «γύρος της Αρβανιτιάς» είναι ο αγαπημένος περίπατος. Μυστικό: Πήγαινε για περπάτημα αργά απόγευμα.",
+          },
+        },
+        {
+          title: { en: "Psaromachalas", el: "Ψαρομαχαλάς: η γειτονιά που κρατάει «χαμηλόφωνα» την ιστορία" },
+          text: {
+            en: "The oldest district of the lower town. Secret: Great for photography—small doors, low houses, shadows, raw material without 'tourist noise'.",
+            el: "Από τις πιο παλιές συνοικίες της κάτω πόλης. Μυστικό φωτογραφίας: μικρές πόρτες, χαμηλά σπίτια, σκιές—πολύ υλικό χωρίς να «φωνάζει» τουρισμός.",
+          },
+        },
+        {
+          title: { en: "Church of Agios Spyridon", el: "Ναός Αγίου Σπυρίδωνα: το σημείο μιας καθοριστικής στιγμής" },
+          text: {
+            en: "Here, Ioannis Kapodistrias was assassinated in 1831. Secret: Stand here for 2 minutes without rushing. It gives historical weight to the trip.",
+            el: "Εδώ δολοφονήθηκε ο Ιωάννης Καποδίστριας στις 27 Σεπτεμβρίου 1831. Μυστικό: Στάσου 2 λεπτά χωρίς βιασύνη. Δεν βλέπεις απλά μια εκκλησία.",
+          },
+        },
+        {
+          title: { en: "Komboloi Museum", el: "Μουσείο Κομπολογιού: το πιο απρόσμενο “Nafplio gem”" },
+          text: {
+            en: "Presents the whole world around 'worry beads' (komboloi). Secret: Perfect midday break and ideal for a unique gift.",
+            el: "Ιδρύθηκε 1998, παρουσιάζει έναν κόσμο γύρω από το κομπολόι. Μυστικό: Τέλειο διάλειμμα το μεσημέρι και ιδανικό για δώρο που δεν είναι “ψυγείο-μαγνήτης”.",
+          },
+        },
+      ],
+    },
+    {
+      title: {
+        en: "Beaches, nearby villages & excursions",
+        el: "Παραλίες, κοντινά χωριά & μικρές εκδρομές που αξίζουν",
+      },
+      layout: "list",
+      alert: {
+        en: "Excursion secret: Don't try to fit it all in a weekend. Nafplio requires 'aimless' walks—these are what you ultimately remember.",
+        el: "Μικρό μυστικό εκδρομών: Μην προσπαθήσεις να τα κάνεις όλα σε ένα διήμερο. Το Ναύπλιο θέλει χρόνο για «άσκοπες» βόλτες – αυτές είναι που τελικά θυμάσαι.",
+      },
+      items: [
+        {
+          title: { en: "Arvanitia (in town)", el: "Αρβανιτιά (πόλη)" },
+          text: {
+            en: "Small, refreshing, next to the Old Town—ideal for a swim-break amidst walking.",
+            el: "Μικρή, δροσερή, δίπλα στην Παλιά Πόλη—ιδανική για «μπάνιο-διάλειμμα» ανάμεσα στις βόλτες.",
+          },
+        },
+        {
+          title: { en: "Karathona", el: "Καραθώνα (η «μεγάλη» παραλία)" },
+          text: {
+            en: "4km from Nafplio, the classic choice for a long sandy stretch. Secret: Go early as 'good spots' fill up quickly.",
+            el: "Περίπου 4 χλμ. έξω από το Ναύπλιο, η κλασική επιλογή για άπλα. Μυστικό: Πήγαινε νωρίς για τις πιο ήσυχες γωνιές.",
+          },
+        },
+        {
+          title: { en: "Tolo", el: "Τολό (για πιο “νησιώτικο” μπάνιο)" },
+          text: {
+            en: "About 12km away, practical choice for families with shallow waters and relaxed sea vibes.",
+            el: "Περίπου 12 χλμ. από το Ναύπλιο, πολύ πρακτική επιλογή για οικογένειες (ρηχά νερά) και χαλαρή βόλτα.",
+          },
+        },
+        {
+          title: { en: "Mycenae & Tiryns (UNESCO)", el: "Μυκήνες & Τίρυνθα (UNESCO)" },
+          text: {
+            en: "The most important prehistoric site in Europe and the legendary Mycenae. Secret: Visit the site first, then the museum in Nafplio.",
+            el: "Ο σημαντικότερος προϊστορικός χώρος της Ευρώπης. Μυστικό: Πήγαινε πρώτα στον χώρο και μετά στο μουσείο Ναυπλίου.",
+          },
+        },
+        {
+          title: { en: "Epidaurus", el: "Επίδαυρος (θέατρο και ιερό)" },
+          text: {
+            en: "The best-preserved ancient Greek theatre (UNESCO). Secret: Combine with a stop in Lygourio for food.",
+            el: "Το καλύτερα διατηρημένο αρχαίο θέατρο (UNESCO). Μυστικό: Συνδύασε με στάση στο Λυγουριό για φαγητό.",
+          },
+        },
+      ],
+    },
+    {
+      title: {
+        en: "What to eat (and what to take home)",
+        el: "Τι να φας στο Ναύπλιο (και τι να πάρεις για το σπίτι)",
+      },
+      layout: "list",
+      alert: {
+        en: "Food secret: Best value is often found one alley behind the high streets. Rule: the less seaside view, the more comfortably you eat.",
+        el: "Μικρό μυστικό φαγητού: στην Παλιά Πόλη, το καλύτερο «value» συχνά είναι ένα στενό πιο μέσα. Κανόνας: όσο λιγότερο βλέπεις προκυμαία, τόσο πιο άνετα τρως.",
+      },
+      items: [
+        {
+          title: { en: "Nafplio Amygdalota", el: "Αναπλιώτικα αμυγδαλωτά" },
+          text: {
+            en: "The most characteristic sweet and souvenir, visible everywhere in the Old Town.",
+            el: "Το πιο χαρακτηριστικό γλυκό-αναμνηστικό (θα το δεις παντού στην Παλιά Πόλη).",
+          },
+        },
+        {
+          title: { en: "Gogkes (Local Pasta)", el: "Τοπικά ζυμαρικά / γκόγκες" },
+          text: {
+            en: "Handmade pasta with eggs and flour.",
+            el: "Χειροποίητα ζυμαρικά με αβγό και αλεύρι.",
+          },
+        },
+        {
+          title: { en: "Olive Oil & Olives", el: "Λάδι & ελιές" },
+          text: {
+            en: "The Argolid region produces excellent olive oil and local table olives.",
+            el: "Η Αργολίδα παράγει εξαιρετικό ελαιόλαδο και βρώσιμες ελιές.",
+          },
+        },
+      ],
+    },
+    {
+      title: {
+        en: "FAQ — Nafplio essentials",
+        el: "FAQ — Χρήσιμες ερωτήσεις για το Ναύπλιο",
+      },
+      layout: "faq",
+      items: [
+        {
+          title: { en: "How many days do you need in Nafplio?", el: "Πόσες μέρες χρειάζεσαι στο Ναύπλιο;" },
+          text: {
+            en: "A weekend (2 nights) is the minimum. 3-4 nights allow day trips to Mycenae, Epidaurus, or Hydra.",
+            el: "Ένα σαββατοκύριακο (2 διανυκτερεύσεις) είναι το ελάχιστο. 3-4 μέρες επιτρέπουν εκδρομές σε Μυκήνες, Επίδαυρο ή Ύδρα.",
+          },
+        },
+        {
+          title: { en: "Is Nafplio good for families?", el: "Είναι το Ναύπλιο κατάλληλο για οικογένειες;" },
+          text: {
+            en: "Yes — it has easy walking areas, beaches (Arvanitia, Karathona), and family-friendly accommodations.",
+            el: "Ναι — έχει εύκολες βόλτες, παραλίες και οικογενειακά καταλύματα.",
+          },
+        },
+        {
+          title: { en: "Can you swim in Nafplio?", el: "Μπορείς να κολυμπήσεις στο Ναύπλιο;" },
+          text: {
+            en: "Yes — Arvanitia Beach is right in town. Karathona and Tolo are a short drive away.",
+            el: "Ναι — η Αρβανιτιά είναι μέσα στην πόλη, η Καραθώνα και το Τολό σε κοντινή απόσταση.",
+          },
+        },
+        {
+          title: { en: "Best time to visit?", el: "Ποια είναι η καλύτερη εποχή;" },
+          text: {
+            en: "Spring/autumn for touring, June/September for combining city and sea.",
+            el: "Άνοιξη/φθινόπωρο για βόλτες και αξιοθέατα, Ιούνιο/Σεπτέμβριο για συνδυασμό πόλης και θάλασσας.",
+          },
+        },
+        {
+          title: { en: "Is it worth it as a day trip?", el: "Αξίζει σαν ημερήσια από Αθήνα;" },
+          text: {
+            en: "Yes, but it's a shame. Nafplio truly shines when you stay overnight and the Old Town transforms in the evening.",
+            el: "Γίνεται, αλλά είναι κρίμα. Το Ναύπλιο λάμπει όταν μείνεις έστω μία νύχτα—γιατί το βράδυ η Παλιά Πόλη αλλάζει τελείως.",
+          },
+        },
+      ],
+    },
+  ],
   thessaloniki: [
     {
       title: {

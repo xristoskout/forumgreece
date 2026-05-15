@@ -714,7 +714,7 @@ export const hotels: HotelCard[] = [
     }
   },
   {
-    slug: "nayplio-odigos-taxidiou",
+    slug: "nafplio",
     name: "Where to Stay in Nafplio",
     place: "Nafplio — Peloponnese",
     info: {

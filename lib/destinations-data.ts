@@ -266,7 +266,7 @@ export const destinations: Destination[] = [
     ],
   },
   {
-    slug: "nayplio-odigos-taxidiou",
+    slug: "nafplio",
     name: "Nafplio",
     region: { en: "Peloponnese", el: "Πελοπόννησος" },
     blurb: {
@@ -295,7 +295,7 @@ export const destinations: Destination[] = [
     },
     guideLinks: [
       {
-        href: "/hotels/nayplio-odigos-taxidiou",
+        href: "/hotels/nafplio",
         label: { en: "Where to Stay in Nafplio", el: "Πού να μείνεις στο Ναύπλιο" }
       }
     ],

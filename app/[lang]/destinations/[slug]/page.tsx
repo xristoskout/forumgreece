@@ -1,4 +1,4 @@
-import { notFound } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 import type { Metadata } from 'next';
 import { destinations, SITE_URL } from '../../../../lib/content';
 import DestinationDetailsClient from './destination-details-client';
@@ -12,6 +12,11 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const resolvedParams = await params;
   const lang = (isLang(resolvedParams.lang) ? resolvedParams.lang : "en");
+
+  if (resolvedParams.slug === "nayplio-odigos-taxidiou") {
+    redirect(`/${lang}/destinations/nafplio`);
+  }
+
   const destination = destinations.find((d) => d.slug === resolvedParams.slug);
 
   if (!destination) {
@@ -64,6 +69,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function DestinationDetailsPage({ params }: Props) {
   const resolvedParams = await params;
   const lang = (isLang(resolvedParams.lang) ? resolvedParams.lang : "en");
+
+  if (resolvedParams.slug === "nayplio-odigos-taxidiou") {
+    redirect(`/${lang}/destinations/nafplio`);
+  }
+
   const destination = destinations.find((d) => d.slug === resolvedParams.slug);
 
   if (!destination) {

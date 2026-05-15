@@ -351,6 +351,7 @@ export default function DestinationDetailsClient({
                 "mykonos": "W-db1da184-a2f1-4058-b7f1-a9e15ccf9fa6",
                 "crete": "W-beb6dd42-10a7-4524-8626-6fda84f9e5df",
                 "nayplio-odigos-taxidiou": "W-40c6533f-c44b-4cd7-bb26-8d0788a922e2",
+                "nafplio": "W-40c6533f-c44b-4cd7-bb26-8d0788a922e2",
                 "thessaloniki": "W-f0334037-6d06-42d6-83a2-07d3903ef04b",
               };
               const wRef = DESTINATION_WIDGETS[destination.slug];

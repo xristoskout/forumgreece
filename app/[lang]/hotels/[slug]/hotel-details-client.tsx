@@ -20,6 +20,7 @@ const STAY22_EMBEDS: Record<string, string> = {
   kefalonia: "https://stay22.com/embed/69ee3b9db13cd4c6bacc2fbc",
   athens: "https://stay22.com/embed/69ee3bf84e520cef98dead1e",
   "nayplio-odigos-taxidiou": "https://stay22.com/embed/69ee3c9a4e520cef98deae24",
+  nafplio: "https://stay22.com/embed/69ee3c9a4e520cef98deae24",
   thessaloniki: "https://stay22.com/embed/69ee3cf34e520cef98deaf0d",
   paros: "https://stay22.com/embed/69ee3d424d8b00b0283f916d",
   milos: "https://stay22.com/embed/69ee3d8c4e520cef98deb0c3",
@@ -33,6 +34,8 @@ const STAY22_EMBEDS: Record<string, string> = {
   delphi: "https://stay22.com/embed/69ee410f4e520cef98deb892",
   corfu: "https://stay22.com/embed/69eb79623fa26d2af68804f7",
   lesvos: "https://stay22.com/embed/69eb79de3fa26d2af68806f8",
+  "patmos-travel-guide": "https://stay22.com/embed/6a073e542573b5d07586c5db",
+  patmos: "https://stay22.com/embed/6a073e542573b5d07586c5db",
 };
 
 const HOTEL_NAMES: Record<string, string[]> = {
@@ -55,7 +58,10 @@ const HOTEL_NAMES: Record<string, string[]> = {
   thessaloniki: ["Electra Thessaloniki", "Makedonia Palace", "Hyatt Regency"],
   lesvos: ["Lesvos Beach", "Porto Lesvos"],
   "nayplio-odigos-taxidiou": ["Nafplio Palace", "Amalia Nafplio"],
+  nafplio: ["Nafplio Palace", "Amalia Nafplio"],
   chania: ["Casa Delfino", "Porto Veneziano", "Elounda Chania"],
+  "patmos-travel-guide": ["Patmos Aktis", "Chrissi Aktis", "Patmos Paradise", "Petra"],
+  patmos: ["Patmos Aktis", "Chrissi Aktis", "Patmos Paradise", "Petra"],
 };
 
 function getStay22Url(slug: string): string {

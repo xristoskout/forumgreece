@@ -250,6 +250,41 @@ export const destinationDetails: Record<string, DestinationDetail> = {
     },
   },
 
+  nafplio: {
+    overview: {
+      en: "Nafplio is the city that makes you feel like you are in a romantic movie... but with Greek coffee. It is one of those destinations that always work: weekends, holidays, spring getaways in Greece. The Old Town with its neoclassical buildings, narrow alleys, squares, and castles that you can see from everywhere, gives this rare mix of 'picturesque' without being fake. And there is a historical weight that makes the trip more meaningful: Nafplio flourished when it became the first capital of the Greek state, from 1827 to 1834.",
+      el: "Το Ναύπλιο είναι η πόλη που σε κάνει να νομίζεις πως είσαι σε ρομαντική ταινία… αλλά με ελληνικό καφέ. Είναι από εκείνους τους προορισμούς που δουλεύουν πάντα: διήμερο, τριήμερο, γιορτές, ανοιξιάτικες αποδράσεις. Η Παλιά Πόλη με τα νεοκλασικά, τα καντούνια, τις πλατείες και τα κάστρα που βλέπεις από παντού, δίνει αυτό το σπάνιο μείγμα: «γραφικό» χωρίς να είναι ψεύτικο. Και υπάρχει κι ένα ιστορικό βάρος που κάνει το ταξίδι πιο ουσιαστικό: το Ναύπλιο γνώρισε τη μεγάλη ακμή του όταν έγινε πρωτεύουσα του ελληνικού κράτους, από το 1827 έως το 1834.",
+    },
+    pageIncludes: {
+      en: [
+        "Palamidi & Bourtzi Castles",
+        "Archaeological trips (Mycenae, Epidaurus)",
+        "Old Town walks & Architecture",
+        "Beaches like Arvanitia & Karathona",
+      ],
+      el: [
+        "Παλαμήδι & Μπούρτζι",
+        "Αρχαιολογικές εκδρομές (Μυκήνες, Επίδαυρος)",
+        "Βόλτες στη Παλιά Πόλη & Αρχιτεκτονική",
+        "Παραλίες όπως η Αρβανιτιά & Καραθώνα",
+      ],
+    },
+    perfectFor: {
+      en: [
+        "Couples and romantic getaways",
+        "History and archaeology enthusiasts",
+        "City breaks and short weekend escapes",
+        "Families seeking easy walking areas",
+      ],
+      el: [
+        "Ζευγάρια και ρομαντικές αποδράσεις",
+        "Λάτρεις της ιστορίας και της αρχαιολογίας",
+        "City breaks και σύντομες αποδράσεις",
+        "Οικογένειες που αναζητούν εύκολες βόλτες",
+      ],
+    },
+  },
+
   thessaloniki: {
     overview: {
       en: "Thessaloniki is not 'just' the second largest city in Greece. It is a capital of rhythm: coffee that becomes a ritual, a walk on the New Waterfront that feels like a daily city date, Byzantine monuments not seen behind fences but next to modern shops, and neighborhoods that change character within minutes of walking. And the most significant asset? Thessaloniki is a global cultural destination: its Early Christian and Byzantine monuments are listed by UNESCO.",
