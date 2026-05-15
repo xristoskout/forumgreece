@@ -493,8 +493,8 @@ export const destinations: Destination[] = [
     },
     image: "/images/patmos.webp",
     overview: {
-      en: "Patmos is the sacred island of the Aegean — a place of deep spiritual history, whitewashed villages, crystalline coves and a silence that feels intentional. The fortified Monastery of Saint John dominates Hora like a medieval crown, while Skala offers lively evenings and quiet mornings. If you're looking for [Where to Stay in Patmos](/hotels/patmos-travel-guide), the island's small scale means every base is well positioned.",
-      el: "Η Πάτμος είναι το ιερό νησί του Αιγαίου — ένας τόπος βαθιάς πνευματικής ιστορίας, ολόλευκων χωριών, κρυστάλλινων όρμων και μιας σιωπής που μοιάζει εσκεμμένη. Η οχυρωμένη Μονή του Αγίου Ιωάννη δεσπόζει στη Χώρα σαν μεσαιωνικό στέμμα, ενώ η Σκάλα προσφέρει ζωντανά βράδια και ήσυχα πρωινά. Αν ψάχνετε [Πού να μείνετε στην Πάτμο](/hotels/patmos-travel-guide), η μικρή κλίμακα του νησιού σημαίνει ότι κάθε βάση είναι καλά τοποθετημένη."
+      en: "Patmos is the sacred island of the Aegean — a place of deep spiritual history, whitewashed villages, crystalline coves and a silence that feels intentional. The fortified Monastery of Saint John dominates Hora like a medieval crown, while Skala offers lively evenings and quiet mornings. If you're looking for [Where to Stay in Patmos](/hotels/patmos), the island's small scale means every base is well positioned.",
+      el: "Η Πάτμος είναι το ιερό νησί του Αιγαίου — ένας τόπος βαθιάς πνευματικής ιστορίας, ολόλευκων χωριών, κρυστάλλινων όρμων και μιας σιωπής που μοιάζει εσκεμμένη. Η οχυρωμένη Μονή του Αγίου Ιωάννη δεσπόζει στη Χώρα σαν μεσαιωνικό στέμμα, ενώ η Σκάλα προσφέρει ζωντανά βράδια και ήσυχα πρωινά. Αν ψάχνετε [Πού να μείνετε στην Πάτμο](/hotels/patmos), η μικρή κλίμακα του νησιού σημαίνει ότι κάθε βάση είναι καλά τοποθετημένη."
     },
     highlights: {
       en: ["Monastery of St John (UNESCO)", "Cave of the Apocalypse", "Hora medieval village"],
@@ -513,7 +513,7 @@ export const destinations: Destination[] = [
     },
     guideLinks: [
       {
-        href: "/hotels/patmos-travel-guide",
+        href: "/hotels/patmos",
         label: { en: "Where to Stay in Patmos", el: "Πού να μείνεις στην Πάτμο" }
       }
     ],
