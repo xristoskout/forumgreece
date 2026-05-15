@@ -2013,63 +2013,48 @@ export const hotels: HotelCard[] = [
     image: "/images/patmos.webp",
     badge: "Featured stay",
     overview: {
-      en: "Choosing where to stay in Patmos shapes the entire experience — from the buzzing harbourfront of Skala with its tavernas and boats, and the breathtaking UNESCO-protected Hora crowned by the Monastery of Saint John, to the calm waters of Grikos beach and the remote sandy coves along the south and west coasts.",
-      el: "Η επιλογή διαμονής στην Πάτμο καθορίζει ολόκληρη την εμπειρία — από το ζωντανό λιμάνι της Σκάλας και την εντυπωσιακή Χώρα με τη Μονή του Αγίου Ιωάννη έως τα ήρεμα νερά του Γρικού και τις απομονωμένες αμμώδεις παραλίες."
+      en: "Where to Stay: A Quick Orientation. Patmos has no large hotel chains and no resort strip. The accommodation is human in scale and broadly high in quality. Three areas serve different needs.",
+      el: "Πού να Μείνετε: Μια γρήγορη ματιά. Η Πάτμος δεν έχει μεγάλες ξενοδοχειακές αλυσίδες. Τα καταλύματα είναι ανθρώπινης κλίμακας. Τρεις περιοχές εξυπηρετούν διαφορετικές ανάγκες."
     },
     description: {
-      en: "Patmos is one of the most sacred and atmospheric islands in Greece, a UNESCO World Heritage site where Byzantine monasteries, whitewashed medieval villages and crystalline coves create an experience unlike anywhere in the Aegean. The island is compact enough to explore from any base, but each area offers a completely different character — from the practical harbour town of Skala with the widest choice of accommodation and restaurants, to the hilltop majesty of Hora, the relaxed beachfront of Grikos, and the quieter coves along the coast. A scooter or car is useful for exploring the island's scattered beaches, but Patmos is small enough that nowhere is more than twenty minutes from anywhere else.",
-      el: "Η Πάτμος είναι ένα από τα πιο ιερά και ατμοσφαιρικά νησιά της Ελλάδας, μνημείο UNESCO, όπου βυζαντινά μοναστήρια, ασπρόχρωμα μεσαιωνικά χωριά και κρυστάλλινοι όρμοι δημιουργούν μια μοναδική εμπειρία. Το νησί είναι συμπαγές και κάθε περιοχή έχει διαφορετικό χαρακτήρα."
+      en: "Patmos has no large hotel chains and no resort strip. The accommodation is human in scale and broadly high in quality. Three areas serve different needs:\n\nSkala is the port and the most practical base — close to ferries, restaurants and evening life. Mid-range hotels, apartments and boutique stays are found throughout the village. The Skala Hotel is a well-established option with a central position. The Acqua Blu Boutique Hotel offers a polished, contemporary stay steps from the water.\n\nGrikos Bay is the choice for those who want sea and quiet in one place. The Patmos Aktis Suites & Spa (Luxury Collection, 5★) is the island's benchmark luxury property — pools, spa, and direct beach access on the bay. The 9 Muses Exclusive Apartments offer a more boutique alternative in the same area.\n\nHora has a small number of traditional guesthouses and renovated houses within the medieval village itself. Staying here means waking up inside one of the most beautiful villages in Greece. The Archontariki of Chora Patmos is the most established of these options.",
+      el: "Η Πάτμος δεν έχει μεγάλες ξενοδοχειακές αλυσίδες. Τα καταλύματα είναι ανθρώπινης κλίμακας. Τρεις περιοχές εξυπηρετούν διαφορετικές ανάγκες:\n\nΗ Σκάλα είναι το λιμάνι και η πιο πρακτική βάση — κοντά σε πλοία, εστιατόρια και νυχτερινή ζωή. Το Skala Hotel είναι μια δοκιμασμένη επιλογή με κεντρική θέση. Το Acqua Blu Boutique Hotel προσφέρει μια κομψή σύγχρονη διαμονή δίπλα στο νερό.\n\nΟ Γρικός είναι για όσους θέλουν θάλασσα και ησυχία. Το Patmos Aktis Suites & Spa (Luxury Collection, 5★) είναι το κορυφαίο ξενοδοχείο του νησιού. Τα 9 Muses Exclusive Apartments προσφέρουν μια boutique εναλλακτική.\n\nΗ Χώρα έχει παραδοσιακούς ξενώνες μέσα στο μεσαιωνικό χωριό. Το Archontariki of Chora Patmos είναι η πιο γνωστή επιλογή."
     },
     features: {
-      en: ["Skala (Hub & Harbour)", "Hora (UNESCO Village & Views)", "Grikos (Beach & Relaxed)", "Remote coves & beaches", "Monastery of Saint John", "Cave of the Apocalypse", "Day trips to nearby islets"],
-      el: ["Σκάλα (Λιμάνι & Κέντρο)", "Χώρα (UNESCO & Θέα)", "Γρικός (Παραλία & Χαλαρά)", "Απομονωμένες παραλίες", "Μονή Αγίου Ιωάννη", "Σπήλαιο Αποκάλυψης", "Εκδρομές σε κοντινά νησιά"]
+      en: ["Skala (Harbour & Nightlife)", "Grikos Bay (Luxury & Beach)", "Hora (Medieval & Atmosphere)", "Patmos Aktis Suites & Spa"],
+      el: ["Σκάλα (Λιμάνι & Διασκέδαση)", "Γρικός (Πολυτέλεια & Παραλία)", "Χώρα (Μεσαιωνική & Ατμόσφαιρα)", "Patmos Aktis Suites & Spa"]
     },
     sections: [
       {
-        title: { en: "1. Skala: The most practical base and the hub of the island", el: "1. Σκάλα: Η πιο πρακτική βάση και το κέντρο του νησιού" },
+        title: { en: "1. Skala: The port and the most practical base", el: "1. Σκάλα: Το λιμάνι και η πιο πρακτική βάση" },
         content: {
-          en: "Skala is the port and largest settlement on Patmos, where the ferries from Athens and the other Dodecanese islands arrive. It is the most convenient base for first-time visitors — the bus to Hora departs from the harbourfront every thirty minutes, car and scooter rental agencies line the main street, and the best restaurants, cafés and shops on the island are concentrated along the waterfront. The beach at Skala is small and practical rather than spectacular, but several of the island's finest beaches — including Psili Ammos and Agriolivadi — are within a short drive or water-taxi ride. Skala's accommodation ranges from comfortable mid-range hotels and self-catering studios to boutique waterfront properties. It is the right base for travelers who want easy access to everything Patmos offers, and the most practical choice for anyone without their own transport.",
-          el: "Η Σκάλα είναι το λιμάνι και ο μεγαλύτερος οικισμός της Πάτμου. Είναι η πιο βολική βάση για πρώτη επίσκεψη — το λεωφορείο για Χώρα αναχωρεί κάθε μισή ώρα, υπάρχουν ενοικιάσεις αυτοκινήτων, και τα καλύτερα εστιατόρια βρίσκονται στην παραλία. Ιδανική βάση για όσους θέλουν εύκολη πρόσβαση σε όλα."
+          en: "Skala is the port and the most practical base — close to ferries, restaurants and evening life. Mid-range hotels, apartments and boutique stays are found throughout the village. The Skala Hotel is a well-established option with a central position. The Acqua Blu Boutique Hotel offers a polished, contemporary stay steps from the water.",
+          el: "Η Σκάλα είναι το λιμάνι και η πιο πρακτική βάση — κοντά σε πλοία, εστιατόρια και νυχτερινή ζωή. Το Skala Hotel είναι μια δοκιμασμένη επιλογή με κεντρική θέση. Το Acqua Blu Boutique Hotel προσφέρει μια κομψή σύγχρονη διαμονή δίπλα στο νερό."
         }
       },
       {
-        title: { en: "2. Hora: The most atmospheric and breathtaking village in the Dodecanese", el: "2. Χώρα: Το πιο ατμοσφαιρικό χωριό των Δωδεκανήσων" },
+        title: { en: "2. Grikos Bay: Sea and quiet in one place", el: "2. Γρικός: Θάλασσα και ησυχία" },
         content: {
-          en: "Hora is the medieval hilltop village of Patmos, a UNESCO World Heritage site and one of the most perfectly preserved settlements in the Aegean. The fortified Monastery of Saint John — founded in 1088 — dominates the skyline, and the labyrinthine whitewashed alleys cascading down from it contain some of the most beautiful mansions, churches and quiet squares in Greece. The view from the top of Hora — across the island, the surrounding sea and the neighbouring islets — is one of the finest in the entire Dodecanese. Accommodation in Hora is limited to boutique guesthouses, traditional mansions converted into luxury suites and a handful of small hotels. It is atmospheric, romantic and unforgettable, but access involves steep walking and steps, and the village has very few restaurants or shops after dark. Hora is the right choice for travelers who value atmosphere over convenience.",
-          el: "Η Χώρα είναι το μεσαιωνικό χωριό της Πάτμου, μνημείο UNESCO. Η Μονή του Αγίου Ιωάννη δεσπόζει στη γραμμή του ορίζοντα. Τα καταλύματα είναι περιορισμένα αλλά μοναδικά — boutique ξενώνες και παραδοσιακά αρχοντικά. Ιδανικό για όσους βάζουν την ατμόσφαιρα πάνω από την ευκολία."
+          en: "Grikos Bay is the choice for those who want sea and quiet in one place. The Patmos Aktis Suites & Spa (Luxury Collection, 5★) is the island's benchmark luxury property — pools, spa, and direct beach access on the bay. The 9 Muses Exclusive Apartments offer a more boutique alternative in the same area.",
+          el: "Ο Γρικός είναι για όσους θέλουν θάλασσα και ησυχία. Το Patmos Aktis Suites & Spa (Luxury Collection, 5★) είναι το κορυφαίο ξενοδοχείο του νησιού. Τα 9 Muses Exclusive Apartments προσφέρουν μια boutique εναλλακτική."
         }
       },
       {
-        title: { en: "3. Grikos: The best beach base and the most relaxed option on the island", el: "3. Γρικός: Η καλύτερη παραλιακή βάση στο νησί" },
+        title: { en: "3. Hora: Waking up inside a medieval masterpiece", el: "3. Χώρα: Μέσα στο μεσαιωνικό αριστούργημα" },
         content: {
-          en: "Grikos is a sheltered bay on the southern coast of Patmos, a ten-minute drive from Skala, with one of the best swimming beaches on the island. The water is calm and clear, protected from the wind by the surrounding hills, and the beach is lined with a handful of excellent seaside tavernas and a small cluster of hotels and studios. The atmosphere in Grikos is relaxed and unhurried — it is the kind of place where you swim in the morning, eat grilled fish at lunch and watch the sunset over the bay in the evening without ever needing to get in a car. It is the best base for couples and families who want to combine comfortable accommodation with immediate beach access and a slower pace. The nearby bay of Psili Ammos — one of the finest sandy beaches in the Dodecanese — is a twenty-minute walk or a five-minute drive away.",
-          el: "Ο Γρικός είναι ένας προστατευμένος όρμος στη νότια ακτή, 10 λεπτά από τη Σκάλα. Τα νερά είναι ήρεμα και η παραλία έχει εξαιρετικές ταβέρνες. Ιδανικό για ζευγάρια και οικογένειες που θέλουν άμεση πρόσβαση στη θάλασσα."
-        }
-      },
-      {
-        title: { en: "4. Remote beaches and coves: Seclusion, swimming and the wilder side", el: "4. Απομονωμένες παραλίες: Η πιο άγρια πλευρά της Πάτμου" },
-        content: {
-          en: "Beyond the main settlements, Patmos has a series of smaller coves and beaches that offer the most secluded accommodation on the island. The area around Psili Ammos and Agriolivadi on the south coast has a handful of villas and studios set directly above sandy beaches with crystalline water and almost no development. The west coast around Lambi, Plakes and Kentimi is even quieter, with pebble beaches, scattered rooms and a raw, unpolished beauty that appeals to travelers seeking genuine solitude. Access to these areas requires a car or scooter, and there are no shops or restaurants within walking distance of most properties. They suit experienced independent travelers who want to be left alone with the Aegean and who consider having to drive ten minutes for dinner a fair trade.",
-          el: "Πέρα από τους κύριους οικισμούς, η Πάτμος έχει μικρότερους όρμους με τα πιο απομονωμένα καταλύματα. Η Ψιλή Άμμος και τα γύρω σημεία έχουν βίλες πάνω στην παραλία. Η δυτική ακτή γύρω από Λάμπη και Κεντήμι είναι ακόμα πιο ήσυχη. Απαραίτητο το αυτοκίνητο ή μηχανάκι."
+          en: "Hora has a small number of traditional guesthouses and renovated houses within the medieval village itself. Staying here means waking up inside one of the most beautiful villages in Greece. The Archontariki of Chora Patmos is the most established of these options.",
+          el: "Η Χώρα έχει παραδοσιακούς ξενώνες μέσα στο μεσαιωνικό χωριό. Το Archontariki of Chora Patmos είναι η πιο γνωστή επιλογή."
         }
       }
     ],
     faq: [
       {
         q: { en: "Which area of Patmos is best for a first visit?", el: "Ποια περιοχή της Πάτμου είναι καλύτερη για πρώτη επίσκεψη;" },
-        a: { en: "Skala is the most practical base — it has the widest range of accommodation, the best restaurants and the most convenient transport connections to the rest of the island. If atmosphere matters more than convenience, Hora is unforgettable but requires comfortable walking shoes.", el: "Η Σκάλα είναι η πιο πρακτική βάση — έχει τα περισσότερα καταλύματα, τα καλύτερα εστιατόρια και τις πιο βολικές συγκοινωνίες." }
+        a: { en: "Skala is the most practical base — it has the widest range of accommodation, the best restaurants and the most convenient transport connections.", el: "Η Σκάλα είναι η πιο πρακτική βάση — έχει τα περισσότερα καταλύματα και εστιατόρια." }
       },
       {
-        q: { en: "Do I need a car in Patmos?", el: "Χρειάζομαι αυτοκίνητο στην Πάτμο;" },
-        a: { en: "Not strictly, but it helps. Skala and Hora are connected by frequent buses, and water taxis can reach some of the more remote beaches. However, exploring the west coast coves and reaching beaches like Psili Ammos independently is much easier with a scooter or small car.", el: "Δεν είναι απαραίτητο, αλλά βοηθάει. Υπάρχει λεωφορείο μεταξύ Σκάλας και Χώρας και θαλάσσια ταξί. Ωστόσο, η εξερεύνηση των απομονωμένων παραλιών είναι πιο εύκολη με μηχανάκι ή αυτοκίνητο." }
-      },
-      {
-        q: { en: "How many days do I need in Patmos?", el: "Πόσες μέρες χρειάζομαι στην Πάτμο;" },
-        a: { en: "Three to four days is the ideal minimum — enough time to explore Hora and the Monastery, swim at a few different beaches, take a boat trip around the island and still have unhurried evenings in Skala or Grikos.", el: "Τρεις με τέσσερις μέρες είναι το ιδανικό ελάχιστο — αρκετός χρόνος για Χώρα, μοναστήρι, διαφορετικές παραλίες και ένα μικρό ταξίδι με βάρκα." }
-      },
-      {
-        q: { en: "Is Patmos suitable for families?", el: "Είναι η Πάτμος κατάλληλη για οικογένειες;" },
-        a: { en: "Yes, especially the area around Grikos, where the water is calm and shallow and the pace of life is relaxed. Skala also works well as a family base with practical amenities and easy beach access.", el: "Ναι, ειδικά η περιοχή του Γρικού, όπου τα νερά είναι ήρεμα και ρηχά." }
+        q: { en: "Where is the most luxurious accommodation in Patmos?", el: "Πού είναι το πιο πολυτελές κατάλυμα στην Πάτμο;" },
+        a: { en: "Grikos Bay is home to the Patmos Aktis Suites & Spa (Luxury Collection, 5★), the island's benchmark luxury property with pools, spa and direct beach access.", el: "Ο Γρικός φιλοξενεί το Patmos Aktis Suites & Spa (Luxury Collection, 5★), το κορυφαίο πολυτελές ξενοδοχείο του νησιού." }
       }
     ],
     seo: {
