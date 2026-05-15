@@ -4847,4 +4847,373 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       ]
     }
   ],
+  patmos: [
+    {
+      title: {
+        en: "Why visit Patmos",
+        el: "Γιατί να επισκεφθείς την Πάτμο"
+      },
+      layout: "numbered",
+      items: [
+        {
+          title: {
+            en: "It carries a weight that other islands don't",
+            el: "Έχει ένα βάρος που άλλα νησιά δεν έχουν"
+          },
+          text: {
+            en: "Patmos is a UNESCO World Heritage Site — not just for one building but for the entire complex of the Monastery, the Cave of the Apocalypse and the medieval settlement of Hora. Walking through it feels different from ordinary sightseeing.",
+            el: "Η Πάτμος είναι Μνημείο Παγκόσμιας Κληρονομιάς UNESCO — όχι μόνο για ένα κτίριο, αλλά για ολόκληρο το σύμπλεγμα της Μονής, του Σπηλαίου της Αποκάλυψης και του μεσαιωνικού οικισμού της Χώρας. Το περπάτημα εδώ είναι διαφορετικό από μια συνηθισμένη περιήγηση."
+          }
+        },
+        {
+          title: {
+            en: "It has remained itself",
+            el: "Παρέμεινε ο εαυτός της"
+          },
+          text: {
+            en: "The island's profile as a place of pilgrimage and quiet tourism has kept it from the development pressures that have changed other Greek islands. The architecture is intact. The pace is intact. The atmosphere is intact.",
+            el: "Το προφίλ του νησιού ως τόπου προσκυνήματος ήρεμου τουρισμού το έχει προστατεύσει από τις πιέσεις ανάπτυξης που άλλαξαν άλλα ελληνικά νησιά. Η αρχιτεκτονική είναι άθικτη. Ο ρυθμός είναι άθικτος. Η ατμόσφαιρα είναι άθικτη."
+          }
+        },
+        {
+          title: {
+            en: "The combination of sacred, scenic and aquatic is rare",
+            el: "Ο συνδυασμός ιερού, γραφικού και θαλασσινού είναι σπάνιος"
+          },
+          text: {
+            en: "Few Greek islands offer a UNESCO monastery, a medieval hilltop village, and swimming in remote coves — all within a few kilometres of each other. Patmos does all three without compromise.",
+            el: "Λίγα ελληνικά νησιά προσφέρουν ένα μοναστήρι UNESCO, ένα μεσαιωνικό χωριό στην κορυφή λόφου και κολύμπι σε απομακρυσμένους όρμους — όλα σε απόσταση λίγων χιλιομέτρων. Η Πάτμος τα κάνει και τα τρία χωρίς συμβιβασμούς."
+          }
+        }
+      ]
+    },
+    {
+      title: {
+        en: "Best time for Patmos",
+        el: "Καλύτερη εποχή για Πάτμο"
+      },
+      layout: "list",
+      alert: {
+        en: "Secret: Easter in Patmos is one of the most extraordinary religious and cultural events in Greece. The island fills with pilgrims and the ceremonies — especially the midnight Resurrection service at the Monastery — are deeply moving even for non-religious visitors. Book accommodation months in advance if coming for Easter.",
+        el: "Μυστικό: Το Πάσχα στην Πάτμο είναι από τις πιο ξεχωριστές θρησκευτικές και πολιτιστικές εκδηλώσεις στην Ελλάδα. Το νησί γεμίζει προσκυνητές και οι τελετές — ειδικά η Αναστάσιμη λειτουργία στη Μονή — συγκινούν ακόμα και μη θρησκευόμενους επισκέπτες. Κλείστε διαμονή μήνες πριν αν έρχεστε για Πάσχα."
+      },
+      items: [
+        {
+          title: { en: "Spring (April – early June)", el: "Άνοιξη (Απρίλιος – αρχές Ιουνίου)" },
+          text: {
+            en: "The ideal season: mild temperatures, the island still unhurried, wildflowers on the hillsides, and the sea warming toward swimmable. Easter, if it falls in this window, is unmissable.",
+            el: "Η ιδανική εποχή: ήπιες θερμοκρασίες, το νησί ακόμα ήρεμο, αγριολούλουδα στους λόφους και η θάλασσα να ζεσταίνεται. Πάσχα, αν πέσει σε αυτή την περίοδο, είναι αξέχαστο."
+          }
+        },
+        {
+          title: { en: "June & September", el: "Ιούνιος & Σεπτέμβριος" },
+          text: {
+            en: "The sweet spot for those who want both beach and quiet. The island has visitors but has not tipped into overcrowding. Sea temperatures are at their best in September.",
+            el: "Το ιδανικό σημείο για όσους θέλουν και παραλία και ησυχία. Το νησί έχει επισκέπτες αλλά όχι υπερβολικό συνωστισμό. Η θάλασσα είναι καλύτερη τον Σεπτέμβριο."
+          }
+        },
+        {
+          title: { en: "July & August", el: "Ιούλιος & Αύγουστος" },
+          text: {
+            en: "Busier — particularly with day-trippers arriving by ferry from nearby islands. Still manageable compared to the Cyclades. Book accommodation early.",
+            el: "Πιο πολυσύχναστα — ειδικά με ημερήσιους επισκέπτες από κοντινά νησιά. Ακόμα διαχειρίσιμα σε σύγκριση με τις Κυκλάδες. Κλείστε διαμονή νωρίς."
+          }
+        },
+        {
+          title: { en: "Autumn (October – November)", el: "Φθινόπωρο (Οκτώβριος – Νοέμβριος)" },
+          text: {
+            en: "Patmos in autumn is for those who want to think. The tourists have left, the light is golden, the sea is still warm enough to swim, and the Monastery and cave can be visited in genuine contemplation.",
+            el: "Η Πάτμος το φθινόπωρο είναι για όσους θέλουν να σκεφτούν. Οι τουρίστες έχουν φύγει, το φως είναι χρυσό, η θάλασσα είναι ακόμα ζεστή και η Μονή και το σπήλαιο επισκέπτονται με γνήσια περισυλλογή."
+          }
+        }
+      ]
+    },
+    {
+      title: {
+        en: "How to get to Patmos",
+        el: "Πώς φτάνεις στην Πάτμο"
+      },
+      layout: "grid",
+      alert: {
+        en: "Secret: The overnight ferry from Piraeus is not just a practical option — it is an experience in itself. You board in the evening, sleep on the water, and arrive in Skala in the morning as the island is waking up.",
+        el: "Μυστικό: Το νυχτερινό πλοίο από Πειραιά δεν είναι απλώς πρακτική επιλογή — είναι εμπειρία από μόνη της. Μπαίνεις το βράδυ, κοιμάσαι στο πλοίο και φτάνεις στη Σκάλα το πρωί καθώς το νησί ξυπνά."
+      },
+      items: [
+        {
+          title: { en: "By ferry from Piraeus", el: "Με πλοίο από Πειραιά" },
+          text: {
+            en: "The main route. High-speed ferries take approximately 7–8 hours; conventional overnight ferries take 9–12 hours. Several departures weekly (more frequent in summer). Patmos is a regular stop on the Piraeus–Dodecanese line.",
+            el: "Η κύρια διαδρομή. Τα ταχύπλοα χρειάζονται περίπου 7–8 ώρες. Τα συμβατικά νυχτερινά πλοία 9–12 ώρες. Αρκετά δρομολόγια εβδομαδιαίως. Η Πάτμος είναι τακτική στάση στη γραμμή Πειραιάς–Δωδεκάνησα."
+          }
+        },
+        {
+          title: { en: "Via Kos or Rhodes (+ ferry)", el: "Μέσω Κω ή Ρόδου (+ πλοίο)" },
+          text: {
+            en: "Flying into Kos (the closest airport, ~3 hours by ferry) or Rhodes (~5 hours) and connecting by ferry is the most common option for those combining Patmos with the wider Dodecanese.",
+            el: "Η πτήση προς Κω (πλησιέστερο αεροδρόμιο, ~3 ώρες με πλοίο) ή Ρόδο (~5 ώρες) και η σύνδεση με πλοίο είναι η πιο συνηθισμένη επιλογή για συνδυασμό με τα Δωδεκάνησα."
+          }
+        },
+        {
+          title: { en: "Via Samos (+ short ferry)", el: "Μέσω Σάμου (+ σύντομο πλοίο)" },
+          text: {
+            en: "Samos airport is approximately 1.5–2 hours by ferry from Patmos. A practical option for those flying from Athens or international connections.",
+            el: "Το αεροδρόμιο της Σάμου απέχει περίπου 1.5–2 ώρες με πλοίο από την Πάτμο. Μια πρακτική επιλογή για όσους πετούν από Αθήνα ή διεθνείς συνδέσεις."
+          }
+        }
+      ]
+    },
+    {
+      title: {
+        en: "Top attractions & experiences",
+        el: "Top αξιοθέατα & εμπειρίες"
+      },
+      layout: "numbered",
+      items: [
+        {
+          title: {
+            en: "Monastery of Saint John the Theologian",
+            el: "Μονή Αγίου Ιωάννη του Θεολόγου"
+          },
+          text: {
+            en: "The fortified monastery built in 1088 on the hilltop of Hora is the island's defining monument — and one of the most important Christian sites in the world. Its architecture is part fortress, part Byzantine church, part medieval labyrinth. The treasury contains manuscripts, icons and ecclesiastical objects of extraordinary rarity. Secret: Go early in the morning, before the day-trippers arrive by ferry.",
+            el: "Η οχυρωμένη μονή χτισμένη το 1088 στην κορυφή της Χώρας είναι το εμβληματικό μνημείο του νησιού. Η αρχιτεκτονική της είναι φρούριο, βυζαντινή εκκλησία και μεσαιωνικός λαβύρινθος μαζί. Το σκευοφυλάκιο περιέχει χειρόγραφα, εικόνες και εκκλησιαστικά αντικείμενα εξαιρετικής σπανιότητας. Μυστικό: Πήγαινε νωρίς το πρωί, πριν φτάσουν οι ημερήσιοι επισκέπτες."
+          }
+        },
+        {
+          title: {
+            en: "Cave of the Apocalypse",
+            el: "Σπήλαιο της Αποκάλυψης"
+          },
+          text: {
+            en: "Halfway between Skala and Hora, the cave where Saint John is said to have received his visions and dictated the Book of Revelation is now a functioning church built into the rock. Secret: Even without religious context, the atmosphere of the cave is unusual — the acoustics, the incense, the layered history — worth experiencing on its own terms.",
+            el: "Στη μέση της διαδρομής μεταξύ Σκάλας και Χώρας, το σπήλαιο όπου ο Άγιος Ιωάννης έγραψε την Αποκάλυψη είναι σήμερα μια λειτουργική εκκλησία μέσα στον βράχο. Μυστικό: Ακόμα και χωρίς θρησκευτικό πλαίσιο, η ατμόσφαιρα του σπηλαίου είναι ξεχωριστή."
+          }
+        },
+        {
+          title: {
+            en: "Hora (Chora) of Patmos",
+            el: "Χώρα Πάτμου"
+          },
+          text: {
+            en: "The medieval hilltop village surrounding the monastery is, independently of its sacred associations, one of the most beautiful villages in the Aegean. Cube-shaped whitewashed houses, arched passages, bougainvillea cascading over stone walls. Secret: Walk the alleys of Hora after 8pm in summer, when the day-trippers have left and the village returns to the locals.",
+            el: "Το μεσαιωνικό χωριό γύρω από τη μονή είναι, ανεξάρτητα από τη θρησκευτική του σημασία, ένα από τα ομορφότερα χωριά του Αιγαίου. Μυστικό: Περπάτα στα σοκάκια της Χώρας μετά τις 8 μ.μ. το καλοκαίρι, όταν οι ημερήσιοι επισκέπτες έχουν φύγει."
+          }
+        },
+        {
+          title: {
+            en: "Skala — The Port Village",
+            el: "Σκάλα — Το Λιμάνι"
+          },
+          text: {
+            en: "Patmos's main port is the island's commercial center and social hub. The waterfront fills with life in the evenings; tavernas, cafes, and small shops open onto the harbour. Secret: The morning fish market near the port is worth an early visit. It tells you what to order for lunch.",
+            el: "Το κεντρικό λιμάνι της Πάτμου είναι το εμπορικό κέντρο του νησιού. Η προκυμαία γεμίζει ζωή τα βράδια. Μυστικό: Η πρωινή ψαραγορά κοντά στο λιμάνι αξίζει μια επίσκεψη. Σου λέει τι να παραγγείλεις για μεσημεριανό."
+          }
+        },
+        {
+          title: {
+            en: "Windmills of Hora",
+            el: "Ανεμόμυλοι της Χώρας"
+          },
+          text: {
+            en: "The row of old windmills on the ridge between Hora and the sea frames some of the most photographed views on the island. At sunset, with the monastery above and the Aegean below, it is exactly what it looks like.",
+            el: "Η σειρά των παλιών ανεμόμυλων στη ράχη μεταξύ Χώρας και θάλασσας πλαισιώνει μερικές από τις πιο φωτογραφημένες απόψεις του νησιού."
+          }
+        },
+        {
+          title: {
+            en: "Kambos Village & Valley",
+            el: "Κάμπος"
+          },
+          text: {
+            en: "The fertile valley in the northern part of the island is where Patmos keeps its most ordinary daily life — families, farming, local cafes. Secret: The small local tavernas in Kambos serve some of the most honest food on the island, at the most honest prices.",
+            el: "Η εύφορη κοιλάδα στο βόρειο τμήμα του νησιού είναι όπου η Πάτμος διατηρεί την πιο καθημερινή ζωή. Μυστικό: Οι μικρές ταβέρνες στον Κάμπο σερβίρουν από το πιο τίμιο φαγητό του νησιού."
+          }
+        }
+      ]
+    },
+    {
+      title: {
+        en: "Beaches, nearby villages & excursions",
+        el: "Παραλίες, κοντινά χωριά & εκδρομές"
+      },
+      layout: "list",
+      alert: {
+        en: "Beach secret: Patmos's best beaches are not always the most accessible. Rent a scooter or small boat to reach the island's more remote coves — especially on the western coast.",
+        el: "Μυστικό: Οι καλύτερες παραλίες της Πάτμου δεν είναι πάντα οι πιο προσβάσιμες. Νοίκιασε σκούτερ ή μικρό σκάφος για τις πιο απομακρυσμένες ακτές."
+      },
+      items: [
+        {
+          title: {
+            en: "Psili Ammos",
+            el: "Ψιλή Άμμος"
+          },
+          text: {
+            en: "The most celebrated beach on the island — a long arc of fine sand on the southern tip, accessible only by boat or a 40-minute walk. Exactly as beautiful as it sounds. Go by the morning boat; return by the afternoon one.",
+            el: "Η πιο διάσημη παραλία του νησιού — μακριά αψίδα λεπτής άμμου στο νότιο άκρο, προσβάσιμη μόνο με σκάφος ή 40λεπτο περπάτημα. Πήγαινε με το πρωινό καράβι· γύρνα με το απογευματινό."
+          }
+        },
+        {
+          title: {
+            en: "Grikos Bay",
+            el: "Γρίκος"
+          },
+          text: {
+            en: "The large bay south of Skala is the island's most developed beach area. The peculiar rock formation called 'Kalikatsou' at the bay's edge is a Patmos landmark. Excellent accommodation options are here, including Patmos Aktis Suites & Spa.",
+            el: "Ο μεγάλος κόλπος νότια της Σκάλας είναι η πιο οργανωμένη παραλία του νησιού. Ο βράχος 'Καλικάτσου' είναι ορόσημο της Πάτμου. Εξαιρετικές επιλογές διαμονής εδώ."
+          }
+        },
+        {
+          title: {
+            en: "Lambi Beach",
+            el: "Λάμπη"
+          },
+          text: {
+            en: "A northern beach known for its extraordinary concentration of colored pebbles — deep reds, blacks, greens — that occur naturally here and nowhere else on the island. A geological oddity that is genuinely worth seeing.",
+            el: "Μια βόρεια παραλία γνωστή για τη συγκέντρωση χρωματιστών βότσαλων — βαθύ κόκκινο, μαύρο, πράσινο. Μια γεωλογική ιδιομορφία που αξίζει να δεις."
+          }
+        },
+        {
+          title: {
+            en: "Lipsi Island (day trip)",
+            el: "Λειψοί (ημερήσια εκδρομή)"
+          },
+          text: {
+            en: "The small island of Lipsi, 40 minutes by ferry from Patmos, is the kind of place that still exists in imagination: a handful of tavernas, a turquoise bay, fewer than 700 permanent residents, and a complete absence of urgency.",
+            el: "Το μικρό νησί των Λειψών, 40 λεπτά με πλοίο από την Πάτμο, είναι από εκείνα τα μέρη που υπάρχουν ακόμα στη φαντασία: λίγες ταβέρνες, ένας τιρκουάζ κόλπος και πλήρης απουσία βιασύνης."
+          }
+        }
+      ]
+    },
+    {
+      title: {
+        en: "What to eat (and what to take home)",
+        el: "Τι να φας (και τι να πάρεις μαζί σου)"
+      },
+      layout: "list",
+      alert: {
+        en: "Food secret: The best meals on Patmos are found not on the waterfront in Skala but in the village tavernas of Hora and Kambos. The view is less postcard-perfect; the cooking is considerably more honest.",
+        el: "Μυστικό: Τα καλύτερα γεύματα στην Πάτμο δεν βρίσκονται στο λιμάνι της Σκάλας, αλλά στις ταβέρνες της Χώρας και του Κάμπου. Το μαγείρεμα είναι πολύ πιο τίμιο."
+      },
+      items: [
+        {
+          title: {
+            en: "Fresh Fish and Octopus",
+            el: "Φρέσκο Ψάρι και Χταπόδι"
+          },
+          text: {
+            en: "Patmos is a small island with active fishing. Grilled whole fish by the kilo, octopus dried on the line and cooked over charcoal, and marinated anchovies are the register of island seafood. Order what came in that morning.",
+            el: "Η Πάτμος έχει ενεργή αλιεία. Ολόκληρο ψητό ψάρι, χταπόδι στη σχάρα και μαρινατος γαύρος είναι η γκάμα των θαλασσινών. Παράγγειλε ό,τι ήρθε εκείνο το πρωί."
+          }
+        },
+        {
+          title: {
+            en: "Pitaroudia (Chickpea Fritters)",
+            el: "Πιταρούδια (Ρεβυθοκεφτέδες)"
+          },
+          text: {
+            en: "A traditional Dodecanese meze — crispy fried chickpea patties, often flavoured with onion, mint and cumin. They appear on almost every local menu and are at their best eaten hot with a glass of cold white wine.",
+            el: "Παραδοσιακός μεζές των Δωδεκανήσων — τραγανά ρεβυθοκεφτεδάκια με κρεμμύδι, δυόσμο και κύμινο. Σερβίρονται σχεδόν παντού και είναι καλύτερα ζεστά με ένα ποτήρι λευκό κρασί."
+          }
+        },
+        {
+          title: {
+            en: "Local Honey and Monastery Products",
+            el: "Τοπικό Μέλι και Προϊόντα Μονής"
+          },
+          text: {
+            en: "Patmos honey — from bees working the island's wild herbs and thyme — is dark, dense and aromatic. The monastery produces and sells honey, as well as herbal products. The best souvenir Patmos offers is a jar of local honey and a bottle of olive oil.",
+            el: "Το μέλι της Πάτμου — από μέλισσες που δουλεύουν τα άγρια βότανα και το θυμάρι — είναι σκούρο, πυκνό και αρωματικό. Η Μονή παράγει και πουλά μέλι και βότανα. Το καλύτερο σουβενίρ είναι ένα βαζάκι μέλι και λάδι."
+          }
+        }
+      ]
+    },
+    {
+      title: {
+        en: "Practical Tips",
+        el: "Πρακτικές Συμβουλές"
+      },
+      layout: "list",
+      items: [
+        {
+          title: {
+            en: "Getting Around the Island",
+            el: "Μετακινήσεις στο Νησί"
+          },
+          text: {
+            en: "Patmos is small — about 34 km² — and manageable with a scooter or small car. Buses run between Skala, the Cave of the Apocalypse, Hora and Kambos. For remote beaches, a small rented boat gives the most freedom.",
+            el: "Η Πάτμος είναι μικρή — περίπου 34 τ.χλμ. — και εξερευνάται εύκολα με σκούτερ ή αυτοκίνητο. Λεωφορεία συνδέουν Σκάλα, Σπήλαιο, Χώρα και Κάμπο. Για απομακρυσμένες παραλίες, μια μικρή βάρκα δίνει τη μεγαλύτερη ελευθερία."
+          }
+        },
+        {
+          title: {
+            en: "Monastery Dress Code & Visiting Hours",
+            el: "Ενδυματολογικός Κώδικας & Ωράριο Μονής"
+          },
+          text: {
+            en: "The Monastery of Saint John requires covered shoulders and knees for entry — both men and women. Visiting hours vary seasonally; confirm locally before the trip.",
+            el: "Η Μονή Αγίου Ιωάννη απαιτεί καλυμμένους ώμους και γόνατα — άνδρες και γυναίκες. Οι ώρες επίσκεψης διαφέρουν εποχικά. Επιβεβαιώστε τοπικά."
+          }
+        },
+        {
+          title: {
+            en: "Island Pace and Expectations",
+            el: "Ρυθμός και Προσδοκίες"
+          },
+          text: {
+            en: "Patmos does not reward rushing. The experience compounds over days: the second morning in Hora is better than the first. Allocate at least three nights, ideally four or five.",
+            el: "Η Πάτμος δεν ανταμείβει τη βιασύνη. Η εμπειρία χτίζεται μέρες: το δεύτερο πρωί στη Χώρα είναι καλύτερο από το πρώτο. Αφιέρωσε τουλάχιστον τρεις νύχτες, ιδανικά τέσσερις ή πέντε."
+          }
+        }
+      ]
+    },
+    {
+      title: {
+        en: "FAQ",
+        el: "Συχνές Ερωτήσεις"
+      },
+      layout: "faq",
+      items: [
+        {
+          title: {
+            en: "How many days do I need in Patmos?",
+            el: "Πόσες μέρες χρειάζομαι στην Πάτμο;"
+          },
+          text: {
+            en: "Three nights is the minimum to feel the island rather than just see it. Four or five nights allows for proper beach days, a day trip to Lipsi, time in Hora at different hours, and unhurried meals.",
+            el: "Τρεις νύχτες είναι το ελάχιστο για να νιώσεις το νησί. Τέσσερις ή πέντε νύχτες επιτρέπουν μέρες στην παραλία, εκδρομή στους Λειψούς και ξένοιαστες ώρες στη Χώρα."
+          }
+        },
+        {
+          title: {
+            en: "Is Patmos good for families?",
+            el: "Είναι η Πάτμος κατάλληλη για οικογένειες;"
+          },
+          text: {
+            en: "Yes, with caveats. The island suits families who enjoy a mix of culture and beach and are comfortable with a quieter environment. Grikos Bay is the most family-friendly area.",
+            el: "Ναι, με επιφυλάξεις. Ταιριάζει σε οικογένειες που απολαμβάνουν πολιτισμό και παραλία και είναι άνετες με ήσυχο περιβάλλον. Ο Γρίκος είναι η πιο φιλική περιοχή για οικογένειες."
+          }
+        },
+        {
+          title: {
+            en: "Is Patmos crowded in summer?",
+            el: "Έχει πολύ κόσμο η Πάτμος το καλοκαίρι;"
+          },
+          text: {
+            en: "July and August bring cruise ship passengers and day-trippers. The crowds are real but short — most arrive in the morning and leave by late afternoon. Patmos in the evening is always itself again.",
+            el: "Ο Ιούλιος και ο Αύγουστος φέρνουν επισκέπτες κρουαζιερόπλοιων. Το πλήθος είναι αληθινό αλλά σύντομο — οι περισσότεροι φτάνουν το πρωί και φεύγουν το απόγευμα. Το βράδυ η Πάτμος είναι πάντα πάλι ο εαυτός της."
+          }
+        },
+        {
+          title: {
+            en: "Is Patmos worth visiting if I'm not religious?",
+            el: "Αξίζει η Πάτμος αν δεν είμαι θρησκευόμενος;"
+          },
+          text: {
+            en: "Completely. The Monastery is one of the finest examples of Byzantine and medieval architecture in Greece. Hora is one of the most beautiful villages in the Aegean. The beaches are excellent. The atmosphere is genuinely unlike any other island.",
+            el: "Απόλυτα. Η Μονή είναι ένα από τα ωραιότερα δείγματα βυζαντινής αρχιτεκτονικής. Η Χώρα είναι ένα από τα ομορφότερα χωριά του Αιγαίου. Οι παραλίες είναι εξαιρετικές. Η ατμόσφαιρα μοναδική."
+          }
+        }
+      ]
+    }
+  ],
 };

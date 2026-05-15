@@ -484,6 +484,41 @@ export const destinations: Destination[] = [
     }
   },
   {
+    slug: "patmos",
+    name: "Patmos",
+    region: { en: "Dodecanese", el: "Δωδεκάνησα" },
+    blurb: {
+      en: "Sacred island with a medieval monastery, whitewashed Hora and crystalline coves.",
+      el: "Ιερό νησί με βυζαντινό μοναστήρι, ολόλευκη Χώρα και κρυστάλλινους όρμους."
+    },
+    image: "/images/patmos.webp",
+    overview: {
+      en: "Patmos is the sacred island of the Aegean — a place of deep spiritual history, whitewashed villages, crystalline coves and a silence that feels intentional. The fortified Monastery of Saint John dominates Hora like a medieval crown, while Skala offers lively evenings and quiet mornings. If you're looking for [Where to Stay in Patmos](/hotels/patmos-travel-guide), the island's small scale means every base is well positioned.",
+      el: "Η Πάτμος είναι το ιερό νησί του Αιγαίου — ένας τόπος βαθιάς πνευματικής ιστορίας, ολόλευκων χωριών, κρυστάλλινων όρμων και μιας σιωπής που μοιάζει εσκεμμένη. Η οχυρωμένη Μονή του Αγίου Ιωάννη δεσπόζει στη Χώρα σαν μεσαιωνικό στέμμα, ενώ η Σκάλα προσφέρει ζωντανά βράδια και ήσυχα πρωινά. Αν ψάχνετε [Πού να μείνετε στην Πάτμο](/hotels/patmos-travel-guide), η μικρή κλίμακα του νησιού σημαίνει ότι κάθε βάση είναι καλά τοποθετημένη."
+    },
+    highlights: {
+      en: ["Monastery of St John (UNESCO)", "Cave of the Apocalypse", "Hora medieval village"],
+      el: ["Μονή Αγίου Ιωάννη (UNESCO)", "Σπήλαιο Αποκάλυψης", "Μεσαιωνική Χώρα"]
+    },
+    featured: true,
+    seo: {
+      title: {
+        en: "Patmos Travel Guide: Monastery, Beaches, Hora & Things to Do | GoGreeceNow",
+        el: "Πάτμος: Οδηγός Ταξιδιού — Μονή, Παραλίες, Χώρα & Αξιοθέατα | GoGreeceNow"
+      },
+      description: {
+        en: "Complete guide to Patmos: top attractions, best beaches, how to get there, where to stay and local tips for the sacred island of the Dodecanese.",
+        el: "Πλήρης οδηγός για Πάτμο: κορυφαία αξιοθέατα, καλύτερες παραλίες, πώς φτάνεις, πού να μείνεις και τοπικές συμβουλές για το ιερό νησί των Δωδεκανήσων."
+      }
+    },
+    guideLinks: [
+      {
+        href: "/hotels/patmos-travel-guide",
+        label: { en: "Where to Stay in Patmos", el: "Πού να μείνεις στην Πάτμο" }
+      }
+    ],
+  },
+  {
     slug: "halkidiki",
     name: "Halkidiki",
     region: { en: "Northern Greece", el: "Βόρεια Ελλάδα" },

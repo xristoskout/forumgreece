@@ -393,6 +393,46 @@ export const destinationDetails: Record<string, DestinationDetail> = {
     }
   },
 
+  patmos: {
+    overview: {
+      en: "Patmos does not announce itself loudly. It is a small island — one of the northernmost in the Dodecanese — without a major airport, without a casino strip, without the infrastructure of mass tourism. What it has instead is something that increasingly few places can offer: a genuine sense of stillness, one that is not manufactured for visitors but has been here for two thousand years.\n\nThis is the island where Saint John the Theologian wrote the Book of Revelation. That fact shapes everything — the architecture, the rhythm of daily life, the kind of traveler who comes here, and the kind of experience they find. Patmos attracts people looking for something more than a beach. They find that, and usually more besides.\n\nThe fortified Monastery of Saint John dominates the hilltop village of Hora like a medieval crown. Below it, Hora's alleys — white walls, bougainvillea, cobblestones worn smooth — are among the most perfectly preserved in the Aegean. Further down, the port of Skala is lively in the evenings and quiet by morning. And around the island, a series of small coves and beaches offer the kind of swimming that requires no adjectives.",
+      el: "Η Πάτμος δεν ανακοινώνεται δυνατά. Είναι ένα μικρό νησί — από τα βορειότερα των Δωδεκανήσων — χωρίς μεγάλο αεροδρόμιο, χωρίς καζίνο, χωρίς υποδομές μαζικού τουρισμού. Αυτό που έχει αντίθετα είναι κάτι που όλο και λιγότερα μέρη μπορούν να προσφέρουν: μια γνήσια αίσθηση ηρεμίας, που δεν είναι κατασκευασμένη για επισκέπτες αλλά υπάρχει εδώ για δύο χιλιάδες χρόνια.\n\nΑυτό είναι το νησί όπου ο Άγιος Ιωάννης ο Θεολόγος έγραψε την Αποκάλυψη. Αυτό το γεγονός διαμορφώνει τα πάντα — την αρχιτεκτονική, τον ρυθμό της καθημερινής ζωής, το είδος του ταξιδιώτη που έρχεται εδώ και την εμπειρία που βρίσκει. Η Πάτμος προσελκύει ανθρώπους που αναζητούν κάτι περισσότερο από μια παραλία. Το βρίσκουν, και συνήθως ακόμα περισσότερα.\n\nΗ οχυρωμένη Μονή του Αγίου Ιωάννη δεσπόζει στο λοφοχώρι της Χώρας σαν μεσαιωνικό στέμμα. Από κάτω, τα σοκάκια της Χώρας — λευκοί τοίχοι, μπουκαμβίλιες, λιθόστρωτα που έχουν λειανθεί από τον χρόνο — είναι από τα πιο καλοδιατηρημένα στο Αιγαίο. Πιο κάτω, το λιμάνι της Σκάλας είναι ζωντανό τα βράδια και ήσυχο το πρωί. Και γύρω από το νησί, μια σειρά από μικρούς όρμους και παραλίες προσφέρουν το είδος του κολυμπιού που δεν χρειάζεται επίθετα."
+    },
+    pageIncludes: {
+      en: [
+        "Monastery of Saint John & Cave of the Apocalypse",
+        "Hora — medieval village walks and views",
+        "Beaches: Psili Ammos, Grikos, Lambi and more",
+        "Day trip to Lipsi island",
+        "Local food, honey and monastery products",
+        "Where to stay — Skala, Grikos, Hora"
+      ],
+      el: [
+        "Μονή Αγίου Ιωάννη & Σπήλαιο Αποκάλυψης",
+        "Χώρα — μεσαιωνικό χωριό και θέα",
+        "Παραλίες: Ψιλή Άμμος, Γρίκος, Λάμπη και άλλες",
+        "Ημερήσια εκδρομή στη Λειψοί",
+        "Τοπικό φαγητό, μέλι και προϊόντα μονής",
+        "Διαμονή — Σκάλα, Γρίκος, Χώρα"
+      ]
+    },
+    perfectFor: {
+      en: [
+        "Travelers seeking spiritual and cultural depth",
+        "Couples wanting a quiet, unspoiled island",
+        "History and Byzantine architecture enthusiasts",
+        "Island-hoppers combining Dodecanese destinations",
+        "Anyone who has had enough of overcrowded Greek islands"
+      ],
+      el: [
+        "Ταξιδιώτες που αναζητούν πνευματικό και πολιτιστικό βάθος",
+        "Ζευγάρια που θέλουν ένα ήσυχο, αυθεντικό νησί",
+        "Λάτρεις της ιστορίας και της βυζαντινής αρχιτεκτονικής",
+        "Ταξιδιώτες των Δωδεκανήσων",
+        "Όσους έχουν κουραστεί από τα υπερπλήρη νησιά"
+      ]
+    }
+  },
   monemvasia: {
     overview: {
       en: "Monemvasia is one of the most distinctive destinations in mainland Greece. Built on a massive sea rock and shaped by centuries of history, it feels less like a typical town and more like a place suspended between landscape, architecture, and atmosphere. It is a destination people often remember not because of how much they 'did,' but because of how it felt to be there.\n\nWhat makes Monemvasia special is the setting itself. The stone-built old town, the fortress character, the narrow alleys, and the sea all come together in a way that feels unusually self-contained. It is romantic without trying too hard, historic without becoming dry, and scenic without feeling overproduced. The result is a destination that works especially well for couples, slow travelers, and anyone drawn to places with strong identity.\n\nThis is not the kind of destination that needs a packed schedule. Monemvasia is best enjoyed through walking, staying inside or near the old town, taking in the views, and letting the place unfold gradually. At the same time, it also works as part of a wider Peloponnese road trip, giving travelers one of the most memorable and atmospheric stops in southern Greece.\n\nIf you are looking for a destination with character, history, and one of the most unique settings in the country, Monemvasia easily stands apart.\n\nPlanning a wider trip through southern Greece? Explore more [Peloponnese destinations](/destinations) and travel ideas on GoGreeceNow.",
