@@ -1004,6 +1004,98 @@ export const travelInfoGuides: GuideCard[] = [
         }
       }
     ]
+  },
+  {
+    slug: "honeymoon-in-greece",
+    title: {
+      en: "Honeymoon in Greece: Best Islands, Experiences & Planning Guide",
+      el: "Μήνας του Μέλιτος στην Ελλάδα: Οδηγός για τα Καλύτερα Νησιά"
+    },
+    description: {
+      en: "Plan the perfect honeymoon in Greece with our guide to the best islands, most romantic hotels, ideal timing and unforgettable experiences for couples.",
+      el: "Σχεδιάστε τον τέλειο μήνα του μέλιτος στην Ελλάδα — τα καλύτερα νησιά, τα πιο ρομαντικά ξενοδοχεία και αξέχαστες εμπειρίες για ζευγάρια."
+    },
+    image: "/images/honeymoon-in-greece.webp",
+    overview: {
+      en: "Greece has been a honeymoon destination for decades, and the reasons are timeless: extraordinary light, dramatic landscapes, exceptional food, warm water, and a pace of life that naturally slows you down. But choosing the right island — and the right area within that island — makes all the difference. A honeymoon in Santorini looks nothing like a honeymoon in Kefalonia or Paros, and that variety is exactly what makes Greece such a compelling romantic destination. This guide helps you match your vision for the trip with the right island, the right timing and the right experiences.",
+      el: "Η Ελλάδα είναι εδώ και δεκαετίες κορυφαίος προορισμός για μήνα του μέλιτος. Το φως, τα τοπία, το φαγητό και ο ρυθμός ζωής δημιουργούν το ιδανικό σκηνικό για ζευγάρια. Αλλά η επιλογή του σωστού νησιού κάνει τη διαφορά."
+    },
+    points: {
+      en: [
+        "Santorini is the iconic choice for caldera views, sunsets and dramatic romance",
+        "Paros and Naxos offer Cycladic beauty with a more intimate, less crowded atmosphere",
+        "Kefalonia and Hydra are excellent for couples who prefer lush scenery and privacy",
+        "June and September are the best months — warm, beautiful and calmer than peak summer",
+        "Private boat charter is one of the most universally loved honeymoon experiences in Greece",
+        "Consider shoulder season pricing — same beauty, significantly more intimacy and lower costs"
+      ],
+      el: [
+        "Η Σαντορίνη είναι η εμβληματική επιλογή για θέα καλδέρας και ηλιοβασίλεμα",
+        "Πάρος και Νάξος προσφέρουν κυκλαδίτικη ομορφιά με πιο οικεία ατμόσφαιρα",
+        "Κεφαλονιά και Ύδρα είναι εξαιρετικές για ζευγάρια που θέλουν φύση και ιδιωτικότητα",
+        "Ιούνιος και Σεπτέμβριος είναι οι καλύτεροι μήνες",
+        "Η ιδιωτική κρουαζιέρα με σκάφος είναι από τις πιο αγαπημένες εμπειρίες",
+        "Ενδιάμεση σεζόν προσφέρει την ίδια ομορφιά με χαμηλότερο κόστος"
+      ]
+    },
+    sections: [
+      {
+        title: { en: "1. Why Greece Works So Well for Honeymoons", el: "1. Γιατί η Ελλάδα είναι Ιδανική για Μήνα του Μέλιτος" },
+        content: {
+          en: "There is no single answer to what makes Greece so enduringly popular with honeymooners — it is a combination of things that happen to align perfectly for couples travelling together for the first time as a married pair.\n\nThe light in Greece is genuinely different. The Aegean light, especially in the Cyclades, has been written about by artists and poets for centuries. It is golden in the early morning, intensely bright at midday, and extraordinary at sunset. For couples who want their trip to feel visually stunning — both for personal experience and for photographs — Greece delivers in a way that few destinations match.\n\nThe food in Greece is designed for sharing and taking your time. Long lunches, mezedes spread across a table overlooking the sea, fresh grilled fish brought to the table, local wine served in small carafes — the Greek approach to eating encourages exactly the kind of slow, pleasurable togetherness that makes a honeymoon feel special.\n\nThe sea in Greece is among the cleanest and most beautiful in the Mediterranean. Swimming in calm, transparent, warm water together — often with no one else nearby — is one of those deeply simple experiences that honeymooners return home talking about.\n\nAnd practically speaking, Greece is safe, accessible, has a strong hospitality infrastructure and offers an enormous range of accommodation options from intimate boutique guesthouses to world-class cave hotels.",
+          el: "Δεν υπάρχει μία μόνο απάντηση για τη δημοφιλία της Ελλάδας στους νιόπαντρους — είναι ένας συνδυασμός παραγόντων.\n\nΤο φως στην Ελλάδα είναι μοναδικό. Το φως του Αιγαίου είναι χρυσό το πρωί, εκθαμβωτικό το μεσημέρι και εκπληκτικό το ηλιοβασίλεμα.\n\nΤο φαγητό είναι σχεδιασμένο για μοίρασμα. Μεγάλα γεύματα, μεζέδες δίπλα στη θάλασσα, φρέσκο ψάρι και κρασί — ενθαρρύνουν ακριβώς αυτή την αργή, απολαυστική συντροφικότητα.\n\nΗ θάλασσα είναι από τις πιο καθαρές στη Μεσόγειο. Το κολύμπι σε ήρεμα, διάφανα νερά μαζί είναι μια απλή αλλά βαθιά εμπειρία."
+        }
+      },
+      {
+        title: { en: "2. Santorini: The Classic Honeymoon Choice", el: "2. Σαντορίνη: Η Κλασική Επιλογή" },
+        content: {
+          en: "No guide to honeymooning in Greece would be complete without leading with Santorini, because it remains the single most requested honeymoon destination in the country — and for very understandable reasons.\n\nThe caldera view is, simply put, one of the most dramatic natural settings on earth. A crescent of volcanic cliffs rising sharply from the deep blue sea, topped with whitewashed cubic houses, blue-domed churches and terraced infinity pools — this is the image that defines the Greek honeymoon in the global imagination. Oia in particular, the northern village of Santorini, is considered one of the most beautiful villages in Europe.\n\nWhat makes Santorini so powerful as a honeymoon destination is that it delivers the wow factor immediately and consistently. You walk out of your hotel and the view is extraordinary. Breakfast is served overlooking the caldera. The sunset — particularly from Oia — is an event that people travel thousands of kilometres to witness, and it lives up to every expectation.\n\nBest areas for honeymooners in Santorini: Oia for the most iconic views and quieter evenings; Imerovigli for the most dramatic caldera position with fewer tourists than Oia; Fira for easier access to restaurants, shopping and transport with still-excellent views.\n\nHonest considerations: Santorini is very busy in peak summer (July–August). The famous caldera-view hotels are expensive. For a more intimate experience, consider shoulder season — late May, June or September.",
+          el: "Κανένας οδηγός για μήνα του μέλιτος στην Ελλάδα δεν θα ήταν πλήρης χωρίς τη Σαντορίνη. Η θέα της καλδέρας είναι ένα από τα πιο εντυπωσιακά φυσικά σκηνικά στη γη.\n\nΗ Οία είναι το πιο ρομαντικό χωριό. Το ηλιοβασίλεμα είναι γεγονός. Αλλά η Σαντορίνη είναι πολυσύχναστη τον Ιούλιο–Αύγουστο. Ενδιάμεση σεζόν (Μάιος, Ιούνιος, Σεπτέμβριος) προσφέρει πιο οικεία εμπειρία."
+        }
+      },
+      {
+        title: { en: "3. Paros: Romantic Without the Crowds", el: "3. Πάρος: Ρομαντισμός Χωρίς Πολυκοσμία" },
+        content: {
+          en: "Paros is increasingly becoming the preferred alternative for couples who want the Cycladic beauty of Santorini but with a calmer, more intimate atmosphere. It has less of the \"everybody goes there\" energy and more of a lived-in, genuinely Greek feeling that many honeymooners find more romantic in the long run.\n\nThe island has beautiful beaches, a charming old town (Parikia) with a stunning 6th-century Byzantine church, excellent restaurants, and a whitewashed village (Naoussa) that has developed into one of the most elegant dining and bar scenes in the Cyclades. Sunsets over Naoussa harbour are genuinely romantic and far less crowded than Oia.\n\nParos also connects easily to nearby Naxos and Antiparos, so couples who want a slightly more exploratory honeymoon can base themselves here and take day trips.",
+          el: "Η Πάρος γίνεται όλο και πιο δημοφιλής ως εναλλακτική για ζευγάρια που θέλουν την κυκλαδίτικη ομορφιά με πιο ήρεμη ατμόσφαιρα. Υπέροχες παραλίες, γραφική Παροικιά, κομψή Νάουσα. Τα ηλιοβασιλέματα πάνω από το λιμάνι της Νάουσας είναι γνήσια ρομαντικά."
+        }
+      },
+      {
+        title: { en: "4. Kefalonia: Romance Among Green and Blue", el: "4. Κεφαλονιά: Ρομαντισμός στο Πράσινο και το Γαλάζιο" },
+        content: {
+          en: "For couples who find the stark whitewashed minimalism of the Cyclades less appealing than the lush green hills and turquoise coves of the Ionian, Kefalonia is an outstanding honeymoon destination that is consistently underestimated.\n\nThe island has some of the most beautiful beaches in the Mediterranean — Myrtos, Antisamos, Petani — and the combination of dramatic limestone cliffs, vivid emerald water and deep green pine forests creates a visual landscape that feels entirely different from the Cyclades.\n\nAssos, a small Venetian village on a narrow peninsula on the western coast, is one of the most charming and romantic small villages in all of Greece. A dinner at a table above Assos bay as the sun drops behind the hills opposite is a memory that genuinely stays with you.\n\nKefalonia also connects to Zakynthos and Ithaca by short ferry, so a combined Ionian honeymoon — splitting time between two or three islands — is a realistic option.",
+          el: "Για ζευγάρια που προτιμούν τα καταπράσινα τοπία και τους γαλαζοπράσινους όρμους του Ιονίου, η Κεφαλονιά είναι ένας εξαιρετικός προορισμός. Ο Μύρτος, ο Αντίσαμος, το Ασός — ένα από τα πιο γοητευτικά ρομαντικά χωριά της Ελλάδας."
+        }
+      },
+      {
+        title: { en: "5. Hydra: The Ultimate Intimate Escape", el: "5. Ύδρα: Η Απόλυτη Οικεία Απόδραση" },
+        content: {
+          en: "Hydra is unlike any other island in Greece. There are no cars, no motorbikes — only donkeys, horses and your own feet. The harbour is one of the most beautiful in the Aegean, lined with 18th-century stone mansions. The island has a long artistic heritage (Leonard Cohen famously lived here) and a quiet, unhurried quality that makes it feel like a world apart.\n\nFor couples who want intimacy over spectacle, and who are looking for a honeymoon that feels like a private retreat rather than a bucket-list tour, Hydra is exceptional. It is only 1.5–2 hours by hydrofoil from Piraeus.\n\nThe lack of cars means the island sounds different — quieter, calmer, punctuated by birdsong and the lap of water.",
+          el: "Η Ύδρα είναι εντελώς μοναδική. Χωρίς αυτοκίνητα, με ένα από τα ομορφότερα λιμάνια του Αιγαίου. Για ζευγάρια που θέλουν οικειότητα αντί για θέαμα, είναι εξαιρετική. Μόνο 1.5–2 ώρες με το υδροπτέρυγο από τον Πειραιά."
+        }
+      },
+      {
+        title: { en: "6. Rhodes: Romance with History and Luxury", el: "6. Ρόδος: Ιστορία και Πολυτέλεια" },
+        content: {
+          en: "Rhodes is often underestimated as a honeymoon destination. It is the largest Dodecanese island and one of the most historically rich places in Greece, with a UNESCO-listed medieval old city that is genuinely extraordinary to explore together.\n\nThe old town of Rhodes — entirely enclosed within medieval walls built by the Knights of St John in the 14th century — is one of the best-preserved medieval cities in Europe. Walking its cobblestone alleys in the evening, with candlelit restaurants on every corner, has an undeniable romantic atmosphere.\n\nBeyond the old town, Rhodes has excellent beaches (Lindos, Tsambika), a sophisticated hotel scene particularly in Lindos and Ixia, and easy connections to nearby islands like Symi and Halki for day trips.",
+          el: "Η Ρόδος συχνά υποτιμάται ως προορισμός για μήνα του μέλιτος. Η μεσαιωνική παλιά πόλη (UNESCO) είναι εκπληκτική για εξερεύνηση μαζί. Εξαιρετικές παραλίες στο Λίνδο και κομψά ξενοδοχεία."
+        }
+      },
+      {
+        title: { en: "7. When to Go for a Honeymoon in Greece", el: "7. Πότε να Πάτε" },
+        content: {
+          en: "The ideal months for a Greek honeymoon are June and September, with late May and early October also being strong choices.\n\nJune offers long warm days, the sea already warm enough for swimming (22–24°C), flowers still on the hillsides, and significantly lower prices and fewer crowds than July and August.\n\nSeptember is arguably the finest month in Greece for couples. The peak season crowds have thinned, prices drop noticeably, the sea is at its warmest (26–28°C), and the overall atmosphere is more relaxed and personal.\n\nJuly and August work well but require more advance planning, acceptance of busier environments, and a larger budget.",
+          el: "Ιούνιος και Σεπτέμβριος είναι οι ιδανικοί μήνες. Ο Ιούνιος έχει ζεστές μέρες, ανθισμένα τοπία και λιγότερο κόσμο. Ο Σεπτέμβριος είναι ίσως ο καλύτερος μήνας — η θάλασσα είναι ζεστή, τα πλήθη έχουν φύγει και οι τιμές πέφτουν."
+        }
+      },
+      {
+        title: { en: "8. Romantic Experiences Worth Planning Around", el: "8. Ρομαντικές Εμπειρίες" },
+        content: {
+          en: "These are experiences that honeymooners consistently describe as the highlights of their trip:\n\nSunset watching in Oia (Santorini): An unmissable experience. For a more intimate version, book a private terrace dinner at your hotel for the same view without the crowd.\n\nPrivate sailing or catamaran charter: A full-day or half-day private boat charter lets you reach secluded coves, swim in places inaccessible by road, and watch the sunset from the water. Available from most islands at varying price points.\n\nWine tasting in Santorini: The volcanic soil produces extraordinary Assyrtiko white wines. A guided tasting at a winery with caldera views is a memorable afternoon.\n\nCooking class together: Several islands offer couple-oriented cooking classes where you learn to make traditional Greek dishes together.\n\nA night in an overwater or cliff-edge suite: Santorini's cave hotels and Mykonos' sea-view suites are obvious choices, but several boutique hotels in Kefalonia, Skopelos and Amorgos offer equally stunning private terraces at lower prices.",
+          el: "Εμπειρίες που τα ζευγάρια περιγράφουν ως κορυφαίες:\n\nΗλιοβασίλεμα στην Οία — ή σε ιδιωτική βεράντα του ξενοδοχείου σας.\nΙδιωτική κρουαζιέρα με σκάφος — κολύμπι σε απομονωμένους όρμους.\nΟινογνωσία στη Σαντορίνη — τα κρασιά Ασύρτικο είναι εξαιρετικά.\nΜάθημα μαγειρικής μαζί — διασκεδαστική και νόστιμη εμπειρία.\nΔιαμονή σε σουίτα με θέα — οι σπηλαιώδεις σουίτες της Σαντορίνης ή αντίστοιχες σε Κεφαλονιά, Σκόπελο και Αμοργό."
+        }
+      }
+    ]
   }
 ];
 
