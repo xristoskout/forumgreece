@@ -1174,6 +1174,98 @@ export const travelInfoGuides: GuideCard[] = [
         }
       }
     ]
+  },
+  {
+    slug: "things-to-do-in-athens",
+    title: {
+      en: "Things to Do in Athens: A Complete Visitor's Guide",
+      el: "Τι να Κάνεις στην Αθήνα: Πλήρης Οδηγός"
+    },
+    description: {
+      en: "Discover the best things to do in Athens — from the Acropolis and ancient agora to hidden neighbourhoods, local food, museums and practical tips for every visitor.",
+      el: "Ανακαλύψτε τα καλύτερα πράγματα να κάνετε στην Αθήνα — από την Ακρόπολη και την αρχαία αγορά έως κρυφές γειτονιές, τοπικό φαγητό και μουσεία."
+    },
+    image: "/images/things-to-do-in-athens.webp",
+    overview: {
+      en: "Athens is one of the world's great cities, and one of Europe's most underrated travel destinations. It sits at an extraordinary crossroads of ancient history and modern urban life — where a 2,500-year-old monument dominates the skyline above a neighbourhood full of coffee shops, art galleries, street food stalls and vibrant nightlife. Most visitors to Greece pass through Athens, but many underestimate it. This guide gives you an honest picture of what Athens has to offer, how to structure your visit, and how to experience the city beyond the postcard version.",
+      el: "Η Αθήνα είναι μία από τις σπουδαιότερες πόλεις του κόσμου και ένας από τους πιο υποτιμημένους ταξιδιωτικούς προορισμούς της Ευρώπης. Βρίσκεται σε ένα μοναδικό σταυροδρόμι αρχαίας ιστορίας και σύγχρονης αστικής ζωής."
+    },
+    points: {
+      en: [
+        "Visit the Acropolis early (8am) to avoid crowds and midday heat",
+        "The combined Acropolis ticket covers six sites and is the best value option",
+        "The Acropolis Museum and National Archaeological Museum are world-class — do not miss them",
+        "Athens' best food and atmosphere is found in Psiri, Koukaki, Thissio and the Central Market area",
+        "Two days is the recommended minimum; three is more comfortable",
+        "Athens pairs naturally with the Saronic islands (Hydra, Aegina, Spetses) for short getaways"
+      ],
+      el: [
+        "Επισκεφθείτε την Ακρόπολη νωρίς (8πμ) για να αποφύγετε τη ζέστη και τα πλήθη",
+        "Το συνδυαστικό εισιτήριο Ακρόπολης καλύπτει έξι αρχαιολογικούς χώρους",
+        "Το Μουσείο Ακρόπολης και το Εθνικό Αρχαιολογικό Μουσείο είναι παγκόσμιας κλάσης",
+        "Το καλύτερο φαγητό βρίσκεται στο Ψυρρή, Κουκάκι, Θησείο και την Κεντρική Αγορά",
+        "Δύο ημέρες είναι το ελάχιστο· τρεις είναι πιο άνετες",
+        "Η Αθήνα συνδυάζεται ιδανικά με Ύδρα, Αίγινα και Σπέτσες"
+      ]
+    },
+    sections: [
+      {
+        title: { en: "1. The Acropolis: The Non-Negotiable Starting Point", el: "1. Ακρόπολη: Το Αδιαπραγμάτευτο Σημείο Εκκίνησης" },
+        content: {
+          en: "The Acropolis is not simply the most important site in Athens — it is one of the most important monuments in human history. The Parthenon, dedicated to Athena and completed in 432 BC, stands at its centre as one of the finest examples of Classical Greek architecture ever built. Even after centuries of wars, earthquakes, explosions and atmospheric erosion, it is breathtaking.\n\nThe walk up the Sacred Rock takes around 20–30 minutes. The site also includes the Erechtheion (with its iconic Porch of the Caryatids), the Temple of Athena Nike, and the Propylaea.\n\nPractical tips: Go early (it opens at 8am) to avoid both the heat and the crowds. The combined ticket (€30 in high season) covers the Acropolis plus six other archaeological sites. The best view of the Acropolis is not from the top — it is from below: Monastiraki, Thissio rooftops and Philopappos Hill. Visit the Acropolis Museum the same day or the day after.",
+          el: "Η Ακρόπολη δεν είναι απλώς ο σημαντικότερος χώρος στην Αθήνα — είναι ένα από τα σημαντικότερα μνημεία της ανθρώπινης ιστορίας. Ο Παρθενώνας, αφιερωμένος στην Αθηνά και ολοκληρωμένος το 432 π.Χ., είναι ένα από τα ωραιότερα δείγματα κλασικής ελληνικής αρχιτεκτονικής.\n\nΣυμβουλές: Πηγαίνετε νωρίς (8πμ). Το συνδυαστικό εισιτήριο (€30) καλύπτει την Ακρόπολη και έξι ακόμη χώρους. Η καλύτερη θέα είναι από κάτω — Μοναστηράκι, Θησείο και Λόφος Φιλοπάππου."
+        }
+      },
+      {
+        title: { en: "2. The Acropolis Museum: One of Europe's Best", el: "2. Μουσείο Ακρόπολης: Από τα Κορυφαία της Ευρώπης" },
+        content: {
+          en: "The Acropolis Museum opened in 2009 and immediately became one of the finest archaeological museums in the world. It was built specifically to house the surviving sculptures, friezes and artefacts from the Acropolis and the surrounding area, and it does so with extraordinary clarity and architectural elegance.\n\nThe museum's top floor reconstructs the full Parthenon frieze — the continuous band of carved marble that once ran around the entire outer wall of the temple. Originals surviving in Athens are displayed alongside plaster casts of the sections held by the British Museum, making the incompleteness of the divided collection impossible to ignore.\n\nThe ground floor is built over an archaeological excavation visible through glass floors — the remains of an Athenian neighbourhood that stood here in ancient times. Entry is €10. Allow at least two hours.",
+          el: "Το Μουσείο Ακρόπολης άνοιξε το 2009 και έγινε αμέσως ένα από τα καλύτερα αρχαιολογικά μουσείο του κόσμου. Ο τελευταίος όροφος αναπαριστά την πλήρη ζωφόρο του Παρθενώνα. Είσοδος €10. Αφιερώστε τουλάχιστον δύο ώρες."
+        }
+      },
+      {
+        title: { en: "3. The Ancient Agora: Where Democracy Was Born", el: "3. Αρχαία Αγορά: Εκεί Γεννήθηκε η Δημοκρατία" },
+        content: {
+          en: "Just below the Acropolis on its northern slope lies the Ancient Agora — the civic heart of ancient Athens. This was where Athenians met to vote, trade, argue philosophy and conduct public life. Socrates walked here. Aristotle taught nearby.\n\nThe site contains the best-preserved ancient Greek temple in the world: the Temple of Hephaestus, built in the 5th century BC and still standing essentially intact. The reconstructed Stoa of Attalos now functions as a small museum housing finds from the Agora excavations.\n\nThe Ancient Agora is included in the Acropolis combined ticket and is often less crowded than the Acropolis itself.",
+          el: "Ακριβώς κάτω από την Ακρόπολη βρίσκεται η Αρχαία Αγορά — η καρδιά της αρχαίας Αθήνας. Περιλαμβάνει τον καλύτερα διατηρημένο αρχαίο ελληνικό ναό, το Ηφαιστείο. Περιλαμβάνεται στο συνδυαστικό εισιτήριο."
+        }
+      },
+      {
+        title: { en: "4. The National Archaeological Museum", el: "4. Εθνικό Αρχαιολογικό Μουσείο" },
+        content: {
+          en: "The National Archaeological Museum of Athens holds one of the greatest collections of ancient Greek artefacts in the world. If you have any interest in history, art or archaeology, this museum is not optional.\n\nKey highlights include the Mask of Agamemnon (a gold funeral mask from Mycenae, circa 1550 BC), the Antikythera Mechanism (the world's oldest known analogue computer), an extraordinary collection of archaic and classical sculpture, Egyptian antiquities and prehistoric Aegean finds.\n\nThe museum is in Exarchia, 20–25 minutes on foot from Monastiraki or by metro (Victoria station). Entry is €12. Allow three to four hours for a proper visit.",
+          el: "Το Εθνικό Αρχαιολογικό Μουσείο έχει μία από τις μεγαλύτερες συλλογές αρχαίων ελληνικών αντικειμένων στον κόσμο. Περιλαμβάνει τη Μάσκα του Αγαμέμνονα και τον Μηχανισμό των Αντικυθήρων. Είσοδος €12."
+        }
+      },
+      {
+        title: { en: "5. Athens' Neighbourhoods: Where the City Actually Lives", el: "5. Γειτονιές της Αθήνας" },
+        content: {
+          en: "Athens' most engaging quality for curious visitors is the diversity of its neighbourhoods — each with its own character, architecture and daily rhythm.\n\nMonastiraki and Psiri: The beating heart of tourist Athens. Monastiraki Square is surrounded by the ancient Agora, a famous flea market, excellent street food and rooftop bars with Acropolis views. Psiri has developed into one of the city's best areas for restaurants, wine bars and music venues.\n\nPlaka: The old neighbourhood that climbs the slopes of the Acropolis. Neoclassical houses, narrow winding streets, Byzantine churches and outdoor tavernas. Can feel touristy but has genuine charm on quiet mornings.\n\nKolonaki: The upmarket neighbourhood. Boutique shopping, excellent restaurants, important small museums (Benaki, Cycladic Art) and a funicular to Lycabettus Hill for a 360-degree city view.\n\nExarchia: Bookshops, anarchist murals and excellent cheap food. The Central Market (Varvakios Agora) on its edge is one of the most atmospheric experiences in Athens.\n\nThissio and Gazi: Some of the best rooftop bars and outdoor restaurants with Acropolis views.\n\nKoukaki and Mets: Emerging neighbourhoods with a strong local café and restaurant scene south of the Acropolis.",
+          el: "Η ποικιλία των γειτονιών είναι το πιο ενδιαφέρον χαρακτηριστικό της Αθήνας.\n\nΜοναστηράκι και Ψυρρή: Η καρδιά της τουριστικής Αθήνας. Υπαίθριες αγορές, street food, rooftop bars.\nΠλάκα: Η παλιά γειτονιά κάτω από την Ακρόπολη. Νεοκλασικά σπίτια και βυζαντινές εκκλησίες.\nΚολωνάκι: Κομψή γειτονιά με μουσεία και βόλτα στο Λυκαβηττό.\nΕξάρχεια: Βιβλιοπωλεία, τέχνη, καλό φαγητό. Η Κεντρική Αγορά είναι μοναδική εμπειρία.\nΘησείο και Γκάζι: Κορυφαία rooftop μπαρ.\nΚουκάκι και Μετς: Αναδυόμενες γειτονιές με ωραία καφέ και εστιατόρια."
+        }
+      },
+      {
+        title: { en: "6. Food in Athens: What to Eat and Where", el: "6. Φαγητό στην Αθήνα" },
+        content: {
+          en: "Athens has become one of the most exciting food cities in southern Europe, combining a deeply rooted traditional cuisine with a modern restaurant scene.\n\nTraditional and essential: Spanakopita, taramosalata, grilled octopus, souvlaki, fresh grilled fish and lamb slow-cooked in a wood oven. The Central Market is the best place to see these ingredients in their raw form, and the surrounding streets have excellent lunchtime eateries serving market workers.\n\nBreakfast culture: A freddo espresso and a fresh koulouri (sesame bread ring, €0.80) is one of the great simple pleasures of a morning in Athens.\n\nNeighbourhood dining: For dinner, walk into Psiri or Koukaki, look for restaurants where Greeks are eating (not just tourists), and trust the chalkboard menu.",
+          el: "Η Αθήνα έχει γίνει μία από τις πιο συναρπαστικές γαστρονομικές πόλεις της νότιας Ευρώπης. Από σπανακόπιτα και σουβλάκι έως φρέσκο ψάρι και αρνί στον ξυλόφουρνο. Η Κεντρική Αγορά είναι ο καλύτερος προορισμός για αυθεντικό φαγητό."
+        }
+      },
+      {
+        title: { en: "7. How Many Days Do You Need in Athens?", el: "7. Πόσες Μέρες Χρειάζεστε" },
+        content: {
+          en: "Two full days is the minimum to see Athens properly. Three days allows you to include a half-day trip to Cape Sounion.\n\nA typical 2-day Athens structure:\nDay 1 morning: Acropolis (early). Afternoon: Acropolis Museum. Evening: Dinner in Psiri or Thissio.\nDay 2 morning: National Archaeological Museum. Afternoon: Ancient Agora + Monastiraki flea market + Kolonaki. Evening: Rooftop bar at sunset, dinner in Koukaki.\n\nFor those spending a single night before or after island travel, even one focused day can be enormously rewarding if you prioritise the Acropolis, the Acropolis Museum and an evening meal in Psiri.",
+          el: "Δύο πλήρεις ημέρες είναι το ελάχιστο. Τρεις ημέρες σας επιτρέπουν να συμπεριλάβετε μια ημιήμερη εκδρομή στο Σούνιο.\n\nΜέρα 1: Ακρόπολη (πρωί), Μουσείο Ακρόπολης (απόγευμα), δείπνο στο Ψυρρή.\nΜέρα 2: Εθνικό Αρχαιολογικό Μουσείο, Αρχαία Αγορά, Μοναστηράκι, Κολωνάκι."
+        }
+      },
+      {
+        title: { en: "8. Day Trips from Athens", el: "8. Ημερήσιες Εκδρομές" },
+        content: {
+          en: "Athens works well as a base for several outstanding day trips:\n\nCape Sounion and the Temple of Poseidon: 70km south of Athens. Arrive at sunset for one of the most dramatic ancient sites in Greece.\n\nDelphi: 180km northwest. The sanctuary of Apollo and the Oracle — one of the great archaeological sites in Greece.\n\nEpidaurus: 150km southwest. The ancient theatre with perfect acoustics. Summer evening performances are among the finest cultural experiences in Greece.\n\nHydra and Aegina: Short hydrofoil rides from Piraeus. Car-free Hydra in particular feels like another world after the pace of Athens.",
+          el: "Η Αθήνα είναι εξαιρετική βάση για ημερήσιες εκδρομές:\n\nΣούνιο: 70χλμ νότια. Ο ναός του Ποσειδώνα στο ηλιοβασίλεμα.\nΔελφοί: 180χλμ βορειοδυτικά. Το μαντείο του Απόλλωνα.\nΕπίδαυρος: 150χλμ νοτιοδυτικά. Το αρχαίο θέατρο.\nΎδρα και Αίγινα: Με υδροπτέρυγο από τον Πειραιά."
+        }
+      }
+    ]
   }
 ];
 
