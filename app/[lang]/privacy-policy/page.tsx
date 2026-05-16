@@ -114,8 +114,8 @@ export default async function PrivacyPage({ params }: Props) {
     {
       title: { en: "6 | APPLICABLE LAW", el: "6 | ΕΦΑΡΜΟΣΤΕΟ ΔΙΚΑΙΟ ΚΑΙ ΛΟΙΠΟΙ ΟΡΟΙ" },
       text: {
-        en: "These terms and conditions are governed by Greek law. For any dispute arising from the use of GoGreeceNow, the courts of Athens are exclusively competent.",
-        el: "Οι συγκεκριμένοι όροι και προϋποθέσεις διέπονται και ερμηνεύονται σύμφωνα με το ελληνικό δίκαιο. Για κάθε διαφορά που ανακύπτει από τη χρήση του GoGreeceNow, αρμοδιότητα έχουν τα δικαστήρια των Αθηνών.",
+        en: "These terms and conditions are governed by Greek law. For any dispute arising from the use of GoGreeceNow, the courts of Mytiline are exclusively competent.",
+        el: "Οι συγκεκριμένοι όροι και προϋποθέσεις διέπονται και ερμηνεύονται σύμφωνα με το ελληνικό δίκαιο. Για κάθε διαφορά που ανακύπτει από τη χρήση του GoGreeceNow, αρμοδιότητα έχουν τα δικαστήρια της Μυτιλήνης.",
       },
     },
     {
