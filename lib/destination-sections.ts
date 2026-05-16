@@ -5757,6 +5757,16 @@ export const destinationSections: Record<string, DestinationSection[]> = {
         },
         {
           title: {
+            en: "Achaia Beach — Bauhaus beachfront with views of Rio bridge",
+            el: "Achaia Beach — Bauhaus στην παραλία με θέα τη γέφυρα Ρίου",
+          },
+          text: {
+            en: "Ideally located 4km from the city of Patras with free parking. The Bauhaus building on the beach front offers amazing views of the sea, the Rio bridge and the mountains.",
+            el: "Ιδανικά τοποθετημένο 4χλμ από το κέντρο της Πάτρας με δωρεάν parking. Το Bauhaus κτίριο στην παραλία προσφέρει υπέροχη θέα στη θάλασσα, τη γέφυρα Ρίου και τα βουνά.",
+          },
+        },
+        {
+          title: {
             en: "Europa Hotel Olympia — views over the ancient site",
             el: "Europa Hotel Olympia — θέα στον αρχαιολογικό χώρο",
           },
