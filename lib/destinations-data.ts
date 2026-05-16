@@ -743,6 +743,41 @@ export const destinations: Destination[] = [
         el: "Οργανώστε το ταξίδι σας στους Δελφούς με τον οδηγό μας. Ανακαλύψτε τον αρχαιολογικό χώρο, τη διαμονή και τις καλύτερες εμπειρίες σε έναν από τους πιο συμβολικούς προορισμούς."
       }
     }
+  },
+  {
+    slug: "patras",
+    name: "Patras",
+    region: { en: "Peloponnese", el: "Πελοπόννησος" },
+    blurb: {
+      en: "Carnival capital, gateway to Ancient Olympia, Delphi and the western Peloponnese coast.",
+      el: "Πρωτεύουσα του Καρναβαλιού, πύλη για Αρχαία Ολυμπία, Δελφούς και τη δυτική ακτή της Πελοποννήσου."
+    },
+    image: "/images/patras.webp",
+    overview: {
+      en: "Patras is not an island. It does not have the postcard geometry that drives most Greek travel decisions. What it has is something rarer and more useful: it is a genuine city that functions as the perfect base for one of the richest clusters of destinations in the entire country. Greece's third-largest city sits at the western edge of the Peloponnese, where the Gulf of Patras opens toward the Ionian Sea. If you're looking for [Where to Stay in Patras](/hotels/patras), the city and its surrounding region offer an extraordinary range of options.",
+      el: "Η Πάτρα δεν είναι νησί. Δεν έχει την γεωμετρία καρτ ποστάλ που καθορίζει τις περισσότερες ταξιδιωτικές αποφάσεις. Αυτό που έχει είναι κάτι πιο σπάνιο και χρήσιμο: είναι μια γνήσια πόλη που λειτουργεί ως τέλεια βάση για ένα από τα πλουσιότερα συμπλέγματα προορισμών σε ολόκληρη τη χώρα. Αν ψάχνετε [Πού να μείνετε στην Πάτρα](/hotels/patras), η πόλη και η γύρω περιοχή προσφέρουν εξαιρετική ποικιλία."
+    },
+    highlights: {
+      en: ["Patras Carnival", "Ancient Olympia", "Delphi day trip", "Kalavrita rack railway", "Nafpaktos harbour", "Messolonghi lagoon", "Beaches of Ilia"],
+      el: ["Καρναβάλι Πάτρας", "Αρχαία Ολυμπία", "Ημερήσια εκδρομή Δελφοί", "Οδοντωτός Καλαβρύτων", "Λιμάνι Ναυπάκτου", "Λιμνοθάλασσα Μεσολογγίου", "Παραλίες Ηλείας"]
+    },
+    featured: true,
+    guideLinks: [
+      {
+        href: "/hotels/patras",
+        label: { en: "Where to Stay in Patras", el: "Πού να μείνεις στην Πάτρα" }
+      }
+    ],
+    seo: {
+      title: {
+        en: "Patras Travel Guide: Carnival, Ancient Olympia, Delphi & the Wider Region | GoGreeceNow",
+        el: "Πάτρα: Οδηγός Ταξιδιού — Καρναβάλι, Αρχαία Ολυμπία, Δελφοί & Ευρύτερη Περιοχή | GoGreeceNow"
+      },
+      description: {
+        en: "Complete travel guide to Patras and the wider region — Carnival, Ancient Olympia, Delphi, Kalavrita, Aigialeia coast, Nafpaktos, Messolonghi and the beaches of Ilia. Explore Greece's third city as a base for some of the country's greatest sites.",
+        el: "Πλήρης ταξιδιωτικός οδηγός για την Πάτρα και την ευρύτερη περιοχή — Καρναβάλι, Αρχαία Ολυμπία, Δελφοί, Καλάβρυτα, Αιγιάλεια, Ναύπακτος, Μεσολόγγι και παραλίες Ηλείας."
+      }
+    }
   }
 ];
 

@@ -542,4 +542,51 @@ export const destinationDetails: Record<string, DestinationDetail> = {
       el: ["Πολιτισμός & Αρχαιολογία", "Διαδρομές Ηπειρωτικής Ελλάδας", "Ιστορικές Στάσεις", "Ορεινά Τοπία"]
     }
   },
+
+  patras: {
+    overview: {
+      en: "Patras is not an island. It does not have the postcard geometry that drives most Greek travel decisions. What it has is something rarer and more useful: it is a genuine city that functions as the perfect base for one of the richest clusters of destinations in the entire country.\n\nGreece's third-largest city sits at the western edge of the Peloponnese, where the Gulf of Patras opens toward the Ionian Sea. The Rio–Antirrio bridge — one of the longest cable-stayed bridges in the world — connects it to central Greece in a few minutes. The port connects it to Italy, the Ionian Islands and Cephalonia by overnight ferry. And the road network radiating from it leads, within two hours in any direction, to Ancient Olympia, Delphi, the rack-railway town of Kalavrita, the beautiful Aigialeia coast, the historic bay of Nafpaktos, the wetlands and Venetian walls of Messolonghi, and the long sandy beaches of Ilia.\n\nThe city itself is worth time before the day trips begin. The Byzantine castle sits above the old town on a hill with views over the gulf to the mountains of Aetolia-Acarnania. The seafront is long, lively and genuinely Patra-ine in character — a city that moves to its own rhythm and does not perform for visitors. And every February or March, for three weeks, the whole world discovers what Patras already knew: its Carnival is one of the great popular festivals in Europe.",
+      el: "Η Πάτρα δεν είναι νησί. Δεν έχει την γεωμετρία καρτ ποστάλ που καθορίζει τις περισσότερες ταξιδιωτικές αποφάσεις. Αυτό που έχει είναι κάτι πιο σπάνιο και χρήσιμο: είναι μια γνήσια πόλη που λειτουργεί ως τέλεια βάση για ένα από τα πλουσιότερα συμπλέγματα προορισμών σε ολόκληρη τη χώρα.\n\nΗ τρίτη μεγαλύτερη πόλη της Ελλάδας βρίσκεται στο δυτικό άκρο της Πελοποννήσου, εκεί που ο Πατραϊκός Κόλπος ανοίγει προς το Ιόνιο Πέλαγος. Η γέφυρα Ρίου–Αντιρρίου τη συνδέει με την κεντρική Ελλάδα. Το λιμάνι τη συνδέει με την Ιταλία, τα Ιόνια Νησιά και την Κεφαλονιά. Το οδικό δίκτυο οδηγεί, μέσα σε δύο ώρες, σε Αρχαία Ολυμπία, Δελφούς, Καλάβρυτα, Αιγιάλεια, Ναύπακτο, Μεσολόγγι και τις παραλίες της Ηλείας."
+    },
+    pageIncludes: {
+      en: [
+        "Patras city — castle, cathedral, Carnival, Odeum",
+        "Ancient Olympia (1h 15min) — full day trip guide",
+        "Delphi (2h) — day trip via Rio–Antirrio",
+        "Kalavrita & rack railway (1h 15min)",
+        "Aigialeia coast, Nafpaktos, Messolonghi",
+        "Beaches of Ilia & Kaiafas",
+        "Local food — avgotaraho, loukoumades, fresh fish",
+        "Where to stay — Patras city, Olympia village, Aigialeia coast"
+      ],
+      el: [
+        "Πάτρα — κάστρο, καθεδρικός, Καρναβάλι, Ωδείο",
+        "Αρχαία Ολυμπία (1h 15min)",
+        "Δελφοί (2h) — μέσω Ρίου–Αντιρρίου",
+        "Καλάβρυτα & οδοντωτός (1h 15min)",
+        "Αιγιάλεια, Ναύπακτος, Μεσολόγγι",
+        "Παραλίες Ηλείας & Καϊάφας",
+        "Τοπικό φαγητό — αυγοτάραχο, λουκουμάδες, ψάρι",
+        "Διαμονή — Πάτρα, Ολυμπία, Αιγιάλεια"
+      ]
+    },
+    perfectFor: {
+      en: [
+        "History and archaeology travelers",
+        "Families combining culture and beach",
+        "Road trip and driving holiday itineraries",
+        "Carnival season visits",
+        "Travelers entering Greece from Italy by ferry",
+        "Anyone wanting a real Greek city alongside the ancient sites"
+      ],
+      el: [
+        "Ταξιδιώτες ιστορίας και αρχαιολογίας",
+        "Οικογένειες που συνδυάζουν πολιτισμό και θάλασσα",
+        "Road trips",
+        "Επισκέπτες του Καρναβαλιού",
+        "Ταξιδιώτες που έρχονται από Ιταλία",
+        "Όσους θέλουν μια αληθινή ελληνική πόλη"
+      ]
+    }
+  },
 };

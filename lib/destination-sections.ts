@@ -5509,4 +5509,411 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       ]
     }
   ],
+  patras: [
+    {
+      title: {
+        en: "Why visit Patras",
+        el: "Γιατί να επισκεφθείς την Πάτρα",
+      },
+      layout: "numbered",
+      items: [
+        {
+          title: {
+            en: "The greatest Carnival in Greece — and one of Europe\u2019s finest",
+            el: "Το μεγαλύτερο Καρναβάλι στην Ελλάδα — και από τα καλύτερα της Ευρώπης",
+          },
+          text: {
+            en: "The Patras Carnival is the largest and most elaborate in Greece and ranks consistently among the great Carnival celebrations of Europe alongside Venice, Cologne and Rio. Three weeks of events — masquerade balls, satirical floats, the Children\u2019s Carnival, and the final Grand Parade — transform the entire city. The closing float parade draws hundreds of thousands of people to the seafront. Secret: The masquerade balls that take place in the weeks before the Grand Parade are invitation-accessible and are where the real Carnival culture lives — not the street parade. Ask locally which is happening.",
+            el: "Το Καρναβάλι της Πάτρας είναι το μεγαλύτερο και πιο περίτεχνο στην Ελλάδα και συγκαταλέγεται σταθερά ανάμεσα στις μεγάλες καρναβαλικές γιορτές της Ευρώπης. Τρεις εβδομάδες εκδηλώσεων — χοροί μεταμφιεσμένων, σατιρικά άρματα, Παιδικό Καρναβάλι και η μεγάλη Παρέλαση — μεταμορφώνουν ολόκληρη την πόλη.",
+          },
+        },
+        {
+          title: {
+            en: "The perfect base for ancient, natural and cultural Greece",
+            el: "Η τέλεια βάση για αρχαία, φυσική και πολιτιστική Ελλάδα",
+          },
+          text: {
+            en: "No other city in Greece offers such immediate access to such a variety of major sites. Ancient Olympia, Delphi, Kalavrita, the monasteries of Mega Spileo and Agia Lavra, the Venetian fortresses of Nafpaktos and Messolonghi, the Aigialeia coast, and the beaches of Ilia — all are within a two-hour drive. Using Patras as a hub for a week-long trip through western Greece and the northern Peloponnese is one of the most efficient and underused strategies in Greek travel.",
+            el: "Καμία άλλη πόλη στην Ελλάδα δεν προσφέρει τόσο άμεση πρόσβαση σε τόσο μεγάλη ποικιλία σημαντικών αρχαιολογικών χώρων. Αρχαία Ολυμπία, Δελφοί, Καλάβρυτα, τα μοναστήρια του Μεγάλου Σπηλαίου και της Αγίας Λαύρας, οι ενετικές οχυρώσεις Ναυπάκτου και Μεσολογγίου, η ακτή της Αιγιάλειας και οι παραλίες της Ηλείας — όλα σε απόσταση δύο ωρών.",
+          },
+        },
+        {
+          title: {
+            en: "A real Greek city, unfiltered",
+            el: "Μια αληθινή ελληνική πόλη, χωρίς φίλτρα",
+          },
+          text: {
+            en: "Patras is not polished for tourism. Its neoclassical buildings, its market, its long café-lined waterfront, its Sunday fish restaurants, its evening volta along the seafront — these are a city living normally. For travelers who want to experience the texture of contemporary Greek urban life alongside the ancient sites, Patras is the honest version.",
+            el: "Η Πάτρα δεν είναι γυαλισμένη για τον τουρισμό. Τα νεοκλασικά κτίριά της, η αγορά της, η μακριά παραλία με τα καφέ, οι κυριακάτικες ψαροταβέρνες, η βραδινή βόλτα στο μέτωπο — αυτά είναι μια πόλη που ζει κανονικά.",
+          },
+        },
+      ],
+    },
+    {
+      title: {
+        en: "Best time for Patras",
+        el: "Καλύτερη εποχή για Πάτρα",
+      },
+      layout: "list",
+      alert: {
+        en: "Secret: Combine Carnival season with a day trip to Ancient Olympia or Kalavrita. Most Carnival visitors never leave the city — which means the surrounding sites are unusually quiet during one of Greece\u2019s busiest festival periods.",
+        el: "Μυστικό: Συνδυάστε την περίοδο του Καρναβαλιού με μια εκδρομή στην Αρχαία Ολυμπία ή τα Καλάβρυτα. Οι περισσότεροι επισκέπτες του Καρναβαλιού δεν φεύγουν από την πόλη.",
+      },
+      items: [
+        {
+          title: {
+            en: "Carnival Season (late January \u2013 March)",
+            el: "Περίοδος Καρναβαλιού (τέλη Ιανουαρίου \u2013 Μάρτιος)",
+          },
+          text: {
+            en: "The reason to time a visit specifically. Hotels book out early; reserve months in advance. The energy of Patras during Carnival is unlike anything else in Greece. The weather is cool but rarely prohibitive.",
+            el: "Ο λόγος για να προγραμματίσετε συγκεκριμένη επίσκεψη. Τα ξενοδοχεία κλείνουν γρήγορα. Η ενέργεια της Πάτρας στο Καρναβάλι είναι ασύγκριτη.",
+          },
+        },
+        {
+          title: {
+            en: "Spring (April \u2013 June)",
+            el: "Άνοιξη (Απρίλιος \u2013 Ιούνιος)",
+          },
+          text: {
+            en: "The ideal season for exploring the wider region. Ancient Olympia and Delphi are manageable in temperature; the Aigialeia coast is uncrowded; Kalavrita and the mountain villages of Achaia are in bloom. Perfect conditions for driving the back roads.",
+            el: "Η ιδανική εποχή για εξερεύνηση της ευρύτερης περιοχής. Αρχαία Ολυμπία και Δελφοί έχουν ανεκτές θερμοκρασίες.",
+          },
+        },
+        {
+          title: {
+            en: "Summer (July \u2013 August)",
+            el: "Καλοκαίρι (Ιούλιος \u2013 Αύγουστος)",
+          },
+          text: {
+            en: "Hot inland but the Aigialeia coast and the beaches of Ilia come fully into their own. The city itself is less crowded than in Carnival but fully alive. Ancient Olympia in July heat is demanding — go very early in the morning.",
+            el: "Ζέστη στην ενδοχώρα αλλά η Αιγιάλεια και οι παραλίες Ηλείας είναι στο καλύτερό τους.",
+          },
+        },
+        {
+          title: {
+            en: "Autumn (September \u2013 November)",
+            el: "Φθινόπωρο (Σεπτέμβριος \u2013 Νοέμβριος)",
+          },
+          text: {
+            en: "The second-best season. The heat softens, the sea is still warm, olive harvests begin in the countryside, and the cultural calendar of the city picks up again. September in Nafpaktos or Messolonghi is particularly atmospheric.",
+            el: "Η δεύτερη καλύτερη εποχή. Η ζέστη υποχωρεί, η θάλασσα είναι ακόμα ζεστή.",
+          },
+        },
+      ],
+    },
+    {
+      title: {
+        en: "How to get to Patras",
+        el: "Πώς να πας στην Πάτρα",
+      },
+      layout: "grid",
+      alert: {
+        en: "Secret: The overnight ferry from Italy — Bari, Brindisi, Ancona, Venice — arrives directly in Patras. Traveling from western Europe by ferry and using Patras as the entry point into Greece is a classic route that has been quietly underused in recent years. It also produces a memorable arrival: approaching the city by sea at dawn.",
+        el: "Μυστικό: Το νυχτερινό πλοίο από την Ιταλία — Μπάρι, Μπρίντιζι, Ανκόνα, Βενετία — φτάνει κατευθείαν στην Πάτρα.",
+      },
+      items: [
+        {
+          title: {
+            en: "By car from Athens",
+            el: "Με αυτοκίνητο από Αθήνα",
+          },
+          text: {
+            en: "The expressway (E65 / A8 via the Rio\u2013Antirrio bridge, or A8 direct) connects Athens and Patras in approximately 2\u20132.5 hours. The most convenient way to explore the wider region.",
+            el: "Ο αυτοκινητόδρομος (Ε65 / Α8 μέσω Ρίου\u2013Αντιρρίου) συνδέει Αθήνα και Πάτρα σε περίπου 2\u20132.5 ώρες.",
+          },
+        },
+        {
+          title: {
+            en: "By train from Athens",
+            el: "Με τρένο από Αθήνα",
+          },
+          text: {
+            en: "The intercity train service connects Athens (Kiato/Corinth) with Patras. Journey times vary; check current TRAINOSE schedules as the Athens\u2013Patras rail line has undergone significant upgrade works.",
+            el: "Το υπεραστικό τρένο συνδέει την Αθήνα με την Πάτρα. Οι χρόνοι ποικίλλουν.",
+          },
+        },
+        {
+          title: {
+            en: "By bus (KTEL)",
+            el: "Με ΚΤΕΛ",
+          },
+          text: {
+            en: "Frequent KTEL departures connect Athens (Kifissos station) with Patras daily in approximately 2.5\u20133 hours. Local KTEL services from Patras reach Pyrgos (for Olympia), Aigion, Nafpaktos and other regional centers.",
+            el: "Συχνά δρομολόγια ΚΤΕΛ συνδέουν Αθήνα (σταθμός Κηφισού) με Πάτρα σε 2.5\u20133 ώρες.",
+          },
+        },
+        {
+          title: {
+            en: "By ferry from Ionian Islands & Italy",
+            el: "Με πλοίο από Ιόνια νησιά & Ιταλία",
+          },
+          text: {
+            en: "Patras is a major ferry hub. Regular services from Kefalonia, Ithaca and Zakynthos connect the city to the Ionian Islands. International ferry lines connect Patras directly with Bari, Brindisi, Ancona and Venice.",
+            el: "Η Πάτρα είναι μεγάλο λιμάνι. Τακτικά δρομολόγια από Κεφαλονιά, Ιθάκη και Ζάκυνθο.",
+          },
+        },
+      ],
+    },
+    {
+      title: {
+        en: "Top attractions in the city",
+        el: "Top αξιοθέατα στην πόλη",
+      },
+      layout: "numbered",
+      items: [
+        {
+          title: {
+            en: "Castle of Patras",
+            el: "Κάστρο της Πάτρας",
+          },
+          text: {
+            en: "The Byzantine castle built in the 6th century on the hill above the old town is the city\u2019s most commanding landmark. The walls, towers and interior gardens are well preserved, and the view from the ramparts — over the city, the gulf and the Rio\u2013Antirrio bridge — is the finest in Patras. Secret: Come in the late afternoon as the sun moves toward the western hills across the gulf. The light on the water at that hour is exceptional.",
+            el: "Το βυζαντινό κάστρο χτισμένο τον 6ο αιώνα στο λόφο πάνω από την παλιά πόλη είναι το πιο εντυπωσιακό ορόσημο της πόλης.",
+          },
+        },
+        {
+          title: {
+            en: "The Old Town & Psila Alonia",
+            el: "Παλιά Πόλη & Ψηλά Αλώνια",
+          },
+          text: {
+            en: "The hillside neighbourhood of the old town, with its neoclassical mansions, steep staircase streets, bougainvillea-draped facades and hidden squares, is where Patras keeps its architectural identity. Psila Alonia square, with its panoramic view and outdoor cafes, is the social heart of this part of the city.",
+            el: "Η γειτονιά της παλιάς πόλης με νεοκλασικά αρχοντικά, απότομες σκάλες και κρυμμένες πλατείες.",
+          },
+        },
+        {
+          title: {
+            en: "Agios Andreas Cathedral",
+            el: "Καθεδρικός Ναός Αγίου Ανδρέα",
+          },
+          text: {
+            en: "The largest Orthodox church in Greece and one of the most important in Eastern Orthodoxy — the Cathedral of Saint Andrew houses the skull relic of Saint Andrew the Apostle, the patron saint of Patras. The cathedral\u2019s scale is genuinely impressive; its setting at the western end of the seafront makes it a natural starting point for a city walk.",
+            el: "Η μεγαλύτερη ορθόδοξη εκκλησία στην Ελλάδα. Φιλοξενεί το κρανίο του Αγίου Ανδρέα.",
+          },
+        },
+        {
+          title: {
+            en: "Roman Odeum of Patras",
+            el: "Ρωμαϊκό Ωδείο Πάτρας",
+          },
+          text: {
+            en: "An intact Roman-era theatre built in the 1st century AD and still used for summer performances. The seating is original stone; the stage backdrop looks out over the city. The Archaeological Museum of Patras nearby holds finds from throughout Achaia.",
+            el: "Ένα άθικτο ρωμαϊκό θέατρο του 1ου αιώνα που χρησιμοποιείται ακόμα για καλοκαιρινές παραστάσεις.",
+          },
+        },
+        {
+          title: {
+            en: "Rio\u2013Antirrio Bridge",
+            el: "Γέφυρα Ρίου\u2013Αντιρρίου",
+          },
+          text: {
+            en: "The Charilaos Trikoupis Bridge connecting the Peloponnese to central Greece is 2.8 kilometres long and one of the major engineering achievements of recent European infrastructure. The view of the bridge from the waterfront of Rio village at sunset is one of the more striking images in the region.",
+            el: "Η γέφυρα Χαρίλαος Τρικούπης που συνδέει την Πελοπόννησο με την κεντρική Ελλάδα είναι μήκους 2.8 χιλιομέτρων.",
+          },
+        },
+        {
+          title: {
+            en: "Patras Carnival Museum & Archive",
+            el: "Μουσείο Καρναβαλιού Πάτρας",
+          },
+          text: {
+            en: "Outside Carnival season, the city\u2019s Carnival heritage — costumes, historical floats, archives, photographs — is preserved and displayed in the dedicated museum. The craftsmanship of the satirical floats, built over months by dedicated groups, is remarkable up close.",
+            el: "Εκτός εποχής Καρναβαλιού, η κληρονομιά του Καρναβαλιού εκτίθεται στο ειδικό μουσείο.",
+          },
+        },
+      ],
+    },
+    {
+      title: {
+        en: "Where to Stay: A Quick Orientation",
+        el: "Πού να μείνεις: Μια γρήγορη ματιά",
+      },
+      layout: "list",
+      alert: {
+        en: "Patras has a broad range of accommodation — from business-class city hotels to smaller boutique stays — at prices that remain reasonable relative to the major island destinations.",
+        el: "Η Πάτρα έχει μεγάλη γκάμα καταλυμάτων — από business ξενοδοχεία έως μικρές boutique επιλογές.",
+      },
+      items: [
+        {
+          title: {
+            en: "Byzantine Hotel — traditional character near the castle",
+            el: "Byzantine Hotel — παραδοσιακός χαρακτήρας κοντά στο κάστρο",
+          },
+          text: {
+            en: "Offers a quieter, more traditional character in the historic neighbourhood near the castle.",
+            el: "Προσφέρει έναν πιο ήσυχο, παραδοσιακό χαρακτήρα στην ιστορική γειτονιά.",
+          },
+        },
+        {
+          title: {
+            en: "Porto Rio Hotel & Casino — modern comfort at Rio",
+            el: "Porto Rio Hotel & Casino — σύγχρονη άνεση στο Ρίο",
+          },
+          text: {
+            en: "Seafront position at Rio (6km from the city centre) with a large pool complex and direct access to the beach. Popular with both business and leisure travelers.",
+            el: "Παραλιακή θέση στο Ρίο (6χλμ από το κέντρο) με μεγάλο συγκρότημα πισίνας.",
+          },
+        },
+        {
+          title: {
+            en: "Europa Hotel Olympia — views over the ancient site",
+            el: "Europa Hotel Olympia — θέα στον αρχαιολογικό χώρο",
+          },
+          text: {
+            en: "Sits on the hill above Ancient Olympia with views over the valley.",
+            el: "Βρίσκεται στο λόφο πάνω από την Αρχαία Ολυμπία με θέα στην κοιλάδα.",
+          },
+        },
+        {
+          title: {
+            en: "Hotel Olympia Palace — good value in Olympia village",
+            el: "Hotel Olympia Palace — καλή αξία στο χωριό της Ολυμπίας",
+          },
+          text: {
+            en: "Offers good value accommodation in the village centre of Olympia.",
+            el: "Προσφέρει διαμονή καλής αξίας στο κέντρο του χωριού της Ολυμπίας.",
+          },
+        },
+        {
+          title: {
+            en: "Poseidon Hotel Aigio — coastal base on Aigialeia",
+            el: "Poseidon Hotel Aigio — παραλιακή βάση στην Αιγιάλεια",
+          },
+          text: {
+            en: "Along the Aigialeia coast, suits travelers who want a coastal base for beach days combined with day trips to Patras and the wider region.",
+            el: "Κατά μήκος της ακτής της Αιγιάλειας, ιδανικό για παραλιακή βάση.",
+          },
+        },
+      ],
+    },
+    {
+      title: {
+        en: "Practical Tips",
+        el: "Πρακτικές συμβουλές",
+      },
+      layout: "list",
+      items: [
+        {
+          title: {
+            en: "Getting around the region",
+            el: "Μετακινήσεις στην περιοχή",
+          },
+          text: {
+            en: "A rental car is strongly recommended for anyone planning to explore the wider region. Patras is well-placed as a hub but the dispersed nature of the sites means that combining more than one in a day without a car is difficult.",
+            el: "Η ενοικίαση αυτοκινήτου συνιστάται ανεπιφύλακτα για όσους σχεδιάζουν να εξερευνήσουν την ευρύτερη περιοχή.",
+          },
+        },
+        {
+          title: {
+            en: "The Rio\u2013Antirrio Bridge",
+            el: "Η γέφυρα Ρίου\u2013Αντιρρίου",
+          },
+          text: {
+            en: "The bridge toll applies in both directions. For day trips to Nafpaktos, Delphi and Messolonghi, crossing it is unavoidable and quick.",
+            el: "Η διόδια ισχύει και για τις δύο κατευθύνσεις.",
+          },
+        },
+        {
+          title: {
+            en: "Carnival dates and booking",
+            el: "Ημερομηνίες Καρναβαλιού και κρατήσεις",
+          },
+          text: {
+            en: "The Patras Carnival dates change annually, depending on Orthodox Easter. Hotels in the city book out 3\u20136 months in advance for Carnival weekend. The Grand Parade takes place on the Sunday before Clean Monday.",
+            el: "Οι ημερομηνίες του Καρναβαλιού αλλάζουν ετησίως ανάλογα με το Ορθόδοξο Πάσχα.",
+          },
+        },
+        {
+          title: {
+            en: "Visiting Ancient Olympia",
+            el: "Επίσκεψη στην Αρχαία Ολυμπία",
+          },
+          text: {
+            en: "The site opens at 8am. July and August visits should begin at opening time. The Archaeological Museum requires separate time; allow a full half-day for site and museum together.",
+            el: "Ο χώρος ανοίγει στις 8πμ. Οι επισκέψεις Ιουλίου και Αυγούστου πρέπει να ξεκινούν από την ώρα ανοίγματος.",
+          },
+        },
+      ],
+    },
+    {
+      title: {
+        en: "FAQ",
+        el: "Συχνές Ερωτήσεις",
+      },
+      layout: "faq",
+      items: [
+        {
+          title: {
+            en: "How many days should I spend in Patras?",
+            el: "Πόσες μέρες πρέπει να μείνω στην Πάτρα;",
+          },
+          text: {
+            en: "Two nights in the city allows you to see Patras itself properly. A stay of 4\u20135 nights turns it into a regional base and allows day trips to Olympia, Delphi or Kalavrita, a coastal day on Aigialeia or Ilia, and a visit to Nafpaktos or Messolonghi. A full week covers all of the above comfortably.",
+            el: "Δύο βράδια στην πόλη σου επιτρέπουν να δεις σωστά την Πάτρα. 4\u20135 βράδια τη μετατρέπουν σε περιφερειακή βάση.",
+          },
+        },
+        {
+          title: {
+            en: "Is Patras worth visiting outside Carnival season?",
+            el: "Αξίζει η Πάτρα εκτός εποχής Καρναβαλιού;",
+          },
+          text: {
+            en: "Completely. The city has its own character, the archaeological sites are excellent year-round, and the regional day trips are the main reason to use Patras as a base.",
+            el: "Απόλυτα. Η πόλη έχει τον δικό της χαρακτήρα, οι αρχαιολογικοί χώροι είναι εξαιρετικοί όλο τον χρόνο.",
+          },
+        },
+        {
+          title: {
+            en: "Can I visit Ancient Olympia as a day trip from Patras?",
+            el: "Μπορώ να επισκεφθώ την Αρχαία Ολυμπία ως ημερήσια εκδρομή από την Πάτρα;",
+          },
+          text: {
+            en: "Yes, comfortably. The drive is approximately 1 hour 15 minutes via the E55 motorway. Allow a full day for the site and museum.",
+            el: "Ναι, άνετα. Η διαδρομή είναι περίπου 1 ώρα 15 λεπτά.",
+          },
+        },
+        {
+          title: {
+            en: "Can I visit Delphi as a day trip from Patras?",
+            el: "Μπορώ να επισκεφθώ τους Δελφούς ως ημερήσια εκδρομή;",
+          },
+          text: {
+            en: "Yes, via the Rio\u2013Antirrio bridge. Allow approximately 2 hours each way; arrive at the site at opening time to avoid the heat and the tour groups.",
+            el: "Ναι, μέσω της γέφυρας Ρίου\u2013Αντιρρίου. Υπολογίστε περίπου 2 ώρες για κάθε διαδρομή.",
+          },
+        },
+        {
+          title: {
+            en: "Is the Kalavrita rack railway operating?",
+            el: "Λειτουργεί ο οδοντωτός σιδηρόδρομος Καλαβρύτων;",
+          },
+          text: {
+            en: "The Odontotos rack railway has been intermittently closed for maintenance works in recent years. Check the current operating status before planning a visit. When operating, it is one of the most spectacular short railway experiences in Greece.",
+            el: "Ο οδοντωτός έχει διακοπεί περιστασιακά για έργα συντήρησης τα τελευταία χρόνια.",
+          },
+        },
+        {
+          title: {
+            en: "What is avgotaraho and where can I buy it?",
+            el: "Τι είναι το αυγοτάραχο και πού μπορώ να το αγοράσω;",
+          },
+          text: {
+            en: "Avgotaraho is a cured mullet roe produced from grey mullet caught in the Messolonghi Lagoon. It is one of Greece\u2019s great food specialties. The finest versions come directly from producers in Messolonghi.",
+            el: "Το αυγοτάραχο είναι αυγό κεφάλου επεξεργασμένο από κέφαλο της λιμνοθάλασσας Μεσολογγίου.",
+          },
+        },
+        {
+          title: {
+            en: "Is Patras family-friendly?",
+            el: "Είναι η Πάτρα κατάλληλη για οικογένειες;",
+          },
+          text: {
+            en: "Yes. The city has good infrastructure, a long safe waterfront, beaches in easy reach, and the proximity of Ancient Olympia.",
+            el: "Ναι. Η πόλη έχει καλές υποδομές, μεγάλο ασφαλές παραλιακό μέτωπο και κοντινές παραλίες.",
+          },
+        },
+      ],
+    },
+  ],
 };
