@@ -2,10 +2,14 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const COOKIE_CONSENT_KEY = "gogreecenow_cookie_consent";
 
 export default function CookieConsent() {
+  const pathname = usePathname();
+  const lang = pathname.startsWith("/el") ? "el" : "en";
+
   const [show, setShow] = useState(() => {
     if (typeof window === "undefined") return false;
     return !localStorage.getItem(COOKIE_CONSENT_KEY);
@@ -30,7 +34,7 @@ export default function CookieConsent() {
           <p className="text-sm leading-relaxed text-slate-600">
             We use cookies to improve your experience on GoGreeceNow. By continuing, you accept our use of cookies.{" "}
             <Link
-              href="/privacy-policy"
+              href={`/${lang}/privacy-policy`}
               className="underline text-indigo-600 hover:text-indigo-800"
             >
               Learn more
