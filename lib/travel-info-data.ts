@@ -919,6 +919,91 @@ export const travelInfoGuides: GuideCard[] = [
         }
       }
     ]
+  },
+  {
+    slug: "greece-travel-budget",
+    title: {
+      en: "How Much Does a Trip to Greece Cost? A Real Budget Guide",
+      el: "Πόσο Κοστίζει ένα Ταξίδι στην Ελλάδα; Πραγματικός Οδηγός"
+    },
+    description: {
+      en: "Find out how much a trip to Greece really costs — daily budgets, accommodation, food, ferries and island-by-island cost breakdown for every travel style.",
+      el: "Μάθετε πόσο κοστίζει πραγματικά ένα ταξίδι στην Ελλάδα — ημερήσιοι προϋπολογισμοί, διαμονή, φαγητό, ακτοπλοΐα και ανάλυση κόστους ανά νησί."
+    },
+    image: "/images/greece-travel-budget.webp",
+    overview: {
+      en: "Greece has a reputation for being expensive, largely because Santorini and Mykonos dominate its image. The reality is more nuanced. Greece can be done on a tight budget, a comfortable mid-range spend, or a full luxury experience — and the cost of your trip depends more on your choices than on Greece itself. This guide breaks down real, current costs across accommodation, food, transport and experiences so you can plan your trip with honest numbers in hand.",
+      el: "Η Ελλάδα έχει τη φήμη ακριβού προορισμού, κυρίως λόγω Σαντορίνης και Μυκόνου. Η πραγματικότητα είναι πιο σύνθετη. Μπορείτε να ταξιδέψετε με χαμηλό, μεσαίο ή υψηλό προϋπολογισμό — το κόστος εξαρτάται περισσότερο από τις επιλογές σας παρά από την ίδια την Ελλάδα."
+    },
+    points: {
+      en: [
+        "Budget travellers can manage well on €60–€90 per day per person outside peak season",
+        "Mid-range travel is very comfortable at €120–€200 per day per person",
+        "Santorini and Mykonos carry a premium; Crete, Corfu and the Ionians offer better value",
+        "Ferry costs are manageable — book early for summer peak routes",
+        "Shoulder season (May–June, September) delivers the same experience for significantly less",
+        "Street food, local tavernas and free beaches make day-to-day spending very controllable"
+      ],
+      el: [
+        "Ταξιδιώτες με χαμηλό budget τα βγάζουν πέρα με €60–€90/ημέρα εκτός υψηλής σεζόν",
+        "Μεσαίος προϋπολογισμός €120–€200/ημέρα είναι πολύ άνετος",
+        "Σαντορίνη και Μύκονος είναι ακριβές· Κρήτη, Κέρκυρα και Ιόνιο προσφέρουν καλύτερη αξία",
+        "Τα ακτοπλοϊκά εισιτήρια είναι διαχειρίσιμα — κλείστε νωρίς για καλοκαίρι",
+        "Μάιος–Ιούνιος και Σεπτέμβριος προσφέρουν την ίδια εμπειρία φθηνότερα",
+        "Street food, ντόπιες ταβέρνες και δωρεάν παραλίες κρατούν το κόστος χαμηλά"
+      ]
+    },
+    sections: [
+      {
+        title: { en: "1. Daily Budget Ranges: What to Expect", el: "1. Ημερήσιος Προϋπολογισμός" },
+        content: {
+          en: "Before diving into specific costs, it helps to understand the three main travel styles and what they typically look like in Greece:\n\nBudget traveller (€60–€90 per person per day): This tier works best outside of peak July–August, on less commercialised islands and if you are comfortable with simpler accommodation, local tavernas and public transport. Destinations like Naxos, Lesvos, Ikaria, Samos and parts of Crete offer genuinely affordable experiences. You can eat very well on a Greek budget — a full meal at a local taverna with wine rarely exceeds €15–18 per person.\n\nMid-range traveller (€120–€220 per person per day): This is the most common travel style for visitors to Greece. It covers comfortable hotels or boutique stays in good locations, a mix of restaurant meals and tavernas, car rental on islands where it makes sense, and the occasional paid experience or excursion. Most popular islands — including Corfu, Crete, Rhodes and Paros — are very manageable at this level.\n\nLuxury traveller (€300–€600+ per person per day): Santorini and Mykonos in high season are natural luxury destinations, but this tier can apply anywhere if you choose cave hotels, infinity-pool suites, private boat charters and tasting menus. Greece has grown significantly in luxury offering over the last decade, particularly in the Ionian islands, Halkidiki and the Cyclades.",
+          el: "Πριν δούμε τα συγκεκριμένα κόστη, είναι χρήσιμο να κατανοήσετε τα τρία βασικά στυλ ταξιδιού:\n\nΧαμηλό budget (€60–€90/άτομο/ημέρα): Ιδανικό εκτός Ιουλίου–Αυγούστου, σε λιγότερο εμπορικά νησιά. Νάξος, Λέσβος, Ικαρία, Σάμος και Κρήτη προσφέρουν προσιτές εμπειρίες.\n\nΜεσαίο budget (€120–€220/άτομο/ημέρα): Το πιο συνηθισμένο στυλ. Καλύπτει άνετα ξενοδοχεία, εστιατόρια, ενοικίαση αυτοκινήτου και περιστασιακές εκδρομές.\n\nΠολυτελές ταξίδι (€300–€600+/άτομο/ημέρα): Σαντορίνη και Μύκονος στην υψηλή σεζόν είναι φυσικοί πολυτελείς προορισμοί."
+        }
+      },
+      {
+        title: { en: "2. Accommodation Costs in Greece", el: "2. Κόστος Διαμονής" },
+        content: {
+          en: "Accommodation is where your budget swings most dramatically depending on destination and season.\n\nBudget options (€25–€70 per night): Guesthouses, family-run rooms, simpler hotels away from main tourist centres, and some mid-range options in shoulder season. On islands like Naxos, Paros, Lesvos and parts of Corfu, you can find clean, well-located rooms in this range even in summer.\n\nMid-range hotels (€80–€180 per night): This bracket covers comfortable hotels with pools, boutique guesthouses and well-reviewed 3–4 star properties. Most islands have solid choices in this range, especially if you book early for July and August.\n\nLuxury and boutique stays (€200–€800+ per night): Santorini's caldera-view hotels set the benchmark. A sea-view suite in Oia during high season can reach €600–€900 per night. Mykonos follows a similar pattern. However, the same level of boutique luxury in Kefalonia, Paros or Samos costs significantly less — often half the price.\n\nPractical tip: Prices drop substantially in shoulder season (May–June and September–October). A hotel that costs €250 in August often runs at €120–€140 in September with identical service and better weather for sightseeing.",
+          el: "Η διαμονή είναι το σημείο όπου το budget σας μεταβάλλεται πιο δραματικά.\n\nΟικονομικές επιλογές (€25–€70/βράδυ): Ξενώνες, οικογενειακά δωμάτια και απλά ξενοδοχεία. Σε Νάξο, Πάρο, Λέσβο και Κρήτη υπάρχουν καθαρά δωμάτια ακόμα και το καλοκαίρι.\n\nΜεσαία κατηγορία (€80–€180/βράδυ): Άνετα ξενοδοχεία με πισίνες και boutique επιλογές 3–4 αστέρων.\n\nΠολυτέλεια (€200–€800+/βράδυ): Τα ξενοδοχεία με θέα καλδέρας στη Σαντορίνη είναι τα πιο ακριβά. Μια σουίτα στην Οία μπορεί να φτάσει €600–€900 τη βραδιά.\n\nΣυμβουλή: Τιμές πολύ χαμηλότερες τον Μάιο–Ιούνιο και Σεπτέμβριο."
+        }
+      },
+      {
+        title: { en: "3. Food and Drink Costs", el: "3. Κόστος Φαγητού και Ποτού" },
+        content: {
+          en: "Greek food is one of the great pleasures of visiting the country, and it does not have to be expensive.\n\nLocal tavernas: A full meal — mezedes, grilled fish or meat, salad, bread and local wine or beer — typically costs €14–€20 per person. This is the backbone of eating in Greece, and the quality is often exceptional.\n\nTourist-facing restaurants in main areas: In Oia (Santorini), Little Venice (Mykonos) or Plaka (Athens), restaurant prices climb significantly. A pasta dish can reach €18–€22, and a grilled sea bass can cost €28–€38.\n\nStreet food and bakeries: A fresh tiropita or spanakopita costs €1.50–€2.50. Souvlaki wraps run €2.50–€4. Fresh bread, yoghurt and honey from a market makes for an excellent cheap breakfast.\n\nCoffee culture: A frappe or freddo espresso at a local café costs €2–€3.50. Avoid ordering coffee at hotel pools where the same drink costs €5–€8.",
+          el: "Το ελληνικό φαγητό είναι μία από τις μεγάλες απολαύσεις και δεν χρειάζεται να είναι ακριβό.\n\nΤοπικές ταβέρνες: Ένα πλήρες γεύμα — μεζέδες, ψάρι ή κρέας, σαλάτα και κρασί — συνήθως €14–€20/άτομο.\n\nΤουριστικά εστιατόρια: Στην Οία, τη Μύκονο ή την Πλάκα, οι τιμές ανεβαίνουν σημαντικά.\n\nStreet food: Τυρόπιτα ή σπανακόπιτα €1.50–€2.50. Σουβλάκι €2.50–€4.\n\nΚαφές: Freddo ή frappe σε τοπικό καφενείο €2–€3.50."
+        }
+      },
+      {
+        title: { en: "4. Ferry and Transport Costs", el: "4. Μετακινήσεις και Ακτοπλοΐα" },
+        content: {
+          en: "Ferries are a central part of travelling around Greece, and their cost varies enormously depending on the route, company, season and how far in advance you book.\n\nShort Aegean routes (Piraeus to Cyclades): A basic deck-class ferry ticket to Mykonos or Santorini from Piraeus costs €35–€50 one way. Fast ferries on the same routes cost €55–€80 one way.\n\nLonger routes (Athens to Crete, Rhodes, Lesvos): Overnight ferries cost €35–€55 for a basic seat. A cabin adds €30–€60 per cabin per journey.\n\nInter-island ferries: Shorter hops between neighbouring islands — Paros to Naxos, Mykonos to Delos — often cost €8–€18 per person.\n\nDomestic flights: Olympic Air and Sky Express connect Athens with most island airports. Prices vary from €35–€120 one way.\n\nCar rental: Renting a small car costs €30–€60 per day in shoulder season and €50–€90 in peak summer.",
+          el: "Τα πλοία είναι κεντρικό μέρος του ταξιδιού στην Ελλάδα.\n\nΜικρές διαδρομές Αιγαίου: Πειραιάς προς Μύκονο ή Σαντορίνη €35–€50 απλή μετάβαση. Ταχύπλοα €55–€80.\n\nΜεγάλες διαδρομές: Αθήνα προς Κρήτη, Ρόδο ή Λέσβο €35–€55 για απλή θέση. Καμπίνα +€30–€60.\n\nΜικρές αποστάσεις: Πάρος–Νάξος, Μύκονος–Δήλος €8–€18.\n\nΕσωτερικές πτήσεις: €35–€120 απλή μετάβαση.\n\nΕνοικίαση αυτοκινήτου: €30–€60/ημέρα εκτός σεζόν, €50–€90 τον Ιούλιο–Αύγουστο."
+        }
+      },
+      {
+        title: { en: "5. Experiences, Attractions and Activities", el: "5. Εμπειρίες και Δραστηριότητες" },
+        content: {
+          en: "Most of Greece's best experiences are either free or modestly priced.\n\nThe Acropolis (Athens): €20 full price. One of the world's great monuments, worth every cent.\nArchaeological Museum of Athens: €12. One of the world's finest collections of ancient Greek artefacts.\n\nSailing and boat trips: Day boat trips around islands typically cost €40–€90 per person.\nBeaches: Almost entirely free. Organised beach clubs with sunbeds at Mykonos and Santorini can reach €30–€80 per person per day.\n\nGuided tours: Half-day and full-day guided tours in Athens, Delphi or Olympia typically run €25–€60 per person. Sunset wine tours in Santorini, food tours in Athens and kayak tours in Kefalonia are all in the €45–€90 range.",
+          el: "Οι περισσότερες από τις καλύτερες εμπειρίες της Ελλάδας είναι δωρεάν ή οικονομικές.\n\nΑκρόπολη: €20. Εθνικό Αρχαιολογικό Μουσείο: €12.\n\nΕκδρομές με σκάφος: €40–€90/άτομο.\nΠαραλίες: Σχεδόν όλες δωρεάν. Οργανωμένες σε Μύκονο–Σαντορίνη €30–€80.\n\nΞεναγήσεις: Ημερήσιες €25–€60/άτομο. Οινογνωσία, food tours, kayak: €45–€90."
+        }
+      },
+      {
+        title: { en: "6. Island-by-Island Cost Comparison", el: "6. Σύγκριση Κόστους ανά Νησί" },
+        content: {
+          en: "Not all Greek islands cost the same. Here is a practical snapshot:\n\nSantorini: The most expensive island overall. Budget for €200–€400+ per day per couple in high season.\nMykonos: Comparable to Santorini in hotel costs, beach clubs and nightlife add significantly to the daily spend.\nCrete: Genuinely flexible across all budgets. Excellent value for mid-range.\nCorfu: Very affordable outside of the main resort strip. Excellent value for families.\nParos / Naxos: Authentically priced Cycladic islands. Strong mid-range value.\nKefalonia / Zakynthos / Lefkada: Ionian islands offer strong value relative to their natural beauty.\nLesvos / Samos / Ikaria: Among the most affordable islands in Greece with excellent food and minimal tourist mark-up.",
+          el: "Δεν κοστίζουν όλα τα νησιά το ίδιο.\n\nΣαντορίνη: Το ακριβότερο νησί. €200–€400+/ημέρα για ζευγάρι.\nΜύκονος: Παρόμοιο κόστος διαμονής, ακριβά beach clubs.\nΚρήτη: Ευέλικτη για όλα τα budgets.\nΚέρκυρα: Πολύ προσιτή εκτός τουριστικών ζωνών.\nΠάρος/Νάξος: Καλή σχέση ποιότητας-τιμής.\nΚεφαλονιά/Ζάκυνθος/Λευκάδα: Ισχυρή αξία σε σχέση με την ομορφιά τους.\nΛέσβος/Σάμος/Ικαρία: Από τα πιο οικονομικά νησιά."
+        }
+      },
+      {
+        title: { en: "7. Tips to Save Money on a Greece Trip", el: "7. Συμβουλές για Οικονομία" },
+        content: {
+          en: "Planning and timing are the two most powerful tools for managing your Greece travel budget.\n\nTravel in shoulder season. May, June and September offer lower prices, calmer weather for sightseeing, and a more relaxed atmosphere.\n\nBook ferries early for peak summer. High-demand sailings sell out or become significantly more expensive if booked at the last minute.\n\nEat where locals eat. Walk two or three streets back from any harbour or main beach and you will typically find local tavernas at 30–40% lower prices.\n\nConsider a basecamp strategy. Staying in one location and making day trips costs less than moving hotels every two days.\n\nUse Athens wisely. Athens is one of Europe's more affordable capitals. Staying a night or two in Athens as part of your island trip keeps your accommodation average down.",
+          el: "Ο προγραμματισμός και η εποχή είναι τα πιο ισχυρά εργαλεία για τον προϋπολογισμό σας.\n\nΤαξιδέψτε σε ενδιάμεση σεζόν. Μάιος, Ιούνιος και Σεπτέμβριος προσφέρουν χαμηλότερες τιμές.\n\nΚλείστε ακτοπλοϊκά νωρίς για το καλοκαίρι.\n\nΤρώτε εκεί που τρώνε οι ντόπιοι — οι ταβέρνες λίγο πιο μέσα κοστίζουν 30–40% λιγότερο.\n\nΣτρατηγική βάσης: Μείνετε σε ένα μέρος και κάντε ημερήσιες εκδρομές.\n\nΑξιοποιήστε την Αθήνα — είναι από τις πιο οικονομικές ευρωπαϊκές πρωτεύουσες."
+        }
+      }
+    ]
   }
 ];
 
