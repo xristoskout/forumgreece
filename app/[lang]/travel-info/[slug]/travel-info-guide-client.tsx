@@ -1,5 +1,6 @@
 "use client";
 
+import { Fragment } from "react";
 import Link from "next/link";
 import SiteHeader from "../../../../components/site-header";
 import { experienceBusinesses } from "../../../../lib/experiences";
@@ -38,6 +39,16 @@ export default function TravelInfoGuideClient({ lang, slug, item }: TravelInfoGu
     overview: { en: "Overview", el: "Επισκόπηση" },
     highlights: { en: "Key takeaways", el: "Βασικά σημεία" },
     back: { en: "← Back to Travel Hub", el: "← Επιστροφή στις Пληροφορίες" },
+  };
+
+  const renderTextWithLinks = (text: string) => {
+    const parts = text.split(/(https?:\/\/[^\s]+)/g);
+    return parts.map((part, i) => {
+      if (/^https?:\/\//i.test(part)) {
+        return <a key={i} href={part} target="_blank" rel="noopener noreferrer" className="underline text-indigo-600 hover:text-indigo-800">{part}</a>;
+      }
+      return <Fragment key={i}>{part}</Fragment>;
+    });
   };
 
   const renderBusinesses = () => {
@@ -162,7 +173,7 @@ export default function TravelInfoGuideClient({ lang, slug, item }: TravelInfoGu
               <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 opacity-50 group-hover:opacity-80 transition-opacity duration-1000"></div>
               <h2 className="text-sm font-bold uppercase tracking-[0.25em] text-indigo-600 mb-6 relative z-10">{t.overview[lang]}</h2>
               <p className="text-lg md:text-xl leading-relaxed text-slate-700 relative z-10">
-                {item.overview[lang]}
+                {renderTextWithLinks(item.overview[lang])}
               </p>
             </article>
 
@@ -178,7 +189,7 @@ export default function TravelInfoGuideClient({ lang, slug, item }: TravelInfoGu
                 </div>
                 <div className="pl-16">
                   <p className="text-lg leading-relaxed text-slate-600">
-                    {section.content[lang]}
+                    {renderTextWithLinks(section.content[lang])}
                   </p>
                 </div>
               </div>
