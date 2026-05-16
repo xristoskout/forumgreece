@@ -1082,7 +1082,7 @@ practicalInfo: {
 },
   {
     slug: "taxi-express-patras",
-    landingSlug: "getting-around-greece",
+    landingSlug: "patras",
     name: "Ταξί Express Πάτρας",
     category: {
       en: "Taxi & Transfers",
