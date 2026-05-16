@@ -2067,6 +2067,101 @@ export const hotels: HotelCard[] = [
         el: "Βρείτε τα καλύτερα μέρη για διαμονή στην Πάτμο — από το λιμάνι της Σκάλας και τη Χώρα UNESCO έως τον Γρικό και τις απομονωμένες παραλίες."
       }
     },
+  },
+  {
+    slug: "patras",
+    name: "Where to Stay in Patras & the Region",
+    place: "Western Greece & Peloponnese",
+    info: {
+      en: "Find the best areas and hotels in Patras and the wider region — from the city seafront and old town to Rio, the Aigialeia coast and Ancient Olympia village. A complete guide to where to stay in Patras.",
+      el: "Βρείτε τις καλύτερες περιοχές και ξενοδοχεία στην Πάτρα και την ευρύτερη περιοχή — από το παραλιακό μέτωπο και την παλιά πόλη έως το Ρίο, την Αιγιάλεια και την Αρχαία Ολυμπία."
+    },
+    image: "/images/patras.webp",
+    badge: "Featured stay",
+    overview: {
+      en: "Where to Stay: A Quick Orientation. Patras has a broad range of accommodation — from business-class city hotels to smaller boutique stays — at prices that remain reasonable relative to the major island destinations.",
+      el: "Πού να Μείνετε: Μια γρήγορη ματιά. Η Πάτρα έχει μεγάλη ποικιλία καταλυμάτων — από business-class ξενοδοχεία έως μικρότερες boutique επιλογές."
+    },
+    description: {
+      en: "Patras is not a single destination — it is a hub. Where you base yourself determines what kind of trip you have: a city experience centred on the Carnival, the castle and the seafront; a coastal retreat along the Aigialeia; a deep immersion in ancient history at Olympia; or a flexible base that lets you reach Delphi, Nafpaktos and Kalavrita on consecutive days without retracing your steps.\n\nThe areas below cover the full range — from the energy of the city centre and the sea calm of Rio to the quiet of an Olympia village taverna at the end of a long day at the site.\n\nQuick Area Guide\n\nPatras City Centre & Seafront — Best for: culture, Carnival, city life, day trips in all directions\nPatras Old Town — Best for: atmosphere, castle access, neoclassical character, quieter feel\nRio — Best for: beach, families, easy ferry access, view of the bridge\nAigialeia Coast — Best for: sea and relaxation combined with regional exploration\nAncient Olympia Village — Best for: archaeology-first travelers, morning site access\nNafpaktos — Best for: those exploring central Greece who want a base closer to Delphi and Messolonghi",
+      el: "Η Πάτρα δεν είναι ένας μόνο προορισμός — είναι ένας κόμβος. Η περιοχή που θα επιλέξετε καθορίζει το είδος του ταξιδιού σας: αστική εμπειρία με Carnival, κάστρο και παραλιακό μέτωπο· παράκτια απόδραση στην Αιγιάλεια· εμβάθυνση στην αρχαία ιστορία στην Ολυμπία· ή μια ευέλικτη βάση για Δελφούς, Ναύπακτο και Καλάβρυτα.\n\nΟι περιοχές καλύπτουν όλο το φάσμα — από την ενέργεια του κέντρου και την ηρεμία του Ρίου έως την ησυχία της Ολυμπίας.\n\nΓρήγορος Οδηγός Περιοχών\n\nΚέντρο & Παραλιακό Μέτωπο — Ιδανικό για: πολιτισμό, Carnival, αστική ζωή, ημερήσιες εκδρομές\nΠαλιά Πόλη — Ιδανικό για: ατμόσφαιρα, κάστρο, νεοκλασικό χαρακτήρα, ησυχία\nΡίο — Ιδανικό για: παραλία, οικογένειες, εύκολη πρόσβαση σε πλοία και γέφυρα\nΑιγιάλεια — Ιδανικό για: θάλασσα και χαλάρωση\nΑρχαία Ολυμπία — Ιδανικό για: αρχαιολογία, πρωινή πρόσβαση στον χώρο\nΝαύπακτος — Ιδανικό για: Δελφούς και κεντρική Ελλάδα"
+    },
+    features: {
+      en: ["Patras City Centre & Seafront", "Patras Old Town & Upper City", "Rio Beach & Bridge Area", "Aigialeia Coast", "Ancient Olympia Village", "Nafpaktos"],
+      el: ["Κέντρο & Παραλιακό Μέτωπο", "Παλιά Πόλη & Άνω Πόλη", "Ρίο — Παραλία & Γέφυρα", "Αιγιάλεια", "Αρχαία Ολυμπία", "Ναύπακτος"]
+    },
+    sections: [
+      {
+        title: { en: "1. Patras City Centre & Seafront", el: "1. Κέντρο & Παραλιακό Μέτωπο Πάτρας" },
+        content: {
+          en: "Best for: City life · Carnival · Day trips · All traveler types\n\nThe city centre and long seafront promenade are the most practical base for anyone whose trip is built around Patras itself — the Carnival, the castle, the Agios Andreas Cathedral, the Roman Odeum, the markets, and the evening volta. From here, every day trip destination is reachable within 1h15–2 hours by car: Olympia, Delphi, Kalavrita, Nafpaktos, Messolonghi, the beaches of Ilia.\n\nThe seafront runs west from the port for several kilometres and is lined with cafes, fish restaurants and hotels. The energy here is genuine urban Greek — not a tourist strip. The mornings are quiet; the evenings are long and social.\n\nThe area is right for you if: you want the widest range of restaurants and cafes at your doorstep, easy access to ferries (for Italy or the Ionian Islands), and the most efficient base for exploring the wider region.\n\nThe area is less suited if: you primarily want beach and quiet — in that case, consider Rio or the Aigialeia coast.\n\nRecommended Stays\n\nByzantine Hotel\nA smaller, more characterful option in the historic part of the city — closer to the castle and the old town neighbourhood. The atmosphere is quieter and more traditional than the seafront hotels, with a neoclassical character that suits the surrounding architecture.\n\nAstir Hotel Patras\nA long-standing seafront option with direct views over the Gulf of Patras. The location on the western end of the waterfront is excellent for the evening promenade. Functional, comfortable, and very well positioned for arrivals by ferry from the Ionian Islands or Italy — the port is minutes away.",
+          el: "Ιδανικό για: Αστική ζωή · Carnival · Ημερήσιες εκδρομές · Όλους τους ταξιδιώτες\n\nΤο κέντρο της πόλης και το μεγάλο παραλιακό μέτωπο είναι η πιο πρακτική βάση. Από εδώ, κάθε προορισμός ημερήσιας εκδρομής είναι προσβάσιμος εντός 1h15–2 ωρών: Ολυμπία, Δελφοί, Καλάβρυτα, Ναύπακτος, Μεσολόγγι, οι παραλίες της Ηλείας.\n\nΠροτεινόμενα Καταλύματα\n\nByzantine Hotel\nΜικρότερη, πιο χαρακτηριστική επιλογή στο ιστορικό τμήμα της πόλης — κοντά στο κάστρο και τη γειτονιά της παλιάς πόλης.\n\nAstir Hotel Patras\nΜια δοκιμασμένη παραλιακή επιλογή με θέα στον Πατραϊκό Κόλπο. Ιδανικό για αφίξεις από τα Ιόνια νησιά ή την Ιταλία — το λιμάνι είναι σε λίγα λεπτά."
+        }
+      },
+      {
+        title: { en: "2. Patras Old Town & Upper City", el: "2. Παλιά Πόλη & Άνω Πόλη" },
+        content: {
+          en: "Best for: Atmosphere · Castle access · Quiet evenings · Character stays\n\nThe hillside neighbourhood of the old town — climbing from the lower city toward the Byzantine castle — is where Patras keeps its architectural soul. Neoclassical mansions, the famous staircase streets, bougainvillea-covered facades and the viewpoint of Psila Alonia square define the atmosphere here. Hotels and guesthouses in this area are fewer and smaller, but the character they offer is the most authentic in the city.\n\nStaying here means waking up close to the castle, being able to walk the staircases in the early morning before the heat builds, and having access to the neighbourhood cafes and restaurants that serve the local residents rather than passing tourists.\n\nThe area is right for you if: you want atmosphere over convenience, and are comfortable with the fact that the city centre and seafront are a 15–20 minute walk or short taxi ride downhill.\n\nRecommended Stays\n\nMaison Grecque Boutique Hotel\nA boutique property in the old town area with carefully restored neoclassical interiors and a design-conscious approach that fits the neighbourhood's architecture. Rooms are individually styled; the common areas preserve the original building's character. The most atmospheric stay in Patras for travelers who prioritize a sense of place over proximity to the seafront.",
+          el: "Ιδανικό για: Ατμόσφαιρα · Πρόσβαση στο κάστρο · Ήσυχα βράδια · Διαμονή με χαρακτήρα\n\nΗ γειτονιά της παλιάς πόλης — που ανεβαίνει από το κέντρο προς το βυζαντινό κάστρο — διατηρεί την αρχιτεκτονική ψυχή της Πάτρας. Νεοκλασικές επαύλεις, περίφημα σκαλοπάτια, μπουκαμβίλιες και η πλατεία Ψηλών Αλωνίων ορίζουν την ατμόσφαιρα.\n\nΠροτεινόμενα Καταλύματα\n\nMaison Grecque Boutique Hotel\nΈνα boutique ξενοδοχείο στην παλιά πόλη με αναστηλωμένους νεοκλασικούς εσωτερικούς χώρους. Η πιο ατμοσφαιρική διαμονή στην Πάτρα."
+        }
+      },
+      {
+        title: { en: "3. Rio — Beach, Bridge & Easy Access", el: "3. Ρίο — Παραλία, Γέφυρα & Εύκολη Πρόσβαση" },
+        content: {
+          en: "Best for: Families · Beach · Seafront · Easy ferry & bridge connections\n\nRio is the coastal village 6 kilometres north-east of Patras city centre, directly beneath the north tower of the Rio–Antirrio bridge — one of the most dramatic views in the region. The village has a beach, a Venetian-era castle of its own (Kastro Rion), a relaxed waterfront lined with fish tavernas, and the most family-friendly accommodation in the wider Patras area.\n\nThe bridge means that central Greece — Nafpaktos, Delphi, Messolonghi — is literally minutes away. And the Ionian Islands ferries that dock slightly further along at the main Patras port are reachable in 10 minutes by car.\n\nThe area is right for you if: you're traveling with children, want a beach at the door, or are combining Patras with Delphi and Nafpaktos and want to minimize driving time on both sides.\n\nRecommended Stays\n\nPorto Rio Hotel & Casino\nThe largest and most complete resort-style property in the greater Patras area. The Porto Rio sits directly on the seafront in Rio with a large outdoor pool complex, private beach access, multiple restaurants and bars, and views of the bridge and the mountains of Aetolia-Acarnania across the water. The casino is on-site; so is a full conference and events facility, making this the largest venue for business travel in the region. For leisure travelers — particularly families — the combination of beach, pool and easy regional access makes it the most versatile option outside the city centre.\n\nAchaia Beach\nIdeally located 4km from the city of Patras with free parking. The Bauhaus building on the beach front offers amazing views of the sea, the Rio bridge and the mountains.",
+          el: "Ιδανικό για: Οικογένειες · Παραλία · Θέα γέφυρας · Εύκολη πρόσβαση\n\nΤο Ρίο είναι το παραλιακό χωριό 6 χιλιόμετρα βορειοανατολικά της Πάτρας, ακριβώς κάτω από τον βόρειο πύργο της γέφυρας Ρίου–Αντιρρίου. Έχει παραλία, βενετσιάνικο κάστρο (Κάστρο Ρίου) και τα πιο οικογενειακά καταλύματα της περιοχής.\n\nΠροτεινόμενα Καταλύματα\n\nPorto Rio Hotel & Casino\nΗ μεγαλύτερη resort-style ιδιοκτησία στην ευρύτερη περιοχή. Θέα στη γέφυρα, πισίνες, ιδιωτική παραλία και καζίνο.\n\nAchaia Beach\nΙδανικά τοποθετημένο 4χλμ από το κέντρο της Πάτρας με δωρεάν parking. Bauhaus κτίριο με εκπληκτική θέα."
+        }
+      },
+      {
+        title: { en: "4. Aigialeia Coast — Sea First, Day Trips Second", el: "4. Αιγιάλεια — Θάλασσα Πρώτα, Εκδρομές Δεύτερα" },
+        content: {
+          en: "Best for: Beach holidays · Coastal relaxation · Driving the Gulf of Corinth\n\nThe Aigialeia coastal zone stretches east from Patras along the southern shore of the Gulf of Corinth — a succession of small resort towns, fishing villages and pebble or sandy beaches backed by the mountains of northern Achaia. Aigio is the main town; Akrata, Derveni and Xylokastro further east offer quieter alternatives.\n\nStaying on the Aigialeia coast suits travelers who want beach days as the primary activity and day trips to Patras, Kalavrita and Nafpaktos as secondary ones. The rack railway to Kalavrita departs from Diakopto, which is directly on this coast — making the excursion particularly easy from an Aigialeia base.\n\nThe water in the gulf is calm and clear; the sea temperature tends to be warmer than the open Ionian. The coast road itself is scenic in the direction of both Patras and Corinth.\n\nThe area is right for you if: beach and swimming come first, and day trips come second. Not ideal as a base for Olympia or Delphi, which add significant extra driving time.\n\nRecommended Stays\n\nPoseidon Hotel Aigio\nThe most comfortable mid-to-upper hotel on the Aigialeia coast, with a good central position in Aigio, the area's main town. Sea-view rooms, a restaurant serving fresh local fish, and easy access to both the beach and the town's waterfront make it the natural reference point for accommodation in this zone.\n\nDelfinia Hotel Akrata\nA beach-front hotel in Akrata — a quieter point on the coast east of Aigio — with direct sea access and a relaxed, family-oriented atmosphere.",
+          el: "Ιδανικό για: Παραλιακές διακοπές · Χαλάρωση · Οδήγηση στον Κορινθιακό\n\nΗ Αιγιάλεια εκτείνεται ανατολικά από την Πάτρα κατά μήκος της νότιας ακτής του Κορινθιακού κόλπου. Το Αίγιο είναι η κύρια πόλη. Ιδανικό για όσους θέλουν παραλία ως κύρια δραστηριότητα.\n\nΠροτεινόμενα Καταλύματα\n\nPoseidon Hotel Aigio\nΤο πιο άνετο ξενοδοχείο στην Αιγιάλεια, με κεντρική θέση στο Αίγιο και θέα στη θάλασσα.\n\nDelfinia Hotel Akrata\nΠαραλιακό ξενοδοχείο στην Ακράτα με οικογενειακή ατμόσφαιρα."
+        }
+      },
+      {
+        title: { en: "5. Ancient Olympia Village — Wake Up at the Ruins", el: "5. Αρχαία Ολυμπία — Ξύπνημα στα Ερείπια" },
+        content: {
+          en: "Best for: Archaeology · Early site access · The Olympics pilgrimage\n\nThe village of Olympia sits immediately adjacent to the archaeological site and museum. Staying here means being able to walk to the gates at opening time — before the tour buses arrive from Athens and Patras — and having the Sacred Precinct and the stadium in near-solitude for the first hour of the day. That hour is one of the most extraordinary experiences available at any ancient site in Greece.\n\nThe village itself is modest but has a good range of hotels at every price level, several decent tavernas, and a quality small-town calm that suits an overnight focused entirely on the ancient world.\n\nThe area is right for you if: Ancient Olympia is the primary reason for the trip and you want maximum time at the site, preferably in the early morning.\n\nRecommended Stays\n\nEuropa Hotel Olympia\nThe most panoramically positioned hotel in the Olympia area, built on the hill above the village with views over the valley of the Alfios river. The terraces and pool area look toward the hills that frame the ancient sanctuary. The morning view from the hotel is a good preparation for what follows.\n\nHotel Olympia Palace\nA well-run, centrally located option in the village with reliable comfort, a pool, and a good base-camp function for a 1–2 night stay at the site. Good value for the quality level.\n\nNeda Hotel\nA smaller, quieter option in the village with an intimate character. The garden and pool area provide a pleasant retreat after a full day at the site and museum.",
+          el: "Ιδανικό για: Αρχαιολογία · Πρωινή πρόσβαση · Προσκύνημα Ολυμπιάδας\n\nΤο χωριό της Ολυμπίας βρίσκεται ακριβώς δίπλα στον αρχαιολογικό χώρο. Η διαμονή εδώ σημαίνει ότι μπορείτε να μπείτε με το άνοιγμα — πριν φτάσουν τα πούλμαν από Αθήνα και Πάτρα.\n\nΠροτεινόμενα Καταλύματα\n\nEuropa Hotel Olympia\nΤο πιο πανοραμικό ξενοδοχείο στην περιοχή, χτισμένο στον λόφο πάνω από το χωριό με θέα στην κοιλάδα του Αλφειού.\n\nHotel Olympia Palace\nΚεντρική επιλογή με πισίνα και καλή σχέση ποιότητας-τιμής.\n\nNeda Hotel\nΜικρότερη, πιο ήσυχη επιλογή με κήπο και πισίνα."
+        }
+      },
+      {
+        title: { en: "6. Nafpaktos — A Base for Central Greece", el: "6. Ναύπακτος — Βάση για Κεντρική Ελλάδα" },
+        content: {
+          en: "Best for: Those exploring Nafpaktos, Delphi & Messolonghi · Venetian harbour atmosphere\n\nNafpaktos is less than an hour from Patras via the Rio–Antirrio bridge and is one of the most beautiful small towns in central Greece. Staying here — rather than in Patras itself — makes sense for travelers who want to spend significant time at Delphi (1 hour away), Messolonghi (30 minutes), and the town itself, while also keeping Patras and the northern Peloponnese within reach.\n\nThe town's Venetian circular harbour, pine-forested castle and relaxed waterfront make it one of the most atmospheric overnight bases in western Greece.\n\nThe area is right for you if: Delphi and Messolonghi are the primary targets and you want to base yourself in central Greece rather than commuting from Patras.\n\nRecommended Stays\n\nAkti Hotel Nafpaktos\nA seafront hotel in Nafpaktos with direct access to the beach and views over the gulf toward the Peloponnese coast. The most comfortable option in the town for an overnight or two-night stay.\n\nNafpaktos Residence\nA smaller, boutique-style property within the town, with character-filled rooms and a central position close to the Venetian harbour. The most atmospheric option in Nafpaktos for those who want to feel inside the town rather than adjacent to it.",
+          el: "Ιδανικό για: Δελφούς, Ναύπακτο & Μεσολόγγι · Ατμόσφαιρα βενετσιάνικου λιμανιού\n\nΗ Ναύπακτος απέχει λιγότερο από μία ώρα από την Πάτρα μέσω της γέφυρας Ρίου–Αντιρρίου. Το βενετσιάνικο λιμάνι, το κάστρο και η χαλαρή παραλιακή ζώνη την καθιστούν μία από τις πιο ατμοσφαιρικές βάσεις στη δυτική Ελλάδα.\n\nΠροτεινόμενα Καταλύματα\n\nAkti Hotel Nafpaktos\nΠαραλιακό ξενοδοχείο με άμεση πρόσβαση στην παραλία και θέα στον Κορινθιακό.\n\nNafpaktos Residence\nΜικρότερο boutique ξενοδοχείο μέσα στην πόλη, κοντά στο βενετσιάνικο λιμάνι."
+        }
+      }
+    ],
+    faq: [
+      {
+        q: { en: "Which area of Patras is best for a first visit?", el: "Ποια περιοχή της Πάτρας είναι καλύτερη για πρώτη επίσκεψη;" },
+        a: { en: "The city centre and seafront are the most practical base — the widest range of restaurants, cafes and hotels with easy access to all day trip destinations.", el: "Το κέντρο και το παραλιακό μέτωπο είναι η πιο πρακτική βάση — η μεγαλύτερη ποικιλία εστιατορίων, καφέ και ξενοδοχείων." }
+      },
+      {
+        q: { en: "Is Patras good for a beach holiday?", el: "Είναι η Πάτρα κατάλληλη για διακοπές στη θάλασσα;" },
+        a: { en: "Yes — Rio and the Aigialeia coast offer excellent beach options. Rio is 6km from the city centre with family-friendly beaches.", el: "Ναι — το Ρίο και η Αιγιάλεια προσφέρουν εξαιρετικές παραλίες." }
+      },
+      {
+        q: { en: "Can I visit Ancient Olympia as a day trip from Patras?", el: "Μπορώ να επισκεφθώ την Αρχαία Ολυμπία ως ημερήσια εκδρομή;" },
+        a: { en: "Yes, comfortably. The drive is approximately 1 hour 15 minutes via the E55 motorway. Allow a full day for the site and museum.", el: "Ναι, άνετα. Η διαδρομή είναι περίπου 1 ώρα 15 λεπτά." }
+      },
+      {
+        q: { en: "Where should I stay for the Carnival?", el: "Πού να μείνω για το Καρναβάλι;" },
+        a: { en: "Book in the city centre months ahead — hotels sell out completely during Carnival weekend.", el: "Κλείστε στο κέντρο μήνες νωρίτερα — τα ξενοδοχεία γεμίζουν απόλυτα." }
+      }
+    ],
+    seo: {
+      title: {
+        en: "Where to Stay in Patras: Best Areas & Hotels | GoGreeceNow",
+        el: "Πού να Μείνετε στην Πάτρα: Καλύτερες Περιοχές & Ξενοδοχεία | GoGreeceNow"
+      },
+      description: {
+        en: "From the Patras seafront and neoclassical old town to Rio, the Aigialeia coast and Ancient Olympia — a complete guide to where to stay in Patras and the wider region.",
+        el: "Από το παραλιακό μέτωπο και τη νεοκλασική παλιά πόλη έως το Ρίο, την Αιγιάλεια και την Αρχαία Ολυμπία — ένας πλήρης οδηγός διαμονής."
+      }
+    },
   }
 ];
 

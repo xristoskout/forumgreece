@@ -62,6 +62,7 @@ const HOTEL_NAMES: Record<string, string[]> = {
   chania: ["Casa Delfino", "Porto Veneziano", "Elounda Chania"],
   "patmos-travel-guide": ["Patmos Aktis", "Chrissi Aktis", "Patmos Paradise", "Petra"],
   patmos: ["Patmos Aktis", "Chrissi Aktis", "Patmos Paradise", "Petra"],
+  patras: ["Byzantine Hotel", "Astir Hotel Patras", "Maison Grecque Boutique Hotel", "Porto Rio Hotel & Casino", "Achaia Beach", "Poseidon Hotel Aigio", "Delfinia Hotel Akrata", "Europa Hotel Olympia", "Hotel Olympia Palace", "Neda Hotel", "Akti Hotel Nafpaktos", "Nafpaktos Residence"],
 };
 
 function getStay22Url(slug: string): string {
