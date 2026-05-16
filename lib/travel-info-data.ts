@@ -1353,6 +1353,107 @@ export const travelInfoGuides: GuideCard[] = [
         }
       }
     ]
+  },
+  {
+    slug: "greece-visa-entry-requirements",
+    title: {
+      en: "Do I Need a Visa for Greece? Entry Requirements for Every Visitor",
+      el: "Χρειάζομαι Βίζα για την Ελλάδα; Απαιτήσεις Εισόδου"
+    },
+    description: {
+      en: "Find out if you need a visa for Greece, the 90-day rule explained, passport requirements, the new EES border system, upcoming ETIAS, and what every visitor needs to know before travelling.",
+      el: "Μάθετε αν χρειάζεστε βίζα για την Ελλάδα, τον κανόνα των 90 ημερών, τις απαιτήσεις διαβατηρίου και το νέο σύστημα EES."
+    },
+    image: "/images/greece-visa-entry-requirements.webp",
+    overview: {
+      en: "Greece is part of the European Union and the Schengen Area. For most visitors, entry into Greece means entry into the Schengen Area — and your visa status and permitted length of stay apply across all Schengen countries, not just Greece. This means if you enter France first and then travel to Greece, your days in both countries count toward the same total. Understanding these rules is essential for planning any trip to Greece.",
+      el: "Η Ελλάδα είναι μέλος της Ευρωπαϊκής Ένωσης και της ζώνης Σένγκεν. Η είσοδος στην Ελλάδα σημαίνει είσοδο στον χώρο Σένγκεν — οι ημέρες σας μετρούν σε όλες τις χώρες Σένγκεν, όχι μόνο στην Ελλάδα."
+    },
+    points: {
+      en: [
+        "US, UK, Canadian, Australian and most other Western visitors do NOT need a visa for stays up to 90 days",
+        "The 90-day limit applies across the entire Schengen Area, not just Greece",
+        "EES digital border system is now fully operational — bring your passport and allow extra time",
+        "ETIAS travel authorisation is expected in late 2026 but is not yet in operation",
+        "Visa applicants should apply at the Greek consulate at least 6 weeks before travel",
+        "Passport must be valid for at least 3 months beyond your planned departure",
+        "Travel medical insurance is required for visa applicants and recommended for all visitors"
+      ],
+      el: [
+        "Πολίτες ΗΠΑ, ΗΒ, Καναδά, Αυστραλίας δεν χρειάζονται βίζα για έως 90 ημέρες",
+        "Το όριο 90 ημερών ισχύει σε όλο τον χώρο Σένγκεν",
+        "Το ψηφιακό σύστημα EES λειτουργεί πλήρως — επιτρέψτε επιπλέον χρόνο",
+        "Το ETIAS αναμένεται στα τέλη του 2026 αλλά δεν ισχύει ακόμα",
+        "Οι αιτούντες βίζα πρέπει να υποβάλουν αίτηση τουλάχιστον 6 εβδομάδες πριν",
+        "Το διαβατήριο πρέπει να ισχύει για 3 μήνες μετά την αναχώρηση",
+        "Ταξιδιωτική ασφάλεια συνιστάται για όλους τους επισκέπτες"
+      ]
+    },
+    sections: [
+      {
+        title: { en: "1. The Schengen Area: What It Means for Your Visit", el: "1. Η Ζώνη Σένγκεν" },
+        content: {
+          en: "Greece is part of the European Union and the Schengen Area. For most visitors, entry into Greece means entry into the Schengen Area — and your visa status and permitted length of stay apply across all 29 Schengen member states, not just to Greece. If you enter France first and then travel to Greece, your days in both countries count toward the same total.\n\nSchengen member states: Austria, Belgium, Croatia, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Netherlands, Norway, Poland, Portugal, Slovakia, Slovenia, Spain, Sweden and Switzerland, along with several associate countries.",
+          el: "Η Ελλάδα ανήκει στη ζώνη Σένγκεν. Η άδεια παραμονής σας ισχύει σε όλες τις 29 χώρες Σένγκεν. Αν μπείτε πρώτα στη Γαλλία και μετά ταξιδέψετε στην Ελλάδα, οι ημέρες σε αμφότερες μετρούν στο ίδιο σύνολο."
+        }
+      },
+      {
+        title: { en: "2. Who Does NOT Need a Visa", el: "2. Ποιοι ΔΕΝ Χρειάζονται Βίζα" },
+        content: {
+          en: "The following nationalities can travel to Greece for tourism or business without a visa, for stays of up to 90 days within any 180-day period:\n\nEU and EEA citizens: Citizens of all EU member states and EEA countries (Norway, Iceland, Liechtenstein) can travel freely with no restrictions or time limits.\n\nVisa-exempt non-EU nationalities include: United States, United Kingdom, Canada, Australia, New Zealand, Japan, South Korea, Singapore, Israel, United Arab Emirates, and over 60 other countries. The full list is maintained by the European Commission.\n\nThese travellers must still meet passport validity requirements (see below) and must now register in the EU's new Entry/Exit System on their first crossing after October 2025.",
+          el: "Πολίτες ΕΕ και ΕΟΧ μπορούν να ταξιδεύουν ελεύθερα. Πολίτες ΗΠΑ, ΗΒ, Καναδά, Αυστραλίας, Νέας Ζηλανδίας, Ιαπωνίας, Νότιας Κορέας, Σιγκαπούρης, Ισραήλ και άνω των 60 χωρών δεν χρειάζονται βίζα για έως 90 ημέρες."
+        }
+      },
+      {
+        title: { en: "3. The 90/180-Day Rule Explained", el: "3. Ο Κανόνας 90/180 Ημερών" },
+        content: {
+          en: "The 90/180 rule is the single most important rule for visa-exempt travellers to understand, because a surprising number of visitors accidentally overstay.\n\nThe rule states that you may spend a maximum of 90 days within the Schengen Area in any 180-day rolling window. A rolling window means it is not a fixed calendar half-year. At any given moment, the authorities look back 180 days from that date and count how many days you have spent in Schengen countries during that period. The maximum is 90.\n\nPractical example: If you arrive in Greece on 1 June and stay for 30 days, then visit the UK (not Schengen) for two weeks, then return to France (Schengen) for 30 days, you will have used 60 of 90 permitted days. You have 30 days remaining in that 180-day window.\n\nOverstaying is serious. If you remain beyond 90 days, you can be fined upon departure and banned from re-entering any Schengen country for three months. Your overstay is recorded digitally in the EU's EES system.\n\nFree online Schengen calculators can help track your days.",
+          el: "Ο κανόνας 90/180 είναι ο σημαντικότερος κανόνας. Μπορείτε να μείνετε έως 90 ημέρες εντός της ζώνης Σένγκεν σε οποιαδήποτε κυλιόμενη περίοδο 180 ημερών. Η υπέρβαση επιφέρει πρόστιμο και απαγόρευση εισόδου για 3 μήνες."
+        }
+      },
+      {
+        title: { en: "4. Who DOES Need a Visa for Greece", el: "4. Ποιοι Χρειάζονται Βίζα" },
+        content: {
+          en: "Citizens of countries without a visa-waiver agreement with the EU must apply for a Schengen C visa (short-stay tourist or business visa) before travelling. This includes citizens of India, China, Russia, South Africa, Lebanon, Vietnam, Pakistan and many others.\n\nHow to apply: Applications are submitted in person at the Greek consulate or embassy in your country of residence. Greece does not issue visas on arrival.\n\nRequired documents: Valid passport (issued within 10 years, valid at least 3 months beyond departure), completed visa application form, recent passport photo, travel medical insurance (minimum €30,000 coverage), proof of accommodation in Greece, proof of sufficient funds, flight itinerary, and proof of ties to your home country.\n\nProcessing time: Apply at least 6–8 weeks before your planned departure. The visa costs approximately €80 for adults (varies).\n\nCommon reasons for rejection: Incomplete documentation, or failure to demonstrate sufficient financial means. A Schengen visa issued by Greece allows travel throughout the Schengen Area.",
+          el: "Πολίτες χωρών χωρίς συμφωνία απαλλαγής βίζας πρέπει να υποβάλουν αίτηση για βίζα Σένγκεν C πριν ταξιδέψουν. Υποβάλλεται αυτοπροσώπως στο ελληνικό προξενείο. Απαιτείται διαβατήριο, ασφάλεια υγείας (€30.000), αποδεικτικά διαμονής και επαρκών πόρων. Υποβολή 6–8 εβδομάδες πριν."
+        }
+      },
+      {
+        title: { en: "5. Passport Requirements", el: "5. Απαιτήσεις Διαβατηρίου" },
+        content: {
+          en: "Regardless of whether you need a visa, all non-EU nationals entering Greece must present a valid passport meeting these requirements:\n\nValidity: Your passport must be valid for at least three months beyond your planned departure date from Greece. The US State Department advises six months of remaining validity as a safer standard.\n\nIssue date: Your passport must have been issued within the last 10 years.\n\nMachine-readable: Modern passports from most countries meet this requirement. Older non-biometric passports may cause issues.\n\nNot reported lost or stolen: A passport flagged as lost or stolen will result in denied entry.\n\nPractical advice for US travellers: While Greek law requires only three months post-departure validity, the US State Department recommends six months as a general rule, as transit countries may have stricter requirements.",
+          el: "Όλοι οι μη ΕΕ ταξιδιώτες πρέπει να έχουν διαβατήριο με ισχύ τουλάχιστον 3 μήνες μετά την ημερομηνία αναχώρησης. Το Υπουργείο Εξωτερικών των ΗΠΑ συνιστά 6 μήνες. Το διαβατήριο πρέπει να έχει εκδοθεί εντός των τελευταίων 10 ετών."
+        }
+      },
+      {
+        title: { en: "6. The New EU Entry/Exit System (EES)", el: "6. Το Νέο Ψηφιακό Σύστημα EES" },
+        content: {
+          en: "As of October 2025, the European Union has introduced the Entry/Exit System (EES), a digital border system affecting all non-EU nationals travelling to Greece and other Schengen countries.\n\nWhat the EES does: It replaces manual passport stamping with digital registration of each border crossing. Every time a non-EU traveller enters or exits the Schengen Area, the following data is recorded: name and travel document data, facial image, fingerprints (10 fingers for adults, children under 12 exempt), date and location of entry and exit, and records of any refusal of entry.\n\nThe EES became fully operational across all 29 Schengen countries as of 10 April 2026. Greece is fully participating.\n\nWhat this means for your trip: On your first entry under EES, you will provide fingerprints and a facial image. On subsequent entries, facial recognition verifies your identity. Your 90-day count is tracked automatically.\n\nAllow extra time at the airport for biometric registration, especially on your first EES crossing. The EU offers an optional mobile app to pre-register up to 72 hours before arrival.",
+          el: "Από τον Οκτώβριο 2025, το σύστημα EES αντικαθιστά τη χειροκίνητη σφράγιση διαβατηρίων με ψηφιακή καταγραφή. Καταγράφονται: όνομα, φωτογραφία, δακτυλικά αποτυπώματα, ημερομηνία εισόδου/εξόδου. Πλήρως λειτουργικό από 10 Απριλίου 2026. Επιτρέψτε επιπλέον χρόνο στο αεροδρόμιο."
+        }
+      },
+      {
+        title: { en: "7. ETIAS: The Upcoming Travel Authorisation", el: "7. ETIAS: Η Επερχόμενη Ταξιδιωτική Άδεια" },
+        content: {
+          en: "The European Travel Information and Authorisation System (ETIAS) is a new electronic pre-travel authorisation that will be required for travellers from visa-exempt countries entering Greece and other Schengen countries. This includes US, UK, Canadian, Australian and over 60 other nationalities.\n\nETIAS is not a visa. It is a digital pre-clearance similar to the US ESTA or Canadian eTA. The application is completed online and requires a valid passport, personal details and a small fee.\n\nExpected cost: €7 for travellers aged 18–70. Free for those under 18 or over 70.\n\nValidity: Three years or until your passport expires, whichever comes first. Approved for multiple trips.\n\nImportant: As of May 2026, ETIAS is not yet in operation. You cannot currently apply. Any websites claiming to offer ETIAS applications are unofficial. When launched, the only official portal will be at travel-europe.europa.eu/etias.\n\nIf booking a trip to Greece for late 2026 or 2027, factor in that you may need ETIAS before departure.",
+          el: "Το ETIAS είναι μια ηλεκτρονική άδεια για ταξιδιώτες από χώρες χωρίς βίζα, παρόμοια με το ESTA των ΗΠΑ. Κόστος: €7 (18–70 ετών), ισχύ 3 έτη. Δεν είναι ακόμα ενεργό (Μάιος 2026). Η επίσημη πύλη θα είναι travel-europe.europa.eu/etias."
+        }
+      },
+      {
+        title: { en: "8. Entry Requirements Checklist", el: "8. Λίστα Ελέγχου Απαιτήσεων" },
+        content: {
+          en: "Checklist for all travellers:\n- Valid passport with at least 3 months validity beyond departure (6 months recommended)\n- Passport issued within the last 10 years\n- Stay within the 90-day Schengen limit (visa-exempt visitors)\n- Schengen visa obtained before travel (if required for your nationality)\n- 90-day count tracked automatically by EES system (now fully operational)\n- Check ETIAS status before travel if planning trips for late 2026 or beyond\n- Apply at Greek consulate at least 6 weeks before travel (visa applicants)\n- Travel medical insurance with minimum €30,000 coverage (required for visa applicants, recommended for all)\n- Proof of accommodation, sufficient funds and ties to home country (visa applicants)",
+          el: "Λίστα ελέγχου: Έγκυρο διαβατήριο (3+ μήνες μετά αναχώρηση, 6 μήνες συνιστάται), διαβατήριο εντός 10ετίας, τήρηση 90ήμερου ορίου, βίζα Σένγκεν αν απαιτείται, ταξιδιωτική ασφάλεια (€30.000), αποδεικτικά διαμονής και πόρων."
+        }
+      },
+      {
+        title: { en: "9. Frequently Asked Questions", el: "9. Συχνές Ερωτήσεις" },
+        content: {
+          en: "Can I extend my stay beyond 90 days? Not under a tourist/short-stay entry. For longer stays, apply for a National D (long-stay) visa through the Greek consulate before travelling. Options include a financially independent person (FIP) visa, digital nomad visa, student visa or other categories.\n\nDo I need travel insurance for Greece? Travel insurance is not legally required for visa-exempt visitors on short stays but is strongly recommended. Healthcare costs in Greece for non-EU visitors can be significant. For Schengen visa applicants, insurance with minimum €30,000 coverage is mandatory.\n\nWhat happens if I overstay my 90 days? You can be fined upon departure and banned from re-entering any Schengen country for three months. Your overstay is recorded digitally in the EES system.\n\nCan I work in Greece on a tourist visa? No. A Schengen tourist visa (or visa-free entry) does not permit paid work in Greece. Digital nomads and remote workers should investigate the Greek digital nomad visa for stays over 90 days.\n\nIs ETIAS already required? No. As of May 2026, ETIAS is not yet in operation. Check official EU sources before your trip.",
+          el: "Μπορώ να παρατείνω τη διαμονή μου πέραν των 90 ημερών; Όχι με τουριστική βίζα. Χρειάζεστε Εθνική βίζα D (μακράς διαμονής).\n\nΧρειάζομαι ταξιδιωτική ασφάλεια; Συνιστάται για όλους, υποχρεωτική για αιτούντες βίζα Σένγκεν.\n\nΤι γίνεται αν υπερβώ τις 90 ημέρες; Πρόστιμο και απαγόρευση εισόδου για 3 μήνες.\n\nΜπορώ να εργαστώ με τουριστική βίζα; Όχι.\n\nΙσχύει ήδη το ETIAS; Όχι ακόμα (Μάιος 2026)."
+        }
+      }
+    ]
   }
 ];
 
