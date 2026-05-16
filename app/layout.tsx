@@ -7,6 +7,7 @@ import "./globals.css";
 import LangManager from "@/components/lang-manager";
 import ChatLoader from "@/components/chat-loader";
 import MediterraneanCursor from "@/components/mediterranean-cursor";
+import CookieConsent from "@/components/cookie-consent";
 
 const geistSans = Montserrat({
   variable: "--font-geist-sans",
@@ -119,6 +120,7 @@ export default function RootLayout({
         <Analytics />
         <SpeedInsights />
         <ChatLoader />
+        <CookieConsent />
       </body>
     </html>
   );
