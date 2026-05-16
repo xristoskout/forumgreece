@@ -1,13 +1,12 @@
 import type { Metadata, Viewport } from "next";
 import { Montserrat, Geist_Mono, Noto_Sans, Playfair_Display, EB_Garamond } from "next/font/google";
-import { Analytics } from "@vercel/analytics/next";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import "./globals.css";
 import LangManager from "@/components/lang-manager";
 import ChatLoader from "@/components/chat-loader";
 import MediterraneanCursor from "@/components/mediterranean-cursor";
 import CookieConsent from "@/components/cookie-consent";
+import ConsentAwareScripts from "@/components/consent-aware-scripts";
 
 const geistSans = Montserrat({
   variable: "--font-geist-sans",
@@ -117,8 +116,7 @@ export default function RootLayout({
         <div className="fixed inset-0 z-[-1] bg-[radial-gradient(circle_at_top_right,_rgba(120,80,255,0.15),_transparent_40%),radial-gradient(circle_at_bottom_left,_rgba(80,120,255,0.15),_transparent_40%)] pointer-events-none"></div>
         <MediterraneanCursor />
         {children}
-        <Analytics />
-        <SpeedInsights />
+        <ConsentAwareScripts />
         <ChatLoader />
         <CookieConsent />
       </body>
