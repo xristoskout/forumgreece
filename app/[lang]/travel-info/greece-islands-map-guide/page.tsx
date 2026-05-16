@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import SiteHeader from "../../../../components/site-header";
+import InteractiveMap from "../../../../components/interactive-map";
 import { usePathname, useRouter } from "next/navigation";
 import type { Lang } from "../../../../lib/content";
 
@@ -495,16 +496,7 @@ export default function GreeceIslandsMapGuidePage() {
           </p>
         </div>
 
-        <div className="relative rounded-[2rem] overflow-hidden border border-slate-200 shadow-2xl bg-white">
-          <Image
-            src="/images/greece-islands-map-guide.webp"
-            alt={lang === "en" ? "Map of the Greek island groups" : "Χάρτης νησιωτικών συμπλεγμάτων Ελλάδας"}
-            width={1024}
-            height={1024}
-            className="w-full h-auto"
-            priority
-          />
-        </div>
+        <InteractiveMap lang={lang} withLang={withLang} />
       </section>
 
       {/* ── JUMP NAVIGATION ── */}
