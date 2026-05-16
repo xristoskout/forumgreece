@@ -499,9 +499,10 @@ export default function GreeceIslandsMapGuidePage() {
           <Image
             src="/images/greece-islands-map-guide.webp"
             alt={lang === "en" ? "Map of the Greek island groups" : "Χάρτης νησιωτικών συμπλεγμάτων Ελλάδας"}
-            width={1400}
-            height={900}
+            width={1024}
+            height={1024}
             className="w-full h-auto"
+            priority
           />
         </div>
       </section>
