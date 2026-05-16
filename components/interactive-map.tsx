@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import type { Lang } from "../lib/content";
-import { MAP_MAP_PINS, type Pin } from "../lib/map-pins";
+import { MAP_PINS, type Pin } from "../lib/map-pins";
 
 type Props = {
   lang: Lang;
