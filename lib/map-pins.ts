@@ -11,7 +11,11 @@ export type Pin = {
   ── HOW TO ADD A NEW DESTINATION PIN ──
   1. Open the map image: https://www.gogreecenow.com/images/greece-islands-map-guide.webp
   2. In browser console (F12), paste:
-       document.addEventListener('click', e => console.log(e.offsetX, e.offsetY))
+       document.addEventListener('click', e => {
+         const x = Math.round(e.offsetX / e.target.clientWidth * e.target.naturalWidth);
+         const y = Math.round(e.offsetY / e.target.clientHeight * e.target.naturalHeight);
+         console.log(x, y);
+       })
   3. Click on the destination spot on the map
   4. Add a new entry below with:
        x: Math.round(clickX / 1024 * 1000) / 10,
@@ -22,7 +26,7 @@ export type Pin = {
 export const MAP_PINS: Pin[] = [
   {
     id: "santorini",
-    x: 27.9, y: 31.8,
+    x: 40.1, y: 83.8,
     href: "/destinations/santorini",
     label: { en: "Santorini", el: "Σαντορίνη" },
     tagline: { en: "Iconic caldera views", el: "Εμβληματική θέα Καλντέρας" },

@@ -12,6 +12,8 @@ type Props = {
 
 export default function InteractiveMap({ lang, withLang }: Props) {
   const [active, setActive] = useState<string | null>(null);
+  const [debug, setDebug] = useState(false);
+  const [debugPos, setDebugPos] = useState<{ x: number; y: number } | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const tooltipRef = useRef<HTMLDivElement>(null);
 
@@ -33,6 +35,10 @@ export default function InteractiveMap({ lang, withLang }: Props) {
   useEffect(() => {
     function handleKey(e: KeyboardEvent) {
       if (e.key === "Escape") setActive(null);
+      if (e.key === "d" || e.key === "D") {
+        setDebug((d) => !d);
+        setDebugPos(null);
+      }
     }
     document.addEventListener("keydown", handleKey);
     return () => document.removeEventListener("keydown", handleKey);
@@ -40,11 +46,21 @@ export default function InteractiveMap({ lang, withLang }: Props) {
 
   const activePin = active ? MAP_PINS.find((p) => p.id === active) : null;
 
+  function handleMapClick(e: React.MouseEvent) {
+    if (!debug) return;
+    const rect = e.currentTarget.getBoundingClientRect();
+    const x = Math.round((e.clientX - rect.left) / rect.width * 1000) / 10;
+    const y = Math.round((e.clientY - rect.top) / rect.height * 1000) / 10;
+    setDebugPos({ x, y });
+    console.log(`x: ${x}%, y: ${y}%`);
+  }
+
   return (
     <div
       ref={containerRef}
       className="relative w-full select-none"
       style={{ aspectRatio: "1 / 1" }}
+      onClick={handleMapClick}
     >
       <img
         src="/images/greece-islands-map-guide.webp"
@@ -52,6 +68,12 @@ export default function InteractiveMap({ lang, withLang }: Props) {
         className="w-full h-auto rounded-[2rem] border border-slate-200 shadow-2xl"
         draggable={false}
       />
+
+      {debug && (
+        <div className="absolute top-2 left-2 z-30 rounded-lg bg-black/70 px-3 py-1.5 text-xs font-mono text-white pointer-events-none">
+          {debugPos ? `${debugPos.x}%  ${debugPos.y}%` : "Click anywhere for coords"}
+        </div>
+      )}
 
       {MAP_PINS.map((pin) => (
         <button
