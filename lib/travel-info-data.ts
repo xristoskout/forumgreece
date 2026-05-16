@@ -1,23 +1,6 @@
 import type { GuideCard } from "./types";
 export const travelInfoGuides: GuideCard[] = [
   {
-    slug: "greece-islands-map-guide",
-    title: { en: "Greece Islands Map Guide", el: "Χάρτης & Οδηγός Ελληνικών Νησιών" },
-    description: {
-      en: "The ultimate visual guide to Greek island groups. Understand the map and choose the right region for your trip.",
-      el: "Ο απόλυτος οπτικός οδηγός για τα ελληνικά νησιωτικά συμπλέγματα. Κατανόησε τον χάρτη και διάλεξε τη σωστή περιοχή."
-    },
-    image: "/images/greece-islands-map-guide.webp",
-    overview: {
-      en: "Choosing an island is easier when you see the big picture. This guide breaks down Greece into its natural regions, helping you understand distances, ferry routes and local character.",
-      el: "Η επιλογή νησιού είναι πιο εύκολη όταν βλέπεις τη συνολική εικόνα. Αυτός ο οδηγός μοιράζει την Ελλάδα στις φυσικές της περιοχές, βοηθώντας σε να καταλάβεις αποστάσεις και χαρακτήρα."
-    },
-    points: {
-      en: ["The Cyclades", "The Ionian", "Crete", "The Dodecanese", "The Saronic"],
-      el: ["Κυκλάδες", "Ιόνιο", "Κρήτη", "Δωδεκάνησα", "Σαρωνικός"]
-    }
-  },
-  {
     slug: "how-to-get-to-greece",
     title: { en: "How to get to Greece", el: "Πώς να έρθεις στην Ελλάδα" },
     description: {
