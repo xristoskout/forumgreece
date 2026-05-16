@@ -1266,6 +1266,93 @@ export const travelInfoGuides: GuideCard[] = [
         }
       }
     ]
+  },
+  {
+    slug: "greece-island-hopping",
+    title: {
+      en: "Greece Island Hopping: Routes, Tips & How to Plan It",
+      el: "Island Hopping στην Ελλάδα: Διαδρομές, Συμβουλές & Πώς να το Σχεδιάσετε"
+    },
+    description: {
+      en: "Plan your Greece island hopping trip with real routes, ferry tips, best combinations and practical advice for first-timers and returning travellers.",
+      el: "Σχεδιάστε το island hopping ταξίδι σας στην Ελλάδα με πραγματικές διαδρομές, συμβουλές ακτοπλοΐας και πρακτικές οδηγίες."
+    },
+    image: "/images/greece-island-hopping.webp",
+    overview: {
+      en: "Island hopping in Greece is one of the classic European travel experiences — moving between islands by ferry, waking up somewhere new every few days, and building a trip that feels like a journey rather than a single destination. Done well, it is extraordinary. Done poorly — with too many stops, rushed connections and not enough time anywhere — it can be tiring and expensive. This guide explains how to plan a realistic island hopping trip, which routes work best for different travel styles, and the practical details that make the difference between a smooth hop and a stressful one.",
+      el: "Το island hopping στην Ελλάδα είναι μία από τις κλασικές ευρωπαϊκές ταξιδιωτικές εμπειρίες. Αυτός ο οδηγός εξηγεί πώς να σχεδιάσετε ένα ρεαλιστικό ταξίδι, ποιες διαδρομές λειτουργούν καλύτερα και τις πρακτικές λεπτομέρειες που κάνουν τη διαφορά."
+    },
+    points: {
+      en: [
+        "Two to three islands in seven days is the realistic sweet spot — resist the urge to over-plan",
+        "The Cyclades are the most connected and popular island hopping network",
+        "Book ferries early for July–August, especially for overnight routes",
+        "Build buffer time between connections — delays happen",
+        "Pack light — a medium backpack makes everything easier",
+        "June and September offer the best balance of warm weather, open ferries and manageable crowds",
+        "Always double-check which Athens port (Piraeus or Rafina) your ferry departs from"
+      ],
+      el: [
+        "Δύο με τρία νησιά σε επτά ημέρες είναι το ρεαλιστικό — αντισταθείτε στην υπερ-προγραμματισμό",
+        "Οι Κυκλάδες είναι το πιο δημοφιλές δίκτυο island hopping",
+        "Κλείστε ακτοπλοϊκά νωρίς για Ιούλιο–Αύγουστο",
+        "Αφήστε χρόνο μεταξύ συνδέσεων — οι καθυστερήσεις συμβαίνουν",
+        "Ταξιδέψτε ελαφριά — ένα σακίδιο μέσου μεγέθους κάνει τη διαφορά",
+        "Ιούνιος και Σεπτέμβριος προσφέρουν την καλύτερη ισορροπία",
+        "Ελέγξτε από ποιο λιμάνι της Αθήνας (Πειραιάς ή Ραφήνα) φεύγει το πλοίο σας"
+      ]
+    },
+    sections: [
+      {
+        title: { en: "1. What Is Island Hopping and Is It Right for You?", el: "1. Τι Είναι το Island Hopping και Σας Ταιριάζει;" },
+        content: {
+          en: "Island hopping means travelling between multiple Greek islands by ferry — sometimes staying two or three nights on each island, sometimes a full week on one with a day trip to a nearby neighbour.\n\nThe appeal is real: each island in Greece has a distinct character, landscape and atmosphere. Moving between them feels genuinely exploratory.\n\nBut island hopping also requires planning and flexibility. Ferry delays happen. Some routes require early morning sailings.\n\nIsland hopping is ideal for: travellers with 10 or more days who want variety; those who want to experience the Cyclades or Ionian islands in depth; people comfortable with moving accommodation every few days.\n\nIt is less ideal for: families with very young children; travellers with fewer than 7 days; anyone who prefers unpacking once and staying put.",
+          el: "Island hopping σημαίνει ταξίδι μεταξύ πολλών ελληνικών νησιών με πλοίο. Κάθε νησί έχει ξεχωριστό χαρακτήρα και ατμόσφαιρα.\n\nΙδανικό για: ταξιδιώτες με 10+ ημέρες, όσους θέλουν ποικιλία, άτομα άνετα με αλλαγή καταλύματος κάθε λίγες ημέρες.\n\nΛιγότερο ιδανικό για: οικογένειες με μικρά παιδιά, ταξίδια κάτω των 7 ημερών."
+        }
+      },
+      {
+        title: { en: "2. Understanding the Island Groups", el: "2. Οι Νησιωτικές Ομάδες" },
+        content: {
+          en: "Greece has several distinct island clusters. Inter-group connections are limited — islands within a group connect well, but mixing groups requires going through Athens or flying.\n\nThe Cyclades: The most popular island hopping destination. Mykonos, Paros, Naxos, Santorini, Ios, Milos, Folegandros. Connect frequently and reliably in summer.\n\nThe Ionian Islands: Corfu, Kefalonia, Zakynthos, Lefkada, Ithaca. Greener, calmer, less trafficked. Excellent for road-trip island hopping with a car.\n\nThe Dodecanese: Rhodes, Kos, Patmos, Symi, Halki, Kalymnos. Some of the most beautiful and less touristed island hopping.\n\nThe Saronic Islands: Aegina, Hydra, Poros, Spetses. Closest to Athens, reachable in 1–2 hours.\n\nThe Northern Aegean: Lesvos, Samos, Chios, Ikaria. Larger, less polished, for travellers seeking authenticity.",
+          el: "Η Ελλάδα έχει πολλές νησιωτικές ομάδες. Οι συνδέσεις μεταξύ ομάδων είναι περιορισμένες.\n\nΚυκλάδες: Το πιο δημοφιλές δίκτυο. Καλές συνδέσεις το καλοκαίρι.\nΙόνια Νησιά: Πιο πράσινα, ήρεμα. Ιδανικά με αυτοκίνητο.\nΔωδεκάνησα: Από τα πιο όμορφα και λιγότερο τουριστικά.\nΑργοσαρωνικός: Αίγινα, Ύδρα, Πόρος, Σπέτσες. Κοντινά στην Αθήνα.\nΒόρειο Αιγαίο: Λέσβος, Σάμος, Χίος, Ικαρία. Αυθεντικά, λιγότερο εμπορικά."
+        }
+      },
+      {
+        title: { en: "3. The Best Island Hopping Routes", el: "3. Οι Καλύτερες Διαδρομές" },
+        content: {
+          en: "Route 1: Classic Cyclades (7–10 days): Athens → Mykonos → Paros → Naxos → Santorini → Athens. The most travelled route, and it works. Each island is distinct. Ferries connect in 30 min to 2 hours.\n\nRoute 2: Less Touristy Cyclades (7–10 days): Athens → Sifnos → Folegandros → Milos → Antiparos/Paros → Athens. For independent travellers. Connections are less frequent.\n\nRoute 3: Ionian Islands by Ferry and Car (7–10 days): Patras → Kefalonia → Ithaca → Lefkada → Corfu. Works best with a rental car. Stunning natural scenery.\n\nRoute 4: Dodecanese Deep Dive (10–14 days): Rhodes → Symi → Tilos → Kos → Patmos → Leros. Historically rich, architecturally distinctive, significantly less crowded than the Cyclades.\n\nRoute 5: Short Cyclades Hop (5–7 days): Athens → Paros → Naxos → Amorgos → Athens. The Cyclades experience without the Santorini/Mykonos crowds.",
+          el: "Διαδρομή 1: Κλασικές Κυκλάδες (7–10 ημ.): Αθήνα → Μύκονος → Πάρος → Νάξος → Σαντορίνη.\nΔιαδρομή 2: Λιγότερο τουριστικές Κυκλάδες (7–10 ημ.): Αθήνα → Σίφνος → Φολέγανδρος → Μήλος → Αντίπαρος/Πάρος.\nΔιαδρομή 3: Ιόνια με αυτοκίνητο (7–10 ημ.): Πάτρα → Κεφαλονιά → Ιθάκη → Λευκάδα → Κέρκυρα.\nΔιαδρομή 4: Δωδεκάνησα (10–14 ημ.): Ρόδος → Σύμη → Τήλος → Κως → Πάτμος → Λέρος.\nΔιαδρομή 5: Σύντομες Κυκλάδες (5–7 ημ.): Αθήνα → Πάρος → Νάξος → Αμοργός."
+        }
+      },
+      {
+        title: { en: "4. Practical Ferry Tips", el: "4. Πρακτικές Συμβουλές Ακτοπλοΐας" },
+        content: {
+          en: "Book ferries in advance for peak summer (July–August). The most convenient departure times fill up early. Book core connections two to four weeks ahead.\n\nUse Ferryscanner, Ferryhopper or the ferry company apps directly (Blue Star Ferries, SeaJets) to check routes and prices.\n\nUnderstand ticket classes: Deck class (cheapest, fine for short routes), Salon class (indoor seating), Cabins (private rooms, ideal for overnight crossings).\n\nFast ferries vs conventional ferries: Catamarans cut journey times but are more expensive and more affected by rough seas. Conventional ferries are slower, larger, more stable.\n\nCheck ferry ports carefully: Athens has Piraeus (for Aegean islands) and Rafina (for northern Cyclades — closer to the airport). Arriving at the wrong port is a stressful mistake.\n\nBuild buffer time: Allow at least two to three hours between a ferry arrival and your next connection.",
+          el: "Κλείστε ακτοπλοϊκά νωρίς για Ιούλιο–Αύγουστο. Χρησιμοποιήστε Ferryscanner ή Ferryhopper.\n\nΚατηγορίες εισιτηρίων: Deck class (οικονομική), Salon (εσωτερική θέση), Καμπίνα (ιδιωτικό δωμάτιο).\n\nΤαχύπλοα vs συμβατικά: Τα ταχύπλοα είναι πιο γρήγορα αλλά ακριβότερα και επηρεάζονται από τον καιρό.\n\nΛιμάνια Αθήνας: Πειραιάς (Αιγαίο) και Ραφήνα (βόρειες Κυκλάδες). Αφήστε 2–3 ώρες μεταξύ συνδέσεων."
+        }
+      },
+      {
+        title: { en: "5. How Many Islands Per Week?", el: "5. Πόσα Νησιά την Εβδομάδα;" },
+        content: {
+          en: "Two to three islands in seven days is the realistic sweet spot for a first island hopping trip. This allows two to three nights minimum per island, which is enough to actually feel somewhere rather than just pass through.\n\nFour or five islands in a week is possible but usually leaves people feeling they saw everything and experienced nothing.\n\nA useful rule of thumb: if you are spending more than half your days arriving, loading luggage, finding your accommodation and recovering from travel, your itinerary is probably too ambitious.",
+          el: "Δύο με τρία νησιά σε επτά ημέρες είναι το ρεαλιστικό για πρώτο island hopping. Αυτό επιτρέπει 2–3 βράδια ανά νησί.\n\nΤέσσερα ή πέντε νησιά σε μια εβδομάδα συνήθως σημαίνει ότι δεν προλάβατε να ζήσετε τίποτα."
+        }
+      },
+      {
+        title: { en: "6. What to Pack for Island Hopping", el: "6. Τι να Πάρετε" },
+        content: {
+          en: "Pack light — a medium backpack or a carry-on-sized rolling bag. Moving between accommodation with a large heavy suitcase on ferry gangways and cobblestone streets is not enjoyable.\n\nKey items: Quick-dry swimwear, reef shoes, a light cover-up for churches, sun protection (sunscreen, hat, sunglasses), reusable water bottle, offline maps downloaded to your phone, a small day bag for beach excursions.",
+          el: "Ταξιδέψτε ελαφριά — σακίδιο μέσου μεγέθους. Απαραίτητα: μαγιό, παπούτσια για βράχο, αντηλιακό, καπέλο, επαναχρησιμοποιούμενο μπουκάλι νερό, offline χάρτες."
+        }
+      },
+      {
+        title: { en: "7. Best Time to Go Island Hopping", el: "7. Καλύτερη Εποχή" },
+        content: {
+          en: "June and September are the best months. Ferries run on full summer schedules, the sea is warm, weather is reliable and islands are less crowded than July–August. Prices are lower too.\n\nJuly and August offer maximum ferry frequency and peak energy but also highest prices and fullest ferries.\n\nMay is emerging as an excellent month — ferries are running, weather is pleasant, islands are very quiet.\n\nOctober onward: Ferry schedules reduce significantly. Island hopping is still possible on main routes but requires more careful planning.",
+          el: "Ιούνιος και Σεπτέμβριος είναι οι καλύτεροι μήνες. Πλοία σε πλήρες πρόγραμμα, ζεστή θάλασσα, λιγότερος κόσμος.\n\nΙούλιος–Αύγουστος: Μέγιστη συχνότητα αλλά και υψηλότερες τιμές.\n\nΜάιος: Εξαιρετικός — πολύ ήσυχα νησιά.\n\nΟκτώβριος και μετά: Μειωμένα δρομολόγια."
+        }
+      }
+    ]
   }
 ];
 
