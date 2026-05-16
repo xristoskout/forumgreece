@@ -5,10 +5,10 @@ export function generateMetadata({ params }: { params: Promise<{ lang: string }>
     title: {
       absolute: 'Terms of Use & Privacy Policy — GoGreeceNow',
     },
-    description: 'Read the Terms of Use and Privacy Policy for GoGreeceNow. Learn about data protection, user responsibilities and business promotion terms.',
+    description: 'Read the Terms of Use and Privacy Policy for GoGreeceNow. Learn about data protection, cookie policy, user responsibilities and business promotion terms.',
     openGraph: {
-      title: 'Terms & Privacy — GoGreeceNow',
-      description: 'Terms of Use and Privacy Policy for GoGreeceNow users and businesses.',
+      title: 'Terms & Privacy Policy — GoGreeceNow',
+      description: 'Terms of Use and Privacy Policy for GoGreeceNow users and businesses. Includes our Cookie Policy.',
       type: 'website',
     },
   };

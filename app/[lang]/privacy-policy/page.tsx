@@ -40,9 +40,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? "Διαβάστε τους Όρους Χρήσης και την Πολιτική Απορρήτου του GoGreeceNow."
       : "Read the Terms of Use and Privacy Policy for GoGreeceNow.";
 
-  const canonicalUrl = `${SITE_URL}/${lang}/privacy`;
-  const enUrl = `${SITE_URL}/en/privacy`;
-  const elUrl = `${SITE_URL}/el/privacy`;
+  const canonicalUrl = `${SITE_URL}/${lang}/privacy-policy`;
+  const enUrl = `${SITE_URL}/en/privacy-policy`;
+  const elUrl = `${SITE_URL}/el/privacy-policy`;
 
   return {
     metadataBase: new URL(SITE_URL),
@@ -116,6 +116,13 @@ export default async function PrivacyPage({ params }: Props) {
       text: {
         en: "These terms and conditions are governed by Greek law. For any dispute arising from the use of GoGreeceNow, the courts of Athens are exclusively competent.",
         el: "Οι συγκεκριμένοι όροι και προϋποθέσεις διέπονται και ερμηνεύονται σύμφωνα με το ελληνικό δίκαιο. Για κάθε διαφορά που ανακύπτει από τη χρήση του GoGreeceNow, αρμοδιότητα έχουν τα δικαστήρια των Αθηνών.",
+      },
+    },
+    {
+      title: { en: "7 | COOKIE POLICY", el: "7 | ΠΟΛΙΤΙΚΗ COOKIES" },
+      text: {
+        en: "GoGreeceNow uses cookies and similar tracking technologies to enhance your browsing experience, analyze site traffic, and understand where our visitors come from. No cookies are stored on your device without your explicit prior consent. When you first visit our website, a cookie banner appears asking you to accept or decline non-essential cookies. You may withdraw or change your consent at any time by clearing your browser cookies. Essential cookies required for the basic functioning of the website may be set without requiring your consent, but we do not use any tracking or advertising cookies unless you actively accept them. For more information about how we handle your personal data, please refer to Section 2 (Privacy Policy) above.",
+        el: "Το GoGreeceNow χρησιμοποιεί cookies και παρόμοιες τεχνολογίες παρακολούθησης για τη βελτίωση της εμπειρίας περιήγησής σας, την ανάλυση της επισκεψιμότητας του ιστότοπου και την κατανόηση της προέλευσης των επισκεπτών μας. Κανένα cookie δεν αποθηκεύεται στη συσκευή σας χωρίς τη ρητή συγκατάθεσή σας. Κατά την πρώτη επίσκεψή σας στον ιστότοπό μας, εμφανίζεται ένα banner cookies που σας ζητά να αποδεχθείτε ή να απορρίψετε τα μη απαραίτητα cookies. Μπορείτε να ανακαλέσετε ή να αλλάξετε τη συγκατάθεσή σας ανά πάσα στιγμή διαγράφοντας τα cookies του προγράμματος περιήγησής σας. Απαραίτητα cookies που απαιτούνται για τη βασική λειτουργία του ιστότοπου ενδέχεται να εγκατασταθούν χωρίς τη συγκατάθεσή σας, ωστόσο δεν χρησιμοποιούμε cookies παρακολούθησης ή διαφήμισης εκτός εάν τα αποδεχθείτε ενεργά.",
       },
     },
   ];

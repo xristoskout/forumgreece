@@ -63,6 +63,16 @@ const nextConfig: NextConfig = {
         destination: '/en/hotels/santorini',
         permanent: true,
       },
+      {
+        source: '/privacy',
+        destination: '/en/privacy-policy',
+        permanent: true,
+      },
+      {
+        source: '/:lang(en|el)/privacy',
+        destination: '/:lang/privacy-policy',
+        permanent: true,
+      },
     ];
   },
   async headers() {

@@ -20,7 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/travel-info',
     '/travel-to-greece',
     '/promotion',
-    '/privacy',
+    '/privacy-policy',
     '/about',
     '/contact',
     '/collections/greek-islands',

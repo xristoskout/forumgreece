@@ -480,7 +480,7 @@ export default function TravelToGreecePage() {
             <Link href={withLang("/contact")} className="hover:text-slate-900">
               {t.footerContact[lang]}
             </Link>
-            <Link href={withLang("/privacy")} className="hover:text-slate-900">
+            <Link href={withLang("/privacy-policy")} className="hover:text-slate-900">
               {t.footerPrivacy[lang]}
             </Link>
           </div>

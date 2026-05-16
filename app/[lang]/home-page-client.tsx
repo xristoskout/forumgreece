@@ -1178,7 +1178,7 @@ export default function HomePageClient({
             <Link href={withLang("/contact")} className="hover:text-slate-900">
               {copy.footerContact}
             </Link>
-            <Link href={withLang("/privacy")} className="hover:text-slate-900">
+            <Link href={withLang("/privacy-policy")} className="hover:text-slate-900">
               {copy.footerPrivacy}
             </Link>
           </div>
