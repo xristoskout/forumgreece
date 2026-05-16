@@ -1096,6 +1096,84 @@ export const travelInfoGuides: GuideCard[] = [
         }
       }
     ]
+  },
+  {
+    slug: "solo-travel-in-greece",
+    title: {
+      en: "Solo Travel in Greece: Everything You Need to Know",
+      el: "Σόλο Ταξίδι στην Ελλάδα: Ο απόλυτος οδηγός"
+    },
+    description: {
+      en: "Planning solo travel in Greece? Discover the best islands for solo travellers, safety tips, how to get around, meet people and make the most of a trip alone.",
+      el: "Σχεδιάζετε σόλο ταξίδι στην Ελλάδα; Ανακαλύψτε τα καλύτερα νησιά, συμβουλές ασφαλείας και πώς να αξιοποιήσετε στο έπακρο το ταξίδι σας."
+    },
+    image: "/images/solo-travel-in-greece.webp",
+    overview: {
+      en: "Greece is one of the best solo travel destinations in Europe, and a growing number of travellers — particularly women travelling alone, and people in their 30s to 50s on their first solo trip — choose it as their destination of choice. The reasons are straightforward: Greece is safe, hospitable, easy to navigate independently, and has a natural social rhythm built around shared meals, communal outdoor spaces and a culture that welcomes strangers with warmth rather than suspicion. This guide covers everything a solo traveller needs to know before arriving — from safety and transport to the best islands, where to stay and how to make the most of travelling alone.",
+      el: "Η Ελλάδα είναι ένας από τους καλύτερους προορισμούς για σόλο ταξίδια στην Ευρώπη. Είναι ασφαλής, φιλόξενη και εύκολη στην ανεξάρτητη εξερεύνηση. Αυτός ο οδηγός καλύπτει όλα όσα χρειάζεται να γνωρίζει ένας σόλο ταξιδιώτης."
+    },
+    points: {
+      en: [
+        "Greece is consistently rated one of the safest Mediterranean destinations for solo travel, including for women",
+        "Paros, Crete, Naxos and Athens are among the best destinations for solo travellers",
+        "Car rental unlocks the best of Greek islands for independent exploration",
+        "Greek food culture naturally accommodates solo dining with warmth and no pressure",
+        "May, June and September offer the best balance of weather, price and a more personal experience",
+        "Boutique guesthouses and small hotels tend to feel more welcoming for solo travellers than large resorts"
+      ],
+      el: [
+        "Η Ελλάδα είναι από τους ασφαλέστερους μεσογειακούς προορισμούς για σόλο ταξίδια",
+        "Πάρος, Κρήτη, Νάξος και Αθήνα είναι ιδανικές για σόλο ταξιδιώτες",
+        "Η ενοικίαση αυτοκινήτου προσφέρει ανεξαρτησία εξερεύνησης",
+        "Η ελληνική κουλτούρα φαγητού υποδέχεται θερμά όσους τρώνε μόνοι",
+        "Μάιος, Ιούνιος και Σεπτέμβριος προσφέρουν την καλύτερη ισορροπία",
+        "Οι μικροί ξενώνες είναι πιο φιλόξενοι από τα μεγάλα resorts για σόλο ταξιδιώτες"
+      ]
+    },
+    sections: [
+      {
+        title: { en: "1. Is Greece Safe for Solo Travellers?", el: "1. Είναι η Ελλάδα Ασφαλής για Σόλο Ταξιδιώτες;" },
+        content: {
+          en: "The short answer is yes — Greece is widely considered one of the safest countries in the Mediterranean for solo travel, including for women travelling alone.\n\nPetty crime exists, as in every tourist destination, and the usual common-sense precautions apply: keep an eye on your belongings in busy markets and ferry ports, use reputable taxis or rideshare apps in Athens, and be aware of tourist-area scams. These are minor considerations, not genuine safety concerns.\n\nViolent crime against tourists is rare. Greeks have a deeply ingrained culture of hospitality — the word \"philoxenia\" (literally \"love of the stranger\") is one of the foundational social values in Greek culture. Locals are generally happy to help with directions, recommendations and advice, and solo travellers often remark on how frequently they are invited to join someone's table or offered a complimentary drink.\n\nFor solo female travellers specifically: Greece rates consistently high in safety surveys for women travelling alone. Harassment is far less common than in many Mediterranean destinations. Busy tourist areas, island villages and beach communities are generally relaxed and well-lit environments.",
+          el: "Η σύντομη απάντηση είναι ναι — η Ελλάδα θεωρείται μία από τις ασφαλέστερες χώρες στη Μεσόγειο για σόλο ταξίδια.\n\nΥπάρχει μικροεγκληματικότητα όπως σε κάθε τουριστικό προορισμό, αλλά δεν αποτελεί σοβαρό λόγο ανησυχίας. Οι Έλληνες έχουν βαθιά ριζωμένη κουλτούρα φιλοξενίας (φιλοξενία = \"αγάπη του ξένου\").\n\nΓια γυναίκες που ταξιδεύουν μόνες: η Ελλάδα βαθμολογείται σταθερά υψηλά σε έρευνες ασφάλειας."
+        }
+      },
+      {
+        title: { en: "2. Best Greek Islands for Solo Travellers", el: "2. Καλύτερα Νησιά για Σόλο Ταξιδιώτες" },
+        content: {
+          en: "Not every island suits solo travel equally. Here is an honest breakdown of the best options depending on your travel style:\n\nParos — the social island: Paros has become one of the most recommended islands for solo travellers in the Cyclades. Naoussa village has a lively but not overwhelming bar and restaurant scene, a strong community of young European travellers, and a beautiful harbour that functions as a natural social meeting point.\n\nSantorini — solo with a purpose: Santorini rewards solo travel for those who are there specifically for the experience — the views, the sunsets, the food, the volcanic landscape. Walking Oia alone in the early morning before the crowds arrive is a genuinely special kind of travel.\n\nCrete — the most flexible option: Crete is ideal for solo travellers who want variety and freedom. Heraklion and Chania both have lively old towns. A rented car unlocks the island's interior — mountain villages, gorges, remote monasteries.\n\nNaxos — relaxed and affordable: Naxos is one of the most liveable islands in the Cyclades for solo travellers on a mid-range budget. The main town is beautiful and sociable. Food prices are lower than Mykonos or Santorini.\n\nAthens — the solo city experience: Athens is compact enough to explore on foot, with vibrant café culture, world-class museums and nightlife that starts late but runs long.\n\nLefkada and Kefalonia — for the nature-focused solo traveller: Both Ionian islands are excellent for solo travellers who want dramatic natural scenery and beaches that reward independent exploration.",
+          el: "Δεν ταιριάζουν όλα τα νησιά το ίδιο για σόλο ταξίδι.\n\nΠάρος — το κοινωνικό νησί: Ιδανικό για όσους θέλουν να γνωρίσουν κόσμο.\nΣαντορίνη — σόλο με σκοπό: Ανταμείβει όσους πηγαίνουν για την εμπειρία.\nΚρήτη — η πιο ευέλικτη επιλογή: Ιδανική για ποικιλία και ελευθερία.\nΝάξος — χαλαρή και προσιτή: Από τα πιο φιλικά νησιά για μεσαίο budget.\nΑθήνα — η σόλο εμπειρία πόλης: Συμπαγής, ζωντανή, με πολιτισμό.\nΛευκάδα και Κεφαλονιά — για λάτρεις της φύσης."
+        }
+      },
+      {
+        title: { en: "3. Solo Travel Logistics: Getting Around", el: "3. Μετακινήσεις για Σόλο Ταξιδιώτες" },
+        content: {
+          en: "One of the main questions solo travellers ask is how practical Greece is to navigate alone. The answer is: very practical, with a few things worth knowing in advance.\n\nFerries: Greece's ferry network is extensive and solo travel on ferries is completely normal and safe. Most routes between islands in the Cyclades, Dodecanese and Ionian are well served from June to September. Book ahead for peak summer routes.\n\nGetting between islands: The Cyclades connect easily. The Ionian islands are a separate network. The Dodecanese are another. Mixing between these networks requires going via Athens, which adds time.\n\nCar rental: Renting a car is genuinely one of the best decisions a solo traveller can make on larger islands. It gives complete freedom and opens up parts of the island that organised tours do not reach.\n\nLocal buses (KTEL): Most islands have a basic bus network. On smaller islands, schedules are limited.\n\nAthens Metro and tram: Athens has a clean, safe and reliable metro system. The journey from Athens Airport to Syntagma takes around 40 minutes and costs €9.",
+          el: "Η Ελλάδα είναι πολύ πρακτική για σόλο περιήγηση.\n\nΑκτοπλοΐα: Εκτεταμένο δίκτυο, απολύτως φυσιολογικό και ασφαλές για σόλο ταξιδιώτες.\n\nΜεταξύ νησιών: Οι Κυκλάδες συνδέονται εύκολα. Ιόνιο και Δωδεκάνησα είναι ξεχωριστά δίκτυα.\n\nΕνοικίαση αυτοκινήτου: Η καλύτερη απόφαση για μεγάλα νησιά. Δίνει απόλυτη ελευθερία.\n\nΛεωφορεία KTEL: Υπάρχουν αλλά με περιορισμένα δρομολόγια σε μικρά νησιά.\n\nΜετρό Αθήνας: Καθαρό, ασφαλές. Αεροδρόμιο προς Σύνταγμα ~40 λεπτά, €9."
+        }
+      },
+      {
+        title: { en: "4. Where to Stay as a Solo Traveller", el: "4. Πού να Μείνεις ως Σόλο Ταξιδιώτης" },
+        content: {
+          en: "Accommodation choice matters more for solo travellers than it might for couples or groups, because your base directly affects how social or isolated your experience feels.\n\nBoutique guesthouses and small hotels: These tend to be the sweet spot for solo travellers in Greece. Owners are often present, helpful and genuinely welcoming. Breakfast communal tables naturally create opportunities for conversation. Smaller properties also tend to be in better locations — old town streets, harbour views, quiet hillsides.\n\nHostels: Available in Athens, Thessaloniki, Crete, Santorini and a handful of other destinations. Quality varies, but several excellent hostel-style properties cater specifically to independent and solo travellers.\n\nAvoiding \"solo supplement\" costs: Some Greek hotels charge a single occupancy supplement for solo travellers. When comparing accommodation, check whether single rooms or solo pricing is available — boutique properties and guesthouses are more likely to offer flexible rates.",
+          el: "Η επιλογή καταλύματος είναι πιο σημαντική για σόλο ταξιδιώτες.\n\nΜικροί ξενώνες και boutique ξενοδοχεία: Η καλύτερη επιλογή. Οι ιδιοκτήτες είναι φιλόξενοι και τα κοινά τραπέζια πρωινού δημιουργούν ευκαιρίες για συζήτηση.\n\nHostels: Υπάρχουν σε Αθήνα, Θεσσαλονίκη, Κρήτη, Σαντορίνη.\n\nΑποφυγή \"solo supplement\": Ορισμένα ξενοδοχεία χρεώνουν επιπλέον για μονή χρήση δωματίου. Ελέγξτε αν υπάρχει τιμή μονόκλινου."
+        }
+      },
+      {
+        title: { en: "5. Eating and Socialising Alone", el: "5. Φαγητό και Κοινωνικοποίηση" },
+        content: {
+          en: "One of the genuine joys of solo travel in Greece is eating. And in Greece, eating alone is not a strange or uncomfortable experience.\n\nGreek meal culture is slow and leisurely. You are expected to sit for as long as you like. No one will rush you. A good book, a journal, or simply watching the world pass by while eating a long lunch at a harbour-side taverna is one of the most pleasurable experiences Greece offers.\n\nLocal tavernas, especially those slightly off the main tourist drag, tend to attract a mix of Greek families, local workers and regular visitors. Solo travellers are warmly welcomed and often find themselves in spontaneous conversation with the owner, the table next door, or a local who spotted you looking at the menu.\n\nPractical tip: Sitting at the bar rather than a table in a restaurant or wine bar naturally opens up conversation with staff and other solo travellers.",
+          el: "Μία από τις μεγάλες απολαύσεις του σόλο ταξιδιού στην Ελλάδα είναι το φαγητό. Το να τρώτε μόνοι σας δεν είναι παράξενο ούτε άβολο.\n\nΗ ελληνική κουλτούρα γεύματος είναι αργή και χαλαρή. Κανείς δεν θα σας βιάσει. Οι ντόπιες ταβέρνες υποδέχονται θερμά τους σόλο ταξιδιώτες.\n\nΣυμβουλή: Καθίστε στο μπαρ για να ανοίξετε πιο εύκολα συζήτηση."
+        }
+      },
+      {
+        title: { en: "6. Best Time for Solo Travel in Greece", el: "6. Καλύτερη Εποχή για Σόλο Ταξίδι" },
+        content: {
+          en: "May and June are excellent months for solo travel. The weather is warm but not punishing, the sea is swimmable, prices are moderate and the tourist infrastructure is running without the crush of high season.\n\nSeptember and October are equally strong. The peak crowds have gone, prices drop, and the overall atmosphere is more local and personal.\n\nJuly and August are the busiest months but also the most social — hostels are full, beach bars are lively and the energy on popular islands is at its peak. Just book accommodation well in advance.",
+          el: "Μάιος και Ιούνιος είναι εξαιρετικοί μήνες. Καλός καιρός, κολύμπι, μέτριες τιμές.\n\nΣεπτέμβριος και Οκτώβριος: τα πλήθη έχουν φύγει, οι τιμές πέφτουν.\n\nΙούλιος και Αύγουστος: τα πιο κοινωνικά αλλά και πιο πολυσύχναστα. Κλείστε έγκαιρα."
+        }
+      }
+    ]
   }
 ];
 
