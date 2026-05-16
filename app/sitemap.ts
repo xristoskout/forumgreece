@@ -18,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/tours',
     '/tours/all',
     '/travel-info',
+    '/travel-info/greece-islands-map-guide',
     '/travel-to-greece',
     '/promotion',
     '/privacy-policy',
