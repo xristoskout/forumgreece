@@ -36,6 +36,7 @@ const STAY22_EMBEDS: Record<string, string> = {
   lesvos: "https://stay22.com/embed/69eb79de3fa26d2af68806f8",
   "patmos-travel-guide": "https://stay22.com/embed/6a073e542573b5d07586c5db",
   patmos: "https://stay22.com/embed/6a073e542573b5d07586c5db",
+  patras: "https://stay22.com/embed/6a08335181c53d08587afc33",
 };
 
 const HOTEL_NAMES: Record<string, string[]> = {
