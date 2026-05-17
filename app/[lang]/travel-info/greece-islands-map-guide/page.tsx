@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { SITE_URL } from "../../../../../lib/content";
+import { SITE_URL } from "../../../../lib/content";
 import GreeceIslandsMapGuideClient from "./map-guide-client";
 
 type Props = {
