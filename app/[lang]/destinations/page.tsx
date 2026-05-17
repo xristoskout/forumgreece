@@ -175,9 +175,13 @@ export default async function DestinationsListingPage({ params }: Props) {
     { label: lang === "en" ? "Destinations" : "Προορισμοί", path: "/destinations" },
   ]);
 
+  const collectionDescription = lang === "en"
+    ? "Explore all Greek destinations organized by region: Cyclades, Ionian Islands, Crete, Peloponnese, Northern Greece and more."
+    : "Εξερευνήστε όλους τους ελληνικούς προορισμούς ανά περιοχή: Κυκλάδες, Ιόνια Νησιά, Κρήτη, Πελοπόννησος, Βόρεια Ελλάδα και άλλα.";
+
   const collectionPage = collectionPageSchema({
     name: lang === "en" ? "All Destinations in Greece" : "Όλοι οι Προορισμοί στην Ελλάδα",
-    description: t.description[lang],
+    description: collectionDescription,
     url: `${SITE_URL}/${lang}/destinations`,
     numberOfItems: destinations.length,
   });
