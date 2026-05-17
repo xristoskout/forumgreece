@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import ReactDOM from "react-dom";
-import { tours, type Lang } from "../../../../lib/content";
+import { tours, SITE_URL, type Lang } from "../../../../lib/content";
 import {
   experienceBusinesses,
   experienceLandings,
 } from "../../../../lib/experiences";
 import ExperienceDetailsClient from "./experience-details-client";
 import TourDetailsClient from "./tour-details-client";
+import { itemPageSchema } from "../../../../lib/structured-data";
 
 type TourPageProps = {
   params: Promise<{ lang: string; slug: string }>;
@@ -74,6 +75,10 @@ export async function generateMetadata({
     };
   }
 
+  const canonicalUrl = `${SITE_URL}/${lang}/tours/${slug}`;
+  const enUrl = `${SITE_URL}/en/tours/${slug}`;
+  const elUrl = `${SITE_URL}/el/tours/${slug}`;
+
   const pageData = getTourPageData(slug);
 
   if (!pageData) {
@@ -97,6 +102,14 @@ export async function generateMetadata({
     return {
       title,
       description,
+      alternates: {
+        canonical: canonicalUrl,
+        languages: {
+          en: enUrl,
+          el: elUrl,
+          'x-default': enUrl,
+        },
+      },
       openGraph: {
         title,
         description,
@@ -124,6 +137,14 @@ export async function generateMetadata({
   return {
     title,
     description,
+    alternates: {
+      canonical: canonicalUrl,
+      languages: {
+        en: enUrl,
+        el: elUrl,
+        'x-default': enUrl,
+      },
+    },
     openGraph: {
       title: `${pageData.tour.title[lang]} | GoGreeceNow`,
       description,
@@ -158,17 +179,33 @@ export default async function TourPage({ params }: TourPageProps) {
     notFound();
   }
 
+  const canonicalUrl = `${SITE_URL}/${lang}/tours/${slug}`;
+
   if (pageData.type === "landing") {
     // Preload landing image if available
     if (pageData.landing.image) {
       ReactDOM.preload(pageData.landing.image, { as: "image", fetchPriority: "high" });
     }
+
+    const itemPage = itemPageSchema({
+      name: pageData.landing.title[lang],
+      description: pageData.landing.description[lang],
+      image: pageData.landing.image ?? pageData.businesses[0]?.image ?? "/images/default-og.webp",
+      url: canonicalUrl,
+    });
+
     return (
-      <ExperienceDetailsClient
-        landing={pageData.landing}
-        businesses={pageData.businesses}
-        lang={lang}
-      />
+      <>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(itemPage) }}
+        />
+        <ExperienceDetailsClient
+          landing={pageData.landing}
+          businesses={pageData.businesses}
+          lang={lang}
+        />
+      </>
     );
   }
 
@@ -177,5 +214,20 @@ export default async function TourPage({ params }: TourPageProps) {
     ReactDOM.preload(pageData.tour.image, { as: "image", fetchPriority: "high" });
   }
 
-  return <TourDetailsClient tour={pageData.tour} lang={lang} />;
+  const itemPage = itemPageSchema({
+    name: pageData.tour.title[lang],
+    description: pageData.tour.description[lang],
+    image: pageData.tour.image,
+    url: canonicalUrl,
+  });
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemPage) }}
+      />
+      <TourDetailsClient tour={pageData.tour} lang={lang} />
+    </>
+  );
 }

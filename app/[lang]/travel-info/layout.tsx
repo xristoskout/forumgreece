@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { SITE_URL } from '../../../lib/content';
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const { lang } = await params;
@@ -7,6 +8,10 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     ? 'Ταξίδι στην Ελλάδα: Οδηγός Σχεδιασμού & Πληροφορίες | GoGreeceNow'
     : 'Travel to Greece: Planning Hub, Tips & Practical Info | GoGreeceNow';
 
+  const canonicalUrl = `${SITE_URL}/${lang}/travel-info`;
+  const enUrl = `${SITE_URL}/en/travel-info`;
+  const elUrl = `${SITE_URL}/el/travel-info`;
+
   return {
     title: {
       absolute: title,
@@ -14,6 +19,14 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     description: isEl
       ? 'Ό,τι χρειάζεσαι για να οργανώσεις το ταξίδι σου στην Ελλάδα: πότε να πας, πώς να φτάσεις, νησιωτικά σύμπλεγμα, μεταφορές και πρακτικές ταξιδιωτικές πληροφορίες.'
       : 'Everything you need to plan your Greece trip: when to visit, how to get there, island groups, transport tips and practical travel info.',
+    alternates: {
+      canonical: canonicalUrl,
+      languages: {
+        en: enUrl,
+        el: elUrl,
+        'x-default': enUrl,
+      },
+    },
     openGraph: {
       title: title,
       description: isEl

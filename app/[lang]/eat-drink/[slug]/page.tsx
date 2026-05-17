@@ -1,8 +1,9 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { food, type Lang } from "../../../../lib/content";
+import { food, SITE_URL, type Lang } from "../../../../lib/content";
 import { experienceBusinesses } from "../../../../lib/experiences";
 import EatDrinkClient from "./eat-drink-client";
+import { articleSchema, breadcrumbSchema } from "../../../../lib/structured-data";
 
 type Params = Promise<{ lang: string; slug: string }>;
 
@@ -19,13 +20,25 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
 
   const title = item.metaTitle?.[lang] || item.title[lang];
   const description = item.metaDescription?.[lang] || item.info[lang];
-  const keywords = item.keywords?.[lang] || [];
 
   return {
     title,
     description,
-    keywords,
+    alternates: {
+      canonical: canonicalUrl,
+      languages: {
+        en: enUrl,
+        el: elUrl,
+        'x-default': enUrl,
+      },
+    },
     openGraph: {
+      title,
+      description,
+      images: [item.image],
+    },
+    twitter: {
+      card: "summary_large_image",
       title,
       description,
       images: [item.image],
@@ -56,5 +69,32 @@ export default async function EatDrinkPage({ params }: { params: Params }) {
 
   const relatedBusinesses = experienceBusinesses.filter(b => b.landingSlug === slug);
 
-  return <EatDrinkClient item={item} lang={lang} businesses={relatedBusinesses} />;
+  const canonicalUrl = `${SITE_URL}/${lang}/eat-drink/${slug}`;
+
+  const article = articleSchema({
+    headline: item.title[lang],
+    description: item.metaDescription?.[lang] || item.info[lang],
+    image: item.image,
+    url: canonicalUrl,
+  });
+
+  const breadcrumb = breadcrumbSchema(lang, [
+    { label: lang === "en" ? "Home" : "Αρχική", path: "" },
+    { label: lang === "en" ? "Eat & Drink" : "Φαγητό & Ποτό", path: "/eat-drink" },
+    { label: item.title[lang], path: `/eat-drink/${slug}` },
+  ]);
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(article) }}
+      />
+      <EatDrinkClient item={item} lang={lang} businesses={relatedBusinesses} />
+    </>
+  );
 }

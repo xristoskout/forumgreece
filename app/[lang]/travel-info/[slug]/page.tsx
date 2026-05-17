@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { travelInfoGuides, SITE_URL, type Lang } from '../../../../lib/content';
 import TravelInfoGuideClient from './travel-info-guide-client';
-import { breadcrumbSchema } from '../../../../lib/structured-data';
+import { breadcrumbSchema, articleSchema } from '../../../../lib/structured-data';
 
 type Props = {
   params: Promise<{ lang: string; slug: string }>;
@@ -24,9 +24,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return { title: 'Travel Guide Not Found | GoGreeceNow' };
   }
 
+  const canonicalUrl = `${SITE_URL}/${lang}/travel-info/${slug}`;
+  const enUrl = `${SITE_URL}/en/travel-info/${slug}`;
+  const elUrl = `${SITE_URL}/el/travel-info/${slug}`;
+
   return {
     title: { absolute: item.title[lang] + ' | GoGreeceNow' },
     description: item.description[lang],
+    alternates: {
+      canonical: canonicalUrl,
+      languages: {
+        en: enUrl,
+        el: elUrl,
+        'x-default': enUrl,
+      },
+    },
     openGraph: {
       title: item.title[lang],
       description: item.description[lang],
@@ -53,17 +65,30 @@ export default async function TravelInfoGuidePage({ params }: Props) {
     notFound();
   }
 
+  const canonicalUrl = `${SITE_URL}/${lang}/travel-info/${slug}`;
+
   const breadcrumb = breadcrumbSchema(lang, [
     { label: lang === "en" ? "Home" : "Αρχική", path: "" },
     { label: lang === "en" ? "Travel Info" : "Ταξιδιωτικές Πληροφορίες", path: "/travel-info" },
     { label: item.title[lang], path: `/travel-info/${slug}` },
   ]);
 
+  const article = articleSchema({
+    headline: item.title[lang],
+    description: item.description[lang],
+    image: item.image,
+    url: canonicalUrl,
+  });
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(article) }}
       />
       <TravelInfoGuideClient lang={lang} slug={slug} item={item} />
     </>

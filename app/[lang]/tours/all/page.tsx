@@ -2,8 +2,9 @@ import type { Metadata } from 'next';
 import { tours } from '../../../../lib/tours-data';
 import SiteHeader from '../../../../components/site-header';
 import ToursDirectoryClient from './tours-directory-client';
+import { SITE_URL } from '../../../../lib/content';
 import { Lang, isLang } from '../../../../lib/locale';
-import { breadcrumbSchema } from '../../../../lib/structured-data';
+import { breadcrumbSchema, collectionPageSchema } from '../../../../lib/structured-data';
 
 type Props = {
   params: Promise<{ lang: string }>;
@@ -28,9 +29,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
   };
 
+  const canonicalUrl = `${SITE_URL}/${lang}/tours/all`;
+  const enUrl = `${SITE_URL}/en/tours/all`;
+  const elUrl = `${SITE_URL}/el/tours/all`;
+
   return {
     title: t.title[lang],
     description: t.description[lang],
+    alternates: {
+      canonical: canonicalUrl,
+      languages: {
+        en: enUrl,
+        el: elUrl,
+        'x-default': enUrl,
+      },
+    },
   };
 }
 
@@ -43,11 +56,22 @@ export default async function ToursDirectoryPage({ params }: Props) {
     { label: lang === "en" ? "Tours" : "Περιηγήσεις", path: "/tours/all" },
   ]);
 
+  const collectionPage = collectionPageSchema({
+    name: lang === "en" ? "All Tours & Experiences in Greece" : "Όλες οι Εκδρομές & Εμπειρίες στην Ελλάδα",
+    description: t.description[lang],
+    url: `${SITE_URL}/${lang}/tours/all`,
+    numberOfItems: tours.length,
+  });
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionPage) }}
       />
       <SiteHeader />
       <ToursDirectoryClient lang={lang} tours={tours} />
