@@ -1,4 +1,4 @@
-import { notFound, redirect } from 'next/navigation';
+import { notFound, redirect, permanentRedirect } from 'next/navigation';
 import type { Metadata } from 'next';
 import { destinations, SITE_URL } from '../../../../lib/content';
 import DestinationDetailsClient from './destination-details-client';
@@ -71,7 +71,7 @@ export default async function DestinationDetailsPage({ params }: Props) {
   const lang = (isLang(resolvedParams.lang) ? resolvedParams.lang : "en");
 
   if (resolvedParams.slug === "nayplio-odigos-taxidiou") {
-    redirect(`/${lang}/destinations/nafplio`);
+    permanentRedirect(`/${lang}/destinations/nafplio`);
   }
 
   const destination = destinations.find((d) => d.slug === resolvedParams.slug);

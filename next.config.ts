@@ -73,6 +73,12 @@ const nextConfig: NextConfig = {
         destination: '/:lang/privacy-policy',
         permanent: true,
       },
+      // Catch nested language paths (e.g. /en/el/focus → /el/focus)
+      {
+        source: '/:first(en|el)/:second(en|el)/:path*',
+        destination: '/:second/:path*',
+        permanent: true,
+      },
     ];
   },
   async headers() {
