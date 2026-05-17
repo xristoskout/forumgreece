@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { experienceBusinesses } from "../../../../lib/experiences";
-import { SITE_URL } from "../../../../lib/content"; // SITE_URL should come from lib/content.ts
+import { SITE_URL } from "../../../../lib/content";
 import BusinessDetailsClient from "./business-details-client";
 import { Lang, isLang, supportedLangs } from "../../../../lib/locale";
+import { localBusinessSchema } from "../../../../lib/structured-data";
 
 type BusinessPageProps = {
   params: Promise<{ lang: string; slug: string }>;
@@ -92,5 +93,22 @@ export default async function BusinessPage({ params }: BusinessPageProps) {
     notFound();
   }
 
-  return <BusinessDetailsClient business={business} lang={lang} />;
+  const localBiz = localBusinessSchema({
+    name: business.name,
+    description: business.description?.[lang] ?? business.info[lang],
+    image: business.image,
+    url: `${SITE_URL}/${lang}/businesses/${slug}`,
+    ...(business.place ? { address: business.place } : {}),
+    ...(business.phone ? { telephone: business.phone } : {}),
+  });
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBiz) }}
+      />
+      <BusinessDetailsClient business={business} lang={lang} />
+    </>
+  );
 }

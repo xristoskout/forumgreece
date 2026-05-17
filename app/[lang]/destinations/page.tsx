@@ -4,7 +4,7 @@ import { SITE_URL } from '../../../lib/content';
 import SiteHeader from '../../../components/site-header';
 import DestinationsClient from './destinations-client';
 import { Lang, isLang } from '../../../lib/locale';
-import { breadcrumbSchema } from '../../../lib/structured-data';
+import { breadcrumbSchema, collectionPageSchema } from '../../../lib/structured-data';
 
 type Props = {
   params: Promise<{ lang: string }>;
@@ -29,9 +29,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
   };
 
+  const canonicalUrl = `${SITE_URL}/${lang}/destinations`;
+  const enUrl = `${SITE_URL}/en/destinations`;
+  const elUrl = `${SITE_URL}/el/destinations`;
+
   return {
     title: t.title[lang],
     description: t.description[lang],
+    alternates: {
+      canonical: canonicalUrl,
+      languages: {
+        en: enUrl,
+        el: elUrl,
+        'x-default': enUrl,
+      },
+    },
   };
 }
 
@@ -163,11 +175,22 @@ export default async function DestinationsListingPage({ params }: Props) {
     { label: lang === "en" ? "Destinations" : "Προορισμοί", path: "/destinations" },
   ]);
 
+  const collectionPage = collectionPageSchema({
+    name: lang === "en" ? "All Destinations in Greece" : "Όλοι οι Προορισμοί στην Ελλάδα",
+    description: t.description[lang],
+    url: `${SITE_URL}/${lang}/destinations`,
+    numberOfItems: destinations.length,
+  });
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionPage) }}
       />
       <SiteHeader />
       <DestinationsClient

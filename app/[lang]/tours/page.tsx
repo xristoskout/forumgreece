@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import { tours, type Lang } from '../../../lib/content';
+import { tours, SITE_URL, type Lang } from '../../../lib/content';
 import SiteHeader from '../../../components/site-header';
+import { collectionPageSchema } from '../../../lib/structured-data';
 
 type Props = {
   params: Promise<{ lang: string }>;
@@ -27,9 +28,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
   };
 
+  const canonicalUrl = `${SITE_URL}/${lang}/tours`;
+  const enUrl = `${SITE_URL}/en/tours`;
+  const elUrl = `${SITE_URL}/el/tours`;
+
   return {
     title: t.title[lang],
     description: t.description[lang],
+    alternates: {
+      canonical: canonicalUrl,
+      languages: {
+        en: enUrl,
+        el: elUrl,
+        'x-default': enUrl,
+      },
+    },
   };
 }
 
@@ -46,8 +59,19 @@ export default async function ToursListingPage({ params }: Props) {
     discover: { en: 'View Experience', el: 'Δείτε την Εμπειρία' },
   };
 
+  const collectionPage = collectionPageSchema({
+    name: lang === "en" ? "Local Experiences & Tours in Greece" : "Τοπικές Εμπειρίες & Εκδρομές στην Ελλάδα",
+    description: t.description[lang],
+    url: `${SITE_URL}/${lang}/tours`,
+    numberOfItems: tours.length,
+  });
+
   return (
     <main className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionPage) }}
+      />
       <SiteHeader />
       
       <div className="container mx-auto px-6 py-32">

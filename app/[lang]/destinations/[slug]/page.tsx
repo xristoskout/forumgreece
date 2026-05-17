@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { destinations, SITE_URL } from '../../../../lib/content';
 import DestinationDetailsClient from './destination-details-client';
 import { Lang, isLang } from '../../../../lib/locale';
-import { breadcrumbSchema, touristAttractionSchema } from '../../../../lib/structured-data';
+import { breadcrumbSchema, touristAttractionSchema, touristDestinationSchema } from '../../../../lib/structured-data';
 
 type Props = {
   params: Promise<{ lang: string; slug: string }>;
@@ -95,6 +95,13 @@ export default async function DestinationDetailsPage({ params }: Props) {
     url: canonicalUrl,
   });
 
+  const touristDest = touristDestinationSchema({
+    name: destination.name,
+    description: destination.overview[lang],
+    image: destination.image,
+    url: canonicalUrl,
+  });
+
   return (
     <>
       <script
@@ -104,6 +111,10 @@ export default async function DestinationDetailsPage({ params }: Props) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(tourist) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(touristDest) }}
       />
       <DestinationDetailsClient destination={destination} lang={lang} />
     </>

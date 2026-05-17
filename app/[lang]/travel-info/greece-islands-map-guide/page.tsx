@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SITE_URL } from "../../../../../lib/content";
 import GreeceIslandsMapGuideClient from "./map-guide-client";
 
 type Props = {
@@ -21,9 +22,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ? "Ο απόλυτος οπτικός οδηγός για τα ελληνικά νησιωτικά συμπλέγματα. Κατανόησε τον χάρτη και διάλεξε τη σωστή περιοχή."
     : "The ultimate visual guide to Greek island groups. Understand the map and choose the right region for your trip.";
 
+  const canonicalUrl = `${SITE_URL}/${lang}/travel-info/greece-islands-map-guide`;
+  const enUrl = `${SITE_URL}/en/travel-info/greece-islands-map-guide`;
+  const elUrl = `${SITE_URL}/el/travel-info/greece-islands-map-guide`;
+
   return {
     title: { absolute: title },
     description,
+    alternates: {
+      canonical: canonicalUrl,
+      languages: {
+        en: enUrl,
+        el: elUrl,
+        'x-default': enUrl,
+      },
+    },
     openGraph: {
       title,
       description,

@@ -59,3 +59,107 @@ export function touristAttractionSchema(data: {
     url: data.url,
   };
 }
+
+export function touristDestinationSchema(data: {
+  name: string;
+  description: string;
+  image: string;
+  url: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "TouristDestination",
+    name: data.name,
+    description: data.description,
+    image: data.image,
+    url: data.url,
+  };
+}
+
+export function articleSchema(data: {
+  headline: string;
+  description: string;
+  image: string;
+  url: string;
+  datePublished?: string;
+  dateModified?: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: data.headline,
+    description: data.description,
+    image: data.image,
+    url: data.url,
+    ...(data.datePublished ? { datePublished: data.datePublished } : {}),
+    ...(data.dateModified ? { dateModified: data.dateModified } : {}),
+  };
+}
+
+export function localBusinessSchema(data: {
+  name: string;
+  description: string;
+  image: string;
+  url: string;
+  address?: string;
+  telephone?: string;
+  priceRange?: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: data.name,
+    description: data.description,
+    image: data.image,
+    url: data.url,
+    ...(data.address ? { address: { "@type": "PostalAddress", streetAddress: data.address } } : {}),
+    ...(data.telephone ? { telephone: data.telephone } : {}),
+    ...(data.priceRange ? { priceRange: data.priceRange } : {}),
+  };
+}
+
+export function itemPageSchema(data: {
+  name: string;
+  description: string;
+  image: string;
+  url: string;
+  offers?: { price: string; priceCurrency: string; availability?: string }[];
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemPage",
+    mainEntity: {
+      "@type": "Product",
+      name: data.name,
+      description: data.description,
+      image: data.image,
+      url: data.url,
+      ...(data.offers
+        ? {
+            offers: data.offers.map((o) => ({
+              "@type": "Offer",
+              price: o.price,
+              priceCurrency: o.priceCurrency,
+              ...(o.availability ? { availability: o.availability } : {}),
+            })),
+          }
+        : {}),
+    },
+  };
+}
+
+export function collectionPageSchema(data: {
+  name: string;
+  description: string;
+  url: string;
+  numberOfItems?: number;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: data.name,
+    description: data.description,
+    url: data.url,
+    ...(data.numberOfItems ? { numberOfItems: data.numberOfItems } : {}),
+  };
+}

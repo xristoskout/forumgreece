@@ -28,9 +28,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
   };
 
+  const canonicalUrl = `${SITE_URL}/${lang}/hotels`;
+  const enUrl = `${SITE_URL}/en/hotels`;
+  const elUrl = `${SITE_URL}/el/hotels`;
+
   return {
     title: t.title[lang],
     description: t.description[lang],
+    alternates: {
+      canonical: canonicalUrl,
+      languages: {
+        en: enUrl,
+        el: elUrl,
+        'x-default': enUrl,
+      },
+    },
   };
 }
 

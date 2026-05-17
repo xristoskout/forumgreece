@@ -2,7 +2,9 @@ import type { Metadata } from 'next';
 import { hotels } from '../../../../lib/hotels-data';
 import SiteHeader from '../../../../components/site-header';
 import HotelsDirectoryClient from './hotels-directory-client';
+import { SITE_URL } from '../../../../lib/content';
 import { Lang, isLang } from '../../../../lib/locale';
+import { collectionPageSchema } from '../../../../lib/structured-data';
 
 type Props = {
   params: Promise<{ lang: string }>;
@@ -27,9 +29,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
   };
 
+  const canonicalUrl = `${SITE_URL}/${lang}/hotels/all`;
+  const enUrl = `${SITE_URL}/en/hotels/all`;
+  const elUrl = `${SITE_URL}/el/hotels/all`;
+
   return {
     title: t.title[lang],
     description: t.description[lang],
+    alternates: {
+      canonical: canonicalUrl,
+      languages: {
+        en: enUrl,
+        el: elUrl,
+        'x-default': enUrl,
+      },
+    },
   };
 }
 
@@ -37,8 +51,19 @@ export default async function HotelsDirectoryPage({ params }: Props) {
   const { lang: rawLang } = await params;
   const lang = isLang(rawLang) ? rawLang : 'en';
 
+  const collectionPage = collectionPageSchema({
+    name: lang === "en" ? "All Hotels in Greece" : "Όλα τα Ξενοδοχεία στην Ελλάδα",
+    description: t.description[lang],
+    url: `${SITE_URL}/${lang}/hotels/all`,
+    numberOfItems: hotels.length,
+  });
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionPage) }}
+      />
       <SiteHeader />
       <HotelsDirectoryClient lang={lang} hotels={hotels} />
     </>
