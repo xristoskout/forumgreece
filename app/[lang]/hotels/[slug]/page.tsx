@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { notFound, redirect } from "next/navigation";
+import { notFound, redirect, permanentRedirect } from "next/navigation";
 import { hotels, SITE_URL } from "../../../../lib/content";
 import HotelDetailsClient from "./hotel-details-client";
 import { Lang, isLang, supportedLangs } from "../../../../lib/locale";
@@ -25,7 +25,7 @@ export async function generateMetadata({
   const lang = isLang(rawLang) ? rawLang : 'en';
 
   if (slug === "nayplio-odigos-taxidiou") {
-    redirect(`/${lang}/hotels/nafplio`);
+    permanentRedirect(`/${lang}/hotels/nafplio`);
   }
 
   const item = hotels.find((hotel) => hotel.slug === slug);
@@ -94,7 +94,7 @@ export default async function HotelPage({ params }: HotelPageProps) {
   const lang = isLang(rawLang) ? rawLang : 'en';
 
   if (slug === "nayplio-odigos-taxidiou") {
-    redirect(`/${lang}/hotels/nafplio`);
+    permanentRedirect(`/${lang}/hotels/nafplio`);
   }
 
   const item = hotels.find((entry) => entry.slug === slug);
