@@ -59,9 +59,13 @@ export default async function ToursListingPage({ params }: Props) {
     discover: { en: 'View Experience', el: 'Δείτε την Εμπειρία' },
   };
 
+  const collectionDescription = lang === "en"
+    ? "Discover the best local experiences in Greece. Curated tours for Kefalonia, Lesvos, Crete and more."
+    : "Ανακαλύψτε τις καλύτερες τοπικές εμπειρίες στην Ελλάδα. Επιλεγμένες εκδρομές για Κεφαλονιά, Λέσβο, Κρήτη.";
+
   const collectionPage = collectionPageSchema({
     name: lang === "en" ? "Local Experiences & Tours in Greece" : "Τοπικές Εμπειρίες & Εκδρομές στην Ελλάδα",
-    description: t.description[lang],
+    description: collectionDescription,
     url: `${SITE_URL}/${lang}/tours`,
     numberOfItems: tours.length,
   });

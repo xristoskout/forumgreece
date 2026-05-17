@@ -56,9 +56,13 @@ export default async function ToursDirectoryPage({ params }: Props) {
     { label: lang === "en" ? "Tours" : "Περιηγήσεις", path: "/tours/all" },
   ]);
 
+  const collectionDescription = lang === "en"
+    ? "Explore all Greek tours, boat trips and local experiences organized by region: Athens, Santorini, Mykonos, Corfu, Crete, Kefalonia and more."
+    : "Εξερευνήστε όλες τις ελληνικές εκδρομές και εμπειρίες ανά περιοχή: Αθήνα, Σαντορίνη, Μύκονος, Κέρκυρα, Κρήτη, Κεφαλονιά και άλλα.";
+
   const collectionPage = collectionPageSchema({
     name: lang === "en" ? "All Tours & Experiences in Greece" : "Όλες οι Εκδρομές & Εμπειρίες στην Ελλάδα",
-    description: t.description[lang],
+    description: collectionDescription,
     url: `${SITE_URL}/${lang}/tours/all`,
     numberOfItems: tours.length,
   });

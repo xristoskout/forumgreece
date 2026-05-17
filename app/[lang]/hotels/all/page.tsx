@@ -51,9 +51,13 @@ export default async function HotelsDirectoryPage({ params }: Props) {
   const { lang: rawLang } = await params;
   const lang = isLang(rawLang) ? rawLang : 'en';
 
+  const collectionDescription = lang === "en"
+    ? "Explore all Greek hotel guides and best places to stay organized by destination: Athens, Santorini, Mykonos, Corfu, Crete, Kefalonia and more."
+    : "Εξερευνήστε όλους τους ελληνικούς οδηγούς ξενοδοχείων και τα καλύτερα μέρη για διαμονή ανά προορισμό: Αθήνα, Σαντορίνη, Μύκονος, Κέρκυρα, Κρήτη, Κεφαλονιά και άλλα.";
+
   const collectionPage = collectionPageSchema({
     name: lang === "en" ? "All Hotels in Greece" : "Όλα τα Ξενοδοχεία στην Ελλάδα",
-    description: t.description[lang],
+    description: collectionDescription,
     url: `${SITE_URL}/${lang}/hotels/all`,
     numberOfItems: hotels.length,
   });
