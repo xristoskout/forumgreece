@@ -8,7 +8,7 @@ import { siteBrand, siteBrandLine } from "../lib/content";
 import { Lang, useLocale } from "../lib/useLocale";
 
 export default function SiteHeader() {
-  const { lang, pathname, withLang, withLangHash, switchLanguage } = useLocale();
+  const { lang, pathname, withLang, withLangHash } = useLocale();
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -156,31 +156,6 @@ export default function SiteHeader() {
               </svg>
             </a>
 
-            <div className="hidden items-center rounded-full border border-slate-200 bg-white/50 p-1 sm:flex shadow-sm">
-              <button
-                onClick={() => switchLanguage("en")}
-                aria-pressed={lang === "en"}
-                className={`w-10 h-8 flex items-center justify-center rounded-full text-xs font-bold transition-all ${
-                  lang === "en"
-                    ? "bg-indigo-600 text-white shadow-md"
-                    : "text-slate-500 hover:text-indigo-700"
-                }`}
-              >
-                EN
-              </button>
-              <button
-                onClick={() => switchLanguage("el")}
-                aria-pressed={lang === "el"}
-                className={`w-10 h-8 flex items-center justify-center rounded-full text-xs font-bold transition-all ${
-                  lang === "el"
-                    ? "bg-indigo-600 text-white shadow-md"
-                    : "text-slate-500 hover:text-indigo-700"
-                }`}
-              >
-                GR
-              </button>
-            </div>
-
             <button
               type="button"
               onClick={() => setMenuOpen((prev) => !prev)}
@@ -226,31 +201,6 @@ export default function SiteHeader() {
       {menuOpen ? (
         <div className="border-t border-slate-200 bg-white backdrop-blur-md xl:hidden">
           <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6">
-            <div className="mb-4 flex items-center border border-slate-200 bg-white hover:bg-slate-50 sm:hidden">
-              <button
-                onClick={() => switchLanguage("en")}
-                aria-pressed={lang === "en"}
-                className={`w-1/2 py-2.5 text-sm font-semibold transition ${
-                  lang === "en"
-                    ? "bg-indigo-600 border-none text-slate-900"
-                    : "text-slate-500 hover:bg-white backdrop-blur-md"
-                }`}
-              >
-                EN
-              </button>
-              <button
-                onClick={() => switchLanguage("el")}
-                aria-pressed={lang === "el"}
-                className={`w-1/2 py-2.5 text-sm font-semibold transition ${
-                  lang === "el"
-                    ? "bg-indigo-600 border-none text-slate-900"
-                    : "text-slate-500 hover:bg-white backdrop-blur-md"
-                }`}
-              >
-                GR
-              </button>
-            </div>
-
             <nav className="grid gap-2">
               {navItems.map((item) => (
                 <Link
