@@ -5,7 +5,6 @@ import Image from "next/image";
 import SiteHeader from "../../components/site-header";
 import { Lang } from "../../lib/locale";
 import { categories } from "../../lib/site-config";
-import { communities } from "../../lib/communities-data";
 import { destinations } from "../../lib/destinations-data";
 import { food } from "../../lib/food-data";
 import { hotels } from "../../lib/hotels-data";
@@ -383,6 +382,18 @@ export default function HomePageClient({
         </div>
       </section>
 
+      <section className="relative z-10 -mt-6 pb-4">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="max-w-3xl mx-auto text-center border border-slate-200 bg-white/80 backdrop-blur-md rounded-2xl p-8 md:p-10 shadow-sm">
+            <p className="text-base md:text-lg leading-relaxed text-slate-700">
+              {lang === "en"
+                ? "GoGreeceNow is your comprehensive Greece travel planner — from the sun-drenched Greek islands to historic mainland cities. Whether you are dreaming of Santorini sunsets, island hopping in the Cyclades, or exploring ancient Athens, our destination guides, hotel recommendations, tours, and food guides help you plan every detail of your trip with confidence."
+                : "Το GoGreeceNow είναι ο πλήρης οδηγός σου για την Ελλάδα — από τα ηλιόλουστα ελληνικά νησιά μέχρι τις ιστορικές πόλεις της ηπειρωτικής χώρας. Είτε ονειρεύεσαι ηλιοβασιλέματα στη Σαντορίνη, island hopping στις Κυκλάδες, είτε εξερεύνηση της αρχαίας Αθήνας, οι οδηγοί προορισμών, οι προτάσεις διαμονής, οι εκδρομές και οι γαστρονομικοί οδηγοί μας σε βοηθούν να οργανώσεις κάθε λεπτομέρεια του ταξιδιού σου."}
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section className="relative z-10 -mt-10 pb-8">
         <div className="mx-auto max-w-7xl px-6">
           <div className="border border-slate-200 bg-white backdrop-blur-md p-6 shadow-xl shadow-black/50 md:p-8">
@@ -708,105 +719,6 @@ export default function HomePageClient({
                  </Link>
               </div>
             </article>
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-7xl px-6 py-16">
-        <div className="overflow-hidden rounded-[2.5rem] border border-indigo-100 bg-gradient-to-br from-indigo-50/50 via-white to-sky-50/50 p-8 shadow-xl shadow-indigo-100/50 md:p-12 relative group">
-          
-          <div className="absolute top-0 right-0 p-12 opacity-[0.03] pointer-events-none transition-opacity group-hover:opacity-[0.06] duration-1000">
-            <svg viewBox="0 0 24 24" fill="currentColor" className="w-64 h-64 text-indigo-900">
-               <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-            </svg>
-          </div>
-
-          <div className="relative z-10 text-center mb-12">
-            <span className="inline-flex rounded-full bg-indigo-100 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-indigo-800 mb-4 shadow-sm">
-              {lang === "en" ? "Ask the Community" : "Ρωτα την Κοινοτητα"}
-            </span>
-            <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 md:text-5xl mb-5">
-              {lang === "en" ? "Real answers from travelers & locals" : "Αληθινές απαντήσεις από ταξιδιώτες & ντόπιους"}
-            </h2>
-            <p className="mx-auto max-w-2xl text-lg text-slate-600 leading-relaxed font-light">
-              {lang === "en" 
-                ? "Join our Facebook communities to find verified tips, ask questions, and discover hidden gems for your Greek holiday." 
-                : "Μπες στις Facebook κοινότητές μας για να βρεις δοκιμασμένα tips, να κάνεις ερωτήσεις και να ανακαλύψεις κρυμμένα μυστικά για τις διακοπές σου."}
-            </p>
-          </div>
-
-          <div className="relative z-10 grid gap-6 md:grid-cols-3 mb-10">
-            
-            <div className="rounded-[1.5rem] border border-white/60 bg-white/80 p-7 shadow-sm backdrop-blur-md transition hover:-translate-y-1 hover:shadow-md">
-              <div className="flex items-center gap-3 mb-5">
-                <div className="h-11 w-11 flex text-lg items-center justify-center rounded-full bg-blue-100 text-blue-700 font-bold tracking-tight">SM</div>
-                <div>
-                  <div className="font-bold text-slate-900">{lang === "en" ? "Sarah M." : "Σάρα Μ."}</div>
-                  <div className="text-xs font-medium text-slate-500">2 {lang === "en" ? "hrs ago" : "ώρες πριν"}</div>
-                </div>
-              </div>
-              <p className="text-slate-800 font-medium leading-relaxed mb-5">
-                {lang === "en" 
-                  ? '"Planning a 7-day family trip to Crete, better to base in Chania or Rethymno?"' 
-                  : '"Σκοπεύω να πάω Κρήτη για 7 μέρες με τα παιδιά, προτείνετε Χανιά ή Ρέθυμνο για βάση;"'}
-              </p>
-              <div className="flex items-center gap-2 text-sm font-semibold text-slate-500 border-t border-slate-100 pt-4">
-                <span className="flex items-center gap-1 text-indigo-600">💬 42</span>
-                <span>{lang === "en" ? "comments" : "σχόλια"}</span>
-              </div>
-            </div>
-
-            <div className="rounded-[1.5rem] border border-white/60 bg-white/80 p-7 shadow-sm backdrop-blur-md transition hover:-translate-y-1 hover:shadow-md">
-              <div className="flex items-center gap-3 mb-5">
-                <div className="h-11 w-11 flex text-lg items-center justify-center rounded-full bg-emerald-100 text-emerald-700 font-bold tracking-tight">JP</div>
-                <div>
-                  <div className="font-bold text-slate-900">{lang === "en" ? "James P." : "Δημήτρης Π."}</div>
-                  <div className="text-xs font-medium text-slate-500">5 {lang === "en" ? "hrs ago" : "ώρες πριν"}</div>
-                </div>
-              </div>
-              <p className="text-slate-800 font-medium leading-relaxed mb-5">
-                {lang === "en" 
-                  ? '"Is it worth renting a car in Santorini or are the local buses enough?"' 
-                  : '"Αξίζει να νοικιάσω αυτοκίνητο στη Σαντορίνη ή να κινηθώ με ΚΤΕΛ;"'}
-              </p>
-              <div className="flex items-center gap-2 text-sm font-semibold text-slate-500 border-t border-slate-100 pt-4">
-                <span className="flex items-center gap-1 text-indigo-600">💬 28</span>
-                <span>{lang === "en" ? "comments" : "σχόλια"}</span>
-              </div>
-            </div>
-
-            <div className="rounded-[1.5rem] border border-white/60 bg-white/80 p-7 shadow-sm backdrop-blur-md transition hover:-translate-y-1 hover:shadow-md">
-              <div className="flex items-center gap-3 mb-5">
-                <div className="h-11 w-11 flex text-lg items-center justify-center rounded-full bg-rose-100 text-rose-700 font-bold tracking-tight">AL</div>
-                <div>
-                  <div className="font-bold text-slate-900">{lang === "en" ? "Anna L." : "Άννα Λ."}</div>
-                  <div className="text-xs font-medium text-slate-500">1 {lang === "en" ? "day ago" : "μέρα πριν"}</div>
-                </div>
-              </div>
-              <p className="text-slate-800 font-medium leading-relaxed mb-5">
-                {lang === "en" 
-                  ? '"Where to find the most authentic traditional meze in Nafplio Old Town?"' 
-                  : '"Πού θα φάμε τους καλύτερους παραδοσιακούς μεζέδες στο κέντρο στο Ναύπλιο;"'}
-              </p>
-              <div className="flex items-center gap-2 text-sm font-semibold text-slate-500 border-t border-slate-100 pt-4">
-                <span className="flex items-center gap-1 text-indigo-600">💬 65</span>
-                <span>{lang === "en" ? "comments" : "σχόλια"}</span>
-              </div>
-            </div>
-
-          </div>
-
-          <div className="relative z-10 flex justify-center mt-8">
-            <Link
-              href={withLang("/travel-to-greece")}
-              className="group flex flex-wrap justify-center items-center gap-3 rounded-full bg-indigo-600 px-8 py-4 text-base font-bold text-white shadow-[0_0_20px_rgba(79,70,229,0.3)] transition-all hover:scale-105 hover:bg-indigo-500 hover:shadow-[0_0_30px_rgba(79,70,229,0.5)]"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                 <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-              </svg>
-              <span>{lang === "en" ? "Open forums to read the answers" : "Άνοιξε τα forums για τις απαντήσεις"}</span>
-              <span className="transition-transform group-hover:translate-x-1">→</span>
-            </Link>
           </div>
         </div>
       </section>
@@ -1168,22 +1080,49 @@ export default function HomePageClient({
       </section>
 
       <footer className="border-t border-slate-200 bg-white backdrop-blur-md">
-        <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-5 text-sm text-slate-700 md:flex-row md:items-center md:justify-between">
-          <div>{copy.footerText}</div>
-
-          <div className="flex gap-5">
-            <Link href={withLang("/about")} className="hover:text-slate-900">
-              {copy.footerAbout}
-            </Link>
-            <Link href={withLang("/contact")} className="hover:text-slate-900">
-              {copy.footerContact}
-            </Link>
-            <Link href={withLang("/privacy-policy")} className="hover:text-slate-900">
-              {copy.footerPrivacy}
-            </Link>
+        <div className="mx-auto max-w-7xl px-6 py-8">
+          <div className="grid gap-8 md:grid-cols-4">
+            <div>
+              <div className="text-sm text-slate-600 leading-relaxed">{copy.footerText}</div>
+            </div>
+            <div>
+              <h4 className="text-xs font-bold uppercase tracking-widest text-indigo-700 mb-3">
+                {lang === "en" ? "Explore" : "Εξερεύνηση"}
+              </h4>
+              <ul className="space-y-2 text-sm">
+                <li><Link href={withLang("/destinations")} className="text-slate-600 hover:text-slate-900">Destinations</Link></li>
+                <li><Link href={withLang("/travel-info")} className="text-slate-600 hover:text-slate-900">Travel Info</Link></li>
+                <li><Link href={withLang("/hotels")} className="text-slate-600 hover:text-slate-900">Hotels</Link></li>
+                <li><Link href={withLang("/tours")} className="text-slate-600 hover:text-slate-900">Tours</Link></li>
+                <li><Link href={withLang("/eat-drink")} className="text-slate-600 hover:text-slate-900">Eat & Drink</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-xs font-bold uppercase tracking-widest text-indigo-700 mb-3">
+                {lang === "en" ? "Top Destinations" : "Κορυφαίοι Προορισμοί"}
+              </h4>
+              <ul className="space-y-2 text-sm">
+                <li><Link href={withLang("/destinations/santorini")} className="text-slate-600 hover:text-slate-900">Santorini</Link></li>
+                <li><Link href={withLang("/destinations/mykonos")} className="text-slate-600 hover:text-slate-900">Mykonos</Link></li>
+                <li><Link href={withLang("/destinations/crete")} className="text-slate-600 hover:text-slate-900">Crete</Link></li>
+                <li><Link href={withLang("/destinations/athens")} className="text-slate-600 hover:text-slate-900">Athens</Link></li>
+                <li><Link href={withLang("/destinations/kefalonia")} className="text-slate-600 hover:text-slate-900">Kefalonia</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-xs font-bold uppercase tracking-widest text-indigo-700 mb-3">
+                {lang === "en" ? "Company" : "Εταιρεία"}
+              </h4>
+              <ul className="space-y-2 text-sm">
+                <li><Link href={withLang("/about")} className="text-slate-600 hover:text-slate-900">{copy.footerAbout}</Link></li>
+                <li><Link href={withLang("/contact")} className="text-slate-600 hover:text-slate-900">{copy.footerContact}</Link></li>
+                <li><Link href={withLang("/privacy-policy")} className="text-slate-600 hover:text-slate-900">{copy.footerPrivacy}</Link></li>
+                <li><Link href="/sitemap.xml" className="text-slate-600 hover:text-slate-900">Sitemap</Link></li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div className="border-t border-slate-100 mt-2 pt-5 pb-6 flex flex-col items-center gap-2">
+        <div className="border-t border-slate-100 pt-5 pb-6 flex flex-col items-center gap-2">
           <a 
             href="https://www.focusai.gr" 
             target="_blank" 

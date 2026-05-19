@@ -9,8 +9,8 @@ export const travelInfoGuides: GuideCard[] = [
     },
     image: "/images/travel-arrival.webp",
     overview: {
-      en: "Greece is highly accessible but its island geography makes planning crucial. This guide covers your main entry points—primary and regional airports, major ferry ports, and international transport links—so you can pick the smartest route for your itinerary.",
-      el: "Η Ελλάδα είναι εξαιρετικά προσβάσιμη, αλλά η γεωγραφία της απαιτεί σωστό προγραμματισμό. Αυτός ο οδηγός καλύπτει τα κύρια σημεία εισόδου (κεντρικά και περιφερειακά αεροδρόμια, κεντρικά λιμάνια και χερσαία σύνορα) για να επιλέξεις τη σωστή διαδρομή."
+      en: "Greece is highly accessible but its island geography makes planning crucial. This guide covers your main entry points—primary and regional airports, major ferry ports, and international transport links—so you can pick the smartest route for your itinerary. Once you arrive, our [Getting Around Greece](/travel-info/getting-around-greece) guide helps with island connections, and the [Best Time to Visit](/travel-info/best-time-to-visit-greece) guide can help you pick your travel dates. For a visual overview of island clusters, see the [Greece Islands Map Guide](/travel-info/greece-islands-map-guide).",
+      el: "Η Ελλάδα είναι εξαιρετικά προσβάσιμη, αλλά η γεωγραφία της απαιτεί σωστό προγραμματισμό. Αυτός ο οδηγός καλύπτει τα κύρια σημεία εισόδου (κεντρικά και περιφερειακά αεροδρόμια, κεντρικά λιμάνια και χερσαία σύνορα) για να επιλέξεις τη σωστή διαδρομή. Μόλις φτάσεις, ο οδηγός [Μετακινήσεις στην Ελλάδα](/travel-info/getting-around-greece) σε βοηθά με τις νησιωτικές συνδέσεις, και ο [Οδηγός Εποχής](/travel-info/best-time-to-visit-greece) σε βοηθά να επιλέξεις ημερομηνίες. Για οπτική επισκόπηση, δες τον [Χάρτη Ελληνικών Νησιών](/travel-info/greece-islands-map-guide)."
     },
     points: {
       en: [
@@ -62,8 +62,8 @@ export const travelInfoGuides: GuideCard[] = [
     },
     image: "/images/travel-season.webp",
     overview: {
-      en: "Greece is famous for its summer sun, but limiting your perspective to July and August means missing out. The shoulder seasons (Spring and Autumn) reveal a stunningly green landscape, lower prices, and comfortable temperatures for sightseeing. Greece can be visited throughout the year, but the best month depends on the kind of trip you want. The country has a Mediterranean climate with plenty of sunshine, mild winters and very warm summers, while ferry schedules and island life are much more active from spring to autumn.",
-      el: "Η Ελλάδα είναι διάσημη για το καλοκαίρι της, αλλά αν περιοριστείς στον Ιούλιο και τον Αύγουστο χάνεις πολλές εμπειρίες. Οι ενδιάμεσες εποχές (άνοιξη και φθινόπωρο) αποκαλύπτουν μια πιο πράσινη πλευρά, με χαμηλότερες τιμές. Μπορείς να ταξιδέψεις όλο τον χρόνο, αλλά ο καλύτερος μήνας εξαρτάται από τον τύπο του ταξιδιού σου. Οι χειμώνες είναι ήπιοι και τα καλοκαίρια αρκετά θερμά, ενώ τα δρομολόγια των πλοίων είναι πολύ πιο συχνά από την άνοιξη μέχρι το φθινόπωρο."
+      en: "Greece is famous for its summer sun, but limiting your perspective to July and August means missing out. The shoulder seasons (Spring and Autumn) reveal a stunningly green landscape, lower prices, and comfortable temperatures for sightseeing. Greece can be visited throughout the year, but the best month depends on the kind of trip you want. For first-timers, our [Best Greek Islands for First-Time Visitors](/travel-info/first-time-in-greece) guide helps narrow down choices, and the [Trip Planning Checklist](/travel-info/greece-trip-planning-checklist) covers practical steps. For sample itineraries, see [7 or 10 Days in Greece](/travel-info/7-and-10-days-in-greece).",
+      el: "Η Ελλάδα είναι διάσημη για το καλοκαίρι της, αλλά αν περιοριστείς στον Ιούλιο και τον Αύγουστο χάνεις πολλές εμπειρίες. Οι ενδιάμεσες εποχές (άνοιξη και φθινόπωρο) αποκαλύπτουν μια πιο πράσινη πλευρά, με χαμηλότερες τιμές. Μπορείς να ταξιδέψεις όλο τον χρόνο, αλλά ο καλύτερος μήνας εξαρτάται από τον τύπο του ταξιδιού σου. Για πρώτη φορά, ο οδηγός [Καλύτερα Νησιά για Πρώτη Επίσκεψη](/travel-info/first-time-in-greece) βοηθά στην επιλογή, και η [Λίστα Προετοιμασίας](/travel-info/greece-trip-planning-checklist) καλύπτει πρακτικά βήματα. Για δείγματα προγραμμάτων, δες [7 ή 10 Ημέρες στην Ελλάδα](/travel-info/7-and-10-days-in-greece)."
     },
     points: {
       en: [
@@ -175,8 +175,8 @@ export const travelInfoGuides: GuideCard[] = [
     },
     image: "/images/travel-transport.webp",
     overview: {
-      en: "Navigating Greece means learning two different transport systems: the intricate web of Aegean and Ionian ferries, and the extensive mainland road and bus network. With a bit of strategic planning, you can easily combine flights, ferries, and cars to craft the ultimate itinerary across mountains and islands.",
-      el: "Η μετακίνηση στην Ελλάδα είναι πιο εύκολη όταν γνωρίζεις πώς λειτουργούν τα βασικά μέσα μεταφοράς. Στα νησιά, οι διαδρομές γίνονται κυρίως με πλοία και πτήσεις, ενώ στην ηπειρωτική χώρα σημαντικό ρόλο παίζουν οι αυτοκινητόδρομοι και τα ΚΤΕΛ. Με τον σωστό συνδυασμό μέσων, μπορείς να οργανώσεις το ταξίδι σου πιο άνετα, γρήγορα και έξυπνα."
+      en: "Navigating Greece means learning two different transport systems: the intricate web of Aegean and Ionian ferries, and the extensive mainland road and bus network. With a bit of strategic planning, you can easily combine flights, ferries, and cars to craft the ultimate itinerary across mountains and islands. Start with [How to Get to Greece](/travel-info/how-to-get-to-greece) for arrival logistics, and use the [Greece Islands Map Guide](/travel-info/greece-islands-map-guide) to understand ferry clusters. The [Trip Planning Checklist](/travel-info/greece-trip-planning-checklist) also covers transport decisions and route planning.",
+      el: "Η μετακίνηση στην Ελλάδα είναι πιο εύκολη όταν γνωρίζεις πώς λειτουργούν τα βασικά μέσα μεταφοράς. Στα νησιά, οι διαδρομές γίνονται κυρίως με πλοία και πτήσεις, ενώ στην ηπειρωτική χώρα σημαντικό ρόλο παίζουν οι αυτοκινητόδρομοι και τα ΚΤΕΛ. Ξεκίνα με τον οδηγό [Πώς να έρθεις στην Ελλάδα](/travel-info/how-to-get-to-greece) για τα logistics άφιξης, και χρησιμοποίησε τον [Χάρτη Ελληνικών Νησιών](/travel-info/greece-islands-map-guide) για τα νησιωτικά συμπλέγματα. Η [Λίστα Προετοιμασίας](/travel-info/greece-trip-planning-checklist) καλύπτει επίσης αποφάσεις μετακίνησης και σχεδιασμό διαδρομών."
     },
     points: {
       en: [
@@ -284,8 +284,8 @@ export const travelInfoGuides: GuideCard[] = [
     },
     image: "/images/first-time-greece.webp",
     overview: {
-      en: "Planning your first trip to Greece can feel exciting and slightly overwhelming. With thousands of islands and very different travel styles, the hardest part is often knowing exactly where to begin. Before you dive into specific islands, we recommend starting with our [Greece Islands Map Guide](/travel-info/greece-islands-map-guide) to understand the regional clusters and ferry flow.",
-      el: "Ο σχεδιασμός του πρώτου σας ταξιδιού στην Ελλάδα μπορεί να σας φαίνεται συναρπαστικός, αλλά ίσως και ελαφρώς χαοτικός. Πριν βουτήξετε σε συγκεκριμένα νησιά, σας προτείνουμε να ξεκινήσετε από τον [Χάρτη & Οδηγό Ελληνικών Νησιών](/travel-info/greece-islands-map-guide) για να κατανοήσετε τα συμπλέγματα και τη ροή των πλοίων."
+      en: "Planning your first trip to Greece can feel exciting and slightly overwhelming. With thousands of islands and very different travel styles, the hardest part is often knowing exactly where to begin. Before you dive into specific islands, we recommend starting with our [Greece Islands Map Guide](/travel-info/greece-islands-map-guide) to understand the regional clusters and ferry flow. For comparing the two most popular islands, see [Santorini vs Mykonos](/travel-info/santorini-vs-mykonos). Our [7 or 10 Days in Greece](/travel-info/7-and-10-days-in-greece) page offers sample itineraries, and the [Best Time to Visit](/travel-info/best-time-to-visit-greece) guide helps you choose the right season.",
+      el: "Ο σχεδιασμός του πρώτου σας ταξιδιού στην Ελλάδα μπορεί να σας φαίνεται συναρπαστικός, αλλά ίσως και ελαφρώς χαοτικός. Πριν βουτήξετε σε συγκεκριμένα νησιά, σας προτείνουμε να ξεκινήσετε από τον [Χάρτη & Οδηγό Ελληνικών Νησιών](/travel-info/greece-islands-map-guide) για να κατανοήσετε τα συμπλέγματα και τη ροή των πλοίων. Για σύγκριση των δύο πιο δημοφιλών νησιών, δες [Σαντορίνη vs Μύκονος](/travel-info/santorini-vs-mykonos). Η σελίδα [7 ή 10 Ημέρες στην Ελλάδα](/travel-info/7-and-10-days-in-greece) προσφέρει δείγματα προγραμμάτων, και ο [Οδηγός Εποχής](/travel-info/best-time-to-visit-greece) σε βοηθά να επιλέξεις την κατάλληλη περίοδο."
     },
     points: {
       en: [
@@ -358,8 +358,8 @@ export const travelInfoGuides: GuideCard[] = [
     },
     image: "/images/trip-plan.webp",
     overview: {
-      en: "A trip to Greece looks effortless on Instagram, but good planning makes a huge difference. Between flights, ferries, islands, hotel areas and seasonal timing, a little preparation can save both money and stress. Greece can be visited year-round, thanks to its Mediterranean climate, but the experience changes a lot depending on the season and destination. Ferry services also run throughout the year, with much denser schedules from March to October. This checklist covers the practical steps that matter most before you travel.",
-      el: "Ένα ταξίδι στην Ελλάδα φαίνεται εύκολο στο Instagram, αλλά ο σωστός προγραμματισμός κάνει τεράστια διαφορά. Ανάμεσα σε πτήσεις, πλοία, επιλογή νησιών, περιοχές ξενοδοχείων και την κατάλληλη εποχή, λίγη προετοιμασία μπορεί να σας γλιτώσει χρήματα και άγχος. Η Ελλάδα είναι προσβάσιμη όλο τον χρόνο, χάρη στο μεσογειακό κλίμα της, αλλά η εμπειρία αλλάζει πολύ ανάλογα με την εποχή και τον προορισμό. Τα ακτοπλοϊκά δρομολόγια εκτελούνται επίσης όλο τον χρόνο, με πολύ μεγαλύτερη συχνότητα από τον Μάρτιο έως τον Οκτώβριο. Αυτή η λίστα καλύπτει τα πιο σημαντικά πρακτικά βήματα πριν ταξιδέψετε."
+      en: "A trip to Greece looks effortless on Instagram, but good planning makes a huge difference. Between flights, ferries, islands, hotel areas and seasonal timing, a little preparation can save both money and stress. Use the [Best Time to Visit](/travel-info/best-time-to-visit-greece) guide to pick your travel window, and [Getting Around Greece](/travel-info/getting-around-greece) for transport logistics. For arrival information, see [How to Get to Greece](/travel-info/how-to-get-to-greece), and for sample trip structures, check [7 or 10 Days in Greece](/travel-info/7-and-10-days-in-greece). This checklist covers the practical steps that matter most before you travel.",
+      el: "Ένα ταξίδι στην Ελλάδα φαίνεται εύκολο στο Instagram, αλλά ο σωστός προγραμματισμός κάνει τεράστια διαφορά. Χρησιμοποίησε τον [Οδηγό Εποχής](/travel-info/best-time-to-visit-greece) για να επιλέξεις περίοδο, και τον οδηγό [Μετακινήσεις στην Ελλάδα](/travel-info/getting-around-greece) για logistics μεταφοράς. Για πληροφορίες άφιξης, δες [Πώς να έρθεις στην Ελλάδα](/travel-info/how-to-get-to-greece), και για δείγματα προγραμμάτων, δες [7 ή 10 Ημέρες στην Ελλάδα](/travel-info/7-and-10-days-in-greece). Αυτή η λίστα καλύπτει τα πιο σημαντικά πρακτικά βήματα πριν ταξιδέψετε."
     },
     points: {
       en: [
@@ -479,8 +479,8 @@ export const travelInfoGuides: GuideCard[] = [
     },
     image: "/images/7days10.webp",
     overview: {
-      en: "Seven days in Greece is enough for a memorable first trip, but not enough to see everything. For a solid start, use our [Greece Islands Map Guide](/travel-info/greece-islands-map-guide) to choose a single island region and keep your transit simple. Quality over quantity is the secret to a great 7 or 10-day itinerary.",
-      el: "Επτά ημέρες στην Ελλάδα είναι αρκετές για ένα αξέχαστο πρώτο ταξίδι. Για ένα σωστό ξεκίνημα, χρησιμοποίησε τον [Χάρτη & Οδηγό Ελληνικών Νησιών](/travel-info/greece-islands-map-guide) για να επιλέξεις ένα μόνο σύμπλεγμα νησιών. Η ποιότητα πάνω από την ποσότητα είναι το μυστικό."
+      en: "Seven days in Greece is enough for a memorable first trip, but not enough to see everything. For a solid start, use our [Greece Islands Map Guide](/travel-info/greece-islands-map-guide) to choose a single island region and keep your transit simple. Quality over quantity is the secret to a great 7 or 10-day itinerary. If you are undecided between islands, [Santorini vs Mykonos](/travel-info/santorini-vs-mykonos) can help, and our [First-Time Visitors](/travel-info/first-time-in-greece) guide covers the best islands for beginners.",
+      el: "Επτά ημέρες στην Ελλάδα είναι αρκετές για ένα αξέχαστο πρώτο ταξίδι. Για ένα σωστό ξεκίνημα, χρησιμοποίησε τον [Χάρτη & Οδηγό Ελληνικών Νησιών](/travel-info/greece-islands-map-guide) για να επιλέξεις ένα μόνο σύμπλεγμα νησιών. Η ποιότητα πάνω από την ποσότητα είναι το μυστικό. Αν δεν είσαι σίγουρος μεταξύ νησιών, το [Σαντορίνη vs Μύκονος](/travel-info/santorini-vs-mykonos) μπορεί να βοηθήσει, και ο οδηγός [Καλύτερα Νησιά για Πρώτη Επίσκεψη](/travel-info/first-time-in-greece) καλύπτει τις καλύτερες επιλογές για αρχάριους."
     },
     points: {
       en: [
@@ -584,8 +584,8 @@ export const travelInfoGuides: GuideCard[] = [
     },
     image: "/images/family-travel.webp",
     overview: {
-      en: "Greece is one of the best family holiday destinations in Europe because it combines sea, food, warm weather, local hospitality and a wide choice of destinations. Official tourism guidance highlights the Greek islands, Crete and Halkidiki among the strongest family travel options, with safe swimming areas, museums, marine parks and outdoor activities all adding to the appeal.",
-      el: "Η Ελλάδα είναι ένας από τους καλύτερους προορισμούς για οικογενειακές διακοπές στην Ευρώπη επειδή συνδυάζει θάλασσα, φαγητό, ζεστό καιρό, τοπική φιλοξενία και μεγάλη ποικιλία προορισμών. Οι ταξιδιωτικοί οδηγοί ξεχωρίζουν τα ελληνικά νησιά, την Κρήτη και τη Χαλκιδική ως τις πιο δυνατές επιλογές για οικογένειες, με ασφαλείς παραλίες, μουσεία, θαλάσσια πάρκα και υπαίθριες δραστηριότητες που ενισχύουν την εμπειρία."
+      en: "Greece is one of the best family holiday destinations in Europe because it combines sea, food, warm weather, local hospitality and a wide choice of destinations. Official tourism guidance highlights the Greek islands, Crete and Halkidiki among the strongest family travel options, with safe swimming areas, museums, marine parks and outdoor activities all adding to the appeal. For accommodation, see our [Best Hotels in Crete for Families](/travel-info/best-hotels-in-crete-for-families) guide, and check the [Best Time to Visit](/travel-info/best-time-to-visit-greece) for family-friendly travel windows. The [Getting Around Greece](/travel-info/getting-around-greece) guide also covers car-free island options that work well with children.",
+      el: "Η Ελλάδα είναι ένας από τους καλύτερους προορισμούς για οικογενειακές διακοπές στην Ευρώπη επειδή συνδυάζει θάλασσα, φαγητό, ζεστό καιρό, τοπική φιλοξενία και μεγάλη ποικιλία προορισμών. Για διαμονή, δες τον οδηγό [Καλύτερα Οικογενειακά Ξενοδοχεία στην Κρήτη](/travel-info/best-hotels-in-crete-for-families), και έλεγξε τον [Οδηγό Εποχής](/travel-info/best-time-to-visit-greece) για οικογενειακές περιόδους. Ο οδηγός [Μετακινήσεις στην Ελλάδα](/travel-info/getting-around-greece) καλύπτει επίσης επιλογές νησιών χωρίς αυτοκίνητο που λειτουργούν καλά με παιδιά."
     },
     points: {
       en: [
@@ -655,8 +655,8 @@ export const travelInfoGuides: GuideCard[] = [
     },
     image: "/images/santorini-vs-mykonos.webp",
     overview: {
-      en: "Santorini and Mykonos are the two Greek islands most first-time visitors compare, and for good reason. Both are famous, beautiful and easy to fit into a first island itinerary. But they are not interchangeable. Santorini is built around scenery, caldera views and atmosphere, while Mykonos is better known for cosmopolitan beach culture, luxury and nightlife. Official destination descriptions reflect exactly that contrast.",
-      el: "Η Σαντορίνη και η Μύκονος είναι τα δύο ελληνικά νησιά που συγκρίνουν οι περισσότεροι επισκέπτες για πρώτη φορά, και για καλό λόγο. Και τα δύο είναι διάσημα, πανέμορφα και εύκολα να ενταχθούν σε ένα πρώτο πρόγραμμα. Όμως, δεν είναι το ίδιο πράγμα. Η Σαντορίνη στηρίζεται στο εντυπωσιακό τοπίο, τη θέα στην Καλντέρα και την ατμόσφαιρα, ενώ η Μύκονος είναι γνωστή για την κοσμοπολίτικη κουλτούρα της παραλίας, την πολυτέλεια και τη νυχτερινή ζωή."
+      en: "Santorini and Mykonos are the two Greek islands most first-time visitors compare, and for good reason. Both are famous, beautiful and easy to fit into a first island itinerary. But they are not interchangeable. Santorini is built around scenery, caldera views and atmosphere, while Mykonos is better known for cosmopolitan beach culture, luxury and nightlife. For more island choices, see our [Best Greek Islands for First-Time Visitors](/travel-info/first-time-in-greece) guide, and [7 or 10 Days in Greece](/travel-info/7-and-10-days-in-greece) for sample itineraries featuring both islands.",
+      el: "Η Σαντορίνη και η Μύκονος είναι τα δύο ελληνικά νησιά που συγκρίνουν οι περισσότεροι επισκέπτες για πρώτη φορά, και για καλό λόγο. Και τα δύο είναι διάσημα, πανέμορφα και εύκολα να ενταχθούν σε ένα πρώτο πρόγραμμα. Για περισσότερες επιλογές νησιών, δες τον οδηγό [Καλύτερα Νησιά για Πρώτη Επίσκεψη](/travel-info/first-time-in-greece), και [7 ή 10 Ημέρες στην Ελλάδα](/travel-info/7-and-10-days-in-greece) για δείγματα προγραμμάτων και με τα δύο νησιά."
     },
     points: {
       en: [
@@ -712,8 +712,8 @@ export const travelInfoGuides: GuideCard[] = [
     },
     image: "/images/crete.webp",
     overview: {
-      en: "Crete is arguably the most family-friendly destination in Greece. Its large scale means it has room for sprawling resorts with excellent child-focused amenities, safe shallow beaches, and plenty of activities to keep everyone entertained.",
-      el: "Η Κρήτη είναι ίσως ο πιο φιλικός προορισμός για οικογένειες στην Ελλάδα. Το μέγεθός της επιτρέπει μεγάλα resorts με εξαιρετικές παροχές για παιδιά, ασφαλείς ρηχές παραλίες και πολλές δραστηριότητες."
+      en: "Crete is arguably the most family-friendly destination in Greece. Its large scale means it has room for sprawling resorts with excellent child-focused amenities, safe shallow beaches, and plenty of activities to keep everyone entertained. For more family-oriented advice, see our comprehensive [Family Travel in Greece](/travel-info/family-travel-in-greece) guide.",
+      el: "Η Κρήτη είναι ίσως ο πιο φιλικός προορισμός για οικογένειες στην Ελλάδα. Το μέγεθός της επιτρέπει μεγάλα resorts με εξαιρετικές παροχές για παιδιά, ασφαλείς ρηχές παραλίες και πολλές δραστηριότητες. Για περισσότερες οικογενειακές συμβουλές, δες τον οδηγό [Οικογενειακές Διακοπές στην Ελλάδα](/travel-info/family-travel-in-greece)."
     },
     points: {
       en: ["Look for resorts near Chania or Elounda", "Waterparks are common in larger resorts", "All-inclusive options reduce daily stress", "Ensure beach access is child-friendly (sandy, shallow)"],
@@ -752,8 +752,8 @@ export const travelInfoGuides: GuideCard[] = [
     },
     image: "/images/kefalonia.webp",
     overview: {
-      en: "Kefalonia's coastline is dramatic and diverse, but many of its best spots are inaccessible by car. Taking a boat trip is essential to truly appreciate the island's turquoise waters, hidden coves, and close proximity to Ithaca and Zakynthos.",
-      el: "Η ακτογραμμή της Κεφαλονιάς είναι εντυπωσιακή, αλλά πολλά από τα καλύτερα σημεία της δεν είναι προσβάσιμα με αυτοκίνητο. Η εκδρομή με σκάφος είναι απαραίτητη για να εκτιμήσετε τα γαλαζοπράσινα νερά και τους κρυφούς όρμους."
+      en: "Kefalonia's coastline is dramatic and diverse, but many of its best spots are inaccessible by car. Taking a boat trip is essential to truly appreciate the island's turquoise waters, hidden coves, and close proximity to Ithaca and Zakynthos. For transport tips on the island, see our [Getting Around Greece](/travel-info/getting-around-greece) guide, and check the [Best Time to Visit](/travel-info/best-time-to-visit-greece) for ideal sailing conditions.",
+      el: "Η ακτογραμμή της Κεφαλονιάς είναι εντυπωσιακή, αλλά πολλά από τα καλύτερα σημεία της δεν είναι προσβάσιμα με αυτοκίνητο. Η εκδρομή με σκάφος είναι απαραίτητη για να εκτιμήσετε τα γαλαζοπράσινα νερά και τους κρυφούς όρμους. Για συμβουλές μετακίνησης, δες τον οδηγό [Μετακινήσεις στην Ελλάδα](/travel-info/getting-around-greece), και έλεγξε τον [Οδηγό Εποχής](/travel-info/best-time-to-visit-greece) για ιδανικές συνθήκες ιστιοπλοΐας."
     },
     points: {
       en: ["Sail to mythical Ithaca for a day trip", "Discover the hidden beaches of the north coast", "Spot Caretta-Caretta turtles in Argostoli", "Rent a private motorboat in Fiskardo"],
@@ -792,8 +792,8 @@ export const travelInfoGuides: GuideCard[] = [
     },
     image: "/images/lesvos.webp",
     overview: {
-      en: "Lesvos is an island for explorers and food lovers. It's not a destination for rapid sightseeing, but a place to slow down, visit traditional villages, explore geological wonders, and enjoy some of the best culinary traditions in the Aegean.",
-      el: "Η Λέσβος είναι ένα νησί για εξερευνητές και λάτρεις του φαγητού. Δεν είναι προορισμός για γρήγορο sightseeing, αλλά ένα μέρος για να χαλαρώσεις, να επισκεφτείς παραδοσιακά χωριά και να απολαύσεις κορυφαία γαστρονομία."
+      en: "Lesvos is an island for explorers and food lovers. It's not a destination for rapid sightseeing, but a place to slow down, visit traditional villages, explore geological wonders, and enjoy some of the best culinary traditions in the Aegean. The [Best Time to Visit](/travel-info/best-time-to-visit-greece) guide can help you choose the ideal season for exploring Lesvos and the wider northeast Aegean.",
+      el: "Η Λέσβος είναι ένα νησί για εξερευνητές και λάτρεις του φαγητού. Δεν είναι προορισμός για γρήγορο sightseeing, αλλά ένα μέρος για να χαλαρώσεις, να επισκεφτείς παραδοσιακά χωριά και να απολαύσεις κορυφαία γαστρονομία. Ο [Οδηγός Εποχής](/travel-info/best-time-to-visit-greece) μπορεί να σε βοηθήσει να επιλέξεις την ιδανική περίοδο για να επισκεφτείς τη Λέσβο και το βορειοανατολικό Αιγαίο."
     },
     points: {
       en: ["Marvel at the UNESCO Petrified Forest", "Taste world-class Ouzo in Plomari", "Wander the cobbled streets of Molyvos", "Relax in ancient thermal springs"],
@@ -832,8 +832,8 @@ export const travelInfoGuides: GuideCard[] = [
     },
     image: "/images/mykonos.webp",
     overview: {
-      en: "Beyond the beach clubs and vibrant nightlife, Mykonos offers incredible experiences on the water and a deep dive into ancient history. Booking a tour is the best way to see the island's quieter side and the sacred neighboring island of Delos.",
-      el: "Πέρα από τα beach clubs και την έντονη νυχτερινή ζωή, η Μύκονος προσφέρει απίστευτες εμπειρίες στο νερό και μια βαθιά βουτιά στην αρχαία ιστορία. Η κράτηση μιας εκδρομής είναι ο καλύτερος τρόπος για να δείτε την πιο ήσυχη πλευρά του νησιού."
+      en: "Beyond the beach clubs and vibrant nightlife, Mykonos offers incredible experiences on the water and a deep dive into ancient history. Booking a tour is the best way to see the island's quieter side and the sacred neighboring island of Delos. If you are deciding between islands, our [Santorini vs Mykonos](/travel-info/santorini-vs-mykonos) comparison can help you choose the right fit.",
+      el: "Πέρα από τα beach clubs και την έντονη νυχτερινή ζωή, η Μύκονος προσφέρει απίστευτες εμπειρίες στο νερό και μια βαθιά βουτιά στην αρχαία ιστορία. Αν αποφασίζεις μεταξύ νησιών, η σύγκριση [Σαντορίνη vs Μύκονος](/travel-info/santorini-vs-mykonos) μπορεί να σε βοηθήσει να επιλέξεις."
     },
     points: {
       en: ["Take a guided archaeological tour of Delos", "Sail to the uninhabited island of Rhenia", "Join a traditional cooking class", "Explore the island by Jeep safari"],
@@ -872,8 +872,8 @@ export const travelInfoGuides: GuideCard[] = [
     },
     image: "/images/athens.webp",
     overview: {
-      en: "Athens is a sprawling metropolis, but the historic center is surprisingly compact. For first-time visitors, staying central is crucial to minimize transit time and maximize your ability to walk to the Acropolis and major museums.",
-      el: "Η Αθήνα είναι μια τεράστια μητρόπολη, αλλά το ιστορικό της κέντρο είναι εκπληκτικά συμπαγές. Για τους επισκέπτες που έρχονται πρώτη φορά, η διαμονή στο κέντρο είναι καθοριστική για να μπορούν να περπατήσουν μέχρι την Ακρόπολη."
+      en: "Athens is a sprawling metropolis, but the historic center is surprisingly compact. For first-time visitors, staying central is crucial to minimize transit time and maximize your ability to walk to the Acropolis and major museums. Our [Trip Planning Checklist](/travel-info/greece-trip-planning-checklist) covers hotel area selection and the [Getting Around Greece](/travel-info/getting-around-greece) guide explains how Athens connects to the islands.",
+      el: "Η Αθήνα είναι μια τεράστια μητρόπολη, αλλά το ιστορικό της κέντρο είναι εκπληκτικά συμπαγές. Η [Λίστα Προετοιμασίας](/travel-info/greece-trip-planning-checklist) καλύπτει επιλογή περιοχής ξενοδοχείου και ο οδηγός [Μετακινήσεις στην Ελλάδα](/travel-info/getting-around-greece) εξηγεί πώς η Αθήνα συνδέεται με τα νησιά."
     },
     points: {
       en: ["Plaka is best for romance and village feel", "Monastiraki is best for vibrant street life", "Syntagma is best for transport and luxury", "Koukaki is best for local vibes near the Acropolis"],
@@ -915,8 +915,8 @@ export const travelInfoGuides: GuideCard[] = [
     },
     image: "/images/greece-travel-budget.webp",
     overview: {
-      en: "Greece has a reputation for being expensive, largely because Santorini and Mykonos dominate its image. The reality is more nuanced. Greece can be done on a tight budget, a comfortable mid-range spend, or a full luxury experience — and the cost of your trip depends more on your choices than on Greece itself. This guide breaks down real, current costs across accommodation, food, transport and experiences so you can plan your trip with honest numbers in hand.",
-      el: "Η Ελλάδα έχει τη φήμη ακριβού προορισμού, κυρίως λόγω Σαντορίνης και Μυκόνου. Η πραγματικότητα είναι πιο σύνθετη. Μπορείτε να ταξιδέψετε με χαμηλό, μεσαίο ή υψηλό προϋπολογισμό — το κόστος εξαρτάται περισσότερο από τις επιλογές σας παρά από την ίδια την Ελλάδα."
+      en: "Greece has a reputation for being expensive, largely because Santorini and Mykonos dominate its image. The reality is more nuanced. Greece can be done on a tight budget, a comfortable mid-range spend, or a full luxury experience — and the cost of your trip depends more on your choices than on Greece itself. This guide breaks down real, current costs across accommodation, food, transport and experiences so you can plan your trip with honest numbers in hand. Combine it with the [Best Time to Visit](/travel-info/best-time-to-visit-greece) guide for seasonal pricing, the [Trip Planning Checklist](/travel-info/greece-trip-planning-checklist) for practical steps, and [First-Time Visitors](/travel-info/first-time-in-greece) for island recommendations.",
+      el: "Η Ελλάδα έχει τη φήμη ακριβού προορισμού, κυρίως λόγω Σαντορίνης και Μυκόνου. Η πραγματικότητα είναι πιο σύνθετη. Συνδύασε τον οδηγό με τον [Οδηγό Εποχής](/travel-info/best-time-to-visit-greece) για εποχικές τιμές, τη [Λίστα Προετοιμασίας](/travel-info/greece-trip-planning-checklist) για πρακτικά βήματα, και τον οδηγό [Καλύτερα Νησιά για Πρώτη Επίσκεψη](/travel-info/first-time-in-greece) για προτάσεις νησιών."
     },
     points: {
       en: [

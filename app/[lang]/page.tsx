@@ -75,8 +75,8 @@ const homeSeo: Record<
 > = {
   en: {
     title: "GoGreeceNow | Greece Travel Guides, Destinations & Trip Planning",
-    description:
-      "Plan your trip to Greece with destination guides, island ideas, hotels, tours and practical travel info in one easy hub.",
+      description:
+        "Your complete Greece travel guide — discover the best Greek islands, plan your itinerary, find hotels, tours and get practical travel tips for every destination.",
     path: "/en",
     locale: "en_US",
   },
