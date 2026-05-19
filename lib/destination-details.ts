@@ -589,4 +589,92 @@ export const destinationDetails: Record<string, DestinationDetail> = {
       ]
     }
   },
+  lemnos: {
+    overview: {
+      en: "Lemnos is the North Aegean's best kept secret — and one of Greece's most rewarding islands for travellers who know what they're looking for. It is large, unhurried, and genuinely itself. The landscape is unlike the typical Greek island postcard: broad plains and golden hills rolling down to the sea, wide sandy bays with shallow turquoise water, volcanic outcrops, reed beds, and a horizon that feels enormous. The capital, Myrina, has one of the finest harbour towns in the Aegean — a neoclassical seafront, a Byzantine-Genoese castle perched above the sea, and a long beach that begins where the main square ends. Lemnos has almost no mass tourism and has not been shaped by it. The tavernas serve food that reflects the local land and sea. The villages are genuinely inhabited. The beaches — and there are dozens of them — are rarely crowded even in summer. Mythologically, this is the island of Hephaestus, god of fire and the forge. Archaeologically, it holds Poliochni — one of the oldest urban settlements in Europe.",
+      el: "Η Λήμνος είναι το καλύτερα κρυμμένο μυστικό του Βορείου Αιγαίου — και ένα από τα πιο ανταποδοτικά νησιά της Ελλάδας για ταξιδιώτες που ξέρουν τι ψάχνουν. Το τοπίο δεν μοιάζει με την τυπική καρτ ποστάλ: κάμποι και χρυσοί λόφοι που κατηφορίζουν στη θάλασσα, αμμώδεις όρμοι με ρηχά νερά, ηφαιστειακά πετρώματα. Η Μύρινα έχει ένα από τα ωραιότερα λιμάνια του Αιγαίου — νεοκλασικό παραλιακό μέτωπο, βυζαντινό-γενουατικό κάστρο. Η Λήμνος δεν έχει μαζικό τουρισμό. Οι ταβέρνες σερβίρουν τοπικό φαγητό, τα χωριά είναι ζωντανά, οι παραλίες σπάνια γεμάτες. Μυθολογικά, είναι το νησί του Ηφαίστου. Αρχαιολογικά, έχει την Πολιόχνη — έναν από τους αρχαιότερους οικισμούς της Ευρώπης."
+    },
+    pageIncludes: {
+      en: [
+        "Myrina Old Town, harbour & Castle",
+        "Poliochni, Hephaestia & the Kabeiroi Sanctuary",
+        "Best beaches: Keros, Gomati, Thanos, Plati",
+        "Kalathaki cheese, Muscat wine & local food",
+        "Villages: Kontias, Plati, Kontopouli",
+        "Wetlands, dunes & birdwatching at Katalako",
+        "How to get there, when to go, practical tips"
+      ],
+      el: [
+        "Μύρινα — Παλιά Πόλη, λιμάνι & Κάστρο",
+        "Πολιόχνη, Ηφαιστία & Ιερό Καβείρων",
+        "Καλύτερες παραλίες: Κέρος, Γομάτι, Θάνος, Πλατύ",
+        "Καλαθάκι Λήμνου, Μοσχάτο & τοπικό φαγητό",
+        "Χωριά: Κοντιάς, Πλατύ, Κοντοπούλι",
+        "Υγρότοποι, αμμοθίνες & πουλιά στο Κατάλακο",
+        "Πρακτικές συμβουλές & μετακίνηση"
+      ]
+    },
+    perfectFor: {
+      en: [
+        "Beach lovers seeking space and sand without crowds",
+        "Food and wine travellers (Kalathaki, Muscat, fresh fish)",
+        "History and archaeology enthusiasts",
+        "Slow travel and authentic island experiences",
+        "Kitesurfing and watersports (Keros Beach)",
+        "Birdwatching and nature lovers"
+      ],
+      el: [
+        "Λάτρεις παραλιών χωρίς πολυκοσμία",
+        "Ταξιδιώτες γαστρονομίας και κρασιού",
+        "Λάτρεις ιστορίας και αρχαιολογίας",
+        "Slow travel και αυθεντικές νησιωτικές εμπειρίες",
+        "Kitesurfing (παραλία Κέρος)",
+        "Παρατήρηση πουλιών και φύση"
+      ]
+    }
+  },
+  kalamata: {
+    overview: {
+      en: "Kalamata is the city that the Peloponnese doesn't shout about enough. It sits at the head of the Messenian Gulf — a long, graceful arc of coastline between the mountains of Taygetos to the east and the fertile plain to the west. The city is modern, well-organized, and genuinely liveable. It has a proper Old Town with Byzantine history, a waterfront that invites an evening walk, a beach that stretches for kilometres right in the city centre, and one of the best regional cuisines in southern Greece. But Kalamata is also — and this is key — the gateway to one of the most extraordinary landscapes in the entire country. Within an hour you can stand on the wild tip of the Mani peninsula, swim off a deserted bay in Pylos, or dine at Costa Navarino. Within ninety minutes you can be at the ruins of Ancient Messene or on the Byzantine cliffs of Mystras. This is a destination with real depth.",
+      el: "Η Καλαμάτα είναι η πόλη που η Πελοπόννησος δεν διαφημίζει αρκετά. Βρίσκεται στην κορυφή του Μεσσηνιακού Κόλπου — μια μακριά, χαριτωμένη ακτογραμμή ανάμεσα στα βουνά του Ταϋγέτου στα ανατολικά και την εύφορη πεδιάδα στα δυτικά. Η πόλη είναι μοντέρνα, καλά οργανωμένη και πραγματικά φιλόξενη. Έχει μια αυθεντική Παλιά Πόλη με βυζαντινή ιστορία, ένα παραλιακό μέτωπο που σε καλεί για βραδινό περίπατο και μία από τις καλύτερες τοπικές κουζίνες στη νότια Ελλάδα. Αλλά η Καλαμάτα είναι επίσης — και αυτό είναι το κλειδί — η πύλη για μερικά από τα πιο εντυπωσιακά τοπία της χώρας. Σε μία ώρα μπορείς να βρεθείς στην άγρια Μάνη, να κολυμπήσεις σε έναν έρημο όρμο στην Πύλο ή να δειπνήσεις στο Costa Navarino. Σε ενενήντα λεπτά μπορείς να είσαι στα ερείπια της Αρχαίας Μεσσήνης ή στα βυζαντινά γκρεμότοιχα του Μυστρά."
+    },
+    pageIncludes: {
+      en: [
+        "Kalamata Old Town & Byzantine Castle",
+        "Waterfront, marina & city beach",
+        "Local food — olives, olive oil, seafood, Sfela cheese",
+        "Costa Navarino & Voidokilia Beach",
+        "Pylos & the Bay of Navarino",
+        "Mani Peninsula — Kardamyli, Deep Mani, Cape Tenaro",
+        "Ancient Messene & Mystras (UNESCO)"
+      ],
+      el: [
+        "Παλιά Πόλη & Βυζαντινό Κάστρο Καλαμάτας",
+        "Παραλιακό μέτωπο, μαρίνα & παραλία",
+        "Τοπικό φαγητό — ελιές, ελαιόλαδο, θαλασσινά, σφέλα",
+        "Costa Navarino & Παραλία Βοϊδοκοιλιά",
+        "Πύλος & Κόλπος Ναβαρίνου",
+        "Μάνη — Καρδαμύλη, Βαθιά, Ακρωτήριο Ταίναρο",
+        "Αρχαία Μεσσήνη & Μυστράς (UNESCO)"
+      ]
+    },
+    perfectFor: {
+      en: [
+        "Couples and romantic Peloponnese escapes",
+        "Food and olive oil lovers",
+        "History and archaeology enthusiasts",
+        "Families seeking beach + culture",
+        "Road trip travellers in southern Greece",
+        "Slow travel and nature seekers"
+      ],
+      el: [
+        "Ζευγάρια και ρομαντικές αποδράσεις",
+        "Λάτρεις του φαγητού και του ελαιολάδου",
+        "Λάτρεις της ιστορίας και της αρχαιολογίας",
+        "Οικογένειες που θέλουν θάλασσα + πολιτισμό",
+        "Road trips στη νότια Ελλάδα",
+        "Slow travel και φύση"
+      ]
+    }
+  }
 };

@@ -69,6 +69,20 @@ export async function generateMetadata({
       title: seo[lang].title,
       description: seo[lang].description,
       siteName: "GoGreeceNow",
+      images: [
+        {
+          url: "/images/hero-greece.webp",
+          width: 1600,
+          height: 900,
+          alt: "Greece travel planning collection",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: seo[lang].title,
+      description: seo[lang].description,
+      images: ["/images/hero-greece.webp"],
     },
   };
 }

@@ -52,7 +52,6 @@ export default function InteractiveMap({ lang, withLang }: Props) {
     const x = Math.round((e.clientX - rect.left) / rect.width * 1000) / 10;
     const y = Math.round((e.clientY - rect.top) / rect.height * 1000) / 10;
     setDebugPos({ x, y });
-    console.log(`x: ${x}%, y: ${y}%`);
   }
 
   return (

@@ -5853,4 +5853,687 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       ],
     },
   ],
+  lemnos: [
+    {
+      title: { en: "Why Visit Lemnos", el: "Γιατί να Επισκεφθείς τη Λήμνο" },
+      layout: "numbered",
+      items: [
+        {
+          title: { en: "Some of the best beaches in the Aegean — almost to yourself", el: "Από τις καλύτερες παραλίες του Αιγαίου — σχεδόν δικές σου" },
+          text: {
+            en: "Lemnos has over 30 beaches, many of them wide, sandy, and shallow. Keros, Gomati, Thanos, Plati, Katalako — the variety is exceptional. In July and August, when every other Aegean island is heaving, Lemnos beaches remain genuinely quiet.",
+            el: "Η Λήμνος έχει πάνω από 30 παραλίες, οι περισσότερες φαρδιές, αμμώδεις και ρηχές. Ο Κέρος, το Γομάτι, ο Θάνος, το Πλατύ — η ποικιλία είναι εντυπωσιακή. Ακόμα και τον Αύγουστο, οι παραλίες παραμένουν ήσυχες."
+          }
+        },
+        {
+          title: { en: "Myrina is one of the finest harbour towns in northern Greece", el: "Η Μύρινα είναι από τα ωραιότερα λιμάνια της βόρειας Ελλάδας" },
+          text: {
+            en: "The capital has a scale and elegance that surprises first-time visitors. The neoclassical seafront, the Genoese castle above the water, the old neighbourhood of Romeikos Gialos — a town worth spending time in.",
+            el: "Η πρωτεύουσα έχει κλίμακα και κομψότητα που εκπλήσσει. Το νεοκλασικό παραλιακό μέτωπο, το γενουατικό κάστρο, η γειτονιά του Ρωμέικου Γιαλού."
+          }
+        },
+        {
+          title: { en: "The food is outstanding and rooted", el: "Το φαγητό είναι εξαιρετικό και αυθεντικό" },
+          text: {
+            en: "Kalathaki Limnou (PDO), Muscat wine, local honey, fresh fish and seafood from the Aegean — Lemnos has a food culture built on its own land and sea.",
+            el: "Καλαθάκι Λήμνου (ΠΟΠ), Μοσχάτο κρασί, τοπικό μέλι, φρέσκο ψάρι — η γαστρονομία βασίζεται στη δική της γη και θάλασσα."
+          }
+        },
+        {
+          title: { en: "History that predates most of the ancient world", el: "Ιστορία που προηγείται του αρχαίου κόσμου" },
+          text: {
+            en: "Poliochni is one of the oldest cities in Europe — a Bronze Age settlement from around 4000 BC. Hephaestia and the Kabeiroi sanctuary add Hellenistic and Roman layers.",
+            el: "Η Πολιόχνη είναι μία από τις αρχαιότερες πόλεις της Ευρώπης (περίπου 4000 π.Χ.). Η Ηφαιστία και το Ιερό των Καβείρων προσθέτουν ελληνιστικά και ρωμαϊκά στρώματα."
+          }
+        },
+        {
+          title: { en: "It is genuinely authentic", el: "Είναι γνήσια αυθεντική" },
+          text: {
+            en: "No mega-resort development, no 18-30 party crowd, no souvenir shops. Lemnos still lives its own life, and visitors enter it rather than replace it.",
+            el: "Χωρίς υπερ-τουριστική ανάπτυξη, χωρίς μαζικά πάρτι. Η Λήμνος ζει τη δική της ζωή."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "Best Time to Visit Lemnos", el: "Καλύτερη Εποχή για Επίσκεψη" },
+      layout: "list",
+      alert: {
+        en: "Secret: Lemnos is one of the windiest islands in the Aegean. The Meltemi wind blows strong in July and August, keeping temperatures comfortable — but check conditions before planning a boat trip.",
+        el: "Μυστικό: Η Λήμνος είναι από τα πιο ανεμώδη νησιά. Το Μελτέμι φυσάει δυνατά Ιούλιο–Αύγουστο, διατηρώντας άνετες θερμοκρασίες."
+      },
+      items: [
+        {
+          title: { en: "Spring (April–May)", el: "Άνοιξη (Απρίλιος–Μάιος)" },
+          text: {
+            en: "The landscape at its most vivid — wildflowers, migrating birds, almost no visitors. Ideal for walking, villages, and archaeology.",
+            el: "Το τοπίο στο πιο ζωντανό του — αγριολούλουδα, αποδημητικά πουλιά, σχεδόν κανένας επισκέπτης."
+          }
+        },
+        {
+          title: { en: "June", el: "Ιούνιος" },
+          text: {
+            en: "Arguably the finest month. Warm sea, long days, the island feels alive without being crowded.",
+            el: "Ίσως ο καλύτερος μήνας. Ζεστή θάλασσα, μεγάλες μέρες, ζωντανό νησί χωρίς πολυκοσμία."
+          }
+        },
+        {
+          title: { en: "July–August", el: "Ιούλιος–Αύγουστος" },
+          text: {
+            en: "Peak season, but Lemnos handles it better than almost any other large Greek island. Quieter beaches remain uncrowded.",
+            el: "Υψηλή περίοδος, αλλά η Λήμνος το διαχειρίζεται καλύτερα από άλλα νησιά. Οι ήσυχες παραλίες παραμένουν ήσυχες."
+          }
+        },
+        {
+          title: { en: "September", el: "Σεπτέμβριος" },
+          text: {
+            en: "The ideal return-visit month. Warmest sea temperatures, thinning crowds, slower rhythm. Wine and food festivals often take place.",
+            el: "Ιδανικός μήνας για επιστροφή. Πιο ζεστή θάλασσα, λιγότερος κόσμος, πιο αργός ρυθμός."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "How to Get to Lemnos", el: "Πώς να Φτάσεις στη Λήμνο" },
+      layout: "grid",
+      items: [
+        {
+          title: { en: "By air", el: "Αεροπορικώς" },
+          text: {
+            en: "Lemnos Airport (LXS) just outside Myrina. Regular domestic flights from Athens (50 min). Seasonal direct flights from European cities.",
+            el: "Αεροδρόμιο Λήμνου (LXS) έξω από τη Μύρινα. Καθημερινές πτήσεις από Αθήνα (50 λεπτά)."
+          }
+        },
+        {
+          title: { en: "By ferry", el: "Ακτοπλοϊκώς" },
+          text: {
+            en: "Connected to Piraeus (14–16h), Kavala (4–5h), Thessaloniki, Lesvos, Chios. The Kavala approach to Myrina harbour is one of the great arrival moments of the Aegean.",
+            el: "Συνδέεται με Πειραιά (14–16h), Καβάλα (4–5h), Θεσσαλονίκη, Λέσβο, Χίο."
+          }
+        },
+        {
+          title: { en: "Car rental", el: "Ενοικίαση αυτοκινήτου" },
+          text: {
+            en: "Essential for exploring the island. Lemnos is large (476 sq.km.) and its best beaches and villages are widely spread.",
+            el: "Απαραίτητο. Η Λήμνος είναι μεγάλη (476 τ.χλμ.) και τα καλύτερα σημεία είναι διάσπαρτα."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "Myrina: The Capital", el: "Μύρινα: Η Πρωτεύουσα" },
+      layout: "numbered",
+      alert: {
+        en: "Secret: Climb to the castle at dusk. The light on the water and the silhouette of the fortifications against the evening sky is one of the finest views in the North Aegean.",
+        el: "Μυστικό: Ανέβα στο κάστρο το σούρουπο. Το φως στο νερό και η σιλουέτα των οχυρώσεων είναι μοναδική."
+      },
+      items: [
+        {
+          title: { en: "Myrina Castle", el: "Κάστρο Μύρινας" },
+          text: {
+            en: "A Byzantine fort extended by the Genoese in the 15th century. Free to enter, open until late in summer. Deer roam inside its walls. The view from the battlements is extraordinary.",
+            el: "Βυζαντινό φρούριο με γενουατικές επεκτάσεις. Ελεύθερη είσοδος. Ελάφια ζουν μέσα στα τείχη."
+          }
+        },
+        {
+          title: { en: "Romeikos Gialos", el: "Ρωμέικος Γιαλός" },
+          text: {
+            en: "The old neighbourhood of Myrina. Narrow lanes, stone houses with wooden balconies, a small beach between the castle walls, and a pace of life unchanged for decades.",
+            el: "Η παλιά γειτονιά της Μύρινας. Στενά σοκάκια, πέτρινα σπίτια, μικρή παραλία ανάμεσα στα τείχη."
+          }
+        },
+        {
+          title: { en: "Archaeological Museum of Myrina", el: "Αρχαιολογικό Μουσείο Μύρινας" },
+          text: {
+            en: "Compact but well-presented. Covers finds from Poliochni, Hephaestia, and Chloe including prehistoric jewellery, Bronze Age pottery, and Hellenistic sculptures.",
+            el: "Μικρό αλλά καλά οργανωμένο. Ευρήματα από Πολιόχνη, Ηφαιστία και Χλόη."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "Best Beaches in Lemnos", el: "Οι Καλύτερες Παραλίες της Λήμνου" },
+      layout: "list",
+      alert: {
+        en: "Secret: Walk to the far southern end of Keros where the dunes meet the water. Almost nobody goes there and the landscape is extraordinary.",
+        el: "Μυστικό: Περπάτα στο νότιο άκρο του Κέρου όπου οι αμμοθίνες συναντούν το νερό."
+      },
+      items: [
+        {
+          title: { en: "Keros Beach", el: "Παραλία Κέρος" },
+          text: {
+            en: "The island's signature beach. A vast arc of sand, partially organised, partially wild. Shallow turquoise water for a long distance. International kitesurfing destination.",
+            el: "Η παραλία-σήμα κατατεθέν. Απέραντη αμμουδιά, μερικώς οργανωμένη. Διεθνής προορισμός kitesurfing."
+          }
+        },
+        {
+          title: { en: "Gomati Beach", el: "Παραλία Γομάτι" },
+          text: {
+            en: "White sand dunes descending directly into the sea — one of the rare dune beach ecosystems in Greece. Completely undeveloped. One of the most beautiful natural beaches in the entire Aegean.",
+            el: "Λευκές αμμοθίνες που κατηφορίζουν στη θάλασσα. Εντελώς ανέγγιχτη. Από τις ομορφότερες φυσικές παραλίες του Αιγαίου."
+          }
+        },
+        {
+          title: { en: "Thanos Beach", el: "Παραλία Θάνος" },
+          text: {
+            en: "A long sandy beach close to Myrina. Well-organised, easy to access, ideal for families.",
+            el: "Μεγάλη αμμώδης παραλία κοντά στη Μύρινα. Οργανωμένη, ιδανική για οικογένειες."
+          }
+        },
+        {
+          title: { en: "Plati Beach", el: "Παραλία Πλατύ" },
+          text: {
+            en: "The most popular beach near the capital. Wide, sandy, gently-shelving, with good tavernas behind it.",
+            el: "Η πιο δημοφιλής παραλία κοντά στη Μύρινα. Φαρδιά, αμμώδης, με ταβέρνες από πίσω."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "Top Attractions & Experiences", el: "Κορυφαία Αξιοθέατα & Εμπειρίες" },
+      layout: "numbered",
+      items: [
+        {
+          title: { en: "Poliochni Archaeological Site", el: "Αρχαιολογικός Χώρος Πολιόχνης" },
+          text: {
+            en: "One of the oldest cities in Europe, founded around 4000 BC. Predates Troy by centuries. The ruins sit on a promontory with wide sea views. Secret: Almost no one visits — go on a weekday morning.",
+            el: "Μία από τις αρχαιότερες πόλεις της Ευρώπης (4000 π.Χ.). Προηγείται της Τροίας. Μυστικό: Σχεδόν κανείς δεν το επισκέπτεται."
+          }
+        },
+        {
+          title: { en: "Hephaestia & Sanctuary of the Kabeiroi", el: "Ηφαιστία & Ιερό των Καβείρων" },
+          text: {
+            en: "Hephaestia was Lemnos' most important ancient city — theatre carved into the hillside, agora foundations, sea views. The Kabeiroi sanctuary was a mystery cult site perched on a rocky cape. Secret: Arrive late afternoon when the light is horizontal and the site is deserted.",
+            el: "Η Ηφαιστία ήταν η σημαντικότερη αρχαία πόλη. Το Ιερό των Καβείρων ήταν μυστηριακός τόπος. Μυστικό: Πηγαίνετε αργά το απόγευμα."
+          }
+        },
+        {
+          title: { en: "Kontias Village", el: "Χωριό Κοντιάς" },
+          text: {
+            en: "The most architecturally preserved traditional village on the island. Stone houses, a square with a kafeneion under a plane tree. Good base for exploring the southern coast.",
+            el: "Το πιο καλοδιατηρημένο παραδοσιακό χωριό. Πέτρινα σπίτια, πλατεία με πλάτανο."
+          }
+        },
+        {
+          title: { en: "Katalako & the Southern Wetlands", el: "Κατάλακο & Νότιοι Υγρότοποι" },
+          text: {
+            en: "Lagoons, salt marshes, and low dunes — a protected Natura 2000 zone. One of the best birdwatching areas in the northern Aegean. Flamingos regularly sighted in spring and autumn.",
+            el: "Λιμνοθάλασσες, αλυκές, αμμοθίνες — περιοχή Natura 2000. Φλαμίνγκο την άνοιξη και το φθινόπωρο."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "Food in Lemnos — What to Eat & Where", el: "Φαγητό στη Λήμνο — Τι να Φας & Πού" },
+      layout: "list",
+      alert: {
+        en: "Secret: Ask at your accommodation for the name of the current best fish taverna in Myrina. It changes — a new one opens, an old one gets lazy — and locals always know.",
+        el: "Μυστικό: Ρωτήστε στο κατάλυμά σας ποια είναι η καλύτερη ψαροταβέρνα της Μύρινας. Αλλάζει κάθε χρόνο."
+      },
+      items: [
+        {
+          title: { en: "Kalathaki Limnou (PDO)", el: "Καλαθάκι Λήμνου (ΠΟΠ)" },
+          text: {
+            en: "Lemnos' most celebrated product. A soft, creamy white cheese matured in small basket moulds. Mild, slightly salty. Eat as meze, fried as saganaki, or simply with olive oil and bread.",
+            el: "Το πιο διάσημο προϊόν της Λήμνου. Απαλό, κρεμώδες λευκό τυρί. Ιδανικό ως μεζές ή σαγανάκι."
+          }
+        },
+        {
+          title: { en: "Muscat Wine of Lemnos (PDO)", el: "Μοσχάτο Λήμνου (ΠΟΠ)" },
+          text: {
+            en: "One of Greece's oldest wines — a sweet Muscat from the Muscat of Alexandria grape cultivated on the island for 2,500 years. Visit Chatzigeorgiou Estate near Kontias.",
+            el: "Από τα αρχαιότερα κρασιά της Ελλάδας. Γλυκό Μοσχάτο, καλλιεργείται εδώ 2.500 χρόνια."
+          }
+        },
+        {
+          title: { en: "Fresh Seafood", el: "Φρέσκο Ψάρι" },
+          text: {
+            en: "The position of Lemnos in the North Aegean produces exceptional fish. The tavernas of Myrina's harbour and smaller fishing villages serve fish grilled simply over charcoal.",
+            el: "Η θέση της Λήμνου στο Βόρειο Αιγαίο παράγει εξαιρετικό ψάρι. Ψητό στα κάρβουνα."
+          }
+        },
+        {
+          title: { en: "Local honey", el: "Τοπικό μέλι" },
+          text: {
+            en: "Thyme and wildflower honey produced on Lemnos. Available from local producers and at the Saturday market in Myrina.",
+            el: "Μέλι θυμαρίσιο και βουνίσιο. Διαθέσιμο από παραγωγούς και στη λαϊκή της Μύρινας."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "Practical Tips", el: "Πρακτικά Tips" },
+      layout: "list",
+      alert: {
+        en: "Secret: The Meltemi wind is strong in July–August. Eastern and southern bays are more sheltered. Plan beach days with wind direction in mind.",
+        el: "Μυστικό: Οι ανατολικοί και νότιοι όρμοι είναι πιο προστατευμένοι από το Μελτέμι."
+      },
+      items: [
+        {
+          title: { en: "Rent a car from day one", el: "Νοικιάστε αυτοκίνητο από την πρώτη μέρα" },
+          text: {
+            en: "Lemnos is large and spread out. A car transforms the trip.",
+            el: "Η Λήμνος είναι μεγάλη. Το αυτοκίνητο κάνει τη διαφορά."
+          }
+        },
+        {
+          title: { en: "Spend at least 4–5 days", el: "Αφιερώστε τουλάχιστον 4–5 μέρες" },
+          text: {
+            en: "One or two days barely scratch the surface. The island reveals itself gradually.",
+            el: "Μία-δύο μέρες δεν φτάνουν. Το νησί αποκαλύπτεται σταδιακά."
+          }
+        },
+        {
+          title: { en: "Carry cash in villages", el: "Μετρητά στα χωριά" },
+          text: {
+            en: "Many smaller tavernas and shops in rural Lemnos do not take cards.",
+            el: "Πολλές ταβέρνες δεν δέχονται κάρτες."
+          }
+        },
+        {
+          title: { en: "Carry water for archaeological sites", el: "Νερό για τους αρχαιολογικούς χώρους" },
+          text: {
+            en: "Poliochni and the Kabeiroi sanctuary are exposed with no facilities nearby.",
+            el: "Η Πολιόχνη και το Ιερό των Καβείρων είναι εκτεθειμένα."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "FAQ — Lemnos Essentials", el: "Συχνές Ερωτήσεις" },
+      layout: "faq",
+      items: [
+        {
+          title: { en: "Is Lemnos worth visiting?", el: "Αξίζει να επισκεφθώ τη Λήμνο;" },
+          text: {
+            en: "Very much so. One of the most rewarding large islands for travellers who want authentic island life, exceptional beaches, and real food culture without crowds.",
+            el: "Πολύ. Από τα πιο ανταποδοτικά νησιά για αυθεντική εμπειρία."
+          }
+        },
+        {
+          title: { en: "How many days do you need in Lemnos?", el: "Πόσες μέρες χρειάζονται;" },
+          text: {
+            en: "Minimum 4 days. 6–7 days allows a more complete exploration.",
+            el: "Τουλάχιστον 4 μέρες. 6–7 για πλήρη εξερεύνηση."
+          }
+        },
+        {
+          title: { en: "Is Lemnos crowded in summer?", el: "Έχει πολύ κόσμο το καλοκαίρι;" },
+          text: {
+            en: "No — not by Greek island standards. Even in August, far quieter than comparable islands.",
+            el: "Όχι. Ακόμα και τον Αύγουστο, πολύ πιο ήσυχα από άλλα νησιά."
+          }
+        },
+        {
+          title: { en: "Do you need a car in Lemnos?", el: "Χρειάζομαι αυτοκίνητο;" },
+          text: {
+            en: "Yes. The best beaches, villages, and archaeological sites are widely distributed.",
+            el: "Ναι. Οι καλύτερες παραλίες είναι διάσπαρτες."
+          }
+        },
+        {
+          title: { en: "Is Lemnos good for families?", el: "Είναι κατάλληλη για οικογένειες;" },
+          text: {
+            en: "Yes. Shallow sandy beaches, relaxed pace, quiet roads, very safe.",
+            el: "Ναι. Ρηχές αμμώδεις παραλίες, χαλαρός ρυθμός, ασφαλής."
+          }
+        },
+        {
+          title: { en: "What is Kalathaki cheese?", el: "Τι είναι το Καλαθάκι Λήμνου;" },
+          text: {
+            en: "A PDO soft white cheese made from sheep and goat milk in small basket moulds. Lemnos' most famous food product.",
+            el: "Τυρί ΠΟΠ από πρόβειο και κατσικίσιο γάλα. Το πιο διάσημο προϊόν της Λήμνου."
+          }
+        }
+      ]
+    }
+  ],
+  kalamata: [
+    {
+      title: {
+        en: "Why Visit Kalamata",
+        el: "Γιατί να Επισκεφθείς την Καλαμάτα",
+      },
+      layout: "numbered",
+      items: [
+        {
+          title: { en: "It's a real city, not just a resort", el: "Είναι αληθινή πόλη, όχι απλώς θέρετρο" },
+          text: {
+            en: "Kalamata has urban texture — a Saturday market, neighbourhood kafenia, local tavernas where nobody is catering to tourists. That everyday quality is increasingly rare and genuinely enjoyable.",
+            el: "Η Καλαμάτα έχει αστική υφή — λαϊκή αγορά, γειτονιές με καφενεία, τοπικές ταβέρνες. Αυτή η καθημερινή αυθεντικότητα είναι όλο και πιο σπάνια."
+          }
+        },
+        {
+          title: { en: "The beach is exceptional and central", el: "Η παραλία είναι εξαιρετική και κεντρική" },
+          text: {
+            en: "The main Kalamata beach runs almost 7km, is clean, organised, and begins within walking distance of the Old Town. You don't need a car to reach a very good beach.",
+            el: "Η παραλία της Καλαμάτας εκτείνεται σχεδόν 7 χλμ., είναι καθαρή, οργανωμένη και ξεκινά σε απόσταση περπατήματος από την Παλιά Πόλη."
+          }
+        },
+        {
+          title: { en: "Best base for the southern Peloponnese", el: "Η καλύτερη βάση για τη νότια Πελοπόννησο" },
+          text: {
+            en: "Costa Navarino, Pylos, the Mani, Ancient Messene, Mystras — all within striking distance. No other city in the region gives you this range.",
+            el: "Costa Navarino, Πύλος, Μάνη, Αρχαία Μεσσήνη, Μυστράς — όλα σε κοντινή απόσταση. Καμία άλλη πόλη δεν προσφέρει αυτή την ποικιλία."
+          }
+        },
+        {
+          title: { en: "The food is serious", el: "Το φαγητό είναι σοβαρή υπόθεση" },
+          text: {
+            en: "Kalamata olives, Kalamata olive oil, figs, mountain herbs, fresh fish from the Messenian Gulf — the local food culture is rooted and unfussy.",
+            el: "Ελιές Καλαμάτας, ελαιόλαδο, σύκα, βότανα του βουνού, φρέσκο ψάρι — η τοπική γαστρονομία είναι αυθεντική."
+          }
+        },
+        {
+          title: { en: "It avoids the island tourist trap", el: "Δεν έχει την τουριστική παγίδα των νησιών" },
+          text: {
+            en: "No overcrowding, no inflated prices, no shops selling the same fridge magnets. The city moves at a Greek pace and doesn't perform for visitors.",
+            el: "Χωρίς υπερβολικό συνωστισμό, χωρίς φουσκωμένες τιμές. Η πόλη κινείται με ελληνικό ρυθμό."
+          }
+        }
+      ]
+    },
+    {
+      title: {
+        en: "Best Time to Visit Kalamata",
+        el: "Καλύτερη Εποχή για Επίσκεψη",
+      },
+      layout: "list",
+      alert: {
+        en: "Secret: The Kalamata Dance Festival, held annually in late June–early July, transforms the waterfront into an outdoor stage. If dates align, it's worth planning around.",
+        el: "Μυστικό: Το Διεθνές Φεστιβάλ Χορού Καλαμάτας στα τέλη Ιουνίου–αρχές Ιουλίου μετατρέπει το παραλιακό μέτωπο σε υπαίθρια σκηνή."
+      },
+      items: [
+        {
+          title: { en: "Spring (April–May)", el: "Άνοιξη (Απρίλιος–Μάιος)" },
+          text: {
+            en: "The best time for the city and inland exploration. Temperatures are ideal for walking, the countryside is green, and Ancient Messene is at its most photogenic. Easter in Kalamata is atmospheric.",
+            el: "Ιδανική εποχή για την πόλη και την ενδοχώρα. Θερμοκρασίες ιδανικές για περπάτημα, η ύπαιθρος καταπράσινη."
+          }
+        },
+        {
+          title: { en: "June & September", el: "Ιούνιος & Σεπτέμβριος" },
+          text: {
+            en: "The sweet spot for combining beach and exploration. The sea is warm, the city is alive, but without August's intensity. September in particular is excellent.",
+            el: "Ιδανικός συνδυασμός παραλίας και εξερεύνησης. Η θάλασσα ζεστή, η πόλη ζωντανή, χωρίς την ένταση του Αυγούστου."
+          }
+        },
+        {
+          title: { en: "July–August", el: "Ιούλιος–Αύγουστος" },
+          text: {
+            en: "Peak season. The beach fills up, the waterfront buzzes until late. High-energy and enjoyable if you like summer rhythm, but book accommodation early.",
+            el: "Υψηλή περίοδος. Η παραλία γεμίζει, το παραλιακό μέτωπο ζωντανεύει μέχρι αργά. Κλείστε διαμονή νωρίς."
+          }
+        },
+        {
+          title: { en: "Autumn & Winter", el: "Φθινόπωρο & Χειμώνας" },
+          text: {
+            en: "Underrated. The Messinia plain turns golden, the olive harvest runs October–December. Winter visits work well for archaeology, road trips to Mani, and food-focused travel.",
+            el: "Υποτιμημένη εποχή. Η πεδιάδα της Μεσσηνίας χρυσίζει, η συγκομιδή ελιάς διαρκεί Οκτώβριο–Δεκέμβριο. Ιδανική για αρχαιολογία και road trips."
+          }
+        }
+      ]
+    },
+    {
+      title: {
+        en: "How to Get to Kalamata",
+        el: "Πώς να Φτάσεις στην Καλαμάτα",
+      },
+      layout: "grid",
+      items: [
+        {
+          title: { en: "By air", el: "Αεροπορικώς" },
+          text: {
+            en: "Kalamata International Airport (KLX) has direct international connections from the UK and northern Europe spring through autumn. 15-minute drive from the city centre.",
+            el: "Ο Διεθνής Αερολιμένας Καλαμάτας (KLX) έχει απευθείας διεθνείς πτήσεις. 15 λεπτά από το κέντρο."
+          }
+        },
+        {
+          title: { en: "By car from Athens", el: "Οδικώς από Αθήνα" },
+          text: {
+            en: "Approximately 2.5–3 hours via the E65 motorway. A car is strongly recommended — it unlocks the entire region.",
+            el: "Περίπου 2.5–3 ώρες μέσω Ε65. Αυτοκίνητο συνιστάται ανεπιφύλακτα."
+          }
+        },
+        {
+          title: { en: "By bus (KTEL)", el: "Με λεωφορείο (ΚΤΕΛ)" },
+          text: {
+            en: "Regular KTEL Messinia buses run from Athens (Kifissos terminal). Journey time approximately 3.5 hours.",
+            el: "Τακτικά δρομολόγια ΚΤΕΛ Μεσσηνίας από Αθήνα (Κηφισός). Διάρκεια περίπου 3.5 ώρες."
+          }
+        }
+      ]
+    },
+    {
+      title: {
+        en: "Top Attractions & Experiences in Kalamata",
+        el: "Κορυφαία Αξιοθέατα & Εμπειρίες",
+      },
+      layout: "numbered",
+      items: [
+        {
+          title: { en: "Old Town & Byzantine Castle", el: "Παλιά Πόλη & Βυζαντινό Κάστρο" },
+          text: {
+            en: "The Kastro dominates the hill above the city with outstanding views. Below the castle, the Old Town (Ano Poli) retains pre-earthquake character: stone houses, narrow streets, small squares with tavernas. Secret: Attend an outdoor theatrical performance at the castle in summer.",
+            el: "Το Κάστρο δεσπόζει πάνω από την πόλη με εκπληκτική θέα. Η Παλιά Πόλη διατηρεί τον προσεισμικό χαρακτήρα της. Μυστικό: Παρακολουθήστε θεατρική παράσταση στο κάστρο το καλοκαίρι."
+          }
+        },
+        {
+          title: { en: "Waterfront & Marina", el: "Παραλιακό Μέτωπο & Μαρίνα" },
+          text: {
+            en: "The Kalamata waterfront runs from the old port through the marina to the main beach promenade. Walk the length of it at dusk — the light over the Messenian Gulf at this hour is genuinely beautiful.",
+            el: "Το παραλιακό μέτωπο εκτείνεται από το παλιό λιμάνι μέχρι την παραλία. Περπατήστε το το σούρουπο — το φως στον Μεσσηνιακό Κόλπο είναι μαγευτικό."
+          }
+        },
+        {
+          title: { en: "Kalamata Beach", el: "Παραλία Καλαμάτας" },
+          text: {
+            en: "One of the longest urban beaches in Greece. Clean, organised, with a fine dark-grey sand unique to this coastline. The northern end is quieter; the southern stretches have umbrellas and beach bars.",
+            el: "Μία από τις μεγαλύτερες αστικές παραλίες στην Ελλάδα. Καθαρή, οργανωμένη, με σκούρα γκρι άμμο."
+          }
+        },
+        {
+          title: { en: "Saturday Market (Laiki Agora)", el: "Λαϊκή Αγορά (Σάββατο)" },
+          text: {
+            en: "One of the most vibrant farmers' markets in the Peloponnese. Running since the 19th century. Local olives, fresh herbs, mountain honey, handmade cheese. Secret: Arrive before 9am.",
+            el: "Μία από τις πιο ζωντανές λαϊκές αγορές της Πελοποννήσου. Από τον 19ο αιώνα. Μυστικό: Πηγαίνετε πριν τις 9πμ."
+          }
+        },
+        {
+          title: { en: "Archaeological Museum of Messenia", el: "Αρχαιολογικό Μουσείο Μεσσηνίας" },
+          text: {
+            en: "A well-curated museum covering the archaeology of the entire Messenia region — from prehistoric settlements to classical and Byzantine finds.",
+            el: "Άριστα οργανωμένο μουσείο με ευρήματα από όλη τη Μεσσηνία."
+          }
+        },
+        {
+          title: { en: "Dance Festival (late June–early July)", el: "Φεστιβάλ Χορού (τέλη Ιουνίου–αρχές Ιουλίου)" },
+          text: {
+            en: "The Kalamata International Dance Festival is one of the most significant contemporary dance events in Greece. Performances along the waterfront and in the castle — free for most events.",
+            el: "Ένα από τα σημαντικότερα φεστιβάλ σύγχρονου χορού στην Ελλάδα. Δωρεάν είσοδος στα περισσότερα."
+          }
+        }
+      ]
+    },
+    {
+      title: {
+        en: "Food in Kalamata — What to Eat & Where",
+        el: "Φαγητό στην Καλαμάτα — Τι να Φας & Πού",
+      },
+      layout: "list",
+      items: [
+        {
+          title: { en: "Kalamata Olives", el: "Ελιές Καλαμάτας" },
+          text: {
+            en: "The world knows these olives by name but rarely eats them at source. Deep purple, meaty, intensely flavoured. The real thing is different from the jarred variety.",
+            el: "Ο κόσμος τις ξέρει με το όνομά τους αλλά σπάνια τις δοκιμάζει στην πηγή τους. Βαθύ μωβ, σαρκώδεις, έντονα γευστικές."
+          }
+        },
+        {
+          title: { en: "Kalamata Olive Oil", el: "Ελαιόλαδο Καλαμάτας" },
+          text: {
+            en: "PDO-certified, produced from Koroneiki olives. Fruity, slightly peppery, with remarkable depth. Buy it directly from local producers at the Saturday market.",
+            el: "ΠΟΠ, από ελιές Κορωνέικη. Φρουτώδες, ελαφρώς πιπεράτο. Αγοράστε το απευθείας από παραγωγούς."
+          }
+        },
+        {
+          title: { en: "Fresh Fish from the Messenian Gulf", el: "Φρέσκο Ψάρι από τον Μεσσηνιακό Κόλπο" },
+          text: {
+            en: "Bream, bass, sardines, anchovies — grilled simply over charcoal, dressed with lemon and olive oil. The tavernas along the old port are the right places.",
+            el: "Τσιπούρα, λαβράκι, σαρδέλες — ψητά στα κάρβουνα. Οι ταβέρνες στο παλιό λιμάνι είναι η σωστή επιλογή."
+          }
+        },
+        {
+          title: { en: "Sfela Cheese", el: "Σφέλα" },
+          text: {
+            en: "A sharp, slightly salty white cheese from the mountains of Messenia — a PDO product. Often served fried (saganaki) or grilled.",
+            el: "Πικάντικο, ελαφρώς αλμυρό λευκό τυρί από τα βουνά της Μεσσηνίας (ΠΟΠ). Συχνά σερβίρεται τηγανητό (σαγανάκι)."
+          }
+        },
+        {
+          title: { en: "Where to eat: Old port area", el: "Πού να φας: Παλιό λιμάνι" },
+          text: {
+            en: "The best seafood tavernas. Look for the ones where local fishermen eat. In Ano Poli (Old Town), traditional tavernas under the castle walls with a slower, more local feel.",
+            el: "Οι καλύτερες ταβέρνες ψαριού. Ψάξτε εκεί που τρώνε οι ντόπιοι ψαράδες."
+          }
+        }
+      ]
+    },
+    {
+      title: {
+        en: "Day Trips & Nearby Destinations",
+        el: "Ημερήσιες Εκδρομές & Κοντινοί Προορισμοί",
+      },
+      layout: "numbered",
+      items: [
+        {
+          title: { en: "Costa Navarino & Voidokilia Beach", el: "Costa Navarino & Βοϊδοκοιλιά" },
+          text: {
+            en: "About 40km southwest of Kalamata. Voidokilia — a horseshoe-shaped bay framed by dunes — is one of the most beautiful beaches in Europe and freely accessible to all. The natural landscape here is remarkable: the lagoon of Divari, the cave of Nestor, the dunes of NATURA 2000.",
+            el: "40 χλμ. νοτιοδυτικά. Η Βοϊδοκοιλιά — παραλία σε σχήμα πετάλου — είναι από τις ομορφότερες στην Ευρώπη και ελεύθερα προσβάσιμη."
+          }
+        },
+        {
+          title: { en: "Pylos & the Bay of Navarino", el: "Πύλος & Κόλπος Ναβαρίνου" },
+          text: {
+            en: "One of the most beautiful small towns in the Peloponnese. The elegant main square shaded by plane trees, the Niokastro fortress, boat trips to Sphacteria island. Secret: Boat trips around the bay at sunset are a genuinely outstanding experience.",
+            el: "Μία από τις ομορφότερες μικρές πόλεις της Πελοποννήσου. Μυστικό: Οι βαρκάδες στον κόλπο το ηλιοβασίλεμα είναι μοναδικές."
+          }
+        },
+        {
+          title: { en: "Mani Peninsula", el: "Χερσόνησος της Μάνης" },
+          text: {
+            en: "The Mani is unlike anywhere else in Greece — a landscape of arid stone, tower houses, medieval villages, and turquoise coves. Kardamyli is the celebrated entry point. Deep Mani offers Vathia tower houses, Pyrgos Dirou sea caves, and Cape Tenaro — the southernmost point of mainland Greece.",
+            el: "Η Μάνη είναι αλλιώτικη — πέτρινοι πύργοι, μεσαιωνικά χωριά, τιρκουάζ όρμοι. Καρδαμύλη, Βαθιά, Πύργος Διρού, Ακρωτήριο Ταίναρο."
+          }
+        },
+        {
+          title: { en: "Ancient Messene", el: "Αρχαία Μεσσήνη" },
+          text: {
+            en: "One of the great under-visited archaeological sites of Greece. Founded in 369 BC, with 9km of circuit walls still standing, a theatre, stadium, sanctuary of Asklepios. You may have the site largely to yourself. Secret: Go in the morning for extraordinary light.",
+            el: "Ένας από τους σπουδαιότερους υποτιμημένους αρχαιολογικούς χώρους. Τείχη 9χλμ., θέατρο, στάδιο. Μυστικό: Πηγαίνετε το πρωί."
+          }
+        },
+        {
+          title: { en: "Mystras (UNESCO)", el: "Μυστράς (UNESCO)" },
+          text: {
+            en: "About 60km northeast of Kalamata, a Byzantine ghost city on the Taygetos range. The last capital of the Byzantine Empire. Palaces, churches, monasteries. The Pantanassa frescoes are among the finest late Byzantine painting.",
+            el: "60 χλμ. βορειοανατολικά, βυζαντινή πολιτεία-φάντασμα στον Ταΰγετο. Τελευταία πρωτεύουσα της Βυζαντινής Αυτοκρατορίας."
+          }
+        }
+      ]
+    },
+    {
+      title: {
+        en: "Practical Tips",
+        el: "Πρακτικά Tips",
+      },
+      layout: "list",
+      alert: {
+        en: "Secret: The Saturday market is non-negotiable. Even if you're not buying, walk through it. And carry cash in the Mani — many small tavernas and villages still operate cash-only.",
+        el: "Μυστικό: Η λαϊκή αγορά του Σαββάτου είναι must. Ακόμα κι αν δεν αγοράζετε, περπατήστε τη. Και στην Μάνη να έχετε μετρητά."
+      },
+      items: [
+        {
+          title: { en: "Rent a car", el: "Νοικιάστε αυτοκίνητο" },
+          text: {
+            en: "A car is not optional here — it's the entire point. The best things in this region are not in Kalamata itself.",
+            el: "Το αυτοκίνητο δεν είναι προαιρετικό — είναι η ουσία. Τα καλύτερα είναι έξω από την πόλη."
+          }
+        },
+        {
+          title: { en: "Stay at least 3 nights", el: "Μείνετε τουλάχιστον 3 βράδια" },
+          text: {
+            en: "One day for the city, one for Pylos/Costa Navarino, one for the Mani. That's the minimum to feel the region.",
+            el: "Μία μέρα για την πόλη, μία για Πύλο/Costa Navarino, μία για Μάνη."
+          }
+        },
+        {
+          title: { en: "Eat at the old port, not the promenade", el: "Φάτε στο παλιό λιμάνι" },
+          text: {
+            en: "The restaurants facing the water are for tourists. The ones tucked behind the old port walls are for eating.",
+            el: "Τα εστιατόρια μπροστά στο νερό είναι για τουρίστες. Αυτά πίσω από τα τείχη του παλιού λιμανιού είναι για φαγητό."
+          }
+        },
+        {
+          title: { en: "Book early for summer", el: "Κλείστε νωρίς για καλοκαίρι" },
+          text: {
+            en: "Particularly around Kardamyli and Stoupa — the better small hotels fill up months ahead.",
+            el: "Ειδικά σε Καρδαμύλη και Στούπα — τα καλύτερα μικρά ξενοδοχεία κλείνουν μήνες πριν."
+          }
+        }
+      ]
+    },
+    {
+      title: {
+        en: "FAQ — Kalamata Essentials",
+        el: "Συχνές Ερωτήσεις",
+      },
+      layout: "faq",
+      items: [
+        {
+          title: { en: "Is Kalamata worth visiting?", el: "Αξίζει να επισκεφθώ την Καλαμάτα;" },
+          text: {
+            en: "Yes — especially if you want an authentic southern Peloponnese experience. A real Greek city with great food, an excellent beach, and extraordinary day trip potential.",
+            el: "Ναι — ειδικά αν θέλετε αυθεντική εμπειρία της νότιας Πελοποννήσου."
+          }
+        },
+        {
+          title: { en: "How many days do you need?", el: "Πόσες μέρες χρειάζονται;" },
+          text: {
+            en: "3 days minimum to cover the city and one or two nearby destinations. 5–7 days to fully explore the region.",
+            el: "3 μέρες τουλάχιστον. 5–7 για πλήρη εξερεύνηση."
+          }
+        },
+        {
+          title: { en: "What is the Mani?", el: "Τι είναι η Μάνη;" },
+          text: {
+            en: "The central of the Peloponnese's three southern peninsulas — a wild, arid, historically independent region of tower houses, Byzantine churches, and spectacular coastline.",
+            el: "Η κεντρική από τις τρεις χερσονήσους της Πελοποννήσου — άγρια, ανεξάρτητη, μοναδική."
+          }
+        },
+        {
+          title: { en: "What's the best beach near Kalamata?", el: "Ποια είναι η καλύτερη παραλία κοντά στην Καλαμάτα;" },
+          text: {
+            en: "Voidokilia, near Pylos, is widely considered one of the most beautiful beaches in Greece. The Kalamata city beach itself is also excellent.",
+            el: "Η Βοϊδοκοιλιά κοντά στην Πύλο θεωρείται από τις ομορφότερες στην Ελλάδα."
+          }
+        },
+        {
+          title: { en: "Is Kalamata good for families?", el: "Είναι η Καλαμάτα κατάλληλη για οικογένειες;" },
+          text: {
+            en: "Yes. The long, gently-shelving beach is ideal. The wider region offers boat trips, caves, archaeological sites with good visitor facilities.",
+            el: "Ναι. Η παραλία είναι ιδανική για οικογένειες με ρηχά νερά."
+          }
+        },
+        {
+          title: { en: "Are Kalamata olives actually from Kalamata?", el: "Οι ελιές Καλαμάτας είναι όντως από Καλαμάτα;" },
+          text: {
+            en: "Yes. The Kalamata olive (Kalamon variety) is native to the Messenia region and carries a PDO designation.",
+            el: "Ναι. Η ελιά Καλαμάτας (ποικιλία Καλαμών) είναι αυτόχθονη της Μεσσηνίας με ΠΟΠ."
+          }
+        }
+      ]
+    }
+  ]
 };

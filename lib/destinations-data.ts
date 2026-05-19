@@ -778,6 +778,64 @@ export const destinations: Destination[] = [
         el: "Πλήρης ταξιδιωτικός οδηγός για την Πάτρα και την ευρύτερη περιοχή — Καρναβάλι, Αρχαία Ολυμπία, Δελφοί, Καλάβρυτα, Αιγιάλεια, Ναύπακτος, Μεσολόγγι και παραλίες Ηλείας."
       }
     }
+  },
+  {
+    slug: "lemnos",
+    name: "Lemnos",
+    region: { en: "North Aegean", el: "Βόρειο Αιγαίο" },
+    blurb: {
+      en: "Volcanic landscape, wide sandy beaches, medieval castle and one of Greece's most authentic island atmospheres.",
+      el: "Ηφαιστειακό τοπίο, απέραντες αμμώδεις παραλίες, μεσαιωνικό κάστρο και μια από τις πιο αυθεντικές νησιωτικές ατμόσφαιρες της Ελλάδας."
+    },
+    image: "/images/lemnos.webp",
+    overview: {
+      en: "Lemnos is the North Aegean's best kept secret — one of the most rewarding islands for travellers who know what they're looking for. The landscape is unlike the typical Greek island postcard: broad plains and golden hills, wide sandy bays with shallow turquoise water, volcanic outcrops. Myrina has one of the finest harbour towns in the Aegean. Lemnos has almost no mass tourism — the tavernas serve local food, the villages are genuinely inhabited, and the beaches are rarely crowded even in summer.",
+      el: "Η Λήμνος είναι το καλύτερα κρυμμένο μυστικό του Βορείου Αιγαίου. Το τοπίο δεν μοιάζει με την τυπική ελληνική καρτ ποστάλ: κάμπ οι και χρυσοί λόφοι, αμμώδεις όρμοι, ηφαιστειακές εξάρσεις. Η Μύρινα έχει ένα από τα ωραιότερα λιμάνια του Αιγαίου. Η Λήμνος δεν έχει μαζικό τουρισμό — οι ταβέρνες σερβίρουν τοπικό φαγητό, τα χωριά είναι ζωντανά, οι παραλίες σπάνια γεμάτες."
+    },
+    highlights: {
+      en: ["Myrina Castle & harbour", "Keros & Gomati beaches", "Kalathaki cheese & Muscat wine", "Poliochni — Europe's oldest city", "Authentic island life"],
+      el: ["Κάστρο & λιμάνι Μύρινας", "Παραλίες Κέρος & Γομάτι", "Καλαθάκι Λήμνου & Μοσχάτο", "Πολιόχνη — η αρχαιότερη πόλη", "Αυθεντική νησιωτική ζωή"]
+    },
+    featured: true,
+    seo: {
+      title: {
+        en: "Lemnos Travel Guide: Beaches, Villages, Local Food & Things to Do | GoGreeceNow",
+        el: "Λήμνος: Οδηγός Ταξιδιού — Παραλίες, Χωριά, Γαστρονομία & Αξιοθέατα | GoGreeceNow"
+      },
+      description: {
+        en: "Complete guide to Lemnos island: the best beaches, villages like Myrina and Plati, local food (Muscat wine, Kalathaki cheese, seafood), ancient sites, and practical tips.",
+        el: "Πλήρης οδηγός για τη Λήμνο: καλύτερες παραλίες, χωριά, τοπική γαστρονομία (Μοσχάτο, Καλαθάκι), αρχαιολογικοί χώροι και πρακτικές συμβουλές."
+      }
+    }
+  },
+  {
+    slug: "kalamata",
+    name: "Kalamata",
+    region: { en: "Peloponnese", el: "Πελοπόννησος" },
+    blurb: {
+      en: "Beaches, old town, castle, Costa Navarino and the gateway to the Mani peninsula.",
+      el: "Παραλίες, παλιά πόλη, κάστρο, Costa Navarino και η πύλη για τη Μάνη."
+    },
+    image: "/images/kalamata.webp",
+    overview: {
+      en: "Kalamata is the city that the Peloponnese doesn't shout about enough. It sits at the head of the Messenian Gulf — a long arc of coastline between Taygetos mountains to the east and the fertile plain to the west. The city has a proper Old Town with Byzantine history, a waterfront that invites an evening walk, a beach that stretches for kilometres right in the city centre, and one of the best regional cuisines in southern Greece. But Kalamata is also the gateway to Costa Navarino, Pylos, the Mani peninsula, Ancient Messene and Mystras. This is a destination with real depth.",
+      el: "Η Καλαμάτα είναι η πόλη που η Πελοπόννησος δεν διαφημίζει αρκετά. Βρίσκεται στην κορυφή του Μεσσηνιακού Κόλπου, ανάμεσα στα βουνά του Ταϋγέτου και την εύφορη πεδιάδα. Η πόλη έχει μια αυθεντική Παλιά Πόλη με βυζαντινή ιστορία, ένα παραλιακό μέτωπο που σε καλεί για βραδινό περίπατο, μια παραλία που εκτείνεται για χιλιόμετρα στο κέντρο της πόλης και μία από τις καλύτερες τοπικές κουζίνες στη νότια Ελλάδα. Αλλά η Καλαμάτα είναι επίσης η πύλη για Costa Navarino, Πύλο, Μάνη, Αρχαία Μεσσήνη και Μυστρά."
+    },
+    highlights: {
+      en: ["Kalamata Beach & Old Town", "Costa Navarino & Voidokilia", "Deep Mani Peninsula", "Ancient Messene", "Local food & olive oil"],
+      el: ["Παραλία & Παλιά Πόλη Καλαμάτας", "Costa Navarino & Voidokilia", "Χερσόνησος Μάνης", "Αρχαία Μεσσήνη", "Τοπική κουζίνα & ελαιόλαδο"]
+    },
+    featured: true,
+    seo: {
+      title: {
+        en: "Kalamata Travel Guide: Beaches, Old Town, Mani & Costa Navarino | GoGreeceNow",
+        el: "Καλαμάτα: Οδηγός Ταξιδιού — Παραλίες, Παλιά Πόλη, Μάνη & Costa Navarino | GoGreeceNow"
+      },
+      description: {
+        en: "Complete guide to Kalamata and the Messinia region: best beaches, Old Town, Castle, what to eat, Costa Navarino, Mani, Pylos and Ancient Messene. Plan your Peloponnese trip.",
+        el: "Πλήρης οδηγός για την Καλαμάτα και τη Μεσσηνία: καλύτερες παραλίες, Παλιά Πόλη, Κάστρο, φαγητό, Costa Navarino, Μάνη, Πύλος και Αρχαία Μεσσήνη."
+      }
+    }
   }
 ];
 

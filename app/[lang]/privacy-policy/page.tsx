@@ -3,6 +3,7 @@ import Link from "next/link";
 import SiteHeader from "../../../components/site-header";
 import { SITE_URL, Lang, isLang } from "../../../lib/content";
 import { withLang } from "../../../lib/locale";
+import { breadcrumbSchema } from "../../../lib/structured-data";
 
 const staticText = {
   title: {
@@ -165,8 +166,17 @@ export default async function PrivacyPage({ params }: Props) {
     },
   ];
 
+  const breadcrumb = breadcrumbSchema(lang, [
+    { label: lang === "en" ? "Home" : "Αρχική", path: "" },
+    { label: lang === "en" ? "Privacy Policy" : "Πολιτική Απορρήτου", path: "/privacy-policy" },
+  ]);
+
   return (
     <main className="min-h-screen bg-slate-50 text-slate-900">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
+      />
       <SiteHeader />
 
       <section className="bg-slate-900 py-16 sm:py-24">
