@@ -373,6 +373,39 @@ export const destinations: Destination[] = [
     }
   },
   {
+    slug: "naxos",
+    name: "Naxos",
+    region: { en: "Cyclades", el: "Κυκλάδες" },
+    blurb: { en: "Big Cycladic energy, long sandy beaches, mountain villages and authentic island life.", el: "Μεγάλη κυκλαδίτικη ενέργεια, απέραντες αμμουδιές, ορεινά χωριά και αυθεντική νησιωτική ζωή." },
+    image: "/images/naxos.webp",
+    overview: { 
+      en: "Long sandy beaches, a massive Venetian castle, mountain villages, fresh local food and a relaxed but complete Cycladic experience.", 
+      el: "Απέραντες αμμουδιές, ένα τεράστιο ενετικό κάστρο, ορεινά χωριά, φρέσκο τοπικό φαγητό και μια χαλαρή αλλά ολοκληρωμένη κυκλαδίτικη εμπειρία." 
+    },
+    highlights: { en: ["Naxos Old Town & Castle", "Agios Prokopios beach", "Mountain villages (Halki, Apeiranthos)", "Temple of Apollo (Portara)"], el: ["Παλιά Πόλη & Κάστρο Νάξου", "Παραλία Άγιος Προκόπιος", "Ορεινά χωριά (Χαλκί, Απείρανθος)", "Πορτάρα (Ναός του Απόλλωνα)"] },
+    featured: true,
+    guideLinks: [
+      {
+        href: "/hotels/naxos",
+        label: { en: "Explore stays in Naxos", el: "Ανακαλύψτε διαμονή στη Νάξο" }
+      },
+      {
+        href: "/tours/all",
+        label: { en: "See tours & experiences", el: "Δείτε εμπειρίες & tours" }
+      }
+    ],
+    seo: {
+      title: {
+        en: "Naxos Travel Guide | Beaches, Villages, Food & Where to Stay | GoGreeceNow",
+        el: "Νάξος: Οδηγός Ταξιδιού | Παραλίες, Χωριά, Φαγητό & Διαμονή | GoGreeceNow"
+      },
+      description: {
+        en: "Plan your trip to Naxos with our travel guide. Discover beaches, villages, food, where to stay, and the best things to do on the largest and most authentic island in the Cyclades.",
+        el: "Οργανώστε το ταξίδι σας στη Νάξο με τον οδηγό μας. Ανακαλύψτε παραλίες, χωριά, επιλογές για φαγητό, διαμονή και εμπειρίες στο μεγαλύτερο και πιο αυθεντικό νησί των Κυκλάδων."
+      }
+    }
+  },
+  {
     slug: "milos",
     name: "Milos",
     region: { en: "Cyclades", el: "Κυκλάδες" },

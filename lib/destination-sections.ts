@@ -3613,6 +3613,142 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       ]
     }
   ],
+  naxos: [
+    {
+      title: { en: "Why Visit Naxos", el: "Γιατί να επισκεφθείς τη Νάξο" },
+      text: {
+        en: "Naxos is a rare Greek island in that it does not rely on a single postcard image. It has no caldera, no iconic cliffs dropping into the sea, and no single beach that dominates the conversation. Instead, it offers something more valuable for a longer stay: variety, space, and a genuinely complete Cycladic experience. The island is large enough to accommodate many different landscapes — from long sandy beaches on the west coast to rugged mountain trails in the interior, from a lively harbour town to quiet stone villages that feel centuries away from the tourist trail.",
+        el: "Η Νάξος είναι ένα σπάνιο ελληνικό νησί γιατί δεν βασίζεται σε μία και μόνο εικόνα. Δεν έχει καλντέρα, δεν έχει εμβληματικούς γκρεμούς που πέφτουν στη θάλασσα, ούτε μία παραλία που κυριαρχεί στη συζήτηση. Αντίθετα, προσφέρει κάτι πιο πολύτιμο για μεγαλύτερη διαμονή: ποικιλία, χώρο και μια πραγματικά ολοκληρωμένη κυκλαδίτικη εμπειρία. Το νησί είναι αρκετά μεγάλο για να φιλοξενεί πολλά διαφορετικά τοπία — από απέραντες αμμουδιές στη δυτική ακτή έως ορεινά μονοπάτια στην ενδοχώρα, από μια ζωντανή παραλιακή πόλη έως ήσυχα πέτρινα χωριά που νιώθεις σαν να βρίσκονται αιώνες μακριά από τον τουρισμό."
+      },
+      layout: "list",
+      items: [
+        {
+          title: { en: "The most versatile island in the Cyclades", el: "Το πιο ευέλικτο νησί των Κυκλάδων" },
+          text: { en: "Naxos offers beaches, mountains, villages, history, food, and nightlife — all on one island. You can swim in the morning, hike in the afternoon, and eat at a harbour taverna at night. Few Greek islands offer this range without feeling scattered.", el: "Η Νάξος προσφέρει παραλίες, βουνά, χωριά, ιστορία, φαγητό και νυχτερινή ζωή — όλα σε ένα νησί. Μπορείς να κολυμπήσεις το πρωί, να περπατήσεις το απόγευμα και να φας σε μια ταβέρνα στο λιμάνι το βράδυ. Λίγα νησιά προσφέρουν αυτή την ποικιλία χωρίς να νιώθεις διάσπαρτος." }
+        },
+        {
+          title: { en: "Authentic Cycladic character", el: "Αυθεντικός κυκλαδίτικος χαρακτήρας" },
+          text: { en: "Naxos has not been reshaped by mass tourism in the same way as Santorini or Mykonos. The Old Town with its Venetian Castle, the marble-paved lanes of Apeiranthos, and the traditional villages of the Tragea valley all retain a genuine character that many visitors are looking for.", el: "Η Νάξος δεν έχει αλλάξει από τον μαζικό τουρισμό με τον ίδιο τρόπο όπως η Σαντορίνη ή η Μύκονος. Η Παλιά Πόλη με το Ενετικό Κάστρο, τα μαρμαρόστρωτα σοκάκια του Απειράνθου και τα παραδοσιακά χωριά της κοιλάδας της Τραγαίας διατηρούν έναν γνήσιο χαρακτήρα που πολλοί ταξιδιώτες αναζητούν." }
+        },
+        {
+          title: { en: "Excellent local food scene", el: "Εξαιρετική τοπική γαστρονομία" },
+          text: { en: "Naxos is one of the best islands in Greece for food. The fertile soil produces outstanding local cheeses (graviera, arseniko, touloumotyri), the famous kitron liqueur, potatoes, olives, and high-quality meat. The tavernas in Naxos Town and the mountain villages serve honest, well-prepared dishes.", el: "Η Νάξος είναι από τα καλύτερα νησιά για φαγητό. Το εύφορο έδαφος παράγει εξαιρετικά τοπικά τυριά (γκραβιέρα, αρσενικό, τουλουμοτύρι), το περίφημο λικέρ κίτρο, πατάτες, ελιές και κρέας υψηλής ποιότητας. Οι ταβέρνες στη Χώρα και στα ορεινά χωριά σερβίρουν τίμια, καλομαγειρεμένα πιάτα." }
+        },
+        {
+          title: { en: "Less crowded than its famous neighbours", el: "Λιγότερο πολυσύχναστη από τους διάσημους γείτονες" },
+          text: { en: "Even in August, Naxos rarely feels as overwhelmed as Santorini or Mykonos. The island has room to breathe. Beaches are long enough to find your own spot, and the main town has a lively but manageable atmosphere.", el: "Ακόμα και τον Αύγουστο, η Νάξος σπάνια νιώθει τόσο γεμάτη όσο η Σαντορίνη ή η Μύκονος. Το νησί έχει χώρο να αναπνεύσει. Οι παραλίες είναι αρκετά μεγάλες για να βρεις το δικό σου σημείο και η Χώρα έχει μια ζωντανή αλλά διαχειρίσιμη ατμόσφαιρα." }
+        }
+      ]
+    },
+    {
+      title: { en: "Best Areas to Stay in Naxos", el: "Οι καλύτερες περιοχές για διαμονή στη Νάξο" },
+      text: {
+        en: "Where you stay in Naxos depends on whether you want convenience, a beach base, or mountain village experience. Here are the main areas:",
+        el: "Το πού θα μείνεις στη Νάξο εξαρτάται από το αν θες ευκολία, βάση παραλίας ή εμπειρία ορεινού χωριού. Οι κύριες περιοχές:"
+      },
+      layout: "grid",
+      items: [
+        {
+          title: { en: "Naxos Town (Chora)", el: "Χώρα Νάξου" },
+          text: { en: "The most convenient base. Naxos Town has the best dining, nightlife, shopping, and transport connections. The Old Town beneath the Castle is one of the most atmospheric neighborhoods in the Cyclades. It is a 10-15 minute drive from the best beaches.", el: "Η πιο βολική βάση. Η Χώρα έχει τα καλύτερα εστιατόρια, νυχτερινή ζωή, ψώνια και συγκοινωνίες. Η Παλιά Πόλη κάτω από το Κάστρο είναι από τις πιο ατμοσφαιρικές γειτονιές των Κυκλάδων. Απέχει 10-15 λεπτά με το αυτοκίνητο από τις καλύτερες παραλίες." }
+        },
+        {
+          title: { en: "Agios Prokopios & Agia Anna", el: "Άγιος Προκόπιος & Αγία Άννα" },
+          text: { en: "The most popular beach bases. Agios Prokopios has one of the best beaches in Greece — long, sandy, with clear water and good amenities. Agia Anna is the smaller, more relaxed neighbor. Both have tavernas, hotels, and a pleasant holiday atmosphere.", el: "Οι πιο δημοφιλείς βάσεις παραλίας. Ο Άγιος Προκόπιος έχει μία από τις καλύτερες παραλίες της Ελλάδας — μεγάλη, αμμώδης, με καθαρά νερά και καλές υποδομές. Η Αγία Άννα είναι η μικρότερη, πιο χαλαρή γειτόνισσα. Και οι δύο έχουν ταβέρνες, ξενοδοχεία και ευχάριστη ατμόσφαιρα διακοπών." }
+        },
+        {
+          title: { en: "Plaka & Mikri Vigla", el: "Πλάκα & Μικρή Βίγλα" },
+          text: { en: "For a quieter, more spacious beach stay. Plaka is a long, undeveloped stretch of sand that feels more natural. Mikri Vigla is famous for windsurfing and has a relaxed bohemian vibe. Both are excellent for travelers who want peace and open space.", el: "Για πιο ήσυχη και άνετη διαμονή στην παραλία. Η Πλάκα είναι μια μεγάλη, ανέγγιχτη αμμουδιά με φυσική ομορφιά. Η Μικρή Βίγλα είναι διάσημη για windsurfing και έχει χαλαρή, μποέμ ατμόσφαιρα. Ιδανικές για ταξιδιώτες που θέλουν ηρεμία και χώρο." }
+        },
+        {
+          title: { en: "Mountain villages (Halki, Apeiranthos, Filoti)", el: "Ορεινά χωριά (Χαλκί, Απείρανθος, Φιλώτι)" },
+          text: { en: "For a completely different Naxos experience. Staying inland gives you access to traditional village life, excellent local food, and a cooler summer climate. You will need a car, but the reward is a genuine taste of authentic Cycladic culture.", el: "Για μια εντελώς διαφορετική εμπειρία της Νάξου. Η διαμονή στην ενδοχώρα σου δίνει πρόσβαση στην παραδοσιακή ζωή του χωριού, εξαιρετικό τοπικό φαγητό και πιο δροσερό κλίμα το καλοκαίρι. Θα χρειαστείς αυτοκίνητο, αλλά η ανταμοιβή είναι μια γνήσια γεύση αυθεντικής κυκλαδίτικης κουλτούρας." }
+        }
+      ]
+    },
+    {
+      title: { en: "Top Beaches in Naxos", el: "Οι κορυφαίες παραλίες της Νάξου" },
+      text: {
+        en: "Naxos has the best beaches of any Cycladic island — a bold claim, but one that most visitors agree with. The west coast is a nearly continuous stretch of sand running for more than 20 kilometres, with very different characters from north to south:",
+        el: "Η Νάξος έχει τις καλύτερες παραλίες από όλες τις Κυκλάδες — μια τολμηρή δήλωση, αλλά οι περισσότεροι επισκέπτες συμφωνούν. Η δυτική ακτή είναι μια σχεδόν συνεχής αμμουδιά που εκτείνεται για πάνω από 20 χιλιόμετρα, με πολύ διαφορετικό χαρακτήρα από βορρά προς νότο."
+      },
+      layout: "grid",
+      items: [
+        {
+          title: { en: "Agios Prokopios", el: "Άγιος Προκόπιος" },
+          text: { en: "Widely considered one of the best beaches in Greece. Fine golden sand, crystal-clear water, and full amenities (sunbeds, tavernas, water sports). Can get busy in August but the beach is long enough to accommodate everyone.", el: "Θεωρείται μία από τις καλύτερες παραλίες στην Ελλάδα. Λεπτή χρυσή άμμος, κρυστάλλινα νερά και πλήρεις υποδομές (ξαπλώστρες, ταβέρνες, θαλάσσια σπορ). Μπορεί να έχει κόσμο τον Αύγουστο, αλλά η παραλία είναι αρκετά μεγάλη." }
+        },
+        {
+          title: { en: "Plaka", el: "Πλάκα" },
+          text: { en: "A long, unspoiled stretch of sand with a more natural feel. Less developed than Agios Prokopios, with scattered sunbeds and a few beach bars. Ideal for those who want space, long walks, and a quieter atmosphere.", el: "Μια μεγάλη, ανέγγιχτη αμμουδιά με πιο φυσική αίσθηση. Λιγότερο ανεπτυγμένη από τον Άγιο Προκόπιο, με διάσπαρτες ξαπλώστρες και λίγα beach bars. Ιδανική για όσους θέλουν χώρο, μεγάλες βόλτες και πιο ήσυχη ατμόσφαιρα." }
+        },
+        {
+          title: { en: "Mikri Vigla", el: "Μικρή Βίγλα" },
+          text: { en: "Famous for windsurfing and kitesurfing thanks to reliable winds. The beach is split into two coves separated by a small headland. A relaxed, bohemian atmosphere with two excellent beach bars.", el: "Διάσημη για windsurfing και kitesurfing χάρη στους σταθερούς ανέμους. Η παραλία χωρίζεται σε δύο όρμους που χωρίζονται από ένα μικρό ακρωτήρι. Χαλαρή, μποέμ ατμόσφαιρα με δύο εξαιρετικά beach bars." }
+        },
+        {
+          title: { en: "Agia Anna", el: "Αγία Άννα" },
+          text: { en: "A smaller, more sheltered beach adjacent to Agios Prokopios. Calmer waters, good for families, with a compact strip of tavernas and rooms. Easy access and a pleasant seaside village feel.", el: "Μια μικρότερη, πιο προστατευμένη παραλία δίπλα στον Άγιο Προκόπιο. Πιο ήρεμα νερά, καλή για οικογένειες, με μια συμπαγή σειρά από ταβέρνες και δωμάτια. Εύκολη πρόσβαση και ευχάριστη αίσθηση παραθαλάσσιου χωριού." }
+        },
+        {
+          title: { en: "Aliko & Panormos", el: "Αλυκός & Πάνορμος" },
+          text: { en: "Two quieter beaches on the southwest coast. Aliko is a small sandy cove surrounded by cedar trees. Panormos is a larger, more secluded bay with a few tavernas. Both are less crowded and offer a more relaxed experience.", el: "Δύο πιο ήσυχες παραλίες στη νοτιοδυτική ακτή. Ο Αλυκός είναι ένας μικρός αμμώδης όρμος περιτριγυρισμένος από αρμυρίκια. Ο Πάνορμος είναι ένας μεγαλύτερος, πιο απομονωμένος κόλπος με λίγες ταβέρνες. Και οι δύο έχουν λιγότερο κόσμο." }
+        }
+      ]
+    },
+    {
+      title: { en: "Local Food & Drink in Naxos", el: "Τοπικό φαγητό και ποτό στη Νάξο" },
+      text: {
+        en: "Naxos is one of the best-eating islands in Greece. The fertile soil and strong agricultural tradition mean that many ingredients are produced locally, and the food culture is genuine rather than tourist-driven.",
+        el: "Η Νάξος είναι από τα νησιά με το καλύτερο φαγητό στην Ελλάδα. Το εύφορο έδαφος και η ισχυρή αγροτική παράδοση σημαίνουν ότι πολλά υλικά παράγονται τοπικά, και η διατροφική κουλτούρα είναι γνήσια."
+      },
+      layout: "grid",
+      items: [
+        {
+          title: { en: "Local cheeses", el: "Τοπικά τυριά" },
+          text: { en: "Graviera Naxou is the most famous — a hard, sweet cheese aged for at least 3 months. Arseniko is a spicy aged cheese, touloumotyri is a soft fresh cheese. All are excellent and widely available.", el: "Η γραβιέρα Νάξου είναι η πιο διάσημη — ένα σκληρό, γλυκό τυρί ωριμασμένο για τουλάχιστον 3 μήνες. Το αρσενικό είναι ένα πικάντικο ώριμο τυρί, το τουλουμοτύρι ένα μαλακό φρέσκο τυρί. Όλα εξαιρετικά." }
+        },
+        {
+          title: { en: "Kitron", el: "Κίτρο" },
+          text: { en: "A unique local liqueur made from the leaves of the kitron citron tree, produced only on Naxos. Sweet, aromatic, and traditionally served as a digestif. Visit the Vallindras distillery in Halki for a tasting.", el: "Ένα μοναδικό τοπικό λικέρ από τα φύλλα της κιτριάς, που παράγεται μόνο στη Νάξο. Γλυκό, αρωματικό, σερβίρεται παραδοσιακά ως χωνευτικό. Επισκεφθείτε το αποστακτήριο Βαλχίνδρα στο Χαλκί για γευσιγνωσία." }
+        },
+        {
+          title: { en: "Naxian potatoes & olives", el: "Πατάτες & ελιές Νάξου" },
+          text: { en: "Naxos potatoes are considered some of the best in Greece, with a protected designation of origin. The island also produces excellent olives and olive oil, which feature prominently in local dishes.", el: "Οι πατάτες Νάξου θεωρούνται από τις καλύτερες στην Ελλάδα, με προστατευόμενη ονομασία προέλευσης. Το νησί παράγει επίσης εξαιρετικές ελιές και ελαιόλαδο." }
+        },
+        {
+          title: { en: "Seafood & harbour tavernas", el: "Θαλασσινά & ταβέρνες στο λιμάνι" },
+          text: { en: "The harbour front in Naxos Town is lined with excellent seafood tavernas. Look for grilled octopus, fried calamari, and fresh fish caught daily. Inland villages specialize in meat dishes like rosto (pork cooked in wine) and goat stews.", el: "Το παραλιακό μέτωπο της Χώρας είναι γεμάτο εξαιρετικές ταβέρνες με θαλασσινά. Αναζητήστε ψητό χταπόδι, τηγανητά καλαμαράκια και φρέσκο ψάρι. Στα ορεινά χωριά ειδικεύονται σε κρεατικά όπως ροστό (χοιρινό στο κρασί) και κατσικάκι." }
+        }
+      ]
+    },
+    {
+      title: { en: "Practical Tips for Naxos", el: "Πρακτικές συμβουλές για τη Νάξο" },
+      layout: "faq",
+      items: [
+        {
+          title: { en: "Is Naxos worth visiting?", el: "Αξίζει να επισκεφθώ τη Νάξο;" },
+          text: { en: "Absolutely. Naxos is one of the most complete islands in Greece and suits almost every type of traveler. It has beaches, history, food, and culture without the crowds and prices of Santorini or Mykonos.", el: "Απολύτως. Η Νάξος είναι ένα από τα πιο ολοκληρωμένα νησιά στην Ελλάδα και ταιριάζει σε σχεδόν κάθε τύπο ταξιδιώτη. Έχει παραλίες, ιστορία, φαγητό και κουλτούρα χωρίς τον κόσμο και τις τιμές της Σαντορίνης ή της Μυκόνου." }
+        },
+        {
+          title: { en: "How many days do you need in Naxos?", el: "Πόσες μέρες χρειάζονται στη Νάξο;" },
+          text: { en: "Ideally 4-7 days. A shorter stay still gives you a good experience, but the island rewards longer visits because there is so much variety — beaches, mountain villages, historical sites, and excellent food.", el: "Ιδανικά 4-7 μέρες. Μια μικρότερη διαμονή σου δίνει ήδη μια καλή εμπειρία, αλλά το νησί ανταμείβει τις μεγαλύτερες επισκέψεις γιατί έχει τόση ποικιλία." }
+        },
+        {
+          title: { en: "Should I rent a car in Naxos?", el: "Αξίζει να νοικιάσω αυτοκίνητο στη Νάξο;" },
+          text: { en: "Yes, strongly recommended. Naxos is large and the best beaches, villages, and archaeological sites are spread out. A car gives you the freedom to explore the mountain villages, drive to quieter beaches, and see the island at your own pace.", el: "Ναι, το συνιστώ ανεπιφύλακτα. Η Νάξος είναι μεγάλη και οι καλύτερες παραλίες, χωριά και αρχαιολογικοί χώροι είναι διάσπαρτοι. Ένα αυτοκίνητο σου δίνει την ελευθερία να εξερευνήσεις." }
+        },
+        {
+          title: { en: "How do I get to Naxos?", el: "Πώς πάω στη Νάξο;" },
+          text: { en: "By ferry from Piraeus (3-5 hours depending on type), or from other Cycladic islands. Naxos also has a small airport with domestic flights from Athens year-round, operated by Olympic Air and Sky Express.", el: "Με πλοίο από τον Πειραιά (3-5 ώρες ανάλογα με τον τύπο) ή από άλλα κυκλαδίτικα νησιά. Η Νάξος έχει επίσης μικρό αεροδρόμιο με πτήσεις από Αθήνα όλο το χρόνο." }
+        },
+        {
+          title: { en: "When is the best time to visit?", el: "Ποια είναι η καλύτερη εποχή για επίσκεψη;" },
+          text: { en: "June and September are ideal — warm sea, sunshine, and fewer crowds. July and August are busy but manageable (Naxos handles crowds better than most). May and October are quieter and more affordable, with pleasant weather.", el: "Ο Ιούνιος και ο Σεπτέμβριος είναι ιδανικοί — ζεστή θάλασσα, ηλιοφάνεια και λιγότερος κόσμος. Ο Ιούλιος και ο Αύγουστος έχουν κίνηση αλλά η Νάξος διαχειρίζεται καλύτερα τα πλήθη από άλλα νησιά." }
+        }
+      ]
+    }
+  ],
   milos: [
     {
       title: { en: "Why Visit Milos", el: "Γιατί να επισκεφθείς τη Μήλο" },
@@ -6480,6 +6616,22 @@ export const destinationSections: Record<string, DestinationSection[]> = {
           text: {
             en: "Particularly around Kardamyli and Stoupa — the better small hotels fill up months ahead.",
             el: "Ειδικά σε Καρδαμύλη και Στούπα — τα καλύτερα μικρά ξενοδοχεία κλείνουν μήνες πριν."
+          }
+        }
+      ]
+    },
+    {
+      title: {
+        en: "Where to Stay in Kalamata",
+        el: "Πού να Μείνεις στην Καλαμάτα",
+      },
+      layout: "grid",
+      items: [
+        {
+          title: { en: "Hotel & area guide", el: "Οδηγός διαμονής & περιοχών" },
+          text: {
+            en: "For a complete breakdown of the best areas and hotels in Kalamata and Messinia — from the city beachfront and Old Town to Kardamyli, Stoupa, Costa Navarino and Pylos — see our dedicated guide: [Where to Stay in Kalamata & the Messinia Region →](/hotels/kalamata).",
+            el: "Για πλήρη ανάλυση των καλύτερων περιοχών και ξενοδοχείων στην Καλαμάτα και τη Μεσσηνία — από το παραλιακό μέτωπο και την Παλιά Πόλη μέχρι Καρδαμύλη, Στούπα, Costa Navarino και Πύλο — δες τον αναλυτικό οδηγό: [Πού να Μείνεις στην Καλαμάτα & τη Μεσσηνία →](/hotels/kalamata)."
           }
         }
       ]

@@ -906,6 +906,98 @@ export const hotels: HotelCard[] = [
     },
   },
   {
+    slug: "naxos",
+    name: "Where to Stay in Naxos",
+    place: "Naxos — Cyclades",
+    info: {
+      en: "Find the best places to stay in Naxos — from the atmospheric Old Town of Naxos Chora and the long sandy beaches of Agios Prokopios, Agia Anna and Plaka to the windswept shores of Mikri Vigla and the traditional mountain villages of Halki, Apeiranthos and Filoti. A complete guide to Naxos hotels and areas.",
+      el: "Βρείτε τα καλύτερα μέρη για διαμονή στη Νάξο — από την ατμοσφαιρική Παλιά Πόλη της Χώρας και τις απέραντες αμμουδιές του Αγίου Προκοπίου, της Αγίας Άννας και της Πλάκας έως την ανεμώδη Μικρή Βίγλα και τα παραδοσιακά ορεινά χωριά Χαλκί, Απείρανθο και Φιλώτι. Ένας πλήρης οδηγός για ξενοδοχεία και περιοχές της Νάξου.",
+    },
+    image: "/images/naxos.webp",
+    badge: "Featured stay",
+    overview: {
+      en: "Choosing where to stay in Naxos shapes the entire trip — from the atmospheric Old Town beneath the Venetian Castle in Naxos Town (Chora), the most convenient and characterful base on the island, to the beachfront villages of Agios Prokopios, Agia Anna and Plaka along the famous west coast, the windsurfing hub of Mikri Vigla, and the inland mountain villages of Halki, Apeiranthos and Filoti that offer a completely different Naxos experience.",
+      el: "Η επιλογή διαμονής στη Νάξο καθορίζει ολόκληρο το ταξίδι — από την ατμοσφαιρική Παλιά Πόλη κάτω από το Ενετικό Κάστρο στη Χώρα, την πιο βολική και γεμάτη χαρακτήρα βάση του νησιού, έως τα παραθαλάσσια χωριά του Αγίου Προκοπίου, της Αγίας Άννας και της Πλάκας στη διάσημη δυτική ακτή, το κέντρο windsurfing της Μικρής Βίγλας και τα ορεινά χωριά Χαλκί, Απείρανθο και Φιλώτι που προσφέρουν μια εντελώς διαφορετική εμπειρία.",
+    },
+    description: {
+      en: "Naxos is the largest island in the Cyclades and one of the most complete destinations in Greece. What distinguishes it from its more famous neighbours is genuine variety — not just the usual combination of beaches and whitewashed villages, but real depth: a fertile interior with working farms and mountain settlements, a medieval Old Town with a towering Venetian Castle, archaeological sites spanning from prehistoric times to the Classical period, and a beach culture that includes some of the longest stretches of sand in the Aegean.\n\nNaxos Town (Chora) is the most popular base and for good reason. The Old Town is genuinely atmospheric — a maze of marble-paved alleyways climbing the hillside beneath the Castle, filled with boutique shops, family-run tavernas, and hidden bars. The harbour front is one of the liveliest in the Cyclades, with excellent seafood restaurants and a relaxed evening atmosphere. From Chora, the best beaches are 10-20 minutes away by car or bus, and the island's main ferry connections all arrive here.\n\nFor travelers who want to step out of their hotel directly onto sand, the west coast beach villages are the answer. Agios Prokopios has one of the best beaches in Greece — a long arc of fine golden sand with crystal-clear water and full amenities. Agia Anna is smaller and more sheltered, good for families. Plaka is longer, quieter, and more natural — ideal for those who want space and a slower pace. Mikri Vigla, further south, is the windsurfing and kitesurfing centre of the island, with a relaxed bohemian atmosphere.\n\nThe mountain villages offer the most distinctive accommodation on Naxos. Halki, the prettiest village in the Tragea valley, is famous for the Vallindras kitron distillery and its attractive square. Apeiranthos sits high in the mountains with marble houses, narrow lanes, and excellent local tavernas. Filoti, at the foot of Mount Zas, is a working village with a strong food tradition. Staying inland gives you cooler temperatures, genuine village life, and a perspective on Naxos that most visitors miss — but you will need a car.",
+      el: "Η Νάξος είναι το μεγαλύτερο νησί των Κυκλάδων και ένας από τους πιο ολοκληρωμένους προορισμούς στην Ελλάδα. Αυτό που την ξεχωρίζει από τους διάσημους γείτονές της είναι η γνήσια ποικιλία — όχι απλώς ο συνδυασμός παραλιών και ασπρισμένων χωριών, αλλά πραγματικό βάθος: μια εύφορη ενδοχώρα με χωριά και αγροκτήματα, μια μεσαιωνική Παλιά Πόλη με ένα επιβλητικό Ενετικό Κάστρο, αρχαιολογικοί χώροι από προϊστορικών μέχρι κλασικών χρόνων, και μια παραλιακή κουλτούρα με τις μεγαλύτερες αμμουδιές στο Αιγαίο.\n\nΗ Χώρα είναι η πιο δημοφιλής βάση — και δικαίως. Η Παλιά Πόλη είναι πραγματικά ατμοσφαιρική, ένας λαβύρινθος από μαρμαρόστρωτα δρομάκια που σκαρφαλώνουν στο λόφο κάτω από το Κάστρο. Το παραλιακό μέτωπο είναι από τα πιο ζωντανά στις Κυκλάδες. Από τη Χώρα, οι καλύτερες παραλίες απέχουν 10-20 λεπτά.\n\nΓια όσους θέλουν να βγουν από το ξενοδοχείο κατευθείαν στην άμμο, τα παραθαλάσσια χωριά της δυτικής ακτής είναι η λύση. Ο Άγιος Προκόπιος έχει μία από τις καλύτερες παραλίες της Ελλάδας. Η Πλάκα είναι μεγαλύτερη, πιο ήσυχη και φυσική. Η Μικρή Βίγλα είναι το κέντρο windsurfing.\n\nΤα ορεινά χωριά προσφέρουν την πιο ξεχωριστή διαμονή. Το Χαλκί, η Απείρανθος και το Φιλώτι δίνουν μια εντελώς διαφορετική προοπτική στο νησί — αλλά χρειάζεστε αυτοκίνητο."
+    },
+    features: {
+      en: ["Naxos Town (Chora) — Best for dining & atmosphere", "Agios Prokopios & Agia Anna — Best beach base", "Plaka — Quieter, longer, more natural beach", "Mikri Vigla — Windsurfing & bohemian vibe", "Halki, Apeiranthos, Filoti — Mountain village experience", "Temple of Apollo (Portara)", "Excellent local food & kitron liqueur", "Gateway to Small Cyclades & Koufonisia"],
+      el: ["Χώρα Νάξου — Καλύτερη για φαγητό & ατμόσφαιρα", "Άγιος Προκόπιος & Αγία Άννα — Καλύτερη βάση παραλίας", "Πλάκα — Πιο ήσυχη, μεγάλη, φυσική παραλία", "Μικρή Βίγλα — Windsurfing & μποέμ ατμόσφαιρα", "Χαλκί, Απείρανθος, Φιλώτι — Εμπειρία ορεινού χωριού", "Πορτάρα (Ναός Απόλλωνα)", "Τοπικό φαγητό & λικέρ κίτρο", "Πύλη για Μικρές Κυκλάδες & Κουφονήσια"]
+    },
+    sections: [
+      {
+        title: { en: "1. Naxos Town (Chora): The most complete and atmospheric base", el: "1. Χώρα Νάξου: Η πιο ολοκληρωμένη και ατμοσφαιρική βάση" },
+        content: {
+          en: "Naxos Town (Chora) is the island's capital and its most complete base. The Old Town is one of the most atmospheric neighborhoods in the Cyclades — a labyrinth of marble-paved lanes, arched passageways, and whitewashed houses climbing the hillside beneath the massive Venetian Castle (Kastro), built in 1207 by Marco Sanudo. Within the Castle walls, several mansions now operate as museums, while the cathedral, the Archaeological Museum, and hidden art galleries sit alongside simple homes and courtyard gardens. The harbour front along the Paralia is the social heart of the town, lined with seafood tavernas, cafes, and cocktail bars with tables extending onto the pedestrian promenade. The sunset from the harbour looking toward the Temple of Apollo — the iconic Portara — is one of the defining images of Naxos. Accommodation in the Old Town is mostly in converted traditional buildings — boutique hotels, guesthouses, and studios with character — while newer hotels and larger resorts are concentrated along the beach road south of the centre (Agios Georgios beach) and in the Grotta neighbourhood north of the castle. Chora is the best base for travelers who want the widest range of dining options, nightlife, shopping, and ferry convenience, combined with easy daily access to the island's best beaches.",
+          el: "Η Χώρα είναι η πρωτεύουσα της Νάξου και η πιο ολοκληρωμένη βάση. Η Παλιά Πόλη είναι από τις πιο ατμοσφαιρικές γειτονιές των Κυκλάδων — ένας λαβύρινθος από μαρμαρόστρωτα σοκάκια, τοξωτά περάσματα, και ασπρισμένα σπίτια που σκαρφαλώνουν στο λόφο κάτω από το τεράστιο Ενετικό Κάστρο (Καστρό), χτισμένο το 1207 από τον Μάρκο Σανούδο. Το παραλιακό μέτωπο είναι η καρδιά της πόλης, με ψαροταβέρνες, καφέ και cocktail bar. Το ηλιοβασίλεμα προς την Πορτάρα είναι μια από τις εικόνες που καθορίζουν τη Νάξο. Η διαμονή στην Παλιά Πόλη είναι κυρίως σε ανακαινισμένα παραδοσιακά κτήρια. Η Χώρα είναι η καλύτερη βάση για όσους θέλουν τη μεγαλύτερη ποικιλία σε φαγητό, νυχτερινή ζωή και ευκολία."
+        }
+      },
+      {
+        title: { en: "2. Agios Prokopios: The best beach base on the island", el: "2. Άγιος Προκόπιος: Η καλύτερη βάση παραλίας του νησιού" },
+        content: {
+          en: "Agios Prokopios is widely considered one of the best beaches in Greece, and for many visitors it is the obvious choice for a beach-focused stay. The beach itself is a long, sweeping arc of fine golden sand with crystal-clear turquoise water, running for nearly a kilometre with a consistent depth and gentle entry that makes it excellent for swimming. Amenities are comprehensive — sunbeds and umbrellas, water sports, beachfront tavernas, and a small supermarket. The village behind the beach is compact and purpose-built for tourism, with a range of hotels, apartments, and studios ranging from simple budget rooms to stylish boutique hotels. The atmosphere is relaxed and family-friendly, with a noticeable Greek holiday feel rather than an international resort character. Agia Anna, immediately adjacent to the south, is smaller, more sheltered, and even more relaxed, with a pretty beach lined with tamarisk trees and a few excellent seafood tavernas. Both villages are 10-15 minutes by car from Naxos Town, and the bus from Chora runs regularly through the summer. For travelers whose priority is a premium beach experience with easy access to the island's other attractions, this is the most logical base.",
+          el: "Ο Άγιος Προκόπιος θεωρείται μία από τις καλύτερες παραλίες στην Ελλάδα. Η παραλία είναι μια μεγάλη, κυρτή αμμουδιά με κρυστάλλινα γαλαζοπράσινα νερά, με ξαπλώστρες, θαλάσσια σπορ και ταβέρνες. Το χωριό είναι συμπαγές και προσανατολισμένο στον τουρισμό. Η ατμόσφαιρα είναι χαλαρή και οικογενειακή. Η Αγία Άννα, δίπλα, είναι μικρότερη και ακόμα πιο ήσυχη. Και τα δύο χωριά απέχουν 10-15 λεπτά από τη Χώρα."
+        }
+      },
+      {
+        title: { en: "3. Plaka: Space, nature and a quieter beach experience", el: "3. Πλάκα: Χώρος, φύση και πιο ήσυχη παραλία" },
+        content: {
+          en: "Plaka beach stretches for several kilometres south of Agia Anna and offers a very different experience from Agios Prokopios. The beach here is wider, longer, and significantly less developed — there are a few organised sections with sunbeds and small beach bars, but large stretches remain completely natural. This is the beach for long walks, undisturbed swimming, and a sense of space that is rare in the Cyclades. The road behind Plaka has a scattering of hotels, villas, and studios, most of which are set back from the beach and surrounded by agricultural land. Staying in Plaka suits travelers who want a calm, spacious beach base without the resort atmosphere of the more developed villages. You will need a car or scooter here — the bus service is less frequent than on the Agios Prokopios route, and the nearest tavernas and shops are either within the hotels or a short drive away. The southern end of Plaka merges into the even quieter beach of Mikri Vigla.",
+          el: "Η παραλία της Πλάκας εκτείνεται για αρκετά χιλιόμετρα νότια της Αγίας Άννας. Είναι πιο φαρδιά, μεγαλύτερη και σημαντικά λιγότερο ανεπτυγμένη. Υπάρχουν λίγα οργανωμένα τμήματα με ξαπλώστρες, αλλά μεγάλες εκτάσεις παραμένουν εντελώς φυσικές. Ιδανική για μεγάλες βόλτες και ήρεμο κολύμπι. Η διαμονή εδώ ταιριάζει σε όσους θέλουν μια ήρεμη βάση παραλίας. Θα χρειαστείτε αυτοκίνητο."
+        }
+      },
+      {
+        title: { en: "4. Mikri Vigla: Windsurfing, kitesurfing and a bohemian atmosphere", el: "4. Μικρή Βίγλα: Windsurfing, kitesurfing και μποέμ ατμόσφαιρα" },
+        content: {
+          en: "Mikri Vigla is the windsurfing and kitesurfing centre of Naxos, and one of the best spots in the Cyclades for board sports. The reliable meltemi wind that blows through the summer creates ideal conditions, and two excellent beach bars — one on each of the two coves that make up the beach — give the area a relaxed, youthful, slightly bohemian character. The coves themselves are beautiful: one sandy, one more rocky, both with clear water. Behind the beach, accommodation is limited and low-key — a handful of hotels, studios, and villas scattered among the low hills. Mikri Vigla is not a village in the traditional sense, and there is no real town centre — just the beach, the bars, and the accommodation. Dining options are limited to the beach bars and a few nearby tavernas, so a car is essential for exploring the wider island. This is the best base for travelers who want to spend most of their time on or near the water, in a setting that feels more like a surf camp than a typical Greek island resort.",
+          el: "Η Μικρή Βίγλα είναι το κέντρο windsurfing και kitesurfing της Νάξου. Ο σταθερός άνεμος μελτέμι δημιουργεί ιδανικές συνθήκες, και δύο εξαιρετικά beach bars δίνουν στην περιοχή μια χαλαρή, νεανική ατμόσφαιρα. Η διαμονή είναι περιορισμένη και χαμηλών τόνων. Ιδανική για όσους θέλουν να περάσουν τον χρόνο τους μέσα ή δίπλα στο νερό."
+        }
+      },
+      {
+        title: { en: "5. Mountain villages (Halki, Apeiranthos, Filoti): The authentic inland experience", el: "5. Ορεινά χωριά (Χαλκί, Απείρανθος, Φιλώτι): Η αυθεντική εμπειρία της ενδοχώρας" },
+        content: {
+          en: "For travelers who want a genuinely different Naxos experience, the mountain villages of the interior offer accommodation that is unlike anything on the coast. Halki is the largest and most accessible of the inland villages, set in the fertile Tragea valley. Its central square, shaded by a massive plane tree and dominated by the Vallindras kitron distillery — which you can visit for a tasting — is one of the most pleasant village squares in the Cyclades. Apeiranthos sits higher, at 650 metres, and is one of the most distinctive villages in all of Greece: built entirely from marble, with narrow streets, arched doorways, and three small museums. Filoti, at the foot of Mount Zas (the highest peak in the Cyclades), is the most traditional of the three, with a strong sheep-farming tradition and tavernas serving excellent local meat dishes. Accommodation in these villages is limited to guesthouses, traditional rooms, and a small number of boutique options — the experience is about atmosphere rather than amenities. A car is essential, as the villages are 20-40 minutes from the coast. Staying here is ideal for travelers who want mountain scenery, village life, excellent food, and a daily routine that includes a drive to the beach rather than walking distance to the water.",
+          el: "Για μια πραγματικά διαφορετική εμπειρία, τα ορεινά χωριά προσφέρουν διαμονή αντίθετη από αυτή της ακτής. Το Χαλκί βρίσκεται στην εύφορη κοιλάδα της Τραγαίας, με το αποστακτήριο Βαλχίνδρα. Η Απείρανθος, χτισμένη στα 650 μέτρα από μάρμαρο, είναι από τα πιο ξεχωριστά χωριά της Ελλάδας. Το Φιλώτι, στους πρόποδες της Ζας, έχει ισχυρή κτηνοτροφική παράδοση. Απαραίτητο το αυτοκίνητο. Ιδανικά για όσους θέλουν βουνό, χωριό και εξαιρετικό φαγητό."
+        }
+      },
+    ],
+    faq: [
+      {
+        q: { en: "Naxos Town or Agios Prokopios — which is the better base?", el: "Χώρα ή Άγιος Προκόπιος — ποια είναι η καλύτερη βάση;" },
+        a: { en: "For dining, nightlife, atmosphere, and ferry convenience, Naxos Town is the stronger choice. For direct beach access and a classic seaside holiday feel, Agios Prokopios or Agia Anna are better. The two areas are just 10-15 minutes apart by car or bus, so neither choice significantly limits what you can do.", el: "Για φαγητό, νυχτερινή ζωή, ατμόσφαιρα και ευκολία, η Χώρα είναι καλύτερη. Για άμεση πρόσβαση στην παραλία, ο Άγιος Προκόπιος ή η Αγία Άννα είναι προτιμότερα. Απέχουν 10-15 λεπτά μεταξύ τους." }
+      },
+      {
+        q: { en: "Do I need a car in Naxos?", el: "Χρειάζομαι αυτοκίνητο στη Νάξο;" },
+        a: { en: "Naxos is large and the main attractions are spread out. A car is strongly recommended, especially if you want to explore the mountain villages, reach quieter beaches, and visit archaeological sites. The bus network connects Chora with the main beach villages but is less practical for the interior and remote beaches.", el: "Η Νάξος είναι μεγάλη και τα αξιοθέατα διάσπαρτα. Το αυτοκίνητο συνιστάται ανεπιφύλακτα, ειδικά για τα ορεινά χωριά. Τα λεωφορεία συνδέουν τη Χώρα με τις κύριες παραλίες." }
+      },
+      {
+        q: { en: "Is Naxos good for families?", el: "Είναι η Νάξος κατάλληλη για οικογένειες;" },
+        a: { en: "Yes, very. Naxos is one of the best family islands in the Cyclades. Agios Prokopios and Agia Anna have calm, shallow water and family-friendly amenities. Naxos Town has practical facilities, and the mountain villages offer a different kind of adventure for older children.", el: "Ναι, πάρα πολύ. Είναι από τα καλύτερα οικογενειακά νησιά των Κυκλάδων. Ο Άγιος Προκόπιος και η Αγία Άννα έχουν ήρεμα ρηχά νερά." }
+      },
+      {
+        q: { en: "How many days do I need in Naxos?", el: "Πόσες μέρες χρειάζομαι στη Νάξο;" },
+        a: { en: "Four to seven days is ideal. Naxos is large enough to offer a week's worth of exploration — beaches, mountain villages, archaeological sites, and food. A shorter stay of three days is still worthwhile but will leave you planning a return.", el: "4-7 μέρες είναι ιδανικό. Η Νάξος είναι αρκετά μεγάλη για μια εβδομάδα εξερεύνησης — παραλίες, ορεινά χωριά, αρχαιολογικοί χώροι και φαγητό." }
+      },
+      {
+        q: { en: "Can I do day trips from Naxos to nearby islands?", el: "Μπορώ να κάνω ημερήσιες εκδρομές σε κοντινά νησιά;" },
+        a: { en: "Yes. Naxos is a major ferry hub and an excellent base for island hopping. Day trips to the Small Cyclades (Koufonisia, Iraklia, Schinoussa) run regularly in summer, and connections to Paros, Ios, Santorini, Mykonos, and Amorgos are frequent. The Small Cyclades are particularly recommended for their unspoiled beaches and relaxed atmosphere.", el: "Ναι. Η Νάξος είναι σημαντικός συγκοινωνιακός κόμβος. Ημερήσιες εκδρομές στις Μικρές Κυκλάδες (Κουφονήσια, Ηρακλειά, Σχοινούσα) γίνονται τακτικά το καλοκαίρι." }
+      },
+    ],
+    seo: {
+      title: {
+        en: "Where to Stay in Naxos | Best Areas & Hotels | GoGreeceNow",
+        el: "Πού να Μείνετε στη Νάξο | Καλύτερες Περιοχές & Ξενοδοχεία | GoGreeceNow"
+      },
+      description: {
+        en: "Find the best places to stay in Naxos — from the atmospheric Old Town of Naxos Chora and the long sandy beaches of Agios Prokopios and Plaka to the windsurfing hub of Mikri Vigla and the traditional mountain villages of Halki and Apeiranthos.",
+        el: "Βρείτε τα καλύτερα μέρη για διαμονή στη Νάξο — από την ατμοσφαιρική Παλιά Πόλη της Χώρας και τις αμμουδιές του Αγίου Προκοπίου και της Πλάκας έως το κέντρο windsurfing της Μικρής Βίγλας και τα ορεινά χωριά Χαλκί και Απείρανθο."
+      }
+    },
+  },
+  {
     slug: "milos",
     name: "Where to Stay in Milos",
     place: "Milos — Cyclades",

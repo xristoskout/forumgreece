@@ -171,4 +171,18 @@ export const MAP_PINS: Pin[] = [
     label: { en: "Patras", el: "Πάτρα" },
     tagline: { en: "Gateway to the Ionian", el: "Πύλη προς το Ιόνιο" },
   },
+  {
+    id: "kalamata",
+    x: 31.6, y: 61.1,
+    href: "/destinations/kalamata",
+    label: { en: "Kalamata", el: "Καλαμάτα" },
+    tagline: { en: "Peloponnese coastal city", el: "Παραθαλάσσια πόλη Πελοποννήσου" },
+  },
+  {
+    id: "lemnos",
+    x: 59.9, y: 27.7,
+    href: "/destinations/lemnos",
+    label: { en: "Lemnos", el: "Λήμνος" },
+    tagline: { en: "Aegean island escape", el: "Αιγαιοπελαγίτικη απόδραση" },
+  },
 ];
