@@ -2162,6 +2162,135 @@ export const hotels: HotelCard[] = [
         el: "Από το παραλιακό μέτωπο και τη νεοκλασική παλιά πόλη έως το Ρίο, την Αιγιάλεια και την Αρχαία Ολυμπία — ένας πλήρης οδηγός διαμονής."
       }
     },
+  },
+  {
+    slug: "kalamata",
+    name: "Where to Stay in Kalamata & the Messinia Region",
+    place: "Kalamata — Peloponnese",
+    badge: "New guide",
+    info: {
+      en: "Choosing where to stay in Kalamata and the Messinia region makes a significant difference to the kind of trip you have — from the urban beachfront and Old Town to Kardamyli, Stoupa, Costa Navarino, Pylos and the Mani peninsula.",
+      el: "Η επιλογή της βάσης σου στην Καλαμάτα και τη Μεσσηνία κάνει σημαντική διαφορά στο είδος του ταξιδιού που θα κάνεις — από το αστικό παραλιακό μέτωπο και την Παλιά Πόλη μέχρι την Καρδαμύλη, την Στούπα, την Costa Navarino, την Πύλο και τη Μάνη."
+    },
+    image: "/images/kalamata.webp",
+    overview: {
+      en: "Kalamata and the Messinia region offer one of the richest and most varied travel landscapes in Greece — and the choice of where to base yourself makes a significant difference to the kind of trip you have.\n\nStay in Kalamata city and you have a genuine urban base: a 7km beach at walking distance, the Old Town and castle on the hill, the Saturday market, and excellent tavernas at the old port — all while keeping every major destination in the region within an hour's drive. Stay in Kardamyli and you are inside the Mani from the first morning, with the mountains at your back and the sea below. Stay near Costa Navarino and you wake up adjacent to one of the finest resort landscapes in Greece and a short drive from Voidokilia and Pylos.\n\nNone of these is the wrong choice. They are different trips.",
+      el: "Η Καλαμάτα και η Μεσσηνία προσφέρουν ένα από τα πιο πλούσια και ποικιλόμορφα ταξιδιωτικά τοπία της Ελλάδας — και η επιλογή της βάσης σου κάνει σημαντική διαφορά στο είδος του ταξιδιού που θα κάνεις.\n\nΜείνε στην πόλη της Καλαμάτας και έχεις μια γνήσια αστική βάση: μια παραλία 7 χλμ σε απόσταση με τα πόδια, την Παλιά Πόλη και το κάστρο στο λόφο, την υπέροχη Λαϊκή Αγορά του Σαββάτου και εξαιρετικές ταβέρνες στο παλιό λιμάνι — με κάθε σημαντικό προορισμό της περιοχής σε απόσταση μίας ώρας με το αυτοκίνητο. Μείνε στην Καρδαμύλη και είσαι μέσα στη Μάνη από το πρώτο πρωί, με τα βουνά στην πλάτη σου και τη θάλασσα από κάτω. Μείνε κοντά στην Costa Navarino και ξυπνάς δίπλα σε ένα από τα ωραιότερα resort τοπία της Ελλάδας, με τη Βοϊδοκοιλιά και την Πύλο σε μικρή απόσταση."
+    },
+    description: {
+      en: "From Kalamata's beachfront and Old Town to Kardamyli, Stoupa, Costa Navarino and Pylos — a complete guide to where to stay in Kalamata and the Messinia region, with hotel recommendations for every traveler type.",
+      el: "Από το παραλιακό μέτωπο και την Παλιά Πόλη της Καλαμάτας μέχρι την Καρδαμύλη, την Στούπα, την Costa Navarino και την Πύλο — ένας πλήρης οδηγός για το πού να μείνεις στην Καλαμάτα και τη Μεσσηνία, με προτάσεις ξενοδοχείων για κάθε τύπο ταξιδιώτη."
+    },
+    features: {
+      en: [
+        "Kalamata Beachfront & City Centre",
+        "Old Town (Ano Poli)",
+        "Kardamyli — Outer Mani",
+        "Stoupa — Beach Resort",
+        "Costa Navarino & Pylos",
+        "Ancient Messene Area"
+      ],
+      el: [
+        "Παραλιακό Μέτωπο & Κέντρο Καλαμάτας",
+        "Παλιά Πόλη (Άνω Πόλη)",
+        "Καρδαμύλη — Έξω Μάνη",
+        "Στούπα — Παραλιακό Θέρετρο",
+        "Costa Navarino & Πύλος",
+        "Περιοχή Αρχαίας Μεσσήνης"
+      ]
+    },
+    sections: [
+      {
+        title: { en: "Kalamata Beachfront & City Centre", el: "Παραλιακό Μέτωπο & Κέντρο Καλαμάτας" },
+        content: {
+          en: "The Kalamata beachfront is the most practical and versatile base in the region. The beach itself runs for almost 7 kilometres — clean, organized, with fine dark-grey sand. Hotels along this strip put the sea immediately at your door, the Old Town and castle a short walk or taxi ride uphill, the old port fish tavernas nearby, and every major regional destination — Pylos, Costa Navarino, the Mani, Ancient Messene — within an hour by car.\n\nFiloxenia Hotel is one of the most established four-star hotels in Kalamata, with a seafront position at the northern end of the beach promenade. Many rooms have direct sea views and a pool terrace overlooking the Messenian Gulf toward the Taygetos range. Pharae Palace Hotel is a large, well-equipped hotel on the seafront with pool, fitness facilities and conference rooms — the reference choice for business travelers and larger groups, with sea-facing rooms that overlook the entire arc of the gulf. Haikos Hotel is a well-positioned city hotel a short walk from the beach and the city centre, with a contemporary design and a rooftop pool that offers one of the better views of Kalamata and the gulf — a good mid-range option for those who want something more design-conscious. Elite Hotel Kalamata is a comfortable, centrally located three-star option with good value for both the beach and the city, popular with Greek domestic travelers and families.",
+          el: "Το παραλιακό μέτωπο της Καλαμάτας είναι η πιο πρακτική και ευέλικτη βάση της περιοχής. Η παραλία εκτείνεται σχεδόν 7 χιλιόμετρα — καθαρή, οργανωμένη, με λεπτή σκουρόγκριζη άμμο. Τα ξενοδοχεία κατά μήκος αυτής της λωρίδας έχουν τη θάλασσα ακριβώς μπροστά σου, την Παλιά Πόλη και το κάστρο σε μικρή απόσταση με τα πόδια ή ταξί, τις ταβέρνες του παλιού λιμανιού κοντά, και κάθε σημαντικό προορισμό — Πύλο, Costa Navarino, Μάνη, Αρχαία Μεσσήνη — σε απόσταση μίας ώρας με το αυτοκίνητο.\n\nΤο Filoxenia Hotel είναι ένα από τα πιο καθιερωμένα τετράστερα ξενοδοχεία της Καλαμάτας, με θέση στο βόρειο άκρο του παραλιακού πεζοδρόμου. Πολλά δωμάτια έχουν άμεση θέα στη θάλασσα και βεράντα με πισίνα που κοιτάζει τον Μεσσηνιακό Κόλπο προς τον Ταΰγετο. Το Pharae Palace Hotel είναι ένα μεγάλο, καλά εξοπλισμένο ξενοδοχείο στο παραλιακό μέτωπο με πισίνα, γυμναστήριο και αίθουσες συνεδριάσεων — η βασική επιλογή για επαγγελματίες και μεγάλες ομάδες. Το Haikos Hotel είναι ένα καλά τοποθετημένο αστικό ξενοδοχείο σε μικρή απόσταση με τα πόδια από την παραλία και το κέντρο, με σύγχρονο σχεδιασμό και rooftop πισίνα. Το Elite Hotel Kalamata είναι μια άνετη, κεντρική τρίστερη επιλογή με καλή σχέση ποιότητας-τιμής."
+        }
+      },
+      {
+        title: { en: "Kalamata Old Town (Ano Poli) & Castle Area", el: "Παλιά Πόλη Καλαμάτας (Άνω Πόλη) & Περιοχή Κάστρου" },
+        content: {
+          en: "The Old Town of Kalamata — Ano Poli — climbs the hill beneath the Byzantine castle and preserves a character that the lower city, rebuilt after the 1986 earthquake, does not have. Stone houses, narrow lanes, small squares under plane trees, tavernas where the music starts late and the pace is entirely unhurried.\n\nStaying in Ano Poli means waking up inside the historic texture of the city — the castle is a morning walk away, the views over the rooftops to the gulf and the Taygetos range are the best in Kalamata, and the neighbourhood's own tavernas and kafenia operate at a rhythm that has nothing to do with tourism.\n\nKastro Boutique Hotel is a carefully restored boutique property in the Old Town, within walking distance of the Byzantine castle. Rooms are individually styled with local materials and a design sensibility that respects the surroundings. The views from the upper rooms and terrace look over Ano Poli toward the gulf — one of the most atmospheric places to stay in the city.",
+          el: "Η Παλιά Πόλη της Καλαμάτας — η Άνω Πόλη — σκαρφαλώνει στο λόφο κάτω από το βυζαντινό κάστρο και διατηρεί έναν χαρακτήρα που η κάτω πόλη, ξαναχτισμένη μετά τον σεισμό του 1986, δεν έχει. Πέτρινα σπίτια, στενά σοκάκια, μικρές πλατείες κάτω από πλατάνια, ταβέρνες όπου η μουσική ξεκινάει αργά και ο ρυθμός είναι εντελώς απροσπέραστος.\n\nΤο Kastro Boutique Hotel είναι ένα προσεκτικά ανακαινισμένο boutique ξενοδοχείο στην Παλιά Πόλη, σε απόσταση με τα πόδια από το βυζαντινό κάστρο. Τα δωμάτια είναι ατομικά σχεδιασμένα με τοπικά υλικά και οι θέες από τα πάνω δωμάτια και τη βεράντα κοιτάζουν πάνω από την Άνω Πόλη προς τον κόλπο."
+        }
+      },
+      {
+        title: { en: "Kardamyli — The Soul of the Outer Mani", el: "Καρδαμύλη — Η Ψυχή της Έξω Μάνης" },
+        content: {
+          en: "Kardamyli is the gateway to the Outer Mani and one of the most beautiful small towns in Greece. Nested between the sea and the lower slopes of the Taygetos range, with a medieval tower-house quarter, clear-water coves beneath the village, olive groves filling the valley, and a walking trail network that connects villages across the hillside above.\n\nPatrick Leigh Fermor lived here for decades. Staying in Kardamyli puts you inside the Mani from the first morning. The Deep Mani — Vathia, Gerolimenas, Cape Tenaro — is an hour's drive south. Kalamata city is 45 minutes north. Ancient Messene is an hour away.\n\nKalamitsi Hotel is the most established hotel in Kardamyli, with a direct position above the sea, private access to the water and views over the Messenian Gulf from every room. The Kalamitsi has stone buildings integrated into the landscape and a genuinely calm atmosphere. Anniska & Lino Houses are two traditional stone houses in the centre of Kardamyli, restored and run as a small guesthouse with a strong sense of place. Elies Resort is a five-star villa and suite property set in an olive grove above Kardamyli, offering stone-built suites with private pools or terraces and views over the olive trees and the sea.",
+          el: "Η Καρδαμύλη είναι η πύλη προς την Έξω Μάνη και μια από τις ομορφότερες μικρές πόλεις της Ελλάδας. Ανάμεσα στη θάλασσα και τις χαμηλότερες πλαγιές του Ταϋγέτου, με μεσαιωνικούς πύργους, διάφανους όρμους, ελαιώνες και μονοπάτια που συνδέουν τα χωριά.\n\nTo Kalamitsi Hotel είναι το πιο καθιερωμένο ξενοδοχείο της Καρδαμύλης, με άμεση θέση πάνω από τη θάλασσα και ιδιωτική πρόσβαση στο νερό. Τα Anniska & Lino Houses είναι δύο παραδοσιακά πέτρινα σπίτια στο κέντρο της Καρδαμύλης. Το Elies Resort είναι ένα πεντάστερο συγκρότημα με βίλες και σουίτες σε ελαιώνα πάνω από την Καρδαμύλη."
+        }
+      },
+      {
+        title: { en: "Stoupa — Beach First, Everything Else Second", el: "Στούπα — Παραλία Πρώτα" },
+        content: {
+          en: "Stoupa is 10 kilometres south of Kardamyli and represents the other version of the Outer Mani: a proper summer resort village built around two sandy bays, with organized beaches, tavernas, watersports facilities, and a genuinely relaxed family-friendly atmosphere.\n\nThe main bay (Stoupa Beach) and the smaller Stolianos Beach next to it are both excellent — sandy, clear-watered and sheltered. The village behind them has everything needed for a comfortable week without a car.\n\nStoupa Beach Hotel is directly on the main bay, with sea-view rooms and immediate access to the beach — the most straightforward choice for a beach-first stay in Stoupa. Mani Gate Hotel is a well-reviewed three-star option with a pool, comfortable rooms and a friendly atmosphere, popular with families and couples.",
+          el: "Η Στούπα είναι 10 χιλιόμετρα νότια της Καρδαμύλης: ένα παραθαλάσσιο θέρετρο χτισμένο γύρω από δύο αμμώδεις κόλπους, με οργανωμένες παραλίες, ταβέρνες και θαλάσσια σπορ.\n\nΤο Stoupa Beach Hotel βρίσκεται ακριβώς πάνω στον κεντρικό κόλπο, με δωμάτια με θέα στη θάλασσα. Το Mani Gate Hotel είναι μια τρίστερη επιλογή με πισίνα και άνετα δωμάτια."
+        }
+      },
+      {
+        title: { en: "Costa Navarino & Pylos Area — The Southwest", el: "Costa Navarino & Πύλος — Η Νοτιοδυτική Πύλη" },
+        content: {
+          en: "The southwest corner of Messinia — the area around Pylos and the Costa Navarino resort — is one of the finest combinations of natural beauty and high-end infrastructure in Greece. Voidokilia, the horseshoe bay behind the dunes of NATURA 2000, is among the most beautiful beaches in Europe. The town of Pylos — its elegant central square, its Niokastro fortress, the boat trips around the Bay of Navarino — is one of the most quietly impressive small towns in the Peloponnese.\n\nThe Romanos, a Luxury Collection Resort, Costa Navarino sits on an elevated position above the Navarino Dunes golf course and the sea, with views over the entire bay. Villas and suites with private pools, a full-service spa, multiple restaurants including fine dining, direct beach access via funicular. The Westin Resort Costa Navarino is the second five-star property at Costa Navarino, larger in scale with an extensive water park, making it particularly suited to families with children. Zoe Hotel Pylos offers a small, well-run accommodation in Pylos town centre — close to the main square, the Niokastro fortress and the harbour. Zante Maris Navarino is a mid-range resort-style property near the Costa Navarino area with pool, beach access and comfortable facilities.",
+          el: "Η νοτιοδυτική γωνία της Μεσσηνίας — η περιοχή γύρω από την Πύλο και το Costa Navarino — είναι ένας από τους ωραιότερους συνδυασμούς φυσικής ομορφιάς και υψηλών υποδομών στην Ελλάδα. Η Βοϊδοκοιλιά είναι από τις ομορφότερες παραλίες της Ευρώπης.\n\nΤο The Romanos, ένα Luxury Collection Resort, βρίσκεται σε υπερυψωμένη θέση πάνω από το γήπεδο γκολφ Navarino Dunes και τη θάλασσα. Το The Westin Resort Costa Navarino είναι το δεύτερο πεντάστερο θέρετρο, με μεγαλύτερη κλίμακα και εκτεταμένο υδάτινο πάρκο. Το Zoe Hotel Pylos προσφέρει μικρή, καλοδιατηρημένη διαμονή στο κέντρο της Πύλου. Το Zante Maris Navarino είναι ένα μεσαίας κατηγορίας resort με πισίνα και άνετες εγκαταστάσεις."
+        }
+      },
+      {
+        title: { en: "Ancient Messene & Inland Messinia", el: "Αρχαία Μεσσήνη & Εσωτερική Μεσσηνία" },
+        content: {
+          en: "Ancient Messene — one of the great under-visited archaeological sites of Greece, with 9km of standing circuit walls, a theatre, a stadium and a sanctuary — sits in the inland hills above the Messinian plain, close to the village of Mavromati. Staying in this area, rather than commuting from Kalamata, allows you to visit the site at opening time in the early morning light.\n\nThe inland villages of Messinia — Meligalas, Ithomi, the slopes of Mount Ithomi — are quieter Greece: olive groves, small kafenia, a pace entirely removed from summer coastal tourism. Mystras (UNESCO) is approximately 60km to the northeast.\n\nIthomi Hotel, Mavromati is a small, simple hotel in the village of Mavromati directly above the Ancient Messene site — the closest base to the ruins. The morning walk down to the site gates, before the day-trippers arrive from Kalamata, is a significant advantage.",
+          el: "Η Αρχαία Μεσσήνη βρίσκεται στους λόφους της ενδοχώρας πάνω από τον μεσσηνιακό κάμπο, κοντά στο χωριό Μαυρομμάτι. Η διαμονή στην περιοχή σου επιτρέπει να επισκεφτείς τον χώρο με το πρώτο φως.\n\nΤο Ithomi Hotel, Mavromati είναι ένα μικρό, απλό ξενοδοχείο στο χωριό Μαυρομμάτι, ακριβώς πάνω από τον αρχαιολογικό χώρο — η πιο κοντινή βάση στα ερείπια."
+        }
+      }
+    ],
+    faq: [
+      {
+        q: { en: "Which area is best for first-time visitors?", el: "Ποια περιοχή είναι καλύτερη για πρώτη φορά;" },
+        a: { en: "Kalamata Beachfront / City Centre is the best all-round base for first-time visitors, offering maximum flexibility for beach days, city exploration and regional excursions.", el: "Το Παραλιακό Μέτωπο / Κέντρο Καλαμάτας είναι η καλύτερη all-round βάση για πρώτη φορά." }
+      },
+      {
+        q: { en: "Which area is best for beach holidays?", el: "Ποια περιοχή είναι καλύτερη για διακοπές στη θάλασσα;" },
+        a: { en: "Kalamata Beachfront or Stoupa — Stoupa is more purely beach-oriented with a relaxed resort atmosphere.", el: "Παραλιακό Μέτωπο Καλαμάτας ή Στούπα." }
+      },
+      {
+        q: { en: "Which area is best for Mani atmosphere and walking?", el: "Ποια περιοχή είναι καλύτερη για Μάνη και περπάτημα;" },
+        a: { en: "Kardamyli — the gateway to the Outer Mani with excellent walking trails, sea coves and the deepest local character.", el: "Καρδαμύλη — η πύλη προς την Έξω Μάνη." }
+      },
+      {
+        q: { en: "Which area is best for luxury resorts?", el: "Ποια περιοχή είναι καλύτερη για πολυτελή resort;" },
+        a: { en: "Costa Navarino — The Romanos and The Westin Resort offer world-class five-star facilities.", el: "Costa Navarino — The Romanos και The Westin Resort." }
+      },
+      {
+        q: { en: "Which area is best for families with young children?", el: "Ποια περιοχή είναι καλύτερη για οικογένειες με μικρά παιδιά;" },
+        a: { en: "Stoupa (easy beach-focused) or Costa Navarino (Westin with water park).", el: "Στούπα ή Costa Navarino (Westin με υδάτινο πάρκο)." }
+      },
+      {
+        q: { en: "Which area is best for visiting Voidokilia and Pylos?", el: "Ποια περιοχή είναι καλύτερη για επίσκεψη στη Βοϊδοκοιλιά και την Πύλο;" },
+        a: { en: "Pylos town or the Costa Navarino area — both are within 10–15 minutes of Voidokilia beach.", el: "Πύλος ή περιοχή Costa Navarino." }
+      },
+      {
+        q: { en: "Which area is best for Ancient Messene?", el: "Ποια περιοχή είναι καλύτερη για Αρχαία Μεσσήνη;" },
+        a: { en: "Mavromati village (Ithomi Hotel) — the closest base to the archaeological site.", el: "Μαυρομμάτι (Ithomi Hotel)." }
+      },
+      {
+        q: { en: "Which area is best for authentic city character?", el: "Ποια περιοχή είναι καλύτερη για αυθεντικό αστικό χαρακτήρα;" },
+        a: { en: "Kalamata Old Town (Ano Poli) — especially Kastro Boutique Hotel.", el: "Παλιά Πόλη Καλαμάτας (Άνω Πόλη)." }
+      },
+      {
+        q: { en: "Which area is best for couples and romance?", el: "Ποια περιοχή είναι καλύτερη για ζευγάρια;" },
+        a: { en: "Kardamyli (Kalamitsi or Anniska & Lino) or the Kastro Boutique in Kalamata Old Town.", el: "Καρδαμύλη ή Kastro Boutique στην Παλιά Πόλη." }
+      }
+    ],
+    seo: {
+      title: {
+        en: "Where to Stay in Kalamata: Best Areas & Hotels | GoGreeceNow",
+        el: "Πού να Μείνετε στην Καλαμάτα: Καλύτερες Περιοχές & Ξενοδοχεία | GoGreeceNow"
+      },
+      description: {
+        en: "From Kalamata's beachfront and Old Town to Kardamyli, Stoupa, Costa Navarino and Pylos — a complete guide to where to stay in Kalamata and the Messinia region.",
+        el: "Από το παραλιακό μέτωπο και την Παλιά Πόλη της Καλαμάτας μέχρι την Καρδαμύλη, την Στούπα, την Costa Navarino και την Πύλο — ένας πλήρης οδηγός διαμονής."
+      }
+    }
   }
 ];
 
