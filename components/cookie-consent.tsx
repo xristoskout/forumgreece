@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -10,10 +10,12 @@ export default function CookieConsent() {
   const pathname = usePathname();
   const lang = pathname.startsWith("/el") ? "el" : "en";
 
-  const [show, setShow] = useState(() => {
-    if (typeof window === "undefined") return false;
-    return !localStorage.getItem(COOKIE_CONSENT_KEY);
-  });
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    const hasConsent = localStorage.getItem(COOKIE_CONSENT_KEY);
+    setShow(!hasConsent);
+  }, []);
 
   function accept() {
     localStorage.setItem(COOKIE_CONSENT_KEY, "accepted");

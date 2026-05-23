@@ -1,0 +1,134 @@
+{
+  "id": "chania",
+  "slug": "chania",
+  "name": "Chania",
+  "type": "City",
+  "coordinates": {
+    "lat": 35.5138,
+    "lng": 24.018
+  },
+  "scores": {
+    "family": {
+      "value": 9,
+      "reason": "Family friendly parameters for Chania."
+    },
+    "couples": {
+      "value": 9,
+      "reason": "Romantic components and spots in Chania."
+    },
+    "nightlife": {
+      "value": 8,
+      "reason": "Bar and club density in Chania."
+    },
+    "food": {
+      "value": 10,
+      "reason": "Local gastronomy, products, and tavern quality."
+    },
+    "beaches": {
+      "value": 10,
+      "reason": "Beach quality, sand, and accessibility."
+    },
+    "walking": {
+      "value": 8,
+      "reason": "Walkability of the main towns or villages."
+    }
+  },
+  "content": {
+    "quick_summary": "A complete travel guide to Chania.",
+    "pros": [
+      "Beautiful Venetian harbor",
+      "Access to Balos & Elafonissi",
+      "Best Cretan food scene"
+    ],
+    "cons": [
+      "Very busy harbor front",
+      "Parking in town is difficult"
+    ],
+    "insider_tips": [
+      "Dine in Splantzia square.",
+      "Visit the Municipal Market."
+    ],
+    "mistakes_to_avoid": [
+      "Visiting central tourist traps without local tips."
+    ]
+  },
+  "pricing_base": {
+    "budget_daily": 50,
+    "mid_daily": 100,
+    "luxury_daily": 220
+  },
+  "seasonality": {
+    "january": {
+      "temp": 14,
+      "price_multiplier": 0.6
+    },
+    "february": {
+      "temp": 14,
+      "price_multiplier": 0.6
+    },
+    "march": {
+      "temp": 16,
+      "price_multiplier": 0.7
+    },
+    "april": {
+      "temp": 19,
+      "price_multiplier": 0.8
+    },
+    "may": {
+      "temp": 24,
+      "price_multiplier": 1
+    },
+    "june": {
+      "temp": 28,
+      "price_multiplier": 1.2
+    },
+    "july": {
+      "temp": 30,
+      "price_multiplier": 1.5
+    },
+    "august": {
+      "temp": 30,
+      "price_multiplier": 1.6
+    },
+    "september": {
+      "temp": 27,
+      "price_multiplier": 1.3
+    },
+    "october": {
+      "temp": 23,
+      "price_multiplier": 0.9
+    },
+    "november": {
+      "temp": 19,
+      "price_multiplier": 0.7
+    },
+    "december": {
+      "temp": 16,
+      "price_multiplier": 0.6
+    }
+  },
+  "image": "/images/chania.webp",
+  "guideLinks": [
+    {
+      "href": "/hotels/chania",
+      "label": {
+        "en": "Where to Stay",
+        "el": "Πού να μείνεις"
+      }
+    },
+    {
+      "href": "/travel-tools/budget/chania",
+      "label": {
+        "en": "Budget Planner",
+        "el": "Budget Planner"
+      }
+    },
+    {
+      "href": "/travel-tools/best-time/chania",
+      "label": {
+        "en": "Best Time to Visit",
+        "el": "Καλύτερη Εποχή"
+      }
+    }
+  ]
+}

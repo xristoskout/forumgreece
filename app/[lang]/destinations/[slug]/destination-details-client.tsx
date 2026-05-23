@@ -167,6 +167,29 @@ export default function DestinationDetailsClient({
     );
   };
 
+  // 100% Dynamic, Safe Compare Widget for the Sidebar
+  const renderCompareWidget = () => {
+    return (
+      <article className="rounded-[28px] border border-slate-200 bg-gradient-to-br from-indigo-50/50 to-white p-8 shadow-sm">
+        <p className="text-xs font-bold uppercase tracking-[0.2em] text-indigo-700 mb-3">
+          {lang === "en" ? "Travel Tools" : "Ταξιδιωτικά Εργαλεία"}
+        </p>
+        <h4 className="text-xl font-extrabold mb-4 text-slate-800">Compare {destination.name}</h4>
+        <p className="text-sm text-slate-500 mb-6 leading-relaxed">
+          {lang === "en" 
+            ? `Compare ${destination.name} side-by-side with other Greek destinations to check budgets, scores, and find where to go.`
+            : `Σύγκρινε τη ${destination.name} με άλλους ελληνικούς προορισμούς για να δεις budget, βαθμολογίες και να αποφασίσεις.`}
+        </p>
+        <Link
+          href={withLang(`/travel-tools?s1=${destination.slug}`)}
+          className="block w-full text-center py-3 bg-indigo-600 text-white font-bold rounded-2xl shadow-md hover:bg-indigo-500 hover:-translate-y-0.5 transition-all"
+        >
+          {lang === "en" ? "Compare Side-by-Side ➔" : "Σύγκρινε τους Προορισμούς ➔"}
+        </Link>
+      </article>
+    );
+  };
+
   return (
     <main className="min-h-screen bg-transparent text-slate-900">
       <SiteHeader />
@@ -341,6 +364,9 @@ export default function DestinationDetailsClient({
           </div>
 
           <aside className="space-y-6">
+            {/* 100% Dynamic Compare Widget */}
+            {renderCompareWidget()}
+
             {renderBusinesses()}
 
             {(() => {

@@ -1,0 +1,134 @@
+{
+  "id": "milos",
+  "slug": "milos",
+  "name": "Milos",
+  "type": "Island",
+  "coordinates": {
+    "lat": 36.7275,
+    "lng": 24.4447
+  },
+  "scores": {
+    "family": {
+      "value": 7,
+      "reason": "Family friendly parameters for Milos."
+    },
+    "couples": {
+      "value": 10,
+      "reason": "Romantic components and spots in Milos."
+    },
+    "nightlife": {
+      "value": 6,
+      "reason": "Bar and club density in Milos."
+    },
+    "food": {
+      "value": 8,
+      "reason": "Local gastronomy, products, and tavern quality."
+    },
+    "beaches": {
+      "value": 10,
+      "reason": "Beach quality, sand, and accessibility."
+    },
+    "walking": {
+      "value": 5,
+      "reason": "Walkability of the main towns or villages."
+    }
+  },
+  "content": {
+    "quick_summary": "A complete travel guide to Milos.",
+    "pros": [
+      "Unique volcanic landscapes",
+      "Sarakiniko moonscape beach",
+      "Perfect for couples"
+    ],
+    "cons": [
+      "Limited public transport",
+      "Winds can block boat tours"
+    ],
+    "insider_tips": [
+      "Book a boat tour to Kleftiko caves.",
+      "Watch sunset from Plaka castle."
+    ],
+    "mistakes_to_avoid": [
+      "Visiting central tourist traps without local tips."
+    ]
+  },
+  "pricing_base": {
+    "budget_daily": 60,
+    "mid_daily": 130,
+    "luxury_daily": 300
+  },
+  "seasonality": {
+    "january": {
+      "temp": 12,
+      "price_multiplier": 0.6
+    },
+    "february": {
+      "temp": 13,
+      "price_multiplier": 0.6
+    },
+    "march": {
+      "temp": 15,
+      "price_multiplier": 0.7
+    },
+    "april": {
+      "temp": 18,
+      "price_multiplier": 0.8
+    },
+    "may": {
+      "temp": 23,
+      "price_multiplier": 1
+    },
+    "june": {
+      "temp": 26,
+      "price_multiplier": 1.2
+    },
+    "july": {
+      "temp": 29,
+      "price_multiplier": 1.5
+    },
+    "august": {
+      "temp": 29,
+      "price_multiplier": 1.6
+    },
+    "september": {
+      "temp": 26,
+      "price_multiplier": 1.3
+    },
+    "october": {
+      "temp": 22,
+      "price_multiplier": 0.9
+    },
+    "november": {
+      "temp": 17,
+      "price_multiplier": 0.7
+    },
+    "december": {
+      "temp": 14,
+      "price_multiplier": 0.6
+    }
+  },
+  "image": "/images/milos.webp",
+  "guideLinks": [
+    {
+      "href": "/hotels/milos",
+      "label": {
+        "en": "Where to Stay",
+        "el": "Πού να μείνεις"
+      }
+    },
+    {
+      "href": "/travel-tools/budget/milos",
+      "label": {
+        "en": "Budget Planner",
+        "el": "Budget Planner"
+      }
+    },
+    {
+      "href": "/travel-tools/best-time/milos",
+      "label": {
+        "en": "Best Time to Visit",
+        "el": "Καλύτερη Εποχή"
+      }
+    }
+  ]
+}

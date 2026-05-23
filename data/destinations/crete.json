@@ -1,0 +1,134 @@
+{
+  "id": "crete",
+  "slug": "crete",
+  "name": "Crete",
+  "type": "Island",
+  "coordinates": {
+    "lat": 35.2401,
+    "lng": 24.8093
+  },
+  "scores": {
+    "family": {
+      "value": 9,
+      "reason": "Family friendly parameters for Crete."
+    },
+    "couples": {
+      "value": 8,
+      "reason": "Romantic components and spots in Crete."
+    },
+    "nightlife": {
+      "value": 8,
+      "reason": "Bar and club density in Crete."
+    },
+    "food": {
+      "value": 10,
+      "reason": "Local gastronomy, products, and tavern quality."
+    },
+    "beaches": {
+      "value": 10,
+      "reason": "Beach quality, sand, and accessibility."
+    },
+    "walking": {
+      "value": 7,
+      "reason": "Walkability of the main towns or villages."
+    }
+  },
+  "content": {
+    "quick_summary": "A complete travel guide to Crete.",
+    "pros": [
+      "Endless variety of beaches",
+      "World-famous Cretan diet",
+      "Rich Minoan history"
+    ],
+    "cons": [
+      "Huge distances require driving",
+      "Too big to see in one trip"
+    ],
+    "insider_tips": [
+      "Hike the Samaria Gorge.",
+      "Visit Balos Lagoon early morning."
+    ],
+    "mistakes_to_avoid": [
+      "Visiting central tourist traps without local tips."
+    ]
+  },
+  "pricing_base": {
+    "budget_daily": 50,
+    "mid_daily": 100,
+    "luxury_daily": 220
+  },
+  "seasonality": {
+    "january": {
+      "temp": 14,
+      "price_multiplier": 0.6
+    },
+    "february": {
+      "temp": 14,
+      "price_multiplier": 0.6
+    },
+    "march": {
+      "temp": 16,
+      "price_multiplier": 0.7
+    },
+    "april": {
+      "temp": 19,
+      "price_multiplier": 0.8
+    },
+    "may": {
+      "temp": 24,
+      "price_multiplier": 1
+    },
+    "june": {
+      "temp": 28,
+      "price_multiplier": 1.2
+    },
+    "july": {
+      "temp": 30,
+      "price_multiplier": 1.5
+    },
+    "august": {
+      "temp": 30,
+      "price_multiplier": 1.6
+    },
+    "september": {
+      "temp": 27,
+      "price_multiplier": 1.3
+    },
+    "october": {
+      "temp": 23,
+      "price_multiplier": 0.9
+    },
+    "november": {
+      "temp": 19,
+      "price_multiplier": 0.7
+    },
+    "december": {
+      "temp": 16,
+      "price_multiplier": 0.6
+    }
+  },
+  "image": "/images/crete.webp",
+  "guideLinks": [
+    {
+      "href": "/hotels/crete",
+      "label": {
+        "en": "Where to Stay",
+        "el": "Πού να μείνεις"
+      }
+    },
+    {
+      "href": "/travel-tools/budget/crete",
+      "label": {
+        "en": "Budget Planner",
+        "el": "Budget Planner"
+      }
+    },
+    {
+      "href": "/travel-tools/best-time/crete",
+      "label": {
+        "en": "Best Time to Visit",
+        "el": "Καλύτερη Εποχή"
+      }
+    }
+  ]
+}

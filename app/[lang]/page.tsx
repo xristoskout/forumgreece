@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { preload } from "react-dom";
 import { Lang, isLang } from "../../lib/locale";
 import { computeCopy } from "../../lib/home-translations";
 import HomePageClient from "./home-page-client";
