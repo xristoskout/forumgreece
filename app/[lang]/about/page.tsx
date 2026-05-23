@@ -4,6 +4,7 @@ import Image from 'next/image';
 import SiteHeader from "../../../components/site-header";
 import { Lang, isLang, withLang } from "../../../lib/locale";
 import { SITE_URL } from "../../../lib/content";
+import { breadcrumbSchema } from "../../../lib/structured-data";
 
 const staticText = {
   title: {
@@ -106,8 +107,17 @@ export default async function AboutPage({ params }: Props) {
   const lang = isLang(raw) ? raw : "en";
   const t = staticText;
 
+  const breadcrumb = breadcrumbSchema(lang, [
+    { label: lang === "en" ? "Home" : "Αρχική", path: "" },
+    { label: lang === "en" ? "About" : "Σχετικά", path: "/about" },
+  ]);
+
   return (
     <main className="min-h-screen bg-white text-slate-900">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
+      />
       <SiteHeader />
 
       <section className="relative overflow-hidden bg-slate-900 py-32 sm:py-40">

@@ -61,6 +61,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         },
       ],
     },
+    twitter: {
+      card: "summary_large_image",
+      title: seo[lang].title,
+      description: seo[lang].description,
+      images: ["/images/hero-greece.webp"],
+    },
   };
 }
 

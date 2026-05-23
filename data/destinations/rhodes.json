@@ -1,0 +1,134 @@
+{
+  "id": "rhodes",
+  "slug": "rhodes",
+  "name": "Rhodes",
+  "type": "Island",
+  "coordinates": {
+    "lat": 36.4341,
+    "lng": 28.2176
+  },
+  "scores": {
+    "family": {
+      "value": 9,
+      "reason": "Family friendly parameters for Rhodes."
+    },
+    "couples": {
+      "value": 8,
+      "reason": "Romantic components and spots in Rhodes."
+    },
+    "nightlife": {
+      "value": 8,
+      "reason": "Bar and club density in Rhodes."
+    },
+    "food": {
+      "value": 8,
+      "reason": "Local gastronomy, products, and tavern quality."
+    },
+    "beaches": {
+      "value": 8,
+      "reason": "Beach quality, sand, and accessibility."
+    },
+    "walking": {
+      "value": 7,
+      "reason": "Walkability of the main towns or villages."
+    }
+  },
+  "content": {
+    "quick_summary": "A complete travel guide to Rhodes.",
+    "pros": [
+      "Medieval Old Town",
+      "Lindos Acropolis view",
+      "Great resort infrastructure"
+    ],
+    "cons": [
+      "Highly commercialized in parts",
+      "Very hot in summer"
+    ],
+    "insider_tips": [
+      "Stroll the Old Town moat path.",
+      "Swim at Anthony Quinn Bay."
+    ],
+    "mistakes_to_avoid": [
+      "Visiting central tourist traps without local tips."
+    ]
+  },
+  "pricing_base": {
+    "budget_daily": 50,
+    "mid_daily": 100,
+    "luxury_daily": 220
+  },
+  "seasonality": {
+    "january": {
+      "temp": 12,
+      "price_multiplier": 0.6
+    },
+    "february": {
+      "temp": 13,
+      "price_multiplier": 0.6
+    },
+    "march": {
+      "temp": 15,
+      "price_multiplier": 0.7
+    },
+    "april": {
+      "temp": 18,
+      "price_multiplier": 0.8
+    },
+    "may": {
+      "temp": 23,
+      "price_multiplier": 1
+    },
+    "june": {
+      "temp": 26,
+      "price_multiplier": 1.2
+    },
+    "july": {
+      "temp": 29,
+      "price_multiplier": 1.5
+    },
+    "august": {
+      "temp": 29,
+      "price_multiplier": 1.6
+    },
+    "september": {
+      "temp": 26,
+      "price_multiplier": 1.3
+    },
+    "october": {
+      "temp": 22,
+      "price_multiplier": 0.9
+    },
+    "november": {
+      "temp": 17,
+      "price_multiplier": 0.7
+    },
+    "december": {
+      "temp": 14,
+      "price_multiplier": 0.6
+    }
+  },
+  "image": "/images/rhodes.webp",
+  "guideLinks": [
+    {
+      "href": "/hotels/rhodes",
+      "label": {
+        "en": "Where to Stay",
+        "el": "Πού να μείνεις"
+      }
+    },
+    {
+      "href": "/travel-tools/budget/rhodes",
+      "label": {
+        "en": "Budget Planner",
+        "el": "Budget Planner"
+      }
+    },
+    {
+      "href": "/travel-tools/best-time/rhodes",
+      "label": {
+        "en": "Best Time to Visit",
+        "el": "Καλύτερη Εποχή"
+      }
+    }
+  ]
+}

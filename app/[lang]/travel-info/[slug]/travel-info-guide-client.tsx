@@ -42,13 +42,45 @@ export default function TravelInfoGuideClient({ lang, slug, item }: TravelInfoGu
   };
 
   const renderTextWithLinks = (text: string) => {
-    const parts = text.split(/(https?:\/\/[^\s]+)/g);
-    return parts.map((part, i) => {
-      if (/^https?:\/\//i.test(part)) {
-        return <a key={i} href={part} target="_blank" rel="noopener noreferrer" className="underline text-indigo-600 hover:text-indigo-800">{part}</a>;
+    const elements: React.ReactNode[] = [];
+    const regex = /\[([^\]]+)\]\(([^)]+)\)|https?:\/\/[^\s]+/g;
+    let lastIndex = 0;
+    let match;
+
+    while ((match = regex.exec(text)) !== null) {
+      if (match.index > lastIndex) {
+        elements.push(text.slice(lastIndex, match.index));
       }
-      return <Fragment key={i}>{part}</Fragment>;
-    });
+
+      if (match[1] && match[2]) {
+        const url = match[2];
+        if (url.startsWith("/")) {
+          elements.push(
+            <Link key={match.index} href={withLang(url)} className="underline text-indigo-600 hover:text-indigo-800 font-medium">
+              {match[1]}
+            </Link>
+          );
+        } else {
+          elements.push(
+            <a key={match.index} href={url} target="_blank" rel="noopener noreferrer" className="underline text-indigo-600 hover:text-indigo-800">
+              {match[1]}
+            </a>
+          );
+        }
+      } else {
+        elements.push(
+          <a key={match.index} href={match[0]} target="_blank" rel="noopener noreferrer" className="underline text-indigo-600 hover:text-indigo-800">{match[0]}</a>
+        );
+      }
+
+      lastIndex = match.index + match[0].length;
+    }
+
+    if (lastIndex < text.length) {
+      elements.push(text.slice(lastIndex));
+    }
+
+    return elements.length > 0 ? elements : text;
   };
 
   const renderBusinesses = () => {

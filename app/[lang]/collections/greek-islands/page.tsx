@@ -78,6 +78,12 @@ export async function generateMetadata({
         },
       ],
     },
+    twitter: {
+      card: "summary_large_image",
+      title: seo[lang].title,
+      description: seo[lang].description,
+      images: ["/images/hero-greece.webp"],
+    },
   };
 }
 

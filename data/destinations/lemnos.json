@@ -1,0 +1,134 @@
+{
+  "id": "lemnos",
+  "slug": "lemnos",
+  "name": "Lemnos",
+  "type": "Island",
+  "coordinates": {
+    "lat": 39.9167,
+    "lng": 25.25
+  },
+  "scores": {
+    "family": {
+      "value": 9,
+      "reason": "Family friendly parameters for Lemnos."
+    },
+    "couples": {
+      "value": 7,
+      "reason": "Romantic components and spots in Lemnos."
+    },
+    "nightlife": {
+      "value": 5,
+      "reason": "Bar and club density in Lemnos."
+    },
+    "food": {
+      "value": 10,
+      "reason": "Local gastronomy, products, and tavern quality."
+    },
+    "beaches": {
+      "value": 9,
+      "reason": "Beach quality, sand, and accessibility."
+    },
+    "walking": {
+      "value": 6,
+      "reason": "Walkability of the main towns or villages."
+    }
+  },
+  "content": {
+    "quick_summary": "A complete travel guide to Lemnos.",
+    "pros": [
+      "Unbelievable local gastronomy",
+      "Unique sand dunes (Pachies Ammoudies)",
+      "Top windsurfing spot"
+    ],
+    "cons": [
+      "Windy",
+      "Long ferry journey if no flight"
+    ],
+    "insider_tips": [
+      "Try Kalathaki cheese.",
+      "Explore the castle of Myrina at night."
+    ],
+    "mistakes_to_avoid": [
+      "Visiting central tourist traps without local tips."
+    ]
+  },
+  "pricing_base": {
+    "budget_daily": 40,
+    "mid_daily": 75,
+    "luxury_daily": 160
+  },
+  "seasonality": {
+    "january": {
+      "temp": 12,
+      "price_multiplier": 0.6
+    },
+    "february": {
+      "temp": 13,
+      "price_multiplier": 0.6
+    },
+    "march": {
+      "temp": 15,
+      "price_multiplier": 0.7
+    },
+    "april": {
+      "temp": 18,
+      "price_multiplier": 0.8
+    },
+    "may": {
+      "temp": 23,
+      "price_multiplier": 1
+    },
+    "june": {
+      "temp": 26,
+      "price_multiplier": 1.2
+    },
+    "july": {
+      "temp": 29,
+      "price_multiplier": 1.5
+    },
+    "august": {
+      "temp": 29,
+      "price_multiplier": 1.6
+    },
+    "september": {
+      "temp": 26,
+      "price_multiplier": 1.3
+    },
+    "october": {
+      "temp": 22,
+      "price_multiplier": 0.9
+    },
+    "november": {
+      "temp": 17,
+      "price_multiplier": 0.7
+    },
+    "december": {
+      "temp": 14,
+      "price_multiplier": 0.6
+    }
+  },
+  "image": "/images/lemnos.webp",
+  "guideLinks": [
+    {
+      "href": "/hotels/lemnos",
+      "label": {
+        "en": "Where to Stay",
+        "el": "Πού να μείνεις"
+      }
+    },
+    {
+      "href": "/travel-tools/budget/lemnos",
+      "label": {
+        "en": "Budget Planner",
+        "el": "Budget Planner"
+      }
+    },
+    {
+      "href": "/travel-tools/best-time/lemnos",
+      "label": {
+        "en": "Best Time to Visit",
+        "el": "Καλύτερη Εποχή"
+      }
+    }
+  ]
+}

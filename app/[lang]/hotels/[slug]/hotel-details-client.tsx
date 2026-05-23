@@ -24,6 +24,7 @@ const STAY22_EMBEDS: Record<string, string> = {
   thessaloniki: "https://stay22.com/embed/69ee3cf34e520cef98deaf0d",
   paros: "https://stay22.com/embed/69ee3d424d8b00b0283f916d",
   milos: "https://stay22.com/embed/69ee3d8c4e520cef98deb0c3",
+  naxos: "https://stay22.com/embed/6a0daa205402d5457c2f9169",
   zakynthos: "https://stay22.com/embed/69ee3e1c1c09e44123fd027c",
   rhodes: "https://stay22.com/embed/69ee3ea44e520cef98deb2ec",
   halkidiki: "https://stay22.com/embed/69ee3f1a1c09e44123fd04c7",
@@ -37,6 +38,7 @@ const STAY22_EMBEDS: Record<string, string> = {
   "patmos-travel-guide": "https://stay22.com/embed/6a073e542573b5d07586c5db",
   patmos: "https://stay22.com/embed/6a073e542573b5d07586c5db",
   patras: "https://stay22.com/embed/6a08335181c53d08587afc33",
+  kalamata: "https://stay22.com/embed/6a0da4baf968487cce2b1e87",
 };
 
 const HOTEL_NAMES: Record<string, string[]> = {
@@ -47,6 +49,7 @@ const HOTEL_NAMES: Record<string, string[]> = {
   athens: ["Electra Metropolis", "Electra Palace", "Grande Bretagne", "King George", "Hilton Athens"],
   paros: ["Paros Agnanti", "Aegeon", "Hotel Senia", "Marcelina"],
   milos: ["Milos Breeze", "Sundays Milos", "White Rock Milos", "Aeolus"],
+  naxos: ["Naxos Palace", "Hotel Grotta", "Galini Beach", "Naxos Holidays", "Studios Kalergis", "Aeolos Beach", "Laguna Beach Village", "Anixis Studios"],
   corfu: ["Corfu Imperial", "Grecotel", "Pink Palace", "Sinarades"],
   zakynthos: ["Zante Maris", "Lesante", "Porto Zante", "Libra"],
   kefalonia: ["Avithos", "F Zeen", "Odyssey", "Ionian Sun"],
@@ -64,6 +67,7 @@ const HOTEL_NAMES: Record<string, string[]> = {
   "patmos-travel-guide": ["Patmos Aktis", "Chrissi Aktis", "Patmos Paradise", "Petra"],
   patmos: ["Patmos Aktis", "Chrissi Aktis", "Patmos Paradise", "Petra"],
   patras: ["Byzantine Hotel", "Astir Hotel Patras", "Maison Grecque Boutique Hotel", "Porto Rio Hotel & Casino", "Achaia Beach", "Poseidon Hotel Aigio", "Delfinia Hotel Akrata", "Europa Hotel Olympia", "Hotel Olympia Palace", "Neda Hotel", "Akti Hotel Nafpaktos", "Nafpaktos Residence"],
+  kalamata: ["Filoxenia Hotel", "Pharae Palace Hotel", "Haikos Hotel", "Elite Hotel Kalamata", "Kastro Boutique Hotel", "Kalamitsi Hotel", "Anniska & Lino Houses", "Elies Resort", "Stoupa Beach Hotel", "Mani Gate Hotel", "The Romanos, a Luxury Collection Resort, Costa Navarino", "The Romanos", "The Westin Resort Costa Navarino", "Zoe Hotel Pylos", "Zante Maris Navarino", "Ithomi Hotel, Mavromati"],
 };
 
 function getStay22Url(slug: string): string {

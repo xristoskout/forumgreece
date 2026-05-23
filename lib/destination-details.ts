@@ -369,6 +369,20 @@ export const destinationDetails: Record<string, DestinationDetail> = {
       el: ["Ζευγάρια & Παρέες", "Κλασικές κυκλαδίτικες διακοπές", "Λάτρεις της θάλασσας", "Εύκολο island hopping"]
     }
   },
+  naxos: {
+    overview: {
+      en: "Naxos is the largest island in the Cyclades, yet it remains one of the most understated and versatile destinations in Greece. Unlike its more famous neighbors, Naxos does not rely on a single dramatic feature — instead, it offers a rare combination of long sandy beaches, a towering Venetian castle, traditional mountain villages, fertile valleys, and one of the most genuine island rhythms in the Aegean. It is an island that feels both big and approachable, with enough space, variety, and character to suit many different kinds of travelers.\n\nWhat makes Naxos stand out is its completeness. You can spend a full week here and barely repeat an experience. One day you might explore the marble-paved alleyways of the Old Town beneath the Castle, swim at the endless beach of Agios Prokopios, or eat fresh seafood by the harbor. The next, you could drive through mountain villages like Halki, Apeiranthos, and Filoti, visit the Temple of Demeter, or hike up Mount Zas — the highest peak in the Cyclades. The island is large enough to absorb crowds even in peak season, and it rarely feels overwhelmed in the way that smaller, more hyped islands do.\n\nNaxos also has a strong food identity. The fertile interior produces local cheeses (graviera, arseniko), the famous kitron liqueur, olives, potatoes that are among the best in Greece, and meat dishes that reflect a genuine mountain tradition. The harbor front in Naxos Town is lined with excellent tavernas, many of which serve produce grown just a few kilometres inland.\n\nFor travelers who want depth, authenticity, and variety — without sacrificing beach quality or comfort — Naxos is one of the best island choices in Greece. It works well for couples, families, solo travelers, and anyone who wants a Cycladic holiday that feels grounded, generous, and real.",
+      el: "Η Νάξος είναι το μεγαλύτερο νησί των Κυκλάδων, αλλά παραμένει ένας από τους πιο διακριτικούς και ευέλικτους προορισμούς στην Ελλάδα. Σε αντίθεση με τους πιο διάσημους γείτονές της, δεν βασίζεται σε ένα μόνο δραματικό χαρακτηριστικό — αντίθετα, συνδυάζει απέραντες αμμουδιές, ένα επιβλητικό ενετικό κάστρο, παραδοσιακά ορεινά χωριά, εύφορες κοιλάδες και έναν από τους πιο αυθεντικούς νησιωτικούς ρυθμούς στο Αιγαίο. Είναι ένα νησί που νιώθεις ταυτόχρονα μεγάλο και προσιτό.\n\nΑυτό που κάνει τη Νάξο ξεχωριστή είναι η πληρότητά της. Μπορείς να περάσεις μια ολόκληρη εβδομάδα και σχεδόν να μην επαναλάβεις εμπειρία. Μια μέρα εξερευνάς τα μαρμαρόστρωτα σοκάκια της Παλιάς Πόλης κάτω από το Κάστρο, κολυμπάς στην ατέλειωτη παραλία του Αγίου Προκοπίου ή απολαμβάνεις φρέσκο ψάρι στο λιμάνι. Την επόμενη, οδηγείς στα ορεινά χωριά Χαλκί, Απείρανθο και Φιλώτι, επισκέπτεσαι τον Ναό της Δήμητρας ή ανεβαίνεις στη Ζα — την υψηλότερη κορυφή των Κυκλάδων. Το νησί είναι αρκετά μεγάλο για να απορροφά τον κόσμο ακόμα και στην υψηλή περίοδο.\n\nΗ Νάξος έχει επίσης ισχυρή γαστρονομική ταυτότητα. Η εύφορη ενδοχώρα παράγει τοπικά τυριά (γκραβιέρα, αρσενικό), το περίφημο λικέρ κίτρο, ελιές, πατάτες από τις καλύτερες της Ελλάδας και κρεατικά που αντικατοπτρίζουν μια γνήσια ορεινή παράδοση. Το παραλιακό μέτωπο της Χώρας είναι γεμάτο εξαιρετικές ταβέρνες που σερβίρουν προϊόντα από λίγα χιλιόμετρα μακριά.\n\nΓια ταξιδιώτες που θέλουν βάθος, αυθεντικότητα και ποικιλία — χωρίς να θυσιάζουν την ποιότητα της παραλίας ή την άνεση — η Νάξος είναι από τις καλύτερες επιλογές στην Ελλάδα. Λειτουργεί εξαιρετικά για ζευγάρια, οικογένειες, σόλο ταξιδιώτες και όποιον θέλει κυκλαδίτικες διακοπές με ουσία."
+    },
+    pageIncludes: {
+      en: ["Why visit Naxos", "Best areas to stay", "Top beaches", "Local food guide", "Practical tips & FAQs"],
+      el: ["Γιατί να πας στη Νάξο", "Οι καλύτερες περιοχές για διαμονή", "Κορυφαίες παραλίες", "Οδηγός τοπικού φαγητού", "Πρακτικά tips & FAQs"]
+    },
+    perfectFor: {
+      en: ["Couples & Families", "Beach & mountain diversity", "Authentic Cycladic culture", "Easy island hopping"],
+      el: ["Ζευγάρια & Οικογένειες", "Ποικιλία θάλασσας & βουνού", "Αυθεντική κυκλαδίτικη κουλτούρα", "Εύκολο island hopping"]
+    }
+  },
   milos: {
     overview: {
       en: "Milos feels different from many other Greek islands, and that difference is exactly what makes it memorable. It still has Cycladic villages, sea views, and whitewashed charm, but the island's identity is shaped above all by its dramatic coastline, unusual rock formations, and beaches that often feel more striking than typical. It is a place that leaves a strong visual impression.\n\nFor many travelers, Milos is less about a polished town-and-nightlife rhythm and more about landscapes, swimming, photography, and exploration. The island has a raw beauty in places, but it is also very approachable. You can spend days moving between beach coves, coastal viewpoints, harbor villages, and simple tavern meals, and still feel like you have not fully seen it.\n\nMilos suits travelers who want scenery, sea time, and a trip that feels more nature-led than urban or social. That does not mean it lacks comfort or attractive places to stay. It simply means that the island's strongest pull is often outdoors: cliffs, coves, water color, lunar rock formations, and boat-access coastlines that make the whole place feel a little more adventurous.\n\nIt is one of the best islands in Greece for travelers who care about beaches and visual atmosphere, but it also rewards those who leave room for slower village moments and harbor-side simplicity.",
@@ -589,4 +603,92 @@ export const destinationDetails: Record<string, DestinationDetail> = {
       ]
     }
   },
+  lemnos: {
+    overview: {
+      en: "Lemnos is the North Aegean's best kept secret — and one of Greece's most rewarding islands for travellers who know what they're looking for. It is large, unhurried, and genuinely itself. The landscape is unlike the typical Greek island postcard: broad plains and golden hills rolling down to the sea, wide sandy bays with shallow turquoise water, volcanic outcrops, reed beds, and a horizon that feels enormous. The capital, Myrina, has one of the finest harbour towns in the Aegean — a neoclassical seafront, a Byzantine-Genoese castle perched above the sea, and a long beach that begins where the main square ends. Lemnos has almost no mass tourism and has not been shaped by it. The tavernas serve food that reflects the local land and sea. The villages are genuinely inhabited. The beaches — and there are dozens of them — are rarely crowded even in summer. Mythologically, this is the island of Hephaestus, god of fire and the forge. Archaeologically, it holds Poliochni — one of the oldest urban settlements in Europe.",
+      el: "Η Λήμνος είναι το καλύτερα κρυμμένο μυστικό του Βορείου Αιγαίου — και ένα από τα πιο ανταποδοτικά νησιά της Ελλάδας για ταξιδιώτες που ξέρουν τι ψάχνουν. Το τοπίο δεν μοιάζει με την τυπική καρτ ποστάλ: κάμποι και χρυσοί λόφοι που κατηφορίζουν στη θάλασσα, αμμώδεις όρμοι με ρηχά νερά, ηφαιστειακά πετρώματα. Η Μύρινα έχει ένα από τα ωραιότερα λιμάνια του Αιγαίου — νεοκλασικό παραλιακό μέτωπο, βυζαντινό-γενουατικό κάστρο. Η Λήμνος δεν έχει μαζικό τουρισμό. Οι ταβέρνες σερβίρουν τοπικό φαγητό, τα χωριά είναι ζωντανά, οι παραλίες σπάνια γεμάτες. Μυθολογικά, είναι το νησί του Ηφαίστου. Αρχαιολογικά, έχει την Πολιόχνη — έναν από τους αρχαιότερους οικισμούς της Ευρώπης."
+    },
+    pageIncludes: {
+      en: [
+        "Myrina Old Town, harbour & Castle",
+        "Poliochni, Hephaestia & the Kabeiroi Sanctuary",
+        "Best beaches: Keros, Gomati, Thanos, Plati",
+        "Kalathaki cheese, Muscat wine & local food",
+        "Villages: Kontias, Plati, Kontopouli",
+        "Wetlands, dunes & birdwatching at Katalako",
+        "How to get there, when to go, practical tips"
+      ],
+      el: [
+        "Μύρινα — Παλιά Πόλη, λιμάνι & Κάστρο",
+        "Πολιόχνη, Ηφαιστία & Ιερό Καβείρων",
+        "Καλύτερες παραλίες: Κέρος, Γομάτι, Θάνος, Πλατύ",
+        "Καλαθάκι Λήμνου, Μοσχάτο & τοπικό φαγητό",
+        "Χωριά: Κοντιάς, Πλατύ, Κοντοπούλι",
+        "Υγρότοποι, αμμοθίνες & πουλιά στο Κατάλακο",
+        "Πρακτικές συμβουλές & μετακίνηση"
+      ]
+    },
+    perfectFor: {
+      en: [
+        "Beach lovers seeking space and sand without crowds",
+        "Food and wine travellers (Kalathaki, Muscat, fresh fish)",
+        "History and archaeology enthusiasts",
+        "Slow travel and authentic island experiences",
+        "Kitesurfing and watersports (Keros Beach)",
+        "Birdwatching and nature lovers"
+      ],
+      el: [
+        "Λάτρεις παραλιών χωρίς πολυκοσμία",
+        "Ταξιδιώτες γαστρονομίας και κρασιού",
+        "Λάτρεις ιστορίας και αρχαιολογίας",
+        "Slow travel και αυθεντικές νησιωτικές εμπειρίες",
+        "Kitesurfing (παραλία Κέρος)",
+        "Παρατήρηση πουλιών και φύση"
+      ]
+    }
+  },
+  kalamata: {
+    overview: {
+      en: "Kalamata is the city that the Peloponnese doesn't shout about enough. It sits at the head of the Messenian Gulf — a long, graceful arc of coastline between the mountains of Taygetos to the east and the fertile plain to the west. The city is modern, well-organized, and genuinely liveable. It has a proper Old Town with Byzantine history, a waterfront that invites an evening walk, a beach that stretches for kilometres right in the city centre, and one of the best regional cuisines in southern Greece. But Kalamata is also — and this is key — the gateway to one of the most extraordinary landscapes in the entire country. Within an hour you can stand on the wild tip of the Mani peninsula, swim off a deserted bay in Pylos, or dine at Costa Navarino. Within ninety minutes you can be at the ruins of Ancient Messene or on the Byzantine cliffs of Mystras. This is a destination with real depth.",
+      el: "Η Καλαμάτα είναι η πόλη που η Πελοπόννησος δεν διαφημίζει αρκετά. Βρίσκεται στην κορυφή του Μεσσηνιακού Κόλπου — μια μακριά, χαριτωμένη ακτογραμμή ανάμεσα στα βουνά του Ταϋγέτου στα ανατολικά και την εύφορη πεδιάδα στα δυτικά. Η πόλη είναι μοντέρνα, καλά οργανωμένη και πραγματικά φιλόξενη. Έχει μια αυθεντική Παλιά Πόλη με βυζαντινή ιστορία, ένα παραλιακό μέτωπο που σε καλεί για βραδινό περίπατο και μία από τις καλύτερες τοπικές κουζίνες στη νότια Ελλάδα. Αλλά η Καλαμάτα είναι επίσης — και αυτό είναι το κλειδί — η πύλη για μερικά από τα πιο εντυπωσιακά τοπία της χώρας. Σε μία ώρα μπορείς να βρεθείς στην άγρια Μάνη, να κολυμπήσεις σε έναν έρημο όρμο στην Πύλο ή να δειπνήσεις στο Costa Navarino. Σε ενενήντα λεπτά μπορείς να είσαι στα ερείπια της Αρχαίας Μεσσήνης ή στα βυζαντινά γκρεμότοιχα του Μυστρά."
+    },
+    pageIncludes: {
+      en: [
+        "Kalamata Old Town & Byzantine Castle",
+        "Waterfront, marina & city beach",
+        "Local food — olives, olive oil, seafood, Sfela cheese",
+        "Costa Navarino & Voidokilia Beach",
+        "Pylos & the Bay of Navarino",
+        "Mani Peninsula — Kardamyli, Deep Mani, Cape Tenaro",
+        "Ancient Messene & Mystras (UNESCO)"
+      ],
+      el: [
+        "Παλιά Πόλη & Βυζαντινό Κάστρο Καλαμάτας",
+        "Παραλιακό μέτωπο, μαρίνα & παραλία",
+        "Τοπικό φαγητό — ελιές, ελαιόλαδο, θαλασσινά, σφέλα",
+        "Costa Navarino & Παραλία Βοϊδοκοιλιά",
+        "Πύλος & Κόλπος Ναβαρίνου",
+        "Μάνη — Καρδαμύλη, Βαθιά, Ακρωτήριο Ταίναρο",
+        "Αρχαία Μεσσήνη & Μυστράς (UNESCO)"
+      ]
+    },
+    perfectFor: {
+      en: [
+        "Couples and romantic Peloponnese escapes",
+        "Food and olive oil lovers",
+        "History and archaeology enthusiasts",
+        "Families seeking beach + culture",
+        "Road trip travellers in southern Greece",
+        "Slow travel and nature seekers"
+      ],
+      el: [
+        "Ζευγάρια και ρομαντικές αποδράσεις",
+        "Λάτρεις του φαγητού και του ελαιολάδου",
+        "Λάτρεις της ιστορίας και της αρχαιολογίας",
+        "Οικογένειες που θέλουν θάλασσα + πολιτισμό",
+        "Road trips στη νότια Ελλάδα",
+        "Slow travel και φύση"
+      ]
+    }
+  }
 };

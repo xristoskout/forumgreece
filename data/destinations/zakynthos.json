@@ -1,0 +1,134 @@
+{
+  "id": "zakynthos",
+  "slug": "zakynthos",
+  "name": "Zakynthos",
+  "type": "Island",
+  "coordinates": {
+    "lat": 37.787,
+    "lng": 20.8999
+  },
+  "scores": {
+    "family": {
+      "value": 8,
+      "reason": "Family friendly parameters for Zakynthos."
+    },
+    "couples": {
+      "value": 8,
+      "reason": "Romantic components and spots in Zakynthos."
+    },
+    "nightlife": {
+      "value": 9,
+      "reason": "Bar and club density in Zakynthos."
+    },
+    "food": {
+      "value": 7,
+      "reason": "Local gastronomy, products, and tavern quality."
+    },
+    "beaches": {
+      "value": 10,
+      "reason": "Beach quality, sand, and accessibility."
+    },
+    "walking": {
+      "value": 6,
+      "reason": "Walkability of the main towns or villages."
+    }
+  },
+  "content": {
+    "quick_summary": "A complete travel guide to Zakynthos.",
+    "pros": [
+      "Shipwreck Beach (Navagio)",
+      "Blue Caves sailing",
+      "Turtle nesting beaches"
+    ],
+    "cons": [
+      "Highly commercialized party strips",
+      "Crowded viewpoints"
+    ],
+    "insider_tips": [
+      "See Navagio from the cliff view early morning.",
+      "Dine in Keri for sunset views."
+    ],
+    "mistakes_to_avoid": [
+      "Visiting central tourist traps without local tips."
+    ]
+  },
+  "pricing_base": {
+    "budget_daily": 60,
+    "mid_daily": 130,
+    "luxury_daily": 300
+  },
+  "seasonality": {
+    "january": {
+      "temp": 13,
+      "price_multiplier": 0.6
+    },
+    "february": {
+      "temp": 13,
+      "price_multiplier": 0.6
+    },
+    "march": {
+      "temp": 15,
+      "price_multiplier": 0.7
+    },
+    "april": {
+      "temp": 18,
+      "price_multiplier": 0.8
+    },
+    "may": {
+      "temp": 22,
+      "price_multiplier": 1
+    },
+    "june": {
+      "temp": 26,
+      "price_multiplier": 1.2
+    },
+    "july": {
+      "temp": 29,
+      "price_multiplier": 1.5
+    },
+    "august": {
+      "temp": 29,
+      "price_multiplier": 1.6
+    },
+    "september": {
+      "temp": 26,
+      "price_multiplier": 1.3
+    },
+    "october": {
+      "temp": 22,
+      "price_multiplier": 0.9
+    },
+    "november": {
+      "temp": 18,
+      "price_multiplier": 0.7
+    },
+    "december": {
+      "temp": 15,
+      "price_multiplier": 0.6
+    }
+  },
+  "image": "/images/zakynthos.webp",
+  "guideLinks": [
+    {
+      "href": "/hotels/zakynthos",
+      "label": {
+        "en": "Where to Stay",
+        "el": "Πού να μείνεις"
+      }
+    },
+    {
+      "href": "/travel-tools/budget/zakynthos",
+      "label": {
+        "en": "Budget Planner",
+        "el": "Budget Planner"
+      }
+    },
+    {
+      "href": "/travel-tools/best-time/zakynthos",
+      "label": {
+        "en": "Best Time to Visit",
+        "el": "Καλύτερη Εποχή"
+      }
+    }
+  ]
+}

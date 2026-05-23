@@ -14,8 +14,8 @@ export type Pin = {
        document.addEventListener('click', e => {
          const x = Math.round(e.offsetX / e.target.clientWidth * e.target.naturalWidth);
          const y = Math.round(e.offsetY / e.target.clientHeight * e.target.naturalHeight);
-         console.log(x, y);
-       })
+          // console.log(x, y);
+        })
   3. Click on the destination spot on the map
   4. Add a new entry below with:
        x: Math.round(clickX / 1024 * 1000) / 10,
@@ -170,5 +170,19 @@ export const MAP_PINS: Pin[] = [
     href: "/destinations/patras",
     label: { en: "Patras", el: "Πάτρα" },
     tagline: { en: "Gateway to the Ionian", el: "Πύλη προς το Ιόνιο" },
+  },
+  {
+    id: "kalamata",
+    x: 31.6, y: 61.1,
+    href: "/destinations/kalamata",
+    label: { en: "Kalamata", el: "Καλαμάτα" },
+    tagline: { en: "Peloponnese coastal city", el: "Παραθαλάσσια πόλη Πελοποννήσου" },
+  },
+  {
+    id: "lemnos",
+    x: 59.9, y: 27.7,
+    href: "/destinations/lemnos",
+    label: { en: "Lemnos", el: "Λήμνος" },
+    tagline: { en: "Aegean island escape", el: "Αιγαιοπελαγίτικη απόδραση" },
   },
 ];

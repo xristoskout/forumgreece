@@ -906,6 +906,98 @@ export const hotels: HotelCard[] = [
     },
   },
   {
+    slug: "naxos",
+    name: "Where to Stay in Naxos",
+    place: "Naxos — Cyclades",
+    info: {
+      en: "Find the best places to stay in Naxos — from the atmospheric Old Town of Naxos Chora and the long sandy beaches of Agios Prokopios, Agia Anna and Plaka to the windswept shores of Mikri Vigla and the traditional mountain villages of Halki, Apeiranthos and Filoti. A complete guide to Naxos hotels and areas.",
+      el: "Βρείτε τα καλύτερα μέρη για διαμονή στη Νάξο — από την ατμοσφαιρική Παλιά Πόλη της Χώρας και τις απέραντες αμμουδιές του Αγίου Προκοπίου, της Αγίας Άννας και της Πλάκας έως την ανεμώδη Μικρή Βίγλα και τα παραδοσιακά ορεινά χωριά Χαλκί, Απείρανθο και Φιλώτι. Ένας πλήρης οδηγός για ξενοδοχεία και περιοχές της Νάξου.",
+    },
+    image: "/images/naxos.webp",
+    badge: "Featured stay",
+    overview: {
+      en: "Choosing where to stay in Naxos shapes the entire trip — from the atmospheric Old Town beneath the Venetian Castle in Naxos Town (Chora), the most convenient and characterful base on the island, to the beachfront villages of Agios Prokopios, Agia Anna and Plaka along the famous west coast, the windsurfing hub of Mikri Vigla, and the inland mountain villages of Halki, Apeiranthos and Filoti that offer a completely different Naxos experience.",
+      el: "Η επιλογή διαμονής στη Νάξο καθορίζει ολόκληρο το ταξίδι — από την ατμοσφαιρική Παλιά Πόλη κάτω από το Ενετικό Κάστρο στη Χώρα, την πιο βολική και γεμάτη χαρακτήρα βάση του νησιού, έως τα παραθαλάσσια χωριά του Αγίου Προκοπίου, της Αγίας Άννας και της Πλάκας στη διάσημη δυτική ακτή, το κέντρο windsurfing της Μικρής Βίγλας και τα ορεινά χωριά Χαλκί, Απείρανθο και Φιλώτι που προσφέρουν μια εντελώς διαφορετική εμπειρία.",
+    },
+    description: {
+      en: "Naxos is the largest island in the Cyclades and one of the most complete destinations in Greece. What distinguishes it from its more famous neighbours is genuine variety — not just the usual combination of beaches and whitewashed villages, but real depth: a fertile interior with working farms and mountain settlements, a medieval Old Town with a towering Venetian Castle, archaeological sites spanning from prehistoric times to the Classical period, and a beach culture that includes some of the longest stretches of sand in the Aegean.\n\nNaxos Town (Chora) is the most popular base and for good reason. The Old Town is genuinely atmospheric — a maze of marble-paved alleyways climbing the hillside beneath the Castle, filled with boutique shops, family-run tavernas, and hidden bars. The harbour front is one of the liveliest in the Cyclades, with excellent seafood restaurants and a relaxed evening atmosphere. From Chora, the best beaches are 10-20 minutes away by car or bus, and the island's main ferry connections all arrive here.\n\nFor travelers who want to step out of their hotel directly onto sand, the west coast beach villages are the answer. Agios Prokopios has one of the best beaches in Greece — a long arc of fine golden sand with crystal-clear water and full amenities. Agia Anna is smaller and more sheltered, good for families. Plaka is longer, quieter, and more natural — ideal for those who want space and a slower pace. Mikri Vigla, further south, is the windsurfing and kitesurfing centre of the island, with a relaxed bohemian atmosphere.\n\nThe mountain villages offer the most distinctive accommodation on Naxos. Halki, the prettiest village in the Tragea valley, is famous for the Vallindras kitron distillery and its attractive square. Apeiranthos sits high in the mountains with marble houses, narrow lanes, and excellent local tavernas. Filoti, at the foot of Mount Zas, is a working village with a strong food tradition. Staying inland gives you cooler temperatures, genuine village life, and a perspective on Naxos that most visitors miss — but you will need a car.",
+      el: "Η Νάξος είναι το μεγαλύτερο νησί των Κυκλάδων και ένας από τους πιο ολοκληρωμένους προορισμούς στην Ελλάδα. Αυτό που την ξεχωρίζει από τους διάσημους γείτονές της είναι η γνήσια ποικιλία — όχι απλώς ο συνδυασμός παραλιών και ασπρισμένων χωριών, αλλά πραγματικό βάθος: μια εύφορη ενδοχώρα με χωριά και αγροκτήματα, μια μεσαιωνική Παλιά Πόλη με ένα επιβλητικό Ενετικό Κάστρο, αρχαιολογικοί χώροι από προϊστορικών μέχρι κλασικών χρόνων, και μια παραλιακή κουλτούρα με τις μεγαλύτερες αμμουδιές στο Αιγαίο.\n\nΗ Χώρα είναι η πιο δημοφιλής βάση — και δικαίως. Η Παλιά Πόλη είναι πραγματικά ατμοσφαιρική, ένας λαβύρινθος από μαρμαρόστρωτα δρομάκια που σκαρφαλώνουν στο λόφο κάτω από το Κάστρο. Το παραλιακό μέτωπο είναι από τα πιο ζωντανά στις Κυκλάδες. Από τη Χώρα, οι καλύτερες παραλίες απέχουν 10-20 λεπτά.\n\nΓια όσους θέλουν να βγουν από το ξενοδοχείο κατευθείαν στην άμμο, τα παραθαλάσσια χωριά της δυτικής ακτής είναι η λύση. Ο Άγιος Προκόπιος έχει μία από τις καλύτερες παραλίες της Ελλάδας. Η Πλάκα είναι μεγαλύτερη, πιο ήσυχη και φυσική. Η Μικρή Βίγλα είναι το κέντρο windsurfing.\n\nΤα ορεινά χωριά προσφέρουν την πιο ξεχωριστή διαμονή. Το Χαλκί, η Απείρανθος και το Φιλώτι δίνουν μια εντελώς διαφορετική προοπτική στο νησί — αλλά χρειάζεστε αυτοκίνητο."
+    },
+    features: {
+      en: ["Naxos Town (Chora) — Best for dining & atmosphere", "Agios Prokopios & Agia Anna — Best beach base", "Plaka — Quieter, longer, more natural beach", "Mikri Vigla — Windsurfing & bohemian vibe", "Halki, Apeiranthos, Filoti — Mountain village experience", "Temple of Apollo (Portara)", "Excellent local food & kitron liqueur", "Gateway to Small Cyclades & Koufonisia"],
+      el: ["Χώρα Νάξου — Καλύτερη για φαγητό & ατμόσφαιρα", "Άγιος Προκόπιος & Αγία Άννα — Καλύτερη βάση παραλίας", "Πλάκα — Πιο ήσυχη, μεγάλη, φυσική παραλία", "Μικρή Βίγλα — Windsurfing & μποέμ ατμόσφαιρα", "Χαλκί, Απείρανθος, Φιλώτι — Εμπειρία ορεινού χωριού", "Πορτάρα (Ναός Απόλλωνα)", "Τοπικό φαγητό & λικέρ κίτρο", "Πύλη για Μικρές Κυκλάδες & Κουφονήσια"]
+    },
+    sections: [
+      {
+        title: { en: "1. Naxos Town (Chora): The most complete and atmospheric base", el: "1. Χώρα Νάξου: Η πιο ολοκληρωμένη και ατμοσφαιρική βάση" },
+        content: {
+          en: "Naxos Town (Chora) is the island's capital and its most complete base. The Old Town is one of the most atmospheric neighborhoods in the Cyclades — a labyrinth of marble-paved lanes, arched passageways, and whitewashed houses climbing the hillside beneath the massive Venetian Castle (Kastro), built in 1207 by Marco Sanudo. Within the Castle walls, several mansions now operate as museums, while the cathedral, the Archaeological Museum, and hidden art galleries sit alongside simple homes and courtyard gardens. The harbour front along the Paralia is the social heart of the town, lined with seafood tavernas, cafes, and cocktail bars with tables extending onto the pedestrian promenade. The sunset from the harbour looking toward the Temple of Apollo — the iconic Portara — is one of the defining images of Naxos. Accommodation in the Old Town is mostly in converted traditional buildings — boutique hotels, guesthouses, and studios with character — while newer hotels and larger resorts are concentrated along the beach road south of the centre (Agios Georgios beach) and in the Grotta neighbourhood north of the castle. Chora is the best base for travelers who want the widest range of dining options, nightlife, shopping, and ferry convenience, combined with easy daily access to the island's best beaches.",
+          el: "Η Χώρα είναι η πρωτεύουσα της Νάξου και η πιο ολοκληρωμένη βάση. Η Παλιά Πόλη είναι από τις πιο ατμοσφαιρικές γειτονιές των Κυκλάδων — ένας λαβύρινθος από μαρμαρόστρωτα σοκάκια, τοξωτά περάσματα, και ασπρισμένα σπίτια που σκαρφαλώνουν στο λόφο κάτω από το τεράστιο Ενετικό Κάστρο (Καστρό), χτισμένο το 1207 από τον Μάρκο Σανούδο. Το παραλιακό μέτωπο είναι η καρδιά της πόλης, με ψαροταβέρνες, καφέ και cocktail bar. Το ηλιοβασίλεμα προς την Πορτάρα είναι μια από τις εικόνες που καθορίζουν τη Νάξο. Η διαμονή στην Παλιά Πόλη είναι κυρίως σε ανακαινισμένα παραδοσιακά κτήρια. Η Χώρα είναι η καλύτερη βάση για όσους θέλουν τη μεγαλύτερη ποικιλία σε φαγητό, νυχτερινή ζωή και ευκολία."
+        }
+      },
+      {
+        title: { en: "2. Agios Prokopios: The best beach base on the island", el: "2. Άγιος Προκόπιος: Η καλύτερη βάση παραλίας του νησιού" },
+        content: {
+          en: "Agios Prokopios is widely considered one of the best beaches in Greece, and for many visitors it is the obvious choice for a beach-focused stay. The beach itself is a long, sweeping arc of fine golden sand with crystal-clear turquoise water, running for nearly a kilometre with a consistent depth and gentle entry that makes it excellent for swimming. Amenities are comprehensive — sunbeds and umbrellas, water sports, beachfront tavernas, and a small supermarket. The village behind the beach is compact and purpose-built for tourism, with a range of hotels, apartments, and studios ranging from simple budget rooms to stylish boutique hotels. The atmosphere is relaxed and family-friendly, with a noticeable Greek holiday feel rather than an international resort character. Agia Anna, immediately adjacent to the south, is smaller, more sheltered, and even more relaxed, with a pretty beach lined with tamarisk trees and a few excellent seafood tavernas. Both villages are 10-15 minutes by car from Naxos Town, and the bus from Chora runs regularly through the summer. For travelers whose priority is a premium beach experience with easy access to the island's other attractions, this is the most logical base.",
+          el: "Ο Άγιος Προκόπιος θεωρείται μία από τις καλύτερες παραλίες στην Ελλάδα. Η παραλία είναι μια μεγάλη, κυρτή αμμουδιά με κρυστάλλινα γαλαζοπράσινα νερά, με ξαπλώστρες, θαλάσσια σπορ και ταβέρνες. Το χωριό είναι συμπαγές και προσανατολισμένο στον τουρισμό. Η ατμόσφαιρα είναι χαλαρή και οικογενειακή. Η Αγία Άννα, δίπλα, είναι μικρότερη και ακόμα πιο ήσυχη. Και τα δύο χωριά απέχουν 10-15 λεπτά από τη Χώρα."
+        }
+      },
+      {
+        title: { en: "3. Plaka: Space, nature and a quieter beach experience", el: "3. Πλάκα: Χώρος, φύση και πιο ήσυχη παραλία" },
+        content: {
+          en: "Plaka beach stretches for several kilometres south of Agia Anna and offers a very different experience from Agios Prokopios. The beach here is wider, longer, and significantly less developed — there are a few organised sections with sunbeds and small beach bars, but large stretches remain completely natural. This is the beach for long walks, undisturbed swimming, and a sense of space that is rare in the Cyclades. The road behind Plaka has a scattering of hotels, villas, and studios, most of which are set back from the beach and surrounded by agricultural land. Staying in Plaka suits travelers who want a calm, spacious beach base without the resort atmosphere of the more developed villages. You will need a car or scooter here — the bus service is less frequent than on the Agios Prokopios route, and the nearest tavernas and shops are either within the hotels or a short drive away. The southern end of Plaka merges into the even quieter beach of Mikri Vigla.",
+          el: "Η παραλία της Πλάκας εκτείνεται για αρκετά χιλιόμετρα νότια της Αγίας Άννας. Είναι πιο φαρδιά, μεγαλύτερη και σημαντικά λιγότερο ανεπτυγμένη. Υπάρχουν λίγα οργανωμένα τμήματα με ξαπλώστρες, αλλά μεγάλες εκτάσεις παραμένουν εντελώς φυσικές. Ιδανική για μεγάλες βόλτες και ήρεμο κολύμπι. Η διαμονή εδώ ταιριάζει σε όσους θέλουν μια ήρεμη βάση παραλίας. Θα χρειαστείτε αυτοκίνητο."
+        }
+      },
+      {
+        title: { en: "4. Mikri Vigla: Windsurfing, kitesurfing and a bohemian atmosphere", el: "4. Μικρή Βίγλα: Windsurfing, kitesurfing και μποέμ ατμόσφαιρα" },
+        content: {
+          en: "Mikri Vigla is the windsurfing and kitesurfing centre of Naxos, and one of the best spots in the Cyclades for board sports. The reliable meltemi wind that blows through the summer creates ideal conditions, and two excellent beach bars — one on each of the two coves that make up the beach — give the area a relaxed, youthful, slightly bohemian character. The coves themselves are beautiful: one sandy, one more rocky, both with clear water. Behind the beach, accommodation is limited and low-key — a handful of hotels, studios, and villas scattered among the low hills. Mikri Vigla is not a village in the traditional sense, and there is no real town centre — just the beach, the bars, and the accommodation. Dining options are limited to the beach bars and a few nearby tavernas, so a car is essential for exploring the wider island. This is the best base for travelers who want to spend most of their time on or near the water, in a setting that feels more like a surf camp than a typical Greek island resort.",
+          el: "Η Μικρή Βίγλα είναι το κέντρο windsurfing και kitesurfing της Νάξου. Ο σταθερός άνεμος μελτέμι δημιουργεί ιδανικές συνθήκες, και δύο εξαιρετικά beach bars δίνουν στην περιοχή μια χαλαρή, νεανική ατμόσφαιρα. Η διαμονή είναι περιορισμένη και χαμηλών τόνων. Ιδανική για όσους θέλουν να περάσουν τον χρόνο τους μέσα ή δίπλα στο νερό."
+        }
+      },
+      {
+        title: { en: "5. Mountain villages (Halki, Apeiranthos, Filoti): The authentic inland experience", el: "5. Ορεινά χωριά (Χαλκί, Απείρανθος, Φιλώτι): Η αυθεντική εμπειρία της ενδοχώρας" },
+        content: {
+          en: "For travelers who want a genuinely different Naxos experience, the mountain villages of the interior offer accommodation that is unlike anything on the coast. Halki is the largest and most accessible of the inland villages, set in the fertile Tragea valley. Its central square, shaded by a massive plane tree and dominated by the Vallindras kitron distillery — which you can visit for a tasting — is one of the most pleasant village squares in the Cyclades. Apeiranthos sits higher, at 650 metres, and is one of the most distinctive villages in all of Greece: built entirely from marble, with narrow streets, arched doorways, and three small museums. Filoti, at the foot of Mount Zas (the highest peak in the Cyclades), is the most traditional of the three, with a strong sheep-farming tradition and tavernas serving excellent local meat dishes. Accommodation in these villages is limited to guesthouses, traditional rooms, and a small number of boutique options — the experience is about atmosphere rather than amenities. A car is essential, as the villages are 20-40 minutes from the coast. Staying here is ideal for travelers who want mountain scenery, village life, excellent food, and a daily routine that includes a drive to the beach rather than walking distance to the water.",
+          el: "Για μια πραγματικά διαφορετική εμπειρία, τα ορεινά χωριά προσφέρουν διαμονή αντίθετη από αυτή της ακτής. Το Χαλκί βρίσκεται στην εύφορη κοιλάδα της Τραγαίας, με το αποστακτήριο Βαλχίνδρα. Η Απείρανθος, χτισμένη στα 650 μέτρα από μάρμαρο, είναι από τα πιο ξεχωριστά χωριά της Ελλάδας. Το Φιλώτι, στους πρόποδες της Ζας, έχει ισχυρή κτηνοτροφική παράδοση. Απαραίτητο το αυτοκίνητο. Ιδανικά για όσους θέλουν βουνό, χωριό και εξαιρετικό φαγητό."
+        }
+      },
+    ],
+    faq: [
+      {
+        q: { en: "Naxos Town or Agios Prokopios — which is the better base?", el: "Χώρα ή Άγιος Προκόπιος — ποια είναι η καλύτερη βάση;" },
+        a: { en: "For dining, nightlife, atmosphere, and ferry convenience, Naxos Town is the stronger choice. For direct beach access and a classic seaside holiday feel, Agios Prokopios or Agia Anna are better. The two areas are just 10-15 minutes apart by car or bus, so neither choice significantly limits what you can do.", el: "Για φαγητό, νυχτερινή ζωή, ατμόσφαιρα και ευκολία, η Χώρα είναι καλύτερη. Για άμεση πρόσβαση στην παραλία, ο Άγιος Προκόπιος ή η Αγία Άννα είναι προτιμότερα. Απέχουν 10-15 λεπτά μεταξύ τους." }
+      },
+      {
+        q: { en: "Do I need a car in Naxos?", el: "Χρειάζομαι αυτοκίνητο στη Νάξο;" },
+        a: { en: "Naxos is large and the main attractions are spread out. A car is strongly recommended, especially if you want to explore the mountain villages, reach quieter beaches, and visit archaeological sites. The bus network connects Chora with the main beach villages but is less practical for the interior and remote beaches.", el: "Η Νάξος είναι μεγάλη και τα αξιοθέατα διάσπαρτα. Το αυτοκίνητο συνιστάται ανεπιφύλακτα, ειδικά για τα ορεινά χωριά. Τα λεωφορεία συνδέουν τη Χώρα με τις κύριες παραλίες." }
+      },
+      {
+        q: { en: "Is Naxos good for families?", el: "Είναι η Νάξος κατάλληλη για οικογένειες;" },
+        a: { en: "Yes, very. Naxos is one of the best family islands in the Cyclades. Agios Prokopios and Agia Anna have calm, shallow water and family-friendly amenities. Naxos Town has practical facilities, and the mountain villages offer a different kind of adventure for older children.", el: "Ναι, πάρα πολύ. Είναι από τα καλύτερα οικογενειακά νησιά των Κυκλάδων. Ο Άγιος Προκόπιος και η Αγία Άννα έχουν ήρεμα ρηχά νερά." }
+      },
+      {
+        q: { en: "How many days do I need in Naxos?", el: "Πόσες μέρες χρειάζομαι στη Νάξο;" },
+        a: { en: "Four to seven days is ideal. Naxos is large enough to offer a week's worth of exploration — beaches, mountain villages, archaeological sites, and food. A shorter stay of three days is still worthwhile but will leave you planning a return.", el: "4-7 μέρες είναι ιδανικό. Η Νάξος είναι αρκετά μεγάλη για μια εβδομάδα εξερεύνησης — παραλίες, ορεινά χωριά, αρχαιολογικοί χώροι και φαγητό." }
+      },
+      {
+        q: { en: "Can I do day trips from Naxos to nearby islands?", el: "Μπορώ να κάνω ημερήσιες εκδρομές σε κοντινά νησιά;" },
+        a: { en: "Yes. Naxos is a major ferry hub and an excellent base for island hopping. Day trips to the Small Cyclades (Koufonisia, Iraklia, Schinoussa) run regularly in summer, and connections to Paros, Ios, Santorini, Mykonos, and Amorgos are frequent. The Small Cyclades are particularly recommended for their unspoiled beaches and relaxed atmosphere.", el: "Ναι. Η Νάξος είναι σημαντικός συγκοινωνιακός κόμβος. Ημερήσιες εκδρομές στις Μικρές Κυκλάδες (Κουφονήσια, Ηρακλειά, Σχοινούσα) γίνονται τακτικά το καλοκαίρι." }
+      },
+    ],
+    seo: {
+      title: {
+        en: "Where to Stay in Naxos | Best Areas & Hotels | GoGreeceNow",
+        el: "Πού να Μείνετε στη Νάξο | Καλύτερες Περιοχές & Ξενοδοχεία | GoGreeceNow"
+      },
+      description: {
+        en: "Find the best places to stay in Naxos — from the atmospheric Old Town of Naxos Chora and the long sandy beaches of Agios Prokopios and Plaka to the windsurfing hub of Mikri Vigla and the traditional mountain villages of Halki and Apeiranthos.",
+        el: "Βρείτε τα καλύτερα μέρη για διαμονή στη Νάξο — από την ατμοσφαιρική Παλιά Πόλη της Χώρας και τις αμμουδιές του Αγίου Προκοπίου και της Πλάκας έως το κέντρο windsurfing της Μικρής Βίγλας και τα ορεινά χωριά Χαλκί και Απείρανθο."
+      }
+    },
+  },
+  {
     slug: "milos",
     name: "Where to Stay in Milos",
     place: "Milos — Cyclades",
@@ -2162,6 +2254,135 @@ export const hotels: HotelCard[] = [
         el: "Από το παραλιακό μέτωπο και τη νεοκλασική παλιά πόλη έως το Ρίο, την Αιγιάλεια και την Αρχαία Ολυμπία — ένας πλήρης οδηγός διαμονής."
       }
     },
+  },
+  {
+    slug: "kalamata",
+    name: "Where to Stay in Kalamata & the Messinia Region",
+    place: "Kalamata — Peloponnese",
+    badge: "New guide",
+    info: {
+      en: "Choosing where to stay in Kalamata and the Messinia region makes a significant difference to the kind of trip you have — from the urban beachfront and Old Town to Kardamyli, Stoupa, Costa Navarino, Pylos and the Mani peninsula.",
+      el: "Η επιλογή της βάσης σου στην Καλαμάτα και τη Μεσσηνία κάνει σημαντική διαφορά στο είδος του ταξιδιού που θα κάνεις — από το αστικό παραλιακό μέτωπο και την Παλιά Πόλη μέχρι την Καρδαμύλη, την Στούπα, την Costa Navarino, την Πύλο και τη Μάνη."
+    },
+    image: "/images/kalamata.webp",
+    overview: {
+      en: "Kalamata and the Messinia region offer one of the richest and most varied travel landscapes in Greece — and the choice of where to base yourself makes a significant difference to the kind of trip you have.\n\nStay in Kalamata city and you have a genuine urban base: a 7km beach at walking distance, the Old Town and castle on the hill, the Saturday market, and excellent tavernas at the old port — all while keeping every major destination in the region within an hour's drive. Stay in Kardamyli and you are inside the Mani from the first morning, with the mountains at your back and the sea below. Stay near Costa Navarino and you wake up adjacent to one of the finest resort landscapes in Greece and a short drive from Voidokilia and Pylos.\n\nNone of these is the wrong choice. They are different trips.",
+      el: "Η Καλαμάτα και η Μεσσηνία προσφέρουν ένα από τα πιο πλούσια και ποικιλόμορφα ταξιδιωτικά τοπία της Ελλάδας — και η επιλογή της βάσης σου κάνει σημαντική διαφορά στο είδος του ταξιδιού που θα κάνεις.\n\nΜείνε στην πόλη της Καλαμάτας και έχεις μια γνήσια αστική βάση: μια παραλία 7 χλμ σε απόσταση με τα πόδια, την Παλιά Πόλη και το κάστρο στο λόφο, την υπέροχη Λαϊκή Αγορά του Σαββάτου και εξαιρετικές ταβέρνες στο παλιό λιμάνι — με κάθε σημαντικό προορισμό της περιοχής σε απόσταση μίας ώρας με το αυτοκίνητο. Μείνε στην Καρδαμύλη και είσαι μέσα στη Μάνη από το πρώτο πρωί, με τα βουνά στην πλάτη σου και τη θάλασσα από κάτω. Μείνε κοντά στην Costa Navarino και ξυπνάς δίπλα σε ένα από τα ωραιότερα resort τοπία της Ελλάδας, με τη Βοϊδοκοιλιά και την Πύλο σε μικρή απόσταση."
+    },
+    description: {
+      en: "From Kalamata's beachfront and Old Town to Kardamyli, Stoupa, Costa Navarino and Pylos — a complete guide to where to stay in Kalamata and the Messinia region, with hotel recommendations for every traveler type.",
+      el: "Από το παραλιακό μέτωπο και την Παλιά Πόλη της Καλαμάτας μέχρι την Καρδαμύλη, την Στούπα, την Costa Navarino και την Πύλο — ένας πλήρης οδηγός για το πού να μείνεις στην Καλαμάτα και τη Μεσσηνία, με προτάσεις ξενοδοχείων για κάθε τύπο ταξιδιώτη."
+    },
+    features: {
+      en: [
+        "Kalamata Beachfront & City Centre",
+        "Old Town (Ano Poli)",
+        "Kardamyli — Outer Mani",
+        "Stoupa — Beach Resort",
+        "Costa Navarino & Pylos",
+        "Ancient Messene Area"
+      ],
+      el: [
+        "Παραλιακό Μέτωπο & Κέντρο Καλαμάτας",
+        "Παλιά Πόλη (Άνω Πόλη)",
+        "Καρδαμύλη — Έξω Μάνη",
+        "Στούπα — Παραλιακό Θέρετρο",
+        "Costa Navarino & Πύλος",
+        "Περιοχή Αρχαίας Μεσσήνης"
+      ]
+    },
+    sections: [
+      {
+        title: { en: "Kalamata Beachfront & City Centre", el: "Παραλιακό Μέτωπο & Κέντρο Καλαμάτας" },
+        content: {
+          en: "The Kalamata beachfront is the most practical and versatile base in the region. The beach itself runs for almost 7 kilometres — clean, organized, with fine dark-grey sand. Hotels along this strip put the sea immediately at your door, the Old Town and castle a short walk or taxi ride uphill, the old port fish tavernas nearby, and every major regional destination — Pylos, Costa Navarino, the Mani, Ancient Messene — within an hour by car.\n\nFiloxenia Hotel is one of the most established four-star hotels in Kalamata, with a seafront position at the northern end of the beach promenade. Many rooms have direct sea views and a pool terrace overlooking the Messenian Gulf toward the Taygetos range. Pharae Palace Hotel is a large, well-equipped hotel on the seafront with pool, fitness facilities and conference rooms — the reference choice for business travelers and larger groups, with sea-facing rooms that overlook the entire arc of the gulf. Haikos Hotel is a well-positioned city hotel a short walk from the beach and the city centre, with a contemporary design and a rooftop pool that offers one of the better views of Kalamata and the gulf — a good mid-range option for those who want something more design-conscious. Elite Hotel Kalamata is a comfortable, centrally located three-star option with good value for both the beach and the city, popular with Greek domestic travelers and families.",
+          el: "Το παραλιακό μέτωπο της Καλαμάτας είναι η πιο πρακτική και ευέλικτη βάση της περιοχής. Η παραλία εκτείνεται σχεδόν 7 χιλιόμετρα — καθαρή, οργανωμένη, με λεπτή σκουρόγκριζη άμμο. Τα ξενοδοχεία κατά μήκος αυτής της λωρίδας έχουν τη θάλασσα ακριβώς μπροστά σου, την Παλιά Πόλη και το κάστρο σε μικρή απόσταση με τα πόδια ή ταξί, τις ταβέρνες του παλιού λιμανιού κοντά, και κάθε σημαντικό προορισμό — Πύλο, Costa Navarino, Μάνη, Αρχαία Μεσσήνη — σε απόσταση μίας ώρας με το αυτοκίνητο.\n\nΤο Filoxenia Hotel είναι ένα από τα πιο καθιερωμένα τετράστερα ξενοδοχεία της Καλαμάτας, με θέση στο βόρειο άκρο του παραλιακού πεζοδρόμου. Πολλά δωμάτια έχουν άμεση θέα στη θάλασσα και βεράντα με πισίνα που κοιτάζει τον Μεσσηνιακό Κόλπο προς τον Ταΰγετο. Το Pharae Palace Hotel είναι ένα μεγάλο, καλά εξοπλισμένο ξενοδοχείο στο παραλιακό μέτωπο με πισίνα, γυμναστήριο και αίθουσες συνεδριάσεων — η βασική επιλογή για επαγγελματίες και μεγάλες ομάδες. Το Haikos Hotel είναι ένα καλά τοποθετημένο αστικό ξενοδοχείο σε μικρή απόσταση με τα πόδια από την παραλία και το κέντρο, με σύγχρονο σχεδιασμό και rooftop πισίνα. Το Elite Hotel Kalamata είναι μια άνετη, κεντρική τρίστερη επιλογή με καλή σχέση ποιότητας-τιμής."
+        }
+      },
+      {
+        title: { en: "Kalamata Old Town (Ano Poli) & Castle Area", el: "Παλιά Πόλη Καλαμάτας (Άνω Πόλη) & Περιοχή Κάστρου" },
+        content: {
+          en: "The Old Town of Kalamata — Ano Poli — climbs the hill beneath the Byzantine castle and preserves a character that the lower city, rebuilt after the 1986 earthquake, does not have. Stone houses, narrow lanes, small squares under plane trees, tavernas where the music starts late and the pace is entirely unhurried.\n\nStaying in Ano Poli means waking up inside the historic texture of the city — the castle is a morning walk away, the views over the rooftops to the gulf and the Taygetos range are the best in Kalamata, and the neighbourhood's own tavernas and kafenia operate at a rhythm that has nothing to do with tourism.\n\nKastro Boutique Hotel is a carefully restored boutique property in the Old Town, within walking distance of the Byzantine castle. Rooms are individually styled with local materials and a design sensibility that respects the surroundings. The views from the upper rooms and terrace look over Ano Poli toward the gulf — one of the most atmospheric places to stay in the city.",
+          el: "Η Παλιά Πόλη της Καλαμάτας — η Άνω Πόλη — σκαρφαλώνει στο λόφο κάτω από το βυζαντινό κάστρο και διατηρεί έναν χαρακτήρα που η κάτω πόλη, ξαναχτισμένη μετά τον σεισμό του 1986, δεν έχει. Πέτρινα σπίτια, στενά σοκάκια, μικρές πλατείες κάτω από πλατάνια, ταβέρνες όπου η μουσική ξεκινάει αργά και ο ρυθμός είναι εντελώς απροσπέραστος.\n\nΤο Kastro Boutique Hotel είναι ένα προσεκτικά ανακαινισμένο boutique ξενοδοχείο στην Παλιά Πόλη, σε απόσταση με τα πόδια από το βυζαντινό κάστρο. Τα δωμάτια είναι ατομικά σχεδιασμένα με τοπικά υλικά και οι θέες από τα πάνω δωμάτια και τη βεράντα κοιτάζουν πάνω από την Άνω Πόλη προς τον κόλπο."
+        }
+      },
+      {
+        title: { en: "Kardamyli — The Soul of the Outer Mani", el: "Καρδαμύλη — Η Ψυχή της Έξω Μάνης" },
+        content: {
+          en: "Kardamyli is the gateway to the Outer Mani and one of the most beautiful small towns in Greece. Nested between the sea and the lower slopes of the Taygetos range, with a medieval tower-house quarter, clear-water coves beneath the village, olive groves filling the valley, and a walking trail network that connects villages across the hillside above.\n\nPatrick Leigh Fermor lived here for decades. Staying in Kardamyli puts you inside the Mani from the first morning. The Deep Mani — Vathia, Gerolimenas, Cape Tenaro — is an hour's drive south. Kalamata city is 45 minutes north. Ancient Messene is an hour away.\n\nKalamitsi Hotel is the most established hotel in Kardamyli, with a direct position above the sea, private access to the water and views over the Messenian Gulf from every room. The Kalamitsi has stone buildings integrated into the landscape and a genuinely calm atmosphere. Anniska & Lino Houses are two traditional stone houses in the centre of Kardamyli, restored and run as a small guesthouse with a strong sense of place. Elies Resort is a five-star villa and suite property set in an olive grove above Kardamyli, offering stone-built suites with private pools or terraces and views over the olive trees and the sea.",
+          el: "Η Καρδαμύλη είναι η πύλη προς την Έξω Μάνη και μια από τις ομορφότερες μικρές πόλεις της Ελλάδας. Ανάμεσα στη θάλασσα και τις χαμηλότερες πλαγιές του Ταϋγέτου, με μεσαιωνικούς πύργους, διάφανους όρμους, ελαιώνες και μονοπάτια που συνδέουν τα χωριά.\n\nTo Kalamitsi Hotel είναι το πιο καθιερωμένο ξενοδοχείο της Καρδαμύλης, με άμεση θέση πάνω από τη θάλασσα και ιδιωτική πρόσβαση στο νερό. Τα Anniska & Lino Houses είναι δύο παραδοσιακά πέτρινα σπίτια στο κέντρο της Καρδαμύλης. Το Elies Resort είναι ένα πεντάστερο συγκρότημα με βίλες και σουίτες σε ελαιώνα πάνω από την Καρδαμύλη."
+        }
+      },
+      {
+        title: { en: "Stoupa — Beach First, Everything Else Second", el: "Στούπα — Παραλία Πρώτα" },
+        content: {
+          en: "Stoupa is 10 kilometres south of Kardamyli and represents the other version of the Outer Mani: a proper summer resort village built around two sandy bays, with organized beaches, tavernas, watersports facilities, and a genuinely relaxed family-friendly atmosphere.\n\nThe main bay (Stoupa Beach) and the smaller Stolianos Beach next to it are both excellent — sandy, clear-watered and sheltered. The village behind them has everything needed for a comfortable week without a car.\n\nStoupa Beach Hotel is directly on the main bay, with sea-view rooms and immediate access to the beach — the most straightforward choice for a beach-first stay in Stoupa. Mani Gate Hotel is a well-reviewed three-star option with a pool, comfortable rooms and a friendly atmosphere, popular with families and couples.",
+          el: "Η Στούπα είναι 10 χιλιόμετρα νότια της Καρδαμύλης: ένα παραθαλάσσιο θέρετρο χτισμένο γύρω από δύο αμμώδεις κόλπους, με οργανωμένες παραλίες, ταβέρνες και θαλάσσια σπορ.\n\nΤο Stoupa Beach Hotel βρίσκεται ακριβώς πάνω στον κεντρικό κόλπο, με δωμάτια με θέα στη θάλασσα. Το Mani Gate Hotel είναι μια τρίστερη επιλογή με πισίνα και άνετα δωμάτια."
+        }
+      },
+      {
+        title: { en: "Costa Navarino & Pylos Area — The Southwest", el: "Costa Navarino & Πύλος — Η Νοτιοδυτική Πύλη" },
+        content: {
+          en: "The southwest corner of Messinia — the area around Pylos and the Costa Navarino resort — is one of the finest combinations of natural beauty and high-end infrastructure in Greece. Voidokilia, the horseshoe bay behind the dunes of NATURA 2000, is among the most beautiful beaches in Europe. The town of Pylos — its elegant central square, its Niokastro fortress, the boat trips around the Bay of Navarino — is one of the most quietly impressive small towns in the Peloponnese.\n\nThe Romanos, a Luxury Collection Resort, Costa Navarino sits on an elevated position above the Navarino Dunes golf course and the sea, with views over the entire bay. Villas and suites with private pools, a full-service spa, multiple restaurants including fine dining, direct beach access via funicular. The Westin Resort Costa Navarino is the second five-star property at Costa Navarino, larger in scale with an extensive water park, making it particularly suited to families with children. Zoe Hotel Pylos offers a small, well-run accommodation in Pylos town centre — close to the main square, the Niokastro fortress and the harbour. Zante Maris Navarino is a mid-range resort-style property near the Costa Navarino area with pool, beach access and comfortable facilities.",
+          el: "Η νοτιοδυτική γωνία της Μεσσηνίας — η περιοχή γύρω από την Πύλο και το Costa Navarino — είναι ένας από τους ωραιότερους συνδυασμούς φυσικής ομορφιάς και υψηλών υποδομών στην Ελλάδα. Η Βοϊδοκοιλιά είναι από τις ομορφότερες παραλίες της Ευρώπης.\n\nΤο The Romanos, ένα Luxury Collection Resort, βρίσκεται σε υπερυψωμένη θέση πάνω από το γήπεδο γκολφ Navarino Dunes και τη θάλασσα. Το The Westin Resort Costa Navarino είναι το δεύτερο πεντάστερο θέρετρο, με μεγαλύτερη κλίμακα και εκτεταμένο υδάτινο πάρκο. Το Zoe Hotel Pylos προσφέρει μικρή, καλοδιατηρημένη διαμονή στο κέντρο της Πύλου. Το Zante Maris Navarino είναι ένα μεσαίας κατηγορίας resort με πισίνα και άνετες εγκαταστάσεις."
+        }
+      },
+      {
+        title: { en: "Ancient Messene & Inland Messinia", el: "Αρχαία Μεσσήνη & Εσωτερική Μεσσηνία" },
+        content: {
+          en: "Ancient Messene — one of the great under-visited archaeological sites of Greece, with 9km of standing circuit walls, a theatre, a stadium and a sanctuary — sits in the inland hills above the Messinian plain, close to the village of Mavromati. Staying in this area, rather than commuting from Kalamata, allows you to visit the site at opening time in the early morning light.\n\nThe inland villages of Messinia — Meligalas, Ithomi, the slopes of Mount Ithomi — are quieter Greece: olive groves, small kafenia, a pace entirely removed from summer coastal tourism. Mystras (UNESCO) is approximately 60km to the northeast.\n\nIthomi Hotel, Mavromati is a small, simple hotel in the village of Mavromati directly above the Ancient Messene site — the closest base to the ruins. The morning walk down to the site gates, before the day-trippers arrive from Kalamata, is a significant advantage.",
+          el: "Η Αρχαία Μεσσήνη βρίσκεται στους λόφους της ενδοχώρας πάνω από τον μεσσηνιακό κάμπο, κοντά στο χωριό Μαυρομμάτι. Η διαμονή στην περιοχή σου επιτρέπει να επισκεφτείς τον χώρο με το πρώτο φως.\n\nΤο Ithomi Hotel, Mavromati είναι ένα μικρό, απλό ξενοδοχείο στο χωριό Μαυρομμάτι, ακριβώς πάνω από τον αρχαιολογικό χώρο — η πιο κοντινή βάση στα ερείπια."
+        }
+      }
+    ],
+    faq: [
+      {
+        q: { en: "Which area is best for first-time visitors?", el: "Ποια περιοχή είναι καλύτερη για πρώτη φορά;" },
+        a: { en: "Kalamata Beachfront / City Centre is the best all-round base for first-time visitors, offering maximum flexibility for beach days, city exploration and regional excursions.", el: "Το Παραλιακό Μέτωπο / Κέντρο Καλαμάτας είναι η καλύτερη all-round βάση για πρώτη φορά." }
+      },
+      {
+        q: { en: "Which area is best for beach holidays?", el: "Ποια περιοχή είναι καλύτερη για διακοπές στη θάλασσα;" },
+        a: { en: "Kalamata Beachfront or Stoupa — Stoupa is more purely beach-oriented with a relaxed resort atmosphere.", el: "Παραλιακό Μέτωπο Καλαμάτας ή Στούπα." }
+      },
+      {
+        q: { en: "Which area is best for Mani atmosphere and walking?", el: "Ποια περιοχή είναι καλύτερη για Μάνη και περπάτημα;" },
+        a: { en: "Kardamyli — the gateway to the Outer Mani with excellent walking trails, sea coves and the deepest local character.", el: "Καρδαμύλη — η πύλη προς την Έξω Μάνη." }
+      },
+      {
+        q: { en: "Which area is best for luxury resorts?", el: "Ποια περιοχή είναι καλύτερη για πολυτελή resort;" },
+        a: { en: "Costa Navarino — The Romanos and The Westin Resort offer world-class five-star facilities.", el: "Costa Navarino — The Romanos και The Westin Resort." }
+      },
+      {
+        q: { en: "Which area is best for families with young children?", el: "Ποια περιοχή είναι καλύτερη για οικογένειες με μικρά παιδιά;" },
+        a: { en: "Stoupa (easy beach-focused) or Costa Navarino (Westin with water park).", el: "Στούπα ή Costa Navarino (Westin με υδάτινο πάρκο)." }
+      },
+      {
+        q: { en: "Which area is best for visiting Voidokilia and Pylos?", el: "Ποια περιοχή είναι καλύτερη για επίσκεψη στη Βοϊδοκοιλιά και την Πύλο;" },
+        a: { en: "Pylos town or the Costa Navarino area — both are within 10–15 minutes of Voidokilia beach.", el: "Πύλος ή περιοχή Costa Navarino." }
+      },
+      {
+        q: { en: "Which area is best for Ancient Messene?", el: "Ποια περιοχή είναι καλύτερη για Αρχαία Μεσσήνη;" },
+        a: { en: "Mavromati village (Ithomi Hotel) — the closest base to the archaeological site.", el: "Μαυρομμάτι (Ithomi Hotel)." }
+      },
+      {
+        q: { en: "Which area is best for authentic city character?", el: "Ποια περιοχή είναι καλύτερη για αυθεντικό αστικό χαρακτήρα;" },
+        a: { en: "Kalamata Old Town (Ano Poli) — especially Kastro Boutique Hotel.", el: "Παλιά Πόλη Καλαμάτας (Άνω Πόλη)." }
+      },
+      {
+        q: { en: "Which area is best for couples and romance?", el: "Ποια περιοχή είναι καλύτερη για ζευγάρια;" },
+        a: { en: "Kardamyli (Kalamitsi or Anniska & Lino) or the Kastro Boutique in Kalamata Old Town.", el: "Καρδαμύλη ή Kastro Boutique στην Παλιά Πόλη." }
+      }
+    ],
+    seo: {
+      title: {
+        en: "Where to Stay in Kalamata: Best Areas & Hotels | GoGreeceNow",
+        el: "Πού να Μείνετε στην Καλαμάτα: Καλύτερες Περιοχές & Ξενοδοχεία | GoGreeceNow"
+      },
+      description: {
+        en: "From Kalamata's beachfront and Old Town to Kardamyli, Stoupa, Costa Navarino and Pylos — a complete guide to where to stay in Kalamata and the Messinia region.",
+        el: "Από το παραλιακό μέτωπο και την Παλιά Πόλη της Καλαμάτας μέχρι την Καρδαμύλη, την Στούπα, την Costa Navarino και την Πύλο — ένας πλήρης οδηγός διαμονής."
+      }
+    }
   }
 ];
 

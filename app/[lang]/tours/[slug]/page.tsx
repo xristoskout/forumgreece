@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import ReactDOM from "react-dom";
 import { tours, SITE_URL, type Lang } from "../../../../lib/content";
 import {
   experienceBusinesses,
@@ -182,11 +181,6 @@ export default async function TourPage({ params }: TourPageProps) {
   const canonicalUrl = `${SITE_URL}/${lang}/tours/${slug}`;
 
   if (pageData.type === "landing") {
-    // Preload landing image if available
-    if (pageData.landing.image) {
-      ReactDOM.preload(pageData.landing.image, { as: "image", fetchPriority: "high" });
-    }
-
     const itemPage = itemPageSchema({
       name: pageData.landing.title[lang],
       description: pageData.landing.description[lang],
@@ -207,11 +201,6 @@ export default async function TourPage({ params }: TourPageProps) {
         />
       </>
     );
-  }
-
-  // Preload tour hero LCP image
-  if (pageData.tour.image) {
-    ReactDOM.preload(pageData.tour.image, { as: "image", fetchPriority: "high" });
   }
 
   const itemPage = itemPageSchema({

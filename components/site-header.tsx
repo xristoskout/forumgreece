@@ -31,6 +31,7 @@ export default function SiteHeader() {
     tours: { en: "Tours", el: "Εκδρομές" },
     food: { en: "Eat & Drink", el: "Φαγητό & Ποτό" },
     forums: { en: "Travel to Greece", el: "Ταξίδι στην Ελλάδα" },
+    compare: { en: "Compare", el: "Σύγκριση" },
     menu: { en: "Menu", el: "Μενού" },
     close: { en: "Close", el: "Κλείσιμο" },
   };
@@ -43,8 +44,8 @@ export default function SiteHeader() {
       {
         key: "destinations",
         label: t.destinations[lang],
-        href: withLangHash("#destinations"),
-        active: isHome,
+        href: withLang("/destinations"),
+        active: pathname.startsWith(`/${lang}/destinations`),
       },
       {
         key: "travel-info",
@@ -69,6 +70,12 @@ export default function SiteHeader() {
         label: t.food[lang],
         href: withLang("/eat-drink"),
         active: pathname.startsWith(`/${lang}/eat-drink`),
+      },
+      {
+        key: "compare",
+        label: t.compare[lang],
+        href: withLang("/travel-tools"),
+        active: pathname.startsWith(`/${lang}/travel-tools`),
       },
       {
         key: "forums",
