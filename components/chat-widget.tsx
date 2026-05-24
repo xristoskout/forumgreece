@@ -24,9 +24,8 @@ export default function ChatWidget() {
       api: '/api/chat',
       body: { lang }
     }),
-    onError: (err) => {
-      console.error("Chat Error:", err);
-      alert("AI Error: Check your terminal/console for details. Likely missing API Key.");
+    onError: () => {
+      alert("AI Error: Unable to connect. Please try again later.");
     }
   });
 
@@ -39,12 +38,8 @@ export default function ChatWidget() {
     const currentText = text.trim();
     if (!currentText || isProcessing) return;
     
-    try {
-      setText(""); // Clear immediately for better UX
-      sendMessage({ text: currentText });
-    } catch (error) {
-      console.error("Failed to send message:", error);
-    }
+    setText(""); // Clear immediately for better UX
+    sendMessage({ text: currentText });
   };
 
   // Auto scroll to bottom

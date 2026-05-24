@@ -14,7 +14,7 @@ export type Pin = {
        document.addEventListener('click', e => {
          const x = Math.round(e.offsetX / e.target.clientWidth * e.target.naturalWidth);
          const y = Math.round(e.offsetY / e.target.clientHeight * e.target.naturalHeight);
-          // console.log(x, y);
+         console.log(x, y);
         })
   3. Click on the destination spot on the map
   4. Add a new entry below with:

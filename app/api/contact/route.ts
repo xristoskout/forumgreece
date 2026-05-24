@@ -13,8 +13,8 @@ export async function POST(request: Request) {
 
     const { name, email, message, website_url } = await request.json();
 
+    // Honeypot: bots fill this hidden field
     if (website_url) {
-      console.log('Bot detected, ignoring request.');
       return NextResponse.json({ message: 'Email sent successfully' }, { status: 200 });
     }
 
@@ -53,7 +53,6 @@ export async function POST(request: Request) {
 
     return NextResponse.json({ message: 'Email sent successfully' }, { status: 200 });
   } catch (error) {
-    console.error('Email sending error:', error);
     return NextResponse.json({ error: 'Failed to send email' }, { status: 500 });
   }
 }

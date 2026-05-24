@@ -28,10 +28,8 @@ export async function POST(req: Request) {
     }
 
     const { messages, lang = 'en' } = await req.json();
-    console.log(`AI Chat: Received request in "${lang}" with`, messages?.length, "messages");
 
     if (!process.env.GOOGLE_GENERATIVE_AI_API_KEY) {
-      console.error("AI Chat: Error - GOOGLE_GENERATIVE_AI_API_KEY is missing!");
       return new Response('API Key missing', { status: 500 });
     }
 
@@ -101,8 +99,7 @@ ${databaseContext}
     `;
 
     const stream = createUIMessageStream({
-      onError: (error) => {
-        console.error('AI Stream Error Callback:', error);
+      onError: () => {
         return 'An error occurred while streaming the response.';
       },
       execute: async ({ writer }) => {
@@ -116,14 +113,13 @@ ${databaseContext}
 
           writer.merge(result.toUIMessageStream());
         } catch (error) {
-          console.error('AI Stream Execution Error:', error);
+          // Error handled by onError callback
         }
       },
     });
 
     return createUIMessageStreamResponse({ stream });
   } catch (error) {
-    console.error('Chat API Error:', error);
     return new Response('Internal Server Error', { status: 500 });
   }
 }
