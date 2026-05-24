@@ -745,40 +745,99 @@ export const travelInfoGuides: GuideCard[] = [
   },
   {
     slug: "best-boat-trips-in-kefalonia",
-    title: { en: "Best Boat Trips in Kefalonia", el: "Οι Καλύτερες Εκδρομές με Σκάφος στην Κεφαλονιά" },
+    title: {
+      en: "Best Boat Trips in Kefalonia 2026 — Ithaca, Fteri, Fiskardo & Hidden Coves",
+      el: "Οι Καλύτερες Εκδρομές με Σκάφος στην Κεφαλονιά 2026 — Ιθάκη, Φτέρι, Φισκάρδο & Κρυμμένοι Όρμοι"
+    },
     description: {
-      en: "Explore the hidden beaches, sea caves, and neighboring islands with the best boat tours and cruises available from Kefalonia.",
-      el: "Εξερευνήστε κρυφές παραλίες, θαλάσσιες σπηλιές και γειτονικά νησιά με τις καλύτερες εκδρομές και κρουαζιέρες από την Κεφαλονιά."
+      en: "The best boat trips in Kefalonia: day cruises to Ithaca, private hire in Fiskardo, hidden beaches only by sea, turtle spotting and sunset sailing. What to book and practical tips.",
+      el: "Οι καλύτερες εκδρομές με σκάφος στην Κεφαλονιά: ημερήσιες κρουαζιέρες στην Ιθάκη, ενοικίαση σκάφους στο Φισκάρδο, κρυφές παραλίες μόνο από τη θάλασσα, χελώνες και ιστιοπλοΐα ηλιοβασιλέματος. Τι να κλείσετε και πρακτικές συμβουλές."
     },
     image: "/images/kefalonia.webp",
     overview: {
-      en: "Kefalonia's coastline is dramatic and diverse, but many of its best spots are inaccessible by car. Taking a boat trip is essential to truly appreciate the island's turquoise waters, hidden coves, and close proximity to Ithaca and Zakynthos. For transport tips on the island, see our [Getting Around Greece](/travel-info/getting-around-greece) guide, and check the [Best Time to Visit](/travel-info/best-time-to-visit-greece) for ideal sailing conditions.",
-      el: "Η ακτογραμμή της Κεφαλονιάς είναι εντυπωσιακή, αλλά πολλά από τα καλύτερα σημεία της δεν είναι προσβάσιμα με αυτοκίνητο. Η εκδρομή με σκάφος είναι απαραίτητη για να εκτιμήσετε τα γαλαζοπράσινα νερά και τους κρυφούς όρμους. Για συμβουλές μετακίνησης, δες τον οδηγό [Μετακινήσεις στην Ελλάδα](/travel-info/getting-around-greece), και έλεγξε τον [Οδηγό Εποχής](/travel-info/best-time-to-visit-greece) για ιδανικές συνθήκες ιστιοπλοΐας."
+      en: "Kefalonia has some of the most dramatic coastline in the Ionian — but a significant part of its best beaches, sea caves and hidden coves simply cannot be reached by road. No rental car will get you to Fteri beach. No bus goes to the sea arch at Agia Kyriaki. And the narrow strait between Kefalonia and Ithaca, with its glassy turquoise water and deserted anchorages, is only visible from the water.\n\nA boat trip in Kefalonia is not a tourist extra — it is how you actually see the island. This guide covers every option, from full-day cruises to Ithaca and private hire in Fiskardo to glass-bottom turtle tours and sunset sailing, with honest advice on what suits different types of traveler.\n\nFor context on the island itself, read our full [Kefalonia destination guide](/destinations/kefalonia).",
+      el: "Η Κεφαλονιά έχει μία από τις πιο εντυπωσιακές ακτογραμμές στο Ιόνιο — αλλά ένα σημαντικό μέρος από τις καλύτερες παραλίες, θαλάσσιες σπηλιές και κρυφούς όρμους της δεν είναι προσβάσιμο οδικώς. Κανένα ενοικιαζόμενο αυτοκίνητο δεν θα σας πάει στην παραλία Φτέρι. Κανένα λεωφορείο δεν πηγαίνει στη θαλάσσια αψίδα της Αγίας Κυριακής. Και το στενό πέρασμα μεταξύ Κεφαλονιάς και Ιθάκης, με τα γαλαζοπράσινα νερά και τους ερημικούς όρμους του, είναι ορατό μόνο από τη θάλασσα.\n\nΜια εκδρομή με σκάφος στην Κεφαλονιά δεν είναι ένα έξτρα τουριστικό στοιχείο — είναι ο τρόπος με τον οποίο βλέπετε πραγματικά το νησί. Αυτός ο οδηγός καλύπτει κάθε επιλογή, από ολοήμερες κρουαζιέρες στην Ιθάκη και ενοικίαση σκάφους στο Φισκάρδο μέχρι tours με γυάλινο πάτο για χελώνες και ιστιοπλοΐα ηλιοβασιλέματος.\n\nΓια το πλαίσιο του ίδιου του νησιού, διαβάστε τον πλήρη [οδηγό Κεφαλονιάς](/destinations/kefalonia)."
     },
     points: {
-      en: ["Sail to mythical Ithaca for a day trip", "Discover the hidden beaches of the north coast", "Spot Caretta-Caretta turtles in Argostoli", "Rent a private motorboat in Fiskardo"],
-      el: ["Ταξιδέψτε στη μυθική Ιθάκη για μια ημερήσια εκδρομή", "Ανακαλύψτε τις κρυφές παραλίες της βόρειας ακτής", "Δείτε χελώνες Caretta-Caretta στο Αργοστόλι", "Ενοικιάστε ιδιωτικό σκάφος στο Φισκάρδο"]
+      en: [
+        "Day Cruise to Ithaca — the mythological crossing to Odysseus's homeland",
+        "Fteri & Amidi Beaches — hidden coves only reachable by sea",
+        "Private Boat Hire in Fiskardo — no license required, total freedom",
+        "Glass-Bottom Boat & Turtles in Argostoli — family-friendly turtle spotting",
+        "Sunset Sailing along the West Coast — Myrtos from the sea at golden hour",
+        "Inter-Island Trip to Zakynthos — Navagio Shipwreck & Blue Caves"
+      ],
+      el: [
+        "Ημερήσια κρουαζιέρα στην Ιθάκη — το μυθικό πέρασμα στην πατρίδα του Οδυσσέα",
+        "Παραλίες Φτέρι & Αμίδι — κρυμμένοι όρμοι προσβάσιμοι μόνο από τη θάλασσα",
+        "Ενοικίαση σκάφους στο Φισκάρδο — χωρίς δίπλωμα, απόλυτη ελευθερία",
+        "Tουρ με γυάλινο πάτο & χελώνες στο Αργοστόλι — οικογενειακή παρατήρηση χελωνών",
+        "Ιστιοπλοΐα ηλιοβασιλέματος στη δυτική ακτή — ο Μύρτος από τη θάλασσα",
+        "Εκδρομή στη Ζάκυνθο — Ναυάγιο & Γαλάζιες Σπηλιές"
+      ]
     },
     sections: [
       {
-        title: { en: "1. Day Cruises to Ithaca", el: "1. Ημερήσιες κρουαζιέρες στην Ιθάκη" },
+        title: { en: "Day Cruise to Ithaca — the mythological crossing", el: "Ημερήσια κρουαζιέρα στην Ιθάκη — το μυθικό πέρασμα" },
         content: {
-          en: "The most popular boat trip from Kefalonia is the crossing to Odysseus's homeland, Ithaca. These full-day cruises usually depart from Sami or Skala and include swimming stops in pristine bays and a visit to Vathy or Kioni.",
-          el: "Η πιο δημοφιλής εκδρομή με σκάφος από την Κεφαλονιά είναι το πέρασμα στην πατρίδα του Οδυσσέα, την Ιθάκη. Οι κρουαζιέρες αναχωρούν συνήθως από τη Σάμη ή τη Σκάλα."
+          en: "The most popular and most rewarding boat trip from Kefalonia. Ithaca is just a short crossing away but feels like a completely different world — quieter, more intimate, with almost no mass tourism.\n\nOdysseus's legendary homeland has a deep harbour at Vathy, the pretty village of Kioni clinging to a hillside, and the bay of Dexa where the hero was said to have finally come ashore. Most day cruises include swimming stops in bays that are accessible only by boat, and a few hours to walk around Vathy or Kioni.\n\n**Practical tips:**\n\n- Full-day cruises typically depart from Sami or Skala around 9:00–9:30\n- Bring cash for lunch in Vathy — the waterfront tavernas are excellent and often card-free\n- The Ithaca crossing can be choppy if the afternoon wind picks up — morning departures are calmer\n- If you want more time on Ithaca, take the regular ferry from Sami and spend a night\n\n**Best for:** History and mythology lovers, couples, anyone who wants more than beaches",
+          el: "Η πιο δημοφιλής και πιο ανταποδοτική εκδρομή με σκάφος από την Κεφαλονιά. Η Ιθάκη είναι πολύ κοντά, αλλά μοιάζει με έναν εντελώς διαφορετικό κόσμο — πιο ήσυχη, πιο οικεία, σχεδόν χωρίς μαζικό τουρισμό.\n\nΗ μυθική πατρίδα του Οδυσσέα έχει ένα βαθύ λιμάνι στο Βαθύ, το όμορφο χωριό Κιόνι που σκαρφαλώνει σε ένα λόφο, και τον όρμο της Δέξας όπου λέγεται ότι ο ήρωας βγήκε τελικά στη στεριά. Οι περισσότερες ημερήσιες κρουαζιέρες περιλαμβάνουν στάσεις για κολύμπι σε όρμους προσβάσιμους μόνο με σκάφος και λίγες ώρες για να περπατήσετε στο Βαθύ ή στο Κιόνι.\n\n**Πρακτικές συμβουλές:**\n\n- Οι ολοήμερες κρουαζιέρες συνήθως αναχωρούν από τη Σάμη ή τη Σκάλα γύρω στις 9:00–9:30\n- Φέρτε μετρητά για μεσημεριανό στο Βαθύ — οι ταβέρνες δίπλα στο λιμάνι είναι εξαιρετικές και συχνά χωρίς κάρτες\n- Το πέρασμα στην Ιθάκη μπορεί να είναι ταραγμένο αν φυσάει το απόγευμα — οι πρωινές αναχωρήσεις είναι πιο ήρεμες\n- Αν θέλετε περισσότερο χρόνο στην Ιθάκη, πάρτε το κανονικό πλοίο από τη Σάμη και μείνετε μία νύχτα\n\n**Κατάλληλο για:** Λάτρεις της ιστορίας και μυθολογίας, ζευγάρια, όσους θέλουν κάτι περισσότερο από παραλίες"
         }
       },
       {
-        title: { en: "2. Glass Bottom Tours & Turtles", el: "2. Tours με γυάλινο πάτο & Χελώνες" },
+        title: { en: "Fteri & Amidi Beaches — only reachable by boat", el: "Φτέρι & Αμίδι — μόνο με σκάφος" },
         content: {
-          en: "Perfect for families, glass-bottom boat tours operate mainly out of Argostoli. They offer a great chance to spot the resident Loggerhead turtles (Caretta-Caretta) swimming near the harbor.",
-          el: "Ιδανικά για οικογένειες, τα tours με γυάλινο πάτο αναχωρούν κυρίως από το Αργοστόλι. Προσφέρουν μια εξαιρετική ευκαιρία να δείτε τις χελώνες Caretta-Caretta κοντά στο λιμάνι."
+          en: "Fteri is widely considered one of the most beautiful beaches in Kefalonia — a wild, white pebble cove with impossibly blue water surrounded by vertical cliffs. There is no road to it. The only way in is by sea.\n\nAmidi, nearby, is similarly dramatic and even more deserted. Local boat operators from the small port of Zola (near Agia Kyriaki, northern Kefalonia) run daily trips to both, often combining them in a half-day or full-day itinerary.\n\nRolling Into The Blue, operating from Zola, offers exactly this — private cruises with skipper and no-license boat rentals for those who want to explore at their own pace. One of the most recommended local experiences in northern Kefalonia.\n👉 [Rolling Into The Blue — boat rentals & private cruises](/businesses/rolling-into-the-blue)\n\n**Practical tips:**\n\n- Zola is a 40-minute drive from Argostoli — plan accordingly\n- Fteri gets direct afternoon sun; Amidi is better earlier in the day\n- These beaches have no facilities — bring food, water and shade\n\n**Best for:** Nature lovers, photographers, couples, anyone who wants genuine seclusion",
+          el: "Το Φτέρι θεωρείται ευρέως μία από τις πιο όμορφες παραλίες της Κεφαλονιάς — ένας άγριος, λευκός όρμος με βότσαλο και απίστευτα γαλάζια νερά, περιτριγυρισμένος από κάθετους βράχους. Δεν υπάρχει δρόμος προς αυτό. Η μόνη πρόσβαση είναι από τη θάλασσα.\n\nΤο Αμίδι, εκεί κοντά, είναι εξίσου εντυπωσιακό και ακόμα πιο ερημικό. Ντόπιοι χειριστές σκαφών από το μικρό λιμάνι της Ζόλας (κοντά στην Αγία Κυριακή, βόρεια Κεφαλονιά) εκτελούν καθημερινά δρομολόγια και προς τις δύο, συχνά συνδυάζοντάς τες σε μία ημερήσια ή ημι-ημερήσια διαδρομή.\n\nΤο Rolling Into The Blue, που δραστηριοποιείται από τη Ζόλα, προσφέρει ακριβώς αυτό — ιδιωτικές κρουαζιέρες με skipper και ενοικιάσεις σκαφών χωρίς δίπλωμα. Μία από τις πιο προτεινόμενες τοπικές εμπειρίες στη βόρεια Κεφαλονιά.\n👉 [Rolling Into The Blue — ενοικίαση σκαφών & ιδιωτικές κρουαζιέρες](/businesses/rolling-into-the-blue)\n\n**Πρακτικές συμβουλές:**\n\n- Η Ζόλα είναι 40 λεπτά οδήγηση από το Αργοστόλι — προγραμματίστε ανάλογα\n- Το Φτέρι έχει άμεσο απογευματινό ήλιο· το Αμίδι είναι καλύτερα νωρίτερα μέσα στην ημέρα\n- Αυτές οι παραλίες δεν έχουν υποδομές — φέρτε φαγητό, νερό και σκιά\n\n**Κατάλληλο για:** Λάτρεις της φύσης, φωτογράφους, ζευγάρια, όσους θέλουν πραγματική απομόνωση"
         }
       },
       {
-        title: { en: "3. Private Boat Hire (Fiskardo)", el: "3. Ενοικίαση ιδιωτικού σκάφους (Φισκάρδο)" },
+        title: { en: "Private Boat Hire in Fiskardo — no license required", el: "Ενοικίαση σκάφους στο Φισκάρδο — χωρίς δίπλωμα" },
         content: {
-          en: "In the north, renting a small motorboat (no license required) from Fiskardo is a highlight. You can explore the narrow strait between Kefalonia and Ithaca, dropping anchor in completely deserted coves.",
-          el: "Στα βόρεια, η ενοικίαση ενός μικρού μηχανοκίνητου σκάφους από το Φισκάρδο είναι μοναδική εμπειρία. Μπορείτε να εξερευνήσετε το στενό μεταξύ Κεφαλονιάς και Ιθάκης."
+          en: "Fiskardo is the most picturesque village in Kefalonia — a Venetian harbour with pastel-coloured buildings that miraculously survived the 1953 earthquake. Hiring a small motorboat here (typically 15–25hp, no license required) is one of the best value, most flexible experiences on the island.\n\nYou set your own route. Most people head south along the dramatic north coast to deserted coves, or cross the narrow strait to northern Ithaca for a swim and a lunch stop. The water between the two islands is extraordinarily clear — you can see the bottom at 8–10 metres.\n\n**Practical tips:**\n\n- Boats typically rent for €60–120 for a half day depending on size\n- Fuel is usually included up to a limit — check before you leave\n- The strait between Kefalonia and Ithaca has occasional ferry traffic — give way and stay to the right\n- Return before 14:00 if the Meltemi wind is forecast — it arrives quickly in the afternoon\n\n**Best for:** Independent travelers, couples, small groups of friends",
+          el: "Το Φισκάρδο είναι το πιο γραφικό χωριό της Κεφαλονιάς — ένα βενετσιάνικο λιμάνι με παστέλ κτίρια που επέζησαν ως εκ θαύματος από τον σεισμό του 1953. Η ενοικίαση ενός μικρού μηχανοκίνητου σκάφους εδώ (συνήθως 15–25hp, χωρίς δίπλωμα) είναι μία από τις πιο ευέλικτες εμπειρίες στο νησί.\n\nΕσείς χαράζετε τη διαδρομή σας. Οι περισσότεροι κατευθύνονται νότια κατά μήκος της εντυπωσιακής βόρειας ακτής προς ερημικούς όρμους, ή διασχίζουν το στενό προς τη βόρεια Ιθάκη για κολύμπι και μεσημεριανό. Το νερό ανάμεσα στα δύο νησιά είναι εξαιρετικά καθαρό — βλέπετε τον βυθό στα 8–10 μέτρα.\n\n**Πρακτικές συμβουλές:**\n\n- Τα σκάφη συνήθως ενοικιάζονται €60–120 για μισή μέρα ανάλογα με το μέγεθος\n- Τα καύσιμα συνήθως περιλαμβάνονται μέχρι ένα όριο — ελέγξτε πριν φύγετε\n- Το στενό μεταξύ Κεφαλονιάς και Ιθάκης έχει περιστασιακή κίνηση πλοίων — δώστε προτεραιότητα και μείνετε δεξιά\n- Επιστρέψτε πριν τις 14:00 αν προβλέπεται άνεμος Meltemi — φτάνει γρήγορα το απόγευμα\n\n**Κατάλληλο για:** Ανεξάρτητους ταξιδιώτες, ζευγάρια, μικρές παρέες φίλων"
+        }
+      },
+      {
+        title: { en: "Glass-Bottom Boat & Caretta-Caretta Turtles — Argostoli", el: "Tουρ με γυάλινο πάτο & χελώνες Caretta-Caretta — Αργοστόλι" },
+        content: {
+          en: "Argostoli harbour is one of the few places in Greece where Loggerhead sea turtles (Caretta-Caretta) swim regularly and in close proximity to people. Glass-bottom boat tours depart from the town harbour and offer almost guaranteed sightings in summer, as the turtles follow the fishing boats returning with their catch.\n\nThis is a short trip (1–2 hours) rather than a full-day experience, and works perfectly as a morning or late afternoon activity alongside other plans in Argostoli.\n\n**Practical tips:**\n\n- Best sightings are early morning when fishing boats return\n- Tours run from late May through September\n- The harbour lighthouse road is also a good free spot to see turtles from land\n- Keep noise low on the boat — turtles are easily disturbed\n\n**Best for:** Families with children, wildlife lovers, short trip from Argostoli",
+          el: "Το λιμάνι του Αργοστολίου είναι ένα από τα λίγα μέρη στην Ελλάδα όπου οι θαλάσσιες χελώνες Caretta-Caretta κολυμπούν τακτικά και σε κοντινή απόσταση από τους ανθρώπους. Τα τουρ με γυάλινο πάτο αναχωρούν από το λιμάνι και προσφέρουν σχεδόν εγγυημένες θεάσεις το καλοκαίρι, καθώς οι χελώνες ακολουθούν τα ψαροκάικα που επιστρέφουν με τη ψαριά τους.\n\nΠρόκειται για μια σύντομη εκδρομή (1–2 ώρες) και λειτουργεί τέλεια ως πρωινή ή απογευματινή δραστηριότητα παράλληλα με άλλα σχέδια στο Αργοστόλι.\n\n**Πρακτικές συμβουλές:**\n\n- Οι καλύτερες θεάσεις είναι νωρίς το πρωί όταν επιστρέφουν τα ψαροκάικα\n- Τα τουρ λειτουργούν από τα τέλη Μαΐου έως τον Σεπτέμβριο\n- Ο δρόμος προς τον φάρο είναι επίσης ένα καλό δωρεάν σημείο για να δείτε χελώνες από την ξηρά\n- Κρατήστε χαμηλά τον θόρυβο στο σκάφος — οι χελώνες ενοχλούνται εύκολα\n\n**Κατάλληλο για:** Οικογένειες με παιδιά, λάτρεις της άγριας ζωής, σύντομη εκδρομή από το Αργοστόλι"
+        }
+      },
+      {
+        title: { en: "Sunset Sailing along the West Coast", el: "Ιστιοπλοΐα ηλιοβασιλέματος στη δυτική ακτή" },
+        content: {
+          en: "The west coast of Kefalonia — from Assos down past Myrtos to Paliki — faces directly west and offers some of the most dramatic sunset views in the Ionian. Seeing Myrtos from the sea, with the white pebbles turning gold and the cliffs going orange, is a completely different perspective from the famous viewpoint above.\n\nSmall-group sunset sailing trips typically depart from Agia Efimia or Sami and follow the coast north, anchoring for a swim before returning at dusk.\n\n**Practical tips:**\n\n- Trips last 3–4 hours and typically include drinks and snacks\n- Book 2–3 days in advance in July–August\n- Bring a light layer — it cools quickly on the water after sunset\n\n**Best for:** Couples, special occasions, photographers",
+          el: "Η δυτική ακτή της Κεφαλονιάς — από το Ασός μέχρι τον Μύρτο και το Παλική — βλέπει απευθείας στη δύση και προσφέρει μερικές από τις πιο εντυπωσιακές θεάσεις ηλιοβασιλέματος στο Ιόνιο. Το να βλέπεις τον Μύρτο από τη θάλασσα, με τα λευκά βότσαλα να γίνονται χρυσά και οι γκρεμοί πορτοκαλί, είναι μια εντελώς διαφορετική προοπτική.\n\nΟι εκδρομές ιστιοπλοΐας ηλιοβασιλέματος για μικρές ομάδες συνήθως αναχωρούν από την Αγία Ευφημία ή τη Σάμη και ακολουθούν την ακτή βόρεια.\n\n**Πρακτικές συμβουλές:**\n\n- Οι εκδρομές διαρκούν 3–4 ώρες και συνήθως περιλαμβάνουν ποτά και σνακ\n- Κλείστε 2–3 ημέρες νωρίτερα τον Ιούλιο–Αύγουστο\n- Φέρτε ένα ελαφρύ στρώμα — κρυώνει γρήγορα στο νερό μετά τη δύση\n\n**Κατάλληλο για:** Ζευγάρια, ειδικές περιστάσεις, φωτογράφους"
+        }
+      },
+      {
+        title: { en: "Inter-Island Boat Trip to Zakynthos", el: "Εκδρομή με σκάφος στη Ζάκυνθο" },
+        content: {
+          en: "For those staying in southern Kefalonia (Skala, Katelios area), a full-day trip down to Zakynthos is possible by seasonal boat service. The combination of Navagio Shipwreck and Blue Caves — Zakynthos's two iconic sea experiences — makes for an impressive day out that contrasts beautifully with Kefalonia's quieter vibe.\n\n**Practical tips:**\n\n- Seasonal service — check current availability as it varies year to year\n- A long day (10–12 hours) — better suited for younger or more active travelers\n- Alternatively, take the ferry to Zakynthos independently and spend a night\n\n**Best for:** Island hoppers, those already planning to visit Zakynthos",
+          el: "Για όσους μένουν στη νότια Κεφαλονιά (περιοχή Σκάλας, Κατελιού), μια ολοήμερη εκδρομή στη Ζάκυνθο είναι δυνατή με εποχική υπηρεσία σκαφών. Ο συνδυασμός του Ναυαγίου και των Γαλάζιων Σπηλιών — οι δύο εμβληματικές εμπειρίες της Ζακύνθου — κάνει μια εντυπωσιακή ημέρα.\n\n**Πρακτικές συμβουλές:**\n\n- Εποχική υπηρεσία — ελέγξτε τη διαθεσιμότητα, καθώς ποικίλλει από χρόνο σε χρόνο\n- Μεγάλη ημέρα (10–12 ώρες) — κατάλληλη για πιο δραστήριους ταξιδιώτες\n- Εναλλακτικά, πάρτε το πλοίο για Ζάκυνθο ανεξάρτητα και μείνετε μία νύχτα\n\n**Κατάλληλο για:** Island hoppers, όσους ήδη σχεδιάζουν να επισκεφτούν τη Ζάκυνθο"
+        }
+      },
+      {
+        title: { en: "What to Skip", el: "Τι να αποφύγετε" },
+        content: {
+          en: "Large group party boats from Lassi: These operate on the south coast and are more focused on music and alcohol than on the island itself. Fine if that's what you're after — but not the Kefalonia experience.\n\nOverpriced \"private yacht\" packages from Argostoli harbour touts: A simple motorboat hire from Fiskardo gives you more freedom for a fraction of the price.",
+          el: "Μεγάλα σκάφη πάρτι από το Λάσσι: Δραστηριοποιούνται στη νότια ακτή και επικεντρώνονται περισσότερο στη μουσική και το αλκοόλ παρά στο ίδιο το νησί. Εντάξει αν αυτό ψάχνετε — αλλά δεν είναι η εμπειρία της Κεφαλονιάς.\n\nΥπερτιμημένα πακέτα \"ιδιωτικού γιοτ\" από το Αργοστόλι: Μια απλή ενοικίαση μηχανοκίνητου σκάφους από το Φισκάρδο σας δίνει περισσότερη ελευθερία για ένα κλάσμα της τιμής."
+        }
+      },
+      {
+        title: { en: "When is the Best Time for Boat Trips in Kefalonia", el: "Πότε είναι η καλύτερη εποχή για εκδρομές με σκάφος" },
+        content: {
+          en: "**May–June:** Calm seas, uncrowded, ideal conditions. Best months for boat trips overall.\n\n**July–August:** Great weather but afternoon winds (Meltemi) can be strong. Always depart in the morning.\n\n**September–October:** Warm sea, much calmer winds than August, far fewer tourists. Arguably the best boat trip season.",
+          el: "**Μάιος–Ιούνιος:** Ήρεμες θάλασσες, χωρίς πολυκοσμία, ιδανικές συνθήκες. Οι καλύτεροι μήνες συνολικά.\n\n**Ιούλιος–Αύγουστος:** Εξαιρετικός καιρός αλλά οι απογευματινοί άνεμοι (Meltemi) μπορεί να είναι δυνατοί. Πάντα να αναχωρείτε το πρωί.\n\n**Σεπτέμβριος–Οκτώβριος:** Ζεστή θάλασσα, πολύ πιο ήρεμοι άνεμοι από τον Αύγουστο, πολύ λιγότεροι τουρίστες. Αναμφισβήτητα η καλύτερη σεζόν."
+        }
+      },
+      {
+        title: { en: "Ready to Book", el: "Έτοιμοι να κλείσετε" },
+        content: {
+          en: "Browse our full [Kefalonia tours & experiences](/tours/kefalonia-tours) page for featured local operators including Rolling Into The Blue and more.\n\nNot sure if Kefalonia is the right island for you?\n[Compare Kefalonia with other Greek islands](https://www.gogreecenow.com/en/travel-tools)",
+          el: "Δείτε ολόκληρη τη σελίδα [Εκδρομές & Εμπειρίες Κεφαλονιάς](/tours/kefalonia-tours) για επιλεγμένους τοπικούς παρόχους, συμπεριλαμβανομένου του Rolling Into The Blue και άλλων.\n\nΔεν είστε σίγουροι αν η Κεφαλονιά είναι το κατάλληλο νησί για εσάς;\n[Συγκρίνετε την Κεφαλονιά με άλλα ελληνικά νησιά](https://www.gogreecenow.com/en/travel-tools)"
         }
       }
     ]
@@ -825,40 +884,92 @@ export const travelInfoGuides: GuideCard[] = [
   },
   {
     slug: "best-tours-in-mykonos",
-    title: { en: "Best Tours in Mykonos", el: "Οι Καλύτερες Εκδρομές στη Μύκονο" },
+    title: {
+      en: "Best Tours in Mykonos 2026 — Delos, Sailing, Beaches & Hidden Spots",
+      el: "Οι Καλύτερες Εκδρομές στη Μύκονο 2026 — Δήλος, Ιστιοπλοΐα, Παραλίες & Κρυμμένα Σημεία"
+    },
     description: {
-      en: "Discover the best guided tours, sailing trips, and historical excursions in Mykonos to upgrade your island experience.",
-      el: "Ανακαλύψτε τις καλύτερες ξεναγήσεις, ιστιοπλοϊκές εκδρομές και ιστορικές εξορμήσεις στη Μύκονο για να αναβαθμίσετε την εμπειρία σας."
+      en: "The best Mykonos tours ranked: Delos island trips, catamaran sailing, Jeep safaris, cooking classes and sunset cruises. What's worth booking, what to skip, and practical tips.",
+      el: "Οι καλύτερες εκδρομές στη Μύκονο: Δήλος, ιστιοπλοΐα με καταμαράν, Jeep safaris, μαθήματα μαγειρικής και κρουαζιέρες ηλιοβασιλέματος. Τι αξίζει να κλείσετε, τι να αποφύγετε και πρακτικές συμβουλές."
     },
     image: "/images/mykonos.webp",
     overview: {
-      en: "Beyond the beach clubs and vibrant nightlife, Mykonos offers incredible experiences on the water and a deep dive into ancient history. Booking a tour is the best way to see the island's quieter side and the sacred neighboring island of Delos. If you are deciding between islands, our [Santorini vs Mykonos](/travel-info/santorini-vs-mykonos) comparison can help you choose the right fit.",
-      el: "Πέρα από τα beach clubs και την έντονη νυχτερινή ζωή, η Μύκονος προσφέρει απίστευτες εμπειρίες στο νερό και μια βαθιά βουτιά στην αρχαία ιστορία. Αν αποφασίζεις μεταξύ νησιών, η σύγκριση [Σαντορίνη vs Μύκονος](/travel-info/santorini-vs-mykonos) μπορεί να σε βοηθήσει να επιλέξεις."
+      en: "Mykonos is famous for beach clubs and nightlife — but the island has a quieter, richer side that most visitors miss entirely. A short boat ride away lies one of the most important archaeological sites in Greece. The rugged north coast hides beaches that see almost no tourists. And the narrow streets of Chora reward those who explore slowly on foot.\n\nBooking the right tour in Mykonos is the difference between a generic island visit and an experience you'll actually remember. This guide covers every category — from the essential Delos trip to sailing, Jeep safaris, cooking classes and sunset cruises — with honest advice on what's worth your time and money.\n\nIf you're still deciding between islands, our [Santorini vs Mykonos](/travel-info/santorini-vs-mykonos) guide covers the key differences.",
+      el: "Η Μύκονο είναι διάσημη για τα beach clubs και τη νυχτερινή ζωή — αλλά το νησί έχει μια πιο ήσυχη, πιο πλούσια πλευρά που οι περισσότεροι επισκέπτες χάνουν εντελώς. Σε μικρή απόσταση με το πλοίο βρίσκεται ένας από τους σημαντικότερους αρχαιολογικούς χώρους στην Ελλάδα. Η τραχιά βόρεια ακτή κρύβει παραλίες που σχεδόν δεν βλέπουν τουρίστες. Και τα στενά δρομάκια της Χώρας ανταμείβουν όσους εξερευνούν αργά με τα πόδια.\n\nΤο να κλείσετε τη σωστή εκδρομή στη Μύκονο κάνει τη διαφορά ανάμεσα σε μια γενική επίσκεψη στο νησί και μια εμπειρία που θα θυμάστε. Αυτός ο οδηγός καλύπτει κάθε κατηγορία — από την απαραίτητη εκδρομή στη Δήλο μέχρι ιστιοπλοΐα, Jeep safaris, μαθήματα μαγειρικής και κρουαζιέρες ηλιοβασιλέματος — με ειλικρινείς συμβουλές για το τι αξίζει τον χρόνο και τα χρήματά σας.\n\nΑν ακόμα αποφασίζετε μεταξύ νησιών, ο οδηγός μας [Σαντορίνη vs Μύκονος](/travel-info/santorini-vs-mykonos) καλύπτει τις βασικές διαφορές."
     },
     points: {
-      en: ["Take a guided archaeological tour of Delos", "Sail to the uninhabited island of Rhenia", "Join a traditional cooking class", "Explore the island by Jeep safari"],
-      el: ["Ξενάγηση στον αρχαιολογικό χώρο της Δήλου", "Ιστιοπλοΐα στο ακατοίκητο νησί της Ρήνειας", "Συμμετοχή σε παραδοσιακό μάθημα μαγειρικής", "Εξερεύνηση του νησιού με Jeep safari"]
+      en: [
+        "Delos Island Tour — the unmissable archaeological day trip from Mykonos",
+        "Catamaran Sailing & Delos–Rhenia Cruise — the most popular full-day experience",
+        "Sunset Cruise from Little Venice — iconic golden hour experience on the water",
+        "Mykonos Town Walking Tour — explore the labyrinthine streets with a guide",
+        "Jeep Safari to Hidden Beaches & Villages — discover the quiet north coast",
+        "Greek Cooking Class — learn local dishes in a traditional Mykonian kitchen"
+      ],
+      el: [
+        "Εκδρομή στη Δήλο — η απαραίτητη αρχαιολογική ημερήσια εκδρομή από τη Μύκονο",
+        "Κρουαζιέρα με καταμαράν Δήλου–Ρήνειας — η πιο δημοφιλής ολοήμερη εμπειρία",
+        "Κρουαζιέρα ηλιοβασιλέματος από τη Μικρή Βενετία — εμβληματική εμπειρία στο νερό",
+        "Περιήγηση στη Χώρα Μυκόνου — εξερευνήστε τα λαβυρινθώδη δρομάκια με ξεναγό",
+        "Jeep Safari σε κρυφές παραλίες & χωριά — ανακαλύψτε την ήσυχη βόρεια ακτή",
+        "Μάθημα ελληνικής μαγειρικής — μάθετε τοπικά πιάτα σε παραδοσιακή κουζίνα"
+      ]
     },
     sections: [
       {
-        title: { en: "1. The Sacred Island of Delos", el: "1. Το ιερό νησί της Δήλου" },
+        title: { en: "Delos Island Tour — the unmissable one", el: "Εκδρομή στη Δήλο — αυτή που δεν χάνεται" },
         content: {
-          en: "Just a short boat ride from Mykonos lies Delos, the mythological birthplace of Apollo and Artemis. It is one of the most important archaeological sites in Greece. A guided tour is highly recommended to understand the ruins.",
-          el: "Σε μικρή απόσταση με το πλοίο από τη Μύκονο βρίσκεται η Δήλος, η μυθολογική γενέτειρα του Απόλλωνα και της Άρτεμης. Αποτελεί έναν από τους σημαντικότερους αρχαιολογικούς χώρους στην Ελλάδα."
+          en: "Delos is a 20-minute boat ride from Mykonos Town and is one of the most significant open-air archaeological sites in the entire Mediterranean. The mythological birthplace of Apollo and Artemis, it was the religious and commercial center of the ancient Aegean world.\n\nWhy it's worth it: The mosaics, marble lions, temples and ancient theatre are remarkably preserved. Without a guide, most visitors walk past the most important details without understanding what they're looking at.\n\n**Practical tips:**\n\n- Take the first morning boat (around 9:00) to beat the heat and the cruise crowds\n- A guided tour lasts 2.5–3 hours on site\n- The island has no shade — bring a hat, sunscreen and plenty of water\n- Boats run from the Old Port of Mykonos Town; last return is typically around 15:00\n\n**Best for:** History lovers, culture seekers, first-time visitors to Mykonos",
+          el: "Η Δήλος είναι 20 λεπτά με το πλοίο από τη Χώρα της Μυκόνου και είναι ένας από τους σημαντικότερους αρχαιολογικούς χώρους σε όλη τη Μεσόγειο. Μυθολογική γενέτειρα του Απόλλωνα και της Άρτεμης, ήταν το θρησκευτικό και εμπορικό κέντρο του αρχαίου Αιγαίου.\n\nΓιατί αξίζει: Τα ψηφιδωτά, τα μαρμάρινα λιοντάρια, οι ναοί και το αρχαίο θέατρο είναι εξαιρετικά διατηρημένα. Χωρίς ξεναγό, οι περισσότεροι επισκέπτες περνούν μπροστά από τις σημαντικότερες λεπτομέρειες χωρίς να καταλαβαίνουν τι βλέπουν.\n\n**Πρακτικές συμβουλές:**\n\n- Πάρτε το πρώτο πρωινό πλοίο (περίπου 9:00) για να αποφύγετε τη ζέστη και τα πλήθη\n- Μια ξενάγηση διαρκεί 2.5–3 ώρες στον χώρο\n- Το νησί δεν έχει σκιά — φέρτε καπέλο, αντηλιακό και άφθονο νερό\n- Τα πλοία αναχωρούν από το Παλιό Λιμάνι της Χώρας· η τελευταία επιστροφή είναι περίπου στις 15:00\n\n**Κατάλληλο για:** Λάτρεις της ιστορίας, αναζητητές πολιτισμού, επισκέπτες πρώτης φοράς στη Μύκονο"
         }
       },
       {
-        title: { en: "2. Catamaran Sailing to Rhenia", el: "2. Ιστιοπλοΐα με καταμαράν στη Ρήνεια" },
+        title: { en: "Catamaran Sailing & Delos–Rhenia Cruise", el: "Ιστιοπλοΐα με καταμαράν & κρουαζιέρα Δήλου–Ρήνειας" },
         content: {
-          en: "Escape the crowds by sailing to Rhenia, an uninhabited island next to Delos. Catamaran cruises offer swimming in crystal-clear waters, snorkeling, and onboard BBQ lunches.",
-          el: "Ξεφύγετε από τα πλήθη ταξιδεύοντας στη Ρήνεια, ένα ακατοίκητο νησί δίπλα στη Δήλο. Οι κρουαζιέρες με καταμαράν προσφέρουν κολύμπι σε κρυστάλλινα νερά και BBQ στο σκάφος."
+          en: "The most popular full-day experience on Mykonos — and for good reason. A catamaran takes you to Delos and then to Rhenia, an uninhabited island next door with crystal-clear water, sea caves and zero crowds.\n\nWhat's typically included: Swimming stops, snorkeling equipment, onboard BBQ or Greek lunch, drinks, and a guided visit to Delos.\n\n**Practical tips:**\n\n- Small-group catamarans (8–12 people) are far better than large group boats\n- Book at least 3–5 days ahead in July and August — they sell out fast\n- Morning departures offer calmer seas; afternoon trips get windier (Mykonos is famously windy)\n\n**Best for:** Couples, groups of friends, anyone who wants sea + history in one day",
+          el: "Η πιο δημοφιλής ολοήμερη εμπειρία στη Μύκονο — και για καλό λόγο. Ένα καταμαράν σας πηγαίνει στη Δήλο και στη συνέχεια στη Ρήνεια, ένα ακατοίκητο νησί με κρυστάλλινα νερά, θαλάσσιες σπηλιές και μηδενική πολυκοσμία.\n\nΤι περιλαμβάνεται συνήθως: Στάσεις για κολύμπι, εξοπλισμός ψαροντούφεκου, BBQ ή ελληνικό μεσημεριανό στο σκάφος, ποτά και ξενάγηση στη Δήλο.\n\n**Πρακτικές συμβουλές:**\n\n- Τα καταμαράν μικρών ομάδων (8–12 άτομα) είναι πολύ καλύτερα από τα μεγάλα σκάφη\n- Κλείστε τουλάχιστον 3–5 ημέρες νωρίτερα τον Ιούλιο και τον Αύγουστο — εξαντλούνται γρήγορα\n- Οι πρωινές αναχωρήσεις έχουν πιο ήρεμες θάλασσες· τα απογευματινά ταξίδια γίνονται πιο φιλόνεμα (η Μύκονο είναι διάσημα φιλόξενη στον άνεμο)\n\n**Κατάλληλο για:** Ζευγάρια, παρέες φίλων, όποιον θέλει θάλασσα + ιστορία σε μία μέρα"
         }
       },
       {
-        title: { en: "3. Jeep Safaris & Hidden Beaches", el: "3. Jeep Safaris & Κρυφές Παραλίες" },
+        title: { en: "Sunset Cruise from Little Venice", el: "Κρουαζιέρα ηλιοβασιλέματος από τη Μικρή Βενετία" },
         content: {
-          en: "The rugged interior of Mykonos is often ignored by visitors. A Jeep safari takes you to hidden chapels, quiet northern beaches (like Fokos), and offers panoramic views of the Cyclades.",
-          el: "Το τραχύ εσωτερικό της Μυκόνου συχνά αγνοείται από τους επισκέπτες. Ένα Jeep safari σας πηγαίνει σε κρυφά ξωκλήσια, ήσυχες βόρειες παραλίες και προσφέρει πανοραμική θέα."
+          en: "One of the most iconic Mykonos experiences. A small boat or catamaran takes you along the coast at golden hour, with views of the windmills, Little Venice and the Aegean turning orange and pink.\n\n**Practical tips:**\n\n- Most sunset cruises last 2–3 hours and include drinks\n- Departure is usually around 17:30–18:00 depending on season\n- Much less crowded than watching sunset from the shore\n\n**Best for:** Couples, honeymoon, special occasions",
+          el: "Μία από τις πιο εμβληματικές εμπειρίες στη Μύκονο. Ένα μικρό σκάφος ή καταμαράν σας πηγαίνει κατά μήκος της ακτής την ώρα του χρυσού ηλιοβασιλέματος, με θέα τους ανεμόμυλους, τη Μικρή Βενετία και το Αιγαίο να γίνεται πορτοκαλί και ροζ.\n\n**Πρακτικές συμβουλές:**\n\n- Οι περισσότερες κρουαζιέρες ηλιοβασιλέματος διαρκούν 2–3 ώρες και περιλαμβάνουν ποτά\n- Η αναχώρηση είναι συνήθως γύρω στις 17:30–18:00 ανάλογα με την εποχή\n- Πολύ λιγότερο πολυσύχναστο από την παρακολούθηση του ηλιοβασιλέματος από την ακτή\n\n**Κατάλληλο για:** Ζευγάρια, μήνα του μέλιτος, ειδικές περιστάσεις"
+        }
+      },
+      {
+        title: { en: "Mykonos Town Walking Tour", el: "Περιήγηση στη Χώρα Μυκόνου" },
+        content: {
+          en: "Mykonos Town (Chora) looks simple from a distance — white walls, blue doors, bougainvillea. But it's deliberately designed as a labyrinth to confuse pirates, and most first-time visitors get genuinely lost within minutes.\n\nA guided walking tour of 2–3 hours covers Little Venice, the famous windmills, the Church of Paraportiani (one of the most photographed in Greece), the old Market Street, and the stories behind the facades that every tourist photographs but few understand.\n\n**Practical tips:**\n\n- Morning tours (8:00–10:00) or evening tours (19:00 onwards) avoid the midday heat\n- Many tours are free with tip, others are €15–25 per person\n- Wear flat, closed shoes — the marble streets are slippery\n\n**Best for:** First-time visitors, history and architecture enthusiasts, solo travelers",
+          el: "Η Χώρα της Μυκόνου φαίνεται απλή από απόσταση — λευκοί τοίχοι, μπλε πόρτες, βουκαμβίλιες. Αλλά είναι σχεδιασμένη σαν λαβύρινθος για να μπερδεύει τους πειρατές, και οι περισσότεροι επισκέπτες πρώτης φοράς χάνονται μέσα σε λίγα λεπτά.\n\nΜια ξενάγηση 2–3 ωρών καλύπτει τη Μικρή Βενετία, τους διάσημους ανεμόμυλους, την εκκλησία της Παραπορτιανής (μία από τις πιο φωτογραφημένες στην Ελλάδα), την παλιά οδό της Αγοράς και τις ιστορίες πίσω από τις προσόψεις που κάθε τουρίστας φωτογραφίζει αλλά λίγοι καταλαβαίνουν.\n\n**Πρακτικές συμβουλές:**\n\n- Πρωινές ξεναγήσεις (8:00–10:00) ή βραδινές (19:00 και μετά) αποφεύγουν τη μεσημεριανή ζέστη\n- Πολλές ξεναγήσεις είναι δωρεάν με φιλοδώρημα, άλλες €15–25 ανά άτομο\n- Φορέστε επίπεδα, κλειστά παπούτσια — οι μαρμάρινοι δρόμοι είναι γλιστεροί\n\n**Κατάλληλο για:** Επισκέπτες πρώτης φοράς, λάτρεις της ιστορίας και αρχιτεκτονικής, σόλο ταξιδιώτες"
+        }
+      },
+      {
+        title: { en: "Jeep Safari to Hidden Beaches & Villages", el: "Jeep Safari σε κρυφές παραλίες & χωριά" },
+        content: {
+          en: "The interior and north coast of Mykonos are rarely visited — and completely different from the glamorous south. A 4x4 Jeep tour takes you off the main roads to the quiet beach of Fokos, small chapels, hilltop views across the Cyclades and traditional farming villages.\n\n**Practical tips:**\n\n- Half-day tours (3–4 hours) are enough\n- Goes to beaches with no sunbeds or services — bring your own food and water\n- One of the best value experiences on the island (€40–60 per person)\n\n**Best for:** Adventurous travelers, those who want to escape the main tourist circuit",
+          el: "Το εσωτερικό και η βόρεια ακτή της Μυκόνου σπάνια επισκέπτονται — και είναι εντελώς διαφορετικά από τη λαμπερή νότια πλευρά. Μια περιήγηση με 4x4 Jeep σας βγάζει από τους κεντρικούς δρόμους στην ήσυχη παραλία του Φωκού, σε μικρά ξωκλήσια, σε λόφους με πανοραμική θέα στις Κυκλάδες και σε παραδοσιακά αγροτικά χωριά.\n\n**Πρακτικές συμβουλές:**\n\n- Οι ημερήσιες εκδρομές (3–4 ώρες) είναι αρκετές\n- Πηγαίνει σε παραλίες χωρίς ξαπλώστρες ή υπηρεσίες — φέρτε το δικό σας φαγητό και νερό\n- Μία από τις εκδρομές με την καλύτερη σχέση ποιότητας-τιμής στο νησί (€40–60 ανά άτομο)\n\n**Κατάλληλο για:** Περιπετειώδεις ταξιδιώτες, όσους θέλουν να ξεφύγουν από τον τουριστικό κύκλο"
+        }
+      },
+      {
+        title: { en: "Greek Cooking Class", el: "Μάθημα ελληνικής μαγειρικής" },
+        content: {
+          en: "A small-group cooking class in a traditional Mykonian kitchen — learning to make local dishes like loukoumades, moussaka or fresh pasta — is a surprisingly personal and memorable experience compared to just eating out.\n\n**Practical tips:**\n\n- Classes run 3–4 hours and usually include a shared meal at the end\n- Typically hosted in private homes or local tavernas outside Mykonos Town\n- Book well in advance — these are small groups (6–10 people) and fill up\n\n**Best for:** Food lovers, couples, solo travelers wanting a social experience",
+          el: "Ένα μάθημα μαγειρικής σε μικρή ομάδα σε μια παραδοσιακή μυκονιάτικη κουζίνα — μαθαίνοντας να φτιάχνετε τοπικά πιάτα όπως λουκουμάδες, μουσακά ή φρέσκα ζυμαρικά — είναι μια εκπληκτικά προσωπική και αξέχαστη εμπειρία σε σύγκριση με το απλό φαγητό έξω.\n\n**Πρακτικές συμβουλές:**\n\n- Τα μαθήματα διαρκούν 3–4 ώρες και συνήθως περιλαμβάνουν κοινό γεύμα στο τέλος\n- Φιλοξενούνται συνήθως σε ιδιωτικά σπίτια ή τοπικές ταβέρνες έξω από τη Χώρα\n- Κλείστε έγκαιρα — οι ομάδες είναι μικρές (6–10 άτομα) και γεμίζουν γρήγορα\n\n**Κατάλληλο για:** Λάτρεις του φαγητού, ζευγάρια, σόλο ταξιδιώτες που θέλουν κοινωνική εμπειρία"
+        }
+      },
+      {
+        title: { en: "What to Skip", el: "Τι να αποφύγετε" },
+        content: {
+          en: "Large group party boats: Fun for some, but overcrowded, noisy, and you won't see anything of the island. If you want a boat day, invest in a small-group catamaran.\n\nGeneric \"island tour\" buses: These cover the main spots quickly without depth. Better to rent an ATV or join a Jeep safari for the same money.",
+          el: "Μεγάλα σκάφη πάρτι: Διασκεδαστικά για κάποιους, αλλά υπερπλήρη, θορυβώδη και δεν βλέπετε τίποτα από το νησί. Αν θέλετε μέρα στη θάλασσα, επενδύστε σε ένα καταμαράν μικρής ομάδας.\n\nΓενικές \"ξεναγήσεις νησιού\" με λεωφορείο: Καλύπτουν γρήγορα τα κύρια σημεία χωρίς βάθος. Καλύτερα να νοικιάσετε ATV ή να συμμετάσχετε σε ένα Jeep safari για τα ίδια χρήματα."
+        }
+      },
+      {
+        title: { en: "How to Book Tours in Mykonos", el: "Πώς να κλείσετε εκδρομές στη Μύκονο" },
+        content: {
+          en: "Book directly through local operators at the Old Port or Mykonos Town for day-of availability. For July and August, book 3–7 days ahead online to guarantee your spot, especially for Delos trips and catamarans.\n\n**Ready to explore Mykonos tours?**\nBrowse our full [Mykonos Tours & Experiences](/tours/mykonos-tours) page for selected local operators, boat tours, Delos trips and more.\n\nAnd if you haven't decided on your destination yet:\n[Compare Mykonos with other Greek islands](https://www.gogreecenow.com/en/travel-tools)",
+          el: "Κλείστε απευθείας μέσω τοπικών παρόχων στο Παλιό Λιμάνι ή στη Χώρα για αυθημερόν διαθεσιμότητα. Για Ιούλιο και Αύγουστο, κλείστε 3–7 ημέρες νωρίτερα online για να εξασφαλίσετε τη θέση σας, ειδικά για εκδρομές στη Δήλο και καταμαράν.\n\n**Έτοιμοι να εξερευνήσετε τις εκδρομές στη Μύκονο;**\nΔείτε ολόκληρη τη σελίδα [Εκδρομές & Εμπειρίες Μυκόνου](/tours/mykonos-tours) για επιλεγμένους τοπικούς παρόχους, κρουαζιέρες και άλλα.\n\nΚαι αν δεν έχετε αποφασίσει ακόμα για τον προορισμό σας:\n[Συγκρίνετε τη Μύκονο με άλλα ελληνικά νησιά](https://www.gogreecenow.com/en/travel-tools)"
         }
       }
     ]

@@ -22,16 +22,16 @@ async function getAllDestinations() {
 
 const travelToolsSeo = {
   en: {
-    title: "Compare Greek Destinations | Travel Decision Tool | GoGreeceNow",
+    title: "Compare Greek Islands & Destinations Side-by-Side | GoGreeceNow",
     description:
-      "Compare Greek islands and destinations side-by-side. Calculate trip budgets, analyze scores, and find the perfect destination for your Greece vacation. Interactive comparison tool with real pricing data.",
+      "Use our free travel decision tool to compare Greek destinations by budget, beaches, vibe and crowds. Find the right Greek island for your trip.",
     path: "/en/travel-tools",
     locale: "en_US",
   },
   el: {
-    title: "Σύγκριση Ελληνικών Προορισμών | Εργαλείο Σχεδιασμού Ταξιδιού | GoGreeceNow",
+    title: "Σύγκρινε Ελληνικά Νησιά & Προορισμούς Side-by-Side | GoGreeceNow",
     description:
-      "Συγκρίνετε ελληνικά νησιά και προορισμούς δίπλα-δίπλα. Υπολογίστε προϋπολογισμούς ταξιδιών, αναλύστε βαθμολογίες και βρείτε τον ιδανικό προορισμό για τις διακοπές σας στην Ελλάδα.",
+      "Χρησιμοποίησε το δωρεάν εργαλείο μας για να συγκρίνεις ελληνικούς προορισμούς ανά budget, παραλίες, vibe και κόσμο. Βρες το σωστό ελληνικό νησί για το ταξίδι σου.",
     path: "/el/travel-tools",
     locale: "el_GR",
   },
@@ -189,9 +189,20 @@ export default async function TravelToolsPage({ params }: Props) {
         </div>
 
         {/* Main Tool Content Container - Slightly overlapping the hero block */}
-        <main className="container mx-auto px-6 pb-24 -mt-12 relative z-10">
+        <main className="container mx-auto px-6 pb-12 -mt-12 relative z-10">
           <DecisionEngineClient destinations={destinations} lang={lang} />
         </main>
+
+        {/* Footer Disclaimer */}
+        <footer className="max-w-4xl mx-auto px-6 pb-16">
+          <div className="text-xs text-slate-400 leading-relaxed border-t border-slate-200 pt-8 space-y-3">
+            <p>
+              {lang === "el"
+                ? "Αποποίηση Ευθύνης Τιμών: Όλες οι εκτιμήσεις προϋπολογισμού που παρέχονται από το Εργαλείο Σύγκρισης του GoGreeceNow είναι ενδεικτικές και βασίζονται σε γενικούς μέσους όρους από δημόσια διαθέσιμες πηγές. Δεν αποτελούν δεσμευτική προσφορά ή εγγύηση οποιουδήποτε είδους. Οι τιμές για διαμονή, πτήσεις, φαγητό και μεταφορές ποικίλλουν σημαντικά ανάλογα με τη σεζόν, τη διαθεσιμότητα, τις προσωπικές συνήθειες δαπανών και τρίτους παρόχους. Το GoGreeceNow δεν φέρει καμία ευθύνη για οποιαδήποτε διαφορά μεταξύ των εκτιμήσεων που εμφανίζονται και των πραγματικών εξόδων. Οι χρήστες ενθαρρύνονται να επαληθεύουν όλες τις τιμές ανεξάρτητα πριν λάβουν οποιεσδήποτε ταξιδιωτικές ή οικονομικές αποφάσεις."
+                : "Price Disclaimer: All budget estimates provided by the GoGreeceNow Travel Decision Tool are indicative only and are based on general averages from publicly available sources. They do not constitute a binding quote, offer or guarantee of any kind. Prices for accommodation, flights, food and transport vary widely based on season, availability, personal spending habits and third-party providers. GoGreeceNow accepts no responsibility for any difference between the estimates shown and actual costs incurred. Users are strongly encouraged to verify all prices independently before making any travel or financial decisions."}
+            </p>
+          </div>
+        </footer>
       </div>
     </>
   );
