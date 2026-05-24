@@ -13,11 +13,15 @@ const nextConfig: NextConfig = {
     ],
   },
   experimental: {
-    // Tree-shake large packages that are imported with barrel imports
     optimizePackageImports: ["@vercel/analytics", "@vercel/speed-insights"],
   },
   async redirects() {
     return [
+      {
+        source: '/',
+        destination: '/en',
+        permanent: true,
+      },
       {
         source: '/businesses',
         destination: '/',
@@ -68,7 +72,6 @@ const nextConfig: NextConfig = {
         destination: '/:lang/privacy-policy',
         permanent: true,
       },
-      // Catch nested language paths (e.g. /en/el/focus → /el/focus)
       {
         source: '/:first(en|el)/:second(en|el)/:path*',
         destination: '/:second/:path*',
@@ -85,12 +88,12 @@ const nextConfig: NextConfig = {
             key: "Content-Security-Policy",
             value: [
               "default-src 'self'",
-              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://va.vercel-scripts.com https://cdn.sanity.io",
+              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://va.vercel-scripts.com https://cdn.sanity.io https://*.viator.com https://*.tripadvisor.com https://stay22.com https://*.stay22.com",
               "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
               "img-src 'self' data: https: blob:",
               "font-src 'self' data: https://fonts.gstatic.com",
-              "connect-src 'self' https://generativelanguage.googleapis.com https://vitals.vercel-insights.com https://cdn.sanity.io",
-              "frame-src 'self' https://www.youtube.com",
+              "connect-src 'self' https://generativelanguage.googleapis.com https://vitals.vercel-insights.com https://cdn.sanity.io https://*.viator.com https://*.tripadvisor.com https://stay22.com https://*.stay22.com",
+              "frame-src 'self' https://www.youtube.com https://*.viator.com https://stay22.com https://*.stay22.com https://*.tripadvisor.com",
               "media-src 'self' https:",
               "object-src 'none'",
               "base-uri 'self'",
