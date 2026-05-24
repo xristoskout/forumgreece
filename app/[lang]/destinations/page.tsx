@@ -20,8 +20,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const t = {
     title: {
-      en: 'All Destinations in Greece — Browse by Region | GoGreeceNow',
-      el: 'Όλοι οι Προορισμοί στην Ελλάδα — Ανά Περιοχή | GoGreeceNow',
+      en: 'All Destinations in Greece — Browse by Region',
+      el: 'Όλοι οι Προορισμοί στην Ελλάδα — Ανά Περιοχή',
     },
     description: {
       en: 'Explore all Greek destinations organized by region: Cyclades, Ionian Islands, Crete, Peloponnese, Northern Greece and more.',
@@ -51,7 +51,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: "website",
       images: [
         {
-          url: `${SITE_URL}/images/hero/greece-main.webp`,
+          url: `${SITE_URL}/images/hero-greece.webp`,
           width: 1600,
           height: 900,
           alt: lang === "en" ? "All Destinations in Greece" : "Όλοι οι Προορισμοί στην Ελλάδα",
@@ -62,7 +62,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       card: "summary_large_image",
       title: t.title[lang],
       description: t.description[lang],
-      images: [`${SITE_URL}/images/hero/greece-main.webp`],
+      images: [`${SITE_URL}/images/hero-greece.webp`],
     },
   };
 }

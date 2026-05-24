@@ -313,7 +313,7 @@ export default function HomePageClient({
             fetchPriority="high"
             quality={90}
             className="object-cover"
-            sizes="100vw"
+            sizes="(max-width: 768px) 100vw, 50vw"
           />
         </div>
         <div className="relative z-10 w-full max-w-7xl mx-auto px-6 py-16 lg:grid-cols-[1.2fr_0.8fr] gap-12 lg:pb-32 grid lg:items-end">

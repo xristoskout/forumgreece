@@ -19,6 +19,11 @@ type TravelInfoGuideData = {
     title: Record<"en" | "el", string>;
     content: Record<"en" | "el", string>;
   }[];
+  tips?: Record<"en" | "el", string[]>;
+  faq?: {
+    q: Record<"en" | "el", string>;
+    a: Record<"en" | "el", string>;
+  }[];
 };
 
 type TravelInfoGuideClientProps = {
@@ -43,7 +48,7 @@ export default function TravelInfoGuideClient({ lang, slug, item }: TravelInfoGu
 
   const renderTextWithLinks = (text: string) => {
     const elements: React.ReactNode[] = [];
-    const regex = /\[([^\]]+)\]\(([^)]+)\)|https?:\/\/[^\s]+/g;
+    const regex = /(\*\*([^*]+)\*\*)|\[([^\]]+)\]\(([^)]+)\)|https?:\/\/[^\s]+/g;
     let lastIndex = 0;
     let match;
 
@@ -52,18 +57,22 @@ export default function TravelInfoGuideClient({ lang, slug, item }: TravelInfoGu
         elements.push(text.slice(lastIndex, match.index));
       }
 
-      if (match[1] && match[2]) {
-        const url = match[2];
+      if (match[1]) {
+        elements.push(
+          <strong key={match.index} className="font-bold text-slate-900">{match[2]}</strong>
+        );
+      } else if (match[3] && match[4]) {
+        const url = match[4];
         if (url.startsWith("/")) {
           elements.push(
             <Link key={match.index} href={withLang(url)} className="underline text-indigo-600 hover:text-indigo-800 font-medium">
-              {match[1]}
+              {match[3]}
             </Link>
           );
         } else {
           elements.push(
             <a key={match.index} href={url} target="_blank" rel="noopener noreferrer" className="underline text-indigo-600 hover:text-indigo-800">
-              {match[1]}
+              {match[3]}
             </a>
           );
         }
@@ -226,6 +235,39 @@ export default function TravelInfoGuideClient({ lang, slug, item }: TravelInfoGu
                 </div>
               </div>
             ))}
+
+            {item.tips && (
+              <div className="rounded-[2.5rem] border border-amber-200/60 bg-gradient-to-br from-amber-50 to-white p-8 md:p-12 shadow-xl shadow-amber-200/50">
+                <h3 className="text-sm font-bold uppercase tracking-[0.25em] text-amber-700 mb-6 flex items-center gap-2">
+                  <span className="text-lg">💡</span>
+                  {lang === "en" ? "Tips & Practical Advice" : "Συμβουλές & Πρακτικές Οδηγίες"}
+                </h3>
+                <ul className="space-y-4">
+                  {item.tips[lang].map((tip, idx) => (
+                    <li key={idx} className="flex gap-4 p-4 rounded-xl bg-white/80 border border-amber-100">
+                      <span className="text-amber-500 font-bold shrink-0">✦</span>
+                      <span className="text-base text-slate-700 leading-relaxed">{tip}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {item.faq && (
+              <div className="rounded-[2.5rem] border border-slate-200/60 bg-white/80 p-8 md:p-12 shadow-xl shadow-slate-200/50">
+                <h3 className="text-sm font-bold uppercase tracking-[0.25em] text-indigo-600 mb-8">
+                  {lang === "en" ? "Frequently Asked Questions" : "Συχνές Ερωτήσεις"}
+                </h3>
+                <div className="space-y-6">
+                  {item.faq.map((faqItem, idx) => (
+                    <div key={idx} className="border-b border-slate-100 pb-6 last:border-0 last:pb-0">
+                      <h4 className="text-lg font-bold text-slate-900 mb-2">{faqItem.q[lang]}</h4>
+                      <p className="text-base leading-relaxed text-slate-600">{faqItem.a[lang]}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
 
           <aside className="sticky top-28 space-y-6">

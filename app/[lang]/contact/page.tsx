@@ -38,7 +38,6 @@ export default function ContactPage() {
         setStatus('error');
       }
     } catch (error) {
-      console.error('Error:', error);
       setStatus('error');
     }
   };

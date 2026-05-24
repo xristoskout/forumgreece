@@ -85,42 +85,49 @@ export default async function PrivacyPage({ params }: Props) {
       },
     },
     {
-      title: { en: "2 | PRIVACY POLICY", el: "2 | ΠΡΟΣΤΑΣΙΑ ΠΡΟΣΩΠΙΚΩΝ ΔΕΔΟΜΕΝΩΝ" },
+      title: { en: "2 | INDICATIVE PRICING AND TRAVEL ESTIMATES", el: "2 | ΕΝΔΕΙΚΤΙΚΕΣ ΤΙΜΕΣ ΚΑΙ ΕΚΤΙΜΗΣΕΙΣ ΤΑΞΙΔΙΟΥ" },
+      text: {
+        en: "The Travel Decision Tool and any budget estimates, price ranges or cost comparisons published on GoGreeceNow.com are provided for general informational and planning purposes only. All figures are approximate averages derived from publicly available data, editorial research and third-party sources, and are updated periodically but not in real time.\n\nGoGreeceNow makes no representation or warranty, express or implied, as to the accuracy, completeness or currentness of any price information. Actual travel costs depend on numerous factors outside GoGreeceNow's control, including but not limited to: seasonal pricing, last-minute availability, currency fluctuations, individual spending behaviour, promotional offers and third-party pricing decisions.\n\nGoGreeceNow shall not be liable for any loss, expense or disappointment arising from reliance on any indicative price or budget estimate displayed on this website. Users assume full responsibility for verifying all costs independently prior to making any booking or financial commitment.",
+        el: "Το Εργαλείο Σύγκρισης Ταξιδιού και οποιεσδήποτε εκτιμήσεις προϋπολογισμού, εύρη τιμών ή συγκρίσεις κόστους που δημοσιεύονται στο GoGreeceNow.com παρέχονται μόνο για γενική ενημέρωση και σκοπούς προγραμματισμού. Όλα τα νούμερα είναι κατά προσέγγιση μέσοι όροι που προέρχονται από δημόσια διαθέσιμα δεδομένα, συντακτική έρευνα και πηγές τρίτων, και ενημερώνονται περιοδικά αλλά όχι σε πραγματικό χρόνο.\n\nΤο GoGreeceNow δεν παρέχει καμία δήλωση ή εγγύηση, ρητή ή σιωπηρή, ως προς την ακρίβεια, πληρότητα ή επικαιρότητα οποιασδήποτε πληροφορίας τιμών. Το πραγματικό κόστος ταξιδιού εξαρτάται από πολλούς παράγοντες εκτός του ελέγχου του GoGreeceNow, συμπεριλαμβανομένων ενδεικτικά: εποχικής τιμολόγησης, διαθεσιμότητας τελευταίας στιγμής, διακυμάνσεων συναλλάγματος, ατομικής συμπεριφοράς δαπανών, προσφορών και αποφάσεων τιμολόγησης τρίτων.\n\nΤο GoGreeceNow δεν φέρει ευθύνη για οποιαδήποτε απώλεια, έξοδο ή απογοήτευση που προκύπτει από την εξάρτηση από οποιαδήποτε ενδεικτική τιμή ή εκτίμηση προϋπολογισμού που εμφανίζεται σε αυτόν τον ιστότοπο. Οι χρήστες αναλαμβάνουν την πλήρη ευθύνη για την επαλήθευση όλων των εξόδων ανεξάρτητα πριν προβούν σε οποιαδήποτε κράτηση ή οικονομική δέσμευση.",
+      },
+    },
+    {
+      title: { en: "3 | PRIVACY POLICY", el: "3 | ΠΡΟΣΤΑΣΙΑ ΠΡΟΣΩΠΙΚΩΝ ΔΕΔΟΜΕΝΩΝ" },
       text: {
         en: "The information or personal details you provide to us are processed in accordance with the Data Protection Policies. By using this website, you consent to the processing of such information and details and you declare that all information and details provided by you are true and accurate.",
         el: "Οι πληροφορίες ή τα προσωπικά στοιχεία που μας παρέχετε υπόκεινται σε επεξεργασία βάσει των Πολιτικών Προστασίας Δεδομένων. Με την χρήση της παρούσας ιστοσελίδας παρέχετε τη σύμφωνη γνώμη σας για την επεξεργασία των εν λόγω πληροφοριών και στοιχείων και δηλώνετε ότι όλες οι πληροφορίες και τα στοιχεία που μας παρέχετε είναι αληθή και ακριβή.",
       },
     },
     {
-      title: { en: "3 | WEBSITE USE", el: "3 | ΧΡΗΣΗ ΙΣΤΟΣΕΛΙΔΑΣ" },
+      title: { en: "4 | WEBSITE USE", el: "4 | ΧΡΗΣΗ ΙΣΤΟΣΕΛΙΔΑΣ" },
       text: {
         en: "By using GoGreeceNow and/or submitting an inquiry through it, you undertake:\n- To use the website only to inquire about our Services and make legitimate requests.\n- Not to make any false or fraudulent communication with malicious or offensive content. If we reasonably consider that such a communication has been made, we shall be entitled to inform the relevant authorities.\n- To provide us with your correct and accurate e-mail address and/or other contact details. You also agree that we may use this information to contact you if necessary.",
         el: "Με τη χρήση του GoGreeceNow ή/και την υποβολή παραγγελίας (ή ερωτημάτων) μέσω αυτής, αναλαμβάνετε:\n- Να χρησιμοποιήσετε την ιστοσελίδα μόνο για να ενημερωθείτε για τις Υπηρεσίες μας και να υποβάλετε θεμιτά ερωτήματα.\n- Να μην προβαίνετε σε ψευδή ή δόλια επικοινωνία με κακόβουλο ή προσβλητικό περιεχόμενο. Εάν θεωρήσουμε ευλόγως ότι έχει υποβληθεί τέτοια, έχουμε το δικαίωμα να ενημερώσουμε τις αρμόδιες αρχές.\n- Να μας παρέχετε με ορθότητα και ακρίβεια την διεύθυνση ηλεκτρονικού ταχυδρομείου σας (e-mail) ή/και λοιπά στοιχεία επικοινωνίας.\nΕπίσης αποδέχεστε ότι μπορούμε να χρησιμοποιήσουμε αυτές τις πληροφορίες για να επικοινωνήσουμε μαζί σας σε περίπτωση που αυτό κριθεί απαραίτητο.",
       },
     },
     {
-      title: { en: "4 | INTELLECTUAL PROPERTY", el: "4 | ΔΙΚΑΙΩΜΑΤΑ ΠΝΕΥΜΑΤΙΚΗΣ ΚΑΙ ΒΙΟΜΗΧΑΝΙΚΗΣ ΙΔΙΟΚΤΗΣΙΑΣ – ΣΗΜΑΤΑ" },
+      title: { en: "5 | INTELLECTUAL PROPERTY", el: "5 | ΔΙΚΑΙΩΜΑΤΑ ΠΝΕΥΜΑΤΙΚΗΣ ΚΑΙ ΒΙΟΜΗΧΑΝΙΚΗΣ ΙΔΙΟΚΤΗΣΙΑΣ – ΣΗΜΑΤΑ" },
       text: {
         en: "GoGreeceNow and its content (including all trademarks, patents, brand names, texts, images, graphics, designs, photographs, programs, data, software) is the intellectual and industrial property of the company.\nIt is strictly forbidden to copy, modify, distribute, resell, rent, republish, reproduce, transmit, store, print, create derivative work, or mislead the public about the actual provider of the content.\nProducts, services, brands, trademarks of third parties appearing on GoGreeceNow are their intellectual property, for which they bear the relevant responsibility.",
         el: "To GoGreeceNow και το περιεχόμενό του (στο οποίο συμπεριλαμβάνονται όλα τα εμπορικά σήματα, διακριτικά γνωρίσματα, ευρεσιτεχνίες, επωνυμίες, κείμενα, εικόνες, γραφικά, σχέδια, φωτογραφίες, κ.λπ.) αποτελεί πνευματική και βιομηχανική ιδιοκτησία της εταιρίας.\nΑπαγορεύεται ρητώς οποιασδήποτε μορφής αντιγραφή, τροποποίηση, παρέμβαση, μεταφορά, διανομή, μεταπώληση, αναδημοσίευση, αναπαραγωγή, ή παραπλάνηση του κοινού.\nΠροϊόντα, υπηρεσίες, επωνυμία ή εμπορικά σήματα τρίτων που εμφανίζονται στo GoGreeceNow, αποτελούν πνευματική και βιομηχανική ιδιοκτησία των τρίτων, οι οποίοι φέρουν και τη σχετική ευθύνη.",
       },
     },
     {
-      title: { en: "5 | COMPANY LIABILITY", el: "5 | ΕΥΘΥΝΗ ΤΗΣ ΕΤΑΙΡΙΑΣ" },
+      title: { en: "6 | COMPANY LIABILITY", el: "6 | ΕΥΘΥΝΗ ΤΗΣ ΕΤΑΙΡΙΑΣ" },
       text: {
         en: "The company is not liable for any direct or indirect damage resulting from accessing GoGreeceNow and its use. The company does not bear any responsibility for damages and expenses arising from the use of GoGreeceNow or the inability to use it.\nThe services are provided 'as is'. The company does not guarantee that the content will meet user expectations. The company assumes no responsibility for any legal, civil or criminal claims related to the operation of GoGreeceNow.",
         el: 'Οποιεσδήποτε άμεσες, έμμεσες ή αποθετικές ζημιές προκύψουν από την πρόσβαση κάθε χρήστη στο GoGreeceNow ή την χρήση αυτού, δεν γεννούν ευθύνη της εταιρίας. Η εταιρία δεν φέρει ευθύνη για ζημίες και έξοδα τα οποία προκύπτουν σε σχέση με τη χρήση του GoGreeceNow ή την αδυναμία χρήσης του.\nOι υπηρεσίες παρέχονται "ως έχουν". Η εταιρία δεν εγγυάται ότι το περιεχόμενο θα ανταποκρίνεται στις απαιτήσεις των χρηστών. Η εταιρία δεν φέρει ευθύνη για αξιώσεις που σχετίζονται με το περιεχόμενο του ιστοτόπου (κριτικές και σχόλια).',
       },
     },
     {
-      title: { en: "6 | APPLICABLE LAW", el: "6 | ΕΦΑΡΜΟΣΤΕΟ ΔΙΚΑΙΟ ΚΑΙ ΛΟΙΠΟΙ ΟΡΟΙ" },
+      title: { en: "7 | APPLICABLE LAW", el: "7 | ΕΦΑΡΜΟΣΤΕΟ ΔΙΚΑΙΟ ΚΑΙ ΛΟΙΠΟΙ ΟΡΟΙ" },
       text: {
         en: "These terms and conditions are governed by Greek law. For any dispute arising from the use of GoGreeceNow, the courts of Mytiline are exclusively competent.",
         el: "Οι συγκεκριμένοι όροι και προϋποθέσεις διέπονται και ερμηνεύονται σύμφωνα με το ελληνικό δίκαιο. Για κάθε διαφορά που ανακύπτει από τη χρήση του GoGreeceNow, αρμοδιότητα έχουν τα δικαστήρια της Μυτιλήνης.",
       },
     },
     {
-      title: { en: "7 | COOKIE POLICY", el: "7 | ΠΟΛΙΤΙΚΗ COOKIES" },
+      title: { en: "8 | COOKIE POLICY", el: "8 | ΠΟΛΙΤΙΚΗ COOKIES" },
       text: {
         en: "GoGreeceNow uses cookies and similar tracking technologies to enhance your browsing experience, analyze site traffic, and understand where our visitors come from. No cookies are stored on your device without your explicit prior consent. When you first visit our website, a cookie banner appears asking you to accept or decline non-essential cookies. You may withdraw or change your consent at any time by clearing your browser cookies. Essential cookies required for the basic functioning of the website may be set without requiring your consent, but we do not use any tracking or advertising cookies unless you actively accept them. For more information about how we handle your personal data, please refer to Section 2 (Privacy Policy) above.",
         el: "Το GoGreeceNow χρησιμοποιεί cookies και παρόμοιες τεχνολογίες παρακολούθησης για τη βελτίωση της εμπειρίας περιήγησής σας, την ανάλυση της επισκεψιμότητας του ιστότοπου και την κατανόηση της προέλευσης των επισκεπτών μας. Κανένα cookie δεν αποθηκεύεται στη συσκευή σας χωρίς τη ρητή συγκατάθεσή σας. Κατά την πρώτη επίσκεψή σας στον ιστότοπό μας, εμφανίζεται ένα banner cookies που σας ζητά να αποδεχθείτε ή να απορρίψετε τα μη απαραίτητα cookies. Μπορείτε να ανακαλέσετε ή να αλλάξετε τη συγκατάθεσή σας ανά πάσα στιγμή διαγράφοντας τα cookies του προγράμματος περιήγησής σας. Απαραίτητα cookies που απαιτούνται για τη βασική λειτουργία του ιστότοπου ενδέχεται να εγκατασταθούν χωρίς τη συγκατάθεσή σας, ωστόσο δεν χρησιμοποιούμε cookies παρακολούθησης ή διαφήμισης εκτός εάν τα αποδεχθείτε ενεργά.",

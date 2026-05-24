@@ -21,6 +21,7 @@ const staticRoutes = [
   '/travel-info',
   '/travel-info/greece-islands-map-guide',
   '/travel-to-greece',
+  '/travel-tools',
   '/promotion',
   '/privacy-policy',
   '/about',

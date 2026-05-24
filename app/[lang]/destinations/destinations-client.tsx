@@ -205,6 +205,7 @@ export default function DestinationsClient({
                             alt={dest.name}
                             fill
                             className={`object-cover transition-transform duration-700 ${hasFullGuide ? "group-hover:scale-110" : ""}`}
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                           />
                           <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
                           <span className="absolute top-3 left-3 rounded-full bg-black/50 backdrop-blur-md border border-white/20 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-white">

@@ -126,7 +126,7 @@ export default async function CollectionHubPage({ params }: Props) {
       </section>
 
       <section className="relative overflow-hidden bg-white backdrop-blur-md">
-        <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0 opacity-10" role="presentation" aria-hidden="true">
            <Image src="/images/hero-greece.webp" alt="" fill className="object-cover" sizes="100vw" />
         </div>
         <div className="relative mx-auto max-w-7xl px-6 py-16 md:py-20">

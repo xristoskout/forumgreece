@@ -174,11 +174,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: seo.description,
     alternates: {
       canonical: seo.path,
-      languages: {
-        en: "/en",
-        el: "/el",
-        "x-default": "/en",
-      },
     },
     openGraph: {
       type: "website",
