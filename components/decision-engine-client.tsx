@@ -996,7 +996,7 @@ const getRealData = (slug: string) => {
   return REAL_PRICING[key] || REAL_PRICING['paros'];
 };
 
-export default function DecisionEngineClient({ destinations, lang }: any) {
+export default function DecisionEngineClient({ destinations, lang }: { destinations: any[]; lang: "en" | "el" }) {
   const [mounted, setMounted] = useState(false);
   const [s1, setS1] = useState(destinations.find((d: any) => d.slug === 'santorini') || destinations[0]);
   const [s2, setS2] = useState(destinations.find((d: any) => d.slug === 'athens') || destinations[1]);
@@ -1343,7 +1343,7 @@ export default function DecisionEngineClient({ destinations, lang }: any) {
                       <div>
                         <h5 className="text-xs font-bold text-indigo-800 uppercase tracking-widest mb-1.5">{t.bestFor[lang]}</h5>
                         <div className="flex flex-wrap gap-1.5">
-                          {real.best_for.map((tag: string) => (
+                          {(real.best_for as string[]).map((tag) => (
                             <span key={tag} className="bg-emerald-50 text-emerald-800 border border-emerald-100 px-2 py-0.5 rounded-lg text-xs font-semibold">
                               ★ {BEST_FOR_LABELS[tag]?.[lang] || tag}
                             </span>
@@ -1356,7 +1356,7 @@ export default function DecisionEngineClient({ destinations, lang }: any) {
                       <div>
                         <h5 className="text-xs font-bold text-rose-800 uppercase tracking-widest mb-1.5">{t.notIdealFor[lang]}</h5>
                         <div className="flex flex-wrap gap-1.5">
-                          {real.not_ideal_for.map((tag: string) => (
+                          {(real.not_ideal_for as string[]).map((tag) => (
                             <span key={tag} className="bg-rose-50 text-rose-800 border border-rose-100 px-2 py-0.5 rounded-lg text-xs font-semibold">
                               ⚠ {NOT_IDEAL_FOR_LABELS[tag]?.[lang] || tag}
                             </span>

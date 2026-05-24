@@ -190,7 +190,7 @@ export default async function TravelToolsPage({ params }: Props) {
 
         {/* Main Tool Content Container - Slightly overlapping the hero block */}
         <main className="container mx-auto px-6 pb-12 -mt-12 relative z-10">
-          <DecisionEngineClient destinations={destinations} lang={lang} />
+          <DecisionEngineClient destinations={destinations} lang={lang as "en" | "el"} />
         </main>
 
         {/* Footer Disclaimer */}
