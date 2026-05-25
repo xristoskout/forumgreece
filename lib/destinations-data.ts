@@ -869,6 +869,45 @@ export const destinations: Destination[] = [
         el: "Πλήρης οδηγός για την Καλαμάτα και τη Μεσσηνία: καλύτερες παραλίες, Παλιά Πόλη, Κάστρο, φαγητό, Costa Navarino, Μάνη, Πύλος και Αρχαία Μεσσήνη."
       }
     }
+  },
+  {
+    slug: "skiathos",
+    name: "Skiathos",
+    region: { en: "Sporades", el: "Σποράδες" },
+    blurb: {
+      en: "Pine forests, 65 beaches, vibrant nightlife, and an abandoned cliff-top castle.",
+      el: "Πεύκα, 65 παραλίες, έντονη νυχτερινή ζωή και ένα εγκαταλελειμμένο κάστρο σε γκρεμό.",
+    },
+    image: "/images/skiathos.webp",
+    overview: {
+      en: "Skiathos is the green heart of the Aegean — an island where pine forests grow all the way to the waterline. With 65 beaches, a dramatic abandoned Kastro, and nightlife that punches well above its size, this is a different kind of Greek island experience.",
+      el: "Η Σκιάθος είναι η πράσινη καρδιά του Αιγαίου — ένα νησί όπου τα πεύκα φτάνουν ως την ακτή. Με 65 παραλίες, το εντυπωσιακό εγκαταλελειμμένο Κάστρο και νυχτερινή ζωή που ξεπερνά κάθε προσδοκία.",
+    },
+    highlights: {
+      en: ["Koukounaries Beach", "Kastro", "Lalaria Beach", "Boat trips to Tsougrias"],
+      el: ["Παραλία Κουκουναριές", "Κάστρο Σκιάθου", "Παραλία Λαλάρια", "Εκδρομές με σκάφος στο Τσουγκριά"],
+    },
+    guideLinks: [
+      {
+        href: "/hotels/skiathos",
+        label: { en: "Where to Stay in Skiathos", el: "Πού να μείνεις στη Σκιάθο" }
+      },
+      {
+        href: "/travel-info/best-boat-trips-in-skiathos",
+        label: { en: "Best Boat Trips", el: "Εκδρομές με Σκάφος" }
+      }
+    ],
+    featured: true,
+    seo: {
+      title: {
+        en: "Skiathos Travel Guide 2026: Beaches, Kastro, Koukounaries & Local Tips | GoGreeceNow",
+        el: "Σκιάθος: Οδηγός Ταξιδιού 2026 — Παραλίες, Κάστρο, Κουκουναριές & Μυστικά | GoGreeceNow"
+      },
+      description: {
+        en: "Complete travel guide to Skiathos: Koukounaries and Lalaria beaches, the abandoned Kastro, boat trips to Tsougrias, nightlife, where to stay, best time to visit, and honest insider tips for the Sporades.",
+        el: "Πλήρης ταξιδιωτικός οδηγός για τη Σκιάθο: Κουκουναριές και Λαλάρια, Κάστρο, εκδρομές σε Τσουγκριά, νυχτερινή ζωή, διαμονή και αυθεντικές συμβουλές για τις Σποράδες."
+      }
+    }
   }
 ];
 

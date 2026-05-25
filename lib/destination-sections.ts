@@ -6324,6 +6324,204 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       ]
     }
   ],
+  skiathos: [
+    {
+      title: { en: "Why Visit Skiathos", el: "Γιατί να Επισκεφθείς τη Σκιάθο" },
+      layout: "numbered",
+      items: [
+        {
+          title: { en: "The green landscape — genuinely unique in the Aegean", el: "Το πράσινο τοπίο — μοναδικό στο Αιγαίο" },
+          text: { en: "Skiathos is the only Aegean island where pine forests grow all the way to the waterline. In July you swim in turquoise water with a forest backdrop — something you simply cannot find in the Cyclades.", el: "Η Σκιάθος είναι το μόνο νησί του Αιγαίου όπου τα πεύκα φτάνουν ως την ακτή. Το καλοκαίρι κολυμπάς σε τιρκουάζ νερά με φόντο το δάσος — κάτι που απλά δεν υπάρχει στις Κυκλάδες." }
+        },
+        {
+          title: { en: "65 beaches packed into a small island", el: "65 παραλίες σε ένα μικρό νησί" },
+          text: { en: "You can drive the main road end to end in 25 minutes, yet the island has more than sixty beaches — from the iconic pine-backed crescent of Koukounaries to the white pebble cove of Lalaria, accessible only by boat.", el: "Μπορείς να διασχίσεις τον κεντρικό δρόμο σε 25 λεπτά, κι όμως το νησί έχει πάνω από εξήντα παραλίες — από την εμβληματική Κουκουναριές μέχρι το Λαλάρια με τις λευκές βότσαλες." }
+        },
+        {
+          title: { en: "Kastro — an abandoned cliff city", el: "Κάστρο — μια εγκαταλελειμμένη πόλη σε γκρεμό" },
+          text: { en: "For four centuries, Kastro was the capital of Skiathos, perched on a dramatic northern cliff to protect against pirates. When piracy ended, the town was simply abandoned. Today its ruins and three surviving churches offer one of the most atmospheric historical sites in the Aegean.", el: "Για τέσσερις αιώνες το Κάστρο ήταν η πρωτεύουσα της Σκιάθου, πάνω σε έναν εντυπωσιακό γκρεμό. Σήμερα τα ερείπια και οι τρεις εκκλησίες που σώζονται προσφέρουν έναν από τους πιο ατμοσφαιρικούς ιστορικούς χώρους του Αιγαίου." }
+        },
+        {
+          title: { en: "Nightlife that surprises everyone", el: "Νυχτερινή ζωή που εκπλήσσει" },
+          text: { en: "Papadiamanti Street transforms into one of the most vibrant stretches of bars and live music in the Sporades. More relaxed than Mykonos — no €18 cocktails or velvet ropes — but genuinely lively and fun.", el: "Η οδός Παπαδιαμάντη μετατρέπεται σε έναν από τους πιο ζωντανούς δρόμους με μπαρ και μουσική στις Σποράδες. Πιο χαλαρό από τη Μύκονο — αλλά πραγματικά ζωντανό." }
+        },
+        {
+          title: { en: "Easy island-hopping to Skopelos and Alonissos", el: "Εύκολο island hopping σε Σκόπελο και Αλόννησο" },
+          text: { en: "Skopelos (the Mamma Mia island) is 50 minutes by ferry, Alonissos is 1.5 hours. The three Sporades islands form a natural circuit, each with its own distinct character.", el: "Η Σκόπελος είναι 50 λεπτά με το πλοίο, η Αλόννησος 1.5 ώρα. Οι τρεις Σποράδες σχηματίζουν ένα φυσικό ταξιδιωτικό τρίγωνο." }
+        }
+      ]
+    },
+    {
+      title: { en: "Best Time to Visit Skiathos", el: "Καλύτερη Εποχή για τη Σκιάθο" },
+      text: { en: "Skiathos has a long season and a very clear seasonal personality. Getting the timing right makes a significant difference to both the experience and the cost.", el: "Η Σκιάθος έχει μεγάλη σεζόν και ξεκάθαρη εποχική προσωπικότητα. Η σωστή επιλογή χρόνου κάνει μεγάλη διαφορά στην εμπειρία και το κόστος." },
+      layout: "grid",
+      items: [
+        {
+          title: { en: "May — Hidden Gem Month", el: "Μάιος — Κρυφό Διαμάντι" },
+          text: { en: "Wildflowers everywhere, sea warming up, almost no tourists. Prices 40–50% lower than August. Some beach bars not yet open — but that is the point.", el: "Αγριολούλουδα παντού, η θάλασσα ζεσταίνεται, σχεδόν καθόλου τουρίστες. Τιμές 40-50% χαμηλότερες από τον Αύγουστο." }
+        },
+        {
+          title: { en: "June — Best Overall", el: "Ιούνιος — Η Καλύτερη Εποχή" },
+          text: { en: "Perfect: warm enough to swim all day, not yet crowded. Full services open. Long evenings. Book accommodation 2–3 weeks ahead.", el: "Ιδανικά: αρκετά ζεστά για κολύμπι όλη μέρα, χωρίς πολύ κόσμο. Όλες οι υπηρεσίες λειτουργούν." }
+        },
+        {
+          title: { en: "July–August — Busy & Expensive", el: "Ιούλιος–Αύγουστος — Πολύς Κόσμος" },
+          text: { en: "Peak season. Koukounaries packed by 10am. Prices highest. Meltemi wind can be strong. Book everything months ahead if you come now.", el: "Υψηλή περίοδος. Οι Κουκουναριές γεμίζουν από τις 10πμ. Οι υψηλότερες τιμές. Κλείστε τα πάντα μήνες πριν." }
+        },
+        {
+          title: { en: "September — Best Kept Secret", el: "Σεπτέμβριος — Καλά Κρυμμένο Μυστικό" },
+          text: { en: "Warm sea (still 25°C), far fewer people, lower prices, calmer winds. Easily the best month.", el: "Ζεστή θάλασσα (ακόμα 25°C), πολύ λιγότερος κόσμος, χαμηλότερες τιμές. Ο καλύτερος μήνας." }
+        },
+        {
+          title: { en: "October — Quiet & Beautiful", el: "Οκτώβριος — Ήρεμος & Όμορφος" },
+          text: { en: "Early October is excellent: warm sea, few crowds, lower prices, golden landscapes. Most services close after mid-October.", el: "Οι αρχές Οκτωβρίου είναι εξαιρετικές: ζεστή θάλασσα, λίγος κόσμος, χρυσό τοπίο. Οι περισσότερες υπηρεσίες κλείνουν μετά τα μέσα Οκτωβρίου." }
+        }
+      ]
+    },
+    {
+      title: { en: "Best Beaches in Skiathos", el: "Οι Καλύτερες Παραλίες στη Σκιάθο" },
+      text: { en: "Sixty-five beaches sounds overwhelming. In practice, about eight to ten are exceptional. Here is the honest breakdown of the best ones.", el: "Εξήντα πέντε παραλίες ακούγονται συντριπτικές. Στην πράξη, περίπου οκτώ με δέκα είναι εξαιρετικές. Ορίστε μια ειλικρινής ματιά στις καλύτερες." },
+      layout: "list",
+      items: [
+        {
+          title: { en: "Koukounaries", el: "Κουκουναριές" },
+          text: { en: "The island's signature beach — a crescent of fine golden sand backed by a dense pine forest. Unique in the Aegean. Gets very busy in August; arrive before 9:30 or after 17:00. Sunbeds, taverna, bus from town.", el: "Η υπογραφή του νησιού — μια ημικυκλική παραλία με χρυσή άμμο και πυκνό πευκοδάσος. Μοναδική στο Αιγαίο. Πολύς κόσμος τον Αύγουστο." }
+        },
+        {
+          title: { en: "Lalaria", el: "Λαλάρια" },
+          text: { en: "Only reachable by boat. White marble pebbles, a natural rock arch, and water shifting from turquoise to deep blue. No facilities — bring everything. The most photogenic beach on the island.", el: "Προσβάσιμη μόνο με σκάφος. Λευκά βότσαλα, φυσική αψίδα, νερά που αλλάζουν από τιρκουάζ σε βαθύ μπλε. Η πιο φωτογενής παραλία." }
+        },
+        {
+          title: { en: "Kastro Beach", el: "Παραλία Κάστρου" },
+          text: { en: "A small pebble beach at the base of the Kastro cliff. Almost no one makes it here. A 15-minute steep path brings you to one of the most atmospherically unusual beaches in Greece.", el: "Μικρή παραλία με βότσαλο στους πρόποδες του Κάστρου. Σχεδόν κανείς δεν φτάνει ως εδώ. 15 λεπτά απότομο μονοπάτι." }
+        },
+        {
+          title: { en: "Banana Beach", el: "Μπανάνα" },
+          text: { en: "Two connected coves — Big Banana and Little Banana. Little Banana is officially a nudist beach. Big Banana has sunbeds, a beach bar, and watersports. One of the more characterful beaches on the island.", el: "Δύο κόλποι — Μεγάλη και Μικρή Μπανάνα. Η Μικρή είναι επισήμως γυμνιστική. Η Μεγάλη έχει ξαπλώστρες, beach bar και θαλάσσια σπορ." }
+        },
+        {
+          title: { en: "Mandraki", el: "Μανδράκι" },
+          text: { en: "Close to town but tucked away. Pine trees provide natural shade — rare on Greek beaches. Popular with locals and families who know to look past the more famous spots.", el: "Κοντά στην πόλη αλλά ήσυχη. Τα πεύκα προσφέρουν φυσική σκιά — σπάνιο στις ελληνικές παραλίες. Αγαπημένη των ντόπιων." }
+        },
+        {
+          title: { en: "Tsougrias Islet", el: "Νησίδα Τσουγκριά" },
+          text: { en: "A 10-minute water taxi from the old port takes you to an uninhabited islet with three beaches and extraordinary water clarity. One summer-only taverna. Best snorkelling on the trip.", el: "10 λεπτά με water taxi από το παλιό λιμάνι σε ένα ακατοίκητο νησάκι. Τρεις παραλίες, εκπληκτική διαύγεια νερού. Το καλύτερο snorkelling." }
+        }
+      ]
+    },
+    {
+      title: { en: "Things to Do in Skiathos Beyond the Beach", el: "Τι να Κάνεις στη Σκιάθο Εκτός από Παραλία" },
+      layout: "numbered",
+      items: [
+        {
+          title: { en: "Visit Kastro — the abandoned cliff city", el: "Επισκέψου το Κάστρο — η εγκαταλελειμμένη πόλη" },
+          text: { en: "In the 14th century, the inhabitants abandoned the coast and built a fortified town on a dramatic cliff. Kastro was home to 300 houses and 22 churches, serving as the island's capital for four centuries. Today only three churches survive, along with the stone gate and views across the northern Aegean. Access by dirt road from the north or by boat from the old port.", el: "Τον 14ο αιώνα, οι κάτοικοι εγκατέλειψαν την ακτή και έχτισαν οχυρωμένη πόλη σε έναν γκρεμό. Το Κάστρο είχε 300 σπίτια και 22 εκκλησίες. Πρόσβαση από τον βορρά ή με σκάφος." }
+        },
+        {
+          title: { en: "Evangelistria Monastery — where the Greek flag was born", el: "Μονή Ευαγγελίστριας — γενέτειρα της ελληνικής σημαίας" },
+          text: { en: "Set in a pine forest in the centre of the island, this monastery holds a special place in Greek history: in 1807, the first Greek flag was raised here before the War of Independence. The church interior is beautifully preserved, and the forest walk to reach it is one of the best short hikes on the island.", el: "Σε ένα πευκοδάσος στο κέντρο του νησιού, εδώ υψώθηκε η πρώτη ελληνική σημαία το 1807. Η εκκλησία είναι όμορφα διατηρημένη και η διαδρομή μέσα στο δάσος είναι υπέροχη." }
+        },
+        {
+          title: { en: "Papadiamantis House Museum", el: "Οικία Παπαδιαμάντη" },
+          text: { en: "Alexandros Papadiamantis — the father of modern Greek literature — was born here. His two-room stone house is preserved with original furniture, his writing desk, and first editions. A 20-minute visit, almost free of charge, and deeply moving.", el: "Ο Αλέξανδρος Παπαδιαμάντης — ο πατέρας της νεοελληνικής λογοτεχνίας — γεννήθηκε εδώ. Το δίχωρο πέτρινο σπίτι διατηρείται αυθεντικό." }
+        },
+        {
+          title: { en: "Boat trip to Skopelos (Mamma Mia island)", el: "Εκδρομή στη Σκόπελο (το νησί του Mamma Mia)" },
+          text: { en: "A 50-minute ferry ride takes you to Skopelos, where the 2008 film Mamma Mia! was shot. The Agios Ioannis chapel on the cliff (203 steps up) is genuinely spectacular. Skopelos Town is more architecturally interesting than Skiathos Town.", el: "50 λεπτά με το πλοίο στη Σκόπελο, όπου γυρίστηκε το Mamma Mia! Η εκκλησία του Αγίου Ιωάννη (203 σκαλοπάτια) είναι εντυπωσιακή." }
+        },
+        {
+          title: { en: "Bourtzi — the forgotten fortress", el: "Μπούρτζι — το ξεχασμένο φρούριο" },
+          text: { en: "A small Venetian fortress on a wooded peninsula, 5 minutes' walk from the harbour. Almost no one visits it. Free, open, with pine trees inside the walls, a small open-air theatre, and one of the best views of the old town. Go at sunset.", el: "Ένα μικρό βενετσιάνικο φρούριο σε μια δασωμένη χερσόνησο, 5 λεπτά από το λιμάνι. Δωρεάν, με υπέροχη θέα. Πήγαινε το ηλιοβασίλεμα." }
+        },
+        {
+          title: { en: "Explore the north coast by scooter", el: "Εξερεύνησε τη βόρεια ακτή με σκούτερ" },
+          text: { en: "Renting a scooter (€20–30/day) and spending half a day on the north coast is the most rewarding independent activity. The unpaved road passes through pine forest with views of the uninhabited northern Sporades. Beaches like Kehria and Eleni are quiet, raw, and genuinely remote-feeling.", el: "Νοίκιασε ένα σκούτερ (€20-30/ημέρα) και αφιέρωσε μισή μέρα στη βόρεια ακτή. Ο χωματόδρομος περνά μέσα από πευκοδάσος. Οι παραλίες Κεχριά και Ελένη είναι ήσυχες." }
+        }
+      ]
+    },
+    {
+      title: { en: "Food & Nightlife in Skiathos", el: "Φαγητό & Νυχτερινή Ζωή στη Σκιάθο" },
+      layout: "list",
+      items: [
+        {
+          title: { en: "Seafood at the old port", el: "Θαλασσινά στο παλιό λιμάνι" },
+          text: { en: "The small harbour area near the ferry terminal has simpler, fresher fish tavernas at lower prices than the main waterfront. Octopus, grilled sea bream, and lobster pasta (astakomanestro) when available.", el: "Η μικρή μαρίνα κοντά στο τέρμα των πλοίων έχει πιο απλές, φρέσκες ψαροταβέρνες. Χταπόδι, τσιπούρα και αστακομάναστρο." }
+        },
+        {
+          title: { en: "Walk inland from the waterfront", el: "Περπάτα προς τα μέσα" },
+          text: { en: "The restaurants facing the sea in the old port are almost uniformly overpriced. The good tavernas are 2–3 streets inland. Lower prices, better food, and a more authentic atmosphere.", el: "Τα εστιατόρια που βλέπουν στη θάλασσα είναι σχεδόν πάντα ακριβά. Οι καλές ταβέρνες είναι 2-3 δρόμους προς τα μέσα." }
+        },
+        {
+          title: { en: "Bougatsa for breakfast", el: "Μπουγάτσα για πρωινό" },
+          text: { en: "Skiathos bakeries on Papadiamanti Street serve bougatsa — custard-filled phyllo pastry — that beats any hotel breakfast. Grab one and eat it on the harbour wall.", el: "Τα ζαχαροπλαστεία στην οδό Παπαδιαμάντη σερβίρουν μπουγάτσα — καλύτερη από κάθε πρωινό ξενοδοχείου." }
+        },
+        {
+          title: { en: "Nightlife on Papadiamanti Street", el: "Νυχτερινή ζωή στην οδό Παπαδιαμάντη" },
+          text: { en: "From about 22:00 onwards, this street becomes a river of people. Bars, small clubs, live music. More relaxed than Mykonos — no €18 cocktails — but genuinely lively and fun.", el: "Από τις 22:00, αυτός ο δρόμος γεμίζει με κόσμο. Μπαρ, μικρά κλαμπ, ζωντανή μουσική. Πιο χαλαρά από τη Μύκονο." }
+        },
+        {
+          title: { en: "Calmer drinks at Bourtzi", el: "Πιο ήσυχα ποτά στο Μπούρτζι" },
+          text: { en: "For actual conversation, the small bars around the Bourtzi and the waterfront near the old port have a better atmosphere — quieter, better views, and the same drinks at lower prices.", el: "Για ήσυχη κουβέντα, τα μικρά μπαρ γύρω από το Μπούρτζι έχουν καλύτερη ατμόσφαιρα — πιο ήσυχα, καλύτερη θέα και χαμηλότερες τιμές." }
+        }
+      ]
+    },
+    {
+      title: { en: "How to Get to Skiathos & Get Around", el: "Πώς να Φτάσεις στη Σκιάθο & Πώς να Μετακινηθείς" },
+      layout: "grid",
+      items: [
+        {
+          title: { en: "By air", el: "Αεροπορικώς" },
+          text: { en: "Skiathos Airport (JSI) receives direct flights from Athens (45 min, multiple daily) and direct charters from the UK, Germany, Netherlands, and Scandinavia (April–October). The airport is 2km from town — a €6 taxi or 10-minute walk.", el: "Το αεροδρόμιο Σκιάθου (JSI) έχει πτήσεις από Αθήνα (45 λεπτά) και απευθείας ναυλωμένες πτήσεις από Ευρώπη. 2χλμ. από την πόλη." }
+        },
+        {
+          title: { en: "By ferry", el: "Ακτοπλοϊκώς" },
+          text: { en: "Year-round ferry service from Volos (3–4 hours) and Agios Konstantinos (3.5 hours). In summer, Flying Dolphin hydrofoils from Volos take 1.5 hours. Both ports connect to Athens by KTEL bus.", el: "Ακτοπλοϊκή σύνδεση όλο τον χρόνο από Βόλο (3-4 ώρες) και Άγιο Κωνσταντίνο (3.5 ώρες). Το καλοκαίρι Flying Dolphins από Βόλο σε 1.5 ώρα." }
+        },
+        {
+          title: { en: "By bus", el: "Με λεωφορείο" },
+          text: { en: "The south-coast bus (line 1) stops at 26 beaches — €2 per ride, every 20 minutes in summer. You can hop on and off all day. Covers all major south-coast beaches.", el: "Το λεωφορείο της νότιας ακτής (γραμμή 1) σταματά σε 26 παραλίες — €2 ανά διαδρομή, κάθε 20 λεπτά το καλοκαίρι." }
+        },
+        {
+          title: { en: "Scooter or quad rental", el: "Ενοικίαση σκούτερ ή quad" },
+          text: { en: "€18–28 per day for a 50cc scooter (no licence required for EU visitors). Essential for the north coast, Kastro, and forest interior. Quad bikes (€30–40/day) are better on unpaved roads.", el: "€18-28/ημέρα για σκούτερ 50cc. Απαραίτητο για τη βόρεια ακτή και το Κάστρο. Τα quad (€30-40/ημέρα) είναι καλύτερα σε χωματόδρομους." }
+        },
+        {
+          title: { en: "Water taxis", el: "Water taxis" },
+          text: { en: "From the old port to Tsougrias (€8–10 return), Lalaria (€15–20 combined with caves tour). Prices posted on a board at the departure point — pay only what the board says.", el: "Από το παλιό λιμάνι για Τσουγκριά (€8-10 με επιστροφή), Λαλάρια (€15-20 με περιήγηση σπηλαίων). Τιμές αναρτημένες στο λιμάνι." }
+        }
+      ]
+    },
+    {
+      title: { en: "Frequently Asked Questions About Skiathos", el: "Συχνές Ερωτήσεις για τη Σκιάθο" },
+      layout: "faq",
+      items: [
+        {
+          title: { en: "Is Skiathos worth it compared to the Cyclades?", el: "Αξίζει η Σκιάθος σε σύγκριση με τις Κυκλάδες;" },
+          text: { en: "Yes — but for different reasons. Skiathos offers pine forest scenery, green landscape, and a different colour palette entirely. If you have already done Santorini and Mykonos and want something different, Skiathos is an excellent next step.", el: "Ναι — αλλά για διαφορετικούς λόγους. Η Σκιάθος προσφέρει πευκοδάση, πράσινο τοπίο και εντελώς διαφορετική παλέτα χρωμάτων." }
+        },
+        {
+          title: { en: "How many days do you need in Skiathos?", el: "Πόσες μέρες χρειάζεσαι στη Σκιάθο;" },
+          text: { en: "Four to five days is ideal. Three is enough for beaches and main sights. Fewer than three and you will spend all your time at the beach without experiencing the island properly.", el: "Τέσσερις με πέντε μέρες είναι ιδανικές. Τρεις είναι αρκετές για παραλίες και τα κυριότερα αξιοθέατα." }
+        },
+        {
+          title: { en: "Can you visit Skiathos without a car or scooter?", el: "Μπορείς να επισκεφθείς τη Σκιάθο χωρίς αυτοκίνητο ή σκούτερ;" },
+          text: { en: "Yes, for the south coast — the bus covers 26 stops. Water taxis access Tsougrias and Lalaria. But for the north coast and interior, you need your own transport. Rent a scooter for 1–2 days.", el: "Ναι, για τη νότια ακτή — το λεωφορείο καλύπτει 26 στάσεις. Αλλά για τη βόρεια ακτή χρειάζεσαι δικό σου μεταφορικό." }
+        },
+        {
+          title: { en: "Is Skiathos good for families?", el: "Είναι η Σκιάθος κατάλληλη για οικογένειες;" },
+          text: { en: "Yes, especially in June and September. Shallow waters at Koukounaries and Troulos are ideal for young children. The bus makes beach access easy. August is harder with children due to heat and crowds.", el: "Ναι, ειδικά τον Ιούνιο και τον Σεπτέμβριο. Τα ρηχά νερά στις Κουκουναριές είναι ιδανικά για μικρά παιδιά." }
+        },
+        {
+          title: { en: "What is Skiathos like in October?", el: "Πώς είναι η Σκιάθος τον Οκτώβριο;" },
+          text: { en: "Early October (first two weeks) is excellent: warm sea, few crowds, prices 40–60% lower than August. Most services close from mid-October. The landscape turns golden and the pine scent is strongest in autumn.", el: "Οι αρχές Οκτωβρίου είναι εξαιρετικές. Οι περισσότερες υπηρεσίες κλείνουν από τα μέσα Οκτωβρίου. Το τοπίο γίνεται χρυσαφί." }
+        },
+        {
+          title: { en: "Can you island-hop from Skiathos?", el: "Μπορείς να κάνεις island hopping από τη Σκιάθο;" },
+          text: { en: "Yes. Skopelos (50 min) and Alonissos (1.5 hours) are both within comfortable day-trip range. The three islands form a natural island-hopping circuit within the Sporades.", el: "Ναι. Σκόπελος (50 λεπτά) και Αλόννησος (1.5 ώρα) είναι ιδανικές για ημερήσιες εκδρομές." }
+        }
+      ]
+    }
+  ],
   kalamata: [
     {
       title: {

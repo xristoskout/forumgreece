@@ -446,6 +446,31 @@ export default function DestinationDetailsClient({
               </div>
             </article>
 
+            {details?.honestAdvice && (
+              <article className="rounded-[28px] border border-slate-200 bg-gradient-to-br from-red-50 to-white p-8 shadow-sm">
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-red-700">
+                  {details.honestAdvice.title[lang]}
+                </p>
+
+                <div className="mt-5 grid gap-3">
+                  {details.honestAdvice.items[lang].map((item) => (
+                    <div
+                      key={item}
+                      className="rounded-2xl border border-red-100 bg-white px-4 py-3 text-sm font-medium text-slate-600"
+                    >
+                      <span className="text-red-500 mr-1.5">✕</span>{item}
+                    </div>
+                  ))}
+                </div>
+
+                <div className="mt-5 rounded-2xl bg-amber-50 border border-amber-200 p-4">
+                  <p className="text-xs font-medium leading-relaxed text-amber-800">
+                    💡 {details.honestAdvice.alert[lang]}
+                  </p>
+                </div>
+              </article>
+            )}
+
             <article className="rounded-[28px] border border-slate-200 bg-white backdrop-blur-md p-8 shadow-sm">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700">
                 {lang === "en" ? "Travel Note" : "Σημείωση Ταξιδιού"}

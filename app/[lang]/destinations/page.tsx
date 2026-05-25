@@ -115,6 +115,15 @@ const regionOrder = [
     },
   },
   {
+    key: 'Sporades',
+    label: { en: 'Sporades', el: 'Σποράδες' },
+    emoji: '🌲',
+    description: {
+      en: 'Green pine-covered islands with turquoise waters, secluded beaches and vibrant nightlife.',
+      el: 'Πράσινα πευκόφυτα νησιά με τιρκουάζ νερά, απομονωμένες παραλίες και ζωντανή νυχτερινή ζωή.',
+    },
+  },
+  {
     key: 'Peloponnese',
     label: { en: 'Peloponnese', el: 'Πελοπόννησος' },
     emoji: '🏛️',

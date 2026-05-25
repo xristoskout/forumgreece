@@ -64,11 +64,11 @@
     },
     "february": {
       "temp": 11,
-      "price_multiplier": 0.6
+      "price_multiplier": 0.9
     },
     "march": {
       "temp": 14,
-      "price_multiplier": 0.7
+      "price_multiplier": 1.05
     },
     "april": {
       "temp": 18,

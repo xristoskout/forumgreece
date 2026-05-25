@@ -1,0 +1,98 @@
+{
+  "id": "skiathos",
+  "slug": "skiathos",
+  "name": "Skiathos",
+  "type": "Island",
+  "coordinates": {
+    "lat": 39.1667,
+    "lng": 23.4833
+  },
+  "scores": {
+    "family": {
+      "value": 7,
+      "reason": "Family-friendly beaches and activities in Skiathos."
+    },
+    "couples": {
+      "value": 8,
+      "reason": "Romantic settings and sunset spots in Skiathos."
+    },
+    "nightlife": {
+      "value": 8,
+      "reason": "Lively bar scene on Papadiamantis Street."
+    },
+    "food": {
+      "value": 7,
+      "reason": "Good tavernas and seafood options."
+    },
+    "beaches": {
+      "value": 10,
+      "reason": "Exceptional variety and quality of beaches."
+    },
+    "walking": {
+      "value": 7,
+      "reason": "Compact town and coastal paths."
+    }
+  },
+  "content": {
+    "quick_summary": "A complete travel guide to Skiathos.",
+    "pros": [
+      "Koukounaries and Lalaria beaches",
+      "Pine forests to the waterline",
+      "Vibrant nightlife in Skiathos Town"
+    ],
+    "cons": [
+      "Very crowded and expensive in August",
+      "Limited accommodation on the northern coast"
+    ],
+    "insider_tips": [
+      "Visit in September for warm sea and half-empty beaches.",
+      "Take a water taxi to Tsougrias for the best snorkelling."
+    ],
+    "mistakes_to_avoid": [
+      "Coming in August without booking everything months ahead."
+    ]
+  },
+  "pricing_base": {
+    "budget_daily": 55,
+    "mid_daily": 120,
+    "luxury_daily": 280
+  },
+  "seasonality": {
+    "january": { "temp": 12, "price_multiplier": 0.6 },
+    "february": { "temp": 12, "price_multiplier": 0.6 },
+    "march": { "temp": 14, "price_multiplier": 0.7 },
+    "april": { "temp": 17, "price_multiplier": 0.8 },
+    "may": { "temp": 22, "price_multiplier": 1.0 },
+    "june": { "temp": 26, "price_multiplier": 1.2 },
+    "july": { "temp": 29, "price_multiplier": 1.5 },
+    "august": { "temp": 29, "price_multiplier": 1.6 },
+    "september": { "temp": 26, "price_multiplier": 1.2 },
+    "october": { "temp": 22, "price_multiplier": 0.9 },
+    "november": { "temp": 17, "price_multiplier": 0.7 },
+    "december": { "temp": 14, "price_multiplier": 0.6 }
+  },
+  "image": "/images/skiathos.webp",
+  "guideLinks": [
+    {
+      "href": "/hotels/skiathos",
+      "label": {
+        "en": "Where to Stay",
+        "el": "Πού να μείνεις"
+      }
+    },
+    {
+      "href": "/travel-tools/budget/skiathos",
+      "label": {
+        "en": "Budget Planner",
+        "el": "Budget Planner"
+      }
+    },
+    {
+      "href": "/travel-tools/best-time/skiathos",
+      "label": {
+        "en": "Best Time to Visit",
+        "el": "Καλύτερη Εποχή"
+      }
+    }
+  ]
+}

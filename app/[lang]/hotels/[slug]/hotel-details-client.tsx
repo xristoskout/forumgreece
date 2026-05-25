@@ -39,6 +39,7 @@ const STAY22_EMBEDS: Record<string, string> = {
   patmos: "https://stay22.com/embed/6a073e542573b5d07586c5db",
   patras: "https://stay22.com/embed/6a08335181c53d08587afc33",
   kalamata: "https://stay22.com/embed/6a0da4baf968487cce2b1e87",
+  skiathos: "https://stay22.com/embed/6a1441871194c5e40cbc436e",
 };
 
 const HOTEL_NAMES: Record<string, string[]> = {
@@ -68,6 +69,7 @@ const HOTEL_NAMES: Record<string, string[]> = {
   patmos: ["Patmos Aktis", "Chrissi Aktis", "Patmos Paradise", "Petra"],
   patras: ["Byzantine Hotel", "Astir Hotel Patras", "Maison Grecque Boutique Hotel", "Porto Rio Hotel & Casino", "Achaia Beach", "Poseidon Hotel Aigio", "Delfinia Hotel Akrata", "Europa Hotel Olympia", "Hotel Olympia Palace", "Neda Hotel", "Akti Hotel Nafpaktos", "Nafpaktos Residence"],
   kalamata: ["Filoxenia Hotel", "Pharae Palace Hotel", "Haikos Hotel", "Elite Hotel Kalamata", "Kastro Boutique Hotel", "Kalamitsi Hotel", "Anniska & Lino Houses", "Elies Resort", "Stoupa Beach Hotel", "Mani Gate Hotel", "The Romanos, a Luxury Collection Resort, Costa Navarino", "The Romanos", "The Westin Resort Costa Navarino", "Zoe Hotel Pylos", "Zante Maris Navarino", "Ithomi Hotel, Mavromati"],
+  skiathos: ["Bourtzi Boutique Hotel", "Alkyon Hotel", "Hotel Mato", "Skiathos Palace Hotel", "Pension Pandora", "San Stefano Hotel", "Atrium Hotel", "Esperides Beach Hotel", "Skiathos Princess Hotel", "Troulos Bay Hotel", "Mandraki Village", "Koukounaries Hotel", "Skiathos Sage Hotel", "Aegean Suites Hotel", "Paradise Hotel Skiathos", "Kanapitsa Mare Hotel"],
 };
 
 function getStay22Url(slug: string): string {

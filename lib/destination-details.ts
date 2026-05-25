@@ -4,6 +4,11 @@ export type DestinationDetail = {
   overview: Localized;
   pageIncludes: LocalizedList;
   perfectFor: LocalizedList;
+  honestAdvice?: {
+    title: Localized;
+    alert: Localized;
+    items: LocalizedList;
+  };
 };
 
 export const destinationDetails: Record<string, DestinationDetail> = {
@@ -690,5 +695,70 @@ export const destinationDetails: Record<string, DestinationDetail> = {
         "Slow travel και φύση"
       ]
     }
-  }
+  },
+  skiathos: {
+    overview: {
+      en: "Skiathos is the greenest island in the Aegean — a place where pine forests meet turquoise water, creating a landscape that is distinctly different from the white-washed Cyclades. With 65 beaches ranging from the pine-fringed perfection of Koukounaries to the secluded white pebbles of Lalaria, a dramatic abandoned Kastro perched on a northern cliff, and one of the most unexpectedly vibrant nightlife scenes in the Sporades, Skiathos delivers variety on a small scale. This guide covers the beaches, the history, the food, boat trips, and the practical details that make a trip here genuinely rewarding.",
+      el: "Η Σκιάθος είναι το πιο πράσινο νησί του Αιγαίου — ένα μέρος όπου τα πεύκα συναντούν τα τιρκουάζ νερά, δημιουργώντας ένα τοπίο εντελώς διαφορετικό από τις ασβεστωμένες Κυκλάδες. Με 65 παραλίες, ένα επιβλητικό εγκαταλελειμμένο Κάστρο, και μία απροσδόκητα ζωντανή νυχτερινή ζωή, η Σκιάθος προσφέρει ποικιλία σε μικρή κλίμακα. Αυτός ο οδηγός καλύπτει παραλίες, ιστορία, φαγητό, εκδρομές με σκάφος και πρακτικές λεπτομέρειες.",
+    },
+    pageIncludes: {
+      en: [
+        "Why visit Skiathos — the honest case",
+        "Best time to go — month by month",
+        "Top beaches: Koukounaries, Lalaria, Kastro & more",
+        "Kastro, Evangelistria & hidden attractions",
+        "Food, nightlife & where to eat",
+        "4-day itinerary for Skiathos",
+        "Getting there, getting around & practical tips",
+        "FAQ — everything else you need to know",
+      ],
+      el: [
+        "Γιατί να επισκεφθείς τη Σκιάθο",
+        "Καλύτερη εποχή για επίσκεψη",
+        "Οι καλύτερες παραλίες",
+        "Κάστρο, Ευαγγελίστρια & κρυμμένα αξιοθέατα",
+        "Φαγητό & νυχτερινή ζωή",
+        "Πρόγραμμα 4 ημερών",
+        "Πώς θα πας & θα μετακινηθείς",
+        "Συχνές Ερωτήσεις",
+      ],
+    },
+    perfectFor: {
+      en: [
+        "Beach lovers who want variety",
+        "Nature and green landscape seekers",
+        "Young travellers and nightlife enthusiasts",
+        "Island-hoppers in the Sporades",
+        "Anyone tired of the Cyclades aesthetic",
+      ],
+      el: [
+        "Λάτρεις των παραλιών που θέλουν ποικιλία",
+        "Φυσιολάτρες και φίλους του πράσινου",
+        "Νέους ταξιδιώτες και λάτρεις της νυχτερινής ζωής",
+        "Ταξιδιώτες που κάνουν island hopping στις Σποράδες",
+        "Όσους έχουν βαρεθεί την κυκλαδίτικη αισθητική",
+      ],
+    },
+    honestAdvice: {
+      title: { en: "Honest Advice — What to Skip", el: "Ειλικρινής Συμβουλή — Τι να Αποφύγεις" },
+      alert: {
+        en: "What nobody tells you: Skiathos has a serious overtourism problem in August relative to its size. 49 km² receiving tens of thousands of visitors in a single month creates real pressure on infrastructure, prices and atmosphere. The locals are warm and welcoming — but if you come in August and find the island 'too commercial,' the honest answer is: come back in September.",
+        el: "Αυτό που δε σου λέει κανείς: Η Σκιάθος έχει σοβαρό πρόβλημα υπερτουρισμού τον Αύγουστο σε σχέση με το μέγεθός της. 49 km² που δέχονται δεκάδες χιλιάδες επισκέπτες σε έναν μήνα δημιουργούν πίεση στις υποδομές, τις τιμές και την ατμόσφαιρα. Οι ντόπιοι είναι φιλόξενοι — αλλά αν έρθεις Αύγουστο και βρεις το νησί 'πολύ εμπορευματοποιημένο,' η ειλικρινής απάντηση είναι: έλα τον Σεπτέμβριο."
+      },
+      items: {
+        en: [
+          "Skiathos in the first two weeks of August — unless you have booked everything months ahead and do not mind crowds. It is a completely different island than June or September.",
+          "The 'party boat' excursions — loud, generic, expensive. A simple water taxi to Tsougrias is better value and much quieter.",
+          "Hiring a car for a day trip — the island is too small and parking in town is a disaster. A scooter or the bus covers everything more effectively.",
+          "Expecting a 'typical Cyclades' aesthetic — Skiathos is green, forested and architecturally different. If you want white cubic houses and caldera views, this is not your island."
+        ],
+        el: [
+          "✕ Σκιάθος τις πρώτες δύο εβδομάδες του Αυγούστου — εκτός αν έχεις κλείσει τα πάντα μήνες πριν και δεν σε πειράζει το πλήθος. Είναι εντελώς διαφορετικό νησί από τον Ιούνιο ή τον Σεπτέμβριο.",
+          "✕ Οι εκδρομές με 'party boat' — δυνατά, γενικά, ακριβά. Ένα απλό water taxi στο Τσουγκριά είναι καλύτερη αξία και πολύ πιο ήσυχο.",
+          "✕ Ενοικίαση αυτοκινήτου για ημερήσια εκδρομή — το νησί είναι πολύ μικρό και το παρκάρισμα στην πόλη είναι χάος. Ένα σκούτερ ή το λεωφορείο καλύπτουν τα πάντα πιο αποτελεσματικά.",
+          "✕ Το να περιμένεις 'κυκλαδίτικη' αισθητική — η Σκιάθος είναι πράσινη, δασωμένη και αρχιτεκτονικά διαφορετική. Αν θες άσπρα κυβικά σπίτια και θέα καλντέρας, αυτό δεν είναι το νησί σου."
+        ]
+      }
+    },
+  },
 };

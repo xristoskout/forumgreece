@@ -179,6 +179,13 @@ export const MAP_PINS: Pin[] = [
     tagline: { en: "Peloponnese coastal city", el: "Παραθαλάσσια πόλη Πελοποννήσου" },
   },
   {
+    id: "skiathos",
+    x: 45.0, y: 37.5,
+    href: "/destinations/skiathos",
+    label: { en: "Skiathos", el: "Σκιάθος" },
+    tagline: { en: "Pine forests & turquoise waters", el: "Πεύκα & τιρκουάζ νερά" },
+  },
+  {
     id: "lemnos",
     x: 59.9, y: 27.7,
     href: "/destinations/lemnos",
