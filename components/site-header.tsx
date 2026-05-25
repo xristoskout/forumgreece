@@ -68,8 +68,8 @@ export default function SiteHeader() {
       {
         key: "food",
         label: t.food[lang],
-        href: withLang("/eat-drink"),
-        active: pathname.startsWith(`/${lang}/eat-drink`),
+        href: withLang("/collections/greece-food-and-drink"),
+        active: pathname.startsWith(`/${lang}/collections/greece-food-and-drink`),
       },
       {
         key: "compare",

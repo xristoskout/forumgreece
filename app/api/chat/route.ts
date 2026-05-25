@@ -91,7 +91,7 @@ ${databaseContext}
     - Destinations: [Name](/${lang}/destinations/[slug])
     - Hotels: [Name](/${lang}/hotels/[slug])
     - Sponsored Businesses: [Name](/${lang}/businesses/[slug])
-    - Food/Restaurants: [Title](/${lang}/eat-drink)
+    - Food/Restaurants: [Title](/${lang}/collections/greece-food-and-drink)
     - Tours: [Title](/${lang}/tours)
     - Travel Info: [Guide Title](/${lang}/travel-info)
 4. **LANGUAGE**: You are a polyglot assistant. Respond in the same language as the user's latest message (e.g., if they write in German, respond in German). Use the information from the Knowledge Base to answer, translating it if necessary to match the user's language. Always be polite.

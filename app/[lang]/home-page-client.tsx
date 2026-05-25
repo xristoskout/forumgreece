@@ -1094,7 +1094,7 @@ export default function HomePageClient({
                 <li><Link href={withLang("/travel-info")} className="text-slate-600 hover:text-slate-900">Travel Info</Link></li>
                 <li><Link href={withLang("/hotels")} className="text-slate-600 hover:text-slate-900">Hotels</Link></li>
                 <li><Link href={withLang("/tours")} className="text-slate-600 hover:text-slate-900">Tours</Link></li>
-                <li><Link href={withLang("/eat-drink")} className="text-slate-600 hover:text-slate-900">Eat & Drink</Link></li>
+                <li><Link href={withLang("/collections/greece-food-and-drink")} className="text-slate-600 hover:text-slate-900">Eat & Drink</Link></li>
               </ul>
             </div>
             <div>

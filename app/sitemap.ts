@@ -15,7 +15,7 @@ const staticRoutes = [
   '',
   '/destinations',
   '/hotels',
-  '/eat-drink',
+  '/collections/greece-food-and-drink',
   '/tours',
   '/tours/all',
   '/travel-info',

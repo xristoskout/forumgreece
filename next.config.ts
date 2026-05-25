@@ -73,6 +73,16 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/:lang(en|el)/eat-drink',
+        destination: '/:lang/collections/greece-food-and-drink',
+        permanent: true,
+      },
+      {
+        source: '/eat-drink',
+        destination: '/en/collections/greece-food-and-drink',
+        permanent: true,
+      },
+      {
         source: '/:first(en|el)/:second(en|el)/:path*',
         destination: '/:second/:path*',
         permanent: true,
