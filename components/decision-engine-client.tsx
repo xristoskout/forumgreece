@@ -148,7 +148,7 @@ const REAL_PRICING: Record<string, any> = {
     car_rental_day: 70,
     avg_hotel_low: 130,
     avg_hotel_may_june: 180,
-    avg_hotel_july_aug: 380,
+    avg_hotel_july_aug: 300,
     avg_hotel_sept_oct: 190,
     avg_daily_budget_backpacker: 90,
     avg_daily_budget_midrange: 220,
@@ -812,8 +812,8 @@ const REAL_PRICING: Record<string, any> = {
     bus_ticket: 1.5,
     atv_scooter_day: null,
     car_rental_day: 35,
-    avg_hotel_low: 50,
-    avg_hotel_may_june: 70,
+    avg_hotel_low: 60,
+    avg_hotel_may_june: 90,
     avg_hotel_july_aug: 95,
     avg_hotel_sept_oct: 70,
     avg_daily_budget_backpacker: 45,
@@ -847,9 +847,9 @@ const REAL_PRICING: Record<string, any> = {
     bus_ticket: 1.8,
     atv_scooter_day: 22,
     car_rental_day: 35,
-    avg_hotel_low: 50,
-    avg_hotel_may_june: 70,
-    avg_hotel_july_aug: 105,
+    avg_hotel_low: 70,
+    avg_hotel_may_june: 80,
+    avg_hotel_july_aug: 155,
     avg_hotel_sept_oct: 70,
     avg_daily_budget_backpacker: 48,
     avg_daily_budget_midrange: 90,
@@ -1023,6 +1023,21 @@ const NOT_IDEAL_FOR_LABELS: Record<string, { en: string; el: string }> = {
   long_stays: { en: "Long stays", el: "Μεγάλη διάρκεια διαμονής" }
 };
 
+const CUSTOM_HOTEL_PRICES: Record<string, Record<string, Record<string, number>>> = {
+  santorini: {
+    low: { budget: 52, mid: 120, luxury: 1264 },
+    may_june: { budget: 50, mid: 220, luxury: 1352 },
+    july_aug: { budget: 80, mid: 300, luxury: 1560 },
+    sept_oct: { budget: 80, mid: 175, luxury: 1385 },
+  },
+  patras: {
+    low: { budget: 40, mid: 60, luxury: 180 },
+    may_june: { budget: 50, mid: 90, luxury: 170 },
+    july_aug: { budget: 57, mid: 95, luxury: 209 },
+    sept_oct: { budget: 42, mid: 70, luxury: 154 },
+  },
+};
+
 const getRealData = (slug: string) => {
   let key = slug;
   if (key === 'lemnos') key = 'limnos';
@@ -1060,13 +1075,22 @@ export default function DecisionEngineClient({ destinations, lang }: { destinati
 
     // 1. Accommodation (Hotel Rooms based on 2 people per room)
     const rooms = Math.ceil(adults / 2);
-    const baseHotelPrice = real[`avg_hotel_${season}`] || 80;
-    
-    let styleMultiplier = 1.0;
-    if (style === 'budget') styleMultiplier = 0.6;
-    if (style === 'luxury') styleMultiplier = 2.2;
+    let hotelCost: number;
+    const custom = CUSTOM_HOTEL_PRICES[d.slug]?.[season];
+    if (custom) {
+      if (d.slug === 'patras' && (month === 'february' || month === 'march')) {
+        hotelCost = ({ budget: 60, mid: 100, luxury: 220 })[style] * rooms * days;
+      } else {
+        hotelCost = custom[style] * rooms * days;
+      }
+    } else {
+      let baseHotelPrice = real[`avg_hotel_${season}`] || 80;
+      let styleMultiplier = 1.0;
+      if (style === 'budget') styleMultiplier = 0.5;
+      if (style === 'luxury') styleMultiplier = 3.2;
 
-    const hotelCost = baseHotelPrice * styleMultiplier * rooms * days;
+      hotelCost = baseHotelPrice * styleMultiplier * rooms * days;
+    }
 
     // 2. Food & Drink
     let mealCost = real.midrange_meal || 30;
