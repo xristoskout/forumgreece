@@ -186,6 +186,13 @@ export const MAP_PINS: Pin[] = [
     tagline: { en: "Pine forests & turquoise waters", el: "Πεύκα & τιρκουάζ νερά" },
   },
   {
+    id: "thassos",
+    x: 55.1, y: 19.2,
+    href: "/destinations/thassos",
+    label: { en: "Thassos", el: "Θάσος" },
+    tagline: { en: "Greece's greenest island", el: "Το πιο πράσινο νησί της Ελλάδας" },
+  },
+  {
     id: "lemnos",
     x: 59.9, y: 27.7,
     href: "/destinations/lemnos",

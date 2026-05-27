@@ -871,6 +871,45 @@ export const destinations: Destination[] = [
     }
   },
   {
+    slug: "thassos",
+    name: "Thassos",
+    region: { en: "North Aegean", el: "Βόρειο Αιγαίο" },
+    blurb: {
+      en: "Greece's greenest island — marble beaches, pine forests, mountain villages and ancient ruins.",
+      el: "Το πιο πράσινο νησί της Ελλάδας — μαρμάρινες παραλίες, πευκοδάση, ορεινά χωριά και αρχαία ερείπια.",
+    },
+    image: "/images/thassos.webp",
+    overview: {
+      en: "Thassos is the greenest island in Greece — dense pine forest covers the interior, marble-white beaches glow turquoise along the coast, and mountain villages like Theologos and Kastro sit deep in the hills. The ancient agora sits in the centre of Limenas, the capital, embedded into everyday life. Marble Beach (Skouries), Giola natural lagoon, and the 95km coastal circuit road make this one of the most complete island experiences in the North Aegean.",
+      el: "Η Θάσος είναι το πιο πράσινο νησί της Ελλάδας — πυκνό πευκοδάσος καλύπτει το εσωτερικό, μαρμάρινες παραλίες λάμπουν στα παράλια, και ορεινά χωριά όπως το Θεολόγος και το Κάστρο βρίσκονται βαθιά στους λόφους. Η αρχαία αγορά βρίσκεται στο κέντρο της Λιμένα, ενταγμένη στην καθημερινή ζωή.",
+    },
+    highlights: {
+      en: ["Marble Beach (Skouries)", "Theologos Village", "Ancient Agora of Limenas", "Giola Natural Lagoon"],
+      el: ["Μαρμάρινη Παραλία (Σκουριές)", "Θεολόγος", "Αρχαία Αγορά Λιμένα", "Γκιόλα"],
+    },
+    guideLinks: [
+      {
+        href: "/hotels/thassos",
+        label: { en: "Where to Stay in Thassos", el: "Πού να μείνεις στη Θάσο" }
+      },
+      {
+        href: "/tours/all",
+        label: { en: "Best Boat Trips", el: "Εκδρομές με Σκάφος" }
+      }
+    ],
+    featured: true,
+    seo: {
+      title: {
+        en: "Thassos Travel Guide 2026: Beaches, Villages, Marble & Local Food | GoGreeceNow",
+        el: "Θάσος: Οδηγός Ταξιδιού 2026 — Παραλίες, Χωριά, Μάρμαρο & Τοπικό Φαγητό | GoGreeceNow"
+      },
+      description: {
+        en: "Complete guide to Thassos island: the best beaches (Marble Beach, Golden Beach, Paradise), mountain villages like Theologos and Kastro, local food, ancient sites, and practical tips for Greece's greenest island.",
+        el: "Πλήρης ταξιδιωτικός οδηγός για τη Θάσο: οι καλύτερες παραλίες, ορεινά χωριά, τοπικό φαγητό, αρχαιολογικοί χώροι και πρακτικές συμβουλές για το πιο πράσινο νησί της Ελλάδας."
+      }
+    }
+  },
+  {
     slug: "skiathos",
     name: "Skiathos",
     region: { en: "Sporades", el: "Σποράδες" },

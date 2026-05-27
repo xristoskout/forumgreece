@@ -2512,6 +2512,127 @@ export const hotels: HotelCard[] = [
         el: "Βρες τις καλύτερες περιοχές και ξενοδοχεία στη Σκιάθο — από τη Χώρα και τις Κουκουναριές μέχρι τον Τρούλο, τις Αχλάδιες και τη βόρεια ακτή. Πλήρης οδηγός διαμονής."
       }
     }
+  },
+  {
+    slug: "thassos",
+    name: "Where to Stay in Thassos",
+    place: "Thassos — North Aegean",
+    badge: "New guide",
+    info: {
+      en: "Choosing where to stay in Thassos shapes the whole trip. The island is roughly circular, with a coastal road connecting a series of villages and beach settlements — each with a different character, a different pace, and a different relationship to the sea and the forest. Stay in the wrong area for your travel style and you will spend your holiday driving past the experience you actually wanted.",
+      el: "Η επιλογή διαμονής στη Θάσο καθορίζει ολόκληρο το ταξίδι. Το νησί είναι σχεδόν κυκλικό, με έναν παραλιακό δρόμο που συνδέει μια σειρά από χωριά και παραθεριστικούς οικισμούς — ο καθένας με διαφορετικό χαρακτήρα, ρυθμό και σχέση με τη θάλασσα και το δάσος."
+    },
+    image: "/images/thassos.webp",
+    overview: {
+      en: "Choosing where to stay in Thassos shapes the whole trip.\n\nThe island is roughly circular, with a coastal road connecting a series of villages and beach settlements — each with a different character, a different pace, and a different relationship to the sea and the forest. Unlike more compact islands, Thassos rewards choosing your base with intention. Stay in the wrong area for your travel style and you will spend your holiday driving past the experience you actually wanted.\n\nThe good news: there is no bad base on this island. The question is which version of Thassos you want to wake up to.",
+      el: "Η επιλογή διαμονής στη Θάσο καθορίζει ολόκληρο το ταξίδι. Το νησί είναι σχεδόν κυκλικό, με έναν παραλιακό δρόμο που συνδέει χωριά και οικισμούς. Σε αντίθεση με πιο μικρά νησιά, η Θάσος ανταμείβει όσους επιλέξουν βάση με πρόθεση. Τα καλά νέα: δεν υπάρχει κακή βάση σε αυτό το νησί."
+    },
+    description: {
+      en: "Choosing where to stay in Thassos shapes the whole trip.\n\nThe island is roughly circular, with a coastal road connecting a series of villages and beach settlements — each with a different character, a different pace, and a different relationship to the sea and the forest. Unlike more compact islands, Thassos rewards choosing your base with intention. Stay in the wrong area for your travel style and you will spend your holiday driving past the experience you actually wanted.\n\nThe good news: there is no bad base on this island. The question is which version of Thassos you want to wake up to. Read through the areas below to find the right fit.",
+      el: "Η επιλογή διαμονής στη Θάσο καθορίζει ολόκληρο το ταξίδι. Το νησί είναι σχεδόν κυκλικό, με έναν παραλιακό δρόμο που συνδέει χωριά και οικισμούς. Σε αντίθεση με πιο μικρά νησιά, η Θάσος ανταμείβει όσους επιλέξουν βάση με πρόθεση. Τα καλά νέα: δεν υπάρχει κακή βάση σε αυτό το νησί."
+    },
+    features: {
+      en: [
+        "Limenas — History, harbour, ancient agora, island life",
+        "Golden Beach (Chrysi Ammoudia) — Classic family base",
+        "Skala Rachoni & Rachoni Bay — Pine forest, quiet sea, local pace",
+        "Potos & Pefkari — South coast sun, long evenings, sandy shores",
+        "Skala Prinos — West coast calm, sunsets & local character",
+        "Limenaria — Second town, southern base"
+      ],
+      el: [
+        "Λιμένα — Ιστορία, λιμάνι, αρχαία αγορά",
+        "Χρυσή Αμμουδιά — Κλασική οικογενειακή βάση",
+        "Σκάλα Ραχωνίου & Κόλπος Ραχωνίου — Πεύκα, ήρεμη θάλασσα",
+        "Ποτός & Πευκάρι — Νότια ακτή, ηλιοφάνεια, αμμώδεις ακτές",
+        "Σκάλα Πρίνου — Δυτική ακτή, ηλιοβασιλέματα",
+        "Λιμενάρια — Δεύτερη πόλη, νότια βάση"
+      ]
+    },
+    sections: [
+      {
+        title: { en: "Limenas (Thassos Town) — History, Harbour & Island Life", el: "Λιμένα — Ιστορία, Λιμάνι & Ζωή του Νησιού" },
+        content: {
+          en: "Limenas is the island's capital and its most complete base. The ancient agora is embedded in the town centre. The ancient theatre sits on the hillside above. The harbour is lined with fish tavernas and kafenia where locals genuinely eat. A long beach runs along the northern waterfront, a few minutes' walk from the main square.\n\nStaying in Limenas gives you the full texture of the island — the archaeology, the evening waterfront promenade, the Saturday market, easy ferry access, and the widest range of restaurants and cafés on the island. It is the most convenient base for exploring the circuit road in either direction.\n\nThe accommodation here ranges from family-run guesthouses in the old town to modern seafront hotels. It is not a resort zone — which is exactly what makes it interesting.\n\nStay in Limenas if...\n\n- You want to be close to the ancient sites and the archaeological museum\n- You prefer an evening harbour atmosphere over a beach-focused stay\n- You are using Thassos as a base for day trips around the circuit\n- You want the widest choice of restaurants and island services\n- You value ferry convenience — the port is a 5-minute walk\n\n💡 Area tip: The old neighbourhood behind the harbour, away from the main road, has quieter guesthouses with more character than the seafront hotels. Worth seeking out.",
+          el: "Η Λιμένα είναι η πρωτεύουσα του νησιού και η πιο ολοκληρωμένη βάση. Η αρχαία αγορά είναι ενταγμένη στο κέντρο. Το λιμάνι έχει ψαροταβέρνες και καφενεία. Μια μακριά παραλία εκτείνεται κατά μήκος του βόρειου παραλιακού μετώπου.\n\nΜείνε στη Λιμένα αν... θέλεις να είσαι κοντά στα αρχαία, προτιμάς βραδινή ατμόσφαιρα λιμανιού, θες την ευρύτερη ποικιλία εστιατορίων και υπηρεσιών."
+        }
+      },
+      {
+        title: { en: "Golden Beach (Chrysi Ammoudia) — The Classic Family Base", el: "Χρυσή Αμμουδιά" },
+        content: {
+          en: "Golden Beach is the most popular holiday base on the island and the easiest to understand: 1.5km of fine golden sand, shallow clear water, good infrastructure, and a relaxed village atmosphere behind it. The adjacent settlement of Skala Panagia has several good fish tavernas and a quieter, more local feel than the main beach strip.\n\nAccommodation here ranges from simple rooms above tavernas to larger beach hotels with pools. The area works well as a standalone holiday destination — you can spend a full week here without needing to go further — but it is also a good base for day trips to Marble Beach, Aliki, and the mountain villages.\n\nThe sea here is calm and gently shelving, making it one of the best parts of the island for families with young children.\n\nStay in Golden Beach if...\n\n- You want a long, sandy, organised beach as your base\n- You are travelling with children or prefer calm, shallow water\n- You want easy access to the east coast beaches\n- You prefer a beach-resort rhythm over a town or village feel\n- You want the widest choice of beachfront hotels and apartments\n\n💡 Area tip: The northern end of Golden Beach, towards Skala Panagia, is quieter and more local. The southern end has more beach bars and summer activity.",
+          el: "Η Χρυσή Αμμουδιά είναι η πιο δημοφιλής βάση: 1.5χλμ. χρυσής άμμου, ρηχά καθαρά νερά, καλή υποδομή. Ιδανική για οικογένειες.\n\nΜείνε στη Χρυσή Αμμουδιά αν... θες μακριά αμμώδη παραλία ως βάση, ταξιδεύεις με παιδιά, προτιμάς ρυθμό παραλίας."
+        }
+      },
+      {
+        title: { en: "Skala Rachoni & Rachoni Bay — Pine Forest, Quiet Sea, Local Pace", el: "Σκάλα Ραχωνίου & Κόλπος Ραχωνίου" },
+        content: {
+          en: "On the northern coast between Limenas and Skala Prinos, the area around Rachoni Bay is one of the most quietly beautiful parts of Thassos. Pine trees grow to the water's edge. The sea is calm and clear. The village is small, genuinely local, and entirely without tourist performance.\n\nThis is where you stay if you want the pine-and-sea combination that defines Thassos at its most elemental — without the crowds of the east coast or the services of Limenas. Accommodation is mostly small guesthouses and apartments run by local families.\n\nStay in Skala Rachoni if...\n\n- You want total quiet and a pine-shaded, local atmosphere\n- You prefer small guesthouses over hotel infrastructure\n- You don't mind driving 10–15 minutes to reach the main sites\n- Your priority is swimming from pine-forested shores with few other people around\n- You're a repeat visitor looking for a different, slower side of the island\n\n💡 Area tip: The small taverna on the bay at Rachoni serves some of the freshest fish on the island — bought directly from local boats. Ask what came in that morning.",
+          el: "Στη βόρεια ακτή, η περιοχή του κόλπου Ραχωνίου είναι από τις πιο ήσυχα όμορφες. Τα πεύκα φτάνουν ως το νερό. Η θάλασσα είναι ήρεμη και καθαρή.\n\nΜείνε εδώ αν... θέλεις απόλυτη ησυχία, προτιμάς μικρούς ξενώνες, δεν σε πειράζει να οδηγήσεις 10-15 λεπτά για τα αξιοθέατα."
+        }
+      },
+      {
+        title: { en: "Potos & Pefkari — South Coast Sun, Long Evenings, Sandy Shores", el: "Ποτός & Πευκάρι" },
+        content: {
+          en: "The south coast around Potos and Pefkari is the warmest and sunniest part of the island, sheltered from the northern winds that can affect the east coast in summer. Two long sandy beaches run side by side. The village of Potos has the most developed nightlife and café culture outside of Limenas — busy in summer, especially with Greek visitors.\n\nPefkari, immediately adjacent, is smaller and slightly calmer — a pine-backed sandy beach with a more relaxed feel. Together they form the south coast's main holiday hub.\n\nThe area is well-connected by road to Aliki (15 minutes), Theologos village (20 minutes), and the Giola natural pool on the southeast coast.\n\nStay in Potos or Pefkari if...\n\n- You want guaranteed sunshine and calmer sea conditions\n- You like a beach base with evening café and bar life\n- You are travelling as a couple or group wanting a social summer atmosphere\n- You want easy access to Aliki, Theologos, and the south coast highlights\n- You prefer sandy beaches with full amenities\n\n💡 Area tip: Pefkari is quieter than Potos and has a beautiful pine-backed beach. If you want south coast sun with less noise, choose Pefkari over Potos.",
+          el: "Η νότια ακτή γύρω από τον Ποτό και το Πευκάρι είναι το πιο ζεστό και ηλιόλουστο μέρος του νησιού. Δύο μακριές αμμώδεις παραλίες. Ο Ποτός έχει την πιο ανεπτυγμένη νυχτερινή ζωή εκτός Λιμένα.\n\nΜείνε εδώ αν... θες σίγουρη ηλιοφάνεια, σου αρέσει βάση με βραδινή ζωή, ταξιδεύεις ως ζευγάρι ή παρέα."
+        }
+      },
+      {
+        title: { en: "Skala Prinos — West Coast Calm, Sunsets & Local Character", el: "Σκάλα Πρίνου" },
+        content: {
+          en: "Skala Prinos is the island's second ferry port — a working harbour town with a different energy from the east coast resorts. The accommodation is simple, the restaurants serve local rather than tourist food, and the sunsets across to the mainland coast of Kavala and Eastern Macedonia are among the finest on the island.\n\nThe west coast is consistently quieter than the east and south. The sea here tends to be calmer. The landscape — forest meeting sea, views to the mainland hills across the water — has a particular beauty that photographers and slow travellers appreciate.\n\nStay in Skala Prinos if...\n\n- You want a working harbour atmosphere and authentic local character\n- You prioritise sunsets over sunrise beaches\n- You want easy ferry access (second connection to Kavala)\n- You prefer a quiet base with minimal tourist infrastructure\n- You're road-tripping the circuit and want a west coast overnight\n\n💡 Area tip: Drive north from Skala Prinos along the coast road toward Skala Sotiros in the late afternoon. The light on the water and the mainland hills at this hour is the kind of thing you only find on the west side.",
+          el: "Η Σκάλα Πρίνου είναι το δεύτερο λιμάνι του νησιού. Απλή διαμονή, τοπικό φαγητό, υπέροχα ηλιοβασιλέματα.\n\nΜείνε εδώ αν... θες αυθεντική ατμόσφαιρα λιμανιού, προτεραιότητα στα ηλιοβασιλέματα, ήσυχη βάση."
+        }
+      },
+      {
+        title: { en: "Limenaria — The Island's Second Town, Southern Base", el: "Λιμενάρια" },
+        content: {
+          en: "Limenaria is the second largest settlement on the island — a proper town with its own square, market, services, and seafront promenade. It lacks the ancient layers of Limenas but has a genuine everyday character that more resort-focused areas don't offer.\n\nThe area is a practical and pleasant base for exploring the south coast, with Potos and Aliki within easy reach. The old German mining company mansion (Palataki) on the hill above the town is a curious and photogenic historical remnant from the early 20th century.\n\nStay in Limenaria if...\n\n- You want a town base on the south coast with local services\n- You prefer urban texture over resort or village atmosphere\n- You want easy access to the south and southwest coast beaches\n- You are travelling with older children or prefer a base with shops and amenities",
+          el: "Τα Λιμενάρια είναι ο δεύτερος μεγαλύτερος οικισμός. Μια κανονική πόλη με πλατεία, αγορά και παραλιακό πεζόδρομο.\n\nΜείνε εδώ αν... θες βάση πόλης στη νότια ακτή, προτιμάς αστική υφή, θες εύκολη πρόσβαση στις νότιες παραλίες."
+        }
+      }
+    ],
+    faq: [
+      {
+        q: { en: "Which area is best for first-time visitors?", el: "Ποια περιοχή είναι καλύτερη για πρώτη επίσκεψη;" },
+        a: { en: "Limenas — history, harbour, ancient sites, the widest choice of restaurants and ferry convenience.", el: "Λιμένα — ιστορία, λιμάνι, αρχαία αγορά, ευρύτερη ποικιλία εστιατορίων." }
+      },
+      {
+        q: { en: "Which area is best for families with children?", el: "Ποια περιοχή είναι καλύτερη για οικογένειες;" },
+        a: { en: "Golden Beach (Chrysi Ammoudia) — 1.5km of shallow, calm water and the widest choice of family-friendly accommodation.", el: "Χρυσή Αμμουδιά — 1.5χλμ. ρηχά νερά και οικογενειακά καταλύματα." }
+      },
+      {
+        q: { en: "Which area is best for couples?", el: "Ποια περιοχή είναι καλύτερη για ζευγάρια;" },
+        a: { en: "Limenas for atmosphere and dining. Skala Rachoni for quiet and pine-shaded seclusion.", el: "Λιμένα για ατμόσφαιρα και φαγητό. Σκάλα Ραχωνίου για ησυχία." }
+      },
+      {
+        q: { en: "Which area is best for peace and quiet?", el: "Ποια περιοχή είναι καλύτερη για ησυχία;" },
+        a: { en: "Skala Rachoni or Skala Prinos — both offer a completely different, quieter pace with minimal tourist infrastructure.", el: "Σκάλα Ραχωνίου ή Σκάλα Πρίνου — και οι δύο προσφέρουν ήρεμο ρυθμό." }
+      },
+      {
+        q: { en: "Which area has the best beach?", el: "Ποια περιοχή έχει την καλύτερη παραλία;" },
+        a: { en: "Golden Beach for sand and amenities. Pefkari for a pine-backed setting. Aliki (near Potos) for atmosphere with ancient ruins.", el: "Χρυσή Αμμουδιά για άμμο. Πευκάρι για πεύκα. Αλυκή για ατμόσφαιρα." }
+      },
+      {
+        q: { en: "Do I need a car in Thassos?", el: "Χρειάζομαι αυτοκίνητο στη Θάσο;" },
+        a: { en: "Strongly recommended. The island is large and the best beaches, mountain villages, and sunset spots are spread out. Limenas is walkable but everywhere else needs wheels.", el: "Συνιστάται. Το νησί είναι μεγάλο. Η Λιμένα είναι βατή, αλλά αλλού χρειάζεστε μεταφορικό." }
+      },
+      {
+        q: { en: "Which area is best for south coast sun?", el: "Ποια περιοχή είναι καλύτερη για ήλιο στη νότια ακτή;" },
+        a: { en: "Potos or Pefkari — sheltered from northern winds, warmer sea, and the most consistently sunny conditions on the island.", el: "Ποτός ή Πευκάρι — προστατευμένα από βόρειους ανέμους, ζεστή θάλασσα." }
+      }
+    ],
+    seo: {
+      title: {
+        en: "Where to Stay in Thassos — Best Areas, Beaches & Hotels Guide | GoGreeceNow",
+        el: "Πού να Μείνεις στη Θάσο — Καλύτερες Περιοχές, Παραλίες & Ξενοδοχεία | GoGreeceNow"
+      },
+      description: {
+        en: "Find the best area to stay in Thassos: Limenas for history and nightlife, Golden Beach for families, Potos for the south coast, or Skala Rachoni for quiet pine-side escapes. A complete Thassos hotel area guide.",
+        el: "Βρες την καλύτερη περιοχή για διαμονή στη Θάσο: Λιμένα για ιστορία, Χρυσή Αμμουδιά για οικογένειες, Ποτό για νότια ακτή ή Σκάλα Ραχωνίου για ήσυχες διακοπές. Πλήρης οδηγός διαμονής."
+      }
+    }
   }
 ];
 

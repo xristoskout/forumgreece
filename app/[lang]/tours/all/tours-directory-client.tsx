@@ -113,6 +113,28 @@ const regions = [
     highlights: { en: ["Food tours", "Meteora day trips", "Halkidiki beaches"], el: ["Food tours", "Εκδρομές Μετεώρων", "Χαλκιδική"] },
   },
   {
+    key: "Skiathos",
+    label: { en: "Skiathos", el: "Σκιάθος" },
+    emoji: "🌲",
+    image: "/images/skiathos.webp",
+    description: {
+      en: "Pine-scented beaches and vibrant nightlife. Famous for Koukounaries, Lalaria, and the charming Skiathos Town.",
+      el: "Πετυχημένος συνδυασμός πευκόφυτων παραλιών και έντονης νυχτερινής ζωής. Διάσημο για Κουκουναριές, Λαλάρια και τη γραφική Χώρα.",
+    },
+    highlights: { en: ["Koukounaries Beach", "Lalaria Beach", "Skiathos Town"], el: ["Κουκουναριές", "Λαλάρια", "Χώρα Σκιάθου"] },
+  },
+  {
+    key: "Thassos",
+    label: { en: "Thassos", el: "Θάσος" },
+    emoji: "🌲",
+    image: "/images/thassos.webp",
+    description: {
+      en: "Greece's greenest island. Marble beaches, pine forests, mountain villages and the ancient agora of Limenas.",
+      el: "Το πιο πράσινο νησί της Ελλάδας. Μαρμάρινες παραλίες, πευκοδάση, ορεινά χωριά και η αρχαία αγορά του Λιμένα.",
+    },
+    highlights: { en: ["Marble beaches", "Giola Lagoon", "Mountain villages"], el: ["Μαρμάρινες παραλίες", "Γκιόλα", "Ορεινά χωριά"] },
+  },
+  {
     key: "Nafplio",
     label: { en: "Nafplio", el: "Ναύπλιο" },
     emoji: "🏛️",

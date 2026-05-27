@@ -1,0 +1,76 @@
+{
+  "id": "thassos",
+  "slug": "thassos",
+  "name": "Thassos",
+  "type": "island",
+  "coordinates": { "lat": 40.7, "lng": 24.7 },
+  "scores": {
+    "family": { "value": 8, "reason": "Sandy beaches like Golden Beach and Astris, safe roads, easy ferry access" },
+    "couples": { "value": 8, "reason": "West coast sunsets, quiet coves, mountain village tavernas" },
+    "nightlife": { "value": 4, "reason": "Some bars in Limenas and Potos, but no club scene" },
+    "food": { "value": 8, "reason": "Thassos honey, smoked meats, wild mushrooms, fresh seafood" },
+    "beaches": { "value": 9, "reason": "Marble Beach, Golden Beach, Aliki, Giola — exceptional variety" },
+    "walking": { "value": 7, "reason": "Ancient walls walk, Kazaviti path, forest trails in the interior" }
+  },
+  "content": {
+    "quick_summary": {
+      "en": "Greece's greenest island — pine forests meet marble-white beaches, mountain villages with fire-walking rituals, and an ancient agora in the centre of the capital.",
+      "el": "Το πιο πράσινο νησί της Ελλάδας — πευκοδάση συναντούν μαρμάρινες παραλίες, ορεινά χωριά με έθιμο αναστενάριων, και αρχαία αγορά στο κέντρο της πρωτεύουσας."
+    },
+    "pros": [
+      "Exceptional water clarity — marble substrate creates extraordinary colours",
+      "Varied beaches — from white marble coves to long golden sands",
+      "Mountain villages with genuine character and excellent food",
+      "Ancient history embedded in the capital — agora, theatre, walls",
+      "Accessible from Kavala — under 1 hour ferry",
+      "Good road infrastructure — 95km coastal circuit road"
+    ],
+    "cons": [
+      "Limited nightlife — not a party destination",
+      "Requires car or scooter for full exploration",
+      "Few luxury or five-star hotel options",
+      "Can feel quiet for those seeking resort-style entertainment"
+    ],
+    "insider_tips": [
+      "Take the Keramoti ferry from Thessaloniki — shorter crossing and a dramatic arrival",
+      "Eat in Theologos village at least once — the lamb and smoked meats are outstanding",
+      "Visit the ancient agora at 8am before the heat and crowds",
+      "Giola lagoon is best before 9am or after 6pm in summer",
+      "Drive the 95km coastal circuit over two days, stopping at every beach and village",
+      "Walk the path between Megalo and Mikro Kazaviti — 20 minutes through beautiful forest"
+    ],
+    "mistakes_to_avoid": [
+      "Not renting a car — you will miss the west coast and mountain villages",
+      "Staying only on the east coast — the west coast sunsets are essential",
+      "Skipping Theologos and the mountain villages",
+      "Expecting a party island — Thassos is relaxed and family-oriented",
+      "Not trying Thassos pine honey before leaving"
+    ]
+  },
+  "pricing_base": {
+    "budget_daily": 45,
+    "mid_daily": 80,
+    "luxury_daily": 190
+  },
+  "seasonality": {
+    "january": { "temp": 8, "price_multiplier": 0.5 },
+    "february": { "temp": 9, "price_multiplier": 0.5 },
+    "march": { "temp": 12, "price_multiplier": 0.6 },
+    "april": { "temp": 16, "price_multiplier": 0.7 },
+    "may": { "temp": 21, "price_multiplier": 0.9 },
+    "june": { "temp": 26, "price_multiplier": 1.1 },
+    "july": { "temp": 29, "price_multiplier": 1.3 },
+    "august": { "temp": 29, "price_multiplier": 1.4 },
+    "september": { "temp": 25, "price_multiplier": 1.1 },
+    "october": { "temp": 19, "price_multiplier": 0.8 },
+    "november": { "temp": 13, "price_multiplier": 0.6 },
+    "december": { "temp": 9, "price_multiplier": 0.5 }
+  },
+  "image": "/images/thassos.webp",
+  "guideLinks": [
+    {
+      "href": "/hotels/thassos",
+      "label": { "en": "Where to Stay in Thassos", "el": "Πού να μείνεις στη Θάσο" }
+    }
+  ]
+}

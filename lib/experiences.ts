@@ -1313,4 +1313,6 @@ export const VIATOR_WIDGET_MAPPING: Record<string, string> = {
   "Monemvasia": "W-d745ebb5-1804-42d6-b100-1daabbc937f4",
   "Parga": "W-51f7e778-3ad1-4730-a549-1b278e89cb1d",
   "Delphi": "W-32985508-a65b-4c51-b0f7-da2d07cf791d",
+  "Skiathos": "W-1ac32b71-951f-4218-a965-6665da31db36",
+  "Thassos": "W-cc208ed2-04dc-4148-8504-5147f9936bdb",
 };

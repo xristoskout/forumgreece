@@ -6885,5 +6885,235 @@ export const destinationSections: Record<string, DestinationSection[]> = {
         }
       ]
     }
+  ],
+  thassos: [
+    {
+      title: { en: "Why Visit Thassos", el: "Γιατί να Επισκεφθείς τη Θάσο" },
+      layout: "numbered",
+      items: [
+        {
+          title: { en: "Greece's greenest island — and a real landscape contrast", el: "Το πιο πράσινο νησί της Ελλάδας" },
+          text: { en: "Thassos is covered by dense pine, oak, and chestnut forest across most of its interior. The coast alternates between marble-white cliffs, sandy coves, and pebble bays framed by pines growing directly to the water. This combination — dark green above, marble white and turquoise below — creates a visual atmosphere found nowhere else in Greece.", el: "Η Θάσος καλύπτεται από πυκνό πευκοδάσος, βελανιδιές και καστανιές στο μεγαλύτερο μέρος του εσωτερικού της. Η ακτή εναλλάσσεται μεταξύ μαρμάρινων γκρεμών, αμμωδών όρμων και βοτσαλωτών κόλπων." }
+        },
+        {
+          title: { en: "Marble Beach and the most distinctive beaches in the North Aegean", el: "Οι πιο χαρακτηριστικές παραλίες στο Βόρειο Αιγαίο" },
+          text: { en: "Several beaches on Thassos are unlike anything elsewhere in Greece. The white marble formations of Skouries (Marble Beach), the long arc of Golden Beach, the isolated pebble coves on the western coast — the variety is exceptional and the water clarity is extraordinary.", el: "Αρκετές παραλίες της Θάσου είναι μοναδικές στην Ελλάδα. Οι λευκές μαρμάρινες δημιουργίες των Σκουριών, το τόξο της Χρυσής Αμμουδιάς, οι απομονωμένοι βοτσαλωτοί όρμοι της δυτικής ακτής." }
+        },
+        {
+          title: { en: "Ancient history embedded in everyday life", el: "Αρχαία ιστορία ενταγμένη στην καθημερινή ζωή" },
+          text: { en: "The ancient agora of Thassos sits in the middle of Limenas, the island's capital. The ancient theatre hosts performances in summer. Ancient walls still trace the hillside above town. History here is not behind a fence — it is woven into the fabric of the place.", el: "Η αρχαία αγορά της Θάσου βρίσκεται στη μέση της Λιμένα. Το αρχαίο θέατρο φιλοξενεί παραστάσεις το καλοκαίρι. Τα αρχαία τείχη ακολουθούν ακόμα την πλαγιά πάνω από την πόλη." }
+        },
+        {
+          title: { en: "Mountain villages that feel genuinely remote", el: "Ορεινά χωριά που νιώθεις πραγματικά απομακρυσμένος" },
+          text: { en: "Theologos, Kastro, Megalo Kazaviti — these villages sit deep in the island's forested interior and have the character of mountain settlements far from the coast. Stone houses, cobbled squares, wood smoke. Excellent traditional food.", el: "Θεολόγος, Κάστρο, Μεγάλο Καζαβίτι — αυτά τα χωριά βρίσκονται βαθιά στο δασωμένο εσωτερικό του νησιού. Πέτρινα σπίτια, λιθόστρωτες πλατείες, ξύλο καυσόξυλων. Εξαιρετικό παραδοσιακό φαγητό." }
+        },
+        {
+          title: { en: "A well-organised island without losing its soul", el: "Ένα καλά οργανωμένο νησί χωρίς να χάνει την ψυχή του" },
+          text: { en: "Thassos has good infrastructure — the coastal road circles the entire island, ferries run frequently, accommodation ranges from simple rooms to boutique hotels. But it has not been commercialised beyond recognition. The island still feels like somewhere people actually live.", el: "Η Θάσος έχει καλή υποδομή — ο παραλιακός δρόμος περιβάλλει ολόκληρο το νησί, τα πλοία εκτελούν συχνά δρομολόγια. Αλλά δεν έχει εμπορευματοποιηθεί. Το νησί ακόμα νιώθεις ότι είναι ένα μέρος όπου άνθρωποι ζουν πραγματικά." }
+        }
+      ]
+    },
+    {
+      title: { en: "Best Time to Visit Thassos", el: "Καλύτερη Εποχή για Επίσκεψη" },
+      layout: "grid",
+      alert: {
+        en: "Secret: The Thassos Grand Prix — an annual off-road motorsport event through the island's mountain tracks — takes place in early autumn and creates a surprising, electric atmosphere in the island's interior villages.",
+        el: "Secret: Το Θάσος Grand Prix — μια ετήσια εκδήλωση off-road motorsport στα ορεινά μονοπάτια του νησιού — πραγματοποιείται στις αρχές του φθινοπώρου."
+      },
+      items: [
+        {
+          title: { en: "Spring (April–May)", el: "Άνοιξη (Απρίλιος–Μάιος)" },
+          text: { en: "The interior forest is intensely green, wildflowers cover the roadsides, and the island is quiet. Ideal for village exploration, hiking, and photography. The sea is cool for swimming but the weather is warm enough for everything else.", el: "Το εσωτερικό δάσος είναι έντονα πράσινο, αγριολούλουδα καλύπτουν τους δρόμους, το νησί είναι ήσυχο. Ιδανικό για εξερεύνηση χωριών και πεζοπορία." }
+        },
+        {
+          title: { en: "June", el: "Ιούνιος" },
+          text: { en: "One of the best months. The sea has warmed, the beaches are uncrowded, and the island is in full summer mode without the intensity of July and August. The light in June on the marble beaches is extraordinary.", el: "Ένας από τους καλύτερους μήνες. Η θάλασσα έχει ζεσταθεί, οι παραλίες δεν είναι γεμάτες, το νησί σε καλοκαιρινό ρυθμό χωρίς την ένταση Ιουλίου-Αυγούστου." }
+        },
+        {
+          title: { en: "July–August", el: "Ιούλιος–Αύγουστος" },
+          text: { en: "Peak season. Thassos handles summer crowds better than many Greek islands because of its size and the number of beaches. Book accommodation well in advance. The festivals season is active: the Ancient Theatre hosts performances throughout summer.", el: "Υψηλή περίοδος. Η Θάσος διαχειρίζεται τα πλήθη καλύτερα από πολλά νησιά. Κλείστε διαμονή νωρίς. Το αρχαίο θέατρο φιλοξενεί παραστάσεις όλο το καλοκαίρι." }
+        },
+        {
+          title: { en: "September", el: "Σεπτέμβριος" },
+          text: { en: "The ideal month for many travellers. Sea temperature reaches its peak, domestic crowds have thinned, and the island returns to a more personal rhythm. The chestnut harvest begins in the mountain villages.", el: "Ο ιδανικός μήνας για πολλούς ταξιδιώτες. Η θερμοκρασία της θάλασσας κορυφώνεται, τα πλήθη λιγοστεύουν. Αρχίζει η συγκομιδή κάστανου στα ορεινά χωριά." }
+        },
+        {
+          title: { en: "Autumn & Winter", el: "Φθινόπωρο & Χειμώνας" },
+          text: { en: "Thassos is one of the few Greek islands that functions meaningfully off-season. The forest is at its most dramatic in October and November. Theologos and the mountain villages are excellent in autumn. Winter visits are quiet but rewarding.", el: "Η Θάσος είναι από τα λίγα νησιά που λειτουργούν ουσιαστικά εκτός σεζόν. Το δάσος είναι εντυπωσιακό τον Οκτώβριο και Νοέμβριο." }
+        }
+      ]
+    },
+    {
+      title: { en: "How to Get to Thassos", el: "Πώς να Φτάσεις στη Θάσο" },
+      layout: "grid",
+      items: [
+        {
+          title: { en: "By ferry from Kavala", el: "Ακτοπλοϊκώς από Καβάλα" },
+          text: { en: "The main and most convenient connection. The ferry from Kavala harbour to Limenas takes approximately 35–40 minutes and runs frequently throughout the day, year-round.", el: "Η κύρια και πιο βολική σύνδεση. Το πλοίο από το λιμάνι της Καβάλας προς τη Λιμένα διαρκεί περίπου 35-40 λεπτά." }
+        },
+        {
+          title: { en: "By ferry from Keramoti", el: "Ακτοπλοϊκώς από Κεραμωτή" },
+          text: { en: "A shorter crossing — approximately 15 minutes — from the small port of Keramoti, south of Kavala. Ideal if travelling by car. Keramoti is the preferred crossing point for drivers coming from Thessaloniki.", el: "Μικρότερη διάρκεια — περίπου 15 λεπτά — από το μικρό λιμάνι της Κεραμωτής. Ιδανικό αν ταξιδεύετε με αυτοκίνητο." }
+        },
+        {
+          title: { en: "By air to Kavala", el: "Αεροπορικώς στην Καβάλα" },
+          text: { en: "Kavala International Airport 'Megas Alexandros' (KVA) serves Kavala with domestic and some European connections. From the airport to Keramoti is approximately 30 minutes by car.", el: "Ο Διεθνής Αερολιμένας Καβάλας 'Μέγας Αλέξανδρος' (KVA) εξυπηρετεί με εσωτερικές και ευρωπαϊκές πτήσεις." }
+        },
+        {
+          title: { en: "By road from Thessaloniki", el: "Οδικώς από Θεσσαλονίκη" },
+          text: { en: "Approximately 2.5 hours to Kavala, then the ferry. A comfortable day's journey. The Thessaloniki–Kavala stretch of the Via Egnatia motorway is excellent.", el: "Περίπου 2.5 ώρες στην Καβάλα, μετά το πλοίο. Το τμήμα Θεσσαλονίκη-Καβάλα της Εγνατίας Οδού είναι εξαιρετικό." }
+        }
+      ]
+    },
+    {
+      title: { en: "Top Attractions & Experiences in Thassos", el: "Κορυφαία Αξιοθέατα & Εμπειρίες" },
+      layout: "numbered",
+      items: [
+        {
+          title: { en: "Ancient Agora & Archaeological Site of Limenas", el: "Αρχαία Αγορά & Αρχαιολογικός Χώρος Λιμένα" },
+          text: { en: "The ancient agora of Thassos is one of the most accessible and evocative in Greece — not a remote site requiring a separate excursion, but embedded in the fabric of the town. Temples of Heracles, Dionysus, and Poseidon, a well-preserved passageway, and the remains of public buildings span centuries of city life. Secret: Visit in the early morning before the heat. The light on the marble columns at 8am is exceptional.", el: "Η αρχαία αγορά της Θάσου είναι από τις πιο προσιτές στην Ελλάδα. Ναοί του Ηρακλή, του Διονύσου και του Ποσειδώνα. Μυστικό: Επισκεφθείτε νωρίς το πρωί πριν τη ζέστη." }
+        },
+        {
+          title: { en: "The Ancient Theatre", el: "Αρχαίο Θέατρο" },
+          text: { en: "Built in the 4th century BC and restored for modern use, the ancient theatre of Thassos sits on the hillside above Limenas with views over the sea to the mainland coast. Summer performances — theatre, music, and dance — take place here in July and August.", el: "Χτισμένο τον 4ο αιώνα π.Χ. και αποκατεστημένο. Το αρχαίο θέατρο βρίσκεται στην πλαγιά πάνω από τη Λιμένα με θέα στη θάλασσα." }
+        },
+        {
+          title: { en: "The Ancient Walls & Acropolis Walk", el: "Αρχαία Τείχη & Περίπατος στην Ακρόπολη" },
+          text: { en: "A circuit of the ancient fortification walls above Limenas leads to the acropolis with its sanctuary of Athena, the rock-cut relief of Pan (2nd century BC), and panoramic views over the island and mainland. This is one of the finest short walks in the Greek islands and almost no one does it.", el: "Μια διαδρομή γύρω από τα αρχαία τείχη πάνω από τη Λιμένα οδηγεί στην ακρόπολη. Μία από τις ωραιότερες μικρές πεζοπορίες στα ελληνικά νησιά." }
+        },
+        {
+          title: { en: "Theologos Village", el: "Θεολόγος" },
+          text: { en: "The former capital of the island during the Ottoman period, Theologos sits deep in the interior at 400m altitude. One of the best-preserved traditional villages in northern Greece — stone houses with wooden balconies, a central square with excellent traditional tavernas. Secret: Eat at the village tavernas rather than on the coast. The local lamb, smoked sausages, and mushroom dishes are among the best meals on the island.", el: "Η πρώην πρωτεύουσα του νησιού, χτισμένη στα 400μ. Ένα από τα καλύτερα διατηρημένα παραδοσιακά χωριά. Μυστικό: Φάτε στις ταβέρνες του χωριού και όχι στην ακτή." }
+        },
+        {
+          title: { en: "Kastro Village", el: "Κάστρο" },
+          text: { en: "The highest and most remote village on the island, at over 500m above sea level. Largely abandoned but partially restored, with views in every direction — sea to the east and west, mountain forest in all other directions.", el: "Το υψηλότερο και πιο απομακρυσμένο χωριό, πάνω από 500μ. Σε μεγάλο βαθμό εγκαταλελειμμένο αλλά μερικώς αναστηλωμένο." }
+        },
+        {
+          title: { en: "Megalo & Mikro Kazaviti", el: "Μεγάλο & Μικρό Καζαβίτι" },
+          text: { en: "Two small, verdant villages in the forested interior, connected by a path through chestnut and oak trees. Megalo Kazaviti is often cited as one of the most beautiful villages in Greece. Secret: Walk the path between the two villages — it takes about 20 minutes through genuinely beautiful forest.", el: "Δύο μικρά, καταπράσινα χωριά στο εσωτερικό. Το Μεγάλο Καζαβίτι θεωρείται από τα ομορφότερα χωριά. Μυστικό: Περπατήστε το μονοπάτι μεταξύ των δύο χωριών." }
+        }
+      ]
+    },
+    {
+      title: { en: "Best Beaches in Thassos", el: "Οι Καλύτερες Παραλίες στη Θάσο" },
+      layout: "list",
+      alert: {
+        en: "Secret: At Marble Beach, come at low sun — morning or late afternoon — when the light on the marble creates shadows and textures that photography cannot fully capture. At Giola, go early morning or late afternoon to avoid the queues.",
+        el: "Secret: Στη Μαρμάρινη Παραλία, ελάτε νωρίς το πρωί ή αργά το απόγευμα. Στη Γκιόλα, πηγαίνετε νωρίς το πρωί ή μετά τις 6μμ."
+      },
+      items: [
+        {
+          title: { en: "Marble Beach (Skouries / Paradise Beach)", el: "Μαρμάρινη Παραλία (Σκουριές)" },
+          text: { en: "The island's most iconic beach and one of the most photographed in Greece. White marble formations sculpted by the sea create a lunar landscape of smooth stone, rock pools, and crevices. The water over white marble produces extraordinary colour — pale turquoise to deep blue. No umbrellas or facilities — raw and genuine.", el: "Η πιο εμβληματική παραλία του νησιού. Λευκές μαρμάρινες δημιουργίες σχηματίζουν ένα σεληνιακό τοπίο. Χωρίς ομπρέλες ή υποδομές." }
+        },
+        {
+          title: { en: "Golden Beach (Chrysi Ammoudia)", el: "Χρυσή Αμμουδιά" },
+          text: { en: "The longest and most organised beach on the island — a 1.5km arc of fine golden sand on the east coast. Full amenities, beach bars, watersports. Excellent for families. The adjacent village of Skala Panagia has good fish tavernas.", el: "Η μεγαλύτερη και πιο οργανωμένη παραλία — τόξο 1.5χλμ. χρυσής άμμου. Ιδανική για οικογένειες." }
+        },
+        {
+          title: { en: "Aliki Beach", el: "Αλυκή" },
+          text: { en: "A double-sided beach on the southern tip, with a headland between two sandy coves. An ancient Thasian sanctuary and marble quarry site sits directly behind the beach — you can swim and then walk 50 metres to ancient ruins. Secret: The southern cove is calmer and less visited.", el: "Διπλή παραλία στο νότιο άκρο. Αρχαίο ιερό και μαρμάρινο λατομείο πίσω από την παραλία. Μυστικό: Ο νότιος όρμος είναι πιο ήσυχος." }
+        },
+        {
+          title: { en: "Paradise Beach (Pahis)", el: "Παραδείσου (Πάχης)" },
+          text: { en: "A long, narrow pebble-and-sand beach backed by pine trees on the west coast. The setting — trees to the water's edge, clear water, a small beach bar — is exactly what people imagine when they think of a Greek island beach.", el: "Μακριά, στενή παραλία με βότσαλο και άμμο, με πεύκα στη δυτική ακτή." }
+        },
+        {
+          title: { en: "Giola (Natural Lagoon)", el: "Γκιόλα (Φυσική Λιμνοθάλασσα)" },
+          text: { en: "A natural rock pool carved into marble cliff above the sea, connected to the Aegean by a subterranean channel. Swimming in Giola is one of the more memorable experiences the island offers. Secret: Wear shoes — the marble approach path is slippery.", el: "Φυσική πισίνα σε μαρμάρινο γκρεμό. Μυστικό: Φορέστε παπούτσια — η μαρμάρινη πρόσβαση είναι ολισθηρή." }
+        },
+        {
+          title: { en: "Astris & Potos Beaches", el: "Παραλίες Αστρίδας & Ποτού" },
+          text: { en: "Long sandy beaches on the south coast. Well organised, good tavernas. Slightly warmer water than the north and east coasts.", el: "Μακριές αμμώδεις παραλίες στη νότια ακτή. Οργανωμένες, καλές ταβέρνες." }
+        }
+      ]
+    },
+    {
+      title: { en: "Food in Thassos — What to Eat & Where", el: "Φαγητό στη Θάσο — Τι να Φας & Πού" },
+      layout: "list",
+      items: [
+        {
+          title: { en: "Thassos Honey", el: "Μέλι Θάσου" },
+          text: { en: "Among the finest in Greece. The island's forest — pine, thyme, chestnut, heather — produces exceptional monofloral honeys. Pine honey (pitsimelina) is particularly distinctive: dark, resinous, slightly savoury.", el: "Από τα καλύτερα στην Ελλάδα. Το πευκόμελο είναι ιδιαίτερα χαρακτηριστικό: σκούρο, ρετσινάτο, ελαφρώς αλμυρό." }
+        },
+        {
+          title: { en: "Smoked and Cured Meats", el: "Αλλαντικά & Καπνιστά Κρέατα" },
+          text: { en: "The mountain villages have a tradition of smoked sausage (loukanika), smoked pork (hiromeri), and cured meats using local herbs and chestnut wood smoke. Village tavernas serve these with tsipouro.", el: "Τα ορεινά χωριά έχουν παράδοση σε λουκάνικα, χοιρομέρι και αλλαντικά. Σερβίρονται με τσίπουρο." }
+        },
+        {
+          title: { en: "Wild Mushrooms", el: "Άγρια Μανιτάρια" },
+          text: { en: "In autumn, the forests of Thassos yield exceptional wild mushrooms. Village tavernas serve them fried in olive oil with garlic, or in stews with mountain herbs.", el: "Το φθινόπωρο, τα δάση της Θάσου δίνουν εξαιρετικά μανιτάρια. Τηγανητά στο ελαιόλαδο με σκόρδο." }
+        },
+        {
+          title: { en: "Fresh Fish & Seafood", el: "Φρέσκο Ψάρι & Θαλασσινά" },
+          text: { en: "The fish tavernas along Limenas harbour and in the fishing villages of the west coast serve daily-caught fish from the North Aegean. Excellent sardines, sea bream, red mullet, and octopus.", el: "Οι ψαροταβέρνες στο λιμάνι της Λιμένα σερβίρουν φρέσκο ψάρι. Εξαιρετικές σαρδέλες, τσιπούρα, μπαρμπούνια." }
+        },
+        {
+          title: { en: "Where to eat", el: "Πού να φας" },
+          text: { en: "Limenas harbour for fish and seafood. Theologos village square for traditional mountain food. Megalo Kazaviti for an authentic kafeneion experience. Aliki area for small fish tavernas behind the beach.", el: "Λιμάνι Λιμένα για ψάρι. Πλατεία Θεολόγου για παραδοσιακό φαγητό. Μεγάλο Καζαβίτι για αυθεντικό καφενείο." }
+        }
+      ]
+    },
+    {
+      title: { en: "Practical Tips", el: "Πρακτικές Συμβουλές" },
+      layout: "list",
+      items: [
+        {
+          title: { en: "Rent a car or scooter", el: "Νοικιάστε αυτοκίνητο ή σκούτερ" },
+          text: { en: "The circuit road rewards independent exploration. Many of the best beaches and all of the mountain villages require wheels.", el: "Ο κυκλικός δρόμος ανταμείβει την ανεξάρτητη εξερεύνηση." }
+        },
+        {
+          title: { en: "Drive the 95km coastal circuit", el: "Οδηγήστε την 95χλμ. παράκτια διαδρομή" },
+          text: { en: "The island is fully encircled by road. Driving the entire 95km coastal circuit, stopping when something catches your eye, is one of the best ways to experience Thassos.", el: "Οδηγήστε ολόκληρη τη διαδρομή 95χλμ., σταματώντας όπου σας τραβήξει κάτι." }
+        },
+        {
+          title: { en: "Stay at least 4 nights", el: "Μείνετε τουλάχιστον 4 βράδια" },
+          text: { en: "The island is large and varied enough to justify a week. Less than 3 nights feels rushed.", el: "Το νησί είναι αρκετά μεγάλο για να δικαιολογήσει μία εβδομάδα." }
+        },
+        {
+          title: { en: "Eat in the mountain villages at least once", el: "Φάτε στα ορεινά χωριά τουλάχιστον μία φορά" },
+          text: { en: "Coastal tavernas are good — village tavernas are better. Theologos for the full experience.", el: "Οι παραλιακές ταβέρνες είναι καλές — οι ταβέρνες των χωριών είναι καλύτερες." }
+        },
+        {
+          title: { en: "Book peak-season accommodation early", el: "Κλείστε νωρίς για υψηλή περίοδο" },
+          text: { en: "July and August are popular with domestic Greek visitors. Good small hotels fill quickly.", el: "Ιούλιος και Αύγουστος είναι δημοφιλείς. Τα καλά ξενοδοχεία γεμίζουν γρήγορα." }
+        }
+      ]
+    },
+    {
+      title: { en: "FAQ — Thassos Essentials", el: "Συχνές Ερωτήσεις" },
+      layout: "faq",
+      items: [
+        {
+          title: { en: "Is Thassos worth visiting?", el: "Αξίζει να επισκεφθώ τη Θάσο;" },
+          text: { en: "Yes — Thassos is one of the most complete island destinations in northern Greece, combining exceptional beaches, genuine village life, serious ancient history, and outstanding local food.", el: "Ναι — η Θάσος είναι ένας από τους πιο ολοκληρωμένους νησιωτικούς προορισμούς στη βόρεια Ελλάδα." }
+        },
+        {
+          title: { en: "What is Thassos best known for?", el: "Για τι είναι γνωστή η Θάσος;" },
+          text: { en: "The marble beaches (particularly Skouries), the dense pine forest, Theologos village, the ancient agora, Giola natural pool, and Thassos honey.", el: "Τις μαρμάρινες παραλίες, το πευκοδάσος, τον Θεολόγο, την αρχαία αγορά, τη Γκιόλα και το μέλι." }
+        },
+        {
+          title: { en: "How many days do you need in Thassos?", el: "Πόσες μέρες χρειάζονται;" },
+          text: { en: "4–6 days covers the main beaches, one or two mountain villages, and the ancient sites. A week is ideal for a complete experience.", el: "4-6 μέρες καλύπτουν τα βασικά. Μία εβδομάδα είναι ιδανική." }
+        },
+        {
+          title: { en: "Is Thassos good for families?", el: "Είναι η Θάσος κατάλληλη για οικογένειες;" },
+          text: { en: "Yes. Long, sandy beaches like Golden Beach and Astris are excellent for children. The island is safe, well-organised, and easy to navigate by car.", el: "Ναι. Οι μακριές αμμώδεις παραλίες είναι ιδανικές για παιδιά." }
+        },
+        {
+          title: { en: "How do I get to Thassos from Thessaloniki?", el: "Πώς πάω στη Θάσο από Θεσσαλονίκη;" },
+          text: { en: "Drive to Kavala (approximately 2.5 hours), then take the ferry from Kavala or Keramoti. Total journey time approximately 3–3.5 hours.", el: "Οδηγήστε στην Καβάλα (2.5 ώρες), μετά το πλοίο. Σύνολο περίπου 3-3.5 ώρες." }
+        },
+        {
+          title: { en: "Do you need a car in Thassos?", el: "Χρειάζεστε αυτοκίνητο;" },
+          text: { en: "Strongly recommended. The island rewards spontaneous exploration, and many of the best beaches and all mountain villages are not served by regular buses.", el: "Συνιστάται ανεπιφύλακτα. Πολλές παραλίες και όλα τα ορεινά χωριά δεν εξυπηρετούνται από λεωφορεία." }
+        },
+        {
+          title: { en: "What is the best beach in Thassos?", el: "Ποια είναι η καλύτερη παραλία;" },
+          text: { en: "For visual impact: Marble Beach (Skouries). For swimming with amenities: Golden Beach. For atmosphere and setting: Aliki. For an unusual experience: Giola.", el: "Για εντύπωση: Σκουριές. Για άνεση: Χρυσή Αμμουδιά. Για ατμόσφαιρα: Αλυκή. Για μοναδική εμπειρία: Γκιόλα." }
+        }
+      ]
+    }
   ]
 };

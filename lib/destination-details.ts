@@ -696,6 +696,52 @@ export const destinationDetails: Record<string, DestinationDetail> = {
       ]
     }
   },
+  thassos: {
+    overview: {
+      en: "Thassos is the kind of island that makes people come back. Not for one dramatic feature, but for everything together: the way pine trees grow to the edge of the sea, the white marble beaches that glow from the water, the mountain villages with kafenia that haven't changed in decades, the ancient ruins embedded into a functioning modern town. Greece's northernmost island is also, by most measures, its greenest — and that contrast between emerald mountain and Aegean blue is what defines it. The island sits close to the coast of Kavala and Eastern Macedonia, which gives it a character that feels different from the southern Aegean. The water here is exceptional — consistently rated among the clearest in the Mediterranean, owing to the marble substrate along much of the coastline. Thassos is also, significantly, an accessible island. The ferry from Kavala takes under an hour.",
+      el: "Η Θάσος είναι το είδος του νησιού που κάνει τους ανθρώπους να επιστρέφουν. Όχι για ένα εντυπωσιακό χαρακτηριστικό, αλλά για όλα μαζί: ο τρόπος που τα πεύκα φτάνουν ως την άκρη της θάλασσας, οι λευκές μαρμάρινες παραλίες, τα ορεινά χωριά με καφενεία που δεν έχουν αλλάξει εδώ και δεκαετίες, τα αρχαία ερείπια ενταγμένα σε μια ζωντανή σύγχρονη πόλη. Το βορειότερο νησί της Ελλάδας είναι και το πιο πράσινο. Το νησί βρίσκεται κοντά στην ακτή της Καβάλας και της Ανατολικής Μακεδονίας. Το νερό εδώ είναι εξαιρετικό — σταθερά μεταξύ των πιο καθαρών στη Μεσόγειο. Το πλοίο από την Καβάλα διαρκεί λιγότερο από μία ώρα.",
+    },
+    pageIncludes: {
+      en: [
+        "Why visit Thassos — Greece's greenest island",
+        "Best time to go — month by month",
+        "Top beaches: Marble Beach, Golden Beach, Aliki, Giola",
+        "Mountain villages: Theologos, Kastro, Kazaviti",
+        "Ancient Thassos — agora, theatre, walls",
+        "Local food: honey, smoked meats, mushrooms",
+        "Getting there, getting around & practical tips",
+        "FAQ — everything else you need to know",
+      ],
+      el: [
+        "Γιατί να επισκεφθείς τη Θάσο",
+        "Καλύτερη εποχή για επίσκεψη",
+        "Οι καλύτερες παραλίες: Μαρμάρινη, Χρυσή Αμμουδιά, Αλυκή, Γκιόλα",
+        "Ορεινά χωριά: Θεολόγος, Κάστρο, Καζαβίτι",
+        "Αρχαία Θάσος — αγορά, θέατρο, τείχη",
+        "Τοπικό φαγητό: μέλι, αλλαντικά, μανιτάρια",
+        "Πώς θα πας & θα μετακινηθείς",
+        "Συχνές Ερωτήσεις",
+      ],
+    },
+    perfectFor: {
+      en: [
+        "Beach lovers seeking variety and clarity",
+        "Families wanting space and organised shores",
+        "History and archaeology enthusiasts",
+        "Food and nature travellers (honey, mushrooms, village food)",
+        "Couples seeking a quieter, more forested island",
+        "Hikers and active travellers",
+      ],
+      el: [
+        "Λάτρεις των παραλιών που θέλουν ποικιλία",
+        "Οικογένειες που θέλουν χώρο και οργανωμένες ακτές",
+        "Λάτρεις της ιστορίας και αρχαιολογίας",
+        "Ταξιδιώτες γαστρονομίας και φύσης",
+        "Ζευγάρια που αναζητούν ένα πιο ήσυχο, δασωμένο νησί",
+        "Πεζοπόρους και δραστήριους ταξιδιώτες",
+      ],
+    },
+  },
   skiathos: {
     overview: {
       en: "Skiathos is the greenest island in the Aegean — a place where pine forests meet turquoise water, creating a landscape that is distinctly different from the white-washed Cyclades. With 65 beaches ranging from the pine-fringed perfection of Koukounaries to the secluded white pebbles of Lalaria, a dramatic abandoned Kastro perched on a northern cliff, and one of the most unexpectedly vibrant nightlife scenes in the Sporades, Skiathos delivers variety on a small scale. This guide covers the beaches, the history, the food, boat trips, and the practical details that make a trip here genuinely rewarding.",
