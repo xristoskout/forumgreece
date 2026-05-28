@@ -8,6 +8,7 @@ import ChatLoader from "@/components/chat-loader";
 import MediterraneanCursor from "@/components/mediterranean-cursor";
 import CookieConsent from "@/components/cookie-consent";
 import ConsentAwareScripts from "@/components/consent-aware-scripts";
+import { organizationSchema, websiteSchema, personSchema } from "@/lib/structured-data";
 
 const geistSans = Montserrat({
   variable: "--font-geist-sans",
@@ -98,6 +99,19 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} ${notoGreek.variable} ${playfair.variable} ${ebGaramond.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-[#f4f7fb] text-slate-900 relative selection:bg-purple-500/30">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                organizationSchema(),
+                websiteSchema("en"),
+                personSchema(),
+              ],
+            }).replace(/</g, "\\u003c"),
+          }}
+        />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-17ZPLMXNSF"
           strategy="afterInteractive"

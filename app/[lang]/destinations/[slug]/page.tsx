@@ -3,7 +3,8 @@ import type { Metadata } from 'next';
 import { destinations, SITE_URL } from '../../../../lib/content';
 import DestinationDetailsClient from './destination-details-client';
 import { Lang, isLang } from '../../../../lib/locale';
-import { breadcrumbSchema, touristAttractionSchema, touristDestinationSchema } from '../../../../lib/structured-data';
+import { breadcrumbSchema, touristAttractionSchema, touristDestinationSchema, articleSchema, faqPageSchema } from '../../../../lib/structured-data';
+import { destinationSections } from '../../../../lib/destination-sections';
 
 type Props = {
   params: Promise<{ lang: string; slug: string }>;
@@ -102,6 +103,26 @@ export default async function DestinationDetailsPage({ params }: Props) {
     url: canonicalUrl,
   });
 
+  const article = articleSchema({
+    headline: destination.seo?.title[lang] || destination.name,
+    description: destination.seo?.description[lang] || destination.overview[lang],
+    image: destination.image,
+    url: canonicalUrl,
+    datePublished: "2025-01-01",
+    dateModified: new Date().toISOString().split("T")[0],
+  });
+
+  const sections = destinationSections[destination.slug] || [];
+  const faqSection = sections.find((s) => s.layout === "faq");
+  const faq = faqSection?.items?.length
+    ? faqPageSchema(
+        faqSection.items.map((item: { title?: { en: string; el: string }; text: { en: string; el: string } }) => ({
+          q: item.title ? item.title[lang] : "",
+          a: item.text[lang],
+        })).filter((f: { q: string }) => f.q)
+      )
+    : null;
+
   return (
     <>
       <script
@@ -116,6 +137,16 @@ export default async function DestinationDetailsPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(touristDest) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(article) }}
+      />
+      {faq && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faq) }}
+        />
+      )}
       <DestinationDetailsClient destination={destination} lang={lang} />
     </>
   );

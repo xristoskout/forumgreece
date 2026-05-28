@@ -44,6 +44,51 @@ export function faqPageSchema(faqs: { q: string; a: string }[]) {
   };
 }
 
+export function organizationSchema() {
+  return {
+    "@type": "Organization",
+    "@id": `${SITE_URL}/#organization`,
+    name: "GoGreeceNow",
+    url: SITE_URL,
+    logo: `${SITE_URL}/images/logo.webp`,
+    sameAs: [
+      "https://www.facebook.com/gogreecenow",
+      "https://www.instagram.com/gogreecenow",
+      "https://x.com/gogreecenow",
+      "https://www.youtube.com/@gogreecenow",
+      "https://www.pinterest.com/gogreecenow",
+      "https://www.wikidata.org/entity/Q139964751",
+    ],
+  };
+}
+
+export function websiteSchema(lang: string) {
+  return {
+    "@type": "WebSite",
+    "@id": `${SITE_URL}/#website`,
+    name: "GoGreeceNow",
+    url: SITE_URL,
+    inLanguage: lang === "el" ? "el-GR" : "en-US",
+    potentialAction: {
+      "@type": "SearchAction",
+      target: `${SITE_URL}/${lang}/search?q={search_term_string}`,
+      "query-input": "required name=search_term_string",
+    },
+  };
+}
+
+export function personSchema() {
+  return {
+    "@type": "Person",
+    "@id": `${SITE_URL}/#person`,
+    name: "Christos Koutelidakis",
+    url: SITE_URL,
+    sameAs: [
+      "https://www.linkedin.com/in/xristoskout",
+    ],
+  };
+}
+
 export function touristAttractionSchema(data: {
   name: string;
   description: string;
@@ -91,6 +136,8 @@ export function articleSchema(data: {
     description: data.description,
     image: data.image,
     url: data.url,
+    author: { "@id": `${SITE_URL}/#person` },
+    publisher: { "@id": `${SITE_URL}/#organization` },
     ...(data.datePublished ? { datePublished: data.datePublished } : {}),
     ...(data.dateModified ? { dateModified: data.dateModified } : {}),
   };

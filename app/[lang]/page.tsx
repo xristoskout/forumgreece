@@ -95,25 +95,6 @@ function HomeStructuredData({ lang }: { lang: Lang }) {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Organization",
-        "@id": `${SITE_URL}/#organization`,
-        name: "GoGreeceNow",
-        url: SITE_URL,
-        logo: `${SITE_URL}/images/logo.webp`,
-      },
-      {
-        "@type": "WebSite",
-        "@id": `${SITE_URL}/#website`,
-        name: "GoGreeceNow",
-        url: SITE_URL,
-        inLanguage: lang === "el" ? "el-GR" : "en-US",
-        potentialAction: {
-          "@type": "SearchAction",
-          target: `${SITE_URL}/${lang}/search?q={search_term_string}`,
-          "query-input": "required name=search_term_string",
-        },
-      },
-      {
         "@type": "WebPage",
         "@id": `${pageUrl}/#webpage`,
         url: pageUrl,
