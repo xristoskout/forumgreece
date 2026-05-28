@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import { Montserrat, Geist_Mono, Noto_Sans, Playfair_Display, EB_Garamond } from "next/font/google";
 
 import "./globals.css";
@@ -97,6 +98,13 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} ${notoGreek.variable} ${playfair.variable} ${ebGaramond.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-[#f4f7fb] text-slate-900 relative selection:bg-purple-500/30">
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-17ZPLMXNSF"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-17ZPLMXNSF');`}
+        </Script>
         <LangManager />
         <div className="fixed inset-0 z-[-1] bg-[radial-gradient(circle_at_top_right,_rgba(120,80,255,0.15),_transparent_40%),radial-gradient(circle_at_bottom_left,_rgba(80,120,255,0.15),_transparent_40%)] pointer-events-none"></div>
         <MediterraneanCursor />
