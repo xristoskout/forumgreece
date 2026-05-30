@@ -83,6 +83,56 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/:lang(en|el)/tours/patras',
+        destination: '/:lang/destinations/patras',
+        permanent: true,
+      },
+      {
+        source: '/tours/patras',
+        destination: '/en/destinations/patras',
+        permanent: true,
+      },
+      {
+        source: '/:lang(en|el)/collections/island-escapes',
+        destination: '/:lang/collections/greek-islands',
+        permanent: true,
+      },
+      {
+        source: '/collections/island-escapes',
+        destination: '/en/collections/greek-islands',
+        permanent: true,
+      },
+      {
+        source: '/:lang(en|el)/collections/practical-greece',
+        destination: '/:lang/collections/greece-travel-planning',
+        permanent: true,
+      },
+      {
+        source: '/collections/practical-greece',
+        destination: '/en/collections/greece-travel-planning',
+        permanent: true,
+      },
+      {
+        source: '/:lang(en|el)/collections/tours-and-experiences',
+        destination: '/:lang/collections/greece-tours-and-experiences',
+        permanent: true,
+      },
+      {
+        source: '/collections/tours-and-experiences',
+        destination: '/en/collections/greece-tours-and-experiences',
+        permanent: true,
+      },
+      {
+        source: '/:lang(en|el)/collections/taste-local-greece',
+        destination: '/:lang/collections/greece-food-and-drink',
+        permanent: true,
+      },
+      {
+        source: '/collections/taste-local-greece',
+        destination: '/en/collections/greece-food-and-drink',
+        permanent: true,
+      },
+      {
         source: '/:first(en|el)/:second(en|el)/:path*',
         destination: '/:second/:path*',
         permanent: true,

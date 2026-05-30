@@ -1,10 +1,8 @@
 import type { Metadata } from 'next';
 import { SITE_URL } from '../../../lib/content';
 
-export function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Metadata {
-  const canonicalUrl = `${SITE_URL}/en/contact`;
-  const enUrl = `${SITE_URL}/en/contact`;
-  const elUrl = `${SITE_URL}/el/contact`;
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
 
   return {
     title: {
@@ -12,11 +10,11 @@ export function generateMetadata({ params }: { params: Promise<{ lang: string }>
     },
     description: 'Reach out to GoGreeceNow for promotion inquiries, partnership opportunities, or any questions about traveling to Greece.',
     alternates: {
-      canonical: canonicalUrl,
+      canonical: `${SITE_URL}/${lang}/contact`,
       languages: {
-        en: enUrl,
-        el: elUrl,
-        'x-default': enUrl,
+        en: `${SITE_URL}/en/contact`,
+        el: `${SITE_URL}/el/contact`,
+        'x-default': `${SITE_URL}/en/contact`,
       },
     },
     openGraph: {

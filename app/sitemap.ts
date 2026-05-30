@@ -5,7 +5,6 @@ import { food } from '../lib/food-data';
 import { tours } from '../lib/tours-data';
 import { travelInfoGuides } from '../lib/travel-info-data';
 import { experienceLandings, experienceBusinesses } from '../lib/experiences';
-import { homeCollectionHubSlugs } from '../lib/home-collection-hubs';
 
 const baseUrl = 'https://www.gogreecenow.com';
 
@@ -39,7 +38,7 @@ const dynamicSources = [
   { prefix: '/tours', items: Array.from(new Set([...tours.map(t => t.slug), ...experienceLandings.map(l => l.slug)])), priority: 0.8 },
   { prefix: '/businesses', items: Array.from(new Set(experienceBusinesses.map(b => b.slug))), priority: 0.7 },
   { prefix: '/travel-info', items: Array.from(new Set(travelInfoGuides.map(g => g.slug))), priority: 0.7 },
-  { prefix: '/collections', items: Array.from(new Set(homeCollectionHubSlugs)), priority: 0.7 },
+  // collections served by dedicated pages (greek-islands, greece-travel-planning, etc.)
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
