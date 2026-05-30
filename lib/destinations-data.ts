@@ -932,8 +932,8 @@ export const destinations: Destination[] = [
         label: { en: "Where to Stay in Skiathos", el: "Πού να μείνεις στη Σκιάθο" }
       },
       {
-        href: "/travel-info/best-boat-trips-in-skiathos",
-        label: { en: "Best Boat Trips", el: "Εκδρομές με Σκάφος" }
+        href: "/tours/all",
+        label: { en: "Tours & Experiences", el: "Εκδρομές & Εμπειρίες" }
       }
     ],
     featured: true,
