@@ -99,7 +99,7 @@ export default async function ToursDirectoryPage({ params }: Props) {
       <SiteHeader />
 
       <div className="bg-white border-b border-slate-200">
-        <div className="max-w-4xl mx-auto px-6 py-12 text-center">
+        <div className="max-w-4xl mx-auto px-6 pt-24 pb-12 text-center">
           <p className="text-slate-600 leading-relaxed max-w-2xl mx-auto">
             {lang === "el"
               ? "Η Ελλάδα προσφέρει ατελείωτες ευκαιρίες για εκδρομές και εμπειρίες. Από ιστιοπλοΐα στις Κυκλάδες και γαστρονομικές περιηγήσεις στην Κρήτη μέχρι αρχαιολογικές ξεναγήσεις στην Αθήνα και καταδύσεις στο Ιόνιο — δες όλες τις διαθέσιμες εμπειρίες ανά περιοχή και βρες αυτή που ταιριάζει στο ταξίδι σου."

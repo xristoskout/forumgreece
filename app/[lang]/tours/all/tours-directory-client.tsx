@@ -317,7 +317,7 @@ export default function ToursDirectoryClient({ lang, tours }: Props) {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.9, duration: 1 }}
-            className="mx-auto mt-10 max-w-2xl text-lg md:text-2xl font-light leading-relaxed text-white/90 drop-shadow-md"
+            className="mx-auto mt-6 max-w-2xl text-lg md:text-2xl font-light leading-relaxed text-white/90 drop-shadow-md"
           >
             {lang === "en"
               ? "Discover the soul of Greece through curated journeys, private boat trips and authentic local encounters."
