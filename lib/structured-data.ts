@@ -175,23 +175,27 @@ export function itemPageSchema(data: {
   return {
     "@context": "https://schema.org",
     "@type": "ItemPage",
-    mainEntity: {
-      "@type": "Product",
-      name: data.name,
-      description: data.description,
-      image: data.image,
-      url: data.url,
-      ...(data.offers
-        ? {
+    name: data.name,
+    description: data.description,
+    image: data.image,
+    url: data.url,
+    ...(data.offers
+      ? {
+          mainEntity: {
+            "@type": "Product",
+            name: data.name,
+            description: data.description,
+            image: data.image,
+            url: data.url,
             offers: data.offers.map((o) => ({
               "@type": "Offer",
               price: o.price,
               priceCurrency: o.priceCurrency,
               ...(o.availability ? { availability: o.availability } : {}),
             })),
-          }
-        : {}),
-    },
+          },
+        }
+      : {}),
   };
 }
 

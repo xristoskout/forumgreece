@@ -69,7 +69,7 @@ export async function generateMetadata({
 
   if (!isValidLang(lang)) {
     return {
-      title: "Page Not Found | GoGreeceNow",
+      title: "Page Not Found",
       description: "The requested page could not be found.",
     };
   }
@@ -84,8 +84,8 @@ export async function generateMetadata({
     return {
       title:
         lang === "el"
-          ? "Η εκδρομή δεν βρέθηκε | GoGreeceNow"
-          : "Tour Not Found | GoGreeceNow",
+          ? "Η εκδρομή δεν βρέθηκε"
+          : "Tour Not Found",
       description:
         lang === "el"
           ? "Η σελίδα εκδρομής που ζητήσατε δεν βρέθηκε."
@@ -95,7 +95,7 @@ export async function generateMetadata({
 
   if (pageData.type === "landing") {
     const image = pageData.businesses[0]?.image ?? "/images/default-og.webp";
-    const title = pageData.landing.seo?.title[lang] ?? `${pageData.landing.title[lang]} | GoGreeceNow`;
+    const title = pageData.landing.seo?.title[lang] ?? pageData.landing.title[lang];
     const description = pageData.landing.seo?.description[lang] ?? pageData.landing.description[lang];
 
     return {
@@ -130,7 +130,7 @@ export async function generateMetadata({
     };
   }
 
-  const title = `${pageData.tour.title[lang]} | ${pageData.tour.place} | GoGreeceNow`;
+  const title = `${pageData.tour.title[lang]} | ${pageData.tour.place}`;
   const description = pageData.tour.description[lang];
 
   return {

@@ -23,13 +23,13 @@ function withLang(path: string, lang: Lang) {
 
 const seo = {
   en: {
-    title: "Eat & Drink in Greece: Food Guides, Local Taverns & Regional Dishes | GoGreeceNow",
+    title: "Eat & Drink in Greece: Food Guides, Local Taverns & Regional Dishes",
     description:
       "Explore Greek food guides, regional dishes and local drinks to add more flavor to your Greece trip planning.",
     path: "/en/eat-drink",
   },
   el: {
-    title: "Φαγητό & Ποτό στην Ελλάδα: Γαστρονομικοί Οδηγοί, Τοπικές Ταβέρνες & Περιφερειακά Πιάτα | GoGreeceNow",
+    title: "Φαγητό & Ποτό στην Ελλάδα: Γαστρονομικοί Οδηγοί, Τοπικές Ταβέρνες & Περιφερειακά Πιάτα",
     description:
       "Ανακάλυψε οδηγούς ελληνικής γαστρονομίας, τοπικά πιάτα και ποτά για να δώσεις περισσότερο χαρακτήρα στο ταξίδι σου στην Ελλάδα.",
     path: "/el/eat-drink",

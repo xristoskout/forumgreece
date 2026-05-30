@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const item = travelInfoGuides.find((entry) => entry.slug === slug);
 
   if (!item) {
-    return { title: 'Travel Guide Not Found | GoGreeceNow' };
+    return { title: 'Travel Guide Not Found' };
   }
 
   const canonicalUrl = `${SITE_URL}/${lang}/travel-info/${slug}`;
@@ -35,7 +35,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       canonical: canonicalUrl,
       languages: {
         en: enUrl,
-        el: elUrl,
         'x-default': enUrl,
       },
     },

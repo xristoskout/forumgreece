@@ -108,8 +108,8 @@ export const homeCollectionHubs: HomeCollectionHub[] = [
       el: "Σύγκρινε διάσημα ελληνικά νησιά, παραθαλάσσια τοπία και διαφορετικά travel styles πριν αποφασίσεις πού θα περάσεις τις μέρες σου στην Ελλάδα.",
     },
     metaTitle: {
-      en: "Greek island travel ideas and destination guides | GoGreeceNow",
-      el: "Ιδέες για ελληνικά νησιά και οδηγοί προορισμών | GoGreeceNow",
+      en: "Greek island travel ideas and destination guides",
+      el: "Ιδέες για ελληνικά νησιά και οδηγοί προορισμών",
     },
     metaDescription: {
       en: "Compare Greek islands, discover destination guides and plan beaches, stays and ferry-friendly routes for your Greece island trip.",
@@ -234,8 +234,8 @@ export const homeCollectionHubs: HomeCollectionHub[] = [
       el: "Πήγαινε πέρα από το απλό sightseeing με boat trips, τοπικές εμπειρίες και δραστηριότητες που δίνουν μορφή στο itinerary σου στην Ελλάδα.",
     },
     metaTitle: {
-      en: "Greece tours, day trips and local experiences | GoGreeceNow",
-      el: "Εκδρομές, ημερήσιες αποδράσεις και εμπειρίες στην Ελλάδα | GoGreeceNow",
+      en: "Greece tours, day trips and local experiences",
+      el: "Εκδρομές, ημερήσιες αποδράσεις και εμπειρίες στην Ελλάδα",
     },
     metaDescription: {
       en: "Browse Greece tours, island day trips and local experiences to add boat routes, highlights and memorable activities to your plan.",
@@ -297,8 +297,8 @@ export const homeCollectionHubs: HomeCollectionHub[] = [
       el: "Χρησιμοποίησε food and drink έμπνευση για να ανακαλύψεις τοπικά πιάτα, παραδόσεις και προορισμούς που γίνονται πιο πλούσιοι μέσα από τη γεύση.",
     },
     metaTitle: {
-      en: "Greek food and drink guides by destination | GoGreeceNow",
-      el: "Οδηγοί ελληνικού φαγητού και ποτού ανά προορισμό | GoGreeceNow",
+      en: "Greek food and drink guides by destination",
+      el: "Οδηγοί ελληνικού φαγητού και ποτού ανά προορισμό",
     },
     metaDescription: {
       en: "Discover Greek food and drink guides, regional dishes and local flavors that help you plan where to eat and what to try.",

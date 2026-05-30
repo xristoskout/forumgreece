@@ -151,6 +151,36 @@ export default async function AboutPage({ params }: Props) {
         </div>
       </section>
 
+      <section className="bg-slate-50/50 border-y border-slate-100 py-16 sm:py-20">
+        <div className="mx-auto max-w-4xl px-6">
+          <div className="text-center mb-10">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-indigo-700">
+              {lang === "el" ? "Η Ιστορία Μας" : "Our Story"}
+            </p>
+            <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl mt-3">
+              {lang === "el" ? "Γιατί δημιουργήσαμε το GoGreeceNow" : "Why we built GoGreeceNow"}
+            </h2>
+          </div>
+          <div className="space-y-6 text-lg text-slate-600 leading-relaxed">
+            <p>
+              {lang === "el"
+                ? "Το GoGreeceNow γεννήθηκε από μια απλή διαπίστωση: η Ελλάδα είναι ένας από τους ομορφότερους ταξιδιωτικούς προορισμούς στον κόσμο, αλλά η οργάνωση ενός ταξιδιού εδώ μπορεί να είναι απογοητευτικά περίπλοκη. Οι πληροφορίες είναι διάσπαρτες, οι οδηγοί συχνά ξεπερασμένοι, και η εύρεση αυθεντικών τοπικών εμπειριών απαιτεί ώρες έρευνας."
+                : "GoGreeceNow was born from a simple observation: Greece is one of the most beautiful travel destinations in the world, but planning a trip here can be frustratingly complex. Information is scattered, guides are often outdated, and finding authentic local experiences requires hours of research."}
+            </p>
+            <p>
+              {lang === "el"
+                ? "Θέλαμε να δημιουργήσουμε έναν κεντρικό κόμβο όπου οι ταξιδιώτες μπορούν να βρουν τα πάντα — από οδηγούς προορισμών και προτάσεις διαμονής μέχρι τοπικές εμπειρίες και γαστρονομικές περιηγήσεις — όλα σε ένα μέρος, γραμμένα με αυθεντικότητα και προσοχή στη λεπτομέρεια."
+                : "We wanted to create a central hub where travelers can find everything — from destination guides and accommodation recommendations to local experiences and food tours — all in one place, written with authenticity and attention to detail."}
+            </p>
+            <p>
+              {lang === "el"
+                ? "Αυτό που μας κάνει διαφορετικούς είναι η βαθιά γνώση της Ελλάδας σε κάθε της μορφή. Δεν είμαστε μια γενική ταξιδιωτική πλατφόρμα — είμαστε ένα εξειδικευμένο ελληνικό travel portal που συνδυάζει την τεχνολογία με την αγάπη για τον τόπο."
+                : "What makes us different is our deep knowledge of Greece in all its forms. We are not a generic travel platform — we are a specialized Greek travel portal that combines technology with a genuine love for the country."}
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-slate-50 py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 text-center">
           <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl mb-16">

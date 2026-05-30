@@ -8,5 +8,6 @@ User-agent: *
 Allow: /
 Disallow: /*?fp=
 Disallow: /*?fbclid=
+Disallow: /*?s1=
 
 Sitemap: https://www.gogreecenow.com/sitemap.xml

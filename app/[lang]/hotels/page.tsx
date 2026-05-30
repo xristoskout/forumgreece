@@ -19,8 +19,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const t = {
     title: {
-      en: 'Curated Hotels & Boutique Stays in Greece | GoGreeceNow',
-      el: 'Επιλεγμένα Ξενοδοχεία & Καταλύματα στην Ελλάδα | GoGreeceNow',
+      en: 'Curated Hotels & Boutique Stays in Greece',
+      el: 'Επιλεγμένα Ξενοδοχεία & Καταλύματα στην Ελλάδα',
     },
     description: {
       en: 'Discover unique places to stay in Greece. From Santorini cave suites to Corfu family resorts and authentic Lesvos rooms.',

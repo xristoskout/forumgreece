@@ -24,13 +24,13 @@ function withLang(path: string, lang: Lang) {
 
 const seo = {
   en: {
-    title: "Greece Travel Planning Hub: Transport, Timing & Tips | GoGreeceNow",
+    title: "Greece Travel Planning Hub: Transport, Timing & Tips",
     description:
       "Plan a trip to Greece with practical guides for transport, timing, destinations, stays and everyday travel decisions.",
     path: "/en/collections/greece-travel-planning",
   },
   el: {
-    title: "Hub Οργάνωσης Ταξιδιού στην Ελλάδα | GoGreeceNow",
+    title: "Hub Οργάνωσης Ταξιδιού στην Ελλάδα",
     description:
       "Οργάνωσε ταξίδι στην Ελλάδα με πρακτικούς οδηγούς για μετακίνηση, εποχές, προορισμούς, διαμονή και καθημερινές αποφάσεις.",
     path: "/el/collections/greece-travel-planning",

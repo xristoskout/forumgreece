@@ -12,13 +12,13 @@ type Props = {
 
 const seo = {
   en: {
-    title: "What to Eat in Greece: Regional Dishes, Taverns & Local Food Guides | GoGreeceNow",
+    title: "What to Eat in Greece: Regional Dishes, Taverns & Local Food Guides",
     description:
       "Explore Greek food guides, regional dishes and local drinks to add more flavor to your Greece trip planning.",
     path: "/en/collections/greece-food-and-drink",
   },
   el: {
-    title: "Τι να Φας στην Ελλάδα: Τοπικά Πιάτα, Ταβέρνες & Γαστρονομικοί Οδηγοί | GoGreeceNow",
+    title: "Τι να Φας στην Ελλάδα: Τοπικά Πιάτα, Ταβέρνες & Γαστρονομικοί Οδηγοί",
     description:
       "Ανακάλυψε οδηγούς ελληνικής γαστρονομίας, τοπικά πιάτα και ποτά για να δώσεις περισσότερο χαρακτήρα στο ταξίδι σου στην Ελλάδα.",
     path: "/el/collections/greece-food-and-drink",

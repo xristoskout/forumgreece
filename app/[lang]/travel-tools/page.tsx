@@ -22,14 +22,14 @@ async function getAllDestinations() {
 
 const travelToolsSeo = {
   en: {
-    title: "Compare Greek Islands & Destinations Side-by-Side | GoGreeceNow",
+    title: "Compare Greek Islands & Destinations Side-by-Side",
     description:
       "Use our free travel decision tool to compare Greek destinations by budget, beaches, vibe and crowds. Find the right Greek island for your trip.",
     path: "/en/travel-tools",
     locale: "en_US",
   },
   el: {
-    title: "Σύγκρινε Ελληνικά Νησιά & Προορισμούς Side-by-Side | GoGreeceNow",
+    title: "Σύγκρινε Ελληνικά Νησιά & Προορισμούς Side-by-Side",
     description:
       "Χρησιμοποίησε το δωρεάν εργαλείο μας για να συγκρίνεις ελληνικούς προορισμούς ανά budget, παραλίες, vibe και κόσμο. Βρες το σωστό ελληνικό νησί για το ταξίδι σου.",
     path: "/el/travel-tools",
@@ -188,10 +188,28 @@ export default async function TravelToolsPage({ params }: Props) {
           </div>
         </div>
 
+        {/* Intro text before the tool */}
+        <div className="max-w-3xl mx-auto px-6 pt-16 pb-4 text-center">
+          <p className="text-slate-600 leading-relaxed">
+            {lang === "el"
+              ? "Η επιλογή του σωστού ελληνικού προορισμού μπορεί να είναι δύσκολη. Χρησιμοποίησε αυτό το εργαλείο σύγκρισης για να δεις διαφορές σε budget, καιρό, ατμόσφαιρα και αξιοθέατα ανάμεσα σε δύο ελληνικά νησιά ή πόλεις. Διάλεξε δύο προορισμούς από κάτω και δες ποιος ταιριάζει καλύτερα στο ταξίδι σου."
+              : "Choosing between Greek destinations can feel overwhelming. Use this comparison tool to see side-by-side differences in budget, weather, vibe and highlights between any two Greek islands or cities. Pick two destinations below and find which one fits your trip better."}
+          </p>
+        </div>
+
         {/* Main Tool Content Container - Slightly overlapping the hero block */}
         <main className="container mx-auto px-6 pb-12 -mt-12 relative z-10">
           <DecisionEngineClient destinations={destinations} lang={lang as "en" | "el"} />
         </main>
+
+        {/* Outro text after the tool */}
+        <div className="max-w-3xl mx-auto px-6 pb-8">
+          <p className="text-slate-500 text-sm leading-relaxed">
+            {lang === "el"
+              ? "Δημοφιλείς συγκρίσεις περιλαμβάνουν Σαντορίνη εναντίον Μυκόνου για πολυτελή ταξίδια, Κρήτη εναντίον Ρόδου για οικογένειες, και Κεφαλονιά εναντίον Ζακύνθου για λάτρεις της φύσης. Μπορείς επίσης να συγκρίνεις Αθήνα με Θεσσαλονίκη για city breaks ή να εξερευνήσεις διαφορές ανάμεσα σε Κυκλάδες και Ιόνια για island hopping."
+              : "Popular comparisons include Santorini vs Mykonos for luxury travelers, Crete vs Rhodes for families, and Kefalonia vs Zakynthos for nature lovers. You can also compare Athens with Thessaloniki for city breaks, or explore differences between the Cyclades and Ionian islands for island hopping."}
+          </p>
+        </div>
 
         {/* Footer Disclaimer */}
         <footer className="max-w-4xl mx-auto px-6 pb-16">

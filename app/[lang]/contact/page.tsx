@@ -153,6 +153,59 @@ export default function ContactPage() {
 
         </div>
       </section>
+
+      <section className="bg-white border-t border-slate-200">
+        <div className="max-w-4xl mx-auto px-6 py-16 text-center">
+          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-indigo-700">
+            {lang === "el" ? "Συχνές Ερωτήσεις" : "Frequently Asked"}
+          </p>
+          <h2 className="text-3xl font-bold tracking-tight text-slate-900 mt-3 mb-8">
+            {lang === "el" ? "Πώς μπορούμε να σε βοηθήσουμε;" : "How can we help you?"}
+          </h2>
+          <div className="grid gap-6 md:grid-cols-2 text-left max-w-3xl mx-auto">
+            <div className="bg-slate-50 rounded-xl p-6">
+              <h3 className="font-bold text-slate-900 mb-2">
+                {lang === "el" ? "Προώθηση επιχείρησης" : "Business promotion"}
+              </h3>
+              <p className="text-sm text-slate-600 leading-relaxed">
+                {lang === "el"
+                  ? "Αν έχεις ξενοδοχείο, τουριστική υπηρεσία ή εστιατόριο στην Ελλάδα και θες να προβληθείς σε χιλιάδες ταξιδιώτες, συμπλήρωσε τη φόρμα ή δες τις υπηρεσίες προβολής μας."
+                  : "If you own a hotel, tour service or restaurant in Greece and want to reach thousands of travelers, fill out the form or check our promotion services."}
+              </p>
+            </div>
+            <div className="bg-slate-50 rounded-xl p-6">
+              <h3 className="font-bold text-slate-900 mb-2">
+                {lang === "el" ? "Ταξιδιωτικές ερωτήσεις" : "Travel questions"}
+              </h3>
+              <p className="text-sm text-slate-600 leading-relaxed">
+                {lang === "el"
+                  ? "Για ερωτήσεις σχετικά με προορισμούς, διαμονή, μετακινήσεις και οργάνωση ταξιδιού, ρίξε μια ματιά στους οδηγούς μας ή στείλε μας μήνυμα και θα σε βοηθήσουμε."
+                  : "For questions about destinations, accommodation, transport and trip planning, check our travel guides or send us a message and we will help."}
+              </p>
+            </div>
+            <div className="bg-slate-50 rounded-xl p-6">
+              <h3 className="font-bold text-slate-900 mb-2">
+                {lang === "el" ? "Συνεργασίες" : "Partnerships"}
+              </h3>
+              <p className="text-sm text-slate-600 leading-relaxed">
+                {lang === "el"
+                  ? "Ενδιαφέρεσαι για συνεργασία ή διαφημιστική προβολή στο GoGreeceNow; Θα χαρούμε να συζητήσουμε ιδέες και προτάσεις."
+                  : "Interested in partnering or advertising on GoGreeceNow? We would love to discuss ideas and proposals."}
+              </p>
+            </div>
+            <div className="bg-slate-50 rounded-xl p-6">
+              <h3 className="font-bold text-slate-900 mb-2">
+                {lang === "el" ? "Τεχνική υποστήριξη" : "Technical support"}
+              </h3>
+              <p className="text-sm text-slate-600 leading-relaxed">
+                {lang === "el"
+                  ? "Αν αντιμετωπίζεις τεχνικό πρόβλημα με τη σελίδα, περιέγραψέ το στη φόρμα και η ομάδα μας θα το εξετάσει."
+                  : "If you are experiencing a technical issue with the website, describe it in the form and our team will look into it."}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

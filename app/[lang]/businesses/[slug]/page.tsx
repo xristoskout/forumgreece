@@ -31,8 +31,8 @@ export async function generateMetadata({
     return {
       title:
         lang === "el"
-          ? "Η επιχείρηση δεν βρέθηκε | GoGreeceNow"
-          : "Business Not Found | GoGreeceNow",
+          ? "Η επιχείρηση δεν βρέθηκε"
+          : "Business Not Found",
       description:
         lang === "el"
           ? "Η σελίδα της επιχείρησης που ζητήσατε δεν βρέθηκε."

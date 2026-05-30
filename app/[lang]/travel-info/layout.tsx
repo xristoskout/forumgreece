@@ -23,7 +23,6 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
       canonical: canonicalUrl,
       languages: {
         en: enUrl,
-        el: elUrl,
         'x-default': enUrl,
       },
     },

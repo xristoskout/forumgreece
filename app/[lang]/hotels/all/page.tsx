@@ -20,8 +20,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const t = {
     title: {
-      en: 'All Places to Stay in Greece — Browse by Destination | GoGreeceNow',
-      el: 'Όλα τα Καταλύματα στην Ελλάδα — Ανά Προορισμό | GoGreeceNow',
+      en: 'All Places to Stay in Greece — Browse by Destination',
+      el: 'Όλα τα Καταλύματα στην Ελλάδα — Ανά Προορισμό',
     },
     description: {
       en: 'Explore all Greek hotel guides and best places to stay organized by destination: Athens, Santorini, Mykonos, Corfu, Crete, Kefalonia and more.',
@@ -89,6 +89,17 @@ export default async function HotelsDirectoryPage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionPage) }}
       />
       <SiteHeader />
+
+      <div className="bg-white border-b border-slate-200">
+        <div className="max-w-4xl mx-auto px-6 py-12 text-center">
+          <p className="text-slate-600 leading-relaxed max-w-2xl mx-auto">
+            {lang === "el"
+              ? "Η επιλογή του σωστού καταλύματος είναι μία από τις πιο σημαντικές αποφάσεις σε κάθε ταξίδι στην Ελλάδα. Από ρομαντικές σουίτες με θέα την καλντέρα στη Σαντορίνη και πολυτελή resorts στην Κρήτη μέχρι οικονομικά διαμερίσματα στην Αθήνα και παραδοσιακούς ξενώνες στα Ιόνια — δες όλες τις επιλογές ανά προορισμό και βρες το κατάλυμα που σου ταιριάζει."
+              : "Choosing the right accommodation is one of the most important decisions in any Greece trip. From romantic caldera-view suites in Santorini and luxury resorts in Crete to budget apartments in Athens and traditional guesthouses in the Ionian islands — browse all options by destination and find your perfect stay."}
+          </p>
+        </div>
+      </div>
+
       <HotelsDirectoryClient lang={lang} hotels={hotels} />
     </>
   );

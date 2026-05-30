@@ -24,13 +24,13 @@ function withLang(path: string, lang: Lang) {
 
 const seo = {
   en: {
-    title: "Greek Islands Guide: Best Islands, Ideas & Planning | GoGreeceNow",
+    title: "Greek Islands Guide: Best Islands, Ideas & Planning",
     description:
       "Explore Greek island guides, beach ideas, travel inspiration and practical tips for planning island trips across Greece.",
     path: "/en/collections/greek-islands",
   },
   el: {
-    title: "Οδηγός για Ελληνικά Νησιά, Ιδέες & Οργάνωση | GoGreeceNow",
+    title: "Οδηγός για Ελληνικά Νησιά, Ιδέες & Οργάνωση",
     description:
       "Ανακάλυψε οδηγούς για ελληνικά νησιά, ιδέες για παραλίες και χρήσιμες συμβουλές για να οργανώσεις island hopping στην Ελλάδα.",
     path: "/el/collections/greek-islands",
@@ -59,7 +59,6 @@ export async function generateMetadata({
       canonical: seo[lang].path,
       languages: {
         en: "/en/collections/greek-islands",
-        el: "/el/collections/greek-islands",
         "x-default": "/en/collections/greek-islands",
       },
     },

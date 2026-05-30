@@ -363,8 +363,8 @@ export const destinations: Destination[] = [
     ],
     seo: {
       title: {
-        en: "Paros Travel Guide | Beaches, Villages, Food & Where to Stay | GoGreeceNow",
-        el: "Πάρος: Οδηγός Ταξιδιού | Παραλίες, Χωριά, Φαγητό & Διαμονή | GoGreeceNow"
+        en: "Paros Travel Guide | Beaches, Villages, Food & Where to Stay",
+        el: "Πάρος: Οδηγός Ταξιδιού | Παραλίες, Χωριά, Φαγητό & Διαμονή"
       },
       description: {
         en: "Plan your trip to Paros with our travel guide. Discover beaches, villages, food, where to stay, and the best things to do on one of the most balanced islands in the Cyclades.",
@@ -396,8 +396,8 @@ export const destinations: Destination[] = [
     ],
     seo: {
       title: {
-        en: "Naxos Travel Guide | Beaches, Villages, Food & Where to Stay | GoGreeceNow",
-        el: "Νάξος: Οδηγός Ταξιδιού | Παραλίες, Χωριά, Φαγητό & Διαμονή | GoGreeceNow"
+        en: "Naxos Travel Guide | Beaches, Villages, Food & Where to Stay",
+        el: "Νάξος: Οδηγός Ταξιδιού | Παραλίες, Χωριά, Φαγητό & Διαμονή"
       },
       description: {
         en: "Plan your trip to Naxos with our travel guide. Discover beaches, villages, food, where to stay, and the best things to do on the largest and most authentic island in the Cyclades.",
@@ -433,8 +433,8 @@ export const destinations: Destination[] = [
     ],
     seo: {
       title: {
-        en: "Milos Travel Guide | Beaches, Villages, Food & Where to Stay | GoGreeceNow",
-        el: "Μήλος: Οδηγός Ταξιδιού | Παραλίες, Χωριά, Φαγητό & Διαμονή | GoGreeceNow"
+        en: "Milos Travel Guide | Beaches, Villages, Food & Where to Stay",
+        el: "Μήλος: Οδηγός Ταξιδιού | Παραλίες, Χωριά, Φαγητό & Διαμονή"
       },
       description: {
         en: "Discover Milos with our travel guide. Explore beaches, villages, food, where to stay, and the best things to do on one of Greece's most scenic and distinctive islands.",
@@ -470,8 +470,8 @@ export const destinations: Destination[] = [
     ],
     seo: {
       title: {
-        en: "Zakynthos Travel Guide | Beaches, Boat Trips, Food & Where to Stay | GoGreeceNow",
-        el: "Ζάκυνθος: Οδηγός Ταξιδιού | Παραλίες, Διαμονή & Εμπειρίες | GoGreeceNow"
+        en: "Zakynthos Travel Guide | Beaches, Boat Trips, Food & Where to Stay",
+        el: "Ζάκυνθος: Οδηγός Ταξιδιού | Παραλίες, Διαμονή & Εμπειρίες"
       },
       description: {
         en: "Plan your trip to Zakynthos with our travel guide. Discover beaches, boat trips, food, where to stay, and the best things to do on one of Greece's most scenic Ionian islands.",
@@ -507,8 +507,8 @@ export const destinations: Destination[] = [
     ],
     seo: {
       title: {
-        en: "Rhodes Travel Guide | Old Town, Beaches, Food & Where to Stay | GoGreeceNow",
-        el: "Ρόδος: Οδηγός Ταξιδιού | Παλιά Πόλη, Παραλίες, Φαγητό & Διαμονή | GoGreeceNow"
+        en: "Rhodes Travel Guide | Old Town, Beaches, Food & Where to Stay",
+        el: "Ρόδος: Οδηγός Ταξιδιού | Παλιά Πόλη, Παραλίες, Φαγητό & Διαμονή"
       },
       description: {
         en: "Plan your trip to Rhodes with our travel guide. Discover the Old Town, beaches, food, where to stay, and the best things to do on one of Greece's most historic and diverse islands.",
@@ -536,8 +536,8 @@ export const destinations: Destination[] = [
     featured: true,
     seo: {
       title: {
-        en: "Patmos Travel Guide: Monastery, Beaches, Hora & Things to Do | GoGreeceNow",
-        el: "Πάτμος: Οδηγός Ταξιδιού — Μονή, Παραλίες, Χώρα & Αξιοθέατα | GoGreeceNow"
+        en: "Patmos Travel Guide: Monastery, Beaches, Hora & Things to Do",
+        el: "Πάτμος: Οδηγός Ταξιδιού — Μονή, Παραλίες, Χώρα & Αξιοθέατα"
       },
       description: {
         en: "Complete guide to Patmos: top attractions, best beaches, how to get there, where to stay and local tips for the sacred island of the Dodecanese.",
@@ -579,8 +579,8 @@ export const destinations: Destination[] = [
     ],
     seo: {
       title: {
-        en: "Halkidiki Travel Guide | Beaches, Areas, Food & Where to Stay | GoGreeceNow",
-        el: "Χαλκιδική: Οδηγός Ταξιδιού | Παραλίες, Διαμονή & Εμπειρίες | GoGreeceNow"
+        en: "Halkidiki Travel Guide | Beaches, Areas, Food & Where to Stay",
+        el: "Χαλκιδική: Οδηγός Ταξιδιού | Παραλίες, Διαμονή & Εμπειρίες"
       },
       description: {
         en: "Plan your trip to Halkidiki with our travel guide. Discover beaches, areas, food, where to stay, and the best things to do in one of northern Greece's most popular summer destinations.",
@@ -616,8 +616,8 @@ export const destinations: Destination[] = [
     ],
     seo: {
       title: {
-        en: "Meteora Travel Guide | Monasteries, Views, Food & Where to Stay | GoGreeceNow",
-        el: "Μετέωρα: Οδηγός Ταξιδιού | Μοναστήρια, Θέα, Διαμονή & Εμπειρίες | GoGreeceNow"
+        en: "Meteora Travel Guide | Monasteries, Views, Food & Where to Stay",
+        el: "Μετέωρα: Οδηγός Ταξιδιού | Μοναστήρια, Θέα, Διαμονή & Εμπειρίες"
       },
       description: {
         en: "Plan your trip to Meteora with our travel guide. Discover monasteries, viewpoints, local food, where to stay, and the best things to do in one of Greece's most extraordinary mainland destinations.",
@@ -653,8 +653,8 @@ export const destinations: Destination[] = [
     ],
     seo: {
       title: {
-        en: "Monemvasia Travel Guide | Old Town, Views, Food & Where to Stay | GoGreeceNow",
-        el: "Μονεμβασιά: Οδηγός Ταξιδιού | Παλιά Πόλη, Φαγητό & Διαμονή | GoGreeceNow"
+        en: "Monemvasia Travel Guide | Old Town, Views, Food & Where to Stay",
+        el: "Μονεμβασιά: Οδηγός Ταξιδιού | Παλιά Πόλη, Φαγητό & Διαμονή"
       },
       description: {
         en: "Plan your trip to Monemvasia with our travel guide. Discover the old town, sea views, local food, where to stay, and the best things to do in one of the Peloponnese's most unique destinations.",
@@ -694,8 +694,8 @@ export const destinations: Destination[] = [
     ],
     seo: {
       title: {
-        en: "Chania Travel Guide | Old Town, Beaches, Food & Where to Stay | GoGreeceNow",
-        el: "Χανιά: Οδηγός Ταξιδιού | Παλιά Πόλη, Παραλίες, Φαγητό & Διαμονή | GoGreeceNow"
+        en: "Chania Travel Guide | Old Town, Beaches, Food & Where to Stay",
+        el: "Χανιά: Οδηγός Ταξιδιού | Παλιά Πόλη, Παραλίες, Φαγητό & Διαμονή"
       },
       description: {
         en: "Plan your trip to Chania with our travel guide. Discover the old town, beaches, food, where to stay, and the best things to do in one of Crete's most beautiful destinations.",
@@ -731,8 +731,8 @@ export const destinations: Destination[] = [
     ],
     seo: {
       title: {
-        en: "Parga Travel Guide | Beaches, Old Town, Food & Where to Stay | GoGreeceNow",
-        el: "Πάργα: Οδηγός Ταξιδιού | Παραλίες, Παλιά Πόλη, Διαμονή & Εμπειρίες | GoGreeceNow"
+        en: "Parga Travel Guide | Beaches, Old Town, Food & Where to Stay",
+        el: "Πάργα: Οδηγός Ταξιδιού | Παραλίες, Παλιά Πόλη, Διαμονή & Εμπειρίες"
       },
       description: {
         en: "Plan your trip to Parga with our travel guide. Discover beaches, the old town, food, where to stay, and the best things to do in one of Epirus' most charming coastal destinations.",
@@ -768,8 +768,8 @@ export const destinations: Destination[] = [
     ],
     seo: {
       title: {
-        en: "Delphi Travel Guide | Ancient Site, Views, Food & Where to Stay | GoGreeceNow",
-        el: "Δελφοί: Οδηγός Ταξιδιού | Αρχαίο Μαντείο, Διαμονή & Εμπειρίες | GoGreeceNow"
+        en: "Delphi Travel Guide | Ancient Site, Views, Food & Where to Stay",
+        el: "Δελφοί: Οδηγός Ταξιδιού | Αρχαίο Μαντείο, Διαμονή & Εμπειρίες"
       },
       description: {
         en: "Plan your trip to Delphi with our travel guide. Discover the ancient site, mountain views, local food, where to stay, and the best things to do in one of Greece's most symbolic mainland destinations.",
@@ -803,8 +803,8 @@ export const destinations: Destination[] = [
     ],
     seo: {
       title: {
-        en: "Patras Travel Guide: Carnival, Ancient Olympia, Delphi & the Wider Region | GoGreeceNow",
-        el: "Πάτρα: Οδηγός Ταξιδιού — Καρναβάλι, Αρχαία Ολυμπία, Δελφοί & Ευρύτερη Περιοχή | GoGreeceNow"
+        en: "Patras Travel Guide: Carnival, Ancient Olympia, Delphi & the Wider Region",
+        el: "Πάτρα: Οδηγός Ταξιδιού — Καρναβάλι, Αρχαία Ολυμπία, Δελφοί & Ευρύτερη Περιοχή"
       },
       description: {
         en: "Complete travel guide to Patras and the wider region — Carnival, Ancient Olympia, Delphi, Kalavrita, Aigialeia coast, Nafpaktos, Messolonghi and the beaches of Ilia. Explore Greece's third city as a base for some of the country's greatest sites.",
@@ -832,8 +832,8 @@ export const destinations: Destination[] = [
     featured: true,
     seo: {
       title: {
-        en: "Lemnos Travel Guide: Beaches, Villages, Local Food & Things to Do | GoGreeceNow",
-        el: "Λήμνος: Οδηγός Ταξιδιού — Παραλίες, Χωριά, Γαστρονομία & Αξιοθέατα | GoGreeceNow"
+        en: "Lemnos Travel Guide: Beaches, Villages, Local Food & Things to Do",
+        el: "Λήμνος: Οδηγός Ταξιδιού — Παραλίες, Χωριά, Γαστρονομία & Αξιοθέατα"
       },
       description: {
         en: "Complete guide to Lemnos island: the best beaches, villages like Myrina and Plati, local food (Muscat wine, Kalathaki cheese, seafood), ancient sites, and practical tips.",
@@ -861,8 +861,8 @@ export const destinations: Destination[] = [
     featured: true,
     seo: {
       title: {
-        en: "Kalamata Travel Guide: Beaches, Old Town, Mani & Costa Navarino | GoGreeceNow",
-        el: "Καλαμάτα: Οδηγός Ταξιδιού — Παραλίες, Παλιά Πόλη, Μάνη & Costa Navarino | GoGreeceNow"
+        en: "Kalamata Travel Guide: Beaches, Old Town, Mani & Costa Navarino",
+        el: "Καλαμάτα: Οδηγός Ταξιδιού — Παραλίες, Παλιά Πόλη, Μάνη & Costa Navarino"
       },
       description: {
         en: "Complete guide to Kalamata and the Messinia region: best beaches, Old Town, Castle, what to eat, Costa Navarino, Mani, Pylos and Ancient Messene. Plan your Peloponnese trip.",
@@ -900,8 +900,8 @@ export const destinations: Destination[] = [
     featured: true,
     seo: {
       title: {
-        en: "Thassos Travel Guide 2026: Beaches, Villages, Marble & Local Food | GoGreeceNow",
-        el: "Θάσος: Οδηγός Ταξιδιού 2026 — Παραλίες, Χωριά, Μάρμαρο & Τοπικό Φαγητό | GoGreeceNow"
+        en: "Thassos Travel Guide 2026: Beaches, Villages, Marble & Local Food",
+        el: "Θάσος: Οδηγός Ταξιδιού 2026 — Παραλίες, Χωριά, Μάρμαρο & Τοπικό Φαγητό"
       },
       description: {
         en: "Complete guide to Thassos island: the best beaches (Marble Beach, Golden Beach, Paradise), mountain villages like Theologos and Kastro, local food, ancient sites, and practical tips for Greece's greenest island.",
@@ -939,8 +939,8 @@ export const destinations: Destination[] = [
     featured: true,
     seo: {
       title: {
-        en: "Skiathos Travel Guide 2026: Beaches, Kastro, Koukounaries & Local Tips | GoGreeceNow",
-        el: "Σκιάθος: Οδηγός Ταξιδιού 2026 — Παραλίες, Κάστρο, Κουκουναριές & Μυστικά | GoGreeceNow"
+        en: "Skiathos Travel Guide 2026: Beaches, Kastro, Koukounaries & Local Tips",
+        el: "Σκιάθος: Οδηγός Ταξιδιού 2026 — Παραλίες, Κάστρο, Κουκουναριές & Μυστικά"
       },
       description: {
         en: "Complete travel guide to Skiathos: Koukounaries and Lalaria beaches, the abandoned Kastro, boat trips to Tsougrias, nightlife, where to stay, best time to visit, and honest insider tips for the Sporades.",

@@ -19,8 +19,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const t = {
     title: {
-      en: 'Local Experiences & Tours in Greece | GoGreeceNow',
-      el: 'Τοπικές Εμπειρίες & Εκδρομές στην Ελλάδα | GoGreeceNow',
+      en: 'Local Experiences & Tours in Greece',
+      el: 'Τοπικές Εμπειρίες & Εκδρομές στην Ελλάδα',
     },
     description: {
       en: 'Discover the best local experiences in Greece. Curated tours for Kefalonia, Lesvos, Crete and more.',

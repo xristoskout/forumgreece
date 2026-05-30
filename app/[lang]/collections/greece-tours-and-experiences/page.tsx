@@ -12,13 +12,13 @@ type Props = {
 
 const seo = {
   en: {
-    title: "Things to Do in Greece: Tours, Boat Trips & Local Experiences | GoGreeceNow",
+    title: "Things to Do in Greece: Tours, Boat Trips & Local Experiences",
     description:
       "Browse Greece tours, boat trips and local experiences to add memorable activities and day trips to your itinerary.",
     path: "/en/collections/greece-tours-and-experiences",
   },
   el: {
-    title: "Τι να Κάνεις στην Ελλάδα: Εκδρομές, Boat Trips & Τοπικές Εμπειρίες | GoGreeceNow",
+    title: "Τι να Κάνεις στην Ελλάδα: Εκδρομές, Boat Trips & Τοπικές Εμπειρίες",
     description:
       "Δες εκδρομές, boat trips και τοπικές εμπειρίες στην Ελλάδα για να εμπλουτίσεις το ταξίδι σου με δραστηριότητες και day trips.",
     path: "/el/collections/greece-tours-and-experiences",
@@ -47,7 +47,6 @@ export async function generateMetadata({
       canonical: seo[lang].path,
       languages: {
         en: "/en/collections/greece-tours-and-experiences",
-        el: "/el/collections/greece-tours-and-experiences",
         "x-default": "/en/collections/greece-tours-and-experiences",
       },
     },

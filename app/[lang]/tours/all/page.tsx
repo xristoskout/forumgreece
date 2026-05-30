@@ -20,8 +20,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const t = {
     title: {
-      en: 'All Tours & Experiences in Greece — Browse by Region | GoGreeceNow',
-      el: 'Όλες οι Εκδρομές & Εμπειρίες στην Ελλάδα — Ανά Περιοχή | GoGreeceNow',
+      en: 'All Tours & Experiences in Greece — Browse by Region',
+      el: 'Όλες οι Εκδρομές & Εμπειρίες στην Ελλάδα — Ανά Περιοχή',
     },
     description: {
       en: 'Explore all Greek tours, boat trips and local experiences organized by region: Athens, Santorini, Mykonos, Corfu, Crete, Kefalonia and more.',
@@ -40,7 +40,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       canonical: canonicalUrl,
       languages: {
         en: enUrl,
-        el: elUrl,
         'x-default': enUrl,
       },
     },
@@ -98,6 +97,17 @@ export default async function ToursDirectoryPage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionPage) }}
       />
       <SiteHeader />
+
+      <div className="bg-white border-b border-slate-200">
+        <div className="max-w-4xl mx-auto px-6 py-12 text-center">
+          <p className="text-slate-600 leading-relaxed max-w-2xl mx-auto">
+            {lang === "el"
+              ? "Η Ελλάδα προσφέρει ατελείωτες ευκαιρίες για εκδρομές και εμπειρίες. Από ιστιοπλοΐα στις Κυκλάδες και γαστρονομικές περιηγήσεις στην Κρήτη μέχρι αρχαιολογικές ξεναγήσεις στην Αθήνα και καταδύσεις στο Ιόνιο — δες όλες τις διαθέσιμες εμπειρίες ανά περιοχή και βρες αυτή που ταιριάζει στο ταξίδι σου."
+              : "Greece offers endless opportunities for tours and experiences. From sailing the Cyclades and food tours in Crete to archaeological walks in Athens and diving in the Ionian — browse all available experiences by region and find the ones that match your trip."}
+          </p>
+        </div>
+      </div>
+
       <ToursDirectoryClient lang={lang} tours={tours} />
     </>
   );

@@ -32,7 +32,7 @@ export async function generateMetadata({
 
   if (!item) {
     return {
-      title: "Hotel Not Found | GoGreeceNow",
+      title: "Hotel Not Found",
     };
   }
 
@@ -64,7 +64,6 @@ export async function generateMetadata({
       canonical: canonicalUrl,
       languages: {
         en: enUrl,
-        el: elUrl,
         'x-default': enUrl,
       },
     },
