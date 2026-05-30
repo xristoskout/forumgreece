@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { tours, SITE_URL, type Lang } from "../../../../lib/content";
 import {
   experienceBusinesses,
@@ -72,6 +72,10 @@ export async function generateMetadata({
       title: "Page Not Found",
       description: "The requested page could not be found.",
     };
+  }
+
+  if (slug === "seafood-by-the-harbor") {
+    permanentRedirect(`/${lang}/eat-drink/seafood-by-the-harbor`);
   }
 
   const canonicalUrl = `${SITE_URL}/${lang}/tours/${slug}`;
@@ -170,6 +174,10 @@ export default async function TourPage({ params }: TourPageProps) {
 
   if (!isValidLang(lang)) {
     notFound();
+  }
+
+  if (slug === "seafood-by-the-harbor") {
+    permanentRedirect(`/${lang}/eat-drink/seafood-by-the-harbor`);
   }
 
   const pageData = getTourPageData(slug);
