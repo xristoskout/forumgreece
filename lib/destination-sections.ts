@@ -7115,5 +7115,95 @@ export const destinationSections: Record<string, DestinationSection[]> = {
         }
       ]
     }
+  ],
+  ikaria: [
+    {
+      title: { en: "Why Ikaria — The Blue Zone", el: "Γιατί Ικαρία — Η Μπλε Ζώνη" },
+      layout: "numbered",
+      items: [
+        {
+          title: { en: "One of five Blue Zones worldwide", el: "Μία από τις πέντε Μπλε Ζώνες παγκοσμίως" },
+          text: { en: "Ikaria is one of the world's five Blue Zones — the rare communities where an unusually high proportion of the population lives past 90. The island has been studied by epidemiologists, sociologists, food scientists and journalists from around the world. The research identified a combination of factors: a traditional diet of legumes, olive oil and wild herbs; daily physical activity built into the mountainous terrain; strong social connections through communal festivals and shared meals; long sleep including afternoon naps; and a cultural approach to time that reduces chronic stress.", el: "Η Ικαρία είναι μία από τις πέντε Μπλε Ζώνες του κόσμου. Η έρευνα εντόπισε έναν συνδυασμό παραγόντων: παραδοσιακή διατροφή, καθημερινή σωματική δραστηριότητα, ισχυρές κοινωνικές συνδέσεις, μεσημεριανό ύπνο και πολιτισμική προσέγγιση στον χρόνο." }
+        },
+        {
+          title: { en: "Diet built from the land", el: "Διατροφή από τη γη" },
+          text: { en: "The traditional Ikarian diet is built around legumes — lentils, chickpeas, black-eyed peas — cooked slowly with local olive oil. Wild greens gathered from the hills appear in most meals. Local honey is used medicinally. Ikarian wine is strong, tannic, and drunk in small quantities with meals.", el: "Η παραδοσιακή ικαριώτικη διατροφή βασίζεται σε όσπρια, άγρια χόρτα, ελαιόλαδο και τοπικό κρασί. Το μέλι χρησιμοποιείται και φαρμακευτικά." }
+        },
+        {
+          title: { en: "The social architecture of longevity", el: "Η κοινωνική αρχιτεκτονική της μακροζωίας" },
+          text: { en: "The panigiri — a village festival held on the local saint's day with communal food, traditional music and dancing until dawn — is the social heart of Ikarian life. Elderly Ikarians attend and dance regularly. The sense of belonging and purpose that comes from community appears in longevity research across cultures as a protective factor.", el: "Το πανηγύρι είναι η κοινωνική καρδιά της ικαριώτικης ζωής. Οι ηλικιωμένοι Ικαριώτες χορεύουν τακτικά. Η αίσθηση του ανήκειν εμφανίζεται στην έρευνα μακροζωίας ως προστατευτικός παράγοντας." }
+        }
+      ]
+    },
+    {
+      title: { en: "Getting to Ikaria", el: "Πώς να Φτάσεις στην Ικαρία" },
+      layout: "list",
+      items: [
+        { title: { en: "By ferry from Piraeus", el: "Ακτοπλοϊκά από Πειραιά" }, text: { en: "8–10 hours depending on route and vessel. Ikaria is served by the Samos line. Ferries call at both Agios Kirykos and Evdilos — check which ports your ferry serves.", el: "8–10 ώρες. Η Ικαρία εξυπηρετείται από τη γραμμή της Σάμου. Τα πλοία δένουν σε Αγ. Κήρυκο και Εύδηλο." } },
+        { title: { en: "By plane from Athens", el: "Αεροπορικά από Αθήνα" }, text: { en: "45 minutes. The airport is small and flights are limited — book well in advance for summer.", el: "45 λεπτά. Το αεροδρόμιο είναι μικρό — κλείστε έγκαιρα." } },
+        { title: { en: "From Samos or Mykonos", el: "Από Σάμο ή Μύκονο" }, text: { en: "Short ferry from Samos (2–3 hours). Possible from Mykonos or Paros in season via inter-island ferries, though schedules vary.", el: "Σύντομο πλοίο από Σάμο (2–3 ώρες). Πιθανή σύνδεση από Μύκονο ή Πάρο εποχικά." } },
+      ]
+    },
+    {
+      title: { en: "Getting Around", el: "Μετακινήσεις" },
+      layout: "list",
+      items: [
+        { title: { en: "Car rental (recommended)", el: "Ενοικίαση αυτοκινήτου (συνιστάται)" }, text: { en: "Ikaria is large, mountainous, and the bus service is minimal. Renting a car gives you genuine freedom to explore both coasts and reach villages not served by public transport.", el: "Η Ικαρία είναι μεγάλη και ορεινή. Η ενοικίαση αυτοκινήτου σου δίνει ελευθερία να εξερευνήσεις και τις δύο ακτές." } },
+        { title: { en: "Scooter", el: "Μηχανάκι" }, text: { en: "A good option for confident riders on mountain roads. More practical than a car for narrow village streets.", el: "Καλή επιλογή για έμπειρους οδηγούς σε ορεινούς δρόμους." } },
+        { title: { en: "Bus service", el: "Λεωφορείο" }, text: { en: "Runs infrequently on a schedule best described as aspirational. Not reliable as a primary transport method.", el: "Λειτουργεί αραιά. Δεν είναι αξιόπιστο ως κύριο μέσο μεταφοράς." } },
+      ]
+    },
+    {
+      title: { en: "Villages & Beaches", el: "Χωριά & Παραλίες" },
+      layout: "grid",
+      items: [
+        { title: { en: "Christos Raches", el: "Χριστός Ραχών" }, text: { en: "The village that wakes at midnight. Shops and cafés close in the afternoon and reopen late at night, often staying open until dawn. The village square lit by dim lights with the sound of conversation is a Greece that exists outside the tourist version of itself.", el: "Το χωριό που ξυπνά τα μεσάνυχτα. Καταστήματα και καφέ κλείνουν το απόγευμα και ανοίγουν αργά τη νύχτα." } },
+        { title: { en: "Nas & the Temple of Artemis", el: "Νας & Ναός Αρτέμιδος" }, text: { en: "A sacred bay on the northwest coast at the mouth of a river running through a plane-tree gorge. Backed by the ruins of the ancient Temple of Artemis — one of the oldest Artemis sanctuaries in the Aegean. A single taverna serves grilled fish and Ikarian wine.", el: "Ιερός όρμος με ερείπια του αρχαίου Ναού της Αρτέμιδος. Μία ταβέρνα σερβίρει ψητό ψάρι και ικαριώτικο κρασί." } },
+        { title: { en: "Therma — Hot Springs", el: "Θερμά — Ιαματικές Πηγές" }, text: { en: "Thermal springs used since antiquity. Radioactive mineral waters emerge at around 33°C and are credited with therapeutic properties. Several official spa facilities and informal bathing spots where hot springs meet cold sea water.", el: "Ιαματικές πηγές από την αρχαιότητα. Νερά 33°C με θεραπευτικές ιδιότητες. Επίσημες εγκαταστάσεις και ανεπίσημα σημεία." } },
+        { title: { en: "Seychelles Beach", el: "Παραλία Σεϋχέλλες" }, text: { en: "Requires a boat trip or a serious hike — but the name reflects something true about the colour of the water. Consistently named among the most beautiful beaches in the Aegean by those who have made the effort.", el: "Απαιτεί βαρκάδα ή σοβαρή πεζοπορία. Από τις ομορφότερες παραλίες του Αιγαίου." } },
+        { title: { en: "Messakti & Livadi", el: "Μεσακτή & Λιβάδι" }, text: { en: "Long sandy beaches on the north coast near Armenistis. Exposed to the Meltemi wind in summer. Together they form the most developed beach area on the island.", el: "Μακριές αμμώδεις παραλίες στη βόρεια ακτή. Εκτεθειμένες στο μελτέμι." } },
+        { title: { en: "Faros Beach", el: "Παραλία Φάρος" }, text: { en: "A quiet beach near Agios Kirykos, accessible without difficulty. Good for a relaxed day by the water close to the capital.", el: "Ήσυχη παραλία κοντά στον Άγιο Κήρυκο, εύκολα προσβάσιμη." } },
+      ]
+    },
+    {
+      title: { en: "Food, Drink & The Panigiri", el: "Φαγητό, Ποτό & Πανηγύρι" },
+      layout: "list",
+      items: [
+        { title: { en: "Lentil soup (fakés) & black-eyed peas", el: "Φακές & μαυρομάτικα" }, text: { en: "Staples of the Ikarian diet. Cooked with local olive oil and wild thyme. Consistent with what longevity research identifies as key dietary elements.", el: "Βασικά στοιχεία της ικαριώτικης διατροφής. Μαγειρεμένα με τοπικό ελαιόλαδο." } },
+        { title: { en: "Wild greens (horta) & soufiko", el: "Χόρτα & σουφίκο" }, text: { en: "Wild greens gathered from the hillsides. Soufiko is a summer vegetable stew cooked slowly in olive oil — the Ikarian version of ratatouille.", el: "Άγρια χόρτα. Το σουφίκο είναι καλοκαιρινό στιφάδο λαχανικών." } },
+        { title: { en: "Ikarian wine & honey", el: "Ικαριώτικο κρασί & μέλι" }, text: { en: "Strong, tannic red wine not widely exported — drunk in small glasses with meals. Dark honey from mountain heather and wild thyme, used medicinally and eaten raw with bread and local kathoura cheese.", el: "Δυνατό κόκκινο κρασί. Σκούρο μέλι από ρείκι και θυμάρι." } },
+        { title: { en: "The panigiri festival", el: "Το πανηγύρι" }, text: { en: "Each village celebrates its patron saint's day with an outdoor festival: communal food, local wine, traditional music and dancing until dawn. Everyone attends. There is no entrance fee. Visiting a panigiri is the most direct experience of what makes Ikarian social life distinctive.", el: "Κάθε χωριό γιορτάζει τον άγιο του. Κοινό φαγητό, κρασί, μουσική και χορός ως το πρωί. Η πιο αυθεντική εμπειρία." } },
+      ]
+    },
+    {
+      title: { en: "Best Time to Visit", el: "Καλύτερη Εποχή" },
+      layout: "list",
+      items: [
+        { title: { en: "May–June", el: "Μάιος–Ιούνιος" }, text: { en: "The island is green from spring rain. Warm but not extreme. Good availability of accommodation.", el: "Το νησί είναι πράσινο. Ζεστά αλλά όχι ακραία. Καλή διαθεσιμότητα." } },
+        { title: { en: "July–August", el: "Ιούλιος–Αύγουστος" }, text: { en: "Peak summer and the panigiri season. The island fills in August — still quiet by Cycladic standards. Book accommodation early.", el: "Κορυφή καλοκαιριού και περίοδος πανηγυριών. Το νησί γεμίζει τον Αύγουστο." } },
+        { title: { en: "September–October", el: "Σεπτέμβριος–Οκτώβριος" }, text: { en: "Arguably the best months. Summer crowds have left. Sea remains warm. Hillsides turn golden. Tavernas and accommodation remain open.", el: "Ίσως οι καλύτεροι μήνες. Η θάλασσα ζεστή, τα πλήθη έχουν φύγει." } },
+      ]
+    },
+    {
+      title: { en: "Where to Stay", el: "Πού να Μείνεις" },
+      layout: "list",
+      items: [
+        { title: { en: "Agios Kirykos area", el: "Περιοχή Αγ. Κήρυκου" }, text: { en: "Practical, convenient for the ferry. Good base for exploring the south coast. Most amenities on the island are here.", el: "Πρακτικό, βολικό για το πλοίο. Καλή βάση για νότια ακτή." } },
+        { title: { en: "Armenistis area", el: "Περιοχή Αρμενιστή" }, text: { en: "Closest to the best beaches with a bohemian atmosphere. The most popular base for summer visitors. Good tavernas.", el: "Κοντά στις καλύτερες παραλίες. Η πιο δημοφιλής βάση." } },
+        { title: { en: "Christos Raches", el: "Χριστός Ραχών" }, text: { en: "For the experience of the mountain village and the inverted daily schedule. Unique atmosphere.", el: "Για την εμπειρία του ορεινού χωριού." } },
+        { title: { en: "Nas", el: "Νας" }, text: { en: "Very limited accommodation but an extraordinary setting by the sacred bay. A few guesthouses and studios.", el: "Πολύ περιορισμένη διαμονή σε εξαιρετική τοποθεσία." } },
+      ]
+    },
+    {
+      title: { en: "FAQ — Ikaria Essentials", el: "Συχνές Ερωτήσεις" },
+      layout: "faq",
+      items: [
+        { title: { en: "Why do Ikarians live so long?", el: "Γιατί ζουν τόσο οι Ικαριώτες;" }, text: { en: "The research identifies several interacting factors: a traditional diet rich in legumes, olive oil and wild plants; daily physical activity built into the terrain; strong social connections through festivals and shared meals; long sleep including afternoon naps; and a cultural approach to time that reduces chronic stress.", el: "Διατροφή, σωματική δραστηριότητα, κοινωνικές συνδέσεις, ύπνος και πολιτισμική στάση απέναντι στον χρόνο." } },
+        { title: { en: "Is Ikaria difficult to get to?", el: "Είναι δύσκολο να φτάσω;" }, text: { en: "The ferry from Piraeus takes 8–10 hours, which puts some travellers off. Those who make the journey typically find it worthwhile. Flights from Athens take 45 minutes but are limited.", el: "Το πλοίο κάνει 8–10 ώρες. Οι πτήσεις είναι 45 λεπτά αλλά περιορισμένες." } },
+        { title: { en: "Do I need a car?", el: "Χρειάζομαι αυτοκίνητο;" }, text: { en: "Yes, realistically. The island is large and the bus service is minimal. Renting a car gives you access to the full island.", el: "Ναι. Το νησί είναι μεγάλο και τα λεωφορεία ελάχιστα." } },
+        { title: { en: "When are the panigiri festivals?", el: "Πότε γίνονται τα πανηγύρια;" }, text: { en: "Most are in July and August, with the largest gatherings in late July. Ask locally for specific dates — the calendar changes annually.", el: "Ιούλιος και Αύγουστος. Ρωτήστε τοπικά." } },
+        { title: { en: "How long should I stay?", el: "Πόσες μέρες να μείνω;" }, text: { en: "Minimum four days, ideally a week. Ikaria takes time to reveal itself. Visitors who stay only two days often leave confused. Those who stay a week often don't want to leave.", el: "Τέσσερις μέρες ελάχιστα, ιδανικά μία εβδομάδα." } },
+      ]
+    },
   ]
 };

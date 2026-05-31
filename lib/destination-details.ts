@@ -807,4 +807,65 @@ export const destinationDetails: Record<string, DestinationDetail> = {
       }
     },
   },
+  ikaria: {
+    overview: {
+      en: "Ikaria is one of the world's five Blue Zones, studied extensively by longevity researchers from around the world. What makes it extraordinary is not a single secret but a combination of factors that reinforce each other over a lifetime: a traditional diet rich in legumes, olive oil and wild herbs; mountainous terrain that makes daily walking unavoidable; a social culture organized around shared meals, dancing at panigiri festivals, and unhurried conversation; long sleep including afternoon naps; and a genuine cultural indifference to punctuality that reduces chronic time-stress. Ikaria does not perform its distinctiveness — it simply continues at its own pace, and that pace turns out to be remarkably good for living long.",
+      el: "Η Ικαρία είναι μία από τις πέντε Μπλε Ζώνες του κόσμου. Αυτό που την κάνει εξαιρετική δεν είναι ένα μυστικό αλλά ένας συνδυασμός παραγόντων: παραδοσιακή διατροφή πλούσια σε όσπρια, ελαιόλαδο και άγρια χόρτα, ορεινό έδαφος που κάνει το καθημερινό περπάτημα αναπόφευκτο, κοινωνική κουλτούρα γύρω από κοινά γεύματα και χορό, μεσημεριανός ύπνος, και μια γνήσια πολιτισμική αδιαφορία για την ώρα που μειώνει το άγχος."
+    },
+    pageIncludes: {
+      en: [
+        "What makes Ikaria a Blue Zone — the research explained",
+        "The Ikarian approach to longevity: diet, terrain, social life, rest",
+        "Complete guide to villages, beaches and the panigiri festival",
+        "Getting to Ikaria (ferry and flight options)",
+        "Where to stay — area-by-area recommendations",
+        "Best time to visit for festivals, swimming or solitude",
+      ],
+      el: [
+        "Τι κάνει την Ικαρία Μπλε Ζώνη — η έρευνα εξηγείται",
+        "Η ικαριώτικη προσέγγιση στη μακροζωία",
+        "Πλήρης οδηγός για χωριά, παραλίες και πανηγύρια",
+        "Πώς να φτάσεις στην Ικαρία",
+        "Πού να μείνεις — προτάσεις ανά περιοχή",
+        "Καλύτερη εποχή για πανηγύρια, μπάνιο ή ησυχία",
+      ],
+    },
+    perfectFor: {
+      en: [
+        "Travellers curious about the Blue Zone phenomenon",
+        "Hikers and walkers who want mountainous terrain and stone paths",
+        "Food lovers seeking authentic, regional Greek cuisine",
+        "Festival-goers who want to experience a genuine panigiri",
+        "Anyone tired of the curated Greek island experience",
+      ],
+      el: [
+        "Ταξιδιώτες που θέλουν να ζήσουν τη Μπλε Ζώνη",
+        "Λάτρεις της πεζοπορίας και των ορεινών μονοπατιών",
+        "Λάτρεις του φαγητού που ψάχνουν αυθεντική κουζίνα",
+        "Λάτρεις των φεστιβάλ για ένα γνήσιο πανηγύρι",
+        "Όσους έχει κουράσει η τουριστική εμπειρία των νησιών",
+      ],
+    },
+    honestAdvice: {
+      title: { en: "Honest Advice — What to Know Before You Go", el: "Ειλικρινής Συμβουλή — Τι να Γνωρίζετε Πριν Πάτε" },
+      alert: {
+        en: "What nobody tells you: Ikaria requires patience. The road system is narrow and winding. The bus service runs on a schedule that is best described as aspirational. The ferry takes 8–10 hours from Athens. But every person who has struggled with these logistics and stayed long enough will tell you the same thing: the island changes you. Come prepared for difficulty, stay for the transformation.",
+        el: "Αυτό που δε σου λέει κανείς: Η Ικαρία απαιτεί υπομονή. Οι δρόμοι είναι στενοί και στριφογυριστοί. Το πλοίο κάνει 8–10 ώρες. Αλλά όλοι όσοι έχουν ταλαιπωρηθεί με τη μετακίνηση και έμειναν αρκετό καιρό θα σου πουν το ίδιο: το νησί σε αλλάζει. Έλα προετοιμασμένος για ταλαιπωρία, μείνε για τη μεταμόρφωση."
+      },
+      items: {
+        en: [
+          "Expecting quick, organized logistics — Ikaria runs on \"island time\" and nothing happens quickly",
+          "Limited nightlife — there is no Mykonos-style club scene. Evenings are for conversation, food and rest",
+          "Santorini-style luxury resorts — Ikaria has no international hotel chains. Accommodation is simple and family-run",
+          "Beach clubs and water sports — Ikaria's beaches are natural and undeveloped. The trade-off is extraordinary beauty and solitude",
+        ],
+        el: [
+          "✕ Να περιμένεις γρήγορη, οργανωμένη μετακίνηση — η Ικαρία λειτουργεί με \"νησιώτικο χρόνο\"",
+          "✕ Νυχτερινή ζωή — δεν υπάρχει club σκηνή. Τα βράδια είναι για συζήτηση, φαγητό και ξεκούραση",
+          "✕ Πολυτελή θέρετρα — η Ικαρία δεν έχει διεθνείς αλυσίδες ξενοδοχείων. Η διαμονή είναι απλή",
+          "✕ Beach clubs — οι παραλίες είναι φυσικές και αναξιοποίητες. Ο συμβιβασμός δίνει εξαιρετική ομορφιά και ησυχία",
+        ],
+      },
+    },
+  },
 };

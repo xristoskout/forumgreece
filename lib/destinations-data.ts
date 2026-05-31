@@ -947,6 +947,40 @@ export const destinations: Destination[] = [
         el: "Πλήρης ταξιδιωτικός οδηγός για τη Σκιάθο: Κουκουναριές και Λαλάρια, Κάστρο, εκδρομές σε Τσουγκριά, νυχτερινή ζωή, διαμονή και αυθεντικές συμβουλές για τις Σποράδες."
       }
     }
+  },
+  {
+    slug: "ikaria",
+    name: "Ikaria",
+    region: { en: "Eastern Aegean", el: "Ανατολικό Αιγαίο" },
+    blurb: {
+      en: "Ikaria is one of the world's Blue Zones — where people regularly live past 90. A wild, beautiful island in the Eastern Aegean with a pace of life unlike anywhere else in Greece.",
+      el: "Η Ικαρία είναι μία από τις Μπλε Ζώνες του κόσμου — όπου οι άνθρωποι ζουν τακτικά πάνω από 90. Ένα άγριο, όμορφο νησί στο Ανατολικό Αιγαίο."
+    },
+    image: "/images/ikaria.webp",
+    overview: {
+      en: "Ikaria is one of the world's five Blue Zones — the rare communities where reaching 90 or 100 is routine rather than exceptional. Its pitch is stranger and harder to package than Santorini's caldera or Mykonos's nightlife: people here live unusually long lives, and nobody is entirely sure why. What researchers found was a combination that reinforces itself: a traditional diet, terrain that requires walking, social culture built around communal meals and dancing, long sleep including afternoon naps, and a collective indifference to schedules. Ikaria doesn't perform its distinctiveness. It simply continues at its own pace.",
+      el: "Η Ικαρία είναι μία από τις πέντε Μπλε Ζώνες του κόσμου — σπάνιες κοινότητες όπου το να φτάνεις τα 90 ή 100 είναι συνηθισμένο. Αυτό που βρήκαν οι ερευνητές ήταν ένας συνδυασμός: παραδοσιακή διατροφή, έδαφος που απαιτεί περπάτημα, κοινωνική κουλτούρα γύρω από κοινά γεύματα και χορό, μεσημεριανός ύπνος, και μια συλλογική αδιαφορία για τα ωράρια."
+    },
+    highlights: {
+      en: ["Blue Zone longevity", "Panigiri festivals", "Thermal springs at Therma", "Seychelles Beach"],
+      el: ["Μπλε Ζώνη μακροζωίας", "Πανηγύρια", "Ιαματικές πηγές Θερμά", "Παραλία Σεϋχέλλες"]
+    },
+    guideLinks: [
+      {
+        href: "/travel-info/hidden-greek-islands",
+        label: { en: "Hidden Greek Islands Guide", el: "Οδηγός Κρυμμένων Νησιών" }
+      }
+    ],
+    seo: {
+      title: {
+        en: "Ikaria Travel Guide: The Blue Zone Island of Longevity",
+        el: "Ικαρία: Ταξιδιωτικός Οδηγός — Το Νησί της Μακροζωίας"
+      },
+      description: {
+        en: "Complete travel guide to Ikaria: Blue Zone longevity secrets, panigiri festivals, thermal springs, Seychelles Beach, villages, food, where to stay and honest insider tips for the Eastern Aegean.",
+        el: "Πλήρης ταξιδιωτικός οδηγός για την Ικαρία: Μπλε Ζώνη, πανηγύρια, ιαματικές πηγές, παραλία Σεϋχέλλες, χωριά, φαγητό και αυθεντικές συμβουλές."
+      }
+    }
   }
 ];
 

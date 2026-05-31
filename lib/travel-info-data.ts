@@ -1548,6 +1548,162 @@ export const travelInfoGuides: GuideCard[] = [
         }
       }
     ]
+  },
+  {
+    slug: "hidden-greek-islands",
+    title: {
+      en: "Hidden Greek Islands: 10 Off-the-Beaten-Path Destinations Worth Finding",
+      el: "Κρυμμένα Ελληνικά Νησιά: 10 Προορισμοί Μακριά από τα Συνηθισμένα"
+    },
+    description: {
+      en: "Skip the crowds. These 10 hidden Greek islands offer dramatic landscapes, authentic villages, and the Greece most tourists never see — from tiny Kastellorizo to wild Ikaria.",
+      el: "Αφήστε πίσω τα πλήθη. Αυτά τα 10 κρυμμένα νησιά προσφέρουν εντυπωσιακά τοπία, αυθεντικά χωριά και την Ελλάδα που οι περισσότεροι τουρίστες δεν βλέπουν ποτέ."
+    },
+    image: "/images/hero-greece.webp",
+    overview: {
+      en: "Greece has over 6,000 islands. Most travellers see three of them.\n\nSantorini and Mykonos are beautiful — nobody disputes that. But the Greece that stays with you long after you leave is often found elsewhere: in a fishing village where the taverna has no menu, on a ferry that runs twice a week, in a caldera that nobody has photographed a thousand times already.\n\nThese ten islands will not appear on every Instagram feed. Some require patience to reach. All of them reward it.\n\nThe obvious reason to visit is fewer crowds. But that understates it. When an island hasn't been shaped by mass tourism, the rhythms of daily life stay intact. These are islands where Greece feels like itself.",
+      el: "Η Ελλάδα έχει πάνω από 6.000 νησιά. Οι περισσότεροι ταξιδιώτες βλέπουν τρία από αυτά.\n\nΗ Σαντορίνη και η Μύκονος είναι όμορφες — κανείς δεν το αμφισβητεί. Αλλά η Ελλάδα που μένει μαζί σου πολύ μετά την αναχώρηση βρίσκεται συχνά αλλού: σε ένα ψαροχώρι όπου η ταβέρνα δεν έχει μενού, σε ένα πλοίο που κάνει δρομολόγιο δύο φορές την εβδομάδα, σε μια καλντέρα που κανείς δεν έχει φωτογραφίσει χίλιες φορές.\n\nΑυτά τα δέκα νησιά δεν θα εμφανιστούν σε κάθε Instagram feed. Κάποια απαιτούν υπομονή για να τα φτάσεις. Όλα ανταμείβουν."
+    },
+    points: {
+      en: [
+        "Kastellorizo is the most remote village in the Aegean with fewer than 500 residents",
+        "Ikaria is one of the world's five Blue Zones — the island where people live longest",
+        "Folegandros has the Cycladic beauty without the selfie crowds",
+        "Sifnos is the food island with more chefs per capita than anywhere in Greece",
+        "Astypalea's butterfly shape hides exceptional diving and a Venetian fortress",
+        "Koufonisia offers Maldives-style turquoise water at Greek prices",
+        "Amorgos has the most dramatic monastery setting in the Aegean",
+        "Halki has 300 people and no cars — declared a Peace Island by UNESCO",
+        "Tilos is the first energy self-sufficient island in the Mediterranean",
+        "Serifos offers authentic Cycladic life with excellent walking paths"
+      ],
+      el: [
+        "Το Καστελλόριζο είναι το πιο απομακρυσμένο χωριό του Αιγαίου με λιγότερους από 500 κατοίκους",
+        "Η Ικαρία είναι μία από τις πέντε Μπλε Ζώνες στον κόσμο — το νησί της μακροζωίας",
+        "Η Φολέγανδρος έχει την κυκλαδίτικη ομορφιά χωρίς τα πλήθη",
+        "Η Σίφνος έχει περισσότερους σεφ ανά κάτοικο από οπουδήποτε αλλού στην Ελλάδα",
+        "Η Αστυπάλαια προσφέρει εξαιρετικές καταδύσεις και ένα βενετσιάνικο κάστρο",
+        "Η Κουφονησία έχει νερά σαν τις Μαλδίβες σε ελληνικές τιμές",
+        "Η Αμοργός έχει την πιο εντυπωσιακή τοποθεσία μοναστηριού στο Αιγαίο",
+        "Η Χάλκη έχει 300 κατοίκους και καθόλου αυτοκίνητα",
+        "Η Τήλος είναι το πρώτο ενεργειακά αυτάρκες νησί στη Μεσόγειο",
+        "Η Σέριφος προσφέρει αυθεντική κυκλαδίτικη ζωή με εξαιρετικά μονοπάτια"
+      ]
+    },
+    sections: [
+      {
+        title: { en: "1. Kastellorizo — The Most Remote Village in the Aegean", el: "1. Καστελλόριζο — Το Πιο Απομακρυσμένο Χωριό του Αιγαίου" },
+        content: {
+          en: "Island group: Dodecanese | Getting there: Ferry from Rhodes (2–3 times per week) or small plane from Rhodes\n\nKastellorizo — officially Megisti — is the easternmost point of Greece, sitting just 2 kilometres from the Turkish coast. Its harbour, lined with neoclassical mansions in faded terracotta and ochre, is one of the most beautiful and most overlooked in the entire Mediterranean. The island has fewer than 500 permanent residents. There are no cars to speak of, no beaches in the traditional sense, and no nightlife. What it has is something harder to find: complete stillness, extraordinary clarity of light, and the feeling that you have arrived somewhere genuinely out of reach.\n\nThe Galazia Spilia — the Blue Cave — is the island's most famous natural feature, reached only by small boat. The cave floods with an intense cobalt light when the sun hits the water at the right angle. The harbour front is the heart of the island: a crescent of painted houses reflected in deep, still water. The Lycian tomb carved into the cliff above the harbour is a remnant of an ancient civilization that once ruled this coastline.\n\nPopulation: Around 500 | Ferry frequency: 2–3 sailings per week from Rhodes | Stay: 2–3 nights minimum | Season: May–October | Note: Day-trippers come from Rhodes in summer — stay overnight and the island is yours after 4pm.",
+          el: "Νησιωτική ομάδα: Δωδεκάνησα | Πρόσβαση: Πλοίο από Ρόδο (2–3 φορές/εβδομάδα) ή μικρό αεροπλάνο από Ρόδο\n\nΤο Καστελλόριζο είναι το ανατολικότερο σημείο της Ελλάδας, μόλις 2 χιλιόμετρα από την τουρκική ακτή. Το λιμάνι του με τα νεοκλασικά αρχοντικά είναι από τα ομορφότερα και πιο παραγνωρισμένα της Μεσογείου. Το νησί έχει λιγότερους από 500 μόνιμους κατοίκους, καθόλου αυτοκίνητα, και καμία νυχτερινή ζωή. Αυτό που έχει είναι κάτι πιο δύσκολο να βρεις: απόλυτη ησυχία, εξαιρετική διαύγεια φωτός, και η αίσθηση ότι έφτασες κάπου πραγματικά απομακρυσμένο.\n\nΗ Γαλάζια Σπηλιά είναι το πιο διάσημο φυσικό αξιοθέατο, προσβάσιμη μόνο με μικρό σκάφος. Το λιμάνι με τα ζωγραφισμένα σπίτια είναι η καρδιά του νησιού. Ο λυκικός τάφος λαξευμένος στον βράχο πάνω από το λιμάνι είναι κατάλοιπο αρχαίου πολιτισμού."
+        }
+      },
+      {
+        title: { en: "2. Ikaria — The Island Where People Forget to Die", el: "2. Ικαρία — Το Νησί όπου οι Άνθρωποι Ξεχνούν να Πεθάνουν" },
+        content: {
+          en: "Island group: Eastern Aegean | Getting there: Ferry from Piraeus (8–10 hours) or Samos; occasional flights from Athens\n\nIkaria is one of the world's five Blue Zones — the rare places on earth where an unusually high proportion of the population lives past 90. The island has been studied by epidemiologists, sociologists, and food scientists trying to understand what its residents do differently. The short answer seems to be: not much, deliberately. Ikarians sleep late, eat locally, walk the terrain, drink wine in the evening, and observe a social culture built around shared meals and unhurried conversation. The island has no particular interest in adjusting itself for tourism. It remains, defiantly, itself.\n\n→ Full guide: [Ikaria — The Island of Longevity](/destinations/ikaria)",
+          el: "Νησιωτική ομάδα: Ανατολικό Αιγαίο | Πρόσβαση: Πλοίο από Πειραιά (8–10 ώρες) ή Σάμο\n\nΗ Ικαρία είναι μία από τις πέντε Μπλε Ζώνες του κόσμου — σπάνια μέρη όπου ένα ασυνήθιστα υψηλό ποσοστό πληθυσμού ζει πάνω από 90 έτη. Οι Ικαριώτες κοιμούνται αργά, τρώνε τοπικά, περπατούν το έδαφος, πίνουν κρασί το βράδυ και ζουν με κοινωνική κουλτούρα γύρω από κοινά γεύματα. Το νησί δεν ενδιαφέρεται να προσαρμοστεί για τον τουρισμό. Παραμένει, πεισματικά, ο εαυτός του."
+        }
+      },
+      {
+        title: { en: "3. Folegandros — The Cyclades Without the Crowds", el: "3. Φολέγανδρος — Οι Κυκλάδες Χωρίς τα Πλήθη" },
+        content: {
+          en: "Island group: Cyclades | Getting there: Ferry from Piraeus (6–8 hours) via Milos or Santorini\n\nFolegandros sits between Milos and Santorini but occupies an entirely different psychological space. It has the whitewashed geometry, the clifftop village, and the sharp Aegean light of the classic Cyclades — but the scale stays intimate and the atmosphere stays calm.\n\nThe Chora of Folegandros is considered by many to be the most beautiful village in the Cyclades. It sits on a clifftop 200 metres above sea level, accessed through arched passageways and tiny squares shaded by hibiscus and bougainvillea. The Church of Panagia, reached by a steep path up a bare limestone hill, offers one of the best views in the Aegean.\n\nBeaches are reached on foot or by the island's single bus. Katergo beach, accessible only by boat or a 45-minute walk, rewards the effort.\n\nPopulation: Around 750 | Best time: May–June, September | Stay: 3–4 days | Note: No ATM on the island reliably — bring cash.",
+          el: "Νησιωτική ομάδα: Κυκλάδες | Πρόσβαση: Πλοίο από Πειραιά (6–8 ώρες)\n\nΗ Φολέγανδρος βρίσκεται ανάμεσα στη Μήλο και τη Σαντορίνη αλλά ανήκει σε εντελώς διαφορετικό ψυχολογικό χώρο. Έχει την ασπρισμένη γεωμετρία, το χωριό στην κορυφή του γκρεμού και το αεικίνητο κυκλαδίτικο φως — αλλά η κλίμακα παραμένει οικεία και η ατμόσφαιρα ήρεμη.\n\nΗ Χώρα της Φολεγάνδρου θεωρείται από πολλούς το ομορφότερο χωριό των Κυκλάδων, σε υψόμετρο 200 μέτρων. Η παραλία Κάτεργο, προσβάσιμη μόνο με βάρκα ή 45λεπτη πεζοπορία, ανταμείβει την προσπάθεια."
+        }
+      },
+      {
+        title: { en: "4. Sifnos — The Food Island the World Hasn't Fully Found Yet", el: "4. Σίφνος — Το Γαστρονομικό Νησί που ο Κόσμος Δεν Έχει Ανακαλύψει Ακόμα" },
+        content: {
+          en: "Island group: Cyclades | Getting there: Ferry from Piraeus (3–4 hours on fast ferry)\n\nSifnos is quietly famous among Greeks for two things: its cuisine and its pottery. The island has produced more professional chefs per capita than anywhere else in Greece, and its culinary traditions — revithia (chickpea stew slow-cooked overnight in clay pots), mastelo (lamb with dill wine), local honey — are genuinely regional rather than pan-Hellenic.\n\nThe Apollonia main village is a network of interconnected white streets and squares. The footpath system that links the island's villages is one of the best-maintained walking networks in the Cyclades, passing through ancient towers, chapels, and terraced hillsides. The pottery tradition is visible everywhere: handmade ceramics fill shop windows, and working kilns can be visited in Kamares.",
+          el: "Νησιωτική ομάδα: Κυκλάδες | Πρόσβαση: Πλοίο από Πειραιά (3–4 ώρες με fast ferry)\n\nΗ Σίφνος είναι διάσημη μεταξύ των Ελλήνων για δύο πράγματα: την κουζίνα και την αγγειοπλαστική της. Το νησί έχει βγάλει περισσότερους επαγγελματίες σεφ ανά κάτοικο από οπουδήποτε αλλού στην Ελλάδα. Οι παραδόσεις της —ρεβίθια, μαστέλο, τοπικό μέλι— είναι γνήσια τοπικές. Το δίκτυο μονοπατιών που συνδέει τα χωριά είναι από τα καλύτερα συντηρημένα στις Κυκλάδες."
+        }
+      },
+      {
+        title: { en: "5. Astypalea — The Butterfly of the Aegean", el: "5. Αστυπάλαια — Η Πεταλούδα του Αιγαίου" },
+        content: {
+          en: "Island group: Dodecanese | Getting there: Ferry from Piraeus (12 hours) or Kos; flights from Athens\n\nAstypalea's shape — two triangles connected by a narrow isthmus — seen from above resembles a butterfly with open wings, which explains the island's poetic reputation. The Kastro, a medieval fortress village built by the Venetians, sits above the main port and is one of the best-preserved castle settlements in the Aegean. Underwater, Astypalea is exceptional. The waters around the island are among the clearest in the Aegean, and several dive sites are accessible to all levels.",
+          el: "Νησιωτική ομάδα: Δωδεκάνησα | Πρόσβαση: Πλοίο από Πειραιά (12 ώρες) ή Κω\n\nΤο σχήμα της Αστυπάλαιας — δύο τρίγωνα συνδεδεμένα με έναν στενό ισθμό — μοιάζει από ψηλά με πεταλούδα. Το Κάστρο, ένας μεσαιωνικός οικισμός των Ενετών, είναι από τους καλύτερα διατηρημένους οχυρωμένους οικισμούς του Αιγαίου. Υποβρύχια, η Αστυπάλαια είναι εξαιρετική — τα νερά της είναι από τα πιο καθαρά στο Αιγαίο."
+        }
+      },
+      {
+        title: { en: "6. Koufonisia — Tiny, Turquoise, and Almost Unknown", el: "6. Κουφονήσια — Μικρά, Τυρκουάζ και Σχεδόν Άγνωστα" },
+        content: {
+          en: "Island group: Small Cyclades (between Naxos and Amorgos) | Getting there: Ferry from Naxos or Amorgos (1–2 hours)\n\nKoufonisia is two small islands — Ano Koufonisi and Kato Koufonisi — with a combined population of around 400. The beaches here, particularly Pori and Fanos, have water that turns an improbable shade of turquoise over white sand and is routinely described as the best swimming water in the Cyclades. The island fills in August; outside of peak season it remains genuinely quiet.",
+          el: "Νησιωτική ομάδα: Μικρές Κυκλάδες | Πρόσβαση: Πλοίο από Νάξο ή Αμοργό (1–2 ώρες)\n\nΗ Κουφονησία είναι δύο μικρά νησιά με συνολικό πληθυσμό περίπου 400 κατοίκων. Οι παραλίες εδώ, ιδιαίτερα το Πόρι και ο Φάνος, έχουν νερό που παίρνει μια απίθανη απόχρωση τυρκουάζ πάνω από λευκή άμμο. Το νησί γεμίζει τον Αύγουστο· εκτός high season παραμένει πραγματικά ήσυχο."
+        }
+      },
+      {
+        title: { en: "7. Amorgos — Wild, Dramatic, Unmistakably Greek", el: "7. Αμοργός — Άγρια, Δραματική, Αναμφισβήτητα Ελληνική" },
+        content: {
+          en: "Island group: Cyclades | Getting there: Ferry from Piraeus (9–12 hours)\n\nAmorgos is long, narrow, and spectacularly vertical. The island's most famous image is the Monastery of Hozoviotissa, built directly into a white cliff face above the Aegean — one of the most dramatic architectural images in Greece. The main Chora is among the oldest continuously inhabited settlements in the Cyclades. The dive site at the wreck of the Olympia — a ship that went down in 1929 — is considered one of the finest wreck dives in the Mediterranean.",
+          el: "Νησιωτική ομάδα: Κυκλάδες | Πρόσβαση: Πλοίο από Πειραιά (9–12 ώρες)\n\nΗ Αμοργός είναι μακριά, στενή και θεαματικά κάθετη. Η Μονή της Χοζοβιώτισσας, χτισμένη απευθείας σε έναν λευκό βράχο πάνω από το Αιγαίο, είναι μια από τις πιο δραματικές αρχιτεκτονικές εικόνες της Ελλάδας. Το ναυάγιο του Olympia — πλοίο που βυθίστηκε το 1929 — θεωρείται ένα από τα καλύτερα wreck dives της Μεσογείου."
+        }
+      },
+      {
+        title: { en: "8. Halki — 300 People and No Cars", el: "8. Χάλκη — 300 Κάτοικοι και Καθόλου Αυτοκίνητα" },
+        content: {
+          en: "Island group: Dodecanese (near Rhodes) | Getting there: Short ferry from Rhodes (1.5 hours)\n\nHalki has fewer than 300 permanent residents, no cars, and a single settlement — Emporio — whose neoclassical harbour mansions were built by wealthy sponge merchants in the 19th century. The island was declared a Peace and Friendship Island by UNESCO and has maintained that spirit ever since. One of the quietest places in the Aegean, and one of the most visually striking.",
+          el: "Νησιωτική ομάδα: Δωδεκάνησα | Πρόσβαση: Σύντομο πλοίο από Ρόδο (1,5 ώρα)\n\nΗ Χάλκη έχει λιγότερους από 300 μόνιμους κατοίκους, καθόλου αυτοκίνητα, και έναν μοναδικό οικισμό — το Εμποριό — με νεοκλασικά αρχοντικά χτισμένα από πλούσιους σπογγεμπόρους. Το νησί ανακηρύχθηκε Νησί Ειρήνης και Φιλίας από την UNESCO."
+        }
+      },
+      {
+        title: { en: "9. Tilos — The Island of Protected Nature", el: "9. Τήλος — Το Νησί της Προστατευμένης Φύσης" },
+        content: {
+          en: "Island group: Dodecanese | Getting there: Ferry from Rhodes (2–3 hours)\n\nTilos made international headlines in 2018 when it became the first energy self-sufficient island in the Mediterranean, running entirely on wind and solar power. It is also a bird sanctuary — the island lies on a major migration route and hosts species rarely seen elsewhere in Greece. The island's commitment to sustainable tourism is genuine and results in exceptional care of its natural environment.",
+          el: "Νησιωτική ομάδα: Δωδεκάνησα | Πρόσβαση: Πλοίο από Ρόδο (2–3 ώρες)\n\nΗ Τήλος έγινε διεθνής είδηση το 2018 όταν έγινε το πρώτο ενεργειακά αυτάρκες νησί της Μεσογείου, λειτουργώντας εξ ολοκλήρου με αιολική και ηλιακή ενέργεια. Είναι επίσης καταφύγιο πουλιών — βρίσκεται πάνω σε μεγάλη μεταναστευτική διαδρομή."
+        }
+      },
+      {
+        title: { en: "10. Serifos — Where the Wind Lives", el: "10. Σέριφος — Εκεί που Ζει ο Άνεμος" },
+        content: {
+          en: "Island group: Cyclades | Getting there: Ferry from Piraeus (3–4 hours)\n\nSerifos gets fewer visitors than its neighbours Sifnos and Milos, which means the atmosphere in its hilltop Chora — built on a dramatic peak above the port — remains genuinely local. The beaches at Livadi and Psili Ammos are excellent; the walking paths between villages are among the most scenic in the Cyclades.",
+          el: "Νησιωτική ομάδα: Κυκλάδες | Πρόσβαση: Πλοίο από Πειραιά (3–4 ώρες)\n\nΗ Σέριφος δέχεται λιγότερους επισκέπτες από τις γειτονικές Σίφνο και Μήλο, πράγμα που σημαίνει ότι η ατμόσφαιρα στη Χώρα της — χτισμένη σε μια δραματική κορυφή πάνω από το λιμάνι — παραμένει γνήσια τοπική. Οι παραλίες στο Λιβάδι και τον Ψιλό Άμμο είναι εξαιρετικές."
+        }
+      }
+    ],
+    tips: {
+      en: [
+        "Most of these islands have limited ferry connections outside of June–September — check Ferryhopper before building your itinerary",
+        "Combining Kastellorizo with Folegandros in a single week is not realistic — choose one island group and explore it",
+        "Bring cash — smaller islands have limited or no ATMs",
+        "May, June and September offer the best weather, open businesses and manageable crowds",
+        "Western Cyclades route: Athens → Sifnos → Folegandros → Serifos → Athens",
+        "Eastern Dodecanese route: Rhodes → Kastellorizo → Halki → Tilos → Rhodes",
+        "Central Aegean route: Naxos → Koufonisia → Amorgos → Ikaria"
+      ],
+      el: [
+        "Τα περισσότερα από αυτά τα νησιά έχουν περιορισμένα δρομολόγια πλοίων εκτός Ιουνίου–Σεπτεμβρίου",
+        "Δεν είναι ρεαλιστικό να συνδυάσεις Καστελλόριζο με Φολέγανδρο σε μία εβδομάδα",
+        "Φέρε μετρητά — τα μικρά νησιά έχουν περιορισμένα ΑΤΜ",
+        "Μάιος, Ιούνιος και Σεπτέμβριος προσφέρουν τον καλύτερο καιρό",
+        "Δυτικές Κυκλάδες: Αθήνα → Σίφνος → Φολέγανδρος → Σέριφος → Αθήνα",
+        "Ανατολικά Δωδεκάνησα: Ρόδος → Καστελλόριζο → Χάλκη → Τήλος → Ρόδος",
+        "Κεντρικό Αιγαίο: Νάξος → Κουφονήσια → Αμοργός → Ικαρία"
+      ]
+    },
+    faq: [
+      {
+        q: { en: "Which hidden Greek island is easiest to reach?", el: "Ποιο κρυμμένο ελληνικό νησί είναι πιο εύκολο να προσεγγίσω;" },
+        a: { en: "Folegandros and Sifnos are both reachable from Piraeus in under 4 hours on fast ferries and have enough accommodation to visit without much advance planning.", el: "Η Φολέγανδρος και η Σίφνος είναι προσβάσιμες από τον Πειραιά σε λιγότερο από 4 ώρες με fast ferry και έχουν αρκετά καταλύματα." }
+      },
+      {
+        q: { en: "Which hidden Greek island is best for couples?", el: "Ποιο κρυμμένο νησί είναι καλύτερο για ζευγάρια;" },
+        a: { en: "Folegandros and Kastellorizo are both consistently recommended for romantic travel. Both offer dramatic settings, excellent food, and the kind of quiet that encourages actual conversation.", el: "Η Φολέγανδρος και το Καστελλόριζο συνιστώνται για ρομαντικά ταξίδια. Προσφέρουν δραματικά τοπία, εξαιρετικό φαγητό και ησυχία." }
+      },
+      {
+        q: { en: "Is Kastellorizo worth the journey?", el: "Αξίζει το Καστελλόριζο το ταξίδι;" },
+        a: { en: "If you want one genuinely remote Greek island experience, yes. The journey is part of the point — Kastellorizo is somewhere you have to decide to go, and that intention shapes the visit.", el: "Αν θέλεις μια πραγματικά απομακρυσμένη εμπειρία, ναι. Το ταξίδι είναι μέρος της εμπειρίας — το Καστελλόριζο είναι ένα μέρος που πρέπει να αποφασίσεις να πας." }
+      },
+      {
+        q: { en: "Which island is best for first-time visitors to lesser-known Greece?", el: "Ποιο νησί είναι καλύτερο για όσους επισκέπτονται πρώτη φορά τα λιγότερο γνωστά νησιά;" },
+        a: { en: "Sifnos is the most accessible introduction: easy ferry connections, excellent food, good walking, and Cycladic character without the intensity of peak-season Santorini or Mykonos.", el: "Η Σίφνος είναι η πιο προσιτή εισαγωγή: εύκολες ακτοπλοϊκές συνδέσεις, εξαιρετικό φαγητό, καλό περπάτημα και κυκλαδίτικος χαρακτήρας." }
+      },
+      {
+        q: { en: "When is the best time to visit the hidden Greek islands?", el: "Ποια είναι η καλύτερη εποχή για να επισκεφτώ τα κρυμμένα ελληνικά νησιά;" },
+        a: { en: "May, June and September offer the best combination of good weather, open businesses and manageable crowds. July and August are warmer but busier — even on small islands, peak season brings significant visitor numbers.", el: "Μάιος, Ιούνιος και Σεπτέμβριος προσφέρουν τον καλύτερο συνδυασμό καλού καιρού και διαχειρίσιμου κόσμου." }
+      }
+    ]
   }
 ];
 
