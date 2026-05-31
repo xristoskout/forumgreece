@@ -951,7 +951,7 @@ export const destinations: Destination[] = [
   {
     slug: "ikaria",
     name: "Ikaria",
-    region: { en: "Eastern Aegean", el: "Ανατολικό Αιγαίο" },
+    region: { en: "North Aegean", el: "Βόρειο Αιγαίο" },
     blurb: {
       en: "Ikaria is one of the world's Blue Zones — where people regularly live past 90. A wild, beautiful island in the Eastern Aegean with a pace of life unlike anywhere else in Greece.",
       el: "Η Ικαρία είναι μία από τις Μπλε Ζώνες του κόσμου — όπου οι άνθρωποι ζουν τακτικά πάνω από 90. Ένα άγριο, όμορφο νησί στο Ανατολικό Αιγαίο."

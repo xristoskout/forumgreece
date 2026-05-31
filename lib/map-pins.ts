@@ -199,4 +199,11 @@ export const MAP_PINS: Pin[] = [
     label: { en: "Lemnos", el: "Λήμνος" },
     tagline: { en: "Aegean island escape", el: "Αιγαιοπελαγίτικη απόδραση" },
   },
+  {
+    id: "ikaria",
+    x: 68.7, y: 54.8,
+    href: "/destinations/ikaria",
+    label: { en: "Ikaria", el: "Ικαρία" },
+    tagline: { en: "The Blue Zone island", el: "Το νησί της μακροζωίας" },
+  },
 ];
