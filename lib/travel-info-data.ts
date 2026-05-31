@@ -1559,7 +1559,7 @@ export const travelInfoGuides: GuideCard[] = [
       en: "Skip the crowds. These 10 hidden Greek islands offer dramatic landscapes, authentic villages, and the Greece most tourists never see — from tiny Kastellorizo to wild Ikaria.",
       el: "Αφήστε πίσω τα πλήθη. Αυτά τα 10 κρυμμένα νησιά προσφέρουν εντυπωσιακά τοπία, αυθεντικά χωριά και την Ελλάδα που οι περισσότεροι τουρίστες δεν βλέπουν ποτέ."
     },
-    image: "/images/hero-greece.webp",
+    image: "/images/hidden-greek-islands.webp",
     overview: {
       en: "Greece has over 6,000 islands. Most travellers see three of them.\n\nSantorini and Mykonos are beautiful — nobody disputes that. But the Greece that stays with you long after you leave is often found elsewhere: in a fishing village where the taverna has no menu, on a ferry that runs twice a week, in a caldera that nobody has photographed a thousand times already.\n\nThese ten islands will not appear on every Instagram feed. Some require patience to reach. All of them reward it.\n\nThe obvious reason to visit is fewer crowds. But that understates it. When an island hasn't been shaped by mass tourism, the rhythms of daily life stay intact. These are islands where Greece feels like itself.",
       el: "Η Ελλάδα έχει πάνω από 6.000 νησιά. Οι περισσότεροι ταξιδιώτες βλέπουν τρία από αυτά.\n\nΗ Σαντορίνη και η Μύκονος είναι όμορφες — κανείς δεν το αμφισβητεί. Αλλά η Ελλάδα που μένει μαζί σου πολύ μετά την αναχώρηση βρίσκεται συχνά αλλού: σε ένα ψαροχώρι όπου η ταβέρνα δεν έχει μενού, σε ένα πλοίο που κάνει δρομολόγιο δύο φορές την εβδομάδα, σε μια καλντέρα που κανείς δεν έχει φωτογραφίσει χίλιες φορές.\n\nΑυτά τα δέκα νησιά δεν θα εμφανιστούν σε κάθε Instagram feed. Κάποια απαιτούν υπομονή για να τα φτάσεις. Όλα ανταμείβουν."
