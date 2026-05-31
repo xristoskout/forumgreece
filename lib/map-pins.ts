@@ -46,6 +46,13 @@ export const MAP_PINS: Pin[] = [
     tagline: { en: "Beaches & traditional charm", el: "Παραλίες & παραδοσιακή γοητεία" },
   },
   {
+    id: "naxos",
+    x: 63, y: 60.7,
+    href: "/destinations/naxos",
+    label: { en: "Naxos", el: "Νάξος" },
+    tagline: { en: "Beaches & mountain villages", el: "Παραλίες & ορεινά χωριά" },
+  },
+  {
     id: "milos",
     x: 53.1, y: 65.1,
     href: "/destinations/milos",
