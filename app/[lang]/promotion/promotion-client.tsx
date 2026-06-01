@@ -8,56 +8,118 @@ import { useLocale } from "../../../lib/useLocale";
 
 const t = {
   title: {
-    en: "Personalized Business Promotion",
-    el: "Προσωποποιημένη Προβολή Επιχειρήσεων",
+    en: "Reach travelers already planning their Greece trip",
+    el: "Προσέγγισε ταξιδιώτες που ήδη οργανώνουν το ταξίδι τους στην Ελλάδα",
   },
   subtitle: {
-    en: "Connect with thousands of travelers planning their trip to Greece. Elevate your brand with targeted promotion tailored to your exact needs.",
-    el: "Συνδέσου με χιλιάδες ταξιδιώτες που οργανώνουν το ταξίδι τους στην Ελλάδα. Αναβάθμισε το brand σου με στοχευμένη προβολή προσαρμοσμένη στις δικές σου ανάγκες.",
+    en: "Connect your hotel, restaurant or tour with thousands of visitors who are actively researching Greece — at the exact moment they decide where to stay, eat and explore.",
+    el: "Σύνδεσε το ξενοδοχείο, το εστιατόριο ή την εκδρομή σου με χιλιάδες επισκέπτες που ερευνούν ενεργά για την Ελλάδα — τη στιγμή ακριβώς που αποφασίζουν πού θα μείνουν, θα φάνε και θα εξερευνήσουν.",
   },
-  services_eyebrow: { en: "Our Services", el: "Οι Υπηρεσίες Μας" },
-  services_title: {
-    en: "Why promote your business with us?",
-    el: "Γιατί να προβάλεις την επιχείρησή σου σε εμάς;",
-  },
-  service1_title: { en: "Targeted Audience", el: "Στοχευμένο Κοινό" },
-  service1_desc: {
-    en: "Reach travelers who are actively looking for hotels, restaurants, and tours in Greece right when they are making decisions.",
-    el: "Προσέγγισε ταξιδιώτες που αναζητούν ενεργά ξενοδοχεία, εστιατόρια και εκδρομές στην Ελλάδα τη στιγμή που παίρνουν αποφάσεις.",
-  },
-  service2_title: { en: "Premium Placement", el: "Premium Τοποθέτηση" },
-  service2_desc: {
-    en: "Get featured across our top destination guides, travel hubs, and interactive tools for maximum visibility.",
-    el: "Εμφανίσου στους κορυφαίους οδηγούς προορισμών, τα travel hubs και τα διαδραστικά εργαλεία μας για μέγιστη κάλυψη.",
-  },
-  service3_title: { en: "Direct Bookings & SEO", el: "Απευθείας Κρατήσεις & SEO" },
-  service3_desc: {
-    en: "Redirect visitors straight to your website without commissions. Build strong domain authority and backlink opportunities.",
-    el: "Η κίνηση πηγαίνει κατευθείαν στη σελίδα σου χωρίς προμήθειες. Χτίζεις δυνατό SEO και αποκτάς πολύτιμα backlinks.",
-  },
-  audience_eyebrow: { en: "Who We Work With", el: "Με Ποιους Συνεργαζόμαστε" },
-  audience_title: {
-    en: "Promotion for all travel professionals",
-    el: "Προβολή για επαγγελματίες του τουρισμού",
-  },
-  audience_hotels: { en: "Hotels & Villas", el: "Ξενοδοχεία & Βίλες" },
-  audience_tours: { en: "Tours & Experiences", el: "Εκδρομές & Εμπειρίες" },
-  audience_food: { en: "Restaurants & Bars", el: "Εστιατόρια & Μπαρ" },
-  cta_title: {
-    en: "Ready to grow your business?",
-    el: "Έτοιμοι να αναπτύξετε την επιχείρησή σας;",
-  },
-  cta_text: {
-    en: "Contact us today for a custom promotion plan.",
-    el: "Επικοινωνήστε μαζί μας σήμερα για να οργανώσουμε ένα πλάνο προβολής.",
-  },
-  cta_button: { en: "Contact us", el: "Επικοινωνία" },
+  stat1_num: { en: "100%", el: "100%" },
+  stat1_label: { en: "Targeted Greece audience", el: "Στοχευμένο κοινό Ελλάδας" },
+  stat2_num: { en: "3", el: "3" },
+  stat2_label: { en: "Promotion plans available", el: "Διαθέσιμα πακέτα προβολής" },
+  stat3_num: { en: "Dofollow", el: "Dofollow" },
+  stat3_label: { en: "SEO backlinks included", el: "SEO backlinks περιλαμβάνονται" },
+  pkg_eyebrow: { en: "Promotion packages", el: "Πακέτα προβολής" },
+  pkg_title: { en: "Choose the plan that fits your business", el: "Επίλεξε το πακέτο που ταιριάζει στην επιχείρησή σου" },
+  vat_note: { en: "All prices exclude VAT 24% — invoiced upon registration", el: "Όλες οι τιμές δεν συμπεριλαμβάνουν ΦΠΑ 24% — τιμολόγηση κατά την εγγραφή" },
+  pkg1_tier: { en: "Plan 1", el: "Πακέτο 1" },
+  pkg1_name: { en: "Starter", el: "Starter" },
+  pkg1_price: { en: "€99", el: "€99" },
+  pkg1_period: { en: "per year, net of VAT", el: "ανά έτος, καθαρά ΦΠΑ" },
+  pkg1_feat1_title: { en: "Business listing page", el: "Σελίδα καταχώρισης" },
+  pkg1_feat1_desc: { en: "Your business name, photos and a Google Maps pin — a clean, indexed page on GoGreeceNow.", el: "Το όνομα, φωτογραφίες και pin Google Maps — μια καθαρή, indexed σελίδα στο GoGreeceNow." },
+  pkg1_feat2_title: { en: "Direct link to your website", el: "Απευθείας σύνδεσμος" },
+  pkg1_feat2_desc: { en: "A clickable link that sends visitors straight to your own website.", el: "Σύνδεσμος που οδηγεί τους επισκέπτες απευθείας στην ιστοσελίδα σου." },
+  pkg1_feat3_title: { en: "Placement in destination guide", el: "Τοποθέτηση σε οδηγό προορισμού" },
+  pkg1_feat3_desc: { en: "Visibility on the relevant destination page where travelers browse options.", el: "Ορατότητα στη σχετική σελίδα προορισμού όπου οι ταξιδιώτες αναζητούν επιλογές." },
+  pkg2_tier: { en: "Plan 2", el: "Πακέτο 2" },
+  pkg2_name: { en: "Essential", el: "Essential" },
+  pkg2_badge: { en: "Most popular", el: "Δημοφιλέστερο" },
+  pkg2_price: { en: "€169", el: "€169" },
+  pkg2_period: { en: "per year, net of VAT", el: "ανά έτος, καθαρά ΦΠΑ" },
+  pkg2_feat1_title: { en: "Everything in Starter", el: "Όλα όσα έχει το Starter" },
+  pkg2_feat1_desc: { en: "Full listing page, direct link and destination placement included.", el: "Πλήρης σελίδα καταχώρισης, σύνδεσμος και τοποθέτηση σε προορισμό." },
+  pkg2_feat2_title: { en: "Featured in 1–2 travel guides", el: "Προβολή σε 1–2 ταξιδιωτικούς οδηγούς" },
+  pkg2_feat2_desc: { en: "Your business is mentioned inside editorial guides which rank on Google and attract high-intent readers.", el: "Η επιχείρησή σου εμφανίζεται σε editorial οδηγούς που έχουν υψηλή κατάταξη στο Google." },
+  pkg2_feat3_title: { en: "Dofollow backlink", el: "Dofollow backlink" },
+  pkg2_feat3_desc: { en: "A real SEO backlink from an established travel domain — typically costs €50–150 from an agency.", el: "Πραγματικό SEO backlink από established travel domain — συνήθως κοστίζει €50–150 από agency." },
+  pkg2_feat4_title: { en: "Logo on destination page", el: "Logo στη σελίδα προορισμού" },
+  pkg2_feat4_desc: { en: "Your brand mark appears visually on the relevant location page.", el: "Το brand σου εμφανίζεται οπτικά στη σχετική σελίδα προορισμού." },
+  pkg3_tier: { en: "Plan 3", el: "Πακέτο 3" },
+  pkg3_name: { en: "Featured", el: "Featured" },
+  pkg3_price: { en: "€249", el: "€249" },
+  pkg3_period: { en: "per year, net of VAT", el: "ανά έτος, καθαρά ΦΠΑ" },
+  pkg3_feat1_title: { en: "Everything in Essential", el: "Όλα όσα έχει το Essential" },
+  pkg3_feat1_desc: { en: "Full listing, dofollow backlink, logo and guide placement all included.", el: "Πλήρης καταχώριση, dofollow backlink, logo και τοποθέτηση σε οδηγούς." },
+  pkg3_feat2_title: { en: "Top placement in category", el: "Κορυφαία τοποθέτηση" },
+  pkg3_feat2_desc: { en: "Your listing appears first within its section — ahead of Starter and Essential listings.", el: "Η καταχώρισή σου εμφανίζεται πρώτη — μπροστά από Starter και Essential." },
+  pkg3_feat3_title: { en: "Editorial recommendation (50 words)", el: "Σύσταση από τη σύνταξη (50 λέξεις)" },
+  pkg3_feat3_desc: { en: "A short written recommendation by the GoGreeceNow editorial team next to your listing.", el: "Σύντομη σύσταση από τη συντακτική ομάδα του GoGreeceNow δίπλα στην καταχώρισή σου." },
+  pkg3_feat4_title: { en: "Placement in 3+ travel guides", el: "Τοποθέτηση σε 3+ οδηγούς" },
+  pkg3_feat4_desc: { en: "Maximum exposure across multiple guides — reaching travelers at every planning stage.", el: "Μέγιστη κάλυψη σε πολλαπλούς οδηγούς — προσεγγίζοντας ταξιδιώτες σε κάθε στάδιο." },
+  pkg_vat_footnote: { en: "All prices are net of VAT. Greek VAT (ΦΠΑ) at 24% is added at invoicing. Annual subscription, renewable each year.", el: "Όλες οι τιμές είναι καθαρές ΦΠΑ. Το ΦΠΑ 24% προστίθεται στην τιμολόγηση. Ετήσια συνδρομή." },
+  why_eyebrow: { en: "Why GoGreeceNow", el: "Γιατί GoGreeceNow" },
+  why_title: { en: "What makes this different from other directories", el: "Τι το κάνει διαφορετικό από άλλους καταλόγους" },
+  why_sub: { en: "Most listing platforms sell volume. We sell relevance — the right traveler, at the right moment, already reading about your destination.", el: "Οι περισσότερες πλατφόρμες πουλούν όγκο. Εμείς πουλάμε συνάφεια — τον σωστό ταξιδιώτη, τη σωστή στιγμή." },
+  why1_title: { en: "Intent-led audience", el: "Κοινό με πρόθεση" },
+  why1_desc: { en: "Every visitor is actively planning a Greece trip. They are not scrolling social media — they are researching where to stay and what to do. Your placement is visible at the decision-making stage.", el: "Κάθε επισκέπτης σχεδιάζει ενεργά ταξίδι στην Ελλάδα. Η τοποθέτησή σου είναι ορατή στο στάδιο λήψης αποφάσεων." },
+  why2_title: { en: "Real SEO value", el: "Πραγματική αξία SEO" },
+  why2_desc: { en: "Dofollow backlinks from travel content sites are among the most valuable links you can build. This is not a directory badge — it is a Google-recognised trust signal.", el: "Τα dofollow backlinks από ταξιδιωτικά sites είναι από τα πιο πολύτιμα. Δεν είναι απλό directory badge — είναι σήμα εμπιστοσύνης για το Google." },
+  why3_title: { en: "Inside the content travelers read", el: "Μέσα στο περιεχόμενο που διαβάζουν" },
+  why3_desc: { en: "Your business appears within editorial guides that travelers read during the planning phase — not on a generic listing page. Placement is contextual and tied to the destination they are researching.", el: "Η επιχείρησή σου εμφανίζεται σε editorial οδηγούς που διαβάζουν οι ταξιδιώτες — όχι σε γενική σελίδα καταλόγου." },
+  who_eyebrow: { en: "Who we work with", el: "Με ποιους συνεργαζόμαστε" },
+  who_title: { en: "Promotion for all Greece travel businesses", el: "Προβολή για όλες τις τουριστικές επιχειρήσεις" },
+  who_hotels: { en: "Hotels & Villas", el: "Ξενοδοχεία & Βίλες" },
+  who_hotels_sub: { en: "Boutique hotels, resort properties, holiday villas, studios", el: "Boutique ξενοδοχεία, resorts, εξοχικές βίλες, studios" },
+  who_tours: { en: "Tours & Experiences", el: "Εκδρομές & Εμπειρίες" },
+  who_tours_sub: { en: "Boat trips, day tours, sailing, local experiences", el: "Κρουαζιέρες, ημερήσιες εκδρομές, ιστιοπλοΐα, τοπικές εμπειρίες" },
+  who_food: { en: "Restaurants & Bars", el: "Εστιατόρια & Μπαρ" },
+  who_food_sub: { en: "Tavernas, seafood restaurants, wine bars, beach bars", el: "Ταβέρνες, ψαροταβέρνες, wine bars, beach bars" },
+  faq_eyebrow: { en: "FAQ", el: "Συχνές Ερωτήσεις" },
+  faq_title: { en: "Common questions", el: "Συχνές ερωτήσεις" },
+  faq1_q: { en: "What exactly is a dofollow backlink and why does it matter?", el: "Τι είναι ακριβώς ένα dofollow backlink και γιατί έχει σημασία;" },
+  faq1_a: { en: "A dofollow backlink is a hyperlink that passes SEO value from our domain to yours. Search engines like Google treat it as an endorsement — the more reputable the linking site, the more it improves your own ranking in search results. An established travel content site linking to your hotel or restaurant page is a genuine ranking signal that you cannot easily replicate through your own website alone.", el: "Ένα dofollow backlink είναι ένας υπερσύνδεσμος που μεταφέρει SEO αξία από τον δικό μας domain στον δικό σου. Οι μηχανές αναζήτησης το θεωρούν ένδειξη εμπιστοσύνης." },
+  faq2_q: { en: "Can I upgrade from Starter to Essential later?", el: "Μπορώ να αναβαθμίσω από Starter σε Essential αργότερα;" },
+  faq2_a: { en: "Yes. You can start with Starter and upgrade to Essential or Featured at any point. The difference in annual cost is invoiced pro-rata from the upgrade date.", el: "Ναι. Μπορείς να ξεκινήσεις με Starter και να αναβαθμίσεις σε Essential ή Featured οποιαδήποτε στιγμή." },
+  faq3_q: { en: "Which travel guides will my business appear in?", el: "Σε ποιους ταξιδιωτικούς οδηγούς θα εμφανιστεί η επιχείρησή μου;" },
+  faq3_a: { en: "The guides are matched to your business type and location. A hotel in Crete would typically appear in guides such as Best Hotels in Crete for Families, Family Travel in Greece or the Crete destination guide. A tour operator might appear in Getting Around Greece or relevant island guides. We agree on the specific placements before activation.", el: "Οι οδηγοί αντιστοιχίζονται με τον τύπο και την τοποθεσία της επιχείρησής σου. Ένα ξενοδοχείο στην Κρήτη θα εμφανιζόταν σε οδηγούς όπως Best Hotels in Crete for Families." },
+  faq4_q: { en: "Is GoGreeceNow right for a small business?", el: "Είναι το GoGreeceNow κατάλληλο για μικρές επιχειρήσεις;" },
+  faq4_a: { en: "Yes — particularly the Essential plan. The flat annual fee is designed to be accessible to small family-run hotels, tavernas and independent tour operators who cannot justify the commission structures of large OTAs. You get the same SEO and editorial visibility as larger properties, without a percentage of every booking going to a platform.", el: "Ναι — ειδικά το πακέτο Essential. Η σταθερή ετήσια χρέωση είναι σχεδιασμένη για μικρές οικογενειακές επιχειρήσεις." },
+  faq5_q: { en: "How is VAT handled?", el: "Πώς χειρίζεται ο ΦΠΑ;" },
+  faq5_a: { en: "All published prices are net of VAT. Greek VAT (ΦΠΑ) at 24% is applied at invoicing. Businesses registered for VAT in Greece can reclaim it through their standard VAT return. The invoice is issued annually upon subscription.", el: "Όλες οι δημοσιευμένες τιμές είναι καθαρές ΦΠΑ. Το ΦΠΑ 24% προστίθεται στην τιμολόγηση." },
+  faq6_q: { en: "How long does it take to go live?", el: "Πόσο καιρό χρειάζεται για να ενεργοποιηθεί;" },
+  faq6_a: { en: "Typically 5–7 working days from receipt of your business details and materials (photos, description, website URL). Featured plan editorial text is prepared within 10 working days.", el: "Συνήθως 5–7 εργάσιμες ημέρες από την παραλαβή των στοιχείων σου. Το κείμενο του Featured ολοκληρώνεται εντός 10 εργάσιμων ημερών." },
+  cta_title: { en: "Ready to reach your next guests?", el: "Έτοιμος να προσεγγίσεις τους επόμενους επισκέπτες σου;" },
+  cta_text: { en: "Contact us to confirm your plan and get your business listed on GoGreeceNow. Response within one working day.", el: "Επικοινώνησε μαζί μας για να επιβεβαιώσεις το πακέτο σου. Απάντηση εντός μίας εργάσιμης ημέρας." },
+  cta_button: { en: "Contact us to get started", el: "Επικοινώνησε μαζί μας" },
+  contact_modal_title: { en: "Send us a message", el: "Στείλτε μας μήνυμα" },
+  contact_name: { en: "Business Name", el: "Όνομα Επιχείρησης" },
+  contact_email: { en: "Email", el: "Email" },
+  contact_message: { en: "Message", el: "Μήνυμα" },
+  contact_send: { en: "Send", el: "Αποστολή" },
+  contact_sending: { en: "Sending...", el: "Αποστολή..." },
+  contact_sent: { en: "Sent!", el: "Στάλθηκε!" },
+  contact_error: { en: "Error!", el: "Σφάλμα!" },
+  contact_success_msg: { en: "Your message has been sent successfully!", el: "Το μήνυμά σας στάλθηκε επιτυχώς!" },
+  contact_error_msg: { en: "An error occurred. Please try again.", el: "Παρουσιάστηκε σφάλμα. Δοκιμάστε ξανά." },
+  footer_text: { en: "GoGreeceNow is a travel guide covering destinations, hotels, tours, food and practical travel information for Greece.", el: "Το GoGreeceNow είναι ένας ταξιδιωτικός οδηγός που καλύπτει προορισμούς, ξενοδοχεία, εκδρομές, φαγητό και πρακτικές πληροφορίες για την Ελλάδα." },
+  footer_explore: { en: "Explore", el: "Εξερεύνηση" },
+  footer_top: { en: "Top Destinations", el: "Κορυφαίοι Προορισμοί" },
+  footer_company: { en: "Company", el: "Εταιρεία" },
+  footer_about: { en: "About", el: "Σχετικά" },
+  footer_contact: { en: "Contact", el: "Επικοινωνία" },
+  footer_privacy: { en: "Privacy Policy", el: "Πολιτική Απορρήτου" },
+  footer_sitemap: { en: "Sitemap", el: "Sitemap" },
+  footer_credit: { en: "Website Design 2026 by Focus AI", el: "Κατασκευή Ιστοσελίδας 2026 By Focus AI" },
 };
 
 export default function PromotionClient() {
-  const { lang } = useLocale();
+  const { lang, withLang } = useLocale();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -92,121 +154,311 @@ export default function PromotionClient() {
     }
   };
 
+  const faqs = [
+    { q: t.faq1_q, a: t.faq1_a },
+    { q: t.faq2_q, a: t.faq2_a },
+    { q: t.faq3_q, a: t.faq3_a },
+    { q: t.faq4_q, a: t.faq4_a },
+    { q: t.faq5_q, a: t.faq5_a },
+    { q: t.faq6_q, a: t.faq6_a },
+  ];
+
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#f4f7fb]">
       <SiteHeader />
 
-      <section className="relative overflow-hidden bg-slate-900 py-32 sm:py-40">
-        <div className="absolute inset-0 z-0 opacity-30 mix-blend-luminosity">
-          <div className="absolute inset-0 bg-gradient-to-br from-indigo-900 to-slate-900"></div>
-          <Image
-            src="/images/hero/greece-main.webp"
-            alt="Greece background for business promotion"
-            fill
-            className="object-cover opacity-50"
-            sizes="100vw"
-          />
-        </div>
+      {/* HERO */}
+      <section className="relative overflow-hidden bg-[#1a1a2e] py-24 sm:py-32">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_0%,rgba(29,111,232,0.18)_0%,transparent_70%)] pointer-events-none" />
         <div className="relative z-10 mx-auto max-w-5xl px-6 text-center">
-          <span className="inline-flex rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-white mb-6 backdrop-blur-md">
-            GoGreeceNow Business
+          <span className="inline-block text-xs font-medium tracking-[0.1em] uppercase text-white/50 mb-5">
+            GoGreeceNow — Business Promotion
           </span>
-          <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-6xl drop-shadow-xl">
+          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-normal leading-[1.15] text-white mb-5 tracking-tight">
             {t.title[lang]}
           </h1>
-          <p className="mx-auto mt-6 max-w-3xl text-xl text-slate-200 drop-shadow-md leading-relaxed font-light">
+          <p className="text-base sm:text-lg text-white/65 max-w-[540px] mx-auto mb-8 font-light leading-relaxed">
             {t.subtitle[lang]}
           </p>
+          <div className="flex justify-center gap-6 sm:gap-10 flex-wrap mt-12 pt-8 border-t border-white/10">
+            <div className="text-center">
+              <span className="font-serif text-2xl sm:text-3xl text-white block">{t.stat1_num[lang]}</span>
+              <span className="text-xs sm:text-sm text-white/45 uppercase tracking-wider">{t.stat1_label[lang]}</span>
+            </div>
+            <div className="text-center">
+              <span className="font-serif text-2xl sm:text-3xl text-white block">{t.stat2_num[lang]}</span>
+              <span className="text-xs sm:text-sm text-white/45 uppercase tracking-wider">{t.stat2_label[lang]}</span>
+            </div>
+            <div className="text-center">
+              <span className="font-serif text-2xl sm:text-3xl text-white block">{t.stat3_num[lang]}</span>
+              <span className="text-xs sm:text-sm text-white/45 uppercase tracking-wider">{t.stat3_label[lang]}</span>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section className="py-24 sm:py-32 bg-white">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-sm font-bold uppercase tracking-widest text-indigo-600">{t.services_eyebrow[lang]}</h2>
-            <p className="mt-2 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
-              {t.services_title[lang]}
-            </p>
+      {/* PACKAGES */}
+      <section className="py-16 sm:py-20 px-6">
+        <div className="max-w-[1040px] mx-auto">
+          <div className="text-center mb-12">
+            <div className="text-xs font-medium tracking-[0.1em] uppercase text-[#1d6fe8] mb-2">{t.pkg_eyebrow[lang]}</div>
+            <h2 className="font-serif text-2xl sm:text-3xl font-normal text-[#1a1a2e] tracking-tight">{t.pkg_title[lang]}</h2>
+            <span className="inline-block bg-[#e8f1fd] text-[#1d6fe8] text-xs font-medium px-3 py-1.5 rounded-full mt-3">{t.vat_note[lang]}</span>
           </div>
-          <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-            <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
-              <div className="flex flex-col items-center text-center p-10 rounded-[2.5rem] bg-slate-50 border border-slate-100 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
-                <dt className="text-xl font-bold leading-7 text-slate-900 flex flex-col items-center gap-6">
-                  <div className="flex h-20 w-20 items-center justify-center rounded-full bg-indigo-100 text-4xl text-indigo-600 shadow-inner">🎯</div>
-                  {t.service1_title[lang]}
-                </dt>
-                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-slate-600 font-medium">
-                  <p className="flex-auto">{t.service1_desc[lang]}</p>
-                </dd>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-start">
+            {/* STARTER */}
+            <div className="bg-white border border-[#e2e6f0] rounded-xl p-7 flex flex-col relative">
+              <div className="text-xs font-medium tracking-wider uppercase text-[#8888aa] mb-2">{t.pkg1_tier[lang]}</div>
+              <div className="font-serif text-2xl font-normal text-[#1a1a2e] mb-5">{t.pkg1_name[lang]}</div>
+              <div className="pb-5 mb-5 border-b border-[#e2e6f0]">
+                <div className="text-4xl font-medium text-[#1a1a2e] tracking-tight">{t.pkg1_price[lang]}</div>
+                <div className="text-sm text-[#8888aa] mt-1">{t.pkg1_period[lang]}</div>
               </div>
+              <ul className="flex flex-col gap-3 mb-6 flex-1">
+                {[
+                  { t: t.pkg1_feat1_title, d: t.pkg1_feat1_desc },
+                  { t: t.pkg1_feat2_title, d: t.pkg1_feat2_desc },
+                  { t: t.pkg1_feat3_title, d: t.pkg1_feat3_desc },
+                ].map((f, i) => (
+                  <li key={i} className="flex gap-2.5 text-sm text-[#4a4a6a]">
+                    <span className="w-[18px] h-[18px] rounded-full bg-[#e6f5ef] flex items-center justify-center shrink-0 mt-0.5">
+                      <svg viewBox="0 0 12 10" className="w-2.5 h-2.5" style={{ stroke: "#0a7c55", strokeWidth: 2.5, fill: "none" }}><polyline points="1,5 4,8 11,1"/></svg>
+                    </span>
+                    <span><span className="font-medium text-[#1a1a2e] block text-sm">{f.t[lang]}</span><span className="text-xs text-[#8888aa] block mt-0.5">{f.d[lang]}</span></span>
+                  </li>
+                ))}
+              </ul>
+              <button onClick={() => setIsModalOpen(true)} className="block w-full text-center py-3 rounded-lg text-sm font-medium border border-[#e2e6f0] text-[#1a1a2e] hover:border-[#1d6fe8] hover:text-[#1d6fe8] transition-all">
+                Get started
+              </button>
+            </div>
 
-              <div className="flex flex-col items-center text-center p-10 rounded-[2.5rem] bg-slate-50 border border-slate-100 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
-                <dt className="text-xl font-bold leading-7 text-slate-900 flex flex-col items-center gap-6">
-                  <div className="flex h-20 w-20 items-center justify-center rounded-full bg-indigo-100 text-4xl text-indigo-600 shadow-inner">⭐</div>
-                  {t.service2_title[lang]}
-                </dt>
-                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-slate-600 font-medium">
-                  <p className="flex-auto">{t.service2_desc[lang]}</p>
-                </dd>
+            {/* ESSENTIAL (featured) */}
+            <div className="bg-white border-2 border-[#1d6fe8] rounded-xl p-7 flex flex-col relative">
+              <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#1d6fe8] text-white text-xs font-medium px-4 py-1 rounded-full whitespace-nowrap">
+                {t.pkg2_badge[lang]}
               </div>
-
-              <div className="flex flex-col items-center text-center p-10 rounded-[2.5rem] bg-slate-50 border border-slate-100 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
-                <dt className="text-xl font-bold leading-7 text-slate-900 flex flex-col items-center gap-6">
-                  <div className="flex h-20 w-20 items-center justify-center rounded-full bg-indigo-100 text-4xl text-indigo-600 shadow-inner">🚀</div>
-                  {t.service3_title[lang]}
-                </dt>
-                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-slate-600 font-medium">
-                  <p className="flex-auto">{t.service3_desc[lang]}</p>
-                </dd>
+              <div className="text-xs font-medium tracking-wider uppercase text-[#8888aa] mb-2">{t.pkg2_tier[lang]}</div>
+              <div className="font-serif text-2xl font-normal text-[#1a1a2e] mb-5">{t.pkg2_name[lang]}</div>
+              <div className="pb-5 mb-5 border-b border-[#e2e6f0]">
+                <div className="text-4xl font-medium text-[#1a1a2e] tracking-tight">{t.pkg2_price[lang]}</div>
+                <div className="text-sm text-[#8888aa] mt-1">{t.pkg2_period[lang]}</div>
               </div>
-            </dl>
+              <ul className="flex flex-col gap-3 mb-6 flex-1">
+                {[
+                  { t: t.pkg2_feat1_title, d: t.pkg2_feat1_desc },
+                  { t: t.pkg2_feat2_title, d: t.pkg2_feat2_desc },
+                  { t: t.pkg2_feat3_title, d: t.pkg2_feat3_desc },
+                  { t: t.pkg2_feat4_title, d: t.pkg2_feat4_desc },
+                ].map((f, i) => (
+                  <li key={i} className="flex gap-2.5 text-sm text-[#4a4a6a]">
+                    <span className="w-[18px] h-[18px] rounded-full bg-[#e6f5ef] flex items-center justify-center shrink-0 mt-0.5">
+                      <svg viewBox="0 0 12 10" className="w-2.5 h-2.5" style={{ stroke: "#0a7c55", strokeWidth: 2.5, fill: "none" }}><polyline points="1,5 4,8 11,1"/></svg>
+                    </span>
+                    <span><span className="font-medium text-[#1a1a2e] block text-sm">{f.t[lang]}</span><span className="text-xs text-[#8888aa] block mt-0.5">{f.d[lang]}</span></span>
+                  </li>
+                ))}
+              </ul>
+              <button onClick={() => setIsModalOpen(true)} className="block w-full text-center py-3 rounded-lg text-sm font-medium bg-[#1d6fe8] text-white hover:bg-[#1560d0] transition-all">
+                Get started
+              </button>
+            </div>
+
+            {/* FEATURED */}
+            <div className="bg-white border border-[#e2e6f0] rounded-xl p-7 flex flex-col relative">
+              <div className="text-xs font-medium tracking-wider uppercase text-[#8888aa] mb-2">{t.pkg3_tier[lang]}</div>
+              <div className="font-serif text-2xl font-normal text-[#1a1a2e] mb-5">{t.pkg3_name[lang]}</div>
+              <div className="pb-5 mb-5 border-b border-[#e2e6f0]">
+                <div className="text-4xl font-medium text-[#1a1a2e] tracking-tight">{t.pkg3_price[lang]}</div>
+                <div className="text-sm text-[#8888aa] mt-1">{t.pkg3_period[lang]}</div>
+              </div>
+              <ul className="flex flex-col gap-3 mb-6 flex-1">
+                {[
+                  { t: t.pkg3_feat1_title, d: t.pkg3_feat1_desc },
+                  { t: t.pkg3_feat2_title, d: t.pkg3_feat2_desc },
+                  { t: t.pkg3_feat3_title, d: t.pkg3_feat3_desc },
+                  { t: t.pkg3_feat4_title, d: t.pkg3_feat4_desc },
+                ].map((f, i) => (
+                  <li key={i} className="flex gap-2.5 text-sm text-[#4a4a6a]">
+                    <span className="w-[18px] h-[18px] rounded-full bg-[#e6f5ef] flex items-center justify-center shrink-0 mt-0.5">
+                      <svg viewBox="0 0 12 10" className="w-2.5 h-2.5" style={{ stroke: "#0a7c55", strokeWidth: 2.5, fill: "none" }}><polyline points="1,5 4,8 11,1"/></svg>
+                    </span>
+                    <span><span className="font-medium text-[#1a1a2e] block text-sm">{f.t[lang]}</span><span className="text-xs text-[#8888aa] block mt-0.5">{f.d[lang]}</span></span>
+                  </li>
+                ))}
+              </ul>
+              <button onClick={() => setIsModalOpen(true)} className="block w-full text-center py-3 rounded-lg text-sm font-medium border border-[#e2e6f0] text-[#1a1a2e] hover:border-[#1d6fe8] hover:text-[#1d6fe8] transition-all">
+                Get started
+              </button>
+            </div>
+          </div>
+
+          <p className="text-center mt-6 text-xs text-[#8888aa]">{t.pkg_vat_footnote[lang]}</p>
+        </div>
+      </section>
+
+      {/* WHY */}
+      <section className="bg-white py-16 sm:py-20 px-6">
+        <div className="max-w-[1040px] mx-auto">
+          <div className="text-xs font-medium tracking-[0.1em] uppercase text-[#1d6fe8] mb-2">{t.why_eyebrow[lang]}</div>
+          <h2 className="font-serif text-2xl sm:text-3xl font-normal text-[#1a1a2e] tracking-tight mb-3">{t.why_title[lang]}</h2>
+          <p className="text-sm sm:text-base text-[#4a4a6a] max-w-[560px] font-light leading-relaxed">{t.why_sub[lang]}</p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-10">
+            {[
+              { icon: "🎯", title: t.why1_title, desc: t.why1_desc },
+              { icon: "🔗", title: t.why2_title, desc: t.why2_desc },
+              { icon: "📍", title: t.why3_title, desc: t.why3_desc },
+            ].map((item, i) => (
+              <div key={i} className="p-6">
+                <div className="text-2xl mb-3">{item.icon}</div>
+                <div className="font-medium text-sm text-[#1a1a2e] mb-1.5">{item.title[lang]}</div>
+                <p className="text-sm text-[#4a4a6a] font-light leading-relaxed">{item.desc[lang]}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      <section className="bg-slate-50 py-24 sm:py-32 border-t border-slate-200">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center">
-          <h2 className="text-sm font-bold uppercase tracking-widest text-indigo-600 mb-2">{t.audience_eyebrow[lang]}</h2>
-          <p className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl mb-12">
-            {t.audience_title[lang]}
-          </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <span className="px-6 py-3 rounded-full bg-white border border-slate-200 shadow-sm text-lg font-semibold text-slate-700">🏨 {t.audience_hotels[lang]}</span>
-            <span className="px-6 py-3 rounded-full bg-white border border-slate-200 shadow-sm text-lg font-semibold text-slate-700">⚓ {t.audience_tours[lang]}</span>
-            <span className="px-6 py-3 rounded-full bg-white border border-slate-200 shadow-sm text-lg font-semibold text-slate-700">🍷 {t.audience_food[lang]}</span>
+      {/* WHO */}
+      <section className="py-16 sm:py-20 px-6">
+        <div className="max-w-[1040px] mx-auto">
+          <div className="text-xs font-medium tracking-[0.1em] uppercase text-[#1d6fe8] mb-2">{t.who_eyebrow[lang]}</div>
+          <h2 className="font-serif text-2xl sm:text-3xl font-normal text-[#1a1a2e] tracking-tight mb-3">{t.who_title[lang]}</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
+            {[
+              { icon: "🏨", title: t.who_hotels, sub: t.who_hotels_sub },
+              { icon: "⚓", title: t.who_tours, sub: t.who_tours_sub },
+              { icon: "🍷", title: t.who_food, sub: t.who_food_sub },
+            ].map((item, i) => (
+              <div key={i} className="bg-white border border-[#e2e6f0] rounded-lg p-5 flex items-center gap-4">
+                <span className="text-2xl">{item.icon}</span>
+                <div>
+                  <div className="font-medium text-sm text-[#1a1a2e]">{item.title[lang]}</div>
+                  <div className="text-xs text-[#8888aa] mt-0.5">{item.sub[lang]}</div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      <section className="bg-gradient-to-br from-indigo-900 to-indigo-700">
-        <div className="mx-auto max-w-7xl px-6 py-20 lg:flex lg:items-center lg:justify-between lg:px-8">
-          <div>
-            <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-              {t.cta_title[lang]}
-            </h2>
-            <p className="mt-3 text-lg font-light text-indigo-100 max-w-xl">
-              {t.cta_text[lang]}
-            </p>
+      {/* FAQ */}
+      <section className="py-16 sm:py-20 px-6">
+        <div className="max-w-[700px] mx-auto">
+          <div className="text-center mb-2">
+            <div className="text-xs font-medium tracking-[0.1em] uppercase text-[#1d6fe8]">{t.faq_eyebrow[lang]}</div>
+            <h2 className="font-serif text-2xl sm:text-3xl font-normal text-[#1a1a2e] tracking-tight mt-2">{t.faq_title[lang]}</h2>
           </div>
-          <div className="mt-10 flex items-center gap-x-6 lg:mt-0 lg:flex-shrink-0">
-            <button
-              onClick={() => setIsModalOpen(true)}
-              className="rounded-full bg-white px-10 py-5 text-lg font-bold text-indigo-600 shadow-2xl hover:bg-slate-50 hover:scale-105 transition-all"
-            >
-              {t.cta_button[lang]}
-            </button>
+          <div className="mt-8 flex flex-col">
+            {faqs.map((faq, i) => (
+              <div key={i} className="border-b border-[#e2e6f0] py-5">
+                <button
+                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                  className="w-full flex justify-between items-center gap-4 text-left font-medium text-sm text-[#1a1a2e]"
+                >
+                  {faq.q[lang]}
+                  <span className={`text-[#8888aa] shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`}>↓</span>
+                </button>
+                <div
+                  className={`text-sm text-[#4a4a6a] font-light leading-relaxed overflow-hidden transition-all duration-300 ${
+                    openFaq === i ? "max-h-80 pt-3" : "max-h-0"
+                  }`}
+                >
+                  {faq.a[lang]}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
+      {/* CTA */}
+      <section className="bg-[#1d6fe8] py-16 sm:py-20 px-6 text-center">
+        <h2 className="font-serif text-2xl sm:text-3xl font-normal text-white mb-3">{t.cta_title[lang]}</h2>
+        <p className="text-sm sm:text-base text-white/70 max-w-[460px] mx-auto mb-8 font-light">{t.cta_text[lang]}</p>
+        <button
+          onClick={() => setIsModalOpen(true)}
+          className="inline-block bg-white text-[#1d6fe8] text-sm font-medium px-8 py-3.5 rounded-lg hover:opacity-90 transition-all"
+        >
+          {t.cta_button[lang]}
+        </button>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="bg-white border-t border-[#e2e6f0]">
+        <div className="max-w-7xl mx-auto px-6 py-8">
+          <div className="grid gap-8 md:grid-cols-4">
+            <div>
+              <div className="text-sm text-[#4a4a6a] leading-relaxed">{t.footer_text[lang]}</div>
+            </div>
+            <div>
+              <h4 className="text-xs font-bold uppercase tracking-widest text-[#1d6fe8] mb-3">{t.footer_explore[lang]}</h4>
+              <ul className="space-y-2 text-sm">
+                <li><Link href={withLang("/destinations")} className="text-[#4a4a6a] hover:text-[#1d6fe8]">Destinations</Link></li>
+                <li><Link href={withLang("/travel-info")} className="text-[#4a4a6a] hover:text-[#1d6fe8]">Travel Info</Link></li>
+                <li><Link href={withLang("/hotels")} className="text-[#4a4a6a] hover:text-[#1d6fe8]">Hotels</Link></li>
+                <li><Link href={withLang("/tours")} className="text-[#4a4a6a] hover:text-[#1d6fe8]">Tours</Link></li>
+                <li><Link href={withLang("/collections/greece-food-and-drink")} className="text-[#4a4a6a] hover:text-[#1d6fe8]">Eat & Drink</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-xs font-bold uppercase tracking-widest text-[#1d6fe8] mb-3">{t.footer_top[lang]}</h4>
+              <ul className="space-y-2 text-sm">
+                <li><Link href={withLang("/destinations/santorini")} className="text-[#4a4a6a] hover:text-[#1d6fe8]">Santorini</Link></li>
+                <li><Link href={withLang("/destinations/mykonos")} className="text-[#4a4a6a] hover:text-[#1d6fe8]">Mykonos</Link></li>
+                <li><Link href={withLang("/destinations/crete")} className="text-[#4a4a6a] hover:text-[#1d6fe8]">Crete</Link></li>
+                <li><Link href={withLang("/destinations/athens")} className="text-[#4a4a6a] hover:text-[#1d6fe8]">Athens</Link></li>
+                <li><Link href={withLang("/destinations/kefalonia")} className="text-[#4a4a6a] hover:text-[#1d6fe8]">Kefalonia</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-xs font-bold uppercase tracking-widest text-[#1d6fe8] mb-3">{t.footer_company[lang]}</h4>
+              <ul className="space-y-2 text-sm">
+                <li><Link href={withLang("/about")} className="text-[#4a4a6a] hover:text-[#1d6fe8]">{t.footer_about[lang]}</Link></li>
+                <li><Link href={withLang("/contact")} className="text-[#4a4a6a] hover:text-[#1d6fe8]">{t.footer_contact[lang]}</Link></li>
+                <li><Link href={withLang("/privacy-policy")} className="text-[#4a4a6a] hover:text-[#1d6fe8]">{t.footer_privacy[lang]}</Link></li>
+                <li><Link href="/sitemap.xml" className="text-[#4a4a6a] hover:text-[#1d6fe8]">Sitemap</Link></li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61573209091459"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-[#4a4a6a] hover:text-[#1877F2] transition-colors"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                    </svg>
+                    <span className="text-sm">Facebook</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="border-t border-[#e2e6f0] pt-5 pb-6 flex flex-col items-center gap-2">
+          <a
+            href="https://www.focusai.gr"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex items-center gap-2 text-sm font-bold tracking-widest transition-all"
+          >
+            <span className="bg-gradient-to-r from-[#1d6fe8] to-[#1d6fe8] bg-clip-text text-transparent">
+              {t.footer_credit[lang]}
+            </span>
+            <span className="text-[#1d6fe8] group-hover:translate-x-1 transition-transform">→</span>
+          </a>
+          <p className="text-[10px] text-[#8888aa] uppercase tracking-[0.3em]">Premium Digital Experiences</p>
+        </div>
+      </footer>
+
+      {/* CONTACT MODAL */}
       {isModalOpen && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm transition-opacity">
           <div className="bg-white rounded-3xl shadow-2xl w-full max-w-lg overflow-hidden relative">
             <div className="p-8">
               <div className="flex justify-between items-center mb-6">
-                <h3 className="text-2xl font-bold text-slate-900">
-                  {lang === "el" ? "Στείλτε μας το μήνυμά σας" : "Send us a message"}
-                </h3>
+                <h3 className="text-2xl font-bold text-slate-900">{t.contact_modal_title[lang]}</h3>
                 <button
                   onClick={() => setIsModalOpen(false)}
                   className="text-slate-400 hover:text-slate-900 transition-colors text-3xl leading-none"
@@ -216,80 +468,31 @@ export default function PromotionClient() {
               </div>
               <form className="space-y-5" onSubmit={handleSubmit}>
                 <div>
-                  <label className="block text-sm font-semibold text-slate-700 mb-1">
-                    {lang === "el" ? "Όνομα Επιχείρησης" : "Business Name"}
-                  </label>
-                  <input
-                    required
-                    name="name"
-                    type="text"
-                    className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-slate-50"
-                  />
+                  <label className="block text-sm font-semibold text-slate-700 mb-1">{t.contact_name[lang]}</label>
+                  <input required name="name" type="text" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-slate-50" />
                 </div>
                 <div>
-                  <label className="block text-sm font-semibold text-slate-700 mb-1">Email</label>
-                  <input
-                    required
-                    name="email"
-                    type="email"
-                    className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-slate-50"
-                  />
+                  <label className="block text-sm font-semibold text-slate-700 mb-1">{t.contact_email[lang]}</label>
+                  <input required name="email" type="email" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-slate-50" />
                 </div>
                 <div>
-                  <label className="block text-sm font-semibold text-slate-700 mb-1">
-                    {lang === "el" ? "Μήνυμα" : "Message"}
-                  </label>
-                  <textarea
-                    required
-                    name="message"
-                    rows={4}
-                    className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-slate-50"
-                  ></textarea>
+                  <label className="block text-sm font-semibold text-slate-700 mb-1">{t.contact_message[lang]}</label>
+                  <textarea required name="message" rows={4} className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-slate-50"></textarea>
                 </div>
-
                 <div className="hidden" aria-hidden="true" tabIndex={-1}>
                   <input name="website_url" type="text" autoComplete="off" />
                 </div>
-
                 <button
                   type="submit"
                   disabled={status === "loading"}
                   className={`w-full text-white font-bold py-4 rounded-xl transition-all mt-2 shadow-lg shadow-indigo-200 ${
-                    status === "loading"
-                      ? "bg-indigo-400 cursor-not-allowed"
-                      : "bg-indigo-600 hover:bg-indigo-700"
+                    status === "loading" ? "bg-indigo-400 cursor-not-allowed" : "bg-[#1d6fe8] hover:bg-[#1560d0]"
                   }`}
                 >
-                  {status === "loading"
-                    ? lang === "el"
-                      ? "Αποστολή..."
-                      : "Sending..."
-                    : status === "success"
-                      ? lang === "el"
-                        ? "Στάλθηκε!"
-                        : "Sent!"
-                      : status === "error"
-                        ? lang === "el"
-                          ? "Σφάλμα!"
-                          : "Error!"
-                        : lang === "el"
-                          ? "Αποστολή"
-                          : "Send"}
+                  {status === "loading" ? t.contact_sending[lang] : status === "success" ? t.contact_sent[lang] : status === "error" ? t.contact_error[lang] : t.contact_send[lang]}
                 </button>
-                {status === "success" && (
-                  <p className="text-center text-sm text-green-600 mt-2 font-semibold">
-                    {lang === "el"
-                      ? "Το μήνυμά σας στάλθηκε επιτυχώς!"
-                      : "Your message has been sent successfully!"}
-                  </p>
-                )}
-                {status === "error" && (
-                  <p className="text-center text-sm text-red-600 mt-2 font-semibold">
-                    {lang === "el"
-                      ? "Παρουσιάστηκε σφάλμα. Δοκιμάστε ξανά."
-                      : "An error occurred. Please try again."}
-                  </p>
-                )}
+                {status === "success" && <p className="text-center text-sm text-green-600 mt-2 font-semibold">{t.contact_success_msg[lang]}</p>}
+                {status === "error" && <p className="text-center text-sm text-red-600 mt-2 font-semibold">{t.contact_error_msg[lang]}</p>}
               </form>
             </div>
           </div>

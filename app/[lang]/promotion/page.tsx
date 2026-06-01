@@ -5,12 +5,12 @@ import PromotionClient from "./promotion-client";
 
 const staticText = {
   title: {
-    en: "Personalized Business Promotion",
-    el: "Προσωποποιημένη Προβολή Επιχειρήσεων",
+    en: "Promote Your Business in Greece | Reach Travelers Planning Their Trip",
+    el: "Προώθησε την Επιχείρησή σου στην Ελλάδα | Προσέγγισε Ταξιδιώτες",
   },
   subtitle: {
-    en: "Connect with thousands of travelers planning their trip to Greece. Elevate your brand with targeted promotion tailored to your exact needs.",
-    el: "Συνδέσου με χιλιάδες ταξιδιώτες που οργανώνουν το ταξίδι τους στην Ελλάδα. Αναβάθμισε το brand σου με στοχευμένη προβολή προσαρμοσμένη στις δικές σου ανάγκες.",
+    en: "Connect with thousands of travelers planning their trip to Greece. List your hotel, restaurant or tour and get featured across our destination guides with a dofollow backlink.",
+    el: "Συνδέσου με χιλιάδες ταξιδιώτες που οργανώνουν το ταξίδι τους στην Ελλάδα. Πρόβαλε το ξενοδοχείο, το εστιατόριο ή την εκδρομή σου με dofollow backlink.",
   },
 };
 
