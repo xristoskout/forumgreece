@@ -6,7 +6,6 @@ import { usePathname, useRouter } from "next/navigation";
 import SiteHeader from "../../../../components/site-header";
 import { siteBrand, type Destination, type Lang } from "../../../../lib/content";
 import Image from "next/image";
-import ViatorWidget from "../../../../components/viator-widget";
 import { destinationSections } from "../../../../lib/destination-sections";
 import { destinationDetails } from "../../../../lib/destination-details";
 import { experienceBusinesses } from "../../../../lib/experiences";
@@ -150,15 +149,7 @@ export default function DestinationDetailsClient({
                     </div>
                   </div>
                 </div>
-                {business.slug === "papadellis-olive-oil" && (
-                  <div className="w-full mt-6">
-                    <ViatorWidget
-                      key="W-b4298df4-e2de-499e-a767-1be0bd3e9b83"
-                      partnerId="P00298401"
-                      widgetRef="W-b4298df4-e2de-499e-a767-1be0bd3e9b83"
-                    />
-                  </div>
-                )}
+
               </Fragment>
             );
           })}
@@ -370,21 +361,49 @@ export default function DestinationDetailsClient({
             {renderBusinesses()}
 
             {(() => {
-              const DESTINATION_WIDGETS: Record<string, string> = {
-                "athens": "W-611433de-c2b3-4d2e-9074-eaa7eff90944",
-                "santorini": "W-e577bd63-e025-4586-8f55-bdb32bf254bc",
-                "corfu": "W-0683e950-d0ac-488d-8a4a-a1d86709f6a7",
-                "mykonos": "W-db1da184-a2f1-4058-b7f1-a9e15ccf9fa6",
-                "crete": "W-beb6dd42-10a7-4524-8626-6fda84f9e5df",
-                "nayplio-odigos-taxidiou": "W-40c6533f-c44b-4cd7-bb26-8d0788a922e2",
-                "nafplio": "W-40c6533f-c44b-4cd7-bb26-8d0788a922e2",
-                "thessaloniki": "W-f0334037-6d06-42d6-83a2-07d3903ef04b",
-              };
-              const wRef = DESTINATION_WIDGETS[destination.slug];
-              if (!wRef) return null;
+              const TOURS_SLUGS = new Set(["santorini", "mykonos", "athens", "crete", "kefalonia", "lesvos"]);
+              if (TOURS_SLUGS.has(destination.slug)) {
+                return (
+                  <article className="overflow-hidden rounded-[28px] border border-slate-200 bg-gradient-to-br from-indigo-50 to-white p-8 shadow-sm">
+                    <div className="text-xs font-bold uppercase tracking-[0.2em] text-indigo-700 mb-3">
+                      {lang === "en" ? "Tours & Activities" : "Εκδρομές & Δραστηριότητες"}
+                    </div>
+                    <h4 className="text-xl font-extrabold mb-4 text-slate-800">
+                      {lang === "en" ? `Explore ${destination.name} Tours` : `Εξερεύνησε Εκδρομές σε ${destination.name}`}
+                    </h4>
+                    <p className="text-sm text-slate-500 mb-6 leading-relaxed">
+                      {lang === "en"
+                        ? `Discover the best tours, boat trips and experiences in ${destination.name}. Book directly with local providers.`
+                        : `Ανακάλυψε τις καλύτερες εκδρομές, κρουαζιέρες και εμπειρίες σε ${destination.name}. Κάνε κράτηση απευθείας.`}
+                    </p>
+                    <Link
+                      href={withLang(`/tours/${destination.slug}-tours`)}
+                      className="flex w-full items-center justify-center gap-2 rounded-xl bg-indigo-600 px-4 py-3 text-sm font-bold text-white hover:bg-indigo-500 transition-colors shadow-md"
+                    >
+                      {lang === "en" ? "View All Tours →" : "Δες Όλες τις Εκδρομές →"}
+                    </Link>
+                  </article>
+                );
+              }
               return (
-                <article className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm p-4 w-full">
-                  <ViatorWidget key={wRef} partnerId="P00298401" widgetRef={wRef} />
+                <article className="overflow-hidden rounded-[28px] border border-slate-200 bg-gradient-to-br from-indigo-50 to-white p-8 shadow-sm">
+                  <div className="text-xs font-bold uppercase tracking-[0.2em] text-indigo-700 mb-3">
+                    {lang === "en" ? "Tours & Activities" : "Εκδρομές & Δραστηριότητες"}
+                  </div>
+                  <h4 className="text-xl font-extrabold mb-4 text-slate-800">
+                    {lang === "en" ? `Explore ${destination.name} Tours` : `Εξερεύνησε Εκδρομές σε ${destination.name}`}
+                  </h4>
+                  <p className="text-sm text-slate-500 mb-6 leading-relaxed">
+                    {lang === "en"
+                      ? `Discover the best tours, boat trips and experiences in ${destination.name}. Book directly with local providers.`
+                      : `Ανακάλυψε τις καλύτερες εκδρομές, κρουαζιέρες και εμπειρίες σε ${destination.name}. Κάνε κράτηση απευθείας.`}
+                  </p>
+                  <Link
+                    href={withLang("/tours/all")}
+                    className="flex w-full items-center justify-center gap-2 rounded-xl bg-indigo-600 px-4 py-3 text-sm font-bold text-white hover:bg-indigo-500 transition-colors shadow-md"
+                  >
+                    {lang === "en" ? "View All Tours →" : "Δες Όλες τις Εκδρομές →"}
+                  </Link>
                 </article>
               );
             })()}
