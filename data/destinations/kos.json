@@ -1,0 +1,136 @@
+{
+  "id": "kos",
+  "slug": "kos",
+  "name": "Kos",
+  "type": "Island",
+  "coordinates": {
+    "lat": 36.8918,
+    "lng": 27.2867
+  },
+  "scores": {
+    "family": {
+      "value": 8,
+      "reason": "Family friendly parameters for Kos."
+    },
+    "couples": {
+      "value": 7,
+      "reason": "Romantic components and spots in Kos."
+    },
+    "nightlife": {
+      "value": 6,
+      "reason": "Bar and club density in Kos."
+    },
+    "food": {
+      "value": 7,
+      "reason": "Local gastronomy, products, and tavern quality."
+    },
+    "beaches": {
+      "value": 8,
+      "reason": "Beach quality, sand, and accessibility."
+    },
+    "walking": {
+      "value": 8,
+      "reason": "Walkability of the main towns or villages."
+    }
+  },
+  "content": {
+    "quick_summary": "A complete travel guide to Kos.",
+    "pros": [
+      "Beautiful sandy beaches",
+      "Rich history from Asklepion to Knights Castle",
+      "Great for windsurfing and watersports",
+      "Bicycle-friendly island"
+    ],
+    "cons": [
+      "Can get crowded in July-August",
+      "Limited nightlife outside Kardamena",
+      "Flat landscape may not suit mountain lovers"
+    ],
+    "insider_tips": [
+      "Rent a bike to explore the coastal path.",
+      "Visit the Asklepion early morning to avoid crowds."
+    ],
+    "mistakes_to_avoid": [
+      "Staying only in Kardamena and missing the traditional villages."
+    ]
+  },
+  "pricing_base": {
+    "budget_daily": 48,
+    "mid_daily": 95,
+    "luxury_daily": 210
+  },
+  "seasonality": {
+    "january": {
+      "temp": 12,
+      "price_multiplier": 0.6
+    },
+    "february": {
+      "temp": 12,
+      "price_multiplier": 0.6
+    },
+    "march": {
+      "temp": 14,
+      "price_multiplier": 0.7
+    },
+    "april": {
+      "temp": 17,
+      "price_multiplier": 0.8
+    },
+    "may": {
+      "temp": 22,
+      "price_multiplier": 1.0
+    },
+    "june": {
+      "temp": 26,
+      "price_multiplier": 1.2
+    },
+    "july": {
+      "temp": 29,
+      "price_multiplier": 1.5
+    },
+    "august": {
+      "temp": 29,
+      "price_multiplier": 1.6
+    },
+    "september": {
+      "temp": 26,
+      "price_multiplier": 1.3
+    },
+    "october": {
+      "temp": 21,
+      "price_multiplier": 0.9
+    },
+    "november": {
+      "temp": 16,
+      "price_multiplier": 0.7
+    },
+    "december": {
+      "temp": 13,
+      "price_multiplier": 0.6
+    }
+  },
+  "image": "/images/kos-cover.webp",
+  "guideLinks": [
+    {
+      "href": "/hotels/kos",
+      "label": {
+        "en": "Where to Stay",
+        "el": "Πού να μείνεις"
+      }
+    },
+    {
+      "href": "/travel-tools/budget/kos",
+      "label": {
+        "en": "Budget Planner",
+        "el": "Budget Planner"
+      }
+    },
+    {
+      "href": "/travel-tools/best-time/kos",
+      "label": {
+        "en": "Best Time to Visit",
+        "el": "Καλύτερη Εποχή"
+      }
+    }
+  ]
+}
