@@ -778,6 +778,41 @@ export const destinations: Destination[] = [
     }
   },
   {
+    slug: "evia",
+    name: "Evia",
+    region: { en: "Mainland escapes", el: "Ηπειρωτική Ελλάδα" },
+    blurb: {
+      en: "Wild mountains, thermal springs, and untouched beaches just a bridge-crossing away.",
+      el: "Άγρια βουνά, ιαματικές πηγές και ανέγγιχτες παραλίες μόλις μια γέφυρα μακριά."
+    },
+    image: "/images/evia-cover.webp",
+    overview: {
+      en: "Evia (Euboea) is one of Greece’s most underestimated destinations. Connected to mainland Greece by bridges, it feels like a hybrid between an island and a continental escape: wild mountains, deep forests, thermal springs, untouched beaches, and traditional villages that have not been reshaped by mass tourism.",
+      el: "Η Εύβοια είναι ένας από τους πιο υποτιμημένους προορισμούς της Ελλάδας. Συνδεδεμένη με την ηπειρωτική Ελλάδα μέσω γεφυρών, μοιάζει με υβρίδιο νησιού και ηπειρωτικής απόδρασης: άγρια βουνά, βαθιά δάση, ιαματικές πηγές, ανέγγιχτες παραλίες και παραδοσιακά χωριά."
+    },
+    highlights: {
+      en: ["Edipsos thermal springs", "Mount Dirfys hiking", "Diverse coastlines"],
+      el: ["Ιαματικές πηγές Αιδηψού", "Πεζοπορία στον Δίρφυ", "Ποικιλόμορφες ακτογραμμές"]
+    },
+    featured: true,
+    seo: {
+      title: {
+        en: "Evia Travel Guide 2026: Beaches, Villages, Things to Do & Insider Tips",
+        el: "Εύβοια: Οδηγός Ταξιδιού — Παραλίες, Χωριά, Αξιοθέατα & Tips"
+      },
+      description: {
+        en: "Discover Evia (Euboea), Greece’s second-largest island. Complete travel guide with beaches, villages, hidden gems, food, hiking, hot springs, and things to do in 2026.",
+        el: "Ανακαλύψτε την Εύβοια, το δεύτερο μεγαλύτερο νησί της Ελλάδας. Πλήρης ταξιδιωτικός οδηγός με παραλίες, χωριά, κρυμμένα διαμάντια, φαγητό, πεζοπορία, ιαματικές πηγές και τι να κάνεις το 2026."
+      }
+    },
+    guideLinks: [
+      {
+        href: "/hotels/evia",
+        label: { en: "Where to Stay in Evia", el: "Πού να μείνεις στην Εύβοια" }
+      }
+    ]
+  },
+  {
     slug: "patras",
     name: "Patras",
     region: { en: "Peloponnese", el: "Πελοπόννησος" },

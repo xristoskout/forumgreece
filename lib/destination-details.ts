@@ -1465,4 +1465,68 @@ export const destinationDetails: Record<string, DestinationDetail> = {
       },
     },
   },
+  evia: {
+    overview: {
+      en: "Evia (Euboea) is one of Greece's most underestimated destinations. Despite being the second-largest island in the country, it remains off the mainstream tourist radar. Connected to mainland Greece by bridges, it feels like a hybrid between an island and a continental escape: wild mountains, deep forests, thermal springs, untouched beaches, and traditional villages that have not been reshaped by mass tourism. Unlike the Cyclades, Evia is not about polished luxury or curated postcard perfection. It is raw, diverse, and surprisingly large. This guide covers everything you need to plan a full trip: beaches, towns, nature experiences, food, routes, and practical travel advice.",
+      el: "Η Εύβοια είναι ένας από τους πιο υποτιμημένους προορισμούς της Ελλάδας. Παρότι είναι το δεύτερο μεγαλύτερο νησί της χώρας, παραμένει εκτός του κύριου τουριστικού ραντάρ. Συνδεδεμένη με την ηπειρωτική Ελλάδα μέσω γεφυρών, μοιάζει με υβρίδιο νησιού και ηπειρωτικής απόδρασης. Σε αντίθεση με τις Κυκλάδες, η Εύβοια δεν έχει να κάνει με γυαλισμένη πολυτέλεια. Είναι ωμή, διαφορετική και εκπληκτικά μεγάλη."
+    },
+    pageIncludes: {
+      en: [
+        "Wild mountains, forests & thermal springs",
+        "Authentic villages without heavy tourism",
+        "Diverse beaches from sandy to hidden coves",
+        "Local gastronomy, honey, figs & seafood",
+      ],
+      el: [
+        "Άγρια βουνά, δάση & ιαματικές πηγές",
+        "Αυθεντικά χωριά χωρίς μαζικό τουρισμό",
+        "Ποικιλόμορφες παραλίες από αμμουδιές μέχρι κρυμμένους όρμους",
+        "Τοπική γαστρονομία, μέλι, σύκα & θαλασσινά",
+      ]
+    },
+    perfectFor: {
+      en: [
+        "Travelers seeking authentic, untouristed Greece",
+        "Hikers and nature enthusiasts",
+        "Wellness seekers (thermal springs)",
+        "Road trip lovers",
+        "Families looking for easy-access beach holidays",
+        "Weekend escapes from Athens",
+      ],
+      el: [
+        "Ταξιδιώτες που αναζητούν αυθεντική Ελλάδα",
+        "Λάτρεις της πεζοπορίας και της φύσης",
+        "Αναζητητές ευεξίας (ιαματικές πηγές)",
+        "Λάτρεις των road trips",
+        "Οικογένειες που θέλουν εύκολες διακοπές στη θάλασσα",
+        "Αποδράσεις Σαββατοκύριακου από την Αθήνα",
+      ]
+    },
+    honestAdvice: {
+      title: {
+        en: "Honest Advice — What to Skip",
+        el: "Ειλικρινής Συμβουλή — Τι να Αποφύγεις"
+      },
+      alert: {
+        en: "The best Evia experience comes from focusing on one region rather than trying to see everything. Pick north, central, or south and explore it deeply.",
+        el: "Η καλύτερη εμπειρία στην Εύβοια έρχεται όταν εστιάζετε σε μία περιοχή. Διαλέξτε βορρά, κέντρο ή νότο και εξερευνήστε σε βάθος."
+      },
+      items: {
+        en: [
+          "Chalkida on peak weekends — the bridge becomes a major bottleneck in summer",
+          "All-inclusive resorts — Evia is meant to be explored, not locked in a bubble",
+          "Trying to see the whole island in two days — you will spend 80% of your time driving",
+          "Overhyped social media beaches — the beach next door is often just as beautiful and far less crowded",
+          "Expecting a traditional 'party island' — Evia is about nature, wellness, and authenticity",
+        ],
+        el: [
+          "✕ Χαλκίδα τα Σαββατοκύριακα αιχμής — η γέφυρα γίνεται μποτιλιάρισμα",
+          "✕ All-inclusive θέρετρα — η Εύβοια είναι για εξερεύνηση",
+          "✕ Να δείτε όλο το νησί σε δύο μέρες — θα περάσετε 80% του χρόνου στο αυτοκίνητο",
+          "✕ Overhyped παραλίες από social media — η διπλανή παραλία είναι συχνά εξίσου όμορφη",
+          "✕ Να περιμένετε παραδοσιακό 'party island' — η Εύβοια είναι φύση, ευεξία και αυθεντικότητα",
+        ],
+      },
+    },
+  },
 };
