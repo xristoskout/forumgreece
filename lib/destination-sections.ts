@@ -4108,6 +4108,352 @@ export const destinationSections: Record<string, DestinationSection[]> = {
     }
   ],
 
+  lefkada: [
+    {
+      title: { en: "Why visit Lefkada", el: "Γιατί να επισκεφθείς τη Λευκάδα" },
+      layout: "numbered",
+      items: [
+        {
+          title: { en: "The beaches of the western coast are genuinely world-class", el: "Οι παραλίες της δυτικής ακτής είναι παγκοσμίου κλάσης" },
+          text: {
+            en: "Porto Katsiki and Egremni are not overhyped. The combination of near-white chalk cliffs, crystal-clear turquoise water, and the sheer scale of the landscape creates a visual experience that is difficult to find anywhere else in Greece. Both beaches require descending steep steps or a boat, which filters the crowd somewhat — but the effort is more than justified.",
+            el: "Το Πόρτο Κατσίκι και οι Εγκρεμνοί δεν είναι υπερβολικά διαφημισμένα. Ο συνδυασμός λευκών ασβεστολιθικών γκρεμών, κρυστάλλινου τιρκουάζ νερού και της κλίμακας του τοπίου δημιουργεί μια οπτική εμπειρία που δύσκολα βρίσκεις αλλού στην Ελλάδα."
+          }
+        },
+        {
+          title: { en: "No ferry needed", el: "Δεν χρειάζεσαι πλοίο" },
+          text: {
+            en: "Lefkada is the only Ionian island reachable by car. A short causeway and floating drawbridge connect it to the mainland. This removes ferry queues, booking pressure, and schedule constraints — a significant advantage for family trips or road trips around Greece.",
+            el: "Η Λευκάδα είναι το μόνο ιόνιο νησί προσβάσιμο με αυτοκίνητο. Μια σύντομη λωρίδα γης και μια πλωτή γέφυρα τη συνδέουν με την ηπειρωτική Ελλάδα, εξαλείφοντας τις ουρές στα πλοία και τους περιορισμούς δρομολογίων."
+          }
+        },
+        {
+          title: { en: "Watersports capital of the Ionian", el: "Πρωτεύουσα θαλάσσιων σπορ του Ιονίου" },
+          text: {
+            el: "Ο κόλπος της Βασιλικής στα νότια συγκαταλέγεται σταθερά στους κορυφαίους προορισμούς windsurfing της Ευρώπης. Το τοπικό μοτίβο ανέμου — πρωινή ηρεμία ακολουθούμενη από ένα ισχυρό απογευματινό αεράκι — δημιουργεί σχεδόν ιδανικές συνθήκες.",
+            en: "The Vassiliki Bay in the south is consistently ranked among Europe's top windsurfing destinations. The local wind pattern — a morning calm followed by a strong afternoon thermal breeze called 'Eric' — creates near-perfect conditions for windsurfers and kitesurfers of all levels."
+          }
+        },
+        {
+          title: { en: "The island has a real interior", el: "Το νησί έχει πραγματικό εσωτερικό" },
+          text: {
+            en: "The central mountain villages — Karya, Englouvi, Kalamitsi — offer a completely different Lefkada: cool air, stone-paved alleys, local embroidery traditions, and tavernas serving slow-cooked goat with homemade wine. The highest road passes through one of Greece's highest-altitude lentil-growing regions.",
+            el: "Τα ορεινά χωριά — Καρυά, Εγκλουβή, Καλαμίτσι — προσφέρουν μια εντελώς διαφορετική Λευκάδα: δροσερό αέρα, πλακόστρωτα σοκάκια, παραδόσεις κεντήματος και ταβέρνες με αργομαγειρεμένο κατσίκι και σπιτικό κρασί."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "Best time to visit", el: "Καλύτερη εποχή για να πας" },
+      layout: "list",
+      alert: {
+        en: "Secret: If you plan to hike to Englouvi or explore the mountain villages, May is the perfect month — wildflowers are in full bloom and the air is fresh without the summer heat.",
+        el: "Μυστικό: Αν σχεδιάζετε πεζοπορία στην Εγκλουβή ή εξερεύνηση των ορεινών χωριών, ο Μάιος είναι ο ιδανικός μήνας — τα αγριολούλουδα ανθίζουν και ο αέρας είναι δροσερός."
+      },
+      items: [
+        {
+          title: { en: "May – June", el: "Μάιος – Ιούνιος" },
+          text: {
+            en: "The ideal window: mild temperatures (22–27°C), a sea warm enough for comfortable swimming, very few crowds on the beaches, and open restaurants without waiting. Hiking in the interior is at its best.",
+            el: "Το ιδανικό παράθυρο: ήπιες θερμοκρασίες, θάλασσα αρκετά ζεστή για μπάνιο, λίγα πλήθη και ανοιχτές ταβέρνες χωρίς αναμονή."
+          }
+        },
+        {
+          title: { en: "July – August", el: "Ιούλιος – Αύγουστος" },
+          text: {
+            en: "Peak season. The island is busy, Porto Katsiki fills up early, and accommodation prices reach their highest. If you visit in August, arrive at the western beaches before 10:00 AM.",
+            el: "Περίοδος αιχμής. Το νησί είναι γεμάτο, το Πόρτο Κατσίκι γεμίζει νωρίς. Αν επισκεφθείτε τον Αύγουστο, φτάστε στις δυτικές παραλίες πριν τις 10:00."
+          }
+        },
+        {
+          title: { en: "September", el: "Σεπτέμβριος" },
+          text: {
+            en: "Many experienced travelers consider September the ideal Lefkada month. The crowds thin, the sea is at its warmest (24–25°C), accommodation rates drop, and the late afternoon light on the western cliffs is extraordinary.",
+            el: "Πολλοί ταξιδιώτες θεωρούν τον Σεπτέμβριο τον ιδανικό μήνα. Τα πλήθη αραιώνουν, η θάλασσα είναι ζεστή και οι τιμές πέφτουν."
+          }
+        },
+        {
+          title: { en: "April & October", el: "Απρίλιος & Οκτώβριος" },
+          text: {
+            en: "Excellent for nature and villages, quieter roads, and dramatically reduced prices. Swimming is possible depending on the weather. Many beach tavernas and tourist services are closed.",
+            el: "Εξαιρετικά για φύση και χωριά, πιο ήσυχοι δρόμοι και πολύ μειωμένες τιμές. Το μπάνιο είναι εφικτό ανάλογα με τον καιρό."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "How to get to Lefkada", el: "Πώς φτάνεις στη Λευκάδα" },
+      layout: "grid",
+      items: [
+        {
+          title: { en: "By road (from Athens)", el: "Οδικώς (από Αθήνα)" },
+          text: {
+            en: "The most common route is Athens → Corinth → Patras → Antirrio → Igoumenitsa direction, turning south at Vonitsa. Total driving time is approximately 4.5–5 hours. The road across the causeway into Lefkada Town is straightforward and well-signposted.",
+            el: "Η πιο συνηθισμένη διαδρομή είναι Αθήνα → Κόρινθος → Πάτρα → Αντίρριο, με στροφή νότια στη Βόνιτσα. Η διαδρομή διαρκεί περίπου 4.5–5 ώρες."
+          }
+        },
+        {
+          title: { en: "By air (Preveza airport)", el: "Αεροπορικώς (αεροδρόμιο Πρέβεζας)" },
+          text: {
+            en: "Aktion National Airport (PVK) in Preveza is approximately 20–25 km from Lefkada Town. The airport serves domestic flights from Athens and international charter flights during summer. A taxi or rental car is the most practical option.",
+            el: "Το αεροδρόμιο Ακτίου (PVK) στην Πρέβεζα απέχει περίπου 20–25 χλμ από τη Λευκάδα. Εξυπηρετεί πτήσεις εσωτερικού και διεθνείς ναυλωμένες πτήσεις."
+          }
+        },
+        {
+          title: { en: "Getting around", el: "Μετακινήσεις στο νησί" },
+          text: {
+            en: "A car is essential to experience Lefkada fully. The western beaches require a mountain road drive, the villages are scattered, and public transport is very limited outside Lefkada Town. Rent a car at the airport or in Preveza.",
+            el: "Το αυτοκίνητο είναι απαραίτητο για να εξερευνήσετε πλήρως τη Λευκάδα. Τα μέσα μεταφοράς είναι πολύ περιορισμένα εκτός της πόλης."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "Top attractions & experiences", el: "Κορυφαία αξιοθέατα & εμπειρίες" },
+      layout: "numbered",
+      items: [
+        {
+          title: { en: "Porto Katsiki", el: "Πόρτο Κατσίκι" },
+          text: {
+            en: "The most photographed beach in Lefkada. A steep descent of approximately 100+ steps leads down to a pebble-and-sand beach enclosed by towering white chalk cliffs. The water is an intense turquoise. Access is also possible by boat from Nydri or Vassiliki — the sea view of the cliffs from a boat is a completely different perspective.",
+            el: "Η πιο φωτογραφημένη παραλία της Λευκάδας. Μια απότομη κατάβαση περίπου 100+ σκαλοπατιών οδηγεί σε μια παραλία με βότσαλο και άμμο, πλαισιωμένη από επιβλητικούς λευκούς γκρεμούς."
+          }
+        },
+        {
+          title: { en: "Egremni Beach", el: "Παραλία Εγκρεμνοί" },
+          text: {
+            en: "A few kilometers north of Porto Katsiki, Egremni is longer, wilder, and still feels remote. A descent of around 350 steps leads to the beach. The cliff colours shift between white, grey, and pale orange depending on the light. Check conditions locally before descending as the area was affected by a 2015 earthquake.",
+            el: "Λίγα χιλιόμετρα βόρεια του Πόρτο Κατσίκι, οι Εγκρεμνοί είναι μεγαλύτερη, πιο άγρια και ακόμα απομακρυσμένη. Η κατάβαση 350 σκαλοπατιών οδηγεί σε μια παραλία που παραμένει ανέγγιχτη."
+          }
+        },
+        {
+          title: { en: "Kathisma Beach", el: "Παραλία Καθίσμα" },
+          text: {
+            en: "The most family-friendly of Lefkada's famous beaches, on the northwest coast with a paved road. Long stretch of soft sand with organised facilities, sunbeds, beach bars, and shallow entry. Sunsets at Kathisma are among the best on the island.",
+            el: "Η πιο οικογενειακή από τις διάσημες παραλίες της Λευκάδας. Μακριά αμμουδιά με οργανωμένες εγκαταστάσεις, ξαπλώστρες και ρηχή είσοδο. Τα ηλιοβασιλέματα στο Καθίσμα είναι από τα καλύτερα."
+          }
+        },
+        {
+          title: { en: "Vassiliki & windsurfing", el: "Βασιλική & windsurfing" },
+          text: {
+            en: "The bay of Vassiliki is a world-renowned windsurfing destination. The local thermal wind 'Eric' arrives reliably in the afternoon, creating ideal conditions. Numerous schools offer courses from beginner to advanced. Non-windsurfers will find calm clear water and excellent fish tavernas.",
+            el: "Ο κόλπος της Βασιλικής είναι παγκοσμίου φήμης προορισμός windsurfing. Πολλές σχολές προσφέρουν μαθήματα. Ακόμα και μη windsurfers θα βρουν ήρεμα νερά και εξαιρετικές ψαροταβέρνες."
+          }
+        },
+        {
+          title: { en: "Nydri & the waterfalls", el: "Νυδρί & οι καταρράκτες" },
+          text: {
+            en: "Nydri on the east coast is the island's main tourist hub and departure point for boat excursions to the surrounding islets. About 3 km inland are the Nydri Waterfalls — freshwater cascades accessible by a short walk through a gorge. Best in spring and early summer when water levels are high.",
+            el: "Το Νυδρί στην ανατολική ακτή είναι το κύριο τουριστικό κέντρο. Περίπου 3 χλμ στο εσωτερικό βρίσκονται οι καταρράκτες του Νυδριού, προσβάσιμοι με μια σύντομη πεζοπορία."
+          }
+        },
+        {
+          title: { en: "Karya & the mountain villages", el: "Καρυά & τα ορεινά χωριά" },
+          text: {
+            en: "Karya is the largest mountain village and the cultural heart of the interior. Famous for Lefkadian embroidery and one of the most atmospheric village squares on the island. Nearby Englouvi, at 800m elevation, is the highest village and home to an annual lentil festival in August.",
+            el: "Η Καρυά είναι το μεγαλύτερο ορεινό χωριό. Φημίζεται για το Λευκαδίτικο κέντημα. Η γειτονική Εγκλουβή, στα 800μ, είναι το ψηλότερο χωριό με ετήσιο φεστιβάλ φακής τον Αύγουστο."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "Top beaches", el: "Κορυφαίες παραλίες" },
+      layout: "list",
+      alert: {
+        en: "Secret: The western beaches involve significant stair descents. Wear appropriate footwear, carry water, and consider the return climb before you descend — especially with children or in peak midday heat.",
+        el: "Μυστικό: Οι δυτικές παραλίες έχουν σημαντική κατάβαση σκαλοπατιών. Φορέστε κατάλληλα παπούτσια, πάρτε νερό και υπολογίστε την επιστροφή πριν κατεβείτε."
+      },
+      items: [
+        {
+          title: { en: "Porto Katsiki", el: "Πόρτο Κατσίκι" },
+          text: {
+            en: "For the iconic cliff-and-turquoise-water combination. Arrive early (before 10:00 in July–August) or take a boat from Nydri or Vassiliki to avoid the crowd at the top of the stairs.",
+            el: "Για τον εμβληματικό συνδυασμό γκρεμών και τιρκουάζ νερού. Φτάστε νωρίς ή πάρτε βάρκα από Νυδρί ή Βασιλική."
+          }
+        },
+        {
+          title: { en: "Egremni", el: "Εγκρεμνοί" },
+          text: {
+            en: "For a wilder, longer alternative to Porto Katsiki. The staircase descent is longer (350 steps) but the reward is a beach that still feels genuinely remote and undisturbed.",
+            el: "Για μια πιο άγρια εναλλακτική. Η σκάλα είναι μεγαλύτερη (350 σκαλοπάτια) αλλά η ανταμοιβή είναι μια παραλία που νιώθεις πραγματικά απομακρυσμένη."
+          }
+        },
+        {
+          title: { en: "Kathisma", el: "Καθίσμα" },
+          text: {
+            en: "For families, sunsets, and a long stretch of soft sand with full facilities. Walk south past the organized section for progressively quieter conditions.",
+            el: "Για οικογένειες, ηλιοβασιλέματα και μακριά αμμουδιά με οργανωμένες υποδομές. Περπατήστε νότια για πιο ήσυχα σημεία."
+          }
+        },
+        {
+          title: { en: "Mylos Beach", el: "Παραλία Μύλος" },
+          text: {
+            en: "A small pebble cove near Agios Nikitas on the northwest coast, accessible on foot. One of the most picturesque and low-key spots on the island.",
+            el: "Μικρός βοτσαλωτός όρμος κοντά στον Άγιο Νικήτα. Από τα πιο γραφικά και ήσυχα σημεία του νησιού."
+          }
+        },
+        {
+          title: { en: "Pefkoulia", el: "Πευκούλια" },
+          text: {
+            en: "North of Kathisma, a quieter sandy beach with a dramatic cliff backdrop and largely local crowd. Excellent for late afternoon swimming when the light turns golden.",
+            el: "Βόρεια του Καθίσματος, πιο ήσυχη αμμουδιά με εντυπωσιακό γκρεμό. Ιδανική για απογευματινό μπάνιο."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "Local food & drink", el: "Τοπικό φαγητό & ποτό" },
+      layout: "list",
+      alert: {
+        en: "Secret: The smaller the taverna and the further from the main tourist strip, the more genuine the experience. Ask for whatever came in that morning rather than ordering from a fixed menu.",
+        el: "Μυστικό: Όσο πιο μικρή η ταβέρνα και μακριά από τον τουριστικό δρόμο, τόσο πιο αυθεντική η εμπειρία. Ρωτήστε τι έπιασαν το πρωί."
+      },
+      items: [
+        {
+          title: { en: "Lefkadian sofrito", el: "Λευκαδίτικο σοφρίτο" },
+          text: {
+            en: "Thin veal slices slow-cooked in white wine, garlic, and vinegar sauce. Rich, fragrant, and best eaten with thick bread. Found in traditional tavernas throughout the island.",
+            el: "Λεπτές φέτες μοσχαριού αργομαγειρεμένες σε λευκό κρασί, σκόρδο και ξύδι. Πλούσιο και αρωματικό."
+          }
+        },
+        {
+          title: { en: "Kreatopita (meat pie)", el: "Κρεατόπιτα" },
+          text: {
+            en: "A hearty baked pie filled with minced meat, rice, and local herbs. Found in bakeries and traditional kafeneions, particularly in the mountain villages. The version in Karya is considered among the best.",
+            el: "Πλούσια πίτα φούρνου με κιμά, ρύζι και μυρωδικά. Η εκδοχή της Καρυάς θεωρείται από τις καλύτερες."
+          }
+        },
+        {
+          title: { en: "Englouvi lentils", el: "Φακές Εγκλουβής" },
+          text: {
+            en: "The lentils grown in the high-altitude plain of Englouvi are among the finest in Greece — small, firm, and intensely flavoured. They appear in soups, salads, and as a side dish. The August festival celebrates them.",
+            el: "Οι φακές που καλλιεργούνται στο υψίπεδο της Εγκλουβής είναι από τις καλύτερες στην Ελλάδα — μικρές, σφιχτές και γεμάτες γεύση."
+          }
+        },
+        {
+          title: { en: "Fresh fish", el: "Φρέσκο ψάρι" },
+          text: {
+            en: "Both Nydri and Vassiliki have fish tavernas where the catch of the day is displayed. The smaller tavernas away from the main strip offer the most genuine experience.",
+            el: "Τόσο το Νυδρί όσο και η Βασιλική έχουν ψαροταβέρνες με φρέσκο ψάρι."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "Practical tips", el: "Πρακτικές συμβουλές" },
+      layout: "list",
+      items: [
+        {
+          title: { en: "Plan your western beach days around timing", el: "Προγραμματίστε τις μέρες σας στις δυτικές παραλίες" },
+          text: {
+            en: "Porto Katsiki and Egremni are most manageable before 10:00 AM or after 16:00. Midday combines maximum heat, maximum crowds, and the hardest stair return climb.",
+            el: "Πόρτο Κατσίκι και Εγκρεμνοί: καλύτερα πριν τις 10:00 ή μετά τις 16:00. Το μεσημέρι συνδυάζει ζέστη, πλήθη και δύσκολη ανάβαση."
+          }
+        },
+        {
+          title: { en: "Book accommodation early for August", el: "Κλείστε διαμονή νωρίς για Αύγουστο" },
+          text: {
+            en: "Lefkada's accessibility by road makes it extremely popular with Greek and Italian families during the first two weeks of August. Good accommodation fills up months in advance.",
+            el: "Η προσβασιμότητα της Λευκάδας την κάνει εξαιρετικά δημοφιλή. Τα καλά καταλύματα κλείνουν μήνες πριν."
+          }
+        },
+        {
+          title: { en: "The mountain roads require patience", el: "Τα ορεινά χωριά απαιτούν υπομονή" },
+          text: {
+            en: "The road to Porto Katsiki from Lefkada Town takes approximately 45–55 minutes and involves narrow sections with oncoming traffic. Do not underestimate the driving time.",
+            el: "Ο δρόμος προς Πόρτο Κατσίκι από τη Λευκάδα διαρκεί περίπου 45–55 λεπτά. Μην υποτιμάτε τον χρόνο οδήγησης."
+          }
+        },
+        {
+          title: { en: "Agios Nikitas vehicle access", el: "Πρόσβαση οχημάτων στον Άγιο Νικήτα" },
+          text: {
+            en: "The road into the village is closed to general traffic during high season. Park outside and walk in (10–15 minutes). This preserves the village character and is part of its appeal.",
+            el: "Ο δρόμος προς το χωριό κλείνει για την κυκλοφορία το καλοκαίρι. Παρκάρετε έξω και περπατήστε."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "What to skip — honest advice", el: "Τι να αποφύγεις — ειλικρινής συμβουλή" },
+      layout: "list",
+      alert: {
+        en: "What nobody tells you: Lefkada's west-coast cliff beaches are genuinely exposed to afternoon wind. The same thermal breeze that makes Vassiliki world-class for windsurfing also whips up wave action on Porto Katsiki and Egremni from early afternoon onwards. The morning window is not just about avoiding crowds — it is the only time the sea is genuinely still.",
+        el: "Αυτό που δε σου λέει κανείς: Οι δυτικές παραλίες εκτίθενται στον απογευματινό άνεμο. Το πρωί δεν είναι μόνο για να αποφύγεις τα πλήθη — είναι η μόνη ώρα που η θάλασσα είναι πραγματικά ήρεμη."
+      },
+      items: [
+        {
+          title: { en: "Driving to Porto Katsiki mid-day in August", el: "Οδήγηση στο Πόρτο Κατσίκι μεσημέρι Αυγούστου" },
+          text: {
+            en: "The parking area fills completely, leaving cars lined along the roadside for 1–2 km. The beach below is at its most crowded. Choose a morning visit or come by boat.",
+            el: "Ο χώρος στάθμευσης γεμίζει και τα αυτοκίνητα παρατάσσονται για 1-2 χλμ. Επιλέξτε πρωινή επίσκεψη ή ελάτε με βάρκα."
+          }
+        },
+        {
+          title: { en: "Expecting Nydri to be authentic", el: "Να περιμένετε το Νυδρί αυθεντικό" },
+          text: {
+            en: "Nydri is the island's busiest tourist strip — restaurants, souvenir shops, and boat agencies lined up for 500 metres. Use it as a functional base or departure point, not as a gastronomic destination. Eat in Lefkada Town or the villages instead.",
+            el: "Το Νυδρί είναι η πιο τουριστική ζώνη. Χρησιμοποιήστε το ως βάση ή αφετηρία για εκδρομές, όχι ως γαστρονομικό προορισμό."
+          }
+        },
+        {
+          title: { en: "Doing Porto Katsiki and Egremni in one morning", el: "Να κάνετε Πόρτο Κατσίκι και Εγκρεμνούς σε ένα πρωινό" },
+          text: {
+            en: "Both involve significant descents and climbs. Doing both in one session in summer heat is exhausting. Dedicate a full morning to one and visit the other on a separate day.",
+            el: "Και οι δύο απαιτούν σημαντική κατάβαση και ανάβαση. Αφιερώστε ένα πρωινό στον καθένα."
+          }
+        },
+        {
+          title: { en: "Ignoring Vassiliki if not a windsurfer", el: "Να αγνοήσετε τη Βασιλική αν δεν κάνετε windsurf" },
+          text: {
+            en: "Non-windsurfers often skip Vassiliki, but the bay has some of the calmest water on the south coast, excellent fish tavernas, and a relaxed atmosphere that contrasts well with the busier east coast.",
+            el: "Πολλοί παραλείπουν τη Βασιλική, αλλά έχει ήσυχα νερά, εξαιρετικές ψαροταβέρνες και χαλαρή ατμόσφαιρα."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "FAQ — Lefkada Essentials", el: "Συχνές Ερωτήσεις" },
+      layout: "faq",
+      items: [
+        {
+          title: { en: "How many days do I need in Lefkada?", el: "Πόσες μέρες χρειάζομαι στη Λευκάδα;" },
+          text: {
+            en: "Five to seven days is ideal for a complete experience. Three to four days is enough for a highlight-focused trip if combining with other stops.",
+            el: "Πέντε με επτά μέρες είναι ιδανικά. Τρεις με τέσσερις μέρες αρκούν για μια γρήγορη επίσκεψη."
+          }
+        },
+        {
+          title: { en: "Do I need a car in Lefkada?", el: "Χρειάζομαι αυτοκίνητο στη Λευκάδα;" },
+          text: {
+            en: "Yes, practically speaking. The western beaches, mountain villages, and southern bays are not accessible without a car or organised tour.",
+            el: "Ναι. Οι δυτικές παραλίες, τα ορεινά χωριά και οι νότιοι όρμοι δεν είναι προσβάσιμοι χωρίς αυτοκίνητο."
+          }
+        },
+        {
+          title: { en: "Is Lefkada suitable for families?", el: "Είναι κατάλληλη η Λευκάδα για οικογένειες;" },
+          text: {
+            en: "Very much so. Kathisma and Vassiliki Bay offer calm, shallow conditions. Boat trips to the islets are enjoyable for all ages. The western cliff beaches involve steep stairs and are better for older children.",
+            el: "Απολύτως. Το Καθίσμα και η Βασιλική προσφέρουν ήρεμα, ρηχά νερά. Οι δυτικές παραλίες έχουν απότομες σκάλες."
+          }
+        },
+        {
+          title: { en: "When is the best time to visit Porto Katsiki?", el: "Πότε είναι η καλύτερη ώρα για Πόρτο Κατσίκι;" },
+          text: {
+            en: "Morning (before 10:00) for calm water, manageable crowds, and comfortable temperatures. September for warm sea, fewer people, and golden afternoon light on the cliffs.",
+            el: "Πρωί (πριν τις 10:00) για ήρεμα νερά. Σεπτέμβριος για ζεστή θάλασσα και λιγότερο κόσμο."
+          }
+        },
+        {
+          title: { en: "Is Lefkada expensive?", el: "Είναι ακριβή η Λευκάδα;" },
+          text: {
+            en: "Mid-range. Generally less expensive than Mykonos or Santorini, comparable to Corfu or Kefalonia. The east coast (Nydri) tends to be more expensive. Mountain villages offer better value.",
+            el: "Μέσης κατηγορίας. Φθηνότερη από Μύκονο ή Σαντορίνη. Η ανατολική ακτή είναι πιο ακριβή, τα ορεινά χωριά πιο οικονομικά."
+          }
+        }
+      ]
+    }
+  ],
+
   chania: [
     {
       layout: "list",

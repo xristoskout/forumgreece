@@ -1190,6 +1190,88 @@ export const hotels: HotelCard[] = [
     },
   },
   {
+    slug: "lefkada",
+    name: "Where to Stay in Lefkada",
+    place: "Lefkada — Ionian Islands",
+    info: {
+      en: "Choosing where to stay in Lefkada shapes your entire experience on the island — from whether you wake up steps from a buzzing harbour or in silence above a clifftop bay, to whether Porto Katsiki is a 15-minute drive or a 55-minute one. Lefkada is accessible by road from mainland Greece, which gives it a different travel rhythm from most Greek islands. Visitors often arrive by car and the choice of base matters more here than on smaller islands: the distances between the west coast beaches, the east coast ports, and the mountain interior are real. This guide covers the five main areas for accommodation in Lefkada, with honest advice on who each one suits — and who it does not.",
+      el: "Η επιλογή διαμονής στη Λευκάδα καθορίζει ολόκληρη την εμπειρία σας στο νησί — από το αν θα ξυπνήσετε δίπλα σε ένα πολυσύχναστο λιμάνι ή στη σιωπή πάνω από έναν γκρεμό, μέχρι το αν το Πόρτο Κατσίκι θα απέχει 15 λεπτά ή 55 λεπτά. Αυτός ο οδηγός καλύπτει τις πέντε κύριες περιοχές διαμονής στη Λευκάδα."
+    },
+    image: "/images/lefkada-cover.webp",
+    badge: "Ionian Islands",
+    overview: {
+      en: "Lefkada is the only Greek island you can drive to without a ferry — a thin causeway and a floating bridge connect it to the mainland. That alone makes it one of the most accessible Ionian islands, yet what awaits is anything but ordinary. Towering white limestone cliffs plunge into waters so blue they seem to belong to the Caribbean. Ancient villages cling to hillsides with wooden-balconied houses painted in unexpected colors. And on the western coast, two of the most dramatic beaches in all of Greece wait at the end of winding mountain roads.",
+      el: "Η Λευκάδα είναι το μόνο ελληνικό νησί που μπορείς να οδηγήσεις χωρίς πλοίο. Λευκοί ασβεστολιθικοί γκρεμοί βυθίζονται σε νερά που μοιάζουν με την Καραϊβική. Δύο από τις πιο εντυπωσιακές παραλίες της Ελλάδας σε περιμένουν στη δυτική ακτή."
+    },
+    description: {
+      en: "Choosing where to stay in Lefkada shapes your entire experience on the island — from whether you wake up steps from a buzzing harbour or in silence above a clifftop bay, to whether Porto Katsiki is a 15-minute drive or a 55-minute one. Lefkada is accessible by road from mainland Greece, which gives it a different travel rhythm from most Greek islands. Visitors often arrive by car and the choice of base matters more here than on smaller islands: the distances between the west coast beaches, the east coast ports, and the mountain interior are real. Getting this right means less time on winding roads and more time in the water. This guide covers the five main areas for accommodation in Lefkada, with honest advice on who each one suits — and who it does not.\n\nLefkada Town is the island's capital and sits at the northern tip, connected to the mainland by a short causeway and a floating drawbridge. It is a genuinely pleasant town to base yourself in — more characterful than most Greek island capitals, thanks to its earthquake-adapted architecture: upper-floor facades clad in brightly painted corrugated metal or sheet iron. From Lefkada Town you can reach the west coast beaches in 40–55 minutes by car, Nydri in 20 minutes, and Vassiliki in around 40 minutes. Nydri on the east coast is the island's most tourist-oriented settlement and the departure point for daily boat excursions to the surrounding islets. Vassiliki at the southern tip is a world-renowned windsurfing destination with a relaxed village atmosphere. Agios Nikitas on the northwest coast is a traditional whitewashed village with boutique accommodation. The west coast villages offer remote, scenic stays with sweeping Ionian Sea views.",
+      el: "Η Λευκάδα είναι το μόνο ελληνικό νησί που μπορείς να οδηγήσεις χωρίς πλοίο — μια σύντομη λωρίδα γης και μια πλωτή γέφυρα τη συνδέουν με την ηπειρωτική Ελλάδα. Η πόλη της Λευκάδας είναι η πρωτεύουσα και η πιο χαρακτηριστική βάση, το Νυδρί στην ανατολική ακτή είναι το τουριστικό κέντρο με εκδρομές στα γύρω νησάκια, η Βασιλική στο νότιο άκρο είναι παγκοσμίου φήμης προορισμός windsurfing, ο Άγιος Νικήτας στα βορειοδυτικά είναι ένα γραφικό παραδοσιακό χωριό, και τα χωριά της δυτικής ακτής προσφέρουν απομακρυσμένες διαμονές με θέα στο Ιόνιο."
+    },
+    features: {
+      en: [
+        "Lefkada Town (Central & Authentic)",
+        "Nydri (Busy & Connected)",
+        "Vassiliki (Watersports)",
+        "Agios Nikitas (Boutique & Quiet)",
+        "West Coast Villages (Remote & Scenic)"
+      ],
+      el: [
+        "Λευκάδα Πόλη (Κεντρικά & Αυθεντικά)",
+        "Νυδρί (Πολυσύχναστα & Συνδεδεμένα)",
+        "Βασιλική (Θαλάσσια Σπορ)",
+        "Άγιος Νικήτας (Boutique & Ήσυχα)",
+        "Χωριά Δυτικής Ακτής (Απομακρυσμένα)"
+      ]
+    },
+    sections: [
+      {
+        title: { en: "1. Lefkada Town — Central, Authentic & Practical", el: "1. Λευκάδα Πόλη — Κεντρικά, Αυθεντικά & Πρακτικά" },
+        content: {
+          en: "Lefkada Town is the island's capital and sits at the northern tip, connected to the mainland by a short causeway and a floating drawbridge. It is a genuinely pleasant town to base yourself in — more characterful than most Greek island capitals, thanks to its earthquake-adapted architecture: upper-floor facades clad in brightly painted corrugated metal or sheet iron, giving the streets a cheerful and slightly eclectic energy.\n\nThe town has a long pedestrian street (Dörpfeld Street) lined with cafes, bakeries, and independent shops. The waterfront marina has good fish restaurants and a relaxed evening atmosphere. The Venetian Santa Maura Fortress at the causeway is worth an hour of exploration and is five minutes from the centre on foot.\n\nFrom Lefkada Town you can reach the west coast beaches in 40–55 minutes by car (Porto Katsiki and Egremni), Nydri in 20 minutes, and Vassiliki in around 40 minutes. Local buses run from here to a limited number of destinations.\n\nAccommodation in Lefkada Town consists mainly of small family-run hotels, studios, and apartments — there are no large resort-style properties, which is part of the appeal. Most accommodation is within walking distance of the waterfront and restaurants. Prices are moderate by Greek island standards.\n\nHonest note: Lefkada Town is not on the coast — the nearest beach is a short drive away. If you want to step directly from your hotel onto sand, this is not your base. But for evening atmosphere, ease of access to both coasts, and genuine local feel, it is the most well-rounded choice on the island.",
+          el: "Η πόλη της Λευκάδας είναι η πρωτεύουσα του νησιού και βρίσκεται στο βόρειο άκρο, συνδεδεμένη με την ηπειρωτική Ελλάδα μέσω μιας σύντομης λωρίδας γης και μιας πλωτής γέφυρας. Είναι μια γνήσια ευχάριστη πόλη — πιο χαρακτηριστική από τις περισσότερες πρωτεύουσες ελληνικών νησιών, χάρη στην αντισεισμική αρχιτεκτονική της. Η διαμονή στην πόλη της Λευκάδας προσφέρει πρόσβαση και στις δύο ακτές, αυθεντική ατμόσφαιρα και ήπιο κόστος."
+        }
+      },
+      {
+        title: { en: "2. Nydri — Busy, Well-Connected & Boat-Trip Hub", el: "2. Νυδρί — Πολυσύχναστα, Καλά Συνδεδεμένα & Κέντρο Εκδρομών" },
+        content: {
+          en: "Nydri sits on the east coast about 20 km south of Lefkada Town and is the island's most tourist-oriented settlement. It is the departure point for daily boat excursions to the small surrounding islands — Meganisi, Sparti, Scorpios (the former Onassis estate), and Madouri — and the waterfront is lined with boat agencies, tavernas, and souvenir shops for several hundred metres.\n\nThe bay of Nydri is enclosed and calm, making it suitable for swimming with children. The small pebble-and-sand beach in the town itself is functional rather than beautiful, but several quieter coves are accessible by boat or a short drive north and south.\n\nNydri also has the best infrastructure of any area on the island: car hire agencies, ATMs, pharmacies, supermarkets, ferry connections to Kefalonia and Ithaca, and a wide range of restaurant options at varying price points.\n\nThe Nydri Waterfalls — a series of freshwater cascades through a shaded gorge — are approximately 3 km inland and accessible by a short, easy walk.\n\nAccommodation style: The widest choice on the island — from simple studios and family apartments to mid-range hotels with pools. Several larger resort properties operate in the bays north and south of Nydri (Nikiana, Perigiali) offering more space and a quieter setting.\n\nHonest note: Nydri itself is not a beautiful or quiet town. The main strip can feel crowded and commercial in July and August. Food quality is variable and prices on the main waterfront are 20–30% higher than in Lefkada Town or the villages. Use Nydri as a practical and well-connected base — not as a destination in itself.",
+          el: "Το Νυδρί βρίσκεται στην ανατολική ακτή, περίπου 20 χλμ νότια της πόλης της Λευκάδας. Είναι το πιο τουριστικό κέντρο του νησιού και το σημείο αναχώρησης για καθημερινές εκδρομές με βάρκα στα γύρω νησάκια. Ο κόλπος του Νυδριού είναι ήρεμος και κατάλληλος για κολύμβηση με παιδιά. Το Νυδρί έχει την καλύτερη υποδομή από κάθε άλλη περιοχή: ενοικιάσεις αυτοκινήτων, ΑΤΜ, φαρμακεία, σούπερ μάρκετ και πολλές επιλογές εστιατορίων."
+        }
+      },
+      {
+        title: { en: "3. Vassiliki — Watersports, Calm Bay & a Real Village Feel", el: "3. Βασιλική — Θαλάσσια Σπορ, Ήρεμος Κόλπος & Αυθεντικό Χωριό" },
+        content: {
+          en: "Vassiliki sits at the southern tip of the island, at the head of a large, enclosed bay that is consistently ranked among Europe's top windsurfing destinations. The local wind pattern — known as 'Eric' — produces a reliable thermal breeze each afternoon, creating near-perfect conditions for board sports. International windsurfing competitions are held here, and multiple professional schools and rental centres operate throughout summer.\n\nNon-windsurfers often overlook Vassiliki, which is a mistake. The bay itself offers some of the calmest and clearest water on the island's south coast. The morning hours — before Eric arrives — are ideal for flat, still swimming. The village has a small but genuinely good selection of waterfront fish tavernas where the menu changes daily according to the catch. The atmosphere is relaxed, locals outnumber tourists in the evening, and the pace is slower than Nydri.\n\nPorto Katsiki and Egremni can be reached from Vassiliki in approximately 20–25 minutes by the mountain road — and both beaches are also accessible by boat trip directly from the port, giving Vassiliki an advantage for visitors prioritising the west coast.\n\nAccommodation style: Small hotels, studios, and family-run guesthouses around the village and the bay. No large resorts here. Several properties have sea views across the bay and are excellent value compared to the east coast.\n\nHonest note: Vassiliki is remote relative to the rest of the island — getting to Lefkada Town takes around 40 minutes, and Nydri approximately 35 minutes. If you are windsurfing, the location is ideal. If you plan to explore the whole island equally, it is a long drive to the north and the mountain villages.",
+          el: "Η Βασιλική βρίσκεται στο νότιο άκρο του νησιού και είναι ένας από τους κορυφαίους προορισμούς windsurfing στην Ευρώπη. Ο τοπικός άνεμος 'Eric' δημιουργεί ιδανικές συνθήκες. Ακόμα και όσοι δεν κάνουν windsurf θα απολαύσουν τα ήρεμα νερά, τις εξαιρετικές ψαροταβέρνες και τη χαλαρή ατμόσφαιρα."
+        }
+      },
+      {
+        title: { en: "4. Agios Nikitas — Boutique, Quiet & the Best Sunsets", el: "4. Άγιος Νικήτας — Boutique, Ήσυχα & Τα Καλύτερα Ηλιοβασιλέματα" },
+        content: {
+          en: "Agios Nikitas is a small village on the northwest coast, about 12 km from Lefkada Town. It is arguably the most attractive settlement on the island: a cluster of traditional whitewashed houses and wooden balconies descending to a small pebble cove, with a handful of excellent tavernas and a few boutique accommodation options. The road into the village is closed to general traffic during summer — you park above and walk down (10–15 minutes), which preserves the quiet character entirely.\n\nThe village has its own small beach and is within easy reach of Kathisma beach (5 minutes by car), one of the best sandy beaches on the island. Pefkoulia, a quieter beach immediately north of Kathisma, is also a short drive away. Porto Katsiki and Egremni are approximately 35–40 minutes south along the west coast road.\n\nAgios Nikitas is the best base on the island for watching the sunset. The village faces west and the evening light on the Ionian Sea from the clifftop tavernas is extraordinary.\n\nAccommodation style: A small number of boutique hotels and upmarket guesthouses. Choices are more limited than in Nydri or Lefkada Town, but quality-to-price ratio is very good. Book early — availability is limited.\n\nHonest note: Agios Nikitas has almost no nightlife and limited facilities — no supermarkets, ATMs, or pharmacies in the village itself. For travelers who want liveliness or easy access to all parts of the island, it is a romantic but inconvenient base.",
+          el: "Ο Άγιος Νικήτας είναι ένα μικρό χωριό στη βορειοδυτική ακτή, περίπου 12 χλμ από την πόλη της Λευκάδας. Είναι ένας από τους πιο ελκυστικούς οικισμούς του νησιού: παραδοσιακά ασπρισμένα σπίτια με ξύλινα μπαλκόνια, μικρός βοτσαλωτός όρμος, εξαιρετικές ταβέρνες και boutique καταλύματα."
+        }
+      },
+      {
+        title: { en: "5. West Coast Villages & Kathisma Area — Remote, Scenic & Beach-Focused", el: "5. Χωριά Δυτικής Ακτής & Περιοχή Καθίσματος — Απομακρυσμένα, Γραφικά & Παραλιακά" },
+        content: {
+          en: "The west coast of Lefkada between Tsoukalades and Exanthia is the least developed stretch of the island — a series of small villages, olive groves, and cliff-top viewpoints connected by a narrow mountain road. Accommodation here consists mainly of private villas, stone houses for rent, and small family studios with sweeping Ionian Sea views.\n\nStaying on the west coast puts you as close as it gets to Porto Katsiki and Egremni — both within 20–30 minutes — and within a few minutes of Kathisma and Pefkoulia. The landscape is the most dramatic on the island, the air is cleaner, and the sense of space and remoteness is genuine.\n\nThe village of Kalamitsi and the area around Exanthia offer some of the most scenic hillside stays on the island, with views across to Kefalonia and Ithaca on clear days.\n\nAccommodation style: Predominantly villas, apartments, and private studios. Very few hotel-style properties. Self-catering is the norm — bring groceries from Lefkada Town or Tsoukalades before settling in.\n\nHonest note: This area is genuinely remote and requires a car at all times. Almost no services — no restaurants within easy walking distance, very limited mobile signal in places, and no nightlife whatsoever. For travelers who want independence, natural beauty, and proximity to the best beaches, it is the finest choice on the island. For anyone who wants convenience, it is not.",
+          el: "Η δυτική ακτή της Λευκάδας είναι το λιγότερο ανεπτυγμένο τμήμα του νησιού. Η διαμονή εδώ αποτελείται κυρίως από ιδιωτικές βίλες, πέτρινα σπίτια και μικρά οικογενειακά στούντιο. Η περιοχή προσφέρει την κοντινότερη πρόσβαση στο Πόρτο Κατσίκι και τους Εγκρεμνούς, μακριά από την τουριστική ανάπτυξη."
+        }
+      }
+    ],
+    meta: {
+      title: {
+        en: "Where to Stay in Lefkada | Best Areas & Hotels | GoGreeceNow",
+        el: "Πού να Μείνετε στη Λευκάδα | Καλύτερες Περιοχές & Ξενοδοχεία | GoGreeceNow"
+      },
+      description: {
+        en: "Plan your stay in Lefkada with our complete guide to the best areas. From Lefkada Town and Nydri to Vassiliki, Agios Nikitas and the west coast — find the right base for your trip.",
+        el: "Προγραμματίστε τη διαμονή σας στη Λευκάδα. Από την πόλη της Λευκάδας και το Νυδρί μέχρι τη Βασιλική, τον Άγιο Νικήτα και τη δυτική ακτή — βρείτε την κατάλληλη βάση για το ταξίδι σας."
+      }
+    }
+  },
+  {
     slug: "rhodes",
     name: "Where to Stay in Rhodes",
     place: "Rhodes — Dodecanese",
@@ -1997,6 +2079,88 @@ export const hotels: HotelCard[] = [
         el: "Βρείτε τα καλύτερα μέρη για διαμονή κοντά στους Δελφούς — από το ίδιο το χωριό με τα μνημεία UNESCO και τη θέα στον Κορινθιακό έως την κοσμοπολίτικη Αράχοβα, το Γαλαξείδι, τη Ναύπακτο, την Ορεινή Ναυπακτία και τη γέφυρα Ρίο-Αντίρριο."
       }
     },
+  },
+  {
+    slug: "evia",
+    name: "Where to Stay in Evia",
+    place: "Evia — Central Greece",
+    info: {
+      en: "Find the best places to stay in Evia — from the lively waterfront of Chalkida and the thermal spa town of Edipsos to the quiet beaches of Limni and the sun-drenched south. A complete guide to Evia hotels and areas.",
+      el: "Βρείτε τα καλύτερα μέρη για διαμονή στην Εύβοια — από το ζωντανό παραλιακό μέτωπο της Χαλκίδας και τα ιαματικά λουτρά της Αιδηψού έως τις ήσυχες παραλίες της Λίμνης και τον νότο. Ο πλήρης οδηγός για ξενοδοχεία και περιοχές στην Εύβοια."
+    },
+    image: "/images/evia-cover.webp",
+    badge: "Featured stay",
+    overview: {
+      en: "Choosing where to stay in Evia depends entirely on what kind of trip you are looking for. Greece's second-largest island is remarkably diverse — it stretches over 180 kilometres from north to south, encompassing a cosmopolitan capital, thermal spa resorts, unspoiled mountain villages, Aegean-facing beaches and a rugged southern coast that still feels largely undiscovered. Unlike the Cyclades, Evia rewards those who slow down and explore, which makes the choice of base particularly important.",
+      el: "Η επιλογή διαμονής στην Εύβοια εξαρτάται από το είδος ταξιδιού που ψάχνετε. Το δεύτερο μεγαλύτερο νησί της Ελλάδας είναι εντυπωσιακά ποικιλόμορφο — εκτείνεται πάνω από 180 χιλιόμετρα από βορρά προς νότο, με κοσμοπολίτικη πρωτεύουσα, ιαματικά λουτρά, ανέγγιχτα ορεινά χωριά και μια άγρια νότια ακτή."
+    },
+    description: {
+      en: "The island divides naturally into three zones: the busy and well-connected north, anchored by Edipsos and its famous hot springs; the central belt around Chalkida, the capital, which sits just minutes from the mainland by bridge; and the quieter, more remote south, where Karystos and the surrounding coast offer an authentic pace of life that is increasingly rare in Greek island tourism.\n\nChalkida (Urban & Central) · Edipsos (Spa & Relaxation) · Limni (Quiet & Scenic) · Eretria (Beach & History) · Karystos (South & Authentic)",
+      el: "Το νησί χωρίζεται φυσικά σε τρεις ζώνες: τον πολυσύχναστο και καλά συνδεδεμένο βορρά με την Αιδηψό, την κεντρική ζώνη γύρω από τη Χαλκίδα, και τον πιο ήσυχο νότο με την Κάρυστο."
+    },
+    features: {
+      en: [
+        "Chalkida (Urban & Central)",
+        "Edipsos (Spa & Relaxation)",
+        "Limni (Quiet & Scenic)",
+        "Eretria (Beach & History)",
+        "Karystos (South & Authentic)"
+      ],
+      el: [
+        "Χαλκίδα (Αστική & Κεντρική)",
+        "Αιδηψός (Spa & Χαλάρωση)",
+        "Λίμνη (Ήσυχη & Γραφική)",
+        "Ερέτρια (Παραλία & Ιστορία)",
+        "Κάρυστος (Νότος & Αυθεντικότητα)"
+      ]
+    },
+    sections: [
+      {
+        title: { en: "1. Chalkida — The Urban Gateway", el: "1. Χαλκίδα — Η Αστική Πύλη" },
+        content: {
+          en: "Chalkida (also spelled Halkida or Chalcis) is Evia's capital and the easiest base for visitors travelling from Athens. Connected to the mainland by road bridge, it sits on the Euripus Strait — a narrow channel famous for its unexplained tidal reversals that puzzled Aristotle himself. The city has a lively seafront promenade, strong café and restaurant culture, good transport links to the rest of the island, and a growing selection of modern hotels. It works best as a base for day trips across the island or as a first-night stop before heading further afield. Hotels here cater to both business travellers and weekenders from Athens.",
+          el: "Η Χαλκίδα είναι η πρωτεύουσα της Εύβοιας και η πιο εύκολη βάση για ταξιδιώτες από την Αθήνα. Συνδεδεμένη με την ηπειρωτική Ελλάδα μέσω γέφυρας, βρίσκεται στο στενό του Ευρίπου. Η πόλη έχει ζωντανό παραλιακό πεζόδρομο, καλή κουλτούρα καφέ και εστιατορίων, και αυξανόμενες επιλογές σύγχρονων ξενοδοχείων."
+        }
+      },
+      {
+        title: { en: "2. Edipsos — The Thermal Spa Escape", el: "2. Αιδηψός — Η Ιαματική Απόδραση" },
+        content: {
+          en: "Edipsos (Loutra Edipsou) in the far northwest is one of the most famous spa towns in Greece, with thermal springs that have attracted visitors since antiquity — Aristotle, Sulla and later celebrities all reportedly took the waters here. Today it is a well-developed resort town with dozens of hotels offering thermal pool access, hydrotherapy treatments and sea-view terraces. The pace is unhurried, the landscape lush, and the ferry connection to the mainland port of Arkitsa makes it easily reachable without crossing Chalkida. It is the right choice for travellers seeking wellness, rest and therapeutic stays.",
+          el: "Η Αιδηψός είναι μια από τις πιο διάσημες λουτροπόλεις στην Ελλάδα, με ιαματικές πηγές που προσελκύουν επισκέπτες από την αρχαιότητα. Σήμερα είναι ένα ανεπτυγμένο θέρετρο με δεκάδες ξενοδοχεία που προσφέρουν θερμαλιστικές πισίνες και θεραπείες υδροθεραπείας."
+        }
+      },
+      {
+        title: { en: "3. Limni — The Quiet, Scenic Village", el: "3. Λίμνη — Το Ήσυχο, Γραφικό Χωριό" },
+        content: {
+          en: "Limni is a small, traditionally beautiful harbour village on the northwest coast, about 80 kilometres from Chalkida. It has retained its original character far better than most Aegean destinations of comparable reputation — whitewashed houses, fishing boats, a compact seafront square and a handful of carefully run guesthouses and small hotels. The area around Limni also includes the remarkable Byzantine monastery of Galataki, built into the cliffs above the sea. It suits independent travellers who want scenic calm rather than organised resort facilities, and those who enjoy walking, cycling or exploring the surrounding pine-covered coastline.",
+          el: "Η Λίμνη είναι ένα μικρό, παραδοσιακά όμορφο ψαροχώρι στη βορειοδυτική ακτή. Έχει διατηρήσει τον αυθεντικό χαρακτήρα της καλύτερα από τους περισσότερους προορισμούς του Αιγαίου — ασπρισμένα σπίτια, ψαροκάικα, μια συμπαγή πλατεία και προσεκτικά επιλεγμένους ξενώνες."
+        }
+      },
+      {
+        title: { en: "4. Eretria — The Beach and History Base", el: "4. Ερέτρια — Η Βάση για Παραλία και Ιστορία" },
+        content: {
+          en: "Eretria, on the southwest coast facing the mainland, is one of the most convenient resort areas on the island — reachable by short ferry crossing from Skala Oropou near Athens in under 30 minutes. It has a long beach, a lively summer atmosphere, family-friendly hotels and a genuine archaeological site: the ancient city of Eretria, once one of the most powerful cities in the ancient Greek world, with a museum, mosaics and preserved ruins visible throughout the modern town. It works well for families, first-time visitors to Evia and those combining a beach stay with a little history.",
+          el: "Η Ερέτρια, στη νοτιοδυτική ακτή, είναι ένα από τα πιο βολικά θέρετρα του νησιού — προσβάσιμη με σύντομη πορθμειακή γραμμή από τη Σκάλα Ωρωπού. Έχει μεγάλη παραλία, ζωντανή καλοκαιρινή ατμόσφαιρα, οικογενειακά ξενοδοχεία και έναν αυθεντικό αρχαιολογικό χώρο."
+        }
+      },
+      {
+        title: { en: "5. Karystos — The Authentic South", el: "5. Κάρυστος — Ο Αυθεντικός Νότος" },
+        content: {
+          en: "Karystos sits at the southern tip of Evia beneath the slopes of Mount Ochi, and it remains one of the island's most underrated destinations. It has a dramatic Neo-Classical seafront, a Venetian castle (Bourtzi) standing directly in the harbour, and direct ferry links to Rafina port near Athens. The surrounding area — known as South Evia — is characterised by wide, often uncrowded beaches, stone-built villages and one of the best maintained ancient towers in Greece (the Drakospita, or Dragon Houses, on the high slopes of Ochi). Hotels and accommodation here are simple and genuine, and the pace of life remains exactly what slow-travel visitors are looking for.",
+          el: "Η Κάρυστος βρίσκεται στο νότιο άκρο της Εύβοιας και παραμένει ένας από τους πιο υποτιμημένους προορισμούς του νησιού. Έχει δραματικό νεοκλασικό παραλιακό μέτωπο, ενετικό κάστρο και απευθείας ακτοπλοϊκή σύνδεση με τη Ραφήνα."
+        }
+      }
+    ],
+    meta: {
+      title: {
+        en: "Where to Stay in Evia: Best Areas & Hotel Ideas | GoGreeceNow",
+        el: "Πού να Μείνετε στην Εύβοια | Καλύτερες Περιοχές & Ξενοδοχεία | GoGreeceNow"
+      },
+      description: {
+        en: "Find the best places to stay in Evia — from the lively waterfront of Chalkida and the thermal spa town of Edipsos to the quiet beaches of Limni and the sun-drenched south. A complete guide to Evia hotels and areas.",
+        el: "Βρείτε τα καλύτερα μέρη για διαμονή στην Εύβοια — από το ζωντανό παραλιακό μέτωπο της Χαλκίδας και τα ιαματικά λουτρά της Αιδηψού έως τις ήσυχες παραλίες της Λίμνης και τον ηλιόλουστο νότο."
+      }
+    }
   },
   {
     slug: "thessaloniki",

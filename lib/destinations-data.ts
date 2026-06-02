@@ -480,6 +480,41 @@ export const destinations: Destination[] = [
     }
   },
   {
+    slug: "lefkada",
+    name: "Lefkada",
+    region: { en: "Ionian Islands", el: "Ιόνια Νησιά" },
+    blurb: {
+      en: "White limestone cliffs, turquoise beaches, and the only Ionian island you can drive to.",
+      el: "Λευκοί ασβεστολιθικοί γκρεμοί, τιρκουάζ παραλίες και το μόνο ιόνιο νησί που μπορείς να οδηγήσεις."
+    },
+    image: "/images/lefkada-cover.webp",
+    overview: {
+      en: "Lefkada is the only Greek island you can drive to without a ferry — a thin causeway and a floating bridge connect it to the mainland. Towering white limestone cliffs plunge into waters so blue they seem to belong to the Caribbean. Ancient villages cling to hillsides, and on the western coast, two of the most dramatic beaches in all of Greece wait at the end of winding mountain roads.",
+      el: "Η Λευκάδα είναι το μόνο ελληνικό νησί που μπορείς να οδηγήσεις χωρίς πλοίο. Λευκοί ασβεστολιθικοί γκρεμοί βυθίζονται σε νερά που μοιάζουν με την Καραϊβική. Αρχαία χωριά σκαρφαλώνουν στις πλαγιές και στη δυτική ακτή, δύο από τις πιο εντυπωσιακές παραλίες της Ελλάδας σε περιμένουν."
+    },
+    highlights: {
+      en: ["Porto Katsiki Beach", "Egremni Beach", "Nydri & Waterfalls"],
+      el: ["Παραλία Πόρτο Κατσίκι", "Παραλία Εγκρεμνοί", "Νυδρί & Καταρράκτες"]
+    },
+    featured: true,
+    seo: {
+      title: {
+        en: "Lefkada Travel Guide: Porto Katsiki, Egremni, Nydri & Things to Do | GoGreeceNow",
+        el: "Λευκάδα: Οδηγός Ταξιδιού — Πόρτο Κατσίκι, Εγκρεμνοί, Νυδρί & Αξιοθέατα"
+      },
+      description: {
+        en: "Complete travel guide to Lefkada: why it's worth it, best time to visit, how to get there by road, top beaches (Porto Katsiki, Egremni, Kathisma), villages, watersports, local food, practical tips & FAQ.",
+        el: "Πλήρης ταξιδιωτικός οδηγός για Λευκάδα: γιατί αξίζει, καλύτερη εποχή, πώς φτάνεις οδικώς, κορυφαίες παραλίες (Πόρτο Κατσίκι, Εγκρεμνοί, Καθίσμα), χωριά, θαλάσσια σπορ, τοπική κουζίνα και πρακτικές συμβουλές."
+      }
+    },
+    guideLinks: [
+      {
+        href: "/hotels/lefkada",
+        label: { en: "Where to Stay in Lefkada", el: "Πού να μείνεις στη Λευκάδα" }
+      }
+    ]
+  },
+  {
     slug: "rhodes",
     name: "Rhodes",
     region: { en: "Dodecanese", el: "Δωδεκάνησα" },
