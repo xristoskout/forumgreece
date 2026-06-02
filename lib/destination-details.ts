@@ -915,6 +915,70 @@ export const destinationDetails: Record<string, DestinationDetail> = {
       }
     }
   },
+  kos: {
+    overview: {
+      en: "Kos is the third-largest island of the Dodecanese and one of those places that tends to surprise people. The island is famous for its beaches and cycling culture, but what genuinely distinguishes it from other Greek beach destinations is the extraordinary layering of civilizations visible at every turn — Minoan traces, Classical ruins, Hellenistic sanctuaries, Byzantine towers, Ottoman mosques and Italian Neo-Classical architecture all occupying the same town squares, the same streets, the same harbor views. This is not incidental: Kos has been at the crossroads of the eastern Aegean for over three millennia, and the island wears that history without effort, almost casually, as a backdrop to taverna life and morning coffee.",
+      el: "Η Κως είναι το τρίτο μεγαλύτερο νησί των Δωδεκανήσων και ένα από εκείνα τα μέρη που τείνουν να εκπλήσσουν. Το νησί φημίζεται για τις παραλίες και την ποδηλατική κουλτούρα του, αλλά αυτό που πραγματικά το ξεχωρίζει είναι η εκπληκτική στρωματογραφία πολιτισμών — μινωικά ίχνη, κλασικά ερείπια, ελληνιστικά ιερά, βυζαντινοί πύργοι, οθωμανικά τζαμιά και ιταλική νεοκλασική αρχιτεκτονία."
+    },
+    pageIncludes: {
+      en: [
+        "The Asklepion & birthplace of Hippocrates",
+        "Castle of the Knights & layered Kos Town",
+        "Beaches: Tigkaki, Kefalos, Therme & more",
+        "Day trips: Nisyros volcano & Kalymnos",
+        "Local food, cycling tips & practical planning",
+      ],
+      el: [
+        "Ασκληπιείο & γενέτειρα του Ιπποκράτη",
+        "Κάστρο των Ιπποτών & πολυεπίπεδη Κω",
+        "Παραλίες: Τιγκάκι, Κέφαλος, Θέρμες & άλλα",
+        "Ημερήσιες εκδρομές: Νίσυρος & Κάλυμνος",
+        "Τοπικό φαγητό, ποδήλατο & πρακτικές συμβουλές",
+      ]
+    },
+    perfectFor: {
+      en: [
+        "History and archaeology lovers",
+        "Beach holiday seekers with cultural curiosity",
+        "Cyclists and active travellers",
+        "Families looking for varied, accessible holidays",
+        "Island hoppers using Kos as a Dodecanese base",
+      ],
+      el: [
+        "Λάτρεις ιστορίας και αρχαιολογίας",
+        "Παραθεριστές με πολιτιστική περιέργεια",
+        "Ποδηλάτες και δραστήριοι ταξιδιώτες",
+        "Οικογένειες που θέλουν ποικιλία",
+        "Ταξιδιώτες που χρησιμοποιούν την Κω ως βάση",
+      ]
+    },
+    honestAdvice: {
+      title: {
+        en: "Honest Advice — What to Skip",
+        el: "Ειλικρινής Συμβουλή — Τι να Αποφύγεις"
+      },
+      alert: {
+        en: "What nobody tells you: Kos has a strongly Ottoman and Italian-influenced urban character that most first-time visitors do not anticipate. The minarets of two working mosques rise above the harbour, Italian Neo-Classical buildings from the 1930s line the main streets, and the plane tree square has functioned as a meeting place across Greek, Ottoman and Italian administrations consecutively. This is not a standard Cycladic whitewash-and-blue aesthetic — it is something considerably more layered, and it takes a day of walking to begin to read it properly.",
+        el: "Αυτό που δε σου λέει κανείς: Η Κως έχει έντονο οθωμανικό και ιταλικό αστικό χαρακτήρα που οι περισσότεροι πρώτοι επισκέπτες δεν περιμένουν. Οι μιναρέδες δύο ενεργών τζαμιών υψώνονται πάνω από το λιμάνι. Δεν είναι η τυπική κυκλαδίτικη αισθητική."
+      },
+      items: {
+        en: [
+          "Tigkaki between 12:00 and 16:00 in August — this is the most popular beach on the island and the peak midday hours in high summer produce exactly the density you would expect",
+          "Zia purely for the sunset view — the village is genuinely attractive and the sunset panorama is real, but the road up in summer is busy and parking is limited",
+          "Eating along the main harbor of Kos Town — the restaurants facing the Castle of the Knights have impressive settings but the cooking is largely tourist-oriented",
+          "Trying to combine the Asklepion, Kos Town, Zia and a beach in one day — give them separate half-days",
+          "Assuming all Dodecanese islands are interchangeable — Kos, Nisyros, Kalymnos and Patmos are each radically different in character",
+        ],
+        el: [
+          "✕ Τιγκάκι μεταξύ 12:00 και 16:00 τον Αύγουστο",
+          "✕ Ζιά μόνο για το ηλιοβασίλεμα — ο δρόμος έχει κίνηση",
+          "✕ Φαγητό στο κεντρικό λιμάνι της Κω — οι κουζίνες είναι τουριστικές",
+          "✕ Να συνδυάσετε Ασκληπιείο, Κω, Ζιά και παραλία σε μία μέρα",
+          "✕ Να θεωρείτε όλα τα Δωδεκάνησα εναλλάξιμα",
+        ],
+      },
+    },
+  },
   halkidiki: {
     overview: {
       en: "Halkidiki is one of the most popular summer destinations in northern Greece, and for good reason. It combines clear waters, long coastlines, forested landscapes, beach resorts, quieter coves, and a variety of travel styles within one broader region. Unlike a single-island destination or one specific town, Halkidiki is best understood as a collection of different coastal experiences shaped by its famous peninsulas.\n\nWhat makes Halkidiki especially appealing is its flexibility. It can work for families, couples, road-trippers, groups of friends, and travelers looking for either easy beach holidays or more scenic and relaxed stays. Some visitors want lively beach bars, resort atmosphere, and convenience. Others are drawn to calmer bays, greener settings, and a more nature-led summer pace. Halkidiki can support both.\n\nA big part of the destination’s identity comes from the contrast between its areas. Kassandra is usually the busiest and most holiday-driven. Sithonia tends to feel more scenic, more relaxed, and often more beach-focused in a natural sense. The third peninsula has its own distinctive character and spiritual significance, adding another layer to the region even if many travelers experience it more from the outside than as a classic holiday base.\n\nIf you are planning a summer trip in northern Greece, Halkidiki is one of the easiest regions to recommend because it offers variety, sea access, and a strong holiday rhythm without needing to rely on one single town or landmark.\n\nPlanning a wider trip in northern Greece? Explore [Thessaloniki](/destinations/thessaloniki) and more regional travel ideas on GoGreeceNow.",

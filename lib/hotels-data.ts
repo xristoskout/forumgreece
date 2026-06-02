@@ -2321,11 +2321,101 @@ export const hotels: HotelCard[] = [
       description: {
         en: "Find the best places to stay in Patmos — from the port of Skala and the UNESCO village of Hora to the beachfront of Grikos and the secluded coves. A complete guide to Patmos hotels and areas.",
         el: "Βρείτε τα καλύτερα μέρη για διαμονή στην Πάτμο — από το λιμάνι της Σκάλας και τη Χώρα UNESCO έως τον Γρικό και τις απομονωμένες παραλίες."
-      }
-    },
+      }    },
   },
   {
-    slug: "patras",
+    slug: "kos",
+    name: "Where to Stay in Kos",
+    place: "Kos — Dodecanese",
+    info: {
+      en: "Find the best places to stay in Kos — from Kos Town with its layered history and harbor life to the family-friendly sands of Tigkaki, the windsurfing strip of Marmari, the authentic southwest coast of Kefalos and the Kardamena resort strip. A complete guide to Kos hotels and areas.",
+      el: "Βρείτε τα καλύτερα μέρη για διαμονή στην Κω — από την πολυεπίπεδη πόλη της Κω και τις οικογενειακές αμμουδιές του Τιγκακίου έως τη νοτιοδυτική ακτή του Κεφάλου. Ο πλήρης οδηγός για ξενοδοχεία και περιοχές στην Κω."
+    },
+    image: "/images/kos-cover.webp",
+    badge: "Dodecanese",
+    overview: {
+      en: "Kos is the third-largest island of the Dodecanese and one of the most popular summer destinations in the eastern Aegean. It combines an extraordinary depth of history — from the Asklepion and Hippocrates to the Castle of the Knights — with some of the best beach infrastructure in the island group. Unlike the steep, dramatic landscapes of Santorini or the rugged interior of Crete, Kos is remarkably flat, which has shaped both its agricultural history and its modern identity as Greece\'s most bicycle-friendly island. The choice of where to stay matters because the island\'s character changes distinctly from the cosmopolitan harbor of Kos Town to the family resorts of the north coast, the windsurfing beaches of the central west, and the quieter, more traditional southwest peninsula.",
+      el: "Η Κως είναι το τρίτο μεγαλύτερο νησί των Δωδεκανήσων. Συνδυάζει εκπληκτικό βάθος ιστορίας με εξαιρετικές παραλίες. Η επιλογή διαμονής έχει σημασία γιατί ο χαρακτήρας αλλάζει από την κοσμοπολίτικη πόλη στα οικογενειακά θέρετρα και την ήσυχη νοτιοδυτική χερσόνησο."
+    },
+    description: {
+      en: "Kos Town is the cultural and transport heart of the island, with the Asklepion 4 km away and direct access to the Dodecanese ferry network. The north-coast resort strip — Tigkaki and Marmari — offers long sandy beaches with excellent facilities. Kardamena is the most developed package-tour resort on the south coast with nightlife and watersports. Kefalos at the southwestern tip has a dramatic beach setting and a more relaxed pace. The village of Zia on Mount Dikaios offers mountain views and sunset panoramas. Each of these bases gives you a fundamentally different Kos experience.",
+      el: "Η πόλη της Κω είναι η πολιτιστική και συγκοινωνιακή καρδιά. Η βόρεια ακτή (Τιγκάκι, Μαρμάρι) προσφέρει μεγάλες αμμώδεις παραλίες. Η Καρδάμαινα είναι το πιο ανεπτυγμένο resort. Ο Κέφαλος στο νοτιοδυτικό άκρο έχει δραματική παραλία και χαλαρό ρυθμό."
+    },
+    features: {
+      en: [
+        "Kos Town (History & Harbour)",
+        "Tigkaki (Family Beach)",
+        "Marmari (Windsurfing)",
+        "Kardamena (Resort & Nightlife)",
+        "Kefalos (Southwest & Scenic)",
+        "Zia (Mountain & Sunset)"
+      ],
+      el: [
+        "Κως Πόλη (Ιστορία & Λιμάνι)",
+        "Τιγκάκι (Οικογενειακή Παραλία)",
+        "Μαρμάρι (Windsurfing)",
+        "Καρδάμαινα (Resort & Νυχτερινή Ζωή)",
+        "Κέφαλος (Νοτιοδυτικά & Γραφικά)",
+        "Ζιά (Βουνό & Ηλιοβασίλεμα)"
+      ]
+    },
+    sections: [
+      {
+        title: { en: "1. Kos Town — History, Harbour & the Best Cultural Base", el: "1. Κως Πόλη — Ιστορία, Λιμάνι & η Καλύτερη Πολιτιστική Βάση" },
+        content: {
+          en: "Kos Town is the capital and the natural first choice for visitors who want to be at the centre of the island\'s cultural life. The old harbour is framed by the Castle of the Knights, a 15th-century Crusader fortification built with marble recycled from ancient ruins. Behind the harbour, the old town is a walkable museum of layered civilizations: the ancient agora, the Roman Odeon and Casa Romana, the Ottoman Defterdar Mosque, and the Hippocrates Plane Tree — reputedly one of the oldest trees in Europe — all within ten minutes of each other.\n\nThe town has the best restaurant scene on the island, with genuine choices ranging from harbour-front fish tavernas to the Ottoman-influenced mezedopoleia of the Eleftherias Square area and the village of Platani 3 km inland. Nightlife is present but not overwhelming — concentrated around the Akti Miaouli waterfront and the bars of the old town.\n\nThe Asklepion is 4 km from the town centre — a 15-minute bike ride or 5-minute taxi. The airport is 26 km away. The ferry port connects to all major Dodecanese islands and Bodrum.\n\nAccommodation style ranges from boutique hotels in restored Italian Neo-Classical buildings in the old town to larger seafront hotels along the Akti Miaouli and Akti Kountouriotou waterfronts. Prices are moderate by Dodecanese standards.\n\nHonest note: Kos Town is not a beach destination. The nearest decent beach is a 15-minute bike ride west. If waking up steps from the sand is your priority, choose Tigkaki or Kefalos instead.",
+          el: "Η πόλη της Κω είναι η πρωτεύουσα και η φυσική επιλογή για όσους θέλουν πολιτιστική ζωή. Το παλιό λιμάνι πλαισιώνεται από το Κάστρο των Ιπποτών. Πίσω από το λιμάνι, η παλιά πόλη είναι ένα μουσείο πολιτισμών. Η πόλη έχει την καλύτερη εστιατορική σκηνή του νησιού. Το Ασκληπιείο απέχει 4 χιλιόμετρα."
+        }
+      },
+      {
+        title: { en: "2. Tigkaki — The Best Family Beach on Kos", el: "2. Τιγκάκι — Η Καλύτερη Οικογενειακή Παραλία" },
+        content: {
+          en: "Tigkaki is the most popular organized beach on Kos — approximately 12 km west of Kos Town along the flat coastal road. The beach itself is long (over 2 km), sandy, and gently shelving, making it ideal for children. The water is calm, the seabed is sand, and the beach is served by sun loungers, beach bars, watersports centres and several tavernas within walking distance.\n\nThe area immediately behind the beach consists of a single strip of hotels, apartments, and studios — most with pools, most offering half-board or self-catering options. Accommodation here is almost entirely in the mid-range family category. There are no luxury or boutique properties of note.\n\nThe cycle path from Kos Town reaches Tigkaki directly, making it accessible without a car for cyclists. The flat terrain means a 20-minute bike ride from the edge of town.\n\nHonest note: Tigkaki in August between 12:00 and 16:00 is genuinely crowded — loungers are full, the beach bars are loud, and the experience is a long way from the quiet beach holiday many visitors imagine. Come early morning or late afternoon, or visit outside July–August.",
+          el: "Το Τιγκάκι είναι η πιο δημοφιλής οργανωμένη παραλία της Κω. Η παραλία είναι μεγάλη, αμμώδης και ιδανική για παιδιά. Η περιοχή έχει ξενοδοχεία μεσαίας κατηγορίας. Η ποδηλατική διαδρομή από την πόλη φτάνει απευθείας."
+        }
+      },
+      {
+        title: { en: "3. Marmari — Windsurfing & Water Sports Hub", el: "3. Μαρμάρι — Κέντρο Windsurfing & Θαλάσσιων Σπορ" },
+        content: {
+          en: "Marmari is adjacent to Tigkaki and has a similar beach character but a different atmosphere — slightly quieter, slightly less developed, and with a long-established reputation among the windsurfing and kitesurfing community. The steady Meltemi wind that blows through July and August creates reliable conditions for board sports throughout the afternoon.\n\nAccommodation in Marmari is comparable to Tigkaki — mid-range hotels and apartments, most within five minutes\' walk of the beach. Several properties cater specifically to windsurfers with equipment storage and drying areas.\n\nThe village of Marmari itself has a small supermarket, a handful of tavernas, and a pharmacy. For any serious shopping or restaurant variety, you will need to go to Kos Town or Tigkaki.\n\nHonest note: Marmari has very limited evening life and almost no nightlife. It is a daytime beach destination. If you want evening atmosphere, choose Kos Town.",
+          el: "Το Μαρμάρι είναι δίπλα στο Τιγκάκι με παρόμοια παραλία αλλά διαφορετική ατμόσφαιρα. Είναι γνωστό για windsurfing και kitesurfing. Τα καταλύματα είναι μεσαίας κατηγορίας. Η βραδινή ζωή είναι περιορισμένη."
+        }
+      },
+      {
+        title: { en: "4. Kardamena — Resort Atmosphere & Nightlife", el: "4. Καρδάμαινα — Ατμόσφαιρα Θέρετρου & Νυχτερινή Ζωή" },
+        content: {
+          en: "Kardamena is the most developed package-tourism resort on the south coast of Kos — a long strip of hotels, bars, restaurants and watersports facilities facing a broad sandy beach. It is the departure point for day trips to Nisyros volcano, and several agencies operate daily excursions from the port.\n\nThe beach at Kardamena is sandy and well-served with facilities, but it lacks the natural setting of Tigkaki or Kefalos. The water is clear and calm, and the swimming is good.\n\nNightlife in Kardamena is the liveliest on the island after Kos Town — a concentrated strip of bars stays active until late, and the atmosphere is more holiday-party than the relaxed taverna scene of the town.\n\nAccommodation consists largely of mid-to-large hotels with pools and buffet restaurants. The resort caters primarily to package holiday visitors from northern Europe.\n\nHonest note: Kardamena has the least authentic Greek character of any base on Kos. If you want local atmosphere, traditional food, or any sense of the island beyond tourism infrastructure, this is not the right base.",
+          el: "Η Καρδάμαινα είναι το πιο ανεπτυγμένο θέρετρο της νότιας ακτής. Είναι το σημείο αναχώρησης για τη Νίσυρο. Η νυχτερινή ζωή είναι η πιο ζωντανή μετά την πόλη. Λιγότερο αυθεντικός ελληνικός χαρακτήρας."
+        }
+      },
+      {
+        title: { en: "5. Kefalos — The Southwest Peninsula & Dramatic Beaches", el: "5. Κέφαλος — Η Νοτιοδυτική Χερσόνησος & Εντυπωσιακές Παραλίες" },
+        content: {
+          en: "Kefalos sits at the southwestern tip of the island on a promontory above a long arc of beach that includes Agios Stefanos — one of the most photographed beach settings in the Dodecanese, where the ruins of an early Byzantine basilica stand directly on white sand with the islet of Kastri and its chapel a few hundred metres offshore.\n\nThe area has a fundamentally different character from the north coast: quieter, more traditionally Greek, and less dominated by large hotel resorts. Accommodation consists of smaller hotels, villas and family-run studios, many with sea views across the bay toward Kastri.\n\nThe village of Kefalos itself has a good range of tavernas, a small beach of its own, and a more relaxed pace. The Kamari beach area immediately south has a long curve of sand with shallow water ideal for children.\n\nAccess requires a car or scooter — the road from the airport is approximately 15 km, and the drive from Kos Town takes around 40 minutes.\n\nHonest note: Kefalos is genuinely remote relative to the rest of the island. There is no significant nightlife, limited public transport, and the choice of restaurants is smaller than Kos Town. The reward is the most scenic beach setting on the island and a pace that feels like a different world from the north coast.",
+          el: "Ο Κέφαλος βρίσκεται στο νοτιοδυτικό άκρο του νησιού. Η περιοχή έχει διαφορετικό χαρακτήρα από τη βόρεια ακτή: πιο ήσυχη, πιο παραδοσιακή. Τα καταλύματα είναι μικρότερα ξενοδοχεία και βίλες. Απαιτείται αυτοκίνητο."
+        }
+      },
+      {
+        title: { en: "6. Zia — Mountain Village & Sunset Views", el: "6. Ζιά — Ορεινό Χωριό & Θέα Ηλιοβασιλέματος" },
+        content: {
+          en: "Zia is a small village on the slopes of Mount Dikaios, the only significant elevation on the island. It has become one of Kos\'s most-visited destinations specifically for its sunset view over the western coast toward Kalymnos and Pserimos.\n\nStaying in Zia itself is an unconventional choice — accommodation is limited to a handful of guesthouses and traditional rooms, and the village has one main street with tavernas and souvenir shops. But for travellers who want mountain air, sunrise walks and a base that feels completely removed from the beach-resort atmosphere of the coast, it offers something unique.\n\nThe village is 25 minutes by car from Kos Town, and the drive up through the Asfendiou villages is one of the most scenic routes on the island.\n\nHonest note: Zia as a base requires a car for everything — groceries, restaurants beyond the village, and beach access. The sunset crowds in summer make the main square congested between 18:00 and 20:00. Stay here for the atmosphere, not for convenience.",
+          el: "Η Ζιά είναι ένα μικρό χωριό στις πλαγιές του Δικαίου. Προσφέρει μοναδική θέα ηλιοβασιλέματος. Απαιτείται αυτοκίνητο για τα πάντα."
+        }
+      }
+    ],
+    seo: {
+      title: {
+        en: "Where to Stay in Kos | Best Areas & Hotels | GoGreeceNow",
+        el: "Πού να Μείνετε στην Κω | Καλύτερες Περιοχές & Ξενοδοχεία | GoGreeceNow"
+      },
+      description: {
+        en: "Find the best places to stay in Kos — from Kos Town with its layered history to Tigkaki, Marmari, Kardamena, Kefalos and Zia. A complete guide to Kos hotels and areas.",
+        el: "Βρείτε τα καλύτερα μέρη για διαμονή στην Κω — από την πόλη και το Τιγκάκι έως το Μαρμάρι, την Καρδάμαινα, τον Κέφαλο και τη Ζιά."
+      }
+    }
+  },
+  {
+    slug: "patras",,
     name: "Where to Stay in Patras & the Region",
     place: "Western Greece & Peloponnese",
     info: {

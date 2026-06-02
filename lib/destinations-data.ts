@@ -587,6 +587,41 @@ export const destinations: Destination[] = [
     ],
   },
   {
+    slug: "kos",
+    name: "Kos",
+    region: { en: "Dodecanese", el: "Δωδεκάνησα" },
+    blurb: {
+      en: "Ancient history, flat cycling terrain, turquoise beaches and the best gateway to the Dodecanese.",
+      el: "Αρχαία ιστορία, επίπεδο έδαφος για ποδήλατο, τιρκουάζ παραλίες και η καλύτερη πύλη για τα Δωδεκάνησα."
+    },
+    image: "/images/kos-cover.webp",
+    overview: {
+      en: "Kos is the third-largest island of the Dodecanese and one of those places that tends to surprise people. The island is famous for its beaches and cycling culture, but what genuinely distinguishes it from other Greek beach destinations is the extraordinary layering of civilizations visible at every turn — Minoan traces, Classical ruins, Hellenistic sanctuaries, Byzantine towers, Ottoman mosques and Italian Neo-Classical architecture all occupying the same town squares, the same streets, the same harbor views. This is not incidental: Kos has been at the crossroads of the eastern Aegean for over three millennia, and the island wears that history without effort, almost casually, as a backdrop to taverna life and morning coffee.",
+      el: "Η Κως είναι το τρίτο μεγαλύτερο νησί των Δωδεκανήσων και ένα από εκείνα τα μέρη που τείνουν να εκπλήσσουν. Το νησί φημίζεται για τις παραλίες και την ποδηλατική κουλτούρα του, αλλά αυτό που πραγματικά το ξεχωρίζει είναι η εκπληκτική στρωματογραφία πολιτισμών — μινωικά ίχνη, κλασικά ερείπια, ελληνιστικά ιερά, βυζαντινοί πύργοι, οθωμανικά τζαμιά και ιταλική νεοκλασική αρχιτεκτονία."
+    },
+    highlights: {
+      en: ["Asklepion sanctuary", "Tigkaki & Marmari beaches", "Castle of the Knights"],
+      el: ["Ασκληπιείο", "Παραλίες Τιγκάκι & Μαρμάρι", "Κάστρο των Ιπποτών"]
+    },
+    featured: true,
+    seo: {
+      title: {
+        en: "Kos Travel Guide: Beaches, Asklepion, Villages & Things to Do",
+        el: "Κως: Οδηγός Ταξιδιού — Παραλίες, Ασκληπιείο, Χωριά & Αξιοθέατα"
+      },
+      description: {
+        en: "Complete travel guide to Kos: why it's worth it, best time to visit, how to get there, top attractions (Asklepion, Hippocrates Tree, Castle of the Knights), beaches for every style, local food, practical tips & FAQ.",
+        el: "Πλήρης ταξιδιωτικός οδηγός για την Κω: αξιοθέατα (Ασκληπιείο, Πλάτανος Ιπποκράτη, Κάστρο), παραλίες, φαγητό, πρακτικές συμβουλές και Συχνές Ερωτήσεις."
+      }
+    },
+    guideLinks: [
+      {
+        href: "/hotels/kos",
+        label: { en: "Where to Stay in Kos", el: "Πού να μείνεις στην Κω" }
+      }
+    ],
+  },
+  {
     slug: "halkidiki",
     name: "Halkidiki",
     region: { en: "Northern Greece", el: "Βόρεια Ελλάδα" },
