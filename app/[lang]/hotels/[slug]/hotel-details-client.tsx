@@ -43,6 +43,7 @@ const STAY22_EMBEDS: Record<string, string> = {
   skiathos: "https://stay22.com/embed/6a1441871194c5e40cbc436e",
   lefkada: "https://stay22.com/embed/6a1ed6996b16982d6c0e457f",
   evia: "https://stay22.com/embed/6a1ed7c4105a99849371700a",
+  kos: "https://stay22.com/embed/6a1ee1c66b16982d6c0e8775",
 };
 
 const HOTEL_NAMES: Record<string, string[]> = {

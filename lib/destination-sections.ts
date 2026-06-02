@@ -5991,6 +5991,472 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       ]
     }
   ],
+  kos: [
+    {
+      title: {
+        en: "Why visit Kos",
+        el: "Γιατί να επισκεφθείς την Κω",
+      },
+      layout: "numbered",
+      items: [
+        {
+          title: {
+            en: "The birthplace of medicine — and it shows",
+            el: "Η πατρίδα της ιατρικής — και φαίνεται",
+          },
+          text: {
+            en: "Hippocrates was born on Kos around 460 BC, and the island did not forget him. The Asklepion — a major healing sanctuary built on three terraced levels above the city — is one of the most important archaeological sites in the entire Aegean. This was not just a temple: it was a functioning medical school, a place where patients were treated through diet, rest, exercise and the careful observation of symptoms. The fact that modern medicine traces its formal origins here gives the site a weight that goes beyond archaeology. Walking its terraces with the Turkish coastline visible across the water is one of those genuinely affecting travel experiences.",
+            el: "Ο Ιπποκράτης γεννήθηκε στην Κω γύρω στο 460 π.Χ. και το νησί δεν τον ξέχασε. Το Ασκληπιείο — ένα σημαντικό θεραπευτικό ιερό χτισμένο σε τρία επίπεδα πάνω από την πόλη — είναι ένας από τους σημαντικότερους αρχαιολογικούς χώρους του Αιγαίου. Δεν ήταν απλώς ένας ναός: ήταν μια λειτουργική ιατρική σχολή όπου οι ασθενείς αντιμετωπίζονταν μέσω δίαιτας, ξεκούρασης, άσκησης και προσεκτικής παρατήρησης συμπτωμάτων. Το γεγονός ότι η σύγχρονη ιατρική εντοπίζει εδώ τις ρίζες της δίνει στον χώρο ένα βάρος που ξεπερνά την αρχαιολογία.",
+          },
+        },
+        {
+          title: {
+            en: "A flat island designed for cycling",
+            el: "Ένα επίπεδο νησί φτιαγμένο για ποδήλατο",
+          },
+          text: {
+            en: "Most of Kos is remarkably flat by Greek island standards, and the main tourist corridor from Kos Town westward to Tigkaki and Marmari runs along a well-maintained cycle path directly adjacent to the sea. This is not a coincidence — the flat terrain was historically what made the island agriculturally rich, and today it is what makes it genuinely bicycle-friendly in a way that most Greek islands simply cannot claim. Renting a bike in the morning and cycling to a beach for the afternoon is not an aspiration on Kos: it is the daily reality of thousands of visitors every summer.",
+            el: "Το μεγαλύτερο μέρος της Κω είναι εντυπωσιακά επίπεδο για τα δεδομένα ελληνικού νησιού. Ο κύριος τουριστικός διάδρομος από την πόλη προς τα δυτικά διαθέτει έναν καλοδιατηρημένο ποδηλατόδρομο δίπλα στη θάλασσα. Αυτό δεν είναι τυχαίο — το επίπεδο έδαφος έκανε το νησί γεωργικά πλούσιο και σήμερα το καθιστά πραγματικά φιλικό για ποδήλατο, με χιλιάδες επισκέπτες να το χρησιμοποιούν καθημερινά.",
+          },
+        },
+        {
+          title: {
+            en: "Stratigraphic history in every street corner",
+            el: "Στρωματογραφική ιστορία σε κάθε γωνιά",
+          },
+          text: {
+            en: "The town of Kos has the unusual characteristic of being built directly on top of its own archaeological past. After the devastating 1933 earthquake, Italian archaeologists who administered the island took the opportunity to excavate extensively — and what they found shaped the urban layout of the modern town. Today, ancient columns stand within metres of traffic roundabouts, a Roman agora sits in an open-air museum at the edge of the main harbor, and the Hippocrates Plane Tree — reputedly one of the oldest in Europe, where Hippocrates himself is said to have taught — still shades a central square next to a 16th-century Ottoman fountain.",
+            el: "Η πόλη της Κω έχει το ασυνήθιστο χαρακτηριστικό να είναι χτισμένη πάνω στο αρχαιολογικό της παρελθόν. Μετά τον καταστροφικό σεισμό του 1933, Ιταλοί αρχαιολόγοι εκμεταλλεύτηκαν την ευκαιρία για εκτεταμένες ανασκαφές. Σήμερα, αρχαίοι κίονες βρίσκονται μέτρα από κυκλικούς κόμβους, η ρωμαϊκή αγορά εκτείνεται δίπλα στο λιμάνι και ο Πλάτανος του Ιπποκράτη — ένας από τους αρχαιότερους στην Ευρώπη — σκιάζει ακόμα την κεντρική πλατεία δίπλα σε ένα οθωμανικό σιντριβάνι του 16ου αιώνα.",
+          },
+        },
+        {
+          title: {
+            en: "A genuine gateway to the broader Dodecanese",
+            el: "Πύλη προς τα Δωδεκάνησα",
+          },
+          text: {
+            en: "Kos Town has an international airport, daily ferry connections to Rhodes, Kalymnos, Nisyros, Patmos and the Turkish coast, and regular catamaran services to Bodrum, just 4 nautical miles away. For travellers who want to use one base to explore several islands, Kos is strategically one of the best-positioned in the group. A day trip to volcanic Nisyros — with its active caldera — is one of the most rewarding excursions in the entire Aegean and takes under an hour by boat.",
+            el: "Η Κως διαθέτει διεθνές αεροδρόμιο, καθημερινές ακτοπλοϊκές συνδέσεις με Ρόδο, Κάλυμνο, Νίσυρο, Πάτμο και την Τουρκία, και τακτικά δρομολόγια προς το Μπόντρουμ, μόλις 4 ναυτικά μίλια μακριά. Για ταξιδιώτες που θέλουν να εξερευνήσουν πολλά νησιά από μία βάση, η Κως είναι στρατηγικά ιδανική. Μια ημερήσια εκδρομή στην ηφαιστειακή Νίσυρο είναι από τις πιο ανταποδοτικές εκδρομές στο Αιγαίο.",
+          },
+        },
+        {
+          title: {
+            en: "Diverse beach character from a single island",
+            el: "Ποικιλία παραλιών σε ένα νησί",
+          },
+          text: {
+            en: "The western coast faces the calmer waters of the Kos-Kalymnos channel and offers long sandy beaches ideal for families and water sports. The southern coast, accessible by car or scooter, reveals wilder bays, rocky coves and isolated strips of sand at places like Agios Fokas, Therme (natural hot springs meeting the sea) and Kefalos Bay — where a long arc of sand backed by a quiet fishing village feels genuinely remote.",
+            el: "Η δυτική ακτή βλέπει στα ήρεμα νερά του διαύλου Κω-Καλύμνου και προσφέρει μακριές αμμώδεις παραλίες ιδανικές για οικογένειες και θαλάσσια σπορ. Η νότια ακτή, προσβάσιμη με αυτοκίνητο ή σκούτερ, αποκαλύπτει πιο άγριους όρμους, βραχώδεις κολπίσκους και απομονωμένες λωρίδες άμμου σε μέρη όπως ο Άγιος Φωκάς, τα Θερμά και ο κόλπος του Κεφάλου.",
+          },
+        },
+      ],
+    },
+    {
+      title: {
+        en: "Best time to visit",
+        el: "Καλύτερη εποχή για επίσκεψη",
+      },
+      layout: "list",
+      alert: {
+        en: "Secret: May and late September on Kos offer something rare in the eastern Aegean — full sunshine, 24–25°C sea temperatures, functioning restaurants and bars, and beaches where you can actually choose your spot. The island does not deserve to be seen only in August.",
+        el: "Secret: Μάιος και τέλη Σεπτεμβρίου στην Κω προσφέρουν κάτι σπάνιο στο ανατολικό Αιγαίο — γεμάτο ήλιο, θαλάσσιες θερμοκρασίες 24-25°C και παραλίες όπου μπορείτε πραγματικά να επιλέξετε το σημείο σας.",
+      },
+      items: [
+        {
+          title: {
+            en: "April – May",
+            el: "Απρίλιος – Μάιος",
+          },
+          text: {
+            en: "The archaeological sites are at their best — quieter, cooler, and surrounded by wildflowers. The Asklepion in May, with its almond trees and the Turkish coastline in the background, is as good as it gets. Sea temperatures are around 20–22°C.",
+            el: "Οι αρχαιολογικοί χώροι είναι στα καλύτερά τους — πιο ήσυχοι, δροσεροί και γεμάτοι αγριολούλουδα. Το Ασκληπιείο τον Μάιο, με τις αμυγδαλιές και την τουρκική ακτή στο βάθος, είναι όσο καλό γίνεται. Οι θαλάσσιες θερμοκρασίες είναι περίπου 20-22°C.",
+          },
+        },
+        {
+          title: {
+            en: "June",
+            el: "Ιούνιος",
+          },
+          text: {
+            en: "The sweet opening of summer. The tourist infrastructure is fully open, the beaches are accessible but not saturated, and the evenings are long and warm. Ideal for the full Kos experience without the pressure of peak season.",
+            el: "Η γλυκιά αρχή του καλοκαιριού. Οι υποδομές είναι πλήρως λειτουργικές, οι παραλίες προσβάσιμες αλλά όχι γεμάτες, και τα βράδια μεγάλα και ζεστά. Ιδανικά για την πλήρη εμπειρία της Κω χωρίς την πίεση της υψηλής περιόδου.",
+          },
+        },
+        {
+          title: {
+            en: "July – August",
+            el: "Ιούλιος – Αύγουστος",
+          },
+          text: {
+            en: "Peak season in the full sense: direct charter flights from across Europe, packed beaches, crowded archaeological sites, and higher prices. The island handles it well due to its size, but popular spots like Tigkaki require early arrival or acceptance of density. The evenings are spectacular.",
+            el: "Υψηλή περίοδος με απευθείας πτήσεις από όλη την Ευρώπη, γεμάτες παραλίες, πολυσύχναστους αρχαιολογικούς χώρους και υψηλότερες τιμές. Το νησί το διαχειρίζεται καλά λόγω του μεγέθους του, αλλά δημοφιλή σημεία όπως το Τιγκάκι απαιτούν έγκαιρη άφιξη.",
+          },
+        },
+        {
+          title: {
+            en: "September",
+            el: "Σεπτέμβριος",
+          },
+          text: {
+            en: "For many experienced travellers, this is the optimal Kos month. The Aegean sea is at 26–27°C, the light is softer and more photogenic, the crowds thin considerably after the first week, and the island returns to something closer to its real self.",
+            el: "Για πολλούς έμπειρους ταξιδιώτες, αυτός είναι ο βέλτιστος μήνας για την Κω. Η θάλασσα στους 26-27°C, το φως πιο μαλακό και φωτογενές, τα πλήθη αραιώνουν σημαντικά μετά την πρώτη εβδομάδα και το νησί επιστρέφει στον πραγματικό του εαυτό.",
+          },
+        },
+        {
+          title: {
+            en: "October – March",
+            el: "Οκτώβριος – Μάρτιος",
+          },
+          text: {
+            en: "The quieter season. Most beach-oriented businesses close from late October, but Kos Town remains lively with local restaurants, cafés and year-round hotels. It is worth visiting for culture, history and the experience of a working Dodecanese town without the summer filter.",
+            el: "Η ήσυχη σεζόν. Τα περισσότερα παραθαλάσσια μαγαζιά κλείνουν από τα τέλη Οκτωβρίου, αλλά η πόλη παραμένει ζωντανή με τοπικά εστιατόρια, καφέ και ξενοδοχεία. Αξίζει για πολιτισμό, ιστορία και την εμπειρία μιας λειτουργικής δωδεκανησιακής πόλης χωρίς το καλοκαιρινό φίλτρο.",
+          },
+        },
+      ],
+    },
+    {
+      title: {
+        en: "How to get to Kos",
+        el: "Πώς να φτάσεις στην Κω",
+      },
+      layout: "list",
+      alert: {
+        en: "Transport tip: Kos is one of the best-connected islands in the Dodecanese, served by both air and sea year-round. The airport handles international charters directly, which means many visitors arrive without transiting Athens at all.",
+        el: "Συμβουλή μεταφοράς: Η Κως είναι ένα από τα καλύτερα συνδεδεμένα νησιά των Δωδεκανήσων. Το αεροδρόμιο εξυπηρετεί απευθείας διεθνείς πτήσεις.",
+      },
+      items: [
+        {
+          title: {
+            en: "By Plane",
+            el: "Αεροπορικώς",
+          },
+          text: {
+            en: "Kos International Airport 'Hippocrates' (KGS) receives direct international flights from major European cities throughout the summer season, as well as year-round domestic connections via Athens. The airport is located approximately 26 km from Kos Town.",
+            el: "Το Διεθνές Αεροδρόμιο «Ιπποκράτης» (KGS) δέχεται απευθείας διεθνείς πτήσεις από μεγάλες ευρωπαϊκές πόλεις το καλοκαίρι, καθώς και εσωτερικές συνδέσεις μέσω Αθηνών όλο τον χρόνο. Βρίσκεται περίπου 26 χλμ. από την πόλη της Κω.",
+          },
+        },
+        {
+          title: {
+            en: "By Ferry",
+            el: "Ακτοπλοϊκώς",
+          },
+          text: {
+            en: "The main port of Kos Town has regular ferry connections with Piraeus (Athens) — the journey takes approximately 10–15 hours depending on the route and vessel. Faster high-speed services operate seasonally. There are also frequent interisland connections to Rhodes, Kalymnos, Leros, Patmos and Nisyros. The Bodrum–Kos crossing takes approximately 45 minutes by ferry.",
+            el: "Το κεντρικό λιμάνι της Κω έχει τακτική ακτοπλοϊκή σύνδεση με τον Πειραιά — το ταξίδι διαρκεί περίπου 10-15 ώρες ανάλογα με το δρομολόγιο. Υπάρχουν επίσης συχνές συνδέσεις με Ρόδο, Κάλυμνο, Λέρο, Πάτμο και Νίσυρο. Η διάβαση Μπόντρουμ-Κως διαρκεί περίπου 45 λεπτά.",
+          },
+        },
+      ],
+    },
+    {
+      title: {
+        en: "Top attractions & experiences",
+        el: "Κορυφαία αξιοθέατα & εμπειρίες",
+      },
+      layout: "numbered",
+      items: [
+        {
+          title: {
+            en: "The Asklepion — healing sanctuary above the sea",
+            el: "Το Ασκληπιείο — θεραπευτικό ιερό πάνω από τη θάλασσα",
+          },
+          text: {
+            en: "Built on three terraces on a pine-covered hillside 4 km southwest of Kos Town, the Asklepion was simultaneously a religious sanctuary dedicated to Asklepios (god of medicine), a medical school and a therapeutic retreat. The site operated from the 4th century BC until its closure under Byzantine rule. The middle terrace holds the most complete architectural remains; the upper terrace commands views that extend across the strait to Turkey. Go in the morning, allow 90 minutes, and combine it with a stop at the village of Platani (Germe) on the return.",
+            el: "Χτισμένο σε τρεις αναβαθμίδες σε μια δασωμένη πλαγιά 4 χλμ. νοτιοδυτικά της πόλης, το Ασκληπιείο ήταν ταυτόχρονα θρησκευτικό ιερό αφιερωμένο στον Ασκληπιό, ιατρική σχολή και θεραπευτικό καταφύγιο. Λειτούργησε από τον 4ο αιώνα π.Χ. έως το κλείσιμό του επί βυζαντινής κυριαρχίας. Η μεσαία αναβαθμίδα διατηρεί τα πληρέστερα αρχιτεκτονικά κατάλοιπα. Πήγαινε το πρωί, αφιέρωσε 90 λεπτά.",
+          },
+        },
+        {
+          title: {
+            en: "Kos Town: walking the archaeological layers",
+            el: "Πόλη της Κω: αρχαιολογικά στρώματα",
+          },
+          text: {
+            en: "The old harbor of Kos is framed by the Castle of the Knights — a 15th-century fortification built by the Knights Hospitaller that incorporates ancient marble in its walls as building material. From the castle, the walk south into the old town passes the ancient agora, the Roman Odeon, the Casa Romana (a restored Roman villa with original mosaics), the Ottoman Defterdar Mosque, and the plane tree under which Hippocrates allegedly taught medicine — all within a 15-minute radius.",
+            el: "Το παλιό λιμάνι της Κω πλαισιώνεται από το Κάστρο των Ιπποτών — οχύρωση του 15ου αιώνα που ενσωματώνει αρχαίο μάρμαρο στα τείχη της. Από το κάστρο, η βόλτα προς την παλιά πόλη περνά από την αρχαία αγορά, το Ρωμαϊκό Ωδείο, το Casa Romana, το Οθωμανικό Τζαμί και τον Πλάτανο του Ιπποκράτη — όλα σε ακτίνα 15 λεπτών.",
+          },
+        },
+        {
+          title: {
+            en: "Nisyros Day Trip: the volcano next door",
+            el: "Ημερήσια εκδρομή στη Νίσυρο: το ηφαίστειο",
+          },
+          text: {
+            en: "One of the great underrated excursions of the Greek islands. Nisyros is a volcanic island 22 km southwest of Kos, with an active caldera at its centre that visitors can walk into — standing on the grey-yellow crater floor, surrounded by steaming vents and sulphurous formations, with the medieval village of Mandraki visible on the clifftop above. Day trip boats depart from Kardamena and Kos Town, typically including 2–3 hours on the island.",
+            el: "Μία από τις πιο υποτιμημένες εκδρομές των ελληνικών νησιών. Η Νίσυρος είναι ένα ηφαιστειακό νησί 22 χλμ. νοτιοδυτικά της Κω, με ενεργή καλντέρα όπου οι επισκέπτες μπορούν να περπατήσουν. Πλοία ημερήσιας εκδρομής αναχωρούν από Καρδάμαινα και Κω.",
+          },
+        },
+        {
+          title: {
+            en: "Kefalos & the southwest peninsula",
+            el: "Κέφαλος & νοτιοδυτική χερσόνησος",
+          },
+          text: {
+            en: "The village of Kefalos sits on a promontory at the southwestern tip of the island, above a long arc of beach that ranks among the most visually dramatic in the Dodecanese. The area includes Agios Stefanos beach — where the ruins of an early Byzantine basilica stand directly on the sand, with the islet of Kastri and its tiny chapel visible a few hundred metres offshore.",
+            el: "Το χωριό Κέφαλος βρίσκεται σε μια χερσόνησο στο νοτιοδυτικό άκρο του νησιού, πάνω από μια μακριά αψίδα παραλίας που συγκαταλέγεται στις πιο εντυπωσιακές των Δωδεκανήσων. Η περιοχή περιλαμβάνει την παραλία Αγίου Στεφάνου με τα ερείπια παλαιοχριστιανικής βασιλικής στην άμμο.",
+          },
+        },
+        {
+          title: {
+            en: "Zia: the mountain village at golden hour",
+            el: "Ζιά: το ορεινό χωριό τη χρυσή ώρα",
+          },
+          text: {
+            en: "Zia is a small village on the slopes of Mount Dikaios — the only significant elevation on an otherwise flat island — and has become famous specifically for its sunset views over the western coast and the islands of Kalymnos and Pserimos. The view is genuinely excellent and the tavernas are competent, but arrive by 18:00 in summer to secure a table.",
+            el: "Η Ζιά είναι ένα μικρό χωριό στις πλαγιές του Όρους Δίκαιος — η μόνη σημαντική υψομετρική διαφορά σε ένα κατά τα άλλα επίπεδο νησί — και έχει γίνει διάσημη για τα ηλιοβασιλέματά της. Η θέα είναι πραγματικά εξαιρετική. Φτάσε έως τις 18:00 το καλοκαίρι για να εξασφαλίσεις τραπέζι.",
+          },
+        },
+        {
+          title: {
+            en: "Therme: where hot springs meet the Aegean",
+            el: "Θερμά: ιαματικές πηγές στο Αιγαίο",
+          },
+          text: {
+            en: "On the northeastern coast beyond Kos Town, geothermal springs emerge directly at the waterline and flow into the sea, creating natural warm pools in the rocks accessible for free at any time. The site is informal and atmospheric — there are no facilities, no entrance fee and no organization — but it is one of those genuinely surprising natural experiences that feels out of place on a beach holiday island. Go at dawn or dusk.",
+            el: "Στη βορειοανατολική ακτή, γεωθερμικές πηγές αναβλύζουν ακριβώς στην ακτογραμμή, δημιουργώντας φυσικές ζεστές πισίνες στα βράχια, προσβάσιμες δωρεάν οποιαδήποτε στιγμή. Ο χώρος είναι ανεπίσημος και ατμοσφαιρικός — χωρίς εγκαταστάσεις, χωρίς είσοδο. Πήγαινε την αυγή ή το σούρουπο.",
+          },
+        },
+        {
+          title: {
+            en: "Kalymnos Day Trip: the island of sponge divers",
+            el: "Ημερήσια εκδρομή στην Κάλυμνο",
+          },
+          text: {
+            en: "Kalymnos is 45 minutes by ferry from Kos Town and offers a completely different island character: a dramatic, mountainous landscape, a strong tradition of sponge diving (with a dedicated museum in the port town of Pothia), and a rock-climbing scene that has made the island internationally known among climbers. A day trip here adds significant texture to a Kos-based stay without requiring an overnight.",
+            el: "Η Κάλυμνος απέχει 45 λεπτά με φέρι από την Κω και προσφέρει εντελώς διαφορετικό χαρακτήρα: δραματικό ορεινό τοπίο, παράδοση σπογγαλιείας (με μουσείο στην Πόθια) και σκηνή αναρρίχησης διεθνούς φήμης. Μια ημερήσια εκδρομή εδώ προσθέτει σημαντική ποικιλία χωρίς να απαιτεί διανυκτέρευση.",
+          },
+        },
+      ],
+    },
+    {
+      title: {
+        en: "Top Beaches",
+        el: "Κορυφαίες παραλίες",
+      },
+      layout: "list",
+      alert: {
+        en: "Secret: The beaches of the southwest coast — particularly around Kefalos Bay — see a fraction of the visitors that crowd Tigkaki and Marmari, yet offer equally good water quality and often better natural settings. A car or scooter is required; the reward is significant.",
+        el: "Secret: Οι παραλίες της νοτιοδυτικής ακτής — ιδιαίτερα γύρω από τον κόλπο του Κεφάλου — βλέπουν ένα κλάσμα των επισκεπτών που γεμίζουν Τιγκάκι και Μαρμάρι.",
+      },
+      items: [
+        {
+          title: {
+            en: "Tigkaki",
+            el: "Τιγκάκι",
+          },
+          text: {
+            en: "The most popular organized beach on the island, approximately 12 km west of Kos Town along the flat coast. Long, sandy and well-served by sun loungers, beach bars and water sports facilities. The cycle path from town makes it genuinely accessible without a vehicle. Best visited early morning or late afternoon in July–August.",
+            el: "Η πιο δημοφιλής οργανωμένη παραλία του νησιού, περίπου 12 χλμ. δυτικά της πόλης. Μακριά, αμμώδης, με ξαπλώστρες, beach bars και θαλάσσια σπορ. Ο ποδηλατόδρομος την καθιστά προσβάσιμη χωρίς όχημα. Καλύτερα νωρίς το πρωί ή αργά το απόγευμα τον Ιούλιο-Αύγουστο.",
+          },
+        },
+        {
+          title: {
+            en: "Marmari",
+            el: "Μαρμάρι",
+          },
+          text: {
+            en: "Adjacent to Tigkaki and with a similar character, Marmari is slightly quieter and has a long reputation for windsurfing and kitesurfing conditions. The steady Meltemi winds of July and August that frustrate other beach-goers are exactly what the windsurfing community comes for.",
+            el: "Δίπλα στο Τιγκάκι, το Μαρμάρι είναι ελαφρώς πιο ήσυχο και φημίζεται για ιδανικές συνθήκες windsurfing και kitesurfing. Οι σταθεροί άνεμοι του Μελτεμιού που απογοητεύουν άλλους λουόμενους είναι ακριβώς αυτό που αναζητά η κοινότητα του windsurfing.",
+          },
+        },
+        {
+          title: {
+            en: "Paradise Beach (Bubble Beach)",
+            el: "Παράδεισος (Bubble Beach)",
+          },
+          text: {
+            en: "A small, sheltered cove near Kardamena on the south coast, named for the natural CO₂ bubbles that rise from the seabed and can be felt underfoot in shallow water — another expression of the volcanic geology active across this part of the Dodecanese.",
+            el: "Ένας μικρός προστατευμένος όρμος κοντά στην Καρδάμαινα στη νότια ακτή, γνωστός για τις φυσικές φυσαλίδες CO₂ που αναδύονται από τον βυθό — μια ακόμα έκφραση της ηφαιστειακής γεωλογίας των Δωδεκανήσων.",
+          },
+        },
+        {
+          title: {
+            en: "Agios Stefanos (Kefalos)",
+            el: "Άγιος Στέφανος (Κέφαλος)",
+          },
+          text: {
+            en: "One of the most photogenic beach settings in the Dodecanese: white sand, pale turquoise water, the Byzantine basilica ruins on the shoreline, and the chapel islet of Kastri immediately offshore. The beach itself is calm and relatively uncrowded by Kos standards.",
+            el: "Ένα από τα πιο φωτογενή τοπία παραλίας στα Δωδεκάνησα: λευκή άμμος, τιρκουάζ νερά, ερείπια βυζαντινής βασιλικής και η νησίδα Καστρί με το εκκλησάκι. Η παραλία είναι ήρεμη και σχετικά αραιοκατοικημένη για τα δεδομένα της Κω.",
+          },
+        },
+        {
+          title: {
+            en: "Agios Fokas & Therme",
+            el: "Άγιος Φωκάς & Θερμά",
+          },
+          text: {
+            en: "The east coast beyond Kos Town is rockier and less organised than the western resort beaches, but Agios Fokas has a raw quality and the nearby Therme springs make the stretch genuinely unique. The combination of a swim in open water followed by a soak in the natural thermal rocks is one of the more memorable physical experiences the island offers.",
+            el: "Η ανατολική ακτή είναι πιο βραχώδης και λιγότερο οργανωμένη, αλλά ο Άγιος Φωκάς έχει μια άγρια ομορφιά και οι κοντινές πηγές Θερμά κάνουν την περιοχή μοναδική. Ο συνδυασμός κολύμπι και φυσικών θερμών λουτρών είναι μια αξέχαστη εμπειρία.",
+          },
+        },
+      ],
+    },
+    {
+      title: {
+        en: "Local food & flavours",
+        el: "Τοπικό φαγητό & γεύσεις",
+      },
+      layout: "list",
+      items: [
+        {
+          title: {
+            en: "Kos Honey",
+            el: "Μέλι Κω",
+          },
+          text: {
+            en: "The island produces some of the finest thyme honey in the Dodecanese, shaped by the wild herbs of Mount Dikaios. It appears in everything from breakfast to dessert and is the right souvenir to take home.",
+            el: "Το νησί παράγει εξαιρετικό θυμαρίσιο μέλι, διαμορφωμένο από τα άγρια βότανα του Όρους Δίκαιος. Εμφανίζεται παντού, από το πρωινό μέχρι το επιδόρπιο, και είναι το κατάλληλο σουβενίρ.",
+          },
+        },
+        {
+          title: {
+            en: "Fresh Fish in Kefalos and Mastichari",
+            el: "Φρέσκο ψάρι σε Κέφαλο και Μαστιχάρι",
+          },
+          text: {
+            en: "The fishing harbors of Kefalos (southwest) and Mastichari (northwest) have tavernas where the daily catch is often displayed at the door. The cooking is simple: grilled, with olive oil and lemon.",
+            el: "Τα ψαρολίμανα Κεφάλου και Μαστιχαρίου έχουν ταβέρνες όπου η ημερήσια ψαριά εκτίθεται στην πόρτα. Το μαγείρεμα είναι απλό: ψητό, με λάδι και λεμόνι.",
+          },
+        },
+        {
+          title: {
+            en: "Mezes in Kos Town and Platani",
+            el: "Μεζέδες στην πόλη και το Πλατάνι",
+          },
+          text: {
+            en: "The village of Platani — between Kos Town and the Asklepion — has a small cluster of restaurants that reflect the island's Ottoman heritage with dishes rarely found elsewhere in the Dodecanese: slow-cooked meats, chickpea stews and yogurt-based preparations.",
+            el: "Το Πλατάνι — μεταξύ πόλης και Ασκληπιείου — έχει μια μικρή συστάδα εστιατορίων που αντικατοπτρίζουν την οθωμανική κληρονομιά του νησιού: μαγειρευτά κρέατα, ρεβίθια και παρασκευάσματα με βάση το γιαούρτι.",
+          },
+        },
+        {
+          title: {
+            en: "Loukoumades and Street Sweets",
+            el: "Λουκουμάδες και γλυκά δρόμου",
+          },
+          text: {
+            en: "The Kos Town market area near the ancient agora has several spots serving fresh loukoumades — deep-fried dough balls with honey and cinnamon — that have been the default street snack across the Dodecanese for generations.",
+            el: "Η αγορά της Κω κοντά στην αρχαία αγορά έχει πολλά σημεία με φρέσκους λουκουμάδες — τηγανητές μπάλες ζύμης με μέλι και κανέλα — που είναι το παραδοσιακό σνακ των Δωδεκανήσων για γενιές.",
+          },
+        },
+      ],
+    },
+    {
+      title: {
+        en: "Practical Tips",
+        el: "Πρακτικές Συμβουλές",
+      },
+      layout: "numbered",
+      items: [
+        {
+          title: {
+            en: "Cycling is real here — use it",
+            el: "Το ποδήλατο είναι αληθινό εδώ — χρησιμοποίησέ το",
+          },
+          text: {
+            en: "The flat terrain and the dedicated cycle path along the north coast are a genuine logistical advantage. A bike from the town rentals costs around €5–8 per day and puts Tigkaki, Marmari and the Asklepion within reach without dealing with parking or traffic.",
+            el: "Το επίπεδο έδαφος και ο ποδηλατόδρομος στη βόρεια ακτή είναι πραγματικό πλεονέκτημα. Ένα ποδήλατο από τα ενοικιαστήρια κοστίζει περίπου €5-8 την ημέρα και καθιστά Τιγκάκι, Μαρμάρι και Ασκληπιείο προσβάσιμα χωρίς παρκάρισμα ή κίνηση.",
+          },
+        },
+        {
+          title: {
+            en: "Allocate one full cultural day to Kos Town",
+            el: "Αφιέρωσε μια ολόκληρη πολιτιστική μέρα στην πόλη",
+          },
+          text: {
+            en: "The Casa Romana, the agora, the Odeon, the Castle of the Knights and the plane tree area are all walkable from the port and deserve unhurried attention. Combining them with the evening harbor atmosphere gives the day a natural structure.",
+            el: "Το Casa Romana, η αγορά, το Ωδείο, το Κάστρο των Ιπποτών και ο Πλάτανος είναι όλα προσβάσιμα με τα πόδια από το λιμάνι. Ο συνδυασμός τους με τη βραδινή ατμόσφαιρα δημιουργεί μια ολοκληρωμένη μέρα.",
+          },
+        },
+        {
+          title: {
+            en: "Book the Nisyros day trip in advance in July and August",
+            el: "Κράτησε για τη Νίσυρο εκ των προτέρων",
+          },
+          text: {
+            en: "Boats operate daily but fill quickly. The excursion typically departs early morning and returns by late afternoon — allowing a full Kos Town evening. Check departure ports (Kos Town and Kardamena both offer options).",
+            el: "Τα πλοία λειτουργούν καθημερινά αλλά γεμίζουν γρήγορα. Η εκδρομή αναχωρεί νωρίς το πρωί και επιστρέφει αργά το απόγευμα. Έλεγξε τα λιμάνια αναχώρησης (Κως και Καρδάμαινα).",
+          },
+        },
+        {
+          title: {
+            en: "Rent a scooter or car for one day specifically to explore the southwest peninsula",
+            el: "Νοίκιασε σκούτερ ή αυτοκίνητο για τη νοτιοδυτική χερσόνησο",
+          },
+          text: {
+            en: "The road from the resort belt to Kefalos, Agios Stefanos and Kamari is one of the most scenic drives in the Dodecanese and reveals an island character entirely different from the organized beach corridor.",
+            el: "Ο δρόμος από τη ζώνη των θέρετρων προς Κέφαλο, Άγιο Στέφανο και Καμάρι είναι από τις πιο γραφικές διαδρομές στα Δωδεκάνησα και αποκαλύπτει έναν εντελώς διαφορετικό χαρακτήρα του νησιού.",
+          },
+        },
+        {
+          title: {
+            en: "The Turkish coast is visible and very close",
+            el: "Η τουρκική ακτή είναι ορατή και πολύ κοντά",
+          },
+          text: {
+            en: "The Bodrum crossing is a genuine option for those with current documentation — the port is active and the crossing is straightforward. Check entry requirements and ferry schedules close to your dates.",
+            el: "Η διάβαση προς Μπόντρουμ είναι πραγματική επιλογή για όσους έχουν τα κατάλληλα έγγραφα. Το λιμάνι είναι ενεργό και η διάβαση απλή. Έλεγξε τις απαιτήσεις εισόδου και τα δρομολόγια πριν το ταξίδι σου.",
+          },
+        },
+      ],
+    },
+    {
+      title: {
+        en: "Frequently Asked Questions",
+        el: "Συχνές Ερωτήσεις",
+      },
+      layout: "faq",
+      items: [
+        {
+          title: {
+            en: "How many days do I need for Kos?",
+            el: "Πόσες μέρες χρειάζομαι για την Κω;",
+          },
+          text: {
+            en: "Three to four days cover the Asklepion, Kos Town, the main beaches and a day trip to Nisyros comfortably. Five to six days allow the southwest coast, a second island excursion (Kalymnos or Patmos) and a more unhurried pace throughout.",
+            el: "Τρεις με τέσσερις μέρες καλύπτουν άνετα Ασκληπιείο, πόλη, παραλίες και ημερήσια εκδρομή στη Νίσυρο. Πέντε με έξι μέρες επιτρέπουν νοτιοδυτική ακτή, δεύτερη νησιωτική εκδρομή (Κάλυμνο ή Πάτμο) και πιο χαλαρό ρυθμό.",
+          },
+        },
+        {
+          title: {
+            en: "Do I need a car or scooter?",
+            el: "Χρειάζομαι αυτοκίνητο ή σκούτερ;",
+          },
+          text: {
+            en: "For Kos Town and the western beach corridor, a bicycle is genuinely sufficient and more enjoyable. For the southwest (Kefalos, Agios Stefanos, Kamari) and the interior villages (Zia, Asfendiou), a car or scooter is strongly recommended.",
+            el: "Για την πόλη και τον δυτικό διάδρομο παραλιών, το ποδήλατο είναι αρκετό και πιο ευχάριστο. Για τη νοτιοδυτική ακτή και τα ορεινά χωριά (Ζιά, Ασφενδιού), συνιστάται αυτοκίνητο ή σκούτερ.",
+          },
+        },
+        {
+          title: {
+            en: "Is Kos good for families?",
+            el: "Είναι η Κως κατάλληλη για οικογένειες;",
+          },
+          text: {
+            en: "Yes — notably so. The flat terrain, calm sea on the western coast, organized beaches with facilities, the cycling paths, and the variety of historical sites suitable for older children make Kos one of the more family-adapted islands in the Dodecanese.",
+            el: "Ναι — ξεκάθαρα. Το επίπεδο έδαφος, η ήρεμη θάλασσα στη δυτική ακτή, οι οργανωμένες παραλίες, οι ποδηλατόδρομοι και η ποικιλία ιστορικών χώρων κάνουν την Κω ένα από τα πιο οικογενειακά νησιά των Δωδεκανήσων.",
+          },
+        },
+        {
+          title: {
+            en: "Can I visit Turkey from Kos?",
+            el: "Μπορώ να επισκεφτώ την Τουρκία από την Κω;",
+          },
+          text: {
+            en: "The ferry crossing to Bodrum takes approximately 45 minutes and operates regularly in summer. Entry requirements and documentation rules vary. Always check current regulations before planning this as part of your itinerary.",
+            el: "Το φέρι προς Μπόντρουμ διαρκεί περίπου 45 λεπτά και λειτουργεί τακτικά το καλοκαίρι. Οι απαιτήσεις εισόδου διαφέρουν. Έλεγξε πάντα τους ισχύοντες κανονισμούς πριν το προγραμματίσεις.",
+          },
+        },
+        {
+          title: {
+            en: "Is the Asklepion worth visiting?",
+            el: "Αξίζει το Ασκληπιείο;",
+          },
+          text: {
+            en: "Consistently and significantly yes — it is one of the most historically important sites in the Aegean and is not adequately crowded for most of the season. The combination of the archaeological significance, the landscape setting and the view makes it one of the genuinely rewarding cultural stops in all of Greek island travel.",
+            el: "Σίγουρα ναι — είναι ένας από τους σημαντικότερους ιστορικούς χώρους του Αιγαίου και δεν είναι υπερβολικά πολυσύχναστος το μεγαλύτερο μέρος της σεζόν. Ο συνδυασμός αρχαιολογικής σημασίας, τοπίου και θέας το καθιστά έναν από τους πιο ανταποδοτικούς πολιτιστικούς προορισμούς.",
+          },
+        },
+      ],
+    },
+  ],
   patras: [
     {
       title: {

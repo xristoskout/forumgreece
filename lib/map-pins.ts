@@ -227,4 +227,11 @@ export const MAP_PINS: Pin[] = [
     label: { en: "Lefkada", el: "Λευκάδα" },
     tagline: { en: "Turquoise beaches & drive access", el: "Τιρκουάζ παραλίες & οδική πρόσβαση" },
   },
+  {
+    id: "kos",
+    x: 77.5, y: 63.5,
+    href: "/destinations/kos",
+    label: { en: "Kos", el: "Κως" },
+    tagline: { en: "History, beaches & cycling", el: "Ιστορία, παραλίες & ποδήλατο" },
+  },
 ];
