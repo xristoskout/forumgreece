@@ -90,12 +90,16 @@ export default async function HotelsDirectoryPage({ params }: Props) {
       />
       <SiteHeader />
 
-      <div className="bg-white border-b border-slate-200">
-        <div className="max-w-4xl mx-auto px-6 py-12 text-center">
-          <p className="text-slate-600 leading-relaxed max-w-2xl mx-auto">
-            {lang === "el"
-              ? "Η επιλογή του σωστού καταλύματος είναι μία από τις πιο σημαντικές αποφάσεις σε κάθε ταξίδι στην Ελλάδα. Από ρομαντικές σουίτες με θέα την καλντέρα στη Σαντορίνη και πολυτελή resorts στην Κρήτη μέχρι οικονομικά διαμερίσματα στην Αθήνα και παραδοσιακούς ξενώνες στα Ιόνια — δες όλες τις επιλογές ανά προορισμό και βρες το κατάλυμα που σου ταιριάζει."
-              : "Choosing the right accommodation is one of the most important decisions in any Greece trip. From romantic caldera-view suites in Santorini and luxury resorts in Crete to budget apartments in Athens and traditional guesthouses in the Ionian islands — browse all options by destination and find your perfect stay."}
+      <div className="container mx-auto px-6 pt-32">
+        <div className="text-center mb-8">
+          <span className="mb-4 inline-flex justify-center rounded-full bg-indigo-500/10 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-indigo-700 backdrop-blur-md border border-indigo-400/20">
+            {lang === "el" ? "Διαμονή" : "Where to Stay"}
+          </span>
+          <h1 className="text-5xl md:text-7xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 via-indigo-400 to-indigo-800 tracking-tight">
+            {lang === "el" ? "Όλοι οι Προορισμοί" : "All Destinations"}
+          </h1>
+          <p className="text-slate-500 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-light">
+            {lang === "el" ? "Ανακαλύψτε τους αναλυτικούς οδηγούς μας για το πού να μείνετε στους κορυφαίους προορισμούς της Ελλάδας." : "Discover our comprehensive guides on where to stay across Greece's top destinations."}
           </p>
         </div>
       </div>
