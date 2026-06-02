@@ -2415,7 +2415,7 @@ export const hotels: HotelCard[] = [
     }
   },
   {
-    slug: "patras",,
+    slug: "patras",
     name: "Where to Stay in Patras & the Region",
     place: "Western Greece & Peloponnese",
     info: {
