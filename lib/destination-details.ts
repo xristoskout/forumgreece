@@ -1529,4 +1529,70 @@ export const destinationDetails: Record<string, DestinationDetail> = {
       },
     },
   },
+  lefkada: {
+    overview: {
+      en: "Lefkada is the only Greek island you can drive to without a ferry — a thin causeway and a floating bridge connect it to the mainland. That alone makes it one of the most accessible Ionian islands, yet what awaits is anything but ordinary. Towering white limestone cliffs plunge into waters so blue they seem to belong to the Caribbean. Ancient villages cling to hillsides with wooden-balconied houses painted in unexpected colors. And on the western coast, two of the most dramatic beaches in all of Greece wait at the end of winding mountain roads. This page covers everything you need to plan a complete and honest visit to Lefkada: why it stands out, when to go, how to get there, where to spend your days, what to eat, and what to skip.",
+      el: "Η Λευκάδα είναι το μόνο ελληνικό νησί που μπορείς να φτάσεις οδικώς χωρίς πλοίο. Λευκοί ασβεστολιθικοί γκρεμοί βυθίζονται σε νερά που μοιάζουν με την Καραϊβική. Αρχαία χωριά σκαρφαλώνουν στις πλαγιές και στη δυτική ακτή, δύο από τις πιο εντυπωσιακές παραλίες της Ελλάδας σε περιμένουν."
+    },
+    pageIncludes: {
+      en: [
+        "Porto Katsiki & Egremni — the western cliff beaches",
+        "Vassiliki windsurfing & watersports",
+        "Nydri boat trips to Meganisi, Scorpios & the islets",
+        "Karya & the mountain village interior",
+        "Local food, Englouvi lentils & Ionian sofrito",
+        "Honest advice on what to skip and when to go",
+      ],
+      el: [
+        "Πόρτο Κατσίκι & Εγκρεμνοί",
+        "Windsurfing στη Βασιλική",
+        "Εκδρομές με βάρκα από Νυδρί",
+        "Καρυά & ορεινά χωριά",
+        "Τοπική κουζίνα & φακές Εγκλουβής",
+        "Ειλικρινείς συμβουλές",
+      ]
+    },
+    perfectFor: {
+      en: [
+        "Road trip travelers arriving from mainland Greece",
+        "Families seeking diverse beach options",
+        "Watersports enthusiasts",
+        "Couples looking for dramatic coastal landscapes",
+        "Hikers and village explorers",
+      ],
+      el: [
+        "Road trips από την ηπειρωτική Ελλάδα",
+        "Οικογένειες με ποικιλία παραλιών",
+        "Λάτρεις θαλάσσιων σπορ",
+        "Ζευγάρια που θέλουν δραματικά τοπία",
+        "Πεζοπόρους και εξερευνητές χωριών",
+      ]
+    },
+    honestAdvice: {
+      title: {
+        en: "Honest Advice — What to Skip",
+        el: "Ειλικρινής Συμβουλή — Τι να Αποφύγεις"
+      },
+      alert: {
+        en: "What nobody tells you: Lefkada's west-coast cliff beaches are genuinely exposed to afternoon wind. The same thermal breeze that makes Vassiliki world-class for windsurfing also whips up wave action on Porto Katsiki and Egremni from early afternoon onwards. The morning window is not just about avoiding crowds — it is the only time the sea is genuinely still.",
+        el: "Αυτό που δε σου λέει κανείς: Οι δυτικές παραλίες εκτίθενται στον απογευματινό άνεμο. Το πρωί δεν είναι μόνο για να αποφύγεις τα πλήθη — είναι η μόνη ώρα που η θάλασσα είναι πραγματικά ήρεμη."
+      },
+      items: {
+        en: [
+          "Driving to Porto Katsiki in a large vehicle between 11:00–15:00 in August — the parking fills up and cars line the roadside for 1–2 km",
+          "Expecting Nydri to be a quiet or authentic port town — it is a tourist strip best used as a functional base",
+          "Trying to see both Porto Katsiki and Egremni in a single half-day — both involve significant descents and climbs",
+          "Ignoring Vassiliki if not a windsurfer — the bay has calm water, excellent fish tavernas, and a relaxed atmosphere",
+          "Underestimating the cost of boat trips from Nydri — compare options and ask what is included before committing",
+        ],
+        el: [
+          "✕ Οδήγηση στο Πόρτο Κατσίκι με μεγάλο όχημα 11:00–15:00 τον Αύγουστο",
+          "✕ Να περιμένετε το Νυδρί αυθεντικό — είναι τουριστική ζώνη",
+          "✕ Να δείτε Πόρτο Κατσίκι και Εγκρεμνούς σε μισή μέρα",
+          "✕ Να αγνοήσετε τη Βασιλική αν δεν κάνετε windsurf",
+          "✕ Να υποτιμήσετε το κόστος των εκδρομών με βάρκα",
+        ],
+      },
+    },
+  },
 };

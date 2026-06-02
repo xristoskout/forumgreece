@@ -213,4 +213,18 @@ export const MAP_PINS: Pin[] = [
     label: { en: "Ikaria", el: "Ικαρία" },
     tagline: { en: "The Blue Zone island", el: "Το νησί της μακροζωίας" },
   },
+  {
+    id: "evia",
+    x: 48.07, y: 44.05,
+    href: "/destinations/evia",
+    label: { en: "Evia", el: "Εύβοια" },
+    tagline: { en: "Wild nature & thermal springs", el: "Άγρια φύση & ιαματικές πηγές" },
+  },
+  {
+    id: "lefkada",
+    x: 19.1, y: 41.7,
+    href: "/destinations/lefkada",
+    label: { en: "Lefkada", el: "Λευκάδα" },
+    tagline: { en: "Turquoise beaches & drive access", el: "Τιρκουάζ παραλίες & οδική πρόσβαση" },
+  },
 ];

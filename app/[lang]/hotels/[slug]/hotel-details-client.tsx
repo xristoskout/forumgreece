@@ -41,6 +41,8 @@ const STAY22_EMBEDS: Record<string, string> = {
   kalamata: "https://stay22.com/embed/6a0da4baf968487cce2b1e87",
   thassos: "https://stay22.com/embed/6a17019b25eb5f0f8531770c",
   skiathos: "https://stay22.com/embed/6a1441871194c5e40cbc436e",
+  lefkada: "https://stay22.com/embed/6a1ed6996b16982d6c0e457f",
+  evia: "https://stay22.com/embed/6a1ed7c4105a99849371700a",
 };
 
 const HOTEL_NAMES: Record<string, string[]> = {
