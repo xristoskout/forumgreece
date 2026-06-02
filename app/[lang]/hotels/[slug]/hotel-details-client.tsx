@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useParams, usePathname, useRouter } from "next/navigation";
-import { hotels, type Lang, siteBrand, siteBrandLine } from "../../../../lib/content";
+import { hotels, destinations, type Lang, siteBrand, siteBrandLine } from "../../../../lib/content";
 import { experienceBusinesses } from "../../../../lib/experiences";
 import BusinessGallery from "../../businesses/[slug]/business-gallery";
 import SiteHeader from "../../../../components/site-header";
@@ -244,6 +244,9 @@ export default function HotelDetailsClient({ lang: serverLang, slug: serverSlug,
     ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(item.mapQuery)}`
     : null;
 
+  const destination = destinations.find((d) => d.slug === slug);
+  const destName = item.place.split(" —")[0];
+
   return (
     <main className="min-h-screen bg-transparent text-slate-900 pt-20">
       <SiteHeader />
@@ -256,6 +259,14 @@ export default function HotelDetailsClient({ lang: serverLang, slug: serverSlug,
           >
             ← {t.back[lang]}
           </Link>
+          {destination && (
+            <Link
+              href={withLang(`/destinations/${slug}`)}
+              className="inline-flex items-center rounded-full border border-slate-200 bg-white/90 backdrop-blur-md px-6 py-2.5 text-sm font-semibold text-indigo-700 transition hover:border-indigo-400 hover:bg-indigo-100 shadow-md"
+            >
+              {lang === "en" ? `${destName} Destination →` : `Προορισμός ${destName} →`}
+            </Link>
+          )}
         </div>
 
         <section className="relative mt-6 overflow-hidden rounded-[2.5rem] text-slate-900 shadow-xl border border-slate-200 group">

@@ -4,7 +4,7 @@ import { Fragment } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import SiteHeader from "../../../../components/site-header";
-import { siteBrand, type Destination, type Lang } from "../../../../lib/content";
+import { siteBrand, food, type Destination, type Lang } from "../../../../lib/content";
 import Image from "next/image";
 import { destinationSections } from "../../../../lib/destination-sections";
 import { destinationDetails } from "../../../../lib/destination-details";
@@ -23,6 +23,10 @@ export default function DestinationDetailsClient({
   const slug = destination.slug;
   const businesses = experienceBusinesses.filter(
     (b) => b.landingSlug === `${slug}-tours` || b.landingSlug === slug
+  );
+
+  const matchingFood = food.filter((f) =>
+    f.place.toLowerCase().includes(destination.name.toLowerCase())
   );
 
   function stripLocale(path: string) {
@@ -263,6 +267,27 @@ export default function DestinationDetailsClient({
                 </div>
               </Link>
             ))}
+            {matchingFood.map((item, idx) => {
+              const baseDelay = destination.highlights[lang].length + (destination.guideLinks?.length || 0);
+              return (
+                <Link
+                  key={item.slug}
+                  href={withLang(`/eat-drink/${item.slug}`)}
+                  className="animate-float group flex items-center gap-4 rounded-3xl bg-emerald-600/90 px-6 py-5 shadow-lg backdrop-blur-md border border-emerald-400/50 transition-all duration-300 hover:bg-emerald-500 hover:border-emerald-300 hover:-translate-y-1 hover:shadow-2xl"
+                  style={{ animationDelay: (baseDelay + idx) * 0.2 + "s" }}
+                >
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white/20 text-white transition-transform duration-300 group-hover:translate-x-1 drop-shadow-md shadow-inner">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" x2="6" y1="1" y2="4"/><line x1="10" x2="10" y1="1" y2="4"/><line x1="14" x2="14" y1="1" y2="4"/></svg>
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="text-xs font-semibold text-emerald-100 uppercase tracking-wider mb-0.5">
+                      {lang === "en" ? "Food & Drink" : "Φαγητό & Ποτό"}
+                    </span>
+                    <h3 className="text-xl font-bold tracking-tight text-white">{item.title[lang]}</h3>
+                  </div>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>
