@@ -1260,7 +1260,7 @@ export const hotels: HotelCard[] = [
         }
       }
     ],
-    meta: {
+    seo: {
       title: {
         en: "Where to Stay in Lefkada | Best Areas & Hotels | GoGreeceNow",
         el: "Πού να Μείνετε στη Λευκάδα | Καλύτερες Περιοχές & Ξενοδοχεία | GoGreeceNow"
@@ -2151,7 +2151,7 @@ export const hotels: HotelCard[] = [
         }
       }
     ],
-    meta: {
+    seo: {
       title: {
         en: "Where to Stay in Evia: Best Areas & Hotel Ideas | GoGreeceNow",
         el: "Πού να Μείνετε στην Εύβοια | Καλύτερες Περιοχές & Ξενοδοχεία | GoGreeceNow"
