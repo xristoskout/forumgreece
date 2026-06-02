@@ -7205,5 +7205,312 @@ export const destinationSections: Record<string, DestinationSection[]> = {
         { title: { en: "How long should I stay?", el: "Πόσες μέρες να μείνω;" }, text: { en: "Minimum four days, ideally a week. Ikaria takes time to reveal itself. Visitors who stay only two days often leave confused. Those who stay a week often don't want to leave.", el: "Τέσσερις μέρες ελάχιστα, ιδανικά μία εβδομάδα." } },
       ]
     },
+  ],
+  evia: [
+    {
+      title: { en: "Why visit Evia", el: "Γιατί να επισκεφθείς την Εύβοια" },
+      layout: "numbered",
+      items: [
+        {
+          title: { en: "Incredible diversity in a single island", el: "Απίστευτη ποικιλομορφία σε ένα νησί" },
+          text: {
+            en: "Evia is not one destination but several. In the north you will find dense pine forests, waterfalls, and therapeutic hot springs. Central Evia offers rugged mountains, traditional stone villages, and the unique tidal phenomenon of the Euripus Strait in Chalkida. The south is arid and dramatic, with Cycladic-style landscapes, hidden coves, and the breathtaking Dimosari Gorge. You can drive from alpine scenery to turquoise Aegean beaches in under an hour.",
+            el: "Η Εύβοια δεν είναι ένας προορισμός αλλά πολλοί. Στο βορρά θα βρείτε πυκνά πευκοδάση, καταρράκτες και ιαματικές πηγές. Η κεντρική Εύβοια προσφέρει άγρια βουνά, παραδοσιακά πέτρινα χωριά και το μοναδικό φαινόμενο της παλίρροιας στο Στενό του Ευρίπου. Η νότια Εύβοια είναι άνυδρη και δραματική, με τοπία κυκλαδίτικου στυλ, κρυμμένους όρμους και το φαράγγι των Διμώσαρων."
+          }
+        },
+        {
+          title: { en: "Thermal springs with a 2,000-year history", el: "Ιαματικές πηγές με ιστορία 2.000 ετών" },
+          text: {
+            en: "The thermal springs of Edipsos have been attracting visitors since Roman times. Famous figures like Marcus Aurelius, Winston Churchill, and Aristotle Onassis have soaked in these waters. The mineral-rich springs emerge at temperatures up to 80°C, and in some places the hot water flows directly into the sea, creating natural open-air spas. It remains one of Greece's most significant wellness destinations.",
+            el: "Οι ιαματικές πηγές της Αιδηψού προσελκύουν επισκέπτες από τη ρωμαϊκή εποχή. Διάσημες προσωπικότητες όπως ο Μάρκος Αυρήλιος, ο Ουίνστον Τσόρτσιλ και ο Αριστοτέλης Ωνάσης έχουν απολαύσει αυτά τα νερά. Οι πηγές αναβλύζουν σε θερμοκρασίες έως 80°C και σε ορισμένα σημεία το ζεστό νερό ρέει απευθείας στη θάλασσα."
+          }
+        },
+        {
+          title: { en: "Authentic, untouristed character", el: "Αυθεντικός, ανεπηρέαστος χαρακτήρας" },
+          text: {
+            en: "Despite being the second-largest island in Greece and just an hour from Athens, Evia remains refreshingly free of mass tourism. The villages are genuine, the tavernas serve food for locals, and the beaches offer space even in summer. This is where Athenians escape for the weekend, yet it still feels undiscovered.",
+            el: "Παρότι είναι το δεύτερο μεγαλύτερο νησί της Ελλάδας και μόλις μία ώρα από την Αθήνα, η Εύβοια παραμένει αναζωογονητικά απαλλαγμένη από μαζικό τουρισμό. Τα χωριά είναι αυθεντικά, οι ταβέρνες σερβίρουν φαγητό για ντόπιους και οι παραλίες προσφέρουν χώρο ακόμα και το καλοκαίρι."
+          }
+        },
+        {
+          title: { en: "Easy access from Athens", el: "Εύκολη πρόσβαση από την Αθήνα" },
+          text: {
+            en: "Evia is one of the easiest 'island' escapes from Athens. You cross the bridge at Chalkida and you are there — no ferries required for the central and northern parts. This makes it perfect for weekend trips, spontaneous getaways, or combining with an Athens holiday without the complexity of ferry schedules.",
+            el: "Η Εύβοια είναι μία από τις πιο εύκολες 'νησιωτικές' αποδράσεις από την Αθήνα. Διασχίζεις τη γέφυρα στη Χαλκίδα και είσαι εκεί — χωρίς να χρειάζεσαι πλοίο για τα κεντρικά και βόρεια μέρη. Ιδανική για σαββατοκύριακα και αυθόρμητες αποδράσεις."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "Best time to go (and when to avoid)", el: "Καλύτερη εποχή για να πας (και πότε να το αποφύγεις)" },
+      layout: "list",
+      alert: {
+        en: "Secret: Evia is a year-round destination. The thermal springs make winter visits worthwhile, while spring and autumn offer the best balance of weather and crowds.",
+        el: "Μυστικό: Η Εύβοια είναι προορισμός για όλο το χρόνο. Οι ιαματικές πηγές κάνουν τις χειμερινές επισκέψεις αξιόλογες, ενώ η άνοιξη και το φθινόπωρο προσφέρουν την καλύτερη ισορροπία καιρού και κόσμου."
+      },
+      items: [
+        {
+          title: { en: "May–June", el: "Μάιος–Ιούνιος" },
+          text: {
+            en: "Ideal weather for hiking and outdoor exploration. The landscape is lush and green, especially in the north. The sea is warm enough for swimming by June. Low crowds and reasonable prices.",
+            el: "Ιδανικός καιρός για πεζοπορία και εξερεύνηση. Το τοπίο είναι πράσινο, ειδικά στο βορρά. Η θάλασσα είναι αρκετά ζεστή για μπάνιο από τον Ιούνιο."
+          }
+        },
+        {
+          title: { en: "July–August", el: "Ιούλιος–Αύγουστος" },
+          text: {
+            en: "Peak season with hot weather and busy beaches. The popular spots near Chalkida and Agia Anna can get crowded on weekends. If you visit now, explore the less accessible beaches in the south for more space.",
+            el: "Περίοδος αιχμής με ζεστό καιρό και γεμάτες παραλίες. Τα δημοφιλή σημεία κοντά στη Χαλκίδα και την Αγία Άννα γεμίζουν τα Σαββατοκύριακα. Εξερευνήστε τις λιγότερο προσβάσιμες παραλίες στο νότο."
+          }
+        },
+        {
+          title: { en: "September–October", el: "Σεπτέμβριος–Οκτώβριος" },
+          text: {
+            en: "Many consider this the best period. The sea is at its warmest from the summer heat, the crowds have thinned, and the autumn light is beautiful. Perfect for combining swimming with mountain exploration.",
+            el: "Πολλοί θεωρούν αυτή την καλύτερη περίοδο. Η θάλασσα είναι ζεστή από το καλοκαίρι, το πλήθος έχει αραιώσει και το φθινοπωρινό φως είναι όμορφο."
+          }
+        },
+        {
+          title: { en: "November–April", el: "Νοέμβριος–Απρίλιος" },
+          text: {
+            en: "Quiet season perfect for thermal springs, hiking, and exploring mountain villages. Many coastal businesses close, but the spas in Edipsos operate year-round. Skiing on Mount Dirfys is possible in winter.",
+            el: "Ήσυχη περίοδος ιδανική για ιαματικές πηγές, πεζοπορία και εξερεύνηση ορεινών χωριών. Τα σπα στην Αιδηψό λειτουργούν όλο το χρόνο."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "How to get to Evia", el: "Πώς φτάνεις στην Εύβοια" },
+      layout: "grid",
+      items: [
+        {
+          title: { en: "By car (recommended)", el: "Με αυτοκίνητο (συνιστάται)" },
+          text: {
+            en: "From Athens, drive to Chalkida via the national road (approximately 1–1.5 hours). The bridge is free and operates 24/7. For northern Evia, you can take the ferry from Arkitsa to Edipsos. For southern Evia, ferries from Agia Marina to Styra or Rafina to Marmari save driving time.",
+            el: "Από την Αθήνα, οδηγείτε μέχρι τη Χαλκίδα μέσω εθνικής οδού (περίπου 1–1.5 ώρα). Η γέφυρα είναι δωρεάν και λειτουργεί 24/7. Για τη βόρεια Εύβοια, μπορείτε να πάρετε το πλοίο από Αρκίτσα προς Αιδηψό."
+          }
+        },
+        {
+          title: { en: "By bus", el: "Με λεωφορείο" },
+          text: {
+            en: "KTEL buses run from Athens to Chalkida regularly (every 30–60 minutes). From Chalkida, local buses connect to major towns but service is limited, especially for reaching remote beaches and mountain villages.",
+            el: "Λεωφορεία ΚΤΕΛ εκτελούν δρομολόγια από Αθήνα προς Χαλκίδα κάθε 30–60 λεπτά. Από τη Χαλκίδα, τοπικά λεωφορεία συνδέονται με μεγάλες πόλεις αλλά το δίκτυο είναι περιορισμένο."
+          }
+        },
+        {
+          title: { en: "Getting around", el: "Μετακινήσεις στο νησί" },
+          text: {
+            en: "A car is essential for exploring Evia properly. The island is large (over 180km long) and public transport cannot reach the best beaches and mountain villages. Rent a car in Athens or Chalkida.",
+            el: "Το αυτοκίνητο είναι απαραίτητο για να εξερευνήσετε σωστά την Εύβοια. Το νησί είναι μεγάλο (πάνω από 180 χιλιόμετρα) και τα μέσα μαζικής μεταφοράς δεν φτάνουν στις καλύτερες παραλίες και στα ορεινά χωριά."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "Top attractions & experiences", el: "Κορυφαία αξιοθέατα & εμπειρίες" },
+      layout: "numbered",
+      items: [
+        {
+          title: { en: "Edipsos thermal springs", el: "Ιαματικές πηγές Αιδηψού" },
+          text: {
+            en: "The thermal springs of Edipsos are the most famous in Greece. Natural hot water emerges at temperatures up to 80°C, rich in minerals. You can experience them in organized spa hotels or in natural seaside pools where hot water mixes with the sea. The waterfront is lined with cafes and restaurants, making it a complete wellness destination.",
+            el: "Οι ιαματικές πηγές της Αιδηψού είναι οι πιο διάσημες στην Ελλάδα. Φυσικό ζεστό νερό αναβλύζει σε θερμοκρασίες έως 80°C. Μπορείτε να τις απολαύσετε σε οργανωμένα σπα ή σε φυσικές πισίνες δίπλα στη θάλασσα."
+          }
+        },
+        {
+          title: { en: "Hike the Dimosari Gorge", el: "Πεζοπορία στο φαράγγι Διμώσαρων" },
+          text: {
+            en: "One of the most beautiful hikes in Greece, the Dimosari Gorge descends from the high plateaus of Mount Ochi down to the Aegean Sea at Kallianos beach. The trail passes through lush vegetation, waterfalls, and dramatic rock formations. It takes approximately 3–4 hours and ends with a swim in crystal-clear waters.",
+            el: "Ένα από τα ωραιότερα μονοπάτια στην Ελλάδα, το φαράγγι των Διμώσαρων κατηφορίζει από τα οροπέδια του όρους Όχη προς το Αιγαίο στην παραλία Καλλιανού. Η διαδρομή περνά μέσα από πλούσια βλάστηση και καταρράκτες."
+          }
+        },
+        {
+          title: { en: "Mount Dirfys hiking", el: "Πεζοπορία στον Δίρφυ" },
+          text: {
+            en: "The highest mountain in Evia (1,743m) offers challenging hiking trails through dense fir forests with panoramic views of the Aegean and the Euboean Gulf. The village of Steni Dirfyos is the traditional starting point, with mountain refuges and tavernas serving hearty local food.",
+            el: "Το ψηλότερο βουνό της Εύβοιας (1.743μ) προσφέρει απαιτητικά μονοπάτια μέσα σε πυκνά ελατοδάση με πανοραμική θέα στο Αιγαίο. Το χωριό Στενή Δίρφυος είναι η παραδοσιακή αφετηρία."
+          }
+        },
+        {
+          title: { en: "Chalkida tidal phenomenon", el: "Παλιρροϊκό φαινόμενο Χαλκίδας" },
+          text: {
+            en: "The Euripus Strait in Chalkida has one of the most unique tidal phenomena in the world — the current changes direction multiple times a day, and the water literally flows in different directions at different depths. The old bridge is the best spot to observe this, and the waterfront cafes make for a perfect evening out.",
+            el: "Το Στενό του Ευρίπου παρουσιάζει ένα από τα πιο μοναδικά παλιρροϊκά φαινόμενα στον κόσμο — το ρεύμα αλλάζει κατεύθυνση πολλές φορές την ημέρα. Η παλιά γέφυρα είναι το καλύτερο σημείο παρατήρησης."
+          }
+        },
+        {
+          title: { en: "The Dragon Houses of Mount Ochi", el: "Τα Δρακόσπιτα της Όχης" },
+          text: {
+            en: "Mysterious megalithic structures built from massive stone slabs without mortar, dating back to prehistoric times. The best-preserved is on the summit of Mount Ochi near Karystos. Their purpose remains unknown — theories range from ancient temples to shelters. The hike to reach them is rewarded with spectacular views.",
+            el: "Μυστηριώδεις μεγαλιθικές κατασκευές από τεράστιες πέτρινες πλάκες χωρίς συνδετικό υλικό. Το καλύτερα διατηρημένο βρίσκεται στην κορυφή του όρους Όχη κοντά στην Κάρυστο. Η πεζοπορία ανταμείβεται με εντυπωσιακή θέα."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "Beaches in Evia", el: "Παραλίες στην Εύβοια" },
+      layout: "list",
+      alert: {
+        en: "Secret: The best beaches require effort. The southern coast has dozens of unnamed coves accessible only by dirt roads or short hikes — these are where you will find true solitude even in August.",
+        el: "Μυστικό: Οι καλύτερες παραλίες απαιτούν προσπάθεια. Η νότια ακτή έχει δεκάδες ανώνυμους όρμους προσβάσιμους μόνο μέσω χωματόδρομων — εκεί θα βρείτε πραγματική μοναξιά ακόμα και τον Αύγουστο."
+      },
+      items: [
+        {
+          title: { en: "Chiliadou Beach", el: "Παραλία Χιλιαδού" },
+          text: {
+            en: "One of the most famous beaches in Evia, surrounded by dramatic cliffs and lush greenery. The water is crystal clear and deep, making it perfect for snorkeling. Partly organized with a beach bar, partly wild. Popular with alternative travelers.",
+            el: "Μία από τις πιο διάσημες παραλίες της Εύβοιας, περιτριγυρισμένη από εντυπωσιακούς βράχους. Τα νερά είναι κρυστάλλινα και βαθιά. Μερικώς οργανωμένη, μερικώς άγρια."
+          }
+        },
+        {
+          title: { en: "Agia Anna Beach", el: "Παραλία Αγία Άννα" },
+          text: {
+            en: "A long sandy beach ideal for families with organized beach bars and calm waters. Easy access and plenty of amenities make it one of the most popular summer destinations on the island. Gets crowded in August.",
+            el: "Μεγάλη αμμώδης παραλία ιδανική για οικογένειες. Οργανωμένες ξαπλώστρες, ήρεμα νερά και εύκολη πρόσβαση. Από τους πιο δημοφιλείς καλοκαιρινούς προορισμούς στο νησί."
+          }
+        },
+        {
+          title: { en: "Pefki Beach", el: "Παραλία Πευκί" },
+          text: {
+            en: "Located in northern Evia, Pefki is a long sandy beach with pine trees reaching almost to the shoreline. Relaxed atmosphere, good tavernas nearby, and family-friendly environment. One of the best beaches in the north.",
+            el: "Στη βόρεια Εύβοια, το Πευκί είναι μια μακριά αμμουδιά με πεύκα που φτάνουν σχεδόν μέχρι τη θάλασσα. Χαλαρή ατμόσφαιρα, καλές ταβέρνες και φιλική για οικογένειες."
+          }
+        },
+        {
+          title: { en: "Southern hidden coves", el: "Νότιοι κρυμμένοι όρμοι" },
+          text: {
+            en: "The south coast between Karystos and Marmari is dotted with semi-hidden beaches accessible via dirt roads or short hikes. These offer the most authentic beach experience in Evia — turquoise waters, pebble shores, and absolute quiet. Bring your own supplies as most have no facilities.",
+            el: "Η νότια ακτή μεταξύ Καρύστου και Μαρμαρίου είναι διάσπαρτη από ημίκρυφες παραλίες. Τιρκουάζ νερά, βοτσαλωτές ακτές και απόλυτη ησυχία. Φέρτε τις προμήθειές σας."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "Food & local products", el: "Φαγητό & τοπικά προϊόντα" },
+      layout: "list",
+      alert: {
+        en: "Secret: The mountain villages in central Evia serve some of the best traditional food on the island. Look for tavernas in Steni, Kymi, and the villages around Dirfys for authentic, slow-cooked meals.",
+        el: "Μυστικό: Τα ορεινά χωριά της κεντρικής Εύβοιας σερβίρουν από τα καλύτερα παραδοσιακά φαγητά του νησιού. Αναζητήστε ταβέρνες στη Στενή, την Κύμη και τα χωριά γύρω από τον Δίρφυ."
+      },
+      items: [
+        {
+          title: { en: "Figs of Taxiarchis", el: "Σύκα Ταξιάρχη" },
+          text: {
+            en: "The figs grown in the village of Taxiarchis are renowned throughout Greece for their exceptional sweetness and quality. The local climate and soil produce a fig with a unique texture and flavour. Try them fresh in late summer or dried year-round.",
+            el: "Τα σύκα που καλλιεργούνται στο χωριό Ταξιάρχης είναι φημισμένα σε όλη την Ελλάδα για τη γλύκα και την ποιότητά τους. Δοκιμάστε τα φρέσκα στα τέλη του καλοκαιριού ή αποξηραμένα όλο τον χρόνο."
+          }
+        },
+        {
+          title: { en: "Mountain honey", el: "Μέλι βουνού" },
+          text: {
+            en: "Evia's diverse flora produces exceptional honey, particularly thyme honey and pine honey from the forests of the north. The mountain villages sell local honey that is pure, aromatic, and completely different from commercial varieties.",
+            el: "Η ποικιλόμορφη χλωρίδα της Εύβοιας παράγει εξαιρετικό μέλι, ιδιαίτερα θυμαρίσιο και πευκόμελο. Τα ορεινά χωριά πωλούν τοπικό μέλι που είναι αγνό και αρωματικό."
+          }
+        },
+        {
+          title: { en: "Fresh seafood", el: "Φρέσκα θαλασσινά" },
+          text: {
+            en: "Coastal tavernas serve fresh fish and seafood caught daily in the Aegean. The northern coast near Edipsos and the eastern coast around Kymi are particularly good for seafood. Try the grilled octopus, barbounia (red mullet), and local shellfish.",
+            el: "Οι παραθαλάσσιες ταβέρνες σερβίρουν φρέσκο ψάρι και θαλασσινά. Η βόρεια ακτή κοντά στην Αιδηψό και η ανατολική γύρω από την Κύμη είναι ιδιαίτερα καλές για θαλασσινά."
+          }
+        },
+        {
+          title: { en: "Local cheese & pies", el: "Τοπικά τυριά & πίτες" },
+          text: {
+            en: "Evia produces excellent local cheeses, including a soft white cheese similar to feta but with its own character. Handmade pies with local greens (horta), cheese, and mountain herbs are a staple of village tavernas. Simple, traditional, and incredibly flavorful.",
+            el: "Η Εύβοια παράγει εξαιρετικά τοπικά τυριά. Οι χειροποίητες πίτες με χόρτα, τυρί και μυρωδικά του βουνού είναι βασικό πιάτο στις ταβέρνες των χωριών."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "Practical tips", el: "Πρακτικές συμβουλές" },
+      layout: "list",
+      items: [
+        {
+          title: { en: "Rent a car", el: "Νοικιάστε αυτοκίνητο" },
+          text: {
+            en: "This is the single most important tip for Evia. Public transport is limited and cannot reach the best beaches and mountain villages. A car gives you the freedom to explore at your own pace.",
+            el: "Το σημαντικότερο tip για την Εύβοια. Τα μέσα μεταφοράς είναι περιορισμένα και δεν φτάνουν στις καλύτερες παραλίες."
+          }
+        },
+        {
+          title: { en: "Bring cash", el: "Φέρτε μετρητά" },
+          text: {
+            en: "Remote villages and small tavernas often do not accept cards. ATMs are available in larger towns like Chalkida, Edipsos, and Kymi, but can be scarce in the mountains and south.",
+            el: "Τα απομακρυσμένα χωριά συχνά δεν δέχονται κάρτες. Τα ΑΤΜ υπάρχουν σε μεγαλύτερες πόλεις αλλά είναι σπάνια στα βουνά."
+          }
+        },
+        {
+          title: { en: "Mobile signal drops in mountains", el: "Το σήμα κινητού χάνεται στα βουνά" },
+          text: {
+            en: "Once you head into the mountains of central and northern Evia, mobile coverage becomes unreliable. Download maps offline and let someone know your route if hiking.",
+            el: "Μόλις μπείτε στα βουνά της κεντρικής και βόρειας Εύβοιας, η κάλυψη κινητής τηλεφωνίας γίνεται αναξιόπιστη. Κατεβάστε χάρτες εκτός σύνδεσης."
+          }
+        },
+        {
+          title: { en: "Book accommodation early in August", el: "Κλείστε διαμονή νωρίς τον Αύγουστο" },
+          text: {
+            en: "While Evia is less crowded than the Cyclades, August is still peak season for Greeks. Popular areas like Agia Anna and Edipsos fill up, so book ahead if visiting in high summer.",
+            el: "Αν και η Εύβοια είναι λιγότερο πολυσύχναστη από τις Κυκλάδες, ο Αύγουστος είναι ακόμα περίοδος αιχμής. Κλείστε έγκαιρα."
+          }
+        },
+        {
+          title: { en: "Expect long driving distances", el: "Υπολογίστε μεγάλες αποστάσεις" },
+          text: {
+            en: "Evia is 180km long with winding mountain roads. Driving from Chalkida to Edipsos takes about 2 hours, and to Karystos about 2.5 hours. Plan your itinerary realistically.",
+            el: "Η Εύβοια έχει μήκος 180χλμ με δρόμους που στρίβουν. Από Χαλκίδα μέχρι Αιδηψό υπολογίστε 2 ώρες και μέχρι Κάρυστο 2.5 ώρες."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "FAQ — Evia Essentials", el: "Συχνές Ερωτήσεις" },
+      layout: "faq",
+      items: [
+        {
+          title: { en: "Is Evia worth visiting?", el: "Αξίζει να επισκεφθείτε την Εύβοια;" },
+          text: {
+            en: "Absolutely. Evia offers more variety than most Greek islands — mountains, forests, thermal springs, diverse beaches, and authentic villages — all with fewer crowds and lower prices than the Cyclades.",
+            el: "Απολύτως. Η Εύβοια προσφέρει μεγαλύτερη ποικιλία από τα περισσότερα ελληνικά νησιά — βουνά, δάση, ιαματικές πηγές, παραλίες — με λιγότερο κόσμο και χαμηλότερες τιμές."
+          }
+        },
+        {
+          title: { en: "Is Evia expensive?", el: "Είναι ακριβή η Εύβοια;" },
+          text: {
+            en: "Generally cheaper than the Cyclades or Crete. Accommodation, food, and activities are reasonably priced. Edipsos spas can be more expensive but still offer good value compared to international wellness destinations.",
+            el: "Γενικά φθηνότερη από τις Κυκλάδες ή την Κρήτη. Η διαμονή, το φαγητό και οι δραστηριότητες έχουν λογικές τιμές."
+          }
+        },
+        {
+          title: { en: "Do I need a car?", el: "Χρειάζομαι αυτοκίνητο;" },
+          text: {
+            en: "Yes. Public transport is very limited for reaching the best beaches and mountain villages. A rental car is essential for a proper Evia experience.",
+            el: "Ναι. Τα μέσα μαζικής μεταφοράς είναι πολύ περιορισμένα. Το αυτοκίνητο είναι απαραίτητο."
+          }
+        },
+        {
+          title: { en: "Is Evia good for families?", el: "Είναι κατάλληλη η Εύβοια για οικογένειες;" },
+          text: {
+            en: "Yes, especially Agia Anna and Pefki areas which have organized beaches and family-friendly accommodation. The easy access from Athens without a ferry makes it convenient for families with young children.",
+            el: "Ναι, ειδικά οι περιοχές Αγία Άννα και Πευκί. Η εύκολη πρόσβαση από την Αθήνα χωρίς πλοίο την κάνει βολική για οικογένειες."
+          }
+        },
+        {
+          title: { en: "Can I combine Evia with Athens?", el: "Μπορώ να συνδυάσω την Εύβοια με την Αθήνα;" },
+          text: {
+            en: "Easily. It is one of the closest escapes from Athens — just a 1-hour drive to Chalkida. Perfect for a 3-5 day side trip or weekend getaway during a longer Athens stay.",
+            el: "Εύκολα. Είναι μία από τις κοντινότερες αποδράσεις από την Αθήνα — μόλις 1 ώρα οδήγησης. Ιδανική για 3-5 μέρες."
+          }
+        },
+        {
+          title: { en: "How long should I stay?", el: "Πόσες μέρες να μείνω;" },
+          text: {
+            en: "Minimum 3 days for one region, ideally 5-7 days to explore the island properly. Focus on one area rather than rushing across the entire island.",
+            el: "Τουλάχιστον 3 μέρες για μία περιοχή, ιδανικά 5-7 μέρες για σωστή εξερεύνηση. Επικεντρωθείτε σε μία περιοχή."
+          }
+        }
+      ]
+    }
   ]
 };

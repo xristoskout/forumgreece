@@ -1,0 +1,76 @@
+{
+  "id": "evia",
+  "slug": "evia",
+  "name": "Evia",
+  "type": "island",
+  "coordinates": { "lat": 38.5, "lng": 23.9 },
+  "scores": {
+    "family": { "value": 7, "reason": "Beaches like Agia Anna and Pefki, calm atmosphere, easy access from Athens" },
+    "couples": { "value": 8, "reason": "Hidden coves in the south, romantic thermal springs in Edipsos, quiet mountain villages" },
+    "nightlife": { "value": 5, "reason": "Vibrant in Chalkida, calm elsewhere" },
+    "food": { "value": 9, "reason": "Local figs, mountain honey, fresh seafood, excellent mountain tavernas" },
+    "beaches": { "value": 8, "reason": "Diverse range: Chiliadou, Agia Anna, remote southern coves" },
+    "walking": { "value": 9, "reason": "Dirfys mountain hiking, Dimosari Gorge, forest paths" }
+  },
+  "content": {
+    "quick_summary": {
+      "en": "Greece's second-largest island—a land of wild mountains, thermal springs, and untouched beaches, offering a raw and authentic escape just a bridge-crossing from Athens.",
+      "el": "Το δεύτερο μεγαλύτερο νησί της Ελλάδας—ένας τόπος με άγρια βουνά, ιαματικές πηγές και ανέγγιχτες παραλίες, προσφέροντας μια αυθεντική απόδραση μόλις μια γέφυρα μακριά από την Αθήνα."
+    },
+    "pros": [
+      "Diverse landscape—from lush pine forests in the north to rugged, arid beauty in the south",
+      "Authentic, un-touristed atmosphere—the 'local's choice'",
+      "Easy access—connected to the mainland by bridge in Chalkida",
+      "Exceptional variety of beaches—organized and wild, sandy and pebbled",
+      "World-class thermal springs in Edipsos",
+      "Excellent hiking and nature exploration"
+    ],
+    "cons": [
+      "Large size requires long driving times",
+      "Can get very crowded in Chalkida on weekends",
+      "Some of the most beautiful remote beaches require driving on dirt roads",
+      "Not a traditional 'party island' destination"
+    ],
+    "insider_tips": [
+      "Cross the bridge at Chalkida on a weekday to avoid major traffic",
+      "Explore Mount Dirfys and the Dimosari Gorge for the best nature experiences",
+      "Visit the seaside hot springs in Edipsos for a unique wellness experience",
+      "Take time to discover the remote, unnamed beaches in the south",
+      "Try local figs and mountain honey, they are exceptional",
+      "Pick one region (North, Central, or South) to explore deeply rather than rushing the whole island"
+    ],
+    "mistakes_to_avoid": [
+      "Rushing to see the whole island in two days—you'll spend your time in the car",
+      "Skipping the local mountain tavernas in favor of resort food",
+      "Visiting popular beaches on peak August weekends if you hate crowds",
+      "Underestimating the driving distances between regions",
+      "Assuming all beaches are easily accessible by sedan"
+    ]
+  },
+  "pricing_base": {
+    "budget_daily": 40,
+    "mid_daily": 75,
+    "luxury_daily": 180
+  },
+  "seasonality": {
+    "january": { "temp": 9, "price_multiplier": 0.5 },
+    "february": { "temp": 10, "price_multiplier": 0.5 },
+    "march": { "temp": 13, "price_multiplier": 0.6 },
+    "april": { "temp": 17, "price_multiplier": 0.7 },
+    "may": { "temp": 22, "price_multiplier": 0.9 },
+    "june": { "temp": 27, "price_multiplier": 1.1 },
+    "july": { "temp": 30, "price_multiplier": 1.3 },
+    "august": { "temp": 30, "price_multiplier": 1.4 },
+    "september": { "temp": 26, "price_multiplier": 1.1 },
+    "october": { "temp": 20, "price_multiplier": 0.8 },
+    "november": { "temp": 15, "price_multiplier": 0.6 },
+    "december": { "temp": 11, "price_multiplier": 0.5 }
+  },
+  "image": "/images/evia-cover.webp",
+  "guideLinks": [
+    {
+      "href": "/hotels/evia",
+      "label": { "en": "Where to Stay in Evia", "el": "Πού να μείνεις στην Εύβοια" }
+    }
+  ]
+}
