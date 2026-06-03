@@ -44,6 +44,7 @@ const STAY22_EMBEDS: Record<string, string> = {
   lefkada: "https://stay22.com/embed/6a1ed6996b16982d6c0e457f",
   evia: "https://stay22.com/embed/6a1ed7c4105a99849371700a",
   kos: "https://stay22.com/embed/6a1ee1c66b16982d6c0e8775",
+  lemnos: "https://stay22.com/embed/6a201d9f7ae5f4b0fa298dd1",
 };
 
 const HOTEL_NAMES: Record<string, string[]> = {
@@ -74,6 +75,7 @@ const HOTEL_NAMES: Record<string, string[]> = {
   patras: ["Byzantine Hotel", "Astir Hotel Patras", "Maison Grecque Boutique Hotel", "Porto Rio Hotel & Casino", "Achaia Beach", "Poseidon Hotel Aigio", "Delfinia Hotel Akrata", "Europa Hotel Olympia", "Hotel Olympia Palace", "Neda Hotel", "Akti Hotel Nafpaktos", "Nafpaktos Residence"],
   kalamata: ["Filoxenia Hotel", "Pharae Palace Hotel", "Haikos Hotel", "Elite Hotel Kalamata", "Kastro Boutique Hotel", "Kalamitsi Hotel", "Anniska & Lino Houses", "Elies Resort", "Stoupa Beach Hotel", "Mani Gate Hotel", "The Romanos, a Luxury Collection Resort, Costa Navarino", "The Romanos", "The Westin Resort Costa Navarino", "Zoe Hotel Pylos", "Zante Maris Navarino", "Ithomi Hotel, Mavromati"],
   thassos: ["Hotel Timoleon", "Thassian Waves", "Aethria Hotel", "Mythic Coast Hotel", "Golden Beach Hotel", "Villa Cactus", "Porto Thassos Hotel", "Astris Beach Hotel", "Limenaria Beach Hotel", "Archontiko Theologos"],
+  lemnos: ["Myrina Castle Hotel", "Porto Myrina Palace", "Lemnos Village Resort", "Lemnos Beach Hotel", "Afrodite Hotel", "Ilio Maris Hotel", "Lemnos Inn", "Pergamontas Village", "Varos Village Hotel"],
   skiathos: ["Bourtzi Boutique Hotel", "Alkyon Hotel", "Hotel Mato", "Skiathos Palace Hotel", "Pension Pandora", "San Stefano Hotel", "Atrium Hotel", "Esperides Beach Hotel", "Skiathos Princess Hotel", "Troulos Bay Hotel", "Mandraki Village", "Koukounaries Hotel", "Skiathos Sage Hotel", "Aegean Suites Hotel", "Paradise Hotel Skiathos", "Kanapitsa Mare Hotel"],
 };
 

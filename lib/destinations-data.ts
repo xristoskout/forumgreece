@@ -944,7 +944,13 @@ export const destinations: Destination[] = [
         en: "Complete guide to Lemnos island: the best beaches, villages like Myrina and Plati, local food (Muscat wine, Kalathaki cheese, seafood), ancient sites, and practical tips.",
         el: "Πλήρης οδηγός για τη Λήμνο: καλύτερες παραλίες, χωριά, τοπική γαστρονομία (Μοσχάτο, Καλαθάκι), αρχαιολογικοί χώροι και πρακτικές συμβουλές."
       }
-    }
+    },
+    guideLinks: [
+      {
+        href: "/hotels/lemnos",
+        label: { en: "Where to Stay in Lemnos", el: "Πού να μείνεις στη Λήμνο" }
+      }
+    ]
   },
   {
     slug: "kalamata",
