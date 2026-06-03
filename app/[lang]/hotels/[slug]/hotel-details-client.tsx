@@ -45,7 +45,7 @@ const STAY22_EMBEDS: Record<string, string> = {
   evia: "https://stay22.com/embed/6a1ed7c4105a99849371700a",
   kos: "https://stay22.com/embed/6a1ee1c66b16982d6c0e8775",
   lemnos: "https://stay22.com/embed/6a201d9f7ae5f4b0fa298dd1",
-  syros: "https://stay22.com/embed/6a203e5aa2b04b68733e1c4d",
+  syros: "https://stay22.com/embed/6a2030c13f80a50cb3c16e4e",
 };
 
 const HOTEL_NAMES: Record<string, string[]> = {
