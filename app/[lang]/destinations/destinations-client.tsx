@@ -152,6 +152,17 @@ export default function DestinationsClient({
         </div>
       </section>
 
+      {/* ── Intro text ── */}
+      <section className="bg-white border-b border-slate-200">
+        <div className="max-w-4xl mx-auto px-6 py-12 text-center">
+          <p className="text-slate-600 leading-relaxed max-w-2xl mx-auto">
+            {lang === "el"
+              ? "Η Ελλάδα έχει πάνω από 200 κατοικημένα νησιά και μια ηπειρωτική ενδοχώρα γεμάτη αρχαίες πόλεις, βουνά και γραφικές ακτές. Από τις Κυκλάδες και τα Ιόνια μέχρι την Κρήτη, την Πελοπόννησο και τη Βόρεια Ελλάδα — κάθε περιοχή έχει τον δικό της χαρακτήρα. Περίγραψε παρακάτω για να βρεις τον προορισμό που σου ταιριάζει."
+              : "Greece has over 200 inhabited islands and a mainland filled with ancient cities, mountains and scenic coasts. From the Cyclades and the Ionian islands to Crete, the Peloponnese and Northern Greece — each region has its own character. Browse below to find the destination that matches your travel style."}
+          </p>
+        </div>
+      </section>
+
       {/* ── Regions ── */}
       <div className="max-w-7xl mx-auto px-6 py-16 space-y-24">
         {activeRegions.map((region) => {
