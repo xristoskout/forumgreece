@@ -3021,87 +3021,91 @@ export const hotels: HotelCard[] = [
     place: "Syros — Cyclades",
     badge: "New guide",
     info: {
-      en: "Choosing where to stay in Syros is refreshingly simple: stay in Ermoupoli for the city experience, or on the west coast for the beaches. The question is which version of Syros you want to wake up to.",
-      el: "Η επιλογή διαμονής στη Σύρο είναι απλή: μείνε στην Ερμούπολη για την πόλη ή στη δυτική ακτή για τις παραλίες."
+      en: "Syros is unlike any other Cycladic island — neoclassical in spirit, Catholic in its hilltop history, and genuinely lived-in year-round. Choosing where to stay here is a choice between grandeur and intimacy, culture and coast.",
+      el: "Η Σύρος είναι διαφορετική από κάθε άλλο νησί των Κυκλάδων — νεοκλασική, καθολική στην ιστορία της και ζωντανή όλο τον χρόνο. Η επιλογή διαμονής είναι επιλογή ανάμεσα σε μεγαλείο και οικειότητα."
     },
     image: "/images/syros-cover.webp",
     overview: {
-      en: "Syros is the island that surprises you — and then keeps you coming back. Its capital, Ermoupoli, is a fully functioning Greek city with a grand neoclassical waterfront, a marble-paved central square, and an opera house modelled on La Scala. The accommodation on Syros ranges from elegant neoclassical guesthouses in Ermoupoli to seaside apartments in Galissas and Kini — but the choice is not overwhelming, and the quality is consistently high.",
-      el: "Η Σύρος σε εκπληκτιάζει. Η Ερμούπολη είναι μια πλήρως λειτουργική ελληνική πόλη. Τα καταλύματα κυμαίνονται από νεοκλασικούς ξενώνες έως διαμερίσματα δίπλα στη θάλασσα."
+      en: "Syros is the administrative capital of the Cyclades — a fact that shapes everything about it. This is not a mass-tourism island, and it does not try to be. What it offers instead is something rarer: a genuine Greek city with a magnificent neoclassical waterfront, two medieval hilltop settlements, a working port, a year-round cultural calendar, and a coastline of small, quiet beaches. Choosing where to stay in Syros is less about finding the right resort and more about deciding which version of the island speaks to you — the urban elegance of Ermoupoli, the medieval intimacy of Ano Syros, the relaxed beach rhythm of Galissas, or the golden-hour stillness of Kini.",
+      el: "Η Σύρος είναι η διοικητική πρωτεύουσα των Κυκλάδων — ένα γεγονός που καθορίζει τα πάντα. Αυτό δεν είναι ένα νησί μαζικού τουρισμού. Προσφέρει μια αυθεντική ελληνική πόλη με νεοκλασικό παραλιακό μέτωπο, δύο μεσαιωνικούς οικισμούς και ήσυχες παραλίες."
     },
     description: {
-      en: "Syros is the island that surprises you — and then keeps you coming back. Its capital, Ermoupoli, is a fully functioning Greek city with a grand neoclassical waterfront, a marble-paved central square, and an opera house modelled on La Scala. Accommodation ranges from elegant neoclassical guesthouses to seaside apartments.",
-      el: "Η Σύρος σε εκπληκτιάζει. Η Ερμούπολη είναι μια πλήρως λειτουργική ελληνική πόλη. Τα καταλύματα ποικίλλουν."
+      en: "Syros is the administrative capital of the Cyclades — a fact that shapes everything about it. This is not a mass-tourism island, and it does not try to be. What it offers instead is something rarer: a genuine Greek city with a magnificent neoclassical waterfront, two medieval hilltop settlements — the Catholic Ano Syros and the Orthodox Vrodado — a working port, a year-round cultural calendar, and a coastline of small, quiet beaches that has so far escaped the attention of charter tourism. Choosing where to stay in Syros is less about finding the right resort and more about deciding which version of the island speaks to you — the urban elegance of Ermoupoli, the medieval intimacy of Ano Syros, the relaxed beach rhythm of Galissas, or the golden-hour stillness of Kini. Each area offers a fundamentally different experience of the same island.",
+      el: "Η Σύρος είναι η διοικητική πρωτεύουσα των Κυκλάδων. Προσφέρει μια αυθεντική ελληνική πόλη με νεοκλασικό παραλιακό μέτωπο, δύο μεσαιωνικούς οικισμούς και ήσυχες παραλίες."
     },
     features: {
       en: [
-        "Ermoupoli (City Life & Culture)",
-        "Galissas (Family Beach)",
-        "Kini (Fishing Village & Sunsets)",
-        "Vari & Megas Gialos (South Coast)",
-        "Delfini (Remote Cove)"
+        "Ermoupoli (Capital & Culture)",
+        "Ano Syros (Medieval & Panoramic)",
+        "Galissas (Beach & Families)",
+        "Kini (Sunset Village)",
+        "Posidonia & South (Villas & Privacy)"
       ],
       el: [
-        "Ερμούπολη (Πόλη & Πολιτισμός)",
-        "Γαλησσάς (Οικογενειακή Παραλία)",
+        "Ερμούπολη (Πρωτεύουσα & Πολιτισμός)",
+        "Άνω Σύρος (Μεσαιωνική & Πανοραμική)",
+        "Γαλησσάς (Παραλία & Οικογένειες)",
         "Κίνι (Ψαροχώρι & Ηλιοβασιλέματα)",
-        "Βαρή & Μέγας Γιαλός (Νότια Ακτή)",
-        "Δελφίνι (Απομονωμένος Όρμος)"
+        "Ποσειδώνια & Νότια (Βίλες & Ησυχία)"
       ]
     },
     sections: [
       {
-        title: { en: "1. Ermoupoli — City Life, Neoclassical Architecture & the Best Dining", el: "1. Ερμούπολη — Πόλη, Νεοκλασική Αρχιτεκτονική & Φαγητό" },
+        title: { en: "1. Ermoupoli — The Neoclassical Capital", el: "1. Ερμούπολη — Η Νεοκλασική Πρωτεύουσα" },
         content: {
-          en: "Ermoupoli is the capital of the Cyclades and the natural choice for any visitor who wants to experience Syros as a living city rather than a beach destination. The accommodation options are concentrated around the port, Miaouli Square, and the Vaporia neighbourhood.\n\nHotels and guesthouses here range from restored 19th-century neoclassical mansions to modern boutique hotels. The seafront properties on the port have the best views. The old town quarter behind the port has quieter, more characterful options at lower prices.\n\nStay in Ermoupoli if... you want the finest dining on the island, evening square life, cultural attractions, and ferry convenience within walking distance. This is the base that gives you the fullest Syros experience.\n\n💡 Area tip: Miaouli Square at 9pm on a summer evening is one of the most cinematic scenes in Greece.",
-          el: "Η Ερμούπολη είναι η πρωτεύουσα των Κυκλάδων. Τα καταλύματα κυμαίνονται από νεοκλασικές επαύλεις έως μοντέρνα boutique ξενοδοχεία. Μείνε εδώ αν θέλεις το καλύτερο φαγητό, βραδινή ζωή και πολιτισμό."
+          en: "Ermoupoli is the most architecturally distinguished city in the Cyclades and one of the finest examples of neoclassical urban planning in all of Greece. Built rapidly in the 19th century by merchants from Chios and Psara, it has a civic self-confidence rare among Greek island towns — a cathedral-fronted plateia that would feel at home in Naples, marble-paved squares lined with neoclassical mansions, a covered market, a working port, and a cultural life that continues long after summer ends.\n\nStaying in Ermoupoli means being at the heart of everything: the port arrivals, the evening volta, the best restaurants, the music. The best hotels here occupy restored neoclassical buildings — high ceilings, tiled floors, wrought-iron balconies. The centre of gravity is Plateia Miaouli, flanked by the Town Hall and cafés that have been serving loukoumades since the island's commercial heyday. The upper neighbourhoods — Vaporia and the old merchant quarter — are quieter and reward those willing to walk.\n\nStrengths: Best dining and café scene, year-round energy, direct ferry access, exceptional architecture.\nConsiderations: No beach — closest is 5–10 minutes by bus, port noise at arrivals.\nTypes of stay: Restored neoclassical mansions, boutique city hotels, apartments in Vaporia.\n\n💡 Area tip: Plateia Miaouli at 9pm on a summer evening — marble glowing, cafés buzzing, half the island present — is one of the most naturally cinematic scenes in Greece.",
+          el: "Η Ερμούπολη είναι η πιο αρχιτεκτονικά διακεκριμένη πόλη των Κυκλάδων. Χτισμένη τον 19ο αιώνα από εμπόρους, έχει νεοκλασικές πλατείες, σκεπαστή αγορά και πολιτιστική ζωή όλο τον χρόνο. Μείνε εδώ για τα καλύτερα εστιατόρια, τη βραδινή ζωή και τον πολιτισμό."
         }
       },
       {
-        title: { en: "2. Galissas — The Best Family Beach on Syros", el: "2. Γαλησσάς — Η Καλύτερη Οικογενειακή Παραλία" },
+        title: { en: "2. Ano Syros — The Medieval Catholic Hilltop", el: "2. Άνω Σύρος — Ο Μεσαιωνικός Καθολικός Λόφος" },
         content: {
-          en: "Galissas is the most popular beach on the island — a wide, shallow sandy bay on the west coast with clear turquoise water, organised facilities, and a lively taverna scene. It is well-connected to Ermoupoli by bus.\n\nAccommodation consists of apartments, studios and small hotels within walking distance of the beach. Most are mid-range family properties with pools.\n\nStay in Galissas if... you want a beach-first holiday with the best facilities on the island, easy access to Ermoupoli for evenings, and safe swimming for children.\n\n💡 Area tip: Walk 10 minutes over the headland north of Galissas to reach Armeos beach — small, rocky, and almost completely quiet.",
-          el: "Ο Γαλησσάς είναι η πιο δημοφιλής παραλία — φαρδιά, ρηχή, με τιρκουάζ νερά. Καταλύματα σε κοντινή απόσταση. Μείνε εδώ αν θέλεις διακοπές παραλίας."
+          en: "Ano Syros is the older of the island's two hilltop settlements — a medieval Catholic town founded during Venetian rule, crowned by the Cathedral of San Giorgio and a network of narrow stone paths that have changed very little since the 13th century. It sits directly above Ermoupoli with views that make the Aegean feel vast and the other islands small on the horizon.\n\nStaying in Ano Syros is a commitment to intimacy over convenience. There are few hotels — mostly small guesthouses and renovated stone houses — and daily life involves steep paths, stone stairs, and limited vehicle access. In return, you get silence after dark, a medieval streetscape free of tourist infrastructure, and the particular quality of life of a settlement continuously inhabited for eight centuries.\n\nStrengths: Finest views on the island, authentic medieval character, very quiet.\nConsiderations: Steep paths, very limited accommodation, no restaurants at night within walking distance.\nTypes of stay: Renovated stone houses, small family guesthouses.\n\n💡 Area tip: The northern edge of Ano Syros, past the main tourist circuit, has the most authentic section — inhabited houses, drying laundry, no café in sight.",
+          el: "Η Άνω Σύρος είναι ο παλαιότερος μεσαιωνικός οικισμός, με το καθεδρικό ναό του Αγίου Γεωργίου και στενά πέτρινα μονοπάτια. Μείνε εδώ για την καλύτερη θέα και τη μεσαιωνική ατμόσφαιρα."
         }
       },
       {
-        title: { en: "3. Kini — Fishing Village Charm & Sunset Views", el: "3. Κίνι — Ψαροχώρι & Ηλιοβασιλέματα" },
+        title: { en: "3. Galissas — The Main Beach Village", el: "3. Γαλησσάς — Το Παραθαλάσσιο Χωριό" },
         content: {
-          en: "Kini is a small fishing village beach on the northwest coast, with traditional boats drawn up on the sand, excellent seafood tavernas, and some of the best sunsets on the island. Narrower than Galissas but with more character.\n\nAccommodation is limited — mostly rooms and small apartments above the tavernas. There is a genuinely local atmosphere even in July.\n\nStay in Kini if... you want sunset dinners by the water, a fishing village atmosphere, and a base that feels genuinely Greek.\n\n💡 Area tip: Kini faces almost due west — the sunset here, with fishing boats silhouetted against orange sky, is one of the finest in the Cyclades.",
-          el: "Το Κίνι είναι ένα μικρό ψαροχώρι με εξαιρετικές ταβέρνες και ηλιοβασιλέματα. Μικρά καταλύματα. Μείνε εδώ αν θέλεις αυθεντική ατμόσφαιρα."
+          en: "Galissas has the best and most accessible beach on Syros — a wide arc of fine sand on the west coast, sheltered by low hills and backed by a compact village of tavernas, rooms-to-let and small hotels. It is the closest thing on Syros to a conventional beach resort, though without the beach bar culture or package-tourism infrastructure. What there is instead is a genuinely pleasant family beach, calm clear water, a handful of good fish tavernas, and a bus connection to Ermoupoli running frequently enough to make day trips effortless.\n\nThe village has the unpretentious, sun-bleached feel of a Greek beach settlement that exists for Greeks rather than international tourism. Accommodation ranges from simple rooms above tavernas to small three-star hotels with pools, and prices remain notably lower than comparable beach villages on Mykonos or Paros.\n\nStrengths: Best beach on the island — wide, sandy, calm. Good value, regular buses to Ermoupoli.\nConsiderations: Crowded in peak July–August, limited evening entertainment.\nTypes of stay: Small beach hotels with pools, studios and apartments.\n\n💡 Area tip: Walk 10 minutes over the headland north of Galissas to reach Armeos beach — small, rocky, and almost completely quiet.",
+          el: "Ο Γαλησσάς έχει την καλύτερη παραλία — φαρδιά, αμμώδης, με ήρεμα νερά. Ιδανικός για οικογένειες, με καλές ταβέρνες και λεωφορείο για την Ερμούπολη."
         }
       },
       {
-        title: { en: "4. Vari & Megas Gialos — The South Coast Option", el: "4. Βαρή & Μέγας Γιαλός — Νότια Ακτή" },
+        title: { en: "4. Kini — The Fishing Village Sunset Base", el: "4. Κίνι — Το Ψαροχώρι με τα Ηλιοβασιλέματα" },
         content: {
-          en: "The south coast of Syros offers a different character: larger beaches, more tourist infrastructure, and quieter evenings. Vari is the main organised beach with shallow water and good facilities. Megas Gialos is a double bay with clear water and fine sand.\n\nAccommodation here includes larger hotels and apartments, some with pools. The area is popular with Greek families from Ermoupoli.\n\nStay here if... you want a reliable beach base with full amenities, don't mind a 15-minute drive to Ermoupoli for dining, and prefer organised beaches.",
-          el: "Η νότια ακτή προσφέρει μεγαλύτερες παραλίες και περισσότερες υποδομές. Μείνε εδώ αν θέλεις οργανωμένες παραλίες."
+          en: "Kini is a small fishing village on the northwest coast with a sheltered pebble-and-sand beach and the best sunset views on the island. It lacks Galissas's sandy expanse and Ermoupoli's civic grandeur, but it has something both lack: the unhurried quality of a Greek village still primarily a fishing community rather than a tourist destination. The harbour is small, the tavernas face the sea, and on summer evenings locals outnumber visitors.\n\nAccommodation is limited to a handful of small hotels and apartments, which keeps it genuinely quiet. Kini is a natural base for travellers who want tranquillity, sunsets, and simple pleasures — a morning swim, lunch at a harbourside table — while remaining close enough to Ermoupoli for day-trip culture.\n\nStrengths: Best sunsets on Syros, authentic fishing village, genuinely quiet, excellent seafood.\nConsiderations: Very few accommodation options, beach is modest compared to Galissas.\nTypes of stay: Small family hotels, self-catering apartments, rooms near the harbour.\n\n💡 Area tip: Stay for the sunset. Kini faces almost due west — fishing boats silhouetted against orange sky with the smell of grilling fish from the tavernas behind you.",
+          el: "Το Κίνι είναι ένα μικρό ψαροχώρι με τα καλύτερα ηλιοβασιλέματα. Μικρά καταλύματα, εξαιρετικό ψάρι. Μείνε εδώ για ηρεμία και αυθεντική ατμόσφαιρα."
         }
       },
       {
-        title: { en: "5. Delfini — A Remote Beauty for the Adventurous", el: "5. Δελφίνι — Απομονωμένη Ομορφιά" },
+        title: { en: "5. Posidonia & the South Coast — Villas, Summer Estates & Quiet Coves", el: "5. Ποσειδώνια & Νότια — Βίλες & Ησυχία" },
         content: {
-          en: "Delfini is one of the most beautiful and least-visited beaches on Syros — a remote pebble cove in the northwest, reached by a rough track. Deep blue water, dramatic rock formations, and typically no more than a handful of people even in August. A car with some ground clearance is helpful.\n\nThere is no accommodation at Delfini itself — stay in Ermoupoli or Kini and drive out for the day.",
-          el: "Το Δελφίνι είναι ένα από τα ομορφότερα ανεξερεύνητα σημεία. Χρειάζεται αυτοκίνητο. Δεν υπάρχει διαμονή — μείνε σε Ερμούπολη ή Κίνι."
+          en: "The south of Syros is dominated by Posidonia (Dellagrazia) — a village of 19th-century neoclassical summer villas built by the island's wealthy merchant families. This is not a resort but a residential area of remarkable architectural quality, where large country houses with gardens and tall shuttered windows line the coastal roads above small pebble beaches. The area has a secluded, unhurried character that suits those looking for privacy and independence.\n\nBeyond Posidonia, the south coast extends through a series of small coves — Megas Gialos, Finikas, Vari — each with its own beach, taverna and modest accommodation. Vari has a wide, calm bay suited to families. Finikas has a small marina and a seafront promenade that fills with locals on summer evenings.\n\nStrengths: Privacy and space, unique neoclassical villa architecture, multiple quiet coves.\nConsiderations: Own transport essential, 30 minutes to Ermoupoli, very limited dining nearby.\nTypes of stay: Neoclassical villa rentals, private houses with gardens, small hotels at Vari & Finikas.\n\n💡 Area tip: The headland east of Vari has small rocky coves effectively deserted even when the main beach is busy. Bring water shoes.",
+          el: "Η Ποσειδώνια έχει νεοκλασικές βίλες του 19ου αιώνα. Η νότια ακτή έχει μικρούς όρμους — Μέγας Γιαλός, Φοίνικας, Βαρή. Ιδανική για όσους θέλουν ησυχία και ιδιωτικότητα."
         }
       }
     ],
     faq: [
       {
-        q: { en: "Which area is best for first-time visitors?", el: "Ποια περιοχή είναι καλύτερη για πρώτη φορά;" },
-        a: { en: "Ermoupoli — neoclassical architecture, the best restaurants, ferry convenience, and the full Syros experience. Add a day trip to Galissas for the beach.", el: "Ερμούπολη — νεοκλασική αρχιτεκτονική, καλύτερα εστιατόρια, εύκολες συνδέσεις." }
-      },
-      {
-        q: { en: "Which area is best for families with children?", el: "Ποια περιοχή είναι καλύτερη για οικογένειες;" },
-        a: { en: "Galissas — shallow, calm, safe water with the best beach infrastructure on the island.", el: "Γαλησσάς — ρηχά, ήρεμα νερά και οι καλύτερες υποδομές." }
-      },
-      {
-        q: { en: "Which area is best for couples?", el: "Ποια περιοχή είναι καλύτερη για ζευγάρια;" },
-        a: { en: "Ermoupoli for atmosphere and dining. Kini for sunset dinners and a fishing village setting.", el: "Ερμούπολη για ατμόσφαιρα. Κίνι για ηλιοβασιλέματα και ψαροχώρι." }
+        q: { en: "Is Syros a good alternative to Mykonos or Paros?", el: "Είναι η Σύρος καλή εναλλακτική για Μύκονο ή Πάρο;" },
+        a: { en: "Yes — and for a particular kind of traveller, it is the better choice. Syros offers cultural depth, architectural character and authentic Greek life that neither Mykonos nor Paros can match. It lacks the famous beaches, but its neoclassical capital is without rival in the Cyclades. Ferries between Syros and Mykonos or Paros take under an hour.", el: "Ναι — προσφέρει πολιτιστικό βάθος και αυθεντική ζωή. Η νεοκλασική πρωτεύουσά της είναι αξεπέραστη." }
       },
       {
         q: { en: "Do I need a car in Syros?", el: "Χρειάζομαι αυτοκίνητο στη Σύρο;" },
-        a: { en: "Not if you stay in Ermoupoli and use the bus to Galissas. A car is needed for Kini, Delfini, and the interior villages.", el: "Όχι αν μείνεις στην Ερμούπολη. Χρειάζεται για Κίνι και Δελφίνι." }
+        a: { en: "If you are staying in Ermoupoli, no — it is compact, walkable and connected by bus to the main beaches. For Posidonia, the south coast or Ano Syros, a rental car makes a significant difference.", el: "Όχι αν μείνεις στην Ερμούπολη. Για Ποσειδώνια ή Άνω Σύρο χρειάζεται αυτοκίνητο." }
+      },
+      {
+        q: { en: "When is the best time to stay in Syros?", el: "Πότε είναι η καλύτερη εποχή για Σύρο;" },
+        a: { en: "May, June and September offer the best combination of good weather, open facilities and manageable crowds. Unlike most Greek islands, Syros is genuinely worth visiting in winter — the Carnival in February is one of Greece's most exuberant.", el: "Μάιος, Ιούνιος και Σεπτέμβριος. Η Σύρος αξίζει και τον χειμώνα — το Καρναβάλι είναι μοναδικό." }
+      },
+      {
+        q: { en: "Is Syros suitable for families?", el: "Είναι η Σύρος κατάλληλη για οικογένειες;" },
+        a: { en: "Yes — especially for families who value culture alongside beach time. Galissas and Vari have calm, safe beaches for children. Ermoupoli is comfortable for families with good restaurants and a central square.", el: "Ναι — οι παραλίες Γαλησσάς και Βαρή είναι ασφαλείς για παιδιά." }
+      },
+      {
+        q: { en: "What makes Syros different from other Cycladic islands?", el: "Τι κάνει τη Σύρο διαφορετική;" },
+        a: { en: "Two things. First, Ermoupoli: a real 19th-century city with architectural grandeur found nowhere else in the Cyclades. Second, its year-round life: as administrative capital, Syros functions normally in winter. It also has a Catholic community in Ano Syros — a legacy of Venetian rule — giving the island a dual cultural identity unique in the Aegean.", el: "Η Ερμούπολη είναι μοναδική και η Σύρος ζει όλο τον χρόνο. Η Καθολική κοινότητα της Άνω Σύρου δίνει διπλή ταυτότητα." }
       }
     ],
     seo: {
@@ -3110,9 +3114,9 @@ export const hotels: HotelCard[] = [
         el: "Πού να Μείνεις στη Σύρο — Καλύτερες Περιοχές & Ξενοδοχεία | GoGreeceNow"
       },
       description: {
-        en: "Find the best areas to stay in Syros: Ermoupoli for city life and culture, Galissas for family beaches, Kini for sunset dining, or the south coast for organised beach holidays. Complete hotel area guide.",
-        el: "Βρες τα καλύτερα μέρη για διαμονή στη Σύρο: Ερμούπολη, Γαλησσάς, Κίνι, Βαρή. Πλήρης οδηγός διαμονής."
+        en: "Find the best areas to stay in Syros: Ermoupoli for neoclassical grandeur, Ano Syros for medieval views, Galissas for family beaches, Kini for sunset dining, or Posidonia for villa privacy. Complete hotel area guide.",
+        el: "Βρες τα καλύτερα μέρη για διαμονή στη Σύρο: Ερμούπολη, Άνω Σύρος, Γαλησσάς, Κίνι, Ποσειδώνια. Πλήρης οδηγός διαμονής."
       }
     }
-  }
+  },
 ];
