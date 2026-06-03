@@ -459,6 +459,12 @@ export const destinations: Destination[] = [
       en: ["Ermoupoli neoclassical architecture", "Ano Syros medieval labyrinth", "Halvadopites & loukoumades", "Galissas & Kini beaches", "Year-round destination"],
       el: ["Ερμούπολη νεοκλασική αρχιτεκτονική", "Άνω Σύρος μεσαιωνικός λαβύρινθος", "Χαλβαδόπιτες & λουκουμάδες", "Παραλίες Γαλησσάς & Κίνι", "Προορισμός όλο τον χρόνο"]
     },
+    guideLinks: [
+      {
+        href: "/hotels/syros",
+        label: { en: "Where to Stay in Syros", el: "Πού να μείνεις στη Σύρο" }
+      }
+    ],
     featured: true,
     seo: {
       title: {

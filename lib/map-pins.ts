@@ -236,7 +236,7 @@ export const MAP_PINS: Pin[] = [
   },
   {
     id: "syros",
-    x: 79.5, y: 62.5,
+    x: 57.8, y: 56.4,
     href: "/destinations/syros",
     label: { en: "Syros", el: "Σύρος" },
     tagline: { en: "Capital of the Cyclades", el: "Πρωτεύουσα των Κυκλάδων" },

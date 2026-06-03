@@ -267,6 +267,61 @@ export default function DestinationDetailsClient({
                 </div>
               </Link>
             ))}
+            {(() => {
+              const sections = destinationSections[slug] || [];
+              const hasBeaches = sections.some((s: any) =>
+                (s.title?.en || "").toLowerCase().includes("beach")
+                || (s.title?.el || "").toLowerCase().includes("παραλ")
+              );
+              const hasThings = sections.some((s: any) => {
+                const en = (s.title?.en || "").toLowerCase();
+                const el = (s.title?.el || "").toLowerCase();
+                return en.includes("things to do") || en.includes("top attractions") || en.includes("why visit")
+                    || el.includes("πράγματα να κάν") || el.includes("αξιοθέατ");
+              });
+              return (
+                <>
+                  {hasBeaches && (
+                    <Link
+                      href={withLang(`/guides/${slug}/best-beaches`)}
+                      className="animate-float group flex items-center gap-4 rounded-3xl bg-cyan-600/90 px-6 py-5 shadow-lg backdrop-blur-md border border-cyan-400/50 transition-all duration-300 hover:bg-cyan-500 hover:border-cyan-300 hover:-translate-y-1 hover:shadow-2xl"
+                      style={{ animationDelay: ((destination.highlights[lang].length + (destination.guideLinks?.length || 0)) * 0.2) + "s" }}
+                    >
+                      <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white/20 text-white transition-transform duration-300 group-hover:translate-x-1 drop-shadow-md shadow-inner">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
+                      </div>
+                      <div className="flex flex-col">
+                        <span className="text-xs font-semibold text-cyan-100 uppercase tracking-wider mb-0.5">
+                          {lang === "en" ? "Beach Guide" : "Οδηγός Παραλιών"}
+                        </span>
+                        <h3 className="text-xl font-bold tracking-tight text-white">
+                          {lang === "en" ? `Best Beaches in ${destination.name}` : `Καλύτερες Παραλίες στο ${destination.name}`}
+                        </h3>
+                      </div>
+                    </Link>
+                  )}
+                  {hasThings && (
+                    <Link
+                      href={withLang(`/guides/${slug}/things-to-do`)}
+                      className="animate-float group flex items-center gap-4 rounded-3xl bg-amber-600/90 px-6 py-5 shadow-lg backdrop-blur-md border border-amber-400/50 transition-all duration-300 hover:bg-amber-500 hover:border-amber-300 hover:-translate-y-1 hover:shadow-2xl"
+                      style={{ animationDelay: ((destination.highlights[lang].length + (destination.guideLinks?.length || 0) + (hasBeaches ? 1 : 0)) * 0.2) + "s" }}
+                    >
+                      <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white/20 text-white transition-transform duration-300 group-hover:translate-x-1 drop-shadow-md shadow-inner">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                      </div>
+                      <div className="flex flex-col">
+                        <span className="text-xs font-semibold text-amber-100 uppercase tracking-wider mb-0.5">
+                          {lang === "en" ? "Activities" : "Δραστηριότητες"}
+                        </span>
+                        <h3 className="text-xl font-bold tracking-tight text-white">
+                          {lang === "en" ? `Things to Do in ${destination.name}` : `Πράγματα να Κάνεις στο ${destination.name}`}
+                        </h3>
+                      </div>
+                    </Link>
+                  )}
+                </>
+              );
+            })()}
             {matchingFood.map((item, idx) => {
               const baseDelay = destination.highlights[lang].length + (destination.guideLinks?.length || 0);
               return (
