@@ -44,7 +44,7 @@ const t = {
   pkg2_feat2_title: { en: "Featured in 1–2 travel guides", el: "Προβολή σε 1–2 ταξιδιωτικούς οδηγούς" },
   pkg2_feat2_desc: { en: "Your business is mentioned inside editorial guides which rank on Google and attract high-intent readers.", el: "Η επιχείρησή σου εμφανίζεται σε editorial οδηγούς που έχουν υψηλή κατάταξη στο Google." },
   pkg2_feat3_title: { en: "Dofollow backlink", el: "Dofollow backlink" },
-  pkg2_feat3_desc: { en: "A real SEO backlink from an established travel domain — typically costs €50–150 from an agency.", el: "Πραγματικό SEO backlink από established travel domain — συνήθως κοστίζει €50–150 από agency." },
+  pkg2_feat3_desc: { en: "A real SEO backlink from an established travel domain.", el: "Πραγματικό SEO backlink από established travel domain." },
   pkg2_feat4_title: { en: "Logo on destination page", el: "Logo στη σελίδα προορισμού" },
   pkg2_feat4_desc: { en: "Your brand mark appears visually on the relevant location page.", el: "Το brand σου εμφανίζεται οπτικά στη σχετική σελίδα προορισμού." },
   pkg3_tier: { en: "Plan 3", el: "Πακέτο 3" },
