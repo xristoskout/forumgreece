@@ -2905,6 +2905,114 @@ export const hotels: HotelCard[] = [
         el: "Βρες την καλύτερη περιοχή για διαμονή στη Θάσο: Λιμένα για ιστορία, Χρυσή Αμμουδιά για οικογένειες, Ποτό για νότια ακτή ή Σκάλα Ραχωνίου για ήσυχες διακοπές. Πλήρης οδηγός διαμονής."
       }
     }
+  },
+  {
+    slug: "lemnos",
+    name: "Where to Stay in Lemnos",
+    place: "Lemnos — North Aegean",
+    badge: "New guide",
+    info: {
+      en: "Choosing where to stay in Lemnos shapes the entire experience on this island — and the choice is less obvious than it first appears. The island is large, varied, and largely undiscovered.",
+      el: "Η επιλογή διαμονής στη Λήμνο καθορίζει ολόκληρη την εμπειρία. Το νησί είναι μεγάλο, ποικιλόμορφο και σε μεγάλο βαθμό ανεξερεύνητο."
+    },
+    image: "/images/lemnos.webp",
+    overview: {
+      en: "Lemnos is one of the most genuinely surprising islands in Greece. It sits in the northeastern Aegean, roughly equidistant from Thessaloniki, Lesvos and the Turkish coast, and it has a profile that does not match expectations: volcanic geology, wide open farmland, a capital town of real character, beaches that deserve far more attention than they receive, and an almost total absence of the mass tourism that has overtaken much of the Aegean.",
+      el: "Η Λήμνος είναι ένα από τα πιο εκπληκτικά νησιά της Ελλάδας. Βρίσκεται στο βορειοανατολικό Αιγαίο με ηφαιστειακή γεωλογία, απέραντους κάμπους, μια πρωτεύουσα με πραγματικό χαρακτήρα και σχεδόν παντελή απουσία μαζικού τουρισμού."
+    },
+    description: {
+      en: "Lemnos is one of the most genuinely surprising islands in Greece. It sits in the northeastern Aegean, roughly equidistant from Thessaloniki, Lesvos and the Turkish coast, and it has a profile that does not match expectations: volcanic geology, wide open farmland, a capital town of real character, beaches that deserve far more attention than they receive, and an almost total absence of the mass tourism that has overtaken much of the Aegean.\n\nThe island is roughly oval in shape with two large bays cutting deep into the coastline — Moudros Bay in the south, one of the largest natural harbours in the Mediterranean, and Pournia Bay in the north. The road network covers the island adequately, though some of the best landscapes and beaches require unpaved tracks. A car is essential for doing Lemnos properly.",
+      el: "Η Λήμνος είναι ένα από τα πιο εκπληκτικά νησιά της Ελλάδας. Βρίσκεται στο βορειοανατολικό Αιγαίο με ηφαιστειακή γεωλογία, απέραντους κάμπους, μια πρωτεύουσα με πραγματικό χαρακτήρα και σχεδόν παντελή απουσία μαζικού τουρισμού."
+    },
+    features: {
+      en: [
+        "Myrina (Capital & Harbour — Best Overall Base)",
+        "Platy & South Coast (Best Beaches)",
+        "Moudros Bay (History & Complete Calm)",
+        "Katalakko & East (Volcanic Landscape & Ancient Sites)",
+        "Gomati & North (Dunes & Wild Coast)",
+        "Car essential — distances are real"
+      ],
+      el: [
+        "Μύρινα (Πρωτεύουσα & Λιμάνι)",
+        "Πλατύ & Νότια Ακτή (Καλύτερες Παραλίες)",
+        "Κόλπος Μούδρου (Ιστορία & Ησυχία)",
+        "Κατάλακκο & Ανατολή (Ηφαιστειακό Τοπίο)",
+        "Γομάτι & Βορράς (Αμμοθίνες & Άγρια Ακτή)"
+      ]
+    },
+    sections: [
+      {
+        title: { en: "Myrina — The Capital, the Castle and the Harbour Life", el: "Μύρινα — Πρωτεύουσα, Κάστρο & Ζωή στο Λιμάνι" },
+        content: {
+          en: "Myrina is the capital, main port and commercial centre of Lemnos, and it is also its most interesting base. The town spreads around a long sandy beach on the west coast, divided into two bays by a headland topped by a Byzantine and Genoese castle. The castle is one of the most dramatic in the Aegean.\n\nHotels here range from small guesthouses in the old town quarter (Apothiki district) to more modern seafront properties on Romeïkos Gialos. The airport is 20 minutes from the capital.\n\nStay in Myrina if... you want the most complete base on the island — harbour, restaurants, archaeology, evening atmosphere. You are arriving by ferry or flying in and want a base with minimal transfer effort. You value having good restaurants and cafés within walking distance.\n\n💡 Area tip: The old quarter behind the harbour — the Apothiki neighbourhood — has narrow lanes, neoclassical houses and a completely different atmosphere from the modern seafront. Guesthouses here have more character than the waterfront hotels and cost noticeably less.",
+          el: "Η Μύρινα είναι η πρωτεύουσα και το εμπορικό κέντρο της Λήμνου. Η πόλη απλώνεται γύρω από μια μακριά αμμώδη παραλία, χωρισμένη σε δύο κόλπους από ένα ακρωτήριο με βυζαντινό κάστρο. Μείνε στη Μύρινα αν θέλεις την πιο ολοκληρωμένη βάση του νησιού."
+        }
+      },
+      {
+        title: { en: "Platy and the South Coast — The Island's Best Beaches, Close to the Capital", el: "Πλατύ & Νότια Ακτή — Οι Καλύτερες Παραλίες" },
+        content: {
+          en: "The beaches immediately south of Myrina — Platy, Thanos, Evgatis and Nevgatis — form the most visited and most organized stretch of coastline on Lemnos. The sand is fine and golden, the water is clear and calm. Platy, just five kilometres from the capital, is the most developed — sunbeds, tavernas and accommodation in the form of studios, apartments and small hotels.\n\nThanos beach, a few minutes further south, is longer, quieter and backed by low dunes. This is the easiest choice for visitors who want a proper beach holiday without sacrificing access to the capital.\n\nStay here if... you want a beach-first holiday with the best sand and water quality on the island. You want easy access to Myrina alongside a quieter overnight base. You are travelling as a couple or family looking for beach amenities without resort-scale infrastructure.\n\n💡 Area tip: Nevgatis beach, at the southern end of this strip, is the least visited and consistently has better water clarity.",
+          el: "Οι παραλίες νότια της Μύρινας — Πλατύ, Θάνος, Ευγατής και Νεύγατης — αποτελούν την πιο οργανωμένη ακτογραμμή της Λήμνου. Χρυσή άμμος, καθαρά νερά. Μείνε εδώ αν θέλεις διακοπές παραλίας με πρόσβαση στην πρωτεύουσα."
+        }
+      },
+      {
+        title: { en: "Moudros and the Bay — WWI History, Working Harbour and Complete Calm", el: "Μούδρος — Ιστορία, Λιμάνι & Απόλυτη Ησυχία" },
+        content: {
+          en: "Moudros is the island's second town and the centre of its largest natural bay — a vast, almost enclosed inlet used as the principal Allied naval base during the Gallipoli campaign of 1915. The Commonwealth War Cemetery above the town is one of the largest in Greece.\n\nThe town is small, unhurried and almost entirely without tourist performance. Waterfront, plateia, tavernas and a genuine sense of everyday Greek island life. Accommodation is limited — mostly rooms and small guesthouses.\n\nStay in Moudros if... you want complete calm and a base that no other tourist is likely to share. You have an interest in WWI history. You want a working-harbour atmosphere without any resort infrastructure.\n\n💡 Area tip: Visit the CWGC Moudros Cemetery in the late afternoon when the light falls across the bay and the headstones.",
+          el: "Ο Μούδρος είναι η δεύτερη πόλη του νησιού. Η τεράστια φυσική του λιμνοθάλασσα χρησιμοποιήθηκε ως βάση των Συμμάχων στην εκστρατεία της Καλλίπολης. Μικρή πόλη, ταβέρνες, αυθεντική νησιωτική ζωή. Μείνε εδώ αν θέλεις απόλυτη ησυχία."
+        }
+      },
+      {
+        title: { en: "Katalakko and the East — Volcanic Landscape and the Ruins of Hephaestia", el: "Κατάλακκο & Ανατολή — Ηφαιστειακό Τοπίο" },
+        content: {
+          en: "The eastern part of Lemnos is the least visited and the most geologically dramatic — black basalt coastlines, collapsed sea caves, and the ruins of ancient Hephaestia, the island's most important ancient city, named for Hephaestus, the god of fire. The site is partially unexcavated, wild, and extraordinary.\n\nAccommodation here is minimal — a handful of rooms in Repanidi and around Katalakko. This is genuinely remote territory. The reward is landscapes that feel nothing like anywhere else in the Aegean.\n\nStay in the east if... you are a repeat visitor or experienced independent traveler. You have a strong interest in ancient Greek history. You want dramatic, volcanic coastline and complete solitude.\n\n💡 Area tip: The Kabeirian sanctuary at Chloi is rarely visited and poorly signposted. It sits on a headland above the sea and the level of preservation makes it the most rewarding archaeological site on the island.",
+          el: "Το ανατολικό τμήμα της Λήμνου είναι το λιγότερο επισκέψιμο και το πιο δραματικό — μαύρες βασαλτικές ακτές και τα ερείπια της αρχαίας Ηφαιστίας. Ελάχιστα καταλύματα. Μείνε εδώ αν ενδιαφέρεσαι για αρχαία ιστορία και ηφαιστειακά τοπία."
+        }
+      },
+      {
+        title: { en: "Gomati and the North — A Dune Landscape Unlike Anything Else in the Aegean", el: "Γομάτι & Βορράς — Αμμοθίνες & Άγρια Ακτή" },
+        content: {
+          en: "The northern coast of Lemnos contains one of the most unexpected landscapes in all of Greece: a dune field — genuine Mediterranean dunes — extending along a long, exposed beach backed by cedar trees. Gomati beach is wild, windy, shallow-watered and entirely without infrastructure.\n\nThe north coast is exposed to the prevailing summer winds — excellent for windsurfing and kitesurfing. Accommodation is very limited.\n\nStay in the north if... you want wild, windswept coastline. You practise windsurfing or kitesurfing. You want the most remote and unpolished part of Lemnos.\n\n💡 Area tip: The dunes at Gomati are best in the morning before the wind builds. The beach is a 15-minute walk from the parking area — the distance keeps it uncrowded.",
+          el: "Η βόρεια ακτή της Λήμνου έχει ένα από τα πιο απροσδόκητα τοπία: αμμοθίνες με κέδρους. Η παραλία Γομάτι είναι άγρια, ανεμώδης και χωρίς υποδομές. Ιδανική για windsurfing."
+        }
+      }
+    ],
+    faq: [
+      {
+        q: { en: "Do I need a car to explore Lemnos?", el: "Χρειάζομαι αυτοκίνητο στη Λήμνο;" },
+        a: { en: "Yes — without question. The island is large, public transport is minimal, and its most rewarding sites require a vehicle. Rent a car from day one.", el: "Ναι — χωρίς αμφιβολία. Το νησί είναι μεγάλο και τα καλύτερα σημεία απαιτούν αυτοκίνητο." }
+      },
+      {
+        q: { en: "How many days do I need in Lemnos?", el: "Πόσες μέρες χρειάζονται στη Λήμνο;" },
+        a: { en: "A minimum of four days, ideally six or seven. The island divides naturally into west coast, south, east and north — each area deserves at least a full day.", el: "Τέσσερις μέρες τουλάχιστον, ιδανικά έξι ή επτά." }
+      },
+      {
+        q: { en: "Which area of Lemnos is best for a first visit?", el: "Ποια περιοχή είναι καλύτερη για πρώτη επίσκεψη;" },
+        a: { en: "Myrina — widest accommodation choice, best restaurants, easiest connections, and within reach of the south coast beaches in under ten minutes.", el: "Μύρινα — η ευρύτερη ποικιλία καταλυμάτων, τα καλύτερα εστιατόρια, εύκολες συνδέσεις." }
+      },
+      {
+        q: { en: "Is Lemnos suitable for families with children?", el: "Είναι η Λήμνος κατάλληλη για οικογένειες;" },
+        a: { en: "Yes, particularly the south coast beaches at Platy and Thanos — shallow, calm, well-sheltered water and enough nearby infrastructure.", el: "Ναι, ειδικά οι παραλίες Πλατύ και Θάνος — ρηχά, ήρεμα νερά με υποδομές." }
+      },
+      {
+        q: { en: "When is the best time to visit Lemnos?", el: "Πότε είναι η καλύτερη εποχή για Λήμνο;" },
+        a: { en: "Late May, June and September offer the best conditions. July and August are popular with Greek domestic tourists.", el: "Τέλη Μαΐου, Ιούνιος και Σεπτέμβριος. Ιούλιος και Αύγουστος έχει Έλληνες επισκέπτες." }
+      },
+      {
+        q: { en: "What makes Lemnos different from other North Aegean islands?", el: "Τι κάνει τη Λήμνο διαφορετική;" },
+        a: { en: "Its scale, variety, and almost total absence of mass tourism. Volcanic origins, Bronze Age settlements older than Mycenae, and WWI Allied history.", el: "Το μέγεθος, η ποικιλία και η απουσία μαζικού τουρισμού. Ηφαιστειακή προέλευση και αρχαία ιστορία." }
+      }
+    ],
+    seo: {
+      title: {
+        en: "Where to Stay in Lemnos — Best Areas & Hotels Guide | GoGreeceNow",
+        el: "Πού να Μείνεις στη Λήμνο — Καλύτερες Περιοχές & Ξενοδοχεία | GoGreeceNow"
+      },
+      description: {
+        en: "Find the best areas to stay in Lemnos: Myrina capital & harbour, Platy south coast beaches, Moudros Bay for history, east coast volcanic landscapes, Gomati dunes. Complete hotel guide.",
+        el: "Βρες τα καλύτερα μέρη για διαμονή στη Λήμνο: Μύρινα, Πλατύ, Μούδρος, Κατάλακκο, Γομάτι. Πλήρης οδηγός ξενοδοχείων."
+      }
+    }
   }
 ];
-
