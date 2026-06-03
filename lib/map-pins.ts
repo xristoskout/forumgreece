@@ -234,4 +234,11 @@ export const MAP_PINS: Pin[] = [
     label: { en: "Kos", el: "Κως" },
     tagline: { en: "History, beaches & cycling", el: "Ιστορία, παραλίες & ποδήλατο" },
   },
+  {
+    id: "syros",
+    x: 79.5, y: 62.5,
+    href: "/destinations/syros",
+    label: { en: "Syros", el: "Σύρος" },
+    tagline: { en: "Capital of the Cyclades", el: "Πρωτεύουσα των Κυκλάδων" },
+  },
 ];

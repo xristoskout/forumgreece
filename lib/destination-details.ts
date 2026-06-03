@@ -590,6 +590,84 @@ export const destinationDetails: Record<string, DestinationDetail> = {
     }
   },
 
+  syros: {
+    overview: {
+      en: "Syros is simultaneously the most cosmopolitan and the most authentic island in the Cyclades — and those two qualities coexist because the city's identity is fundamentally not about tourism. Its capital, Ermoupoli, is a working Greek city with a grand neoclassical waterfront, a marble-paved central square, and the Apollo Theatre modelled on La Scala. The island offers an unexpected richness: Ano Syros with its Catholic cathedral and medieval lanes, quiet beaches along the west and south coasts, and a food culture that produces halvadopites and loukoumades you will remember long after you leave.",
+      el: "Η Σύρος είναι ταυτόχρονα το πιο κοσμοπολίτικο και το πιο αυθεντικό νησί των Κυκλάδων. Η Ερμούπολη είναι μια ζωντανή ελληνική πόλη με νεοκλασικό παραλιακό μέτωπο και το Θέατρο Απόλλων. Η Άνω Σύρος με τον καθολικό καθεδρικό, οι ήσυχες παραλίες και η κουλτούρα του φαγητού συνθέτουν μια μοναδική εμπειρία.",
+    },
+    pageIncludes: {
+      en: [
+        "Ermoupoli architecture, square & port",
+        "Vaporia neoclassical district",
+        "Ano Syros medieval lanes & cathedral",
+        "Best beaches: Galissas, Kini, Delfini, Vari",
+        "Villages: Kini, Poseidonia, Chroussa",
+        "Halvadopites, loukoumades & food culture",
+        "How to get there & ferry connections",
+        "Best time by season including winter",
+        "Honest advice on what to skip",
+        "Practical tips & FAQ",
+      ],
+      el: [
+        "Ερμούπολη: αρχιτεκτονική, πλατεία & λιμάνι",
+        "Βαπόρια: νεοκλασική συνοικία",
+        "Άνω Σύρος: μεσαιωνικά σοκάκια & καθεδρικός",
+        "Καλύτερες παραλίες: Γαλησσάς, Κίνι, Δελφίνι, Βαρή",
+        "Χωριά: Κίνι, Ποσειδωνία, Χρούσσα",
+        "Χαλβαδόπιτες, λουκουμάδες & γαστρονομία",
+        "Πώς να φτάσεις & ακτοπλοϊκές συνδέσεις",
+        "Καλύτερη εποχή ανά σεζόν, συμπεριλαμβανομένου χειμώνα",
+        "Τι να αποφύγεις — ειλικρινής συμβουλή",
+        "Πρακτικές συμβουλές & FAQ",
+      ],
+    },
+    perfectFor: {
+      en: [
+        "Culture & architecture enthusiasts",
+        "Travellers seeking authentic Greek city life",
+        "Families with young children",
+        "Multi-island Cyclades base",
+        "Off-season & winter travel",
+        "Food & sweet shop culture",
+        "Music & arts lovers",
+        "Anyone tired of tourist-only islands",
+      ],
+      el: [
+        "Λάτρεις του πολιτισμού & της αρχιτεκτονικής",
+        "Ταξιδιώτες που αναζητούν αυθεντική ελληνική πόλη",
+        "Οικογένειες με μικρά παιδιά",
+        "Βάση για πολλά νησιά των Κυκλάδων",
+        "Ταξίδι εκτός σεζόν & χειμώνα",
+        "Λάτρεις της γαστρονομίας & των γλυκών",
+        "Λάτρεις της μουσικής & των τεχνών",
+        "Όσοι έχουν κουραστεί από τουριστικά νησιά",
+      ],
+    },
+    honestAdvice: {
+      title: { en: "Honest Advice — What to Skip", el: "Ειλικρινής Συμβουλή — Τι να Αποφύγεις" },
+      alert: {
+        en: "What nobody tells you: Syros is not trying to impress you. It is a real island with a real capital city, and it wears its authenticity more quietly than its neighbours. The summer crowds are gentler, the prices are lower, and the experience is richer for it. But visitors who come expecting a typical beach-resort holiday sometimes find the island's urban character unexpected. Syros is best approached as a cultural destination that happens to also have excellent beaches, rather than the reverse.",
+        el: "Αυτό που δε σου λέει κανείς: Η Σύρος δεν προσπαθεί να σε εντυπωσιάσει. Είναι ένα αληθινό νησί με πραγματική πρωτεύουσα, και φοράει την αυθεντικότητά της πιο ήσυχα από τους γείτονές της. Ο κόσμος το καλοκαίρι είναι πιο ήπιος, οι τιμές πιο χαμηλές και η εμπειρία πιο πλούσια. Αλλά όσοι έρχονται περιμένοντας τυπικές παραθεριστικές διακοπές συχνά βρίσκουν τον αστικό χαρακτήρα μη αναμενόμενο."
+      },
+      items: {
+        en: [
+          "Expecting empty resort-style beaches — Syros's beaches are good but not the primary reason to visit. Galissas and Kini are popular and organised, but they do not rival the scale of Naxos or Milos. The swimming is pleasant, the water is clean, and the setting is lovely — but the island's strongest appeal is its city life and culture, not its coastline.",
+          "Treating Ano Syros as a quick photo stop — the Catholic hilltop is one of the most atmospheric medieval settlements in the Cyclades, with a genuinely lived-in character that rewards slow wandering. The 15-minute photo visit that most cruise passengers do misses the best parts: the hidden squares, the local café at the top, and the views from the cathedral terrace at sunset.",
+          "Skipping Ermoupoli in favour of a beach base — the biggest mistake visitors make on Syros is treating Ermoupoli as a transit point and staying in a beach village instead. The city is the pulsing heart of the island. Staying elsewhere means losing the evening square life, the late-night sweet shops, the waterfront walks, and the cultural rhythm that makes Syros unique.",
+          "Expecting late-night clubs and party beaches — Syros has a vibrant evening scene but it is centred on Miaouli Square, waterfront bars, and live music — not club music until dawn. If you want nightclubs, go to Mykonos or Ios. If you want ouzo at a waterfront table at midnight with loukoumades to follow, Syros is perfect.",
+          "Underestimating the winter appeal — Syros is one of the few Cycladic islands that is genuinely active in winter. Ermoupoli's theatres, cinemas, cafés and restaurants remain open, and the island has a calendar of cultural events including the Syros International Film Festival and the Ano Syros Festival. A winter weekend on Syros offers cultural richness that summer-only islands cannot provide."
+        ],
+        el: [
+          "Να περιμένεις άδειες, resort-τύπου παραλίες — οι παραλίες της Σύρου είναι καλές αλλά όχι ο κύριος λόγος επίσκεψης. Το δυνατό σημείο του νησιού είναι η πόλη και ο πολιτισμός της, όχι η ακτογραμμή.",
+          "Να αντιμετωπίζεις την Άνω Σύρο ως γρήγορη φωτογραφική στάση — ο καθολικός λόφος είναι ένας από τους πιο ατμοσφαιρικούς μεσαιωνικούς οικισμούς. Η βόλτα των 15 λεπτών χάνει τα καλύτερα σημεία του.",
+          "Να παρακάμπτεις την Ερμούπολη για μια βάση στην παραλία — το μεγαλύτερο λάθος είναι να βλέπεις την Ερμούπολη ως σημείο διέλευσης. Η πόλη είναι η καρδιά του νησιού.",
+          "Να περιμένεις clubs και party μέχρι το πρωί — η Σύρος έχει ζωντανή βραδινή ζωή αλλά γύρω από την πλατεία Μιαούλη, όχι club. Αν θες πάρτι, πήγαινε Μύκονο ή Ίο.",
+          "Να υποτιμάς τον χειμώνα — η Σύρος είναι από τα λίγα κυκλαδονήσια που παραμένουν ζωντανά και τον χειμώνα, με θέατρα, φεστιβάλ και πολιτιστικές εκδηλώσεις."
+        ]
+      }
+    }
+  },
+
   paros: {
     overview: {
       en: "Paros is one of those Greek islands that feels easy to enjoy from the start. It has the whitewashed Cycladic look that many travelers imagine when they think of the Aegean, but it also feels more relaxed and rounded than some of the better-known neighboring islands. You come here for beaches, village life, good food, harbor walks, and a travel rhythm that can be both lively and calm depending on where you stay.\n\nWhat makes Paros especially appealing is its balance. It can work for couples, families, groups of friends, and even first-time visitors to Greece who want a classic island trip without the intensity or pricing of the most heavily hyped destinations. You can spend one day by the sea, another in small inland villages, and another wandering through the lanes of Naoussa or Parikia with no real rush.\n\nParos is also practical. It is well connected, relatively easy to move around, and large enough to offer variety without feeling overwhelming. Some travelers come for beaches and summer atmosphere, while others are more interested in food, village charm, and a softer Cycladic experience. Either way, it is an island that tends to feel complete.\n\nIf you are planning your trip, Paros is best approached as an island that gives you a little of everything: attractive towns, very good swimming spots, classic Cycladic scenery, and a relaxed but polished holiday feel.",

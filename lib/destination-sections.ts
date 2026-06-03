@@ -8324,5 +8324,474 @@ export const destinationSections: Record<string, DestinationSection[]> = {
         }
       ]
     }
-  ]
+  ],
+  syros: [
+    {
+      title: {
+        en: "Why visit Syros",
+        el: "Γιατί να επισκεφθείς τη Σύρο",
+      },
+      layout: "numbered",
+      items: [
+        {
+          title: {
+            en: "Ermoupoli is one of the finest port cities in the entire Aegean",
+            el: "Η Ερμούπολη είναι μια από τις ωραιότερες λιμνοπόλεις του Αιγαίου",
+          },
+          text: {
+            en: "Unlike the whitewashed Cycladic villages, Ermoupoli is a grand neoclassical city built by shipping merchants in the 19th century. The central Miaouli Square, framed by the imposing Town Hall and marble-paved cafes, is the heart of the city. Tip: visit Miaouli Square around 9pm when the lights are on and the city is alive with evening strolls.",
+            el: "Σε αντίθεση με τα ασβεστωμένα κυκλαδίτικα χωριά, η Ερμούπολη είναι μια μεγαλοπρεπής νεοκλασική πόλη χτισμένη από εμπόρους τον 19ο αιώνα. Η κεντρική πλατεία Μιαούλη, με το επιβλητικό Δημαρχείο και τα μαρμάρινα καφέ, είναι η καρδιά της πόλης. Tip: επισκέψου την πλατεία Μιαούλη γύρω στις 9μμ όταν τα φώτα είναι αναμμένα και η πόλη ζωντανεύει με βραδινές βόλτες.",
+          },
+        },
+        {
+          title: {
+            en: "Ano Syros is the best-preserved medieval Cycladic settlement you have never heard of",
+            el: "Η Άνω Σύρος είναι ο καλύτερα διατηρημένος μεσαιωνικός κυκλαδίτικος οικισμός που δεν έχεις ακούσει",
+          },
+          text: {
+            en: "Perched on the hill above Ermoupoli, Ano Syros is a labyrinth of narrow stone alleys, arched passages, and whitewashed houses climbing up to the Cathedral of St George. Unlike the commercialized hill towns of other islands, Ano Syros feels lived-in and authentic. Tip: climb up in the late afternoon when the light softens and the views over Ermoupoli and the Aegean are unforgettable.",
+            el: "Χτισμένη στον λόφο πάνω από την Ερμούπολη, η Άνω Σύρος είναι ένας λαβύρινθος από στενά πέτρινα σοκάκια, τοξωτά περάσματα και ασβεστωμένα σπίτια που σκαρφαλώνουν ως τον Καθεδρικό του Αγίου Γεωργίου. Tip: ανέβα αργά το απόγευμα όταν το φως μαλακώνει και η θέα στην Ερμούπολη και το Αιγαίο είναι αξέχαστη.",
+          },
+        },
+        {
+          title: {
+            en: "It is a real, functioning Greek city — not a resort island",
+            el: "Είναι μια πραγματική, ζωντανή ελληνική πόλη — όχι ένα νησί-θέρετρο",
+          },
+          text: {
+            en: "Syros is the capital of the Cyclades, and Ermoupoli is a working city with shops, schools, hospitals, government buildings, and a year-round population. This gives the island a cultural depth and authenticity that purely tourist-driven islands lack. You can experience everyday Greek life here, not just a curated version of it.",
+            el: "Η Σύρος είναι η πρωτεύουσα των Κυκλάδων και η Ερμούπολη είναι μια ζωντανή πόλη με καταστήματα, σχολεία, νοσοκομεία, δημόσιες υπηρεσίες και μόνιμο πληθυσμό όλο τον χρόνο. Αυτό δίνει στο νησί ένα πολιτισμικό βάθος που λείπει από τα καθαρά τουριστικά νησιά.",
+          },
+        },
+        {
+          title: {
+            en: "The food culture is authentic, rooted, and genuinely excellent",
+            el: "Η γαστρονομική κουλτούρα είναι αυθεντική, ριζωμένη και πραγματικά εξαιρετική",
+          },
+          text: {
+            en: "Syros has a distinct food identity shaped by its Catholic and Orthodox heritage, its maritime history, and its role as a commercial hub. From halvadopites (sesame & honey nougat) to fresh Aegean seafood, and from slow-cooked meat dishes to local cheeses and cured meats, the eating here is world-class without the tourist markup.",
+            el: "Η Σύρος έχει μια ξεχωριστή γαστρονομική ταυτότητα διαμορφωμένη από την καθολική και ορθόδοξη κληρονομιά της, τη ναυτική ιστορία της και τον ρόλο της ως εμπορικό κέντρο. Από χαλβαδόπιτες μέχρι φρέσκα θαλασσινά του Αιγαίου, το φαγητό εδώ είναι κορυφαίο χωρίς τα τουριστικά μαρκαρίσματα.",
+          },
+        },
+        {
+          title: {
+            en: "It works all year — not just in July and August",
+            el: "Λειτουργεί όλο τον χρόνο — όχι μόνο τον Ιούλιο και τον Αύγουστο",
+          },
+          text: {
+            en: "Because Syros is a real city with a permanent population, it does not shut down outside the summer season. Tavernas, cafes, museums, and shops remain open, and cultural events — concerts, theatre, festivals — happen throughout the year. Tip: visiting in March or October gives you mild weather, empty streets, and a genuinely local experience.",
+            el: "Επειδή η Σύρος είναι μια πραγματική πόλη με μόνιμο πληθυσμό, δεν κλείνει εκτός καλοκαιρινής σεζόν. Οι ταβέρνες, τα καφέ, τα μουσεία και τα μαγαζιά παραμένουν ανοιχτά και πολιτιστικές εκδηλώσεις γίνονται όλο τον χρόνο. Tip: μια επίσκεψη τον Μάρτιο ή τον Οκτώβριο σου δίνει ήπιο καιρό, άδειους δρόμους και μια αυθεντικά τοπική εμπειρία.",
+          },
+        },
+        {
+          title: {
+            en: "Easy access and outstanding connections to the rest of the Cyclades",
+            el: "Εύκολη πρόσβαση και εξαιρετικές συνδέσεις με τις υπόλοιπες Κυκλάδες",
+          },
+          text: {
+            en: "Syros is a major ferry hub with frequent connections to Piraeus, Rafina, and nearly every Cycladic island. Fast ferries reach Syros from Piraeus in about 2.5–4 hours, making it one of the most accessible islands in the archipelago. From Syros, island hopping to Tinos, Mykonos, Naxos, Paros, and Santorini is seamless.",
+            el: "Η Σύρος είναι ένα σημαντικό λιμάνι με συχνές συνδέσεις προς Πειραιά, Ραφήνα και σχεδόν όλες τις Κυκλάδες. Τα ταχύπλοα φτάνουν από Πειραιά σε περίπου 2.5–4 ώρες, καθιστώντας την ένα από τα πιο προσβάσιμα νησιά του συμπλέγματος.",
+          },
+        },
+      ],
+    },
+    {
+      title: {
+        en: "Best time to visit Syros",
+        el: "Καλύτερη εποχή για τη Σύρο",
+      },
+      layout: "list",
+      items: [
+        {
+          title: { en: "Spring (April–May)", el: "Άνοιξη (Απρίλιος–Μάιος)" },
+          text: {
+            en: "Ideal for exploring Ermoupoli and Ano Syros without crowds. The weather is pleasant for walking, and the island is green and blooming.",
+            el: "Ιδανικά για να εξερευνήσεις την Ερμούπολη και την Άνω Σύρο χωρίς πολυκόσμο. Ο καιρός είναι ευχάριστος για περπάτημα και το νησί είναι πράσινο και ανθισμένο.",
+          },
+        },
+        {
+          title: { en: "June", el: "Ιούνιος" },
+          text: {
+            en: "The best balance: warm enough for swimming, everything is open, but not yet packed. The sea is starting to warm up and the evenings are long and pleasant.",
+            el: "Η καλύτερη ισορροπία: αρκετά ζεστά για μπάνιο, όλα είναι ανοιχτά αλλά όχι ακόμη γεμάτα. Η θάλασσα αρχίζει να ζεσταίνεται και τα βράδια είναι μεγάλα και ευχάριστα.",
+          },
+        },
+        {
+          title: { en: "July–August", el: "Ιούλιος–Αύγουστος" },
+          text: {
+            en: "Peak season with a lively atmosphere. Ermoupoli buzzes with energy, cultural festivals take place, and the beaches are at their best. Book accommodation well in advance.",
+            el: "Περίοδος αιχμής με ζωντανή ατμόσφαιρα. Η Ερμούπολη σφύζει από ενέργεια, γίνονται πολιτιστικά φεστιβάλ και οι παραλίες είναι στα καλύτερά τους. Κλείσε διαμονή νωρίς.",
+          },
+        },
+        {
+          title: { en: "September", el: "Σεπτέμβριος" },
+          text: {
+            en: "The sea is at its warmest, the crowds thin out, and the island settles into a relaxed rhythm. Many consider this the best month for swimming and sightseeing combined.",
+            el: "Η θάλασσα είναι στο πιο ζεστό της, ο κόσμος αραιώνει και το νησί μπαίνει σε χαλαρούς ρυθμούς. Πολλοί θεωρούν τον Σεπτέμβριο τον καλύτερο μήνα για συνδυασμό μπάνιου και περιήγησης.",
+          },
+        },
+        {
+          title: { en: "October–November", el: "Οκτώβριος–Νοέμβριος" },
+          text: {
+            en: "Quiet and authentic. Many restaurants remain open in Ermoupoli, and the weather is still pleasant for walking. A great time for cultural visits without any tourist pressure.",
+            el: "Ήσυχα και αυθεντικά. Πολλά εστιατόρια παραμένουν ανοιχτά στην Ερμούπολη και ο καιρός είναι ακόμη ευχάριστος για βόλτες. Ιδανική περίοδος για πολιτιστικές επισκέψεις χωρίς τουριστική πίεση.",
+          },
+        },
+        {
+          title: { en: "Winter (December–March)", el: "Χειμώνας (Δεκέμβριος–Μάρτιος)" },
+          text: {
+            en: "Syros is at its most authentic. The island lives its daily life, and visitors who come will experience the real Syros — local cafes, winter festivals, and the famous Syros Carnival in February/March.",
+            el: "Η Σύρος είναι στην πιο αυθεντική της μορφή. Το νησί ζει την καθημερινότητά του και οι επισκέπτες θα ζήσουν την πραγματική Σύρο — τοπικά καφέ, χειμερινά φεστιβάλ και το περίφημο Καρναβάλι της Σύρου τον Φεβρουάριο/Μάρτιο.",
+          },
+        },
+      ],
+    },
+    {
+      title: {
+        en: "Ermoupoli — the grand capital of the Cyclades",
+        el: "Ερμούπολη — η μεγαλοπρεπής πρωτεύουσα των Κυκλάδων",
+      },
+      layout: "numbered",
+      items: [
+        {
+          title: {
+            en: "Miaouli Square & Town Hall",
+            el: "Πλατεία Μιαούλη & Δημαρχείο",
+          },
+          text: {
+            en: "One of the grandest squares in Greece, flanked by neoclassical buildings and dominated by the magnificent Town Hall designed by Ernst Ziller. The square is the social centre of Ermoupoli, filled with locals enjoying coffee and pastries. Tip: order a soumada (almond syrup drink) at one of the historic cafes — it's a Syros signature.",
+            el: "Μία από τις μεγαλοπρεπέστερες πλατείες της Ελλάδας, πλαισιωμένη από νεοκλασικά κτίρια και το υπέροχο Δημαρχείο του Ερνστ Τσίλλερ. Η πλατεία είναι το κοινωνικό κέντρο της Ερμούπολης. Tip: παράγγειλε μια σουμάδα (ρόφημα αμυγδάλου) σε ένα από τα ιστορικά καφέ — είναι σήμα κατατεθέν της Σύρου.",
+          },
+        },
+        {
+          title: {
+            en: "Apollon Theatre",
+            el: "Θέατρο Απόλλων",
+          },
+          text: {
+            en: "A stunning miniature replica of La Scala in Milan, built in 1864. The theatre seats about 350 people and features exquisite frescoes, a beautiful wooden stage, and exceptional acoustics. Tip: check the programme before your visit — attending a concert or performance here is a magical experience.",
+            el: "Ένα εκπληκτικό μικρογραφικό αντίγραφο της Σκάλας του Μιλάνου, χτισμένο το 1864. Το θέατρο έχει περίπου 350 θέσεις και διαθέτει υπέροχες τοιχογραφίες και εξαιρετική ακουστική. Tip: τσέκαρε το πρόγραμμα πριν την επίσκεψή σου — το να παρακολουθήσεις μια συναυλία εδώ είναι μαγική εμπειρία.",
+          },
+        },
+        {
+          title: {
+            en: "The Port & Vaporia Neighbourhood",
+            el: "Το Λιμάνι & η Συνοικία Βαπόρια",
+          },
+          text: {
+            en: "The long waterfront is perfect for a leisurely stroll past neoclassical mansions and fishing boats. Vaporia, the old captains' quarter, features magnificent 19th-century mansions built by shipping magnates, perched dramatically on the rocks above the sea. Tip: take the clifftop walk from Vaporia for breathtaking views of the Aegean.",
+            el: "Η μεγάλη παραλιακή είναι ιδανική για χαλαρό περίπατο ανάμεσα σε νεοκλασικά αρχοντικά και ψαρόβαρκες. Τα Βαπόρια, η παλιά συνοικία των καπεταναίων, έχουν υπέροχα αρχοντικά του 19ου αιώνα. Tip: κάνε τη βόλτα στα βράχια των Βαποριών για εκπληκτική θέα στο Αιγαίο.",
+          },
+        },
+        {
+          title: {
+            en: "Orthodox Church of the Resurrection (Anastasis)",
+            el: "Ιερός Ναός Αναστάσεως του Χριστού",
+          },
+          text: {
+            en: "Perched high above Vaporia, this striking blue-domed church offers one of the best panoramic views of Ermoupoli and the harbour. The contrast of the deep blue dome against the white walls and the surrounding sea is iconic. It is quieter than the main churches in town and rewards the uphill walk.",
+            el: "Χτισμένη ψηλά πάνω από τα Βαπόρια, αυτή η εντυπωσιακή εκκλησία με τον γαλάζιο τρούλο προσφέρει μία από τις καλύτερες πανοραμικές θέες της Ερμούπολης. Η αντίθεση του βαθυγάλαζου τρούλου με τα λευκά τοιχώματα είναι εμβληματική.",
+          },
+        },
+        {
+          title: {
+            en: "Industrial Museum of Hermoupolis",
+            el: "Βιομηχανικό Μουσείο Ερμούπολης",
+          },
+          text: {
+            en: "Syros was the industrial heart of 19th-century Greece, and this museum in the old Eleourgia soap factory tells that story brilliantly. Exhibits include original machinery, leatherworks, textiles, and the fascinating history of the city's industrial rise and fall. Tip: also visit the Markos Vamvakaris Museum nearby for the rebetiko connection.",
+            el: "Η Σύρος ήταν η βιομηχανική καρδιά της Ελλάδας τον 19ο αιώνα και αυτό το μουσείο στην παλιά σαπωνοποιία Ελαιουργία αφηγείται αυτή την ιστορία. Tip: επισκέψου και το κοντινό Μουσείο Μάρκου Βαμβακάρη για τη σύνδεση με το ρεμπέτικο.",
+          },
+        },
+      ],
+    },
+    {
+      title: {
+        en: "Ano Syros — the medieval hill town",
+        el: "Άνω Σύρος — ο μεσαιωνικός λοφίσκος",
+      },
+      layout: "numbered",
+      items: [
+        {
+          title: {
+            en: "Cathedral of St George",
+            el: "Καθεδρικός Ναός Αγίου Γεωργίου",
+          },
+          text: {
+            en: "The Catholic cathedral sits at the highest point of Ano Syros and dominates the skyline. Built in the 13th century and renovated in the 19th century, its simple white exterior belies a beautifully ornate interior. The views from the bell tower and the surrounding terrace stretch across the entire island and the Aegean.",
+            el: "Ο καθολικός καθεδρικός δεσπόζει στο ψηλότερο σημείο της Άνω Σύρου. Χτισμένος τον 13ο αιώνα, το λιτό λευκό εξωτερικό του κρύβει ένα όμορφα διακοσμημένο εσωτερικό. Η θέα από το καμπαναριό απλώνεται σε όλο το νησί και το Αιγαίο.",
+          },
+        },
+        {
+          title: {
+            en: "The Lane Network",
+            el: "Το δίκτυο των σοκακιών",
+          },
+          text: {
+            en: "Getting lost in the narrow, winding lanes of Ano Syros is the best way to experience it. Whitewashed houses with colourful shutters, tiny chapels, arched doorways, and sudden glimpses of the sea make every turn a discovery. Tip: walk to the northern edge of Ano Syros for a completely different perspective — the view of Ermoupoli from above is unforgettable.",
+            el: "Το να χαθείς στα στενά, ελικοειδή σοκάκια της Άνω Σύρου είναι ο καλύτερος τρόπος να τη ζήσεις. Άσπρα σπίτια με πολύχρωμα παραθυρόφυλλα, εκκλησάκια και ξαφνικές ματιές στη θάλασσα κάνουν κάθε στροφή μια ανακάλυψη. Tip: περπάτησε ως το βόρειο άκρο για μια τελείως διαφορετική οπτική.",
+          },
+        },
+        {
+          title: {
+            en: "Capuchin Monastery & Jesuit Church",
+            el: "Μονή Καπουτσίνων & Εκκλησία των Ιησουιτών",
+          },
+          text: {
+            en: "The Capuchin Monastery, built in 1535, is one of the oldest Catholic religious buildings in the Cyclades. Its simple courtyard and garden offer a peaceful retreat from the winding lanes. Nearby, the Jesuit Church (Church of the Presentation of the Virgin) adds another layer to the fascinating religious co-existence that defines Syros.",
+            el: "Η Μονή Καπουτσίνων, χτισμένη το 1535, είναι ένα από τα παλαιότερα καθολικά θρησκευτικά κτίρια στις Κυκλάδες. Η αυλή και ο κήπος της προσφέρουν ένα ήσυχο καταφύγιο. Η κοντινή Εκκλησία των Ιησουιτών προσθέτει άλλο ένα στρώμα στη συναδέλφωση των θρησκειών της Σύρου.",
+          },
+        },
+      ],
+    },
+    {
+      title: {
+        en: "Beaches in Syros",
+        el: "Παραλίες στη Σύρο",
+      },
+      layout: "list",
+      items: [
+        {
+          title: { en: "Galissas", el: "Γαλησσάς" },
+          text: {
+            en: "The most popular organized beach, a sandy crescent with clear shallow water, perfect for families. There are plenty of tavernas and sunbeds. Tip: walk to the nearby Armeos Beach for a quieter, more secluded swim.",
+            el: "Η πιο δημοφιλής οργανωμένη παραλία, μια αμμώδης ημισέληνος με καθαρά ρηχά νερά, ιδανική για οικογένειες. Tip: περπάτησε στην κοντινή παραλία Αρμέος για πιο ήσυχο και απομονωμένο μπάνιο.",
+          },
+        },
+        {
+          title: { en: "Kini", el: "Κίνι" },
+          text: {
+            en: "A charming fishing village with a long pebble-sand beach and excellent fish tavernas right on the water. The atmosphere is relaxed and genuinely local. Tip: stay for sunset — Kini is famous for its fiery orange sunsets over the Aegean.",
+            el: "Ένα γραφικό ψαροχώρι με μακριά παραλία από βότσαλο και άμμο και εξαιρετικές ψαροταβέρνες πάνω στο κύμα. Tip: μείνε για το ηλιοβασίλεμα — η Κίνι φημίζεται για τα πορτοκαλί ηλιοβασιλέματά της στο Αιγαίο.",
+          },
+        },
+        {
+          title: { en: "Agathopes & Komito", el: "Αγαθόπες & Κωμητό" },
+          text: {
+            en: "Two quieter beaches on the south coast, both with soft sand and clear water. Agathopes is more organized with a beach bar, while Komito is wilder and more secluded. Both are excellent choices for a peaceful beach day.",
+            el: "Δύο πιο ήσυχες παραλίες στη νότια ακτή, και οι δύο με μαλακή άμμο και καθαρά νερά. Οι Αγαθόπες είναι πιο οργανωμένες, ενώ το Κωμητό είναι πιο άγριο και απομονωμένο.",
+          },
+        },
+        {
+          title: { en: "Megas Gialos", el: "Μέγας Γιαλός" },
+          text: {
+            en: "A long sandy beach with shallow waters, popular with families and within easy reach of Ermoupoli. The surrounding area has several tavernas and accommodation options.",
+            el: "Μια μακριά αμμώδης παραλία με ρηχά νερά, δημοφιλής σε οικογένειες και εύκολα προσβάσιμη από την Ερμούπολη. Η γύρω περιοχή έχει πολλές ταβέρνες και καταλύματα.",
+          },
+        },
+        {
+          title: { en: "Vari", el: "Βάρη" },
+          text: {
+            en: "A beautiful sandy beach on the southwest coast, usually quieter than Galissas. The water is crystal clear and the setting is peaceful. Tip: walk to the headland on the left side of the beach for a small, secluded cove away from everyone.",
+            el: "Μια όμορφη αμμώδης παραλία στη νοτιοδυτική ακτή, συνήθως πιο ήσυχη από τον Γαλησσά. Tip: περπάτησε στο ακρωτήρι στην αριστερή πλευρά της παραλίας για ένα μικρό, απομονωμένο ορμίσκο μακριά από όλους.",
+          },
+        },
+        {
+          title: { en: "Delfini", el: "Δελφίνι" },
+          text: {
+            en: "A small, scenic cove just south of Galissas with turquoise water and a mix of sand and pebbles. The beach is relatively uncrowded even in peak season. Tip: go early to secure a good spot, as it is small and fills up quickly on summer weekends.",
+            el: "Ένας μικρός γραφικός όρμος νότια του Γαλησσά με τιρκουάζ νερά και μείγμα άμμου και βότσαλου. Tip: πήγαινε νωρίς για να εξασφαλίσεις καλή θέση, καθώς είναι μικρή και γεμίζει γρήγορα τα καλοκαιρινά Σαββατοκύριακα.",
+          },
+        },
+      ],
+    },
+    {
+      title: {
+        en: "Food in Syros — what to eat and drink",
+        el: "Φαγητό στη Σύρο — τι να φας και να πιεις",
+      },
+      layout: "list",
+      items: [
+        {
+          title: { en: "Halvadopites", el: "Χαλβαδόπιτες" },
+          text: {
+            en: "The signature sweet of Syros — a thin, crunchy sesame-and-honey wafer with a delicate almond flavour. Sold everywhere from bakeries to souvenir shops, but the best are freshly made. Try the ones filled with chocolate or nuts too.",
+            el: "Το γλυκό-σήμα κατατεθέν της Σύρου — ένα λεπτό, τραγανό γλύκισμα από σουσάμι και μέλι. Πωλούνται παντού αλλά οι καλύτερες είναι φρεσκοφτιαγμένες. Δοκίμασε και αυτές με γέμιση σοκολάτας ή ξηρών καρπών.",
+          },
+        },
+        {
+          title: { en: "Loukoumades", el: "Λουκουμάδες" },
+          text: {
+            en: "Syros is famous for its loukoumades — light, airy Greek doughnuts drizzled with honey and sprinkled with cinnamon and walnuts. The island's version is particularly renowned, with some shops specializing exclusively in this treat.",
+            el: "Η Σύρος φημίζεται για τους λουκουμάδες της — ελαφριά, αφράτα τηγανητά ζυμαρικά με μέλι, κανέλα και καρύδια. Η εκδοχή του νησιού είναι ιδιαίτερα φημισμένη, με μαγαζιά που ειδικεύονται αποκλειστικά σε αυτό το γλύκισμα.",
+          },
+        },
+        {
+          title: { en: "Fresh Aegean Seafood", el: "Φρέσκα Θαλασσινά του Αιγαίου" },
+          text: {
+            en: "Being a major port, Syros has exceptional seafood. Grilled octopus, fried calamari, fresh fish, and shrimp saganaki are staples. The best fish tavernas are in Kini and along the Ermoupoli waterfront.",
+            el: "Ως σημαντικό λιμάνι, η Σύρος έχει εξαιρετικά θαλασσινά. Χταπόδι στα κάρβουνα, τηγανητά καλαμαράκια, φρέσκο ψάρι και γαρίδες σαγανάκι είναι βασικά πιάτα. Οι καλύτερες ψαροταβέρνες είναι στην Κίνι και στην παραλιακή της Ερμούπολης.",
+          },
+        },
+        {
+          title: { en: "Soumada", el: "Σουμάδα" },
+          text: {
+            en: "A traditional almond-based soft drink, non-alcoholic, and unique to Syros. Made from almonds, sugar, and rosewater, it is refreshingly aromatic and served cold. A must-try local specialty that you will not find anywhere else.",
+            el: "Ένα παραδοσιακό αμυγδαλάτο αναψυκτικό, μη αλκοολούχο και μοναδικό στη Σύρο. Φτιαγμένο από αμύγδαλα, ζάχαρη και ροδόνερο, σερβίρεται παγωμένο. Μια τοπική σπεσιαλιτέ που δεν θα βρεις πουθενά αλλού.",
+          },
+        },
+        {
+          title: { en: "Local Cheeses & Charcuterie", el: "Τοπικά Τυριά & Αλλαντικά" },
+          text: {
+            en: "Syros produces excellent cheeses, including the creamy San Michali (a PDO hard cheese with a salty-sweet flavour) and fresh mizithra. The island also has a tradition of cured meats, particularly syrianí (a local salami-style sausage with orange peel and spices).",
+            el: "Η Σύρος παράγει εξαιρετικά τυριά, όπως το κρεμώδες Σαν Μιχάλη (σκληρό τυρί ΠΟΠ με αλμυρή-γλυκιά γεύση) και φρέσκια μυζήθρα. Το νησί έχει επίσης παράδοση στα αλλαντικά, ειδικά στη συριανή (λουκάνικο με φλούδα πορτοκαλιού και μπαχαρικά).",
+          },
+        },
+        {
+          title: { en: "Rebetiko & Music Culture", el: "Ρεμπέτικο & Μουσική Κουλτούρα" },
+          text: {
+            en: "Syros is the birthplace of Markos Vamvakaris, the 'patriarch' of rebetiko music. The island's musical heritage is deeply woven into its identity. Visit the Markos Vamvakaris Museum in Ano Syros, and in the evenings, seek out tavernas and bars where live rebetiko music still plays.",
+            el: "Η Σύρος είναι η γενέτειρα του Μάρκου Βαμβακάρη, του 'πατριάρχη' του ρεμπέτικου. Η μουσική κληρονομιά του νησιού είναι βαθιά ριζωμένη στην ταυτότητά του. Επισκέψου το Μουσείο Μάρκου Βαμβακάρη στην Άνω Σύρο και το βράδυ αναζήτησε ταβέρνες με ζωντανό ρεμπέτικο.",
+          },
+        },
+      ],
+    },
+    {
+      title: {
+        en: "Practical Tips for Syros",
+        el: "Πρακτικές Συμβουλές για τη Σύρο",
+      },
+      layout: "list",
+      items: [
+        {
+          title: { en: "Arriving by ferry", el: "Άφιξη με πλοίο" },
+          text: {
+            en: "Ferries arrive at the port in Ermoupoli, right in the city centre. You step off the boat and you are immediately in the heart of town — no shuttle buses or long transfers needed. Check ferry schedules carefully as they vary significantly by season.",
+            el: "Τα πλοία φτάνουν στο λιμάνι της Ερμούπολης, στο κέντρο της πόλης. Κατεβαίνεις από το πλοίο και είσαι αμέσως στην καρδιά της πόλης — χωρίς λεωφορεία ή μεγάλες μεταφορές. Τσέκαρε τα δρομολόγια που αλλάζουν ανάλογα με την εποχή.",
+          },
+        },
+        {
+          title: { en: "Climbing Ano Syros", el: "Ανάβαση στην Άνω Σύρο" },
+          text: {
+            en: "The walk from Ermoupoli up to Ano Syros takes about 15–20 minutes and involves a steep climb on cobbled lanes. Wear comfortable shoes and take water in summer. The views from the top are well worth the effort.",
+            el: "Η ανάβαση από την Ερμούπολη στην Άνω Σύρο διαρκεί περίπου 15–20 λεπτά και περιλαμβάνει απότομη ανηφόρα σε λιθόστρωτα σοκάκια. Φόρεσε άνετα παπούτσια και πάρε νερό το καλοκαίρι. Η θέα από πάνω αξίζει τον κόπο.",
+          },
+        },
+        {
+          title: { en: "Beach transport", el: "Μετακινήσεις προς παραλίες" },
+          text: {
+            en: "Buses run from Ermoupoli to the main beaches (Galissas, Kini, Megas Gialos, Vari) regularly in summer. Timetables are seasonal, so check at the bus station near the port. Taxis are available but limited — book ahead in peak season.",
+            el: "Λεωφορεία συνδέουν την Ερμούπολη με τις κύριες παραλίες (Γαλησσάς, Κίνι, Μέγας Γιαλός, Βάρη) τακτικά το καλοκαίρι. Τα δρομολόγια είναι εποχικά — τσέκαρε στον σταθμό κοντά στο λιμάνι. Τα ταξί είναι περιορισμένα — κλείσε από πριν την περίοδο αιχμής.",
+          },
+        },
+        {
+          title: { en: "Accommodation choices", el: "Επιλογές διαμονής" },
+          text: {
+            en: "Stay in Ermoupoli for the city experience — within walking distance of restaurants, museums, and Ano Syros. Stay in Kini or Galissas for a beach holiday with seaside tavernas. Ano Syros has limited but atmospheric rooms in traditional houses.",
+            el: "Μείνε στην Ερμούπολη για την αστική εμπειρία — κοντά σε εστιατόρια, μουσεία και την Άνω Σύρο. Μείνε στην Κίνι ή στον Γαλησσά για διακοπές παραλίας. Η Άνω Σύρος έχει περιορισμένα αλλά ατμοσφαιρικά δωμάτια σε παραδοσιακά σπίτια.",
+          },
+        },
+        {
+          title: { en: "The Meltemi wind", el: "Το μελτέμι" },
+          text: {
+            en: "Syros is exposed to the Meltemi, the strong northerly wind that blows in July and August. The wind can make beachgoing uncomfortable on northern shores but often leaves southern beaches (Agathopes, Vari) calm and pleasant. Pack a windbreaker for the evenings.",
+            el: "Η Σύρος εκτίθεται στο μελτέμι, τον δυνατό βόρειο άνεμο που φυσά τον Ιούλιο και τον Αύγουστο. Ο άνεμος μπορεί να κάνει δυσάρεστο το μπάνιο σε βόρειες ακτές αλλά οι νότιες παραλίες παραμένουν ήρεμες. Πάρε ένα αντιανεμικό για τα βράδια.",
+          },
+        },
+        {
+          title: { en: "Cash in the market district", el: "Μετρητά στην αγορά" },
+          text: {
+            en: "While most restaurants and hotels accept cards, some smaller shops, bakeries, and market stalls in Ermoupoli's central market district prefer cash. Carry some euros for halvadopites and loukoumades purchases.",
+            el: "Ενώ τα περισσότερα εστιατόρια και ξενοδοχεία δέχονται κάρτες, κάποια μικρά μαγαζιά, φούρνοι και πάγκοι στην κεντρική αγορά προτιμούν μετρητά. Να έχεις λίγα ευρώ για αγορές χαλβαδόπιτας και λουκουμάδων.",
+          },
+        },
+        {
+          title: { en: "How many days are enough", el: "Πόσες μέρες είναι αρκετές" },
+          text: {
+            en: "For a solid visit covering Ermoupoli, Ano Syros, and a couple of beaches, plan for 3 days. For a relaxed trip that includes multiple beaches, day trips, and deeper exploration, aim for 5–7 days. Syros is also excellent as a base for island hopping.",
+            el: "Για μια καλή επίσκεψη που καλύπτει Ερμούπολη, Άνω Σύρο και μερικές παραλίες, υπολόγισε 3 μέρες. Για ένα χαλαρό ταξίδι με πολλές παραλίες και εξερεύνηση, στόχευσε σε 5–7 μέρες. Η Σύρος είναι επίσης εξαιρετική βάση για island hopping.",
+          },
+        },
+      ],
+    },
+    {
+      title: {
+        en: "FAQ about Syros",
+        el: "Συχνές ερωτήσεις για τη Σύρο",
+      },
+      layout: "faq",
+      items: [
+        {
+          title: {
+            en: "How many days do you need in Syros?",
+            el: "Πόσες μέρες χρειάζεσαι στη Σύρο;",
+          },
+          text: {
+            en: "3 days is enough for the essentials — Ermoupoli, Ano Syros, and one or two beaches. For a fuller experience including multiple beaches, day trips to neighbouring islands, and a relaxed pace, aim for 4–5 days.",
+            el: "3 μέρες είναι αρκετές για τα βασικά — Ερμούπολη, Άνω Σύρο και μία-δύο παραλίες. Για μια πιο ολοκληρωμένη εμπειρία με πολλές παραλίες, εκδρομές και χαλαρό ρυθμό, στόχευσε σε 4–5 μέρες.",
+          },
+        },
+        {
+          title: {
+            en: "Is Syros good for families?",
+            el: "Είναι η Σύρος κατάλληλη για οικογένειες;",
+          },
+          text: {
+            en: "Very much so. The beaches at Galissas and Megas Gialos are shallow and safe for children. Ermoupoli is walkable and has plenty of family-friendly tavernas. The island's year-round infrastructure means medical services, shops, and amenities are readily available.",
+            el: "Πολύ. Οι παραλίες σε Γαλησσά και Μέγα Γιαλό είναι ρηχές και ασφαλείς για παιδιά. Η Ερμούπολη είναι εύκολη για περπάτημα και έχει πολλές οικογενειακές ταβέρνες. Οι υποδομές του νησιού είναι άριστες όλο τον χρόνο.",
+          },
+        },
+        {
+          title: {
+            en: "Is Syros worth visiting if I have been to Mykonos or Santorini?",
+            el: "Αξίζει η Σύρος αν έχω πάει σε Μύκονο ή Σαντορίνη;",
+          },
+          text: {
+            en: "Absolutely — and it is a fundamentally different experience. While Mykonos and Santorini are defined by their caldera views and iconic beach clubs, Syros offers a real, working Greek city with neoclassical architecture, authentic culture, and genuine year-round life. It complements the 'Cycladic postcard' islands perfectly.",
+            el: "Απολύτως — και είναι μια ριζικά διαφορετική εμπειρία. Ενώ η Μύκονος και η Σαντορίνη ορίζονται από την καλντέρα και τα beach clubs, η Σύρος προσφέρει μια πραγματική, ζωντανή ελληνική πόλη με νεοκλασική αρχιτεκτονική, αυθεντικό πολιτισμό και ζωή όλο τον χρόνο.",
+          },
+        },
+        {
+          title: {
+            en: "What is halvadopita and where do I buy it?",
+            el: "Τι είναι η χαλβαδόπιτα και πού την αγοράζω;",
+          },
+          text: {
+            en: "Halvadopita is Syros' signature sweet — a thin, crunchy wafer made with sesame seeds, honey, and almonds. The best places to buy it are the traditional bakeries and sweet shops in Ermoupoli (especially around the central market). It makes an excellent souvenir.",
+            el: "Η χαλβαδόπιτα είναι το γλυκό-σήμα κατατεθέν της Σύρου — ένα λεπτό, τραγανό γλύκισμα από σουσάμι, μέλι και αμύγδαλα. Τα καλύτερα σημεία είναι οι παραδοσιακοί φούρνοι και τα ζαχαροπλαστεία στην Ερμούπολη. Κάνει εξαιρετικό δώρο.",
+          },
+        },
+        {
+          title: {
+            en: "Do I need a car in Syros?",
+            el: "Χρειάζομαι αυτοκίνητο στη Σύρο;",
+          },
+          text: {
+            en: "Not if you are staying in Ermoupoli. The city is highly walkable, Ano Syros is a short climb, and buses serve the main beaches in summer. A car or scooter gives you more flexibility for exploring quieter beaches and the interior, but it is not essential for a fulfilling trip.",
+            el: "Όχι αν μένεις στην Ερμούπολη. Η πόλη είναι εύκολη για περπάτημα, η Άνω Σύρος είναι κοντινή ανάβαση και τα λεωφορεία εξυπηρετούν τις κύριες παραλίες το καλοκαίρι. Ένα αυτοκίνητο δίνει μεγαλύτερη ευελιξία αλλά δεν είναι απαραίτητο.",
+          },
+        },
+        {
+          title: {
+            en: "Is Syros good in winter?",
+            el: "Είναι η Σύρος καλή τον χειμώνα;",
+          },
+          text: {
+            en: "Exceptionally so. The island's cultural life continues year-round with theatre, concerts, and the famous Syros Carnival (February/March). Many restaurants and cafes remain open, and the atmosphere is authentically local. It is one of the few Cycladic islands that truly shines in winter.",
+            el: "Εξαιρετικά. Η πολιτιστική ζωή του νησιού συνεχίζεται όλο τον χρόνο με θέατρο, συναυλίες και το περίφημο Καρναβάλι της Σύρου. Πολλά εστιατόρια και καφέ παραμένουν ανοιχτά και η ατμόσφαιρα είναι αυθεντικά τοπική.",
+          },
+        },
+        {
+          title: {
+            en: "What is the best time to visit Syros?",
+            el: "Ποια είναι η καλύτερη εποχή για τη Σύρο;",
+          },
+          text: {
+            en: "May, June, and September offer the best combination of pleasant weather, manageable crowds, and open businesses. July and August are lively but busy and hot. Shoulder seasons (April, October) are ideal for cultural visits and walking.",
+            el: "Ο Μάιος, ο Ιούνιος και ο Σεπτέμβριος προσφέρουν τον καλύτερο συνδυασμό ευχάριστου καιρού, διαχειρίσιμου κόσμου και ανοιχτών επιχειρήσεων. Ο Ιούλιος και ο Αύγουστος είναι ζωντανοί αλλά γεμάτοι. Οι ενδιάμεσες εποχές είναι ιδανικές για πολιτιστικές επισκέψεις.",
+          },
+        },
+        {
+          title: {
+            en: "What is the connection between Syros and rebetiko music?",
+            el: "Ποια είναι η σχέση της Σύρου με το ρεμπέτικο;",
+          },
+          text: {
+            en: "Syros is the birthplace of Markos Vamvakaris (1905–1972), widely regarded as the 'patriarch' of rebetiko music. His house in Ano Syros has been converted into a small museum dedicated to his life and work. Rebetiko, often described as the Greek blues, was born in the urban centres of the early 20th century, and Syros played a key role in its development.",
+            el: "Η Σύρος είναι η γενέτειρα του Μάρκου Βαμβακάρη (1905–1972), του 'πατριάρχη' του ρεμπέτικου. Το σπίτι του στην Άνω Σύρο έχει μετατραπεί σε μουσείο αφιερωμένο στη ζωή και το έργο του. Το ρεμπέτικο γεννήθηκε στα αστικά κέντρα των αρχών του 20ού αιώνα και η Σύρος έπαιξε καθοριστικό ρόλο.",
+          },
+        },
+      ],
+    },
+  ],
 };
