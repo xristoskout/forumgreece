@@ -443,6 +443,35 @@ export const destinations: Destination[] = [
     }
   },
   {
+    slug: "syros",
+    name: "Syros",
+    region: { en: "Cyclades", el: "Κυκλάδες" },
+    blurb: {
+      en: "The Cyclades' capital is the most elegantly surprising island in the Aegean — a neoclassical city, a medieval hilltop town, serious food culture, and beaches that reward the curious traveller.",
+      el: "Η πρωτεύουσα των Κυκλάδων είναι το πιο κομψά εκπληκτικό νησί του Αιγαίου — μια νεοκλασική πόλη, ένας μεσαιωνικός λόφος, σοβαρή γαστρονομία και παραλίες."
+    },
+    image: "/images/syros-cover.webp",
+    overview: {
+      en: "Syros is the island that surprises you — and then keeps you coming back. When travellers think Cyclades, they picture whitewashed cubes against a blue dome. Syros breaks that mould entirely. Its capital, Ermoupoli, is a fully functioning Greek city with a grand neoclassical waterfront, a marble-paved central square, an opera house modelled on La Scala, and working-class neighbourhoods with iron balconies and peeling paint that smell of real life. It is the administrative capital of the Cyclades, and it has always been too busy living its own life to reshape itself for tourism.\n\nAbove the city, Ano Syros is a different world — a medieval Venetian hilltop quarter with Catholic churches, narrow stone lanes that curl around each other like a maze, and views over the bay. The food on Syros is taken seriously. Halvadopites — the island's signature sweet — are sold from old family shops. The loukoumades of Ermoupoli have their own following. Syros is the rare Greek island that works every month of the year.",
+      el: "Η Σύρος είναι το νησί που σε εκπληκτιάζει. Η Ερμούπολη είναι μια πλήρως λειτουργική ελληνική πόλη με νεοκλασικό παραλιακό μέτωπο, μαρμαρόστρωτη πλατεία και όπερα. Η Άνω Σύρος είναι ένα μεσαιωνικό καθολικό χωριό στην κορυφή του λόφου. Το φαγητό στη Σύρο είναι σοβαρή υπόθεση."
+    },
+    highlights: {
+      en: ["Ermoupoli neoclassical architecture", "Ano Syros medieval labyrinth", "Halvadopites & loukoumades", "Galissas & Kini beaches", "Year-round destination"],
+      el: ["Ερμούπολη νεοκλασική αρχιτεκτονική", "Άνω Σύρος μεσαιωνικός λαβύρινθος", "Χαλβαδόπιτες & λουκουμάδες", "Παραλίες Γαλησσάς & Κίνι", "Προορισμός όλο τον χρόνο"]
+    },
+    featured: true,
+    seo: {
+      title: {
+        en: "Syros Travel Guide: Ermoupoli, Ano Syros, Beaches & Local Food",
+        el: "Σύρος: Ταξιδιωτικός Οδηγός — Ερμούπολη, Άνω Σύρος, Παραλίες & Γαστρονομία"
+      },
+      description: {
+        en: "Complete guide to Syros island: Ermoupoli's neoclassical architecture, Ano Syros medieval quarter, best beaches Galissas and Kini, halvadopites and loukoumades, ferry connections and year-round travel tips.",
+        el: "Πλήρης οδηγός για τη Σύρο: Ερμούπολη, Άνω Σύρος, καλύτερες παραλίες, γαστρονομία και πρακτικές συμβουλές."
+      }
+    }
+  },
+  {
     slug: "zakynthos",
     name: "Zakynthos",
     region: { en: "Ionian Islands", el: "Ιόνια Νησιά" },
