@@ -1737,4 +1737,80 @@ export const destinationDetails: Record<string, DestinationDetail> = {
       },
     },
   },
+
+  rethymno: {
+    overview: {
+      en: "Rethymno is the kind of city that makes you slow down. Not because there is nothing to do — there is plenty — but because every alley in the Old Town seems to ask for a second look, every archway carries a different century, and every café terrace feels like an invitation to stay a little longer than planned.\n\nIt is Crete's third-largest city, positioned in the heart of the island's northern coast, roughly halfway between Heraklion and Chania. In many ways that geography reflects its character: it shares the grandeur of both but has kept something they have largely lost — intimacy.\n\nArchitecturally, Rethymno is one of the best-preserved Venetian cities in the Mediterranean. The Republic of Venice controlled Crete from 1204 to 1669 and left behind fountains, loggia buildings, harbour fortifications, and a lighthouse that still stands. The Ottomans then added minarets, hammams, and a different kind of layered beauty. That double legacy is what makes walking the Old Town feel genuinely different from anywhere else in Greece.\n\nBeyond the historic centre, Rethymno has a long sandy beach extending eastward from the harbour, excellent local food, and immediate access to some of Crete's most dramatic interior landscapes — the Amari Valley, the Psiloritis mountain range, and the iconic Preveli Gorge and beach. This is a destination that works at every pace.\n\nPlanning a wider trip around the island? Explore our full [Crete Travel Guide](/destinations/crete) for regional ideas, road trip inspiration, and more places to stay.",
+      el: "Το Ρέθυμνο είναι η πόλη που σε κάνει να κόψεις ρυθμό. Όχι επειδή δεν έχει τίποτα να κάνεις — έχει πολλά — αλλά επειδή κάθε σοκάκι της Παλιάς Πόλης ζητά μια δεύτερη ματιά, κάθε τοξωτή πόρτα κουβαλά έναν διαφορετικό αιώνα και κάθε πεζοδρόμιο καφέ μοιάζει με πρόσκληση να μείνεις λίγο περισσότερο.\n\nΕίναι η τρίτη μεγαλύτερη πόλη της Κρήτης, στο κέντρο της βόρειας ακτής, περίπου στη μέση Ηρακλείου-Χανίων. Η γεωγραφία αντανακλά τον χαρακτήρα της: μοιράζεται το μεγαλείο και των δύο αλλά διατήρησε κάτι που εκείνες έχουν χάσει — την οικειότητα.\n\nΑρχιτεκτονικά, είναι μια από τις καλύτερα διατηρημένες ενετικές πόλεις της Μεσογείου. Η Βενετία κυβέρνησε την Κρήτη από το 1204 έως το 1669 και άφησε σιντριβάνια, λότζες, οχυρά και φάρο. Οι Οθωμανοί πρόσθεσαν μιναρέδες, χαμάμ και μια διαφορετική ομορφιά. Αυτή η διπλή κληρονομιά κάνει το περπάτημα στην Παλιά Πόλη μοναδικό στην Ελλάδα.\n\nΠέρα από το ιστορικό κέντρο, το Ρέθυμνο έχει μακριά αμμώδη παραλία ανατολικά του λιμανιού, εξαιρετικό φαγητό και άμεση πρόσβαση σε μερικά από τα πιο εντυπωσιακά τοπία της Κρήτης — την Κοιλάδα Αμαρίου, τον Ψηλορείτη και το εμβληματικό Φαράγγι του Πρέβελη.\n\nΣχεδιάζετε ένα ευρύτερο ταξίδι στο νησί; Εξερευνήστε τον πλήρη [Οδηγό Ταξιδιού Κρήτης](/destinations/crete) για ιδέες και έμπνευση."
+    },
+    pageIncludes: {
+      en: ["Why visit Rethymno", "Fortezza & Old Town", "Preveli & Arkadi", "Beaches & swimming", "Local food guide", "Honest advice & FAQs"],
+      el: ["Γιατί να πας στο Ρέθυμνο", "Φορτέτζα & Παλιά Πόλη", "Πρέβελη & Αρκάδι", "Παραλίες & θάλασσα", "Οδηγός τοπικού φαγητού", "Ειλικρινείς συμβουλές & FAQs"]
+    },
+    perfectFor: {
+      en: ["History & Architecture enthusiasts", "Couples & slow-travel visitors", "Families wanting beach + culture", "Hikers & outdoor explorers", "Food lovers & Cretan cuisine seekers"],
+      el: ["Λάτρεις ιστορίας & αρχιτεκτονικής", "Ζευγάρια & ταξιδιώτες αργού ρυθμού", "Οικογένειες που θέλουν θάλασσα + πολιτισμό", "Πεζοπόρους & εξερευνητές", "Λάτρεις του φαγητού & κρητικής κουζίνας"]
+    },
+    honestAdvice: {
+      title: { en: "Honest Advice — What to Skip", el: "Ειλικρινής Συμβουλή — Τι να Αποφύγεις" },
+      alert: {
+        en: "What nobody tells you: Rethymno's Old Town has two completely different faces depending on the time of day. Between 11:00 and 14:00 in summer, the main lanes fill with tour groups and the pace becomes slow-moving. Before 09:00, the same streets are entirely yours — cats, bakers, the sound of the fountain. After 22:00, the restaurants quiet down but the bars and music venues begin, and a different, younger version of the city emerges. Book a single night more than you planned and use the extra time to experience all three.",
+        el: "Αυτό που δε σου λέει κανείς: Η Παλιά Πόλη του Ρεθύμνου έχει δύο εντελώς διαφορετικά πρόσωπα. Μεταξύ 11:00–14:00 το καλοκαίρι γεμίζει τουριστικές ομάδες. Πριν τις 09:00, οι ίδιοι δρόμοι είναι εντελώς δικοί σου. Μετά τις 22:00, μια διαφορετική, νεανική εκδοχή της πόλης αναδύεται."
+      },
+      items: {
+        en: [
+          "Eating on the harbour front without checking the menu first — the view doesn't improve the octopus. Walk the harbour for the atmosphere, then turn into the Old Town to eat.",
+          "Attempting Preveli Beach in August without going very early or by boat — the descent path in 38°C heat with hundreds of people is unpleasant. Arrive before 09:30 or take a boat from Plakias.",
+          "Parking inside the Old Town — use the lots outside the walls (port area or Fortezza road). No point you want to reach is more than a 10-minute walk away.",
+          "Rushing the Amari Valley into a 2-hour drive-through — stop in Thronos for lunch, see Byzantine frescoes, buy cherries. Give it a half-day minimum.",
+          "Visiting the Fortezza in the midday heat of July–August — the fortress is largely unshaded. Go at 08:00 opening or in the last hour before closing."
+        ],
+        el: [
+          "Φαγητό στο λιμάνι χωρίς έλεγχο τιμών — η θέα δεν βελτιώνει το χταπόδι. Φάτε στην Παλιά Πόλη.",
+          "Πρέβελη τον Αύγουστο χωρίς πρωινή ώρα — το μονοπάτι με 38°C είναι δυσάρεστο. Πριν τις 09:30 ή με βάρκα.",
+          "Πάρκινγκ μέσα στην Παλιά Πόλη — χρησιμοποιήστε τους χώρους έξω από τα τείχη.",
+          "Βιαστική επίσκεψη στην Κοιλάδα Αμαρίου — σταματήστε στον Θρόνο για φαγητό. Μισή μέρα τουλάχιστον.",
+          "Φορτέτζα το μεσημέρι καλοκαιριού — χωρίς σκιά. Πηγαίνετε 08:00 ή πριν κλείσει."
+        ]
+      }
+    }
+  },
+
+  heraklion: {
+    overview: {
+      en: "Heraklion is not the island postcard. It is the real Crete — dense, layered, occasionally chaotic, and completely alive. The largest city in Crete and one of the most important in Greece, it earns respect the way serious places do: slowly, on its own terms.\n\nThe Minoan Palace of Knossos sits 5 kilometres from the city centre — the most visited archaeological site in Greece after the Acropolis, and one of the most significant in the entire world. The Venetian walls that encircle the old city are among the finest surviving Renaissance fortifications in the Mediterranean. The Archaeological Museum holds the most important Minoan collection on earth. And all around this, there is a city that eats and drinks with genuine conviction: a morning market that runs seven days a week, a raki culture that begins at noon, fish tavernas where the sea is never more than a few steps away.\n\nWhat this means for the traveller is layering of a rare kind. Knossos is not a side trip from a beach town — it is a day spent inside the oldest palace civilisation in Europe. The Archaeological Museum is genuinely world-class, holding the Phaistos Disc, the Snake Goddess figurines, the Minoan frescoes, and a collection that changes how you understand the ancient world. The Venetian walls are 4 kilometres long and up to 40 metres thick — you can walk them, and people do.\n\nAway from all this, Heraklion eats well. The central market on 1866 Street is among the finest food markets in Greece. The Cretan diet — often described as the original Mediterranean diet — manifests on every table. Raki arrives without being asked. This is not a city of performance. It is a city of habit, depth, and genuine conviction.\n\nPlanning a wider trip around Crete? Explore our full [Crete Travel Guide](/destinations/crete) for regional ideas and more places to stay.",
+      el: "Το Ηράκλειο δεν είναι η καρτ ποστάλ του νησιού. Είναι η πραγματική Κρήτη — πυκνή, πολυεπίπεδη, περιστασιακά χαοτική και εντελώς ζωντανή. Η μεγαλύτερη πόλη της Κρήτης κερδίζει τον σεβασμό όπως τον κερδίζουν τα σοβαρά μέρη: αργά, με τους δικούς της όρους.\n\nΤο Μινωικό Παλάτι της Κνωσού βρίσκεται 5 χιλιόμετρα από το κέντρο — ο πιο επισκέψιμος αρχαιολογικός χώρος στην Ελλάδα μετά την Ακρόπολη. Τα ενετικά τείχη είναι από τα ωραιότερα αναγεννησιακά οχυρά της Μεσογείου. Το Αρχαιολογικό Μουσείο φιλοξενεί την πιο σημαντική μινωική συλλογή στον κόσμο. Και γύρω από όλα αυτά, υπάρχει μια πόλη που τρώει και πίνει με γνήσια πεποίθηση.\n\nΑυτό που σημαίνει αυτό για τον ταξιδιώτη είναι στρωματοποίηση σπάνιου είδους. Η Κνωσός δεν είναι μια πλάγια εκδρομή από ένα παραθαλάσσιο θέρετρο — είναι μια μέρα μέσα στον αρχαιότερο ανακτορικό πολιτισμό της Ευρώπης. Τα ενετικά τείχη είναι 4 χιλιόμετρα μήκος και έως 40 μέτρα πάχος. Η κεντρική αγορά στην οδό 1866 είναι από τις καλύτερες στην Ελλάδα.\n\nΣχεδιάζετε ένα ευρύτερο ταξίδι στην Κρήτη; Εξερευνήστε τον πλήρη [Οδηγό Ταξιδιού Κρήτης](/destinations/crete)."
+    },
+    pageIncludes: {
+      en: ["Palace of Knossos", "Heraklion Archaeological Museum", "Venetian Old City", "Cretan food & market guide", "Beaches & day trips", "Practical tips & FAQs"],
+      el: ["Παλάτι της Κνωσού", "Αρχαιολογικό Μουσείο", "Ενετική Παλιά Πόλη", "Οδηγός φαγητού & αγοράς", "Παραλίες & εκδρομές", "Πρακτικές συμβουλές & FAQs"]
+    },
+    perfectFor: {
+      en: ["History & Archaeology enthusiasts", "Food & wine travellers", "Cultural city breaks", "Using Heraklion as a Crete base", "Travellers who want depth over aesthetics"],
+      el: ["Λάτρεις ιστορίας & αρχαιολογίας", "Ταξιδιώτες φαγητού & κρασιού", "Πολιτιστικές αποδράσεις", "Βάση για εξερεύνηση Κρήτης", "Ταξιδιώτες που θέλουν βάθος"]
+    },
+    honestAdvice: {
+      title: { en: "Honest Advice — What to Skip", el: "Ειλικρινής Συμβουλή — Τι να Αποφύγεις" },
+      alert: {
+        en: "What nobody tells you: Knossos without any prior knowledge of Minoan civilisation can feel like a series of confusing concrete structures. Spend 20 minutes reading the basics beforehand, or visit the Archaeological Museum first, and the site transforms. Go unprepared and you may find yourself wondering why you came.",
+        el: "Αυτό που δε σου λέει κανείς: Η Κνωσός χωρίς καμία προηγούμενη γνώση του μινωικού πολιτισμού μοιάζει με μπερδεμένες τσιμεντένιες κατασκευές. Διάβασε πρώτα ή επισκέψου πρώτα το μουσείο."
+      },
+      items: {
+        en: [
+          "Eating at the tourist-facing restaurants directly on Lion Square — walk one alley in any direction for better food and lower prices.",
+          "Visiting Knossos in midday summer heat — the site has almost no shade. Book the first entrance (08:00) or go late afternoon.",
+          "Driving in the old city — the Venetian street grid was not designed for cars. Park outside the walls and walk in.",
+          "Expecting beach resort atmosphere — Heraklion is a real city. Urban, sometimes noisy, occasionally chaotic. That is its nature.",
+          "Skipping the Archaeological Museum — the museum completes Knossos. Doing one without the other is a wasted opportunity."
+        ],
+        el: [
+          "Φαγητό στην πλατεία Λιονταριών — περπάτα ένα στενό πιο πέρα.",
+          "Κνωσός το μεσημέρι καλοκαιριού — χωρίς σκιά. Πήγαινε 08:00 ή απόγευμα.",
+          "Οδήγηση στην παλιά πόλη — πάρκαρε έξω από τα τείχη.",
+          "Να περιμένεις ατμόσφαιρα θέρετρου — το Ηράκλειο είναι πραγματική πόλη.",
+          "Να παραλείψεις το Αρχαιολογικό Μουσείο — ολοκληρώνει την Κνωσό."
+        ]
+      }
+    }
+  },
 };

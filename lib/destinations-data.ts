@@ -694,6 +694,53 @@ export const destinations: Destination[] = [
     }
   },
   {
+    slug: "heraklion",
+    name: "Heraklion",
+    region: { en: "Crete", el: "Κρήτη" },
+    blurb: {
+      en: "Minoan palaces, Venetian walls, and the most powerful food culture in Crete.",
+      el: "Μινωικά ανάκτορα, ενετικά τείχη και η πιο δυνατή γαστρονομία της Κρήτης."
+    },
+    image: "/images/heraklion.webp",
+    overview: {
+      en: "Knossos, the Archaeological Museum, the old Venetian harbour, and Crete's most authentic urban food scene — Heraklion is the real Crete, dense, layered, and completely alive.",
+      el: "Κνωσός, το Αρχαιολογικό Μουσείο, το ενετικό λιμάνι και η πιο αυθεντική γαστρονομική σκηνή της Κρήτης — το Ηράκλειο είναι η πραγματική Κρήτη."
+    },
+    highlights: {
+      en: ["Palace of Knossos", "Archaeological Museum", "Venetian Harbour & Koules Fortress"],
+      el: ["Παλάτι της Κνωσού", "Αρχαιολογικό Μουσείο", "Ενετικό Λιμάνι & Κούλες"]
+    },
+    featured: true,
+    guideLinks: [
+      {
+        href: "/destinations/crete",
+        label: { en: "Explore Crete Guide", el: "Οδηγός Ταξιδιού Κρήτης" }
+      },
+      {
+        href: "/hotels/heraklion",
+        label: { en: "Explore stays in Heraklion", el: "Ανακαλύψτε διαμονή στο Ηράκλειο" }
+      },
+      {
+        href: "/tours/all",
+        label: { en: "See tours & experiences", el: "Δείτε εμπειρίες & tours" }
+      },
+      {
+        href: "/collections/greece-food-and-drink",
+        label: { en: "Discover local food ideas", el: "Ανακαλύψτε τοπικές γεύσεις" }
+      }
+    ],
+    seo: {
+      title: {
+        en: "Heraklion Travel Guide: Knossos, Old Harbour, Food & Things to Do",
+        el: "Ηράκλειο: Ταξιδιωτικός Οδηγός | Κνωσός, Λιμάνι, Φαγητό & Αξιοθέατα"
+      },
+      description: {
+        en: "Complete guide to Heraklion, Crete: the Palace of Knossos, the Old Venetian Harbour, the Archaeological Museum, local food, beaches, day trips, and practical tips.",
+        el: "Πλήρης οδηγός για το Ηράκλειο: Παλάτι της Κνωσού, ενετικό λιμάνι, Αρχαιολογικό Μουσείο, τοπικό φαγητό, παραλίες και πρακτικές συμβουλές."
+      }
+    }
+  },
+  {
     slug: "meteora",
     name: "Meteora",
     region: { en: "Thessaly", el: "Θεσσαλία" },
@@ -1125,6 +1172,53 @@ export const destinations: Destination[] = [
       description: {
         en: "Complete travel guide to Ikaria: Blue Zone longevity secrets, panigiri festivals, thermal springs, Seychelles Beach, villages, food, where to stay and honest insider tips for the Eastern Aegean.",
         el: "Πλήρης ταξιδιωτικός οδηγός για την Ικαρία: Μπλε Ζώνη, πανηγύρια, ιαματικές πηγές, παραλία Σεϋχέλλες, χωριά, φαγητό και αυθεντικές συμβουλές."
+      }
+    }
+  },
+  {
+    slug: "rethymno",
+    name: "Rethymno",
+    region: { en: "Crete", el: "Κρήτη" },
+    blurb: {
+      en: "Venetian old town, Fortezza castle, and authentic Cretan city life.",
+      el: "Ενετική παλιά πόλη, Φορτέτζα και αυθεντική κρητική πόλη."
+    },
+    image: "/images/rethymno.webp",
+    overview: {
+      en: "Venetian-Ottoman Old Town, the Fortezza fortress, a sandy city beach, and the best base for exploring Crete's dramatic interior — Preveli, Arkadi, Amari Valley, and Psiloritis.",
+      el: "Ενετο-οθωμανική παλιά πόλη, το κάστρο Φορτέτζα, αμμώδης παραλία και η καλύτερη βάση για να εξερευνήσετε το εσωτερικό της Κρήτης — Πρέβελη, Αρκάδι, Αμάρι και Ψηλορείτη."
+    },
+    highlights: {
+      en: ["Venetian Old Town", "Fortezza Castle", "Preveli & Arkadi"],
+      el: ["Ενετική Παλιά Πόλη", "Φορτέτζα", "Πρέβελη & Αρκάδι"]
+    },
+    featured: true,
+    guideLinks: [
+      {
+        href: "/destinations/crete",
+        label: { en: "Explore Crete Guide", el: "Οδηγός Ταξιδιού Κρήτης" }
+      },
+      {
+        href: "/hotels/rethymno",
+        label: { en: "Explore stays in Rethymno", el: "Ανακαλύψτε διαμονή στο Ρέθυμνο" }
+      },
+      {
+        href: "/tours/all",
+        label: { en: "See tours & experiences", el: "Δείτε εμπειρίες & tours" }
+      },
+      {
+        href: "/collections/greece-food-and-drink",
+        label: { en: "Discover local food ideas", el: "Ανακαλύψτε τοπικές γεύσεις" }
+      }
+    ],
+    seo: {
+      title: {
+        en: "Rethymno Travel Guide | Old Town, Fortezza, Beaches & Where to Go",
+        el: "Ρέθυμνο: Οδηγός Ταξιδιού | Παλιά Πόλη, Φορτέτζα, Παραλίες & Αξιοθέατα"
+      },
+      description: {
+        en: "Plan your trip to Rethymno with our travel guide. Discover the Venetian Old Town, Fortezza Castle, Preveli Palm Beach, Arkadi Monastery, local food, and the best things to do in Crete's most underrated city.",
+        el: "Οργανώστε το ταξίδι σας στο Ρέθυμνο με τον οδηγό μας. Ανακαλύψτε την ενετική παλιά πόλη, τη Φορτέτζα, τον Πρέβελη, τη Μονή Αρκαδίου, τοπικές γεύσεις και τα καλύτερα αξιοθέατα."
       }
     }
   }
