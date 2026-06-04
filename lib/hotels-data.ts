@@ -5,8 +5,8 @@ export const hotels: HotelCard[] = [
     name: "Where to Stay in Santorini",
     place: "Santorini (Thira) — Cyclades",
     info: {
-      en: "Choosing where to stay in Santorini is the single most consequential decision of the entire trip — the caldera cliff towns on the western rim offer the extraordinary views that define the island's identity but demand a premium and significant physical effort, while the beach villages on the east coast offer ease, affordability and direct sea access without the visual drama; and between these two poles lies a range of village bases — Firostefani, Imerovigli, Pyrgos, Megalochori, Akrotiri — each with its own character, price point and way of experiencing one of the most visually extraordinary islands on earth.",
-      el: "Η επιλογή της βάσης σου στη Σαντορίνη είναι η πιο καθοριστική απόφαση ολόκληρου του ταξιδιού — τα χωριά της δυτικής καλδέρας προσφέρουν τις εκπληκτικές θέες που ορίζουν την ταυτότητα του νησιού, αλλά απαιτούν υψηλό κόστος και σημαντική φυσική προσπάθεια, ενώ τα παραλιακά χωριά της ανατολικής πλευράς προσφέρουν άνεση, οικονομία και άμεση πρόσβαση στη θάλασσα χωρίς το δραματικό εκείνο βάθος εικόνας· και ανάμεσα σε αυτούς τους δύο πόλους βρίσκεται μια σειρά από χωριά — Φηροστεφάνι, Ημεροβίγλι, Πύργος, Μεγαλοχώρι, Ακρωτήρι — καθένα με τον δικό του χαρακτήρα, τη δική του τιμή και τον δικό του τρόπο να βιώνεις ένα από τα πιο οπτικά εκπληκτικά νησιά της γης.",
+      en: "Santorini's caldera cliff towns offer extraordinary views but demand a premium, while the east coast beach villages provide ease and affordability. Choose between Oia, Fira, Imerovigli for caldera drama or Kamari, Perissa, Perivolos for beach access.",
+      el: "Τα χωριά της καλδέρας προσφέρουν εκπληκτική θέα αλλά υψηλό κόστος, ενώ τα ανατολικά παραλιακά χωριά προσφέρουν άνεση και οικονομία. Διάλεξε ανάμεσα σε Οία, Φηρά, Ημεροβίγλι ή Καμάρι, Περίσσα, Περίβολο.",
     },
     image: "/images/hotel-santorini.webp",
     badge: "Featured stay",

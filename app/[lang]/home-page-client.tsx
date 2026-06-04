@@ -212,7 +212,7 @@ export default function HomePageClient({
         en: "Explore day trips, boat tours and experience-led ideas across the Greek islands and mainland.",
         el: "Ανακάλυψε ημερήσιες εκδρομές, boat tours και εμπειρίες στα ελληνικά νησιά και στην ηπειρωτική Ελλάδα.",
       },
-      href: withLang("/collections/greece-tours-and-experiences"),
+      href: withLang("/tours/all"),
       image: tours[0]?.image || "/images/hero-greece.webp",
       eyebrow: { en: "Curated Ideas", el: "Επιλεγμένες Ιδέες" },
       tags: {
