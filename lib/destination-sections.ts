@@ -4681,11 +4681,79 @@ export const destinationSections: Record<string, DestinationSection[]> = {
     },
     {
       layout: "list",
-      title: { en: "Beaches and Attractions in Rhodes", el: "Παραλίες & Αξιοθέατα" },
-      text: {
-        en: "Rhodes has more range than many travelers expect, and that applies both to history and coastline.\n\n**Medieval Old Town**\nThis is one of the island's defining attractions and one of the strongest reasons to visit Rhodes in the first place. It is best explored slowly, with time to walk, stop, and absorb the atmosphere rather than rushing through it.\n\n**Lindos Acropolis**\nOne of the most famous historic sights on the island, combining cultural value with a visually dramatic setting.\n\n**Beach areas along the east coast**\nMany visitors choose Rhodes for beach holidays, and the island has enough developed and relaxed coastal areas to support different travel styles.\n\n**Harbor and town areas**\nRhodes Town offers more than just access and logistics. It also gives the island an urban holiday side with dining, movement, and useful base value.\n\n**Regional exploration**\nBecause the island is large, part of its appeal comes from seeing more than one side of it rather than staying fixed in a single place the entire time.",
-        el: "Η Ρόδος έχει μεγαλύτερη ποικιλία από ό,τι περιμένουν πολλοί ταξιδιώτες, και αυτό ισχύει τόσο για την ιστορία όσο και για την ακτογραμμή.\n\n**Μεσαιωνική Παλιά Πόλη**\nΑυτό είναι ένα από τα καθοριστικά αξιοθέατα του νησιού και ένας από τους βασικότερους λόγους για να επισκεφθείτε τη Ρόδο εξ αρχής. Εξερευνάται καλύτερα με αργούς ρυθμούς, με χρόνο για περπάτημα, στάσεις και απορρόφηση της ατμόσφαιρας, αντί για βιαστικό πέρασμα.\n\n**Ακρόπολη Λίνδου**\nΈνα από τα πιο διάσημα ιστορικά αξιοθέατα του νησιού, που συνδυάζει την πολιτιστική αξία με ένα οπτικά εντυπωσιακό σκηνικό.\n\n**Παραλίες κατά μήκος της ανατολικής ακτής**\nΠολλοί επισκέπτες επιλέγουν τη Ρόδο για παραθαλάσσιες διακοπές, και το νησί διαθέτει αρκετές οργανωμένες αλλά και χαλαρές παράκτιες περιοχές για να υποστηρίξει διαφορετικά στυλ ταξιδιού.\n\n**Περιοχές γύρω από το λιμάνι και την πόλη**\nΗ πόλη της Ρόδου προσφέρει πολλά περισσότερα από απλή πρόσβαση και υποδομές. Προσδίδει επίσης στο νησί μια αστική πλευρά διακοπών, με εστιατόρια, ζωντάνια και μεγάλη πρακτική αξία ως βάση.\n\n**Εξερεύνηση στην ενδοχώρα**\nΛόγω του μεγέθους του νησιού, μέρος της γοητείας του προέρχεται από το να δείτε περισσότερες από μία πλευρές του, αντί να μείνετε κολλημένοι σε ένα μόνο μέρος σε όλη τη διάρκεια του ταξιδιού."
-      }
+      title: { en: "Beaches in Rhodes", el: "Παραλίες στη Ρόδο" },
+      items: [
+        {
+          title: { en: "Tsambika", el: "Τσαμπίκα" },
+          text: {
+            en: "Widely considered one of the best beaches on the island. Long stretch of golden sand with crystal-clear water, backed by dunes and a hillside monastery. Organized with sunbeds and tavernas. Tip: climb to the Monastery of Panagia Tsambika for a stunning view over the entire bay.",
+            el: "Θεωρείται μία από τις καλύτερες παραλίες του νησιού. Μεγάλη αμμώδης ακτή με κρυστάλλινα νερά, αμμόλοφους και το μοναστήρι στον λόφο. Tip: ανέβα στο Μοναστήρι της Παναγίας Τσαμπίκας για υπέροχη θέα σε όλο τον κόλπο."
+          }
+        },
+        {
+          title: { en: "Faliraki", el: "Φαληράκι" },
+          text: {
+            en: "One of the most popular resort beaches on Rhodes, with a long sandy shore, full water sports facilities, beach bars, and sunbeds. The atmosphere is lively and energetic in summer. Tip: the northern end of the beach is quieter and less crowded.",
+            el: "Μία από τις πιο δημοφιλείς παραλίες της Ρόδου, με μεγάλη αμμώδη ακτή, θαλάσσια σπορ, beach bars και ξαπλώστρες. Η ατμόσφαιρα είναι ζωντανή το καλοκαίρι. Tip: το βόρειο άκρο της παραλίας είναι πιο ήσυχο."
+          }
+        },
+        {
+          title: { en: "Anthony Quinn Bay", el: "Όρμος Άντονι Κουίν" },
+          text: {
+            en: "A small, scenic cove with turquoise water, pebbly sand, and dramatic rocky surroundings. Named after the actor who fell in love with the spot while filming The Guns of Navarone. Tip: arrive early as it gets crowded quickly in peak season.",
+            el: "Ένας μικρός γραφικός όρμος με τιρκουάζ νερά, βοτσαλωτή άμμο και εντυπωσιακό βραχώδες σκηνικό. Tip: έλα νωρίς γιατί γεμίζει γρήγορα τους καλοκαιρινούς μήνες."
+          }
+        },
+        {
+          title: { en: "St. Paul's Bay (Lindos)", el: "Όρμος Αγίου Παύλου (Λίνδος)" },
+          text: {
+            en: "A beautiful sandy bay right below Lindos village, sheltered by cliffs on both sides. The water is calm and crystal-clear. The nearby chapel of St. Paul adds character. Tip: combine with a visit to Lindos Acropolis for a perfect half-day.",
+            el: "Μια πανέμορφη αμμώδης παραλία ακριβώς κάτω από τη Λίνδο, προστατευμένη από βράχια. Η θάλασσα είναι ήρεμη και κρυστάλλινη. Tip: συνδύασε με επίσκεψη στην Ακρόπολη της Λίνδου."
+          }
+        },
+        {
+          title: { en: "Elli Beach", el: "Παραλία Έλλη" },
+          text: {
+            en: "Rhodes Town's main city beach, located right along the eastern waterfront. Sandy with shallow water, sunbeds, and cafes. Famous for the 'Elli Beach Bar' scene. Tip: walk the pier to the nearby fort for great coastal views.",
+            el: "Η κεντρική παραλία της πόλης της Ρόδου, κατά μήκος του ανατολικού παραλιακού μετώπου. Αμμώδης με ρηχά νερά, ξαπλώστρες και καφέ. Tip: περπάτησε στην προβλήτα προς το κοντινό φρούριο."
+          }
+        },
+        {
+          title: { en: "Kallithea Springs", el: "Καλλιθέα" },
+          text: {
+            en: "A historic beach with distinctive Italian-era architecture, crystal-clear water, and pebbly coves. The restored spring complex houses a bar and restaurant. Tip: the water is excellent for snorkeling thanks to the rocky seabed.",
+            el: "Ιστορική παραλία με χαρακτηριστική ιταλική αρχιτεκτονική, κρυστάλλινα νερά και βοτσαλωτούς όρμους. Tip: τα νερά είναι εξαιρετικά για Snorkeling χάρη στον βραχώδη βυθό."
+          }
+        },
+        {
+          title: { en: "Prasonisi", el: "Πρασονήσι" },
+          text: {
+            en: "Located at the southernmost tip of Rhodes, this unique beach connects the island to a small islet by a sandbar. When conditions are right, you can swim on both the Aegean and Mediterranean sides. Famous for windsurfing and kitesurfing. Tip: best visited with a car — the drive is scenic and worthwhile.",
+            el: "Στο νοτιότερο άκρο της Ρόδου, μια μοναδική παραλία που ενώνει το νησί με μια μικρή νησίδα. Φημίζεται για windsurfing και kitesurfing. Tip: καλύτερα με αυτοκίνητο — η διαδρομή αξίζει."
+          }
+        },
+        {
+          title: { en: "Agathi", el: "Αγάθη" },
+          text: {
+            en: "A secluded sandy beach surrounded by greenery on the east coast, less developed than the main resort beaches. Shallow, clear water makes it ideal for families. Tip: bring supplies as there is only a small canteen in high season.",
+            el: "Απομονωμένη αμμώδης παραλία περιτριγυρισμένη από πράσινο, λιγότερο ανεπτυγμένη. Ιδανική για οικογένες. Tip: φέρε εφόδια καθώς υπάρχει μόνο μικρό κυλικείο."
+          }
+        },
+        {
+          title: { en: "Gennadi", el: "Γεννάδι" },
+          text: {
+            en: "A long, quiet pebble-and-sand beach on the southeast coast, popular with travelers seeking a relaxed atmosphere away from the crowds. Some sunbeds and tavernas. Tip: the beach is exposed to summer winds, making it popular for windsurfing.",
+            el: "Μεγάλη, ήσυχη παραλία στη νοτιοανατολική ακτή, δημοφιλής για όσους γυρεύουν χαλάρωση μακριά από τα πλήθη. Tip: η παραλία έχει ανέμους, ιδανική για windsurfing."
+          }
+        },
+        {
+          title: { en: "Ladiko", el: "Λαδικό" },
+          text: {
+            en: "A small, peaceful cove just south of Anthony Quinn Bay with pebbly sand and crystal water. Less busy than its famous neighbor, with a relaxed atmosphere. Tip: good for a quiet afternoon swim away from the crowds.",
+            el: "Μικρός ήσυχος όρμος νότια του Άντονι Κουίν, με βοτσαλωτή άμμο και κρυστάλλινα νερά. Λιγότερο πολυσύχναστος. Tip: ιδανικός για χαλαρωτικό απογευματινό μπάνιο."
+          }
+        }
+      ]
     },
     {
       layout: "list",
@@ -4811,6 +4879,47 @@ export const destinationSections: Record<string, DestinationSection[]> = {
         en: "Monemvasia is a strong choice for travelers who want a destination with real historic atmosphere, a romantic setting for a slower trip, stone-built architecture and medieval character, sea views combined with old-world charm, and a memorable stop in the Peloponnese beyond the usual weekend escapes.\n\nUnlike broader beach destinations, Monemvasia is more about the experience of place. It rewards travelers who enjoy mood, walking, architecture, and strong visual identity.",
         el: "Η Μονεμβασιά είναι μια εξαιρετική επιλογή για ταξιδιώτες που αναζητούν έναν προορισμό με πραγματική ιστορική ατμόσφαιρα, ένα ρομαντικό σκηνικό για πιο αργούς ρυθμούς, πετρόχτιστη αρχιτεκτονική και μεσαιωνικό χαρακτήρα, θέα στη θάλασσα σε συνδυασμό με την αίγλη του παρελθόντος, και μια αξέχαστη στάση στην Πελοπόννησο, πέρα από τις συνηθισμένες αποδράσεις του Σαββατοκύριακου.\n\nΣε αντίθεση με τους ευρύτερους παραθαλάσσιους προορισμούς, η Μονεμβασιά εστιάζει περισσότερο στην ίδια την εμπειρία του τόπου. Ανταμείβει τους ταξιδιώτες που απολαμβάνουν την ατμόσφαιρα, το περπάτημα, την αρχιτεκτονική και την ισχυρή οπτική ταυτότητα."
       }
+    },
+    {
+      layout: "list",
+      title: { en: "Beaches in Monemvasia", el: "Παραλίες στη Μονεμβασιά" },
+      items: [
+        {
+          title: { en: "Pori Beach", el: "Παραλία Πόρι" },
+          text: {
+            en: "The closest sandy beach to Monemvasia, just a few minutes' drive from the rock. A long stretch of golden sand with crystal-clear water, sunbeds, and a beach taverna. Tip: the views of Monemvasia from this beach are stunning — bring your camera at golden hour.",
+            el: "Η κοντινότερη αμμώδης παραλία στη Μονεμβασιά, λίγα λεπτά με το αυτοκίνητο. Μεγάλη χρυσή άμμος, κρυστάλλινα νερά, ξαπλώστρες και ταβέρνα. Tip: η θέα στη Μονεμβασιά από εδώ είναι μαγευτική."
+          }
+        },
+        {
+          title: { en: "Ambelakia", el: "Αμπελάκια" },
+          text: {
+            en: "A small, sheltered pebble cove with turquoise water, surrounded by rocks and greenery. Quiet and less developed than Pori. Ideal for a peaceful swim away from any crowds. Tip: the water clarity here is excellent for snorkelling.",
+            el: "Μικρός προστατευμένος βοτσαλωτός όρμος με τιρκουάζ νερά, ήσυχος και λιγότερο ανεπτυγμένος. Tip: η διαύγεια του νερού είναι εξαιρετική για snorkeling."
+          }
+        },
+        {
+          title: { en: "Xifias", el: "Ξιφίας" },
+          text: {
+            en: "A long, organized sandy beach on the mainland coast opposite Monemvasia, popular with families. Shallow water, sunbeds, and several seaside tavernas serving fresh fish. Tip: the tavernas here serve some of the best grilled octopus in the region.",
+            el: "Μεγάλη οργανωμένη αμμώδης παραλία απέναντι από τη Μονεμβασιά, δημοφιλής για οικογένειες. Ρηχά νερά και ταβέρνες με φρέσκο ψάρι. Tip: το χταπόδι εδώ είναι από τα καλύτερα."
+          }
+        },
+        {
+          title: { en: "Plitra", el: "Πλύτρα" },
+          text: {
+            en: "A charming fishing village with a long pebble-and-sand beach, calm waters, and excellent fish tavernas right on the seafront. Less touristy than the nearby resort beaches. Tip: combine your beach day with lunch at one of the waterfront tavernas.",
+            el: "Γραφικό ψαροχώρι με μακριά παραλία, ήρεμα νερά και εξαιρετικές ψαροταβέρνες. Tip: συνδύασε τη μέρα στην παραλία με μεσημεριανό στο λιμάνι."
+          }
+        },
+        {
+          title: { en: "Stavri", el: "Σταυρί" },
+          text: {
+            en: "A secluded pebble beach with deep blue water, hidden among rocky cliffs. Requires a short walk to reach but rewards with privacy and natural beauty. Tip: bring water and snacks as there are no facilities.",
+            el: "Απομονωμένη βοτσαλωτή παραλία με βαθιά μπλε νερά, κρυμμένη ανάμεσα σε βράχια. Tip: φέρε νερό και σνακ γιατί δεν υπάρχουν υποδομές."
+          }
+        }
+      ]
     },
     {
       layout: "grid",
@@ -6498,6 +6607,47 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       ],
     },
     {
+      title: { en: "Best Beaches near Patras", el: "Καλύτερες Παραλίες κοντά στην Πάτρα" },
+      layout: "list",
+      items: [
+        {
+          title: { en: "Kalogria Beach", el: "Παραλία Καλογριά" },
+          text: {
+            en: "One of the most beautiful beaches in the Peloponnese, about 40 minutes from Patras. A long stretch of golden sand backed by the Strofylia forest — a protected wetland with rare bird species. The water is shallow and crystal-clear. Tip: arrive early on summer weekends as it fills up with Patra locals.",
+            el: "Μία από τις ομορφότερες παραλίες της Πελοποννήσου, 40 λεπτά από την Πάτρα. Χρυσή άμμος με το δάσος της Στροφυλιάς. Tip: έλα νωρίς τα Σαββατοκύριακα."
+          }
+        },
+        {
+          title: { en: "Psathopyrgos", el: "Ψαθόπυργος" },
+          text: {
+            en: "The closest beach to Patras, just 15 minutes west. Long pebble-and-sand shore with organised sunbeds and several seaside tavernas. Perfect for a quick afternoon swim without a long drive.",
+            el: "Η κοντινότερη παραλία στην Πάτρα, 15 λεπτά δυτικά. Οργανωμένη με ξαπλώστρες και ταβέρνες. Ιδανική για γρήγορο απογευματινό μπάνιο."
+          }
+        },
+        {
+          title: { en: "Longos & Selianitika (Aigialeia)", el: "Λόγγος & Σελιανίτικα (Αιγιάλεια)" },
+          text: {
+            en: "Two attractive beach resorts about 30-40 minutes east of Patras along the Aigialeia coast. Longos has a lively seafront with cafes and restaurants; Selianitika is quieter with a long pebble beach. Tip: the coastal road from Patras to Aigio is one of the most scenic drives in the region.",
+            el: "Δύο ελκυστικά παραθαλάσσια θέρετρα, 30-40 λεπτά ανατολικά. Ο Λόγγος έχει ζωντανό παραλιακό μέτωπο, η Σελιανίτικα είναι πιο ήσυχη."
+          }
+        },
+        {
+          title: { en: "Nafpaktos Beaches (Gribovo & Psani)", el: "Παραλίες Ναυπάκτου (Γριμπόβο & Ψανή)" },
+          text: {
+            en: "The beaches of Nafpaktos, about 25 minutes west of Patras via the Rio-Antirrio bridge. Two organised sandy beaches on either side of the Venetian harbour — Gribovo on the east and Psani on the west. The backdrop of the castle and old town makes these unusually scenic. Tip: stay for sunset and dinner in the harbour.",
+            el: "Οι παραλίες της Ναυπάκτου, 25 λεπτά δυτικά. Δύο οργανωμένες αμμώδεις παραλίες εκατέρωθεν του λιμανιού. Tip: μείνε για ηλιοβασίλεμα και δείπνο."
+          }
+        },
+        {
+          title: { en: "Kourouta & Beaches of Ilia", el: "Κουρούτα & Παραλίες Ηλείας" },
+          text: {
+            en: "About an hour south of Patras, the coast of Ilia offers some of the longest sandy beaches in the Peloponnese. Kourouta is the most popular, with fine sand, clear water, and beach bars nearby. Further south, beaches like Spiantza and Agios Ilias are quieter. Tip: combine with a visit to Ancient Olympia — only 30 minutes inland.",
+            el: "Μία ώρα νότια της Πάτρας. Η Κουρούτα είναι η πιο δημοφιλής. Συνδύασε με επίσκεψη στην Αρχαία Ολυμπία."
+          }
+        }
+      ]
+    },
+    {
       title: {
         en: "Best time for Patras",
         el: "Καλύτερη εποχή για Πάτρα",
@@ -7375,6 +7525,47 @@ export const destinationSections: Record<string, DestinationSection[]> = {
           text: {
             en: "No overcrowding, no inflated prices, no shops selling the same fridge magnets. The city moves at a Greek pace and doesn't perform for visitors.",
             el: "Χωρίς υπερβολικό συνωστισμό, χωρίς φουσκωμένες τιμές. Η πόλη κινείται με ελληνικό ρυθμό."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "Beaches in Kalamata & Messinia", el: "Παραλίες στην Καλαμάτα & τη Μεσσηνία" },
+      layout: "list",
+      items: [
+        {
+          title: { en: "Kalamata Beach (City Beach)", el: "Παραλία Καλαμάτας" },
+          text: {
+            en: "One of the longest urban beaches in Greece, stretching nearly 7km along the Messenian Gulf. Fine dark-grey sand, clean organised sections, sunbeds, and beach bars. The northern end is quieter; the southern stretches near the marina have more amenities. Tip: the promenade is perfect for an evening stroll or bike ride.",
+            el: "Μία από τις μεγαλύτερες αστικές παραλίες στην Ελλάδα, σχεδόν 7χλμ. Σκούρα γκρι άμμος, οργανωμένες υποδομές. Tip: ο πεζόδρομος είναι ιδανικός για βραδινή βόλτα."
+          }
+        },
+        {
+          title: { en: "Voidokilia Beach", el: "Παραλία Βοϊδοκοιλιά" },
+          text: {
+            en: "Arguably the most famous beach in Messinia and one of the most photographed in Greece. A perfect horseshoe of fine white sand enclosing a lagoon, backed by dunes and the Gialova Lagoon wetlands. Protected by the Natura 2000 network. Tip: swim in the lagoon side — it is warmer, shallower, and equally beautiful.",
+            el: "Η πιο διάσημη παραλία της Μεσσηνίας. Τέλειο πεταλόσχημο τόξο λευκής άμμου. Tip: κολύμπησε στη λιμνοθάλασσα — είναι πιο ζεστή."
+          }
+        },
+        {
+          title: { en: "Stoupa", el: "Στούπα" },
+          text: {
+            en: "A popular beach resort in the Mani peninsula, about 40 minutes from Kalamata. Two sandy beaches — the main Stoupa beach and the quieter Kalogria — with crystal-clear water, tavernas, and a relaxed atmosphere. Tip: the sunset from the hill behind Stoupa is one of the best in the Peloponnese.",
+            el: "Δημοφιλές παραθαλάσσιο θέρετρο στη Μάνη, 40 λεπτά από την Καλαμάτα. Δύο αμμώδεις παραλίες. Tip: το ηλιοβασίλεμα από τον λόφο είναι μαγευτικό."
+          }
+        },
+        {
+          title: { en: "Finikounda", el: "Φοινικούντα" },
+          text: {
+            en: "A charming coastal village in southern Messinia with a beautiful long sandy beach protected by the island of Schiza. Calm, shallow water ideal for families. Good tavernas along the waterfront. Tip: take a boat trip to the nearby uninhabited island of Sapienza.",
+            el: "Γραφικό παραθαλάσσιο χωριό στη νότια Μεσσηνία με μεγάλη αμμώδη παραλία. Tip: κάνε εκδρομή με σκάφος στη Σαπιέντζα."
+          }
+        },
+        {
+          title: { en: "Costa Navarino Beaches", el: "Παραλίες Costa Navarino" },
+          text: {
+            en: "The beaches within the Costa Navarino resort complex — including the main Navarino Dunes beach and the more secluded Romanos beach — are exceptionally well-maintained with fine sand, clear water, and premium facilities. Day access is possible at some sections. Tip: the beach at the Romanos area is quieter and more natural.",
+            el: "Οι παραλίες του Costa Navarino είναι εξαιρετικά περιποιημένες. Tip: η παραλία στο Romanos είναι πιο ήσυχη."
           }
         }
       ]

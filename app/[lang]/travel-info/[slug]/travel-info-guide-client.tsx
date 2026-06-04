@@ -327,7 +327,7 @@ export default function TravelInfoGuideClient({ lang, slug, item }: TravelInfoGu
                 <li><Link href={withLang("/destinations")} className="text-slate-600 hover:text-slate-900">Destinations</Link></li>
                 <li><Link href={withLang("/travel-info")} className="text-slate-600 hover:text-slate-900">Travel Info</Link></li>
                 <li><Link href={withLang("/hotels")} className="text-slate-600 hover:text-slate-900">Hotels</Link></li>
-                <li><Link href={withLang("/tours")} className="text-slate-600 hover:text-slate-900">Tours</Link></li>
+                <li><Link href={withLang("/tours/all")} className="text-slate-600 hover:text-slate-900">Tours</Link></li>
                 <li><Link href={withLang("/collections/greece-food-and-drink")} className="text-slate-600 hover:text-slate-900">Eat & Drink</Link></li>
               </ul>
             </div>

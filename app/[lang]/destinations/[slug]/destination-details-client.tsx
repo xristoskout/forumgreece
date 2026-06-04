@@ -581,7 +581,7 @@ export default function DestinationDetailsClient({
 
               <div className="mt-8 space-y-3">
                 <Link
-                  href={withLang("/#destinations")}
+                href={withLang("/destinations")}
                   className="block rounded-2xl bg-indigo-600 border-none px-5 py-3 text-center font-semibold text-white transition hover:bg-indigo-500"
                 >
                   {lang === "en"

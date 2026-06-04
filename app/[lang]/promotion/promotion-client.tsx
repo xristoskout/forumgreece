@@ -398,7 +398,7 @@ export default function PromotionClient() {
                 <li><Link href={withLang("/destinations")} className="text-[#4a4a6a] hover:text-[#1d6fe8]">Destinations</Link></li>
                 <li><Link href={withLang("/travel-info")} className="text-[#4a4a6a] hover:text-[#1d6fe8]">Travel Info</Link></li>
                 <li><Link href={withLang("/hotels")} className="text-[#4a4a6a] hover:text-[#1d6fe8]">Hotels</Link></li>
-                <li><Link href={withLang("/tours")} className="text-[#4a4a6a] hover:text-[#1d6fe8]">Tours</Link></li>
+                <li><Link href={withLang("/tours/all")} className="text-[#4a4a6a] hover:text-[#1d6fe8]">Tours</Link></li>
                 <li><Link href={withLang("/collections/greece-food-and-drink")} className="text-[#4a4a6a] hover:text-[#1d6fe8]">Eat & Drink</Link></li>
               </ul>
             </div>
