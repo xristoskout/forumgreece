@@ -200,17 +200,17 @@ export default function DestinationsClient({
                 {regionDestinations.map((dest) => {
                   const hasFullGuide = !!dest.seo;
                   return (
-                    <article key={dest.slug} className="group">
+                    <article key={dest.slug} className="group flex flex-col h-full">
                       <Link
                         href={hasFullGuide ? `/${lang}/destinations/${dest.slug}` : "#"}
-                        className={`block h-full rounded-2xl overflow-hidden border bg-white shadow-sm transition-all duration-500 ${
+                        className={`flex flex-col h-full rounded-2xl overflow-hidden border bg-white shadow-sm transition-all duration-500 ${
                           hasFullGuide
                             ? "border-slate-200 hover:-translate-y-2 hover:shadow-xl hover:border-indigo-200 cursor-pointer"
                             : "border-slate-100 opacity-75 cursor-default pointer-events-none"
                         }`}
                         tabIndex={hasFullGuide ? undefined : -1}
                       >
-                        <div className="relative h-48 overflow-hidden bg-slate-100">
+                        <div className="relative h-48 overflow-hidden bg-slate-100 shrink-0">
                           <Image
                             src={dest.image}
                             alt={dest.name}
@@ -235,7 +235,7 @@ export default function DestinationsClient({
                             </div>
                           )}
                         </div>
-                        <div className="p-5">
+                        <div className="flex flex-col flex-1 p-5">
                           <h3 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-indigo-700 transition-colors">
                             {dest.name}
                           </h3>
@@ -250,11 +250,11 @@ export default function DestinationsClient({
                             ))}
                           </div>
                           {hasFullGuide ? (
-                            <span className="inline-flex items-center gap-1.5 text-sm font-bold text-indigo-600 group-hover:gap-3 transition-all">
+                            <span className="inline-flex items-center gap-1.5 text-sm font-bold text-indigo-600 group-hover:gap-3 transition-all mt-auto">
                               {t.guide[lang]} <span className="transition-transform group-hover:translate-x-1">→</span>
                             </span>
                           ) : (
-                            <span className="text-xs text-slate-400 font-medium">{t.comingSoon[lang]}</span>
+                            <span className="text-xs text-slate-400 font-medium mt-auto">{t.comingSoon[lang]}</span>
                           )}
                         </div>
                       </Link>

@@ -119,6 +119,23 @@ export type TourItem = {
   sections: TourSection[];
 };
 
+export type BlogPost = {
+  slug: string;
+  title: Localized;
+  excerpt: Localized;
+  body: Localized;
+  image: string;
+  author: string;
+  publishedDate: string;
+  category: Localized;
+  tags: string[];
+  featured?: boolean;
+  seo?: {
+    title: Localized;
+    description: Localized;
+  };
+};
+
 export type CommunityCard = {
   title: Localized;
   description: Localized;

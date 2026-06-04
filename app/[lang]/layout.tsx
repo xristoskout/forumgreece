@@ -1,4 +1,5 @@
-import type { Lang } from "../../lib/content";
+import type { Lang } from "../../lib/locale";
+import SiteFooter from "../../components/SiteFooter";
 
 type LangLayoutProps = {
   children: React.ReactNode;
@@ -13,5 +14,10 @@ export default async function LangLayout({ children, params }: LangLayoutProps) 
   const { lang } = await params;
   const pageLang: Lang = isSupportedLang(lang) ? lang : "en";
 
-  return <div lang={pageLang}>{children}</div>;
+  return (
+    <div lang={pageLang} className="flex flex-col min-h-screen">
+      {children}
+      <SiteFooter lang={pageLang} />
+    </div>
+  );
 }

@@ -114,7 +114,7 @@ export default function ExperienceDetailsClient({
 <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(3,169,244,0.08),rgba(129,212,250,0.03),rgba(2,136,209,0.04))]" />
 <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.08),transparent_30%),radial-gradient(circle_at_bottom_left,rgba(255,255,255,0.04),transparent_35%)]" />
 
-        <div className="relative mx-auto grid min-h-[520px] max-w-7xl gap-10 px-6 py-20 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+        <div className="relative mx-auto grid min-h-[520px] max-w-7xl gap-10 px-6 py-12 md:py-20 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <div>
             <span className="inline-flex rounded-full bg-white/15 px-4 py-1 text-sm font-medium backdrop-blur">
               {t.localExperiences}
@@ -555,43 +555,6 @@ export default function ExperienceDetailsClient({
           </aside>
         </div>
       </section>
-
-      <footer className="border-t border-slate-200 bg-white backdrop-blur-md">
-        <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-slate-600 md:flex-row md:items-center md:justify-between">
-          <div>{t.footerText}</div>
-
-          <div className="flex gap-5">
-            <Link href={withLang("/")} className="hover:text-slate-900">
-              {t.home}
-            </Link>
-
-            <Link href={withLang("/#tours")} className="hover:text-slate-900">
-              {t.tours}
-            </Link>
-
-            <Link
-              href={withLang("/travel-to-greece")}
-              className="hover:text-slate-900"
-            >
-              {t.travelToGreece}
-            </Link>
-          </div>
-        </div>
-        <div className="border-t border-slate-100 mt-2 pt-5 pb-6 flex flex-col items-center gap-2">
-          <a 
-            href="https://www.focusai.gr" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="group flex items-center gap-2 text-sm font-bold tracking-widest transition-all"
-          >
-            <span className="bg-gradient-to-r from-indigo-600 to-indigo-400 bg-clip-text text-transparent group-hover:from-indigo-500 group-hover:to-purple-500 transition-all duration-500">
-              {lang === "en" ? "Website Design 2026 by Focus AI" : "Κατασκευή Ιστοσελίδας 2026 By Focus AI"}
-            </span>
-            <span className="text-indigo-400 group-hover:text-purple-500 transition-transform group-hover:translate-x-1">→</span>
-          </a>
-          <p className="text-[10px] text-slate-600 uppercase tracking-[0.3em]">Premium Digital Experiences</p>
-        </div>
-      </footer>
 
     </main>
   );

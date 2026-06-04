@@ -26,6 +26,7 @@ function getRegion(place: string): string {
   const regionMap: Record<string, string> = {
     "Southern Aegean": "Crete",
     "Western Crete": "Crete",
+    "Central Crete": "Crete",
     "Laconia, Peloponnese": "Peloponnese",
     "Phocis, Central Greece": "Central Greece",
     "Epirus, Northwestern Greece": "Epirus",

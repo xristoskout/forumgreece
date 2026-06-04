@@ -211,16 +211,6 @@ export default async function TravelToolsPage({ params }: Props) {
           </p>
         </div>
 
-        {/* Footer Disclaimer */}
-        <footer className="max-w-4xl mx-auto px-6 pb-16">
-          <div className="text-xs text-slate-400 leading-relaxed border-t border-slate-200 pt-8 space-y-3">
-            <p>
-              {lang === "el"
-                ? "Αποποίηση Ευθύνης Τιμών: Όλες οι εκτιμήσεις προϋπολογισμού που παρέχονται από το Εργαλείο Σύγκρισης του GoGreeceNow είναι ενδεικτικές και βασίζονται σε γενικούς μέσους όρους από δημόσια διαθέσιμες πηγές. Δεν αποτελούν δεσμευτική προσφορά ή εγγύηση οποιουδήποτε είδους. Οι τιμές για διαμονή, πτήσεις, φαγητό και μεταφορές ποικίλλουν σημαντικά ανάλογα με τη σεζόν, τη διαθεσιμότητα, τις προσωπικές συνήθειες δαπανών και τρίτους παρόχους. Το GoGreeceNow δεν φέρει καμία ευθύνη για οποιαδήποτε διαφορά μεταξύ των εκτιμήσεων που εμφανίζονται και των πραγματικών εξόδων. Οι χρήστες ενθαρρύνονται να επαληθεύουν όλες τις τιμές ανεξάρτητα πριν λάβουν οποιεσδήποτε ταξιδιωτικές ή οικονομικές αποφάσεις."
-                : "Price Disclaimer: All budget estimates provided by the GoGreeceNow Travel Decision Tool are indicative only and are based on general averages from publicly available sources. They do not constitute a binding quote, offer or guarantee of any kind. Prices for accommodation, flights, food and transport vary widely based on season, availability, personal spending habits and third-party providers. GoGreeceNow accepts no responsibility for any difference between the estimates shown and actual costs incurred. Users are strongly encouraged to verify all prices independently before making any travel or financial decisions."}
-            </p>
-          </div>
-        </footer>
       </div>
     </>
   );

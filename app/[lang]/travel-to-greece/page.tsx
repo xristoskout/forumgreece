@@ -407,7 +407,7 @@ export default function TravelToGreecePage() {
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-slate-900/40 to-slate-900/70 z-[1]" />
         <div className="absolute inset-0 bg-sky-900/10 mix-blend-multiply z-[2]"></div>
-        <div className="relative z-10 mx-auto max-w-5xl px-4 py-24 text-center sm:px-6">
+        <div className="relative z-10 mx-auto max-w-5xl px-4 py-12 text-center sm:py-24 sm:px-6">
           <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-7xl drop-shadow-xl text-balance">
             {t.heroTitle[lang]}
           </h1>
@@ -469,28 +469,6 @@ export default function TravelToGreecePage() {
         accent="amber"
       />
 
-      <footer className="border-t border-slate-200 bg-white backdrop-blur-md">
-        <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-slate-600 md:flex-row md:items-center md:justify-between">
-          <div>{t.footerText[lang]}</div>
-
-          <div className="flex gap-5">
-            <Link href={withLang("/about")} className="hover:text-slate-900">
-              {t.footerAbout[lang]}
-            </Link>
-            <Link href={withLang("/contact")} className="hover:text-slate-900">
-              {t.footerContact[lang]}
-            </Link>
-            <Link href={withLang("/privacy-policy")} className="hover:text-slate-900">
-              {t.footerPrivacy[lang]}
-            </Link>
-          </div>
-        </div>
-        <div className="border-t border-slate-100 mt-4 pt-6 pb-8 flex justify-center">
-          <a href="https://www.focusai.gr" target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-slate-500 hover:text-indigo-600 transition-colors">
-            {lang === "en" ? "Website Design 2026 by Focus AI" : "Κατασκευή Ιστοσελίδας 2026 By Focus AI"}
-          </a>
-        </div>
-      </footer>
     </main>
   );
 }

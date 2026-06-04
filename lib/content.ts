@@ -14,6 +14,7 @@ export type {
   FoodCard,
   TourSection,
   TourItem,
+  BlogPost,
   CommunityCard,
 } from "./types";
 
@@ -24,3 +25,4 @@ export { hotels } from "./hotels-data";
 export { food } from "./food-data";
 export { tours } from "./tours-data";
 export { communities } from "./communities-data";
+export { blogPosts } from "./blog-data";
