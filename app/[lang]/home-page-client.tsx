@@ -899,8 +899,8 @@ export default function HomePageClient({
                     <div>
                       <p className="text-xs font-semibold uppercase tracking-[0.18em] text-cyan-700">
                         {lang === "en"
-                          ? "Local Experiences & Businesses"
-                          : "Τοπικές Εμπειρίες & Επιχειρήσεις"}
+                          ? "Local Experiences & Tours"
+                          : "Τοπικές Εμπειρίες & Tours"}
                       </p>
                       <h3 className="mt-1 text-2xl font-semibold leading-snug">
                         {item.title[lang]}
@@ -929,12 +929,12 @@ export default function HomePageClient({
                     aria-label={
                       lang === "en"
                         ? `Read the ${item.place} experiences guide`
-                        : `Δες τις τοπικές επιχειρήσεις για ${item.place}`
+                        : `Δες τις τοπικές εμπειρίες για ${item.place}`
                     }
                   >
                     {lang === "en"
-                      ? `${item.place} businesses & experiences →`
-                      : `Τοπικές επιχειρήσεις στην ${item.place === "Lesvos" ? "Λέσβο" : item.place === "Crete" ? "Κρήτη" : "Κεφαλονιά"} →`}
+                      ? `${item.place} tours & experiences →`
+                      : `Τοπικές εμπειρίες στην ${item.place === "Lesvos" ? "Λέσβο" : item.place === "Crete" ? "Κρήτη" : "Κεφαλονιά"} →`}
                   </Link>
                 </div>
               </article>

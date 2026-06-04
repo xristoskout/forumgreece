@@ -164,14 +164,14 @@ const t = {
     el: "Δες επιλεγμένα καταλύματα σε όλη την Ελλάδα, από νησιωτικά ξενοδοχεία μέχρι city stays, με βασικά highlights και ξεχωριστές σελίδες.",
   },
 
-  toursEyebrow: { en: "Experiences", el: "Τοπικές Εμπειρίες & Επιχειρήσεις" },
+  toursEyebrow: { en: "Experiences", el: "Τοπικές Εμπειρίες & Tours" },
   toursTitle: {
-    en: "Discover local experiences & businesses in Greece",
-    el: "Ανακάλυψε κορυφαίες τοπικές εμπειρίες & επιχειρήσεις στην Ελλάδα",
+    en: "Discover local experiences & tours in Greece",
+    el: "Ανακάλυψε τοπικές εμπειρίες & tours στην Ελλάδα",
   },
   toursText: {
-    en: "Discover selected local businesses, from authentic food experiences and cultural activities to services that enrich your stay.",
-    el: "Ανακάλυψε επιλεγμένες τοπικές επιχειρήσεις, από αυθεντικές γαστρονομικές εμπειρίες και πολιτιστικές δραστηριότητες μέχρι υπηρεσίες που εμπλουτίζουν τη διαμονή σου.",
+    en: "Discover selected local tours and experiences, from authentic food experiences and cultural activities to day trips that enrich your stay.",
+    el: "Ανακάλυψε επιλεγμένες τοπικές εμπειρίες, από αυθεντικές γαστρονομικές εμπειρίες και πολιτιστικές δραστηριότητες μέχρι ημερήσιες εκδρομές που εμπλουτίζουν τη διαμονή σου.",
   },
 
   foodEyebrow: { en: "Eat & Drink", el: "Φαγητό & Ποτό" },
