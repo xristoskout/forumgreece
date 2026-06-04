@@ -1127,6 +1127,53 @@ export const destinations: Destination[] = [
         el: "Πλήρης ταξιδιωτικός οδηγός για την Ικαρία: Μπλε Ζώνη, πανηγύρια, ιαματικές πηγές, παραλία Σεϋχέλλες, χωριά, φαγητό και αυθεντικές συμβουλές."
       }
     }
+  },
+  {
+    slug: "rethymno",
+    name: "Rethymno",
+    region: { en: "Crete", el: "Κρήτη" },
+    blurb: {
+      en: "Venetian old town, Fortezza castle, and authentic Cretan city life.",
+      el: "Ενετική παλιά πόλη, Φορτέτζα και αυθεντική κρητική πόλη."
+    },
+    image: "/images/rethymno.webp",
+    overview: {
+      en: "Venetian-Ottoman Old Town, the Fortezza fortress, a sandy city beach, and the best base for exploring Crete's dramatic interior — Preveli, Arkadi, Amari Valley, and Psiloritis.",
+      el: "Ενετο-οθωμανική παλιά πόλη, το κάστρο Φορτέτζα, αμμώδης παραλία και η καλύτερη βάση για να εξερευνήσετε το εσωτερικό της Κρήτης — Πρέβελη, Αρκάδι, Αμάρι και Ψηλορείτη."
+    },
+    highlights: {
+      en: ["Venetian Old Town", "Fortezza Castle", "Preveli & Arkadi"],
+      el: ["Ενετική Παλιά Πόλη", "Φορτέτζα", "Πρέβελη & Αρκάδι"]
+    },
+    featured: true,
+    guideLinks: [
+      {
+        href: "/destinations/crete",
+        label: { en: "Explore Crete Guide", el: "Οδηγός Ταξιδιού Κρήτης" }
+      },
+      {
+        href: "/hotels/rethymno",
+        label: { en: "Explore stays in Rethymno", el: "Ανακαλύψτε διαμονή στο Ρέθυμνο" }
+      },
+      {
+        href: "/tours/all",
+        label: { en: "See tours & experiences", el: "Δείτε εμπειρίες & tours" }
+      },
+      {
+        href: "/collections/greece-food-and-drink",
+        label: { en: "Discover local food ideas", el: "Ανακαλύψτε τοπικές γεύσεις" }
+      }
+    ],
+    seo: {
+      title: {
+        en: "Rethymno Travel Guide | Old Town, Fortezza, Beaches & Where to Go",
+        el: "Ρέθυμνο: Οδηγός Ταξιδιού | Παλιά Πόλη, Φορτέτζα, Παραλίες & Αξιοθέατα"
+      },
+      description: {
+        en: "Plan your trip to Rethymno with our travel guide. Discover the Venetian Old Town, Fortezza Castle, Preveli Palm Beach, Arkadi Monastery, local food, and the best things to do in Crete's most underrated city.",
+        el: "Οργανώστε το ταξίδι σας στο Ρέθυμνο με τον οδηγό μας. Ανακαλύψτε την ενετική παλιά πόλη, τη Φορτέτζα, τον Πρέβελη, τη Μονή Αρκαδίου, τοπικές γεύσεις και τα καλύτερα αξιοθέατα."
+      }
+    }
   }
 ];
 

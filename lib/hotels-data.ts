@@ -3119,4 +3119,107 @@ export const hotels: HotelCard[] = [
       }
     }
   },
+  {
+    slug: "rethymno",
+    name: "Where to Stay in Rethymno",
+    place: "Rethymno — Central Crete",
+    info: {
+      en: "Choosing where you sleep in Rethymno shapes everything — from waking to Venetian bell towers to stepping straight onto a long sandy beach at dawn. Find the best areas: Old Town for atmosphere, Harbour & Lighthouse for romance, City Beach strip for convenience, East Coast for family resorts, Plakias & South for escape, and inland villages for authentic Cretan life.",
+      el: "Η επιλογή διαμονής στο Ρέθυμνο καθορίζει τα πάντα — από το να ξυπνάτε με ενετικά καμπαναριά μέχρι να βγαίνετε κατευθείαν σε μια μακριά αμμώδη παραλία την αυγή. Ανακαλύψτε τις καλύτερες περιοχές: Παλιά Πόλη, Λιμάνι & Φάρος, Παραλία, Ανατολική Ακτή, Πλακιάς και ορεινά χωριά."
+    },
+    image: "/images/rethymno.webp",
+    badge: "Featured stay",
+    overview: {
+      en: "Choosing where to stay in Rethymno defines your entire experience of the city — and the difference between areas is more dramatic than most visitors expect. At the centre is the Venetian Old Town, a dense network of alleys, fountains, minarets, and arched doorways. Adjacent to it, the Venetian Harbour and Lighthouse form a romantically compact zone where restaurants, evening passeggiata, and the water all converge. From the harbour, the city beach stretches eastward for nearly 12 km — first a busy organised strip, then a progressively quieter, wider sandy coast through Platanias, Sfakaki, and Panormo. South over the Psiloritis foothills, the coastal village of Plakias offers a completely different experience: slower, quieter, oriented toward the sea and the walking trails of the south coast. And scattered across the inland hills are traditional Cretan villages — Anogia, Thronos, Margarites — where family-run guesthouses offer mountain air and morning silence.",
+      el: "Η επιλογή διαμονής στο Ρέθυμνο καθορίζει ολόκληρη την εμπειρία σας — και η διαφορά μεταξύ των περιοχών είναι πιο δραματική από ό,τι περιμένουν οι περισσότεροι επισκέπτες. Στο κέντρο βρίσκεται η ενετική Παλιά Πόλη, ένα πυκνό δίκτυο από σοκάκια, σιντριβάνια και μιναρέδες. Δίπλα της, το Ενετικό Λιμάνι και ο Φάρος σχηματίζουν μια ρομαντική ζώνη. Από το λιμάνι, η παραλία εκτείνεται ανατολικά για σχεδόν 12 χλμ. Νότια, ο Πλακιάς προσφέρει μια εντελώς διαφορετική εμπειρία. Και διάσπαρτα στα ορεινά, παραδοσιακά χωριά προσφέρουν αυθεντική κρητική φιλοξενία."
+    },
+    description: {
+      en: "Relaxing stays, beautiful views and authentic hospitality — organized in a clear and practical way.",
+      el: "Χαλαρωτικές διαμονές, όμορφη θέα και αυθεντική φιλοξενία — οργανωμένα με καθαρό και πρακτικό τρόπο."
+    },
+    features: {
+      en: ["Old Town (History & Atmosphere)", "Harbour & Lighthouse (Romantic & Scenic)", "City Beach Strip (Beach Access from the City)", "East Coast — Platanias, Sfakaki & Panormo (Family & Resorts)", "Plakias & South Coast (Quiet Escape & Hiking)", "Inland Villages — Margarites, Thronos, Anogia (Authentic Crete)"],
+      el: ["Παλιά Πόλη (Ιστορία & Ατμόσφαιρα)", "Λιμάνι & Φάρος (Ρομαντική & Θέα)", "Παραλία (Πρόσβαση σε Θάλασσα από το Κέντρο)", "Ανατολική Ακτή — Πλατανιάς, Σφακάκι, Πάνορμο (Οικογένειες & Resorts)", "Πλακιάς & Νότια Ακτή (Ήσυχη Απόδραση & Πεζοπορία)", "Ορεινά Χωριά — Μαργαρίτες, Θρόνος, Ανώγεια (Αυθεντική Κρήτη)"]
+    },
+    sections: [
+      {
+        title: { en: "1. Venetian Old Town: The historic heart — sleep inside history", el: "1. Ενετική Παλιά Πόλη: Η ιστορική καρδιά" },
+        content: {
+          en: "Staying in the Old Town means waking up to the sound of the fountain rather than traffic, walking to the Fortezza before the day-trippers arrive, and finding that the light on the Venetian archways in the early morning looks exactly as it did in the watercolour illustrations of the 19th century. This is the experience that no hotel on the beach strip can replicate.\n\nThe Old Town's accommodation is predominantly boutique — restored Venetian buildings converted to small hotels, stone-vaulted guesthouses, and manor-style suites with wooden ceilings and private courtyards. The inventory is not large, so properties book out early. Prices reflect both the scarcity and the quality of the setting.\n\nThe practical trade-off: the Old Town is largely pedestrianised. You will not be able to park at your door, and you may carry luggage on cobblestones. The streets are also narrow and evening café life carries easily — lighter sleepers should look for properties set back from the main lanes. Rooms facing interior courtyards are consistently quieter than those on street-facing facades.\n\n💡 Secret: The best Old Town properties are not always the ones with the highest profiles on booking platforms. Some of the most beautiful restored mansions operate as small family guesthouses with limited online presence. If you are staying 4+ nights, email the owner directly — you will often find they can offer exactly the room you want.",
+          el: "Το να μείνεις στην Παλιά Πόλη σημαίνει να ξυπνάς με τον ήχο του σιντριβανιού αντί για την κίνηση, να περπατάς στη Φορτέτζα πριν φτάσουν οι ημερήσιοι επισκέπτες και να βλέπεις το φως στις ενετικές καμάρες το πρωί όπως ακριβώς το ζωγράφιζαν τον 19ο αιώνα. Αυτή είναι η εμπειρία που κανένα ξενοδοχείο στην παραλία δεν μπορεί να αναπαράγει.\n\nΤα καταλύματα εδώ είναι κυρίως boutique — αναπαλαιωμένα ενετικά κτίρια, πετρόχτιστα αρχοντικά με ξύλινα ταβάνια και ιδιωτικές αυλές. Το απόθεμα δεν είναι μεγάλο, γι' αυτό τα δωμάτια κλείνουν γρήγορα. Οι τιμές αντανακλούν τόσο τη σπανιότητα όσο και την ποιότητα του περιβάλλοντος.\n\nΠρακτικό τίμημα: η Παλιά Πόλη είναι πεζοδρομημένη. Δεν μπορείς να παρκάρεις στην πόρτα σου. Οι δρόμοι είναι στενοί και η βραδινή ζωή ακούγεται — οι ελαφρόυπνοι να προτιμήσουν δωμάτια σε εσωτερικές αυλές.\n\n💡 Μυστικό: Τα καλύτερα καταλύματα δεν είναι πάντα αυτά με την υψηλότερη προβολή στις πλατφόρμες κρατήσεων. Αν μένεις 4+ νύχτες, στείλε email απευθείας στον ιδιοκτήτη."
+        }
+      },
+      {
+        title: { en: "2. Venetian Harbour & Lighthouse: The waterfront zone — evenings on the water", el: "2. Ενετικό Λιμάνι & Φάρος: Η ζώνη του μετώπου" },
+        content: {
+          en: "The area immediately around the Venetian Harbour and the lighthouse peninsula is one of the most photogenic small waterfronts in the whole of Crete. Hotels and apartments here command harbour views, and the strip of restaurants along the inner harbour offers the classic Rethymno evening: fresh fish, white wine, and the boats moving gently in the water behind your table.\n\nThe harbour area sits between the Old Town (2–3 minutes on foot) and the city beach (5 minutes the other way), making it the most centrally positioned accommodation zone in Rethymno. The Fortezza is 10 minutes on foot. For visitors who want access to everything without committing to the full Old Town immersion, this is consistently the best single answer.\n\n💡 Secret: The harbour is busiest between 20:00–23:00 in summer. If you stay in a harbour-view room, confirm it has double-glazing or shutters if you are a light sleeper. The restaurants below fill with laughter and music until midnight. It is beautiful if you are part of it; less so if you are trying to sleep through it at 11pm.",
+          el: "Η περιοχή γύρω από το Ενετικό Λιμάνι είναι ένα από τα πιο φωτογενή μικρά παραλιακά μέτωπα της Κρήτης. Τα ξενοδοχεία εδώ έχουν θέα στο λιμάνι και τα εστιατόρια προσφέρουν την κλασική βραδιά του Ρεθύμνου: φρέσκο ψάρι, λευκό κρασί, βάρκες να λικνίζονται απαλά.\n\nΗ περιοχή βρίσκεται ανάμεσα στην Παλιά Πόλη (2–3 λεπτά) και την παραλία (5 λεπτά), καθιστώντας την την πιο κεντρική ζώνη διαμονής. Η Φορτέτζα είναι 10 λεπτά με τα πόδια. Για όσους θέλουν πρόσβαση παντού χωρίς πλήρη εμβύθιση στην Παλιά Πόλη, είναι η καλύτερη επιλογή.\n\n💡 Μυστικό: Το λιμάνι είναι πολυσύχναστο 20:00–23:00. Αν μείνεις σε δωμάτιο με θέα, επιβεβαίωσε ότι έχει διπλά τζάμια αν είσαι ελαφρόυπνος."
+        }
+      },
+      {
+        title: { en: "3. City Beach Strip (Eleftheriou Venizelou): The central seafront — beach and city without a car", el: "3. Παραλία (Ελευθερίου Βενιζέλου): Παραθαλάσσια ζώνη" },
+        content: {
+          en: "The city beach strip runs along Eleftheriou Venizelou avenue, directly east of the harbour, and is the most popular accommodation zone in Rethymno for a straightforward reason: it delivers both the city and the beach without requiring a car. The Old Town is a 5–8 minute walk in one direction; the sea is 30 seconds in the other. Hotels here range from mid-range family properties to boutique hotels and small apartment complexes.\n\nThe beach is organized with sunbeds and beach bars and is at its busiest from late June through August. For visitors on a 3–4 night schedule who want to explore the city, visit the Fortezza, do a day trip to Preveli or Arkadi, and swim every morning, this strip delivers all of that without any logistics.\n\n💡 Secret: Properties on the sea-facing side have better views but morning sun and some road noise. Properties one block back have quiet mornings and are often significantly cheaper. The walk to the beach from either side is negligible.",
+          el: "Ο παραλιακός δρόμος Ελευθερίου Βενιζέλου είναι η πιο δημοφιλής ζώνη διαμονής για έναν απλό λόγο: προσφέρει και την πόλη και την παραλία χωρίς αυτοκίνητο. Η Παλιά Πόλη είναι 5–8 λεπτά με τα πόδια. Η θάλασσα είναι 30 δευτερόλεπτα. Τα ξενοδοχεία κυμαίνονται από μεσαίας κατηγορίας έως boutique.\n\nΓια επισκέπτες 3–4 νυχτών που θέλουν να εξερευνήσουν την πόλη, να δουν τη Φορτέτζα, να κάνουν εκδρομή στον Πρέβελη ή το Αρκάδι και να κολυμπήσουν κάθε πρωί, αυτή η ζώνη προσφέρει τα πάντα χωρίς ταλαιπωρία.\n\n💡 Μυστικό: Τα καταλύματα στην πλευρά της θάλασσας έχουν καλύτερη θέα αλλά πρωινό ήλιο και θόρυβο. Αυτά ένα τετράγωνο πίσω είναι πιο ήσυχα και συχνά φθηνότερα."
+        }
+      },
+      {
+        title: { en: "4. East Coast — Platanias, Sfakaki & Panormo: Resorts, families and wide sandy beaches", el: "4. Ανατολική Ακτή — Πλατανιάς, Σφακάκι & Πάνορμο: Resorts & οικογένειες" },
+        content: {
+          en: "Heading east from Rethymno along the E75, the coast opens up into a succession of sandy beaches and resort zones: Platanias (10 km), Sfakaki (14 km), Stavromenos (18 km), and Panormo (22 km). This is where Rethymno's large resort hotels are concentrated — properties with pools, kids' clubs, full-board options, and organized beach infrastructure that families with young children often need.\n\nThe beaches are wide, sandy, and gently shelving into calm, shallow water. Panormo, in particular, is a small fishing village with a genuinely charming harbour square and some of the best locally run tavernas within 25 km of Rethymno. Staying here gives a softer, more village-like experience than the resort complexes further west while being within easy driving distance of Rethymno's Old Town.\n\nThe main trade-off is distance from the city. Platanias and Sfakaki are 15–20 minutes by car from the Old Town. That changes the rhythm of the stay: you are based at the coast, and the city becomes something you visit deliberately. For families prioritising beach time, this is completely reasonable.\n\n💡 Secret: Panormo is the most underrated base in the Rethymno region for travellers who want a quiet village feel, a good beach, and easy access to both Rethymno and Heraklion. Book early — the small family-run hotels here are few and fill quickly.",
+          el: "Ανατολικά του Ρεθύμνου, η ακτή ανοίγει σε διαδοχικές αμμώδεις παραλίες και ζώνες resorts: Πλατανιάς (10 χλμ.), Σφακάκι (14 χλμ.), Σταυρωμένος (18 χλμ.), Πάνορμο (22 χλμ.). Εδώ συγκεντρώνονται τα μεγάλα resort ξενοδοχεία με πισίνες, kids' clubs και οργανωμένες παραλίες.\n\nΟι παραλίες είναι φαρδιές, αμμώδεις και με ρηχά νερά. Το Πάνορμο είναι ένα μικρό ψαροχώρι με γνήσια γραφική πλατεία και εξαιρετικές ταβέρνες. Η διαμονή εδώ δίνει μια πιο ήσυχη εμπειρία.\n\nΤο κύριο τίμημα είναι η απόσταση: 15–20 λεπτά με αυτοκίνητο από την Παλιά Πόλη. Για οικογένειες που προτεραιοποιούν την παραλία, είναι απολύτως λογικό.\n\n💡 Μυστικό: Το Πάνορμο είναι η πιο υποτιμημένη βάση για όσους θέλουν ήσυχο χωριό, καλή παραλία και εύκολη πρόσβαση σε Ρέθυμνο και Ηράκλειο."
+        }
+      },
+      {
+        title: { en: "5. Plakias & the South Coast: The remote alternative — hikers, independents, and silence", el: "5. Πλακιάς & Νότια Ακτή: Η εναλλακτική της ηρεμίας" },
+        content: {
+          en: "Plakias sits on the south coast, 45 km from Rethymno over a mountain road that crosses the Kourtaliotis Gorge — one of the most dramatic drives in Crete. The village has a wide sandy bay, a relaxed local atmosphere, a handful of good tavernas by the water, and almost no nightlife. It is the antithesis of the resort east coast.\n\nStaying here makes sense for walking the coastal trail to Preveli Palm Beach (2.5 hours), swimming in the uncommercialised coves of Damnoni and Ammoudi, and eating grilled fish at the harbour. The road to Rethymno takes 45–55 minutes through spectacular gorge scenery.\n\nAccommodation ranges from small apartments and studios run by local families to a handful of well-regarded small hotels. There are no large resorts. For May, June, September, and October, Plakias is at its best.\n\n💡 Secret: The hamlet of Damnoni, 4 km east of Plakias, has a small cluster of apartments above the beach. The three coves accessible from it — Damnoni, Ammoudi, and Mikro Ammoudi — are among the most beautiful and unspoiled in the region.",
+          el: "Ο Πλακιάς βρίσκεται στη νότια ακτή, 45 χλμ. από το Ρέθυμνο, μέσα από το φαράγγι του Κουρταλιώτη. Το χωριό έχει φαρδύ κόλπο, χαλαρή ατμόσφαιρα και σχεδόν καθόλου νυχτερινή ζωή.\n\nΑξίζει για πεζοπορία στην παραλία του Πρέβελη (2,5 ώρες), κολύμπι στους κολπίσκους Δαμνόνι και Αμμούδι και φρέσκο ψάρι στο λιμάνι. Το Ρέθυμνο είναι 45–55 λεπτά.\n\nΤα καταλύματα είναι μικρά, οικογενειακά. Δεν υπάρχουν μεγάλα resorts. Ο Πλακιάς είναι στα καλύτερά του Μάιο, Ιούνιο, Σεπτέμβριο και Οκτώβριο.\n\n💡 Μυστικό: Το Δαμνόνι, 4 χλμ. ανατολικά, έχει μικρά διαμερίσματα πάνω από την παραλία. Οι τρεις κολπίσκοι του είναι από τους πιο όμορφους της περιοχής."
+        }
+      },
+      {
+        title: { en: "6. Inland Villages — Margarites, Thronos, Anogia: The Crete that hasn't changed", el: "6. Ορεινά Χωριά — Μαργαρίτες, Θρόνος, Ανώγεια: Η Κρήτη που δεν άλλαξε" },
+        content: {
+          en: "A small number of traditional Cretan villages within the Rethymno region offer accommodation in restored stone houses and family guesthouses: Margarites (20 km south, known for ceramics), Thronos (35 km, overlooking the Amari Valley with a Byzantine mosaic in the village church), and Anogia (50 km, a high-mountain village at the foot of Psiloritis, famous for music, weaving, and fierce independence).\n\nStaying here is a choice to experience a fundamentally different Crete. Mornings are cool and quiet. The coffee comes with the sound of goat bells. The family that runs the guesthouse likely also owns the olive grove you can see from the terrace. Rethymno is 30–50 minutes by car.\n\nThis works best for travellers staying a week or more who want to divide time between coast and interior, and who are comfortable driving mountain roads. Not practical for a short 2–3 night trip.\n\n✓ Authentic Cretan village life, cool mountain air (ideal in peak summer), outstanding home-cooked food, very affordable, access to hiking trails and Psiloritis.",
+          el: "Λίγα παραδοσιακά χωριά του Ρεθύμνου προσφέρουν διαμονή σε αναπαλαιωμένα πέτρινα σπίτια: Μαργαρίτες (20 χλμ., κεραμική), Θρόνος (35 χλμ., βυζαντινό ψηφιδωτό), Ανώγεια (50 χλμ., μουσική παράδοση).\n\nΗ διαμονή εδώ είναι επιλογή για μια εντελώς διαφορετική Κρήτη. Πρωινά δροσερά και ήσυχα. Η οικογένεια που τρέχει τον ξενώνα έχει συνήθως και τον ελαιώνα που βλέπετε από τη βεράντα.\n\nΙδανικό για ταξιδιώτες 1+ εβδομάδας που θέλουν να μοιράσουν χρόνο μεταξύ ακτής και βουνού. Όχι για σύντομο ταξίδι 2–3 νυχτών."
+        }
+      },
+    ],
+    faq: [
+      {
+        q: { en: "Where is the best area to stay in Rethymno for a first visit?", el: "Ποια περιοχή είναι καλύτερη για πρώτη επίσκεψη;" },
+        a: { en: "The Old Town or the Harbour area. These give you the authentic Rethymno — the Venetian architecture, evening passeggiata, the Fortezza, and the city beach a short walk away. If you are staying only 2–3 nights, choosing the city beach strip over the Old Town is an understandable but real compromise.", el: "Η Παλιά Πόλη ή το Λιμάνι. Σου δίνουν το αυθεντικό Ρέθυμνο — την ενετική αρχιτεκτονική, τον βραδινό περίπατο, τη Φορτέτζα και την παραλία σε μικρή απόσταση." }
+      },
+      {
+        q: { en: "Is Rethymno or Chania a better base for western Crete?", el: "Ρέθυμνο ή Χανιά ως βάση;" },
+        a: { en: "Chania is closer to its airport. Rethymno has a more intact Old Town and is the better base for Preveli, Arkadi, and the Amari Valley. For Samaria Gorge and Balos, Chania is more convenient. For a single base covering west and central Crete, Rethymno is arguably the more central and versatile choice.", el: "Τα Χανιά είναι πιο κοντά στο αεροδρόμιο. Το Ρέθυμνο έχει καλύτερη Παλιά Πόλη και είναι καλύτερη βάση για Πρέβελη, Αρκάδι και Αμάρι. Για μία βάση που καλύπτει δυτική και κεντρική Κρήτη, το Ρέθυμνο είναι πιο κεντρικό." }
+      },
+      {
+        q: { en: "Do I need a car in Rethymno?", el: "Χρειάζομαι αυτοκίνητο στο Ρέθυμνο;" },
+        a: { en: "For the city itself, no — the Old Town, Fortezza, harbour and city beach are all walkable. For day trips to Preveli, Arkadi, the Amari Valley, and Plakias, yes — a car is strongly recommended. Pick up at Chania or Heraklion airport.", el: "Για την πόλη, όχι — όλα είναι περπατητά. Για εκδρομές σε Πρέβελη, Αρκάδι, Αμάρι και Πλακιά, ναι — αυτοκίνητο συνιστάται ανεπιφύλακτα." }
+      },
+      {
+        q: { en: "Is the Old Town noisy at night?", el: "Έχει θόρυβο η Παλιά Πόλη τη νύχτα;" },
+        a: { en: "Yes, the main lanes around the Rimondi Fountain can be lively with café noise until late. Choose properties set back from the main squares or with interior courtyards for quiet. The trade-off is worth it — the atmosphere of the Old Town in the evening is one of the main reasons to stay there.", el: "Ναι, οι κεντρικοί δρόμοι γύρω από την Κρήνη Ριμόντι έχουν ζωντάνια μέχρι αργά. Διάλεξε κατάλυμα πίσω από τις πλατείες ή με εσωτερική αυλή για ησυχία." }
+      },
+      {
+        q: { en: "What is the quietest area near Rethymno?", el: "Ποια είναι η πιο ήσυχη περιοχή κοντά στο Ρέθυμνο;" },
+        a: { en: "Plakias on the south coast, or the inland villages of the Amari Valley. Both are 40–50 minutes by car and offer genuine peace. Panormo, 22 km east, is a quieter village alternative that remains connected to the coastal road.", el: "Ο Πλακιάς ή τα χωριά του Αμαρίου. Και τα δύο 40–50 λεπτά με αυτοκίνητο. Το Πάνορμο είναι μια πιο ήσυχη εναλλακτική στην ακτή." }
+      },
+      {
+        q: { en: "When should I book accommodation in Rethymno?", el: "Πότε να κλείσω διαμονή στο Ρέθυμνο;" },
+        a: { en: "For July and August: Old Town boutique properties by January–February; east coast resorts by March–April. For June and September: 2–3 months ahead is sufficient. For May, October, and off-season, last-minute booking is possible. Many south coast and village properties close November–March.", el: "Για Ιούλιο–Αύγουστο: Παλιά Πόλη έως Ιανουάριο–Φεβρουάριο. Για Ιούνιο–Σεπτέμβριο: 2–3 μήνες νωρίτερα. Πολλά καταλύματα στη νότια ακτή κλείνουν Νοέμβριο–Μάρτιο." }
+      },
+    ],
+    seo: {
+      title: {
+        en: "Where to Stay in Rethymno | Best Areas & Hotels Guide | GoGreeceNow",
+        el: "Πού να Μείνεις στο Ρέθυμνο | Καλύτερες Περιοχές & Ξενοδοχεία | GoGreeceNow"
+      },
+      description: {
+        en: "Find the best areas to stay in Rethymno: Old Town for atmosphere, Harbour & Lighthouse for romance, City Beach strip for convenience, East Coast for family resorts, Plakias for quiet escape, and inland villages for authentic Cretan life. Complete hotel area guide with honest advice.",
+        el: "Βρες τα καλύτερα μέρη για διαμονή στο Ρέθυμνο: Παλιά Πόλη, Λιμάνι & Φάρος, Παραλία, Ανατολική Ακτή, Πλακιάς και ορεινά χωριά. Πλήρης οδηγός διαμονής με ειλικρινείς συμβουλές."
+      }
+    }
+  },
 ];

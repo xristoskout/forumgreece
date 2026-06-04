@@ -235,6 +235,13 @@ export const MAP_PINS: Pin[] = [
     tagline: { en: "History, beaches & cycling", el: "Ιστορία, παραλίες & ποδήλατο" },
   },
   {
+    id: "rethymno",
+    x: 57.5, y: 77.8,
+    href: "/destinations/rethymno",
+    label: { en: "Rethymno", el: "Ρέθυμνο" },
+    tagline: { en: "Venetian old town & Fortezza", el: "Ενετική πόλη & Φορτέτζα" },
+  },
+  {
     id: "syros",
     x: 57.8, y: 56.4,
     href: "/destinations/syros",
