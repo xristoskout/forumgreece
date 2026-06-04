@@ -65,8 +65,8 @@ export default function HomePageClient({
   const heroJumpLinks = [
     {
       label: { en: "Destination guides", el: "Οδηγοί προορισμών" },
-      href: "#destinations",
-      kind: "anchor" as const,
+      href: withLang("/destinations"),
+      kind: "route" as const,
     },
     {
       label: { en: "Greece Islands Map", el: "Χάρτης Νησιών" },
@@ -80,13 +80,13 @@ export default function HomePageClient({
     },
     {
       label: { en: "Hotels in Greece", el: "Ξενοδοχεία στην Ελλάδα" },
-      href: "#hotels",
-      kind: "anchor" as const,
+      href: withLang("/hotels"),
+      kind: "route" as const,
     },
     {
       label: { en: "Tours in Greece", el: "Εκδρομές στην Ελλάδα" },
-      href: "#tours",
-      kind: "anchor" as const,
+      href: withLang("/tours/all"),
+      kind: "route" as const,
     },
     {
       label: {
@@ -106,8 +106,8 @@ export default function HomePageClient({
         en: "Start with islands, cities and holiday spots across Greece.",
         el: "Ξεκίνα με νησιά, πόλεις και ταξιδιωτικούς προορισμούς σε όλη την Ελλάδα.",
       },
-      href: "#destinations",
-      kind: "anchor" as const,
+      href: withLang("/destinations"),
+      kind: "route" as const,
       cta: {
         en: "Browse destination guides →",
         el: "Δες οδηγούς προορισμών →",
@@ -134,8 +134,8 @@ export default function HomePageClient({
         en: "Move from inspiration to actual stay options and hotel pages.",
         el: "Πέρασε από την έμπνευση σε πραγματικές επιλογές διαμονής και σελίδες ξενοδοχείων.",
       },
-      href: "#hotels",
-      kind: "anchor" as const,
+      href: withLang("/hotels"),
+      kind: "route" as const,
       cta: {
         en: "Browse Greece stays →",
         el: "Δες επιλογές διαμονής →",
@@ -151,8 +151,8 @@ export default function HomePageClient({
         en: "Complete the trip with experiences, tours and food ideas.",
         el: "Ολοκλήρωσε το ταξίδι με εμπειρίες, εκδρομές και τοπικές γεύσεις.",
       },
-      href: "#tours",
-      kind: "anchor" as const,
+      href: withLang("/tours/all"),
+      kind: "route" as const,
       cta: {
         en: "Explore tours and food guides →",
         el: "Δες εκδρομές και food guides →",
@@ -331,14 +331,14 @@ export default function HomePageClient({
             </p>
 
             <div className="flex flex-wrap gap-4 mb-12">
-              <a
-                href="#destinations"
+              <Link
+                href={withLang("/destinations")}
                 className="group relative overflow-hidden rounded-2xl bg-indigo-600 px-8 py-4 text-base font-semibold text-white shadow-[0_0_20px_rgba(79,70,229,0.4)] transition-all hover:scale-105 hover:shadow-[0_0_30px_rgba(79,70,229,0.6)]"
               >
                 <span className="relative z-10 flex items-center gap-2">
                   {copy.heroPrimary} <span className="group-hover:translate-x-1 transition-transform">→</span>
                 </span>
-              </a>
+              </Link>
 
               <Link
                 href={withLang("/travel-info")}
