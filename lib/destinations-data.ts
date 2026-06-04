@@ -694,6 +694,53 @@ export const destinations: Destination[] = [
     }
   },
   {
+    slug: "heraklion",
+    name: "Heraklion",
+    region: { en: "Crete", el: "Κρήτη" },
+    blurb: {
+      en: "Minoan palaces, Venetian walls, and the most powerful food culture in Crete.",
+      el: "Μινωικά ανάκτορα, ενετικά τείχη και η πιο δυνατή γαστρονομία της Κρήτης."
+    },
+    image: "/images/heraklion.webp",
+    overview: {
+      en: "Knossos, the Archaeological Museum, the old Venetian harbour, and Crete's most authentic urban food scene — Heraklion is the real Crete, dense, layered, and completely alive.",
+      el: "Κνωσός, το Αρχαιολογικό Μουσείο, το ενετικό λιμάνι και η πιο αυθεντική γαστρονομική σκηνή της Κρήτης — το Ηράκλειο είναι η πραγματική Κρήτη."
+    },
+    highlights: {
+      en: ["Palace of Knossos", "Archaeological Museum", "Venetian Harbour & Koules Fortress"],
+      el: ["Παλάτι της Κνωσού", "Αρχαιολογικό Μουσείο", "Ενετικό Λιμάνι & Κούλες"]
+    },
+    featured: true,
+    guideLinks: [
+      {
+        href: "/destinations/crete",
+        label: { en: "Explore Crete Guide", el: "Οδηγός Ταξιδιού Κρήτης" }
+      },
+      {
+        href: "/hotels/heraklion",
+        label: { en: "Explore stays in Heraklion", el: "Ανακαλύψτε διαμονή στο Ηράκλειο" }
+      },
+      {
+        href: "/tours/all",
+        label: { en: "See tours & experiences", el: "Δείτε εμπειρίες & tours" }
+      },
+      {
+        href: "/collections/greece-food-and-drink",
+        label: { en: "Discover local food ideas", el: "Ανακαλύψτε τοπικές γεύσεις" }
+      }
+    ],
+    seo: {
+      title: {
+        en: "Heraklion Travel Guide: Knossos, Old Harbour, Food & Things to Do",
+        el: "Ηράκλειο: Ταξιδιωτικός Οδηγός | Κνωσός, Λιμάνι, Φαγητό & Αξιοθέατα"
+      },
+      description: {
+        en: "Complete guide to Heraklion, Crete: the Palace of Knossos, the Old Venetian Harbour, the Archaeological Museum, local food, beaches, day trips, and practical tips.",
+        el: "Πλήρης οδηγός για το Ηράκλειο: Παλάτι της Κνωσού, ενετικό λιμάνι, Αρχαιολογικό Μουσείο, τοπικό φαγητό, παραλίες και πρακτικές συμβουλές."
+      }
+    }
+  },
+  {
     slug: "meteora",
     name: "Meteora",
     region: { en: "Thessaly", el: "Θεσσαλία" },

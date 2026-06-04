@@ -242,6 +242,13 @@ export const MAP_PINS: Pin[] = [
     tagline: { en: "Venetian old town & Fortezza", el: "Ενετική πόλη & Φορτέτζα" },
   },
   {
+    id: "heraklion",
+    x: 57.0, y: 81.5,
+    href: "/destinations/heraklion",
+    label: { en: "Heraklion", el: "Ηράκλειο" },
+    tagline: { en: "Knossos, market & Venetian harbour", el: "Κνωσός, αγορά & ενετικό λιμάνι" },
+  },
+  {
     id: "syros",
     x: 57.8, y: 56.4,
     href: "/destinations/syros",

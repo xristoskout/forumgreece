@@ -1775,4 +1775,42 @@ export const destinationDetails: Record<string, DestinationDetail> = {
       }
     }
   },
+
+  heraklion: {
+    overview: {
+      en: "Heraklion is not the island postcard. It is the real Crete — dense, layered, occasionally chaotic, and completely alive. The largest city in Crete and one of the most important in Greece, it earns respect the way serious places do: slowly, on its own terms.\n\nThe Minoan Palace of Knossos sits 5 kilometres from the city centre — the most visited archaeological site in Greece after the Acropolis, and one of the most significant in the entire world. The Venetian walls that encircle the old city are among the finest surviving Renaissance fortifications in the Mediterranean. The Archaeological Museum holds the most important Minoan collection on earth. And all around this, there is a city that eats and drinks with genuine conviction: a morning market that runs seven days a week, a raki culture that begins at noon, fish tavernas where the sea is never more than a few steps away.\n\nWhat this means for the traveller is layering of a rare kind. Knossos is not a side trip from a beach town — it is a day spent inside the oldest palace civilisation in Europe. The Archaeological Museum is genuinely world-class, holding the Phaistos Disc, the Snake Goddess figurines, the Minoan frescoes, and a collection that changes how you understand the ancient world. The Venetian walls are 4 kilometres long and up to 40 metres thick — you can walk them, and people do.\n\nAway from all this, Heraklion eats well. The central market on 1866 Street is among the finest food markets in Greece. The Cretan diet — often described as the original Mediterranean diet — manifests on every table. Raki arrives without being asked. This is not a city of performance. It is a city of habit, depth, and genuine conviction.\n\nPlanning a wider trip around Crete? Explore our full [Crete Travel Guide](/destinations/crete) for regional ideas and more places to stay.",
+      el: "Το Ηράκλειο δεν είναι η καρτ ποστάλ του νησιού. Είναι η πραγματική Κρήτη — πυκνή, πολυεπίπεδη, περιστασιακά χαοτική και εντελώς ζωντανή. Η μεγαλύτερη πόλη της Κρήτης κερδίζει τον σεβασμό όπως τον κερδίζουν τα σοβαρά μέρη: αργά, με τους δικούς της όρους.\n\nΤο Μινωικό Παλάτι της Κνωσού βρίσκεται 5 χιλιόμετρα από το κέντρο — ο πιο επισκέψιμος αρχαιολογικός χώρος στην Ελλάδα μετά την Ακρόπολη. Τα ενετικά τείχη είναι από τα ωραιότερα αναγεννησιακά οχυρά της Μεσογείου. Το Αρχαιολογικό Μουσείο φιλοξενεί την πιο σημαντική μινωική συλλογή στον κόσμο. Και γύρω από όλα αυτά, υπάρχει μια πόλη που τρώει και πίνει με γνήσια πεποίθηση.\n\nΑυτό που σημαίνει αυτό για τον ταξιδιώτη είναι στρωματοποίηση σπάνιου είδους. Η Κνωσός δεν είναι μια πλάγια εκδρομή από ένα παραθαλάσσιο θέρετρο — είναι μια μέρα μέσα στον αρχαιότερο ανακτορικό πολιτισμό της Ευρώπης. Τα ενετικά τείχη είναι 4 χιλιόμετρα μήκος και έως 40 μέτρα πάχος. Η κεντρική αγορά στην οδό 1866 είναι από τις καλύτερες στην Ελλάδα.\n\nΣχεδιάζετε ένα ευρύτερο ταξίδι στην Κρήτη; Εξερευνήστε τον πλήρη [Οδηγό Ταξιδιού Κρήτης](/destinations/crete)."
+    },
+    pageIncludes: {
+      en: ["Palace of Knossos", "Heraklion Archaeological Museum", "Venetian Old City", "Cretan food & market guide", "Beaches & day trips", "Practical tips & FAQs"],
+      el: ["Παλάτι της Κνωσού", "Αρχαιολογικό Μουσείο", "Ενετική Παλιά Πόλη", "Οδηγός φαγητού & αγοράς", "Παραλίες & εκδρομές", "Πρακτικές συμβουλές & FAQs"]
+    },
+    perfectFor: {
+      en: ["History & Archaeology enthusiasts", "Food & wine travellers", "Cultural city breaks", "Using Heraklion as a Crete base", "Travellers who want depth over aesthetics"],
+      el: ["Λάτρεις ιστορίας & αρχαιολογίας", "Ταξιδιώτες φαγητού & κρασιού", "Πολιτιστικές αποδράσεις", "Βάση για εξερεύνηση Κρήτης", "Ταξιδιώτες που θέλουν βάθος"]
+    },
+    honestAdvice: {
+      title: { en: "Honest Advice — What to Skip", el: "Ειλικρινής Συμβουλή — Τι να Αποφύγεις" },
+      alert: {
+        en: "What nobody tells you: Knossos without any prior knowledge of Minoan civilisation can feel like a series of confusing concrete structures. Spend 20 minutes reading the basics beforehand, or visit the Archaeological Museum first, and the site transforms. Go unprepared and you may find yourself wondering why you came.",
+        el: "Αυτό που δε σου λέει κανείς: Η Κνωσός χωρίς καμία προηγούμενη γνώση του μινωικού πολιτισμού μοιάζει με μπερδεμένες τσιμεντένιες κατασκευές. Διάβασε πρώτα ή επισκέψου πρώτα το μουσείο."
+      },
+      items: {
+        en: [
+          "Eating at the tourist-facing restaurants directly on Lion Square — walk one alley in any direction for better food and lower prices.",
+          "Visiting Knossos in midday summer heat — the site has almost no shade. Book the first entrance (08:00) or go late afternoon.",
+          "Driving in the old city — the Venetian street grid was not designed for cars. Park outside the walls and walk in.",
+          "Expecting beach resort atmosphere — Heraklion is a real city. Urban, sometimes noisy, occasionally chaotic. That is its nature.",
+          "Skipping the Archaeological Museum — the museum completes Knossos. Doing one without the other is a wasted opportunity."
+        ],
+        el: [
+          "Φαγητό στην πλατεία Λιονταριών — περπάτα ένα στενό πιο πέρα.",
+          "Κνωσός το μεσημέρι καλοκαιριού — χωρίς σκιά. Πήγαινε 08:00 ή απόγευμα.",
+          "Οδήγηση στην παλιά πόλη — πάρκαρε έξω από τα τείχη.",
+          "Να περιμένεις ατμόσφαιρα θέρετρου — το Ηράκλειο είναι πραγματική πόλη.",
+          "Να παραλείψεις το Αρχαιολογικό Μουσείο — ολοκληρώνει την Κνωσό."
+        ]
+      }
+    }
+  },
 };
