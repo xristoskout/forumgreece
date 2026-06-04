@@ -243,7 +243,7 @@ export const MAP_PINS: Pin[] = [
   },
   {
     id: "heraklion",
-    x: 57.0, y: 81.5,
+    x: 59.8, y: 80.7,
     href: "/destinations/heraklion",
     label: { en: "Heraklion", el: "Ηράκλειο" },
     tagline: { en: "Knossos, market & Venetian harbour", el: "Κνωσός, αγορά & ενετικό λιμάνι" },

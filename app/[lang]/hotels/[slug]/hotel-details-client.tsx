@@ -47,6 +47,7 @@ const STAY22_EMBEDS: Record<string, string> = {
   lemnos: "https://stay22.com/embed/6a201d9f7ae5f4b0fa298dd1",
   syros: "https://stay22.com/embed/6a2030c13f80a50cb3c16e4e",
   rethymno: "https://stay22.com/embed/6a2155b533c0b6cf40a045ca",
+  heraklion: "https://stay22.com/embed/6a215fb333c0b6cf40a08064",
 };
 
 const HOTEL_NAMES: Record<string, string[]> = {
@@ -80,6 +81,7 @@ const HOTEL_NAMES: Record<string, string[]> = {
   lemnos: ["Myrina Castle Hotel", "Porto Myrina Palace", "Lemnos Village Resort", "Lemnos Beach Hotel", "Afrodite Hotel", "Ilio Maris Hotel", "Lemnos Inn", "Pergamontas Village", "Varos Village Hotel"],
   skiathos: ["Bourtzi Boutique Hotel", "Alkyon Hotel", "Hotel Mato", "Skiathos Palace Hotel", "Pension Pandora", "San Stefano Hotel", "Atrium Hotel", "Esperides Beach Hotel", "Skiathos Princess Hotel", "Troulos Bay Hotel", "Mandraki Village", "Koukounaries Hotel", "Skiathos Sage Hotel", "Aegean Suites Hotel", "Paradise Hotel Skiathos", "Kanapitsa Mare Hotel"],
   rethymno: ["Fortezza", "Rimondi Boutique Hotel", "Avli Lounge Apartments", "Casa Vitae", "Creta Palace", "Acqua Marine", "Plakias Bay Hotel"],
+  heraklion: ["Astoria Hotel", "GDM Megaron", "Olive Green Hotel", "Lato Boutique Hotel", "Aquila Atlantis", "Ibis Styles Heraklion", "Capsis Astoria"],
 };
 
 function getStay22Url(slug: string): string {

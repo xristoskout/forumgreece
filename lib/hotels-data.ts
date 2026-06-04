@@ -3222,4 +3222,89 @@ export const hotels: HotelCard[] = [
       }
     }
   },
+  {
+    slug: "heraklion",
+    name: "Where to Stay in Heraklion",
+    place: "Heraklion — Central Crete",
+    info: {
+      en: "Find the best areas to stay in Heraklion, Crete: the Old Venetian City for history and atmosphere, the Harbour District for iconic views, the New City for local life and value, and the coastal fringe for easy beach access. Complete hotel guide.",
+      el: "Βρείτε τις καλύτερες περιοχές για διαμονή στο Ηράκλειο: την Παλιά Ενετική Πόλη, τη συνοικία του Λιμανιού, τη Νέα Πόλη και την Αμμούδαρα. Πλήρης οδηγός διαμονής."
+    },
+    image: "/images/heraklion.webp",
+    badge: "Featured stay",
+    overview: {
+      en: "Heraklion is not a city you move through to get somewhere else. It is one of the great historical cities of the Mediterranean — the largest city in Crete, the former seat of Minoan civilisation, the capital the Venetians fortified against the Ottomans, and today a city that eats, drinks and lives with genuine conviction. The choice of where to stay here is not simply about price or comfort: it is about which Heraklion you want to inhabit.\n\nThe city divides naturally into four areas. The Old Venetian City, within its Renaissance walls, is compact, walkable, and gives the most immediate sense of Heraklion's layered history. The Harbour District, around the Venetian arsenals and the Koules fortress, offers a maritime atmosphere. The New City — outside the walls — is where Heraklion actually lives: kafeneions without tourist markup, neighbourhood restaurants, the authentic rhythm of a working Greek city. And the coastal area west toward Amoudara gives direct access to the city's most accessible sandy beach.",
+      el: "Το Ηράκλειο δεν είναι μια πόλη που απλώς περνάς για να πας αλλού. Είναι μια από τις σπουδαιότερες ιστορικές πόλεις της Μεσογείου. Η επιλογή διαμονής εδώ δεν έχει να κάνει μόνο με τιμή ή άνεση: έχει να κάνει με το ποιο Ηράκλειο θέλεις να ζήσεις.\n\nΗ πόλη χωρίζεται σε τέσσερις περιοχές. Η Παλιά Ενετική Πόλη είναι συμπαγής και περπατιέται. Η συνοικία του Λιμανιού έχει θαλάσσια ατμόσφαιρα. Η Νέα Πόλη είναι η αυθεντική, ζωντανή πόλη. Και η δυτική ακτή προς Αμμούδαρα δίνει άμεση πρόσβαση στην παραλία."
+    },
+    description: {
+      en: "Relaxing stays, beautiful views and authentic hospitality — organized in a clear and practical way.",
+      el: "Χαλαρωτικές διαμονές, όμορφη θέα και αυθεντική φιλοξενία — οργανωμένα με καθαρό και πρακτικό τρόπο."
+    },
+    features: {
+      en: ["Old Venetian City (History & Atmosphere)", "Harbour District (Views & Koules)", "New City (Local Life & Value)", "Amoudara & West Coast (Beach-First)"],
+      el: ["Παλιά Ενετική Πόλη (Ιστορία & Ατμόσφαιρα)", "Συνοικία Λιμανιού (Θέα & Κούλες)", "Νέα Πόλη (Τοπική Ζωή & Αξία)", "Αμμούδαρα & Δυτική Ακτή (Παραλία)"]
+    },
+    sections: [
+      {
+        title: { en: "1. Old Venetian City — History, Atmosphere and the Best Addresses", el: "1. Παλιά Ενετική Πόλη — Ιστορία & Ατμόσφαιρα" },
+        content: {
+          en: "The historic core of Heraklion sits within — and immediately adjacent to — the Venetian walls, which date from the 16th century and still circle the old city in nearly complete form. Lion Square with the Morosini Fountain is the social and geographical heart. 25 Avgoustou Street runs north toward the harbour; 1866 Street (the central market) runs south.\n\nHotels range from small boutique properties in converted Venetian buildings to larger four-star properties close to the walls. The best addresses are closest to the old market quarter — far enough from the tourist-facing streets to have local rhythm, close enough to walk anywhere in ten minutes.\n\n💡 Area tip: The neighbourhood between Handakos Street and the south wall, close to the Chanioporta gate, is the most underrated part of the old city for accommodation. Quieter than Lion Square, still walkable to every major sight, and properties here tend to be smaller, better value, and staffed by locals.",
+          el: "Το ιστορικό κέντρο του Ηρακλείου βρίσκεται εντός των ενετικών τειχών. Η Πλατεία Λιονταριών με την Κρήνη Μοροζίνι είναι η καρδιά. Τα ξενοδοχεία κυμαίνονται από boutique σε αναπαλαιωμένα ενετικά κτίρια έως μεγαλύτερες μονάδες.\n\nΟι καλύτερες διευθύνσεις είναι κοντά στην παλιά αγορά. 💡 Συμβουλή: Η γειτονιά μεταξύ Χάνδακος και νότιου τείχους είναι η πιο υποτιμημένη."
+        }
+      },
+      {
+        title: { en: "2. Harbour District — Maritime Atmosphere, the Arsenals and Koules", el: "2. Συνοικία Λιμανιού — Θαλάσσια Ατμόσφαιρα" },
+        content: {
+          en: "The area below the northern edge of the old city, along the old harbour waterfront. The Venetian arsenals run along the eastern harbour front. The Koules fortress sits at the harbour entrance. The promenade connects the two.\n\nHotels sit between the walls and the waterfront — technically outside the old city but within five minutes' walk. The views toward the harbour and sea compensate for less characterful architecture. This is the most practical location for travellers arriving by overnight ferry.\n\n💡 Area tip: The old Venetian arsenals are one of Heraklion's most undervisited spaces. Book a harbour-side property and you walk past them every morning. The light through the arches onto the water at 07:00 is not available on any highlight reel.",
+          el: "Η περιοχή κάτω από τη βόρεια άκρη της παλιάς πόλης, κατά μήκος του παλιού λιμανιού. Τα ξενοδοχεία βρίσκονται ανάμεσα στα τείχη και το νερό. Ιδανική τοποθεσία για όσους φτάνουν με το νυχτερινό πλοίο."
+        }
+      },
+      {
+        title: { en: "3. New City — Where Heraklion Actually Lives", el: "3. Νέα Πόλη — Η Αυθεντική Πόλη" },
+        content: {
+          en: "Everything south and east of the Venetian walls, outside the historic core. This is not conventionally recommended — which is an error. Heraklion's New City is a real, working, interesting European city.\n\nThe best areas within the New City for accommodation are the neighbourhoods south of the Chanioporta gate, the streets around Plateia Eleftherias, and the residential districts toward the university quarter. Hotels are largely conventional mid-range properties. Prices are consistently lower than equivalent quality in the old city.\n\n💡 Area tip: The neighbourhood behind the central market on 1866 Street — the residential blocks toward the Venetian south wall — is one of the most genuinely Cretan parts of the city. No tour groups. No manufactured atmosphere.",
+          el: "Η περιοχή νότια και ανατολικά των ενετικών τειχών. Μια πραγματική, ζωντανή ευρωπαϊκή πόλη. Οι τιμές είναι σταθερά χαμηλότερες από την παλιά πόλη. Η γειτονιά πίσω από την αγορά της οδού 1866 είναι από τις πιο αυθεντικά κρητικές."
+        }
+      },
+      {
+        title: { en: "4. Amoudara and the West Coast — Beach Access Without Leaving the City", el: "4. Αμμούδαρα & Δυτική Ακτή — Πρόσβαση σε Παραλία" },
+        content: {
+          en: "The coastal suburb along the sandy beach 3 km west of Heraklion. Connected to the centre by a flat coastal road and the most-used urban cycling path in Crete. The beach is long, sandy, organized with sunbeds in the central sections, and wilder toward the salt lake.\n\nHotels range from large beach resort complexes to smaller, well-positioned properties. This is the best option for visitors who need genuine daily beach access.\n\n💡 Area tip: The western end of Amoudara beach, beyond the main resort strip toward the Almiros salt lake, is quieter and backed by natural vegetation. Properties here are fewer but better value, and the beach is noticeably uncrowded even in August.",
+          el: "Το προάστιο κατά μήκος της αμμώδους παραλίας 3 χλμ. δυτικά. Η καλύτερη επιλογή για όσους χρειάζονται καθημερινή πρόσβαση σε παραλία. Το δυτικό άκρο είναι πιο ήσυχο και λιγότερο πολυσύχναστο."
+        }
+      }
+    ],
+    faq: [
+      {
+        q: { en: "Do I need a car to stay in Heraklion?", el: "Χρειάζομαι αυτοκίνητο στο Ηράκλειο;" },
+        a: { en: "Not for the city itself — the old city, the museum, Lion Square and the harbour are all walkable. A car is essential for Knossos (though the city bus covers it), Phaistos, and any exploration beyond the city.", el: "Όχι για την ίδια την πόλη. Απαραίτητο για Κνωσό, Φαιστό και εξερεύνηση πέρα από την πόλη." }
+      },
+      {
+        q: { en: "How many nights do I need in Heraklion?", el: "Πόσες νύχτες χρειάζομαι στο Ηράκλειο;" },
+        a: { en: "Minimum two full nights — one for Knossos and the museum, one for the old city. Three nights opens up day trips to Phaistos or Archanes.", el: "Τουλάχιστον δύο νύχτες. Τρεις επιτρέπουν εκδρομές σε Φαιστό ή Αρχάνες." }
+      },
+      {
+        q: { en: "Which area is best for families?", el: "Ποια περιοχή είναι καλύτερη για οικογένειες;" },
+        a: { en: "Amoudara for beach-focused families with young children. The Old City for families with older children — walkable, historically interesting, excellent food.", el: "Αμμούδαρα για οικογένειες με μικρά παιδιά. Παλιά Πόλη για μεγαλύτερα παιδιά." }
+      },
+      {
+        q: { en: "What is the best area for first-time visitors?", el: "Ποια περιοχή είναι καλύτερη για πρώτη επίσκεψη;" },
+        a: { en: "The Old Venetian City, without qualification. Inside the history, walking distance from the market and museum, the most complete Heraklion experience.", el: "Η Παλιά Ενετική Πόλη, χωρίς αμφιβολία." }
+      },
+      {
+        q: { en: "Are there boutique hotels in Heraklion?", el: "Υπάρχουν boutique ξενοδοχεία στο Ηράκλειο;" },
+        a: { en: "Yes — particularly in the Old Venetian City, where several Venetian and neoclassical buildings have been converted. Look for properties with original architectural features and Cretan breakfast products.", el: "Ναι — ειδικά στην Παλιά Πόλη, σε αναπαλαιωμένα ενετικά κτίρια." }
+      }
+    ],
+    seo: {
+      title: {
+        en: "Where to Stay in Heraklion | Best Areas & Hotels Guide | GoGreeceNow",
+        el: "Πού να Μείνεις στο Ηράκλειο | Καλύτερες Περιοχές & Ξενοδοχεία | GoGreeceNow"
+      },
+      description: {
+        en: "Find the best areas to stay in Heraklion, Crete: the Old Venetian City for history and atmosphere, the Harbour District for iconic views, the New City for local life and value, and the coastal fringe for easy beach access. Complete hotel guide.",
+        el: "Βρείτε τις καλύτερες περιοχές για διαμονή στο Ηράκλειο: Παλιά Πόλη, Λιμάνι, Νέα Πόλη και Αμμούδαρα. Πλήρης οδηγός διαμονής."
+      }
+    }
+  },
 ];
