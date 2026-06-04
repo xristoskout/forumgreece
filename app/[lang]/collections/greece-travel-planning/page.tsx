@@ -179,17 +179,17 @@ export default async function GreeceTravelPlanningCollectionPage({
 
             <p className="mt-3 text-sm leading-7 text-slate-500">
               {lang === "en"
-                ? "Compare island and regional destination guides to match your trip style, budget and available days."
-                : "Σύγκρινε οδηγούς για νησιά και περιοχές ώστε να ταιριάξεις το ταξίδι με το στυλ, το budget και τις διαθέσιμες μέρες σου."}
+                ? "Browse all destination guides — islands, cities, and coastal escapes — to find the perfect match for your trip style, budget, and available days."
+                : "Δες όλους τους ταξιδιωτικούς οδηγούς — νησιά, πόλεις και παραθαλάσσιες αποδράσεις — για να βρεις τον ιδανικό προορισμό για το στυλ, το budget και τις μέρες σου."}
             </p>
 
             <Link
-              href={withLang("/collections/greek-islands", lang)}
+              href={withLang("/destinations", lang)}
               className="mt-5 inline-block text-sm font-semibold text-indigo-700"
             >
               {lang === "en"
-                ? "Explore Greek island guides →"
-                : "Δες οδηγούς για ελληνικά νησιά →"}
+                ? "Browse all destination guides →"
+                : "Δες όλους τους οδηγούς προορισμών →"}
             </Link>
           </article>
 
@@ -202,17 +202,17 @@ export default async function GreeceTravelPlanningCollectionPage({
 
             <p className="mt-3 text-sm leading-7 text-slate-500">
               {lang === "en"
-                ? "Once the destination is clear, use hotel and experience pages to shape the trip into a complete itinerary."
-                : "Μόλις ξεκαθαρίσει ο προορισμός, χρησιμοποίησε σελίδες για ξενοδοχεία και εμπειρίες ώστε να φτιάξεις ένα ολοκληρωμένο itinerary."}
+                ? "Once the destination is clear, browse hotel guides to find the perfect stay — from city boutique hotels to beach resorts and village guesthouses."
+                : "Μόλις ξεκαθαρίσει ο προορισμός, δες τους οδηγούς ξενοδοχείων για να βρεις την ιδανική διαμονή — από boutique ξενοδοχεία πόλης έως παραθαλάσσια resorts και παραδοσιακούς ξενώνες."}
             </p>
 
             <Link
-              href={withLang("/collections/greece-tours-and-experiences", lang)}
+              href={withLang("/hotels", lang)}
               className="mt-5 inline-block text-sm font-semibold text-indigo-700"
             >
               {lang === "en"
-                ? "Explore tours and experiences →"
-                : "Δες εκδρομές και εμπειρίες →"}
+                ? "Browse all hotel guides →"
+                : "Δες όλους τους οδηγούς ξενοδοχείων →"}
             </Link>
           </article>
         </div>

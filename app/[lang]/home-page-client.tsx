@@ -164,22 +164,22 @@ export default function HomePageClient({
     {
       title: { en: "Island Escapes", el: "Νησιωτικές Αποδράσεις" },
       description: {
-        en: "Browse Greek island inspiration, sea views, beaches and destination ideas for summer trips.",
-        el: "Ανακάλυψε έμπνευση για ελληνικά νησιά, θαλασσινά τοπία, παραλίες και ιδέες για καλοκαιρινά ταξίδια.",
+        en: "Browse all destination guides — islands, cities and coastal escapes across Greece. Find the perfect place for your trip.",
+        el: "Δες όλους τους ταξιδιωτικούς οδηγούς — νησιά, πόλεις και παραθαλάσσιες αποδράσεις σε όλη την Ελλάδα. Βρες τον ιδανικό προορισμό σου.",
       },
-      href: withLang("/collections/greek-islands"),
+      href: withLang("/destinations"),
       image: destinations[0]?.image || "/images/hero-greece.webp",
       eyebrow: {
         en: "Featured Collection",
         el: "Προτεινόμενη Συλλογή",
       },
       tags: {
-        en: ["Greek Islands", "Beaches", "Summer Trips"],
-        el: ["Ελληνικά Νησιά", "Παραλίες", "Καλοκαιρινά Ταξίδια"],
+        en: ["Destinations", "Greek Islands", "Travel Guides"],
+        el: ["Προορισμοί", "Ελληνικά Νησιά", "Ταξιδιωτικοί Οδηγοί"],
       },
       cta: {
-        en: "Explore Greek island guides →",
-        el: "Δες οδηγούς για ελληνικά νησιά →",
+        en: "Browse all destination guides →",
+        el: "Δες όλους τους οδηγούς προορισμών →",
       },
     },
     {
