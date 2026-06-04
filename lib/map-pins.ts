@@ -236,7 +236,7 @@ export const MAP_PINS: Pin[] = [
   },
   {
     id: "rethymno",
-    x: 57.5, y: 77.8,
+    x: 53.6, y: 80.3,
     href: "/destinations/rethymno",
     label: { en: "Rethymno", el: "Ρέθυμνο" },
     tagline: { en: "Venetian old town & Fortezza", el: "Ενετική πόλη & Φορτέτζα" },
