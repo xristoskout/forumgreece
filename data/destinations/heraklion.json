@@ -1,0 +1,18 @@
+{
+  "id": "heraklion",
+  "slug": "heraklion",
+  "name": "Heraklion",
+  "type": "City",
+  "region": { "en": "Crete", "el": "Κρήτη" },
+  "coordinates": { "lat": 35.3387, "lng": 25.1442 },
+  "scores": {
+    "family": { "value": 8, "reason": "Knossos, aquarium, and variety for all ages." },
+    "couples": { "value": 7, "reason": "Great food scene and cultural depth." },
+    "luxury": { "value": 6, "reason": "Fewer luxury resorts than other parts of Crete." },
+    "budget": { "value": 8, "reason": "Affordable city with many budget options." },
+    "nightlife": { "value": 7, "reason": "Lively city bars and cafes." },
+    "food": { "value": 10, "reason": "Crete's most powerful food culture." }
+  },
+  "quick_summary": "Crete's capital with the Minoan Palace of Knossos, Venetian harbour, and the island's most authentic urban food scene.",
+  "bestFor": ["history", "food_lovers", "culture", "city_break", "families"]
+}

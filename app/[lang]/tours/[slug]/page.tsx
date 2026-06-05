@@ -183,7 +183,7 @@ export default async function TourPage({ params }: TourPageProps) {
   const pageData = getTourPageData(slug);
 
   if (!pageData) {
-    notFound();
+    permanentRedirect(`/${lang}/tours/all`);
   }
 
   const canonicalUrl = `${SITE_URL}/${lang}/tours/${slug}`;

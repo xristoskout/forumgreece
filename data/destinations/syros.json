@@ -1,0 +1,18 @@
+{
+  "id": "syros",
+  "slug": "syros",
+  "name": "Syros",
+  "type": "Island",
+  "region": { "en": "Cyclades", "el": "Κυκλάδες" },
+  "coordinates": { "lat": 37.4521, "lng": 24.9207 },
+  "scores": {
+    "family": { "value": 7, "reason": "Quiet beaches and charming old town." },
+    "couples": { "value": 8, "reason": "Romantic neoclassical Ermoupoli." },
+    "luxury": { "value": 6, "reason": "Few luxury options but high character." },
+    "budget": { "value": 7, "reason": "Good value compared to other Cyclades." },
+    "nightlife": { "value": 6, "reason": "Bars in Ermoupoli but no clubs." },
+    "food": { "value": 9, "reason": "Serious food culture with local specialties." }
+  },
+  "quick_summary": "The Cyclades' capital, Syros offers neoclassical architecture, medieval Ano Syros, and authentic year-round island life.",
+  "bestFor": ["couples", "food_lovers", "culture", "year_round", "off_beaten_path"]
+}

@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { food, SITE_URL, type Lang } from "../../../../lib/content";
 import { experienceBusinesses } from "../../../../lib/experiences";
 import EatDrinkClient from "./eat-drink-client";
@@ -64,9 +64,13 @@ export default async function EatDrinkPage({ params }: { params: Params }) {
   const lang: Lang = resolvedParams.lang === "el" ? "el" : "en";
   const slug = resolvedParams.slug;
 
-  const item = food.find((entry) => entry.slug === slug);
+  let item = food.find((entry) => entry.slug === slug);
 
   if (!item) {
+    const byPlace = food.filter(entry => entry.place?.toLowerCase() === slug);
+    if (byPlace.length > 0) {
+      permanentRedirect(`/${lang}/eat-drink/${byPlace[0].slug}`);
+    }
     notFound();
   }
 

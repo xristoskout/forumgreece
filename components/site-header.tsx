@@ -32,6 +32,7 @@ export default function SiteHeader() {
     food: { en: "Eat & Drink", el: "Φαγητό & Ποτό" },
     forums: { en: "Travel to Greece", el: "Ταξίδι στην Ελλάδα" },
     compare: { en: "Compare", el: "Σύγκριση" },
+    planner: { en: "Trip Planner", el: "Σχεδιαστής" },
     blog: { en: "Blog", el: "Blog" },
     menu: { en: "Menu", el: "Μενού" },
     close: { en: "Close", el: "Κλείσιμο" },
@@ -77,6 +78,12 @@ export default function SiteHeader() {
         label: t.compare[lang],
         href: withLang("/travel-tools"),
         active: pathname.startsWith(`/${lang}/travel-tools`),
+      },
+      {
+        key: "planner",
+        label: t.planner[lang],
+        href: withLang("/trip-planner"),
+        active: pathname.startsWith(`/${lang}/trip-planner`),
       },
       {
         key: "blog",

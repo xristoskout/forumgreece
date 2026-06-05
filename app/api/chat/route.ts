@@ -5,12 +5,7 @@ import {
   createUIMessageStream 
 } from 'ai';
 import { google } from '@ai-sdk/google';
-import { destinations } from '../../../lib/destinations-data';
-import { hotels } from '../../../lib/hotels-data';
-import { food } from '../../../lib/food-data';
-import { tours } from '../../../lib/tours-data';
-import { travelInfoGuides } from '../../../lib/travel-info-data';
-import { experienceBusinesses } from '../../../lib/experiences';
+import { getKnowledgeBase } from '../../../lib/knowledge-base';
 import { checkRateLimit, getIP } from '../../../lib/rate-limit';
 
 export const maxDuration = 300;
@@ -33,47 +28,9 @@ export async function POST(req: Request) {
       return new Response('API Key missing', { status: 500 });
     }
 
-    const databaseContext = JSON.stringify({
-      destinations: (destinations || []).map(d => ({ 
-        slug: d.slug,
-        name: d.name, 
-        region: d.region?.[lang as keyof typeof d.region] || d.region?.en, 
-        info: d.blurb?.[lang as keyof typeof d.blurb] || d.blurb?.en 
-      })),
-      hotels: (hotels || []).map(h => ({ 
-        slug: h.slug,
-        name: h.name, 
-        place: h.place, 
-        info: h.info?.[lang as keyof typeof h.info] || h.info?.en, 
-        features: h.features?.[lang as keyof typeof h.features] || h.features?.en 
-      })),
-      foodAndRestaurants: (food || []).map(f => ({ 
-        slug: f.slug,
-        title: f.title?.[lang as keyof typeof f.title] || f.title?.en, 
-        place: f.place, 
-        info: f.info?.[lang as keyof typeof f.info] || f.info?.en, 
-        specialties: f.specialties?.[lang as keyof typeof f.specialties] || f.specialties?.en 
-      })),
-      toursAndExperiences: (tours || []).map(t => ({ 
-        slug: t.slug,
-        title: t.title?.[lang as keyof typeof t.title] || t.title?.en, 
-        place: t.place, 
-        info: t.info?.[lang as keyof typeof t.info] || t.info?.en, 
-        highlights: t.highlights?.[lang as keyof typeof t.highlights] || t.highlights?.en 
-      })),
-      travelGuides: (travelInfoGuides || []).map(g => ({ 
-        title: g.title?.[lang as keyof typeof g.title] || g.title?.en, 
-        info: g.description?.[lang as keyof typeof g.description] || g.description?.en 
-      })),
-      sponsoredBusinesses: (experienceBusinesses || []).map(b => ({
-        slug: b.slug,
-        name: b.name,
-        category: b.category?.[lang as keyof typeof b.category] || b.category?.en,
-        place: b.place,
-        info: b.info?.[lang as keyof typeof b.info] || b.info?.en,
-        highlights: b.highlights?.[lang as keyof typeof b.highlights] || b.highlights?.en
-      }))
-    });
+    const kb = await getKnowledgeBase(lang as 'en' | 'el');
+
+    const databaseContext = JSON.stringify(kb);
 
     const systemPrompt = `
 You are the official GoGreeceNow AI Travel Assistant. Your job is to help users plan trips to Greece.

@@ -1,0 +1,18 @@
+{
+  "id": "rethymno",
+  "slug": "rethymno",
+  "name": "Rethymno",
+  "type": "City",
+  "region": { "en": "Crete", "el": "Κρήτη" },
+  "coordinates": { "lat": 35.3647, "lng": 24.4824 },
+  "scores": {
+    "family": { "value": 8, "reason": "Long sandy beach and family-friendly old town." },
+    "couples": { "value": 8, "reason": "Romantic Venetian old town atmosphere." },
+    "luxury": { "value": 7, "reason": "Good range of boutique and luxury hotels." },
+    "budget": { "value": 7, "reason": "Reasonable prices for a tourist city." },
+    "nightlife": { "value": 6, "reason": "Bars in old town, not a party island." },
+    "food": { "value": 8, "reason": "Excellent Cretan tavernas throughout." }
+  },
+  "quick_summary": "Venetian old town, Fortezza castle, sandy city beach, and the best base for exploring Crete's dramatic interior.",
+  "bestFor": ["couples", "families", "history", "food_lovers", "culture"]
+}
