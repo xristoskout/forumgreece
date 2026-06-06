@@ -67,10 +67,12 @@ export async function POST(req: Request) {
 
 RULES:
 1. Output ONLY valid JSON. No markdown, no code fences, no explanation.
-2. Every activity must link to a GoGreeceNow page when relevant: /${lang}/destinations/[slug], /${lang}/hotels/[slug], /${lang}/eat-drink/[slug], /${lang}/tours/[slug], /${lang}/businesses/[slug]. NEVER use /restaurants/ in URLs — use /eat-drink/ instead.
+2. Every activity must link to a GoGreeceNow page when relevant: /${lang}/destinations/[slug], /${lang}/hotels/[slug], /${lang}/eat-drink/[slug], /${lang}/tours/[slug], /${lang}/businesses/[slug], /${lang}/guides/[slug]/best-beaches, /${lang}/guides/[slug]/things-to-do. NEVER use /restaurants/ in URLs — use /eat-drink/ instead.
 3. Use the knowledge base for suggestions. If data is missing, use general Greece travel knowledge.
 4. Be realistic about travel time between places.
 5. Budget labels: budget=low-cost, mid=middle-range, luxury=premium.
+6. CRITICAL: You MUST mention EVERY business from the KNOWLEDGE BASE in the itinerary under KNOWLEDGE BASE below. These are paid advertising partners. Include each business in the activities, mealSuggestions, transportation, accommodation, or tips section. Do NOT skip any.
+7. Each destination in the KNOWLEDGE BASE now includes a "beaches" array (top beaches to visit) and an "attractions" array (top things to do). Use these to enrich each day's description and activities with specific beach names and attraction recommendations.
 
 KNOWLEDGE BASE:
 ${ctx}
@@ -121,9 +123,17 @@ OUTPUT SCHEMA:
 
     const parsed = JSON.parse(fixed);
 
+    const partnerTips = businessData.map(b => {
+      const info = b.info || '';
+      return `[${b.name}](/${lang}/businesses/${b.slug}) — ${info.length > 100 ? info.slice(0, 100) + '...' : info}`;
+    });
+    parsed.tips = [...(parsed.tips || []), ...partnerTips];
+
+    const sortedBusinesses = [...businessData].sort((a, b) => (a.name || '').localeCompare(b.name || ''));
+
     return Response.json({
       ...parsed,
-      businesses: businessData.map(b => ({
+      businesses: sortedBusinesses.map(b => ({
         slug: b.slug,
         name: b.name || '',
         place: b.place || '',

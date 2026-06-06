@@ -7,6 +7,7 @@ import { food as tsFood } from './food-data';
 import { tours as tsTours } from './tours-data';
 import { travelInfoGuides as tsTravelInfo } from './travel-info-data';
 import { experienceBusinesses as tsBusinesses } from './experiences';
+import { destinationSections, type DestinationSection } from './destination-sections';
 
 const sanityClient = createClient({
   projectId,
@@ -29,6 +30,8 @@ export type KnowledgeBaseItem = {
   features?: string[];
   specialties?: string[];
   category?: string;
+  beaches?: string[];
+  attractions?: string[];
 };
 
 export type KnowledgeBase = {
@@ -104,15 +107,39 @@ async function fetchFromSanity(lang: Lang): Promise<Partial<KnowledgeBase> | nul
   }
 }
 
+function extractSectionItems(sections: DestinationSection[], keywords: string[], lang: Lang): string[] {
+  const items: string[] = [];
+  for (const section of sections) {
+    const titleEn = section.title.en.toLowerCase();
+    const titleEl = section.title.el.toLowerCase();
+    const match = keywords.some(k => titleEn.includes(k.toLowerCase()) || titleEl.includes(k.toLowerCase()));
+    if (!match || !section.items) continue;
+    for (const item of section.items) {
+      const label = item.title ? ((item.title as any)[lang] || (item.title as any).en || '') + ': ' : '';
+      const text = (item.text as any)?.[lang] || (item.text as any)?.en || '';
+      const line = label + text;
+      if (line.trim()) items.push(line.trim());
+    }
+  }
+  return items;
+}
+
 function mapFromTS(lang: Lang): KnowledgeBase {
   return {
-    destinations: (tsDestinations || []).map(d => ({
-      slug: d.slug,
-      name: d.name,
-      region: (d.region as any)?.[lang] || (d.region as any)?.en || '',
-      info: (d.blurb as any)?.[lang] || (d.blurb as any)?.en || '',
-      highlights: (d.highlights as any)?.[lang] || (d.highlights as any)?.en || [],
-    })),
+    destinations: (tsDestinations || []).map(d => {
+      const sections = (destinationSections as any)?.[d.slug];
+      const beaches = sections ? extractSectionItems(sections, ['beach', 'παραλ'], lang) : [];
+      const attractions = sections ? extractSectionItems(sections, ['attraction', 'experience', 'things to do', 'αξιοθέατ', 'εμπειρίε', 'πράγματα να κάν'], lang) : [];
+      return {
+        slug: d.slug,
+        name: d.name,
+        region: (d.region as any)?.[lang] || (d.region as any)?.en || '',
+        info: (d.blurb as any)?.[lang] || (d.blurb as any)?.en || '',
+        highlights: (d.highlights as any)?.[lang] || (d.highlights as any)?.en || [],
+        beaches: beaches.slice(0, 8),
+        attractions: attractions.slice(0, 8),
+      };
+    }),
     hotels: (tsHotels || []).map(h => ({
       slug: h.slug,
       name: h.name || h.slug,
