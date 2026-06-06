@@ -604,7 +604,7 @@ export default function TripPlannerClient({
                     {itinerary.tips.map((tip, i) => (
                       <li key={i} className="flex gap-3 text-slate-700">
                         <span className="text-indigo-500 font-bold shrink-0">•</span>
-                        <span>{tip}</span>
+                        <span>{linkify(tip, lang)}</span>
                       </li>
                     ))}
                   </ul>
