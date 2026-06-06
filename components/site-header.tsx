@@ -34,8 +34,8 @@ export default function SiteHeader() {
         setToolsOpen(false);
       }
     };
-    document.addEventListener("mousedown", handleClick);
-    return () => document.removeEventListener("mousedown", handleClick);
+    document.addEventListener("click", handleClick);
+    return () => document.removeEventListener("click", handleClick);
   }, [toolsOpen]);
 
   const t = {
