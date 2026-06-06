@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import { siteBrand, siteBrandLine } from "../lib/content";
 import { Lang, useLocale } from "../lib/useLocale";
@@ -11,6 +11,8 @@ export default function SiteHeader() {
   const { lang, pathname, withLang, withLangHash, switchLanguage } = useLocale();
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [toolsOpen, setToolsOpen] = useState(false);
+  const toolsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     setMenuOpen(false);
@@ -24,6 +26,17 @@ export default function SiteHeader() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (!toolsOpen) return;
+    const handleClick = (e: MouseEvent) => {
+      if (toolsRef.current && !toolsRef.current.contains(e.target as Node)) {
+        setToolsOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClick);
+    return () => document.removeEventListener("mousedown", handleClick);
+  }, [toolsOpen]);
+
   const t = {
     destinations: { en: "Destinations", el: "Προορισμοί" },
     travelInfo: { en: "Travel Info", el: "Ταξιδιωτικές Πληροφορίες" },
@@ -31,6 +44,7 @@ export default function SiteHeader() {
     tours: { en: "Tours", el: "Εκδρομές" },
     food: { en: "Eat & Drink", el: "Φαγητό & Ποτό" },
     forums: { en: "Travel to Greece", el: "Ταξίδι στην Ελλάδα" },
+    travelTools: { en: "Travel Tools", el: "Ταξιδιωτικά Εργαλεία" },
     compare: { en: "Compare", el: "Σύγκριση" },
     planner: { en: "Trip Planner", el: "Σχεδιαστής" },
     blog: { en: "Blog", el: "Blog" },
@@ -74,16 +88,10 @@ export default function SiteHeader() {
         active: pathname.startsWith(`/${lang}/collections/greece-food-and-drink`),
       },
       {
-        key: "compare",
-        label: t.compare[lang],
+        key: "travel-tools",
+        label: t.travelTools[lang],
         href: withLang("/travel-tools"),
-        active: pathname.startsWith(`/${lang}/travel-tools`),
-      },
-      {
-        key: "planner",
-        label: t.planner[lang],
-        href: withLang("/trip-planner"),
-        active: pathname.startsWith(`/${lang}/trip-planner`),
+        active: pathname.startsWith(`/${lang}/travel-tools`) || pathname.startsWith(`/${lang}/trip-planner`),
       },
       {
         key: "blog",
@@ -142,21 +150,76 @@ export default function SiteHeader() {
           </Link>
 
           <nav className="hidden items-center gap-1 xl:flex">
-            {navItems.map((item) => (
-              <Link
-                key={item.key}
-                href={item.href}
-                className={`px-4 py-2 text-sm font-bold transition-all rounded-full ${
-                  item.active
-                    ? "bg-indigo-600 text-white shadow-lg shadow-indigo-200"
-                    : scrolled || !isHome 
-                      ? "text-slate-600 hover:bg-white/50 hover:text-indigo-700" 
-                      : "text-white/90 hover:bg-white/20 hover:text-white"
-                }`}
-              >
-                {item.label}
-              </Link>
-            ))}
+            {navItems.map((item) =>
+              item.key === "travel-tools" ? (
+                <div key={item.key} className="relative" ref={toolsRef}>
+                  <button
+                    type="button"
+                    onClick={() => setToolsOpen((prev) => !prev)}
+                    className={`px-4 py-2 text-sm font-bold transition-all rounded-full flex items-center gap-1.5 ${
+                      item.active
+                        ? "bg-indigo-600 text-white shadow-lg shadow-indigo-200"
+                        : scrolled || !isHome 
+                          ? "text-slate-600 hover:bg-white/50 hover:text-indigo-700" 
+                          : "text-white/90 hover:bg-white/20 hover:text-white"
+                    }`}
+                  >
+                    {item.label}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className={`transition-transform ${toolsOpen ? "rotate-180" : ""}`}>
+                      <path d="m6 9 6 6 6-6"/>
+                    </svg>
+                  </button>
+                  {toolsOpen && (
+                    <div className="absolute top-full right-0 mt-2 w-56 rounded-2xl bg-white shadow-xl border border-slate-200 p-2 space-y-1 z-50">
+                      <Link
+                        href={withLang("/travel-tools")}
+                        onClick={() => setToolsOpen(false)}
+                        className={`flex items-center gap-3 px-4 py-3 text-sm font-bold rounded-xl transition ${
+                          pathname.startsWith(`/${lang}/travel-tools`)
+                            ? "bg-indigo-50 text-indigo-700"
+                            : "text-slate-700 hover:bg-slate-50 hover:text-indigo-700"
+                        }`}
+                      >
+                        <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-indigo-100 text-indigo-600 text-base">⚖️</span>
+                        <div>
+                          <span className="block">{t.compare[lang]}</span>
+                          <span className="block text-xs font-normal text-slate-400">{lang === "en" ? "Compare destinations" : "Σύγκριση προορισμών"}</span>
+                        </div>
+                      </Link>
+                      <Link
+                        href={withLang("/trip-planner")}
+                        onClick={() => setToolsOpen(false)}
+                        className={`flex items-center gap-3 px-4 py-3 text-sm font-bold rounded-xl transition ${
+                          pathname.startsWith(`/${lang}/trip-planner`)
+                            ? "bg-indigo-50 text-indigo-700"
+                            : "text-slate-700 hover:bg-slate-50 hover:text-indigo-700"
+                        }`}
+                      >
+                        <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-amber-100 text-amber-600 text-base">🤖</span>
+                        <div>
+                          <span className="block">{t.planner[lang]}</span>
+                          <span className="block text-xs font-normal text-slate-400">{lang === "en" ? "AI-powered itinerary" : "AI προγραμματισμός"}</span>
+                        </div>
+                      </Link>
+                    </div>
+                  )}
+                </div>
+              ) : (
+                <Link
+                  key={item.key}
+                  href={item.href}
+                  className={`px-4 py-2 text-sm font-bold transition-all rounded-full ${
+                    item.active
+                      ? "bg-indigo-600 text-white shadow-lg shadow-indigo-200"
+                      : scrolled || !isHome 
+                        ? "text-slate-600 hover:bg-white/50 hover:text-indigo-700" 
+                        : "text-white/90 hover:bg-white/20 hover:text-white"
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              )
+            )}
           </nav>
 
           <div className="flex shrink-0 items-center gap-2">
@@ -259,19 +322,65 @@ export default function SiteHeader() {
               </div>
             )}
             <nav className="grid gap-2">
-              {navItems.map((item) => (
-                <Link
-                  key={item.key}
-                  href={item.href}
-                  className={`border px-4 py-3 text-sm font-medium transition ${
-                    item.active
-                      ? "border-indigo-200 bg-sky-50 text-indigo-700"
-                      : "border-slate-200 bg-white backdrop-blur-md text-slate-600 hover:bg-white hover:bg-slate-50"
-                  }`}
-                >
-                  {item.label}
-                </Link>
-              ))}
+              {navItems.map((item) =>
+                item.key === "travel-tools" ? (
+                  <div key={item.key}>
+                    <div
+                      className={`flex items-center justify-between border px-4 py-3 text-sm font-medium transition cursor-pointer ${
+                        item.active
+                          ? "border-indigo-200 bg-sky-50 text-indigo-700"
+                          : "border-slate-200 bg-white backdrop-blur-md text-slate-600 hover:bg-slate-50"
+                      }`}
+                      onClick={() => setToolsOpen((prev) => !prev)}
+                    >
+                      <span>{item.label}</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className={`transition-transform ${toolsOpen ? "rotate-180" : ""}`}>
+                        <path d="m6 9 6 6 6-6"/>
+                      </svg>
+                    </div>
+                    {toolsOpen && (
+                      <div className="ml-4 border-l-2 border-indigo-100 pl-3 space-y-1 mt-1">
+                        <Link
+                          href={withLang("/travel-tools")}
+                          onClick={() => setMenuOpen(false)}
+                          className={`flex items-center gap-2 border px-4 py-2.5 text-sm font-medium transition ${
+                            pathname.startsWith(`/${lang}/travel-tools`)
+                              ? "border-indigo-200 bg-sky-50 text-indigo-700"
+                              : "border-slate-100 bg-white text-slate-600 hover:bg-slate-50"
+                          }`}
+                        >
+                          <span className="text-base">⚖️</span>
+                          <span>{t.compare[lang]}</span>
+                        </Link>
+                        <Link
+                          href={withLang("/trip-planner")}
+                          onClick={() => setMenuOpen(false)}
+                          className={`flex items-center gap-2 border px-4 py-2.5 text-sm font-medium transition ${
+                            pathname.startsWith(`/${lang}/trip-planner`)
+                              ? "border-indigo-200 bg-sky-50 text-indigo-700"
+                              : "border-slate-100 bg-white text-slate-600 hover:bg-slate-50"
+                          }`}
+                        >
+                          <span className="text-base">🤖</span>
+                          <span>{t.planner[lang]}</span>
+                        </Link>
+                      </div>
+                    )}
+                  </div>
+                ) : (
+                  <Link
+                    key={item.key}
+                    href={item.href}
+                    className={`border px-4 py-3 text-sm font-medium transition ${
+                      item.active
+                        ? "border-indigo-200 bg-sky-50 text-indigo-700"
+                        : "border-slate-200 bg-white backdrop-blur-md text-slate-600 hover:bg-white hover:bg-slate-50"
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
+                )
+              )}
             </nav>
           </div>
         </div>

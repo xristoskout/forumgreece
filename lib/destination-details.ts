@@ -1813,4 +1813,64 @@ export const destinationDetails: Record<string, DestinationDetail> = {
       }
     }
   },
+
+  lasithi: {
+    overview: {
+      en: "Lasithi is the easternmost region of Crete, and in many ways the most uncompromised. It covers roughly a third of the island — from the mountain plateau that carries its name in the west, all the way to Crete's most dramatic eastern tip at Cape Sideros. The region offers Spinalonga Island, Elounda Bay, Vai Palm Forest, and the unperformed pace of traditional villages. A well-planned stay here can combine history, extraordinary beaches, local food, and genuine solitude in one of the least crowded parts of Crete.",
+      el: "Το Λασίθι είναι η ανατολικότερη περιοχή της Κρήτης, και από πολλές απόψεις η πιο ανυποχώρητη. Καλύπτει περίπου το ένα τρίτο του νησιού και προσφέρει τη Σπιναλόγκα, τον κόλπο της Ελούντας, το φοινικόδασος Βάι και έναν αυθεντικό ρυθμό ζωής που δεν έχει διαπραγματευτεί με την τουριστική βιομηχανία."
+    },
+    pageIncludes: {
+      en: [
+        "Spinalonga Island & History",
+        "Elounda Bay & Beaches",
+        "Vai Palm Forest & Sitia Geopark",
+        "Local Food & Wine",
+      ],
+      el: [
+        "Σπιναλόγκα & Ιστορία",
+        "Κόλπος Ελούντας & Παραλίες",
+        "Φοινικόδασος Βάι & Γεωπάρκο Σητείας",
+        "Τοπικό Φαγητό & Κρασί",
+      ],
+    },
+    perfectFor: {
+      en: [
+        "Travellers seeking quieter Crete",
+        "History and culture enthusiasts (Spinalonga)",
+        "Road trip lovers",
+        "Beach explorers — north and south coasts",
+        "Food and wine travellers (Sitia olive oil, Liatiko wine)",
+      ],
+      el: [
+        "Ταξιδιώτες που αναζητούν ήσυχη Κρήτη",
+        "Λάτρεις ιστορίας και πολιτισμού",
+        "Λάτρεις των road trips",
+        "Εξερευνητές παραλιών — βόρειας και νότιας ακτής",
+        "Ταξιδιώτες φαγητού και κρασιού",
+      ],
+    },
+    honestAdvice: {
+      title: { en: "Honest Advice — What to Skip", el: "Ειλικρινής Συμβουλή — Τι να Αποφύγεις" },
+      alert: {
+        en: "What nobody tells you: Lasithi is deceptively large and the driving distances between its regions are significant. Travellers who try to combine Agios Nikolaos, Vai, Ierapetra, and Spinalonga in a single day end up spending 5+ hours on winding mountain roads. The road from Agios Nikolaos to Kato Zakros is 2 hours 30 minutes each way. Plan two bases — Agios Nikolaos for the north and Sitia for the far east — rather than expecting to day-trip across the entire region.",
+        el: "Αυτό που δε σου λέει κανείς: Το Λασίθι είναι απατηλά μεγάλο και οι αποστάσεις μεταξύ των περιοχών είναι σημαντικές. Όσοι προσπαθούν να συνδυάσουν Άγιο Νικόλαο, Βάι, Ιεράπετρα και Σπιναλόγκα σε μία μέρα περνούν 5+ ώρες σε ορεινούς δρόμους. Σχεδίασε δύο βάσεις — Άγιο Νικόλαο για τα βόρεια και Σητεία για την άπω ανατολή."
+      },
+      items: {
+        en: [
+          "Trying to 'do' all of Lasithi from one base — the distance from Agios Nikolaos to Kato Zakros is 2.5 hours, and the road is winding mountain terrain, not a motorway. Split your stay: 2–3 nights in Agios Nikolaos for the western area (Elounda, Spinalonga, Voulisma) and 2–3 nights in Sitia for the far east (Vai, Toplou, Zakros, Xerokampos).",
+          "Expecting Vai Beach to be deserted — Vai is now well-known and marketed. In July and August, the car park fills by 10:00 and the main beach is busy. Go before 08:30 or visit the quieter north end of the beach via the path through the palm grove.",
+          "Driving the Elounda–Sitia road without accounting for the mountain section — the 60 km between Agios Nikolaos and Sitia look short on the map. In reality, the road climbs through the Dikti Mountains with hairpin turns and takes 90 minutes. Google Maps estimates are optimistic. Add 30%.",
+          "Spinalonga at midday in peak season — the island has minimal shade and the walk around the fortress walls is exposed. The 09:00 boat from Plaka puts you on the island before the heat and the crowds. By 11:00, the tour groups arrive and the silence that makes Spinalonga so affecting is gone.",
+          "Skipping the south coast entirely — most visitors stay on the north coast (Agios Nikolaos, Elounda, Sitia) and miss Ierapetra and the south coast beaches. Kalo Nero and Xerokampos offer a completely different coastline — wider, wilder, with Libyan Sea exposure and warmer water well into October."
+        ],
+        el: [
+          "Να κάνεις όλο το Λασίθι από μία βάση — από Άγιο Νικόλαο έως Κάτω Ζάκρο είναι 2,5 ώρες. Χώρισε τη διαμονή: 2–3 νύχτες Άγιο Νικόλαο, 2–3 νύχτες Σητεία.",
+          "Να περιμένεις το Βάι έρημο — τον Ιούλιο και Αύγουστο γεμίζει. Πήγαινε πριν τις 08:30 ή στο βόρειο άκρο.",
+          "Οδήγηση Ελούντα–Σητεία χωρίς να υπολογίζεις τα βουνά — το Google Maps είναι αισιόδοξο. Πρόσθεσε 30%.",
+          "Σπιναλόγκα το μεσημέρι — η βάρκα 09:00 από Πλάκα σε βάζει στο νησί πριν τη ζέστη και τα πλήθη.",
+          "Να παραλείπεις τη νότια ακτή — Καλό Νερό και Ξερόκαμπος προσφέρουν εντελώς διαφορετική ακτογραμμή."
+        ]
+      }
+    }
+  },
 };

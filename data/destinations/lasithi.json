@@ -1,0 +1,18 @@
+{
+  "id": "lasithi",
+  "slug": "lasithi",
+  "name": "Lasithi",
+  "type": "Region",
+  "region": { "en": "Crete", "el": "Κρήτη" },
+  "coordinates": { "lat": 35.1868, "lng": 25.7223 },
+  "scores": {
+    "family": { "value": 7, "reason": "Family-friendly resorts in Elounda and Agios Nikolaos." },
+    "couples": { "value": 9, "reason": "Secluded luxury and romantic bay views." },
+    "luxury": { "value": 10, "reason": "Some of the finest resort hotels in the Mediterranean." },
+    "budget": { "value": 6, "reason": "Elounda is expensive; budget options in Sitia and Ierapetra." },
+    "nightlife": { "value": 4, "reason": "Quiet evenings; this is not a party region." },
+    "food": { "value": 9, "reason": "Sitia olive oil, Liatiko wine, and traditional Cretan tavernas." }
+  },
+  "quick_summary": "Lasithi is the easternmost region of Crete — home to Spinalonga Island, Vai Palm Forest, Elounda Bay, and the unperformed pace of traditional Cretan villages.",
+  "bestFor": ["history", "food_lovers", "beaches", "luxury", "road_trips", "nature"]
+}

@@ -12,6 +12,8 @@ export type Category = {
   title: Localized;
   description: Localized;
   emoji: string;
+  href?: string;
+  featured?: boolean;
 };
 
 export type Destination = {

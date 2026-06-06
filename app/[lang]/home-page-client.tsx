@@ -369,14 +369,44 @@ export default function HomePageClient({
                 {copy.heroPanelTitle}
               </h2>
               
-              <div className="grid gap-4 sm:grid-cols-2">
-                {categories.map((item) => (
-                   <article key={item.title.en} className="group rounded-2xl border border-white/5 bg-white p-4 transition-all hover:bg-slate-50 hover:-translate-y-1">
-                      <div className="text-3xl mb-3 drop-shadow-[0_2px_10px_rgba(0,0,0,0.1)]">{item.emoji}</div>
-                      <h3 className="font-semibold text-slate-900 mb-1 group-hover:text-indigo-800 transition-colors">{item.title[lang]}</h3>
-                      <p className="text-xs text-slate-500 leading-relaxed">{item.description[lang]}</p>
-                   </article>
-                ))}
+              <div className="space-y-3">
+                <div className="grid grid-cols-4 gap-2">
+                  {categories.filter(c => !c.featured).map((item) => (
+                    <Link
+                      key={item.title.en}
+                      href={item.href ? withLang(item.href) : "#"}
+                      className="group rounded-xl border border-slate-200 bg-white p-2.5 transition-all hover:border-indigo-200 hover:shadow-sm hover:-translate-y-0.5"
+                    >
+                      <div className="text-base mb-0.5 text-center">{item.emoji}</div>
+                      <h3 className="text-[11px] font-bold text-slate-700 text-center leading-tight group-hover:text-indigo-700 transition-colors">
+                        {item.title[lang]}
+                      </h3>
+                    </Link>
+                  ))}
+                </div>
+                <div className="grid grid-cols-2 gap-2">
+                  {categories.filter(c => c.featured).map((item) => (
+                    <Link
+                      key={item.title.en}
+                      href={item.href ? withLang(item.href) : "#"}
+                      className={`group rounded-2xl border-2 p-4 transition-all hover:-translate-y-1 hover:shadow-xl flex flex-col justify-center min-h-[100px] ${
+                        item.title.en === "Compare"
+                          ? "border-indigo-400 bg-indigo-600 text-white shadow-lg shadow-indigo-300 hover:shadow-indigo-400/40 hover:border-indigo-300"
+                          : "border-amber-400 bg-amber-500 text-white shadow-lg shadow-amber-300 hover:shadow-amber-400/40 hover:border-amber-300"
+                      }`}
+                    >
+                      <div className="text-3xl mb-1 drop-shadow-[0_2px_8px_rgba(0,0,0,0.15)] brightness-110">
+                        {item.emoji}
+                      </div>
+                      <h3 className="font-bold text-white mb-0.5">
+                        {item.title[lang]}
+                      </h3>
+                      <p className="text-xs leading-relaxed opacity-90">
+                        {item.description[lang]}
+                      </p>
+                    </Link>
+                  ))}
+                </div>
               </div>
             </div>
           </div>

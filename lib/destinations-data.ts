@@ -1217,6 +1217,53 @@ export const destinations: Destination[] = [
         el: "Οργανώστε το ταξίδι σας στο Ρέθυμνο με τον οδηγό μας. Ανακαλύψτε την ενετική παλιά πόλη, τη Φορτέτζα, τον Πρέβελη, τη Μονή Αρκαδίου, τοπικές γεύσεις και τα καλύτερα αξιοθέατα."
       }
     }
+  },
+  {
+    slug: "lasithi",
+    name: "Lasithi",
+    region: { en: "Crete", el: "Κρήτη" },
+    blurb: {
+      en: "A haunted Venetian island, Europe's only palm forest, a bay that turns the water into something implausible, and a pace of life that has not been negotiated with the tourism industry.",
+      el: "Ένα στοιχειωμένο ενετικό νησί, το μοναδικό φοινικόδασος της Ευρώπης, ένας κόλπος που μετατρέπει το νερό σε κάτι απίθανο και ένας ρυθμός ζωής που δεν έχει διαπραγματευτεί με την τουριστική βιομηχανία."
+    },
+    image: "/images/lasithi.webp",
+    overview: {
+      en: "Lasithi is the easternmost region of Crete, and in many ways the most uncompromised. It covers roughly a third of the island — from the mountain plateau that carries its name in the west, all the way to Crete's most dramatic eastern tip at Cape Sideros. The distances are real, and this is part of the point.\n\nThe region's capital is Agios Nikolaos, a small port city around a lake that connects to the sea by a short channel. It is a comfortable, unhurried town with good restaurants, a respectable archaeological museum, and the kind of harbourfront that invites extended sitting. Twenty minutes north sits Elounda, known internationally for the concentration of luxury hotels on its bay. Four kilometres offshore from Elounda, Spinalonga Island — a Venetian fortress that was one of Europe's last active leper colonies — stands in water of an improbable clarity.\n\nFurther east, the character of the region changes. Ierapetra, on the south coast, is the southernmost city in Europe and has something of a frontier feel — a working port town with a small Venetian fortress and one of the longest, least developed beach strips in Crete. East of Sitia, the island narrows and empties out: the Toplou Monastery, isolated in a lunar landscape; the Sitia Geopark, a UNESCO-recognized geological formation; and finally Vai, a palm beach that was once legitimately surprising and is now still worth the journey despite what the internet has done to it.\n\nWhat holds all of this together is a common quality: Lasithi is not performing for visitors in the way that parts of western Crete have learned to. The tavernas serve what they have. The villages are still lived in. The landscape — gorges, olive groves, wind-scraped plateaux — does not flatten itself for photography.\n\nPlanning around Crete? Lasithi sits 70km east of Heraklion. A car is essential — the region does not work without one. If you are building a wider Crete itinerary, see our full [Crete Travel Guide](/en/destinations/crete).",
+      el: "Το Λασίθι είναι η ανατολικότερη περιοχή της Κρήτης και από πολλές απόψεις η πιο ανυποχώρητη. Καλύπτει περίπου το ένα τρίτο του νησιού — από το οροπέδιο που φέρει το όνομά της στα δυτικά, μέχρι το ανατολικότερο άκρο της Κρήτης στο Ακρωτήρι Σίδερος. Οι αποστάσεις είναι πραγματικές, και αυτό είναι μέρος της ουσίας.\n\nΠρωτεύουσα της περιοχής είναι ο Άγιος Νικόλαος, μια μικρή παραθαλάσσια πόλη γύρω από μια λίμνη που συνδέεται με τη θάλασσα μέσω ενός στενού διαύλου. Είναι μια άνετη, ήρεμη πόλη με καλά εστιατόρια, ένα αξιόλογο αρχαιολογικό μουσείο και ένα λιμάνι που σε προσκαλεί να καθίσεις. Είκοσι λεπτά βόρεια βρίσκεται η Ελούντα, γνωστή διεθνώς για τη συγκέντρωση πολυτελών ξενοδοχείων στον κόλπο της. Τέσσερα χιλιόμετρα ανοιχτά της Ελούντας, η Σπιναλόγκα — ένα ενετικό φρούριο που ήταν μια από τις τελευταίες ενεργές αποικίες λεπρών στην Ευρώπη — στέκεται σε νερό απίθανης διαύγειας.\n\nΠιο ανατολικά, ο χαρακτήρας της περιοχής αλλάζει. Η Ιεράπετρα, στη νότια ακτή, είναι η νοτιότερη πόλη της Ευρώπης και έχει μια αίσθηση μεθορίου. Ανατολικά της Σητείας, το νησί στενεύει και αδειάζει: η Μονή Τοπλού, απομονωμένη σε ένα σεληνιακό τοπίο, το Γεωπάρκο Σητείας και τέλος το Βάι.\n\nΤο Λασίθι δεν παίζει θέατρο για τους επισκέπτες. Οι ταβέρνες σερβίρουν ό,τι έχουν. Τα χωριά εξακολουθούν να κατοικούνται. Το τοπίο — φαράγγια, ελαιώνες, ανεμοδαρμένα οροπέδια — δεν ισοπεδώνεται για φωτογραφία."
+    },
+    highlights: {
+      en: ["Spinalonga Island", "Elounda Bay", "Vai Palm Forest", "Agios Nikolaos", "Sitia & the Geopark"],
+      el: ["Σπιναλόγκα", "Κόλπος Ελούντας", "Φοινικόδασος Βάι", "Άγιος Νικόλαος", "Σητεία & Γεωπάρκο"]
+    },
+    featured: true,
+    guideLinks: [
+      {
+        href: "/destinations/crete",
+        label: { en: "Explore Crete Guide", el: "Οδηγός Ταξιδιού Κρήτης" }
+      },
+      {
+        href: "/hotels/lasithi",
+        label: { en: "Stays in Lasithi", el: "Διαμονή στο Λασίθι" }
+      },
+      {
+        href: "/tours/all",
+        label: { en: "Tours & Experiences", el: "Εκδρομές & Εμπειρίες" }
+      },
+      {
+        href: "/collections/greece-food-and-drink",
+        label: { en: "Local Food Ideas", el: "Τοπικές Γεύσεις" }
+      }
+    ],
+    seo: {
+      title: {
+        en: "Lasithi Travel Guide | Spinalonga, Elounda, Vai & Things to Do in Eastern Crete",
+        el: "Λασίθι: Ταξιδιωτικός Οδηγός | Σπιναλόγκα, Ελούντα, Βάι & Αξιοθέατα"
+      },
+      description: {
+        en: "Plan your trip to Lasithi, eastern Crete. Discover Spinalonga Island, Elounda Bay, Vai Palm Forest, Agios Nikolaos, Sitia Geopark, beaches, local food, and the best time to visit.",
+        el: "Οργανώστε το ταξίδι σας στο Λασίθι, ανατολική Κρήτη. Ανακαλύψτε τη Σπιναλόγκα, τον κόλπο της Ελούντας, το Βάι, τον Άγιο Νικόλαο, το Γεωπάρκο Σητείας, παραλίες και τοπικές γεύσεις."
+      }
+    }
   }
 ];
 

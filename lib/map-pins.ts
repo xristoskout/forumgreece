@@ -249,6 +249,13 @@ export const MAP_PINS: Pin[] = [
     tagline: { en: "Knossos, market & Venetian harbour", el: "Κνωσός, αγορά & ενετικό λιμάνι" },
   },
   {
+    id: "lasithi",
+    x: 64.8, y: 82.4,
+    href: "/destinations/lasithi",
+    label: { en: "Lasithi", el: "Λασίθι" },
+    tagline: { en: "Spinalonga & eastern Crete", el: "Σπιναλόγκα & ανατολική Κρήτη" },
+  },
+  {
     id: "syros",
     x: 57.8, y: 56.4,
     href: "/destinations/syros",

@@ -17,6 +17,7 @@ export const categories: Category[] = [
       el: "Ταξιδιωτικοί οδηγοί για νησιά, ηπειρωτικές αποδράσεις, διάσημες παραλίες και όμορφες ελληνικές πόλεις.",
     },
     emoji: "🏝️",
+    href: "/destinations",
   },
   {
     title: { en: "Travel Info", el: "Travel Info" },
@@ -25,6 +26,7 @@ export const categories: Category[] = [
       el: "Χρήσιμες πληροφορίες για πλοία, αεροδρόμια, καλύτερη εποχή, μετακινήσεις και πρακτικό προγραμματισμό.",
     },
     emoji: "🧭",
+    href: "/travel-info",
   },
   {
     title: { en: "Hotels", el: "Ξενοδοχεία" },
@@ -33,6 +35,7 @@ export const categories: Category[] = [
       el: "Επιλεγμένα καταλύματα, boutique ξενοδοχεία, family resorts και όμορφα μέρη για διαμονή σε όλη την Ελλάδα.",
     },
     emoji: "🏨",
+    href: "/hotels",
   },
   {
     title: { en: "Eat & Drink", el: "Φαγητό & Ποτό" },
@@ -41,5 +44,26 @@ export const categories: Category[] = [
       el: "Εστιατόρια, ταβέρνες, bars και τοπικές γεύσεις που βοηθούν τον επισκέπτη να ζήσει αυθεντικά την Ελλάδα.",
     },
     emoji: "🍷",
+    href: "/collections/greece-food-and-drink",
+  },
+  {
+    title: { en: "Compare", el: "Σύγκριση" },
+    description: {
+      en: "Compare destinations side by side and find your perfect match.",
+      el: "Σύγκρινε προορισμούς και βρες τον ιδανικό για εσένα.",
+    },
+    emoji: "⚖️",
+    href: "/travel-tools",
+    featured: true,
+  },
+  {
+    title: { en: "Trip Planner", el: "Σχεδιαστής" },
+    description: {
+      en: "AI-powered itinerary builder for your perfect Greece trip.",
+      el: "AI προγραμματισμός για το τέλειο ταξίδι στην Ελλάδα.",
+    },
+    emoji: "🤖",
+    href: "/trip-planner",
+    featured: true,
   },
 ];
