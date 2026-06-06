@@ -552,16 +552,7 @@ export default function TripPlannerClient({
                             <div className="flex-1 min-w-0">
                               <p className="text-xs font-bold text-indigo-600 uppercase tracking-wider">{act.time}</p>
                               <p className="mt-1 text-slate-700 leading-relaxed">
-                                {act.link ? (
-                                  <a
-                                    href={act.link}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="text-indigo-700 font-medium hover:text-indigo-900 hover:underline"
-                                  >
-                                    {act.activity}
-                                  </a>
-                                ) : linkify(act.activity, lang)}
+                                {linkify(act.activity, lang)}
                               </p>
                             </div>
                           </div>
