@@ -816,4 +816,94 @@ Pro tip: Look for tavernas displaying a sign saying "Ποιότητα" (Quality)
       description: { en: "Essential Greek dishes every traveller should try — moussaka, souvlaki, tzatziki, baklava, and more. Includes tips on ordering and finding the best tavernas.", el: "Τα βασικά ελληνικά πιάτα που πρέπει να δοκιμάσει κάθε ταξιδιώτης — μουσακάς, σουβλάκι, τζατζίκι, μπακλαβάς και άλλα. Με συμβουλές για παραγγελία και εύρεση καλής ταβέρνας." },
     },
   },
+  {
+    slug: "ai-trip-planner-greece",
+    title: {
+      en: "Plan Your Greece Trip in Minutes with the GoGreeceNow AI Trip Planner",
+      el: "Σχεδίασε το Ταξίδι σου στην Ελλάδα σε Λεπτά με τον AI Σχεδιαστή του GoGreeceNow",
+    },
+    excerpt: {
+      en: "Tired of juggling 30 browser tabs to plan your Greek holiday? Our AI Trip Planner builds a complete, personalised itinerary in seconds — and it learns exactly what you love.",
+      el: "Βαρέθηκες να κρατάς 30 ανοιχτές καρτέλες για να οργανώσεις τις διακοπές σου; Ο AI Σχεδιαστής μας φτιάχνει ένα πλήρες, εξατομικευμένο πρόγραμμα σε δευτερόλεπτα — και μαθαίνει ακριβώς τι σου αρέσει.",
+    },
+    body: {
+      en: `There is a moment that every Greece traveller knows well. You have finally decided on your destination — or maybe you have not, and that is part of the problem. You open a search engine. You open ferry schedules. You open accommodation sites, restaurant reviews, tour operator pages, museum opening hours, and a dozen travel guides. Before long you have thirty browser tabs open, a scattered notes document, a vague sense of anxiety, and no actual plan.
+
+Planning a trip to Greece has always required an unreasonable amount of work. The country has over 200 inhabited islands, countless archaeological sites, a famously complex ferry system, and seasonal schedules that change from month to month. Even a simple one-week itinerary can take hours — sometimes days — of research.
+
+We built the GoGreeceNow AI Trip Planner to change that completely.
+
+## What Is the AI Trip Planner?
+
+The Trip Planner is an intelligent, conversational tool that creates a complete, day-by-day travel itinerary for Greece based on your personal preferences. It is not a generic list of suggestions pulled from a database. It is a dynamic system that understands context, makes connections between destinations, and adapts its recommendations to your specific travel style.
+
+You tell it where you want to go, for how long, what kind of traveller you are, and what matters most to you — beaches, history, food, nightlife, nature, or a combination. The planner responds with a structured itinerary covering every day of your trip, including recommended activities, dining options, accommodation guidance, travel connections, and practical tips.
+
+It works for any Greek destination — from the most popular islands to hidden mainland villages — and it adjusts seamlessly whether you are planning a luxury honeymoon, a backpacking adventure, a family holiday, or a solo exploration.
+
+## What Makes It Truly Different
+
+Many travel websites offer generic trip planners. Most of them are little more than a list of popular attractions organised by day. The GoGreeceNow Trip Planner is fundamentally different in several important ways.
+
+**It understands Greek geography and logistics.** The planner does not just recommend places — it considers real-world travel times, ferry connections, and logical route sequencing. It will not suggest Santorini in the morning and Crete in the afternoon, because it knows that is impossible. It sequences destinations in a way that actually works on the ground.
+
+**It responds to your personality, not just your dates.** The itinerary changes based on whether you are a food lover, a history enthusiast, a beach seeker, or a nightlife fan. Two travellers visiting the same island for the same number of days will receive completely different plans tailored to their interests.
+
+**It includes hidden gems and local recommendations.** The planner draws on our deep knowledge of Greece, not just the obvious tourist highlights. It knows the quiet beach that most visitors miss, the family taverna that serves the best grilled octopus, and the walking path that offers the most stunning view of the sunset.
+
+**It is continuously updated.** The Greek travel landscape changes every season — new ferry routes, changing opening hours, new restaurants and hotels. The planner's knowledge base reflects the latest information so you are never given outdated advice.
+
+## How to Use It
+
+Using the Trip Planner is remarkably simple.
+
+Start by opening the planner on the GoGreeceNow website. You will be asked a series of straightforward questions: your preferred destinations, travel dates, group composition, budget range, and travel interests. You can be as specific or as broad as you like — the planner works equally well for "I want to spend a week somewhere in the Cyclades" and for "I want to spend exactly three days in Naxos and three days in Paros with a focus on hiking and local food."
+
+Within seconds, the planner generates a complete itinerary. Each day includes a suggested schedule, activity descriptions, dining recommendations, and practical notes on getting from place to place. You can refine the results by asking follow-up questions or adjusting your preferences, and the planner will update the itinerary in real time.
+
+Once you are happy with the result, you can save it, share it, or use it as a starting point for further customisation. Everything is presented clearly and conversationally — no confusing interfaces, no hidden fees, no sign-up required.
+
+## Who Is It For?
+
+The Trip Planner is designed for every type of traveller.
+
+**First-time visitors** who feel overwhelmed by the sheer number of choices and want a trusted starting point for their Greek adventure.
+
+**Experienced travellers** who know Greece but want to explore a new region or try a different style of travel without starting their research from scratch.
+
+**Families** who need a plan that accounts for different ages, interests, and energy levels across the group.
+
+**Solo travellers** who want a well-organised itinerary that still leaves room for spontaneity and discovery.
+
+**Couples** planning a romantic getaway who want to focus on the experiences that matter most to them rather than spending hours comparing options.
+
+**Groups of friends** coordinating a trip together who need a plan that satisfies everyone's interests without endless group chats and compromise fatigue.
+
+## Why We Built It
+
+Greece is one of the most rewarding travel destinations in the world, but it is also one of the most complex to plan. We have spent years creating detailed guides, hotel recommendations, and destination content, but we realised that even the best guidebook leaves the hard work of assembly to the traveller.
+
+The Trip Planner is the missing piece — the tool that brings everything together. It connects our destination knowledge, hotel database, travel tips, and local insights into a single, personalised experience. It saves hours of research time and replaces uncertainty with confidence.
+
+We believe that planning your trip should be part of the excitement, not a source of stress. The Trip Planner is designed to make the process enjoyable, informative, and genuinely useful — so you can spend less time organising and more time anticipating the incredible journey ahead.
+
+## A New Way to Travel
+
+The GoGreeceNow AI Trip Planner represents a shift in how travellers approach trip planning. Instead of piecing together information from dozens of sources, you can now have a conversation with a tool that understands Greece deeply and cares about getting the details right.
+
+Whether you are planning your first visit to Greece or your tenth, whether you have a clear idea of what you want or just a vague sense of wanderlust, the Trip Planner is here to help. It is fast, free, and built by people who love Greece as much as you will.
+
+Try it for your next trip. You might be surprised how much time it saves — and how much more exciting your journey becomes when the planning is taken care of.`,
+    },
+    image: "/images/ai-trip-planner.webp",
+    author: "GoGreeceNow Travel Team",
+    publishedDate: "2026-06-06",
+    category: { en: "Travel Planning", el: "Ταξιδιωτικός Σχεδιασμός" },
+    tags: ["trip-planner", "ai-travel", "itinerary", "greece-planning", "travel-tips", "planning"],
+    featured: true,
+    seo: {
+      title: { en: "AI Trip Planner for Greece | GoGreeceNow", el: "AI Σχεδιαστής Ταξιδιού για Ελλάδα | GoGreeceNow" },
+      description: { en: "Plan your perfect Greece itinerary in minutes with GoGreeceNow's AI Trip Planner. Personalised day-by-day plans based on your interests, budget, and travel style. Free and easy to use.", el: "Σχεδίασε το τέλειο πρόγραμμα για την Ελλάδα σε λεπτά με τον AI Σχεδιαστή του GoGreeceNow. Εξατομικευμένες ημερήσιες προτάσεις βάσει των ενδιαφερόντων, του προϋπολογισμού και του ταξιδιωτικού σου στυλ. Δωρεάν και εύκολο στη χρήση." },
+    },
+  },
 ];
