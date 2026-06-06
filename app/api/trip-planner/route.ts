@@ -114,30 +114,48 @@ OUTPUT SCHEMA:
     });
     rawText = result.text;
 
-    const braceStart = rawText.indexOf('{');
-    if (braceStart === -1) {
+    const extractJSON = (text: string): string | null => {
+      const noFences = text.replace(/```[\w]*\n?/g, '');
+      const braceStart = noFences.indexOf('{');
+      if (braceStart === -1) return null;
+      let depth = 0;
+      let inStr = false;
+      let esc = false;
+      for (let i = braceStart; i < noFences.length; i++) {
+        const ch = noFences[i];
+        if (esc) { esc = false; continue; }
+        if (ch === '\\' && inStr) { esc = true; continue; }
+        if (ch === '"') { inStr = !inStr; continue; }
+        if (inStr) continue;
+        if (ch === '{') depth++;
+        if (ch === '}') { depth--; if (depth === 0) return noFences.slice(braceStart, i + 1); }
+      }
+      return null;
+    };
+
+    let jsonStr = extractJSON(rawText);
+    if (!jsonStr) {
+      const match = rawText.match(/\{[\s\S]*\}/);
+      jsonStr = match ? match[0] : null;
+    }
+    if (!jsonStr) {
       return Response.json({ error: 'AI returned invalid JSON format' }, { status: 500 });
     }
-    let depth = 0;
-    let inStr = false;
-    let esc = false;
-    let braceEnd = -1;
-    for (let i = braceStart; i < rawText.length; i++) {
-      const ch = rawText[i];
-      if (esc) { esc = false; continue; }
-      if (ch === '\\' && inStr) { esc = true; continue; }
-      if (ch === '"') { inStr = !inStr; continue; }
-      if (inStr) continue;
-      if (ch === '{') depth++;
-      if (ch === '}') { depth--; if (depth === 0) { braceEnd = i; break; } }
-    }
-    if (braceEnd === -1) {
-      return Response.json({ error: 'AI returned unclosed JSON object' }, { status: 500 });
-    }
-    const cleaned = rawText.slice(braceStart, braceEnd + 1).trim();
-    const fixed = cleaned.replace(/\/restaurants\//g, '/eat-drink/');
+    jsonStr = jsonStr.replace(/\/restaurants\//g, '/eat-drink/');
 
-    const parsed = JSON.parse(fixed);
+    let parsed: any;
+    try {
+      parsed = JSON.parse(jsonStr);
+    } catch {
+      const better = jsonStr.match(/\{[^{]*"title"[\s\S]*"days"[\s\S]*\}/);
+      if (better) {
+        try { parsed = JSON.parse(better[0]); } catch { }
+      }
+      if (!parsed) {
+        console.error('[trip-planner] Failed to parse:', jsonStr.slice(0, 500));
+        return Response.json({ error: 'AI returned invalid JSON format' }, { status: 500 });
+      }
+    }
 
     const partnerTips = businessData.map(b => {
       const info = b.info || '';

@@ -228,10 +228,12 @@ export default function TripPlannerClient({
         body: JSON.stringify({ destinations: selected, days, budget, style, month, interests, lang }),
       });
       if (!res.ok) {
-        const err = await res.json();
-        throw new Error(err.error || "Failed");
+        let errMsg = "Generation failed";
+        try { const err = await res.json(); errMsg = err.error || errMsg; } catch {}
+        throw new Error(errMsg);
       }
-      const data = await res.json();
+      let data: any;
+      try { data = await res.json(); } catch { throw new Error("Invalid response from server"); }
       setItinerary(data);
     } catch (e: any) {
       setError(e.message || (lang === "el" ? "Αποτυχία δημιουργίας" : "Generation failed"));
