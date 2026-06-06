@@ -121,7 +121,7 @@ Month: ${validMonth}
 Interests: ${interests.length ? interests.join(', ') : 'general'}`;
 
     const { object: parsed } = await generateObject({
-      model: google('gemini-2.0-flash'),
+      model: google('gemini-2.5-flash'),
       system: systemPrompt,
       prompt: `Generate a ${destDays}-day ${budget} itinerary for ${selectedSlugs.join(' and ')} in ${validMonth}, ${style} pace. Language: ${lang}.`,
       schema: itinerarySchema,
