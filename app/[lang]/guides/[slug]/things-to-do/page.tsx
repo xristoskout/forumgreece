@@ -65,8 +65,13 @@ export default async function ThingsToDoPage({ params }: Props) {
   const dest = destinations.find((d) => d.slug === slug);
   if (!dest) notFound();
 
-  const sections = destinationSections[slug] || [];
-  const thingsSection = findThingsSection(sections);
+  let thingsSection = null;
+  try {
+    const sections = destinationSections[slug];
+    if (sections) thingsSection = findThingsSection(sections);
+  } catch (e) {
+    console.error('Failed to load sections for', slug, e);
+  }
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-slate-50 via-amber-50 to-white">

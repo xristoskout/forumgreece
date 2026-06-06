@@ -137,6 +137,11 @@ const nextConfig: NextConfig = {
         destination: '/:second/:path*',
         permanent: true,
       },
+      {
+        source: '/:lang(en|el)/travel-info/things-to-do-in-:slug',
+        destination: '/:lang/guides/:slug/things-to-do',
+        permanent: true,
+      },
     ];
   },
   async headers() {

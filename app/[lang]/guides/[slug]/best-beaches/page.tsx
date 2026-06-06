@@ -42,11 +42,16 @@ export default async function BestBeachesPage({ params }: Props) {
   const dest = destinations.find((d) => d.slug === slug);
   if (!dest) notFound();
 
-  const sections = destinationSections[slug] || [];
-  const beachSection = sections.find((s: any) =>
-    (s.title?.en || "").toLowerCase().includes("beach")
-    || (s.title?.el || "").toLowerCase().includes("παραλ")
-  );
+  let beachSection = null;
+  try {
+    const sections = destinationSections[slug];
+    if (sections) beachSection = sections.find((s: any) =>
+      (s.title?.en || "").toLowerCase().includes("beach")
+      || (s.title?.el || "").toLowerCase().includes("παραλ")
+    );
+  } catch (e) {
+    console.error('Failed to load sections for', slug, e);
+  }
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-slate-50 via-indigo-50 to-white">
