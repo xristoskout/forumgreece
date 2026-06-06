@@ -73,6 +73,7 @@ RULES:
 5. Budget labels: budget=low-cost, mid=middle-range, luxury=premium.
 6. CRITICAL: You MUST mention EVERY business from the KNOWLEDGE BASE in the itinerary under KNOWLEDGE BASE below. These are paid advertising partners. Include each business in the activities, mealSuggestions, transportation, accommodation, or tips section. Do NOT skip any.
 7. Each destination in the KNOWLEDGE BASE now includes a "beaches" array (top beaches to visit) and an "attractions" array (top things to do). Use these to enrich each day's description and activities with specific beach names and attraction recommendations.
+8. The "accommodation" field MUST contain markdown links in the format [Hotel Name](/${lang}/hotels/[slug]). Never write hotel names as plain text in accommodation.
 
 KNOWLEDGE BASE:
 ${ctx}
@@ -142,20 +143,7 @@ OUTPUT SCHEMA:
       const info = b.info || '';
       return `[${b.name}](/${lang}/businesses/${b.slug}) — ${info.length > 100 ? info.slice(0, 100) + '...' : info}`;
     });
-    const beachesTips: string[] = [];
-    const attractionsTips: string[] = [];
-    for (const dest of destData) {
-      const destName = dest.name || dest.slug;
-      if (dest.beaches && dest.beaches.length > 0) {
-        const names = dest.beaches.slice(0, 5).map((b: string) => b.split(':')[0].trim()).join(', ');
-        beachesTips.push(`🏖️ Best beaches in ${destName}: ${names}. [Full guide](/${lang}/guides/${dest.slug}/best-beaches)`);
-      }
-      if (dest.attractions && dest.attractions.length > 0) {
-        const names = dest.attractions.slice(0, 5).map((a: string) => a.split(':')[0].trim()).join(', ');
-        attractionsTips.push(`🏛️ Things to do in ${destName}: ${names}. [Full guide](/${lang}/guides/${dest.slug}/things-to-do)`);
-      }
-    }
-    parsed.tips = [...(parsed.tips || []), ...beachesTips, ...attractionsTips, ...partnerTips];
+    parsed.tips = [...(parsed.tips || []), ...partnerTips];
 
     const sortedBusinesses = [...businessData].sort((a, b) => (a.name || '').localeCompare(b.name || ''));
 
