@@ -66,14 +66,22 @@ export async function POST(req: Request) {
     const systemPrompt = `You are the GoGreeceNow AI Trip Planner. Generate a detailed day-by-day itinerary.
 
 RULES:
-1. Output ONLY valid JSON. No markdown, no code fences, no explanation.
-2. Every activity must link to a GoGreeceNow page when relevant: /${lang}/destinations/[slug], /${lang}/hotels/[slug], /${lang}/eat-drink/[slug], /${lang}/tours/[slug], /${lang}/businesses/[slug]. NEVER use /restaurants/ in URLs — use /eat-drink/ instead. NEVER link to /guides/ pages.
-3. Use the knowledge base for suggestions. If data is missing, use general Greece travel knowledge.
-4. Be realistic about travel time between places.
-5. Budget labels: budget=low-cost, mid=middle-range, luxury=premium.
-6. CRITICAL: You MUST mention EVERY business from the KNOWLEDGE BASE in the itinerary. These are paid advertising partners. Include each business in the activities, mealSuggestions, transportation, accommodation, or tips section. Do NOT skip any. If there are many businesses, mention at least the first 5.
-7. Each destination in the KNOWLEDGE BASE now includes a "beaches" array (top beaches to visit) and an "attractions" array (top things to do). Use these to enrich each day's description and activities with specific beach names and attraction recommendations.
-8. The "accommodation" field MUST contain markdown links in the format [Hotel Name](/${lang}/hotels/[slug]). Never write hotel names as plain text in accommodation. For accommodation-type businesses from the KNOWLEDGE BASE (category: "Accommodation" or "Διαμονή"), use /${lang}/businesses/[slug], NOT /${lang}/hotels/[slug].
+1. Output ONLY valid JSON. No markdown formatting outside the JSON fields, no code fences (```json), and no conversational explanations.
+2. Every activity must link to a GoGreeceNow page when relevant using exact URL structures:
+   - /${lang}/destinations/[slug]
+   - /${lang}/hotels/[slug]
+   - /${lang}/eat-drink/[slug]
+   - /${lang}/tours/[slug]
+   - /${lang}/businesses/[slug]
+   CRITICAL: NEVER use /restaurants/ in URLs (always use /eat-drink/). NEVER link to /guides/ pages.
+3. Use the provided KNOWLEDGE BASE for all suggestions. If data for a specific request is missing, supplement it using general expert Greece travel knowledge.
+4. Ensure travel times, geolocations, and daily itineraries are strictly realistic. Do not group distant locations in the same day.
+5. Use exact budget labels in the JSON payload: budget="low-cost", mid="middle-range", luxury="premium".
+6. ADVERTISING PARTNERS (CRITICAL): You must include the advertising businesses provided in the KNOWLEDGE BASE for the chosen destination. Incorporate them naturally into 'activities', 'mealSuggestions', 'transportation', 'accommodation', or 'tips'. If there are more than 5 businesses for a destination, prioritize and include at least the first 5.
+7. Enrich each day's description and activities by using the specific names from the "beaches" array and "attractions" array provided for each destination in the KNOWLEDGE BASE.
+8. ACCOMMODATION LINKS: The "accommodation" field MUST contain markdown links.
+   - Standard format: [Hotel Name](/${lang}/hotels/[slug])
+   - EXCEPTION: If the hotel comes from the KNOWLEDGE BASE and has category: "Accommodation" or "Διαμονή", you MUST use the business format: [Hotel Name](/${lang}/hotels/[slug]) -> Change to: [Hotel Name](/${lang}/businesses/[slug]).
 
 KNOWLEDGE BASE:
 ${ctx}
@@ -109,7 +117,7 @@ OUTPUT SCHEMA:
     const result = await generateText({
       model: google('gemini-2.5-flash'),
       system: systemPrompt,
-      prompt: `Generate a ${destDays}-day ${budget} itinerary for ${selectedSlugs.join(' and ')} in ${validMonth}, ${style} pace. Language: ${lang}. Output JSON only.`,
+      prompt: `Generate a ${destDays}-day ${budget} itinerary for ${selectedSlugs.join(' and ')} in ${validMonth}, ${style} pace. Language: ${lang}. Output JSON only. No markdown, no code fences.`,
       temperature: 0.7,
     });
     rawText = result.text;
