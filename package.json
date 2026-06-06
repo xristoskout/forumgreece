@@ -25,7 +25,8 @@
     "react-dom": "^19.2.3",
     "react-markdown": "^10.1.0",
     "sanity": "^5.19.0",
-    "styled-components": "^6.3.12"
+    "styled-components": "^6.3.12",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

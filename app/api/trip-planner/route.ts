@@ -1,5 +1,6 @@
-import { generateText } from 'ai';
+import { generateObject } from 'ai';
 import { google } from '@ai-sdk/google';
+import { z } from 'zod';
 import { getKnowledgeBase } from '../../../lib/knowledge-base';
 import { checkRateLimit, getIP } from '../../../lib/rate-limit';
 
@@ -10,8 +11,34 @@ const MONTHS = [
   'july','august','september','october','november','december'
 ];
 
+const itinerarySchema = z.object({
+  title: z.string(),
+  summary: z.string(),
+  days: z.array(
+    z.object({
+      day: z.number(),
+      title: z.string(),
+      description: z.string(),
+      activities: z.array(
+        z.object({
+          time: z.string(),
+          activity: z.string(),
+          link: z.string().optional()
+        })
+      ),
+      mealSuggestions: z.array(z.string()),
+      accommodation: z.string()
+    })
+  ),
+  budgetEstimate: z.object({
+    total: z.string(),
+    breakdown: z.string(),
+    currency: z.string().default('EUR')
+  }),
+  tips: z.array(z.string())
+});
+
 export async function POST(req: Request) {
-  let rawText = '';
   try {
     const ip = getIP(req);
     const limit = checkRateLimit(`trip-planner:${ip}`, 5, 60 * 1000);
@@ -63,107 +90,43 @@ export async function POST(req: Request) {
 
     const ctx = JSON.stringify({ destinations: destData, hotels: hotelData, restaurants: foodData, tours: tourData, businesses: businessData });
 
-    const systemPrompt = `You are the GoGreeceNow AI Trip Planner. Generate a detailed day-by-day itinerary.
+    const systemPrompt = `You are the GoGreeceNow AI Trip Planner. Generate a detailed day-by-day itinerary based ONLY on the schema provided.
 
 RULES:
-1. Output ONLY valid JSON. No markdown formatting outside the JSON fields, no code fences (```json), and no conversational explanations.
-2. Every activity must link to a GoGreeceNow page when relevant using exact URL structures:
+1. Every activity must link to a GoGreeceNow page when relevant using exact URL structures:
    - /${lang}/destinations/[slug]
    - /${lang}/hotels/[slug]
    - /${lang}/eat-drink/[slug]
    - /${lang}/tours/[slug]
    - /${lang}/businesses/[slug]
    CRITICAL: NEVER use /restaurants/ in URLs (always use /eat-drink/). NEVER link to /guides/ pages.
-3. Use the provided KNOWLEDGE BASE for all suggestions. If data for a specific request is missing, supplement it using general expert Greece travel knowledge.
-4. Ensure travel times, geolocations, and daily itineraries are strictly realistic. Do not group distant locations in the same day.
-5. Use exact budget labels in the JSON payload: budget="low-cost", mid="middle-range", luxury="premium".
-6. ADVERTISING PARTNERS (CRITICAL): You must include the advertising businesses provided in the KNOWLEDGE BASE for the chosen destination. Incorporate them naturally into 'activities', 'mealSuggestions', 'transportation', 'accommodation', or 'tips'. If there are more than 5 businesses for a destination, prioritize and include at least the first 5.
-7. Enrich each day's description and activities by using the specific names from the "beaches" array and "attractions" array provided for each destination in the KNOWLEDGE BASE.
-8. ACCOMMODATION LINKS: The "accommodation" field MUST contain markdown links.
-   - Standard format: [Hotel Name](/${lang}/hotels/[slug])
-   - EXCEPTION: If the hotel comes from the KNOWLEDGE BASE and has category: "Accommodation" or "Διαμονή", you MUST use the business format: [Hotel Name](/${lang}/hotels/[slug]) -> Change to: [Hotel Name](/${lang}/businesses/[slug]).
+2. Use the provided KNOWLEDGE BASE for all suggestions. If data for a specific request is missing, supplement it using general expert Greece travel knowledge.
+3. Ensure travel times, geolocations, and daily itineraries are strictly realistic. Do not group distant locations in the same day.
+4. Use exact budget labels in the JSON payload: budget="low-cost", mid="middle-range", luxury="premium".
+5. ADVERTISING PARTNERS (CRITICAL): You must include the advertising businesses provided in the KNOWLEDGE BASE for the chosen destination. Incorporate them naturally into 'activities', 'mealSuggestions', 'transportation', 'accommodation', or 'tips'. If there are more than 5 businesses for a destination, prioritize and include at least the first 5.
+6. Enrich each day's description and activities by using the specific names from the "beaches" array and "attractions" array provided for each destination in the KNOWLEDGE BASE.
+7. ACCOMMODATION LINKS: The "accommodation" field MUST contain markdown links.
+   - Standard format: Use [Hotel Name](/${lang}/hotels/[slug])
+   - EXCEPTION: If the hotel comes from the KNOWLEDGE BASE and has category: "Accommodation" or "Διαμονή", you MUST use the business format: [Hotel Name](/${lang}/businesses/[slug]).
 
 KNOWLEDGE BASE:
 ${ctx}
 
-USER:
+USER REQUEST:
 Destinations: ${selectedSlugs.join(', ')}
 Days: ${destDays}
 Budget: ${budget}
 Style: ${style} (${styleGuide[style]?.pace || 'balanced'})
 Month: ${validMonth}
-Interests: ${interests.length ? interests.join(', ') : 'general'}
+Interests: ${interests.length ? interests.join(', ') : 'general'}`;
 
-OUTPUT SCHEMA:
-{
-  "title": "catchy title string",
-  "summary": "2-3 sentence overview",
-  "days": [
-    {
-      "day": 1,
-      "title": "day theme",
-      "description": "paragraph",
-      "activities": [
-        { "time": "Morning", "activity": "description", "link": "optional URL" }
-      ],
-      "mealSuggestions": ["string with optional markdown links"],
-      "accommodation": "suggestion with optional markdown link"
-    }
-  ],
-  "budgetEstimate": { "total": "string", "breakdown": "string", "currency": "EUR" },
-  "tips": ["string"]
-}`;
-
-    const result = await generateText({
-      model: google('gemini-2.5-flash'),
+    const { object: parsed } = await generateObject({
+      model: google('gemini-2.0-flash'),
       system: systemPrompt,
-      prompt: `Generate a ${destDays}-day ${budget} itinerary for ${selectedSlugs.join(' and ')} in ${validMonth}, ${style} pace. Language: ${lang}. Output JSON only. No markdown, no code fences.`,
+      prompt: `Generate a ${destDays}-day ${budget} itinerary for ${selectedSlugs.join(' and ')} in ${validMonth}, ${style} pace. Language: ${lang}.`,
+      schema: itinerarySchema,
       temperature: 0.7,
     });
-    rawText = result.text;
-
-    const extractJSON = (text: string): string | null => {
-      const noFences = text.replace(/```[\w]*\n?/g, '');
-      const braceStart = noFences.indexOf('{');
-      if (braceStart === -1) return null;
-      let depth = 0;
-      let inStr = false;
-      let esc = false;
-      for (let i = braceStart; i < noFences.length; i++) {
-        const ch = noFences[i];
-        if (esc) { esc = false; continue; }
-        if (ch === '\\' && inStr) { esc = true; continue; }
-        if (ch === '"') { inStr = !inStr; continue; }
-        if (inStr) continue;
-        if (ch === '{') depth++;
-        if (ch === '}') { depth--; if (depth === 0) return noFences.slice(braceStart, i + 1); }
-      }
-      return null;
-    };
-
-    let jsonStr = extractJSON(rawText);
-    if (!jsonStr) {
-      const match = rawText.match(/\{[\s\S]*\}/);
-      jsonStr = match ? match[0] : null;
-    }
-    if (!jsonStr) {
-      return Response.json({ error: 'AI returned invalid JSON format' }, { status: 500 });
-    }
-    jsonStr = jsonStr.replace(/\/restaurants\//g, '/eat-drink/');
-
-    let parsed: any;
-    try {
-      parsed = JSON.parse(jsonStr);
-    } catch {
-      const better = jsonStr.match(/\{[^{]*"title"[\s\S]*"days"[\s\S]*\}/);
-      if (better) {
-        try { parsed = JSON.parse(better[0]); } catch { }
-      }
-      if (!parsed) {
-        console.error('[trip-planner] Failed to parse:', jsonStr.slice(0, 500));
-        return Response.json({ error: 'AI returned invalid JSON format' }, { status: 500 });
-      }
-    }
 
     const partnerTips = businessData.map(b => {
       const info = b.info || '';
@@ -182,9 +145,9 @@ OUTPUT SCHEMA:
         category: b.category || '',
       })),
     });
+
   } catch (error: any) {
     console.error('[trip-planner] Error:', error?.message || error);
-    console.error('[trip-planner] Raw text preview:', rawText?.slice(0, 800));
     return Response.json({ error: `Failed: ${error?.message || 'Unknown error'}` }, { status: 500 });
   }
 }
