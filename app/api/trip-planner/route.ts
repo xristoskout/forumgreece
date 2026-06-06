@@ -113,12 +113,27 @@ OUTPUT SCHEMA:
     });
     rawText = result.text;
 
-    const start = rawText.indexOf('{');
-    const end = rawText.lastIndexOf('}');
-    if (start === -1 || end === -1 || end <= start) {
+    const braceStart = rawText.indexOf('{');
+    if (braceStart === -1) {
       return Response.json({ error: 'AI returned invalid JSON format' }, { status: 500 });
     }
-    const cleaned = rawText.slice(start, end + 1).trim();
+    let depth = 0;
+    let inStr = false;
+    let esc = false;
+    let braceEnd = -1;
+    for (let i = braceStart; i < rawText.length; i++) {
+      const ch = rawText[i];
+      if (esc) { esc = false; continue; }
+      if (ch === '\\' && inStr) { esc = true; continue; }
+      if (ch === '"') { inStr = !inStr; continue; }
+      if (inStr) continue;
+      if (ch === '{') depth++;
+      if (ch === '}') { depth--; if (depth === 0) { braceEnd = i; break; } }
+    }
+    if (braceEnd === -1) {
+      return Response.json({ error: 'AI returned unclosed JSON object' }, { status: 500 });
+    }
+    const cleaned = rawText.slice(braceStart, braceEnd + 1).trim();
     const fixed = cleaned.replace(/\/restaurants\//g, '/eat-drink/');
 
     const parsed = JSON.parse(fixed);
@@ -127,7 +142,20 @@ OUTPUT SCHEMA:
       const info = b.info || '';
       return `[${b.name}](/${lang}/businesses/${b.slug}) — ${info.length > 100 ? info.slice(0, 100) + '...' : info}`;
     });
-    parsed.tips = [...(parsed.tips || []), ...partnerTips];
+    const beachesTips: string[] = [];
+    const attractionsTips: string[] = [];
+    for (const dest of destData) {
+      const destName = dest.name || dest.slug;
+      if (dest.beaches && dest.beaches.length > 0) {
+        const names = dest.beaches.slice(0, 5).map((b: string) => b.split(':')[0].trim()).join(', ');
+        beachesTips.push(`🏖️ Best beaches in ${destName}: ${names}. [Full guide](/${lang}/guides/${dest.slug}/best-beaches)`);
+      }
+      if (dest.attractions && dest.attractions.length > 0) {
+        const names = dest.attractions.slice(0, 5).map((a: string) => a.split(':')[0].trim()).join(', ');
+        attractionsTips.push(`🏛️ Things to do in ${destName}: ${names}. [Full guide](/${lang}/guides/${dest.slug}/things-to-do)`);
+      }
+    }
+    parsed.tips = [...(parsed.tips || []), ...beachesTips, ...attractionsTips, ...partnerTips];
 
     const sortedBusinesses = [...businessData].sort((a, b) => (a.name || '').localeCompare(b.name || ''));
 
