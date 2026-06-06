@@ -135,12 +135,20 @@ type ItineraryDay = {
   accommodation: string;
 };
 
+type BusinessItem = {
+  slug: string;
+  name: string;
+  place: string;
+  category: string;
+};
+
 type Itinerary = {
   title: string;
   summary: string;
   days: ItineraryDay[];
   budgetEstimate: { total: string; breakdown: string; currency: string };
   tips: string[];
+  businesses?: BusinessItem[];
 };
 
 function emojiForTime(time: string): string {
@@ -163,7 +171,7 @@ export default function TripPlannerClient({
   const [days, setDays] = useState(7);
   const [budget, setBudget] = useState<"budget" | "mid" | "luxury">("mid");
   const [style, setStyle] = useState<"relaxed" | "balanced" | "packed">("balanced");
-  const [month, setMonth] = useState("june");
+  const [month, setMonth] = useState(MONTHS[new Date().getMonth()]);
   const [interests, setInterests] = useState<string[]>(["beaches", "history", "food"]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -598,6 +606,29 @@ export default function TripPlannerClient({
                       </li>
                     ))}
                   </ul>
+                </div>
+              )}
+
+              {/* Partner Businesses */}
+              {itinerary.businesses && itinerary.businesses.length > 0 && (
+                <div className="bg-white rounded-3xl shadow-lg border border-slate-200 p-8">
+                  <p className="text-sm font-bold text-slate-600 uppercase tracking-wider flex items-center gap-2 mb-4">
+                    <span>🤝</span> {lang === "el" ? "Συνεργάτες στην Περιοχή" : "Local Partners"}
+                  </p>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {itinerary.businesses.map(biz => (
+                      <a
+                        key={biz.slug}
+                        href={`/${lang}/businesses/${biz.slug}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block p-4 rounded-2xl bg-slate-50 border border-slate-100 hover:border-indigo-200 hover:bg-indigo-50 transition-all"
+                      >
+                        <p className="font-semibold text-slate-900">{biz.name}</p>
+                        <p className="text-xs text-slate-500 mt-1">{biz.category}</p>
+                      </a>
+                    ))}
+                  </div>
                 </div>
               )}
 

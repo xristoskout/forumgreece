@@ -67,7 +67,7 @@ export async function POST(req: Request) {
 
 RULES:
 1. Output ONLY valid JSON. No markdown, no code fences, no explanation.
-2. Every activity must link to a GoGreeceNow page when relevant: /${lang}/destinations/[slug], /${lang}/hotels/[slug], /${lang}/eat-drink/[slug], /${lang}/tours/[slug], /${lang}/businesses/[slug]
+2. Every activity must link to a GoGreeceNow page when relevant: /${lang}/destinations/[slug], /${lang}/hotels/[slug], /${lang}/eat-drink/[slug], /${lang}/tours/[slug], /${lang}/businesses/[slug]. NEVER use /restaurants/ in URLs — use /eat-drink/ instead.
 3. Use the knowledge base for suggestions. If data is missing, use general Greece travel knowledge.
 4. Be realistic about travel time between places.
 5. Budget labels: budget=low-cost, mid=middle-range, luxury=premium.
@@ -117,10 +117,19 @@ OUTPUT SCHEMA:
       return Response.json({ error: 'AI returned invalid JSON format' }, { status: 500 });
     }
     const cleaned = rawText.slice(start, end + 1).trim();
+    const fixed = cleaned.replace(/\/restaurants\//g, '/eat-drink/');
 
-    const parsed = JSON.parse(cleaned);
+    const parsed = JSON.parse(fixed);
 
-    return Response.json(parsed);
+    return Response.json({
+      ...parsed,
+      businesses: businessData.map(b => ({
+        slug: b.slug,
+        name: b.name || '',
+        place: b.place || '',
+        category: b.category || '',
+      })),
+    });
   } catch (error: any) {
     console.error('[trip-planner] Error:', error?.message || error);
     console.error('[trip-planner] Raw text preview:', rawText?.slice(0, 800));

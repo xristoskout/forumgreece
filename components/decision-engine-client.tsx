@@ -1121,7 +1121,7 @@ export default function DecisionEngineClient({ destinations, lang }: { destinati
   const [adults, setAdults] = useState(2);
   const [days, setDays] = useState(5);
   const [style, setStyle] = useState<'budget' | 'mid' | 'luxury'>('mid');
-  const [month, setMonth] = useState('may');
+  const [month, setMonth] = useState(Object.keys(MONTH_LABELS)[new Date().getMonth()]);
   const [currency, setCurrency] = useState<'EUR' | 'USD' | 'GBP' | 'CNY'>('EUR');
 
   useEffect(() => { setMounted(true); }, []);

@@ -73,7 +73,7 @@ export default async function TripPlannerPage({ params }: Props) {
   return (
     <main>
       <SiteHeader />
-      <TripPlannerClient destinations={destinations} lang={lang as "en" | "el"} />
+      <TripPlannerClient destinations={[...destinations].sort((a, b) => a.name.localeCompare(b.name))} lang={lang as "en" | "el"} />
     </main>
   );
 }
