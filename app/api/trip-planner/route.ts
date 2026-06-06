@@ -67,7 +67,7 @@ export async function POST(req: Request) {
 
 RULES:
 1. Output ONLY valid JSON. No markdown, no code fences, no explanation.
-2. Every activity must link to a GoGreeceNow page when relevant: /${lang}/destinations/[slug], /${lang}/hotels/[slug], /${lang}/eat-drink/[slug], /${lang}/tours/[slug], /${lang}/businesses/[slug], /${lang}/guides/[slug]/best-beaches, /${lang}/guides/[slug]/things-to-do. NEVER use /restaurants/ in URLs — use /eat-drink/ instead.
+2. Every activity must link to a GoGreeceNow page when relevant: /${lang}/destinations/[slug], /${lang}/hotels/[slug], /${lang}/eat-drink/[slug], /${lang}/tours/[slug], /${lang}/businesses/[slug]. NEVER use /restaurants/ in URLs — use /eat-drink/ instead. NEVER link to /guides/ pages.
 3. Use the knowledge base for suggestions. If data is missing, use general Greece travel knowledge.
 4. Be realistic about travel time between places.
 5. Budget labels: budget=low-cost, mid=middle-range, luxury=premium.
