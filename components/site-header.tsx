@@ -16,6 +16,7 @@ export default function SiteHeader() {
 
   useEffect(() => {
     setMenuOpen(false);
+    setToolsOpen(false);
   }, [pathname]);
 
   useEffect(() => {
@@ -173,7 +174,6 @@ export default function SiteHeader() {
                     <div className="absolute top-full right-0 mt-2 w-56 rounded-2xl bg-white shadow-xl border border-slate-200 p-2 space-y-1 z-50">
                       <Link
                         href={withLang("/travel-tools")}
-                        onClick={() => setToolsOpen(false)}
                         className={`flex items-center gap-3 px-4 py-3 text-sm font-bold rounded-xl transition ${
                           pathname.startsWith(`/${lang}/travel-tools`)
                             ? "bg-indigo-50 text-indigo-700"
@@ -188,7 +188,6 @@ export default function SiteHeader() {
                       </Link>
                       <Link
                         href={withLang("/trip-planner")}
-                        onClick={() => setToolsOpen(false)}
                         className={`flex items-center gap-3 px-4 py-3 text-sm font-bold rounded-xl transition ${
                           pathname.startsWith(`/${lang}/trip-planner`)
                             ? "bg-indigo-50 text-indigo-700"
@@ -342,7 +341,6 @@ export default function SiteHeader() {
                       <div className="ml-4 border-l-2 border-indigo-100 pl-3 space-y-1 mt-1">
                         <Link
                           href={withLang("/travel-tools")}
-                          onClick={() => setMenuOpen(false)}
                           className={`flex items-center gap-2 border px-4 py-2.5 text-sm font-medium transition ${
                             pathname.startsWith(`/${lang}/travel-tools`)
                               ? "border-indigo-200 bg-sky-50 text-indigo-700"
@@ -354,7 +352,6 @@ export default function SiteHeader() {
                         </Link>
                         <Link
                           href={withLang("/trip-planner")}
-                          onClick={() => setMenuOpen(false)}
                           className={`flex items-center gap-2 border px-4 py-2.5 text-sm font-medium transition ${
                             pathname.startsWith(`/${lang}/trip-planner`)
                               ? "border-indigo-200 bg-sky-50 text-indigo-700"

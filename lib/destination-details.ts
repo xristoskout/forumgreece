@@ -1814,6 +1814,74 @@ export const destinationDetails: Record<string, DestinationDetail> = {
     }
   },
 
+  aegina: {
+    overview: {
+      en: "Aegina is the island that proves you do not need a long-haul flight, an overnight ferry, or a week-long itinerary to find something genuinely extraordinary in Greece. It is 40 minutes from Piraeus on a hydrofoil, and it contains one of the best-preserved Doric temples in the entire Greek world, a harbour town with more architectural character than most island capitals ten times its size, a fishing village that still functions as a fishing village, and the finest pistachios produced anywhere in the country.",
+      el: "Η Αίγινα είναι το νησί που αποδεικνύει ότι δεν χρειάζεσαι μεγάλη πτήση ή οδοιπορικό εβδομάδας για να βρεις κάτι πραγματικά εξαιρετικό στην Ελλάδα. Είναι 40 λεπτά από τον Πειραιά και περιέχει έναν από τους καλύτερα διατηρημένους δωρικούς ναούς, ένα νεοκλασικό λιμάνι και τα καλύτερα φιστίκια της χώρας."
+    },
+    pageIncludes: {
+      en: [
+        "Temple of Aphaia & Kolonna",
+        "Aegina Town & Neoclassical Harbour",
+        "Perdika, Moni & South Coast",
+        "Palaiochora & Agios Nektarios",
+        "Beaches & Swimming Guide",
+        "Pistachio Culture & Local Food",
+        "Ferry Logistics & Practical Tips",
+      ],
+      el: [
+        "Ναός Αφαίας & Κολόνα",
+        "Πόλη Αίγινας & Νεοκλασικό Λιμάνι",
+        "Πέρδικα, Μονή & Νότια Ακτή",
+        "Παλαιοχώρα & Άγιος Νεκτάριος",
+        "Παραλίες & Οδηγός Κολύμβησης",
+        "Φιστίκια & Τοπικό Φαγητό",
+        "Πλοία & Πρακτικές Συμβουλές",
+      ],
+    },
+    perfectFor: {
+      en: [
+        "Couples and romantic weekend escapes",
+        "History and archaeology enthusiasts",
+        "Families seeking easy beach days",
+        "Athens-based travellers (day trip or overnight)",
+        "Food lovers & pistachio pilgrims",
+        "Off-season city escapes",
+      ],
+      el: [
+        "Ζευγάρια και ρομαντικές αποδράσεις",
+        "Λάτρεις ιστορίας και αρχαιολογίας",
+        "Οικογένειες με παιδιά",
+        "Ταξιδιώτες από Αθήνα (ημερήσια ή διανυκτέρευση)",
+        "Λάτρεις του φαγητού & προσκυνητές φιστικιού",
+        "Αποδράσεις εκτός σεζόν",
+      ],
+    },
+    honestAdvice: {
+      title: { en: "Honest Advice — What to Skip", el: "Ειλικρινής Συμβουλή — Τι να Αποφύγεις" },
+      alert: {
+        en: "What nobody tells you: Aegina was not only the first capital of the modern Greek state — it was where the first modern Greek coins were minted (the phoenix, in 1828), where the first Greek newspaper was printed, and where Governor Kapodistrias established the first Greek school and the first orphanage. The neoclassical town you walk through today was essentially purpose-built during those few years as the administrative centre of a newly independent nation. None of this is particularly visible — the town does not make a great fuss of its historical significance — but knowing it makes the harbour front architecture feel less like a pleasant backdrop and more like a deliberate statement about what Greece was trying to become.",
+        el: "Αυτό που δε σου λέει κανείς: Η Αίγινα δεν ήταν μόνο η πρώτη πρωτεύουσα του ελληνικού κράτους — ήταν όπου κόπηκαν τα πρώτα σύγχρονα ελληνικά νομίσματα, τυπώθηκε η πρώτη εφημερίδα, και ιδρύθηκε το πρώτο σχολείο και το πρώτο ορφανοτροφείο. Η νεοκλασική πόλη χτίστηκε σκόπιμα ως διοικητικό κέντρο ενός νέου ανεξάρτητου έθνους."
+      },
+      items: {
+        en: [
+          "Coming on a Saturday afternoon in July or August without a return ticket booked. The Sunday evening ferries back to Piraeus fill completely. Book the return trip at the same time as the outward journey.",
+          "Eating at the first row of tavernas on the harbour front without checking prices. Several are priced for day-trippers. The fish market neighbourhood has better tavernas at better prices.",
+          "Visiting Palaiochora without time to slow down. Allow at least 90 minutes. Combine it with the Agios Nektarios monastery.",
+          "Buying pistachios only from the port stalls. The co-operative shops 3–4 km into the plain offer better variety, lower prices, and the ability to taste before buying.",
+          "Treating Aegina as a day trip only. One night changes the quality of the trip disproportionately.",
+        ],
+        el: [
+          "Να έρθεις Σάββατο απόγευμα Ιούλιο ή Αύγουστο χωρίς εισιτήριο επιστροφής. Κλείσε επιστροφή μαζί με το μετάβασης.",
+          "Φαγητό στην πρώτη σειρά ταβερνών του λιμανιού χωρίς έλεγχο τιμών. Η γειτονιά της ψαραγοράς έχει καλύτερες επιλογές.",
+          "Επίσκεψη Παλαιοχώρας χωρίς χρόνο. Αφήστε τουλάχιστον 90 λεπτά. Συνδυάστε το με τον Άγιο Νεκτάριο.",
+          "Αγορά φιστικιών μόνο από τα περίπτερα του λιμανιού. Ο συνεταιρισμός στον κάμπο έχει καλύτερες τιμές.",
+          "Να δεις την Αίγινα μόνο ως ημερήσια εκδρομή. Μία διανυκτέρευση αλλάζει την ποιότητα του ταξιδιού."
+        ]
+      }
+    }
+  },
+
   lasithi: {
     overview: {
       en: "Lasithi is the easternmost region of Crete, and in many ways the most uncompromised. It covers roughly a third of the island — from the mountain plateau that carries its name in the west, all the way to Crete's most dramatic eastern tip at Cape Sideros. The region offers Spinalonga Island, Elounda Bay, Vai Palm Forest, and the unperformed pace of traditional villages. A well-planned stay here can combine history, extraordinary beaches, local food, and genuine solitude in one of the least crowded parts of Crete.",

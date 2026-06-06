@@ -3415,4 +3415,100 @@ export const hotels: HotelCard[] = [
       }
     }
   },
+  {
+    slug: "aegina",
+    name: "Where to Stay in Aegina",
+    place: "Aegina — Saronic Islands",
+    info: {
+      en: "Find the best places to stay in Aegina — from the neoclassical port town overlooking the Saronic Gulf to the charming fishing villages, family-friendly beach resorts and quiet thermal spring retreats. A complete guide to Aegina hotels and areas.",
+      el: "Βρείτε τα καλύτερα μέρη για διαμονή στην Αίγινα — από τη νεοκλασική παραλιακή πόλη έως τα γραφικά ψαροχώρια, τα οικογενειακά παραθαλάσσια θέρετρα και τις ήσυχες θερμές πηγές. Πλήρης οδηγός για ξενοδοχεία και περιοχές στην Αίγινα.",
+    },
+    image: "/images/aegina.webp",
+    badge: "Island escape",
+    overview: {
+      en: "Aegina is the closest island to Athens — a one-hour ferry from Piraeus — yet it feels like a different world entirely. The island's identity is woven from three distinct threads: the ancient Temple of Aphaia standing on a pine-covered ridge, the neoclassical mansions and lively waterfront of Aegina Town, and the pistachio groves that colour the entire island a soft silver-green from spring through autumn. Choosing where to stay depends entirely on what you want from your visit — a convenient and characterful base in the buzzing port town, a relaxed fishing village with exceptional seafood tavernas, a family-friendly beach resort with shallow swimming, a quiet thermal spring retreat on the north coast, or a peaceful bay on the south coast where the only sound is the cicadas and the sea.",
+      el: "Η Αίγινα είναι το πλησιέστερο νησί στην Αθήνα — μία ώρα με το πλοίο από τον Πειραιά — αλλά μοιάζει με εντελώς διαφορετικό κόσμο. Η επιλογή διαμονής εξαρτάται από το τι θέλετε: τη ζωντανή πόλη, ένα χαλαρό ψαροχώρι, μια οικογενειακή παραλία, ήσυχες θερμές πηγές ή έναν γαλήνιο κόλπο.",
+    },
+    description: {
+      en: "Aegina is the closest island to Athens — a one-hour ferry from Piraeus, or forty-five minutes by high-speed hydrofoil — yet it feels like a different world entirely. It was the first capital of modern Greece after independence in 1827, before the capital moved to Nafplio and then to Athens, and traces of that brief prominence remain in the neoclassical buildings and the grand Ioannis Kapodistrias Government House in the town. The island's identity is woven from three distinct threads: the ancient Temple of Aphaia, one of the most beautifully sited ancient temples in Greece, standing on a pine-covered ridge with views across the Saronic Gulf to the Athenian coast; the neoclassical mansions and the lively waterfront of Aegina Town, with its fish market, pistachio shops and the ferries coming and going all day; and the pistachio groves that colour the entire island a soft silver-green from spring through autumn, producing the most famous pistachios in Greece.\n\nThe fundamental choice in Aegina is this: do you want to stay in the town for convenience and energy, or do you want a coastal village for swimming and relaxation? The five distinct areas each cater to a different travel style and each has its own character. Understanding the differences between them — and their practical trade-offs — will determine whether your Aegina trip is merely pleasant or genuinely memorable.",
+      el: "Η Αίγινα είναι το πλησιέστερο νησί στην Αθήνα — μία ώρα με το πλοίο από τον Πειραιά ή σαράντα πέντε λεπτά με το ιπτάμενο δελφίνι. Υπήρξε η πρώτη πρωτεύουσα της σύγχρονης Ελλάδας το 1827. Η ταυτότητά της υφαίνεται από τρία νήματα: τον αρχαίο Ναό της Αφαίας, τα νεοκλασικά κτήρια και την παραλία της πόλης, και τους φιστικιώνες. Η βασική επιλογή: θέλετε διαμονή στην πόλη ή σε παραθαλάσσιο χωριό;",
+    },
+    features: {
+      en: ["Aegina Town (Neoclassical & Central)", "Perdika (Charming Fishing Village)", "Agia Marina (Beach & Families)", "Souvala (Thermal Springs & Quiet)", "Marathonas (Peaceful Bay)"],
+      el: ["Πόλη της Αίγινας (Νεοκλασική & Κεντρική)", "Πέρδικα (Γραφικό Ψαροχώρι)", "Αγία Μαρίνα (Παραλία & Οικογένειες)", "Σουβάλα (Θερμές Πηγές & Ησυχία)", "Μαραθώνας (Γαλήνιος Κόλπος)"],
+    },
+    sections: [
+      {
+        title: { en: "1. Aegina Town — The most convenient and characterful base on the island", el: "1. Πόλη της Αίγινας — Η πιο βολική και γεμάτη χαρακτήρα βάση στο νησί" },
+        content: {
+          en: "Aegina Town wraps around the harbour on the island's western side, fifteen minutes from the ferry dock and five minutes from the archaeological museum, the fish market, and the best pistachio shops in Greece. The town itself is genuinely attractive — not in the curated white-and-blue Cycladic way, but as a working Saronic port with real history: neoclassical mansions from the Kapodistrian era line the waterfront, a pastel-coloured row of 19th-century buildings faces the ferries, the imposing Cathedral of Aegina (Agios Dionysios) anchors the main square, and the picturesque little fishing harbour of Klima sits at the southern edge with its own cluster of waterfront tavernas. The entire town is walkable from any central hotel: the archaeological museum, the Markellos Tower housing the folklore museum, the sponge-divers' street, and the evening volta along the harbour are all within a ten-minute stroll.\n\nHotels in Aegina Town range from elegant neoclassical boutique properties on the waterfront to family-run guesthouses on the quieter backstreets. The main considerations are noise — rooms facing the harbour can carry music from waterfront bars until midnight or later in peak season — and parking, which is difficult in the central grid. For first-time visitors, couples who want restaurants and evening energy within walking distance, and anyone arriving without a car, Aegina Town is the best place to stay on the island.\n\nHotel picks: Aegina Hotel (waterfront, neoclassical, the town's most historic address), Rastoni (quiet garden setting five minutes from harbour, excellent value), Pavlou (family-run, on the harbour, simple and friendly), Nafsika (mid-century charm on the waterfront, good value), Fistikies Apartments (self-catering in the town centre), Papyrus Rooms (budget-friendly, central), Artemis Apartments (quiet residential street, ideal for longer stays).",
+          el: "Η πόλη της Αίγινας περιβάλλει το λιμάνι στη δυτική πλευρά του νησιού. Νεοκλασικά αρχοντικά, ο μητροπολιτικός ναός του Αγίου Διονυσίου, το γραφικό λιμανάκι της Κλήμα. Όλη η πόλη είναι προσβάσιμη με τα πόδια. Τα ξενοδοχεία κυμαίνονται από νεοκλασικές μπουτίκ επιλογές έως οικογενειακούς ξενώνες. Θόρυβος και στάθμευση είναι τα βασικά μειονεκτήματα. Ιδανική για πρώτη επίσκεψη, ζευγάρια και ταξιδιώτες χωρίς αυτοκίνητο.\n\nΕπιλογές διαμονής: Aegina Hotel, Rastoni, Pavlou, Nafsika, Fistikies Apartments, Papyrus Rooms, Artemis Apartments.",
+        }
+      },
+      {
+        title: { en: "2. Perdika — The most charming fishing village on the island", el: "2. Πέρδικα — Το πιο γραφικό ψαροχώρι του νησιού" },
+        content: {
+          en: "Perdika sits on Aegina's southwestern coast, a fifteen-minute drive or bus ride from Aegina Town — far enough to feel separate, close enough to visit the capital for an evening or a market morning. The village is built around a perfectly sheltered fishing harbour where traditional kaikia bob at anchor and the waterfront is lined with some of the best seafood tavernas in the Saronic, including the famous Miltinis and the more laid-back Skotadis. The island of Moni, a protected nature reserve with deer and peacocks, is a five-minute boat ride from the Perdika harbour and makes for an excellent half-day trip.\n\nPerdika is small — you can walk from one end of the harbour to the other in under ten minutes — and its accommodation reflects its scale: boutique hotels and smaller guesthouses rather than large resorts. The pace is slow, the evenings are quiet, and the emphasis is on good food and relaxed conversation by the water. The main trade-off is that the village has limited services beyond restaurants and a mini-market; for serious shopping or a wider choice of tavernas, you will need to go into Aegina Town.\n\nHotel picks: Nisos (boutique hotel right on the harbour, the best address in the village), Avra (family-run, simple rooms a short walk from the water, excellent value), Perdiki (traditional guesthouse with sea-view rooms, authentic atmosphere), Pnigma Apartments (self-catering, ideal for longer stays, a few minutes from the harbour).",
+          el: "Η Πέρδικα βρίσκεται στη νοτιοδυτική ακτή, 15 λεπτά από την πόλη. Γραφικό ψαρολίμανο με εξαιρετικές ταβέρνες ψαριού. Το νησάκι Μονή είναι 5 λεπτά με βάρκα. Μικρή κλίμακα, ήσυχα βράδια. Περιορισμένες υπηρεσίες.\n\nΕπιλογές διαμονής: Nisos, Avra, Perdiki, Pnigma Apartments.",
+        }
+      },
+      {
+        title: { en: "3. Agia Marina — The best beach and family base on Aegina", el: "3. Αγία Μαρίνα — Η καλύτερη παραλιακή βάση για οικογένειες" },
+        content: {
+          en: "Agia Marina sits on Aegina's eastern coast, directly facing the Athenian coast across the Saronic Gulf, and is the island's most developed beach resort — which in Aegina's terms means a long sandy beach, a compact strip of tavernas and cafés behind it, and a relaxed family atmosphere rather than a party scene. The water slopes gently and is safe for young children, the beach is well maintained with sunbeds and umbrellas along most of its length, and the shallow swimming extends far out, making it genuinely suitable for families with children of all ages.\n\nThe resort is compact, convenient and oriented entirely toward the beach. The Temple of Aphaia is a ten-minute drive inland, making Agia Marina a practical base for combining beach time with sightseeing. Agia Marina also has a ferry connection to Piraeus, so you can reach the resort directly from Athens without changing transport in Aegina Town — though services are less frequent than the Aegina Town route. The main limitation is that Agia Marina is essentially a single-street resort; there is no historic centre, no neoclassical architecture, and no evening volta beyond the beachfront strip.\n\nHotel picks: Thomas Beach Hotel (the best hotel in the village, right on the beach, excellent family facilities), Oasi (well-run mid-range hotel with pool and garden, a two-minute walk from the beach), Akrogiali (simple beachfront rooms, unbeatable location, very good value), Klonos (small family hotel with pool, quiet setting, five-minute walk from beach), Giannas Apartments (self-catering, ideal for families who want kitchen facilities).",
+          el: "Η Αγία Μαρίνα βρίσκεται στην ανατολική ακτή. Μακριά αμμώδης παραλία με ρηχά νερά, ιδανική για παιδιά. Συμπαγές θέρετρο με ταβέρνες και καφέ. Κοντινός Ναός Αφαίας. Απευθείας σύνδεση με Πειραιά. Δεν έχει ιστορικό κέντρο.\n\nΕπιλογές διαμονής: Thomas Beach Hotel, Oasi, Akrogiali, Klonos, Giannas Apartments.",
+        }
+      },
+      {
+        title: { en: "4. Souvala — The quietest coastal base with thermal springs", el: "4. Σουβάλα — Η πιο ήσυχη παραλιακή βάση με ιαματικές πηγές" },
+        content: {
+          en: "Souvala lies on Aegina's northern coast, a ten-minute drive from Aegina Town, and occupies a sheltered bay that has been known since antiquity for its thermal springs — the ancient writer Pausanias mentioned them in his Description of Greece. The springs emerge at the edge of the bay and feed a small hydrotherapy facility that operates through the summer months. The village itself is quiet, low-key and distinctly untouristed compared to the other areas of the island: a long pebbly beach, a handful of fish tavernas, a couple of cafés and mini-markets, and a pace of life that revolves around the sea rather than the ferry schedule.\n\nSouvala offers the most affordable accommodation on the island, with several well-rated family-run hotels and self-catering studios that undercut equivalent properties in Aegina Town or Perdika by a noticeable margin. The main trade-off is the beach, which is pebbly rather than sandy (water shoes recommended), and the limited evening options — if you want a lively dinner scene, you will need to drive or take a taxi into Aegina Town. For travelers on a budget, visitors with a rental car, and anyone who values quiet over convenience, Souvala is a strong and underrated choice.\n\nHotel picks: Saronis (the village's best address, family-run, sea-view rooms, very good value), Rania (simple, friendly, right on the waterfront), Souvala Mare (modern studios with kitchenettes, good for self-catering), Alkistis Apartments (budget-friendly, garden setting, a short walk from the beach).",
+          el: "Η Σουβάλα βρίσκεται στη βόρεια ακτή, 10 λεπτά από την πόλη. Ιαματικές πηγές από την αρχαιότητα. Ήσυχο, χαλαρό, με βοτσαλωτή παραλία. Οι πιο προσιτές τιμές στο νησί. Περιορισμένες βραδινές επιλογές.\n\nΕπιλογές διαμονής: Saronis, Rania, Souvala Mare, Alkistis Apartments.",
+        }
+      },
+      {
+        title: { en: "5. Marathonas — The most peaceful bay base on the south coast", el: "5. Μαραθώνας — Η πιο γαλήνια βάση στη νότια ακτή" },
+        content: {
+          en: "Marathonas sits on Aegina's southern coast, a broad, sheltered bay with a long sandy beach, shallow turquoise water and a genuinely relaxed atmosphere that makes it one of the most appealing places to stay on the island for travelers who want to be near the sea without any urban edge. The beach at Marathonas is uncrowded even in August, the water is clear and calm, and the surrounding landscape is undeveloped — pine trees and pistachio groves rather than buildings. As a result, however, the village itself is essentially a beach with a few hotels and tavernas rather than a proper settlement; there is no town centre, no shops beyond the mini-markets attached to the hotels, and no real evening life outside the hotel restaurant.\n\nMarathonas suits travelers who want quiet above all else — a week of swimming, reading, slow meals and early nights. It works best with a car, which gives you access to Perdika (ten minutes) and Aegina Town (twenty minutes) for dinner variety and supplies. Without a car, you are dependent on the hotel restaurant and the limited bus service to the capital.\n\nHotel picks: Marathonas Beach Hotel (the best address in the bay, right on the beach, comfortable, good restaurant), Karthaia (traditional guesthouse with garden, a short walk from the beach, very good value), Voula (simple studios, basic but perfectly adequate, the most affordable option in the area).",
+          el: "Ο Μαραθώνας βρίσκεται στη νότια ακτή. Φαρδύς προστατευμένος κόλπος με μακριά αμμώδη παραλία. Αραιοκατοικημένος ακόμα και τον Αύγουστο. Χωρίς κέντρο ή μαγαζιά. Ιδανικός για όσους θέλουν ησυχία. Χρειάζεται αυτοκίνητο.\n\nΕπιλογές διαμονής: Marathonas Beach Hotel, Karthaia, Voula.",
+        }
+      }
+    ],
+    faq: [
+      {
+        q: { en: "Can I visit Aegina as a day trip from Athens?", el: "Μπορώ να επισκεφτώ την Αίγινα ως ημερήσια εκδρομή από την Αθήνα;" },
+        a: { en: "Yes — it is the most popular day trip from Athens, and for good reason. The ferry takes one hour from Piraeus, the Temple of Aphaia is a short bus ride from the port, and a full day gives you time for the temple, a walk through Aegina Town, a seafood lunch in Perdika, and a swim at Agia Marina. However, staying overnight transforms the experience completely: the island empties of day-trippers after the last ferry, the waterfront settles into its evening rhythm, and you get the best of Aegina — the morning light on the temple, the empty beaches at sunset, the tavernas full of locals rather than cruise passengers.", el: "Ναι — είναι η πιο δημοφιλής ημερήσια εκδρομή από την Αθήνα. Το πλοίο διαρκεί μία ώρα. Ωστόσο, η διαμονή μεταμορφώνει εντελώς την εμπειρία." }
+      },
+      {
+        q: { en: "How many nights should I spend in Aegina?", el: "Πόσες νύχτες να μείνω στην Αίγινα;" },
+        a: { en: "One night is enough to experience the island after the day-trippers leave, but two nights is the ideal stay — a full day for the Temple of Aphaia, Aegina Town and the beaches, and another for a boat trip to Moni or a relaxed day in Perdika. Three nights allows for a genuinely slow pace.", el: "Μία νύχτα αρκεί, δύο είναι ιδανικές, τρεις για αργό ρυθμό." }
+      },
+      {
+        q: { en: "Do I need a car on Aegina?", el: "Χρειάζομαι αυτοκίνητο στην Αίγινα;" },
+        a: { en: "Not if you are staying in Aegina Town and plan to use taxis or buses for excursions. A car becomes useful if you are staying in Perdika, Souvala or Marathonas, where services are limited and taxis can be scarce in high season. The bus service connects Aegina Town, Agia Marina and Perdika reliably but is less frequent to Souvala and Marathonas.", el: "Όχι αν μένετε στην πόλη. Χρήσιμο αν μένετε σε Πέρδικα, Σουβάλα ή Μαραθώνα." }
+      },
+      {
+        q: { en: "Which area is best for families with children?", el: "Ποια περιοχή είναι καλύτερη για οικογένειες με παιδιά;" },
+        a: { en: "Agia Marina is the best choice for families — the beach is sandy, the water is shallow and safe, and the resort is compact and walkable. Marathonas is a good alternative for families who want more space and a quieter setting, though you will need a car for supplies and dinner variety.", el: "Η Αγία Μαρίνα είναι η καλύτερη επιλογή για οικογένειες. Ο Μαραθώνας είναι καλή εναλλακτική." }
+      },
+      {
+        q: { en: "Is Aegina expensive compared to other Greek islands?", el: "Είναι ακριβή η Αίγινα σε σύγκριση με άλλα ελληνικά νησιά;" },
+        a: { en: "No — Aegina is significantly more affordable than the Cycladic islands (Santorini, Mykonos, Paros, Naxos) and broadly comparable to the less touristy parts of the Peloponnese. Aegina Town and Souvala offer good value; Agia Marina and Perdika are mid-range; no area on Aegina commands premium prices.", el: "Όχι — είναι σημαντικά πιο προσιτή από τις Κυκλάδες. Πόλη και Σουβάλα έχουν καλή σχέση ποιότητας-τιμής." }
+      },
+      {
+        q: { en: "When is the best time to visit Aegina?", el: "Πότε είναι η καλύτερη εποχή για την Αίγινα;" },
+        a: { en: "Aegina works well from April through October, with the best balance in May, June and September. July and August are hot and busy but not overwhelming — the island absorbs crowds more comfortably than the popular Cyclades because of its size and the fact that most visitors are day-trippers. The pistachio harvest in late August and early September is a particularly lovely time to visit.", el: "Απρίλιος έως Οκτώβριος. Ιδανικά Μάιος, Ιούνιος και Σεπτέμβριος. Η συγκομιδή φιστικιού στα τέλη Αυγούστου είναι υπέροχη περίοδος." }
+      }
+    ],
+    seo: {
+      title: {
+        en: "Where to Stay in Aegina | Best Areas & Hotels Guide | GoGreeceNow",
+        el: "Πού να Μείνετε στην Αίγινα | Καλύτερες Περιοχές & Ξενοδοχεία | GoGreeceNow"
+      },
+      description: {
+        en: "Find the best places to stay in Aegina — from the neoclassical port town to Perdika fishing village, family-friendly Agia Marina beach resort, quiet Souvala thermal springs, and peaceful Marathonas bay. Complete Aegina hotel guide.",
+        el: "Βρείτε τα καλύτερα μέρη για διαμονή στην Αίγινα — από τη νεοκλασική πόλη έως την Πέρδικα, την Αγία Μαρίνα, τη Σουβάλα και τον Μαραθώνα. Πλήρης οδηγός διαμονής."
+      }
+    }
+  },
 ];

@@ -227,6 +227,49 @@ export const destinations: Destination[] = [
     }
   },
   {
+    slug: "aegina",
+    name: "Aegina",
+    region: { en: "Attica", el: "Αττική & Αργοσαρωνικός" },
+    blurb: {
+      en: "The island that Athens keeps for itself — 40 minutes from Piraeus, with one of Greece's finest Doric temples, a neoclassical harbour town, and the best pistachios in the country.",
+      el: "Το νησί που κρατά η Αθήνα για τον εαυτό της — 40 λεπτά από τον Πειραιά, με έναν από τους ωραιότερους δωρικούς ναούς, μια νεοκλασική πόλη-λιμάνι και τα καλύτερα φιστίκια της χώρας."
+    },
+    image: "/images/aegina.webp",
+    overview: {
+      en: "Aegina is the island that proves you do not need a long-haul flight, an overnight ferry, or a week-long itinerary to find something genuinely extraordinary in Greece. It is 40 minutes from Piraeus on a hydrofoil, and it contains one of the best-preserved Doric temples in the entire Greek world, a harbour town with more architectural character than most island capitals ten times its size, a fishing village that still functions as a fishing village, and the finest pistachios produced anywhere in the country.\n\nIt is also, by a comfortable margin, the most visited island in the Saronic Gulf — which says something about its accessibility from Athens and everything about what it delivers once you arrive. Weekends bring Athenian families, couples, and day-trippers who fill the harbour front cafés and line the quay for the afternoon ferry back. But Aegina is large enough and characterful enough to absorb that traffic without losing its identity.\n\nGeographically, Aegina sits at the northern mouth of the Saronic Gulf, 27 km southwest of Piraeus. Its landscape is pine-covered hills rising to the summit of Mount Oros (531 m), with the agricultural plain around Aegina Town producing the pistachio trees that have defined the island's economy and identity for generations.",
+      el: "Η Αίγινα είναι το νησί που αποδεικνύει ότι δεν χρειάζεσαι μεγάλη πτήση, νυχτερινό πλοίο ή οδοιπορικό εβδομάδας για να βρεις κάτι πραγματικά εξαιρετικό στην Ελλάδα. Είναι 40 λεπτά από τον Πειραιά και περιέχει έναν από τους καλύτερα διατηρημένους δωρικούς ναούς, ένα λιμάνι με περισσότερο αρχιτεκτονικό χαρακτήρα από τις περισσότερες νησιωτικές πρωτεύουσες και τα καλύτερα φιστίκια της χώρας."
+    },
+    highlights: {
+      en: ["Temple of Aphaia", "Aegina Town Harbour", "Perdika Village", "Pistachios"],
+      el: ["Ναός Αφαίας", "Λιμάνι Αίγινας", "Πέρδικα", "Φιστίκια Αιγίνης"]
+    },
+    featured: true,
+    guideLinks: [
+      {
+        href: "/hotels/aegina",
+        label: { en: "Stays in Aegina", el: "Διαμονή στην Αίγινα" }
+      },
+      {
+        href: "/tours/all",
+        label: { en: "Tours & Experiences", el: "Εκδρομές & Εμπειρίες" }
+      },
+      {
+        href: "/collections/greece-food-and-drink",
+        label: { en: "Local Food Ideas", el: "Τοπική Γαστρονομία" }
+      }
+    ],
+    seo: {
+      title: {
+        en: "Aegina Travel Guide: Temple of Aphaia, Perdika & Things to Do in Aegina",
+        el: "Αίγινα: Οδηγός Ταξιδιού — Ναός Αφαίας, Πέρδικα & Αξιοθέατα"
+      },
+      description: {
+        en: "Complete travel guide to Aegina, the Saronic island 40 minutes from Athens. Discover the Temple of Aphaia, Perdika fishing village, pistachio farms, beaches, neoclassical Aegina Town, and practical tips for day trips and overnight stays.",
+        el: "Πλήρης ταξιδιωτικός οδηγός για την Αίγινα. Ανακαλύψτε τον Ναό της Αφαίας, την Πέρδικα, τις φιστικιές, τις παραλίες και τη νεοκλασική πόλη της Αίγινας."
+      }
+    }
+  },
+  {
     slug: "corfu",
     name: "Corfu",
     region: { en: "Ionian Islands", el: "Ιόνια Νησιά" },

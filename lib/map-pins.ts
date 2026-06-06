@@ -116,6 +116,13 @@ export const MAP_PINS: Pin[] = [
     tagline: { en: "Food & tradition", el: "Γαστρονομία & παράδοση" },
   },
   {
+    id: "aegina",
+    x: 44.7, y: 53.2,
+    href: "/destinations/aegina",
+    label: { en: "Aegina", el: "Αίγινα" },
+    tagline: { en: "Temple of Aphaia & pistachios", el: "Ναός Αφαίας & φιστίκια" },
+  },
+  {
     id: "athens",
     x: 46.7, y: 50.5,
     href: "/destinations/athens",

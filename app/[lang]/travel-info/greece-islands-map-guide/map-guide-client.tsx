@@ -120,6 +120,7 @@ export default function GreeceIslandsMapGuidePage() {
     { id: "crete", en: "Crete", el: "Κρήτη" },
     { id: "dodecanese", en: "Dodecanese", el: "Δωδεκάνησα" },
     { id: "sporades", en: "Sporades", el: "Σποράδες" },
+    { id: "peloponnese", en: "Peloponnese", el: "Πελοπόννησος" },
   ];
 
   const regions = [
@@ -377,6 +378,44 @@ export default function GreeceIslandsMapGuidePage() {
         { href: "/travel-info/best-time-to-visit-greece", en: "Best Time to Visit Greece", el: "Καλύτερη Εποχή για Ελλάδα" },
       ],
     },
+    {
+      id: "peloponnese",
+      number: "8",
+      color: "border-pink-400",
+      bg: "bg-pink-50",
+      badge: "bg-pink-100 text-pink-800",
+      title: { en: "Peloponnese", el: "Πελοπόννησος" },
+      tagline: {
+        en: "Best for history, road trips and mainland Greece",
+        el: "Καλύτερο για ιστορία, road trips και ηπειρωτική Ελλάδα",
+      },
+      body: {
+        en: "The Peloponnese is the large peninsula that forms southern mainland Greece, connected to the rest of the country by the Isthmus of Corinth. It is not an island group, but it deserves a place on this map because it offers one of the richest travel experiences in Greece — ancient sites that rival the most famous in the country, dramatic mountain landscapes, a long and varied coastline, and some of the best food and wine in Greece.\n\nMycenae, Epidaurus, Olympia and Mystras are among the most important archaeological sites in all of Greece. Nafplio is the most romantic town on the mainland. Monemvasia is a medieval fortress town carved into a sea rock. The Mani Peninsula offers wild, untouched beauty. And the beaches of the western coast stretch for kilometres with hardly a soul in sight. The Peloponnese rewards road trips, history lovers, and travelers who want to experience Greek culture beyond the islands. It works especially well as a self-drive destination and as an alternative to island hopping.",
+        el: "Η Πελοπόννησος είναι η μεγάλη χερσόνησος που σχηματίζει τη νότια ηπειρωτική Ελλάδα. Δεν είναι νησιωτικό σύμπλεγμα, αλλά αξίζει μια θέση σε αυτόν τον χάρτη γιατί προσφέρει μία από τις πιο πλούσιες ταξιδιωτικές εμπειρίες στην Ελλάδα — αρχαίους χώρους, δραματικά ορεινά τοπία, μεγάλη και ποικίλη ακτογραμμή και εξαιρετικό φαγητό και κρασί.\n\nΟι Μυκήνες, η Επίδαυρος, η Ολυμπία και ο Μυστράς είναι από τους σημαντικότερους αρχαιολογικούς χώρους. Το Ναύπλιο είναι η πιο ρομαντική πόλη της ηπειρωτικής Ελλάδας. Η Μονεμβασία είναι μεσαιωνική καστροπολιτεία. Η Μάνη προσφέρει άγρια ομορφιά. Η Πελοπόννησος ανταμείβει τους λάτρεις της ιστορίας, των road trips και της ελληνικής κουλτούρας πέρα από τα νησιά.",
+      },
+      bestFor: {
+        en: "History lovers, road trips, archaeology, winter travel, food and wine",
+        el: "Λάτρεις ιστορίας, road trips, αρχαιολογία, χειμερινό ταξίδι, φαγητό και κρασί",
+      },
+      topIslands: {
+        en: "Nafplio, Monemvasia, Kalamata, ancient Olympia, Mani Peninsula, Corinth Canal",
+        el: "Ναύπλιο, Μονεμβασία, Καλαμάτα, αρχαία Ολυμπία, Μάνη, Διώρυγα Κορίνθου",
+      },
+      style: {
+        en: "Historic, scenic, self-drive, culturally rich, year-round",
+        el: "Ιστορικό, γραφικό, road trip, πολιτισμικά πλούσιο, όλο τον χρόνο",
+      },
+      goodToKnow: {
+        en: "A car is strongly recommended for the Peloponnese — public transport connects the main towns but misses the best villages, beaches and archaeological sites.",
+        el: "Το αυτοκίνητο είναι απαραίτητο στην Πελοπόννησο — τα μέσα μαζικής μεταφοράς συνδέουν τις μεγάλες πόλεις αλλά χάνουν τα καλύτερα χωριά και τις παραλίες.",
+      },
+      links: [
+        { href: "/destinations/nafplio", en: "Nafplio guide", el: "Οδηγός Ναυπλίου" },
+        { href: "/destinations/monemvasia", en: "Monemvasia guide", el: "Οδηγός Μονεμβασίας" },
+        { href: "/travel-info/getting-around-greece", en: "Getting Around Greece", el: "Πώς να Μετακινηθείτε στην Ελλάδα" },
+        { href: "/travel-info/7-and-10-days-in-greece", en: "7 & 10 Days in Greece", el: "7 & 10 Ημέρες στην Ελλάδα" },
+      ],
+    },
   ];
 
   const relatedGuides = [
@@ -427,6 +466,16 @@ export default function GreeceIslandsMapGuidePage() {
       a: {
         en: "The North Aegean often feels more local, slower and less commercial than the most famous island routes, making it a good choice for return visitors.",
         el: "Το Βόρειο Αιγαίο έχει συχνά πιο τοπικό, πιο αργό και λιγότερο εμπορικό χαρακτήρα, ιδανικό για ταξιδιώτες που επιστρέφουν.",
+      },
+    },
+    {
+      q: {
+        en: "Is the Peloponnese worth visiting instead of the islands?",
+        el: "Αξίζει η Πελοπόννησος αντί για τα νησιά;",
+      },
+      a: {
+        en: "Yes — especially if you love history, road trips and Greek food. The Peloponnese offers some of the most important archaeological sites in Greece (Mycenae, Epidaurus, Olympia, Mystras), beautiful towns (Nafplio, Monemvasia), excellent wine regions and a coastline that rivals the islands. It works best as a self-drive destination and is an excellent choice for spring, autumn or winter travel when the islands are quieter.",
+        el: "Ναι — ειδικά αν αγαπάτε την ιστορία, τα road trips και το ελληνικό φαγητό. Η Πελοπόννησος προσφέρει μερικούς από τους σημαντικότερους αρχαιολογικούς χώρους, όμορφες πόλεις, εξαιρετικές οινοπαραγωγικές περιοχές και ακτογραμμή που ανταγωνίζεται τα νησιά.",
       },
     },
   ];

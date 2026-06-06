@@ -134,11 +134,11 @@ const regionOrder = [
   },
   {
     key: 'Attica',
-    label: { en: 'Attica', el: 'Αττική' },
+    label: { en: 'Attica & Argo-Saronic', el: 'Αττική & Αργοσαρωνικός' },
     emoji: '🏙️',
     description: {
-      en: 'Athens and the Attica coast — ancient wonders, urban culture and Riviera escapes.',
-      el: 'Αθήνα και αττική ακτή — αρχαία θαύματα, αστική κουλτούρα και αποδράσεις στη Ριβιέρα.',
+      en: 'Athens, the Attica coast and the Saronic islands — ancient wonders, urban culture, island escapes and Riviera coastline.',
+      el: 'Αθήνα, αττική ακτή και νησιά του Σαρωνικού — αρχαία θαύματα, αστική κουλτούρα, νησιωτικές αποδράσεις και ακτές της Ριβιέρας.',
     },
   },
   {

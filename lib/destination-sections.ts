@@ -9597,4 +9597,204 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       ]
     }
   ],
+  aegina: [
+    {
+      layout: "list",
+      title: { en: "Why Visit Aegina", el: "Γιατί να Επισκεφτείς την Αίγινα" },
+      text: {
+        en: "**1. It is 40 minutes from Athens — and it does not feel like it**\nNo other destination in Greece offers this particular combination: the proximity of a commuter suburb and the atmosphere of a proper island. You can leave central Athens at 08:30, step off a hydrofoil in Aegina Town harbour at 09:10, walk to the fish market, drink coffee by the waterfront, visit the Temple of Aphaia, and be back in time for dinner in Athens. Or you can stay overnight — in which case the island becomes a different place entirely.\n\n**2. The Temple of Aphaia is one of the most important ancient monuments in Greece — and almost no one queues for it**\nBuilt around 500 BC on a pine-forested hill above the eastern coast, the Temple of Aphaia is a Doric masterpiece that together with the Parthenon in Athens and the Temple of Hephaestus formed what Pausanias described as the \"perfect triangle\" of ancient Greek temples. It receives a fraction of the visitor numbers of the Parthenon. You will very likely have large sections of it entirely to yourself.\n\n**3. Aegina Town is one of the finest neoclassical harbour towns in Greece**\nThe town was rebuilt in the neoclassical style after Greek independence in the 1820s — Aegina was briefly the first capital of the independent Greek state, from 1826 to 1828 — and the architecture of that period gives the harbour front, the streets behind it, and the central squares a coherence and elegance that most Greek island towns do not have.\n\n**4. Perdika is the most charming small fishing harbour in the Saronic Gulf**\nLocated at the southwestern tip of the island, 9 km from Aegina Town, Perdika is a small village of roughly 500 people that clusters around a natural harbour full of fishing boats. From the quay you can take a small boat across to Moni islet — an uninhabited nature reserve with peacocks, deer, and water so clear it looks Photoshopped.\n\n**5. The pistachios are not a marketing claim — they are genuinely extraordinary**\nAegina pistachios (Fistikia Aeginis) hold a European Protected Designation of Origin and are considered the finest variety produced in Greece. The island's volcanic soil, warm dry climate, and a specific local cultivar called Aeginitis combine to produce a nut with a sweeter, more complex flavour than any other variety.\n\n**6. Aegina works beautifully in every season and for every type of traveller**\nThe island is open and alive year-round. Unlike the Cyclades or Dodecanese, Aegina never fully closes: the ferry runs daily, the harbour cafés stay open through winter, and the Temple of Aphaia is accessible regardless of season.",
+        el: "**1. Είναι 40 λεπτά από την Αθήνα — και δεν το νιώθεις**\nΚανένας άλλος προορισμός στην Ελλάδα δεν προσφέρει αυτόν τον συνδυασμό: την εγγύτητα ενός προαστίου και την ατμόσφαιρα ενός πραγματικού νησιού.\n\n**2. Ο Ναός της Αφαίας είναι ένα από τα σημαντικότερα αρχαία μνημεία — και σχεδόν κανείς δεν κάνει ουρά**\nΧτισμένος γύρω στο 500 π.Χ., ο δωρικός ναός είναι αριστούργημα και δέχεται ένα κλάσμα των επισκεπτών του Παρθενώνα.\n\n**3. Η πόλη της Αίγινας είναι από τα ωραιότερα νεοκλασικά λιμάνια**\nΗ Αίγινα ήταν για λίγο η πρώτη πρωτεύουσα του ανεξάρτητου ελληνικού κράτους (1826–1828).\n\n**4. Η Πέρδικα είναι το πιο γοητευτικό ψαρολίμανο στον Σαρωνικό**\nΜικρό χωριό 500 κατοίκων με φυσικό λιμάνι γεμάτο ψαροκάικα και βάρκα για τη Μονή.\n\n**5. Τα φιστίκια δεν είναι διαφημιστικό επιχείρημα — είναι πραγματικά εξαιρετικά**\nΠΟΠ, από το ηφαιστειακό έδαφος του νησιού.\n\n**6. Η Αίγινα λειτουργεί όμορφα κάθε εποχή**\nΤο νησί δεν κλείνει ποτέ εντελώς — το πλοίο τρέχει καθημερινά όλο τον χρόνο."
+      }
+    },
+    {
+      layout: "list",
+      title: { en: "Best Time to Visit Aegina", el: "Η Καλύτερη Εποχή για την Αίγινα" },
+      text: {
+        en: "**May & June — Best Overall**\nThe pistachio trees are in blossom, the sea is warm enough to swim from mid-May, and the island has not yet filled with weekend crowds. The light is clear, the hills are green, and the harbour mornings are as good as they get.\n\n**July & August — Best for Beach**\nThe sea is at its warmest and the beaches are fully organised. Aegina is at its busiest — particularly weekends — but the island handles summer well. Book accommodation on the island rather than day-tripping.\n\n**September & October — Hidden Gem**\nThe pistachio harvest happens in September. The sea remains warm until mid-October. The weekday island is almost entirely locals. October brings cooler evenings, golden light on the hills.\n\n**November – April — City Escape**\nAegina in winter is a proper island: fishing boats in the harbour, older men playing backgammon at the café, fewer tourists than locals. For Athenians wanting a weekend reset without a long journey, the winter ferry to Aegina is one of the simplest pleasures in the Saronic region.\n\n💡 Secret: For photographs of the Temple of Aphaia with no other visitors in the frame, go on a weekday morning in May, early June, or October. Arrive at 08:30 when the site opens. The morning light through the pine trees is exceptional.",
+        el: "**Μάιος & Ιούνιος — Καλύτερη Συνολικά**\nΟι φιστικιές ανθίζουν, η θάλασσα ζεσταίνεται από τα μέσα Μαΐου.\n\n**Ιούλιος & Αύγουστος — Καλύτερα για Παραλία**\nΗ θάλασσα στο πιο ζεστό της. Κλείστε διαμονή, μην έρθετε ημερήσια.\n\n**Σεπτέμβριος & Οκτώβριος — Κρυμμένο Διαμάντι**\nΣυγκομιδή φιστικιών τον Σεπτέμβριο. Η θάλασσα ζεστή μέχρι μέσα Οκτωβρίου.\n\n**Νοέμβριος – Απρίλιος — Απόδραση Πόλης**\nΗ Αίγινα τον χειμώνα είναι πραγματικό νησί: ψαροκάικα, τάβλι, λιγότεροι τουρίστες."
+      }
+    },
+    {
+      layout: "list",
+      title: { en: "How to Get to Aegina", el: "Πώς να Πάτε στην Αίγινα" },
+      text: {
+        en: "💡 Secret: If you are coming from central Athens, take the Metro to Piraeus (Line 1, green line, terminus station) and walk 10 minutes to the ferry terminal at Gate E8/E9. The whole journey from Syntagma Square to the Aegina Town quayside — Metro plus hydrofoil — takes under 60 minutes and costs under €15 total.\n\n**By hydrofoil (Flying Dolphin) — fastest option**\nThe hydrofoil service (Hellenic Seaways and Aegean Flying Dolphins) departs from Gate E8 at Piraeus and arrives in Aegina Town in approximately 35–40 minutes. Departures run multiple times daily from early morning to late evening. Book in advance on summer weekends.\n\n**By conventional ferry — most economical**\nThe conventional car ferry from Piraeus takes approximately 70 minutes and runs multiple times daily. It is slower but significantly cheaper, accepts vehicles, and has open deck space. The ferry also calls at Souvala port on Aegina's northeast coast.\n\n**Getting around the island**\nAegina Town has a central bus station from which routes serve Agia Marina (for the Temple of Aphaia), Perdika, Marathonas beach, and several villages. Taxis, scooters, and bicycles are available for hire at the port. The famous horse-drawn carriages (amaxes) operate as taxis in Aegina Town itself.\n\n**By car from Athens**\nYou can drive your car onto the conventional ferry from Piraeus. Note that Aegina Town's harbour front is partially pedestrianised, and parking in the town itself can be challenging at peak times. A scooter or bicycle covers it more easily than a car.",
+        el: "💡 Συμβουλή: Από το κέντρο της Αθήνας, πάρτε το Μετρό προς Πειραιά (Γραμμή 1) και περπατήστε 10 λεπτά μέχρι την πύλη Ε8/Ε9. Όλο το ταξίδι από την Πλατεία Συντάγματος διαρκεί λιγότερο από 60 λεπτά.\n\n**Με Flying Dolphin — ταχύτερη επιλογή**\n35–40 λεπτά από την Πύλη Ε8 του Πειραιά. Κλείστε θέση τα καλοκαιρινά Σαββατοκύριακα.\n\n**Με συμβατικό πλοίο — οικονομικότερο**\nΠερίπου 70 λεπτά. Δέχεται οχήματα.\n\n**Μετακινήσεις στο νησί**\nΛεωφορεία, ταξί, σκούτερ και ποδήλατα διαθέσιμα στο λιμάνι."
+      }
+    },
+    {
+      layout: "numbered",
+      title: { en: "Top Attractions in Aegina", el: "Κορυφαία Αξιοθέατα στην Αίγινα" },
+      items: [
+        {
+          title: { en: "Temple of Aphaia", el: "Ναός της Αφαίας" },
+          text: {
+            en: "Built around 500 BC on a dramatic hilltop surrounded by Aleppo pines in the eastern part of the island, the Temple of Aphaia is dedicated to a local deity associated with Artemis and represents one of the finest surviving examples of the Archaic-transitional Doric order. A standing colonnade of 24 columns with three side walls intact, in a setting of pine trees and island views that is among the most beautiful of any ancient site in Greece. The museum on-site is small but carefully arranged.\n\n💡 Secret: Arrive at 08:30 when the site opens. The morning light through the pine trees falls at an angle that disappears by 10:00. By 10:30 the tour groups from Athens arrive.",
+            el: "Χτισμένος γύρω στο 500 π.Χ. σε έναν δραματικό λόφο με πεύκα. Είναι ένα από τα ωραιότερα σωζόμενα παραδείγματα του αρχαϊκού δωρικού ρυθμού. Οι 24 κίονες στέκονται ακόμα.\n\n💡 Μυστικό: Φτάστε στις 08:30 όταν ανοίγει ο χώρος. Το πρωινό φως μέσα από τα πεύκα είναι εξαιρετικό."
+          }
+        },
+        {
+          title: { en: "Aegina Town Harbour & Neoclassical Town", el: "Λιμάνι & Νεοκλασική Πόλη" },
+          text: {
+            en: "The harbour front of Aegina Town is one of the most elegantly proportioned in the Saronic islands. The neoclassical customs house, the 19th-century mansions behind the waterfront, and the distinctive yellow-domed Church of Agios Nikolaos at the end of the pier create a visual composition that feels deliberately designed. The fish market operates every morning behind the harbour — one of the most authentic in the Attica region.\n\nAegina was the first capital of the modern Greek state (1826–1828), the first place in Greece to print a newspaper and to mint coins of the modern Greek state.\n\n💡 Secret: Walk the harbour front twice — once in the morning when the fishing boats are unloading and the fish market is at its best, and once after 21:00 when the restaurant tables take over the quayside and the ferries create a backdrop of movement and light.",
+            el: "Το λιμάνι της Αίγινας είναι από τα πιο κομψά στα νησιά του Σαρωνικού. Η ψαραγορά λειτουργεί κάθε πρωί. Η Αίγινα ήταν η πρώτη πρωτεύουσα του ελληνικού κράτους.\n\n💡 Μυστικό: Περπατήστε το λιμάνι δύο φορές — πρωί όταν ξεφορτώνουν τα ψαροκάικα και βράδυ μετά τις 21:00."
+          }
+        },
+        {
+          title: { en: "Perdika Village & Moni Islet", el: "Πέρδικα & Νησίδα Μονή" },
+          text: {
+            en: "The village of Perdika at the island's southern tip is what Aegina Town might have looked like forty years ago: a small harbour of fishing boats, a strip of taverna tables directly above the water, a general store, and a pace of life that does not adjust for visitor schedules. From Perdika's small quay, a five-minute water taxi crosses to Moni — an uninhabited nature reserve islet home to a herd of fallow deer, a colony of peacocks, and water of improbable turquoise clarity.\n\n💡 Secret: The water taxi to Moni is informal — a local fisherman with a small boat. Ask at the quayside. The best swimming on Moni is on the eastern side, reached by a short path from the landing point.",
+            el: "Η Πέρδικα είναι ένα μικρό ψαροχώρι με ταβέρνες πάνω στο νερό. Από την προβλήτα, μια πεντάλεπτη βαρκάδα πάει στη Μονή — ένα ακατοίκητο νησάκι με ελάφια και παγώνια.\n\n💡 Μυστικό: Το θαλάσσιο ταξί είναι άτυπο — ένας ψαράς με βάρκα. Ρωτήστε στην προβλήτα."
+          }
+        },
+        {
+          title: { en: "Monastery of Agios Nektarios & Palaiochora", el: "Μονή Αγίου Νεκταρίου & Παλαιοχώρα" },
+          text: {
+            en: "One of the most important Orthodox Christian pilgrimage sites in Greece, the Monastery of Agios Nektarios sits on a forested hillside roughly 6 km from Aegina Town. Nektarios of Aegina (1846–1920) was canonised in 1961 — one of the most recent saints recognised by the Greek Orthodox Church.\n\nAdjacent to the monastery, on the hilltop behind it, are the ruins of Palaiochora — the medieval capital of Aegina, abandoned in the 19th century. 28 surviving Byzantine churches scattered across the hilltop constitute one of the most unusual and atmospheric archaeological walks in the Saronic region.\n\n💡 Secret: The walk from the monastery to Palaiochora takes 20 minutes on a marked path. The best-preserved frescoes are in the Church of the Episkopi.",
+            el: "Το Μοναστήρι του Αγίου Νεκταρίου είναι από τα σημαντικότερα προσκυνήματα στην Ελλάδα. Δίπλα του βρίσκονται τα ερείπια της Παλαιοχώρας — της μεσαιωνικής πρωτεύουσας της Αίγινας. 28 βυζαντινές εκκλησίες σώζονται στον λόφο."
+          }
+        },
+        {
+          title: { en: "Aegina Archaeological Museum", el: "Αρχαιολογικό Μουσείο Αίγινας" },
+          text: {
+            en: "One of the oldest archaeological museums in Greece — established in 1829 and housed in a neoclassical building near the harbour. The collection includes pottery from the Early Bronze Age settlement at Kolonna, Mycenaean grave goods, and the surviving elements of the Temple of Aphaia pediment sculptures that were not acquired by Ludwig I of Bavaria in 1812. Small enough to cover in 45 minutes but provides essential context for the Temple of Aphaia.\n\n💡 Secret: Visit the museum before the Temple of Aphaia, not after — understanding the chronology makes the temple visit significantly richer.",
+            el: "Ένα από τα παλαιότερα αρχαιολογικά μουσεία στην Ελλάδα (1829). Η συλλογή περιλαμβάνει κεραμική από την Πρώιμη Εποχή του Χαλκού και μυκηναϊκά κτερίσματα.\n\n💡 Μυστικό: Επισκεφθείτε το μουσείο πριν τον Ναό της Αφαίας."
+          }
+        },
+        {
+          title: { en: "Column of Apollo & Ancient Aegina (Kolonna)", el: "Στήλη του Απόλλωνα & Αρχαία Αίγινα (Κολόνα)" },
+          text: {
+            en: "At the northern edge of Aegina Town, a single standing Doric column — all that remains of the Temple of Apollo (c. 480 BC) — rises from the archaeological site of Kolonna. The site represents over 4,000 years of continuous occupation, from the Early Bronze Age through the Classical period.\n\n💡 Secret: The column is best photographed in the late afternoon when the light comes from the west and catches the stone in warm contrast against the blue of the Saronic Gulf behind it.",
+            el: "Μία μοναδική δωρική στήλη — ό,τι απέμεινε από τον Ναό του Απόλλωνα — υψώνεται από τον αρχαιολογικό χώρο της Κολόνας.\n\n💡 Μυστικό: Η καλύτερη φωτογραφία το απόγευμα όταν το φως έρχεται από τη δύση."
+          }
+        },
+        {
+          title: { en: "Pistachio Farms & the Agricultural Plain", el: "Φιστικιές & ο Αγροτικός Κάμπος" },
+          text: {
+            en: "The flat plain behind Aegina Town is the heart of the island's pistachio production — roughly 25 square kilometres of orderly rows of Aeginitis pistachio trees, producing around 1,500 tonnes annually. The harvest takes place in September, when families spread large nets under the trees and shake the branches.\n\n💡 Secret: The pistachios sold at the port are predictable. For the best variety and prices, drive 3–4 km into the plain to the co-operative shops near Mesagros village, where you can buy directly from producers and taste before buying.",
+            el: "Ο κάμπος πίσω από την πόλη είναι η καρδιά της παραγωγής φιστικιού. Η συγκομιδή γίνεται τον Σεπτέμβριο.\n\n💡 Μυστικό: Για τα καλύτερα φιστίκια, οδηγήστε 3–4 χλμ. μέσα στον κάμπο στα συνεταιριστικά καταστήματα κοντά στο Μεσαγρό."
+          }
+        }
+      ]
+    },
+    {
+      layout: "grid",
+      title: { en: "Best Beaches in Aegina", el: "Οι Καλύτερες Παραλίες στην Αίγινα" },
+      items: [
+        {
+          title: { en: "Agia Marina", el: "Αγία Μαρίνα" },
+          text: {
+            en: "The island's most developed beach resort, 13 km east of Aegina Town on the coast below the Temple of Aphaia. A long sandy bay with sunbeds, beach bars, watersports, and a small village of tavernas behind it. Calm, shallow water good for children.",
+            el: "Η πιο ανεπτυγμένη παραλία του νησιού. Μακρύς αμμώδης κόλπος με ξαπλώστρες, beach bar και ήρεμα νερά."
+          }
+        },
+        {
+          title: { en: "Kolona Beach (Aegina Town)", el: "Παραλία Κολόνα (Αίγινα)" },
+          text: {
+            en: "The closest swimming to Aegina Town, immediately north of the harbour beside the Kolonna archaeological site. A narrow sandy strip with calm clear water. Ideal for a morning swim before the ferry or an evening dip after visiting the town.",
+            el: "Η κοντινότερη παραλία στην πόλη, δίπλα στον αρχαιολογικό χώρο της Κολόνας. Ιδανική για πρωινό μπάνιο πριν το πλοίο."
+          }
+        },
+        {
+          title: { en: "Marathonas", el: "Μαραθώνας" },
+          text: {
+            en: "4 km south of Aegina Town, a long sandy beach served by local bus. Calmer and more local-feeling than Agia Marina, with sunbed areas and several good tavernas behind it.",
+            el: "4 χλμ. νότια της πόλης. Πιο ήσυχη και τοπική από την Αγία Μαρίνα."
+          }
+        },
+        {
+          title: { en: "Perdika & Moni Coves", el: "Πέρδικα & Όρμοι Μονής" },
+          text: {
+            en: "The small beach at Perdika village is pebbly and calm. The real swimming is on Moni islet (5 minutes by water taxi) — crystal clear water, no facilities, and an almost complete absence of other people on weekdays outside July–August.",
+            el: "Το πραγματικό μπάνιο στη Μονή (5 λεπτά με θαλάσσιο ταξί) — κρυστάλλινα νερά, σχεδόν έρημη τις καθημερινές."
+          }
+        },
+        {
+          title: { en: "Souvala", el: "Σούβαλα" },
+          text: {
+            en: "A quiet bay on the north coast with a small port, some fishing boats, and a calm pebbly beach. A working village rather than a resort. The conventional ferry from Piraeus also calls here.",
+            el: "Ήσυχος κόλπος στη βόρεια ακτή. Εργαζόμενο χωριό, όχι θέρετρο."
+          }
+        },
+        {
+          title: { en: "Klima & Portes", el: "Κλήμα & Πόρτες" },
+          text: {
+            en: "Small coves on the southern coast accessible by scooter via rough roads. Minimal facilities. Exceptionally clear water and almost nonexistent crowds. If you have a scooter, the southern coast offers some of the quietest swimming on the island.",
+            el: "Μικροί όρμοι στη νότια ακτή. Ελάχιστες ανέσεις, εξαιρετικά καθαρά νερά."
+          }
+        }
+      ]
+    },
+    {
+      layout: "list",
+      title: { en: "What to Eat in Aegina", el: "Τι να Φας στην Αίγινα" },
+      text: {
+        en: "💡 Food secret: The best fish tavernas in Aegina are not on the main harbour front of Aegina Town — they are in Perdika, 9 km away, where the tables touch the water and the octopus on the line above you was caught that morning.\n\n**Aegina Pistachios (Fistikia Aeginis)** — PDO since 1996. The Aeginitis cultivar produces a nut with a distinctively sweet, rich flavour. Buy from the farm co-operatives in the agricultural plain. They also come in ice cream, loukoumades, cake, and baklava.\n\n**Fresh Fish & Grilled Octopus** — The tavernas in Perdika are the best venue for grilled fish: simple preparations, good olive oil, lemon, and fish that was in the sea this morning.\n\n**Kakavia (Fishermen's Soup)** — A rustic stew of whatever small fish and shellfish the net brought in, cooked with onion, tomato, olive oil, and herbs. Found in the older tavernas in Aegina Town and Perdika.\n\n**Pistachio Ice Cream** — Several ice cream shops in Aegina Town make pistachio gelato from local nuts. The flavour is darker, richer, and less sweet than commercial pistachio ice cream.\n\n**Aegina Honey** — Thyme and pine honey from small apiaries on the slopes of Mount Oros. Dark amber, intensely aromatic.\n\n**What to take home:** Raw pistachios, roasted and salted pistachios, pistachio paste, pistachio-and-honey combinations, local honey, dried herbs. A small jar of Aegina pistachio butter makes an excellent gift.",
+        el: "💡 Μυστικό φαγητού: Οι καλύτερες ψαροταβέρνες είναι στην Πέρδικα, όχι στο λιμάνι της Αίγινας.\n\n**Φιστίκια Αιγίνης (Φιστίκια Αιγίνης ΠΟΠ)** — Αγοράστε από τα συνεταιριστικά καταστήματα στον κάμπο.\n\n**Φρέσκο Ψάρι & Χταπόδι** — Οι ταβέρνες στην Πέρδικα είναι η καλύτερη επιλογή.\n\n**Κακαβιά** — Παραδοσιακή ψαρόσουπα.\n\n**Παγωτό Φιστίκι** — Από ντόπια φιστίκια, πιο πλούσια γεύση.\n\n**Μέλι Αίγινας** — Θυμάρι και πεύκο από τον Όρος.\n\n**Τι να πάρετε μαζί σας:** Φιστίκια όλων των ειδών, μέλι, βότανα."
+      }
+    },
+    {
+      layout: "list",
+      title: { en: "Honest Advice — What to Skip in Aegina", el: "Ειλικρινής Συμβουλή — Τι να Αποφύγεις" },
+      text: {
+        en: "✕ **Coming on a Saturday afternoon in July or August without a return ticket booked** — The Sunday evening ferries back to Piraeus fill completely with Athenians returning from the weekend. Book the return trip at the same time as the outward journey, particularly for summer weekends.\n\n✕ **Eating at the first row of tavernas on the harbour front without checking prices** — Several are priced for day-trippers. The fish market neighbourhood behind the port has better tavernas at better prices. Perdika has the best seafood on the island.\n\n✕ **Visiting Palaiochora without time to slow down** — Allow at least 90 minutes to walk among the scattered churches, look for frescoes, and sit for a moment with a view over the island. Combine it with the Agios Nektarios monastery.\n\n✕ **Buying pistachios only from the port stalls** — The co-operative shops 3–4 km into the agricultural plain offer better variety, lower prices per kilo, and the possibility of tasting before buying.\n\n✕ **Treating Aegina as a day trip only** — The island that overnight guests experience is different: the evening quiet after the last day boat leaves, the Temple of Aphaia at dawn, and the morning fish market at full operation. One night changes the quality of the trip disproportionately.\n\n💡 What nobody tells you: Aegina was not only the first capital of the modern Greek state — it was where the first modern Greek coins were minted, where the first Greek newspaper was printed, and where Governor Kapodistrias established the first Greek school and the first orphanage.",
+        el: "✕ **Να έρθετε Σάββατο απόγευμα Ιούλιο ή Αύγουστο χωρίς εισιτήριο επιστροφής** — Τα κυριακάτικα βραδινά πλοία γεμίζουν. Κλείστε εισιτήριο επιστροφής μαζί με το μετάβασης.\n\n✕ **Φαγητό στην πρώτη σειρά ταβερνών του λιμανιού** — Αρκετές τιμολογούν για ημερήσιους επισκέπτες. Η γειτονιά της ψαραγοράς έχει καλύτερες επιλογές.\n\n✕ **Επίσκεψη Παλαιοχώρας χωρίς χρόνο** — Αφήστε τουλάχιστον 90 λεπτά.\n\n✕ **Αγορά φιστικιών μόνο από τα περίπτερα του λιμανιού** — Ο συνεταιρισμός 3–4 χλμ. μέσα στον κάμπο έχει καλύτερες τιμές.\n\n✕ **Να δείτε την Αίγινα μόνο ως ημερήσια εκδρομή** — Μία διανυκτέρευση αλλάζει δυσανάλογα την ποιότητα του ταξιδιού."
+      }
+    },
+    {
+      layout: "grid",
+      title: { en: "FAQ — Aegina Essentials", el: "Συχνές Ερωτήσεις" },
+      items: [
+        {
+          title: { en: "Is Aegina worth visiting as a day trip from Athens?", el: "Αξίζει η Αίγινα ως ημερήσια εκδρομή από Αθήνα;" },
+          text: {
+            en: "Yes — but it is a better trip if you stay overnight. As a day trip, you have time for the harbour, one or two sites, lunch, and a swim. Overnight, the island changes completely after the last day boats leave.",
+            el: "Ναι — αλλά καλύτερα με διανυκτέρευση. Το νησί αλλάζει τελείως όταν φύγουν τα τελευταία ημερήσια πλοία."
+          }
+        },
+        {
+          title: { en: "How long does the ferry from Piraeus take?", el: "Πόσο διαρκεί το πλοίο από Πειραιά;" },
+          text: {
+            en: "Hydrofoil: 35–40 minutes. Conventional ferry: approximately 70 minutes. Both from Gate E8/E9 at Piraeus. Multiple departures daily year-round.",
+            el: "Flying Dolphin: 35–40 λεπτά. Συμβατικό πλοίο: περίπου 70 λεπτά."
+          }
+        },
+        {
+          title: { en: "How many days do you need in Aegina?", el: "Πόσες μέρες χρειάζεστε στην Αίγινα;" },
+          text: {
+            en: "One overnight covers the main sites comfortably. Two nights allows a more relaxed pace. Three nights works well combined with Hydra and Poros.",
+            el: "Μία διανυκτέρευση καλύπτει τα βασικά. Δύο για πιο χαλαρό ρυθμό."
+          }
+        },
+        {
+          title: { en: "What is Aegina known for?", el: "Για τι είναι γνωστή η Αίγινα;" },
+          text: {
+            en: "The Temple of Aphaia, its PDO pistachios, its role as the first capital of the modern Greek state, Perdika village, and being the most accessible island day trip from Athens.",
+            el: "Τον Ναό της Αφαίας, τα φιστίκια ΠΟΠ, την πρώτη πρωτεύουσα του ελληνικού κράτους, την Πέρδικα."
+          }
+        },
+        {
+          title: { en: "Do you need a car in Aegina?", el: "Χρειάζεστε αυτοκίνητο στην Αίγινα;" },
+          text: {
+            en: "Not necessarily. The local bus covers the main areas. A scooter or bicycle rented at the port is the most flexible option for independent exploration.",
+            el: "Όχι απαραίτητα. Λεωφορείο, σκούτερ ή ποδήλατο καλύπτουν τις ανάγκες."
+          }
+        },
+        {
+          title: { en: "Can you visit Aegina year-round?", el: "Μπορείτε να επισκεφθείτε την Αίγινα όλο τον χρόνο;" },
+          text: {
+            en: "Yes — one of the very few Greek islands that functions properly year-round. The ferry runs daily. The town has cafés and restaurants open throughout winter.",
+            el: "Ναι — από τα λίγα νησιά που λειτουργούν κανονικά όλο τον χρόνο."
+          }
+        },
+        {
+          title: { en: "Best time to visit for the pistachio harvest?", el: "Καλύτερη εποχή για τη συγκομιδή φιστικιού;" },
+          text: {
+            en: "September. The harvest takes place from early to mid-September. Fresh-harvest pistachios have a flavour that the packaged version does not replicate.",
+            el: "Σεπτέμβριος. Τα φρέσκα φιστίκια έχουν γεύση που δεν αναπαράγει η συσκευασμένη έκδοση."
+          }
+        }
+      ]
+    }
+  ],
 };

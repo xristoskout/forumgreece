@@ -1,0 +1,18 @@
+{
+  "id": "aegina",
+  "slug": "aegina",
+  "name": "Aegina",
+  "type": "Island",
+  "region": { "en": "Saronic Islands — Attica", "el": "Νησιά Σαρωνικού — Αττική" },
+  "coordinates": { "lat": 37.7500, "lng": 23.4300 },
+  "scores": {
+    "family": { "value": 8, "reason": "Agia Marina beach, Temple of Aphaia, and easy ferry access." },
+    "couples": { "value": 8, "reason": "Romantic harbour, Perdika village, and quiet winter escapes." },
+    "luxury": { "value": 5, "reason": "Limited luxury accommodation; a day-trip and mid-range island." },
+    "budget": { "value": 9, "reason": "Affordable ferries, cheap eats, and reasonably priced hotels." },
+    "nightlife": { "value": 4, "reason": "Quiet evenings; this is not a party island." },
+    "food": { "value": 9, "reason": "Exceptional pistachios, fresh seafood, and kakavia soup." }
+  },
+  "quick_summary": "Aegina is the Saronic island 40 minutes from Athens — home to the Temple of Aphaia, neoclassical Aegina Town, Perdika fishing village, and the finest pistachios in Greece.",
+  "bestFor": ["history", "food_lovers", "couples", "families", "day_trips", "off_season"]
+}
