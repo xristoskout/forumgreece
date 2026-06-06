@@ -73,7 +73,7 @@ RULES:
 5. Budget labels: budget=low-cost, mid=middle-range, luxury=premium.
 6. CRITICAL: You MUST mention EVERY business from the KNOWLEDGE BASE in the itinerary. These are paid advertising partners. Include each business in the activities, mealSuggestions, transportation, accommodation, or tips section. Do NOT skip any. If there are many businesses, mention at least the first 5.
 7. Each destination in the KNOWLEDGE BASE now includes a "beaches" array (top beaches to visit) and an "attractions" array (top things to do). Use these to enrich each day's description and activities with specific beach names and attraction recommendations.
-8. The "accommodation" field MUST contain markdown links in the format [Hotel Name](/${lang}/hotels/[slug]). Never write hotel names as plain text in accommodation.
+8. The "accommodation" field MUST contain markdown links in the format [Hotel Name](/${lang}/hotels/[slug]). Never write hotel names as plain text in accommodation. For accommodation-type businesses from the KNOWLEDGE BASE (category: "Accommodation" or "Διαμονή"), use /${lang}/businesses/[slug], NOT /${lang}/hotels/[slug].
 
 KNOWLEDGE BASE:
 ${ctx}

@@ -162,8 +162,8 @@ export const destinations: Destination[] = [
     },
     image: "/images/lesvos.webp",
     overview: {
-      en: "Lesvos is a vast island of continental scale, featuring the famous Petrified forest, huge castles, rich wetlands for birdwatching, thermal springs, and an unbeatable foodie scene. Check out the top [Things to Do in Lesvos](/travel-info/things-to-do-in-lesvos) to plan your days.",
-      el: "Η Λέσβος είναι ένα νησί δομημένο σε ηπειρωτική κλίμακα, με όλο το έδαφός της αναγνωρισμένο ως UNESCO Global Geopark. Δείτε [Τι να Κάνετε στη Λέσβο](/travel-info/things-to-do-in-lesvos) για να γεμίσετε τις μέρες σας με αυθεντικές εμπειρίες.",
+      en: "Lesvos is a vast island of continental scale, featuring the famous Petrified forest, huge castles, rich wetlands for birdwatching, thermal springs, and an unbeatable foodie scene. Check out the top [Things to Do in Lesvos](/guides/lesvos/things-to-do) to plan your days.",
+      el: "Η Λέσβος είναι ένα νησί δομημένο σε ηπειρωτική κλίμακα, με όλο το έδαφός της αναγνωρισμένο ως UNESCO Global Geopark. Δείτε [Τι να Κάνετε στη Λέσβο](/el/guides/lesvos/things-to-do) για να γεμίσετε τις μέρες σας με αυθεντικές εμπειρίες.",
     },
     highlights: {
       en: ["Petrified forest", "Ouzo & local food", "Castles & villages"],
@@ -174,10 +174,6 @@ export const destinations: Destination[] = [
         href: "/hotels/lesvos",
         label: { en: "Where to Stay in Lesvos", el: "Πού να μείνεις στη Λέσβο" }
       },
-      {
-        href: "/travel-info/things-to-do-in-lesvos",
-        label: { en: "Things to Do in Lesvos", el: "Τι να Κάνεις στη Λέσβο" }
-      }
     ],
     featured: true,
     seo: {
