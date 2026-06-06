@@ -561,7 +561,7 @@ export default function TripPlannerClient({
                                   >
                                     {act.activity}
                                   </a>
-                                ) : act.activity}
+                                ) : linkify(act.activity, lang)}
                               </p>
                             </div>
                           </div>
