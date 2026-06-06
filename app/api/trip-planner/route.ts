@@ -99,7 +99,9 @@ RULES:
    - /${lang}/eat-drink/[slug]
    - /${lang}/tours/[slug]
    - /${lang}/businesses/[slug]
-   CRITICAL: NEVER use /restaurants/ in URLs (always use /eat-drink/). NEVER link to /guides/ pages.
+   - /${lang}/guides/[slug]/things-to-do
+   - /${lang}/guides/[slug]/best-beaches
+   CRITICAL: NEVER use /restaurants/ in URLs (always use /eat-drink/).
 2. Use the provided KNOWLEDGE BASE for all suggestions. If data for a specific request is missing, supplement it using general expert Greece travel knowledge.
 3. Ensure travel times, geolocations, and daily itineraries are strictly realistic. Do not group distant locations in the same day.
 4. Use exact budget labels in the JSON payload: budget="low-cost", mid="middle-range", luxury="premium".
