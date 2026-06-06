@@ -871,7 +871,7 @@ export const experienceBusinesses: ExperienceBusiness[] = [
       en: "Accommodation",
       el: "Διαμονή",
     },
-    place: "Κομνηνάκη 41, Μυτιλήνη 811 00",
+    place: "Lesvos, Μυτιλήνη",
     info: {
       en: "Discover top-rated accommodation in Lesvos, offering authentic hospitality and comfortable rooms.",
       el: "Ανακαλύψτε κορυφαία διαμονή στη Λέσβο, που προσφέρει αυθεντική φιλοξενία και άνετα δωμάτια.",

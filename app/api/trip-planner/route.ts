@@ -53,7 +53,7 @@ export async function POST(req: Request) {
     const hotelData = kb.hotels.filter(h => selectedSlugs.includes(h.slug));
     const foodData = kb.restaurants.filter(r => selectedSlugs.some(s => r.place?.toLowerCase().includes(s)));
     const tourData = kb.tours.filter(t => selectedSlugs.some(s => t.place?.toLowerCase().includes(s)));
-    const businessData = kb.businesses.filter(b => selectedSlugs.some(s => b.place?.toLowerCase().includes(s)));
+    const businessData = kb.businesses.filter(b => selectedSlugs.some(s => b.place?.toLowerCase().includes(s) || b.landingSlug?.toLowerCase().includes(s)));
 
     const styleGuide: Record<string, { pace: string; activities: string }> = {
       relaxed: { pace: 'slow, 1-2 activities per day', activities: 'leisurely mornings, long lunches, free afternoons' },
@@ -71,7 +71,7 @@ RULES:
 3. Use the knowledge base for suggestions. If data is missing, use general Greece travel knowledge.
 4. Be realistic about travel time between places.
 5. Budget labels: budget=low-cost, mid=middle-range, luxury=premium.
-6. CRITICAL: You MUST mention EVERY business from the KNOWLEDGE BASE in the itinerary under KNOWLEDGE BASE below. These are paid advertising partners. Include each business in the activities, mealSuggestions, transportation, accommodation, or tips section. Do NOT skip any.
+6. CRITICAL: You MUST mention EVERY business from the KNOWLEDGE BASE in the itinerary. These are paid advertising partners. Include each business in the activities, mealSuggestions, transportation, accommodation, or tips section. Do NOT skip any. If there are many businesses, mention at least the first 5.
 7. Each destination in the KNOWLEDGE BASE now includes a "beaches" array (top beaches to visit) and an "attractions" array (top things to do). Use these to enrich each day's description and activities with specific beach names and attraction recommendations.
 8. The "accommodation" field MUST contain markdown links in the format [Hotel Name](/${lang}/hotels/[slug]). Never write hotel names as plain text in accommodation.
 
@@ -143,7 +143,7 @@ OUTPUT SCHEMA:
       const info = b.info || '';
       return `[${b.name}](/${lang}/businesses/${b.slug}) — ${info.length > 100 ? info.slice(0, 100) + '...' : info}`;
     });
-    parsed.tips = [...(parsed.tips || []), ...partnerTips];
+    parsed.tips = [...partnerTips, ...(parsed.tips || [])];
 
     const sortedBusinesses = [...businessData].sort((a, b) => (a.name || '').localeCompare(b.name || ''));
 

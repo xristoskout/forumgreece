@@ -32,6 +32,7 @@ export type KnowledgeBaseItem = {
   category?: string;
   beaches?: string[];
   attractions?: string[];
+  landingSlug?: string;
 };
 
 export type KnowledgeBase = {
@@ -173,6 +174,7 @@ function mapFromTS(lang: Lang): KnowledgeBase {
       info: ((b as any).info as any)?.[lang] || ((b as any).info as any)?.en || '',
       category: ((b as any).category as any)?.[lang] || ((b as any).category as any)?.en || '',
       highlights: ((b as any).highlights as any)?.[lang] || ((b as any).highlights as any)?.en || [],
+      landingSlug: (b as any).landingSlug || '',
     })),
   };
 }
