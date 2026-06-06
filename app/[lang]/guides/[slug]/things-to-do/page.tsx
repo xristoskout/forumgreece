@@ -1,17 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import { destinations, SITE_URL, type Lang } from "../../../../../lib/content";
 import { destinationSections } from "../../../../../lib/destination-sections";
 import SiteHeader from "../../../../../components/site-header";
 
+export const dynamic = 'force-dynamic';
+
 type Props = {
   params: Promise<{ lang: string; slug: string }>;
 };
-
-export async function generateStaticParams() {
-  const slugs = destinations.map((d) => d.slug);
-  return ["en", "el"].flatMap((lang) => slugs.map((slug) => ({ lang, slug })));
-}
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang: rawLang, slug } = await params;
@@ -65,7 +63,7 @@ export default async function ThingsToDoPage({ params }: Props) {
   const { lang: rawLang, slug } = await params;
   const lang = (rawLang === "el" ? "el" : "en") as Lang;
   const dest = destinations.find((d) => d.slug === slug);
-  if (!dest) return null;
+  if (!dest) notFound();
 
   const sections = destinationSections[slug] || [];
   const thingsSection = findThingsSection(sections);
