@@ -1199,8 +1199,8 @@ export const destinations: Destination[] = [
     },
     guideLinks: [
       {
-        href: "/destinations/skopelos",
-        label: { en: "Skopelos Full Guide", el: "Πλήρης Οδηγός Σκόπελος" }
+        href: "/hotels/skopelos",
+        label: { en: "Where to Stay in Skopelos", el: "Πού να μείνεις στη Σκόπελο" }
       }
     ],
     seo: {
