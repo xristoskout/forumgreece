@@ -1315,4 +1315,5 @@ export const VIATOR_WIDGET_MAPPING: Record<string, string> = {
   "Delphi": "W-32985508-a65b-4c51-b0f7-da2d07cf791d",
   "Skiathos": "W-1ac32b71-951f-4218-a965-6665da31db36",
   "Thassos": "W-cc208ed2-04dc-4148-8504-5147f9936bdb",
+  "Skopelos": "W-cb4a55b0-4e48-4e6c-8114-33afcaa6d353",
 };

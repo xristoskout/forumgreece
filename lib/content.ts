@@ -26,6 +26,5 @@ export { travelInfoGuides } from "./travel-info-data";
 export { hotels } from "./hotels-data";
 export { food } from "./food-data";
 export { tours } from "./tours-data";
-export { tourExperiences } from "./tour-experiences";
 export { communities } from "./communities-data";
 export { blogPosts } from "./blog-data";
