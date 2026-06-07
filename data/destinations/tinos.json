@@ -1,0 +1,18 @@
+{
+  "id": "tinos",
+  "slug": "tinos",
+  "name": "Tinos",
+  "type": "Island",
+  "region": { "en": "Cyclades", "el": "Κυκλάδες" },
+  "coordinates": { "lat": 37.5300, "lng": 25.1500 },
+  "scores": {
+    "family": { "value": 7, "reason": "Porto beach and easy ferry access from Cyclades." },
+    "couples": { "value": 8, "reason": "Quiet villages, Pyrgos marble, and excellent food culture." },
+    "luxury": { "value": 5, "reason": "Limited luxury accommodation; boutique stays in Pyrgos and Tinos Town." },
+    "budget": { "value": 8, "reason": "Reasonable prices, good local food markets, family-run rooms." },
+    "nightlife": { "value": 3, "reason": "Quiet evenings and panigiria festivals; not a party island." },
+    "food": { "value": 10, "reason": "Best food in the Cyclades — artichokes, loukoumades, syglino, graviera." }
+  },
+  "quick_summary": "Tinos is the sacred island of the Cyclades — home to Panagia Evangelistria, Pyrgos marble village, Venetian dovecotes, Volax boulder landscape, and the finest food culture in the archipelago.",
+  "bestFor": ["culture", "food_lovers", "religious_travel", "couples", "off_season", "photography"]
+}

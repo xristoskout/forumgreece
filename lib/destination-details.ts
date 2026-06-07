@@ -1941,4 +1941,77 @@ export const destinationDetails: Record<string, DestinationDetail> = {
       }
     }
   },
+  tinos: {
+    overview: {
+      en: "Tinos sits at the heart of the Cyclades, visible from Mykonos to its east and from Syros to its west, yet it inhabits an entirely different world from either. It is the most spiritually significant island in Greece — the Church of Panagia Evangelistria holds the sacred icon of the Virgin Mary, and on the 15th of August every year, thousands of faithful pilgrims travel by sea from across the country to climb the long marble ramp from the port to the church on their knees. The island's religious identity is not a tourist performance; it is a living, breathing practice.\n\nBut Tinos is also, simultaneously, one of the most artistically rich destinations in the Aegean. The village of Pyrgos in the north has produced more marble sculptors than anywhere else in Greece — the craft school here trained many of the country's finest artists, and the tradition continues today in family workshops where you can watch marble being cut and shaped by hand. None of this has been packaged for mass tourism. Tinos has no international hotel chains, no beach clubs, and no self-conscious effort to be the next Mykonos. The food here is considered by serious food travellers to be the best in the Cyclades.",
+      el: "Η Τήνος βρίσκεται στην καρδιά των Κυκλάδων, ορατή από τη Μύκονο και τη Σύρο, αλλά κατοικεί σε έναν εντελώς διαφορετικό κόσμο. Είναι το πνευματικά σημαντικότερο νησί της Ελλάδας. Ταυτόχρονα, είναι ένας από τους πιο καλλιτεχνικά πλούσιους προορισμούς του Αιγαίου. Το φαγητό εδώ θεωρείται από τους λάτρεις της γαστρονομίας ως το καλύτερο στις Κυκλάδες."
+    },
+    pageIncludes: {
+      en: [
+        "Panagia Evangelistria & the Sacred Icon",
+        "Pyrgos — Marble Village & Museum of Marble Crafts",
+        "Volax Boulders & Interior Villages",
+        "Venetian Dovecotes & Xombourgo Fortress",
+        "Beaches — Kolymbithra, Porto, Agios Fokas",
+        "Food Culture — Artichokes, Loukoumades, Syglino",
+        "Village Exploration & Catholic-Orthodox Heritage",
+      ],
+      el: [
+        "Παναγία Ευαγγελίστρια & Ιερή Εικόνα",
+        "Πύργος — Μαρμάρινο Χωριό & Μουσείο Μαρμάρου",
+        "Βώλακας & Χωριά Εσωτερικού",
+        "Ενετικοί Περιστερώνες & Κάστρο Εξωμπούργκο",
+        "Παραλίες — Κολυμπήθρα, Πόρτο, Άγιος Φωκάς",
+        "Γαστρονομία — Αγκινάρες, Λουκουμάδες, Σύγλινο",
+        "Εξερεύνηση Χωριών & Καθολική-Ορθόδοξη Κληρονομιά",
+      ],
+    },
+    perfectFor: {
+      en: [
+        "Cultural & art enthusiasts",
+        "Pilgrimage and religious travel",
+        "Serious food travellers",
+        "Cyclades island hoppers",
+        "Village & interior explorers",
+        "Off-season & winter travel",
+        "Families with older children",
+        "Photographers & artists",
+        "Anyone tired of tourist-only islands",
+        "Architecture lovers",
+      ],
+      el: [
+        "Λάτρεις πολιτισμού και τέχνης",
+        "Θρησκευτικό προσκύνημα",
+        "Λάτρεις γαστρονομίας",
+        "Ταξιδιώτες Κυκλάδων",
+        "Εξερευνητές χωριών",
+        "Ταξίδια εκτός σεζόν",
+        "Οικογένειες με μεγαλύτερα παιδιά",
+        "Φωτογράφους & καλλιτέχνες",
+        "Όσους έχουν κουραστεί από τουριστικά νησιά",
+        "Λάτρεις αρχιτεκτονικής",
+      ],
+    },
+    honestAdvice: {
+      title: { en: "Honest Advice — What to Skip", el: "Ειλικρινής Συμβουλή — Τι να Αποφύγεις" },
+      alert: {
+        en: "What nobody tells you: Tinos is a twenty-minute ferry ride from Mykonos — and the contrast between the two islands is so absolute that first-time visitors sometimes wonder if they are in the same country. The same ferry route that delivers thousands of tourists to Mykonos's beach clubs deposits a fraction of that number in Tinos. The island is not undiscovered — Greeks have been coming here for religious and gastronomic pilgrimage for two centuries — but it has never been colonised by mass international tourism. The result is a destination that is, in 2026, still largely what the Cyclades were fifty years ago: honest, serious and deeply rewarding.",
+        el: "Αυτό που δε σου λέει κανείς: Η Τήνος είναι είκοσι λεπτά με το πλοίο από τη Μύκονο — και η αντίθεση είναι τόσο απόλυτη που οι επισκέπτες αναρωτιούνται αν είναι στην ίδια χώρα. Η Τήνος δεν είναι άγνωστη — οι Έλληνες έρχονται για θρησκευτικό και γαστρονομικό προσκύνημα εδώ και δύο αιώνες — αλλά δεν έχει αποικιστεί ποτέ από τον μαζικό τουρισμό."
+      },
+      items: {
+        en: [
+          "Expecting Tinos to perform for you — the island is not optimised for the tourist gaze. The pilgrimage culture, marble workshops, dovecotes and village food exist because Tinos has its own deep identity. Approach it as a guest, not as an audience.",
+          "Treating the Church of Panagia Evangelistria as only a photo opportunity — the atmosphere inside demands respectful attention. Visitors who walk through quickly for a selfie miss something genuinely moving.",
+          "Spending your entire time on the coast — the interior of Tinos is what makes it unlike anywhere else. Rent a car for at least one full day to explore the villages, dovecotes, Volax boulders and marble workshops.",
+          "Visiting Pyrgos without allocating real time — the Museum of Marble Crafts alone deserves 90 minutes. Add the Chalepas Museum, the cemetery, a walk through the lanes and lunch, and you have the best single day on the island.",
+        ],
+        el: [
+          "Να περιμένεις η Τήνος να διασκεδάσει εσένα — το νησί δεν είναι βιτρίνα. Προσέγγισέ το ως φιλοξενούμενος.",
+          "Να αντιμετωπίζεις την Παναγία Ευαγγελίστρια μόνο ως φωτογραφία — η ατμόσφαιρα μέσα απαιτεί σεβασμό.",
+          "Να μένεις μόνο στην ακτή — το εσωτερικό της Τήνου είναι μοναδικό. Νοίκιασε αυτοκίνητο για μία μέρα.",
+          "Να επισκέπτεσαι τον Πύργο βιαστικά — το Μουσείο Μαρμάρου αξίζει 90 λεπτά. Πρόσθεσε το Μουσείο Χαλεπά και φαγητό για την καλύτερη μέρα στο νησί.",
+        ]
+      }
+    }
+  },
 };
