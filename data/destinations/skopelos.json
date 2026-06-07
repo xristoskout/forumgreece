@@ -1,5 +1,60 @@
 {
-  "scores": { "beaches": 9, "food": 8, "vibe": 8, "culture": 8 },
-  "bestFor": ["Couples", "Nature", "Families", "Mamma Mia fans"],
-  "coords": { "lat": 39.12, "lng": 23.73 }
+  "id": "skopelos",
+  "slug": "skopelos",
+  "name": "Skopelos",
+  "type": "Island",
+  "region": { "en": "Sporades", "el": "Σποράδες" },
+  "coordinates": { "lat": 39.1200, "lng": 23.7300 },
+  "scores": {
+    "family": { "value": 8, "reason": "Calm beaches like Panormos and Stafylos are gentle for children." },
+    "couples": { "value": 9, "reason": "Romantic Chora atmosphere, secluded beaches, and quiet evenings." },
+    "luxury": { "value": 5, "reason": "Limited luxury hotels; mostly family-run guesthouses and studios." },
+    "budget": { "value": 8, "reason": "Affordable accommodation and inexpensive local tavernas." },
+    "nightlife": { "value": 3, "reason": "Quiet evenings with noise ordinance; not a party island." },
+    "food": { "value": 9, "reason": "Skopelos plum products, fresh fish, and excellent local tavernas." }
+  },
+  "quick_summary": "Skopelos is the greenest island of the Aegean — pine forests, a magnificent Chora, the Mamma Mia! chapel, and genuinely calm beaches.",
+  "bestFor": ["couples", "nature", "families", "food_lovers", "off_season", "photography"],
+  "content": {
+    "quick_summary": "Skopelos is the greenest island of the Aegean — pine forests, a magnificent Chora, the Mamma Mia! chapel, and genuinely calm beaches.",
+    "pros": [
+      "One of the finest Choras in the Aegean",
+      "Pine forests cover 80% of the island",
+      "Excellent local food culture",
+      "Genuine village atmosphere without mass tourism",
+      "Calm, family-friendly beaches"
+    ],
+    "cons": [
+      "No airport — requires ferry via Skiathos or Volos",
+      "Limited late-night nightlife",
+      "Accommodation books up early in peak season",
+      "Steps in the Chora can be challenging",
+      "Car or scooter needed for most beaches"
+    ],
+    "insider_tips": [
+      "Book July–August three to four months in advance",
+      "Visit Kastani Beach early morning to avoid Mamma Mia! crowds",
+      "The Chora's noise ordinance means genuine quiet after midnight",
+      "Direct booking with owners often reveals availability not on major platforms"
+    ],
+    "mistakes_to_avoid": [
+      "Driving into the upper Chora — park at the port and walk",
+      "Expecting Skiathos-level nightlife",
+      "Relying solely on the local bus for island exploration"
+    ]
+  },
+  "seasonality": {
+    "january": { "temp": 12, "price_multiplier": 0.5 },
+    "february": { "temp": 12, "price_multiplier": 0.5 },
+    "march": { "temp": 14, "price_multiplier": 0.6 },
+    "april": { "temp": 17, "price_multiplier": 0.7 },
+    "may": { "temp": 22, "price_multiplier": 0.9 },
+    "june": { "temp": 27, "price_multiplier": 1.1 },
+    "july": { "temp": 30, "price_multiplier": 1.4 },
+    "august": { "temp": 30, "price_multiplier": 1.5 },
+    "september": { "temp": 27, "price_multiplier": 1.2 },
+    "october": { "temp": 22, "price_multiplier": 0.8 },
+    "november": { "temp": 17, "price_multiplier": 0.6 },
+    "december": { "temp": 13, "price_multiplier": 0.5 }
+  }
 }
