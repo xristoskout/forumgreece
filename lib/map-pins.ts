@@ -200,6 +200,13 @@ export const MAP_PINS: Pin[] = [
     tagline: { en: "Pine forests & turquoise waters", el: "Πεύκα & τιρκουάζ νερά" },
   },
   {
+    id: "skopelos",
+    x: 46.7, y: 37.2,
+    href: "/destinations/skopelos",
+    label: { en: "Skopelos", el: "Σκόπελος" },
+    tagline: { en: "The greenest island", el: "Το πιο πράσινο νησί" },
+  },
+  {
     id: "thassos",
     x: 55.1, y: 19.2,
     href: "/destinations/thassos",
@@ -271,7 +278,7 @@ export const MAP_PINS: Pin[] = [
   },
   {
     id: "tinos",
-    x: 58.7, y: 54.2,
+    x: 59.8, y: 54.5,
     href: "/destinations/tinos",
     label: { en: "Tinos", el: "Τήνος" },
     tagline: { en: "Sacred island & marble capital", el: "Ιερό νησί & πρωτεύουσα μαρμάρου" },
