@@ -10063,10 +10063,6 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       title: { en: "FAQ — Tinos Essentials", el: "Συχνές Ερωτήσεις" },
       items: [
         {
-          title: { en: "Is Tinos worth visiting if I have been to Mykonos or Santorini?", el: "Αξίζει η Τήνος αν έχω πάει σε Μύκονο ή Σαντορίνη;" },
-          text: { en: "Absolutely — and it is a fundamentally different experience. While Mykonos and Santorini are defined by beach clubs and caldera sunsets, Tinos offers depth: religious and cultural significance, marble craftsmanship, extraordinary interior landscape, the finest local food in the archipelago. Tinos is not a replacement but an essential counterpoint.", el: "Απολύτως — είναι μια θεμελιωδώς διαφορετική εμπειρία. Η Τήνος προσφέρει βάθος: θρησκευτική και πολιτιστική σημασία, μαρμαροτεχνία, εξαιρετική γαστρονομία." }
-        },
-        {
           title: { en: "How do I get from Tinos to Mykonos or Delos?", el: "Πώς πάω από Τήνο σε Μύκονο ή Δήλο;" },
           text: { en: "High-speed ferries connect Tinos to Mykonos in approximately 25 minutes. From Mykonos, excursion boats run to Delos daily. Tinos is an excellent base for a Delos day trip combined with a Mykonos evening.", el: "Ταχύπλοα συνδέουν Τήνο-Μύκονο σε 25 λεπτά. Η Τήνος είναι εξαιρετική βάση για Δήλο." }
         },
@@ -10089,6 +10085,273 @@ export const destinationSections: Record<string, DestinationSection[]> = {
         {
           title: { en: "How many days do I need in Tinos?", el: "Πόσες μέρες χρειάζομαι στην Τήνο;" },
           text: { en: "Three days is the minimum for the church, Pyrgos, Volax and a beach. Five days allows you to explore the interior villages, visit the north coast, eat well and slow down. Tinos rewards extended stays more than almost any other Cycladic island.", el: "Τρεις μέρες ελάχιστα, πέντε για να εξερευνήσετε σωστά. Η Τήνος ανταμείβει τις μεγαλύτερες διαμονές." }
+        }
+      ]
+    }
+  ],
+  hydra: [
+    {
+      title: {
+        en: "Why visit Hydra",
+        el: "Γιατί να επισκεφθείς την Ύδρα",
+      },
+      layout: "numbered",
+      items: [
+        {
+          title: {
+            en: "The only car-free island in the Aegean — and what that actually feels like",
+            el: "Το μόνο νησί χωρίς αυτοκίνητα στο Αιγαίο — και πώς είναι στην πραγματικότητα",
+          },
+          text: {
+            en: "The absence of cars is not a quirky tourism gimmick. It is a physical transformation of what a place feels and sounds like. On Hydra, the ambient noise of the port is the clip of donkey hooves on stone, the slap of water against the hulls of boats, and conversation. There is no traffic light anywhere on the island, no petrol station, no car park. The effect is cumulative and takes about an hour to feel properly: a particular kind of ease that has no equivalent elsewhere in Greece. The island's silence — especially in the upper lanes after dark — is the most complete available within 90 minutes of Athens.",
+            el: "Η απουσία αυτοκινήτων δεν είναι τουριστικό τρικ. Είναι μια φυσική μεταμόρφωση του πώς αισθάνεται και ακούγεται ένα μέρος. Στην Ύδρα, ο θόρυβος του λιμανιού είναι ο ήχος από τα πέταλα των γαϊδουριών στην πέτρα, το νερό στις βάρκες και η ανθρώπινη συνομιλία. Δεν υπάρχει φανάρι, βενζινάδικο ή πάρκινγκ. Το αποτέλεσμα είναι μια ιδιαίτερη ευκολία που δεν έχει αντίστοιχο στην Ελλάδα. Η σιωπή του νησιού — ειδικά στα πάνω σοκάκια μετά το σκοτάδι — είναι η πιο πλήρης που μπορείς να βρεις σε 90 λεπτά από την Αθήνα.",
+          },
+        },
+        {
+          title: {
+            en: "18th-century stone architecture preserved without compromise",
+            el: "Πέτρινη αρχιτεκτονική του 18ου αιώνα διατηρημένη χωρίς συμβιβασμούς",
+          },
+          text: {
+            en: "During Hydra's maritime golden age — roughly 1750 to 1820 — the island's merchant fleet numbered over 150 ships and its captains built mansions in proportion to their wealth. The Lazaros Kountouriotis Mansion, the Tombazis Mansion, the Voulgaris Mansion — these are not restored heritage sites but lived-in, functioning buildings whose facades have changed almost nothing in 250 years. The island's entire architectural fabric is protected by law: no new buildings can be constructed, no facades altered. Walking the lanes above the port is the closest thing in Greece to a functioning time machine for the 18th century.",
+            el: "Κατά τη ναυτική χρυσή εποχή της Ύδρας — περίπου 1750 έως 1820 — ο εμπορικός στόλος του νησιού αριθμούσε πάνω από 150 πλοία και οι καπετάνιοι έχτιζαν αρχοντικά ανάλογα με τον πλούτο τους. Το Αρχοντικό Λάζαρου Κουντουριώτη, το Αρχοντικό Τομπάζη, το Αρχοντικό Βούλγαρη — δεν είναι απλώς αναστηλωμένα μνημεία, αλλά κατοικημένα κτίρια των οποίων οι προσόψεις δεν έχουν αλλάξει σχεδόν καθόλου εδώ και 250 χρόνια. Το αρχιτεκτονικό ύφος του νησιού προστατεύεται από τον νόμο.",
+          },
+        },
+        {
+          title: {
+            en: "A genuine international art scene, not a curated tourist version of one",
+            el: "Μια αυθεντική διεθνής καλλιτεχνική σκηνή",
+          },
+          text: {
+            en: "The Hydra Workshop, founded by painter Nikos Hadjikyriakos-Ghikas, established the island as an art colony in the mid-20th century. The Deste Foundation's Slaughterhouse — a converted 19th-century abattoir on the waterfront that hosts some of the finest contemporary art exhibitions in the Mediterranean — continues that tradition today. Beyond the institutions, a walk through Hydra's lanes passes a density of working artists' studios, independent galleries and private exhibition spaces that is extraordinary for an island of 2,000 permanent residents. This is not art-for-tourists. It is a functioning creative community.",
+            el: "Το Εργαστήριο της Ύδρας, που ιδρύθηκε από τον ζωγράφο Νίκο Χατζηκυριάκο-Γκίκα, καθιέρωσε το νησί ως καλλιτεχνική αποικία στα μέσα του 20ού αιώνα. Το Σφαγείο του Ιδρύματος ΔΕΣΤΕ — ένας μετασκευασμένος σφαγείο του 19ου αιώνα στην προκυμαία — συνεχίζει αυτή την παράδοση σήμερα, φιλοξενώντας κορυφαίες εκθέσεις σύγχρονης τέχνης. Πέρα από τους θεσμούς, μια βόλτα στα σοκάκια της Ύδρας περνά από πυκνότητα εργαστηρίων καλλιτεχνών, γκαλερί και ιδιωτικών εκθεσιακών χώρων, κάτι εξαιρετικό για ένα νησί 2.000 μόνιμων κατοίκων.",
+          },
+        },
+        {
+          title: {
+            en: "Leonard Cohen's island — and why it still matters",
+            el: "Το νησί του Leonard Cohen — και γιατί έχει ακόμα σημασία",
+          },
+          text: {
+            en: "In 1960, Leonard Cohen was a broke Canadian poet who bought a house on Hydra for $1,500, moved in with his Norwegian muse Marianne Ihlen, and wrote his first novel and some of his earliest songs sitting on the terrace. The island gave him the silence and the light and the community of fellow writers and painters that produced some of the most enduring creative work of the century. His house on Kountouriotou Street can be seen from the lane (it is privately owned and not open to visitors), and the island's connection to his memory remains genuine and unforced — a quality Hydra has always had, of making artists feel that the work is possible here in a way it is not elsewhere.",
+            el: "Το 1960, ο Leonard Cohen ήταν ένας άφραγκος Καναδός ποιητής που αγόρασε σπίτι στην Ύδρα για 1.500 δολάρια, μετακόμισε με τη Νορβηγίδα μούσα του Marianne Ihlen και έγραψε το πρώτο του μυθιστόρημα και μερικά από τα πρώτα του τραγούδια καθισμένος στη βεράντα. Το νησί του έδωσε τη σιωπή, το φως και την κοινότητα των συγγραφέων και ζωγράφων που παρήγαγαν μερικά από τα πιο ανθεκτικά δημιουργικά έργα του αιώνα. Το σπίτι του στην οδό Κουντουριώτου είναι ορατό από τον δρόμο, και η σύνδεση του νησιού με τη μνήμη του παραμένει αυθεντική.",
+          },
+        },
+        {
+          title: {
+            en: "Proximity to Athens — the best same-week combination in Greece",
+            el: "Εγγύτητα στην Αθήνα — ο καλύτερος συνδυασμός στην Ελλάδα",
+          },
+          text: {
+            en: "Ninety minutes from Piraeus on the Flying Dolphin. No other island of Hydra's quality and character is this close to the Greek capital. For travelers spending time in Athens — or using Athens as a transit hub — Hydra offers a two-to-three day complete contrast: the noise and energy of the city replaced immediately by stone and silence, the urban anonymity replaced by a community where the baker knows which house you are staying in. The Athens–Hydra combination is the most rewarding short pairing in the Greek island network.",
+            el: "Ενενήντα λεπτά από τον Πειραιά με το Flying Dolphin. Κανένα άλλο νησί της ποιότητας και του χαρακτήρα της Ύδρας δεν είναι τόσο κοντά στην ελληνική πρωτεύουσα. Για τους ταξιδιώτες που περνούν χρόνο στην Αθήνα — ή χρησιμοποιούν την Αθήνα ως κόμβο μετακίνησης — η Ύδρα προσφέρει μια πλήρη αντίθεση δύο-τριών ημερών: ο θόρυβος και η ενέργεια της πόλης αντικαθίστανται αμέσως από πέτρα και σιωπή, η αστική ανωνυμία αντικαθίσταται από μια κοινότητα όπου ο φούρναρης ξέρει σε ποιο σπίτι μένεις.",
+          },
+        },
+        {
+          title: {
+            en: "A landscape for walking that most visitors never discover",
+            el: "Ένα τοπίο για περπάτημα που οι περισσότεροι επισκέπτες δεν ανακαλύπτουν ποτέ",
+          },
+          text: {
+            en: "The interior of Hydra is a network of mule paths through wild thyme, cistus and pine that connects a series of monasteries, hilltop hermitages and abandoned settlements. The path to Profitis Ilias monastery at the island's highest point takes about two hours from the port and rewards with a panorama of the Saronic Gulf that takes in the Peloponnese coast, the outline of Spetses, and on clear days the mountains above Corinth. Most Hydra visitors spend their entire stay in the port town and never discover that the island extends for another 50 square kilometres of trail beyond it.",
+            el: "Το εσωτερικό της Ύδρας είναι ένα δίκτυο μονοπατιών μέσα από άγριο θυμάρι, κίστο και πεύκα, που συνδέει μοναστήρια, ασκηταριά στις κορυφές των λόφων και εγκαταλελειμμένους οικισμούς. Το μονοπάτι για τη μονή Προφήτη Ηλία στο ψηλότερο σημείο του νησιού χρειάζεται περίπου δύο ώρες από το λιμάνι και ανταμείβει με ένα πανόραμα του Σαρωνικού που φτάνει μέχρι τις ακτές της Πελοποννήσου.",
+          },
+        },
+      ],
+    },
+    {
+      layout: "list",
+      title: { en: "Best time to visit", el: "Καλύτερη εποχή για την Ύδρα" },
+      alert: {
+        en: "Secret: The best time of day on Hydra is 07:00–09:00, when the light hits the stone mansions at a low angle, the port is still, and the first donkey of the morning carries supplies down to the harbour. This hour is accessible only to overnight guests.",
+        el: "Μυστικό: Η καλύτερη ώρα στην Ύδρα είναι 07:00–09:00, όταν το φως πέφτει στα πέτρινα αρχοντικά, το λιμάνι είναι ήσυχο και ο πρώτος γάιδαρος του πρωινού κατεβαίνει στο λιμάνι.",
+      },
+      items: [
+        {
+          title: { en: "April – June", el: "Απρίλιος – Ιούνιος" },
+          text: {
+            en: "The best balance of weather, crowds, and value. Spring wildflowers carpet the hillsides. The sea is warm enough for swimming from late May. Fewer day-trippers, easier water-taxi availability, and accommodation prices significantly below summer peak. The hiking is at its best — the slopes are green and the heat is manageable.",
+            el: "Η καλύτερη ισορροπία καιρού, κόσμου και τιμών. Άγρια λουλούδια καλύπτουν τους λόφους. Λιγότεροι εκδρομείς, διαθεσιμότητα θαλάσσιων ταξί και τιμές σημαντικά χαμηλότερες. Η πεζοπορία είναι στα καλύτερά της.",
+          },
+        },
+        {
+          title: { en: "July – August", el: "Ιούλιος – Αύγουστος" },
+          text: {
+            en: "Peak season. The port is at its busiest, hydrofoils arrive packed, and the waterfront restaurants are full. The famous Hydra silence recedes to the early morning and late night. If you visit now, book accommodation well in advance, plan water taxis ahead, and accept that some of the island's particular quality is temporarily suspended. The compensation: perfect swimming weather, evening social energy, and the full range of restaurants and water taxis operating.",
+            el: "Υψηλή σεζόν. Το λιμάνι είναι στο πιο πολυσύχναστο. Κάντε κράτηση διαμονής νωρίς. Η αποζημίωση: τέλειος καιρός για μπάνιο και όλες οι επιλογές εστίασης διαθέσιμες.",
+          },
+        },
+        {
+          title: { en: "September – October", el: "Σεπτέμβριος – Οκτώβριος" },
+          text: {
+            en: "Many experienced Hydra visitors consider this the ideal window. The sea is at its warmest (warmer than June). The day-trip crowds diminish after the first week of September. The light softens, the evenings are long, and the island exhales. Accommodation prices drop. The silence returns.",
+            el: "Πολλοί έμπειροι επισκέπτες θεωρούν αυτή την ιδανική περίοδο. Η θάλασσα είναι πιο ζεστή. Τα πλήθη μειώνονται. Το φως μαλακώνει. Η σιωπή επιστρέφει.",
+          },
+        },
+        {
+          title: { en: "November – March", el: "Νοέμβριος – Μάρτιος" },
+          text: {
+            en: "Hydra in winter is an entirely different island. The permanent population of 2,000 reclaims the port. The hydrofoil runs daily but the island is genuinely quiet. Several tavernas and hotels close. The experience is raw, atmospheric, and memorable — the stone architecture in grey winter light, the wet cobblestones, the cafés where locals outnumber visitors. Not for everyone, but unforgettable for those who choose it.",
+            el: "Η Ύδρα τον χειμώνα είναι εντελώς διαφορετικό νησί. Οι 2.000 μόνιμοι κάτοικοι ξαναπαίρνουν το λιμάνι. Η ατμόσφαιρα είναι ωμή και αξέχαστη — η πέτρινη αρχιτεκτονική στο γκρίζο χειμωνιάτικο φως, τα βρεγμένα λιθόστρωτα, οι κάτοικοι περισσότεροι από τους επισκέπτες.",
+          },
+        },
+      ],
+    },
+    {
+      layout: "list",
+      title: { en: "How to get there", el: "Πώς να πάτε στην Ύδρα" },
+      text: {
+        en: "💡 Transport tip: Hydra has no airport and no vehicle access — not even bicycle access. The only way in is by sea. The standard approach for most visitors is the Flying Dolphin hydrofoil from Piraeus, which is fast, reliable and scenic. Book tickets in advance for summer weekends; the Piraeus–Hydra route is heavily used by Athenians escaping to the island on Friday evenings and returning Sunday. The best seat on the Flying Dolphin is on the left side (port side) — the approach to Hydra harbour is one of the great arrivals in Greek island travel.\n\n**From Athens (Piraeus) by hydrofoil — the standard option**\nFlying Dolphins (Hellenic Seaways) depart from Gate E8 at Piraeus port. The journey takes approximately 90 minutes. Departures run year-round, with increased frequency in summer. Book tickets in advance for July–August weekends. The service calls at Poros en route on some sailings.\n\n**From the Peloponnese — for drivers**\nDrive to the port of Ermioni (2 hours from Athens) or Porto Heli, from which water taxis connect directly to Hydra in 15–20 minutes. This is the option for anyone who wants to combine Hydra with a Peloponnese road trip.\n\n**From Spetses and Poros — island hopping**\nHydra is connected by regular hydrofoil to Spetses (20 minutes) and Poros (30 minutes), making it part of the classic Saronic Islands triangle. A multi-day loop of Hydra–Spetses–Poros is one of the best short itineraries in Greece.\n\n**Getting around Hydra**\nYou walk. This is not a limitation — it is the point. Donkeys and mules carry luggage between the port and the hillside hotels and houses. Water taxis (small boats) connect Hydra Town with Kamini, Vlyhos, Mandraki, the remote beaches, and — for the adventurous — with restaurants on the far side of the island. Negotiate the fare before boarding.",
+        el: "💡 Συμβουλή: Η Ύδρα δεν έχει αεροδρόμιο και πρόσβαση οχημάτων. Ο μόνος τρόπος είναι η θάλασσα. Το Flying Dolphin από Πειραιά είναι η στάνταρ επιλογή.\n\n**Από Πειραιά με Flying Dolphin**\n90 λεπτά από την Πύλη Ε8. Περισσότερα δρομολόγια το καλοκαίρι. Κλείστε εισιτήριο νωρίς για Ιούλιο-Αύγουστο.\n\n**Από την Πελοπόννησο — για οδηγούς**\nΟδηγήστε μέχρι Ερμιόνη ή Πόρτο Χέλι και πάρτε θαλάσσιο ταξί (15-20 λεπτά).\n\n**Από Σπέτσες και Πόρο**\n20 λεπτά από Σπέτσες, 30 από Πόρο. Ένας κλασικός τρίγωνο Σαρωνικού.\n\n**Μετακινήσεις στην Ύδρα**\nΠερπατάτε. Γάιδαροι μεταφέρουν αποσκευές. Θαλάσσια ταξί συνδέουν την πόλη με παραλίες. Διαπραγματευτείτε το κόμιστρο πριν επιβιβαστείτε."
+      }
+    },
+    {
+      layout: "numbered",
+      title: { en: "Top Attractions & Experiences in Hydra", el: "Κορυφαία Αξιοθέατα στην Ύδρα" },
+      items: [
+        {
+          title: { en: "The Port — Hydra's living room", el: "Το Λιμάνι της Ύδρας" },
+          text: {
+            en: "Hydra's harbour is the most intact 18th-century maritime settlement in Greece. The mansions that line the waterfront were built between 1680 and 1820 by the merchant captains who made Hydra one of the wealthiest places in the Mediterranean. The architecture is unique in Greece: grey stone, tile roofs, symmetrical facades, and tall windows that reflect the naval hierarchy of their owners. The Tombazis, Kountouriotis, and Voulgaris families — each with their own mansion — financed the Greek War of Independence from these buildings. The harbour is not a historic district within a modern town — it is the entire town, and it is still lived in. Morning is the time to understand it: before the day-trippers arrive from Athens, the fishermen are unloading, the donkeys are beginning their rounds with supplies, and the light on the upper mansions is at its most dramatic.",
+            el: "Το λιμάνι της Ύδρας είναι ο πιο άθικτος ναυτικός οικισμός του 18ου αιώνα στην Ελλάδα. Τα αρχοντικά χτίστηκαν από καπετάνιους που έκαναν την Ύδρα ένα από τα πλουσιότερα μέρη της Μεσογείου. Η αρχιτεκτονική είναι μοναδική: γκρίζα πέτρα, κεραμοσκεπές, συμμετρικές όψεις. Το λιμάνι δεν είναι μια ιστορική συνοικία μέσα σε μια σύγχρονη πόλη — είναι ολόκληρη η πόλη και κατοικείται ακόμα.",
+          },
+        },
+        {
+          title: { en: "Kountouriotis Mansion — the flagship of Hydra's museums", el: "Αρχοντικό Κουντουριώτη" },
+          text: {
+            en: "The Kountouriotis Mansion, built in 1810, is the finest surviving captain's mansion and has been operated as a museum since 1955. The interior is furnished as it would have been in the 1820s — Venetian furniture, family portraits, naval memorabilia, and the original kitchen. The rooftop terrace offers one of the best views of the harbour. The mansion tells the story of the Kountouriotis family, whose fleet of 50 ships made them one of the wealthiest in Greece and whose son Pavlos became Prime Minister and President of Greece.",
+            el: "Το Αρχοντικό Κουντουριώτη είναι το καλύτερα σωζόμενο αρχοντικό καπετάνιου. Η εσωτερική διακόσμηση είναι αυθεντική της δεκαετίας του 1820. Η ταράτσα προσφέρει μία από τις καλύτερες θέες του λιμανιού. Το αρχοντικό αφηγείται την ιστορία της οικογένειας Κουντουριώτη, που έπαιξε καθοριστικό ρόλο στην Επανάσταση του 1821.",
+          },
+        },
+        {
+          title: { en: "Deste Foundation Slaughterhouse — art in an unlikely space", el: "Σφαγείο Ιδρύματος ΔΕΣΤΕ" },
+          text: {
+            en: "One of the most remarkable art spaces in Greece. The Deste Foundation, founded by collector Dakis Joannou, converted a 19th-century municipal slaughterhouse into a contemporary art exhibition space that mounts rotating shows of international artists. The building itself — a simple stone structure at the western edge of the harbour — is architecturally striking, and the contrast between its brutalist history and the often delicate conceptual art it houses creates an experience found nowhere else in the Cyclades or the Saronic.",
+            el: "Ένας από τους πιο αξιόλογους χώρους τέχνης στην Ελλάδα. Ένα μετασκευασμένο σφαγείο του 19ου αιώνα φιλοξενεί σύγχρονη τέχνη διεθνών καλλιτεχνών. Το ίδιο το κτίριο — μια απλή πέτρινη δομή στη δυτική άκρη του λιμανιού — είναι αρχιτεκτονικά εντυπωσιακό.",
+          },
+        },
+        {
+          title: { en: "The Four Windmills & Eastern Hydra", el: "Οι τέσσερις ανεμόμυλοι" },
+          text: {
+            en: "At the eastern edge of Hydra Town, four restored stone windmills stand on a ridge above a small pebble beach (Spilia). The windmills date from the 18th century and were used to grind grain brought by the captain's ships from across the Mediterranean. The path to the windmills is a 10-minute walk from the harbour and offers the best sunset viewpoint on the island. Beyond the windmills, the coastal path continues toward Kamini — a 20-minute walk that passes small swimming coves and the picturesque chapel of Agios Nikolaos.",
+            el: "Τέσσερις πέτρινοι ανεμόμυλοι του 18ου αιώνα στην ανατολική άκρη της πόλης. Προσφέρουν την καλύτερη θέα ηλιοβασιλέματος. Η διαδρομή προς το Καμίνι περνά από μικρούς όρμους για κολύμπι.",
+          },
+        },
+        {
+          title: { en: "Monastery of Profitis Ilias — the island's rooftop", el: "Μονή Προφήτη Ηλία" },
+          text: {
+            en: "Perched at 590m elevation, the Monastery of Profitis Ilias is the highest point on Hydra and the most rewarding day hike from the port. The monastery itself is modest — a small stone church and a few cells — but the setting is spectacular. The 360-degree panorama takes in the entire Saronic Gulf, from the Peloponnese mountains to Aegina, Poros, Spetses, and on clear days all the way to Cape Sounion and the Athens coast. The hike takes approximately 90 minutes from the port via a well-maintained stone path.",
+            el: "Στα 590μ., η Μονή Προφήτη Ηλία είναι το ψηλότερο σημείο της Ύδρας. Η θέα 360 μοιρών καλύπτει όλο τον Σαρωνικό. Η πεζοπορία διαρκεί περίπου 90 λεπτά.",
+          },
+        },
+        {
+          title: { en: "Historic Archives Museum of Hydra", el: "Ιστορική Αρχειακή Βιβλιοθήκη Ύδρας" },
+          text: {
+            en: "Housed in a restored 19th-century mansion on the harbour front, the Historic Archives Museum contains one of the most important collections of documents and artifacts from the Greek War of Independence. The collection includes original correspondence from Theodoros Kolokotronis, the personal flag of Admiral Miaoulis, shipbuilding plans, maritime maps, and an archive of over 25,000 documents from the 18th and 19th centuries.",
+            el: "Στεγασμένη σε ένα αναστηλωμένο αρχοντικό, η Βιβλιοθήκη περιέχει μία από τις σημαντικότερες συλλογές τεκμηρίων της Επανάστασης του 1821, συμπεριλαμβανομένων προσωπικών αντικειμένων του Κολοκοτρώνη και του Μιαούλη.",
+          },
+        },
+      ],
+    },
+    {
+      layout: "grid",
+      title: { en: "Best Beaches in Hydra", el: "Οι Καλύτερες Παραλίες στην Ύδρα" },
+      items: [
+        {
+          title: { en: "Spilia — the port swim", el: "Σπίλια" },
+          text: {
+            en: "The closest swimming to Hydra Town, located directly below the four windmills at the eastern edge of the harbour. Concrete and stone platforms set into the rocks, with ladders into deep, clear water. Excellent water quality.",
+            el: "Το κοντινότερο μπάνιο στην πόλη, κάτω από τους ανεμόμυλους. Πλατφόρμες στα βράχια με σκάλες προς τα βαθιά, καθαρά νερά."
+          },
+        },
+        {
+          title: { en: "Kamini — the village swim", el: "Καμίνι" },
+          text: {
+            en: "Small fishing harbour 20 mins walk east of Hydra Town. Swimming from rocks, tiny pebbly cove, tavernas on the water. Relaxed, local atmosphere.",
+            el: "20 λεπτά με τα πόδια. Μικρός όρμος με βότσαλο και βραχώδεις πλατφόρμες. Χαλαρή, τοπική ατμόσφαιρα."
+          },
+        },
+        {
+          title: { en: "Vlyhos — pebble beach", el: "Βλύχος" },
+          text: {
+            en: "Sheltered pebble beach, 15 mins by water taxi. Pine trees for shade, calm clear water, historic stone bridge overhead.",
+            el: "Προστατευμένη παραλία με βότσαλο, 15 λεπτά με θαλάσσιο ταξί. Ήρεμα νερά, πεύκα για σκιά."
+          },
+        },
+        {
+          title: { en: "Bisti — the sandy cove", el: "Μπίστι" },
+          text: {
+            en: "One of the few sandy beaches, 20 mins by water taxi. Small cove, rocky cliffs, seasonal taverna. Excellent swimming.",
+            el: "Μία από τις λίγες αμμώδεις παραλίες. Μικρός όρμος, 20 λεπτά με θαλάσσιο ταξί."
+          },
+        },
+        {
+          title: { en: "Limnioniza — remote and quiet", el: "Λιμνιόνιζα" },
+          text: {
+            en: "Remote pebble cove, 30 mins by water taxi. No facilities, crystal-clear water, excellent snorkelling. Very quiet.",
+            el: "Απομακρυσμένη παραλία, 30 λεπτά με θαλάσσιο ταξί. Βότσαλο, κρυστάλλινα νερά, εξαιρετικό snorkeling."
+          },
+        },
+        {
+          title: { en: "Agios Nikolaos — the secret beach", el: "Αγίου Νικολάου" },
+          text: {
+            en: "Small, remote pebble beach on the southeastern coast, accessible by water taxi or steep path. No facilities, complete silence.",
+            el: "Μικρή, απομακρυσμένη παραλία, μόνο με θαλάσσιο ταξί ή απότομο μονοπάτι. Χωρίς υποδομές, απόλυτη ησυχία."
+          },
+        },
+      ],
+    },
+    {
+      layout: "list",
+      title: { en: "What to Eat in Hydra", el: "Τι να φας στην Ύδρα" },
+      text: {
+        en: "**Amygdalota (Hydriot Almond Sweets)** — Signature sweet of Hydra: small, chewy almond macaroons made from ground almonds, sugar, and rosewater. Best from family bakeries behind the harbour.\n\n**Fresh Fish & Grilled Octopus** — Fresh catch from local boats. Tavernas in Kamini are the most reliable. Octopus drying on lines is not just decoration — it is a local staple.\n\n**Lavender Honey** — Local honey with distinctive floral aroma from hillsides. Sold in small grocery stores behind the harbour.\n\n**Stifado (Hydriot Style)** — Slow-cooked rabbit or beef stew with pearl onions, tomato, cinnamon, and allspice. Found in traditional tavernas.",
+        el: "**Αμυγδαλωτά** — Το γλυκό-σήμα της Ύδρας: μακαρόν από αμύγδαλο, ζάχαρη και ανθόνερο.\n\n**Φρέσκο Ψάρι & Χταπόδι** — Φρέσκια ψαριά από ντόπια σκάφη. Οι ταβέρνες στο Καμίνι είναι οι πιο αξιόπιστες.\n\n**Μέλι Λεβάντας** — Από τους λόφους της Ύδρας, με ξεχωριστό άρωμα.\n\n**Στιφάδο** — Κουνέλι ή μοσχάρι μαγειρεμένο αργά με κρεμμυδάκια, ντομάτα, κανέλα."
+      }
+    },
+    {
+      layout: "list",
+      title: { en: "Practical tips", el: "Πρακτικές συμβουλές" },
+      text: {
+        en: "**Pack light:** There are no cars/porters. You carry your own luggage over cobblestones/steps. Backpacks/soft bags are best.\n\n**Book early:** Hydra has limited hotels. July–August rooms book months ahead.\n\n**Negotiate water taxis:** Agree price for round-trip before boarding. A typical fare to Vlyhos/Bisti is €15–25/person.\n\n**Shoes:** Cobblestones are slippery when wet. Wear flat, grippy shoes.\n\n**Cash:** ATMs run low on summer weekends. Carry cash for small shops/tavernas.\n\n**Hiking:** Profitis Ilias takes ~90 mins. Wear proper shoes, carry water/flashlight.",
+        el: "**Ελαφριά αποσκευή:** Κουβαλάτε τα πάντα μόνοι σας. Σακίδιο είναι η σωστή επιλογή.\n\n**Κράτηση διαμονής νωρίς:** Ιούλιος-Αύγουστος κλείνει εβδομάδες πριν.\n\n**Θαλάσσια ταξί:** Συμφωνήστε τιμή πριν επιβιβαστείτε. Τιμή: €15-25/άτομο.\n\n**Παπούτσια:** Τα λιθόστρωτα γλιστρούν. Επίπεδα παπούτσια με κράτημα.\n\n**ΑΤΜ και μετρητά:** Έχετε μετρητά για μικρά μαγαζιά.\n\n**Πεζοπορία:** Προφήτης Ηλίας ~90 λεπτά. Φέρτε νερό και φακό."
+      }
+    },
+    {
+      layout: "faq",
+      title: { en: "FAQ — Hydra Essentials", el: "Συχνές Ερωτήσεις" },
+      items: [
+        {
+          title: { en: "How do I get to Hydra from Athens?", el: "Πώς πάω από Αθήνα στην Ύδρα;" },
+          text: { en: "Flying Dolphin from Piraeus (Gate E8). ~90 mins. Multiple daily departures. No airport.", el: "Flying Dolphin από Πειραιά (Πύλη Ε8). ~90 λεπτά. Πολλά δρομολόγια καθημερινά. Δεν υπάρχει αεροδρόμιο." }
+        },
+        {
+          title: { en: "How many days should I spend in Hydra?", el: "Πόσες μέρες να μείνω στην Ύδρα;" },
+          text: { en: "Two nights minimum. The silence after the last hydrofoil leaves is Hydra's most extraordinary quality.", el: "Ελάχιστο δύο διανυκτερεύσεις. Η ησυχία μετά το τελευταίο πλοίο είναι το πιο εξαιρετικό χαρακτηριστικό." }
+        },
+        {
+          title: { en: "Are there cars on Hydra?", el: "Υπάρχουν αυτοκίνητα στην Ύδρα;" },
+          text: { en: "No. Banned since the 1950s. Transport is by donkey, mule, water taxi, or on foot.", el: "Όχι. Απαγόρευση από το 1950. Μεταφορά με γάιδαρο, μουλάρι, θαλάσσιο ταξί ή με τα πόδια." }
+        },
+        {
+          title: { en: "Does Hydra have sandy beaches?", el: "Έχει η Ύδρα αμμώδεις παραλίες;" },
+          text: { en: "Very few. Bisti (sandy) and Vlyhos (pebble) are closest by water taxi. Spilia and Kamini offer swimming from rocks.", el: "Ελάχιστες. Μπίστι (άμμος) και Βλύχος (βότσαλο) με θαλάσσιο ταξί. Σπίλια και Καμίνι από βράχια." }
+        },
+        {
+          title: { en: "Is Hydra expensive?", el: "Είναι ακριβή η Ύδρα;" },
+          text: { en: "Harbour tavernas are expensive. Kamini has better value. Book accommodation early.", el: "Ακριβό στο λιμάνι. Το Καμίνι έχει καλύτερες τιμές. Κάντε κράτηση διαμονής νωρίς." }
+        },
+        {
+          title: { en: "Leonard Cohen's Hydra connection?", el: "Σχέση Cohen με την Ύδρα;" },
+          text: { en: "Cohen bought a house in 1960, wrote songs like 'Suzanne' there. House stands above the port.", el: "Αγόρασε σπίτι το 1960, έγραψε τραγούδια όπως το 'Suzanne' εκεί. Το σπίτι υπάρχει ακόμα." }
+        },
+        {
+          title: { en: "Can you visit Hydra in winter?", el: "Πάω Ύδρα τον χειμώνα;" },
+          text: { en: "Yes. Hydrofoil runs daily. Quiet, atmospheric, belongs to residents.", el: "Ναι. Το υδροπτέρυγο λειτουργεί καθημερινά. Ήσυχη και ατμοσφαιρική, ανήκει στους μόνιμους κατοίκους." }
+        },
+        {
+          title: { en: "Hiking in Hydra?", el: "Πεζοπορία στην Ύδρα;" },
+          text: { en: "Excellent. Stone paths connect port with Kamini (20'), Vlyhos (45'), Profitis Ilias (90').", el: "Εξαιρετική. Πέτρινα μονοπάτια συνδέουν το λιμάνι με Καμίνι (20'), Βλύχο (45'), Προφήτη Ηλία (90')." }
         }
       ]
     }

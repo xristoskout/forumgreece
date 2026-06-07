@@ -123,6 +123,13 @@ export const MAP_PINS: Pin[] = [
     tagline: { en: "Temple of Aphaia & pistachios", el: "Ναός Αφαίας & φιστίκια" },
   },
   {
+    id: "hydra",
+    x: 44.6, y: 57.9,
+    href: "/destinations/hydra",
+    label: { en: "Hydra", el: "Ύδρα" },
+    tagline: { en: "Car-free island & art scene", el: "Νησί χωρίς αυτοκίνητα & τέχνη" },
+  },
+  {
     id: "athens",
     x: 46.7, y: 50.5,
     href: "/destinations/athens",

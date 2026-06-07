@@ -1343,6 +1343,41 @@ export const destinations: Destination[] = [
     }
   },
   {
+    slug: "hydra",
+    name: "Hydra",
+    region: { en: "Attica", el: "Αττική & Αργοσαρωνικός" },
+    blurb: {
+      en: "The island that refused the car, kept the donkey, and became a home for artists, writers and anyone who still believes silence is a form of luxury.",
+      el: "Το νησί που αρνήθηκε το αυτοκίνητο, κράτησε τον γάιδαρο και έγινε σπίτι για καλλιτέχνες και συγγραφείς που πιστεύουν ότι η σιωπή είναι πολυτέλεια.",
+    },
+    image: "/images/hydra.webp",
+    overview: {
+      en: "Hydra is the only place in Greece — and one of the very few places in the world — where the internal combustion engine was simply refused entry. There are no cars, no motorbikes, no scooters. Transport is by donkey, mule, water taxi, or on foot. The ban has been in place since the 1950s and has produced something remarkable: an island whose stone port looks almost exactly as it did when the ships of Hydra's merchant fleet dominated Mediterranean trade in the 18th century. Step off the Flying Dolphin from Piraeus and the harbour that opens before you — grey stone mansions ascending the hillside, donkeys picking their way along the quay, wooden caïques bobbing in the water — is architecturally preserved in a way that has nothing to do with tourism and everything to do with a community that made a deliberate choice about what kind of place it wanted to be.",
+      el: "Η Ύδρα είναι το μόνο μέρος στην Ελλάδα — και ένα από τα ελάχιστα μέρη στον κόσμο — όπου απαγορεύτηκε η είσοδος στο αυτοκίνητο. Δεν υπάρχουν αυτοκίνητα, μηχανάκια ή σκούτερ. Η μεταφορά γίνεται με γάιδαρο, μουλάρι, θαλάσσιο ταξί ή με τα πόδια. Η απαγόρευση ισχύει από τη δεκαετία του 1950 και έχει δημιουργήσει κάτι αξιοσημείωτο: ένα νησί του οποίου το πέτρινο λιμάνι μοιάζει σχεδόν όπως ήταν όταν ο εμπορικός στόλος της Ύδρας κυριαρχούσε στη Μεσόγειο τον 18ο αιώνα. Κατεβείτε από το Flying Dolphin από τον Πειραιά και το λιμάνι που ανοίγεται μπροστά σας — γκρίζα πέτρινα αρχοντικά που σκαρφαλώνουν στον λόφο, γάιδαροι που προχωρούν στην προκυμαία, ξύλινα καΐκια που λικνίζονται στο νερό — είναι αρχιτεκτονικά διατηρημένο με τρόπο που δεν έχει καμία σχέση με τον τουρισμό.",
+    },
+    highlights: {
+      en: ["Car-free since the 1950s", "18th-century captain mansions", "Leonard Cohen's island", "Deste Foundation Slaughterhouse"],
+      el: ["Χωρίς αυτοκίνητα από το 1950", "Αρχοντικά καπετάνιων του 18ου αιώνα", "Το νησί του Leonard Cohen", "Σφαγείο Ιδρύματος ΔΕΣΤΕ"],
+    },
+    featured: true,
+    guideLinks: [
+      {
+        href: "/hotels/hydra",
+        label: { en: "Where to Stay in Hydra", el: "Πού να μείνεις στην Ύδρα" }
+      }
+    ],
+    seo: {
+      title: {
+        en: "Hydra Travel Guide: Car-Free Island, Mansions, Beaches & Things to Do",
+        el: "Ύδρα: Ταξιδιωτικός Οδηγός — Χωρίς Αυτοκίνητα, Αρχοντικά, Παραλίες & Αξιοθέατα"
+      },
+      description: {
+        en: "Complete travel guide to Hydra, the car-free Saronic island. Discover 18th-century mansions, Leonard Cohen's Hydra, Deste Foundation art space, Profitis Ilias monastery, Spilia and Bisti beaches, local food and practical tips.",
+        el: "Πλήρης ταξιδιωτικός οδηγός για την Ύδρα, το νησί χωρίς αυτοκίνητα. Ανακαλύψτε αρχοντικά του 18ου αιώνα, το Σφαγείο ΔΕΣΤΕ, τη μονή Προφήτη Ηλία, παραλίες Σπίλια και Μπίστι, τοπικές γεύσεις και πρακτικές συμβουλές."
+      }
+    }
+  },
+  {
     slug: "tinos",
     name: "Tinos",
     region: { en: "Cyclades", el: "Κυκλάδες" },

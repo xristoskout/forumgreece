@@ -11,7 +11,73 @@ export type DestinationDetail = {
   };
 };
 
+
 export const destinationDetails: Record<string, DestinationDetail> = {
+  hydra: {
+    overview: {
+      en: "Hydra is the only place in Greece — and one of the very few places in the world — where the 20th century's defining invention, the internal combustion engine, was simply refused entry. There are no cars here, no motorbikes, no scooters. Transport is by donkey, mule, water taxi, or on foot. The ban has been in place since the 1950s and has produced something remarkable: an island whose stone port looks almost exactly as it did when the ships of Hydra's merchant fleet dominated Mediterranean trade in the 18th century.\n\nThat visual continuity is Hydra's most immediate gift to the visitor. The harbour — grey stone mansions ascending the hillside, donkeys picking their way along the quay, wooden caïques bobbing in the water — is architecturally preserved in a way that has nothing to do with tourism and everything to do with a community that made a deliberate choice about what kind of place it wanted to be. The result attracted artists. The artists attracted writers. The writers attracted Leonard Cohen, who bought a house here in 1960 for $1,500, wrote some of the finest songs of the 20th century on its terrace, and returned for decades. The creative current he embodied still runs through the island today.",
+      el: "Η Ύδρα είναι το μόνο μέρος στην Ελλάδα — και ένα από τα ελάχιστα μέρη στον κόσμο — όπου η καθοριστική εφεύρεση του 20ού αιώνα, ο κινητήρας εσωτερικής καύσης, απλώς δεν επετράπη. Δεν υπάρχουν αυτοκίνητα, μηχανάκια ή σκούτερ. Η μεταφορά γίνεται με γάιδαρο, μουλάρι, θαλάσσιο ταξί ή με τα πόδια. Η απαγόρευση ισχύει από τη δεκαετία του 1950 και έχει δημιουργήσει κάτι αξιοσημείωτο: ένα νησί του οποίου το πέτρινο λιμάνι μοιάζει σχεδόν όπως ήταν όταν ο εμπορικός στόλος της Ύδρας κυριαρχούσε στη Μεσόγειο τον 18ο αιώνα.\n\nΑυτή η οπτική συνέχεια είναι το πιο άμεσο δώρο της Ύδρας στον επισκέπτη. Το λιμάνι — γκρίζα πέτρινα αρχοντικά που σκαρφαλώνουν στον λόφο, γάιδαροι στην προκυμαία, ξύλινα καΐκια στο νερό — είναι αρχιτεκτονικά διατηρημένο. Το αποτέλεσμα προσέλκυσε καλλιτέχνες. Οι καλλιτέχνες προσέλκυσαν συγγραφείς. Και ο Leonard Cohen αγόρασε ένα σπίτι εδώ το 1960 για 1.500 δολάρια, έγραψε μερικά από τα σημαντικότερα τραγούδια του 20ού αιώνα στην αυλή του και επέστρεφε για δεκαετίες.",
+    },
+    pageIncludes: {
+      en: [
+        "Hydra Port & stone captain mansions",
+        "Kountouriotis Mansion museum",
+        "Deste Foundation Slaughterhouse",
+        "Leonard Cohen's Hydra",
+        "Beaches: Spilia, Bisti, Kamini, Vlyhos, Limnioniza",
+        "Interior paths & Profitis Ilias Monastery",
+        "Local food, amygdalota & Kamini fish",
+      ],
+      el: [
+        "Λιμάνι & πέτρινα αρχοντικά καπετάνιων",
+        "Μουσείο Κουντουριώτη",
+        "Σφαγείο Ιδρύματος ΔΕΣΤΕ",
+        "Leonard Cohen στην Ύδρα",
+        "Παραλίες: Σπίλια, Μπίστι, Καμίνι, Βλύχος, Λιμνιόνιζα",
+        "Μονοπάτια & Μονή Προφήτη Ηλία",
+        "Τοπικές γεύσεις, αμυγδαλωτά & ψάρι Καμινίου",
+      ],
+    },
+    perfectFor: {
+      en: [
+        "Athens add-on (90 min by hydrofoil)",
+        "Art lovers & gallery visitors",
+        "Couples seeking atmosphere over activity",
+        "Writers, photographers, creative travelers",
+        "Hikers and walkers",
+        "Anyone who values silence as a travel feature",
+      ],
+      el: [
+        "Προέκταση από Αθήνα (90 λεπτά με υδροπτέρυγο)",
+        "Λάτρεις τέχνης & γκαλερί",
+        "Ζευγάρια που αναζητούν ατμόσφαιρα",
+        "Συγγραφείς, φωτογράφους, δημιουργικούς ταξιδιώτες",
+        "Πεζοπόρους",
+        "Όσους εκτιμούν τη σιωπή ως ταξιδιωτικό χαρακτηριστικό",
+      ],
+    },
+    honestAdvice: {
+      title: { en: "Honest Advice — What to Skip", el: "Ειλικρινής Συμβουλή — Τι να Αποφύγεις" },
+      alert: {
+        en: "What nobody tells you about Hydra: The island's most extraordinary quality — the silence — is temporal as much as physical. It exists between approximately 23:00 and 08:00, when the day-trippers are gone, the late tavernas have closed, and the only sound is water and the occasional donkey. Staying overnight is not merely convenient — it is the only way to hear what Hydra actually sounds like. The visitors who leave on the last afternoon hydrofoil have spent a day in the presence of one of Europe's most remarkable places without ever quite arriving.",
+        el: "Αυτό που δε σου λέει κανείς: Η πιο εξαιρετική ποιότητα της Ύδρας — η σιωπή — είναι τόσο χρονική όσο και φυσική. Υπάρχει περίπου μεταξύ 23:00 και 08:00, όταν οι εκδρομείς έχουν φύγει, οι ταβέρνες έχουν κλείσει και ο μόνος ήχος είναι το νερό και ο γάιδαρος. Η διαμονή δεν είναι απλώς βολική — είναι ο μόνος τρόπος να ακούσεις τι πραγματικά ακούγεται η Ύδρα.",
+      },
+      items: {
+        en: [
+          "Visiting Hydra as a half-day trip from Athens — the Flying Dolphin delivers a boatload of day-trippers who spend three hours on the harbour front, eat an overpriced lunch at the tourist tavernas, and leave. Two nights minimum is the threshold above which Hydra starts to make its real impression.",
+          "The tourist tavernas at the centre of the port — prices are 30–40% above equivalent quality elsewhere. Walk to the eastern end of the harbour or to Kamini for tavernas where the menu changes with the catch.",
+          "Expecting sandy beaches within walking distance — Hydra's coastline is predominantly rocky. The swimming at Spilia from the rocks is good, but if sandy beaches are non-negotiable, Hydra is the wrong choice unless you budget for water taxis.",
+          "Arriving on a summer weekend without a reservation — Hydra on a Saturday in August is a different island. The hydrofoils arrive packed, the port fills to capacity, and the island's particular quality of quiet is simply not available.",
+        ],
+        el: [
+          "Ημερήσια εκδρομή από Αθήνα — το υδροπτέρυγο φέρνει επισκέπτες που μένουν 3 ώρες στο λιμάνι, τρώνε ακριβό μεσημεριανό και φεύγουν. Δύο διανυκτερεύσεις είναι το ελάχιστο για να καταλάβεις την Ύδρα.",
+          "Τουριστικές ταβέρνες στο κέντρο του λιμανιού — οι τιμές είναι 30-40% πάνω. Περπάτα στο ανατολικό άκρο ή στο Καμίνι.",
+          "Παραλίες με άμμο σε κοντινή απόσταση — η ακτογραμμή είναι βραχώδης. Το μπάνιο στα Σπίλια είναι καλό, αλλά για αμμώδεις παραλίες χρειάζεστε θαλάσσιο ταξί.",
+          "Άφιξη Σαββατοκύριακο καλοκαιριού χωρίς κράτηση — η Ύδρα τον Αύγουστο είναι άλλο νησί. Τα υδροπτέρυγα γεμίζουν, το λιμάνι είναι γεμάτο και η ησυχία εξαφανίζεται.",
+        ],
+      },
+    },
+  },
   santorini: {
     overview: {
       en: "Santorini (or Thira) is one of those destinations that needs no introduction — yet, once you walk its paths, you realize its fame is only the beginning. The white settlements hanging over the caldera, the jasmine-scented alleys, the dark volcanic beaches, and the volcanic wine, create a setting unlike any other in the Cyclades.",

@@ -9,7 +9,7 @@ const regionLabels: Record<string, { en: string; el: string }> = {
   Cyclades: { en: "Cyclades", el: "Κυκλάδες" },
   Dodecanese: { en: "Dodecanese", el: "Δωδεκάνησα" },
   "Ionian Islands": { en: "Ionian Islands", el: "Ιόνια Νησιά" },
-  Attica: { en: "Attica", el: "Αττική" },
+  Attica: { en: "Attica & Argo-Saronic", el: "Αττική & Αργοσαρωνικός" },
   Crete: { en: "Crete", el: "Κρήτη" },
   "Central Macedonia": { en: "Central Macedonia", el: "Κεντρική Μακεδονία" },
   Peloponnese: { en: "Peloponnese", el: "Πελοπόννησος" },
@@ -31,6 +31,8 @@ function getRegion(place: string): string {
     "Phocis, Central Greece": "Central Greece",
     "Epirus, Northwestern Greece": "Epirus",
     "Western Greece & Peloponnese": "Peloponnese",
+    "Saronic Islands": "Attica",
+    "Saronic Gulf, Attica": "Attica",
   };
   return regionMap[raw] || raw;
 }
