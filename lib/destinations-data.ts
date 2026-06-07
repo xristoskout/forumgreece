@@ -1307,6 +1307,49 @@ export const destinations: Destination[] = [
         el: "Οργανώστε το ταξίδι σας στο Λασίθι, ανατολική Κρήτη. Ανακαλύψτε τη Σπιναλόγκα, τον κόλπο της Ελούντας, το Βάι, τον Άγιο Νικόλαο, το Γεωπάρκο Σητείας, παραλίες και τοπικές γεύσεις."
       }
     }
+  },
+  {
+    slug: "tinos",
+    name: "Tinos",
+    region: { en: "Cyclades", el: "Κυκλάδες" },
+    blurb: {
+      en: "Sacred pilgrimage site, marble-carving capital of Greece, land of medieval dovecotes and wild unspoiled villages — and, quietly, home to the finest food culture in the Cyclades.",
+      el: "Ιερό προσκύνημα, πρωτεύουσα του μαρμάρου στην Ελλάδα, γη με μεσαιωνικούς περιστερώνες και άγρια ανέγγιχτα χωριά — και, ήσυχα, η καλύτερη γαστρονομία στις Κυκλάδες."
+    },
+    image: "/images/tinos.webp",
+    overview: {
+      en: "Tinos sits at the heart of the Cyclades, visible from Mykonos to its east and from Syros to its west, yet it inhabits an entirely different world from either. It is the most spiritually significant island in Greece — the Church of Panagia Evangelistria holds the sacred icon of the Virgin Mary, and on the 15th of August every year, thousands of faithful pilgrims travel by sea from across the country to climb the long marble ramp from the port to the church on their knees. The island's religious identity is not a tourist performance; it is a living, breathing practice.\n\nBut Tinos is also, simultaneously, one of the most artistically rich destinations in the Aegean. The village of Pyrgos in the north has produced more marble sculptors than anywhere else in Greece — the craft school here trained many of the country's finest artists, and the tradition continues today in family workshops where you can watch marble being cut and shaped by hand. The island's signature architectural feature — the ornate Venetian-era dovecotes, scattered across the hillsides like white stone lacework — is unlike anything else in the Cyclades.\n\nNone of this has been packaged for mass tourism. Tinos has no international hotel chains, no beach clubs playing commercial music until four in the morning, and no self-conscious effort to be the next Mykonos. The food here — built on exceptional local products including the island's famous artichokes, cured meats, loukoumades and fresh cheese — is considered by serious food travellers to be the best in the Cyclades.",
+      el: "Η Τήνος βρίσκεται στην καρδιά των Κυκλάδων, ορατή από τη Μύκονο και τη Σύρο, αλλά κατοικεί σε έναν εντελώς διαφορετικό κόσμο. Είναι το πνευματικά σημαντικότερο νησί της Ελλάδας — η Παναγία Ευαγγελίστρια φιλοξενεί την ιερή εικόνα της Παναγίας. Η Τήνος είναι επίσης ένας από τους πιο καλλιτεχνικά πλούσιους προορισμούς του Αιγαίου. Η Πύργος έχει τους περισσότερους μαρμαρογλύπτες στην Ελλάδα, οι περιστερώνες είναι μοναδικοί, και το φαγητό θεωρείται το καλύτερο στις Κυκλάδες."
+    },
+    highlights: {
+      en: ["Panagia Evangelistria", "Pyrgos marble village", "Volax boulder landscape", "Cycladic dovecotes", "Best food in the Cyclades"],
+      el: ["Παναγία Ευαγγελίστρια", "Πύργος μαρμάρου", "Βώλαξ ογκόλιθοι", "Περιστερώνες Κυκλάδων", "Καλύτερο φαγητό στις Κυκλάδες"]
+    },
+    featured: true,
+    guideLinks: [
+      {
+        href: "/hotels/tinos",
+        label: { en: "Stays in Tinos", el: "Διαμονή στην Τήνο" }
+      },
+      {
+        href: "/tours/all",
+        label: { en: "Tours & Experiences", el: "Εκδρομές & Εμπειρίες" }
+      },
+      {
+        href: "/collections/greece-food-and-drink",
+        label: { en: "Local Food Ideas", el: "Τοπική Γαστρονομία" }
+      }
+    ],
+    seo: {
+      title: {
+        en: "Tinos Travel Guide: Panagia Evangelistria, Pyrgos & Things to Do in Tinos",
+        el: "Τήνος: Ταξιδιωτικός Οδηγός — Παναγία Ευαγγελίστρια, Πύργος & Αξιοθέατα"
+      },
+      description: {
+        en: "Complete travel guide to Tinos — the sacred island of the Cyclades. Discover Panagia Evangelistria church, Pyrgos marble village, Volax boulders, Venetian dovecotes, Kolymbithra beach, local food culture and practical travel tips.",
+        el: "Πλήρης ταξιδιωτικός οδηγός για την Τήνο. Ανακαλύψτε την Παναγία Ευαγγελίστρια, τον Πύργο, τους ογκόλιθους του Βώλακα, τους περιστερώνες, την Κολυμπήθρα και την τοπική γαστρονομία."
+      }
+    }
   }
 ];
 

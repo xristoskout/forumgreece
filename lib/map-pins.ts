@@ -269,4 +269,11 @@ export const MAP_PINS: Pin[] = [
     label: { en: "Syros", el: "Σύρος" },
     tagline: { en: "Capital of the Cyclades", el: "Πρωτεύουσα των Κυκλάδων" },
   },
+  {
+    id: "tinos",
+    x: 58.7, y: 54.2,
+    href: "/destinations/tinos",
+    label: { en: "Tinos", el: "Τήνος" },
+    tagline: { en: "Sacred island & marble capital", el: "Ιερό νησί & πρωτεύουσα μαρμάρου" },
+  },
 ];

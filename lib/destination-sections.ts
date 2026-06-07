@@ -9797,4 +9797,165 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       ]
     }
   ],
+  tinos: [
+    {
+      layout: "list",
+      title: { en: "Why Visit Tinos", el: "Γιατί να Επισκεφτείς την Τήνο" },
+      text: {
+        en: "**1. The Panagia Evangelistria is the most important religious site in modern Greece**\nThe Church of the Annunciation holds the sacred icon of the Virgin Mary, discovered in 1823 following a vision reported by Nun Pelagia. It draws over a million visitors a year — believers, curious travellers and historians alike. The atmosphere on the 15th of August is unlike anything else in the Aegean.\n\n**2. Pyrgos is the marble-carving capital of Greece**\nPyrgos in the north has been producing marble sculptors for centuries. The Museum of Marble Crafts is one of the best-designed museums in Greece, and the family workshops allow you to watch the craft at close hand.\n\n**3. The Venetian dovecotes are unique to Tinos**\nOver a thousand ornate stone dovecotes are scattered across the hillsides — narrow towers with geometric decorative patterns. The finest concentrations are around Tarampados and Ktikados.\n\n**4. Volax is one of the most surreal landscapes in the Greek islands**\nThe village sits at the centre of a natural amphitheatre filled with enormous rounded granite boulders — the landscape feels otherworldly.\n\n**5. The food culture is the finest in the Cyclades**\nTinos produces exceptional local ingredients: giant artichokes, graviera cheese, cured sausages, loukoumades. The restaurant scene is serious without being pretentious.\n\n**6. Fifty-plus villages reward exploration**\nTinos has more inhabited villages than most other Cycladic islands combined. Hiring a car and driving from village to village is one of the finest things you can do in the Cyclades.",
+        el: "**1. Η Παναγία Ευαγγελίστρια είναι το σημαντικότερο θρησκευτικό προσκύνημα**\nΗ εικόνα ανακαλύφθηκε το 1823 και προσελκύει πάνω από ένα εκατομμύριο επισκέπτες ετησίως.\n\n**2. Ο Πύργος είναι η πρωτεύουσα του μαρμάρου**\nΤο Μουσείο Μαρμάρου και τα οικογενειακά εργαστήρια είναι μοναδικά.\n\n**3. Οι περιστερώνες είναι μοναδικοί στην Τήνο**\nΠάνω από χίλιοι πετρόκτιστοι περιστερώνες στους λόφους.\n\n**4. Ο Βώλακας είναι το πιο εξωπραγματικό τοπίο**\nΓιγάντιοι γρανιτένιοι ογκόλιθοι δημιουργούν ένα σουρεαλιστικό σκηνικό.\n\n**5. Η καλύτερη γαστρονομία στις Κυκλάδες**\nΑγκινάρες, γραβιέρα, σύγλινο, λουκουμάδες — η Τήνος είναι παράδεισος για τους λάτρεις του φαγητού.\n\n**6. Πάνω από πενήντα χωριά**\nΗ Τήνος έχει περισσότερα κατοικημένα χωριά από κάθε άλλη Κυκλάδα."
+      }
+    },
+    {
+      layout: "list",
+      title: { en: "Best Time to Visit Tinos", el: "Η Καλύτερη Εποχή για την Τήνο" },
+      text: {
+        en: "**April – May — Green, uncrowded, ideal for village exploration**\nThe island is green and the weather is mild. Easter on Tinos, with both Catholic and Orthodox populations celebrating, is a particularly special time.\n\n**June — Perfect balance**\nWarm enough for beach days, uncrowded, everything open. One of the best months in the entire Cyclades calendar.\n\n**July – August — Peak season and lively**\nThe 15th of August is extraordinary to witness but extremely crowded — plan far in advance. The beaches are busy but the island absorbs summer visitors well.\n\n**September — Arguably the finest month**\nThe sea is at its warmest, crowds thin after mid-month, and the light over the dovecotes and marble villages is exceptional.\n\n**October – November — Quiet, authentic**\nExcellent for cultural visits and food exploration. The countryside and marble workshops are at their most atmospheric.\n\n**Winter — A living island year-round**\nTinos is one of the few Cycladic islands worth visiting in winter for a quiet, genuinely Greek experience.",
+        el: "**Απρίλιος – Μάιος — Πράσινο, ήσυχο, ιδανικό για εξερεύνηση χωριών**\nΤο Πάσχα στην Τήνο είναι μοναδικό.\n\n**Ιούνιος — Τέλεια ισορροπία**\nΖεστός, ήσυχος, όλα ανοιχτά.\n\n**Ιούλιος – Αύγουστος — Αιχμή**\nΗ 15η Αυγούστου είναι απίστευτη εμπειρία.\n\n**Σεπτέμβριος — Ο καλύτερος μήνας**\nΗ θάλασσα ζεστή, λιγότερος κόσμος.\n\n**Οκτώβριος – Νοέμβριος — Ήσυχα, αυθεντικά**\nΙδανικά για πολιτισμό και γαστρονομία.\n\n**Χειμώνας — Ζωντανό νησί όλο τον χρόνο**\nΑπό τις λίγες Κυκλάδες που αξίζουν τον χειμώνα."
+      }
+    },
+    {
+      layout: "list",
+      title: { en: "How to Get to Tinos", el: "Πώς να Πάτε στην Τήνο" },
+      text: {
+        en: "**By ferry from Piraeus** — 4–5 hours on conventional ferries, 2.5–3 hours on high-speed catamarans.\n\n**By ferry from Rafina** — From the port closer to Athens airport, about 2.5 hours on high-speed services.\n\n**From Mykonos** — 25 minutes by high-speed ferry. The contrast between the two islands is part of the experience.\n\n**From Syros** — 35 minutes. Combine Tinos and Syros for the most culturally rich Cyclades trip.\n\n💡 Secret: Tinos is an excellent base for island hopping — Mykonos, Syros, Delos and Naxos are all within easy reach.\n\n**Getting around** — A car is essential for exploring the interior. Rental cars are available at the port. Book in advance for July and August.",
+        el: "**Από Πειραιά** — 4–5 ώρες με συμβατικό, 2.5–3 ώρες με ταχύπλοο.\n\n**Από Ραφήνα** — Περίπου 2.5 ώρες.\n\n**Από Μύκονο** — 25 λεπτά.\n\n**Από Σύρο** — 35 λεπτά.\n\n💡 Συμβουλή: Η Τήνος είναι εξαιρετική βάση για island hopping.\n\n**Μετακινήσεις** — Απαραίτητο το αυτοκίνητο για το εσωτερικό του νησιού."
+      }
+    },
+    {
+      layout: "numbered",
+      title: { en: "Top Attractions in Tinos", el: "Κορυφαία Αξιοθέατα στην Τήνο" },
+      items: [
+        {
+          title: { en: "Church of Panagia Evangelistria (Our Lady of Tinos)", el: "Παναγία Ευαγγελίστρια" },
+          text: {
+            en: "The most important religious site in modern Greece. The church stands at the top of the long marble-paved Leoforos Megalocharis that rises from the port. Built in gleaming white marble in the early 19th century, it holds the sacred icon of the Virgin Mary in an elaborately decorated silver frame. The underground chapel marks the exact site where the icon was discovered in 1823. The ex-voto collection — offerings of gold, silver and jewellery left by the faithful over two centuries — is one of the most remarkable collections of popular religious art in Greece.\n\n💡 Secret: Remove your shoes before entering the inner sanctuary. The atmosphere inside is one of profound silence and devotion regardless of your beliefs. Visit on a weekday morning in June or September for a quiet experience.",
+            el: "Το σημαντικότερο θρησκευτικό προσκύνημα της Ελλάδας. Η εκκλησία χτίστηκε από λευκό μάρμαρο τον 19ο αιώνα. Φιλοξενεί την ιερή εικόνα της Παναγίας. Η συλλογή τάματων είναι μοναδική.\n\n💡 Μυστικό: Βγάλτε τα παπούτσια σας πριν μπείτε στο ιερό."
+          }
+        },
+        {
+          title: { en: "Pyrgos — Marble Village & Museum of Marble Crafts", el: "Πύργος — Μαρμάρινο Χωριό & Μουσείο Μαρμάρου" },
+          text: {
+            en: "Pyrgos is a village of exceptional quality — built almost entirely in marble. The Museum of Marble Crafts is one of the most thoughtfully designed museums in Greece, telling the story of Tinian marble from quarry to finished work. The Yannoulis Chalepas Museum celebrates the island's most celebrated sculptor. Family workshops sell original work at prices that bear no relation to the quality.\n\n💡 Secret: The cemetery above the village is not morbid — it is a gallery of extraordinary marble sculpture. Allow 30 minutes here.",
+            el: "Ο Πύργος είναι χτισμένος σχεδόν εξολοκλήρου σε μάρμαρο. Το Μουσείο Μαρμάρου είναι από τα ωραιότερα μουσεία στην Ελλάδα.\n\n💡 Μυστικό: Το νεκροταφείο πάνω από το χωριό είναι γκαλερί μαρμάρινων γλυπτών."
+          }
+        },
+        {
+          title: { en: "Volax — The Boulder Village", el: "Βώλακας — Το Χωριό των Ογκόλιθων" },
+          text: {
+            en: "Volax sits at the centre of a natural amphitheatre filled with enormous rounded granite boulders — geological formations deposited by ancient volcanic activity. The village is inhabited year-round and its tiny amphitheatre hosts summer cultural events. The landscape feels otherworldly, unlike anything else in the Cyclades.\n\n💡 Secret: Take the path behind the village to walk among the boulders — it takes 20 minutes and requires no special equipment.",
+            el: "Ο Βώλακας περιβάλλεται από γιγάντιους γρανιτένιους ογκόλιθους. Το τοπίο είναι εξωπραγματικό.\n\n💡 Μυστικό: Περπατήστε ανάμεσα στους ογκόλιθους πίσω από το χωριό."
+          }
+        },
+        {
+          title: { en: "Xombourgo — The Medieval Fortress", el: "Εξωμπούργκο — Το Μεσαιωνικό Κάστρο" },
+          text: {
+            en: "The dramatic granite rock of Xombourgo rises to 640 metres and was the site of the island's Venetian capital. The ruins of fortress walls, Catholic churches and Orthodox chapels cover the summit. The walk up from Komi takes about 40 minutes.\n\n💡 Secret: Go in the morning when the air is clear. The views of Mykonos, Syros and Delos from the top are among the finest in the Cyclades.",
+            el: "Ο βράχος του Εξωμπούργκου ήταν η ενετική πρωτεύουσα. Η θέα από την κορυφή είναι μοναδική.\n\n💡 Μυστικό: Πηγαίνετε το πρωί με καθαρό αέρα."
+          }
+        },
+        {
+          title: { en: "The Dovecote Villages — Tarampados, Ktikados", el: "Οι Περιστερώνες — Ταράμπαδος, Κτικάδος" },
+          text: {
+            en: "The central plateau has the highest concentration of the island's famous dovecotes — narrow stone towers with intricate geometric decorative panels. The landscape of terraced hillsides, dovecotes, small stone chapels and ancient walls is unlike anywhere else in the Greek islands.\n\n💡 Secret: The drive through the central plateau at dusk, with dovecotes against the fading light, is unforgettable.",
+            el: "Το κεντρικό οροπέδιο έχει τους περισσότερους περιστερώνες. Η οδήγηση στο ηλιοβασίλεμα είναι αξέχαστη."
+          }
+        },
+        {
+          title: { en: "Kardiani & the Catholic North Villages", el: "Καρδιανή & τα Καθολικά Χωριά" },
+          text: {
+            en: "The northern part of Tinos has a distinct character shaped by Catholic heritage. Kardiani, perched on a steep hillside above the north coast with views over Syros, is considered by many to be the most beautiful village on the island.\n\n💡 Secret: Kardiani has one of the best traditional tavernas on the island — arrive at lunchtime and ask what is cooking.",
+            el: "Το βόρειο τμήμα της Τήνου έχει καθολική κληρονομιά. Η Καρδιανή θεωρείται το ωραιότερο χωριό του νησιού.\n\n💡 Μυστικό: Η Καρδιανή έχει μία από τις καλύτερες ταβέρνες."
+          }
+        },
+        {
+          title: { en: "Tinos Town & the Marble Ramp", el: "Τήνος & ο Μαρμάρινος Δρόμος" },
+          text: {
+            en: "Tinos Town has a pleasant, unhurried waterfront with good seafood restaurants and cafés. The long marble-paved Leoforos Megalocharis rises from the port to the church. On the 15th of August, pilgrims crawl the entire length on their knees.\n\n💡 Secret: The best loukoumades on the island are served at a small traditional stall just off the main street — locals queue from mid-morning.",
+            el: "Η πόλη της Τήνου έχει όμορφο λιμάνι και την οδό Μεγαλόχαρης.\n\n💡 Μυστικό: Οι καλύτεροι λουκουμάδες στο νησί σερβίρονται σε ένα μικρό παραδοσιακό μαγαζάκι."
+          }
+        }
+      ]
+    },
+    {
+      layout: "grid",
+      title: { en: "Best Beaches in Tinos", el: "Οι Καλύτερες Παραλίες στην Τήνο" },
+      items: [
+        {
+          title: { en: "Kolymbithra", el: "Κολυμπήθρα" },
+          text: { en: "A double-coved beach on the north coast with extraordinarily clear turquoise water and dramatic rock formations. The larger cove has a taverna and sunbeds; the smaller is wilder and quieter. One of the finest beaches in the Cyclades.", el: "Διπλός όρμος στη βόρεια ακτή με κρυστάλλινα νερά. Από τις ωραιότερες παραλίες στις Κυκλάδες." }
+        },
+        {
+          title: { en: "Porto", el: "Πόρτο" },
+          text: { en: "A long sandy beach on the east coast with shallow, calm water and good facilities. The most family-friendly beach on the island with several tavernas nearby.", el: "Μεγάλη αμμώδης παραλία στην ανατολική ακτή, ιδανική για οικογένειες." }
+        },
+        {
+          title: { en: "Agios Fokas", el: "Άγιος Φωκάς" },
+          text: { en: "The closest beach to Tinos Town — long stretch of sand and pebble, partially organised with sunbeds and clear calm water. Good for a half-day from the port without needing a car.", el: "Η κοντινότερη παραλία στην πόλη, με ξαπλώστρες και ήρεμα νερά." }
+        },
+        {
+          title: { en: "Livada", el: "Λιβάδα" },
+          text: { en: "A small, quiet cove near Panormos on the northwest coast. Deep translucent blue water, rarely crowded. One of the most beautiful and least visited swimming spots.", el: "Μικρός ήσυχος όρμος, σπάνια πολυσύχναστος. Από τα ωραιότερα σημεία για μπάνιο." }
+        },
+        {
+          title: { en: "Agios Romanos", el: "Άγιος Ρωμανός" },
+          text: { en: "Broad sandy beach on the south coast with reliable summer winds and a windsurfing school. Less scenic than Kolymbithra but consistently good for board sports.", el: "Αμμώδης παραλία στη νότια ακτή, ιδανική για windsurfing." }
+        },
+        {
+          title: { en: "Pachia Ammos", el: "Παχιά Άμμος" },
+          text: { en: "Isolated sandy cove on the northwest coast reached by a narrow unpaved track. Fine soft sand and water of exceptional clarity. No facilities — bring everything you need.", el: "Απομονωμένη παραλία στη βορειοδυτική ακτή. Φέρτε όλα όσα χρειάζεστε." }
+        }
+      ]
+    },
+    {
+      layout: "list",
+      title: { en: "Food in Tinos — What to Eat", el: "Φαγητό στην Τήνο — Τι να Φας" },
+      text: {
+        en: "💡 Food secret: The Saturday morning farmers' market in Tinos Town is the best opportunity to buy local products directly from producers.\n\n**Tinian Artichokes** — PDO product, considered the finest in Greece. Smaller, denser and more intensely flavoured than the mainland variety.\n\n**Loukoumades** — Tinos is famous throughout Greece for its light, crisp honey-drenched doughnuts. A well-known stall in Tinos Town has been serving them for generations.\n\n**Graviera & Fresh Cheese** — Excellent hard cheese aged in caves, and fresh soft white cheese used in savoury pies.\n\n**Syglino** — Cured pork preserved with orange peel, spices and herbs. Smoky, aromatic and deeply flavoured.\n\n**Fresh Aegean Seafood** — Grilled octopus, red mullet, sea bream and sea bass from the island's fishing fleet.\n\n**Thyme Honey & Capers** — Aromatic honey and briny capers make perfect edible souvenirs.",
+        el: "💡 Μυστικό φαγητού: Η λαϊκή αγορά του Σαββάτου στην πόλη είναι η καλύτερη ευκαιρία για τοπικά προϊόντα.\n\n**Αγκινάρες Τήνου** — ΠΟΠ, οι καλύτερες στην Ελλάδα.\n\n**Λουκουμάδες** — Η Τήνος φημίζεται για τους ελαφριούς λουκουμάδες της.\n\n**Γραβιέρα & Φρέσκο Τυρί** — Εξαιρετικό τυρί ωρίμανσης.\n\n**Σύγλινο** — Χοιρινό παστό με πορτοκάλι και μπαχαρικά.\n\n**Φρέσκο Θαλασσινό** — Χταπόδι, μπαρμπούνι, τσιπούρα.\n\n**Μέλι & Κάππαρη** — Ιδανικά αναμνηστικά."
+      }
+    },
+    {
+      layout: "list",
+      title: { en: "Honest Advice — What to Skip in Tinos", el: "Ειλικρινής Συμβουλή — Τι να Αποφύγεις" },
+      text: {
+        en: "✕ **Expecting Tinos to perform for you** — The island is not optimised for the tourist gaze. Approach it as a guest, not as an audience.\n\n✕ **Treating the church as only a photo opportunity** — The atmosphere inside demands respectful attention.\n\n✕ **Spending your entire time on the coast** — The interior is what makes Tinos unlike anywhere else. Rent a car for at least one full day.\n\n✕ **Visiting Pyrgos without allocating real time** — The Museum of Marble Crafts alone deserves 90 minutes.\n\n✕ **Skipping Volax** — The boulder landscape is one of the most surreal sights in the Cyclades.\n\n💡 What nobody tells you: Tinos rewards curiosity. The more you explore, the more it gives back. The island has never been colonised by mass international tourism, and in 2026 it is still largely what the Cyclades were fifty years ago: honest, serious and deeply rewarding for anyone who pays attention.",
+        el: "✕ **Να περιμένεις η Τήνος να σε διασκεδάσει** — Προσέγγισέ το ως φιλοξενούμενος.\n\n✕ **Να βλέπεις την εκκλησία μόνο ως φωτογραφία** — Η ατμόσφαιρα απαιτεί σεβασμό.\n\n✕ **Να μένεις μόνο στην ακτή** — Το εσωτερικό είναι μοναδικό. Νοίκιασε αυτοκίνητο.\n\n✕ **Να επισκέπτεσαι τον Πύργο βιαστικά** — Το Μουσείο Μαρμάρου αξίζει 90 λεπτά.\n\n✕ **Να παραλείπεις τον Βώλακα** — Ένα από τα πιο σουρεαλιστικά τοπία στις Κυκλάδες.\n\n💡 Αυτό που δε σου λέει κανείς: Η Τήνος ανταμείβει την περιέργεια. Το 2026 είναι ακόμα όπως ήταν οι Κυκλάδες πριν πενήντα χρόνια."
+      }
+    },
+    {
+      layout: "grid",
+      title: { en: "FAQ — Tinos Essentials", el: "Συχνές Ερωτήσεις" },
+      items: [
+        {
+          title: { en: "Is Tinos worth visiting if I have been to Mykonos or Santorini?", el: "Αξίζει η Τήνος αν έχω πάει σε Μύκονο ή Σαντορίνη;" },
+          text: { en: "Absolutely — and it is a fundamentally different experience. While Mykonos and Santorini are defined by beach clubs and caldera sunsets, Tinos offers depth: religious and cultural significance, marble craftsmanship, extraordinary interior landscape, the finest local food in the archipelago. Tinos is not a replacement but an essential counterpoint.", el: "Απολύτως — είναι μια θεμελιωδώς διαφορετική εμπειρία. Η Τήνος προσφέρει βάθος: θρησκευτική και πολιτιστική σημασία, μαρμαροτεχνία, εξαιρετική γαστρονομία." }
+        },
+        {
+          title: { en: "How do I get from Tinos to Mykonos or Delos?", el: "Πώς πάω από Τήνο σε Μύκονο ή Δήλο;" },
+          text: { en: "High-speed ferries connect Tinos to Mykonos in approximately 25 minutes. From Mykonos, excursion boats run to Delos daily. Tinos is an excellent base for a Delos day trip combined with a Mykonos evening.", el: "Ταχύπλοα συνδέουν Τήνο-Μύκονο σε 25 λεπτά. Η Τήνος είναι εξαιρετική βάση για Δήλο." }
+        },
+        {
+          title: { en: "What is the Museum of Marble Crafts?", el: "Τι είναι το Μουσείο Μαρμάρου;" },
+          text: { en: "One of the finest museums in the Greek islands — housed in a beautifully restored factory building, telling the full story of Tinian marble. Original machinery, working demonstrations and finished works. Allow 90 minutes minimum.", el: "Από τα ωραιότερα μουσεία στις Κυκλάδες. Αφήστε 90 λεπτά τουλάχιστον." }
+        },
+        {
+          title: { en: "What are the dovecotes and why are they unique?", el: "Τι είναι οι περιστερώνες και γιατί είναι μοναδικοί;" },
+          text: { en: "Ornate stone towers built during the Venetian period to house domestic pigeons. The extraordinary decorative elaboration of their facades — intricate geometric patterns — is unique to Tinos. Over a thousand survive as protected architectural heritage.", el: "Πετρόκτιστοι πύργοι της ενετικής περιόδου. Πάνω από χίλιοι σώζονται ως προστατευόμενη κληρονομιά." }
+        },
+        {
+          title: { en: "Is Tinos good in winter?", el: "Είναι καλή η Τήνος τον χειμώνα;" },
+          text: { en: "Better than almost any other Cycladic island. Tinos has a genuine year-round population. Tavernas, cafés, food shops and the church all operate. The marble workshops in Pyrgos are active year-round. A winter weekend offers cultural richness that summer-only islands cannot match.", el: "Καλύτερη από κάθε άλλη Κυκλάδα τον χειμώνα. Η Τήνος έχει μόνιμο πληθυσμό και λειτουργεί όλο τον χρόνο." }
+        },
+        {
+          title: { en: "How does Tinos compare to Syros?", el: "Πώς συγκρίνεται η Τήνος με τη Σύρο;" },
+          text: { en: "They complement each other perfectly. Syros is urban — a neoclassical city with an opera house. Tinos is rural — villages, marble, dovecotes and pilgrimage. Both have exceptional food cultures. The 35-minute ferry connection makes combining them easy.", el: "Η Σύρος είναι αστική, η Τήνος αγροτική. Και οι δύο έχουν εξαιρετική γαστρονομία. 35 λεπτά με πλοίο." }
+        },
+        {
+          title: { en: "How many days do I need in Tinos?", el: "Πόσες μέρες χρειάζομαι στην Τήνο;" },
+          text: { en: "Three days is the minimum for the church, Pyrgos, Volax and a beach. Five days allows you to explore the interior villages, visit the north coast, eat well and slow down. Tinos rewards extended stays more than almost any other Cycladic island.", el: "Τρεις μέρες ελάχιστα, πέντε για να εξερευνήσετε σωστά. Η Τήνος ανταμείβει τις μεγαλύτερες διαμονές." }
+        }
+      ]
+    }
+  ],
 };
