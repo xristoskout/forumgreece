@@ -1181,6 +1181,40 @@ export const destinations: Destination[] = [
     }
   },
   {
+    slug: "skopelos",
+    name: "Skopelos",
+    region: { en: "Sporades", el: "Σποράδες" },
+    blurb: {
+      en: "The greenest island in the Aegean — pine forests, turquoise bays, 360 chapels, and the most dramatic hilltop town in the Sporades.",
+      el: "Το πιο πράσινο νησί του Αιγαίου — πευκοδάσος, τιρκουάζ όρμοι, 360 εκκλησιάδες και η πιο θεαματική πόλη στους βουνούς των Σποράδων."
+    },
+    image: "/images/skopelos.webp",
+    overview: {
+      en: "Skopelos is the largest island of the Northern Sporades and, by any measure, one of the most naturally beautiful islands in the entire Aegean. Where its neighbor Skiathos trades on cosmopolitan beaches and nightlife, Skopelos is defined by something rarer: genuine character. Pine forests run almost to the water's edge, the island's capital looks as if it was carved directly into the hillside, and a network of Byzantine monasteries dots the landscape with a quiet persistence that feels entirely at odds with peak-season Greece.",
+      el: "Η Σκόπελος είναι το μεγαλύτερο νησί των Βορείων Σποράδων και, με οποιοδήποτε κριτήριο, ένα από τα πιο φυσικά όμορφα νησιά σε όλο το Αιγαίο. Ενώ η γειτονική Σκιάθος υποστηρίζεται στις κοσμοπολίτικες παραλίες και τη νυχτερινή ζωή, η Σκόπελος ορίζεται από κάτι σπάνιο: γνήσιο χαρακτήρα. Τα πευκοδάσος φτάνουν σχεδόν στην ακτή, η πρωτεύουσα του νησιού φαίνεται να είναι γλυμμένη απευθείας στονλόφο, και ένα δίκτυο βυζαντινών μοναστηριών διακοσμά την τοπιά με ήσυχη διαμονή που φαίνεται εντελώς αντίθετη στην κορυφαία σεζόν."
+    },
+    highlights: {
+      en: ["Skopelos Town (Chora)", "Agios Ioannis Chapel", "Panormos Beach", "Monasteries"],
+      el: ["Σκόπελος (Χώρα)", "Αγιος Ιωάννης Καπελοβρύση", "Παραλία Πάνορμος", "Μοναστήρια"]
+    },
+    guideLinks: [
+      {
+        href: "/destinations/skopelos",
+        label: { en: "Skopelos Full Guide", el: "Πλήρης Οδηγός Σκόπελος" }
+      }
+    ],
+    seo: {
+      title: {
+        en: "Skopelos Travel Guide 2026: Chora, Beaches, Mamma Mia! & Monasteries",
+        el: "Σκόπελος: Οδηγός Ταξιδιού 2026 — Χώρα, Παραλίες, Mamma Mia! & Μοναστήρια"
+      },
+      description: {
+        en: "Complete travel guide to Skopelos: the greenest Aegean island with Skopelos Town (Chora), Agios Ioannis Mamma Mia! chapel, Panormos & Kastani beaches, Byzantine monasteries, plum products, island hopping to Alonissos & Skiathos, and honest insider tips.",
+        el: "Πλήρης ταξιδιωτικός οδηγός για τη Σκόπελο: το πιο πράσινο νησί του Αιγαίου με τη Χώρα, την καπελοβρύση Αγίου Ιωάννη Mamma Mia!, τις παραλίες Πάνορμο & Καστάνη, βυζαντινά μοναστήρια, προϊόντα από δαμάσκηνα, νησιωτικά hopping και αυθεντικές συμβουλές."
+      }
+    }
+  },
+  {
     slug: "ikaria",
     name: "Ikaria",
     region: { en: "North Aegean", el: "Βόρειο Αιγαίο" },

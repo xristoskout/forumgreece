@@ -51,6 +51,8 @@ const STAY22_EMBEDS: Record<string, string> = {
   lasithi: "https://stay22.com/embed/6a23f6bcdf1132ff50fd7cc8",
   aegina: "https://stay22.com/embed/6a2408c4543a519eadd6cb4c",
   ikaria: "https://stay22.com/embed/6a25036b543a519eadd962d5",
+  tinos: "https://stay22.com/embed/6a2508d66f8247fde477ef54",
+  skopelos: "https://stay22.com/embed/6a251735df1132ff500060b2",
 };
 
 const HOTEL_NAMES: Record<string, string[]> = {
@@ -88,6 +90,8 @@ const HOTEL_NAMES: Record<string, string[]> = {
   lasithi: ["Elounda Peninsula", "Elounda Beach", "Domes of Elounda", "Daios Cove", "St. Nicolas Bay", "Minos Beach Art Hotel", "InterContinental Crete", "Royal Marmin Bay", "Sitia Beach City Resort", "NUMO Ierapetra Beach Resort", "Porto Maltese", "Cressa Ghitonia"],
   aegina: ["Marathonas Beach Hotel", "Thomas Beach Hotel", "Fistikies Apartments", "Souvala Mare", "Alkistis Apartments", "Artemis Apartments", "Papyrus Rooms", "Akrogiali", "Giannas Apartments", "Pnigma Apartments", "Aegina Hotel", "Rastoni", "Saronis", "Karthaia", "Perdiki", "Nafsika", "Pavlou", "Nisos", "Avra", "Rania", "Klonos", "Oasi", "Voula"],
   ikaria: ["Karras", "Erofili", "Fanari", "Arxontissa", "Ikaros Star", "Kavos", "Filiotis", "Mantalena", "Akti", "Cavos Bay", "Armenistis Hotel", "Tsakiris Apartments", "Nas Studios", "Thea", "Ammos"],
+  tinos: ["Ageri", "Aeolis Tinos", "Favie Eva", "Antama Suites", "Pelopas", "Pyrgos Houses", "The Lemon Tree", "Marble Stories", "Mare Monte", "Niriis", "Mansion Tinos", "Villa Lithos", "Kardiani View", "Tinos Bay Hotel", "Porto Tinos", "Agios Romanos"],
+  skopelos: ["Adrina Beach Hotel", "Elli Hotel", "Villea Seaview Apartments", "Panormos Village Hotel", "Panormos Bay apartments & studios", "Stafylos Suites & Boutique Hotel", "Irida Apartments", "Natura Luxury Boutique Hotel", "Hillside villas near Milia"],
 };
 
 function getStay22Url(slug: string): string {
@@ -98,6 +102,68 @@ function getAllezSearchUrl(hotelName: string, place: string): string {
   const addr = encodeURIComponent(place.replace(/ *—.*$/, "").trim() + ", Greece");
   const hotel = encodeURIComponent(hotelName);
   return `https://www.stay22.com/allez/roam?aid=${STAY22_AID}&campaign=${STAY22_CAMPAIGN}&hotelname=${hotel}&address=${addr}`;
+}
+
+function renderSectionContent(text: string | undefined, slug: string, place: string) {
+  if (!text) return null;
+  const blocks = text.split(/\n\n+/);
+  return blocks.map((block, i) => {
+    const trimmed = block.trim();
+    if (trimmed.startsWith("━━━")) {
+      return (
+        <div key={i} className="my-6 rounded-2xl bg-amber-50 border border-amber-200 px-6 py-4 text-base font-bold tracking-wide text-amber-900 shadow-sm">
+          {renderWithHotelLinks(trimmed.replace(/━/g, "").trim(), slug, place)}
+        </div>
+      );
+    }
+    if (trimmed.startsWith("💡")) {
+      return (
+        <div key={i} className="my-6 rounded-2xl bg-indigo-50 border border-indigo-200 px-6 py-5 shadow-sm">
+          <span className="text-base font-bold text-indigo-800 block mb-1">💡 Insider tip</span>
+          <span className="text-base leading-relaxed text-indigo-700">
+            {renderWithHotelLinks(trimmed.replace(/^💡\s*(Insider tip:\s*)?/i, ""), slug, place)}
+          </span>
+        </div>
+      );
+    }
+    if (trimmed.startsWith("⚠️")) {
+      return (
+        <div key={i} className="my-6 rounded-2xl bg-red-50 border border-red-200 px-6 py-5 shadow-sm">
+          <span className="text-base font-bold text-red-800 block mb-1">⚠️ Warning</span>
+          <span className="text-base leading-relaxed text-red-700">
+            {renderWithHotelLinks(trimmed.replace(/^⚠️\s*(Warning:\s*)?/i, ""), slug, place)}
+          </span>
+        </div>
+      );
+    }
+    if (trimmed.startsWith("✦")) {
+      const hotelMatch = trimmed.match(/^✦\s*(.+?)(?:\s*—\s*|\s*:\s*)(.+)/);
+      if (hotelMatch) {
+        return (
+          <div key={i} className="my-4 rounded-xl bg-white border border-slate-200 px-5 py-4 shadow-sm hover:shadow-md transition-shadow">
+            <span className="text-base font-bold text-slate-900 block">
+              {renderWithHotelLinks(hotelMatch[1].trim(), slug, place)}
+            </span>
+            <span className="text-base leading-relaxed text-slate-600 mt-1 block">
+              {renderWithHotelLinks(hotelMatch[2].trim(), slug, place)}
+            </span>
+          </div>
+        );
+      }
+      return (
+        <div key={i} className="my-4 rounded-xl bg-white border border-slate-200 px-5 py-4 shadow-sm">
+          <span className="text-base leading-relaxed text-slate-600">
+            {renderWithHotelLinks(trimmed, slug, place)}
+          </span>
+        </div>
+      );
+    }
+    return (
+      <p key={i} className="text-lg leading-relaxed text-slate-600">
+        {renderWithHotelLinks(trimmed, slug, place)}
+      </p>
+    );
+  });
 }
 
 function renderWithHotelLinks(text: string | undefined, slug: string, place: string) {
@@ -378,9 +444,9 @@ export default function HotelDetailsClient({ lang: serverLang, slug: serverSlug,
                 </h2>
               </div>
 
-              <p className="stay22-desc mt-8 text-lg leading-relaxed text-slate-600 whitespace-pre-line">
-                {item.description ? renderWithHotelLinks(item.description[lang], slug, item.place) : renderWithHotelLinks(item.overview[lang], slug, item.place)}
-              </p>
+              <div className="stay22-desc mt-8 text-lg leading-relaxed text-slate-600 whitespace-pre-line">
+                {item.description ? renderSectionContent(item.description[lang], slug, item.place) : renderSectionContent(item.overview[lang], slug, item.place)}
+              </div>
             </section>
             
             {item.sections && item.sections.length > 0 && (
@@ -394,7 +460,7 @@ export default function HotelDetailsClient({ lang: serverLang, slug: serverSlug,
                       {section.title[lang]}
                     </h2>
                     <div className="stay22-desc mt-8 text-lg leading-relaxed text-slate-600 whitespace-pre-line">
-                      {renderWithHotelLinks(section.content[lang], slug, item.place)}
+                      {renderSectionContent(section.content[lang], slug, item.place)}
                     </div>
                   </section>
                 ))}
