@@ -39,6 +39,7 @@ const regions = [
 ];
 
 export default function ToursDirectoryClient({ lang, tours }: Props) {
+  const [viewMode, setViewMode] = useState<"picks" | "all">("picks");
   const [activeBentoRegion, setActiveBentoRegion] = useState<string | null>(null);
 
   // Filter States
@@ -154,9 +155,41 @@ export default function ToursDirectoryClient({ lang, tours }: Props) {
               ? "Discover curated catamaran cruises, food tours, archaeological walks and authentic local encounters across Greece."
               : "Ανακαλύψτε κρουαζιέρες, γαστρονομικές περιηγήσεις και αυθεντικές τοπικές εμπειρίες."}
           </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.9, duration: 0.6 }}
+            className="mt-10 flex flex-wrap justify-center gap-3"
+          >
+            <button
+              onClick={() => setViewMode("picks")}
+              className={`px-8 py-3.5 rounded-full text-sm font-bold uppercase tracking-widest transition-all duration-300 ${
+                viewMode === "picks"
+                  ? "bg-white text-slate-900 shadow-2xl shadow-black/20 scale-105"
+                  : "bg-white/10 backdrop-blur-xl text-white/80 border border-white/20 hover:bg-white/20 hover:text-white"
+              }`}
+            >
+              🏆 {lang === "en" ? "Our Picks" : "Οι Προτάσεις μας"}
+            </button>
+            <button
+              onClick={() => setViewMode("all")}
+              className={`px-8 py-3.5 rounded-full text-sm font-bold uppercase tracking-widest transition-all duration-300 ${
+                viewMode === "all"
+                  ? "bg-white text-slate-900 shadow-2xl shadow-black/20 scale-105"
+                  : "bg-white/10 backdrop-blur-xl text-white/80 border border-white/20 hover:bg-white/20 hover:text-white"
+              }`}
+            >
+              🌍 {lang === "en" ? "All Tours & Experiences" : "Όλες οι Εκδρομές"}
+            </button>
+          </motion.div>
         </div>
       </section>
 
+      {/* ════════ OUR PICKS CONTENT ════════ */}
+      {viewMode === "picks" && (
+        <>
+      
       {/* ════════ SIGNATURE COLLECTION — Featured Tours ════════ */}
       <section className="mx-auto max-w-7xl px-6 mt-20">
         <div className="mb-12 text-center">
@@ -358,7 +391,11 @@ export default function ToursDirectoryClient({ lang, tours }: Props) {
         </div>
       </section>
 
-      {/* ════════ BROWSE ALL VIATOR TOURS BY REGION ════════ */}
+        </>
+      )}
+
+      {/* ════════ ALL TOURS: VIATOR REGION WIDGETS ════════ */}
+      {viewMode === "all" && (
       <section className="mx-auto max-w-7xl px-6 mt-28">
         <div className="text-center mb-14">
           <span className="text-[10px] font-extrabold uppercase tracking-[0.4em] text-cyan-600 block mb-3">
@@ -480,6 +517,8 @@ export default function ToursDirectoryClient({ lang, tours }: Props) {
           })}
         </div>
       </section>
+
+      )}
 
       {/* ════════ CTA ════════ */}
       <section className="mx-auto mt-28 max-w-4xl px-6">
