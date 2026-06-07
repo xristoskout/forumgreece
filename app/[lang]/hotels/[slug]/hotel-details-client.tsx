@@ -51,6 +51,7 @@ const STAY22_EMBEDS: Record<string, string> = {
   lasithi: "https://stay22.com/embed/6a23f6bcdf1132ff50fd7cc8",
   aegina: "https://stay22.com/embed/6a2408c4543a519eadd6cb4c",
   ikaria: "https://stay22.com/embed/6a25036b543a519eadd962d5",
+  tinos: "https://stay22.com/embed/6a2508d66f8247fde477ef54",
 };
 
 const HOTEL_NAMES: Record<string, string[]> = {
@@ -88,6 +89,7 @@ const HOTEL_NAMES: Record<string, string[]> = {
   lasithi: ["Elounda Peninsula", "Elounda Beach", "Domes of Elounda", "Daios Cove", "St. Nicolas Bay", "Minos Beach Art Hotel", "InterContinental Crete", "Royal Marmin Bay", "Sitia Beach City Resort", "NUMO Ierapetra Beach Resort", "Porto Maltese", "Cressa Ghitonia"],
   aegina: ["Marathonas Beach Hotel", "Thomas Beach Hotel", "Fistikies Apartments", "Souvala Mare", "Alkistis Apartments", "Artemis Apartments", "Papyrus Rooms", "Akrogiali", "Giannas Apartments", "Pnigma Apartments", "Aegina Hotel", "Rastoni", "Saronis", "Karthaia", "Perdiki", "Nafsika", "Pavlou", "Nisos", "Avra", "Rania", "Klonos", "Oasi", "Voula"],
   ikaria: ["Karras", "Erofili", "Fanari", "Arxontissa", "Ikaros Star", "Kavos", "Filiotis", "Mantalena", "Akti", "Cavos Bay", "Armenistis Hotel", "Tsakiris Apartments", "Nas Studios", "Thea", "Ammos"],
+  tinos: ["Ageri", "Aeolis Tinos", "Favie Eva", "Antama Suites", "Pelopas", "Pyrgos Houses", "The Lemon Tree", "Marble Stories", "Mare Monte", "Niriis", "Mansion Tinos", "Villa Lithos", "Kardiani View", "Tinos Bay Hotel", "Porto Tinos", "Agios Romanos"],
 };
 
 function getStay22Url(slug: string): string {
