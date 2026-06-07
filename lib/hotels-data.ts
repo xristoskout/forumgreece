@@ -3511,4 +3511,103 @@ export const hotels: HotelCard[] = [
       }
     }
   },
+  {
+    slug: "ikaria",
+    name: "Where to Stay in Ikaria",
+    place: "Ikaria — North Aegean",
+    info: {
+      en: "A complete guide to the best areas and hotels on one of Greece's most distinctive and unhurried islands — from the port capital Agios Kirykos to scenic Armenistis, thermal Therma, bohemian Nas and authentic Evdilos.",
+      el: "Ένας πλήρης οδηγός για τις καλύτερες περιοχές και ξενοδοχεία σε ένα από τα πιο ξεχωριστά νησιά της Ελλάδας — από την πρωτεύουσα Άγιο Κήρυκο μέχρι το γραφικό Αρμενιστή, τα Θέρμα, το μποέμ Νας και τον αυθεντικό Εύδηλο.",
+    },
+    image: "/images/ikaria.webp",
+    overview: {
+      en: "Ikaria is one of the most singular islands in Greece — a place that operates on its own terms, resists easy categorisation, and leaves a disproportionately deep impression on the people who visit it. Named after the mythological Icarus, who is said to have fallen into the sea nearby, the island has become internationally known in recent decades as one of the world's five Blue Zones: regions where people regularly live past the age of 90 in unusually good health. Researchers attribute this to a combination of diet, physical activity, strong social bonds, and — islanders will tell you — a fundamental disregard for schedules, urgency and the general pace of the outside world.",
+      el: "Η Ικαρία είναι ένα από τα πιο ξεχωριστά νησιά της Ελλάδας — ένας τόπος που λειτουργεί με τους δικούς του όρους, αντιστέκεται σε εύκολες κατηγοριοποιήσεις και αφήνει δυσανάλογα βαθιά εντύπωση σε όσους τον επισκέπτονται. Πήρε το όνομά της από τον μυθικό Ίκαρο. Έχει γίνει διεθνώς γνωστή ως μία από τις πέντε Μπλε Ζώνες του κόσμου.",
+    },
+    description: {
+      en: "The island is elongated and mountainous, running approximately 40 kilometres from east to west, with a spine of pine-forested peaks rising to over 1,000 metres. The north coast is more rugged and indented; the south coast steeper and more exposed to the summer meltemi. Two distinct halves are connected by a winding mountain road that cuts across the interior — scenic and rewarding, but slow. The main port, Agios Kirykos, sits on the south coast in the east. The most tourist-oriented area, Armenistis, is on the north coast in the west. This geography is not incidental: it shapes the entire logic of where to stay.\n\nIkaria has no mass tourism. There are no international hotel chains, no club resorts, no all-inclusives. Accommodation is predominantly family-run studios, guesthouses, small hotels and private rooms — many of which open only in summer and are run with a cheerful informality that reflects the island's character. Choosing the right base here matters considerably.",
+      el: "Το νησί είναι μακρόστενο και ορεινό, μήκους περίπου 40 χιλιομέτρων, με πευκόφυτες κορυφές που ξεπερνούν τα 1.000 μέτρα. Η βόρεια ακτή είναι πιο απότομη και γεμάτη όρμους, η νότια πιο απόκρημνη και εκτεθειμένη στο μελτέμι. Ο κύριος δρόμος διασχίζει το εσωτερικό του νησιού συνδέοντας τα δύο μισά. Η Ικαρία δεν έχει μαζικό τουρισμό, διεθνείς αλυσίδες ξενοδοχείων ή all-inclusive θέρετρα. Η διαμονή είναι κυρίως σε οικογενειακά στούντιο, ξενώνες και μικρά ξενοδοχεία.",
+    },
+    features: {
+      en: ["Agios Kirykos (Capital & Port)", "Armenistis (Scenic & Relaxed)", "Therma (Spa & Local)", "Nas (Remote & Bohemian)", "Evdilos (Authentic North)", "Blue Zone — Longevity Island", "Panigiria festivals (Summer)", "Seychelles Beach", "Messakti (Windsurfing)", "Chalaris River Gorge"],
+      el: ["Άγιος Κήρυκος (Πρωτεύουσα & Λιμάνι)", "Αρμενιστής (Γραφικά & Χαλαρά)", "Θέρμα (Spa & Τοπικά)", "Νας (Απόμακρο & Μποέμ)", "Εύδηλος (Αυθεντικός Βορράς)", "Μπλε Ζώνη — Νησί Μακροζωίας", "Πανηγύρια (Καλοκαίρι)", "Παραλία Σεϋχέλλες", "Μεσακτή (Windsurfing)", "Φαράγγι Χάλαρη"],
+    },
+    sections: [
+      {
+        title: { en: "1. Agios Kirykos — Capital, Port & Administrative Hub", el: "1. Άγιος Κήρυκος — Πρωτεύουσα, Λιμάνι & Διοικητικό Κέντρο" },
+        content: {
+          en: "Agios Kirykos is the island's capital and main ferry port, sitting on the southern coast at the eastern end of Ikaria. It is a working Greek town rather than a tourist resort, and its energy reflects this distinction: there are pharmacies, hospitals, banks, supermarkets, a post office, government offices and the practical infrastructure of daily island life. The harbour front is lively in the evenings, with waterfront cafés and tavernas drawing both locals and visitors.\n\nFerries connecting Ikaria to Piraeus, Samos, Mykonos, Chios and Kavala depart from here, as do seasonal high-speed services to the Cyclades. The airport is three kilometres west of town, making Agios Kirykos the most practically convenient base on the island for arrivals and departures. The town beach is modest but functional; better swimming is available at Therma, a ten-minute walk east.\n\nAccommodation in Agios Kirykos is unpretentious: small hotels, studios and apartment rentals near the port. Prices are among the lowest on the island and availability is generally good even in peak season. The town is compact and walkable. An excellent fish taverna on the harbour is one of the more reliable meals on the island.\n\n**Honest note:** Agios Kirykos is not a beautiful town and is not the reason anyone comes to Ikaria. The south coast location puts it further from the island's most scenic areas — Armenistis, Nas, the north coast beaches — all of which require a 40–70 minute drive across the mountain road. For travellers arriving by ferry or flying in and out, it is a practical overnight stop. For anyone staying more than two nights and prioritising scenery or beaches, it is not the best base.",
+          el: "Ο Άγιος Κήρυκος είναι η πρωτεύουσα και το κύριο λιμάνι της Ικαρίας, στη νότια ακτή. Είναι μια εργατούπολη, όχι τουριστικό θέρετρο. Το λιμάνι έχει καφέ και ταβέρνες. Τα πλοία συνδέουν την Ικαρία με Πειραιά, Σάμο, Μύκονο, Χίο και Καβάλα. Το αεροδρόμιο είναι 3 χλμ δυτικά. Η διαμονή είναι λιτή και οικονομική. Ο Άγιος Κήρυκος δεν είναι όμορφη πόλη και απέχει 40-70 λεπτά από τις βόρειες παραλίες. Είναι πρακτική βάση μόνο για άφιξη/αναχώρηση.",
+        }
+      },
+      {
+        title: { en: "2. Armenistis — The Most Scenic Base on the Island", el: "2. Αρμενιστής — Η Πιο Γραφική Βάση του Νησιού" },
+        content: {
+          en: "Armenistis is a small coastal village on the north coast, about 55 kilometres by road from Agios Kirykos, and it is the natural choice for most visitors who come to Ikaria for its beaches, landscape and atmosphere. The village itself is modest in scale — a scatter of whitewashed houses on a hillside above the sea, a handful of tavernas, a few minimarkets — but its position is exceptional, with sweeping views of the Aegean and direct access to two of the finest beaches on the island: Livadi and Messakti.\n\nLivadi is a broad sandy beach immediately below the village, with calm water and relatively easy access — popular with families, swimmers and those who want convenience. Messakti, a five-minute walk further east, is longer, more exposed and one of the best windsurfing beaches in the eastern Aegean, with strong reliable summer winds. Between the two, the rocky headland above the village offers some of the best sunset views on the island.\n\nAccommodation in and around Armenistis is the most developed on the island — which, in Ikarian terms, means small family hotels, studios with sea views and a growing number of boutique rooms with genuine design attention. Book ahead for July and August; Armenistis fills earlier than the rest of the island.\n\n**Honest note:** Armenistis is relatively far from the south coast and Agios Kirykos. If your ferry or flight arrives in the capital, the drive is long after a long journey. The road across the mountain is spectacular but genuinely winding — not comfortable in the dark or if you are not used to narrow Greek mountain roads.",
+          el: "Ο Αρμενιστής είναι ένα μικρό παραθαλάσσιο χωριό στη βόρεια ακτή, η φυσική επιλογή για όσους έρχονται για τις παραλίες και το τοπίο. Έχει άμεση πρόσβαση στο Λιβάδι και τη Μεσακτή, δύο από τις ωραιότερες παραλίες του νησιού. Το Λιβάδι είναι αμμώδες με ήρεμα νερά, ιδανικό για οικογένειες. Η Μεσακτή είναι μεγαλύτερη και ιδανική για windsurfing. Η διαμονή εδώ είναι η πιο ανεπτυγμένη στο νησί — μικρά οικογενειακά ξενοδοχεία και στούντιο με θέα. Κάντε κράτηση νωρίς για Ιούλιο-Αύγουστο.",
+        }
+      },
+      {
+        title: { en: "3. Therma — Thermal Baths, Local Life & Evening Atmosphere", el: "3. Θέρμα — Ιαματικά Λουτρά, Τοπική Ζωή & Βραδινή Ατμόσφαιρα" },
+        content: {
+          en: "Therma is a small seaside settlement about two kilometres east of Agios Kirykos along the south coast — close enough to walk, distinct enough to feel like its own place. It has been a destination for therapeutic bathing since ancient times, and its natural radioactive thermal springs remain the focal point of life here. The public baths, fed by springs at around 33–34°C, have been drawing Greek visitors for generations — less as a tourist attraction and more as a functional wellness practice.\n\nTherma has a genuinely local, unhurried character. The waterfront is pleasant for evening walks and there are several good tavernas serving traditional food. The cove below the village offers reasonable swimming; the water is notably warmer here than the island average due to the thermal vents on the seabed. At night, small groups gather at the semi-covered outdoor spring area near the shore.\n\nAccommodation in Therma is modest and mostly geared toward the wellness-oriented visitor: small hotels, studios and rooms with basic facilities. Prices are very reasonable.\n\n**Honest note:** Therma has limited appeal if thermal bathing is not part of your plan. The beach is unremarkable, the selection of accommodation is restricted, and the north coast beaches require the full mountain crossing to reach.",
+          el: "Τα Θέρμα είναι ένας μικρός παραθαλάσσιος οικισμός 2 χλμ ανατολικά του Αγίου Κηρύκου. Από την αρχαιότητα αποτελούν προορισμό για ιαματικά λουτρά. Οι φυσικές ραδιενεργές πηγές με θερμοκρασία 33-34°C προσελκύουν επισκέπτες για γενιές. Η διαμονή είναι λιτή και προσιτή. Τα Θέρμα έχουν περιορισμένη απήχηση αν δεν σας ενδιαφέρουν τα ιαματικά λουτρά.",
+        }
+      },
+      {
+        title: { en: "4. Nas — The Most Remote & Bohemian Stay on Ikaria", el: "4. Νας — Η Πιο Απόμακρη & Μποέμ Διαμονή στην Ικαρία" },
+        content: {
+          en: "Nas is a tiny settlement at the far western tip of the north coast, reached by a narrow road that branches off from the main coastal route about six kilometres west of Armenistis. The name comes from the ancient temple of Artemis Tauropolion that once stood above the river mouth here — the foundations are still partially visible. The river itself, the Chalaris, flows through a gorge of extraordinary beauty before opening into a small sheltered cove with dark, dramatic pebbles and strikingly clear water.\n\nNas is the most atmospheric spot on Ikaria. Its reputation draws a mix of free-spirited travellers, nature lovers and people who have been coming here for decades and return with quiet loyalty. There are two or three tavernas at the clifftop above the cove and a handful of basic rooms and studios scattered among the trees and rocks. There is very little else, and this is precisely its appeal.\n\nSwimming at Nas requires navigating the river current near the mouth of the cove and reading the daily conditions carefully. The gorge walk upstream along the Chalaris, through ancient plane trees and under overhanging rock, is one of the finest short walks in the Aegean islands.\n\n**Honest note:** Nas has almost no practical facilities. There are no ATMs, no pharmacies, no supermarkets and no mobile signal in parts of the area. Accommodation options are very limited and must be booked well in advance. This is genuinely one of the most special places to stay in Greece — but only for travellers who are comfortable with remoteness and simplicity.",
+          el: "Το Νας είναι ένας μικρός οικισμός στο δυτικό άκρο της βόρειας ακτής. Πήρε το όνομά του από τον αρχαίο ναό της Αρτέμιδος Ταυροπολίου. Ο ποταμός Χάλαρης ρέει μέσα από ένα φαράγγι εξαιρετικής ομορφιάς. Είναι το πιο ατμοσφαιρικό σημείο της Ικαρίας. Υπάρχουν 2-3 ταβέρνες και λίγα βασικά δωμάτια. Δεν υπάρχουν ΑΤΜ, φαρμακεία ή σούπερ μάρκετ. Ιδανικό για όσους αγαπούν την απομόνωση.",
+        }
+      },
+      {
+        title: { en: "5. Evdilos & the North Coast Villages — Authentic & Underrated", el: "5. Εύδηλος & Χωριά Βόρειας Ακτής — Αυθεντικά & Υποτιμημένα" },
+        content: {
+          en: "Evdilos is the island's second port, on the north coast, and a genuinely pleasant small town that sees far fewer visitors than Armenistis despite being only 15 kilometres to the east. It has a proper harbour with a café-lined waterfront, a few decent tavernas and a low-key, working-village atmosphere that feels entirely authentic. Ferries call here on most routes, making it a viable alternative arrival point.\n\nThe coastline between Evdilos and Armenistis passes through a series of small settlements — Gialiskari, Kambos beach, Fytema — with quiet coves, pine-backed shores and an unhurried pace. Several small hotels and studios operate in this corridor, offering good value and easy access to both the beaches near Armenistis and the ferry port at Evdilos.\n\nFor travellers who want the north coast scenery without the relative concentration of Armenistis, and who appreciate genuinely local character over any form of tourist infrastructure, Evdilos and the villages east of it are an excellent base.\n\n**Honest note:** The accommodation choice around Evdilos is narrower than in Armenistis and the selection of restaurants thinner. In July and August the difference matters less, but outside peak season some places close entirely. Verify opening dates when booking.",
+          el: "Ο Εύδηλος είναι το δεύτερο λιμάνι του νησιού στη βόρεια ακτή, με λιγότερους επισκέπτες από τον Αρμενιστή. Έχει ωραίο λιμάνι με καφέ και ταβέρνες. Η ακτογραμμή μεταξύ Ευδήλου και Αρμενιστή έχει ήσυχους όρμους και πευκόφυτες ακτές. Ιδανική βάση για όσους θέλουν το τοπίο της βόρειας ακτής χωρίς τη σχετική συγκέντρωση του Αρμενιστή. Η επιλογή διαμονής είναι μικρότερη και εκτός σεζόν πολλά μέρη κλείνουν.",
+        }
+      },
+    ],
+    faq: [
+      {
+        q: { en: "How do I get to Ikaria?", el: "Πώς φτάνω στην Ικαρία;" },
+        a: { en: "By ferry from Piraeus (8–10 hours), from Samos (2 hours), or from the Cyclades via seasonal high-speed services. Flights from Athens to Ikaria National Airport take 45 minutes and operate several times weekly in summer. Both Agios Kirykos and Evdilos receive ferries.", el: "Ακτοπλοϊκά από Πειραιά (8-10 ώρες), από Σάμο (2 ώρες) ή αεροπορικώς από Αθήνα (45 λεπτά)." }
+      },
+      {
+        q: { en: "Do I need a rental car in Ikaria?", el: "Χρειάζομαι ενοικίαση αυτοκινήτου στην Ικαρία;" },
+        a: { en: "Yes — strongly recommended. Ikaria is large, mountainous, and public buses are limited. A car gives you the freedom to explore both coasts and reach remote beaches, villages and the panigiri festivals. Without a car, you will be largely confined to the area nearest your accommodation.", el: "Ναι — συνιστάται έντονα. Η Ικαρία είναι μεγάλη και ορεινή και τα λεωφορεία είναι περιορισμένα." }
+      },
+      {
+        q: { en: "When is the best time to visit Ikaria?", el: "Πότε είναι η καλύτερη εποχή για την Ικαρία;" },
+        a: { en: "June and September offer the best balance of warm weather, open facilities and manageable crowds. July and August are peak season — the panigiri festivals are at their most frequent, but accommodation fills early and prices are higher. May and October are quieter with fewer open restaurants and hotels.", el: "Ιούνιος και Σεπτέμβριος έχουν την καλύτερη ισορροπία. Ιούλιος και Αύγουστος είναι αιχμή με πολλά πανηγύρια." }
+      },
+      {
+        q: { en: "What are the panigiria festivals?", el: "Τι είναι τα πανηγύρια;" },
+        a: { en: "Panigiria are village festivals held on each community's patron saint day — featuring live traditional music, dancing, communal food and free-flowing local wine. They start in the evening and often continue until dawn. Everyone is welcome. They are the social heart of Ikarian life and the most authentic cultural experience on the island.", el: "Γιορτές σε κάθε χωριό με ζωντανή μουσική, χορό, φαγητό και κρασί. Ξεκινούν το βράδυ και κρατούν ως το πρωί. Είναι η καρδιά της ικαριώτικης κοινωνικής ζωής." }
+      },
+      {
+        q: { en: "Is Ikaria suitable for families with children?", el: "Είναι η Ικαρία κατάλληλη για οικογένειες;" },
+        a: { en: "Yes, particularly in Armenistis and the north coast beaches where the water is calm and the pace is relaxed. The island is safe and welcoming. Families should note that many restaurants have limited children's menus and that the mountain roads are winding — factor this into day trips.", el: "Ναι, ειδικά στον Αρμενιστή και τις βόρειες παραλίες. Ασφαλές και φιλόξενο νησί." }
+      },
+      {
+        q: { en: "What is the best beach in Ikaria?", el: "Ποια είναι η καλύτερη παραλία στην Ικαρία;" },
+        a: { en: "Seychelles Beach on the south coast is the most famous — a small pebble cove with turquoise water, reached by a steep path. Messakti near Armenistis is the best for windsurfing and long walks. Nas is the most atmospheric. Livadi is the most convenient for families. The answer depends on what you are looking for.", el: "Η παραλία Σεϋχέλλες είναι η πιο διάσημη. Η Μεσακτή είναι η καλύτερη για windsurfing. Το Νας είναι το πιο ατμοσφαιρικό." }
+      },
+      {
+        q: { en: "How many nights should I spend in Ikaria?", el: "Πόσες νύχτες να μείνω στην Ικαρία;" },
+        a: { en: "A minimum of four nights, ideally a week. Ikaria reveals itself slowly — the landscape, the rhythm of life, the food, the people. Visitors who stay only two or three nights often leave without understanding what makes the island special. Those who stay a week tend to extend.", el: "Τέσσερις νύχτες τουλάχιστον, ιδανικά μία εβδομάδα. Η Ικαρία αποκαλύπτεται σιγά σιγά." }
+      },
+    ],
+    seo: {
+      title: {
+        en: "Where to Stay in Ikaria | Best Areas & Hotels Guide | GoGreeceNow",
+        el: "Πού να Μείνετε στην Ικαρία | Καλύτερες Περιοχές & Ξενοδοχεία | GoGreeceNow"
+      },
+      description: {
+        en: "Find the best places to stay in Ikaria — from the capital Agios Kirykos and scenic Armenistis to thermal Therma, bohemian Nas and authentic Evdilos. Complete Ikaria hotel guide with honest advice.",
+        el: "Βρείτε τα καλύτερα μέρη για διαμονή στην Ικαρία — από τον Άγιο Κήρυκο και τον Αρμενιστή μέχρι τα Θέρμα, το Νας και τον Εύδηλο. Πλήρης οδηγός διαμονής."
+      }
+    },
+  },
 ];
