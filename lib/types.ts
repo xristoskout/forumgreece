@@ -143,3 +143,45 @@ export type CommunityCard = {
   description: Localized;
   href: string;
 };
+
+export type TourExperienceType = 
+  | "boat" 
+  | "food" 
+  | "history" 
+  | "adventure" 
+  | "wellness" 
+  | "day-trip"
+  | "cultural"
+  | "nature";
+
+export type TourExperience = {
+  slug: string;
+  title: Localized;
+  shortDescription: Localized;
+  destination: string; // e.g., "Santorini", "Athens"
+  region: string; // e.g., "Cyclades", "Attica", "Crete"
+  type: TourExperienceType;
+  typeLabel: Localized; // display label for the type
+  duration: string; // e.g., "4 hours", "Full day", "Half day"
+  durationHours: number; // for sorting/filtering
+  priceFrom: number; // in EUR
+  priceLabel: Localized; // e.g., "from €45/person"
+  rating: number; // 0-5
+  reviewCount: number;
+  image: string;
+  images?: string[]; // gallery
+  highlights: LocalizedList; // key highlights
+  included: LocalizedList; // what's included
+  notIncluded?: LocalizedList; // what's not included
+  meetingPoint: Localized;
+  groupSize: string; // e.g., "Up to 12", "Private"
+  difficulty: "easy" | "moderate" | "challenging";
+  languages: string[]; // e.g., ["en", "el", "fr", "de"]
+  badge?: "bestseller" | "new" | "local-favorite" | "exclusive";
+  bookingUrl?: string;
+  featured?: boolean;
+  seo?: {
+    title: Localized;
+    description: Localized;
+  };
+};
