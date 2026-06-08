@@ -157,7 +157,7 @@ const nextConfig: NextConfig = {
               "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
               "img-src 'self' data: https: blob:",
               "font-src 'self' data: https://fonts.gstatic.com",
-              "connect-src 'self' https://generativelanguage.googleapis.com https://vitals.vercel-insights.com https://cdn.sanity.io https://*.viator.com https://*.tripadvisor.com https://stay22.com https://*.stay22.com",
+              "connect-src 'self' https://generativelanguage.googleapis.com https://vitals.vercel-insights.com https://cdn.sanity.io https://*.viator.com https://*.tripadvisor.com https://stay22.com https://*.stay22.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com",
               "frame-src 'self' https://www.youtube.com https://*.viator.com https://stay22.com https://*.stay22.com https://*.tripadvisor.com https://www.google.com https://maps.googleapis.com",
               "media-src 'self' https:",
               "object-src 'none'",

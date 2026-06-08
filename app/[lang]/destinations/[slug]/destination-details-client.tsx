@@ -366,72 +366,115 @@ export default function DestinationDetailsClient({
               </p>
             </article>
 
-            {sections.map((section, idx) => (
-              <Fragment key={idx}>
-                <article className="rounded-[28px] border border-slate-200 bg-white backdrop-blur-md p-8 shadow-sm">
-                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700">
-                    {destination.name}
-                  </p>
+            {sections.map((section, idx) => {
+              const isHonestAdvice = section.title.en.toLowerCase().includes("honest advice") || section.title.en.toLowerCase().includes("what to skip") || section.title.el.includes("Ειλικρινής Συμβουλή") || section.title.el.includes("Τι να Αποφύγεις");
 
-                  <h3 className="mt-3 text-2xl font-bold tracking-tight">
-                    {section.title[lang]}
-                  </h3>
+              if (isHonestAdvice && section.text) {
+                const text = section.text[lang];
+                const lines = text.split('\n').filter(l => l.trim());
+                const items: string[] = [];
+                let insight = '';
+                for (const line of lines) {
+                  const trimmed = line.trim();
+                  if (trimmed.startsWith('✕')) {
+                    items.push(trimmed.replace(/^✕\s*\*\*[^*]+\*\*\s*—\s*/, '').trim());
+                  } else if (trimmed.startsWith('💡')) {
+                    insight = trimmed.replace(/^💡\s*/, '').trim();
+                  }
+                }
 
-                  {section.text && (
-                    <p className="mt-5 text-base leading-8 text-slate-500">
-                      {section.text[lang]}
-                    </p>
-                  )}
-
-                  {section.alert && (
-                    <div className="mt-6 rounded-2xl bg-amber-50 border border-amber-200 p-5 shadow-sm">
-                      <p className="text-sm font-medium leading-relaxed text-amber-800">
-                        💡 {section.alert[lang]}
+                return (
+                  <Fragment key={idx}>
+                    <article className="rounded-[28px] border border-slate-200 bg-gradient-to-br from-red-50 to-white p-8 shadow-sm">
+                      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-red-700">
+                        {section.title[lang]}
                       </p>
-                    </div>
-                  )}
-
-                  {section.items && section.items.length > 0 && (
-                    <div className={`mt-8 ${
-                      section.layout === "grid" ? "grid gap-4 sm:grid-cols-2" :
-                      section.layout === "numbered" ? "space-y-8" :
-                      section.layout === "faq" ? "space-y-6" :
-                      "space-y-6"
-                    }`}>
-                      {section.items.map((item, itemIdx) => (
-                        <div
-                          key={itemIdx}
-                          className={
-                            section.layout === "grid"
-                              ? "rounded-2xl border border-slate-200 bg-slate-50/50 p-6 transition-colors hover:bg-slate-50"
-                              : section.layout === "numbered"
-                              ? "relative pl-14"
-                              : section.layout === "faq"
-                              ? "border-b border-slate-100 pb-6 last:border-0 last:pb-0"
-                              : "rounded-2xl border border-slate-200 bg-slate-50/50 p-6"
-                          }
-                        >
-                          {section.layout === "numbered" && (
-                            <span className="absolute left-0 top-0 flex h-9 w-9 items-center justify-center rounded-full bg-indigo-100 text-sm font-bold text-indigo-700">
-                              {itemIdx + 1}
-                            </span>
-                          )}
-                          
-                          {item.title && (
-                            <h4 className={`font-bold ${section.layout === 'faq' ? 'text-lg text-slate-900 mb-2' : 'text-slate-900 mb-2 mt-0'}`}>
-                              {item.title[lang]}
-                            </h4>
-                          )}
-                          <p className={`text-base leading-relaxed ${section.layout === 'faq' ? 'text-slate-600' : 'text-slate-500'}`}>
-                            {item.text[lang]}
+                      <div className="mt-5 grid gap-3">
+                        {items.map((item, i) => (
+                          <div key={i} className="rounded-2xl border border-red-100 bg-white px-4 py-3 text-sm font-medium text-slate-600">
+                            <span className="text-red-500 mr-1.5">✕</span>{item}
+                          </div>
+                        ))}
+                      </div>
+                      {insight && (
+                        <div className="mt-5 rounded-2xl bg-amber-50 border border-amber-200 p-4">
+                          <p className="text-xs font-medium leading-relaxed text-amber-800">
+                            💡 {insight}
                           </p>
                         </div>
-                      ))}
-                    </div>
-                  )}
-                </article>
-              </Fragment>
-            ))}
+                      )}
+                    </article>
+                  </Fragment>
+                );
+              }
+
+              return (
+                <Fragment key={idx}>
+                  <article className="rounded-[28px] border border-slate-200 bg-white backdrop-blur-md p-8 shadow-sm">
+                    <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700">
+                      {destination.name}
+                    </p>
+
+                    <h3 className="mt-3 text-2xl font-bold tracking-tight">
+                      {section.title[lang]}
+                    </h3>
+
+                    {section.text && (
+                      <p className="mt-5 text-base leading-8 text-slate-500">
+                        {section.text[lang]}
+                      </p>
+                    )}
+
+                    {section.alert && (
+                      <div className="mt-6 rounded-2xl bg-amber-50 border border-amber-200 p-5 shadow-sm">
+                        <p className="text-sm font-medium leading-relaxed text-amber-800">
+                          💡 {section.alert[lang]}
+                        </p>
+                      </div>
+                    )}
+
+                    {section.items && section.items.length > 0 && (
+                      <div className={`mt-8 ${
+                        section.layout === "grid" ? "grid gap-4 sm:grid-cols-2" :
+                        section.layout === "numbered" ? "space-y-8" :
+                        section.layout === "faq" ? "space-y-6" :
+                        "space-y-6"
+                      }`}>
+                        {section.items.map((item, itemIdx) => (
+                          <div
+                            key={itemIdx}
+                            className={
+                              section.layout === "grid"
+                                ? "rounded-2xl border border-slate-200 bg-slate-50/50 p-6 transition-colors hover:bg-slate-50"
+                                : section.layout === "numbered"
+                                ? "relative pl-14"
+                                : section.layout === "faq"
+                                ? "border-b border-slate-100 pb-6 last:border-0 last:pb-0"
+                                : "rounded-2xl border border-slate-200 bg-slate-50/50 p-6"
+                            }
+                          >
+                            {section.layout === "numbered" && (
+                              <span className="absolute left-0 top-0 flex h-9 w-9 items-center justify-center rounded-full bg-indigo-100 text-sm font-bold text-indigo-700">
+                                {itemIdx + 1}
+                              </span>
+                            )}
+                            
+                            {item.title && (
+                              <h4 className={`font-bold ${section.layout === 'faq' ? 'text-lg text-slate-900 mb-2' : 'text-slate-900 mb-2 mt-0'}`}>
+                                {item.title[lang]}
+                              </h4>
+                            )}
+                            <p className={`text-base leading-relaxed ${section.layout === 'faq' ? 'text-slate-600' : 'text-slate-500'}`}>
+                              {item.text[lang]}
+                            </p>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </article>
+                </Fragment>
+              );
+            })}
           </div>
 
           <aside className="space-y-6">
