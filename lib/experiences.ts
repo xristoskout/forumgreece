@@ -1316,4 +1316,6 @@ export const VIATOR_WIDGET_MAPPING: Record<string, string> = {
   "Skiathos": "W-1ac32b71-951f-4218-a965-6665da31db36",
   "Thassos": "W-cc208ed2-04dc-4148-8504-5147f9936bdb",
   "Skopelos": "W-cb4a55b0-4e48-4e6c-8114-33afcaa6d353",
+  "Lefkada": "W-a5fdc176-a350-4332-8f26-6c3f1d572321",
+  "Syros": "W-fdcdd762-3ff5-4fdb-9b8d-00b7a3d4b6e9",
 };
