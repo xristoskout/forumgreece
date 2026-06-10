@@ -63,7 +63,7 @@ export default function DiscoverCarsWidget({
 </head>
 <body>
   <div id="dchwidget" ${dataAttrs}></div>
-  <script src="${WIDGET_SCRIPT}"><\/script>
+  <script src="${WIDGET_SCRIPT}?v=${Date.now()}"><\/script>
 </body>
 </html>`;
 
