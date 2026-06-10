@@ -8,6 +8,7 @@ import { siteBrand, food, type Destination, type Lang } from "../../../../lib/co
 import Image from "next/image";
 import { destinationSections } from "../../../../lib/destination-sections";
 import { destinationDetails } from "../../../../lib/destination-details";
+import DiscoverCarsWidget from "../../../../components/discovercars-widget";
 import { experienceBusinesses } from "../../../../lib/experiences";
 
 export default function DestinationDetailsClient({
@@ -530,6 +531,27 @@ export default function DestinationDetailsClient({
                 </article>
               );
             })()}
+
+            <article className="rounded-[28px] border border-slate-200 bg-gradient-to-br from-blue-50 to-white p-8 shadow-sm">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">
+                {lang === "el" ? "Ενοικίαση Αυτοκινήτου" : "Car Rental"}
+              </p>
+              <h4 className="mt-3 text-xl font-extrabold text-slate-800">
+                {lang === "el"
+                  ? `Ενοικίαση αυτοκινήτου στη ${destination.name}`
+                  : `Rent a Car in ${destination.name}`}
+              </h4>
+              <p className="mt-2 text-sm text-slate-500 leading-relaxed">
+                {lang === "el"
+                  ? "Σύγκρινε τις καλύτερες προσφορές ενοικίασης αυτοκινήτου και εξοικονόμησε έως 70%."
+                  : "Compare the best car rental deals and save up to 70%."}
+              </p>
+              <DiscoverCarsWidget
+                location={destination.slug === "crete" || destination.slug === "chania" || destination.slug === "heraklion" || destination.slug === "lasithi" || destination.slug === "rethymno" ? "crete" : destination.slug === "athens" ? "athens" : destination.slug === "thessaloniki" ? "thessaloniki" : destination.slug === "corfu" ? "corfu" : destination.slug === "rhodes" ? "rhodes" : destination.slug === "zakynthos" ? "zakynthos" : destination.slug === "kefalonia" ? "kefalonia" : destination.slug === "lesvos" ? "lesvos" : destination.slug === "chios" ? "chios" : destination.slug === "kos" ? "kos" : destination.slug === "naxos" ? "naxos" : destination.slug === "paros" ? "paros" : destination.slug === "mykonos" ? "mykonos" : destination.slug === "santorini" ? "santorini" : "greece"}
+                lang={lang}
+                className="mt-4"
+              />
+            </article>
 
             {details && (
               <>
