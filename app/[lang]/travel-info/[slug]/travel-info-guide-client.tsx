@@ -7,6 +7,7 @@ import { experienceBusinesses } from "../../../../lib/experiences";
 import { useLocale } from "../../../../lib/useLocale";
 import Image from "next/image";
 import type { Lang } from "../../../../lib/content";
+import DiscoverCarsWidget from "../../../../components/discovercars-widget";
 
 type TravelInfoGuideData = {
   slug: string;
@@ -272,6 +273,26 @@ export default function TravelInfoGuideClient({ lang, slug, item }: TravelInfoGu
 
           <aside className="sticky top-28 space-y-6">
             {renderBusinesses()}
+
+            <article className="rounded-[28px] border border-slate-200 bg-gradient-to-br from-blue-50 to-white p-8 shadow-sm">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">
+                {lang === "el" ? "Ενοικίαση Αυτοκινήτου" : "Car Rental"}
+              </p>
+              <h4 className="mt-3 text-xl font-extrabold text-slate-800">
+                {lang === "el" ? "Ενοικίαση αυτοκινήτου στην Ελλάδα" : "Rent a Car in Greece"}
+              </h4>
+              <p className="mt-2 text-sm text-slate-500 leading-relaxed">
+                {lang === "el"
+                  ? "Σύγκρινε τις καλύτερες προσφορές ενοικίασης αυτοκινήτου και εξοικονόμησε έως 70%."
+                  : "Compare the best car rental deals and save up to 70%."}
+              </p>
+              <DiscoverCarsWidget
+                key={slug}
+                location="greece"
+                lang={lang}
+                className="mt-4"
+              />
+            </article>
 
             <div className="rounded-[2rem] border border-slate-200 bg-white shadow-xl shadow-slate-200/50 p-8">
               <h3 className="text-sm font-bold uppercase tracking-[0.2em] text-indigo-600 mb-6 flex items-center gap-2">
