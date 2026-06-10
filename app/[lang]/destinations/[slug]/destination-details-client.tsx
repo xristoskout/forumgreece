@@ -547,6 +547,7 @@ export default function DestinationDetailsClient({
                   : "Compare the best car rental deals and save up to 70%."}
               </p>
               <DiscoverCarsWidget
+                key={destination.slug}
                 location={destination.slug === "crete" || destination.slug === "chania" || destination.slug === "heraklion" || destination.slug === "lasithi" || destination.slug === "rethymno" ? "crete" : destination.slug === "athens" ? "athens" : destination.slug === "thessaloniki" ? "thessaloniki" : destination.slug === "corfu" ? "corfu" : destination.slug === "rhodes" ? "rhodes" : destination.slug === "zakynthos" ? "zakynthos" : destination.slug === "kefalonia" ? "kefalonia" : destination.slug === "lesvos" ? "lesvos" : destination.slug === "chios" ? "chios" : destination.slug === "kos" ? "kos" : destination.slug === "naxos" ? "naxos" : destination.slug === "paros" ? "paros" : destination.slug === "mykonos" ? "mykonos" : destination.slug === "santorini" ? "santorini" : "greece"}
                 lang={lang}
                 className="mt-4"
