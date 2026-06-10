@@ -1005,6 +1005,41 @@ const REAL_PRICING: Record<string, any> = {
     food_score: 7,
     nature_score: 6,
     history_score: 9
+  },
+
+  hydra: {
+    region: "Saronic Islands",
+    budget_meal: 18,
+    midrange_meal: 38,
+    luxury_meal: 80,
+    coffee: 4.5,
+    beer_bar: 7,
+    cocktail: 13,
+    water_bottle: 1.5,
+    taxi_5km: 0,
+    bus_ticket: 0,
+    atv_scooter_day: 0,
+    car_rental_day: 0,
+    avg_hotel_low: 100,
+    avg_hotel_may_june: 150,
+    avg_hotel_july_aug: 280,
+    avg_hotel_sept_oct: 140,
+    avg_daily_budget_backpacker: 70,
+    avg_daily_budget_midrange: 180,
+    avg_daily_budget_luxury: 400,
+    airport_transfer: 35,
+    crowd_level_july_aug: "medium",
+    crowd_level_may_june: "low",
+    crowd_level_sept_oct: "low",
+    best_for: ["couples", "luxury", "culture", "photography", "art"],
+    not_ideal_for: ["budget_travel", "families_with_kids", "party", "beach_lovers"],
+    beach_score: 4,
+    nightlife_score: 3,
+    family_score: 5,
+    value_score: 4,
+    food_score: 7,
+    nature_score: 6,
+    history_score: 7
   }
 };
 

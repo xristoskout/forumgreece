@@ -1,0 +1,18 @@
+{
+  "id": "hydra",
+  "slug": "hydra",
+  "name": "Hydra",
+  "type": "Island",
+  "region": { "en": "Saronic Islands", "el": "Σαρωνικός" },
+  "coordinates": { "lat": 37.3480, "lng": 23.4670 },
+  "scores": {
+    "family": { "value": 6, "reason": "Car-free island with limited beaches; charming but not ideal for young kids." },
+    "couples": { "value": 9, "reason": "Romantic stone village, Leonard Cohen connection, peaceful atmosphere." },
+    "luxury": { "value": 8, "reason": "Exclusive hotels, upscale dining, popular with celebrities and artists." },
+    "budget": { "value": 5, "reason": "High prices, especially accommodation and dining at the harbour." },
+    "nightlife": { "value": 4, "reason": "Quiet bars and harbour-side drinks; not a party destination." },
+    "food": { "value": 7, "reason": "Good seafood tavernas, especially in Kamini and Vlychos." }
+  },
+  "quick_summary": "Hydra is a car-free Saronic island famous for its preserved stone architecture, Leonard Cohen's former home, quiet hiking paths, and an atmosphere that feels untouched by mass tourism.",
+  "bestFor": ["couples", "luxury", "culture", "photography", "off_season", "art"]
+}

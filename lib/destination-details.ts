@@ -56,27 +56,7 @@ export const destinationDetails: Record<string, DestinationDetail> = {
         "Όσους εκτιμούν τη σιωπή ως ταξιδιωτικό χαρακτηριστικό",
       ],
     },
-    honestAdvice: {
-      title: { en: "Honest Advice — What to Skip", el: "Ειλικρινής Συμβουλή — Τι να Αποφύγεις" },
-      alert: {
-        en: "What nobody tells you about Hydra: The island's most extraordinary quality — the silence — is temporal as much as physical. It exists between approximately 23:00 and 08:00, when the day-trippers are gone, the late tavernas have closed, and the only sound is water and the occasional donkey. Staying overnight is not merely convenient — it is the only way to hear what Hydra actually sounds like. The visitors who leave on the last afternoon hydrofoil have spent a day in the presence of one of Europe's most remarkable places without ever quite arriving.",
-        el: "Αυτό που δε σου λέει κανείς: Η πιο εξαιρετική ποιότητα της Ύδρας — η σιωπή — είναι τόσο χρονική όσο και φυσική. Υπάρχει περίπου μεταξύ 23:00 και 08:00, όταν οι εκδρομείς έχουν φύγει, οι ταβέρνες έχουν κλείσει και ο μόνος ήχος είναι το νερό και ο γάιδαρος. Η διαμονή δεν είναι απλώς βολική — είναι ο μόνος τρόπος να ακούσεις τι πραγματικά ακούγεται η Ύδρα.",
-      },
-      items: {
-        en: [
-          "Visiting Hydra as a half-day trip from Athens — the Flying Dolphin delivers a boatload of day-trippers who spend three hours on the harbour front, eat an overpriced lunch at the tourist tavernas, and leave. Two nights minimum is the threshold above which Hydra starts to make its real impression.",
-          "The tourist tavernas at the centre of the port — prices are 30–40% above equivalent quality elsewhere. Walk to the eastern end of the harbour or to Kamini for tavernas where the menu changes with the catch.",
-          "Expecting sandy beaches within walking distance — Hydra's coastline is predominantly rocky. The swimming at Spilia from the rocks is good, but if sandy beaches are non-negotiable, Hydra is the wrong choice unless you budget for water taxis.",
-          "Arriving on a summer weekend without a reservation — Hydra on a Saturday in August is a different island. The hydrofoils arrive packed, the port fills to capacity, and the island's particular quality of quiet is simply not available.",
-        ],
-        el: [
-          "Ημερήσια εκδρομή από Αθήνα — το υδροπτέρυγο φέρνει επισκέπτες που μένουν 3 ώρες στο λιμάνι, τρώνε ακριβό μεσημεριανό και φεύγουν. Δύο διανυκτερεύσεις είναι το ελάχιστο για να καταλάβεις την Ύδρα.",
-          "Τουριστικές ταβέρνες στο κέντρο του λιμανιού — οι τιμές είναι 30-40% πάνω. Περπάτα στο ανατολικό άκρο ή στο Καμίνι.",
-          "Παραλίες με άμμο σε κοντινή απόσταση — η ακτογραμμή είναι βραχώδης. Το μπάνιο στα Σπίλια είναι καλό, αλλά για αμμώδεις παραλίες χρειάζεστε θαλάσσιο ταξί.",
-          "Άφιξη Σαββατοκύριακο καλοκαιριού χωρίς κράτηση — η Ύδρα τον Αύγουστο είναι άλλο νησί. Τα υδροπτέρυγα γεμίζουν, το λιμάνι είναι γεμάτο και η ησυχία εξαφανίζεται.",
-        ],
-      },
-    },
+
   },
   santorini: {
     overview: {
@@ -109,58 +89,13 @@ export const destinationDetails: Record<string, DestinationDetail> = {
         "Γαστρονομικές και οινικές αναζητήσεις",
       ],
     },
-    honestAdvice: {
-      title: { en: "Honest Advice — What to Skip", el: "Ειλικρινής Συμβουλή — Τι να Αποφύγεις" },
-      alert: {
-        en: "What nobody tells you: Santorini's accommodation pricing is built around the caldera view, not around the quality of the room. A €400/night property on the caldera edge frequently has a smaller room, less functional bathroom, and harder access (steep steps, no vehicle access) than a €160/night property 20 minutes away in Karterados or Messaria that delivers a genuinely better sleep. The honest question before booking is: how many hours a day will I actually be in the room looking at the view? If the answer is less than two, the premium is difficult to justify.",
-        el: "Αυτό που δε σου λέει κανείς: Η τιμολόγηση των καταλυμάτων στη Σαντορίνη βασίζεται στη θέα στην καλντέρα, όχι στην ποιότητα του δωματίου. Ένα κατάλυμα €400/βράδυ στην άκρη της καλντέρας έχει συχνά μικρότερο δωμάτιο, λιγότερο λειτουργικό μπάνιο και δυσκολότερη πρόσβαση από ένα €160/βράδυ 20 λεπτά μακριά στο Καρτεράδο ή τη Μεσαριά που προσφέρει καλύτερο ύπνο. Η ειλικρινής ερώτηση πριν κλείσεις είναι: πόσες ώρες την ημέρα θα είμαι πραγματικά στο δωμάτιο κοιτάζοντας τη θέα; Αν η απάντηση είναι λιγότερες από δύο, το επιπλέον κόστος δύσκολα δικαιολογείται."
-      },
-      items: {
-        en: [
-          "The Oia sunset without a plan — Arriving at Oia between 18:00 and 20:00 in July or August without staking out a spot at least an hour early puts you in a wall of people 10 rows deep from any view. The sunset is real and genuinely beautiful. The experience of watching it from a crowd of 3,000 people is not. Imerovigli or Pyrgos offer the same light, half the people, and room to actually breathe.",
-          "Caldera-view restaurants at dinner — The markup for a caldera view at a well-known restaurant runs more expensive above what the same food costs two streets back. The view is the product, not the kitchen. If the meal matters, eat inland. If the view matters, have a drink — not a three-course dinner.",
-          "Perissa and Perivolos in August — Both long beaches become so densely packed with sunbeds that you are effectively paying to lie in a car park with water at one end. They are excellent in June and September. In peak August they lose the quality that makes them worth visiting.",
-          "The cable car at Athinios midday — The queue for the cable car between the port and Fira at arrival times for large ferries (typically 13:00–15:00) can be 45–60 minutes in summer. The donkey path is physically demanding and ethically contested. Build the walk or the wait into your schedule rather than assuming the cable car is quick.",
-          "Hiring an ATV without experience on narrow roads — ATVs are marketed as the fun option and rented to people with no offroad experience. Santorini's caldera-side roads are narrow, the drop on one side is significant, and summer traffic from delivery vehicles and tour buses does not slow down. A small car or scooter with proper experience is safer on this particular island."
-        ],
-        el: [
-          "Το ηλιοβασίλεμα στην Οία χωρίς σχέδιο — Το να φτάσεις στην Οία μεταξύ 18:00 και 20:00 τον Ιούλιο ή τον Αύγουστο χωρίς να έχεις εξασφαλίσει θέση τουλάχιστον μία ώρα νωρίτερα σε βάζει σε τοίχο κόσμου. Το ηλιοβασίλεμα είναι πραγματικά όμορφο. Η εμπειρία από ένα πλήθος 3.000 ατόμων δεν είναι. Το Ημεροβίγλι ή ο Πύργος προσφέρουν το ίδιο φως, τις μισές παρέες και χώρο να αναπνεύσεις.",
-          "Εστιατόρια με θέα καλντέρα στο δείπνο — Η προσαύξηση για θέα καλντέρα είναι σημαντικά μεγαλύτερη από ό,τι κοστίζει το ίδιο φαγητό δύο δρόμους πίσω. Η θέα είναι το προϊόν, όχι η κουζίνα. Αν σε νοιάζει το φαγητό, φάε στην ενδοχώρα. Αν σε νοιάζει η θέα, πιες ένα ποτό — όχι τρία πιάτα.",
-          "Περίσσα και Περίβολος τον Αύγουστο — Και οι δύο παραλίες γεμίζουν τόσο πυκνά με ξαπλώστρες που ουσιαστικά πληρώνεις για να ξαπλώσεις σε πάρκινγκ με νερό στην άκρη. Είναι εξαιρετικές τον Ιούνιο και τον Σεπτέμβριο. Τον Αύγουστο χάνουν την ποιότητα που τις κάνει αξιόλογες.",
-          "Το τελεφερίκ στο Αθίνιο το μεσημέρι — Η ουρά για το τελεφερίκ μεταξύ λιμανιού και Φηρά τις ώρες άφιξης των μεγάλων πλοίων (13:00–15:00) μπορεί να είναι 45–60 λεπτά. Ο δρόμος με γαϊδούρια είναι σωματικά απαιτητικός. Υπολόγισε είτε τον περίπατο είτε την αναμονή στο πρόγραμμά σου.",
-          "Ενοικίαση ATV χωρίς εμπειρία σε στενούς δρόμους — Τα ATV διαφημίζονται ως η διασκεδαστική επιλογή και νοικιάζονται σε άτομα χωρίς εμπειρία. Οι δρόμοι γύρω από την καλντέρα είναι στενοί και η κίνηση το καλοκαίρι δεν επιβραδύνει. Ένα μικρό αυτοκίνητο ή σκούτερ με εμπειρία είναι ασφαλέστερο."
-        ]
-      }
-    },
+
   },
 
   mykonos: {
     overview: {
       en: "Mykonos: beyond the party, an island of history, sea, and 'hidden' corners. Mykonos is one of those destinations everyone thinks they know before even setting foot there. Images of whitewashed alleys, windmills above the sea, sunset cocktails, and beach clubs playing music till late. Yes, all this exists — and at high volume. But Mykonos has another face: authentic, quiet beaches, an inland village that takes you back to the old Cyclades, museums explaining why this island became the gateway to the Aegean, and (its great asset) Delos just a breath away — one of the most important archaeological sites of the Mediterranean. If you want to put 'Mykonos' on your travel list and do it right, the secret is to see it as a multi-speed island: a bit of cosmopolitan vibe, a bit of quiet for a breather, and a bit of history to leave with something more substantial than just photos.",
       el: "Μύκονος: πέρα από το πάρτι, ένα νησί με ιστορία, θάλασσα και \"κρυφές\" γωνιές. Η Μύκονος είναι από τους προορισμούς που όλοι νομίζουν ότι ξέρουν, πριν καν πατήσουν το πόδι τους εκεί. Εικόνες από κατάλευκα σοκάκια, ανεμόμυλους πάνω από τη θάλασσα, κοκτέιλ στο ηλιοβασίλεμα και beach clubs που παίζουν μουσική μέχρι αργά. Ναι, όλα αυτά υπάρχουν — και μάλιστα σε υψηλή ένταση. Αλλά η Μύκονος έχει κι ένα άλλο πρόσωπο: αυθεντικές παραλίες χωρίς φασαρία, ένα εσωτερικό χωριό που σε \"γυρίζει\" σε παλιές Κυκλάδες, μουσεία που εξηγούν γιατί αυτό το νησί έγινε πύλη στο Αιγαίο, και (το μεγάλο ατού) τη Δήλο σε απόσταση αναπνοής — έναν από τους σημαντικότερους αρχαιολογικούς τόπους της Μεσογείου. Αν θες να γράψεις \"Μύκονος\" στην ταξιδιωτική σου λίστα και να το κάνεις σωστά, το μυστικό είναι να τη δεις σαν νησί πολλών ταχυτήτων: λίγη κοσμικότητα για το vibe, λίγη ησυχία για ανάσα, και λίγη ιστορία για να φύγεις με κάτι πιο ουσιαστικό από φωτογραφίες.",
-    },
-    honestAdvice: {
-      title: { en: "Honest Advice — What to Skip", el: "Ειλικρινής Συμβουλή — Τι να Αποφύγεις" },
-      alert: {
-        en: "What nobody tells you: Mykonos has become a luxury brand as much as an island. The prices reflect brand positioning, not value. A €12 beer or €35 salad at a beach club is not about the ingredients — it is about paying for the scene. You can still enjoy Mykonos without the premium markup, but you have to know where to go and be willing to walk past the influencer-facing places. The island has authentic corners, but they are never in the spots with the curated queues.",
-        el: "Αυτό που δε σου λέει κανείς: Η Μύκονος έχει γίνει τόσο brand όσο και νησί. Οι τιμές αντανακλούν τη θέση του brand, όχι την αξία. Μια μπύρα €12 ή μια σαλάτα €35 σε beach club δεν έχει να κάνει με τα υλικά — έχει να κάνει με τη σκηνή. Μπορείς ακόμα να απολαύσεις τη Μύκονο χωρίς την προσαύξηση, αλλά πρέπει να ξέρεις πού να πας και να είσαι διατεθειμένος να προσπεράσεις τα μαγαζιά που απευθύνονται σε influencers. Το νησί έχει αυθεντικές γωνιές, αλλά ποτέ δεν είναι στα σημεία με την ουρά."
-      },
-      items: {
-        en: [
-          "Navigating Chora in July or August at midday — the narrow marble alleys become a slow-moving, sun-exposed queue of cruise passengers and day-trippers from 11:00 to 16:00. The same streets are genuinely pleasant at 08:00 or after 20:00. The mistake is treating Chora like a daytime destination in peak season when it is at its best in the early morning and late evening.",
-          "Paradise and Super Paradise beach clubs unless you explicitly want loud music all day — both are built around bottle-service party culture and are among the most expensive stretches of sand in Greece. If you want a beach day with conversation and swimming, Agrari, Fokos, or Kapari deliver infinitely more relaxation without a minimum spend.",
-          "Dinner at the waterfront restaurants in Little Venice — the sunset view markup here is the steepest on the island and the food quality is often lower than tavernas two streets inland. Have a cocktail for the view, but eat where the kitchen is the priority, not the photo opportunity.",
-          "Renting a car to 'see the island' in peak August — the road network is narrow, parking in Chora and at popular beaches is genuinely stressful, and traffic jams form on the main routes. A quad bike or scooter is more practical for short distances, and the bus covers the main beaches adequately if you are based near a stop.",
-          "Day-tripping to Delos without checking the cruise ship calendar — when a large cruise is in port, 2,000–3,000 people descend on the archaeological site simultaneously, turning a serene historical experience into a crowded shuffle. Check the Port of Mykonos cruise schedule online and go on a day with no more than one small ship in port."
-        ],
-        el: [
-          "Να περπατάς στη Χώρα τον Ιούλιο ή τον Αύγουστο το μεσημέρι — τα στενά μαρμαρόστρωτα σοκάκια γίνονται αργή ουρά με κόσμο από κρουαζιέρες και ημερήσιες εκδρομές από τις 11:00 έως τις 16:00. Οι ίδιοι δρόμοι είναι υπέροχοι στις 08:00 ή μετά τις 20:00. Το λάθος είναι να αντιμετωπίζεις τη Χώρα ως ημερήσιο προορισμό στην υψηλή περίοδο.",
-          "Παραδείσος και Σούπερ Παραδείσος αν δεν θες δυνατή μουσική όλη μέρα — και οι δύο έχουν χτιστεί γύρω από την κουλτούρα του bottle-service και είναι από τις πιο ακριβές αμμουδιές στην Ελλάδα. Αν θες μέρα στη θάλασσα με συζήτηση και κολύμπι, ο Άγράρι, ο Φωκός ή ο Καπάρι προσφέρουν απείρως περισσότερη ηρεμία χωρίς ελάχιστη δαπάνη.",
-          "Δείπνο στα εστιατόρια του Λιτού Βενετσιάνικου Λιμανιού — η προσαύξηση για τη θέα στο ηλιοβασίλεμα είναι η μεγαλύτερη στο νησί και η ποιότητα φαγητού συχνά χαμηλότερη από ταβέρνες δύο δρόμους πίσω. Πιες ένα κοκτέιλ για τη θέα, αλλά φάε εκεί που η κουζίνα είναι προτεραιότητα.",
-          "Ενοικίαση αυτοκινήτου για να 'δεις το νησί' τον Αύγουστο — το οδικό δίκτυο είναι στενό, το παρκάρισμα στη Χώρα και σε δημοφιλείς παραλίες είναι αγχωτικό, και η κίνηση δημιουργεί μποτιλιάρισμα στους κεντρικούς δρόμους. Ένα quad ή σκούτερ είναι πιο πρακτικό και το λεωφορείο καλύπτει ικανοποιητικά τις κύριες παραλίες.",
-          "Ημερήσια εκδρομή στη Δήλο χωρίς να ελέγξεις το πρόγραμμα κρουαζιερόπλοιων — όταν ένα μεγάλο κρουαζιερόπλοιο είναι στο λιμάνι, 2.000–3.000 άτομα κατεβαίνουν ταυτόχρονα στον αρχαιολογικό χώρο. Έλεγξε το πρόγραμμα κρουαζιέρας του λιμανιού της Μυκόνου και πήγαινε μια μέρα με το πολύ ένα μικρό πλοίο."
-        ]
-      }
     },
     pageIncludes: {
       en: [
@@ -225,29 +160,6 @@ export const destinationDetails: Record<string, DestinationDetail> = {
         "Ζευγάρια για ρομαντικές αποδράσεις",
       ],
     },
-    honestAdvice: {
-      title: { en: "Honest Advice — What to Skip", el: "Ειλικρινής Συμβουλή — Τι να Αποφύγεις" },
-      alert: {
-        en: "What nobody tells you: Kefalonia's geography is deceptive — the island is large (780 km²) with a mountainous spine that makes driving between regions slow. The road from Argostoli to Fiskardo, which looks short on a map, takes 90 minutes on narrow winding roads behind tour coaches. Travelers who underestimate these distances end up spending 3–4 hours daily in the car, especially when trying to combine Myrtos, Assos, Fiskardo, and Melissani in a single day.",
-        el: "Αυτό που δε σου λέει κανείς: Η γεωγραφία της Κεφαλονιάς είναι απατηλή — το νησί είναι μεγάλο (780 km²) με ορεινή ραχοκοκαλιά που καθιστά αργή την οδήγηση. Ο δρόμος από το Αργοστόλι στο Φισκάρδο, που φαίνεται σύντομος στον χάρτη, παίρνει 90 λεπτά σε στενούς δρόμους. Οι ταξιδιώτες που υποτιμούν αυτές τις αποστάσεις περνούν 3–4 ώρες καθημερινά στο αυτοκίνητο."
-      },
-      items: {
-        en: [
-          "Myrtos Beach between 12:00 and 16:00 in August — the famous curve of white pebbles and turquoise water is photographed from above, but down at beach level it is packed with sunbeds and swimmers. The viewing platform above gives the iconic photo without the crowds. Swim at Myrtos early morning or late afternoon, or choose Antisamos for a similar colour with less density.",
-          "Visiting Melissani Cave at midday — the sunlight beam through the collapsed roof is brightest around 12:00–13:00, which is exactly when every tour coach arrives. The queue can be 45–60 minutes in summer for a 15-minute boat ride. Arrive at 09:00 or just before 17:00 for a shorter wait and still good light.",
-          "Expecting Fiskardo to be a budget destination — Fiskardo is the only settlement that survived the 1953 earthquake intact, so its charm comes with a premium. Taverna prices here are 30–40% higher than in Argostoli or Lixouri. The harbour is worth seeing, but eating inland saves significantly.",
-          "Driving the entire island in a single day — the road from Fiskardo in the north to Skala in the south takes over 2 hours without stops. Add stops at Myrtos, Assos, Antisamos, and Drogarati, and you have a rushed 10-hour day. Kefalonia rewards splitting into two regions: north (Fiskardo, Assos, Myrtos) and south (Skala, Lixouri, caves).",
-          "Underestimating the ferry wait at Kilini or Poros — summer car queues for the Kefalonia ferry can mean waiting 1–2 ferry cycles (2–4 hours) without a reservation. Book ferry tickets online in advance or arrive early. The same applies to the Argostoli–Lixouri ferry, which is frequent but busy."
-        ],
-        el: [
-          "Παραλία Μύρτος μεταξύ 12:00 και 16:00 τον Αύγουστο — από πάνω είναι εντυπωσιακή, αλλά στο επίπεδο της θάλασσας είναι γεμάτη ξαπλώστρες. Η πλατφόρμα θέασης από πάνω δίνει την εικόνα χωρίς τον κόσμο. Κολύμπησε νωρίς το πρωί ή αργά το απόγευμα.",
-          "Επίσκεψη στη Μελισσάνη το μεσημέρι — η ηλιαχτίδα είναι πιο έντονη 12:00–13:00, που είναι ακριβώς η ώρα που φτάνουν όλα τα πούλμαν. Η ουρά μπορεί να είναι 45–60 λεπτά. Φτάσε στις 09:00 ή λίγο πριν τις 17:00.",
-          "Να περιμένεις το Φισκάρδο φθηνό — είναι ο μόνος οικισμός που επέζησε από τον σεισμό του 1953, οπότε η γοητεία έχει τίμημα. Οι τιμές είναι 30–40% υψηλότερες από Αργοστόλι ή Ληξούρι.",
-          "Να οδηγείς όλο το νησί σε μία μέρα — από Φισκάρδο έως Σκάλα είναι πάνω από 2 ώρες. Η Κεφαλονιά ανταμείβει τον χωρισμό σε δύο περιοχές: βόρεια και νότια.",
-          "Να υποτιμάς την αναμονή στο πορθμείο σε Κιλίνι ή Πόρο — οι ουρές το καλοκαίρι μπορεί να σημαίνουν αναμονή 2–4 ωρών. Κλείσε εισιτήρια online ή φτάσε νωρίς."
-        ]
-      }
-    }
   },
   skopelos: {
     overview: {
@@ -294,29 +206,6 @@ export const destinationDetails: Record<string, DestinationDetail> = {
         "Όσοι θέλουν Ελλάδα χωρίς μάζες"
       ],
     },
-    honestAdvice: {
-      title: { en: "Honest Advice — What to Skip", el: "Ειλικρινής Συμβουλή — Τι να Αποφύγεις" },
-      alert: {
-        en: "What nobody tells you: Skopelos has a noise ordinance tradition that most Greek islands have quietly abandoned. The Chora genuinely quietens after midnight — this is not an island for late-night sound systems. Visitors who arrive expecting Skiathos-level nightlife are surprised; visitors who arrive looking for a Greek island with actual village atmosphere and natural silence are delighted. Know what you are coming for and you will love it.",
-        el: "Αυτό που δε σου λέει κανείς: Η Σκόπελος διατηρεί παράδοση ησυχίας που τα περισσότερα νησιά εγκατέλειψαν. Η Χώρα ησυχάζει γνήσια μετά μεσάνυχτα — δεν είναι νησί για βράδια με δυνατά συστήματα ήχου. Οσοι έρχονται αναμένοντας νυχτερινή ζωή Σκιάθου εκπλήττονται· όσοι έρχονται για αυθεντική χωριάτικη ατμόσφαιρα και φυσική ησυχία χαίρονται. Ξέρεις τι ψάχνεις και θα το αγαπήσεις."
-      },
-      items: {
-        en: [
-          "Kastani Beach on a July or August afternoon — the Mamma Mia! connection means it's on every tour itinerary. Between midday and 16:00 in peak season it can feel like a theme-park stop. Go first thing in the morning or save it for September.",
-          "Climbing to Agios Ioannis Chapel in the midday heat — the 200 steps are exposed with no shade. In July/August at midday the rock face temperature is brutal. Late afternoon light is also more flattering for photography — go between 17:00–19:00.",
-          "Expecting Skopelos Town restaurants to have parking — the Chora was built centuries before the car. Leave your vehicle at the port parking area and walk up. Driving into the upper Chora on summer evenings results in a very narrow dead-end experience.",
-          "Relying solely on the local bus — the KTEL covers main road and beaches in summer but infrequently and stops entirely outside main season. For Glossa, northern coast, or spontaneous beach-hopping, you genuinely need a scooter or rental car.",
-          "Treating Skopelos as a one-day stop from Skiathos — day-trippers see only the Chora harbour and Kastani. The monasteries, interior villages, Limnonari, Velanio, and Glossa all require at least two nights to properly experience. Skopelos rewards those who stay."
-        ],
-        el: [
-          "✕ Καστάνη τον Ιούλιο/Αύγουστο το μεσημέρι — η σύνδεση με το Mamma Mia! την φέρνει σε κάθε τουριστική ατζέντα. Το μεσημέρι της αιχμής είναι σαν πάρκο διασκέδασης. Πάτε νωρίς το πρωί ή αφήστε τη για Σεπτέμβριο.",
-          "✕ Ανάβαση στον Άγιο Ιωάννη με το μεσημέρι — τα 200 σκαλοπάτια δεν έχουν σκιά. Τον Ιούλιο/Αύγουστο ο βράχος καίει. Το φως το απόγευμα είναι και πιο ωραίο — πάτε 17:00–19:00.",
-          "✕ Πάρκινγκ στην Χώρα — η πόλη χτίστηκε αιώνες πριν το αυτοκίνητο. Πάρκαρε στον λιμένα και ανέβασε με τα πόδια. Η προσπάθεια οδήγησης στην άνω Χώρα βράδυ καταλήγει σε στενό νεκρό δρόμο.",
-          "✕ Μόνο λεωφορείο — το KTEL καλύπτει την κύρια οδό καλοκαίρι, σπάνια και χειμώνα σταματάει. Για Γλώσσα, βόρεια ακτή ή αυθαίρετες παραλίες χρειάζεσαι σκούτερ/αυτοκίνητο.",
-          "✕ Μια μέρα από τη Σκιάθο — βλέπεις μόνο λιμάνι και Καστάνη. Τα μοναστήρια, τα χωριά, η Λιμνονάρι, η Βελάνιο, η Γλώσσα θέλουν τουλάχιστον 2 νύχτες. Η Σκόπελος βραβεύει όσους μένουν."
-        ]
-      }
-    },
   },
   ikaria: {
     overview: {
@@ -357,27 +246,6 @@ export const destinationDetails: Record<string, DestinationDetail> = {
         "Όσους έχει κουράσει η τουριστική εμπειρία των νησιών",
       ],
     },
-    honestAdvice: {
-      title: { en: "Honest Advice — What to Know Before You Go", el: "Ειλικρινής Συμβουλή — Τι να Γνωρίζετε Πριν Πάτε" },
-      alert: {
-        en: "What nobody tells you: Ikaria requires patience. The road system is narrow and winding. The bus service runs on a schedule that is best described as aspirational. The ferry takes 8–10 hours from Athens. But every person who has struggled with these logistics and stayed long enough will tell you the same thing: the island changes you. Come prepared for difficulty, stay for the transformation.",
-        el: "Αυτό που δε σου λέει κανείς: Η Ικαρία απαιτεί υπομονή. Οι δρόμοι είναι στενοί και στριφογυριστοί. Το πλοίο κάνει 8–10 ώρες. Αλλά όλοι όσοι έχουν ταλαιπωρηθεί με τη μετακίνηση και έμειναν αρκετό καιρό θα σου πουν το ίδιο: το νησί σε αλλάζει. Έλα προετοιμασμένος για ταλαιπωρία, μείνε για τη μεταμόρφωση."
-      },
-      items: {
-        en: [
-          "Expecting quick, organized logistics — Ikaria runs on \"island time\" and nothing happens quickly",
-          "Limited nightlife — there is no Mykonos-style club scene. Evenings are for conversation, food and rest",
-          "Santorini-style luxury resorts — Ikaria has no international hotel chains. Accommodation is simple and family-run",
-          "Beach clubs and water sports — Ikaria's beaches are natural and undeveloped. The trade-off is extraordinary beauty and solitude",
-        ],
-        el: [
-          "✕ Να περιμένεις γρήγορη, οργανωμένη μετακίνηση — η Ικαρία λειτουργεί με \"νησιώτικο χρόνο\"",
-          "✕ Νυχτερινή ζωή — δεν υπάρχει club σκηνή. Τα βράδια είναι για συζήτηση, φαγητό και ξεκούραση",
-          "✕ Πολυτελή θέρετρα — η Ικαρία δεν έχει διεθνείς αλυσίδες ξενοδοχείων. Η διαμονή είναι απλή",
-          "✕ Beach clubs — οι παραλίες είναι φυσικές και αναξιοποίητες. Ο συμβιβασμός δίνει εξαιρετική ομορφιά και ησυχία",
-        ],
-      },
-    },
   },
   evia: {
     overview: {
@@ -415,32 +283,6 @@ export const destinationDetails: Record<string, DestinationDetail> = {
         "Οικογένειες που θέλουν εύκολες διακοπές στη θάλασσα",
         "Αποδράσεις Σαββατοκύριακου από την Αθήνα",
       ]
-    },
-    honestAdvice: {
-      title: {
-        en: "Honest Advice — What to Skip",
-        el: "Ειλικρινής Συμβουλή — Τι να Αποφύγεις"
-      },
-      alert: {
-        en: "The best Evia experience comes from focusing on one region rather than trying to see everything. Pick north, central, or south and explore it deeply.",
-        el: "Η καλύτερη εμπειρία στην Εύβοια έρχεται όταν εστιάζετε σε μία περιοχή. Διαλέξτε βορρά, κέντρο ή νότο και εξερευνήστε σε βάθος."
-      },
-      items: {
-        en: [
-          "Chalkida on peak weekends — the bridge becomes a major bottleneck in summer",
-          "All-inclusive resorts — Evia is meant to be explored, not locked in a bubble",
-          "Trying to see the whole island in two days — you will spend 80% of your time driving",
-          "Overhyped social media beaches — the beach next door is often just as beautiful and far less crowded",
-          "Expecting a traditional 'party island' — Evia is about nature, wellness, and authenticity",
-        ],
-        el: [
-          "✕ Χαλκίδα τα Σαββατοκύριακα αιχμής — η γέφυρα γίνεται μποτιλιάρισμα",
-          "✕ All-inclusive θέρετρα — η Εύβοια είναι για εξερεύνηση",
-          "✕ Να δείτε όλο το νησί σε δύο μέρες — θα περάσετε 80% του χρόνου στο αυτοκίνητο",
-          "✕ Overhyped παραλίες από social media — η διπλανή παραλία είναι συχνά εξίσου όμορφη",
-          "✕ Να περιμένετε παραδοσιακό 'party island' — η Εύβοια είναι φύση, ευεξία και αυθεντικότητα",
-        ],
-      },
     },
   },
   lefkada: {
@@ -482,32 +324,6 @@ export const destinationDetails: Record<string, DestinationDetail> = {
         "Πεζοπόρους και εξερευνητές χωριών",
       ]
     },
-    honestAdvice: {
-      title: {
-        en: "Honest Advice — What to Skip",
-        el: "Ειλικρινής Συμβουλή — Τι να Αποφύγεις"
-      },
-      alert: {
-        en: "What nobody tells you: Lefkada's west-coast cliff beaches are genuinely exposed to afternoon wind. The same thermal breeze that makes Vassiliki world-class for windsurfing also whips up wave action on Porto Katsiki and Egremni from early afternoon onwards. The morning window is not just about avoiding crowds — it is the only time the sea is genuinely still.",
-        el: "Αυτό που δε σου λέει κανείς: Οι δυτικές παραλίες εκτίθενται στον απογευματινό άνεμο. Το πρωί δεν είναι μόνο για να αποφύγεις τα πλήθη — είναι η μόνη ώρα που η θάλασσα είναι πραγματικά ήρεμη."
-      },
-      items: {
-        en: [
-          "Driving to Porto Katsiki in a large vehicle between 11:00–15:00 in August — the parking fills up and cars line the roadside for 1–2 km",
-          "Expecting Nydri to be a quiet or authentic port town — it is a tourist strip best used as a functional base",
-          "Trying to see both Porto Katsiki and Egremni in a single half-day — both involve significant descents and climbs",
-          "Ignoring Vassiliki if not a windsurfer — the bay has calm water, excellent fish tavernas, and a relaxed atmosphere",
-          "Underestimating the cost of boat trips from Nydri — compare options and ask what is included before committing",
-        ],
-        el: [
-          "✕ Οδήγηση στο Πόρτο Κατσίκι με μεγάλο όχημα 11:00–15:00 τον Αύγουστο",
-          "✕ Να περιμένετε το Νυδρί αυθεντικό — είναι τουριστική ζώνη",
-          "✕ Να δείτε Πόρτο Κατσίκι και Εγκρεμνούς σε μισή μέρα",
-          "✕ Να αγνοήσετε τη Βασιλική αν δεν κάνετε windsurf",
-          "✕ Να υποτιμήσετε το κόστος των εκδρομών με βάρκα",
-        ],
-      },
-    },
   },
 
   rethymno: {
@@ -523,29 +339,6 @@ export const destinationDetails: Record<string, DestinationDetail> = {
       en: ["History & Architecture enthusiasts", "Couples & slow-travel visitors", "Families wanting beach + culture", "Hikers & outdoor explorers", "Food lovers & Cretan cuisine seekers"],
       el: ["Λάτρεις ιστορίας & αρχιτεκτονικής", "Ζευγάρια & ταξιδιώτες αργού ρυθμού", "Οικογένειες που θέλουν θάλασσα + πολιτισμό", "Πεζοπόρους & εξερευνητές", "Λάτρεις του φαγητού & κρητικής κουζίνας"]
     },
-    honestAdvice: {
-      title: { en: "Honest Advice — What to Skip", el: "Ειλικρινής Συμβουλή — Τι να Αποφύγεις" },
-      alert: {
-        en: "What nobody tells you: Rethymno's Old Town has two completely different faces depending on the time of day. Between 11:00 and 14:00 in summer, the main lanes fill with tour groups and the pace becomes slow-moving. Before 09:00, the same streets are entirely yours — cats, bakers, the sound of the fountain. After 22:00, the restaurants quiet down but the bars and music venues begin, and a different, younger version of the city emerges. Book a single night more than you planned and use the extra time to experience all three.",
-        el: "Αυτό που δε σου λέει κανείς: Η Παλιά Πόλη του Ρεθύμνου έχει δύο εντελώς διαφορετικά πρόσωπα. Μεταξύ 11:00–14:00 το καλοκαίρι γεμίζει τουριστικές ομάδες. Πριν τις 09:00, οι ίδιοι δρόμοι είναι εντελώς δικοί σου. Μετά τις 22:00, μια διαφορετική, νεανική εκδοχή της πόλης αναδύεται."
-      },
-      items: {
-        en: [
-          "Eating on the harbour front without checking the menu first — the view doesn't improve the octopus. Walk the harbour for the atmosphere, then turn into the Old Town to eat.",
-          "Attempting Preveli Beach in August without going very early or by boat — the descent path in 38°C heat with hundreds of people is unpleasant. Arrive before 09:30 or take a boat from Plakias.",
-          "Parking inside the Old Town — use the lots outside the walls (port area or Fortezza road). No point you want to reach is more than a 10-minute walk away.",
-          "Rushing the Amari Valley into a 2-hour drive-through — stop in Thronos for lunch, see Byzantine frescoes, buy cherries. Give it a half-day minimum.",
-          "Visiting the Fortezza in the midday heat of July–August — the fortress is largely unshaded. Go at 08:00 opening or in the last hour before closing."
-        ],
-        el: [
-          "Φαγητό στο λιμάνι χωρίς έλεγχο τιμών — η θέα δεν βελτιώνει το χταπόδι. Φάτε στην Παλιά Πόλη.",
-          "Πρέβελη τον Αύγουστο χωρίς πρωινή ώρα — το μονοπάτι με 38°C είναι δυσάρεστο. Πριν τις 09:30 ή με βάρκα.",
-          "Πάρκινγκ μέσα στην Παλιά Πόλη — χρησιμοποιήστε τους χώρους έξω από τα τείχη.",
-          "Βιαστική επίσκεψη στην Κοιλάδα Αμαρίου — σταματήστε στον Θρόνο για φαγητό. Μισή μέρα τουλάχιστον.",
-          "Φορτέτζα το μεσημέρι καλοκαιριού — χωρίς σκιά. Πηγαίνετε 08:00 ή πριν κλείσει."
-        ]
-      }
-    }
   },
 
   heraklion: {
@@ -561,29 +354,6 @@ export const destinationDetails: Record<string, DestinationDetail> = {
       en: ["History & Archaeology enthusiasts", "Food & wine travellers", "Cultural city breaks", "Using Heraklion as a Crete base", "Travellers who want depth over aesthetics"],
       el: ["Λάτρεις ιστορίας & αρχαιολογίας", "Ταξιδιώτες φαγητού & κρασιού", "Πολιτιστικές αποδράσεις", "Βάση για εξερεύνηση Κρήτης", "Ταξιδιώτες που θέλουν βάθος"]
     },
-    honestAdvice: {
-      title: { en: "Honest Advice — What to Skip", el: "Ειλικρινής Συμβουλή — Τι να Αποφύγεις" },
-      alert: {
-        en: "What nobody tells you: Knossos without any prior knowledge of Minoan civilisation can feel like a series of confusing concrete structures. Spend 20 minutes reading the basics beforehand, or visit the Archaeological Museum first, and the site transforms. Go unprepared and you may find yourself wondering why you came.",
-        el: "Αυτό που δε σου λέει κανείς: Η Κνωσός χωρίς καμία προηγούμενη γνώση του μινωικού πολιτισμού μοιάζει με μπερδεμένες τσιμεντένιες κατασκευές. Διάβασε πρώτα ή επισκέψου πρώτα το μουσείο."
-      },
-      items: {
-        en: [
-          "Eating at the tourist-facing restaurants directly on Lion Square — walk one alley in any direction for better food and lower prices.",
-          "Visiting Knossos in midday summer heat — the site has almost no shade. Book the first entrance (08:00) or go late afternoon.",
-          "Driving in the old city — the Venetian street grid was not designed for cars. Park outside the walls and walk in.",
-          "Expecting beach resort atmosphere — Heraklion is a real city. Urban, sometimes noisy, occasionally chaotic. That is its nature.",
-          "Skipping the Archaeological Museum — the museum completes Knossos. Doing one without the other is a wasted opportunity."
-        ],
-        el: [
-          "Φαγητό στην πλατεία Λιονταριών — περπάτα ένα στενό πιο πέρα.",
-          "Κνωσός το μεσημέρι καλοκαιριού — χωρίς σκιά. Πήγαινε 08:00 ή απόγευμα.",
-          "Οδήγηση στην παλιά πόλη — πάρκαρε έξω από τα τείχη.",
-          "Να περιμένεις ατμόσφαιρα θέρετρου — το Ηράκλειο είναι πραγματική πόλη.",
-          "Να παραλείψεις το Αρχαιολογικό Μουσείο — ολοκληρώνει την Κνωσό."
-        ]
-      }
-    }
   },
 
   aegina: {
@@ -629,29 +399,6 @@ export const destinationDetails: Record<string, DestinationDetail> = {
         "Αποδράσεις εκτός σεζόν",
       ],
     },
-    honestAdvice: {
-      title: { en: "Honest Advice — What to Skip", el: "Ειλικρινής Συμβουλή — Τι να Αποφύγεις" },
-      alert: {
-        en: "What nobody tells you: Aegina was not only the first capital of the modern Greek state — it was where the first modern Greek coins were minted (the phoenix, in 1828), where the first Greek newspaper was printed, and where Governor Kapodistrias established the first Greek school and the first orphanage. The neoclassical town you walk through today was essentially purpose-built during those few years as the administrative centre of a newly independent nation. None of this is particularly visible — the town does not make a great fuss of its historical significance — but knowing it makes the harbour front architecture feel less like a pleasant backdrop and more like a deliberate statement about what Greece was trying to become.",
-        el: "Αυτό που δε σου λέει κανείς: Η Αίγινα δεν ήταν μόνο η πρώτη πρωτεύουσα του ελληνικού κράτους — ήταν όπου κόπηκαν τα πρώτα σύγχρονα ελληνικά νομίσματα, τυπώθηκε η πρώτη εφημερίδα, και ιδρύθηκε το πρώτο σχολείο και το πρώτο ορφανοτροφείο. Η νεοκλασική πόλη χτίστηκε σκόπιμα ως διοικητικό κέντρο ενός νέου ανεξάρτητου έθνους."
-      },
-      items: {
-        en: [
-          "Coming on a Saturday afternoon in July or August without a return ticket booked. The Sunday evening ferries back to Piraeus fill completely. Book the return trip at the same time as the outward journey.",
-          "Eating at the first row of tavernas on the harbour front without checking prices. Several are priced for day-trippers. The fish market neighbourhood has better tavernas at better prices.",
-          "Visiting Palaiochora without time to slow down. Allow at least 90 minutes. Combine it with the Agios Nektarios monastery.",
-          "Buying pistachios only from the port stalls. The co-operative shops 3–4 km into the plain offer better variety, lower prices, and the ability to taste before buying.",
-          "Treating Aegina as a day trip only. One night changes the quality of the trip disproportionately.",
-        ],
-        el: [
-          "Να έρθεις Σάββατο απόγευμα Ιούλιο ή Αύγουστο χωρίς εισιτήριο επιστροφής. Κλείσε επιστροφή μαζί με το μετάβασης.",
-          "Φαγητό στην πρώτη σειρά ταβερνών του λιμανιού χωρίς έλεγχο τιμών. Η γειτονιά της ψαραγοράς έχει καλύτερες επιλογές.",
-          "Επίσκεψη Παλαιοχώρας χωρίς χρόνο. Αφήστε τουλάχιστον 90 λεπτά. Συνδυάστε το με τον Άγιο Νεκτάριο.",
-          "Αγορά φιστικιών μόνο από τα περίπτερα του λιμανιού. Ο συνεταιρισμός στον κάμπο έχει καλύτερες τιμές.",
-          "Να δεις την Αίγινα μόνο ως ημερήσια εκδρομή. Μία διανυκτέρευση αλλάζει την ποιότητα του ταξιδιού."
-        ]
-      }
-    }
   },
 
   lasithi: {
@@ -689,29 +436,6 @@ export const destinationDetails: Record<string, DestinationDetail> = {
         "Ταξιδιώτες φαγητού και κρασιού",
       ],
     },
-    honestAdvice: {
-      title: { en: "Honest Advice — What to Skip", el: "Ειλικρινής Συμβουλή — Τι να Αποφύγεις" },
-      alert: {
-        en: "What nobody tells you: Lasithi is deceptively large and the driving distances between its regions are significant. Travellers who try to combine Agios Nikolaos, Vai, Ierapetra, and Spinalonga in a single day end up spending 5+ hours on winding mountain roads. The road from Agios Nikolaos to Kato Zakros is 2 hours 30 minutes each way. Plan two bases — Agios Nikolaos for the north and Sitia for the far east — rather than expecting to day-trip across the entire region.",
-        el: "Αυτό που δε σου λέει κανείς: Το Λασίθι είναι απατηλά μεγάλο και οι αποστάσεις μεταξύ των περιοχών είναι σημαντικές. Όσοι προσπαθούν να συνδυάσουν Άγιο Νικόλαο, Βάι, Ιεράπετρα και Σπιναλόγκα σε μία μέρα περνούν 5+ ώρες σε ορεινούς δρόμους. Σχεδίασε δύο βάσεις — Άγιο Νικόλαο για τα βόρεια και Σητεία για την άπω ανατολή."
-      },
-      items: {
-        en: [
-          "Trying to 'do' all of Lasithi from one base — the distance from Agios Nikolaos to Kato Zakros is 2.5 hours, and the road is winding mountain terrain, not a motorway. Split your stay: 2–3 nights in Agios Nikolaos for the western area (Elounda, Spinalonga, Voulisma) and 2–3 nights in Sitia for the far east (Vai, Toplou, Zakros, Xerokampos).",
-          "Expecting Vai Beach to be deserted — Vai is now well-known and marketed. In July and August, the car park fills by 10:00 and the main beach is busy. Go before 08:30 or visit the quieter north end of the beach via the path through the palm grove.",
-          "Driving the Elounda–Sitia road without accounting for the mountain section — the 60 km between Agios Nikolaos and Sitia look short on the map. In reality, the road climbs through the Dikti Mountains with hairpin turns and takes 90 minutes. Google Maps estimates are optimistic. Add 30%.",
-          "Spinalonga at midday in peak season — the island has minimal shade and the walk around the fortress walls is exposed. The 09:00 boat from Plaka puts you on the island before the heat and the crowds. By 11:00, the tour groups arrive and the silence that makes Spinalonga so affecting is gone.",
-          "Skipping the south coast entirely — most visitors stay on the north coast (Agios Nikolaos, Elounda, Sitia) and miss Ierapetra and the south coast beaches. Kalo Nero and Xerokampos offer a completely different coastline — wider, wilder, with Libyan Sea exposure and warmer water well into October."
-        ],
-        el: [
-          "Να κάνεις όλο το Λασίθι από μία βάση — από Άγιο Νικόλαο έως Κάτω Ζάκρο είναι 2,5 ώρες. Χώρισε τη διαμονή: 2–3 νύχτες Άγιο Νικόλαο, 2–3 νύχτες Σητεία.",
-          "Να περιμένεις το Βάι έρημο — τον Ιούλιο και Αύγουστο γεμίζει. Πήγαινε πριν τις 08:30 ή στο βόρειο άκρο.",
-          "Οδήγηση Ελούντα–Σητεία χωρίς να υπολογίζεις τα βουνά — το Google Maps είναι αισιόδοξο. Πρόσθεσε 30%.",
-          "Σπιναλόγκα το μεσημέρι — η βάρκα 09:00 από Πλάκα σε βάζει στο νησί πριν τη ζέστη και τα πλήθη.",
-          "Να παραλείπεις τη νότια ακτή — Καλό Νερό και Ξερόκαμπος προσφέρουν εντελώς διαφορετική ακτογραμμή."
-        ]
-      }
-    }
   },
   tinos: {
     overview: {
@@ -764,26 +488,5 @@ export const destinationDetails: Record<string, DestinationDetail> = {
         "Λάτρεις αρχιτεκτονικής",
       ],
     },
-    honestAdvice: {
-      title: { en: "Honest Advice — What to Skip", el: "Ειλικρινής Συμβουλή — Τι να Αποφύγεις" },
-      alert: {
-        en: "What nobody tells you: Tinos is a twenty-minute ferry ride from Mykonos — and the contrast between the two islands is so absolute that first-time visitors sometimes wonder if they are in the same country. The same ferry route that delivers thousands of tourists to Mykonos's beach clubs deposits a fraction of that number in Tinos. The island is not undiscovered — Greeks have been coming here for religious and gastronomic pilgrimage for two centuries — but it has never been colonised by mass international tourism. The result is a destination that is, in 2026, still largely what the Cyclades were fifty years ago: honest, serious and deeply rewarding.",
-        el: "Αυτό που δε σου λέει κανείς: Η Τήνος είναι είκοσι λεπτά με το πλοίο από τη Μύκονο — και η αντίθεση είναι τόσο απόλυτη που οι επισκέπτες αναρωτιούνται αν είναι στην ίδια χώρα. Η Τήνος δεν είναι άγνωστη — οι Έλληνες έρχονται για θρησκευτικό και γαστρονομικό προσκύνημα εδώ και δύο αιώνες — αλλά δεν έχει αποικιστεί ποτέ από τον μαζικό τουρισμό."
-      },
-      items: {
-        en: [
-          "Expecting Tinos to perform for you — the island is not optimised for the tourist gaze. The pilgrimage culture, marble workshops, dovecotes and village food exist because Tinos has its own deep identity. Approach it as a guest, not as an audience.",
-          "Treating the Church of Panagia Evangelistria as only a photo opportunity — the atmosphere inside demands respectful attention. Visitors who walk through quickly for a selfie miss something genuinely moving.",
-          "Spending your entire time on the coast — the interior of Tinos is what makes it unlike anywhere else. Rent a car for at least one full day to explore the villages, dovecotes, Volax boulders and marble workshops.",
-          "Visiting Pyrgos without allocating real time — the Museum of Marble Crafts alone deserves 90 minutes. Add the Chalepas Museum, the cemetery, a walk through the lanes and lunch, and you have the best single day on the island.",
-        ],
-        el: [
-          "Να περιμένεις η Τήνος να διασκεδάσει εσένα — το νησί δεν είναι βιτρίνα. Προσέγγισέ το ως φιλοξενούμενος.",
-          "Να αντιμετωπίζεις την Παναγία Ευαγγελίστρια μόνο ως φωτογραφία — η ατμόσφαιρα μέσα απαιτεί σεβασμό.",
-          "Να μένεις μόνο στην ακτή — το εσωτερικό της Τήνου είναι μοναδικό. Νοίκιασε αυτοκίνητο για μία μέρα.",
-          "Να επισκέπτεσαι τον Πύργο βιαστικά — το Μουσείο Μαρμάρου αξίζει 90 λεπτά. Πρόσθεσε το Μουσείο Χαλεπά και φαγητό για την καλύτερη μέρα στο νησί.",
-        ]
-      }
-    }
   },
 };
