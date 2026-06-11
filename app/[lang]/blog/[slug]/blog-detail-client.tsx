@@ -57,8 +57,9 @@ export default function BlogDetailClient({ post, lang }: Props) {
     .join("\n");
 
   return (
-    <main className="min-h-screen bg-transparent text-slate-900">
+    <>
       <SiteHeader />
+      <main className="min-h-screen bg-transparent text-slate-900">
 
       <article className="mx-auto max-w-4xl px-6 pt-28 pb-16">
         <div className="mb-8">
@@ -132,5 +133,6 @@ export default function BlogDetailClient({ post, lang }: Props) {
         </div>
       </article>
     </main>
+    </>
   );
 }

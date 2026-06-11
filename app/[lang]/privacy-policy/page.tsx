@@ -179,12 +179,13 @@ export default async function PrivacyPage({ params }: Props) {
   ]);
 
   return (
-    <main className="min-h-screen bg-slate-50 text-slate-900">
+    <>
+      <SiteHeader />
+      <main className="min-h-screen bg-slate-50 text-slate-900">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
       />
-      <SiteHeader />
 
       <section className="bg-slate-900 py-16 sm:py-24">
         <div className="mx-auto max-w-4xl px-6 text-center">
@@ -242,5 +243,6 @@ export default async function PrivacyPage({ params }: Props) {
         </div>
       </section>
     </main>
+    </>
   );
 }

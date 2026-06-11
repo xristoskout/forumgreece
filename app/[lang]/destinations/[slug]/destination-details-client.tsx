@@ -187,8 +187,9 @@ export default function DestinationDetailsClient({
   };
 
   return (
-    <main className="min-h-screen bg-transparent text-slate-900">
+    <>
       <SiteHeader />
+      <main className="min-h-screen bg-transparent text-slate-900">
 
 
       <section className="relative overflow-hidden text-white">
@@ -657,7 +658,7 @@ export default function DestinationDetailsClient({
 
                 <Link
                   href={withLang("/")}
-                  className="block rounded-2xl border border-slate-200 px-5 py-3 text-center font-semibold text-slate-600 transition hover:bg-white hover:bg-slate-50"
+                  className="block rounded-2xl border border-slate-200 px-5 py-3 text-center font-semibold text-slate-600 transition hover:bg-slate-50"
                 >
                   {lang === "en"
                     ? "Back to homepage"
@@ -670,5 +671,6 @@ export default function DestinationDetailsClient({
       </section>
 
     </main>
+    </>
   );
 }

@@ -86,12 +86,13 @@ export default async function HotelsListingPage({ params }: Props) {
   ]);
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-50 via-indigo-50 to-white">
+    <>
+      <SiteHeader />
+      <main className="min-h-screen bg-gradient-to-br from-slate-50 via-indigo-50 to-white">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
       />
-      <SiteHeader />
       
       <div className="container mx-auto px-6 py-32">
         <div className="text-center mb-16">
@@ -109,5 +110,6 @@ export default async function HotelsListingPage({ params }: Props) {
         <HotelsDirectoryClient lang={lang} hotels={hotels} />
       </div>
     </main>
+    </>
   );
 }

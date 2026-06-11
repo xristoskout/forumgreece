@@ -197,7 +197,9 @@ export default function TravelInfoHubPage() {
   ]);
 
   return (
-    <main className="min-h-screen bg-transparent text-slate-900">
+    <>
+      <SiteHeader />
+      <main className="min-h-screen bg-transparent text-slate-900">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(travelBreadcrumb) }}
@@ -206,7 +208,6 @@ export default function TravelInfoHubPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(travelFaqSchema) }}
       />
-      <SiteHeader />
 
       <section className="relative overflow-hidden min-h-screen flex items-center justify-center pt-20 border-b border-slate-200">
         <div className="absolute inset-0 z-0">
@@ -412,5 +413,6 @@ export default function TravelInfoHubPage() {
         </Link>
       </section>
     </main>
+    </>
   );
 }

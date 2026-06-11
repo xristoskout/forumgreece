@@ -254,7 +254,7 @@ export default function SiteHeader() {
               onClick={() => setMenuOpen((prev) => !prev)}
               aria-expanded={menuOpen}
               aria-label={menuOpen ? t.close[lang] : t.menu[lang]}
-              className="inline-flex h-11 w-11 items-center justify-center border border-slate-200 bg-white backdrop-blur-md text-slate-600 transition hover:bg-white hover:bg-slate-50 xl:hidden"
+              className="inline-flex h-11 w-11 items-center justify-center border border-slate-200 bg-white backdrop-blur-md text-slate-600 transition hover:bg-slate-50 xl:hidden"
             >
               {menuOpen ? (
                 <svg
@@ -371,7 +371,7 @@ export default function SiteHeader() {
                     className={`border px-4 py-3 text-sm font-medium transition ${
                       item.active
                         ? "border-indigo-200 bg-sky-50 text-indigo-700"
-                        : "border-slate-200 bg-white backdrop-blur-md text-slate-600 hover:bg-white hover:bg-slate-50"
+                        : "border-slate-200 bg-white backdrop-blur-md text-slate-600 hover:bg-slate-50"
                     }`}
                   >
                     {item.label}

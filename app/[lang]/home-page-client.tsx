@@ -3,7 +3,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import SiteHeader from "../../components/site-header";
-import SiteFooter from "../../components/SiteFooter";
 import { Lang } from "../../lib/locale";
 import { categories } from "../../lib/site-config";
 import { destinations } from "../../lib/destinations-data";
@@ -299,10 +298,11 @@ export default function HomePageClient({
   ];
 
   return (
-    <main 
-      className="min-h-screen bg-[#f8fbff] text-slate-900 mesh-gradient"
-    >
+    <>
       <SiteHeader />
+      <main 
+        className="min-h-screen bg-[#f8fbff] text-slate-900 mesh-gradient"
+      >
 
       <section className="relative overflow-hidden min-h-screen flex items-center pt-20">
         <div className="absolute inset-0 z-0 pointer-events-none">
@@ -449,7 +449,7 @@ export default function HomePageClient({
                   <Link
                     key={item.title.en}
                     href={item.href}
-                    className="group border border-slate-200 bg-white hover:bg-slate-50 p-6 transition hover:-translate-y-1 hover:border-indigo-200 hover:bg-white backdrop-blur-md hover:shadow-lg"
+                    className="group border border-slate-200 bg-white hover:bg-slate-50 p-6 transition hover:-translate-y-1 hover:border-indigo-200 backdrop-blur-md hover:shadow-lg"
                   >
                     <div className="flex h-12 w-12 items-center justify-center bg-indigo-100 text-indigo-800 text-2xl">
                       {item.icon}
@@ -468,7 +468,7 @@ export default function HomePageClient({
                   <a
                     key={item.title.en}
                     href={item.href}
-                    className="group border border-slate-200 bg-white hover:bg-slate-50 p-6 transition hover:-translate-y-1 hover:border-indigo-200 hover:bg-white backdrop-blur-md hover:shadow-lg"
+                    className="group border border-slate-200 bg-white hover:bg-slate-50 p-6 transition hover:-translate-y-1 hover:border-indigo-200 backdrop-blur-md hover:shadow-lg"
                   >
                     <div className="flex h-12 w-12 items-center justify-center bg-indigo-100 text-indigo-800 text-2xl">
                       {item.icon}
@@ -619,9 +619,9 @@ export default function HomePageClient({
             <p className="text-xs font-bold uppercase tracking-[0.2em] text-indigo-200 mb-2">
               {lang === "en" ? "Full Directory — Browse by Region" : "Πλήρης Κατάλογος — Ανά Περιοχή"}
             </p>
-            <h3 className="text-2xl md:text-3xl font-extrabold text-white mb-3 tracking-tight">
+            <p className="text-2xl md:text-3xl font-extrabold text-white mb-3 tracking-tight">
               {lang === "en" ? "Explore all Greek destinations" : "Εξερεύνησε όλους τους ελληνικούς προορισμούς"}
-            </h3>
+            </p>
             <p className="text-indigo-200/80 text-sm leading-relaxed max-w-xl">
               {lang === "en"
                 ? "Browse the complete destination directory organised by region — Cyclades, Ionian Islands, Crete, Peloponnese, Northern Greece, Meteora and more."
@@ -734,9 +734,9 @@ export default function HomePageClient({
                  <span className="inline-flex rounded-full bg-indigo-500/30 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-indigo-100 backdrop-blur-md mb-4 border border-white/10">
                    {lang === "en" ? "Visual Planning" : "Οπτική Οργάνωση"}
                  </span>
-                 <h3 className="text-2xl md:text-3xl font-bold mb-3 tracking-tight">
-                   {lang === "en" ? "Not sure where to start? See the island map" : "Δεν ξέρεις από πού να ξεκινήσεις; Δες τον χάρτη"}
-                 </h3>
+                 <p className="text-2xl md:text-3xl font-bold mb-3 tracking-tight">
+                    {lang === "en" ? "Not sure where to start? See the island map" : "Δεν ξέρεις από πού να ξεκινήσεις; Δες τον χάρτη"}
+                 </p>
                  <p className="text-sm md:text-base text-indigo-100/90 mb-6 leading-relaxed font-light">
                    {lang === "en" 
                      ? "Understand the island clusters, regions and ferry flow at a glance before you dive into destination guides." 
@@ -859,9 +859,9 @@ export default function HomePageClient({
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-amber-100 mb-2">
                 {lang === "en" ? "Full Directory — Where to Stay" : "Πλήρης Κατάλογος — Διαμονή"}
               </p>
-              <h3 className="text-2xl md:text-3xl font-extrabold text-white mb-3 tracking-tight">
+              <p className="text-2xl md:text-3xl font-extrabold text-white mb-3 tracking-tight">
                 {lang === "en" ? "Discover more places to stay across Greece" : "Ανακάλυψε περισσότερα καταλύματα σε όλη την Ελλάδα"}
-              </h3>
+              </p>
               <p className="text-amber-100/80 text-sm leading-relaxed max-w-xl">
                 {lang === "en"
                   ? "Explore our comprehensive directory of hotels, resorts and places to stay organized by destination — Cyclades, Ionian Islands, Crete and more."
@@ -909,9 +909,9 @@ export default function HomePageClient({
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-cyan-200 mb-2">
                 {lang === "en" ? "Full Directory — Explore Greece" : "Πλήρης Κατάλογος — Εξερεύνησε την Ελλάδα"}
               </p>
-              <h3 className="text-2xl md:text-3xl font-extrabold text-white mb-3 tracking-tight">
+              <p className="text-2xl md:text-3xl font-extrabold text-white mb-3 tracking-tight">
                 {lang === "en" ? "Discover more tours across Greece" : "Εξερεύνησε περισσότερες εκδρομές σε όλη την Ελλάδα"}
-              </h3>
+              </p>
               <p className="text-cyan-200/80 text-sm leading-relaxed max-w-xl">
                 {lang === "en"
                   ? "Explore our comprehensive directory of tours, boat trips and local experiences organised by region — Athens, Santorini, Mykonos, Corfu, Crete and more."
@@ -1039,8 +1039,7 @@ export default function HomePageClient({
           </Link>
         </div>
       </section>
-
-      <SiteFooter lang={lang} />
     </main>
+    </>
   );
 }

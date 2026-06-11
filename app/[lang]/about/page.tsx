@@ -113,12 +113,13 @@ export default async function AboutPage({ params }: Props) {
   ]);
 
   return (
-    <main className="min-h-screen bg-white text-slate-900">
+    <>
+      <SiteHeader />
+      <main className="min-h-screen bg-white text-slate-900">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
       />
-      <SiteHeader />
 
       <section className="relative overflow-hidden bg-slate-900 py-32 sm:py-40">
         <div className="absolute inset-0 z-0 opacity-40 mix-blend-overlay">
@@ -229,5 +230,6 @@ export default async function AboutPage({ params }: Props) {
       </section>
 
     </main>
+    </>
   );
 }

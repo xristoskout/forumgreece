@@ -164,8 +164,9 @@ export default function PromotionClient() {
   ];
 
   return (
-    <main className="min-h-screen bg-[#f4f7fb]">
+    <>
       <SiteHeader />
+      <main className="min-h-screen bg-[#f4f7fb]">
 
       {/* HERO */}
       <section className="relative overflow-hidden bg-[#1a1a2e] py-24 sm:py-32">
@@ -433,5 +434,6 @@ export default function PromotionClient() {
         </div>
       )}
     </main>
+    </>
   );
 }

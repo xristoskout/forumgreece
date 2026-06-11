@@ -481,8 +481,9 @@ export default function GreeceIslandsMapGuidePage() {
   ];
 
   return (
-    <main className="min-h-screen bg-transparent text-slate-900">
+    <>
       <SiteHeader />
+      <main className="min-h-screen bg-transparent text-slate-900">
 
       {/* ── HERO ── */}
       <section className="relative overflow-hidden min-h-[60vh] flex items-center justify-center pt-20 border-b border-slate-200">
@@ -709,5 +710,6 @@ export default function GreeceIslandsMapGuidePage() {
         </Link>
       </section>
     </main>
+    </>
   );
 }

@@ -178,8 +178,9 @@ export default function TravelInfoGuideClient({ lang, slug, item }: TravelInfoGu
   };
 
   return (
-    <main className="min-h-screen bg-slate-50 text-slate-900 selection:bg-indigo-100 selection:text-indigo-900 pb-20">
+    <>
       <SiteHeader />
+      <main className="min-h-screen bg-slate-50 text-slate-900 selection:bg-indigo-100 selection:text-indigo-900 pb-20">
 
       <section className="relative overflow-hidden min-h-[60vh] flex items-end pt-32 pb-16">
         <div className="absolute inset-0 z-0 transition-transform duration-[2s] scale-105">
@@ -331,5 +332,6 @@ export default function TravelInfoGuideClient({ lang, slug, item }: TravelInfoGu
       </section>
 
     </main>
+    </>
   );
 }

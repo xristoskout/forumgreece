@@ -390,8 +390,9 @@ export default function TravelToGreecePage() {
   };
 
   return (
-    <main className="min-h-screen bg-white text-slate-900">
+    <>
       <SiteHeader />
+      <main className="min-h-screen bg-white text-slate-900">
 
       {/* Full-width Hero Section - Greeka.com vibe */}
       <section className="relative flex min-h-[60vh] xl:min-h-[70vh] items-center justify-center bg-no-repeat">
@@ -470,5 +471,6 @@ export default function TravelToGreecePage() {
       />
 
     </main>
+    </>
   );
 }

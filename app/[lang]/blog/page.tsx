@@ -82,8 +82,9 @@ export default async function BlogIndexPage({ params }: Props) {
   const rest = sorted.filter((p) => !featured.includes(p));
 
   return (
-    <main className="min-h-screen bg-transparent text-slate-900">
+    <>
       <SiteHeader />
+      <main className="min-h-screen bg-transparent text-slate-900">
 
       <section className="border-b border-slate-200 bg-white backdrop-blur-md">
         <div className="mx-auto max-w-7xl px-6 py-20">
@@ -258,5 +259,6 @@ export default async function BlogIndexPage({ params }: Props) {
         </div>
       </section>
     </main>
+    </>
   );
 }

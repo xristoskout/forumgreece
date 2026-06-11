@@ -163,8 +163,9 @@ export default function BusinessDetailsClient({
   };
 
   return (
-    <main className="min-h-screen bg-transparent text-slate-900 pt-20">
+    <>
       <SiteHeader />
+      <main className="min-h-screen bg-transparent text-slate-900 pt-20">
       <section className="mx-auto max-w-7xl px-6 py-10">
         <div className="flex flex-wrap items-center justify-between gap-4">
           <Link
@@ -513,5 +514,6 @@ export default function BusinessDetailsClient({
         </section>
       </section>
     </main>
+    </>
   );
-}
+}

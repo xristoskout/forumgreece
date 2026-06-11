@@ -329,8 +329,9 @@ export default function HotelDetailsClient({ lang: serverLang, slug: serverSlug,
   const destName = item.place.split(" —")[0];
 
   return (
-    <main className="min-h-screen bg-transparent text-slate-900 pt-20">
+    <>
       <SiteHeader />
+      <main className="min-h-screen bg-transparent text-slate-900 pt-20">
 
       <div className="mx-auto max-w-7xl px-6 py-10">
         <div className="flex flex-wrap items-center justify-between gap-4">
@@ -629,5 +630,6 @@ export default function HotelDetailsClient({ lang: serverLang, slug: serverSlug,
       </div>
 
     </main>
+    </>
   );
 }

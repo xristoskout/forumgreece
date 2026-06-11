@@ -95,8 +95,9 @@ export default function ExperienceDetailsClient({
     landing.image ?? businesses[0]?.image ?? "/images/tours/kefalonia-tours.webp";
 
   return (
-    <main className="min-h-screen bg-transparent text-slate-900 pt-20">
+    <>
       <SiteHeader />
+      <main className="min-h-screen bg-transparent text-slate-900 pt-20">
 
       <section className="relative overflow-hidden text-white">
         <div className="absolute inset-0">
@@ -546,7 +547,7 @@ export default function ExperienceDetailsClient({
 
                 <Link
                   href={withLang("/")}
-                  className="block rounded-2xl border border-slate-200 px-5 py-3 text-center font-semibold text-slate-600 transition hover:bg-white hover:bg-slate-50"
+                  className="block rounded-2xl border border-slate-200 px-5 py-3 text-center font-semibold text-slate-600 transition hover:bg-slate-50"
                 >
                   {t.backToHomepage}
                 </Link>
@@ -557,5 +558,6 @@ export default function ExperienceDetailsClient({
       </section>
 
     </main>
+    </>
   );
 }

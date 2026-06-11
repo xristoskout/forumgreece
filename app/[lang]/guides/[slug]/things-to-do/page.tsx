@@ -74,8 +74,9 @@ export default async function ThingsToDoPage({ params }: Props) {
   }
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-50 via-amber-50 to-white">
+    <>
       <SiteHeader />
+      <main className="min-h-screen bg-gradient-to-br from-slate-50 via-amber-50 to-white">
 
       <div className="container mx-auto px-6 py-32">
         <nav className="mb-8 text-sm text-slate-500">
@@ -149,5 +150,6 @@ export default async function ThingsToDoPage({ params }: Props) {
         </div>
       </div>
     </main>
+    </>
   );
 }

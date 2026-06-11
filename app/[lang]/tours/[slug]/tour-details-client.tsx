@@ -44,8 +44,9 @@ export default function TourDetailsClient({
   }
 
   return (
-    <main className="min-h-screen bg-transparent text-slate-900 pt-20">
+    <>
       <SiteHeader />
+      <main className="min-h-screen bg-transparent text-slate-900 pt-20">
 
       <section className="relative overflow-hidden text-slate-900">
         <div className="absolute inset-0">
@@ -242,5 +243,6 @@ export default function TourDetailsClient({
       </section>
 
     </main>
+    </>
   );
 }

@@ -86,8 +86,9 @@ export default async function GreeceToursAndExperiencesCollectionPage({
   const featuredTours = tours.slice(0, 6);
 
   return (
-    <main className="min-h-screen bg-transparent text-slate-900">
+    <>
       <SiteHeader />
+      <main className="min-h-screen bg-transparent text-slate-900">
 
       <section className="border-b border-slate-200 bg-white backdrop-blur-md">
         <div className="mx-auto max-w-7xl px-6 py-14">
@@ -121,7 +122,7 @@ export default async function GreeceToursAndExperiencesCollectionPage({
 
             <Link
               href={withLang("/", lang)}
-              className="border border-slate-200 bg-white backdrop-blur-md px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-white hover:bg-slate-50"
+              className="border border-slate-200 bg-white backdrop-blur-md px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-50"
             >
               {lang === "en"
                 ? "Back to homepage →"
@@ -272,5 +273,6 @@ export default async function GreeceToursAndExperiencesCollectionPage({
         </div>
       </section>
     </main>
+    </>
   );
 }

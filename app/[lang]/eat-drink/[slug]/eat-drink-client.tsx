@@ -87,8 +87,9 @@ export default function EatDrinkClient({ item, lang, businesses }: EatDrinkClien
   };
 
   return (
-    <main className="min-h-screen bg-transparent text-slate-900 pt-20">
+    <>
       <SiteHeader />
+      <main className="min-h-screen bg-transparent text-slate-900 pt-20">
 
       <section className="mx-auto max-w-7xl px-6 py-12 md:py-20">
         <div className="flex flex-col items-center text-center">
@@ -227,5 +228,6 @@ export default function EatDrinkClient({ item, lang, businesses }: EatDrinkClien
         </Link>
       </section>
     </main>
+    </>
   );
 }
