@@ -9,9 +9,9 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
-  --font-serif: var(--font-playfair), var(--font-eb-garamond), serif;
+  --font-serif: var(--font-playfair), Georgia, serif;
   --font-el: var(--font-greek-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
   --animate-float-playful: floatPlayful 5s ease-in-out infinite;
 }
 

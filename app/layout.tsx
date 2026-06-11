@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
-import { Montserrat, Geist_Mono, Noto_Sans, Playfair_Display, EB_Garamond } from "next/font/google";
+import { Montserrat, Noto_Sans, Playfair_Display } from "next/font/google";
 
 import "./globals.css";
 import LangManager from "@/components/lang-manager";
@@ -17,13 +17,6 @@ const geistSans = Montserrat({
   preload: true,
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-  display: "optional",
-  preload: false,
-});
-
 const notoGreek = Noto_Sans({
   variable: "--font-greek-sans",
   subsets: ["greek", "greek-ext", "latin"],
@@ -34,13 +27,6 @@ const notoGreek = Noto_Sans({
 const playfair = Playfair_Display({
   variable: "--font-playfair",
   subsets: ["latin", "latin-ext"],
-  display: "optional",
-  preload: false,
-});
-
-const ebGaramond = EB_Garamond({
-  variable: "--font-eb-garamond",
-  subsets: ["greek", "greek-ext", "latin"],
   display: "optional",
   preload: false,
 });
@@ -96,7 +82,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${notoGreek.variable} ${playfair.variable} ${ebGaramond.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${notoGreek.variable} ${playfair.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-[#f4f7fb] text-slate-900 relative selection:bg-purple-500/30">
         <script
