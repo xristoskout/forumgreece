@@ -290,4 +290,11 @@ export const MAP_PINS: Pin[] = [
     label: { en: "Tinos", el: "Τήνος" },
     tagline: { en: "Sacred island & marble capital", el: "Ιερό νησί & πρωτεύουσα μαρμάρου" },
   },
+  {
+    id: "ios",
+    x: 61.6, y: 64.7,
+    href: "/destinations/ios",
+    label: { en: "Ios", el: "Ίος" },
+    tagline: { en: "Wild beaches, Homer's Tomb & nightlife", el: "Άγριες παραλίες, Τάφος Ομήρου & νυχτερινή ζωή" },
+  },
 ];

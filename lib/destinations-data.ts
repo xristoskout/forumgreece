@@ -1419,6 +1419,48 @@ export const destinations: Destination[] = [
         el: "Πλήρης ταξιδιωτικός οδηγός για την Τήνο. Ανακαλύψτε την Παναγία Ευαγγελίστρια, τον Πύργο, τους ογκόλιθους του Βώλακα, τους περιστερώνες, την Κολυμπήθρα και την τοπική γαστρονομία."
       }
     }
+  },
+  {
+    slug: "ios",
+    name: "Ios",
+    region: { en: "Cyclades", el: "Κυκλάδες" },
+    blurb: {
+      en: "Wild beaches, Homer's Tomb, a perfect Cycladic Chora and legendary nightlife — Ios is more than you expect.",
+      el: "Άγριες παραλίες, Τάφος του Ομήρου, τέλειο κυκλαδίτικο Χωριό και θρυλικό νυχτερινό — η Ίος είναι περισσότερο από ό,τι περιμένεις."
+    },
+    image: "/images/ios-cover.webp",
+    overview: {
+      en: "Ios has a reputation that arrived decades before most visitors do, and that reputation — wild parties, sun-bleached youth, the Cyclades' most legendary nightlife — is not entirely undeserved. But it is also dramatically incomplete. The island that has been sending young travellers home with the best stories of their Aegean summers is also an island of genuine beauty, ancient significance and an interior that most of its own visitors never see.\n\nThe geography of Ios is compact and dramatic: a rugged, hilly landmass of approximately 108 square kilometres, rising steeply from the sea with a spine of bare rock running north to south. The port — Ormos Iosou — sits in a deep protected bay on the west coast. Above it, connected by a road and a long flight of marble steps, the Chora perches on a rounded hilltop at 150 metres, a dense cluster of whitewashed Cycladic architecture that is genuinely one of the most beautiful village streetscapes in the archipelago. Directly south of the Chora, the long sandy arc of Mylopotas beach occupies the island's largest bay, flanked by low hills and backed by a string of beach bars, restaurants and accommodation.\n\nBeyond this trinity of port, Chora and Mylopotas — which is where most visitors spend their entire stay — Ios has considerable depth. The remote south coast culminates in Manganari, a series of broad sandy bays accessible only by boat or a long dirt track, with water of exceptional clarity and almost no development. The northern tip of the island holds what tradition identifies as the tomb of Homer — one of the most poetically resonant sites in the Greek world, reached by a winding road through empty countryside. The interior has abandoned windmills, Byzantine churches and the kind of silence that makes the Chora's midnight energy feel like a different planet.\n\nIos is changing. The island that was synonymous with cheap package tourism in the 1980s and 1990s has been quietly repositioning for over a decade. The quality of accommodation has risen substantially; the food scene has developed genuine seriousness; the boutique hotel market has arrived; and an increasing number of visitors come not for the bars but for the beaches, the landscape and the Chora's exceptional evening atmosphere. Ios at its best — and it is frequently at its best in June, early July and September — is one of the most complete islands in the Cyclades.",
+      el: "Η Ίος έχει μια φήμη που ήρθε δεκαετίες πριν από τους περισσότερους επισκέπτες, και αυτή η φήμη — άγριες γιορτές, ξεθωριασμένη νιοτά, η πιο θρυλική νυχτερινή ζωή στις Κυκλάδες — δεν είναι εντελώς αδικαιολόγητη. Αλλά είναι επίσης драмατικά ελλιπής. Το νησί που στέλνει νεαρούς ταξιδιώτες σπίτι με τις καλύτερες ιστορίες των καλοκαιρινών τους καλοκαιριών στο Αιγαίο είναι επίσης ένα νησί πραγματικής ομορφιάς, αρχαίας σημασίας και εσωτερικού που οι περισσότεροι επισκέπτες του δεν βλέπουν ποτέ.\n\nΗ γεωγραφία της Ίου είναι συμπαγής και δραματική: ένα τραχύ, λοφώδες έδαφος περίπου 108 τετραγωνικών χιλιομέτρων, ανεβαίνοντας απότομα από τη θάλασσα με μια ράχη γυμνού βράχου που τρέχει βόρεια-νότια. Το λιμάνι — Όρμος Ιούσου — κάθεται σε ένα βαθύ προστατευόμενο κόλπο στη δυτική ακτή. Από πάνω, συνδεόμενο με δρόμο και μακρύ σκαλοπάτι μαρμάρου, το Χωριό κάθεται σε στρογγυλό λόφο στα 150 μέτρα, ένα πυκνό σύμπλεγμα λευκοπιασμένης κυκλαδίτικης αρχιτεκτονικής που είναι πραγματικά ένα από τα πιο όμορφα χωριά στο αρχιπέλαγος. Αμέσως νότια του Χωριού, η μακριά αμμώδης παραλία του Μυλοποτά με θέα σε νότιο κόλπο, περιβαλλόμενη από χαμηλούς λόφους και πίσω από σειρά beach bars, εστιατόρια και καταλύματα.\n\nΠέρα από αυτό το τρίτο λιμάνι, Χωριό και Μυλοποτάς — όπου οι περισσότεροι επισκέπτες περνούν ολόκληρη τη διαμονή τους — η Ίος έχει σημαντικό βάθος. Η απομακρυσμένη νότια ακτή κορυφώνεται στη Μαγκαναρί, μια σειρά ευρύτατων αμμωδών κολπών προσβάσιμων μόνο με πλοίο ή μακρύ χωμάτινο δρόμο, με νερό εξαιρετικής διαφάνειας και σχεδόν κανένα ανάπτυγμα. Το βόρειο άκρο του νησιού κρατά αυτό που η παράδοση ταυτίζει ως τον τάφο του Ομήρου — ένα από τα πιο ποιητικά σημαντικά μέρη στο ελληνικό κόσμο, προσβάσιμο με στροφώδη δρόμο μέσα σε άδεια χωράφια. Το εσωτερικό έχει εγκαταλελειμμένους ανεμόμυλους, βυζαντινές εκκλησίες και το είδος της σιωπής που κάνει τη μεσονύχτια ενέργεια του Χωριού να φαίνεται σαν άλλος πλανήτης.\n\nΗ Ίος αλλάζει. Το νησί που ήταν ισοδύναμο με τον φτηνό πακέτο τουρισμό στις δεκαετίες του 1980 και 1990 έχει σιωπηλά επαναπροσδιοριστεί για πάνω από μια δεκαετία. Η ποιότητα των καταλυμάτων έχει ανεβεί ουσιαστικά; η σκηνή του φαγητού έχει αναπτύξει πραγματική σοβαρότητα; το boutique hotel market έχει φτάσει; και αυξανόμενος αριθμός επισκεπτών έρχεται όχι για τα μπαρ αλλά για τις παραλίες, το τοπίο και την εξαιρετικότητα της βραδινής ατμόσφαιρας του Χωριού. Η Ίος στο καλύτερό της — και συχνά είναι στο καλύτερό της τον Ιούνιο, αρχές Ιουλίου και Σεπτέμβριο — είναι ένα από τα πιο ολοκληρωμένα νησιά στις Κυκλάδες."
+    },
+    highlights: {
+      en: ["The Chora (hilltop village)", "Homer's Tomb (north ridge)", "Mylopotas beach", "Manganari (wild south coast)", "Skarkos Bronze Age site", "Venetian windmills at sunset", "Chora nightlife", "Agia Theodoti beach", "Koumbara cove", "Caïque to Manganari"],
+      el: ["Το Χωριό (ορεινό χωριό)", "Τάφος του Ομήρου (βόρεια ράχη)", "Παραλία Μυλοποτά", "Μαγκαναρί (άγρια νότια ακτή)", "Σκάρκος Εποχής Χαλκού", "Ενετικοί ανεμόμυλος στη σούσα", "Νυχτερινή ζωή Χωριού", "Παραλία Αγία Θεοδότη", "Όρμος Κουμπάρα", "Καΐκι στη Μαγκαναρί"]
+    },
+    guideLinks: [
+      {
+        href: "/hotels/ios",
+        label: { en: "Where to Stay in Ios", el: "Πού να μείνεις στην Ίο" }
+      },
+      {
+        href: "/tours/all",
+        label: { en: "Tours & Experiences", el: "Εκδρομές & Εμπειρίες" }
+      },
+      {
+        href: "/collections/greece-food-and-drink",
+        label: { en: "Local Food Ideas", el: "Τοπική Γαστρονομία" }
+      }
+    ],
+    seo: {
+      title: {
+        en: "Ios Travel Guide: Beaches, Homer's Tomb, Villages & Nightlife",
+        el: "Ίος: Ταξιδιωτικός Οδηγός — Παραλίες, Τάφος Ομήρου, Χωριά & Νυχτερινή Ζωή"
+      },
+      description: {
+        en: "Complete travel guide to Ios island, Cyclades — the island of Homeria, wild beaches, a perfectly preserved Chora and a nightlife scene unlike anywhere else in Greece. Everything you need to know before you go.",
+        el: "Πλήρης ταξιδιωτικός οδηγός για την Ίο, Κυκλάδες — το νησί του Ομήρου, άγριες παραλίες, τέλεια διατηρημένο Χωριό και νυχτερινή ζωή που δεν υπάρχει αλλού στην Ελλάδα."
+      }
+    }
   }
 ];
 

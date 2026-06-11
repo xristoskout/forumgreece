@@ -51,6 +51,9 @@ export function organizationSchema() {
     name: "GoGreeceNow",
     url: SITE_URL,
     logo: `${SITE_URL}/images/logo.webp`,
+    founder: {
+      "@id": `${SITE_URL}/#person`,
+    },
     sameAs: [
       "https://www.facebook.com/gogreecenow",
       "https://www.instagram.com/gogreecenow",
@@ -68,7 +71,7 @@ export function websiteSchema(lang: string) {
     "@id": `${SITE_URL}/#website`,
     name: "GoGreeceNow",
     url: SITE_URL,
-    inLanguage: lang === "el" ? "el-GR" : "en-US",
+    inLanguage: lang === "el" ? "el-GR" : "en",
     potentialAction: {
       "@type": "SearchAction",
       target: `${SITE_URL}/${lang}/search?q={search_term_string}`,
