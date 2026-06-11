@@ -1,0 +1,18 @@
+{
+  "id": "ios",
+  "slug": "ios",
+  "name": "Ios",
+  "type": "Island",
+  "region": { "en": "Cyclades", "el": "Κυκλάδες" },
+  "coordinates": { "lat": 36.7220, "lng": 25.2810 },
+  "scores": {
+    "family": { "value": 4, "reason": "Party reputation and steep Chora steps make it less ideal for families with young children." },
+    "couples": { "value": 8, "reason": "Beautiful beaches, sunset views from Chora, and a mix of lively and quiet areas." },
+    "luxury": { "value": 6, "reason": "Growing boutique hotel scene but still more budget/party-oriented than Santorini or Mykonos." },
+    "budget": { "value": 8, "reason": "One of the more affordable Cycladic islands with good value accommodation and dining." },
+    "nightlife": { "value": 9, "reason": "Famous for its vibrant Chora bar scene and beach parties, especially in July-August." },
+    "food": { "value": 7, "reason": "Solid tavernas in Chora and coastal villages; fresh seafood and traditional Cycladic dishes." }
+  },
+  "quick_summary": "Ios is a Cycladic island known for its wild beaches, legendary nightlife in Chora, Homer's Tomb, and a surprisingly budget-friendly alternative to Mykonos and Santorini.",
+  "bestFor": ["party", "nightlife", "young_couples", "beaches", "budget_friendly"]
+}
