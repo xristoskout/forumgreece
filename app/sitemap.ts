@@ -9,6 +9,8 @@ import { blogPosts } from '../lib/blog-data';
 
 const baseUrl = 'https://www.gogreecenow.com';
 
+const CONTENT_UPDATED = new Date('2026-06-01');
+
 const KEPT_EL = ['/contact', '/about', '/privacy-policy'];
 
 const staticRoutes = [
@@ -40,18 +42,16 @@ const dynamicSources = [
   { prefix: '/businesses', items: Array.from(new Set(experienceBusinesses.map(b => b.slug))), priority: 0.7 },
   { prefix: '/travel-info', items: Array.from(new Set(travelInfoGuides.map(g => g.slug))), priority: 0.7 },
   { prefix: '/blog', items: Array.from(new Set(blogPosts.map(p => p.slug))), priority: 0.8 },
-  { prefix: '/guides', items: Array.from(new Set(destinations.map(d => d.slug))), subRoutes: ['/things-to-do', '/best-beaches'], priority: 0.7 },
+  { prefix: '/guides', items: Array.from(new Set(destinations.map(d => d.slug))).filter(s => s !== 'nayplio-odigos-taxidiou'), subRoutes: ['/things-to-do', '/best-beaches'], priority: 0.7 },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
 
-  const now = new Date();
-
   staticRoutes.forEach((route) => {
     entries.push({
       url: `${baseUrl}/en${route}`,
-      lastModified: now,
+      lastModified: CONTENT_UPDATED,
       changeFrequency: 'weekly',
       priority: route === '' ? 1 : 0.8,
     });
@@ -60,7 +60,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   KEPT_EL.forEach((route) => {
     entries.push({
       url: `${baseUrl}/el${route}`,
-      lastModified: now,
+      lastModified: CONTENT_UPDATED,
       changeFrequency: 'weekly',
       priority: 0.8,
     });
@@ -70,7 +70,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     source.items.forEach((slug) => {
       entries.push({
         url: `${baseUrl}/en${source.prefix}/${slug}`,
-        lastModified: now,
+        lastModified: CONTENT_UPDATED,
         changeFrequency: 'weekly',
         priority: source.priority,
       });
@@ -79,7 +79,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         source.subRoutes.forEach((sub) => {
           entries.push({
             url: `${baseUrl}/en${source.prefix}/${slug}${sub}`,
-            lastModified: now,
+            lastModified: CONTENT_UPDATED,
             changeFrequency: 'weekly',
             priority: source.priority,
           });
@@ -87,6 +87,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       }
     });
   });
+
+  const blogDateMap = new Map(
+    blogPosts.map((p) => [p.slug, new Date(p.publishedDate)])
+  );
+
+  entries
+    .filter((e) => e.url.includes('/blog/'))
+    .forEach((e) => {
+      const slug = e.url.split('/blog/')[1];
+      if (slug && blogDateMap.has(slug)) {
+        e.lastModified = blogDateMap.get(slug)!;
+      }
+    });
 
   return entries;
 }

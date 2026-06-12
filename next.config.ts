@@ -147,6 +147,23 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
+        source: "/studio/:path*",
+        headers: [
+          {
+            key: "Content-Security-Policy",
+            value: [
+              "default-src 'self'",
+              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.sanity.io",
+              "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+              "img-src 'self' data: https: blob:",
+              "font-src 'self' data: https://fonts.gstatic.com",
+              "connect-src 'self' https://cdn.sanity.io https://*.sanity.io",
+              "frame-src 'self' https://*.sanity.io",
+            ].join("; "),
+          },
+        ],
+      },
+      {
         source: "/:path*",
         headers: [
           {

@@ -1,0 +1,139 @@
+{
+  "id": "samos",
+  "slug": "samos",
+  "name": "Samos",
+  "type": "Island",
+  "coordinates": {
+    "lat": 37.7646,
+    "lng": 26.9718
+  },
+  "scores": {
+    "family": {
+      "value": 8,
+      "reason": "Samos offers calm beaches, shallow waters, and a relaxed atmosphere ideal for families."
+    },
+    "couples": {
+      "value": 8,
+      "reason": "Romantic sunsets, wine tastings, and secluded coves make Samos great for couples."
+    },
+    "nightlife": {
+      "value": 4,
+      "reason": "Quiet tavernas and beach bars; Samos is not known for nightlife."
+    },
+    "food": {
+      "value": 9,
+      "reason": "Famous for Samian wine, local sausages, honey, and traditional tavernas."
+    },
+    "beaches": {
+      "value": 8,
+      "reason": "Varied coastline from sandy family beaches to hidden pebbly coves with crystal-clear water."
+    },
+    "walking": {
+      "value": 8,
+      "reason": "Lush green mountains, the Tunnel of Eupalinos, and trails through pine forests."
+    }
+  },
+  "content": {
+    "quick_summary": "A lush, authentic Aegean island with wine, ancient history, and uncrowded beaches.",
+    "pros": [
+      "Incredible wine culture (Muscat)",
+      "Rich ancient history & archaeology",
+      "Green, mountainous landscapes",
+      "Very few tourists compared to other islands",
+      "Affordable prices"
+    ],
+    "cons": [
+      "Fewer direct ferry connections",
+      "Limited nightlife",
+      "Requires a car to explore fully"
+    ],
+    "insider_tips": [
+      "Visit Pythagoreio and the ancient Eupalinian aqueduct.",
+      "Try the local Samian Muscat wine at a family winery.",
+      "Hike to the summit of Mount Kerkes for panoramic views."
+    ],
+    "mistakes_to_avoid": [
+      "Visiting only the east coast and missing the mountain villages.",
+      "Skipping the Wine Road (Ilios Udos) experience."
+    ]
+  },
+  "pricing_base": {
+    "budget_daily": 35,
+    "mid_daily": 65,
+    "luxury_daily": 140
+  },
+  "seasonality": {
+    "january": {
+      "temp": 12,
+      "price_multiplier": 0.6
+    },
+    "february": {
+      "temp": 12,
+      "price_multiplier": 0.6
+    },
+    "march": {
+      "temp": 14,
+      "price_multiplier": 0.7
+    },
+    "april": {
+      "temp": 17,
+      "price_multiplier": 0.8
+    },
+    "may": {
+      "temp": 22,
+      "price_multiplier": 1
+    },
+    "june": {
+      "temp": 27,
+      "price_multiplier": 1.2
+    },
+    "july": {
+      "temp": 30,
+      "price_multiplier": 1.5
+    },
+    "august": {
+      "temp": 30,
+      "price_multiplier": 1.5
+    },
+    "september": {
+      "temp": 26,
+      "price_multiplier": 1.2
+    },
+    "october": {
+      "temp": 21,
+      "price_multiplier": 0.9
+    },
+    "november": {
+      "temp": 17,
+      "price_multiplier": 0.7
+    },
+    "december": {
+      "temp": 13,
+      "price_multiplier": 0.6
+    }
+  },
+  "image": "/images/samos-cover.webp",
+  "guideLinks": [
+    {
+      "href": "/hotels/samos",
+      "label": {
+        "en": "Where to Stay",
+        "el": "Πού να μείνεις"
+      }
+    },
+    {
+      "href": "/travel-tools/budget/samos",
+      "label": {
+        "en": "Budget Planner",
+        "el": "Budget Planner"
+      }
+    },
+    {
+      "href": "/travel-tools/best-time/samos",
+      "label": {
+        "en": "Best Time to Visit",
+        "el": "Καλύτερη Εποχή"
+      }
+    }
+  ]
+}

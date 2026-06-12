@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { tours } from '../../../../lib/tours-data';
+import { experienceLandings } from '../../../../lib/experiences';
 import SiteHeader from '../../../../components/site-header';
 import ToursDirectoryClient from './tours-directory-client';
 import { SITE_URL } from '../../../../lib/content';
@@ -83,7 +84,7 @@ export default async function ToursDirectoryPage({ params }: Props) {
     name: lang === "en" ? "All Tours & Experiences in Greece" : "Όλες οι Εκδρομές & Εμπειρίες στην Ελλάδα",
     description: collectionDescription,
     url: `${SITE_URL}/${lang}/tours/all`,
-    numberOfItems: tours.length,
+    numberOfItems: new Set([...tours.map(t => t.slug), ...experienceLandings.map(l => l.slug)]).size,
   });
 
   return (

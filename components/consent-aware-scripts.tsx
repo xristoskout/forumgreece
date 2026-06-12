@@ -34,9 +34,9 @@ export default function ConsentAwareScripts() {
         <>
           <Script
             src={`https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`}
-            strategy="beforeInteractive"
+            strategy="afterInteractive"
           />
-          <Script id="gtag-init" strategy="beforeInteractive">
+          <Script id="gtag-init" strategy="afterInteractive">
             {`gtag('js', new Date()); gtag('config', '${GA4_ID}', { anonymize_ip: true });`}
           </Script>
           <Analytics />

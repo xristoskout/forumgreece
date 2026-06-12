@@ -131,7 +131,7 @@ export default function HotelsDirectoryClient({
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
             {filtered.map((hotel) => (
               <Link href={`/${lang}/hotels/${hotel.slug}`} key={hotel.slug}>
-                <article className="group relative h-[500px] rounded-[3rem] overflow-hidden cursor-pointer border border-white/50 shadow-2xl transition-all duration-700 hover:-translate-y-4 bg-white/10 backdrop-blur-sm">
+                <article className="group relative h-[500px] rounded-2xl overflow-hidden cursor-pointer border border-white/50 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl bg-white/10 backdrop-blur-sm">
                   <Image
                     src={hotel.image}
                     alt={hotel.name}
