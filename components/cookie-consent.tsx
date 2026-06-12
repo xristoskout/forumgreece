@@ -17,13 +17,27 @@ export default function CookieConsent() {
     setShow(!hasConsent);
   }, []);
 
+  function applyConsent(granted: boolean) {
+    const state = granted ? "granted" : "denied";
+    if (typeof (window as unknown as Record<string, unknown>).gtag === "function") {
+      (window as unknown as { gtag: (...args: unknown[]) => void }).gtag("consent", "update", { analytics_storage: state });
+    }
+    window.dispatchEvent(
+      new CustomEvent("cookie-consent-updated", {
+        detail: granted ? "accepted" : "declined",
+      })
+    );
+  }
+
   function accept() {
     localStorage.setItem(COOKIE_CONSENT_KEY, "accepted");
+    applyConsent(true);
     setShow(false);
   }
 
   function decline() {
     localStorage.setItem(COOKIE_CONSENT_KEY, "declined");
+    applyConsent(false);
     setShow(false);
   }
 

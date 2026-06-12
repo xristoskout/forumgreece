@@ -20,7 +20,6 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
 
   const canonicalUrl = `${SITE_URL}/${lang}/eat-drink/${slug}`;
   const enUrl = `${SITE_URL}/en/eat-drink/${slug}`;
-  const elUrl = `${SITE_URL}/el/eat-drink/${slug}`;
 
   const title = item.metaTitle?.[lang] || item.title[lang];
   const description = item.metaDescription?.[lang] || item.info[lang];

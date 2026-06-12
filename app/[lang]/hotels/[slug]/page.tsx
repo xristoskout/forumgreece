@@ -53,7 +53,6 @@ export async function generateMetadata({
 
   const canonicalUrl = `${SITE_URL}/${lang}/hotels/${slug}`;
   const enUrl = `${SITE_URL}/en/hotels/${slug}`;
-  const elUrl = `${SITE_URL}/el/hotels/${slug}`;
 
   return {
     metadataBase: new URL(SITE_URL),

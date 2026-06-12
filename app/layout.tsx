@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from "next";
-import Script from "next/script";
 import { Montserrat, Noto_Sans, Playfair_Display } from "next/font/google";
 
 import "./globals.css";
@@ -74,14 +73,21 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
+type RootLayoutProps = {
   children: React.ReactNode;
-}>) {
+  params: Promise<{ lang: string }>;
+};
+
+export default async function RootLayout({
+  children,
+  params,
+}: RootLayoutProps) {
+  const { lang: rawLang } = await params;
+  const lang = rawLang === "el" ? "el" : "en";
+
   return (
     <html
-      lang="en"
+      lang={lang}
       className={`${geistSans.variable} ${notoGreek.variable} ${playfair.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-[#f4f7fb] text-slate-900 relative selection:bg-purple-500/30">
@@ -92,19 +98,17 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@graph": [
                 organizationSchema(),
-                websiteSchema("en"),
+                websiteSchema(lang),
                 personSchema(),
               ],
             }).replace(/</g, "\\u003c"),
           }}
         />
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-17ZPLMXNSF"
-          strategy="afterInteractive"
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});`,
+          }}
         />
-        <Script id="gtag-init" strategy="afterInteractive">
-          {`window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-17ZPLMXNSF');`}
-        </Script>
         <LangManager />
         <div className="fixed inset-0 z-[-1] bg-[radial-gradient(circle_at_top_right,_rgba(120,80,255,0.15),_transparent_40%),radial-gradient(circle_at_bottom_left,_rgba(80,120,255,0.15),_transparent_40%)] pointer-events-none"></div>
         <MediterraneanCursor />

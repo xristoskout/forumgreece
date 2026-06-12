@@ -26,7 +26,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const canonicalUrl = `${SITE_URL}/${lang}/travel-info/${slug}`;
   const enUrl = `${SITE_URL}/en/travel-info/${slug}`;
-  const elUrl = `${SITE_URL}/el/travel-info/${slug}`;
 
   return {
     title: { absolute: item.title[lang] + ' | GoGreeceNow' },

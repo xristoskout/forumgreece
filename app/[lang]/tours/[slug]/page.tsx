@@ -13,7 +13,7 @@ type TourPageProps = {
   params: Promise<{ lang: string; slug: string }>;
 };
 
-const supportedLangs: Lang[] = ["en", "el"];
+const supportedLangs: Lang[] = ["en"];
 
 function isValidLang(value: string): value is Lang {
   return value === "en" || value === "el";
@@ -80,7 +80,6 @@ export async function generateMetadata({
 
   const canonicalUrl = `${SITE_URL}/${lang}/tours/${slug}`;
   const enUrl = `${SITE_URL}/en/tours/${slug}`;
-  const elUrl = `${SITE_URL}/el/tours/${slug}`;
 
   const pageData = getTourPageData(slug);
 
@@ -109,7 +108,6 @@ export async function generateMetadata({
         canonical: canonicalUrl,
         languages: {
           en: enUrl,
-          el: elUrl,
           'x-default': enUrl,
         },
       },
@@ -144,7 +142,6 @@ export async function generateMetadata({
       canonical: canonicalUrl,
       languages: {
         en: enUrl,
-        el: elUrl,
         'x-default': enUrl,
       },
     },

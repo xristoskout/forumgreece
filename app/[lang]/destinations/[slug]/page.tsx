@@ -29,7 +29,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const canonicalUrl = `${SITE_URL}/${lang}/destinations/${destination.slug}`;
   const enUrl = `${SITE_URL}/en/destinations/${destination.slug}`;
-  const elUrl = `${SITE_URL}/el/destinations/${destination.slug}`;
 
 
   return {

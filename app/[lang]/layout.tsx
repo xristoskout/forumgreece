@@ -15,7 +15,7 @@ export default async function LangLayout({ children, params }: LangLayoutProps) 
   const pageLang: Lang = isSupportedLang(lang) ? lang : "en";
 
   return (
-    <div lang={pageLang} className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen">
       {children}
       <SiteFooter lang={pageLang} />
     </div>
