@@ -75,15 +75,14 @@ export const metadata: Metadata = {
 
 type RootLayoutProps = {
   children: React.ReactNode;
-  params: Promise<{ lang: string }>;
+  params: Promise<Record<string, string>>;
 };
 
 export default async function RootLayout({
   children,
   params,
 }: RootLayoutProps) {
-  const { lang: rawLang } = await params;
-  const lang = rawLang === "el" ? "el" : "en";
+  const lang = (await params).lang === "el" ? "el" : "en";
 
   return (
     <html
