@@ -9,6 +9,13 @@ export type DestinationSection = {
     title?: Localized;
     text: Localized;
   }[];
+  banner?: {
+    image: string;
+    alt: { en: string; el: string };
+    description?: { en: string; el: string };
+    href?: string;
+    hrefLabel?: { en: string; el: string };
+  };
 };
 
 export const destinationSections: Record<string, DestinationSection[]> = {
@@ -3358,6 +3365,14 @@ export const destinationSections: Record<string, DestinationSection[]> = {
           },
         },
       ],
+      banner: {
+        image: "/images/athens-banner.webp",
+        alt: { en: "Athens cityscape", el: "Τοπίο Αθηνών" },
+        description: {
+          en: "A narrow street in Plaka with the sacred rock of the Acropolis rising in the background",
+          el: "Ένα στενό δρομάκι στην Πλάκα με τον ιερό βράχο της Ακρόπολης να κυριαρχεί στο βάθος",
+        },
+      },
     },
     {
       title: {
@@ -9553,1315 +9568,331 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       ]
     }
   ],
-
-  heraklion: [
-    {
-      layout: "list",
-      title: { en: "Why Visit Heraklion", el: "Γιατί να Πας στο Ηράκλειο" },
-      text: {
-        en: "Heraklion divides opinions, and that is one of the more honest things you can say about it. Visitors expecting the whitewashed serenity of the Cyclades will find something else entirely: a working Mediterranean port city with a soul built on thousands of years of trade, invasion, resistance, and reinvention.\n\n**Knossos is one of the great sites of the ancient world** — a partially reconstructed palace complex that gives a genuine spatial sense of Minoan civilisation in 1700 BC. No other site in Greece gives you this.\n\n**The Archaeological Museum is exceptional** — the finest Minoan collection in existence. The Phaistos Disc, the Snake Goddess figurines, the frescoes. Two hours here is not enough.\n\n**The Venetian city is one of the best preserved in the Mediterranean** — Koules fortress, the walls, the Morosini Fountain, the Loggia — an entire Renaissance urban layer.\n\n**The food is among the best in Greece** — the central market, the mezedopolia, the fish tavernas of the old harbour. Cretan cuisine at its capital.\n\n**It is a gateway to the rest of Crete** — Rethymno, Phaistos, Lassithi Plateau, Archanes — all within day-trip range.",
-        el: "Το Ηράκλειο διχάζει τις γνώμες, και αυτό είναι ένα από τα πιο ειλικρινή πράγματα που μπορεί κανείς να πει. Οι επισκέπτες που περιμένουν την ασπρισμένη γαλήνη των Κυκλάδων θα βρουν κάτι εντελώς διαφορετικό: μια ζωντανή μεσογειακή πόλη-λιμάνι.\n\n**Η Κνωσός** — το σπουδαιότερο μινωικό ανάκτορο, μερικώς ανακατασκευασμένο.\n\n**Το Αρχαιολογικό Μουσείο** — η κορυφαία μινωική συλλογή στον κόσμο.\n\n**Η ενετική πόλη** — Κούλες, τείχη, Κρήνη Μοροζίνι, Λότζια.\n\n**Το φαγητό** — κρητική κουζίνα στην πρωτεύουσά της.\n\n**Πύλη για την υπόλοιπη Κρήτη** — Ρέθυμνο, Φαιστός, Λασίθι, Αρχάνες."
-      }
-    },
-    {
-      layout: "list",
-      title: { en: "Best Time to Visit Heraklion", el: "Η Καλύτερη Εποχή για το Ηράκλειο" },
-      text: {
-        en: "**Spring (April–May)** — The most rewarding months for the city and Knossos. Mild temperatures, few crowds, countryside in bloom.\n\n**June** — Best balance of warm sea, manageable temperatures, and a city alive without being overwhelmed.\n\n**July–August** — Peak heat and peak tourism. Knossos can feel congested; visit before 09:00 or after 16:00. The museum is air-conditioned.\n\n**September–October** — Arguably the finest period. Warmest sea, extraordinary light, crowds thin. Grape harvest across the wine region.\n\n💡 Secret: The Heraklion wine region — centred around Archanes — harvests in September. Several estates open for visits. Early September is one of the best times in Crete.",
-        el: "**Άνοιξη (Απρίλιος–Μάιος)** — Οι καλύτεροι μήνες για την πόλη και την Κνωσό.\n\n**Ιούνιος** — Ιδανική ισορροπία ζέστης, θάλασσας και ζωντάνιας.\n\n**Ιούλιος–Αύγουστος** — Πολύς κόσμος. Κνωσός πριν τις 09:00 ή μετά τις 16:00.\n\n**Σεπτέμβριος–Οκτώβριος** — Η καλύτερη περίοδος. Τρύγος στην περιοχή Αρχανών."
-      }
-    },
-    {
-      layout: "list",
-      title: { en: "How to Get to Heraklion", el: "Πώς να Πάτε στο Ηράκλειο" },
-      text: {
-        en: "**By air** — Heraklion International Airport (HER) is one of Greece's busiest. Direct flights from across Europe. Year-round domestic connections. 5 km east of the city centre.\n\n**By ferry** — Daily overnight service from Piraeus (7–8 hours). Regular connections to Santorini, Mykonos, Rhodes. The classic Greek maritime journey.\n\n**By car across Crete** — The E75 runs along the north coast. Heraklion is the midpoint. A car is strongly recommended for exploring beyond the city.\n\n💡 Secret: The overnight ferry from Piraeus is an experience, not a compromise. Book a cabin and arrive at 06:00 as the city wakes up and the market opens.",
-        el: "**Αεροπορικώς** — Αεροδρόμιο Ηρακλείου (HER), 5 χλμ. ανατολικά.\n\n**Ακτοπλοϊκώς** — Νυχτερινά δρομολόγια από Πειραιά (7–8 ώρες). Συνδέσεις με Σαντορίνη, Μύκονο, Ρόδο.\n\n**Οδικώς** — Ε75 κατά μήκος της βόρειας ακτής."
-      }
-    },
-    {
-      layout: "grid",
-      title: { en: "The Old Venetian City", el: "Η Παλιά Ενετική Πόλη" },
-      items: [
-        {
-          title: { en: "Koules Fortress", el: "Κούλες" },
-          text: {
-            en: "The Venetian fortress at the entrance to the old harbour. Built between 1523 and 1540. Three Venetian lions carved into the seaward face. The harbour view from the battlements is one of the defining images of Crete. Go at dusk — the fortress stays open into early evening in summer.",
-            el: "Το ενετικό φρούριο στην είσοδο του παλιού λιμανιού (1523–1540). Τρία ενετικά λιοντάρια στην πρόσοψη. Η θέα από τους προμαχώνες είναι εμβληματική."
-          }
-        },
-        {
-          title: { en: "Lion Square & Morosini Fountain", el: "Πλατεία Λιονταριών & Κρήνη Μοροζίνι" },
-          text: {
-            en: "The social centre of old Heraklion. The Morosini Fountain (1628) sits at the intersection of the main pedestrian streets, surrounded by kafeneions and mezedopolia. The fountain is still fed by the same 17th-century aqueduct from Mount Giouchtas.",
-            el: "Το κοινωνικό κέντρο του Ηρακλείου. Η Κρήνη Μοροζίνι (1628) τροφοδοτείται ακόμα από το υδραγωγείο του 17ου αιώνα."
-          }
-        },
-        {
-          title: { en: "The Venetian Loggia", el: "Ενετική Λότζια" },
-          text: {
-            en: "The most elegant surviving Venetian civic building in Crete. Built in the early 17th century as a meeting place for Venetian nobles. Now serves as the city hall. The arcade is open during the day.",
-            el: "Το πιο κομψό ενετικό κτίριο της Κρήτης. Κτίστηκε ως τόπος συνάντησης των Ενετών ευγενών. Σήμερα στεγάζει το δημαρχείο."
-          }
-        },
-        {
-          title: { en: "Venetian Walls", el: "Ενετικά Τείχη" },
-          text: {
-            en: "4 km long, up to 40 metres thick at the bastions, pierced by four gates. Commissioned by Venice in the 16th century. You can walk the top from Pantokratoras Gate to Martinengo Bastion — where Nikos Kazantzakis is buried — in about 45 minutes.",
-            el: "4 χλμ. μήκος, έως 40 μέτρα πάχος. Περπατήστε από την Πύλη Παντοκράτορα έως τον Προμαχώνα Μαρτινέγκο όπου είναι θαμμένος ο Νίκος Καζαντζάκης."
-          }
-        }
-      ]
-    },
-    {
-      layout: "grid",
-      title: { en: "Knossos & the Archaeological Museum", el: "Κνωσός & Αρχαιολογικό Μουσείο" },
-      items: [
-        {
-          title: { en: "Palace of Knossos", el: "Παλάτι της Κνωσού" },
-          text: {
-            en: "5 km south of the city centre. The ceremonial and political centre of Minoan civilisation (2700–1450 BC). The partially reconstructed complex includes the Throne Room (the oldest throne in Europe), the Grand Staircase, the Central Court, and the storage magazines. Open daily; combined ticket with the museum available. Go before 09:00 or after 16:00.",
-            el: "5 χλμ. νότια. Το τελετουργικό και πολιτικό κέντρο του μινωικού πολιτισμού. Η Θρόνος (ο αρχαιότερος θρόνος της Ευρώπης), η Μεγάλη Κλίμακα, η Κεντρική Αυλή."
-          }
-        },
-        {
-          title: { en: "Heraklion Archaeological Museum", el: "Αρχαιολογικό Μουσείο Ηρακλείου" },
-          text: {
-            en: "The finest Minoan collection in the world. The Phaistos Disc, the Snake Goddess figurines, the Bull-Leaper fresco, the Harvester Vase, the Linear A and B tablets. Allow a minimum of two hours. Buy the combined ticket with Knossos.\n\n💡 Secret: Visit the museum before Knossos — seeing the actual artefacts before walking the site transforms the experience.",
-            el: "Η κορυφαία μινωική συλλογή στον κόσμο. Ο Δίσκος της Φαιστού, οι θεές των φιδιών, οι τοιχογραφίες. Αφιερώστε τουλάχιστον 2 ώρες."
-          }
-        }
-      ]
-    },
-    {
-      layout: "list",
-      title: { en: "Heraklion Food: What to Eat", el: "Φαγητό στο Ηράκλειο" },
-      text: {
-        en: "**Dakos** — The canonical Cretan dish: barley rusk with tomato, mizithra, olive oil, and oregano.\n\n**Kalitsounia** — Small pastries filled with mizithra and honey or wild greens.\n\n**Apaki** — Smoked pork from the Psiloritis mountains, marinated in wine vinegar and herbs.\n\n**Snails (Chochlioi boubouristi)** — Snails cooked in olive oil with rosemary until caramelised.\n\n**Graviera** — The great Cretan hard cheese, PDO protected from sheep's milk.\n\n**Fresh fish** — The old harbour fish tavernas serve the day's catch with minimal preparation.\n\n**Raki (Tsikoudia)** — Crete's spirit, distilled from grape pomace. Arrives automatically with food in traditional tavernas.\n\n💡 Secret: The best value food is one block behind any tourist-facing street. If the menu has photos, keep walking.",
-        el: "**Ντάκος** — Το κλασικό κρητικό πιάτο.\n\n**Καλιτσούνια** — Μικρές πίτες με μυζήθρα.\n\n**Απάκι** — Καπνιστό χοιρινό από τον Ψηλορείτη.\n\n**Χοχλιοί μπουρμπουριστοί** — Σαλιγκάρια με δεντρολίβανο.\n\n**Γραβιέρα** — Το σπουδαίο κρητικό τυρί.\n\n**Ράκη (Τσικουδιά)** — Σερβίρεται αυτόματα με το φαγητό."
-      }
-    },
-    {
-      layout: "grid",
-      title: { en: "Beaches Near Heraklion", el: "Παραλίες Κοντά στο Ηράκλειο" },
-      items: [
-        {
-          title: { en: "Amoudara (3km west)", el: "Αμμούδαρα (3χλμ. δυτικά)" },
-          text: {
-            en: "The closest organized beach. Long sandy stretch with sunbeds and services. The western end toward the salt lake is wilder and quieter.",
-            el: "Η κοντινότερη οργανωμένη παραλία. Το δυτικό άκρο είναι πιο ήσυχο."
-          }
-        },
-        {
-          title: { en: "Matala (75km southwest)", el: "Μάταλα (75χλμ. νοτιοδυτικά)" },
-          text: {
-            en: "Famous south coast beach with red sandstone cliffs and cave tombs. Crystal clear water. Worth a full day trip from Heraklion.",
-            el: "Διάσημη παραλία με κόκκινους βράχους και σπηλιές. Εξαιρετικό νερό."
-          }
-        },
-        {
-          title: { en: "Agia Pelagia (25km west)", el: "Αγία Πελαγία (25χλμ. δυτικά)" },
-          text: {
-            en: "A sheltered bay with calm clear water and good tavernas on the beach. Popular with Heraklion locals.",
-            el: "Προστατευμένος κόλπος με ήρεμα νερά. Δημοφιλής στους ντόπιους."
-          }
-        },
-        {
-          title: { en: "Karteros / Amnissos (8km east)", el: "Καρτερός / Αμνισσός (8χλμ. ανατολικά)" },
-          text: {
-            en: "Two adjacent beaches east of the airport. Karteros is organised and calm; Amnissos has a Minoan site above the beach.",
-            el: "Οργανωμένες παραλίες ανατολικά του αεροδρομίου. Η Αμνισσός έχει μινωικό χώρο πάνω από την παραλία."
-          }
-        }
-      ]
-    },
-    {
-      layout: "grid",
-      title: { en: "Day Trips from Heraklion", el: "Εκδρομές από το Ηράκλειο" },
-      items: [
-        {
-          title: { en: "Archanes (15km south)", el: "Αρχάνες (15χλμ. νότια)" },
-          text: {
-            en: "A beautifully preserved Venetian-era village in wine country. The wine cooperative produces excellent Kotsifali and Mandilari reds. The Fourni Minoan cemetery nearby is exceptional and uncrowded.",
-            el: "Πανέμορφο ενετικό χωριό στην οινοπαραγωγό περιοχή. Κορυφαία κρασιά Κοτσιφάλι και Μανδηλαριά."
-          }
-        },
-        {
-          title: { en: "Phaistos & Agia Triada (60km SW)", el: "Φαιστός & Αγία Τριάδα (60χλμ. ΝΔ)" },
-          text: {
-            en: "The second great Minoan palace — unrestored, with a dramatic position overlooking the Messara Plain. Combined with Agia Triada, they make a full and excellent day.",
-            el: "Το δεύτερο μεγάλο μινωικό ανάκτορο, χωρίς αναστηλώσεις, με εκπληκτική θέα στη Μεσαρά."
-          }
-        },
-        {
-          title: { en: "Spinalonga (90km east)", el: "Σπιναλόγκα (90χλμ. ανατολικά)" },
-          text: {
-            en: "The Venetian island fortress in the Gulf of Elounda. A leper colony until 1957. The boat crossing across the clear gulf is part of the experience.",
-            el: "Ενετικό νησί-φρούριο, λεπροκομείο έως το 1957. Προσβάσιμο με βάρκα από Ελούντα."
-          }
-        },
-        {
-          title: { en: "Lassithi Plateau (50km east)", el: "Οροπέδιο Λασιθίου (50χλμ. ανατολικά)" },
-          text: {
-            en: "A high mountain plateau at 840m, ringed by the Dikti Mountains. The Psychro Cave — legendary birthplace of Zeus. The drive through mountain switchbacks is itself an event.",
-            el: "Οροπέδιο στα 840μ., με το Δικταίο Σπήλαιο — η γενέτειρα του Δία κατά την παράδοση."
-          }
-        }
-      ]
-    },
-    {
-      layout: "list",
-      title: { en: "Practical Tips", el: "Πρακτικές Συμβουλές" },
-      text: {
-        en: "**Orientation** — The old city is compact. The main pedestrian street (25 Avgoustou) runs from the ferry port to Lion Square. Knossos is 5 km south — accessible by city bus (lines 2 and 4).\n\n**Getting around** — Walk within the old city. Bus or taxi for Knossos. Rent a car for day trips.\n\n**When to book** — Knossos and the museum offer online tickets. In July–August, arriving without a ticket for Knossos means significant queuing.\n\n**Language and money** — English is widely spoken. The central market operates largely in cash.\n\n**The raki question** — Raki is offered as hospitality. It is rude to decline without a reason.\n\n💡 Secret: The city bus to Knossos (lines 2 and 4) runs from the central bus terminal east of Lion Square, takes about 20 minutes, and costs a fraction of a taxi.",
-        el: "**Προσανατολισμός** — Η παλιά πόλη είναι συμπαγής. Λεωφορεία 2 και 4 για Κνωσό.\n\n**Μετακινήσεις** — Με τα πόδια στην παλιά πόλη. Αυτοκίνητο για εκδρομές.\n\n**Κράτηση** — Ηλεκτρονικά εισιτήρια για Κνωσό και μουσείο.\n\n**Χρήματα** — Η αγορά λειτουργεί κυρίως με μετρητά.\n\n**Η ρακή** — Προσφέρεται ως φιλοξενία. Δεν αρνείσαι χωρίς λόγο."
-      }
-    },
-    {
-      layout: "faq",
-      title: { en: "FAQ — Heraklion Essentials", el: "Συχνές Ερωτήσεις" },
-      text: {
-        en: "Common questions for planning your trip to Heraklion.",
-        el: "Συχνές ερωτήσεις για το ταξίδι σας στο Ηράκλειο."
-      },
-      items: [
-        {
-          title: { en: "How many days do you need in Heraklion?", el: "Πόσες μέρες χρειάζομαι στο Ηράκλειο;" },
-          text: {
-            en: "Minimum two full days: one for Knossos and the Archaeological Museum, one for the Venetian old city, the market, and the harbour. Three to four days allows day trips to Phaistos, Archanes, or the south coast.",
-            el: "Τουλάχιστον δύο πλήρεις μέρες. Τρεις με τέσσερις επιτρέπουν εκδρομές."
-          }
-        },
-        {
-          title: { en: "Is Heraklion worth visiting or should I go to a resort?", el: "Αξίζει το Ηράκλειο ή να πάω σε resort;" },
-          text: {
-            en: "Heraklion is worth visiting if you are interested in history, archaeology, and food. It is not for people whose primary goal is a beach holiday.",
-            el: "Αξίζει αν σας ενδιαφέρει η ιστορία, η αρχαιολογία και το φαγητό."
-          }
-        },
-        {
-          title: { en: "Is Knossos worth visiting?", el: "Αξίζει η Κνωσός;" },
-          text: {
-            en: "Yes, emphatically. One of the most significant archaeological sites in the world. Go with some preparation — read about Minoan civilisation beforehand or visit the museum first.",
-            el: "Ναι, απόλυτα. Διαβάστε πρώτα για τον μινωικό πολιτισμό ή επισκεφθείτε πρώτα το μουσείο."
-          }
-        },
-        {
-          title: { en: "Do you need a car in Heraklion?", el: "Χρειάζομαι αυτοκίνητο στο Ηράκλειο;" },
-          text: {
-            en: "Not for the city itself. Essential for any exploration beyond the immediate city.",
-            el: "Όχι για την πόλη. Απαραίτητο για εξερεύνηση πέρα από το άμεσο κέντρο."
-          }
-        },
-        {
-          title: { en: "What is the best area to stay in Heraklion?", el: "Ποια είναι η καλύτερη περιοχή για διαμονή;" },
-          text: {
-            en: "The old city within the Venetian walls for proximity to everything. The harbour area around the Venetian Arsenal for views and atmosphere.",
-            el: "Η παλιά πόλη εντός των τειχών. Η περιοχή του λιμανιού για θέα."
-          }
-        },
-        {
-          title: { en: "Is Heraklion expensive?", el: "Είναι ακριβό το Ηράκλειο;" },
-          text: {
-            en: "Less expensive than the island resorts. The central market, traditional tavernas, and public transport are all good value.",
-            el: "Φθηνότερο από τα νησιωτικά resorts."
-          }
-        }
-      ]
-    },
-    {
-      layout: "list",
-      title: { en: "Honest Advice — What to Skip in Heraklion", el: "Ειλικρινής Συμβουλή — Τι να Αποφύγεις στο Ηράκλειο" },
-      text: {
-        en: "✕ **Knossos at midday** — The Minoan palace is essential but at noon in summer the exposed site is scorching and the crowds make it hard to appreciate. Go at opening (08:00) when the light is soft and the site is nearly empty.\n\n✕ **Heraklion waterfront restaurants** — The harbour restaurants survive on cruise ship traffic and tourist footfall. The better food is in the lanes behind the Loggia and around the central market.\n\n✕ **Treating Heraklion as a transit point** — Most visitors land here and leave for Chania or the beaches. Heraklion itself has one of the best archaeological museums in the Mediterranean, a lively university scene, and the Koules fortress at sunset.\n\n✕ **Skipping the central market** — The covered market (1866 Street) is a sensory overload of cheese, honey, herbs, and Cretan specialities. It is the best place to understand what Cretan food actually is.\n\n✕ **Ignoring the southern coast** — The drive south from Heraklion to Matala, through the Messara plain, reveals a completely different Crete: Minoan palaces (Phaistos, Gortyna), cave beaches, and mountain villages.\n\n💡 What nobody tells you: The best-kept secret near Heraklion is the village of Archanes — a thirty-minute drive inland, with wine cellars, a Venetian fountain, and the best taverna in the Heraklion region (To Koutouki tis Elenis). It is where Heraklion locals go for Sunday lunch.",
-        el: "✕ **Κνωσσός στο μεσημέρι** — Απαραίτητο αλλά στη ζέστη και τον κόσμο. Άνοιγμα 08:00.\n\n✕ **Ταβέρνες λιμαριού** — Κρουαζιερόπλοια, τουρίστες. Καλύτερο φαγητό στα σοκάκια πίσω από τη Λόγκια.\n\n✕ **Ηράκλειο ως transit** — Αρχαιολογικό Μουσείο (από τα καλύτερα Μεσογείου), πανεπιστήμιο, Κούλες στη δύση.\n\n✕ **Να παραλείψεις την κεντρική αγορά** — 1866, τυρί, μέλι, βότανα. Η Κρητική κουζίνα.\n\n✕ **Να αγνοήσεις τον νότο** — Μεσσαρα, Φαιστός, Γόρτυνα, Ματαλά, σπήλια.\n\n💡 Αυτό που δε σου λέει κανείς: Το κρυμμένο μυστικό κοντά στο Ηράκλειο είναι το Αρχάνες — 30 λεπτά μέσα, κελάρια κρασιού, Ενετική βρύση, και η καλύτερη ταβέρνα στην περιοχή."
-      }
-    }
-  ],
-  lasithi: [
-    {
-      layout: "list",
-      title: { en: "Why Visit Lasithi", el: "Γιατί να Επισκεφτείς το Λασίθι" },
-      text: {
-        en: "Lasithi divides travellers into those who planned to come here and those who drove east from Heraklion and kept going. Both tend to feel rewarded.\n\nSpinalonga is one of the most affecting sites in the whole of Greece. Not because of the fortress architecture — though the Venetian construction is formidable — but because of what happened there in the twentieth century. The island was an operational leper colony until 1957. Walking its streets, which are still largely intact, is a different kind of experience than any ancient ruin offers.\n\nElounda Bay has some of the finest water in the Mediterranean. The combination of the semi-enclosed gulf, white sand, and sea grass underneath produces the kind of colour that normally requires post-production. It does not require post-production here.\n\nVai is the only palm beach in Europe that is not the result of landscaping. The grove of Phoenix theophrasti palms is a native Cretan species, and it is genuinely strange and beautiful — especially if you visit early in the morning before the day-trip buses arrive.\n\nThe food in eastern Crete is different from elsewhere on the island. Sitia produces a distinctive, peppery olive oil that is among the finest in Greece. The local wine — particularly from the Vilana and Thrapsathiri grapes grown in the Sitia wine region — is barely known outside Crete. Ierapetra's long summer season produces some of the best tomatoes in the country.\n\nLasithi is the least crowded part of Crete. Even in August, the far east of the region — Zakros, Xerokampos, the Sitia coast — has a solitude that is almost impossible to find elsewhere in Greece in summer.",
-        el: "Το Λασίθι χωρίζει τους ταξιδιώτες σε εκείνους που σχεδίασαν να έρθουν και εκείνους που οδήγησαν ανατολικά από το Ηράκλειο και συνέχισαν. Και οι δύο τείνουν να νιώθουν ανταμοιβή.\n\nΗ Σπιναλόγκα είναι ένα από τα πιο συγκινητικά μέρη σε ολόκληρη την Ελλάδα. Το νησί ήταν μια ενεργή αποικία λεπρών μέχρι το 1957. Το περπάτημα στους δρόμους του, που είναι ακόμη σε μεγάλο βαθμό ανέπαφοι, είναι μια διαφορετική εμπειρία από οποιοδήποτε αρχαίο ερείπιο.\n\nΟ κόλπος της Ελούντας έχει ένα από τα ωραιότερα νερά της Μεσογείου. Ο συνδυασμός του ημίκλειστου κόλπου, της λευκής άμμου και των θαλάσσιων φυκιών παράγει το είδος του χρώματος που κανονικά απαιτεί μετα-παραγωγή.\n\nΤο Βάι είναι η μοναδική παραλία με φοίνικες στην Ευρώπη που δεν είναι αποτέλεσμα εξωραϊσμού. Το φοινικόδασος είναι ένα ενδημικό κρητικό είδος.\n\nΤο Λασίθι είναι το λιγότερο πολυσύχναστο μέρος της Κρήτης. Ακόμα και τον Αύγουστο, η άκρη της ανατολικής περιοχής έχει μια μοναξιά που είναι σχεδόν αδύνατο να βρεις αλλού στην Ελλάδα το καλοκαίρι."
-      }
-    },
-    {
-      layout: "list",
-      title: { en: "What to Skip in Lasithi", el: "Τι να Αποφύγεις στο Λασίθι" },
-      text: {
-        en: "**Lasithi Plateau windmills** — The famous \"windmill plateau\" is frequently described as a highlight. Most of the windmills are decommissioned shells. The drive up is scenic; the plateau itself is agricultural, flat, and not worth a special journey unless you are combining it with the Psychro Cave.\n\n**Malia** — The beach is fine. The resort town around it is not representative of this region or any region. Skip it unless a group member requires nightlife infrastructure.\n\n**Elounda without a budget** — The bay is spectacular, but the cluster of ultra-luxury hotels that dominates Elounda has inflated prices across the area. Budget accommodation is in Agios Nikolaos, 15 minutes south. Do not pay Elounda hotel prices for a room that doesn't have a bay view.",
-        el: "**Ανεμόμυλοι Οροπεδίου Λασιθίου** — Οι διάσημοι ανεμόμυλοι είναι ως επί το πλείστον παροπλισμένοι. Η διαδρομή είναι γραφική, αλλά το οροπέδιο δεν αξίζει ειδική διαδρομή εκτός αν το συνδυάσετε με το Σπήλαιο Ψυχρού.\n\n**Μάλια** — Η παραλία είναι καλή. Το θέρετρο γύρω της δεν αντιπροσωπεύει αυτή ή οποιαδήποτε περιοχή.\n\n**Ελούντα χωρίς προϋπολογισμό** — Ο κόλπος είναι εντυπωσιακός, αλλά τα πολυτελή ξενοδοχεία έχουν φουσκώσει τις τιμές. Οικονομική διαμονή υπάρχει στον Άγιο Νικόλαο."
-      }
-    },
-    {
-      layout: "list",
-      title: { en: "Agios Nikolaos", el: "Άγιος Νικόλαος" },
-      text: {
-        en: "The capital of Lasithi is not trying to be more than it is. A small city of around 10,000 people built around a remarkable geographical anomaly: a circular lake, 64 metres deep, connected to the sea by a narrow channel. The lake is called Voulismeni, and the story that it has no bottom — repeated on every menu placarded at the surrounding cafés — is among the more persistent myths in Cretan tourism. It does have a bottom. It's at 64 metres.\n\nThe harbourfront is the social core of the city. Tables run along both sides of the channel, and in the evening this strip fills up in the way that Greek port towns do — unhurriedly, and for a long time. The old quarter above the harbour has narrower streets, a Venetian gate, and considerably more reasonable prices than the waterfront.\n\n**The Archaeological Museum** — Often overlooked in favour of Heraklion's museum, the Agios Nikolaos Archaeological Museum has a collection that rewards careful attention. The Early Minoan material from the Sitia Geopark area is well-presented, and the collection includes a skull — displayed in a case that always generates discussion — with a gold laurel wreath resting on top of it, found with a Roman burial. The museum is small enough to do properly in an hour.\n\n**Kitroplatia Beach** — The town beach, a ten-minute walk from the lake. Organized, with sunbeds and a beach bar. Not the finest beach in the region — that honour goes to beaches further east — but pleasant for a morning swim and close to everything.\n\n**The Harbour at Night** — The channel between the lake and the harbour is lit at night. If you sit on the lake side rather than the port side, the prices drop and the view is identical.\n\nINSIDER TIP: The Agios Nikolaos market runs on Wednesday and Saturday mornings on Paleologou Street, two blocks back from the waterfront. Local honey, olive oil, cheese, and vegetables. More useful than the tourist shops on the harbour.",
-        el: "Η πρωτεύουσα του Λασιθίου είναι μια μικρή πόλη περίπου 10.000 κατοίκων χτισμένη γύρω από μια κυκλική λίμνη, 64 μέτρων βάθους, που συνδέεται με τη θάλασσα μέσω ενός στενού διαύλου. Η λίμνη ονομάζεται Βουλισμένη και η ιστορία ότι δεν έχει πάτο — επαναλαμβανόμενη σε κάθε μενού των γύρω καφέ — είναι ένας από τους πιο επίμονους μύθους του κρητικού τουρισμού. Έχει πάτο. Στα 64 μέτρα.\n\nΤο λιμάνι είναι η κοινωνική καρδιά της πόλης. Η παλιά συνοικία πάνω από το λιμάνι έχει στενότερους δρόμους, μια ενετική πύλη και σημαντικά πιο λογικές τιμές από την προκυμαία.\n\n**Αρχαιολογικό Μουσείο** — Συχνά παραβλέπεται υπέρ του μουσείου Ηρακλείου, αλλά η συλλογή του ανταμείβει την προσεκτική ματιά. Αξίζει μία ώρα.\n\n**Παραλία Κιτροπλατεία** — Η παραλία της πόλης, δέκα λεπτά με τα πόδια από τη λίμνη. Οργανωμένη, με ξαπλώστρες.\n\nΣΥΜΒΟΥΛΗ: Η αγορά του Αγίου Νικολάου λειτουργεί Τετάρτη και Σάββατο πρωί στην οδό Παλαιολόγου. Τοπικό μέλι, ελαιόλαδο, τυρί και λαχανικά."
-      }
-    },
-    {
-      layout: "list",
-      title: { en: "Elounda", el: "Ελούντα" },
-      text: {
-        en: "Elounda has been colonised at the high end. The bay — a Gulf of Finland-blue expanse sheltered between the main coast and the Spinalonga Peninsula — is extraordinary, and the international hotel industry noticed this some decades ago. The result is a concentration of five-star resorts that has made Elounda one of the most expensive destinations in Greece.\n\nThis creates a situation for the independent traveller. The bay itself is open. The beaches — including the long sandy strip around the village — are public. The water quality is exceptional. You can stay in Agios Nikolaos, drive up in the morning, spend a day on the bay's edge, and have the same water without the resort cost.\n\n**The Spinalonga Peninsula** — A narrow finger of land that encloses the bay from the north. The road to its tip leads through landscapes of dry stone walls, fig trees, and — toward the end — genuine solitude. The ancient sunken city of Olous is visible from the causeway at low water: barely visible, enough to understand why the causeway was built here. This is not a formal archaeological site; it is a shadow in the water. Worth the ten-minute walk from the causeway parking.\n\n**Plaka Village** — A tiny fishing village at the northern end of the bay, looking directly at Spinalonga. Boats to the island also depart from here — the crossing is shorter and quieter than from Elounda. The village has two or three tavernas on the waterfront. One of the finest views of Spinalonga is from the Plaka side, especially in the afternoon light.\n\nINSIDER TIP: Boats to Spinalonga run from three points: Elounda, Plaka, and Agios Nikolaos. The Agios Nikolaos boat takes longer but crosses more of the gulf and gives the best aerial view of the coastline. The Plaka crossing (about 10 minutes) is the most atmospheric — a small, almost wordless journey to an island you can see clearly the whole time.",
-        el: "Η Ελούντα έχει κατακτηθεί από την πολυτελή αγορά. Ο κόλπος είναι εξαιρετικός, αλλά η συγκέντρωση πολυτελών ξενοδοχείων την έχει κάνει έναν από τους ακριβότερους προορισμούς στην Ελλάδα.\n\nΗ ίδια η παραλία είναι δημόσια. Μείνετε στον Άγιο Νικόλαο, οδηγήστε το πρωί, περάστε τη μέρα στην άκρη του κόλπου και έχετε το ίδιο νερό χωρίς το κόστος του θερέτρου.\n\n**Χερσόνησος Σπιναλόγκας** — Η αρχαία βυθισμένη πόλη της Ολούντος είναι ορατή από τον διάδρομο σε χαμηλή στάθμη.\n\n**Πλάκα** — Ένα μικρό ψαροχώρι στο βόρειο άκρο του κόλπου, με θέα απευθείας στη Σπιναλόγκα. Βάρκες αναχωρούν και από εδώ.\n\nΣΥΜΒΟΥΛΗ: Βάρκες για Σπιναλόγκα από τρία σημεία. Η διάβαση από Πλάκα (περίπου 10 λεπτά) είναι η πιο ατμοσφαιρική."
-      }
-    },
-    {
-      layout: "list",
-      title: { en: "Spinalonga Island", el: "Σπιναλόγκα" },
-      text: {
-        en: "The island sits four kilometres offshore in a bay that is, by every reasonable measure, one of the most beautiful in Greece. The fortress was built by the Venetians in 1579 and held against the Ottomans until 1715 — long after the rest of Crete had fallen. The Ottomans used it. When the Ottomans left in 1903, the Greek state repurposed it as a leper colony, isolating the sick on the island for the next fifty-four years. The colony was closed in 1957. The last patient left. The village remained.\n\nWalking into Spinalonga today means walking into that village — intact streets, intact houses, intact church — with the knowledge of what it was. This is not comfortable, and that is precisely what makes it worth doing. The Venetian gate, with its inscription to the Venetian governor above the entrance, leads directly into streets that were lived in within living memory.\n\nThe site gained wider international attention through Victoria Hislop's 2005 novel The Island, set partly on Spinalonga, and subsequently through the Greek television adaptation. The novel brought significant tourist interest. The history does not require the novel.\n\n**Practical Information for Spinalonga** — Boats run regularly from Elounda, Plaka, and Agios Nikolaos. Tickets are purchased on the boat or at the jetty. The island itself has an entrance fee. Allow two to three hours. There is a small café on the island; there is no shade on the walk around the walls. Go before 10:00 or after 15:00 in summer — midday is both hot and crowded. The first boat of the morning (usually around 09:00 from Plaka) puts you on the island before the tour groups. The light is better. The silence is longer.",
-        el: "Το νησί βρίσκεται τέσσερα χιλιόμετρα ανοιχτά σε έναν κόλπο που είναι ένας από τους ομορφότερους στην Ελλάδα. Το φρούριο χτίστηκε από τους Ενετούς το 1579. Όταν οι Οθωμανοί έφυγαν το 1903, το ελληνικό κράτος το μετέτρεψε σε αποικία λεπρών, απομονώνοντας τους ασθενείς για τα επόμενα πενήντα τέσσερα χρόνια. Η αποικία έκλεισε το 1957.\n\nΤο περπάτημα στη Σπιναλόγκα σημαίνει να περπατάς σε ένα χωριό — άθικτους δρόμους, άθικτα σπίτια, άθικτη εκκλησία — με τη γνώση του τι ήταν. Αυτό δεν είναι άνετο, και αυτό ακριβώς το κάνει να αξίζει.\n\nΤο νησί έγινε γνωστό μέσα από το μυθιστόρημα της Victoria Hislop \"Το Νησί\" (2005).\n\n**Πρακτικές Πληροφορίες** — Βάρκες από Ελούντα, Πλάκα και Άγιο Νικόλαο. Αφήστε δύο με τρεις ώρες. Πηγαίνετε πριν τις 10:00 ή μετά τις 15:00 το καλοκαίρι."
-      }
-    },
-    {
-      layout: "grid",
-      title: { en: "Top Attractions in Eastern Lasithi", el: "Κορυφαία Αξιοθέατα στην Ανατολική Λασίθι" },
-      items: [
-        {
-          title: { en: "Toplou Monastery", el: "Μονή Τοπλού" },
-          text: {
-            en: "Twenty-five kilometres east of Sitia, the Toplou Monastery stands like something from another century — because it largely is. Founded in the fifteenth century, destroyed and rebuilt multiple times, it served as a communications hub for the Cretan resistance during the German occupation. The Icon of the Great Art by Ioannis Kornaros (1770) — a complex theological composition with 61 scenes — is displayed inside and is one of the most significant pieces of religious art in Crete. The monastery shop sells wine and olive oil made by the monks.",
-            el: "Είκοσι πέντε χιλιόμετρα ανατολικά της Σητείας, η Μονή Τοπλού ιδρύθηκε τον δέκατο πέμπτο αιώνα. Η Εικόνα της Μεγάλης Τέχνης από τον Ιωάννη Κορνάρο (1770) εκτίθεται στο εσωτερικό. Το μοναστήρι είναι ακόμη ενεργό."
-          }
-        },
-        {
-          title: { en: "Vai Palm Forest", el: "Φοινικόδασος Βάι" },
-          text: {
-            en: "Europe's largest natural palm forest. The Phoenix theophrasti is a Cretan endemic — not imported, not planted, not the result of landscaping. The palms crowd a beach that faces east, which means it catches the morning light in a way that southern-facing beaches do not. The grove has been managed and protected since the 1980s. Go before 08:30 if you want the grove in near-solitude. INSIDER TIP: The path from the car park to the northern end of the beach takes about fifteen minutes. The southern end is quieter, less organised, and has cleaner snorkelling.",
-            el: "Το μεγαλύτερο φυσικό φοινικόδασος της Ευρώπης. Ο φοίνικας Phoenix theophrasti είναι κρητικό ενδημικό είδος. Η παραλία βλέπει ανατολικά, πιάνοντας το πρωινό φως. Πηγαίνετε πριν τις 08:30 για ηρεμία."
-          }
-        },
-        {
-          title: { en: "Kato Zakros & the Minoan Palace", el: "Κάτω Ζάκρος & Μινωικό Ανάκτορο" },
-          text: {
-            en: "At the far eastern end of the road system, Kato Zakros sits at the bottom of the Zakros Gorge. The Minoan palace here, excavated from 1961, is the fourth great Minoan palace site after Knossos, Phaistos, and Malia. It is also the least visited and the best preserved in its lower levels — still partially buried, still giving the sense of excavation rather than reconstruction. The beach in front of the village is calm and clean.",
-            el: "Στο ανατολικότερο άκρο του οδικού δικτύου, το μινωικό ανάκτορο της Ζάκρου είναι το τέταρτο μεγάλο μινωικό ανάκτορο. Είναι το λιγότερο επισκέψιμο και το καλύτερα διατηρημένο στα κατώτερα επίπεδά του."
-          }
-        },
-        {
-          title: { en: "Xerokampos", el: "Ξερόκαμπος" },
-          text: {
-            en: "South of Zakros, reachable by a rough road. Xerokampos is a scattered hamlet on a wide, flat beach with a handful of pensions and tavernas. One of the few beaches on Crete that still functions on an agricultural calendar — the locals have farms and apartments, not hotels and packages. A place you either love immediately or don't understand.",
-            el: "Νότια της Ζάκρου, ο Ξερόκαμπος είναι ένας διάσπαρτος οικισμός σε μια φαρδιά, επίπεδη παραλία. Μια από τις λίγες παραλίες στην Κρήτη που λειτουργεί ακόμα με γεωργικό ημερολόγιο."
-          }
-        },
-        {
-          title: { en: "Sitia Geopark", el: "Γεωπάρκο Σητείας" },
-          text: {
-            en: "UNESCO Global Geopark status was granted in 2021. The park covers the eastern tip of Crete — a landscape shaped by tectonic forces, with fossil sites, sea caves, rare plant species, and geological complexity. The gorge systems — particularly Richtis Gorge, with its 25-metre waterfall emptying into a natural pool — are the most accessible highlights. The trail is reasonably maintained; good shoes are sufficient.",
-            el: "Αναγνωρίστηκε ως Παγκόσμιο Γεωπάρκο UNESCO το 2021. Το φαράγγι Ρίχτη, με τον καταρράκτη 25 μέτρων, είναι το πιο προσιτό αξιοθέατο."
-          }
-        }
-      ]
-    },
-    {
-      layout: "grid",
-      title: { en: "Best Beaches in Lasithi", el: "Οι Καλύτερες Παραλίες στο Λασίθι" },
-      items: [
-        {
-          title: { en: "Voulisma Beach", el: "Παραλία Βούλισμα" },
-          text: {
-            en: "Near Istro (20km east of Agios Nikolaos). A semi-circular bay with sand that is fine even by Aegean standards, calm water, and a backdrop of hills. Well-organised in summer with sunbeds and a beach bar. One of the finest organised beaches in the region.",
-            el: "Κοντά στην Ίστρο (20χλμ. ανατολικά του Αγίου Νικολάου). Ημικυκλικός κόλπος με ψιλή άμμο, ήρεμα νερά και λόφους στο βάθος."
-          }
-        },
-        {
-          title: { en: "Istro Beach", el: "Παραλία Ίστρου" },
-          text: {
-            en: "A longer and wilder stretch than Voulisma. The eastern end is rarely developed and often empty in the morning. The snorkelling off the rocks on the left is worth the walk.",
-            el: "Μεγαλύτερη και πιο άγρια από το Βούλισμα. Το ανατολικό άκρο είναι συχνά άδειο το πρωί."
-          }
-        },
-        {
-          title: { en: "Mochlos Islet", el: "Νησίδα Μόχλου" },
-          text: {
-            en: "A tiny rocky island 200 metres from the village of Mochlos, reachable by swimming or a short paddle. The island has a Minoan settlement on it. The water between the island and the shore is some of the clearest in the region.",
-            el: "Μικρή βραχονησίδα 200 μέτρα από το χωριό Μόχλος. Η θάλασσα μεταξύ του νησιού και της ακτής είναι από τις πιο καθαρές στην περιοχή."
-          }
-        },
-        {
-          title: { en: "Kalo Nero (Ierapetra)", el: "Καλό Νερό (Ιεράπετρα)" },
-          text: {
-            en: "On the south coast, west of Ierapetra. Long, undeveloped, dark sand. The south coast beaches in Lasithi are different from the north — wider exposure to the Libyan Sea, stronger swell, and more dramatic cloud formations.",
-            el: "Στη νότια ακτή, δυτικά της Ιεράπετρας. Μακριά, ανεκμετάλλευτη, με σκούρα άμμο και ισχυρότερη διόγκωση."
-          }
-        },
-        {
-          title: { en: "Kouremenos Beach (Palekastro)", el: "Παραλία Κουρεμένος (Παλαίκαστρο)" },
-          text: {
-            en: "The best windsurfing beach in Crete. A consistent meltemi wind, a long sandy bay, a windsurfing school that has operated here for decades. If you windsurf or are willing to learn, this is the reason to drive east.",
-            el: "Η καλύτερη παραλία windsurfing στην Κρήτη. Συνεπής μελτέμι, μακρύς αμμώδης κόλπος και σχολή windsurfing."
-          }
-        },
-        {
-          title: { en: "Xerokampos Beach", el: "Παραλία Ξερόκαμπου" },
-          text: {
-            en: "Wide, flat, clean, almost always quiet. No significant nightlife infrastructure. The snorkelling along the rocky headlands on either side of the bay is excellent. INSIDER TIP: The Cretan south coast is exposed to the Libyan Sea. In summer, this means warmer water but also occasional strong southerly winds. Check the wind before committing to a long drive.",
-            el: "Φαρδιά, επίπεδη, καθαρή, σχεδόν πάντα ήσυχη. Το κολύμπι με μάσκα κατά μήκος των βραχωδών ακρογιαλιών είναι εξαιρετικό."
-          }
-        }
-      ]
-    },
-    {
-      layout: "list",
-      title: { en: "Food & Drink in Lasithi", el: "Φαγητό & Ποτό στο Λασίθι" },
-      text: {
-        en: "Eastern Cretan food is not a lesser version of the Cretan diet — it is a regional expression of it, with its own emphases. The olive oil from the Sitia zone is produced from the Koroneiki variety at high altitude and is among the most sought-after PDO oils in Europe. The local cheeses — particularly the aged graviera from mountain villages — are distinct from their western Cretan equivalents. The wine from the Sitia wine region, built on the Liatiko grape (one of Greece's oldest varieties), is barely distributed outside Crete.\n\n**Sitia Olive Oil** — PDO-protected, produced from Koroneiki olives at altitude. Peppery finish, green-gold colour. Buy it at the Toplou Monastery shop or direct from producers near Sitia.\n\n**Liatiko Wine** — An ancient red grape variety grown almost exclusively in the Sitia zone. Produces a medium-bodied, sometimes semi-sweet red with strong local character. Rarely found outside Crete.\n\n**Dakos** — The baseline of Cretan food: barley rusk, tomato, mizithra, olive oil, oregano. In Lasithi's village tavernas, the rusk is often harder and the mizithra sharper than in tourist-facing versions.\n\n**Octopus at Mochlos** — The village of Mochlos has two or three tavernas and a local fishing fleet. Octopus dried on the line outside the kitchen and then grilled is the canonical order.\n\n**Honey from the Dikti Mountains** — The thyme honey from the mountains surrounding the Lasithi Plateau is among the finest in Greece. Sold in village shops and at the Saturday market in Agios Nikolaos.\n\n**Staka** — Rendered sheep's milk butter — a Cretan cooking fat rarely seen on restaurant menus but used in traditional homes.\n\n**Raki (Tsikoudia)** — Arrives without being asked in traditional tavernas. In eastern Crete, raki is often served with a small sweet rather than mezedes.\n\nINSIDER TIP: The tavernas in Mochlos, Xerokampos, and the villages around Sitia set their prices without reference to what the tourism market will bear — because few tourists find them. A full meal with raki and dessert in one of these places costs less than a salad in Elounda.",
-        el: "Η ανατολική κρητική κουζίνα είναι μια περιφερειακή έκφραση της κρητικής διατροφής με τις δικές της έμφασεις. Το ελαιόλαδο Σητείας ΠΟΠ είναι από τα πιο περιζήτητα στην Ευρώπη. Το κρασί από την οινοπαραγωγική ζώνη της Σητείας, χτισμένο πάνω στο σταφύλι Λιάτικο, σπάνια διανέμεται εκτός Κρήτης.\n\n**Ελαιόλαδο Σητείας** — ΠΟΠ, από ελιές Κορωνέικι σε υψόμετρο. Αγοράστε το στο μοναστήρι Τοπλού.\n\n**Κρασί Λιάτικο** — Αρχαία ποικιλία που παράγεται σχεδόν αποκλειστικά στη ζώνη της Σητείας.\n\n**Χταπόδι στο Μόχλο** — Το χταπόδι αποξηραίνεται στην πετονιά έξω από την κουζίνα και στη συνέχεια ψήνεται στα κάρβουνα.\n\n**Μέλι από τη Δίκτη** — Το θυμάρι μέλι από τα βουνά γύρω από το Οροπέδιο Λασιθίου είναι από τα καλύτερα στην Ελλάδα.\n\nΣΥΜΒΟΥΛΗ: Οι ταβέρνες στο Μόχλο, τον Ξερόκαμπο και τα χωριά γύρω από τη Σητεία κοστίζουν λιγότερο από μια σαλάτα στην Ελούντα."
-      }
-    },
-    {
-      layout: "list",
-      title: { en: "Best Time to Visit Lasithi", el: "Η Καλύτερη Εποχή για το Λασίθι" },
-      text: {
-        en: "**April – May** — Best for gorge walks, the countryside in bloom. Spinalonga is open and quiet. Sea is cool but swimmable in May.\n\n**June** — The finest month. Sea temperature rises, the meltemi hasn't established, and the far east of the region is not yet crowded. Kouremenos has good wind for surfing.\n\n**July – August** — Peak heat and peak visitors at Elounda and Agios Nikolaos. Further east — Sitia, Vai, Zakros — remains manageable. Strong meltemi on exposed coasts. Excellent for windsurfing.\n\n**September – October** — The best period for those who don't need school holiday dates. Sea is warmest, light is extraordinary, harvest season. Sitia wine region festival in September.\n\n**November – March** — Most of the coast closes. Agios Nikolaos remains open year-round. A handful of tavernas in Elounda stay open for local trade.\n\nINSIDER TIP: September in the Sitia wine zone is harvest time. A handful of producers — including Lyrarakis and Economou — accept visits during harvest. This is not organised wine tourism; it involves raki at some point.",
-        el: "**Απρίλιος – Μάιος** — Καλύτερα για περιπάτους σε φαράγγια και εξοχή σε άνθιση.\n\n**Ιούνιος** — Ο καλύτερος μήνας. Η θερμοκρασία της θάλασσας ανεβαίνει, το μελτέμι δεν έχει εγκατασταθεί ακόμα.\n\n**Ιούλιος – Αύγουστος** — Αιχμή ζέστης και επισκεπτών. Πιο ανατολικά παραμένει διαχειρίσιμο.\n\n**Σεπτέμβριος – Οκτώβριος** — Η καλύτερη περίοδος. Η θάλασσα είναι πιο ζεστή, το φως εξαιρετικό, περίοδος συγκομιδής.\n\n**Νοέμβριος – Μάρτιος** — Οι περισσότερες ακτές κλείνουν. Ο Άγιος Νικόλαος παραμένει ανοιχτός όλο τον χρόνο."
-      }
-    },
-    {
-      layout: "list",
-      title: { en: "How to Get to Lasithi", el: "Πώς να Πάτε στο Λασίθι" },
-      text: {
-        en: "**By Air** — Heraklion International Airport (HER) is the primary gateway — 70km west of Agios Nikolaos. Sitia has a small domestic airport (JSH) with seasonal connections to Athens and a handful of other Greek airports. For most international arrivals, Heraklion is the starting point and a rental car is the most practical next step.\n\n**By Ferry** — Agios Nikolaos has a small ferry port with seasonal connections within Crete and occasional links to the Dodecanese and Cyclades. Sitia has a more active port with regular service to Rhodes, Karpathos, and Kassos. Neither port handles the volume of Heraklion or Piraeus.\n\n**By Car from Heraklion** — The E75 coastal highway runs east from Heraklion. Agios Nikolaos is 1 hour 10 minutes. Sitia is around 2 hours. Kato Zakros is 2 hours 45 minutes. The road quality is good on the main E75; the roads to the far eastern villages require attention and occasionally a vehicle with reasonable clearance.\n\n**By Bus (KTEL)** — KTEL Lasithi runs frequent buses from Heraklion to Agios Nikolaos and Sitia. Connections beyond those towns are much less frequent. A car is the only practical way to reach Vai, Zakros, Xerokampos, or the Sitia Geopark trails.\n\nCar hire note: If you are renting in Heraklion and driving to Lasithi, check whether your rental agreement covers the mountain roads to the Lasithi Plateau and the Zakros area — some budget rental agreements exclude unpaved roads.",
-        el: "**Αεροπορικώς** — Διεθνές Αεροδρόμιο Ηρακλείου (HER), 70χλμ. δυτικά του Αγίου Νικολάου. Η Σητεία έχει μικρό αεροδρόμιο εσωτερικού.\n\n**Ακτοπλοϊκώς** — Ο Άγιος Νικόλαος και η Σητεία έχουν λιμάνια με συνδέσεις εσωτερικού.\n\n**Με αυτοκίνητο από Ηράκλειο** — Η Ε75 τρέχει ανατολικά. Άγιος Νικόλαος: 1ώ 10λ. Σητεία: περίπου 2 ώρες.\n\n**Με λεωφορείο (KTEL)** — Συχνά δρομολόγια από Ηράκλειο προς Άγιο Νικόλαο και Σητεία."
-      }
-    },
-    {
-      layout: "list",
-      title: { en: "Practical Tips for Lasithi", el: "Πρακτικές Συμβουλές" },
-      text: {
-        en: "**Orientation** — Lasithi is a large region. Agios Nikolaos is the natural base for the western area (Elounda, Spinalonga, Voulisma). Sitia is the better base if you are spending time in the far east (Toplou, Vai, Zakros). Two bases — two or three nights each — is a better structure.\n\n**Getting Around** — A car is essential beyond the Agios Nikolaos–Elounda corridor. The KTEL buses serve the main towns but not on schedules useful for day use at beaches or sites.\n\n**Money and Payments** — ATMs in Agios Nikolaos and Sitia. Beyond those towns, carry cash. The village tavernas in Xerokampos and Mochlos almost always operate on cash only.\n\n**Language** — English is spoken in Agios Nikolaos and Elounda. In the far east — Sitia, Zakros, Xerokampos — you are in Greece. A few words of Greek will serve you well.\n\n**Driving Conditions** — The road to Kato Zakros is paved but winding. The road to Xerokampos via Ziros involves a significant descent on a narrow road. The Lasithi Plateau ring road climbs through 20+ hairpin turns. All of it is driveable in a standard car. None of it should be attempted at night without familiarity.\n\n**Spinalonga Tickets** — Entrance to the island is ticketed. In July and August, buy boat and island tickets in the morning for the early crossing. No advance online booking is currently available for the island entrance itself (as of 2025); boat operators sell on the day.",
-        el: "**Προσανατολισμός** — Ο Άγιος Νικόλαος είναι η βάση για τη δυτική περιοχή. Η Σητεία για την άπω ανατολή.\n\n**Μετακινήσεις** — Απαραίτητο το αυτοκίνητο.\n\n**Χρήματα** — ΑΤΜ σε Άγιο Νικόλαο και Σητεία. Στα χωριά μόνο μετρητά.\n\n**Γλώσσα** — Αγγλικά στον Άγιο Νικόλαο. Πιο ανατολικά, είστε στην Ελλάδα.\n\n**Οδήγηση** — Ο δρόμος για Κάτω Ζάκρο είναι ασφαλτοστρωμένος αλλά με στροφές.\n\n**Εισιτήρια Σπιναλόγκας** — Η είσοδος στο νησί είναι με εισιτήριο. Αγοράστε το πρωί το καλοκαίρι."
-      }
-    },
-    {
-      layout: "grid",
-      title: { en: "FAQ — Lasithi Essentials", el: "Συχνές Ερωτήσεις" },
-      items: [
-        {
-          title: { en: "How many days do you need in Lasithi?", el: "Πόσες μέρες χρειάζεστε στο Λασίθι;" },
-          text: {
-            en: "Four to five days is a reasonable minimum to cover the region properly — Agios Nikolaos, Spinalonga, and Elounda on the north; Ierapetra on the south; and two days in the far east (Sitia, Toplou, Vai, and Zakros). You can do a highlights version in three days if you are based centrally and willing to drive.",
-            el: "Τέσσερις με πέντε ημέρες είναι ένα λογικό ελάχιστο. Μια εκδοχή περιλήψεων μπορεί να γίνει σε τρεις ημέρες."
-          }
-        },
-        {
-          title: { en: "Is Lasithi or Chania better for a first visit?", el: "Λασίθι ή Χανιά για πρώτη επίσκεψη;" },
-          text: {
-            en: "Chania is more immediately accessible with better public transport and accommodation options. Lasithi is more rewarding if you have a car and are willing to drive. A split works well: a few days in Chania or Heraklion, then drive east.",
-            el: "Τα Χανιά είναι πιο προσιτά. Το Λασίθι είναι πιο ανταποδοτικό για όσους έχουν αυτοκίνητο."
-          }
-        },
-        {
-          title: { en: "Is Spinalonga worth visiting?", el: "Αξίζει η Σπιναλόγκα;" },
-          text: {
-            en: "Yes. One of the few sites in Greece where the 20th century is as present as antiquity. The Venetian fortress is significant on its own terms; the leper colony history gives it a layer that purely ancient sites do not have. Allow two to three hours and do not skip the far end where the colony's church and hospital buildings are located.",
-            el: "Ναι. Ένα από τα λίγα μέρη στην Ελλάδα όπου ο 20ός αιώνας είναι τόσο παρών όσο η αρχαιότητα."
-          }
-        },
-        {
-          title: { en: "Is Elounda worth it without a luxury hotel?", el: "Αξίζει η Ελούντα χωρίς πολυτελές ξενοδοχείο;" },
-          text: {
-            en: "The bay is worth it for a day even without a luxury hotel. Drive up from Agios Nikolaos, use the public beach, take a boat to Spinalonga from Plaka, have lunch at the waterfront tavernas. The bay is a public resource.",
-            el: "Ο κόλπος αξίζει ακόμα και χωρίς πολυτελές ξενοδοχείο. Οδηγήστε από τον Άγιο Νικόλαο."
-          }
-        },
-        {
-          title: { en: "Can you visit Vai in a day trip from Agios Nikolaos?", el: "Μπορείτε να επισκεφθείτε το Βάι σε ημερήσια εκδρομή;" },
-          text: {
-            en: "Yes, but it is a long day — around 1 hour 30 minutes each way on winding roads. A better structure is to stay in Sitia for two nights and use it as a base for Vai, Toplou, and Zakros.",
-            el: "Ναι, αλλά είναι μεγάλη ημέρα. Καλύτερα να μείνετε στη Σητεία για δύο βράδια."
-          }
-        },
-        {
-          title: { en: "What is the Lasithi Plateau?", el: "Τι είναι το Οροπέδιο Λασιθίου;" },
-          text: {
-            en: "A high mountain plateau at around 840 metres altitude, ringed by the Dikti Mountains. Famous for its windmills (mostly decommissioned) and the Psychro Cave — traditionally identified as the birthplace of Zeus. The drive up through the mountain switchbacks is the most scenic part. Combined with the Psychro Cave, it makes a half-day trip from Heraklion.",
-            el: "Ένα ορεινό οροπέδιο σε υψόμετρο περίπου 840 μέτρων, διάσημο για το Σπήλαιο Ψυχρού — παραδοσιακά ταυτισμένο ως γενέτειρα του Δία."
-          }
-        },
-        {
-          title: { en: "Is Lasithi suitable for families?", el: "Είναι το Λασίθι κατάλληλο για οικογένειες;" },
-          text: {
-            en: "Very much so, particularly the north coast — Agios Nikolaos, the calm beaches of Elounda bay, Voulisma. The Spinalonga story requires care with younger children, but the site itself is not graphic. The south coast beaches are better for older children who swim confidently. Kouremenos is excellent for older children interested in water sports.",
-            el: "Απολύτως, ιδιαίτερα στη βόρεια ακτή. Η Σπιναλόγκα απαιτεί προσοχή με μικρότερα παιδιά."
-          }
-        }
-      ]
-    },
-    {
-      layout: "list",
-      title: { en: "Honest Advice — What to Skip in Lasithi", el: "Ειλικρινής Συμβουλή — Τι να Αποφύγεις στο Λασίθι" },
-      text: {
-        en: "✕ **Agios Nikolaos harbour restaurants** — The lakeside town is picturesque but the harbour restaurants are overpriced and tourist-oriented. Walk five minutes to the Ammoudi area for better food with fewer crowds.\n\n✕ **Elounda as a base** — Elounda is exclusive and beautiful but also isolated from the rest of Crete. The resorts here are luxury enclaves that keep you away from the island's real character.\n\n✕ **Spinalonga island in peak hours** — The Venetian fortress island is fascinating but the small boats deliver too many people at once. Go on the first departure (09:00) when the light is beautiful and the crowds are thin.\n\n✕ **Skipping the Dikti mountains** — The drive from Agios Nikolaos up to the Lassithi Plateau and the Dikti cave system is a completely different Crete — mountain villages, fruit orchards, and dramatic limestone peaks.\n\n✕ **Only the east coast** — Lasithi has a quieter, more mountainous west side (Ierapetra, Makrygialos) that few visitors discover. The drive from Ierapetra to Makrygialos through the Libyan Sea coastline is one of Crete's hidden gems.\n\n💡 What nobody tells you: The best beach in Lasithi is not in the tourist brochures — it is Vai, the palm forest beach on the east coast, and it is worth visiting not for the beach itself (which can be crowded) but for the short hike to the abandoned monastery above it, where the views are spectacular and the silence is total.",
-        el: "✕ **Ταβέρνες λιμαριού Αγ. Νικολάου** — Όμορφη αλλά ακριβή. Αμμούδι 5 λεπτά — καλύτερα.\n\n✕ **Ελούντα ως βάση** — Λουξερική, απομακρυσμένη. Resorts, όχι Κρήτη.\n\n✕ **Σπιναλόγκα στην αιχμή** — Ενδιαφέρον αλλά πολύς κόσμος. Πρώτο πλοίο 09:00.\n\n✕ **Δίκτη βουνά** — Λασίθι Πλατό, σπήλιο Δίκτη — διαφορετική Κρήτη.\n\n✕ **Μόνο ανατολική ακτή** — Δυτική (Ιεράπετρα, Μακρύγιαλο) λιγότερο γνωστή. Drive Λιβυκής Θάλασσας.\n\n💡 Αυτό που δε σου λέει κανείς: Η καλύτερη παραλία δεν είναι στο βιβλίο — είναι η Βάι, το φοινικόδασος. Αλλά η πραγματική αξία είναι το μονοπάτι στο εγκαταλελειμμένο μονάχι πάνω, με θέα και απόλυτη σιωπή."
-      }
-    }
-  ],
-  aegina: [
-    {
-      layout: "list",
-      title: { en: "Why Visit Aegina", el: "Γιατί να Επισκεφτείς την Αίγινα" },
-      text: {
-        en: "**1. It is 40 minutes from Athens — and it does not feel like it**\nNo other destination in Greece offers this particular combination: the proximity of a commuter suburb and the atmosphere of a proper island. You can leave central Athens at 08:30, step off a hydrofoil in Aegina Town harbour at 09:10, walk to the fish market, drink coffee by the waterfront, visit the Temple of Aphaia, and be back in time for dinner in Athens. Or you can stay overnight — in which case the island becomes a different place entirely.\n\n**2. The Temple of Aphaia is one of the most important ancient monuments in Greece — and almost no one queues for it**\nBuilt around 500 BC on a pine-forested hill above the eastern coast, the Temple of Aphaia is a Doric masterpiece that together with the Parthenon in Athens and the Temple of Hephaestus formed what Pausanias described as the \"perfect triangle\" of ancient Greek temples. It receives a fraction of the visitor numbers of the Parthenon. You will very likely have large sections of it entirely to yourself.\n\n**3. Aegina Town is one of the finest neoclassical harbour towns in Greece**\nThe town was rebuilt in the neoclassical style after Greek independence in the 1820s — Aegina was briefly the first capital of the independent Greek state, from 1826 to 1828 — and the architecture of that period gives the harbour front, the streets behind it, and the central squares a coherence and elegance that most Greek island towns do not have.\n\n**4. Perdika is the most charming small fishing harbour in the Saronic Gulf**\nLocated at the southwestern tip of the island, 9 km from Aegina Town, Perdika is a small village of roughly 500 people that clusters around a natural harbour full of fishing boats. From the quay you can take a small boat across to Moni islet — an uninhabited nature reserve with peacocks, deer, and water so clear it looks Photoshopped.\n\n**5. The pistachios are not a marketing claim — they are genuinely extraordinary**\nAegina pistachios (Fistikia Aeginis) hold a European Protected Designation of Origin and are considered the finest variety produced in Greece. The island's volcanic soil, warm dry climate, and a specific local cultivar called Aeginitis combine to produce a nut with a sweeter, more complex flavour than any other variety.\n\n**6. Aegina works beautifully in every season and for every type of traveller**\nThe island is open and alive year-round. Unlike the Cyclades or Dodecanese, Aegina never fully closes: the ferry runs daily, the harbour cafés stay open through winter, and the Temple of Aphaia is accessible regardless of season.",
-        el: "**1. Είναι 40 λεπτά από την Αθήνα — και δεν το νιώθεις**\nΚανένας άλλος προορισμός στην Ελλάδα δεν προσφέρει αυτόν τον συνδυασμό: την εγγύτητα ενός προαστίου και την ατμόσφαιρα ενός πραγματικού νησιού.\n\n**2. Ο Ναός της Αφαίας είναι ένα από τα σημαντικότερα αρχαία μνημεία — και σχεδόν κανείς δεν κάνει ουρά**\nΧτισμένος γύρω στο 500 π.Χ., ο δωρικός ναός είναι αριστούργημα και δέχεται ένα κλάσμα των επισκεπτών του Παρθενώνα.\n\n**3. Η πόλη της Αίγινας είναι από τα ωραιότερα νεοκλασικά λιμάνια**\nΗ Αίγινα ήταν για λίγο η πρώτη πρωτεύουσα του ανεξάρτητου ελληνικού κράτους (1826–1828).\n\n**4. Η Πέρδικα είναι το πιο γοητευτικό ψαρολίμανο στον Σαρωνικό**\nΜικρό χωριό 500 κατοίκων με φυσικό λιμάνι γεμάτο ψαροκάικα και βάρκα για τη Μονή.\n\n**5. Τα φιστίκια δεν είναι διαφημιστικό επιχείρημα — είναι πραγματικά εξαιρετικά**\nΠΟΠ, από το ηφαιστειακό έδαφος του νησιού.\n\n**6. Η Αίγινα λειτουργεί όμορφα κάθε εποχή**\nΤο νησί δεν κλείνει ποτέ εντελώς — το πλοίο τρέχει καθημερινά όλο τον χρόνο."
-      }
-    },
-    {
-      layout: "list",
-      title: { en: "Best Time to Visit Aegina", el: "Η Καλύτερη Εποχή για την Αίγινα" },
-      text: {
-        en: "**May & June — Best Overall**\nThe pistachio trees are in blossom, the sea is warm enough to swim from mid-May, and the island has not yet filled with weekend crowds. The light is clear, the hills are green, and the harbour mornings are as good as they get.\n\n**July & August — Best for Beach**\nThe sea is at its warmest and the beaches are fully organised. Aegina is at its busiest — particularly weekends — but the island handles summer well. Book accommodation on the island rather than day-tripping.\n\n**September & October — Hidden Gem**\nThe pistachio harvest happens in September. The sea remains warm until mid-October. The weekday island is almost entirely locals. October brings cooler evenings, golden light on the hills.\n\n**November – April — City Escape**\nAegina in winter is a proper island: fishing boats in the harbour, older men playing backgammon at the café, fewer tourists than locals. For Athenians wanting a weekend reset without a long journey, the winter ferry to Aegina is one of the simplest pleasures in the Saronic region.\n\n💡 Secret: For photographs of the Temple of Aphaia with no other visitors in the frame, go on a weekday morning in May, early June, or October. Arrive at 08:30 when the site opens. The morning light through the pine trees is exceptional.",
-        el: "**Μάιος & Ιούνιος — Καλύτερη Συνολικά**\nΟι φιστικιές ανθίζουν, η θάλασσα ζεσταίνεται από τα μέσα Μαΐου.\n\n**Ιούλιος & Αύγουστος — Καλύτερα για Παραλία**\nΗ θάλασσα στο πιο ζεστό της. Κλείστε διαμονή, μην έρθετε ημερήσια.\n\n**Σεπτέμβριος & Οκτώβριος — Κρυμμένο Διαμάντι**\nΣυγκομιδή φιστικιών τον Σεπτέμβριο. Η θάλασσα ζεστή μέχρι μέσα Οκτωβρίου.\n\n**Νοέμβριος – Απρίλιος — Απόδραση Πόλης**\nΗ Αίγινα τον χειμώνα είναι πραγματικό νησί: ψαροκάικα, τάβλι, λιγότεροι τουρίστες."
-      }
-    },
-    {
-      layout: "list",
-      title: { en: "How to Get to Aegina", el: "Πώς να Πάτε στην Αίγινα" },
-      text: {
-        en: "💡 Secret: If you are coming from central Athens, take the Metro to Piraeus (Line 1, green line, terminus station) and walk 10 minutes to the ferry terminal at Gate E8/E9. The whole journey from Syntagma Square to the Aegina Town quayside — Metro plus hydrofoil — takes under 60 minutes and costs under €15 total.\n\n**By hydrofoil (Flying Dolphin) — fastest option**\nThe hydrofoil service (Hellenic Seaways and Aegean Flying Dolphins) departs from Gate E8 at Piraeus and arrives in Aegina Town in approximately 35–40 minutes. Departures run multiple times daily from early morning to late evening. Book in advance on summer weekends.\n\n**By conventional ferry — most economical**\nThe conventional car ferry from Piraeus takes approximately 70 minutes and runs multiple times daily. It is slower but significantly cheaper, accepts vehicles, and has open deck space. The ferry also calls at Souvala port on Aegina's northeast coast.\n\n**Getting around the island**\nAegina Town has a central bus station from which routes serve Agia Marina (for the Temple of Aphaia), Perdika, Marathonas beach, and several villages. Taxis, scooters, and bicycles are available for hire at the port. The famous horse-drawn carriages (amaxes) operate as taxis in Aegina Town itself.\n\n**By car from Athens**\nYou can drive your car onto the conventional ferry from Piraeus. Note that Aegina Town's harbour front is partially pedestrianised, and parking in the town itself can be challenging at peak times. A scooter or bicycle covers it more easily than a car.",
-        el: "💡 Συμβουλή: Από το κέντρο της Αθήνας, πάρτε το Μετρό προς Πειραιά (Γραμμή 1) και περπατήστε 10 λεπτά μέχρι την πύλη Ε8/Ε9. Όλο το ταξίδι από την Πλατεία Συντάγματος διαρκεί λιγότερο από 60 λεπτά.\n\n**Με Flying Dolphin — ταχύτερη επιλογή**\n35–40 λεπτά από την Πύλη Ε8 του Πειραιά. Κλείστε θέση τα καλοκαιρινά Σαββατοκύριακα.\n\n**Με συμβατικό πλοίο — οικονομικότερο**\nΠερίπου 70 λεπτά. Δέχεται οχήματα.\n\n**Μετακινήσεις στο νησί**\nΛεωφορεία, ταξί, σκούτερ και ποδήλατα διαθέσιμα στο λιμάνι."
-      }
-    },
-    {
-      layout: "numbered",
-      title: { en: "Top Attractions in Aegina", el: "Κορυφαία Αξιοθέατα στην Αίγινα" },
-      items: [
-        {
-          title: { en: "Temple of Aphaia", el: "Ναός της Αφαίας" },
-          text: {
-            en: "Built around 500 BC on a dramatic hilltop surrounded by Aleppo pines in the eastern part of the island, the Temple of Aphaia is dedicated to a local deity associated with Artemis and represents one of the finest surviving examples of the Archaic-transitional Doric order. A standing colonnade of 24 columns with three side walls intact, in a setting of pine trees and island views that is among the most beautiful of any ancient site in Greece. The museum on-site is small but carefully arranged.\n\n💡 Secret: Arrive at 08:30 when the site opens. The morning light through the pine trees falls at an angle that disappears by 10:00. By 10:30 the tour groups from Athens arrive.",
-            el: "Χτισμένος γύρω στο 500 π.Χ. σε έναν δραματικό λόφο με πεύκα. Είναι ένα από τα ωραιότερα σωζόμενα παραδείγματα του αρχαϊκού δωρικού ρυθμού. Οι 24 κίονες στέκονται ακόμα.\n\n💡 Μυστικό: Φτάστε στις 08:30 όταν ανοίγει ο χώρος. Το πρωινό φως μέσα από τα πεύκα είναι εξαιρετικό."
-          }
-        },
-        {
-          title: { en: "Aegina Town Harbour & Neoclassical Town", el: "Λιμάνι & Νεοκλασική Πόλη" },
-          text: {
-            en: "The harbour front of Aegina Town is one of the most elegantly proportioned in the Saronic islands. The neoclassical customs house, the 19th-century mansions behind the waterfront, and the distinctive yellow-domed Church of Agios Nikolaos at the end of the pier create a visual composition that feels deliberately designed. The fish market operates every morning behind the harbour — one of the most authentic in the Attica region.\n\nAegina was the first capital of the modern Greek state (1826–1828), the first place in Greece to print a newspaper and to mint coins of the modern Greek state.\n\n💡 Secret: Walk the harbour front twice — once in the morning when the fishing boats are unloading and the fish market is at its best, and once after 21:00 when the restaurant tables take over the quayside and the ferries create a backdrop of movement and light.",
-            el: "Το λιμάνι της Αίγινας είναι από τα πιο κομψά στα νησιά του Σαρωνικού. Η ψαραγορά λειτουργεί κάθε πρωί. Η Αίγινα ήταν η πρώτη πρωτεύουσα του ελληνικού κράτους.\n\n💡 Μυστικό: Περπατήστε το λιμάνι δύο φορές — πρωί όταν ξεφορτώνουν τα ψαροκάικα και βράδυ μετά τις 21:00."
-          }
-        },
-        {
-          title: { en: "Perdika Village & Moni Islet", el: "Πέρδικα & Νησίδα Μονή" },
-          text: {
-            en: "The village of Perdika at the island's southern tip is what Aegina Town might have looked like forty years ago: a small harbour of fishing boats, a strip of taverna tables directly above the water, a general store, and a pace of life that does not adjust for visitor schedules. From Perdika's small quay, a five-minute water taxi crosses to Moni — an uninhabited nature reserve islet home to a herd of fallow deer, a colony of peacocks, and water of improbable turquoise clarity.\n\n💡 Secret: The water taxi to Moni is informal — a local fisherman with a small boat. Ask at the quayside. The best swimming on Moni is on the eastern side, reached by a short path from the landing point.",
-            el: "Η Πέρδικα είναι ένα μικρό ψαροχώρι με ταβέρνες πάνω στο νερό. Από την προβλήτα, μια πεντάλεπτη βαρκάδα πάει στη Μονή — ένα ακατοίκητο νησάκι με ελάφια και παγώνια.\n\n💡 Μυστικό: Το θαλάσσιο ταξί είναι άτυπο — ένας ψαράς με βάρκα. Ρωτήστε στην προβλήτα."
-          }
-        },
-        {
-          title: { en: "Monastery of Agios Nektarios & Palaiochora", el: "Μονή Αγίου Νεκταρίου & Παλαιοχώρα" },
-          text: {
-            en: "One of the most important Orthodox Christian pilgrimage sites in Greece, the Monastery of Agios Nektarios sits on a forested hillside roughly 6 km from Aegina Town. Nektarios of Aegina (1846–1920) was canonised in 1961 — one of the most recent saints recognised by the Greek Orthodox Church.\n\nAdjacent to the monastery, on the hilltop behind it, are the ruins of Palaiochora — the medieval capital of Aegina, abandoned in the 19th century. 28 surviving Byzantine churches scattered across the hilltop constitute one of the most unusual and atmospheric archaeological walks in the Saronic region.\n\n💡 Secret: The walk from the monastery to Palaiochora takes 20 minutes on a marked path. The best-preserved frescoes are in the Church of the Episkopi.",
-            el: "Το Μοναστήρι του Αγίου Νεκταρίου είναι από τα σημαντικότερα προσκυνήματα στην Ελλάδα. Δίπλα του βρίσκονται τα ερείπια της Παλαιοχώρας — της μεσαιωνικής πρωτεύουσας της Αίγινας. 28 βυζαντινές εκκλησίες σώζονται στον λόφο."
-          }
-        },
-        {
-          title: { en: "Aegina Archaeological Museum", el: "Αρχαιολογικό Μουσείο Αίγινας" },
-          text: {
-            en: "One of the oldest archaeological museums in Greece — established in 1829 and housed in a neoclassical building near the harbour. The collection includes pottery from the Early Bronze Age settlement at Kolonna, Mycenaean grave goods, and the surviving elements of the Temple of Aphaia pediment sculptures that were not acquired by Ludwig I of Bavaria in 1812. Small enough to cover in 45 minutes but provides essential context for the Temple of Aphaia.\n\n💡 Secret: Visit the museum before the Temple of Aphaia, not after — understanding the chronology makes the temple visit significantly richer.",
-            el: "Ένα από τα παλαιότερα αρχαιολογικά μουσεία στην Ελλάδα (1829). Η συλλογή περιλαμβάνει κεραμική από την Πρώιμη Εποχή του Χαλκού και μυκηναϊκά κτερίσματα.\n\n💡 Μυστικό: Επισκεφθείτε το μουσείο πριν τον Ναό της Αφαίας."
-          }
-        },
-        {
-          title: { en: "Column of Apollo & Ancient Aegina (Kolonna)", el: "Στήλη του Απόλλωνα & Αρχαία Αίγινα (Κολόνα)" },
-          text: {
-            en: "At the northern edge of Aegina Town, a single standing Doric column — all that remains of the Temple of Apollo (c. 480 BC) — rises from the archaeological site of Kolonna. The site represents over 4,000 years of continuous occupation, from the Early Bronze Age through the Classical period.\n\n💡 Secret: The column is best photographed in the late afternoon when the light comes from the west and catches the stone in warm contrast against the blue of the Saronic Gulf behind it.",
-            el: "Μία μοναδική δωρική στήλη — ό,τι απέμεινε από τον Ναό του Απόλλωνα — υψώνεται από τον αρχαιολογικό χώρο της Κολόνας.\n\n💡 Μυστικό: Η καλύτερη φωτογραφία το απόγευμα όταν το φως έρχεται από τη δύση."
-          }
-        },
-        {
-          title: { en: "Pistachio Farms & the Agricultural Plain", el: "Φιστικιές & ο Αγροτικός Κάμπος" },
-          text: {
-            en: "The flat plain behind Aegina Town is the heart of the island's pistachio production — roughly 25 square kilometres of orderly rows of Aeginitis pistachio trees, producing around 1,500 tonnes annually. The harvest takes place in September, when families spread large nets under the trees and shake the branches.\n\n💡 Secret: The pistachios sold at the port are predictable. For the best variety and prices, drive 3–4 km into the plain to the co-operative shops near Mesagros village, where you can buy directly from producers and taste before buying.",
-            el: "Ο κάμπος πίσω από την πόλη είναι η καρδιά της παραγωγής φιστικιού. Η συγκομιδή γίνεται τον Σεπτέμβριο.\n\n💡 Μυστικό: Για τα καλύτερα φιστίκια, οδηγήστε 3–4 χλμ. μέσα στον κάμπο στα συνεταιριστικά καταστήματα κοντά στο Μεσαγρό."
-          }
-        }
-      ]
-    },
-    {
-      layout: "grid",
-      title: { en: "Best Beaches in Aegina", el: "Οι Καλύτερες Παραλίες στην Αίγινα" },
-      items: [
-        {
-          title: { en: "Agia Marina", el: "Αγία Μαρίνα" },
-          text: {
-            en: "The island's most developed beach resort, 13 km east of Aegina Town on the coast below the Temple of Aphaia. A long sandy bay with sunbeds, beach bars, watersports, and a small village of tavernas behind it. Calm, shallow water good for children.",
-            el: "Η πιο ανεπτυγμένη παραλία του νησιού. Μακρύς αμμώδης κόλπος με ξαπλώστρες, beach bar και ήρεμα νερά."
-          }
-        },
-        {
-          title: { en: "Kolona Beach (Aegina Town)", el: "Παραλία Κολόνα (Αίγινα)" },
-          text: {
-            en: "The closest swimming to Aegina Town, immediately north of the harbour beside the Kolonna archaeological site. A narrow sandy strip with calm clear water. Ideal for a morning swim before the ferry or an evening dip after visiting the town.",
-            el: "Η κοντινότερη παραλία στην πόλη, δίπλα στον αρχαιολογικό χώρο της Κολόνας. Ιδανική για πρωινό μπάνιο πριν το πλοίο."
-          }
-        },
-        {
-          title: { en: "Marathonas", el: "Μαραθώνας" },
-          text: {
-            en: "4 km south of Aegina Town, a long sandy beach served by local bus. Calmer and more local-feeling than Agia Marina, with sunbed areas and several good tavernas behind it.",
-            el: "4 χλμ. νότια της πόλης. Πιο ήσυχη και τοπική από την Αγία Μαρίνα."
-          }
-        },
-        {
-          title: { en: "Perdika & Moni Coves", el: "Πέρδικα & Όρμοι Μονής" },
-          text: {
-            en: "The small beach at Perdika village is pebbly and calm. The real swimming is on Moni islet (5 minutes by water taxi) — crystal clear water, no facilities, and an almost complete absence of other people on weekdays outside July–August.",
-            el: "Το πραγματικό μπάνιο στη Μονή (5 λεπτά με θαλάσσιο ταξί) — κρυστάλλινα νερά, σχεδόν έρημη τις καθημερινές."
-          }
-        },
-        {
-          title: { en: "Souvala", el: "Σούβαλα" },
-          text: {
-            en: "A quiet bay on the north coast with a small port, some fishing boats, and a calm pebbly beach. A working village rather than a resort. The conventional ferry from Piraeus also calls here.",
-            el: "Ήσυχος κόλπος στη βόρεια ακτή. Εργαζόμενο χωριό, όχι θέρετρο."
-          }
-        },
-        {
-          title: { en: "Klima & Portes", el: "Κλήμα & Πόρτες" },
-          text: {
-            en: "Small coves on the southern coast accessible by scooter via rough roads. Minimal facilities. Exceptionally clear water and almost nonexistent crowds. If you have a scooter, the southern coast offers some of the quietest swimming on the island.",
-            el: "Μικροί όρμοι στη νότια ακτή. Ελάχιστες ανέσεις, εξαιρετικά καθαρά νερά."
-          }
-        }
-      ]
-    },
-    {
-      layout: "list",
-      title: { en: "What to Eat in Aegina", el: "Τι να Φας στην Αίγινα" },
-      text: {
-        en: "💡 Food secret: The best fish tavernas in Aegina are not on the main harbour front of Aegina Town — they are in Perdika, 9 km away, where the tables touch the water and the octopus on the line above you was caught that morning.\n\n**Aegina Pistachios (Fistikia Aeginis)** — PDO since 1996. The Aeginitis cultivar produces a nut with a distinctively sweet, rich flavour. Buy from the farm co-operatives in the agricultural plain. They also come in ice cream, loukoumades, cake, and baklava.\n\n**Fresh Fish & Grilled Octopus** — The tavernas in Perdika are the best venue for grilled fish: simple preparations, good olive oil, lemon, and fish that was in the sea this morning.\n\n**Kakavia (Fishermen's Soup)** — A rustic stew of whatever small fish and shellfish the net brought in, cooked with onion, tomato, olive oil, and herbs. Found in the older tavernas in Aegina Town and Perdika.\n\n**Pistachio Ice Cream** — Several ice cream shops in Aegina Town make pistachio gelato from local nuts. The flavour is darker, richer, and less sweet than commercial pistachio ice cream.\n\n**Aegina Honey** — Thyme and pine honey from small apiaries on the slopes of Mount Oros. Dark amber, intensely aromatic.\n\n**What to take home:** Raw pistachios, roasted and salted pistachios, pistachio paste, pistachio-and-honey combinations, local honey, dried herbs. A small jar of Aegina pistachio butter makes an excellent gift.",
-        el: "💡 Μυστικό φαγητού: Οι καλύτερες ψαροταβέρνες είναι στην Πέρδικα, όχι στο λιμάνι της Αίγινας.\n\n**Φιστίκια Αιγίνης (Φιστίκια Αιγίνης ΠΟΠ)** — Αγοράστε από τα συνεταιριστικά καταστήματα στον κάμπο.\n\n**Φρέσκο Ψάρι & Χταπόδι** — Οι ταβέρνες στην Πέρδικα είναι η καλύτερη επιλογή.\n\n**Κακαβιά** — Παραδοσιακή ψαρόσουπα.\n\n**Παγωτό Φιστίκι** — Από ντόπια φιστίκια, πιο πλούσια γεύση.\n\n**Μέλι Αίγινας** — Θυμάρι και πεύκο από τον Όρος.\n\n**Τι να πάρετε μαζί σας:** Φιστίκια όλων των ειδών, μέλι, βότανα."
-      }
-    },
-    {
-      layout: "list",
-      title: { en: "Honest Advice — What to Skip in Aegina", el: "Ειλικρινής Συμβουλή — Τι να Αποφύγεις" },
-      text: {
-        en: "✕ **Coming on a Saturday afternoon in July or August without a return ticket booked** — The Sunday evening ferries back to Piraeus fill completely with Athenians returning from the weekend. Book the return trip at the same time as the outward journey, particularly for summer weekends.\n\n✕ **Eating at the first row of tavernas on the harbour front without checking prices** — Several are priced for day-trippers. The fish market neighbourhood behind the port has better tavernas at better prices. Perdika has the best seafood on the island.\n\n✕ **Visiting Palaiochora without time to slow down** — Allow at least 90 minutes to walk among the scattered churches, look for frescoes, and sit for a moment with a view over the island. Combine it with the Agios Nektarios monastery.\n\n✕ **Buying pistachios only from the port stalls** — The co-operative shops 3–4 km into the agricultural plain offer better variety, lower prices per kilo, and the possibility of tasting before buying.\n\n✕ **Treating Aegina as a day trip only** — The island that overnight guests experience is different: the evening quiet after the last day boat leaves, the Temple of Aphaia at dawn, and the morning fish market at full operation. One night changes the quality of the trip disproportionately.\n\n💡 What nobody tells you: Aegina was not only the first capital of the modern Greek state — it was where the first modern Greek coins were minted, where the first Greek newspaper was printed, and where Governor Kapodistrias established the first Greek school and the first orphanage.",
-        el: "✕ **Να έρθετε Σάββατο απόγευμα Ιούλιο ή Αύγουστο χωρίς εισιτήριο επιστροφής** — Τα κυριακάτικα βραδινά πλοία γεμίζουν. Κλείστε εισιτήριο επιστροφής μαζί με το μετάβασης.\n\n✕ **Φαγητό στην πρώτη σειρά ταβερνών του λιμανιού** — Αρκετές τιμολογούν για ημερήσιους επισκέπτες. Η γειτονιά της ψαραγοράς έχει καλύτερες επιλογές.\n\n✕ **Επίσκεψη Παλαιοχώρας χωρίς χρόνο** — Αφήστε τουλάχιστον 90 λεπτά.\n\n✕ **Αγορά φιστικιών μόνο από τα περίπτερα του λιμανιού** — Ο συνεταιρισμός 3–4 χλμ. μέσα στον κάμπο έχει καλύτερες τιμές.\n\n✕ **Να δείτε την Αίγινα μόνο ως ημερήσια εκδρομή** — Μία διανυκτέρευση αλλάζει δυσανάλογα την ποιότητα του ταξιδιού."
-      }
-    },
-    {
-      layout: "grid",
-      title: { en: "FAQ — Aegina Essentials", el: "Συχνές Ερωτήσεις" },
-      items: [
-        {
-          title: { en: "Is Aegina worth visiting as a day trip from Athens?", el: "Αξίζει η Αίγινα ως ημερήσια εκδρομή από Αθήνα;" },
-          text: {
-            en: "Yes — but it is a better trip if you stay overnight. As a day trip, you have time for the harbour, one or two sites, lunch, and a swim. Overnight, the island changes completely after the last day boats leave.",
-            el: "Ναι — αλλά καλύτερα με διανυκτέρευση. Το νησί αλλάζει τελείως όταν φύγουν τα τελευταία ημερήσια πλοία."
-          }
-        },
-        {
-          title: { en: "How long does the ferry from Piraeus take?", el: "Πόσο διαρκεί το πλοίο από Πειραιά;" },
-          text: {
-            en: "Hydrofoil: 35–40 minutes. Conventional ferry: approximately 70 minutes. Both from Gate E8/E9 at Piraeus. Multiple departures daily year-round.",
-            el: "Flying Dolphin: 35–40 λεπτά. Συμβατικό πλοίο: περίπου 70 λεπτά."
-          }
-        },
-        {
-          title: { en: "How many days do you need in Aegina?", el: "Πόσες μέρες χρειάζεστε στην Αίγινα;" },
-          text: {
-            en: "One overnight covers the main sites comfortably. Two nights allows a more relaxed pace. Three nights works well combined with Hydra and Poros.",
-            el: "Μία διανυκτέρευση καλύπτει τα βασικά. Δύο για πιο χαλαρό ρυθμό."
-          }
-        },
-        {
-          title: { en: "What is Aegina known for?", el: "Για τι είναι γνωστή η Αίγινα;" },
-          text: {
-            en: "The Temple of Aphaia, its PDO pistachios, its role as the first capital of the modern Greek state, Perdika village, and being the most accessible island day trip from Athens.",
-            el: "Τον Ναό της Αφαίας, τα φιστίκια ΠΟΠ, την πρώτη πρωτεύουσα του ελληνικού κράτους, την Πέρδικα."
-          }
-        },
-        {
-          title: { en: "Do you need a car in Aegina?", el: "Χρειάζεστε αυτοκίνητο στην Αίγινα;" },
-          text: {
-            en: "Not necessarily. The local bus covers the main areas. A scooter or bicycle rented at the port is the most flexible option for independent exploration.",
-            el: "Όχι απαραίτητα. Λεωφορείο, σκούτερ ή ποδήλατο καλύπτουν τις ανάγκες."
-          }
-        },
-        {
-          title: { en: "Can you visit Aegina year-round?", el: "Μπορείτε να επισκεφθείτε την Αίγινα όλο τον χρόνο;" },
-          text: {
-            en: "Yes — one of the very few Greek islands that functions properly year-round. The ferry runs daily. The town has cafés and restaurants open throughout winter.",
-            el: "Ναι — από τα λίγα νησιά που λειτουργούν κανονικά όλο τον χρόνο."
-          }
-        },
-        {
-          title: { en: "Best time to visit for the pistachio harvest?", el: "Καλύτερη εποχή για τη συγκομιδή φιστικιού;" },
-          text: {
-            en: "September. The harvest takes place from early to mid-September. Fresh-harvest pistachios have a flavour that the packaged version does not replicate.",
-            el: "Σεπτέμβριος. Τα φρέσκα φιστίκια έχουν γεύση που δεν αναπαράγει η συσκευασμένη έκδοση."
-          }
-        }
-      ]
-    }
-  ],
-  tinos: [
-    {
-      layout: "list",
-      title: { en: "Why Visit Tinos", el: "Γιατί να Επισκεφτείς την Τήνο" },
-      text: {
-        en: "**1. The Panagia Evangelistria is the most important religious site in modern Greece**\nThe Church of the Annunciation holds the sacred icon of the Virgin Mary, discovered in 1823 following a vision reported by Nun Pelagia. It draws over a million visitors a year — believers, curious travellers and historians alike. The atmosphere on the 15th of August is unlike anything else in the Aegean.\n\n**2. Pyrgos is the marble-carving capital of Greece**\nPyrgos in the north has been producing marble sculptors for centuries. The Museum of Marble Crafts is one of the best-designed museums in Greece, and the family workshops allow you to watch the craft at close hand.\n\n**3. The Venetian dovecotes are unique to Tinos**\nOver a thousand ornate stone dovecotes are scattered across the hillsides — narrow towers with geometric decorative patterns. The finest concentrations are around Tarampados and Ktikados.\n\n**4. Volax is one of the most surreal landscapes in the Greek islands**\nThe village sits at the centre of a natural amphitheatre filled with enormous rounded granite boulders — the landscape feels otherworldly.\n\n**5. The food culture is the finest in the Cyclades**\nTinos produces exceptional local ingredients: giant artichokes, graviera cheese, cured sausages, loukoumades. The restaurant scene is serious without being pretentious.\n\n**6. Fifty-plus villages reward exploration**\nTinos has more inhabited villages than most other Cycladic islands combined. Hiring a car and driving from village to village is one of the finest things you can do in the Cyclades.",
-        el: "**1. Η Παναγία Ευαγγελίστρια είναι το σημαντικότερο θρησκευτικό προσκύνημα**\nΗ εικόνα ανακαλύφθηκε το 1823 και προσελκύει πάνω από ένα εκατομμύριο επισκέπτες ετησίως.\n\n**2. Ο Πύργος είναι η πρωτεύουσα του μαρμάρου**\nΤο Μουσείο Μαρμάρου και τα οικογενειακά εργαστήρια είναι μοναδικά.\n\n**3. Οι περιστερώνες είναι μοναδικοί στην Τήνο**\nΠάνω από χίλιοι πετρόκτιστοι περιστερώνες στους λόφους.\n\n**4. Ο Βώλακας είναι το πιο εξωπραγματικό τοπίο**\nΓιγάντιοι γρανιτένιοι ογκόλιθοι δημιουργούν ένα σουρεαλιστικό σκηνικό.\n\n**5. Η καλύτερη γαστρονομία στις Κυκλάδες**\nΑγκινάρες, γραβιέρα, σύγλινο, λουκουμάδες — η Τήνος είναι παράδεισος για τους λάτρεις του φαγητού.\n\n**6. Πάνω από πενήντα χωριά**\nΗ Τήνος έχει περισσότερα κατοικημένα χωριά από κάθε άλλη Κυκλάδα."
-      }
-    },
-    {
-      layout: "list",
-      title: { en: "Best Time to Visit Tinos", el: "Η Καλύτερη Εποχή για την Τήνο" },
-      text: {
-        en: "**April – May — Green, uncrowded, ideal for village exploration**\nThe island is green and the weather is mild. Easter on Tinos, with both Catholic and Orthodox populations celebrating, is a particularly special time.\n\n**June — Perfect balance**\nWarm enough for beach days, uncrowded, everything open. One of the best months in the entire Cyclades calendar.\n\n**July – August — Peak season and lively**\nThe 15th of August is extraordinary to witness but extremely crowded — plan far in advance. The beaches are busy but the island absorbs summer visitors well.\n\n**September — Arguably the finest month**\nThe sea is at its warmest, crowds thin after mid-month, and the light over the dovecotes and marble villages is exceptional.\n\n**October – November — Quiet, authentic**\nExcellent for cultural visits and food exploration. The countryside and marble workshops are at their most atmospheric.\n\n**Winter — A living island year-round**\nTinos is one of the few Cycladic islands worth visiting in winter for a quiet, genuinely Greek experience.",
-        el: "**Απρίλιος – Μάιος — Πράσινο, ήσυχο, ιδανικό για εξερεύνηση χωριών**\nΤο Πάσχα στην Τήνο είναι μοναδικό.\n\n**Ιούνιος — Τέλεια ισορροπία**\nΖεστός, ήσυχος, όλα ανοιχτά.\n\n**Ιούλιος – Αύγουστος — Αιχμή**\nΗ 15η Αυγούστου είναι απίστευτη εμπειρία.\n\n**Σεπτέμβριος — Ο καλύτερος μήνας**\nΗ θάλασσα ζεστή, λιγότερος κόσμος.\n\n**Οκτώβριος – Νοέμβριος — Ήσυχα, αυθεντικά**\nΙδανικά για πολιτισμό και γαστρονομία.\n\n**Χειμώνας — Ζωντανό νησί όλο τον χρόνο**\nΑπό τις λίγες Κυκλάδες που αξίζουν τον χειμώνα."
-      }
-    },
-    {
-      layout: "list",
-      title: { en: "How to Get to Tinos", el: "Πώς να Πάτε στην Τήνο" },
-      text: {
-        en: "**By ferry from Piraeus** — 4–5 hours on conventional ferries, 2.5–3 hours on high-speed catamarans.\n\n**By ferry from Rafina** — From the port closer to Athens airport, about 2.5 hours on high-speed services.\n\n**From Mykonos** — 25 minutes by high-speed ferry. The contrast between the two islands is part of the experience.\n\n**From Syros** — 35 minutes. Combine Tinos and Syros for the most culturally rich Cyclades trip.\n\n💡 Secret: Tinos is an excellent base for island hopping — Mykonos, Syros, Delos and Naxos are all within easy reach.\n\n**Getting around** — A car is essential for exploring the interior. Rental cars are available at the port. Book in advance for July and August.",
-        el: "**Από Πειραιά** — 4–5 ώρες με συμβατικό, 2.5–3 ώρες με ταχύπλοο.\n\n**Από Ραφήνα** — Περίπου 2.5 ώρες.\n\n**Από Μύκονο** — 25 λεπτά.\n\n**Από Σύρο** — 35 λεπτά.\n\n💡 Συμβουλή: Η Τήνος είναι εξαιρετική βάση για island hopping.\n\n**Μετακινήσεις** — Απαραίτητο το αυτοκίνητο για το εσωτερικό του νησιού."
-      }
-    },
-    {
-      layout: "numbered",
-      title: { en: "Top Attractions in Tinos", el: "Κορυφαία Αξιοθέατα στην Τήνο" },
-      items: [
-        {
-          title: { en: "Church of Panagia Evangelistria (Our Lady of Tinos)", el: "Παναγία Ευαγγελίστρια" },
-          text: {
-            en: "The most important religious site in modern Greece. The church stands at the top of the long marble-paved Leoforos Megalocharis that rises from the port. Built in gleaming white marble in the early 19th century, it holds the sacred icon of the Virgin Mary in an elaborately decorated silver frame. The underground chapel marks the exact site where the icon was discovered in 1823. The ex-voto collection — offerings of gold, silver and jewellery left by the faithful over two centuries — is one of the most remarkable collections of popular religious art in Greece.\n\n💡 Secret: Remove your shoes before entering the inner sanctuary. The atmosphere inside is one of profound silence and devotion regardless of your beliefs. Visit on a weekday morning in June or September for a quiet experience.",
-            el: "Το σημαντικότερο θρησκευτικό προσκύνημα της Ελλάδας. Η εκκλησία χτίστηκε από λευκό μάρμαρο τον 19ο αιώνα. Φιλοξενεί την ιερή εικόνα της Παναγίας. Η συλλογή τάματων είναι μοναδική.\n\n💡 Μυστικό: Βγάλτε τα παπούτσια σας πριν μπείτε στο ιερό."
-          }
-        },
-        {
-          title: { en: "Pyrgos — Marble Village & Museum of Marble Crafts", el: "Πύργος — Μαρμάρινο Χωριό & Μουσείο Μαρμάρου" },
-          text: {
-            en: "Pyrgos is a village of exceptional quality — built almost entirely in marble. The Museum of Marble Crafts is one of the most thoughtfully designed museums in Greece, telling the story of Tinian marble from quarry to finished work. The Yannoulis Chalepas Museum celebrates the island's most celebrated sculptor. Family workshops sell original work at prices that bear no relation to the quality.\n\n💡 Secret: The cemetery above the village is not morbid — it is a gallery of extraordinary marble sculpture. Allow 30 minutes here.",
-            el: "Ο Πύργος είναι χτισμένος σχεδόν εξολοκλήρου σε μάρμαρο. Το Μουσείο Μαρμάρου είναι από τα ωραιότερα μουσεία στην Ελλάδα.\n\n💡 Μυστικό: Το νεκροταφείο πάνω από το χωριό είναι γκαλερί μαρμάρινων γλυπτών."
-          }
-        },
-        {
-          title: { en: "Volax — The Boulder Village", el: "Βώλακας — Το Χωριό των Ογκόλιθων" },
-          text: {
-            en: "Volax sits at the centre of a natural amphitheatre filled with enormous rounded granite boulders — geological formations deposited by ancient volcanic activity. The village is inhabited year-round and its tiny amphitheatre hosts summer cultural events. The landscape feels otherworldly, unlike anything else in the Cyclades.\n\n💡 Secret: Take the path behind the village to walk among the boulders — it takes 20 minutes and requires no special equipment.",
-            el: "Ο Βώλακας περιβάλλεται από γιγάντιους γρανιτένιους ογκόλιθους. Το τοπίο είναι εξωπραγματικό.\n\n💡 Μυστικό: Περπατήστε ανάμεσα στους ογκόλιθους πίσω από το χωριό."
-          }
-        },
-        {
-          title: { en: "Xombourgo — The Medieval Fortress", el: "Εξωμπούργκο — Το Μεσαιωνικό Κάστρο" },
-          text: {
-            en: "The dramatic granite rock of Xombourgo rises to 640 metres and was the site of the island's Venetian capital. The ruins of fortress walls, Catholic churches and Orthodox chapels cover the summit. The walk up from Komi takes about 40 minutes.\n\n💡 Secret: Go in the morning when the air is clear. The views of Mykonos, Syros and Delos from the top are among the finest in the Cyclades.",
-            el: "Ο βράχος του Εξωμπούργκου ήταν η ενετική πρωτεύουσα. Η θέα από την κορυφή είναι μοναδική.\n\n💡 Μυστικό: Πηγαίνετε το πρωί με καθαρό αέρα."
-          }
-        },
-        {
-          title: { en: "The Dovecote Villages — Tarampados, Ktikados", el: "Οι Περιστερώνες — Ταράμπαδος, Κτικάδος" },
-          text: {
-            en: "The central plateau has the highest concentration of the island's famous dovecotes — narrow stone towers with intricate geometric decorative panels. The landscape of terraced hillsides, dovecotes, small stone chapels and ancient walls is unlike anywhere else in the Greek islands.\n\n💡 Secret: The drive through the central plateau at dusk, with dovecotes against the fading light, is unforgettable.",
-            el: "Το κεντρικό οροπέδιο έχει τους περισσότερους περιστερώνες. Η οδήγηση στο ηλιοβασίλεμα είναι αξέχαστη."
-          }
-        },
-        {
-          title: { en: "Kardiani & the Catholic North Villages", el: "Καρδιανή & τα Καθολικά Χωριά" },
-          text: {
-            en: "The northern part of Tinos has a distinct character shaped by Catholic heritage. Kardiani, perched on a steep hillside above the north coast with views over Syros, is considered by many to be the most beautiful village on the island.\n\n💡 Secret: Kardiani has one of the best traditional tavernas on the island — arrive at lunchtime and ask what is cooking.",
-            el: "Το βόρειο τμήμα της Τήνου έχει καθολική κληρονομιά. Η Καρδιανή θεωρείται το ωραιότερο χωριό του νησιού.\n\n💡 Μυστικό: Η Καρδιανή έχει μία από τις καλύτερες ταβέρνες."
-          }
-        },
-        {
-          title: { en: "Tinos Town & the Marble Ramp", el: "Τήνος & ο Μαρμάρινος Δρόμος" },
-          text: {
-            en: "Tinos Town has a pleasant, unhurried waterfront with good seafood restaurants and cafés. The long marble-paved Leoforos Megalocharis rises from the port to the church. On the 15th of August, pilgrims crawl the entire length on their knees.\n\n💡 Secret: The best loukoumades on the island are served at a small traditional stall just off the main street — locals queue from mid-morning.",
-            el: "Η πόλη της Τήνου έχει όμορφο λιμάνι και την οδό Μεγαλόχαρης.\n\n💡 Μυστικό: Οι καλύτεροι λουκουμάδες στο νησί σερβίρονται σε ένα μικρό παραδοσιακό μαγαζάκι."
-          }
-        }
-      ]
-    },
-    {
-      layout: "grid",
-      title: { en: "Best Beaches in Tinos", el: "Οι Καλύτερες Παραλίες στην Τήνο" },
-      items: [
-        {
-          title: { en: "Kolymbithra", el: "Κολυμπήθρα" },
-          text: { en: "A double-coved beach on the north coast with extraordinarily clear turquoise water and dramatic rock formations. The larger cove has a taverna and sunbeds; the smaller is wilder and quieter. One of the finest beaches in the Cyclades.", el: "Διπλός όρμος στη βόρεια ακτή με κρυστάλλινα νερά. Από τις ωραιότερες παραλίες στις Κυκλάδες." }
-        },
-        {
-          title: { en: "Porto", el: "Πόρτο" },
-          text: { en: "A long sandy beach on the east coast with shallow, calm water and good facilities. The most family-friendly beach on the island with several tavernas nearby.", el: "Μεγάλη αμμώδης παραλία στην ανατολική ακτή, ιδανική για οικογένειες." }
-        },
-        {
-          title: { en: "Agios Fokas", el: "Άγιος Φωκάς" },
-          text: { en: "The closest beach to Tinos Town — long stretch of sand and pebble, partially organised with sunbeds and clear calm water. Good for a half-day from the port without needing a car.", el: "Η κοντινότερη παραλία στην πόλη, με ξαπλώστρες και ήρεμα νερά." }
-        },
-        {
-          title: { en: "Livada", el: "Λιβάδα" },
-          text: { en: "A small, quiet cove near Panormos on the northwest coast. Deep translucent blue water, rarely crowded. One of the most beautiful and least visited swimming spots.", el: "Μικρός ήσυχος όρμος, σπάνια πολυσύχναστος. Από τα ωραιότερα σημεία για μπάνιο." }
-        },
-        {
-          title: { en: "Agios Romanos", el: "Άγιος Ρωμανός" },
-          text: { en: "Broad sandy beach on the south coast with reliable summer winds and a windsurfing school. Less scenic than Kolymbithra but consistently good for board sports.", el: "Αμμώδης παραλία στη νότια ακτή, ιδανική για windsurfing." }
-        },
-        {
-          title: { en: "Pachia Ammos", el: "Παχιά Άμμος" },
-          text: { en: "Isolated sandy cove on the northwest coast reached by a narrow unpaved track. Fine soft sand and water of exceptional clarity. No facilities — bring everything you need.", el: "Απομονωμένη παραλία στη βορειοδυτική ακτή. Φέρτε όλα όσα χρειάζεστε." }
-        }
-      ]
-    },
-    {
-      layout: "list",
-      title: { en: "Food in Tinos — What to Eat", el: "Φαγητό στην Τήνο — Τι να Φας" },
-      text: {
-        en: "💡 Food secret: The Saturday morning farmers' market in Tinos Town is the best opportunity to buy local products directly from producers.\n\n**Tinian Artichokes** — PDO product, considered the finest in Greece. Smaller, denser and more intensely flavoured than the mainland variety.\n\n**Loukoumades** — Tinos is famous throughout Greece for its light, crisp honey-drenched doughnuts. A well-known stall in Tinos Town has been serving them for generations.\n\n**Graviera & Fresh Cheese** — Excellent hard cheese aged in caves, and fresh soft white cheese used in savoury pies.\n\n**Syglino** — Cured pork preserved with orange peel, spices and herbs. Smoky, aromatic and deeply flavoured.\n\n**Fresh Aegean Seafood** — Grilled octopus, red mullet, sea bream and sea bass from the island's fishing fleet.\n\n**Thyme Honey & Capers** — Aromatic honey and briny capers make perfect edible souvenirs.",
-        el: "💡 Μυστικό φαγητού: Η λαϊκή αγορά του Σαββάτου στην πόλη είναι η καλύτερη ευκαιρία για τοπικά προϊόντα.\n\n**Αγκινάρες Τήνου** — ΠΟΠ, οι καλύτερες στην Ελλάδα.\n\n**Λουκουμάδες** — Η Τήνος φημίζεται για τους ελαφριούς λουκουμάδες της.\n\n**Γραβιέρα & Φρέσκο Τυρί** — Εξαιρετικό τυρί ωρίμανσης.\n\n**Σύγλινο** — Χοιρινό παστό με πορτοκάλι και μπαχαρικά.\n\n**Φρέσκο Θαλασσινό** — Χταπόδι, μπαρμπούνι, τσιπούρα.\n\n**Μέλι & Κάππαρη** — Ιδανικά αναμνηστικά."
-      }
-    },
-    {
-      layout: "list",
-      title: { en: "Honest Advice — What to Skip in Tinos", el: "Ειλικρινής Συμβουλή — Τι να Αποφύγεις" },
-      text: {
-        en: "✕ **Expecting Tinos to perform for you** — The island is not optimised for the tourist gaze. Approach it as a guest, not as an audience.\n\n✕ **Treating the church as only a photo opportunity** — The atmosphere inside demands respectful attention.\n\n✕ **Spending your entire time on the coast** — The interior is what makes Tinos unlike anywhere else. Rent a car for at least one full day.\n\n✕ **Visiting Pyrgos without allocating real time** — The Museum of Marble Crafts alone deserves 90 minutes.\n\n✕ **Skipping Volax** — The boulder landscape is one of the most surreal sights in the Cyclades.\n\n💡 What nobody tells you: Tinos rewards curiosity. The more you explore, the more it gives back. The island has never been colonised by mass international tourism, and in 2026 it is still largely what the Cyclades were fifty years ago: honest, serious and deeply rewarding for anyone who pays attention.",
-        el: "✕ **Να περιμένεις η Τήνος να σε διασκεδάσει** — Προσέγγισέ το ως φιλοξενούμενος.\n\n✕ **Να βλέπεις την εκκλησία μόνο ως φωτογραφία** — Η ατμόσφαιρα απαιτεί σεβασμό.\n\n✕ **Να μένεις μόνο στην ακτή** — Το εσωτερικό είναι μοναδικό. Νοίκιασε αυτοκίνητο.\n\n✕ **Να επισκέπτεσαι τον Πύργο βιαστικά** — Το Μουσείο Μαρμάρου αξίζει 90 λεπτά.\n\n✕ **Να παραλείπεις τον Βώλακα** — Ένα από τα πιο σουρεαλιστικά τοπία στις Κυκλάδες.\n\n💡 Αυτό που δε σου λέει κανείς: Η Τήνος ανταμείβει την περιέργεια. Το 2026 είναι ακόμα όπως ήταν οι Κυκλάδες πριν πενήντα χρόνια."
-      }
-    },
-    {
-      layout: "grid",
-      title: { en: "FAQ — Tinos Essentials", el: "Συχνές Ερωτήσεις" },
-      items: [
-        {
-          title: { en: "How do I get from Tinos to Mykonos or Delos?", el: "Πώς πάω από Τήνο σε Μύκονο ή Δήλο;" },
-          text: { en: "High-speed ferries connect Tinos to Mykonos in approximately 25 minutes. From Mykonos, excursion boats run to Delos daily. Tinos is an excellent base for a Delos day trip combined with a Mykonos evening.", el: "Ταχύπλοα συνδέουν Τήνο-Μύκονο σε 25 λεπτά. Η Τήνος είναι εξαιρετική βάση για Δήλο." }
-        },
-        {
-          title: { en: "What is the Museum of Marble Crafts?", el: "Τι είναι το Μουσείο Μαρμάρου;" },
-          text: { en: "One of the finest museums in the Greek islands — housed in a beautifully restored factory building, telling the full story of Tinian marble. Original machinery, working demonstrations and finished works. Allow 90 minutes minimum.", el: "Από τα ωραιότερα μουσεία στις Κυκλάδες. Αφήστε 90 λεπτά τουλάχιστον." }
-        },
-        {
-          title: { en: "What are the dovecotes and why are they unique?", el: "Τι είναι οι περιστερώνες και γιατί είναι μοναδικοί;" },
-          text: { en: "Ornate stone towers built during the Venetian period to house domestic pigeons. The extraordinary decorative elaboration of their facades — intricate geometric patterns — is unique to Tinos. Over a thousand survive as protected architectural heritage.", el: "Πετρόκτιστοι πύργοι της ενετικής περιόδου. Πάνω από χίλιοι σώζονται ως προστατευόμενη κληρονομιά." }
-        },
-        {
-          title: { en: "Is Tinos good in winter?", el: "Είναι καλή η Τήνος τον χειμώνα;" },
-          text: { en: "Better than almost any other Cycladic island. Tinos has a genuine year-round population. Tavernas, cafés, food shops and the church all operate. The marble workshops in Pyrgos are active year-round. A winter weekend offers cultural richness that summer-only islands cannot match.", el: "Καλύτερη από κάθε άλλη Κυκλάδα τον χειμώνα. Η Τήνος έχει μόνιμο πληθυσμό και λειτουργεί όλο τον χρόνο." }
-        },
-        {
-          title: { en: "How does Tinos compare to Syros?", el: "Πώς συγκρίνεται η Τήνος με τη Σύρο;" },
-          text: { en: "They complement each other perfectly. Syros is urban — a neoclassical city with an opera house. Tinos is rural — villages, marble, dovecotes and pilgrimage. Both have exceptional food cultures. The 35-minute ferry connection makes combining them easy.", el: "Η Σύρος είναι αστική, η Τήνος αγροτική. Και οι δύο έχουν εξαιρετική γαστρονομία. 35 λεπτά με πλοίο." }
-        },
-        {
-          title: { en: "How many days do I need in Tinos?", el: "Πόσες μέρες χρειάζομαι στην Τήνο;" },
-          text: { en: "Three days is the minimum for the church, Pyrgos, Volax and a beach. Five days allows you to explore the interior villages, visit the north coast, eat well and slow down. Tinos rewards extended stays more than almost any other Cycladic island.", el: "Τρεις μέρες ελάχιστα, πέντε για να εξερευνήσετε σωστά. Η Τήνος ανταμείβει τις μεγαλύτερες διαμονές." }
-        }
-      ]
-    }
-  ],
-  hydra: [
+  samos: [
     {
       title: {
-        en: "Why visit Hydra",
-        el: "Γιατί να επισκεφθείς την Ύδρα",
+        en: "Why visit Samos",
+        el: "Γιατί να επισκεφθείς τη Σάμο",
       },
       layout: "numbered",
       items: [
         {
           title: {
-            en: "The only car-free island in the Aegean — and what that actually feels like",
-            el: "Το μόνο νησί χωρίς αυτοκίνητα στο Αιγαίο — και πώς είναι στην πραγματικότητα",
+            en: "The Heraion is a UNESCO World Heritage site older than the Parthenon — and almost always empty",
+            el: "Το Ηραίον είναι Μνημείο UNESCO Παγκόσμιας Κληρονομιάς παλαιότερο του Παρθενώνα — και σχεδόν πάντα άδειο",
           },
           text: {
-            en: "The absence of cars is not a quirky tourism gimmick. It is a physical transformation of what a place feels and sounds like. On Hydra, the ambient noise of the port is the clip of donkey hooves on stone, the slap of water against the hulls of boats, and conversation. There is no traffic light anywhere on the island, no petrol station, no car park. The effect is cumulative and takes about an hour to feel properly: a particular kind of ease that has no equivalent elsewhere in Greece. The island's silence — especially in the upper lanes after dark — is the most complete available within 90 minutes of Athens.",
-            el: "Η απουσία αυτοκινήτων δεν είναι τουριστικό τρικ. Είναι μια φυσική μεταμόρφωση του πώς αισθάνεται και ακούγεται ένα μέρος. Στην Ύδρα, ο θόρυβος του λιμανιού είναι ο ήχος από τα πέταλα των γαϊδουριών στην πέτρα, το νερό στις βάρκες και η ανθρώπινη συνομιλία. Δεν υπάρχει φανάρι, βενζινάδικο ή πάρκινγκ. Το αποτέλεσμα είναι μια ιδιαίτερη ευκολία που δεν έχει αντίστοιχο στην Ελλάδα. Η σιωπή του νησιού — ειδικά στα πάνω σοκάκια μετά το σκοτάδι — είναι η πιο πλήρης που μπορείς να βρεις σε 90 λεπτά από την Αθήνα.",
+            en: "The Sanctuary of Hera at Heraion was one of the greatest religious complexes in the ancient Greek world. Its main temple — the Rhoikos-Polycrates temple begun in the 6th century BC — was so vast that it was never completed, and a single surviving column on a flat plain above the sea coast is all that remains of a structure that once had 155 columns. The scale of the ambition is still legible in the foundations. The site receives a fraction of the visitors of Delphi or Olympia, which means you can stand in one of the most significant ancient sanctuaries in Greece in near total solitude.",
+            el: "Το Ιερό της Ήρας στο Ηραίον ήταν ένα από τα μεγαλύτερα θρησκευτικά συγκροτήματα στον αρχαίο ελληνικό κόσμο. Ο κύριος ναός — ο Ροίκος-Πολυκράτης που ξεκίνησε τον 6ο αιώνα π.Χ. — ήταν τόσο τεράστιος που δεν ολοκληρώθηκε ποτέ, και ένας μόνο σωζόμενος κίονας σε επίπεδο πεδίο πάνω από την ακτή είναι ό,τι απομένει από μια κατασκευή που είχε 155 κίονες. Η κλίμακα της φιλοδοξίας είναι ακόμα αναγνώσιμη στα θεμέλια. Ο χώρος δέχεται κλάσμα των επισκεπτών των Δελφών ή της Ολυμπίας, που σημαίνει ότι μπορείς να σταθείς σε ένα από τα πιο σημαντικά αρχαία ιερά της Ελλάδας σε σχεδόν πλήρη μοναξιά.",
           },
         },
         {
           title: {
-            en: "18th-century stone architecture preserved without compromise",
-            el: "Πέτρινη αρχιτεκτονική του 18ου αιώνα διατηρημένη χωρίς συμβιβασμούς",
+            en: "The Efpalinos Tunnel is one of the most extraordinary feats of ancient engineering in the world",
+            el: "Το Τούνελο Ευπαλίνου είναι ένα από τα πιο εντυπωσιακά επιτεύγματα αρχαίας μηχανικής στον κόσμο",
           },
           text: {
-            en: "During Hydra's maritime golden age — roughly 1750 to 1820 — the island's merchant fleet numbered over 150 ships and its captains built mansions in proportion to their wealth. The Lazaros Kountouriotis Mansion, the Tombazis Mansion, the Voulgaris Mansion — these are not restored heritage sites but lived-in, functioning buildings whose facades have changed almost nothing in 250 years. The island's entire architectural fabric is protected by law: no new buildings can be constructed, no facades altered. Walking the lanes above the port is the closest thing in Greece to a functioning time machine for the 18th century.",
-            el: "Κατά τη ναυτική χρυσή εποχή της Ύδρας — περίπου 1750 έως 1820 — ο εμπορικός στόλος του νησιού αριθμούσε πάνω από 150 πλοία και οι καπετάνιοι έχτιζαν αρχοντικά ανάλογα με τον πλούτο τους. Το Αρχοντικό Λάζαρου Κουντουριώτη, το Αρχοντικό Τομπάζη, το Αρχοντικό Βούλγαρη — δεν είναι απλώς αναστηλωμένα μνημεία, αλλά κατοικημένα κτίρια των οποίων οι προσόψεις δεν έχουν αλλάξει σχεδόν καθόλου εδώ και 250 χρόνια. Το αρχιτεκτονικό ύφος του νησιού προστατεύεται από τον νόμο.",
+            en: "In the 6th century BC, the engineer Eupalinos of Megara cut a tunnel 1,036 metres through the solid limestone of Mount Kastri to bring fresh water to the ancient city of Samos. Two teams excavated from opposite ends and met in the middle — with a horizontal error of less than a metre. Herodotus listed it as one of the three greatest engineering works of the Greek world. Visitors today can walk the full length of the tunnel, following the original cutting along a narrow catwalk above the original water channel below.",
+            el: "Τον 6ο αιώνα π.Χ., ο μηχανικός Ευπαλίνος ο Μεγαρεύς έκοψε ένα τούνελο 1.036 μέτρων μέσα από τον στερεό ασβεστόλιθο του όρους Καστρί για να φέρει νερό στην αρχαία πόλη της Σάμου. Δύο ομάδες σκάβανταν από αντίθετες άκρες και συναντήθηκαν στο μέσο — με οριζόντιο σφάλμα μικρότερο από ένα μέτρο. Ο Ηρόδοτος το κατέταξε ως ένα από τα τρία μεγαλύτερα μηχανικά επιτεύγματα του ελληνικού κόσμου. Οι επισκέπτες σήμερα μπορούν να περπατήσουν ολόκληρο το μήκος του τούνελο, ακολουθώντας την αρχική κοπή πάνω από τον αρχικό υδραγωγείο.",
           },
         },
         {
           title: {
-            en: "A genuine international art scene, not a curated tourist version of one",
-            el: "Μια αυθεντική διεθνής καλλιτεχνική σκηνή",
+            en: "Samos Muscat wine is the most historically significant wine in Greece and one of the finest dessert wines in the world",
+            el: "Ο Μοσχάτος Σάμου είναι το πιο ιστορικά σημαντικό κρασί της Ελλάδας και ένα από τα πιο λεπτά γλυκά κρασιά του κόσμου",
           },
           text: {
-            en: "The Hydra Workshop, founded by painter Nikos Hadjikyriakos-Ghikas, established the island as an art colony in the mid-20th century. The Deste Foundation's Slaughterhouse — a converted 19th-century abattoir on the waterfront that hosts some of the finest contemporary art exhibitions in the Mediterranean — continues that tradition today. Beyond the institutions, a walk through Hydra's lanes passes a density of working artists' studios, independent galleries and private exhibition spaces that is extraordinary for an island of 2,000 permanent residents. This is not art-for-tourists. It is a functioning creative community.",
-            el: "Το Εργαστήριο της Ύδρας, που ιδρύθηκε από τον ζωγράφο Νίκο Χατζηκυριάκο-Γκίκα, καθιέρωσε το νησί ως καλλιτεχνική αποικία στα μέσα του 20ού αιώνα. Το Σφαγείο του Ιδρύματος ΔΕΣΤΕ — ένας μετασκευασμένος σφαγείο του 19ου αιώνα στην προκυμαία — συνεχίζει αυτή την παράδοση σήμερα, φιλοξενώντας κορυφαίες εκθέσεις σύγχρονης τέχνης. Πέρα από τους θεσμούς, μια βόλτα στα σοκάκια της Ύδρας περνά από πυκνότητα εργαστηρίων καλλιτεχνών, γκαλερί και ιδιωτικών εκθεσιακών χώρων, κάτι εξαιρετικό για ένα νησί 2.000 μόνιμων κατοίκων.",
+            en: "The small-berried Muscat grape has been cultivated on Samos for at least three thousand years, and the wine produced by the Samos Wine Cooperative — established in 1934 and representing hundreds of small-scale island growers — has been exported continuously to France, where it has been highly regarded since the 18th century. The Muscat of Samos PDO encompasses several styles, from the golden, honeyed Vin Doux Naturel to the darker, more complex Anthemis aged in oak. The cooperative's winery in Malagari is open to visitors and combines a tasting room with one of the best views on the island.",
+            el: "Η σταφυλιά Μοσχάτου καλλιεργείται στη Σάμο τουλάχιστον τρεις χιλιάδες χρόνια, και το κρασί που παράγεται από την Κοινοτική Οινοποιία Σάμου — που εκπροσωπεί εκατοντάδες μικροκλιμακιούς νησιώτες καλλιεργητές — εξάγεται συνεχώς στη Γαλλία, όπου εκτιμάται από τον 18ο αιώνα. Ο Μοσχάτος Σάμου ΠΟΠ περιλαμβάνει αρκετά στυλ, από το χρυσό, μελισσόχρωμο Vin Doux Naturel μέχρι το πιο σκούρο και πολύπλοκο Anthemis που ωριμάζει σε βαρέλια. Το οινοποιείο της Κοινοτικής στο Μαλαγαρί είναι ανοιχτό στους επισκέπτες και συνδυάζει αίθουσα γευσιγνωσίας με μία από τις καλύτερες θέες στο νησί.",
           },
         },
         {
           title: {
-            en: "Leonard Cohen's island — and why it still matters",
-            el: "Το νησί του Leonard Cohen — και γιατί έχει ακόμα σημασία",
+            en: "Kokkari is one of the most beautiful fishing villages in the entire Aegean",
+            el: "Το Κοκκαρί είναι ένα από τα πιο όμορφα ψαροχώρια σε όλο το Αιγαίο",
           },
           text: {
-            en: "In 1960, Leonard Cohen was a broke Canadian poet who bought a house on Hydra for $1,500, moved in with his Norwegian muse Marianne Ihlen, and wrote his first novel and some of his earliest songs sitting on the terrace. The island gave him the silence and the light and the community of fellow writers and painters that produced some of the most enduring creative work of the century. His house on Kountouriotou Street can be seen from the lane (it is privately owned and not open to visitors), and the island's connection to his memory remains genuine and unforced — a quality Hydra has always had, of making artists feel that the work is possible here in a way it is not elsewhere.",
-            el: "Το 1960, ο Leonard Cohen ήταν ένας άφραγκος Καναδός ποιητής που αγόρασε σπίτι στην Ύδρα για 1.500 δολάρια, μετακόμισε με τη Νορβηγίδα μούσα του Marianne Ihlen και έγραψε το πρώτο του μυθιστόρημα και μερικά από τα πρώτα του τραγούδια καθισμένος στη βεράντα. Το νησί του έδωσε τη σιωπή, το φως και την κοινότητα των συγγραφέων και ζωγράφων που παρήγαγαν μερικά από τα πιο ανθεκτικά δημιουργικά έργα του αιώνα. Το σπίτι του στην οδό Κουντουριώτου είναι ορατό από τον δρόμο, και η σύνδεση του νησιού με τη μνήμη του παραμένει αυθεντική.",
+            en: "The village of Kokkari on the north coast — 10 kilometres west of Vathi — is built on a double headland above two curving pebble-and-sand bays, with whitewashed houses, flower-draped balconies and a working waterfront of fishing boats. It is precisely what a Greek fishing village should be, and unlike many villages of comparable beauty in the Aegean, it has retained its architectural character and its working fishing identity alongside a well-developed taverna and accommodation scene. The evening here — sunset over the western bay, tables on the waterfront, fresh octopus on the grill — is one of the finest in the North Aegean.",
+            el: "Το χωριό Κοκκαρί στη βόρεια ακτή — 10 χιλιόμετρα δυτικά της Βαθύς — είναι χτισμένο πάνω σε διπλή χερσόνησο πάνω από δύο καμπύλους κολπίδες, με λευκοπιασμένα σπίτια, μπαλκόνια με λουλούδια και μια λειτουργική προκυμαία ψαρικών σκαφών. Είναι ακριβώς αυτό που πρέπει να είναι ένα ελληνικό ψαροχώρι, και σε αντίθεση με πολλά χωριά παρόμοιας ομορφιάς στο Αιγαίο, έχει διατηρήσει τον αρχιτεκτονικό του χαρακτήρα και τη λειτουργική του ταυτότητα ψαριού μαζί με μια ανεπτυγμένη σκηνή ταβέρνας και καταλύματος. Η βραδιά εδώ — ηλιοβασίλεμα πάνω από τη δυτική κολπίδα, τραπεζοκαθίσματα στην παραλία, φρέσκο χταπόδι στο γκριλ — είναι από τις πιο λεπτές στο Βόρειο Αιγαίο.",
           },
         },
         {
           title: {
-            en: "Proximity to Athens — the best same-week combination in Greece",
-            el: "Εγγύτητα στην Αθήνα — ο καλύτερος συνδυασμός στην Ελλάδα",
+            en: "The island's mountain villages and forest walks are unlike anything in the Cyclades or Dodecanese",
+            el: "Τα ορεινά χωριά και τα δασικά μονοπάτια του νησιού δεν μοιάζουν με τίποτα στις Κυκλάδες ή τα Δωδεκάνησα",
           },
           text: {
-            en: "Ninety minutes from Piraeus on the Flying Dolphin. No other island of Hydra's quality and character is this close to the Greek capital. For travelers spending time in Athens — or using Athens as a transit hub — Hydra offers a two-to-three day complete contrast: the noise and energy of the city replaced immediately by stone and silence, the urban anonymity replaced by a community where the baker knows which house you are staying in. The Athens–Hydra combination is the most rewarding short pairing in the Greek island network.",
-            el: "Ενενήντα λεπτά από τον Πειραιά με το Flying Dolphin. Κανένα άλλο νησί της ποιότητας και του χαρακτήρα της Ύδρας δεν είναι τόσο κοντά στην ελληνική πρωτεύουσα. Για τους ταξιδιώτες που περνούν χρόνο στην Αθήνα — ή χρησιμοποιούν την Αθήνα ως κόμβο μετακίνησης — η Ύδρα προσφέρει μια πλήρη αντίθεση δύο-τριών ημερών: ο θόρυβος και η ενέργεια της πόλης αντικαθίστανται αμέσως από πέτρα και σιωπή, η αστική ανωνυμία αντικαθίσταται από μια κοινότητα όπου ο φούρναρης ξέρει σε ποιο σπίτι μένεις.",
+            en: "The interior of Samos is a different world from the coast — dense pine forests, chestnut groves, terraced vineyards and stone villages that see very few visitors. Manolates and Vourliotis in the central mountains are among the finest traditional villages in the eastern Aegean, with preserved stone architecture, spring water running through the plateia and a silence broken only by birdsong and the occasional car. The marked walking trails through the forests above Kokkari are excellent and largely uncrowded. Mount Kerkis in the southwest, rising to 1,437 metres, offers one of the finest day hikes in the Greek islands.",
+            el: "Το εσωτερικό της Σάμου είναι ένας διαφορετικός κόσμος από την ακτή — πυκνά πευκοδάσος, καστανιέδια, βαθμωτοί αμπελώνες και πέτρινα χωριά που δέχονται πολύ λίγους επισκέπτες. Τα Μανολάτες και τα Βουρλιώτης στα κεντρικά βουνά είναι από τα πιο όμορφα παραδοσιακά χωριά στο ανατολικό Αιγαίο, με διατηρημένη πέτρινη αρχιτεκτονική, νερό πηγής που ρέει μέσα από την πλατεία και σιωπή που διακόπτεται μόνο από τα τραγούδια των πουλιών και κάποιο αυτοκίνητο. Τα σημασμένα μονοπάτια πεζοπορίας μέσα από τα δάση πάνω από το Κοκκαρί είναι εξαιρετικά και σχεδόν ακατοίκητα. Ο Κέρκης στα νοτιοδυτικά, υψούμενος στα 1.437 μέτρα, προσφέρει μία από τις καλύτερες ημερήσιες πεζοπορίες στα ελληνικά νησιά.",
           },
         },
         {
           title: {
-            en: "A landscape for walking that most visitors never discover",
-            el: "Ένα τοπίο για περπάτημα που οι περισσότεροι επισκέπτες δεν ανακαλύπτουν ποτέ",
+            en: "Pythagoreion is a UNESCO World Heritage town built directly on top of the ancient capital",
+            el: "Η Πυθαγόρειο είναι πόλη UNESCO Χωρισμένη απευθείας πάνω στην αρχαία πρωτεύουσα",
           },
           text: {
-            en: "The interior of Hydra is a network of mule paths through wild thyme, cistus and pine that connects a series of monasteries, hilltop hermitages and abandoned settlements. The path to Profitis Ilias monastery at the island's highest point takes about two hours from the port and rewards with a panorama of the Saronic Gulf that takes in the Peloponnese coast, the outline of Spetses, and on clear days the mountains above Corinth. Most Hydra visitors spend their entire stay in the port town and never discover that the island extends for another 50 square kilometres of trail beyond it.",
-            el: "Το εσωτερικό της Ύδρας είναι ένα δίκτυο μονοπατιών μέσα από άγριο θυμάρι, κίστο και πεύκα, που συνδέει μοναστήρια, ασκηταριά στις κορυφές των λόφων και εγκαταλελειμμένους οικισμούς. Το μονοπάτι για τη μονή Προφήτη Ηλία στο ψηλότερο σημείο του νησιού χρειάζεται περίπου δύο ώρες από το λιμάνι και ανταμείβει με ένα πανόραμα του Σαρωνικού που φτάνει μέχρι τις ακτές της Πελοποννήσου.",
+            en: "The modern town of Pythagoreion on the south coast — named for its most famous son in 1955 — sits on the site of the ancient Samos city-state capital. The ancient harbour mole, built in the 6th century BC, is still in use today; fishing boats and pleasure craft moor against the same stones that received the ships of Polycrates. The Archaeological Museum in Vathi contains one of the finest collections of archaic Greek sculpture in existence, including the colossal kouros from the Heraion that stands at over 4.8 metres — one of the largest surviving figures from the archaic period.",
+            el: "Η σύγχρονη πόλη Πυθαγόρειο στη νότια ακτή — που ονομάστηκε προς τιμήν του πιο διάσημου γιου της το 1955 — κάθεται στη θέση της αρχαίας πρωτεύουσας της πόλης-κράτους της Σάμου. Η αρχαία προβλήτα, χτισμένη τον 6ο αιώνα π.Χ., χρησιμοποιείται ακόμα σήμερα — ψαρικά σκάφη και σκάφη αναψυχής δένονται στις ίδιες πέτρες που δέχτηκαν τα πλοία του Πολυκράτη. Το Αρχαιολογικό Μουσείο στη Βαθύ περιέχει μία από τις πιο λεπτές συλλογές αρχαϊκής ελληνικής γλυπτικής στον κόσμο, συμπεριλαμβανομένου του κολοσσιαίου κούρου από το Ηραίον που υψώνεται πάνω από 4,8 μέτρα — ένας από τους μεγαλύτερους επιζώντες αρχαϊκούς ανδριάντες.",
+          },
+        },
+        {
+          title: {
+            en: "Turkey — the coast of Anatolia is visible from most of Samos, and Kuşadası and Ephesus are a short boat ride away",
+            el: "Η Τουρκία — η ανατολική ακτή είναι ορατή από τα περισσότερα μέρη της Σάμου, και το Κουσαντασί και η Έφεσος είναι κοντά με πλοίο",
+          },
+          text: {
+            en: "The Turkish coast is never more than a few kilometres away from Samos, and the proximity creates a distinctive dual-culture landscape that enriches the island's character. Seasonal ferry services to Kuşadası allow day trips to Ephesus — one of the best-preserved ancient cities in the world — making Samos one of the very few Greek islands from which a major UNESCO World Heritage site on another country's soil is reachable in under an hour. The view from Samos's eastern coast across the strait to Turkey — especially at night, when the lights of Kuşadası are reflected in the water — is one of the island's most singular experiences.",
+            el: "Η τουρκική ακτή δεν απέχει ποτέ περισσότερο από λίγα χιλιόμετρα από τη Σάμο, και η κοντινή απόσταση δημιουργεί ένα ξεχωριστό δίγλωσσο τοπίο που εμπλουτίζει τον χαρακτήρα του νησιού. Εποχιακές υπηρεσίες πλοίου στο Κουσαντασί επιτρέπουν ημερήσιες εκδρομές στην Έφεσο — μία από τις καλύτερα διατηρημένες αρχαίες πόλεις στον κόσμο — κάνοντας τη Σάμο ένα από τα ελάχιστα ελληνικά νησιά από τα οποία ένα σημαντικό Μνημείο UNESCO στο έδαφος μιας άλλης χώρας είναι προσβάσιμο σε λιγότερο από μία ώρα. Η θέα από την ανατολική ακτή της Σάμου πέρα από το πορθμό προς την Τουρκία — ειδικά τη νύχτα, όταν τα φώτα του Κουσαντασί αντικατοπτρίζονται στο νερό — είναι μία από τις πιο ξεχωριστές εμπειρίες του νησιού.",
           },
         },
       ],
     },
     {
-      layout: "list",
-      title: { en: "Best time to visit", el: "Καλύτερη εποχή για την Ύδρα" },
-      alert: {
-        en: "Secret: The best time of day on Hydra is 07:00–09:00, when the light hits the stone mansions at a low angle, the port is still, and the first donkey of the morning carries supplies down to the harbour. This hour is accessible only to overnight guests.",
-        el: "Μυστικό: Η καλύτερη ώρα στην Ύδρα είναι 07:00–09:00, όταν το φως πέφτει στα πέτρινα αρχοντικά, το λιμάνι είναι ήσυχο και ο πρώτος γάιδαρος του πρωινού κατεβαίνει στο λιμάνι.",
+      title: {
+        en: "Best time to go (and when to avoid)",
+        el: "Καλύτερη εποχή για να πας (και πότε να το αποφύγεις)",
       },
+      layout: "list",
       items: [
         {
-          title: { en: "April – June", el: "Απρίλιος – Ιούνιος" },
+          title: { en: "April – May", el: "Απρίλιος – Μάιος" },
           text: {
-            en: "The best balance of weather, crowds, and value. Spring wildflowers carpet the hillsides. The sea is warm enough for swimming from late May. Fewer day-trippers, easier water-taxi availability, and accommodation prices significantly below summer peak. The hiking is at its best — the slopes are green and the heat is manageable.",
-            el: "Η καλύτερη ισορροπία καιρού, κόσμου και τιμών. Άγρια λουλούδια καλύπτουν τους λόφους. Λιγότεροι εκδρομείς, διαθεσιμότητα θαλάσσιων ταξί και τιμές σημαντικά χαμηλότερες. Η πεζοπορία είναι στα καλύτερά της.",
+            en: "The island is at its greenest and most fragrant — forests and hillsides are in full bloom, rivers are running, and the villages are uncrowded. Ideal for walking, wine-tasting and cultural visits. The sea is cold for swimming but excellent for coastal walks.",
+            el: "Το νησί είναι στο πιο πράσινο και αρωματισμένο — τα δάση και οι πλαγιές είναι σε πλήρη άνθηση, οι ποταμοί ρέουν και τα χωριά δεν είναι γεμάτα. Ιδανικό για πεζοπορία, γευσιγνωσία κρασιού και πολιτιστικές επισκέψεις. Η θάλασσα είναι κρύα για μπάνιο αλλά εξαιρετική για παραλιακές βόλτες.",
+          },
+        },
+        {
+          title: { en: "June", el: "Ιούνιος" },
+          text: {
+            en: "The perfect balance — warm enough for daily swimming, the beaches are accessible and uncrowded, restaurants are fully open and the atmosphere is relaxed and local. One of the best months in the eastern Aegean.",
+            el: "Η τέλεια ισορροπία — αρκετά ζεστό για καθημερινό μπάνιο, οι παραλίες είναι προσβάσιμες και όχι γεμάτες, τα εστιατόρια έχουν ανοίξει πλήρως και η ατμόσφαιρα είναι χαλαρή και τοπική. Ένας από τους καλύτερους μήνες στο ανατολικό Αιγαίο.",
           },
         },
         {
           title: { en: "July – August", el: "Ιούλιος – Αύγουστος" },
           text: {
-            en: "Peak season. The port is at its busiest, hydrofoils arrive packed, and the waterfront restaurants are full. The famous Hydra silence recedes to the early morning and late night. If you visit now, book accommodation well in advance, plan water taxis ahead, and accept that some of the island's particular quality is temporarily suspended. The compensation: perfect swimming weather, evening social energy, and the full range of restaurants and water taxis operating.",
-            el: "Υψηλή σεζόν. Το λιμάνι είναι στο πιο πολυσύχναστο. Κάντε κράτηση διαμονής νωρίς. Η αποζημίωση: τέλειος καιρός για μπάνιο και όλες οι επιλογές εστίασης διαθέσιμες.",
+            en: "Peak season. Kokkari and Pythagoreion become busy; the north coast beaches fill with European visitors. The landscape dries and turns golden. Book accommodation well ahead. The heat can be intense in the interior — mountain walks are best done early.",
+            el: "Αιχμή σεζόν. Το Κοκκαρί και η Πυθαγόρειο γίνονται πολυσύχναστες. Οι παραλίες της βόρειας ακτής γεμίζουν με Ευρωπαίους επισκέπτες. Το τοπίο στεγνώνει και γίνεται χρυσό. Κλείστε κατάλυμα νωρίς. Η ζέστη μπορεί να είναι έντονη στο εσωτερικό — τα βουνά είναι καλύτερα νωρίς το πρωί.",
           },
         },
         {
-          title: { en: "September – October", el: "Σεπτέμβριος – Οκτώβριος" },
+          title: { en: "September", el: "Σεπτέμβριος" },
           text: {
-            en: "Many experienced Hydra visitors consider this the ideal window. The sea is at its warmest (warmer than June). The day-trip crowds diminish after the first week of September. The light softens, the evenings are long, and the island exhales. Accommodation prices drop. The silence returns.",
-            el: "Πολλοί έμπειροι επισκέπτες θεωρούν αυτή την ιδανική περίοδο. Η θάλασσα είναι πιο ζεστή. Τα πλήθη μειώνονται. Το φως μαλακώνει. Η σιωπή επιστρέφει.",
+            en: "Outstanding. The sea is at its warmest, crowds drop sharply after the first week, the vineyards turn gold and the harvest begins in late month. Tavernas are at their best. One of the finest months to visit the eastern Aegean.",
+            el: "Εξαιρετικός. Η θάλασσα είναι στο πιο ζεστό, τα πλήθη μειώνονται δραματικά μετά την πρώτη εβδομάδα, οι αμπελώνες γίνονται χρυσοί και η σοδειά ξεκινά στο τέλος του μήνα. Οι ταβέρνες είναι στο καλύτερό τους. Ένας από τους καλύτερους μήνες για να επισκεφθείς το ανατολικό Αιγαίο.",
           },
         },
         {
-          title: { en: "November – March", el: "Νοέμβριος – Μάρτιος" },
+          title: { en: "October – November", el: "Οκτώβριος – Νοέμβριος" },
           text: {
-            en: "Hydra in winter is an entirely different island. The permanent population of 2,000 reclaims the port. The hydrofoil runs daily but the island is genuinely quiet. Several tavernas and hotels close. The experience is raw, atmospheric, and memorable — the stone architecture in grey winter light, the wet cobblestones, the cafés where locals outnumber visitors. Not for everyone, but unforgettable for those who choose it.",
-            el: "Η Ύδρα τον χειμώνα είναι εντελώς διαφορετικό νησί. Οι 2.000 μόνιμοι κάτοικοι ξαναπαίρνουν το λιμάνι. Η ατμόσφαιρα είναι ωμή και αξέχαστη — η πέτρινη αρχιτεκτονική στο γκρίζο χειμωνιάτικο φως, τα βρεγμένα λιθόστρωτα, οι κάτοικοι περισσότεροι από τους επισκέπτες.",
+            en: "The olive and grape harvests give the island an agricultural energy that is entirely authentic. Most coastal facilities remain open through October. The forests and mountain villages are at their most atmospheric. Excellent for walkers, cultural visitors and wine tourists.",
+            el: "Οι σοδειές ελιάς και σταφυλιού δίνουν στο νησί μια γεωργική ενέργεια που είναι εντελώς αυθεντική. Οι περισσότερες παραλιακές εγκαταστάσεις παραμένουν ανοιχτές μέχρι τέλος Οκτωβρίου. Τα δάση και τα ορεινά χωριά είναι στο πιο ατμοσφαιρικό σημείο τους. Εξαιρετικό για πεζοπόρους, πολιτιστικούς επισκέπτες και τουριστές οίνου.",
+          },
+        },
+        {
+          title: { en: "Winter", el: "Χειμώνας" },
+          text: {
+            en: "Samos is a year-round island. Vathi is a functioning town with active cafés, restaurants and cultural life throughout winter. The mountain scenery is exceptional after rain. A winter visit — particularly to Vathi, Pythagorion and the wine cooperative — offers a profoundly unhurried experience.",
+            el: "Η Σάμος είναι νησί όλο τον χρόνο. Η Βαθύ είναι μια λειτουργική πόλη με ενεργά καφέ, εστιατόρια και πολιτιστική ζωή όλο τον χειμώνα. Η ορεινή θέα είναι εξαιρετική μετά από βροχή. Μια χειμερινή επίσκεψη — ειδικά στη Βαθύ, την Πυθαγόρειο και την Κοινοτική Οινοποιία — προσφέρει μια βαθιά αργή εμπειρία.",
           },
         },
       ],
     },
     {
-      layout: "list",
-      title: { en: "How to get there", el: "Πώς να πάτε στην Ύδρα" },
-      text: {
-        en: "💡 Transport tip: Hydra has no airport and no vehicle access — not even bicycle access. The only way in is by sea. The standard approach for most visitors is the Flying Dolphin hydrofoil from Piraeus, which is fast, reliable and scenic. Book tickets in advance for summer weekends; the Piraeus–Hydra route is heavily used by Athenians escaping to the island on Friday evenings and returning Sunday. The best seat on the Flying Dolphin is on the left side (port side) — the approach to Hydra harbour is one of the great arrivals in Greek island travel.\n\n**From Athens (Piraeus) by hydrofoil — the standard option**\nFlying Dolphins (Hellenic Seaways) depart from Gate E8 at Piraeus port. The journey takes approximately 90 minutes. Departures run year-round, with increased frequency in summer. Book tickets in advance for July–August weekends. The service calls at Poros en route on some sailings.\n\n**From the Peloponnese — for drivers**\nDrive to the port of Ermioni (2 hours from Athens) or Porto Heli, from which water taxis connect directly to Hydra in 15–20 minutes. This is the option for anyone who wants to combine Hydra with a Peloponnese road trip.\n\n**From Spetses and Poros — island hopping**\nHydra is connected by regular hydrofoil to Spetses (20 minutes) and Poros (30 minutes), making it part of the classic Saronic Islands triangle. A multi-day loop of Hydra–Spetses–Poros is one of the best short itineraries in Greece.\n\n**Getting around Hydra**\nYou walk. This is not a limitation — it is the point. Donkeys and mules carry luggage between the port and the hillside hotels and houses. Water taxis (small boats) connect Hydra Town with Kamini, Vlyhos, Mandraki, the remote beaches, and — for the adventurous — with restaurants on the far side of the island. Negotiate the fare before boarding.",
-        el: "💡 Συμβουλή: Η Ύδρα δεν έχει αεροδρόμιο και πρόσβαση οχημάτων. Ο μόνος τρόπος είναι η θάλασσα. Το Flying Dolphin από Πειραιά είναι η στάνταρ επιλογή.\n\n**Από Πειραιά με Flying Dolphin**\n90 λεπτά από την Πύλη Ε8. Περισσότερα δρομολόγια το καλοκαίρι. Κλείστε εισιτήριο νωρίς για Ιούλιο-Αύγουστο.\n\n**Από την Πελοπόννησο — για οδηγούς**\nΟδηγήστε μέχρι Ερμιόνη ή Πόρτο Χέλι και πάρτε θαλάσσιο ταξί (15-20 λεπτά).\n\n**Από Σπέτσες και Πόρο**\n20 λεπτά από Σπέτσες, 30 από Πόρο. Ένας κλασικός τρίγωνο Σαρωνικού.\n\n**Μετακινήσεις στην Ύδρα**\nΠερπατάτε. Γάιδαροι μεταφέρουν αποσκευές. Θαλάσσια ταξί συνδέουν την πόλη με παραλίες. Διαπραγματευτείτε το κόμιστρο πριν επιβιβαστείτε."
-      }
-    },
-    {
-      layout: "numbered",
-      title: { en: "Top Attractions & Experiences in Hydra", el: "Κορυφαία Αξιοθέατα στην Ύδρα" },
-      items: [
-        {
-          title: { en: "The Port — Hydra's living room", el: "Το Λιμάνι της Ύδρας" },
-          text: {
-            en: "Hydra's harbour is the most intact 18th-century maritime settlement in Greece. The mansions that line the waterfront were built between 1680 and 1820 by the merchant captains who made Hydra one of the wealthiest places in the Mediterranean. The architecture is unique in Greece: grey stone, tile roofs, symmetrical facades, and tall windows that reflect the naval hierarchy of their owners. The Tombazis, Kountouriotis, and Voulgaris families — each with their own mansion — financed the Greek War of Independence from these buildings. The harbour is not a historic district within a modern town — it is the entire town, and it is still lived in. Morning is the time to understand it: before the day-trippers arrive from Athens, the fishermen are unloading, the donkeys are beginning their rounds with supplies, and the light on the upper mansions is at its most dramatic.",
-            el: "Το λιμάνι της Ύδρας είναι ο πιο άθικτος ναυτικός οικισμός του 18ου αιώνα στην Ελλάδα. Τα αρχοντικά χτίστηκαν από καπετάνιους που έκαναν την Ύδρα ένα από τα πλουσιότερα μέρη της Μεσογείου. Η αρχιτεκτονική είναι μοναδική: γκρίζα πέτρα, κεραμοσκεπές, συμμετρικές όψεις. Το λιμάνι δεν είναι μια ιστορική συνοικία μέσα σε μια σύγχρονη πόλη — είναι ολόκληρη η πόλη και κατοικείται ακόμα.",
-          },
-        },
-        {
-          title: { en: "Kountouriotis Mansion — the flagship of Hydra's museums", el: "Αρχοντικό Κουντουριώτη" },
-          text: {
-            en: "The Kountouriotis Mansion, built in 1810, is the finest surviving captain's mansion and has been operated as a museum since 1955. The interior is furnished as it would have been in the 1820s — Venetian furniture, family portraits, naval memorabilia, and the original kitchen. The rooftop terrace offers one of the best views of the harbour. The mansion tells the story of the Kountouriotis family, whose fleet of 50 ships made them one of the wealthiest in Greece and whose son Pavlos became Prime Minister and President of Greece.",
-            el: "Το Αρχοντικό Κουντουριώτη είναι το καλύτερα σωζόμενο αρχοντικό καπετάνιου. Η εσωτερική διακόσμηση είναι αυθεντική της δεκαετίας του 1820. Η ταράτσα προσφέρει μία από τις καλύτερες θέες του λιμανιού. Το αρχοντικό αφηγείται την ιστορία της οικογένειας Κουντουριώτη, που έπαιξε καθοριστικό ρόλο στην Επανάσταση του 1821.",
-          },
-        },
-        {
-          title: { en: "Deste Foundation Slaughterhouse — art in an unlikely space", el: "Σφαγείο Ιδρύματος ΔΕΣΤΕ" },
-          text: {
-            en: "One of the most remarkable art spaces in Greece. The Deste Foundation, founded by collector Dakis Joannou, converted a 19th-century municipal slaughterhouse into a contemporary art exhibition space that mounts rotating shows of international artists. The building itself — a simple stone structure at the western edge of the harbour — is architecturally striking, and the contrast between its brutalist history and the often delicate conceptual art it houses creates an experience found nowhere else in the Cyclades or the Saronic.",
-            el: "Ένας από τους πιο αξιόλογους χώρους τέχνης στην Ελλάδα. Ένα μετασκευασμένο σφαγείο του 19ου αιώνα φιλοξενεί σύγχρονη τέχνη διεθνών καλλιτεχνών. Το ίδιο το κτίριο — μια απλή πέτρινη δομή στη δυτική άκρη του λιμανιού — είναι αρχιτεκτονικά εντυπωσιακό.",
-          },
-        },
-        {
-          title: { en: "The Four Windmills & Eastern Hydra", el: "Οι τέσσερις ανεμόμυλοι" },
-          text: {
-            en: "At the eastern edge of Hydra Town, four restored stone windmills stand on a ridge above a small pebble beach (Spilia). The windmills date from the 18th century and were used to grind grain brought by the captain's ships from across the Mediterranean. The path to the windmills is a 10-minute walk from the harbour and offers the best sunset viewpoint on the island. Beyond the windmills, the coastal path continues toward Kamini — a 20-minute walk that passes small swimming coves and the picturesque chapel of Agios Nikolaos.",
-            el: "Τέσσερις πέτρινοι ανεμόμυλοι του 18ου αιώνα στην ανατολική άκρη της πόλης. Προσφέρουν την καλύτερη θέα ηλιοβασιλέματος. Η διαδρομή προς το Καμίνι περνά από μικρούς όρμους για κολύμπι.",
-          },
-        },
-        {
-          title: { en: "Monastery of Profitis Ilias — the island's rooftop", el: "Μονή Προφήτη Ηλία" },
-          text: {
-            en: "Perched at 590m elevation, the Monastery of Profitis Ilias is the highest point on Hydra and the most rewarding day hike from the port. The monastery itself is modest — a small stone church and a few cells — but the setting is spectacular. The 360-degree panorama takes in the entire Saronic Gulf, from the Peloponnese mountains to Aegina, Poros, Spetses, and on clear days all the way to Cape Sounion and the Athens coast. The hike takes approximately 90 minutes from the port via a well-maintained stone path.",
-            el: "Στα 590μ., η Μονή Προφήτη Ηλία είναι το ψηλότερο σημείο της Ύδρας. Η θέα 360 μοιρών καλύπτει όλο τον Σαρωνικό. Η πεζοπορία διαρκεί περίπου 90 λεπτά.",
-          },
-        },
-        {
-          title: { en: "Historic Archives Museum of Hydra", el: "Ιστορική Αρχειακή Βιβλιοθήκη Ύδρας" },
-          text: {
-            en: "Housed in a restored 19th-century mansion on the harbour front, the Historic Archives Museum contains one of the most important collections of documents and artifacts from the Greek War of Independence. The collection includes original correspondence from Theodoros Kolokotronis, the personal flag of Admiral Miaoulis, shipbuilding plans, maritime maps, and an archive of over 25,000 documents from the 18th and 19th centuries.",
-            el: "Στεγασμένη σε ένα αναστηλωμένο αρχοντικό, η Βιβλιοθήκη περιέχει μία από τις σημαντικότερες συλλογές τεκμηρίων της Επανάστασης του 1821, συμπεριλαμβανομένων προσωπικών αντικειμένων του Κολοκοτρώνη και του Μιαούλη.",
-          },
-        },
-      ],
-    },
-    {
-      layout: "grid",
-      title: { en: "Best Beaches in Hydra", el: "Οι Καλύτερες Παραλίες στην Ύδρα" },
-      items: [
-        {
-          title: { en: "Spilia — the port swim", el: "Σπίλια" },
-          text: {
-            en: "The closest swimming to Hydra Town, located directly below the four windmills at the eastern edge of the harbour. Concrete and stone platforms set into the rocks, with ladders into deep, clear water. Excellent water quality.",
-            el: "Το κοντινότερο μπάνιο στην πόλη, κάτω από τους ανεμόμυλους. Πλατφόρμες στα βράχια με σκάλες προς τα βαθιά, καθαρά νερά."
-          },
-        },
-        {
-          title: { en: "Kamini — the village swim", el: "Καμίνι" },
-          text: {
-            en: "Small fishing harbour 20 mins walk east of Hydra Town. Swimming from rocks, tiny pebbly cove, tavernas on the water. Relaxed, local atmosphere.",
-            el: "20 λεπτά με τα πόδια. Μικρός όρμος με βότσαλο και βραχώδεις πλατφόρμες. Χαλαρή, τοπική ατμόσφαιρα."
-          },
-        },
-        {
-          title: { en: "Vlyhos — pebble beach", el: "Βλύχος" },
-          text: {
-            en: "Sheltered pebble beach, 15 mins by water taxi. Pine trees for shade, calm clear water, historic stone bridge overhead.",
-            el: "Προστατευμένη παραλία με βότσαλο, 15 λεπτά με θαλάσσιο ταξί. Ήρεμα νερά, πεύκα για σκιά."
-          },
-        },
-        {
-          title: { en: "Bisti — the sandy cove", el: "Μπίστι" },
-          text: {
-            en: "One of the few sandy beaches, 20 mins by water taxi. Small cove, rocky cliffs, seasonal taverna. Excellent swimming.",
-            el: "Μία από τις λίγες αμμώδεις παραλίες. Μικρός όρμος, 20 λεπτά με θαλάσσιο ταξί."
-          },
-        },
-        {
-          title: { en: "Limnioniza — remote and quiet", el: "Λιμνιόνιζα" },
-          text: {
-            en: "Remote pebble cove, 30 mins by water taxi. No facilities, crystal-clear water, excellent snorkelling. Very quiet.",
-            el: "Απομακρυσμένη παραλία, 30 λεπτά με θαλάσσιο ταξί. Βότσαλο, κρυστάλλινα νερά, εξαιρετικό snorkeling."
-          },
-        },
-        {
-          title: { en: "Agios Nikolaos — the secret beach", el: "Αγίου Νικολάου" },
-          text: {
-            en: "Small, remote pebble beach on the southeastern coast, accessible by water taxi or steep path. No facilities, complete silence.",
-            el: "Μικρή, απομακρυσμένη παραλία, μόνο με θαλάσσιο ταξί ή απότομο μονοπάτι. Χωρίς υποδομές, απόλυτη ησυχία."
-          },
-        },
-      ],
-    },
-    {
-      layout: "list",
-      title: { en: "What to Eat in Hydra", el: "Τι να φας στην Ύδρα" },
-      text: {
-        en: "**Amygdalota (Hydriot Almond Sweets)** — Signature sweet of Hydra: small, chewy almond macaroons made from ground almonds, sugar, and rosewater. Best from family bakeries behind the harbour.\n\n**Fresh Fish & Grilled Octopus** — Fresh catch from local boats. Tavernas in Kamini are the most reliable. Octopus drying on lines is not just decoration — it is a local staple.\n\n**Lavender Honey** — Local honey with distinctive floral aroma from hillsides. Sold in small grocery stores behind the harbour.\n\n**Stifado (Hydriot Style)** — Slow-cooked rabbit or beef stew with pearl onions, tomato, cinnamon, and allspice. Found in traditional tavernas.",
-        el: "**Αμυγδαλωτά** — Το γλυκό-σήμα της Ύδρας: μακαρόν από αμύγδαλο, ζάχαρη και ανθόνερο.\n\n**Φρέσκο Ψάρι & Χταπόδι** — Φρέσκια ψαριά από ντόπια σκάφη. Οι ταβέρνες στο Καμίνι είναι οι πιο αξιόπιστες.\n\n**Μέλι Λεβάντας** — Από τους λόφους της Ύδρας, με ξεχωριστό άρωμα.\n\n**Στιφάδο** — Κουνέλι ή μοσχάρι μαγειρεμένο αργά με κρεμμυδάκια, ντομάτα, κανέλα."
-      }
-    },
-    {
-      layout: "list",
-      title: { en: "Practical tips", el: "Πρακτικές συμβουλές" },
-      text: {
-        en: "**Pack light:** There are no cars/porters. You carry your own luggage over cobblestones/steps. Backpacks/soft bags are best.\n\n**Book early:** Hydra has limited hotels. July–August rooms book months ahead.\n\n**Negotiate water taxis:** Agree price for round-trip before boarding. A typical fare to Vlyhos/Bisti is €15–25/person.\n\n**Shoes:** Cobblestones are slippery when wet. Wear flat, grippy shoes.\n\n**Cash:** ATMs run low on summer weekends. Carry cash for small shops/tavernas.\n\n**Hiking:** Profitis Ilias takes ~90 mins. Wear proper shoes, carry water/flashlight.",
-        el: "**Ελαφριά αποσκευή:** Κουβαλάτε τα πάντα μόνοι σας. Σακίδιο είναι η σωστή επιλογή.\n\n**Κράτηση διαμονής νωρίς:** Ιούλιος-Αύγουστος κλείνει εβδομάδες πριν.\n\n**Θαλάσσια ταξί:** Συμφωνήστε τιμή πριν επιβιβαστείτε. Τιμή: €15-25/άτομο.\n\n**Παπούτσια:** Τα λιθόστρωτα γλιστρούν. Επίπεδα παπούτσια με κράτημα.\n\n**ΑΤΜ και μετρητά:** Έχετε μετρητά για μικρά μαγαζιά.\n\n**Πεζοπορία:** Προφήτης Ηλίας ~90 λεπτά. Φέρτε νερό και φακό."
-      }
-    },
-    {
-      layout: "faq",
-      title: { en: "FAQ — Hydra Essentials", el: "Συχνές Ερωτήσεις" },
-      items: [
-        {
-          title: { en: "How do I get to Hydra from Athens?", el: "Πώς πάω από Αθήνα στην Ύδρα;" },
-          text: { en: "Flying Dolphin from Piraeus (Gate E8). ~90 mins. Multiple daily departures. No airport.", el: "Flying Dolphin από Πειραιά (Πύλη Ε8). ~90 λεπτά. Πολλά δρομολόγια καθημερινά. Δεν υπάρχει αεροδρόμιο." }
-        },
-        {
-          title: { en: "How many days should I spend in Hydra?", el: "Πόσες μέρες να μείνω στην Ύδρα;" },
-          text: { en: "Two nights minimum. The silence after the last hydrofoil leaves is Hydra's most extraordinary quality.", el: "Ελάχιστο δύο διανυκτερεύσεις. Η ησυχία μετά το τελευταίο πλοίο είναι το πιο εξαιρετικό χαρακτηριστικό." }
-        },
-        {
-          title: { en: "Are there cars on Hydra?", el: "Υπάρχουν αυτοκίνητα στην Ύδρα;" },
-          text: { en: "No. Banned since the 1950s. Transport is by donkey, mule, water taxi, or on foot.", el: "Όχι. Απαγόρευση από το 1950. Μεταφορά με γάιδαρο, μουλάρι, θαλάσσιο ταξί ή με τα πόδια." }
-        },
-        {
-          title: { en: "Does Hydra have sandy beaches?", el: "Έχει η Ύδρα αμμώδεις παραλίες;" },
-          text: { en: "Very few. Bisti (sandy) and Vlyhos (pebble) are closest by water taxi. Spilia and Kamini offer swimming from rocks.", el: "Ελάχιστες. Μπίστι (άμμος) και Βλύχος (βότσαλο) με θαλάσσιο ταξί. Σπίλια και Καμίνι από βράχια." }
-        },
-        {
-          title: { en: "Is Hydra expensive?", el: "Είναι ακριβή η Ύδρα;" },
-          text: { en: "Harbour tavernas are expensive. Kamini has better value. Book accommodation early.", el: "Ακριβό στο λιμάνι. Το Καμίνι έχει καλύτερες τιμές. Κάντε κράτηση διαμονής νωρίς." }
-        },
-        {
-          title: { en: "Leonard Cohen's Hydra connection?", el: "Σχέση Cohen με την Ύδρα;" },
-          text: { en: "Cohen bought a house in 1960, wrote songs like 'Suzanne' there. House stands above the port.", el: "Αγόρασε σπίτι το 1960, έγραψε τραγούδια όπως το 'Suzanne' εκεί. Το σπίτι υπάρχει ακόμα." }
-        },
-        {
-          title: { en: "Can you visit Hydra in winter?", el: "Πάω Ύδρα τον χειμώνα;" },
-          text: { en: "Yes. Hydrofoil runs daily. Quiet, atmospheric, belongs to residents.", el: "Ναι. Το υδροπτέρυγο λειτουργεί καθημερινά. Ήσυχη και ατμοσφαιρική, ανήκει στους μόνιμους κατοίκους." }
-        },
-        {
-          title: { en: "Hiking in Hydra?", el: "Πεζοπορία στην Ύδρα;" },
-          text: { en: "Excellent. Stone paths connect port with Kamini (20'), Vlyhos (45'), Profitis Ilias (90').", el: "Εξαιρετική. Πέτρινα μονοπάτια συνδέουν το λιμάνι με Καμίνι (20'), Βλύχο (45'), Προφήτη Ηλία (90')." }
-        }
-      ]
-    },
-    {
-      layout: "list",
-      title: { en: "Honest Advice — What to Skip in Hydra", el: "Ειλικρινής Συμβουλή — Τι να Αποφύγεις στην Ύδρα" },
-      text: {
-        en: "✕ **Hydra harbour in the middle of the day** — The harbour is beautiful but it is also where every ferry passenger arrives. By noon it is a wall of people, donkeys, and noise. Walk the backstreets behind the harbour or head to Kamini where the pace is completely different.\n\n✕ **Staying only on the harbour waterfront** — The harbour tavernas are the most expensive on the island and the food is often mediocre. The better restaurants are in Kamini (fifteen-minute walk) and Vlychos, where the views are better and the prices honest.\n\n✕ **Renting a donkey as a gimmick** — Donkeys are Hydra's traditional transport but they are also slow, smelly, and expensive. The harbour is fifteen minutes on foot and the walk up to the castle is part of the experience.\n\n✕ **Skipping the hiking paths** — Hydra has a network of ancient stone paths connecting the harbour to every village on the island. The walk to Kamini (twenty minutes) and to Vlychos (forty-five minutes) are shaded, quiet, and reveal a side of Hydra that most visitors never see.\n\n✕ **Visiting only in August** — Hydra in August is expensive, crowded, and hot. May, June, and September are when the island shows its real character: empty paths, quiet tavernas, and a pace that lets you understand why Leonard Cohen, Henry Miller, and George Balanchine all chose to live here.\n\n💡 What nobody tells you: Hydra's most beautiful spot is not the harbour or the castle — it is the small monastery of Profitis Ilias, a ninety-minute walk above town, where the views stretch across the Saronic Gulf to the Peloponnese and the silence is absolute. Bring water and go early.",
-        el: "✕ **Λιμάνι Ύδρας στο μεσημέρι** — Όμορφο αλλά γεμάτο. Φύγε στα πλατεάκια πίσω ή στο Καμίνι.\n\n✕ **Μόνο waterfront** — Ακριβές, μέτριες ταβέρνες. Καμίνι, Βλύχος — καλύτερα, φθηνότερα.\n\n✕ **Γάιδαρο ως gimmick** — Αργό, ακριβό. Το λιμάνι είναι 15 λεπτά με τα πόδια.\n\n✕ **Να παραλείψεις τα μονοπάτια** — Πέτρινα, σκιερά. Καμίνι 20', Βλύχος 45'.\n\n✕ **Μόνο Αύγουστος** — Ακριβός, γεμάτος, ζεστός. Ιούνιος-Σεπτέμβριος — πραγματική Ύδρα.\n\n💡 Αυτό που δε σου λέει κανείς: Το πιο όμορφο σημείο είναι ο Προφήτης Ηλίας — 90 λεπτά ανάβαση, θέα σε όλο το Αιγαίο, απόλυτη σιωπή."
-      }
-    }
-  ],
-  ios: [
-    {
-      title: { en: "Why visit Ios", el: "Γιατί να επισκεφθείς την Ίο" },
+      title: {
+        en: "Ancient Samos",
+        el: "Αρχαία Σάμος",
+      },
       layout: "numbered",
       items: [
         {
-          title: { en: "The Chora is one of the most beautiful whitewashed villages in the entire Cyclades", el: "Το Χωριό είναι ένα από τα πιο όμορφα λευκοπιασμένα χωριά σε όλες τις Κυκλάδες" },
-          text: { en: "The hilltop capital of Ios is a labyrinth of narrow marble-paved lanes, arched passageways, blue-domed churches and whitewashed cube houses that climb toward a windmill-crowned ridge. It is genuinely stunning — not as a tourist construction but as a living Cycladic settlement that has retained its architectural logic for centuries. In the morning, before the day visitors arrive from Mylopotas, it is one of the most atmospheric places in the islands.", el: "Η πρωτεύουσα της Ίου είναι ένα λαβύρινθο στενών μαρμάρινων δρομάκιων, τοξωτών περασμάτων, εκκλησιών με μπλε θόλους και λευκών κύβων σπιτιών που ανεβαίνουν προς μια ράχη στεφανωμένη από ανεμόμυλο. Είναι πραγματικά εντυπωσιακό — όχι ως τουριστική κατασκευή αλλά ως ένα ζωντανό κυκλαδίτικο οικισμό που διατήρησε την αρχιτεκτονική του λογική για αιώνες. Το πρωί, πριν φτάσουν οι ημερήσιοι επισκέπτες από τον Μυλοποτά, είναι ένα από τα πιο ατμοσφαιρικά μέρη στα νησιά." }
+          title: {
+            en: "Heraion (Sanctuary of Hera) — UNESCO World Heritage Site",
+            el: "Ηραίον (Ιερό της Ήρας) — Μνημείο UNESCO Παγκόσμιας Κληρονομίας",
+          },
+          text: {
+            en: "The Heraion of Samos was one of the most important religious sanctuaries in the ancient Greek world — larger and older than the Parthenon, continuously active from the Bronze Age through the Roman period, and the site of offerings and dedications from rulers as distant as Egypt and Lydia. The complex included multiple temples, altars, treasuries and processional ways, and at its height covered an area of several square kilometres. The Temple of Hera III — the Rhoikos-Polycrates temple begun in the 6th century BC — was designed with 155 columns and was so enormous that it was still unfinished when the Romans arrived. A single Ionic column, re-erected in the 19th century, stands on the plain above the sea as a marker of the temple's location and a symbol of what was here.",
+            el: "Το Ηραίον της Σάμου ήταν ένα από τα πιο σημαντικά θρησκευτικά ιερά στον αρχαίο ελληνικό κόσμο — μεγαλύτερο και παλαιότερο από τον Παρθενώνα, συνεχώς ενεργό από την Εποχή του Χαλκού μέχρι τη ρωμαϊκή περίοδο, και τόπος προσφορών και αφιερωμάτων από ηγεμόνες τόσο απομακρυσμένους όσο η Αίγυπτος και η Λυδία. Το συγκρότημα περιλάμβανε πολλούς ναούς, βωμούς, θησαυροφυλάκια και πομπικές οδούς, και στο απόγευμά του κάλυπτε έκταση αρκετών τετραγωνικών χιλιομέτρων. Ο Ναός της Ήρας III — ο Ροίκος-Πολυκράτης που ξεκίνησε τον 6ο αιώνα π.Χ. — σχεδιάστηκε με 155 κίονες και ήταν τόσο τεράστιος που ήταν ακόμα ανολοκλήρωτος όταν ήρθαν οι Ρωμαίοι. Ένας μόνο ιωνικός κίονας, επανορθωμένος τον 19ο αιώνα, στέκεται στο πεδίο πάνω από τη θάλασσα ως σημάδι της θέσης του ναού και σύμβολο αυτού που υπήρχε εδώ.",
+          },
         },
         {
-          title: { en: "Homer's Tomb — one of the most evocative ancient sites in the Aegean", el: "Τάφος του Ομήρου — ένα από τα πιο εντυπωσιακά αρχαία μέρη στο Αιγαίο" },
-          text: { en: "Ancient tradition held that Homer was born on Ios and is buried on its northern tip. The site — a low stone enclosure on a bare rocky hillside with views across the sea to Sikinos and Folegandros — cannot be verified by archaeology, but the location is extraordinary regardless of its historical claims. Standing there on a clear morning, looking out over the Aegean in every direction, the myth feels entirely plausible.", el: "Η αρχαία παράδοση έλεγε ότι ο Όμηρος γεννήθηκε στην Ίο και είναι θαμμένος στο βόρειο άκρο της. Ο χώρος — ένα χαμηλό πέτρινο περίβλητα σε γυμνό βραχώδη λόφο με θέα στη θάλασσα προς Σίκινο και Φολέγανδρο — δεν μπορεί να επιβεβαιωθεί αρχαιολογικά, αλλά η τοποθεσία είναι εξαιρετική ανεξάρτητα από τις ιστορικές αξιώσεις της. Στεκόμενος εκεί σε ένα καθαρό πρωί, κοιτώντας το Αιγαίο σε κάθε κατεύθυνση, ο μύθος φαίνεται εντελώς πιθανός." }
+          title: {
+            en: "Efpalinos Tunnel — the engineering wonder of the ancient Aegean",
+            el: "Τούνελο Ευπαλίνου — το μηχανικό θαύμα του αρχαίου Αιγαίου",
+          },
+          text: {
+            en: "The tunnel of Eupalinos is one of the most extraordinary surviving works of ancient Greek engineering. Cut through 1,036 metres of solid limestone to supply fresh water to the ancient city of Samos, it was excavated in the 6th century BC by two teams working from opposite ends — north and south — who met in the middle with a horizontal error of less than a metre and a vertical error of approximately 60 centimetres. This feat of geometric precision, achieved without modern surveying technology, was described by Herodotus as one of the greatest works of all Greeks. The tunnel is fully accessible on a narrow catwalk above the original water channel, and the engineering marks, tool scores and adjustment corrections made by the ancient workers are still visible on the walls.",
+            el: "Το τούνελο του Ευπαλίνου είναι ένα από τα πιο εντυπωσικά επιζώντα έργα αρχαϊκής ελληνικής μηχανικής. Κομμένο μέσα από 1.036 μέτρα στερεού ασβεστόλιθου για να τροφοδοτήσει με νερό την αρχαία πόλη της Σάμου, σκάφτηκε τον 6ο αιώνα π.Χ. από δύο ομάδες που εργάζονταν από αντίθετες άκρες — βόρεια και νότια — που συναντήθηκαν στο μέσο με οριζόντιο σφάλμα μικρότερο από ένα μέτρο και κατακόρυφο σφάλμα περίπου 60 εκατοστά. Αυτό το επίτευγμα γεωμετρικής ακρίβειας, που επιτεύχθηκε χωρίς σύγχρονη τεχνολογία μέτρησης, περιγράφηκε από τον Ηρόδοτο ως ένα από τα μεγαλύτερα έργα όλων των Ελλήνων. Το τούνελο είναι πλήρως προσβάσιμο σε στενή σανίδα πάνω από τον αρχικό υδραγωγείο, και τα μηχανικά σημάδια, οι εκτυπώσεις εργαλείων και οι διορθώσεις που έκαναν οι αρχαίοι εργάτες είναι ακόμα ορατές στους τοίχους.",
+          },
         },
         {
-          title: { en: "Manganari — a series of wild south-coast bays with some of the clearest water in the Cyclades", el: "Μαγκαναρί — μια σειρά άγριων νότιων κολπών με από το πιο καθαρό νερό στις Κυκλάδες" },
-          text: { en: "The south coast of Ios is almost entirely undeveloped, and Manganari — its principal beach area — consists of three broad sandy bays separated by rocky headlands, with water that shades from pale turquoise at the shore to deep cobalt at the edge of the bay. There is one seasonal taverna and almost no infrastructure. It is the complete counterpoint to Mylopotas and one of the finest natural beach environments in the southern Cyclades.", el: "Η νότια ακτή της Ίου είναι σχεδόν εντελώς αναπτύξιμη, και η Μαγκαναρί — η κύρια παραλιακή περιοχή της — αποτελείται από τρεις ευρύτατους αμμώδεις κόλπους χωρισμένους από βραχώδεις ακτές, με νερό που περνά από ανοιχτό τυρκουάζ στην ακτή σε βαθύ κοβαλτίνη στην άκρη του κόλπου. Υπάρχει μία εποχιακή ταβέρνα και σχεδόν κανένα υποδομή. Είναι η πλήρης αντίθεση με τον Μυλοποτά και ένα από τα πιο φυσικά παραλιακά περιβάλλοντα στις νότιες Κυκλάδες." }
+          title: {
+            en: "Archaeological Museum of Vathi — the Kouros and the archaic Aegean",
+            el: "Αρχαιολογικό Μουσείο Βαθύς — ο Κούρος και το αρχαϊκό Αιγαίο",
+          },
+          text: {
+            en: "The Archaeological Museum in Vathi is small and can be visited in under two hours, but the quality of its collection is exceptional. The centrepiece is the colossal kouros from the Heraion — a male figure over 4.8 metres tall, carved in marble around 580 BC and one of the largest and finest surviving examples of archaic Greek sculpture. Displayed in a purpose-built hall with careful lighting, it is one of the most powerful single objects in any Greek museum outside Athens. The surrounding rooms contain votive offerings, bronze figurines, pottery and architectural fragments from the Heraion spanning nearly a thousand years of continuous use.",
+            el: "Το Αρχαιολογικό Μουσείο στη Βαθύ είναι μικρό και μπορεί να επισκεφθεί σε λιγότερο από δύο ώρες, αλλά η ποιότητα της συλλογής του είναι εξαιρετική. Το κέντρο είναι ο κολοσσιαίος κούρος από το Ηραίον — ένας ανδρικός ανδριάντας ύψους πάνω από 4,8 μέτρα, λαξευμένος σε μάρμαρο γύρω στο 580 π.Χ. και ένας από τους μεγαλύτερους και καλύτερα σωζόμενους αρχαϊκούς ελληνικούς ανδριάντες. Εκτίθεται σε ειδικά σχεδιασμένη αίθουσα με προσεκτικό φωτισμό και είναι ένο από τα πιο ισχυρά μεμονωμένα αντικείμενα σε οποιοδήποτε ελληνικό μουσείο εκτός Αθηνών. Οι γύρω αίθουσες περιέχουν αφιερώματα, χάλκινα ειδώλια, κεραμική και αρχιτεκτονικά θραύσματα από το Ηραίον που καλύπτουν σχεδόν χίλια χρόνια συνεχούς χρήσης.",
+          },
         },
         {
-          title: { en: "Mylopotas is one of the finest long sandy beaches in the Cyclades — at any level of organisation you prefer", el: "Ο Μυλοποτάς είναι ένα από τα πιο όμορφα μακριά αμμώδη παραλίες στις Κυκλάδες — σε κάθε επίπεδο οργάνωσης που προτιμάς" },
-          text: { en: "The beach at Mylopotas is two kilometres of fine pale sand curving around a protected south-facing bay. The eastern end is highly organised — sunbeds, beach bars, watersports, cocktails from noon — while the western end dissolves into a quieter stretch where the sand runs out and the rocks begin. The range of experiences available on a single beach is genuinely unusual: you can be in a full beach-club scene at one end and in near-total solitude at the other.", el: "Η παραλία του Μυλοποτά είναι δυο χιλιόμετρα λεπτής ανοιχτόχρωμης άμμου γύρω από ένα προστατευόμενο νότιο κόλπο. Το ανατολικό άκρο είναι πολύ οργανωμένο — ηλιοστάσια, beach bars, υδάτινα αθλήματα, κοκτέιλ από το μεσημέρι — ενώ το δυτικό άκρο διαλύεται σε πιο ήσυχο τμήμα όπου η άμμος τελειώνει και αρχίζουν τα βράχια. Η ποικιλία εμπειριών που διατίθεται σε μία παραλία είναι πραγματικά ασυνήθιστη: μπορείς να είσαι σε πλήρη beach-club σκηνή στο ένα άκρο και σε σχεδόν πλήρη μοναξιά στο άλλο." }
+          title: {
+            en: "Pythagoreion — the ancient city under the modern town",
+            el: "Πυθαγόρειο — η αρχαία πόλη κάτω από τη σύγχρονη πόλη",
+          },
+          text: {
+            en: "The modern town of Pythagoreion is built directly on the site of the ancient capital of Samos — the city of Polycrates, the tyrant who commissioned both the Heraion temple and the Efpalinos Tunnel in the 6th century BC and who made Samos one of the most powerful naval forces in the Aegean. The ancient harbour mole is still in daily use; sections of the ancient city walls are visible behind the waterfront hotels; and the narrow streets preserve the street plan of the ancient settlement in their layout. A small local museum in the town contains finds specific to the Pythagoreion area.",
+            el: "Η σύγχρονη πόλη Πυθαγόρειο είναι χτισμένη ακριβώς στη θέση της αρχαίας πρωτεύουσας της Σάμου — της πόλης του Πολυκράτη, του τυράννου που παρήγγειλε τόσο τον ναό του Ηραίου όσο και το Τούνελο Ευπαλίνου τον 6ο αιώνα π.Χ. και έκανε τη Σάμο ένα από τα πιο ισχυρά ναυτικά δυνάμεις του Αιγαίου. Η αρχαία προβλήτα χρησιμοποιείται ακόμα καθημερινά — τμήματα των αρχαίων τειχών της πόλης είναι ορατά πίσω από τα ξενοδοχεία της παραλίας, και τα στενά σοκάκια διατηρούν το σχέδιο δρόμων του αρχαίου οικισμού στη διάταξή τους.",
+          },
         },
-        {
-          title: { en: "The nightlife in the Chora is unlike anything else in the Greek islands — and genuinely worth experiencing once", el: "Η νυχτερινή ζωή στο Χωριό δεν μοιάζει με τίποτα άλλο στα ελληνικά νησιά — και αξίζει να τη ζήσεις μία φορά" },
-          text: { en: "The concentration of bars and clubs in the narrow lanes of the upper Chora has been drawing summer visitors for forty years, and it remains one of the most vivid nocturnal experiences in the Mediterranean. The bars open at sunset and the energy builds through the evening into a density of music, movement and good-natured chaos that is uniquely Cycladic. It is not for every traveller — but dismissing it entirely without experiencing it once is to miss something real.", el: "Η συγκέντρωση μπαρ και clubs στα στενά δρομάκια του πάνω Χωριού προσελκύει καλοκαιρινούς επισκέπτες εδώ και σαράντα χρόνια, και παραμένει μία από τις πιο ζωντανές νυχτερινές εμπειρίες σης Μεσογείου. Τα μπαρ ανοίγουν στη σούσα και η ενέργεια χτίζεται μέσα στη βραδιά σε μια πυκνότητα μουσικής, κίνησης και καλόσυνης χαοτικότητας που είναι μοναδικά κυκλαδίτικη. Δεν είναι για κάθε ταξιδιώτη — αλλά να το απορρίψεις εντελώς χωρίς να το ζήσεις μία φορά είναι να χάσεις κάτι πραγματικό." }
-        },
-        {
-          title: { en: "Ios is positioned perfectly for island hopping — Santorini, Folegandros, Sikinos and Naxos are all close", el: "Η Ίος είναι τέλεια τοποθετημένη για island hopping — Σαντορίνη, Φολέγανδρος, Σίκινος και Νάξος είναι κοντά" },
-          text: { en: "The island sits at the intersection of several major ferry routes in the southern Cyclades. Santorini is 45 minutes by high-speed ferry; Naxos is under an hour; Folegandros and Sikinos — two of the most unspoiled small islands in Greece — are each reachable in under two hours. For island hoppers using Ios as a base, the geographic position is ideal.", el: "Το νησί βρίσκεται στη διασταύρωση αρκετών σημαντικών πορείακων γραμμών στις νότιες Κυκλάδες. Η Σαντορίνη είναι 45 λεπτά με γρήγορο πλοίο; η Νάξος κάτω από μία ώρα; Φολέγανδρος και Σίκινος — δύο από τα πιο ανέγγιχτα μικρά νησιά στην Ελλάδα — είναι και τα δύο προσβάσιμα σε κάτω από δύο ώρες. Για island hoppers που χρησιμοποιούν την Ίο ως βάση, η γεωγραφική θέση είναι ιδανική." }
-        }
-      ]
+      ],
     },
     {
-      title: { en: "Best time to go (and when to avoid)", el: "Καλύτερη εποχή (και πότε να αποφύγεις)" },
+      title: {
+        en: "Samos Wine — PDO Muscat",
+        el: "Κρασί Σάμου — ΠΟΠ Μοσχάτος",
+      },
+      layout: "list",
+      items: [
+        {
+          title: {
+            en: "Three thousand years of winemaking",
+            el: "Τρεις χιλιάδες χρόνια οινοποιίας",
+          },
+          text: {
+            en: "The Muscat grape has been cultivated on Samos since at least the 7th century BC, and the island's wine has been exported continuously for millennia. In the 18th century, Samos Muscat became fashionable in France — Napoleon is reported to have sent bottles to Josephine; Byron praised it in Don Juan. The Samos Wine Cooperative, established in 1934, remains one of the finest wine cooperatives in Greece, unifying the production of over three thousand small-scale growers across the island's vine-covered hillsides.",
+            el: "Η σταφυλιά Μοσχάτου καλλιεργείται στη Σάμο τουλάχιστον από τον 7ο αιώνα π.Χ., και το κρασί του νησιού εξάγεται συνεχώς για χιλιάδες χρόνια. Τον 18ο αιώνα, ο Μοσχάτος Σάμου έγινε μοδάτος στη Γαλλία — λέγεται ότι ο Ναπολέων έστειλε μπουκάλια στην Ιωσηφίνα· ο Μπάιρον το επαίνεσε στον Δον Ζουάν. Η Κοινοτική Οινοποιία Σάμου, που ιδρύθηκε το 1934, παραμένει μία από τις πιο λεπτές οινοποιικές κοινότητες στην Ελλάδα, ενώνοντας την παραγωγή πάνω από τρισχιλιάδων μικροκλιμακιών καλλιεργητών στις αμπελοκάλυπτες πλαγιές του νησιού.",
+          },
+        },
+        {
+          title: {
+            en: "Styles of Muscat of Samos PDO",
+            el: "Στυλ Μοσχάτου Σάμου ΠΟΠ",
+          },
+          text: {
+            en: "The cooperative produces several distinct styles under the Muscat of Samos PDO: the golden, intensely aromatic Vin Doux Naturel (the most widely exported style); the richer, more oxidative Anthemis aged for three years in oak; and the rare Nectar, made from sun-dried grapes with a concentration of sweetness and complexity that places it among the finest dessert wines in the world. All are available at the winery in Malagari, at food shops in Vathi and Pythagoreion, and at most good tavernas on the island.",
+            el: "Η κοινότητα παράγει αρκετά διαφορετικά στυλ υπό τον Μοσχάτο Σάμου ΠΟΠ: το χρυσό, έντονα αρωματισμένο Vin Doux Naturel (το πιο ευρέως εξαγόμενο στυλ); το πιο πλούσιο, πιο οξειδωτικό Anthemis που ωριμάζει για τρία χρόνια σε βαρέλια· και το σπάνιο Nectar, που φτιάχνεται από σταφύλια που έχουν στεγνώσει στον ήλιο με συγκέντρωση γλυκύτητας και πολυπλοκότητας που το τοποθετεί ανάμεσα στα πιο λεπτά γλυκά κρασιά του κόσμου. Όλα είναι διαθέσιμα στο οινοποιείο στο Μαλαγαρί, σε καταστήματα τροφίμων στη Βαθύ και Πυθαγόρειο, και στις περισσότερες καλές ταβέρνες στο νησί.",
+          },
+        },
+        {
+          title: {
+            en: "Visiting the winery",
+            el: "Επίσκεψη στο οινοποιείο",
+          },
+          text: {
+            en: "The cooperative's winery is open to visitors with tastings and direct sales. The best time to visit is in September and October when the harvest is in progress — the sight and smell of Muscat grapes arriving from the hillside vineyards is one of the most specific and memorable sensory experiences Samos offers.",
+            el: "Το οινοποιείο της κοινότητας είναι ανοιχτό στους επισκέπτες με γευσιγνωσίες και απ' ευθείας πωλήσεις. Η καλύτερη εποχή για επίσκεψη είναι τον Σεπτέμβριο και τον Οκτώβριο όταν γίνεται η σοδειά — η θέα και η μυρωδιά των σταφυλιών Μοσχάτου που φτάνουν από τους αμπελώνες στις πλαγιές είναι μία από τις πιο συγκεκριμένες και αξέχαστες αισθητηριακές εμπειρίες που προσφέρει η Σάμος.",
+          },
+        },
+      ],
+    },
+    {
+      title: {
+        en: "What to skip — and what nobody tells you",
+        el: "Τι να αποφύγεις — και τι δεν σου λέει κανείς",
+      },
+      layout: "list",
+      items: [
+        {
+          title: { en: "Staying exclusively on the north coast resort strip", el: "Να μένεις μόνο στη ζώνη ξενοδοχείων της βόρειας ακτής" },
+          text: {
+            en: "The concentration of package accommodation between Vathi and Kokkari represents only one dimension of Samos. The mountain villages, the Heraion, the Efpalinos Tunnel, the vineyards and the west coast are where the island's most distinctive qualities live. Travellers who spend their entire stay at a beach hotel on the north coast road often leave without having experienced what makes Samos genuinely remarkable.",
+            el: "Η συγκέντρωση πακέτων διαμονής μεταξύ Βαθύς και Κοκκαρί αντιπροσωπεύει μόνο μία διάσταση της Σάμου. Τα ορεινά χωριά, το Ηραίον, το Τούνελο Ευπαλίνου, οι αμπελώνες και η δυτική ακτή είναι εκεί όπου ζουν τα πιο ξεχωριστά χαρακτηριστικά του νησιού. Οι ταξιδιώτες που περνούν όλη τη διαμονή τους σε ένα ξενοδοχείο παραλίας στον δρόμο της βόρειας ακτής συχνά φεύγουν χωρίς να έχουν βιώσει αυτό που κάνει τη Σάμο πραγματικά εξαιρετική.",
+          },
+        },
+        {
+          title: { en: "Visiting the Heraion without reading anything about it first", el: "Να επισκεφθείς το Ηραίον χωρίς να διαβάσεις κάτι πρώτα" },
+          text: {
+            en: "The site — a flat plain with foundations and a single column — requires context to be fully experienced. The Archaeological Museum in Vathi provides it, and visiting the museum before the Heraion transforms the site from an abstract collection of stones into one of the most evocative places in the ancient Greek world. Do the museum first, then the Heraion.",
+            el: "Ο χώρος — ένα επίπεδο πεδίο με θεμέλια και έναν μόνο κίονα — απαιτεί πλαίσιο για να βιωθεί πλήρως. Το Αρχαιολογικό Μουσείο στη Βαθύ το παρέχει, και η επίσκεψη στο μουσείο πριν από το Ηραίον μεταμορφώνει τον χώρο από μια αφηρημένη συλλογή πετρών σε ένα από τα πιο εντυπωσιακά μέρη στον αρχαίο ελληνικό κόσμο. Πήγαινε στο μουσείο πρώτα, μετά στο Ηραίον.",
+          },
+        },
+        {
+          title: { en: "Overlooking the Seïtani beaches because they require a walk", el: "Να αγνοήσεις τις παραλίες Σεϊτάνι επειδή απαιτούν περπάτημα" },
+          text: {
+            en: "Mikro and Megalo Seïtani — the remote northwest coast coves accessible only on foot or by sea taxi — are among the finest natural beaches in the eastern Aegean. The walk from Potami takes 45 minutes to the first cove and 90 minutes to the second. Almost no one who makes the effort regrets it. Bring water, food and snorkelling equipment.",
+            el: "Το Μικρό και το Μεγάλο Σεϊτάνι — οι απομακρυσμένες κολπίδες της βορειοδυτικής ακτής που είναι προσβάσιμες μόνο με τα πόδια ή με θαλάσσιο ταξί — είναι από τις πιο λεπτές φυσικές παραλίες στο ανατολικό Αιγαίο. Η διαδρομή από το Ποταμί παίρνει 45 λεπτά μέχρι την πρώτη κολπίδα και 90 λεπτά μέχρι τη δεύτερη. Σχεδόν κανείς δεν μετανιώνει που κούρασε. Πάρε νερό, φαγητό και εξοπλισμό σνόρκελ.",
+          },
+        },
+        {
+          title: { en: "Missing the wine cooperative in September and October", el: "Να χάσεις την κοινοτική οινοποιία τον Σεπτέμβριο και Οκτώβριο" },
+          text: {
+            en: "The Samos Wine Cooperative is open and interesting throughout the year, but in September and October — when the Muscat harvest is in progress — it is extraordinary. The smell of fresh-pressed Muscat, the activity in the winery, and the opportunity to taste wine at various stages of production is an experience available only in those weeks. If your visit coincides with the harvest, make the cooperative a priority.",
+            el: "Η Κοινοτική Οινοποιία Σάμου είναι ανοιχτή και ενδιαφέρουσα όλο τον χρόνο, αλλά τον Σεπτέμβριο και τον Οκτώβριο — όταν γίνεται η σοδειά Μοσχάτου — είναι εξαιρετική. Η μυρωδιά του πρόσφατα πιεσμένου Μοσχάτου, η δραστηριότητα στο οινοποιείο και η ευκαιρία να δοκιμάσεις κρασί σε διάφορα στάδια παραγωγής είναι μια εμπειρία που υπάρχει μόνο σε αυτές τις εβδομάδες. Αν η επίσκεψή σου συμπίπτει με τη σοδειά, κάνε την κοινοτική προτεραιότητα.",
+          },
+        },
+      ],
+    },
+    {
+      title: {
+        en: "What nobody tells you",
+        el: "Τι δεν σου λέει κανείς",
+      },
       layout: "list",
       alert: {
-        en: "Secret: September is the finest month on Ios — the sea is at its warmest, the crowds have thinned dramatically, and the Chora is quiet and beautiful in the evenings.",
-        el: "Μυστικό: Ο Σεπτέμβριος είναι ο καλύτερος μήνας στην Ίο — η θάλασσα είναι στο πιο ζεστό, τα πλήθη έχουν αραιωθεί δραματικά, και το Χωριό είναι ήσυχο και όμορφο τις βραδιές."
+        en: "Samos has a quality that its better-marketed neighbours entirely lack: geological and ecological variety within a single island. In one day, you can swim in the crystal water of a north-coast cove with pine forest above it, walk through a chestnut grove to a stone village with spring water running through its square, drink a glass of wine that has been made on this island for three thousand years, and stand beside a column that was raised when the Parthenon had not yet been built. The reason it is less visited than the Cyclades has nothing to do with its quality and everything to do with fashion.",
+        el: "Η Σάμος έχει μια ποιότητα που τα καλύτερα διαφημισμένα γειτονικά νησιά στερούνται εντελώς: γεωλογική και οικολογική ποικιλία μέσα σε ένα μόνο νησί. Σε μία μέρα, μπορείς να κολυμπήσεις στο κρυστάλλινο νερό ενός κολπιού βόρειας ακτής με πευκοδάσος από πάνω, να περπατήσεις μέσα από ένα καστανιέδιο σε ένα πέτρινο χωριό με νερό πηγής στην πλατεία, να πιεις ένα ποτήρι κρασί που φτιάχνεται σε αυτό το νησί για τρεις χιλιάδες χρόνια, και να σταθείς δίπλα σε ένα κίονα που σηκώθηκε όταν ο Παρθενώνας δεν είχε ακόμα χτιστεί. Ο λόγος που επισκέπτονται λιγότερο από τις Κυκλάδες δεν έχει καμία σχέση με την ποιότητά της και όλη με τη μόδα.",
       },
-      items: [
-        {
-          title: { en: "May — green, quiet, excellent value", el: "Μάιος — πράσινος, ήσυχος, εξαιρετική αξία" },
-          text: { en: "The island is green and quiet. Accommodation is good value, the Chora is uncrowded, and the sea is reaching swimming temperature. Excellent for walkers, explorers and anyone who wants Ios without the party energy.", el: "Το νησί είναι πράσινο και ήσυχο. Τα καταλύματα είναι σε καλή τιμή, το Χωριό δεν είναι γεμάτο, και η θάλασσα φτάνει σε θερμοκρασία κολύμβησης. Εξαιρετικό για πεζοπόρους, εξερευνητές και όσους θέλουν την Ίο χωρίς την ενέργεια της γιορτής." }
-        },
-        {
-          title: { en: "June — the ideal month", el: "Ιούνιος — ο ιδανικός μήνας" },
-          text: { en: "The ideal month for most visitors — the sea is warm, Mylopotas is lively without being overwhelming, the Chora is at its most beautiful in the evenings, and the accommodation choice and price point are both at their best.", el: "Ο ιδανικός μήνας για τους περισσότερους επισκέπτες — η θάλασσα είναι ζεστή, ο Μυλοποτάς είναι ζωντανός χωρίς να υπερβάλλει, το Χωριό είναι στο πιο όμορφό του τις βραδιές, και η επιλογή καταλύματος και τιμή είναι και οι δύο στο καλύτερό τους." }
-        },
-        {
-          title: { en: "July (early) — still excellent", el: "Ιούλιος (αρχές) — ακόμα εξαιρετικός" },
-          text: { en: "Still excellent — before the mid-July peak the island is active and exciting without being saturated. Book ahead. The beach is at its best and the Chora nights are at their most energetic.", el: "Ακόμα εξαιρετικός — πριν την κορύφωση του μέσου Ιουλίου το νησί είναι ενεργό και συναρπαστικό χωρίς νεοτανίζεται. Κλείσε εκ των προτέρων. Η παραλία είναι στο καλύτερό της και οι νύχτες στο Χωριό στη πιο ενεργητική τους." }
-        },
-        {
-          title: { en: "July (late) – August — peak season", el: "Ιούλιος (τέλος) – Αύγουστος — αιχμή σεζόν" },
-          text: { en: "Peak season and very full. The island receives its maximum number of visitors and the atmosphere at Mylopotas and in the Chora is intense. Book everything months in advance. The meltemi can make the north-facing beaches rough.", el: "Αιχμή σεζόν και πολύ γεμάτο. Το νησί δέχεται τον μέγιστο αριθμό επισκεπτών και η ατμόσφαιρα στον Μυλοποτά και στο Χωριό είναι έντονη. Κλείσε τα πάντα μήνες εκ των προτέρων. Ο μελτέμι μπορεί να κάνει τις βόρειες παραλίες σκληρές." }
-        },
-        {
-          title: { en: "September — the finest month", el: "Σεπτέμβριος — ο καλύτερος μήνας" },
-          text: { en: "The finest month on Ios for most travellers. The sea is at its warmest, the crowds have thinned dramatically after mid-month, the Chora is quiet and beautiful in the evenings, and the south coast beaches are at their most accessible and empty. Exceptional.", el: "Ο καλύτερος μήνας στην Ίο για τους περισσότερους ταξιδιώτες. Η θάλασσα είναι στο πιο ζεστό, τα πλήθη έχουν αραιωθεί δραματικά μετά τα μέσα του μήνα, το Χωριό είναι ήσυχο και όμορφο τις βραδιές, και οι παραλίες της νότιας ακτής είναι στο πιο προσβάσιμο και άδειο. Εξαιρετικός." }
-        },
-        {
-          title: { en: "October – April — off-season", el: "Οκτώβριος – Απρίλιος — εκτός σεζόν" },
-          text: { en: "Ios quiets significantly outside summer. Some facilities remain open through October. The island in winter is almost entirely local — a handful of year-round residents, open kafeneions and a Chora that feels profoundly different from its summer self.", el: "Η Ίος ηρεμεί σημαντικά εκτός καλοκαιριού. Κάποιες εγκαταστάσεις παραμένουν ανοιχτές μέχρι τον Οκτώβριο. Το νησί τον χειμώνα είναι σχεδόν εντελώς τοπικό — λίγοι μόνιμοι κάτοικοι, ανοιχτά καφενεία και ένα Χωριό που φαίνεται βαθιά διαφορετικό από το καλοκαιρινό του εαυτό." }
-        }
-      ]
+      items: [],
     },
     {
-      title: { en: "The Chora and main sights", el: "Το Χωριό και κύρια αξιοθέατα" },
-      layout: "numbered",
-      items: [
-        {
-          title: { en: "The Chora (Ios Town) — the most beautiful Cycladic hilltop village in the southern islands", el: "Το Χωριό (Ίος) — το πιο όμορφο κυκλαδίτικο ορεινό χωριό στα νότια νησιά" },
-          text: { en: "The Chora of Ios is everything a Cycladic village should be: dense, labyrinthine, blazingly white, with blue-domed churches appearing at intervals along lanes that twist and double back on themselves with no apparent logic. It sits at 150 metres above the port bay, reached by a paved road or — more correctly — by the long marble staircase that has connected the two since long before cars existed. From the ridge at the top, crowned by three windmills and the ruins of a Venetian kastro, the views extend north to Naxos and south toward Santorini on clear days.\n\nThe Chora divides cleanly into two temporal personalities. By day it is a quiet, domestic place where locals shop, children play in the square, and cats sleep on sun-warmed steps. By night — from around 9pm onward — the bar-lined lanes of the upper village fill with a kind of concentrated energy that is specific to Ios and to no other place in the Cyclades. Both personalities are worth experiencing.", el: "Το Χωριό της Ίου είναι ό,τι πρέπει να είναι ένα κυκλαδίτικο χωριό: πυκνό, λαβυρινθώδες, λαμπρά λευκό, με εκκλησίες με μπλε θόλους που εμφανίζονται σε διαστήματα κατά μήκος δρομάκιων που στροφώνονται και επιστρέφουν στον εαυτό τους χωρίς φαινόμενη λογική. Κάθεται στα 150 μέτρα πάνω από τον κόλπο του λιμανιού, προσβάσιμο με επιστρωμένο δρόμο ή — πιο σωστά — με το μακρύ σκαλοπάτι μαρμάρου που συνδέει τα δύο από πολύ πριν υπάρξουν αυτοκίνητα. Από τη ράχη στην κορυφή, στεφανωμένη από τρεις ανεμόμυλους και τα ερείπια ενός ενετικού κάστρου, η θέα εκτείνεται βόρεια προς Νάξο και νότια προς Σαντορίνη σε καθαρές μέρες.\n\nΤο Χωριό χωρίζεται καθαρά σε δύο χρονικές προσωπικότητες. Την ημέρα είναι ήσυχο, οικογενειακό μέρο όπου οι ντόπιοι ψωνίζουν, τα παιδια παίζουν στην πλατεία, και γάτες κοιμούνται σε ηλιοθερμισμένα βήματα. Τη νύχτα — από τις 9μμ και μετά — τα δρομάκια γεμισμένα με μπαρ του πάνω χωριού γεμίζουν με ένα είδος συγκεντρωμένης ενέργειας που είναι ιδιαίτερη της Ίου και κανενός άλλου μέρους στις Κυκλάδες. Και οι δύο προσωπικότητες αξίζουν να ζηθούν." }
-        },
-        {
-          title: { en: "Homer's Tomb — the northern ridge and the oldest tradition on the island", el: "Τάφος του Ομήρου — η βόρεια ράχη και η παλαιότερη παράδοση στο νησί" },
-          text: { en: "Ancient sources — including Thucydides, Pliny the Elder and the Homeric tradition itself — record that Homer died on the island of Ios and was buried on its northern tip. The Archaeological Museum in the Chora holds inscriptions and fragments that reference the tradition, and the site on the northern ridge — a reconstructed enclosure of ancient stones set into a bare hillside above a deep sea view — has been known and visited since antiquity. Whether or not the tomb is genuinely Homer's is a question that archaeology cannot resolve; what is not in question is the extraordinary quality of the location and the emotional weight of standing in a place that the ancient world treated as sacred.", el: "Αρχαίες πηγές — συμπεριλαμβανομένων του Θουκυδίδη, του Πλίνιου του Πρεσβύτερου και της ίδιας της Ομηρικής παράδοσης — καταγράφουν ότι ο Όμηρος πέθανε στο νησί της Ίου και θάφτηκε στο βόρειο άκρο της. Το Αρχαιολογικό Μουσείο στο Χωριό φιλοξενεί επιγραφές και θραύσματα που αναφέρονται στην παράδοση, και ο χώρος στη βόρεια ράχη — ένα ανακατασκευασμένο περίβλητα αρχαίων πετρών σε γυμνό λόφο πάνω από βαθιά θαλάσσια θέα — είναι γνωστός και επισκέψιμος από την αρχαιότητα. Αν ο τάφος είναι πραγματικά του Ομήρου είναι ερώτημα που η αρχαιολογία δεν μπορεί να επιλύσει; αυτό που δεν αμφισβητείται είναι η εξαιρετική ποιότητα της τοποθεσίας και το συναισθηματικό βάρος του να στέκεσαι σε ένα μέρο που ο αρχαίος κόσμος θεωρούσε ιερό." }
-        },
-        {
-          title: { en: "The Archaeological Museum of Ios", el: "Το Αρχαιολογικό Μουσείο της Ίου" },
-          text: { en: "The Archaeological Museum in the Chora is small but intelligently curated, containing finds from the island's Mycenaean-era settlement at Skarkos — one of the most significant Early Bronze Age sites in the Cyclades, with occupation dating to approximately 2800–2300 BC. The Skarkos site itself, on a low hill north of the port, is accessible and worth a visit; the combination of site and museum gives a clear picture of Ios's very long human history that stands in sharp contrast to its modern reputation.", el: "Το Αρχαιολογικό Μουσείο στο Χωριό είναι μικρό αλλά ευφυώς σχεδιασμένο, περιέχοντας ευρήματα από τον μυκηναϊκό οικισμό του νησιού στο Σκάρκο — ένα από τα πιο σημαντικά μέρη της Πρώιμης Εποχής του Χαλκού στις Κυκλάδες, με κατοίκηση από περίπου 2800–2300 π.Χ. Ο ίδιος ο χώρος του Σκάρκου, σε ένα χαμηλό λόφο βόρεια του λιμανιού, είναι προσβάσιμος και αξίζει μια επίσκεψη; ο συνδυασμός χώρου και μουσείου δίνει μια σαφή εικόνα της πολύ μακριάς ανθρώπινης ιστορίας της Ίου που στέκεται σε απότομη αντίθεση με τη σύγχρονη φήμη της." }
-        },
-        {
-          title: { en: "Skarkos — Early Bronze Age settlement (UNESCO Tentative List)", el: "Σκάρκος — Οικισμός Πρώιμης Εποχής Χαλκού (Προσωρινή Λίστα UNESCO)" },
-          text: { en: "The hill of Skarkos, just north of the port, contains the remarkably well-preserved remains of an Early Cycladic settlement from approximately 2800 BC — one of the oldest organised urban sites in the Aegean. Multi-roomed stone houses, storage vessels, animal bones and cooking implements have all been found here, revealing a structured community that predates the classical world by over two thousand years. The site is on Greece's UNESCO Tentative List and is openly accessible with information panels.", el: "Ο λόφος του Σκάρκου, μόλις βόρεια του λιμανιού, περιέχει τα εντυπωσιακά καλά διατηρημένα ερείπια ενός πρώιμου κυκλαδίτικου οικισμού από περίπου 2800 π.Χ. — ένα από τα παλαιότερα οργανωμένα αστικά μέρη στο Αιγαίο. Πολυδωμάτια πέτρινα σπίτια, αγγεία αποθήκευσης, ζώινα κόκαλα και μαγειρικά εργαλεία έχουν όλα βρεθεί εδώ, αποκαλύπτοντας μια δομημένη κοινότητα που προηγείται της κλασικής εποχής κατά πάνω από δύο χιλιετίες. Ο χώρος βρίσκεται στην Προσωρινή Λίστα της UNESCO στην Ελλάδα και είναι ανοιχτά προσβάσιμος με πληροφοριακές πινακίδες." }
-        }
-      ]
-    },
-    {
-      title: { en: "Beaches in Ios", el: "Παραλίες στην Ίο" },
-      layout: "list",
-      items: [
-        {
-          title: { en: "Mylopotas — iconic and long", el: "Μυλοποτάς — θρυλικός και μακρύς" },
-          text: { en: "The island's main beach — two kilometres of fine sand in a south-facing bay, with the full spectrum from organised beach clubs at the east end to quiet, undeveloped sand at the west. The clearest water on the main coastline. The beach bar scene here from June through August is one of the most vivid in the Cyclades.", el: "Η κύρια παραλία του νησιού — δυο χιλιόμετρα λεπτής άμμου σε νότιο κόλπο, με το πλήρες φάσμα από οργανωμένα beach clubs στο ανατολικό άκρο έως ήσυχη, αναπτύξιμη άμμο στα δυτικά. Το πιο καθαρό νερό στην κύρια ακτογραμμή. Το beach bar scene εδώ από Ιούνιο μέχρι Αύγουστο είναι ένα από τα πιο ζωντανά στις Κυκλάδες." }
-        },
-        {
-          title: { en: "Manganari — wild and remote", el: "Μαγκαναρί — άγρια και απομακρυσμένη" },
-          text: { en: "Three broad south-coast bays of exceptional natural beauty, accessible by caïque from the port or a rough dirt road. No sunbeds, minimal facilities, extraordinary clarity. The finest natural beach experience on the island and one of the best in the southern Cyclades.", el: "Τρεις ευρύτατοι νότιοι κόλποι εξαιρετικής φυσικής ομορφιάς, προσβάσιμοι με καΐκι από το λιμάνι ή σκληρό χωμάτινο δρόμο. Χωρίς ηλιοστάσια, ελάχιστες εγκαταστάσεις, εξαιρετική διαφάνεια. Η πιο φυσική παραλιακή εμπειρία στο νησί και μία από τις καλύτερες στις νότιες Κυκλάδες." }
-        },
-        {
-          title: { en: "Koumbara — closest to Chora", el: "Κουμπάρα — πιο κοντά στο Χωριό" },
-          text: { en: "A small rocky cove ten minutes' walk west of the port — pebble and coarse sand, clear water, a seasonal beach bar and a quiet atmosphere that makes it the preferred swimming spot for the island's longer-term residents. Completely different in character from Mylopotas.", el: "Ένας μικρός βραχώδης όρμος δέκα λεπτά με τα πόδια δυτικά του λιμανιού — χαλίκι και χοντρή άμμο, καθαρό νερό, ένα εποχιακό beach bar και μια ήσυχη ατμόσφαιρα που το κάνει το προτιμώμενο μέρο κολύμβησης για τους πιο μακροχρόνιους κατοίκους του νησιού. Εντελώς διαφορετικό σε χαρακτήρα από τον Μυλοποτά." }
-        },
-        {
-          title: { en: "Psathi — nudist and free", el: "Ψαθί — γυμνιστική και ελεύθερη" },
-          text: { en: "A sandy cove on the east coast, reached by a short dirt track from the main road. Quieter than Mylopotas, traditionally clothing-optional, with good clear water and a low-key atmosphere that suits visitors who want to escape the main beach scene.", el: "Ένας αμμώδης όρμος στην ανατολική ακτή, προσβάσιμος με σύντομο χωμάτινο δρόμο από τον κύριο δρόμο. Πιο ήσυχος από τον Μυλοποτά, παραδοσιακά ελεύθερος, με καλό καθαρό νερό και χαμηλό-κλειδί ατμόσφαιρα που ταιριάζει σε επισκέπτες που θέλουν να δραπετάσουν από την κύρια παραλιακή σκηνή." }
-        },
-        {
-          title: { en: "Agia Theodoti — sheltered and calm", el: "Αγία Θεοδότη — προστατευμένη και ήσυχη" },
-          text: { en: "A long, broad sandy beach on the northeast coast, sheltered from the meltemi and excellent on windy days when the west coast is rough. A Byzantine church and the ruins of a Venetian castle sit above the beach. Taverna open in summer.", el: "Μια μακριά, ευρύτατη αμμώδης παραλία στη βορειοανατολική ακτή, προστατευμένη από τον μελτέμι και εξαιρετική σε αερώδεις μέρες όταν η δυτική ακτή είναι σκληρή. Μια βυζαντινή εκκλησία και τα ερείπια ενός ενετικού κάστρου κάθονται πάνω από την παραλία. Ταβέρνα ανοιχτή το καλοκαίρι." }
-        },
-        {
-          title: { en: "Plakes & Kalamos — hidden gems", el: "Πλάκες & Καλαμός — κρυμμένα διαμάντια" },
-          text: { en: "Two small, largely undiscovered coves on the north coast, reached by rough tracks. Rocky entries, very clear water, and almost no other visitors even in August. For those with a car and a willingness to walk the last five minutes on a stony path.", el: "Δύο μικροί, σε μεγάλο βαθμό ανακάλυπτοι όρμοι στη βόρεια ακτή, προσβάσιμοι με σκληρούς δρόμους. Βραχώδεις είσοδοι, πολύ καθαρό νερό, και σχεδόν κανένας άλλος επισκέπτης ακόμα και τον Αύγουστο. Για όσους έχουν αυτοκίνητο και τη διάθεση να περπατήσουν τα τελευταία πέντε λεπτά σε πετρένιο μονοπάτι." }
-        }
-      ]
-    },
-    {
-      title: { en: "Eating and drinking in Ios", el: "Φαγητό και ποτό στην Ίο" },
-      layout: "grid",
-      items: [
-        {
-          title: { en: "The Chora restaurant scene — better than the reputation suggests", el: "Η σκηνή εστιατορίων στο Χωριό — καλύτερη από ό,τι υποδεικνύει η φήμη" },
-          text: { en: "The Chora has developed a genuine restaurant culture over the past decade, with several excellent tavernas serving modern Greek food alongside traditional dishes. The best are concentrated on and around the main square and on the quieter lanes north of the bar district. Booking is recommended in July and August.", el: "Το Χωριό έχει αναπτύξει μια πραγματική εστιατορική κουλτούρα την τελευταία δεκαετία, με αρκετές εξαιρετικές ταβέρνες να σερβίρουν σύγχρονο ελληνικό φαγητό δίπλα σε παραδοσιακά πιάτα. Οι καλύτερες είναι συγκεντρωμένες γύρω από την κεντρική πλατεία και στα πιο ήσυχα δρομάκια βόρεια της περιοχής των μπαρ. Κράτηση συνιστάται τον Ιούλιο και Αύγουστο." }
-        },
-        {
-          title: { en: "Fresh seafood at the port", el: "Φρέσκα θαλασσινά στο λιμάνι" },
-          text: { en: "The waterfront tavernas at Ormos Iosou serve fresh fish at prices that are considerably more reasonable than in the Chora. The port is a working fishing harbour and the daily catch quality is reliable. Grilled red mullet, sea bream and octopus are staples; the smaller family-run tavernas outperform the larger ones consistently.", el: "Οι ταβέρνες στο λιμάνι στον Όρμο Ιούσου σερβίρουν φρέσκο ψάρι σε τιμές που είναι σημαντικά πιο λογικές από ό,τι στο Χωριό. Το λιμάνι είναι ένα εργαζόμενο ψαράδικο και η ποιότητα της ημερήσιας σύλλησης είναι αξιόπιστη. Ψητός κόκκινος μουρούνι, σαργούρα και χταπόδι είναι βασικά πιάτα; οι μικρότερες οικογενειακές ταβέρνες υπερτερούν στις μεγαλύτερες αξιόπιστα." }
-        },
-        {
-          title: { en: "Loukoumades — the Chora's essential street food", el: "Λουκουμάδες — το απαραίτητο street food του Χωριού" },
-          text: { en: "Ios has its own tradition of loukoumades — honey-drenched fried dough — and the long-established stall near the Chora's main square has been serving them for decades. Eaten at midnight after a long evening, they are one of the island's most specific pleasures.", el: "Η Ίος έχει τη δική της παράδοση λουκουμάδων — τηγανισμένου ζυμαριού με μέλι — και το παλιό πωλητήριο κοντά στην κεντρική πλατεία του Χωριού τα σερβίρει εδώ και δεκαετίες. Τα τρως μεσάνυχτα μετά από μακριά βραδιά, και είναι ένα από τα πιο συγκεκριμένα ευχαριστήματα του νησιού." }
-        },
-        {
-          title: { en: "Local Ios wine and thyme honey", el: "Τοπικό κρασί Ίου και μέλι θυμαρίσιο" },
-          text: { en: "The island produces small quantities of wine from indigenous varieties — light, aromatic whites and robust reds — and a thyme honey that is among the finest in the Cyclades. Both are available from the food shops in the Chora and from the Saturday morning market at the port. Take them home.", el: "Το νησί παράγει μικρές ποσότητες κρασιού από γηγενή ποικιλία — ελαφρά, αρωματικά λευκά και ισχυρά κόκκινα — και ένα θυμαρίσιο μέλι που είναι ανάμεσα στα πιο καλά στις Κυκλάδες. Και τα δύο είναι διαθέσιμα από τα τρόφιμα στο Χωριό και από την αγορά Σαββατοκύριακου στο λιμάνι. Πάρε τα σπίτι." }
-        },
-        {
-          title: { en: "Breakfast culture in the Chora", el: "Κουλτούρα πρωινού στο Χωριό" },
-          text: { en: "Ios has an unusually good breakfast culture — several café-bakeries in the Chora open early and serve fresh pastries, Greek yogurt with local honey, proper espresso and fruit platters. After a night out, breakfast here is a ritual. After an early morning walk to Homer's Tomb, it is a reward.", el: "Η Ίος έχει ασυνήθιστα καλή κουλτούρα πρωινού — αρκετά café-αρτοποιεία στο Χωριό ανοίγουν νωρίς και σερβίρουν φρέσκα παστά, γιαούρτι ελληνικό με τοπικό μέλι, σωστό espresso και πιάτα φρούτων. Μετά από βραδιά έξω, το πρωινό εδώ είναι ένα τελετουργικό. Μετά από πρωινό περίπατο στον Τάφο του Ομήρου, είναι ένα βραβείο." }
-        },
-        {
-          title: { en: "Beach tavernas at Mylopotas and Manganari", el: "Παραλιακές ταβέρνες στον Μυλοποτά και τη Μαγκαναρί" },
-          text: { en: "The tavernas at the east end of Mylopotas serve good food alongside beach-bar cocktails; the quality varies but the better ones take their kitchen seriously. At Manganari, the single seasonal taverna serves simple grilled fish and salads that taste considerably better for being eaten on a remote beach with no roads and nothing between you and the horizon.", el: "Οι ταβέρνες στο ανατολικό άκρο του Μυλοποτά σερβίρουν καλό φαγητό δίπλα σε beach-bar κοκτέιλ; η ποιότητα ποικίλλει αλλά οι καλύτερες παίρνουν σοβαρά την κουζίνα τους. Στη Μαγκαναρί, η μοναδική εποχιακή ταβέρνα σερβίρει απλό ψάρι ψητό και σαλάτες που γεύονται σημαντικά καλύτερα γιατί τρώγονται σε μια απομακρυσμένη παραλία χωρίς δρόμους και τίποτα ανάμεσά σου και τον ορίζοντα." }
-        }
-      ]
-    },
-    {
-      title: { en: "Honest Advice — What to Skip in Ios", el: "Ειλικρινής Συμβουλή — Τι να Αποφύγεις στην Ίο" },
-      layout: "list",
-      text: {
-        en: "✕ **Spending your entire stay on Mylopotas without ever going to the Chora.** The beach is excellent but the Chora — particularly in the early morning and at sunset — is where the island's real character lives. Walking up the marble staircase from the port, exploring the lanes before the day warms up, and sitting at a table above the village with a coffee and a view across the Aegean costs nothing and is an entirely different experience from the beach scene below.\n\n✕ **Dismissing Ios as 'just a party island' without looking further.** The nightlife is real and concentrated and can dominate the experience if you stay in the wrong part of the Chora and keep the wrong hours. But the same island contains Homer's Tomb, the Bronze Age settlement at Skarkos, the wild south coast at Manganari and one of the most beautiful Cycladic villages in the archipelago. Travellers who come with only one of these dimensions in mind miss the others entirely.\n\n✕ **Visiting Manganari only by dirt road.** The road is rough, long and hard on rental vehicles — several car hire companies specifically exclude it in their terms. The daily caïque from the port is faster, more pleasant and arrives directly at the beach. Take the boat.\n\n✕ **Staying in August without booking months in advance.** Ios in late July and August is among the busiest small islands in the Cyclades. Accommodation fills completely; prices are at their highest; the Chora becomes very crowded after midnight. If flexibility is important, June and September offer the same beaches, the same Chora and the same island with dramatically less pressure on every resource.\n\n💡 What nobody tells you: Ios has been quietly evolving for over a decade, and the gap between its reputation and its reality is now wider than at almost any other island in Greece. The travellers who arrive expecting a rowdy package resort and find a stunning hilltop village, an ancient Bronze Age site, a wild south coast and genuinely good restaurants are consistently the ones who leave with the strongest impressions. The island's party reputation has functioned, accidentally, as a filter — keeping away a certain type of visitor and leaving the rest of Ios remarkably underpressured for an island this beautiful, this well-connected and this close to Santorini. In September, when the party season ends and the island returns to something closer to its year-round self, Ios is one of the finest places in the Cyclades.",
-        el: "✕ **Να περάσεις ολόκληρη τη διαμονή σου στον Μυλοποτά χωρίς ποτέ να πας στο Χωριό.** Η παραλία είναι εξαιρετική αλλά το Χωριό — ειδικά το πρωί και στη σούσα — είναι εκεί που ζει ο πραγματικός χαρακτήρας του νησιού. Ανεβαίνοντας το σκαλοπάτι μαρμάρου από το λιμάνι, εξερευνώντας τα δρομάκια πριν ζεσταθεί η μέρα, και καθιζώντας σε ένα τραπέζι πάνω από το χωριό με έναν καφέ και θέα στο Αιγαίο δεν κοστίζει τίποτα και είναι εντελώς διαφορετική εμπειρία από την παραλιακή σκηνή παρακάτω.\n\n✕ **Να απορρίψεις την Ίο ως 'απλά νησί γιορτής' χωρίς να κοιτάξεις παραπέρα.** Η νυχτερινή ζωή είναι πραγματική και συγκεντρωμένη και μπορεί να κυριαρχήσει στην εμπειρία αν μείνεις στο λάθος μέρος του Χωριού και κρατήσεις τις λάθος ώρες. Αλλά το ίδιο το νησί περιέχει τον Τάφο του Ομήρου, τον οικισμό της Εποχής του Χαλκού στο Σκάρκο, την άγρια νότια ακτή στη Μαγκαναρί και ένα από τα πιο όμορφα κυκλαδίτικα χωριά στο αρχιπέλαγος. Ταξιδιώτες που έρχονται με μόνο μία από αυτές τις διαστάσεις στο μυαλό χάνουν τις άλλες εντελώς.\n\n✕ **Να επισκεφθείς τη Μαγκαναρί μόνο με χωμάτινο δρόμο.** Ο δρόμος είναι σκληρός, μακρύς και δύσκολος για ενοικιαζόμενα οχήματα — αρκετές εταιρείες ενοικίασης αυτοκινήτων τον αποκλείουν συγκεκριμένα στους όρους τους. Το ημερήσιο καΐκι από το λιμάνι είναι πιο γρήγορο, πιο ευχάριστο και φτάνει απευθείας στην παραλία. Πάρε το πλοίο.\n\n✕ **Να μείνεις τον Αύγουστο χωρίς να κλείσεις μήνες εκ των προτέρων.** Η Ίος τον τέλος Ιουλίου και τον Αύγουστο είναι ανάμεσα στα πιο πολυσύχναστα μικρά νησιά στις Κυκλάδες. Τα καταλύματα γεμίζουν εντελώς; οι τιμές είναι στο υψηλότερο σημείο τους; το Χωριό γίνεται πολύ γεμάτο μετά τα μεσάνυχτα. Αν η ευελιξία είναι σημαντική, ο Ιούνιος και ο Σεπτέμβριος προσφέρουν τις ίδιες παραλίες, το ίδιο Χωριό και το ίδιο νησί με δραματικά λιγότερη πίεση σε κάθε πόρο.\n\n💡 Αυτό που δε σου λέει κανείς: Η Ίος εξελίσσεται σιωπηλά εδώ και πάνω από μια δεκαετία, και το κενό μεταξύ φήμης και πραγματικότητάς της είναι τώρα πιο ευρύ από σχεδόν οποιοδήποτε άλλο νησί στην Ελλάδα. Οι ταξιδιώτες που φτάνουν περιμένοντας ένα θορυβώδες πακέτο θέρετρο και βρίσκουν ένα εντυπωσιακό ορεινό χωριό, ένα αρχαίο μέρο Εποχής Χαλκού, μια άγρια νότια ακτή και πραγματικά καλά εστιατόρια είναι σταθερά αυτοί που φεύγουν με τις πιο ισχυρές εντυπώσεις. Η φήμη γιορτής του νησιού έχει λειτουργήσει, τυχαία, ως φίλτρο — κρατώντας μακριά ένα συγκεκριμένο τύπο επισκέπτη και αφήνοντας τα υπόλοιπα της Ίου αξιοσημείωτα χωρίς πίεση για ένα νησί τόσο όμορφο, τόσο καλά συνδεδεμένο και τόσο κοντά στη Σαντορίνη. Τον Σεπτέμβριο, όταν η σεζόν γιορτής τελειώνει και το νησί επιστρέφει σε κάτι πιο κοντά στον ετήσιο εαυτό του, η Ίος είναι ένα από τα πιο καλά μέρη στις Κυκλάδες."
-      }
-    },
-    {
-      title: { en: "How to visit Ios", el: "Πώς να επισκεφθείς την Ίο" },
-      layout: "grid",
-      items: [
-        {
-          title: { en: "Getting there by ferry", el: "Πώς να φτάσεις με πλοίο" },
-          text: { en: "Ios is well-connected by ferry from Piraeus (4–5 hours conventional, 3 hours high-speed), from Rafina (3–4 hours), and from Santorini (40 minutes), Naxos (1 hour) and Paros (1.5 hours). High-speed services run frequently in summer. The port is compact and all connections are from one quay.", el: "Η Ίος είναι καλά συνδεδεμένη με πλοίο από Πειραιά (4–5 ώρες συμβατικό, 3 ώρες γρήγορο), από Ραφίνα (3–4 ώρες), και από Σαντορίνη (40 λεπτά), Νάξο (1 ώρα) και Πάρο (1.5 ώρες). Τα γρήγορα πλοία τρέχουν συχνά το καλοκαίρι. Το λιμάνι είναι προσβάσιμο και όλες οι συνδέσεις είναι από ένα προβλήτα." }
-        },
-        {
-          title: { en: "Getting around the island", el: "Μετακίνηση στο νησί" },
-          text: { en: "The port, Chora and Mylopotas are connected by a regular bus service that runs until late in summer — one of the few islands where the bus is a genuinely practical option for the main triangle. For Homer's Tomb, Manganari, Agia Theodoti and the east coast beaches, a rental car or scooter is needed. ATV hire is popular but requires care on the rougher tracks.", el: "Το λιμάνι, το Χωριό και ο Μυλοποτάς συνδέονται με τακτική λεωφορειακή υπηρεσία που λειτουργεί μέχρι αργά το καλοκαίρι — ένα απο τα λίγα νησιά όπου το λεωφορείο είναι πραγματικά πρακτική επιλογή για το κύριο τρίγωνο. Για τον Τάφο του Ομήρου, τη Μαγκαναρί, την Αγία Θεοδότη και τις παραλίες της ανατολικής ακτής, χρειάζεται ενοικιαζόμενο αυτοκίνητο ή scooter. Το ATV είναι δημοφιλές αλλά απαιτεί προσοχή στους πιο σκληρούς δρόμους." }
-        },
-        {
-          title: { en: "How many days?", el: "Πόσες μέρες;" },
-          text: { en: "Three days covers the Chora, Mylopotas, Homer's Tomb and a caïque to Manganari comfortably. Four to five days allows a day trip to Folegandros or Sikinos, more beach exploration and a slower pace. Ios is an island that rewards not rushing — the best experiences here are found by wandering without a plan.", el: "Τρεις μέρες καλύπτουν το Χωριό, τον Μυλοποτά, τον Τάφο του Ομήρου και ένα καΐκι στη Μαγκαναρί άνετα. Τέσσερις πέντε μέρες επιτρέπουν μια ημερήσια εκδρομή στον Φολέγανδρο ή τη Σίκινο, περισσότερη εξερεύνηση παραλιών και πιο αργό ρυθμό. Η Ίος είναι ένα νησί που ανταμείβει το να μην τρέχεις — οι καλύτερες εμπειρίες εδώ βρίσκονται περνώντας χωρίς σχέδιο." }
-        },
-        {
-          title: { en: "The port–Chora–Mylopotas triangle", el: "Το τρίγωνο λιμάνι–Χωριό–Μυλοποτάς" },
-          text: { en: "These three points form the practical axis of daily life on Ios. The bus runs the triangle reliably until at least 1am in summer. The marble staircase between the port and the Chora takes about 15 minutes on foot uphill and is worth doing at least once — the views over the bay from halfway up are exceptional.", el: "Αυτά τα τρία σημεία σχηματίζουν τον πρακτικό άξονα της καθημερινής ζωής στην Ίο. Το λεωφορείο τρέχει το τρίγωνο αξιόπιστα μέχρι τουλάχιστον 1πμ το καλοκαίρι. Το σκαλοπάτι μαρμάρου μεταξύ λιμανιού και Χωριού παίρνει περίπου 15 λεπτά με τα πόδια ανοιβάσιμο και αξίζει να το κάνεις τουλάχιστον μία φορά — οι θέες πάνω από τον κόλπο από τα μισά είναι εξαιρετικές." }
-        },
-        {
-          title: { en: "The Meltemi in summer", el: "Ο μελτέμι το καλοκαίρι" },
-          text: { en: "The meltemi blows from the north in July and August, affecting the north-facing coast and occasionally making the sea at Mylopotas choppy. South-facing beaches — Manganari in particular — are sheltered. On very windy days, the caïque service to Manganari may not run; check at the port the night before.", el: "Ο μελτέμι φυσάει από βορρά τον Ιούλιο και τον Αύγουστο, επηρεάζοντας τη βόρεια ακτή και κάνοντας κάποτε τη θάλασσα στον Μυλοποτά κυματώδη. Οι νότιες παραλίες — η Μαγκαναρί ιδιαίτερα — είναι προστατευμένες. Σε πολύ αερώδεις μέρες, η υπηρεσία καΐκι στη Μαγκαναρί μπορεί να μην λειτουργήσει; ρώτα στο λιμάνι την προηγούμενη βραδιά." }
-        },
-        {
-          title: { en: "Noise and sleep", el: "Θόρυβος και ύπνος" },
-          text: { en: "If you are staying in the Chora and want to sleep before 3am, choose accommodation in the lower Chora or on the Chora-Mylopotas road rather than the bar district. If you are staying at Mylopotas, the beach-side hotels furthest from the main cluster of bars are significantly quieter. The port is quiet at night.", el: "Αν μένεις στο Χωριό και θέλεις να κοιμηθείς πριν τις 3πμ, επίλεξε κατάλυμα στο κάτω Χωριό ή στον δρόμο Χωριού-Μυλοποτά αντί για την περιοχή των μπαρ. Αν μένεις στον Μυλοποτά, τα παραλιακά ξενοδοχεία πιο μακριά από το κύριο συγκρότημα μπαρ είναι σημαντικά πιο ήσυχα. Το λιμάνι είναι ήσυχο τη νύχτα." }
-        },
-        {
-          title: { en: "Island hopping from Ios", el: "Island hopping από την Ίο" },
-          text: { en: "Ios's position in the southern Cyclades makes it an excellent hopping base. Santorini (40 min), Naxos (1 hr), Folegandros (1.5 hrs), Sikinos (1 hr) and Paros (1.5 hrs) are all easily reached. High-speed ferry schedules change each season — check current timetables at the port information office or online before planning day trips.", el: "Η θέση της Ίου στις νότιες Κυκλάδες την κάνει εξαιρετική βάση island hopping. Σαντορίνη (40 λεπτά), Νάξος (1 ώρα), Φολέγανδρος (1.5 ώρες), Σίκινος (1 ώρα) και Πάρος (1.5 ώρες) είναι όλα εύκολα προσβάσιμα. Οι χρονοδιαγράμματα γρήγορων πλοίων αλλάζουν κάθε σεζόν — δες τα τρέχοντα χρονοδιαγράμματα στο γραφείο πληροφοριών λιμανιού ή online πριν σχεδιάσεις ημερήσιες εκδρομές." }
-        },
-        {
-          title: { en: "Cash and connectivity", el: "Μετρητά και σύνδεση" },
-          text: { en: "ATMs are available in both the port and the Chora. Mobile signal is good throughout the main settled areas and at Mylopotas. The remoter beaches — Manganari, Psathi — have limited or no signal. Most restaurants and accommodation accept cards; some smaller cafés and the loukoumades stall are cash-preferred.", el: "ATM υπάρχουν και στο λιμάνι και στο Χωριό. Το σήμα κινητού είναι καλό σε όλες τις κύριες κατοικημένες περιοχές και στον Μυλοποτά. Οι πιο απομακρυσμένες παραλίες — Μαγκαναρί, Ψαθί — έχουν περιορισμένο ή κανένα σήμα. Τα περισσότερα εστιατόρια και καταλύματα δέχονται κάρτα; κάποια μικρότερα café και ο πωλητής λουκουμάδων προτιμούν μετρητά." }
-        }
-      ]
-    },
-    {
-      title: { en: "Frequently asked questions about Ios", el: "Συχνές ερωτήσεις για την Ίο" },
+      title: {
+        en: "Frequently asked questions about Samos",
+        el: "Συχνές ερωτήσεις για τη Σάμο",
+      },
       layout: "faq",
       items: [
         {
-          title: { en: "Is Ios only for young party-goers?", el: "Η Ίος είναι μόνο για νέους γιορταστές;" },
-          text: { en: "No — and this is perhaps the most important thing to understand about Ios. The island's nightlife is concentrated in a specific part of the upper Chora and operates between roughly 11pm and 4am. Outside that zone and those hours, Ios is a beautiful Cycladic island with excellent beaches, an extraordinary hilltop village, a wild south coast and genuine historical depth. Couples, older travellers, families and cultural visitors all spend very successful holidays here — provided they choose the right accommodation and understand that the party scene is one option among many, not the defining feature of the entire island.", el: "Όχι — και αυτό είναι ίσως το πιο σημαντικό που πρέπει να καταλάβεις για την Ίο. Η νυχτερινή ζωή του νησιού είναι συγκεντρωμένη σε συγκεκριμένο τμήμα του πάνω Χωριού και λειτουργεί μεταξύ περίπου 11μμ και 4πμ. Εκτός αυτής της ζώνης και αυτών των ωρών, η Ίος είναι ένα όμορφο κυκλαδίτικο νησί με εξαιρετικές παραλίες, ένα εξαιρετικό ορεινό χωριό, μια άγρια νότια ακτή και πραγματικό ιστορικό βάθος. Ζευγάρια, μεγαλύτεροι ταξιδιώτες, οικογένειες και πολιτιστικοί επισκέπτες περνούν πολύ επιτυχημένες διακοπές εδώ — εφόσον επιλέξουν το σωστό κατάλυμα και καταλάβουν ότι η σκηνή γιορτής είναι μία επιλογή ανάμεσα σε πολλές, όχι το χαρακτηριστικό γνώρισμα ολόκληρου του νησιού." }
+          title: { en: "What is the Heraion of Samos and why is it a UNESCO World Heritage site?", el: "Τι είναι το Ηραίον της Σάμου και γιατί είναι Μνημείο UNESCO;" },
+          text: {
+            en: "The Heraion is the ancient sanctuary of Hera, patron goddess of Samos, which was one of the most important religious complexes in the Greek world — larger, older and more richly endowed than most mainland sites. It was continuously active from the Bronze Age through the Roman period and received votive offerings from rulers as distant as Egypt and Lydia. The main temple, begun in the 6th century BC under the tyrant Polycrates, was designed with 155 columns and was the largest Ionic temple ever attempted — it was still unfinished when the Romans arrived. A single restored column marks the site today. Together with the Efpalinos Tunnel and the ancient town of Pythagoreion, it was inscribed on the UNESCO World Heritage List in 1992.",
+            el: "Το Ηραίον είναι το αρχαίο ιερό της Ήρας, προστάτιδας θεάς της Σάμου, το οποίο ήταν ένα από τα πιο σημαντικά θρησκευτικά συγκροτήματα στον ελληνικό κόσμο — μεγαλύτερο, παλαιότερο και πιο πλούσιο από τις περισσότερες ηπειρωτικές τοποθεσίες. Ήταν συνεχώς ενεργό από την Εποχή του Χαλκού μέχρι τη ρωμαϊκή περίοδο και δέχτηκε αφιερώματα από ηγεμόνες τόσο απομακρυσμένους όσο η Αίγυπτος και η Λυδία. Ο κύριος ναός, που ξεκίνησε τον 6ο αιώνα π.Χ. υπό τον τύραννο Πολυκράτη, σχεδιάστηκε με 155 κίονες και ήταν ο μεγαλύτερος ιωνικός ναός που είχε δοκιμαστεί ποτέ — ήταν ακόμα ανολοκλήρωτος όταν ήρθαν οι Ρωμαίοι. Ένας μόνο αποκατεστημένος κίονας σημαδεύει τον χώρο σήμερα. Μαζί με το Τούνελο Ευπαλίνου και την αρχαία πόλη Πυθαγόρειο, καταχωρίστηκε στον κατάλογο Μνημείων Παγκόσμιας Κληρονομιάς UNESCO το 1992.",
+          },
         },
         {
-          title: { en: "How does Ios compare to Santorini?", el: "Πώς συγκρίνεται η Ίος με τη Σαντορίνη;" },
-          text: { en: "Ios and Santorini are an hour apart by high-speed ferry and profoundly different in character. Santorini has the caldera, the iconic architecture, the international luxury hotels and the crowds that come with all of those things — particularly in July and August. Ios has better beaches, a more authentic Cycladic village character, dramatically lower prices and significantly less pressure on every resource. Many travellers who find Santorini's peak season overwhelming base themselves on Ios instead and make Santorini a day trip — arriving early, staying for the sunset, returning in the evening. This is one of the most practical combinations in the southern Cyclades.", el: "Η Ίος και η Σαντορίνη απέχουν μία ώρα με γρήγορο πλοίο και είναι βαθιά διαφορετικές σε χαρακτήρα. Η Σαντορίνη έχει την καλντέρα, την εικονική αρχιτεκτονικά, τα διεθνή πολυτελή ξενοδοχεία και τα πλήθη που έρχονται με όλα αυτά — ειδικά τον Ιούλιο και Αύγουστο. Η Ίος έχει καλύτερες παραλίες, πιο αυθεντικό κυκλαδίτικο χαρακτήρα χωριού, драмατικά πιο χαμηλές τιμές και σημαντικά λιγότερη πίεση σε κάθε πόρο. Πολλοί ταξιδιώτες που βρίσκουν την αιχμή σεζόν της Σαντορίνης υπερβολική βάζουν τη βάση τους στην Ίο αντί και κάνουν τη Σαντορίνη ημερήσια εκδρομή — φτάνοντας νωρίς, μένοντας για τη σούσα, γυρίζοντας το βράδυ. Αυτός είναι ένας από τους πιο πρακτικούς συνδυασμούς στις νότιες Κυκλάδες." }
+          title: { en: "Was Pythagoras really born on Samos?", el: "Ο Πυθαγόρας γεννήθηκε πραγματικά στη Σάμο;" },
+          text: {
+            en: "Yes — this is one of the most reliably attested biographical facts of the ancient world. Pythagoras was born on Samos around 570 BC and is universally described by ancient sources as a Samian. He later emigrated to Croton in southern Italy, where he established his philosophical school. The island's connection to him is celebrated in the name of its principal ancient town (renamed Pythagoreion in 1955), in the statue on the waterfront, and in the annual cultural festival held in his honour. Epicurus — the philosopher of pleasure and tranquillity — was also born on Samos around 341 BC, making the island one of the most philosophically significant birthplaces in the ancient world.",
+            el: "Ναι — αυτό είναι ένα από τα πιο αξιόπιστα βιογραφικά γεγονότα του αρχαίου κόσμου. Ο Πυθαγόρας γεννήθηκε στη Σάμο γύρω στο 570 π.Χ. και περιγράφεται καθολικά από αρχαίες πηγές ως Σάμιος. Αργότερα μετανάστευσε στο Κρότωνα στη νότια Ιταλία, όπου ίδρυσε το φιλοσοφικό του σχολείο. Η σύνδεση του νησιού μαζί του εορτάζεται στο όνομα της κύριας αρχαίας του πόλης (που μετονομάστηκε Πυθαγόρειο το 1955), στο άγαλμα στην παραλία και στο ετήσιο πολιτιστικό φεστιβάλ που διοργανώνεται προς τιμήν του. Ο Επίκουρος — ο φιλόσοφος της ευχαρίστησης και της ηρεμίας — γεννήθηκε επίσης στη Σάμο γύρω στο 341 π.Χ., κάνοντας το νησί ένα από τα πιο φιλοσοφικά σημαντικά μέρη γέννησης στον αρχαίο κόσμο.",
+          },
         },
         {
-          title: { en: "Is Homer really buried on Ios?", el: "Ο Όμηρος είναι πραγματικά θαμμένος στην Ίο;" },
-          text: { en: "The tradition is ancient — Thucydides, Pliny, Pindar and other ancient sources all record the belief that Homer died on Ios and is buried on its northern tip. Modern archaeology cannot confirm or deny this. The site on the northern ridge contains a reconstructed stone enclosure that has been venerated since antiquity and which is referenced in ancient inscriptions found on the island. Whether or not the tomb is genuinely Homer's, the site is extraordinary in its setting and its symbolic resonance — and the Archaeological Museum in the Chora provides the full context of the tradition and the evidence.", el: "Η παράδοση είναι αρχαία — Θουκυδίδης, Πλίνιος, Πίνδαρος και άλλες αρχαίες πηγές καταγράφουν την πίστη ότι ο Όμηρος πέθανε στην Ίο και είναι θαμμένος στο βόρειο άκρο της. Η σύγχρονη αρχαιολογία δεν μπορεί να επιβεβαιώσει ή να αρνηθεί αυτό. Ο χώρος στη βόρεια ράχη περιέχει ένα ανακατασκευασμένο περίβλητα πέτρινο που λατρεύεται από την αρχαιότητα και αναφέρεται σε αρχαίες επιγραφές που βρέθηκαν στο νησί. Αν ο τάφος είναι πραγματικά του Ομήρου, ο χώρος είναι εξαιρετικός στο περιβάλλον του και τη συμβολική του αντίληψη — και το Αρχαιολογικό Μουσείο στο Χωριό παρέχει πλήρη πλαίσιο της παράδοσης και των στοιχείων." }
+          title: { en: "Can I do a day trip to Ephesus from Samos?", el: "Μπορώ να κάνω ημερήσια εκδρομή στην Έφεσο από τη Σάμο;" },
+          text: {
+            en: "Yes — and it is one of the most rewarding day trips available from any Greek island. Seasonal ferry services from Vathi and Pythagoreion to Kuşadası on the Turkish coast operate from April through October (schedules vary by year — confirm at the port on arrival). From Kuşadası, Ephesus is approximately 20 kilometres by taxi or organised shuttle. The site — one of the best-preserved ancient cities in the world, with a population at its height of over 200,000 — can be seen in half a day, leaving time to explore Kuşadası before the return ferry. A valid passport is required; check current Turkish visa requirements for your nationality.",
+            el: "Ναι — και είναι μία από τις πιο ανταμειβόμενες ημερήσιες εκδρομές που διατίθενται από οποιοδήποτε ελληνικό νησί. Εποχιακές υπηρεσίες πλοίου από Βαθύ και Πυθαγόρειο στο Κουσαντασί στην τουρκική ακτή λειτουργούν από Απρίλιο μέχρι Οκτώβριο (τα χρονοδιαγράμματα αλλάζουν ανά χρόνο — επιβεβαίωσε στο λιμάνι κατά την άφιξη). Από το Κουσαντασί, η Έφεσος απέχει περίπου 20 χιλιόμετρα με ταξί ή οργανωμένο shuttle. Ο χώρος — μία από τις καλύτερα διατηρημένες αρχαίες πόλεις στον κόσμο, με πληθυσμό στο απόγευμά του άνω από 200.000 — μπορεί να δει σε μισή μέρα, αφήνοντας χρόνο να εξερευνήσεις το Κουσαντασί πριν το επιστροφικό πλοίο. Απαιτείται έγκυρο διαβατήριο — δες τις τρέχουσες τουρκικές απαιτήσεις βίζας για την εθνικότητά σου.",
+          },
         },
         {
-          title: { en: "What is the best way to get to Manganari beach?", el: "Ποιος είναι ο καλύτερος τρόπος να φτάσεις στην παραλία Μαγκαναρί;" },
-          text: { en: "The daily caïque from the port is by far the best option. It departs in the morning and returns in the late afternoon, and the journey by sea along the west and south coast of Ios is scenic and enjoyable in its own right. The alternative — a long dirt road from the Chora — requires a robust vehicle (many hire companies exclude the Manganari track in their terms and conditions) and takes about 40 minutes each way. Several rental ATVs have been damaged on this track. Take the boat.", el: "Το ημερήσιο καΐκι από το λιμάνι είναι μακράν η καλύτερη επιλογή. Φεύγει το πρωί και γυρίζει το απόγευμα, και το ταξίδι με θάλασσα κατά μήκος της δυτικής και νότιας ακτής της Ίου είναι θεαματικό και ευχάριστο από μόνο του. Η εναλλακτική — ένας μακρύς χωμάτινος δρόμος από το Χωριό — απαιτεί ανθεκτικό όχημα (πολλές εταιρείες ενοικίασης αποκλείουν τον δρόμο Μαγκαναρί στους όρους τους) και παίρνει περίπου 40 λεπτά ανά δρόμο. Αρκετά ATV ενοικίασης έχουν πάθει ζημιά σε αυτόν τον δρόμο. Πάρε το πλοίο." }
+          title: { en: "What makes Samos wine special?", el: "Τι κάνει το κρασί Σάμου ξεχωριστό;" },
+          text: {
+            en: "Samos Muscat is a PDO wine produced exclusively from the Muscat Blanc à Petits Grains grape grown on the island's terraced hillsides — a variety cultivated here for at least three thousand years. The island's combination of volcanic soil, maritime climate and elevation creates conditions that concentrate the grape's aromatics in a way that is specific to Samos and has been recognised in France since the 18th century. The Samos Wine Cooperative, established in 1934, produces several distinct styles including the Vin Doux Naturel (the most exported), the Anthemis (oak-aged, more complex) and the rare Nectar (from sun-dried grapes, extraordinarily concentrated). All are available for tasting and purchase at the cooperative's winery in Malagari, near Vathi.",
+            el: "Ο Μοσχάτος Σάμου είναι ένα κρασί ΠΟΠ που παράγεται αποκλειστικά από τη σταφυλιά Muscat Blanc à Petits Grains που καλλιεργείται στις βαθμωτές πλαγιές του νησιού — μια ποικιλία που καλλιεργείται εδώ τουλάχιστον τρεις χιλιάδες χρόνια. Ο συνδυασμός ηφαιστειακού εδάφους, θαλάσσιου κλίματος και υψομέτρου του νησιού δημιουργεί συνθήκες που συγκεντρώνουν τα αρωματικά στοιχεία της σταφυλιάς με τρόπο που είναι ξεχωριστός για τη Σάμο και αναγνωρίζεται στη Γαλλία από τον 18ο αιώνα. Η Κοινοτική Οινοποιία Σάμου, που ιδρύθηκε το 1934, παράγει αρκετά διαφορετικά στυλ συμπεριλαμβανομένου το Vin Doux Naturel (το πιο εξαγόμενο), το Anthemis (ωριμασμένο σε βαρέλια, πιο πολύπλοκο) και το σπάνιο Nectar (από σταφύλια που έχουν στεγνώσει στον ήλιο, εξαιρετικά συγκεντρωμένο). Όλα είναι διαθέσιμα για γευσιγνωσία και αγορά στο οινοποιείο της κοινότητας στο Μαλαγαρί, κοντά στη Βαθύ.",
+          },
         },
         {
-          title: { en: "When is the best time to visit Ios for beaches without crowds?", el: "Πότε είναι η καλύτερη εποχή να επισκεφθείς την Ίο για παραλίες χωρίς πλήθος;" },
-          text: { en: "June and September are the ideal months. The sea is fully swimmable (from late May at Mylopotas, which is south-facing and warms early), the beaches are active without being congested, and the island has atmosphere without the August intensity. September in particular — from the 10th onward — sees Mylopotas significantly emptier while remaining warm, and Manganari effectively deserted. The water in September is at its warmest of the year.", el: "Ο Ιούνιος και ο Σεπτέμβριος είναι οι ιδανικοί μήνες. Η θάλασσα είναι πλήρως κολύψιμη (από τέλος Μαΐου στον Μυλοποτά, που κοιτά νότιο και ζεσταίνει νωρίς), οι παραλίες είναι ενεργές χωρίς να είναι γεμάτες, και το νησί έχει ατμόσφαιρα χωρίς την αιχμή Αυγούστου. Ο Σεπτέμβριος ιδιαίτερα — από τις 10 και μετά — βλέπει τον Μυλοποτά σημαντικά πιο άδειο παραμένοντας ζεστός, και τη Μαγκαναρί ουσιαστικά εγκαταλελειμμένη. Το νερό τον Σεπτέμβριο είναι στο πιο ζεστό του χρόνου." }
+          title: { en: "How does Samos compare to Chios and Lesbos?", el: "Πώς συγκρίνεται η Σάμος με τη Χίο και τη Λέσβο;" },
+          text: {
+            en: "All three are large, historically layered North Aegean islands with year-round populations, strong local food cultures and more complexity than most of the Cyclades. Samos is the most compact and the easiest to explore fully; it has the strongest ancient heritage (Heraion, Efpalinos Tunnel) and the best wine culture. Chios is more architecturally distinctive (the mastic villages of the south are unlike anything in Greece) and has a more developed urban culture in its capital. Lesbos is the largest of the three, with the most varied landscape and the strongest tradition of local art and literature. All three reward extended stays and are generally less crowded than comparable Cycladic islands.",
+            el: "Και τα τρία είναι μεγάλα, ιστορικά στρωματοποιημένα νησιά Βορείου Αιγαίου με πληθυσμούς όλο τον χρόνο, δυνατές τοπικές γαστρονομικές κουλτούρες και περισσότερη πολυπλοκότητα από τις περισσότερες Κυκλάδες. Η Σάμος είναι η πιο συμπαγής και ευκολότερη για πλήρη εξερεύνηση· έχει τη πιο ισχυρή αρχαία κληρονομιά (Ηραίον, Τούνελο Ευπαλίνου) και την καλύτερη οινοποιική κουλτούρα. Η Χίος είναι πιο αρχιτεκτονικά ξεχωριστή (τα χωριά μαστίχας στο νότιο δεν μοιάζουν με τίποτα στην Ελλάδα) και έχει πιο ανεπτυγμένη αστική κουλτούρα στην πρωτεύουσά της. Η Λέσβος είναι η μεγαλύτερη από τις τρεις, με το πιο ποικίλο τοπίο και την πιο δυνατή παράδοση τοπικής τέχνης και γραμματείας. Και τα τρία ανταμείβουν τις επεκτεταμένες διαμονές και είναι γενικά λιγότερο πολυσύχναστα από συγκρίσιμα κυκλαδίτικα νησιά.",
+          },
         },
         {
-          title: { en: "Can I visit Santorini as a day trip from Ios?", el: "Μπορώ να επισκεφθώ τη Σαντορίνη ως ημερήσια εκδρομή από την Ίο;" },
-          text: { en: "Yes — and many experienced Cyclades travellers recommend this as the best way to experience Santorini. The high-speed ferry takes approximately 40 minutes. Leaving Ios in the morning, spending the day in Oia and Fira, watching the sunset from the caldera edge and returning on the evening ferry gives you Santorini's most iconic experience without paying Santorini accommodation prices. It also means you avoid waking up to Santorini's August crowds and can retreat each evening to the considerably more relaxed atmosphere of Ios.", el: "Ναι — και πολλοί έμπειροι ταξιδιώτες Κυκλάδων συνιστούν αυτό ως τον καλύτερο τρόπο να βιώσεις τη Σαντορίνη. Το γρήγορο πλοίο παίρνει περίπου 40 λεπτά. Φεύγοντας την Ίο το πρωί, περνώντας τη μέρα στην Οία και τη Φηρά, παρακολουθώντας τη σούσα από την άκρη της καλντέρας και γυρίζοντας με το βραδινό πλοίο σου δίνει τη πιο εικονική εμπειρία της Σαντορίνης χωρίς να πληρώσεις τιμές καταλύματος Σαντορίνης. Σημαίνει επίσης ότι αποφεύγεις να ξυπνήσεις στα πλήθη Αυγούστου της Σαντορίνης και μπορείς να υποχωρήσεις κάθε βράδυ στη πολύ πιο χαλαρή ατμόσφαιρα της Ίου." }
+          title: { en: "Is Samos good for walking and hiking?", el: "Η Σάμος είναι καλή για πεζοπορία;" },
+          text: {
+            en: "Samos is one of the finest hiking islands in the Aegean. The network of marked trails covers both the coastal forest paths (Kokkari to Vourliotis, the Seïtani coastal path, the Potami gorge) and the mountain interior (the Ampelos summit, the Mount Kerkis ascent). The forest cover — unusually dense by Aegean standards — makes walking possible even in July and August in the mornings. The best walking months are April, May, September and October. Trail maps are available from the tourism office in Vathi and downloadable from the municipal website; GPS tracks are available on platforms like Wikiloc and AllTrails for the main routes.",
+            el: "Η Σάμος είναι ένα από τα πιο λεπτά νησιά πεζοπορίας στο Αιγαίο. Το δίκτυο σημασμένων μονοπατιών καλύπτει τόσο τα παραλιακά δασικά μονοπάτια (Κοκκαρί προς Βουρλιώτης, το παραλιακό μονοπάτι Σεϊτάνι, το φαράγγι Ποταμί) όσο και το ορεινό εσωτερικό (η κορυφή Άμπελος, η ανάβαση στον Κέρκη). Η δασική κάλυψη — ασυνήθιστα πυκνή για τα πρότυπα Αιγαίου — κάνει την πεζοπορία δυνατή ακόμα και τον Ιούλιο και τον Αύγουστο το πρωί. Οι καλύτεροι μήνες πεζοπορίας είναι ο Απρίλιος, ο Μάιος, ο Σεπτέμβριος και ο Οκτώβριος. Χάρτες μονοπατιών υπάρχουν στο γραφείο τουρισμού στη Βαθύ και μπορούν να κατεβαστούν από τον δικτυακό τόπο του δήμου· GPS tracks είναι διαθέσιμα σε πλατφόρμες όπως Wikiloc και AllTrails για τις κύριες διαδρομές.",
+          },
         },
         {
-          title: { en: "Is Ios good in September and October?", el: "Η Ίος είναι καλή τον Σεπτέμβριο και Οκτώβριο;" },
-          text: { en: "September is arguably the finest month on Ios. The sea is at its warmest, the beaches are at their quietest since May, the Chora is peaceful and beautiful in the evenings without the high-season energy, and the restaurants are operating at their best. October is quieter still — some beach facilities and bars close, but the core of the island remains open and the autumn light on the Chora's whitewashed architecture is exceptional. For travellers who want Ios's beauty without its summer intensity, September is the month.", el: "Ο Σεπτέμβριος είναι ενδεχομένως ο καλύτερος μήνας στην Ίο. Η θάλασσα είναι στο πιο ζεστό, οι παραλίες είναι στο πιο ήσυχο από τον Μάιο, το Χωριό είναι ήσυχο και όμορφο τις βραδιές χωρίς την ενέργεια της αιχμής σεζόν, και τα εστιατόρια λειτουργούν στο καλύτερό τους. Ο Οκτώβριος είναι ακόμα πιο ήσυχος — κάποιες παραλιακές εγκαταστάσεις και μπαρ κλείνουν, αλλά ο πυρήνας του νησιού παραμένει ανοιχτός και το φως του φθινοπώρου στην λευκή αρχιτεκτονικά του Χωριού είναι εξαιρετικό. Για ταξιδιώτες που θέλουν την ομορφιά της Ίου χωρίς την καλοκαιρινή της ένταση, ο Σεπτέμβριος είναι ο μήνας." }
-        }
-      ]
+          title: { en: "Is Samos a good choice for island hopping?", el: "Η Σάμος είναι καλή επιλογή για island hopping;" },
+          text: {
+            en: "Yes — and particularly for island hoppers who want variety rather than more of the same. From Samos, Ikaria is an easy connection (wild, anti-tourist, Blue Zone longevity island — one of the most distinctive islands in Greece), Chios is reachable (mastic villages, medieval architecture), Mykonos and the northern Cyclades are accessible in summer, and Patmos and the northern Dodecanese are within reach. The combination of Samos and Ikaria is one of the most rewarding two-island combinations in the Aegean — dramatically different in character, each complementing the other perfectly.",
+            el: "Ναι — και ειδικά για island hoppers που θέλουν ποικιλία αντί για περισσότερο από το ίδιο. Από τη Σάμο, η Ικαρία είναι εύκολη σύνδεση (άγριο, αντιτουριστικό νησί Μπλε Ζώνης μακροζωίας — ένα από τα πιο ξεχωριστά νησιά της Ελλάδας), η Χίος είναι προσβάσιμη (χωριά μαστίχας, μεσαιωνική αρχιτεκτονική), η Μύκονος και οι βόρειες Κυκλάδες είναι προσβάσιμες το καλοκαίρι, και η Πάτμος και τα βόρεια Δωδεκάνησα είναι εφικτά. Ο συνδυασμός Σάμου και Ικαρίας είναι ένας από τους πιο ανταμειβόμενους δύο-νησιών συνδυασμούς στο Αιγαίο — δραματικά διαφορετικοί σε χαρακτήρα, κάθε ένας συμπληρώνοντας τον άλλο τέλεια.",
+          },
+        },
+      ],
     }
   ],
 };

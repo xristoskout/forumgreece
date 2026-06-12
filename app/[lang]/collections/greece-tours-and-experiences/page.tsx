@@ -162,7 +162,7 @@ export default async function GreeceToursAndExperiencesCollectionPage({
               className="overflow-hidden rounded-xl border border-slate-200 bg-white backdrop-blur-md shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
             >
               <div className="relative h-52">
-                <Image src={item.image} alt={item.title[lang]} fill className="object-cover" />
+                <Image src={item.image} alt={item.title[lang]} fill sizes="(max-width: 768px) 100vw, 400px" className="object-cover" />
               </div>
 
               <div className="p-6">

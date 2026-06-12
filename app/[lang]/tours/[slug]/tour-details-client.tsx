@@ -54,6 +54,7 @@ export default function TourDetailsClient({
             src={tour.image}
             alt={tour.title[lang]}
             fill
+            sizes="100vw"
             className="object-cover"
             priority
           />

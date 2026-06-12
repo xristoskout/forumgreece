@@ -55,6 +55,7 @@ const STAY22_EMBEDS: Record<string, string> = {
   skopelos: "https://stay22.com/embed/6a251735df1132ff500060b2",
   hydra: "https://stay22.com/embed/6a2591e96f8247fde4799453",
   ios: "https://stay22.com/embed/6a2acceb6f8247fde48c37d6",
+  samos: "https://stay22.com/embed/6a2bf22526ba558fae3d17e5",
 };
 
 const HOTEL_NAMES: Record<string, string[]> = {
@@ -96,6 +97,7 @@ const HOTEL_NAMES: Record<string, string[]> = {
   skopelos: ["Adrina Beach Hotel", "Elli Hotel", "Villea Seaview Apartments", "Panormos Village Hotel", "Panormos Bay apartments & studios", "Stafylos Suites & Boutique Hotel", "Irida Apartments", "Natura Luxury Boutique Hotel", "Hillside villas near Milia"],
   hydra: ["Hydrea Hotel", "Bratsera Hotel", "Hotel Orloff", "Hotel Sophia", "Hydroussa Hotel", "Delfini Hotel", "Mandraki Beach Resort"],
   ios: ["Ios Grand", "Liostasi", "The Windmill", "Hotel Faros", "Arhontiko", "Ios Club", "Koula Village"],
+  samos: ["Blue Island", "Hotel Vathy", "Anthemis", "Kokkari Beach", "Samos Sun"],
 };
 
 function getStay22Url(slug: string): string {

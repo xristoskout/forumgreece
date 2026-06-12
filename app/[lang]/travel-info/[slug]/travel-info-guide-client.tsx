@@ -188,6 +188,7 @@ export default function TravelInfoGuideClient({ lang, slug, item }: TravelInfoGu
             src={item.image}
             alt={item.title[lang]}
             fill
+            sizes="100vw"
             className="object-cover"
             priority
           />

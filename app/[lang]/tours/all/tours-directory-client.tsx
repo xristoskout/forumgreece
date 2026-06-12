@@ -63,6 +63,7 @@ export default function ToursDirectoryClient({ lang, tours }: Props) {
             src="/images/hero/greece-main.webp"
             alt="Tours in Greece"
             fill
+            sizes="100vw"
             priority
             className="object-cover object-center brightness-[0.75]"
           />

@@ -17,6 +17,7 @@ export default function BusinessCard({ name, category, imageUrl, description }: 
           src={imageUrl} 
           alt={name} 
           fill 
+          sizes="(max-width: 768px) 100vw, 400px"
           className="object-cover group-hover:scale-105 transition-transform duration-500" 
         />
         <div className="absolute top-4 left-4 bg-black/50 backdrop-blur-sm text-xs font-medium px-3 py-1 rounded-full text-slate-900 border border-slate-300 shadow-lg">

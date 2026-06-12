@@ -368,49 +368,7 @@ export default function DestinationDetailsClient({
               </p>
             </article>
 
-            {sections.map((section, idx) => {
-              const isHonestAdvice = section.title.en.toLowerCase().includes("honest advice") || section.title.en.toLowerCase().includes("what to skip") || section.title.el.includes("Ειλικρινής Συμβουλή") || section.title.el.includes("Τι να Αποφύγεις");
-
-              if (isHonestAdvice && section.text) {
-                const text = section.text[lang];
-                const lines = text.split('\n').filter(l => l.trim());
-                const items: string[] = [];
-                let insight = '';
-                for (const line of lines) {
-                  const trimmed = line.trim();
-                  if (trimmed.startsWith('✕')) {
-                    items.push(trimmed.replace(/^✕\s*\*\*[^*]+\*\*\s*—\s*/, '').trim());
-                  } else if (trimmed.startsWith('💡')) {
-                    insight = trimmed.replace(/^💡\s*/, '').trim();
-                  }
-                }
-
-                return (
-                  <Fragment key={idx}>
-                    <article className="rounded-[28px] border border-slate-200 bg-gradient-to-br from-red-50 to-white p-8 shadow-sm">
-                      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-red-700">
-                        {section.title[lang]}
-                      </p>
-                      <div className="mt-5 grid gap-3">
-                        {items.map((item, i) => (
-                          <div key={i} className="rounded-2xl border border-red-100 bg-white px-4 py-3 text-sm font-medium text-slate-600">
-                            <span className="text-red-500 mr-1.5">✕</span>{item}
-                          </div>
-                        ))}
-                      </div>
-                      {insight && (
-                        <div className="mt-5 rounded-2xl bg-amber-50 border border-amber-200 p-4">
-                          <p className="text-xs font-medium leading-relaxed text-amber-800">
-                            💡 {insight}
-                          </p>
-                        </div>
-                      )}
-                    </article>
-                  </Fragment>
-                );
-              }
-
-              return (
+            {sections.filter(s => !(s.title.en.toLowerCase().includes("honest advice") || s.title.en.toLowerCase().includes("what to skip") || s.title.el.includes("Ειλικρινής Συμβουλή") || s.title.el.includes("Τι να Αποφύγεις"))).map((section, idx) => (
                 <Fragment key={idx}>
                   <article className="rounded-[28px] border border-slate-200 bg-white backdrop-blur-md p-8 shadow-sm">
                     <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700">
@@ -474,12 +432,89 @@ export default function DestinationDetailsClient({
                       </div>
                     )}
                   </article>
+
+                  {section.banner && (
+                    <div className="mt-6 overflow-hidden rounded-[28px]">
+                      {section.banner.href ? (
+                        <Link href={withLang(section.banner.href)} className="block group relative">
+                          <Image
+                            src={section.banner.image}
+                            alt={section.banner.alt[lang]}
+                            width={1200}
+                            height={630}
+                            className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+                            sizes="(max-width: 768px) 100vw, 1200px"
+                          />
+                          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-6">
+                            {section.banner.description && (
+                              <p className="text-white/90 text-sm leading-relaxed mb-2">{section.banner.description[lang]}</p>
+                            )}
+                            {section.banner.hrefLabel && (
+                              <span className="text-white font-semibold text-lg">{section.banner.hrefLabel[lang]}</span>
+                            )}
+                          </div>
+                        </Link>
+                      ) : (
+                        <div className="relative">
+                          <Image
+                            src={section.banner.image}
+                            alt={section.banner.alt[lang]}
+                            width={1200}
+                            height={630}
+                            className="w-full h-auto object-cover"
+                            sizes="(max-width: 768px) 100vw, 1200px"
+                          />
+                          {section.banner.description && (
+                            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-6">
+                              <p className="text-white/90 text-sm leading-relaxed">{section.banner.description[lang]}</p>
+                            </div>
+                          )}
+                        </div>
+                      )}
+                    </div>
+                  )}
                 </Fragment>
-              );
-            })}
+              ))}
           </div>
 
           <aside className="space-y-6">
+            {sections.filter(s => s.title.en.toLowerCase().includes("honest advice") || s.title.en.toLowerCase().includes("what to skip") || s.title.el.includes("Ειλικρινής Συμβουλή") || s.title.el.includes("Τι να Αποφύγεις")).map((section, idx) => {
+              const text = section.text?.[lang] || '';
+              const lines = text.split('\n').filter(l => l.trim());
+              const items: string[] = [];
+              let insight = '';
+              for (const line of lines) {
+                const trimmed = line.trim();
+                if (trimmed.startsWith('✕')) {
+                  items.push(trimmed.replace(/^✕\s*\*\*[^*]+\*\*\s*—\s*/, '').trim());
+                } else if (trimmed.startsWith('💡')) {
+                  insight = trimmed.replace(/^💡\s*/, '').trim();
+                }
+              }
+
+              return (
+                <article key={idx} className="rounded-[28px] border border-slate-200 bg-gradient-to-br from-red-50 to-white p-8 shadow-sm">
+                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-red-700">
+                    {section.title[lang]}
+                  </p>
+                  <div className="mt-5 grid gap-3">
+                    {items.map((item, i) => (
+                      <div key={i} className="rounded-2xl border border-red-100 bg-white px-4 py-3 text-sm font-medium text-slate-600">
+                        <span className="text-red-500 mr-1.5">✕</span>{item}
+                      </div>
+                    ))}
+                  </div>
+                  {insight && (
+                    <div className="mt-5 rounded-2xl bg-amber-50 border border-amber-200 p-4">
+                      <p className="text-xs font-medium leading-relaxed text-amber-800">
+                        💡 {insight}
+                      </p>
+                    </div>
+                  )}
+                </article>
+              );
+            })}
+
             {/* 100% Dynamic Compare Widget */}
             {renderCompareWidget()}
 

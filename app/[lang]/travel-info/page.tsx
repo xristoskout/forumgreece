@@ -261,6 +261,7 @@ export default function TravelInfoHubPage() {
             src="/images/greece-islands-map-guide.webp" 
             alt="Greece Islands Map" 
             fill 
+            sizes="100vw"
             className="object-cover opacity-40 transition-transform duration-700 group-hover:scale-105"
             priority
           />
@@ -342,6 +343,7 @@ export default function TravelInfoHubPage() {
                     src={item.image}
                     alt={item.title[lang]}
                     fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover"
                   />
                 </div>

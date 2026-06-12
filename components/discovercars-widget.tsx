@@ -1,5 +1,7 @@
 "use client";
 
+import { useState, useEffect } from "react";
+
 type DiscoverCarsWidgetProps = {
   location?: string;
   lang?: string;
@@ -10,47 +12,43 @@ type DiscoverCarsWidgetProps = {
 const WIDGET_SCRIPT = "https://www.discovercars.com/widget.js?v1";
 const AFFILIATE_URL = "https://www.discovercars.com/?a_aid=xristoskout";
 
-/**
- * DiscoverCarsWidget — srcDoc iframe approach
- *
- * The DiscoverCars widget script uses eval() internally which gets blocked
- * by our CSP. Wrapping it in a srcDoc iframe isolates the CSP so the
- * parent page's policy doesn't apply inside the iframe.
- */
 export default function DiscoverCarsWidget({
   location = "greece",
   lang = "en",
   className = "",
   height = 400,
 }: DiscoverCarsWidgetProps) {
-  const dataAttrs = [
-    `data-dev-env="com"`,
-    `data-location="${location}"`,
-    `data-lang="${lang}"`,
-    `data-currency="eur"`,
-    `data-utm-source="${AFFILIATE_URL}"`,
-    `data-utm-medium="widget"`,
-    `data-aff-code="a_aid"`,
-    `data-autocomplete="on"`,
-    `data-style-submit-bg-color="#007ac2"`,
-    `data-style-submit-font-color="#ffffff"`,
-    `data-style-form-bg-color="#fcd34d"`,
-    `data-style-form-font-color="#000000"`,
-    `data-style-submit-text="${lang === "el" ? "Αναζήτηση" : "Search now"}"`,
-    `data-style-title-color="#000000"`,
-    `data-title-text="${lang === "el" ? "Σύγκρινε ενοικιάσεις αυτοκινήτου και εξοικονόμησε έως 70%!" : "Search and compare car rentals and save up to 70%!"}"`,
-    `data-style_rounded_corners="on"`,
-    `data-localization_currency_box="on"`,
-    `data-layout_benefits="on"`,
-    `data-layout_description="on"`,
-    `data-layout_description_text="${lang === "el" ? "Έχουμε επιλέξει τις καλύτερες προσφορές από τους εταίρους μας." : "We've selected the best deals from our car rental partners."}"`,
-    `data-layout_logo_style="on dark"`,
-    `data-layout_powered_by="on"`,
-    `data-layout_style_form_bg_color="#007ac2"`,
-    `data-layout_title="on"`,
-  ].join(" ");
+  const [srcDoc, setSrcDoc] = useState("");
 
-  const srcDoc = `<!DOCTYPE html>
+  useEffect(() => {
+    const dataAttrs = [
+      `data-dev-env="com"`,
+      `data-location="${location}"`,
+      `data-lang="${lang}"`,
+      `data-currency="eur"`,
+      `data-utm-source="${AFFILIATE_URL}"`,
+      `data-utm-medium="widget"`,
+      `data-aff-code="a_aid"`,
+      `data-autocomplete="on"`,
+      `data-style-submit-bg-color="#007ac2"`,
+      `data-style-submit-font-color="#ffffff"`,
+      `data-style-form-bg-color="#fcd34d"`,
+      `data-style-form-font-color="#000000"`,
+      `data-style-submit-text="${lang === "el" ? "Αναζήτηση" : "Search now"}"`,
+      `data-style-title-color="#000000"`,
+      `data-title-text="${lang === "el" ? "Σύγκρινε ενοικιάσεις αυτοκινήτου και εξοικονόμησε έως 70%!" : "Search and compare car rentals and save up to 70%!"}"`,
+      `data-style_rounded_corners="on"`,
+      `data-localization_currency_box="on"`,
+      `data-layout_benefits="on"`,
+      `data-layout_description="on"`,
+      `data-layout_description_text="${lang === "el" ? "Έχουμε επιλέξει τις καλύτερες προσφορές από τους εταίρους μας." : "We've selected the best deals from our car rental partners."}"`,
+      `data-layout_logo_style="on dark"`,
+      `data-layout_powered_by="on"`,
+      `data-layout_style_form_bg_color="#007ac2"`,
+      `data-layout_title="on"`,
+    ].join(" ");
+
+    setSrcDoc(`<!DOCTYPE html>
 <html lang="${lang}">
 <head>
   <meta charset="utf-8" />
@@ -65,17 +63,20 @@ export default function DiscoverCarsWidget({
   <div id="dchwidget" ${dataAttrs}></div>
   <script src="${WIDGET_SCRIPT}?v=${Date.now()}"><\/script>
 </body>
-</html>`;
+</html>`);
+  }, [location, lang]);
 
   return (
     <div className={className} style={{ width: "100%" }}>
-      <iframe
-        srcDoc={srcDoc}
-        style={{ width: "100%", height: `${height}px`, border: "none" }}
-        title={`DiscoverCars — ${location}`}
-        loading="lazy"
-        allow="popups popups-to-escape-sandbox"
-      />
+      {srcDoc && (
+        <iframe
+          srcDoc={srcDoc}
+          style={{ width: "100%", height: `${height}px`, border: "none" }}
+          title={`DiscoverCars — ${location}`}
+          loading="lazy"
+          allow="popups popups-to-escape-sandbox"
+        />
+      )}
     </div>
   );
 }

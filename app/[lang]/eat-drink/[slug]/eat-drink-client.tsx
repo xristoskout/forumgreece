@@ -115,6 +115,7 @@ export default function EatDrinkClient({ item, lang, businesses }: EatDrinkClien
               src={item.image}
               alt={item.title[lang]}
               fill
+              sizes="100vw"
               className="object-cover"
               priority
             />
@@ -176,6 +177,7 @@ export default function EatDrinkClient({ item, lang, businesses }: EatDrinkClien
                         src={business.image}
                         alt={business.name}
                         fill
+                        sizes="(max-width: 768px) 100vw, 400px"
                         className="object-cover transition-transform duration-700 group-hover:scale-110"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent" />

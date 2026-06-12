@@ -492,6 +492,7 @@ export default function GreeceIslandsMapGuidePage() {
             src="/images/greece-islands-map-guide.webp"
             alt="Greece islands map guide background"
             fill
+            sizes="100vw"
             className="object-cover"
             priority
           />

@@ -127,7 +127,7 @@ export default async function BlogIndexPage({ params }: Props) {
               className="flex flex-col h-full overflow-hidden rounded-xl border border-slate-200 bg-white backdrop-blur-md shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
             >
               <div className="relative h-52 shrink-0">
-                <Image src={post.image} alt={post.title[lang]} fill className="object-cover" />
+                <Image src={post.image} alt={post.title[lang]} fill sizes="(max-width: 768px) 100vw, 400px" className="object-cover" />
                 <span className="absolute top-3 left-3 rounded-md bg-indigo-600 px-3 py-1 text-xs font-semibold text-white">
                   {post.category[lang]}
                 </span>
@@ -173,7 +173,7 @@ export default async function BlogIndexPage({ params }: Props) {
               className="flex flex-col h-full overflow-hidden rounded-xl border border-slate-200 bg-white backdrop-blur-md shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
             >
               <div className="relative h-44 shrink-0">
-                <Image src={post.image} alt={post.title[lang]} fill className="object-cover" />
+                <Image src={post.image} alt={post.title[lang]} fill sizes="(max-width: 768px) 100vw, 400px" className="object-cover" />
                 <span className="absolute top-3 left-3 rounded-md bg-indigo-600 px-3 py-1 text-xs font-semibold text-white">
                   {post.category[lang]}
                 </span>

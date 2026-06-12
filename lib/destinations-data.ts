@@ -1249,6 +1249,49 @@ export const destinations: Destination[] = [
     }
   },
   {
+    slug: "samos",
+    name: "Samos",
+    region: { en: "North Aegean", el: "Βόρειο Αιγαίο" },
+    blurb: {
+      en: "Birthplace of Pythagoras, ancient Heraion, exceptional Muscat wine, lush mountain villages and beaches that face Turkey across a channel just two kilometres wide.",
+      el: "Πατρίδα του Πυθαγόρα, αρχαίος Ηραίον, εξαιρετικός Μοσχάτο, ορεινά χωριά και παραλίες με θέα στην Τουρκία σε απόσταση δύο χιλιομέτρων."
+    },
+    image: "/images/samos-cover.webp",
+    overview: {
+      en: "Samos is not the most famous island in the Aegean — it is simply one of the best. Positioned at the far eastern edge of the Greek island world, separated from the Turkish coast near Kuşadası by a strait only 1.6 kilometres wide at its narrowest point, it occupies a geographic and cultural position unlike any other Greek island: simultaneously facing west toward the Cyclades and east toward the ancient cities of Anatolia. This in-between quality — neither purely Aegean nor purely Eastern, neither purely ancient nor purely modern — gives Samos a richness and density of experience that larger, more celebrated islands rarely match.\n\nThe island is green in a way that surprises first-time visitors. Samos is heavily forested — pine, cypress and maquis cover the interior mountains, which rise to over 1,400 metres at the summit of Mount Kerkis in the southwest and Mount Ampelos in the centre. Vineyards carpet the lower slopes, producing the small, intensely aromatic Muscat grape from which Samos wine has been made for at least three thousand years.\n\nThe historical depth of Samos is staggering even by Greek standards. The island was one of the most powerful city-states in the archaic and classical Aegean — rival to Athens and Corinth at its height, home to a navy that controlled eastern Aegean trade routes, and birthplace of two of the most consequential thinkers of the ancient world. Pythagoras was born here around 570 BC; Epicurus was born here in 341 BC. The Heraion — the ancient sanctuary of Hera, patron goddess of Samos — is a UNESCO World Heritage site that was in continuous use from the Bronze Age through the Roman period.\n\nModern Samos has four distinct personalities — the elegant neoclassical capital of Vathi, the beautifully preserved fishing village of Kokkari, the wine-producing south coast around Pythagoreion and Heraion, and the remote, forested west — and they are different enough to feel like separate islands.",
+      el: "Η Σάμος δεν είναι το πιο φημισμένο νησί στο Αιγαίο — είναι απλώς ένα από τα καλύτερα. Θεωρείται ένα από τα πιο πράσινα νησιά του Αιγαίου, με πευκοδάσος, κυπαρισσοδάση και μακία να καλύπτουν το εσωτερικό. Η ιστορική του βαθύτητα είναι εντυπωσιακή — πατρίδα του Πυθαγόρα και του Επικούρου, σπίτι του αρχαίου Ηραίου, UNESCO Μνημείο Παγκόσμιας Κληρονομιάς, και παραγωγός του καλύτερου Μοσχάτου στην Ελλάδα."
+    },
+    highlights: {
+      en: ["Heraion — UNESCO World Heritage", "Birthplace of Pythagoras", "Samos Muscat wine", "Kokkari — finest village", "Efpalinos Tunnel — ancient engineering", "Mount Kerkis hike", "Beaches facing Turkey"],
+      el: ["Ηραίον — UNESCO Μνημείο Παγκόσμιας Κληρονομιάς", "Πατρίδα του Πυθαγόρα", "Μοσχάτος Σάμου", "Κοκκαρί — πιο όμορφο χωριό", "Τούνελο Ευπαλίνου", "Πεζοπορία στον Κέρκη", "Παραλίες με θέα Τουρκία"]
+    },
+    featured: true,
+    guideLinks: [
+      {
+        href: "/hotels/samos",
+        label: { en: "Where to Stay in Samos", el: "Πού να μείνεις στη Σάμο" }
+      },
+      {
+        href: "/guides/samos/best-beaches",
+        label: { en: "Best Beaches in Samos", el: "Καλύτερες Παραλίες στη Σάμο" }
+      },
+      {
+        href: "/guides/samos/things-to-do",
+        label: { en: "Things to Do in Samos", el: "Τι να Κάνεις στη Σάμο" }
+      }
+    ],
+    seo: {
+      title: {
+        en: "Samos Travel Guide: Pythagoras, Wine, Beaches & Ancient Heraion",
+        el: "Σάμος: Οδηγός Ταξιδιού — Πυθαγόρας, Μοσχάτος, Παραλίες & Ηραίον"
+      },
+      description: {
+        en: "Complete travel guide to Samos island — birthplace of Pythagoras and Epicurus, home of the ancient Heraion sanctuary, lush mountain villages, exceptional Muscat wine and beaches that face the coast of Turkey across a channel only two kilometres wide.",
+        el: "Πλήρης ταξιδιωτικός οδηγός για τη Σάμο — πατρίδα του Πυθαγόρα και του Επικούρου, σπίτι του αρχαίου Ηραίου, ορεινά χωριά, εξαιρετικός Μοσχάτος και παραλίες με θέα στην τουρκική ακτή."
+      }
+    }
+  },
+  {
     slug: "rethymno",
     name: "Rethymno",
     region: { en: "Crete", el: "Κρήτη" },

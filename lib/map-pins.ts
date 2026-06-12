@@ -297,4 +297,11 @@ export const MAP_PINS: Pin[] = [
     label: { en: "Ios", el: "Ίος" },
     tagline: { en: "Wild beaches, Homer's Tomb & nightlife", el: "Άγριες παραλίες, Τάφος Ομήρου & νυχτερινή ζωή" },
   },
+  {
+    id: "samos",
+    x: 75.2, y: 52.9,
+    href: "/destinations/samos",
+    label: { en: "Samos", el: "Σάμος" },
+    tagline: { en: "Pythagoras, wine & ancient Heraion", el: "Πυθαγόρας, Μοσχάτος & αρχαίο Ηραίον" },
+  },
 ];
