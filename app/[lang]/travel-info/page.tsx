@@ -255,7 +255,7 @@ export default function TravelInfoHubPage() {
       </section>
 
       <section className="mx-auto max-w-7xl px-6 pt-20 -mt-16 relative z-30">
-        <article className="relative overflow-hidden rounded-[2.5rem] bg-indigo-950 text-white shadow-2xl border border-white/10 group">
+        <article className="relative overflow-hidden rounded-2xl bg-indigo-950 text-white shadow-lg border border-white/10 group">
           <div className="absolute inset-0 z-0 bg-gradient-to-r from-indigo-950 via-indigo-950/60 to-transparent" />
           <Image 
             src="/images/greece-islands-map-guide.webp" 
@@ -302,7 +302,7 @@ export default function TravelInfoHubPage() {
           {planningTopics.map((topic) => (
             <article
               key={topic.title.en}
-              className="group rounded-[2rem] border border-slate-200 bg-white/90 backdrop-blur-md p-8 shadow-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(99,102,241,0.2)]"
+              className="group rounded-2xl border border-slate-200 bg-white/90 backdrop-blur-md p-8 shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-indigo-500/10"
             >
               <div className="text-5xl mb-6 group-hover:scale-110 group-hover:rotate-6 transition-transform duration-500 drop-shadow-xl">{topic.icon}</div>
               <h3 className="mb-3 text-xl font-bold text-slate-900 group-hover:text-indigo-800 transition-colors">
@@ -336,7 +336,7 @@ export default function TravelInfoHubPage() {
             {travelInfoGuides.map((item) => (
               <article
                 key={item.slug}
-                className="group relative flex flex-col overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(99,102,241,0.2)] min-h-[400px]"
+                className="group relative flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-indigo-500/10 min-h-[400px]"
               >
                 <div className="absolute inset-0 transition-all duration-700 group-hover:scale-110 group-hover:brightness-110">
                   <Image

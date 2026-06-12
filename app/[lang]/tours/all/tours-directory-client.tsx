@@ -331,7 +331,7 @@ export default function ToursDirectoryClient({ lang, tours }: Props) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
-          className="relative overflow-hidden rounded-[3rem] bg-slate-900 p-10 md:p-16 text-center text-white shadow-2xl"
+          className="relative overflow-hidden rounded-2xl bg-slate-900 p-10 md:p-16 text-center text-white shadow-lg"
         >
           <div className="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_50%_0%,rgba(6,182,212,0.4)_0%,transparent_70%)]" />
           <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-cyan-500/20 rounded-full blur-[100px]" />
