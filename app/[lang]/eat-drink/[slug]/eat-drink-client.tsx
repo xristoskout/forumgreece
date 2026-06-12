@@ -75,6 +75,29 @@ export default function EatDrinkClient({ item, lang, businesses }: EatDrinkClien
     },
   };
 
+  const renderLink = (text: string, key: number) => {
+    const urlRegex = /(https?:\/\/[^\s]+|(?:vi\.me|bit\.ly|tinyurl\.com)\/[^\s]+)/g;
+    const parts: React.ReactNode[] = [];
+    let lastIndex = 0;
+    let match;
+    while ((match = urlRegex.exec(text)) !== null) {
+      if (match.index > lastIndex) {
+        parts.push(text.slice(lastIndex, match.index));
+      }
+      const url = match[0].startsWith('http') ? match[0] : `https://${match[0]}`;
+      parts.push(
+        <a key={`link-${key}-${match.index}`} href={url} target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline hover:text-indigo-500 transition-colors">
+          {match[0]}
+        </a>
+      );
+      lastIndex = match.index + match[0].length;
+    }
+    if (lastIndex < text.length) {
+      parts.push(text.slice(lastIndex));
+    }
+    return parts;
+  };
+
   const renderText = (text: string) => {
     if (!text) return null;
     const parts = text.split(/(\*\*.*?\*\*)/g);
@@ -82,7 +105,7 @@ export default function EatDrinkClient({ item, lang, businesses }: EatDrinkClien
       if (part.startsWith('**') && part.endsWith('**')) {
         return <strong key={index} className="text-slate-900 font-bold">{part.slice(2, -2)}</strong>;
       }
-      return <span key={index}>{part}</span>;
+      return <span key={index}>{renderLink(part, index)}</span>;
     });
   };
 
