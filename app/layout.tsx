@@ -73,22 +73,24 @@ export const metadata: Metadata = {
   },
 };
 
-type RootLayoutProps = {
-  children: React.ReactNode;
-  params: Promise<Record<string, string>>;
-};
-
-export default async function RootLayout({
+export default function RootLayout({
   children,
-  params,
-}: RootLayoutProps) {
-  const lang = (await params).lang === "el" ? "el" : "en";
-
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html
-      lang={lang}
+      lang="en"
       className={`${geistSans.variable} ${notoGreek.variable} ${playfair.variable} h-full antialiased`}
     >
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "(function(){try{if(/^\\/el(\\/|$)/.test(location.pathname)){document.documentElement.lang='el'}}catch(e){}})();",
+          }}
+        />
+      </head>
       <body className="min-h-full flex flex-col bg-[#f4f7fb] text-slate-900 relative selection:bg-purple-500/30">
         <script
           type="application/ld+json"
@@ -97,7 +99,7 @@ export default async function RootLayout({
               "@context": "https://schema.org",
               "@graph": [
                 organizationSchema(),
-                websiteSchema(lang),
+                websiteSchema("en"),
                 personSchema(),
               ],
             }).replace(/</g, "\\u003c"),
