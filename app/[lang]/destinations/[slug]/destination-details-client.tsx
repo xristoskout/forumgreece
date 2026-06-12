@@ -368,7 +368,7 @@ export default function DestinationDetailsClient({
               </p>
             </article>
 
-            {sections.filter(s => !(s.title.en.toLowerCase().includes("honest advice") || s.title.en.toLowerCase().includes("what to skip") || s.title.el.includes("Ειλικρινής Συμβουλή") || s.title.el.includes("Τι να Αποφύγεις"))).map((section, idx) => (
+            {sections.filter(s => !(s.title.en.toLowerCase().includes("honest advice") || s.title.en.toLowerCase().includes("what to skip") || s.title.en.toLowerCase().includes("what nobody tells you") || s.title.el.includes("Ειλικρινής Συμβουλή") || s.title.el.includes("Τι να Αποφύγεις") || s.title.el.includes("Τι δεν σου λέει κανείς"))).map((section, idx) => (
                 <Fragment key={idx}>
                   <article className="rounded-[28px] border border-slate-200 bg-white backdrop-blur-md p-8 shadow-sm">
                     <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700">
@@ -478,18 +478,30 @@ export default function DestinationDetailsClient({
           </div>
 
           <aside className="space-y-6">
-            {sections.filter(s => s.title.en.toLowerCase().includes("honest advice") || s.title.en.toLowerCase().includes("what to skip") || s.title.el.includes("Ειλικρινής Συμβουλή") || s.title.el.includes("Τι να Αποφύγεις")).map((section, idx) => {
-              const text = section.text?.[lang] || '';
-              const lines = text.split('\n').filter(l => l.trim());
-              const items: string[] = [];
+            {sections.filter(s => s.title.en.toLowerCase().includes("honest advice") || s.title.en.toLowerCase().includes("what to skip") || s.title.en.toLowerCase().includes("what nobody tells you") || s.title.el.includes("Ειλικρινής Συμβουλή") || s.title.el.includes("Τι να Αποφύγεις") || s.title.el.includes("Τι δεν σου λέει κανείς")).map((section, idx) => {
+              let items: string[] = [];
               let insight = '';
-              for (const line of lines) {
-                const trimmed = line.trim();
-                if (trimmed.startsWith('✕')) {
-                  items.push(trimmed.replace(/^✕\s*\*\*[^*]+\*\*\s*—\s*/, '').trim());
-                } else if (trimmed.startsWith('💡')) {
-                  insight = trimmed.replace(/^💡\s*/, '').trim();
+
+              if (section.text?.[lang]) {
+                const lines = section.text[lang].split('\n').filter(l => l.trim());
+                for (const line of lines) {
+                  const trimmed = line.trim();
+                  if (trimmed.startsWith('✕')) {
+                    items.push(trimmed.replace(/^✕\s*\*\*[^*]+\*\*\s*—\s*/, '').trim());
+                  } else if (trimmed.startsWith('💡')) {
+                    insight = trimmed.replace(/^💡\s*/, '').trim();
+                  }
                 }
+              } else if (section.items && section.items.length > 0) {
+                items = section.items.map(item => {
+                  const title = item.title?.[lang] || '';
+                  const text = item.text?.[lang] || '';
+                  return title ? `${title} — ${text}` : text;
+                });
+              }
+
+              if (section.alert?.[lang] && items.length === 0) {
+                insight = section.alert[lang];
               }
 
               return (
@@ -497,13 +509,15 @@ export default function DestinationDetailsClient({
                   <p className="text-sm font-semibold uppercase tracking-[0.2em] text-red-700">
                     {section.title[lang]}
                   </p>
-                  <div className="mt-5 grid gap-3">
-                    {items.map((item, i) => (
-                      <div key={i} className="rounded-2xl border border-red-100 bg-white px-4 py-3 text-sm font-medium text-slate-600">
-                        <span className="text-red-500 mr-1.5">✕</span>{item}
-                      </div>
-                    ))}
-                  </div>
+                  {items.length > 0 && (
+                    <div className="mt-5 grid gap-3">
+                      {items.map((item, i) => (
+                        <div key={i} className="rounded-2xl border border-red-100 bg-white px-4 py-3 text-sm font-medium text-slate-600">
+                          <span className="text-red-500 mr-1.5">✕</span>{item}
+                        </div>
+                      ))}
+                    </div>
+                  )}
                   {insight && (
                     <div className="mt-5 rounded-2xl bg-amber-50 border border-amber-200 p-4">
                       <p className="text-xs font-medium leading-relaxed text-amber-800">
