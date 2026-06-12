@@ -14,23 +14,23 @@ type Props = {
 };
 
 const regions = [
-  { key: "Athens", label: { en: "Athens", el: "Αθήνα" }, emoji: "🏛️", image: "/images/athens.webp", count: 150, description: { en: "Ancient history meets urban energy.", el: "Η αρχαία ιστορία συναντά την αστική ενέργεια." }, highlights: { en: ["Acropolis tours", "Food walks", "Saronic cruises"], el: ["Ξεναγήσεις Ακρόπολης", "Food walks", "Κρουαζιέρες Σαρωνικού"] } },
+  { key: "Athens", label: { en: "Athens", el: "Αθήνα" }, emoji: "🏛️", image: "/images/athens.webp", count: 150, description: { en: "Ancient history meets urban energy.", el: "Η αρχαία ιστορία συναντά την αστική ενέργεια." }, highlights: { en: ["Acropolis tours", "Food walks", "Saronic cruises"], el: ["Ξεναγήσεις Ακρόπολης", "Food walks", "Κρουαζιέρες Σαρωνικού"] }, landingSlug: "athens-tours" },
   { key: "Corfu", label: { en: "Corfu", el: "Κέρκυρα" }, emoji: "🌿", image: "/images/corfu.webp", count: 100, description: { en: "Venetian elegance and Paxos day trips.", el: "Ενετική κομψότητα και εκδρομές στους Παξούς." }, highlights: { en: ["Old Town walks", "Paxos day trips", "Beach hopping"], el: ["Βόλτες Παλιάς Πόλης", "Παξοί", "Παραλίες"] } },
-  { key: "Crete", label: { en: "Crete", el: "Κρήτη" }, emoji: "🏔️", image: "/images/crete.webp", count: 180, description: { en: "From Knossos to Samaria Gorge.", el: "Από την Κνωσό μέχρι το Φαράγγι της Σαμαριάς." }, highlights: { en: ["Knossos Palace", "Samaria Gorge", "Balos & Gramvousa"], el: ["Ανάκτορο Κνωσού", "Φαράγγι Σαμαριάς", "Μπάλος & Γραμβούσα"] } },
+  { key: "Crete", label: { en: "Crete", el: "Κρήτη" }, emoji: "🏔️", image: "/images/crete.webp", count: 180, description: { en: "From Knossos to Samaria Gorge.", el: "Από την Κνωσό μέχρι το Φαράγγι της Σαμαριάς." }, highlights: { en: ["Knossos Palace", "Samaria Gorge", "Balos & Gramvousa"], el: ["Ανάκτορο Κνωσού", "Φαράγγι Σαμαριάς", "Μπάλος & Γραμβούσα"] }, landingSlug: "crete-tours" },
   { key: "Delphi", label: { en: "Delphi", el: "Δελφοί" }, emoji: "🏺", image: "/images/delphi.webp", count: 40, description: { en: "Temple of Apollo, mountain views.", el: "Ναός Απόλλωνα, θέα στο βουνό." }, highlights: { en: ["Temple of Apollo", "Ancient Theater", "Delphi Museum"], el: ["Ναός Απόλλωνα", "Αρχαίο Θέατρο", "Μουσείο Δελφών"] } },
   { key: "Halkidiki", label: { en: "Halkidiki", el: "Χαλκιδική" }, emoji: "🌲", image: "/images/halkidiki.webp", count: 60, description: { en: "Sithonia beaches, Mount Athos cruises.", el: "Παραλίες Σιθωνίας, κρουαζιέρες Αγίου Όρους." }, highlights: { en: ["Sithonia beaches", "Athos cruises", "Kassandra nightlife"], el: ["Παραλίες Σιθωνίας", "Κρουαζιέρες Άθως", "Κασσάνδρα"] } },
-  { key: "Kefalonia", label: { en: "Kefalonia", el: "Κεφαλονιά" }, emoji: "⚓", image: "/images/kefalonia.webp", count: 80, description: { en: "Melissani Cave, Myrtos beach.", el: "Λιμνοσπήλαιο Μελισσάνης, Μύρτος." }, highlights: { en: ["Melissani Cave", "Myrtos Beach", "Boat trips"], el: ["Σπήλαιο Μελισσάνης", "Παραλία Μύρτου", "Boat trips"] } },
+  { key: "Kefalonia", label: { en: "Kefalonia", el: "Κεφαλονιά" }, emoji: "⚓", image: "/images/kefalonia.webp", count: 80, description: { en: "Melissani Cave, Myrtos beach.", el: "Λιμνοσπήλαιο Μελισσάνης, Μύρτος." }, highlights: { en: ["Melissani Cave", "Myrtos Beach", "Boat trips"], el: ["Σπήλαιο Μελισσάνης", "Παραλία Μύρτου", "Boat trips"] }, landingSlug: "kefalonia-tours" },
   { key: "Lefkada", label: { en: "Lefkada", el: "Λευκάδα" }, emoji: "🏖️", image: "/images/lefkada.webp", count: 50, description: { en: "Porto Katsiki, Egremni, Ionian island hopping.", el: "Πόρτο Κατσίκη, Εγκρεμνί, island hopping Ιονίου." }, highlights: { en: ["Porto Katsiki", "Egremni Beach", "Sailing tours"], el: ["Πόρτο Κατσίκη", "Παραλία Εγκρεμνί", "Ιστιοπλοΐα"] } },
-  { key: "Lesvos", label: { en: "Lesvos", el: "Λέσβος" }, emoji: "🫒", image: "/images/lesvos.webp", count: 40, description: { en: "Olive oil tastings, thermal springs.", el: "Γευσιγνωσία ελαιολάδου, ιαματικές πηγές." }, highlights: { en: ["Olive oil tastings", "Village life", "Thermal springs"], el: ["Γευσιγνωσία ελαιολάδου", "Χωριά", "Ιαματικές πηγές"] } },
+  { key: "Lesvos", label: { en: "Lesvos", el: "Λέσβος" }, emoji: "🫒", image: "/images/lesvos.webp", count: 40, description: { en: "Olive oil tastings, thermal springs.", el: "Γευσιγνωσία ελαιολάδου, ιαματικές πηγές." }, highlights: { en: ["Olive oil tastings", "Village life", "Thermal springs"], el: ["Γευσιγνωσία ελαιολάδου", "Χωριά", "Ιαματικές πηγές"] }, landingSlug: "lesvos-tours" },
   { key: "Meteora", label: { en: "Meteora", el: "Μετέωρα" }, emoji: "⛰️", image: "/images/meteora.webp", count: 45, description: { en: "Cliff monasteries, sunset views, hiking.", el: "Μοναστήρια, ηλιοβασίλεμα, πεζοπορία." }, highlights: { en: ["Monastery tours", "Sunset views", "Hiking trails"], el: ["Μοναστήρια", "Ηλιοβασίλεμα", "Πεζοπορία"] } },
   { key: "Milos", label: { en: "Milos", el: "Μήλος" }, emoji: "🌋", image: "/images/milos.webp", count: 65, description: { en: "Sarakiniko, Kleftiko boat tours.", el: "Σαρακίνικο, Boat Tour Κλέφτικο." }, highlights: { en: ["Sarakiniko", "Kleftiko Boat Tour", "Syrmata villages"], el: ["Σαρακίνικο", "Boat Tour Κλέφτικο", "Σύρματα"] } },
   { key: "Monemvasia", label: { en: "Monemvasia", el: "Μονεμβασιά" }, emoji: "🏰", image: "/images/monemvasia.webp", count: 25, description: { en: "A medieval sea fortress.", el: "Μεσαιωνική καστροπολιτεία." }, highlights: { en: ["Castle walk", "Upper Town", "Sea views"], el: ["Βόλτα στο Κάστρο", "Άνω Πόλη", "Θέα στη Θάλασσα"] } },
-  { key: "Mykonos", label: { en: "Mykonos", el: "Μύκονος" }, emoji: "🍸", image: "/images/mykonos.webp", count: 120, description: { en: "Delos island, luxury boat trips.", el: "Εκδρομές Δήλου, πολυτελή boat trips." }, highlights: { en: ["Delos island tours", "Boat trips", "Windmills walks"], el: ["Εκδρομές Δήλου", "Boat trips", "Μύλοι"] } },
+  { key: "Mykonos", label: { en: "Mykonos", el: "Μύκονος" }, emoji: "🍸", image: "/images/mykonos.webp", count: 120, description: { en: "Delos island, luxury boat trips.", el: "Εκδρομές Δήλου, πολυτελή boat trips." }, highlights: { en: ["Delos island tours", "Boat trips", "Windmills walks"], el: ["Εκδρομές Δήλου", "Boat trips", "Μύλοι"] }, landingSlug: "mykonos-tours" },
   { key: "Nafplio", label: { en: "Nafplio", el: "Ναύπλιο" }, emoji: "🏛️", image: "/images/nafplio.webp", count: 60, description: { en: "Mycenae, Epidaurus, Argolic Gulf.", el: "Μυκήνες, Επίδαυρος, Αργολικός." }, highlights: { en: ["Mycenae tours", "Epidaurus", "Argolic Gulf"], el: ["Μυκήνες", "Επίδαυρος", "Αργολικός Κόλπος"] } },
   { key: "Paros", label: { en: "Paros", el: "Πάρος" }, emoji: "⛵", image: "/images/paros.webp", count: 70, description: { en: "Naoussa, golden beaches, boat trips.", el: "Νάουσα, Χρυσή Ακτή, θαλάσσιες βόλτες." }, highlights: { en: ["Naoussa Harbor", "Golden Beach", "Antiparos trips"], el: ["Λιμάνι Νάουσας", "Χρυσή Ακτή", "Εκδρομές Αντίπαρο"] } },
   { key: "Parga", label: { en: "Parga", el: "Πάργα" }, emoji: "🏘️", image: "/images/parga.webp", count: 30, description: { en: "Venetian castle, Paxos day trips.", el: "Ενετικό κάστρο, εκδρομές Παξοί." }, highlights: { en: ["Venetian Castle", "Valtos Beach", "Paxos day trips"], el: ["Ενετικό Κάστρο", "Παραλία Βάλτου", "Εκδρομή Παξοί"] } },
   { key: "Rhodes", label: { en: "Rhodes", el: "Ρόδος" }, emoji: "🛡️", image: "/images/rhodes.webp", count: 130, description: { en: "Medieval City, Lindos, Prasonisi.", el: "Μεσαιωνική Πόλη, Λίνδος, Πρασονήσι." }, highlights: { en: ["Medieval City", "Lindos Acropolis", "Prasonisi surfing"], el: ["Παλιά Πόλη Ρόδου", "Ακρόπολη Λίνδου", "Πρασονήσι"] } },
-  { key: "Santorini", label: { en: "Santorini", el: "Σαντορίνη" }, emoji: "🌅", image: "/images/santorini.webp", count: 200, description: { en: "Sunset cruises, wine tours, volcanic excursions.", el: "Sunset κρουαζιέρες, οινογνωσία, βουλκανικές εκδρομές." }, highlights: { en: ["Sunset cruises", "Wine tasting", "Volcano tours"], el: ["Sunset κρουαζιέρες", "Οινογνωσία", "Βουλκανικές εκδρομές"] } },
+  { key: "Santorini", label: { en: "Santorini", el: "Σαντορίνη" }, emoji: "🌅", image: "/images/santorini.webp", count: 200, description: { en: "Sunset cruises, wine tours, volcanic excursions.", el: "Sunset κρουαζιέρες, οινογνωσία, βουλκανικές εκδρομές." }, highlights: { en: ["Sunset cruises", "Wine tasting", "Volcano tours"], el: ["Sunset κρουαζιέρες", "Οινογνωσία", "Βουλκανικές εκδρομές"] }, landingSlug: "santorini-tours" },
   { key: "Skiathos", label: { en: "Skiathos", el: "Σκιάθος" }, emoji: "🌲", image: "/images/skiathos.webp", count: 50, description: { en: "Koukounaries, Lalaria, Skiathos Town.", el: "Κουκουναριές, Λαλάρια, Χώρα." }, highlights: { en: ["Koukounaries Beach", "Lalaria Beach", "Skiathos Town"], el: ["Κουκουναριές", "Λαλάρια", "Χώρα Σκιάθου"] } },
   { key: "Skopelos", label: { en: "Skopelos", el: "Σκόπελος" }, emoji: "🌲", image: "/images/skopelos.webp", count: 35, description: { en: "Green island, Mamma Mia! filming location.", el: "Πράσινο νησί, γνωστό από το Mamma Mia!" }, highlights: { en: ["Skopelos Town", "Stafilos Beach", "Church of Panagia"], el: ["Χώρα Σκοπέλου", "Παραλία Στάφυλος", "Παναγία η Παγανιώτισσα"] } },
   { key: "Syros", label: { en: "Syros", el: "Σύρος" }, emoji: "🎭", image: "/images/syros.webp", count: 30, description: { en: "Hermoupolis neoclassical capital, Aristides domes.", el: "Ερμούπολη νεοκλασική πρωτεύουσα, θόλοι Αριστείδη." }, highlights: { en: ["Hermoupolis Town", "Ano Syros", "Finikas Bay"], el: ["Ερμούπολη", "Άνω Σύρος", "Κόλπος Φοίνικα"] } },
@@ -119,6 +119,27 @@ export default function ToursDirectoryClient({ lang, tours }: Props) {
           {regions.map(region => {
             const isActive = selectedRegion === region.key;
             const hasWidget = !!VIATOR_WIDGET_MAPPING[region.key];
+            const pillClass = `group relative px-4 py-2.5 rounded-xl text-xs font-bold transition-all duration-200 ${
+              isActive
+                ? "bg-cyan-600 text-white shadow-md shadow-cyan-200 scale-105"
+                : hasWidget
+                  ? "bg-white text-slate-700 border border-slate-200 shadow-sm hover:border-cyan-300 hover:shadow-md"
+                  : "bg-slate-50 text-slate-400 border border-dashed border-slate-200 cursor-default"
+            }`;
+
+            if (region.landingSlug) {
+              return (
+                <Link
+                  key={region.key}
+                  href={withLang(`/tours/${region.landingSlug}`)}
+                  className={pillClass}
+                >
+                  <span className="mr-1.5">{region.emoji}</span>
+                  {region.label[lang]}
+                </Link>
+              );
+            }
+
             return (
               <button
                 key={region.key}
@@ -126,13 +147,7 @@ export default function ToursDirectoryClient({ lang, tours }: Props) {
                   setSelectedRegion(isActive ? null : region.key);
                   if (!isActive) setTimeout(() => widgetRef.current?.scrollIntoView({ behavior: "smooth", block: "start" }), 150);
                 }}
-                className={`group relative px-4 py-2.5 rounded-xl text-xs font-bold transition-all duration-200 ${
-                  isActive
-                    ? "bg-cyan-600 text-white shadow-md shadow-cyan-200 scale-105"
-                    : hasWidget
-                      ? "bg-white text-slate-700 border border-slate-200 shadow-sm hover:border-cyan-300 hover:shadow-md"
-                      : "bg-slate-50 text-slate-400 border border-dashed border-slate-200 cursor-default"
-                }`}
+                className={pillClass}
               >
                 <span className="mr-1.5">{region.emoji}</span>
                 {region.label[lang]}
@@ -209,15 +224,51 @@ export default function ToursDirectoryClient({ lang, tours }: Props) {
           {regions.map(region => {
             const isActive = selectedRegion === region.key;
             const hasWidget = !!VIATOR_WIDGET_MAPPING[region.key];
+            const cardClass = `group relative overflow-hidden rounded-2xl border transition-all duration-300 text-left ${
+              isActive
+                ? "border-cyan-400 ring-2 ring-cyan-200 shadow-lg shadow-cyan-100 scale-[1.02]"
+                : "border-slate-200 hover:border-cyan-300 hover:shadow-md hover:-translate-y-0.5"
+            } ${hasWidget ? "bg-white" : "bg-slate-50 opacity-70"}`;
+
+            if (region.landingSlug) {
+              return (
+                <Link
+                  key={region.key}
+                  href={withLang(`/tours/${region.landingSlug}`)}
+                  className={cardClass}
+                >
+                  <div className="relative aspect-[16/10] w-full overflow-hidden bg-slate-100">
+                    <Image
+                      src={region.image}
+                      alt={region.label[lang]}
+                      fill
+                      sizes="(max-width: 768px) 50vw, 25vw"
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+                    <div className="absolute bottom-3 left-3 right-3 flex items-center gap-2">
+                      <span className="text-lg">{region.emoji}</span>
+                      <span className="text-sm font-bold text-white drop-shadow-lg">{region.label[lang]}</span>
+                    </div>
+                    <div className="absolute top-3 right-3 bg-cyan-600 text-white text-[10px] font-extrabold uppercase tracking-widest px-2.5 py-1 rounded-full shadow-lg">
+                      {lang === "en" ? "Explore" : "Εξερεύνησε"}
+                    </div>
+                  </div>
+                  <div className="px-4 py-3 flex items-center justify-between">
+                    <span className="text-[11px] font-semibold text-cyan-600 uppercase tracking-wider">
+                      {region.count}+ {lang === "en" ? "Tours" : "Εκδρομές"}
+                    </span>
+                    <span className="text-sm font-bold text-cyan-600 group-hover:translate-x-1 transition-transform">→</span>
+                  </div>
+                </Link>
+              );
+            }
+
             return (
               <button
                 key={region.key}
                 onClick={() => setSelectedRegion(isActive ? null : region.key)}
-                className={`group relative overflow-hidden rounded-2xl border transition-all duration-300 text-left ${
-                  isActive
-                    ? "border-cyan-400 ring-2 ring-cyan-200 shadow-lg shadow-cyan-100 scale-[1.02]"
-                    : "border-slate-200 hover:border-cyan-300 hover:shadow-md hover:-translate-y-0.5"
-                } ${hasWidget ? "bg-white" : "bg-slate-50 opacity-70"}`}
+                className={cardClass}
               >
                 <div className="relative aspect-[16/10] w-full overflow-hidden bg-slate-100">
                   <Image
