@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { hotels, SITE_URL, type Lang } from '../../../lib/content';
 import SiteHeader from '../../../components/site-header';
 import HotelsDirectoryClient from './all/hotels-directory-client';
@@ -75,6 +76,10 @@ export default async function HotelsListingPage({ params }: Props) {
       en: "Browse hotel and accommodation guides by destination.",
       el: "Δείτε οδηγούς ξενοδοχείων και καταλυμάτων ανά προορισμό.",
     },
+    intro: {
+      en: "Choosing the right area matters more than choosing the right hotel — a caldera view in Santorini, a beach base in Naxos or a historic quarter in Athens each create a completely different trip. Our guides break down every destination area by area, with honest advice on views, prices, crowds and who each base suits best.",
+      el: "",
+    },
     view: { en: 'View Guide', el: 'Προβολή Οδηγού' },
     place: { en: 'Location', el: 'Τοποθεσία' },
     tag: { en: "Where to Stay", el: "Διαμονή" }
@@ -105,9 +110,84 @@ export default async function HotelsListingPage({ params }: Props) {
           <p className="text-slate-500 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-light">
             {t.sub[lang]}
           </p>
+          <p className="text-slate-600 text-base max-w-3xl mx-auto leading-relaxed mt-6">
+            {t.intro[lang]}
+          </p>
         </div>
 
         <HotelsDirectoryClient lang={lang} hotels={hotels} />
+
+        {/* ════════ HOW TO CHOOSE ════════ */}
+        <section className="max-w-5xl mx-auto mt-24 px-2">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 text-center mb-4 tracking-tight">
+            How to Choose Your Base
+          </h2>
+          <p className="text-slate-500 text-center max-w-2xl mx-auto mb-12">
+            The same island can feel like three different holidays depending on where you sleep. A few honest rules of thumb:
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              {
+                emoji: "🌅",
+                title: "View vs. Value",
+                text: "In Santorini, Firostefani and Imerovigli deliver the same caldera view as Oia for noticeably less. The view is identical at €150 and €1,500 — the hotel adds comfort, not scenery.",
+              },
+              {
+                emoji: "👨‍👩‍👧",
+                title: "Families: think flat",
+                text: "Caldera villages mean endless stairs and no beach. With kids, beach bases like Kamari (Santorini), Agios Prokopios (Naxos) or Tsilivi (Zakynthos) make every day easier.",
+              },
+              {
+                emoji: "🚗",
+                title: "Distances deceive",
+                text: "On big islands like Crete, Lefkada or Kefalonia, your base decides your driving. Pick the coast you'll actually explore — not the prettiest photo.",
+              },
+            ].map((card) => (
+              <div
+                key={card.title}
+                className="bg-white rounded-2xl border border-slate-200 p-8 shadow-sm hover:shadow-md transition-shadow"
+              >
+                <div className="text-3xl mb-4">{card.emoji}</div>
+                <h3 className="text-lg font-bold text-slate-900 mb-3">{card.title}</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">{card.text}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* ════════ CROSS LINKS ════════ */}
+        <section className="max-w-5xl mx-auto mt-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <Link
+              href={`/${lang}/tours/all`}
+              className="group flex items-center justify-between rounded-2xl bg-gradient-to-r from-cyan-600 to-cyan-500 p-8 text-white shadow-lg hover:shadow-xl transition-all"
+            >
+              <div>
+                <h3 className="text-xl font-bold mb-1">
+                  Booked your stay? Now fill your days
+                </h3>
+                <p className="text-white/80 text-sm">
+                  Browse 2,000+ bookable tours & experiences by region.
+                </p>
+              </div>
+              <span className="text-2xl group-hover:translate-x-2 transition-transform">→</span>
+            </Link>
+            <Link
+              href={`/${lang}/destinations`}
+              className="group flex items-center justify-between rounded-2xl bg-slate-900 p-8 text-white shadow-lg hover:shadow-xl transition-all"
+            >
+              <div>
+                <h3 className="text-xl font-bold mb-1">
+                  Still choosing a destination?
+                </h3>
+                <p className="text-white/80 text-sm">
+                  Full travel guides for 38 Greek destinations.
+                </p>
+              </div>
+              <span className="text-2xl group-hover:translate-x-2 transition-transform">→</span>
+            </Link>
+          </div>
+        </section>
       </div>
     </main>
     </>
