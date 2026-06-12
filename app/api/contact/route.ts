@@ -1,6 +1,23 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
+import { z } from 'zod';
 import { checkRateLimit, getIP } from '../../../lib/rate-limit';
+
+const contactSchema = z.object({
+  name: z.string().min(1).max(200).trim(),
+  email: z.string().email().max(320).trim(),
+  message: z.string().min(1).max(5000).trim(),
+  website_url: z.string().max(0).optional().default(''),
+});
+
+function escapeHtml(str: string): string {
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
 
 export async function POST(request: Request) {
   try {
@@ -11,44 +28,52 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Too many requests. Try again later.' }, { status: 429 });
     }
 
-    const { name, email, message, website_url } = await request.json();
+    const body = await request.json();
+    const parsed = contactSchema.safeParse(body);
+
+    if (!parsed.success) {
+      return NextResponse.json({ error: 'Invalid input' }, { status: 400 });
+    }
+
+    const { name, email, message, website_url } = parsed.data;
 
     // Honeypot: bots fill this hidden field
     if (website_url) {
       return NextResponse.json({ message: 'Email sent successfully' }, { status: 200 });
     }
 
-    // Configure the transporter for Papaki SMTP
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
       port: Number(process.env.SMTP_PORT),
-      secure: true, // true for 465, false for other ports
+      secure: true,
       auth: {
         user: process.env.SMTP_USER,
         pass: process.env.SMTP_PASS,
       },
     });
 
-    // Email options
+    const safeName = escapeHtml(name);
+    const safeEmail = escapeHtml(email);
+    const safeMessage = escapeHtml(message);
+
     const mailOptions = {
       from: `"GoGreeceNow Promotion" <${process.env.SMTP_USER}>`,
-      to: process.env.CONTACT_RECEIVER, // Where you want to receive the inquiries
-      replyTo: email, // This allows you to reply directly to the sender
-      subject: `New Promotion Inquiry from ${name}`,
+      to: process.env.CONTACT_RECEIVER,
+      replyTo: email,
+      subject: `New Promotion Inquiry from ${safeName}`,
       text: `Business Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
       html: `
         <div style="font-family: sans-serif; padding: 20px; border: 1px solid #eee; border-radius: 10px;">
           <h2 style="color: #4f46e5;">New Promotion Inquiry</h2>
-          <p><strong>Business Name:</strong> ${name}</p>
-          <p><strong>Email:</strong> ${email}</p>
+          <p><strong>Business Name:</strong> ${safeName}</p>
+          <p><strong>Email:</strong> ${safeEmail}</p>
           <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
           <p><strong>Message:</strong></p>
-          <p style="white-space: pre-wrap;">${message}</p>
+          <p style="white-space: pre-wrap;">${safeMessage}</p>
         </div>
       `,
     };
 
-    // Send the email
     await transporter.sendMail(mailOptions);
 
     return NextResponse.json({ message: 'Email sent successfully' }, { status: 200 });

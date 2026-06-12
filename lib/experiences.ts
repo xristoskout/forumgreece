@@ -934,13 +934,6 @@ export const experienceBusinesses: ExperienceBusiness[] = [
       "/images/businesses/Iren/dsc-0757.webp",
       "/images/businesses/Iren/f10.webp",
       "/images/businesses/Iren/ireneok.webp",
-      "/images/businesses/Iren/unnamed (1).webp",
-      "/images/businesses/Iren/unnamed (2).webp",
-      "/images/businesses/Iren/unnamed (3).webp",
-      "/images/businesses/Iren/unnamed (4).webp",
-      "/images/businesses/Iren/unnamed (5).webp",
-      "/images/businesses/Iren/unnamed (6).webp",
-      "/images/businesses/Iren/unnamed (7).webp",
       "/images/businesses/Iren/3.webp"
     ],
     mapIframe: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3096.0263330769176!2d26.556568776352858!3d39.10587063437584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ba6709b0b785ef%3A0x5550bbe9b3d42544!2sIren%20Rooms!5e0!3m2!1sel!2sgr!4v1775805404970!5m2!1sel!2sgr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'

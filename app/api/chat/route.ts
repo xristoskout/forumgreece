@@ -8,7 +8,7 @@ import { google } from '@ai-sdk/google';
 import { getKnowledgeBase } from '../../../lib/knowledge-base';
 import { checkRateLimit, getIP } from '../../../lib/rate-limit';
 
-export const maxDuration = 300;
+export const maxDuration = 120;
 
 export async function POST(req: Request) {
   try {
