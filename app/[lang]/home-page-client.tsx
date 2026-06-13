@@ -461,7 +461,7 @@ export default function HomePageClient({
             <Link
               key={item.title.en}
               href={item.href}
-              className="group relative overflow-hidden rounded-[2rem] border border-slate-200 bg-white text-slate-900 transition-all duration-700 hover:-translate-y-2 hover:scale-[1.03] hover:z-30 hover:shadow-[0_15px_50px_rgba(0,0,0,0.1)]"
+              className="group relative overflow-hidden rounded-xl border border-slate-200 bg-white text-slate-900 transition-all duration-700 hover:-translate-y-2 hover:scale-[1.03] hover:z-30 hover:shadow-[0_15px_50px_rgba(0,0,0,0.1)]"
             >
               <div className="absolute inset-0 transition-all duration-700 group-hover:scale-110 group-hover:brightness-110">
                 <Image src={item.image} alt={item.title[lang]} fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" />
