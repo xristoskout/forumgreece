@@ -247,56 +247,6 @@ export default function HomePageClient({
     },
   ];
 
-  const destinationCardMeta = [
-    {
-      eyebrow: {
-        en: "Featured Destination",
-        el: "Προτεινόμενος Προορισμός",
-      },
-      summary: {
-        en: "A strong starting point for travelers looking for scenery, atmosphere and practical destination planning.",
-        el: "Μια δυνατή αφετηρία για ταξιδιώτες που ψάχνουν τοπίο, ατμόσφαιρα και πρακτική οργάνωση προορισμού.",
-      },
-      tags: {
-        en: ["Travel Guide", "Highlights", "Local Tips"],
-        el: ["Travel Guide", "Highlights", "Τοπικά Tips"],
-      },
-    },
-    {
-      eyebrow: { en: "Popular Pick", el: "Δημοφιλής Επιλογή" },
-      summary: {
-        en: "A guide designed to help visitors quickly understand what makes this place worth the trip.",
-        el: "Ένας οδηγός που βοηθά τον επισκέπτη να καταλάβει γρήγορα τι κάνει αυτό το μέρος να αξίζει το ταξίδι.",
-      },
-      tags: {
-        en: ["Best Spots", "What to See", "Ideas"],
-        el: ["Best Spots", "Τι να Δεις", "Ιδέες"],
-      },
-    },
-    {
-      eyebrow: { en: "Travel Inspiration", el: "Ταξιδιωτική Έμπνευση" },
-      summary: {
-        en: "Useful for travelers who want a clean overview before they dive into details.",
-        el: "Χρήσιμο για ταξιδιώτες που θέλουν μια καθαρή εικόνα πριν μπουν στις λεπτομέρειες.",
-      },
-      tags: {
-        en: ["Overview", "Planning", "Guide"],
-        el: ["Overview", "Planning", "Guide"],
-      },
-    },
-    {
-      eyebrow: { en: "Editorial Guide", el: "Editorial Οδηγός" },
-      summary: {
-        en: "A curated destination entry with useful structure and fast scanning.",
-        el: "Μια curated παρουσίαση προορισμού με χρήσιμη δομή και γρήγορο scanning.",
-      },
-      tags: {
-        en: ["Curated", "Easy Read", "Essentials"],
-        el: ["Curated", "Easy Read", "Essentials"],
-      },
-    },
-  ];
-
   return (
     <>
       <SiteHeader />
@@ -568,48 +518,52 @@ export default function HomePageClient({
           </p>
         </div>
 
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {destinations.filter(d => d.featured).slice(0, 6).map((item, index) => {
-            const meta = destinationCardMeta[index % destinationCardMeta.length];
-            return (
-              <article
-                key={item.slug}
-                className="group relative flex flex-col justify-end overflow-hidden rounded-[2.5rem] border border-slate-200 bg-white shadow-xl transition-all duration-700 hover:-translate-y-3 hover:scale-[1.05] hover:z-30 hover:shadow-[0_15px_50px_rgba(0,0,0,0.1)] min-h-[450px]"
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {destinations.filter(d => d.featured).slice(0, 6).map((item) => (
+            <article key={item.slug} className="group flex flex-col h-full">
+              <Link
+                href={withLang(`/destinations/${item.slug}`)}
+                className="flex flex-col h-full rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:border-indigo-200"
               >
-                <div className="absolute inset-0 transition-all duration-700 group-hover:scale-110 group-hover:brightness-110">
-                <Image src={item.image} alt={item.name || "Featured destination"} fill className="object-cover" sizes="(max-width: 768px) 100vw, 25vw" />
+                <div className="relative h-48 overflow-hidden bg-slate-100 shrink-0">
+                  <Image
+                    src={item.image}
+                    alt={item.name}
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+                  <span className="absolute top-3 left-3 rounded-full bg-black/50 backdrop-blur-md border border-white/20 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-white">
+                    {item.region[lang]}
+                  </span>
+                  {item.featured && (
+                    <span className="absolute top-3 right-3 rounded-full bg-indigo-600 px-2 py-1 text-[10px] font-bold uppercase text-white">
+                      ★ Featured
+                    </span>
+                  )}
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-90 transition-opacity duration-700 group-hover:opacity-75" />
-
-                <div className="relative p-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                  <div className="mb-4 flex flex-wrap items-center gap-2">
-                    <span className="rounded-full border border-indigo-200 bg-indigo-100 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-indigo-800 backdrop-blur-md">
-                      {meta.eyebrow[lang]}
-                    </span>
-                    <span className="rounded-full border border-slate-300 bg-slate-50 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-slate-900/90 backdrop-blur-md">
-                      {item.region[lang]}
-                    </span>
-                  </div>
-
-                  <h3 className="mb-2 text-3xl font-extrabold tracking-tight text-white drop-shadow-md">
+                <div className="flex flex-col flex-1 p-5">
+                  <h3 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-indigo-700 transition-colors">
                     {item.name}
                   </h3>
-
-                  <p className="mb-6 text-sm leading-relaxed text-white/95 line-clamp-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                  <p className="text-sm text-slate-500 leading-relaxed mb-4 line-clamp-2">
                     {item.blurb[lang]}
                   </p>
-
-                  <Link
-                    href={withLang(`/destinations/${item.slug}`)}
-                    className="inline-flex w-full items-center justify-center rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-semibold text-slate-900 backdrop-blur-md transition-all hover:bg-indigo-600 hover:border-transparent hover:text-slate-900"
-                    aria-label={lang === "en" ? `Explore ${item.name}` : `Οδηγός για ${item.name}`}
-                  >
-                    {lang === "en" ? `Explore ${item.name} →` : `Εξερεύνηση →`}
-                  </Link>
+                  <div className="flex flex-wrap gap-1.5 mb-4">
+                    {item.highlights[lang].slice(0, 2).map((h) => (
+                      <span key={h} className="rounded-full bg-slate-100 px-2.5 py-1 text-[11px] font-medium text-slate-600">
+                        {h}
+                      </span>
+                    ))}
+                  </div>
+                  <span className="inline-flex items-center gap-1.5 text-sm font-bold text-indigo-600 group-hover:gap-3 transition-all mt-auto">
+                    {lang === "en" ? "Travel Guide" : "Οδηγός Ταξιδιού"} <span className="transition-transform group-hover:translate-x-1">→</span>
+                  </span>
                 </div>
-              </article>
-            );
-          })}
+              </Link>
+            </article>
+          ))}
         </div>
 
         {/* Level 2 CTA — All Destinations by Region */}
