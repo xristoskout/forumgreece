@@ -3,28 +3,25 @@ import { Redis } from "@upstash/redis";
 
 const redis = Redis.fromEnv();
 
-const ratelimit = new Ratelimit({
-  redis,
-  limiter: Ratelimit.slidingWindow(5, "60 s"),
-  analytics: true,
-});
-
 export async function checkRateLimit(
   identifier: string,
   maxRequests: number = 5,
   windowMs: number = 60 * 1000
 ): Promise<{ allowed: boolean; remaining: number }> {
-  const windowSec = Math.ceil(windowMs / 1000);
+  try {
+    const windowSec = Math.ceil(windowMs / 1000);
 
-  const limit = new Ratelimit({
-    redis,
-    limiter: Ratelimit.slidingWindow(maxRequests, `${windowSec} s`),
-    analytics: false,
-  });
+    const limit = new Ratelimit({
+      redis,
+      limiter: Ratelimit.slidingWindow(maxRequests, `${windowSec} s`),
+      analytics: false,
+    });
 
-  const { success, remaining } = await limit.limit(identifier);
-
-  return { allowed: success, remaining };
+    const { success, remaining } = await limit.limit(identifier);
+    return { allowed: success, remaining };
+  } catch {
+    return { allowed: true, remaining: maxRequests };
+  }
 }
 
 export function getIP(request: Request): string {
