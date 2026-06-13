@@ -41,7 +41,7 @@ const itinerarySchema = z.object({
 export async function POST(req: Request) {
   try {
     const ip = getIP(req);
-    const limit = checkRateLimit(`trip-planner:${ip}`, 5, 60 * 1000);
+    const limit = await checkRateLimit(`trip-planner:${ip}`, 5, 60 * 1000);
     if (!limit.allowed) {
       return Response.json({ error: 'Too many requests. Try again later.' }, { status: 429 });
     }

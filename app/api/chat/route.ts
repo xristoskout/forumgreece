@@ -13,7 +13,7 @@ export const maxDuration = 120;
 export async function POST(req: Request) {
   try {
     const ip = getIP(req);
-    const limit = checkRateLimit(`chat:${ip}`, 10, 60 * 1000);
+    const limit = await checkRateLimit(`chat:${ip}`, 10, 60 * 1000);
 
     if (!limit.allowed) {
       return new Response(JSON.stringify({ error: 'Too many requests. Try again later.' }), {

@@ -72,11 +72,6 @@ export function websiteSchema(lang: string) {
     name: "GoGreeceNow",
     url: SITE_URL,
     inLanguage: lang === "el" ? "el-GR" : "en",
-    potentialAction: {
-      "@type": "SearchAction",
-      target: `${SITE_URL}/${lang}/search?q={search_term_string}`,
-      "query-input": "required name=search_term_string",
-    },
   };
 }
 

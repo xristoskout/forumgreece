@@ -1,29 +1,30 @@
-type RateLimitEntry = {
-  count: number;
-  resetAt: number;
-};
+import { Ratelimit } from "@upstash/ratelimit";
+import { Redis } from "@upstash/redis";
 
-const store = new Map<string, RateLimitEntry>();
+const redis = Redis.fromEnv();
 
-export function checkRateLimit(
+const ratelimit = new Ratelimit({
+  redis,
+  limiter: Ratelimit.slidingWindow(5, "60 s"),
+  analytics: true,
+});
+
+export async function checkRateLimit(
   identifier: string,
   maxRequests: number = 5,
   windowMs: number = 60 * 1000
-): { allowed: boolean; remaining: number } {
-  const now = Date.now();
-  const entry = store.get(identifier);
+): Promise<{ allowed: boolean; remaining: number }> {
+  const windowSec = Math.ceil(windowMs / 1000);
 
-  if (!entry || now > entry.resetAt) {
-    store.set(identifier, { count: 1, resetAt: now + windowMs });
-    return { allowed: true, remaining: maxRequests - 1 };
-  }
+  const limit = new Ratelimit({
+    redis,
+    limiter: Ratelimit.slidingWindow(maxRequests, `${windowSec} s`),
+    analytics: false,
+  });
 
-  if (entry.count >= maxRequests) {
-    return { allowed: false, remaining: 0 };
-  }
+  const { success, remaining } = await limit.limit(identifier);
 
-  entry.count += 1;
-  return { allowed: true, remaining: maxRequests - entry.count };
+  return { allowed: success, remaining };
 }
 
 export function getIP(request: Request): string {
