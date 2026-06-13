@@ -83,14 +83,6 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${notoGreek.variable} ${playfair.variable} h-full antialiased`}
     >
-      <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html:
-              "(function(){try{if(/^\\/el(\\/|$)/.test(location.pathname)){document.documentElement.lang='el'}}catch(e){}})();",
-          }}
-        />
-      </head>
       <body className="min-h-full flex flex-col bg-[#f4f7fb] text-slate-900 relative selection:bg-purple-500/30">
         <script
           type="application/ld+json"

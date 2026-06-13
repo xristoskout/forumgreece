@@ -16,6 +16,11 @@ export type DestinationSection = {
     href?: string;
     hrefLabel?: { en: string; el: string };
   };
+  gallery?: {
+    image: string;
+    alt: { en: string; el: string };
+    caption?: Localized;
+  }[];
 };
 
 export const destinationSections: Record<string, DestinationSection[]> = {
@@ -137,6 +142,19 @@ export const destinationSections: Record<string, DestinationSection[]> = {
             en: "Ferries arrive at Athinios port. In summer, there are multiple daily routes from Piraeus ranging from 5 to 11+ hours. Schedules change, so confirm close to departure.",
             el: "Τα πλοία φτάνουν στο λιμάνι του Αθηνιού. Το καλοκαίρι υπάρχουν πολλαπλά καθημερινά δρομολόγια από Πειραιά (5-11+ ώρες). Τα δρομολόγια αλλάζουν, οπότε επιβεβαίωσε σχετικά κοντά στην αναχώρηση.",
           },
+        },
+      ],
+    },
+    {
+      title: {
+        en: "",
+        el: "",
+      },
+      gallery: [
+        {
+          image: "/images/santorini-gallery-1.webp",
+          alt: { en: "Santorini, Santoryn, Grecja", el: "Σαντορίνη, Santoryn, Grecja" },
+          caption: { en: "Santorini, Santoryn, Grecja", el: "Σαντορίνη, Santoryn, Grecja" },
         },
       ],
     },
@@ -280,6 +298,16 @@ export const destinationSections: Record<string, DestinationSection[]> = {
             en: "Water, sunscreen, comfortable shoes, and a light jacket for the evening breezes.",
             el: "Νερό, αντηλιακό, καπέλο, άνετα παπούτσια. Μια ελαφριά ζακέτα για βράδυ στην καλντέρα (ο αέρας κάνει παιχνίδια).",
           },
+        },
+      ],
+    },
+    {
+      title: { en: "", el: "" },
+      gallery: [
+        {
+          image: "/images/santorini-gallery-2.webp",
+          alt: { en: "The steps to paradise in Santorini", el: "Τα σκαλιά προς τον παράδεισο στη Σαντορίνη" },
+          caption: { en: "The steps to paradise in Santorini", el: "Τα σκαλιά προς τον παράδεισο στη Σαντορίνη" },
         },
       ],
     },
@@ -1367,7 +1395,7 @@ export const destinationSections: Record<string, DestinationSection[]> = {
     {
       title: {
         en: "FAQ",
-        el: "FAQ (Συχνές Ερωτήσεις)",
+        el: "FAQ (συχνές ερωτήσεις)",
       },
       layout: "faq",
       items: [
@@ -3206,6 +3234,16 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       ],
     },
     {
+      title: { en: "", el: "" },
+      gallery: [
+        {
+          image: "/images/athens-karyatides.webp",
+          alt: { en: "The Caryatids of the Erechtheion on the Acropolis of Athens", el: "Οι Καρυάτιδες του Ερεχθείου στην Ακρόπολη των Αθηνών" },
+          caption: { en: "The Caryatids of the Erechtheion on the Acropolis of Athens", el: "Οι Καρυάτιδες του Ερεχθείου στην Ακρόπολη των Αθηνών" },
+        },
+      ],
+    },
+    {
       title: {
         en: "Best time to visit",
         el: "Καλύτερη εποχή για Αθήνα",
@@ -3365,14 +3403,16 @@ export const destinationSections: Record<string, DestinationSection[]> = {
           },
         },
       ],
-      banner: {
-        image: "/images/athens-banner.webp",
-        alt: { en: "Athens cityscape", el: "Τοπίο Αθηνών" },
-        description: {
-          en: "A narrow street in Plaka with the sacred rock of the Acropolis rising in the background",
-          el: "Ένα στενό δρομάκι στην Πλάκα με τον ιερό βράχο της Ακρόπολης να κυριαρχεί στο βάθος",
+    },
+    {
+      title: { en: "", el: "" },
+      gallery: [
+        {
+          image: "/images/athens-banner.webp",
+          alt: { en: "A narrow street in Plaka with the sacred rock of the Acropolis rising in the background", el: "Ένα στενό δρομάκι στην Πλάκα με τον ιερό βράχο της Ακρόπολης να κυριαρχεί στο βάθος" },
+          caption: { en: "A narrow street in Plaka with the sacred rock of the Acropolis rising in the background", el: "Ένα στενό δρομάκι στην Πλάκα με τον ιερό βράχο της Ακρόπολης να κυριαρχεί στο βάθος" },
         },
-      },
+      ],
     },
     {
       title: {

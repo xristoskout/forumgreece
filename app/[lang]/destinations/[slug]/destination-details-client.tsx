@@ -368,8 +368,11 @@ export default function DestinationDetailsClient({
               </p>
             </article>
 
-            {sections.filter(s => !(s.title.en.toLowerCase().includes("honest advice") || s.title.en.toLowerCase().includes("what to skip") || s.title.en.toLowerCase().includes("what nobody tells you") || s.title.el.includes("Ειλικρινής Συμβουλή") || s.title.el.includes("Τι να Αποφύγεις") || s.title.el.includes("Τι δεν σου λέει κανείς"))).map((section, idx) => (
+            {sections.filter(s => !(s.title.en.toLowerCase().includes("honest advice") || s.title.en.toLowerCase().includes("what to skip") || s.title.en.toLowerCase().includes("what nobody tells you") || s.title.el.includes("Ειλικρινής Συμβουλή") || s.title.el.includes("Τι να Αποφύγεις") || s.title.el.includes("Τι δεν σου λέει κανείς"))).map((section, idx) => {
+                const isGalleryOnly = section.gallery && section.gallery.length > 0 && !section.title.en && !section.title.el && !section.text && !section.banner && (!section.items || section.items.length === 0);
+                return (
                 <Fragment key={idx}>
+                  {!isGalleryOnly && (
                   <article className="rounded-[28px] border border-slate-200 bg-white backdrop-blur-md p-8 shadow-sm">
                     <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700">
                       {destination.name}
@@ -379,7 +382,7 @@ export default function DestinationDetailsClient({
                       {section.title[lang]}
                     </h3>
 
-                    {section.text && (
+                    {section.text && !section.banner && (
                       <p className="mt-5 text-base leading-8 text-slate-500">
                         {section.text[lang]}
                       </p>
@@ -432,30 +435,25 @@ export default function DestinationDetailsClient({
                       </div>
                     )}
                   </article>
+                  )}
 
                   {section.banner && (
-                    <div className="mt-6 overflow-hidden rounded-[28px]">
+                    <div className="mt-6">
                       {section.banner.href ? (
                         <Link href={withLang(section.banner.href)} className="block group relative">
-                          <Image
-                            src={section.banner.image}
-                            alt={section.banner.alt[lang]}
-                            width={1200}
-                            height={630}
-                            className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
-                            sizes="(max-width: 768px) 100vw, 1200px"
-                          />
-                          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-6">
-                            {section.banner.description && (
-                              <p className="text-white/90 text-sm leading-relaxed mb-2">{section.banner.description[lang]}</p>
-                            )}
-                            {section.banner.hrefLabel && (
-                              <span className="text-white font-semibold text-lg">{section.banner.hrefLabel[lang]}</span>
-                            )}
-                          </div>
+                          <figure className="rounded-2xl overflow-hidden">
+                            <Image
+                              src={section.banner.image}
+                              alt={section.banner.alt[lang]}
+                              width={1200}
+                              height={630}
+                              className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+                              sizes="(max-width: 768px) 100vw, 1200px"
+                            />
+                          </figure>
                         </Link>
                       ) : (
-                        <div className="relative">
+                        <figure className="rounded-2xl overflow-hidden">
                           <Image
                             src={section.banner.image}
                             alt={section.banner.alt[lang]}
@@ -464,17 +462,41 @@ export default function DestinationDetailsClient({
                             className="w-full h-auto object-cover"
                             sizes="(max-width: 768px) 100vw, 1200px"
                           />
-                          {section.banner.description && (
-                            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-6">
-                              <p className="text-white/90 text-sm leading-relaxed">{section.banner.description[lang]}</p>
-                            </div>
-                          )}
-                        </div>
+                        </figure>
                       )}
                     </div>
                   )}
+
+                  {section.text && !section.items?.length && section.banner && (
+                    <figcaption className="mt-3 text-sm leading-relaxed text-slate-500 px-1">
+                      {section.text[lang]}
+                    </figcaption>
+                  )}
+
+                  {section.gallery && section.gallery.length > 0 && (
+                    <div className="mt-6 space-y-6">
+                      {section.gallery.map((img, imgIdx) => (
+                        <figure key={imgIdx} className="rounded-2xl overflow-hidden">
+                          <Image
+                            src={img.image}
+                            alt={img.alt[lang]}
+                            width={1200}
+                            height={630}
+                            className="w-full h-auto object-cover"
+                            sizes="(max-width: 768px) 100vw, 1200px"
+                          />
+                          {img.caption && (
+                            <figcaption className="mt-3 text-sm leading-relaxed text-slate-500 px-1">
+                              {img.caption[lang]}
+                            </figcaption>
+                          )}
+                        </figure>
+                      ))}
+                    </div>
+                  )}
                 </Fragment>
-              ))}
+                );
+              })}
           </div>
 
           <aside className="space-y-6">
