@@ -1809,13 +1809,13 @@ export default function DecisionEngineClient({ destinations, lang }: { destinati
                         <div>
                           <h5 className="font-bold text-green-700 mb-1.5">{t.pros[lang]}</h5>
                           <ul className="text-slate-700 text-sm space-y-1">
-                            {d.content?.pros?.map((p:string) => <li key={p}>✓ {p}</li>) ?? <li>N/A</li>}
+                             {(d.content?.pros ?? d.pros)?.map((p:string) => <li key={p}>✓ {p}</li>) ?? <li>N/A</li>}
                           </ul>
                         </div>
                         <div>
                           <h5 className="font-bold text-red-700 mb-1.5">{t.cons[lang]}</h5>
                           <ul className="text-slate-500 text-sm space-y-1">
-                            {d.content?.cons?.map((c:string) => <li key={c}>✕ {c}</li>) ?? <li>N/A</li>}
+                             {(d.content?.cons ?? d.cons)?.map((c:string) => <li key={c}>✕ {c}</li>) ?? <li>N/A</li>}
                           </ul>
                         </div>
                     </div>
@@ -1852,7 +1852,7 @@ export default function DecisionEngineClient({ destinations, lang }: { destinati
                     <div className="border-t border-slate-100 pt-4">
                       <h5 className="font-bold text-indigo-800 mb-2">{t.insiderTips[lang]}</h5>
                       <ul className="text-slate-600 text-sm space-y-1 italic">
-                        {d.content?.insider_tips?.map((tip:string) => <li key={tip}>"{tip}"</li>) ?? <li>No tips yet</li>}
+                         {(d.content?.insider_tips ?? d.insider_tips)?.map((tip:string) => <li key={tip}>"{tip}"</li>) ?? <li>No tips yet</li>}
                       </ul>
                     </div>
                 </div>
