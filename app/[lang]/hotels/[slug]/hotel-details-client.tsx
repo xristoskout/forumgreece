@@ -44,6 +44,7 @@ const STAY22_EMBEDS: Record<string, string> = {
   lefkada: "https://stay22.com/embed/6a1ed6996b16982d6c0e457f",
   evia: "https://stay22.com/embed/6a1ed7c4105a99849371700a",
   kos: "https://stay22.com/embed/6a1ee1c66b16982d6c0e8775",
+  kalymnos: "https://stay22.com/embed/6a2e6c3fc9f89538307605b3",
   lemnos: "https://stay22.com/embed/6a201d9f7ae5f4b0fa298dd1",
   syros: "https://stay22.com/embed/6a2030c13f80a50cb3c16e4e",
   rethymno: "https://stay22.com/embed/6a2155b533c0b6cf40a045ca",
