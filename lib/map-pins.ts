@@ -304,4 +304,11 @@ export const MAP_PINS: Pin[] = [
     label: { en: "Samos", el: "Σάμος" },
     tagline: { en: "Pythagoras, wine & ancient Heraion", el: "Πυθαγόρας, Μοσχάτος & αρχαίο Ηραίον" },
   },
+  {
+    id: "kalymnos",
+    x: 76.9, y: 61.6,
+    href: "/destinations/kalymnos",
+    label: { en: "Kalymnos", el: "Κάλυμνος" },
+    tagline: { en: "World capital of rock climbing", el: "Παγκόσμια πρωτεύουσα αναρρίχησης" },
+  },
 ];

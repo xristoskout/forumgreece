@@ -97,6 +97,7 @@ const HOTEL_NAMES: Record<string, string[]> = {
   skopelos: ["Adrina Beach Hotel", "Elli Hotel", "Villea Seaview Apartments", "Panormos Village Hotel", "Panormos Bay apartments & studios", "Stafylos Suites & Boutique Hotel", "Irida Apartments", "Natura Luxury Boutique Hotel", "Hillside villas near Milia"],
   hydra: ["Hydrea Hotel", "Bratsera Hotel", "Hotel Orloff", "Hotel Sophia", "Hydroussa Hotel", "Delfini Hotel", "Mandraki Beach Resort"],
   ios: ["Ios Grand", "Liostasi", "The Windmill", "Hotel Faros", "Arhontiko", "Ios Club", "Koula Village"],
+  kalymnos: ["Kalypso Rooms", "Simone's Apartments", "Anemoni Apartments", "Porto Kalymnos", "Armonia Studios", "Villa Korali", "Panormos Beach Hotel", "Niriides Studios", "Emporios Bay Suites"],
   samos: ["Blue Island", "Hotel Vathy", "Anthemis", "Kokkari Beach", "Samos Sun"],
 };
 

@@ -1,0 +1,144 @@
+{
+  "id": "kalymnos",
+  "slug": "kalymnos",
+  "name": "Kalymnos",
+  "type": "Island",
+  "coordinates": {
+    "lat": 36.9925,
+    "lng": 26.9769
+  },
+  "scores": {
+    "family": {
+      "value": 7,
+      "reason": "Family friendly parameters for Kalymnos."
+    },
+    "couples": {
+      "value": 7,
+      "reason": "Romantic components and spots in Kalymnos — authentic Dodecanese atmosphere."
+    },
+    "nightlife": {
+      "value": 3,
+      "reason": "Bar and club density in Kalymnos."
+    },
+    "food": {
+      "value": 8,
+      "reason": "Local gastronomy, seafood, and tavern quality."
+    },
+    "beaches": {
+      "value": 7,
+      "reason": "Beach quality, sand, and accessibility."
+    },
+    "walking": {
+      "value": 6,
+      "reason": "Walkability of the main towns or villages."
+    }
+  },
+  "content": {
+    "quick_summary": "A complete travel guide to Kalymnos — the world capital of rock climbing, with exceptional sponge diving heritage, dramatic limestone landscapes, and some of the finest seafood in the Dodecanese.",
+    "pros": [
+      "World-class rock climbing (3,000+ routes)",
+      "Exceptionally authentic Dodecanese character",
+      "Excellent seafood and local food culture",
+      "Telendos car-free island experience",
+      "Vathi valley — unique Mediterranean fjord landscape",
+      "Year-round destination with mild winters"
+    ],
+    "cons": [
+      "Limited nightlife outside Massouri",
+      "Not ideal for those seeking sand-and-surf resort holidays",
+      "Car or scooter needed to explore fully",
+      "Climbing crowds in October during the festival"
+    ],
+    "insider_tips": [
+      "Cross to Telendos at sunset for dinner — the four-minute caïque ride and the fish tavernas make it the best evening on the island.",
+      "Visit the Nautical Museum before buying sponges from the harbour shops — it transforms the experience.",
+      "Rent a small boat from Pothia harbour to approach Vathi from the sea. The boat arrival through the narrow inlet is vastly more beautiful than the road approach.",
+      "Kantouni beach south of Myrties is the island's best-kept secret — clearer water and fewer people than Massouri beaches."
+    ],
+    "mistakes_to_avoid": [
+      "Staying only in Massouri and missing Pothia, Vathi and the north coast.",
+      "Never crossing to Telendos — the five-minute journey costs almost nothing.",
+      "Approaching Vathi only by road instead of by boat.",
+      "Dismissing Kalymnos as 'just a climbing island' if you don't climb."
+    ]
+  },
+  "pricing_base": {
+    "budget_daily": 48,
+    "mid_daily": 100,
+    "luxury_daily": 220
+  },
+  "seasonality": {
+    "january": {
+      "temp": 12,
+      "price_multiplier": 0.5
+    },
+    "february": {
+      "temp": 12,
+      "price_multiplier": 0.5
+    },
+    "march": {
+      "temp": 14,
+      "price_multiplier": 0.6
+    },
+    "april": {
+      "temp": 17,
+      "price_multiplier": 0.7
+    },
+    "may": {
+      "temp": 22,
+      "price_multiplier": 0.9
+    },
+    "june": {
+      "temp": 26,
+      "price_multiplier": 1.1
+    },
+    "july": {
+      "temp": 29,
+      "price_multiplier": 1.3
+    },
+    "august": {
+      "temp": 29,
+      "price_multiplier": 1.4
+    },
+    "september": {
+      "temp": 26,
+      "price_multiplier": 1.1
+    },
+    "october": {
+      "temp": 21,
+      "price_multiplier": 0.8
+    },
+    "november": {
+      "temp": 16,
+      "price_multiplier": 0.6
+    },
+    "december": {
+      "temp": 13,
+      "price_multiplier": 0.5
+    }
+  },
+  "image": "/images/kalymnos-cover.webp",
+  "guideLinks": [
+    {
+      "href": "/hotels/kalymnos",
+      "label": {
+        "en": "Where to Stay",
+        "el": "Πού να μείνεις"
+      }
+    },
+    {
+      "href": "/travel-tools/budget/kalymnos",
+      "label": {
+        "en": "Budget Planner",
+        "el": "Budget Planner"
+      }
+    },
+    {
+      "href": "/travel-tools/best-time/kalymnos",
+      "label": {
+        "en": "Best Time to Visit",
+        "el": "Καλύτερη Εποχή"
+      }
+    }
+  ]
+}

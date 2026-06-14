@@ -1504,6 +1504,44 @@ export const destinations: Destination[] = [
         el: "Πλήρης ταξιδιωτικός οδηγός για την Ίο, Κυκλάδες — το νησί του Ομήρου, άγριες παραλίες, τέλεια διατηρημένο Χωριό και νυχτερινή ζωή που δεν υπάρχει αλλού στην Ελλάδα."
       }
     }
+  },
+  {
+    slug: "kalymnos",
+    name: "Kalymnos",
+    region: { en: "Dodecanese", el: "Δωδεκάνησα" },
+    blurb: {
+      en: "World capital of rock climbing, sponge diving heritage, limestone mountains and authentic Dodecanese character.",
+      el: "Παγκόσμια πρωτεύουσα αθλητικής αναρρίχησης, παράδοση σπογγαλιείας, ασβεστολιθικά βουνά και αυθεντικός δωδεκανησιακός χαρακτήρας.",
+    },
+    image: "/images/kalymnos-cover.webp",
+    overview: {
+      en: "Kalymnos is the world capital of sport climbing — a dramatic limestone island in the Dodecanese with over 3,000 bolt-protected climbing routes on its sea-facing cliffs. It is also the island of the legendary sponge divers, whose tradition shaped the culture and economy of the Aegean for centuries.",
+      el: "Η Κάλυμνος είναι η παγκόσμια πρωτεύουσα αθλητικής αναρρίχησης — ένα δραματικό ασβεστολιθικό νησί στη Δωδεκάνησο με πάνω από 3.000 προστατευμένες διαδρομές αναρρίχησης. Είναι επίσης το νησί των θρυλικών σφουγγαράδων, των οποίων η παράδοση διαμόρφωσε τον πολιτισμό και την οικονομία του Αιγαίου για αιώνες.",
+    },
+    highlights: {
+      en: ["World capital of rock climbing", "Sponge diving heritage", "Telendos island — car-free", "Vathi valley — hidden fjord", "Traditional Dodecanese villages"],
+      el: ["Παγκόσμια πρωτεύουσα αναρρίχησης", "Παράδοση σπογγαλιείας", "Τέλενδος — νησί χωρίς αυτοκίνητα", "Κοιλάδα Βαθύ — κρυφό φιόρδ", "Παραδοσιακά δωδεκανησιακά χωριά"],
+    },
+    guideLinks: [
+      {
+        href: "/hotels/kalymnos",
+        label: { en: "Where to Stay in Kalymnos", el: "Πού να μείνεις στην Κάλυμνο" }
+      },
+      {
+        href: "/tours/all",
+        label: { en: "Tours & Experiences", el: "Εκδρομές & Εμπειρίες" }
+      }
+    ],
+    seo: {
+      title: {
+        en: "Kalymnos Travel Guide: Rock Climbing, Sponge Diving, Villages & Beaches",
+        el: "Κάλυμνος: Ταξιδιωτικός Οδηγός — Αναρρίχηση, Σπογγαλιεία, Χωριά & Παραλίες"
+      },
+      description: {
+        en: "Complete travel guide to Kalymnos island, Dodecanese — the world capital of rock climbing, island of the legendary sponge divers, dramatic limestone mountains, traditional villages and exceptional Aegean seafood. Everything you need to know before you go.",
+        el: "Πλήρης ταξιδιωτικός οδηγός για την Κάλυμνο, Δωδεκάνησα — την παγκόσμια πρωτεύουσα αθλητικής αναρρίχησης. Ανακαλύψτε την παράδοση σπογγαλιείας, τα εντυπωσιακά ασβεστολιθικά βουνά, τα παραδοσιακά χωριά και τα εξαιρετικά θαλασσινά."
+      }
+    }
   }
 ];
 

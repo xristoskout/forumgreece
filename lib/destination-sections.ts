@@ -498,6 +498,19 @@ export const destinationSections: Record<string, DestinationSection[]> = {
     },
     {
       title: {
+        en: "",
+        el: "",
+      },
+      gallery: [
+        {
+          image: "/images/mykonos-gallery-1.webp",
+          alt: { en: "Mykonos Town, Greece", el: "Μύκονος, Ελλάδα" },
+          caption: { en: "Mykonos Town, Greece", el: "Μύκονος, Ελλάδα" },
+        },
+      ],
+    },
+    {
+      title: {
         en: "Top attractions & experiences worth seeing",
         el: "Top αξιοθέατα & εμπειρίες που αξίζει να δεις και να κάνεις",
       },
@@ -1260,6 +1273,233 @@ export const destinationSections: Record<string, DestinationSection[]> = {
           }
         }
       ]
+    }
+  ],
+
+  lasithi: [
+    {
+      layout: "list",
+      title: { en: "Why Visit Lasithi", el: "Γιατί να Επισκεφτείς το Λασίθι" },
+      text: {
+        en: "Lasithi divides travellers into those who planned to come here and those who drove east from Heraklion and kept going. Both tend to feel rewarded.\n\nSpinalonga is one of the most affecting sites in the whole of Greece. Not because of the fortress architecture — though the Venetian construction is formidable — but because of what happened there in the twentieth century. The island was an operational leper colony until 1957. Walking its streets, which are still largely intact, is a different kind of experience than any ancient ruin offers.\n\nElounda Bay has some of the finest water in the Mediterranean. The combination of the semi-enclosed gulf, white sand, and sea grass underneath produces the kind of colour that normally requires post-production. It does not require post-production here.\n\nVai is the only palm beach in Europe that is not the result of landscaping. The grove of Phoenix theophrasti palms is a native Cretan species, and it is genuinely strange and beautiful — especially if you visit early in the morning before the day-trip buses arrive.\n\nThe food in eastern Crete is different from elsewhere on the island. Sitia produces a distinctive, peppery olive oil that is among the finest in Greece. The local wine — particularly from the Vilana and Thrapsathiri grapes grown in the Sitia wine region — is barely known outside Crete. Ierapetra's long summer season produces some of the best tomatoes in the country.\n\nLasithi is the least crowded part of Crete. Even in August, the far east of the region — Zakros, Xerokampos, the Sitia coast — has a solitude that is almost impossible to find elsewhere in Greece in summer.",
+        el: "Το Λασίθι χωρίζει τους ταξιδιώτες σε εκείνους που σχεδίασαν να έρθουν και εκείνους που οδήγησαν ανατολικά από το Ηράκλειο και συνέχισαν. Και οι δύο τείνουν να νιώθουν ανταμοιβή.\n\nΗ Σπιναλόγκα είναι ένα από τα πιο συγκινητικά μέρη σε ολόκληρη την Ελλάδα. Το νησί ήταν μια ενεργή αποικία λεπρών μέχρι το 1957. Το περπάτημα στους δρόμους του, που είναι ακόμη σε μεγάλο βαθμό ανέπαφοι, είναι μια διαφορετική εμπειρία από οποιοδήποτε αρχαίο ερείπιο.\n\nΟ κόλπος της Ελούντας έχει ένα από τα ωραιότερα νερά της Μεσογείου. Ο συνδυασμός του ημίκλειστου κόλπου, της λευκής άμμου και των θαλάσσιων φυκιών παράγει το είδος του χρώματος που κανονικά απαιτεί μετα-παραγωγή.\n\nΤο Βάι είναι η μοναδική παραλία με φοίνικες στην Ευρώπη που δεν είναι αποτέλεσμα εξωραϊσμού. Το φοινικόδασος είναι ένα ενδημικό κρητικό είδος.\n\nΤο Λασίθι είναι το λιγότερο πολυσύχναστο μέρος της Κρήτης. Ακόμα και τον Αύγουστο, η άκρη της ανατολικής περιοχής έχει μια μοναξιά που είναι σχεδόν αδύνατο να βρεις αλλού στην Ελλάδα το καλοκαίρι."
+      }
+    },
+    {
+      layout: "list",
+      title: { en: "What to Skip in Lasithi", el: "Τι να Αποφύγεις στο Λασίθι" },
+      text: {
+        en: "**Lasithi Plateau windmills** — The famous \"windmill plateau\" is frequently described as a highlight. Most of the windmills are decommissioned shells. The drive up is scenic; the plateau itself is agricultural, flat, and not worth a special journey unless you are combining it with the Psychro Cave.\n\n**Malia** — The beach is fine. The resort town around it is not representative of this region or any region. Skip it unless a group member requires nightlife infrastructure.\n\n**Elounda without a budget** — The bay is spectacular, but the cluster of ultra-luxury hotels that dominates Elounda has inflated prices across the area. Budget accommodation is in Agios Nikolaos, 15 minutes south. Do not pay Elounda hotel prices for a room that doesn't have a bay view.",
+        el: "**Ανεμόμυλοι Οροπεδίου Λασιθίου** — Οι διάσημοι ανεμόμυλοι είναι ως επί το πλείστον παροπλισμένοι. Η διαδρομή είναι γραφική, αλλά το οροπέδιο δεν αξίζει ειδική διαδρομή εκτός αν το συνδυάσετε με το Σπήλαιο Ψυχρού.\n\n**Μάλια** — Η παραλία είναι καλή. Το θέρετρο γύρω της δεν αντιπροσωπεύει αυτή ή οποιαδήποτε περιοχή.\n\n**Ελούντα χωρίς προϋπολογισμό** — Ο κόλπος είναι εντυπωσιακός, αλλά τα πολυτελή ξενοδοχεία έχουν φουσκώσει τις τιμές. Οικονομική διαμονή υπάρχει στον Άγιο Νικόλαο."
+      }
+    },
+    {
+      layout: "list",
+      title: { en: "Agios Nikolaos", el: "Άγιος Νικόλαος" },
+      text: {
+        en: "The capital of Lasithi is not trying to be more than it is. A small city of around 10,000 people built around a remarkable geographical anomaly: a circular lake, 64 metres deep, connected to the sea by a narrow channel. The lake is called Voulismeni, and the story that it has no bottom — repeated on every menu placarded at the surrounding cafés — is among the more persistent myths in Cretan tourism. It does have a bottom. It's at 64 metres.\n\nThe harbourfront is the social core of the city. Tables run along both sides of the channel, and in the evening this strip fills up in the way that Greek port towns do — unhurriedly, and for a long time. The old quarter above the harbour has narrower streets, a Venetian gate, and considerably more reasonable prices than the waterfront.\n\n**The Archaeological Museum** — Often overlooked in favour of Heraklion's museum, the Agios Nikolaos Archaeological Museum has a collection that rewards careful attention. The Early Minoan material from the Sitia Geopark area is well-presented, and the collection includes a skull — displayed in a case that always generates discussion — with a gold laurel wreath resting on top of it, found with a Roman burial. The museum is small enough to do properly in an hour.\n\n**Kitroplatia Beach** — The town beach, a ten-minute walk from the lake. Organized, with sunbeds and a beach bar. Not the finest beach in the region — that honour goes to beaches further east — but pleasant for a morning swim and close to everything.\n\n**The Harbour at Night** — The channel between the lake and the harbour is lit at night. If you sit on the lake side rather than the port side, the prices drop and the view is identical.\n\nINSIDER TIP: The Agios Nikolaos market runs on Wednesday and Saturday mornings on Paleologou Street, two blocks back from the waterfront. Local honey, olive oil, cheese, and vegetables. More useful than the tourist shops on the harbour.",
+        el: "Η πρωτεύουσα του Λασιθίου είναι μια μικρή πόλη περίπου 10.000 κατοίκων χτισμένη γύρω από μια κυκλική λίμνη, 64 μέτρων βάθους, που συνδέεται με τη θάλασσα μέσω ενός στενού διαύλου. Η λίμνη ονομάζεται Βουλισμένη και η ιστορία ότι δεν έχει πάτο — επαναλαμβανόμενη σε κάθε μενού των γύρω καφέ — είναι ένας από τους πιο επίμονους μύθους του κρητικού τουρισμού. Έχει πάτο. Στα 64 μέτρα.\n\nΤο λιμάνι είναι η κοινωνική καρδιά της πόλης. Η παλιά συνοικία πάνω από το λιμάνι έχει στενότερους δρόμους, μια ενετική πύλη και σημαντικά πιο λογικές τιμές από την προκυμαία.\n\n**Αρχαιολογικό Μουσείο** — Συχνά παραβλέπεται υπέρ του μουσείου Ηρακλείου, αλλά η συλλογή του ανταμείβει την προσεκτική ματιά. Αξίζει μία ώρα.\n\n**Παραλία Κιτροπλατεία** — Η παραλία της πόλης, δέκα λεπτά με τα πόδια από τη λίμνη. Οργανωμένη, με ξαπλώστρες.\n\nΣΥΜΒΟΥΛΗ: Η αγορά του Αγίου Νικολάου λειτουργεί Τετάρτη και Σάββατο πρωί στην οδό Παλαιολόγου. Τοπικό μέλι, ελαιόλαδο, τυρί και λαχανικά."
+      }
+    },
+    {
+      layout: "list",
+      title: { en: "Elounda", el: "Ελούντα" },
+      text: {
+        en: "Elounda has been colonised at the high end. The bay — a Gulf of Finland-blue expanse sheltered between the main coast and the Spinalonga Peninsula — is extraordinary, and the international hotel industry noticed this some decades ago. The result is a concentration of five-star resorts that has made Elounda one of the most expensive destinations in Greece.\n\nThis creates a situation for the independent traveller. The bay itself is open. The beaches — including the long sandy strip around the village — are public. The water quality is exceptional. You can stay in Agios Nikolaos, drive up in the morning, spend a day on the bay's edge, and have the same water without the resort cost.\n\n**The Spinalonga Peninsula** — A narrow finger of land that encloses the bay from the north. The road to its tip leads through landscapes of dry stone walls, fig trees, and — toward the end — genuine solitude. The ancient sunken city of Olous is visible from the causeway at low water: barely visible, enough to understand why the causeway was built here. This is not a formal archaeological site; it is a shadow in the water. Worth the ten-minute walk from the causeway parking.\n\n**Plaka Village** — A tiny fishing village at the northern end of the bay, looking directly at Spinalonga. Boats to the island also depart from here — the crossing is shorter and quieter than from Elounda. The village has two or three tavernas on the waterfront. One of the finest views of Spinalonga is from the Plaka side, especially in the afternoon light.\n\nINSIDER TIP: Boats to Spinalonga run from three points: Elounda, Plaka, and Agios Nikolaos. The Agios Nikolaos boat takes longer but crosses more of the gulf and gives the best aerial view of the coastline. The Plaka crossing (about 10 minutes) is the most atmospheric — a small, almost wordless journey to an island you can see clearly the whole time.",
+        el: "Η Ελούντα έχει κατακτηθεί από την πολυτελή αγορά. Ο κόλπος είναι εξαιρετικός, αλλά η συγκέντρωση πολυτελών ξενοδοχείων την έχει κάνει έναν από τους ακριβότερους προορισμούς στην Ελλάδα.\n\nΗ ίδια η παραλία είναι δημόσια. Μείνετε στον Άγιο Νικόλαο, οδηγήστε το πρωί, περάστε τη μέρα στην άκρη του κόλπου και έχετε το ίδιο νερό χωρίς το κόστος του θερέτρου.\n\n**Χερσόνησος Σπιναλόγκας** — Η αρχαία βυθισμένη πόλη της Ολούντος είναι ορατή από τον διάδρομο σε χαμηλή στάθμη.\n\n**Πλάκα** — Ένα μικρό ψαροχώρι στο βόρειο άκρο του κόλπου, με θέα απευθείας στη Σπιναλόγκα. Βάρκες αναχωρούν και από εδώ.\n\nΣΥΜΒΟΥΛΗ: Βάρκες για Σπιναλόγκα από τρία σημεία. Η διάβαση από Πλάκα (περίπου 10 λεπτά) είναι η πιο ατμοσφαιρική."
+      }
+    },
+    {
+      layout: "list",
+      title: { en: "Spinalonga Island", el: "Σπιναλόγκα" },
+      text: {
+        en: "The island sits four kilometres offshore in a bay that is, by every reasonable measure, one of the most beautiful in Greece. The fortress was built by the Venetians in 1579 and held against the Ottomans until 1715 — long after the rest of Crete had fallen. The Ottomans used it. When the Ottomans left in 1903, the Greek state repurposed it as a leper colony, isolating the sick on the island for the next fifty-four years. The colony was closed in 1957. The last patient left. The village remained.\n\nWalking into Spinalonga today means walking into that village — intact streets, intact houses, intact church — with the knowledge of what it was. This is not comfortable, and that is precisely what makes it worth doing. The Venetian gate, with its inscription to the Venetian governor above the entrance, leads directly into streets that were lived in within living memory.\n\nThe site gained wider international attention through Victoria Hislop's 2005 novel The Island, set partly on Spinalonga, and subsequently through the Greek television adaptation. The novel brought significant tourist interest. The history does not require the novel.\n\n**Practical Information for Spinalonga** — Boats run regularly from Elounda, Plaka, and Agios Nikolaos. Tickets are purchased on the boat or at the jetty. The island itself has an entrance fee. Allow two to three hours. There is a small café on the island; there is no shade on the walk around the walls. Go before 10:00 or after 15:00 in summer — midday is both hot and crowded. The first boat of the morning (usually around 09:00 from Plaka) puts you on the island before the tour groups. The light is better. The silence is longer.",
+        el: "Το νησί βρίσκεται τέσσερα χιλιόμετρα ανοιχτά σε έναν κόλπο που είναι ένας από τους ομορφότερους στην Ελλάδα. Το φρούριο χτίστηκε από τους Ενετούς το 1579. Όταν οι Οθωμανοί έφυγαν το 1903, το ελληνικό κράτος το μετέτρεψε σε αποικία λεπρών, απομονώνοντας τους ασθενείς για τα επόμενα πενήντα τέσσερα χρόνια. Η αποικία έκλεισε το 1957.\n\nΤο περπάτημα στη Σπιναλόγκα σημαίνει να περπατάς σε ένα χωριό — άθικτους δρόμους, άθικτα σπίτια, άθικτη εκκλησία — με τη γνώση του τι ήταν. Αυτό δεν είναι άνετο, και αυτό ακριβώς το κάνει να αξίζει.\n\nΤο νησί έγινε γνωστό μέσα από το μυθιστόρημα της Victoria Hislop \"Το Νησί\" (2005).\n\n**Πρακτικές Πληροφορίες** — Βάρκες από Ελούντα, Πλάκα και Άγιο Νικόλαο. Αφήστε δύο με τρεις ώρες. Πηγαίνετε πριν τις 10:00 ή μετά τις 15:00 το καλοκαίρι."
+      }
+    },
+    {
+      layout: "grid",
+      title: { en: "Top Attractions in Eastern Lasithi", el: "Κορυφαία Αξιοθέατα στην Ανατολική Λασίθι" },
+      items: [
+        {
+          title: { en: "Toplou Monastery", el: "Μονή Τοπλού" },
+          text: {
+            en: "Twenty-five kilometres east of Sitia, the Toplou Monastery stands like something from another century — because it largely is. Founded in the fifteenth century, destroyed and rebuilt multiple times, it served as a communications hub for the Cretan resistance during the German occupation. The Icon of the Great Art by Ioannis Kornaros (1770) — a complex theological composition with 61 scenes — is displayed inside and is one of the most significant pieces of religious art in Crete. The monastery shop sells wine and olive oil made by the monks.",
+            el: "Είκοσι πέντε χιλιόμετρα ανατολικά της Σητείας, η Μονή Τοπλού ιδρύθηκε τον δέκατο πέμπτο αιώνα. Η Εικόνα της Μεγάλης Τέχνης από τον Ιωάννη Κορνάρο (1770) εκτίθεται στο εσωτερικό. Το μοναστήρι είναι ακόμη ενεργό."
+          }
+        },
+        {
+          title: { en: "Vai Palm Forest", el: "Φοινικόδασος Βάι" },
+          text: {
+            en: "Europe's largest natural palm forest. The Phoenix theophrasti is a Cretan endemic — not imported, not planted, not the result of landscaping. The palms crowd a beach that faces east, which means it catches the morning light in a way that southern-facing beaches do not. The grove has been managed and protected since the 1980s. Go before 08:30 if you want the grove in near-solitude. INSIDER TIP: The path from the car park to the northern end of the beach takes about fifteen minutes. The southern end is quieter, less organised, and has cleaner snorkelling.",
+            el: "Το μεγαλύτερο φυσικό φοινικόδασος της Ευρώπης. Ο φοίνικας Phoenix theophrasti είναι κρητικό ενδημικό είδος. Η παραλία βλέπει ανατολικά, πιάνοντας το πρωινό φως. Πηγαίνετε πριν τις 08:30 για ηρεμία."
+          }
+        },
+        {
+          title: { en: "Kato Zakros & the Minoan Palace", el: "Κάτω Ζάκρος & Μινωικό Ανάκτορο" },
+          text: {
+            en: "At the far eastern end of the road system, Kato Zakros sits at the bottom of the Zakros Gorge. The Minoan palace here, excavated from 1961, is the fourth great Minoan palace site after Knossos, Phaistos, and Malia. It is also the least visited and the best preserved in its lower levels — still partially buried, still giving the sense of excavation rather than reconstruction. The beach in front of the village is calm and clean.",
+            el: "Στο ανατολικότερο άκρο του οδικού δικτύου, το μινωικό ανάκτορο της Ζάκρου είναι το τέταρτο μεγάλο μινωικό ανάκτορο. Είναι το λιγότερο επισκέψιμο και το καλύτερα διατηρημένο στα κατώτερα επίπεδά του."
+          }
+        },
+        {
+          title: { en: "Xerokampos", el: "Ξερόκαμπος" },
+          text: {
+            en: "South of Zakros, reachable by a rough road. Xerokampos is a scattered hamlet on a wide, flat beach with a handful of pensions and tavernas. One of the few beaches on Crete that still functions on an agricultural calendar — the locals have farms and apartments, not hotels and packages. A place you either love immediately or don't understand.",
+            el: "Νότια της Ζάκρου, ο Ξερόκαμπος είναι ένας διάσπαρτος οικισμός σε μια φαρδιά, επίπεδη παραλία. Μια από τις λίγες παραλίες στην Κρήτη που λειτουργεί ακόμα με γεωργικό ημερολόγιο."
+          }
+        },
+        {
+          title: { en: "Sitia Geopark", el: "Γεωπάρκο Σητείας" },
+          text: {
+            en: "UNESCO Global Geopark status was granted in 2021. The park covers the eastern tip of Crete — a landscape shaped by tectonic forces, with fossil sites, sea caves, rare plant species, and geological complexity. The gorge systems — particularly Richtis Gorge, with its 25-metre waterfall emptying into a natural pool — are the most accessible highlights. The trail is reasonably maintained; good shoes are sufficient.",
+            el: "Αναγνωρίστηκε ως Παγκόσμιο Γεωπάρκο UNESCO το 2021. Το φαράγγι Ρίχτη, με τον καταρράκτη 25 μέτρων, είναι το πιο προσιτό αξιοθέατο."
+          }
+        }
+      ]
+    },
+    {
+      layout: "grid",
+      title: { en: "Best Beaches in Lasithi", el: "Οι Καλύτερες Παραλίες στο Λασίθι" },
+      items: [
+        {
+          title: { en: "Voulisma Beach", el: "Παραλία Βούλισμα" },
+          text: {
+            en: "Near Istro (20km east of Agios Nikolaos). A semi-circular bay with sand that is fine even by Aegean standards, calm water, and a backdrop of hills. Well-organised in summer with sunbeds and a beach bar. One of the finest organised beaches in the region.",
+            el: "Κοντά στην Ίστρο (20χλμ. ανατολικά του Αγίου Νικολάου). Ημικυκλικός κόλπος με ψιλή άμμο, ήρεμα νερά και λόφους στο βάθος."
+          }
+        },
+        {
+          title: { en: "Istro Beach", el: "Παραλία Ίστρου" },
+          text: {
+            en: "A longer and wilder stretch than Voulisma. The eastern end is rarely developed and often empty in the morning. The snorkelling off the rocks on the left is worth the walk.",
+            el: "Μεγαλύτερη και πιο άγρια από το Βούλισμα. Το ανατολικό άκρο είναι συχνά άδειο το πρωί."
+          }
+        },
+        {
+          title: { en: "Mochlos Islet", el: "Νησίδα Μόχλου" },
+          text: {
+            en: "A tiny rocky island 200 metres from the village of Mochlos, reachable by swimming or a short paddle. The island has a Minoan settlement on it. The water between the island and the shore is some of the clearest in the region.",
+            el: "Μικρή βραχονησίδα 200 μέτρα από το χωριό Μόχλος. Η θάλασσα μεταξύ του νησιού και της ακτής είναι από τις πιο καθαρές στην περιοχή."
+          }
+        },
+        {
+          title: { en: "Kalo Nero (Ierapetra)", el: "Καλό Νερό (Ιεράπετρα)" },
+          text: {
+            en: "On the south coast, west of Ierapetra. Long, undeveloped, dark sand. The south coast beaches in Lasithi are different from the north — wider exposure to the Libyan Sea, stronger swell, and more dramatic cloud formations.",
+            el: "Στη νότια ακτή, δυτικά της Ιεράπετρας. Μακριά, ανεκμετάλλευτη, με σκούρα άμμο και ισχυρότερη διόγκωση."
+          }
+        },
+        {
+          title: { en: "Kouremenos Beach (Palekastro)", el: "Παραλία Κουρεμένος (Παλαίκαστρο)" },
+          text: {
+            en: "The best windsurfing beach in Crete. A consistent meltemi wind, a long sandy bay, a windsurfing school that has operated here for decades. If you windsurf or are willing to learn, this is the reason to drive east.",
+            el: "Η καλύτερη παραλία windsurfing στην Κρήτη. Συνεπής μελτέμι, μακρύς αμμώδης κόλπος και σχολή windsurfing."
+          }
+        },
+        {
+          title: { en: "Xerokampos Beach", el: "Παραλία Ξερόκαμπου" },
+          text: {
+            en: "Wide, flat, clean, almost always quiet. No significant nightlife infrastructure. The snorkelling along the rocky headlands on either side of the bay is excellent. INSIDER TIP: The Cretan south coast is exposed to the Libyan Sea. In summer, this means warmer water but also occasional strong southerly winds. Check the wind before committing to a long drive.",
+            el: "Φαρδιά, επίπεδη, καθαρή, σχεδόν πάντα ήσυχη. Το κολύμπι με μάσκα κατά μήκος των βραχωδών ακρογιαλιών είναι εξαιρετικό."
+          }
+        }
+      ]
+    },
+    {
+      layout: "list",
+      title: { en: "Food & Drink in Lasithi", el: "Φαγητό & Ποτό στο Λασίθι" },
+      text: {
+        en: "Eastern Cretan food is not a lesser version of the Cretan diet — it is a regional expression of it, with its own emphases. The olive oil from the Sitia zone is produced from the Koroneiki variety at high altitude and is among the most sought-after PDO oils in Europe. The local cheeses — particularly the aged graviera from mountain villages — are distinct from their western Cretan equivalents. The wine from the Sitia wine region, built on the Liatiko grape (one of Greece's oldest varieties), is barely distributed outside Crete.\n\n**Sitia Olive Oil** — PDO-protected, produced from Koroneiki olives at altitude. Peppery finish, green-gold colour. Buy it at the Toplou Monastery shop or direct from producers near Sitia.\n\n**Liatiko Wine** — An ancient red grape variety grown almost exclusively in the Sitia zone. Produces a medium-bodied, sometimes semi-sweet red with strong local character. Rarely found outside Crete.\n\n**Dakos** — The baseline of Cretan food: barley rusk, tomato, mizithra, olive oil, oregano. In Lasithi's village tavernas, the rusk is often harder and the mizithra sharper than in tourist-facing versions.\n\n**Octopus at Mochlos** — The village of Mochlos has two or three tavernas and a local fishing fleet. Octopus dried on the line outside the kitchen and then grilled is the canonical order.\n\n**Honey from the Dikti Mountains** — The thyme honey from the mountains surrounding the Lasithi Plateau is among the finest in Greece. Sold in village shops and at the Saturday market in Agios Nikolaos.\n\n**Staka** — Rendered sheep's milk butter — a Cretan cooking fat rarely seen on restaurant menus but used in traditional homes.\n\n**Raki (Tsikoudia)** — Arrives without being asked in traditional tavernas. In eastern Crete, raki is often served with a small sweet rather than mezedes.\n\nINSIDER TIP: The tavernas in Mochlos, Xerokampos, and the villages around Sitia set their prices without reference to what the tourism market will bear — because few tourists find them. A full meal with raki and dessert in one of these places costs less than a salad in Elounda.",
+        el: "Η ανατολική κρητική κουζίνα είναι μια περιφερειακή έκφραση της κρητικής διατροφής με τις δικές της έμφασεις. Το ελαιόλαδο Σητείας ΠΟΠ είναι από τα πιο περιζήτητα στην Ευρώπη. Το κρασί από την οινοπαραγωγική ζώνη της Σητείας, χτισμένο πάνω στο σταφύλι Λιάτικο, σπάνια διανέμεται εκτός Κρήτης.\n\n**Ελαιόλαδο Σητείας** — ΠΟΠ, από ελιές Κορωνέικι σε υψόμετρο. Αγοράστε το στο μοναστήρι Τοπλού.\n\n**Κρασί Λιάτικο** — Αρχαία ποικιλία που παράγεται σχεδόν αποκλειστικά στη ζώνη της Σητείας.\n\n**Χταπόδι στο Μόχλο** — Το χταπόδι αποξηραίνεται στην πετονιά έξω από την κουζίνα και στη συνέχεια ψήνεται στα κάρβουνα.\n\n**Μέλι από τη Δίκτη** — Το θυμάρι μέλι από τα βουνά γύρω από το Οροπέδιο Λασιθίου είναι από τα καλύτερα στην Ελλάδα.\n\nΣΥΜΒΟΥΛΗ: Οι ταβέρνες στο Μόχλο, τον Ξερόκαμπο και τα χωριά γύρω από τη Σητεία κοστίζουν λιγότερο από μια σαλάτα στην Ελούντα."
+      }
+    },
+    {
+      layout: "list",
+      title: { en: "Best Time to Visit Lasithi", el: "Η Καλύτερη Εποχή για το Λασίθι" },
+      text: {
+        en: "**April – May** — Best for gorge walks, the countryside in bloom. Spinalonga is open and quiet. Sea is cool but swimmable in May.\n\n**June** — The finest month. Sea temperature rises, the meltemi hasn't established, and the far east of the region is not yet crowded. Kouremenos has good wind for surfing.\n\n**July – August** — Peak heat and peak visitors at Elounda and Agios Nikolaos. Further east — Sitia, Vai, Zakros — remains manageable. Strong meltemi on exposed coasts. Excellent for windsurfing.\n\n**September – October** — The best period for those who don't need school holiday dates. Sea is warmest, light is extraordinary, harvest season. Sitia wine region festival in September.\n\n**November – March** — Most of the coast closes. Agios Nikolaos remains open year-round. A handful of tavernas in Elounda stay open for local trade.\n\nINSIDER TIP: September in the Sitia wine zone is harvest time. A handful of producers — including Lyrarakis and Economou — accept visits during harvest. This is not organised wine tourism; it involves raki at some point.",
+        el: "**Απρίλιος – Μάιος** — Καλύτερα για περιπάτους σε φαράγγια και εξοχή σε άνθιση.\n\n**Ιούνιος** — Ο καλύτερος μήνας. Η θερμοκρασία της θάλασσας ανεβαίνει, το μελτέμι δεν έχει εγκατασταθεί ακόμα.\n\n**Ιούλιος – Αύγουστος** — Αιχμή ζέστης και επισκεπτών. Πιο ανατολικά παραμένει διαχειρίσιμο.\n\n**Σεπτέμβριος – Οκτώβριος** — Η καλύτερη περίοδος. Η θάλασσα είναι πιο ζεστή, το φως εξαιρετικό, περίοδος συγκομιδής.\n\n**Νοέμβριος – Μάρτιος** — Οι περισσότερες ακτές κλείνουν. Ο Άγιος Νικόλαος παραμένει ανοιχτός όλο τον χρόνο."
+      }
+    },
+    {
+      layout: "list",
+      title: { en: "How to Get to Lasithi", el: "Πώς να Πάτε στο Λασίθι" },
+      text: {
+        en: "**By Air** — Heraklion International Airport (HER) is the primary gateway — 70km west of Agios Nikolaos. Sitia has a small domestic airport (JSH) with seasonal connections to Athens and a handful of other Greek airports. For most international arrivals, Heraklion is the starting point and a rental car is the most practical next step.\n\n**By Ferry** — Agios Nikolaos has a small ferry port with seasonal connections within Crete and occasional links to the Dodecanese and Cyclades. Sitia has a more active port with regular service to Rhodes, Karpathos, and Kassos. Neither port handles the volume of Heraklion or Piraeus.\n\n**By Car from Heraklion** — The E75 coastal highway runs east from Heraklion. Agios Nikolaos is 1 hour 10 minutes. Sitia is around 2 hours. Kato Zakros is 2 hours 45 minutes. The road quality is good on the main E75; the roads to the far eastern villages require attention and occasionally a vehicle with reasonable clearance.\n\n**By Bus (KTEL)** — KTEL Lasithi runs frequent buses from Heraklion to Agios Nikolaos and Sitia. Connections beyond those towns are much less frequent. A car is the only practical way to reach Vai, Zakros, Xerokampos, or the Sitia Geopark trails.\n\nCar hire note: If you are renting in Heraklion and driving to Lasithi, check whether your rental agreement covers the mountain roads to the Lasithi Plateau and the Zakros area — some budget rental agreements exclude unpaved roads.",
+        el: "**Αεροπορικώς** — Διεθνές Αεροδρόμιο Ηρακλείου (HER), 70χλμ. δυτικά του Αγίου Νικολάου. Η Σητεία έχει μικρό αεροδρόμιο εσωτερικού.\n\n**Ακτοπλοϊκώς** — Ο Άγιος Νικόλαος και η Σητεία έχουν λιμάνια με συνδέσεις εσωτερικού.\n\n**Με αυτοκίνητο από Ηράκλειο** — Η Ε75 τρέχει ανατολικά. Άγιος Νικόλαος: 1ώ 10λ. Σητεία: περίπου 2 ώρες.\n\n**Με λεωφορείο (KTEL)** — Συχνά δρομολόγια από Ηράκλειο προς Άγιο Νικόλαο και Σητεία."
+      }
+    },
+    {
+      layout: "list",
+      title: { en: "Practical Tips for Lasithi", el: "Πρακτικές Συμβουλές" },
+      text: {
+        en: "**Orientation** — Lasithi is a large region. Agios Nikolaos is the natural base for the western area (Elounda, Spinalonga, Voulisma). Sitia is the better base if you are spending time in the far east (Toplou, Vai, Zakros). Two bases — two or three nights each — is a better structure.\n\n**Getting Around** — A car is essential beyond the Agios Nikolaos–Elounda corridor. The KTEL buses serve the main towns but not on schedules useful for day use at beaches or sites.\n\n**Money and Payments** — ATMs in Agios Nikolaos and Sitia. Beyond those towns, carry cash. The village tavernas in Xerokampos and Mochlos almost always operate on cash only.\n\n**Language** — English is spoken in Agios Nikolaos and Elounda. In the far east — Sitia, Zakros, Xerokampos — you are in Greece. A few words of Greek will serve you well.\n\n**Driving Conditions** — The road to Kato Zakros is paved but winding. The road to Xerokampos via Ziros involves a significant descent on a narrow road. The Lasithi Plateau ring road climbs through 20+ hairpin turns. All of it is driveable in a standard car. None of it should be attempted at night without familiarity.\n\n**Spinalonga Tickets** — Entrance to the island is ticketed. In July and August, buy boat and island tickets in the morning for the early crossing. No advance online booking is currently available for the island entrance itself (as of 2025); boat operators sell on the day.",
+        el: "**Προσανατολισμός** — Ο Άγιος Νικόλαος είναι η βάση για τη δυτική περιοχή. Η Σητεία για την άπω ανατολή.\n\n**Μετακινήσεις** — Απαραίτητο το αυτοκίνητο.\n\n**Χρήματα** — ΑΤΜ σε Άγιο Νικόλαο και Σητεία. Στα χωριά μόνο μετρητά.\n\n**Γλώσσα** — Αγγλικά στον Άγιο Νικόλαο. Πιο ανατολικά, είστε στην Ελλάδα.\n\n**Οδήγηση** — Ο δρόμος για Κάτω Ζάκρο είναι ασφαλτοστρωμένος αλλά με στροφές.\n\n**Εισιτήρια Σπιναλόγκας** — Η είσοδος στο νησί είναι με εισιτήριο. Αγοράστε το πρωί το καλοκαίρι."
+      }
+    },
+    {
+      layout: "grid",
+      title: { en: "FAQ — Lasithi Essentials", el: "Συχνές Ερωτήσεις" },
+      items: [
+        {
+          title: { en: "How many days do you need in Lasithi?", el: "Πόσες μέρες χρειάζεστε στο Λασίθι;" },
+          text: {
+            en: "Four to five days is a reasonable minimum to cover the region properly — Agios Nikolaos, Spinalonga, and Elounda on the north; Ierapetra on the south; and two days in the far east (Sitia, Toplou, Vai, and Zakros). You can do a highlights version in three days if you are based centrally and willing to drive.",
+            el: "Τέσσερις με πέντε ημέρες είναι ένα λογικό ελάχιστο. Μια εκδοχή περιλήψεων μπορεί να γίνει σε τρεις ημέρες."
+          }
+        },
+        {
+          title: { en: "Is Lasithi or Chania better for a first visit?", el: "Λασίθι ή Χανιά για πρώτη επίσκεψη;" },
+          text: {
+            en: "Chania is more immediately accessible with better public transport and accommodation options. Lasithi is more rewarding if you have a car and are willing to drive. A split works well: a few days in Chania or Heraklion, then drive east.",
+            el: "Τα Χανιά είναι πιο προσιτά. Το Λασίθι είναι πιο ανταποδοτικό για όσους έχουν αυτοκίνητο."
+          }
+        },
+        {
+          title: { en: "Is Spinalonga worth visiting?", el: "Αξίζει η Σπιναλόγκα;" },
+          text: {
+            en: "Yes. One of the few sites in Greece where the 20th century is as present as antiquity. The Venetian fortress is significant on its own terms; the leper colony history gives it a layer that purely ancient sites do not have. Allow two to three hours and do not skip the far end where the colony's church and hospital buildings are located.",
+            el: "Ναι. Ένα από τα λίγα μέρη στην Ελλάδα όπου ο 20ός αιώνας είναι τόσο παρών όσο η αρχαιότητα."
+          }
+        },
+        {
+          title: { en: "Is Elounda worth it without a luxury hotel?", el: "Αξίζει η Ελούντα χωρίς πολυτελές ξενοδοχείο;" },
+          text: {
+            en: "The bay is worth it for a day even without a luxury hotel. Drive up from Agios Nikolaos, use the public beach, take a boat to Spinalonga from Plaka, have lunch at the waterfront tavernas. The bay is a public resource.",
+            el: "Ο κόλπος αξίζει ακόμα και χωρίς πολυτελές ξενοδοχείο. Οδηγήστε από τον Άγιο Νικόλαο."
+          }
+        },
+        {
+          title: { en: "Can you visit Vai in a day trip from Agios Nikolaos?", el: "Μπορείτε να επισκεφθείτε το Βάι σε ημερήσια εκδρομή;" },
+          text: {
+            en: "Yes, but it is a long day — around 1 hour 30 minutes each way on winding roads. A better structure is to stay in Sitia for two nights and use it as a base for Vai, Toplou, and Zakros.",
+            el: "Ναι, αλλά είναι μεγάλη ημέρα. Καλύτερα να μείνετε στη Σητεία για δύο βράδια."
+          }
+        },
+        {
+          title: { en: "What is the Lasithi Plateau?", el: "Τι είναι το Οροπέδιο Λασιθίου;" },
+          text: {
+            en: "A high mountain plateau at around 840 metres altitude, ringed by the Dikti Mountains. Famous for its windmills (mostly decommissioned) and the Psychro Cave — traditionally identified as the birthplace of Zeus. The drive up through the mountain switchbacks is the most scenic part. Combined with the Psychro Cave, it makes a half-day trip from Heraklion.",
+            el: "Ένα ορεινό οροπέδιο σε υψόμετρο περίπου 840 μέτρων, διάσημο για το Σπήλαιο Ψυχρού — παραδοσιακά ταυτισμένο ως γενέτειρα του Δία."
+          }
+        },
+        {
+          title: { en: "Is Lasithi suitable for families?", el: "Είναι το Λασίθι κατάλληλο για οικογένειες;" },
+          text: {
+            en: "Very much so, particularly the north coast — Agios Nikolaos, the calm beaches of Elounda bay, Voulisma. The Spinalonga story requires care with younger children, but the site itself is not graphic. The south coast beaches are better for older children who swim confidently. Kouremenos is excellent for older children interested in water sports.",
+            el: "Απολύτως, ιδιαίτερα στη βόρεια ακτή. Η Σπιναλόγκα απαιτεί προσοχή με μικρότερα παιδιά."
+          }
+        }
+      ]
+    },
+    {
+      layout: "list",
+      title: { en: "Honest Advice — What to Skip in Lasithi", el: "Ειλικρινής Συμβουλή — Τι να Αποφύγεις στο Λασίθι" },
+      text: {
+        en: "✕ **Agios Nikolaos harbour restaurants** — The lakeside town is picturesque but the harbour restaurants are overpriced and tourist-oriented. Walk five minutes to the Ammoudi area for better food with fewer crowds.\n\n✕ **Elounda as a base** — Elounda is exclusive and beautiful but also isolated from the rest of Crete. The resorts here are luxury enclaves that keep you away from the island's real character.\n\n✕ **Spinalonga island in peak hours** — The Venetian fortress island is fascinating but the small boats deliver too many people at once. Go on the first departure (09:00) when the light is beautiful and the crowds are thin.\n\n✕ **Skipping the Dikti mountains** — The drive from Agios Nikolaos up to the Lassithi Plateau and the Dikti cave system is a completely different Crete — mountain villages, fruit orchards, and dramatic limestone peaks.\n\n✕ **Only the east coast** — Lasithi has a quieter, more mountainous west side (Ierapetra, Makrygialos) that few visitors discover. The drive from Ierapetra to Makrygialos through the Libyan Sea coastline is one of Crete's hidden gems.\n\n💡 What nobody tells you: The best beach in Lasithi is not in the tourist brochures — it is Vai, the palm forest beach on the east coast, and it is worth visiting not for the beach itself (which can be crowded) but for the short hike to the abandoned monastery above it, where the views are spectacular and the silence is total.",
+        el: "✕ **Ταβέρνες λιμαριού Αγ. Νικολάου** — Όμορφη αλλά ακριβή. Αμμούδι 5 λεπτά — καλύτερα.\n\n✕ **Ελούντα ως βάση** — Λουξερική, απομακρυσμένη. Resorts, όχι Κρήτη.\n\n✕ **Σπιναλόγκα στην αιχμή** — Ενδιαφέρον αλλά πολύς κόσμος. Πρώτο πλοίο 09:00.\n\n✕ **Δίκτη βουνά** — Λασίθι Πλατό, σπήλιο Δίκτη — διαφορετική Κρήτη.\n\n✕ **Μόνο ανατολική ακτή** — Δυτική (Ιεράπετρα, Μακρύγιαλο) λιγότερο γνωστή. Drive Λιβυκής Θάλασσας.\n\n💡 Αυτό που δε σου λέει κανείς: Η καλύτερη παραλία δεν είναι στο βιβλίο — είναι η Βάι, το φοινικόδασος. Αλλά η πραγματική αξία είναι το μονοπάτι στο εγκαταλελειμμένο μονάχι πάνω, με θέα και απόλυτη σιωπή."
+      }
     }
   ],
 
@@ -6736,8 +6976,21 @@ export const destinationSections: Record<string, DestinationSection[]> = {
     },
     {
       title: {
+        en: "",
+        el: "",
+      },
+      gallery: [
+        {
+          image: "/images/mykonos-gallery-2.webp",
+          alt: { en: "Mykonos, Greece", el: "Μύκονος, Ελλάδα" },
+          caption: { en: "Mykonos, Greece", el: "Μύκονος, Ελλάδα" },
+        },
+      ],
+    },
+    {
+      title: {
         en: "FAQ",
-        el: "Συχνές Ερωτήσεις"
+        el: "FAQ (συχνές ερωτήσεις)",
       },
       layout: "faq",
       items: [
@@ -10573,6 +10826,449 @@ export const destinationSections: Record<string, DestinationSection[]> = {
         {
           title: { en: "How many days do I need in Tinos?", el: "Πόσες μέρες χρειάζομαι στην Τήνο;" },
           text: { en: "Three days is the minimum for the church, Pyrgos, Volax and a beach. Five days allows you to explore the interior villages, visit the north coast, eat well and slow down. Tinos rewards extended stays more than almost any other Cycladic island.", el: "Τρεις μέρες ελάχιστα, πέντε για να εξερευνήσετε σωστά. Η Τήνος ανταμείβει τις μεγαλύτερες διαμονές." }
+        }
+      ]
+    }
+  ],
+  kalymnos: [
+    {
+      layout: "numbered",
+      title: { en: "Why Visit Kalymnos", el: "Γιατί να Επισκεφτείς την Κάλυμνο" },
+      items: [
+        {
+          title: { en: "World capital of sport climbing — beginners welcome as much as experts", el: "Παγκόσμια πρωτεύουσα αθλητικής αναρρίχησης" },
+          text: {
+            en: "Over 3,000 bolt-protected climbing routes have been developed on Kalymnos's limestone cliffs since the 1990s, covering grades from beginner to elite and spanning dozens of crags above the western coast. The combination of rock quality, sun exposure, sea views from the wall and the concentration of routes within walking distance of accommodation has made Kalymnos the most visited climbing destination on earth. Every October, the Kalymnos Climbing Festival draws athletes and enthusiasts from over forty countries.",
+            el: "Πάνω από 3.000 προστατευμένες διαδρομές αναρρίχησης έχουν αναπτυχθεί στους ασβεστολιθικούς βράχους από τη δεκαετία του 1990. Η ποιότητα του βράχου, η θέα στη θάλασσα και η συγκέντρωση διαδρομών σε απόσταση περπατήματος από καταλύματα έχουν κάνει την Κάλυμνο τον πιο δημοφιλή προορισμό αναρρίχησης στον κόσμο."
+          }
+        },
+        {
+          title: { en: "The sponge-diving heritage — the most moving cultural tradition in any Greek island", el: "Η παράδοση της σπογγαλιείας" },
+          text: {
+            en: "Kalymnos was the centre of the Mediterranean sponge trade for centuries. The Nautical and Folklore Museum in Pothia tells the full story with exceptional depth. The sponge shops on the harbour sell genuine natural sponges harvested from the Aegean and Mediterranean floor. The spring Sponge Diving Festival is one of the most authentic island celebrations in Greece.",
+            el: "Η Κάλυμνος ήταν το κέντρο του εμπορίου σφουγγαριών στη Μεσόγειο για αιώνες. Το Ναυτικό και Λαογραφικό Μουσείο στην Πόθια αφηγείται την πλήρη ιστορία. Τα μαγαζιά με σφουγγάρια στο λιμάνι πουλάνε γνήσια φυσικά σφουγγάρια."
+          }
+        },
+        {
+          title: { en: "Telendos — a car-free island visible from every café in Massouri", el: "Τέλενδος — νησί χωρίς αυτοκίνητα" },
+          text: {
+            en: "The small island of Telendos sits 600 metres west of Kalymnos across a shallow channel. It is permanently inhabited by a small community of fishermen and farmers, has no cars, one main path between its small harbour and its beaches, and a handful of tavernas that serve the freshest fish on the channel. Taking the caïque across at sunset for dinner is one of the finest simple pleasures in the Dodecanese. The underwater ruins of the ancient city between the two islands are visible in calm shallow water.",
+            el: "Η Τέλενδος βρίσκεται 600 μέτρα δυτικά της Καλύμνου. Δεν έχει αυτοκίνητα, ένα μονοπάτι συνδέει το λιμάνι με τις παραλίες, και οι ταβέρνες σερβίρουν τα φρέσκα ψάρια του περάσματος. Τα βυθισμένα ερείπια της αρχαίας πόλης είναι ορατά σε ήρεμα ρηχά νερά."
+          }
+        },
+        {
+          title: { en: "Vathi valley — the most surprising landscape in the Dodecanese", el: "Κοιλάδα Βαθύ — το πιο εκπληκτικό τοπίο στη Δωδεκάνησο" },
+          text: {
+            en: "The valley of Vathi on the east coast cuts deep into the limestone mountains in a narrow, lush canyon of mandarin and lemon orchards, fig trees and oleander, with a small harbour at its mouth where the sea reaches the valley floor. In autumn, the mandarins turn orange and the valley fills with a citrus scent that is specific to this place and no other in the Aegean. Arriving by boat into the Vathi inlet — the cliffs closing around you as the valley opens ahead — is one of the most unexpected and beautiful arrivals in the Greek islands.",
+            el: "Η κοιλάδα του Βαθιού κόβει βαθιά στα ασβεστολιθικά βουνά σε ένα στενό, καταπράσινο φαράγγι με μανταρινιές, λεμονιές, συκιές και πικροδάφνες. Το φθινόπωρο, τα μανταρίνια γίνονται πορτοκαλί και η κοιλάδα γεμίζει με ένα άρωμα εσπεριδοειδών που δεν υπάρχει πουθενά αλλού στο Αιγαίο."
+          }
+        },
+        {
+          title: { en: "Pothia — a harbour capital unlike any other in the Dodecanese", el: "Πόθια — ένα λιμάνι που δεν μοιάζει με κανένα άλλο" },
+          text: {
+            en: "Pothia is the largest town in the Dodecanese after Rhodes and Kos Town. The neoclassical mansions built by wealthy sponge merchants in the 19th and early 20th centuries line the harbour in faded ochre, terracotta and blue. The town has a working-town energy — market streets, hardware shops, kafeneions where old men play tavli — that makes it one of the most authentically Greek port towns in the island chain.",
+            el: "Η Πόθια είναι η μεγαλύτερη πόλη της Δωδεκανήσου μετά τη Ρόδο και την Κω. Τα νεοκλασικά αρχοντικά χτισμένα από πλούσιους εμπόρους σφουγγαριών γραμμώνουν το λιμάνι σε ώχρα, τερακότα και μπλε."
+          }
+        },
+        {
+          title: { en: "Excellent beaches, almost entirely uncrowded by Aegean standards", el: "Εξαιρετικές παραλίες, σχεδόν άδειες" },
+          text: {
+            en: "Kalymnos has a series of fine beaches along its west coast — from the pebble-and-sand coves below the climbing crags at Massouri and Myrties to the long sandy beach at Emborios in the far north. None of these is famous in the way that Mykonos or Santorini beaches are famous, which means they are available at full quality without reservation systems, €30 sunbed charges or the sense that you are sharing a beautiful place with every other person who has a smartphone.",
+            el: "Η Κάλυμνος έχει εξαιρετικές παραλίες κατά μήκος της δυτικής ακτής — από τα βοτσαλωτά κολπάκια κάτω από τους βράχους αναρρίχησης μέχρι τη μακριά αμμώδη παραλία στον Εμπορειό στο βορρά."
+          }
+        },
+        {
+          title: { en: "Perfectly positioned for exploring the northern Dodecanese", el: "Ιδανική βάση για εξερεύνηση της βόρειας Δωδεκανήσου" },
+          text: {
+            en: "Kalymnos sits at the centre of the northern Dodecanese chain with regular ferry connections to Kos (30 minutes by high-speed), Leros (45 minutes), Patmos (2 hours) and Rhodes. Day trips to the ancient site of Kos Town, the Hippocrates plane tree and the Asklepion are feasible. The tiny island of Pserimos — population under 100, one beach, three tavernas — is reachable in 20 minutes by excursion boat.",
+            el: "Η Κάλυμνος βρίσκεται στο κέντρο της βόρειας Δωδεκανήσου με τακτικές ακτοπλοϊκές συνδέσεις προς Κω (30 λεπτά), Λέρο (45 λεπτά), Πάτμο (2 ώρες) και Ρόδο."
+          }
+        }
+      ]
+    },
+    {
+      layout: "list",
+      title: { en: "Rock Climbing — World Capital", el: "Αθλητική Αναρρίχηση — Παγκόσμια Πρωτεύουσα" },
+      text: {
+        en: "Kalymnos became a climbing destination in the early 1990s when Greek and Italian climbers began bolting routes on the magnificent orange and grey limestone walls of the western coast. The rock — Jurassic limestone, sculpted by millennia of sea air into pockets, tufas and edges — is considered among the finest climbing rock in the world. Routes run directly above the sea in many places, with views across to Telendos and the open Aegean that make the climbing experience unique even by international standards.\n\nThe main climbing areas — Grande Grotta, Odyssey, Spartacus, Poets, Jurassic Park, Ghost Kitchen — are all within walking distance or a short drive of Massouri, which has become the island's climbing hub with gear shops, guidebook shops, outdoor cafés and a community of long-stay climbers that gives it an energetic, international character. Over 3,000 routes across 70+ crags, from beginner to elite grades. The Kalymnos Climbing Festival in October is the largest sport climbing event in Greece.\n\nNon-climbers: the crags are visible from the coast road and the beach below — watching experienced climbers move on vertical limestone above turquoise water is one of the most striking visual spectacles the Greek islands offer. Several schools offer beginner courses; the rock is approachable and the bolted protection makes safe top-rope climbing accessible to first-timers within hours.",
+        el: "Η Κάλυμνος έγινε προορισμός αναρρίχησης στις αρχές της δεκαετίας του 1990. Ο βράχος — Ιουρασικός ασβεστόλιθος — θεωρείται από τους καλύτερους στον κόσμο για αναρρίχηση. Οι κύριες περιοχές — Grande Grotta, Odyssey, Spartacus, Poets — είναι όλες σε απόσταση περπατήματος από το Μασσούρι. Πάνω από 3.000 διαδρομές σε 70+ περιοχές."
+      }
+    },
+    {
+      title: { en: "", el: "" },
+      gallery: [
+        {
+          image: "/images/kalymnos-gallery-1.webp",
+          alt: { en: "Kalymnos island — Dodecanese, Greece", el: "Κάλυμνος, Δωδεκάνησα, Ελλάδα" },
+          caption: { en: "Kalymnos island — Dodecanese, Greece", el: "Κάλυμνος, Δωδεκάνησα, Ελλάδα" },
+        },
+      ],
+    },
+    {
+      layout: "list",
+      title: { en: "Best Time to Visit Kalymnos", el: "Η Καλύτερη Εποχή για την Κάλυμνο" },
+      items: [
+        {
+          title: { en: "March – April", el: "Μάρτιος – Απρίλιος" },
+          text: {
+            en: "The finest months for climbing — mild temperatures, long days, the crags are uncrowded and the rock is dry. The Spring Sponge Diving Festival takes place in late April or early May, blessing the boats and their crews in a ceremony unchanged for generations. The island is quiet and entirely local in character.",
+            el: "Οι καλύτεροι μήνες για αναρρίχηση. Το Ανοιξιάτικο Φεστιβάλ Σπογγαλιείας γίνεται τέλη Απριλίου ή αρχές Μαΐου."
+          }
+        },
+        {
+          title: { en: "May – June", el: "Μάιος – Ιούνιος" },
+          text: {
+            en: "Ideal for the full island experience — warm enough for swimming, uncrowded beaches, excellent taverna food, and climbing conditions that are still very good before the summer heat. The Vathi valley mandarins are green and fragrant.",
+            el: "Ιδανικά για την πλήρη εμπειρία του νησιού. Ζεστά για μπάνιο, οι παραλίες δεν έχουν ακόμα πολύ κόσμο."
+          }
+        },
+        {
+          title: { en: "July – August", el: "Ιούλιος – Αύγουστος" },
+          text: {
+            en: "Peak season. The beaches are at their best; the north-facing crags remain climbable even in summer heat; the island is lively and well-supplied. The meltemi provides a cooling breeze on the west coast. Book accommodation ahead.",
+            el: "Υψηλή περίοδος. Οι παραλίες είναι υπέροχες, τα βόρεια πεδία αναρρίχησης παραμένουν προσβάσιμα. Κλείστε καταλύματα εκ των προτέρων."
+          }
+        },
+        {
+          title: { en: "September", el: "Σεπτέμβριος" },
+          text: {
+            en: "Excellent in every respect. The sea is at its warmest, the beaches are emptying, the Vathi mandarins are beginning to turn orange and the climbing conditions return to spring quality. One of the finest months in the Dodecanese calendar.",
+            el: "Εξαιρετικός μήνας από κάθε άποψη. Η θάλασσα είναι πιο ζεστή, οι παραλίες αδειάζουν."
+          }
+        },
+        {
+          title: { en: "October", el: "Οκτώβριος" },
+          text: {
+            en: "The Kalymnos Climbing Festival transforms the island for two weeks — an influx of international climbers, competitions, evening events and a concentrated energy that gives Massouri the atmosphere of a small international village. The Vathi valley is in full orange fragrance.",
+            el: "Το Φεστιβάλ Αναρρίχησης μεταμορφώνει το νησί για δύο εβδομάδες. Η κοιλάδα Βαθύ είναι σε πλήρη πορτοκαλί ευωδία."
+          }
+        },
+        {
+          title: { en: "November – February", el: "Νοέμβριος – Φεβρουάριος" },
+          text: {
+            en: "Kalymnos functions year-round as a working community. Winter climbing is popular — the limestone dries quickly after rain and the mild Dodecanese climate allows outdoor activity most days. The island in winter has an honest, unhurried quality.",
+            el: "Η Κάλυμνος λειτουργεί όλο τον χρόνο. Η χειμερινή αναρρίχηση είναι δημοφιλής — ο ασβεστόλιθος στεγνώνει γρήγορα."
+          }
+        }
+      ]
+    },
+    {
+      layout: "numbered",
+      title: { en: "Top Attractions & Experiences", el: "Κορυφαία Αξιοθέατα & Εμπειρίες" },
+      items: [
+        {
+          title: { en: "Pothia harbour and the neoclassical mansions", el: "Λιμάνι Πόθιας & νεοκλασικά αρχοντικά" },
+          text: {
+            en: "Pothia is the capital and port of Kalymnos and one of the most individual harbour towns in the Dodecanese. The neoclassical mansions that line the harbour were built by wealthy sponge merchants and painted in the warm, saturated colours — ochre, terracotta, deep blue — that allowed their owners to identify them from the returning fleet. Behind the harbour, the market streets are entirely local — hardware shops, butchers, kafeneions, the kind of working-town texture that has largely been erased from the more tourist-oriented Dodecanese islands. Walk the upper streets of Pothia above the harbour for some of the finest neoclassical domestic architecture in the Dodecanese.",
+            el: "Η Πόθια είναι η πρωτεύουσα και το λιμάνι της Καλύμνου. Τα νεοκλασικά αρχοντικά χτίστηκαν από πλούσιους εμπόρους σφουγγαριών και βάφτηκαν σε ζεστά, κορεσμένα χρώματα. Περπατήστε στους πάνω δρόμους για την καλύτερη νεοκλασική αρχιτεκτονική."
+          }
+        },
+        {
+          title: { en: "Nautical and Folklore Museum", el: "Ναυτικό & Λαογραφικό Μουσείο" },
+          text: {
+            en: "The Nautical and Folklore Museum in Pothia is the best single museum on the island and one of the most specifically focused museums in the Dodecanese — dedicated almost entirely to the sponge diving tradition. Diving equipment from various eras, photographs of the fleet departures and returns, accounts of the decompression sickness epidemic, and personal objects left by divers who did not return. Visit the museum before you buy sponges from the harbour shops — it transforms a natural product on a shelf into the residue of one of the most remarkable human occupations in the Mediterranean.",
+            el: "Το καλύτερο μουσείο στο νησί, αφιερωμένο σχεδόν εξ ολοκλήρου στην παράδοση της σπογγαλιείας. Επισκεφθείτε το μουσείο πριν αγοράσετε σφουγγάρια — μεταμορφώνει ένα φυσικό προϊόν σε κατάλοιπο μιας μοναδικής ανθρώπινης δραστηριότητας."
+          }
+        },
+        {
+          title: { en: "The climbing crags — Grande Grotta, Odyssey and beyond", el: "Πεδία αναρρίχησης — Grande Grotta, Odyssey" },
+          text: {
+            en: "The main climbing areas are concentrated on the west coast between Armeos and Massouri. Grande Grotta — an enormous overhanging cave above the sea near Myrties — is the most dramatic crag on the island, with routes over 30 metres in deep shade above the water. Odyssey is accessible to a wider range of grades. The Poets sector near Massouri is considered one of the finest collections of multi-pitch routes in the Mediterranean. Even if you have no intention of climbing, walking to the base of Grande Grotta to watch experienced climbers on the roof is an extraordinary spectacle.",
+            el: "Οι κύριες περιοχές αναρρίχησης βρίσκονται στη δυτική ακτή. Το Grande Grotta είναι το πιο εντυπωσιακό πεδίο. Ακόμα και χωρίς πρόθεση αναρρίχησης, το θέαμα είναι μοναδικό."
+          }
+        },
+        {
+          title: { en: "Vathi — the green valley and the sea-fjord of mandarins", el: "Βαθύ — η πράσινη κοιλάδα και το φιόρδ μανταρινιών" },
+          text: {
+            en: "The valley of Vathi is the island's most surprising landscape — a deep, narrow inlet where the sea pushes into the mountains, flanked by terraced groves of mandarin and lemon trees. The approach by boat — the limestone cliffs narrowing as the valley opens — is one of the finest arrivals in the Aegean. In autumn, the mandarins turn orange and the valley fills with a fragrance that carries on the wind several kilometres out to sea. The mandarins of Vathi are among the finest in Greece — small, intensely aromatic, harvested from trees that have been growing on the same terraces for generations.",
+            el: "Η κοιλάδα του Βαθιού είναι το πιο εκπληκτικό τοπίο του νησιού. Τα μανταρίνια του Βαθιού είναι από τα καλύτερα στην Ελλάδα — μικρά, έντονα αρωματικά."
+          }
+        },
+        {
+          title: { en: "Telendos island — the five-minute crossing to another world", el: "Τέλενδος — η πεντάλεπτη διάβαση σε άλλο κόσμο" },
+          text: {
+            en: "The caïque crossing from Myrties to Telendos takes four minutes. Telendos has no cars, no roads worth the name, one main path, a handful of fishermen's houses, and three or four tavernas that serve food made from what was caught that morning. The climbing on Telendos — routes on the sea-cliff walls directly above the water — is among the most dramatic on the whole island. The ruins of the ancient city submerged between the two islands are visible in the clear shallow water on calm days. An overnight stay on Telendos is one of the most peaceful experiences in the Dodecanese.",
+            el: "Το καΐκι από τους Μύρτιες στην Τέλενδο διαρκεί τέσσερα λεπτά. Χωρίς αυτοκίνητα, ένα μονοπάτι, λίγα σπίτια ψαράδων. Η διανυκτέρευση στην Τέλενδο είναι από τις πιο ειρηνικές εμπειρίες στη Δωδεκάνησο."
+          }
+        },
+        {
+          title: { en: "Chora medieval village and the Cave of the Seven Virgins", el: "Χωριό (Περαχώρα) & Σπήλαιο Επτά Παρθένων" },
+          text: {
+            en: "The limestone interior of Kalymnos is riddled with caves. The Cave of the Seven Virgins above the road between Pothia and Chora is the most accessible, with stalactites and stalagmites. The village of Chora — the island's medieval capital — sits above Pothia on a defensive ridge and retains sections of its Byzantine and Hospitaller fortifications. The Knights of St John castle above Chora gives wide views over both coasts on clear days. Walk up from Pothia in the early morning before the day warms up; the light on the stone at that hour is exceptional.",
+            el: "Το ασβεστολιθικό εσωτερικό της Καλύμνου είναι γεμάτο σπήλαια. Το μεσαιωνικό χωριό της Περαχώρας βρίσκεται πάνω από την Πόθια σε αμυντική ράχη. Περπατήστε από την Πόθια νωρίς το πρωί."
+          }
+        }
+      ]
+    },
+    {
+      layout: "grid",
+      title: { en: "Best Beaches in Kalymnos", el: "Οι Καλύτερες Παραλίες στην Κάλυμνο" },
+      items: [
+        {
+          title: { en: "Myrties & Massouri", el: "Μύρτιες & Μασσούρι" },
+          text: {
+            en: "The beaches flanking the climbing village of Massouri — pebble coves with turquoise water directly below the limestone crags, and the most dramatic view in the Dodecanese: Telendos island sitting in the channel 600 metres away, with climbing routes visible on its sea-facing walls.",
+            el: "Βοτσαλωτά κολπάκια με τιρκουάζ νερό κάτω από τους ασβεστολιθικούς βράχους και την πιο δραματική θέα στη Δωδεκάνησο."
+          }
+        },
+        {
+          title: { en: "Emborios", el: "Εμπορειός" },
+          text: {
+            en: "A long sandy beach at the northern tip of the island — broad, calm and genuinely beautiful, with a small village taverna and one of the finest views north toward Leros. The furthest beach from Pothia, which means it is the least crowded.",
+            el: "Μακριά αμμώδης παραλία στο βόρειο άκρο του νησιού. Η πιο απομακρυσμένη παραλία, που σημαίνει η λιγότερο πολυσύχναστη."
+          }
+        },
+        {
+          title: { en: "Kantouni", el: "Καντούνι" },
+          text: {
+            en: "A pebble cove south of Myrties, below the road, with exceptionally clear water and a small seasonal taverna. Quieter than the Massouri beaches and more sheltered from the afternoon wind. One of the island's best-kept secrets.",
+            el: "Βοτσαλωτός κολπίσκος νότια των Μυρτιών. Πιο ήσυχος και προστατευμένος από τον απογευματινό άνεμο."
+          }
+        },
+        {
+          title: { en: "Armeos", el: "Αρμεός" },
+          text: {
+            en: "A small cove immediately below the Armeos climbing sector — accessible on foot from the crags. The combination of a morning on the rock and an afternoon swimming below the routes you just climbed is one of the signature Kalymnos experiences.",
+            el: "Μικρός κολπίσκος κάτω από το πεδίο αναρρίχησης Αρμεού. Μοναδική εμπειρία."
+          }
+        },
+        {
+          title: { en: "Vathi beach", el: "Παραλία Βαθιού" },
+          text: {
+            en: "The small beach at the mouth of the Vathi inlet — sheltered, calm, with the mandarin groves above and the sea ahead. The water here is warmer than the west coast and completely calm even when the meltemi is blowing.",
+            el: "Η μικρή παραλία στο στόμιο του κόλπου Βαθιού. Προστατευμένη, ήρεμη, με τα μανταρινόδασα από πάνω."
+          }
+        },
+        {
+          title: { en: "Hohlakas beach, Telendos", el: "Παραλία Χοχλάκας, Τέλενδος" },
+          text: {
+            en: "A pebble cove on the south coast of Telendos island, reached by a short walk from the harbour. The water here is among the clearest in the channel, and the submerged ruins of the ancient city are directly accessible by snorkelling.",
+            el: "Βοτσαλωτός κολπίσκος στη νότια ακτή της Τελένδου. Τα βυθισμένα ερείπια είναι προσβάσιμα με μάσκα."
+          }
+        }
+      ]
+    },
+    {
+      layout: "grid",
+      title: { en: "Food & Drink in Kalymnos", el: "Φαγητό & Ποτό στην Κάλυμνο" },
+      items: [
+        {
+          title: { en: "Octopus — the island's defining dish", el: "Χταπόδι — το πιάτο-σήμα του νησιού" },
+          text: {
+            en: "Kalymnos octopus — hung to dry on lines above the harbour, beaten on the quay, then grilled slowly over charcoal — is considered the finest in the Dodecanese. Order it at any serious taverna on the harbour or at Telendos.",
+            el: "Το χταπόδι της Καλύμνου θεωρείται το καλύτερο στη Δωδεκάνησο. Στεγνώνει σε πετονιές πάνω από το λιμάνι και ψήνεται αργά στα κάρβουνα."
+          }
+        },
+        {
+          title: { en: "Vathi mandarins and citrus", el: "Μανταρίνια Βαθιού" },
+          text: {
+            en: "The mandarins of Vathi valley are a local treasure — small, intensely aromatic and harvested from old-variety trees. Available fresh from October through January from the village shop at the Vathi quay. The mandarin honey produced in the valley is exceptional.",
+            el: "Τα μανταρίνια του Βαθιού είναι μικρά, έντονα αρωματικά. Διαθέσιμα φρέσκα από Οκτώβριο έως Ιανουάριο."
+          }
+        },
+        {
+          title: { en: "Fresh fish at Telendos tavernas", el: "Φρέσκο ψάρι στην Τέλενδο" },
+          text: {
+            en: "The tavernas on Telendos serve whatever was caught that morning — red mullet, sea bream, sea bass and small local fish, grilled simply and served with a glass of house wine and a view of the Kalymnos cliffs across the channel.",
+            el: "Οι ταβέρνες στην Τέλενδο σερβίρουν ό,τι ψαρεύτηκε εκείνο το πρωί. Μπαρμπούνι, τσιπούρα, λαβράκι."
+          }
+        },
+        {
+          title: { en: "Kopanisti — Kalymnian spiced cheese", el: "Κοπανιστή" },
+          text: {
+            en: "A pungent, aged cheese with a sharp, complex flavour — made on several Aegean islands but considered particularly fine on Kalymnos, where the milk from the island's goats has a distinctive minerality from the limestone grazing.",
+            el: "Πικάντικο τυρί ωρίμανσης με έντονη γεύση. Ιδιαίτερα καλό στην Κάλυμνο λόγω της ασβεστολιθικής βόσκησης."
+          }
+        },
+        {
+          title: { en: "Kalymnian honey", el: "Καλύμνιο μέλι" },
+          text: {
+            en: "The honey produced from the island's wild thyme, oregano and sparse but intensely aromatic flora is considered among the finest in the Dodecanese. Available at the market in Pothia and from small producers in the interior villages.",
+            el: "Το μέλι από το θυμάρι και τη ρίγανη του νησιού θεωρείται από τα καλύτερα στη Δωδεκάνησο."
+          }
+        },
+        {
+          title: { en: "Pothia harbour seafood tavernas", el: "Ταβέρνες θαλασσινών στο λιμάνι" },
+          text: {
+            en: "The waterfront tavernas of Pothia are working-port restaurants rather than tourist operations — their menus are determined by the morning's catch and their prices reflect an economy that still feeds fishermen and merchants.",
+            el: "Οι ταβέρνες στο λιμάνι της Πόθιας είναι εστιατόρια εργατικού λιμανιού. Το μενού καθορίζεται από τα ψάρια της ημέρας."
+          }
+        }
+      ]
+    },
+    {
+      layout: "grid",
+      title: { en: "Villages & Areas of Kalymnos", el: "Χωριά & Περιοχές της Καλύμνου" },
+      items: [
+        {
+          title: { en: "Pothia — Capital & port", el: "Πόθια — Πρωτεύουσα & λιμάνι" },
+          text: {
+            en: "The island's capital — largest Dodecanese town after Rhodes and Kos, built on sponge money, painted in warm colours and entirely uninterested in performing for tourists. The harbour, the neoclassical mansions, the market streets and the museums are all here.",
+            el: "Η μεγαλύτερη πόλη της Δωδεκανήσου μετά τη Ρόδο και την Κω. Χτισμένη με τα χρήματα των σφουγγαριών, βαμμένη σε ζεστά χρώματα."
+          }
+        },
+        {
+          title: { en: "Massouri & Myrties — Climbing hub", el: "Μασσούρι & Μύρτιες — Κέντρο αναρρίχησης" },
+          text: {
+            en: "The twin villages on the west coast that form the island's climbing centre — international in character, with gear shops, outdoor cafés, climbing schools and a waterfront of tavernas facing Telendos. The best base for climbers and the most visually dramatic location.",
+            el: "Τα δίδυμα χωριά στη δυτική ακτή που αποτελούν το κέντρο αναρρίχησης του νησιού."
+          }
+        },
+        {
+          title: { en: "Chora (Pera Kastro) — Medieval capital", el: "Χωριό (Περαχώρα) — Μεσαιωνική πρωτεύουσα" },
+          text: {
+            en: "The medieval hilltop village above Pothia, with a Byzantine-era fortified settlement at its highest point. Largely abandoned but architecturally intact. The views from the castle ridge over both coasts are among the widest on the island.",
+            el: "Το μεσαιωνικό χωριό πάνω από την Πόθια. Εγκαταλελειμμένο αλλά αρχιτεκτονικά ανέπαφο."
+          }
+        },
+        {
+          title: { en: "Vathi — Hidden valley", el: "Βαθύ — Κρυφή κοιλάδα" },
+          text: {
+            en: "The village at the head of the Vathi inlet — small, traditional, surrounded by mandarin groves. The most unexpected place on the island. Arrive by sea to understand it fully.",
+            el: "Το χωριό στην κεφαλή του κόλπου Βαθιού. Μικρό, παραδοσιακό, περιτριγυρισμένο από μανταρινιές."
+          }
+        },
+        {
+          title: { en: "Telendos — Car-free island", el: "Τέλενδος — Νησί χωρίς αυτοκίνητα" },
+          text: {
+            en: "Kalymnos's closest neighbour — a car-free island of fishermen and silence, five minutes by caïque from Myrties. Submerged ancient ruins offshore. Its own dramatic climbing routes. Worth an entire day if not an overnight stay.",
+            el: "Το κοντινότερο νησί — χωρίς αυτοκίνητα, ψαράδες και σιωπή. Βυθισμένα αρχαία ερείπια."
+          }
+        },
+        {
+          title: { en: "Emborios — Northern tip", el: "Εμπορειός — Βόρεια άκρη" },
+          text: {
+            en: "A small, sleepy village at the northern end of the island — the end of the road. The beach here is the finest on the island, the pace is entirely local, and it is an excellent choice for travellers who want Kalymnos without the climbing-community energy.",
+            el: "Μικρό, ήσυχο χωριό στο βόρειο άκρο. Η παραλία είναι η ωραιότερη στο νησί."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "", el: "" },
+      gallery: [
+        {
+          image: "/images/kalymnos-gallery-2.webp",
+          alt: { en: "Kalymnos, Greece", el: "Κάλυμνος, Ελλάδα" },
+          caption: { en: "Kalymnos, Greece", el: "Κάλυμνος, Ελλάδα" },
+        },
+      ],
+    },
+    {
+      layout: "list",
+      title: { en: "Practical Tips for Kalymnos", el: "Πρακτικές Συμβουλές" },
+      items: [
+        {
+          title: { en: "Getting there by ferry", el: "Ακτοπλοϊκώς" },
+          text: {
+            en: "Kalymnos is served by regular ferries from Piraeus (approximately 10–12 hours overnight) and by high-speed connections from Kos (30 minutes), Leros (45 minutes) and Rhodes (2–3 hours). Seasonal connections from Patmos and the northern Dodecanese. Ferries dock at Pothia harbour.",
+            el: "Ακτοπλοϊκή σύνδεση από Πειραιά (10-12 ώρες) και ταχύπλοα από Κω (30 λεπτά), Λέρο (45 λεπτά) και Ρόδο (2-3 ώρες)."
+          }
+        },
+        {
+          title: { en: "Getting there by air", el: "Αεροπορικώς" },
+          text: {
+            en: "Kalymnos has a small airport with seasonal domestic flights from Athens (Olympic Air, Sky Express). Alternatively, fly to Kos International Airport (many European connections) and take the 30-minute high-speed ferry to Kalymnos.",
+            el: "Μικρό αεροδρόμιο με εποχικές πτήσεις από Αθήνα. Εναλλακτικά, πτήση προς Κω και 30 λεπτά με πλοίο."
+          }
+        },
+        {
+          title: { en: "Getting around", el: "Μετακινήσεις" },
+          text: {
+            en: "For Pothia and the west coast (Massouri, Myrties, Telendos crossing), a car is optional — taxis and the island bus cover the main route. For Emborios, Vathi and the cave of the Seven Virgins, a rental car or scooter is needed. Cars available at the port on arrival. A scooter covers the island comfortably.",
+            el: "Το αυτοκίνητο είναι προαιρετικό για Πόθια και δυτική ακτή. Για Εμπορειό, Βαθύ και σπήλαιο, χρειάζεται ενοικίαση αυτοκινήτου ή μηχανάκι."
+          }
+        },
+        {
+          title: { en: "Getting to Telendos", el: "Προς Τέλενδο" },
+          text: {
+            en: "The caïque to Telendos departs from the Myrties waterfront every 20–30 minutes in summer. The crossing takes four minutes. No cars on Telendos; everything is accessible on foot. An overnight stay is one of the most peaceful experiences in the Dodecanese.",
+            el: "Το καΐκι για Τέλενδο αναχωρεί κάθε 20-30 λεπτά. Διάρκεια τεσσάρων λεπτών. Χωρίς αυτοκίνητα."
+          }
+        },
+        {
+          title: { en: "How many days?", el: "Πόσες ημέρες;" },
+          text: {
+            en: "Three days covers Pothia, the museum, Massouri, Telendos and a boat trip to Vathi. Five days allows a full climbing initiation, Chora medieval village, Emborios beach and a day trip to Kos or Pserimos. For climbers, two to three weeks is the standard stay.",
+            el: "Τρεις μέρες καλύπτουν Πόθια, μουσείο, Μασσούρι, Τέλενδο και Βαθύ. Πέντε μέρες για πλήρη εξερεύνηση."
+          }
+        },
+        {
+          title: { en: "October Climbing Festival", el: "Φεστιβάλ Αναρρίχησης Οκτωβρίου" },
+          text: {
+            en: "The Kalymnos Climbing Festival runs for approximately two weeks in October. Competitions, demonstrations, social events and organised climbing days. Accommodation in Massouri fills completely — book months in advance. The atmosphere is unique and worth experiencing even for non-competitive visitors.",
+            el: "Το μεγαλύτερο γεγονός αναρρίχησης στην Ελλάδα. Κλείστε καταλύματα μήνες νωρίτερα."
+          }
+        },
+        {
+          title: { en: "Spring Sponge Diving Festival", el: "Ανοιξιάτικο Φεστιβάλ Σπογγαλιείας" },
+          text: {
+            en: "Held each spring — usually late April or early May. The blessing of the fleet, the ceremonial send-off of the diving boats, traditional music and dance. One of the most authentic island celebrations in the Dodecanese.",
+            el: "Τέλη Απριλίου ή αρχές Μαΐου. Η ευλογία του στόλου, παραδοσιακή μουσική και χορός."
+          }
+        }
+      ]
+    },
+    {
+      layout: "list",
+      title: { en: "Honest Advice — What to Skip in Kalymnos", el: "Ειλικρινής Συμβουλή — Τι να Αποφύγεις" },
+      text: {
+        en: "✕ **Coming to Kalymnos and never crossing to Telendos** — The five-minute caïque crossing costs almost nothing and takes you to an island that feels genuinely separate from the 21st century. The tavernas on Telendos serve better fish than most places on Kalymnos itself.\n\n✕ **Dismissing Kalymnos as 'just a climbing island' if you don't climb** — The climbing community gives the island energy but occupies a small zone. The rest — Pothia, Vathi, Chora, Emborios, the sponge museum, the seafood — is entirely independent of the climbing scene.\n\n✕ **Visiting the sponge shops without visiting the sponge museum** — The Nautical and Folklore Museum tells the full story in a way that transforms a natural product on a shelf into the residue of one of the most remarkable human occupations in the Mediterranean.\n\n✕ **Approaching Vathi valley only by road** — Arriving by boat — entering the narrow inlet from the sea, watching the limestone cliffs close around you as the mandarin groves open ahead — is profoundly different and vastly more beautiful.\n\n✕ **Staying only in Massouri** — The climbing village is an excellent base, but it represents only one face of the island. Pothia, Vathi and the north coast each offer something entirely distinct. Move around.\n\n💡 What nobody tells you: Kalymnos has a real economy that exists independently of tourism. The fishing fleet still goes out. The market streets of Pothia serve the people who live there. The tourist economy sits alongside a functioning community rather than replacing it, which means the island has a texture and independence of spirit that most Aegean destinations have long since traded away for easier money.",
+        el: "✕ **Να μην περάσεις στην Τέλενδο** — Η πεντάλεπτη διάβαση κοστίζει σχεδόν τίποτα και σε πάει σε ένα νησί που νιώθει εντελώς ξεχωριστό.\n\n✕ **Να απορρίψεις την Κάλυμνο ως 'μόνο αναρρίχηση'** — Η αναρρίχηση καταλαμβάνει μικρή ζώνη. Η υπόλοιπη Κάλυμνος είναι αυθεντική Δωδεκάνησος.\n\n✕ **Να επισκεφθείς τα μαγαζιά σφουγγαριών χωρίς το μουσείο** — Το μουσείο μεταμορφώνει την εμπειρία.\n\n✕ **Να πας στο Βαθύ μόνο από το δρόμο** — Η άφιξη με βάρκα είναι εντελώς διαφορετική.\n\n✕ **Να μείνεις μόνο στο Μασσούρι** — Κινήσου, η Κάλυμνος έχει πολλές όψεις.\n\n💡 Αυτό που δε σου λέει κανείς: Η Κάλυμνος έχει πραγματική οικονομία ανεξάρτητη από τον τουρισμό. Οι ψαράδες βγαίνουν ακόμα στη θάλασσα. Η τουριστική οικονομία συνυπάρχει με μια λειτουργική κοινότητα."
+      }
+    },
+    {
+      layout: "faq",
+      title: { en: "FAQ — Kalymnos Essentials", el: "Συχνές Ερωτήσεις" },
+      items: [
+        {
+          title: { en: "Do I need to be a climber to enjoy Kalymnos?", el: "Χρειάζεται να είμαι αναρριχητής για να το ευχαριστηθώ;" },
+          text: {
+            en: "Not at all. The climbing is what brought Kalymnos to international attention, but it occupies only part of the island's identity. Pothia and its sponge diving heritage, the Vathi valley, Telendos, the beaches, the exceptional seafood, the traditional village of Chora — all are entirely available to non-climbers. Many visitors come specifically for the authentic Dodecanese atmosphere.",
+            el: "Καθόλου. Η αναρρίχηση έφερε την Κάλυμνο στη διεθνή προσοχή, αλλά το νησί έχει πολλά να προσφέρει και σε μη αναρριχητές."
+          }
+        },
+        {
+          title: { en: "What climbing grade do I need for Kalymnos?", el: "Τι επίπεδο αναρρίχησης χρειάζεται;" },
+          text: {
+            en: "Kalymnos has routes across the full grade spectrum. The concentration of beginner-friendly sectors means a complete beginner can be safely climbing on bolt-protected routes within half a day. The majority of the 3,000-plus routes are at intermediate grades (French 5a–7a) and accessible to regular recreational climbers.",
+            el: "Διαδρομές για όλα τα επίπεδα. Ένας αρχάριος μπορεί να αναρριχηθεί με ασφάλεια μέσα σε μισή μέρα."
+          }
+        },
+        {
+          title: { en: "What is the sponge diving tradition?", el: "Τι είναι η παράδοση σπογγαλιείας;" },
+          text: {
+            en: "Kalymnos was the centre of the Mediterranean sponge trade for centuries. Divers harvested natural sponges from depths of 40–70 metres, initially on a single breath, later using primitive hard-hat equipment that caused epidemic decompression sickness. The tradition shaped everything about the island — its architecture, music, social structure and character.",
+            el: "Η Κάλυμνος ήταν το κέντρο του εμπορίου σφουγγαριών στη Μεσόγειο για αιώνες. Η παράδοση διαμόρφωσε τα πάντα στο νησί."
+          }
+        },
+        {
+          title: { en: "How do I get from Kalymnos to Kos?", el: "Πώς πάω από Κάλυμνο στην Κω;" },
+          text: {
+            en: "High-speed ferry services connect Kalymnos and Kos in approximately 30 minutes — one of the shortest inter-island connections in the Dodecanese. Several services run daily in summer. Kos is worth a day trip for the ancient Asklepion and the archaeological museum.",
+            el: "Ταχύπλοα συνδέουν Κάλυμνο και Κω σε 30 λεπτά. Η Κω αξίζει ημερήσια εκδρομή."
+          }
+        },
+        {
+          title: { en: "What are the submerged ruins between Kalymnos and Telendos?", el: "Τι είναι τα βυθισμένα ερείπια;" },
+          text: {
+            en: "In AD 554, a major earthquake submerged a settled area under the shallow waters of the channel. Byzantine-era architectural elements, walls and mosaic fragments have been identified. The ruins are visible in calm conditions and accessible by snorkelling to depths of 2–5 metres.",
+            el: "Το 554 μ.Χ., σεισμός βύθισε μια περιοχή. Τα ερείπια είναι ορατά σε ήρεμες συνθήκες."
+          }
+        },
+        {
+          title: { en: "Is Kalymnos good in winter?", el: "Είναι καλή η Κάλυμνος τον χειμώνα;" },
+          text: {
+            en: "Remarkably so. The Dodecanese climate is mild, and the limestone dries quickly after rain. The climbing community maintains a year-round presence in Massouri. Pothia functions as a fully active working town. The island has a quiet, honest quality in winter that long-term visitors find deeply appealing.",
+            el: "Εξαιρετικά. Το ήπιο κλίμα, ο ασβεστόλιθος που στεγνώνει γρήγορα και η Πόθια που λειτουργεί όλο τον χρόνο την κάνουν ιδανική."
+          }
+        },
+        {
+          title: { en: "How does Kalymnos compare to other Dodecanese islands?", el: "Πώς συγκρίνεται με άλλα νησιά;" },
+          text: {
+            en: "Kalymnos is the most specifically characterful of the northern Dodecanese islands. It has a unique combination of extreme sport heritage, maritime cultural depth, extraordinary landscape and a self-possession that comes from being known primarily within a specialist community rather than to mass tourism. It is less polished and more authentic than any of its neighbours.",
+            el: "Η Κάλυμνος είναι το πιο χαρακτηριστικό νησί της βόρειας Δωδεκανήσου. Λιγότερο εξευγενισμένη, περισσότερο αυθεντική από οποιονδήποτε γείτονά της."
+          }
         }
       ]
     }
