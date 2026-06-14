@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import Image from 'next/image';
 import { hotels, SITE_URL, type Lang } from '../../../lib/content';
 import SiteHeader from '../../../components/site-header';
 import HotelsDirectoryClient from './all/hotels-directory-client';
@@ -100,36 +99,7 @@ export default async function HotelsListingPage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
       />
 
-      {/* ── Hero Cover ── */}
-      <section className="relative h-[70vh] min-h-[500px] overflow-hidden">
-        <Image
-          src="/images/hotels-cover.webp"
-          alt="Hotels & Stays in Greece"
-          fill
-          className="object-cover"
-          priority
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20" />
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
-          <span className="mb-6 inline-flex justify-center rounded-full bg-white/20 backdrop-blur-md border border-white/30 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-white">
-            {t.tag[lang]}
-          </span>
-          <h1 className="text-5xl md:text-7xl font-extrabold mb-6 text-white tracking-tight drop-shadow-lg">
-            {t.h1[lang]}
-          </h1>
-          <p className="text-white/80 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-light drop-shadow-md">
-            {t.sub[lang]}
-          </p>
-          <p className="text-white/60 text-base max-w-3xl mx-auto leading-relaxed mt-6 drop-shadow-md">
-            {t.intro[lang]}
-          </p>
-        </div>
-      </section>
-
-      <div className="container mx-auto px-6 py-24">
-
-        <HotelsDirectoryClient lang={lang} hotels={hotels} />
+      <HotelsDirectoryClient lang={lang} hotels={hotels} />
 
         {/* ════════ HOW TO CHOOSE ════════ */}
         <section className="max-w-5xl mx-auto mt-24 px-2">
@@ -202,7 +172,6 @@ export default async function HotelsListingPage({ params }: Props) {
             </Link>
           </div>
         </section>
-      </div>
     </main>
     </>
   );

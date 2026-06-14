@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import { type Lang, type HotelCard } from "../../../../lib/content";
 
 const regionLabels: Record<string, { en: string; el: string }> = {
@@ -80,9 +81,78 @@ export default function HotelsDirectoryClient({
       el: "Δεν βρέθηκαν προορισμοί.",
     },
     all: { en: "All", el: "Όλα" },
+    tag: { en: "Where to Stay", el: "Διαμονή" },
+    heroH1: { en: "Where to Stay in Greece", el: "Πού να Μείνετε στην Ελλάδα" },
+    heroSub: {
+      en: "Browse hotel and accommodation guides by destination.",
+      el: "Δείτε οδηγούς ξενοδοχείων και καταλυμάτων ανά προορισμό.",
+    },
+    heroIntro: {
+      en: "Choosing the right area matters more than choosing the right hotel — a caldera view in Santorini, a beach base in Naxos or a historic quarter in Athens each create a completely different trip. Our guides break down every destination area by area, with honest advice on views, prices, crowds and who each base suits best.",
+      el: "",
+    },
   };
 
   return (
+    <>
+      {/* ════════ HERO ════════ */}
+      <section className="relative min-h-[500px] h-[70vh] w-full flex items-center justify-center overflow-hidden pt-24">
+        <motion.div
+          initial={{ scale: 1.15, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 2, ease: "easeOut" }}
+          className="absolute inset-0 z-0"
+        >
+          <Image
+            src="/images/hotels-cover.webp"
+            alt="Hotels & Stays in Greece"
+            fill
+            sizes="100vw"
+            priority
+            className="object-cover object-center brightness-[0.75]"
+          />
+        </motion.div>
+        <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/30 via-transparent via-50% to-transparent to-95%" />
+        <div className="relative z-20 flex flex-col items-center text-center px-6 max-w-5xl py-12">
+          <motion.span
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+            className="inline-flex items-center gap-2 rounded-full bg-white/10 backdrop-blur-xl px-6 py-2.5 text-xs font-bold uppercase tracking-[0.3em] text-white border border-white/20 shadow-2xl mb-6"
+          >
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75" />
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500" />
+            </span>
+            {t.tag[lang]}
+          </motion.span>
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 0.8 }}
+            className="font-serif text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight leading-tight [text-shadow:0_4px_12px_rgba(0,0,0,0.15)]"
+          >
+            {t.heroH1[lang]}
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.7, duration: 0.8 }}
+            className="text-white/90 text-lg md:text-xl font-light leading-relaxed max-w-2xl"
+          >
+            {t.heroSub[lang]}
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.9, duration: 0.8 }}
+            className="text-white/70 text-base max-w-3xl leading-relaxed mt-6"
+          >
+            {t.heroIntro[lang]}
+          </motion.p>
+        </div>
+      </section>
+
     <section className="pb-20">
       <div className="container mx-auto px-6">
         <div className="max-w-xl mx-auto mb-8">
@@ -189,5 +259,6 @@ export default function HotelsDirectoryClient({
         )}
       </div>
     </section>
+    </>
   );
 }

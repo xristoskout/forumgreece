@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import type { Lang, Destination } from "../../../lib/content";
 
 type RegionMeta = {
@@ -60,7 +61,6 @@ export default function DestinationsClient({
     guide: { en: "Travel Guide", el: "Οδηγός Ταξιδιού" },
     comingSoon: { en: "Guide coming soon", el: "Οδηγός σύντομα" },
     destinations: { en: "destinations", el: "προορισμοί" },
-    back: { en: "← Back to homepage", el: "← Πίσω στην αρχική" },
     h1: { en: "All Destinations in Greece", el: "Όλοι οι Προορισμοί στην Ελλάδα" },
     sub: {
       en: "Browse every destination by geographic region — from iconic Cycladic islands to mainland historical escapes.",
@@ -82,34 +82,59 @@ export default function DestinationsClient({
   return (
     <main className="min-h-screen bg-[#f8fbff]">
 
-      {/* Hero Cover */}
-      <section className="relative h-[70vh] min-h-[500px] overflow-hidden">
-        <Image
-          src="/images/destinations-cover.webp"
-          alt="All Destinations in Greece"
-          fill
-          className="object-cover"
-          priority
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20" />
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
-          <Link
-            href={`/${lang}`}
-            className="inline-flex items-center gap-2 text-white/60 text-sm font-medium hover:text-white transition-colors mb-6"
+      {/* ════════ HERO ════════ */}
+      <section className="relative min-h-[500px] h-[70vh] w-full flex items-center justify-center overflow-hidden pt-24">
+        <motion.div
+          initial={{ scale: 1.15, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 2, ease: "easeOut" }}
+          className="absolute inset-0 z-0"
+        >
+          <Image
+            src="/images/destinations-cover.webp"
+            alt="All Destinations in Greece"
+            fill
+            sizes="100vw"
+            priority
+            className="object-cover object-center brightness-[0.75]"
+          />
+        </motion.div>
+        <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/30 via-transparent via-50% to-transparent to-95%" />
+        <div className="relative z-20 flex flex-col items-center text-center px-6 max-w-5xl py-12">
+          <motion.span
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+            className="inline-flex items-center gap-2 rounded-full bg-white/10 backdrop-blur-xl px-6 py-2.5 text-xs font-bold uppercase tracking-[0.3em] text-white border border-white/20 shadow-2xl mb-6"
           >
-            {t.back[lang]}
-          </Link>
-          <div className="inline-flex items-center gap-2 rounded-full bg-white/20 backdrop-blur-md border border-white/30 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-white mb-6">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75" />
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500" />
+            </span>
             🗺️ {lang === "en" ? "Browse by Region" : "Ανά Γεωγραφική Ενότητα"}
-          </div>
-          <h1 className="text-5xl md:text-6xl font-extrabold text-white tracking-tight leading-[1.1] mb-6 drop-shadow-lg">
+          </motion.span>
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 0.8 }}
+            className="font-serif text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight leading-tight [text-shadow:0_4px_12px_rgba(0,0,0,0.15)]"
+          >
             {t.h1[lang]}
-          </h1>
-          <p className="text-lg text-white/80 leading-relaxed font-light max-w-2xl drop-shadow-md">
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.7, duration: 0.8 }}
+            className="text-white/90 text-lg md:text-xl font-light leading-relaxed max-w-2xl"
+          >
             {t.sub[lang]}
-          </p>
-          <div className="mt-10 flex flex-wrap gap-6 justify-center">
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.9, duration: 0.8 }}
+            className="mt-10 flex flex-wrap gap-6 justify-center"
+          >
             <div className="flex items-center gap-3 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 px-5 py-3">
               <span className="text-2xl font-black text-white">{totalCount}</span>
               <span className="text-xs font-semibold uppercase tracking-widest text-white/70">
@@ -122,7 +147,7 @@ export default function DestinationsClient({
                 {lang === "en" ? "Regions" : "Περιοχές"}
               </span>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
 
