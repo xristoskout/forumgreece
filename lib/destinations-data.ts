@@ -1528,6 +1528,10 @@ export const destinations: Destination[] = [
         label: { en: "Where to Stay in Kalymnos", el: "Πού να μείνεις στην Κάλυμνο" }
       },
       {
+        href: "/travel-info/rock-climbing-in-greece",
+        label: { en: "Rock Climbing Guide", el: "Οδηγός Αναρρίχησης" }
+      },
+      {
         href: "/tours/all",
         label: { en: "Tours & Experiences", el: "Εκδρομές & Εμπειρίες" }
       }

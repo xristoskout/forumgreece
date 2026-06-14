@@ -1768,6 +1768,200 @@ export const travelInfoGuides: GuideCard[] = [
         a: { en: "May, June and September offer the best combination of good weather, open businesses and manageable crowds. July and August are warmer but busier — even on small islands, peak season brings significant visitor numbers.", el: "Μάιος, Ιούνιος και Σεπτέμβριος προσφέρουν τον καλύτερο συνδυασμό καλού καιρού και διαχειρίσιμου κόσμου." }
       }
     ]
+  },
+  {
+    slug: "rock-climbing-in-greece",
+    title: {
+      en: "Rock Climbing in Greece — The World Capital of Sport Climbing",
+      el: "Αναρρίχηση στην Ελλάδα — Η Παγκόσμια Πρωτεύουσα Αθλητικής Αναρρίχησης"
+    },
+    description: {
+      en: "Why climbers from forty countries come to Greece every year — and why the country's vertical world extends far beyond a single island.",
+      el: "Γιατί αναρριχητές από σαράντα χώρες έρχονται στην Ελλάδα κάθε χρόνο — και γιατί ο κάθετος κόσμος της χώρας εκτείνεται πολύ πέρα από ένα μόνο νησί."
+    },
+    image: "/images/rock-climbing-greece.webp",
+    overview: {
+      en: "Greece offers one of the most remarkable and accessible sport climbing landscapes on the planet — over 4,200 bolt-protected routes on the island of Kalymnos alone, hundreds of limestone crags scattered across the mainland and the islands, and a climbing culture that has grown from a niche activity into a global destination in just two decades. This guide covers the major climbing destinations across Greece — from the world-famous tufa caves of Kalymnos and the historic massif of Varasova to the monastery towers of Meteora, the rising star of Leonidio, the wild card of Crete, and the quiet alternative of Karpathos. Whether you are a first-time sport climber or pushing the limits of the grade, Greece has a crag calibrated to your level.",
+      el: "Η Ελλάδα προσφέρει ένα από τα πιο αξιόλογα και προσβάσιμα τοπία αθλητικής αναρρίχησης στον πλανήτη — πάνω από 4.200 προστατευμένες διαδρομές μόνο στο νησί της Καλύμνου, εκατοντάδες ασβεστολιθικά πεδία διάσπαρτα στην ηπειρωτική χώρα και τα νησιά, και μια αναρριχητική κουλτούρα που έχει εξελιχθεί σε παγκόσμιο προορισμό. Αυτός ο οδηγός καλύπτει τους σημαντικότερους προορισμούς αναρρίχησης σε όλη την Ελλάδα — από τις παγκοσμίου φήμης σπηλιές tufa της Καλύμνου και το ιστορικό βουνό Βαρβάσοβα έως τους πύργους της Μονής Μετεώρων, το ανερχόμενο αστέρι του Λεωνιδίου, το wild card της Κρήτης και την ήσυχη εναλλακτική της Καρπάθου."
+    },
+    points: {
+      en: [
+        "4,200+ bolt-protected routes on Kalymnos alone across 99 crags",
+        "Over 8,000 routes countrywide spanning islands and mainland",
+        "World-class Jurassic limestone — pockets, tufas, edges",
+        "Climbing season runs 8-9 months per year thanks to mild climate",
+        "Kalymnos International Climbing Festival draws 3,500+ climbers",
+        "Leonidio: fastest-growing mainland crag with 3,000+ routes",
+        "Varasova: birthplace of Greek climbing with 900m limestone massif",
+        "Meteora: unique conglomerate towers up to 300m with monasteries"
+      ],
+      el: [
+        "4.200+ προστατευμένες διαδρομές μόνο στην Κάλυμνο σε 99 πεδία",
+        "Πάνω από 8.000 διαδρομές σε νησιά και ηπειρωτική χώρα",
+        "Παγκόσμιας κλάσης Ιουρασικός ασβεστόλιθος",
+        "Αναρριχητική σεζόν 8-9 μήνες τον χρόνο χάρη στο ήπιο κλίμα",
+        "Διεθνές Φεστιβάλ Αναρρίχησης Καλύμνου με 3.500+ συμμετέχοντες",
+        "Λεωνίδιο: το ταχύτερα αναπτυσσόμενο πεδίο με 3.000+ διαδρομές",
+        "Βαρβάσοβα: γενέτειρα της ελληνικής αναρρίχησης, 900μ ασβεστολιθικός όγκος",
+        "Μετέωρα: μοναδικοί κροκαλοπαγείς πύργοι έως 300μ με μοναστήρια"
+      ]
+    },
+    sections: [
+      {
+        title: {
+          en: "Kalymnos — Where It All Begins",
+          el: "Κάλυμνος — Από Εκεί Ξεκινούν Όλα"
+        },
+        content: {
+          en: "Kalymnos is widely regarded as one of the greatest sport climbing areas in the world. With over 4,200 routes in the latest guidebook, most accessible with a short hike and/or scooter, and great amenities, climbers wonder why they've ever climbed anywhere else. The first climbs were established by Andrea Di Bari and team in 1997 (sectors 'Arhi', 'Poets', etc.), after Di Bari discovered the island's potential one year prior. About 10 years later the route count surpassed 1,000, and the latest edition of the Kalymnos Guidebook covers more than 4,300 routes. The rock — Jurassic limestone sculpted by millennia of sea air into pockets, tufas and edges — is considered among the finest climbing rock in the world. Routes run directly above the Aegean in many places, with views across to Telendos island and the open sea that make the climbing experience unique even by international standards.",
+          el: "Η Κάλυμνος θεωρείται ευρέως μία από τις σημαντικότερες περιοχές αθλητικής αναρρίχησης στον κόσμο. Με πάνω από 4.200 διαδρομές στον τελευταίο οδηγό, οι περισσότερες προσβάσιμες με σύντομη πεζοπορία ή μηχανάκι, και εξαιρετικές ανέσεις, οι αναρριχητές αναρωτιούνται γιατί σκαρφάλωναν οπουδήποτε αλλού. Οι πρώτες διαδρομές ανοίχτηκαν από τον Andrea Di Bari και την ομάδα του το 1997 (τομείς 'Arhi', 'Poets' κ.ά.), μετά την ανακάλυψη των δυνατοτήτων του νησιού από τον Di Bari ένα χρόνο νωρίτερα. Περίπου 10 χρόνια αργότερα ο αριθμός των διαδρομών ξεπέρασε τις 1.000. Το πέτρωμα — Ιουρασικός ασβεστόλιθος γλυπτός από χιλιετίες θαλάσσιου αέρα σε pockets, tufas και ακμές — θεωρείται κορυφαίο αναρριχητικό πέτρωμα στον κόσμο."
+        }
+      },
+      {
+        title: {
+          en: "What Makes Kalymnos Unique",
+          el: "Τι Κάνει την Κάλυμνο Μοναδική"
+        },
+        content: {
+          en: "The climbing on Kalymnos varies from friendly beginner crags to 50m-long endurance test-pieces through a 3D world of the strangest climbable features you'll ever encounter — slabs, vertical walls, overhanging walls and insane caves. The guidebook describes over 4,200 routes ranging from F3a to F9a, across 99 different rock climbing areas. Whether you are a first-time sport climber or among the world's elite, Kalymnos has something calibrated to your level. The island also has excellent infrastructure — gear shops, guide services, climbing-specific accommodation, and a social scene centred around the spring and autumn climbing seasons that makes it easy to find partners. Beyond climbing, Greek cuisine, beach life and island culture ensure you are never bored on rest days.",
+          el: "Η αναρρίχηση στην Κάλυμνο ποικίλλει από φιλικά πεδία για αρχάριους έως δοκιμασίες αντοχής 50 μέτρων μέσα από έναν τρισδιάστατο κόσμο — πλάκες, κάθετοι τοίχοι, επικρεμάμενοι τοίχοι και τρελές σπηλιές. Ο οδηγός περιγράφει πάνω από 4.200 διαδρομές από F3a έως F9a, σε 99 διαφορετικές περιοχές. Είτε είσαι πρωτάρης είτε ελίτ, η Κάλυμνος έχει κάτι για το επίπεδό σου. Το νησί διαθέτει εξαιρετική υποδομή — καταστήματα εξοπλισμού, ξεναγούς, ειδικά καταλύματα και μια κοινωνική σκηνή γύρω από την ανοιξιάτικη και φθινοπωρινή σεζόν."
+        }
+      },
+      {
+        title: {
+          en: "The Main Climbing Areas on Kalymnos",
+          el: "Οι Κύριες Αναρριχητικές Περιοχές στην Κάλυμνο"
+        },
+        content: {
+          en: "The largest concentration of crags and routes are situated above the villages of Myrties, Masouri and Armeos on the west coast. All of these sectors can be reached from Masouri on foot, with an approach of between 20 and 35 minutes. Another well-established area is the north of Kalymnos around the villages of Arginonta, Skalia, and Emporios — popular to visit by scooter from Masouri. The island of Telendos is only a 10-minute boat trip from Myrties jetty. Telendos has seen significant recent development with many new crags and routes, many in caves facing east — ideal for summer climbing. The southern part of Kalymnos is the least developed area, offering a more remote climbing experience.",
+          el: "Η μεγαλύτερη συγκέντρωση πεδίων βρίσκεται πάνω από τα χωριά Μυρτιές, Μασούρι και Αρμεός στη δυτική ακτή. Όλοι αυτοί οι τομείς είναι προσβάσιμοι από το Μασούρι με τα πόδια, με προσέγγιση 20-35 λεπτών. Μια άλλη καθιερωμένη περιοχή είναι ο βορράς γύρω από τα χωριά Αργινώντα, Σκαλιά και Εμπορειά. Ο Τέλενδος απέχει μόλις 10 λεπτά με βάρκα από την προβλήτα των Μυρτιών και έχει δει σημαντική ανάπτυξη νέων διαδρομών, πολλές σε σπηλιές με ανατολικό προσανατολισμό. Η νότια Κάλυμνος είναι η λιγότερο ανεπτυγμένη περιοχή."
+        }
+      },
+      {
+        title: {
+          en: "Iconic Sectors of Kalymnos",
+          el: "Εμβληματικοί Τομείς της Καλύμνου"
+        },
+        content: {
+          en: "**Grande Grotte** — The most photographed cave in sport climbing; steep, atmospheric, surrounded by tufas. **Odyssey Wall** — something for everyone, from 4c beginner routes to the hardest route on the island, *Los Revolucionarios* (9a). **Olympic Wall** — perched high above the sea, offering equally outstanding routes and rock, minus the crowds and most of the polish, thanks to the longer approach hike. **Arhi** — One of the original sectors, a piece of Kalymnos climbing history. **Poets** — Perfect mid-grade limestone in a beautiful setting. For a full list of areas and current conditions, the [Kalymnos Climbing Guidebook](/travel-info/rock-climbing-in-greece) is essential reading.",
+          el: "**Grande Grotte** — Η πιο φωτογραφημένη σπηλιά στην αθλητική αναρρίχηση· απότομη, ατμοσφαιρική, περιτριγυρισμένη από tufas. **Odyssey Wall** — έχει για όλους, από 4c για αρχάριους έως την πιο δύσκολη διαδρομή του νησιού, *Los Revolucionarios* (9a). **Olympic Wall** — ψηλά πάνω από τη θάλασσα, εξαιρετικές διαδρομές χωρίς τον συνωστισμό. **Arhi** — Ένας από τους αυθεντικούς τομείς. **Poets** — Τέλειος ασβεστόλιθος μεσαίας δυσκολίας."
+        }
+      },
+      {
+        title: {
+          en: "The Social Side of Kalymnos Climbing",
+          el: "Η Κοινωνική Πλευρά της Αναρρίχησης στην Κάλυμνο"
+        },
+        content: {
+          en: "Kalymnos is known for being a very sociable place — if you travel during the main season, you will definitely find new and old friends to give you a catch. Besides climbing, the Greek cuisine, beach and culture will keep you satisfied in the evenings and on rest days. All this combined also makes Kalymnos the perfect climbing destination for families. The Kalymnos International Climbing Festival is widely regarded as one of the most famous climbing events in the world. The 2025 edition brought together more than 3,500 climbers and outdoor enthusiasts from across the globe. The majority come from European countries (England, France, Italy, Germany, Switzerland, Austria, Spain), while participants also come from the USA, Canada, Argentina, Australia, Japan, Turkey, and many other countries. Besides endless climbing opportunities, the festival also includes Greek dancing lessons, parties with DJs, and cruises around the island.",
+          el: "Η Κάλυμνος είναι γνωστή για την κοινωνικότητά της — αν ταξιδέψεις κατά τη διάρκεια της σεζόν, σίγουρα θα βρεις παλιούς και νέους φίλους. Εκτός από αναρρίχηση, η ελληνική κουζίνα, η παραλία και ο πολιτισμός θα σε κρατήσουν ικανοποιημένο τα βράδια και τις ημέρες ξεκούρασης. Το Διεθνές Φεστιβάλ Αναρρίχησης Καλύμνου είναι ένα από τα πιο διάσημα γεγονότα αναρρίχησης στον κόσμο. Η έκδοση του 2025 συγκέντρωσε πάνω από 3.500 αναρριχητές από όλο τον κόσμο — από Ευρώπη, ΗΠΑ, Καναδά, Αργεντινή, Αυστραλία, Ιαπωνία, Τουρκία και πολλές άλλες χώρες."
+        }
+      },
+      {
+        title: {
+          en: "When to Climb on Kalymnos",
+          el: "Πότε να Σκαρφαλώσεις στην Κάλυμνο"
+        },
+        content: {
+          en: "The best times to climb on Kalymnos are spring (April to June) and fall (September to October), when the weather is mild and the areas less crowded. Most of the cliffs are too hot in the afternoons when the sun hits them in summer, and popular routes become polished. However, it is still possible to get away from the crowds if you are prepared to walk — and if all else fails, you can go swimming. The guidebook by longtime locals Katie Roussos and Aris Theodoropoulos is the definitive reference — all routes are shown on clear colour photo topos with descriptions, heights, approach information, GPS coordinates, and QR codes for parking. Practical note: the island still has very few cars — please hire a scooter rather than a car. Overall rock quality is excellent, but a helmet is never a bad idea — goats on top of the cliffs can knock down rocks, and tufas can break at any time.",
+          el: "Οι καλύτερες εποχές είναι άνοιξη (Απρίλιος-Ιούνιος) και φθινόπωρο (Σεπτέμβριος-Οκτώβριος). Τα περισσότερα πεδία είναι πολύ ζεστά το απόγευμα το καλοκαίρι. Ο οδηγός των Katie Roussos και Aris Theodoropoulos είναι η οριστική αναφορά — όλες οι διαδρομές σε έγχρωμες φωτογραφίες με περιγραφές, GPS και QR codes. Πρακτική σημείωση: το νησί έχει πολύ λίγα αυτοκίνητα — νοίκιασε μηχανάκι. Η ποιότητα του βράχου είναι εξαιρετική, αλλά το κράνος δεν είναι ποτέ κακή ιδέα."
+        }
+      },
+      {
+        title: {
+          en: "Varasova, Aitoloakarnania — The Birthplace of Greek Climbing",
+          el: "Βαρβάσοβα, Αιτωλοακαρνανία — Η Γενέτειρα της Ελληνικής Αναρρίχησης"
+        },
+        content: {
+          en: "If Kalymnos is the international star, then Varasova is the soul of Greek climbing. Varasova (917 m) is an imposing seaside limestone massif in Aitoloakarnania, Central Greece, just west of Antirrio. It is one of the most important climbing areas in the country and the place where Greek climbing evolved throughout the 60s, 70s, 80s and even into the 90s, when modern climbers pushed techniques and difficulties to levels comparable with the rest of the world. The steep topography of Varasova first made it a fortified settlement of the ancient Kalydonians, while in the 10th century AD it became a center of ascetic life, earning the name 'Holy Mountain of Aitolia'. The three peaks of Varasova rise to nearly identical elevation. The rock is very solid, relatively sharp, mostly gray or yellow limestone of outstanding quality — generously featured and teeming with variety: compact walls, steep slabs, corners, vertical cracks, jugs, flakes, chickenheads, incut edges. There are several mixed-character 'adventure' routes with as many as 18 pitches. Don't worry — you won't run into any crowds. Varasova is mainly a weekend venue, so if you are here mid-week you are very likely to have the crag to yourself.",
+          el: "Αν η Κάλυμνος είναι το διεθνές αστέρι, η Βαρβάσοβα είναι η ψυχή της ελληνικής αναρρίχησης. Η Βαρβάσοβα (917 μ.) είναι ένας επιβλητικός παράκτιος ασβεστολιθικός όγκος στην Αιτωλοακαρνανία, δυτικά του Αντιρρίου. Είναι από τις σημαντικότερες αναρριχητικές περιοχές και το μέρος όπου εξελίχθηκε η ελληνική αναρρίχηση τις δεκαετίες του '60, '70, '80 και '90. Η απότομη τοπογραφία της την έκανε οχυρό των αρχαίων Καλυδωνίων και αργότερα κέντρο ασκητικής ζωής (10ος αιώνας μ.Χ.), αποκτώντας το όνομα 'Άγιον Όρος της Αιτωλίας'. Το πέτρωμα είναι πολύ συμπαγής, σχετικά αιχμηρός, γκρίζος ή κίτρινος ασβεστόλιθος κορυφαίας ποιότητας. Υπάρχουν αρκετές διαδρομές περιπέτειας με έως και 18 σχοινιές. Μην ανησυχείς για πολυκοσμία — η Βαρβάσοβα είναι κυρίως προορισμός Σαββατοκύριακου."
+        }
+      },
+      {
+        title: {
+          en: "Meteora — Climbing Among the Monasteries",
+          el: "Μετέωρα — Αναρρίχηση Ανάμεσα στα Μοναστήρια"
+        },
+        content: {
+          en: "Meteora is an intriguing place. The word *metéora* means 'suspended in the air', for this cluster of massive rock towers rises from the verdant plain of Thessaly in an almost mysterious manner. The conglomerate towers feature nearly 900 single- and multi-pitch routes on towers, pinnacles and pillars — many bolted. The peculiar nature of the rock, the otherworldly surroundings, and the ending of each route on a summit truly make climbing at Meteora a singular experience. There are many fantastic towers of conglomerate rock up to 300m high. **Important**: Meteora is a UNESCO World Heritage Site and an active monastic community. Climbers must respect restricted zones and local regulations at all times. Climbing is allowed only in designated areas to preserve the sanctity of the monasteries.",
+          el: "Τα Μετέωρα είναι ένα συναρπαστικό μέρος. Η λέξη σημαίνει 'αιωρούνται στον αέρα', καθώς αυτή η ομάδα τεράστιων βραχόπυργων υψώνεται από την πεδιάδα της Θεσσαλίας με σχεδόν μυστηριώδη τρόπο. Οι κροκαλοπαγείς πύργοι διαθέτουν σχεδόν 900 μονόσχοινες και πολύσχοινες διαδρομές. Η ιδιόμορφη φύση του πετρώματος, το εξωκοσμικό περιβάλλον και η κατάληξη κάθε διαδρομής σε μια κορυφή κάνουν την αναρρίχηση στα Μετέωρα μοναδική εμπειρία. **Σημαντικό**: Τα Μετέωρα είναι μνημείο UNESCO και ενεργή μοναστική κοινότητα. Οι αναρριχητές οφείλουν να σέβονται τις απαγορευμένες ζώνες και τους τοπικούς κανονισμούς."
+        }
+      },
+      {
+        title: {
+          en: "Leonidio, Peloponnese — The Mainland Rising Star",
+          el: "Λεωνίδιο, Πελοπόννησος — Το Ανερχόμενο Αστέρι"
+        },
+        content: {
+          en: "Leonidio is firmly established as the best sport climbing area in mainland Greece. The crags that surround Leonidio are a mixture of red and grey limestone rock that is highly featured, offering over 3,000 routes across a wide range of grades, from F3 to F9a+. Leonidio is growing rapidly as a climbing destination because it is easy to reach. Many climbers fly into Athens and drive or take a bus to Leonidio, which is only about 3.5 to 4 hours away. Besides climbing, there is a lot more to see and do — visit the Elona Monastery, explore the traditional mountain village of Kosmas, or drive down to Monemvasia, a beautiful medieval castle town. Leonidio is also a great place to try authentic Greek food at local taverns and restaurants, even on a budget.",
+          el: "Το Λεωνίδιο έχει καθιερωθεί ως η καλύτερη περιοχή αθλητικής αναρρίχησης στην ηπειρωτική Ελλάδα. Τα πεδία γύρω από το Λεωνίδιο είναι μείγμα κόκκινου και γκρίζου ασβεστόλιθου, με πάνω από 3.000 διαδρομές από F3 έως F9a+. Αναπτύσσεται ραγδαία επειδή είναι εύκολο να φτάσεις — μόλις 3,5-4 ώρες από την Αθήνα. Εκτός από αναρρίχηση, υπάρχουν πολλά να δεις: η Μονή Ελώνης, το παραδοσιακό χωριό Κόσμας, και η βυζαντινή Μονεμβασιά."
+        }
+      },
+      {
+        title: {
+          en: "Crete — The Wild Card",
+          el: "Κρήτη — Το Wild Card"
+        },
+        content: {
+          en: "Crete, the largest island in Greece, offers a variety of climbing experiences — from single-pitch sports routes to long, traditional multi-pitch climbs. The best-known climbing area is Agiofarago Gorge, where routes range from beginner-friendly to advanced. The gorge leads to a beautiful secluded beach, perfect for cooling off after a day of climbing. There are also many other climbing spots scattered across the island, offering diverse rock types and settings. Karpathos, an island to the east of Crete with soaring mountain ranges and charming quiet beaches, is a growing sport climbing destination. If you like the climate and climbing on Kalymnos but dislike the crowds, Karpathos is an excellent choice.",
+          el: "Η Κρήτη, το μεγαλύτερο νησί της Ελλάδας, προσφέρει ποικιλία αναρριχητικών εμπειριών — από μονόσχοινες αθλητικές διαδρομές έως μακριές παραδοσιακές πολύσχοινες. Το πιο γνωστό πεδίο είναι το Φαράγγι του Αγιοφάραγου, με διαδρομές από αρχάριους έως προχωρημένους. Το φαράγγι οδηγεί σε μια απομονωμένη παραλία. Η Κάρπαθος, ανατολικά της Κρήτης, είναι ένας αναπτυσσόμενος προορισμός — αν σου αρέσει το κλίμα της Καλύμνου αλλά όχι τα πλήθη, η Κάρπαθος είναι εξαιρετική επιλογή."
+        }
+      },
+      {
+        title: {
+          en: "More Across the Country",
+          el: "Περισσότερα Σε Όλη τη Χώρα"
+        },
+        content: {
+          en: "Greece is full of amazing rock adventures waiting to be discovered, thanks to the delicate yet intriguing limestone topography. Other notable areas include: **Nafplio** — Coastal sport routes in the Peloponnese. **Kyparissi** — Remote single-pitch crags near the sea. **Pyli / Mouzaki** — Emerging areas in Thessaly. **Athens (Parnitha, Hymettus)** — Day-trip options near the capital. **Lagkada and Patras** in the Peloponnese compete with **Trikala and Magnesia** on the mainland. The combination of year-round mild weather, short approaches, legendary hospitality and cuisine makes Greece a complete vertical world that climbers from more than 40 countries return to season after season.",
+          el: "Η Ελλάδα είναι γεμάτη εκπληκτικές αναρριχητικές περιπέτειες χάρη στη λεπτή αλλά συναρπαστική ασβεστολιθική τοπογραφία. Άλλες αξιόλογες περιοχές: **Ναύπλιο** — Παράκτιες αθλητικές διαδρομές. **Κυπαρίσσι** — Απομακρυσμένα πεδία δίπλα στη θάλασσα. **Πύλη / Μουζάκι** — Αναδυόμενες περιοχές στη Θεσσαλία. **Αθήνα (Πάρνηθα, Υμηττός)** — Επιλογές ημερήσιας εκδρομής. Ο συνδυασμός ήπιου καιρού όλο τον χρόνο, σύντομων προσεγγίσεων, θρυλικής φιλοξενίας και κουζίνας κάνει την Ελλάδα έναν πλήρη κάθετο κόσμο."
+        }
+      }
+    ],
+    tips: {
+      en: [
+        "Hire a guide if you are new to climbing or unfamiliar with the area — climbing schools operate in Kalymnos, Meteora, Leonidio and Athens.",
+        "Bring a helmet — loose rock from goats, natural erosion and tufa breakage is a real hazard.",
+        "Respect the environment — leave no trace, use designated paths, follow bolting ethics.",
+        "Stay hydrated — the Greek sun is intense, especially on south-facing crags in summer.",
+        "Buy local guidebooks — proceeds fund re-bolting and crag maintenance.",
+        "Rent a scooter on Kalymnos rather than a car — the island roads are narrow and parking is limited.",
+        "Book accommodation in Masouri or Myrties well in advance for the spring and autumn climbing seasons.",
+        "Best season by destination: Kalymnos (April-June, Sept-Oct), Varasova (Oct-May), Meteora (March-May, Sept-Nov), Leonidio (Oct-May), Crete (year-round)."
+      ],
+      el: [
+        "Πρόσλαβε οδηγό αν είσαι νέος στην αναρρίχηση ή άγνωστος στην περιοχή — σχολές λειτουργούν σε Κάλυμνο, Μετέωρα, Λεωνίδιο και Αθήνα.",
+        "Φέρε κράνος — χαλαρά πετρώματα από κατσίκες, διάβρωση και σπασίματα tufa είναι πραγματικός κίνδυνος.",
+        "Σέβασε το περιβάλλον — άφησε το τοπίο όπως το βρήκες, χρησιμοποίησε μονοπάτια.",
+        "Μείνε ενυδατωμένος — ο ελληνικός ήλιος είναι έντονος, ειδικά σε νότια πεδία.",
+        "Αγόρασε τοπικούς οδηγούς αναρρίχησης — τα έσοδα χρηματοδοτούν συντήρηση.",
+        "Νοίκιασε μηχανάκι στην Κάλυμνο αντί για αυτοκίνητο.",
+        "Κάνε κράτηση καταλύματος στο Μασούρι ή Μυρτιές νωρίς για τις ανοιξιάτικες και φθινοπωρινές σεζόν.",
+        "Καλύτερη εποχή ανά προορισμό: Κάλυμνος (Απρ-Ιούν, Σεπτ-Οκτ), Βαρβάσοβα (Οκτ-Μάη), Μετέωρα (Μαρ-Μάη, Σεπτ-Νοε), Λεωνίδιο (Οκτ-Μάη), Κρήτη (όλο τον χρόνο)."
+      ]
+    },
+    faq: [
+      {
+        q: { en: "When is the best time to go climbing in Greece?", el: "Πότε είναι η καλύτερη εποχή για αναρρίχηση στην Ελλάδα;" },
+        a: { en: "It depends on the destination. Spring (April-June) and autumn (September-October) are ideal for most areas. Kalymnos is best April-June and September-October. Varasova and Leonidio are excellent October-May. Meteora works March-May and September-November. Crete offers year-round climbing thanks to varied microclimates.", el: "Εξαρτάται από τον προορισμό. Η άνοιξη (Απρ-Ιούν) και το φθινόπωρο (Σεπτ-Οκτ) είναι ιδανικά για τις περισσότερες περιοχές. Η Κάλυμνος είναι καλύτερη Απρ-Ιούν και Σεπτ-Οκτ. Η Βαρβάσοβα και το Λεωνίδιο είναι εξαιρετικά Οκτ-Μάη. Τα Μετέωρα λειτουργούν Μαρ-Μάη και Σεπτ-Νοε. Η Κρήτη προσφέρει αναρρίχηση όλο τον χρόνο." }
+      },
+      {
+        q: { en: "Do I need to be an experienced climber to climb in Greece?", el: "Χρειάζεται να είμαι έμπειρος αναρριχητής για να σκαρφαλώσω στην Ελλάδα;" },
+        a: { en: "Not at all. Every major climbing destination offers routes for beginners (F3a-F4c) alongside extreme grades. Kalymnos has beginner-friendly sectors, Leonidio has easy warm-up crags, and most areas have guide services and climbing schools that cater to first-time climbers.", el: "Καθόλου. Κάθε σημαντικός προορισμός έχει διαδρομές για αρχάριους (F3a-F4c) δίπλα σε ακραίες βαθμολογίες. Η Κάλυμνος έχει φιλικούς τομείς, το Λεωνίδιο έχει εύκολα πεδία προθέρμανσης, και οι περισσότερες περιοχές έχουν σχολές αναρρίχησης." }
+      },
+      {
+        q: { en: "How do I get to Kalymnos for a climbing trip?", el: "Πώς πάω στην Κάλυμνο για αναρρίχηση;" },
+        a: { en: "Fly to Kos and take the 30-minute ferry from Kos Town to Pothia (Kalymnos). Direct flights to Kos are available from most European cities during summer. Alternatively, overnight ferries from Piraeus connect directly to Kalymnos. Once on the island, rent a scooter from Pothia or Masouri to reach the crags.", el: "Πέταξε στην Κω και πάρε το 30λεπτο πλοίο από την πόλη της Κω για Πόθια (Κάλυμνο). Υπάρχουν επίσης νυχτερινά πλοία από Πειραιά. Μόλις στο νησί, νοίκιασε μηχανάκι από την Πόθια ή το Μασούρι." }
+      },
+      {
+        q: { en: "Is Greece safe for solo climbers?", el: "Είναι η Ελλάδα ασφαλής για μοναχικούς αναρριχητές;" },
+        a: { en: "Yes. Kalymnos in particular is known for its welcoming, social atmosphere — solo climbers regularly find partners at the crag or in the village cafés. The Kalymnos Climbing Festival is an especially good time to connect with other climbers. Guide services and climbing schools also offer guided group days for solo travellers.", el: "Ναι. Η Κάλυμνος είναι γνωστή για την κοινωνική της ατμόσφαιρα — μοναχικοί αναρριχητές βρίσκουν τακτικά παρέα στο πεδίο ή στα καφέ. Το Φεστιβάλ Αναρρίχησης είναι ιδανική στιγμή για γνωριμίες." }
+      },
+      {
+        q: { en: "What gear do I need to bring?", el: "Τι εξοπλισμό χρειάζεται να φέρω;" },
+        a: { en: "Bring your personal climbing gear (shoes, harness, belay device, helmet). Quickdraws are available for rent at gear shops in Kalymnos and Leonidio if you prefer to travel light. Ropes can be purchased or rented locally. The Kalymnos guidebook is essential for navigating the crags and can be bought at Adventure shop in Masouri or online.", el: "Φέρε τον προσωπικό σου εξοπλισμό (παπούτσια, ζώνη, ασφαλιστικό, κράνος). Τα quickdraws διατίθενται προς ενοικίαση στα καταστήματα εξοπλισμού. Ο οδηγός της Καλύμνου είναι απαραίτητος και πωλείται στο κατάστημα Adventure στο Μασούρι." }
+      }
+    ]
   }
 ];
 
