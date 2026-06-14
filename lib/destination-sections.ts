@@ -10264,6 +10264,16 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       ]
     },
     {
+      title: { en: "", el: "" },
+      gallery: [
+        {
+          image: "/images/tinos-gallery-1.webp",
+          alt: { en: "Tinos island, Greece", el: "Νησί Τήνος, Ελλάδα" },
+          caption: { en: "Tinos island, Greece", el: "Νησί Τήνος, Ελλάδα" },
+        },
+      ],
+    },
+    {
       layout: "grid",
       title: { en: "Best Beaches in Tinos", el: "Οι Καλύτερες Παραλίες στην Τήνο" },
       items: [
@@ -10308,6 +10318,16 @@ export const destinationSections: Record<string, DestinationSection[]> = {
         en: "✕ **Expecting Tinos to perform for you** — The island is not optimised for the tourist gaze. Approach it as a guest, not as an audience.\n\n✕ **Treating the church as only a photo opportunity** — The atmosphere inside demands respectful attention.\n\n✕ **Spending your entire time on the coast** — The interior is what makes Tinos unlike anywhere else. Rent a car for at least one full day.\n\n✕ **Visiting Pyrgos without allocating real time** — The Museum of Marble Crafts alone deserves 90 minutes.\n\n✕ **Skipping Volax** — The boulder landscape is one of the most surreal sights in the Cyclades.\n\n💡 What nobody tells you: Tinos rewards curiosity. The more you explore, the more it gives back. The island has never been colonised by mass international tourism, and in 2026 it is still largely what the Cyclades were fifty years ago: honest, serious and deeply rewarding for anyone who pays attention.",
         el: "✕ **Να περιμένεις η Τήνος να σε διασκεδάσει** — Προσέγγισέ το ως φιλοξενούμενος.\n\n✕ **Να βλέπεις την εκκλησία μόνο ως φωτογραφία** — Η ατμόσφαιρα απαιτεί σεβασμό.\n\n✕ **Να μένεις μόνο στην ακτή** — Το εσωτερικό είναι μοναδικό. Νοίκιασε αυτοκίνητο.\n\n✕ **Να επισκέπτεσαι τον Πύργο βιαστικά** — Το Μουσείο Μαρμάρου αξίζει 90 λεπτά.\n\n✕ **Να παραλείπεις τον Βώλακα** — Ένα από τα πιο σουρεαλιστικά τοπία στις Κυκλάδες.\n\n💡 Αυτό που δε σου λέει κανείς: Η Τήνος ανταμείβει την περιέργεια. Το 2026 είναι ακόμα όπως ήταν οι Κυκλάδες πριν πενήντα χρόνια."
       }
+    },
+    {
+      title: { en: "", el: "" },
+      gallery: [
+        {
+          image: "/images/tinos-gallery-2.webp",
+          alt: { en: "Tinos Town, Greece", el: "Πόλη της Τήνου, Ελλάδα" },
+          caption: { en: "Tinos Town, Greece", el: "Πόλη της Τήνου, Ελλάδα" },
+        },
+      ],
     },
     {
       layout: "grid",
