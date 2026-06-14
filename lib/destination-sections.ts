@@ -1050,6 +1050,219 @@ export const destinationSections: Record<string, DestinationSection[]> = {
     },
   ],
 
+  heraklion: [
+    {
+      layout: "list",
+      title: { en: "Why Visit Heraklion", el: "Γιατί να Πας στο Ηράκλειο" },
+      text: {
+        en: "Heraklion divides opinions, and that is one of the more honest things you can say about it. Visitors expecting the whitewashed serenity of the Cyclades will find something else entirely: a working Mediterranean port city with a soul built on thousands of years of trade, invasion, resistance, and reinvention.\n\n**Knossos is one of the great sites of the ancient world** — a partially reconstructed palace complex that gives a genuine spatial sense of Minoan civilisation in 1700 BC. No other site in Greece gives you this.\n\n**The Archaeological Museum is exceptional** — the finest Minoan collection in existence. The Phaistos Disc, the Snake Goddess figurines, the frescoes. Two hours here is not enough.\n\n**The Venetian city is one of the best preserved in the Mediterranean** — Koules fortress, the walls, the Morosini Fountain, the Loggia — an entire Renaissance urban layer.\n\n**The food is among the best in Greece** — the central market, the mezedopolia, the fish tavernas of the old harbour. Cretan cuisine at its capital.\n\n**It is a gateway to the rest of Crete** — Rethymno, Phaistos, Lassithi Plateau, Archanes — all within day-trip range.",
+        el: "Το Ηράκλειο διχάζει τις γνώμες, και αυτό είναι ένα από τα πιο ειλικρινή πράγματα που μπορεί κανείς να πει. Οι επισκέπτες που περιμένουν την ασπρισμένη γαλήνη των Κυκλάδων θα βρουν κάτι εντελώς διαφορετικό: μια ζωντανή μεσογειακή πόλη-λιμάνι.\n\n**Η Κνωσός** — το σπουδαιότερο μινωικό ανάκτορο, μερικώς ανακατασκευασμένο.\n\n**Το Αρχαιολογικό Μουσείο** — η κορυφαία μινωική συλλογή στον κόσμο.\n\n**Η ενετική πόλη** — Κούλες, τείχη, Κρήνη Μοροζίνι, Λότζια.\n\n**Το φαγητό** — κρητική κουζίνα στην πρωτεύουσά της.\n\n**Πύλη για την υπόλοιπη Κρήτη** — Ρέθυμνο, Φαιστός, Λασίθι, Αρχάνες."
+      }
+    },
+    {
+      layout: "list",
+      title: { en: "Best Time to Visit Heraklion", el: "Η Καλύτερη Εποχή για το Ηράκλειο" },
+      text: {
+        en: "**Spring (April–May)** — The most rewarding months for the city and Knossos. Mild temperatures, few crowds, countryside in bloom.\n\n**June** — Best balance of warm sea, manageable temperatures, and a city alive without being overwhelmed.\n\n**July–August** — Peak heat and peak tourism. Knossos can feel congested; visit before 09:00 or after 16:00. The museum is air-conditioned.\n\n**September–October** — Arguably the finest period. Warmest sea, extraordinary light, crowds thin. Grape harvest across the wine region.\n\n💡 Secret: The Heraklion wine region — centred around Archanes — harvests in September. Several estates open for visits. Early September is one of the best times in Crete.",
+        el: "**Άνοιξη (Απρίλιος–Μάιος)** — Οι καλύτεροι μήνες για την πόλη και την Κνωσό.\n\n**Ιούνιος** — Ιδανική ισορροπία ζέστης, θάλασσας και ζωντάνιας.\n\n**Ιούλιος–Αύγουστος** — Πολύς κόσμος. Κνωσός πριν τις 09:00 ή μετά τις 16:00.\n\n**Σεπτέμβριος–Οκτώβριος** — Η καλύτερη περίοδος. Τρύγος στην περιοχή Αρχανών."
+      }
+    },
+    {
+      layout: "list",
+      title: { en: "How to Get to Heraklion", el: "Πώς να Πάτε στο Ηράκλειο" },
+      text: {
+        en: "**By air** — Heraklion International Airport (HER) is one of Greece's busiest. Direct flights from across Europe. Year-round domestic connections. 5 km east of the city centre.\n\n**By ferry** — Daily overnight service from Piraeus (7–8 hours). Regular connections to Santorini, Mykonos, Rhodes. The classic Greek maritime journey.\n\n**By car across Crete** — The E75 runs along the north coast. Heraklion is the midpoint. A car is strongly recommended for exploring beyond the city.\n\n💡 Secret: The overnight ferry from Piraeus is an experience, not a compromise. Book a cabin and arrive at 06:00 as the city wakes up and the market opens.",
+        el: "**Αεροπορικώς** — Αεροδρόμιο Ηρακλείου (HER), 5 χλμ. ανατολικά.\n\n**Ακτοπλοϊκώς** — Νυχτερινά δρομολόγια από Πειραιά (7–8 ώρες). Συνδέσεις με Σαντορίνη, Μύκονο, Ρόδο.\n\n**Οδικώς** — Ε75 κατά μήκος της βόρειας ακτής."
+      }
+    },
+    {
+      layout: "grid",
+      title: { en: "The Old Venetian City", el: "Η Παλιά Ενετική Πόλη" },
+      items: [
+        {
+          title: { en: "Koules Fortress", el: "Κούλες" },
+          text: {
+            en: "The Venetian fortress at the entrance to the old harbour. Built between 1523 and 1540. Three Venetian lions carved into the seaward face. The harbour view from the battlements is one of the defining images of Crete. Go at dusk — the fortress stays open into early evening in summer.",
+            el: "Το ενετικό φρούριο στην είσοδο του παλιού λιμανιού (1523–1540). Τρία ενετικά λιοντάρια στην πρόσοψη. Η θέα από τους προμαχώνες είναι εμβληματική."
+          }
+        },
+        {
+          title: { en: "Lion Square & Morosini Fountain", el: "Πλατεία Λιονταριών & Κρήνη Μοροζίνι" },
+          text: {
+            en: "The social centre of old Heraklion. The Morosini Fountain (1628) sits at the intersection of the main pedestrian streets, surrounded by kafeneions and mezedopolia. The fountain is still fed by the same 17th-century aqueduct from Mount Giouchtas.",
+            el: "Το κοινωνικό κέντρο του Ηρακλείου. Η Κρήνη Μοροζίνι (1628) τροφοδοτείται ακόμα από το υδραγωγείο του 17ου αιώνα."
+          }
+        },
+        {
+          title: { en: "The Venetian Loggia", el: "Ενετική Λότζια" },
+          text: {
+            en: "The most elegant surviving Venetian civic building in Crete. Built in the early 17th century as a meeting place for Venetian nobles. Now serves as the city hall. The arcade is open during the day.",
+            el: "Το πιο κομψό ενετικό κτίριο της Κρήτης. Κτίστηκε ως τόπος συνάντησης των Ενετών ευγενών. Σήμερα στεγάζει το δημαρχείο."
+          }
+        },
+        {
+          title: { en: "Venetian Walls", el: "Ενετικά Τείχη" },
+          text: {
+            en: "4 km long, up to 40 metres thick at the bastions, pierced by four gates. Commissioned by Venice in the 16th century. You can walk the top from Pantokratoras Gate to Martinengo Bastion — where Nikos Kazantzakis is buried — in about 45 minutes.",
+            el: "4 χλμ. μήκος, έως 40 μέτρα πάχος. Περπατήστε από την Πύλη Παντοκράτορα έως τον Προμαχώνα Μαρτινέγκο όπου είναι θαμμένος ο Νίκος Καζαντζάκης."
+          }
+        }
+      ]
+    },
+    {
+      layout: "grid",
+      title: { en: "Knossos & the Archaeological Museum", el: "Κνωσός & Αρχαιολογικό Μουσείο" },
+      items: [
+        {
+          title: { en: "Palace of Knossos", el: "Παλάτι της Κνωσού" },
+          text: {
+            en: "5 km south of the city centre. The ceremonial and political centre of Minoan civilisation (2700–1450 BC). The partially reconstructed complex includes the Throne Room (the oldest throne in Europe), the Grand Staircase, the Central Court, and the storage magazines. Open daily; combined ticket with the museum available. Go before 09:00 or after 16:00.",
+            el: "5 χλμ. νότια. Το τελετουργικό και πολιτικό κέντρο του μινωικού πολιτισμού. Η Θρόνος (ο αρχαιότερος θρόνος της Ευρώπης), η Μεγάλη Κλίμακα, η Κεντρική Αυλή."
+          }
+        },
+        {
+          title: { en: "Heraklion Archaeological Museum", el: "Αρχαιολογικό Μουσείο Ηρακλείου" },
+          text: {
+            en: "The finest Minoan collection in the world. The Phaistos Disc, the Snake Goddess figurines, the Bull-Leaper fresco, the Harvester Vase, the Linear A and B tablets. Allow a minimum of two hours. Buy the combined ticket with Knossos.\n\n💡 Secret: Visit the museum before Knossos — seeing the actual artefacts before walking the site transforms the experience.",
+            el: "Η κορυφαία μινωική συλλογή στον κόσμο. Ο Δίσκος της Φαιστού, οι θεές των φιδιών, οι τοιχογραφίες. Αφιερώστε τουλάχιστον 2 ώρες."
+          }
+        }
+      ]
+    },
+    {
+      layout: "list",
+      title: { en: "Heraklion Food: What to Eat", el: "Φαγητό στο Ηράκλειο" },
+      text: {
+        en: "**Dakos** — The canonical Cretan dish: barley rusk with tomato, mizithra, olive oil, and oregano.\n\n**Kalitsounia** — Small pastries filled with mizithra and honey or wild greens.\n\n**Apaki** — Smoked pork from the Psiloritis mountains, marinated in wine vinegar and herbs.\n\n**Snails (Chochlioi boubouristi)** — Snails cooked in olive oil with rosemary until caramelised.\n\n**Graviera** — The great Cretan hard cheese, PDO protected from sheep's milk.\n\n**Fresh fish** — The old harbour fish tavernas serve the day's catch with minimal preparation.\n\n**Raki (Tsikoudia)** — Crete's spirit, distilled from grape pomace. Arrives automatically with food in traditional tavernas.\n\n💡 Secret: The best value food is one block behind any tourist-facing street. If the menu has photos, keep walking.",
+        el: "**Ντάκος** — Το κλασικό κρητικό πιάτο.\n\n**Καλιτσούνια** — Μικρές πίτες με μυζήθρα.\n\n**Απάκι** — Καπνιστό χοιρινό από τον Ψηλορείτη.\n\n**Χοχλιοί μπουρμπουριστοί** — Σαλιγκάρια με δεντρολίβανο.\n\n**Γραβιέρα** — Το σπουδαίο κρητικό τυρί.\n\n**Ράκη (Τσικουδιά)** — Σερβίρεται αυτόματα με το φαγητό."
+      }
+    },
+    {
+      layout: "grid",
+      title: { en: "Beaches Near Heraklion", el: "Παραλίες Κοντά στο Ηράκλειο" },
+      items: [
+        {
+          title: { en: "Amoudara (3km west)", el: "Αμμούδαρα (3χλμ. δυτικά)" },
+          text: {
+            en: "The closest organized beach. Long sandy stretch with sunbeds and services. The western end toward the salt lake is wilder and quieter.",
+            el: "Η κοντινότερη οργανωμένη παραλία. Το δυτικό άκρο είναι πιο ήσυχο."
+          }
+        },
+        {
+          title: { en: "Matala (75km southwest)", el: "Μάταλα (75χλμ. νοτιοδυτικά)" },
+          text: {
+            en: "Famous south coast beach with red sandstone cliffs and cave tombs. Crystal clear water. Worth a full day trip from Heraklion.",
+            el: "Διάσημη παραλία με κόκκινους βράχους και σπηλιές. Εξαιρετικό νερό."
+          }
+        },
+        {
+          title: { en: "Agia Pelagia (25km west)", el: "Αγία Πελαγία (25χλμ. δυτικά)" },
+          text: {
+            en: "A sheltered bay with calm clear water and good tavernas on the beach. Popular with Heraklion locals.",
+            el: "Προστατευμένος κόλπος με ήρεμα νερά. Δημοφιλής στους ντόπιους."
+          }
+        },
+        {
+          title: { en: "Karteros / Amnissos (8km east)", el: "Καρτερός / Αμνισσός (8χλμ. ανατολικά)" },
+          text: {
+            en: "Two adjacent beaches east of the airport. Karteros is organised and calm; Amnissos has a Minoan site above the beach.",
+            el: "Οργανωμένες παραλίες ανατολικά του αεροδρομίου. Η Αμνισσός έχει μινωικό χώρο πάνω από την παραλία."
+          }
+        }
+      ]
+    },
+    {
+      layout: "grid",
+      title: { en: "Day Trips from Heraklion", el: "Εκδρομές από το Ηράκλειο" },
+      items: [
+        {
+          title: { en: "Archanes (15km south)", el: "Αρχάνες (15χλμ. νότια)" },
+          text: {
+            en: "A beautifully preserved Venetian-era village in wine country. The wine cooperative produces excellent Kotsifali and Mandilari reds. The Fourni Minoan cemetery nearby is exceptional and uncrowded.",
+            el: "Πανέμορφο ενετικό χωριό στην οινοπαραγωγό περιοχή. Κορυφαία κρασιά Κοτσιφάλι και Μανδηλαριά."
+          }
+        },
+        {
+          title: { en: "Phaistos & Agia Triada (60km SW)", el: "Φαιστός & Αγία Τριάδα (60χλμ. ΝΔ)" },
+          text: {
+            en: "The second great Minoan palace — unrestored, with a dramatic position overlooking the Messara Plain. Combined with Agia Triada, they make a full and excellent day.",
+            el: "Το δεύτερο μεγάλο μινωικό ανάκτορο, χωρίς αναστηλώσεις, με εκπληκτική θέα στη Μεσαρά."
+          }
+        },
+        {
+          title: { en: "Spinalonga (90km east)", el: "Σπιναλόγκα (90χλμ. ανατολικά)" },
+          text: {
+            en: "The Venetian island fortress in the Gulf of Elounda. A leper colony until 1957. The boat crossing across the clear gulf is part of the experience.",
+            el: "Ενετικό νησί-φρούριο, λεπροκομείο έως το 1957. Προσβάσιμο με βάρκα από Ελούντα."
+          }
+        },
+        {
+          title: { en: "Lassithi Plateau (50km east)", el: "Οροπέδιο Λασιθίου (50χλμ. ανατολικά)" },
+          text: {
+            en: "A high mountain plateau at 840m, ringed by the Dikti Mountains. The Psychro Cave — legendary birthplace of Zeus. The drive through mountain switchbacks is itself an event.",
+            el: "Οροπέδιο στα 840μ., με το Δικταίο Σπήλαιο — η γενέτειρα του Δία κατά την παράδοση."
+          }
+        }
+      ]
+    },
+    {
+      layout: "list",
+      title: { en: "Practical Tips", el: "Πρακτικές Συμβουλές" },
+      text: {
+        en: "**Orientation** — The old city is compact. The main pedestrian street (25 Avgoustou) runs from the ferry port to Lion Square. Knossos is 5 km south — accessible by city bus (lines 2 and 4).\n\n**Getting around** — Walk within the old city. Bus or taxi for Knossos. Rent a car for day trips.\n\n**When to book** — Knossos and the museum offer online tickets. In July–August, arriving without a ticket for Knossos means significant queuing.\n\n**Language and money** — English is widely spoken. The central market operates largely in cash.\n\n**The raki question** — Raki is offered as hospitality. It is rude to decline without a reason.\n\n💡 Secret: The city bus to Knossos (lines 2 and 4) runs from the central bus terminal east of Lion Square, takes about 20 minutes, and costs a fraction of a taxi.",
+        el: "**Προσανατολισμός** — Η παλιά πόλη είναι συμπαγής. Λεωφορεία 2 και 4 για Κνωσό.\n\n**Μετακινήσεις** — Με τα πόδια στην παλιά πόλη. Αυτοκίνητο για εκδρομές.\n\n**Κράτηση** — Ηλεκτρονικά εισιτήρια για Κνωσό και μουσείο.\n\n**Χρήματα** — Η αγορά λειτουργεί κυρίως με μετρητά.\n\n**Η ρακή** — Προσφέρεται ως φιλοξενία. Δεν αρνείσαι χωρίς λόγο."
+      }
+    },
+    {
+      layout: "faq",
+      title: { en: "FAQ — Heraklion Essentials", el: "Συχνές Ερωτήσεις" },
+      items: [
+        {
+          title: { en: "How many days do you need in Heraklion?", el: "Πόσες μέρες χρειάζομαι στο Ηράκλειο;" },
+          text: {
+            en: "Minimum two full days: one for Knossos and the Archaeological Museum, one for the Venetian old city, the market, and the harbour. Three to four days allows day trips to Phaistos, Archanes, or the south coast.",
+            el: "Τουλάχιστον δύο πλήρεις μέρες. Τρεις με τέσσερις επιτρέπουν εκδρομές."
+          }
+        },
+        {
+          title: { en: "Is Heraklion worth visiting or should I go to a resort?", el: "Αξίζει το Ηράκλειο ή να πάω σε resort;" },
+          text: {
+            en: "Heraklion is worth visiting if you are interested in history, archaeology, and food. It is not for people whose primary goal is a beach holiday.",
+            el: "Αξίζει αν σας ενδιαφέρει η ιστορία, η αρχαιολογία και το φαγητό."
+          }
+        },
+        {
+          title: { en: "Is Knossos worth visiting?", el: "Αξίζει η Κνωσός;" },
+          text: {
+            en: "Yes, emphatically. One of the most significant archaeological sites in the world. Go with some preparation — read about Minoan civilisation beforehand or visit the museum first.",
+            el: "Ναι, απόλυτα. Διαβάστε πρώτα για τον μινωικό πολιτισμό ή επισκεφθείτε πρώτα το μουσείο."
+          }
+        },
+        {
+          title: { en: "Do you need a car in Heraklion?", el: "Χρειάζομαι αυτοκίνητο στο Ηράκλειο;" },
+          text: {
+            en: "Not for the city itself. Essential for any exploration beyond the immediate city.",
+            el: "Όχι για την πόλη. Απαραίτητο για εξερεύνηση πέρα από το άμεσο κέντρο."
+          }
+        },
+        {
+          title: { en: "What is the best area to stay in Heraklion?", el: "Ποια είναι η καλύτερη περιοχή για διαμονή;" },
+          text: {
+            en: "The old city within the Venetian walls for proximity to everything. The harbour area around the Venetian Arsenal for views and atmosphere.",
+            el: "Η παλιά πόλη εντός των τειχών. Η περιοχή του λιμανιού για θέα."
+          }
+        },
+        {
+          title: { en: "Is Heraklion expensive?", el: "Είναι ακριβό το Ηράκλειο;" },
+          text: {
+            en: "Less expensive than the island resorts. The central market, traditional tavernas, and public transport are all good value.",
+            el: "Φθηνότερο από τα νησιωτικά resorts."
+          }
+        }
+      ]
+    }
+  ],
+
   corfu: [
     {
       title: {
