@@ -14,5 +14,63 @@
     "food": { "value": 9, "reason": "Exceptional pistachios, fresh seafood, and kakavia soup." }
   },
   "quick_summary": "Aegina is the Saronic island 40 minutes from Athens — home to the Temple of Aphaia, neoclassical Aegina Town, Perdika fishing village, and the finest pistachios in Greece.",
-  "bestFor": ["history", "food_lovers", "couples", "families", "day_trips", "off_season"]
+  "bestFor": ["history", "food_lovers", "couples", "families", "day_trips", "off_season"],
+  "content": {
+    "pros": [
+      "Only 40 minutes from Athens by high-speed ferry — the easiest island escape from the capital",
+      "Temple of Aphaia — one of the best-preserved ancient Greek temples, predating the Parthenon",
+      "Exceptional pistachio production — Aegina pistachios are PDO and considered the best in Greece",
+      "Aegina Town has genuine neoclassical architecture and a lively waterfront with excellent seafood tavernas",
+      "Perdika fishing village on the south coast — authentic, uncrowded, with superb grilled fish tavernas",
+      "Agia Marina beach — long sandy beach with clear water, family-friendly and well-organised",
+      "Excellent day-trip potential — you can visit the temple, eat pistachios, swim and be back in Athens by evening",
+      "Affordable prices — significantly cheaper than most Cycladic islands for food, ferries and accommodation",
+      "Rich history — the Temple of Aphaia, Kolona archaeological site, and the Monastery of Agios Nektarios",
+      "The island feels genuinely Greek and unpretentious — no mass tourism infrastructure",
+      "Good for winter visits — Aegina Town functions year-round with open tavernas and cafés"
+    ],
+    "cons": [
+      "Limited nightlife — the island quietens down after 11pm, even in summer",
+      "Beaches are pleasant but not spectacular — no dramatic cliffs or turquoise coves like Milos or Zakynthos",
+      "Limited luxury accommodation — no high-end resorts or five-star hotels",
+      "Can feel quiet for younger travellers seeking nightlife and action",
+      "The ferry connection, while frequent, can be disrupted by wind in winter months",
+      "Some beaches (like Agia Marina) get busy with day-trippers from Athens in July and August",
+      "The interior beyond the pistachio orchards and the monastery has limited attractions"
+    ],
+    "insider_tips": [
+      "Visit the Temple of Aphaia late afternoon for golden light and far fewer crowds — the site closes at sunset",
+      "The best pistachio products are sold at the family-run shops on the road from Aegina Town to the Temple — not at the souvenir stalls at the port",
+      "Eat at the Perdika waterfront tavernas for the freshest grilled fish — the boats land the catch in the morning and it is on the grill by lunch",
+      "Take the early morning ferry from Piraeus (7:30am) and the last ferry back (8pm) for a full day from Athens without needing to stay overnight",
+      "Rent a bicycle or scooter in Aegina Town to explore the island — it is flat enough around the coast for easy cycling",
+      "The Monastery of Agios Nektarios is the largest monastery in Greece and a significant pilgrimage site — allow an hour for the grounds",
+      "Visit the archaeological site of Kolona right at the port — most ferry passengers walk past without noticing it",
+      "September and October are the best months: warm sea, harvest season for pistachios, and empty beaches",
+      "Combine Aegina with a visit to the neighbouring island of Agistri — a 15-minute ferry ride for even clearer water and quieter beaches",
+      "The pistachio festival in early September in Aegina Town is worth planning around — local producers, tastings, and cooking demonstrations"
+    ],
+    "mistakes_to_avoid": [
+      "Treating Aegina as only a day trip — staying overnight reveals the island's quiet evening character and empty morning streets",
+      "Eating at the tourist-oriented tavernas immediately at the port — walk one street back for better quality and half the price",
+      "Missing the Temple of Aphaia — it is one of the most important ancient sites in Greece and many day-trippers skip it for the beach",
+      "Expecting Cycladic island aesthetics — Aegina is Saronic, with neoclassical and Byzantine character rather than whitewashed Cycladic architecture",
+      "Skipping Perdika — the south coast village is the most charming settlement on the island",
+      "Not trying fresh pistachio products — the ice cream, baklava and pesto are unique to the island and exceptional"
+    ]
+  },
+  "seasonality": {
+    "january": { "temp": 13, "price_multiplier": 0.6 },
+    "february": { "temp": 13, "price_multiplier": 0.6 },
+    "march": { "temp": 15, "price_multiplier": 0.7 },
+    "april": { "temp": 18, "price_multiplier": 0.8 },
+    "may": { "temp": 23, "price_multiplier": 1 },
+    "june": { "temp": 28, "price_multiplier": 1.2 },
+    "july": { "temp": 31, "price_multiplier": 1.4 },
+    "august": { "temp": 31, "price_multiplier": 1.5 },
+    "september": { "temp": 27, "price_multiplier": 1.1 },
+    "october": { "temp": 22, "price_multiplier": 0.9 },
+    "november": { "temp": 18, "price_multiplier": 0.7 },
+    "december": { "temp": 14, "price_multiplier": 0.6 }
+  }
 }

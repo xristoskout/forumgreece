@@ -14,5 +14,55 @@
     "food": { "value": 7, "reason": "Solid tavernas in Chora and coastal villages; fresh seafood and traditional Cycladic dishes." }
   },
   "quick_summary": "Ios is a Cycladic island known for its wild beaches, legendary nightlife in Chora, Homer's Tomb, and a surprisingly budget-friendly alternative to Mykonos and Santorini.",
-  "bestFor": ["party", "nightlife", "young_couples", "beaches", "budget_friendly"]
+  "bestFor": ["party", "nightlife", "young_couples", "beaches", "budget_friendly"],
+  "pros": [
+    "The Chora is one of the most beautiful whitewashed Cycladic hilltop villages — a labyrinth of marble-paved lanes, blue-domed churches, and windmill-crowned ridges with panoramic sea views",
+    "Mylopotas beach is two kilometres of pale sand in a sheltered bay, with organised beach clubs at one end and quiet solitude at the other",
+    "Manganari on the south coast delivers three wild sandy bays with some of the clearest turquoise water in the Cyclades and almost no development",
+    "The nightlife in the upper Chora is legendary — a dense, energetic bar scene that fills the narrow lanes from 9pm until late, unlike anything else in the Greek islands",
+    "Homer's Tomb on the northern ridge is one of the most evocative ancient sites in the Aegean, with extraordinary views across to Sikinos and Folegandros",
+    "Excellent value compared to Mykonos and Santorini — accommodation, food, and drink are significantly cheaper on Ios",
+    "Positioned perfectly for island hopping — Santorini is 45 minutes away, Naxos under an hour, and Folegandros/Sikinos within 2 hours",
+    "The Skarkos Early Bronze Age settlement (2800–2300 BC) and the small Archaeological Museum provide serious historical depth behind the party reputation"
+  ],
+  "cons": [
+    "In July–August the Chora and Mylopotas are extremely crowded; the island's narrow streets and infrastructure struggle under peak-season numbers",
+    "The party reputation draws a very specific demographic — those seeking quiet, family-oriented, or romantic getaways should look elsewhere in summer",
+    "Steep climb from the port to the Chora (150m elevation gain via a long marble staircase) is challenging with luggage or for those with mobility issues",
+    "The meltemi wind can make north-facing beaches rough in July–August, limiting swimming options on certain days",
+    "Beyond the Chora and the main beaches, there is relatively limited cultural or sightseeing infrastructure compared to Naxos or Paros",
+    "Family facilities are limited — the island is not set up for young children, with steep steps, party noise, and few child-specific amenities"
+  ],
+  "insider_tips": [
+    "Visit the Chora in the early morning (before 10:00) when the day-visitors haven't arrived yet — it is atmospheric, quiet, and the morning light on the whitewashed lanes is extraordinary",
+    "Manganari's three bays are best visited by scooter or ATV — the south coast road is rough and bus access is limited; arrive before 10:00 for solitude",
+    "Homer's Tomb is most atmospheric at sunset, with the light falling across the sea toward Sikinos and Folegandros",
+    "The Archaeological Museum in the Chora is small and often overlooked — the Skarkos finds are world-class and it takes only 30 minutes",
+    "Eat in the side streets of the Chora rather than on the main bar strip — the best traditional tavernas are one block away from the party zone",
+    "September is the finest month on Ios — the sea is warmest, crowds thin dramatically, and the Chora is beautiful in the evenings",
+    "The western end of Mylopotas beach is quieter and less developed; walk 10 minutes from the beach bar area for relative solitude",
+    "Book accommodation in the lower Chora (near the port road) to avoid the steep climb from the harbour with luggage"
+  ],
+  "mistakes_to_avoid": [
+    "Thinking Ios is only for partying — the island has excellent beaches, serious history, and beautiful hiking trails; the party Chora is just one layer",
+    "Staying in the upper Chora if you have heavy luggage — the marble staircase from the port is beautiful but punishing with suitcases",
+    "Skipping Manganari because it's a 30-minute drive — it is one of the finest beach environments in the Cyclades and worth the journey",
+    "Expecting luxury accommodation — Ios is primarily mid-range and budget; the handful of boutique hotels fill very early",
+    "Visiting in August without booking everything in advance — the island is at capacity and last-minute options are severely limited and overpriced",
+    "Dismissing Homer's Tomb as a tourist gimmick — the site is genuinely ancient, the location is magnificent, and the view alone justifies the walk"
+  ],
+  "seasonality": {
+    "january": { "temp": 12, "price_multiplier": 0.4 },
+    "february": { "temp": 12, "price_multiplier": 0.4 },
+    "march": { "temp": 14, "price_multiplier": 0.5 },
+    "april": { "temp": 17, "price_multiplier": 0.7 },
+    "may": { "temp": 21, "price_multiplier": 0.9 },
+    "june": { "temp": 25, "price_multiplier": 1.1 },
+    "july": { "temp": 28, "price_multiplier": 1.4 },
+    "august": { "temp": 28, "price_multiplier": 1.5 },
+    "september": { "temp": 25, "price_multiplier": 1.1 },
+    "october": { "temp": 21, "price_multiplier": 0.75 },
+    "november": { "temp": 17, "price_multiplier": 0.5 },
+    "december": { "temp": 13, "price_multiplier": 0.4 }
+  }
 }

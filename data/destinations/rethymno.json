@@ -14,5 +14,55 @@
     "food": { "value": 8, "reason": "Excellent Cretan tavernas throughout." }
   },
   "quick_summary": "Venetian old town, Fortezza castle, sandy city beach, and the best base for exploring Crete's dramatic interior.",
-  "bestFor": ["couples", "families", "history", "food_lovers", "culture"]
+  "bestFor": ["couples", "families", "history", "food_lovers", "culture"],
+  "pros": [
+    "The Old Town is one of the best-preserved Venetian cities in the Mediterranean — a UNESCO-listed labyrinth of narrow lanes, Rimondi Fountain, Venetian Loggia, and Ottoman wooden overhangs",
+    "The Fortezza is the largest Venetian fortress ever built (1573–1587), offering 360-degree views of the Old Town, harbour, and the White Mountains",
+    "The city beach starts right where the harbour ends — a long sandy stretch that is walkable from the Old Town, with organised and free sections",
+    "Rethymno is the ideal base for exploring Crete's interior — Arkadi Monastery, Preveli Palm Beach, Amari Valley, and the Psiloritis range are all within day-trip range",
+    "Human scale and intimacy — the Old Town fits inside a 20-minute walk, unlike the sprawl of Heraklion or the formality of Chania",
+    "The Venetian Harbour at sunset with the lighthouse and Fortezza backdrop is genuinely one of the most photographed scenes in Crete",
+    "Excellent food scene with traditional tavernas in the Old Town serving staka, snails, and kalitsounia at prices lower than Chania or Heraklion",
+    "The Rethymno Renaissance Festival in August brings open-air theatre, music, and cultural events to the Fortezza and Old Town"
+  ],
+  "cons": [
+    "The city beach is convenient but not exceptional — it is sandy and long but lacks the dramatic setting of southern Crete beaches",
+    "Parking in the Old Town is impossible — designated lots outside the walls add a 5–10 minute walk",
+    "Peak season (July–August) is very busy with package tourists; the narrow Old Town lanes can feel congested",
+    "The Fortezza is almost completely unshaded — midday summer visits are punishing and best avoided",
+    "Nightlife is limited to Old Town bars that wind down by midnight; no club scene exists",
+    "The city has less dramatic scenery than Chania's Venetian harbour or Heraklion's Knossos — it is pleasant rather than spectacular"
+  ],
+  "insider_tips": [
+    "The best sunset view is from the Bastion of St. Paul on the Fortezza's west side, directly above the lighthouse",
+    "Eat one block into the Old Town rather than on the harbour front — the tavernas on Venetian Harbour are priced for tourists; walk 30 seconds inland for better food at half the price",
+    "Preveli Beach is best reached by boat from Plakias (avoiding the steep descent path); the first morning boat arrives before the crowds",
+    "The Amari Valley deserves a minimum half-day — stop in Thronos for lunch at a traditional kafeneion; buy cherries from roadside stands in season",
+    "The Rethymno Carnival in February–March is one of the largest in Greece and transforms the Old Town into an open-air celebration",
+    "Walk the Old Town walls from the Porta Guora gate to the Fortezza for a peaceful elevated view of the city",
+    "The Neratzes Mosque minaret (27m) is occasionally open for climbing — the Old Town view from the top is extraordinary",
+    "Visit the Fortezza at opening time (08:00) for near-empty ramparts and the best morning light for photography"
+  ],
+  "mistakes_to_avoid": [
+    "Eating at the harbour-front restaurants without checking the menu first — the Venetian Harbour is beautiful but several restaurants operate on tourist-volume model with mediocre food",
+    "Attempting Preveli Beach at midday in August without going early or by boat — the descent path in 38°C heat with crowds is genuinely unpleasant",
+    "Parking inside the Old Town — use designated lots outside the walls; the Old Town is compact and everything is a short walk",
+    "Rushing the Amari Valley into a quick drive-through — this is one of Crete's most authentic regions and deserves unhurried exploration",
+    "Visiting the Fortezza in the midday heat of July–August — it is largely unshaded and the experience is much better at opening or just before closing",
+    "Expecting a party scene — Rethymno is a city of evening promenades and quiet drinks, not clubs or late-night bars"
+  ],
+  "seasonality": {
+    "january": { "temp": 12, "price_multiplier": 0.5 },
+    "february": { "temp": 12, "price_multiplier": 0.5 },
+    "march": { "temp": 14, "price_multiplier": 0.6 },
+    "april": { "temp": 17, "price_multiplier": 0.75 },
+    "may": { "temp": 21, "price_multiplier": 0.9 },
+    "june": { "temp": 26, "price_multiplier": 1.1 },
+    "july": { "temp": 29, "price_multiplier": 1.3 },
+    "august": { "temp": 29, "price_multiplier": 1.4 },
+    "september": { "temp": 26, "price_multiplier": 1.1 },
+    "october": { "temp": 21, "price_multiplier": 0.8 },
+    "november": { "temp": 17, "price_multiplier": 0.6 },
+    "december": { "temp": 13, "price_multiplier": 0.5 }
+  }
 }

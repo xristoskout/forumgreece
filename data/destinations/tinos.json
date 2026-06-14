@@ -14,5 +14,48 @@
     "food": { "value": 10, "reason": "Best food in the Cyclades — artichokes, loukoumades, syglino, graviera." }
   },
   "quick_summary": "Tinos is the sacred island of the Cyclades — home to Panagia Evangelistria, Pyrgos marble village, Venetian dovecotes, Volax boulder landscape, and the finest food culture in the archipelago.",
-  "bestFor": ["culture", "food_lovers", "religious_travel", "couples", "off_season", "photography"]
+  "bestFor": ["culture", "food_lovers", "religious_travel", "couples", "off_season", "photography"],
+  "content": {
+    "pros": [
+      "Panagia Evangelistria — the most important religious pilgrimage site in modern Greece, drawing over a million visitors annually",
+      "Pyrgos marble village — extraordinary craftsmanship, the Museum of Marble Crafts is one of the best-designed museums in the Cyclades",
+      "Best food culture in the Cyclades — PDO artichokes, loukoumades, syglino, graviera, thyme honey",
+      "Venetian dovecotes — over a thousand ornate stone towers unique to Tinos, scattered across the hillsides",
+      "Volax — a surreal landscape of enormous rounded granite boulders surrounding a traditional village",
+      "Over 50 inhabited villages — more than any other Cycladic island, each with distinct character",
+      "Excellent year-round destination — genuine community life continues through winter",
+      "Affordable compared to Mykonos and Santorini — better value for accommodation and food",
+      "Rich bicultural heritage — Catholic and Orthodox traditions coexist since the Venetian period",
+      "Authentic, un-touristy atmosphere — no international hotel chains or beach clubs"
+    ],
+    "cons": [
+      "Limited nightlife — quiet evenings and local panigiria festivals; not a party island",
+      "Requires a car to explore properly — the interior villages and north coast are not served by regular buses",
+      "Limited luxury accommodation — no large resort hotels or international chains",
+      "North coast roads are narrow and winding — require confidence driving after dark",
+      "Beaches are pleasant but not the standout attraction — less dramatic than Milos or Crete",
+      "Limited infrastructure in the interior — few ATMs, pharmacies or supermarkets outside Tinos Town",
+      "Port area can feel busy and institutional around the 15th of August pilgrimage"
+    ],
+    "insider_tips": [
+      "Walk up to the cemetery above Pyrgos early in the morning — the marble funerary sculpture gallery is one of the most moving sights in the Cyclades",
+      "Visit the Saturday morning farmers' market in Tinos Town for the best local produce — artichokes, honey, cheese, and cured meats directly from producers",
+      "Arrive at Kolymbithra beach before 10am to swim in the large bay before the day visitors arrive; the smaller western bay stays quieter all day",
+      "The best traditional taverna on the island is in Kardiani — arrive at lunchtime and ask what is cooking that day",
+      "Combine Tinos with Syros for the most culturally rich Cyclades trip — they are 35 minutes apart by ferry and complement each other perfectly",
+      "Pyrgos deserves real time — the Museum of Marble Crafts alone needs 90 minutes, and the family workshops in the lanes are worth watching",
+      "Book accommodation in Pyrgos or Kardiani for at least one night — day-tripping from the port misses the atmosphere of these villages at dusk",
+      "The 25-minute ferry to Mykonos makes Tinos an excellent base for a Mykonos evening without staying there",
+      "Visit in September for the warmest sea, thinning crowds, and exceptional light over the marble villages and dovecotes",
+      "The loukoumades stall just off the main street in Tinos Town has been serving for generations — locals queue from mid-morning"
+    ],
+    "mistakes_to_avoid": [
+      "Spending your entire time on the coast — the interior villages are what make Tinos unlike anywhere else",
+      "Visiting Pyrgos without allocating real time — the Museum of Marble Crafts alone deserves 90 minutes",
+      "Expecting Tinos to perform for you like Mykonos — approach it as a guest, not as an audience",
+      "Skipping Volax — the boulder landscape is one of the most surreal sights in the Cyclades",
+      "Treating the church as only a photo opportunity — the atmosphere inside demands respectful attention",
+      "Relying on taxis or public transport — rent a car for at least one full day to explore the interior"
+    ]
+  }
 }

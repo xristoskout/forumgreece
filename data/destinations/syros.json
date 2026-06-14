@@ -14,5 +14,55 @@
     "food": { "value": 9, "reason": "Serious food culture with local specialties." }
   },
   "quick_summary": "The Cyclades' capital, Syros offers neoclassical architecture, medieval Ano Syros, and authentic year-round island life.",
-  "bestFor": ["couples", "food_lovers", "culture", "year_round", "off_beaten_path"]
+  "bestFor": ["couples", "food_lovers", "culture", "year_round", "off_beaten_path"],
+  "pros": [
+    "Ermoupoli is one of the finest port cities in the Aegean — a grand neoclassical city with marble-paved Miaouli Square, the magnificent Town Hall by Ernst Ziller, and 19th-century mansions",
+    "Ano Syros is the best-preserved medieval Cycladic settlement most visitors never hear of — a labyrinth of stone alleys climbing to the Cathedral of St George with unforgettable views",
+    "Syros is a real, functioning Greek city with year-round population, not a seasonal resort — shops, schools, hospitals, and cultural life continue all winter",
+    "The Apollon Theatre is a stunning miniature replica of La Scala in Milan (1864) with exquisite frescoes and exceptional acoustics; attending a performance here is magical",
+    "Serious food culture with distinct local identity — halvadopites (sesame & honey nougat), soumada (almond syrup), local cheeses, cured meats, and fresh Aegean seafood without tourist markup",
+    "The Vaporia neighbourhood (old captains' quarter) features magnificent 19th-century shipping magnates' mansions perched dramatically on the rocks above the sea",
+    "Syros is a major ferry hub with connections to Piraeus and nearly every Cycladic island, making island hopping seamless",
+    "The Syros Carnival in February/March is one of the most authentic in Greece, with a tradition dating back to the 19th century"
+  ],
+  "cons": [
+    "The beaches are underwhelming compared to other Cyclades — sandy coves exist but none rival Mylopotas (Ios) or Kolymbithres (Paros)",
+    "Limited nightlife — Ermoupoli has pleasant bars for evening drinks but no club scene; late-night party seekers will be disappointed",
+    "Few luxury resort options — Syros has boutique hotels and characterful accommodation but not the high-end resort infrastructure of Mykonos or Santorini",
+    "The island lacks a single iconic sight (like Knossos or the Caldera) — its appeal is subtler and requires more effort to appreciate",
+    "Wind can be strong in July–August, particularly on exposed northern and eastern coasts, affecting beach days",
+    "Some find Ermoupoli too urban for a Greek island holiday — it is a city by the sea rather than a beach destination"
+  ],
+  "insider_tips": [
+    "Visit Miaouli Square around 9pm when the lights are on and the city is alive with evening strolls — the atmosphere is quintessentially Greek",
+    "Climb to Ano Syros in the late afternoon when the light softens; the view over Ermoupoli and the Aegean at sunset is unforgettable",
+    "Order a soumada (almond syrup drink) at one of the historic cafes on Miaouli Square — it is a Syros signature found nowhere else",
+    "Check the Apollon Theatre programme before your visit — attending a concert or performance in this La Scala miniature is a magical experience",
+    "Take the clifftop walk through Vaporia for breathtaking views of the Aegean and the neoclassical mansions built by 19th-century shipping magnates",
+    "Eat at the tavernas in the Ano Syros plateau rather than the Ermoupoli waterfront for more authentic food at better prices",
+    "Visit in March or October for mild weather, empty streets, and a genuinely local experience without any tourist pressure",
+    "The Syros Carnival (February–March) is the most authentic in the Cyclades — book ahead as accommodation fills with returning Greeks"
+  ],
+  "mistakes_to_avoid": [
+    "Expecting sandy beach holidays — Syros is about architecture, culture, and city life by the sea; the beaches are pleasant but secondary",
+    "Skipping Ano Syros — many visitors stay in Ermoupoli and miss the medieval hilltop settlement entirely; it is a 15-minute walk and transforms your understanding of the island",
+    "Treating Syros as only a ferry transit point — staying overnight reveals the city's evening character and morning market life",
+    "Rushing Ermoupoli in a few hours — the city rewards unhurried exploration; give it at least a full day",
+    "Visiting without trying halvadopites and soumada — Syros' unique food culture is part of the experience",
+    "Expecting Mykonos-style nightlife — Syros is about evening promenades and harbour drinks, not clubs or late bars"
+  ],
+  "seasonality": {
+    "january": { "temp": 12, "price_multiplier": 0.5 },
+    "february": { "temp": 12, "price_multiplier": 0.5 },
+    "march": { "temp": 14, "price_multiplier": 0.6 },
+    "april": { "temp": 17, "price_multiplier": 0.75 },
+    "may": { "temp": 21, "price_multiplier": 0.9 },
+    "june": { "temp": 26, "price_multiplier": 1.1 },
+    "july": { "temp": 29, "price_multiplier": 1.3 },
+    "august": { "temp": 29, "price_multiplier": 1.4 },
+    "september": { "temp": 25, "price_multiplier": 1.1 },
+    "october": { "temp": 20, "price_multiplier": 0.8 },
+    "november": { "temp": 16, "price_multiplier": 0.6 },
+    "december": { "temp": 12, "price_multiplier": 0.5 }
+  }
 }

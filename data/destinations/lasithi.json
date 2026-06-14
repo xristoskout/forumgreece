@@ -14,5 +14,55 @@
     "food": { "value": 9, "reason": "Sitia olive oil, Liatiko wine, and traditional Cretan tavernas." }
   },
   "quick_summary": "Lasithi is the easternmost region of Crete — home to Spinalonga Island, Vai Palm Forest, Elounda Bay, and the unperformed pace of traditional Cretan villages.",
-  "bestFor": ["history", "food_lovers", "beaches", "luxury", "road_trips", "nature"]
+  "bestFor": ["history", "food_lovers", "beaches", "luxury", "road_trips", "nature"],
+  "pros": [
+    "Spinalonga is one of the most affecting sites in Greece — the intact leper colony village (1903–1957) on a Venetian fortress island; a profoundly moving experience",
+    "Elounda Bay has some of the finest water in the Mediterranean: a semi-enclosed gulf with extraordinary blue-green colour and white sand beaches",
+    "Vai is Europe's only natural palm beach — a grove of endemic Cretan Phoenix theophrasti palms that is genuinely strange and beautiful, best before the day-trip buses",
+    "The far east of Lasithi (Zakros, Xerokampos, Sitia coast) is the least crowded part of Crete, offering near-total solitude even in August",
+    "Sitia produces one of Greece's finest olive oils — peppery and distinctive — and the Sitia wine region (Vilana, Thrapsathiri) is barely known outside Crete",
+    "The Zakros Gorge and Kato Zakros palace offer a less-visited Minoan site that feels like genuine excavation rather than reconstruction",
+    "Agios Nikolaos is a charming small city built around the 64m-deep Lake Voulismeni, with a genuinely pleasant harbourfront and a good archaeological museum",
+    "The road system along the east coast is spectacular — switchback drives with uninterrupted sea views that rival anything else on Crete"
+  ],
+  "cons": [
+    "Elounda is extremely expensive — the concentration of ultra-luxury resorts has inflated prices across the area; budget travellers should stay in Agios Nikolaos",
+    "Distances are significant — Lasithi stretches from the Lasithi Plateau to the far east; a car is essential and driving times are longer than maps suggest",
+    "Nightlife is very quiet — Agios Nikolaos has some bars but nothing like the resort towns of northern Crete; party seekers should go elsewhere",
+    "The far east (Zakros, Xerokampos) has limited accommodation and dining options — book ahead and expect simple facilities",
+    "Wind can be a factor on the north coast in July–August, making some beaches rough",
+    "The Lasithi Plateau windmills are mostly decommissioned shells — the famous 'windmill plateau' is less impressive than guidebooks suggest"
+  ],
+  "insider_tips": [
+    "Spinalonga is best visited on the first morning boat from Plaka (about 09:00) — the crossing is shorter and more atmospheric than from Elounda or Agios Nikolaos",
+    "Vai Palm Beach is transformative before 08:30; the early morning light through the palms with no other visitors is one of the great moments in Crete",
+    "The Plaka waterfront tavernas have the best view of Spinalonga; eat at Faros or Griego for fresh fish with the fortress lit in the evening",
+    "The Sitia wine route is well-marked and uncrowded — several estates offer tastings of Liatiko and Thrapsathiri wines without appointment",
+    "Stay in Agios Nikolaos and drive to Elounda for the day — you get the same bay water without the resort prices",
+    "The archaeological museum in Agios Nikolaos is small and excellent; the gold laurel-wreath skull alone is worth the visit",
+    "Toplou Monastery produces its own wine and olive oil sold in the monastery shop — among the best quality-to-price ratios on Crete",
+    "Xerokampos beach near Zakros is the quietest sandy beach in eastern Crete — almost empty even in peak season"
+  ],
+  "mistakes_to_avoid": [
+    "Expecting nightlife — Lasithi is about calm evenings, harbour walks, and early mornings; anyone seeking clubs or late bars will be disappointed",
+    "Rushing the far east — Zakros, Xerokampos, and the Sitia coast deserve a full day each; a rushed afternoon visit misses the point entirely",
+    "Staying in Elounda on a budget — the ultra-luxury hotels have driven up all prices; budget travellers get much better value in Agios Nikolaos",
+    "Visiting Spinalonga without preparation — reading about the leper colony history beforehand transforms the experience from sightseeing to something much deeper",
+    "Thinking Vai is the only beach worth visiting — the coves east of Vai (Erimoupolis, Psili Ammos) and the Sitia coast are equally beautiful and far quieter",
+    "Driving the Lasithi Plateau purely for the windmills — the drive is scenic but the plateau itself is agricultural; combine it with Psychro Cave and Dikti range walks"
+  ],
+  "seasonality": {
+    "january": { "temp": 12, "price_multiplier": 0.5 },
+    "february": { "temp": 12, "price_multiplier": 0.5 },
+    "march": { "temp": 14, "price_multiplier": 0.6 },
+    "april": { "temp": 17, "price_multiplier": 0.75 },
+    "may": { "temp": 22, "price_multiplier": 0.9 },
+    "june": { "temp": 26, "price_multiplier": 1.1 },
+    "july": { "temp": 29, "price_multiplier": 1.4 },
+    "august": { "temp": 29, "price_multiplier": 1.5 },
+    "september": { "temp": 26, "price_multiplier": 1.1 },
+    "october": { "temp": 21, "price_multiplier": 0.8 },
+    "november": { "temp": 17, "price_multiplier": 0.6 },
+    "december": { "temp": 13, "price_multiplier": 0.5 }
+  }
 }

@@ -14,5 +14,55 @@
     "food": { "value": 7, "reason": "Good seafood tavernas, especially in Kamini and Vlychos." }
   },
   "quick_summary": "Hydra is a car-free Saronic island famous for its preserved stone architecture, Leonard Cohen's former home, quiet hiking paths, and an atmosphere that feels untouched by mass tourism.",
-  "bestFor": ["couples", "luxury", "culture", "photography", "off_season", "art"]
+  "bestFor": ["couples", "luxury", "culture", "photography", "off_season", "art"],
+  "pros": [
+    "No cars, motorbikes, or scooters allowed — the island is completely silent except for footsteps, donkeys, and the sea; the quality of quiet is extraordinary",
+    "The harbour town of Hydra is an architectural masterpiece of 18th-century stone mansions, marble-paved alleys, and a natural amphitheatre harbour that is one of the most photographed in Greece",
+    "Leonard Cohen lived here intermittently from 1960 to 1962; his house and the island's bohemian-artist legacy still attract a creative, cultured crowd",
+    "Excellent hiking network across the island — trails connect the harbour to secluded beaches, the monastery of Profitis Ilias, and the hilltop villages of Kamini, Vlychos, and Mandraki",
+    "Hydra stays elegant and uncrowded even in August, making it one of the few Greek islands that does not feel overwhelmed in peak season",
+    "The swimming is from rocky platforms and pebble beaches at Kamini, Vlychos, and Mandraki — there is no organised beach scene, which is precisely the point",
+    "Atmospheric in the off-season (October–April) with a small year-round community, open tavernas, and a mood that is genuinely local rather than tourist-oriented",
+    "Easy day trip from Athens (1.5-hour hydrofoil from Piraeus) yet feels completely remote once the day-trippers leave at 17:00"
+  ],
+  "cons": [
+    "Very expensive — Hydra is one of the most costly islands in Greece for accommodation, dining, and drinking; budget travellers will struggle",
+    "The beaches are underwhelming — rocky platforms and small pebble coves rather than the sandy expanses of Mykonos or Naxos",
+    "Limited nightlife — a few harbour-side bars that close by midnight; there is no club scene at all",
+    "The main harbour gets crowded with day-trippers from Athens between 11:00 and 17:00, especially in summer",
+    "Luggage is transported by donkey or water taxi because there are no cars; this adds cost and complication",
+    "The terrain is very steep — the mansions climb high above the harbour and many accommodations involve long stair climbs with no road access"
+  ],
+  "insider_tips": [
+    "The day-trippers leave on the 17:00 ferry back to Piraeus — Hydra transforms instantly at that moment and the evening is the finest time on the island",
+    "Swim at Kamini or Vlychos rather than the harbour — both are a 10–15 minute walk along the coastal path and have cleaner water and better tavernas",
+    "Eat at To Limani tou Vlichou or Omilos in Vlychos for the best seafood on the island; the harbour-front tavernas are overpriced",
+    "The walk to Profitis Ilias monastery (about 45 minutes uphill from the harbour) gives the best panoramic view of the entire island and the Argolic Gulf",
+    "Book accommodation well in advance even in shoulder season — Hydra's limited hotel stock means it fills up months ahead",
+    "Bring sturdy walking shoes — every street is marble-paved and steep, and there are no cars to rescue tired feet",
+    "Carry water with you — there are very few shops once you leave the harbour area",
+    "The Historical Archives Museum and the Merchant Marine Academy are worth an hour each; both are housed in spectacular 18th-century buildings"
+  ],
+  "mistakes_to_avoid": [
+    "Expecting sandy beaches — Hydra is about swimming from rocks, not lounging on sand; the water is clear but there is no Mylopotas-style beach",
+    "Arriving with heavy wheeled luggage — suitcases are carried by donkeys at a per-bag fee; pack light in a duffel or backpack",
+    "Eating at the first taverna on the harbour — walk five minutes to the side streets or to Kamini for better food at half the price",
+    "Treating Hydra as a beach destination — it is a walking, culture, and atmosphere island; those seeking only swimming should go elsewhere",
+    "Visiting only as a day trip — the afternoon exodus of day-trippers reveals the real Hydra; staying overnight is essential",
+    "Not booking dinner reservations in August — the best tables fill quickly and the second-tier options are disappointing"
+  ],
+  "seasonality": {
+    "january": { "temp": 12, "price_multiplier": 0.5 },
+    "february": { "temp": 12, "price_multiplier": 0.5 },
+    "march": { "temp": 14, "price_multiplier": 0.6 },
+    "april": { "temp": 17, "price_multiplier": 0.75 },
+    "may": { "temp": 22, "price_multiplier": 0.9 },
+    "june": { "temp": 27, "price_multiplier": 1.1 },
+    "july": { "temp": 30, "price_multiplier": 1.3 },
+    "august": { "temp": 30, "price_multiplier": 1.4 },
+    "september": { "temp": 26, "price_multiplier": 1.1 },
+    "october": { "temp": 21, "price_multiplier": 0.8 },
+    "november": { "temp": 17, "price_multiplier": 0.6 },
+    "december": { "temp": 13, "price_multiplier": 0.5 }
+  }
 }

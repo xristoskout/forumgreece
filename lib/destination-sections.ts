@@ -798,6 +798,16 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       ],
     },
     {
+      title: { en: "", el: "" },
+      gallery: [
+        {
+          image: "/images/crete-coast.webp",
+          alt: { en: "The rugged coastline of Crete with crystal clear turquoise waters", el: "Η άγρια ακτογραμμή της Κρήτης με κρυστάλλινα τιρκουάζ νερά" },
+          caption: { en: "The rugged coastline of Crete with crystal clear turquoise waters", el: "Η άγρια ακτογραμμή της Κρήτης με κρυστάλλινα τιρκουάζ νερά" }
+        }
+      ]
+    },
+    {
       title: {
         en: "Best time for Crete",
         el: "Καλύτερη εποχή για Κρήτη",
@@ -3241,6 +3251,16 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       ],
     },
     {
+      title: { en: "", el: "" },
+      gallery: [
+        {
+          image: "/images/kefalonia-coast.webp",
+          alt: { en: "Myrtos Beach with its turquoise waters and dramatic limestone cliffs on Kefalonia, Greece", el: "Η παραλία Μύρτος με τα τιρκουάζ νερά και τους εντυπωσιακούς ασβεστολιθικούς γκρεμούς στην Κεφαλονιά, Ελλάδα" },
+          caption: { en: "Myrtos Beach with its turquoise waters and dramatic limestone cliffs on Kefalonia, Greece", el: "Η παραλία Μύρτος με τα τιρκουάζ νερά και τους εντυπωσιακούς ασβεστολιθικούς γκρεμούς στην Κεφαλονιά, Ελλάδα" }
+        }
+      ]
+    },
+    {
       title: {
         en: "Best time to visit",
         el: "Καλύτερη εποχή",
@@ -4477,6 +4497,16 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       ]
     },
     {
+      title: { en: "", el: "" },
+      gallery: [
+        {
+          image: "/images/naxos-coast.webp",
+          alt: { en: "The long sandy beach of Agios Prokopios on Naxos with crystal clear turquoise water", el: "Η μακριά αμμώδης παραλία του Αγίου Προκοπίου στη Νάξο με κρυστάλλινα τιρκουάζ νερά" },
+          caption: { en: "The long sandy beach of Agios Prokopios on Naxos with crystal clear turquoise water", el: "Η μακριά αμμώδης παραλία του Αγίου Προκοπίου στη Νάξο με κρυστάλλινα τιρκουάζ νερά" }
+        }
+      ]
+    },
+    {
       title: { en: "Best Areas to Stay in Naxos", el: "Οι καλύτερες περιοχές για διαμονή στη Νάξο" },
       text: {
         en: "Where you stay in Naxos depends on whether you want convenience, a beach base, or mountain village experience. Here are the main areas:",
@@ -4617,6 +4647,16 @@ export const destinationSections: Record<string, DestinationSection[]> = {
         {
           title: { en: "Quieter Cycladic charm", el: "Πιο ήσυχη κυκλαδίτικη γοητεία" },
           text: { en: "It offers authentic village life without the extreme commercialization of bigger islands.", el: "Προσφέρει αυθεντική ζωή στα χωριά χωρίς την ακραία εμπορευματοποίηση των μεγαλύτερων νησιών." }
+        }
+      ]
+    },
+    {
+      title: { en: "", el: "" },
+      gallery: [
+        {
+          image: "/images/milos-coast.webp",
+          alt: { en: "The volcanic coastline of Milos with turquoise waters and white rock formations", el: "Η ηφαιστειακή ακτογραμμή της Μήλου με τιρκουάζ νερά και λευκούς βραχώδεις σχηματισμούς" },
+          caption: { en: "The volcanic coastline of Milos with turquoise waters and white rock formations", el: "Η ηφαιστειακή ακτογραμμή της Μήλου με τιρκουάζ νερά και λευκούς βραχώδεις σχηματισμούς" }
         }
       ]
     },
@@ -5765,6 +5805,16 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       }
     },
     {
+      title: { en: "", el: "" },
+      gallery: [
+        {
+          image: "/images/monemvasia-alley.webp",
+          alt: { en: "An alley in the castle town Monemvasia in Southern Peloponisos, Greece", el: "Ένα σοκάκι στην καστροπολιτεία της Μονεμβασιάς στη Νότια Πελοπόννησο, Ελλάδα" },
+          caption: { en: "An alley in the castle town Monemvasia in Southern Peloponisos, Greece", el: "Ένα σοκάκι στην καστροπολιτεία της Μονεμβασιάς στη Νότια Πελοπόννησο, Ελλάδα" }
+        }
+      ]
+    },
+    {
       layout: "list",
       title: { en: "Beaches in Monemvasia", el: "Παραλίες στη Μονεμβασιά" },
       items: [
@@ -6320,6 +6370,16 @@ export const destinationSections: Record<string, DestinationSection[]> = {
         en: "Parga is a strong choice for travelers who want a picturesque seaside town with strong visual charm, easy beach access without going to an island, a destination that works well for short stays and summer escapes, a balance of waterfront atmosphere, swimming, and relaxed evenings, and a coastal base with a softer Ionian feel.\n\nIt is the kind of place that feels immediately pleasant and does not need much effort to enjoy.",
         el: "Η Πάργα είναι μια εξαιρετική επιλογή για ταξιδιώτες που θέλουν μια γραφική παραθαλάσσια πόλη με έντονη οπτική γοητεία, εύκολη πρόσβαση σε παραλίες χωρίς να πάνε σε νησί, έναν προορισμό ιδανικό για σύντομες διαμονές και καλοκαιρινές αποδράσεις, μια ισορροπία ανάμεσα σε ατμόσφαιρα προκυμαίας, κολύμπι και χαλαρά βράδια, και μια παραθαλάσσια βάση με πιο απαλή αίσθηση Ιονίου.\n\nΕίναι το είδος του μέρους που σε κάνει να νιώθεις αμέσως όμορφα και δεν απαιτεί ιδιαίτερη προσπάθεια για να το απολαύσεις."
       }
+    },
+    {
+      title: { en: "", el: "" },
+      gallery: [
+        {
+          image: "/images/parga-view.webp",
+          alt: { en: "Parga town and its Venetian castle on the coast of Epirus, Greece", el: "Η πόλη της Πάργας και το Ενετικό κάστρο στην ακτή της Ηπείρου, Ελλάδα" },
+          caption: { en: "Parga town and its Venetian castle on the coast of Epirus, Greece", el: "Η πόλη της Πάργας και το Ενετικό κάστρο στην ακτή της Ηπείρου, Ελλάδα" }
+        }
+      ]
     },
     {
       layout: "grid",

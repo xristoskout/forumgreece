@@ -14,5 +14,55 @@
     "food": { "value": 10, "reason": "Crete's most powerful food culture." }
   },
   "quick_summary": "Crete's capital with the Minoan Palace of Knossos, Venetian harbour, and the island's most authentic urban food scene.",
-  "bestFor": ["history", "food_lovers", "culture", "city_break", "families"]
+  "bestFor": ["history", "food_lovers", "culture", "city_break", "families"],
+  "pros": [
+    "Knossos is one of the most significant archaeological sites in the world — the partially reconstructed Minoan palace gives an unmatched spatial sense of ancient civilisation",
+    "The Archaeological Museum holds the finest Minoan collection on the planet; the Phaistos Disc and the Snake Goddess figurines alone justify the visit",
+    "The Venetian old city is exceptionally well preserved — Koules fortress, Morosini Fountain, the Loggia, and the 4km circuit of Venetian walls",
+    "Heraklion has the best food scene on Crete: the central market, the mezedopolia of the old city, and the fish tavernas of the old harbour",
+    "It is the ideal base for exploring central and eastern Crete — Phaistos, Archanes, Lassithi Plateau, Matala, and Agios Nikolaos are all within easy day-trip range",
+    "Good value compared to the resort areas — room rates, food and drink, and public transport are all notably more affordable than the northern coast resorts",
+    "The city has real urban energy, working harbour, and year-round life — it is not a seasonal tourist town",
+    "Wine country starts 15 minutes south in Archanes with several excellent estates open for tasting"
+  ],
+  "cons": [
+    "Heraklion is a working port city, not a picturesque island town — the outskirts are industrial, traffic is heavy, and some areas are genuinely unlovely",
+    "Knossos in peak season (10:00–16:00 July–August) is extremely crowded and the reconstructed elements divide opinion among purists",
+    "The best beaches require a car and at least 20 minutes of driving; there is no swim-from-the-city-centre option",
+    "The city gets very hot in July–August and has limited shade in the archaeological sites",
+    "Nightlife is more bars-and-mezedes than clubs; those seeking late partying will be disappointed",
+    "Few luxury accommodation options compared to Elounda or Chania — the top-end category is thin"
+  ],
+  "insider_tips": [
+    "Visit the Archaeological Museum first, then Knossos — seeing the actual artefacts before walking the site completely transforms the experience",
+    "The best food is one block behind any tourist-facing street; the menu-with-photos rule applies strictly in Heraklion",
+    "Knossos opens at 08:00; arriving at 08:15 gives you an almost empty site for the first hour",
+    "The city bus to Knossos (lines 2 and 4) runs from the central bus terminal, takes 20 minutes, and costs a fraction of a taxi",
+    "Raki arrives automatically with the bill in traditional tavernas — it is hospitality, not a upsell, and declining without reason is considered rude",
+    "The Venetian walls are walkable from Pantokratoras Gate to Martinengo Bastion in about 45 minutes, with Kazantzakis' grave en route",
+    "The wine cooperative in Archanes (15min drive) offers tastings of Kotsifali and Mandilari reds and is rarely busy",
+    "The Heraklion market on Saturdays has the best seasonal produce; the fish market operates daily at the harbour end"
+  ],
+  "mistakes_to_avoid": [
+    "Treating Heraklion as only a transit hub — staying overnight reveals the old city's evening character and the morning market life",
+    "Visiting Knossos without a ticket in peak season — the queue can exceed 45 minutes; buy the combined ticket online in advance",
+    "Eating directly on the old harbour without checking menus — the waterfront restaurants closest to the fortress are the most expensive and the least memorable",
+    "Expecting Cycladic or Chania-style charm — Heraklion is a real city with Renaissance layers, not a curated postcard town",
+    "Skipping the Archaeological Museum because you think you know Minoan art — no image prepares you for the Phaistos Disc or the Bull-Leaper in person",
+    "Not renting a car — the best of Crete (Phaistos, Archanes, Lassithi, Matala) is inaccessible without one from Heraklion"
+  ],
+  "seasonality": {
+    "january": { "temp": 12, "price_multiplier": 0.55 },
+    "february": { "temp": 12, "price_multiplier": 0.55 },
+    "march": { "temp": 14, "price_multiplier": 0.65 },
+    "april": { "temp": 17, "price_multiplier": 0.8 },
+    "may": { "temp": 21, "price_multiplier": 1 },
+    "june": { "temp": 26, "price_multiplier": 1.2 },
+    "july": { "temp": 29, "price_multiplier": 1.4 },
+    "august": { "temp": 29, "price_multiplier": 1.5 },
+    "september": { "temp": 26, "price_multiplier": 1.1 },
+    "october": { "temp": 21, "price_multiplier": 0.85 },
+    "november": { "temp": 17, "price_multiplier": 0.65 },
+    "december": { "temp": 13, "price_multiplier": 0.55 }
+  }
 }
