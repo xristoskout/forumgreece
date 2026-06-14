@@ -2479,6 +2479,254 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       }
     }
   ],
+  ios: [
+    {
+      title: { en: "Why visit Ios", el: "Γιατί να επισκεφθείς την Ίο" },
+      layout: "numbered",
+      items: [
+        {
+          title: { en: "The Chora is one of the most beautiful whitewashed villages in the entire Cyclades", el: "Το Χωριό είναι ένα από τα πιο όμορφα λευκοπιασμένα χωριά σε όλες τις Κυκλάδες" },
+          text: { en: "The hilltop capital of Ios is a labyrinth of narrow marble-paved lanes, arched passageways, blue-domed churches and whitewashed cube houses that climb toward a windmill-crowned ridge. It is genuinely stunning — not as a tourist construction but as a living Cycladic settlement that has retained its architectural logic for centuries. In the morning, before the day visitors arrive from Mylopotas, it is one of the most atmospheric places in the islands.", el: "Η πρωτεύουσα της Ίου είναι ένα λαβύρινθο στενών μαρμάρινων δρομάκιων, τοξωτών περασμάτων, εκκλησιών με μπλε θόλους και λευκών κύβων σπιτιών που ανεβαίνουν προς μια ράχη στεφανωμένη από ανεμόμυλο. Είναι πραγματικά εντυπωσιακό — όχι ως τουριστική κατασκευή αλλά ως ένα ζωντανό κυκλαδίτικο οικισμό που διατήρησε την αρχιτεκτονική του λογική για αιώνες. Το πρωί, πριν φτάσουν οι ημερήσιοι επισκέπτες από τον Μυλοποτά, είναι ένα από τα πιο ατμοσφαιρικά μέρη στα νησιά." }
+        },
+        {
+          title: { en: "Homer's Tomb — one of the most evocative ancient sites in the Aegean", el: "Τάφος του Ομήρου — ένα από τα πιο εντυπωσιακά αρχαία μέρη στο Αιγαίο" },
+          text: { en: "Ancient tradition held that Homer was born on Ios and is buried on its northern tip. The site — a low stone enclosure on a bare rocky hillside with views across the sea to Sikinos and Folegandros — cannot be verified by archaeology, but the location is extraordinary regardless of its historical claims. Standing there on a clear morning, looking out over the Aegean in every direction, the myth feels entirely plausible.", el: "Η αρχαία παράδοση έλεγε ότι ο Όμηρος γεννήθηκε στην Ίο και είναι θαμμένος στο βόρειο άκρο της. Ο χώρος — ένα χαμηλό πέτρινο περίβλητα σε γυμνό βραχώδη λόφο με θέα στη θάλασσα προς Σίκινο και Φολέγανδρο — δεν μπορεί να επιβεβαιωθεί αρχαιολογικά, αλλά η τοποθεσία είναι εξαιρετική ανεξάρτητα από τις ιστορικές αξιώσεις της. Στεκόμενος εκεί σε ένα καθαρό πρωί, κοιτώντας το Αιγαίο σε κάθε κατεύθυνση, ο μύθος φαίνεται εντελώς πιθανός." }
+        },
+        {
+          title: { en: "Manganari — a series of wild south-coast bays with some of the clearest water in the Cyclades", el: "Μαγκαναρί — μια σειρά άγριων νότιων κολπών με από το πιο καθαρό νερό στις Κυκλάδες" },
+          text: { en: "The south coast of Ios is almost entirely undeveloped, and Manganari — its principal beach area — consists of three broad sandy bays separated by rocky headlands, with water that shades from pale turquoise at the shore to deep cobalt at the edge of the bay. There is one seasonal taverna and almost no infrastructure. It is the complete counterpoint to Mylopotas and one of the finest natural beach environments in the southern Cyclades.", el: "Η νότια ακτή της Ίου είναι σχεδόν εντελώς αναπτύξιμη, και η Μαγκαναρί — η κύρια παραλιακή περιοχή της — αποτελείται από τρεις ευρύτατους αμμώδεις κόλπους χωρισμένους από βραχώδεις ακτές, με νερό που περνά από ανοιχτό τυρκουάζ στην ακτή σε βαθύ κοβαλτίνη στην άκρη του κόλπου. Υπάρχει μία εποχιακή ταβέρνα και σχεδόν κανένα υποδομή. Είναι η πλήρης αντίθεση με τον Μυλοποτά και ένα από τα πιο φυσικά παραλιακά περιβάλλοντα στις νότιες Κυκλάδες." }
+        },
+        {
+          title: { en: "Mylopotas is one of the finest long sandy beaches in the Cyclades — at any level of organisation you prefer", el: "Ο Μυλοποτάς είναι ένα από τα πιο όμορφα μακριά αμμώδη παραλίες στις Κυκλάδες — σε κάθε επίπεδο οργάνωσης που προτιμάς" },
+          text: { en: "The beach at Mylopotas is two kilometres of fine pale sand curving around a protected south-facing bay. The eastern end is highly organised — sunbeds, beach bars, watersports, cocktails from noon — while the western end dissolves into a quieter stretch where the sand runs out and the rocks begin. The range of experiences available on a single beach is genuinely unusual: you can be in a full beach-club scene at one end and in near-total solitude at the other.", el: "Η παραλία του Μυλοποτά είναι δυο χιλιόμετρα λεπτής ανοιχτόχρωμης άμμου γύρω από ένα προστατευόμενο νότιο κόλπο. Το ανατολικό άκρο είναι πολύ οργανωμένο — ηλιοστάσια, beach bars, υδάτινα αθλήματα, κοκτέιλ από το μεσημέρι — ενώ το δυτικό άκρο διαλύεται σε πιο ήσυχο τμήμα όπου η άμμος τελειώνει και αρχίζουν τα βράχια. Η ποικιλία εμπειριών που διατίθεται σε μία παραλία είναι πραγματικά ασυνήθιστη: μπορείς να είσαι σε πλήρη beach-club σκηνή στο ένα άκρο και σε σχεδόν πλήρη μοναξιά στο άλλο." }
+        },
+        {
+          title: { en: "The nightlife in the Chora is unlike anything else in the Greek islands — and genuinely worth experiencing once", el: "Η νυχτερινή ζωή στο Χωριό δεν μοιάζει με τίποτα άλλο στα ελληνικά νησιά — και αξίζει να τη ζήσεις μία φορά" },
+          text: { en: "The concentration of bars and clubs in the narrow lanes of the upper Chora has been drawing summer visitors for forty years, and it remains one of the most vivid nocturnal experiences in the Mediterranean. The bars open at sunset and the energy builds through the evening into a density of music, movement and good-natured chaos that is uniquely Cycladic. It is not for every traveller — but dismissing it entirely without experiencing it once is to miss something real.", el: "Η συγκέντρωση μπαρ και clubs στα στενά δρομάκια του πάνω Χωριού προσελκύει καλοκαιρινούς επισκέπτες εδώ και σαράντα χρόνια, και παραμένει μία από τις πιο ζωντανές νυχτερινές εμπειρίες σης Μεσογείου. Τα μπαρ ανοίγουν στη σούσα και η ενέργεια χτίζεται μέσα στη βραδιά σε μια πυκνότητα μουσικής, κίνησης και καλόσυνης χαοτικότητας που είναι μοναδικά κυκλαδίτικη. Δεν είναι για κάθε ταξιδιώτη — αλλά να το απορρίψεις εντελώς χωρίς να το ζήσεις μία φορά είναι να χάσεις κάτι πραγματικό." }
+        },
+        {
+          title: { en: "Ios is positioned perfectly for island hopping — Santorini, Folegandros, Sikinos and Naxos are all close", el: "Η Ίος είναι τέλεια τοποθετημένη για island hopping — Σαντορίνη, Φολέγανδρος, Σίκινος και Νάξος είναι κοντά" },
+          text: { en: "The island sits at the intersection of several major ferry routes in the southern Cyclades. Santorini is 45 minutes by high-speed ferry; Naxos is under an hour; Folegandros and Sikinos — two of the most unspoiled small islands in Greece — are each reachable in under two hours. For island hoppers using Ios as a base, the geographic position is ideal.", el: "Το νησί βρίσκεται στη διασταύρωση αρκετών σημαντικών πορείακων γραμμών στις νότιες Κυκλάδες. Η Σαντορίνη είναι 45 λεπτά με γρήγορο πλοίο; η Νάξος κάτω από μία ώρα; Φολέγανδρος και Σίκινος — δύο από τα πιο ανέγγιχτα μικρά νησιά στην Ελλάδα — είναι και τα δύο προσβάσιμα σε κάτω από δύο ώρες. Για island hoppers που χρησιμοποιούν την Ίο ως βάση, η γεωγραφική θέση είναι ιδανική." }
+        }
+      ]
+    },
+    {
+      title: { en: "Best time to go (and when to avoid)", el: "Καλύτερη εποχή (και πότε να αποφύγεις)" },
+      layout: "list",
+      alert: {
+        en: "Secret: September is the finest month on Ios — the sea is at its warmest, the crowds have thinned dramatically, and the Chora is quiet and beautiful in the evenings.",
+        el: "Μυστικό: Ο Σεπτέμβριος είναι ο καλύτερος μήνας στην Ίο — η θάλασσα είναι στο πιο ζεστό, τα πλήθη έχουν αραιωθεί δραματικά, και το Χωριό είναι ήσυχο και όμορφο τις βραδιές."
+      },
+      items: [
+        {
+          title: { en: "May — green, quiet, excellent value", el: "Μάιος — πράσινος, ήσυχος, εξαιρετική αξία" },
+          text: { en: "The island is green and quiet. Accommodation is good value, the Chora is uncrowded, and the sea is reaching swimming temperature. Excellent for walkers, explorers and anyone who wants Ios without the party energy.", el: "Το νησί είναι πράσινο και ήσυχο. Τα καταλύματα είναι σε καλή τιμή, το Χωριό δεν είναι γεμάτο, και η θάλασσα φτάνει σε θερμοκρασία κολύμβησης. Εξαιρετικό για πεζοπόρους, εξερευνητές και όσους θέλουν την Ίο χωρίς την ενέργεια της γιορτής." }
+        },
+        {
+          title: { en: "June — the ideal month", el: "Ιούνιος — ο ιδανικός μήνας" },
+          text: { en: "The ideal month for most visitors — the sea is warm, Mylopotas is lively without being overwhelming, the Chora is at its most beautiful in the evenings, and the accommodation choice and price point are both at their best.", el: "Ο ιδανικός μήνας για τους περισσότερους επισκέπτες — η θάλασσα είναι ζεστή, ο Μυλοποτάς είναι ζωντανός χωρίς να υπερβάλλει, το Χωριό είναι στο πιο όμορφό του τις βραδιές, και η επιλογή καταλύματος και τιμή είναι και οι δύο στο καλύτερό τους." }
+        },
+        {
+          title: { en: "July (early) — still excellent", el: "Ιούλιος (αρχές) — ακόμα εξαιρετικός" },
+          text: { en: "Still excellent — before the mid-July peak the island is active and exciting without being saturated. Book ahead. The beach is at its best and the Chora nights are at their most energetic.", el: "Ακόμα εξαιρετικός — πριν την κορύφωση του μέσου Ιουλίου το νησί είναι ενεργό και συναρπαστικό χωρίς νεοτανίζεται. Κλείσε εκ των προτέρων. Η παραλία είναι στο καλύτερό της και οι νύχτες στο Χωριό στη πιο ενεργητική τους." }
+        },
+        {
+          title: { en: "July (late) – August — peak season", el: "Ιούλιος (τέλος) – Αύγουστος — αιχμή σεζόν" },
+          text: { en: "Peak season and very full. The island receives its maximum number of visitors and the atmosphere at Mylopotas and in the Chora is intense. Book everything months in advance. The meltemi can make the north-facing beaches rough.", el: "Αιχμή σεζόν και πολύ γεμάτο. Το νησί δέχεται τον μέγιστο αριθμό επισκεπτών και η ατμόσφαιρα στον Μυλοποτά και στο Χωριό είναι έντονη. Κλείσε τα πάντα μήνες εκ των προτέρων. Ο μελτέμι μπορεί να κάνει τις βόρειες παραλίες σκληρές." }
+        },
+        {
+          title: { en: "September — the finest month", el: "Σεπτέμβριος — ο καλύτερος μήνας" },
+          text: { en: "The finest month on Ios for most travellers. The sea is at its warmest, the crowds have thinned dramatically after mid-month, the Chora is quiet and beautiful in the evenings, and the south coast beaches are at their most accessible and empty. Exceptional.", el: "Ο καλύτερος μήνας στην Ίο για τους περισσότερους ταξιδιώτες. Η θάλασσα είναι στο πιο ζεστό, τα πλήθη έχουν αραιωθεί δραματικά μετά τα μέσα του μήνα, το Χωριό είναι ήσυχο και όμορφο τις βραδιές, και οι παραλίες της νότιας ακτής είναι στο πιο προσβάσιμο και άδειο. Εξαιρετικός." }
+        },
+        {
+          title: { en: "October – April — off-season", el: "Οκτώβριος – Απρίλιος — εκτός σεζόν" },
+          text: { en: "Ios quiets significantly outside summer. Some facilities remain open through October. The island in winter is almost entirely local — a handful of year-round residents, open kafeneions and a Chora that feels profoundly different from its summer self.", el: "Η Ίος ηρεμεί σημαντικά εκτός καλοκαιριού. Κάποιες εγκαταστάσεις παραμένουν ανοιχτές μέχρι τον Οκτώβριο. Το νησί τον χειμώνα είναι σχεδόν εντελώς τοπικό — λίγοι μόνιμοι κάτοικοι, ανοιχτά καφενεία και ένα Χωριό που φαίνεται βαθιά διαφορετικό από το καλοκαιρινό του εαυτό." }
+        }
+      ]
+    },
+    {
+      title: { en: "The Chora and main sights", el: "Το Χωριό και κύρια αξιοθέατα" },
+      layout: "numbered",
+      items: [
+        {
+          title: { en: "The Chora (Ios Town) — the most beautiful Cycladic hilltop village in the southern islands", el: "Το Χωριό (Ίος) — το πιο όμορφο κυκλαδίτικο ορεινό χωριό στα νότια νησιά" },
+          text: { en: "The Chora of Ios is everything a Cycladic village should be: dense, labyrinthine, blazingly white, with blue-domed churches appearing at intervals along lanes that twist and double back on themselves with no apparent logic. It sits at 150 metres above the port bay, reached by a paved road or — more correctly — by the long marble staircase that has connected the two since long before cars existed. From the ridge at the top, crowned by three windmills and the ruins of a Venetian kastro, the views extend north to Naxos and south toward Santorini on clear days.\n\nThe Chora divides cleanly into two temporal personalities. By day it is a quiet, domestic place where locals shop, children play in the square, and cats sleep on sun-warmed steps. By night — from around 9pm onward — the bar-lined lanes of the upper village fill with a kind of concentrated energy that is specific to Ios and to no other place in the Cyclades. Both personalities are worth experiencing.", el: "Το Χωριό της Ίου είναι ό,τι πρέπει να είναι ένα κυκλαδίτικο χωριό: πυκνό, λαβυρινθώδες, λαμπρά λευκό, με εκκλησίες με μπλε θόλους που εμφανίζονται σε διαστήματα κατά μήκος δρομάκιων που στροφώνονται και επιστρέφουν στον εαυτό τους χωρίς φαινόμενη λογική. Κάθεται στα 150 μέτρα πάνω από τον κόλπο του λιμανιού, προσβάσιμο με επιστρωμένο δρόμο ή — πιο σωστά — με το μακρύ σκαλοπάτι μαρμάρου που συνδέει τα δύο από πολύ πριν υπάρξουν αυτοκίνητα. Από τη ράχη στην κορυφή, στεφανωμένη από τρεις ανεμόμυλους και τα ερείπια ενός ενετικού κάστρου, η θέα εκτείνεται βόρεια προς Νάξο και νότια προς Σαντορίνη σε καθαρές μέρες.\n\nΤο Χωριό χωρίζεται καθαρά σε δύο χρονικές προσωπικότητες. Την ημέρα είναι ήσυχο, οικογενειακό μέρο όπου οι ντόπιοι ψωνίζουν, τα παιδια παίζουν στην πλατεία, και γάτες κοιμούνται σε ηλιοθερμισμένα βήματα. Τη νύχτα — από τις 9μμ και μετά — τα δρομάκια γεμισμένα με μπαρ του πάνω χωριού γεμίζουν με ένα είδος συγκεντρωμένης ενέργειας που είναι ιδιαίτερη της Ίου και κανενός άλλου μέρους στις Κυκλάδες. Και οι δύο προσωπικότητες αξίζουν να ζηθούν." }
+        },
+        {
+          title: { en: "Homer's Tomb — the northern ridge and the oldest tradition on the island", el: "Τάφος του Ομήρου — η βόρεια ράχη και η παλαιότερη παράδοση στο νησί" },
+          text: { en: "Ancient sources — including Thucydides, Pliny the Elder and the Homeric tradition itself — record that Homer died on the island of Ios and was buried on its northern tip. The Archaeological Museum in the Chora holds inscriptions and fragments that reference the tradition, and the site on the northern ridge — a reconstructed enclosure of ancient stones set into a bare hillside above a deep sea view — has been known and visited since antiquity. Whether or not the tomb is genuinely Homer's is a question that archaeology cannot resolve; what is not in question is the extraordinary quality of the location and the emotional weight of standing in a place that the ancient world treated as sacred.", el: "Αρχαίες πηγές — συμπεριλαμβανομένων του Θουκυδίδη, του Πλίνιου του Πρεσβύτερου και της ίδιας της Ομηρικής παράδοσης — καταγράφουν ότι ο Όμηρος πέθανε στο νησί της Ίου και θάφτηκε στο βόρειο άκρο της. Το Αρχαιολογικό Μουσείο στο Χωριό φιλοξενεί επιγραφές και θραύσματα που αναφέρονται στην παράδοση, και ο χώρος στη βόρεια ράχη — ένα ανακατασκευασμένο περίβλητα αρχαίων πετρών σε γυμνό λόφο πάνω από βαθιά θαλάσσια θέα — είναι γνωστός και επισκέψιμος από την αρχαιότητα. Αν ο τάφος είναι πραγματικά του Ομήρου είναι ερώτημα που η αρχαιολογία δεν μπορεί να επιλύσει; αυτό που δεν αμφισβητείται είναι η εξαιρετική ποιότητα της τοποθεσίας και το συναισθηματικό βάρος του να στέκεσαι σε ένα μέρο που ο αρχαίος κόσμος θεωρούσε ιερό." }
+        },
+        {
+          title: { en: "The Archaeological Museum of Ios", el: "Το Αρχαιολογικό Μουσείο της Ίου" },
+          text: { en: "The Archaeological Museum in the Chora is small but intelligently curated, containing finds from the island's Mycenaean-era settlement at Skarkos — one of the most significant Early Bronze Age sites in the Cyclades, with occupation dating to approximately 2800–2300 BC. The Skarkos site itself, on a low hill north of the port, is accessible and worth a visit; the combination of site and museum gives a clear picture of Ios's very long human history that stands in sharp contrast to its modern reputation.", el: "Το Αρχαιολογικό Μουσείο στο Χωριό είναι μικρό αλλά ευφυώς σχεδιασμένο, περιέχοντας ευρήματα από τον μυκηναϊκό οικισμό του νησιού στο Σκάρκο — ένα από τα πιο σημαντικά μέρη της Πρώιμης Εποχής του Χαλκού στις Κυκλάδες, με κατοίκηση από περίπου 2800–2300 π.Χ. Ο ίδιος ο χώρος του Σκάρκου, σε ένα χαμηλό λόφο βόρεια του λιμανιού, είναι προσβάσιμος και αξίζει μια επίσκεψη; ο συνδυασμός χώρου και μουσείου δίνει μια σαφή εικόνα της πολύ μακριάς ανθρώπινης ιστορίας της Ίου που στέκεται σε απότομη αντίθεση με τη σύγχρονη φήμη της." }
+        },
+        {
+          title: { en: "Skarkos — Early Bronze Age settlement (UNESCO Tentative List)", el: "Σκάρκος — Οικισμός Πρώιμης Εποχής Χαλκού (Προσωρινή Λίστα UNESCO)" },
+          text: { en: "The hill of Skarkos, just north of the port, contains the remarkably well-preserved remains of an Early Cycladic settlement from approximately 2800 BC — one of the oldest organised urban sites in the Aegean. Multi-roomed stone houses, storage vessels, animal bones and cooking implements have all been found here, revealing a structured community that predates the classical world by over two thousand years. The site is on Greece's UNESCO Tentative List and is openly accessible with information panels.", el: "Ο λόφος του Σκάρκου, μόλις βόρεια του λιμανιού, περιέχει τα εντυπωσιακά καλά διατηρημένα ερείπια ενός πρώιμου κυκλαδίτικου οικισμού από περίπου 2800 π.Χ. — ένα από τα παλαιότερα οργανωμένα αστικά μέρη στο Αιγαίο. Πολυδωμάτια πέτρινα σπίτια, αγγεία αποθήκευσης, ζώινα κόκαλα και μαγειρικά εργαλεία έχουν όλα βρεθεί εδώ, αποκαλύπτοντας μια δομημένη κοινότητα που προηγείται της κλασικής εποχής κατά πάνω από δύο χιλιετίες. Ο χώρος βρίσκεται στην Προσωρινή Λίστα της UNESCO στην Ελλάδα και είναι ανοιχτά προσβάσιμος με πληροφοριακές πινακίδες." }
+        }
+      ]
+    },
+    {
+      title: { en: "Beaches in Ios", el: "Παραλίες στην Ίο" },
+      layout: "list",
+      items: [
+        {
+          title: { en: "Mylopotas — iconic and long", el: "Μυλοποτάς — θρυλικός και μακρύς" },
+          text: { en: "The island's main beach — two kilometres of fine sand in a south-facing bay, with the full spectrum from organised beach clubs at the east end to quiet, undeveloped sand at the west. The clearest water on the main coastline. The beach bar scene here from June through August is one of the most vivid in the Cyclades.", el: "Η κύρια παραλία του νησιού — δυο χιλιόμετρα λεπτής άμμου σε νότιο κόλπο, με το πλήρες φάσμα από οργανωμένα beach clubs στο ανατολικό άκρο έως ήσυχη, αναπτύξιμη άμμο στα δυτικά. Το πιο καθαρό νερό στην κύρια ακτογραμμή. Το beach bar scene εδώ από Ιούνιο μέχρι Αύγουστο είναι ένα από τα πιο ζωντανά στις Κυκλάδες." }
+        },
+        {
+          title: { en: "Manganari — wild and remote", el: "Μαγκαναρί — άγρια και απομακρυσμένη" },
+          text: { en: "Three broad south-coast bays of exceptional natural beauty, accessible by caïque from the port or a rough dirt road. No sunbeds, minimal facilities, extraordinary clarity. The finest natural beach experience on the island and one of the best in the southern Cyclades.", el: "Τρεις ευρύτατοι νότιοι κόλποι εξαιρετικής φυσικής ομορφιάς, προσβάσιμοι με καΐκι από το λιμάνι ή σκληρό χωμάτινο δρόμο. Χωρίς ηλιοστάσια, ελάχιστες εγκαταστάσεις, εξαιρετική διαφάνεια. Η πιο φυσική παραλιακή εμπειρία στο νησί και μία από τις καλύτερες στις νότιες Κυκλάδες." }
+        },
+        {
+          title: { en: "Koumbara — closest to Chora", el: "Κουμπάρα — πιο κοντά στο Χωριό" },
+          text: { en: "A small rocky cove ten minutes' walk west of the port — pebble and coarse sand, clear water, a seasonal beach bar and a quiet atmosphere that makes it the preferred swimming spot for the island's longer-term residents. Completely different in character from Mylopotas.", el: "Ένας μικρός βραχώδης όρμος δέκα λεπτά με τα πόδια δυτικά του λιμανιού — χαλίκι και χοντρή άμμο, καθαρό νερό, ένα εποχιακό beach bar και μια ήσυχη ατμόσφαιρα που το κάνει το προτιμώμενο μέρο κολύμβησης για τους πιο μακροχρόνιους κατοίκους του νησιού. Εντελώς διαφορετικό σε χαρακτήρα από τον Μυλοποτά." }
+        },
+        {
+          title: { en: "Psathi — nudist and free", el: "Ψαθί — γυμνιστική και ελεύθερη" },
+          text: { en: "A sandy cove on the east coast, reached by a short dirt track from the main road. Quieter than Mylopotas, traditionally clothing-optional, with good clear water and a low-key atmosphere that suits visitors who want to escape the main beach scene.", el: "Ένας αμμώδης όρμος στην ανατολική ακτή, προσβάσιμος με σύντομο χωμάτινο δρόμο από τον κύριο δρόμο. Πιο ήσυχος από τον Μυλοποτά, παραδοσιακά ελεύθερος, με καλό καθαρό νερό και χαμηλό-κλειδί ατμόσφαιρα που ταιριάζει σε επισκέπτες που θέλουν να δραπετάσουν από την κύρια παραλιακή σκηνή." }
+        },
+        {
+          title: { en: "Agia Theodoti — sheltered and calm", el: "Αγία Θεοδότη — προστατευμένη και ήσυχη" },
+          text: { en: "A long, broad sandy beach on the northeast coast, sheltered from the meltemi and excellent on windy days when the west coast is rough. A Byzantine church and the ruins of a Venetian castle sit above the beach. Taverna open in summer.", el: "Μια μακριά, ευρύτατη αμμώδης παραλία στη βορειοανατολική ακτή, προστατευμένη από τον μελτέμι και εξαιρετική σε αερώδεις μέρες όταν η δυτική ακτή είναι σκληρή. Μια βυζαντινή εκκλησία και τα ερείπια ενός ενετικού κάστρου κάθονται πάνω από την παραλία. Ταβέρνα ανοιχτή το καλοκαίρι." }
+        },
+        {
+          title: { en: "Plakes & Kalamos — hidden gems", el: "Πλάκες & Καλαμός — κρυμμένα διαμάντια" },
+          text: { en: "Two small, largely undiscovered coves on the north coast, reached by rough tracks. Rocky entries, very clear water, and almost no other visitors even in August. For those with a car and a willingness to walk the last five minutes on a stony path.", el: "Δύο μικροί, σε μεγάλο βαθμό ανακάλυπτοι όρμοι στη βόρεια ακτή, προσβάσιμοι με σκληρούς δρόμους. Βραχώδεις είσοδοι, πολύ καθαρό νερό, και σχεδόν κανένας άλλος επισκέπτης ακόμα και τον Αύγουστο. Για όσους έχουν αυτοκίνητο και τη διάθεση να περπατήσουν τα τελευταία πέντε λεπτά σε πετρένιο μονοπάτι." }
+        }
+      ]
+    },
+    {
+      title: { en: "", el: "" },
+      gallery: [
+        {
+          image: "/images/ios-gallery-1.webp",
+          alt: { en: "Ios island, Greece", el: "Νησί Ίος, Ελλάδα" },
+          caption: { en: "Ios island, Greece", el: "Νησί Ίος, Ελλάδα" },
+        },
+      ],
+    },
+    {
+      title: { en: "Eating and drinking in Ios", el: "Φαγητό και ποτό στην Ίο" },
+      layout: "grid",
+      items: [
+        {
+          title: { en: "The Chora restaurant scene — better than the reputation suggests", el: "Η σκηνή εστιατορίων στο Χωριό — καλύτερη από ό,τι υποδεικνύει η φήμη" },
+          text: { en: "The Chora has developed a genuine restaurant culture over the past decade, with several excellent tavernas serving modern Greek food alongside traditional dishes. The best are concentrated on and around the main square and on the quieter lanes north of the bar district. Booking is recommended in July and August.", el: "Το Χωριό έχει αναπτύξει μια πραγματική εστιατορική κουλτούρα την τελευταία δεκαετία, με αρκετές εξαιρετικές ταβέρνες να σερβίρουν σύγχρονο ελληνικό φαγητό δίπλα σε παραδοσιακά πιάτα. Οι καλύτερες είναι συγκεντρωμένες γύρω από την κεντρική πλατεία και στα πιο ήσυχα δρομάκια βόρεια της περιοχής των μπαρ. Κράτηση συνιστάται τον Ιούλιο και Αύγουστο." }
+        },
+        {
+          title: { en: "Fresh seafood at the port", el: "Φρέσκα θαλασσινά στο λιμάνι" },
+          text: { en: "The waterfront tavernas at Ormos Iosou serve fresh fish at prices that are considerably more reasonable than in the Chora. The port is a working fishing harbour and the daily catch quality is reliable. Grilled red mullet, sea bream and octopus are staples; the smaller family-run tavernas outperform the larger ones consistently.", el: "Οι ταβέρνες στο λιμάνι στον Όρμο Ιούσου σερβίρουν φρέσκο ψάρι σε τιμές που είναι σημαντικά πιο λογικές από ό,τι στο Χωριό. Το λιμάνι είναι ένα εργαζόμενο ψαράδικο και η ποιότητα της ημερήσιας σύλλησης είναι αξιόπιστη. Ψητός κόκκινος μουρούνι, σαργούρα και χταπόδι είναι βασικά πιάτα; οι μικρότερες οικογενειακές ταβέρνες υπερτερούν στις μεγαλύτερες αξιόπιστα." }
+        },
+        {
+          title: { en: "Loukoumades — the Chora's essential street food", el: "Λουκουμάδες — το απαραίτητο street food του Χωριού" },
+          text: { en: "Ios has its own tradition of loukoumades — honey-drenched fried dough — and the long-established stall near the Chora's main square has been serving them for decades. Eaten at midnight after a long evening, they are one of the island's most specific pleasures.", el: "Η Ίος έχει τη δική της παράδοση λουκουμάδων — τηγανισμένου ζυμαριού με μέλι — και το παλιό πωλητήριο κοντά στην κεντρική πλατεία του Χωριού τα σερβίρει εδώ και δεκαετίες. Τα τρως μεσάνυχτα μετά από μακριά βραδιά, και είναι ένα από τα πιο συγκεκριμένα ευχαριστήματα του νησιού." }
+        },
+        {
+          title: { en: "Local Ios wine and thyme honey", el: "Τοπικό κρασί Ίου και μέλι θυμαρίσιο" },
+          text: { en: "The island produces small quantities of wine from indigenous varieties — light, aromatic whites and robust reds — and a thyme honey that is among the finest in the Cyclades. Both are available from the food shops in the Chora and from the Saturday morning market at the port. Take them home.", el: "Το νησί παράγει μικρές ποσότητες κρασιού από γηγενή ποικιλία — ελαφρά, αρωματικά λευκά και ισχυρά κόκκινα — και ένα θυμαρίσιο μέλι που είναι ανάμεσα στα πιο καλά στις Κυκλάδες. Και τα δύο είναι διαθέσιμα από τα τρόφιμα στο Χωριό και από την αγορά Σαββατοκύριακου στο λιμάνι. Πάρε τα σπίτι." }
+        },
+        {
+          title: { en: "Breakfast culture in the Chora", el: "Κουλτούρα πρωινού στο Χωριό" },
+          text: { en: "Ios has an unusually good breakfast culture — several café-bakeries in the Chora open early and serve fresh pastries, Greek yogurt with local honey, proper espresso and fruit platters. After a night out, breakfast here is a ritual. After an early morning walk to Homer's Tomb, it is a reward.", el: "Η Ίος έχει ασυνήθιστα καλή κουλτούρα πρωινού — αρκετά café-αρτοποιεία στο Χωριό ανοίγουν νωρίς και σερβίρουν φρέσκα παστά, γιαούρτι ελληνικό με τοπικό μέλι, σωστό espresso και πιάτα φρούτων. Μετά από βραδιά έξω, το πρωινό εδώ είναι ένα τελετουργικό. Μετά από πρωινό περίπατο στον Τάφο του Ομήρου, είναι ένα βραβείο." }
+        },
+        {
+          title: { en: "Beach tavernas at Mylopotas and Manganari", el: "Παραλιακές ταβέρνες στον Μυλοποτά και τη Μαγκαναρί" },
+          text: { en: "The tavernas at the east end of Mylopotas serve good food alongside beach-bar cocktails; the quality varies but the better ones take their kitchen seriously. At Manganari, the single seasonal taverna serves simple grilled fish and salads that taste considerably better for being eaten on a remote beach with no roads and nothing between you and the horizon.", el: "Οι ταβέρνες στο ανατολικό άκρο του Μυλοποτά σερβίρουν καλό φαγητό δίπλα σε beach-bar κοκτέιλ; η ποιότητα ποικίλλει αλλά οι καλύτερες παίρνουν σοβαρά την κουζίνα τους. Στη Μαγκαναρί, η μοναδική εποχιακή ταβέρνα σερβίρει απλό ψάρι ψητό και σαλάτες που γεύονται σημαντικά καλύτερα γιατί τρώγονται σε μια απομακρυσμένη παραλία χωρίς δρόμους και τίποτα ανάμεσά σου και τον ορίζοντα." }
+        }
+      ]
+    },
+    {
+      title: { en: "Honest Advice — What to Skip in Ios", el: "Ειλικρινής Συμβουλή — Τι να Αποφύγεις στην Ίο" },
+      layout: "list",
+      text: {
+        en: "✕ **Spending your entire stay on Mylopotas without ever going to the Chora.** The beach is excellent but the Chora — particularly in the early morning and at sunset — is where the island's real character lives. Walking up the marble staircase from the port, exploring the lanes before the day warms up, and sitting at a table above the village with a coffee and a view across the Aegean costs nothing and is an entirely different experience from the beach scene below.\n\n✕ **Dismissing Ios as 'just a party island' without looking further.** The nightlife is real and concentrated and can dominate the experience if you stay in the wrong part of the Chora and keep the wrong hours. But the same island contains Homer's Tomb, the Bronze Age settlement at Skarkos, the wild south coast at Manganari and one of the most beautiful Cycladic villages in the archipelago. Travellers who come with only one of these dimensions in mind miss the others entirely.\n\n✕ **Visiting Manganari only by dirt road.** The road is rough, long and hard on rental vehicles — several car hire companies specifically exclude it in their terms. The daily caïque from the port is faster, more pleasant and arrives directly at the beach. Take the boat.\n\n✕ **Staying in August without booking months in advance.** Ios in late July and August is among the busiest small islands in the Cyclades. Accommodation fills completely; prices are at their highest; the Chora becomes very crowded after midnight. If flexibility is important, June and September offer the same beaches, the same Chora and the same island with dramatically less pressure on every resource.\n\n💡 What nobody tells you: Ios has been quietly evolving for over a decade, and the gap between its reputation and its reality is now wider than at almost any other island in Greece. The travellers who arrive expecting a rowdy package resort and find a stunning hilltop village, an ancient Bronze Age site, a wild south coast and genuinely good restaurants are consistently the ones who leave with the strongest impressions. The island's party reputation has functioned, accidentally, as a filter — keeping away a certain type of visitor and leaving the rest of Ios remarkably underpressured for an island this beautiful, this well-connected and this close to Santorini. In September, when the party season ends and the island returns to something closer to its year-round self, Ios is one of the finest places in the Cyclades.",
+        el: "✕ **Να περάσεις ολόκληρη τη διαμονή σου στον Μυλοποτά χωρίς ποτέ να πας στο Χωριό.** Η παραλία είναι εξαιρετική αλλά το Χωριό — ειδικά το πρωί και στη σούσα — είναι εκεί που ζει ο πραγματικός χαρακτήρας του νησιού. Ανεβαίνοντας το σκαλοπάτι μαρμάρου από το λιμάνι, εξερευνώντας τα δρομάκια πριν ζεσταθεί η μέρα, και καθιζώντας σε ένα τραπέζι πάνω από το χωριό με έναν καφέ και θέα στο Αιγαίο δεν κοστίζει τίποτα και είναι εντελώς διαφορετική εμπειρία από την παραλιακή σκηνή παρακάτω.\n\n✕ **Να απορρίψεις την Ίο ως 'απλά νησί γιορτής' χωρίς να κοιτάξεις παραπέρα.** Η νυχτερινή ζωή είναι πραγματική και συγκεντρωμένη και μπορεί να κυριαρχήσει στην εμπειρία αν μείνεις στο λάθος μέρος του Χωριού και κρατήσεις τις λάθος ώρες. Αλλά το ίδιο το νησί περιέχει τον Τάφο του Ομήρου, τον οικισμό της Εποχής του Χαλκού στο Σκάρκο, την άγρια νότια ακτή στη Μαγκαναρί και ένα από τα πιο όμορφα κυκλαδίτικα χωριά στο αρχιπέλαγος. Ταξιδιώτες που έρχονται με μόνο μία από αυτές τις διαστάσεις στο μυαλό χάνουν τις άλλες εντελώς.\n\n✕ **Να επισκεφθείς τη Μαγκαναρί μόνο με χωμάτινο δρόμο.** Ο δρόμος είναι σκληρός, μακρύς και δύσκολος για ενοικιαζόμενα οχήματα — αρκετές εταιρείες ενοικίασης αυτοκινήτων τον αποκλείουν συγκεκριμένα στους όρους τους. Το ημερήσιο καΐκι από το λιμάνι είναι πιο γρήγορο, πιο ευχάριστο και φτάνει απευθείας στην παραλία. Πάρε το πλοίο.\n\n✕ **Να μείνεις τον Αύγουστο χωρίς να κλείσεις μήνες εκ των προτέρων.** Η Ίος τον τέλος Ιουλίου και τον Αύγουστο είναι ανάμεσα στα πιο πολυσύχναστα μικρά νησιά στις Κυκλάδες. Τα καταλύματα γεμίζουν εντελώς; οι τιμές είναι στο υψηλότερο σημείο τους; το Χωριό γίνεται πολύ γεμάτο μετά τα μεσάνυχτα. Αν η ευελιξία είναι σημαντική, ο Ιούνιος και ο Σεπτέμβριος προσφέρουν τις ίδιες παραλίες, το ίδιο Χωριό και το ίδιο νησί με δραματικά λιγότερη πίεση σε κάθε πόρο.\n\n💡 Αυτό που δε σου λέει κανείς: Η Ίος εξελίσσεται σιωπηλά εδώ και πάνω από μια δεκαετία, και το κενό μεταξύ φήμης και πραγματικότητάς της είναι τώρα πιο ευρύ από σχεδόν οποιοδήποτε άλλο νησί στην Ελλάδα. Οι ταξιδιώτες που φτάνουν περιμένοντας ένα θορυβώδες πακέτο θέρετρο και βρίσκουν ένα εντυπωσιακό ορεινό χωριό, ένα αρχαίο μέρο Εποχής Χαλκού, μια άγρια νότια ακτή και πραγματικά καλά εστιατόρια είναι σταθερά αυτοί που φεύγουν με τις πιο ισχυρές εντυπώσεις. Η φήμη γιορτής του νησιού έχει λειτουργήσει, τυχαία, ως φίλτρο — κρατώντας μακριά ένα συγκεκριμένο τύπο επισκέπτη και αφήνοντας τα υπόλοιπα της Ίου αξιοσημείωτα χωρίς πίεση για ένα νησί τόσο όμορφο, τόσο καλά συνδεδεμένο και τόσο κοντά στη Σαντορίνη. Τον Σεπτέμβριο, όταν η σεζόν γιορτής τελειώνει και το νησί επιστρέφει σε κάτι πιο κοντά στον ετήσιο εαυτό του, η Ίος είναι ένα από τα πιο καλά μέρη στις Κυκλάδες."
+      }
+    },
+    {
+      title: { en: "How to visit Ios", el: "Πώς να επισκεφθείς την Ίο" },
+      layout: "grid",
+      items: [
+        {
+          title: { en: "Getting there by ferry", el: "Πώς να φτάσεις με πλοίο" },
+          text: { en: "Ios is well-connected by ferry from Piraeus (4–5 hours conventional, 3 hours high-speed), from Rafina (3–4 hours), and from Santorini (40 minutes), Naxos (1 hour) and Paros (1.5 hours). High-speed services run frequently in summer. The port is compact and all connections are from one quay.", el: "Η Ίος είναι καλά συνδεδεμένη με πλοίο από Πειραιά (4–5 ώρες συμβατικό, 3 ώρες γρήγορο), από Ραφίνα (3–4 ώρες), και από Σαντορίνη (40 λεπτά), Νάξο (1 ώρα) και Πάρο (1.5 ώρες). Τα γρήγορα πλοία τρέχουν συχνά το καλοκαίρι. Το λιμάνι είναι προσβάσιμο και όλες οι συνδέσεις είναι από ένα προβλήτα." }
+        },
+        {
+          title: { en: "Getting around the island", el: "Μετακίνηση στο νησί" },
+          text: { en: "The port, Chora and Mylopotas are connected by a regular bus service that runs until late in summer — one of the few islands where the bus is a genuinely practical option for the main triangle. For Homer's Tomb, Manganari, Agia Theodoti and the east coast beaches, a rental car or scooter is needed. ATV hire is popular but requires care on the rougher tracks.", el: "Το λιμάνι, το Χωριό και ο Μυλοποτάς συνδέονται με τακτική λεωφορειακή υπηρεσία που λειτουργεί μέχρι αργά το καλοκαίρι — ένα απο τα λίγα νησιά όπου το λεωφορείο είναι πραγματικά πρακτική επιλογή για το κύριο τρίγωνο. Για τον Τάφο του Ομήρου, τη Μαγκαναρί, την Αγία Θεοδότη και τις παραλίες της ανατολικής ακτής, χρειάζεται ενοικιαζόμενο αυτοκίνητο ή scooter. Το ATV είναι δημοφιλές αλλά απαιτεί προσοχή στους πιο σκληρούς δρόμους." }
+        },
+        {
+          title: { en: "How many days?", el: "Πόσες μέρες;" },
+          text: { en: "Three days covers the Chora, Mylopotas, Homer's Tomb and a caïque to Manganari comfortably. Four to five days allows a day trip to Folegandros or Sikinos, more beach exploration and a slower pace. Ios is an island that rewards not rushing — the best experiences here are found by wandering without a plan.", el: "Τρεις μέρες καλύπτουν το Χωριό, τον Μυλοποτά, τον Τάφο του Ομήρου και ένα καΐκι στη Μαγκαναρί άνετα. Τέσσερις πέντε μέρες επιτρέπουν μια ημερήσια εκδρομή στον Φολέγανδρο ή τη Σίκινο, περισσότερη εξερεύνηση παραλιών και πιο αργό ρυθμό. Η Ίος είναι ένα νησί που ανταμείβει το να μην τρέχεις — οι καλύτερες εμπειρίες εδώ βρίσκονται περνώντας χωρίς σχέδιο." }
+        },
+        {
+          title: { en: "The port–Chora–Mylopotas triangle", el: "Το τρίγωνο λιμάνι–Χωριό–Μυλοποτάς" },
+          text: { en: "These three points form the practical axis of daily life on Ios. The bus runs the triangle reliably until at least 1am in summer. The marble staircase between the port and the Chora takes about 15 minutes on foot uphill and is worth doing at least once — the views over the bay from halfway up are exceptional.", el: "Αυτά τα τρία σημεία σχηματίζουν τον πρακτικό άξονα της καθημερινής ζωής στην Ίο. Το λεωφορείο τρέχει το τρίγωνο αξιόπιστα μέχρι τουλάχιστον 1πμ το καλοκαίρι. Το σκαλοπάτι μαρμάρου μεταξύ λιμανιού και Χωριού παίρνει περίπου 15 λεπτά με τα πόδια ανοιβάσιμο και αξίζει να το κάνεις τουλάχιστον μία φορά — οι θέες πάνω από τον κόλπο από τα μισά είναι εξαιρετικές." }
+        },
+        {
+          title: { en: "The Meltemi in summer", el: "Ο μελτέμι το καλοκαίρι" },
+          text: { en: "The meltemi blows from the north in July and August, affecting the north-facing coast and occasionally making the sea at Mylopotas choppy. South-facing beaches — Manganari in particular — are sheltered. On very windy days, the caïque service to Manganari may not run; check at the port the night before.", el: "Ο μελτέμι φυσάει από βορρά τον Ιούλιο και τον Αύγουστο, επηρεάζοντας τη βόρεια ακτή και κάνοντας κάποτε τη θάλασσα στον Μυλοποτά κυματώδη. Οι νότιες παραλίες — η Μαγκαναρί ιδιαίτερα — είναι προστατευμένες. Σε πολύ αερώδεις μέρες, η υπηρεσία καΐκι στη Μαγκαναρί μπορεί να μην λειτουργήσει; ρώτα στο λιμάνι την προηγούμενη βραδιά." }
+        },
+        {
+          title: { en: "Noise and sleep", el: "Θόρυβος και ύπνος" },
+          text: { en: "If you are staying in the Chora and want to sleep before 3am, choose accommodation in the lower Chora or on the Chora-Mylopotas road rather than the bar district. If you are staying at Mylopotas, the beach-side hotels furthest from the main cluster of bars are significantly quieter. The port is quiet at night.", el: "Αν μένεις στο Χωριό και θέλεις να κοιμηθείς πριν τις 3πμ, επίλεξε κατάλυμα στο κάτω Χωριό ή στον δρόμο Χωριού-Μυλοποτά αντί για την περιοχή των μπαρ. Αν μένεις στον Μυλοποτά, τα παραλιακά ξενοδοχεία πιο μακριά από το κύριο συγκρότημα μπαρ είναι σημαντικά πιο ήσυχα. Το λιμάνι είναι ήσυχο τη νύχτα." }
+        },
+        {
+          title: { en: "Island hopping from Ios", el: "Island hopping από την Ίο" },
+          text: { en: "Ios's position in the southern Cyclades makes it an excellent hopping base. Santorini (40 min), Naxos (1 hr), Folegandros (1.5 hrs), Sikinos (1 hr) and Paros (1.5 hrs) are all easily reached. High-speed ferry schedules change each season — check current timetables at the port information office or online before planning day trips.", el: "Η θέση της Ίου στις νότιες Κυκλάδες την κάνει εξαιρετική βάση island hopping. Σαντορίνη (40 λεπτά), Νάξος (1 ώρα), Φολέγανδρος (1.5 ώρες), Σίκινος (1 ώρα) και Πάρος (1.5 ώρες) είναι όλα εύκολα προσβάσιμα. Οι χρονοδιαγράμματα γρήγορων πλοίων αλλάζουν κάθε σεζόν — δες τα τρέχοντα χρονοδιαγράμματα στο γραφείο πληροφοριών λιμανιού ή online πριν σχεδιάσεις ημερήσιες εκδρομές." }
+        },
+        {
+          title: { en: "Cash and connectivity", el: "Μετρητά και σύνδεση" },
+          text: { en: "ATMs are available in both the port and the Chora. Mobile signal is good throughout the main settled areas and at Mylopotas. The remoter beaches — Manganari, Psathi — have limited or no signal. Most restaurants and accommodation accept cards; some smaller cafés and the loukoumades stall are cash-preferred.", el: "ATM υπάρχουν και στο λιμάνι και στο Χωριό. Το σήμα κινητού είναι καλό σε όλες τις κύριες κατοικημένες περιοχές και στον Μυλοποτά. Οι πιο απομακρυσμένες παραλίες — Μαγκαναρί, Ψαθί — έχουν περιορισμένο ή κανένα σήμα. Τα περισσότερα εστιατόρια και καταλύματα δέχονται κάρτα; κάποια μικρότερα café και ο πωλητής λουκουμάδων προτιμούν μετρητά." }
+        }
+      ]
+    },
+    {
+      title: { en: "", el: "" },
+      gallery: [
+        {
+          image: "/images/ios-gallery-2.webp",
+          alt: { en: "Chora of Ios, Greece", el: "Χωριό της Ίου, Ελλάδα" },
+          caption: { en: "Chora of Ios, Greece", el: "Χωριό της Ίου, Ελλάδα" },
+        },
+      ],
+    },
+    {
+      title: { en: "Frequently asked questions about Ios", el: "Συχνές ερωτήσεις για την Ίο" },
+      layout: "faq",
+      items: [
+        {
+          title: { en: "Is Ios only for young party-goers?", el: "Η Ίος είναι μόνο για νέους γιορταστές;" },
+          text: { en: "No — and this is perhaps the most important thing to understand about Ios. The island's nightlife is concentrated in a specific part of the upper Chora and operates between roughly 11pm and 4am. Outside that zone and those hours, Ios is a beautiful Cycladic island with excellent beaches, an extraordinary hilltop village, a wild south coast and genuine historical depth. Couples, older travellers, families and cultural visitors all spend very successful holidays here — provided they choose the right accommodation and understand that the party scene is one option among many, not the defining feature of the entire island.", el: "Όχι — και αυτό είναι ίσως το πιο σημαντικό που πρέπει να καταλάβεις για την Ίο. Η νυχτερινή ζωή του νησιού είναι συγκεντρωμένη σε συγκεκριμένο τμήμα του πάνω Χωριού και λειτουργεί μεταξύ περίπου 11μμ και 4πμ. Εκτός αυτής της ζώνης και αυτών των ωρών, η Ίος είναι ένα όμορφο κυκλαδίτικο νησί με εξαιρετικές παραλίες, ένα εξαιρετικό ορεινό χωριό, μια άγρια νότια ακτή και πραγματικό ιστορικό βάθος. Ζευγάρια, μεγαλύτεροι ταξιδιώτες, οικογένειες και πολιτιστικοί επισκέπτες περνούν πολύ επιτυχημένες διακοπές εδώ — εφόσον επιλέξουν το σωστό κατάλυμα και καταλάβουν ότι η σκηνή γιορτής είναι μία επιλογή ανάμεσα σε πολλές, όχι το χαρακτηριστικό γνώρισμα ολόκληρου του νησιού." }
+        },
+        {
+          title: { en: "How does Ios compare to Santorini?", el: "Πώς συγκρίνεται η Ίος με τη Σαντορίνη;" },
+          text: { en: "Ios and Santorini are an hour apart by high-speed ferry and profoundly different in character. Santorini has the caldera, the iconic architecture, the international luxury hotels and the crowds that come with all of those things — particularly in July and August. Ios has better beaches, a more authentic Cycladic village character, dramatically lower prices and significantly less pressure on every resource. Many travellers who find Santorini's peak season overwhelming base themselves on Ios instead and make Santorini a day trip — arriving early, staying for the sunset, returning in the evening. This is one of the most practical combinations in the southern Cyclades.", el: "Η Ίος και η Σαντορίνη απέχουν μία ώρα με γρήγορο πλοίο και είναι βαθιά διαφορετικές σε χαρακτήρα. Η Σαντορίνη έχει την καλντέρα, την εικονική αρχιτεκτονικά, τα διεθνή πολυτελή ξενοδοχεία και τα πλήθη που έρχονται με όλα αυτά — ειδικά τον Ιούλιο και Αύγουστο. Η Ίος έχει καλύτερες παραλίες, πιο αυθεντικό κυκλαδίτικο χαρακτήρα χωριού, драмατικά πιο χαμηλές τιμές και σημαντικά λιγότερη πίεση σε κάθε πόρο. Πολλοί ταξιδιώτες που βρίσκουν την αιχμή σεζόν της Σαντορίνης υπερβολική βάζουν τη βάση τους στην Ίο αντί και κάνουν τη Σαντορίνη ημερήσια εκδρομή — φτάνοντας νωρίς, μένοντας για τη σούσα, γυρίζοντας το βράδυ. Αυτός είναι ένας από τους πιο πρακτικούς συνδυασμούς στις νότιες Κυκλάδες." }
+        },
+        {
+          title: { en: "Is Homer really buried on Ios?", el: "Ο Όμηρος είναι πραγματικά θαμμένος στην Ίο;" },
+          text: { en: "The tradition is ancient — Thucydides, Pliny, Pindar and other ancient sources all record the belief that Homer died on Ios and is buried on its northern tip. Modern archaeology cannot confirm or deny this. The site on the northern ridge contains a reconstructed stone enclosure that has been venerated since antiquity and which is referenced in ancient inscriptions found on the island. Whether or not the tomb is genuinely Homer's, the site is extraordinary in its setting and its symbolic resonance — and the Archaeological Museum in the Chora provides the full context of the tradition and the evidence.", el: "Η παράδοση είναι αρχαία — Θουκυδίδης, Πλίνιος, Πίνδαρος και άλλες αρχαίες πηγές καταγράφουν την πίστη ότι ο Όμηρος πέθανε στην Ίο και είναι θαμμένος στο βόρειο άκρο της. Η σύγχρονη αρχαιολογία δεν μπορεί να επιβεβαιώσει ή να αρνηθεί αυτό. Ο χώρος στη βόρεια ράχη περιέχει ένα ανακατασκευασμένο περίβλητα πέτρινο που λατρεύεται από την αρχαιότητα και αναφέρεται σε αρχαίες επιγραφές που βρέθηκαν στο νησί. Αν ο τάφος είναι πραγματικά του Ομήρου, ο χώρος είναι εξαιρετικός στο περιβάλλον του και τη συμβολική του αντίληψη — και το Αρχαιολογικό Μουσείο στο Χωριό παρέχει πλήρη πλαίσιο της παράδοσης και των στοιχείων." }
+        },
+        {
+          title: { en: "What is the best way to get to Manganari beach?", el: "Ποιος είναι ο καλύτερος τρόπος να φτάσεις στην παραλία Μαγκαναρί;" },
+          text: { en: "The daily caïque from the port is by far the best option. It departs in the morning and returns in the late afternoon, and the journey by sea along the west and south coast of Ios is scenic and enjoyable in its own right. The alternative — a long dirt road from the Chora — requires a robust vehicle (many hire companies exclude the Manganari track in their terms and conditions) and takes about 40 minutes each way. Several rental ATVs have been damaged on this track. Take the boat.", el: "Το ημερήσιο καΐκι από το λιμάνι είναι μακράν η καλύτερη επιλογή. Φεύγει το πρωί και γυρίζει το απόγευμα, και το ταξίδι με θάλασσα κατά μήκος της δυτικής και νότιας ακτής της Ίου είναι θεαματικό και ευχάριστο από μόνο του. Η εναλλακτική — ένας μακρύς χωμάτινος δρόμος από το Χωριό — απαιτεί ανθεκτικό όχημα (πολλές εταιρείες ενοικίασης αποκλείουν τον δρόμο Μαγκαναρί στους όρους τους) και παίρνει περίπου 40 λεπτά ανά δρόμο. Αρκετά ATV ενοικίασης έχουν πάθει ζημιά σε αυτόν τον δρόμο. Πάρε το πλοίο." }
+        },
+        {
+          title: { en: "When is the best time to visit Ios for beaches without crowds?", el: "Πότε είναι η καλύτερη εποχή να επισκεφθείς την Ίο για παραλίες χωρίς πλήθος;" },
+          text: { en: "June and September are the ideal months. The sea is fully swimmable (from late May at Mylopotas, which is south-facing and warms early), the beaches are active without being congested, and the island has atmosphere without the August intensity. September in particular — from the 10th onward — sees Mylopotas significantly emptier while remaining warm, and Manganari effectively deserted. The water in September is at its warmest of the year.", el: "Ο Ιούνιος και ο Σεπτέμβριος είναι οι ιδανικοί μήνες. Η θάλασσα είναι πλήρως κολύψιμη (από τέλος Μαΐου στον Μυλοποτά, που κοιτά νότιο και ζεσταίνει νωρίς), οι παραλίες είναι ενεργές χωρίς να είναι γεμάτες, και το νησί έχει ατμόσφαιρα χωρίς την αιχμή Αυγούστου. Ο Σεπτέμβριος ιδιαίτερα — από τις 10 και μετά — βλέπει τον Μυλοποτά σημαντικά πιο άδειο παραμένοντας ζεστός, και τη Μαγκαναρί ουσιαστικά εγκαταλελειμμένη. Το νερό τον Σεπτέμβριο είναι στο πιο ζεστό του χρόνου." }
+        },
+        {
+          title: { en: "Can I visit Santorini as a day trip from Ios?", el: "Μπορώ να επισκεφθώ τη Σαντορίνη ως ημερήσια εκδρομή από την Ίο;" },
+          text: { en: "Yes — and many experienced Cyclades travellers recommend this as the best way to experience Santorini. The high-speed ferry takes approximately 40 minutes. Leaving Ios in the morning, spending the day in Oia and Fira, watching the sunset from the caldera edge and returning on the evening ferry gives you Santorini's most iconic experience without paying Santorini accommodation prices. It also means you avoid waking up to Santorini's August crowds and can retreat each evening to the considerably more relaxed atmosphere of Ios.", el: "Ναι — και πολλοί έμπειροι ταξιδιώτες Κυκλάδων συνιστούν αυτό ως τον καλύτερο τρόπο να βιώσεις τη Σαντορίνη. Το γρήγορο πλοίο παίρνει περίπου 40 λεπτά. Φεύγοντας την Ίο το πρωί, περνώντας τη μέρα στην Οία και τη Φηρά, παρακολουθώντας τη σούσα από την άκρη της καλντέρας και γυρίζοντας με το βραδινό πλοίο σου δίνει τη πιο εικονική εμπειρία της Σαντορίνης χωρίς να πληρώσεις τιμές καταλύματος Σαντορίνης. Σημαίνει επίσης ότι αποφεύγεις να ξυπνήσεις στα πλήθη Αυγούστου της Σαντορίνης και μπορείς να υποχωρήσεις κάθε βράδυ στη πολύ πιο χαλαρή ατμόσφαιρα της Ίου." }
+        },
+        {
+          title: { en: "Is Ios good in September and October?", el: "Η Ίος είναι καλή τον Σεπτέμβριο και Οκτώβριο;" },
+          text: { en: "September is arguably the finest month on Ios. The sea is at its warmest, the beaches are at their quietest since May, the Chora is peaceful and beautiful in the evenings without the high-season energy, and the restaurants are operating at their best. October is quieter still — some beach facilities and bars close, but the core of the island remains open and the autumn light on the Chora's whitewashed architecture is exceptional. For travellers who want Ios's beauty without its summer intensity, September is the month.", el: "Ο Σεπτέμβριος είναι ενδεχομένως ο καλύτερος μήνας στην Ίο. Η θάλασσα είναι στο πιο ζεστό, οι παραλίες είναι στο πιο ήσυχο από τον Μάιο, το Χωριό είναι ήσυχο και όμορφο τις βραδιές χωρίς την ενέργεια της αιχμής σεζόν, και τα εστιατόρια λειτουργούν στο καλύτερό τους. Ο Οκτώβριος είναι ακόμα πιο ήσυχος — κάποιες παραλιακές εγκαταστάσεις και μπαρ κλείνουν, αλλά ο πυρήνας του νησιού παραμένει ανοιχτός και το φως του φθινοπώρου στην λευκή αρχιτεκτονικά του Χωριού είναι εξαιρετικό. Για ταξιδιώτες που θέλουν την ομορφιά της Ίου χωρίς την καλοκαιρινή της ένταση, ο Σεπτέμβριος είναι ο μήνας." }
+        }
+      ]
+    }
+  ],
   kefalonia: [
     {
       title: {
