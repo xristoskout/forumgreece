@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { hotels, SITE_URL, type Lang } from '../../../lib/content';
 import SiteHeader from '../../../components/site-header';
 import HotelsDirectoryClient from './all/hotels-directory-client';
@@ -50,7 +51,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: "website",
       images: [
         {
-          url: `${SITE_URL}/images/hero/greece-main.webp`,
+          url: `${SITE_URL}/images/hotels-cover.webp`,
           width: 1600,
           height: 900,
           alt: lang === "en" ? "Hotels & Stays in Greece" : "Ξενοδοχεία & Διαμονή στην Ελλάδα",
@@ -61,7 +62,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       card: "summary_large_image",
       title: t.title[lang],
       description: t.description[lang],
-      images: [`${SITE_URL}/images/hero/greece-main.webp`],
+      images: [`${SITE_URL}/images/hotels-cover.webp`],
     },
   };
 }
@@ -98,22 +99,35 @@ export default async function HotelsListingPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
       />
-      
-      <div className="container mx-auto px-6 py-32">
-        <div className="text-center mb-16">
-          <span className="mb-4 inline-flex justify-center rounded-full bg-indigo-500/10 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-indigo-700 backdrop-blur-md border border-indigo-400/20">
+
+      {/* ── Hero Cover ── */}
+      <section className="relative h-[70vh] min-h-[500px] overflow-hidden">
+        <Image
+          src="/images/hotels-cover.webp"
+          alt="Hotels & Stays in Greece"
+          fill
+          className="object-cover"
+          priority
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20" />
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+          <span className="mb-6 inline-flex justify-center rounded-full bg-white/20 backdrop-blur-md border border-white/30 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-white">
             {t.tag[lang]}
           </span>
-          <h1 className="text-5xl md:text-7xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 via-indigo-400 to-indigo-800 tracking-tight">
+          <h1 className="text-5xl md:text-7xl font-extrabold mb-6 text-white tracking-tight drop-shadow-lg">
             {t.h1[lang]}
           </h1>
-          <p className="text-slate-500 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-light">
+          <p className="text-white/80 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-light drop-shadow-md">
             {t.sub[lang]}
           </p>
-          <p className="text-slate-600 text-base max-w-3xl mx-auto leading-relaxed mt-6">
+          <p className="text-white/60 text-base max-w-3xl mx-auto leading-relaxed mt-6 drop-shadow-md">
             {t.intro[lang]}
           </p>
         </div>
+      </section>
+
+      <div className="container mx-auto px-6 py-24">
 
         <HotelsDirectoryClient lang={lang} hotels={hotels} />
 

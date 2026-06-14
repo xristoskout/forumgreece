@@ -384,7 +384,7 @@ export default function DestinationDetailsClient({
 
                     {section.text && !section.banner && (
                       <p className="mt-5 text-base leading-8 text-slate-500">
-                        {section.text[lang]}
+                        {renderTextWithLinksDark(section.text[lang])}
                       </p>
                     )}
 

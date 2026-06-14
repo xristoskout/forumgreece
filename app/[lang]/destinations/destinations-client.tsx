@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import type { Lang, Destination } from "../../../lib/content";
@@ -26,18 +26,35 @@ export default function DestinationsClient({
   byRegion,
   activeRegions,
 }: Props) {
-  const [activeRegionKey, setActiveRegionKey] = useState<string | null>(null);
-  const [paused, setPaused] = useState(false);
+  const [search, setSearch] = useState("");
+  const [selectedRegion, setSelectedRegion] = useState<string | null>(null);
 
-  const scrollToRegion = (key: string) => {
-    setActiveRegionKey(key);
-    const id = `region-${key.toLowerCase().replace(/\s+/g, "-")}`;
-    const el = document.getElementById(id);
-    if (el) {
-      const top = el.getBoundingClientRect().top + window.scrollY - 80;
-      window.scrollTo({ top, behavior: "smooth" });
+  const filteredByRegion = useMemo(() => {
+    const result: Record<string, Destination[]> = {};
+    for (const region of activeRegions) {
+      const regionDests = byRegion[region.key] ?? [];
+      const filtered = regionDests.filter((dest) => {
+        if (search) {
+          const q = search.toLowerCase();
+          if (
+            !dest.name.toLowerCase().includes(q) &&
+            !dest.blurb[lang].toLowerCase().includes(q) &&
+            !dest.highlights[lang].some((h) => h.toLowerCase().includes(q))
+          )
+            return false;
+        }
+        if (selectedRegion && region.key !== selectedRegion) return false;
+        return true;
+      });
+      if (filtered.length > 0) result[region.key] = filtered;
     }
-  };
+    return result;
+  }, [byRegion, activeRegions, search, selectedRegion, lang]);
+
+  const filteredRegions = useMemo(
+    () => activeRegions.filter((r) => filteredByRegion[r.key]),
+    [activeRegions, filteredByRegion]
+  );
 
   const t = {
     guide: { en: "Travel Guide", el: "Οδηγός Ταξιδιού" },
@@ -49,6 +66,15 @@ export default function DestinationsClient({
       en: "Browse every destination by geographic region — from iconic Cycladic islands to mainland historical escapes.",
       el: "Εξερεύνησε κάθε προορισμό ανά γεωγραφική ενότητα — από τα εμβληματικά κυκλαδίτικα νησιά μέχρι ιστορικές ηπειρωτικές αποδράσεις.",
     },
+    searchPlaceholder: {
+      en: "Search destinations...",
+      el: "Αναζήτηση προορισμών...",
+    },
+    noResults: {
+      en: "No destinations found matching your search.",
+      el: "Δεν βρέθηκαν προορισμοί.",
+    },
+    all: { en: "All", el: "Όλα" },
   };
 
   const totalCount = destinations.length;
@@ -56,58 +82,43 @@ export default function DestinationsClient({
   return (
     <main className="min-h-screen bg-[#f8fbff]">
 
-      {/* CSS keyframes for the carousel marquee */}
-      <style>{`
-        @keyframes marquee {
-          0%   { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
-        .carousel-track {
-          animation: marquee 28s linear infinite;
-          will-change: transform;
-        }
-        .carousel-track.paused {
-          animation-play-state: paused;
-        }
-      `}</style>
-
-      {/* Hero Banner */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-indigo-950 via-indigo-900 to-slate-900 pt-28 pb-20">
-        <div
-          className="absolute inset-0 opacity-10"
-          style={{
-            backgroundImage:
-              "radial-gradient(circle at 20% 50%, rgba(99,102,241,0.4) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(139,92,246,0.3) 0%, transparent 50%)",
-          }}
+      {/* Hero Cover */}
+      <section className="relative h-[70vh] min-h-[500px] overflow-hidden">
+        <Image
+          src="/images/destinations-cover.webp"
+          alt="All Destinations in Greece"
+          fill
+          className="object-cover"
+          priority
+          sizes="100vw"
         />
-        <div className="relative z-10 max-w-7xl mx-auto px-6">
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20" />
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
           <Link
             href={`/${lang}`}
-            className="inline-flex items-center gap-2 text-indigo-300 text-sm font-medium hover:text-white transition-colors mb-8"
+            className="inline-flex items-center gap-2 text-white/60 text-sm font-medium hover:text-white transition-colors mb-6"
           >
             {t.back[lang]}
           </Link>
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 rounded-full bg-indigo-500/20 border border-indigo-400/30 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-indigo-200 mb-6">
-              🗺️ {lang === "en" ? "Browse by Region" : "Ανά Γεωγραφική Ενότητα"}
-            </div>
-            <h1 className="text-5xl md:text-6xl font-extrabold text-white tracking-tight leading-[1.1] mb-6">
-              {t.h1[lang]}
-            </h1>
-            <p className="text-lg text-indigo-200/80 leading-relaxed font-light max-w-2xl">
-              {t.sub[lang]}
-            </p>
+          <div className="inline-flex items-center gap-2 rounded-full bg-white/20 backdrop-blur-md border border-white/30 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-white mb-6">
+            🗺️ {lang === "en" ? "Browse by Region" : "Ανά Γεωγραφική Ενότητα"}
           </div>
-          <div className="mt-12 flex flex-wrap gap-6">
-            <div className="flex items-center gap-3 rounded-2xl bg-white/10 border border-white/10 px-5 py-3 backdrop-blur-sm">
+          <h1 className="text-5xl md:text-6xl font-extrabold text-white tracking-tight leading-[1.1] mb-6 drop-shadow-lg">
+            {t.h1[lang]}
+          </h1>
+          <p className="text-lg text-white/80 leading-relaxed font-light max-w-2xl drop-shadow-md">
+            {t.sub[lang]}
+          </p>
+          <div className="mt-10 flex flex-wrap gap-6 justify-center">
+            <div className="flex items-center gap-3 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 px-5 py-3">
               <span className="text-2xl font-black text-white">{totalCount}</span>
-              <span className="text-xs font-semibold uppercase tracking-widest text-indigo-200">
+              <span className="text-xs font-semibold uppercase tracking-widest text-white/70">
                 {lang === "en" ? "Destinations" : "Προορισμοί"}
               </span>
             </div>
-            <div className="flex items-center gap-3 rounded-2xl bg-white/10 border border-white/10 px-5 py-3 backdrop-blur-sm">
+            <div className="flex items-center gap-3 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 px-5 py-3">
               <span className="text-2xl font-black text-white">{activeRegions.length}</span>
-              <span className="text-xs font-semibold uppercase tracking-widest text-indigo-200">
+              <span className="text-xs font-semibold uppercase tracking-widest text-white/70">
                 {lang === "en" ? "Regions" : "Περιοχές"}
               </span>
             </div>
@@ -115,40 +126,43 @@ export default function DestinationsClient({
         </div>
       </section>
 
-      {/* ── Auto-scrolling Region Carousel ── */}
-      <section className="bg-white border-b border-slate-100 py-8 overflow-hidden">
-        {/* overflow-hidden on wrapper clips the infinite track */}
-        <div
-          className="flex"
-          onMouseEnter={() => setPaused(true)}
-          onMouseLeave={() => setPaused(false)}
-        >
-          {/* Track contains cards TWICE for seamless loop */}
-          <div className={`carousel-track flex gap-4 px-4${paused ? " paused" : ""}`}>
-            {[...activeRegions, ...activeRegions].map((region, i) => {
-              const count = byRegion[region.key]?.length ?? 0;
-              const isActive = activeRegionKey === region.key;
-              return (
-                <button
-                  key={`${region.key}-${i}`}
-                  onClick={() => scrollToRegion(region.key)}
-                  className={`flex-shrink-0 flex flex-col items-start gap-2 rounded-2xl border px-5 py-4 text-left transition-all duration-300 w-52 ${
-                    isActive
-                      ? "border-indigo-400 bg-indigo-600 shadow-lg"
-                      : "border-slate-200 bg-white hover:border-indigo-200 hover:bg-indigo-50 hover:shadow-md"
-                  }`}
-                >
-                  <span className="text-2xl">{region.emoji}</span>
-                  <span className={`text-sm font-bold leading-snug ${isActive ? "text-white" : "text-slate-900"}`}>
-                    {region.label[lang]}
-                  </span>
-                  <span className={`rounded-full px-2.5 py-0.5 text-[10px] font-bold ${isActive ? "bg-white/20 text-indigo-100" : "bg-slate-100 text-slate-500"}`}>
-                    {count} {t.destinations[lang]}
-                  </span>
-                </button>
-              );
-            })}
-          </div>
+      {/* ── Search + Region pills ── */}
+      <section className="bg-white border-b border-slate-100 py-8">
+        <div className="max-w-xl mx-auto px-6 mb-6">
+          <input
+            type="text"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            placeholder={t.searchPlaceholder[lang]}
+            className="w-full px-6 py-4 rounded-2xl border border-slate-200 bg-white shadow-lg text-lg focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:border-transparent transition-all"
+          />
+        </div>
+        <div className="flex flex-wrap justify-center gap-3 px-6">
+          <button
+            onClick={() => setSelectedRegion(null)}
+            className={`px-5 py-2 rounded-full text-sm font-bold uppercase tracking-wider transition-all ${
+              selectedRegion === null
+                ? "bg-indigo-600 text-white shadow-lg"
+                : "bg-white text-slate-600 border border-slate-200 hover:border-indigo-300"
+            }`}
+          >
+            {t.all[lang]}
+          </button>
+          {activeRegions.map((region) => (
+            <button
+              key={region.key}
+              onClick={() =>
+                setSelectedRegion(region.key === selectedRegion ? null : region.key)
+              }
+              className={`px-5 py-2 rounded-full text-sm font-bold uppercase tracking-wider transition-all ${
+                selectedRegion === region.key
+                  ? "bg-indigo-600 text-white shadow-lg"
+                  : "bg-white text-slate-600 border border-slate-200 hover:border-indigo-300"
+              }`}
+            >
+              {region.label[lang]}
+            </button>
+          ))}
         </div>
       </section>
 
@@ -164,9 +178,14 @@ export default function DestinationsClient({
       </section>
 
       {/* ── Regions ── */}
+      {filteredRegions.length === 0 ? (
+        <div className="max-w-7xl mx-auto px-6 py-20 text-center">
+          <p className="text-slate-500 text-lg">{t.noResults[lang]}</p>
+        </div>
+      ) : (
       <div className="max-w-7xl mx-auto px-6 py-16 space-y-24">
-        {activeRegions.map((region) => {
-          const regionDestinations = byRegion[region.key] ?? [];
+        {filteredRegions.map((region) => {
+          const regionDestinations = filteredByRegion[region.key] ?? [];
           return (
             <section
               key={region.key}
@@ -266,6 +285,7 @@ export default function DestinationsClient({
           );
         })}
       </div>
+      )}
 
       {/* Footer CTA */}
       <section className="bg-gradient-to-br from-indigo-950 to-slate-900 py-16 text-center">
