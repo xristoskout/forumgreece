@@ -11333,4 +11333,381 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       ]
     }
   ],
+  karpathos: [
+    {
+      layout: "numbered",
+      title: { en: "Why Visit Karpathos", el: "Γιατί να Επισκεφτείς την Κάρπαθο" },
+      items: [
+        {
+          title: { en: "Olympos — a living museum of traditional Greek island life", el: "Όλυμπος — ζωντανό μουσείο παραδοσιακής νησιωτικής ζωής" },
+          text: {
+            en: "The mountain village of Olympos is unlike anywhere else in Greece. Women still wear traditional embroidered dresses daily, the local dialect preserves ancient Doric elements, and the stone houses with their flat roofs and colourful doors feel frozen in time. Few places in the Mediterranean offer such an unbroken connection to the past.",
+            el: "Ο ορεινός Όλυμπος είναι αλλιώτικος από οπουδήποτε αλλού στην Ελλάδα. Οι γυναίκες φορούν καθημερινά τις παραδοσιακές φορεσιές, η ντοπιολαλιά διατηρεί δωρικά στοιχεία, και τα πέτρινα σπίτια με τις ταράτσες και τα πολύχρωμα παράθυρα μοιάζουν σταματημένα στον χρόνο."
+          }
+        },
+        {
+          title: { en: "Stunning beaches with dramatic mountain backdrops", el: "Υπέροχες παραλίες με δραματικό ορεινό σκηνικό" },
+          text: {
+            en: "Apella is the most famous — a pebble cove flanked by steep cliffs that has been photographed for travel magazines worldwide. Kyra Panagia offers soft sand and turquoise water with a tiny chapel. Amoopi and Lefkos provide long stretches with tamarisk trees. Achata is a wild, untouched paradise. Each beach has its own character, and all share the same crystalline Aegean water.",
+            el: "Η Απέλλα είναι η πιο διάσημη — ένας βοτσαλωτός όρμος ανάμεσα σε απότομους γκρεμούς που έχει φωτογραφηθεί για ταξιδιωτικά περιοδικά παγκοσμίως. Η Κυρά Παναγιά προσφέρει αμμουδιά και τιρκουάζ νερά με ένα εκκλησάκι. Η Αμόπη και ο Λευκός έχουν μεγάλες εκτάσεις με αρμυρίκια. Η Αχάτα είναι ένας άγριος, ανέγγιχτος παράδεισος."
+          }
+        },
+        {
+          title: { en: "The best coastal hiking in the Dodecanese", el: "Η καλύτερη παράκτια πεζοπορία στη Δωδεκάνησο" },
+          text: {
+            en: "The trail from Olympos to Diafani (about 10 km, 3-4 hours) follows the coast with breathtaking views of the Aegean, passing through terraced fields and abandoned stone settlements. Other trails connect Pigadia to the mountains and explore the wild northern part of the island. The dramatic geography of Karpathos makes every walk an adventure.",
+            el: "Το μονοπάτι από τον Όλυμπο προς το Διαφάνι (περίπου 10 χλμ, 3-4 ώρες) ακολουθεί την ακτή με μαγευτική θέα στο Αιγαίο, περνώντας από πεζούλες και εγκαταλελειμμένους πέτρινους οικισμούς. Η δραματική γεωγραφία της Καρπάθου κάνει κάθε πεζοπορία περιπέτεια."
+          }
+        },
+        {
+          title: { en: "Authentic local cuisine and wine", el: "Αυθεντική τοπική κουζίνα και κρασί" },
+          text: {
+            en: "Karpathian food is distinct and memorable. Pitaridia (handmade pasta with rooster or goat), makarounes (pasta with local cheese and cinnamon), opson (slow-cooked goat in tomato sauce), and fresh seafood from the surrounding waters. Local wines from Athiri (white) and Mandilaria (red) grapes are grown on terraced slopes. The island even produces its own honey and cheese.",
+            el: "Η καρπάθικη κουζίνα είναι ξεχωριστή. Πιταρίδια (χειροποίητα ζυμαρικά με κόκορα ή κατσίκι), μακαρούνες (ζυμαρικά με τοπικό τυρί και κανέλα), όψον (κατσίκι σιγοβρασμένο σε ντοματόσαλτσα) και φρέσκα θαλασσινά. Τα τοπικά κρασιά από Αθήρι (λευκό) και Μαντιλάρι (κόκκινο) καλλιεργούνται στις πεζούλες."
+          }
+        },
+        {
+          title: { en: "Island of the Winds — a paradise for windsurfing", el: "Νησί των Ανέμων — παράδεισος για windsurfing" },
+          text: {
+            en: "The reliable meltemi wind that blows through the Aegean in July and August makes Karpathos one of Europe's top windsurfing and kitesurfing destinations. The beaches around Pigadia and the eastern coast offer perfect conditions, with several schools renting equipment and offering lessons for all levels.",
+            el: "Το μελτέμι που φυσάει σταθερά τον Ιούλιο και Αύγουστο κάνει την Κάρπαθο έναν από τους κορυφαίους ευρωπαϊκούς προορισμούς για windsurfing και kitesurfing. Οι παραλίες γύρω από τα Πηγάδια και την ανατολική ακτή προσφέρουν ιδανικές συνθήκες."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "", el: "" },
+      gallery: [
+        {
+          image: "/images/karpathos-cover.webp",
+          alt: { en: "Traditional windmills above Olympos village on Karpathos island, Dodecanese", el: "Παραδοσιακοί ανεμόμυλοι πάνω από τον Όλυμπο στην Κάρπαθο, Δωδεκάνησα" },
+          caption: { en: "Traditional windmills above Olympos village on Karpathos island, Dodecanese", el: "Παραδοσιακοί ανεμόμυλοι πάνω από τον Όλυμπο στην Κάρπαθο, Δωδεκάνησα" }
+        }
+      ]
+    },
+    {
+      title: { en: "Best Time to Visit Karpathos", el: "Καλύτερη Εποχή για Κάρπαθο" },
+      layout: "list",
+      alert: {
+        en: "Seasonal secret: Late May to June is the sweet spot — the sea is warm, the island is green, the meltemi has not yet peaked, and crowds are thin.",
+        el: "Μυστικό εποχής: Τέλη Μαΐου με Ιούνιο είναι η ιδανική περίοδος — η θάλασσα είναι ζεστή, το νησί πράσινο, το μελτέμι δεν έχει κορυφωθεί και η κοσμοσυρροή είναι μικρή."
+      },
+      items: [
+        {
+          title: { en: "Late May – June", el: "Τέλη Μαΐου – Ιούνιος" },
+          text: {
+            en: "The best balance of warm weather, blooming nature, calm seas, and uncrowded beaches. Wildflowers cover the mountains, and the hiking trails are at their most beautiful.",
+            el: "Η καλύτερη ισορροπία ζεστού καιρού, ανθισμένης φύσης, ήρεμης θάλασσας και άδειων παραλιών. Τα αγριολούλουδα καλύπτουν τα βουνά και τα μονοπάτια είναι στα πιο όμορφά τους."
+          }
+        },
+        {
+          title: { en: "July – August", el: "Ιούλιος – Αύγουστος" },
+          text: {
+            en: "Peak season with reliable meltemi wind, warmest sea, and busiest beaches. Ideal for windsurfing and kitesurfing, but expect higher prices and more crowds in Pigadia and popular beaches.",
+            el: "Υψηλή περίοδος με σταθερό μελτέμι, ζεστή θάλασσα και γεμάτες παραλίες. Ιδανικά για windsurfing, αλλά με υψηλότερες τιμές και περισσότερο κόσμο."
+          }
+        },
+        {
+          title: { en: "September – October", el: "Σεπτέμβριος – Οκτώβριος" },
+          text: {
+            en: "The meltemi eases, the sea remains warm until late September, and the island returns to its laidback rhythm. Excellent for hiking, as the heat is gentler and the light is golden.",
+            el: "Το μελτέμι κοπάζει, η θάλασσα είναι ζεστή μέχρι τέλη Σεπτεμβρίου, και το νησί επιστρέφει στους ήρεμους ρυθμούς του. Ιδανικά για πεζοπορία."
+          }
+        },
+        {
+          title: { en: "Winter (November – April)", el: "Χειμώνας (Νοέμβριος – Απρίλιος)" },
+          text: {
+            en: "Many hotels and restaurants close, but the island is beautiful and peaceful. Olympos is at its most authentic. Flights from Athens continue year-round. Best for solitude seekers who don't mind cooler weather.",
+            el: "Πολλά καταλύματα και εστιατόρια κλείνουν, αλλά το νησί είναι όμορφο και ήρεμο. Ο Όλυμπος είναι στα πιο αυθεντικά του. Οι πτήσεις συνεχίζονται όλο τον χρόνο."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "How to Get There & Around", el: "Πώς Θα Φτάσεις & Μετακινήσεις" },
+      layout: "grid",
+      alert: {
+        en: "Car rental hack: Book your car in advance through a local agency rather than at the airport — you will get a better price and the exact model you want.",
+        el: "Tip ενοικίασης: Κλείσε αυτοκίνητο εκ των προτέρων από τοπικό γραφείο αντί στο αεροδρόμιο — θα βρεις καλύτερη τιμή."
+      },
+      items: [
+        {
+          title: { en: "By Plane", el: "Με αεροπλάνο" },
+          text: {
+            en: "Karpathos Island National Airport (AOK) receives daily flights from Athens International Airport (1 hour) with Aegean, Olympic Air, and Sky Express. Seasonal direct flights from European cities are also available in summer. From the airport, Pigadia is a 15-minute drive.",
+            el: "Το Αεροδρόμιο Καρπάθου (AOK) δέχεται καθημερινές πτήσεις από Αθήνα (1 ώρα) με Aegean, Olympic Air και Sky Express. Από το αεροδρόμιο, τα Πηγάδια είναι 15 λεπτά οδήγησης."
+          }
+        },
+        {
+          title: { en: "By Ferry", el: "Με πλοίο" },
+          text: {
+            en: "Ferries connect Karpathos to Piraeus (via Crete or Rhodes), Rhodes (2-3 hours via fast ferry), and other Dodecanese islands. The main port is Pigadia, with a secondary port in Diafani for the northern part of the island. Services are less frequent than in the Cyclades — plan ahead.",
+            el: "Ακτοπλοϊκές συνδέσεις από Πειραιά (μέσω Κρήτης ή Ρόδου), Ρόδο (2-3 ώρες) και άλλα Δωδεκάνησα. Το κεντρικό λιμάνι είναι στα Πηγάδια, με δευτερεύον λιμάνι στο Διαφάνι για το βόρειο τμήμα."
+          }
+        },
+        {
+          title: { en: "Rent a Car", el: "Ενοικίαση αυτοκινήτου" },
+          text: {
+            en: "Strongly recommended. Karpathos is 50 km long with a single main road, but reaching Olympos, Apella, and the northern beaches requires driving. A 4x4 is useful for the dirt roads to Achata and Saria. Prices start around €35-45/day in low season.",
+            el: "Απαραίτητο. Η Κάρπαθος έχει μήκος 50 χλμ. Για Όλυμπο, Απέλλα και βόρειες παραλίες χρειάζεσαι αυτοκίνητο. Ένα 4x4 βοηθά για τους χωματόδρομους. Τιμές από €35-45/ημέρα."
+          }
+        },
+        {
+          title: { en: "By Bus & Taxi", el: "Με λεωφορείο και ταξί" },
+          text: {
+            en: "KTEL buses run between Pigadia, Arkasa, Lefkos, and Olympos a few times daily in summer. They are useful but infrequent. Taxis are available but expensive for long distances. The airport bus meets flights.",
+            el: "Τα ΚΤΕΛ εκτελούν δρομολόγια μεταξύ Πηγαδίων, Αρκάσας, Λευκού και Ολύμπου λίγες φορές την ημέρα. Τα ταξί είναι διαθέσιμα αλλά ακριβά για μεγάλες αποστάσεις."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "Top Attractions & Experiences", el: "Top Αξιοθέατα & Εμπειρίες" },
+      layout: "list",
+      items: [
+        {
+          title: { en: "Olympos Village", el: "Όλυμπος" },
+          text: {
+            en: "The cultural heart of Karpathos. Wander the narrow alleys, visit the Folklore Museum, watch women weaving and embroidering in traditional dress, and climb to the windmills above the village for panoramic views. Best visited early morning before the tour buses arrive.",
+            el: "Η ψυχή της Καρπάθου. Περιπλανήσου στα στενά σοκάκια, επισκέψου το Λαογραφικό Μουσείο, δες τις γυναίκες να υφαίνουν με παραδοσιακές φορεσιές και ανέβα στους ανεμόμυλους για πανοραμική θέα."
+          }
+        },
+        {
+          title: { en: "Apella Beach", el: "Παραλία Απέλλα" },
+          text: {
+            en: "Widely considered one of the most beautiful beaches in Greece. A pebble cove framed by imposing cliffs with crystal-clear turquoise water. Has a small cantina and sunbeds. Arrive early (before 10am) or late (after 5pm) to avoid the day-trip crowds.",
+            el: "Μία από τις ομορφότερες παραλίες της Ελλάδας. Βοτσαλωτός όρμος ανάμεσα σε εντυπωσιακούς γκρεμούς με κρυστάλλινα τιρκουάζ νερά. Έρχονται επισκέπτες ημερήσιας εκδρομής — πήγαινε νωρίς ή αργά."
+          }
+        },
+        {
+          title: { en: "Diafani Village", el: "Διαφάνι" },
+          text: {
+            en: "A charming fishing village on the northern coast, serving as the gateway to Saria island and the endpoint of the famous Olympos-to-Diafani hike. Stay for fresh seafood, afternoon coffee by the harbour, and stunning sunsets.",
+            el: "Γραφικό ψαροχώρι στη βόρεια ακτή, αφετηρία για Σαρία και τερματισμός της πεζοπορίας από Όλυμπο. Μείνε για φρέσκο ψάρι, καφέ δίπλα στο λιμάνι και μαγευτικά ηλιοβασιλέματα."
+          }
+        },
+        {
+          title: { en: "Saria Island", el: "Σαρία" },
+          text: {
+            en: "The uninhabited islet just north of Karpathos, once the ancient capital (Potidaion). Accessible by boat from Diafani. Offers Byzantine ruins, remote beaches, wild goats, and a true Robinson Crusoe experience. Boat trips run daily in summer.",
+            el: "Το ακατοίκητο νησάκι βόρεια της Καρπάθου, κάποτε αρχαία πρωτεύουσα (Ποτίδαιον). Προσβάσιμο με βάρκα από Διαφάνι. Βυζαντινά ερείπια, απομονωμένες παραλίες και άγρια κατσίκια."
+          }
+        },
+        {
+          title: { en: "Lefkos Village", el: "Λευκός" },
+          text: {
+            en: "A relaxed coastal village on the western side, famous for its long sandy beach with tamarisk trees providing natural shade, and spectacular sunsets. Excellent tavernas and a laidback vibe make it a perfect base for families.",
+            el: "Χαλαρωτικό παραθαλάσσιο χωριό στη δυτική πλευρά, γνωστό για τη μεγάλη αμμουδιά με αρμυρίκια και τα εντυπωσιακά ηλιοβασιλέματα. Ιδανική βάση για οικογένειες."
+          }
+        },
+        {
+          title: { en: "Kyra Panagia Beach", el: "Παραλία Κυρά Παναγιά" },
+          text: {
+            en: "A beautiful sandy cove with shallow turquoise waters and a tiny whitewashed chapel perched on the rocks. The beach is well-sheltered from the wind and has a taverna. Popular but rarely overcrowded.",
+            el: "Όμορφος αμμώδης όρμος με ρηχά τιρκουάζ νερά και ένα μικρό εκκλησάκι στα βράχια. Προστατευμένη από τον αέρα, με ταβέρνα. Δημοφιλής αλλά σπάνια υπερβολικά γεμάτη."
+          }
+        },
+        {
+          title: { en: "Pigadia Town (Karpathos Town)", el: "Πηγάδια (Πρωτεύουσα)" },
+          text: {
+            en: "The capital and main port, with a pleasant waterfront, museums (Archaeological and Folklore), good restaurants, and shops. The neoclassical buildings along the seafront and the nearby Vrykounta beach are highlights. A good base with the widest selection of accommodation.",
+            el: "Η πρωτεύουσα και κεντρικό λιμάνι, με όμορφο παραλιακό μέτωπο, μουσεία (Αρχαιολογικό και Λαογραφικό), καλά εστιατόρια και καταστήματα. Τα νεοκλασικά κτήρια και η παραλία Βρυκούντα είναι τα highlights."
+          }
+        },
+        {
+          title: { en: "Hike Olympos to Diafani", el: "Πεζοπορία Όλυμπος – Διαφάνι" },
+          text: {
+            en: "The signature Karpathos experience. A 10 km coastal trail descending from Olympos through terraced fields and along the coast to Diafani, with continuous Aegean views. Takes 3-4 hours. Start at sunrise, bring water and sun protection. A boat can take you back to Olympos.",
+            el: "Η εμπειρία-σήμα κατατεθέν της Καρπάθου. 10 χλμ παράκτιου μονοπατιού που κατεβαίνει από τον Όλυμπο στο Διαφάνι με συνεχή θέα στο Αιγαίο. Διάρκεια 3-4 ώρες. Ξεκίνα την ανατολή, πάρε νερό. Βάρκα σε γυρίζει πίσω."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "Beaches in Karpathos", el: "Παραλίες στην Κάρπαθο" },
+      text: {
+        en: "Karpathos has an impressive variety of beaches for an island of its size — from famous photographed coves to wild, empty stretches. The eastern coast beaches are more sheltered from the wind.",
+        el: "Η Κάρπαθος έχει εντυπωσιακή ποικιλία παραλιών για το μέγεθός της — από διάσημους φωτογραφημένους όρμους μέχρι άγριες, έρημες ακτές."
+      },
+      layout: "list",
+      items: [
+        {
+          title: { en: "Apella", el: "Απέλλα" },
+          text: {
+            en: "The postcard beach. A pebble cove with towering cliffs, turquoise water, and a small cantina. One of Greece's most photographed beaches.",
+            el: "Η καρτ ποστάλ παραλία της Καρπάθου. Βοτσαλωτός όρμος με πανύψηλους γκρεμούς και τιρκουάζ νερά."
+          }
+        },
+        {
+          title: { en: "Kyra Panagia", el: "Κυρά Παναγιά" },
+          text: {
+            en: "Sandy cove with a chapel on the rocks. Shallow and sheltered, ideal for families. Has a taverna.",
+            el: "Αμμώδης όρμος με εκκλησάκι στα βράχια. Ρηχά και προστατευμένα, ιδανικά για οικογένειες."
+          }
+        },
+        {
+          title: { en: "Achata", el: "Αχάτα" },
+          text: {
+            en: "Wild, untouched, and harder to reach via a dirt road. A long pebble beach with dramatic cliffs and no facilities — bring supplies.",
+            el: "Άγρια, ανέγγιχτη, με χωματόδρομο πρόσβασης. Μεγάλος βοτσαλωτός αιγιαλός χωρίς οργάνωση — πάρε εφόδια."
+          }
+        },
+        {
+          title: { en: "Amoopi", el: "Αμόπη" },
+          text: {
+            en: "A long stretch of sand and pebbles with tamarisk trees, several tavernas, and a few accommodation options. Sheltered and popular with families.",
+            el: "Μεγάλη αμμουδιά με βότσαλο, αρμυρίκια, ταβέρνες και καταλύματα. Προστατευμένη, δημοφιλής σε οικογένειες."
+          }
+        },
+        {
+          title: { en: "Lefkos", el: "Λευκός" },
+          text: {
+            en: "Long sandy beach with natural shade from tamarisk trees, calm waters, and excellent sunset views from the waterfront tavernas.",
+            el: "Μεγάλη αμμουδιά με φυσική σκιά από αρμυρίκια, ήρεμα νερά και υπέροχα ηλιοβασιλέματα."
+          }
+        },
+        {
+          title: { en: "Diakoftis", el: "Διακόφτης" },
+          text: {
+            en: "A long sandy beach near Pigadia, popular with windsurfers due to the reliable wind. Has sunbeds and water sports facilities.",
+            el: "Μεγάλη αμμουδιά κοντά στα Πηγάδια, δημοφιλής σε windsurfers. Με ομπρέλες και θαλάσσια σπορ."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "Food & Local Flavors", el: "Φαγητό & Τοπικές Γεύσεις" },
+      text: {
+        en: "Karpathos has a distinct culinary identity shaped by its isolation and agricultural traditions. Local dishes are hearty, honest, and deeply satisfying.",
+        el: "Η Κάρπαθος έχει ξεχωριστή γαστρονομική ταυτότητα που διαμορφώθηκε από την απομόνωση και τις γεωργικές παραδόσεις της."
+      },
+      layout: "list",
+      items: [
+        {
+          title: { en: "Pitaridia", el: "Πιταρίδια" },
+          text: {
+            en: "Handmade egg pasta, traditionally served with rooster or goat in a rich tomato sauce. The signature dish of Karpathos, found in every taverna.",
+            el: "Χειροποίητα ζυμαρικά με αυγό, σερβιρισμένα παραδοσιακά με κόκορα ή κατσίκι σε πλούσια σάλτσα ντομάτας. Το σήμα κατατεθέν της Καρπάθου."
+          }
+        },
+        {
+          title: { en: "Makarounes", el: "Μακαρούνες" },
+          text: {
+            en: "A unique pasta dish served with grated local cheese, cinnamon, and sugar — sweet and savoury combination that sounds unusual but works beautifully.",
+            el: "Μοναδικό πιάτο ζυμαρικών με τριμμένο τοπικό τυρί, κανέλα και ζάχαρη — γλυκόπικρος συνδυασμός που λειτουργεί υπέροχα."
+          }
+        },
+        {
+          title: { en: "Opson", el: "Όψον" },
+          text: {
+            en: "Slow-cooked goat in tomato sauce with local herbs. A Sunday tradition that melts off the bone and fills the taverna with an irresistible aroma.",
+            el: "Κατσίκι σιγοβρασμένο σε σάλτσα ντομάτας με τοπικά μυρωδικά. Κυριακάτικη παράδοση που λιώνει στο στόμα."
+          }
+        },
+        {
+          title: { en: "Local Wines", el: "Τοπικά κρασιά" },
+          text: {
+            en: "The island produces wines from Athiri (crisp white) and Mandilaria (full-bodied red) grapes grown on ancient terraced slopes. Visit the local wineries for tastings.",
+            el: "Το νησί παράγει κρασιά από Αθήρι (λευκό) και Μαντιλάρι (κόκκινο) από αρχαίες πεζούλες. Επισκέψου τα οινοποιεία."
+          }
+        },
+        {
+          title: { en: "Fresh Seafood", el: "Φρέσκα θαλασσινά" },
+          text: {
+            en: "The surrounding Aegean waters provide excellent fish, octopus, and seafood. Try the grilled octopus in Diafani or the seafood pasta in Lefkos.",
+            el: "Τα νερά του Αιγαίου παρέχουν εξαιρετικό ψάρι, χταπόδι και θαλασσινά. Δοκίμασε το χταπόδι στα κάρβουνα στο Διαφάνι."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "Insider Travel Tips", el: "Πρακτικές Συμβουλές" },
+      layout: "numbered",
+      alert: {
+        en: "Golden rule: Karpathos rewards slow travel. Do not try to see everything in 3 days — pick 2-3 bases and explore them deeply.",
+        el: "Χρυσός κανόνας: Η Κάρπαθος ανταμείβει το αργό ταξίδι. Μην προσπαθείς να δεις τα πάντα σε 3 μέρες."
+      },
+      items: [
+        {
+          text: {
+            en: "Book car rental well in advance for July and August — availability drops and prices rise significantly.",
+            el: "Κλείσε αυτοκίνητο νωρίς για Ιούλιο και Αύγουστο — η διαθεσιμότητα πέφτει και οι τιμές ανεβαίνουν."
+          }
+        },
+        {
+          text: {
+            en: "Pack layers even in summer — the meltemi wind can make evenings cool, especially in Olympos at altitude.",
+            el: "Πάρε στρώσεις ακόμα και το καλοκαίρι — το μελτέμι κάνει τα βράδια δροσερά, ειδικά στον Όλυμπο."
+          }
+        },
+        {
+          text: {
+            en: "Learn a few Karpathian words — the local dialect is a point of pride and locals appreciate the effort.",
+            el: "Μάθε λίγες καρπάθικες λέξεις — η ντοπιολαλιά είναι σημείο υπερηφάνειας."
+          }
+        },
+        {
+          text: {
+            en: "Make dinner reservations in Olympos and Lefkos during high season — the best tavernas fill up by 9pm.",
+            el: "Κάνε κράτηση για δείπνο σε Όλυμπο και Λευκό την υψηλή περίοδο — τα καλύτερα εστιατόρια γεμίζουν από τις 9."
+          }
+        },
+        {
+          text: {
+            en: "Take the early morning ferry from Pigadia to Diafani for a day trip to Saria — the boat leaves around 8am.",
+            el: "Πάρε το πρωινό καράβι από Πηγάδια για Διαφάνι για ημερήσια εκδρομή στη Σαρία — αναχώρηση γύρω στις 8."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "Frequently Asked Questions", el: "FAQ – Συχνές Ερωτήσεις" },
+      layout: "faq",
+      items: [
+        {
+          title: { en: "How many days do I need?", el: "Πόσες μέρες χρειάζομαι;" },
+          text: {
+            en: "At least 5-7 days to see Olympos, the main beaches, do the Diafani hike, and take a boat to Saria. With 3-4 days, focus on either the north (Olympos + Diafani) or the south (Pigadia + Lefkos + Apella).",
+            el: "Τουλάχιστον 5-7 μέρες για Όλυμπο, κύριες παραλίες, πεζοπορία και Σαρία. Με 3-4 μέρες, επικεντρώσου είτε στο βόρειο είτε στο νότιο τμήμα."
+          }
+        },
+        {
+          title: { en: "Do I need a car?", el: "Χρειάζομαι αυτοκίνητο;" },
+          text: {
+            en: "Yes, strongly recommended. The island is 50 km long and public transport is limited. A 4x4 is useful but not essential for most destinations.",
+            el: "Ναι, συνιστάται ανεπιφύλακτα. Το νησί έχει μήκος 50 χλμ και οι συγκοινωνίες είναι περιορισμένες."
+          }
+        },
+        {
+          title: { en: "Is Karpathos very windy?", el: "Έχει πολύ αέρα η Κάρπαθος;" },
+          text: {
+            en: "Yes, especially in July and August when the meltemi blows. The nickname 'Island of the Winds' is earned. East coast beaches (Apella, Kyra Panagia, Achata) are more sheltered.",
+            el: "Ναι, ειδικά τον Ιούλιο και Αύγουστο με το μελτέμι. Οι παραλίες της ανατολικής ακτής είναι πιο προστατευμένες."
+          }
+        },
+        {
+          title: { en: "Is Karpathos good for families?", el: "Είναι η Κάρπαθος κατάλληλη για οικογένειες;" },
+          text: {
+            en: "Yes, particularly with the safe beaches of Amoopi, Lefkos, and Kyra Panagia. Many family-run hotels and tavernas welcome children. The traditional village atmosphere is very family-friendly.",
+            el: "Ναι, ειδικά με τις ασφαλείς παραλίες της Αμόπης, Λευκού και Κυρά Παναγιάς. Πολλά οικογενειακά καταλύματα."
+          }
+        },
+        {
+          title: { en: "Can I visit in winter?", el: "Μπορώ να επισκεφθώ την Κάρπαθο τον χειμώνα;" },
+          text: {
+            en: "Yes. Flights from Athens continue year-round. Many hotels and restaurants close, but Olympos is at its most authentic and the island's dramatic landscapes are stunning in winter light. Expect cooler temperatures (10–15°C).",
+            el: "Ναι. Οι πτήσεις συνεχίζονται όλο τον χρόνο. Πολλά μαγαζιά κλείνουν αλλά ο Όλυμπος είναι στα πιο αυθεντικά του."
+          }
+        }
+      ]
+    },
+    {
+      layout: "list",
+      title: { en: "Honest Advice — What to Skip in Karpathos", el: "Ειλικρινής Συμβουλή — Τι να Αποφύγεις στην Κάρπαθο" },
+      text: {
+        en: "✕ **Apella at midday** — The famous beach is packed with day-trippers between 11am and 4pm. Go at opening (8am) or stay for sunset when the crowds clear. The water is just as beautiful without the shoulder-to-shoulder scene.\n\n✕ **Relying on Google Maps for Olympos** — The GPS often sends you up impossible dirt tracks. Follow the main road signs (Επαρχιακή Οδός) and ignore the 'shortcut' suggestions. The paved road is perfectly fine.\n\n✕ **Pigadia waterfront restaurants in August** — The seafront restaurants in the capital are convenient but many serve average food at inflated prices. Walk one street back for better options, or wait until you reach Olympos or Lefkos.\n\n✕ **Expecting ferry punctuality** — Ferries to/from Karpathos are often delayed, especially in windy weather. Build a buffer day into your itinerary and never book flights on the same day as your ferry arrival.\n\n✕ **Renting a small car for the northern roads** — The road to Olympos is winding and the last section is steep. A small city car will struggle. Rent a compact SUV (Suzuki Jimny or similar) for the same price.\n\n💡 What nobody tells you: The best Karpathos experience is to skip the famous Apella sunset entirely and instead climb the hill above Olympos just before dusk. From the windmills, you watch the sun sink into the Aegean with the village's stone houses glowing in golden light and the only sounds are goat bells and the wind. Then walk down to Olympos square for pitaridia and local wine at one of the family tavernas. That evening, in that village, is what makes Karpathos unforgettable.",
+        el: "✕ **Απέλλα το μεσημέρι** — Η διάσημη παραλία γεμίζει κόσμο 11πμ–4μμ. Πήγαινε πρωί ή μείνε για ηλιοβασίλεμα.\n\n✕ **Google Maps για Όλυμπο** — Το GPS συχνά σε στέλνει σε αδιάβατους χωματόδρομους. Ακολούθα την κεντρική Επαρχιακή Οδό.\n\n✕ **Παραλιακά εστιατόρια Πηγαδίων τον Αύγουστο** — Βολικά αλλά συχνά μέτριο φαγητό σε φουσκωμένες τιμές. Περπάτα ένα δρομάκι πίσω.\n\n✕ **Ακρίβεια δρομολογίων πλοίων** — Τα πλοία καθυστερούν συχνά λόγω ανέμου. Βάλε μία μέρα buffer στο πρόγραμμά σου.\n\n✕ **Μικρό αυτοκίνητο για το βόρειο δρόμο** — Ο δρόμος για Όλυμπο είναι απότομος. Νοίκιασε compact SUV.\n\n💡 Αυτό που δε σου λέει κανείς: Η καλύτερη εμπειρία στην Κάρπαθο δεν είναι η Απέλλα αλλά το ηλιοβασίλεμα πάνω από τον Όλυμπο, στους ανεμόμυλους, με τον ήλιο να βυθίζεται στο Αιγαίο και μόνο τις καμπάνες των κατσικιών να ακούγονται. Μετά, κατέβα στην πλατεία του Ολύμπου για πιταρίδια και ντόπιο κρασί. Αυτό το βράδυ, σ' αυτό το χωριό, είναι που κάνει την Κάρπαθο αξέχαστη."
+      }
+    }
+  ],
 };

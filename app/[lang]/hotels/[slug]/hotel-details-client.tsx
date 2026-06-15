@@ -57,6 +57,7 @@ const STAY22_EMBEDS: Record<string, string> = {
   hydra: "https://stay22.com/embed/6a2591e96f8247fde4799453",
   ios: "https://stay22.com/embed/6a2acceb6f8247fde48c37d6",
   samos: "https://stay22.com/embed/6a2bf22526ba558fae3d17e5",
+  karpathos: "https://stay22.com/embed/6a2fa839bffa295e3aa26f1c",
 };
 
 const HOTEL_NAMES: Record<string, string[]> = {
@@ -99,6 +100,7 @@ const HOTEL_NAMES: Record<string, string[]> = {
   hydra: ["Hydrea Hotel", "Bratsera Hotel", "Hotel Orloff", "Hotel Sophia", "Hydroussa Hotel", "Delfini Hotel", "Mandraki Beach Resort"],
   ios: ["Ios Grand", "Liostasi", "The Windmill", "Hotel Faros", "Arhontiko", "Ios Club", "Koula Village"],
   kalymnos: ["Kalypso Rooms", "Simone's Apartments", "Anemoni Apartments", "Porto Kalymnos", "Armonia Studios", "Villa Korali", "Panormos Beach Hotel", "Niriides Studios", "Emporios Bay Suites"],
+  karpathos: ["Alimounda Mare Hotel", "Konstantinos Palace", "CHC Sound of the Sea", "Poseidon Blue Gastronomy Hotel", "Hotel Atlantis", "Astra Studios", "SOPHID Wellness Suites", "Almi Luxury Rooms", "Casa Garden", "Olympos Studios", "Argo Hotel", "Alona Luxury Villas", "Arkasa Bay Hotel", "Hotel Finiki View", "Arhontiko Hotel", "Sunset Studio", "Olympos Archipelagos", "Aphrodite Hotel"],
   samos: ["Blue Island", "Hotel Vathy", "Anthemis", "Kokkari Beach", "Samos Sun"],
 };
 

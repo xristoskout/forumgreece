@@ -1546,6 +1546,44 @@ export const destinations: Destination[] = [
         el: "Πλήρης ταξιδιωτικός οδηγός για την Κάλυμνο, Δωδεκάνησα — την παγκόσμια πρωτεύουσα αθλητικής αναρρίχησης. Ανακαλύψτε την παράδοση σπογγαλιείας, τα εντυπωσιακά ασβεστολιθικά βουνά, τα παραδοσιακά χωριά και τα εξαιρετικά θαλασσινά."
       }
     }
+  },
+  {
+    slug: "karpathos",
+    name: "Karpathos",
+    region: { en: "Dodecanese", el: "Δωδεκάνησα" },
+    blurb: {
+      en: "Island of the Winds, authentic Olympos village, stunning beaches and world-class hiking in the southern Dodecanese.",
+      el: "Νησί των Ανέμων, αυθεντικός Όλυμπος, υπέροχες παραλίες και μονοπάτια στη νότια Δωδεκάνησο.",
+    },
+    image: "/images/karpathos-cover.webp",
+    overview: {
+      en: "Karpathos is the Island of the Winds — a long, mountainous island in the southern Dodecanese that combines dramatic landscapes with one of the most authentic traditional cultures in Greece. The mountain village of Olympos preserves customs, dress, and dialect that have vanished elsewhere, while the coastline offers stunning beaches like Apella, Kyra Panagia, and Amoopi.",
+      el: "Η Κάρπαθος είναι το Νησί των Ανέμων — ένα μακρόστενο, ορεινό νησί στη νότια Δωδεκάνησο που συνδυάζει δραματικά τοπία με έναν από τους πιο αυθεντικούς παραδοσιακούς πολιτισμούς της Ελλάδας. Το ορεινό χωριό Όλυμπος διατηρεί έθιμα, ενδυμασίες και διάλεκτο που έχουν εξαφανιστεί αλλού, ενώ η ακτογραμμή προσφέρει υπέροχες παραλίες όπως η Απέλλα, η Κυρά Παναγιά και η Αμόπη.",
+    },
+    highlights: {
+      en: ["Olympos — living traditional village", "Apella beach — one of Greece's best", "Hike from Olympos to Diafani", "Saria island boat trip", "Traditional Karpathian cuisine & wine"],
+      el: ["Όλυμπος — ζωντανό παραδοσιακό χωριό", "Παραλία Απέλλα — από τις καλύτερες της Ελλάδας", "Πεζοπορία από Όλυμπο προς Διαφάνι", "Εκδρομή στη Σαρία", "Καρπάθικη κουζίνα & κρασί"],
+    },
+    guideLinks: [
+      {
+        href: "/hotels/karpathos",
+        label: { en: "Where to Stay in Karpathos", el: "Πού να μείνεις στην Κάρπαθο" }
+      },
+      {
+        href: "/tours/all",
+        label: { en: "Tours & Experiences", el: "Εκδρομές & Εμπειρίες" }
+      }
+    ],
+    seo: {
+      title: {
+        en: "Karpathos Travel Guide: Olympos, Apella Beach, Hiking & Island Guide",
+        el: "Κάρπαθος: Ταξιδιωτικός Οδηγός — Όλυμπος, Παραλίες, Πεζοπορία"
+      },
+      description: {
+        en: "Complete travel guide to Karpathos, Dodecanese — the Island of the Winds. Discover the traditional village of Olympos, stunning Apella beach, spectacular coastal hiking, authentic Karpathian cuisine, and everything you need to know before you go.",
+        el: "Πλήρης ταξιδιωτικός οδηγός για την Κάρπαθο, Δωδεκάνησα — το Νησί των Ανέμων. Ανακαλύψτε τον αυθεντικό Όλυμπο, την υπέροχη παραλία Απέλλα, την πεζοπορία, την καρπάθικη κουζίνα και όλα όσα πρέπει να γνωρίζετε."
+      }
+    }
   }
 ];
 

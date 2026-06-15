@@ -1,0 +1,78 @@
+{
+  "id": "karpathos",
+  "slug": "karpathos",
+  "name": "Karpathos",
+  "type": "Island",
+  "region": { "en": "Dodecanese", "el": "Δωδεκάνησα" },
+  "coordinates": { "lat": 35.5, "lng": 27.2 },
+  "scores": {
+    "beaches": { "value": 9.2, "reason": "Apella, Kyra Panagia, and Amoopi rank among the Dodecanese's most stunning beaches." },
+    "nature": { "value": 9.0, "reason": "Dramatic mountain-meets-sea landscapes and the untouched Saria islet." },
+    "culture": { "value": 9.0, "reason": "Olympos preserves authentic traditional life found nowhere else in Greece." },
+    "food": { "value": 8.8, "reason": "Local wines, pitaridia, makarounes, and fresh Aegean seafood." },
+    "activities": { "value": 8.9, "reason": "World-class hiking, diving, watersports, and 4x4 exploration." },
+    "nightlife": { "value": 6.2, "reason": "Low-key bars in Pigadia and Lefkos but no club scene." },
+    "romance": { "value": 8.4, "reason": "Secluded beaches, sunset villages, and intimate tavernas." },
+    "family": { "value": 8.2, "reason": "Safe beaches, family-run rooms, and authentic village life." },
+    "adventure": { "value": 9.1, "reason": "Hiking from Olympos to Diafani, off-road tracks, and Saria exploration." },
+    "authenticity": { "value": 9.5, "reason": "One of the most authentic Greek islands with living traditions." },
+    "relaxation": { "value": 8.6, "reason": "Laidback atmosphere outside August peak." },
+    "value": { "value": 8.5, "reason": "Good value compared to Cyclades, especially in shoulder months." }
+  },
+  "quick_summary": "Karpathos, the Island of the Winds in the Dodecanese, offers dramatic landscapes where mountains plunge into turquoise seas, authentic village life in the legendary Olympos, and some of the best beaches and hiking in the Aegean.",
+  "bestFor": ["culture", "hiking", "nature", "authentic_greece", "beaches", "foodies", "adventure"],
+  "pros": [
+    "Authentic Greek island culture preserved in Olympos — traditional dress, dialect, music, and customs that have vanished elsewhere",
+    "Dramatic landscapes where mountains meet the sea — the Karpathos mountain ridge with steep cliffs dropping into turquoise coves is unforgettable",
+    "Stunning beaches ranging from the famous Apella (often called one of Greece's best) to Kyra Panagia, Achata, Amoopi, and Lefkos",
+    "Excellent hiking — the trail from Olympos to Diafani (3-4 hours) along the coast is one of the best coastal walks in the Dodecanese",
+    "Much less touristy than most Greek islands — even in peak August the island never feels overcrowded outside Pigadia",
+    "Great local food and wine — try pitaridia (handmade pasta), makarounes, opson (slow-cooked goat), and local wines from Athiri and Mandilaria grapes",
+    "Year-round mild climate and the famous meltemi wind make it a top destination for windsurfing and kitesurfing in summer",
+    "Unique architectural heritage — Olympos' stone houses with colourful doors and flat roofs, and the traditional windmills at the summit",
+    "Excellent diving and watersports — clear waters, sea caves, and reliable wind conditions",
+    "Laidback, unhurried atmosphere that encourages slow travel and genuine connection with the place and its people"
+  ],
+  "cons": [
+    "Remote location — reaching Karpathos requires either a flight from Athens (1 hour) or a long ferry journey; connections to other islands are less frequent than in the Cyclades",
+    "Can be very windy (hence the nickname 'Island of the Winds') — the meltemi can make some beaches uncomfortable and ferry crossings rough",
+    "Limited nightlife — Pigadia has bars and a few clubs but nothing resembling Mykonos or Ios; this is not a party island",
+    "Not ideal for very young travellers seeking non-stop entertainment — the island rewards those who embrace nature, hiking, and village life"
+  ],
+  "insider_tips": [
+    "Rent a car — Karpathos is an island of distances and the most beautiful spots (Olympos, Apella, Saria) require driving; public transport is limited",
+    "Visit Olympos early in the morning before the day-trippers arrive from the cruise ships — you will see the village waking up, women in traditional dress heading to the bakery, and the real rhythm of life",
+    "Try the local wines — the Athiri white and Mandilaria red are grown on the island's terraced slopes and pair perfectly with the local cuisine",
+    "Take a boat trip to Saria island — the uninhabited islet just north of Karpathos was the ancient capital and offers Byzantine ruins, remote beaches, and wild landscapes",
+    "Hike from Olympos to Diafani starting at sunrise — the trail follows the coast with breathtaking sea views and avoids the midday heat",
+    "Swim at Apella beach early (before 10am) or late (after 5pm) to have the famous pebble cove mostly to yourself before and after the day-trip crowds",
+    "Watch the sunset from Lefkos — the western coast village has the best sunset views on the island with several tavernas serving fresh seafood",
+    "For wind protection, choose beaches on the east coast (Apella, Kyra Panagia, Achata) which are sheltered from the prevailing meltemi",
+    "Best months are late May to June and September — July and August are busiest and windiest; the sea is warm enough from May through October"
+  ],
+  "mistakes_to_avoid": [
+    "Relying only on public transport — without a car you will miss Olympos, Apella, Saria, and most of the island's magic",
+    "Not packing for wind — even in summer, the meltemi can be strong; bring a windbreaker and secure beach gear",
+    "Skipping Olympos — the mountain village is the soul of Karpathos and skipping it means missing the island's unique cultural identity",
+    "Staying only in Pigadia — while convenient, the capital gives an incomplete picture; spend at least 2 nights in Olympos, Lefkos, or Arkasa",
+    "Thinking you can see everything in 2-3 days — Karpathos is larger than it looks; give it 5-7 days to explore properly",
+    "Not making dinner reservations in high season — the best tavernas in Olympos, Lefkos, and Finiki fill up quickly in July and August"
+  ],
+  "seasonality": {
+    "january": { "temp": 13, "price_multiplier": 0.5 },
+    "february": { "temp": 13, "price_multiplier": 0.5 },
+    "march": { "temp": 15, "price_multiplier": 0.6 },
+    "april": { "temp": 18, "price_multiplier": 0.7 },
+    "may": { "temp": 22, "price_multiplier": 0.85 },
+    "june": { "temp": 27, "price_multiplier": 1.1 },
+    "july": { "temp": 30, "price_multiplier": 1.3 },
+    "august": { "temp": 30, "price_multiplier": 1.4 },
+    "september": { "temp": 26, "price_multiplier": 1.1 },
+    "october": { "temp": 21, "price_multiplier": 0.8 },
+    "november": { "temp": 17, "price_multiplier": 0.6 },
+    "december": { "temp": 14, "price_multiplier": 0.5 }
+  },
+  "images": [
+    { "src": "/images/karpathos-cover.webp", "alt": { "en": "Traditional windmills above Olympos village on Karpathos island", "el": "Παραδοσιακοί ανεμόμυλοι πάνω από τον Όλυμπο στην Κάρπαθο" } }
+  ]
+}
