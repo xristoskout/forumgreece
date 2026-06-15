@@ -149,6 +149,24 @@ For your first visit to the Greek islands, aim for **May, June, or September**. 
     category: { en: "Travel Tips", el: "Ταξιδιωτικές Συμβουλές" },
     tags: ["seasonality", "islands", "weather", "planning", "travel-tips"],
     featured: true,
+    relatedDestinations: [
+      { slug: "santorini", label: { en: "Santorini", el: "Σαντορίνη" } },
+      { slug: "mykonos", label: { en: "Mykonos", el: "Μύκονος" } },
+      { slug: "crete", label: { en: "Crete", el: "Κρήτη" } },
+      { slug: "naxos", label: { en: "Naxos", el: "Νάξος" } },
+      { slug: "paros", label: { en: "Paros", el: "Πάρος" } },
+      { slug: "rhodes", label: { en: "Rhodes", el: "Ρόδος" } },
+    ],
+    relatedHotels: [
+      { slug: "santorini", label: { en: "Hotels in Santorini", el: "Ξενοδοχεία Σαντορίνης" } },
+      { slug: "mykonos", label: { en: "Hotels in Mykonos", el: "Ξενοδοχεία Μυκόνου" } },
+      { slug: "crete", label: { en: "Hotels in Crete", el: "Ξενοδοχεία Κρήτης" } },
+    ],
+    relatedTours: [
+      { slug: "crete-tours", label: { en: "Tours in Crete", el: "Εκδρομές στην Κρήτη" } },
+      { slug: "kefalonia-tours", label: { en: "Tours in Kefalonia", el: "Εκδρομές στην Κεφαλονιά" } },
+      { slug: "lesvos-tours", label: { en: "Tours in Lesvos", el: "Εκδρομές στη Λέσβο" } },
+    ],
     seo: {
       title: { en: "Best Time to Visit Greek Islands | GoGreeceNow", el: "Καλύτερη Εποχή για Ελληνικά Νησιά | GoGreeceNow" },
       description: { en: "Complete seasonal guide to visiting the Greek islands — weather, crowds, ferry schedules and insider tips for every month of the year.", el: "Πλήρης εποχιακός οδηγός για τα ελληνικά νησιά — καιρός, πλήθη, δρομολόγια πλοίων και συμβουλές για κάθε μήνα." },
@@ -288,6 +306,14 @@ Both islands are at their best from May to October. July and August are extremel
     category: { en: "Island Guides", el: "Οδηγοί Νησιών" },
     tags: ["santorini", "mykonos", "cyclades", "comparison", "island-guide"],
     featured: true,
+    relatedDestinations: [
+      { slug: "santorini", label: { en: "Santorini Guide", el: "Οδηγός Σαντορίνης" } },
+      { slug: "mykonos", label: { en: "Mykonos Guide", el: "Οδηγός Μυκόνου" } },
+    ],
+    relatedHotels: [
+      { slug: "santorini", label: { en: "Hotels in Santorini", el: "Ξενοδοχεία Σαντορίνης" } },
+      { slug: "mykonos", label: { en: "Hotels in Mykonos", el: "Ξενοδοχεία Μυκόνου" } },
+    ],
     seo: {
       title: { en: "Santorini vs Mykonos Comparison | GoGreeceNow", el: "Σαντορίνη ή Μύκονος | GoGreeceNow" },
       description: { en: "Detailed comparison of Santorini and Mykonos — vibes, costs, beaches, nightlife, and accommodation. Find your perfect Greek island match.", el: "Λεπτομερής σύγκριση Σαντορίνης και Μυκόνου — ατμόσφαιρα, κόστος, παραλίες, διασκέδαση και διαμονή. Βρες το τέλειο νησί για σένα." },
@@ -459,6 +485,18 @@ Roads on the northern coast are generally excellent. Mountain roads and the road
     category: { en: "Destination Guides", el: "Οδηγοί Προορισμών" },
     tags: ["crete", "crete-travel", "destination-guide", "beaches", "food", "hiking"],
     featured: true,
+    relatedDestinations: [
+      { slug: "crete", label: { en: "Crete Guide", el: "Οδηγός Κρήτης" } },
+      { slug: "chania", label: { en: "Chania Guide", el: "Οδηγός Χανίων" } },
+      { slug: "heraklion", label: { en: "Heraklion Guide", el: "Οδηγός Ηρακλείου" } },
+    ],
+    relatedHotels: [
+      { slug: "crete", label: { en: "Hotels in Crete", el: "Ξενοδοχεία Κρήτης" } },
+      { slug: "chania", label: { en: "Hotels in Chania", el: "Ξενοδοχεία Χανίων" } },
+    ],
+    relatedTours: [
+      { slug: "crete-tours", label: { en: "Tours in Crete", el: "Εκδρομές στην Κρήτη" } },
+    ],
     seo: {
       title: { en: "Ultimate Crete Travel Guide | GoGreeceNow", el: "Οδηγός για την Κρήτη | GoGreeceNow" },
       description: { en: "Complete guide to Crete — best beaches, regions, food, Samaria Gorge, and travel tips for Greece's largest island.", el: "Πλήρης οδηγός για την Κρήτη — καλύτερες παραλίες, περιοχές, φαγητό, φαράγγι Σαμαριάς και ταξιδιωτικές συμβουλές." },
@@ -625,6 +663,26 @@ Start your first island-hopping adventure in the Cyclades. The ferry network is 
     category: { en: "Travel Planning", el: "Ταξιδιωτικός Σχεδιασμός" },
     tags: ["island-hopping", "ferry", "planning", "cyclades", "ionian", "budget"],
     featured: true,
+    relatedDestinations: [
+      { slug: "santorini", label: { en: "Santorini", el: "Σαντορίνη" } },
+      { slug: "mykonos", label: { en: "Mykonos", el: "Μύκονος" } },
+      { slug: "naxos", label: { en: "Naxos", el: "Νάξος" } },
+      { slug: "paros", label: { en: "Paros", el: "Πάρος" } },
+      { slug: "milos", label: { en: "Milos", el: "Μήλος" } },
+      { slug: "corfu", label: { en: "Corfu", el: "Κέρκυρα" } },
+      { slug: "rhodes", label: { en: "Rhodes", el: "Ρόδος" } },
+    ],
+    relatedHotels: [
+      { slug: "santorini", label: { en: "Hotels in Santorini", el: "Ξενοδοχεία Σαντορίνης" } },
+      { slug: "mykonos", label: { en: "Hotels in Mykonos", el: "Ξενοδοχεία Μυκόνου" } },
+      { slug: "naxos", label: { en: "Hotels in Naxos", el: "Ξενοδοχεία Νάξου" } },
+      { slug: "paros", label: { en: "Hotels in Paros", el: "Ξενοδοχεία Πάρου" } },
+    ],
+    relatedTours: [
+      { slug: "crete-tours", label: { en: "Tours in Crete", el: "Εκδρομές στην Κρήτη" } },
+      { slug: "kefalonia-tours", label: { en: "Tours in Kefalonia", el: "Εκδρομές στην Κεφαλονιά" } },
+      { slug: "lesvos-tours", label: { en: "Tours in Lesvos", el: "Εκδρομές στη Λέσβο" } },
+    ],
     seo: {
       title: { en: "Greek Island Hopping Guide 2026 | GoGreeceNow", el: "Οδηγός Island Hopping 2026 | GoGreeceNow" },
       description: { en: "Complete guide to planning an island-hopping trip in Greece — routes, ferry tips, packing list, sample itineraries, and budget advice.", el: "Πλήρης οδηγός για island hopping στην Ελλάδα — δρομολόγια, συμβουλές για πλοία, λίστα βαλιτσών, δείγματα δρομολογίων και προϋπολογισμός." },
@@ -811,6 +869,15 @@ Pro tip: Look for tavernas displaying a sign saying "Ποιότητα" (Quality)
     category: { en: "Food & Drink", el: "Φαγητό & Ποτό" },
     tags: ["greek-food", "traditional", "moussaka", "souvlaki", "dining", "taverna"],
     featured: true,
+    relatedDestinations: [
+      { slug: "crete", label: { en: "Crete — Food Paradise", el: "Κρήτη — Γαστρονομικός Παράδεισος" } },
+      { slug: "santorini", label: { en: "Santorini Wine & Dine", el: "Σαντορίνη — Κρασί & Γεύση" } },
+      { slug: "thessaloniki", label: { en: "Thessaloniki Food Scene", el: "Θεσσαλονίκη — Γαστρονομία" } },
+    ],
+    relatedHotels: [
+      { slug: "santorini", label: { en: "Hotels in Santorini", el: "Ξενοδοχεία Σαντορίνης" } },
+      { slug: "crete", label: { en: "Hotels in Crete", el: "Ξενοδοχεία Κρήτης" } },
+    ],
     seo: {
       title: { en: "Traditional Greek Food Guide | GoGreeceNow", el: "Παραδοσιακά Ελληνικά Φαγητά | GoGreeceNow" },
       description: { en: "Essential Greek dishes every traveller should try — moussaka, souvlaki, tzatziki, baklava, and more. Includes tips on ordering and finding the best tavernas.", el: "Τα βασικά ελληνικά πιάτα που πρέπει να δοκιμάσει κάθε ταξιδιώτης — μουσακάς, σουβλάκι, τζατζίκι, μπακλαβάς και άλλα. Με συμβουλές για παραγγελία και εύρεση καλής ταβέρνας." },
@@ -968,6 +1035,19 @@ Try it for your next trip. You might be surprised how much time it saves — and
     category: { en: "Travel Planning", el: "Ταξιδιωτικός Σχεδιασμός" },
     tags: ["trip-planner", "ai-travel", "itinerary", "greece-planning", "travel-tips", "planning"],
     featured: true,
+    relatedDestinations: [
+      { slug: "athens", label: { en: "Athens Guide", el: "Οδηγός Αθήνας" } },
+      { slug: "santorini", label: { en: "Santorini Guide", el: "Οδηγός Σαντορίνης" } },
+      { slug: "crete", label: { en: "Crete Guide", el: "Οδηγός Κρήτης" } },
+    ],
+    relatedHotels: [
+      { slug: "athens", label: { en: "Hotels in Athens", el: "Ξενοδοχεία Αθήνας" } },
+      { slug: "santorini", label: { en: "Hotels in Santorini", el: "Ξενοδοχεία Σαντορίνης" } },
+      { slug: "crete", label: { en: "Hotels in Crete", el: "Ξενοδοχεία Κρήτης" } },
+    ],
+    relatedTours: [
+      { slug: "crete-tours", label: { en: "Tours in Crete", el: "Εκδρομές στην Κρήτη" } },
+    ],
     seo: {
       title: { en: "AI Trip Planner for Greece | GoGreeceNow", el: "AI Σχεδιαστής Ταξιδιού για Ελλάδα | GoGreeceNow" },
       description: { en: "Plan your perfect Greece itinerary in minutes with GoGreeceNow's AI Trip Planner. Personalised day-by-day plans based on your interests, budget, and travel style. Free and easy to use.", el: "Σχεδίασε το τέλειο πρόγραμμα για την Ελλάδα σε λεπτά με τον AI Σχεδιαστή του GoGreeceNow. Εξατομικευμένες ημερήσιες προτάσεις βάσει των ενδιαφερόντων, του προϋπολογισμού και του ταξιδιωτικού σου στυλ. Δωρεάν και εύκολο στη χρήση." },

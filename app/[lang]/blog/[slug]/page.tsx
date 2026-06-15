@@ -70,5 +70,43 @@ export default async function BlogDetailPage({ params }: Props) {
     notFound();
   }
 
-  return <BlogDetailClient post={post} lang={lang} />;
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title[lang],
+    description: post.excerpt[lang],
+    image: `${SITE_URL}${post.image}`,
+    datePublished: post.publishedDate,
+    dateModified: post.publishedDate,
+    author: {
+      "@type": "Organization",
+      name: post.author,
+      url: SITE_URL,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "GoGreeceNow",
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE_URL}/apple-icon.png`,
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${SITE_URL}${withLang(`/blog/${slug}`, lang)}`,
+    },
+    inLanguage: lang,
+    wordCount: post.body[lang].split(/\s+/).length,
+    ...(post.tags.length > 0 && { keywords: post.tags.join(", ") }),
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <BlogDetailClient post={post} lang={lang} />
+    </>
+  );
 }

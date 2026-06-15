@@ -132,6 +132,9 @@ export type BlogPost = {
   category: Localized;
   tags: string[];
   featured?: boolean;
+  relatedDestinations?: { slug: string; label: Localized }[];
+  relatedHotels?: { slug: string; label: Localized }[];
+  relatedTours?: { slug: string; label: Localized }[];
   seo?: {
     title: Localized;
     description: Localized;

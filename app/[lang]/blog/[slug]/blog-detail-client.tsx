@@ -131,6 +131,81 @@ export default function BlogDetailClient({ post, lang }: Props) {
             {lang === "en" ? "Explore destinations" : "Δες προορισμούς"} →
           </Link>
         </div>
+
+        {(post.relatedDestinations && post.relatedDestinations.length > 0) ||
+        (post.relatedHotels && post.relatedHotels.length > 0) ||
+        (post.relatedTours && post.relatedTours.length > 0) ? (
+          <div className="mt-16 pt-8 border-t border-slate-200">
+            <h2 className="text-2xl font-bold text-slate-900 mb-8">
+              {lang === "en" ? "Explore Related Content" : "Σχετικό Περιεχόμενο"}
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {post.relatedDestinations && post.relatedDestinations.length > 0 && (
+                <div>
+                  <h3 className="text-xs font-semibold uppercase tracking-widest text-indigo-600 mb-3 flex items-center gap-2">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    {lang === "en" ? "Destinations" : "Προορισμοί"}
+                  </h3>
+                  <ul className="space-y-2">
+                    {post.relatedDestinations.map((d) => (
+                      <li key={d.slug}>
+                        <Link
+                          href={withLang(`/destinations/${d.slug}`)}
+                          className="group flex items-center gap-2 rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-700 hover:border-indigo-200 hover:bg-indigo-50 hover:text-indigo-700 transition-all"
+                        >
+                          <span className="text-slate-400 group-hover:text-indigo-500 transition-colors">→</span>
+                          {d.label[lang]}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {post.relatedHotels && post.relatedHotels.length > 0 && (
+                <div>
+                  <h3 className="text-xs font-semibold uppercase tracking-widest text-indigo-600 mb-3 flex items-center gap-2">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
+                    {lang === "en" ? "Hotels" : "Ξενοδοχεία"}
+                  </h3>
+                  <ul className="space-y-2">
+                    {post.relatedHotels.map((h) => (
+                      <li key={h.slug}>
+                        <Link
+                          href={withLang(`/hotels/${h.slug}`)}
+                          className="group flex items-center gap-2 rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-700 hover:border-indigo-200 hover:bg-indigo-50 hover:text-indigo-700 transition-all"
+                        >
+                          <span className="text-slate-400 group-hover:text-indigo-500 transition-colors">→</span>
+                          {h.label[lang]}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {post.relatedTours && post.relatedTours.length > 0 && (
+                <div>
+                  <h3 className="text-xs font-semibold uppercase tracking-widest text-indigo-600 mb-3 flex items-center gap-2">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" /></svg>
+                    {lang === "en" ? "Tours" : "Εκδρομές"}
+                  </h3>
+                  <ul className="space-y-2">
+                    {post.relatedTours.map((t) => (
+                      <li key={t.slug}>
+                        <Link
+                          href={withLang(`/tours/${t.slug}`)}
+                          className="group flex items-center gap-2 rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-700 hover:border-indigo-200 hover:bg-indigo-50 hover:text-indigo-700 transition-all"
+                        >
+                          <span className="text-slate-400 group-hover:text-indigo-500 transition-colors">→</span>
+                          {t.label[lang]}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+          </div>
+        ) : null}
       </article>
     </main>
     </>
