@@ -1962,6 +1962,109 @@ export const travelInfoGuides: GuideCard[] = [
         a: { en: "Bring your personal climbing gear (shoes, harness, belay device, helmet). Quickdraws are available for rent at gear shops in Kalymnos and Leonidio if you prefer to travel light. Ropes can be purchased or rented locally. The Kalymnos guidebook is essential for navigating the crags and can be bought at Adventure shop in Masouri or online.", el: "Φέρε τον προσωπικό σου εξοπλισμό (παπούτσια, ζώνη, ασφαλιστικό, κράνος). Τα quickdraws διατίθενται προς ενοικίαση στα καταστήματα εξοπλισμού. Ο οδηγός της Καλύμνου είναι απαραίτητος και πωλείται στο κατάστημα Adventure στο Μασούρι." }
       }
     ]
+  },
+  {
+    slug: "best-boat-trips-in-skiathos",
+    title: {
+      en: "Best Boat Trips in Skiathos 2026 — Lalaria, Skopelos, Tsougrias & Hidden Beaches",
+      el: "Οι Καλύτερες Εκδρομές με Σκάφος στη Σκιάθο 2026 — Λαλάρια, Σκόπελος, Τσουγκριά & Κρυμμένες Παραλίες"
+    },
+    description: {
+      en: "The best boat trips in Skiathos: Lalaria Beach accessible only by sea, day cruises to Skopelos and Alonnisos, water taxis to Tsougrias, private boat hire around the island, and practical tips for choosing the right excursion.",
+      el: "Οι καλύτερες εκδρομές με σκάφος στη Σκιάθο: Λαλάρια που είναι προσβάσιμη μόνο από τη θάλασσα, ημερήσιες κρουαζιέρες σε Σκόπελο και Αλόννησο, θαλάσσια ταξί στην Τσουγκριά, ενοικίαση σκάφους γύρω από το νησί και πρακτικές συμβουλές."
+    },
+    image: "/images/skiathos.webp",
+    overview: {
+      en: "Skiathos has more than 60 beaches along its pine-covered coastline — and some of the very best are impossible to reach by road. Lalaria Beach, the island's most photographed landmark with its white pebbles and iconic sea arch, is only accessible by boat. The same applies to the secluded coves of the northern coast, the pristine island of Tsougrias, and the Marine Park waters around the neighbouring Sporades.\n\nA boat trip in Skiathos is not optional — it is how you unlock the island's finest coastline. This guide covers every option from round-the-island cruises and day trips to Skopelos, to water taxi transfers and self-drive boat hire, with honest advice for different budgets and travel styles.\n\nFor context on the island itself, read our full [Skiathos destination guide](/destinations/skiathos).",
+      el: "Η Σκιάθος έχει περισσότερες από 60 παραλίες κατά μήκος της πευκόφυτης ακτογραμμής της — και μερικές από τις καλύτερες είναι αδύνατο να προσεγγιστούν οδικώς. Η Λαλάρια, το πιο φωτογραφημένο σημείο του νησιού με τα λευκά βότσαλα και την εμβληματική θαλάσσια αψίδα, είναι προσβάσιμη μόνο με σκάφος. Το ίδιο ισχύει για τους απομονωμένους όρμους της βόρειας ακτής, το παρθένο νησί της Τσουγκριάς και τα νερά του Θαλάσσιου Πάρκου γύρω από τις γειτονικές Σποράδες.\n\nΜια εκδρομή με σκάφος στη Σκιάθο δεν είναι προαιρετική — είναι ο τρόπος να ανακαλύψετε την καλύτερη ακτογραμμή του νησιού. Αυτός ο οδηγός καλύπτει κάθε επιλογή από κρουαζιέρες γύρω από το νησί και ημερήσιες εκδρομές στη Σκόπελο, μέχρι θαλάσσια ταξί και ενοικίαση σκάφους.\n\nΓια το πλαίσιο του ίδιου του νησιού, διαβάστε τον πλήρη [οδηγό Σκιάθου](/destinations/skiathos)."
+    },
+    points: {
+      en: [
+        "Round-the-Island Cruise — Lalaria, Kastro and the northern coves in one day",
+        "Day Trip to Skopelos — Mamma Mia! beaches, Glossa harbour and the island's iconic churches",
+        "Tsougrias Island — white sand and turquoise water, 15 minutes by water taxi",
+        "Self-Drive Boat Hire — explore at your own pace with no license required",
+        "Sunset Cruise along the South Coast — Koukounaries from the sea at golden hour",
+        "Skiathos Town Water Taxis — the most convenient way to reach remote beaches"
+      ],
+      el: [
+        "Κρουαζιέρα γύρω από το νησί — Λαλάρια, Κάστρο και βόρειοι όρμοι σε μία μέρα",
+        "Ημερήσια εκδρομή στη Σκόπελο — παραλίες Mamma Mia!, λιμάνι Γλώσσας και εμβληματικές εκκλησίες",
+        "Νησί Τσουγκριά — λευκή άμμος και τιρκουάζ νερά, 15 λεπτά με θαλάσσιο ταξί",
+        "Ενοικίαση σκάφους — εξερευνήστε με τον δικό σας ρυθμό χωρίς δίπλωμα",
+        "Κρουαζιέρα ηλιοβασιλέματος στη νότια ακτή — η Κουκουναριές από τη θάλασσα",
+        "Θαλάσσια ταξί από τη Σκιάθο — ο πιο βολικός τρόπος για απομακρυσμένες παραλίες"
+      ]
+    },
+    sections: [
+      {
+        title: { en: "Round-the-Island Cruise — Lalaria, Kastro & the Northern Coves", el: "Κρουαζιέρα γύρω από το νησί — Λαλάρια, Κάστρο & Βόρειοι Όρμοι" },
+        content: {
+          en: "The classic Skiathos boat trip: a full-day cruise that circles the entire island, stopping at Lalaria Beach, the old capital of Kastro (perched dramatically on a sea cliff), and several northern coves that have no road access.\n\nLalaria is the undisputed star — a beach of smooth white pebbles with the famous sea arch that frames the Aegean blue perfectly. The boat stops here for swimming and photos. Further along, the northern coast reveals a series of small pebble coves with pine trees growing right down to the waterline.\n\nKastro was Skiathos's capital from the 14th century until 1830, built on a headland accessible only by a single narrow stairway. Seen from the sea, its ruins are both dramatic and poignant.\n\n**Practical tips:**\n\n- Full-day cruises depart from Skiathos Town old harbour around 9:30–10:00\n- Lunch is usually included — typically a simple BBQ on board or at a beach taverna\n- The northern coast can be rough in afternoon winds — morning stops are more comfortable\n- Bring snorkel gear — several stops offer excellent water clarity\n- Book at least a day in advance in July–August\n\n**Best for:** First-time visitors, families, photographers who want the iconic Lalaria shot",
+          el: "Η κλασική εκδρομή με σκάφος στη Σκιάθο: μια ολοήμερη κρουαζιέρα που κάνει τον γύρο ολόκληρου του νησιού, με στάσεις στη Λαλάρια, το παλιό Κάστρο και αρκετούς βόρειους όρμους χωρίς οδική πρόσβαση.\n\nΗ Λαλάρια είναι το αδιαμφισβήτητο αστέρι — μια παραλία με λεία λευκά βότσαλα και την περίφημη θαλάσσια αψίδα. Στα βόρεια, η ακτή αποκαλύπτει μια σειρά από μικρούς ορμίσκους με πεύκα που φτάνουν ως το νερό.\n\n**Πρακτικές συμβουλές:**\n\n- Αναχώρηση από το παλιό λιμάνι της Σκιάθου γύρω στις 9:30–10:00\n- Το μεσημεριανό συνήθως περιλαμβάνεται — BBQ στο σκάφος ή σε παραλιακή ταβέρνα\n- Η βόρεια ακτή μπορεί να έχει κύμα το απόγευμα — οι πρωινές στάσεις είναι πιο άνετες\n- Φέρτε μάσκα για κολύμπι — εξαιρετική ορατότητα σε αρκετές στάσεις\n- Κλείστε τουλάχιστον μία μέρα νωρίτερα τον Ιούλιο–Αύγουστο\n\n**Κατάλληλο για:** Πρωτοεμφανιζόμενους επισκέπτες, οικογένειες, φωτογράφους"
+        }
+      },
+      {
+        title: { en: "Day Trip to Skopelos — Mamma Mia! & Island Hopping", el: "Ημερήσια εκδρομή στη Σκόπελο — Mamma Mia! & Island Hopping" },
+        content: {
+          en: "Skopelos — the neighbouring Sporades island — is a popular day-trip destination from Skiathos. The ferry takes about 1 hour and several tour operators run full-day excursions combining boat time with shore exploration.\n\nSkopelos is greener and quieter than Skiathos, with a beautifully preserved old town, numerous Byzantine churches, and the beaches that served as filming locations for Mamma Mia! — most famously Kastani Beach and the Agios Ioannis Chapel perched on its rocky islet.\n\nMost day trips include a swim stop at Kastani, time to explore Skopelos Town (Chora), and lunch at a traditional taverna. Some extended tours also cross to Alonnisos, the third Sporades island, known for its Marine Park and the Old Village (Chorio) abandoned after the 1965 earthquake.\n\n**Practical tips:**\n\n- Standard day trips run 9:00–17:00; check the schedule as it varies by season\n- The Aegean Dream and similar operators offer the most reliable Skopelos excursions\n- Wear comfortable shoes for the steep climb through Skopelos Chora's cobbled lanes\n- The Agios Ioannis chapel climb is exposed and can be hot — go early or late\n- Bring a light jacket for the return crossing — the Meltemi wind can pick up in the afternoon\n\n**Best for:** Mamma Mia! fans, island hoppers, anyone wanting a change of scenery from Skiathos",
+          el: "Η Σκόπελος — η γειτονική Σποράδα — είναι ένας δημοφιλής προορισμός ημερήσιας εκδρομής από τη Σκιάθο. Το πλοίο κάνει περίπου 1 ώρα και αρκετοί τουριστικοί πράκτορες οργανώνουν ολοήμερες εκδρομές.\n\nΗ Σκόπελος είναι πιο πράσινη και πιο ήσυχη από τη Σκιάθο, με όμορφα διατηρημένη παλιά πόλη, πολλές βυζαντινές εκκλησίες και τις παραλίες που χρησίμευσαν ως τοποθεσίες γυρίσματος για το Mamma Mia! — κυρίως το Καστάνι και το εκκλησάκι του Αγίου Ιωάννη στον βράχο.\n\n**Πρακτικές συμβουλές:**\n\n- Οι εκδρομές συνήθως διαρκούν 9:00–17:00\n- Φορέστε άνετα παπούτσια για τα πλακόστρωτα σοκάκια της Χώρας\n- Η ανάβαση στο εκκλησάκι του Αγίου Ιωάννη είναι εκτεθειμένη στον ήλιο\n- Φέρτε ελαφρύ μπουφάν για την επιστροφή — ο Meltemi μπορεί να σηκωθεί το απόγευμα\n\n**Κατάλληλο για:** Θαυμαστές του Mamma Mia!, island hoppers"
+        }
+      },
+      {
+        title: { en: "Tsougrias Island — a 15-Minute Paradise Escape", el: "Τσουγκριά — 15 λεπτά από τη Σκιάθο" },
+        content: {
+          en: "Tsougrias is a small, uninhabited island visible from Skiathos Town's harbour. Its main beach is a strip of soft white sand with water so clear it looks like a swimming pool. A water taxi from the old harbour gets you there in 15 minutes.\n\nDespite being so close, Tsougrias feels remote. There is a single canteen serving drinks and snacks in summer, and basic sunbed hire, but otherwise the island is undeveloped. The surrounding sea is excellent for snorkelling, with rocky outcrops on the eastern side attracting more fish.\n\n**Practical tips:**\n\n- Water taxis run frequently from Skiathos Town old harbour (€10–15 round trip)\n- The first morning boat arrives around 9:00 — go early to claim a good spot\n- Bring food and plenty of water — the canteen is basic and can run out of supplies\n- Tsougrias has no shade — a beach umbrella is essential\n- The island gets busy from 11:00–15:00; the late afternoon return is more peaceful\n- Some operators also offer a combined trip to Tsougria and the neighbouring islet of Arkos\n\n**Best for:** Snorkellers, couples, families with older children, anyone wanting a quick island escape",
+          el: "Η Τσουγκριά είναι ένα μικρό, ακατοίκητο νησί ορατό από το λιμάνι της Σκιάθου. Η κύρια παραλία της είναι μια λωρίδα μαλακής λευκής άμμου με πεντακάθαρα νερά. Ένα θαλάσσιο ταξί από το παλιό λιμάνι σας πάει εκεί σε 15 λεπτά.\n\nΠαρά την κοντινή απόσταση, η Τσουγκριά αισθάνεται απομακρυσμένη. Υπάρχει μόνο ένα κυλικείο το καλοκαίρι και βασικές ξαπλώστρες, αλλά κατά τα άλλα το νησί είναι ανέγγιχτο.\n\n**Πρακτικές συμβουλές:**\n\n- Θαλάσσια ταξί από το παλιό λιμάνι (€10–15 μετ' επιστροφής)\n- Το πρώτο πρωινό σκάφος φτάνει γύρω στις 9:00 — πηγαίνετε νωρίς\n- Φέρτε φαγητό και άφθονο νερό\n- Η Τσουγκριά δεν έχει σκιά — η ομπρέλα είναι απαραίτητη\n- Το νησί έχει περισσότερο κόσμο 11:00–15:00\n\n**Κατάλληλο για:** Λάτρεις της κολύμβησης, ζευγάρια, οικογένειες"
+        }
+      },
+      {
+        title: { en: "Self-Drive Boat Hire — Explore at Your Own Pace", el: "Ενοικίαση σκάφους — εξερευνήστε με τον ρυθμό σας" },
+        content: {
+          en: "Several rental operators at Skiathos Town old harbour offer small motorboats (15–30hp) that require no license. This is the most flexible way to explore the island's coastline — you set your own itinerary, choose your own swim stops, and avoid the crowds of the organised cruises.\n\nTypical routes include the south coast from Skiathos Town to Koukounaries, stopping at smaller beaches like Agia Paraskevi, Vromolimnos, and Mandraki along the way. More adventurous renters head north along the east coast past Lalaria (accessible for independent boats) to the secluded coves beyond.\n\n**Practical tips:**\n\n- Half-day hire starts around €60–100, full-day €90–150 depending on boat size\n- Fuel is usually charged separately — expect €20–40 for a full day of exploring\n- No license is needed for boats under 30hp, but you do need to be over 18\n- Staff provide a quick orientation and a map with recommended routes\n- The area between Skiathos and Tsougrias gets busy with water traffic — stay alert\n- Avoid crossing to Skopelos with a small rental boat — the open sea crossing is longer than it looks\n- Book one day ahead in peak season\n\n**Best for:** Independent travellers, couples, small groups who want flexibility",
+          el: "Αρκετά γραφεία ενοικίασης στο παλιό λιμάνι της Σκιάθου προσφέρουν μικρά μηχανοκίνητα σκάφη (15–30hp) χωρίς δίπλωμα. Είναι ο πιο ευέλικτος τρόπος να εξερευνήσετε την ακτογραμμή.\n\nΣυνήθεις διαδρομές περιλαμβάνουν τη νότια ακτή από τη Σκιάθο έως την Κουκουναριές, με στάσεις σε μικρότερες παραλίες όπως η Αγία Παρασκευή, το Βρωμόλιμνο και το Μαντράκι.\n\n**Πρακτικές συμβουλές:**\n\n- Ενοικίαση μισής μέρας από €60–100, ολόκληρης από €90–150\n- Τα καύσιμα χρεώνονται ξεχωριστά (€20–40 για ολόκληρη μέρα)\n- Δεν χρειάζεται δίπλωμα για σκάφη κάτω των 30hp\n- Αποφύγετε να πάτε στη Σκόπελο με μικρό σκάφος — η απόσταση είναι μεγαλύτερη απ' ό,τι φαίνεται\n\n**Κατάλληλο για:** Ανεξάρτητους ταξιδιώτες, ζευγάρια, μικρές παρέες"
+        }
+      },
+      {
+        title: { en: "Sunset Cruise & Evening Options", el: "Κρουαζιέρα ηλιοβασιλέματος & βραδινές επιλογές" },
+        content: {
+          en: "The south coast of Skiathos faces west, making it ideal for sunset cruises. The most popular route follows the shoreline from Skiathos Town past Agia Paraskevi and Vromolimnos towards Koukounaries, with the pine-covered hills of the island silhouetted against the setting sun.\n\nMost sunset cruises are small-group experiences (8–12 people) lasting 2–3 hours, including drinks and light snacks. Some operators offer dinner versions with a stop at a beach taverna.\n\n**Practical tips:**\n\n- Sunset cruises typically depart 1 hour before sunset (around 18:00–19:30 depending on season)\n- Even in summer, the wind drops at sunset — the sea becomes glassy and calm\n- Bring a layer — it cools noticeably once the sun is down\n- These are the most romantic option on the island — book ahead for special occasions\n\n**Best for:** Couples, honeymooners, romantic evenings",
+          el: "Η νότια ακτή της Σκιάθου βλέπει δυτικά, καθιστώντας την ιδανική για κρουαζιέρες ηλιοβασιλέματος. Η πιο δημοφιλής διαδρομή ακολουθεί την ακτογραμμή από τη Σκιάθο προς την Κουκουναριές.\n\nΟι περισσότερες κρουαζιέρες ηλιοβασιλέματος είναι για μικρές ομάδες (8–12 άτομα) και διαρκούν 2–3 ώρες.\n\n**Πρακτικές συμβουλές:**\n\n- Αναχώρηση 1 ώρα πριν τη δύση (18:00–19:30 ανάλογα την εποχή)\n- Το καλοκαίρι, ο άνεμος πέφτει στο ηλιοβασίλεμα — η θάλασσα γίνεται γαλήνια\n- Φέρτε ένα στρώμα — κρυώνει μετά τη δύση\n- Κλείστε εκ των προτέρων για ειδικές περιστάσεις\n\n**Κατάλληλο για:** Ζευγάρια, νεόνυμφους, ρομαντικές βραδιές"
+        }
+      },
+      {
+        title: { en: "Skiathos Town Water Taxis — Beach Hopping Made Easy", el: "Θαλάσσια ταξί Σκιάθου — εύκολη μετακίνηση" },
+        content: {
+          en: "Skiathos operates a fleet of water taxis that function like a bus service along the south coast. This is the most convenient way to visit multiple beaches in a single day without renting a car or a boat. Official stops include Skiathos Town, Agia Paraskevi, Vromolimnos, Troulos, and Koukounaries.\n\nWater taxis are larger than private hire boats and run on a fixed schedule (every 30–45 minutes in peak season). They are a legitimate public transport option, not a tour.\n\n**Practical tips:**\n\n- Tickets are sold at the kiosk on Skiathos Town old harbour\n- A single journey costs €3–6 depending on distance; a day pass offers better value\n- The last return boat from Koukounaries is around 19:00–20:00 depending on season\n- Water taxis can get crowded — arrive at the stop 10 minutes early\n- Combine a one-way water taxi with a walk back along the coastal path for variety\n\n**Best for:** Budget travellers, families, anyone wanting flexibility without renting a vehicle",
+          el: "Η Σκιάθος διαθέτει έναν στόλο θαλάσσιων ταξί που λειτουργούν σαν λεωφορειακή γραμμή κατά μήκος της νότιας ακτής. Είναι ο πιο βολικός τρόπος για να επισκεφθείτε πολλές παραλίες σε μία μέρα χωρίς να νοικιάσετε αυτοκίνητο ή σκάφος.\n\n**Πρακτικές συμβουλές:**\n\n- Τα εισιτήρια πωλούνται στο περίπτερο στο παλιό λιμάνι\n- Κάθε διαδρομή κοστίζει €3–6 ανάλογα την απόσταση\n- Το τελευταίο σκάφος επιστροφής από Κουκουναριές είναι γύρω στις 19:00–20:00\n- Συνδυάστε μια διαδρομή με θαλάσσιο ταξί και επιστροφή με τα πόδια από το παραλιακό μονοπάτι\n\n**Κατάλληλο για:** Ταξιδιώτες με προϋπολογισμό, οικογένειες"
+        }
+      },
+      {
+        title: { en: "What to Skip", el: "Τι να αποφύγετε" },
+        content: {
+          en: "Large capacity party boats (50+ passengers): These operate from Skiathos Town and focus on music, drinks and crowds rather than the coastline itself. The northern coves feel very different with 60 people swimming at once.\n\nOverpriced private charters from harbour touts: A standard water taxi or self-drive hire gives you more freedom at a fraction of the price.\n\nAttempting to drive a small rental boat to Skopelos: The open-sea crossing between the islands is longer and more exposed than it appears. Stick to organised day trips for inter-island travel.",
+          el: "Μεγάλα σκάφη πάρτι (50+ άτομα): Επικεντρώνονται στη μουσική και τα ποτά παρά στην ακτογραμμή. Οι βόρειοι όρμοι είναι διαφορετικοί με 60 άτομα να κολυμπούν ταυτόχρονα.\n\nΥπερτιμημένα ιδιωτικά σκάφη: Ένα απλό θαλάσσιο ταξί ή ενοικίαση σκάφους σας δίνει μεγαλύτερη ελευθερία.\n\nΑπόπειρα οδήγησης μικρού σκάφους προς Σκόπελο: Η απόσταση είναι μεγαλύτερη και πιο εκτεθειμένη απ' ό,τι φαίνεται."
+        }
+      }
+    ],
+    faq: [
+      {
+        q: { en: "Is Lalaria Beach accessible by road?", el: "Είναι η Λαλάρια προσβάσιμη οδικώς;" },
+        a: { en: "No. Lalaria is only accessible by boat. There is no road connecting it to the rest of the island. All boat trips around Skiathos include a swim stop here.", el: "Όχι. Η Λαλάρια είναι προσβάσιμη μόνο με σκάφος. Δεν υπάρχει δρόμος που να τη συνδέει με την υπόλοιπη Σκιάθο." }
+      },
+      {
+        q: { en: "Do I need a license to rent a boat in Skiathos?", el: "Χρειάζομαι δίπλωμα για ενοικίαση σκάφους στη Σκιάθο;" },
+        a: { en: "No. Small motorboats under 30hp can be rented without a license. You must be over 18 and the rental company will provide a quick orientation before departure.", el: "Όχι. Μικρά μηχανοκίνητα σκάφη κάτω των 30hp ενοικιάζονται χωρίς δίπλωμα. Πρέπει να είστε άνω των 18." }
+      },
+      {
+        q: { en: "How much does a boat trip in Skiathos cost?", el: "Πόσο κοστίζει μια εκδρομή με σκάφος στη Σκιάθο;" },
+        a: { en: "Round-the-island cruises: €40–60 per person. Water taxis: €3–6 per journey. Self-drive boat hire: €60–150 depending on duration. Day trips to Skopelos: €50–70 per person including lunch.", el: "Κρουαζιέρες γύρω από το νησί: €40–60/άτομο. Θαλάσσια ταξί: €3–6/διαδρομή. Ενοικίαση σκάφους: €60–150. Εκδρομές στη Σκόπελο: €50–70/άτομο με γεύμα." }
+      },
+      {
+        q: { en: "Which is better — organised cruise or self-drive boat?", el: "Τι είναι καλύτερο — οργανωμένη κρουαζιέρα ή ενοικίαση σκάφους;" },
+        a: { en: "Organised cruises are better for first-time visitors who want Lalaria and Kastro without navigation concerns. Self-drive hire suits independent travellers who want flexibility and their own itinerary. Water taxis are the most budget-friendly option for beach hopping.", el: "Οι οργανωμένες κρουαζιέρες είναι καλύτερες για όσους θέλουν Λαλάρια και Κάστρο χωρίς άγχος. Η ενοικίαση σκάφους ταιριάζει σε ανεξάρτητους ταξιδιώτες. Τα θαλάσσια ταξί είναι η πιο οικονομική επιλογή." }
+      }
+    ]
   }
 ];
 
