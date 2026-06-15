@@ -4,11 +4,19 @@ import { SITE_URL } from '../../../lib/content';
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const { lang } = await params;
 
+  const title = lang === "el"
+    ? "Επικοινωνήστε με το GoGreeceNow — Διαφήμιση & Ταξιδιωτικές Ερωτήσεις"
+    : "Contact GoGreeceNow — Get in Touch for Promotion & Travel Questions";
+
+  const description = lang === "el"
+    ? "Επικοινωνήστε με το GoGreeceNow για διαφημιστικές ευκαιρίες, συνεργασίες ή οποιαδήποτε ερώτηση σχετικά με ταξίδια στην Ελλάδα."
+    : "Reach out to GoGreeceNow for promotion inquiries, partnership opportunities, or any questions about traveling to Greece.";
+
   return {
     title: {
-      absolute: 'Contact GoGreeceNow — Get in Touch for Promotion & Travel Questions',
+      absolute: title,
     },
-    description: 'Reach out to GoGreeceNow for promotion inquiries, partnership opportunities, or any questions about traveling to Greece.',
+    description,
     alternates: {
       canonical: `${SITE_URL}/${lang}/contact`,
       languages: {
@@ -18,14 +26,14 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
       },
     },
     openGraph: {
-      title: 'Contact GoGreeceNow',
-      description: 'Get in touch for business promotion, partnerships, or travel inquiries.',
+      title,
+      description,
       type: 'website',
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'Contact GoGreeceNow',
-      description: 'Get in touch for business promotion, partnerships, or travel inquiries.',
+      title,
+      description,
       images: ['/images/hero-greece.webp'],
     },
   };

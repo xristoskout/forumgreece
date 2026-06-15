@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Montserrat, Noto_Sans, Playfair_Display } from "next/font/google";
+import { headers } from "next/headers";
 
 import "./globals.css";
 import LangManager from "@/components/lang-manager";
@@ -73,14 +74,18 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const headersList = await headers();
+  const pathname = headersList.get("x-pathname") ?? headersList.get("next-url") ?? "";
+  const lang = pathname.startsWith("/el") ? "el" : "en";
+
   return (
     <html
-      lang="en"
+      lang={lang}
       className={`${geistSans.variable} ${notoGreek.variable} ${playfair.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-[#f4f7fb] text-slate-900 relative selection:bg-purple-500/30">

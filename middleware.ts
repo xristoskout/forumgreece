@@ -10,15 +10,19 @@ export function middleware(request: NextRequest) {
   if (match) {
     const elPath = match[1] || '/';
     if (KEPT_EL_ROUTES.includes(elPath)) {
-      return NextResponse.next();
+      const res = NextResponse.next();
+      res.headers.set('x-pathname', pathname);
+      return res;
     }
     const encoded = new URL(`/en${elPath}`, request.url);
     return NextResponse.redirect(encoded, 308);
   }
 
-  return NextResponse.next();
+  const res = NextResponse.next();
+  res.headers.set('x-pathname', pathname);
+  return res;
 }
 
 export const config = {
-  matcher: '/el/:path*',
+  matcher: ['/((?!_next/static|_next/image|images/|favicon.ico).*)'],
 };
