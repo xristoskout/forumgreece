@@ -79,7 +79,7 @@ export default async function GreeceFoodAndDrinkCollectionPage({
     notFound();
   }
 
-  const featuredFood = food.slice(0, 6);
+  const featuredFood = food;
 
   return (
     <>

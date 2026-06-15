@@ -93,6 +93,83 @@ export default function TravelInfoGuideClient({ lang, slug, item }: TravelInfoGu
     return elements.length > 0 ? elements : text;
   };
 
+  const isTableBlock = (text: string) => {
+    const lines = text.trim().split("\n").filter(Boolean);
+    return lines.length >= 2 && lines.every((l) => l.trimStart().startsWith("|"));
+  };
+
+  const parseTable = (text: string) => {
+    const lines = text.trim().split("\n").filter((l) => l.trim());
+    let headerRow: string[] = [];
+    let rows: string[][] = [];
+    let startIdx = 0;
+
+    if (lines.length >= 2 && /^\|[-| :]+\|?$/.test(lines[1].trim())) {
+      headerRow = lines[0].split("|").map((c) => c.trim()).filter(Boolean);
+      startIdx = 2;
+    } else {
+      headerRow = lines[0].split("|").map((c) => c.trim()).filter(Boolean);
+      startIdx = 1;
+    }
+
+    for (let i = startIdx; i < lines.length; i++) {
+      const cells = lines[i].split("|").map((c) => c.trim()).filter(Boolean);
+      if (cells.length > 0) rows.push(cells);
+    }
+    return { headers: headerRow, rows };
+  };
+
+  const renderTable = (text: string, key: string | number) => {
+    const { headers, rows } = parseTable(text);
+    if (rows.length === 0) return null;
+    const colCount = Math.max(headers.length, ...rows.map((r) => r.length));
+    return (
+      <div key={key} className="overflow-x-auto rounded-xl border border-slate-200 bg-white shadow-sm mb-4">
+        <table className="w-full text-sm">
+          {headers.length > 0 && (
+            <thead>
+              <tr className="border-b border-slate-200 bg-slate-100/80">
+                {headers.map((h, i) => (
+                  <th key={i} className="p-3 text-left text-xs font-bold uppercase tracking-widest text-slate-600">
+                    {h}
+                  </th>
+                ))}
+                {headers.length < colCount && Array.from({ length: colCount - headers.length }).map((_, i) => (
+                  <th key={`empty-${i}`} className="p-3" />
+                ))}
+              </tr>
+            </thead>
+          )}
+          <tbody>
+            {rows.map((row, ri) => (
+              <tr key={ri} className="border-b border-slate-100 last:border-0 hover:bg-slate-50/50">
+                {Array.from({ length: colCount }).map((_, ci) => (
+                  <td key={ci} className="p-3 text-slate-700">
+                    {renderTextWithLinks(row[ci] || "")}
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    );
+  };
+
+  const renderContent = (text: string) => {
+    const blocks = text.split("\n\n");
+    return blocks.map((block, bi) => {
+      if (isTableBlock(block)) {
+        return renderTable(block, bi);
+      }
+      return (
+        <p key={bi} className="text-lg leading-relaxed text-slate-600 mb-4 last:mb-0">
+          {renderTextWithLinks(block)}
+        </p>
+      );
+    });
+  };
+
   const renderBusinesses = () => {
     if (businesses.length === 0) return null;
     return (
@@ -232,9 +309,7 @@ export default function TravelInfoGuideClient({ lang, slug, item }: TravelInfoGu
                   </h3>
                 </div>
                 <div className="pl-16">
-                  <p className="text-lg leading-relaxed text-slate-600">
-                    {renderTextWithLinks(section.content[lang])}
-                  </p>
+                  {renderContent(section.content[lang])}
                 </div>
               </div>
             ))}

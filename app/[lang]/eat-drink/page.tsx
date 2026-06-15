@@ -88,7 +88,7 @@ export default async function EatDrinkPage({ params }: Props) {
     return null;
   }
 
-  const featuredFood = food.slice(0, 6);
+  const featuredFood = food;
 
   return (
     <>
