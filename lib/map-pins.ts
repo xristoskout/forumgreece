@@ -311,4 +311,11 @@ export const MAP_PINS: Pin[] = [
     label: { en: "Kalymnos", el: "Κάλυμνος" },
     tagline: { en: "World capital of rock climbing", el: "Παγκόσμια πρωτεύουσα αναρρίχησης" },
   },
+  {
+    id: "karpathos",
+    x: 78.4, y: 77.8,
+    href: "/destinations/karpathos",
+    label: { en: "Karpathos", el: "Κάρπαθος" },
+    tagline: { en: "Authentic island of the winds", el: "Αυθεντικό νησί των ανέμων" },
+  },
 ];

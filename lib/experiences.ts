@@ -860,6 +860,144 @@ export const experienceLandings: ExperienceLanding[] = [
     },
     image: "/images/santorini.webp",
   },
+  {
+    slug: "rhodes-tours",
+    seo: {
+      title: {
+        en: "Rhodes Tours & Experiences | Medieval City, Boat Trips & Lindos Day Tours | GoGreeceNow",
+        el: "Εκδρομές & Εμπειρίες στη Ρόδο | Μεσαιωνική Πόλη, Boat Trips & Λίνδος | GoGreeceNow",
+      },
+      description: {
+        en: "Explore the best Rhodes tours and experiences, from guided walks inside the medieval Old Town and Lindos day trips to catamaran boat tours, jeep safaris, and sunset excursions along the coast.",
+        el: "Ανακαλύψτε τις καλύτερες εκδρομές στη Ρόδο: ξεναγήσεις στη μεσαιωνική πόλη, ημερήσιες εκδρομές στη Λίνδο, καταμαράν, jeep safaris και ηλιοβασιλέματα στην ακτή.",
+      },
+    },
+    title: {
+      en: "Rhodes Tours & Experiences",
+      el: "Εκδρομές & Εμπειρίες στη Ρόδο",
+    },
+    description: {
+      en: "Rhodes is where a UNESCO medieval city, ancient ruins at Lindos, and some of the clearest Aegean water all exist on the same island.",
+      el: "Η Ρόδος είναι όπου μια μεσαιωνική πόλη της UNESCO, αρχαία ερείπια στη Λίνδο και μερικά από τα πιο καθαρά νερά του Αιγαίου συνυπάρχουν στο ίδιο νησί.",
+    },
+    overview: {
+      en: "Discover Rhodes beyond the beach. Rhodes is the kind of island that surprises people, because most visitors arrive expecting sun and sea and then spend three days completely absorbed in a medieval city they didn't expect to care about. The Old Town of Rhodes is a UNESCO World Heritage Site and one of the genuinely unmissable places in Greece — not because a guide says so, but because walking its cobblestone streets inside fortified walls at night, with almost no cars and very few signs, actually feels like a different century.\n\nBut Rhodes is also Lindos, with its ancient acropolis perched above a whitewashed village and a sheltered bay of turquoise water below. It is boat trips to sea caves and deserted coves. It is a green, hilly interior where Byzantine churches sit in pine forests and small villages make their own wine. And it has one of the longest tourist seasons in Greece, meaning you can visit from April to late October and still find good conditions for everything.\n\nRhodes tours help you get more from the island. A walking tour of the Old Town turns confusing medieval lanes into a real story about the Knights of St John, Ottoman rule, and the Italian period. A Lindos day trip combines ancient history with beach time in one manageable excursion. A boat tour takes you to the places no road reaches. And a jeep safari covers the interior in a way that would take days to replicate on your own.",
+      el: "Ανακαλύψτε τη Ρόδο πέρα από την παραλία. Οι περισσότεροι επισκέπτες φτάνουν στο νησί περιμένοντας ήλιο και θάλασσα και καταλήγουν να περάσουν τρεις μέρες απορροφημένοι σε μια μεσαιωνική πόλη που δεν περίμεναν να τους συναρπάσει. Η Παλιά Πόλη της Ρόδου είναι Μνημείο Παγκόσμιας Κληρονομιάς της UNESCO — το να περπατάς στα λιθόστρωτα σοκάκια της μέσα στα οχυρά τείχη το βράδυ μοιάζει πραγματικά με άλλο αιώνα.\n\nΑλλά η Ρόδος είναι επίσης η Λίνδος, με την αρχαία ακρόπολη πάνω από ένα γραφικό χωριό και μια προστατευμένη τιρκουάζ παραλία. Είναι βαρκάδες σε θαλάσσιες σπηλιές, είναι ένα πράσινο εσωτερικό με βυζαντινές εκκλησίες και μικρά χωριά που παράγουν το δικό τους κρασί. Η τουριστική σεζόν είναι από τις μεγαλύτερες στην Ελλάδα, από Απρίλιο έως Οκτώβριο.\n\nΟι εκδρομές στη Ρόδο σε βοηθούν να δεις περισσότερα. Μια ξενάγηση στην Παλιά Πόλη μετατρέπει τα στενά δρομάκια σε μια ζωντανή ιστορία. Μια εκδρομή στη Λίνδο συνδυάζει αρχαία ιστορία με θάλασσα. Μια βαρκάδα σε παίρνει σε μέρη που δεν φτάνει δρόμος.",
+    },
+    recommendedIntro: {
+      en: "These are selected local experiences and featured options we currently recommend in Rhodes. As GoGreeceNow continues to grow, more handpicked activities and local partners will be added here.",
+      el: "Αυτές είναι επιλεγμένες τοπικές εμπειρίες που προτείνουμε στη Ρόδο. Καθώς το GoGreeceNow μεγαλώνει, θα προστίθενται εδώ περισσότερες προσεγμένες δραστηριότητες και τοπικοί συνεργάτες.",
+    },
+    moreToursIntro: {
+      en: "Looking for more options? Here you can explore additional tours and activities in Rhodes, including popular excursions, boat tours, and other bookable ideas for your stay.",
+      el: "Αναζητάτε περισσότερες επιλογές; Εδώ μπορείτε να εξερευνήσετε επιπλέον εκδρομές και δραστηριότητες στη Ρόδο, όπως δημοφιλείς εξορμήσεις, θαλάσσιες εμπειρίες και άλλες ιδέες.",
+    },
+    whatToBook: {
+      title: { en: "Best Things to Do in Rhodes", el: "Τι να Κάνετε στη Ρόδο" },
+      sections: [
+        {
+          title: { en: "Medieval Old Town guided walks", el: "Ξεναγήσεις στη Μεσαιωνική Πόλη" },
+          content: { en: "The Old Town of Rhodes is one of the most complete medieval walled cities in the world, and a guided tour makes an enormous difference. On your own, it's a beautiful maze. With a guide who knows the Street of Knights, the Palace of the Grand Master, the Ottoman mosques, the Jewish Quarter, and the logic behind the city's 2,000-year layering, it becomes a genuinely compelling place. Morning walks avoid the afternoon heat and the worst of the cruise ship crowds.", el: "Η Παλιά Πόλη της Ρόδου είναι μια από τις πιο ολοκληρωμένες μεσαιωνικές οχυρωμένες πόλεις στον κόσμο. Μόνος σου είναι ένας όμορφος λαβύρινθος. Με ξεναγό που γνωρίζει την Οδό των Ιπποτών, το Παλάτι του Μεγάλου Μαγίστρου, τα οθωμανικά τζαμιά και την εβραϊκή συνοικία, γίνεται ένας πραγματικά συναρπαστικός χώρος." },
+        },
+        {
+          title: { en: "Lindos day trips", el: "Ημερήσιες εκδρομές στη Λίνδο" },
+          content: { en: "Lindos is 55 km south of Rhodes Town and worth the trip for two separate reasons: the ancient acropolis with its Doric temple of Athena Lindia and panoramic Aegean views, and the village and beach below, which on a good day is one of the best-looking places in the Dodecanese. Organised day tours handle transport and include entrance fees; independent travellers can take the public bus, but guided tours give you the historical context that makes the ruins make sense.", el: "Η Λίνδος είναι 55 χλμ νότια της πόλης της Ρόδου και αξίζει το ταξίδι για δύο λόγους: την αρχαία ακρόπολη με τον δωρικό ναό της Αθηνάς Λινδίας και τη μοναδική παραλία από κάτω. Οι οργανωμένες εκδρομές περιλαμβάνουν μεταφορά και εισιτήρια." },
+        },
+        {
+          title: { en: "Catamaran and boat tours", el: "Καταμαράν & θαλάσσιες εκδρομές" },
+          content: { en: "Rhodes has an excellent range of boat tours, from small group speedboat excursions to full-day catamarans with swimming stops at sea caves, remote beaches, and occasionally the Turkish coast near Marmaris. Most boat tours include snorkelling equipment, lunch or snacks, and open bar.", el: "Η Ρόδος έχει εξαιρετική γκάμα θαλάσσιων εκδρομών, από ταχύπλοα μικρών ομάδων μέχρι ολοήμερα καταμαράν. Τα περισσότερα περιλαμβάνουν εξοπλισμό snorkelling, γεύμα και open bar." },
+        },
+        {
+          title: { en: "Jeep safari and village tours", el: "Jeep Safari & εκδρομές σε χωριά" },
+          content: { el: "Το εσωτερικό της Ρόδου συχνά παραβλέπεται, αλλά ακριβώς γι' αυτό αξίζει να το εξερευνήσετε. Λόφοι με πεύκα, μοναστήρια, βυζαντινές τοιχογραφίες, το χωριό Έμπωνας για τοπική οινογνωσία. Μια ημερήσια εκδρομή με jeep καλύπτει πολύ περισσότερο έδαφος από ένα ενοικιαζόμενο αυτοκίνητο.", en: "The interior of Rhodes is often overlooked, which is exactly why it is worth exploring. Pine-covered hills, small monasteries, Byzantine frescoes, and Embonas village for local wine tasting. A half-day or full-day jeep safari covers far more ground than a rented car and usually includes stops that don't appear on any standard tourist map." },
+        },
+        {
+          title: { en: "Sunset and evening tours", el: "Ηλιοβασίλεμα & βραδινές εκδρομές" },
+          content: { en: "Rhodes Town has outstanding evening atmosphere, particularly inside the Old Town where restaurants, bars, and small squares fill up after dark. Organised sunset excursions by boat give you the best views of the island's coastline and fortress walls at the end of the day — notably around the Mandraki Harbour area and the northern cape where the Colossus of Rhodes once stood.", el: "Η πόλη της Ρόδου έχει υπέροχη βραδινή ατμόσφαιρα, ειδικά στην Παλιά Πόλη. Οι οργανωμένες εκδρομές ηλιοβασιλέματος με σκάφος προσφέρουν την καλύτερη θέα στα τείχη του φρουρίου." },
+        },
+      ],
+    },
+    planningTips: {
+      title: { en: "Planning Tips for Rhodes Tours", el: "Πρακτικές Συμβουλές" },
+      tips: {
+        en: [
+          "Visit the Old Town early in the morning or in the evening — midday in July and August is uncomfortably hot and crowded with cruise ship visitors.",
+          "Book Lindos day trips in advance; the village gets extremely busy in peak season and the acropolis queues can be long by mid-morning.",
+          "The east coast is calmer and better for swimming; the west coast is windier and better for windsurfing (especially around Prasonisi).",
+          "If you are doing a boat tour, confirm whether it includes swimming stops and what the meal arrangement is before booking.",
+          "Embonas is the wine village of Rhodes — a jeep safari that includes a tasting there is a genuinely good use of a morning.",
+          "Rhodes has a very long season. Late May, June, and September offer good weather without the July–August peak crowds.",
+        ],
+        el: [
+          "Επισκεφθείτε την Παλιά Πόλη νωρίς το πρωί ή το βράδυ — το μεσημέρι Ιούλιο και Αύγουστο έχει πολλή ζέστη και κόσμο.",
+          "Κλείστε τις εκδρομές στη Λίνδο από πριν — το χωριό γεμίζει στην υψηλή περίοδο.",
+          "Η ανατολική ακτή είναι πιο ήρεμη για μπάνιο, η δυτική πιο ανεμώδης για windsurfing.",
+          "Αν κάνετε βαρκάδα, επιβεβαιώστε αν περιλαμβάνει στάσεις για μπάνιο και γεύμα.",
+          "Ο Έμπωνας είναι το οινοπαραγωγικό χωριό της Ρόδου — μια γευσιγνωσία εκεί αξίζει.",
+          "Τέλη Μαΐου, Ιούνιος και Σεπτέμβριος έχουν τον καλύτερο καιρό χωρίς πολύ κόσμο.",
+        ],
+      },
+    },
+    faq: {
+      title: { en: "FAQ About Rhodes Tours", el: "Συχνές Ερωτήσεις" },
+      questions: [
+        {
+          question: { en: "What are the best tours to do in Rhodes?", el: "Ποιες είναι οι καλύτερες εκδρομές στη Ρόδο;" },
+          answer: { en: "The most popular are guided walks inside the medieval Old Town, Lindos day trips, catamaran and boat tours, jeep safaris to the interior, and sunset excursions along the Aegean coast.", el: "Οι πιο δημοφιλείς είναι οι ξεναγήσεις στην Παλιά Πόλη, οι ημερήσιες εκδρομές στη Λίνδο, τα καταμαράν, τα jeep safaris στο εσωτερικό και οι εκδρομές ηλιοβασιλέματος." },
+        },
+        {
+          question: { en: "Is the Rhodes Old Town worth a guided tour?", el: "Αξίζει η ξενάγηση στην Παλιά Πόλη;" },
+          answer: { en: "Yes. The Old Town is one of the best-preserved medieval cities in Europe and a guided walk makes a significant difference in understanding the layers of history, from the Knights of St John to the Ottoman period.", el: "Ναι. Η Παλιά Πόλη είναι μια από τις καλύτερα διατηρημένες μεσαιωνικές πόλεις και μια ξενάγηση κάνει τεράστια διαφορά στην κατανόηση της ιστορίας της." },
+        },
+        {
+          question: { en: "How do you get to Lindos from Rhodes Town?", el: "Πώς πάει κανείς από την πόλη της Ρόδου στη Λίνδο;" },
+          answer: { en: "Lindos is about 55 km south of Rhodes Town. You can take a public bus, join an organised day tour, or hire a taxi. Most tours combine the Acropolis of Lindos with a stop at Lindos Bay beach.", el: "Η Λίνδος είναι 55 χλμ νότια. Μπορείτε να πάρετε λεωφορείο, οργανωμένη εκδρομή ή ταξί. Οι περισσότερες εκδρομές συνδυάζουν την Ακρόπολη με την παραλία." },
+        },
+        {
+          question: { en: "Are boat tours in Rhodes worth it?", el: "Αξίζουν οι βαρκάδες στη Ρόδο;" },
+          answer: { en: "Absolutely. Rhodes has excellent catamaran and speedboat tours to nearby beaches, sea caves, and Turkish coastline day trips. The sea conditions are generally good from May to October.", el: "Σίγουρα. Η Ρόδος έχει εξαιρετικά καταμαράν και ταχύπλοα για κοντινές παραλίες, θαλάσσιες σπηλιές και την τουρκική ακτή." },
+        },
+        {
+          question: { en: "How many days do you need in Rhodes?", el: "Πόσες μέρες χρειάζονται στη Ρόδο;" },
+          answer: { en: "Three to four days let you cover the Old Town properly, do a Lindos day trip, and join a boat tour. Five or six days gives you time to explore the quieter western coast and inland villages.", el: "Τρεις με τέσσερις μέρες σου επιτρέπουν να δεις την Παλιά Πόλη, τη Λίνδο και μια βαρκάδα. Πέντε ή έξι μέρες σου δίνουν χρόνο για ήσυχες παραλίες και ορεινά χωριά." },
+        },
+      ],
+    },
+    internalCta: {
+      title: { en: "Continue planning your trip", el: "Συνέχισε τον προγραμματισμό" },
+      text: { en: "Explore our Rhodes destination guide for beaches, places to stay, food ideas, and practical travel inspiration.", el: "Εξερεύνησε τον οδηγό προορισμού για τη Ρόδο για παραλίες, διαμονή, φαγητό και πρακτική έμπνευση." },
+      linkHref: "/destinations/rhodes",
+      linkLabel: { en: "Explore Rhodes Guide", el: "Οδηγός Ρόδου" },
+    },
+    highlights: {
+      en: [
+        "Medieval Old Town walks",
+        "Lindos Acropolis day trips",
+        "Catamaran & boat tours",
+        "Jeep safari & village tours",
+      ],
+      el: [
+        "Περίπατοι στη Μεσαιωνική Πόλη",
+        "Εκδρομές στην Ακρόπολη της Λίνδου",
+        "Καταμαράν & θαλάσσιες εκδρομές",
+        "Jeep Safari & εκδρομές σε χωριά",
+      ],
+    },
+    highlightReasons: {
+      en: [
+        "We handpick real, operating businesses that rely on quality service instead of just generic tourist traps.",
+        "From guided walks to sea explorations, find the exact local experience you need.",
+        "Carefully selected options ensuring you get the most authentic side of Rhodes.",
+        "Save time by browsing clear, structured information before you even arrive.",
+      ],
+      el: [
+        "Επιλέγουμε πραγματικές επιχειρήσεις που βασίζονται στην ποιοτική εξυπηρέτηση.",
+        "Από ξεναγήσεις μέχρι θαλάσσιες εξερευνήσεις, βρες την ιδανική εμπειρία.",
+        "Προσεκτικά επιλεγμένες προτάσεις για αυθεντική Ρόδο.",
+        "Γλιτώστε χρόνο με ξεκάθαρες πληροφορίες πριν φτάσετε.",
+      ],
+    },
+  },
 ];
 
 export const experienceBusinesses: ExperienceBusiness[] = [

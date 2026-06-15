@@ -4523,11 +4523,6 @@ export const destinationSections: Record<string, DestinationSection[]> = {
           image: "/images/naxos-coast.webp",
           alt: { en: "The Portara — the marble entrance gate of the Temple of Apollo on the islet of Palatia near Naxos Town", el: "Η Πορτάρα — η μαρμάρινη είσοδος του αρχαίου ναού του Απόλλωνα στο νησάκι Παλάτια, κοντά στο λιμάνι της Χώρας Νάξου" },
           caption: { en: "The Portara — the marble entrance gate of the Temple of Apollo on the islet of Palatia near Naxos Town", el: "Η Πορτάρα — η μαρμάρινη είσοδος του αρχαίου ναού του Απόλλωνα στο νησάκι Παλάτια, κοντά στο λιμάνι της Χώρας Νάξου" }
-        },
-        {
-          image: "/images/naxos-gallery-1.webp",
-          alt: { en: "Naxos Old Town with the castle and the blue Aegean Sea", el: "Η Παλιά Πόλη της Νάξου με το κάστρο και το γαλάζιο Αιγαίο" },
-          caption: { en: "Naxos Old Town with the castle and the blue Aegean Sea", el: "Η Παλιά Πόλη της Νάξου με το κάστρο και το γαλάζιο Αιγαίο" }
         }
       ]
     },
@@ -4610,6 +4605,16 @@ export const destinationSections: Record<string, DestinationSection[]> = {
         {
           title: { en: "Seafood & harbour tavernas", el: "Θαλασσινά & ταβέρνες στο λιμάνι" },
           text: { en: "The harbour front in Naxos Town is lined with excellent seafood tavernas. Look for grilled octopus, fried calamari, and fresh fish caught daily. Inland villages specialize in meat dishes like rosto (pork cooked in wine) and goat stews.", el: "Το παραλιακό μέτωπο της Χώρας είναι γεμάτο εξαιρετικές ταβέρνες με θαλασσινά. Αναζητήστε ψητό χταπόδι, τηγανητά καλαμαράκια και φρέσκο ψάρι. Στα ορεινά χωριά ειδικεύονται σε κρεατικά όπως ροστό (χοιρινό στο κρασί) και κατσικάκι." }
+        }
+      ]
+    },
+    {
+      title: { en: "", el: "" },
+      gallery: [
+        {
+          image: "/images/naxos-gallery-1.webp",
+          alt: { en: "Naxos Old Town with the castle and the blue Aegean Sea", el: "Η Παλιά Πόλη της Νάξου με το κάστρο και το γαλάζιο Αιγαίο" },
+          caption: { en: "Naxos Old Town with the castle and the blue Aegean Sea", el: "Η Παλιά Πόλη της Νάξου με το κάστρο και το γαλάζιο Αιγαίο" }
         }
       ]
     },

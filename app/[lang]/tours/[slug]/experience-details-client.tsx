@@ -485,6 +485,10 @@ export default function ExperienceDetailsClient({
                   label: { en: "More Tours & Activities in Mykonos", el: "Περισσότερες Εκδρομές & Δραστηριότητες στη Μύκονο" },
                   ref: "W-db1da184-a2f1-4058-b7f1-a9e15ccf9fa6",
                 },
+                "rhodes-tours": {
+                  label: { en: "More Tours & Activities in Rhodes", el: "Περισσότερες Εκδρομές & Δραστηριότητες στη Ρόδο" },
+                  ref: "W-36ecb7f4-99f5-4715-af3f-343be8bb540a",
+                },
               };
               const entry = TOUR_WIDGETS[landing.slug];
               if (!entry) return null;
