@@ -83,6 +83,16 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/:lang(en|el)/tours/seafood-by-the-harbor',
+        destination: '/:lang/eat-drink/seafood-by-the-harbor',
+        permanent: true,
+      },
+      {
+        source: '/tours/seafood-by-the-harbor',
+        destination: '/en/eat-drink/seafood-by-the-harbor',
+        permanent: true,
+      },
+      {
         source: '/:lang(en|el)/tours/patras',
         destination: '/:lang/destinations/patras',
         permanent: true,
