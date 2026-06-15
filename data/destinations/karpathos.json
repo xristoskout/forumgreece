@@ -73,6 +73,6 @@
     "december": { "temp": 14, "price_multiplier": 0.5 }
   },
   "images": [
-    { "src": "/images/karpathos-cover.webp", "alt": { "en": "Traditional windmills above Olympos village on Karpathos island", "el": "Παραδοσιακοί ανεμόμυλοι πάνω από τον Όλυμπο στην Κάρπαθο" } }
+    { "src": "/images/karpathos-cover.webp", "alt": { "en": "Olympos village on Karpathos island, Dodecanese", "el": "Ο Όλυμπος στο νησί της Καρπάθου, Δωδεκάνησα" } }
   ]
 }

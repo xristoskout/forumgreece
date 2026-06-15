@@ -238,9 +238,19 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       ],
     },
     {
+      title: { en: "", el: "" },
+      gallery: [
+        {
+          image: "/images/samos-gallery-1.webp",
+          alt: { en: "Sea view on Samos island, Greece", el: "Θέα στη θάλασσα της Σάμου" },
+          caption: { en: "Sea view on Samos island, Greece", el: "Θέα στη θάλασσα της Σάμου" }
+        }
+      ]
+    },
+    {
       title: {
-        en: "Beaches, villages, food: what not to miss",
-        el: "Παραλίες, χωριά, φαγητό: τι να μη χάσεις",
+        en: "Best time to go (and when to avoid)",
+        el: "Καλύτερη εποχή για να πας (και πότε να το αποφύγεις)",
       },
       layout: "list",
       alert: {
@@ -3587,6 +3597,16 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       ],
     },
     {
+      title: { en: "", el: "" },
+      gallery: [
+        {
+          image: "/images/lesvos-gallery-1.webp",
+          alt: { en: "Beach on the western coast of Lesvos, Greece", el: "Παραλία στη δυτική ακτή της Λέσβου" },
+          caption: { en: "Beach on the western coast of Lesvos, Greece", el: "Παραλία στη δυτική ακτή της Λέσβου" }
+        }
+      ]
+    },
+    {
       title: {
         en: "Best time to visit",
         el: "Καλύτερη εποχή",
@@ -4501,8 +4521,13 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       gallery: [
         {
           image: "/images/naxos-coast.webp",
-          alt: { en: "The long sandy beach of Agios Prokopios on Naxos with crystal clear turquoise water", el: "Η μακριά αμμώδης παραλία του Αγίου Προκοπίου στη Νάξο με κρυστάλλινα τιρκουάζ νερά" },
-          caption: { en: "The long sandy beach of Agios Prokopios on Naxos with crystal clear turquoise water", el: "Η μακριά αμμώδης παραλία του Αγίου Προκοπίου στη Νάξο με κρυστάλλινα τιρκουάζ νερά" }
+          alt: { en: "The Portara — the marble entrance gate of the Temple of Apollo on the islet of Palatia near Naxos Town", el: "Η Πορτάρα — η μαρμάρινη είσοδος του αρχαίου ναού του Απόλλωνα στο νησάκι Παλάτια, κοντά στο λιμάνι της Χώρας Νάξου" },
+          caption: { en: "The Portara — the marble entrance gate of the Temple of Apollo on the islet of Palatia near Naxos Town", el: "Η Πορτάρα — η μαρμάρινη είσοδος του αρχαίου ναού του Απόλλωνα στο νησάκι Παλάτια, κοντά στο λιμάνι της Χώρας Νάξου" }
+        },
+        {
+          image: "/images/naxos-gallery-1.webp",
+          alt: { en: "Naxos Old Town with the castle and the blue Aegean Sea", el: "Η Παλιά Πόλη της Νάξου με το κάστρο και το γαλάζιο Αιγαίο" },
+          caption: { en: "Naxos Old Town with the castle and the blue Aegean Sea", el: "Η Παλιά Πόλη της Νάξου με το κάστρο και το γαλάζιο Αιγαίο" }
         }
       ]
     },
@@ -5040,6 +5065,16 @@ export const destinationSections: Record<string, DestinationSection[]> = {
             en: "The central mountain villages — Karya, Englouvi, Kalamitsi — offer a completely different Lefkada: cool air, stone-paved alleys, local embroidery traditions, and tavernas serving slow-cooked goat with homemade wine. The highest road passes through one of Greece's highest-altitude lentil-growing regions.",
             el: "Τα ορεινά χωριά — Καρυά, Εγκλουβή, Καλαμίτσι — προσφέρουν μια εντελώς διαφορετική Λευκάδα: δροσερό αέρα, πλακόστρωτα σοκάκια, παραδόσεις κεντήματος και ταβέρνες με αργομαγειρεμένο κατσίκι και σπιτικό κρασί."
           }
+        }
+      ]
+    },
+    {
+      title: { en: "", el: "" },
+      gallery: [
+        {
+          image: "/images/lefkada-gallery-1.webp",
+          alt: { en: "Small boats and sailboats at the harbor of Lefkada, Greece", el: "Κότερα και ιστιοφόρα στο λιμάνι της Λευκάδας" },
+          caption: { en: "Small boats and sailboats at the harbor of Lefkada, Greece", el: "Κότερα και ιστιοφόρα στο λιμάνι της Λευκάδας" }
         }
       ]
     },
@@ -9335,6 +9370,16 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       ]
     },
     {
+      title: { en: "", el: "" },
+      gallery: [
+        {
+          image: "/images/ikaria-gallery-1.webp",
+          alt: { en: "Seychelles Beach, one of the most exotic beaches in Greece — Ikaria Island", el: "Παραλία Σεϋχέλλες, μία από τις πιο εξωτικές παραλίες στην Ελλάδα — Ικαρία" },
+          caption: { en: "One of the most exotic beaches in Greece. Seychelles is a beautiful place to be anywhere... Ikaria Island", el: "Μία από τις πιο εξωτικές παραλίες στην Ελλάδα. Οι Σεϋχέλλες είναι ένα όμορφο μέρος... Ικαρία" }
+        }
+      ]
+    },
+    {
       title: { en: "Getting to Ikaria", el: "Πώς να Φτάσεις στην Ικαρία" },
       layout: "list",
       items: [
@@ -11380,8 +11425,8 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       gallery: [
         {
           image: "/images/karpathos-cover.webp",
-          alt: { en: "Traditional windmills above Olympos village on Karpathos island, Dodecanese", el: "Παραδοσιακοί ανεμόμυλοι πάνω από τον Όλυμπο στην Κάρπαθο, Δωδεκάνησα" },
-          caption: { en: "Traditional windmills above Olympos village on Karpathos island, Dodecanese", el: "Παραδοσιακοί ανεμόμυλοι πάνω από τον Όλυμπο στην Κάρπαθο, Δωδεκάνησα" }
+          alt: { en: "Olympos village on Karpathos island, Dodecanese", el: "Ο Όλυμπος στο νησί της Καρπάθου, Δωδεκάνησα" },
+          caption: { en: "Olympos village on Karpathos island, Dodecanese", el: "Ο Όλυμπος στο νησί της Καρπάθου, Δωδεκάνησα" }
         }
       ]
     },
@@ -11657,6 +11702,16 @@ export const destinationSections: Record<string, DestinationSection[]> = {
             en: "Take the early morning ferry from Pigadia to Diafani for a day trip to Saria — the boat leaves around 8am.",
             el: "Πάρε το πρωινό καράβι από Πηγάδια για Διαφάνι για ημερήσια εκδρομή στη Σαρία — αναχώρηση γύρω στις 8."
           }
+        }
+      ]
+    },
+    {
+      title: { en: "", el: "" },
+      gallery: [
+        {
+          image: "/images/karpathos-gallery-1.webp",
+          alt: { en: "Women of Karpathos in traditional local dress, Olympos village", el: "Γυναίκες της Καρπάθου με παραδοσιακή τοπική ενδυμασία, Όλυμπος" },
+          caption: { en: "Women of Karpathos in traditional local dress, Olympos village", el: "Γυναίκες της Καρπάθου με παραδοσιακή τοπική ενδυμασία, Όλυμπος" }
         }
       ]
     },
