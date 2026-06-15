@@ -997,6 +997,7 @@ export const experienceLandings: ExperienceLanding[] = [
         "Γλιτώστε χρόνο με ξεκάθαρες πληροφορίες πριν φτάσετε.",
       ],
     },
+    image: "/images/rhodes-tours-cover.webp",
   },
 ];
 
