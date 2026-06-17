@@ -1,0 +1,79 @@
+{
+  "id": "chios",
+  "slug": "chios",
+  "name": "Chios",
+  "type": "Island",
+  "region": { "en": "North Aegean", "el": "Βόρειο Αιγαίο" },
+  "coordinates": { "lat": 38.4, "lng": 26.0 },
+  "scores": {
+    "beaches": { "value": 8.0, "reason": "Unique volcanic black-pebble beaches like Mavra Volia, organised sands at Karfas, and sunset Lithi." },
+    "nature": { "value": 8.0, "reason": "Dramatic limestone cliffs, pine-covered hills, and citrus-filled Kampos valley." },
+    "culture": { "value": 9.5, "reason": "UNESCO-recognised mastic tradition, xysta-decorated Pyrgi, fortress village Mesta, and Byzantine Nea Moni." },
+    "food": { "value": 8.5, "reason": "Mastic in every form, master cheese, fresh seafood, souma spirit, and Kampos citrus spoon sweets." },
+    "activities": { "value": 7.5, "reason": "Village walking, church exploration, mastic museum, Easter Rocket War, and coastal drives." },
+    "nightlife": { "value": 5.0, "reason": "Chios Town has bars and cafes but no club scene to speak of." },
+    "romance": { "value": 7.5, "reason": "Sunset from Lithi, quiet medieval lanes of Mesta, and harbour dinners in Chios Town." },
+    "family": { "value": 7.5, "reason": "Easy beaches at Karfas and Komi, low-key atmosphere, and villages safe for wandering." },
+    "adventure": { "value": 6.0, "reason": "Some coastal hiking and off-road tracks but not a primary adventure destination." },
+    "authenticity": { "value": 9.5, "reason": "One of the most authentic Greek islands — a real working economy, not a tourist set-piece." },
+    "relaxation": { "value": 8.0, "reason": "Lower tourist density than Cyclades; calm outside August peak." },
+    "value": { "value": 8.5, "reason": "Prices reflect local economy; significantly cheaper than Santorini, Mykonos, or Rhodes." }
+  },
+  "quick_summary": "Chios, in the North Aegean, is the only place on earth where mastic is produced commercially — a UNESCO-recognised tradition that has shaped the island's medieval villages, architecture, and economy for a millennium. Pyrgi's geometric xysta decoration, Mesta's fortress layout, the Byzantine mosaics of Nea Moni, and volcanic black-pebble beaches make it one of the most distinctive and authentic destinations in Greece.",
+  "bestFor": ["culture", "foodies", "authentic_greece", "architecture", "history", "photography"],
+  "pros": [
+    "The mastic villages (Pyrgi, Mesta, Olympi) are architecturally unique — xysta decoration in Pyrgi exists nowhere else in Greece",
+    "Nea Moni Monastery features some of the finest 11th-century Byzantine mosaics in the country, a UNESCO World Heritage Site",
+    "Anavatos, the abandoned cliffside village frozen since the 1822 massacre, is one of the most haunting historical sites in the Aegean",
+    "Mavra Volia beach — smooth black volcanic pebbles against turquoise water — is among the most visually striking beaches in Greece",
+    "The island operates for its own population first, producing a genuinely non-touristy atmosphere even in peak season",
+    "Excellent local food culture: mastic liqueur, mastelo cheese, fresh seafood, souma spirit, and Kampos citrus spoon sweets",
+    "Much less visited than the Cyclades or Dodecanese, with correspondingly lower prices and quieter beaches",
+    "Chios Town is a working port with real character, neoclassical architecture, and the evocative Kastro quarter",
+    "The Easter Rocket War (Rouketopolemos) in Vrontados is one of the most extraordinary religious festivals in Greece",
+    "Kampos district's walled citrus estates offer a unique agricultural-aristocratic landscape found nowhere else in the Aegean"
+  ],
+  "cons": [
+    "Not ideal for those seeking white sand beaches — Chios coast is predominantly volcanic pebble or dark sand",
+    "Limited nightlife and tourist-oriented entertainment — this is not a party island",
+    "Rental car essential — public transport does not conveniently cover the mastic village circuit, Anavatos, or northern beaches",
+    "Less English-language infrastructure than the Cyclades; requires independence and comfort with occasional friction",
+    "Ferry connections to other islands less frequent than in the Cyclades; requires planning for island-hopping",
+    "Some of the most interesting sites (Anavatos, Nea Moni) require sturdy shoes and moderate fitness to access"
+  ],
+  "insider_tips": [
+    "Rent a car from the airport or Chios Town on arrival — the island's major attractions are spread across roughly 50km and public transport does not cover the circuit",
+    "Visit Pyrgi early morning or late afternoon to see the xysta decoration in the best raking light for photography",
+    "Ask at a taverna in Pyrgi or Mesta about visiting a mastic grove — producers often demonstrate the kentima cutting technique for free if approached respectfully",
+    "Plan Nea Moni for morning or late afternoon (it closes 13:00–16:00) and dress modestly",
+    "For sunset, drive to Lithi beach on the southwest coast — widely considered the finest sunset location on the island",
+    "Book accommodation around Greek Easter well in advance if you want to see the Rouketopolemos (Rocket War) in Vrontados",
+    "Best months are May, June, and September — July and August are warm and busy with Greek domestic tourists",
+    "Wear sturdy shoes for both Anavatos ruins and Mesta's cobbled lanes — flip-flops will not suffice"
+  ],
+  "mistakes_to_avoid": [
+    "Trying to see the island without a car — bus network does not conveniently cover the mastic villages, Anavatos, or northern beaches",
+    "Expecting white sand beaches — Chios beaches are volcanic pebble or sand; Mavra Volia's black pebbles are beautiful on their own terms",
+    "Rushing Mesta and Pyrgi in a single day — each village rewards slow walking and at least 2-3 hours of exploration",
+    "Assuming tourist infrastructure comparable to the Cyclades — Chios has less English signage and orientation; this is part of its appeal",
+    "Skipping Anavatos — the ghost village on the cliff is one of the most powerful historical sites in the Aegean and costs nothing to visit",
+    "Forgetting that Nea Moni closes midday — plan visits before 13:00 or after 16:00"
+  ],
+  "seasonality": {
+    "january": { "temp": 11, "price_multiplier": 0.5 },
+    "february": { "temp": 11, "price_multiplier": 0.5 },
+    "march": { "temp": 13, "price_multiplier": 0.6 },
+    "april": { "temp": 16, "price_multiplier": 0.7 },
+    "may": { "temp": 21, "price_multiplier": 0.85 },
+    "june": { "temp": 26, "price_multiplier": 1.1 },
+    "july": { "temp": 29, "price_multiplier": 1.3 },
+    "august": { "temp": 29, "price_multiplier": 1.4 },
+    "september": { "temp": 25, "price_multiplier": 1.1 },
+    "october": { "temp": 20, "price_multiplier": 0.8 },
+    "november": { "temp": 16, "price_multiplier": 0.6 },
+    "december": { "temp": 13, "price_multiplier": 0.5 }
+  },
+  "images": [
+    { "src": "/images/chios.webp", "alt": { "en": "Pyrgi village with xysta decoration on Chios island, North Aegean", "el": "Το Πυργί με διακόσμηση ξυστά στο νησί της Χίου, Βόρειο Αιγαίο" } }
+  ]
+}

@@ -22,6 +22,7 @@ export type Destination = {
   region: Localized;
   blurb: Localized;
   image: string;
+  imagePosition?: string;
   overview: Localized;
   highlights: LocalizedList;
   seo?: {

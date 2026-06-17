@@ -11770,4 +11770,250 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       }
     }
   ],
+  chios: [
+    {
+      title: { en: "Why visit Chios", el: "Γιατί να επισκεφθείς τη Χίο" },
+      layout: "numbered",
+      items: [
+        {
+          title: { en: "Mastic — an agricultural product that exists nowhere else on earth", el: "Μαστίχα — ένα γεωργικό προϊόν που δεν υπάρχει πουθενά αλλού" },
+          text: { en: "The southern villages of Chios — collectively the Mastichohoria — are the only place in the world where mastic is produced commercially. The resin, tapped from a specific cultivar of the lentisk tree using a technique that has remained essentially unchanged since Byzantine times, is harvested by around 5,000 local producers and has been recognised by UNESCO as Intangible Cultural Heritage. It is used in chewing gum, liqueur, pastries, traditional medicine and cosmetics. The Chios Mastic Museum near Pyrgi explains the science and the history; visiting during harvest season (July–September) lets you watch the process being performed in the groves.", el: "Τα νότια χωριά της Χίου — τα Μαστιχοχώρια — είναι το μοναδικό μέρος στον κόσμο όπου η μαστίχα παράγεται εμπορικά. Η ρητίνη συλλέγεται από περίπου 5.000 παραγωγούς και έχει αναγνωριστεί από την UNESCO ως Άυλη Πολιτιστική Κληρονομιά." }
+        },
+        {
+          title: { en: "Pyrgi: a village wearing geometric art on every wall", el: "Πυργί: ένα χωριό που φοράει γεωμετρική τέχνη σε κάθε τοίχο" },
+          text: { en: "Pyrgi is known across Greece as the 'painted village' — every building facade, archway, window frame and church wall decorated in xysta, a sgraffito technique introduced by the Genoese in which a layer of dark plaster is applied beneath white lime wash, then scratched away in precise geometric patterns. The effect, repeated across an entire inhabited village, is unlike anything else in the Mediterranean.", el: "Το Πυργί είναι γνωστό ως το 'ζωγραφιστό χωριό' — κάθε πρόσοψη, καμάρα και εκκλησία είναι διακοσμημένη με ξυστά, μια τεχνική που έφεραν οι Γενουάτες." }
+        },
+        {
+          title: { en: "Mesta: the best-preserved fortress village in the Aegean", el: "Μεστά: το καλύτερα διατηρημένο οχυρωμένο χωριό στο Αιγαίο" },
+          text: { en: "Mesta was built as a single defensive structure — the outer ring of houses forms an unbroken wall with no exterior windows at ground level, designed to repel pirate raids. Inside, a shaded maze of stone alleys, low archways and small squares creates a microclimate that stays notably cooler than the open coast in summer. Walking through Mesta is walking through a piece of functioning medieval military architecture that nobody had to restore.", el: "Τα Μεστά χτίστηκαν ως ενιαία αμυντική δομή — ο εξωτερικός δακτύλιος σπιτιών σχηματίζει αδιάκοπο τείχος χωρίς παράθυρα στο ισόγειο, σχεδιασμένο να αποκρούει πειρατικές επιδρομές." }
+        },
+        {
+          title: { en: "Nea Moni: a Byzantine monastery of imperial ambition", el: "Νέα Μονή: ένα βυζαντινό μοναστήρι αυτοκρατορικής φιλοδοξίας" },
+          text: { en: "Founded in the 11th century with funding from Byzantine Emperor Constantine IX Monomachos, Nea Moni is a UNESCO World Heritage Site and one of the most important surviving examples of middle Byzantine architecture and mosaic art in Greece. The katholikon's interior preserves extraordinary gold-ground mosaics depicting biblical scenes, executed by craftsmen sent directly from Constantinople.", el: "Ιδρύθηκε τον 11ο αιώνα με χρηματοδότηση από τον αυτοκράτορα Κωνσταντίνο Θ' Μονομάχο. Η Νέα Μονή είναι Μνημείο Παγκόσμιας Κληρονομιάς UNESCO." }
+        },
+        {
+          title: { en: "Anavatos: a ghost village that was never rebuilt", el: "Ανάβατος: ένα χωριό-φάντασμα που δεν ξαναχτίστηκε ποτέ" },
+          text: { en: "Perched dramatically on a sheer cliff face in the island's mountainous interior, Anavatos was once a thriving fortified settlement. During the Greek War of Independence in 1822, Ottoman forces massacred much of its population and the village was never resettled. What remains is a complete medieval settlement, abandoned and crumbling, its stone houses stacked up the cliff exactly as they were left.", el: "Σκαρφαλωμένο σε έναν απότομο γκρεμό, ο Ανάβατος ήταν κάποτε ακμαίος οχυρωμένος οικισμός. Το 1822 σφαγιάστηκε και δεν ξανακατοικήθηκε ποτέ." }
+        },
+        {
+          title: { en: "An island that operates for itself, not for tourists", el: "Ένα νησί που λειτουργεί για τον εαυτό του, όχι για τους τουρίστες" },
+          text: { en: "Chios has its own substantial permanent population, a university, a working shipping economy, and an agricultural export industry. Tourism is present but does not dominate the island's identity. This produces tangible benefits for the visitor: restaurant prices reflect a local economy, villages function on their own schedule, and the welcome you receive feels like genuine hospitality rather than a transaction.", el: "Η Χίος έχει μεγάλο μόνιμο πληθυσμό, πανεπιστήμιο, ναυτιλιακή οικονομία και γεωργική εξαγωγική βιομηχανία. Ο τουρισμός δεν κυριαρχεί στο νησί." }
+        }
+      ]
+    },
+    {
+      title: { en: "Best time to visit", el: "Καλύτερη εποχή για επίσκεψη" },
+      layout: "grid",
+      items: [
+        {
+          title: { en: "April – May", el: "Απρίλιος – Μάιος" },
+          text: { en: "Wildflowers across the island, comfortable temperatures for walking the mastic villages and Anavatos, and (dates permitting) the Easter Rocket War in Vrontados. Swimming is weather-dependent but the landscape is at its most vivid green.", el: "Αγριολούλουδα σε όλο το νησί, άνετες θερμοκρασίες για περπάτημα και (αν συμπέσει) ο Ρουκετοπόλεμος του Πάσχα." }
+        },
+        {
+          title: { en: "June", el: "Ιούνιος" },
+          text: { en: "Warm, settled weather, the sea reaching comfortable swimming temperature, and the citrus groves of Kampos still showing the last of their blossom. A genuinely excellent month before the July heat sets in.", el: "Ζεστός, σταθερός καιρός, η θάλασσα φτάνει σε άνετη θερμοκρασία κολύμβησης. Εξαιρετικός μήνας." }
+        },
+        {
+          title: { en: "July – August", el: "Ιούλιος – Αύγουστος" },
+          text: { en: "Hot and busy with Greek domestic visitors rather than international crowds. Mastic harvest is underway in the south; the process can be observed in the groves around Pyrgi and Mesta.", el: "Ζεστά και πολυάσχολα με Έλληνες επισκέπτες. Η συγκομιδή μαστίχας είναι σε εξέλιξη." }
+        },
+        {
+          title: { en: "September", el: "Σεπτέμβριος" },
+          text: { en: "Many residents' favourite month — warm sea, the mastic harvest reaching its final stages, and the tourist presence thinning further. The light on the medieval villages in late September is particularly fine for photography.", el: "Ο αγαπημένος μήνας πολλών κατοίκων — ζεστή θάλασσα, η συγκομιδή μαστίχας ολοκληρώνεται και οι τουρίστες λιγοστεύουν." }
+        }
+      ]
+    },
+    {
+      title: { en: "", el: "" },
+      gallery: [
+        {
+          image: "/images/chios-agios-isidoros.webp",
+          alt: { en: "Drone shot taken above Agios Isidoros chapel in Chios island, Greece.", el: "Εναέρια λήψη πάνω από το παρεκκλήσι του Αγίου Ισιδώρου στη Χίο, Ελλάδα." },
+          caption: { en: "Drone shot taken above Agios Isidoros chapel in Chios island, Greece.", el: "Εναέρια λήψη πάνω από το παρεκκλήσι του Αγίου Ισιδώρου στη Χίο, Ελλάδα." },
+        },
+      ],
+    },
+    {
+      title: { en: "How to get there", el: "Πώς να φτάσετε" },
+      layout: "grid",
+      alert: { en: "💡 Transport tip: Chios has its own airport (JKH), a genuine advantage over many smaller Greek islands. Domestic flights from Athens take approximately 45 minutes; there are also seasonal connections from Thessaloniki. International charter flights are limited, which is precisely why the island has retained its character.", el: "💡 Η Χίος έχει το δικό της αεροδρόμιο (JKH). Οι πτήσεις από Αθήνα διαρκούν περίπου 45 λεπτά." },
+      items: [
+        {
+          title: { en: "By air from Athens", el: "Αεροπορικώς από Αθήνα" },
+          text: { en: "Domestic flights operate daily year-round from Athens International Airport to Chios (JKH), taking approximately 45 minutes. This is the fastest and most reliable route.", el: "Πτήσεις εσωτερικού λειτουργούν καθημερινά όλο τον χρόνο από Αθήνα προς Χίο (JKH), διάρκειας περίπου 45 λεπτών." }
+        },
+        {
+          title: { en: "Overnight ferry from Piraeus", el: "Ακτοπλοϊκώς από Πειραιά" },
+          text: { en: "Conventional ferries depart Piraeus for Chios overnight, taking approximately 8 hours. A comfortable, economical option for those with time, and a popular choice for visitors bringing a car.", el: "Παραδοσιακά πλοία αναχωρούν από Πειραιά για Χίο τη νύχτα, διάρκειας περίπου 8 ωρών." }
+        },
+        {
+          title: { en: "From Lesvos & Samos", el: "Από Λέσβο & Σάμο" },
+          text: { en: "Regular ferry connections link Chios with its North Aegean neighbours — Lesvos (approximately 2.5–3 hours) and Samos. These make a North Aegean island-hopping circuit straightforward.", el: "Τακτικές ακτοπλοϊκές συνδέσεις συνδέουν τη Χίο με τα γειτονικά νησιά του Βορείου Αιγαίου." }
+        },
+        {
+          title: { en: "Getting around the island", el: "Μετακινήσεις στο νησί" },
+          text: { en: "A rental car is strongly recommended and, for the mastic villages and Anavatos circuit in particular, close to essential. Chios is large — roughly 50km north to south. Car rental is available at the airport and in Chios Town.", el: "Η ενοικίαση αυτοκινήτου συνιστάται ανεπιφύλακτα. Η Χίος είναι μεγάλη — περίπου 50χλμ από βορρά προς νότο." }
+        }
+      ]
+    },
+    {
+      title: { en: "Top attractions & experiences", el: "Κορυφαία αξιοθέατα & εμπειρίες" },
+      layout: "numbered",
+      items: [
+        {
+          title: { en: "Pyrgi — the painted village", el: "Πυργί — το ζωγραφιστό χωριό" },
+          text: { en: "Wander the lanes of Pyrgi slowly; the xysta decoration rewards close looking — no two patterns are quite identical. The central square, the church of Agioi Apostoloi with its 17th-century frescoes, and the Chios Mastic Museum round out a visit that takes a leisurely half-day.", el: "Περπάτα στα στενά του Πυργιού αργά· η διακόσμηση xysta ανταμείβει την προσεκτική ματιά. Η κεντρική πλατεία, ο Άγιοι Απόστολοι και το Μουσείο Μαστίχας συμπληρώνουν την επίσκεψη." }
+        },
+        {
+          title: { en: "Mesta — the fortress village", el: "Μεστά — το οχυρωμένο χωριό" },
+          text: { en: "Enter Mesta through one of its narrow original gateways and the defensive logic becomes immediately physical: the outer walls form an unbroken perimeter, the interior lanes are deliberately narrow and shaded. The twin churches of the Old and New Taxiarches sit at its heart.", el: "Μπες στα Μεστά από μία από τις στενές αρχικές πύλες και η αμυντική λογική γίνεται αμέσως αισθητή." }
+        },
+        {
+          title: { en: "Nea Moni Monastery", el: "Μονή Νέας Μονής" },
+          text: { en: "The katholikon's interior mosaics — gold-ground depictions of the Crucifixion, the Washing of the Feet and other biblical scenes — represent some of the finest surviving Byzantine art in Greece, executed by master craftsmen from Constantinople in the 11th century.", el: "Τα ψηφιδωτά του καθολικού — χρυσό έδαφος με παραστάσεις της Σταύρωσης και άλλων βιβλικών σκηνών — είναι από τα καλύτερα σωζόμενα βυζαντινά έργα τέχνης στην Ελλάδα." }
+        },
+        {
+          title: { en: "Anavatos — the ghost village", el: "Ανάβατος — το χωριό-φάντασμα" },
+          text: { en: "Stone houses, some still structurally intact, stack up the cliff face exactly as they were left after 1822. There is no entry fee, no gift shop, no interpretive panel — just the physical fact of an abandoned settlement. Wear sturdy shoes.", el: "Πέτρινα σπίτια, μερικά ακόμη άθικτα, σκαρφαλώνουν στον γκρεμό όπως ακριβώς έμειναν μετά το 1822." }
+        },
+        {
+          title: { en: "Chios Town & the Kastro", el: "Χίος Πόλη & το Κάστρο" },
+          text: { en: "The island's capital is a working port town rather than a tourist set-piece. Its old Kastro quarter, with remnants of Byzantine and Genoese fortifications, narrow lanes and the Giustiniani Palace Museum, rewards an afternoon's exploration.", el: "Η πρωτεύουσα είναι μια ζωντανή πόλη-λιμάνι. Η παλιά συνοικία του Κάστρου με βυζαντινά και γενουάτικα τείχη αξίζει εξερεύνησης." }
+        },
+        {
+          title: { en: "Kampos & the citrus estates", el: "Κάμπος & τα κτήματα εσπεριδοειδών" },
+          text: { en: "South of Chios Town, Kampos was once home to wealthy merchant families who built elaborate stone mansions surrounded by walled citrus orchards — a unique agricultural-aristocratic landscape comparable to nothing else in the Aegean.", el: "Νότια της πόλης, ο Κάμπος ήταν η περιοχή πλούσιων εμπορικών οικογενειών με πέτρινα αρχοντικά και περιβόλια εσπεριδοειδών." }
+        }
+      ]
+    },
+    {
+      title: { en: "Best beaches", el: "Καλύτερες παραλίες" },
+      layout: "grid",
+      alert: { en: "💡 Beach note: Chios beaches are genuinely different from the postcard Cycladic image. Many are volcanic pebble or black sand rather than white sand — a direct result of the island's geology. The black-stone-and-turquoise-water combination at beaches like Mavra Volia is among the most visually striking in the Aegean.", el: "💡 Οι παραλίες της Χίου είναι διαφορετικές από την τυπική κυκλαδίτικη εικόνα. Πολλές έχουν ηφαιστειακό βότσαλο ή μαύρη άμμο." },
+      items: [
+        {
+          title: { en: "Mavra Volia", el: "Μαύρα Βόλια" },
+          text: { en: "The island's most photographed beach — smooth black volcanic pebbles meeting strikingly clear turquoise water, near Pyrgi in the south. No major facilities. Bring water shoes.", el: "Η πιο φωτογραφημένη παραλία του νησιού — μαύρο ηφαιστειακό βότσαλο με διάφανο τιρκουάζ νερό." }
+        },
+        {
+          title: { en: "Karfas", el: "Καρφάς" },
+          text: { en: "The island's most complete organised beach experience — golden sand, sunbeds, beachfront tavernas, watersports — located a short drive south of Chios Town. Popular with families.", el: "Η πιο οργανωμένη παραλία — χρυσή άμμος, ξαπλώστρες, ταβέρνες και θαλάσσια σπορ." }
+        },
+        {
+          title: { en: "Lithi", el: "Λιθί" },
+          text: { en: "On the southwest coast, Lithi has a long sandy beach backed by tavernas and widely considered to have the finest sunset views on Chios. A natural choice for an evening swim followed by dinner.", el: "Στη νοτιοδυτική ακτή, το Λιθί έχει μακριά αμμουδιά και θεωρείται ότι έχει τα καλύτερα ηλιοβασιλέματα." }
+        },
+        {
+          title: { en: "Agia Markella", el: "Αγία Μαρκέλλα" },
+          text: { en: "A sandy beach on the northwest coast, named for the chapel above it, with a more remote and windswept character. Popular for an annual religious festival in July.", el: "Αμμώδης παραλία στη βορειοδυτική ακτή, με πιο απόμακρο χαρακτήρα." }
+        },
+        {
+          title: { en: "Emporios", el: "Εμπορειός" },
+          text: { en: "In the far south near the mastic villages, Emporios combines a small fishing harbour with nearby volcanic beaches. A good base for combining beach time with Pyrgi and Mesta.", el: "Στο νότιο άκρο, κοντά στα Μαστιχοχώρια, ο Εμπορειός συνδυάζει ψαρολίμανο με ηφαιστειακές παραλίες." }
+        },
+        {
+          title: { en: "Komi", el: "Κώμη" },
+          text: { en: "A long sandy beach on the southeast coast, more developed than the volcanic beaches further south but still relatively low-key. Good for families wanting straightforward sand and shallow entry.", el: "Μακριά αμμώδης παραλία στη νοτιοανατολική ακτή, καλή για οικογένειες." }
+        }
+      ]
+    },
+    {
+      title: { en: "Local food & drink", el: "Τοπικό φαγητό & ποτό" },
+      layout: "grid",
+      items: [
+        {
+          title: { en: "Mastic in all its forms", el: "Μαστίχα σε όλες τις μορφές" },
+          text: { en: "Mastiha liqueur, mastic-flavoured spoon sweets, mastic chewing gum, and mastic-infused pastries. The flavour takes some adjustment but is genuinely unique. Buy directly from producers in Pyrgi or Mesta.", el: "Λικέρ μαστίχας, γλυκά του κουταλιού, τσίχλες και αρτοσκευάσματα. Αγόρασε απευθείας από παραγωγούς." }
+        },
+        {
+          title: { en: "Kampos citrus & spoon sweets", el: "Εσπεριδοειδή Κάμπου & γλυκά κουταλιού" },
+          text: { en: "The walled orchards of Kampos produce citrus turned into traditional spoon sweets — candied fruit preserved in syrup. Bergamot and bitter orange varieties are specific to this part of the island.", el: "Τα περιβόλια του Κάμπου παράγουν εσπεριδοειδή για γλυκά κουταλιού." }
+        },
+        {
+          title: { en: "Fresh fish in Chios Town", el: "Φρέσκο ψάρι στη Χίο" },
+          text: { en: "The fish tavernas around Chios Town's old harbour and fish market serve genuinely fresh, simply prepared seafood at prices that reflect a local economy rather than a tourist one.", el: "Οι ψαροταβέρνες γύρω από το παλιό λιμάνι σερβίρουν φρέσκο ψάρι σε τοπικές τιμές." }
+        },
+        {
+          title: { en: "Local cheese & mastelo", el: "Τοπικό τυρί & μαστέλο" },
+          text: { en: "Chios produces a distinctive semi-hard cheese, mastelo, traditionally made in a clay vessel and often served fried or grilled as a meze. Combined with local olive oil and small fried fish.", el: "Η Χίος παράγει ξεχωριστό ημίσκληρο τυρί, το μαστέλο." }
+        },
+        {
+          title: { en: "Bread & pastries of Mesta and Pyrgi", el: "Ψωμί & αρτοσκευάσματα Μεστών και Πυργιού" },
+          text: { en: "The mastic villages have their own bakery traditions — bread and pastries flavoured subtly with mastic, sesame, and local herbs. The small bakeries in Mesta's lanes are worth seeking out.", el: "Τα Μαστιχοχώρια έχουν τις δικές τους αρτοποιητικές παραδόσεις." }
+        },
+        {
+          title: { en: "Souma & local spirits", el: "Σούμα & τοπικά ποτά" },
+          text: { en: "Souma, a grape-based spirit similar to tsipouro but specific to Chios and the North Aegean, is the local drink of choice alongside meze. Distilled by small producers, it varies considerably from village to village.", el: "Η σούμα, απόσταγμα σταφυλιού, είναι το τοπικό ποτό." }
+        }
+      ]
+    },
+    {
+      title: { en: "Practical tips", el: "Πρακτικές συμβουλές" },
+      layout: "numbered",
+      items: [
+        {
+          title: { en: "Rent a car", el: "Νοίκιασε αυτοκίνητο" },
+          text: { en: "Rent a car from the airport or Chios Town on arrival. The island's major attractions are spread across roughly 50km, and public transport does not cover this circuit conveniently for a short stay.", el: "Νοίκιασε αυτοκίνητο από το αεροδρόμιο ή την πόλη. Τα αξιοθέατα είναι διάσπαρτα σε 50χλμ." }
+        },
+        {
+          title: { en: "Plan 4-5 days minimum", el: "Προγραμμάτισε 4-5 ημέρες" },
+          text: { en: "A day for Chios Town and the Kastro, a day for the Mastichohoria circuit (Pyrgi, Mesta, Olympi), a day for Anavatos and Nea Moni, and a day for the northern coast and Volissos. Add a fifth day for beaches.", el: "Μία μέρα για την πόλη, μία για τα Μαστιχοχώρια, μία για Ανάβατο και Νέα Μονή, μία για βόρεια ακτή." }
+        },
+        {
+          title: { en: "Visit during mastic harvest", el: "Επισκέψου την περίοδο συγκομιδής" },
+          text: { en: "The mastic harvest runs July through September. Visiting during this window to see the technique performed in the groves adds significant depth to understanding why the product is so labour-intensive and prized.", el: "Η συγκομιδή μαστίχας διαρκεί Ιούλιο έως Σεπτέμβριο." }
+        },
+        {
+          title: { en: "Wear proper shoes for ruins", el: "Φόρεσε κατάλληλα παπούτσια" },
+          text: { en: "Wear proper shoes for both Anavatos and Mesta — the uneven stone paths in Anavatos's ruins and the cobbled lanes of Mesta are not forgiving of flip-flops.", el: "Φόρεσε παπούτσια για Ανάβατο και Μεστά — οι πέτρινοι δρόμοι δεν συγχωρούν σαγιονάρες." }
+        },
+        {
+          title: { en: "Plan around midday closures", el: "Προγραμμάτισε γύρω από μεσημεριανά κλεισίματα" },
+          text: { en: "Nea Moni and many mastic village churches observe a midday closure (typically 13:00–16:00). Plan visits for morning or late afternoon, and dress modestly for the monastery.", el: "Η Νέα Μονή και πολλές εκκλησίες κλείνουν το μεσημέρι (13:00–16:00)." }
+        },
+        {
+          title: { en: "Easter Rocket War", el: "Πασχαλινός Ρουκετοπόλεμος" },
+          text: { en: "If your dates allow it around Greek Easter, be in Vrontados on Holy Saturday evening for the Rouketopolemos — book accommodation well in advance as this is the one event that fills the island's hotels.", el: "Αν μπορείς, πήγαινε στα Βροντάδα το βράδυ του Μεγάλου Σαββάτου για τον Ρουκετοπόλεμο." }
+        }
+      ]
+    },
+    {
+      layout: "list",
+      title: { en: "Honest Advice — What to Skip in Chios", el: "Ειλικρινής Συμβουλή — Τι να Αποφύγεις στη Χίο" },
+      text: {
+        en: "✕ **Trying to see the whole island without a car** — Chios's bus network connects the main town with larger villages but does not cover the mastic village circuit, Anavatos, or the northern beaches conveniently. Rent a car from day one.\n\n✕ **Expecting white sand beaches** — Chios's beaches are predominantly volcanic pebble or darker sand. The black-pebble-and-turquoise combination at Mavra Volia is genuinely beautiful on its own terms — but it is a different terms.\n\n✕ **Rushing Mesta and Pyrgi in a single combined visit** — Both villages reward slow walking and close attention. If time allows only one, choose Pyrgi for the decorative art or Mesta for the defensive architecture. Better still, allocate a full day to both.\n\n✕ **Assuming Chios has the tourist infrastructure of the Cyclades** — English-language signage and tourist-oriented services are less universal. This is part of the island's appeal but requires independence and comfort with occasional friction.\n\n💡 What nobody tells you: The mastic producers will often, if approached respectfully and outside peak harvest pressure, explain and demonstrate the kentima cutting technique directly — something that costs nothing and is rarely offered as a formal paid tour. Ask at a taverna in Pyrgi or Mesta.",
+        el: "✕ **Να δεις όλο το νησί χωρίς αυτοκίνητο** — Τα λεωφορεία δεν καλύπτουν βολικά τα Μαστιχοχώρια, τον Ανάβατο ή τις βόρειες παραλίες.\n\n✕ **Να περιμένεις λευκές αμμουδιές** — Οι παραλίες της Χίου είναι ηφαιστειακού βότσαλου ή σκούρας άμμου.\n\n✕ **Να βιαστείς στα Μεστά και στο Πυργί** — Και τα δύο χωριά ανταμείβουν το αργό περπάτημα.\n\n✕ **Να υποθέτεις υποδομές Κυκλάδων** — Οι τουριστικές υπηρεσίες είναι λιγότερο παρούσες, που είναι μέρος της γοητείας του νησιού.\n\n💡 Αυτό που δε σου λέει κανείς: Οι παραγωγοί μαστίχας συχνά δείχνουν την τεχνική kentima δωρεάν αν ρωτήσεις με σεβασμό."
+      }
+    },
+    {
+      title: { en: "Frequently Asked Questions", el: "FAQ — Συχνές Ερωτήσεις" },
+      layout: "faq",
+      items: [
+        {
+          title: { en: "What is Chios famous for?", el: "Για τι είναι γνωστή η Χίος;" },
+          text: { en: "Chios is the only place on earth where mastic — an aromatic resin tapped from the Pistacia lentiscus tree — is commercially produced, a tradition recognised by UNESCO as Intangible Cultural Heritage. The island is also known for the geometrically patterned houses of Pyrgi, the fortified medieval architecture of Mesta, the Byzantine UNESCO monastery of Nea Moni, and the abandoned village of Anavatos.", el: "Η Χίος είναι το μοναδικό μέρος στη γη όπου η μαστίχα παράγεται εμπορικά, αναγνωρισμένη από την UNESCO." }
+        },
+        {
+          title: { en: "How do you get to Chios?", el: "Πώς πάει κανείς στη Χίο;" },
+          text: { en: "Chios has its own airport (JKH) with domestic flights from Athens (45 minutes) and seasonal connections from Thessaloniki. By sea, overnight ferries run from Piraeus (approximately 8 hours) and there are connections from Lesvos, Samos and other North Aegean islands.", el: "Η Χίος έχει αεροδρόμιο (JKH) με πτήσεις από Αθήνα (45 λεπτά) και ακτοπλοϊκές συνδέσεις από Πειραιά (8 ώρες)." }
+        },
+        {
+          title: { en: "Is Chios worth visiting?", el: "Αξίζει να επισκεφθεί κανείς τη Χίο;" },
+          text: { en: "Yes, particularly for travelers who have visited the more famous Greek islands and want something genuinely different — extraordinary medieval village architecture found nowhere else in Greece, a unique agricultural product, dramatic black pebble beaches, and an island that functions for its own population first. A 4-5 day stay with a rental car is recommended.", el: "Ναι, ειδικά για όσους έχουν επισκεφθεί τα πιο διάσημα νησιά και θέλουν κάτι διαφορετικό." }
+        },
+        {
+          title: { en: "What are the best villages to visit?", el: "Ποια είναι τα καλύτερα χωριά για επίσκεψη;" },
+          text: { en: "Pyrgi (the painted village) for its black-and-white geometric xysta decoration. Mesta, the best-preserved fortified medieval village built as a single defensive structure. Olympi, a smaller tower village between them. Anavatos, the clifftop ghost village. Volissos in the northwest, with a Byzantine castle.", el: "Πυργί για τα ξυστά, Μεστά για την οχύρωση, Ολύμποι, Ανάβατος, Βολισσός." }
+        },
+        {
+          title: { en: "When is the best time to visit?", el: "Ποια είναι η καλύτερη εποχή για επίσκεψη;" },
+          text: { en: "May, June and September offer the best balance of warm weather and minimal crowds. July and August are warm and busy with Greek domestic tourists. Easter in Chios is exceptional — particularly the Rocket War (Rouketopolemos) in Vrontados on Holy Saturday.", el: "Μάιος, Ιούνιος και Σεπτέμβριος προσφέρουν την καλύτερη ισορροπία. Το Πάσχα στη Χίο είναι μοναδικό." }
+        },
+        {
+          title: { en: "How many days do I need in Chios?", el: "Πόσες μέρες χρειάζομαι στη Χίο;" },
+          text: { en: "Four to five days covers the island's main attractions properly: Chios Town and the Kastro, the Mastichohoria circuit, the interior route to Anavatos and Nea Moni, the northern coast and Volissos, plus a day for beaches. A car is essential.", el: "Τέσσερις με πέντε ημέρες καλύπτουν τα κύρια αξιοθέατα. Απαραίτητο το αυτοκίνητο." }
+        }
+      ]
+    }
+  ],
 };

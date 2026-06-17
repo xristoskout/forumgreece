@@ -202,6 +202,7 @@ export default function DestinationDetailsClient({
             quality={90}
             className="object-cover"
             sizes="100vw"
+            style={destination.imagePosition ? { objectPosition: destination.imagePosition } : undefined}
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#07182c]/80 via-[#07182c]/55 to-[#07182c]/25" />
         </div>

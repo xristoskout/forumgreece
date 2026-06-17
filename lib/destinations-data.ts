@@ -1584,6 +1584,42 @@ export const destinations: Destination[] = [
         el: "Πλήρης ταξιδιωτικός οδηγός για την Κάρπαθο, Δωδεκάνησα — το Νησί των Ανέμων. Ανακαλύψτε τον αυθεντικό Όλυμπο, την υπέροχη παραλία Απέλλα, την πεζοπορία, την καρπάθικη κουζίνα και όλα όσα πρέπει να γνωρίζετε."
       }
     }
+  },
+  {
+    slug: "chios",
+    name: "Chios",
+    region: { en: "North Aegean", el: "Βόρειο Αιγαίο" },
+    blurb: {
+      en: "Mastic villages, Pyrgi painted architecture, Mesta fortress, Nea Moni monastery, Anavatos ghost village and volcanic black-pebble beaches.",
+      el: "Μαστιχοχώρια, ζωγραφιστό Πυργί, Μεστά, Νέα Μονή, Ανάβατος και μαύρες ηφαιστειακές παραλίες.",
+    },
+    image: "/images/chios.webp",
+    imagePosition: "67.9% 45.7%",
+    overview: {
+      en: "Chios is a large island in the North Aegean — the only place on earth where mastic resin is commercially produced, home to the geometrically painted village of Pyrgi, the fortified medieval village of Mesta, the UNESCO World Heritage monastery of Nea Moni, and the abandoned ghost village of Anavatos. Its volcanic black-pebble beaches and an island that operates for its own population rather than for tourists make it one of the most distinctive destinations in the Aegean.",
+      el: "Η Χίος είναι ένα μεγάλο νησί στο Βόρειο Αιγαίο — το μοναδικό μέρος στη γη όπου η μαστίχα παράγεται εμπορικά, με το ζωγραφιστό χωριό Πυργί, τα οχυρωμένα Μεστά, τη Νέα Μονή (UNESCO), και τον εγκαταλελειμμένο Ανάβατο. Οι μαύρες ηφαιστειακές παραλίες και το νησί που λειτουργεί για τον πληθυσμό του παρά για τους τουρίστες το κάνουν έναν από τους πιο ξεχωριστούς προορισμούς του Αιγαίου.",
+    },
+    highlights: {
+      en: ["Pyrgi painted village & xysta art", "Mesta fortress village", "Nea Moni UNESCO monastery", "Anavatos ghost village", "Mastic — found nowhere else"],
+      el: ["Πυργί — ζωγραφιστό χωριό", "Μεστά — οχυρωμένος μεσαιωνικός οικισμός", "Νέα Μονή — Μνημείο UNESCO", "Ανάβατος — το εγκαταλελειμμένο χωριό", "Μαστίχα — η ρητίνη που παράγεται μόνο εδώ"],
+    },
+    guideLinks: [
+      {
+        href: "/hotels/chios",
+        label: { en: "Where to Stay in Chios", el: "Πού να μείνεις στη Χίο" }
+      },
+    ],
+    featured: true,
+    seo: {
+      title: {
+        en: "Chios Travel Guide: Mastic Villages, Pyrgi & Mesta, Beaches | GoGreeceNow",
+        el: "Χίος: Οδηγός Ταξιδιού — Μαστιχοχώρια, Πυργί, Μεστά, Παραλίες"
+      },
+      description: {
+        en: "Complete travel guide to Chios island: the painted village of Pyrgi, fortified medieval Mesta, UNESCO monastery of Nea Moni, Anavatos ghost village, mastic, black pebble beaches, best time to visit & practical tips.",
+        el: "Πλήρης ταξιδιωτικός οδηγός για τη Χίο: το ζωγραφιστό Πυργί, τα οχυρωμένα Μεστά, τη Νέα Μονή UNESCO, τον Ανάβατο, τη μαστίχα, τις μαύρες ηφαιστειακές παραλίες, πότε να πας & πρακτικές συμβουλές."
+      }
+    }
   }
 ];
 

@@ -318,4 +318,11 @@ export const MAP_PINS: Pin[] = [
     label: { en: "Karpathos", el: "Κάρπαθος" },
     tagline: { en: "Authentic island of the winds", el: "Αυθεντικό νησί των ανέμων" },
   },
+  {
+    id: "chios",
+    x: 71.0, y: 43.0,
+    href: "/destinations/chios",
+    label: { en: "Chios", el: "Χίος" },
+    tagline: { en: "Mastic, medieval villages & Byzantine art", el: "Μαστίχα, μεσαιωνικά χωριά & βυζαντινή τέχνη" },
+  },
 ];

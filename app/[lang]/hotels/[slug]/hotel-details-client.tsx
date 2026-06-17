@@ -57,7 +57,8 @@ const STAY22_EMBEDS: Record<string, string> = {
   hydra: "https://stay22.com/embed/6a2591e96f8247fde4799453",
   ios: "https://stay22.com/embed/6a2acceb6f8247fde48c37d6",
   samos: "https://stay22.com/embed/6a2bf22526ba558fae3d17e5",
-  karpathos: "https://stay22.com/embed/6a2fa839bffa295e3aa26f1c",
+   karpathos: "https://stay22.com/embed/6a2fa839bffa295e3aa26f1c",
+   chios: "https://stay22.com/embed/6a3286af924c59c0ff9dbf4b",
 };
 
 const HOTEL_NAMES: Record<string, string[]> = {
@@ -101,7 +102,8 @@ const HOTEL_NAMES: Record<string, string[]> = {
   ios: ["Ios Grand", "Liostasi", "The Windmill", "Hotel Faros", "Arhontiko", "Ios Club", "Koula Village"],
   kalymnos: ["Kalypso Rooms", "Simone's Apartments", "Anemoni Apartments", "Porto Kalymnos", "Armonia Studios", "Villa Korali", "Panormos Beach Hotel", "Niriides Studios", "Emporios Bay Suites"],
   karpathos: ["Alimounda Mare Hotel", "Konstantinos Palace", "CHC Sound of the Sea", "Poseidon Blue Gastronomy Hotel", "Hotel Atlantis", "Astra Studios", "SOPHID Wellness Suites", "Almi Luxury Rooms", "Casa Garden", "Olympos Studios", "Argo Hotel", "Alona Luxury Villas", "Arkasa Bay Hotel", "Hotel Finiki View", "Arhontiko Hotel", "Sunset Studio", "Olympos Archipelagos", "Aphrodite Hotel"],
-  samos: ["Blue Island", "Hotel Vathy", "Anthemis", "Kokkari Beach", "Samos Sun"],
+   samos: ["Blue Island", "Hotel Vathy", "Anthemis", "Kokkari Beach", "Samos Sun"],
+   chios: ["Grecian Castle", "Chios Chandris Hotel", "City Inn", "City Point", "Erytha Hotel & Resort", "Aegean Dream Hotel", "Melia Sol Art", "Sunset Hotel", "Efta Anemi", "Archontiki Riziko", "Mouzaliko Mansion", "Voulamandis House", "Pyrgos Rodocanachi", "Lida Mary", "Mesta Mastic", "Chrisyis Traditional Guest House", "Emporios Bay Hotel"],
 };
 
 function getStay22Url(slug: string): string {

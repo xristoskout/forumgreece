@@ -605,4 +605,54 @@ export const destinationDetails: Record<string, DestinationDetail> = {
       ],
     },
   },
+  chios: {
+    overview: {
+      en: "Chios operates on its own terms — it does not model itself on the whitewashed Cycladic ideal, does not depend on tourism for survival, and does not particularly care whether visitors arrive with expectations formed by Instagram. What it offers instead is something unexpectedly rare in the Aegean: a place that feels genuinely lived-in, where 50,000 permanent residents go about a real economy — shipping, mastic agriculture, a university — and where the medieval villages, Byzantine monasteries and volcanic beaches are woven into a working landscape rather than curated for tourist consumption.\n\nThe island's most famous product, mastic, is produced commercially nowhere else on earth. The resin tapped from the lentisk trees of the Mastichohoria — the collection of southern villages including Pyrgi, Mesta and Olympi — has been recognised by UNESCO as Intangible Cultural Heritage and has shaped the landscape, architecture and economy of southern Chios for a millennium. Pyrgi with its extraordinary black-and-white geometric xysta decoration on every facade, Mesta built as a single defensive fortress with no exterior windows at ground level, and Olympi perched on a rocky outcrop represent a concentration of living medieval architecture found nowhere else in Greece.\n\nBeyond the mastic villages, Chios rewards exploration with the 11th-century Byzantine mosaics of Nea Moni (a UNESCO World Heritage Site), the abandoned clifftop settlement of Anavatos frozen since 1822, the walled citrus orchards of Kampos, and a coastline of volcanic black-pebble beaches like Mavra Volia whose turquoise-water contrast is among the most visually striking in the Aegean. The island even has its own Easter Rocket War — the Rouketopolemos — in which two parish churches in Vrontados fire tens of thousands of home-made rockets at each other's bell towers on Holy Saturday night.",
+      el: "Η Χίος λειτουργεί με τους δικούς της όρους — δεν μιμείται το λευκό κυκλαδίτικο πρότυπο, δεν εξαρτάται από τον τουρισμό για επιβίωση, και δεν νοιάζεται ιδιαίτερα αν οι επισκέπτες φτάνουν με προσδοκίες που διαμόρφωσε το Instagram. Αυτό που προσφέρει είναι κάτι σπάνιο στο Αιγαίο: ένας τόπος που νιώθεις ότι κατοικείται πραγματικά, όπου 50.000 μόνιμοι κάτοικοι ζουν μια πραγματική οικονομία — ναυτιλία, μαστίχα, πανεπιστήμιο — και όπου τα μεσαιωνικά χωριά, τα βυζαντινά μοναστήρια και οι ηφαιστειακές παραλίες είναι υφασμένα σε ένα ζωντανό τοπίο.\n\nΤο πιο διάσημο προϊόν του νησιού, η μαστίχα, παράγεται εμπορικά πουθενά αλλού στη γη. Η ρητίνη από τα σχίνα των Μαστιχοχωρίων — Πυργί, Μεστά, Ολύμποι — έχει αναγνωριστεί από την UNESCO ως Άυλη Πολιτιστική Κληρονομιά. Το Πυργί με την εκπληκτική ασπρόμαυρη γεωμετρική διακόσμηση ξυστά, τα Μεστά χτισμένα ως ενιαίο οχυρό χωρίς παράθυρα στο ισόγειο, και οι Ολύμποι σκαρφαλωμένοι σε βράχο αποτελούν συγκέντρωση ζωντανής μεσαιωνικής αρχιτεκτονικής που δεν υπάρχει αλλού στην Ελλάδα.\n\nΠέρα από τα Μαστιχοχώρια, η Χίος ανταμείβει με τα βυζαντινά ψηφιδωτά της Νέας Μονής (Μνημείο UNESCO), τον εγκαταλελειμμένο Ανάβατο παγωμένο στο 1822, τα περιβόλια εσπεριδοειδών του Κάμπου, και τις ηφαιστειακές παραλίες με μαύρο βότσαλο όπως τα Μαύρα Βόλια. Και έχει τον δικό της Ρουκετοπόλεμο το Πάσχα, όπου δύο εκκλησίες στα Βροντάδα εκτοξεύουν χιλιάδες ρουκέτες η μία στην άλλη."
+    },
+    pageIncludes: {
+      en: [
+        "Mastic villages: Pyrgi (xysta), Mesta (fortress), Olympi",
+        "Nea Moni Monastery — UNESCO Byzantine mosaics",
+        "Anavatos — abandoned clifftop settlement",
+        "Chios Town & Kastro quarter",
+        "Kampos citrus estates",
+        "Beaches: Mavra Volia, Karfas, Lithi, Agia Markella",
+        "Rouketopolemos — Easter Rocket War",
+        "Chios Mastic Museum",
+        "Volissos & the northwest coast",
+      ],
+      el: [
+        "Μαστιχοχώρια: Πυργί (ξυστά), Μεστά (φρούριο), Ολύμποι",
+        "Νέα Μονή — Βυζαντινά ψηφιδωτά UNESCO",
+        "Ανάβατος — εγκαταλελειμμένος οικισμός",
+        "Χίος Πόλη & Κάστρο",
+        "Κάμπος — περιβόλια εσπεριδοειδών",
+        "Παραλίες: Μαύρα Βόλια, Καρφάς, Λιθί, Αγία Μαρκέλλα",
+        "Ρουκετοπόλεμος",
+        "Μουσείο Μαστίχας Χίου",
+        "Βολισσός & βορειοδυτική ακτή",
+      ],
+    },
+    perfectFor: {
+      en: [
+        "Cultural & architectural travellers",
+        "Byzantine art & history enthusiasts",
+        "Foodies interested in unique local products",
+        "Travellers seeking authentic, non-touristy Greece",
+        "Island hoppers in the North Aegean",
+        "Photographers of medieval architecture",
+        "Anyone tired of the whitewashed Cycladic cliché",
+      ],
+      el: [
+        "Ταξιδιώτες πολιτισμού & αρχιτεκτονικής",
+        "Λάτρεις βυζαντινής τέχνης & ιστορίας",
+        "Λάτρεις φαγητού & μοναδικών προϊόντων",
+        "Ταξιδιώτες που αναζητούν αυθεντική Ελλάδα",
+        "Island hoppers Βορείου Αιγαίου",
+        "Φωτογράφους μεσαιωνικής αρχιτεκτονικής",
+        "Όσους έχουν κουραστεί από τα κυκλαδίτικα κλισέ",
+      ],
+    },
+  },
 };
