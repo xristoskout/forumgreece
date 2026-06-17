@@ -592,6 +592,90 @@ export default function HomePageClient({
             </Link>
           </div>
         </div>
+
+        {/* AI Trip Planner — Spectacular Promo */}
+        <div className="mt-14 relative overflow-hidden rounded-[2rem] p-[2px] bg-gradient-to-br from-indigo-400 via-fuchsia-400 to-amber-300 shadow-2xl shadow-indigo-500/20">
+          <div className="relative overflow-hidden rounded-[calc(2rem-2px)] bg-slate-950">
+            <div className="absolute inset-0 opacity-20 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 20% 30%, rgba(139,92,246,0.4) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(236,72,153,0.3) 0%, transparent 50%), radial-gradient(circle at 50% 50%, rgba(251,191,36,0.1) 0%, transparent 40%)' }} />
+            <div className="absolute inset-0 opacity-[0.08] pointer-events-none" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23999\' fill-opacity=\'0.15\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")' }} />
+            <div className="absolute -top-20 -right-20 w-80 h-80 bg-indigo-500/10 rounded-full blur-3xl animate-pulse" />
+            <div className="absolute -bottom-20 -left-20 w-80 h-80 bg-fuchsia-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1.5s' }} />
+
+            <div className="relative z-10 flex flex-col md:flex-row items-center gap-8 p-8 md:p-10">
+              <div className="shrink-0 flex items-center justify-center w-20 h-20 md:w-24 md:h-24 rounded-2xl bg-gradient-to-br from-indigo-500/30 to-fuchsia-500/30 border border-indigo-400/20 shadow-lg shadow-indigo-500/20">
+                <svg className="w-10 h-10 md:w-12 md:h-12 text-indigo-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <path d="M12 2a4 4 0 014 4c0 2-2 4-4 4s-4-2-4-4 2-4 4-4z" />
+                  <path d="M12 14c-4 0-8 1.5-8 4v2h16v-2c0-2.5-4-4-8-4z" />
+                  <path d="M20 8l2 2-2 2" />
+                  <path d="M4 12l-2 2 2 2" />
+                  <path d="M12 20v2" />
+                  <path d="M18 3l-2 2 2 2" />
+                </svg>
+              </div>
+              <div className="flex-1 text-left">
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-indigo-500/20 to-fuchsia-500/20 border border-indigo-400/20 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.15em] text-indigo-300">
+                    <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-pulse" />
+                    {lang === "en" ? "AI-POWERED" : "ΤΕΧΝΗΤΗ ΝΟΗΜΟΣΥΝΗ"}
+                  </span>
+                  <span className="inline-flex items-center gap-1 rounded-full bg-amber-400/15 border border-amber-400/20 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.15em] text-amber-300">
+                    ✨ {lang === "en" ? "NEW" : "ΝΕΟ"}
+                  </span>
+                </div>
+                <h3 className="text-2xl md:text-3xl font-extrabold tracking-tight text-white mb-2">
+                  {lang === "en" ? "Plan Your Entire Trip with AI" : "Σχεδίασε Όλο σου το Ταξίδι με Τεχνητή Νοημοσύνη"}
+                </h3>
+                <p className="text-sm text-indigo-200/70 leading-relaxed max-w-2xl mb-4">
+                  {lang === "en"
+                    ? "Tell our AI assistant your preferences — budget, style, dates, interests — and get a fully personalised itinerary in seconds. It scours our database of 1,000+ destinations, hotels, restaurants, and hidden gems across Greece to build your perfect trip. No more tabs, no more research."
+                    : "Πες στον βοηθό τεχνητής νοημοσύνης τις προτιμήσεις σου — budget, στυλ, ημερομηνίες, ενδιαφέροντα — και λάβε ένα πλήρως εξατομικευμένο πρόγραμμα σε δευτερόλεπτα. Ερευνά τη βάση με 1.000+ προορισμούς, ξενοδοχεία, εστιατόρια και κρυμμένα διαμάντια σε όλη την Ελλάδα για να χτίσει το τέλειο ταξίδι σου. Τέλος στις ατελείωτες καρτέλες."}
+                </p>
+                <div className="flex flex-wrap items-center gap-5 text-xs text-indigo-300/60 mb-5">
+                  <span className="flex items-center gap-1.5">
+                    <svg className="w-3.5 h-3.5 text-indigo-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    {lang === "en" ? "30-second setup" : "Ρύθμιση σε 30 δευτερόλεπτα"}
+                  </span>
+                  <span className="flex items-center gap-1.5">
+                    <svg className="w-3.5 h-3.5 text-indigo-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    {lang === "en" ? "Smart recommendations" : "Έξυπνες προτάσεις"}
+                  </span>
+                  <span className="flex items-center gap-1.5">
+                    <svg className="w-3.5 h-3.5 text-indigo-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    {lang === "en" ? "Real-time availability" : "Διαθεσιμότητα σε πραγματικό χρόνο"}
+                  </span>
+                </div>
+                <div className="flex items-center gap-3 flex-wrap">
+                  <Link
+                    href="https://www.gogreecenow.com/en/trip-planner"
+                    className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-indigo-500 via-fuchsia-500 to-amber-500 px-7 py-3 text-sm font-bold text-white shadow-[0_4px_25px_rgba(139,92,246,0.4)] transition-all hover:shadow-[0_4px_40px_rgba(139,92,246,0.6)] hover:-translate-y-0.5"
+                  >
+                    {lang === "en" ? "Try the AI Trip Planner" : "Δοκίμασε τον AI Σχεδιαστή"}
+                    <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                  </Link>
+                  <span className="text-[11px] text-indigo-400/50 italic">
+                    {lang === "en" ? "It's completely free" : "Είναι εντελώς δωρεάν"}
+                  </span>
+                </div>
+              </div>
+              <div className="hidden lg:flex shrink-0 flex-col items-center gap-3 p-5 rounded-2xl bg-white/5 border border-white/10">
+                <div className="flex -space-x-2">
+                  {[1,2,3,4].map(i => (
+                    <div key={i} className="w-8 h-8 rounded-full bg-gradient-to-br from-indigo-400 to-fuchsia-400 border-2 border-slate-950 flex items-center justify-center text-[10px] font-bold text-white shadow-lg">✦</div>
+                  ))}
+                </div>
+                <div className="text-center">
+                  <p className="text-2xl font-black text-white">12,400+</p>
+                  <p className="text-[10px] text-indigo-300/60 uppercase tracking-wider">{lang === "en" ? "Trips planned" : "Ταξίδια σχεδιάστηκαν"}</p>
+                </div>
+                <div className="flex items-center gap-1 text-amber-400 text-xs">
+                  {[1,2,3,4,5].map(i => (
+                    <svg key={i} className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section id="travel-info" className="scroll-mt-28 bg-white backdrop-blur-md py-14">
