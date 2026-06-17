@@ -489,10 +489,10 @@ export default function PromotionNewClient() {
               </div>
               <div className="p-8">
                 <div className="bg-white rounded-xl overflow-hidden border border-[#e2e8f0] shadow-sm">
-                  <iframe src="/businesses/rolling-into-the-blue" className="w-full h-[500px]" title="Business Listing Preview" />
+                  <iframe src={`/${lang}/businesses/rolling-into-the-blue`} className="w-full h-[500px]" title="Business Listing Preview" />
                 </div>
                 <div className="flex gap-4 mt-5 flex-wrap">
-                  <a href="/businesses/rolling-into-the-blue" target="_blank" rel="noopener noreferrer" className="bg-[#1a6fc4] text-white font-semibold text-[14px] inline-flex items-center gap-1.5 px-5 py-2.5 border-2 border-[#1a6fc4] rounded-lg hover:bg-[#0d4f9e] transition-all shadow-sm">
+                  <a href={`/${lang}/businesses/rolling-into-the-blue`} target="_blank" rel="noopener noreferrer" className="bg-[#1a6fc4] text-white font-semibold text-[14px] inline-flex items-center gap-1.5 px-5 py-2.5 border-2 border-[#1a6fc4] rounded-lg hover:bg-[#0d4f9e] transition-all shadow-sm">
                     <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                     {lang === "el" ? "Δείτε το παράδειγμα" : "View This Listing"}
                   </a>
