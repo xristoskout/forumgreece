@@ -297,8 +297,14 @@ export default function PromotionNewClient() {
     setStatus("loading");
     const formData = new FormData(e.currentTarget);
     const data = {
-      name: formData.get("business_name") as string,
+      business_name: formData.get("business_name") as string,
+      contact_name: formData.get("name") as string,
       email: formData.get("email") as string,
+      phone: formData.get("phone") as string,
+      business_type: formData.get("business_type") as string,
+      location: formData.get("location") as string,
+      website: formData.get("website") as string,
+      preferred_plan: formData.get("preferred_plan") as string,
       message: formData.get("message") as string,
       website_url: formData.get("website_url") as string,
     };
