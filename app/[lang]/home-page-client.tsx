@@ -1042,20 +1042,38 @@ export default function HomePageClient({
 
 
 
-      <section className="bg-slate-950 py-12 text-center border-t border-slate-800/50">
+      <section className="relative overflow-hidden bg-gradient-to-br from-slate-950 via-indigo-950 to-slate-900 py-16 text-center border-t border-indigo-800/30">
+        <div className="absolute inset-0 opacity-15 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 30% 50%, rgba(99,102,241,0.3) 0%, transparent 50%), radial-gradient(circle at 70% 50%, rgba(236,72,153,0.2) 0%, transparent 50%)' }} />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[1px] bg-gradient-to-r from-transparent via-indigo-400 to-transparent opacity-40" />
         <div className="mx-auto max-w-2xl px-6 relative z-10">
-          <h2 className="text-xl md:text-2xl font-extrabold tracking-tight text-white mb-2">
-            {lang === "en" ? "Promote your business today" : "Προβολή επιχείρησης"}
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-indigo-500/20 to-pink-500/20 border border-indigo-400/20 px-4 py-1.5 text-[11px] font-bold uppercase tracking-[0.15em] text-indigo-300 mb-5">
+            <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-pulse" />
+            {lang === "en" ? "GoGreeceNow Business" : "GoGreeceNow Επιχειρήσεις"}
+          </span>
+          <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight text-white mb-3">
+            {lang === "en" ? "Put Your Business in Front of Travelers" : "Βάλε την Επιχείρησή σου Μπροστά σε Ταξιδιώτες"}
           </h2>
-          <p className="text-sm text-slate-400 mb-6 leading-relaxed">
-            {lang === "en" ? "Reach thousands of travelers planning their trip to Greece. Get personalized exposure for your hotel, restaurant or travel service." : "Προσέγγισε χιλιάδες ταξιδιώτες που οργανώνουν το ταξίδι τους στην Ελλάδα. Απόκτησε προσωποποιημένη προβολή για την επιχείρησή σου."}
+          <p className="text-sm text-indigo-200/70 mb-8 leading-relaxed max-w-lg mx-auto">
+            {lang === "en"
+              ? "Thousands of travelers search GoGreeceNow every month to plan their trip. Get featured in destination guides, recommended hotels, and curated experiences — and turn searches into bookings."
+              : "Χιλιάδες ταξιδιώτες αναζητούν κάθε μήνα στο GoGreeceNow για να οργανώσουν το ταξίδι τους. Απέκτησε προβολή σε οδηγούς προορισμών, προτεινόμενα ξενοδοχεία και εμπειρίες — και κάνε τις αναζητήσεις κρατήσεις."}
           </p>
-          <Link
-            href={withLang("/promotion")}
-            className="inline-flex items-center justify-center rounded-full bg-indigo-600/20 border border-indigo-500/30 px-6 py-2.5 text-xs font-bold text-indigo-300 transition-all hover:bg-indigo-600 hover:text-white"
-          >
-            {lang === "en" ? "View promotion services →" : "Υπηρεσίες προβολής →"}
-          </Link>
+          <div className="flex items-center justify-center gap-3 flex-wrap">
+            <Link
+              href={withLang("/promotion")}
+              className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-indigo-500 to-pink-500 px-7 py-3 text-sm font-bold text-white shadow-[0_4px_20px_rgba(99,102,241,0.4)] transition-all hover:shadow-[0_4px_30px_rgba(99,102,241,0.6)] hover:-translate-y-0.5"
+            >
+              {lang === "en" ? "Explore promotion plans" : "Δες τα πακέτα προβολής"}
+              <span className="transition-transform group-hover:translate-x-1">→</span>
+            </Link>
+            <Link
+              href={withLang("/contact")}
+              className="inline-flex items-center gap-2 rounded-full border border-indigo-400/30 bg-white/5 px-6 py-3 text-sm font-semibold text-indigo-200 transition-all hover:bg-white/10 hover:text-white"
+            >
+              <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+              {lang === "en" ? "Contact us" : "Επικοινωνία"}
+            </Link>
+          </div>
         </div>
       </section>
     </main>
