@@ -905,7 +905,7 @@ export default function HomePageClient({
           </div>
 
           <div className="grid gap-6 lg:grid-cols-3">
-            {food.map((item) => (
+            {food.filter(item => ["greek-street-food", "athens", "sunset-cocktails-dinner"].includes(item.slug)).map((item) => (
               <article
                 key={item.slug}
                 className="overflow-hidden rounded-xl border border-orange-200 bg-gradient-to-br from-white via-orange-50/80 to-amber-100/70 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
@@ -973,6 +973,33 @@ export default function HomePageClient({
               </article>
             ))}
           </div>
+
+          <div className="mt-14 relative overflow-hidden rounded-[2rem] bg-gradient-to-r from-orange-600 via-amber-700 to-slate-800 p-8 md:p-10 flex flex-col md:flex-row items-center gap-8 shadow-2xl">
+            <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 80% 50%, rgba(255,255,255,0.4) 0%, transparent 60%)' }} />
+            <div className="relative flex-1 text-left">
+              <p className="text-xs font-bold uppercase tracking-[0.2em] text-amber-200 mb-2">
+                {lang === "en" ? "Full Directory — Eat & Drink" : "Πλήρης Κατάλογος — Φαγητό & Ποτό"}
+              </p>
+              <p className="text-2xl md:text-3xl font-extrabold text-white mb-3 tracking-tight">
+                {lang === "en" ? "Explore all food & drink guides" : "Εξερεύνησε όλους τους γαστρονομικούς οδηγούς"}
+              </p>
+              <p className="text-amber-200/80 text-sm leading-relaxed max-w-xl">
+                {lang === "en"
+                  ? "From Athens street food to Santorini sunset cocktails, regional wines to seafood by the harbor — discover every food and drink guide across Greece in one place."
+                  : "Από το street food της Αθήνας μέχρι τα κοκτέιλ ηλιοβασιλέματος στη Σαντορίνη — ανακάλυψε όλους τους γαστρονομικούς οδηγούς σε ένα μέρος."}
+              </p>
+            </div>
+            <div className="relative shrink-0">
+              <Link
+                href={withLang("/collections/greece-food-and-drink")}
+                className="group inline-flex items-center gap-3 rounded-2xl bg-white px-7 py-4 text-base font-bold text-orange-700 shadow-lg transition-all hover:bg-orange-50 hover:scale-105"
+              >
+                🍷 {lang === "en" ? "Browse all food & drink guides" : "Δες όλους τους γαστρονομικούς οδηγούς"}
+                <span className="transition-transform group-hover:translate-x-1">→</span>
+              </Link>
+            </div>
+          </div>
+
         </div>
       </section>
 
