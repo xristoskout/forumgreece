@@ -857,6 +857,43 @@ export default function HomePageClient({
             </p>
           </div>
 
+          <div className="grid gap-6 lg:grid-cols-3">
+            {tours.filter(item => ["athens-tours", "santorini-tours", "mykonos-tours"].includes(item.slug)).map((item) => (
+              <article key={item.slug} className="overflow-hidden rounded-xl border border-cyan-200 bg-gradient-to-br from-white via-cyan-50/80 to-sky-100/70 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+                <div className="relative">
+                  <div className="relative h-52">
+                    <Image src={item.image} alt={item.title[lang]} fill className="object-cover" sizes="(max-width: 768px) 100vw, 300px" />
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#164e63]/35 via-transparent to-transparent" />
+                  <div className="absolute inset-x-0 top-0 flex items-center justify-between p-4">
+                    <span className="rounded-md bg-cyan-500 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-slate-900 shadow-sm">
+                      {lang === "en" ? "Tours & Experiences" : "Εκδρομές & Εμπειρίες"}
+                    </span>
+                    <span className="rounded-md bg-white/90 px-3 py-1 text-xs font-semibold text-cyan-800 backdrop-blur">{item.place}</span>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <div className="flex items-center gap-3">
+                    <div className="flex h-11 w-11 items-center justify-center rounded-md bg-cyan-100 text-2xl">⚓</div>
+                    <div>
+                      <p className="text-xs font-semibold uppercase tracking-[0.18em] text-cyan-700">{lang === "en" ? "Local experiences" : "Τοπικές εμπειρίες"}</p>
+                      <h3 className="mt-1 text-2xl font-semibold leading-snug">{item.title[lang]}</h3>
+                    </div>
+                  </div>
+                  <p className="mt-4 text-sm leading-6 text-slate-500">{item.info[lang]}</p>
+                  <ul className="mt-5 flex flex-wrap gap-2 list-none p-0">
+                    {item.highlights[lang].slice(0, 3).map((h, i) => (
+                      <li key={`${h}-${i}`} className="rounded-md border border-cyan-100 bg-white backdrop-blur-md px-3 py-1 text-xs font-medium text-cyan-900">{h}</li>
+                    ))}
+                  </ul>
+                  <Link href={withLang(`/tours/${item.slug}`)} className="mt-6 inline-flex rounded-md bg-cyan-500 px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-cyan-600" aria-label={lang === "en" ? `Read the ${item.place} tour guide` : `Δες τον οδηγό εκδρομών για ${item.place}`}>
+                    {lang === "en" ? `${item.place} tour guide →` : `Οδηγός εκδρομών ${item.place} →`}
+                  </Link>
+                </div>
+              </article>
+            ))}
+          </div>
+
           {/* Level 2 CTA — All Tours Directory */}
           <div className="mt-14 relative overflow-hidden rounded-[2rem] bg-gradient-to-r from-cyan-600 via-cyan-700 to-slate-800 p-8 md:p-10 flex flex-col md:flex-row items-center gap-8 shadow-2xl">
             <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 80% 50%, rgba(255,255,255,0.4) 0%, transparent 60%)' }} />

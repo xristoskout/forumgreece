@@ -1,6 +1,48 @@
 import type { TourItem } from "./types";
 export const tours: TourItem[] = [
   {
+    slug: "athens-tours",
+    image: "/images/athens.webp",
+    place: "Athens",
+    title: { en: "Athens Tours & Experiences", el: "Εκδρομές & Εμπειρίες στην Αθήνα" },
+    info: { en: "Discover Athens beyond the Acropolis — food tours, walking tours, Cape Sounion sunsets, and Saronic Gulf boat trips.", el: "Ανακάλυψε την Αθήνα πέρα από την Ακρόπολη — food tours, walking tours, ηλιοβασίλεμα στο Σούνιο και κρουαζιέρες στον Σαρωνικό." },
+    cta: { en: "Explore Athens experiences →", el: "Εξερευνήστε εμπειρίες Αθήνας →" },
+    description: { en: "Explore the best Athens tours and experiences, from Acropolis guided visits and historic walking tours to Greek food tours, Cape Sounion sunsets, and Saronic Gulf boat trips.", el: "Ανακαλύψτε τις καλύτερες εκδρομές στην Αθήνα: ξεναγήσεις στην Ακρόπολη, walking tours, γαστρονομικές εμπειρίες, ηλιοβασίλεμα στο Σούνιο και κρουαζιέρες στον Σαρωνικό." },
+    overview: { en: "Athens is where ancient history, modern Greek life, food, sea views, and neighborhood energy all meet in one place.", el: "Η Αθήνα είναι το μέρος όπου η αρχαία ιστορία, η σύγχρονη ελληνική ζωή, το φαγητό, η θέα στη θάλασσα και η ενέργεια των γειτονιών συναντιούνται σε ένα σημείο." },
+    highlights: { en: ["Acropolis & Parthenon", "Plaka & Monastiraki", "Cape Sounion", "Saronic Gulf Islands"], el: ["Ακρόπολη & Παρθενώνας", "Πλάκα & Μοναστηράκι", "Σούνιο", "Νησιά Σαρωνικού"] },
+    included: { en: ["Guided tours & archaeology", "Food & walking experiences", "Coastal & sunset day trips", "Boat excursions to nearby islands"], el: ["Ξεναγήσεις & αρχαιολογία", "Food & walking experiences", "Παραθαλάσσιες εκδρομές", "Εκδρομές με σκάφος σε κοντινά νησιά"] },
+    perfectFor: { en: ["History & culture lovers", "Food enthusiasts", "Short-break travelers", "First-time Greece visitors"], el: ["Λάτρεις ιστορίας & πολιτισμού", "Foodies", "Ταξιδιώτες μικρής διάρκειας", "Πρώτη φορά στην Ελλάδα"] },
+    sections: []
+  },
+  {
+    slug: "santorini-tours",
+    image: "/images/santorini.webp",
+    place: "Santorini",
+    title: { en: "Santorini Tours & Experiences", el: "Εκδρομές & Εμπειρίες στη Σαντορίνη" },
+    info: { en: "From caldera sunset cruises and volcanic island trips to wine tasting tours and romantic village walks.", el: "Από κρουαζιέρες στην καλντέρα και οινογνωσία μέχρι εκδρομές στο ηφαίστειο και ρομαντικά ηλιοβασιλέματα." },
+    cta: { en: "Explore Santorini experiences →", el: "Εξερευνήστε εμπειρίες Σαντορίνης →" },
+    description: { en: "Explore the best Santorini tours and experiences, from caldera sunset cruises and volcanic island trips to wine tasting tours, village walks, beaches, and romantic viewpoints.", el: "Ανακαλύψτε τις καλύτερες εκδρομές στη Σαντορίνη: κρουαζιέρες στην καλντέρα, οινογνωσία, εκδρομές στο ηφαίστειο, περιπάτους σε γραφικά χωριά και ρομαντικά ηλιοβασιλέματα." },
+    overview: { en: "Santorini is one of Greece's most iconic islands, known for its caldera views, sunset villages, volcanic scenery, and romantic atmosphere.", el: "Η Σαντορίνη είναι ένα από τα πιο εμβληματικά νησιά της Ελλάδας, γνωστό για τη θέα στην καλντέρα, τα χωριά στο ηλιοβασίλεμα, το ηφαιστειακό τοπίο και τη ρομαντική ατμόσφαιρα." },
+    highlights: { en: ["Caldera Sunset Cruises", "Wine Tasting Tours", "Volcanic Island Excursions", "Oia & Fira Villages"], el: ["Κρουαζιέρες στην καλντέρα", "Οινογνωσία", "Εκδρομές στο ηφαίστειο", "Οία & Φηρά"] },
+    included: { en: ["Sunset & caldera boat trips", "Wine tours & tastings", "Volcano & hot springs visits", "Guided village & photography walks"], el: ["Κρουαζιέρες ηλιοβασιλέματος", "Περιηγήσεις κρασιού", "Επισκέψεις σε ηφαίστειο & ιαματικές πηγές", "Περιηγήσεις σε χωριά"] },
+    perfectFor: { en: ["Couples & romantic getaways", "Wine & food lovers", "Photography enthusiasts", "Luxury travelers"], el: ["Ζευγάρια & ρομαντικές αποδράσεις", "Λάτρεις κρασιού & φαγητού", "Λάτρεις φωτογραφίας", "Ταξιδιώτες πολυτελείας"] },
+    sections: []
+  },
+  {
+    slug: "mykonos-tours",
+    image: "/images/mykonos.webp",
+    place: "Mykonos",
+    title: { en: "Mykonos Tours & Experiences", el: "Εκδρομές & Εμπειρίες στη Μύκονο" },
+    info: { en: "Combine cosmopolitan island life with Delos day trips, luxury boat tours, beach hopping, and sunset cruises.", el: "Συνδύασε την κοσμοπολίτικη ζωή με εκδρομές στη Δήλο, luxury boat tours, παραλίες και κρουαζιέρες στο ηλιοβασίλεμα." },
+    cta: { en: "Explore Mykonos experiences →", el: "Εξερευνήστε εμπειρίες Μυκόνου →" },
+    description: { en: "Mykonos combines cosmopolitan island life, iconic beaches, whitewashed streets, luxury experiences, and easy access to the sacred island of Delos.", el: "Η Μύκονος συνδυάζει την κοσμοπολίτικη ζωή, τις εμβληματικές παραλίες, τα κυκλαδίτικα σοκάκια, τις luxury εμπειρίες και την άμεση πρόσβαση στο ιερό νησί της Δήλου." },
+    overview: { en: "Mykonos is famous for beach clubs, nightlife, and glamorous summer energy. But beyond the famous party scene, the island has quiet morning streets, small chapels, windmills, traditional houses, and one of the most important archaeological sites in Greece just a short boat ride away.", el: "Η Μύκονος είναι διάσημη για τα beach clubs και την έντονη ζωή της. Όμως, πέρα από τη λάμψη, το νησί έχει ήσυχα πρωινά στα σοκάκια, μικρά ξωκλήσια, μύλους και έναν από τους σημαντικότερους αρχαιολογικούς χώρους της Ελλάδας σε απόσταση αναπνοής." },
+    highlights: { en: ["Delos Island Tours", "Luxury Boat Trips", "Mykonos Town Walks", "Sunset Cruises"], el: ["Εκδρομές στη Δήλο", "Luxury Boat Trips", "Βόλτες στη Χώρα", "Κρουαζιέρες Ηλιοβασιλέματος"] },
+    included: { en: ["Delos & archaeological tours", "Private boat & yacht charters", "Beach club & coastal experiences", "Town & village explorations"], el: ["Εκδρομές στη Δήλο", "Ιδιωτικές ναυλώσεις σκαφών", "Beach club & παραλιακές εμπειρίες", "Εξερεύνηση χωριών"] },
+    perfectFor: { en: ["Beach & nightlife lovers", "Luxury & yacht travelers", "History & archaeology buffs", "Photography & island hoppers"], el: ["Λάτρεις παραλιών & νυχτερινής ζωής", "Ταξιδιώτες πολυτελείας", "Λάτρεις ιστορίας & αρχαιολογίας", "岛 hopping & φωτογραφία"] },
+    sections: []
+  },
+  {
     slug: "kefalonia-tours",
     image: "/images/tours/kefalonia-tours.webp",
     place: "Kefalonia",
