@@ -320,7 +320,7 @@ export const MAP_PINS: Pin[] = [
   },
   {
     id: "chios",
-    x: 71.0, y: 43.0,
+    x: 68.2, y: 45.9,
     href: "/destinations/chios",
     label: { en: "Chios", el: "Χίος" },
     tagline: { en: "Mastic, medieval villages & Byzantine art", el: "Μαστίχα, μεσαιωνικά χωριά & βυζαντινή τέχνη" },
