@@ -627,8 +627,8 @@ export default function HomePageClient({
                 </h3>
                 <p className="text-sm text-indigo-200/70 leading-relaxed max-w-2xl mb-4">
                   {lang === "en"
-                    ? "Tell our AI assistant your preferences — budget, style, dates, interests — and get a fully personalised itinerary in seconds. It scours our database of 1,000+ destinations, hotels, restaurants, and hidden gems across Greece to build your perfect trip. No more tabs, no more research."
-                    : "Πες στον βοηθό τεχνητής νοημοσύνης τις προτιμήσεις σου — budget, στυλ, ημερομηνίες, ενδιαφέροντα — και λάβε ένα πλήρως εξατομικευμένο πρόγραμμα σε δευτερόλεπτα. Ερευνά τη βάση με 1.000+ προορισμούς, ξενοδοχεία, εστιατόρια και κρυμμένα διαμάντια σε όλη την Ελλάδα για να χτίσει το τέλειο ταξίδι σου. Τέλος στις ατελείωτες καρτέλες."}
+                    ? "Tell our AI assistant your preferences — budget, style, dates, interests — and get a fully personalised itinerary in seconds. It scours our database of 50+ destinations across Greece, with hundreds of handpicked hotels, restaurants, and hidden gems to build your perfect trip. No more tabs, no more research."
+                    : "Πες στον βοηθό τεχνητής νοημοσύνης τις προτιμήσεις σου — budget, στυλ, ημερομηνίες, ενδιαφέροντα — και λάβε ένα πλήρως εξατομικευμένο πρόγραμμα σε δευτερόλεπτα. Ερευνά τη βάση με 50+ προορισμούς σε όλη την Ελλάδα, με εκατοντάδες χειροποίκτες προτάσεις για ξενοδοχεία, εστιατόρια και κρυμμένα διαμάντια για να χτίσει το τέλειο ταξίδι σου. Τέλος στις ατελείωτες καρτέλες."}
                 </p>
                 <div className="flex flex-wrap items-center gap-5 text-xs text-indigo-300/60 mb-5">
                   <span className="flex items-center gap-1.5">
@@ -664,8 +664,8 @@ export default function HomePageClient({
                   ))}
                 </div>
                 <div className="text-center">
-                  <p className="text-2xl font-black text-white">12,400+</p>
-                  <p className="text-[10px] text-indigo-300/60 uppercase tracking-wider">{lang === "en" ? "Trips planned" : "Ταξίδια σχεδιάστηκαν"}</p>
+                  <p className="text-2xl font-black text-white">2,000+</p>
+                  <p className="text-[10px] text-indigo-300/60 uppercase tracking-wider">{lang === "en" ? "Curated guides" : "Οδηγοί προορισμών"}</p>
                 </div>
                 <div className="flex items-center gap-1 text-amber-400 text-xs">
                   {[1,2,3,4,5].map(i => (
