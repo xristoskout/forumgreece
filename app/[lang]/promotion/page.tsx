@@ -5,12 +5,12 @@ import PromotionClient from "./promotion-client";
 
 const staticText = {
   title: {
-    en: "Promote Your Business in Greece | Reach Travelers Planning Their Trip",
-    el: "Προώθησε την Επιχείρησή σου στην Ελλάδα | Προσέγγισε Ταξιδιώτες",
+    en: "GoGreeceNow Business Promotion | Reach Travelers Planning Their Greece Trip",
+    el: "GoGreeceNow Πρόγραμμα Προβολής | Προώθησε την Επιχείρησή σου στην Ελλάδα",
   },
   subtitle: {
-    en: "Connect with thousands of travelers planning their trip to Greece. List your hotel, restaurant or tour and get featured across our destination guides with a dofollow backlink.",
-    el: "Συνδέσου με χιλιάδες ταξιδιώτες που οργανώνουν το ταξίδι τους στην Ελλάδα. Πρόβαλε το ξενοδοχείο, το εστιατόριο ή την εκδρομή σου με dofollow backlink.",
+    en: "Get featured in Greece's most comprehensive travel guides and reach thousands of travelers planning their trip.",
+    el: "Απέκτησε προβολή στους πιο ολοκληρωμένους ταξιδιωτικούς οδηγούς για την Ελλάδα.",
   },
 };
 
@@ -50,7 +50,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           url: `${SITE_URL}/images/hero/greece-main.webp`,
           width: 1600,
           height: 900,
-          alt: "Greece background for business promotion",
+          alt: "Greece travel business promotion",
         },
       ],
     },
