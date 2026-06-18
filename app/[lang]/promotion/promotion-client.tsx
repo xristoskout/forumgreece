@@ -18,11 +18,11 @@ const t = {
   /* ===== TRUST BAR ===== */
   trust_title: { en: "Already featured on GoGreeceNow", el: "Προβάλλονται ήδη στο GoGreeceNow" },
   trust_logo1: { en: "Iren Rooms", el: "Iren Rooms" },
-  trust_logo2: { en: "Kefalonia Tours", el: "Kefalonia Tours" },
-  trust_logo3: { en: "Santorini Wines", el: "Santorini Wines" },
-  trust_logo4: { en: "Paros Boats", el: "Paros Boats" },
-  trust_logo5: { en: "Captain's Table", el: "Captain's Table" },
-  trust_logo6: { en: "Crete Villas", el: "Crete Villas" },
+  trust_logo2: { en: "Taxi Express Patras", el: "Ταξί Express Πάτρας" },
+  trust_logo3: { en: "Papadellis Olive Oil", el: "Papadellis Ελαιόλαδο" },
+  trust_logo4: { en: "Rolling Into The Blue", el: "Rolling Into The Blue" },
+  trust_logo5: { en: "Vintage Wedding Cars", el: "Vintage Wedding Cars" },
+  trust_logo6: { en: "Seafood by the Harbor", el: "Seafood by the Harbor" },
   trust_stat1_num: { en: "15,000+", el: "15,000+" },
   trust_stat1_label: { en: "Monthly Readers", el: "Μηνιαίοι Αναγνώστες" },
   trust_stat2_num: { en: "50+", el: "50+" },
@@ -230,11 +230,11 @@ const t = {
 
 const trustLogos = [
   { num: "1", icon: "🏨", nameKey: "trust_logo1" },
-  { num: "2", icon: "⛵", nameKey: "trust_logo2" },
-  { num: "3", icon: "🍷", nameKey: "trust_logo3" },
-  { num: "4", icon: "🚤", nameKey: "trust_logo4" },
-  { num: "5", icon: "🍽️", nameKey: "trust_logo5" },
-  { num: "6", icon: "🏖️", nameKey: "trust_logo6" },
+  { num: "2", icon: "🚕", nameKey: "trust_logo2" },
+  { num: "3", icon: "🫒", nameKey: "trust_logo3" },
+  { num: "4", icon: "⛵", nameKey: "trust_logo4" },
+  { num: "5", icon: "🚗", nameKey: "trust_logo5" },
+  { num: "6", icon: "🐟", nameKey: "trust_logo6" },
 ];
 
 const painPoints = [
