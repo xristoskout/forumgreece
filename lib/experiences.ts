@@ -41,6 +41,8 @@ export type ExperienceBusiness = {
   landingSlug: string;
   /** Extra travel-info page slug this business should appear on (in addition to landingSlug). */
   travelInfoSlug?: string;
+  /** Additional destination slugs where this business should appear. */
+  destinationSlugs?: string[];
   name: string;
   category: Localized;
   place: string;
@@ -1428,6 +1430,8 @@ practicalInfo: {
   {
     slug: "vintage-wedding-cars",
     landingSlug: "athens-tours",
+    travelInfoSlug: "honeymoon-in-greece",
+    destinationSlugs: ["patras"],
     name: "Vintage Wedding Cars",
     category: {
       en: "Vintage Wedding Car Rental",

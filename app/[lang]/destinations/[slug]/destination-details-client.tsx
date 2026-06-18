@@ -23,7 +23,7 @@ export default function DestinationDetailsClient({
 
   const slug = destination.slug;
   const businesses = experienceBusinesses.filter(
-    (b) => b.landingSlug === `${slug}-tours` || b.landingSlug === slug
+    (b) => b.landingSlug === `${slug}-tours` || b.landingSlug === slug || b.destinationSlugs?.includes(slug)
   );
 
   const matchingFood = food.filter((f) =>
