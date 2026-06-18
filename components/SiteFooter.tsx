@@ -63,6 +63,7 @@ export default function SiteFooter({ lang }: { lang: Lang }) {
               <li><Link href={withLang("/contact", lang)} className="text-slate-600 hover:text-slate-900">{footerContact[lang]}</Link></li>
               <li><Link href={withLang("/privacy-policy", lang)} className="text-slate-600 hover:text-slate-900">{footerPrivacy[lang]}</Link></li>
               <li><Link href="/sitemap.xml" className="text-slate-600 hover:text-slate-900">Sitemap</Link></li>
+              <li><Link href={withLang("/promotion", lang)} className="text-slate-600 hover:text-slate-900">{lang === "en" ? "Promotion" : "Προβολή"}</Link></li>
               <li>
                 <a
                   href="https://www.facebook.com/profile.php?id=61573209091459"
