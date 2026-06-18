@@ -25,7 +25,7 @@ function ListCard({ title, items, icon = "•" }: ListCardProps) {
   if (!items || items.length === 0) return null;
 
   return (
-    <section className="group rounded-[2rem] border border-slate-200 bg-white/90 backdrop-blur-md p-10 shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)]">
+    <section className="group rounded-[2rem] border border-slate-200 bg-white/90 backdrop-blur-md p-5 md:p-10 shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)]">
       <div className="flex items-center gap-4">
         <div className="grid h-12 w-12 place-items-center rounded-2xl bg-indigo-100 text-indigo-700 font-bold text-xl shadow-inner group-hover:scale-110 transition-transform duration-500">
           {icon}
@@ -190,7 +190,7 @@ export default function BusinessDetailsClient({
 
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-slate-50/20 opacity-90" />
 
-          <div className="relative grid gap-8 px-8 py-12 lg:grid-cols-[1.1fr_0.9fr] lg:px-12 lg:py-16">
+          <div className="relative grid gap-8 px-5 py-10 lg:grid-cols-[1.1fr_0.9fr] lg:px-12 lg:py-16">
             <div>
               <div className="flex flex-wrap items-center gap-3">
                 <span className="inline-flex rounded-full border border-indigo-200 bg-indigo-100 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-indigo-800 backdrop-blur-md">
@@ -204,7 +204,7 @@ export default function BusinessDetailsClient({
                 )}
               </div>
 
-              <h1 className="mt-5 text-4xl font-bold tracking-tight text-white drop-shadow-lg md:text-5xl animate-float-playful transition-all duration-300 hover:scale-105 hover:rotate-1 hover:text-indigo-50 cursor-default">
+              <h1 className="mt-5 text-3xl font-bold tracking-tight text-white drop-shadow-lg md:text-5xl animate-float-playful transition-all duration-300 hover:scale-105 hover:rotate-1 hover:text-indigo-50 cursor-default">
                 {business.name}
               </h1>
 
@@ -228,7 +228,7 @@ export default function BusinessDetailsClient({
               </div>
             </div>
 
-            <div className="rounded-[2.5rem] border border-slate-200 bg-white/90 p-8 backdrop-blur-md shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-indigo-500/10">
+            <div className="rounded-[2.5rem] border border-slate-200 bg-white/90 p-5 md:p-8 backdrop-blur-md shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-indigo-500/10">
               <p className="text-sm font-bold uppercase tracking-widest text-indigo-700">
                 {t.quickAccess}
               </p>
@@ -337,7 +337,7 @@ export default function BusinessDetailsClient({
         <section className="mt-10 grid gap-6 xl:grid-cols-[1.12fr_0.88fr]">
           <div className="space-y-6">
             {business.description?.[lang] && (
-              <section className="group rounded-[2rem] border border-slate-200 bg-white/90 backdrop-blur-md p-10 shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)]">
+              <section className="group rounded-[2rem] border border-slate-200 bg-white/90 backdrop-blur-md p-5 md:p-10 shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)]">
                 <div className="flex items-center gap-4">
                   <div className="grid h-12 w-12 place-items-center rounded-2xl bg-indigo-100 text-indigo-700 font-bold text-xl shadow-inner group-hover:scale-110 transition-transform duration-500">
                     ≈
@@ -361,7 +361,7 @@ export default function BusinessDetailsClient({
             />
 
             {business.story?.[lang] && (
-              <section className="group rounded-[2rem] border border-slate-200 bg-white/90 backdrop-blur-md p-10 shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)]">
+              <section className="group rounded-[2rem] border border-slate-200 bg-white/90 backdrop-blur-md p-5 md:p-10 shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)]">
                 <div className="flex items-center gap-4">
                   <div className="grid h-12 w-12 place-items-center rounded-2xl bg-indigo-100 text-indigo-700 font-bold text-xl shadow-inner group-hover:scale-110 transition-transform duration-500">
                     ✦
@@ -396,7 +396,7 @@ export default function BusinessDetailsClient({
 
             {(mapSrc || business.mapIframe) && (
               <section className="group overflow-hidden rounded-[2.5rem] border border-slate-200 bg-white/90 backdrop-blur-md shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)]">
-                <div className="border-b border-slate-200 p-8">
+                <div className="border-b border-slate-200 px-5 py-5 md:p-8">
                   <h2 className="text-2xl font-bold tracking-tight text-slate-900 group-hover:text-indigo-800 transition-colors">
                     {t.location}
                   </h2>
@@ -426,12 +426,12 @@ export default function BusinessDetailsClient({
                 </div>
 
                 {mapLink && (
-                  <div className="p-8">
+                  <div className="px-5 py-5 md:p-8">
                     <a
                       href={mapLink}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex rounded-xl bg-indigo-600 border-none px-6 py-4 text-sm font-semibold text-slate-900 transition-all shadow-md hover:bg-indigo-500 hover:scale-105"
+                      className="inline-flex rounded-xl bg-indigo-600 border-none px-6 py-4 text-sm font-semibold text-white transition-all shadow-md hover:bg-indigo-500 hover:scale-105"
                     >
                       {t.openMap}
                     </a>
@@ -442,7 +442,7 @@ export default function BusinessDetailsClient({
 
             {videoEmbedUrl && (
               <section className="group overflow-hidden rounded-[2.5rem] border border-slate-200 bg-white/90 backdrop-blur-md shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)]">
-                <div className="border-b border-slate-200 p-8">
+                <div className="border-b border-slate-200 px-5 py-5 md:p-8">
                   <h2 className="text-2xl font-bold tracking-tight text-slate-900 group-hover:text-indigo-800 transition-colors">
                     {t.video}
                   </h2>
@@ -459,7 +459,7 @@ export default function BusinessDetailsClient({
                 </div>
 
                 {business.youtube && (
-                  <div className="p-8">
+                  <div className="px-5 py-5 md:p-8">
                     <a
                       href={business.youtube}
                       target="_blank"
@@ -474,7 +474,7 @@ export default function BusinessDetailsClient({
             )}
 
             {hasContact && (
-              <section className="group rounded-[2.5rem] border border-slate-200 bg-white/90 backdrop-blur-md p-10 shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)]">
+              <section className="group rounded-[2.5rem] border border-slate-200 bg-white/90 backdrop-blur-md p-5 md:p-10 shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)]">
                 <h2 className="text-2xl font-bold tracking-tight text-slate-900 group-hover:text-indigo-800 transition-colors">
                   {t.contact}
                 </h2>
