@@ -56,6 +56,7 @@ export type ExperienceBusiness = {
   email?: string;
   website?: string;
   youtube?: string;
+  instagram?: string;
   description?: Localized;
   services?: LocalizedList;
   routes?: LocalizedList;
@@ -1423,6 +1424,143 @@ practicalInfo: {
     youtube: "",
     galleryCount: 0,
     mapQuery: "Papadellis Olive Oil Loutropoli Thermis Lesvos",
+  },
+  {
+    slug: "vintage-wedding-cars",
+    landingSlug: "athens-tours",
+    name: "Vintage Wedding Cars",
+    category: {
+      en: "Vintage Wedding Car Rental",
+      el: "Ενοικίαση Vintage Αυτοκινήτων Γάμου",
+    },
+    place: "Athens, Greece",
+    info: {
+      en: "Make your wedding entrance unforgettable with our fleet of meticulously restored classic cars. From timeless Rolls-Royces to vintage Mercedes, we bring elegance and style to your special day anywhere in Greece.",
+      el: "Κάνε την είσοδό σου στον γάμο αξέχαστη με τον στόλο μας από προσεκτικά ανακαινισμένα κλασικά αυτοκίνητα. Από διαχρονικές Rolls-Royce μέχρι vintage Mercedes, φέρνουμε κομψότητα και στυλ στην ξεχωριστή σου μέρα όπου και αν γιορτάζεις στην Ελλάδα.",
+    },
+    image: "/images/businesses/vintage-wedding-cars/cover.webp",
+    href: "/businesses/vintage-wedding-cars",
+    badge: "Featured",
+    overview: {
+      en: "Vintage Wedding Cars offers an exclusive fleet of meticulously maintained classic and vintage automobiles for weddings, engagements, and special events across Greece. Each vehicle is hand-selected for its character, charm, and timeless beauty — ensuring your arrival is nothing short of spectacular. Whether you dream of a romantic Rolls-Royce, a sporty vintage Mercedes, or a elegant classic limousine, we have the perfect car to match your wedding theme.",
+      el: "Το Vintage Wedding Cars προσφέρει μια αποκλειστική συλλογή από προσεκτικά συντηρημένα κλασικά και vintage αυτοκίνητα για γάμους, αρραβώνες και ειδικές εκδηλώσεις σε όλη την Ελλάδα. Κάθε όχημα είναι επιλεγμένο για τον χαρακτήρα, τη γοητεία και τη διαχρονική του ομορφιά — εξασφαλίζοντας ότι η άφιξή σας θα είναι απολύτως εντυπωσιακή. Είτε ονειρεύεστε μια ρομαντική Rolls-Royce, μια σπορ vintage Mercedes ή μια κομψή κλασική λιμουζίνα, έχουμε το τέλειο αυτοκίνητο για να ταιριάξει με το θέμα του γάμου σας.",
+    },
+    description: {
+      en: "At Vintage Wedding Cars, we believe that the journey is just as important as the destination. Our collection features iconic models from the golden era of automotive design — each one lovingly restored and maintained to the highest standards. We serve weddings and events throughout Greece, delivering your chosen vehicle to any location with white-glove service. Our experienced chauffeurs dress to match your wedding theme and ensure a smooth, memorable experience from pickup to departure. Whether you need a grand entrance for the bride, a stylish getaway car, or a fleet of vintage vehicles for your wedding party, we tailor every detail to your vision.",
+      el: "Στο Vintage Wedding Cars, πιστεύουμε ότι το ταξίδι είναι εξίσου σημαντικό με τον προορισμό. Η συλλογή μας περιλαμβάνει εμβληματικά μοντέλα από τη χρυσή εποχή της αυτοκινητοβιομηχανίας — το καθένα αγαπημένα ανακαινισμένο και συντηρημένο στα υψηλότερα πρότυπα. Εξυπηρετούμε γάμους και εκδηλώσεις σε όλη την Ελλάδα, παραδίδοντας το όχημα της επιλογής σας σε οποιαδήποτε τοποθεσία με υπηρεσία λευκών γαντιών. Οι έμπειροι σοφέρ μας ντύνονται ανάλογα με το θέμα του γάμου σας και εξασφαλίζουν μια ομαλή, αξέχαστη εμπειρία από την παραλαβή έως την αναχώρηση. Είτε χρειάζεστε μια μεγαλοπρεπή είσοδο για τη νύφη, ένα κομψό αυτοκίνητο απόδρασης, ή έναν στόλο vintage οχημάτων για το γαμήλιο πάρτι σας, προσαρμόζουμε κάθε λεπτομέρεια στο όραμά σας.",
+    },
+    highlights: {
+      en: [
+        "Hand-picked fleet of pristine classic & vintage cars",
+        "Professional chauffeurs in period-appropriate attire",
+        "Service available across all of Greece",
+        "Custom packages for weddings, engagements & photo shoots",
+        "White-glove delivery and pickup at any location",
+      ],
+      el: [
+        "Επιλεγμένος στόλος από παρθένα κλασικά & vintage αυτοκίνητα",
+        "Επαγγελματίες σοφέρ με κατάλληλη ενδυμασία εποχής",
+        "Υπηρεσία διαθέσιμη σε όλη την Ελλάδα",
+        "Προσαρμοσμένα πακέτα για γάμους, αρραβώνες & φωτογραφίσεις",
+        "Παράδοση και παραλαβή λευκών γαντιών σε οποιαδήποτε τοποθεσία",
+      ],
+    },
+    services: {
+      en: [
+        "Bridal entrance with a classic Rolls-Royce or vintage Mercedes",
+        "Getaway car for the newlyweds after the reception",
+        "Vintage fleet rental for the full wedding party",
+        "Engagement proposal setups with car decoration",
+        "Professional photoshoot with classic automobiles",
+        "Chauffeur-driven transfers for guests & VIPs",
+      ],
+      el: [
+        "Είσοδος νύφης με κλασική Rolls-Royce ή vintage Mercedes",
+        "Αυτοκίνητο απόδρασης για τους νεόνυμφους μετά τη δεξίωση",
+        "Ενοικίαση vintage στόλου για ολόκληρο το γαμήλιο πάρτι",
+        "Διαμόρφωση πρότασης γάμου με διακόσμηση αυτοκινήτου",
+        "Επαγγελματική φωτογράφιση με κλασικά αυτοκίνητα",
+        "Μεταφορές με σοφέρ για καλεσμένους & VIPs",
+      ],
+    },
+    story: {
+      en: "Born from a lifelong passion for classic automobiles and a love for life's most beautiful moments, Vintage Wedding Cars brings together Greece's finest collection of wedding-worthy vintage vehicles. Every car in our fleet tells a story — and we help you become part of it.",
+      el: "Γεννημένο από ένα δια βίου πάθος για τα κλασικά αυτοκίνητα και μια αγάπη για τις πιο όμορφες στιγμές της ζωής, το Vintage Wedding Cars συγκεντρώνει την καλύτερη συλλογή vintage οχημάτων γάμου στην Ελλάδα. Κάθε αυτοκίνητο στον στόλο μας έχει μια ιστορία — και εμείς σε βοηθάμε να γίνεις μέρος της.",
+    },
+    practicalInfo: {
+      en: [
+        "Delivery available to any location in Greece (mainland & islands)",
+        "Vehicles are delivered fully cleaned, polished, and decorated",
+        "Chauffeurs wear formal attire or period costume upon request",
+        "Booking at least 2–4 weeks in advance recommended for popular dates",
+        "Custom ribbons, flowers, and decorations available upon request",
+      ],
+      el: [
+        "Παράδοση διαθέσιμη σε οποιαδήποτε τοποθεσία στην Ελλάδα (ηπειρωτική & νησιά)",
+        "Τα οχήματα παραδίδονται πλήρως καθαρισμένα, γυαλισμένα και διακοσμημένα",
+        "Οι σοφέρ φορούν επίσημη ενδυμασία ή στολή εποχής κατόπιν αιτήματος",
+        "Συνιστάται κράτηση τουλάχιστον 2-4 εβδομάδες νωρίτερα για δημοφιλείς ημερομηνίες",
+        "Προσαρμοσμένες κορδέλες, λουλούδια και διακοσμήσεις διαθέσιμες κατόπιν αιτήματος",
+      ],
+    },
+    routes: {
+      en: [
+        "Athens & Attica region",
+        "Peloponnese & Ancient Olympia",
+        "Greek islands (ferry transfer arranged)",
+        "Thessaloniki & Northern Greece",
+        "Any location across Greece",
+      ],
+      el: [
+        "Αθήνα & περιοχή Αττικής",
+        "Πελοπόννησος & Αρχαία Ολυμπία",
+        "Ελληνικά νησιά (με πλοίο)",
+        "Θεσσαλονίκη & Βόρεια Ελλάδα",
+        "Οποιαδήποτε τοποθεσία σε όλη την Ελλάδα",
+      ],
+    },
+    perfectFor: {
+      en: [
+        "Brides & grooms seeking a fairytale entrance",
+        "Couples planning a vintage or retro-themed wedding",
+        "Engagement proposals that deserve a grand gesture",
+        "Wedding photographers looking for stunning backdrops",
+        "Anyone who loves classic cars and timeless elegance",
+      ],
+      el: [
+        "Νύφες & γαμπροί που αναζητούν μια παραμυθένια είσοδο",
+        "Ζευγάρια που οργανώνουν vintage ή ρετρό γάμο",
+        "Προτάσεις γάμου που αξίζουν μια μεγαλοπρεπή χειρονομία",
+        "Φωτογράφοι γάμου που αναζητούν εκπληκτικά φόντα",
+        "Όσους αγαπούν τα κλασικά αυτοκίνητα και τη διαχρονική κομψότητα",
+      ],
+    },
+    ctaLabel: {
+      en: "Book your dream car",
+      el: "Κλείσε το αυτοκίνητο των ονείρων σου",
+    },
+    phone: "+306982475636",
+    email: "vintage.cars.greece@gmail.com",
+    website: "https://www.facebook.com/vintage.cars.greece",
+    instagram: "https://www.instagram.com/vintage.cars_greece/",
+    youtube: "",
+    galleryImages: [
+      "/images/businesses/vintage-wedding-cars/495336904_708213261745644_2170864650598116856_n.webp",
+      "/images/businesses/vintage-wedding-cars/480107047_647755461124758_4626602252970587764_n.webp",
+      "/images/businesses/vintage-wedding-cars/481693353_658802280020076_3314212806405581121_n.webp",
+      "/images/businesses/vintage-wedding-cars/495222387_18017078519703922_910464627026396993_n.webp",
+      "/images/businesses/vintage-wedding-cars/495313762_18017078528703922_4503907755393729144_n.webp",
+      "/images/businesses/vintage-wedding-cars/472670794_619527123945328_2670187836567678942_n.webp",
+      "/images/businesses/vintage-wedding-cars/468309347_590199326878108_514543829008534307_n.webp",
+      "/images/businesses/vintage-wedding-cars/468503199_590199370211437_5640401649380930195_n.webp",
+      "/images/businesses/vintage-wedding-cars/470689441_605532425344798_1219516976521931689_n.webp",
+      "/images/businesses/vintage-wedding-cars/469231786_596125552952152_772535740184627874_n.webp",
+      "/images/businesses/vintage-wedding-cars/469423160_597363342828373_3097113865834932962_n.webp",
+      "/images/businesses/vintage-wedding-cars/469547005_598607766037264_2130218965851221096_n.webp",
+      "/images/businesses/vintage-wedding-cars/468408064_590210810210293_9148817860839617040_n.webp",
+      "/images/businesses/vintage-wedding-cars/270125431_101036469127732_7607152548263204092_n.webp",
+    ],
+    mapQuery: "Vintage Wedding Cars Athens Greece",
   }
 ];
 
