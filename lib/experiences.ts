@@ -1435,15 +1435,15 @@ practicalInfo: {
     },
     place: "Athens, Greece",
     info: {
-      en: "Make your wedding entrance unforgettable with our fleet of meticulously restored classic cars. From timeless Rolls-Royces to vintage Mercedes, we bring elegance and style to your special day anywhere in Greece.",
-      el: "Κάνε την είσοδό σου στον γάμο αξέχαστη με τον στόλο μας από προσεκτικά ανακαινισμένα κλασικά αυτοκίνητα. Από διαχρονικές Rolls-Royce μέχρι vintage Mercedes, φέρνουμε κομψότητα και στυλ στην ξεχωριστή σου μέρα όπου και αν γιορτάζεις στην Ελλάδα.",
+      en: "Make your wedding entrance unforgettable with our fleet of meticulously restored classic cars. From timeless vintage Mercedes to elegant limousines, we bring elegance and style to your special day anywhere in Greece.",
+      el: "Κάνε την είσοδό σου στον γάμο αξέχαστη με τον στόλο μας από προσεκτικά ανακαινισμένα κλασικά αυτοκίνητα. Από vintage Mercedes μέχρι κομψές λιμουζίνες, φέρνουμε κομψότητα και στυλ στην ξεχωριστή σου μέρα όπου και αν γιορτάζεις στην Ελλάδα.",
     },
     image: "/images/businesses/vintage-wedding-cars/cover.webp",
     href: "/businesses/vintage-wedding-cars",
     badge: "Featured",
     overview: {
-      en: "Vintage Wedding Cars offers an exclusive fleet of meticulously maintained classic and vintage automobiles for weddings, engagements, and special events across Greece. Each vehicle is hand-selected for its character, charm, and timeless beauty — ensuring your arrival is nothing short of spectacular. Whether you dream of a romantic Rolls-Royce, a sporty vintage Mercedes, or a elegant classic limousine, we have the perfect car to match your wedding theme.",
-      el: "Το Vintage Wedding Cars προσφέρει μια αποκλειστική συλλογή από προσεκτικά συντηρημένα κλασικά και vintage αυτοκίνητα για γάμους, αρραβώνες και ειδικές εκδηλώσεις σε όλη την Ελλάδα. Κάθε όχημα είναι επιλεγμένο για τον χαρακτήρα, τη γοητεία και τη διαχρονική του ομορφιά — εξασφαλίζοντας ότι η άφιξή σας θα είναι απολύτως εντυπωσιακή. Είτε ονειρεύεστε μια ρομαντική Rolls-Royce, μια σπορ vintage Mercedes ή μια κομψή κλασική λιμουζίνα, έχουμε το τέλειο αυτοκίνητο για να ταιριάξει με το θέμα του γάμου σας.",
+      en: "Vintage Wedding Cars offers an exclusive fleet of meticulously maintained classic and vintage automobiles for weddings, engagements, and special events across Greece. Each vehicle is hand-selected for its character, charm, and timeless beauty — ensuring your arrival is nothing short of spectacular. Whether you dream of a romantic vintage Mercedes, a sporty classic roadster, or an elegant limousine, we have the perfect car to match your wedding theme.",
+      el: "Το Vintage Wedding Cars προσφέρει μια αποκλειστική συλλογή από προσεκτικά συντηρημένα κλασικά και vintage αυτοκίνητα για γάμους, αρραβώνες και ειδικές εκδηλώσεις σε όλη την Ελλάδα. Κάθε όχημα είναι επιλεγμένο για τον χαρακτήρα, τη γοητεία και τη διαχρονική του ομορφιά — εξασφαλίζοντας ότι η άφιξή σας θα είναι απολύτως εντυπωσιακή. Είτε ονειρεύεστε μια σπορ vintage Mercedes είτε μια κομψή κλασική λιμουζίνα, έχουμε το τέλειο αυτοκίνητο για να ταιριάξει με το θέμα του γάμου σας.",
     },
     description: {
       en: "At Vintage Wedding Cars, we believe that the journey is just as important as the destination. Our collection features iconic models from the golden era of automotive design — each one lovingly restored and maintained to the highest standards. We serve weddings and events throughout Greece, delivering your chosen vehicle to any location with white-glove service. Our experienced chauffeurs dress to match your wedding theme and ensure a smooth, memorable experience from pickup to departure. Whether you need a grand entrance for the bride, a stylish getaway car, or a fleet of vintage vehicles for your wedding party, we tailor every detail to your vision.",
@@ -1467,7 +1467,7 @@ practicalInfo: {
     },
     services: {
       en: [
-        "Bridal entrance with a classic Rolls-Royce or vintage Mercedes",
+        "Bridal entrance with a classic vintage Mercedes or elegant limousine",
         "Getaway car for the newlyweds after the reception",
         "Vintage fleet rental for the full wedding party",
         "Engagement proposal setups with car decoration",
@@ -1475,7 +1475,7 @@ practicalInfo: {
         "Chauffeur-driven transfers for guests & VIPs",
       ],
       el: [
-        "Είσοδος νύφης με κλασική Rolls-Royce ή vintage Mercedes",
+        "Είσοδος νύφης με vintage Mercedes ή κομψή λιμουζίνα",
         "Αυτοκίνητο απόδρασης για τους νεόνυμφους μετά τη δεξίωση",
         "Ενοικίαση vintage στόλου για ολόκληρο το γαμήλιο πάρτι",
         "Διαμόρφωση πρότασης γάμου με διακόσμηση αυτοκινήτου",
