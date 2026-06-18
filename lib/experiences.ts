@@ -1437,7 +1437,7 @@ practicalInfo: {
       en: "Vintage Wedding Car Rental",
       el: "Ενοικίαση Vintage Αυτοκινήτων Γάμου",
     },
-    place: "Athens, Greece",
+    place: "Nafpaktos, Greece",
     info: {
       en: "Make your wedding entrance unforgettable with our fleet of meticulously restored classic cars. From timeless vintage Mercedes to elegant limousines, we bring elegance and style to your special day anywhere in Greece.",
       el: "Κάνε την είσοδό σου στον γάμο αξέχαστη με τον στόλο μας από προσεκτικά ανακαινισμένα κλασικά αυτοκίνητα. Από vintage Mercedes μέχρι κομψές λιμουζίνες, φέρνουμε κομψότητα και στυλ στην ξεχωριστή σου μέρα όπου και αν γιορτάζεις στην Ελλάδα.",
@@ -1493,14 +1493,14 @@ practicalInfo: {
     },
     practicalInfo: {
       en: [
-        "Delivery available to any location in Greece (mainland & islands)",
+        "Based in Nafpaktos — delivery available to any location in Greece (mainland & islands)",
         "Vehicles are delivered fully cleaned, polished, and decorated",
         "Chauffeurs wear formal attire or period costume upon request",
         "Booking at least 2–4 weeks in advance recommended for popular dates",
         "Custom ribbons, flowers, and decorations available upon request",
       ],
       el: [
-        "Παράδοση διαθέσιμη σε οποιαδήποτε τοποθεσία στην Ελλάδα (ηπειρωτική & νησιά)",
+        "Βάση η Ναύπακτος — παράδοση διαθέσιμη σε οποιαδήποτε τοποθεσία στην Ελλάδα (ηπειρωτική & νησιά)",
         "Τα οχήματα παραδίδονται πλήρως καθαρισμένα, γυαλισμένα και διακοσμημένα",
         "Οι σοφέρ φορούν επίσημη ενδυμασία ή στολή εποχής κατόπιν αιτήματος",
         "Συνιστάται κράτηση τουλάχιστον 2-4 εβδομάδες νωρίτερα για δημοφιλείς ημερομηνίες",
@@ -1509,17 +1509,19 @@ practicalInfo: {
     },
     routes: {
       en: [
-        "Athens & Attica region",
+        "Nafpaktos & Rio-Antirrio area",
         "Peloponnese & Ancient Olympia",
+        "Athens & Attica region",
+        "Epirus & Ioannina",
         "Greek islands (ferry transfer arranged)",
-        "Thessaloniki & Northern Greece",
         "Any location across Greece",
       ],
       el: [
-        "Αθήνα & περιοχή Αττικής",
+        "Ναύπακτος & περιοχή Ρίου-Αντιρρίου",
         "Πελοπόννησος & Αρχαία Ολυμπία",
+        "Αθήνα & περιοχή Αττικής",
+        "Ήπειρος & Ιωάννινα",
         "Ελληνικά νησιά (με πλοίο)",
-        "Θεσσαλονίκη & Βόρεια Ελλάδα",
         "Οποιαδήποτε τοποθεσία σε όλη την Ελλάδα",
       ],
     },
@@ -1564,7 +1566,7 @@ practicalInfo: {
       "/images/businesses/vintage-wedding-cars/468408064_590210810210293_9148817860839617040_n.webp",
       "/images/businesses/vintage-wedding-cars/270125431_101036469127732_7607152548263204092_n.webp",
     ],
-    mapQuery: "Vintage Wedding Cars Athens Greece",
+    mapQuery: "Vintage Wedding Cars Nafpaktos Greece",
   }
 ];
 
