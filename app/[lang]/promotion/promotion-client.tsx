@@ -22,7 +22,6 @@ const t = {
   trust_logo3: { en: "Papadellis Olive Oil", el: "Papadellis Ελαιόλαδο" },
   trust_logo4: { en: "Rolling Into The Blue", el: "Rolling Into The Blue" },
   trust_logo5: { en: "Vintage Wedding Cars", el: "Vintage Wedding Cars" },
-  trust_logo6: { en: "Seafood by the Harbor", el: "Seafood by the Harbor" },
   trust_stat1_num: { en: "15,000+", el: "15,000+" },
   trust_stat1_label: { en: "Monthly Readers", el: "Μηνιαίοι Αναγνώστες" },
   trust_stat2_num: { en: "50+", el: "50+" },
@@ -234,7 +233,6 @@ const trustLogos = [
   { num: "3", icon: "🫒", nameKey: "trust_logo3" },
   { num: "4", icon: "⛵", nameKey: "trust_logo4" },
   { num: "5", icon: "🚗", nameKey: "trust_logo5" },
-  { num: "6", icon: "🐟", nameKey: "trust_logo6" },
 ];
 
 const painPoints = [
