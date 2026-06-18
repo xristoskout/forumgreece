@@ -25,7 +25,7 @@ function ListCard({ title, items, icon = "•" }: ListCardProps) {
   if (!items || items.length === 0) return null;
 
   return (
-    <section className="group rounded-[2rem] border border-slate-200 bg-white/90 backdrop-blur-md p-5 md:p-10 shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)]">
+    <section className="group rounded-[2rem] border border-slate-200 bg-white/90 backdrop-blur-md p-4 md:p-10 shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)]">
       <div className="flex items-center gap-4">
         <div className="grid h-12 w-12 place-items-center rounded-2xl bg-indigo-100 text-indigo-700 font-bold text-xl shadow-inner group-hover:scale-110 transition-transform duration-500">
           {icon}
@@ -165,8 +165,8 @@ export default function BusinessDetailsClient({
   return (
     <>
       <SiteHeader />
-      <main className="min-h-screen bg-transparent text-slate-900 pt-20">
-      <section className="mx-auto max-w-7xl px-6 py-10">
+      <main className="min-h-screen bg-transparent text-slate-900 pt-20 overflow-x-hidden">
+      <section className="mx-auto max-w-7xl px-4 py-10 md:px-6">
         <div className="flex flex-wrap items-center justify-between gap-4">
           <Link
             href={withLang(`/tours/${business.landingSlug}`)}
@@ -176,7 +176,7 @@ export default function BusinessDetailsClient({
           </Link>
         </div>
 
-        <section className="relative mt-8 overflow-hidden rounded-[3rem] text-slate-900 shadow-xl border border-slate-200 group">
+        <section className="relative mt-8 overflow-hidden rounded-[2rem] md:rounded-[3rem] text-slate-900 shadow-xl border border-slate-200 group">
           <div className="absolute inset-0 transition-all duration-700 group-hover:scale-110 group-hover:brightness-110">
             <Image
               src={business.image}
@@ -190,7 +190,7 @@ export default function BusinessDetailsClient({
 
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-slate-50/20 opacity-90" />
 
-          <div className="relative grid gap-8 px-5 py-10 lg:grid-cols-[1.1fr_0.9fr] lg:px-12 lg:py-16">
+          <div className="relative grid gap-8 px-4 py-10 md:px-5 lg:grid-cols-[1.1fr_0.9fr] lg:px-12 lg:py-16">
             <div>
               <div className="flex flex-wrap items-center gap-3">
                 <span className="inline-flex rounded-full border border-indigo-200 bg-indigo-100 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-indigo-800 backdrop-blur-md">
@@ -228,7 +228,7 @@ export default function BusinessDetailsClient({
               </div>
             </div>
 
-            <div className="rounded-[2.5rem] border border-slate-200 bg-white/90 p-5 md:p-8 backdrop-blur-md shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-indigo-500/10">
+            <div className="rounded-[2.5rem] border border-slate-200 bg-white/90 p-4 md:p-8 backdrop-blur-md shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-indigo-500/10">
               <p className="text-sm font-bold uppercase tracking-widest text-indigo-700">
                 {t.quickAccess}
               </p>
@@ -337,13 +337,13 @@ export default function BusinessDetailsClient({
         <section className="mt-10 grid gap-6 xl:grid-cols-[1.12fr_0.88fr]">
           <div className="space-y-6">
             {business.description?.[lang] && (
-              <section className="group rounded-[2rem] border border-slate-200 bg-white/90 backdrop-blur-md p-5 md:p-10 shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)]">
+              <section className="group rounded-[2rem] border border-slate-200 bg-white/90 backdrop-blur-md p-4 md:p-10 shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)]">
                 <div className="flex items-center gap-4">
                   <div className="grid h-12 w-12 place-items-center rounded-2xl bg-indigo-100 text-indigo-700 font-bold text-xl shadow-inner group-hover:scale-110 transition-transform duration-500">
                     ≈
                   </div>
 
-                  <h2 className="text-3xl font-bold tracking-tight text-slate-900 group-hover:text-indigo-800 transition-colors">
+                  <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-slate-900 group-hover:text-indigo-800 transition-colors">
                     {t.about}
                   </h2>
                 </div>
@@ -361,7 +361,7 @@ export default function BusinessDetailsClient({
             />
 
             {business.story?.[lang] && (
-              <section className="group rounded-[2rem] border border-slate-200 bg-white/90 backdrop-blur-md p-5 md:p-10 shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)]">
+              <section className="group rounded-[2rem] border border-slate-200 bg-white/90 backdrop-blur-md p-4 md:p-10 shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)]">
                 <div className="flex items-center gap-4">
                   <div className="grid h-12 w-12 place-items-center rounded-2xl bg-indigo-100 text-indigo-700 font-bold text-xl shadow-inner group-hover:scale-110 transition-transform duration-500">
                     ✦
@@ -474,7 +474,7 @@ export default function BusinessDetailsClient({
             )}
 
             {hasContact && (
-              <section className="group rounded-[2.5rem] border border-slate-200 bg-white/90 backdrop-blur-md p-5 md:p-10 shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)]">
+              <section className="group rounded-[2.5rem] border border-slate-200 bg-white/90 backdrop-blur-md p-4 md:p-10 shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)]">
                 <h2 className="text-2xl font-bold tracking-tight text-slate-900 group-hover:text-indigo-800 transition-colors">
                   {t.contact}
                 </h2>
