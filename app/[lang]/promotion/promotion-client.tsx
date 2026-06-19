@@ -8,7 +8,7 @@ const t = {
   /* ===== HERO ===== */
   hero_badge: { en: "The Greece Travel Platform for International Visitors", el: "Η ταξιδιωτική πλατφόρμα για διεθνείς επισκέπτες" },
   hero_title: { en: "Put Your Business in Front of Thousands of Travelers Planning Their Trip to Greece", el: "Βάλε την επιχείρησή σου μπροστά σε χιλιάδες ταξιδιώτες που σχεδιάζουν ταξίδι στην Ελλάδα" },
-  hero_subtitle: { en: "GoGreeceNow connects international visitors with hotels, tours, restaurants and local experiences across Greece — through trusted destination guides read by travelers from the US, UK, Germany and Australia.", el: "Το GoGreeceNow συνδέει διεθνείς επισκέπτες με ξενοδοχεία, εκδρομές, εστιατόρια και τοπικές εμπειρίες σε όλη την Ελλάδα." },
+  hero_subtitle: { en: "GoGreeceNow connects international visitors with hotels, tours, restaurants and local experiences across Greece — through trusted destination guides read by travelers from the US, UK, Europe, Asia, the Middle East, Australia and Africa.", el: "Το GoGreeceNow συνδέει διεθνείς επισκέπτες με ξενοδοχεία, εκδρομές, εστιατόρια και τοπικές εμπειρίες σε όλη την Ελλάδα." },
   hero_btn_plans: { en: "View Plans & Pricing", el: "Δες Πακέτα & Τιμές" },
   hero_btn_call: { en: "Book a Free Call", el: "Κλείσε Δωρεάν Κλήση" },
   hero_guarantee1: { en: "No commission per booking", el: "Καμία προμήθεια ανά κράτηση" },
