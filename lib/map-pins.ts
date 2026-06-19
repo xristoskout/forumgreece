@@ -249,6 +249,13 @@ export const MAP_PINS: Pin[] = [
     tagline: { en: "Turquoise beaches & drive access", el: "Τιρκουάζ παραλίες & οδική πρόσβαση" },
   },
   {
+    id: "preveza",
+    x: 19.9, y: 38.6,
+    href: "/destinations/preveza",
+    label: { en: "Preveza", el: "Πρέβεζα" },
+    tagline: { en: "Undersea tunnel beaches & ancient Nicopolis", el: "Παραλίες, υποθαλάσσια σήραγγα & αρχαία Νικόπολη" },
+  },
+  {
     id: "kos",
     x: 77.5, y: 63.5,
     href: "/destinations/kos",

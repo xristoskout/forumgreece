@@ -589,6 +589,41 @@ export const destinations: Destination[] = [
     ]
   },
   {
+    slug: "preveza",
+    name: "Preveza",
+    region: { en: "Epirus", el: "Ήπειρος" },
+    blurb: {
+      en: "Ancient Nikopolis, 22km of Monolithi beach, avgotaracho bottarga, dolphins in the Ambracian Gulf, and the mythological Acheron river — one of Greece's richest uncrowded destinations.",
+      el: "Αρχαία Νικόπολη, 22χλμ παραλία Μονολίθι, αυγοτάραχο, δελφίνια στον Αμβρακικό κόλπο και το μυθολογικό Αχέροντα — ένας από τους πλουσιότερους και ανεξερεύνητους προορισμούς της Ελλάδας."
+    },
+    image: "/images/destinations/preveza.webp",
+    overview: {
+      en: "On the 2nd of September, 31 BC, two fleets met in the narrow strait at the mouth of the Ambracian Gulf. Octavian's victory at the Battle of Actium ended the Roman Republic and began the Roman Empire — a single day that shaped the next two millennia of Western civilisation. He built Nikopolis (City of Victory) on the peninsula overlooking the battle site. The ruins are still there, five minutes from modern Preveza.\n\nToday Preveza is a coastal town of 20,000 people sitting at one of the great hinge points of world history. The Ambracian Gulf behind it is a vast protected wetland ecosystem with dolphins, pelicans and flamingos. Monolithi Beach stretches for 22km of uninterrupted golden sand. And the region offers ancient Kassope, the Zalongo monument, the Necromanteion of Acheron, and the finest seafood in Epirus.",
+      el: "Στις 2 Σεπτεμβρίου 31 π.Χ., δύο στόλοι συναντήθηκαν στο στενό της Ακτίου. Η νίκη του Οκταβιανού στη Ναυμαχία του Ακτίου καθόρισε την πορεία του δυτικού κόσμου. Έκτισε τη Νικόπολη στη χερσόνησο που δεσπόζει στο πεδίο της μάχης. Τα ερείπια βρίσκονται εκεί, πέντε λεπτά από τη σύγχρονη Πρέβεζα.\n\nΣήμερα η Πρέβεζα είναι μια παραθαλάσσια πόλη 20.000 κατοίκων. Ο Αμβρακικός κόλπος είναι ένα τεράστιο προστατευμένο οικοσύστημα με δελφίνια, πελεκάνους και φλαμίνγκο. Η παραλία Μονολίθι εκτείνεται για 22 χιλιόμετρα χρυσής άμμου. Η περιοχή προσφέρει την αρχαία Κασσώπη, το μνημείο του Ζαλόγγου, το Νεκρομαντείο του Αχέροντα και τα καλύτερα θαλασσινά της Ηπείρου."
+    },
+    highlights: {
+      en: ["Ancient Nikopolis", "Monolithi Beach — 22km", "Avgotaracho — Greek caviar", "Ambracian Gulf dolphins"],
+      el: ["Αρχαία Νικόπολη", "Παραλία Μονολίθι — 22χλμ", "Αυγοτάραχο — ελληνικό χαβιάρι", "Δελφίνια Αμβρακικού"]
+    },
+    guideLinks: [
+      {
+        href: "/hotels/preveza",
+        label: { en: "Where to Stay in Preveza", el: "Πού να μείνεις στην Πρέβεζα" }
+      }
+    ],
+    featured: true,
+    seo: {
+      title: {
+        en: "Preveza Travel Guide: Nikopolis, Monolithi Beach, Avgotaracho & Things to Do",
+        el: "Πρέβεζα: Οδηγός Ταξιδιού — Νικόπολη, Παραλία Μονολίθι, Αυγοτάραχο & Αξιοθέατα"
+      },
+      description: {
+        en: "Complete travel guide to Preveza and the Ambracian Gulf: why to go, best time to visit, how to get there (PVK airport), top attractions (Ancient Nikopolis, Monolithi Beach, Kassope, Zalongo, Necromanteion), Ambracian Gulf dolphin tours, avgotaracho & local seafood, beaches, practical tips & FAQ.",
+        el: "Πλήρης ταξιδιωτικός οδηγός για Πρέβεζα και Αμβρακικό κόλπο: γιατί αξίζει, καλύτερη εποχή, πώς φτάνεις, κορυφαία αξιοθέατα (Αρχαία Νικόπολη, Μονολίθι, Κασσώπη, Ζάλογγο, Νεκρομαντείο), δελφίνια, αυγοτάραχο & θαλασσινά, παραλίες, πρακτικές συμβουλές & FAQ."
+      }
+    }
+  },
+  {
     slug: "rhodes",
     name: "Rhodes",
     region: { en: "Dodecanese", el: "Δωδεκάνησα" },

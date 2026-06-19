@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Lang, isLang } from "../../../lib/locale";
+import { Lang, isLang, supportedLangs } from "../../../lib/locale";
 import { SITE_URL } from "../../../lib/content";
 import PromotionClient from "./promotion-client";
 
@@ -61,6 +61,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       images: [`${SITE_URL}/images/hero/greece-main.webp`],
     },
   };
+}
+
+export async function generateStaticParams() {
+  return supportedLangs.map((lang) => ({ lang }));
 }
 
 export default function PromotionPage() {

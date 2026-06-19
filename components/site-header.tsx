@@ -54,7 +54,7 @@ export default function SiteHeader() {
   };
 
   const isHome = pathname === `/${lang}` || pathname === `/${lang}/`;
-  const showLangSwitcher = /^\/(en|el)\/(contact|about|privacy-policy)$/.test(pathname);
+  const showLangSwitcher = /^\/(en|el)\/(contact|about|privacy-policy|promotion)$/.test(pathname);
 
   const navItems = useMemo(
     () => [

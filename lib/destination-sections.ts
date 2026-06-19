@@ -12016,4 +12016,428 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       ]
     }
   ],
+
+  preveza: [
+    {
+      title: { en: "Why visit Preveza & the Ambracian Gulf", el: "Γιατί να επισκεφθείς την Πρέβεζα & τον Αμβρακικό" },
+      layout: "numbered",
+      items: [
+        {
+          title: { en: "Nikopolis: the city built on the battle that shaped Western civilisation", el: "Νικόπολη: η πόλη χτισμένη πάνω στη μάχη που καθόρισε τον δυτικό κόσμο" },
+          text: {
+            en: "Ancient Nikopolis is not simply another set of Greek ruins. It is the physical monument to one of the most consequential single days in world history — the site chosen by Octavian Augustus to commemorate his victory at the Battle of Actium (31 BC) that made him master of the Roman world. The ruins are extraordinary in scale: five kilometres of Byzantine city walls, a 6,000-seat theatre, an odeon, a stadium, a monumental arch, thermal baths, and early Christian basilicas with floor mosaics among the finest in Greece.",
+            el: "Η Αρχαία Νικόπολη δεν είναι απλώς άλλα ερείπια. Είναι το μνημείο μιας από τις πιο καθοριστικές ημέρες της παγκόσμιας ιστορίας. Η κλίμακα των ερειπίων είναι εντυπωσιακή: πέντε χιλιόμετρα βυζαντινών τειχών, θέατρο 6.000 θέσεων, ωδείο, στάδιο, αψίδα, θερμές και παλαιοχριστιανικές βασιλικές με ψηφιδωτά δαπέδου από τα ωραιότερα της Ελλάδας."
+          }
+        },
+        {
+          title: { en: "The Ambracian Gulf: dolphins, flamingos and one of Europe's great protected wetlands", el: "Ο Αμβρακικός κόλπος: δελφίνια, φλαμίνγκο και ένας από τους μεγάλους υγροτόπους της Ευρώπης" },
+          text: {
+            en: "The Ambracian Gulf is a vast, near-landlocked inlet covering 400 square kilometres, connected to the Ionian Sea only by the narrow strait at Preveza. Over 200 bird species including flamingos and Dalmatian pelicans inhabit the wetlands, while a resident bottlenose dolphin population — one of the largest in the Mediterranean — makes boat tours from Preveza port consistently remarkable, with sighting success rates exceeding 80%.",
+            el: "Ο Αμβρακικός κόλπος είναι μια τεράστια, σχεδόν κλειστή είσοδος 400 τετραγωνικών χιλιομέτρων. Πάνω από 200 είδη πουλιών κατοικούν στους υγροτόπους, ενώ δελφίνια εμφανίζονται σε ποσοστό άνω του 80% στις κρουαζιέρες από το λιμάνι της Πρέβεζας."
+          }
+        },
+        {
+          title: { en: "Monolithi Beach: 22 kilometres of golden sand", el: "Μονολίθι: 22 χιλιόμετρα χρυσής άμμου" },
+          text: {
+            en: "Monolithi begins a few kilometres north of Preveza and extends uninterrupted for 22 kilometres along the Nikopolis peninsula. Named the safest beach in Europe by the European Commission and Blue Flag certified, it remains largely uncrowded relative to its scale. The northern sections are effectively empty even in August. Beach bars and water sports cluster at the southern end near the Preveza access road.",
+            el: "Το Μονολίθι ξεκινά λίγα χιλιόμετρα βόρεια της Πρέβεζας και εκτείνεται για 22 χιλιόμετρα. Ανακηρύχθηκε η ασφαλέστερη παραλία στην Ευρώπη και έχει βραβευτεί με Γαλάζια Σημαία. Τα βόρεια τμήματα είναι ουσιαστικά άδεια ακόμα και τον Αύγουστο."
+          }
+        },
+        {
+          title: { en: "Avgotaracho: the most prized food product of northwestern Greece", el: "Αυγοτάραχο: το πιο πολύτιμο προϊόν της βορειοδυτικής Ελλάδας" },
+          text: {
+            en: "Avgotaracho is the salted and pressed roe of the grey mullet, produced in the Ambracian Gulf for over a thousand years. It is a Protected Designation of Origin product, comparable in culinary prestige to Italian bottarga. Served in thin slices with warm bread, ouzo or tsipouro, it is the defining meze of Preveza's taverna culture and available at a fraction of the price it commands in Athens.",
+            el: "Το αυγοτάραχο είναι το αλατισμένο και πατημένο αυγό του κεφάλου, που παράγεται στον Αμβρακικό για πάνω από χίλια χρόνια. Προϊόν Προστατευόμενης Ονομασίας Προέλευσης, σερβίρεται σε λεπτές φέτες με ζεστό ψωμί και ούζο."
+          }
+        },
+        {
+          title: { en: "Preveza's old town: a pedestrianised neoclassical centre with genuine evening life", el: "Η παλιά πόλη της Πρέβεζας: ένα νεοκλασικό κέντρο με αυθεντική βραδινή ζωή" },
+          text: {
+            en: "The Saitan Pazar (Devil's Bazaar) district of narrow pedestrian lanes, neoclassical buildings, and ouzeries with tables spilling into the street is one of the most attractive small-town environments in northwestern Greece. The Venetian Clock Tower, the Ottoman courthouse, the harbour promenade and the remains of the Venetian fort all sit within easy walking distance. The evening volta — coffee, aperitivo, dinner at a harbour taverna — unfolds with relaxed civic rhythm.",
+            el: "Η συνοικία Σαϊτάν Παζάρ με τα στενά πεζοδρομημένα δρομάκια, τα νεοκλασικά κτήρια και τα ουζερί με τραπέζια στον δρόμο είναι ένα από τα πιο ελκυστικά περιβάλλοντα μικρής πόλης στη βορειοδυτική Ελλάδα."
+          }
+        },
+        {
+          title: { en: "A mainland base for Lefkada, Parga and the Acheron", el: "Βάση για Λευκάδα, Πάργα και Αχέροντα" },
+          text: {
+            en: "Preveza's position is strategically rich. Lefkada is 20km south via causeway, Parga is 45 minutes by road, the Acheron River — the mythological entrance to the underworld — is 30km north, and the Ionian islands of Kefalonia and Ithaca are reachable from nearby ports. Preveza functions as a gateway to an extraordinary range of landscape and history within a two-hour radius.",
+            el: "Η θέση της Πρέβεζας είναι στρατηγικά πλούσια. Η Λευκάδα βρίσκεται 20χλμ νότια, η Πάργα είναι 45 λεπτά, ο Αχέροντας 30χλμ βόρεια. Η Πρέβεζα λειτουργεί ως πύλη για ένα εξαιρετικό φάσμα τοπίων και ιστορίας."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "Best time to visit", el: "Καλύτερη εποχή για επίσκεψη" },
+      layout: "list",
+      alert: {
+        en: "The Sardine Festival (Σαρδελοπανήγυρη) in August celebrates the papalina — the small sardine unique to the Ambracian Gulf — with music, dancing, wine and free grilled sardines distributed to everyone in the harbour. Check the local calendar for the exact date.",
+        el: "Η Σαρδελοπανήγυρη τον Αύγουστο γιορτάζει την παπαλίνα με μουσική, χορό και δωρεάν ψητές σαρδέλες στο λιμάνι."
+      },
+      items: [
+        {
+          title: { en: "April – May", el: "Απρίλιος – Μάιος" },
+          text: {
+            en: "Ideal for Nikopolis and Kassope without summer heat. Excellent birdwatching in the Ambracian wetlands during peak migration. Acheron gorge canoeing with high water. The sea is not yet warm for sustained swimming.",
+            el: "Ιδανικά για Νικόπολη και Κασσώπη χωρίς καλοκαιρινή ζέστη. Εξαιρετική παρατήρηση πουλιών. Θάλασσα ακόμα δροσερή για μπάνιο."
+          }
+        },
+        {
+          title: { en: "June", el: "Ιούνιος" },
+          text: {
+            en: "Warm, settled and uncrowded. The sea reaches 24-25°C. Monolithi's seasonal beach infrastructure operates. The Nikopolis theatre season often starts. An excellent month with full services and none of the August density.",
+            el: "Ζεστός, ήρεμος, χωρίς πολύ κόσμο. Η θάλασσα φτάνει 24-25°C. Οι υποδομές παραλίας λειτουργούν. Ιδανικός μήνας."
+          }
+        },
+        {
+          title: { en: "July – August", el: "Ιούλιος – Αύγουστος" },
+          text: {
+            en: "Peak season. The town fills with Greek families, Monolithi is animated, waterfront tavernas are at capacity and the Sardine Festival takes place. The gulf is at its warmest. Dolphin boat tours run at maximum frequency.",
+            el: "Περίοδος αιχμής. Η πόλη γεμίζει, το Μονολίθι ζωντανεύει και η Σαρδελοπανήγυρη λαμβάνει χώρα."
+          }
+        },
+        {
+          title: { en: "September", el: "Σεπτέμβριος" },
+          text: {
+            en: "Excellent month. Sea still warm (26°C), crowds thinning after the first week, tavernas operating normally, prices dropping. Birdwatching improves with autumn migration. Nikopolis in September light is exceptional for photography.",
+            el: "Εξαιρετικός μήνας. Θάλασσα ζεστή, πλήθη αραιώνουν, τιμές πέφτουν. Η Νικόπολη στο φως του Σεπτεμβρίου είναι εξαιρετική."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "How to get there", el: "Πώς να φτάσεις" },
+      layout: "grid",
+      alert: {
+        en: "Preveza is connected to the mainland via Greece's first undersea road tunnel, running beneath the strait of Actium. Approximately 500 metres long, it takes about 45 seconds — a pleasing transition from mainland Epirus to the Preveza peninsula.",
+        el: "Η Πρέβεζα συνδέεται με την ηπειρωτική Ελλάδα μέσω της πρώτης υποθαλάσσιας σήραγγας της χώρας, κάτω από το στενό της Ακτίου."
+      },
+      items: [
+        {
+          title: { en: "By air — Aktion Airport (PVK)", el: "Αεροπορικώς — Αεροδρόμιο Ακτίου (PVK)" },
+          text: {
+            en: "Aktion Airport sits on the Aktio promontory across the Gulf, connected to Preveza by the undersea tunnel. Domestic flights from Athens take approximately 50 minutes. International charter flights from the UK, Germany and Scandinavia arrive in summer. Car rental is available at the airport.",
+            el: "Το αεροδρόμιο Ακτίου συνδέεται με την Πρέβεζα μέσω της υποθαλάσσιας σήραγγας. Πτήσεις από Αθήνα διαρκούν περίπου 50 λεπτά."
+          }
+        },
+        {
+          title: { en: "By road from Athens", el: "Οδικώς από Αθήνα" },
+          text: {
+            en: "Approximately 370km via the Ionian Motorway (A5) — around 4 hours. The Ionian Motorway is one of Greece's most scenic driving routes, passing through the mountains of Epirus before descending to the coast. Well-maintained and largely toll-based.",
+            el: "Περίπου 370χλμ μέσω της Ιονίας Οδού (Α5) — περίπου 4 ώρες. Ένας από τους πιο γραφικούς αυτοκινητόδρομους της Ελλάδας."
+          }
+        },
+        {
+          title: { en: "By KTEL bus", el: "Με ΚΤΕΛ" },
+          text: {
+            en: "Regular services from Athens (6.5 hours), Ioannina (1.5 hours), Arta (1 hour) and Lefkada (30 minutes). Practical for those without a car, though exploring the region's archaeological sites and beaches requires either a rental car or organised tours.",
+            el: "Τακτικά δρομολόγια από Αθήνα, Ιωάννινα, Άρτα και Λευκάδα. Για εξερεύνηση της περιοχής χρειάζεται ενοικίαση αυτοκινήτου."
+          }
+        },
+        {
+          title: { en: "The Aktio ferry & island connections", el: "Το φέρι Ακτίου & συνδέσεις με νησιά" },
+          text: {
+            en: "A small car ferry crosses the strait between Preveza and Aktio throughout the day (5 minutes). Serves both pedestrians and vehicles as an alternative to the tunnel. Seasonal boat connections to Lefkada, Kefalonia and Ithaca from nearby ports.",
+            el: "Ένα μικρό φέρι διασχίζει το στενό Πρέβεζας-Ακτίου σε 5 λεπτά. Εποχικές συνδέσεις με Λευκάδα, Κεφαλονιά και Ιθάκη."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "Top attractions & experiences", el: "Κορυφαία αξιοθέατα & εμπειρίες" },
+      layout: "numbered",
+      items: [
+        {
+          title: { en: "Ancient Nikopolis & the Archaeological Museum", el: "Αρχαία Νικόπολη & Αρχαιολογικό Μουσείο" },
+          text: {
+            en: "The ruins extend across the peninsula south of Preveza — a vast archaeological landscape of Roman and Byzantine remains. The theatre, odeon, stadium and thermal baths are enclosed by the Byzantine walls. The early Christian basilicas contain floor mosaics of extraordinary quality. Budget a half-day minimum for the combined site and museum visit.",
+            el: "Τα ερείπια εκτείνονται στη χερσόνησο νότια της Πρέβεζας. Το θέατρο, το ωδείο, το στάδιο και οι θερμές περικλείονται από βυζαντινά τείχη. Αφιερώστε μισή μέρα για τον συνδυασμένο χώρο και μουσείο."
+          }
+        },
+        {
+          title: { en: "Ambracian Gulf boat tours — dolphins and wetlands", el: "Κρουαζιέρες στον Αμβρακικό — δελφίνια και υγρότοποι" },
+          text: {
+            en: "Boat tours from Preveza port explore the gulf's enclosed waters where bottlenose dolphins are resident year-round — sighting success rates above 80%. The same trips pass bird-rich lagoon areas with flamingos and pelicans, anchor in hidden coves for swimming, and serve fresh local seafood.",
+            el: "Κρουαζιέρες από το λιμάνι της Πρέβεζας εξερευνούν τα νερά του Αμβρακικού όπου δελφίνια ζουν μόνιμα. Τα ίδια δρομολόγια περνούν από λιμνοθάλασσες με φλαμίνγκο και πελεκάνους."
+          }
+        },
+        {
+          title: { en: "Ancient Kassope — the best view in Epirus", el: "Αρχαία Κασσώπη — η καλύτερη θέα της Ηπείρου" },
+          text: {
+            en: "Twenty kilometres north of Preveza, the Hellenistic city of Kassope occupies a dramatic hillside above Kamarina. Founded in the 4th century BC, it was one of the most completely planned Hellenistic cities in Greece. But it is the view that makes it unforgettable: the Ambracian Gulf, Ionian Sea, Lefkada and Epirus mountains occupy 270 degrees simultaneously.",
+            el: "Είκοσι χιλιόμετρα βόρεια της Πρέβεζας, η ελληνιστική Κασσώπη δεσπόζει σε μια δραματική πλαγιά. Ιδρύθηκε τον 4ο αιώνα π.Χ. και η θέα από την επάνω βεράντα είναι αξέχαστη: Αμβρακικός, Ιόνιο, Λευκάδα και βουνά Ηπείρου."
+          }
+        },
+        {
+          title: { en: "The Necromanteion of Acheron", el: "Το Νεκρομαντείο του Αχέροντα" },
+          text: {
+            en: "At the confluence of three rivers near Ammoudia, the ancients located the entrance to the underworld. The Oracle of the Dead was a sanctuary where petitioners underwent elaborate rituals before descending to receive messages from the deceased. The Acheron gorge upstream offers kayaking through a mythologically charged landscape.",
+            el: "Στη συμβολή τριών ποταμών, οι αρχαίοι τοποθετούσαν την είσοδο του Άδη. Το Νεκρομαντείο ήταν ιερό όπου οι επισκέπτες κατέβαιναν σε υπόγειο θάλαμο για να λάβουν μηνύματα από τους νεκρούς."
+          }
+        },
+        {
+          title: { en: "Zalongo — the monument, the monastery and 412 steps", el: "Ζάλογγο — το μνημείο, η μονή και 412 σκαλοπάτια" },
+          text: {
+            en: "Above Kamarina, the rock of Zalongo rises dramatically. In 1803, Souliot women leapt to their deaths rather than surrender to Ottoman forces. A monumental sculpture by Georgios Zongolopoulos stands at the summit, reached by 412 steps. The 18th-century monastery of Agios Dimitrios sits in the woodland below.",
+            el: "Πάνω από την Καμαρίνα, ο βράχος του Ζαλόγγου υψώνεται δραματικά. Το 1803, Σουλιώτισσες χόρεψαν στον γκρεμό. Ένα μνημείο του Γεωργίου Ζογγολόπουλου βρίσκεται στην κορυφή."
+          }
+        },
+        {
+          title: { en: "Preveza old town & the Saitan Pazar ouzeries", el: "Παλιά Πόλη & ουζερί Σαϊτάν Παζάρ" },
+          text: {
+            en: "The pedestrianised lanes of Preveza's historic centre contain a concentration of ouzeries and meze tavernas that constitutes one of the finest small-town eating environments in Epirus. The evening ritual — ouzeries opening at 18:00, locals appearing for tsipouro and meze, taverna tables filling from 20:00 — is the most authentic version of Greek provincial town life.",
+            el: "Τα πεζοδρομημένα δρομάκια του ιστορικού κέντρου φιλοξενούν μια συγκέντρωση ουζερί που αποτελεί ένα από τα ωραιότερα περιβάλλοντα φαγητού στην Ήπειρο."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "Best beaches", el: "Καλύτερες παραλίες" },
+      layout: "list",
+      alert: {
+        en: "The Preveza peninsula's beaches face the Ionian Sea to the west — the evening light on the water is among the finest in northwestern Greece. Beach visits after 17:00 are as rewarding as midday swimming.",
+        el: "Οι παραλίες της χερσονήσου βλέπουν δυτικά στο Ιόνιο — το απογευματινό φως στο νερό είναι από τα ωραιότερα."
+      },
+      items: [
+        {
+          title: { en: "Monolithi", el: "Μονολίθι" },
+          text: {
+            en: "22km of uninterrupted golden sand — one of Europe's longest beaches — beginning 5km north of Preveza. Named safest beach in Europe. The northern sections are effectively empty even in August. Beach bars and water sports cluster at the southern end.",
+            el: "22 χιλιόμετρα συνεχόμενης χρυσής άμμου. Τα βόρεια τμήματα είναι άδεια ακόμα και τον Αύγουστο."
+          }
+        },
+        {
+          title: { en: "Alonaki", el: "Αλωνάκι" },
+          text: {
+            en: "A compact, sheltered bay with exceptionally clear water and white-rock formations at its edges. The enclosed geology creates calm water even when the Ionian is rough. Less organised than Monolithi and more intimate.",
+            el: "Μικρός προστατευμένος όρμος με εξαιρετικά καθαρό νερό και λευκούς βραχώδεις σχηματισμούς."
+          }
+        },
+        {
+          title: { en: "Kastrosykia", el: "Καστροσυκιά" },
+          text: {
+            en: "A Blue Flag organised beach north of Preveza, near the base of the Zalongo rock and close to the ruins of Kassope — the natural rest point in a day combining archaeology with swimming.",
+            el: "Οργανωμένη παραλία με Γαλάζια Σημαία βόρεια της Πρέβεζας, κοντά στο Ζάλογγο και την Κασσώπη."
+          }
+        },
+        {
+          title: { en: "Vrachos – Loutsa", el: "Βράχος – Λούτσα" },
+          text: {
+            en: "Further north toward Parga, a long, relatively undiscovered beach. Fine sand, clear water, seasonal tavernas and a largely Greek clientele in summer. A good destination for a full day combined with a lunch stop.",
+            el: "Μακριά, σχετικά ανεξερεύνητη παραλία βόρεια προς Πάργα. Ψιλή άμμος και ταβέρνες."
+          }
+        },
+        {
+          title: { en: "Lygia & Kanali", el: "Λυγιά & Κανάλι" },
+          text: {
+            en: "Two beaches on the Preveza bay side, sheltered by the Gulf's enclosed waters with calmer conditions than the exposed Ionian coast. Good for families with young children who prefer still water.",
+            el: "Δύο παραλίες στην πλευρά του κόλπου, προστατευμένες από τα ήρεμα νερά. Καλές για οικογένειες με μικρά παιδιά."
+          }
+        },
+        {
+          title: { en: "Agios Sostis", el: "Άγιος Σώστης" },
+          text: {
+            en: "A quieter sandy beach south of Monolithi with fewer facilities and a more local character. Preferred by residents who know Monolithi's peak-season dynamics and seek the same water quality with fewer visitors.",
+            el: "Πιο ήσυχη αμμουδιά νότια του Μονολιθίου. Προτιμάται από ντόπιους."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "Local food & drink", el: "Τοπικό φαγητό & ποτό" },
+      layout: "list",
+      alert: {
+        en: "The Saitan Pazar ouzeries typically do not open for dinner until 20:00 and are at their best between 21:00 and 23:00 — the rhythm of Greek provincial town life, entirely different from Cycladic tourist-resort timing.",
+        el: "Τα ουζερί του Σαϊτάν Παζάρ ανοίγουν για δείπνο γύρω στις 20:00 και είναι καλύτερα μεταξύ 21:00-23:00."
+      },
+      items: [
+        {
+          title: { en: "Avgotaracho — Greek bottarga", el: "Αυγοτάραχο" },
+          text: {
+            en: "The cured roe of the Ambracian Gulf grey mullet — PDO product produced for over a thousand years. Served in thin slices on warm bread with ouzo or tsipouro. Available in Preveza delicatessens at a fraction of its Athens price.",
+            el: "Το ωοθήκη του κεφάλου του Αμβρακικού — ΠΟΠ προϊόν. Σερβίρεται σε φέτες με ζεστό ψωμί."
+          }
+        },
+        {
+          title: { en: "Ambracian gambari (gulf prawns)", el: "Γαμπάρια Αμβρακικού" },
+          text: {
+            en: "The large, sweet prawns of the Ambracian Gulf are a trademark of the region. Served grilled or in tomato sauce at harbour tavernas. The gulf's nutrient-rich waters produce prawns of exceptional sweetness.",
+            el: "Οι μεγάλες, γλυκές γαρίδες του Αμβρακικού σερβίρονται ψητές ή με ντοματική σάλτσα."
+          }
+        },
+        {
+          title: { en: "Papalina — the Ambracian sardine", el: "Παπαλίνα" },
+          text: {
+            en: "A small sardine unique to the Gulf, grilled over charcoal with lemon and oregano. The August Sardine Festival celebrates it specifically — fish distributed free to everyone in the harbour.",
+            el: "Μικρή σαρδέλα μοναδική στον κόλπο, ψητή στα κάρβουνα. Η Σαρδελοπανήγυρη τον Αύγουστο τη γιορτάζει."
+          }
+        },
+        {
+          title: { en: "Kefalos petali & smoked eel", el: "Κέφαλος πετάλι & καπνιστό χέλι" },
+          text: {
+            en: "Kefalos petali is butterflied grey mullet, sun-dried briefly and grilled whole. Smoked eel from the Gulf lagoons is an older Preveza speciality, still produced by a handful of traditional smokehouses.",
+            el: "Ο κέφαλος πετάλι είναι άνοιγμα ψαριού στον ήλιο. Το καπνιστό χέλι παραμένει παράδοση."
+          }
+        },
+        {
+          title: { en: "Epirus olive oil & ouzo meze", el: "Ελαιόλαδο Ηπείρου & μεζέδες" },
+          text: {
+            en: "The Saitan Pazar ouzeries serve a meze spread built around Epirus olive oil, local cheese (graviera, fresh manouri), grilled cuttlefish, zucchini fritters and bekri meze.",
+            el: "Τα ουζερί προσφέρουν μεζέδες με λάδι Ηπείρου, ντόπια τυριά, καλαμάρι και κολοκυθοκεφτέδες."
+          }
+        },
+        {
+          title: { en: "Tsipouro & the Saturday market", el: "Τσίπουρο & λαϊκή αγορά" },
+          text: {
+            en: "Local tsipouro distilled by family operations across Preveza. The Saturday farmers' market offers seasonal produce, local honey, herbs, and fresh fish directly from the Gulf boats.",
+            el: "Τοπικό τσίπουρο και λαϊκή αγορά Σαββάτου με εποχικά προϊόντα, μέλι και φρέσκο ψάρι."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "Day trips from Preveza", el: "Ημερήσιες εκδρομές από την Πρέβεζα" },
+      layout: "grid",
+      items: [
+        {
+          title: { en: "Lefkada — beaches & island atmosphere", el: "Λευκάδα — παραλίες & νησιώτικη ατμόσφαιρα" },
+          text: {
+            en: "20km · 30 min · no ferry needed. The only Ionian island connected by causeway. Porto Katsiki and Egremni beaches are among the most dramatic cliffside beaches in Greece.",
+            el: "20χλμ · 30 λεπτά · χωρίς πλοίο. Μοναδικό ιόνιο νησί με οδική πρόσβαση."
+          }
+        },
+        {
+          title: { en: "Parga — the most beautiful harbour town in Epirus", el: "Πάργα — το ωραιότερο λιμάνι της Ηπείρου" },
+          text: {
+            en: "45km · 50 min. Hillside harbour town with colourful waterfront houses, a Venetian castle and a festive evening atmosphere. Combine with Kassope and the Necromanteion.",
+            el: "45χλμ · 50 λεπτά. Παραθαλάσσια πόλη με πολύχρωμα σπίτια, ενετικό κάστρο και ζωντανή ατμόσφαιρα."
+          }
+        },
+        {
+          title: { en: "Acheron Gorge — kayak the mythological underworld", el: "Φαράγγι Αχέροντα — καγιάκ στον μυθολογικό Κάτω Κόσμο" },
+          text: {
+            en: "35km · 40 min. Kayaking through the gorge identified in ancient texts as one of the rivers of the underworld. Green water, limestone walls, birdsong. Full-day guided trips from Glykis.",
+            el: "35χλμ · 40 λεπτά. Καγιάκ στο ποτάμι που ταύτιζαν με τον Άδη."
+          }
+        },
+        {
+          title: { en: "Arta — Byzantine bridges & Epirus capital", el: "Άρτα — βυζαντινά γεφύρια & πρωτεύουσα Ηπείρου" },
+          text: {
+            en: "70km · 1 hr. The 13th-century stone bridge, Byzantine citadel, church of Panagia Paregoretissa, and a lively old town.",
+            el: "70χλμ · 1 ώρα. Το γεφύρι της Άρτας, βυζαντινή ακρόπολη και Παναγία Παρηγορήτισσα."
+          }
+        },
+        {
+          title: { en: "Ioannina — the Ottoman lakeside city", el: "Ιωάννινα — οθωμανική πόλη στη λίμνη" },
+          text: {
+            en: "100km · 90 min. Walled citadel with Ottoman mosques, Byzantine churches and the tomb of Ali Pasha. The island in the lake (by boat) is where Ali Pasha was shot in 1822.",
+            el: "100χλμ · 90 λεπτά. Οχυρωμένο κάστρο με οθωμανικά τζαμιά."
+          }
+        },
+        {
+          title: { en: "Kefalonia & Ithaca by ferry", el: "Κεφαλονιά & Ιθάκη με πλοίο" },
+          text: {
+            en: "Seasonal ferry connections from nearby ports. Myrtos Beach and Vathy harbour are reachable as ambitious day trips or overnight excursions. Check current timetables.",
+            el: "Εποχικές συνδέσεις. Μύρτος και Βαθύ Ιθάκης ως ημερήσιες ή διήμερες εκδρομές."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "Practical tips", el: "Πρακτικές συμβουλές" },
+      layout: "list",
+      items: [
+        {
+          title: { en: "Rent a car on arrival", el: "Νοίκιασε αυτοκίνητο" },
+          text: {
+            en: "The region's best experiences — Kassope, Necromanteion, Zalongo, northern beaches, Acheron gorge — are spread across a large area. Most visitors find a car essential after day one.",
+            el: "Οι καλύτερες εμπειρίες είναι διάσπαρτες σε μεγάλη έκταση. Οι περισσότεροι βρίσκουν αυτοκίνητο απαραίτητο."
+          }
+        },
+        {
+          title: { en: "Visit Nikopolis early or late", el: "Επίσκεψη στη Νικόπολη νωρίς ή αργά" },
+          text: {
+            en: "The site is large and exposed. Visit at opening (08:00) or in the last two hours. Bring water and sun protection. Allow 2-3 hours including the museum.",
+            el: "Ο χώρος είναι μεγάλος και εκτεθειμένος. Επισκεφθείτε το πρωί ή το απόγευμα."
+          }
+        },
+        {
+          title: { en: "Book the dolphin cruise in advance", el: "Κλείστε την κρουαζιέρα δελφινιών νωρίς" },
+          text: {
+            en: "Particularly for July-August. The morning departure offers better dolphin-spotting conditions and avoids the afternoon heat. Contact Amvrakikos Cruises directly or through your hotel.",
+            el: "Ειδικά για Ιούλιο-Αύγουστο. Η πρωινή αναχώρηση έχει καλύτερες συνθήκες."
+          }
+        },
+        {
+          title: { en: "Buy avgotaracho directly", el: "Αγοράστε αυγοτάραχο απευθείας" },
+          text: {
+            en: "Available at local delicatessens in Preveza old town at significantly lower prices than in Athens. Ask at the harbour market for that week's production.",
+            el: "Διαθέσιμο σε ντελικατέσεν της παλιάς πόλης σε πολύ χαμηλότερες τιμές."
+          }
+        },
+        {
+          title: { en: "Saitan Pazar dining hours", el: "Ώρες φαγητού στο Σαϊτάν Παζάρ" },
+          text: {
+            en: "Ouzeries typically do not open until 20:00 and are at their best between 21:00-23:00. Arriving hungry at 19:00 will find most places still setting up.",
+            el: "Τα ουζερί ανοίγουν στις 20:00 και είναι καλύτερα 21:00-23:00."
+          }
+        },
+        {
+          title: { en: "Birdwatching timing", el: "Παρατήρηση πουλιών" },
+          text: {
+            en: "Most productive in spring (April-May) for peak migration and autumn (September-October) for the return. The lagoon areas around the River Louros estuary near Arta are the most accessible without a guide.",
+            el: "Πιο παραγωγικά την άνοιξη (Απρίλιος-Μάιος) και το φθινόπωρο (Σεπτέμβριος-Οκτώβριος)."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "FAQ", el: "Συχνές Ερωτήσεις" },
+      layout: "faq",
+      items: [
+        {
+          title: { en: "What is Preveza famous for?", el: "Για τι φημίζεται η Πρέβεζα;" },
+          text: {
+            en: "Preveza is famous for three things: Nikopolis (the Roman city founded by Octavian after the Battle of Actium), Monolithi Beach (22km, one of Europe's longest), and avgotaracho (cured grey mullet roe, PDO product from the Ambracian Gulf).",
+            el: "Η Πρέβεζα φημίζεται για τη Νικόπολη, το Μονολίθι (22χλμ) και το αυγοτάραχο (ΠΟΠ)."
+          }
+        },
+        {
+          title: { en: "How do you get to Preveza?", el: "Πώς φτάνεις στην Πρέβεζα;" },
+          text: {
+            en: "Aktion Airport (PVK) serves domestic flights from Athens (50 min) and international charters in summer. By road, 370km from Athens (4 hours) via the Ionian Motorway. KTEL buses connect Preveza with Athens, Ioannina, Arta and Lefkada.",
+            el: "Αεροδρόμιο Ακτίου (PVK) με πτήσεις από Αθήνα. Οδικώς 370χλμ από Αθήνα. ΚΤΕΛ από Αθήνα, Ιωάννινα, Άρτα."
+          }
+        },
+        {
+          title: { en: "When is the best time to visit Preveza?", el: "Ποια είναι η καλύτερη εποχή;" },
+          text: {
+            en: "May, June and September offer beach weather without peak-season crowds. July-August is busy with the Sardine Festival. Spring is excellent for birdwatching. September combines warm sea with thinning crowds.",
+            el: "Μάιος, Ιούνιος και Σεπτέμβριος για καλό καιρό και λιγότερο κόσμο. Ιούλιος-Αύγουστος με Σαρδελοπανήγυρη."
+          }
+        },
+        {
+          title: { en: "What is the Battle of Actium?", el: "Τι ήταν η Ναυμαχία του Ακτίου;" },
+          text: {
+            en: "Fought on 2 September 31 BC in the strait at the mouth of the Ambracian Gulf. Octavian's fleet defeated Mark Antony and Cleopatra, ending the Roman Republic and beginning the Roman Empire. Octavian built Nikopolis on the adjacent peninsula — the ruins remain 5km from Preveza.",
+            el: "Μάχη 2 Σεπτεμβρίου 31 π.Χ. στο στενό του Αμβρακικού. Ο Οκταβιανός νίκησε τον Αντώνιο και την Κλεοπάτρα."
+          }
+        },
+        {
+          title: { en: "How many days do I need in Preveza?", el: "Πόσες μέρες χρειάζομαι;" },
+          text: {
+            en: "Three to five days covers the immediate area well. Preveza also works as a week-long base for a full northwestern Greece road trip combining the city with Parga, Lefkada, Ioannina and the Acheron.",
+            el: "Τρεις με πέντε μέρες καλύπτουν την περιοχή. Η Πρέβεζα λειτουργεί και ως βάση για road trip στη βορειοδυτική Ελλάδα."
+          }
+        }
+      ]
+    },
+    {
+      layout: "list",
+      title: { en: "Honest Advice — What to Skip in Preveza", el: "Ειλικρινής Συμβουλή — Τι να Αποφύγεις στην Πρέβεζα" },
+      text: {
+        en: "✕ **Visiting Nikopolis without the museum** — The archaeological site and the museum are conceptually inseparable. The site gives you the physical scale; the museum provides the context. Visiting one without the other is like reading half a book. They are adjacent; allocate time for both.\n\n✕ **Treating Monolithi as a single beach** — At 22km, Monolithi is not a single experience. The southern end near Preveza has beach bars and crowds. The northern sections are functionally empty even in August with identical water quality. Drive north.\n\n✕ **Overlooking the ouzeries for harbour-front tourist tavernas** — The tavernas on the main waterfront promenade cater to tourists. The ouzeries in the Saitan Pazar lanes, a 3-minute walk inland, serve the same seafood at lower prices to a local clientele.\n\n✕ **Skipping the Acheron river for another beach day** — The Acheron gorge kayaking experience is one of the most distinctive things in northwestern Greece — the combination of mythological identity, limestone canyon scenery and the physical experience of paddling it is not replicable.\n\n💡 What nobody tells you: The Ambracian Gulf at night — viewed from Pantocrator Castle above the town, or from any elevated point — looks nothing like the Aegean. It looks like a lake: entirely enclosed, mirror-still, with the lights of Arta and Epirus villages reflected and the Milky Way visible. One of the finest night-sky viewing positions in mainland Greece, and almost no visitor knows to go there after dark.",
+        el: "✕ **Επίσκεψη Νικόπολης χωρίς μουσείο** — Ο χώρος και το μουσείο είναι αχώριστα.\n\n✕ **Το Μονολίθι ως μία παραλία** — 22χλμ, το νότιο τμήμα έχει beach bars, το βόρειο είναι άδειο.\n\n✕ **Παραβλέπεις τα ουζερί για τα τουριστικά εστιατόρια** — Τα ουζερί στο Σαϊτάν Παζάρ σερβίρουν τα ίδια θαλασσινά φθηνότερα.\n\n✕ **Παραλείπεις τον Αχέροντα για άλλη μέρα στην παραλία** — Το καγιάκ στο φαράγγι είναι μοναδική εμπειρία.\n\n💡 Αυτό που δε σου λέει κανείς: Ο Αμβρακικός τη νύχτα από το κάστρο του Παντοκράτορα μοιάζει με λίμνη — ήρεμος, με τα φώτα της Άρτας να καθρεφτίζονται και τον Γαλαξία ορατό."
+      }
+    }
+  ],
 };
