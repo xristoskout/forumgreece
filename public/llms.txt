@@ -1,0 +1,85 @@
+# GoGreeceNow
+
+> Greece travel guide, destinations and local experiences. GoGreeceNow connects international visitors with hotels, tours, restaurants and local experiences across Greece through trusted destination guides.
+
+## Core Pages
+
+- [Home](https://www.gogreecenow.com/en)
+- [About](https://www.gogreecenow.com/en/about)
+- [Contact](https://www.gogreecenow.com/en/contact)
+- [Privacy Policy](https://www.gogreecenow.com/en/privacy-policy)
+- [Promotion](https://www.gogreecenow.com/en/promotion)
+- [Trip Planner](https://www.gogreecenow.com/en/trip-planner)
+- [Travel Tools](https://www.gogreecenow.com/en/travel-tools)
+
+## Destinations
+
+- [Santorini](https://www.gogreecenow.com/en/destinations/santorini)
+- [Mykonos](https://www.gogreecenow.com/en/destinations/mykonos)
+- [Crete](https://www.gogreecenow.com/en/destinations/crete)
+- [Athens](https://www.gogreecenow.com/en/destinations/athens)
+- [Kefalonia](https://www.gogreecenow.com/en/destinations/kefalonia)
+- [Corfu](https://www.gogreecenow.com/en/destinations/corfu)
+- [Rhodes](https://www.gogreecenow.com/en/destinations/rhodes)
+- [Thessaloniki](https://www.gogreecenow.com/en/destinations/thessaloniki)
+- [Nafplio](https://www.gogreecenow.com/en/destinations/nafplio)
+- [Paros](https://www.gogreecenow.com/en/destinations/paros)
+- [Naxos](https://www.gogreecenow.com/en/destinations/naxos)
+- [Milos](https://www.gogreecenow.com/en/destinations/milos)
+- [Zakynthos](https://www.gogreecenow.com/en/destinations/zakynthos)
+- [Lefkada](https://www.gogreecenow.com/en/destinations/lefkada)
+- [Halkidiki](https://www.gogreecenow.com/en/destinations/halkidiki)
+- [Meteora](https://www.gogreecenow.com/en/destinations/meteora)
+- [Monemvasia](https://www.gogreecenow.com/en/destinations/monemvasia)
+- [Chania](https://www.gogreecenow.com/en/destinations/chania)
+- [Parga](https://www.gogreecenow.com/en/destinations/parga)
+- [Delphi](https://www.gogreecenow.com/en/destinations/delphi)
+- [Patras](https://www.gogreecenow.com/en/destinations/patras)
+- [Chios](https://www.gogreecenow.com/en/destinations/chios)
+- [All Destinations](https://www.gogreecenow.com/en/destinations)
+
+## Travel Info
+
+- [How to Get to Greece](https://www.gogreecenow.com/en/travel-info/how-to-get-to-greece)
+- [Best Time to Visit Greece](https://www.gogreecenow.com/en/travel-info/best-time-to-visit-greece)
+- [Getting Around Greece](https://www.gogreecenow.com/en/travel-info/getting-around-greece)
+- [First Time in Greece](https://www.gogreecenow.com/en/travel-info/first-time-in-greece)
+- [Greece Trip Planning Checklist](https://www.gogreecenow.com/en/travel-info/greece-trip-planning-checklist)
+- [7 and 10 Days in Greece Itineraries](https://www.gogreecenow.com/en/travel-info/7-and-10-days-in-greece)
+- [Family Travel in Greece](https://www.gogreecenow.com/en/travel-info/family-travel-in-greece)
+- [Honeymoon in Greece](https://www.gogreecenow.com/en/travel-info/honeymoon-in-greece)
+- [Solo Travel in Greece](https://www.gogreecenow.com/en/travel-info/solo-travel-in-greece)
+- [Greece Travel Budget](https://www.gogreecenow.com/en/travel-info/greece-travel-budget)
+- [Greece Island Hopping Guide](https://www.gogreecenow.com/en/travel-info/greece-island-hopping)
+- [Visa & Entry Requirements](https://www.gogreecenow.com/en/travel-info/greece-visa-entry-requirements)
+- [Hidden Greek Islands](https://www.gogreecenow.com/en/travel-info/hidden-greek-islands)
+
+## Tours & Experiences
+
+- [Athens Tours](https://www.gogreecenow.com/en/tours/athens-tours)
+- [Santorini Tours](https://www.gogreecenow.com/en/tours/santorini-tours)
+- [Mykonos Tours](https://www.gogreecenow.com/en/tours/mykonos-tours)
+- [Crete Tours](https://www.gogreecenow.com/en/tours/crete-tours)
+- [Kefalonia Tours](https://www.gogreecenow.com/en/tours/kefalonia-tours)
+- [Rhodes Tours](https://www.gogreecenow.com/en/tours/rhodes-tours)
+- [Lesvos Tours](https://www.gogreecenow.com/en/tours/lesvos-tours)
+- [All Tours Directory](https://www.gogreecenow.com/en/tours/all)
+
+## Hotels
+
+- [Hotels Guide](https://www.gogreecenow.com/en/hotels)
+
+## Local Businesses
+
+- [Iren Rooms — Lesvos](https://www.gogreecenow.com/en/businesses/iren-rooms)
+- [Rolling Into The Blue — Kefalonia](https://www.gogreecenow.com/en/businesses/rolling-into-the-blue)
+- [Taxi Express Patras](https://www.gogreecenow.com/en/businesses/taxi-express-patras)
+- [Papadellis Olive Oil — Lesvos](https://www.gogreecenow.com/en/businesses/papadellis-olive-oil)
+- [Vintage Wedding Cars — Nafpaktos](https://www.gogreecenow.com/en/businesses/vintage-wedding-cars)
+
+## Collections
+
+- [Greek Islands](https://www.gogreecenow.com/en/collections/greek-islands)
+- [Food & Drink](https://www.gogreecenow.com/en/collections/greece-food-and-drink)
+- [Tours & Experiences](https://www.gogreecenow.com/en/collections/greece-tours-and-experiences)
+- [Travel Planning](https://www.gogreecenow.com/en/collections/greece-travel-planning)

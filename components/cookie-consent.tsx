@@ -51,9 +51,9 @@ export default function CookieConsent() {
             We use cookies to improve your experience on GoGreeceNow. By continuing, you accept our use of cookies.{" "}
             <Link
               href={`/${lang}/privacy-policy`}
-              className="underline text-indigo-600 hover:text-indigo-800"
+               className="underline text-indigo-600 hover:text-indigo-800"
             >
-              Learn more
+              Privacy Policy
             </Link>
           </p>
           <div className="flex shrink-0 gap-3">
