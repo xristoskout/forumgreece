@@ -617,7 +617,7 @@ export default function PromotionClient() {
                 <ul className="mb-7 space-y-2">
                   {[
                     t.comp_yes[lang] + " Everything in Premium, PLUS:",
-                    t.comp_yes[lang] + " Unlimited photos",
+                    t.comp_yes[lang] + " Up to 45 photos",
                     t.comp_yes[lang] + " Mention in a blog article",
                     t.comp_yes[lang] + " Dedicated social media post",
                     t.comp_yes[lang] + " Top position in category",
@@ -635,6 +635,11 @@ export default function PromotionClient() {
                 </button>
               </div>
             </div>
+            <p className="text-center text-[13px] text-[#94a3b8] mt-8">
+              {lang === "el"
+                ? "Οι παραπάνω τιμές δεν συμπεριλαμβάνουν ΦΠΑ 24%."
+                : "Prices do not include 24% VAT."}
+            </p>
           </div>
         </section>
 

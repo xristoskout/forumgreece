@@ -197,7 +197,9 @@ export default async function DestinationsListingPage({ params }: Props) {
     byRegion[key] = val;
   }
 
-  const activeRegions = regionOrder.filter((r) => byRegionMap.has(r.key));
+  const activeRegions = regionOrder
+    .filter((r) => byRegionMap.has(r.key))
+    .sort((a, b) => a.label.en.localeCompare(b.label.en));
 
   const breadcrumb = breadcrumbSchema(lang, [
     { label: lang === "en" ? "Home" : "Αρχική", path: "" },
