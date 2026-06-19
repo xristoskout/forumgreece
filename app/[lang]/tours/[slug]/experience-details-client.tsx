@@ -192,101 +192,6 @@ export default function ExperienceDetailsClient({
               </p>
             </article>
 
-            {sortedBusinesses.length > 0 && (
-              <article className="rounded-[28px] border border-slate-200 bg-white backdrop-blur-md p-8 shadow-sm">
-                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700">
-                  {lang === "en" ? "Our Recommended Local Experiences" : "Οι Προτεινόμενες Τοπικές μας Εμπειρίες"}
-                </p>
-                
-                {landing.recommendedIntro && (
-                  <p className="mt-3 text-base leading-8 text-slate-500">
-                    {landing.recommendedIntro[lang]}
-                  </p>
-                )}
-
-                <div className="mt-6 space-y-8">
-                  {sortedBusinesses.map((business) => {
-                    const businessHref =
-                      business.href || `/businesses/${business.slug}`;
-
-                    return (
-                      <article
-                        key={business.slug}
-                        className="overflow-hidden rounded-[28px] border border-slate-200 bg-white hover:bg-slate-50 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
-                      >
-                        <div className="grid gap-0 lg:grid-cols-[1fr_1.1fr]">
-                          <div className="relative min-h-[280px] h-[260px] w-full bg-slate-100 sm:h-[320px] lg:h-full">
-                            {business.slug === "rolling-into-the-blue" && (
-                              <div className="absolute top-3 left-3 z-10">
-                                <svg className="w-8 h-8 drop-shadow-lg" viewBox="0 0 24 24" fill="#ef4444"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-                              </div>
-                            )}
-                            <Image
-                              src={business.image}
-                              alt={business.name}
-                              fill
-                              className="object-cover"
-                              sizes="(max-width: 1024px) 100vw, 40vw"
-                            />
-                          </div>
-
-                          <div className="flex flex-col justify-between p-6 md:p-8">
-                            <div>
-                              <div className="flex flex-wrap items-center justify-between gap-3">
-                                <div>
-                                  <div className="text-sm font-semibold uppercase tracking-[0.18em] text-indigo-700">
-                                    {business.category[lang]}
-                                  </div>
-
-                                  <h3 className="mt-2 text-2xl font-bold text-slate-900 md:text-3xl">
-                                    {business.name}
-                                  </h3>
-
-                                  <p className="mt-3 text-sm font-medium text-slate-500">
-                                    {business.place}
-                                  </p>
-                                </div>
-
-                                {business.badge && (
-                                  <span className="inline-flex rounded-full bg-indigo-100 text-indigo-800 px-3 py-1 text-sm font-semibold text-indigo-700">
-                                    {business.badge}
-                                  </span>
-                                )}
-                              </div>
-
-                              <p className="mt-6 text-base leading-8 text-slate-500">
-                                {business.info[lang]}
-                              </p>
-                            </div>
-
-                            <div className="mt-8">
-                              {isExternalUrl(businessHref) ? (
-                                <a
-                                  href={businessHref}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="inline-flex items-center justify-center rounded-2xl bg-indigo-600 border-none px-6 py-3 text-sm font-semibold text-white transition hover:bg-indigo-500"
-                                >
-                                  {business.name}
-                                </a>
-                              ) : (
-                                <Link
-                                  href={withLang(businessHref)}
-                                  className="inline-flex items-center justify-center rounded-2xl bg-indigo-600 border-none px-6 py-3 text-sm font-semibold text-white transition hover:bg-indigo-500"
-                                >
-                                  {business.name}
-                                </Link>
-                              )}
-                            </div>
-                          </div>
-                        </div>
-                      </article>
-                    );
-                  })}
-                </div>
-              </article>
-            )}
-
             {landing.slug === "lesvos-tours" && (
               <article className="rounded-[28px] border border-slate-200 bg-white backdrop-blur-md p-8 shadow-sm">
                 <h2 className="text-2xl font-bold text-slate-900">FAQ</h2>
@@ -432,6 +337,101 @@ export default function ExperienceDetailsClient({
           </div>
 
           <aside className="space-y-6">
+            {sortedBusinesses.length > 0 && (
+              <article className="rounded-[28px] border border-slate-200 bg-white backdrop-blur-md p-8 shadow-sm">
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700">
+                  {lang === "en" ? "Our Recommended Local Experiences" : "Οι Προτεινόμενες Τοπικές μας Εμπειρίες"}
+                </p>
+                
+                {landing.recommendedIntro && (
+                  <p className="mt-3 text-base leading-8 text-slate-500">
+                    {landing.recommendedIntro[lang]}
+                  </p>
+                )}
+
+                <div className="mt-6 space-y-8">
+                  {sortedBusinesses.map((business) => {
+                    const businessHref =
+                      business.href || `/businesses/${business.slug}`;
+
+                    return (
+                      <article
+                        key={business.slug}
+                        className="overflow-hidden rounded-[28px] border border-slate-200 bg-white hover:bg-slate-50 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+                      >
+                        <div className="grid gap-0 lg:grid-cols-[1fr_1.1fr]">
+                          <div className="relative min-h-[280px] h-[260px] w-full bg-slate-100 sm:h-[320px] lg:h-full">
+                            {business.slug === "rolling-into-the-blue" && (
+                              <div className="absolute top-3 left-3 z-10">
+                                <svg className="w-8 h-8 drop-shadow-lg" viewBox="0 0 24 24" fill="#ef4444"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                              </div>
+                            )}
+                            <Image
+                              src={business.image}
+                              alt={business.name}
+                              fill
+                              className="object-cover"
+                              sizes="(max-width: 1024px) 100vw, 40vw"
+                            />
+                          </div>
+
+                          <div className="flex flex-col justify-between p-6 md:p-8">
+                            <div>
+                              <div className="flex flex-wrap items-center justify-between gap-3">
+                                <div>
+                                  <div className="text-sm font-semibold uppercase tracking-[0.18em] text-indigo-700">
+                                    {business.category[lang]}
+                                  </div>
+
+                                  <h3 className="mt-2 text-2xl font-bold text-slate-900 md:text-3xl">
+                                    {business.name}
+                                  </h3>
+
+                                  <p className="mt-3 text-sm font-medium text-slate-500">
+                                    {business.place}
+                                  </p>
+                                </div>
+
+                                {business.badge && (
+                                  <span className="inline-flex rounded-full bg-indigo-100 text-indigo-800 px-3 py-1 text-sm font-semibold text-indigo-700">
+                                    {business.badge}
+                                  </span>
+                                )}
+                              </div>
+
+                              <p className="mt-6 text-base leading-8 text-slate-500">
+                                {business.info[lang]}
+                              </p>
+                            </div>
+
+                            <div className="mt-8">
+                              {isExternalUrl(businessHref) ? (
+                                <a
+                                  href={businessHref}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="inline-flex items-center justify-center rounded-2xl bg-indigo-600 border-none px-6 py-3 text-sm font-semibold text-white transition hover:bg-indigo-500"
+                                >
+                                  {business.name}
+                                </a>
+                              ) : (
+                                <Link
+                                  href={withLang(businessHref)}
+                                  className="inline-flex items-center justify-center rounded-2xl bg-indigo-600 border-none px-6 py-3 text-sm font-semibold text-white transition hover:bg-indigo-500"
+                                >
+                                  {business.name}
+                                </Link>
+                              )}
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                    );
+                  })}
+                </div>
+              </article>
+            )}
+
             {(() => {
               const TOUR_WIDGETS: Record<string, { label: { en: string; el: string }; ref: string }> = {
                 "kefalonia-tours": {
