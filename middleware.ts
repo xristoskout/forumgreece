@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
-const KEPT_EL_ROUTES = ['/contact', '/about', '/privacy-policy'];
+const KEPT_EL_ROUTES = ['/contact', '/about', '/privacy-policy', '/promotion'];
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;

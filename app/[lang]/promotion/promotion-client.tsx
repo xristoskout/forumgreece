@@ -907,9 +907,9 @@ export default function PromotionClient() {
       {isModalOpen && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-[#0a1628]/70 backdrop-blur-sm">
           <div className="bg-white rounded-3xl shadow-2xl w-full max-w-lg overflow-hidden relative max-h-[90vh] overflow-y-auto">
-            <div className="p-8">
+            <div className="p-6 sm:p-8">
               <div className="flex justify-between items-center mb-6">
-                <h3 className="text-xl font-bold text-[#1a1a2e]">{lang === "el" ? "Στείλτε μας μήνυμα" : "Send us a message"}</h3>
+                <h3 className="text-xl font-bold text-[#1a1a2e]">{t.form_title[lang]}</h3>
                 <button
                   onClick={() => setIsModalOpen(false)}
                   className="text-gray-400 hover:text-[#1a1a2e] transition-colors text-3xl leading-none"
@@ -917,18 +917,58 @@ export default function PromotionClient() {
                   &times;
                 </button>
               </div>
-              <form className="space-y-4" onSubmit={handleSubmit}>
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-1">{t.form_business[lang]}</label>
-                  <input required name="business_name" type="text" className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#1a6fc4] bg-gray-50" />
+              <form onSubmit={handleSubmit} className="space-y-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-[13px] font-bold text-[#1a1a2e] uppercase tracking-[0.3px] mb-1.5">{t.form_business[lang]}</label>
+                    <input required name="business_name" type="text" placeholder={t.form_placeholder_business[lang]} className="w-full border-2 border-[#e2e8f0] rounded-xl px-4 py-3 text-[15px] focus:outline-none focus:border-[#1a6fc4] focus:shadow-[0_0_0_3px_rgba(26,111,196,0.1)]" />
+                  </div>
+                  <div>
+                    <label className="block text-[13px] font-bold text-[#1a1a2e] uppercase tracking-[0.3px] mb-1.5">{t.form_name[lang]}</label>
+                    <input required name="name" type="text" placeholder={t.form_placeholder_name[lang]} className="w-full border-2 border-[#e2e8f0] rounded-xl px-4 py-3 text-[15px] focus:outline-none focus:border-[#1a6fc4] focus:shadow-[0_0_0_3px_rgba(26,111,196,0.1)]" />
+                  </div>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-[13px] font-bold text-[#1a1a2e] uppercase tracking-[0.3px] mb-1.5">{t.form_email[lang]}</label>
+                    <input required name="email" type="email" placeholder={t.form_placeholder_email[lang]} className="w-full border-2 border-[#e2e8f0] rounded-xl px-4 py-3 text-[15px] focus:outline-none focus:border-[#1a6fc4] focus:shadow-[0_0_0_3px_rgba(26,111,196,0.1)]" />
+                  </div>
+                  <div>
+                    <label className="block text-[13px] font-bold text-[#1a1a2e] uppercase tracking-[0.3px] mb-1.5">{t.form_phone[lang]}</label>
+                    <input name="phone" type="tel" placeholder={t.form_placeholder_phone[lang]} className="w-full border-2 border-[#e2e8f0] rounded-xl px-4 py-3 text-[15px] focus:outline-none focus:border-[#1a6fc4] focus:shadow-[0_0_0_3px_rgba(26,111,196,0.1)]" />
+                  </div>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-[13px] font-bold text-[#1a1a2e] uppercase tracking-[0.3px] mb-1.5">{t.form_type[lang]}</label>
+                    <select required name="business_type" className="w-full border-2 border-[#e2e8f0] rounded-xl px-4 py-3 text-[15px] focus:outline-none focus:border-[#1a6fc4] focus:shadow-[0_0_0_3px_rgba(26,111,196,0.1)] bg-white">
+                      {businessTypes.map((opt, j) => (
+                        <option key={j} value={opt.v}>{go(opt.l, lang)}</option>
+                      ))}
+                    </select>
+                  </div>
+                  <div>
+                    <label className="block text-[13px] font-bold text-[#1a1a2e] uppercase tracking-[0.3px] mb-1.5">{t.form_location[lang]}</label>
+                    <input required name="location" type="text" placeholder={t.form_placeholder_location[lang]} className="w-full border-2 border-[#e2e8f0] rounded-xl px-4 py-3 text-[15px] focus:outline-none focus:border-[#1a6fc4] focus:shadow-[0_0_0_3px_rgba(26,111,196,0.1)]" />
+                  </div>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-[13px] font-bold text-[#1a1a2e] uppercase tracking-[0.3px] mb-1.5">{t.form_website[lang]}</label>
+                    <input name="website" type="url" placeholder={t.form_placeholder_website[lang]} className="w-full border-2 border-[#e2e8f0] rounded-xl px-4 py-3 text-[15px] focus:outline-none focus:border-[#1a6fc4] focus:shadow-[0_0_0_3px_rgba(26,111,196,0.1)]" />
+                  </div>
+                  <div>
+                    <label className="block text-[13px] font-bold text-[#1a1a2e] uppercase tracking-[0.3px] mb-1.5">{t.form_plan[lang]}</label>
+                    <select name="preferred_plan" className="w-full border-2 border-[#e2e8f0] rounded-xl px-4 py-3 text-[15px] focus:outline-none focus:border-[#1a6fc4] focus:shadow-[0_0_0_3px_rgba(26,111,196,0.1)] bg-white">
+                      {planOptions.map((opt, j) => (
+                        <option key={j} value={opt.v}>{go(opt.l, lang)}</option>
+                      ))}
+                    </select>
+                  </div>
                 </div>
                 <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-1">{t.form_email[lang]}</label>
-                  <input required name="email" type="email" className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#1a6fc4] bg-gray-50" />
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-1">{t.form_message[lang]}</label>
-                  <textarea required name="message" rows={4} className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#1a6fc4] bg-gray-50"></textarea>
+                  <label className="block text-[13px] font-bold text-[#1a1a2e] uppercase tracking-[0.3px] mb-1.5">{t.form_message[lang]}</label>
+                  <textarea name="message" rows={3} placeholder={t.form_placeholder_message[lang]} className="w-full border-2 border-[#e2e8f0] rounded-xl px-4 py-3 text-[15px] focus:outline-none focus:border-[#1a6fc4] focus:shadow-[0_0_0_3px_rgba(26,111,196,0.1)] resize-y min-h-[100px]"></textarea>
                 </div>
                 <div className="hidden" aria-hidden="true" tabIndex={-1}>
                   <input name="website_url" type="text" autoComplete="off" />
@@ -936,13 +976,19 @@ export default function PromotionClient() {
                 <button
                   type="submit"
                   disabled={status === "loading"}
-                  className={`w-full text-white font-bold py-4 rounded-xl transition-all mt-2 shadow-lg ${
-                    status === "loading" ? "bg-gray-400 cursor-not-allowed" : "bg-[#1a6fc4] hover:bg-[#1558a0]"
+                  className={`w-full text-white font-bold py-4 rounded-xl text-[17px] flex items-center justify-center gap-2.5 transition-all ${
+                    status === "loading" ? "bg-gray-400 cursor-not-allowed" : "bg-[#f97316] hover:bg-[#ea6c0a] hover:-translate-y-0.5"
                   }`}
                 >
-                  {status === "loading" ? t.form_sending[lang] : status === "success" ? "✓ " + t.form_success[lang] : status === "error" ? "✗ " + t.form_error[lang] : t.form_submit[lang]}
+                  {status === "loading" ? (
+                    <>{t.form_sending[lang]}</>
+                  ) : status === "success" ? (
+                    <><svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3"><polyline points="20 6 9 17 4 12"/></svg> {t.form_success[lang]}</>
+                  ) : (
+                    <><svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="22" y1="2" x2="11" y2="13"/><polyline points="22 2 15 22 11 13 2 9 22 2"/></svg> {t.form_submit[lang]}</>
+                  )}
                 </button>
-                {status === "error" && <p className="text-center text-sm text-red-600 mt-2 font-semibold">{t.form_error[lang]}</p>}
+                {status === "error" && <p className="text-center text-sm text-red-600 font-semibold">{t.form_error[lang]}</p>}
               </form>
             </div>
           </div>
