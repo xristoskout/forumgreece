@@ -386,15 +386,15 @@ export default function PromotionClient() {
 
         {/* ===== TRUST STATEMENT ===== */}
         <section className="bg-white py-14 px-6 border-b border-[#e2e8f0] text-center relative overflow-hidden">
-          <div className="absolute inset-0 pointer-events-none flex items-center justify-center opacity-[0.08] select-none">
+          <div className="absolute inset-0 pointer-events-none flex items-center justify-center opacity-[0.18] select-none">
             <svg viewBox="0 0 240 120" className="w-[500px] h-[250px] max-w-full">
               {/* Globe outline */}
-              <circle cx="120" cy="60" r="50" fill="none" stroke="#1a6fc4" strokeWidth="0.5" />
+              <circle cx="120" cy="60" r="50" fill="none" stroke="#1a6fc4" strokeWidth="1" />
               {/* Meridians */}
-              <ellipse cx="120" cy="60" rx="50" ry="18" fill="none" stroke="#1a6fc4" strokeWidth="0.25" />
-              <ellipse cx="120" cy="60" rx="18" ry="50" fill="none" stroke="#1a6fc4" strokeWidth="0.25" />
-              <line x1="120" y1="10" x2="120" y2="110" stroke="#1a6fc4" strokeWidth="0.2" />
-              <line x1="70" y1="60" x2="170" y2="60" stroke="#1a6fc4" strokeWidth="0.2" />
+              <ellipse cx="120" cy="60" rx="50" ry="18" fill="none" stroke="#1a6fc4" strokeWidth="0.5" />
+              <ellipse cx="120" cy="60" rx="18" ry="50" fill="none" stroke="#1a6fc4" strokeWidth="0.5" />
+              <line x1="120" y1="10" x2="120" y2="110" stroke="#1a6fc4" strokeWidth="0.4" />
+              <line x1="70" y1="60" x2="170" y2="60" stroke="#1a6fc4" strokeWidth="0.4" />
               {/* Dots */}
               {[
                 { cx: 72, cy: 30, delay: 0 },   // North America
@@ -411,10 +411,10 @@ export default function PromotionClient() {
                   cy={dot.cy}
                   r={2}
                   fill="#1a6fc4"
-                  initial={{ opacity: 0.2, r: 1.5 }}
+                  initial={{ opacity: 0.3, r: 2.5 }}
                   animate={{
-                    opacity: [0.2, 1, 0.2],
-                    r: [1.5, 3, 1.5],
+                    opacity: [0.3, 1, 0.3],
+                    r: [2.5, 5, 2.5],
                   }}
                   transition={{
                     duration: 2.5,
