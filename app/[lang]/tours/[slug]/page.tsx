@@ -7,7 +7,7 @@ import {
 } from "../../../../lib/experiences";
 import ExperienceDetailsClient from "./experience-details-client";
 import TourDetailsClient from "./tour-details-client";
-import { itemPageSchema } from "../../../../lib/structured-data";
+import { itemPageSchema, collectionPageSchema } from "../../../../lib/structured-data";
 
 type TourPageProps = {
   params: Promise<{ lang: string; slug: string }>;
@@ -186,18 +186,18 @@ export default async function TourPage({ params }: TourPageProps) {
   const canonicalUrl = `${SITE_URL}/${lang}/tours/${slug}`;
 
   if (pageData.type === "landing") {
-    const itemPage = itemPageSchema({
-      name: pageData.landing.title[lang],
-      description: pageData.landing.description[lang],
-      image: pageData.landing.image ?? pageData.businesses[0]?.image ?? "/images/default-og.webp",
+    const collection = collectionPageSchema({
+      name: pageData.landing.seo?.title[lang] ?? pageData.landing.title[lang],
+      description: pageData.landing.seo?.description[lang] ?? pageData.landing.description[lang],
       url: canonicalUrl,
+      numberOfItems: pageData.businesses.length,
     });
 
     return (
       <>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(itemPage) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(collection) }}
         />
         <ExperienceDetailsClient
           landing={pageData.landing}
