@@ -605,6 +605,50 @@ export const destinationDetails: Record<string, DestinationDetail> = {
       ],
     },
   },
+  preveza: {
+    overview: {
+      en: "On the 2nd of September, 31 BC, two fleets met in the narrow strait at the mouth of the Ambracian Gulf. On one side: Octavian, the adopted heir of Julius Caesar. On the other: Mark Antony and Cleopatra VII, queen of Egypt. The battle that followed — the Battle of Actium — lasted a single day and determined the shape of the next two millennia. Octavian's victory ended the Roman Republic, inaugurated the Roman Empire, and set in motion a chain of events that would directly produce the political, legal and cultural framework of the Western world. He built a city on the peninsula overlooking the battle site and named it Nikopolis: the City of Victory. The ruins are still there, five minutes from the centre of modern Preveza, and they are among the most historically significant in Greece.\n\nThis is the context in which Preveza exists — a coastal town of 20,000 people, easy in its manner and genuinely uncrowded by tourist standards, sitting at one of the great hinge points of world history. The Ambracian Gulf behind it is a vast, almost landlocked inlet of the Ionian Sea, one of Europe's most important protected wetland ecosystems, home to bottlenose dolphins that can be seen on boat tours with over 80% reliability, pelicans, flamingos, and the grey mullet whose roe — avgotaracho, the Greek equivalent of beluga caviar — has been salted and dried on these shores since Byzantine times. North of town, Monolithi Beach stretches for 22 kilometres of uninterrupted golden sand and was named the safest beach in Europe by the European Commission.\n\nThe wider region adds layer after layer: the dramatic hilltop ruins of Kassope, the monument at Zalongo where Souliot women chose the cliff rather than captivity, the mythological Acheron river where the ancients believed Charon ferried the dead to the underworld, and the medieval Pantocrator castle above the town whose terrace catches the Ambracian Gulf at sunset. Preveza is not a hidden gem in the sense of being small or modest. It is a genuinely large, rich destination that international tourism has simply not yet discovered at the scale it deserves.",
+      el: "Στις 2 Σεπτεμβρίου 31 π.Χ., δύο στόλοι συναντήθηκαν στο στενό της εισόδου του Αμβρακικού κόλπου. Από τη μία πλευρά: ο Οκταβιανός. Από την άλλη: ο Μάρκος Αντώνιος και η Κλεοπάτρα. Η Ναυμαχία του Ακτίου κράτησε μία μόνο μέρα και καθόρισε την πορεία δύο χιλιετιών. Ο Οκταβιανός έχτισε τη Νικόπολη — την Πόλη της Νίκης — στη χερσόνησο που δεσπόζει στο πεδίο της μάχης. Τα ερείπια βρίσκονται εκεί, πέντε λεπτά από το κέντρο της σύγχρονης Πρέβεζας.\n\nΗ Πρέβεζα είναι μια παραθαλάσσια πόλη 20.000 κατοίκων, χαλαρή και ανεπιτήδευτη, που κάθεται σε ένα από τα μεγάλα σημεία καμπής της παγκόσμιας ιστορίας. Ο Αμβρακικός κόλπος είναι μια τεράστια, σχεδόν κλειστή είσοδος του Ιονίου, ένα από τα σημαντικότερα προστατευμένα υγροτοπικά οικοσυστήματα της Ευρώπης, με δελφίνια, πελεκάνους, φλαμίνγκο και το αυγοτάραχο που παράγεται εδώ από βυζαντινά χρόνια. Βόρεια της πόλης, η παραλία Μονολίθι εκτείνεται για 22 χιλιόμετρα συνεχόμενης χρυσής άμμου.\n\nΗ ευρύτερη περιοχή προσθέτει στρώσεις επί στρώσεων: τα ερείπια της Κασσώπης, το μνημείο του Ζαλόγγου, το μυθολογικό ποτάμι του Αχέροντα και το μεσαιωνικό κάστρο του Παντοκράτορα. Η Πρέβεζα δεν είναι ένας κρυμμένος θησαυρός. Είναι ένας μεγάλος, πλούσιος προορισμός που ο διεθνής τουρισμός απλά δεν έχει ακόμα ανακαλύψει στην κλίμακα που του αξίζει."
+    },
+    pageIncludes: {
+      en: [
+        "Ancient Nikopolis & Archaeological Museum",
+        "Ambracian Gulf dolphin & birdwatching tours",
+        "Monolithi Beach — 22km",
+        "Kassope, Zalongo, Necromanteion",
+        "Preveza old town & Saitan Pazar",
+        "Avgotaracho, papalina & gulf seafood",
+        "Day trips: Lefkada, Parga, Ioannina, Acheron"
+      ],
+      el: [
+        "Αρχαία Νικόπολη & Αρχαιολογικό Μουσείο",
+        "Εκδρομές για δελφίνια & παρατήρηση πουλιών στον Αμβρακικό",
+        "Παραλία Μονολίθι — 22χλμ",
+        "Κασσώπη, Ζάλογγο, Νεκρομαντείο",
+        "Παλιά Πόλη Πρέβεζας & Σαϊτάν Παζάρ",
+        "Αυγοτάραχο, παπαλίνα & θαλασσινά Αμβρακικού",
+        "Ημερήσιες εκδρομές: Λευκάδα, Πάργα, Ιωάννινα, Αχέροντας"
+      ]
+    },
+    perfectFor: {
+      en: [
+        "History & archaeology enthusiasts",
+        "Nature lovers & birdwatchers",
+        "Food travelers seeking regional specialities",
+        "Families wanting beach + culture combination",
+        "Road-trippers using Preveza as a base",
+        "Travelers seeking authentic, uncrowded Greece"
+      ],
+      el: [
+        "Λάτρεις ιστορίας & αρχαιολογίας",
+        "Φυσιολάτρες & παρατηρητές πουλιών",
+        "Ταξιδιώτες γαστρονομίας",
+        "Οικογένειες που θέλουν συνδυασμό θάλασσας & πολιτισμού",
+        "Road trips με βάση την Πρέβεζα",
+        "Ταξιδιώτες που αναζητούν αυθεντική, ήσυχη Ελλάδα"
+      ]
+    }
+  },
   chios: {
     overview: {
       en: "Chios operates on its own terms — it does not model itself on the whitewashed Cycladic ideal, does not depend on tourism for survival, and does not particularly care whether visitors arrive with expectations formed by Instagram. What it offers instead is something unexpectedly rare in the Aegean: a place that feels genuinely lived-in, where 50,000 permanent residents go about a real economy — shipping, mastic agriculture, a university — and where the medieval villages, Byzantine monasteries and volcanic beaches are woven into a working landscape rather than curated for tourist consumption.\n\nThe island's most famous product, mastic, is produced commercially nowhere else on earth. The resin tapped from the lentisk trees of the Mastichohoria — the collection of southern villages including Pyrgi, Mesta and Olympi — has been recognised by UNESCO as Intangible Cultural Heritage and has shaped the landscape, architecture and economy of southern Chios for a millennium. Pyrgi with its extraordinary black-and-white geometric xysta decoration on every facade, Mesta built as a single defensive fortress with no exterior windows at ground level, and Olympi perched on a rocky outcrop represent a concentration of living medieval architecture found nowhere else in Greece.\n\nBeyond the mastic villages, Chios rewards exploration with the 11th-century Byzantine mosaics of Nea Moni (a UNESCO World Heritage Site), the abandoned clifftop settlement of Anavatos frozen since 1822, the walled citrus orchards of Kampos, and a coastline of volcanic black-pebble beaches like Mavra Volia whose turquoise-water contrast is among the most visually striking in the Aegean. The island even has its own Easter Rocket War — the Rouketopolemos — in which two parish churches in Vrontados fire tens of thousands of home-made rockets at each other's bell towers on Holy Saturday night.",
