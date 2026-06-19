@@ -91,6 +91,9 @@ export default function ExperienceDetailsClient({
       lang === "en" ? "Travel to Greece" : "Ταξίδι στην Ελλάδα",
   };
 
+  const featuredBusiness = businesses.find(b => b.slug === "rolling-into-the-blue");
+  const otherBusinesses = businesses.filter(b => b.slug !== "rolling-into-the-blue");
+
   const heroImage =
     landing.image ?? businesses[0]?.image ?? "/images/tours/kefalonia-tours.webp";
 
@@ -186,7 +189,7 @@ export default function ExperienceDetailsClient({
               </p>
             </article>
 
-            {businesses.length > 0 && (
+            {otherBusinesses.length > 0 && (
               <article className="rounded-[28px] border border-slate-200 bg-white backdrop-blur-md p-8 shadow-sm">
                 <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700">
                   {lang === "en" ? "Our Recommended Local Experiences" : "Οι Προτεινόμενες Τοπικές μας Εμπειρίες"}
@@ -199,7 +202,7 @@ export default function ExperienceDetailsClient({
                 )}
 
                 <div className="mt-6 space-y-8">
-                  {businesses.map((business) => {
+                  {otherBusinesses.map((business) => {
                     const businessHref =
                       business.href || `/businesses/${business.slug}`;
 
@@ -459,6 +462,40 @@ export default function ExperienceDetailsClient({
           </div>
 
           <aside className="space-y-6">
+            {featuredBusiness && (() => {
+              const b = featuredBusiness;
+              const businessHref = b.href || `/businesses/${b.slug}`;
+              return (
+                <article className="relative overflow-hidden rounded-[28px] border-2 border-red-200 bg-gradient-to-br from-white to-red-50 shadow-sm">
+                  <div className="absolute top-3 left-3 z-10">
+                    <span className="inline-flex items-center gap-1 rounded-full bg-red-500 px-3 py-1 text-xs font-bold text-white shadow-md">
+                      <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                      {lang === "en" ? "Special" : "Special"}
+                    </span>
+                  </div>
+                  <div className="p-6">
+                    <div className="text-sm font-semibold uppercase tracking-[0.18em] text-indigo-700">
+                      {b.category[lang]}
+                    </div>
+                    <h3 className="mt-2 text-2xl font-bold text-slate-900">{b.name}</h3>
+                    <p className="mt-2 text-sm font-medium text-slate-500">{b.place}</p>
+                    <p className="mt-4 text-sm leading-6 text-slate-500">{b.info[lang]}</p>
+                    <div className="mt-6">
+                      {isExternalUrl(businessHref) ? (
+                        <a href={businessHref} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-2xl bg-red-500 border-none px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-red-600">
+                          {b.name}
+                        </a>
+                      ) : (
+                        <Link href={withLang(businessHref)} className="inline-flex items-center justify-center rounded-2xl bg-red-500 border-none px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-red-600">
+                          {b.name}
+                        </Link>
+                      )}
+                    </div>
+                  </div>
+                </article>
+              );
+            })()}
+
             {(() => {
               const TOUR_WIDGETS: Record<string, { label: { en: string; el: string }; ref: string }> = {
                 "kefalonia-tours": {
