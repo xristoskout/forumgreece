@@ -279,44 +279,6 @@ export default function ExperienceDetailsClient({
               </article>
             )}
 
-            {landing.slug === "kefalonia-tours" && (
-              <article className="rounded-[28px] border border-slate-200 bg-white backdrop-blur-md p-8 shadow-sm">
-                <h2 className="text-2xl font-bold text-slate-900">FAQ</h2>
-                <div className="mt-8 space-y-8">
-                  <div>
-                    <h3 className="text-lg font-bold text-indigo-700">
-                      {lang === "en" ? "Which are the best boat tours in Kefalonia?" : "Ποιες είναι οι καλύτερες βόλτες με σκάφος στην Κεφαλονιά;"}
-                    </h3>
-                    <p className="mt-3 text-base leading-7 text-slate-600">
-                      {lang === "en" 
-                        ? "The boat trip from Agia Kyriaki to Fteri and Amidi beaches is a top pick. Cruises around Fiskardo and the Ithaca coast are also legendary. For a unique experience, don't miss the Melissani Lake rowboat tour."
-                        : "Η βόλτα με σκάφος από την Αγία Κυριακή προς τις παραλίες Φτέρη και Αμίδι είναι από τις κορυφαίες επιλογές. Επίσης, οι κρουαζιέρες γύρω από το Φισκάρδο και τις ακτές της Ιθάκης είναι μοναδικές. Μην παραλείψετε τη βόλτα με τη βάρκα στη Λίμνη Μελισσάνη."}
-                    </p>
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-bold text-indigo-700">
-                      {lang === "en" ? "Do I need to book tours in advance in Kefalonia?" : "Χρειάζεται να κλείσω εκδρομές από πριν στην Κεφαλονιά;"}
-                    </h3>
-                    <p className="mt-3 text-base leading-7 text-slate-600">
-                      {lang === "en"
-                        ? "Yes, especially during July and August. Popular private boat rentals and guided tours can book up quickly. We recommend reserving your spot at least 1-2 weeks in advance during peak season."
-                        : "Ναι, ειδικά κατά τον Ιούλιο και τον Αύγουστο. Οι δημοφιλείς ενοικιάσεις σκαφών και οι ξεναγήσεις εξαντλούνται γρήγορα. Προτείνουμε να κάνετε κράτηση τουλάχιστον 1-2 εβδομάδες πριν κατά την περίοδο αιχμής."}
-                    </p>
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-bold text-indigo-700">
-                      {lang === "en" ? "What are the must-see natural attractions in Kefalonia?" : "Ποια είναι τα φυσικά αξιοθέατα που πρέπει να δω στην Κεφαλονιά;"}
-                    </h3>
-                    <p className="mt-3 text-base leading-7 text-slate-600">
-                      {lang === "en"
-                        ? "Myrtos Beach, Melissani Cave, Drogarati Cave, and the Ainos National Park are the absolute must-sees. Each offers a completely different but equally stunning natural perspective of the island."
-                        : "Η παραλία του Μύρτου, το σπήλαιο Μελισσάνη, το σπήλαιο Δρογκαράτη και ο Εθνικός Δρυμός του Αίνου είναι τα απόλυτα must-see. Κάθε ένα προσφέρει μια εντελώς διαφορετική αλλά εξίσου εντυπωσιακή φυσική ομορφιά."}
-                    </p>
-                  </div>
-                </div>
-              </article>
-            )}
-
             {landing.slug === "lesvos-tours" && (
               <article className="rounded-[28px] border border-slate-200 bg-white backdrop-blur-md p-8 shadow-sm">
                 <h2 className="text-2xl font-bold text-slate-900">FAQ</h2>

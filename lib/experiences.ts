@@ -267,8 +267,20 @@ export const experienceLandings: ExperienceLanding[] = [
           answer: { en: "Boat trips, scenic island tours, beach-focused experiences, and relaxed local activities are usually among the best choices for first-time visitors.", el: "Boat trips, γραφικές διαδρομές στο νησί, εξορμήσεις σε παραλίες και χαλαρές τοπικές δραστηριότητες είναι συνήθως οι καλύτερες επιλογές." },
         },
         {
+          question: { en: "Which are the best boat tours in Kefalonia?", el: "Ποιες είναι οι καλύτερες βόλτες με σκάφος στην Κεφαλονιά;" },
+          answer: { en: "The boat trip from Agia Kyriaki to Fteri and Amidi beaches is a top pick. Cruises around Fiskardo and the Ithaca coast are also legendary. For a unique experience, don't miss the Melissani Lake rowboat tour.", el: "Η βόλτα με σκάφος από την Αγία Κυριακή προς τις παραλίες Φτέρη και Αμίδι είναι από τις κορυφαίες επιλογές. Επίσης, οι κρουαζιέρες γύρω από το Φισκάρδο και τις ακτές της Ιθάκης είναι μοναδικές. Μην παραλείψετε τη βόλτα με τη βάρκα στη Λίμνη Μελισσάνη." },
+        },
+        {
           question: { en: "Do I need to book Kefalonia tours in advance?", el: "Πρέπει να κλείσω εκδρομές από πριν;" },
           answer: { en: "In the high season, booking in advance is a good idea, especially for popular sea experiences and limited-capacity activities.", el: "Στην υψηλή περίοδο (high season), η προκράτηση είναι καλή ιδέα, ειδικά για δημοφιλείς θαλάσσιες εμπειρίες." },
+        },
+        {
+          question: { en: "Do I need to book tours in advance in Kefalonia?", el: "Χρειάζεται να κλείσω εκδρομές από πριν στην Κεφαλονιά;" },
+          answer: { en: "Yes, especially during July and August. Popular private boat rentals and guided tours can book up quickly. We recommend reserving your spot at least 1-2 weeks in advance during peak season.", el: "Ναι, ειδικά κατά τον Ιούλιο και τον Αύγουστο. Οι δημοφιλείς ενοικιάσεις σκαφών και οι ξεναγήσεις εξαντλούνται γρήγορα. Προτείνουμε να κάνετε κράτηση τουλάχιστον 1-2 εβδομάδες πριν κατά την περίοδο αιχμής." },
+        },
+        {
+          question: { en: "What are the must-see natural attractions in Kefalonia?", el: "Ποια είναι τα φυσικά αξιοθέατα που πρέπει να δω στην Κεφαλονιά;" },
+          answer: { en: "Myrtos Beach, Melissani Cave, Drogarati Cave, and the Ainos National Park are the absolute must-sees. Each offers a completely different but equally stunning natural perspective of the island.", el: "Η παραλία του Μύρτου, το σπήλαιο Μελισσάνη, το σπήλαιο Δρογκαράτη και ο Εθνικός Δρυμός του Αίνου είναι τα απόλυτα must-see. Κάθε ένα προσφέρει μια εντελώς διαφορετική αλλά εξίσου εντυπωσιακή φυσική ομορφιά." },
         },
         {
           question: { en: "Is Kefalonia good for family-friendly tours?", el: "Είναι η Κεφαλονιά καλή για οικογενειακές εκδρομές;" },
