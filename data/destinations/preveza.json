@@ -1,0 +1,92 @@
+{
+  "id": "preveza",
+  "slug": "preveza",
+  "name": "Preveza",
+  "type": "City",
+  "coordinates": {
+    "lat": 38.9589,
+    "lng": 20.7561
+  },
+  "scores": {
+    "family": {
+      "value": 8,
+      "reason": "Family friendly parameters for Preveza."
+    },
+    "couples": {
+      "value": 8,
+      "reason": "Romantic components and spots in Preveza."
+    },
+    "nightlife": {
+      "value": 5,
+      "reason": "Bar and restaurant density in Preveza."
+    },
+    "food": {
+      "value": 9,
+      "reason": "Local gastronomy, seafood, and avgotaracho."
+    },
+    "beaches": {
+      "value": 9,
+      "reason": "Beach quality — Monolithi is 22km of sand."
+    },
+    "walking": {
+      "value": 8,
+      "reason": "Walkability of the pedestrianised old town."
+    }
+  },
+  "content": {
+    "quick_summary": "A complete travel guide to Preveza and the Ambracian Gulf.",
+    "pros": [
+      "Ancient Nikopolis archaeological site",
+      "22km Monolithi Beach",
+      "Avgotaracho and seafood",
+      "Pedestrianised old town with ouzeries"
+    ],
+    "cons": [
+      "Requires a car for full exploration",
+      "Limited nightlife compared to islands",
+      "Some beaches need short drive from centre"
+    ],
+    "insider_tips": [
+      "Visit Monolithi's northern section — empty even in August.",
+      "Try avgotaracho at the Saitan Pazar ouzeries.",
+      "Take a dolphin-watching boat tour from the port."
+    ],
+    "mistakes_to_avoid": [
+      "Skipping the Nikopolis museum — visit both site and museum."
+    ]
+  },
+  "pricing_base": {
+    "budget_daily": 45,
+    "mid_daily": 80,
+    "luxury_daily": 180
+  },
+  "seasonality": {
+    "january": { "temp": 10, "price_multiplier": 0.6 },
+    "february": { "temp": 11, "price_multiplier": 0.6 },
+    "march": { "temp": 14, "price_multiplier": 0.7 },
+    "april": { "temp": 18, "price_multiplier": 0.8 },
+    "may": { "temp": 23, "price_multiplier": 1.0 },
+    "june": { "temp": 28, "price_multiplier": 1.2 },
+    "july": { "temp": 31, "price_multiplier": 1.4 },
+    "august": { "temp": 31, "price_multiplier": 1.5 },
+    "september": { "temp": 26, "price_multiplier": 1.2 },
+    "october": { "temp": 21, "price_multiplier": 0.9 },
+    "november": { "temp": 16, "price_multiplier": 0.7 },
+    "december": { "temp": 12, "price_multiplier": 0.6 }
+  },
+  "image": "/images/destinations/preveza.webp",
+  "guideLinks": [
+    {
+      "href": "/hotels/preveza",
+      "label": { "en": "Where to Stay", "el": "Πού να μείνεις" }
+    },
+    {
+      "href": "/travel-tools/budget/preveza",
+      "label": { "en": "Budget Planner", "el": "Budget Planner" }
+    },
+    {
+      "href": "/travel-tools/best-time/preveza",
+      "label": { "en": "Best Time to Visit", "el": "Καλύτερη Εποχή" }
+    }
+  ]
+}

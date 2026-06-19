@@ -30,9 +30,9 @@ export default function SiteFooter({ lang }: { lang: Lang }) {
             <div className="text-sm text-slate-600 leading-relaxed">{footerText[lang]}</div>
           </div>
           <div>
-            <h4 className="text-xs font-bold uppercase tracking-widest text-indigo-700 mb-3">
+            <h3 className="text-xs font-bold uppercase tracking-widest text-indigo-700 mb-3">
               {lang === "en" ? "Explore" : "Εξερεύνηση"}
-            </h4>
+            </h3>
             <ul className="space-y-2 text-sm">
               <li><Link href={withLang("/destinations", lang)} className="text-slate-600 hover:text-slate-900">Destinations</Link></li>
               <li><Link href={withLang("/travel-info", lang)} className="text-slate-600 hover:text-slate-900">Travel Info</Link></li>
@@ -43,9 +43,9 @@ export default function SiteFooter({ lang }: { lang: Lang }) {
               </ul>
           </div>
           <div>
-            <h4 className="text-xs font-bold uppercase tracking-widest text-indigo-700 mb-3">
+            <h3 className="text-xs font-bold uppercase tracking-widest text-indigo-700 mb-3">
               {lang === "en" ? "Top Destinations" : "Κορυφαίοι Προορισμοί"}
-            </h4>
+            </h3>
             <ul className="space-y-2 text-sm">
               <li><Link href={withLang("/destinations/santorini", lang)} className="text-slate-600 hover:text-slate-900">Santorini</Link></li>
               <li><Link href={withLang("/destinations/mykonos", lang)} className="text-slate-600 hover:text-slate-900">Mykonos</Link></li>
@@ -55,9 +55,9 @@ export default function SiteFooter({ lang }: { lang: Lang }) {
             </ul>
           </div>
           <div>
-            <h4 className="text-xs font-bold uppercase tracking-widest text-indigo-700 mb-3">
+            <h3 className="text-xs font-bold uppercase tracking-widest text-indigo-700 mb-3">
               {lang === "en" ? "Company" : "Εταιρεία"}
-            </h4>
+            </h3>
             <ul className="space-y-2 text-sm">
               <li><Link href={withLang("/about", lang)} className="text-slate-600 hover:text-slate-900">{footerAbout[lang]}</Link></li>
               <li><Link href={withLang("/contact", lang)} className="text-slate-600 hover:text-slate-900">{footerContact[lang]}</Link></li>
