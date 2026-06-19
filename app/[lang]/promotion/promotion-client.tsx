@@ -15,21 +15,11 @@ const t = {
   hero_guarantee2: { en: "Flat annual fee", el: "Σταθερή ετήσια χρέωση" },
   hero_guarantee4: { en: "Live in 48 hours", el: "Online σε 48 ώρες" },
 
-  /* ===== TRUST BAR ===== */
-  trust_title: { en: "Already featured on GoGreeceNow", el: "Προβάλλονται ήδη στο GoGreeceNow" },
-  trust_logo1: { en: "Iren Rooms", el: "Iren Rooms" },
-  trust_logo2: { en: "Taxi Express Patras", el: "Ταξί Express Πάτρας" },
-  trust_logo3: { en: "Papadellis Olive Oil", el: "Papadellis Ελαιόλαδο" },
-  trust_logo4: { en: "Rolling Into The Blue", el: "Rolling Into The Blue" },
-  trust_logo5: { en: "Vintage Wedding Cars", el: "Vintage Wedding Cars" },
-  trust_stat1_num: { en: "15,000+", el: "15,000+" },
-  trust_stat1_label: { en: "Monthly Readers", el: "Μηνιαίοι Αναγνώστες" },
-  trust_stat2_num: { en: "50+", el: "50+" },
-  trust_stat2_label: { en: "Destinations", el: "Προορισμοί" },
-  trust_stat3_num: { en: "45+", el: "45+" },
-  trust_stat3_label: { en: "Countries", el: "Χώρες" },
-  trust_stat4_num: { en: "100+", el: "100+" },
-  trust_stat4_label: { en: "Local Businesses", el: "Τοπικές Επιχειρήσεις" },
+  /* ===== TRUST ===== */
+  trust_text: {
+    en: "GoGreeceNow is a growing English-language travel portal for Greece, with content targeting international travelers in the trip planning phase.",
+    el: "Το GoGreeceNow είναι ένα αναπτυσσόμενο αγγλόφωνο travel portal για την Ελλάδα, με περιεχόμενο που στοχεύει ταξιδιώτες από το εξωτερικό στη φάση σχεδιασμού του ταξιδιού τους.",
+  },
 
   /* ===== PAIN POINTS ===== */
   pain_label: { en: "Sound Familiar?", el: "Σας θυμίζει κάτι;" },
@@ -227,14 +217,6 @@ const t = {
   form_sending: { en: "Sending...", el: "Αποστολή..." },
 };
 
-const trustLogos = [
-  { num: "1", icon: "🏨", nameKey: "trust_logo1" },
-  { num: "2", icon: "🚕", nameKey: "trust_logo2" },
-  { num: "3", icon: "🫒", nameKey: "trust_logo3" },
-  { num: "4", icon: "⛵", nameKey: "trust_logo4" },
-  { num: "5", icon: "🚗", nameKey: "trust_logo5" },
-];
-
 const painPoints = [
   { icon: "💸", title: "pain1_title", desc: "pain1_desc" },
   { icon: "🔍", title: "pain2_title", desc: "pain2_desc" },
@@ -401,29 +383,12 @@ export default function PromotionClient() {
           </div>
         </section>
 
-        {/* ===== TRUST BAR ===== */}
-        <section className="bg-white py-9 px-6 border-b border-[#e2e8f0] text-center">
-          <p className="text-[13px] text-[#64748b] uppercase tracking-[1px] font-semibold mb-5">{t.trust_title[lang]}</p>
-          <div className="flex justify-center items-center gap-10 flex-wrap mb-6">
-            {trustLogos.map((item, i) => (
-              <div key={i} className="flex flex-col items-center gap-1">
-                <div className="w-[50px] h-[50px] bg-[#f1f5f9] rounded-xl flex items-center justify-center text-[22px]">{item.icon}</div>
-                <span className="text-[11px] text-[#64748b] font-medium">{go(item.nameKey, lang)}</span>
-              </div>
-            ))}
-          </div>
-          <div className="flex justify-center gap-10 flex-wrap">
-            {[
-              { n: t.trust_stat1_num[lang], l: t.trust_stat1_label[lang] },
-              { n: t.trust_stat2_num[lang], l: t.trust_stat2_label[lang] },
-              { n: t.trust_stat3_num[lang], l: t.trust_stat3_label[lang] },
-              { n: t.trust_stat4_num[lang], l: t.trust_stat4_label[lang] },
-            ].map((s, i) => (
-              <div key={i} className="text-center">
-                <strong className="block text-[26px] font-extrabold text-[#1a6fc4]">{s.n}</strong>
-                <span className="text-[13px] text-[#64748b]">{s.l}</span>
-              </div>
-            ))}
+        {/* ===== TRUST STATEMENT ===== */}
+        <section className="bg-white py-14 px-6 border-b border-[#e2e8f0] text-center">
+          <div className="max-w-[720px] mx-auto">
+            <p className="text-[17px] text-[#475569] leading-relaxed">
+              {t.trust_text[lang]}
+            </p>
           </div>
         </section>
 
