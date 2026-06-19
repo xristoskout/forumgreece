@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { motion } from "framer-motion";
 import SiteHeader from "../../../components/site-header";
 import { useLocale } from "../../../lib/useLocale";
 
@@ -8,7 +9,7 @@ const t = {
   /* ===== HERO ===== */
   hero_badge: { en: "The Greece Travel Platform for International Visitors", el: "Η ταξιδιωτική πλατφόρμα για διεθνείς επισκέπτες" },
   hero_title: { en: "Put Your Business in Front of Thousands of Travelers Planning Their Trip to Greece", el: "Βάλε την επιχείρησή σου μπροστά σε χιλιάδες ταξιδιώτες που σχεδιάζουν ταξίδι στην Ελλάδα" },
-  hero_subtitle: { en: "GoGreeceNow connects international visitors with hotels, tours, restaurants and local experiences across Greece — through trusted destination guides read by travelers from the US, UK, Europe, Asia, the Middle East, Australia and Africa.", el: "Το GoGreeceNow συνδέει διεθνείς επισκέπτες με ξενοδοχεία, εκδρομές, εστιατόρια και τοπικές εμπειρίες σε όλη την Ελλάδα." },
+  hero_subtitle: { en: "GoGreeceNow connects international visitors with hotels, tours, restaurants and local experiences across Greece — through trusted destination guides read by travelers from all around the world.", el: "Το GoGreeceNow συνδέει διεθνείς επισκέπτες με ξενοδοχεία, εκδρομές, εστιατόρια και τοπικές εμπειρίες σε όλη την Ελλάδα, μέσα από έμπιστους ταξιδιωτικούς οδηγούς που διαβάζονται από ταξιδιώτες από όλο τον κόσμο." },
   hero_btn_plans: { en: "View Plans & Pricing", el: "Δες Πακέτα & Τιμές" },
   hero_btn_call: { en: "Book a Free Call", el: "Κλείσε Δωρεάν Κλήση" },
   hero_guarantee1: { en: "No commission per booking", el: "Καμία προμήθεια ανά κράτηση" },
@@ -384,8 +385,48 @@ export default function PromotionClient() {
         </section>
 
         {/* ===== TRUST STATEMENT ===== */}
-        <section className="bg-white py-14 px-6 border-b border-[#e2e8f0] text-center">
-          <div className="max-w-[720px] mx-auto">
+        <section className="bg-white py-14 px-6 border-b border-[#e2e8f0] text-center relative overflow-hidden">
+          <div className="absolute inset-0 pointer-events-none flex items-center justify-center opacity-[0.08] select-none">
+            <svg viewBox="0 0 240 120" className="w-[500px] h-[250px] max-w-full">
+              {/* Globe outline */}
+              <circle cx="120" cy="60" r="50" fill="none" stroke="#1a6fc4" strokeWidth="0.5" />
+              {/* Meridians */}
+              <ellipse cx="120" cy="60" rx="50" ry="18" fill="none" stroke="#1a6fc4" strokeWidth="0.25" />
+              <ellipse cx="120" cy="60" rx="18" ry="50" fill="none" stroke="#1a6fc4" strokeWidth="0.25" />
+              <line x1="120" y1="10" x2="120" y2="110" stroke="#1a6fc4" strokeWidth="0.2" />
+              <line x1="70" y1="60" x2="170" y2="60" stroke="#1a6fc4" strokeWidth="0.2" />
+              {/* Dots */}
+              {[
+                { cx: 72, cy: 30, delay: 0 },   // North America
+                { cx: 85, cy: 80, delay: 0.4 }, // South America
+                { cx: 108, cy: 24, delay: 0.8 }, // Europe
+                { cx: 132, cy: 38, delay: 1.2 }, // Middle East
+                { cx: 148, cy: 32, delay: 1.6 }, // Asia
+                { cx: 170, cy: 82, delay: 2.0 }, // Australia
+                { cx: 124, cy: 74, delay: 2.4 }, // Africa
+              ].map((dot, i) => (
+                <motion.circle
+                  key={i}
+                  cx={dot.cx}
+                  cy={dot.cy}
+                  r={2}
+                  fill="#1a6fc4"
+                  initial={{ opacity: 0.2, r: 1.5 }}
+                  animate={{
+                    opacity: [0.2, 1, 0.2],
+                    r: [1.5, 3, 1.5],
+                  }}
+                  transition={{
+                    duration: 2.5,
+                    repeat: Infinity,
+                    delay: dot.delay,
+                    ease: "easeInOut",
+                  }}
+                />
+              ))}
+            </svg>
+          </div>
+          <div className="relative z-10 max-w-[720px] mx-auto">
             <p className="text-[17px] text-[#475569] leading-relaxed">
               {t.trust_text[lang]}
             </p>
