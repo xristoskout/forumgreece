@@ -217,18 +217,27 @@ export default function ChatWidget() {
       >
         <AnimatePresence mode="wait">
           {!isOpen ? (
-            <motion.img
+            <motion.div
               key="chat-gif"
               initial={{ rotate: -90, opacity: 0, scale: 0.5 }}
               animate={{ rotate: 0, opacity: 1, scale: 1 }}
               exit={{ rotate: 90, opacity: 0, scale: 0.5 }}
               transition={{ duration: 0.2 }}
-              src="/images/chat-bot.gif"
-              alt="Chat Assistant"
-              width={56} // Original button is h-14 w-14, which is 56px
-              height={56}
-              className="w-full h-full rounded-full object-cover border-2 border-white/20"
-            />
+              className="w-full h-full rounded-full overflow-hidden border-2 border-white/20"
+            >
+              <video
+                width={56}
+                height={56}
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-full object-cover"
+              >
+                <source src="/images/chat-bot.webm" type="video/webm" />
+                <source src="/images/chat-bot.mp4" type="video/mp4" />
+              </video>
+            </motion.div>
           ) : (
             <motion.svg
               key="close-icon"
