@@ -308,6 +308,22 @@ export default function TripPlannerClient({
               ? "Διάλεξε προορισμούς, προτιμήσεις και προϋπολογισμό — το AI σου φτιάχνει ένα εξατομικευμένο πρόγραμμα μέρα-μέρα"
               : "Pick your destinations, preferences and budget — AI generates a personalized day-by-day itinerary instantly"}
           </motion.p>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+            className="flex flex-wrap items-center justify-center gap-2 text-sm"
+          >
+            <span className="inline-flex items-center gap-1 rounded-full bg-emerald-500/20 px-4 py-1.5 text-emerald-200 border border-emerald-500/30 font-medium">
+              <span>✓</span> {lang === "el" ? "Δωρεάν" : "Free"}
+            </span>
+            <span className="inline-flex items-center gap-1 rounded-full bg-emerald-500/20 px-4 py-1.5 text-emerald-200 border border-emerald-500/30 font-medium">
+              <span>✓</span> {lang === "el" ? "Χωρίς Εγγραφή" : "No Login"}
+            </span>
+            <span className="inline-flex items-center gap-1 rounded-full bg-emerald-500/20 px-4 py-1.5 text-emerald-200 border border-emerald-500/30 font-medium">
+              <span>✓</span> {lang === "el" ? "Κοινοποίηση με Link" : "Shareable Link"}
+            </span>
+          </motion.div>
         </div>
       </div>
 

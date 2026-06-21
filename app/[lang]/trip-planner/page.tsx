@@ -14,22 +14,22 @@ const SITE_NAME = "GoGreeceNow";
 
 const seo = {
   en: {
-    title: "AI Trip Planner for Greece — Build Your Perfect Itinerary | GoGreeceNow",
+    title: "Plan My Greece Trip with AI — Free Itinerary Builder | GoGreeceNow",
     description:
-      "Plan your Greece trip with AI. Select destinations, budget, and interests to get a personalized day-by-day itinerary with hotel, food, and tour suggestions.",
+      "Plan your Greece trip with AI. Free, no login required. Select destinations, budget, and interests to get a personalized day-by-day itinerary with hotel, food, and tour suggestions. Share your plan with a link.",
     path: "/en/trip-planner",
-    ogTitle: "AI Trip Planner for Greece — GoGreeceNow",
+    ogTitle: "Plan My Greece Trip with AI — Free & No Login | GoGreeceNow",
     ogDescription:
-      "Build your perfect Greece itinerary in seconds. Free AI-powered trip planner with personalized day-by-day schedules.",
+      "Plan my Greece trip with AI. Free, no sign-up. Get a personalized day-by-day itinerary in seconds. Share your perfect Greece plan with friends.",
   },
   el: {
-    title: "AI Σχεδιαστής Ταξιδιού για Ελλάδα — Δημιούργησε το Τέλειο Πρόγραμμα | GoGreeceNow",
+    title: "Σχεδίασε το Ταξίδι σου στην Ελλάδα με AI — Δωρεάν | GoGreeceNow",
     description:
-      "Σχεδίασε το ταξίδι σου στην Ελλάδα με AI. Επίλεξε προορισμούς, προϋπολογισμό και ενδιαφέροντα για ένα εξατομικευμένο πρόγραμμα μέρα-μέρα.",
+      "Σχεδίασε το ταξίδι σου στην Ελλάδα με AI. Δωρεάν, χωρίς εγγραφή. Επίλεξε προορισμούς, προϋπολογισμό και ενδιαφέροντα για εξατομικευμένο πρόγραμμα μέρα-μέρα. Μοιράσου το πρόγραμμά σου με link.",
     path: "/el/trip-planner",
-    ogTitle: "AI Σχεδιαστής Ταξιδιού για Ελλάδα — GoGreeceNow",
+    ogTitle: "Σχεδίασε το Ταξίδι σου στην Ελλάδα με AI — Δωρεάν | GoGreeceNow",
     ogDescription:
-      "Φτιάξε το τέλειο πρόγραμμα για Ελλάδα σε δευτερόλεπτα. Δωρεάν AI σχεδιαστής ταξιδιού με εξατομικευμένο ημερήσιο πρόγραμμα.",
+      "Σχεδίασε το τέλειο ταξίδι στην Ελλάδα με AI. Δωρεάν, χωρίς login. Εξατομικευμένο πρόγραμμα μέρα-μέρα σε δευτερόλεπτα.",
   },
 };
 
@@ -50,13 +50,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: s.ogTitle,
       description: s.ogDescription,
       siteName: SITE_NAME,
-      images: [{ url: "/images/hero-greece.webp", width: 1600, height: 900, alt: "AI Trip Planner Greece" }],
+      images: [{ url: "/images/ai-trip-planner.webp", width: 1600, height: 900, alt: "AI Trip Planner Greece" }],
     },
     twitter: {
       card: "summary_large_image",
       title: s.ogTitle,
       description: s.ogDescription,
-      images: ["/images/hero-greece.webp"],
+      images: ["/images/ai-trip-planner.webp"],
     },
   };
 }

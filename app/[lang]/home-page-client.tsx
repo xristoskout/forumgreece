@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import SiteHeader from "../../components/site-header";
-import { Lang } from "../../lib/locale";
+import { Lang, withLang } from "../../lib/locale";
 import { categories } from "../../lib/site-config";
 import { destinations } from "../../lib/destinations-data";
 import { food } from "../../lib/food-data";
@@ -646,7 +646,7 @@ export default function HomePageClient({
                 </div>
                 <div className="flex items-center gap-3 flex-wrap">
                   <Link
-                    href="https://www.gogreecenow.com/en/trip-planner"
+                    href={withLang("/trip-planner", lang)}
                     className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-indigo-500 via-fuchsia-500 to-amber-500 px-7 py-3 text-sm font-bold text-white shadow-[0_4px_25px_rgba(139,92,246,0.4)] transition-all hover:shadow-[0_4px_40px_rgba(139,92,246,0.6)] hover:-translate-y-0.5"
                   >
                     {lang === "en" ? "Try the AI Trip Planner" : "Δοκίμασε τον AI Σχεδιαστή"}
