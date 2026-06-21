@@ -41,9 +41,10 @@ export const destinationSections: Record<string, DestinationSection[]> = {
             en: "The caldera of Santorini is a result of the famous Minoan Eruption, about 3,600 years ago, and is considered one of the largest calderas in the Mediterranean. It's no wonder the area is internationally recognized as geological heritage.",
             el: "Η καλντέρα της Σαντορίνης είναι αποτέλεσμα της περίφημης Μινωικής Έκρηξης, περίπου 3.600 χρόνια πριν, και θεωρείται από τις μεγαλύτερες καλντέρες της Μεσογείου. Δεν είναι τυχαίο ότι η περιοχή έχει αναγνωριστεί διεθνώς ως γεωλογική κληρονομιά.",
           },
-      {
-        title: {
-          en: "Culture and archaeology standing next to the hype",
+        },
+        {
+          title: {
+            en: "Culture and archaeology standing next to the hype",
           el: "Πολιτισμός και αρχαιολογία που \u201cστέκουν\u201d δίπλα στο hype",
         },
         text: {
