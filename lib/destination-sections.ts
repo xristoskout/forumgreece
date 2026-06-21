@@ -41,19 +41,44 @@ export const destinationSections: Record<string, DestinationSection[]> = {
             en: "The caldera of Santorini is a result of the famous Minoan Eruption, about 3,600 years ago, and is considered one of the largest calderas in the Mediterranean. It's no wonder the area is internationally recognized as geological heritage.",
             el: "Η καλντέρα της Σαντορίνης είναι αποτέλεσμα της περίφημης Μινωικής Έκρηξης, περίπου 3.600 χρόνια πριν, και θεωρείται από τις μεγαλύτερες καλντέρες της Μεσογείου. Δεν είναι τυχαίο ότι η περιοχή έχει αναγνωριστεί διεθνώς ως γεωλογική κληρονομιά.",
           },
-    },
-    {
-      title: { en: "", el: "" },
-      gallery: [
-        {
-          image: "/images/patras-gallery-1.webp",
-          alt: { en: "Patras harbour and cityscape", el: "Το λιμάνι της Πάτρας" },
-          caption: { en: "Patras harbour and cityscape", el: "Το λιμάνι της Πάτρας" },
+      {
+        title: {
+          en: "Culture and archaeology standing next to the hype",
+          el: "Πολιτισμός και αρχαιολογία που \u201cστέκουν\u201d δίπλα στο hype",
         },
-      ],
+        text: {
+          en: "The prehistoric settlement in Akrotiri is one of the most important in the Aegean and is impressively preserved thanks to the volcanic ash that covered it. To complete the experience, the Museum of Prehistoric Thira in Fira perfectly fills in the picture of prehistoric life on the island.",
+          el: "Ο προϊστορικός οικισμός στο Ακρωτήρι είναι από τους σημαντικότερους του Αιγαίου και διατηρείται εντυπωσιακά χάρη στην ηφαιστειακή στάχτη που τον σκέπασε. Αν θες να \u201cδέσεις\u201d την εμπειρία, το Μουσείο Προϊστορικής Θήρας στα Φηρά συμπληρώνει ιδανικά την εικόνα της προϊστορικής ζωής στο νησί.",
+        },
+      },
+      {
+        title: {
+          en: "PDO signature wine and volcanic soil character",
+          el: "Κρασί με υπογραφή ΠΟΠ και χαρακτήρα ηφαιστειακού εδάφους",
+        },
+        text: {
+          en: "Santorini holds a PDO (Protected Designation of Origin) for its wine, established in 1971. In the dry PDO wines, the legislation describes a minimum percentage of Assyrtiko. The 'kouloura' (basket) pruning is not just a tourist slogan — it's a real practice you'll see in the wineries.",
+          el: "Η Σαντορίνη έχει ΠΟΠ (PDO) για το κρασί της, που θεσπίστηκε το 1971. Στα \u201cστεγνά\u201d ΠΟΠ κρασιά, η νομοθεσία περιγράφει ελάχιστο ποσοστό Ασύρτικο (με δυνατότητα συμμετοχής Αηδάνι/Αθήρι). Και ναι: το κλάδεμα σε \u201cκουλούρα\u201d δεν είναι τουριστικό σλόγκαν — είναι πραγματική πρακτική που θα σου δείξουν στα οινοποιεία.",
+        },
+      },
+      {
+        title: {
+          en: "Gastronomy with PDO products",
+          el: "Γαστρονομία με προϊόντα ΠΟΠ που ταιριάζουν στο νησί",
+        },
+        text: {
+          en: "The 'Santorini Fava' is registered as a PDO in the EU, and the 'Santorini Tomato' also has PDO specifications. That's why tomatokeftedes (tomato fritters) and fava here are not just 'another dish': they carry place and identity behind them.",
+          el: "Η \u201cΦάβα Σαντορίνης\u201d είναι καταχωρισμένη ως ΠΟΠ στην Ε.Ε. Και το \u201cΤοματάκι Σαντορίνης\u201d έχει επίσης προδιαγραφές ΠΟΠ. Γι\u2019 αυτό οι ντοματοκεφτέδες και η φάβα εδώ δεν είναι \u201cένα ακόμα πιάτο\u201d: έχουν πίσω τους τόπο και ταυτότητα.",
+        },
+      },
+    ],
+  },
+  {
+    title: {
+      en: "Best time to go (and when to avoid)",
+      el: "Καλύτερη εποχή για να πας (και πότε να το αποφύγεις)",
     },
-    {
-      layout: "list",
+    layout: "list",
       alert: {
         en: "Secret: If your goal is the caldera + photos + food (and not necessarily swimming), choose spring or autumn and you'll 'win' Santorini without the peak season stress.",
         el: "Μικρό μυστικό εποχής: Αν ο στόχος σου είναι καλντέρα + φωτογραφίες + φαγητό (και όχι απαραίτητα μπάνια), διάλεξε άνοιξη ή φθινόπωρο και θα “κερδίσεις” τη Σαντορίνη χωρίς το στρες της αιχμής.",
@@ -7630,6 +7655,16 @@ export const destinationSections: Record<string, DestinationSection[]> = {
             en: "Patras is not polished for tourism. Its neoclassical buildings, its market, its long café-lined waterfront, its Sunday fish restaurants, its evening volta along the seafront — these are a city living normally. For travelers who want to experience the texture of contemporary Greek urban life alongside the ancient sites, Patras is the honest version.",
             el: "Η Πάτρα δεν είναι γυαλισμένη για τον τουρισμό. Τα νεοκλασικά κτίριά της, η αγορά της, η μακριά παραλία με τα καφέ, οι κυριακάτικες ψαροταβέρνες, η βραδινή βόλτα στο μέτωπο — αυτά είναι μια πόλη που ζει κανονικά.",
           },
+        },
+      ],
+    },
+    {
+      title: { en: "", el: "" },
+      gallery: [
+        {
+          image: "/images/patras-gallery-1.webp",
+          alt: { en: "Patras harbour and cityscape", el: "Το λιμάνι της Πάτρας" },
+          caption: { en: "Patras harbour and cityscape", el: "Το λιμάνι της Πάτρας" },
         },
       ],
     },
