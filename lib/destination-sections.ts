@@ -7664,8 +7664,8 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       gallery: [
         {
           image: "/images/patras-gallery-1.webp",
-          alt: { en: "Patras harbour and cityscape", el: "Το λιμάνι της Πάτρας" },
-          caption: { en: "Patras harbour and cityscape", el: "Το λιμάνι της Πάτρας" },
+          alt: { en: "patras city center cafe", el: "Καφέ στο κέντρο της Πάτρας" },
+          caption: { en: "patras city center cafe", el: "Καφέ στο κέντρο της Πάτρας" },
         },
       ],
     },

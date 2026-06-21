@@ -1443,7 +1443,7 @@ practicalInfo: {
     slug: "vintage-wedding-cars",
     landingSlug: "athens-tours",
     travelInfoSlug: "honeymoon-in-greece",
-    destinationSlugs: ["patras"],
+    destinationSlugs: ["patras", "nafpaktos"],
     name: "Vintage Wedding Cars",
     category: {
       en: "Vintage Wedding Car Rental",
