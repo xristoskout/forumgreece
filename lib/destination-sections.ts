@@ -12533,8 +12533,8 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       gallery: [
         {
           image: "/images/andros-best-time.webp",
-          alt: { en: "Andros island landscape, Cyclades, Greece", el: "Τοπίο της Άνδρου, Κυκλάδες, Ελλάδα" },
-          caption: { en: "Andros, Cyclades, Greece", el: "Άνδρος, Κυκλάδες, Ελλάδα" },
+          alt: { en: "Zorkos beach, northeastern Andros — wide bay with golden sand and crystal-clear turquoise waters", el: "Παραλία Ζόρκος, βορειοανατολική Άνδρος — μεγάλος κόλπος με χρυσή αμμουδιά και κρυστάλλινα γαλαζοπράσινα νερά" },
+          caption: { en: "Zorkos Beach, Andros, Cyclades, Greece", el: "Παραλία Ζόρκος, Άνδρος, Κυκλάδες, Ελλάδα" },
         },
       ],
     },
@@ -12841,6 +12841,342 @@ export const destinationSections: Record<string, DestinationSection[]> = {
         en: "✕ **Arriving in Gavrio and immediately driving to Batsi or Chora without stopping** — Gavrio is the island's port and most people use it purely as a transit point. This is understandable but misses something genuine. Gavrio's harbour has real kafeneions, a waterfront that belongs to the people who live there rather than those passing through, and the Agios Petros Hellenistic tower just north of town. Take an hour in Gavrio before continuing; it resets the expectations that the ferry crossing may have calibrated toward 'just another Cycladic port.'\n\n✕ **Trying to reach Achla beach by the track road without a proper 4WD** — The track road to Achla is described with adjectives that include 'very rough', 'requires 4WD', and 'potentially impassable after rain' — all of which are accurate. Attempting it in a standard hire car risks both the vehicle and the journey. The correct approach is by boat (seasonal water taxis from Batsi and Chora) or by the trail from Vourkoti.\n\n✕ **Skipping the inland villages to spend more days at the beaches** — The beach offer on Andros is genuinely excellent. But the inland villages — Menites, Apikia, Stenies, Vourkoti, Kochylos — are where Andros is most distinct from every other island in the Aegean. The springs, the plane trees, the xirolithia dry-stone walls, the kafeneion under the trees in Menites where the water flows past the tables — none of these are available at the beach.\n\n✕ **Visiting the Goulandris Museum on the same afternoon as Chora's lanes and the lighthouse** — The museum, even with a targeted visit to the current temporary exhibition, rewards more than the 45 minutes that 'fitting it in' on a busy afternoon allows. Go specifically, in the morning, when the light in the exhibition spaces is better and the midday heat makes outdoor exploration less appealing.\n\n💡 What nobody tells you about Andros: The xirolithia — the distinctive dry-stone walls found throughout the island, built with large vertical slate slabs incorporated between horizontal courses of smaller stone — are unique to Andros and visible on virtually every rural path and farm boundary. They are a form of landscape writing: a record of every property boundary, every field edge, every route between villages that Andriot farmers mapped over centuries. Walking any trail on the island and paying attention to the walls is reading a land-use document in stone that predates every map of the island. Only Andros has this specific technique, this specific visual signature. It is worth slowing down to look at it.",
         el: "✕ **Φτάνεις στο Γαύριο και φεύγεις αμέσως για Μπάτσι ή Χώρα** — Το λιμάνι έχει αυθεντικά καφενεία και τον πύργο του Αγίου Πέτρου. Πάρτε μία ώρα στο Γαύριο.\n\n✕ **Προσπαθείς να φτάσεις στην Άχλα με τον χωματόδρομο χωρίς 4WD** — Ο δρόμος είναι πολύ κακός. Η σωστή προσέγγιση είναι με βάρκα ή με το μονοπάτι από το Βουρκωτό.\n\n✕ **Παραλείπεις τα χωριά του εσωτερικού για περισσότερες μέρες στην παραλία** — Οι Μενίτες, τα Απίκια, οι Στενιές, το Βουρκωτό είναι όπου η Άνδρος ξεχωρίζει από κάθε άλλο νησί.\n\n✕ **Επισκέπτεσαι το Μουσείο Γουλανδρή το ίδιο απόγευμα με τη Χώρα** — Το μουσείο αξίζει περισσότερο από 45 λεπτά. Πήγαινε το πρωί.\n\n💡 Αυτό που δε σου λέει κανείς: Οι ξηρολιθιές της Άνδρου — με τις κάθετες πλάκες σχιστόλιθου που ενσωματώνονται ανάμεσα σε οριζόντιες σειρές μικρότερων λίθων — είναι μοναδικές στο νησί. Είναι μια μορφή γραφής στο τοπίο: κάθε όριο ιδιοκτησίας, κάθε άκρη χωραφιού, κάθε διαδρομή που οι Ανδριώτες αγρότες χαρτογράφησαν επί αιώνες."
       }
-    }
+    },
+  ],
+  nafpaktos: [
+    {
+      layout: "list",
+      title: { en: "Why Visit Nafpaktos & Nafpaktia", el: "Γιατί να επισκεφτείτε τη Ναύπακτο & τη Ναυπακτία" },
+      text: {
+        en: "Nafpaktos is one of the most historically freighted small towns in Greece — a place where a single afternoon of walking the harbour wall, climbing through the layers of a Venetian fortress and reading the plaques scattered through the old town delivers more concentrated history per square metre than destinations ten times its size. Known to the Western world as Lepanto, the town gave its name to the 1571 naval battle in which the Holy League fleet defeated the Ottoman navy — ending over a century of Ottoman dominance in the Mediterranean and inspiring one of the most famous passages in European literature. Miguel de Cervantes fought at Lepanto and lost the use of his left hand in the battle; he considered it, he wrote, the finest thing he ever did.\n\nThe town's extraordinary Venetian harbour — a perfectly circular fortified anchorage with towers and walls preserved in near-complete condition — is the finest example of Venetian military harbour architecture in Greece. The castle rising behind it in five successive rings from the harbour to the mountain summit is Byzantine, Venetian, Ottoman and Greek independence compressed into stone.\n\nForty minutes to the east, the island of Trizonia — the only permanently inhabited island in the entire Gulf of Corinth — sits in a bay of green hills and calm water. To the west, the wetlands of Messolonghi — a UNESCO Biosphere Reserve — form one of the most ecologically and historically significant landscapes in Greece, where Lord Byron died in 1824. Above the coast, the mountain interior rises through chestnut forests to high villages at 800 metres, looking down on the Gulf as if from another world.",
+        el: "Η Ναύπακτος είναι μια από τις πιο ιστορικά φορτισμένες μικρές πόλεις της Ελλάδας — ένα μέρος όπου ένα απόγευμα περπατώντας στο τείχος του λιμανιού, ανεβαίνοντας μέσα από τα βενετσιάνικα κάστρα και διαβάζοντας τις πλάκες στην παλιά πόλη προσφέρει περισσότερη συμπυκνωμένη ιστορία από προορισμούς δεκαπλάσιου μεγέθους. Γνωστή ως Lepanto, η πόλη έδωσε το όνομά της στη ναυμαχία του 1571 όπου ο στόλος της Ιεράς Συμμαχίας νίκησε τον οθωμανικό στόλο. Ο Μιγκέλ ντε Θερβάντες πολέμησε εδώ και έχασε τη χρήση του αριστερού του χεριού.\n\nΤο βενετσιάνικο λιμάνι — ένα τέλεια κυκλικό οχυρό αγκυροβόλιο — είναι το καλύτερο παράδειγμα βενετσιάνικης στρατιωτικής αρχιτεκτονικής λιμανιού στην Ελλάδα. Το κάστρο σε πέντε δακτυλίους από το λιμάνι έως την κορυφή του βουνού είναι Βυζάντιο, Βενετία, Οθωμανοί και Ελληνική Επανάσταση συμπυκνωμένα σε πέτρα.\n\nΣαράντα λεπτά ανατολικά, τα Τριζόνια — το μόνο κατοικημένο νησί του Κορινθιακού — βρίσκονται σε έναν κόλπο με ήρεμα νερά. Δυτικά, οι υγρότοποι του Μεσολογγίου — απόθεμα UNESCO — είναι ένα από τα πιο σημαντικά οικολογικά τοπία της Ελλάδας. Πάνω από την ακτή, τα ορεινά χωριά στα 800 μέτρα κοιτούν τον Κορινθιακό σαν από άλλο κόσμο."
+      }
+    },
+    {
+      title: { en: "", el: "" },
+      gallery: [
+        {
+          image: "/images/nafpaktos-cover.webp",
+          alt: { en: "Harbour of Nafpaktos", el: "Το λιμάνι της Ναυπάκτου" },
+          caption: { en: "Harbour of Nafpaktos", el: "Το λιμάνι της Ναυπάκτου" },
+        },
+      ],
+    },
+    {
+      layout: "grid",
+      title: { en: "Four zones, four completely different worlds", el: "Τέσσερις ζώνες, τέσσερις εντελώς διαφορετικοί κόσμοι" },
+      items: [
+        {
+          title: { en: "Nafpaktos Town — the Venetian harbour and the fortress", el: "Ναύπακτος — το βενετσιάνικο λιμάνι και το κάστρο" },
+          text: { en: "The historic core of the region — perfectly preserved Venetian military architecture on the Gulf coast, a fine sandy town beach, good restaurants and the best concentrated historical experience in Western Greece.", el: "Ο ιστορικός πυρήνας της περιοχής — τέλεια διατηρημένη βενετσιάνικη στρατιωτική αρχιτεκτονική, ωραία αμμώδης παραλία και η καλύτερη συμπυκνωμένη ιστορική εμπειρία στη Δυτική Ελλάδα." }
+        },
+        {
+          title: { en: "Trizonia & the eastern Gulf — the only island in the Gulf of Corinth", el: "Τριζόνια & ανατολικός Κορινθιακός — το μοναδικό νησί" },
+          text: { en: "A car-free island five minutes by ferry from the coast, with a natural harbour beloved by sailing yachts, excellent tavernas and the calmest waters in the region.", el: "Ένα νησί χωρίς αυτοκίνητα, πέντε λεπτά με το φέρι από την ακτή, με εξαιρετικές ταβέρνες και τα πιο ήρεμα νερά της περιοχής." }
+        },
+        {
+          title: { en: "Messolonghi & the western lagoon — Byron's Greece", el: "Μεσολόγγι & δυτική λιμνοθάλασσα — η Ελλάδα του Βύρωνα" },
+          text: { en: "A vast wetland system of lagoons, salt pans and bird-rich islands — UNESCO Biosphere Reserve, site of Byron's death, origin of the most moving episode of the Greek Revolution, and one of the finest wildlife habitats in the Mediterranean.", el: "Μια τεράστια υγροτοπική έκταση λιμνοθαλασσών, αλυκών και πλούσιων σε πουλιά νησιών — Απόθεμα UNESCO, τόπος θανάτου του Βύρωνα." }
+        },
+        {
+          title: { en: "Mountain Nafpaktia — Ano Chora, Platanos and the high villages", el: "Ορεινή Ναυπακτία — Άνω Χώρα, Πλάτανος και τα ψηλά χωριά" },
+          text: { en: "The forested interior above the Gulf coast — stone villages at 700–1,000 metres in chestnut and fir forest, the Mornos reservoir, the Vardousia peaks, traditional festivals and a silence that makes the coast feel like a different country.", el: "Το δασωμένο εσωτερικό πάνω από τον Κορινθιακό — πέτρινα χωριά στα 700-1.000 μέτρα σε δάση καστανιάς και ελάτης, η λίμνη Μόρνου και η σιωπή που κάνει την ακτή να μοιάζει με άλλη χώρα." }
+        },
+      ]
+    },
+    {
+      layout: "numbered",
+      title: { en: "Seven reasons this region rewards serious travellers", el: "Επτά λόγοι που η περιοχή ανταμείβει τους ταξιδιώτες" },
+      items: [
+        {
+          title: { en: "The Venetian harbour is the most beautiful fortified anchorage in Greece", el: "Το βενετσιάνικο λιμάνι είναι το ομορφότερο οχυρό αγκυροβόλιο στην Ελλάδα" },
+          text: { en: "The circular harbour of Nafpaktos — built by the Venetians on Byzantine foundations — is one of the finest examples of military harbour architecture in the Mediterranean. Walk the full castle circuit from the harbour to the topmost walls through five successive rings of fortification. The view from the summit over the Gulf toward the Peloponnese is one of the finest in western Greece.", el: "Το κυκλικό λιμάνι της Ναυπάκτου — χτισμένο από τους Βενετούς σε βυζαντινά θεμέλια — είναι ένα από τα ωραιότερα παραδείγματα στρατιωτικής αρχιτεκτονικής λιμανιού στη Μεσόγειο. Η θέα από την κορυφή προς τον Κορινθιακό και την Πελοπόννησο είναι μοναδική." }
+        },
+        {
+          title: { en: "Trizonia is the only inhabited island in the Gulf of Corinth", el: "Τα Τριζόνια είναι το μοναδικό κατοικημένο νησί του Κορινθιακού" },
+          text: { en: "Connected to the mainland by a five-minute ferry, the island has no cars, a natural harbour attracting yachts from across the Mediterranean, about 100 permanent residents, excellent fish tavernas and a quality of stillness unlike anywhere else in the region. Arrive by early morning ferry and walk the island perimeter path before the day visitors arrive.", el: "Το νησί δεν έχει αυτοκίνητα, έχει φυσικό λιμάνι που προσελκύει ιστιοπλοϊκά, περίπου 100 μόνιμους κατοίκους και εξαιρετικές ψαροταβέρνες." }
+        },
+        {
+          title: { en: "The Battle of Lepanto and its connection to Cervantes", el: "Η Ναυμαχία της Ναυπάκτου και η σύνδεση με τον Θερβάντες" },
+          text: { en: "On 7 October 1571, the combined fleet of the Holy League met the Ottoman fleet in the waters just west of Nafpaktos. A young Spanish soldier named Miguel de Cervantes fought in the battle, was wounded three times and permanently disabled in his left hand. He called it \"the most noble and memorable event that past centuries have seen.\" The Cervantes monument at the town entrance commemorates this connection.", el: "Στις 7 Οκτωβρίου 1571, ο ενωμένος στόλος της Ιεράς Συμμαχίας συνάντησε τον οθωμανικό στα νερά δυτικά της Ναυπάκτου. Ο Μιγκέλ ντε Θερβάντες πολέμησε στη ναυμαχία, τραυματίστηκε τρεις φορές και έχασε τη χρήση του αριστερού του χεριού." }
+        },
+        {
+          title: { en: "Messolonghi — one of the most significant places in Greek history", el: "Μεσολόγγι — ένα από τα σημαντικότερα μέρη της ελληνικής ιστορίας" },
+          text: { en: "The wetlands of Messolonghi are simultaneously a UNESCO Biosphere Reserve and a landscape saturated with the history of Greek independence. Byron came here in 1824, contracted fever and died at 36 — his death electrifying European public opinion. The Garden of Heroes, with the Byron monument, is one of the most moving spaces in Greece. Visit in late afternoon when the low light turns the lagoon to bronze; flamingos arrive from November through March.", el: "Οι υγρότοποι του Μεσολογγίου είναι ταυτόχρονα Απόθεμα UNESCO και τοπίο κορεσμένο από την ιστορία της ελληνικής ανεξαρτησίας. Ο Βύρωνας ήρθε εδώ το 1824, αρρώστησε και πέθανε στα 36 του. Ο Κήπος των Ηρώων είναι ένας από τους πιο συγκινητικούς χώρους στην Ελλάδα." }
+        },
+        {
+          title: { en: "The mountain villages — Ano Chora, Platanos, Elatou and the Vardousia range", el: "Τα ορεινά χωριά — Άνω Χώρα, Πλάτανος, Ελατού και η Βαρδούσια" },
+          text: { en: "The forested mountains above Nafpaktos contain a network of stone villages that have preserved their architectural character to a degree unusual even in rural Greece. Ano Chora, Platanos, Elatou, Terpsithea, Gavros and Perdikovrysi: each has its own church square, its stone fountain, its kafeneion and its festival calendar that draws the diaspora back each August. The chestnut and fir forests create a landscape entirely unlike the bare limestone of most Greek mountain ranges. The drive from Nafpaktos to Lidoriki and then to Ano Chora through the Mornos gorge is one of the finest scenic routes in western Greece.", el: "Τα δασωμένα βουνά πάνω από τη Ναύπακτο φιλοξενούν πέτρινα χωριά που έχουν διατηρήσει τον αρχιτεκτονικό τους χαρακτήρα. Άνω Χώρα, Πλάτανος, Ελατού, Τερψιθέα, Γάβρος και Περδικόβρυση: το καθένα με την πλατεία, το πέτρινο σιντριβάνι και το καφενείο του. Η διαδρομή από τη Ναύπακτο προς το Λιδορίκι και την Άνω Χώρα μέσα από το φαράγγι του Μόρνου είναι κορυφαία." }
+        },
+        {
+          title: { en: "Kato Vasiliki and the west coast — wild beaches without tourist development", el: "Κάτω Βασιλική και δυτική ακτή — άγριες παραλίες χωρίς τουριστική ανάπτυξη" },
+          text: { en: "The western coast of Nafpaktia has long, sandy beaches of striking beauty that see a fraction of the visitors of the Ionian coast. Kato Vasiliki at the mouth of the Gulf has fine sand, clear water, a small fishing harbour and the extraordinary Rio-Antirrio Bridge visible to the east.", el: "Η δυτική ακτή της Ναυπακτίας έχει μακριές αμμώδεις παραλίες εντυπωσιακής ομορφιάς. Η Κάτω Βασιλική στο στόμιο του Κορινθιακού έχει ψιλή άμμο, καθαρά νερά και τη γέφυρα Ρίου-Αντιρρίου ορατή ανατολικά." }
+        },
+        {
+          title: { en: "Perfectly positioned for Delphi, Epirus and the Ionian coast", el: "Ιδανική βάση για Δελφούς, Ήπειρο και Ιόνιο" },
+          text: { en: "Nafpaktos sits at a geographic crossroads — Delphi is 70km northeast (90 minutes), Ioannina is 2.5 hours north, the Ionian islands are accessible via Astakos and Patras, Meteora is 3 hours, Athens is 2.5 hours via the Rio-Antirrio Bridge. A week based in Nafpaktos allows Delphi, the Ionian coast, Messolonghi, the mountain interior and three days for the town and Trizonia.", el: "Η Ναύπακτος βρίσκεται σε γεωγραφικό σταυροδρόμι — οι Δελφοί είναι 70χλμ βορειοανατολικά, τα Ιωάννινα 2,5 ώρες βόρεια, τα Ιόνια νησιά προσβάσιμα από Αστακό και Πάτρα, τα Μετέωρα 3 ώρες, η Αθήνα 2,5 ώρες." }
+        },
+      ]
+    },
+    {
+      layout: "list",
+      title: { en: "The Battle of Lepanto — 7 October 1571", el: "Η Ναυμαχία της Ναυπάκτου — 7 Οκτωβρίου 1571" },
+      text: {
+        en: "In October 1571, in the waters just west of Nafpaktos, the combined fleet of the Holy League engaged the Ottoman fleet in the largest naval battle of the 16th century. Approximately 400 galleys and 170,000 men were involved. The Holy League victory was decisive: the Ottoman fleet lost 200 ships and over 30,000 men; the threat of Ottoman naval expansion into the western Mediterranean was ended permanently.\n\nAmong the Spanish soldiers serving at Lepanto was a 24-year-old named Miguel de Cervantes Saavedra. He was wounded three times — twice in the chest and once in the left arm, which was permanently disabled. He later referred to the battle as \"the most noble and memorable event that past centuries have seen or future generations may hope to see.\" The experience shaped his worldview, and the suffering and heroism he witnessed informed the moral imagination that would eventually produce Don Quixote.\n\nThe battle is commemorated in Nafpaktos by a monument and a bust of Cervantes. Most of the Venetian fortifications visible today were built before the battle and were the operational base from which the Venetian contingent departed. Standing on the harbour wall, looking west over the bay, the historical imagination requires very little effort to engage.",
+        el: "Τον Οκτώβριο του 1571, στα νερά δυτικά της Ναυπάκτου, ο ενωμένος στόλος της Ιεράς Συμμαχίας αντιμετώπισε τον οθωμανικό στόλο στη μεγαλύτερη ναυμαχία του 16ου αιώνα. Περίπου 400 γαλέρες και 170.000 άνδρες συμμετείχαν. Η νίκη ήταν αποφασιστική: ο οθωμανικός στόλος έχασε 200 πλοία και πάνω από 30.000 άνδρες.\n\nΜεταξύ των Ισπανών στρατιωτών ήταν ο 24χρονος Μιγκέλ ντε Θερβάντες. Τραυματίστηκε τρεις φορές — δύο στο στήθος και μία στο αριστερό χέρι, που έμεινε μόνιμα ανάπηρο. Αργότερα αποκάλεσε τη μάχη \"το πιο ευγενές και αξέχαστο γεγονός που έχουν δει οι περασμένοι αιώνες ή μπορούν να ελπίζουν οι μελλοντικές γενιές.\"\n\nΗ μάχη τιμάται στη Ναύπακτο με μνημείο και προτομή του Θερβάντες. Τα βενετσιάνικα οχυρά χτίστηκαν πριν τη μάχη και ήταν η επιχειρησιακή βάση του βενετσιάνικου στόλου."
+      }
+    },
+    {
+      layout: "grid",
+      title: { en: "Best time to visit Nafpaktos & Nafpaktia", el: "Καλύτερη εποχή για επίσκεψη" },
+      items: [
+        {
+          title: { en: "March – April", el: "Μάρτιος – Απρίλιος" },
+          text: { en: "The mountain interior at its most dramatic — chestnut and fir forests in new growth, wildflowers across the high meadows, villages quiet and authentic. Easter in the mountain villages is genuinely moving. The Gulf coast is mild and uncrowded; the Messolonghi lagoon has its finest birdlife.", el: "Το ορεινό εσωτερικό στο πιο δραματικό του — δάση σε νέα ανάπτυξη, αγριολούλουδα στα λιβάδια, χωριά ήσυχα και αυθεντικά. Η ακτή του Κορινθιακού ήπια και χωρίς πολύ κόσμο." }
+        },
+        {
+          title: { en: "May – June", el: "Μάιος – Ιούνιος" },
+          text: { en: "The ideal months for the full region. The Gulf warm enough for swimming by late May; mountain villages green and their festivals beginning; Trizonia in full season without summer crowds; historical sites at their most accessible. Excellent food, reasonable prices, uncrowded everywhere.", el: "Οι ιδανικοί μήνες για όλη την περιοχή. Ο Κορινθιακός αρκετά ζεστός για κολύμπι από τα τέλη Μαΐου, τα ορεινά χωριά πράσινα, τα Τριζόνια σε πλήρη εποχή χωρίς καλοκαιρινά πλήθη." }
+        },
+        {
+          title: { en: "July – August", el: "Ιούλιος – Αύγουστος" },
+          text: { en: "The Gulf coast and Nafpaktos at their liveliest — the summer beach season, the evening volta on the harbour, festival events in the castle. The mountain villages receive their diaspora and hold their festivals. Book ahead for August. The mountains above 700 metres are comfortably cooler than the coast.", el: "Η ακτή και η Ναύπακτος στο πιο ζωντανό τους — καλοκαιρινή σεζόν παραλίας, βραδινή βόλτα στο λιμάνι, φεστιβάλ στο κάστρο. Κάντε κράτηση νωρίς για Αύγουστο." }
+        },
+        {
+          title: { en: "September – October", el: "Σεπτέμβριος – Οκτώβριος" },
+          text: { en: "Outstanding. The Gulf sea at its warmest, summer visitors gone, the chestnut forests beginning to turn gold, mountain villages in autumn light. Messolonghi's flamingos begin arriving in October. The light over the castle and harbour in September is exceptional.", el: "Εξαιρετική περίοδος. Η θάλασσα στο πιο ζεστό της, οι καλοκαιρινοί επισκέπτες έχουν φύγει, τα δάση καστανιάς αρχίζουν να χρυσίζουν. Τα φλαμίνγκο του Μεσολογγίου αρχίζουν να φτάνουν τον Οκτώβριο." }
+        },
+        {
+          title: { en: "November – February", el: "Νοέμβριος – Φεβρουάριος" },
+          text: { en: "Nafpaktos functions year-round — café culture on the harbour, restaurants open, castle and harbour walls always accessible. The Messolonghi wetlands at their finest for birdwatching: flamingos, herons, cormorants and migratory species. The mountain villages in snow are extraordinary if the road is passable.", el: "Η Ναύπακτος λειτουργεί όλο τον χρόνο — καφέ στο λιμάνι, εστιατόρια ανοιχτά. Οι υγρότοποι του Μεσολογγίου στην καλύτερη τους για παρατήρηση πουλιών: φλαμίνγκο, ερωδιοί, κορμοράνοι." }
+        },
+        {
+          title: { en: "7 October — Battle of Lepanto Anniversary", el: "7 Οκτωβρίου — Επέτειος Ναυμαχίας" },
+          text: { en: "The anniversary of the Battle of Lepanto is commemorated annually in Nafpaktos with events, re-enactments and cultural activities at the castle and harbour.", el: "Η επέτειος της Ναυμαχίας τιμάται κάθε χρόνο στη Ναύπακτο με εκδηλώσεις, αναπαραστάσεις και πολιτιστικές δραστηριότητες στο κάστρο και το λιμάνι." }
+        },
+      ]
+    },
+    {
+      layout: "numbered",
+      title: { en: "Nafpaktos Town — the historic town and its monuments", el: "Ναύπακτος — η ιστορική πόλη και τα μνημεία της" },
+      items: [
+        {
+          title: { en: "The Venetian harbour (Bourtzi)", el: "Το βενετσιάνικο λιμάνι (Μπούρτζι)" },
+          text: { en: "The harbour of Nafpaktos is the centrepiece of the town — a perfectly circular basin enclosed by two curved moles, each terminated by a tower. The chain that once stretched between the towers to close the harbour mouth was the mechanism by which the Venetians controlled entry. The towers, walls, gateways and interior spaces are all accessible on foot. The harbour circuit — walking both moles from their landward bases to the towers at their tips — takes about 30 minutes and is the finest single walk in the town.\n\n💡 Sit at one of the café tables on the inner mole in the early evening, when the castle walls above catch the last light and the water goes flat and dark.", el: "Το λιμάνι της Ναυπάκτου είναι το κεντρικό στοιχείο της πόλης — μια τέλεια κυκλική λεκάνη που περικλείεται από δύο καμπύλες προβλήτες. Οι πύργοι, τα τείχη και οι πύλες είναι όλα προσβάσιμα με τα πόδια. Η κυκλική διαδρομή διαρκεί περίπου 30 λεπτά.\n\n💡 Καθίστε σε ένα από τα τραπέζια στην εσωτερική προβλήτα το απόγευμα, όταν τα τείχη του κάστρου πιάνουν το τελευταίο φως." }
+        },
+        {
+          title: { en: "The Castle of Nafpaktos — five rings of walls", el: "Το Κάστρο της Ναυπάκτου — πέντε δακτύλιοι τειχών" },
+          text: { en: "One of the most complete and dramatically positioned medieval fortifications in Greece. Five successive rings of walls rise from the harbour to the mountain summit, enclosing an area that once contained the entire medieval city. The castle is freely accessible and unguided — marked paths through pine and cypress forest. The entire circuit from harbour level to the summit and back takes about two hours.\n\n💡 Go early morning in summer — the paths face south and west and become very hot by midday. The view from the summit at dawn is outstanding. Bring water.", el: "Ένα από τα πληρέστερα και πιο εντυπωσιακά μεσαιωνικά οχυρά στην Ελλάδα. Πέντε διαδοχικοί δακτύλιοι τειχών ανεβαίνουν από το λιμάνι στην κορυφή του βουνού. Η είσοδος είναι ελεύθερη. Η κυκλική διαδρομή διαρκεί περίπου δύο ώρες.\n\n💡 Πηγαίνετε νωρίς το πρωί το καλοκαίρι — τα μονοπάτια γίνονται πολύ ζεστά το μεσημέρι. Φέρτε νερό." }
+        },
+        {
+          title: { en: "Old town, Cervantes monument and the waterfront", el: "Παλιά πόλη, μνημείο Θερβάντες και παραλιακός δρόμος" },
+          text: { en: "The old town between the lower castle walls and the beach has retained its Venetian and Ottoman street pattern and several fine neoclassical buildings. The main square is a functioning Greek town space with kafeneions and good restaurants. The Cervantes monument at the town entrance commemorates the writer's participation in the Battle of Lepanto. The town beach immediately west of the harbour — long, sandy and backed by a pine promenade — is one of the finest town beaches in western Greece.", el: "Η παλιά πόλη μεταξύ των κάτω τειχών και της παραλίας έχει διατηρήσει το βενετσιάνικο και οθωμανικό οδικό δίκτυο. Η παραλία δυτικά του λιμανιού — μακριά, αμμώδης, με πευκόφυτο παραλιακό δρόμο — είναι από τις ωραιότερες στην ηπειρωτική Ελλάδα." }
+        },
+      ]
+    },
+    {
+      layout: "list",
+      title: { en: "Messolonghi — Byron & the Sacred Lagoon", el: "Μεσολόγγι — Βύρωνας & η Ιερή Λιμνοθάλασσα" },
+      text: {
+        en: "Messolonghi occupies a singular position in the Greek national imagination. Lord Byron arrived here in January 1824 with money, military volunteers and a determination to assist the Greek cause for independence. He died here in April of the same year, aged 36, of fever contracted in the miasmal air of the lagoon town. His death — widely reported across Europe — transformed the Greek struggle from a Balkan insurgency into a cause célèbre of Romantic civilisation, contributing directly to the intervention that led to the Battle of Navarino in 1827.\n\nThe Garden of Heroes in central Messolonghi contains the cenotaph of Byron — his heart was buried here by his own request — along with the graves of Greek fighters who died in the town's famous Exodus of 1826. The garden, the cenotaph and the small museum telling this story are among the most moving cultural spaces in Greece.\n\nBeyond the history, Messolonghi is the gateway to one of the finest natural environments in the Mediterranean. The Messolonghi-Aitoliko lagoon complex — a UNESCO Biosphere Reserve — covers approximately 35,000 hectares of interconnected lagoons, salt pans and reed beds supporting flamingos, spoonbills, herons, pelicans and dozens of migratory species. The town of Aitoliko, built on an island in the inner lagoon, is connected to the mainland by two bridges — an inhabited island in a freshwater lagoon surrounded by a saltwater lagoon, surrounded by the sea. The smoked eel of Messolonghi and the local avgotaraho (bottarga) — dried mullet roe — are among the most celebrated food products in western Greece.",
+        el: "Το Μεσολόγγι κατέχει μοναδική θέση στην ελληνική εθνική συνείδηση. Ο Λόρδος Βύρωνας έφτασε εδώ τον Ιανουάριο του 1824 και πέθανε τον Απρίλιο του ίδιου έτους, 36 ετών, από πυρετό. Ο θάνατός του μετέτρεψε τον ελληνικό αγώνα σε υπόθεση του ευρωπαϊκού πολιτισμού.\n\nΟ Κήπος των Ηρώων περιέχει το κενοτάφιο του Βύρωνα — η καρδιά του θάφτηκε εδώ με δική του επιθυμία — μαζί με τους τάφους Ελλήνων αγωνιστών της Εξόδου του 1826.\n\nΠέρα από την ιστορία, το σύμπλεγμα λιμνοθαλασσών Μεσολογγίου-Αιτωλικού — Απόθεμα UNESCO — καλύπτει 35.000 εκτάρια που φιλοξενούν φλαμίνγκο, πελεκάνους και δεκάδες μεταναστευτικά είδη. Το Αιτωλικό, χτισμένο σε νησί μέσα στη λιμνοθάλασσα, είναι ένας κατοικημένος τόπος που μοιάζει να επιπλέει στο νερό."
+      }
+    },
+    {
+      layout: "numbered",
+      title: { en: "Beyond Nafpaktos — the wider Nafpaktia region", el: "Πέρα από τη Ναύπακτο — η ευρύτερη Ναυπακτία" },
+      items: [
+        {
+          title: { en: "Trizonia — the only inhabited island in the Gulf of Corinth", el: "Τριζόνια — το μοναδικό κατοικημένο νησί του Κορινθιακού" },
+          text: { en: "Thirty kilometres east of Nafpaktos, connected to the mainland at Roiza by a small on-demand ferry. The island has about 100 permanent residents, no cars, a natural harbour beloved by sailing yachts and excellent fish tavernas. For day visitors: arrive on the morning ferry, swim, eat lunch and return on the afternoon crossing.\n\n💡 The fish at the taverna on the island quayside is among the freshest in the region — caught locally and served within hours.", el: "Τριάντα χιλιόμετρα ανατολικά της Ναυπάκτου, με φέρι από τη Ροίζα. Το νησί έχει περίπου 100 μόνιμους κατοίκους, καθόλου αυτοκίνητα και εξαιρετικές ψαροταβέρνες.\n\n💡 Το ψάρι στην ταβέρνα της προβλήτας είναι από τα φρέσκοτερα στην περιοχή." }
+        },
+        {
+          title: { en: "The mountain villages — Ano Chora, Platanos, Elatou and the Dorida plateau", el: "Τα ορεινά χωριά — Άνω Χώρα, Πλάτανος, Ελατού και η Δωρίδα" },
+          text: { en: "The mountain interior of Nafpaktia rises steeply from the Gulf coast into chestnut and fir forests, high meadows and stone villages that feel profoundly remote. Ano Chora, the highest village of the region at over 800 metres, has panoramic views over the Mornos reservoir. Platanos and Elatou, slightly lower in the chestnut belt, preserve traditional architecture and a festival culture that draws the diaspora each August. Terpsithea, Gavros and Perdikovrysi are smaller but each has its own character. Lidoriki serves as the main hub for exploring the upper villages.\n\n💡 The Mornos reservoir — the main water supply for Athens — is visible from the high road west of Lidoriki. The viewpoint above the dam is freely accessible and genuinely dramatic.", el: "Το ορεινό εσωτερικό ανεβαίνει απότομα από τον Κορινθιακό σε δάση καστανιάς και ελάτης. Η Άνω Χώρα, το ψηλότερο χωριό της περιοχής πάνω από 800 μέτρα, έχει πανοραμική θέα στη λίμνη Μόρνου. Ο Πλάτανος και η Ελατού, χαμηλότερα στη ζώνη καστανιάς, διατηρούν παραδοσιακή αρχιτεκτονική. Το Λιδορίκι είναι το κέντρο για εξερεύνηση των ψηλότερων χωριών.\n\n💡 Η λίμνη Μόρνου, η κύρια πηγή νερού της Αθήνας, είναι ορατή από τον δρόμο δυτικά του Λιδορικίου." }
+        },
+        {
+          title: { en: "Kato Vasiliki and the west coast", el: "Κάτω Βασιλική και η δυτική ακτή" },
+          text: { en: "The western coast of Nafpaktia has long, sandy and relatively undeveloped beaches with a wild quality. Kato Vasiliki at the mouth of the Gulf has a broad sandy beach, a small working harbour and the Rio-Antirrio Bridge visible to the east — the longest cable-stayed bridge in Europe when it opened in 2004.", el: "Η δυτική ακτή της Ναυπακτίας έχει μακριές αμμώδεις παραλίες. Η Κάτω Βασιλική στο στόμιο του Κορινθιακού έχει φαρδιά αμμώδη παραλία και θέα στη γέφυρα Ρίου-Αντιρρίου." }
+        },
+        {
+          title: { en: "Galaxidi — the maritime town east of Nafpaktos", el: "Γαλαξίδι — η ναυτική πόλη ανατολικά της Ναυπάκτου" },
+          text: { en: "Galaxidi is 35 kilometres east of Nafpaktos on the south shore of the Gulf — one of the finest neoclassical port towns in Greece, built on 19th-century shipping wealth. Its stone mansions, cobbled lanes, excellent restaurants and sophisticated café culture have made it a favourite weekend destination for Athenians. The combination of Nafpaktos and Galaxidi gives an extraordinary picture of Gulf of Corinth maritime identity.\n\n💡 Galaxidi's Clean Monday carnival — flour fights in the streets — draws thousands in February or March. Book accommodation months in advance.", el: "Το Γαλαξίδι είναι 35 χιλιόμετρα ανατολικά της Ναυπάκτου — μια από τις ωραιότερες νεοκλασικές ναυτικές πόλεις της Ελλάδας. Ο συνδυασμός Ναυπάκτου και Γαλαξιδιού δίνει μια εξαιρετική εικόνα της ναυτικής ταυτότητας του Κορινθιακού.\n\n💡 Το καρναβάλι της Καθαράς Δευτέρας στο Γαλαξίδι προσελκύει χιλιάδες επισκέπτες." }
+        },
+        {
+          title: { en: "Delphi — the navel of the world, 70km from Nafpaktos", el: "Δελφοί — ο ομφαλός της γης, 70χλμ από τη Ναύπακτο" },
+          text: { en: "The sanctuary of Apollo at Delphi — UNESCO World Heritage Site, home of the most famous oracle of the ancient world — is 70 kilometres northeast via one of the finest scenic routes in central Greece. Delphi is entirely feasible as a full day trip from Nafpaktos.\n\n💡 Arrive at Delphi when it opens (8am in summer) and spend the first two hours on the site before the tour buses arrive from Athens.", el: "Το ιερό του Απόλλωνα στους Δελφούς — Μνημείο Παγκόσμιας Κληρονομιάς UNESCO — είναι 70 χιλιόμετρα βορειοανατολικά. Μία από τις ωραιότερες διαδρομές της κεντρικής Ελλάδας.\n\n💡 Φτάστε στους Δελφούς κατά το άνοιγμα (8πμ το καλοκαίρι) για να απολαύσετε τον χώρο πριν από τα πούλμαν." }
+        },
+      ]
+    },
+    {
+      layout: "grid",
+      title: { en: "Beaches in Nafpaktos & Nafpaktia", el: "Παραλίες στη Ναύπακτο & τη Ναυπακτία" },
+      items: [
+        {
+          title: { en: "Nafpaktos Town Beach (Psani)", el: "Παραλία Ναυπάκτου (Ψανή)" },
+          text: { en: "The long sandy beach immediately west of the Venetian harbour — backed by a pine promenade, organised with sunbeds and umbrella rental, with good water quality and the castle walls visible above. The finest town beach in the region.", el: "Η μακριά αμμώδης παραλία δυτικά του βενετσιάνικου λιμανιού — με πευκόφυτο παραλιακό δρόμο, ξαπλώστρες και θέα στα τείχη του κάστρου." }
+        },
+        {
+          title: { en: "Trizonia island beaches", el: "Παραλίες Τριζονίων" },
+          text: { en: "Small pebble and sand coves on the island's south and west sides, with the distinctive water of the inner Gulf — calm, warm and clear. Accessible only by ferry; no cars, no noise.", el: "Μικρά βοτσαλωτά και αμμώδη κολπάκια στη νότια και δυτική πλευρά του νησιού. Ήρεμα ζεστά νερά. Προσβάσιμα μόνο με φέρι." }
+        },
+        {
+          title: { en: "Kato Vasiliki beach", el: "Παραλία Κάτω Βασιλικής" },
+          text: { en: "A long, broad sandy beach at the mouth of the Gulf — wilder and less organised, with stronger wind and wave action. The view of the Rio-Antirrio Bridge is one of the most striking in the region.", el: "Μακριά φαρδιά αμμώδης παραλία στο στόμιο του Κορινθιακού — πιο άγρια, με θέα στη γέφυρα Ρίου-Αντιρρίου." }
+        },
+        {
+          title: { en: "Gribovo & Platanos beaches", el: "Παραλίες Γριμπόβου & Πλατάνου" },
+          text: { en: "Organised sandy beaches east of the harbour — sunbeds, beach bars, shallow calm water and easy access from the town centre. The most family-friendly beach zone in the immediate Nafpaktos area.", el: "Οργανωμένες αμμώδεις παραλίες ανατολικά του λιμανιού — ξαπλώστρες, beach bars, ρηχά ήρεμα νερά. Οι πιο οικογενειακές παραλίες της περιοχής." }
+        },
+        {
+          title: { en: "Monastiraki & Selinitsa", el: "Μοναστηράκι & Σελίνιτσα" },
+          text: { en: "Small coves west of Nafpaktos on the road toward Messolonghi — rocky entries, pine-backed and significantly quieter than the main town beach. Excellent water clarity and pine forest shade.", el: "Μικροί κολπίσκοι δυτικά της Ναυπάκτου — βραχώδεις είσοδοι, πευκόφυτοι και πολύ πιο ήσυχοι από την κεντρική παραλία." }
+        },
+        {
+          title: { en: "Kirra & Itea beaches (near Galaxidi)", el: "Παραλίες Κίρρας & Ιτέας" },
+          text: { en: "Long, sandy beaches on the south Gulf shore — set against olive groves and the Parnassos mountain backdrop. Particularly beautiful in the afternoon light.", el: "Μακριές αμμώδεις παραλίες στη νότια ακτή του Κορινθιακού — με ελαιώνες και φόντο τον Παρνασσό." }
+        },
+      ]
+    },
+    {
+      layout: "grid",
+      title: { en: "What to eat and drink in Nafpaktos & Nafpaktia", el: "Τι να φάτε και να πιείτε στη Ναύπακτο & τη Ναυπακτία" },
+      items: [
+        {
+          title: { en: "Avgotaraho — the Messolonghi bottarga", el: "Αυγοτάραχο Μεσολογγίου" },
+          text: { en: "The dried and wax-sealed roe of the grey mullet from the Messolonghi lagoon — eaten in paper-thin slices with lemon and olive oil. The Messolonghi version is considered the finest in Greece. Available from specialist food shops in Messolonghi and Nafpaktos.", el: "Το ξερό και κερωμένο αυγό της κεφαλόπουλας από τη λιμνοθάλασσα του Μεσολογγίου — τρώγεται σε λεπτές φέτες με λεμόνι και ελαιόλαδο." }
+        },
+        {
+          title: { en: "Smoked eel from Messolonghi", el: "Καπνιστό χέλι Μεσολογγίου" },
+          text: { en: "Eels raised in the lagoon's brackish waters and smoked over wood in the traditional method — eaten cold in thin slices as a meze. A speciality specific to this wetland system.", el: "Χέλια από τα υφάλμυρα νερά της λιμνοθάλασσας, καπνιστά στο ξύλο. Μεζές σε λεπτές φέτες." }
+        },
+        {
+          title: { en: "Fresh Gulf seafood", el: "Φρέσκα θαλασσινά Κορινθιακού" },
+          text: { en: "The protected waters of the Gulf produce excellent fish — sea bream, sea bass, red mullet and octopus, supplemented by locally caught shellfish. The fish at Trizonia island is the freshest in the region.", el: "Τα προστατευμένα νερά του Κορινθιακού παράγουν εξαιρετικά ψάρια — τσιπούρα, λαβράκι, μπαρμπούνι και χταπόδι." }
+        },
+        {
+          title: { en: "Mountain lamb and goat", el: "Αρνί και κατσίκι βουνού" },
+          text: { en: "From the mountain villages of Nafpaktia — raised on high pastures and prepared slow-roasted in wood-fired ovens. Available at tavernas in Ano Chora, Lidoriki and Artotina.", el: "Από τα ορεινά χωριά της Ναυπακτίας — εκτροφής σε ψηλά βοσκοτόπια, αργοψημένα σε ξυλόφουρνους." }
+        },
+        {
+          title: { en: "Nafpaktia honey and chestnuts", el: "Μέλι και κάστανα Ναυπακτίας" },
+          text: { en: "The chestnut forests produce a dark, strongly flavoured honey with a faint bitterness from the chestnut blossom. Fresh chestnuts are available in October and November. The honey is available at the Nafpaktos Saturday market and from village producers.", el: "Τα δάση καστανιάς παράγουν ένα σκούρο μέλι με έντονη γεύση. Φρέσκα κάστανα τον Οκτώβριο και Νοέμβριο." }
+        },
+        {
+          title: { en: "Tsipouro and local wine", el: "Τσίπουρο και τοπικό κρασί" },
+          text: { en: "The evening culture at the Nafpaktos harbour — café tables on the inner mole, the castle in the evening light, a glass of tsipouro and a plate of small fish. The regional white wines from the Gulf slopes are light, aromatic and worth asking for.", el: "Η βραδινή κουλτούρα στο λιμάνι της Ναυπάκτου — τραπέζια στην προβλήτα, ένα ποτήρι τσίπουρο και μεζέ." }
+        },
+      ]
+    },
+    {
+      layout: "grid",
+      title: { en: "The region's distinct settlements", el: "Οι ξεχωριστοί οικισμοί της περιοχής" },
+      items: [
+        {
+          title: { en: "Nafpaktos", el: "Ναύπακτος" },
+          text: { en: "The Venetian harbour capital — the finest historic town in western Greece, with the circular harbour, the five-ring castle, a good town beach and evening café culture on the mole. The base for exploring the entire region.", el: "Η βενετσιάνικη πρωτεύουσα του λιμανιού — η ωραιότερη ιστορική πόλη της Δυτικής Ελλάδας." }
+        },
+        {
+          title: { en: "Trizonia island", el: "Τριζόνια" },
+          text: { en: "The only inhabited island in the Gulf of Corinth — car-free, calm, with a natural harbour, excellent fish tavernas and the finest simple lunch in the region. Five minutes by ferry.", el: "Το μοναδικό κατοικημένο νησί του Κορινθιακού — χωρίς αυτοκίνητα, με εξαιρετικές ψαροταβέρνες." }
+        },
+        {
+          title: { en: "Messolonghi", el: "Μεσολόγγι" },
+          text: { en: "The lagoon town of western Aetolia — UNESCO Biosphere Reserve, Byron monument and Garden of Heroes, exceptional food products (avgotaraho, smoked eel), flamingos from October. 45 minutes west of Nafpaktos.", el: "Η πόλη της λιμνοθάλασσας — Απόθεμα UNESCO, μνημείο Βύρωνα, φλαμίνγκο από Οκτώβριο." }
+        },
+        {
+          title: { en: "Aitoliko", el: "Αιτωλικό" },
+          text: { en: "A remarkable settlement built on an island within the inner lagoon, connected to the mainland by two bridges. Surrounded entirely by still water — a surreal, unique sight in western Greece.", el: "Ένας οικισμός χτισμένος σε νησί μέσα στην εσωτερική λιμνοθάλασσα. Εξαιρετικά σουρεαλιστικό θέαμα." }
+        },
+        {
+          title: { en: "Galaxidi", el: "Γαλαξίδι" },
+          text: { en: "35km east of Nafpaktos — a perfectly preserved 19th-century maritime town with stone mansions, cobbled lanes and one of the finest restaurant scenes in the region. An essential complement to Nafpaktos.", el: "Μια τέλεια διατηρημένη ναυτική πόλη του 19ου αιώνα με πέτρινα αρχοντικά και εξαιρετικά εστιατόρια." }
+        },
+        {
+          title: { en: "Ano Chora", el: "Άνω Χώρα" },
+          text: { en: "The highest mountain village of Nafpaktia at over 800 metres — set in chestnut forest with panoramic views over the Mornos reservoir. A traditional plateia, a stone fountain, a kafeneion that opens at noon, and the kind of mountain silence that makes the Gulf coast feel like another world.", el: "Το ψηλότερο ορεινό χωριό της Ναυπακτίας στα 800+ μέτρα — μέσα σε δάσος καστανιάς με πανοραμική θέα στη λίμνη Μόρνου." }
+        },
+      ]
+    },
+    {
+      layout: "list",
+      title: { en: "Honest Advice — What to Skip in Nafpaktos and Nafpaktia", el: "Ειλικρινείς Συμβουλές — Τι να Αποφύγετε στη Ναύπακτο" },
+      text: {
+        en: "✕ **Spending your entire visit in Nafpaktos town without exploring the region** — Nafpaktos deserves a full day, but Trizonia, Messolonghi, the mountain villages and Galaxidi are each reachable in under an hour and offer completely different experiences.\n\n✕ **Treating Messolonghi as merely a historical footnote** — The Garden of Heroes is only 20% of what the place offers. The lagoon, the flamingos, the smoked eel, the avgotaraho, Aitoliko on its lagoon island, boat trips through the wetlands — allow a full day.\n\n✕ **Missing the castle walk because it 'looks far'** — The castle is a living, open, free space of extraordinary scale. Five rings of walls, Byzantine towers, Venetian gateways, views over the Gulf. It takes two hours at a comfortable pace and is the finest two hours available in the town.\n\n✕ **Overlooking Ano Chora and the mountain villages as 'too far'** — The drive from Nafpaktos to Ano Chora through the Mornos gorge is one of the finest scenic routes in western Greece and takes about an hour. The villages at 800 metres in the chestnut forest are a world apart from the coast and are the region's most underrated experience.\n\n💡 What nobody tells you: The Nafpaktia region is one of the most undervalued travel destinations in Greece in 2026, lacking the marketing infrastructure of the island world. What it has instead is a density and diversity of genuine experience — Venetian fortifications, Byzantine history, the Romantic heritage of Byron, the ecological richness of the Messolonghi wetlands, the mountain villages, Trizonia, Galaxidi and a day trip to Delphi — that is simply not available in this concentration anywhere else on the Greek mainland.",
+        el: "✕ **Περνάτε όλη σας την επίσκεψη στη Ναύπακτο χωρίς να εξερευνήσετε την περιοχή** — Τα Τριζόνια, το Μεσολόγγι, τα ορεινά χωριά και το Γαλαξίδι απέχουν λιγότερο από μία ώρα.\n\n✕ **Αντιμετωπίζετε το Μεσολόγγι μόνο ως ιστορικό αποτύπωμα** — Ο Κήπος των Ηρώων είναι μόνο 20% αυτού που προσφέρει η πόλη. Αφιερώστε μια ολόκληρη μέρα.\n\n✕ **Χάνετε τον περίπατο στο κάστρο επειδή 'φαίνεται μακριά'** — Το κάστρο είναι ένας ζωντανός, ελεύθερος χώρος εξαιρετικής κλίμακας.\n\n✕ **Παραβλέπετε την Άνω Χώρα και τα ορεινά χωριά** — Η διαδρομή από τη Ναύπακτο προς την Άνω Χώρα μέσα από το φαράγγι του Μόρνου είναι κορυφαία και διαρκεί περίπου μία ώρα.\n\n💡 Αυτό που δε σου λέει κανείς: Η Ναυπακτία είναι ένας από τους πιο υποτιμημένους ταξιδιωτικούς προορισμούς στην Ελλάδα το 2026. Αυτό που έχει είναι μια πυκνότητα αυθεντικών εμπειριών που απλά δεν υπάρχει αλλού."
+      }
+    },
+    {
+      layout: "grid",
+      title: { en: "Practical tips for visiting Nafpaktos & Nafpaktia", el: "Πρακτικές συμβουλές" },
+      items: [
+        {
+          title: { en: "Getting to Nafpaktos", el: "Πώς να φτάσετε στη Ναύπακτο" },
+          text: { en: "By car from Athens: 2.5 hours via the Rio-Antirrio Bridge and E65 motorway — one of the finest drives in central Greece. From Patras: 45 minutes east. From Delphi: 90 minutes via Itea. No direct train; nearest rail is Patras.", el: "Από Αθήνα με αυτοκίνητο: 2,5 ώρες μέσω της γέφυρας Ρίου-Αντιρρίου. Από Πάτρα: 45 λεπτά. Από Δελφούς: 90 λεπτά." }
+        },
+        {
+          title: { en: "Do I need a car?", el: "Χρειάζομαι αυτοκίνητο;" },
+          text: { en: "Yes, for the full region. Nafpaktos town is walkable, but Trizonia, Messolonghi, the mountain villages and Galaxidi all require independent transport. A car hired for three days covers the entire region comfortably.", el: "Ναι, για όλη την περιοχή. Η Ναύπακτος είναι περπατήσιμη αλλά τα Τριζόνια, το Μεσολόγγι, τα ορεινά χωριά και το Γαλαξίδι απαιτούν αυτοκίνητο." }
+        },
+        {
+          title: { en: "How many days?", el: "Πόσες μέρες;" },
+          text: { en: "Two days covers Nafpaktos and one day trip. Four to five days covers the whole region: the town, Trizonia, Messolonghi, the mountain circuit and Galaxidi. Seven days with Delphi as a day trip gives the most complete experience.", el: "Δύο μέρες καλύπτουν τη Ναύπακτο και μία εκδρομή. Τέσσερις με πέντε μέρες καλύπτουν όλη την περιοχή." }
+        },
+        {
+          title: { en: "Getting to Trizonia", el: "Πώς να πάτε στα Τριζόνια" },
+          text: { en: "Drive east from Nafpaktos approximately 60km to the small ferry landing at Roiza (near Aigion). The ferry takes 5 minutes and runs on demand — wave from the quay or phone the ferryman. No cars on the island.", el: "Οδηγήστε ανατολικά 60χλμ στο εκβρασμό της Ροίζας. Το φέρι διαρκεί 5 λεπτά και λειτουργεί κατά παραγγελία. Το νησί δεν έχει αυτοκίνητα." }
+        },
+        {
+          title: { en: "Rio-Antirrio Bridge", el: "Γέφυρα Ρίου-Αντιρρίου" },
+          text: { en: "The Charilaos Trikoupis Bridge — 2,883 metres, the longest cable-stayed bridge in Europe when built. A toll is charged. The older ferry alternative still operates for those who prefer it.", el: "Η γέφυρα Χαρίλαος Τρικούπης — 2.883 μέτρα, η μεγαλύτερη καλωδιωτή γέφυρα στην Ευρώπη όταν χτίστηκε." }
+        },
+        {
+          title: { en: "Messolonghi birdwatching", el: "Παρατήρηση πουλιών στο Μεσολόγγι" },
+          text: { en: "One of the finest birdwatching locations in Greece year-round, exceptional October–March. Flamingos (up to 4,000) visible from the road west of Messolonghi November–April. Boat trips and the Biodiversity Park observation platforms available.", el: "Από τις καλύτερες τοποθεσίες για παρατήρηση πουλιών στην Ελλάδα. Έως 4.000 φλαμίνγκο από Νοέμβριο έως Απρίλιο." }
+        },
+        {
+          title: { en: "Mountain village festivals", el: "Πανηγύρια ορεινών χωριών" },
+          text: { en: "The villages hold their major festivals in July and August — feast days of local patron saints with music, dancing and traditional food. The festivals at Ano Chora, Platanos and Lidoriki are the most accessible.", el: "Τα χωριά έχουν μεγάλα πανηγύρια τον Ιούλιο και Αύγουστο — γιορτές τοπικών αγίων με μουσική, χορό και φαγητό." }
+        },
+        {
+          title: { en: "Combining Nafpaktos with Delphi", el: "Συνδυασμός με Δελφούς" },
+          text: { en: "Delphi is 70km northeast via the Gulf coast road through Itea. The drive passes through exceptional olive grove landscapes. Nafpaktos as base, Delphi as day trip, Galaxidi for dinner on return — one of the finest one-day circuits in central Greece.", el: "Οι Δελφοί είναι 70χλμ βορειοανατολικά. Η διαδρομή περνά από εξαιρετικά τοπία ελαιώνων. Ναύπακτος ως βάση, Δελφοί ως ημερήσια εκδρομή, Γαλαξίδι για δείπνο — μια από τις ωραιότερες διαδρομές." }
+        },
+      ]
+    },
+    {
+      layout: "faq",
+      title: { en: "FAQ about Nafpaktos & Nafpaktia", el: "Συχνές ερωτήσεις για τη Ναύπακτο & τη Ναυπακτία" },
+      items: [
+        {
+          title: { en: "What is the connection between Nafpaktos and Cervantes?", el: "Ποια είναι η σύνδεση μεταξύ Ναυπάκτου και Θερβάντες;" },
+          text: { en: "Miguel de Cervantes, author of Don Quixote, participated in the Battle of Lepanto on 7 October 1571 as a young Spanish soldier. He was wounded three times, including a wound to his left arm that permanently disabled his hand. He considered his participation in the battle the most important event of his life and described it as \"the most noble and memorable event that past centuries have seen or future generations may hope to see.\" A monument to Cervantes stands at the entrance to Nafpaktos town.", el: "Ο Μιγκέλ ντε Θερβάντες, συγγραφέας του Δον Κιχώτη, συμμετείχε στη Ναυμαχία της Ναυπάκτου στις 7 Οκτωβρίου 1571. Τραυματίστηκε τρεις φορές και το αριστερό του χέρι έμεινε μόνιμα ανάπηρο. Μνημείο του Θερβάντες βρίσκεται στην είσοδο της Ναυπάκτου." }
+        },
+        {
+          title: { en: "Why did Byron come to Messolonghi?", el: "Γιατί ήρθε ο Βύρωνας στο Μεσολόγγι;" },
+          text: { en: "Lord Byron arrived in Messolonghi in January 1824 with a strong personal commitment to the Greek cause for independence. He contracted fever in the miasmal conditions of the lagoon town and died in April 1824, aged 36. His death was reported across Europe and transformed the Greek cause into a matter of European civilisation, contributing significantly to the international intervention that secured Greek independence. His heart was buried in Messolonghi by his own request; his body was returned to England.", el: "Ο Λόρδος Βύρωνας έφτασε στο Μεσολόγγι τον Ιανουάριο 1824 για να υποστηρίξει τον ελληνικό αγώνα ανεξαρτησίας. Πέθανε τον Απρίλιο 1824 από πυρετό. Η καρδιά του θάφτηκε στο Μεσολόγγι με δική του επιθυμία." }
+        },
+        {
+          title: { en: "How do I get to Trizonia island?", el: "Πώς πάω στα Τριζόνια;" },
+          text: { en: "Drive east from Nafpaktos approximately 60km to the small ferry landing at Roiza, near Aigion. The ferry takes approximately 5 minutes and runs on demand. No cars on Trizonia; leave your vehicle at the mainland parking. The ferry is inexpensive and operates year-round.", el: "Οδηγήστε ανατολικά 60χλμ στο εκβρασμό της Ροίζας. Το φέρι διαρκεί 5 λεπτά. Το νησί δεν έχει αυτοκίνητα. Το φέρι λειτουργεί όλο τον χρόνο." }
+        },
+        {
+          title: { en: "Is Nafpaktos a good base for visiting Delphi?", el: "Είναι η Ναύπακτος καλή βάση για τους Δελφούς;" },
+          text: { en: "Excellent — possibly the finest base for Delphi outside of the village of Delphi itself. The drive takes approximately 90 minutes via the Gulf coast road through Itea. Staying in Nafpaktos gives you both the historical interest of the town and easy access to Delphi for a full day at the site.", el: "Εξαιρετική — ίσως η καλύτερη βάση για τους Δελφούς εκτός από το ίδιο το χωριό. Η διαδρομή διαρκεί περίπου 90 λεπτά." }
+        },
+        {
+          title: { en: "What is avgotaraho and where can I buy it?", el: "Τι είναι το αυγοτάραχο και πού μπορώ να το αγοράσω;" },
+          text: { en: "Avgotaraho is Greek bottarga — the dried and wax-sealed roe sac of the grey mullet. The Messolonghi version is considered the finest in Greece. Available from specialist food shops in Messolonghi and Nafpaktos. It is expensive but among the most specific and rewarding food souvenirs from western Greece.", el: "Το αυγοτάραχο είναι το ξερό αυγό της κεφαλόπουλας. Η έκδοση Μεσολογγίου θεωρείται η καλύτερη στην Ελλάδα. Διατίθεται σε εξειδικευμένα καταστήματα." }
+        },
+        {
+          title: { en: "How does Nafpaktos compare to other historical towns in Greece?", el: "Πώς συγκρίνεται η Ναύπακτος με άλλες ιστορικές πόλεις;" },
+          text: { en: "Nafpaktos ranks among the finest historical towns in Greece. The Venetian harbour is better preserved than its equivalents in Heraklion and Chania. The castle is more extensive and accessible than most comparable fortifications. The specific historical narrative — Lepanto, Cervantes, the Venetian-Ottoman struggle — is of European rather than merely Greek significance. It is less famous than Nafplio or Rhodes because it has been less marketed, not because it is less deserving.", el: "Η Ναύπακτος είναι από τις ωραιότερες ιστορικές πόλεις της Ελλάδας. Το βενετσιάνικο λιμάνι είναι καλύτερα διατηρημένο από αυτό του Ηρακλείου και των Χανίων." }
+        },
+        {
+          title: { en: "When is the best time to see flamingos at Messolonghi?", el: "Πότε είναι η καλύτερη εποχή για φλαμίνγκο στο Μεσολόγγι;" },
+          text: { en: "Greater flamingos are present from approximately October through April, with numbers peaking in winter (December–February) when up to 3,000–4,000 birds can be seen in the salt pans west of the town. Visible from the road without specialist equipment. The lagoon in winter light — flamingos pink against silver water — is one of the most beautiful natural spectacles in mainland Greece.", el: "Από Οκτώβριο έως Απρίλιο, με μέγιστο τον Δεκέμβριο-Φεβρουάριο όταν 3.000-4.000 πουλιά είναι ορατά στις αλυκές δυτικά της πόλης." }
+        },
+      ]
+    },
   ],
 };

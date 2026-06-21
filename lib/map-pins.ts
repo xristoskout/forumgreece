@@ -311,4 +311,11 @@ export const MAP_PINS: Pin[] = [
     label: { en: "Andros", el: "Άνδρος" },
     tagline: { en: "Hiking capital of the Cyclades", el: "Πρωτεύουσα πεζοπορίας των Κυκλάδων" },
   },
+  {
+    id: "nafpaktos",
+    x: 30.1, y: 45.4,
+    href: "/destinations/nafpaktos",
+    label: { en: "Nafpaktos", el: "Ναύπακτος" },
+    tagline: { en: "Lepanto's Venetian harbour", el: "Το βενετσιάνικο λιμάνι της Ναυπάκτου" },
+  },
 ];

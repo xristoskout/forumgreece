@@ -13,8 +13,9 @@ const regionLabels: Record<string, { en: string; el: string }> = {
   Attica: { en: "Attica & Argo-Saronic", el: "Αττική & Αργοσαρωνικός" },
   Crete: { en: "Crete", el: "Κρήτη" },
   "Central Macedonia": { en: "Central Macedonia", el: "Κεντρική Μακεδονία" },
-  Peloponnese: { en: "Peloponnese", el: "Πελοπόννησος" },
-  "Central Greece": { en: "Central Greece", el: "Στερεά Ελλάδα" },
+   Peloponnese: { en: "Peloponnese", el: "Πελοπόννησος" },
+   "Central Greece": { en: "Central Greece", el: "Στερεά Ελλάδα" },
+   "Mainland Greece": { en: "Mainland Greece", el: "Ηπειρωτική Ελλάδα" },
   "North Aegean": { en: "North Aegean", el: "Βόρειο Αιγαίο" },
   Sporades: { en: "Sporades", el: "Σποράδες" },
   Epirus: { en: "Epirus", el: "Ήπειρος" },
@@ -29,7 +30,8 @@ function getRegion(place: string): string {
     "Western Crete": "Crete",
     "Central Crete": "Crete",
     "Laconia, Peloponnese": "Peloponnese",
-    "Phocis, Central Greece": "Central Greece",
+    "Phocis, Central Greece": "Mainland Greece",
+    "Central Greece": "Mainland Greece",
     "Epirus, Northwestern Greece": "Epirus",
     "Western Greece & Peloponnese": "Peloponnese",
     "Saronic Islands": "Attica",
@@ -96,7 +98,7 @@ export default function HotelsDirectoryClient({
   return (
     <>
       {/* ════════ HERO ════════ */}
-      <section className="relative min-h-[500px] h-[70vh] w-full flex items-center justify-center overflow-hidden pt-24">
+      <section className="relative min-h-[640px] h-[80vh] w-full flex items-center justify-center overflow-hidden pt-24">
         <motion.div
           initial={{ scale: 1.15, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
@@ -112,8 +114,8 @@ export default function HotelsDirectoryClient({
             className="object-cover object-center brightness-[0.75]"
           />
         </motion.div>
-        <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/30 via-transparent via-50% to-transparent to-95%" />
-        <div className="relative z-20 flex flex-col items-center text-center px-6 max-w-5xl py-12">
+        <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/40 via-black/10 via-40% to-black/30 to-100%" />
+        <div className="relative z-20 flex flex-col items-center text-center px-6 max-w-5xl py-16">
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

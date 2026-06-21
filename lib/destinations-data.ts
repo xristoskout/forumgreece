@@ -1691,6 +1691,45 @@ export const destinations: Destination[] = [
         el: "Πλήρης ταξιδιωτικός οδηγός για την Άνδρο: 300χλμ πιστοποιημένα μονοπάτια, νεοκλασική Χώρα, Μουσείο Γουλανδρή, καταρράκτες Πιθαρά, παραλία Άχλα, φουρτάλια & πρακτικές συμβουλές."
       }
     }
+  },
+  {
+    slug: "nafpaktos",
+    name: "Nafpaktos",
+    region: { en: "Mainland escapes", el: "Ηπειρωτική Ελλάδα" },
+    blurb: {
+      en: "A perfectly preserved Venetian harbour that gave the world the Battle of Lepanto and the imagination of Cervantes. The only inhabited island in the Gulf of Corinth. A sacred lagoon where Byron came to die for Greek independence. And above it all, forested mountain villages of exceptional beauty.",
+      el: "Ένα τέλεια διατηρημένο βενετσιάνικο λιμάνι που χάρισε στον κόσμο τη Ναυμαχία της Ναυπάκτου και την έμπνευση του Θερβάντες. Το μοναδικό κατοικημένο νησί στον Κορινθιακό Κόλπο. Μια ιερή λιμνοθάλασσα όπου πέθανε ο Βύρωνας για την ελληνική ανεξαρτησία. Και πάνω απ' όλα, δασωμένα ορεινά χωριά εξαιρετικής ομορφιάς."
+    },
+    image: "/images/nafpaktos-cover.webp",
+    imagePosition: "50% 50%",
+    overview: {
+      en: "Nafpaktos is one of the most historically freighted small towns in Greece — a place where a single afternoon of walking the harbour wall, climbing through the layers of a Venetian fortress and reading the plaques scattered through the old town delivers more concentrated history per square metre than destinations ten times its size. Known to the Western world as Lepanto, the town gave its name to the 1571 naval battle in which the Holy League fleet defeated the Ottoman navy — ending over a century of Ottoman dominance in the Mediterranean and inspiring one of the most famous passages in European literature. Miguel de Cervantes fought at Lepanto and lost the use of his left hand in the battle; he considered it, he wrote, the finest thing he ever did. The surrounding Nafpaktia region encompasses the only inhabited island in the Gulf of Corinth, the sacred wetlands of Messolonghi, a wild west coast and forested mountain villages of exceptional beauty.",
+      el: "Η Ναύπακτος είναι μια από τις πιο ιστορικά φορτισμένες μικρές πόλεις της Ελλάδας — ένα μέρος όπου ένα απόγευμα περπατώντας στο τείχος του λιμανιού, ανεβαίνοντας μέσα από τα στρώματα ενός βενετσιάνικου κάστρου και διαβάζοντας τις πλάκες διάσπαρτες στην παλιά πόλη προσφέρει περισσότερη συμπυκνωμένη ιστορία ανά τετραγωνικό μέτρο από προορισμούς δεκαπλάσιου μεγέθους. Γνωστή στον δυτικό κόσμο ως Lepanto, η πόλη έδωσε το όνομά της στη ναυμαχία του 1571 όπου ο στόλος της Ιεράς Συμμαχίας νίκησε τον οθωμανικό στόλο. Ο Μιγκέλ ντε Θερβάντες πολέμησε στη ναυμαχία και έχασε τη χρήση του αριστερού του χεριού. Η γύρω περιοχή της Ναυπακτίας περιλαμβάνει το μοναδικό κατοικημένο νησί του Κορινθιακού Κόλπου, τους ιερούς υγροτόπους του Μεσολογγίου, μια άγρια δυτική ακτή και δασωμένα ορεινά χωριά."
+    },
+    highlights: {
+      en: ["Venetian harbour (Bourtzi)", "Castle — five rings of walls", "Trizonia island — only island in Gulf of Corinth", "Messolonghi lagoon & Byron monument", "Galaxidi neoclassical town", "Mountain villages of Nafpaktia", "Flamingos at Messolonghi", "Rio-Antirrio Bridge"],
+      el: ["Βενετσιάνικο λιμάνι (Μπούρτζι)", "Κάστρο — πέντε δακτύλιοι τειχών", "Τριζόνια — μοναδικό νησί Κορινθιακού", "Λιμνοθάλασσα Μεσολογγίου & μνημείο Βύρωνα", "Γαλαξίδι — νεοκλασική ναυτική πόλη", "Ορεινά χωριά Ναυπακτίας", "Φλαμίνγκο στο Μεσολόγγι", "Γέφυρα Ρίου-Αντιρρίου"]
+    },
+    guideLinks: [
+      {
+        href: "/hotels/nafpaktos",
+        label: { en: "Where to Stay in Nafpaktos", el: "Πού να μείνεις στη Ναύπακτο" }
+      },
+      {
+        href: "/tours/all",
+        label: { en: "Tours & Experiences", el: "Εκδρομές & Εμπειρίες" }
+      }
+    ],
+    seo: {
+      title: {
+        en: "Nafpaktos Travel Guide: Lepanto, Trizonia, Messolonghi & Mountain Villages | GoGreeceNow",
+        el: "Ναύπακτος: Ταξιδιωτικός Οδηγός — Λιμάνι, Κάστρο, Τριζόνια, Μεσολόγγι & Ορεινά Χωριά"
+      },
+      description: {
+        en: "Complete travel guide to Nafpaktos and Nafpaktia — the Venetian harbour that inspired Cervantes, the only inhabited island in the Gulf of Corinth, the sacred lagoon of Messolonghi where Byron died, and forested mountain villages above the clouds. Everything you need to know before you go.",
+        el: "Πλήρης ταξιδιωτικός οδηγός για τη Ναύπακτο και τη Ναυπακτία — το βενετσιάνικο λιμάνι, το κάστρο με τους πέντε δακτυλίους, τα Τριζόνια, τη λιμνοθάλασσα του Μεσολογγίου, τα ορεινά χωριά και πρακτικές συμβουλές."
+      }
+    }
   }
 ];
 

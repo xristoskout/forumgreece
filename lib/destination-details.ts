@@ -743,4 +743,68 @@ export const destinationDetails: Record<string, DestinationDetail> = {
       ],
     },
   },
+  nafpaktos: {
+    overview: {
+      en: "Nafpaktos is one of the most historically freighted small towns in Greece — a place where a single afternoon of walking the harbour wall, climbing through the layers of a Venetian fortress and reading the plaques scattered through the old town delivers more concentrated history per square metre than destinations ten times its size. Known to the Western world as Lepanto, the town gave its name to the 1571 naval battle where the Holy League defeated the Ottoman navy — ending over a century of Ottoman dominance in the Mediterranean. Miguel de Cervantes fought at Lepanto and lost the use of his left hand; he considered it the finest thing he ever did. The surrounding Nafpaktia region encompasses the only inhabited island in the Gulf of Corinth, the sacred wetlands of Messolonghi, a wild west coast and forested mountain villages that rank among the most beautiful in mainland Greece.",
+      el: "Η Ναύπακτος είναι μια από τις πιο ιστορικά φορτισμένες μικρές πόλεις της Ελλάδας — ένα απόγευμα περπατώντας στο τείχος του λιμανιού, ανεβαίνοντας μέσα από τα βενετσιάνικα κάστρα και διαβάζοντας τις πλάκες στην παλιά πόλη προσφέρει περισσότερη ιστορία από προορισμούς δεκαπλάσιου μεγέθους. Γνωστή ως Lepanto στον δυτικό κόσμο, η πόλη έδωσε το όνομά της στη ναυμαχία του 1571. Ο Θερβάντες πολέμησε εδώ και έχασε τη χρήση του αριστερού του χεριού. Η γύρω Ναυπακτία περιλαμβάνει τα Τριζόνια (μοναδικό νησί του Κορινθιακού), τους υγροτόπους του Μεσολογγίου, μια άγρια δυτική ακτή και δασωμένα ορεινά χωριά."
+    },
+    pageIncludes: {
+      en: [
+        "Region zones — four worlds in one destination",
+        "Why visit — seven reasons this region rewards serious travellers",
+        "The Battle of Lepanto & Cervantes connection",
+        "Best time to visit Nafpaktos & Nafpaktia",
+        "Nafpaktos Town — harbour, castle & old town",
+        "Messolonghi — Byron & the sacred lagoon",
+        "Beyond Nafpaktos — Trizonia, Galaxidi, mountain villages, Delphi day trip",
+        "Beaches guide",
+        "Food & drink — avgotaraho, eel, tsipouro",
+        "Villages & areas — distinct settlements of the region",
+        "Honest advice — what to skip & what nobody tells you",
+        "Practical tips — transport, days needed, birdwatching",
+        "FAQ — everything you need to know"
+      ],
+      el: [
+        "Τέσσερις ζώνες — τέσσερις κόσμοι σε έναν προορισμό",
+        "Γιατί να επισκεφτείτε τη Ναυπακτία",
+        "Η Ναυμαχία της Ναυπάκτου & η σύνδεση με τον Θερβάντες",
+        "Καλύτερη εποχή για επίσκεψη",
+        "Ναύπακτος — λιμάνι, κάστρο & παλιά πόλη",
+        "Μεσολόγγι — Βύρωνας & η ιερή λιμνοθάλασσα",
+        "Πέρα από τη Ναύπακτο — Τριζόνια, Γαλαξίδι, ορεινά χωριά, Δελφοί",
+        "Οδηγός παραλιών",
+        "Φαγητό & ποτό — αυγοτάραχο, χέλι, τσίπουρο",
+        "Χωριά & περιοχές",
+        "Ειλικρινείς συμβουλές — τι να αποφύγετε",
+        "Πρακτικές συμβουλές",
+        "FAQ"
+      ]
+    },
+    perfectFor: {
+      en: [
+        "History & cultural travellers",
+        "Nature & birdwatching enthusiasts",
+        "Sailing & yachting",
+        "Mountain & hiking lovers",
+        "Family holidays with beaches",
+        "Weekend escapes from Athens",
+        "Literary & Romantic heritage travellers",
+        "Food & wine tourism",
+        "Delphi combined visits",
+        "Anyone seeking authentic, undiscovered Greece"
+      ],
+      el: [
+        "Ταξιδιώτες ιστορίας & πολιτισμού",
+        "Λάτρεις της φύσης & παρατήρησης πουλιών",
+        "Ιστιοπλοΐα & yachting",
+        "Ορειβασία & πεζοπορία",
+        "Οικογενειακές διακοπές με παραλίες",
+        "Αποδράσεις από την Αθήνα",
+        "Λάτρεις της λογοτεχνίας & ρομαντικής κληρονομιάς",
+        "Γαστρονομικός & οινοτουρισμός",
+        "Συνδυασμός με Δελφούς",
+        "Όσους αναζητούν αυθεντική, ανεξερεύνητη Ελλάδα"
+      ]
+    }
+  },
 };
