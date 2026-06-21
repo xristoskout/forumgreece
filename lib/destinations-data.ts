@@ -1655,6 +1655,42 @@ export const destinations: Destination[] = [
         el: "Πλήρης ταξιδιωτικός οδηγός για τη Χίο: το ζωγραφιστό Πυργί, τα οχυρωμένα Μεστά, τη Νέα Μονή UNESCO, τον Ανάβατο, τη μαστίχα, τις μαύρες ηφαιστειακές παραλίες, πότε να πας & πρακτικές συμβουλές."
       }
     }
+  },
+  {
+    slug: "andros",
+    name: "Andros",
+    region: { en: "Cyclades", el: "Κυκλάδες" },
+    blurb: {
+      en: "Hiking capital of the Cyclades with 300km of certified trails, a neoclassical Chora built by sea captains, the Goulandris Museum of Modern Art, perennial rivers and waterfalls, and beaches that combine wild coastal scenery with exceptional water clarity.",
+      el: "Πρωτεύουσα πεζοπορίας των Κυκλάδων με 300χλμ πιστοποιημένα μονοπάτια, νεοκλασική Χώρα καπεταναίων, Μουσείο Σύγχρονης Τέχνης Γουλανδρή, ποτάμια, καταρράκτες και παραλίες με εξαιρετική διαύγεια."
+    },
+    image: "/images/andros-cover.webp",
+    imagePosition: "50% 50%",
+    overview: {
+      en: "Andros is the northernmost and second-largest island of the Cyclades — radically different from every other island in the group, with year-round flowing rivers, waterfalls, springs, green valleys shaded by plane trees, 300+ kilometres of certified hiking trails, a neoclassical capital built on 19th-century maritime shipping wealth, and the Goulandris Museum of Modern Art, one of the finest small museums in the Mediterranean.",
+      el: "Η Άνδρος είναι το βορειότερο και δεύτερο μεγαλύτερο νησί των Κυκλάδων — ριζικά διαφορετικό από κάθε άλλο νησί της ομάδας, με ποτάμια που ρέουν όλο τον χρόνο, καταρράκτες, πηγές, πράσινες κοιλάδες, 300+ χιλιόμετρα πιστοποιημένων μονοπατιών, νεοκλασική πρωτεύουσα χτισμένη από ναυτική ευημερία και το Μουσείο Σύγχρονης Τέχνης Γουλανδρή."
+    },
+    highlights: {
+      en: ["300km hiking trails — Best of Europe", "Goulandris Museum of Modern Art", "Neoclassical Chora of the sea captains", "Pithara waterfalls & Menites springs", "Achla beach — river meets the sea", "Fourtalia — island's signature omelette"],
+      el: ["300χλμ μονοπάτια — Κορυφαία της Ευρώπης", "Μουσείο Σύγχρονης Τέχνης Γουλανδρή", "Νεοκλασική Χώρα των καπεταναίων", "Καταρράκτες Πιθαρά & Πηγές Μενιτών", "Παραλία Άχλα — ποτάμι συναντά θάλασσα", "Φουρτάλια — η παραδοσιακή ομελέτα του νησιού"]
+    },
+    guideLinks: [
+      {
+        href: "/hotels/andros",
+        label: { en: "Where to Stay in Andros", el: "Πού να μείνεις στην Άνδρο" }
+      },
+    ],
+    featured: true,
+    seo: {
+      title: {
+        en: "Andros Travel Guide: Hiking, Chora, Goulandris Museum & Best Beaches | GoGreeceNow",
+        el: "Άνδρος: Οδηγός Ταξιδιού — Μονοπάτια, Χώρα, Μουσείο Γουλανδρή & Παραλίες"
+      },
+      description: {
+        en: "Complete travel guide to Andros island: the hiking capital of the Cyclades with 300km of marked trails, neoclassical Chora built by shipping wealth, the Goulandris Museum of Modern Art, Pithara waterfalls, Achla beach, fourtalia omelette & practical tips.",
+        el: "Πλήρης ταξιδιωτικός οδηγός για την Άνδρο: 300χλμ πιστοποιημένα μονοπάτια, νεοκλασική Χώρα, Μουσείο Γουλανδρή, καταρράκτες Πιθαρά, παραλία Άχλα, φουρτάλια & πρακτικές συμβουλές."
+      }
+    }
   }
 ];
 

@@ -59,7 +59,8 @@ const STAY22_EMBEDS: Record<string, string> = {
   ios: "https://stay22.com/embed/6a2acceb6f8247fde48c37d6",
   samos: "https://stay22.com/embed/6a2bf22526ba558fae3d17e5",
    karpathos: "https://stay22.com/embed/6a2fa839bffa295e3aa26f1c",
-   chios: "https://stay22.com/embed/6a3286af924c59c0ff9dbf4b",
+    chios: "https://stay22.com/embed/6a3286af924c59c0ff9dbf4b",
+    andros: "https://stay22.com/embed/6a379b93f2f946e502905fa4",
 };
 
 const HOTEL_NAMES: Record<string, string[]> = {
@@ -102,6 +103,7 @@ const HOTEL_NAMES: Record<string, string[]> = {
   skopelos: ["Adrina Beach Hotel", "Elli Hotel", "Villea Seaview Apartments", "Panormos Village Hotel", "Panormos Bay apartments & studios", "Stafylos Suites & Boutique Hotel", "Irida Apartments", "Natura Luxury Boutique Hotel", "Hillside villas near Milia"],
   hydra: ["Hydrea Hotel", "Bratsera Hotel", "Hotel Orloff", "Hotel Sophia", "Hydroussa Hotel", "Delfini Hotel", "Mandraki Beach Resort"],
   ios: ["Ios Grand", "Liostasi", "The Windmill", "Hotel Faros", "Arhontiko", "Ios Club", "Koula Village"],
+  andros: ["Hotel Karanassos", "Cavo D'Oro", "Andros Palace", "Sariza Villas", "Chryssi Akti", "Achilleas Hotel", "Ekati Hotel", "Sagrereas", "Andros Philoxenia", "Paradise Art Hotel", "Mare Vista", "Anemi", "Leto", "Neimporio Rooms", "Stenies Houses"],
   kalymnos: ["Kalypso Rooms", "Simone's Apartments", "Anemoni Apartments", "Porto Kalymnos", "Armonia Studios", "Villa Korali", "Panormos Beach Hotel", "Niriides Studios", "Emporios Bay Suites"],
   karpathos: ["Alimounda Mare Hotel", "Konstantinos Palace", "CHC Sound of the Sea", "Poseidon Blue Gastronomy Hotel", "Hotel Atlantis", "Astra Studios", "SOPHID Wellness Suites", "Almi Luxury Rooms", "Casa Garden", "Olympos Studios", "Argo Hotel", "Alona Luxury Villas", "Arkasa Bay Hotel", "Hotel Finiki View", "Arhontiko Hotel", "Sunset Studio", "Olympos Archipelagos", "Aphrodite Hotel"],
    samos: ["Blue Island", "Hotel Vathy", "Anthemis", "Kokkari Beach", "Samos Sun"],

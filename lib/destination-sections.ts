@@ -12440,4 +12440,407 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       }
     }
   ],
+
+  andros: [
+    {
+      title: { en: "Why visit Andros", el: "Γιατί να επισκεφτείς την Άνδρο" },
+      layout: "list",
+      items: [
+        {
+          title: { en: "A landscape that contradicts every expectation of the Cyclades", el: "Τοπίο που αντιφάσκει με κάθε προσδοκία των Κυκλάδων" },
+          text: {
+            en: "Andros is wet. Not occasionally, not in the winter months only, but genuinely and persistently wet — with springs that flow year-round, rivers that fill their banks through summer, plane-tree valleys that stay green into September, and waterfalls that run from the mountains to the sea through gorges dense with vegetation. The Menites springs in the island's centre are known as the Springs of Dionysus, because according to local legend, wine once flowed from the lion-head spouts that channel spring water into the village canal system. The Pithara waterfalls near Apikia cascade through a green canyon within an hour's walk of the island's spa village. None of this is supposed to exist in the Cyclades. Andros didn't get the memo.",
+            el: "Η Άνδρος είναι υγρή. Όχι περιστασιακά, όχι μόνο τους χειμερινούς μήνες, αλλά πραγματικά υγρή — με πηγές που ρέουν όλο τον χρόνο, ποτάμια που γεμίζουν τις όχθες τους το καλοκαίρι, κοιλάδες με πλατάνια που παραμένουν πράσινες μέχρι τον Σεπτέμβριο και καταρράκτες. Οι πηγές των Μενιτών είναι γνωστές ως Πηγές του Διονύσου. Οι καταρράκτες Πιθαρά κοντά στα Απίκια πέφτουν μέσα σε ένα πράσινο φαράγγι. Τίποτα από αυτά δεν υποτίθεται ότι υπάρχει στις Κυκλάδες."
+          }
+        },
+        {
+          title: { en: "300km of certified hiking trails — the best trail network in the Greek islands", el: "300χλμ πιστοποιημένων μονοπατιών — το καλύτερο δίκτυο στα ελληνικά νησιά" },
+          text: {
+            en: "The Andros Routes network was built by volunteers who restored abandoned mule tracks between the island's villages over more than two decades. The result is over 300 kilometres of marked, maintained trails that have earned the 'Leading Quality Trails – Best of Europe' certification — a European Ramblers' Association standard that recognises trail safety, signposting, infrastructure and scenic quality. The flagship Route 1 crosses the entire island from Gavrio to Korthi, approximately 100 kilometres end to end. Day hikes range from a beginner walk through the plane trees of the Dipotamata valley to serious mountain crossings via the island's highest peak. No other Greek island has trail infrastructure of this standard and this scale.",
+            el: "Το δίκτυο Andros Routes δημιουργήθηκε από εθελοντές που αποκατέστησαν εγκαταλελειμμένα μονοπάτια για πάνω από δύο δεκαετίες. Πάνω από 300 χιλιόμετρα σημαδεμένων μονοπατιών με πιστοποίηση 'Best of Europe'. Η κύρια διαδρομή Route 1 διασχίζει ολόκληρο το νησί από το Γαύριο έως το Κόρθι, περίπου 100 χιλιόμετρα."
+          }
+        },
+        {
+          title: { en: "Andros Chora: neoclassical architecture built by men who owned ships", el: "Χώρα Άνδρου: νεοκλασική αρχιτεκτονική από τους καπεταναίους" },
+          text: {
+            en: "Andros's capital sits on a narrow ridge between two bays on the island's eastern coast — a pedestrianised Cycladic town with a fundamental architectural difference from every other capital in the group. The mansions lining its marble lanes were built by 19th-century captains and shipowners who amassed fortunes in maritime trade and brought the money home in the form of imposing neoclassical and Venetian-influenced buildings. The marble fountain at the central square, the arcaded lanes, the grand facades that line the pedestrian axis from the port to the Tourlitis lighthouse at the cape — all of it reflects a prosperity that the island's economy no longer fully maintains but whose physical evidence is extraordinary, and extraordinarily well preserved.",
+            el: "Η Χώρα της Άνδρου βρίσκεται σε μια στενή κορυφογραμμή ανάμεσα σε δύο όρμους. Τα αρχοντικά που την περιβάλλουν χτίστηκαν από καπεταναίους και πλοιοκτήτες του 19ου αιώνα που έφεραν τον πλούτο τους στο νησί με τη μορφή νεοκλασικών κτιρίων. Το μαρμάρινο συντριβάνι, οι στοές και οι μεγάλες προσόψεις από το λιμάνι έως τον φάρο Τουρλίτη αντανακλούν μια ευημερία που διατηρείται εξαιρετικά."
+          }
+        },
+        {
+          title: { en: "The Goulandris Museum of Modern Art: world-class art on a Cycladic island", el: "Μουσείο Σύγχρονης Τέχνης Γουλανδρή: τέχνη παγκόσμιας κλάσης σε ένα κυκλαδίτικο νησί" },
+          text: {
+            en: "Founded by the Basil and Elise Goulandris Foundation — one of Greece's most significant shipping families — the Museum of Modern Art in Chora houses a permanent collection of modern Greek art (including the works of Andros-born sculptor Michalis Tombros) and rotates international exhibitions of genuine ambition. Past temporary shows have featured Picasso, Matisse and Klee. For a small island with a permanent population of around 10,000, the museum's existence and quality are simply remarkable — it is one of the finest small museums in the Mediterranean.",
+            el: "Ιδρύθηκε από το Ίδρυμα Βασίλη και Ελίζας Γουλανδρή. Στεγάζει μόνιμη συλλογή σύγχρονης ελληνικής τέχνης και φιλοξενεί διεθνείς εκθέσεις. Προσωρινές εκθέσεις έχουν παρουσιάσει Πικάσο, Ματίς και Κλέε. Για ένα μικρό νησί με 10.000 κατοίκους, η ύπαρξη και η ποιότητα του μουσείου είναι αξιοσημείωτη."
+          }
+        },
+        {
+          title: { en: "Villages that work — and a built environment that shows it", el: "Χωριά που λειτουργούν — και ένα δομημένο περιβάλλον που το αποδεικνύει" },
+          text: {
+            en: "Andros has more functioning inland villages per square kilometre than any other Cycladic island, and they feel different from the village-museums of more touristed islands. Menites, with its flowing springs and plane trees, has two good tavernas and a population that still tends the orchards. Stenies, perched above the sea on the road north of Chora, has neoclassical mansions so intact that the lane feels like a 19th-century stage set — without the staginess. Vourkoti, the island's highest inhabited point, often sits in cloud and gives access to wild trails toward Achla beach.",
+            el: "Η Άνδρος έχει περισσότερα λειτουργικά χωριά στο εσωτερικό ανά τετραγωνικό χιλιόμετρο από κάθε άλλο κυκλαδίτικο νησί. Οι Μενίτες με τις πηγές και τα πλατάνια, οι Στενιές με τα νεοκλασικά αρχοντικά, το Βουρκωτό που συχνά βρίσκεται μέσα στα σύννεφα — όλα δείχνουν ένα νησί που λειτουργεί πραγματικά."
+          }
+        },
+        {
+          title: { en: "Two hours from Athens — and genuinely unlike Athens's other escapes", el: "Δύο ώρες από την Αθήνα — και εντελώς διαφορετικό από κάθε άλλη απόδραση" },
+          text: {
+            en: "Andros is the first stop for ferries from Rafina, the port closest to Athens and to Athens International Airport. The crossing takes two hours. For Athenians, Andros has functioned for generations as the weekend and summer destination of choice for a particular stratum of the city — educated, cultured, interested in the outdoors — which is part of why the island's museum and trail network exist at the quality they do. For international visitors, the two-hour ferry from a port 30 minutes from the airport makes Andros the most accessible serious Cycladic destination, bypassing the Piraeus ferry network entirely.",
+            el: "Η Άνδρος είναι η πρώτη στάση για τα πλοία από τη Ραφήνα. Το ταξίδι διαρκεί δύο ώρες. Για τους Αθηναίους, η Άνδρος αποτελεί εδώ και γενιές τον προορισμό επιλογής για ένα συγκεκριμένο στρώμα της πόλης — μορφωμένοι, καλλιεργημένοι, λάτρεις της φύσης. Για τους διεθνείς επισκέπτες, το πλοίο από ένα λιμάνι 30 λεπτά από το αεροδρόμιο την καθιστά τον πιο προσβάσιμο κυκλαδίτικο προορισμό."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "Best time to visit Andros", el: "Καλύτερη εποχή για επίσκεψη" },
+      layout: "grid",
+      alert: {
+        en: "💡 The hiker's window: April and May are when Andros's rivers are at their fullest, the Pithara waterfalls run at maximum volume, the wildflowers cover the valley trails, and the plane-tree shade is at its most welcome. The Andros Routes network is perfectly positioned for spring hiking — the temperatures are ideal, the landscape is at peak green, and the Chora tavernas are open without the summer density.",
+        el: "💡 Η περίοδος για πεζοπόρους: Απρίλιος και Μάιος, όταν τα ποτάμια είναι στο μέγιστο, οι καταρράκτες Πιθαρά στο απόγειό τους και τα μονοπάτια γεμάτα αγριολούλουδα."
+      },
+      items: [
+        {
+          title: { en: "April – May", el: "Απρίλιος – Μάιος" },
+          text: {
+            en: "Best for hiking. Rivers full, waterfalls at peak, wildflowers across the trails, and comfortable temperatures for the longer routes. Sea not quite warm enough for sustained swimming, but natural river pools at Dipotamata are an alternative.",
+            el: "Καλύτερη περίοδος για πεζοπορία. Ποτάμια γεμάτα, καταρράκτες στο απόγειο, άγρια λουλούδια στα μονοπάτια. Η θάλασσα όχι ακόμα αρκετά ζεστή για κολύμπι."
+          }
+        },
+        {
+          title: { en: "June", el: "Ιούνιος" },
+          text: {
+            en: "Perhaps the ideal month overall — warm enough for daily beach swimming, sea water rising to comfortable temperature, hiking still pleasant in the mornings, and the island operating fully without August's density. The Goulandris Museum's summer exhibition typically opens in June.",
+            el: "Ίσως ο ιδανικός μήνας συνολικά — αρκετά ζεστός για καθημερινό μπάνιο, πεζοπορία ακόμα ευχάριστη τα πρωινά, το νησί σε πλήρη λειτουργία χωρίς την πυκνότητα του Αυγούστου."
+          }
+        },
+        {
+          title: { en: "July – August", el: "Ιούλιος – Αύγουστος" },
+          text: {
+            en: "Peak season — Athenian families fill the island and it is busier than many visitors expect. Beaches are animated, the International Andros Festival runs at the Chora open-air theatre, and the Meltemi wind keeps the temperatures bearable. Hike in early mornings; beaches afternoons. Book well ahead.",
+            el: "Υψηλή περίοδος — οικογένειες από την Αθήνα γεμίζουν το νησί. Το Διεθνές Φεστιβάλ Άνδρου στο ανοιχτό θέατρο της Χώρας. Κάντε πεζοπορία νωρίς το πρωί, παραλία το απόγευμα."
+          }
+        },
+        {
+          title: { en: "September", el: "Σεπτέμβριος" },
+          text: {
+            en: "Consistently recommended by those who know the island. Sea still warm (25°C+), crowds thinning rapidly, the Chora and the villages reverting to their own pace. The light on the neoclassical buildings in September is exceptional. The last of the summer exhibitions at the Goulandris typically runs into early September.",
+            el: "Συστημένος από όσους γνωρίζουν το νησί. Θάλασσα ακόμα ζεστή, τα πλήθη αραιώνουν γρήγορα, η Χώρα και τα χωριά επιστρέφουν στον ρυθμό τους."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "", el: "" },
+      gallery: [
+        {
+          image: "/images/andros-best-time.webp",
+          alt: { en: "Andros island landscape, Cyclades, Greece", el: "Τοπίο της Άνδρου, Κυκλάδες, Ελλάδα" },
+          caption: { en: "Andros, Cyclades, Greece", el: "Άνδρος, Κυκλάδες, Ελλάδα" },
+        },
+      ],
+    },
+    {
+      title: { en: "Top attractions & experiences in Andros", el: "Κορυφαία αξιοθέατα & εμπειρίες" },
+      layout: "list",
+      items: [
+        {
+          title: { en: "Andros Chora — the marble capital of the seafarers", el: "Χώρα Άνδρου — η μαρμάρινη πρωτεύουσα των ναυτικών" },
+          text: {
+            en: "Walking Andros Chora is walking through the physical evidence of accumulated maritime wealth — a pedestrianised sequence of marble-paved lanes, imposing neoclassical mansions, arcaded passages and the central square where the marble fountain marks what feels like the centre of a much larger town. The Tourlitis lighthouse, built on a sea stack just off the cape, is the island's visual signature: a white tower on a rock, accessible by a footbridge, visible from the lanes above. Walk the main pedestrian axis from Neimporio beach to the lighthouse point at dusk, when the light on the stone facades takes on qualities that the midday sun doesn't permit.",
+            el: "Η Χώρα της Άνδρου είναι ένας πεζόδρομος από μαρμαρόστρωτα σοκάκια, νεοκλασικά αρχοντικά, στοές και η κεντρική πλατεία με το μαρμάρινο συντριβάνι. Ο φάρος Τουρλίτης, χτισμένος σε έναν βράχο, είναι το οπτικό σήμα κατατεθέν του νησιού. Περπατήστε τον κεντρικό άξονα από την παραλία Νειμποριό έως τον φάρο το σούρουπο."
+          }
+        },
+        {
+          title: { en: "Goulandris Museum of Modern Art", el: "Μουσείο Σύγχρονης Τέχνης Γουλανδρή" },
+          text: {
+            en: "Two wings: the Old Wing, with a permanent collection of modern Greek art including the sculptures of Michalis Tombros and canvases from the Greek avant-garde of the 20th century; and the New Wing, which hosts the rotating international exhibitions that have made the museum's summer programme one of the most anticipated cultural events in the Aegean. The architecture of the museum is itself notable — both buildings are restrained and beautifully integrated into the Chora's urban fabric. The museum is open in summer (June–September) with extended evening hours that allow post-dinner visits on summer nights.",
+            el: "Δύο πτέρυγες: η Παλαιά με μόνιμη συλλογή σύγχρονης ελληνικής τέχνης και η Νέα με διεθνείς εκθέσεις. Η αρχιτεκτονική του μουσείου είναι αξιοσημείωτη. Ανοιχτό το καλοκαίρι με παρατεταμένο ωράριο."
+          }
+        },
+        {
+          title: { en: "The Springs of Dionysus at Menites", el: "Οι Πηγές του Διονύσου στους Μενίτες" },
+          text: {
+            en: "In the village of Menites in the island's green centre, spring water flows from lion-head stone spouts into a canal system that still channels water through the village orchards. The legend that wine once flowed here — giving the springs their name, after Dionysus, god of wine — is mythological, but the springs themselves are entirely real and still functional. Sitting at one of the two village tavernas under the plane trees, hearing the water while it runs past the tables, is one of those small Cycladic experiences that is impossible to find anywhere else in the Aegean.",
+            el: "Στους Μενίτες, νερό πηγής ρέει από λιθοδομές με κεφάλια λιονταριού σε ένα σύστημα καναλιών. Ο θρύλος λέει ότι κάποτε ανέβλυζε κρασί. Το κάθισμα σε μια από τις δύο ταβέρνες του χωριού κάτω από τα πλατάνια, ακούγοντας το νερό να κυλάει, είναι μια μοναδική κυκλαδίτικη εμπειρία."
+          }
+        },
+        {
+          title: { en: "Pithara Waterfalls near Apikia", el: "Καταρράκτες Πιθαρά στα Απίκια" },
+          text: {
+            en: "A 30-40 minute walk from the spa village of Apikia (following Route 2a of the Andros Routes network) leads to the Pithara waterfalls — a cascade into a natural pool, surrounded by dense green vegetation of the kind that should not exist on a Cycladic island in July. The pool is swimmable, the shade is genuine, and the contrast with the dry limestone hillsides visible from the ferry on arrival is startling. Spring and early summer bring the highest water volume; the falls are accessible but reduced by September.",
+            el: "30-40 λεπτά περπάτημα από τα Απίκια οδηγεί στους καταρράκτες Πιθαρά — έναν καταρράκτη σε φυσική πισίνα, περιτριγυρισμένο από πυκνή βλάστηση. Η πισίνα είναι κολυμβήσιμη. Άνοιξη και αρχές καλοκαιριού φέρνουν τον μεγαλύτερο όγκο νερού."
+          }
+        },
+        {
+          title: { en: "Tis Grias To Pidima — the rock that jumped", el: "Της Γριάς Το Πίδημα — ο βράχος που πήδηξε" },
+          text: {
+            en: "Northeast of Chora, accessible by a coastal path over the headland from Paraporti beach (approximately 30 minutes on foot), the beach of Tis Grias To Pidima takes its name from a rock formation jutting from the turquoise water. The legend: during a pirate raid, an old woman betrayed the villagers, then, consumed by guilt, leaped from the cliff and was turned to stone. The beach is not easily accessible by car, which keeps it quieter than it deserves to be; the sea here is some of the clearest on the island's eastern coast, and the rock formation is genuinely dramatic from water level.",
+            el: "Βορειοανατολικά της Χώρας, προσβάσιμη από παραλιακό μονοπάτι. Η παραλία πήρε το όνομά της από έναν βράχο που προεξέχει από τα τιρκουάζ νερά. Δεν είναι εύκολα προσβάσιμη με αυτοκίνητο, γεγονός που την κρατά ήσυχη."
+          }
+        },
+        {
+          title: { en: "Paleopolis — the ancient sunken capital", el: "Παλαιόπολη — η αρχαία βυθισμένη πρωτεύουσα" },
+          text: {
+            en: "The ancient capital of Andros sits on a steep slope near the village of Paleopolis, partly visible on land and partly submerged offshore. The archaeological museum in the village holds finds from the site. The most distinctive experience here is snorkelling directly over the submerged harbour ruins — stone quays, building foundations, and the outlines of a city that once extended into what is now the sea. The combination of land excavation and underwater archaeology in a single visit is unusual in the Cyclades and rewards those who bring a mask and fins alongside their site map.",
+            el: "Η αρχαία πρωτεύουσα της Άνδρου βρίσκεται σε μια απότομη πλαγιά κοντά στην Παλαιόπολη, ορατή εν μέρει στη στεριά και εν μέρει υποβρύχια. Το ξεχωριστό είναι το snorkeling πάνω από τα βυθισμένα ερείπια του λιμανιού."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "Best hikes — the Andros Routes network", el: "Καλύτερες πεζοπορίες — το δίκτυο Andros Routes" },
+      layout: "grid",
+      alert: {
+        en: "💡 Trail resource: Detailed trail maps for all Andros Routes are available at the Explore Andros office in the Fresco café in Chora, and downloadable from the androstrails.gr website. The network is among the best documented hiking systems in Greece; every numbered route has a map, difficulty rating, distance and elevation profile.",
+        el: "💡 Οδηγός μονοπατιών: Αναλυτικοί χάρτες διαθέσιμοι στο Explore Andros στο καφέ Fresco στη Χώρα και στο androstrails.gr."
+      },
+      items: [
+        {
+          title: { en: "🟢 Easy — Menites Springs to Chora (Route 1 section)", el: "🟢 Εύκολη — Πηγές Μενιτών προς Χώρα (τμήμα Route 1)" },
+          text: {
+            en: "A 6km walk through the island's agricultural heart — spring-fed orchards, plane trees, stone bridges and the approach to Chora through the upper lanes. One of the finest introductions to Andros's landscape combination available as a single walk.",
+            el: "6χλμ διαδρομή μέσα από την αγροτική καρδιά του νησιού — περιβόλια, πλατάνια, πέτρινα γεφύρια και η προσέγγιση στη Χώρα."
+          }
+        },
+        {
+          title: { en: "🟢 Easy — Chora to Paraporti and Grias To Pidima", el: "🟢 Εύκολη — Χώρα προς Πόρτες και Γριας Το Πίδημα" },
+          text: {
+            en: "A coastal path beginning in the Chora and rounding the northern headland to the legendary beach. Return via the same path with the light behind you in the afternoon. Approximately 3km each way.",
+            el: "Παραλιακό μονοπάτι από τη Χώρα προς τον βόρειο όρμο. Περίπου 3χλμ κάθε κατεύθυνση."
+          }
+        },
+        {
+          title: { en: "🟡 Moderate — Apikia to Pithara Waterfalls (Route 2a)", el: "🟡 Μέτρια — Απίκια προς Καταρράκτες Πιθαρά (Route 2a)" },
+          text: {
+            en: "Starting from the spa village of Apikia, this trail follows the river upstream to the Pithara cascade. The ascent is gradual; the waterfalls and natural pool at the end fully reward the effort. Best in spring and early summer.",
+            el: "Ξεκινώντας από τα Απίκια, το μονοπάτι ακολουθεί το ποτάμι αντίθετα προς τον καταρράκτη Πιθαρά. Καλύτερα την άνοιξη και αρχές καλοκαιριού."
+          }
+        },
+        {
+          title: { en: "🟡 Moderate — Dipotamata Valley circuit (Route 8)", el: "🟡 Μέτρια — Κοιλάδα Διποταμάτων (Route 8)" },
+          text: {
+            en: "A 7km river-valley route through the Dipotamata gorge on the island's southeastern coast — one of the most biodiverse valleys in the Cyclades, with rare alder forests, streams and medieval bridge crossings. Suitable for those comfortable on uneven terrain.",
+            el: "7χλμ διαδρομή μέσα από το φαράγγι Διποταμάτων — μία από τις πιο βιοποίκιλτες κοιλάδες των Κυκλάδων."
+          }
+        },
+        {
+          title: { en: "🔴 Demanding — Vourkoti to Achla Beach (Route 5)", el: "🔴 Απαιτητική — Βουρκωτό προς Παραλία Άχλα (Route 5)" },
+          text: {
+            en: "Beginning at the island's highest village, the trail descends through mist and plane-tree forest toward the extraordinary Achla beach where a river meets the sea. A half-day commitment with significant descent; arrange a boat back or return the same way.",
+            el: "Ξεκινώντας από το ψηλότερο χωριό του νησιού, το μονοπάτι κατεβαίνει μέσα στην ομίχλη και το δάσος προς την εκπληκτική παραλία Άχλα."
+          }
+        },
+        {
+          title: { en: "🔴 Full Day — The Andros Route (Route 1 — cross-island)", el: "🔴 Ολοήμερη — Η Διαδρομή της Άνδρου (Route 1)" },
+          text: {
+            en: "Approximately 100km connecting Gavrio port in the northwest to Korthi in the southeast. Usually completed over 3–5 days with overnight stops in village guesthouses. The premier long-distance hike in the Cyclades; detailed maps and accommodation lists available at Explore Andros.",
+            el: "Περίπου 100χλμ από το Γαύριο έως το Κόρθι. Ολοκληρώνεται σε 3-5 μέρες με διανυκτερεύσεις σε ξενώνες. Ο κορυφαίος μακρινός περίπατος των Κυκλάδων."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "Best beaches in Andros", el: "Καλύτερες παραλίες" },
+      layout: "grid",
+      alert: {
+        en: "💡 Andros beach character: Many of Andros's best beaches are accessed by walking (the finest often require a trail approach) or by rough tracks. The combination of a spectacular beach with a moderate walk to reach it is consistent across the island's eastern coast — expect pebble and coarse sand rather than the fine white sand of the Cyclades' famous beaches, but water clarity that rivals any in the Aegean.",
+        el: "💡 Χαρακτήρας παραλιών: Πολλές από τις καλύτερες παραλίες προσεγγίζονται με περπάτημα ή χωματόδρομους. Περιμένετε βότσαλο και χοντρή άμμο, αλλά διαύγεια νερού που ανταγωνίζεται κάθε άλλη στο Αιγαίο."
+      },
+      items: [
+        {
+          title: { en: "Achla", el: "Άχλα" },
+          text: {
+            en: "Widely considered the finest beach on the island — a secluded bay on the northeastern coast where a river flows into the sea through a small delta of white pebbles and plane trees. Accessible by boat from Batsi or Chora (seasonal), by a very rough 4WD track, or by the trail from Vourkoti. No facilities; bring everything. The combination of river, forest, pebbles and turquoise sea is genuinely unlike any other beach in the Cyclades.",
+            el: "Θεωρείται η ωραιότερη παραλία του νησιού — ένας απομονωμένος όρμος όπου ένα ποτάμι συναντά τη θάλασσα. Προσβάσιμη με βάρκα, 4WD ή μονοπάτι."
+          }
+        },
+        {
+          title: { en: "Tis Grias To Pidima", el: "Της Γριάς Το Πίδημα" },
+          text: {
+            en: "Northeast of Chora, reached by coastal path over the headland. The legendary rock formation jutting from the water gives the beach its name and its visual drama. Clear water, moderate pebble, no organised infrastructure. Best visited in the morning before the walk back to the Chora in the shade of the headland path.",
+            el: "Βορειοανατολικά της Χώρας. Ο θρυλικός βράχος δίνει στην παραλία το όνομά της. Καθαρά νερά, βότσαλο, χωρίς οργανωμένες υποδομές."
+          }
+        },
+        {
+          title: { en: "Paraporti", el: "Πόρτες" },
+          text: {
+            en: "The beach immediately below Chora — a wide pebble bay with good swimming, visible from the lanes above. Organised in season (seasonal café, some sunbeds), walkable from Chora in 10-15 minutes. The view back up at the neoclassical buildings of the capital from water level is one of Andros's most distinctive perspectives.",
+            el: "Η παραλία ακριβώς κάτω από τη Χώρα. Οργανωμένη την περίοδο, 10-15 λεπτά με τα πόδια από τη Χώρα. Η θέα προς τα νεοκλασικά κτίρια από τη θάλασσα είναι μοναδική."
+          }
+        },
+        {
+          title: { en: "Batsi Beach", el: "Μπάτσι" },
+          text: {
+            en: "The island's most organised and family-friendly beach — wide sandy arc in the protected bay of Batsi village, with full beach services, watersports, tavernas above the sand and easy bus access from Gavrio and Chora. The most conventional beach holiday experience on the island; excellent for families and those who want amenities with their swimming.",
+            el: "Η πιο οργανωμένη και οικογενειακή παραλία του νησιού — αμμώδης, με υπηρεσίες, θαλάσσια σπορ και ταβέρνες. Ιδανική για οικογένειες."
+          }
+        },
+        {
+          title: { en: "Agios Petros", el: "Άγιος Πέτρος" },
+          text: {
+            en: "A long sandy beach north of Gavrio, easily accessible and usually less busy than Batsi. The site of the ancient Agios Petros tower — a Hellenistic circular tower dating to approximately the 3rd century BC, one of the best-preserved such structures in the Cyclades — gives the beach a layer of archaeology that most don't have.",
+            el: "Μεγάλη αμμώδης παραλία βόρεια του Γαυρίου. Ο αρχαίος πύργος του Αγίου Πέτρου (3ος αιώνας π.Χ.) δίνει στην παραλία ένα αρχαιολογικό ενδιαφέρον."
+          }
+        },
+        {
+          title: { en: "Fellos", el: "Φελλός" },
+          text: {
+            en: "A shingle beach north of Gavrio with deep, clear water, wind exposure from the northwest (making it ideal for windsurfers), and a genuine feeling of remoteness despite its relative accessibility. The taverna at Fellos, To Steki Tou Andrea, under the pine trees above the beach, is one of the island's most reliably good for simple grilled fish.",
+            el: "Παραλία με βότσαλο βόρεια του Γαυρίου, βαθιά νερά, εκτεθειμένη στο βορειοδυτικό άνεμο. Η ταβέρνα Του Στέκι Του Ανδρέα κάτω από τα πεύκα είναι από τις καλύτερες για ψητό ψάρι."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "Local food & drink", el: "Τοπικό φαγητό & ποτό" },
+      layout: "grid",
+      items: [
+        {
+          title: { en: "Fourtalia — Andros omelette", el: "Φουρτάλια — η ομελέτα της Άνδρου" },
+          text: {
+            en: "The island's signature dish and the one unavailable anywhere else. A thick, tortilla-style omelette made with eggs, potatoes and slices of the island's local pork sausage (loukaniko), fried in olive oil and served in traditional kafeneions. Found nowhere else in the Cyclades. Order it at any traditional village kafeneion for the most authentic version.",
+            el: "Το σήμα κατατεθέν του νησιού. Μια παχιά ομελέτα με αυγά, πατάτες και τοπικό λουκάνικο, τηγανισμένη σε ελαιόλαδο. Δεν υπάρχει πουθενά αλλού στις Κυκλάδες."
+          }
+        },
+        {
+          title: { en: "Andros local wine", el: "Τοπικό κρασί" },
+          text: {
+            en: "The island has a small but growing fine-wine scene, with several producers reviving indigenous grape varieties suited to Andros's relatively cool and wet microclimate. The Empeirikia winery near Apikia produces limited-batch labels that are rarely found outside the island. Ask at the Chora wine bars for current local producers.",
+            el: "Μικρή αλλά αναπτυσσόμενη οινοπαραγωγή. Το οινοποιείο Εμπειρίκια κοντά στα Απίκια παράγει ετικέτες που σπάνια βρίσκονται εκτός του νησιού."
+          }
+        },
+        {
+          title: { en: "Local cheeses & honey", el: "Τοπικά τυριά & μέλι" },
+          text: {
+            en: "Andros produces a fresh local cheese — chloro — and a peppery hard cheese that appear on meze plates in the island's tavernas. The mountain honey, produced from bees that work the thyme and wildflower-rich upper slopes, has a complex flavour specific to the island's high-altitude flora. Buy directly from producers at the Saturday market in Chora.",
+            el: "Τοπικό τυρί (χλωρό) και πιπεράτο σκληρό τυρί. Το μέλι βουνού από θυμάρι και αγριολούλουδα έχει σύνθετη γεύση. Αγοράστε απευθείας από παραγωγούς στο Σάββατο παζάρι."
+          }
+        },
+        {
+          title: { en: "Fish at Neimporio beach & Korthi", el: "Ψάρι στο Νειμποριό & Κόρθι" },
+          text: {
+            en: "Ta Binelikia and Nona's near Neimporio beach in Chora are the island's most consistently recommended seafood tavernas — tables directly above the water, daily-caught fish simply prepared, and a setting that the capital's position on its peninsula ridge delivers at every table. Korthi in the island's south also has excellent waterfront seafood at more accessible prices.",
+            el: "Τα Μπινελίκια και η Νόνας κοντά στο Νειμποριό είναι οι πιο συστημένες ταβέρνες ψαριού. Το Κόρθι στο νότο έχει εξαιρετική ψαροφαγία σε πιο προσιτές τιμές."
+          }
+        },
+        {
+          title: { en: "Sariza mineral water from Apikia", el: "Σαρίζα — μεταλλικό νερό από τα Απίκια" },
+          text: {
+            en: "Commercially bottled from the Sariza spring in Apikia since the early 20th century, this is one of Greece's most widely recognised mineral waters — served in Athenian restaurants and available across the country. Drinking it at the source, in the village that still hears the spring flowing through its lanes, is the best possible context for what is essentially very good water.",
+            el: "Εμφιαλωμένο από την πηγή Σαρίζα από τις αρχές του 20ού αιώνα. Ένα από τα πιο αναγνωρισμένα μεταλλικά νερά της Ελλάδας."
+          }
+        },
+        {
+          title: { en: "The bakeries", el: "Οι φούρνοι" },
+          text: {
+            en: "Multiple travel writers who know the island well cite Andros's bakeries as among the best in the Cyclades — a consequence of the island's agricultural self-sufficiency and a baking culture that was never entirely replaced by industrial production. Tyropita (cheese pie), koulouria and the local Easter bread (tsoureki with island-specific spicing) are worth seeking specifically. Just walk in the direction of the smell.",
+            el: "Οι φούρνοι της Άνδρου θεωρούνται από τους καλύτερους στις Κυκλάδες. Τυρόπιτα, κουλούρια και τσουρέκι με τοπικά μπαχαρικά. Απλά ακολουθήστε τη μυρωδιά."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "Practical tips", el: "Πρακτικές συμβουλές" },
+      layout: "list",
+      items: [
+        {
+          title: { en: "Ferries depart from Rafina, not Piraeus", el: "Τα πλοία φεύγουν από τη Ραφήνα, όχι από τον Πειραιά" },
+          text: {
+            en: "This is non-negotiable and the single most important logistical fact about getting to Andros. From Athens city centre, Rafina is approximately 45 minutes by KTEL bus (from Pedion Areos) or 30-40 minutes by taxi. From the airport, approximately 30 minutes by taxi.",
+            el: "Αδιαπραγμάτευτο και το σημαντικότερο logistics γεγονός για την Άνδρο. Από το κέντρο της Αθήνας, η Ραφήνα είναι περίπου 45 λεπτά με λεωφορείο ΚΤΕΛ."
+          }
+        },
+        {
+          title: { en: "Rent a car from Gavrio on arrival", el: "Νοίκιασε αυτοκίνητο από το Γαύριο" },
+          text: {
+            en: "The island's best beaches, trailheads and villages require independent transport, and the bus network, while functional for the Gavrio-Batsi-Chora corridor, does not reach the hiking routes or the remoter coasts. Rental agencies at the port fill their inventory on arrival day in August.",
+            el: "Οι καλύτερες παραλίες, τα μονοπάτια και τα χωριά απαιτούν ανεξάρτητη μετακίνηση. Τα γραφεία ενοικίασης στο λιμάνι γεμίζουν τον Αύγουστο."
+          }
+        },
+        {
+          title: { en: "Download trail maps before you arrive", el: "Κατέβασε χάρτες μονοπατιών πριν φτάσεις" },
+          text: {
+            en: "The Andros Routes are well-marked on the ground, but having the offline map on your phone prevents confusion at junctions in the interior where mobile signal is absent. The androstrails.gr website has downloadable GPX files for each numbered route.",
+            el: "Οι διαδρομές είναι καλά σημαδεμένες, αλλά οι offline χάρτες αποτρέπουν σύγχυση σε διασταυρώσεις όπου δεν υπάρχει σήμα."
+          }
+        },
+        {
+          title: { en: "The Meltemi wind is stronger on Andros", el: "Το Μελτέμι είναι πιο δυνατό στην Άνδρο" },
+          text: {
+            en: "Particularly on the northern and northeastern coasts and at the beaches facing north. Achla and Fellos can be choppy when the Meltemi is at full strength; the eastern coast beaches (Paraporti, Neimporio) and the western side (near Batsi) are more sheltered. Plan beach days around the forecast.",
+            el: "Οι βόρειες ακτές επηρεάζονται περισσότερο. Η Άχλα και ο Φελλός μπορεί να είναι ταραγμένοι. Οι ανατολικές παραλίες είναι πιο προστατευμένες."
+          }
+        },
+        {
+          title: { en: "Check Goulandris Museum summer hours", el: "Έλεγξε το ωράριο του Μουσείου Γουλανδρή" },
+          text: {
+            en: "The museum keeps summer hours — typically open from June through September, including evening openings that allow visits after dinner. Check the current programme at goulandris.gr before your trip; the international exhibition changes annually.",
+            el: "Ανοιχτό Ιούνιο έως Σεπτέμβριο, με βραδινά ωράρια. Ελέγξτε το goulandris.gr για το πρόγραμμα."
+          }
+        },
+        {
+          title: { en: "Explore Chora early morning or late evening", el: "Εξερεύνησε τη Χώρα νωρίς το πρωί ή αργά το βράδυ" },
+          text: {
+            en: "The narrow pedestrian lanes in July-August can be congested at midday; the same streets at 8am or 9pm are a different experience — quieter, cooler, and with the quality of light that gives the neoclassical facades their best appearance.",
+            el: "Τα στενά πεζόδρομα τον Ιούλιο-Αύγουστο είναι γεμάτα το μεσημέρι. Οι ίδιοι δρόμοι στις 8πμ ή 9μμ είναι ήσυχοι, δροσεροί και με εκπληκτικό φωτισμό."
+          }
+        }
+      ]
+    },
+    {
+      title: { en: "FAQ", el: "Συχνές Ερωτήσεις" },
+      layout: "faq",
+      items: [
+        {
+          title: { en: "What makes Andros different from other Cycladic islands?", el: "Τι κάνει την Άνδρο διαφορετική από άλλα κυκλαδίτικα νησιά;" },
+          text: {
+            en: "Andros is wetter, greener and more mountainous than any other island in the Cyclades — a consequence of its northerly position and high terrain that captures Aegean moisture. It has year-round flowing rivers, waterfalls, springs, and green valleys entirely foreign to the typical Cycladic landscape. Add the shipping-wealth neoclassical architecture of Chora, the internationally significant Goulandris Museum of Modern Art, and 300+ kilometres of certified hiking trails rated 'Best of Europe' by the European Ramblers' Association, and you have an island that looks and functions radically differently from Mykonos, Santorini or Paros.",
+            el: "Η Άνδρος είναι πιο υγρή, πιο πράσινη και πιο ορεινή από κάθε άλλο νησί των Κυκλάδων. Έχει ποτάμια, καταρράκτες, πηγές και πράσινες κοιλάδες. Προσθέστε τη νεοκλασική αρχιτεκτονική, το Μουσείο Γουλανδρή και 300+ χιλιόμετρα μονοπατιών."
+          }
+        },
+        {
+          title: { en: "How do you get to Andros?", el: "Πώς φτάνεις στην Άνδρο;" },
+          text: {
+            en: "Ferries depart from Rafina port — not Piraeus. Rafina is approximately 25km east of central Athens and 30 minutes from Athens International Airport by taxi. The crossing to Gavrio (Andros's port) takes approximately 2 hours on a fast ferry. This makes Andros one of the most airport-accessible Cycladic islands: fly to Athens, taxi to Rafina, 2 hours to Andros.",
+            el: "Τα πλοία φεύγουν από τη Ραφήνα — όχι από τον Πειραιά. Η Ραφήνα είναι περίπου 25χλμ ανατολικά της Αθήνας. Το ταξίδι στο Γαύριο διαρκεί περίπου 2 ώρες."
+          }
+        },
+        {
+          title: { en: "Is Andros good for hiking?", el: "Είναι η Άνδρος κατάλληλη για πεζοπορία;" },
+          text: {
+            en: "Andros is the hiking capital of the Cyclades. The Andros Routes network covers over 300 kilometres of restored, marked trails certified as 'Leading Quality Trails – Best of Europe' by the European Ramblers' Association. The network links villages, rivers, waterfalls, stone bridges, monasteries and remote beaches across the entire island. Day hikes range from beginner walks through plane-tree valleys to full-day mountain crossings.",
+            el: "Η Άνδρος είναι η πρωτεύουσα πεζοπορίας των Κυκλάδων. Πάνω από 300 χιλιόμετρα πιστοποιημένων μονοπατιών που συνδέουν χωριά, ποτάμια, καταρράκτες και παραλίες."
+          }
+        },
+        {
+          title: { en: "When is the best time to visit Andros?", el: "Ποια είναι η καλύτερη εποχή για επίσκεψη;" },
+          text: {
+            en: "May and June for hiking (rivers full, waterfalls at peak, temperatures comfortable) and June for the ideal combination of hiking and beach swimming. September is consistently excellent — warm sea, thinning crowds, and the island's best autumn light. July-August for the International Andros Festival, full beach operations and peak Athenian energy.",
+            el: "Μάιος και Ιούνιος για πεζοπορία, Ιούνιος για τον ιδανικό συνδυασμό πεζοπορίας και κολύμπι. Σεπτέμβριος για ζεστή θάλασσα και λιγότερο κόσμο."
+          }
+        },
+        {
+          title: { en: "What is fourtalia?", el: "Τι είναι η φουρτάλια;" },
+          text: {
+            en: "Fourtalia is the signature dish of Andros — a thick omelette made with eggs, potatoes and local pork sausage, cooked in olive oil and served in traditional kafeneions across the island. It is specific to Andros and reflects the island's historical agricultural self-sufficiency — unlike its drier Cycladic neighbours, Andros had the water supply and fertile soil to maintain pork production and potato cultivation across many centuries.",
+            el: "Η φουρτάλια είναι το σήμα κατατεθέν της Άνδρου — μια παχιά ομελέτα με αυγά, πατάτες και ντόπιο λουκάνικο. Αντανακλά την ιστορική αγροτική αυτάρκεια του νησιού."
+          }
+        },
+        {
+          title: { en: "How many days do I need in Andros?", el: "Πόσες μέρες χρειάζομαι στην Άνδρο;" },
+          text: {
+            en: "Five to six days is the recommended minimum: one day for Chora and the museum, one for the inland villages and springs, one or two for hiking (the Apikia-Pithara trail and the Grias To Pidima coastal path are priority choices), one for a beach day at Achla or Batsi, and one for the archaeological sites. A dedicated hiker aiming to complete significant sections of the Andros Routes network would benefit from a week to ten days.",
+            el: "Πέντε με έξι μέρες είναι το ελάχιστο: μία για Χώρα και μουσείο, μία για τα χωριά, μία ή δύο για πεζοπορία, μία για παραλία και μία για αρχαιολογικούς χώρους. Ένας πεζοπόρος θα ωφεληθεί από μία εβδομάδα έως δέκα μέρες."
+          }
+        }
+      ]
+    },
+    {
+      layout: "list",
+      title: { en: "Honest Advice — What to Skip in Andros", el: "Ειλικρινής Συμβουλή — Τι να Αποφύγεις στην Άνδρο" },
+      text: {
+        en: "✕ **Arriving in Gavrio and immediately driving to Batsi or Chora without stopping** — Gavrio is the island's port and most people use it purely as a transit point. This is understandable but misses something genuine. Gavrio's harbour has real kafeneions, a waterfront that belongs to the people who live there rather than those passing through, and the Agios Petros Hellenistic tower just north of town. Take an hour in Gavrio before continuing; it resets the expectations that the ferry crossing may have calibrated toward 'just another Cycladic port.'\n\n✕ **Trying to reach Achla beach by the track road without a proper 4WD** — The track road to Achla is described with adjectives that include 'very rough', 'requires 4WD', and 'potentially impassable after rain' — all of which are accurate. Attempting it in a standard hire car risks both the vehicle and the journey. The correct approach is by boat (seasonal water taxis from Batsi and Chora) or by the trail from Vourkoti.\n\n✕ **Skipping the inland villages to spend more days at the beaches** — The beach offer on Andros is genuinely excellent. But the inland villages — Menites, Apikia, Stenies, Vourkoti, Kochylos — are where Andros is most distinct from every other island in the Aegean. The springs, the plane trees, the xirolithia dry-stone walls, the kafeneion under the trees in Menites where the water flows past the tables — none of these are available at the beach.\n\n✕ **Visiting the Goulandris Museum on the same afternoon as Chora's lanes and the lighthouse** — The museum, even with a targeted visit to the current temporary exhibition, rewards more than the 45 minutes that 'fitting it in' on a busy afternoon allows. Go specifically, in the morning, when the light in the exhibition spaces is better and the midday heat makes outdoor exploration less appealing.\n\n💡 What nobody tells you about Andros: The xirolithia — the distinctive dry-stone walls found throughout the island, built with large vertical slate slabs incorporated between horizontal courses of smaller stone — are unique to Andros and visible on virtually every rural path and farm boundary. They are a form of landscape writing: a record of every property boundary, every field edge, every route between villages that Andriot farmers mapped over centuries. Walking any trail on the island and paying attention to the walls is reading a land-use document in stone that predates every map of the island. Only Andros has this specific technique, this specific visual signature. It is worth slowing down to look at it.",
+        el: "✕ **Φτάνεις στο Γαύριο και φεύγεις αμέσως για Μπάτσι ή Χώρα** — Το λιμάνι έχει αυθεντικά καφενεία και τον πύργο του Αγίου Πέτρου. Πάρτε μία ώρα στο Γαύριο.\n\n✕ **Προσπαθείς να φτάσεις στην Άχλα με τον χωματόδρομο χωρίς 4WD** — Ο δρόμος είναι πολύ κακός. Η σωστή προσέγγιση είναι με βάρκα ή με το μονοπάτι από το Βουρκωτό.\n\n✕ **Παραλείπεις τα χωριά του εσωτερικού για περισσότερες μέρες στην παραλία** — Οι Μενίτες, τα Απίκια, οι Στενιές, το Βουρκωτό είναι όπου η Άνδρος ξεχωρίζει από κάθε άλλο νησί.\n\n✕ **Επισκέπτεσαι το Μουσείο Γουλανδρή το ίδιο απόγευμα με τη Χώρα** — Το μουσείο αξίζει περισσότερο από 45 λεπτά. Πήγαινε το πρωί.\n\n💡 Αυτό που δε σου λέει κανείς: Οι ξηρολιθιές της Άνδρου — με τις κάθετες πλάκες σχιστόλιθου που ενσωματώνονται ανάμεσα σε οριζόντιες σειρές μικρότερων λίθων — είναι μοναδικές στο νησί. Είναι μια μορφή γραφής στο τοπίο: κάθε όριο ιδιοκτησίας, κάθε άκρη χωραφιού, κάθε διαδρομή που οι Ανδριώτες αγρότες χαρτογράφησαν επί αιώνες."
+      }
+    }
+  ],
 };

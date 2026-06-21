@@ -1395,6 +1395,41 @@ const REAL_PRICING: Record<string, any> = {
     food_score: 9,
     nature_score: 9,
     history_score: 8
+  },
+
+  andros: {
+    region: "Cyclades",
+    budget_meal: 11,
+    midrange_meal: 24,
+    luxury_meal: 50,
+    coffee: 3,
+    beer_bar: 4.5,
+    cocktail: 9,
+    water_bottle: 1,
+    taxi_5km: 10,
+    bus_ticket: 1.5,
+    atv_scooter_day: 22,
+    car_rental_day: 38,
+    avg_hotel_low: 55,
+    avg_hotel_may_june: 85,
+    avg_hotel_july_aug: 130,
+    avg_hotel_sept_oct: 90,
+    avg_daily_budget_backpacker: 50,
+    avg_daily_budget_midrange: 105,
+    avg_daily_budget_luxury: 250,
+    airport_transfer: 20,
+    crowd_level_july_aug: "medium",
+    crowd_level_may_june: "low_medium",
+    crowd_level_sept_oct: "low",
+    best_for: ["hiking", "nature", "couples", "culture", "photography", "off_beaten_path"],
+    not_ideal_for: ["party", "nightlife", "families_with_kids", "beach_holiday_only"],
+    beach_score: 7,
+    nightlife_score: 4,
+    family_score: 7,
+    value_score: 8,
+    food_score: 8,
+    nature_score: 10,
+    history_score: 8
   }
 };
 

@@ -699,4 +699,48 @@ export const destinationDetails: Record<string, DestinationDetail> = {
       ],
     },
   },
+  andros: {
+    overview: {
+      en: "Every other Cycladic island plays by the same geological rules: barren limestone mountains, scarce water, vegetation that clings on until July then browns and crisps. Andros declines to participate. Its northerly position and mountain spine intercept moisture from the Aegean winds, producing an island of genuine year-round rivers, waterfalls, springs, and green valleys shaded by plane trees where freshwater pools invite swimming without a beach in sight. The difference from Mykonos, visible across the strait 25 kilometres away, could scarcely be more complete.",
+      el: "Η Άνδρος είναι ένα κυκλαδίτικο νησί που αρνείται να ακολουθήσει τους κανόνες. Η βόρεια θέση της και η οροσειρά της παγιδεύουν υγρασία από τους ανέμους του Αιγαίου, δημιουργώντας ένα νησί με ποτάμια που ρέουν όλο τον χρόνο, καταρράκτες, πηγές και πράσινες κοιλάδες. Τα 300+ χιλιόμετρα πιστοποιημένων μονοπατιών, η νεοκλασική Χώρα των καπεταναίων και το Μουσείο Σύγχρονης Τέχνης Γουλανδρή την καθιστούν μοναδική στο Αιγαίο."
+    },
+    pageIncludes: {
+      en: [
+        "Andros Chora & neoclassical architecture",
+        "Goulandris Museum of Modern Art",
+        "300km Andros Routes hiking network",
+        "Pithara waterfalls & Menites springs",
+        "Achla, Grias To Pidima, Batsi, Paraporti beaches",
+        "Fourtalia, local wine & Sariza mineral water",
+        "Paleopolis ancient sunken capital",
+      ],
+      el: [
+        "Χώρα & νεοκλασική αρχιτεκτονική",
+        "Μουσείο Σύγχρονης Τέχνης Γουλανδρή",
+        "300χλμ μονοπάτια Andros Routes",
+        "Καταρράκτες Πιθαρά & πηγές Μενιτών",
+        "Παραλίες Άχλα, Γριας Το Πίδημα, Μπάτσι, Πόρτες",
+        "Φουρτάλια, τοπικό κρασί & Σαρίζα",
+        "Παλαιόπολη — αρχαία βυθισμένη πρωτεύουσα",
+      ],
+    },
+    perfectFor: {
+      en: [
+        "Hikers & outdoor enthusiasts",
+        "Art lovers (Goulandris Museum)",
+        "Couples seeking refined, uncrowded Cyclades",
+        "Families with older children",
+        "Athens escapes (2hr from Rafina)",
+        "Those who find the Cyclades too dry, too busy, too same",
+      ],
+      el: [
+        "Λάτρεις πεζοπορίας & φύσης",
+        "Λάτρεις τέχνης (Μουσείο Γουλανδρή)",
+        "Ζευγάρια που αναζητούν ήσυχες Κυκλάδες",
+        "Οικογένειες με μεγαλύτερα παιδιά",
+        "Αποδράσεις από Αθήνα (2 ώρες από Ραφήνα)",
+        "Όσους βρίσκουν τις Κυκλάδες πολύ ξηρές, πολύ πολυσύχναστες, πολύ ίδιες",
+      ],
+    },
+  },
 };

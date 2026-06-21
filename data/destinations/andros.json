@@ -1,0 +1,18 @@
+{
+  "id": "andros",
+  "slug": "andros",
+  "name": "Andros",
+  "type": "Island",
+  "region": { "en": "Cyclades", "el": "Κυκλάδες" },
+  "coordinates": { "lat": 37.8451, "lng": 24.8830 },
+  "scores": {
+    "family": { "value": 7, "reason": "Calmer beaches (Batsi) and village exploration work well for families with older children; the island's scale and hiking focus suit active families." },
+    "couples": { "value": 9, "reason": "Refined Chora atmosphere, uncrowded beaches, Goulandris Museum, and the quiet inland villages make it ideal for couples seeking sophisticated Cyclades without cliché." },
+    "luxury": { "value": 7, "reason": "Exclusive villas and boutique hotels, excellent dining, and the cultural prestige of the Goulandris Museum; less luxury infrastructure than Santorini or Mykonos." },
+    "budget": { "value": 8, "reason": "Affordable compared to the southern Cyclades (Paros, Naxos, Santorini). Accommodation and dining remain reasonably priced outside August peak." },
+    "nightlife": { "value": 4, "reason": "Civilised bars in Chora and Batsi, some live music in summer; not a party destination and deliberately so." },
+    "food": { "value": 8, "reason": "Excellent local produce, fourtalia, Sariza water, good seafood tavernas, and the island's agricultural self-sufficiency ensures quality across the board." }
+  },
+  "quick_summary": "Andros is the hiking capital of the Cyclades with 300+ kilometres of certified trails, a neoclassical capital built on 19th-century shipping wealth, the internationally significant Goulandris Museum of Modern Art, perennial rivers and waterfalls that contradict every expectation of a Cycladic island, and beaches that combine wild coastal scenery with exceptional water clarity.",
+  "bestFor": ["hiking", "nature", "couples", "culture", "photography", "off_beaten_path"]
+}
