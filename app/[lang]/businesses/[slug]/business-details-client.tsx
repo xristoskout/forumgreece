@@ -257,7 +257,7 @@ export default function BusinessDetailsClient({
                     href={business.website}
                     target="_blank"
                     rel="noreferrer"
-                    className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-medium text-slate-900 transition hover:bg-white/15"
+                    className="rounded-2xl border border-red-200 bg-red-50 px-4 py-3 text-sm font-medium text-red-700 transition hover:bg-red-100 hover:border-red-300"
                   >
                     {t.website}
                   </a>
@@ -503,7 +503,7 @@ export default function BusinessDetailsClient({
                       href={business.website}
                       target="_blank"
                       rel="noreferrer"
-                      className="rounded-2xl border border-slate-200 bg-white hover:bg-slate-50 px-6 py-4 text-sm font-medium text-slate-600 transition-all hover:-translate-y-0.5 hover:shadow-lg"
+                      className="rounded-2xl border border-red-200 bg-red-50 px-6 py-4 text-sm font-medium text-red-700 transition-all hover:bg-red-100 hover:border-red-300 hover:-translate-y-0.5 hover:shadow-lg"
                     >
                       {t.website}
                     </a>
