@@ -45,8 +45,8 @@ export default function HomePageClient({
 
   const quickFacts = [
     {
-      value: "200+",
-      label: { en: "partners", el: "συνεργάτες" },
+      value: "50+",
+      label: { en: "stays", el: "διαμονές" },
     },
     {
       value: "50+",
