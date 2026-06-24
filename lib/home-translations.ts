@@ -254,13 +254,13 @@ type SanityContent = {
 
 export function computeCopy(content: SanityContent | null | undefined, lang: Lang): HomeContent {
   return {
-    heroBadge: content?.heroBadge ?? t.heroBadge[lang],
-    heroTitle: content?.heroTitle ?? t.heroTitle[lang],
-    heroText: content?.heroText ?? t.heroText[lang],
-    heroPrimary: content?.heroPrimary ?? t.heroPrimary[lang],
-    heroSecondary: content?.heroSecondary ?? t.heroSecondary[lang],
-    heroPanelEyebrow: content?.heroPanelEyebrow ?? t.heroPanelEyebrow[lang],
-    heroPanelTitle: content?.heroPanelTitle ?? t.heroPanelTitle[lang],
+    heroBadge: t.heroBadge[lang],
+    heroTitle: t.heroTitle[lang],
+    heroText: t.heroText[lang],
+    heroPrimary: t.heroPrimary[lang],
+    heroSecondary: t.heroSecondary[lang],
+    heroPanelEyebrow: t.heroPanelEyebrow[lang],
+    heroPanelTitle: t.heroPanelTitle[lang],
     heroPanelText:
       content?.heroPanelText ??
       (lang === "en"
