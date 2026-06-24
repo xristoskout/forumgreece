@@ -47,7 +47,7 @@ export const categories: Category[] = [
     href: "/collections/greece-food-and-drink",
   },
   {
-    title: { en: "Compare Islands", el: "Σύγκρισε Νησιά" },
+    title: { en: "Compare", el: "Σύγκρισε" },
     description: {
       en: "Find your perfect match in seconds.",
       el: "Βρες τον ιδανικό προορισμό σε δευτερόλεπτα.",
