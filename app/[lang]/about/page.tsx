@@ -147,7 +147,7 @@ export default async function AboutPage({ params }: Props) {
             </p>
           </div>
           <div className="relative h-80 rounded-[2.5rem] overflow-hidden shadow-2xl flex items-center justify-center bg-indigo-50">
-             <Image src="/images/logo/gogreecenow-logo.webp" alt="GoGreeceNow Logo" width={200} height={200} className="object-contain" />
+             <Image src="/images/logo/gogreecenow-logo-v2.webp" alt="GoGreeceNow Logo" width={200} height={200} className="object-contain" />
           </div>
         </div>
       </section>

@@ -120,7 +120,7 @@ export default function SiteHeader() {
           >
             <div className="flex h-11 w-11 shrink-0 items-center justify-center sm:h-12 sm:w-12">
               <Image
-                src="/images/logo/gogreecenow-logo.webp"
+                src="/images/logo/gogreecenow-logo-v2.webp"
                 alt="GoGreeceNow logo"
                 width={48}
                 height={48}
