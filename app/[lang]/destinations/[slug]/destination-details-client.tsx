@@ -168,7 +168,7 @@ export default function DestinationDetailsClient({
     return (
       <article className="rounded-[28px] border border-slate-200 bg-gradient-to-br from-indigo-50/50 to-white p-8 shadow-sm">
         <p className="text-xs font-bold uppercase tracking-[0.2em] text-indigo-700 mb-3">
-          {lang === "en" ? "Travel Tools" : "Ταξιδιωτικά Εργαλεία"}
+          {lang === "en" ? "Plan Your Trip" : "Σχεδίασε το Ταξίδι σου"}
         </p>
         <h4 className="text-xl font-extrabold mb-4 text-slate-800">Compare {destination.name}</h4>
         <p className="text-sm text-slate-500 mb-6 leading-relaxed">

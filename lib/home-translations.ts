@@ -57,33 +57,33 @@ const t = {
   navForums: { en: "Travel to Greece", el: "Ταξίδι στην Ελλάδα" },
 
   heroBadge: {
-    en: "Greece Travel Portal",
-    el: "Travel Portal για την Ελλάδα",
+    en: "Your trusted guide to authentic Greece",
+    el: "Ο αξιόπιστος οδηγός σου για την αυθεντική Ελλάδα",
   },
   heroTitle: {
-    en: "Plan a better trip to Greece",
-    el: "Οργάνωσε καλύτερα το ταξίδι σου στην Ελλάδα",
+    en: "Greece travel, planned by people who live there",
+    el: "Ταξίδι στην Ελλάδα, σχεδιασμένο από ανθρώπους που ζουν εδώ",
   },
   heroText: {
-    en: "Discover destinations, practical travel info, stays, tours and local food ideas in one clear Greece travel hub.",
-    el: "Ανακάλυψε προορισμούς, χρήσιμες ταξιδιωτικές πληροφορίες, διαμονή, εκδρομές και τοπικές γεύσεις μέσα από ένα καθαρό Greece travel hub.",
+    en: "We handpick hotels, experiences, and local partners across Greece",
+    el: "Επιλέγουμε ξενοδοχεία, εμπειρίες και τοπικούς συνεργάτες σε όλη την Ελλάδα",
   },
   heroPrimary: {
-    en: "Browse Greece destinations",
-    el: "Δες οδηγούς προορισμών",
+    en: "Plan Your Trip →",
+    el: "Σχεδίασε το Ταξίδι σου →",
   },
   heroSecondary: {
-    en: "Read Greece travel info",
-    el: "Δες ταξιδιωτικές πληροφορίες",
+    en: "How It Works",
+    el: "Πώς Λειτουργεί",
   },
 
   heroPanelEyebrow: {
-    en: "Everything in one place",
-    el: "Όλα σε ένα μέρος",
+    en: "Start planning your Greece trip",
+    el: "Ξεκίνα τον σχεδιασμό του ταξιδιού σου",
   },
   heroPanelTitle: {
-    en: "Start with the part of the trip you need most",
-    el: "Ξεκίνα από το κομμάτι του ταξιδιού που χρειάζεσαι περισσότερο",
+    en: "Pick what you need most",
+    el: "Διάλεξε ό,τι χρειάζεσαι περισσότερο",
   },
 
   startPlanningEyebrow: {

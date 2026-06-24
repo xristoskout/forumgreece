@@ -3,8 +3,8 @@ import type { Category, Localized } from "./types";
 export const siteBrand = "GoGreeceNow";
 
 export const siteBrandLine: Localized = {
-  en: "Greece travel guide, destinations and local experiences",
-  el: "Ταξιδιωτικός οδηγός Ελλάδας, προορισμοί και τοπικές εμπειρίες",
+  en: "Your trusted guide to authentic Greece",
+  el: "Ο αξιόπιστος οδηγός σου για την αυθεντική Ελλάδα",
 };
 
 export const SITE_URL = "https://www.gogreecenow.com";
@@ -49,18 +49,18 @@ export const categories: Category[] = [
   {
     title: { en: "Compare", el: "Σύγκριση" },
     description: {
-      en: "Compare destinations side by side and find your perfect match.",
-      el: "Σύγκρινε προορισμούς και βρες τον ιδανικό για εσένα.",
+      en: "Find your perfect match in seconds.",
+      el: "Βρες τον ιδανικό προορισμό σε δευτερόλεπτα.",
     },
     emoji: "⚖️",
     href: "/travel-tools",
     featured: true,
   },
   {
-    title: { en: "Trip Planner", el: "Σχεδιαστής" },
+    title: { en: "Plan My Trip", el: "Σχεδίασε το Ταξίδι μου" },
     description: {
-      en: "AI-powered itinerary builder for your perfect Greece trip.",
-      el: "AI προγραμματισμός για το τέλειο ταξίδι στην Ελλάδα.",
+      en: "Free trip planning help from Greek local experts.",
+      el: "Δωρεάν βοήθεια από Έλληνες ειδικούς.",
     },
     emoji: "🤖",
     href: "/trip-planner",

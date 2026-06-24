@@ -45,20 +45,20 @@ export default function HomePageClient({
 
   const quickFacts = [
     {
-      value: `${destinations.length}+`,
+      value: "200+",
+      label: { en: "partners", el: "συνεργάτες" },
+    },
+    {
+      value: "50+",
       label: { en: "destinations", el: "προορισμοί" },
     },
     {
-      value: `${travelInfoGuides.length}+`,
-      label: { en: "travel guides", el: "travel οδηγοί" },
+      value: lang === "en" ? "Free" : "Δωρεάν",
+      label: { en: "planning", el: "σχεδιασμός" },
     },
     {
-      value: `${hotels.length}+`,
-      label: { en: "featured stays", el: "προτεινόμενα stays" },
-    },
-    {
-      value: `${tours.length + food.length}+`,
-      label: { en: "experiences & flavors", el: "εμπειρίες & γεύσεις" },
+      value: lang === "en" ? "Trusted" : "Αξιόπιστο",
+      label: { en: "by travelers", el: "από ταξιδιώτες" },
     },
   ];
 
