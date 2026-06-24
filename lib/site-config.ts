@@ -20,7 +20,7 @@ export const categories: Category[] = [
     href: "/destinations",
   },
   {
-    title: { en: "Travel Info", el: "Travel Info" },
+    title: { en: "About Greece", el: "About Greece" },
     description: {
       en: "Useful tips about ferries, airports, best time to visit, transport and practical planning.",
       el: "Χρήσιμες πληροφορίες για πλοία, αεροδρόμια, καλύτερη εποχή, μετακινήσεις και πρακτικό προγραμματισμό.",
@@ -29,7 +29,7 @@ export const categories: Category[] = [
     href: "/travel-info",
   },
   {
-    title: { en: "Hotels", el: "Ξενοδοχεία" },
+    title: { en: "Stays", el: "Διαμονή" },
     description: {
       en: "Curated stays, boutique hotels, family resorts and beautiful places to stay across Greece.",
       el: "Επιλεγμένα καταλύματα, boutique ξενοδοχεία, family resorts και όμορφα μέρη για διαμονή σε όλη την Ελλάδα.",
@@ -38,7 +38,7 @@ export const categories: Category[] = [
     href: "/hotels",
   },
   {
-    title: { en: "Eat & Drink", el: "Φαγητό & Ποτό" },
+    title: { en: "Food & Wine", el: "Φαγητό & Κρασί" },
     description: {
       en: "Restaurants, tavernas, bars and local flavors that help visitors experience Greece authentically.",
       el: "Εστιατόρια, ταβέρνες, bars και τοπικές γεύσεις που βοηθούν τον επισκέπτη να ζήσει αυθεντικά την Ελλάδα.",

@@ -235,7 +235,7 @@ export default function HomePageClient({
       },
       href: withLang("/collections/greece-food-and-drink"),
       image: food[0]?.image || "/images/hero-greece.webp",
-      eyebrow: { en: "Eat & Drink", el: "Φαγητό & Ποτό" },
+      eyebrow: { en: "Food & Wine", el: "Φαγητό & Κρασί" },
       tags: {
         en: ["Local Food", "Wine", "Greek Cuisine"],
         el: ["Τοπική Κουζίνα", "Κρασί", "Ελληνική Γαστρονομία"],
