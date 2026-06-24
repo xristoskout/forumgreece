@@ -84,7 +84,7 @@ export default function BlogDetailClient({ post, lang }: Props) {
       } else if (line.startsWith("- ")) {
         out.push(`<li class="ml-4 list-disc text-slate-600">${line.replace("- ", "")}</li>`);
       } else {
-        const withLinks = line.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-indigo-600 underline hover:text-indigo-800 transition-colors font-medium">$1</a>');
+        const withLinks = line.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, text, url) => `<a href="${withLang(url)}" class="text-indigo-600 underline hover:text-indigo-800 transition-colors font-medium">${text}</a>`);
         out.push(`<p class="text-base leading-8 text-slate-600">${withLinks}</p>`);
       }
     }
