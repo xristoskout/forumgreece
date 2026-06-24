@@ -98,68 +98,6 @@ export default function HomePageClient({
     },
   ];
 
-  const startCards = [
-    {
-      icon: "🏝️",
-      title: { en: "Choose a destination", el: "Διάλεξε προορισμό" },
-      description: {
-        en: "Start with islands, cities and holiday spots across Greece.",
-        el: "Ξεκίνα με νησιά, πόλεις και ταξιδιωτικούς προορισμούς σε όλη την Ελλάδα.",
-      },
-      href: withLang("/destinations"),
-      kind: "route" as const,
-      cta: {
-        en: "Browse destination guides →",
-        el: "Δες οδηγούς προορισμών →",
-      },
-    },
-    {
-      icon: "🧭",
-      title: { en: "Solve the practical stuff", el: "Λύσε τα πρακτικά" },
-      description: {
-        en: "Find useful guidance for planning, transport and timing.",
-        el: "Βρες χρήσιμες πληροφορίες για οργάνωση, μετακίνηση και σωστό timing.",
-      },
-      href: withLang("/travel-info"),
-      kind: "route" as const,
-      cta: {
-        en: "Read Greece travel info →",
-        el: "Δες ταξιδιωτικές πληροφορίες →",
-      },
-    },
-    {
-      icon: "🏨",
-      title: { en: "Browse stays", el: "Δες διαμονή" },
-      description: {
-        en: "Move from inspiration to actual stay options and hotel pages.",
-        el: "Πέρασε από την έμπνευση σε πραγματικές επιλογές διαμονής και σελίδες ξενοδοχείων.",
-      },
-      href: withLang("/hotels"),
-      kind: "route" as const,
-      cta: {
-        en: "Browse Greece stays →",
-        el: "Δες επιλογές διαμονής →",
-      },
-    },
-    {
-      icon: "⚓",
-      title: {
-        en: "Add tours and local flavor",
-        el: "Πρόσθεσε εκδρομές και γεύσεις",
-      },
-      description: {
-        en: "Complete the trip with experiences, tours and food ideas.",
-        el: "Ολοκλήρωσε το ταξίδι με εμπειρίες, εκδρομές και τοπικές γεύσεις.",
-      },
-      href: withLang("/tours/all"),
-      kind: "route" as const,
-      cta: {
-        en: "Explore tours and food guides →",
-        el: "Δες εκδρομές και food guides →",
-      },
-    },
-  ];
-
   const featuredCollections = [
     {
       title: { en: "Island Escapes", el: "Νησιωτικές Αποδράσεις" },
@@ -321,7 +259,7 @@ export default function HomePageClient({
               
               <div className="space-y-3">
                 <div className="grid grid-cols-4 gap-2">
-                  {categories.filter(c => !c.featured).map((item) => (
+                  {categories.filter(c => !c.featured && c.title.en !== "Blog").map((item) => (
                     <Link
                       key={item.title.en}
                       href={item.href ? withLang(item.href) : "#"}
@@ -334,26 +272,31 @@ export default function HomePageClient({
                     </Link>
                   ))}
                 </div>
-                <div className="grid grid-cols-2 gap-2">
+                <div className="grid grid-cols-2 gap-3">
                   {categories.filter(c => c.featured).map((item) => (
                     <Link
                       key={item.title.en}
                       href={item.href ? withLang(item.href) : "#"}
-                      className={`group rounded-2xl border-2 p-4 transition-all hover:-translate-y-1 hover:shadow-xl flex flex-col justify-center min-h-[100px] ${
+                      className={`group relative overflow-hidden rounded-2xl border-2 p-5 transition-all duration-200 hover:scale-[1.02] hover:-translate-y-1 hover:shadow-2xl flex items-center gap-4 ${
                         item.title.en === "Compare"
-                          ? "border-indigo-400 bg-indigo-600 text-white shadow-lg shadow-indigo-300 hover:shadow-indigo-400/40 hover:border-indigo-300"
-                          : "border-amber-400 bg-amber-500 text-white shadow-lg shadow-amber-300 hover:shadow-amber-400/40 hover:border-amber-300"
+                          ? "border-indigo-400 bg-gradient-to-br from-indigo-600 to-indigo-700 text-white shadow-lg shadow-indigo-300/50 hover:shadow-indigo-400/60 hover:border-indigo-300"
+                          : "border-amber-400 bg-gradient-to-br from-amber-500 to-orange-600 text-white shadow-lg shadow-amber-300/50 hover:shadow-amber-400/60 hover:border-amber-300"
                       }`}
                     >
-                      <div className="text-3xl mb-1 drop-shadow-[0_2px_8px_rgba(0,0,0,0.15)] brightness-110">
+                      <div className="shrink-0 w-12 h-12 flex items-center justify-center rounded-xl bg-white/20 text-2xl backdrop-blur-sm">
                         {item.emoji}
                       </div>
-                      <h3 className="font-bold text-white mb-0.5">
-                        {item.title[lang]}
-                      </h3>
-                      <p className="text-xs leading-relaxed opacity-90">
-                        {item.description[lang]}
-                      </p>
+                      <div className="flex-1 min-w-0">
+                        <h3 className="font-bold text-white text-sm">
+                          {item.title[lang]}
+                        </h3>
+                        <p className="text-xs leading-tight opacity-80 mt-0.5">
+                          {item.description[lang]}
+                        </p>
+                      </div>
+                      <div className="shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-white/20 transition-transform group-hover:translate-x-0.5">
+                        <svg className="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                      </div>
                     </Link>
                   ))}
                 </div>
@@ -400,6 +343,91 @@ export default function HomePageClient({
         </div>
       </section>
 
+      {/* AI Trip Planner — Highlight */}
+      <section className="py-12">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="relative overflow-hidden rounded-[2rem] p-[2px] bg-gradient-to-br from-indigo-300 via-fuchsia-300 to-amber-200 shadow-xl shadow-indigo-500/10">
+            <div className="relative overflow-hidden rounded-[calc(2rem-2px)] bg-white">
+              <div className="absolute inset-0 opacity-[0.04] pointer-events-none" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%234f46e5\' fill-opacity=\'0.15\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")' }} />
+
+              <div className="relative z-10 flex flex-col md:flex-row items-center gap-8 p-8 md:p-10">
+                <div className="shrink-0 flex items-center justify-center w-20 h-20 md:w-24 md:h-24 rounded-2xl bg-gradient-to-br from-indigo-100 to-fuchsia-100 border border-indigo-200 shadow-lg">
+                  <svg className="w-10 h-10 md:w-12 md:h-12 text-indigo-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                    <path d="M12 2a4 4 0 014 4c0 2-2 4-4 4s-4-2-4-4 2-4 4-4z" />
+                    <path d="M12 14c-4 0-8 1.5-8 4v2h16v-2c0-2.5-4-4-8-4z" />
+                    <path d="M20 8l2 2-2 2" />
+                    <path d="M4 12l-2 2 2 2" />
+                    <path d="M12 20v2" />
+                    <path d="M18 3l-2 2 2 2" />
+                  </svg>
+                </div>
+                <div className="flex-1 text-left">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="inline-flex items-center gap-1.5 rounded-full bg-indigo-100 border border-indigo-200 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.15em] text-indigo-700">
+                      <span className="w-1.5 h-1.5 rounded-full bg-indigo-500 animate-pulse" />
+                      {lang === "en" ? "AI-POWERED" : "ΤΕΧΝΗΤΗ ΝΟΗΜΟΣΥΝΗ"}
+                    </span>
+                    <span className="inline-flex items-center gap-1 rounded-full bg-amber-100 border border-amber-200 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.15em] text-amber-700">
+                      ✨ {lang === "en" ? "NEW" : "ΝΕΟ"}
+                    </span>
+                  </div>
+                  <h3 className="text-2xl md:text-3xl font-extrabold tracking-tight text-slate-900 mb-2">
+                    {lang === "en" ? "Plan Your Entire Trip with AI" : "Σχεδίασε Όλο σου το Ταξίδι με Τεχνητή Νοημοσύνη"}
+                  </h3>
+                  <p className="text-sm text-slate-500 leading-relaxed max-w-2xl mb-4">
+                    {lang === "en"
+                      ? "Tell our AI assistant your preferences — budget, style, dates, interests — and get a fully personalised itinerary in seconds. It scours our database of 50+ destinations across Greece, with hundreds of handpicked hotels, restaurants, and hidden gems to build your perfect trip. No more tabs, no more research."
+                      : "Πες στον βοηθό τεχνητής νοημοσύνης τις προτιμήσεις σου — budget, στυλ, ημερομηνίες, ενδιαφέροντα — και λάβε ένα πλήρως εξατομικευμένο πρόγραμμα σε δευτερόλεπτα. Ερευνά τη βάση με 50+ προορισμούς σε όλη την Ελλάδα, με εκατοντάδες χειροποίκτες προτάσεις για ξενοδοχεία, εστιατόρια και κρυμμένα διαμάντια για να χτίσει το τέλειο ταξίδι σου. Τέλος στις ατελείωτες καρτέλες."}
+                  </p>
+                  <div className="flex flex-wrap items-center gap-5 text-xs text-indigo-500 mb-5">
+                    <span className="flex items-center gap-1.5">
+                      <svg className="w-3.5 h-3.5 text-indigo-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                      {lang === "en" ? "30-second setup" : "Ρύθμιση σε 30 δευτερόλεπτα"}
+                    </span>
+                    <span className="flex items-center gap-1.5">
+                      <svg className="w-3.5 h-3.5 text-indigo-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                      {lang === "en" ? "Smart recommendations" : "Έξυπνες προτάσεις"}
+                    </span>
+                    <span className="flex items-center gap-1.5">
+                      <svg className="w-3.5 h-3.5 text-indigo-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                      {lang === "en" ? "Real-time availability" : "Διαθεσιμότητα σε πραγματικό χρόνο"}
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-3 flex-wrap pb-4 md:pb-0">
+                    <Link
+                      href={withLang("/trip-planner", lang)}
+                      className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-indigo-600 via-fuchsia-600 to-amber-600 px-7 py-3 text-sm font-bold text-white shadow-[0_4px_25px_rgba(79,70,229,0.3)] transition-all hover:shadow-[0_4px_40px_rgba(79,70,229,0.5)] hover:-translate-y-0.5"
+                    >
+                      {lang === "en" ? "Try the AI Trip Planner" : "Δοκίμασε τον AI Σχεδιαστή"}
+                      <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </Link>
+                    <span className="text-[11px] text-slate-400 italic">
+                      {lang === "en" ? "It's completely free" : "Είναι εντελώς δωρεάν"}
+                    </span>
+                  </div>
+                </div>
+                <div className="hidden lg:flex shrink-0 flex-col items-center gap-3 p-5 rounded-2xl bg-indigo-50 border border-indigo-100">
+                  <div className="flex -space-x-2">
+                    {[1,2,3,4].map(i => (
+                      <div key={i} className="w-8 h-8 rounded-full bg-gradient-to-br from-indigo-400 to-fuchsia-400 border-2 border-white flex items-center justify-center text-[10px] font-bold text-white shadow-md">✦</div>
+                    ))}
+                  </div>
+                  <div className="text-center">
+                    <p className="text-2xl font-black text-indigo-900">2,000+</p>
+                    <p className="text-[10px] text-indigo-500 uppercase tracking-wider">{lang === "en" ? "Curated guides" : "Οδηγοί προορισμών"}</p>
+                  </div>
+                  <div className="flex items-center gap-1 text-amber-500 text-xs">
+                    {[1,2,3,4,5].map(i => (
+                      <svg key={i} className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-16">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-8 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
@@ -433,71 +461,6 @@ export default function HomePageClient({
                 </div>
               </Link>
             ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="relative z-10 -mt-10 pb-8">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="border border-slate-200 bg-white backdrop-blur-md p-6 shadow-xl shadow-black/50 md:p-8">
-            <div className="mb-8 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
-              <div>
-                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700">
-                  {copy.startPlanningEyebrow}
-                </p>
-                <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900">
-                  {copy.startPlanningTitle}
-                </h2>
-              </div>
-
-              <p className="max-w-3xl text-sm leading-6 text-slate-500">
-                {copy.startPlanningText}
-              </p>
-            </div>
-
-            <div className="grid gap-4 lg:grid-cols-4">
-              {startCards.map((item) =>
-                item.kind === "route" ? (
-                  <Link
-                    key={item.title.en}
-                    href={item.href}
-                    className="group border border-slate-200 bg-white hover:bg-slate-50 p-6 transition hover:-translate-y-1 hover:border-indigo-200 backdrop-blur-md hover:shadow-lg"
-                  >
-                    <div className="flex h-12 w-12 items-center justify-center bg-indigo-100 text-indigo-800 text-2xl">
-                      {item.icon}
-                    </div>
-                    <h3 className="mt-5 text-xl font-semibold text-slate-900">
-                      {item.title[lang]}
-                    </h3>
-                    <p className="mt-3 text-sm leading-6 text-slate-500">
-                      {item.description[lang]}
-                    </p>
-                    <span className="mt-5 inline-block text-sm font-semibold text-indigo-700 transition group-hover:text-indigo-200">
-                      {item.cta[lang]}
-                    </span>
-                  </Link>
-                ) : (
-                  <a
-                    key={item.title.en}
-                    href={item.href}
-                    className="group border border-slate-200 bg-white hover:bg-slate-50 p-6 transition hover:-translate-y-1 hover:border-indigo-200 backdrop-blur-md hover:shadow-lg"
-                  >
-                    <div className="flex h-12 w-12 items-center justify-center bg-indigo-100 text-indigo-800 text-2xl">
-                      {item.icon}
-                    </div>
-                    <h3 className="mt-5 text-xl font-semibold text-slate-900">
-                      {item.title[lang]}
-                    </h3>
-                    <p className="mt-3 text-sm leading-6 text-slate-500">
-                      {item.description[lang]}
-                    </p>
-                    <span className="mt-5 inline-block text-sm font-semibold text-indigo-700 transition group-hover:text-indigo-200">
-                      {item.cta[lang]}
-                    </span>
-                  </a>
-                )
-              )}
-            </div>
           </div>
         </div>
       </section>
@@ -655,204 +618,40 @@ export default function HomePageClient({
           </div>
         </div>
 
-        {/* AI Trip Planner — Spectacular Promo */}
-        <div className="mt-14 relative overflow-hidden rounded-[2rem] p-[2px] bg-gradient-to-br from-indigo-400 via-fuchsia-400 to-amber-300 shadow-2xl shadow-indigo-500/20">
-          <div className="relative overflow-hidden rounded-[calc(2rem-2px)] bg-slate-950">
-            <div className="absolute inset-0 opacity-20 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 20% 30%, rgba(139,92,246,0.4) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(236,72,153,0.3) 0%, transparent 50%), radial-gradient(circle at 50% 50%, rgba(251,191,36,0.1) 0%, transparent 40%)' }} />
-            <div className="absolute inset-0 opacity-[0.08] pointer-events-none" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23999\' fill-opacity=\'0.15\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")' }} />
-            <div className="absolute -top-20 -right-20 w-80 h-80 bg-indigo-500/10 rounded-full blur-3xl animate-pulse" />
-            <div className="absolute -bottom-20 -left-20 w-80 h-80 bg-fuchsia-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1.5s' }} />
-
-            <div className="relative z-10 flex flex-col md:flex-row items-center gap-8 p-8 md:p-10">
-              <div className="shrink-0 flex items-center justify-center w-20 h-20 md:w-24 md:h-24 rounded-2xl bg-gradient-to-br from-indigo-500/30 to-fuchsia-500/30 border border-indigo-400/20 shadow-lg shadow-indigo-500/20">
-                <svg className="w-10 h-10 md:w-12 md:h-12 text-indigo-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                  <path d="M12 2a4 4 0 014 4c0 2-2 4-4 4s-4-2-4-4 2-4 4-4z" />
-                  <path d="M12 14c-4 0-8 1.5-8 4v2h16v-2c0-2.5-4-4-8-4z" />
-                  <path d="M20 8l2 2-2 2" />
-                  <path d="M4 12l-2 2 2 2" />
-                  <path d="M12 20v2" />
-                  <path d="M18 3l-2 2 2 2" />
-                </svg>
-              </div>
-              <div className="flex-1 text-left">
-                <div className="flex items-center gap-2 mb-2">
-                  <span className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-indigo-500/20 to-fuchsia-500/20 border border-indigo-400/20 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.15em] text-indigo-300">
-                    <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-pulse" />
-                    {lang === "en" ? "AI-POWERED" : "ΤΕΧΝΗΤΗ ΝΟΗΜΟΣΥΝΗ"}
-                  </span>
-                  <span className="inline-flex items-center gap-1 rounded-full bg-amber-400/15 border border-amber-400/20 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.15em] text-amber-300">
-                    ✨ {lang === "en" ? "NEW" : "ΝΕΟ"}
-                  </span>
-                </div>
-                <h3 className="text-2xl md:text-3xl font-extrabold tracking-tight text-white mb-2">
-                  {lang === "en" ? "Plan Your Entire Trip with AI" : "Σχεδίασε Όλο σου το Ταξίδι με Τεχνητή Νοημοσύνη"}
-                </h3>
-                <p className="text-sm text-indigo-200/70 leading-relaxed max-w-2xl mb-4">
-                  {lang === "en"
-                    ? "Tell our AI assistant your preferences — budget, style, dates, interests — and get a fully personalised itinerary in seconds. It scours our database of 50+ destinations across Greece, with hundreds of handpicked hotels, restaurants, and hidden gems to build your perfect trip. No more tabs, no more research."
-                    : "Πες στον βοηθό τεχνητής νοημοσύνης τις προτιμήσεις σου — budget, στυλ, ημερομηνίες, ενδιαφέροντα — και λάβε ένα πλήρως εξατομικευμένο πρόγραμμα σε δευτερόλεπτα. Ερευνά τη βάση με 50+ προορισμούς σε όλη την Ελλάδα, με εκατοντάδες χειροποίκτες προτάσεις για ξενοδοχεία, εστιατόρια και κρυμμένα διαμάντια για να χτίσει το τέλειο ταξίδι σου. Τέλος στις ατελείωτες καρτέλες."}
-                </p>
-                <div className="flex flex-wrap items-center gap-5 text-xs text-indigo-300/60 mb-5">
-                  <span className="flex items-center gap-1.5">
-                    <svg className="w-3.5 h-3.5 text-indigo-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                    {lang === "en" ? "30-second setup" : "Ρύθμιση σε 30 δευτερόλεπτα"}
-                  </span>
-                  <span className="flex items-center gap-1.5">
-                    <svg className="w-3.5 h-3.5 text-indigo-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                    {lang === "en" ? "Smart recommendations" : "Έξυπνες προτάσεις"}
-                  </span>
-                  <span className="flex items-center gap-1.5">
-                    <svg className="w-3.5 h-3.5 text-indigo-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                    {lang === "en" ? "Real-time availability" : "Διαθεσιμότητα σε πραγματικό χρόνο"}
-                  </span>
-                </div>
-                <div className="flex items-center gap-3 flex-wrap">
-                  <Link
-                    href={withLang("/trip-planner", lang)}
-                    className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-indigo-500 via-fuchsia-500 to-amber-500 px-7 py-3 text-sm font-bold text-white shadow-[0_4px_25px_rgba(139,92,246,0.4)] transition-all hover:shadow-[0_4px_40px_rgba(139,92,246,0.6)] hover:-translate-y-0.5"
-                  >
-                    {lang === "en" ? "Try the AI Trip Planner" : "Δοκίμασε τον AI Σχεδιαστή"}
-                    <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                  </Link>
-                  <span className="text-[11px] text-indigo-400/50 italic">
-                    {lang === "en" ? "It's completely free" : "Είναι εντελώς δωρεάν"}
-                  </span>
-                </div>
-              </div>
-              <div className="hidden lg:flex shrink-0 flex-col items-center gap-3 p-5 rounded-2xl bg-white/5 border border-white/10">
-                <div className="flex -space-x-2">
-                  {[1,2,3,4].map(i => (
-                    <div key={i} className="w-8 h-8 rounded-full bg-gradient-to-br from-indigo-400 to-fuchsia-400 border-2 border-slate-950 flex items-center justify-center text-[10px] font-bold text-white shadow-lg">✦</div>
-                  ))}
-                </div>
-                <div className="text-center">
-                  <p className="text-2xl font-black text-white">2,000+</p>
-                  <p className="text-[10px] text-indigo-300/60 uppercase tracking-wider">{lang === "en" ? "Curated guides" : "Οδηγοί προορισμών"}</p>
-                </div>
-                <div className="flex items-center gap-1 text-amber-400 text-xs">
-                  {[1,2,3,4,5].map(i => (
-                    <svg key={i} className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </section>
 
-      <section id="travel-info" className="scroll-mt-28 bg-white backdrop-blur-md py-14">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="grid gap-6 xl:grid-cols-[0.95fr_1.05fr]">
-            <div className="border border-slate-200 bg-white hover:bg-slate-50 p-7 md:p-8">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700">
-                {copy.travelHubEyebrow}
-              </p>
-              <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
-                {copy.travelHubTitle}
-              </h2>
-              <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-500">
-                {copy.travelHubText}
-              </p>
-
-              <Link
-                href={withLang("/travel-info")}
-                className="mt-6 inline-flex bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-100"
-              >
-                {copy.travelHubCta}
-              </Link>
-            </div>
-
-            <div className="grid gap-4 md:grid-cols-3">
-              <Link
-                href={withLang("/travel-info/how-to-get-to-greece")}
-                className="group border border-slate-200 bg-white backdrop-blur-md p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
-              >
-                <div className="text-3xl">✈️</div>
-                <h3 className="mt-4 text-xl font-semibold text-slate-900">
-                  {copy.travelMini1Title}
-                </h3>
-                <p className="mt-3 text-sm leading-6 text-slate-500">
-                  {copy.travelMini1Text}
-                </p>
-                <span className="mt-4 inline-block text-sm font-semibold text-indigo-700">
-                  {lang === "en"
-                    ? "Read how to get to Greece →"
-                    : "Δες πώς να έρθεις στην Ελλάδα →"}
-                </span>
-              </Link>
-
-              <Link
-                href={withLang("/travel-info/best-time-to-visit-greece")}
-                className="group border border-slate-200 bg-white backdrop-blur-md p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
-              >
-                <div className="text-3xl">🗓️</div>
-                <h3 className="mt-4 text-xl font-semibold text-slate-900">
-                  {copy.travelMini2Title}
-                </h3>
-                <p className="mt-3 text-sm leading-6 text-slate-500">
-                  {copy.travelMini2Text}
-                </p>
-                <span className="mt-4 inline-block text-sm font-semibold text-indigo-700">
-                  {lang === "en"
-                    ? "Read the best time to visit Greece guide →"
-                    : "Δες τον οδηγό για το πότε να ταξιδέψεις →"}
-                </span>
-              </Link>
-
-              <Link
-                href={withLang("/travel-info/getting-around-greece")}
-                className="group border border-slate-200 bg-white backdrop-blur-md p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
-              >
-                <div className="text-3xl">🧭</div>
-                <h3 className="mt-4 text-xl font-semibold text-slate-900">
-                  {copy.travelMini3Title}
-                </h3>
-                <p className="mt-3 text-sm leading-6 text-slate-500">
-                  {copy.travelMini3Text}
-                </p>
-                <span className="mt-4 inline-block text-sm font-semibold text-indigo-700">
-                  {lang === "en"
-                    ? "Read the getting around Greece guide →"
-                    : "Δες τον οδηγό μετακينةση στην Ελλάδα →"}
-                </span>
-              </Link>
-            </div>
+      <section className="mx-auto max-w-7xl px-6 py-12">
+        <article className="relative overflow-hidden rounded-[2rem] bg-indigo-950 p-7 text-white shadow-xl lg:p-10 border border-white/10 group">
+          <div className="absolute inset-0 z-0 bg-gradient-to-r from-indigo-950 via-indigo-950/45 to-transparent transition-opacity duration-700 group-hover:via-indigo-950/60" />
+          <div className="absolute inset-0 z-0 opacity-40">
+            <Image 
+              src="/images/greece-islands-map-guide.webp" 
+              alt="Greece Island Map Guide" 
+              fill 
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover transition-transform duration-1000 group-hover:scale-110"
+            />
           </div>
-
-          <div className="mt-8">
-            <article className="relative overflow-hidden rounded-[2rem] bg-indigo-950 p-7 text-white shadow-xl lg:p-10 border border-white/10 group">
-              <div className="absolute inset-0 z-0 bg-gradient-to-r from-indigo-950 via-indigo-950/45 to-transparent transition-opacity duration-700 group-hover:via-indigo-950/60" />
-              <div className="absolute inset-0 z-0 opacity-40">
-                <Image 
-                  src="/images/greece-islands-map-guide.webp" 
-                  alt="Greece Island Map Guide" 
-                  fill 
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                  className="object-cover transition-transform duration-1000 group-hover:scale-110"
-                />
-              </div>
-              <div className="relative z-10 max-w-xl text-left">
-                 <span className="inline-flex rounded-full bg-indigo-500/30 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-indigo-100 backdrop-blur-md mb-4 border border-white/10">
-                   {lang === "en" ? "Visual Planning" : "Οπτική Οργάνωση"}
-                 </span>
-                 <p className="text-2xl md:text-3xl font-bold mb-3 tracking-tight">
-                    {lang === "en" ? "Not sure where to start? See the island map" : "Δεν ξέρεις από πού να ξεκινήσεις; Δες τον χάρτη"}
-                 </p>
-                 <p className="text-sm md:text-base text-indigo-100/90 mb-6 leading-relaxed font-light">
-                   {lang === "en" 
-                     ? "Understand the island clusters, regions and ferry flow at a glance before you dive into destination guides." 
-                     : "Κατανόησε τα νησιωτικά συμπλέγματα, τις περιοχές και τη ροή των πλοίων με μια ματιά πριν ξεκινήσεις να διαβάζεις οδηγούς."}
-                 </p>
-                 <Link 
-                   href={withLang("/travel-info/greece-islands-map-guide")} 
-                   className="inline-flex rounded-xl bg-white px-6 py-3 text-sm font-bold text-indigo-950 hover:bg-slate-50 transition-all shadow-lg hover:-translate-y-0.5"
-                 >
-                   {lang === "en" ? "Explore the Island Map Guide →" : "Δες τον Οδηγό Χάρτη →"}
-                 </Link>
-              </div>
-            </article>
+          <div className="relative z-10 max-w-xl text-left">
+             <span className="inline-flex rounded-full bg-indigo-500/30 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-indigo-100 backdrop-blur-md mb-4 border border-white/10">
+                {lang === "en" ? "Visual Planning" : "Οπτική Οργάνωση"}
+              </span>
+              <p className="text-2xl md:text-3xl font-bold mb-3 tracking-tight">
+                 {lang === "en" ? "Not sure where to start? See the island map" : "Δεν ξέρεις από πού να ξεκινήσεις; Δες τον χάρτη"}
+              </p>
+              <p className="text-sm md:text-base text-indigo-100/90 mb-6 leading-relaxed font-light">
+                {lang === "en" 
+                  ? "Understand the island clusters, regions and ferry flow at a glance before you dive into destination guides." 
+                  : "Κατανόησε τα νησιωτικά συμπλέγματα, τις περιοχές και τη ροή των πλοίων με μια ματιά πριν ξεκινήσεις να διαβάζεις οδηγούς."}
+              </p>
+              <Link 
+                href={withLang("/travel-info/greece-islands-map-guide")} 
+                className="inline-flex rounded-xl bg-white px-6 py-3 text-sm font-bold text-indigo-950 hover:bg-slate-50 transition-all shadow-lg hover:-translate-y-0.5"
+              >
+                {lang === "en" ? "Explore the Island Map Guide →" : "Δες τον Οδηγό Χάρτη →"}
+              </Link>
           </div>
-        </div>
+        </article>
       </section>
 
       <section
