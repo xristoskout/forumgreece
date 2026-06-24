@@ -38,7 +38,7 @@ export default function SiteFooter({ lang }: { lang: Lang }) {
               <li><Link href={withLang("/travel-info", lang)} className="text-slate-600 hover:text-slate-900">Travel Info</Link></li>
               <li><Link href={withLang("/hotels", lang)} className="text-slate-600 hover:text-slate-900">Hotels</Link></li>
               <li><Link href={withLang("/tours/all", lang)} className="text-slate-600 hover:text-slate-900">Tours</Link></li>
-                <li><Link href={withLang("/collections/greece-food-and-drink", lang)} className="text-slate-600 hover:text-slate-900">Eat & Drink</Link></li>
+                <li><Link href={withLang("/collections/greece-food-and-drink", lang)} className="text-slate-600 hover:text-slate-900">Food & Wine</Link></li>
                 <li><Link href={withLang("/blog", lang)} className="text-slate-600 hover:text-slate-900">Blog</Link></li>
               </ul>
           </div>

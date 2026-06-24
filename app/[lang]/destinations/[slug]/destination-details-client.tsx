@@ -339,7 +339,7 @@ export default function DestinationDetailsClient({
                   </div>
                   <div className="flex flex-col">
                     <span className="text-xs font-semibold text-emerald-100 uppercase tracking-wider mb-0.5">
-                      {lang === "en" ? "Food & Drink" : "Φαγητό & Ποτό"}
+                      {lang === "en" ? "Food & Wine" : "Φαγητό & Κρασί"}
                     </span>
                     <h3 className="text-xl font-bold tracking-tight text-white">{item.title[lang]}</h3>
                   </div>

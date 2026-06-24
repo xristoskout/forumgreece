@@ -86,7 +86,7 @@ export default async function EatDrinkPage({ params }: { params: Params }) {
 
   const breadcrumb = breadcrumbSchema(lang, [
     { label: lang === "en" ? "Home" : "Αρχική", path: "" },
-    { label: lang === "en" ? "Eat & Drink" : "Φαγητό & Ποτό", path: "/eat-drink" },
+    { label: lang === "en" ? "Food & Wine" : "Φαγητό & Κρασί", path: "/eat-drink" },
     { label: item.title[lang], path: `/eat-drink/${slug}` },
   ]);
 

@@ -10,6 +10,18 @@ export type HomeContent = {
   startPlanningEyebrow: string;
   startPlanningTitle: string;
   startPlanningText: string;
+  howItWorksEyebrow: string;
+  howItWorksTitle: string;
+  howItWorksText: string;
+  howItWorksStep1Title: string;
+  howItWorksStep1Text: string;
+  howItWorksStep2Title: string;
+  howItWorksStep2Text: string;
+  howItWorksStep3Title: string;
+  howItWorksStep3Text: string;
+  travelStylesEyebrow: string;
+  travelStylesTitle: string;
+  travelStylesText: string;
   featuredCollectionsEyebrow: string;
   featuredCollectionsTitle: string;
   featuredCollectionsText: string;
@@ -53,28 +65,28 @@ const t = {
   navTravelInfo: { en: "Travel Info", el: "Ταξιδιωτικές Πληροφορίες" },
   navHotels: { en: "Hotels", el: "Ξενοδοχεία" },
   navTours: { en: "Experiences", el: "Τοπικές Επιχειρήσεις" },
-  navEatDrink: { en: "Eat & Drink", el: "Φαγητό & Ποτό" },
+  navEatDrink: { en: "Food & Wine", el: "Φαγητό & Κρασί" },
   navForums: { en: "Travel to Greece", el: "Ταξίδι στην Ελλάδα" },
 
   heroBadge: {
-    en: "Your trusted guide to authentic Greece",
-    el: "Ο αξιόπιστος οδηγός σου για την αυθεντική Ελλάδα",
+    en: "Plan your 2026 Greece holiday",
+    el: "Σχεδίασε τις διακοπές σου στην Ελλάδα για το 2026",
   },
   heroTitle: {
-    en: "Greece travel, planned by people who live there",
-    el: "Ταξίδι στην Ελλάδα, σχεδιασμένο από ανθρώπους που ζουν εδώ",
+    en: "Greek islands & local experiences, curated by people who live there",
+    el: "Ελληνικά νησιά & αυθεντικές εμπειρίες, από ανθρώπους που ζουν εδώ",
   },
   heroText: {
-    en: "We handpick hotels, experiences, and local partners across Greece",
-    el: "Επιλέγουμε ξενοδοχεία, εμπειρίες και τοπικούς συνεργάτες σε όλη την Ελλάδα",
+    en: "Handpicked hotels, private tours, and authentic tavernas across Greece. Build your perfect island-hopping itinerary.",
+    el: "Επιλεγμένα ξενοδοχεία, ιδιωτικές ξεναγήσεις και αυθεντικές ταβέρνες σε όλη την Ελλάδα. Χτίσε το τέλειο ταξίδι σου.",
   },
   heroPrimary: {
-    en: "Plan Your Trip",
-    el: "Σχεδίασε το Ταξίδι σου",
+    en: "Explore Destinations",
+    el: "Ανακάλυψε Προορισμούς",
   },
   heroSecondary: {
-    en: "How It Works",
-    el: "Πώς Λειτουργεί",
+    en: "Build Your Itinerary",
+    el: "Φτιάξε το Δρομολόγιό σου",
   },
 
   heroPanelEyebrow: {
@@ -86,6 +98,54 @@ const t = {
     el: "Διάλεξε ό,τι χρειάζεσαι περισσότερο",
   },
 
+  howItWorksEyebrow: {
+    en: "How It Works",
+    el: "Πώς Λειτουργεί",
+  },
+  howItWorksTitle: {
+    en: "Plan your Greece trip in 3 simple steps",
+    el: "Σχεδίασε το ταξίδι σου στην Ελλάδα σε 3 απλά βήματα",
+  },
+  howItWorksText: {
+    en: "From inspiration to booking — we make planning your Greece holiday effortless.",
+    el: "Από την έμπνευση μέχρι την κράτηση — κάνουμε τον σχεδιασμό του ταξιδιού σου στην Ελλάδα απλό.",
+  },
+  howItWorksStep1Title: {
+    en: "Tell us what you're looking for",
+    el: "Πες μας τι ψάχνεις",
+  },
+  howItWorksStep1Text: {
+    en: "Choose your destination, travel style, budget, and interests. Browse our guides or use our AI Trip Planner to get personalised recommendations.",
+    el: "Διάλεξε προορισμό, ταξιδιωτικό στυλ, προϋπολογισμό και ενδιαφέροντα. Ξεφύλλισε τους οδηγούς μας ή χρησιμοποίησε τον AI Σχεδιαστή για εξατομικευμένες προτάσεις.",
+  },
+  howItWorksStep2Title: {
+    en: "Get matched with trusted local partners",
+    el: "Συνδέσου με αξιόπιστους τοπικούς συνεργάτες",
+  },
+  howItWorksStep2Text: {
+    en: "Every hotel, tour, and experience on GoGreeceNow is handpicked. No generic listings — only vetted local businesses recommended by our team.",
+    el: "Κάθε ξενοδοχείο, εκδρομή και εμπειρία στο GoGreeceNow είναι επιλεγμένα. Χωρίς γενικές λίστες — μόνο τοπικές επιχειρήσεις που ελέγχουμε και προτείνουμε.",
+  },
+  howItWorksStep3Title: {
+    en: "Experience the real Greece",
+    el: "Ζήσε την αυθεντική Ελλάδα",
+  },
+  howItWorksStep3Text: {
+    en: "Travel with confidence knowing you've chosen the best local partners. From caldera-view hotels to hidden tavernas — experience Greece the way it's meant to be.",
+    el: "Ταξίδεψε με σιγουριά γνωρίζοντας ότι έχεις επιλέξει τους καλύτερους τοπικούς συνεργάτες. Από ξενοδοχεία με θέα καλδέρας μέχρι κρυφές ταβέρνες — ζήσε την Ελλάδα όπως αξίζει.",
+  },
+  travelStylesEyebrow: {
+    en: "Travel Styles",
+    el: "Ταξιδιωτικά Στυλ",
+  },
+  travelStylesTitle: {
+    en: "Find your perfect Greece experience",
+    el: "Βρες την τέλεια εμπειρία στην Ελλάδα",
+  },
+  travelStylesText: {
+    en: "Whether it's a romantic honeymoon, a family adventure, or a food-and-wine journey — we have the right destinations and partners for you.",
+    el: "Είτε είναι ρομαντικός μήνας του μέλιτος, οικογενειακή περιπέτεια ή γαστρονομικό ταξίδι — έχουμε τους κατάλληλους προορισμούς και συνεργάτες για εσένα.",
+  },
   startPlanningEyebrow: {
     en: "Start Planning",
     el: "Ξεκίνα να Οργανώνεις",
@@ -174,10 +234,10 @@ const t = {
     el: "Ανακάλυψε επιλεγμένες τοπικές εμπειρίες, από αυθεντικές γαστρονομικές εμπειρίες και πολιτιστικές δραστηριότητες μέχρι ημερήσιες εκδρομές που εμπλουτίζουν τη διαμονή σου.",
   },
 
-  foodEyebrow: { en: "Eat & Drink", el: "Φαγητό & Ποτό" },
+  foodEyebrow: { en: "Food & Wine", el: "Φαγητό & Κρασί" },
   foodTitle: {
-    en: "Taste Greece through local food and drinks",
-    el: "Γνώρισε την Ελλάδα μέσα από το τοπικό φαγητό και ποτό",
+    en: "Taste Greece through local food and wine",
+    el: "Γνώρισε την Ελλάδα μέσα από το τοπικό φαγητό και κρασί",
   },
   foodText: {
     en: "Discover regional dishes, local specialties and food-focused guide pages that add flavor to your Greece trip planning.",
@@ -219,6 +279,18 @@ type SanityContent = {
   heroPanelEyebrow?: string;
   heroPanelTitle?: string;
   heroPanelText?: string;
+  howItWorksEyebrow?: string;
+  howItWorksTitle?: string;
+  howItWorksText?: string;
+  howItWorksStep1Title?: string;
+  howItWorksStep1Text?: string;
+  howItWorksStep2Title?: string;
+  howItWorksStep2Text?: string;
+  howItWorksStep3Title?: string;
+  howItWorksStep3Text?: string;
+  travelStylesEyebrow?: string;
+  travelStylesTitle?: string;
+  travelStylesText?: string;
   startPlanningEyebrow?: string;
   startPlanningTitle?: string;
   startPlanningText?: string;
@@ -266,6 +338,18 @@ export function computeCopy(content: SanityContent | null | undefined, lang: Lan
       (lang === "en"
         ? "GoGreeceNow brings destination ideas, practical travel advice, stays, tours and local food inspiration together so travelers can plan each part of a Greece trip in one place."
         : "Το GoGreeceNow συγκεντρώνει ιδέες για προορισμούς, πρακτικές ταξιδιωτικές συμβουλές, διαμονή, εκδρομές και τοπικές γεύσεις ώστε ο ταξιδιώτης να οργανώνει κάθε κομμάτι του ταξιδιού στην Ελλάδα σε ένα μέρος."),
+    howItWorksEyebrow: content?.howItWorksEyebrow ?? t.howItWorksEyebrow[lang],
+    howItWorksTitle: content?.howItWorksTitle ?? t.howItWorksTitle[lang],
+    howItWorksText: content?.howItWorksText ?? t.howItWorksText[lang],
+    howItWorksStep1Title: t.howItWorksStep1Title[lang],
+    howItWorksStep1Text: t.howItWorksStep1Text[lang],
+    howItWorksStep2Title: t.howItWorksStep2Title[lang],
+    howItWorksStep2Text: t.howItWorksStep2Text[lang],
+    howItWorksStep3Title: t.howItWorksStep3Title[lang],
+    howItWorksStep3Text: t.howItWorksStep3Text[lang],
+    travelStylesEyebrow: content?.travelStylesEyebrow ?? t.travelStylesEyebrow[lang],
+    travelStylesTitle: content?.travelStylesTitle ?? t.travelStylesTitle[lang],
+    travelStylesText: content?.travelStylesText ?? t.travelStylesText[lang],
     startPlanningEyebrow: content?.startPlanningEyebrow ?? t.startPlanningEyebrow[lang],
     startPlanningTitle: content?.startPlanningTitle ?? t.startPlanningTitle[lang],
     startPlanningText: content?.startPlanningText ?? t.startPlanningText[lang],

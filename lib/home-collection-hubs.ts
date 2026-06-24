@@ -285,23 +285,23 @@ export const homeCollectionHubs: HomeCollectionHub[] = [
   {
     slug: "taste-local-greece",
     eyebrow: {
-      en: "Eat & drink",
-      el: "Φαγητό & Ποτό",
+      en: "Food & Wine",
+      el: "Φαγητό & Κρασί",
     },
     title: {
       en: "Taste Local Greece",
       el: "Γεύσεις της Τοπικής Ελλάδας",
     },
     description: {
-      en: "Use food and drink inspiration to discover regional dishes, local traditions and destinations that feel richer through cuisine.",
-      el: "Χρησιμοποίησε food and drink έμπνευση για να ανακαλύψεις τοπικά πιάτα, παραδόσεις και προορισμούς που γίνονται πιο πλούσιοι μέσα από τη γεύση.",
+      en: "Use food and wine inspiration to discover regional dishes, local traditions and destinations that feel richer through cuisine.",
+      el: "Χρησιμοποίησε food and wine έμπνευση για να ανακαλύψεις τοπικά πιάτα, παραδόσεις και προορισμούς που γίνονται πιο πλούσιοι μέσα από τη γεύση.",
     },
     metaTitle: {
-      en: "Greek food and drink guides by destination",
+      en: "Greek food and wine guides by destination",
       el: "Οδηγοί ελληνικού φαγητού και ποτού ανά προορισμό",
     },
     metaDescription: {
-      en: "Discover Greek food and drink guides, regional dishes and local flavors that help you plan where to eat and what to try.",
+      en: "Discover Greek food and wine guides, regional dishes and local flavors that help you plan where to eat and what to try.",
       el: "Ανακάλυψε οδηγούς ελληνικού φαγητού και ποτού, τοπικά πιάτα και γεύσεις που σε βοηθούν να οργανώσεις πού θα φας και τι θα δοκιμάσεις.",
     },
     intro: {

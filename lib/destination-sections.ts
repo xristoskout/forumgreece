@@ -38,7 +38,7 @@ export const destinationSections: Record<string, DestinationSection[]> = {
             el: "Η καλντέρα δεν είναι απλώς θέα — είναι γεωλογικό θαύμα",
           },
           text: {
-            en: "The caldera of Santorini is a result of the famous Minoan Eruption, about 3,600 years ago, and is considered one of the largest calderas in the Mediterranean. It's no wonder the area is internationally recognized as geological heritage.",
+            en: "The caldera of Santorini is a result of the famous Minoan Eruption, about 3,600 years ago, and is considered one of the largest calderas in the Mediterranean. It's no wonder the area is internationally recognized as a geological heritage site.",
             el: "Η καλντέρα της Σαντορίνης είναι αποτέλεσμα της περίφημης Μινωικής Έκρηξης, περίπου 3.600 χρόνια πριν, και θεωρείται από τις μεγαλύτερες καλντέρες της Μεσογείου. Δεν είναι τυχαίο ότι η περιοχή έχει αναγνωριστεί διεθνώς ως γεωλογική κληρονομιά.",
           },
         },
@@ -58,7 +58,7 @@ export const destinationSections: Record<string, DestinationSection[]> = {
           el: "Κρασί με υπογραφή ΠΟΠ και χαρακτήρα ηφαιστειακού εδάφους",
         },
         text: {
-          en: "Santorini holds a PDO (Protected Designation of Origin) for its wine, established in 1971. In the dry PDO wines, the legislation describes a minimum percentage of Assyrtiko. The 'kouloura' (basket) pruning is not just a tourist slogan — it's a real practice you'll see in the wineries.",
+          en: "Santorini holds a PDO (Protected Designation of Origin) for its wine, established in 1971. In the dry PDO wines, the legislation describes a minimum percentage of Assyrtiko. The 'kouloura' (basket) pruning is not just a tourist slogan — it's a real practice you'll see in the wineries.\n\nBrowse our [food & wine guides](/collections/greece-food-and-drink) for more on Santorini's gastronomy.",
           el: "Η Σαντορίνη έχει ΠΟΠ (PDO) για το κρασί της, που θεσπίστηκε το 1971. Στα \u201cστεγνά\u201d ΠΟΠ κρασιά, η νομοθεσία περιγράφει ελάχιστο ποσοστό Ασύρτικο (με δυνατότητα συμμετοχής Αηδάνι/Αθήρι). Και ναι: το κλάδεμα σε \u201cκουλούρα\u201d δεν είναι τουριστικό σλόγκαν — είναι πραγματική πρακτική που θα σου δείξουν στα οινοποιεία.",
         },
       },
@@ -153,8 +153,8 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       gallery: [
         {
           image: "/images/santorini-gallery-1.webp",
-          alt: { en: "Santorini, Santoryn, Grecja", el: "Σαντορίνη, Santoryn, Grecja" },
-          caption: { en: "Santorini, Santoryn, Grecja", el: "Σαντορίνη, Santoryn, Grecja" },
+          alt: { en: "Santorini, Greece", el: "Σαντορίνη, Ελλάδα" },
+          caption: { en: "Santorini, Greece", el: "Σαντορίνη, Ελλάδα" },
         },
       ],
     },
@@ -585,7 +585,7 @@ export const destinationSections: Record<string, DestinationSection[]> = {
         {
           title: { en: "Ano Mera: Mykonos unfiltered", el: "Άνω Μερά: η Μύκονος χωρίς φίλτρα" },
           text: {
-            en: "The classic inland trip featuring the monastery of Panagia Tourliani. Secret: Go to Ano Mera for lunch at the square when Chora is getting overly crowded.",
+            en: "The classic inland excursion to the monastery of Panagia Tourliani. Secret: Go to Ano Mera for lunch at the square when Chora is getting overly crowded.",
             el: "Είναι η κλασική εκδρομή “εκτός Χώρας” (εκεί βρίσκεται και η Παναγία Τουρλιανή). Μικρό μυστικό: Πήγαινε Άνω Μερά μεσημέρι για φαγητό στην πλατεία — όταν η Χώρα βράζει από κόσμο.",
           },
         },
@@ -787,17 +787,17 @@ export const destinationSections: Record<string, DestinationSection[]> = {
         },
         {
           title: {
-            en: "For gastronomy stepping on the authentic Mediterranean lifestyle",
+            en: "For gastronomy rooted in the authentic Mediterranean lifestyle",
             el: "Για γαστρονομία που πατάει πάνω στον αυθεντικό μεσογειακό τρόπο ζωής",
           },
           text: {
-            en: "Crete is one of the strongest 'living labs' of the UNESCO Intangible Cultural Heritage Mediterranean Diet: olive oil, wild greens, cheeses, honey, wine, and raki.",
+            en: "Crete is one of the strongest 'living labs' of the UNESCO Intangible Cultural Heritage Mediterranean Diet: olive oil, wild greens, cheeses, honey, wine, and raki.\n\nBrowse our [handpicked hotels in Crete](/hotels) and [food & wine guides](/collections/greece-food-and-drink).",
             el: "Η Κρήτη είναι από τα πιο δυνατά “ζωντανά εργαστήρια” της Μεσογειακής Διατροφής (UNESCO): ελαιόλαδο, χόρτα, τυριά, μέλι, παξιμάδι, κρασί και ρακί/τσικουδιά.",
           },
         },
         {
           title: {
-            en: "To make 'many trips in one'",
+            en: "To fit many trips into one",
             el: "Για να κάνεις «πολλά ταξίδια σε ένα»",
           },
           text: {
@@ -1428,7 +1428,7 @@ export const destinationSections: Record<string, DestinationSection[]> = {
     },
     {
       layout: "list",
-      title: { en: "Food & Drink in Lasithi", el: "Φαγητό & Ποτό στο Λασίθι" },
+      title: { en: "Food & Wine in Lasithi", el: "Φαγητό & Κρασί στο Λασίθι" },
       text: {
         en: "Eastern Cretan food is not a lesser version of the Cretan diet — it is a regional expression of it, with its own emphases. The olive oil from the Sitia zone is produced from the Koroneiki variety at high altitude and is among the most sought-after PDO oils in Europe. The local cheeses — particularly the aged graviera from mountain villages — are distinct from their western Cretan equivalents. The wine from the Sitia wine region, built on the Liatiko grape (one of Greece's oldest varieties), is barely distributed outside Crete.\n\n**Sitia Olive Oil** — PDO-protected, produced from Koroneiki olives at altitude. Peppery finish, green-gold colour. Buy it at the Toplou Monastery shop or direct from producers near Sitia.\n\n**Liatiko Wine** — An ancient red grape variety grown almost exclusively in the Sitia zone. Produces a medium-bodied, sometimes semi-sweet red with strong local character. Rarely found outside Crete.\n\n**Dakos** — The baseline of Cretan food: barley rusk, tomato, mizithra, olive oil, oregano. In Lasithi's village tavernas, the rusk is often harder and the mizithra sharper than in tourist-facing versions.\n\n**Octopus at Mochlos** — The village of Mochlos has two or three tavernas and a local fishing fleet. Octopus dried on the line outside the kitchen and then grilled is the canonical order.\n\n**Honey from the Dikti Mountains** — The thyme honey from the mountains surrounding the Lasithi Plateau is among the finest in Greece. Sold in village shops and at the Saturday market in Agios Nikolaos.\n\n**Staka** — Rendered sheep's milk butter — a Cretan cooking fat rarely seen on restaurant menus but used in traditional homes.\n\n**Raki (Tsikoudia)** — Arrives without being asked in traditional tavernas. In eastern Crete, raki is often served with a small sweet rather than mezedes.\n\nINSIDER TIP: The tavernas in Mochlos, Xerokampos, and the villages around Sitia set their prices without reference to what the tourism market will bear — because few tourists find them. A full meal with raki and dessert in one of these places costs less than a salad in Elounda.",
         el: "Η ανατολική κρητική κουζίνα είναι μια περιφερειακή έκφραση της κρητικής διατροφής με τις δικές της έμφασεις. Το ελαιόλαδο Σητείας ΠΟΠ είναι από τα πιο περιζήτητα στην Ευρώπη. Το κρασί από την οινοπαραγωγική ζώνη της Σητείας, χτισμένο πάνω στο σταφύλι Λιάτικο, σπάνια διανέμεται εκτός Κρήτης.\n\n**Ελαιόλαδο Σητείας** — ΠΟΠ, από ελιές Κορωνέικι σε υψόμετρο. Αγοράστε το στο μοναστήρι Τοπλού.\n\n**Κρασί Λιάτικο** — Αρχαία ποικιλία που παράγεται σχεδόν αποκλειστικά στη ζώνη της Σητείας.\n\n**Χταπόδι στο Μόχλο** — Το χταπόδι αποξηραίνεται στην πετονιά έξω από την κουζίνα και στη συνέχεια ψήνεται στα κάρβουνα.\n\n**Μέλι από τη Δίκτη** — Το θυμάρι μέλι από τα βουνά γύρω από το Οροπέδιο Λασιθίου είναι από τα καλύτερα στην Ελλάδα.\n\nΣΥΜΒΟΥΛΗ: Οι ταβέρνες στο Μόχλο, τον Ξερόκαμπο και τα χωριά γύρω από τη Σητεία κοστίζουν λιγότερο από μια σαλάτα στην Ελούντα."
@@ -4508,7 +4508,7 @@ export const destinationSections: Record<string, DestinationSection[]> = {
         },
         {
           title: { en: "Excellent local food scene", el: "Εξαιρετική τοπική γαστρονομία" },
-          text: { en: "Naxos is one of the best islands in Greece for food. The fertile soil produces outstanding local cheeses (graviera, arseniko, touloumotyri), the famous kitron liqueur, potatoes, olives, and high-quality meat. The tavernas in Naxos Town and the mountain villages serve honest, well-prepared dishes.", el: "Η Νάξος είναι από τα καλύτερα νησιά για φαγητό. Το εύφορο έδαφος παράγει εξαιρετικά τοπικά τυριά (γκραβιέρα, αρσενικό, τουλουμοτύρι), το περίφημο λικέρ κίτρο, πατάτες, ελιές και κρέας υψηλής ποιότητας. Οι ταβέρνες στη Χώρα και στα ορεινά χωριά σερβίρουν τίμια, καλομαγειρεμένα πιάτα." }
+          text: { en: "Naxos is one of the best islands in Greece for food. The fertile soil produces outstanding local cheeses (graviera, arseniko, touloumotyri), the famous kitron liqueur, potatoes, olives, and high-quality meat. The tavernas in Naxos Town and the mountain villages serve honest, well-prepared dishes.\n\nDiscover more in our [food & wine guides](/collections/greece-food-and-drink) and browse [hotels in Naxos](/hotels).", el: "Η Νάξος είναι από τα καλύτερα νησιά για φαγητό. Το εύφορο έδαφος παράγει εξαιρετικά τοπικά τυριά (γκραβιέρα, αρσενικό, τουλουμοτύρι), το περίφημο λικέρ κίτρο, πατάτες, ελιές και κρέας υψηλής ποιότητας. Οι ταβέρνες στη Χώρα και στα ορεινά χωριά σερβίρουν τίμια, καλομαγειρεμένα πιάτα." }
         },
         {
           title: { en: "Less crowded than its famous neighbours", el: "Λιγότερο πολυσύχναστη από τους διάσημους γείτονες" },
@@ -4583,7 +4583,7 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       ]
     },
     {
-      title: { en: "Local Food & Drink in Naxos", el: "Τοπικό φαγητό και ποτό στη Νάξο" },
+      title: { en: "Local Food & Wine in Naxos", el: "Τοπικό φαγητό και κρασί στη Νάξο" },
       text: {
         en: "Naxos is one of the best-eating islands in Greece. The fertile soil and strong agricultural tradition mean that many ingredients are produced locally, and the food culture is genuine rather than tourist-driven.",
         el: "Η Νάξος είναι από τα νησιά με το καλύτερο φαγητό στην Ελλάδα. Το εύφορο έδαφος και η ισχυρή αγροτική παράδοση σημαίνουν ότι πολλά υλικά παράγονται τοπικά, και η διατροφική κουλτούρα είναι γνήσια."
@@ -5242,7 +5242,7 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       ]
     },
     {
-      title: { en: "Local food & drink", el: "Τοπικό φαγητό & ποτό" },
+      title: { en: "Local food & wine", el: "Τοπικό φαγητό & ποτό" },
       layout: "list",
       alert: {
         en: "Secret: The smaller the taverna and the further from the main tourist strip, the more genuine the experience. Ask for whatever came in that morning rather than ordering from a fixed menu.",
@@ -5715,7 +5715,7 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       layout: "list",
       title: { en: "Food and Local Flavors", el: "Φαγητό & Τοπικές Γεύσεις" },
       text: {
-        en: "Rhodes offers one of the more varied food experiences among Greek islands, partly because it combines a major town, holiday zones, historic settings, and local traditions. Visitors can enjoy traditional Greek and island taverns, meals in historic surroundings, seaside dining, easy summer resort dining, and local flavors in more regional settings.\n\nThe island works well for travelers who want both comfort and character. Some meals are about location and atmosphere, especially in or around the old town. Others are simpler, more local, and more relaxed. That balance helps Rhodes feel broad rather than one-dimensional.\n\n[Explore our Greece food & drink guides for more local ideas](/collections/greece-food-and-drink).",
+        en: "Rhodes offers one of the more varied food experiences among Greek islands, partly because it combines a major town, holiday zones, historic settings, and local traditions. Visitors can enjoy traditional Greek and island taverns, meals in historic surroundings, seaside dining, easy summer resort dining, and local flavors in more regional settings.\n\nThe island works well for travelers who want both comfort and character. Some meals are about location and atmosphere, especially in or around the old town. Others are simpler, more local, and more relaxed. That balance helps Rhodes feel broad rather than one-dimensional.\n\n[Explore our Greece food & wine guides for more local ideas](/collections/greece-food-and-drink).",
         el: "Η Ρόδος προσφέρει μία από τις πιο ποικιλόμορφες γαστρονομικές εμπειρίες στα ελληνικά νησιά, εν μέρει επειδή συνδυάζει μια μεγάλη πόλη, ζώνες διακοπών, ιστορικά σκηνικά και τοπικές παραδόσεις. Οι επισκέπτες μπορούν να απολαύσουν παραδοσιακές ελληνικές και νησιώτικες ταβέρνες, γεύματα σε ιστορικό περιβάλλον, δείπνο δίπλα στη θάλασσα, εύκολο φαγητό σε καλοκαιρινά resorts και τοπικές γεύσεις σε πιο ορεινές και αγροτικές περιοχές.\n\nΤο νησί λειτουργεί τέλεια για ταξιδιώτες που θέλουν τόσο άνεση όσο και χαρακτήρα. Ορισμένα γεύματα έχουν να κάνουν με την τοποθεσία και την ατμόσφαιρα, ειδικά μέσα ή γύρω από την παλιά πόλη. Άλλα είναι πιο απλά, πιο τοπικά και πιο χαλαρά. Αυτή η ισορροπία βοηθά τη Ρόδο να έχει εύρος αντί να είναι μονοδιάστατη.\n\n[Εξερευνήστε τους οδηγούς φαγητού της Ελλάδας για περισσότερες ιδέες](/collections/greece-food-and-drink)."
       }
     },
@@ -5945,7 +5945,7 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       layout: "list",
       title: { en: "Food and Local Flavors", el: "Φαγητό & Τοπικές Γεύσεις" },
       text: {
-        en: "Food in Monemvasia is closely tied to atmosphere. It is the kind of destination where a meal often feels more memorable because of the setting around it: stone architecture, quiet alleys, sea air, and slower evenings.\n\nVisitors can expect traditional tavern-style meals, seafood and regional dishes, dinners in historic surroundings, relaxed wine-and-view evenings, and a more intimate dining feel than a fast-paced culinary scene.\n\nMonemvasia is not about endless restaurant variety. It is about a more focused and atmospheric food experience, where the destination itself becomes part of the meal.\n\n[Explore our Greece food & drink guides for more local ideas](/collections/greece-food-and-drink).",
+        en: "Food in Monemvasia is closely tied to atmosphere. It is the kind of destination where a meal often feels more memorable because of the setting around it: stone architecture, quiet alleys, sea air, and slower evenings.\n\nVisitors can expect traditional tavern-style meals, seafood and regional dishes, dinners in historic surroundings, relaxed wine-and-view evenings, and a more intimate dining feel than a fast-paced culinary scene.\n\nMonemvasia is not about endless restaurant variety. It is about a more focused and atmospheric food experience, where the destination itself becomes part of the meal.\n\n[Explore our Greece food & wine guides for more local ideas](/collections/greece-food-and-drink).",
         el: "Το φαγητό στη Μονεμβασιά είναι στενά συνδεδεμένο με την ατμόσφαιρα. Είναι το είδος του προορισμού όπου ένα γεύμα συχνά μένει αξέχαστο χάρη στο σκηνικό γύρω του: πέτρινη αρχιτεκτονική, ήσυχα σοκάκια, θαλασσινός αέρας και ήρεμα βράδια.\n\nΟι επισκέπτες μπορούν να περιμένουν παραδοσιακά γεύματα σε στυλ ταβέρνας, θαλασσινά και τοπικά πιάτα, δείπνα σε ιστορικό περιβάλλον, χαλαρές βραδιές με κρασί και θέα, καθώς και μια πιο ζεστή και οικεία αίσθηση εστίασης σε σύγκριση με τα πολύβουα γαστρονομικά κέντρα.\n\nΗ Μονεμβασιά δεν προσφέρει ατελείωτη ποικιλία εστιατορίων. Προσφέρει μια πιο εστιασμένη και ατμοσφαιρική εμπειρία φαγητού, όπου ο ίδιος ο προορισμός γίνεται κομμάτι του γεύματος.\n\n[Ανακαλύψτε τοπικές γεύσεις στους οδηγούς μας](/collections/greece-food-and-drink)."
       }
     },
@@ -6117,7 +6117,7 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       layout: "list",
       title: { en: "Food and Local Flavors", el: "Φαγητό & Τοπικές Γεύσεις" },
       text: {
-        en: "Food in Halkidiki is closely tied to the summer holiday experience. Many of the best moments here are simple: seafood by the sea, relaxed tavern meals after the beach, long summer lunches, dinners in coastal bases, and familiar Greek holiday flavors in easy, scenic settings.\n\nHalkidiki is not only about resort food. In the right places, the region can also offer more local and grounded meals that connect well with northern Greek traditions and the slower side of seaside travel. The destination works best when food is treated as part of the day's rhythm rather than only a practical stop between beach visits.\n\n[Explore our Greece food & drink guides for more local travel ideas](/collections/greece-food-and-drink).",
+        en: "Food in Halkidiki is closely tied to the summer holiday experience. Many of the best moments here are simple: seafood by the sea, relaxed tavern meals after the beach, long summer lunches, dinners in coastal bases, and familiar Greek holiday flavors in easy, scenic settings.\n\nHalkidiki is not only about resort food. In the right places, the region can also offer more local and grounded meals that connect well with northern Greek traditions and the slower side of seaside travel. The destination works best when food is treated as part of the day's rhythm rather than only a practical stop between beach visits.\n\n[Explore our Greece food & wine guides for more local travel ideas](/collections/greece-food-and-drink).",
         el: "Το φαγητό στη Χαλκιδική είναι στενά συνδεδεμένο με την εμπειρία των καλοκαιρινών διακοπών. Πολλές από τις καλύτερες στιγμές εδώ είναι απλές: θαλασσινά δίπλα στο κύμα, χαλαρά γεύματα σε ταβέρνες μετά το μπάνιο, μακρόσυρτα καλοκαιρινά μεσημεριανά, δείπνα στα χωριά και γνώριμες ελληνικές γεύσεις σε γραφικά σκηνικά.\n\nΗ Χαλκιδική δεν εξαντλείται στο φαγητό των resorts. Στα κατάλληλα σημεία, η περιοχή μπορεί να προσφέρει πιο τοπικά και αυθεντικά γεύματα, συνδεδεμένα με τις παραδόσεις της βόρειας Ελλάδας. Ο προορισμός λειτουργεί καλύτερα όταν το φαγητό αντιμετωπίζεται ως μέρος του ρυθμού της ημέρας, και όχι απλώς ως μια πρακτική στάση ενδιάμεσα στις παραλίες.\n\n[Ανακαλύψτε τοπικές γεύσεις στους οδηγούς μας](/collections/greece-food-and-drink)."
       }
     },
@@ -6289,7 +6289,7 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       layout: "list",
       title: { en: "Food and Local Flavors", el: "Φαγητό & Τοπικές Γεύσεις" },
       text: {
-        en: "Food in Meteora is less about big-city variety and more about grounding the trip in something simple and local after the scale of the landscape. Many visitors enjoy traditional Greek meals after sightseeing, relaxed tavern dinners, regional mainland flavors, quiet meals with mountain and rock views, and slower evenings after a day of walking and exploring.\n\nThis is not a destination where food overwhelms the experience. Instead, it supports it. A good meal in Meteora often feels like part of the calm that follows the visual intensity of the day.\n\n[Explore our Greece food & drink guides for more local travel ideas](/collections/greece-food-and-drink).",
+        en: "Food in Meteora is less about big-city variety and more about grounding the trip in something simple and local after the scale of the landscape. Many visitors enjoy traditional Greek meals after sightseeing, relaxed tavern dinners, regional mainland flavors, quiet meals with mountain and rock views, and slower evenings after a day of walking and exploring.\n\nThis is not a destination where food overwhelms the experience. Instead, it supports it. A good meal in Meteora often feels like part of the calm that follows the visual intensity of the day.\n\n[Explore our Greece food & wine guides for more local travel ideas](/collections/greece-food-and-drink).",
         el: "Το φαγητό στα Μετέωρα δεν αφορά την ποικιλία μιας μεγαλούπολης, αλλά προσφέρει μια απλή, τοπική προσγείωση μετά το δέος του τοπίου. Πολλοί επισκέπτες απολαμβάνουν παραδοσιακά ελληνικά γεύματα μετά τις περιηγήσεις, χαλαρά δείπνα σε ταβέρνες, γεύσεις της ηπειρωτικής ενδοχώρας, ήσυχα γεύματα με θέα τα βουνά και τους βράχους, και αργά βράδια μετά από μια μέρα περπατήματος και εξερεύνησης.\n\nΔεν πρόκειται για προορισμό όπου το φαγητό επισκιάζει την εμπειρία. Αντίθετα, την υποστηρίζει. Ένα καλό γεύμα στα Μετέωρα μοιάζει συχνά με μέρος της ηρεμίας που ακολουθεί την οπτική ένταση της ημέρας.\n\n[Ανακαλύψτε τοπικές γεύσεις στους οδηγούς μας](/collections/greece-food-and-drink)."
       }
     },
@@ -6471,7 +6471,7 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       layout: "list",
       title: { en: "Food and Local Flavors", el: "Φαγητό & Τοπικές Γεύσεις" },
       text: {
-        en: "Food in Parga is deeply tied to the destination's summer atmosphere. Many of the best moments here are simple: seafood and Greek dishes by the waterfront, evening dinners near the sea, casual lunches after the beach, relaxed tavern meals in a scenic setting, and easy holiday dining without needing much planning.\n\nParga is not a destination defined by high gastronomy. Its appeal lies more in setting, pace, and the pleasure of eating well in a beautiful place. It suits travelers who enjoy seaside dining, long summer evenings, and meals that feel naturally built into the day.\n\n[Explore our Greece food & drink guides for more local ideas](/collections/greece-food-and-drink).",
+        en: "Food in Parga is deeply tied to the destination's summer atmosphere. Many of the best moments here are simple: seafood and Greek dishes by the waterfront, evening dinners near the sea, casual lunches after the beach, relaxed tavern meals in a scenic setting, and easy holiday dining without needing much planning.\n\nParga is not a destination defined by high gastronomy. Its appeal lies more in setting, pace, and the pleasure of eating well in a beautiful place. It suits travelers who enjoy seaside dining, long summer evenings, and meals that feel naturally built into the day.\n\n[Explore our Greece food & wine guides for more local ideas](/collections/greece-food-and-drink).",
         el: "Το φαγητό στην Πάργα είναι άρρηκτα συνδεδεμένο με την καλοκαιρινή ατμόσφαιρα του προορισμού. Πολλές από τις καλύτερες στιγμές εδώ είναι απλές: θαλασσινά και ελληνικά πιάτα στην προκυμαία, βραδινά δείπνα κοντά στη θάλασσα, χαλαρά γεύματα μετά την παραλία, γεύματα σε γραφικές ταβέρνες και εύκολο φαγητό διακοπών χωρίς πολλή οργάνωση.\n\nΗ Πάργα δεν είναι ένας προορισμός που ορίζεται από την υψηλή γαστρονομία. Η γοητεία της βρίσκεται περισσότερο στο σκηνικό, τον ρυθμό και την απόλαυση του καλού φαγητού σε ένα όμορφο μέρος. Ταιριάζει σε ταξιδιώτες που απολαμβάνουν το φαγητό δίπλα στη θάλασσα, τα μεγάλα καλοκαιρινά βράδια και τα γεύματα που μοιάζουν φυσικά ενσωματωμένα στη μέρα.\n\n[Ανακαλύψτε τοπικές γεύσεις στους οδηγούς μας](/collections/greece-food-and-drink)."
       }
     },
@@ -6643,7 +6643,7 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       layout: "list",
       title: { en: "Food and Local Flavors", el: "Φαγητό & Τοπικές Γεύσεις" },
       text: {
-        en: "Food in Delphi is more about complementing the trip than defining it. Many visitors enjoy traditional Greek meals after visiting the site, quieter restaurant settings with mountain or valley views, simple tavern food that suits a slower mainland itinerary, and meals that feel grounded and regional rather than heavily touristic.\n\nDelphi is not a destination where food competes with the cultural experience. Instead, it supports it. A relaxed lunch or evening meal here often becomes part of the calm that follows a day of walking through history and landscape.\n\n[Explore our Greece food & drink guides for more ideas across the country](/collections/greece-food-and-drink).",
+        en: "Food in Delphi is more about complementing the trip than defining it. Many visitors enjoy traditional Greek meals after visiting the site, quieter restaurant settings with mountain or valley views, simple tavern food that suits a slower mainland itinerary, and meals that feel grounded and regional rather than heavily touristic.\n\nDelphi is not a destination where food competes with the cultural experience. Instead, it supports it. A relaxed lunch or evening meal here often becomes part of the calm that follows a day of walking through history and landscape.\n\n[Explore our Greece food & wine guides for more ideas across the country](/collections/greece-food-and-drink).",
         el: "Το φαγητό στους Δελφούς αφορά περισσότερο τη συμπλήρωση του ταξιδιού παρά τον καθορισμό του. Πολλοί επισκέπτες απολαμβάνουν παραδοσιακά ελληνικά γεύματα μετά την επίσκεψη στον χώρο, πιο ήσυχα εστιατόρια με θέα στο βουνό ή την κοιλάδα, απλό φαγητό ταβέρνας που ταιριάζει σε ένα πιο αργό ηπειρωτικό δρομολόγιο, και γεύματα που μοιάζουν γειωμένα και τοπικά, αντί για βαριά τουριστικά.\n\nΟι Δελφοί δεν είναι ένας προορισμός όπου το φαγητό ανταγωνίζεται την πολιτιστική εμπειρία. Αντίθετα, την υποστηρίζει. Ένα χαλαρό μεσημεριανό ή βραδινό γεύμα εδώ γίνεται συχνά μέρος της ηρεμίας που ακολουθεί μια μέρα περιπάτου μέσα από την ιστορία και το τοπίο.\n\n[Ανακαλύψτε τοπικές γεύσεις στους οδηγούς μας](/collections/greece-food-and-drink)."
       }
     },
@@ -8656,7 +8656,7 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       ]
     },
     {
-      title: { en: "Local Food & Drink on Skopelos", el: "Τοπικό Φαγητό & Ποτό στη Σκόπελο" },
+      title: { en: "Local Food & Wine on Skopelos", el: "Τοπικό Φαγητό & Κρασί στη Σκόπελο" },
       layout: "list",
       items: [
         { title: { en: "Skopelos Plum (Damaskino)", el: "Δαμάσκηνο Σκοπέλου" }, text: { en: "The island's signature product — a small, intensely flavoured local plum variety. Eaten fresh in season, dried for winter, or transformed into jams, spoon sweets, tarts, and distilled into plum tsipouro (a local pomace brandy). You'll see plum products everywhere, and they make excellent gifts.", el: "Το σήμα κατατεθέν του νησιού — μικρό, έντονα αρωματικό δαμάσκηνο. Φρέσκο την εποχή του, αποξηραμένο ή σε μαρμελάδες, τάρτες, γλυκό κουταλιού, και τσίπουρο. Τα προϊόντα δαμάσκηνου είναι παντού και κάνουν εξαιρετικά δώρα." } },
@@ -11170,7 +11170,7 @@ export const destinationSections: Record<string, DestinationSection[]> = {
     },
     {
       layout: "grid",
-      title: { en: "Food & Drink in Kalymnos", el: "Φαγητό & Ποτό στην Κάλυμνο" },
+      title: { en: "Food & Wine in Kalymnos", el: "Φαγητό & Κρασί στην Κάλυμνο" },
       items: [
         {
           title: { en: "Octopus — the island's defining dish", el: "Χταπόδι — το πιάτο-σήμα του νησιού" },
@@ -11928,7 +11928,7 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       ]
     },
     {
-      title: { en: "Local food & drink", el: "Τοπικό φαγητό & ποτό" },
+      title: { en: "Local food & wine", el: "Τοπικό φαγητό & ποτό" },
       layout: "grid",
       items: [
         {
@@ -12253,7 +12253,7 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       ]
     },
     {
-      title: { en: "Local food & drink", el: "Τοπικό φαγητό & ποτό" },
+      title: { en: "Local food & wine", el: "Τοπικό φαγητό & ποτό" },
       layout: "list",
       alert: {
         en: "The Saitan Pazar ouzeries typically do not open for dinner until 20:00 and are at their best between 21:00 and 23:00 — the rhythm of Greek provincial town life, entirely different from Cycladic tourist-resort timing.",
@@ -12701,7 +12701,7 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       ]
     },
     {
-      title: { en: "Local food & drink", el: "Τοπικό φαγητό & ποτό" },
+      title: { en: "Local food & wine", el: "Τοπικό φαγητό & ποτό" },
       layout: "grid",
       items: [
         {

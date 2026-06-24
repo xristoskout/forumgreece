@@ -47,6 +47,15 @@ export const categories: Category[] = [
     href: "/collections/greece-food-and-drink",
   },
   {
+    title: { en: "Blog", el: "Blog" },
+    description: {
+      en: "Travel guides, tips and stories from Greece — written by locals.",
+      el: "Ταξιδιωτικοί οδηγοί, συμβουλές και ιστορίες από την Ελλάδα.",
+    },
+    emoji: "📝",
+    href: "/blog",
+  },
+  {
     title: { en: "Compare", el: "Σύγκρισε" },
     description: {
       en: "Find your perfect match in seconds.",

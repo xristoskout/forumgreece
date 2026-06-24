@@ -23,13 +23,13 @@ function withLang(path: string, lang: Lang) {
 
 const seo = {
   en: {
-    title: "Eat & Drink in Greece: Food Guides, Local Taverns & Regional Dishes",
+    title: "Food & Wine in Greece: Food Guides, Local Taverns & Regional Dishes",
     description:
       "Explore Greek food guides, regional dishes and local drinks to add more flavor to your Greece trip planning.",
     path: "/en/eat-drink",
   },
   el: {
-    title: "Φαγητό & Ποτό στην Ελλάδα: Γαστρονομικοί Οδηγοί, Τοπικές Ταβέρνες & Περιφερειακά Πιάτα",
+    title: "Φαγητό & Κρασί στην Ελλάδα: Γαστρονομικοί Οδηγοί, Τοπικές Ταβέρνες & Περιφερειακά Πιάτα",
     description:
       "Ανακάλυψε οδηγούς ελληνικής γαστρονομίας, τοπικά πιάτα και ποτά για να δώσεις περισσότερο χαρακτήρα στο ταξίδι σου στην Ελλάδα.",
     path: "/el/eat-drink",
@@ -68,7 +68,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           url: "/images/hero-greece.webp",
           width: 1600,
           height: 900,
-          alt: "Greek food and drink hub",
+          alt: "Greek food and wine hub",
         },
       ],
     },
@@ -98,7 +98,7 @@ export default async function EatDrinkPage({ params }: Props) {
       <section className="border-b border-slate-200 bg-white backdrop-blur-md">
         <div className="mx-auto max-w-7xl px-6 py-14">
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-orange-700">
-            {lang === "en" ? "Greek Food & Drink Hub" : "Hub Ελληνικής Γαστρονομίας & Ποτού"}
+            {lang === "en" ? "Greek Food & Wine Hub" : "Hub Ελληνικής Γαστρονομίας & Ποτού"}
           </p>
 
           <h1 className="mt-3 max-w-4xl text-4xl font-bold tracking-tight text-slate-900 md:text-5xl">
@@ -109,8 +109,8 @@ export default async function EatDrinkPage({ params }: Props) {
 
           <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-500">
             {lang === "en"
-              ? "Use this hub to discover Greek food and drink ideas that can shape the feel of a trip, from regional specialties to destination-based food inspiration."
-              : "Χρησιμοποίησε αυτό το hub για να ανακαλύψεις ιδέες γύρω από το ελληνικό φαγητό και ποτό που μπορούν να αλλάξουν την αίσθηση ενός ταξιδιού, από τοπικές σπεσιαλιτέ μέχρι γαστρονομική έμπνευση ανά προορισμό."}
+              ? "Use this hub to discover Greek food and wine ideas that can shape the feel of a trip, from regional specialties to destination-based food inspiration."
+              : "Χρησιμοποίησε αυτό το hub για να ανακαλύψεις ιδέες γύρω από το ελληνικό φαγητό και κρασί που μπορούν να αλλάξουν την αίσθηση ενός ταξιδιού, από τοπικές σπεσιαλιτέ μέχρι γαστρονομική έμπνευση ανά προορισμό."}
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
@@ -138,7 +138,7 @@ export default async function EatDrinkPage({ params }: Props) {
               {lang === "en" ? "Featured Food Guides" : "Προτεινόμενοι Γαστρονομικοί Οδηγοί"}
             </p>
             <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900">
-              {lang === "en" ? "Browse local food and drink pages" : "Δες σελίδες για τοπικό φαγητό και ποτό"}
+              {lang === "en" ? "Browse local food and wine pages" : "Δες σελίδες για τοπικό φαγητό και κρασί"}
             </h2>
           </div>
 

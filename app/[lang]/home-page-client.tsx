@@ -365,12 +365,74 @@ export default function HomePageClient({
 
       <section className="relative z-10 -mt-6 pb-4">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="max-w-3xl mx-auto text-center border border-slate-200 bg-white/80 backdrop-blur-md rounded-2xl p-8 md:p-10 shadow-sm">
-            <p className="text-base md:text-lg leading-relaxed text-slate-700">
-              {lang === "en"
-                ? "GoGreeceNow is your comprehensive Greece travel planner — from the sun-drenched Greek islands to historic mainland cities. Whether you are dreaming of Santorini sunsets, island hopping in the Cyclades, or exploring ancient Athens, our destination guides, hotel recommendations, tours, and food guides help you plan every detail of your trip with confidence."
-                : "Το GoGreeceNow είναι ο πλήρης οδηγός σου για την Ελλάδα — από τα ηλιόλουστα ελληνικά νησιά μέχρι τις ιστορικές πόλεις της ηπειρωτικής χώρας. Είτε ονειρεύεσαι ηλιοβασιλέματα στη Σαντορίνη, island hopping στις Κυκλάδες, είτε εξερεύνηση της αρχαίας Αθήνας, οι οδηγοί προορισμών, οι προτάσεις διαμονής, οι εκδρομές και οι γαστρονομικοί οδηγοί μας σε βοηθούν να οργανώσεις κάθε λεπτομέρεια του ταξιδιού σου."}
+          <div className="border border-slate-200 bg-white/80 backdrop-blur-md rounded-2xl p-8 md:p-10 shadow-sm">
+            <div className="mb-8 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+              <div>
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700">
+                  {copy.howItWorksEyebrow}
+                </p>
+                <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900">
+                  {copy.howItWorksTitle}
+                </h2>
+              </div>
+              <p className="max-w-3xl text-sm leading-6 text-slate-500">
+                {copy.howItWorksText}
+              </p>
+            </div>
+            <div className="grid gap-8 md:grid-cols-3">
+              <div className="flex flex-col items-center text-center p-6">
+                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-indigo-100 text-indigo-700 font-bold text-xl mb-4">1</div>
+                <h3 className="text-lg font-bold text-slate-900 mb-2">{copy.howItWorksStep1Title}</h3>
+                <p className="text-sm text-slate-500 leading-relaxed">{copy.howItWorksStep1Text}</p>
+              </div>
+              <div className="flex flex-col items-center text-center p-6">
+                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-indigo-100 text-indigo-700 font-bold text-xl mb-4">2</div>
+                <h3 className="text-lg font-bold text-slate-900 mb-2">{copy.howItWorksStep2Title}</h3>
+                <p className="text-sm text-slate-500 leading-relaxed">{copy.howItWorksStep2Text}</p>
+              </div>
+              <div className="flex flex-col items-center text-center p-6">
+                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-indigo-100 text-indigo-700 font-bold text-xl mb-4">3</div>
+                <h3 className="text-lg font-bold text-slate-900 mb-2">{copy.howItWorksStep3Title}</h3>
+                <p className="text-sm text-slate-500 leading-relaxed">{copy.howItWorksStep3Text}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="mb-8 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-700">
+                {copy.travelStylesEyebrow}
+              </p>
+              <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900">
+                {copy.travelStylesTitle}
+              </h2>
+            </div>
+            <p className="max-w-3xl text-sm leading-6 text-slate-500">
+              {copy.travelStylesText}
             </p>
+          </div>
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {[
+              { title: lang === "en" ? "Honeymoon & Couples" : "Μήνας του Μέλιτος & Ζευγάρια", desc: lang === "en" ? "Romantic escapes, sunset dinners, and luxury hotels designed for two." : "Ρομαντικές αποδράσεις, δείπνα στο ηλιοβασίλεμα και πολυτελή ξενοδοχεία για δύο.", href: "/blog/best-greek-islands-for-honeymoon", emoji: "💑" },
+              { title: lang === "en" ? "Family Holidays" : "Οικογενειακές Διακοπές", desc: lang === "en" ? "Kid-friendly beaches, easy resorts, and activities the whole family will love." : "Παραλίες φιλικές για παιδιά, εύκολα resorts και δραστηριότητες για όλη την οικογένεια.", href: "/travel-info", emoji: "👨‍👩‍👧‍👦" },
+              { title: lang === "en" ? "Luxury Escapes" : "Πολυτελείς Αποδράσεις", desc: lang === "en" ? "VIP experiences, private villas, and exclusive access across Greece." : "VIP εμπειρίες, private villas και αποκλειστική πρόσβαση σε όλη την Ελλάδα.", href: "/hotels", emoji: "✨" },
+              { title: lang === "en" ? "Island Hopping" : "Island Hopping", desc: lang === "en" ? "Multi-destination itineraries connecting the best Greek islands by ferry." : "Πολυνησιακά δρομολόγια που συνδέουν τα καλύτερα ελληνικά νησιά με πλοίο.", href: "/collections/greek-islands", emoji: "⛴️" },
+              { title: lang === "en" ? "Food & Wine" : "Φαγητό & Κρασί", desc: lang === "en" ? "Culinary journeys through Greece's regional cuisines, wines, and tavernas." : "Γαστρονομικά ταξίδια μέσα από τις regional κουζίνες, τα κρασιά και τις ταβέρνες της Ελλάδας.", href: "/collections/greece-food-and-drink", emoji: "🍷" },
+              { title: lang === "en" ? "Adventure & Sailing" : "Περιπέτεια & Ιστιοπλοΐα", desc: lang === "en" ? "Hiking gorges, sailing the Aegean, and off-the-beaten-path exploration." : "Πεζοπορία σε φαράγγια, ιστιοπλοΐα στο Αιγαίο και εξερεύνηση εκτός των τουριστικών μονοπατιών.", href: "/tours/all", emoji: "⛰️" },
+            ].map((style) => (
+              <Link key={style.href} href={withLang(style.href)} className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-6 transition-all hover:shadow-lg hover:border-indigo-200">
+                <div className="text-3xl mb-3">{style.emoji}</div>
+                <h3 className="text-lg font-bold text-slate-900 group-hover:text-indigo-700 transition-colors">{style.title}</h3>
+                <p className="mt-2 text-sm text-slate-500 leading-relaxed">{style.desc}</p>
+                <div className="mt-4 text-sm font-semibold text-indigo-600 group-hover:translate-x-1 transition-transform">
+                  {lang === "en" ? "Explore →" : "Εξερεύνησε →"}
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
@@ -1039,7 +1101,7 @@ export default function HomePageClient({
 
                   <div className="absolute inset-x-0 top-0 flex items-center justify-between p-4">
                     <span className="rounded-md bg-orange-500 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-slate-900 shadow-sm">
-                      {lang === "en" ? "Food & Drink" : "Φαγητό & Ποτό"}
+                      {lang === "en" ? "Food & Wine" : "Φαγητό & Κρασί"}
                     </span>
                     <span className="rounded-md bg-white/90 px-3 py-1 text-xs font-semibold text-orange-800 backdrop-blur">
                       {item.place}
@@ -1099,14 +1161,14 @@ export default function HomePageClient({
             <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 80% 50%, rgba(255,255,255,0.4) 0%, transparent 60%)' }} />
             <div className="relative flex-1 text-left">
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-amber-200 mb-2">
-                {lang === "en" ? "Full Directory — Eat & Drink" : "Πλήρης Κατάλογος — Φαγητό & Ποτό"}
+                {lang === "en" ? "Full Directory — Food & Wine" : "Πλήρης Κατάλογος — Φαγητό & Κρασί"}
               </p>
               <p className="text-2xl md:text-3xl font-extrabold text-white mb-3 tracking-tight">
-                {lang === "en" ? "Explore all food & drink guides" : "Εξερεύνησε όλους τους γαστρονομικούς οδηγούς"}
+                {lang === "en" ? "Explore all food & wine guides" : "Εξερεύνησε όλους τους γαστρονομικούς οδηγούς"}
               </p>
               <p className="text-amber-200/80 text-sm leading-relaxed max-w-xl">
                 {lang === "en"
-                  ? "From Athens street food to Santorini sunset cocktails, regional wines to seafood by the harbor — discover every food and drink guide across Greece in one place."
+                  ? "From Athens street food to Santorini sunset cocktails, regional wines to seafood by the harbor — discover every food and wine guide across Greece in one place."
                   : "Από το street food της Αθήνας μέχρι τα κοκτέιλ ηλιοβασιλέματος στη Σαντορίνη — ανακάλυψε όλους τους γαστρονομικούς οδηγούς σε ένα μέρος."}
               </p>
             </div>
@@ -1115,7 +1177,7 @@ export default function HomePageClient({
                 href={withLang("/collections/greece-food-and-drink")}
                 className="group inline-flex items-center gap-3 rounded-2xl bg-white px-7 py-4 text-base font-bold text-orange-700 shadow-lg transition-all hover:bg-orange-50 hover:scale-105"
               >
-                🍷 {lang === "en" ? "Browse all food & drink guides" : "Δες όλους τους γαστρονομικούς οδηγούς"}
+                🍷 {lang === "en" ? "Browse all food & wine guides" : "Δες όλους τους γαστρονομικούς οδηγούς"}
                 <span className="transition-transform group-hover:translate-x-1">→</span>
               </Link>
             </div>

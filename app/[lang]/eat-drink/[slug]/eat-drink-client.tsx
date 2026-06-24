@@ -46,11 +46,11 @@ export default function EatDrinkClient({ item, lang, businesses }: EatDrinkClien
       el: "Αρχική",
     },
     navSection: {
-      en: "Eat & Drink",
-      el: "Φαγητό & Ποτό",
+      en: "Food & Wine",
+      el: "Φαγητό & Κρασί",
     },
     eyebrow: {
-      en: "Food & Drink Guide",
+      en: "Food & Wine Guide",
       el: "Οδηγός Φαγητού & Ποτού",
     },
     overview: {

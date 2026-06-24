@@ -866,7 +866,7 @@ Pro tip: Look for tavernas displaying a sign saying "Ποιότητα" (Quality)
     image: "/images/food-crete.webp",
     author: "GoGreeceNow Travel Team",
     publishedDate: "2026-05-18",
-    category: { en: "Food & Drink", el: "Φαγητό & Ποτό" },
+    category: { en: "Food & Wine", el: "Φαγητό & Κρασί" },
     tags: ["greek-food", "traditional", "moussaka", "souvlaki", "dining", "taverna"],
     featured: true,
     relatedDestinations: [
@@ -1051,6 +1051,184 @@ Try it for your next trip. You might be surprised how much time it saves — and
     seo: {
       title: { en: "AI Trip Planner for Greece | GoGreeceNow", el: "AI Σχεδιαστής Ταξιδιού για Ελλάδα | GoGreeceNow" },
       description: { en: "Plan your perfect Greece itinerary in minutes with GoGreeceNow's AI Trip Planner. Personalised day-by-day plans based on your interests, budget, and travel style. Free and easy to use.", el: "Σχεδίασε το τέλειο πρόγραμμα για την Ελλάδα σε λεπτά με τον AI Σχεδιαστή του GoGreeceNow. Εξατομικευμένες ημερήσιες προτάσεις βάσει των ενδιαφερόντων, του προϋπολογισμού και του ταξιδιωτικού σου στυλ. Δωρεάν και εύκολο στη χρήση." },
+    },
+  },
+  {
+    slug: "best-greek-islands-for-honeymoon",
+    title: {
+      en: "Best Greek Islands for Honeymoon: Where to Go & Where to Stay in 2026",
+      el: "Καλύτερα Ελληνικά Νησιά για Μήνα του Μέλιτος: Πού να Πάτε & Πού να Μείνετε το 2026",
+    },
+    excerpt: {
+      en: "Planning a honeymoon in Greece? From Santorini's caldera suites to Milos' secluded coves, discover the five best Greek islands for an unforgettable honeymoon — with honest pros, cons, and hotel recommendations.",
+      el: "Σχεδιάζετε μήνα του μέλιτος στην Ελλάδα; Από τις σουίτες της καλδέρας στη Σαντορίνη μέχρι τους απομονωμένους όρμους της Μήλου, ανακαλύψτε τα πέντε καλύτερα ελληνικά νησιά για έναν αξέχαστο μήνα του μέλιτος — με ειλικρινή πλεονεκτήματα, μειονεκτήματα και προτάσεις ξενοδοχείων.",
+    },
+    body: {
+      en: `A honeymoon in Greece is one of those rare travel experiences that genuinely lives up to the expectation. The light, the sea, the food, the sense that you have landed somewhere that exists specifically for pleasure — it is a country built for romance, and the islands are its finest expression.
+
+But not all Greek islands are equal when it comes to a honeymoon. Some are too crowded. Some are too remote. Some are brilliant for a week-long trip but disappointing for a longer stay. After researching dozens of islands across the Cyclades, Ionian, Dodecanese, and Crete, these five stand out for different reasons — and the right choice depends entirely on what kind of honeymoon you are looking for.
+
+## 1. Santorini — The Iconic Choice
+
+**Best for:** Unforgettable caldera views, luxury infinity pools, world-class dining, sunset romance.
+
+**Best season to visit:** May–June or September–October. July–August is crowded and expensive. The caldera villages lose much of their magic when you are sharing them with 8,000 cruise passengers.
+
+**Flight convenience:** Direct flights from most UK airports (3.5 hours) and seasonal direct flights from US East Coast. Athens connection is 45 minutes.
+
+**Pros:** There is no view in Greece quite like the Santorini caldera from a cave hotel in Oia or Imerovigli. The island's volcanic wine is exceptional, the food scene is the most refined in the Cyclades, and the sunsets genuinely live up to the photographs. The caldera-facing hotels are designed for romance — private plunge pools, sunset-facing terraces, whitewashed minimalism.
+
+**Cons:** Santorini is expensive — expect to pay £250-600+ per night for a caldera-view room. The island is overcrowded in peak season. Swimming beaches are limited and require a drive from the caldera villages. It is not a "resting" honeymoon — you will want to explore.
+
+**Where to stay:** The caldera villages of [Oia, Imerovigli, and Fira](/hotels/santorini) offer the iconic honeymoon experience. Choose Imerovigli if you want the best caldera views with more quiet. Oia if you want the classic postcard setting. Kamari or Perissa on the east coast if you prefer beach access and lower prices.
+
+---
+
+## 2. Milos — The Secluded Romance Choice
+
+**Best for:** Private beach coves, dramatic coastline, relaxed pace, unique accommodation.
+
+**Best season to visit:** June or September. July–August is busy but Milos handles crowds better than Santorini. May and October can be windy.
+
+**Flight convenience:** Direct flights from Athens (40 minutes). Seasonal direct flights from UK airports. Also reachable by ferry from Athens (3-5 hours).
+
+**Pros:** Milos has the most beautiful coastline in the Cyclades — over 70 beaches, many accessible only by boat or foot, giving you a sense of discovery. The volcanic rock formations, sea caves, and turquoise water create landscapes that feel private. The food scene is excellent and the pace is genuinely relaxed. Boat tours to Kleftiko (sea caves) and Sykia (collapsed sea cave) are romantic and unforgettable.
+
+**Cons:** Fewer luxury hotels than Santorini. The island is spread out — you will need a rental car or ATV. Many beaches have no facilities. Nightlife is minimal.
+
+**Where to stay:** Our [Milos hotels guide](/hotels/milos) covers the best areas — from the lively harbour of Adamas to the charming fishing village of Pollonia and the quiet cliffs of Paliochori. For a honeymoon, Pollonia offers the best balance of charm, dining, and access to the east coast beaches.
+
+---
+
+## 3. Crete — The Adventure Choice
+
+**Best for:** Couples who want variety — history, hiking, gastronomy, and beaches all in one island.
+
+**Best season to visit:** May–June or September–October. Crete is large enough that crowds spread out, but July–August in Chania and Elounda is peak.
+
+**Flight convenience:** Direct flights from most UK airports (3.5–4 hours) and seasonal direct flights from US cities. Two airports — Heraklion (HER) and Chania (CHQ).
+
+**Pros:** Crete has everything — from the Minoan ruins of Knossos to the Samaria Gorge to pink-sand beaches at Elafonisi. The food is the best in Greece (Cretan diet, UNESCO-recognised). The island is large enough that you can spend two weeks without repeating a single experience. Excellent luxury hotels in Elounda and Chania. The hospitality is genuine and warm.
+
+**Cons:** Crete is not a classic "honeymoon island" in the way Santorini is — it feels more like a real place with working farms, cities, and industry. Some areas (Hersonissos, Malia) are party strips. You need a car to explore properly.
+
+**Where to stay:** For a honeymoon, base yourself in two locations: [Chania](/hotels/chania) (old Venetian harbour, boutique hotels, mountain villages) and Elounda or Agios Nikolaos (luxury resorts, Spinalonga views). Our [Crete hotels guide](/hotels/crete) breaks down every area.
+
+---
+
+## 4. Naxos — The Authentic Choice
+
+**Best for:** Couples who want beautiful beaches, excellent food, and genuine island life without the premium price tag.
+
+**Best season to visit:** June or September. Naxos is large enough to absorb crowds well, but August is busy on the most popular beaches.
+
+**Flight convenience:** Direct seasonal flights from UK airports. Ferry from Athens (3-5 hours) or Santorini (2 hours).
+
+**Pros:** Naxos has the best beaches in the Cyclades — a continuous 20km stretch of golden sand on the west coast. The food scene is outstanding and significantly cheaper than Santorini or Mykonos. The old town (Kastro) is one of the most atmospheric in Greece. The mountain villages — Halki, Filoti, Apiranthos — are perfect for day trips. The island feels real and unpretentious.
+
+**Cons:** Fewer ultra-luxury hotels compared to Santorini. The port can be busy with ferry traffic. Nightlife is low-key beyond Naxos Town. The best beaches require a car or ATV.
+
+**Where to stay:** Our [Naxos hotels guide](/hotels/naxos) covers the best bases — Naxos Town (for atmosphere and dining), Agios Prokopios (for beach access), and Plaka (for quiet and space).
+
+---
+
+## 5. Rhodes — The All-Rounder Choice
+
+**Best for:** A mix of medieval history, beach resorts, and island exploration with excellent infrastructure.
+
+**Best season to visit:** May–June or September. Rhodes is popular with package holidays, so July–August in the east coast resorts is very busy.
+
+**Flight convenience:** Direct flights from most UK airports (3.5–4 hours). Seasonal direct flights from US and European cities. Rhodes airport (RHO) is well-connected.
+
+**Pros:** Rhodes combines a UNESCO World Heritage medieval old town with excellent beaches, mountain villages and an interior that most visitors never see. The east coast has organised beach resorts with good hotels. The west coast is wilder and less developed. Lindos acropolis is one of the most dramatic archaeological sites in Greece. Excellent for couples who want both culture and beach time.
+
+**Cons:** The east coast between Faliraki and Lindos is heavily developed with package hotels. Some areas lack authentic character. The island is large — you need a car to reach the best spots. Not as romantic as Santorini or Milos for a pure honeymoon feel.
+
+**Where to stay:** The [Rhodes hotels guide](/hotels/rhodes) covers every option — from the medieval Old Town (boutique hotels in historic buildings) to Lindos (white village with acropolis views) to the east coast resorts (all-inclusive convenience).
+
+---
+
+## Which Island Is Right for You?
+
+| You want... | Choose |
+|---|---|
+| Iconic views, luxury, sunset romance | Santorini |
+| Secluded beaches, relaxed pace, discovery | Milos |
+| Variety, food, adventure, two weeks+ | Crete |
+| Beautiful beaches, authenticity, value | Naxos |
+| History, beach resorts, all-in-one | Rhodes |
+
+---
+
+**Ready to plan your honeymoon in Greece?**
+
+We can help you choose the right island, match you with the perfect hotel, and build a day-by-day itinerary based on your style and budget. No generic packages — just honest recommendations from people who know Greece.
+
+[Start planning your honeymoon →](/trip-planner)`,
+      el: `Ένας μήνας του μέλιτος στην Ελλάδα είναι μια από αυτές τις σπάνιες ταξιδιωτικές εμπειρίες που πραγματικά ανταποκρίνονται στις προσδοκίες. Το φως, η θάλασσα, το φαγητό, η αίσθηση ότι βρίσκεσαι σε ένα μέρος φτιαγμένο ειδικά για απόλαυση — είναι μια χώρα χτισμένη για ρομαντισμό, και τα νησιά είναι η καλύτερη έκφρασή της.
+
+Αλλά δεν είναι όλα τα ελληνικά νησιά ίδια όταν πρόκειται για μήνα του μέλιτος. Κάποια έχουν πολύ κόσμο. Κάποια είναι πολύ απομακρυσμένα. Κάποια είναι εξαιρετικά για μια εβδομάδα αλλά απογοητευτικά για μεγαλύτερη διαμονή. Μετά από έρευνα σε δεκάδες νησιά, αυτά τα πέντε ξεχωρίζουν — και η σωστή επιλογή εξαρτάται από το είδος του μήνα του μέλιτος που ονειρεύεστε.
+
+## 1. Σαντορίνη — Η Εμβληματική Επιλογή
+
+**Καλύτερη για:** Αξέχαστη θέα καλδέρας, πολυτελείς πισίνες απείρου, παγκόσμιας κλάσης εστιατόρια, ρομαντικά ηλιοβασιλέματα.
+
+**Πού να μείνετε:** Τα χωριά της καλδέρας — [Οία, Ημεροβίγλι, Φηρά](/hotels/santorini) — προσφέρουν την εμβληματική εμπειρία.
+
+## 2. Μήλος — Η Απομονωμένη Ρομαντική Επιλογή
+
+**Καλύτερη για:** Ιδιωτικές παραλίες, δραματική ακτογραμμή, χαλαρούς ρυθμούς.
+
+**Πού να μείνετε:** Ο [οδηγός ξενοδοχείων Μήλου](/hotels/milos) καλύπτει τις καλύτερες περιοχές.
+
+## 3. Κρήτη — Η Περιπετειώδης Επιλογή
+
+**Καλύτερη για:** Ζευγάρια που θέλουν ποικιλία — ιστορία, πεζοπορία, γαστρονομία, παραλίες.
+
+**Πού να μείνετε:** [Χανιά](/hotels/chania) για μπουτίκ ξενοδοχεία και Ελούντα για πολυτελή resorts. Δείτε τον [οδηγό Κρήτης](/hotels/crete).
+
+## 4. Νάξος — Η Αυθεντική Επιλογή
+
+**Καλύτερη για:** Όμορφες παραλίες, εξαιρετικό φαγητό, αυθεντική νησιώτικη ζωή.
+
+**Πού να μείνετε:** Δείτε τον [οδηγό ξενοδοχείων Νάξου](/hotels/naxos).
+
+## 5. Ρόδος — Η Πολυδιάστατη Επιλογή
+
+**Καλύτερη για:** Μεσαιωνική ιστορία, οργανωμένες παραλίες, εξερεύνηση.
+
+**Πού να μείνετε:** Δείτε τον [οδηγό ξενοδοχείων Ρόδου](/hotels/rhodes).
+
+---
+
+**Έτοιμοι να σχεδιάσετε τον μήνα του μέλιτος στην Ελλάδα;**
+
+[Ξεκινήστε τον σχεδιασμό →](/trip-planner)`,
+    },
+    image: "/images/honeymoon-in-greece.webp",
+    author: "GoGreeceNow Travel Team",
+    publishedDate: "2026-06-24",
+    category: { en: "Destination Guides", el: "Οδηγοί Προορισμών" },
+    tags: ["honeymoon", "greek-islands", "santorini", "milos", "crete", "naxos", "rhodes", "romantic-getaways", "travel-tips"],
+    featured: true,
+    relatedDestinations: [
+      { slug: "santorini", label: { en: "Santorini Guide", el: "Οδηγός Σαντορίνης" } },
+      { slug: "milos", label: { en: "Milos Guide", el: "Οδηγός Μήλου" } },
+      { slug: "crete", label: { en: "Crete Guide", el: "Οδηγός Κρήτης" } },
+      { slug: "naxos", label: { en: "Naxos Guide", el: "Οδηγός Νάξου" } },
+      { slug: "rhodes", label: { en: "Rhodes Guide", el: "Οδηγός Ρόδου" } },
+    ],
+    relatedHotels: [
+      { slug: "santorini", label: { en: "Hotels in Santorini", el: "Ξενοδοχεία Σαντορίνης" } },
+      { slug: "milos", label: { en: "Hotels in Milos", el: "Ξενοδοχεία Μήλου" } },
+      { slug: "crete", label: { en: "Hotels in Crete", el: "Ξενοδοχεία Κρήτης" } },
+      { slug: "chania", label: { en: "Hotels in Chania", el: "Ξενοδοχεία Χανίων" } },
+      { slug: "naxos", label: { en: "Hotels in Naxos", el: "Ξενοδοχεία Νάξου" } },
+      { slug: "rhodes", label: { en: "Hotels in Rhodes", el: "Ξενοδοχεία Ρόδου" } },
+    ],
+    seo: {
+      title: { en: "Best Greek Islands for Honeymoon 2026 | GoGreeceNow", el: "Καλύτερα Ελληνικά Νησιά για Μήνα του Μέλιτος 2026 | GoGreeceNow" },
+      description: { en: "Planning a honeymoon in Greece? Discover the five best Greek islands — Santorini, Milos, Crete, Naxos, and Rhodes — with honest pros, cons, best seasons, and handpicked hotel recommendations for every style.", el: "Σχεδιάζετε μήνα του μέλιτος στην Ελλάδα; Ανακαλύψτε τα πέντε καλύτερα ελληνικά νησιά — Σαντορίνη, Μήλο, Κρήτη, Νάξο και Ρόδο — με ειλικρινή πλεονεκτήματα, μειονεκτήματα και προτάσεις ξενοδοχείων." },
     },
   },
 ];

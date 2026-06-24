@@ -1620,7 +1620,7 @@ export default function DecisionEngineClient({ destinations, lang }: { destinati
       hotelCost = baseHotelPrice * styleMultiplier * rooms * days;
     }
 
-    // 2. Food & Drink
+    // 2. Food & Wine
     let mealCost = real.midrange_meal || 30;
     let drinkCost = real.beer_bar || 5;
     let coffeeCost = real.coffee || 3.5;
@@ -1715,7 +1715,7 @@ export default function DecisionEngineClient({ destinations, lang }: { destinati
     feature: { en: "Feature", el: "Χαρακτηριστικό" },
     avgTemp: { en: "Avg Temp", el: "Μέση Θερμοκρασία" },
     accommodation: { en: "Accommodation", el: "Διαμονή" },
-    foodLabel: { en: "Food & Drink", el: "Φαγητό & Ποτό" },
+    foodLabel: { en: "Food & Wine", el: "Φαγητό & Κρασί" },
     transport: { en: "Transport", el: "Μεταφορές" },
     foodOnly: { en: "Food", el: "Φαγητό" },
     recommendation: { en: "Recommendation", el: "Πρόταση" },

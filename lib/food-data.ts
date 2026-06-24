@@ -64,7 +64,7 @@ export const food: FoodCard[] = [
       el: "Τοπικές Γεύσεις Σαντορίνης: Cocktails στο Ηλιοβασίλεμα & Ρομαντικό Δείπνο με Θέα την Καλντέρα",
     },
     metaDescription: {
-      en: "Discover the premium side of Santorini through sunset cocktails, fine dining with caldera views, and unforgettable evenings in Oia, Imerovigli & Fira. A complete food & drink guide.",
+      en: "Discover the premium side of Santorini through sunset cocktails, fine dining with caldera views, and unforgettable evenings in Oia, Imerovigli & Fira. A complete food & wine guide.",
       el: "Ανακαλύψτε την premium πλευρά της Σαντορίνης μέσα από cocktails στο ηλιοβασίλεμα, fine dining με θέα την καλντέρα και αξέχαστες βραδιές σε Οία, Ημεροβίγλι & Φηρά. Ένας πλήρης οδηγός φαγητού & ποτού.",
     },
     keywords: {
@@ -201,7 +201,7 @@ export const food: FoodCard[] = [
     },
     place: "Athens · Piraeus · Argosaronic Islands",
     metaTitle: {
-      en: "What to Eat in Athens, Piraeus & the Argosaronic Islands | Food & Drink Guide | GoGreeceNow",
+      en: "What to Eat in Athens, Piraeus & the Argosaronic Islands | Food & Wine Guide | GoGreeceNow",
       el: "Τι να Φας στην Αθήνα, τον Πειραιά & τα Νησιά του Αργοσαρωνικού | Οδηγός Φαγητού & Ποτού"
     },
     metaDescription: {
@@ -214,7 +214,7 @@ export const food: FoodCard[] = [
     },
     info: {
       en: "From souvlaki in Monastiraki to fresh octopus in Aegina — your complete guide to eating and drinking around Athens and the Saronic Gulf.",
-      el: "Από σουβλάκι στο Μοναστηράκι μέχρι φρέσκο χταπόδι στην Αίγινα — ο πλήρης οδηγός σου για φαγητό και ποτό στην Αθήνα και τον Σαρωνικό."
+      el: "Από σουβλάκι στο Μοναστηράκι μέχρι φρέσκο χταπόδι στην Αίγινα — ο πλήρης οδηγός σου για φαγητό και κρασί στην Αθήνα και τον Σαρωνικό."
     },
     image: "/images/food-athens.webp",
     overview: {
@@ -266,16 +266,16 @@ export const food: FoodCard[] = [
   {
     slug: "ionian-islands-food-guide",
     title: {
-      en: "Ionian Islands Food & Drink Guide",
+      en: "Ionian Islands Food & Wine Guide",
       el: "Οδηγός Φαγητού & Ποτού: Ιόνια Νησιά — Κέρκυρα, Κεφαλονιά, Ζάκυνθος, Λευκάδα, Παξοί"
     },
     place: "Corfu · Kefalonia · Zakynthos · Lefkada · Paxos",
     metaTitle: {
-      en: "What to Eat in the Ionian Islands: Corfu, Kefalonia, Zakynthos, Lefkada & Paxos | Food & Drink Guide | GoGreeceNow",
+      en: "What to Eat in the Ionian Islands: Corfu, Kefalonia, Zakynthos, Lefkada & Paxos | Food & Wine Guide | GoGreeceNow",
       el: "Τι να Φας στα Ιόνια Νησιά: Κέρκυρα, Κεφαλονιά, Ζάκυνθος, Λευκάδα, Παξοί | Οδηγός Φαγητού & Ποτού"
     },
     metaDescription: {
-      en: "From Corfu's Venetian sofrito to Kefalonia's legendary meat pie and Paxos' world-class olive oil — a complete food and drink guide to the Ionian Islands.",
+      en: "From Corfu's Venetian sofrito to Kefalonia's legendary meat pie and Paxos' world-class olive oil — a complete food and wine guide to the Ionian Islands.",
       el: "Από το βενετσιάνικο σοφρίτο της Κέρκυρας μέχρι την περίφημη κρεατόπιτα της Κεφαλονιάς και το παγκόσμιας κλάσης ελαιόλαδο των Παξών — ένας πλήρης οδηγός φαγητού και ποτού για τα Ιόνια Νησιά."
     },
     keywords: {
@@ -283,7 +283,7 @@ export const food: FoodCard[] = [
       el: ["οδηγός φαγητού Ιόνια Νησιά", "τι να φάω στην Κέρκυρα", "κεφαλονίτικο φαγητό", "ζακυνθινή κουζίνα", "ταβέρνες Λευκάδα", "ελαιόλαδο Παξών", "σοφρίτο Κέρκυρα", "κρασί Ρομπόλα Κεφαλονιά", "κρεατόπιτα Κεφαλονιάς", "παραδοσιακό φαγητό Ιόνια"]
     },
     info: {
-      en: "From Corfu's Venetian sofrito to Kefalonia's legendary meat pie — a complete food and drink guide to the Ionian Islands.",
+      en: "From Corfu's Venetian sofrito to Kefalonia's legendary meat pie — a complete food and wine guide to the Ionian Islands.",
       el: "Από το βενετσιάνικο σοφρίτο της Κέρκυρας μέχρι τη θρυλική κρεατόπιτα της Κεφαλονιάς — ένας πλήρης οδηγός φαγητού και ποτού για τα Ιόνια Νησιά."
     },
     image: "/images/food-ionian.webp",

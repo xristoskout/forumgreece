@@ -57,7 +57,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           url: "/images/hero-greece.webp",
           width: 1600,
           height: 900,
-          alt: "Greek food and drink collection",
+          alt: "Greek food and wine collection",
         },
       ],
     },
@@ -90,7 +90,7 @@ export default async function GreeceFoodAndDrinkCollectionPage({
         <div className="mx-auto max-w-7xl px-6 py-14">
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-indigo-700">
             {lang === "en"
-              ? "Greek Food & Drink Hub"
+              ? "Greek Food & Wine Hub"
               : "Hub Ελληνικής Γαστρονομίας & Ποτού"}
           </p>
 
@@ -102,8 +102,8 @@ export default async function GreeceFoodAndDrinkCollectionPage({
 
           <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-500">
             {lang === "en"
-              ? "Use this hub to discover Greek food and drink ideas that can shape the feel of a trip, from regional specialties to destination-based food inspiration."
-              : "Χρησιμοποίησε αυτό το hub για να ανακαλύψεις ιδέες γύρω από το ελληνικό φαγητό και ποτό που μπορούν να αλλάξουν την αίσθηση ενός ταξιδιού, από τοπικές σπεσιαλιτέ μέχρι γαστρονομική έμπνευση ανά προορισμό."}
+              ? "Use this hub to discover Greek food and wine ideas that can shape the feel of a trip, from regional specialties to destination-based food inspiration."
+              : "Χρησιμοποίησε αυτό το hub για να ανακαλύψεις ιδέες γύρω από το ελληνικό φαγητό και κρασί που μπορούν να αλλάξουν την αίσθηση ενός ταξιδιού, από τοπικές σπεσιαλιτέ μέχρι γαστρονομική έμπνευση ανά προορισμό."}
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
@@ -138,8 +138,8 @@ export default async function GreeceFoodAndDrinkCollectionPage({
             </p>
             <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900">
               {lang === "en"
-                ? "Browse local food and drink pages"
-                : "Δες σελίδες για τοπικό φαγητό και ποτό"}
+                ? "Browse local food and wine pages"
+                : "Δες σελίδες για τοπικό φαγητό και κρασί"}
             </h2>
           </div>
 
