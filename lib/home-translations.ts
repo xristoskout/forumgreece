@@ -69,8 +69,8 @@ const t = {
     el: "Επιλέγουμε ξενοδοχεία, εμπειρίες και τοπικούς συνεργάτες σε όλη την Ελλάδα",
   },
   heroPrimary: {
-    en: "Plan Your Trip →",
-    el: "Σχεδίασε το Ταξίδι σου →",
+    en: "Plan Your Trip",
+    el: "Σχεδίασε το Ταξίδι σου",
   },
   heroSecondary: {
     en: "How It Works",

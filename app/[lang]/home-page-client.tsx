@@ -301,9 +301,9 @@ export default function HomePageClient({
             
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
               {quickFacts.map((fact) => (
-                <div key={`${fact.value}-${fact.label.en}`} className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white backdrop-blur-lg px-5 py-5 transition hover:bg-slate-50 hover:border-slate-300">
-                  <div className="text-3xl font-bold text-slate-900 mb-2">{fact.value}</div>
-                  <div className="text-[10px] font-semibold tracking-widest uppercase text-indigo-800">{fact.label[lang]}</div>
+                <div key={`${fact.value}-${fact.label.en}`} className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white backdrop-blur-lg px-4 py-3 transition hover:bg-slate-50 hover:border-slate-300">
+                  <div className="text-lg md:text-xl font-bold text-slate-900 mb-0.5">{fact.value}</div>
+                  <div className="text-[9px] font-semibold tracking-widest uppercase text-indigo-800">{fact.label[lang]}</div>
                 </div>
               ))}
             </div>
