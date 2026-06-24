@@ -59,8 +59,8 @@ export const categories: Category[] = [
   {
     title: { en: "Plan My Trip", el: "Σχεδίασε το Ταξίδι μου" },
     description: {
-      en: "Free trip planning help from Greek local experts.",
-      el: "Δωρεάν βοήθεια από Έλληνες ειδικούς.",
+      en: "Free trip planning help from AI.",
+      el: "Δωρεάν βοήθεια από AI.",
     },
     emoji: "🤖",
     href: "/trip-planner",
