@@ -34,27 +34,63 @@ export default function BlogDetailClient({ post, lang }: Props) {
     return dateStr;
   }
 
-  const bodyHtml = post.body[lang]
-    .split("\n")
-    .map((line) => line.trim())
-    .filter(Boolean)
-    .map((line) => {
-      if (line.startsWith("## ")) {
-        return `<h2 class="mt-10 mb-4 text-2xl font-bold text-slate-900">${line.replace("## ", "")}</h2>`;
+  const lines = post.body[lang].split("\n").map(l => l.trim());
+  const bodyHtml = (() => {
+    let inTable = false;
+    let tableRows: string[] = [];
+    const out: string[] = [];
+
+    function flushTable() {
+      if (tableRows.length === 0) return;
+      out.push('<div class="overflow-x-auto my-8"><table class="w-full text-sm border-collapse">');
+      const header = tableRows[0];
+      if (header) {
+        const cells = header.split("|").filter(Boolean).map(c => c.trim());
+        out.push("<thead><tr>" + cells.map(c => `<th class="border border-slate-200 bg-slate-50 px-4 py-3 text-left font-bold text-slate-900">${c}</th>`).join("") + "</tr></thead>");
       }
-      if (line.startsWith("### ")) {
-        return `<h3 class="mt-8 mb-3 text-xl font-bold text-slate-900">${line.replace("### ", "")}</h3>`;
+      out.push("<tbody>");
+      for (let i = 1; i < tableRows.length; i++) {
+        const cells = tableRows[i].split("|").filter(Boolean).map(c => c.trim());
+        out.push("<tr>" + cells.map(c => `<td class="border border-slate-200 px-4 py-3 text-slate-600">${c}</td>`).join("") + "</tr>");
       }
-      if (line.startsWith("- **") && line.includes("**:")) {
+      out.push("</tbody></table></div>");
+      tableRows = [];
+    }
+
+    for (const line of lines) {
+      if (!line) {
+        if (inTable) { flushTable(); inTable = false; }
+        continue;
+      }
+      if (line.startsWith("|")) {
+        if (line.includes("---")) continue;
+        inTable = true;
+        tableRows.push(line);
+        continue;
+      }
+      if (inTable) { flushTable(); inTable = false; }
+
+      if (line === "---") {
+        out.push('<hr class="my-10 border-slate-200" />');
+      } else if (line.startsWith("## ")) {
+        out.push(`<h2 class="mt-10 mb-4 text-2xl font-bold text-slate-900">${line.replace("## ", "")}</h2>`);
+      } else if (line.startsWith("### ")) {
+        out.push(`<h3 class="mt-8 mb-3 text-xl font-bold text-slate-900">${line.replace("### ", "")}</h3>`);
+      } else if (line.startsWith("**") && line.endsWith("**")) {
+        out.push(`<p class="text-base font-bold leading-8 text-slate-900">${line.replace(/^\*\*|\*\*$/g, "")}</p>`);
+      } else if (line.startsWith("- **") && line.includes("**:")) {
         const rest = line.replace("- **", "").replace("**:", ":");
-        return `<li class="ml-4 list-disc text-slate-600"><strong>${rest}</strong></li>`;
+        out.push(`<li class="ml-4 list-disc text-slate-600"><strong>${rest}</strong></li>`);
+      } else if (line.startsWith("- ")) {
+        out.push(`<li class="ml-4 list-disc text-slate-600">${line.replace("- ", "")}</li>`);
+      } else {
+        const withLinks = line.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-indigo-600 underline hover:text-indigo-800 transition-colors font-medium">$1</a>');
+        out.push(`<p class="text-base leading-8 text-slate-600">${withLinks}</p>`);
       }
-      if (line.startsWith("- ")) {
-        return `<li class="ml-4 list-disc text-slate-600">${line.replace("- ", "")}</li>`;
-      }
-      return `<p class="text-base leading-8 text-slate-600">${line}</p>`;
-    })
-    .join("\n");
+    }
+    if (inTable) flushTable();
+    return out.join("\n");
+  })();
 
   return (
     <>
@@ -136,71 +172,71 @@ export default function BlogDetailClient({ post, lang }: Props) {
         (post.relatedHotels && post.relatedHotels.length > 0) ||
         (post.relatedTours && post.relatedTours.length > 0) ? (
           <div className="mt-16 pt-8 border-t border-slate-200">
-            <h2 className="text-2xl font-bold text-slate-900 mb-8">
+            <h2 className="text-2xl font-bold text-slate-900 mb-2">
               {lang === "en" ? "Explore Related Content" : "Σχετικό Περιεχόμενο"}
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <p className="text-sm text-slate-500 mb-8">
+              {lang === "en" ? "Continue planning your trip with these guides and listings." : "Συνέχισε τον σχεδιασμό του ταξιδιού σου με αυτούς τους οδηγούς."}
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {post.relatedDestinations && post.relatedDestinations.length > 0 && (
-                <div>
-                  <h3 className="text-xs font-semibold uppercase tracking-widest text-indigo-600 mb-3 flex items-center gap-2">
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                <div className="bg-gradient-to-b from-indigo-50/50 to-white rounded-2xl p-5 border border-indigo-100/50">
+                  <h3 className="text-xs font-bold uppercase tracking-[0.15em] text-indigo-700 mb-4 flex items-center gap-2">
+                    <svg className="w-4 h-4 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                     {lang === "en" ? "Destinations" : "Προορισμοί"}
                   </h3>
-                  <ul className="space-y-2">
+                  <div className="space-y-2">
                     {post.relatedDestinations.map((d) => (
-                      <li key={d.slug}>
-                        <Link
-                          href={withLang(`/destinations/${d.slug}`)}
-                          className="group flex items-center gap-2 rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-700 hover:border-indigo-200 hover:bg-indigo-50 hover:text-indigo-700 transition-all"
-                        >
-                          <span className="text-slate-400 group-hover:text-indigo-500 transition-colors">→</span>
-                          {d.label[lang]}
-                        </Link>
-                      </li>
+                      <Link
+                        key={d.slug}
+                        href={withLang(`/destinations/${d.slug}`)}
+                        className="group flex items-center justify-between rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-800 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md hover:border-indigo-300 hover:bg-indigo-50"
+                      >
+                        <span className="group-hover:text-indigo-700 transition-colors">{d.label[lang]}</span>
+                        <svg className="w-4 h-4 text-slate-400 group-hover:text-indigo-500 group-hover:translate-x-0.5 transition-all" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                      </Link>
                     ))}
-                  </ul>
+                  </div>
                 </div>
               )}
               {post.relatedHotels && post.relatedHotels.length > 0 && (
-                <div>
-                  <h3 className="text-xs font-semibold uppercase tracking-widest text-indigo-600 mb-3 flex items-center gap-2">
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
+                <div className="bg-gradient-to-b from-amber-50/50 to-white rounded-2xl p-5 border border-amber-100/50">
+                  <h3 className="text-xs font-bold uppercase tracking-[0.15em] text-amber-700 mb-4 flex items-center gap-2">
+                    <svg className="w-4 h-4 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
                     {lang === "en" ? "Hotels" : "Ξενοδοχεία"}
                   </h3>
-                  <ul className="space-y-2">
+                  <div className="space-y-2">
                     {post.relatedHotels.map((h) => (
-                      <li key={h.slug}>
-                        <Link
-                          href={withLang(`/hotels/${h.slug}`)}
-                          className="group flex items-center gap-2 rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-700 hover:border-indigo-200 hover:bg-indigo-50 hover:text-indigo-700 transition-all"
-                        >
-                          <span className="text-slate-400 group-hover:text-indigo-500 transition-colors">→</span>
-                          {h.label[lang]}
-                        </Link>
-                      </li>
+                      <Link
+                        key={h.slug}
+                        href={withLang(`/hotels/${h.slug}`)}
+                        className="group flex items-center justify-between rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-800 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md hover:border-amber-300 hover:bg-amber-50"
+                      >
+                        <span className="group-hover:text-amber-700 transition-colors">{h.label[lang]}</span>
+                        <svg className="w-4 h-4 text-slate-400 group-hover:text-amber-500 group-hover:translate-x-0.5 transition-all" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                      </Link>
                     ))}
-                  </ul>
+                  </div>
                 </div>
               )}
               {post.relatedTours && post.relatedTours.length > 0 && (
-                <div>
-                  <h3 className="text-xs font-semibold uppercase tracking-widest text-indigo-600 mb-3 flex items-center gap-2">
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" /></svg>
+                <div className="bg-gradient-to-b from-emerald-50/50 to-white rounded-2xl p-5 border border-emerald-100/50">
+                  <h3 className="text-xs font-bold uppercase tracking-[0.15em] text-emerald-700 mb-4 flex items-center gap-2">
+                    <svg className="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" /></svg>
                     {lang === "en" ? "Tours" : "Εκδρομές"}
                   </h3>
-                  <ul className="space-y-2">
+                  <div className="space-y-2">
                     {post.relatedTours.map((t) => (
-                      <li key={t.slug}>
-                        <Link
-                          href={withLang(`/tours/${t.slug}`)}
-                          className="group flex items-center gap-2 rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-700 hover:border-indigo-200 hover:bg-indigo-50 hover:text-indigo-700 transition-all"
-                        >
-                          <span className="text-slate-400 group-hover:text-indigo-500 transition-colors">→</span>
-                          {t.label[lang]}
-                        </Link>
-                      </li>
+                      <Link
+                        key={t.slug}
+                        href={withLang(`/tours/${t.slug}`)}
+                        className="group flex items-center justify-between rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-800 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md hover:border-emerald-300 hover:bg-emerald-50"
+                      >
+                        <span className="group-hover:text-emerald-700 transition-colors">{t.label[lang]}</span>
+                        <svg className="w-4 h-4 text-slate-400 group-hover:text-emerald-500 group-hover:translate-x-0.5 transition-all" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                      </Link>
                     ))}
-                  </ul>
+                  </div>
                 </div>
               )}
             </div>
