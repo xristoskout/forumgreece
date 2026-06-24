@@ -277,14 +277,14 @@ export default function HomePageClient({
                     <Link
                       key={item.title.en}
                       href={item.href ? withLang(item.href) : "#"}
-                      className={`group rounded-2xl border-2 p-4 md:p-5 transition-all duration-200 hover:scale-[1.03] hover:-translate-y-1 hover:shadow-xl flex items-center gap-3 md:gap-5 ${
+                      className={`group rounded-2xl border-2 p-4 md:p-5 transition-all duration-200 hover:scale-[1.03] hover:-translate-y-1 hover:shadow-xl flex flex-col md:flex-row items-center gap-2 md:gap-5 ${
                         item.title.en === "Compare"
                           ? "border-indigo-300 bg-gradient-to-br from-indigo-500 to-indigo-600 text-white shadow-md shadow-indigo-200/40 hover:shadow-indigo-300/60 hover:border-indigo-200"
                           : "border-amber-300 bg-gradient-to-br from-amber-400 to-orange-500 text-white shadow-md shadow-amber-200/40 hover:shadow-amber-300/60 hover:border-amber-200"
                       }`}
                     >
-                      <span className="text-2xl md:text-3xl drop-shadow-sm shrink-0">{item.emoji}</span>
-                      <div className="flex-1 min-w-0">
+                      <span className="text-2xl md:text-3xl drop-shadow-sm shrink-0 leading-none">{item.emoji}</span>
+                      <div className="flex-1 min-w-0 text-center md:text-left">
                         <h3 className="font-bold text-white text-sm md:text-base">
                           {item.title[lang]}
                         </h3>
