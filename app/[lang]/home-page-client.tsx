@@ -277,25 +277,20 @@ export default function HomePageClient({
                     <Link
                       key={item.title.en}
                       href={item.href ? withLang(item.href) : "#"}
-                      className={`group relative overflow-hidden rounded-2xl border-2 p-5 transition-all duration-200 hover:scale-[1.02] hover:-translate-y-1 hover:shadow-2xl flex items-center gap-4 ${
+                      className={`group rounded-2xl border-2 p-5 transition-all duration-200 hover:scale-[1.03] hover:-translate-y-1 hover:shadow-xl flex items-center gap-5 ${
                         item.title.en === "Compare"
-                          ? "border-indigo-400 bg-gradient-to-br from-indigo-600 to-indigo-700 text-white shadow-lg shadow-indigo-300/50 hover:shadow-indigo-400/60 hover:border-indigo-300"
-                          : "border-amber-400 bg-gradient-to-br from-amber-500 to-orange-600 text-white shadow-lg shadow-amber-300/50 hover:shadow-amber-400/60 hover:border-amber-300"
+                          ? "border-indigo-300 bg-gradient-to-br from-indigo-500 to-indigo-600 text-white shadow-md shadow-indigo-200/40 hover:shadow-indigo-300/60 hover:border-indigo-200"
+                          : "border-amber-300 bg-gradient-to-br from-amber-400 to-orange-500 text-white shadow-md shadow-amber-200/40 hover:shadow-amber-300/60 hover:border-amber-200"
                       }`}
                     >
-                      <div className="shrink-0 w-12 h-12 flex items-center justify-center rounded-xl bg-white/20 text-2xl backdrop-blur-sm">
-                        {item.emoji}
-                      </div>
+                      <span className="text-3xl drop-shadow-sm">{item.emoji}</span>
                       <div className="flex-1 min-w-0">
-                        <h3 className="font-bold text-white text-sm">
+                        <h3 className="font-bold text-white text-base">
                           {item.title[lang]}
                         </h3>
-                        <p className="text-xs leading-tight opacity-80 mt-0.5">
+                        <p className="text-xs leading-snug text-white/85 mt-0.5">
                           {item.description[lang]}
                         </p>
-                      </div>
-                      <div className="shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-white/20 transition-transform group-hover:translate-x-0.5">
-                        <svg className="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                       </div>
                     </Link>
                   ))}
