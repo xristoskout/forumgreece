@@ -1237,7 +1237,7 @@ export const experienceBusinesses: ExperienceBusiness[] = [
       "/images/businesses/kefalonia-day-trips/agia_efimia_port_venus.webp",
       "/images/businesses/kefalonia-day-trips/c6535bce-3c7e-46ca-adf2-7396404588e6.webp",
     ],
-  }
+  },
   {
   slug: "rolling-into-the-blue",
   landingSlug: "kefalonia-tours",
