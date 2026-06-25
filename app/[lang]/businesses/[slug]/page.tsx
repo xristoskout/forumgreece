@@ -40,11 +40,10 @@ export async function generateMetadata({
     };
   }
 
-  const description =
-    business.description?.[lang] ??
-    business.info?.[lang] ??
-    business.description?.en ??
-    business.info.en;
+  const rawDesc = business.description?.[lang] ?? business.description?.en;
+  const description = rawDesc && rawDesc.length > 200
+    ? (business.info?.[lang] ?? business.info.en)
+    : (rawDesc ?? business.info?.[lang] ?? business.info.en);
 
   const pageTitle = `${business.name} | GoGreeceNow`;
 
@@ -95,7 +94,7 @@ export default async function BusinessPage({ params }: BusinessPageProps) {
 
   const localBiz = localBusinessSchema({
     name: business.name,
-    description: business.description?.[lang] ?? business.info[lang],
+    description: business.info?.[lang] ?? business.description?.[lang] ?? business.info.en,
     image: business.image,
     url: `${SITE_URL}/${lang}/businesses/${slug}`,
     ...(business.place ? { address: business.place } : {}),
