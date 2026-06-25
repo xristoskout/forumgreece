@@ -552,10 +552,10 @@ export default function DestinationDetailsClient({
               );
             })}
 
+            {renderBusinesses()}
+
             {/* 100% Dynamic Compare Widget */}
             {renderCompareWidget()}
-
-            {renderBusinesses()}
 
             {(() => {
               const TOURS_SLUGS = new Set(["santorini", "mykonos", "athens", "crete", "kefalonia", "lesvos"]);

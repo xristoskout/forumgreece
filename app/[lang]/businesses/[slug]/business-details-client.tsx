@@ -234,6 +234,11 @@ export default function BusinessDetailsClient({
               </p>
 
               <div className="mt-5 grid gap-3">
+                {business.logo && (
+                  <div className="flex justify-center py-2">
+                    <Image src={business.logo} alt={`${business.name} logo`} width={120} height={60} className="object-contain" />
+                  </div>
+                )}
                 {business.phone && (
                   <a
                     href={`tel:${business.phone}`}
