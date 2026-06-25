@@ -92,9 +92,12 @@ export default function ExperienceDetailsClient({
   };
 
   const sortedBusinesses = [...businesses].sort((a, b) => {
-    if (a.slug === "rolling-into-the-blue" || a.slug === "kefalonia-day-trips") return -1;
-    if (b.slug === "rolling-into-the-blue" || b.slug === "kefalonia-day-trips") return 1;
-    return 0;
+    const priority = (slug: string) => {
+      if (slug === "kefalonia-day-trips") return 0;
+      if (slug === "rolling-into-the-blue") return 1;
+      return 2;
+    };
+    return priority(a.slug) - priority(b.slug);
   });
 
   const heroImage =
