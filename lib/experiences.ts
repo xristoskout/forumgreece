@@ -1577,6 +1577,130 @@ practicalInfo: {
       "/images/businesses/vintage-wedding-cars/270125431_101036469127732_7607152548263204092_n.webp",
     ],
     mapQuery: "Vintage Wedding Cars Nafpaktos Greece",
+  },
+  {
+    slug: "kefalonia-day-trips",
+    landingSlug: "kefalonia-tours",
+    name: "Kefalonia Day Trips",
+    category: {
+      en: "Premium Sailing Cruises",
+      el: "Premium Ιστιοπλοϊκές Κρουαζιέρες",
+    },
+    place: "Agia Efimia, Kefalonia",
+    info: {
+      en: "Premium all-inclusive sailing cruises in Kefalonia, Ithaca & Atokos. Small groups, experienced local crews, and exceptional hospitality aboard well-maintained sailing yachts.",
+      el: "Premium all-inclusive ιστιοπλοϊκές κρουαζιέρες σε Κεφαλονιά, Ιθάκη & Άτοκο. Μικρές ομάδες, έμπειρα πληρώματα και εξαιρετική φιλοξενία σε καλά συντηρημένα ιστιοπλοϊκά σκάφη.",
+    },
+    image: "/images/businesses/kefalonia-day-trips/cover.webp",
+    href: "/businesses/kefalonia-day-trips",
+    overview: {
+      en: "Based in the beautiful harbour village of Agia Efimia, Kefalonia Day Trips specialises in premium private and semi-private sailing excursions to Kefalonia, Ithaca, and the spectacular island of Atokos. Combining well-maintained sailing yachts, experienced local crews, exceptional hospitality, and carefully designed itineraries, the company has become a preferred choice for visitors looking to experience the Ionian Sea away from the crowds.",
+      el: "Με βάση το όμορφο λιμανάκι της Αγίας Ευφημίας, η Kefalonia Day Trips ειδικεύεται σε premium ιδιωτικές και ημι-ιδιωτικές ιστιοπλοϊκές εκδρομές σε Κεφαλονιά, Ιθάκη και το εντυπωσιακό νησί του Άτοκου. Συνδυάζοντας καλά συντηρημένα ιστιοπλοϊκά, έμπειρα τοπικά πληρώματα, εξαιρετική φιλοξενία και προσεκτικά σχεδιασμένα δρομολόγια, η εταιρεία έχει γίνει η προτιμώμενη επιλογή για επισκέπτες που θέλουν να γνωρίσουν το Ιόνιο μακριά από τα πλήθη.",
+    },
+    description: {
+      en: "Whether you are a couple seeking a romantic day at sea, a family looking for a memorable adventure, or a group of friends celebrating a special occasion, Kefalonia Day Trips offers a range of private and semi-private sailing experiences tailored to different needs.\n\nUnlike large excursion boats, the company focuses on small groups and personalised service. Guests enjoy spacious sailing yachts, crystal-clear waters, hidden coves, and some of the most beautiful coastlines in Greece. Every cruise includes opportunities for swimming, snorkeling, paddleboarding, and relaxing under sail while discovering locations that are often inaccessible by road.\n\nAmong the most popular experiences is the semi-private sailing cruise from Agia Efimia to Ithaca. This all-inclusive day trip has earned an excellent reputation among visitors and consistently receives outstanding reviews. Guests enjoy three swimming stops in secluded bays, a traditional Greek lunch served on board with local wine and refreshments.\n\nFor those seeking a more exclusive experience, private sailing cruises to Atokos Island and other hidden destinations are available. Atokos is one of the region's most spectacular and least-visited islands, known for its dramatic cliffs, crystal-clear waters, and the famous Pig Beach. Private charters allow guests to customise their itinerary.\n\nThe company operates a fleet of carefully maintained sailing yachts that combine comfort, safety, and classic sailing elegance. The experienced local skippers and crew members are passionate about sharing the beauty of their islands with visitors.\n\nMore than simply a boat trip, every excursion is designed to provide an authentic taste of Greek island life — traditional hospitality, local cuisine, stunning natural landscapes, and the relaxed pace that makes the Ionian Islands one of the Mediterranean's most beloved destinations.",
+      el: "Είτε είστε ζευγάρι που αναζητά μια ρομαντική μέρα στη θάλασσα, είτε οικογένεια που θέλει μια αξέχαστη περιπέτεια, είτε παρέα φίλων που γιορτάζει μια ξεχωριστή περίσταση, η Kefalonia Day Trips προσφέρει μια γκάμα ιδιωτικών και ημι-ιδιωτικών ιστιοπλοϊκών εμπειριών.\n\nΣε αντίθεση με τα μεγάλα εκδρομικά πλοία, η εταιρεία εστιάζει σε μικρές ομάδες και εξατομικευμένες υπηρεσίες. Οι επισκέπτες απολαμβάνουν ευρύχωρα ιστιοπλοϊκά, κρυστάλλινα νερά, κρυφούς όρμους και μερικές από τις πιο όμορφες ακτές της Ελλάδας. Κάθε κρουαζιέρα περιλαμβάνει ευκαιρίες για κολύμπι, snorkeling, paddleboarding και χαλάρωση.\n\nΜία από τις πιο δημοφιλείς εμπειρίες είναι η ημι-ιδιωτική κρουαζιέρα από την Αγία Ευφημία προς την Ιθάκη. Οι επισκέπτες απολαμβάνουν τρεις στάσεις για κολύμπι σε απομονωμένους όρμους, ένα παραδοσιακό ελληνικό γεύμα με τοπικό κρασί και αναψυκτικά.\n\nΓια όσους αναζητούν μια πιο αποκλειστική εμπειρία, διατίθενται ιδιωτικές κρουαζιέρες στο νησί του Άτοκου, γνωστό για τους δραματικούς γκρεμούς, τα κρυστάλλινα νερά και το διάσημο Pig Beach.\n\nΗ εταιρεία διαθέτει έναν στόλο από καλά συντηρημένα ιστιοπλοϊκά που συνδυάζουν άνεση, ασφάλεια και κλασική κομψότητα.\n\nΠερισσότερο από μια απλή βαρκάδα, κάθε εκδρομή σχεδιάζεται για να προσφέρει μια αυθεντική γεύση της ελληνικής νησιωτικής ζωής.",
+    },
+    highlights: {
+      en: [
+        "Premium semi-private sailing cruises to Ithaca",
+        "Exclusive private charters to Atokos & hidden Ionian gems",
+        "Departure from Agia Efimia harbour",
+        "Traditional Greek lunch with local wine on board",
+        "Swimming, snorkeling & paddleboarding in secluded coves",
+        "Experienced local skippers and crew",
+      ],
+      el: [
+        "Premium ημι-ιδιωτικές ιστιοπλοϊκές κρουαζιέρες στην Ιθάκη",
+        "Αποκλειστικές ιδιωτικές κρουαζιέρες στον Άτοκο",
+        "Αναχώρηση από το λιμάνι της Αγίας Ευφημίας",
+        "Παραδοσιακό ελληνικό γεύμα με τοπικό κρασί",
+        "Κολύμπι, snorkeling & paddleboarding σε απομονωμένους όρμους",
+        "Έμπειρα τοπικά πληρώματα",
+      ],
+    },
+    services: {
+      en: [
+        "Semi-private all-inclusive sailing cruise to Ithaca (full day)",
+        "Private sailing charter to Atokos and the Ionian Islands",
+        "Custom itineraries for private groups",
+        "Traditional Greek lunch prepared on board",
+        "Local wine, refreshments, soft drinks & seasonal fruits",
+        "Snorkeling equipment, paddleboards & beach towels",
+        "Hotel/port pickup coordination available",
+      ],
+      el: [
+        "Ημι-ιδιωτική all-inclusive ιστιοπλοϊκή κρουαζιέρα στην Ιθάκη (ολοήμερη)",
+        "Ιδιωτική ιστιοπλοϊκή κρουαζιέρα στον Άτοκο",
+        "Προσαρμοσμένα δρομολόγια για ιδιωτικές ομάδες",
+        "Παραδοσιακό ελληνικό γεύμα στο σκάφος",
+        "Τοπικό κρασί, αναψυκτικά & εποχικά φρούτα",
+        "Εξοπλισμός snorkeling, paddleboards & πετσέτες θαλάσσης",
+        "Διαθέσιμος συντονισμός παραλαβής από ξενοδοχείο/λιμάνι",
+      ],
+    },
+    routes: {
+      en: [
+        "Agia Efimia → Ithaca (semi-private cruise)",
+        "Agia Efimia → Atokos Island (private charter)",
+        "Agia Efimia → Kefalonia coastline & hidden coves",
+        "Custom Ionian itineraries for private groups",
+      ],
+      el: [
+        "Αγία Ευφημία → Ιθάκη (ημι-ιδιωτική κρουαζιέρα)",
+        "Αγία Ευφημία → Άτοκος (ιδιωτική κρουαζιέρα)",
+        "Αγία Ευφημία → ακτές Κεφαλονιάς & κρυφοί όρμοι",
+        "Προσαρμοσμένα δρομολόγια Ιονίου για ιδιωτικές ομάδες",
+      ],
+    },
+    story: {
+      en: "Kefalonia Day Trips was founded by a team of local sailing enthusiasts who wanted to share the unspoiled beauty of the Ionian Islands with visitors in a way that large tour operators cannot. Operating from the charming harbour of Agia Efimia — one of Kefalonia's most picturesque villages — the company has built a reputation for quality, authenticity, and exceptional guest experiences. Their fleet of well-maintained sailing yachts and their commitment to small-group, personalised service have made them one of the most highly regarded sailing excursion providers in Kefalonia.",
+      el: "Η Kefalonia Day Trips ιδρύθηκε από μια ομάδα τοπικών λάτρεων της ιστιοπλοΐας που ήθελαν να μοιραστούν την ανέγγιχτη ομορφιά του Ιονίου με τους επισκέπτες με τρόπο που οι μεγάλοι tour operators δεν μπορούν. Με βάση το γραφικό λιμάνι της Αγίας Ευφημίας, η εταιρεία έχει χτίσει φήμη για ποιότητα, αυθεντικότητα και εξαιρετικές εμπειρίες επισκεπτών.",
+    },
+    practicalInfo: {
+      en: [
+        "Departure point: Agia Efimia harbour, Kefalonia",
+        "Semi-private cruises operate with small groups (usually up to 8-12 guests)",
+        "Private charters available for couples, families, and groups",
+        "All-inclusive: lunch, drinks, snorkeling equipment, and towels included",
+        "Booking in advance essential during high season (June–September)",
+        "Weather-dependent — departures may be rescheduled in adverse conditions",
+        "Hotel/port pickup can be arranged upon request",
+      ],
+      el: [
+        "Σημείο αναχώρησης: Λιμάνι Αγίας Ευφημίας, Κεφαλονιά",
+        "Ημι-ιδιωτικές κρουαζιέρες με μικρές ομάδες (έως 8-12 άτομα)",
+        "Διαθέσιμες ιδιωτικές κρουαζιέρες για ζευγάρια, οικογένειες και παρέες",
+        "All-inclusive: γεύμα, ποτά, εξοπλισμός snorkeling και πετσέτες",
+        "Απαραίτητη η έγκαιρη κράτηση τον Ιούνιο–Σεπτέμβριο",
+        "Εξαρτάται από τον καιρό — πιθανή αναπρογραμματισμός",
+        "Παραλαβή από ξενοδοχείο/λιμάνι κατόπιν αιτήματος",
+      ],
+    },
+    perfectFor: {
+      en: [
+        "Couples seeking a romantic day sailing experience",
+        "Families looking for a memorable day on the water",
+        "Small groups celebrating special occasions",
+        "Travelers who prefer small-group experiences over crowded boats",
+        "Anyone wanting to discover Ithaca, Atokos & hidden Ionian coves",
+      ],
+      el: [
+        "Ζευγάρια που αναζητούν ρομαντική ιστιοπλοϊκή εμπειρία",
+        "Οικογένειες που θέλουν μια αξέχαστη μέρα στη θάλασσα",
+        "Μικρές παρέες που γιορτάζουν ειδικές περιστάσεις",
+        "Ταξιδιώτες που προτιμούν μικρές ομάδες αντί πολυσύχναστα πλοία",
+        "Όσους θέλουν να ανακαλύψουν Ιθάκη, Άτοκο & κρυφούς όρμους",
+      ],
+    },
+    ctaLabel: {
+      en: "Book your sailing adventure",
+      el: "Κλείσε την ιστιοπλοϊκή σου περιπέτεια",
+    },
+    website: "https://www.kefaloniadaytrips.com",
+    email: "info@kefaloniadaytrips.com",
+    instagram: "https://www.instagram.com/kefalonia_day_trips/",
+    galleryCount: 0,
   }
 ];
 
