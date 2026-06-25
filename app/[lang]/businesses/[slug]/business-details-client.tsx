@@ -353,9 +353,16 @@ export default function BusinessDetailsClient({
                   </h2>
                 </div>
 
-                <p className="mt-8 text-lg leading-relaxed text-slate-600 whitespace-pre-wrap">
-                  {business.description[lang]}
-                </p>
+                <div className="mt-8 space-y-6">
+                  {business.description[lang].split('\n\n').map((block, i) => {
+                    const isHeader = i % 2 === 0;
+                    return (
+                      <p key={i} className={`whitespace-pre-wrap leading-relaxed ${isHeader ? 'text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight' : 'text-lg text-slate-600'}`}>
+                        {block}
+                      </p>
+                    );
+                  })}
+                </div>
               </section>
             )}
 
