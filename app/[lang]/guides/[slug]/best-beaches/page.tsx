@@ -36,6 +36,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+const MARKDOWN_LINK = /\[([^\]]+)\]\(([^)]+)\)/g;
+
+function renderBeachText(text: string, lang: string): string {
+  const withLinks = text.replace(MARKDOWN_LINK, (_m: string, label: string, href: string) => {
+    const url = href.startsWith("/") ? `/${lang}${href}` : href;
+    return `<a href="${url}" class="text-indigo-600 underline hover:text-indigo-800 font-medium">${label}</a>`;
+  });
+  return withLinks.split("\n\n").map((p: string) => p.trim()).filter(Boolean).map((p: string) => `<p class="mb-3 last:mb-0">${p}</p>`).join("\n");
+}
+
 export default async function BestBeachesPage({ params }: Props) {
   const { lang: rawLang, slug } = await params;
   const lang = (rawLang === "el" ? "el" : "en") as Lang;
@@ -103,7 +113,7 @@ export default async function BestBeachesPage({ params }: Props) {
               {(beachSection as any).items?.map((item: any, idx: number) => (
                 <article key={idx} className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm hover:shadow-md transition-shadow">
                   <h2 className="text-2xl font-bold text-slate-900 mb-3">{item.title?.[lang] || item.title?.en}</h2>
-                  <p className="text-slate-600 leading-relaxed">{item.text?.[lang] || item.text?.en}</p>
+                  <div className="text-slate-600 leading-relaxed" dangerouslySetInnerHTML={{ __html: renderBeachText(item.text?.[lang] || item.text?.en || "", lang) }} />
                 </article>
               ))}
             </div>
