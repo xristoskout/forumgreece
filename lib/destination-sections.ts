@@ -3396,36 +3396,99 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       },
       layout: "grid",
       alert: {
-        en: "Secret coves: Ask at local ports (like Fiskardo or Sami) for small boat trips to hidden bays. It's often the best value experience.",
+        en: "Secret coves: Ask at local ports (like Fiskardo, Sami or Zola) for small boat trips to hidden bays. It's often the best value experience on the island and gets you to beaches no rental car can reach.",
         el: "Μυστικές ακτές: Ρώτα στα λιμάνια (π.χ. Φισκάρδο, Σάμη, Ζόλα) για μικρές βαρκάδες σε όρμους. Είναι συχνά η πιο «value» εμπειρία του ταξιδιού.",
       },
       items: [
         {
-          title: { en: "Myrtos", el: "Μύρτος" },
+          title: { en: "Myrtos — the iconic cove", el: "Μύρτος — η εμβληματική παραλία" },
           text: {
-            en: "For the scenery, the color, and the classic Ionian vibe. Note that it's worth stopping at the viewpoint first.",
-            el: "Για το θέαμα, το χρώμα και το κλασικό vibe. Δύο εμπειρίες: το viewpoint της κορυφής και η ίδια η παραλία. Πρωινές ώρες είναι πιο ήσυχες.",
+            en: "Myrtos is the most photographed beach in Kefalonia — a near-perfect semicircular bay of white pebbles flanked by dramatic limestone cliffs. The water is an impossible shade of electric blue. It is consistently ranked among the best beaches in Greece and you will understand why the moment you see it from the viewpoint on the road down.\n\nArrive before 09:00 to secure parking and enjoy the beach before the crowds. The road down is a narrow single-file lane — approach with caution. The beach is unorganized (no sunbeds) but there is a seasonal canteen. The pebbles are coarse — bring water shoes. Stay hydrated as there is limited natural shade.\n\nBest for: The iconic Instagram shot, early-morning swimmers, couples",
+            el: "Ο Μύρτος είναι η πιο φωτογραφημένη παραλία της Κεφαλονιάς — ένας σχεδόν τέλειος ημικυκλικός όρμος με λευκά βότσαλα ανάμεσα σε εντυπωσιακούς ασβεστολιθικούς γκρεμούς. Το νερό έχει μια απίστευτη ηλεκτρική απόχρωση. Βρίσκεται σταθερά στις καλύτερες παραλίες της Ελλάδας.\n\nΦτάσε πριν τις 09:00 για να παρκάρεις. Ο δρόμος προς τα κάτω είναι στενός — προσοχή. Φέρε παπούτσια για το νερό (τα βότσαλα είναι χοντρά) και άφθονο νερό.",
           },
         },
         {
-          title: { en: "Antisamos", el: "Αντίσαμος" },
+          title: { en: "Antisamos — where locals actually swim", el: "Αντίσαμος — όπου κολυμπούν πραγματικά οι ντόπιοι" },
           text: {
-            en: "Near Sami, for a breathtaking gulf setting, crystal-clear waters, and easy combination with the nearby Melissani cave.",
-            el: "Κοντά στη Σάμη, για σκηνικό μέσα σε κλειστό κόλπο, πεντακάθαρα νερά και εύκολο συνδυασμό με Μελισσάνη και Δρογκαράτη.",
+            en: "Framed by lush green hills and a deep blue gulf, Antisamos is widely considered the best swimming beach in Kefalonia. The water is exceptionally clear with a pebble-sand mix underfoot. It was a filming location for the Hollywood movie 'Captain Corelli's Mandolin'.\n\nThe beach is organized with sunbeds, umbrellas, two beach bars and a taverna. The setting is spectacular — the green hills plunging directly into turquoise water. It is well-sheltered from the wind, making it swimmable on days when the west coast is rough.\n\nCombine Antisamos with a morning visit to Melissani Cave (10 minutes away) for a perfect east-coast day. Arrive early (before 10:00) for a prime sunbed spot in high season.\n\nBest for: Families, swimmers who want clear water, sunbed comfort, proximity to Sami",
+            el: "Πλαισιωμένος από καταπράσινους λόφους και έναν βαθύ μπλε κόλπο, ο Αντίσαμος θεωρείται η καλύτερη παραλία για κολύμπι στην Κεφαλονιά. Το νερό είναι εξαιρετικά καθαρό με μείγμα βότσαλου και άμμου. Αποτέλεσε τοποθεσία γυρίσματος για την ταινία 'Το Μαντολίνο του Λοχαγού Corelli'.\n\nΗ παραλία είναι οργανωμένη με ξαπλώστρες, δύο beach bars και ταβέρνα. Συνδύασε τον Αντίσαμο με πρωινή επίσκεψη στη Μελισσάνη (10 λεπτά) για μια τέλεια μέρα στην ανατολική ακτή.",
           },
         },
         {
-          title: { en: "Xi (Paliki)", el: "Ξι (Παλική)" },
+          title: { en: "Xi Beach (Paliki) — the red-clay therapeutic beach", el: "Ξι (Παλική) — η κόκκινη παραλία με τον πηλό" },
           text: {
-            en: "The 'orange' beach with clay. The red hue comes from weathered clay minerals. You can apply the natural clay.",
-            el: "Η «πορτοκαλί» παραλία με τον άργιλο και τον πηλό. Ο πηλός είναι fun σαν εμπειρία, αρκεί να γίνεται διακριτικά.",
+            en: "Xi Beach stands out for its distinctive red-hued sand and clay cliffs. The red colour comes from weathered iron-rich clay minerals that give the shoreline an almost Martian appearance. The natural clay is believed to have therapeutic properties for the skin — visitors traditionally cover themselves in it, let it dry in the sun, then rinse off in the sea.\n\nThe beach is organized with sunbeds, umbrellas and shallow water that shelves gently — ideal for families with children. The nearby tavernas serve fresh fish with views across the channel to Lixouri.\n\nArrive before 11:00 for a good position. The afternoon sun hits the red cliffs directly, creating beautiful photo conditions. The clay washing is fun, but keep it discreet — avoid washing directly at the water's edge.\n\nBest for: Families with children, therapeutic clay experience, photography, sunset views",
+            el: "Η Ξι ξεχωρίζει για την ξεχωριστή κοκκινωπή άμμο και τους πήλινους γκρεμούς της. Το κόκκινο χρώμα προέρχεται από ορυκτά αργίλου πλούσια σε σίδηρο. Ο πηλός πιστεύεται ότι έχει θεραπευτικές ιδιότητες για το δέρμα — οι επισκέπτες παραδοσιακά καλύπτονται με αυτόν.\n\nΗ παραλία είναι οργανισμένη με ξαπλώστρες και ρηχά νερά — ιδανική για οικογένειες. Φτάσε πριν τις 11:00 για καλή θέση.",
           },
         },
         {
-          title: { en: "Petani & Western Bays", el: "Πέτανοι & Δυτικοί Όρμοι" },
+          title: { en: "Petani Bay — the sunset beach", el: "Όρμος Πετάνων — η παραλία του ηλιοβασιλέματος" },
           text: {
-            en: "If you chase sunsets by the beach, the western side of the island offers incredible golden hours and majestic cliffs.",
-            el: "Αν κυνηγάς ηλιοβασίλεμα δίπλα στο κύμα, τα δυτικά του νησιού (Πέτανοι) προσφέρουν απίστευτο φως το σούρουπο.",
+            en: "Petani Bay is Myrtos's quieter, less hyped cousin — and for many repeat visitors, the superior beach. It is a long, sweeping bay of white pebbles on the western Paliki peninsula, with cliffs that catch the sunset light spectacularly. The water clarity rivals Myrtos but the atmosphere is more relaxed.\n\nThe beach is organized with a popular beach bar and sunbed hire. The road down is paved and easier than Myrtos's. The sunset from the beach is arguably the best on the island — the cliffs on either side frame the sun perfectly as it drops into the Ionian.\n\nArrive by 16:00 and stay until sunset for the full experience. Book a sunbed from the taverna for the best position. The pebbles are large — water shoes are essential. The wind can pick up in the afternoon but this rarely affects the sheltered centre of the bay.\n\nBest for: Sunset lovers, couples, return visitors to Kefalonia",
+            el: "Ο Όρμος Πετάνων είναι η πιο ήσυχη εκδοχή του Μύρτου — και για πολλούς που επιστρέφουν, η ανώτερη παραλία. Μια μακριά αμμουδιά με λευκά βότσαλα στη δυτική χερσόνησο της Παλικής, με γκρεμούς που πιάνουν το φως του ηλιοβασιλέματος.\n\nΟργανωμένη με beach bar και ξαπλώστρες. Το ηλιοβασίλεμα είναι ίσως το καλύτερο στο νησί. Φτάσε μέχρι τις 16:00 και μείνε ως τη δύση.",
+          },
+        },
+        {
+          title: { en: "Makris Gialos & Avithos — Argostoli's closest sands", el: "Μακρύς Γιαλός & Άβυθος — οι κοντινότερες αμμουδιές στο Αργοστόλι" },
+          text: {
+            en: "Just 5 km south of Argostoli, Makris Gialos and neighbouring Avithos are the closest proper beaches to the capital. Makris Gialos is a long stretch of golden sand with shallow, crystal-clear water — popular with families and locals after work. It has full sunbed hire, a beach bar and a taverna.\n\nAvithos, 5 minutes further south, is quieter and has a more relaxed vibe. The sand is coarser and the water deeper close to shore, but the shade from the tamarisk trees and the excellent fresh-fish taverna make it a favourite for locals.\n\nBoth beaches face west and offer sunset views. The water is calm and usually safe for children. Parking fills by 11:00 in August — arrive early or walk from Argostoli along the coastal path.\n\nBest for: Families based in Argostoli, evening swims, budget-friendly sunbed hire",
+            el: "Μόλις 5 χλμ νότια του Αργοστολίου, ο Μακρύς Γιαλός και η Άβυθος είναι οι κοντινότερες οργανωμένες παραλίες στην πρωτεύουσα. Ο Μακρύς Γιαλός είναι μια μακριά χρυσή αμμουδιά με ρηχά, κρυστάλλινα νερά. Η Άβυθος είναι πιο ήσυχη, με αλμυρίκια για σκιά και εξαιρετική ταβέρνα για ψάρι.\n\nΚαι οι δύο βλέπουν δυτικά και έχουν ηλιοβασίλεμα. Το πάρκινγκ γεμίζει μέχρι τις 11:00 τον Αύγουστο.",
+          },
+        },
+        {
+          title: { en: "Platis Gialos — sandy perfection near Argostoli", el: "Πλατύς Γιαλός — αμμώδης τελειότητα κοντά στο Αργοστόλι" },
+          text: {
+            en: "Platis Gialos is the beach you see on the approach to Argostoli airport — a wide, sandy bay with tamarisk trees providing natural shade. The water is shallow and calm, the sand is soft and golden, and the setting is protected from the prevailing winds.\n\nThe beach is well-organized with sunbeds, umbrellas, a taverna and a snack bar. It is particularly popular with Greek families on weekends but is generally uncrowded on weekdays. The shallow water extends a long way out — excellent for young children.\n\nA coastal walking path connects Platis Gialos to Makris Gialos (10 minutes) and Argostoli (30 minutes). The airport is nearby — expect occasional aircraft noise, which adds to the character rather than detracting.\n\nBest for: Families with young children, swimmers who prefer sand over pebbles, Argostoli residents",
+            el: "Ο Πλατύς Γιαλός είναι η παραλία που βλέπεις στην προσέγγιση του αεροδρομίου — μια φαρδιά, αμμώδης ακτή με αλμυρίκια. Το νερό είναι ρηχό και ήρεμο. Είναι ιδιαίτερα δημοφιλής σε ελληνικές οικογένειες τα σαββατοκύριακα.\n\nΈνα παραλιακό μονοπάτι συνδέει τον Πλατύ Γιαλό με τον Μακρύ Γιαλό (10 λεπτά) και το Αργοστόλι (30 λεπτά).",
+          },
+        },
+        {
+          title: { en: "Fteri Beach — hidden cove, only by sea", el: "Φτέρι — κρυφός όρμος, μόνο από τη θάλασσα" },
+          text: {
+            en: "Fteri is one of the most beautiful beaches in Kefalonia — and one of the most inaccessible. There is no road. The only way to reach it is by boat from the tiny port of Zola (near Agia Kyriaki in the north). The beach is a wild, white-pebble cove surrounded by vertical cliffs, with deep turquoise water that is exceptionally clear.\n\nThe isolation is the appeal. On a good day you may have the entire cove to yourself. There are no facilities at all — no sunbeds, no canteen, no shade. Bring everything you need and take everything back with you.\n\nSeveral local operators run trips from Zola, typically combining Fteri with the nearby Amidi beach and the dramatic sea cliffs of the north coast. Private boat hire from Fiskardo also reaches Fteri (allow 30 minutes each way).\n\n👉 [Rolling Into The Blue — boat rentals & private cruises to Fteri](/businesses/rolling-into-the-blue)\n\nBest for: Nature lovers, photographers, couples who want genuine seclusion, adventurous travelers",
+            el: "Το Φτέρι είναι μια από τις πιο όμορφες παραλίες της Κεφαλονιάς — και από τις πιο δυσπρόσιτες. Δεν υπάρχει δρόμος. Η μόνη πρόσβαση είναι με σκάφος από το μικρό λιμάνι της Ζόλας. Ο όρμος είναι άγριος, με λευκά βότσαλα, κάθετους γκρεμούς και βαθιά τιρκουάζ νερά.\n\nΔεν υπάρχουν υποδομές. Φέρτε τα πάντα και πάρτε τα πίσω. Αρκετοί ντόπιοι χειριστές κάνουν δρομολόγια από τη Ζόλα, συνδυάζοντας Φτέρι με Αμίδι.\n\n👉 [Rolling Into The Blue — ενοικίαση σκαφών & ιδιωτικές κρουαζιέρες στο Φτέρι](/businesses/rolling-into-the-blue)\n\nΚατάλληλο για: Λάτρεις της φύσης, φωτογράφους, ζευγάρια",
+          },
+        },
+        {
+          title: { en: "Amidi — Fteri's even quieter neighbour", el: "Αμίδι — ο ακόμα πιο ήσυχος γείτονας του Φτεριού" },
+          text: {
+            en: "Amidi sits right next to Fteri but is even more secluded — a small pebble cove with dazzling water and no facilities whatsoever. It is reached by the same boat operators from Zola, often as a combined stop on the same trip.\n\nThe seabed drops off more steeply than Fteri, making it better for snorkelling. The cliffs on either side provide shade for part of the day. Amidi gets direct sun in the morning and is shaded in the afternoon — plan accordingly.\n\nLike Fteri, Amidi has no road access, no canteen, no shade structures. This is raw, untouched Ionian coastline. Pack carefully and leave no trace.\n\nBest for: Snorkellers, photographers, experienced travellers who know how to prepare for a remote beach day",
+            el: "Το Αμίδι βρίσκεται δίπλα στο Φτέρι αλλά είναι ακόμα πιο απομονωμένο — ένας μικρός όρμος με βότσαλο και εντυπωσιακά νερά, χωρίς καμία υποδομή. Ο βυθός έχει πιο απότομη κλίση, κάνοντάς το καλύτερο για κολύμπι με μάσκα.\n\nΌπως το Φτέρι, χωρίς οδική πρόσβαση, χωρίς κυλικείο, χωρίς σκιά. Η ανέγγιχτη ακτή του Ιονίου.",
+          },
+        },
+        {
+          title: { en: "Emblisi & Kimilia — Fiskardo's twin coves", el: "Εμπλισή & Κιμίλια — τα δίδυμα σκαλοπάτια του Φισκάρδου" },
+          text: {
+            en: "Emblisi is the small beach at the edge of Fiskardo village — a pebble cove with deep, crystal-clear water and views across the channel to Ithaca. It is popular with the yachting crowd and can get busy but the setting is beautiful. The taverna right on the beach serves excellent seafood.\n\nKimilia, a 10-minute walk north along the coastal path, is quieter and more open. It is a long pebble beach with tamarisk trees and a laid-back beach bar. The water is deep and clear — excellent for snorkelling.\n\nBoth beaches are within walking distance of Fiskardo harbour, making them the most convenient option if you are staying in the north. Arrive before 11:00 to secure a spot — Fiskardo is compact and space fills quickly.\n\nBest for: Fiskardo-based visitors, lunch-by-the-sea, snorkelling, easy-access swimming",
+            el: "Η Εμπλισή είναι η μικρή παραλία στην άκρη του Φισκάρδου — ένας όρμος με βότσαλο και βαθιά κρυστάλλινα νερά. Η Κιμίλια, 10 λεπτά βόρεια, είναι πιο ήσυχη, με αλμυρίκια και χαλαρό beach bar. Και οι δύο είναι σε απόσταση περπατήματος από το λιμάνι.\n\nΦτάσε πριν τις 11:00 για να βρεις θέση.",
+          },
+        },
+        {
+          title: { en: "Koutsoupia (Dafnoudi) — the wild cove near Assos", el: "Κουτσουπιά (Δαφνούδι) — ο άγριος όρμος κοντά στην Άσσο" },
+          text: {
+            en: "Koutsoupia (also called Dafnoudi) is a wild, remote pebble beach just south of Assos village, accessible only by a steep 15-minute downhill path from the road. The effort rewards you with deep, impossibly clear water and near-certain solitude on weekdays.\n\nThe beach is completely unorganized — no sunbeds, no canteen, no shade. The surrounding cliffs and thick Mediterranean vegetation create a private-cove feel. The water is deep close to shore — excellent for jumping in but less ideal for young children.\n\nKoutsoupia is one of the few genuinely uncrowded beaches in the north. The walk back up is steep — take it slow and bring water. The path starts from a hairpin bend on the Assos–Fiskardo road, about 2 km south of Assos.\n\nBest for: Experienced travelers, photographers, couples who want an off-the-beaten-path experience",
+            el: "Η Κουτσουπιά (ή Δαφνούδι) είναι μια άγρια, απομακρυσμένη παραλία νότια του Άσσου, προσβάσιμη μόνο από ένα απότομο μονοπάτι 15 λεπτών. Η προσπάθεια ανταμείβεται με βαθιά διάφανα νερά και σχεδόν βέβαιη μοναξιά τις καθημερινές.\n\nΕντελώς ανεκμετάλλευτη — χωρίς ξαπλώστρες, χωρίς κυλικείο. Το μονοπάτι ξεκινά σε μια κλειστή στροφή του δρόμου Άσσου–Φισκάρδου, περίπου 2 χλμ νότια του Άσσου.",
+          },
+        },
+        {
+          title: { en: "Skala Beach — the south coast resort beach", el: "Παραλία Σκάλας — η παραλία θέρετρο της νότιας ακτής" },
+          text: {
+            en: "Skala is the longest organized beach on Kefalonia's south coast — a stretch of golden sand backed by the Skala resort village. The water is shallow and warm, the sand is soft and the seabed shelves gently — making it the safest choice for families with young children on the island.\n\nThe beach is fully organized with multiple sunbed operators, water sports, beach bars and tavernas. It can get busy in peak season but the length means you can always find space further from the main access points.\n\nSkala is also the departure point for day trips to Zakynthos and Ithaca in summer. The nearby ancient Roman villa with its preserved mosaics is worth a 30-minute visit.\n\nBest for: Resort-based families, water sports, easy-access beach with full facilities",
+            el: "Η Σκάλα είναι η μεγαλύτερη οργανωμένη παραλία της νότιας ακτής — μια χρυσή αμμουδιά με το θερέτρο Σκάλας από πίσω. Το νερό είναι ρηχό και ζεστό. Απολύτως οργανωμένη με θαλάσσια σπορ, beach bars και ταβέρνες.\n\nΕπίσης σημείο αναχώρησης για εκδρομές σε Ζάκυνθο και Ιθάκη.",
+          },
+        },
+        {
+          title: { en: "Lourdas Beach — family-friendly south coast", el: "Παραλία Λουρδά — η νότια ακτή για οικογένειες" },
+          text: {
+            en: "Lourdas (or Lourdata) is a long sandy beach on the south coast with the dramatic backdrop of Mount Ainos. The sand is soft and golden, the water is calm and clear, and the beach is well-sheltered from the prevailing northerly winds. Unlike Myrtos, the sea here stays calm even on windy days.\n\nThe beach is organized with sunbeds and umbrellas at regular intervals, several tavernas overlooking the shore, and a few mini-markets nearby. The beach slopes gently — safe for children.\n\nThe road access is paved and straightforward, with ample parking behind the beachfront properties. Lourdas is a better choice than Skala if you want a quieter atmosphere with easy access to the mountain villages of the interior.\n\nBest for: Families, couples who want calm seas, those exploring southern Kefalonia",
+            el: "Τα Λουρδά είναι μια μακριά αμμώδης παραλία στη νότια ακτή, με φόντο τον Αίνο. Η άμμος είναι μαλακή και χρυσή, το νερό ήρεμο. Οργανωμένη με ξαπλώστρες και ταβέρνες. Η θάλασσα εδώ μένει ήρεμη ακόμα και τις φουρτουνιασμένες μέρες.",
+          },
+        },
+        {
+          title: { en: "Agia Kyriaki — the north coast secret", el: "Αγία Κυριακή — το μυστικό της βόρειας ακτής" },
+          text: {
+            en: "Agia Kyriaki is a small pebble beach on the wild north coast, near the tiny port of Zola. The surrounding cliffs are dramatic, the water is deep and brilliant blue, and the beach is usually very quiet. The natural sea arch at the eastern end of the bay is a striking landmark — best viewed from the water.\n\nThere is a single taverna above the beach that is one of the best on the north coast, serving fresh fish and local specialties. Access is by a narrow paved road from the Antipata–Fiskardo route — the last 500 metres are steep but manageable.\n\nAgia Kyriaki is also the departure point for boat trips to Fteri and Amidi beaches. The combination of the taverna, the sea arch and the uncrowded beach makes it one of the north's best-kept secrets.\n\nBest for: Lunch-by-the-sea, boat trip departures, north coast explorers",
+            el: "Η Αγία Κυριακή είναι μια μικρή βοτσαλωτή παραλία στη βόρεια ακτή, κοντά στη Ζόλα. Οι γκρεμοί είναι εντυπωσιακοί, το νερό βαθύ μπλε και η παραλία πολύ ήσυχη. Η φυσική θαλάσσια αψίδα στο ανατολικό άκρο είναι εντυπωσιακή.\n\nΥπάρχει μια ταβέρνα πάνω από την παραλία. Σημείο αναχώρησης για σκάφη προς Φτέρι και Αμίδι.",
           },
         },
       ],
