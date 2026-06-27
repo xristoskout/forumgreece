@@ -4785,7 +4785,7 @@ export const hotels: HotelCard[] = [
   {
     slug: "kea",
     name: "Where to Stay in Kea",
-    place: "Kea (Tzia) — Western Cyclades",
+    place: "Kea (Tzia) — Cyclades",
     info: {
       en: "Kea offers villas, boutique hotels and guesthouses near Ioulida, Vourkari and Koundouros. The island's proximity to Athens makes it a favourite for weekenders; book well ahead for summer weekends.",
       el: "Η Κέα προσφέρει βίλες, boutique ξενοδοχεία και ενοικιαζόμενα δωμάτια κοντά στην Ιουλίδα, το Βουρκάρι και τον Κούνδουρο.",
