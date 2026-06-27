@@ -200,7 +200,7 @@ export default function HomePageClient({
             fill
             priority
             fetchPriority="high"
-            quality={90}
+            quality={75}
             className="object-cover"
             sizes="(max-width: 768px) 100vw, 50vw"
           />
