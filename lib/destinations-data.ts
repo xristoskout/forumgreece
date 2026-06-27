@@ -1730,6 +1730,40 @@ export const destinations: Destination[] = [
         el: "Πλήρης ταξιδιωτικός οδηγός για τη Ναύπακτο και τη Ναυπακτία — το βενετσιάνικο λιμάνι, το κάστρο με τους πέντε δακτυλίους, τα Τριζόνια, τη λιμνοθάλασσα του Μεσολογγίου, τα ορεινά χωριά και πρακτικές συμβουλές."
       }
     }
+  },
+  {
+    slug: "kea",
+    name: "Kea (Tzia)",
+    region: { en: "Cyclades", el: "Κυκλάδες" },
+    blurb: {
+      en: "Lion of Kea, Ioulida, ancient Karthaia, Vourkari marina & Britannic shipwreck.",
+      el: "Λιοντάρι, Ιουλίδα, αρχαία Καρθαία, Βουρκάρι & Britannic."
+    },
+    image: "/images/kea.webp",
+    overview: {
+      en: "Kea (Tzia) is the closest Cycladic island to Athens — one hour by ferry from Lavrio. Home to the 6th-century BC Lion carved into bedrock, the hilltop capital Ioulida with red-tiled lanes, the ruins of ancient Karthaia accessible only by trail or boat, the HMHS Britannic shipwreck, the chic Vourkari yacht marina, and the only oak forest in the Cyclades.",
+      el: "Η Κέα (Τζιά) είναι το πλησιέστερο κυκλαδικό νησί στην Αθήνα — μία ώρα με το πλοίο από το Λαύριο. Φιλοξενεί το Λιοντάρι του 6ου αι. π.Χ., την Ιουλίδα με τα κόκκινα κεραμίδια, τα ερείπια της αρχαίας Καρθαίας, το ναυάγιο του Britannic, τη μαρίνα του Βουρκαρίου και το μοναδικό δάσος βελανιδιάς στις Κυκλάδες."
+    },
+    highlights: {
+      en: ["Lion of Kea (6th c. BC)", "Ioulida car-free capital", "Ancient Karthaia ruins", "HMHS Britannic shipwreck", "Vourkari marina & seafood", "Oak forest hiking", "Loza sausage & kopanisto cheese"],
+      el: ["Λιοντάρι της Κέας (6ος αι. π.Χ.)", "Ιουλίδα — πεζοδρομημένη πρωτεύουσα", "Αρχαία Καρθαία", "Ναυάγιο Britannic", "Βουρκάρι — μαρίνα & θαλασσινά", "Πεζοπορία σε δρυοδάσος", "Λούζα & κοπανιστή"]
+    },
+    guideLinks: [
+      {
+        href: "/hotels/kea",
+        label: { en: "Where to Stay in Kea", el: "Πού να μείνεις στην Κέα" }
+      }
+    ],
+    seo: {
+      title: {
+        en: "Kea (Tzia) Island Travel Guide: Lion of Kea, Ioulida, Karthaia & Best Beaches | GoGreeceNow",
+        el: "Κέα (Τζιά): Ταξιδιωτικός Οδηγός — Λιοντάρι, Ιουλίδα, Καρθαία & Παραλίες"
+      },
+      description: {
+        en: "Complete travel guide to Kea (Tzia) island: the 6th-century BC Lion carved into bedrock, hilltop Ioulida with red-tiled lanes, ruins of ancient Karthaia, Britannic shipwreck, Vourkari marina, oak forest hiking, loza sausage, thyme honey. Best time to visit, how to get there & tips.",
+        el: "Πλήρης ταξιδιωτικός οδηγός για την Κέα (Τζιά): το Λιοντάρι του 6ου αι. π.Χ., η Ιουλίδα, η αρχαία Καρθαία, το ναυάγιο του Britannic, το Βουρκάρι, πεζοπορία σε δρυοδάσος, η λούζα και το θυμαρίσιο μέλι."
+      }
+    }
   }
 ];
 

@@ -4781,5 +4781,102 @@ export const hotels: HotelCard[] = [
         el: "Πλήρης οδηγός για το πού να μείνετε στη Ναύπακτο και τη Ναυπακτία: το βενετσιάνικο λιμάνι για ιστορία, το Αντίρριο για σύγχρονα παραλιακά ξενοδοχεία, τα Τριζόνια για απόδραση χωρίς αυτοκίνητο και τα ορεινά χωριά για παράδοση. Ειλικρινείς προτάσεις ξενοδοχείων."
       }
     }
+  },
+  {
+    slug: "kea",
+    name: "Where to Stay in Kea",
+    place: "Kea (Tzia) — Western Cyclades",
+    info: {
+      en: "Kea offers villas, boutique hotels and guesthouses near Ioulida, Vourkari and Koundouros. The island's proximity to Athens makes it a favourite for weekenders; book well ahead for summer weekends.",
+      el: "Η Κέα προσφέρει βίλες, boutique ξενοδοχεία και ενοικιαζόμενα δωμάτια κοντά στην Ιουλίδα, το Βουρκάρι και τον Κούνδουρο.",
+    },
+    image: "/images/kea.webp",
+    badge: "Closest Cyclades island to Athens",
+    overview: {
+      en: "Kea (Tzia) accommodation is concentrated in the northern half of the island — around the port of Korissia, the yacht marina village of Vourkari, the organized beach of Koundouros, and the hilltop capital of Ioulida. There are also scattered villas along the western coast near Otzias and the southern coast near Karthaia. Most accommodation is small-scale: family-run studios, villa complexes and a handful of boutique hotels. There are no large resort hotels on Kea, which is part of its character.",
+      el: "Η Κέα έχει μικρά οικογενειακά καταλύματα, βίλες και λίγα boutique ξενοδοχεία. Δεν υπάρχουν μεγάλα resort, που είναι μέρος του χαρακτήρα της.",
+    },
+    description: {
+      en: "Kea is a small island — 131 square kilometres — and the driving time between its main areas is never more than 20 minutes. This means the choice of where to stay matters less for logistical reasons than for character. Vourkari is the social and gastronomic centre, where the yacht crowd eats dinner and the best seafood tavernas are within walking distance of the rooms. Koundouros is the beach base — the island's finest organised beach is a short walk from several villa complexes and small hotels. Ioulida is the cultural base — staying in the car-free hilltop capital puts you in walking distance of the Lion, the Archaeological Museum and the most atmospheric restaurants on the island, but with a 15-minute drive down the hill to reach the sea. Korissia is the practical base — the ferry port has a handful of rooms, a small beach and the island's most functional infrastructure.\n\nThe island's accommodation stock is limited and the demand from Athens is high, particularly on summer weekends. Booking three to four months ahead for July–August and two months ahead for June and September is the realistic minimum. Last-minute availability in peak season is rare. The website Kea BnB and the local agency Kea Properties both handle a significant share of the island's rental inventory.",
+      el: "Η Κέα είναι μικρό νησί — 131 τ.χλμ. — και η οδήγηση μεταξύ περιοχών δεν ξεπερνά ποτέ τα 20 λεπτά. Το Βουρκάρι είναι το κοινωνικό και γαστρονομικό κέντρο. Ο Κούνδουρος είναι η παραλιακή βάση. Η Ιουλίδα είναι η πολιτιστική βάση — στην πεζοδρομημένη πρωτεύουσα. Η Κορησσία είναι η πρακτική βάση στο λιμάνι.",
+    },
+    features: {
+      en: [
+        "Ioulida — car-free cultural base",
+        "Vourkari — marina dining & social life",
+        "Koundouros — best beach proximity",
+        "Korissia — port convenience",
+        "Otzias — quiet northern coast",
+      ],
+      el: ["Ιουλίδα — πεζοδρομημένη πολιτιστική βάση", "Βουρκάρι — μαρίνα & γαστρονομία", "Κούνδουρος — καλύτερη παραλία", "Κορησσία — λιμάνι", "Ότζιας — ήσυχη βόρεια ακτή"],
+    },
+    sections: [
+      {
+        title: { en: "1. Ioulida: Sleep in a car-free hilltop village with terracotta rooftops", el: "1. Ιουλίδα: Διαμονή σε πεζοδρομημένο λόφο" },
+        content: {
+          en: "Ioulida is Kea's hilltop capital — 8km inland from the port, car-free, silent at night, and built on a hillside in terracotta tile and local stone that belongs to a completely different architectural tradition from the whitewashed Cycladic squares of the other islands. The accommodation is limited to a handful of traditional guesthouses, restored stone houses and small boutique hotels carved into the existing fabric of the village. Staying in Ioulida means: the Lion of Kea is a 15-minute walk downhill; the Archaeological Museum is at the village entrance; the Tyrakeion cheese shop is a two-minute walk from the main square; the tavernas serve Keian food to a clientele that is more local than tourist even in August. The trade-off is a 15-minute drive downhill to reach the nearest beach. For the cultural visitor, the hiker, the food-seeker and anyone who wants to understand why Kea is different, Ioulida is the right base.\n\nThere are no large hotels in Ioulida. Accommodation options include the restored stone guesthouses managed by local agencies (Kea BnB, Kea Properties) and a handful of small independent studios. Book well ahead — the inventory is tiny and demand is consistent.",
+          el: "Η Ιουλίδα είναι η πρωτεύουσα της Κέας — 8χλμ από το λιμάνι, πεζοδρομημένη. Η διαμονή είναι περιορισμένη σε παραδοσιακούς ξενώνες. Το Λιοντάρι είναι 15 λεπτά με τα πόδια. Δεν υπάρχουν μεγάλα ξενοδοχεία.",
+        },
+      },
+      {
+        title: { en: "2. Vourkari: Stay above the best seafood in the western Cyclades", el: "2. Βουρκάρι: Διαμονή πάνω από τα καλύτερα θαλασσινά" },
+        content: {
+          en: "Vourkari is a ten-minute drive from the port and functions as Kea's social and gastronomic centre. This is where the sailing yachts moor, where Aristos serves lobster spaghetti on a dock above the water, and where the evening energy of the island concentrates. Accommodation is a mix of small boutique hotels and luxury villas overlooking the marina. The water is immediately accessible — swimming platforms and the small beach at Gialiskari are within walking distance. The character is social, not quiet; the restaurants fill in the evening and the waterfront tables are animated until late.\n\nVourkari is the right base for couples, food-focused visitors and anyone who wants to be where the action is. The marina setting is beautiful at sunset and the quality of the dining is genuinely exceptional by Cycladic standards. The trade-off is that Vourkari faces north toward the mainland and its accommodation lacks the sense of seclusion that the southern or western parts of the island provide.",
+          el: "Το Βουρκάρι είναι το κοινωνικό κέντρο της Κέας. Εδώ είναι τα καλύτερα εστιατόρια, η μαρίνα και η βραδινή ζωή. Η διαμονή είναι μικρά boutique ξενοδοχεία και πολυτελείς βίλες.",
+        },
+      },
+      {
+        title: { en: "3. Koundouros: The beach base — Kea's finest organised sand", el: "3. Κούνδουρος: Η παραλιακή βάση" },
+        content: {
+          en: "Koundouros beach is the island's finest organised swimming beach — a large sheltered bay with shallow turquoise water, sunbeds, watersports and several tavernas and beach bars above the sand. The accommodation around Koundouros is a mix of villa complexes and small hotels that specifically serve the beach market: the beach is a short walk from most properties, the restaurants are within walking distance, and the atmosphere is oriented toward swimming and sun rather than sightseeing or cultural exploration.\n\nKoundouros fills on summer weekends with Athenians who drive down from Ioulida or Korissia. Midweek it is substantially quieter. The area lacks the evening atmosphere of Vourkari or the character of Ioulida, but for a beach-focused holiday — the thing most visitors to the Cyclades actually want — Koundouros delivers Kea's best combination of accommodation and beach access in a single location.",
+          el: "Ο Κούνδουρος είναι η καλύτερη οργανωμένη παραλία της Κέας. Τα καταλύματα είναι βίλες και μικρά ξενοδοχεία κοντά στην παραλία.",
+        },
+      },
+      {
+        title: { en: "4. Korissia (port area): Convenience over atmosphere", el: "4. Κορησσία: Εξυπηρέτηση στο λιμάνι" },
+        content: {
+          en: "Korissia is where the ferry arrives and the functional centre of the island — car hire offices, ATMs, a small beach, a handful of cafés and tavernas, and the bus stop for Ioulida. Accommodation here is limited to a few rooms above the port and a small hotel. It is the least atmospheric place to stay on Kea — convenient for late arrivals and early departures, but not where the island's character reveals itself. Most visitors who stay in Korissia without renting a car and exploring Ioulida or Vourkari leave with an impression of Kea that is not representative of the island.",
+          el: "Η Κορησσία είναι το λιμάνι — το λιγότερο ατμοσφαιρικό μέρος της Κέας. Βολικό για άφιξη/αναχώρηση.",
+        },
+      },
+    ],
+    services: {
+      en: [
+        "Most properties: WiFi, air conditioning, parking",
+        "Vourkari: waterfront dining within walking distance",
+        "Koundouros: beach bars, watersports, sunbeds",
+        "Car essential for areas outside Ioulida and Koundouros",
+        "Ioulida: car-free, park at lower town entrance",
+      ],
+      el: ["WiFi, κλιματισμός, πάρκινγκ", "Βουρκάρι: εστιατόρια στη μαρίνα", "Κούνδουρος: beach bar, θαλάσσια σπορ"],
+    },
+    faq: [
+      {
+        q: { en: "What is the best area to stay in Kea?", el: "Ποια είναι η καλύτερη περιοχή για διαμονή στην Κέα;" },
+        a: { en: "Vourkari for dining and social life. Koundouros for beach proximity. Ioulida for culture and hiking. Korissia for convenience (port area). Most visitors choose Vourkari or Koundouros based on whether they prioritise food or swimming.", el: "Βουρκάρι για φαγητό. Κούνδουρος για παραλία. Ιουλίδα για πολιτισμό." },
+      },
+      {
+        q: { en: "Do I need a car in Kea?", el: "Χρειάζομαι αυτοκίνητο στην Κέα;" },
+        a: { en: "Yes — strongly recommended. Taxis cover the Korissia–Ioulida and Ioulida–Vourkari runs but a car is essential for reaching Koundouros, the southern coast, and the Karthaia trailhead. Ioulida itself is car-free. Scooter rental is available in Korissia.", el: "Ναι — συνιστάται έντονα. Η Ιουλίδα είναι πεζοδρομημένη. Υπάρχει ενοικίαση μηχανών στην Κορησσία." },
+      },
+      {
+        q: { en: "When should I book accommodation in Kea?", el: "Πότε να κλείσω διαμονή στην Κέα;" },
+        a: { en: "For July and August: three to four months ahead, especially for weekends (Athenians book quickly). For June and September: two months ahead. For shoulder season (May, October): one month ahead is usually sufficient. Inventory is small; last-minute availability in peak season is uncommon.", el: "Για Ιούλιο-Αύγουστο: 3-4 μήνες πριν. Για Ιούνιο-Σεπτέμβριο: 2 μήνες πριν." },
+      },
+      {
+        q: { en: "Is Kea good for families with children?", el: "Είναι η Κέα κατάλληλη για οικογένειες;" },
+        a: { en: "Yes — Koundouros is the best family base with its organised beach, shallow water and villa-style accommodation. Otzias on the northern coast is quieter with calm water. The island's small scale and easy logistics make it suitable for families.", el: "Ναι — ο Κούνδουρος είναι η καλύτερη βάση για οικογένειες." },
+      },
+    ],
+    seo: {
+      title: {
+        en: "Where to Stay in Kea (Tzia): Best Areas, Hotels & Accommodation | GoGreeceNow",
+        el: "Πού να Μείνετε στην Κέα (Τζιά): Περιοχές, Ξενοδοχεία & Διαμονή | GoGreeceNow",
+      },
+      description: {
+        en: "Complete guide to where to stay in Kea (Tzia) — Vourkari marina for seafood and social life, Koundouros for the best beach proximity, Ioulida for culture and hiking, Korissia for port convenience. Honest area recommendations and booking advice.",
+        el: "Πλήρης οδηγός για τη διαμονή στην Κέα — Βουρκάρι, Κούνδουρος, Ιουλίδα και Κορησσία. Ειλικρινείς συστάσεις περιοχών.",
+      },
+    },
   }
 ];

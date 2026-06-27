@@ -318,4 +318,32 @@ export const MAP_PINS: Pin[] = [
     label: { en: "Nafpaktos", el: "Ναύπακτος" },
     tagline: { en: "Lepanto's Venetian harbour", el: "Το βενετσιάνικο λιμάνι της Ναυπάκτου" },
   },
+  {
+    id: "karpathos",
+    x: 78.5, y: 77.4,
+    href: "/destinations/karpathos",
+    label: { en: "Karpathos", el: "Κάρπαθος" },
+    tagline: { en: "Island of the Winds", el: "Νησί των Ανέμων" },
+  },
+  {
+    id: "kea",
+    x: 52.5, y: 54.4,
+    href: "/destinations/kea",
+    label: { en: "Kea", el: "Κέα" },
+    tagline: { en: "Lion, Ioulida & Britannic shipwreck", el: "Λιοντάρι, Ιουλίδα & Britannic" },
+  },
+  {
+    id: "chios",
+    x: 67.9, y: 45.4,
+    href: "/destinations/chios",
+    label: { en: "Chios", el: "Χίος" },
+    tagline: { en: "Mastica villages & medieval castles", el: "Μαστιχοχώρια & μεσαιωνικά κάστρα" },
+  },
+  {
+    id: "samos",
+    x: 75.3, y: 53.1,
+    href: "/destinations/samos",
+    label: { en: "Samos", el: "Σάμος" },
+    tagline: { en: "Pythagoras, wine & beaches", el: "Πυθαγόρας, κρασί & παραλίες" },
+  },
 ];
