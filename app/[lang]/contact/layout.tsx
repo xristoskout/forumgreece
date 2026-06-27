@@ -5,8 +5,8 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   const { lang } = await params;
 
   const title = lang === "el"
-    ? "Επικοινωνήστε με το GoGreeceNow — Διαφήμιση & Ταξιδιωτικές Ερωτήσεις"
-    : "Contact GoGreeceNow — Get in Touch for Promotion & Travel Questions";
+    ? "Επικοινωνία | GoGreeceNow — Διαφήμιση & Ερωτήσεις"
+    : "Contact GoGreeceNow | Advertising & Travel Questions";
 
   const description = lang === "el"
     ? "Επικοινωνήστε με το GoGreeceNow για διαφημιστικές ευκαιρίες, συνεργασίες ή οποιαδήποτε ερώτηση σχετικά με ταξίδια στην Ελλάδα."

@@ -20,9 +20,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const canonicalUrl = `${SITE_URL}/${lang}/guides/${slug}/best-beaches`;
 
   return {
-    title: lang === "el"
-      ? `Καλύτερες Παραλίες στο ${dest.name} | GoGreeceNow`
-      : `Best Beaches in ${dest.name} | GoGreeceNow`,
+    title: {
+      absolute: lang === "el"
+        ? `Καλύτερες Παραλίες στο ${dest.name} | GoGreeceNow`
+        : `Best Beaches in ${dest.name} | GoGreeceNow`,
+    },
     description: lang === "el"
       ? `Ανακάλυψε τις καλύτερες παραλίες στο ${dest.name}. Οδηγός με τις ωραιότερες ακτές, οργανωμένες και απόμερες.`
       : `Discover the best beaches in ${dest.name}. Complete guide with the finest sandy shores, organized beaches and hidden coves.`,

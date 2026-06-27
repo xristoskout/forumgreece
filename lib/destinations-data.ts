@@ -260,7 +260,7 @@ export const destinations: Destination[] = [
     ],
     seo: {
       title: {
-        en: "Aegina Travel Guide: Temple of Aphaia, Perdika & Things to Do in Aegina",
+        en: "Aegina Travel Guide: Beaches, Temples & Hidden Gems",
         el: "Αίγινα: Οδηγός Ταξιδιού — Ναός Αφαίας, Πέρδικα & Αξιοθέατα"
       },
       description: {
@@ -573,7 +573,7 @@ export const destinations: Destination[] = [
     featured: true,
     seo: {
       title: {
-        en: "Lefkada Travel Guide: Porto Katsiki, Egremni, Nydri & Things to Do | GoGreeceNow",
+        en: "Lefkada Travel Guide: Porto Katsiki, Egremni, Nydri & Things to Do",
         el: "Λευκάδα: Οδηγός Ταξιδιού — Πόρτο Κατσίκι, Εγκρεμνοί, Νυδρί & Αξιοθέατα"
       },
       description: {
@@ -1647,7 +1647,7 @@ export const destinations: Destination[] = [
     featured: true,
     seo: {
       title: {
-        en: "Chios Travel Guide: Mastic Villages, Pyrgi & Mesta, Beaches | GoGreeceNow",
+        en: "Chios Travel Guide: Mastic Villages, Pyrgi & Mesta, Beaches",
         el: "Χίος: Οδηγός Ταξιδιού — Μαστιχοχώρια, Πυργί, Μεστά, Παραλίες"
       },
       description: {
@@ -1683,7 +1683,7 @@ export const destinations: Destination[] = [
     featured: true,
     seo: {
       title: {
-        en: "Andros Travel Guide: Hiking, Chora, Goulandris Museum & Best Beaches | GoGreeceNow",
+        en: "Andros Travel Guide: Hiking, Chora, Goulandris Museum & Best Beaches",
         el: "Άνδρος: Οδηγός Ταξιδιού — Μονοπάτια, Χώρα, Μουσείο Γουλανδρή & Παραλίες"
       },
       description: {
@@ -1722,7 +1722,7 @@ export const destinations: Destination[] = [
     ],
     seo: {
       title: {
-        en: "Nafpaktos Travel Guide: Lepanto, Trizonia, Messolonghi & Mountain Villages | GoGreeceNow",
+        en: "Nafpaktos Travel Guide: Lepanto, Trizonia, Messolonghi & Mountain Villages",
         el: "Ναύπακτος: Ταξιδιωτικός Οδηγός — Λιμάνι, Κάστρο, Τριζόνια, Μεσολόγγι & Ορεινά Χωριά"
       },
       description: {
@@ -1756,7 +1756,7 @@ export const destinations: Destination[] = [
     ],
     seo: {
       title: {
-        en: "Kea (Tzia) Island Travel Guide: Lion of Kea, Ioulida, Karthaia & Best Beaches | GoGreeceNow",
+        en: "Kea (Tzia) Island Travel Guide: Lion of Kea, Ioulida, Karthaia & Best Beaches",
         el: "Κέα (Τζιά): Ταξιδιωτικός Οδηγός — Λιοντάρι, Ιουλίδα, Καρθαία & Παραλίες"
       },
       description: {

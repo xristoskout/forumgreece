@@ -20,9 +20,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const canonicalUrl = `${SITE_URL}/${lang}/guides/${slug}/things-to-do`;
 
   return {
-    title: lang === "el"
-      ? `Πράγματα να Κάνεις στο ${dest.name} | GoGreeceNow`
-      : `Things to Do in ${dest.name} | GoGreeceNow`,
+    title: {
+      absolute: lang === "el"
+        ? `Πράγματα να Κάνεις στο ${dest.name} | GoGreeceNow`
+        : `Things to Do in ${dest.name} | GoGreeceNow`,
+    },
     description: lang === "el"
       ? `Τα καλύτερα πράγματα να κάνεις στο ${dest.name}. Αξιοθέατα, δραστηριότητες, εκδρομές και εμπειρίες για το ταξίδι σου.`
       : `Best things to do in ${dest.name}. Top attractions, activities, day trips and experiences for your trip.`,
