@@ -196,7 +196,7 @@ export default function HomePageClient({
         <div className="absolute inset-0 z-0 pointer-events-none">
           <Image
             src="/images/hero-greece.webp"
-            alt="GoGreeceNow Hero"
+            alt="GoGreeceNow - Greece Travel Destination Guide"
             fill
             priority
             fetchPriority="high"

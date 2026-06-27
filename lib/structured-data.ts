@@ -141,6 +141,32 @@ export function articleSchema(data: {
   };
 }
 
+export function hotelSchema(data: {
+  name: string;
+  description: string;
+  image: string;
+  url: string;
+  address?: string;
+  telephone?: string;
+  email?: string;
+  priceRange?: string;
+  starRating?: number;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Hotel",
+    name: data.name,
+    description: data.description,
+    image: data.image,
+    url: data.url,
+    ...(data.address ? { address: { "@type": "PostalAddress", streetAddress: data.address } } : {}),
+    ...(data.telephone ? { telephone: data.telephone } : {}),
+    ...(data.email ? { email: data.email } : {}),
+    ...(data.priceRange ? { priceRange: data.priceRange } : {}),
+    ...(data.starRating ? { starRating: { "@type": "Rating", ratingValue: data.starRating } } : {}),
+  };
+}
+
 export function localBusinessSchema(data: {
   name: string;
   description: string;
