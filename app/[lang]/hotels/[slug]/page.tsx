@@ -3,7 +3,7 @@ import { notFound, redirect, permanentRedirect } from "next/navigation";
 import { hotels, SITE_URL } from "../../../../lib/content";
 import HotelDetailsClient from "./hotel-details-client";
 import { Lang, isLang, supportedLangs } from "../../../../lib/locale";
-import { breadcrumbSchema } from "../../../../lib/structured-data";
+import { breadcrumbSchema, hotelSchema } from "../../../../lib/structured-data";
 
 type HotelPageProps = {
   params: Promise<{ lang: string; slug: string }>;
@@ -122,11 +122,26 @@ export default async function HotelPage({ params }: HotelPageProps) {
     { label: item.name, path: `/hotels/${slug}` },
   ]);
 
+  const hotel = hotelSchema({
+    name: item.name,
+    description: item.overview?.[lang] ?? item.info[lang],
+    image: item.image,
+    url: `${SITE_URL}/${lang}/hotels/${slug}`,
+    ...(item.place ? { address: item.place } : {}),
+    ...(item.phone ? { telephone: item.phone } : {}),
+    ...(item.email ? { email: item.email } : {}),
+    priceRange: "€€",
+  });
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(hotel) }}
       />
       {faqJsonLd && (
         <script

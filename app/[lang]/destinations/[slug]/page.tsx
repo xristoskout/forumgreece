@@ -106,7 +106,6 @@ export default async function DestinationDetailsPage({ params }: Props) {
     description: destination.seo?.description[lang] || destination.overview[lang],
     image: destination.image,
     url: canonicalUrl,
-    datePublished: "2025-01-01",
     dateModified: new Date().toISOString().split("T")[0],
   });
 

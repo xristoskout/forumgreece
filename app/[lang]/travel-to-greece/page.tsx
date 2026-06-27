@@ -399,7 +399,7 @@ export default function TravelToGreecePage() {
         <div className="absolute inset-0">
           <Image
             src="/images/hero/greece-main.webp"
-            alt="Greece travel forums background"
+            alt="Travel to Greece - destination guide background"
             fill
             className="object-cover"
             priority

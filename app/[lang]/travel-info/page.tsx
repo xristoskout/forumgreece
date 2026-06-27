@@ -213,7 +213,7 @@ export default function TravelInfoHubPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/hero-greece.webp"
-            alt="Greece travel planning background"
+            alt="Greece travel planning guide background"
             fill
             className="object-cover"
             priority

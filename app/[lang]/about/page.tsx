@@ -123,7 +123,7 @@ export default async function AboutPage({ params }: Props) {
 
       <section className="relative overflow-hidden bg-slate-900 py-32 sm:py-40">
         <div className="absolute inset-0 z-0 opacity-40 mix-blend-overlay">
-            <Image src="/images/hero/greece-main.webp" alt="About Greece" fill className="object-cover" sizes="100vw" />
+            <Image src="/images/hero/greece-main.webp" alt="About GoGreeceNow - Greece Travel Guide" fill className="object-cover" sizes="100vw" />
         </div>
         <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
           <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-6xl drop-shadow-xl">
