@@ -12,7 +12,7 @@ type Props = {
 
 const seo = {
   en: {
-    title: "What to Eat in Greece: Regional Dishes, Taverns & Local Food Guides",
+    title: "What to Eat in Greece: Food Guides & Local Taverns",
     description:
       "Explore Greek food guides, regional dishes and local drinks to add more flavor to your Greece trip planning.",
     path: "/en/collections/greece-food-and-drink",

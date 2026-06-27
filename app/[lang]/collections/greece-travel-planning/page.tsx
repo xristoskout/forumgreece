@@ -24,7 +24,7 @@ function withLang(path: string, lang: Lang) {
 
 const seo = {
   en: {
-    title: "Greece Travel Planning Hub: Transport, Timing & Tips",
+    title: "Greece Travel Planning: Transport, Timing & Tips",
     description:
       "Plan a trip to Greece with practical guides for transport, timing, destinations, stays and everyday travel decisions.",
     path: "/en/collections/greece-travel-planning",

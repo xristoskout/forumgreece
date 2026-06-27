@@ -12,7 +12,7 @@ type Props = {
 
 const seo = {
   en: {
-    title: "Things to Do in Greece: Tours, Boat Trips & Local Experiences",
+    title: "Things to Do in Greece: Tours & Local Experiences",
     description:
       "Browse Greece tours, boat trips and local experiences to add memorable activities and day trips to your itinerary.",
     path: "/en/collections/greece-tours-and-experiences",
