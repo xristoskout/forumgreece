@@ -13450,6 +13450,13 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       ]
     },
     {
+      title: { en: "Honest Advice — What to Skip in Kea", el: "Ειλικρινής Συμβουλή — Τι να Αποφύγεις στην Κέα" },
+      text: {
+        en: "✕ **Weekend bookings** — Kea fills with Athenians from Friday evening to Sunday afternoon. Vourkari restaurants are fully booked, Koundouros beach is crowded, and the Korissia–Ioulida road is busy. A midweek visit (Monday–Thursday) gives a fundamentally different and calmer island.\n\n✕ **Expecting whitewashed Cycladic architecture** — Kea's architecture is terracotta roofs, stone masonry and red tiles. It is beautiful but does not look like Santorini or Paros. Visitors who expect white and blue disappointment.\n\n✕ **Visiting Karthaia unprepared** — The 12.5km coastal hike without water, shade or proper footwear in July is genuinely dangerous. The alternative: guided hike with Kea Terra Active, or boat transfer from Korissia to Karthaia.\n\n✕ **Aristos without reservation** — Walking into Aristos in Vourkari without a booking on a summer evening will result in rejection. The restaurant fills by late afternoon for the same evening. Reserve a day ahead.\n\n💡 What nobody tells you: Kea's oak forest in the centre of the island — the only oak forest in the Cyclades — offers the most unexpected and rewarding hiking on the island. The routes through this highland interior are completely different from the coastal landscapes that define the other islands.",
+        el: "✕ **Κράτηση Σαββατοκύριακου** — Η Κέα γεμίζει Αθηναίους από Παρασκευή ως Κυριακή. Η επίσκεψη Δευτέρα-Πέμπτη δίνει μια εντελώς διαφορετική εμπειρία.\n\n✕ **Περιμένοντας κυκλαδίτικη αρχιτεκτονική** — Η αρχιτεκτονική της Κέας είναι πέτρινη με κόκκινα κεραμίδια, όχι άσπρη και γαλάζια.\n\n✕ **Επίσκεψη στην Καρθαία χωρίς προετοιμασία** — Η πεζοπορία 12,5χλμ χωρίς νερό τον Ιούλιο είναι επικίνδυνη.\n\n✕ **Αρίστος χωρίς κράτηση** — Χωρίς κράτηση το καλοκαίρι, θα απορριφθείτε.\n\n💡 Αυτό που δεν σου λέει κανείς: Το δάσος βελανιδιάς στο κέντρο της Κέας είναι το μοναδικό δάσος βελανιδιάς στις Κυκλάδες και προσφέρει ανέλπιστη πεζοπορία."
+      }
+    },
+    {
       layout: "faq",
       title: { en: "FAQ about Kea", el: "Συχνές ερωτήσεις για την Κέα" },
       items: [

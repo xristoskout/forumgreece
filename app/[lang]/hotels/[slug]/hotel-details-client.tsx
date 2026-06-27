@@ -62,6 +62,7 @@ const STAY22_EMBEDS: Record<string, string> = {
     chios: "https://stay22.com/embed/6a3286af924c59c0ff9dbf4b",
     andros: "https://stay22.com/embed/6a379b93f2f946e502905fa4",
     nafpaktos: "https://stay22.com/embed/6a37a7c0f2f946e5029094ce",
+    kea: "https://stay22.com/embed/6a3f79ab1c8b38e97c6828b1",
 };
 
 const HOTEL_NAMES: Record<string, string[]> = {
