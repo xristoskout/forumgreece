@@ -13252,4 +13252,232 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       ]
     },
   ],
+  kea: [
+    {
+      title: { en: "Why visit Kea", el: "Γιατί να επισκεφθείς την Κέα" },
+      layout: "numbered",
+      items: [
+        {
+          title: { en: "The Lion of Kea: a 6th-century BC sculpture with a smile that has not aged", el: "Το λιοντάρι της Κέας: ένα γλυπτό του 6ου αιώνα π.Χ. με χαμόγελο που δεν γέρασε" },
+          text: { en: "The Liontas — the Lion of Kea — sits on a rock face on the hillside below Ioulida's eastern edge, carved directly into the natural grey schist of the slope sometime around 600 BC. It is nearly six metres long and over three metres tall, the largest archaic rock-cut sculpture in Greece and one of the oldest. The walk from Ioulida takes approximately 15 minutes on a signposted path. The lion is free to visit, open at all times.", el: "Το Λιοντάρι της Κέας βρίσκεται σε μια πλαγιά κάτω από την ανατολική άκρη της Ιουλίδας, λαξευμένο απευθείας στον γκρίζο σχιστόλιθο γύρω στο 600 π.Χ. Έχει μήκος σχεδόν έξι μέτρα και ύψος πάνω από τρία μέτρα. Η διαδρομή από την Ιουλίδα διαρκεί περίπου 15 λεπτά." }
+        },
+        {
+          title: { en: "Ioulida: a hilltop capital unlike any other in the Cyclades", el: "Ιουλίδα: μια πρωτεύουσα σε λόφο διαφορετική από κάθε άλλη στις Κυκλάδες" },
+          text: { en: "Ioulida, the island's capital, is built on a hillside in the island's centre, 8km from the port, with terracotta-tiled rooftops, stone houses in earthy ochre and warm sienna, narrow stepped alleys shaded by traditional stegadia (vaulted stone galleries). The town is car-free — like Hydra, no vehicles enter — and its silence belongs to a Mediterranean small-town life that the Greek islands increasingly stage rather than live.", el: "Η Ιουλίδα, η πρωτεύουσα του νησιού, είναι χτισμένη σε μια πλαγιά στο κέντρο του νησιού. Έχει κεραμοσκεπές, πέτρινα σπίτια σε γήινες αποχρώσεις και στενά σοκάκια. Η πόλη είναι ελεύθερη από αυτοκίνητα." }
+        },
+        {
+          title: { en: "Ancient Karthaia: temples at the edge of the world", el: "Αρχαία Καρθαία: ναοί στην άκρη του κόσμου" },
+          text: { en: "On the southeastern coast of Kea, accessible only by a demanding 12.5km hiking trail from Ioulida or by boat from the north, the ruins of ancient Karthaia occupy a dramatic sea-washed promontory. The site contains the foundations of temples dedicated to Apollo and Athena, a theatre, and the walls of a city inhabited from the 8th century BC until the late 6th century AD.", el: "Στη νοτιοανατολική ακτή της Κέας, προσβάσιμα μόνο μέσω δύσκολου μονοπατιού 12,5χλμ από την Ιουλίδα ή με βάρκα, τα ερείπια της αρχαίας Καρθαίας βρίσκονται σε μια δραματική χερσόνησο." }
+        },
+        {
+          title: { en: "The HMHS Britannic — the Titanic's sister ship, resting at 120 metres", el: "Το HMHS Britannic — το αδελφό πλοίο του Τιτανικού, σε βάθος 120 μέτρων" },
+          text: { en: "In 1916, the HMHS Britannic — sister ship of the Titanic, converted to a hospital ship during World War I — struck a German naval mine between Kea and Makronissos and sank in 55 minutes. The wreck lies at approximately 120 metres depth, accessible only to technical divers, but the story and the underwater virtual reality experiences through the Kea Underwater Historic Park make it compelling for all visitors.", el: "Το 1916, το HMHS Britannic — αδελφό πλοίο του Τιτανικού — χτύπησε γερμανική νάρκη μεταξύ Κέας και Μακρονήσου και βυθίστηκε σε 55 λεπτά. Το ναυάγιο βρίσκεται σε βάθος περίπου 120 μέτρων." }
+        },
+        {
+          title: { en: "Vourkari: yachts, seafood and the most elegant small marina in the western Cyclades", el: "Βουρκάρι: γιοτ, θαλασσινά και η πιο κομψή μαρίνα των δυτικών Κυκλάδων" },
+          text: { en: "Vourkari is a fishing village that has evolved into the social centre of the island's summer season without losing its harbour character — fishing boats still moor alongside yachts, and the best seafood tavernas (Aristos, 9 Kores, To Kyma) serve lobster spaghetti and fried baby kalamari at tables a metre above the water. The sunset from Vourkari's waterfront is one of the finest small-harbour sunsets in the Cyclades.", el: "Το Βουρκάρι είναι ένα ψαροχώρι που εξελίχθηκε στο κοινωνικό κέντρο του νησιού. Τα ψαροκάικα δένουν ακόμα δίπλα στα γιοτ, και οι καλύτερες ταβέρνες σερβίρουν λοβό μακαρόνια και τηγανητά καλαμαράκια." }
+        },
+        {
+          title: { en: "An island that functions on its own terms — one hour from the capital", el: "Ένα νησί που λειτουργεί με τους δικούς του όρους — μία ώρα από την πρωτεύουσα" },
+          text: { en: "Kea is closely observed and intensely loved by a specific community — educated Athenians, sailing families, artists and writers who have been returning for decades. That community's presence has produced an island with genuinely good restaurants, well-maintained trails, active archaeological sites and a social fabric that is not dependent on passing tourist traffic.", el: "Η Κέα αγαπιέται από μια συγκεκριμένη κοινότητα — μορφωμένους Αθηναίους, οικογένειες ιστιοπλοΐας, καλλιτέχνες και συγγραφείς. Η παρουσία τους έχει δημιουργήσει ένα νησί με καλά εστιατόρια, συντηρημένα μονοπάτια και ενεργούς αρχαιολογικούς χώρους." }
+        },
+      ]
+    },
+    {
+      title: { en: "Best time to visit Kea", el: "Καλύτερη εποχή για επίσκεψη στην Κέα" },
+      layout: "list",
+      alert: { en: "The Weekend Rule: In July and August, Kea's beaches and Vourkari waterfront fill rapidly from Friday evening through Sunday as Athenians arrive on the last Lavrio ferries. If you want a peaceful beach day at Otzias or Koundouros, Tuesday through Thursday are the days when the island most closely resembles what it is the other nine months of the year.", el: "Ο κανόνας του Σαββατοκύριακου: Τον Ιούλιο και Αύγουστο, οι παραλίες γεμίζουν από την Παρασκευή μέχρι την Κυριακή. Αν θέλετε ήσυχη παραλία, Τρίτη με Πέμπτη είναι οι καλύτερες μέρες." },
+      items: [
+        {
+          title: { en: "March – May", el: "Μάρτιος – Μάιος" },
+          text: { en: "Spring is when Kea reveals its oak forests and wildflower-covered hillsides in full colour. 12 hiking routes are at their finest: comfortable temperatures, the Lion of Kea in morning mist, the Karthaia trail in full green. The island belongs almost entirely to those who know it.", el: "Η άνοιξη αποκαλύπτει τα δάση βελανιδιάς και τους λόφους γεμάτους αγριολούλουδα. Τα 12 μονοπάτια είναι στα καλύτερά τους." }
+        },
+        {
+          title: { en: "June", el: "Ιούνιος" },
+          text: { en: "The ideal month combining warm enough sea for daily swimming with uncrowded beaches and tavernas that have time to cook properly. Vourkari's season begins in earnest; the sailing community starts arriving. Quiet midweek even at peak attractions.", el: "Ο ιδανικός μήνας με ζεστή θάλασσα για καθημερινό μπάνιο, παραλίες χωρίς πολύ κόσμο και ταβέρνες που μαγειρεύουν σωστά." }
+        },
+        {
+          title: { en: "July – August", el: "Ιούλιος – Αύγουστος" },
+          text: { en: "Peak season — busy on weekends, significantly quieter midweek. The Fairy Tale Festival in July, sailing regattas and the Festival of the Four Cities animate the island's cultural calendar. Beaches are busy; tavernas excellent; Vourkari at its most cosmopolitan.", el: "Περίοδος αιχμής — πολυσύχναστα Σαββατοκύριακα, σημαντικά πιο ήσυχα τις καθημερινές. Το Φεστιβάλ Παραμυθιού, οι ιστιοπλοϊκοί αγώνες και το Φεστιβάλ των Τεσσάρων Πόλεων ζωντανεύουν το νησί." }
+        },
+        {
+          title: { en: "September – October", el: "Σεπτέμβριος – Οκτώβριος" },
+          text: { en: "The quiet luxury season — locals' favourite. Sea still warm (24–25°C in September), the summer crowd gone, the light turning golden-amber on the terracotta rooftops of Ioulida. Walking the Lion trail or the Karthaia route in this light is the island's best photographic moment.", el: "Η ήσυχη πολυτελής σεζόν — η αγαπημένη των ντόπιων. Θάλασσα ζεστή, τα πλήθη έχουν φύγει, το φως γίνεται χρυσό." }
+        },
+      ]
+    },
+    {
+      title: { en: "How to get there", el: "Πώς να πας" },
+      layout: "list",
+      alert: { en: "Critical note — Lavrio, not Piraeus: Ferries to Kea depart exclusively from Lavrio port in Attica — not Piraeus, not Rafina. Lavrio is approximately 70km from central Athens (50–60 minutes via the Attika Tollway) and about 30–35 minutes from Athens International Airport.", el: "Σημαντικό — Λαύριο, όχι Πειραιάς: Τα πλοία για Κέα αναχωρούν αποκλειστικά από το Λαύριο. Το Λαύριο απέχει περίπου 70χλμ από το κέντρο της Αθήνας." },
+      items: [
+        {
+          title: { en: "Ferry from Lavrio", el: "Πλοίο από το Λαύριο" },
+          text: { en: "The only way to reach Kea. Hellenic Seaways and SeaJets serve the Lavrio–Korissia route year-round, with significantly increased frequency in summer. Journey time approximately one hour. Tickets cost approximately €11.50 one-way. The ferry also connects Kea to Kythnos (1.5 hours), opening up a western Cyclades circuit.", el: "Ο μόνος τρόπος για να φτάσετε στην Κέα. Τα δρομολόγια εξυπηρετούνται όλο το χρόνο, με αυξημένες συχνότητες το καλοκαίρι. Διάρκεια περίπου μία ώρα." }
+        },
+        {
+          title: { en: "Via Athens International Airport", el: "Μέσω Αεροδρομίου Αθηνών" },
+          text: { en: "Athens Airport (ATH) is approximately 30–35 minutes from Lavrio by taxi or private transfer. This makes Kea one of the most airport-proximate Greek island experiences: land in Athens, transfer to Lavrio, one hour by ferry. Total travel time from the airport to Kea's port: approximately 2 hours in good conditions.", el: "Το αεροδρόμιο Αθηνών απέχει περίπου 30-35 λεπτά από το Λαύριο με ταξί. Συνολικός χρόνος από το αεροδρόμιο στο λιμάνι: περίπου 2 ώρες." }
+        },
+        {
+          title: { en: "Getting around the island", el: "Μετακινήσεις στο νησί" },
+          text: { en: "A car is strongly recommended for accessing the full island — the remoter beaches, the Karthaia trailhead, Koundouros and the southern coast all require independent transport. Ioulida itself is car-free; park at the lower town and walk up. Bike rental is available from Korissia.", el: "Αυτοκίνητο συνιστάται ανεπιφύλακτα. Η Ιουλίδα είναι ελεύθερη αυτοκινήτων. Ενοικίαση ποδηλάτων διαθέσιμη από την Κορησσία." }
+        },
+        {
+          title: { en: "By sailing yacht", el: "Με ιστιοπλοϊκό" },
+          text: { en: "Kea is a primary stop on the Athens-Cyclades sailing route — the island sits directly on the line from the Saronic Gulf into the western Cyclades. Vourkari's marina is one of the most well-equipped in the islands for provisioning and mooring.", el: "Η Κέα είναι κύρια στάση στην ιστιοπλοϊκή διαδρομή Αθήνα-Κυκλάδες. Η μαρίνα του Βουρκαρίου είναι από τις καλύτερα εξοπλισμένες." }
+        },
+      ]
+    },
+    {
+      title: { en: "Top attractions & experiences", el: "Κορυφαία αξιοθέατα & εμπειρίες" },
+      layout: "numbered",
+      items: [
+        {
+          title: { en: "The Lion of Kea (Liontas)", el: "Το Λιοντάρι της Κέας (Λιώντας)" },
+          text: { en: "A 15-minute walk east from Ioulida on a signposted path leads to the Liontas — resting on a rock face since approximately 600 BC. The sculpture is carved directly into the natural schist, nearly six metres long, with an expression that reads as a serene smile — an unusual quality in archaic Greek sculpture. The lion is free to visit, open at all times, and requires no prior booking.", el: "Περπατώντας 15 λεπτά ανατολικά από την Ιουλίδα, το Λιοντάρι βρίσκεται λαξευμένο στον φυσικό σχιστόλιθο από το 600 π.Χ. Μήκους σχεδόν έξι μέτρων, με μια ήρεμη έκφραση." }
+        },
+        {
+          title: { en: "Ioulida — the car-free hilltop capital", el: "Ιουλίδα — η πρωτεύουσα χωρίς αυτοκίνητα" },
+          text: { en: "Ioulida is unlike any other Cycladic capital. Its houses have terracotta tile rooftops, lanes paved with local stone and shaded by stegadia galleries. The Archaeological Museum of Kea holds an important collection from the island's four ancient cities, including terracotta female figurines from the 17th century BC.", el: "Η Ιουλίδα έχει κεραμοσκεπές, πέτρινα σοκάκια. Το Αρχαιολογικό Μουσείο φιλοξενεί σημαντική συλλογή από τις τέσσερις αρχαίες πόλεις του νησιού." }
+        },
+        {
+          title: { en: "Ancient Karthaia", el: "Αρχαία Καρθαία" },
+          text: { en: "Karthaia can be reached by trail (approximately 12.5km from Ioulida — a demanding full-day hike) or by boat from Korissia or Vourkari. The site contains the foundations of the Doric Temple of Apollo, the Temple of Athena, a well-preserved theatre and city walls. A beach lies directly below the promontory — swimming here with the temple ruins visible above is one of the defining experiences the island offers.", el: "Η Καρθαία προσεγγίζεται με μονοπάτι (12,5χλμ) ή με βάρκα. Περιέχει τα θεμέλια ναών, θέατρο και τείχη. Μια παραλία βρίσκεται κάτω από την χερσόνησο." }
+        },
+        {
+          title: { en: "Vourkari — the social and gastronomic heart", el: "Βουρκάρι — η κοινωνική και γαστρονομική καρδιά" },
+          text: { en: "Vourkari, a ten-minute drive north of Korissia port, is where Kea's social life concentrates. The waterfront is lined with yachts moored stern-to; the restaurants above serve some of the finest seafood in the western Cyclades — Aristos on the dock is famous for lobster spaghetti, and 9 Kores operates at the higher end with creative Greek dishes.", el: "Το Βουρκάρι είναι το κοινωνικό κέντρο του νησιού. Τα εστιατόρια σερβίρουν θαλασσινά. Το Aristos φημίζεται για τα λοβό μακαρόνια." }
+        },
+        {
+          title: { en: "Panagia Kastriani Monastery", el: "Μονή Παναγίας Καστριανής" },
+          text: { en: "On the northern tip of the island, the Panagia Kastriani Monastery clings to a cliff face above the sea with views of the Attic coastline and the island of Makronissos. Built in the early 18th century, it is the island's most important religious site. The road to the monastery passes through the island's most intact oak forest.", el: "Στη βόρεια άκρη του νησιού, η μονή είναι χτισμένη σε γκρεμό με θέα στην ακτή της Αττικής. Χτισμένη στις αρχές του 18ου αιώνα." }
+        },
+        {
+          title: { en: "Agia Irini — Bronze Age city that traded with Minoan Crete", el: "Αγία Ειρήνη — Πρωτόπολη που εμπορευόταν με τη Μινωική Κρήτη" },
+          text: { en: "Near Vourkari, one of the most significant Bronze Age settlements in the Cyclades was excavated by the American School of Classical Studies. Occupied continuously from approximately 3000 BC to 1000 BC, the site yielded terracotta female figures now in the National Archaeological Museum in Athens.", el: "Κοντά στο Βουρκάρι, ένας από τους σημαντικότερους οικισμούς της Εποχής του Χαλκού ανασκάφηκε. Κατοικήθηκε από το 3000 π.Χ. έως το 1000 π.Χ." }
+        },
+      ]
+    },
+    {
+      title: { en: "Best beaches", el: "Καλύτερες παραλίες" },
+      layout: "grid",
+      items: [
+        {
+          title: { en: "Koundouros", el: "Κούνδουρος" },
+          text: { en: "The island's most organised and complete beach — a large sheltered bay with shallow turquoise water, sunbeds, watersports and a range of tavernas and café-bars above the sand. The most family-friendly beach on the island; also the busiest on summer weekends.", el: "Η πιο οργανωμένη παραλία του νησιού — μεγάλος προστατευμένος όρμος με ρηχά τιρκουάζ νερά. Η πιο φιλική για οικογένειες παραλία." }
+        },
+        {
+          title: { en: "Otzias", el: "Ότζιας" },
+          text: { en: "A wide, well-organised beach on the northern coast with clear, calm water and pine shade on the hillside above. Less crowded than Koundouros on weekends. The Panagia Kastriani Monastery is visible on the headland at the bay's eastern end.", el: "Μεγάλη οργανωμένη παραλία στη βόρεια ακτή με καθαρά νερά. Λιγότερο πολυσύχναστη από τον Κούνδουρο τα Σαββατοκύριακα." }
+        },
+        {
+          title: { en: "Gialiskari", el: "Γιαλισκάρι" },
+          text: { en: "Close to Vourkari and walkable from the marina village, Gialiskari is a sandy beach with clear water — one of the closest beaches to the port area. Popular with sailors and Athenian weekenders. Taverna above the beach.", el: "Κοντά στο Βουρκάρι, αμμώδης παραλία με καθαρά νερά. Δημοφιλής σε ιστιοπλόους. Ταβέρνα πάνω από την παραλία." }
+        },
+        {
+          title: { en: "Spathi", el: "Σπάθι" },
+          text: { en: "The northernmost beach on the island, at the extreme tip of the cape below Panagia Kastriani. Access requires a rugged coastal track (4WD only) or a boat from Vourkari. The combination of remote position and the monastery visible on the cliff above creates a setting the organised beaches cannot replicate. Wild, no facilities.", el: "Η βορειότερη παραλία, προσβάσιμη με τραχύ χωματόδρομο ή βάρκα. Άγρια, χωρίς εγκαταστάσεις." }
+        },
+        {
+          title: { en: "Pisses", el: "Πίσσες" },
+          text: { en: "On the southwestern coast near the ancient city of Poiessa, Pisses is a long sandy beach with pine trees providing shade at its southern end and a seasonal taverna. Less visited than the northern beaches. Good for a full-day combined with a drive along the western coast road.", el: "Στη νοτιοδυτική ακτή, μακρόστενη αμμώδης παραλία με πεύκα. Λιγότερο επισκέψιμη από τις βόρειες παραλίες." }
+        },
+        {
+          title: { en: "Karthaia beach", el: "Παραλία Καρθαίας" },
+          text: { en: "The small beach at the foot of the Karthaia promontory — accessible after the Karthaia trail descent or by water taxi — is the most scenically spectacular swimming spot on the island. The temple ruins above and the enclosed bay create the island's most exclusive swimming experience. No facilities.", el: "Η μικρή παραλία στους πρόποδες της χερσονήσου της Καρθαίας — το πιο εντυπωσιακό σημείο για κολύμπι. Χωρίς εγκαταστάσεις." }
+        },
+      ]
+    },
+    {
+      title: { en: "Local food & drink", el: "Τοπικό φαγητό & ποτό" },
+      layout: "grid",
+      items: [
+        {
+          title: { en: "Loza — the cured sausage of Kea", el: "Λόζα — το παστό λουκάνικο της Κέας" },
+          text: { en: "Kea's signature cured meat — pork seasoned with local herbs and spices, dried in the traditional manner. Found in traditional form only in Kea's delicatessens and tavernas. The Tyrakeion in Ioulida is the essential source for loza alongside the island's local cheeses.", el: "Το χαρακτηριστικό παστό κρέας της Κέας. Το Τυρακείον στην Ιουλίδα είναι η κύρια πηγή για λόζα και τοπικά τυριά." }
+        },
+        {
+          title: { en: "Thyme honey", el: "Θυμαρίσιο μέλι" },
+          text: { en: "Kea's mountainous interior, covered in wild thyme, produces honey of particular intensity and complexity. Darker in colour than commercial honey, with resinous and floral notes specific to the island's flora. Sold by local beekeepers at the Ioulida market.", el: "Το ορεινό εσωτερικό της Κέας παράγει μέλι εξαιρετικής έντασης και πολυπλοκότητας. Πωλείται από ντόπιους μελισσοκόμους." }
+        },
+        {
+          title: { en: "Lobster spaghetti at Vourkari", el: "Λοβό μακαρόνια στο Βουρκάρι" },
+          text: { en: "The signature dish of Aristos taverna on Vourkari dock — a Kea institution whose lobster pasta with tomato and olive oil has defined the waterfront dining experience for decades. Reservations essential in peak season.", el: "Το χαρακτηριστικό πιάτο του Αρίστου στην προκυμαία του Βουρκαρίου. Κρατήσεις απαραίτητες την περίοδο αιχμής." }
+        },
+        {
+          title: { en: "Local cheeses: xerotyri & kopanisto", el: "Τοπικά τυριά: ξεροτύρι & κοπανιστή" },
+          text: { en: "Three cheeses define Kea's dairy culture. Xerotyri is a hard, aged cheese with a sharp, salty character. Ksino is a fresh, lightly acidic soft cheese. Kopanisto is a spicy, fermented paste cheese specific to the western Cyclades. All available at Tyrakeion in Ioulida.", el: "Τρία τυριά καθορίζουν τη γαλακτοκομική παράδοση της Κέας. Ξεροτύρι, ξινό και κοπανιστή. Διαθέσιμα στο Τυρακείον." }
+        },
+        {
+          title: { en: "Fresh fish and the Vourkari tavernas", el: "Φρέσκο ψάρι και ταβέρνες Βουρκαρίου" },
+          text: { en: "The fishing boats moored at Vourkari and Korissia supply the island's restaurants daily. The Karthea Taverna in Kato Meria — remote and accessible only by car — is cited by locals as the finest traditional taverna on the island for fresh fish, oven dishes and local wine.", el: "Τα ψαροκάικα εφοδιάζουν καθημερινά τα εστιατόρια. Η Καρθαία στα Κάτω Μέρια θεωρείται η καλύτερη παραδοσιακή ταβέρνα." }
+        },
+        {
+          title: { en: "The Fairy Tale Festival (July)", el: "Φεστιβάλ Παραμυθιού (Ιούλιος)" },
+          text: { en: "Every July, Kea hosts the Festival of Fairy Tales, where local and international writers narrate fairy tales and sing songs at various locations across the island. The festival is free, outdoor, and gives the island's mythological character a contemporary cultural expression.", el: "Κάθε Ιούλιο, η Κέα φιλοξενεί το Φεστιβάλ Παραμυθιού. Το φεστιβάλ είναι δωρεάν και υπαίθριο." }
+        },
+      ]
+    },
+    {
+      title: { en: "Practical tips for visiting Kea", el: "Πρακτικές συμβουλές για την Κέα" },
+      layout: "numbered",
+      items: [
+        {
+          title: { en: "Ferries depart from Lavrio", el: "Τα πλοία αναχωρούν από το Λαύριο" },
+          text: { en: "Ferries to Kea depart from Lavrio — not Piraeus, not Rafina. Lavrio is approximately 30–35 minutes from Athens Airport and 50–60 minutes from central Athens via the Attika Tollway. The KTEL bus from Athens (Pedion Areos) to Lavrio runs regularly.", el: "Τα πλοία αναχωρούν από το Λαύριο. Το Λαύριο απέχει 30-35 λεπτά από το αεροδρόμιο και 50-60 λεπτά από το κέντρο της Αθήνας." }
+        },
+        {
+          title: { en: "Ioulida is car-free", el: "Η Ιουλίδα είναι ελεύθερη αυτοκινήτων" },
+          text: { en: "Park at the car park at the lower town (near the bus terminal) and walk up the stone steps into the Chora. The walk takes 10–15 minutes and is genuinely pleasant; driving into the upper town is impossible rather than merely difficult.", el: "Παρκάρετε στο κάτω μέρος της πόλης και ανεβείτε τα πέτρινα σκαλιά. Η διαδρομή διαρκεί 10-15 λεπτά." }
+        },
+        {
+          title: { en: "Karthaia hike preparation", el: "Προετοιμασία για την πεζοπορία στην Καρθαία" },
+          text: { en: "Do not attempt the 12.5km round trip alone in July or August without significant water supplies, sun protection and proper footwear. The Kea Terra Active operation in Ioulida organises guided hikes with return transport — the recommended approach for most visitors.", el: "Μην επιχειρήσετε τη διαδρομή 12,5χλμ μόνοι σας τον Ιούλιο ή Αύγουστο χωρίς νερό και κατάλληλα παπούτσια." }
+        },
+        {
+          title: { en: "Free archaeological sites", el: "Δωρεάν αρχαιολογικοί χώροι" },
+          text: { en: "The archaeological sites (Agia Irini, Karthaia, Poiessa) charge no admission and have no signage beyond trail markers. Visit the Archaeological Museum in Ioulida before any site visits — the context transforms the sites from pleasant ruins into comprehensible places.", el: "Οι αρχαιολογικοί χώροι είναι ελεύθερης εισόδου. Επισκεφθείτε πρώτα το Αρχαιολογικό Μουσείο." }
+        },
+        {
+          title: { en: "Dining reservations", el: "Κρατήσεις εστιατορίων" },
+          text: { en: "Reserve at Aristos (Vourkari) at least a day ahead in July–August and several days ahead for weekend evenings. The taverna gets fully booked by mid-afternoon for the same evening in peak summer. Arrive by 19:30 if you have a booking.", el: "Κάντε κράτηση στον Αρίστο τουλάχιστον μία μέρα νωρίτερα. Τα Σαββατοκύριακα, αρκετές μέρες νωρίτερα." }
+        },
+        {
+          title: { en: "Underwater experiences", el: "Υποβρύχιες εμπειρίες" },
+          text: { en: "The Kea Underwater Historic Park offers virtual reality experiences related to the Britannic wreck. Contact Kea Divers at the port for current availability of guided tours, snorkelling trips to Agia Irini, and technical diving arrangements for qualified divers.", el: "Το Υποβρύχιο Ιστορικό Πάρκο προσφέρει εμπειρίες εικονικής πραγματικότητας. Επικοινωνήστε με το Kea Divers." }
+        },
+      ]
+    },
+    {
+      layout: "faq",
+      title: { en: "FAQ about Kea", el: "Συχνές ερωτήσεις για την Κέα" },
+      items: [
+        {
+          title: { en: "What is Kea (Tzia) island famous for?", el: "Για τι φημίζεται η Κέα (Τζια);" },
+          text: { en: "Kea is famous for the Lion of Kea (Liontas) — a 6th-century BC sculpture nearly six metres long, carved directly into the bedrock hillside above Ioulida. It is also known for the ruins of ancient Karthaia, the HMHS Britannic shipwreck, the yacht marina at Vourkari, and its reputation as Athens's closest and best-preserved Cycladic escape.", el: "Η Κέα φημίζεται για το Λιοντάρι, την αρχαία Καρθαία, το ναυάγιο του Britannic και τη μαρίνα του Βουρκαρίου." }
+        },
+        {
+          title: { en: "How do you get to Kea?", el: "Πώς πάτε στην Κέα;" },
+          text: { en: "Kea is served exclusively by the port of Lavrio — not Piraeus. Ferries from Lavrio to Korissia take approximately one hour. Lavrio is about 70km from central Athens (50–60 minutes by car) and approximately 30–35 minutes from Athens International Airport. There is no airport on Kea.", el: "Η Κέα εξυπηρετείται αποκλειστικά από το Λαύριο. Τα πλοία διαρκούν περίπου μία ώρα. Δεν υπάρχει αεροδρόμιο." }
+        },
+        {
+          title: { en: "Is Kea good for diving?", el: "Είναι η Κέα καλή για καταδύσεις;" },
+          text: { en: "Yes — Kea offers some of the most historically significant diving in the Aegean. The HMHS Britannic at 120 metres depth is accessible only to technical divers. Shallower reef diving is available to all certified divers, and snorkelling tours over the Bronze Age settlement at Agia Irini allow non-divers to observe underwater archaeological remains.", el: "Ναι — η Κέα προσφέρει από τις πιο σημαντικές καταδύσεις στο Αιγαίο." }
+        },
+        {
+          title: { en: "When is the best time to visit Kea?", el: "Ποια είναι η καλύτερη εποχή;" },
+          text: { en: "May and June for hiking and uncrowded beaches. September and October for warm sea and quiet luxury. July and August are energetic but significantly busier on weekends. Midweek visits in peak summer give a substantially calmer experience.", el: "Μάιος και Ιούνιος για πεζοπορία. Σεπτέμβριος και Οκτώβριος για ήσυχη πολυτέλεια." }
+        },
+        {
+          title: { en: "How many days do I need in Kea?", el: "Πόσες μέρες χρειάζομαι στην Κέα;" },
+          text: { en: "Three to four days covers the main attractions: a day for Ioulida, the Lion and the Archaeological Museum; a day for the Karthaia hike or boat trip; a day for Vourkari, Agia Irini and the northern coast; and a beach day. Five or six days allows the full hiking network to be explored.", el: "Τρεις με τέσσερις μέρες καλύπτουν τα κύρια αξιοθέατα. Πέντε ή έξι μέρες επιτρέπουν εξερεύνηση όλων των μονοπατιών." }
+        },
+        {
+          title: { en: "Is Kea crowded?", el: "Έχει πολύ κόσμο η Κέα;" },
+          text: { en: "By Cycladic standards, no — Kea remains significantly less crowded than Paros, Mykonos, Naxos or Santorini even in peak season. The Lavrio ferry natural filter keeps foreign tourist numbers low. Greek domestic tourism is strong on summer weekends; midweek the island is quiet even in July.", el: "Σε σύγκριση με άλλες Κυκλάδες, όχι — η Κέα παραμένει λιγότερο πολυσύχναστη. Τα Σαββατοκύριακα έχει Έλληνες τουρίστες, αλλά τις καθημερινές είναι ήσυχα." }
+        },
+      ]
+    },
+  ],
 };
