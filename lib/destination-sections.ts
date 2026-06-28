@@ -5468,10 +5468,55 @@ export const destinationSections: Record<string, DestinationSection[]> = {
   chania: [
     {
       layout: "list",
+      title: { en: "What's New in Chania for 2026", el: "Τι Νέο Υπάρχει στα Χανιά για το 2026" },
+      text: {
+        en: "Chania has seen more significant developments in 2026 than in any recent year. From the long-awaited reopening of the Municipal Market to the arrival of international luxury hotel brands, the city is entering a new phase.",
+        el: "Τα Χανιά γνώρισαν περισσότερες σημαντικές εξελίξεις το 2026 από κάθε πρόσφατη χρονιά. Από την πολυαναμενόμενη επαναλειτουργία της Δημοτικής Αγοράς μέχρι την άφιξη διεθνών ξενοδοχειακών brands πολυτελείας, η πόλη εισέρχεται σε μια νέα φάση."
+      },
+      items: [
+        {
+          title: { en: "Municipal Market (Agora) reopens — Summer 2026", el: "Δημοτική Αγορά — ανοίγει ξανά το καλοκαίρι 2026" },
+          text: {
+            en: "After a €9 million restoration that began in January 2022, Chania's iconic cross-shaped market reopens as a food-only destination for Cretan gastronomy and local products. Built 1911–1913 and inaugurated by Prime Minister Venizelos, the Agora returns to its roots — explicitly banning souvenir vendors in favour of cheese, olive oil, honey, fresh fish and produce.",
+            el: "Μετά από αποκατάσταση €9 εκατομμυρίων που ξεκίνησε τον Ιανουάριο 2022, η εμβληματική σταυρόσχημη αγορά των Χανίων ανοίγει ξανά ως προορισμός αποκλειστικά για τρόφιμα, αφιερωμένος στην κρητική γαστρονομία και τα τοπικά προϊόντα."
+          }
+        },
+        {
+          title: { en: "Hilton Chania Old Town Resort & Spa — June 2026", el: "Hilton Chania Old Town Resort & Spa — Ιούνιος 2026" },
+          text: {
+            en: "The first Hilton property in Chania opens in the historic city centre with 85 rooms and suites, private pools, and a 600-square-metre spa. Signals that Chania has crossed a threshold in international luxury hotel investment.",
+            el: "Το πρώτο Hilton στα Χανιά ανοίγει στο ιστορικό κέντρο της πόλης με 85 δωμάτια και σουίτες, ιδιωτικές πισίνες και σπα 600 τ.μ."
+          }
+        },
+        {
+          title: { en: "JW Marriott Crete Resort & Spa — First Full Season 2026", el: "JW Marriott Crete Resort & Spa — Πρώτη Πλήρης Σεζόν 2026" },
+          text: {
+            en: "Greece's first JW Marriott property opened in June 2025 on Marathi Beach near Chania. For 2026 it enters its first full season from April 15, with 160 rooms, suites and villas across multiple dining concepts.",
+            el: "Το πρώτο JW Marriott στην Ελλάδα άνοιξε τον Ιούνιο 2025 στην παραλία Μαραθίου. Για το 2026 ξεκινά την πρώτη του πλήρη σεζόν από 15 Απριλίου."
+          }
+        },
+        {
+          title: { en: "Ikos Kissamos — Opened April 30, 2026", el: "Ikos Kissamos — Άνοιξε 30 Απριλίου 2026" },
+          text: {
+            en: "The largest single hotel investment in Cretan history (€125–150M), 45 minutes west of Chania Airport. Brings Ikos's 'Extended Inclusive' philosophy with dining by consultants Ettore Botrini and Pascal Barbot.",
+            el: "Η μεγαλύτερη ξενοδοχειακή επένδυση στην ιστορία της Κρήτης (€125–150 εκατ.), 45 λεπτά δυτικά του αεροδρομίου Χανίων."
+          }
+        },
+        {
+          title: { en: "The Revery near Elafonisi — Opens August 1, 2026", el: "The Revery κοντά στο Ελαφονήσι — Ανοίγει 1 Αυγούστου 2026" },
+          text: {
+            en: "A Leading Hotels of the World member with 24 safari-inspired tented pavilions and clifftop suites near Elafonisi beach. The first eco-luxury tented property in the Chania region.",
+            el: "Μέλος των Leading Hotels of the World με 24 σαφάρι σκηνές και σουίτες σε γκρεμό κοντά στο Ελαφονήσι."
+          }
+        }
+      ]
+    },
+    {
+      layout: "list",
       title: { en: "Why Visit Chania", el: "Γιατί να πας στα Χανιά" },
       text: {
-        en: "Chania is a strong choice for travelers who want a beautiful and walkable old town, one of the most photogenic harbor settings in Crete, excellent food and dining atmosphere, and access to famous beaches and scenic drives. It is a destination that works both as a base and as a standalone trip.\n\nIt is one of the few places in Crete that feels equally good for couples, first-time visitors, road-trippers, and travelers who want both town life and beach access.",
-        el: "Τα Χανιά είναι μια εξαιρετική επιλογή για όσους αναζητούν μια πανέμορφη παλιά πόλη για περπάτημα, ένα από τα πιο φωτογενή λιμάνια της Κρήτης, εξαιρετικό φαγητό, και πρόσβαση σε διάσημες παραλίες και γραφικές διαδρομές. Είναι ένας προορισμός που λειτουργεί άψογα τόσο ως βάση όσο και ως αυτόνομο ταξίδι.\n\nΑποτελεί ένα από τα λίγα μέρη στην Κρήτη που ταιριάζει εξίσου σε ζευγάρια, ταξιδιώτες που έρχονται πρώτη φορά, λάτρεις των road trips και σε όσους θέλουν συνδυασμό πόλης και παραλίας."
+        en: "Chania is the most atmospheric city in Crete — a Venetian harbour that looks exactly as good as the photographs, the Splantzia quarter where the city's actual residents eat, the newly reopened Municipal Market (Agora) focused on Cretan gastronomy, and direct access to Balos, Elafonisi, Samaria and the dramatic landscapes of western Crete.\n\nIt works both as a base and as a standalone trip. The old town is walkable, the food scene is the best in western Crete and rising, and the destination rewards couples, first-time visitors, road-trippers, and anyone who wants both town life and extraordinary beach access.",
+        el: "Τα Χανιά είναι η πιο ατμοσφαιρική πόλη της Κρήτης — ένα ενετικό λιμάνι που είναι ακριβώς όπως στις φωτογραφίες, η συνοικία της Σπλάντζιας όπου τρώνε οι κάτοικοι, η πρόσφατα ανακαινισμένη Δημοτική Αγορά αφιερωμένη στην κρητική γαστρονομία, και άμεση πρόσβαση σε Μπάλο, Ελαφονήσι, Σαμαριά και τα εντυπωσιακά τοπία της δυτικής Κρήτης.\n\nΛειτουργεί άψογα τόσο ως βάση όσο και ως αυτόνομο ταξίδι. Η παλιά πόλη είναι ιδανική για περπάτημα, η γαστρονομική σκηνή είναι η καλύτερη στη δυτική Κρήτη και ανεβαίνει, και ο προορισμός ανταμείβει ζευγάρια, πρωτάρηδες ταξιδιώτες, λάτρεις των road trips και όσους θέλουν συνδυασμό πόλης και εξαιρετικών παραλιών."
       }
     },
     {
@@ -5485,83 +5530,104 @@ export const destinationSections: Record<string, DestinationSection[]> = {
         {
           title: { en: "Old Town", el: "Παλιά Πόλη" },
           text: {
-            en: "The old town is the heart of Chania's appeal. It is where you will find narrow lanes, historic architecture, small squares, and much of the destination's classic atmosphere. It is ideal for travelers who want to stay close to the most charming side of the city.",
-            el: "Η παλιά πόλη είναι η καρδιά της γοητείας των Χανίων. Εκεί θα βρείτε στενά δρομάκια, ιστορική αρχιτεκτονική, μικρές πλατείες και μεγάλο μέρος της κλασικής ατμόσφαιρας. Ιδανικό για όσους θέλουν να μείνουν κοντά στην πιο ρομαντική πλευρά της πόλης."
+            en: "The old town is the heart of Chania's appeal. Narrow lanes, historic architecture, small squares, the harbour immediately adjacent. Ideal for first-time visitors. Walking distance from everything that makes the city worth visiting.",
+            el: "Η παλιά πόλη είναι η καρδιά της γοητείας των Χανίων. Στενά δρομάκια, ιστορική αρχιτεκτονική, μικρές πλατείες, το λιμάνι ακριβώς δίπλα. Ιδανικό για όσους έρχονται πρώτη φορά."
           }
         },
         {
-          title: { en: "Venetian Harbor", el: "Ενετικό Λιμάνι" },
+          title: { en: "Venetian Harbour", el: "Ενετικό Λιμάνι" },
           text: {
-            en: "This is the visual centerpiece of Chania and one of the most recognizable waterfront settings in Crete. It is especially enjoyable in the evening, when the area becomes one of the city's strongest dining and walking zones.",
-            el: "Το οπτικό επίκεντρο των Χανίων και ένα από τα πιο αναγνωρίσιμα παραθαλάσσια σημεία της Κρήτης. Είναι ιδιαίτερα απολαυστικό το βράδυ, όταν η περιοχή μετατρέπεται σε κέντρο για φαγητό και περίπατο."
+            en: "The visual centrepiece of Chania and the most photogenic waterfront in Crete. At its best before 9am and after 7pm. The lighthouse walk at dawn is one of the finest free experiences in the city.",
+            el: "Το οπτικό επίκεντρο των Χανίων και η πιο φωτογενής παραλιακή ζώνη της Κρήτης. Στα καλύτερά της πριν τις 9πμ και μετά τις 7μμ."
+          }
+        },
+        {
+          title: { en: "Splantzia", el: "Σπλάντζια" },
+          text: {
+            en: "East of the old town axis — the local quarter where Chania's actual residents eat. An Ottoman minaret, the city's best new restaurants (Steria, Evgonia), and fewer tourists than anywhere else inside the walls.",
+            el: "Ανατολικά του άξονα της παλιάς πόλης — η γειτονιά όπου τρώνε οι κάτοικοι. Οθωμανικός μιναρές, τα καλύτερα νέα εστιατόρια και λιγότεροι τουρίστες."
           }
         },
         {
           title: { en: "Nea Chora", el: "Νέα Χώρα" },
           text: {
-            en: "A more relaxed seaside area close to the center, useful for travelers who want easier beach access while still staying near the city.",
-            el: "Μια πιο χαλαρή παραθαλάσσια περιοχή κοντά στο κέντρο, χρήσιμη για ταξιδιώτες που θέλουν εύκολη πρόσβαση σε παραλία χωρίς να απομακρυνθούν από την πόλη."
+            en: "A relaxed seaside area close to the centre, useful for travellers who want easier beach access while still staying near the city. The most relaxed pace in a fundamentally residential neighbourhood.",
+            el: "Μια χαλαρή παραθαλάσσια περιοχή κοντά στο κέντρο, χρήσιμη για όσους θέλουν εύκολη πρόσβαση σε παραλία. Ο πιο ήρεμος ρυθμός σε μια γειτονιά κατοίκων."
           }
         },
         {
-          title: { en: "The wider Chania region", el: "Η ευρύτερη περιοχή" },
+          title: { en: "Tabakaria & Halepa", el: "Ταμπακαριά & Χαλέπα" },
           text: {
-            en: "Part of Chania's value comes from what surrounds it: western Crete road trips, mountain villages, famous beaches, and some of the island's most rewarding day-trip landscapes.",
-            el: "Μέρος της αξίας των Χανίων προέρχεται από το τι τα περιβάλλει: road trips στη δυτική Κρήτη, ορεινά χωριά, διάσημες παραλίες και εκπληκτικά τοπία για ημερήσιες εκδρομές."
+            en: "The old tannery district east of the old town where former leather workshops have been restored into atmospheric hotels directly above the sea. Far enough from the centre for genuine quiet.",
+            el: "Η παλιά συνοικία των βυρσοδεψείων ανατολικά της παλιάς πόλης, όπου πρώην εργαστήρια έχουν μετατραπεί σε ατμοσφαιρικά ξενοδοχεία πάνω από τη θάλασσα."
+          }
+        },
+        {
+          title: { en: "The wider region", el: "Η ευρύτερη περιοχή" },
+          text: {
+            en: "Part of Chania's value comes from what surrounds it: western Crete road trips, mountain villages, Balos, Elafonisi, Falasarna, Samaria, and the White Mountains. No city in Greece offers a comparable range of significant natural experiences within an hour's drive.",
+            el: "Μέρος της αξίας των Χανίων προέρχεται από το τι τα περιβάλλει: road trips, ορεινά χωριά, Μπάλος, Ελαφονήσι, Φαλάσαρνα, Σαμαριά, Λευκά Όρη."
           }
         }
       ]
     },
     {
       layout: "list",
-      title: { en: "Beaches and Attractions", el: "Παραλίες & Αξιοθέατα" },
+      title: { en: "Top Attractions & Day Trips", el: "Αξιοθέατα & Ημερήσιες Εκδρομές" },
       text: {
-        en: "Chania is not only about the town itself. It is also a gateway to some of Crete's best-known natural highlights.\n\n**Venetian Harbor and lighthouse**\nThe harbor is the city's most iconic attraction and one of the main reasons travelers choose Chania in the first place.\n\n**Old Town streets and historic corners**\nWalking through the old town is one of the most enjoyable parts of a stay here. The city rewards slow exploring more than rushed sightseeing.\n\n**Nea Chora beach area**\nA practical and pleasant beach option close to the city, especially useful if you want sea access without planning a full excursion.\n\n**Day trip access to western Crete highlights**\nChania works as a base for some of Crete's most famous beach and nature experiences, which is why so many visitors choose to stay here longer than expected.\n\n**Markets, alleys, and local neighborhoods**\nBeyond the postcard side, Chania also offers a more local urban rhythm that gives the destination more substance.",
-        el: "Τα Χανιά δεν είναι μόνο η ίδια η πόλη. Αποτελούν επίσης την πύλη για ορισμένα από τα πιο γνωστά φυσικά αξιοθέατα της Κρήτης.\n\n**Ενετικό Λιμάνι και φάρος**\nΤο λιμάνι είναι το πιο εμβληματικό αξιοθέατο της πόλης και ένας από τους κύριους λόγους που οι ταξιδιώτες επιλέγουν τα Χανιά.\n\n**Δρομάκια και ιστορικές γωνιές στην Παλιά Πόλη**\nΤο περπάτημα στην παλιά πόλη είναι ένα από τα πιο ευχάριστα κομμάτια της διαμονής εδώ. Η πόλη ανταμείβει την αργή εξερεύνηση πολύ περισσότερο από την επιφανειακή περιήγηση.\n\n**Περιοχή της Νέας Χώρας**\nΜια πρακτική και ευχάριστη επιλογή παραλίας κοντά στην πόλη, ιδανική αν θέλετε θάλασσα χωρίς να οργανώσετε ολόκληρη εκδρομή.\n\n**Εξορμήσεις στα αξιοθέατα της δυτικής Κρήτης**\nΤα Χανιά λειτουργούν ως βάση για τις πιο διάσημες εμπειρίες παραλίας και φύσης στην Κρήτη, γι' αυτό πολλοί μένουν εδώ περισσότερο από όσο υπολόγιζαν.\n\n**Αγορές, σοκάκια και τοπικές γειτονιές**\nΠέρα από τις εικόνες για καρτ-ποστάλ, τα Χανιά διαθέτουν κι έναν αυθεντικό αστικό ρυθμό που προσδίδει βάθος στον προορισμό."
+        en: "Chania is a destination that combines a rich historic city with some of the most famous natural landscapes in Greece.\n\n**Venetian Harbour and lighthouse**\nThe harbour is the city's most iconic attraction. Walk the causeway to the Egyptian lighthouse at dawn for the finest free experience in Chania. At noon in August it is a tourist corridor; at 7am it is one of the best waterfront settings in the Mediterranean.\n\n**Municipal Market (Agora) — reopened Summer 2026**\nThe cross-shaped covered market, built 1911–1913, reopens after a €9M restoration. Under the new food-only mandate, returning vendors focus on Cretan cheeses, olive oil, honey, fresh fish and produce. Visit before 10am when the light through the roof structure is at its best.\n\n**Archaeological Museum in San Francesco**\nA Venetian church turned Ottoman mosque, now housing finds from across western Crete — Minoan Linear A tablets, pottery, Roman sculpture, Byzantine icons. The building itself is one of the finest historic interiors in the city.\n\n**Splantzia quarter**\nThe Ottoman minaret square and surrounding lanes contain Chania's most interesting recent restaurant openings. Walk two minutes from the harbour for a completely different atmosphere.\n\n**Balos Lagoon**\n45 minutes west by car to Kissamos, then take the daily seasonal ferry (1 hour crossing). The turquoise lagoon, white sand and Gramvoussa castle are the most photographed landscape in Crete. Avoid driving the unpaved access road.\n\n**Elafonisi Beach**\n75 minutes southwest by car. A shallow tidal island of pink-tinged sand at the southwestern tip of Crete. Arrive by 9:30am in peak summer; by midday it is one of the busiest beaches on the island.\n\n**Samaria Gorge**\n55 minutes south to the Omalos trailhead. Europe's longest gorge — 16km descent from 1,250m to the coastal village of Agia Roumeli. Opens mid-May; closures after heavy rain happen on short notice.\n\n**Falasarna**\n60 minutes west by car. A wide Blue Flag beach with paved access — a genuine alternative to Balos on windy days when the ferry may not operate.",
+        el: "Τα Χανιά συνδυάζουν μια πλούσια ιστορική πόλη με μερικά από τα πιο διάσημα φυσικά τοπία της Ελλάδας.\n\n**Ενετικό Λιμάνι και φάρος**\nΤο λιμάνι είναι το πιο εμβληματικό αξιοθέατο. Περπατήστε ως τον αιγυπτιακό φάρο την αυγή για την καλύτερη δωρεάν εμπειρία.\n\n**Δημοτική Αγορά — άνοιξε ξανά το καλοκαίρι 2026**\nΗ σταυρόσχημη αγορά, χτισμένη 1911–1913, ανοίγει ξανά μετά από αποκατάσταση €9 εκατ. Με εντολή αποκλειστικά για τρόφιμα, οι vendors επικεντρώνονται σε κρητικά τυριά, λάδι, μέλι και φρέσκο ψάρι.\n\n**Αρχαιολογικό Μουσείο στον Άγιο Φραγκίσκο**\nΕνετική εκκλησία που έγινε οθωμανικό τζαμί, φιλοξενεί ευρήματα από όλη τη δυτική Κρήτη.\n\n**Συνοικία Σπλάντζιας**\nΗ πλατεία με τον οθωμανικό μιναρέ και τα γύρω σοκάκια έχουν τα πιο ενδιαφέροντα νέα εστιατόρια.\n\n**Μπάλος**\n45 λεπτά δυτικά στο Κίσσαμος, μετά καθημερινό πλοίο (1 ώρα). Η τιρκουάζ λιμνοθάλασσα και το κάστρο της Γραμβούσας είναι το πιο φωτογραφημένο τοπίο της Κρήτης.\n\n**Ελαφονήσι**\n75 λεπτά νοτιοδυτικά. Ροζ αμμουδιά στο νοτιοδυτικό άκρο της Κρήτης. Φτάστε μέχρι τις 9:30 το καλοκαίρι.\n\n**Φαράγγι Σαμαριάς**\n55 λεπτά νότια στο Ομαλό. Το μακρύτερο φαράγγι της Ευρώπης — 16χλμ καθόδου. Ανοίγει μέσα Μαΐου.\n\n**Φαλάσαρνα**\n60 λεπτά δυτικά. Μια μεγάλη παραλία με άσφαλτο — εναλλακτική του Μπάλου τις ημέρες με αέρα."
       }
     },
     {
       layout: "list",
       title: { en: "Food and Local Flavors", el: "Φαγητό & Τοπικές Γεύσεις" },
       text: {
-        en: "Chania is one of the strongest food destinations in Crete. The city and region offer a combination of traditional Cretan taverns, harbor-side seafood meals, local ingredients and village-style flavors, modern dining in historic settings, and relaxed evenings built around shared dishes and wine.\n\nFood here is not just an extra. It is one of the main reasons the destination feels rich and memorable. Chania works well for travelers who want both traditional and slightly more polished dining experiences, especially in the old town and waterfront areas. At the same time, the broader region adds more local depth through village flavors, Cretan products, and countryside food culture.\n\n[Explore our Crete food guides for more inspiration](/collections/greece-food-and-drink).",
-        el: "Τα Χανιά είναι ένας από τους πιο δυνατούς γαστρονομικούς προορισμούς στην Κρήτη. Η πόλη και η περιοχή προσφέρουν συνδυασμό παραδοσιακών κρητικών ταβερνών, θαλασσινών στο λιμάνι, τοπικών υλικών και γεύσεων χωριού, μοντέρνας εστίασης σε ιστορικό περιβάλλον, και χαλαρών βραδιών με μοιρασιάτικα πιάτα και κρασί.\n\nΤο φαγητό εδώ δεν είναι απλώς ένα έξτρα. Είναι ένας από τους βασικούς λόγους που ο προορισμός μένει αξέχαστος. Τα Χανιά είναι ιδανικά για όσους αναζητούν τόσο παραδοσιακές όσο και ελαφρώς πιο προσεγμένες εμπειρίες φαγητού, ειδικά στην παλιά πόλη και την προκυμαία. Παράλληλα, η ευρύτερη περιοχή προσθέτει βάθος μέσα από γεύσεις χωριού και την τοπική κουλτούρα της υπαίθρου.\n\n[Ανακαλύψτε τοπικές γεύσεις στους οδηγούς μας](/collections/greece-food-and-drink)."
+        en: "Chania's restaurant scene has risen significantly in recent years and is now the best in western Crete. A combination of fire-kitchen restaurants, traditional Cretan taverns, harbour-side seafood dining, and serious wine bars has made the city a genuine food destination.\n\n**Steria (Splantzia Square)** — A standout arrival. Fire cooking, Cretan-only produce, zero-waste kitchen. Grilled broccoli with dry anthotyro, smoked graviera with bergamot jam. One of the most discussed tables in Chania.\n\n**Thalasino Ageri (Tabakaria)** — Tables directly above the sea. The daily menu changes with the catch; the kakavia fish soup (pre-order required) is one of the best things to eat in western Crete.\n\n**Salis (Venetian Harbour promenade)** — The exception to the rule about harbour restaurants. Builds its menu entirely around seasonal local farms. The harbour view at dinner is the best legitimate use of the setting.\n\n**Evgonia (near City Hall)** — A chalkboard menu of daily fresh fish and seasonal Cretan dishes. No printed menu — ask what's fresh. One of the most genuinely old-school tavernas in the city.\n\n**The Agora** — In the newly reopened Municipal Market, buy Cretan graviera, anthogalo, malaka, thyme honey, cold-pressed olive oil, and the morning catch from the Cretan Sea.\n\nThe rule that waterfront restaurants have the worst food-to-price ratio in Crete still applies — walk two streets back into Splantzia for honest Cretan cooking at half the price.\n\n[Explore our Crete food guides for more inspiration](/collections/greece-food-and-drink).",
+        el: "Η γαστρονομική σκηνή των Χανίων έχει ανέβει σημαντικά τα τελευταία χρόνια και είναι πλέον η καλύτερη στη δυτική Κρήτη.\n\n**Steria (Πλατεία Σπλάντζιας)** — Μαγείρεμα στη φωτιά, κρητικά προϊόντα, zero-waste κουζίνα. Από τα πιο συζητημένα εστιατόρια.\n\n**Thalasino Ageri (Ταμπακαριά)** — Τραπέζια πάνω από τη θάλασσα. Η κακαβιά (με προπαραγγελία) είναι από τα καλύτερα πιάτα στη δυτική Κρήτη.\n\n**Salis (Προκυμαία)** — Η εξαίρεση στον κανόνα για τα εστιατόρια του λιμανιού. Μενού βασισμένο σε τοπικά προϊόντα εποχής.\n\n**Evgonia (κοντά στο Δημαρχείο)** — Μαυροπίνακας με φρέσκο ψάρι και εποχικά πιάτα. Μία από τις πιο αυθεντικές ταβέρνες.\n\n**Δημοτική Αγορά** — Κρητική γραβιέρα, ανθόγαλο, μαλάκα, θυμαρίσιο μέλι, ελαιόλαδο και φρέσκο ψάρι.\n\n[Ανακαλύψτε τοπικές γεύσεις](/collections/greece-food-and-drink)."
       }
     },
     {
       layout: "numbered",
       title: { en: "Where to Stay in Chania", el: "Πού να Μείνετε στα Χανιά" },
       text: {
-        en: "Where you stay in Chania depends on the kind of trip you want. [Explore our Chania hotel recommendations](/hotels?destination=chania).",
-        el: "Η επιλογή περιοχής εξαρτάται από το είδος του ταξιδιού που επιθυμείτε. [Ανακαλύψτε τις προτάσεις μας για διαμονή](/hotels?destination=chania)."
+        en: "Where you stay in Chania depends on the kind of trip you want. For 2026, three major luxury properties have opened in or near the city. [Explore our Chania hotel recommendations](/hotels?destination=chania).",
+        el: "Η επιλογή περιοχής εξαρτάται από το είδος του ταξιδιού που επιθυμείτε. Για το 2026, τρία νέα ξενοδοχεία πολυτελείας άνοιξαν μέσα ή κοντά στην πόλη. [Ανακαλύψτε τις προτάσεις μας](/hotels?destination=chania)."
       },
       items: [
         {
           title: { en: "Stay in the Old Town if", el: "Μείνετε στην Παλιά Πόλη αν" },
           text: {
-            en: "You want character, atmosphere, and walkable charm. You enjoy being close to restaurants and evening life. The historic setting matters to your trip.",
-            el: "Θέλετε χαρακτήρα, ατμόσφαιρα και γραφικότητα για περπάτημα. Απολαμβάνετε να είστε κοντά σε εστιατόρια και νυχτερινή ζωή. Το ιστορικό σκηνικό είναι σημαντικό για εσάς."
+            en: "You want character, atmosphere, and walkable charm. The new Hilton Chania Old Town Resort & Spa opens here in June 2026 with 85 rooms, private pools and a 600sqm spa — the first international 5-star property inside the historic centre.",
+            el: "Θέλετε χαρακτήρα, ατμόσφαιρα και γραφικότητα. Το νέο Hilton Chania Old Town Resort & Spa ανοίγει εδώ τον Ιούνιο 2026."
           }
         },
         {
-          title: { en: "Stay near the Venetian Harbor if", el: "Μείνετε κοντά στο Ενετικό Λιμάνι αν" },
+          title: { en: "Stay near the Venetian Harbour if", el: "Μείνετε κοντά στο Ενετικό Λιμάνι αν" },
           text: {
-            en: "You want one of the most scenic and central bases. You are happy to stay in one of the liveliest parts of the city.",
-            el: "Θέλετε μία από τις πιο εντυπωσιακές και κεντρικές βάσεις. Προτιμάτε να βρίσκεστε στο πιο ζωντανό κομμάτι της πόλης."
+            en: "You want one of the most scenic and central bases in one of the liveliest parts of the city. Best for those who prioritise atmosphere and evening dining.",
+            el: "Θέλετε μία από τις πιο εντυπωσιακές και κεντρικές βάσεις στο πιο ζωντανό κομμάτι της πόλης."
           }
         },
         {
           title: { en: "Stay in Nea Chora if", el: "Μείνετε στη Νέα Χώρα αν" },
           text: {
-            en: "You want a slightly calmer base with sea access. You still want to be close to the center without staying right in the busiest old town area.",
-            el: "Αναζητάτε μια λίγο πιο ήρεμη βάση με πρόσβαση σε θάλασσα. Θέλετε να είστε κοντά στο κέντρο αποφεύγοντας την πολυκοσμία της παλιάς πόλης."
+            en: "You want a calmer base with sea access, still close to the centre without the busiest old town crowds.",
+            el: "Αναζητάτε μια ήρεμη βάση με πρόσβαση σε θάλασσα κοντά στο κέντρο."
+          }
+        },
+        {
+          title: { en: "Stay in Tabakaria / Halepa if", el: "Μείνετε στην Ταμπακαριά / Χαλέπα αν" },
+          text: {
+            en: "You want atmospheric hotels in restored industrial buildings directly above the sea. Far enough from the centre for quiet, close enough for easy access.",
+            el: "Θέλετε ατμοσφαιρικά ξενοδοχεία σε ανακαινισμένα βιομηχανικά κτίρια πάνω από τη θάλασσα."
           }
         },
         {
           title: { en: "Stay outside the city if", el: "Μείνετε εκτός πόλης αν" },
           text: {
-            en: "Your trip is more road-trip focused. You want quieter surroundings and easier regional beach access.",
-            el: "Το ταξίδι σας εστιάζει περισσότερο σε road trips. Επιθυμείτε πιο ήσυχο περιβάλλον και ευκολότερη πρόσβαση στις παραλίες της περιοχής."
+            en: "Your trip is road-trip focused. The JW Marriott Crete Resort & Spa on Marathi Beach (first full season 2026), the Ikos Kissamos (opened April 30, 2026), or the Revery near Elafonisi (opens August 1, 2026) are the new luxury options.",
+            el: "Το ταξίδι σας εστιάζει σε road trips. Το JW Marriott στο Μαράθι (πρώτη πλήρης σεζόν 2026), το Ikos Kissamos (άνοιξε 30 Απριλίου 2026) ή το Revery κοντά στο Ελαφονήσι (ανοίγει 1 Αυγούστου 2026) είναι οι νέες επιλογές πολυτελείας."
           }
         }
       ]
@@ -5570,66 +5636,66 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       layout: "list",
       title: { en: "Things to Do in Chania", el: "Τι να Κάνετε στα Χανιά" },
       text: {
-        en: "Chania works best when you combine the city itself with the wider region around it. Some of the best ways to experience the destination include walking through the old town and harbor, enjoying long meals and evening strolls, using Chania as a base for beach days and scenic drives, exploring western Crete more deeply, and balancing town atmosphere with day trips and coastal experiences.\n\nIt is one of those destinations that does not need aggressive sightseeing to feel rewarding. A well-paced trip in Chania can include architecture, food, sea views, nearby beaches, and excursions — all without feeling overloaded.\n\n[Explore our Chania tours and experiences](/tours/all).",
-        el: "Τα Χανιά είναι στα καλύτερά τους όταν συνδυάζετε την πόλη με την ευρύτερη περιοχή. Οι καλύτεροι τρόποι για να ζήσετε τον προορισμό περιλαμβάνουν βόλτες στην παλιά πόλη και το λιμάνι, μεγάλα γεύματα και απογευματινούς περιπάτους, χρήση της πόλης ως βάσης για road trips και ημέρες στην παραλία, και εξισορρόπηση της αστικής ατμόσφαιρας με εξορμήσεις.\n\nΕίναι ένας προορισμός που δεν απαιτεί εξαντλητικό sightseeing για να σας γεμίσει. Ένα σωστά ρυθμισμένο ταξίδι εδώ μπορεί να περιλαμβάνει αρχιτεκτονική, φαγητό, θάλασσα, κοντινές παραλίες και εκδρομές - όλα χωρίς πίεση.\n\n[Δείτε εμπειρίες και tours στα Χανιά](/tours/all)."
+        en: "Chania works best when you combine the city itself with the wider region. A well-paced trip includes:\n\n- Walk the Venetian harbour at dawn and the Splantzia quarter in the evening\n- Visit the newly reopened Municipal Market (Agora) before 10am\n- Take a day trip to Balos lagoon by ferry from Kissamos\n- Drive to Elafonisi beach (arrive by 9:30am in peak season)\n- Hike the Samaria Gorge or the shorter Imbros Gorge\n- Eat at Steria (Splantzia), Thalasino Ageri (Tabakaria), or Salis (harbour)\n- Explore the Archaeological Museum in the former church of San Francesco\n- Walk the Byzantine walls and the Kastelli quarter\n- Drive to Falasarna beach as a less-crowded alternative to Balos\n- Visit the Akrotiri peninsula monasteries and the Katholiko cave church\n\nIt is one of those destinations that rewards slow exploring rather than aggressive sightseeing.\n\n[Explore our Chania tours and experiences](/tours/all).",
+        el: "Τα Χανιά είναι στα καλύτερά τους όταν συνδυάζετε την πόλη με την ευρύτερη περιοχή:\n\n- Περπατήστε το ενετικό λιμάνι την αυγή και τη Σπλάντζια το βράδυ\n- Επισκεφθείτε τη Δημοτική Αγορά πριν τις 10πμ\n- Κάντε ημερήσια εκδρομή στη λιμνοθάλασσα του Μπάλου με πλοίο από το Κίσσαμος\n- Οδηγήστε στο Ελαφονήσι (φτάστε μέχρι τις 9:30πμ)\n- Περπατήστε το Φαράγγι της Σαμαριάς ή το μικρότερο Φαράγγι του Ίμπρου\n- Φάτε στο Steria, Thalasino Ageri ή Salis\n- Εξερευνήστε το Αρχαιολογικό Μουσείο\n- Περπατήστε τα βυζαντινά τείχη και το Καστέλι\n\n[Δείτε εμπειρίες και tours στα Χανιά](/tours/all)."
       }
     },
     {
       layout: "list",
       title: { en: "Best Time to Visit", el: "Η Καλύτερη Εποχή για να Πάτε" },
       text: {
-        en: "Chania is rewarding across much of the travel season, especially from spring to early autumn.\n\nMay, June, and September are excellent for travelers who want warmth, easier walking conditions, and a more balanced atmosphere. July and August are the liveliest and busiest summer months. Shoulder season can be especially attractive if your trip is focused on the city, food, and regional exploring rather than only peak beach time.\n\nBecause Chania combines urban strolling with day-trip potential, it works well in a wider seasonal range than some purely beach-driven destinations.",
-        el: "Τα Χανιά αξίζουν στο μεγαλύτερο μέρος της σεζόν, ειδικά από την άνοιξη μέχρι τις αρχές του φθινοπώρου.\n\nΟ Μάιος, ο Ιούνιος και ο Σεπτέμβριος είναι εξαιρετικοί μήνες για όσους αναζητούν ζέστη, ευχάριστο περπάτημα και πιο ισορροπημένη ατμόσφαιρα. Ο Ιούλιος και ο Αύγουστος είναι οι πιο έντονοι και πολυσύχναστοι μήνες του καλοκαιριού. Οι ενδιάμεσες εποχές είναι ιδανικές αν το ταξίδι σας εστιάζει στην πόλη, τη γαστρονομία και την εξερεύνηση της περιοχής αντί για τις ολοήμερες παραλίες.\n\nΚαθώς συνδυάζουν αστικούς περιπάτους με δυνατότητες για ημερήσιες, τα Χανιά λειτουργούν εξαιρετικά σε ευρύτερο φάσμα της σεζόν σε σύγκριση με νησιά που βασίζονται μόνο στη θάλασσα."
+        en: "Chania is rewarding across much of the travel season, from spring to early autumn.\n\n**June and September are optimal** — warm sea temperatures, substantially lower crowds than July–August, restaurant tables available without advance booking, and the best light on the old town's stone buildings.\n\n**July and August** are the most animated months — all restaurants open, maximum energy in the harbour, but significant tourist volume particularly at Balos and Elafonisi. Book everything in advance.\n\n**2026 practical note:** The Samaria Gorge reopened in mid-May 2026 after safety assessments — but closures on short notice after rain still happen. Build flexibility into any Samaria plan. The Imbros Gorge now charges €5 per person. The Climate Resilience Fee (replacing the old tourist tax) applies to all accommodation — budget €5–12 per room per night extra (charged on site, not included in booking platform prices).",
+        el: "Τα Χανιά αξίζουν στο μεγαλύτερο μέρος της σεζόν, από την άνοιξη μέχρι το φθινόπωρο.\n\n**Ιούνιος και Σεπτέμβριος είναι ιδανικοί** — ζεστή θάλασσα, λιγότερο κόσμο, διαθέσιμα τραπέζια χωρίς προκράτηση.\n\n**Ιούλιος και Αύγουστος** είναι οι πιο ζωντανοί μήνες αλλά με σημαντική πολυκοσμία σε Μπάλο και Ελαφονήσι.\n\n**Σημείωση 2026:** Το Φαράγγι της Σαμαριάς άνοιξε ξανά μέσα Μαΐου 2026. Το Φαράγγι του Ίμπρου χρεώνει €5/άτομο. Το Τέλος Κλιματικής Ανθεκτικότητας ισχύει για όλα τα καταλύματα — υπολογίστε €5–12/δωμάτιο/βραδύ."
       }
     },
     {
       layout: "faq",
-      title: { en: "FAQ About Chania", el: "Συχνές Ερωτήσεις για τα Χανιά" },
+      title: { en: "FAQ About Chania — Updated 2026", el: "Συχνές Ερωτήσεις για τα Χανιά — 2026" },
       text: {
-        en: "Common questions for planning your trip.",
-        el: "Συχνές ερωτήσεις για να οργανώσετε το ταξίδι σας."
+        en: "Common questions for planning your trip, updated for 2026.",
+        el: "Συχνές ερωτήσεις για να οργανώσετε το ταξίδι σας, ενημερωμένες για το 2026."
       },
       items: [
         {
-          title: { en: "Is Chania worth visiting?", el: "Αξίζει να πάω στα Χανιά;" },
+          title: { en: "Has the Chania Municipal Market (Agora) reopened?", el: "Έχει ανοίξει ξανά η Δημοτική Αγορά;" },
           text: {
-            en: "Yes. Chania is one of the most rewarding destinations in Crete for travelers who want beauty, food, atmosphere, and a strong base for wider exploration.",
-            el: "Ναι. Τα Χανιά είναι από τους πιο ανταποδοτικούς προορισμούς στην Κρήτη για όσους αναζητούν ομορφιά, φαγητό, ατμόσφαιρα και μια εξαιρετική βάση για ευρύτερη εξερεύνηση."
+            en: "Yes — after a €9 million restoration that began in January 2022, the Chania Agora reopens in summer 2026 as a food-only market focused on Cretan products and gastronomy. This is the first time the market has been closed in its entire history — it remained open through wars, occupations and economic crises.",
+            el: "Ναι — μετά από αποκατάσταση €9 εκατομμυρίων που ξεκίνησε τον Ιανουάριο 2022, η Δημοτική Αγορά ανοίγει ξανά το καλοκαίρι 2026 ως αγορά τροφίμων με έμφαση στα κρητικά προϊόντα."
           }
         },
         {
-          title: { en: "What is Chania best known for?", el: "Για τι φημίζονται τα Χανιά;" },
+          title: { en: "What new hotels opened in Chania in 2026?", el: "Τι νέα ξενοδοχεία άνοιξαν στα Χανιά το 2026;" },
           text: {
-            en: "It is best known for its Venetian harbor, old town, charming streets, and access to some of western Crete's most famous landscapes.",
-            el: "Φημίζονται κυρίως για το ενετικό τους λιμάνι, την παλιά πόλη, τα γραφικά σοκάκια, και την πρόσβαση σε ορισμένα από τα διασημότερα τοπία της δυτικής Κρήτης."
+            en: "Three significant properties: the Hilton Chania Old Town Resort & Spa (June 2026, Old Town, 85 rooms, 600sqm spa); Ikos Kissamos (April 30, 2026, 45 minutes west, €125–150M investment); and The Revery near Elafonisi (August 1, 2026, tented pavilions, Leading Hotels of the World). The JW Marriott Crete Resort & Spa (opened June 2025 on Marathi Beach) enters its first full 2026 season from April 15.",
+            el: "Τρία σημαντικά καταλύματα: το Hilton Chania Old Town Resort & Spa (Ιούνιος 2026), το Ikos Kissamos (30 Απριλίου 2026) και το The Revery (1 Αυγούστου 2026). Το JW Marriott ξεκινά την πρώτη του πλήρη σεζόν 2026."
           }
         },
         {
           title: { en: "Is Chania better than Heraklion?", el: "Είναι τα Χανιά καλύτερα από το Ηράκλειο;" },
           text: {
-            en: "They serve different travel styles, but many visitors prefer Chania for its visual charm, old town atmosphere, and stronger leisure appeal.",
-            el: "Εξυπηρετούν διαφορετικά στυλ ταξιδιού, ωστόσο πολλοί επισκέπτες προτιμούν τα Χανιά για την οπτική τους γοητεία, την ατμόσφαιρα της παλιάς πόλης και τον πιο χαλαρωτικό χαρακτήρα τους."
+            en: "For leisure travelers — couples, food lovers, those wanting a walkable historic city — Chania wins on atmosphere. The Venetian harbour, Splantzia quarter and dining scene are among the finest in Crete. For archaeological tourism specifically (Knossos palace, Heraklion Archaeological Museum), Heraklion is the right base.",
+            el: "Για ταξιδιώτες αναψυχής — ζευγάρια, λάτρεις του φαγητού — τα Χανιά υπερτερούν σε ατμόσφαιρα. Για αρχαιολογικό τουρισμό (Κνωσός, Αρχαιολογικό Μουσείο Ηρακλείου), το Ηράκλειο είναι η σωστή βάση."
           }
         },
         {
-          title: { en: "How many days should you spend in Chania?", el: "Πόσες μέρες χρειάζομαι στα Χανιά;" },
+          title: { en: "How do I get to Balos without driving the dirt road?", el: "Πώς πάω στον Μπάλο χωρίς να οδηγήσω τον χωματόδρομο;" },
           text: {
-            en: "Chania works well for a few days, but it becomes even more rewarding if you have enough time to combine the city with nearby beaches and regional day trips.",
-            el: "Τα Χανιά είναι υπέροχα για λίγες μέρες, αλλά γίνονται ακόμα πιο απολαυστικά αν έχετε χρόνο να συνδυάσετε την πόλη με κοντινές παραλίες και ημερήσιες εκδρομές."
+            en: "Take the daily seasonal ferry from Kissamos harbour (45 minutes west of Chania). The crossing takes about 1 hour and arrives directly at Balos. This avoids the steep, unpaved access road that requires a high-clearance vehicle and generates queues from early morning in summer.",
+            el: "Πάρτε το καθημερινό εποχικό πλοίο από το λιμάνι του Κισσάμου (45 λεπτά δυτικά των Χανίων). Το ταξίδι διαρκεί περίπου 1 ώρα και φτάνει απευθείας στον Μπάλο."
           }
         },
         {
-          title: { en: "Is Chania good for couples?", el: "Είναι τα Χανιά ιδανικά για ζευγάρια;" },
+          title: { en: "What is the best time to visit Chania in 2026?", el: "Ποια είναι η καλύτερη εποχή για τα Χανιά το 2026;" },
           text: {
-            en: "Yes. It is one of the best places in Crete for couples, especially because of its harbor setting, walkable old town, and dining atmosphere.",
-            el: "Ναι. Είναι ένα από τα καλύτερα μέρη της Κρήτης για ζευγάρια, χάρη στο σκηνικό του λιμανιού, την παλιά πόλη που προσφέρεται για περίπατο και τη ρομαντική ατμόσφαιρα στα εστιατόρια."
+            en: "June and September are optimal — warm sea, low crowds, full restaurant operations. July and August are the most animated but require advance booking and patience with crowds at major beaches. The Samaria Gorge opens from mid-May. The Climate Resilience Fee (€5–12/room/night) applies to all accommodation.",
+            el: "Ιούνιος και Σεπτέμβριος είναι ιδανικοί — ζεστή θάλασσα, λίγος κόσμος. Ιούλιος και Αύγουστος απαιτούν προκράτηση. Το Φαράγγι Σαμαριάς ανοίγει μέσα Μαΐου."
           }
         },
         {
           title: { en: "Do you need a car in Chania?", el: "Χρειάζομαι αυτοκίνητο στα Χανιά;" },
           text: {
-            en: "Not always for the city itself, but it is very useful if you want to explore the wider Chania region and western Crete more fully.",
-            el: "Όχι απαραίτητα μέσα στην πόλη, αλλά είναι εξαιρετικά χρήσιμο αν θέλετε να εξερευνήσετε πλήρως την ευρύτερη περιοχή των Χανίων και τη δυτική Κρήτη."
+            en: "Not within the city itself, which is very walkable. But for reaching Balos (via Kissamos), Elafonisi, the Samaria trailhead at Omalos, Imbros Gorge, Falasarna, and the White Mountains interior, a car is strongly recommended.",
+            el: "Όχι μέσα στην πόλη, αλλά για Μπάλο, Ελαφονήσι, Σαμαριά, Ίμπρο, Φαλάσαρνα και Λευκά Όρη, το αυτοκίνητο είναι απαραίτητο."
           }
         }
       ]
@@ -5638,8 +5704,8 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       layout: "list",
       title: { en: "Honest Advice — What to Skip in Chania", el: "Ειλικρινής Συμβουλή — Τι να Αποφύγεις στα Χανιά" },
       text: {
-        en: "✕ **Chania Old Town harbour restaurants** — The waterfront tavernas have the view but the worst food-to-price ratio in Crete. Walk two streets back into the Splantzia quarter for honest Cretan cooking at half the price.\n\n✕ **Balos Lagoon by car in August** — The drive to Balos is unpaved, steep, and stressful. The dirt road queues in summer are brutal. Take the daily ferry from Kissamos harbour instead — cheaper, calmer, and you arrive without the parking battle.\n\n✕ **Elafonisi pink sand hype** — The beach is genuinely beautiful, but the sand is only pink near the waterline and the 'Caribbean' comparisons are oversold. It is packed from 10:00 in July-August. Go early or visit the less-known Falasarna for a comparable experience.\n\n✕ **Spending all your time in the Old Town** — Chania's Venetian harbour is gorgeous but it is a tourist bubble. The actual city — the municipal market, the Splantzia quarter, the backstreets of Kastelli — is more interesting and more alive.\n\n✕ **Skipping the White Mountains** — The Lefka Ori behind Chania are accessible in day hikes (Samaria除外) and offer landscapes that most Crete visitors never see. The Omalos plateau and the Imbros Gorge are both within an hour's drive.\n\n💡 What nobody tells you: The best taverna experience near Chania is not in town at all — it is at To Maridaki, a tiny fish taverna on the road to Balos where locals eat grilled octopus with their feet in the sand. No signage, no website, no reservation needed.",
-        el: "✕ **Ταβέρνες στο λιμάνι της Παλιάς Πόλης** — Έχουν τη θέα αλλά το χειρότερος λόγος φαγητού-τιμής στην Κρήτη. Πήγαινε 2 δρομάκια μέσα στη Σπλαντζία.\n\n✕ **Μπάλος με αυτοκίνητο τον Αύγουστο** — Ο δρόμος είναι χωμάτινος, απότομος και τα queues τον Αύγουστο είναι δύσκολα. Πάρε το καθημερινό πλοίο από το Κίσσαμος.\n\n✕ **Ελαφονήσι ροζ άμμος** — Η παραλία είναι όμορφη αλλά η ροζ άμμος είναι μόνο κοντά στη θάλασσα και οι συγκρίσεις με Καραϊβική είναι υπερβολικές. Τον Ιούλιο-Αύγουστο γεμίζει 10:00.\n\n✕ **Χρόνος μόνο στην Παλιά Πόλη** — Το λιμάνι είναι όμορφο αλλά είναι τουριστική φούσκα. Η πραγματική πόλη — Αγορά, Σπλαντζία, Καστέλι — είναι πιο ενδιαφέρουσα.\n\n✕ **Να παραλείψεις τα Λευκά Όρη** — Προσβάσιμα σε ημερήσια πεζοπορία και προσφέρουν τοπία που οι περισσότεροι τουρίστες δεν βλέπουν. Όμαλος και Φαράγγι Ίμπρου σε μία ώρα.\n\n💡 Αυτό που δε σου λέει κανείς: Η καλύτερη ταβέρνα κοντά στα Χανιά δεν είναι στην πόλη — είναι το Μαριδάκι, ένα μικρό ψαράδικο στον δρόμο του Μπάλος όπου τοπικοί τρώνε ψητό χταπόδι με τα πόδια στην άμμο."
+        en: "✕ **The waterfront tavernas** — The harbour restaurants have the finest view in Chania and some of the worst value cooking in Crete. Walk two streets back into the Splantzia quarter for honest Cretan cooking at half the price. The exception is Salis on the harbour promenade, which earns its position.\n\n✕ **Driving to Balos via the unpaved road** — The dirt road to Balos is steep, deeply rutted, stressful and generates queues from early morning in peak summer. Take the daily seasonal ferry from Kissamos harbour instead — cheaper, calmer, and you arrive without the parking battle.\n\n✕ **Elafonisi and Balos hype** — Both beaches are genuinely beautiful, but Elafonisi's pink sand is only visible as a blush near the waterline, and both fill from 10am in peak season. Arrive early, take the first boat, or visit Falasarna for a comparable experience with fewer crowds.\n\n✕ **Spending all your time in the Old Town** — The Venetian harbour is gorgeous but it is a tourist bubble. The actual city — the Municipal Market (Agora), the Splantzia quarter, the backstreets of Kastelli — is more interesting and more alive.\n\n✕ **Skipping the White Mountains** — The Lefka Ori behind Chania offer landscapes that most Crete visitors never see. The Omalos plateau and the Imbros Gorge are both within an hour's drive.\n\n💡 What nobody tells you about Chania in 2026: The reopening of the Municipal Market is the city's most significant event since the harbour renovation in the 1990s — but the real test is whether the food-only mandate holds against commercial pressure. Visit as soon as possible after opening, buy directly from the producers, and the answer will be evident from the first morning.",
+        el: "✕ **Ταβέρνες στο λιμάνι** — Έχουν την ωραιότερη θέα αλλά τον χειρότερο λόγο φαγητού-τιμής. Περπατήστε δύο δρομάκια μέσα στη Σπλάντζια για αυθεντικό κρητικό φαγητό στη μισή τιμή.\n\n✕ **Οδήγηση στον Μπάλο από τον χωματόδρομο** — Ο δρόμος είναι απότομος, γεμάτος λακκούβες και έχει ουρές από νωρίς. Πάρτε το καθημερινό πλοίο από το Κίσσαμος.\n\n✕ **Ελαφονήσι και Μπάλος** — Και οι δύο παραλίες είναι πανέμορφες αλλά γεμίζουν από τις 10πμ. Φτάστε νωρίς ή επισκεφθείτε τη Φαλάσαρνα.\n\n✕ **Χρόνος μόνο στην Παλιά Πόλη** — Το λιμάνι είναι όμορφο αλλά τουριστική φούσκα. Η πραγματική πόλη — Αγορά, Σπλάντζια, Καστέλι — είναι πιο ενδιαφέρουσα.\n\n✕ **Να παραλείψετε τα Λευκά Όρη** — Προσφέρουν τοπία που οι περισσότεροι τουρίστες δεν βλέπουν. Όμαλος και Φαράγγι Ίμπρου σε μία ώρα.\n\n💡 Η επαναλειτουργία της Δημοτικής Αγοράς είναι το σημαντικότερο γεγονός από την ανάπλαση του λιμανιού — αλλά η πραγματική δοκιμασία είναι αν η εντολή για αποκλειστικά τρόφιμα αντέξει."
       }
     }
   ],
