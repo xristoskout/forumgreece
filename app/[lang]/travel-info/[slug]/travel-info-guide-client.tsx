@@ -124,13 +124,13 @@ export default function TravelInfoGuideClient({ lang, slug, item }: TravelInfoGu
     if (rows.length === 0) return null;
     const colCount = Math.max(headers.length, ...rows.map((r) => r.length));
     return (
-      <div key={key} className="overflow-x-auto rounded-xl border border-slate-200 bg-white shadow-sm mb-4">
-        <table className="w-full text-sm">
+      <div key={key} className="overflow-x-auto rounded-xl border border-slate-200 bg-white shadow-sm mb-4 max-w-full">
+        <table className="w-full text-sm table-fixed">
           {headers.length > 0 && (
             <thead>
               <tr className="border-b border-slate-200 bg-slate-100/80">
                 {headers.map((h, i) => (
-                  <th key={i} className="p-3 text-left text-xs font-bold uppercase tracking-widest text-slate-600">
+                  <th key={i} className="p-3 text-left text-xs font-bold uppercase tracking-widest text-slate-600 break-words">
                     {h}
                   </th>
                 ))}
@@ -144,7 +144,7 @@ export default function TravelInfoGuideClient({ lang, slug, item }: TravelInfoGu
             {rows.map((row, ri) => (
               <tr key={ri} className="border-b border-slate-100 last:border-0 hover:bg-slate-50/50">
                 {Array.from({ length: colCount }).map((_, ci) => (
-                  <td key={ci} className="p-3 text-slate-700">
+                  <td key={ci} className="p-3 text-slate-700 break-words">
                     {renderTextWithLinks(row[ci] || "")}
                   </td>
                 ))}
