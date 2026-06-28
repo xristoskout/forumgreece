@@ -350,6 +350,27 @@ export default function DestinationDetailsClient({
         </div>
       </section>
 
+      {destination.slug === "rhodes" && (
+        <section className="relative z-10 -mb-6 mx-auto max-w-7xl px-6 pt-6">
+          <div className="rounded-2xl border border-amber-200 bg-gradient-to-br from-amber-50 to-white p-6 shadow-lg shadow-amber-200/50">
+            <p className="text-sm font-bold uppercase tracking-widest text-amber-700 mb-2">
+              {lang === "en" ? "Also explore" : "Εξερευνήστε επίσης"}
+            </p>
+            <p className="text-base text-slate-700 leading-relaxed mb-3">
+              {lang === "en"
+                ? "Planning a trip to Rhodes? Check out the Old Town guide — Street of the Knights, Grand Master's Palace & more."
+                : "Σχεδιάζετε ταξίδι στη Ρόδο; Δείτε τον οδηγό για την Παλιά Πόλη — Οδός των Ιπποτών, Παλάτι του Μεγάλου Μαγίστρου & άλλα."}
+            </p>
+            <Link
+              href={withLang("/travel-info/rhodes-old-town-guide-medieval-city-street-of-knights-grand-master-palace")}
+              className="inline-flex items-center gap-1.5 rounded-lg bg-amber-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-amber-500"
+            >
+              {lang === "en" ? "Rhodes Old Town Guide →" : "Οδηγός Παλιάς Πόλης Ρόδου →"}
+            </Link>
+          </div>
+        </section>
+      )}
+
       <section className="mx-auto max-w-7xl px-6 py-16">
         <div className="grid gap-6 xl:grid-cols-[1.15fr_0.85fr]">
           <div className="space-y-6">

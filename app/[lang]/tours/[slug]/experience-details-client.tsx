@@ -178,6 +178,27 @@ export default function ExperienceDetailsClient({
         </div>
       </section>
 
+      {landing.slug === "crete-tours" && (
+        <section className="relative z-10 -mb-6 mx-auto max-w-7xl px-6 pt-6">
+          <div className="rounded-2xl border border-emerald-200 bg-gradient-to-br from-emerald-50 to-white p-6 shadow-lg shadow-emerald-200/50">
+            <p className="text-sm font-bold uppercase tracking-widest text-emerald-700 mb-2">
+              {lang === "en" ? "Also explore" : "Εξερευνήστε επίσης"}
+            </p>
+            <p className="text-base text-slate-700 leading-relaxed mb-3">
+              {lang === "en"
+                ? "Looking for relaxation? Check out our guide to the best yoga and wellness retreats in Crete."
+                : "Ψάχνετε για χαλάρωση; Δείτε τον οδηγό μας για τα καλύτερα yoga και wellness retreats στην Κρήτη."}
+            </p>
+            <Link
+              href={withLang("/travel-info/yoga-wellness-retreats-crete")}
+              className="inline-flex items-center gap-1.5 rounded-lg bg-emerald-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-emerald-500"
+            >
+              {lang === "en" ? "Yoga & wellness retreats guide →" : "Οδηγός yoga & wellness retreats →"}
+            </Link>
+          </div>
+        </section>
+      )}
+
       <section className="mx-auto max-w-7xl px-6 py-16">
         <div className="grid gap-6 xl:grid-cols-[1.15fr_0.85fr]">
           <div className="space-y-6">

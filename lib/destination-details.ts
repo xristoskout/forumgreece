@@ -854,28 +854,6 @@ export const destinationDetails: Record<string, DestinationDetail> = {
         "Ταξιδιώτες πολυτελείας (Hilton, JW Marriott, Ikos)"
       ]
     },
-    honestAdvice: {
-      title: { en: "What Nobody Tells You About Chania", el: "Αυτό που δε σου λέει κανείς για τα Χανιά" },
-      alert: {
-        en: "The reopening of the Municipal Market is the city's most significant event since the renovation of the harbour in the 1990s — but the real test is whether the food-only mandate holds against commercial pressure. Visit as soon as possible after opening, buy directly from the producers who return to their original stalls, and the answer will be evident from the first morning.",
-        el: "Η επαναλειτουργία της Δημοτικής Αγοράς είναι το σημαντικότερο γεγονός από την ανάπλαση του λιμανιού τη δεκαετία του 1990 — αλλά η πραγματική δοκιμασία είναι αν η εντολή για αποκλειστικά τρόφιμα αντέξει την εμπορική πίεση. Επισκεφθείτε το συντομότερο δυνατό και αγοράστε απευθείας από τους παραγωγούς."
-      },
-      items: {
-        en: [
-          "The harbour restaurants have the worst food-to-price ratio in Crete — walk two streets back into Splantzia for honest Cretan cooking at half the price.",
-          "Don't drive to Balos — take the ferry from Kissamos. The unpaved access road is steep, stressful, and queues from early morning in summer.",
-          "Elafonisi's pink sand is only visible near the waterline and the 'Caribbean' comparisons are oversold. Arrive by 9:30am or avoid July-August.",
-          "Don't spend all your time in the Old Town — Splantzia, the Agora, and the Kastelli quarter are where the city's actual character lives.",
-          "Skipping the White Mountains (Lefka Ori) is a mistake — the Omalos plateau and Imbros Gorge are within an hour's drive."
-        ],
-        el: [
-          "Οι ταβέρνες του λιμανιού έχουν τον χειρότερο λόγο φαγητού-τιμής στην Κρήτη — περπατήστε δύο δρομάκια μέσα στη Σπλάντζια για αυθεντικό κρητικό φαγητό στη μισή τιμή.",
-          "Μην οδηγήσετε στον Μπάλο — πάρτε το πλοίο από το Κίσσαμος. Ο χωματόδρομος είναι απότομος, αγχωτικός και έχει ουρές από νωρίς το πρωί το καλοκαίρι.",
-          "Η ροζ άμμος του Ελαφονησίου είναι ορατή μόνο κοντά στο νερό και οι συγκρίσεις με Καραϊβική είναι υπερβολικές. Φτάστε μέχρι τις 9:30 ή αποφύγετε Ιούλιο-Αύγουστο.",
-          "Μην περάσετε όλο τον χρόνο σας στην Παλιά Πόλη — η Σπλάντζια, η Αγορά και το Καστέλι έχουν τον πραγματικό χαρακτήρα της πόλης.",
-          "Το να παραλείψετε τα Λευκά Όρη είναι λάθος — το Οροπέδιο του Ομαλού και το Φαράγγι του Ίμπρου είναι σε απόσταση μίας ώρας."
-        ]
-      }
-    }
+
   },
 };
