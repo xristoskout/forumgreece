@@ -51,6 +51,7 @@ export type GuideCard = {
   sections?: GuideSection[];
   tips?: LocalizedList;
   faq?: HotelFAQ[];
+  tags?: string[];
 };
 
 export type HotelFAQ = {

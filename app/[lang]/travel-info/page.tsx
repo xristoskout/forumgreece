@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { useState, useMemo } from "react";
 import SiteHeader from "../../../components/site-header";
 import { usePathname, useRouter } from "next/navigation";
 import { type Lang } from "../../../lib/locale";
@@ -36,6 +37,29 @@ export default function TravelInfoHubPage() {
   function switchLanguage(nextLang: Lang) {
     router.push(withLang(pathname, nextLang));
   }
+
+  const [searchQuery, setSearchQuery] = useState("");
+  const [activeTag, setActiveTag] = useState<string | null>(null);
+
+  const allTags = useMemo(() => {
+    const tagSet = new Set<string>();
+    travelInfoGuides.forEach((g) => g.tags?.forEach((t) => tagSet.add(t)));
+    return Array.from(tagSet).sort();
+  }, []);
+
+  const filteredGuides = useMemo(() => {
+    return travelInfoGuides.filter((guide) => {
+      const matchesTag = !activeTag || guide.tags?.includes(activeTag);
+      const q = searchQuery.toLowerCase();
+      const matchesSearch =
+        !q ||
+        guide.title.en.toLowerCase().includes(q) ||
+        guide.title.el.toLowerCase().includes(q) ||
+        guide.description.en.toLowerCase().includes(q) ||
+        guide.description.el.toLowerCase().includes(q);
+      return matchesTag && matchesSearch;
+    });
+  }, [activeTag, searchQuery]);
 
   const t = {
     navHome: { en: "Home", el: "Αρχική" },
@@ -332,11 +356,59 @@ export default function TravelInfoHubPage() {
             </p>
           </div>
 
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {travelInfoGuides.map((item) => (
+          <div className="mb-8 flex flex-col gap-4">
+            <div className="relative">
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder={lang === "en" ? "Search guides..." : "Αναζήτηση οδηγών..."}
+                className="w-full rounded-xl border border-slate-200 bg-white px-5 py-3 pl-11 text-sm text-slate-900 placeholder-slate-400 shadow-sm transition-all focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-200"
+              />
+              <svg className="absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+              </svg>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              <button
+                onClick={() => setActiveTag(null)}
+                className={`rounded-full px-3.5 py-1.5 text-xs font-semibold tracking-wide transition-all ${
+                  !activeTag
+                    ? "bg-indigo-700 text-white shadow-sm"
+                    : "bg-slate-100 text-slate-600 hover:bg-slate-200"
+                }`}
+              >
+                {lang === "en" ? "All" : "Όλα"}
+              </button>
+              {allTags.map((tag) => (
+                <button
+                  key={tag}
+                  onClick={() => setActiveTag(tag === activeTag ? null : tag)}
+                  className={`rounded-full px-3.5 py-1.5 text-xs font-semibold tracking-wide transition-all ${
+                    activeTag === tag
+                      ? "bg-indigo-700 text-white shadow-sm"
+                      : "bg-slate-100 text-slate-600 hover:bg-slate-200"
+                  }`}
+                >
+                  {tag.charAt(0).toUpperCase() + tag.slice(1).replace(/-/g, ' ')}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {filteredGuides.length === 0 && (
+            <p className="py-16 text-center text-sm text-slate-400">
+              {lang === "en"
+                ? "No guides match your search. Try a different filter."
+                : "Κανένας οδηγός δεν ταιριάζει. Δοκιμάστε άλλο φίλτρο."}
+            </p>
+          )}
+
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {filteredGuides.map((item) => (
               <article
                 key={item.slug}
-                className="group relative flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-indigo-500/10 min-h-[400px]"
+                className="group relative flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-indigo-500/10 min-h-[280px]"
               >
                 <div className="absolute inset-0 transition-all duration-700 group-hover:scale-110 group-hover:brightness-110">
                   <Image
@@ -349,24 +421,29 @@ export default function TravelInfoHubPage() {
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-90 transition-opacity duration-500 group-hover:opacity-100" />
 
-                <div className="relative flex-1 p-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-500 flex flex-col justify-end">
-                  <div className="mb-4">
-                    <span className="rounded-full border border-indigo-200 bg-indigo-100 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-indigo-800 backdrop-blur-md">
-                      {lang === "en" ? "Travel Guide" : "Travel Guide"}
+                <div className="relative flex-1 p-5 translate-y-4 group-hover:translate-y-0 transition-transform duration-500 flex flex-col justify-end">
+                  <div className="mb-2 flex items-center gap-2">
+                    <span className="rounded-full border border-indigo-200 bg-indigo-100 px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-widest text-indigo-800 backdrop-blur-md">
+                      {lang === "en" ? "Guide" : "Οδηγός"}
                     </span>
+                    {item.tags && item.tags.length > 0 && (
+                      <span className="rounded-full border border-white/20 bg-white/10 px-2 py-0.5 text-[9px] font-medium text-white/80 backdrop-blur-md">
+                        {item.tags[0].charAt(0).toUpperCase() + item.tags[0].slice(1).replace(/-/g, ' ')}
+                      </span>
+                    )}
                   </div>
 
-                  <h3 className="mb-3 text-3xl font-bold tracking-tight text-white drop-shadow-md">
+                  <h3 className="mb-2 text-xl font-bold tracking-tight text-white drop-shadow-md">
                     {item.title[lang]}
                   </h3>
 
-                  <p className="mb-6 text-sm leading-relaxed text-white/90 line-clamp-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 hidden group-hover:block">
+                  <p className="mb-3 text-xs leading-relaxed text-white/90 line-clamp-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 hidden group-hover:block">
                     {item.description[lang]}
                   </p>
 
                   <Link
                     href={withLang(`/travel-info/${item.slug}`)}
-                    className="inline-flex w-full items-center justify-center rounded-xl bg-slate-50 px-4 py-3 text-sm font-semibold text-slate-900 backdrop-blur-md transition-all hover:bg-indigo-600 hover:text-slate-900"
+                    className="inline-flex w-full items-center justify-center rounded-xl bg-slate-50 px-3 py-2 text-xs font-semibold text-slate-900 backdrop-blur-md transition-all hover:bg-indigo-600 hover:text-slate-900"
                   >
                     {t.readGuide[lang]}
                   </Link>
