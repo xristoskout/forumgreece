@@ -260,15 +260,15 @@ export default function TravelInfoGuideClient({ lang, slug, item }: TravelInfoGu
       <main className="min-h-screen bg-slate-50 text-slate-900 selection:bg-indigo-100 selection:text-indigo-900 pb-20">
 
       {slug === "yoga-wellness-retreats-crete" && (
-        <section className="relative z-20 -mb-6 mx-auto max-w-7xl px-6 pt-6">
+        <section className="relative z-20 -mb-6 mx-auto max-w-7xl px-6 pt-28">
           <div className="rounded-2xl border border-indigo-200 bg-gradient-to-br from-indigo-50 to-white p-6 shadow-lg shadow-indigo-200/50">
             <p className="text-sm font-bold uppercase tracking-widest text-indigo-700 mb-2">
-              {lang === "en" ? "This guide has moved" : "Αυτός ο οδηγός έχει μεταφερθεί"}
+              {lang === "en" ? "Also explore" : "Εξερευνήστε επίσης"}
             </p>
             <p className="text-base text-slate-700 leading-relaxed mb-3">
               {lang === "en"
-                ? "The content from this page is now part of our dedicated destination guides. Find yoga and wellness retreat information on:"
-                : "Το περιεχόμενο αυτής της σελίδας είναι πλέον μέρος των αφιερωμένων οδηγών προορισμού. Βρείτε πληροφορίες για yoga και wellness retreats σε:"}
+                ? "Discover yoga, wellness, and nature retreats across Crete, along with our Chania and Crete destination guides for your trip."
+                : "Ανακαλύψτε yoga, wellness και retreats στη φύση σε όλη την Κρήτη, μαζί με τους οδηγούς μας για Χανιά και Κρήτη για το ταξίδι σας."}
             </p>
             <div className="flex flex-wrap gap-3">
               <Link
@@ -294,15 +294,15 @@ export default function TravelInfoGuideClient({ lang, slug, item }: TravelInfoGu
         </section>
       )}
       {slug === "rhodes-old-town-guide-medieval-city-street-of-knights-grand-master-palace" && (
-        <section className="relative z-20 -mb-6 mx-auto max-w-7xl px-6 pt-6">
+        <section className="relative z-20 -mb-6 mx-auto max-w-7xl px-6 pt-28">
           <div className="rounded-2xl border border-indigo-200 bg-gradient-to-br from-indigo-50 to-white p-6 shadow-lg shadow-indigo-200/50">
             <p className="text-sm font-bold uppercase tracking-widest text-indigo-700 mb-2">
-              {lang === "en" ? "This guide has moved" : "Αυτός ο οδηγός έχει μεταφερθεί"}
+              {lang === "en" ? "Also explore" : "Εξερευνήστε επίσης"}
             </p>
             <p className="text-base text-slate-700 leading-relaxed mb-3">
               {lang === "en"
-                ? "The content from this page is now part of our dedicated destination guides. Find Rhodes Old Town information on:"
-                : "Το περιεχόμενο αυτής της σελίδας είναι πλέον μέρος των αφιερωμένων οδηγών προορισμού. Βρείτε πληροφορίες για τη Μεσαιωνική Πόλη της Ρόδου σε:"}
+                ? "Discover more about Rhodes — its medieval Old Town, beaches, tours, and travel tips in our dedicated guides."
+                : "Ανακαλύψτε περισσότερα για τη Ρόδο — τη μεσαιωνική Παλιά Πόλη, τις παραλίες, τις εκδρομές και ταξιδιωτικές συμβουλές στους ειδικούς οδηγούς μας."}
             </p>
             <div className="flex flex-wrap gap-3">
               <Link
