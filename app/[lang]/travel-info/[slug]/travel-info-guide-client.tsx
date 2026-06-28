@@ -257,7 +257,7 @@ export default function TravelInfoGuideClient({ lang, slug, item }: TravelInfoGu
   return (
     <>
       <SiteHeader />
-      <main className="min-h-screen bg-slate-50 text-slate-900 selection:bg-indigo-100 selection:text-indigo-900 pb-20 overflow-x-hidden">
+      <main className="min-h-screen bg-slate-50 text-slate-900 selection:bg-indigo-100 selection:text-indigo-900 pb-20">
 
       {slug === "yoga-wellness-retreats-crete" && (
         <section className="relative z-20 -mb-6 mx-auto max-w-7xl px-6 pt-28">
@@ -322,15 +322,17 @@ export default function TravelInfoGuideClient({ lang, slug, item }: TravelInfoGu
         </section>
       )}
       <section className="relative overflow-hidden min-h-[60vh] flex items-end pt-32 pb-16">
-        <div className="absolute inset-0 z-0 transition-transform duration-[2s] scale-105">
-          <Image
-            src={item.image}
-            alt={item.title[lang]}
-            fill
-            sizes="100vw"
-            className="object-cover"
-            priority
-          />
+        <div className="absolute inset-0 z-0 overflow-hidden">
+          <div className="h-full w-full transition-transform duration-[2s] scale-105">
+            <Image
+              src={item.image}
+              alt={item.title[lang]}
+              fill
+              sizes="100vw"
+              className="object-cover"
+              priority
+            />
+          </div>
         </div>
         <div className="absolute inset-0 z-0 bg-gradient-to-t from-slate-950 via-slate-900/60 to-transparent" />
 
