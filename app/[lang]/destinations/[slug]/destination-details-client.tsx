@@ -330,7 +330,7 @@ export default function DestinationDetailsClient({
               return (
                 <Link
                   key={item.slug}
-                  href={withLang(`/eat-drink/${item.slug}`)}
+                  href={withLang(`${item.hrefPrefix || "/eat-drink/"}${item.slug}`)}
                   className="animate-float group flex items-center gap-4 rounded-3xl bg-emerald-600/90 px-6 py-5 shadow-lg backdrop-blur-md border border-emerald-400/50 transition-all duration-300 hover:bg-emerald-500 hover:border-emerald-300 hover:-translate-y-1 hover:shadow-2xl"
                   style={{ animationDelay: (baseDelay + idx) * 0.2 + "s" }}
                 >

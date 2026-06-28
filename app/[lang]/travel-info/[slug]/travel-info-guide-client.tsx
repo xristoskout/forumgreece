@@ -259,6 +259,68 @@ export default function TravelInfoGuideClient({ lang, slug, item }: TravelInfoGu
       <SiteHeader />
       <main className="min-h-screen bg-slate-50 text-slate-900 selection:bg-indigo-100 selection:text-indigo-900 pb-20">
 
+      {slug === "yoga-wellness-retreats-crete" && (
+        <section className="relative z-20 -mb-6 mx-auto max-w-7xl px-6 pt-6">
+          <div className="rounded-2xl border border-indigo-200 bg-gradient-to-br from-indigo-50 to-white p-6 shadow-lg shadow-indigo-200/50">
+            <p className="text-sm font-bold uppercase tracking-widest text-indigo-700 mb-2">
+              {lang === "en" ? "This guide has moved" : "Αυτός ο οδηγός έχει μεταφερθεί"}
+            </p>
+            <p className="text-base text-slate-700 leading-relaxed mb-3">
+              {lang === "en"
+                ? "The content from this page is now part of our dedicated destination guides. Find yoga and wellness retreat information on:"
+                : "Το περιεχόμενο αυτής της σελίδας είναι πλέον μέρος των αφιερωμένων οδηγών προορισμού. Βρείτε πληροφορίες για yoga και wellness retreats σε:"}
+            </p>
+            <div className="flex flex-wrap gap-3">
+              <Link
+                href={withLang("/destinations/chania")}
+                className="inline-flex items-center gap-1.5 rounded-lg bg-indigo-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-indigo-500"
+              >
+                {lang === "en" ? "Chania destination guide →" : "Οδηγός για Χανιά →"}
+              </Link>
+              <Link
+                href={withLang("/destinations/crete")}
+                className="inline-flex items-center gap-1.5 rounded-lg bg-indigo-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-indigo-500"
+              >
+                {lang === "en" ? "Crete destination guide →" : "Οδηγός για Κρήτη →"}
+              </Link>
+              <Link
+                href={withLang("/tours/crete-tours")}
+                className="inline-flex items-center gap-1.5 rounded-lg bg-emerald-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-emerald-500"
+              >
+                {lang === "en" ? "Crete tours guide →" : "Ξεναγήσεις Κρήτης →"}
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
+      {slug === "rhodes-old-town-guide-medieval-city-street-of-knights-grand-master-palace" && (
+        <section className="relative z-20 -mb-6 mx-auto max-w-7xl px-6 pt-6">
+          <div className="rounded-2xl border border-indigo-200 bg-gradient-to-br from-indigo-50 to-white p-6 shadow-lg shadow-indigo-200/50">
+            <p className="text-sm font-bold uppercase tracking-widest text-indigo-700 mb-2">
+              {lang === "en" ? "This guide has moved" : "Αυτός ο οδηγός έχει μεταφερθεί"}
+            </p>
+            <p className="text-base text-slate-700 leading-relaxed mb-3">
+              {lang === "en"
+                ? "The content from this page is now part of our dedicated destination guides. Find Rhodes Old Town information on:"
+                : "Το περιεχόμενο αυτής της σελίδας είναι πλέον μέρος των αφιερωμένων οδηγών προορισμού. Βρείτε πληροφορίες για τη Μεσαιωνική Πόλη της Ρόδου σε:"}
+            </p>
+            <div className="flex flex-wrap gap-3">
+              <Link
+                href={withLang("/destinations/rhodes")}
+                className="inline-flex items-center gap-1.5 rounded-lg bg-indigo-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-indigo-500"
+              >
+                {lang === "en" ? "Rhodes destination guide →" : "Οδηγός για Ρόδο →"}
+              </Link>
+              <Link
+                href={withLang("/tours/rhodes-tours")}
+                className="inline-flex items-center gap-1.5 rounded-lg bg-emerald-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-emerald-500"
+              >
+                {lang === "en" ? "Rhodes tours guide →" : "Ξεναγήσεις Ρόδου →"}
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
       <section className="relative overflow-hidden min-h-[60vh] flex items-end pt-32 pb-16">
         <div className="absolute inset-0 z-0 transition-transform duration-[2s] scale-105">
           <Image

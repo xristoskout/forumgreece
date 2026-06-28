@@ -93,6 +93,9 @@ export type FoodCard = {
   slug: string;
   title: Localized;
   place: string;
+  hrefPrefix?: string;
+  badge?: Localized;
+  actionLabel?: Localized;
   info: Localized;
   image: string;
   overview: Localized;

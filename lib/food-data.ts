@@ -508,5 +508,35 @@ export const food: FoodCard[] = [
       }
     ]
   },
+  {
+    slug: "kefalonia-wine-tour-robola-guide-2026",
+    title: {
+      en: "Kefalonia Wine Tour 2026: The Ultimate Robola Guide",
+      el: "Οινοτουρισμός Κεφαλονιά 2026: Ο Απόλυτος Οδηγός για τη Ρομπόλα"
+    },
+    place: "Kefalonia",
+    hrefPrefix: "/travel-info/",
+    badge: {
+      en: "Wine Guide",
+      el: "Οδηγός Κρασιού",
+    },
+    actionLabel: {
+      en: "Kefalonia wine guide →",
+      el: "Οδηγός κρασιού Κεφαλονιάς →",
+    },
+    info: {
+      en: "Discover the best Kefalonia wine tour experiences in 2026. Explore Robola PDO, top wineries, wine tastings, the best time to visit, and food pairings.",
+      el: "Ανακαλύψτε τις καλύτερες εμπειρίες οινοτουρισμού στην Κεφαλονιά για το 2026. Εξερευνήστε την ΠΟΠ Ρομπόλα, κορυφαία οινοποιεία, γευσιγνωσίες, την καλύτερη εποχή επίσκεψης και γαστρονομικούς συνδυασμούς."
+    },
+    image: "/images/kefalonia-wine.webp",
+    overview: {
+      en: "Kefalonia is one of Greece's most distinctive wine destinations. At the heart of Kefalonia's wine identity is Robola, the island's signature white wine grown on the limestone slopes of Mount Ainos.",
+      el: "Η Κεφαλονιά είναι ένας από τους πιο ξεχωριστούς οινοτουριστικούς προορισμούς της Ελλάδας. Στην καρδιά της οινοταυτότητας της Κεφαλονιάς βρίσκεται η Ρομπόλα."
+    },
+    specialties: {
+      en: ["Robola PDO Wine", "Wine Tasting Tours", "Kefalonian Cuisine"],
+      el: ["Κρασί ΠΟΠ Ρομπόλα", "Γευσιγνωσίες Κρασιού", "Κεφαλονίτικη Κουζίνα"],
+    },
+  },
 ];
 

@@ -52,6 +52,7 @@ export function generateStaticParams() {
   const paths: { lang: string; slug: string }[] = [];
   for (const lang of ["en", "el"]) {
     for (const item of food) {
+      if (item.hrefPrefix) continue;
       paths.push({ lang, slug: item.slug });
     }
   }
@@ -71,6 +72,10 @@ export default async function EatDrinkPage({ params }: { params: Params }) {
       permanentRedirect(`/${lang}/eat-drink/${byPlace[0].slug}`);
     }
     notFound();
+  }
+
+  if (item.hrefPrefix) {
+    permanentRedirect(`/${lang}${item.hrefPrefix}${item.slug}`);
   }
 
   const relatedBusinesses = experienceBusinesses.filter(b => b.landingSlug === slug);

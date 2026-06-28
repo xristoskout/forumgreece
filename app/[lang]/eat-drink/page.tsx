@@ -162,7 +162,7 @@ export default async function EatDrinkPage({ params }: Props) {
               <div className="p-6">
                 <div className="flex flex-wrap items-center gap-2">
                   <span className="rounded-md bg-orange-50 px-3 py-1 text-xs font-semibold text-orange-800">
-                    {lang === "en" ? "Food Guide" : "Γαστρονομικός Οδηγός"}
+                    {item.badge?.[lang] || (lang === "en" ? "Food Guide" : "Γαστρονομικός Οδηγός")}
                   </span>
                   <span className="rounded-md bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-500">
                     {item.place}
@@ -189,10 +189,10 @@ export default async function EatDrinkPage({ params }: Props) {
                 </div>
 
                 <Link
-                  href={withLang(`/eat-drink/${item.slug}`, lang)}
+                  href={withLang(`${item.hrefPrefix || "/eat-drink/"}${item.slug}`, lang)}
                   className="mt-6 inline-flex rounded-md bg-orange-500 px-4 py-3 text-sm font-semibold text-slate-900 transition hover:bg-orange-600"
                 >
-                  {lang === "en" ? `${item.place} food guide →` : `Γαστρονομικός οδηγός για ${item.place} →`}
+                  {item.actionLabel?.[lang] || (lang === "en" ? `${item.place} food guide →` : `Γαστρονομικός οδηγός για ${item.place} →`)}
                 </Link>
               </div>
             </article>

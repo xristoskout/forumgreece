@@ -934,17 +934,17 @@ export default function HomePageClient({
                   </ul>
 
                   <Link
-                    href={withLang(`/eat-drink/${item.slug}`)}
+                    href={withLang(`${item.hrefPrefix || "/eat-drink/"}${item.slug}`)}
                     className="mt-6 inline-flex rounded-md bg-orange-500 px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-orange-600"
                     aria-label={
-                      lang === "en"
+                      item.actionLabel?.[lang]?.replace(" →", "") || (lang === "en"
                         ? `Read the ${item.place} food guide`
-                        : `Δες τον γαστρονομικό οδηγό για ${item.place}`
+                        : `Δες τον γαστρονομικό οδηγό για ${item.place}`)
                     }
                   >
-                    {lang === "en"
+                    {item.actionLabel?.[lang] || (lang === "en"
                       ? `${item.place} food guide →`
-                      : `Γαστρονομικός οδηγός για ${item.place} →`}
+                      : `Γαστρονομικός οδηγός για ${item.place} →`)}
                   </Link>
                 </div>
               </article>
