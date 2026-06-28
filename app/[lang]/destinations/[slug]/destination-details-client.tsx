@@ -579,7 +579,7 @@ export default function DestinationDetailsClient({
             {renderCompareWidget()}
 
             {(() => {
-              const TOURS_SLUGS = new Set(["santorini", "mykonos", "athens", "crete", "kefalonia", "lesvos"]);
+              const TOURS_SLUGS = new Set(["santorini", "mykonos", "athens", "crete", "kefalonia", "lesvos", "rhodes"]);
               if (TOURS_SLUGS.has(destination.slug)) {
                 return (
                   <article className="overflow-hidden rounded-[28px] border border-slate-200 bg-gradient-to-br from-indigo-50 to-white p-8 shadow-sm">

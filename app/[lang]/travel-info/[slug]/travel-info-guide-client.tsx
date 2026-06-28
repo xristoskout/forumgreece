@@ -257,7 +257,7 @@ export default function TravelInfoGuideClient({ lang, slug, item }: TravelInfoGu
   return (
     <>
       <SiteHeader />
-      <main className="min-h-screen bg-slate-50 text-slate-900 selection:bg-indigo-100 selection:text-indigo-900 pb-20">
+      <main className="min-h-screen bg-slate-50 text-slate-900 selection:bg-indigo-100 selection:text-indigo-900 pb-20 overflow-x-hidden">
 
       {slug === "yoga-wellness-retreats-crete" && (
         <section className="relative z-20 -mb-6 mx-auto max-w-7xl px-6 pt-28">
