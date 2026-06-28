@@ -2370,6 +2370,267 @@ export const travelInfoGuides: GuideCard[] = [
         a: { en: "The Cretan diet is the traditional eating pattern of the island — very high in extra-virgin olive oil, wild greens, legumes, fresh fish and herbs, with modest meat and dairy. It was central to the original Seven Countries Study that established the science of the Mediterranean diet. At a Crete wellness retreat this is not a marketing concept — the food genuinely reflects these principles, sourced locally and prepared daily.", el: "Η κρητική διατροφή είναι το παραδοσιακό διατροφικό πρότυπο του νησιού — πλούσιο σε ελαιόλαδο, χόρτα, όσπρια, ψάρι και βότανα. Σε ένα wellness retreat στην Κρήτη αυτό δεν είναι concept μάρκετινγκ — το φαγητό αντικατοπτρίζει πραγματικά αυτές τις αρχές." }
       }
     ]
+  },
+  {
+    slug: "kefalonia-wine-tour-robola-guide-2026",
+    title: {
+      en: "Kefalonia Wine Tour 2026: The Ultimate Robola Guide",
+      el: "Οινοτουρισμός Κεφαλονιά 2026: Ο Απόλυτος Οδηγός για τη Ρομπόλα"
+    },
+    description: {
+      en: "Discover the best Kefalonia wine tour experiences in 2026. Explore Robola PDO, top wineries, wine tastings, the best time to visit, and food pairings.",
+      el: "Ανακαλύψτε τις καλύτερες εμπειρίες οινοτουρισμού στην Κεφαλονιά για το 2026. Εξερευνήστε την ΠΟΠ Ρομπόλα, κορυφαία οινοποιεία, γευσιγνωσίες, την καλύτερη εποχή επίσκεψης και γαστρονομικούς συνδυασμούς."
+    },
+    image: "/images/kefalonia-wine.webp",
+    tags: ["wine", "kefalonia", "food-wine"],
+    overview: {
+      en: "Kefalonia is one of Greece's most distinctive wine destinations, yet it remains less crowded than the country's better-known wine regions. For travellers who want a wine experience that feels authentic, scenic, and deeply connected to place, the island offers an ideal combination of local varieties, family-run wineries, and striking landscapes.\n\nAt the heart of Kefalonia's wine identity is **Robola**, the island's signature white wine. Grown mainly on the limestone slopes of Mount Ainos and the Omala plateau, Robola reflects the island's rugged terrain and cool mountain microclimate. A wine tour in Kefalonia is therefore not just a tasting experience, but a chance to understand the island through its land, its people, and its traditions.",
+      el: "Η Κεφαλονιά είναι ένας από τους πιο ξεχωριστούς οινοτουριστικούς προορισμούς της Ελλάδας, παραμένοντας ωστόσο λιγότερο πολυσύχναστη από τις πιο γνωστές οινοπαραγωγικές περιοχές. Για ταξιδιώτες που αναζητούν μια αυθεντική εμπειρία κρασιού, το νησί προσφέρει ιδανικό συνδυασμό τοπικών ποικιλιών, οικογενειακών οινοποιείων και εντυπωσιακών τοπίων.\n\nΣτην καρδιά της οινοταυτότητας της Κεφαλονιάς βρίσκεται η **Ρομπόλα**, το χαρακτηριστικό λευκό κρασί του νησιού. Καλλιεργείται κυρίως στις ασβεστολιθικές πλαγιές του όρους Αίνος και στο οροπέδιο της Ομαλάς, αντανακλώντας το τραχύ έδαφος και το δροσερό μικροκλίμα του βουνού."
+    },
+    points: {
+      en: [
+        "Robola PDO — the signature white wine of Kefalonia, grown on Mount Ainos",
+        "Family-run wineries with authentic, personal tasting experiences",
+        "Gentilini, Divino, Sclavos, Orealios Gaea — the top wineries to visit",
+        "Best months: September–October for harvest season activity",
+        "Limestone terroir and high-altitude vineyards create crisp, mineral wines",
+        "Pairs perfectly with local cuisine: seafood, pies, fresh cheeses",
+        "Self-drive itineraries or guided tours available"
+      ],
+      el: [
+        "ΠΟΠ Ρομπόλα — το χαρακτηριστικό λευκό κρασί της Κεφαλονιάς, από τον Αίνο",
+        "Οικογενειακά οινοποιεία με αυθεντικές, προσωπικές εμπειρίες γευσιγνωσίας",
+        "Gentilini, Divino, Sclavos, Orealios Gaea — τα κορυφαία οινοποιεία",
+        "Καλύτερη περίοδος: Σεπτέμβριος–Οκτώβριος για τη συγκομιδή",
+        "Ασβεστολιθικό terroir και αμπελώνες υψηλού υψομέτρου για φρέσκα, ορυκτά κρασιά",
+        "Ιδανικοί συνδυασμοί με τοπική κουζίνα: θαλασσινά, πίτες, φρέσκα τυριά",
+        "Αυτόνομες διαδρομές ή οργανωμένες ξεναγήσεις"
+      ]
+    },
+    sections: [
+      {
+        title: { en: "Why Kefalonia Is a Wine Destination", el: "Γιατί η Κεφαλονιά είναι Οινοτουριστικός Προορισμός" },
+        content: {
+          en: "Kefalonia is best known for its beaches, but its wine culture deserves equal attention. The island has a long history of viticulture, with native grape varieties that have survived because of the island's terrain, climate, and the dedication of local growers.\n\nWhat makes Kefalonia especially interesting for wine travellers is the close link between landscape and production. Vineyards are often small, family-managed, and located in areas where soils are poor, stony, and well drained. That combination typically produces wines with strong character, good acidity, and clear regional identity.",
+          el: "Η Κεφαλονιά είναι γνωστή κυρίως για τις παραλίες της, αλλά η κουλτούρα του κρασιού της αξίζει εξίσου προσοχή. Το νησί έχει μακρά ιστορία αμπελοκαλλιέργειας, με ντόπιες ποικιλίες που επέζησαν χάρη στο ανάγλυφο, το κλίμα και την αφοσίωση των τοπικών παραγωγών.\n\nΑυτό που κάνει την Κεφαλονιά ιδιαίτερα ενδιαφέρουσα για τους οινοτουρίστες είναι η στενή σύνδεση μεταξύ τοπίου και παραγωγής. Οι αμπελώνες είναι συχνά μικροί, οικογενειακοί, και βρίσκονται σε περιοχές με φτωχά, πετρώδη εδάφη — συνδυασμός που παράγει κρασιά με δυνατό χαρακτήρα, καλή οξύτητα και σαφή ταυτότητα."
+        }
+      },
+      {
+        title: { en: "Robola PDO: The Signature Wine of Kefalonia", el: "ΠΟΠ Ρομπόλα: Το Χαρακτηριστικό Κρασί της Κεφαλονιάς" },
+        content: {
+          en: "Robola is the most important wine variety on the island and one of the clearest expressions of Kefalonia's terroir. It is a dry white wine with fresh acidity, citrus-driven aromas, and a subtle mineral profile that reflects the limestone soils where it is grown.\n\nThe **Robola PDO** zone is centred on the slopes of Mount Ainos and the Omala plateau. The vineyards sit at relatively high altitude, which helps preserve freshness in the grapes and gives the wine its lively structure. This is one of the reasons Robola stands out among Greek white wines.\n\nIn the glass, Robola usually shows notes of lemon, grapefruit, white flowers, herbs, and a clean, dry finish. It pairs especially well with fish, shellfish, local pies, and fresh cheeses.",
+          el: "Η Ρομπόλα είναι η σημαντικότερη ποικιλία κρασιού στο νησί και μια από τις πιο καθαρές εκφράσεις του terroir της Κεφαλονιάς. Είναι ένα ξηρό λευκό κρασί με φρέσκια οξύτητα, αρώματα εσπεριδοειδών και διακριτικό ορυκτό χαρακτήρα.\n\nΗ ζώνη **ΠΟΠ Ρομπόλα** επικεντρώνεται στις πλαγιές του Αίνου και στο οροπέδιο της Ομαλάς. Οι αμπελώνες βρίσκονται σε σχετικά υψηλό υψόμετρο, γεγονός που διατηρεί τη φρεσκάδα και δίνει ζωντανή δομή στο κρασί.\n\nΣτο ποτήρι, η Ρομπόλα παρουσιάζει νότες λεμονιού, γκρέιπφρουτ, λευκών λουλουδιών και βοτάνων, με καθαρό, ξηρό τελείωμα. Συνδυάζεται ιδανικά με ψάρι, θαλασσινά, τοπικές πίτες και φρέσκα τυριά."
+        }
+      },
+      {
+        title: { en: "Top Wineries to Visit", el: "Κορυφαία Οινοποιεία για Επίσκεψη" },
+        content: {
+          en: "Kefalonia's wineries range from polished, tour-ready estates to small family operations where the winemaker is also your host. Here are the most notable ones:\n\n**Gentilini Winery & Vineyards** — One of the best-known wineries on the island and a strong first stop for visitors who want a polished and well-organised tasting experience. The estate is known for quality-focused production and careful vineyard work. Visitors can expect a guided tasting, a look at the winery facilities, and a chance to sample Robola alongside other estate wines.\n\n**Divino Wines & Vinegar** — A more relaxed and atmospheric experience with a strong connection to local tradition. In addition to wine, the estate is also known for vinegar production and for a tasting experience that feels personal and varied. A good stop for visitors who want to explore beyond a standard winery visit.\n\n**Sclavos Wines** — One of the most interesting estates for travellers who enjoy natural, biodynamic, or low-intervention wines. The winery has built a strong reputation for working with indigenous varieties and expressing the island's character in a more unconventional way. The best choice for wine enthusiasts who want something adventurous and terroir-driven.\n\n**Orealios Gaea** — The cooperative at the centre of the Robola PDO zone and one of the most important places to understand the wine's identity. For anyone who wants a broader picture of Robola production, this is an essential stop. The experience is more educational than boutique, but that is also its strength — it gives visitors a direct view of the collective tradition behind the island's signature wine.",
+          el: "Τα οινοποιεία της Κεφαλονιάς κυμαίνονται από καλά οργανωμένες μονάδες έως μικρές οικογενειακές επιχειρήσεις όπου ο οινοποιός είναι και ο οικοδεσπότης σας:\n\n**Gentilini Winery & Vineyards** — Ένα από τα πιο γνωστά οινοποιεία του νησιού, ιδανικό για όσους θέλουν μια καλά οργανωμένη γευσιγνωσία. Προσφέρει ξενάγηση, δοκιμή της Ρομπόλας και άλλων κρασιών.\n\n**Divino Wines & Vinegar** — Πιο χαλαρή και ατμοσφαιρική εμπειρία, γνωστή και για την παραγωγή ξυδιού. Προσωπική και ποικίλη γευσιγνωσία.\n\n**Sclavos Wines** — Ιδανικό για λάτρεις των φυσικών και βιοδυναμικών κρασιών. Δουλεύει με ντόπιες ποικιλίες και εκφράζει τον χαρακτήρα του νησιού με αντισυμβατικό τρόπο.\n\n**Orealios Gaea** — Ο συνεταιρισμός στο κέντρο της ζώνης ΠΟΠ Ρομπόλα. Απαραίτητος σταθμός για όσους θέλουν να κατανοήσουν την ταυτότητα του κρασιού. Πιο εκπαιδευτική παρά μπουτίκ εμπειρία."
+        }
+      },
+      {
+        title: { en: "Best Wine Tour Experiences", el: "Οι Καλύτερες Εμπειρίες Οινοτουρισμού" },
+        content: {
+          en: "Kefalonia offers a range of wine tour formats, from short tastings to full-day island itineraries. Some tours focus mainly on Robola and local wineries, while others combine wine with caves, scenic viewpoints, and traditional villages.\n\nIf you prefer flexibility, a **self-guided route** can work well, especially if you have a car. A route linking Argostoli, Omala, and the southern or western wineries can make for an excellent half-day or full-day wine itinerary.\n\nFor travellers who want convenience, **organised tours** are often the better option. They usually include transport, a guide, and a balanced mix of tasting and sightseeing. Check local tour operators in Argostoli or your hotel for recommendations.",
+          el: "Η Κεφαλονιά προσφέρει ποικιλία μορφών οινοτουρισμού, από σύντομες γευσιγνωσίες έως ολοήμερες διαδρομές. Κάποιες ξεναγήσεις επικεντρώνονται στη Ρομπόλα, ενώ άλλες συνδυάζουν κρασί με σπήλαια, σημεία θέας και παραδοσιακά χωριά.\n\nΜια **αυτόνομη διαδρομή** είναι ιδανική αν έχετε αυτοκίνητο. Μία διαδρομή που συνδέει το Αργοστόλι, την Ομαλά και τα νότια οινοποιεία μπορεί να αποτελέσει εξαιρετική ημερήσια εκδρομή.\n\nΓια όσους προτιμούν ευκολία, οι **οργανωμένες ξεναγήσεις** είναι συχνά καλύτερη επιλογή, με μεταφορά, ξεναγό και ισορροπημένο συνδυασμό γευσιγνωσίας και περιήγησης."
+        }
+      },
+      {
+        title: { en: "The Kefalonian Terroir", el: "Το Terroir της Κεφαλονιάς" },
+        content: {
+          en: "Robola's quality comes from the island's natural conditions as much as from the grape itself. The **limestone soils** of the Robola zone are dry, stony, and low in fertility, which encourages low yields and concentrated fruit.\n\n**Altitude** also matters. Cooler nights at higher elevations help preserve acidity and aromatic freshness, while the island's wind and exposure reduce disease pressure in the vineyards. Together, these factors create a wine style that feels crisp, structured, and unmistakably local.\n\nThe combination of mountain and sea — the Ainos massif rising directly from the Ionian Sea — gives Kefalonia's wines a mineral salinity that distinguishes them from other Greek white wines.",
+          el: "Η ποιότητα της Ρομπόλας προέρχεται τόσο από τις φυσικές συνθήκες του νησιού όσο και από την ίδια την ποικιλία. Τα **ασβεστολιθικά εδάφη** της ζώνης Ρομπόλας είναι ξηρά, πετρώδη και χαμηλής γονιμότητας, ενθαρρύνοντας χαμηλές αποδόσεις και συμπυκνωμένο καρπό.\n\nΤο **υψόμετρο** επίσης παίζει ρόλο. Οι ψυχρότερες νύχτες στα υψηλότερα υψόμετρα διατηρούν την οξύτητα και τη φρεσκάδα. Ο συνδυασμός βουνού και θάλασσας δίνει στα κρασιά μια ορυκτή αλμύρα που τα ξεχωρίζει από άλλα ελληνικά λευκά κρασιά."
+        }
+      },
+      {
+        title: { en: "When to Visit", el: "Πότε να Επισκεφθείτε" },
+        content: {
+          en: "The best time for a wine tour in Kefalonia depends on what kind of experience you want:\n\n**Spring** — One of the best times for a wine trip. The island is green, the weather is mild, and winery visits are typically more relaxed. Vineyards are in full growth after winter rains.\n\n**Summer** — The busiest season. Wine tours still operate, but it is wise to book in advance, especially if you want private or small-group experiences. Evenings are warm and long.\n\n**Autumn (September–October)** — The most interesting season for wine travellers because it overlaps with **harvest**. This is the best time to see the wineries in active production and to get a more complete sense of the island's wine culture. September also offers excellent weather.\n\n**Winter** — Quieter, with some wineries operating by appointment only. If you travel during this period, contact wineries ahead of time.",
+          el: "Η καλύτερη εποχή για οινοτουρισμό στην Κεφαλονιά εξαρτάται από το είδος εμπειρίας που θέλετε:\n\n**Άνοιξη** — Ιδανική περίοδος. Το νησί είναι πράσινο, ο καιρός ήπιος και οι επισκέψεις σε οινοποιεία πιο χαλαρές.\n\n**Καλοκαίρι** — Η πιο πολυσύχναστη σεζόν. Οι οινοτουριστικές δραστηριότητες λειτουργούν κανονικά, αλλά καλό είναι να κλείσετε εκ των προτέρων.\n\n**Φθινόπωρο (Σεπτέμβριος–Οκτώβριος)** — Η πιο ενδιαφέρουσα περίοδος λόγω **τρύγου**. Η καλύτερη στιγμή για να δείτε τα οινοποιεία σε πλήρη παραγωγή.\n\n**Χειμώνας** — Πιο ήσυχη περίοδος, με κάποια οινοποιεία να λειτουργούν μόνο κατόπιν ραντεβού."
+        }
+      },
+      {
+        title: { en: "Food Pairings", el: "Γαστρονομικοί Συνδυασμοί" },
+        content: {
+          en: "Robola works beautifully with Kefalonian cuisine. It pairs especially well with grilled fish, seafood, lemon-based dishes, local pies, and fresh cheeses — the wine's acidity and citrus character cut through the richness and complement the freshness of the ingredients.\n\nIf you are tasting sweeter styles such as **Mavrodaphne** (another traditional variety found on the island), try them with chocolate, nuts, or traditional desserts. The balance of sweetness and texture makes these wines especially satisfying after a meal.\n\nFor a complete experience, combine winery visits with lunch at a traditional taverna in the Omala area or in a seaside village — many wineries can recommend nearby restaurants that pair well with their wines.",
+          el: "Η Ρομπόλα συνδυάζεται υπέροχα με την κεφαλονίτικη κουζίνα. Ταιριάζει ιδανικά με ψητό ψάρι, θαλασσινά, πιάτα με λεμόνι, τοπικές πίτες και φρέσκα τυριά — η οξύτητα και τα αρώματα εσπεριδοειδών του κρασιού συμπληρώνουν τη φρεσκάδα των υλικών.\n\nΑν δοκιμάσετε γλυκύτερες ποικιλίες όπως η **Μαυροδάφνη**, δοκιμάστε τις με σοκολάτα, ξηρούς καρπούς ή παραδοσιακά γλυκά.\n\nΓια ολοκληρωμένη εμπειρία, συνδυάστε επισκέψεις σε οινοποιεία με γεύμα σε παραδοσιακή ταβέρνα στην Ομαλά ή σε παραθαλάσσιο χωριό."
+        }
+      }
+    ],
+    tips: {
+      en: [
+        "A car is highly recommended for exploring Kefalonia's wineries independently — public transport is limited.",
+        "Book winery visits in advance, especially in peak season. Some wineries accept walk-ins, but private tastings are best arranged ahead.",
+        "September and October offer the best combination of good weather and harvest activity — book well ahead.",
+        "Combine wine tasting with lunch at a traditional taverna in the Omala area for a complete Kefalonia food experience.",
+        "Most wineries charge a small tasting fee (usually waived if you buy wine). Budget €5–15 per tasting.",
+        "Allow 45–60 minutes per winery visit for a relaxed experience. Two to four wineries make a comfortable full-day itinerary.",
+        "Robola is best served chilled (8–10°C). Most wineries serve it at the correct temperature — enjoy it the same way at home."
+      ],
+      el: [
+        "Το αυτοκίνητο είναι απαραίτητο για να εξερευνήσετε ανεξάρτητα τα οινοποιεία της Κεφαλονιάς.",
+        "Κλείστε εκ των προτέρων, ειδικά σε περίοδο αιχμής.",
+        "Σεπτέμβριος και Οκτώβριος προσφέρουν τον καλύτερο συνδυασμό καιρού και δραστηριότητας τρύγου.",
+        "Συνδυάστε γευσιγνωσία με γεύμα σε παραδοσιακή ταβέρνα στην Ομαλά.",
+        "Οι περισσότερες γευσιγνωσίες κοστίζουν €5–15 (συνήθως διαγράφονται με αγορά κρασιού).",
+        "Υπολογίστε 45–60 λεπτά ανά οινοποιείο. 2–4 οινοποιεία είναι άνετη ημερήσια διαδρομή.",
+        "Η Ρομπόλα σερβίρεται παγωμένη (8–10°C)."
+      ]
+    },
+    faq: [
+      {
+        q: { en: "What is the best wine in Kefalonia?", el: "Ποιο είναι το καλύτερο κρασί στην Κεφαλονιά;" },
+        a: { en: "Robola is the best-known and most characteristic wine of Kefalonia. It is a PDO white wine with fresh acidity, citrus aromas, and a mineral character shaped by the island's limestone soils and high-altitude vineyards.", el: "Η Ρομπόλα είναι το πιο γνωστό και χαρακτηριστικό κρασί της Κεφαλονιάς. Είναι ένα λευκό κρασί ΠΟΠ με φρέσκια οξύτητα, αρώματα εσπεριδοειδών και ορυκτό χαρακτήρα." }
+      },
+      {
+        q: { en: "How many wineries should I visit?", el: "Πόσα οινοποιεία πρέπει να επισκεφθώ;" },
+        a: { en: "Two to four wineries are enough for a full day, depending on whether you want a relaxed or more intensive itinerary. Allow 45–60 minutes per visit for a comfortable pace.", el: "Δύο έως τέσσερα οινοποιεία είναι αρκετά για μία ημέρα. Υπολογίστε 45–60 λεπτά ανά επίσκεψη." }
+      },
+      {
+        q: { en: "Is Kefalonia good for wine tourism?", el: "Είναι η Κεφαλονιά κατάλληλη για οινοτουρισμό;" },
+        a: { en: "Yes. It is one of the most rewarding island destinations in Greece for wine tourism, especially for travellers interested in local varieties and scenic winery visits. The combination of Robola PDO, family-run wineries, and beautiful landscapes makes it a compelling choice.", el: "Ναι. Είναι ένας από τους πιο ανταποδοτικούς νησιωτικούς προορισμούς στην Ελλάδα για οινοτουρισμό, ειδικά για όσους ενδιαφέρονται για τοπικές ποικιλίες." }
+      },
+      {
+        q: { en: "What is the best month for a wine tour in Kefalonia?", el: "Ποιος είναι ο καλύτερος μήνας για οινοτουρισμό στην Κεφαλονιά;" },
+        a: { en: "September and October are usually the best months because they combine good weather with harvest activity. Spring (April–May) is also excellent for a quieter experience with mild weather and green landscapes.", el: "Ο Σεπτέμβριος και ο Οκτώβριος είναι συνήθως οι καλύτεροι μήνες λόγω του συνδυασμού καλού καιρού και τρύγου." }
+      }
+    ]
+  },
+  {
+    slug: "rhodes-old-town-guide-medieval-city-street-of-knights-grand-master-palace",
+    title: {
+      en: "Rhodes Old Town Guide 2026: Medieval City, Street of Knights & Grand Master Palace",
+      el: "Οδηγός Παλιάς Πόλης Ρόδου 2026: Μεσαιωνική Πόλη, Οδός Ιπποτών & Παλάτι Μεγάλου Μαγίστρου"
+    },
+    description: {
+      en: "Explore Rhodes Old Town with this 2026 guide to the Medieval City, Street of the Knights, and Palace of the Grand Master. History, top sights, food, tips, and travel info.",
+      el: "Εξερευνήστε την Παλιά Πόλη της Ρόδου με αυτόν τον οδηγό του 2026. Μεσαιωνική Πόλη, Οδός Ιπποτών, Παλάτι Μεγάλου Μαγίστρου, μουσεία, φαγητό και πρακτικές συμβουλές."
+    },
+    image: "/images/rhodes-old-town.webp",
+    tags: ["rhodes", "old-town", "history", "culture"],
+    overview: {
+      en: "Rhodes Old Town is one of the most remarkable historic districts in the Mediterranean and one of the strongest reasons to visit the island of Rhodes. A UNESCO World Heritage Site, the medieval city combines centuries of military, religious, and commercial history with atmospheric streets, grand fortifications, and some of the most memorable architecture in Greece.\n\nAt the heart of the experience are three essential landmarks: the **Medieval City of Rhodes**, the **Street of the Knights**, and the **Palace of the Grand Master**. Together, they create a walkable historic core that feels unlike anywhere else in the country. For travellers planning a Rhodes itinerary in 2026, this area is not just a sightseeing stop — it is the cultural centrepiece of the island.",
+      el: "Η Παλιά Πόλη της Ρόδου είναι μία από τις πιο αξιόλογες ιστορικές περιοχές της Μεσογείου και ένας από τους ισχυρότερους λόγους για να επισκεφθείτε το νησί. Μνημείο Παγκόσμιας Κληρονομιάς της UNESCO, η μεσαιωνική πόλη συνδυάζει αιώνες στρατιωτικής, θρησκευτικής και εμπορικής ιστορίας με ατμοσφαιρικά δρομάκια και εντυπωσιακή αρχιτεκτονική.\n\nΣτην καρδιά της εμπειρίας βρίσκονται τρία βασικά ορόσημα: η **Μεσαιωνική Πόλη**, η **Οδός των Ιπποτών** και το **Παλάτι του Μεγάλου Μαγίστρου**. Μαζί δημιουργούν έναν περιπατητικό ιστορικό πυρήνα που δεν μοιάζει με κανένα άλλο μέρος στην Ελλάδα."
+    },
+    points: {
+      en: [
+        "UNESCO World Heritage Site — one of Europe's best-preserved medieval urban centres",
+        "Street of the Knights — the most famous medieval street in Greece",
+        "Palace of the Grand Master — the island's most iconic monument",
+        "Archaeological Museum of Rhodes in the former Hospital of the Knights",
+        "Massive fortifications, gates, ramparts and defensive walls",
+        "Best visited early morning or late afternoon for light and fewer crowds",
+        "Walkable historic core: 3–4 hours minimum, full day recommended"
+      ],
+      el: [
+        "Μνημείο UNESCO — ένα από τα καλύτερα διατηρημένα μεσαιωνικά κέντρα της Ευρώπης",
+        "Οδός Ιπποτών — ο πιο διάσημος μεσαιωνικός δρόμος στην Ελλάδα",
+        "Παλάτι Μεγάλου Μαγίστρου — το πιο εμβληματικό μνημείο του νησιού",
+        "Αρχαιολογικό Μουσείο στο πρώην Νοσοκομείο των Ιπποτών",
+        "Εντυπωσιακές οχυρώσεις, πύλες και τείχη",
+        "Καλύτερες ώρες: νωρίς το πρωί ή αργά το απόγευμα",
+        "Περιπατητικός πυρήνας: 3–4 ώρες το ελάχιστο, ιδανικά μία ημέρα"
+      ]
+    },
+    sections: [
+      {
+        title: { en: "Why Rhodes Old Town Matters", el: "Γιατί έχει σημασία η Παλιά Πόλη της Ρόδου" },
+        content: {
+          en: "Rhodes Old Town is one of the best-preserved medieval urban centres in Europe. Its walls, gates, lanes, inns, towers, and civic buildings reflect the long period when the island was ruled by the **Knights Hospitaller**, who transformed Rhodes into a fortified stronghold between the 14th and 16th centuries. The result is a dense historical landscape where every street has a story.\n\nWhat makes the Old Town especially compelling is the way it balances monumentality and everyday life. Visitors come for the history, but they stay for the layered experience: quiet lanes in the early morning, lively squares in the evening, small museums, local shops, cafés, restaurants, and shaded courtyards hidden behind stone walls.\n\nFor 2026 travellers, Rhodes Old Town remains one of the most rewarding places in Greece for a self-guided walk, a guided historical tour, or a longer cultural stay.\n\nIf you only have a few hours, this is the simplest way to experience it: enter through one of the main gates, walk toward the Palace of the Grand Master, follow the Street of the Knights, visit the Archaeological Museum, and wander the side lanes. If you have a full day, explore the museums, fortifications, and quieter residential sections beyond the main landmarks.",
+          el: "Η Παλιά Πόλη της Ρόδου είναι ένα από τα καλύτερα διατηρημένα μεσαιωνικά κέντρα της Ευρώπης. Τα τείχη, οι πύλες, τα δρομάκια, οι πύργοι και τα δημόσια κτίρια αντικατοπτρίζουν τη μακρά περίοδο κυριαρχίας των **Ιπποτών του Αγίου Ιωάννη**, οι οποίοι μετέτρεψαν τη Ρόδο σε οχυρό μεταξύ του 14ου και 16ου αιώνα.\n\nΑυτό που κάνει την Παλιά Πόλη ξεχωριστή είναι η ισορροπία μεταξύ μνημειακότητας και καθημερινής ζωής. Οι επισκέπτες έρχονται για την ιστορία, αλλά μένουν για την πολυεπίπεδη εμπειρία: ήσυχα δρομάκια το πρωί, ζωντανές πλατείες το βράδυ, μικρά μουσεία, μαγαζιά, καφέ και κρυμμένες αυλές.\n\nΑν έχετε λίγες ώρες: μπείτε από μία κεντρική πύλη, περπατήστε προς το Παλάτι, ακολουθήστε την Οδό Ιπποτών, επισκεφθείτε το Αρχαιολογικό Μουσείο και περιπλανηθείτε στα γύρω σοκάκια."
+        }
+      },
+      {
+        title: { en: "Medieval City History", el: "Ιστορία της Μεσαιωνικής Πόλης" },
+        content: {
+          en: "The medieval city of Rhodes developed under the **Knights of St. John**, who ruled the island from the 14th century until the Ottoman conquest in 1522. During that period, Rhodes became one of the most strategically important fortified towns in the eastern Mediterranean.\n\nThe Knights reorganised the city into a highly structured urban centre with administrative buildings, religious spaces, residences, hospitals, and defensive systems. The city's layout reflected both military logic and social hierarchy, with different parts assigned to different groups and functions.\n\nLater centuries brought Ottoman, Italian, and modern Greek influences, but the medieval core remained dominant. This is why Rhodes Old Town still feels so coherent today: the city was not simply preserved as a monument, but continuously adapted while keeping its historic skeleton intact.",
+          el: "Η μεσαιωνική πόλη της Ρόδου αναπτύχθηκε υπό τους **Ιππότες του Αγίου Ιωάννη**, οι οποίοι κυβέρνησαν το νησί από τον 14ο αιώνα έως την οθωμανική κατάκτηση το 1522. Την περίοδο αυτή, η Ρόδος έγινε μία από τις πιο στρατηγικά σημαντικές οχυρωμένες πόλεις της ανατολικής Μεσογείου.\n\nΟι Ιππότες αναδιοργάνωσαν την πόλη σε ένα ιεραρχημένο αστικό κέντρο με διοικητικά κτίρια, θρησκευτικούς χώρους, κατοικίες, νοσοκομεία και αμυντικά συστήματα. Η διάταξη αντανακλούσε τόσο στρατιωτική λογική όσο και κοινωνική ιεραρχία.\n\nΑιώνες αργότερα, οθωμανικές, ιταλικές και νεότερες ελληνικές επιρροές διαμόρφωσαν την πόλη, αλλά ο μεσαιωνικός πυρήνας παρέμεινε κυρίαρχος. Γι' αυτό η Παλιά Πόλη εξακολουθεί να είναι τόσο συνεκτική σήμερα."
+        }
+      },
+      {
+        title: { en: "Street of the Knights", el: "Οδός των Ιπποτών" },
+        content: {
+          en: "The **Street of the Knights** is the most famous street in Rhodes Old Town and one of the most atmospheric medieval streets in Europe. It runs through the Knights' Quarter and was once the main ceremonial and residential street for the Knights Hospitaller.\n\nThe street is lined with the inns of the different **'tongues'** or language groups of the order — France, Spain, Italy, Provence, and others. These buildings were used as lodgings and administrative spaces for members of the order, giving the street its distinctive and highly ordered appearance.\n\nWalking down the Street of the Knights today feels like entering a preserved medieval setting. The stone façades, narrow proportions, and quiet, uphill route create a powerful sense of place. It is one of the best places in Rhodes to appreciate the city's original medieval identity.\n\n**What to look for:** the inns of different language groups, the paved medieval street alignment, the visual progression toward the Palace of the Grand Master, the architectural details and coats of arms on the façades.",
+          el: "Η **Οδός των Ιπποτών** είναι ο πιο διάσημος δρόμος της Παλιάς Πόλης και ένας από τους πιο ατμοσφαιρικούς μεσαιωνικούς δρόμους της Ευρώπης. Διασχίζει τη Συνοικία των Ιπποτών και ήταν ο κύριος τελετουργικός και οικιστικός δρόμος του Τάγματος.\n\nΟ δρόμος είναι γεμάτος με τα καταλύματα των διαφορετικών **γλωσσών** του Τάγματος — Γαλλία, Ισπανία, Ιταλία, Προβηγκία και άλλες. Αυτά τα κτίρια χρησίμευαν ως καταλύματα και διοικητικοί χώροι.\n\nΠερπατώντας σήμερα στην Οδό των Ιπποτών νιώθεις σαν να μπαίνεις σε ένα διατηρημένο μεσαιωνικό σκηνικό. Οι πέτρινες προσόψεις, τα στενά περάσματα και η ήσυχη ανηφορική διαδρομή δημιουργούν μια έντονη αίσθηση του τόπου."
+        }
+      },
+      {
+        title: { en: "Palace of the Grand Master", el: "Παλάτι του Μεγάλου Μαγίστρου" },
+        content: {
+          en: "The **Palace of the Grand Master** is the most important single monument in Rhodes Old Town. It served as the seat of the Grand Master of the Knights of St. John and symbolised the political and military power of the order.\n\nThe palace is striking both from the outside and the inside. Its massive structure, towers, courtyard, and decorative interiors make it one of the island's top landmarks. Although the original medieval palace was heavily damaged over time, the present form reflects major restoration work carried out in the 20th century.\n\nInside, visitors can explore large halls, decorative rooms, and museum-style displays connected to Rhodes' wider history. For many travellers, this is the highlight of the Old Town visit because it combines architecture, historical symbolism, and museum content in one place.\n\n**Why it is worth visiting:** it is the most iconic building in the medieval city, it offers context for the Knights' political and military role, it provides one of the best museum experiences in Rhodes Old Town, and its location makes it easy to combine with the Street of the Knights and the surrounding fortifications.",
+          el: "Το **Παλάτι του Μεγάλου Μαγίστρου** είναι το σημαντικότερο μνημείο της Παλιάς Πόλης. Χρησίμευε ως έδρα του Μεγάλου Μαγίστρου των Ιπποτών και συμβόλιζε την πολιτική και στρατιωτική δύναμη του Τάγματος.\n\nΤο παλάτι εντυπωσιάζει τόσο εξωτερικά όσο και εσωτερικά. Η τεράστια δομή του, οι πύργοι, η αυλή και τα διακοσμημένα δωμάτια το καθιστούν ένα από τα κορυφαία αξιοθέατα του νησιού. Η σημερινή μορφή του αντανακλά σημαντικές εργασίες αποκατάστασης που πραγματοποιήθηκαν τον 20ό αιώνα.\n\nΣτο εσωτερικό, οι επισκέπτες μπορούν να εξερευνήσουν μεγάλες αίθουσες, διακοσμητικά δωμάτια και εκθέματα που σχετίζονται με την ιστορία της Ρόδου. Για πολλούς, είναι το αποκορύφωμα της επίσκεψης στην Παλιά Πόλη."
+        }
+      },
+      {
+        title: { en: "Best Things to See", el: "Τα Καλύτερα Αξιοθέατα" },
+        content: {
+          en: "Rhodes Old Town is much richer than its three main landmarks alone. Leave time for the surrounding sights as well:\n\n**Archaeological Museum of Rhodes** — Located in the former Hospital of the Knights, the Archaeological Museum is one of the most important cultural stops in the Old Town. It helps visitors understand the island's ancient and medieval past through sculpture, inscriptions, artefacts, and burial finds.\n\n**Fortifications and gates** — The city walls, gates, and bastions are a major part of the experience. Even if you do not walk the entire circuit, spending time near the ramparts helps you understand how powerful the city's defensive system once was.\n\n**Hidden squares and side streets** — Some of the most enjoyable parts of the Old Town are not the major monuments but the quieter lanes, courtyards, and small squares between them. Ideal for café stops, photos, and slower exploration.\n\n**Religious monuments** — The Old Town also contains churches, mosques, and remnants of earlier religious architecture. This layered character reflects the island's long history under different rulers and traditions.",
+          el: "Η Παλιά Πόλη είναι πολύ πλουσιότερη από τα τρία κύρια αξιοθέατά της. Αφήστε χρόνο και για τα υπόλοιπα:\n\n**Αρχαιολογικό Μουσείο Ρόδου** — Στο πρώην Νοσοκομείο των Ιπποτών, ένας από τους σημαντικότερους πολιτιστικούς σταθμούς. Γλυπτά, επιγραφές, κτερίσματα και αντικείμενα από την αρχαία και μεσαιωνική περίοδο.\n\n**Οχυρώσεις και πύλες** — Τα τείχη, οι πύλες και οι προμαχώνες είναι σημαντικό μέρος της εμπειρίας. Ακόμα και χωρίς να περπατήσετε ολόκληρη τη διαδρομή, η θέα από τα τείχη αποκαλύπτει τη δύναμη του αμυντικού συστήματος.\n\n**Κρυφές πλατείες και δρομάκια** — Οι πιο απολαυστικές στιγμές είναι συχνά στα ήσυχα σοκάκια, τις αυλές και τις μικρές πλατείες. Ιδανικά για καφέ, φωτογραφίες και αργή εξερεύνηση.\n\n**Θρησκευτικά μνημεία** — Εκκλησίες, τζαμιά και κατάλοιπα παλαιότερης θρησκευτικής αρχιτεκτονικής αντικατοπτρίζουν τη μακρά και πολύπλοκη ιστορία του νησιού."
+        }
+      },
+      {
+        title: { en: "Best Way to Visit & 2026 Tips", el: "Πώς να Επισκεφθείτε & Συμβουλές 2026" },
+        content: {
+          en: "The best way to experience Rhodes Old Town is **on foot**. The area is pedestrian-friendly in the main historic core, and walking is the only way to appreciate the scale, details, and atmosphere properly.\n\nA self-guided walk works well if you prefer flexibility, while a guided tour is better if you want historical context and a more structured route. Many travellers combine both approaches: a guided tour on the first visit, then independent wandering later.\n\nFor photography, the best times are **early morning and late afternoon** — softer light and fewer crowds make the stone architecture even more impressive.\n\n**2026 practical advice:**\n- Visit early in the day to avoid crowds and heat\n- Book accommodation inside or near the Old Town for after-hours exploring\n- Reserve guided tours in advance during peak season (May–October)\n- Wear comfortable shoes — the streets are uneven and often cobbled\n- Bring water and sun protection, especially in summer\n- Allow time for slow wandering rather than trying to see everything in one rush",
+          el: "Ο καλύτερος τρόπος για να γνωρίσετε την Παλιά Πόλη είναι **με τα πόδια**. Η περιοχή είναι πεζοδρομημένη στον κύριο ιστορικό πυρήνα και το περπάτημα είναι ο μόνος τρόπος για να εκτιμήσετε την κλίμακα, τις λεπτομέρειες και την ατμόσφαιρα.\n\nΜια αυτοκαθοδηγούμενη βόλτα είναι ιδανική αν προτιμάτε ευελιξία, ενώ μια ξενάγηση είναι καλύτερη αν θέλετε ιστορικό πλαίσιο. Πολλοί συνδυάζουν και τα δύο.\n\n**Συμβουλές 2026:**\n- Επισκεφθείτε νωρίς το πρωί για αποφυγή πολλών επισκεπτών\n- Κλείστε διαμονή μέσα ή κοντά στην Παλιά Πόλη\n- Κάντε κράτηση για ξεναγήσεις την περίοδο αιχμής (Μάιος–Οκτώβριος)\n- Φορέστε άνετα παπούτσια — οι δρόμοι είναι λιθόστρωτοι\n- Έχετε νερό και αντηλιακό το καλοκαίρι"
+        }
+      },
+      {
+        title: { en: "Where to Eat & Best Time to Go", el: "Φαγητό & Καλύτερη Εποχή" },
+        content: {
+          en: "**Where to eat:** Rhodes Old Town has a wide choice of dining options, from simple tavernas to more refined restaurants. Look for places serving local Dodecanese dishes, fresh fish, meze, stuffed vegetables, and island wines. Evening in the Old Town is especially attractive — the streets become more atmospheric and the buildings are beautifully lit.\n\n**Best time to go:**\n- **Spring** — One of the best times. Comfortable temperatures, lighter crowds, ideal for walking.\n- **Summer** — The busiest and hottest period. Enjoyable but early starts are recommended.\n- **Autumn** — Another excellent season. Warm weather with easing crowds.\n- **Winter** — Much quieter and rewarding for those who prefer calm. Some restaurants operate on reduced schedules.",
+          el: "**Φαγητό:** Η Παλιά Πόλη έχει μεγάλη ποικιλία επιλογών, από απλές ταβέρνες έως εκλεπτυσμένα εστιατόρια. Αναζητήστε τοπικές γεύσεις Δωδεκανήσου, φρέσκο ψάρι, μεζέδες, γεμιστά και νησιώτικα κρασιά. Το βράδυ η Παλιά Πόλη είναι μαγευτική με τα φωτισμένα κτίρια.\n\n**Καλύτερη εποχή:**\n- **Άνοιξη** — Ιδανική. Άνετες θερμοκρασίες, λιγότερος κόσμος.\n- **Καλοκαίρι** — Η πιο πολυσύχναστη περίοδος. Συνιστώνται πρώιμες επισκέψεις.\n- **Φθινόπωρο** — Εξαιρετική σεζόν. Ζεστός καιρός, λιγότερος κόσμος.\n- **Χειμώνας** — Πιο ήσυχα, κατάλληλα για όσους προτιμούν την ηρεμία."
+        }
+      },
+      {
+        title: { en: "Suggested One-Day Itinerary", el: "Προτεινόμενη Διαδρομή Μίας Ημέρας" },
+        content: {
+          en: "If you want a simple one-day plan for Rhodes Old Town, this route works well:\n\n**Morning** — Start at one of the main gates and walk toward the Palace of the Grand Master. Spend time in the courtyard, interior rooms, and museum displays.\n\n**Late morning** — Continue through the Street of the Knights and the Knights' Quarter. Pause to observe the inns and architectural details.\n\n**Afternoon** — Visit the Archaeological Museum and then explore the quieter side streets, shops, and squares.\n\n**Evening** — Return for dinner or a final walk after sunset, when the Old Town feels more peaceful and dramatic.\n\nThis itinerary can be shortened to 3–4 hours if you skip some museums, or extended with additional sights, meals, and café breaks.",
+          el: "Αν θέλετε ένα απλό ημερήσιο πρόγραμμα για την Παλιά Πόλη:\n\n**Πρωί** — Ξεκινήστε από μία κεντρική πύλη και περπατήστε προς το Παλάτι. Αφιερώστε χρόνο στην αυλή, τις αίθουσες και τα εκθέματα.\n\n**Αργά το πρωί** — Διασχίστε την Οδό των Ιπποτών και τη Συνοικία. Παρατηρήστε τα καταλύματα και τις αρχιτεκτονικές λεπτομέρειες.\n\n**Απόγευμα** — Επισκεφθείτε το Αρχαιολογικό Μουσείο και εξερευνήστε τα ήσυχα δρομάκια, μαγαζιά και πλατείες.\n\n**Βράδυ** — Επιστρέψτε για δείπνο ή βόλτα μετά τη δύση του ηλίου.\n\nΗ διαδρομή μπορεί να συντομευθεί σε 3–4 ώρες ή να επεκταθεί με επιπλέον στάσεις."
+        }
+      }
+    ],
+    tips: {
+      en: [
+        "Visit early morning (before 10:00) or late afternoon (after 17:00) for the best light and smallest crowds.",
+        "Wear comfortable walking shoes — the streets are medieval, uneven, and often cobbled.",
+        "Bring water and sun protection in summer; there is limited shade on the main thoroughfares.",
+        "Combine a guided tour with free wandering for the best experience.",
+        "For photos, the Street of the Knights is most photogenic in the early morning light.",
+        "The Palace of the Grand Master and Archaeological Museum both charge admission; check current prices and hours online."
+      ],
+      el: [
+        "Επισκεφθείτε νωρίς το πρωί (πριν τις 10:00) ή αργά το απόγευμα (μετά τις 17:00) για καλύτερο φωτισμό.",
+        "Φορέστε άνετα παπούτσια — οι δρόμοι είναι μεσαιωνικοί, ανώμαλοι και λιθόστρωτοι.",
+        "Έχετε νερό και αντηλιακό το καλοκαίρι.",
+        "Συνδυάστε ξενάγηση με ελεύθερη περιπλάνηση.",
+        "Η Οδός Ιπποτών είναι πιο φωτογενής το πρωί.",
+        "Το Παλάτι και το Αρχαιολογικό Μουσείο έχουν είσοδο με εισιτήριο."
+      ]
+    },
+    faq: [
+      {
+        q: { en: "Is Rhodes Old Town worth visiting?", el: "Αξίζει να επισκεφθώ την Παλιά Πόλη της Ρόδου;" },
+        a: { en: "Yes. It is one of the most important medieval historic centres in Greece and a highlight of any Rhodes trip. The combination of the Palace, Street of the Knights, Archaeological Museum, and fortifications makes it a world-class cultural destination.", el: "Ναι. Είναι ένα από τα σημαντικότερα μεσαιωνικά κέντρα στην Ελλάδα και το αποκορύφωμα κάθε ταξιδιού στη Ρόδο." }
+      },
+      {
+        q: { en: "How long do you need in Rhodes Old Town?", el: "Πόση ώρα χρειάζεστε στην Παλιά Πόλη;" },
+        a: { en: "A minimum of 3 to 4 hours is useful for the main sights, but a full day is better if you want to visit museums and explore slowly.", el: "Τουλάχιστον 3–4 ώρες για τα κύρια αξιοθέατα, αλλά μια ολόκληρη μέρα είναι καλύτερη για μουσεία και αργή εξερεύνηση." }
+      },
+      {
+        q: { en: "Is the Street of the Knights free to walk through?", el: "Είναι δωρεάν η είσοδος στην Οδό των Ιπποτών;" },
+        a: { en: "Yes, walking the street itself is free. Some nearby museums and buildings (such as the Palace of the Grand Master and the Archaeological Museum) require paid admission.", el: "Ναι, ο δρόμος είναι δωρεάν. Κάποια μουσεία και κτίρια όπως το Παλάτι απαιτούν εισιτήριο." }
+      },
+      {
+        q: { en: "Can you visit the Palace of the Grand Master in 2026?", el: "Μπορείτε να επισκεφθείτε το Παλάτι το 2026;" },
+        a: { en: "Yes, it is one of the main visitor attractions in Rhodes Old Town and remains a central stop for travellers. Check current opening hours before your visit.", el: "Ναι, είναι ένα από τα κύρια αξιοθέατα και παραμένει κεντρικός σταθμός για τους επισκέπτες." }
+      },
+      {
+        q: { en: "Is Rhodes Old Town good for families?", el: "Είναι η Παλιά Πόλη κατάλληλη για οικογένειες;" },
+        a: { en: "Yes. It is walkable, historic, and easy to combine with cafés, meals, and relaxed sightseeing. Children often enjoy the palace, the walls, and the medieval atmosphere.", el: "Ναι. Είναι περιπατητική, ιστορική και εύκολη για συνδυασμό με καφέ, φαγητό και χαλαρή περιήγηση." }
+      }
+    ]
   }
 ];
 
