@@ -200,59 +200,42 @@ export default function HotelsDirectoryClient({
             {t.noResults[lang]}
           </p>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
             {filtered.map((hotel) => (
               <Link href={`/${lang}/hotels/${hotel.slug}`} key={hotel.slug}>
-                <article className="group relative h-[500px] rounded-2xl overflow-hidden cursor-pointer border border-white/50 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl bg-white/10 backdrop-blur-sm">
-                  <Image
-                    src={hotel.image}
-                    alt={hotel.name}
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    className="absolute inset-0 object-cover group-hover:scale-110 transition-transform duration-1000 ease-out"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent transition-opacity duration-500"></div>
+                <article className="group relative flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-indigo-500/10 min-h-[280px]">
+                  <div className="absolute inset-0 transition-all duration-700 group-hover:scale-110 group-hover:brightness-110">
+                    <Image
+                      src={hotel.image}
+                      alt={hotel.name}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-90 transition-opacity duration-500 group-hover:opacity-100" />
 
-                  {hotel.badge && (
-                    <div className="absolute top-8 right-8">
-                      <span className="px-5 py-2 rounded-full bg-white/90 backdrop-blur-xl text-indigo-900 text-xs font-black uppercase tracking-[0.2em] shadow-lg">
-                        {hotel.badge}
+                  <div className="relative flex-1 p-5 translate-y-4 group-hover:translate-y-0 transition-transform duration-500 flex flex-col justify-end">
+                    <div className="mb-2 flex items-center gap-2">
+                      <span className="rounded-full border border-indigo-200 bg-indigo-100 px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-widest text-indigo-800 backdrop-blur-md">
+                        {t.tag[lang]}
                       </span>
-                    </div>
-                  )}
-
-                  <div className="absolute bottom-10 left-10 right-10">
-                    <div className="flex items-center gap-2 mb-4">
-                      <span className="w-2 h-2 rounded-full bg-indigo-400"></span>
-                      <span className="text-indigo-200 text-xs font-bold uppercase tracking-widest">
-                        {hotel.place}
+                      <span className="rounded-full border border-white/20 bg-white/10 px-2 py-0.5 text-[9px] font-medium text-white/80 backdrop-blur-md">
+                        {hotel.place.split("—")[0].trim()}
                       </span>
                     </div>
 
-                    <h2 className="text-3xl font-black text-white mb-4 tracking-tight group-hover:text-indigo-100 transition-colors">
+                    <h3 className="mb-2 text-xl font-bold tracking-tight text-white drop-shadow-md">
                       {hotel.name}
-                    </h2>
+                    </h3>
 
-                    <p className="text-white/70 text-sm line-clamp-2 mb-8 font-light leading-relaxed">
+                    <p className="mb-3 text-xs leading-relaxed text-white/90 line-clamp-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 hidden group-hover:block">
                       {hotel.info[lang]}
                     </p>
 
-                    <div className="flex flex-wrap gap-2 mb-8">
-                      {hotel.features[lang].slice(0, 3).map((feat, i) => (
-                        <span
-                          key={i}
-                          className="px-3 py-1 rounded-full bg-white/10 border border-white/10 text-white/90 text-[10px] uppercase font-bold tracking-wider"
-                        >
-                          {feat}
-                        </span>
-                      ))}
-                    </div>
-
-                    <div className="flex items-center justify-between border-t border-white/10 pt-6">
-                      <span className="text-white text-sm font-bold group-hover:translate-x-1 transition-transform inline-flex items-center">
-                        {t.view[lang]} <span className="ml-2">→</span>
-                      </span>
-                    </div>
+                    <span className="inline-flex w-full items-center justify-center rounded-xl bg-slate-50 px-3 py-2 text-xs font-semibold text-slate-900 backdrop-blur-md transition-all hover:bg-indigo-600 hover:text-white">
+                      {t.view[lang]} <span className="ml-1.5">→</span>
+                    </span>
                   </div>
                 </article>
               </Link>

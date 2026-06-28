@@ -8,6 +8,7 @@ export const travelInfoGuides: GuideCard[] = [
       el: "Πτήσεις, πλοία, ιδέες για island hopping και αναλυτικές συμβουλές για αεροδρόμια, ειδικά για όσους έρχονται πρώτη φορά."
     },
     image: "/images/travel-arrival.webp",
+    tags: ["transport", "arrival", "planning"],
     overview: {
       en: "Greece is highly accessible but its island geography makes planning crucial. This guide covers your main entry points—primary and regional airports, major ferry ports, and international transport links—so you can pick the smartest route for your itinerary. Once you arrive, our [Getting Around Greece](/travel-info/getting-around-greece) guide helps with island connections, and the [Best Time to Visit](/travel-info/best-time-to-visit-greece) guide can help you pick your travel dates. For a visual overview of island clusters, see the [Greece Islands Map Guide](/travel-info/greece-islands-map-guide).",
       el: "Η Ελλάδα είναι εξαιρετικά προσβάσιμη, αλλά η γεωγραφία της απαιτεί σωστό προγραμματισμό. Αυτός ο οδηγός καλύπτει τα κύρια σημεία εισόδου (κεντρικά και περιφερειακά αεροδρόμια, κεντρικά λιμάνια και χερσαία σύνορα) για να επιλέξεις τη σωστή διαδρομή. Μόλις φτάσεις, ο οδηγός [Μετακινήσεις στην Ελλάδα](/travel-info/getting-around-greece) σε βοηθά με τις νησιωτικές συνδέσεις, και ο [Οδηγός Εποχής](/travel-info/best-time-to-visit-greece) σε βοηθά να επιλέξεις ημερομηνίες. Για οπτική επισκόπηση, δες τον [Χάρτη Ελληνικών Νησιών](/travel-info/greece-islands-map-guide)."
@@ -61,6 +62,7 @@ export const travelInfoGuides: GuideCard[] = [
       el: "Ένας οδηγός ανά μήνα για την ιδανική περίοδο επίσκεψης στην Ελλάδα, από παραλίες και island hopping μέχρι πιο ήσυχα ταξίδια."
     },
     image: "/images/travel-season.webp",
+    tags: ["seasons", "planning"],
     overview: {
       en: "Greece is famous for its summer sun, but limiting your perspective to July and August means missing out. The shoulder seasons (Spring and Autumn) reveal a stunningly green landscape, lower prices, and comfortable temperatures for sightseeing. Greece can be visited throughout the year, but the best month depends on the kind of trip you want. For first-timers, our [Best Greek Islands for First-Time Visitors](/travel-info/first-time-in-greece) guide helps narrow down choices, and the [Trip Planning Checklist](/travel-info/greece-trip-planning-checklist) covers practical steps. For sample itineraries, see [7 or 10 Days in Greece](/travel-info/7-and-10-days-in-greece).",
       el: "Η Ελλάδα είναι διάσημη για το καλοκαίρι της, αλλά αν περιοριστείς στον Ιούλιο και τον Αύγουστο χάνεις πολλές εμπειρίες. Οι ενδιάμεσες εποχές (άνοιξη και φθινόπωρο) αποκαλύπτουν μια πιο πράσινη πλευρά, με χαμηλότερες τιμές. Μπορείς να ταξιδέψεις όλο τον χρόνο, αλλά ο καλύτερος μήνας εξαρτάται από τον τύπο του ταξιδιού σου. Για πρώτη φορά, ο οδηγός [Καλύτερα Νησιά για Πρώτη Επίσκεψη](/travel-info/first-time-in-greece) βοηθά στην επιλογή, και η [Λίστα Προετοιμασίας](/travel-info/greece-trip-planning-checklist) καλύπτει πρακτικά βήματα. Για δείγματα προγραμμάτων, δες [7 ή 10 Ημέρες στην Ελλάδα](/travel-info/7-and-10-days-in-greece)."
@@ -174,6 +176,7 @@ export const travelInfoGuides: GuideCard[] = [
       el: "Από τοπικές πτήσεις και γρήγορα πλοία μέχρι λεωφορεία και ενοικιάσεις αυτοκινήτων, οργάνωσε τις μετακινήσεις σου αποδοτικά και άνετα."
     },
     image: "/images/travel-transport.webp",
+    tags: ["transport"],
     overview: {
       en: "Navigating Greece means learning two different transport systems: the intricate web of Aegean and Ionian ferries, and the extensive mainland road and bus network. With a bit of strategic planning, you can easily combine flights, ferries, and cars to craft the ultimate itinerary across mountains and islands. Start with [How to Get to Greece](/travel-info/how-to-get-to-greece) for arrival logistics, and use the [Greece Islands Map Guide](/travel-info/greece-islands-map-guide) to understand ferry clusters. The [Trip Planning Checklist](/travel-info/greece-trip-planning-checklist) also covers transport decisions and route planning.",
       el: "Η μετακίνηση στην Ελλάδα είναι πιο εύκολη όταν γνωρίζεις πώς λειτουργούν τα βασικά μέσα μεταφοράς. Στα νησιά, οι διαδρομές γίνονται κυρίως με πλοία και πτήσεις, ενώ στην ηπειρωτική χώρα σημαντικό ρόλο παίζουν οι αυτοκινητόδρομοι και τα ΚΤΕΛ. Ξεκίνα με τον οδηγό [Πώς να έρθεις στην Ελλάδα](/travel-info/how-to-get-to-greece) για τα logistics άφιξης, και χρησιμοποίησε τον [Χάρτη Ελληνικών Νησιών](/travel-info/greece-islands-map-guide) για τα νησιωτικά συμπλέγματα. Η [Λίστα Προετοιμασίας](/travel-info/greece-trip-planning-checklist) καλύπτει επίσης αποφάσεις μετακίνησης και σχεδιασμό διαδρομών."
@@ -283,6 +286,7 @@ export const travelInfoGuides: GuideCard[] = [
       el: "Ανακαλύψτε τα καλύτερα ελληνικά νησιά για την πρώτη σας επίσκεψη, από τη διάσημη Σαντορίνη και τη Μύκονο μέχρι πιο εύκολες και χαλαρές επιλογές για οικογένειες." 
     },
     image: "/images/first-time-greece.webp",
+    tags: ["islands", "planning"],
     overview: {
       en: "Planning your first trip to Greece can feel exciting and slightly overwhelming. With thousands of islands and very different travel styles, the hardest part is often knowing exactly where to begin. Before you dive into specific islands, we recommend starting with our [Greece Islands Map Guide](/travel-info/greece-islands-map-guide) to understand the regional clusters and ferry flow. For comparing the two most popular islands, see [Santorini vs Mykonos](/travel-info/santorini-vs-mykonos). Our [7 or 10 Days in Greece](/travel-info/7-and-10-days-in-greece) page offers sample itineraries, and the [Best Time to Visit](/travel-info/best-time-to-visit-greece) guide helps you choose the right season.",
       el: "Ο σχεδιασμός του πρώτου σας ταξιδιού στην Ελλάδα μπορεί να σας φαίνεται συναρπαστικός, αλλά ίσως και ελαφρώς χαοτικός. Πριν βουτήξετε σε συγκεκριμένα νησιά, σας προτείνουμε να ξεκινήσετε από τον [Χάρτη & Οδηγό Ελληνικών Νησιών](/travel-info/greece-islands-map-guide) για να κατανοήσετε τα συμπλέγματα και τη ροή των πλοίων. Για σύγκριση των δύο πιο δημοφιλών νησιών, δες [Σαντορίνη vs Μύκονος](/travel-info/santorini-vs-mykonos). Η σελίδα [7 ή 10 Ημέρες στην Ελλάδα](/travel-info/7-and-10-days-in-greece) προσφέρει δείγματα προγραμμάτων, και ο [Οδηγός Εποχής](/travel-info/best-time-to-visit-greece) σε βοηθά να επιλέξεις την κατάλληλη περίοδο."
@@ -357,6 +361,7 @@ export const travelInfoGuides: GuideCard[] = [
       el: "Μια πρακτική λίστα προετοιμασίας για το ταξίδι σας στην Ελλάδα, με συμβουλές για πτήσεις, πλοία, νησιά, ξενοδοχεία, μεταφορές και το τι να πακετάρετε για μια ομαλή εμπειρία." 
     },
     image: "/images/trip-plan.webp",
+    tags: ["planning", "practical"],
     overview: {
       en: "A trip to Greece looks effortless on Instagram, but good planning makes a huge difference. Between flights, ferries, islands, hotel areas and seasonal timing, a little preparation can save both money and stress. Use the [Best Time to Visit](/travel-info/best-time-to-visit-greece) guide to pick your travel window, and [Getting Around Greece](/travel-info/getting-around-greece) for transport logistics. For arrival information, see [How to Get to Greece](/travel-info/how-to-get-to-greece), and for sample trip structures, check [7 or 10 Days in Greece](/travel-info/7-and-10-days-in-greece). This checklist covers the practical steps that matter most before you travel.",
       el: "Ένα ταξίδι στην Ελλάδα φαίνεται εύκολο στο Instagram, αλλά ο σωστός προγραμματισμός κάνει τεράστια διαφορά. Χρησιμοποίησε τον [Οδηγό Εποχής](/travel-info/best-time-to-visit-greece) για να επιλέξεις περίοδο, και τον οδηγό [Μετακινήσεις στην Ελλάδα](/travel-info/getting-around-greece) για logistics μεταφοράς. Για πληροφορίες άφιξης, δες [Πώς να έρθεις στην Ελλάδα](/travel-info/how-to-get-to-greece), και για δείγματα προγραμμάτων, δες [7 ή 10 Ημέρες στην Ελλάδα](/travel-info/7-and-10-days-in-greece). Αυτή η λίστα καλύπτει τα πιο σημαντικά πρακτικά βήματα πριν ταξιδέψετε."
@@ -478,6 +483,7 @@ export const travelInfoGuides: GuideCard[] = [
       el: "Ρεαλιστικά προγράμματα 7 ή 10 ημερών στην Ελλάδα για πρώτη φορά, με πρακτικές ιδέες για Αθήνα και νησιά." 
     },
     image: "/images/7days10.webp",
+    tags: ["itineraries", "planning"],
     overview: {
       en: "Seven days in Greece is enough for a memorable first trip, but not enough to see everything. For a solid start, use our [Greece Islands Map Guide](/travel-info/greece-islands-map-guide) to choose a single island region and keep your transit simple. Quality over quantity is the secret to a great 7 or 10-day itinerary. If you are undecided between islands, [Santorini vs Mykonos](/travel-info/santorini-vs-mykonos) can help, and our [First-Time Visitors](/travel-info/first-time-in-greece) guide covers the best islands for beginners.",
       el: "Επτά ημέρες στην Ελλάδα είναι αρκετές για ένα αξέχαστο πρώτο ταξίδι. Για ένα σωστό ξεκίνημα, χρησιμοποίησε τον [Χάρτη & Οδηγό Ελληνικών Νησιών](/travel-info/greece-islands-map-guide) για να επιλέξεις ένα μόνο σύμπλεγμα νησιών. Η ποιότητα πάνω από την ποσότητα είναι το μυστικό. Αν δεν είσαι σίγουρος μεταξύ νησιών, το [Σαντορίνη vs Μύκονος](/travel-info/santorini-vs-mykonos) μπορεί να βοηθήσει, και ο οδηγός [Καλύτερα Νησιά για Πρώτη Επίσκεψη](/travel-info/first-time-in-greece) καλύπτει τις καλύτερες επιλογές για αρχάριους."
@@ -583,6 +589,7 @@ export const travelInfoGuides: GuideCard[] = [
       el: "Οργανώστε τις οικογενειακές διακοπές σας στην Ελλάδα με ιδέες για παραλίες, εύκολους προορισμούς, νησιά, μουσεία, φαγητό και πρακτικές συμβουλές." 
     },
     image: "/images/family-travel.webp",
+    tags: ["family"],
     overview: {
       en: "Greece is one of the best family holiday destinations in Europe. It combines safe, shallow beaches, simple and delicious food, reliably warm weather, genuine local hospitality and an enormous variety of destinations that work at very different paces. Whether you are travelling with toddlers, primary-school children or teenagers, the country bends surprisingly well around family life — partly because Greeks are genuinely welcoming to children in a way that feels natural rather than performative. Official tourism guidance consistently highlights the Greek islands, Crete and Halkidiki among the strongest family travel options in the country. Safe swimming areas, water parks, marine parks, outdoor activities, open-air archaeology and the sheer availability of relaxed beach-front tavernas all add to the appeal. For accommodation, see our [Best Hotels in Crete for Families](/travel-info/best-hotels-in-crete-for-families) guide. For the ideal travel window, check the [Best Time to Visit Greece](/travel-info/best-time-to-visit-greece) guide, which covers the shoulder seasons that often work better for families than the full peak of August. The [Getting Around Greece](/travel-info/getting-around-greece) guide also covers car-free island options and transport combinations that simplify movement with children. The core principle of a good family trip to Greece is the same regardless of destination: build the trip around ease. Easier beaches, easier meals, easier movement, enough flexibility for rest, and a realistic pace rather than an over-packed schedule.",
       el: "Η Ελλάδα είναι ένας από τους καλύτερους οικογενειακούς προορισμούς διακοπών στην Ευρώπη. Συνδυάζει ασφαλείς, ρηχές παραλίες, απλό και νόστιμο φαγητό, σταθερά ζεστό καιρό, γνήσια τοπική φιλοξενία και τεράστια ποικιλία προορισμών. Είτε ταξιδεύετε με νήπια, παιδιά δημοτικού ή εφήβους, η χώρα προσαρμόζεται εκπληκτικά καλά στην οικογενειακή ζωή. Για διαμονή, δείτε τον οδηγό [Best Hotels in Crete for Families](/travel-info/best-hotels-in-crete-for-families). Για την ιδανική περίοδο, ελέγξτε τον οδηγό [Best Time to Visit Greece](/travel-info/best-time-to-visit-greece). Ο οδηγός [Getting Around Greece](/travel-info/getting-around-greece) καλύπτει επιλογές μετακίνησης χωρίς αυτοκίνητο και συνδυασμούς μεταφορών που απλοποιούν την μετακίνηση με παιδιά."
@@ -718,6 +725,7 @@ export const travelInfoGuides: GuideCard[] = [
       el: "Συγκρίνετε τη Σαντορίνη με τη Μύκονο για πρώτη φορά, ζευγάρια, νυχτερινή ζωή, παραλίες, τοπία, κόστος και στιλ ταξιδιού για να επιλέξετε το σωστό νησί." 
     },
     image: "/images/santorini-vs-mykonos.webp",
+    tags: ["islands", "comparison"],
     overview: {
       en: "Santorini and Mykonos are the two Greek islands most first-time visitors compare, and for good reason. Both are famous, beautiful and easy to fit into a first island itinerary. But they are not interchangeable. Santorini is built around scenery, caldera views and atmosphere, while Mykonos is better known for cosmopolitan beach culture, luxury and nightlife. For more island choices, see our [Best Greek Islands for First-Time Visitors](/travel-info/first-time-in-greece) guide, and [7 or 10 Days in Greece](/travel-info/7-and-10-days-in-greece) for sample itineraries featuring both islands.",
       el: "Η Σαντορίνη και η Μύκονος είναι τα δύο ελληνικά νησιά που συγκρίνουν οι περισσότεροι επισκέπτες για πρώτη φορά, και για καλό λόγο. Και τα δύο είναι διάσημα, πανέμορφα και εύκολα να ενταχθούν σε ένα πρώτο πρόγραμμα. Για περισσότερες επιλογές νησιών, δες τον οδηγό [Καλύτερα Νησιά για Πρώτη Επίσκεψη](/travel-info/first-time-in-greece), και [7 ή 10 Ημέρες στην Ελλάδα](/travel-info/7-and-10-days-in-greece) για δείγματα προγραμμάτων και με τα δύο νησιά."
@@ -775,6 +783,7 @@ export const travelInfoGuides: GuideCard[] = [
       el: "Ανακαλύψτε τα κορυφαία φιλικά προς την οικογένεια ξενοδοχεία στην Κρήτη, με παιδικά clubs, νεροτσουλήθρες και ευρύχωρες σουίτες."
     },
     image: "/images/crete.webp",
+    tags: ["accommodation", "family"],
     overview: {
       en: "Crete is arguably the most family-friendly destination in Greece. Its large scale means it has room for sprawling resorts with excellent child-focused amenities, safe shallow beaches, and plenty of activities to keep everyone entertained. For more family-oriented advice, see our comprehensive [Family Travel in Greece](/travel-info/family-travel-in-greece) guide.",
       el: "Η Κρήτη είναι ίσως ο πιο φιλικός προορισμός για οικογένειες στην Ελλάδα. Το μέγεθός της επιτρέπει μεγάλα resorts με εξαιρετικές παροχές για παιδιά, ασφαλείς ρηχές παραλίες και πολλές δραστηριότητες. Για περισσότερες οικογενειακές συμβουλές, δες τον οδηγό [Οικογενειακές Διακοπές στην Ελλάδα](/travel-info/family-travel-in-greece)."
@@ -818,6 +827,7 @@ export const travelInfoGuides: GuideCard[] = [
       el: "Οι καλύτερες εκδρομές με σκάφος στην Κεφαλονιά: ημερήσιες κρουαζιέρες στην Ιθάκη, ενοικίαση σκάφους στο Φισκάρδο, κρυφές παραλίες μόνο από τη θάλασσα, χελώνες και ιστιοπλοΐα ηλιοβασιλέματος. Τι να κλείσετε και πρακτικές συμβουλές."
     },
     image: "/images/kefalonia.webp",
+    tags: ["boat-trips", "activities"],
     overview: {
       en: "Kefalonia has some of the most dramatic coastline in the Ionian — but a significant part of its best beaches, sea caves and hidden coves simply cannot be reached by road. No rental car will get you to Fteri beach. No bus goes to the sea arch at Agia Kyriaki. And the narrow strait between Kefalonia and Ithaca, with its glassy turquoise water and deserted anchorages, is only visible from the water.\n\nA boat trip in Kefalonia is not a tourist extra — it is how you actually see the island. This guide covers every option, from full-day cruises to Ithaca and private hire in Fiskardo to glass-bottom turtle tours and sunset sailing, with honest advice on what suits different types of traveler.\n\nFor context on the island itself, read our full [Kefalonia destination guide](/destinations/kefalonia).",
       el: "Η Κεφαλονιά έχει μία από τις πιο εντυπωσιακές ακτογραμμές στο Ιόνιο — αλλά ένα σημαντικό μέρος από τις καλύτερες παραλίες, θαλάσσιες σπηλιές και κρυφούς όρμους της δεν είναι προσβάσιμο οδικώς. Κανένα ενοικιαζόμενο αυτοκίνητο δεν θα σας πάει στην παραλία Φτέρι. Κανένα λεωφορείο δεν πηγαίνει στη θαλάσσια αψίδα της Αγίας Κυριακής. Και το στενό πέρασμα μεταξύ Κεφαλονιάς και Ιθάκης, με τα γαλαζοπράσινα νερά και τους ερημικούς όρμους του, είναι ορατό μόνο από τη θάλασσα.\n\nΜια εκδρομή με σκάφος στην Κεφαλονιά δεν είναι ένα έξτρα τουριστικό στοιχείο — είναι ο τρόπος με τον οποίο βλέπετε πραγματικά το νησί. Αυτός ο οδηγός καλύπτει κάθε επιλογή, από ολοήμερες κρουαζιέρες στην Ιθάκη και ενοικίαση σκάφους στο Φισκάρδο μέχρι tours με γυάλινο πάτο για χελώνες και ιστιοπλοΐα ηλιοβασιλέματος.\n\nΓια το πλαίσιο του ίδιου του νησιού, διαβάστε τον πλήρη [οδηγό Κεφαλονιάς](/destinations/kefalonia)."
@@ -914,6 +924,7 @@ export const travelInfoGuides: GuideCard[] = [
       el: "Κορυφαία αξιοθέατα και τοπικές εμπειρίες στη Λέσβο, από το Απολιθωμένο Δάσος μέχρι την παραδοσιακή γευσιγνωσία ούζου."
     },
     image: "/images/lesvos.webp",
+    tags: ["activities", "islands"],
     overview: {
       en: "Lesvos is an island for explorers and food lovers. It's not a destination for rapid sightseeing, but a place to slow down, visit traditional villages, explore geological wonders, and enjoy some of the best culinary traditions in the Aegean. The [Best Time to Visit](/travel-info/best-time-to-visit-greece) guide can help you choose the ideal season for exploring Lesvos and the wider northeast Aegean.",
       el: "Η Λέσβος είναι ένα νησί για εξερευνητές και λάτρεις του φαγητού. Δεν είναι προορισμός για γρήγορο sightseeing, αλλά ένα μέρος για να χαλαρώσεις, να επισκεφτείς παραδοσιακά χωριά και να απολαύσεις κορυφαία γαστρονομία. Ο [Οδηγός Εποχής](/travel-info/best-time-to-visit-greece) μπορεί να σε βοηθήσει να επιλέξεις την ιδανική περίοδο για να επισκεφτείς τη Λέσβο και το βορειοανατολικό Αιγαίο."
@@ -957,6 +968,7 @@ export const travelInfoGuides: GuideCard[] = [
       el: "Οι καλύτερες εκδρομές στη Μύκονο: Δήλος, ιστιοπλοΐα με καταμαράν, Jeep safaris, μαθήματα μαγειρικής και κρουαζιέρες ηλιοβασιλέματος. Τι αξίζει να κλείσετε, τι να αποφύγετε και πρακτικές συμβουλές."
     },
     image: "/images/mykonos.webp",
+    tags: ["tours", "activities"],
     overview: {
       en: "Mykonos is famous for beach clubs and nightlife — but the island has a quieter, richer side that most visitors miss entirely. A short boat ride away lies one of the most important archaeological sites in Greece. The rugged north coast hides beaches that see almost no tourists. And the narrow streets of Chora reward those who explore slowly on foot.\n\nBooking the right tour in Mykonos is the difference between a generic island visit and an experience you'll actually remember. This guide covers every category — from the essential Delos trip to sailing, Jeep safaris, cooking classes and sunset cruises — with honest advice on what's worth your time and money.\n\nIf you're still deciding between islands, our [Santorini vs Mykonos](/travel-info/santorini-vs-mykonos) guide covers the key differences.",
       el: "Η Μύκονο είναι διάσημη για τα beach clubs και τη νυχτερινή ζωή — αλλά το νησί έχει μια πιο ήσυχη, πιο πλούσια πλευρά που οι περισσότεροι επισκέπτες χάνουν εντελώς. Σε μικρή απόσταση με το πλοίο βρίσκεται ένας από τους σημαντικότερους αρχαιολογικούς χώρους στην Ελλάδα. Η τραχιά βόρεια ακτή κρύβει παραλίες που σχεδόν δεν βλέπουν τουρίστες. Και τα στενά δρομάκια της Χώρας ανταμείβουν όσους εξερευνούν αργά με τα πόδια.\n\nΤο να κλείσετε τη σωστή εκδρομή στη Μύκονο κάνει τη διαφορά ανάμεσα σε μια γενική επίσκεψη στο νησί και μια εμπειρία που θα θυμάστε. Αυτός ο οδηγός καλύπτει κάθε κατηγορία — από την απαραίτητη εκδρομή στη Δήλο μέχρι ιστιοπλοΐα, Jeep safaris, μαθήματα μαγειρικής και κρουαζιέρες ηλιοβασιλέματος — με ειλικρινείς συμβουλές για το τι αξίζει τον χρόνο και τα χρήματά σας.\n\nΑν ακόμα αποφασίζετε μεταξύ νησιών, ο οδηγός μας [Σαντορίνη vs Μύκονος](/travel-info/santorini-vs-mykonos) καλύπτει τις βασικές διαφορές."
@@ -1046,6 +1058,7 @@ export const travelInfoGuides: GuideCard[] = [
       el: "Ένας οδηγός για τις καλύτερες γειτονιές της Αθήνας για όσους την επισκέπτονται πρώτη φορά."
     },
     image: "/images/athens.webp",
+    tags: ["accommodation", "athens"],
     overview: {
       en: "Athens is a sprawling metropolis, but the historic center is surprisingly compact. For first-time visitors, staying central is crucial to minimize transit time and maximize your ability to walk to the Acropolis and major museums. Our [Trip Planning Checklist](/travel-info/greece-trip-planning-checklist) covers hotel area selection and the [Getting Around Greece](/travel-info/getting-around-greece) guide explains how Athens connects to the islands.",
       el: "Η Αθήνα είναι μια τεράστια μητρόπολη, αλλά το ιστορικό της κέντρο είναι εκπληκτικά συμπαγές. Η [Λίστα Προετοιμασίας](/travel-info/greece-trip-planning-checklist) καλύπτει επιλογή περιοχής ξενοδοχείου και ο οδηγός [Μετακινήσεις στην Ελλάδα](/travel-info/getting-around-greece) εξηγεί πώς η Αθήνα συνδέεται με τα νησιά."
@@ -1089,6 +1102,7 @@ export const travelInfoGuides: GuideCard[] = [
       el: "Μάθετε πόσο κοστίζει πραγματικά ένα ταξίδι στην Ελλάδα — ημερήσιοι προϋπολογισμοί, διαμονή, φαγητό, ακτοπλοΐα και ανάλυση κόστους ανά νησί."
     },
     image: "/images/greece-travel-budget.webp",
+    tags: ["budget", "practical"],
     overview: {
       en: "Greece has a reputation for being expensive, largely because Santorini and Mykonos dominate its image. The reality is more nuanced. Greece can be done on a tight budget, a comfortable mid-range spend, or a full luxury experience — and the cost of your trip depends more on your choices than on Greece itself. This guide breaks down real, current costs across accommodation, food, transport and experiences so you can plan your trip with honest numbers in hand. Combine it with the [Best Time to Visit](/travel-info/best-time-to-visit-greece) guide for seasonal pricing, the [Trip Planning Checklist](/travel-info/greece-trip-planning-checklist) for practical steps, and [First-Time Visitors](/travel-info/first-time-in-greece) for island recommendations.",
       el: "Η Ελλάδα έχει τη φήμη ακριβού προορισμού, κυρίως λόγω Σαντορίνης και Μυκόνου. Η πραγματικότητα είναι πιο σύνθετη. Συνδύασε τον οδηγό με τον [Οδηγό Εποχής](/travel-info/best-time-to-visit-greece) για εποχικές τιμές, τη [Λίστα Προετοιμασίας](/travel-info/greece-trip-planning-checklist) για πρακτικά βήματα, και τον οδηγό [Καλύτερα Νησιά για Πρώτη Επίσκεψη](/travel-info/first-time-in-greece) για προτάσεις νησιών."
@@ -1174,6 +1188,7 @@ export const travelInfoGuides: GuideCard[] = [
       el: "Σχεδιάστε τον τέλειο μήνα του μέλιτος στην Ελλάδα — τα καλύτερα νησιά, τα πιο ρομαντικά ξενοδοχεία και αξέχαστες εμπειρίες για ζευγάρια."
     },
     image: "/images/honeymoon-in-greece.webp",
+    tags: ["couples", "honeymoon"],
     overview: {
       en: "Greece has been a honeymoon destination for decades, and the reasons are timeless: extraordinary light, dramatic landscapes, exceptional food, warm water, and a pace of life that naturally slows you down. But choosing the right island — and the right area within that island — makes all the difference. A honeymoon in Santorini looks nothing like a honeymoon in Kefalonia or Paros, and that variety is exactly what makes Greece such a compelling romantic destination. This guide helps you match your vision for the trip with the right island, the right timing and the right experiences.",
       el: "Η Ελλάδα είναι εδώ και δεκαετίες κορυφαίος προορισμός για μήνα του μέλιτος. Το φως, τα τοπία, το φαγητό και ο ρυθμός ζωής δημιουργούν το ιδανικό σκηνικό για ζευγάρια. Αλλά η επιλογή του σωστού νησιού κάνει τη διαφορά."
@@ -1266,6 +1281,7 @@ export const travelInfoGuides: GuideCard[] = [
       el: "Σχεδιάζετε σόλο ταξίδι στην Ελλάδα; Ανακαλύψτε τα καλύτερα νησιά, συμβουλές ασφαλείας και πώς να αξιοποιήσετε στο έπακρο το ταξίδι σας."
     },
     image: "/images/solo-travel-in-greece.webp",
+    tags: ["solo", "planning"],
     overview: {
       en: "Greece is one of the best solo travel destinations in Europe, and a growing number of travellers — particularly women travelling alone, and people in their 30s to 50s on their first solo trip — choose it as their destination of choice. The reasons are straightforward: Greece is safe, hospitable, easy to navigate independently, and has a natural social rhythm built around shared meals, communal outdoor spaces and a culture that welcomes strangers with warmth rather than suspicion. This guide covers everything a solo traveller needs to know before arriving — from safety and transport to the best islands, where to stay and how to make the most of travelling alone.",
       el: "Η Ελλάδα είναι ένας από τους καλύτερους προορισμούς για σόλο ταξίδια στην Ευρώπη. Είναι ασφαλής, φιλόξενη και εύκολη στην ανεξάρτητη εξερεύνηση. Αυτός ο οδηγός καλύπτει όλα όσα χρειάζεται να γνωρίζει ένας σόλο ταξιδιώτης."
@@ -1344,6 +1360,7 @@ export const travelInfoGuides: GuideCard[] = [
       el: "Ανακαλύψτε τα καλύτερα πράγματα να κάνετε στην Αθήνα — από την Ακρόπολη και την αρχαία αγορά έως κρυφές γειτονιές, τοπικό φαγητό και μουσεία."
     },
     image: "/images/things-to-do-in-athens.webp",
+    tags: ["activities", "athens"],
     overview: {
       en: "Athens is one of the world's great cities, and one of Europe's most underrated travel destinations. It sits at an extraordinary crossroads of ancient history and modern urban life — where a 2,500-year-old monument dominates the skyline above a neighbourhood full of coffee shops, art galleries, street food stalls and vibrant nightlife. Most visitors to Greece pass through Athens, but many underestimate it. This guide gives you an honest picture of what Athens has to offer, how to structure your visit, and how to experience the city beyond the postcard version.",
       el: "Η Αθήνα είναι μία από τις σπουδαιότερες πόλεις του κόσμου και ένας από τους πιο υποτιμημένους ταξιδιωτικούς προορισμούς της Ευρώπης. Βρίσκεται σε ένα μοναδικό σταυροδρόμι αρχαίας ιστορίας και σύγχρονης αστικής ζωής."
@@ -1436,6 +1453,7 @@ export const travelInfoGuides: GuideCard[] = [
       el: "Σχεδιάστε το island hopping ταξίδι σας στην Ελλάδα με πραγματικές διαδρομές, συμβουλές ακτοπλοΐας και πρακτικές οδηγίες."
     },
     image: "/images/greece-island-hopping.webp",
+    tags: ["island-hopping", "planning", "transport"],
     overview: {
       en: "Island hopping in Greece is one of the classic European travel experiences — moving between islands by ferry, waking up somewhere new every few days, and building a trip that feels like a journey rather than a single destination. Done well, it is extraordinary. Done poorly — with too many stops, rushed connections and not enough time anywhere — it can be tiring and expensive. This guide explains how to plan a realistic island hopping trip, which routes work best for different travel styles, and the practical details that make the difference between a smooth hop and a stressful one.",
       el: "Το island hopping στην Ελλάδα είναι μία από τις κλασικές ευρωπαϊκές ταξιδιωτικές εμπειρίες. Αυτός ο οδηγός εξηγεί πώς να σχεδιάσετε ένα ρεαλιστικό ταξίδι, ποιες διαδρομές λειτουργούν καλύτερα και τις πρακτικές λεπτομέρειες που κάνουν τη διαφορά."
@@ -1523,6 +1541,7 @@ export const travelInfoGuides: GuideCard[] = [
       el: "Μάθετε αν χρειάζεστε βίζα για την Ελλάδα, τον κανόνα των 90 ημερών, τις απαιτήσεις διαβατηρίου και το νέο σύστημα EES."
     },
     image: "/images/greece-visa-entry-requirements.webp",
+    tags: ["visa", "practical"],
     overview: {
       en: "Greece is part of the European Union and the Schengen Area. For most visitors, entry into Greece means entry into the Schengen Area — and your visa status and permitted length of stay apply across all Schengen countries, not just Greece. This means if you enter France first and then travel to Greece, your days in both countries count toward the same total. Understanding these rules is essential for planning any trip to Greece.",
       el: "Η Ελλάδα είναι μέλος της Ευρωπαϊκής Ένωσης και της ζώνης Σένγκεν. Η είσοδος στην Ελλάδα σημαίνει είσοδο στον χώρο Σένγκεν — οι ημέρες σας μετρούν σε όλες τις χώρες Σένγκεν, όχι μόνο στην Ελλάδα."
@@ -1624,6 +1643,7 @@ export const travelInfoGuides: GuideCard[] = [
       el: "Αφήστε πίσω τα πλήθη. Αυτά τα 10 κρυμμένα νησιά προσφέρουν εντυπωσιακά τοπία, αυθεντικά χωριά και την Ελλάδα που οι περισσότεροι τουρίστες δεν βλέπουν ποτέ."
     },
     image: "/images/hidden-greek-islands.webp",
+    tags: ["islands", "offbeat"],
     overview: {
       en: "Greece has over 6,000 islands. Most travellers see three of them.\n\nSantorini and Mykonos are beautiful — nobody disputes that. But the Greece that stays with you long after you leave is often found elsewhere: in a fishing village where the taverna has no menu, on a ferry that runs twice a week, in a caldera that nobody has photographed a thousand times already.\n\nThese ten islands will not appear on every Instagram feed. Some require patience to reach. All of them reward it.\n\nThe obvious reason to visit is fewer crowds. But that understates it. When an island hasn't been shaped by mass tourism, the rhythms of daily life stay intact. These are islands where Greece feels like itself.",
       el: "Η Ελλάδα έχει πάνω από 6.000 νησιά. Οι περισσότεροι ταξιδιώτες βλέπουν τρία από αυτά.\n\nΗ Σαντορίνη και η Μύκονος είναι όμορφες — κανείς δεν το αμφισβητεί. Αλλά η Ελλάδα που μένει μαζί σου πολύ μετά την αναχώρηση βρίσκεται συχνά αλλού: σε ένα ψαροχώρι όπου η ταβέρνα δεν έχει μενού, σε ένα πλοίο που κάνει δρομολόγιο δύο φορές την εβδομάδα, σε μια καλντέρα που κανείς δεν έχει φωτογραφίσει χίλιες φορές.\n\nΑυτά τα δέκα νησιά δεν θα εμφανιστούν σε κάθε Instagram feed. Κάποια απαιτούν υπομονή για να τα φτάσεις. Όλα ανταμείβουν."
@@ -1780,6 +1800,7 @@ export const travelInfoGuides: GuideCard[] = [
       el: "Γιατί αναρριχητές από σαράντα χώρες έρχονται στην Ελλάδα κάθε χρόνο — και γιατί ο κάθετος κόσμος της χώρας εκτείνεται πολύ πέρα από ένα μόνο νησί."
     },
     image: "/images/rock-climbing-greece.webp",
+    tags: ["activities", "adventure"],
     overview: {
       en: "Greece offers one of the most remarkable and accessible sport climbing landscapes on the planet — over 4,200 bolt-protected routes on the island of Kalymnos alone, hundreds of limestone crags scattered across the mainland and the islands, and a climbing culture that has grown from a niche activity into a global destination in just two decades. This guide covers the major climbing destinations across Greece — from the world-famous tufa caves of Kalymnos and the historic massif of Varasova to the monastery towers of Meteora, the rising star of Leonidio, the wild card of Crete, and the quiet alternative of Karpathos. Whether you are a first-time sport climber or pushing the limits of the grade, Greece has a crag calibrated to your level.",
       el: "Η Ελλάδα προσφέρει ένα από τα πιο αξιόλογα και προσβάσιμα τοπία αθλητικής αναρρίχησης στον πλανήτη — πάνω από 4.200 προστατευμένες διαδρομές μόνο στο νησί της Καλύμνου, εκατοντάδες ασβεστολιθικά πεδία διάσπαρτα στην ηπειρωτική χώρα και τα νησιά, και μια αναρριχητική κουλτούρα που έχει εξελιχθεί σε παγκόσμιο προορισμό. Αυτός ο οδηγός καλύπτει τους σημαντικότερους προορισμούς αναρρίχησης σε όλη την Ελλάδα — από τις παγκοσμίου φήμης σπηλιές tufa της Καλύμνου και το ιστορικό βουνό Βαρβάσοβα έως τους πύργους της Μονής Μετεώρων, το ανερχόμενο αστέρι του Λεωνιδίου, το wild card της Κρήτης και την ήσυχη εναλλακτική της Καρπάθου."
@@ -1974,6 +1995,7 @@ export const travelInfoGuides: GuideCard[] = [
       el: "Οι καλύτερες εκδρομές με σκάφος στη Σκιάθο: Λαλάρια που είναι προσβάσιμη μόνο από τη θάλασσα, ημερήσιες κρουαζιέρες σε Σκόπελο και Αλόννησο, θαλάσσια ταξί στην Τσουγκριά, ενοικίαση σκάφους γύρω από το νησί και πρακτικές συμβουλές."
     },
     image: "/images/skiathos.webp",
+    tags: ["boat-trips", "activities"],
     overview: {
       en: "Skiathos has more than 60 beaches along its pine-covered coastline — and some of the very best are impossible to reach by road. Lalaria Beach, the island's most photographed landmark with its white pebbles and iconic sea arch, is only accessible by boat. The same applies to the secluded coves of the northern coast, the pristine island of Tsougrias, and the Marine Park waters around the neighbouring Sporades.\n\nA boat trip in Skiathos is not optional — it is how you unlock the island's finest coastline. This guide covers every option from round-the-island cruises and day trips to Skopelos, to water taxi transfers and self-drive boat hire, with honest advice for different budgets and travel styles.\n\nFor context on the island itself, read our full [Skiathos destination guide](/destinations/skiathos).",
       el: "Η Σκιάθος έχει περισσότερες από 60 παραλίες κατά μήκος της πευκόφυτης ακτογραμμής της — και μερικές από τις καλύτερες είναι αδύνατο να προσεγγιστούν οδικώς. Η Λαλάρια, το πιο φωτογραφημένο σημείο του νησιού με τα λευκά βότσαλα και την εμβληματική θαλάσσια αψίδα, είναι προσβάσιμη μόνο με σκάφος. Το ίδιο ισχύει για τους απομονωμένους όρμους της βόρειας ακτής, το παρθένο νησί της Τσουγκριάς και τα νερά του Θαλάσσιου Πάρκου γύρω από τις γειτονικές Σποράδες.\n\nΜια εκδρομή με σκάφος στη Σκιάθο δεν είναι προαιρετική — είναι ο τρόπος να ανακαλύψετε την καλύτερη ακτογραμμή του νησιού. Αυτός ο οδηγός καλύπτει κάθε επιλογή από κρουαζιέρες γύρω από το νησί και ημερήσιες εκδρομές στη Σκόπελο, μέχρι θαλάσσια ταξί και ενοικίαση σκάφους.\n\nΓια το πλαίσιο του ίδιου του νησιού, διαβάστε τον πλήρη [οδηγό Σκιάθου](/destinations/skiathos)."
@@ -2084,6 +2106,7 @@ export const travelInfoGuides: GuideCard[] = [
       el: "Οι καλύτερες εκδρομές με σκάφος στην Κρήτη: κρουαζιέρες στο Μπάλο & Γραμβούσα, ξεναγήσεις στη Σπιναλόγκα, ημερήσιες εκδρομές στη Σαντορίνη, Χρυσή, Πρέβελη, ενοικίαση σκάφους και πρακτικές συμβουλές."
     },
     image: "/images/crete-boat-trips-cover.webp",
+    tags: ["boat-trips", "activities"],
     overview: {
       en: "Crete has the longest and most varied coastline of any Greek island — over 1,000 kilometres from the lagoon shallows of Balos in the west to the palm-lined south coast and the bustling north coast ports in between. A significant portion of its best swimming, most dramatic sea cliffs and most historically significant islands can only be reached by boat.\n\nNo rental car will get you to the wreck of the Dimitrios P. No bus crosses to the leper colony of Spinalonga. And the sight of the Balos lagoon from the water — with its shifting turquoise colours merging into the Mediterranean — is something no road viewpoint can replicate.\n\nA boat trip in Crete is not optional. It is how you access the island's best coastline, its offshore historical sites and — for the most ambitious day trip — even a neighbouring volcanic island. This guide covers every major option, from the famous Gramvousa cruise and day trips to Santorini to self-drive hire in Chania or Agios Nikolaos, with honest advice on what to choose.\n\nFor context on the island itself, read our full [Crete destination guide](/destinations/crete).",
       el: "Η Κρήτη έχει τη μεγαλύτερη και πιο ποικιλόμορφη ακτογραμμή από οποιοδήποτε ελληνικό νησί — πάνω από 1.000 χιλιόμετρα από τα ρηχά της λιμνοθάλασσας του Μπάλου στη δυτική άκρη μέχρι τη φοινικόφυτη νότια ακτή. Ένα σημαντικό μέρος από τις καλύτερες παραλίες, τους πιο εντυπωσιακούς θαλάσσιους γκρεμούς και τα πιο ιστορικά νησιά της είναι προσβάσιμο μόνο με σκάφος.\n\nΚανένα ενοικιαζόμενο αυτοκίνητο δεν θα σας πάει στο ναυάγιο του Δημητρίου Π. Κανένα λεωφορείο δεν πηγαίνει στη λωβιακή αποικία της Σπιναλόγκας. Και η εικόνα της λιμνοθάλασσας του Μπάλου από το νερό — με τα μεταβαλλόμενα τιρκουάζ χρώματα — δεν μπορεί να αναπαραχθεί από καμία οδική σκοπιά.\n\nΜια εκδρομή με σκάφος στην Κρήτη δεν είναι προαιρετική. Είναι ο τρόπος να προσεγγίσετε την καλύτερη ακτογραμμή του νησιού, τους ιστορικούς παράκτιους χώρους και — για την πιο φιλόδοξη ημερήσια εκδρομή — ακόμα και ένα γειτονικό ηφαιστειακό νησί. Αυτός ο οδηγός καλύπτει κάθε σημαντική επιλογή, από την περίφημη κρουαζιέρα στη Γραμβούσα και τις ημερήσιες εκδρομές στη Σαντορίνη μέχρι την ενοικίαση σκάφους στα Χανιά ή τον Άγιο Νικόλαο.\n\nΓια το πλαίσιο του ίδιου του νησιού, διαβάστε τον πλήρη [οδηγό Κρήτης](/destinations/crete)."
@@ -2198,6 +2221,153 @@ export const travelInfoGuides: GuideCard[] = [
       {
         q: { en: "Can I visit Santorini from Crete in one day?", el: "Μπορώ να επισκεφτώ τη Σαντορίνη από την Κρήτη σε μία μέρα;" },
         a: { en: "Yes. High-speed catamarans from Heraklion make the crossing in about 2 hours. You get 4–6 hours on Santorini — enough for a highlights tour of Oia and Fira. The trip is tiring but very popular.", el: "Ναι. Τα ταχύπλοα από το Ηράκλειο κάνουν 2 ώρες. Θα έχετε 4–6 ώρες στη Σαντορίνη." }
+      }
+    ]
+  },
+  {
+    slug: "yoga-wellness-retreats-crete",
+    title: {
+      en: "Best Yoga & Wellness Retreats in Crete 2026",
+      el: "Τα Καλύτερα Yoga & Wellness Retreats στην Κρήτη 2026"
+    },
+    description: {
+      en: "Discover the best yoga and wellness retreats in Crete for 2026. Explore retreat options in Chania, Rethymno, Plakias, and Elounda, plus the best time to go.",
+      el: "Ανακαλύψτε τα καλύτερα yoga και wellness retreats στην Κρήτη για το 2026. Εξερευνήστε επιλογές στα Χανιά, το Ρέθυμνο, τον Πλακιά και την Ελούντα, συν την καλύτερη εποχή για να πάτε."
+    },
+    image: "/images/crete-yoga-wellness.webp",
+    tags: ["wellness", "yoga", "crete"],
+    overview: {
+      en: "Crete is one of the most rewarding destinations in Greece for yoga and wellness travel. With its mountains, beaches, traditional villages, and strong Mediterranean food culture, the island offers the right balance of movement, rest, and immersion.\n\nFrom boutique yoga retreats in Chania and the south coast to luxury spa stays in Elounda, Crete offers over 30 dedicated yoga and wellness retreat programmes. This guide highlights the best areas, retreat styles, and seasons to help you choose the right experience for 2026.",
+      el: "Η Κρήτη είναι ένας από τους πιο ανταποδοτικούς προορισμούς στην Ελλάδα για yoga και wellness ταξίδια. Με τα βουνά, τις παραλίες, τα παραδοσιακά χωριά και την ισχυρή μεσογειακή διατροφή, το νησί προσφέρει τη σωστή ισορροπία κίνησης, ξεκούρασης και εμβύθισης.\n\nΑπό boutique yoga retreats στα Χανιά και τη νότια ακτή μέχρι πολυτελείς spa διαμονές στην Ελούντα, η Κρήτη προσφέρει πάνω από 30 οργανωμένα προγράμματα yoga και wellness. Αυτός ο οδηγός αναδεικνύει τις καλύτερες περιοχές, στυλ retreats και εποχές για να επιλέξετε τη σωστή εμπειρία για το 2026."
+    },
+    points: {
+      en: [
+        "Over 30 dedicated yoga and wellness retreat programmes across the island",
+        "Western Crete (Chania) — the largest concentration of boutique retreats",
+        "Central Crete (Rethymno/Plakias) — immersive retreats with hiking and nature",
+        "Eastern Crete (Elounda) — luxury spa and thalassotherapy weeks",
+        "Best months: May–June and September–October for ideal conditions",
+        "Vinyasa, Yin, Hatha, Kundalini, Pilates and sailing combinations available",
+        "The Cretan diet is a core part of the wellness experience"
+      ],
+      el: [
+        "Πάνω από 30 οργανωμένα προγράμματα yoga και wellness σε όλο το νησί",
+        "Δυτική Κρήτη (Χανιά) — η μεγαλύτερη συγκέντρωση boutique retreats",
+        "Κεντρική Κρήτη (Ρέθυμνο/Πλακιάς) — retreats με πεζοπορία και φύση",
+        "Ανατολική Κρήτη (Ελούντα) — πολυτελή σπα και θαλασσοθεραπεία",
+        "Καλύτεροι μήνες: Μάιος–Ιούνιος και Σεπτέμβριος–Οκτώβριος",
+        "Vinyasa, Yin, Hatha, Kundalini, Pilates και συνδυασμοί με ιστιοπλοΐα",
+        "Η κρητική διατροφή είναι βασικό μέρος της εμπειρίας"
+      ]
+    },
+    sections: [
+      {
+        title: { en: "Why Crete for a yoga or wellness retreat?", el: "Γιατί Κρήτη για yoga ή wellness retreat;" },
+        content: {
+          en: "Crete combines natural beauty, climate, and cuisine in a way that suits wellness travel especially well. The island has dramatic mountains, quiet beaches, olive groves, and peaceful villages, all within a single destination.\n\nThe Mediterranean climate makes it ideal for outdoor practice in spring and autumn. The island is also famous for its traditional diet — built around olive oil, wild greens (horta), legumes, fresh herbs, fish, and local dairy. For many guests, that food culture becomes part of the retreat experience itself.\n\nCrete has more sunny days per year than almost anywhere else in Europe. The shoulder seasons — May through mid-June and September through October — provide outdoor yoga conditions that few other Mediterranean destinations can match. Sea temperatures in late September are still in the low-to-mid twenties.\n\n**Crete wellness in numbers:** Over 30 dedicated yoga and wellness retreat programmes are offered across the island in 2026, with a further 40+ spa-equipped hotels running structured wellness packages.",
+          el: "Η Κρήτη συνδυάζει φυσική ομορφιά, κλίμα και κουζίνα με τρόπο που ταιριάζει ιδιαίτερα στον wellness τουρισμό. Το νησί έχει εντυπωσιακά βουνά, ήσυχες παραλίες, ελαιώνες και γαλήνια χωριά, όλα σε έναν προορισμό.\n\nΤο μεσογειακό κλίμα την καθιστά ιδανική για υπαίθρια πρακτική την άνοιξη και το φθινόπωρο. Η Κρήτη είναι επίσης διάσημη για την παραδοσιακή της διατροφή — ελαιόλαδο, χόρτα, όσπρια, φρέσκα βότανα, ψάρι και τοπικά γαλακτοκομικά. Για πολλούς επισκέπτες, αυτή η γαστρονομική κουλτούρα γίνεται μέρος της ίδιας της εμπειρίας.\n\nΗ Κρήτη έχει περισσότερες ηλιόλουστες ημέρες τον χρόνο από σχεδόν οπουδήποτε αλλού στην Ευρώπη. Οι ενδιάμεσες εποχές προσφέρουν ιδανικές συνθήκες για υπαίθρια yoga.\n\n**Wellness στην Κρήτη σε αριθμούς:** Πάνω από 30 οργανωμένα προγράμματα yoga και wellness προσφέρονται σε όλο το νησί το 2026, με επιπλέον 40+ ξενοδοχεία με σπα να λειτουργούν οργανωμένα πακέτα ευεξίας."
+        }
+      },
+      {
+        title: { en: "Western Crete (Chania area) — the yoga retreat heartland", el: "Δυτική Κρήτη (περιοχή Χανίων) — η καρδιά των yoga retreats" },
+        content: {
+          en: "The Chania region concentrates the largest and most diverse cluster of yoga retreats on the island. The coastline runs from the sheltered Bay of Chania in the north to the wild south coast beaches of Falasarna and Elafonissi. Between these two coasts, the retreat offer spans every category: beachfront boutique, hillside organic farm stays, and village-based guesthouses with visiting international teachers.\n\nThe area between Kissamos in the far west and Platanias to the east provides the most concentrated options. Kolymvari has emerged as a particular hub — far enough from tourist infrastructure to feel genuinely removed, yet close enough to reach Chania city in twenty minutes.\n\n**Beachfront yoga — Agia Marina / Platanias belt:** Morning Vinyasa on covered wooden decks with the sea below, afternoon Yin or meditation. Groups of 6–12 guests. Best for solo travellers and first-time retreaters. €900–1,400 / week.\n\n**Mountain village retreats — Kolymvari & Kissamos peninsula:** Converted stone farmhouses among olive groves with sea-view terraces. Longer sits, pranayama workshops, wild herb foraging. Best for experienced practitioners. €1,000–1,600 / week.\n\n**Luxury yoga with spa — Chania bay / Apokoronas:** Five-star properties with structured wellness programmes. Twice-daily yoga, spa treatments, Cretan-Mediterranean full-board menus. September–October is the prime window. €2,500–4,000+ / week.",
+          el: "Η περιοχή των Χανίων συγκεντρώνει τη μεγαλύτερη και πιο ποικιλόμορφη συστάδα yoga retreats στο νησί. Η ακτογραμμή εκτείνεται από τον προστατευμένο κόλπο των Χανίων στα βόρεια μέχρι τις άγριες παραλίες της νότιας ακτής, Φαλάσαρνα και Ελαφονήσι. Ανάμεσα σε αυτές τις δύο ακτές, τα retreats καλύπτουν κάθε κατηγορία.\n\nΗ περιοχή μεταξύ Κισσάμου στα δυτικά και Πλατανιά στα ανατολικά προσφέρει τις πιο συγκεντρωμένες επιλογές. Το Κολυμβάρι έχει αναδειχθεί σε ιδιαίτερο κόμβο — αρκετά μακριά από την τουριστική υποδομή για να νιώσετε πραγματική απομόνωση, αλλά αρκετά κοντά στα Χανιά.\n\n**Yoga δίπλα στη θάλασσα — Αγία Μαρίνα / Πλατανιάς:** Πρωινή Vinyasa σε ξύλινες εξέδρες με θέα τη θάλασσα, απογευματινή Yin ή διαλογισμός. Ομάδες 6–12 ατόμων. €900–1.400 / εβδομάδα.\n\n**Retreats σε ορεινά χωριά — Κολυμβάρι / Κίσσαμος:** Πέτρινα αγροτόσπιτα ανάμεσα σε ελαιώνες. €1.000–1.600 / εβδομάδα.\n\n**Πολυτελή yoga με σπα — Κόλπος Χανίων / Αποκόρωνας:** Ξενοδοχεία πέντε αστέρων με οργανωμένα προγράμματα ευεξίας. €2.500–4.000+ / εβδομάδα."
+        }
+      },
+      {
+        title: { en: "Central Crete (Rethymno area) — history, gorges and the south coast", el: "Κεντρική Κρήτη (περιοχή Ρεθύμνου) — ιστορία, φαράγγια και νότια ακτή" },
+        content: {
+          en: "Rethymno is the most underrated city in Crete — a Venetian old town of remarkable integrity, a long sandy beach, and direct access to the south coast through the Kourtaliotiko Gorge. The wellness retreat offer here is concentrated in the hilly interior and the south coast around Plakias.\n\nThe village of Myrthios, perched above Plakias beach, is one of the best-positioned yoga retreat bases in Greece. It sits on a ridge between two gorges with a view of the Libyan Sea. The south coast is significantly quieter than the north — fewer tourists, smaller-scale infrastructure, and a pace that reinforces the retreat experience.\n\n**South coast yoga — Plakias & Myrthios:** Long-running retreat operations combining morning yoga with structured hikes. The Kourtaliotiko river gorge walk, Preveli palm beach, and the cliffside trail above Damnoni Bay. Food is family-style, drawing on south coast fishing and farming traditions. €800–1,300 / week.\n\n**Holistic & transformational retreats — Rethymno hills:** Somatic work, breathwork, sound healing. Small groups (6–10 max). For those at a deliberate crossroads — career change, recovery, or deeper personal work. €1,200–2,000 / week.",
+          el: "Το Ρέθυμνο είναι η πιο υποτιμημένη πόλη της Κρήτης — μια βενετσιάνικη παλιά πόλη, μια μεγάλη αμμώδη παραλία και άμεση πρόσβαση στη νότια ακτή μέσω του φαραγγιού Κουρταλιώτη. Η προσφορά wellness retreats εδώ συγκεντρώνεται στους λόφους της ενδοχώρας και στη νότια ακτή γύρω από τον Πλακιά.\n\nΤο χωριό Μύρθιος, πάνω από τον Πλακιά, είναι μια από τις καλύτερα τοποθετημένες βάσεις yoga retreats στην Ελλάδα. Κάθεται σε μια ράχη ανάμεσα σε δύο φαράγγια με θέα το Λιβυκό Πέλαγος. Η νότια ακτή είναι σημαντικά πιο ήσυχη από τη βόρεια.\n\n**Yoga νότιας ακτής — Πλακιάς & Μύρθιος:** Πρωινή yoga με οργανωμένες πεζοπορίες. €800–1.300 / εβδομάδα.\n\n**Ολιστικά retreats — λόφοι Ρεθύμνου:** Σωματική εργασία, breathwork, ηχοθεραπεία. Μικρές ομάδες (6–10 άτομα). €1.200–2.000 / εβδομάδα."
+        }
+      },
+      {
+        title: { en: "Eastern Crete — luxury spa and the Gulf of Mirabello", el: "Ανατολική Κρήτη — πολυτελή σπα και ο Κόλπος του Μεραμπέλλου" },
+        content: {
+          en: "Eastern Crete operates on a different register. The Gulf of Mirabello — between Agios Nikolaos and Elounda — is home to some of the most celebrated hotel properties in Greece. For the wellness traveller, this means the most developed spa infrastructure on the island, the highest concentration of thalassotherapy facilities, and a calibre of hotel operation refined across generations.\n\nThalassotherapy — seawater-based treatments including hydrotherapy pools, marine mud wraps, and pressotherapy — is the specialist offering that distinguishes east Crete from the rest of the island.\n\n**Thalassotherapy & spa weeks — Elounda / Agios Nikolaos:** Seven-night programmes include daily yoga or Pilates, a scheduled sequence of spa treatments, nutritional consultation, and full-board Cretan diet cuisine interpreted at a high level. Yoga at sunrise on sea-view terraces overlooking the Gulf of Mirabello. €3,000–5,500+ / week.",
+          el: "Η ανατολική Κρήτη λειτουργεί σε διαφορετικό επίπεδο. Ο Κόλπος του Μεραμπέλλου — μεταξύ Αγίου Νικολάου και Ελούντας — φιλοξενεί μερικά από τα πιο φημισμένα ξενοδοχεία στην Ελλάδα. Για τον ταξιδιώτη ευεξίας, αυτό σημαίνει την πιο ανεπτυγμένη υποδομή σπα στο νησί.\n\nΗ θαλασσοθεραπεία — θεραπείες με βάση το θαλασσινό νερό — είναι η εξειδικευμένη προσφορά που ξεχωρίζει την ανατολική Κρήτη.\n\n**Θαλασσοθεραπεία & spa — Ελούντα / Άγιος Νικόλαος:** Εβδομαδιαία προγράμματα με yoga ή Pilates, σπα, διατροφική συμβουλή και κρητική διατροφή. €3.000–5.500+ / εβδομάδα."
+        }
+      },
+      {
+        title: { en: "Yoga retreats by style — finding the right practice", el: "Yoga retreats ανά στυλ — βρείτε την κατάλληλη πρακτική" },
+        content: {
+          en: "**Vinyasa flow** — The most widely taught style on the island. Dynamic, breath-synchronised practice that builds heat. Morning Vinyasa sessions on sea-view platforms have become the defining image of a Crete yoga retreat.\n\n**Yin yoga** — Long-held passive stretches targeting connective tissue. Nearly always offered as an afternoon complement to morning Vinyasa. Some Crete retreats offer dedicated Yin-only weeks.\n\n**Hatha and Ashtanga** — Available but less common. Hatha is slower and alignment-focused. Ashtanga attracts established practitioners — look for Mysore-style retreats.\n\n**Kundalini** — Incorporates kriya sets, breathwork, mantra and meditation. Less common but several dedicated teachers operate in western and central Crete.\n\n**Pilates-based wellness** — A growing segment, particularly around Chania. Mat-based or reformer Pilates as the primary movement practice, often combined with sea swimming.\n\n**Sailing and yoga** — A niche combination: morning yoga on deck, sailing between coves between Chania and Kissamos or the south coast. 8–12 guests, captain and crew, meals prepared on board. Higher per-night pricing reflects charter costs and private coastal access.",
+          el: "**Vinyasa flow** — Το πιο διαδεδομένο στυλ στο νησί. Δυναμική, συγχρονισμένη με την αναπνοή πρακτική.\n\n**Yin yoga** — Παθητικές διατάσεις μεγάλης διάρκειας. Συμπληρώνει την πρωινή Vinyasa.\n\n**Hatha και Ashtanga** — Διαθέσιμα αλλά λιγότερο συνηθισμένα.\n\n**Kundalini** — Kriya, breathwork, μάντρα και διαλογισμός.\n\n**Pilates** — Αναπτυσσόμενο τμήμα, ειδικά γύρω από τα Χανιά.\n\n**Ιστιοπλοΐα και yoga** — Πρωινή yoga στο κατάστρωμα, ιστιοπλοΐα μεταξύ όρμων."
+        }
+      },
+      {
+        title: { en: "The Cretan diet — what you will actually eat", el: "Η κρητική διατροφή — τι θα φάτε πραγματικά" },
+        content: {
+          en: "The food at a Crete wellness retreat is not the carefully branded 'clean eating' of the global wellness industry. It is more ordinary than that — and more powerful.\n\nCretan cooking begins with olive oil: not as a condiment but as the foundational cooking medium, consumed in quantities that would seem extreme anywhere else. Extra-virgin cold-pressed oil from local groves — many with trees several hundred years old — forms the basis of almost every dish.\n\nWild herbs — dittany of Crete (*Origanum dictamnus*), sage, thyme, savory — appear in teas, dressings, and cooking. Horta (wild greens) gathered from hillsides, legumes, fresh fish several times a week, goat's milk yoghurt, and the local cheeses — graviera, myzithra, anthotyros — are all central to the retreat table.\n\nBy day three, most guests report sleeping more deeply than they have in months. By day five, the combination of physical practice, Mediterranean nutrition, sea air, and distance from digital noise produces a state of nervous system repair that most participants describe as the single most valuable thing they bring home.",
+          el: "Το φαγητό σε ένα wellness retreat στην Κρήτη δεν είναι η προσεκτικά επισημασμένη 'clean eating' της παγκόσμιας βιομηχανίας ευεξίας. Είναι πιο απλό — και πιο δυνατό.\n\nΗ κρητική μαγειρική ξεκινά με το ελαιόλαδο: όχι ως καρύκευμα αλλά ως το βασικό μαγειρικό μέσο. Εξαιρετικό παρθένο λάδι από τοπικούς ελαιώνες αποτελεί τη βάση σχεδόν κάθε πιάτου.\n\nΆγρια βότανα, χόρτα μαζεμένα από τους λόφους, όσπρια, φρέσκο ψάρι, γιαούρτι και τοπικά τυριά είναι κεντρικά στο τραπέζι του retreat.\n\nΑπό την τρίτη ημέρα, οι περισσότεροι επισκέπτες αναφέρουν βαθύτερο ύπνο. Από την πέμπτη, ο συνδυασμός σωματικής πρακτικής, μεσογειακής διατροφής και θαλασσινού αέρα παράγει μια κατάσταση επιδιόρθωσης του νευρικού συστήματος."
+        }
+      },
+      {
+        title: { en: "Best time of year for a yoga or wellness retreat in Crete", el: "Καλύτερη εποχή για yoga ή wellness retreat στην Κρήτη" },
+        content: {
+          en: "| Season | Conditions | Recommendation |\n|--------|------------|----------------|\n| May — June | Warm days, wildflowers, green hills. Sea not yet at peak temperature. Gorges open. | Excellent. Most retreats begin their season. Best for hikers. |\n| July — August | Peak heat (35°C+). Outdoor practice challenging midday. Retreats schedule at 7am and 6pm. | Possible with caveats. Beautiful but busy. Book months ahead. |\n| September — October | Heat eased, sea at warmest (23–25°C). Fewer tourists. Luxury retreats save best programmes for this period. | **The finest window.** Highly recommended. |\n| November — April | Few programmes operate. Island is green and wild but most centres close. | Off-season. Very limited retreat options. |",
+          el: "| Εποχή | Συνθήκες | Σύσταση |\n|--------|----------|---------|\n| Μάιος — Ιούνιος | Ζεστές μέρες, αγριολούλουδα, πράσινοι λόφοι. | Εξαιρετική. Οι περισσότερες retreats ξεκινούν σεζόν. |\n| Ιούλιος — Αύγουστος | Πολύ ζέστη (35°C+). | Εφικτό. Ωραία αλλά πολύς κόσμος. Κλείστε νωρίς. |\n| Σεπτέμβριος — Οκτώβριος | Ζέστη μετριάζεται, θάλασσα ζεστή (23–25°C). | **Το καλύτερο παράθυρο.** Πολύ συνιστάται. |\n| Νοέμβριος — Απρίλιος | Λίγα προγράμματα λειτουργούν. | Εκτός σεζόν. Πολύ περιορισμένες επιλογές. |"
+        }
+      },
+      {
+        title: { en: "How to choose a yoga or wellness retreat in Crete", el: "Πώς να επιλέξετε yoga ή wellness retreat στην Κρήτη" },
+        content: {
+          en: "The growth of the retreat market across Greece has made quality variable. These are the questions worth asking before booking.\n\n**Who is the teacher?** Many packages advertise a format without naming the teacher until after booking. Look for published profiles, class videos, and clear descriptions of lineage and training.\n\n**What is the group size?** The experience changes substantially between 6 and 24 people. Smaller groups allow individual attention and programme flexibility. Groups above 16 typically cannot offer this.\n\n**What is the food like?** Ask whether meals are prepared on-site from local produce or sourced from a catering supplier. The best retreats cook from scratch daily — food is approximately half the therapeutic value of the week.\n\n**Where is the yoga space?** An outdoor terrace with sea view and good airflow significantly changes the quality of practice compared to an indoor room, however well-equipped.\n\n**How much free time?** The best programmes build genuine rest into the daily schedule. A retreat scheduling activities from 6am to 10pm is providing a holiday itinerary, not a retreat. Look for a clear daily arc with 3–4 unscheduled afternoon hours.",
+          el: "Η ανάπτυξη της αγοράς retreats στην Ελλάδα έχει κάνει την ποιότητα ποικίλη. Αυτές είναι οι ερωτήσεις που αξίζει να κάνετε πριν κλείσετε.\n\n**Ποιος είναι ο δάσκαλος;** Πολλά πακέτα διαφημίζουν ένα φορμάτ χωρίς να κατονομάζουν τον δάσκαλο. Αναζητήστε δημοσιευμένα προφίλ και βίντεο.\n\n**Πόσα άτομα είναι η ομάδα;** Η εμπειρία αλλάζει σημαντικά μεταξύ 6 και 24 ατόμων. Οι μικρότερες ομάδες επιτρέπουν ατομική προσοχή.\n\n**Τι φαγητό προσφέρεται;** Ρωτήστε αν τα γεύματα παρασκευάζονται επί τόπου με τοπικά προϊόντα.\n\n**Πού είναι ο χώρος yoga;** Μια εξωτερική βεράντα με θέα στη θάλασσα αλλάζει σημαντικά την ποιότητα της πρακτικής.\n\n**Πόσος ελεύθερος χρόνος;** Τα καλύτερα προγράμματα χτίζουν πραγματική ξεκούραση στο καθημερινό πρόγραμμα."
+        }
+      }
+    ],
+    tips: {
+      en: [
+        "Book retreats 3–4 months ahead for July and August departures — the best programmes fill up early",
+        "September–October offers the best combination of warm sea, comfortable practice conditions and lower prices",
+        "Solo travellers are common at Crete yoga retreats — many programmes are designed with solo guests in mind",
+        "Ask about single-occupancy pricing when booking; solo supplements vary significantly between retreats",
+        "Combine a retreat with day trips: Balos, Samaria Gorge, Knossos, and Chania Old Town are all accessible within a half-day from most retreat locations",
+        "The south coast (Plakias/Myrthios) is significantly quieter than the north — ideal for deeper immersion"
+      ],
+      el: [
+        "Κλείστε retreats 3–4 μήνες νωρίτερα για Ιούλιο και Αύγουστο",
+        "Σεπτέμβριος–Οκτώβριος προσφέρει τον καλύτερο συνδυασμό ζεστής θάλασσας και τιμών",
+        "Οι solo ταξιδιώτες είναι συνηθισμένοι — πολλά προγράμματα είναι σχεδιασμένα γι' αυτούς",
+        "Ρωτήστε για τιμολόγηση μονόκλινου — οι χρεώσεις ποικίλλουν σημαντικά",
+        "Συνδυάστε retreat με ημερήσιες εκδρομές: Μπάλος, Σαμαριά, Κνωσός, Παλιά Πόλη Χανίων",
+        "Η νότια ακτή (Πλακιάς/Μύρθιος) είναι σημαντικά πιο ήσυχη από τη βόρεια"
+      ]
+    },
+    faq: [
+      {
+        q: { en: "What is the best time of year to do a yoga or wellness retreat in Crete?", el: "Ποια είναι η καλύτερη εποχή για yoga ή wellness retreat στην Κρήτη;" },
+        a: { en: "Late September through October is the finest window. The summer heat has eased, outdoor yoga is comfortable at any hour, and the sea temperature remains perfect for swimming. May and early June are also excellent. Avoid July and August for intensive wellness programmes — the midday heat makes outdoor practice impractical and most resorts reach full capacity.", el: "Τέλη Σεπτεμβρίου έως Οκτωβρίου είναι το καλύτερο παράθυρο. Η ζέστη έχει μετριαστεί, η υπαίθρια yoga είναι άνετη και η θάλασσα παραμένει ζεστή. Μάιος και αρχές Ιουνίου είναι επίσης εξαιρετικές. Αποφύγετε Ιούλιο και Αύγουστο για εντατικά προγράμματα." }
+      },
+      {
+        q: { en: "Which area of Crete has the most yoga retreats?", el: "Ποια περιοχή της Κρήτης έχει τα περισσότερα yoga retreats;" },
+        a: { en: "Western Crete — particularly the coastline and hills between Kissamos and Chania bay — concentrates the largest number of dedicated retreat centres. Rethymno has a growing wellness scene in the hills above the south coast. Eastern Crete around Elounda offers more luxury spa-based programmes.", el: "Η δυτική Κρήτη — ειδικά η ακτογραμμή μεταξύ Κισσάμου και Χανίων — συγκεντρώνει τον μεγαλύτερο αριθμό. Το Ρέθυμνο έχει αναπτυσσόμενη σκηνή wellness. Η ανατολική Κρήτη προσφέρει πολυτελή προγράμματα σπα." }
+      },
+      {
+        q: { en: "How much does a yoga retreat in Crete cost?", el: "Πόσο κοστίζει ένα yoga retreat στην Κρήτη;" },
+        a: { en: "Budget retreats sharing accommodation start from around €700–900 for a 7-night programme including meals and daily classes. Mid-range retreats at boutique properties run €1,200–1,800 for a week. Luxury five-star retreat programmes range from €2,500 to over €4,000. Prices are generally lower outside July and August.", el: "Οικονομικά retreats ξεκινούν από €700–900 για 7 διανυκτερεύσεις. Μεσαίας κατηγορίας €1.200–1.800. Πολυτελή προγράμματα από €2.500 έως €4.000+. Οι τιμές είναι χαμηλότερες εκτός Ιουλίου και Αυγούστου." }
+      },
+      {
+        q: { en: "Do I need prior yoga experience to attend a retreat in Crete?", el: "Χρειάζομαι προηγούμενη εμπειρία yoga για να παρακολουθήσω ένα retreat;" },
+        a: { en: "The majority of yoga retreats in Crete welcome complete beginners alongside experienced practitioners. Teachers offer modifications for every level in mixed-level classes. Some retreats are specifically designed for beginners; a small number target advanced practitioners. Always check the level description before booking.", el: "Η πλειοψηφία των retreats καλωσορίζει αρχάριους μαζί με έμπειρους ασκούμενους. Οι δάσκαλοι προσφέρουν τροποποιήσεις για κάθε επίπεδο. Ορισμένα retreats είναι σχεδιασμένα για αρχάριους." }
+      },
+      {
+        q: { en: "What yoga styles are most common at Crete retreats?", el: "Ποια στυλ yoga είναι πιο συνηθισμένα στα retreats της Κρήτης;" },
+        a: { en: "Vinyasa flow is the most widely taught style. Yin yoga is the second most common, usually offered as an afternoon complement. Hatha, Ashtanga, Kundalini, and somatic movement retreats are available though less frequently. Sound healing, breathwork, and cacao ceremonies increasingly appear as add-on elements.", el: "Το Vinyasa flow είναι το πιο διαδεδομένο στυλ. Το Yin yoga είναι το δεύτερο πιο συνηθισμένο. Hatha, Ashtanga, Kundalini είναι διαθέσιμα αλλά λιγότερο συχνά." }
+      },
+      {
+        q: { en: "Is it safe to travel solo to a yoga retreat in Crete?", el: "Είναι ασφαλές να ταξιδέψω solo σε yoga retreat στην Κρήτη;" },
+        a: { en: "Crete is among the safest travel destinations in the Mediterranean. Most yoga retreats actively cater to solo travellers — a significant proportion of bookings are made by solo women. The shared-meal and communal practice format creates an immediate social environment. Solo supplement charges apply at some retreats.", el: "Η Κρήτη είναι από τους ασφαλέστερους προορισμούς στη Μεσόγειο. Τα περισσότερα retreats εξυπηρετούν solo ταξιδιώτες — σημαντικό ποσοστό κρατήσεων γίνεται από γυναίκες που ταξιδεύουν μόνες." }
+      },
+      {
+        q: { en: "Can I combine a yoga retreat with sightseeing in Crete?", el: "Μπορώ να συνδυάσω yoga retreat με αξιοθέατα στην Κρήτη;" },
+        a: { en: "Yes. Most retreats schedule two daily yoga sessions — morning and late afternoon — leaving midday free. From western Crete you can reach Balos Lagoon, Samaria Gorge, and Chania Old Town in half a day. Retreats near Rethymno have access to the Venetian city and Arkadi Monastery. Eastern Crete retreats can arrange trips to Knossos and Spinalonga.", el: "Ναι. Τα περισσότερα retreats έχουν δύο καθημερινές συνεδρίες, αφήνοντας το μεσημέρι ελεύθερο. Από τη δυτική Κρήτη μπορείτε να φτάσετε Μπάλο, Σαμαριά και Παλιά Πόλη Χανίων." }
+      },
+      {
+        q: { en: "What is the Cretan diet and why does it matter for wellness?", el: "Τι είναι η κρητική διατροφή και γιατί έχει σημασία για την ευεξία;" },
+        a: { en: "The Cretan diet is the traditional eating pattern of the island — very high in extra-virgin olive oil, wild greens, legumes, fresh fish and herbs, with modest meat and dairy. It was central to the original Seven Countries Study that established the science of the Mediterranean diet. At a Crete wellness retreat this is not a marketing concept — the food genuinely reflects these principles, sourced locally and prepared daily.", el: "Η κρητική διατροφή είναι το παραδοσιακό διατροφικό πρότυπο του νησιού — πλούσιο σε ελαιόλαδο, χόρτα, όσπρια, ψάρι και βότανα. Σε ένα wellness retreat στην Κρήτη αυτό δεν είναι concept μάρκετινγκ — το φαγητό αντικατοπτρίζει πραγματικά αυτές τις αρχές." }
       }
     ]
   }
