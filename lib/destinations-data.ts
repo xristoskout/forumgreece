@@ -892,13 +892,13 @@ export const destinations: Destination[] = [
     slug: "chania",
     name: "Chania",
     region: { en: "Crete", el: "Κρήτη" },
-    blurb: { en: "Venetian harbor, lighthouse and charming old town alleys.", el: "Ενετικό λιμάνι, φάρος και γραφικά σοκάκια." },
+    blurb: { en: "Venetian harbour, lighthouse, Splantzia quarter and the newly reopened Municipal Market.", el: "Ενετικό λιμάνι, φάρος, συνοικία Σπλάντζιας και η πρόσφατα ανακαινισμένη Δημοτική Αγορά." },
     image: "/images/chania.webp",
     overview: { 
-      en: "Venetian harbor charm, old town alleys, great food, and some of the most memorable beach and road trip experiences in Crete.", 
-      el: "Γοητεία ενετικού λιμανιού, σοκάκια παλιάς πόλης, εξαιρετικό φαγητό και μερικές από τις πιο αξέχαστες εμπειρίες σε παραλίες και road trips στην Κρήτη." 
+      en: "Venetian harbour charm, old town layers, excellent food, the newly reopened Municipal Market (summer 2026), and the best gateway to Balos, Elafonisi, Samaria, and the dramatic landscapes of western Crete.", 
+      el: "Γοητεία ενετικού λιμανιού, ιστορικά στρώματα στην παλιά πόλη, εξαιρετικό φαγητό, η πρόσφατα ανακαινισμένη Δημοτική Αγορά (καλοκαίρι 2026) και το καλύτερο ορμητήριο για Μπάλο, Ελαφονήσι, Σαμαριά και τα εντυπωσιακά τοπία της δυτικής Κρήτης." 
     },
-    highlights: { en: ["Venetian Harbor", "Old Market"], el: ["Ενετικό Λιμάνι", "Παλιά Αγορά"] },
+    highlights: { en: ["Venetian Harbor", "Municipal Market (Agora)", "Splantzia Quarter"], el: ["Ενετικό Λιμάνι", "Δημοτική Αγορά (Αγορά)", "Συνοικία Σπλάντζιας"] },
     featured: true,
     guideLinks: [
       {
@@ -920,12 +920,12 @@ export const destinations: Destination[] = [
     ],
     seo: {
       title: {
-        en: "Chania Travel Guide | Old Town, Beaches, Food & Where to Stay",
-        el: "Χανιά: Οδηγός Ταξιδιού | Παλιά Πόλη, Παραλίες, Φαγητό & Διαμονή"
+        en: "Chania Travel Guide 2026 | Venetian Harbour, Old Market Reopened, Beaches & Best Restaurants",
+        el: "Χανιά: Οδηγός Ταξιδιού 2026 | Ενετικό Λιμάνι, Δημοτική Αγορά, Παραλίες & Καλύτερα Εστιατόρια"
       },
       description: {
-        en: "Plan your trip to Chania with our travel guide. Discover the old town, beaches, food, where to stay, and the best things to do in one of Crete's most beautiful destinations.",
-        el: "Οργανώστε το ταξίδι σας στα Χανιά με τον οδηγό μας. Ανακαλύψτε την παλιά πόλη, τις παραλίες, το φαγητό, τη διαμονή και τις καλύτερες εμπειρίες σε έναν από τους ομορφότερους προορισμούς της Κρήτης."
+        en: "Chania 2026 — fully updated guide. Municipal Market reopens summer 2026, Hilton opens in the Old Town, JW Marriott on Marathi Beach. Venetian harbour, Splantzia, Balos, Elafonisi, Samaria Gorge, and the best restaurants in western Crete.",
+        el: "Χανιά 2026 — πλήρως ενημερωμένος οδηγός. Η Δημοτική Αγορά ανοίγει ξανά το καλοκαίρι 2026, το Hilton στην Παλιά Πόλη, το JW Marriott στην παραλία Μαραθίου. Ενετικό λιμάνι, Σπλάντζια, Μπάλος, Ελαφονήσι, Φαράγγι Σαμαριάς και τα καλύτερα εστιατόρια της δυτικής Κρήτης."
       }
     }
   },
