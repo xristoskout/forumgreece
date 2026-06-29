@@ -17,6 +17,7 @@ const staticRoutes = [
   '',
   '/destinations',
   '/hotels',
+  '/eat-drink',
   '/tours/all',
   '/trip-planner',
   '/travel-info',
