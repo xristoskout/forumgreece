@@ -72,12 +72,22 @@ export const destinationSections: Record<string, DestinationSection[]> = {
           el: "Η \u201cΦάβα Σαντορίνης\u201d είναι καταχωρισμένη ως ΠΟΠ στην Ε.Ε. Και το \u201cΤοματάκι Σαντορίνης\u201d έχει επίσης προδιαγραφές ΠΟΠ. Γι\u2019 αυτό οι ντοματοκεφτέδες και η φάβα εδώ δεν είναι \u201cένα ακόμα πιάτο\u201d: έχουν πίσω τους τόπο και ταυτότητα.",
         },
       },
-    ],
-  },
-  {
-    title: {
-      en: "Best time to go (and when to avoid)",
-      el: "Καλύτερη εποχή για να πας (και πότε να το αποφύγεις)",
+      ],
+    },
+    {
+      title: { en: "", el: "" },
+      gallery: [
+        {
+          image: "/images/samos-gallery-1.webp",
+          alt: { en: "Sea view on Samos island, Greece", el: "Θέα στη θάλασσα της Σάμου" },
+          caption: { en: "Sea view on Samos island, Greece", el: "Θέα στη θάλασσα της Σάμου" }
+        }
+      ]
+    },
+    {
+      title: {
+        en: "Best time to go (and when to avoid)",
+        el: "Καλύτερη εποχή για να πας (και πότε να το αποφύγεις)",
     },
     layout: "list",
       alert: {
@@ -236,16 +246,6 @@ export const destinationSections: Record<string, DestinationSection[]> = {
           },
         },
       ],
-    },
-    {
-      title: { en: "", el: "" },
-      gallery: [
-        {
-          image: "/images/samos-gallery-1.webp",
-          alt: { en: "Sea view on Samos island, Greece", el: "Θέα στη θάλασσα της Σάμου" },
-          caption: { en: "Sea view on Samos island, Greece", el: "Θέα στη θάλασσα της Σάμου" }
-        }
-      ]
     },
     {
       title: {
