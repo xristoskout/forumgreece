@@ -8,7 +8,51 @@ export type DestinationDetail = {
     title: Localized;
     alert: Localized;
     items: LocalizedList;
-  };
+  samos: {
+    overview: {
+      en: "Samos is not the most famous island in the Aegean — it is simply one of the best. Positioned at the far eastern edge of the Greek island world, separated from the Turkish coast near Kuşadası by a strait only 1.6 kilometres wide at its narrowest point, it occupies a geographic and cultural position unlike any other Greek island: simultaneously facing west toward the Cyclades and east toward the ancient cities of Anatolia. This in-between quality — neither purely Aegean nor purely Eastern, neither purely ancient nor purely modern — gives Samos a richness and density of experience that larger, more celebrated islands rarely match.\n\nThe island is green in a way that surprises first-time visitors. Samos is heavily forested — pine, cypress and maquis cover the interior mountains, which rise to over 1,400 metres at the summit of Mount Kerkis in the southwest and Mount Ampelos in the centre. Vineyards carpet the lower slopes, producing the small, intensely aromatic Muscat grape from which Samos wine has been made for at least three thousand years.\n\nThe historical depth of Samos is staggering even by Greek standards. The island was one of the most powerful city-states in the archaic and classical Aegean — rival to Athens and Corinth at its height, home to a navy that controlled eastern Aegean trade routes, and birthplace of two of the most consequential thinkers of the ancient world. Pythagoras was born here around 570 BC; Epicurus was born here in 341 BC. The Heraion — the ancient sanctuary of Hera, patron goddess of Samos — is a UNESCO World Heritage site that was in continuous use from the Bronze Age through the Roman period.\n\nModern Samos has four distinct personalities — the elegant neoclassical capital of Vathi, the beautifully preserved fishing village of Kokkari, the wine-producing south coast around Pythagoreion and Heraion, and the remote, forested west — and they are different enough to feel like separate islands.",
+      el: "Η Σάμος δεν είναι το πιο φημισμένο νησί στο Αιγαίο — είναι απλώς ένα από τα καλύτερα. Θεωρείται ένα από τα πιο πράσινα νησιά του Αιγαίου, με πευκοδάσος, κυπαρισσοδάση και μακία να καλύπτουν το εσωτερικό. Η ιστορική του βαθύτητα είναι εντυπωσιακή — πατρίδα του Πυθαγόρα και του Επικούρου, σπίτι του αρχαίου Ηραίου, UNESCO Μνημείο Παγκόσμιας Κληρονομιάς, και παραγωγός του καλύτερου Μοσχάτου στην Ελλάδα."
+    },
+    pageIncludes: {
+      en: [
+        "Heraion — UNESCO World Heritage site",
+        "Pythagoreion & Efpalinos Tunnel",
+        "Samos Muscat PDO wine",
+        "Kokkari — fishing village",
+        "Mount Kerkis & Ampelos hikes",
+        "Vathi — neoclassical capital",
+        "Beaches facing Turkey",
+      ],
+      el: [
+        "Ηραίον — Μνημείο Παγκόσμιας Κληρονομιάς UNESCO",
+        "Πυθαγόρειο & Ευπαλίνειο Όρυγμα",
+        "Μοσχάτος Σάμου ΠΟΠ",
+        "Κοκκάρι — ψαροχώρι",
+        "Πεζοπορία στον Κέρκη & Άμπελο",
+        "Βαθύ — νεοκλασική πρωτεύουσα",
+        "Παραλίες με θέα στην Τουρκία",
+      ],
+    },
+    perfectFor: {
+      en: [
+        "History & archaeology enthusiasts",
+        "Wine lovers",
+        "Hikers & nature travelers",
+        "Families (quiet, safe, green)",
+        "Beach lovers seeking uncrowded shores",
+        "Culture travelers (museums, UNESCO sites)",
+      ],
+      el: [
+        "Λάτρεις ιστορίας & αρχαιολογίας",
+        "Λάτρεις κρασιού",
+        "Πεζοπόρους & φυσιολάτρες",
+        "Οικογένειες",
+        "Λάτρεις παραλιών χωρίς πολυκοσμία",
+        "Ταξιδιώτες πολιτισμού",
+      ],
+    },
+  },
+};
 };
 
 
