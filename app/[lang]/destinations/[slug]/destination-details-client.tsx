@@ -450,7 +450,7 @@ export default function DestinationDetailsClient({
                               </h4>
                             )}
                             <p className={`text-base leading-relaxed ${section.layout === 'faq' ? 'text-slate-600' : 'text-slate-500'}`}>
-                              {item.text[lang]}
+                              {renderTextWithLinksDark(item.text[lang])}
                             </p>
                           </div>
                         ))}
