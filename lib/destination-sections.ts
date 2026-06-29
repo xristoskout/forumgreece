@@ -75,16 +75,6 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       ],
     },
     {
-      title: { en: "", el: "" },
-      gallery: [
-        {
-          image: "/images/samos-gallery-1.webp",
-          alt: { en: "Sea view on Samos island, Greece", el: "Θέα στη θάλασσα της Σάμου" },
-          caption: { en: "Sea view on Samos island, Greece", el: "Θέα στη θάλασσα της Σάμου" }
-        }
-      ]
-    },
-    {
       title: {
         en: "Best time to go (and when to avoid)",
         el: "Καλύτερη εποχή για να πας (και πότε να το αποφύγεις)",
@@ -10650,6 +10640,16 @@ export const destinationSections: Record<string, DestinationSection[]> = {
           },
         },
       ],
+    },
+    {
+      title: { en: "", el: "" },
+      gallery: [
+        {
+          image: "/images/samos-gallery-1.webp",
+          alt: { en: "Sea view on Samos island, Greece", el: "Θέα στη θάλασσα της Σάμου" },
+          caption: { en: "Sea view on Samos island, Greece", el: "Θέα στη θάλασσα της Σάμου" }
+        }
+      ]
     },
     {
       title: {
