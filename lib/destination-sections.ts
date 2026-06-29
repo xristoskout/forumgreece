@@ -58,7 +58,7 @@ export const destinationSections: Record<string, DestinationSection[]> = {
           el: "Κρασί με υπογραφή ΠΟΠ και χαρακτήρα ηφαιστειακού εδάφους",
         },
         text: {
-          en: "Santorini holds a PDO (Protected Designation of Origin) for its wine, established in 1971. In the dry PDO wines, the legislation describes a minimum percentage of Assyrtiko. The 'kouloura' (basket) pruning is not just a tourist slogan — it's a real practice you'll see in the wineries.\n\nBrowse our [food & wine guides](/collections/greece-food-and-drink) for more on Santorini's gastronomy.",
+          en: "Santorini holds a PDO (Protected Designation of Origin) for its wine, established in 1971. In the dry PDO wines, the legislation describes a minimum percentage of Assyrtiko. The 'kouloura' (basket) pruning is not just a tourist slogan — it's a real practice you'll see in the wineries.\n\nBrowse our [food & wine guides](/eat-drink/sunset-cocktails-dinner) for more on Santorini's gastronomy.",
           el: "Η Σαντορίνη έχει ΠΟΠ (PDO) για το κρασί της, που θεσπίστηκε το 1971. Στα \u201cστεγνά\u201d ΠΟΠ κρασιά, η νομοθεσία περιγράφει ελάχιστο ποσοστό Ασύρτικο (με δυνατότητα συμμετοχής Αηδάνι/Αθήρι). Και ναι: το κλάδεμα σε \u201cκουλούρα\u201d δεν είναι τουριστικό σλόγκαν — είναι πραγματική πρακτική που θα σου δείξουν στα οινοποιεία.",
         },
       },
