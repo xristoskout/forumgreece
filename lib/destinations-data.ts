@@ -523,8 +523,8 @@ export const destinations: Destination[] = [
     blurb: { en: "Dramatic blue waters, iconic beaches and sea caves.", el: "Εντυπωσιακά γαλάζια νερά, εμβληματικές παραλίες και θαλάσσιες σπηλιές." },
     image: "/images/zakynthos.webp",
     overview: { 
-      en: "Dramatic blue waters, iconic beaches, sea caves and relaxed Ionian island holidays with a scenic coastal edge.", 
-      el: "Εντυπωσιακά γαλάζια νερά, εμβληματικές παραλίες, θαλάσσιες σπηλιές και χαλαρές διακοπές στο Ιόνιο με μαγευτικό παραθαλάσσιο σκηνικό." 
+      en: "Zakynthos is where the Ionian Sea puts on its most dramatic show — turquoise waters so clear they look like liquid glass, a coastline carved into sea caves and hidden coves, and scenery that draws travellers from across the world. Beyond the famous Shipwreck Beach and the Blue Caves lies an island with its own food culture, warm hospitality, and a holiday rhythm that suits couples, families and independent explorers alike.", 
+      el: "Η Ζάκυνθος είναι εκεί που το Ιόνιο κάνει την πιο εντυπωσιακή του εμφάνιση — γαλαζοπράσινα νερά τόσο διάφανα που μοιάζουν με υγρό γυαλί, ακτογραμμή σκαλισμένη σε θαλάσσιες σπηλιές και κρυμμένους όρμους, και τοπία που ταξιδεύουν επισκέπτες από όλο τον κόσμο. Πέρα από το διάσημο Ναυάγιο και τις Γαλάζιες Σπηλιές, το νησί έχει τη δική του γαστρονομική κουλτούρα, ζεστή φιλοξενία και έναν ρυθμό διακοπών που ταιριάζει σε ζευγάρια, οικογένειες και ανεξάρτητους εξερευνητές." 
     },
     highlights: { en: ["Navagio Beach", "Blue Caves"], el: ["Παραλία Ναυάγιο", "Γαλάζιες Σπηλιές"] },
     featured: true,
