@@ -4928,6 +4928,16 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       ]
     },
     {
+      title: { en: "", el: "" },
+      gallery: [
+        {
+          image: "/images/destinations/zakynthos-beach.webp",
+          alt: { en: "Zakynthos beach with turquoise waters and white sand", el: "Παραλία της Ζακύνθου με γαλαζοπράσινα νερά και λευκή άμμο" },
+          caption: { en: "The stunning coastline of Zakynthos with crystal-clear Ionian waters", el: "Η εντυπωσιακή ακτογραμμή της Ζακύνθου με κρυστάλλινα νερά του Ιονίου" }
+        }
+      ]
+    },
+    {
       title: { en: "Best Areas and Highlights in Zakynthos", el: "Οι καλύτερες περιοχές και σημεία της Ζακύνθου" },
       layout: "grid",
       items: [
