@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Montserrat, Noto_Sans, Playfair_Display } from "next/font/google";
 import { headers } from "next/headers";
+import Script from "next/script";
 
 import "./globals.css";
 import LangManager from "@/components/lang-manager";
@@ -102,7 +103,9 @@ export default async function RootLayout({
             }).replace(/</g, "\\u003c"),
           }}
         />
-        <script
+        <Script
+          id="gtag-consent"
+          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
             __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});`,
           }}
