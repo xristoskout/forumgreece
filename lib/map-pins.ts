@@ -346,4 +346,18 @@ export const MAP_PINS: Pin[] = [
     label: { en: "Samos", el: "Σάμος" },
     tagline: { en: "Pythagoras, wine & beaches", el: "Πυθαγόρας, κρασί & παραλίες" },
   },
+  {
+    id: "kalymnos",
+    x: 76.6, y: 61.3,
+    href: "/destinations/kalymnos",
+    label: { en: "Kalymnos", el: "Κάλυμνος" },
+    tagline: { en: "World capital of rock climbing", el: "Παγκόσμια πρωτεύουσα αναρρίχησης" },
+  },
+  {
+    id: "samothraki",
+    x: 63.7, y: 21.8,
+    href: "/destinations/samothraki",
+    label: { en: "Samothraki", el: "Σαμοθράκη" },
+    tagline: { en: "Sanctuary of the Great Gods", el: "Ιερό των Μεγάλων Θεών" },
+  },
 ];

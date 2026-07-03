@@ -899,4 +899,64 @@ export const destinationDetails: Record<string, DestinationDetail> = {
       ],
     },
   },
+  samothraki: {
+    overview: {
+      en: "Samothraki is not like other Greek islands. It does not have the bleached white architecture of the Cyclades, the lush green of the Ionian, or the extensive sandy beaches of Rhodes. What it has is something rarer: a quality of wildness, of geological power, of ancient sacredness, that no amount of tourism development has ever managed to dilute. The island sits in the northern Aegean, 40km south of the Thracian coast, and its dominant physical feature is Mount Fengari, rising to 1,611 metres of ancient granite — the highest peak in the Aegean, said by Homer to be the place from which Poseidon watched the Trojan War.",
+      el: "Η Σαμοθράκη δεν μοιάζει με τα άλλα ελληνικά νησιά. Δεν έχει την άσπρη αρχιτεκτονική των Κυκλάδων, το πράσινο του Ιονίου ή τις αμμουδιές της Ρόδου. Αυτό που έχει είναι κάτι πιο σπάνιο: μια ποιότητα αγριότητας, γεωλογικής δύναμης, αρχαίας ιερότητας. Το όρος Φεγγάρι, 1.611 μέτρα αρχαίου γρανίτη, είναι η υψηλότερη κορυφή του Αιγαίου.",
+    },
+    honestAdvice: {
+      title: { en: "Honest Advice", el: "Ειλικρινής Συμβουλή" },
+      alert: { en: "What nobody tells you: Samothraki gets under your skin slowly. The first day is often difficult — the ferry is rough, the port underwhelming, the accommodation simple. By the third day something has shifted. The sound of the Fonias river in the morning, the mountain above Therma at sunset, the silence of the Sanctuary in the early light — these accumulate. Stay long enough.", el: "Αυτό που δεν σου λέει κανείς: Η Σαμοθράκη σε κερδίζει σιγά σιγά. Η πρώτη μέρα είναι συχνά δύσκολη. Μέχρι την τρίτη μέρα κάτι έχει αλλάξει. Μείνε αρκετά." },
+      items: {
+        en: [
+          "Coming expecting a beach holiday — The island's beaches are decent but not the reason to come",
+          "Arriving without accommodation in July and August — Both indoor accommodation and camping fill entirely",
+          "Entering river gorges without checking flood risk — Flash floods can be sudden",
+          "Treating the Sanctuary visit as a quick diversion — The Sanctuary deserves a full half-day",
+        ],
+        el: [
+          "Περιμένοντας διακοπές παραλίας — Οι παραλίες είναι αξιοπρεπείς",
+          "Χωρίς κράτηση Ιούλιο-Αύγουστο — Τα πάντα γεμίζουν",
+          "Είσοδος σε φαράγγια χωρίς έλεγχο πλημμύρας — Οι πλημμύρες μπορεί να είναι ξαφνικές",
+          "Επίσκεψη στο Ιερό ως γρήγορη στάση — Αξίζει μισή μέρα",
+        ],
+      },
+    },
+    pageIncludes: {
+      en: [
+        "Sanctuary of the Great Gods — ancient mystery cult",
+        "Winged Victory of Samothrace ship base",
+        "Fonias River gorge & 12m waterfall",
+        "Mount Fengari — highest Aegean peak (1,611m)",
+        "Therma natural hot springs",
+        "The Hora — medieval hilltop capital",
+      ],
+      el: [
+        "Ιερό των Μεγάλων Θεών — αρχαία μυστηριακή λατρεία",
+        "Βάση της Νίκης της Σαμοθράκης",
+        "Φαράγγι Φονιά & καταρράκτης 12μ",
+        "Όρος Φεγγάρι — ψηλότερη κορυφή Αιγαίου",
+        "Ιαματικές πηγές Θερμά",
+        "Χώρα — μεσαιωνική πρωτεύουσα",
+      ],
+    },
+    perfectFor: {
+      en: [
+        "Hikers & mountain lovers",
+        "Archaeology & ancient history enthusiasts",
+        "Wild swimming & nature",
+        "Camping & outdoor life",
+        "Alternative & slow travel",
+        "Couples seeking genuine wilderness",
+      ],
+      el: [
+        "Πεζοπόρους & ορειβάτες",
+        "Λάτρεις αρχαιολογίας & ιστορίας",
+        "Φυσιολάτρες & wild swimming",
+        "Κάμπινγκ & υπαίθρια ζωή",
+        "Εναλλακτικό & αργό ταξίδι",
+        "Ζευγάρια που αναζητούν άγρια φύση",
+      ],
+    },
+  },
 };

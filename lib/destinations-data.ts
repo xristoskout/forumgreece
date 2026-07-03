@@ -1177,6 +1177,41 @@ export const destinations: Destination[] = [
     }
   },
   {
+    slug: "samothraki",
+    name: "Samothraki",
+    region: { en: "North Aegean", el: "Βόρειο Αιγαίο" },
+    blurb: {
+      en: "Sanctuary of the Great Gods, Winged Victory of Samothrace, Fonias waterfalls, Mount Fengari — the sacred mountain island of the North Aegean.",
+      el: "Ιερό των Μεγάλων Θεών, Νίκη της Σαμοθράκης, καταρράκτες Φονιά, όρος Φεγγάρι — το ιερό βουνό του Βορείου Αιγαίου."
+    },
+    image: "/images/samothraki-cover.webp",
+    overview: {
+      en: "Samothraki is not like other Greek islands. It does not have the bleached white architecture of the Cyclades, the lush green of the Ionian, or the extensive sandy beaches of Rhodes. What it has is something rarer: a quality of wildness, of geological power, of ancient sacredness, that no amount of tourism development has ever managed to dilute. The island sits in the northern Aegean, 40km south of the Thracian coast, and its dominant physical feature is Mount Fengari, rising to 1,611 metres of ancient granite — the highest peak in the Aegean, said by Homer to be the place from which Poseidon watched the Trojan War.",
+      el: "Η Σαμοθράκη δεν μοιάζει με τα άλλα ελληνικά νησιά. Δεν έχει την άσπρη αρχιτεκτονική των Κυκλάδων, το πράσινο του Ιονίου ή τις αμμουδιές της Ρόδου. Αυτό που έχει είναι κάτι πιο σπάνιο: μια ποιότητα αγριότητας, γεωλογικής δύναμης, αρχαίας ιερότητας. Το όρος Φεγγάρι, 1.611 μέτρα αρχαίου γρανίτη, είναι η υψηλότερη κορυφή του Αιγαίου."
+    },
+    highlights: {
+      en: ["Sanctuary of the Great Gods", "Winged Victory of Samothrace", "Fonias waterfalls & pools", "Mount Fengari (1,611m)", "Therma hot springs", "The Hora medieval village"],
+      el: ["Ιερό των Μεγάλων Θεών", "Νίκη της Σαμοθράκης", "Καταρράκτες & πισίνες Φονιά", "Όρος Φεγγάρι (1.611μ)", "Ιαματικές πηγές Θερμά", "Χώρα Σαμοθράκης"]
+    },
+    featured: true,
+    seo: {
+      title: {
+        en: "Samothraki Travel Guide: Sanctuary of the Gods, Waterfalls & Wild Island | GoGreeceNow",
+        el: "Σαμοθράκη: Οδηγός Ταξιδιού — Ιερό Θεών, Καταρράκτες & Άγριο Νησί"
+      },
+      description: {
+        en: "Complete travel guide to Samothraki — the sacred mountain island of the North Aegean, home of the Sanctuary of the Great Gods, the Winged Victory of Samothrace, wild rivers with waterfalls, Mount Fengari (1,611m), natural hot springs at Therma, and one of the most untamed natural environments in Greece.",
+        el: "Πλήρης ταξιδιωτικός οδηγός για τη Σαμοθράκη — το ιερό βουνό του Βορείου Αιγαίου. Ιερό των Μεγάλων Θεών, Νίκη της Σαμοθράκης, καταρράκτες Φονιά, όρος Φεγγάρι, ιαματικές πηγές Θερμά και ένα από τα πιο άγρια φυσικά περιβάλλοντα της Ελλάδας."
+      }
+    },
+    guideLinks: [
+      {
+        href: "/hotels/samothraki",
+        label: { en: "Where to Stay in Samothraki", el: "Πού να μείνεις στη Σαμοθράκη" }
+      },
+    ]
+  },
+  {
     slug: "skiathos",
     name: "Skiathos",
     region: { en: "Sporades", el: "Σποράδες" },

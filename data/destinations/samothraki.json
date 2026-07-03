@@ -1,0 +1,79 @@
+{
+  "id": "samothraki",
+  "slug": "samothraki",
+  "name": "Samothraki",
+  "type": "island",
+  "coordinates": { "lat": 40.45, "lng": 25.52 },
+  "scores": {
+    "family": { "value": 5, "reason": "Remote ferry journey, challenging terrain, limited family infrastructure" },
+    "couples": { "value": 8, "reason": "Wilderness, hot springs, mountain solitude — unique romantic atmosphere" },
+    "nightlife": { "value": 2, "reason": "Almost no nightlife — a kafeneio in Hora is the extent of evening entertainment" },
+    "food": { "value": 7, "reason": "Mountain goat, fresh fish, wild herb honey, local tsipouro" },
+    "beaches": { "value": 5, "reason": "Wild pebble beaches — decent but not the reason to visit" },
+    "walking": { "value": 10, "reason": "Mount Fengari, Fonias gorge, Vatos pools, Sanctuary valley — exceptional hiking" }
+  },
+  "content": {
+    "quick_summary": {
+      "en": "The sacred mountain island of the North Aegean — Sanctuary of the Great Gods, Winged Victory of Samothrace, Mount Fengari (1,611m), Fonias waterfalls, natural hot springs, and one of the most untamed natural environments in Greece.",
+      "el": "Το ιερό βουνό του Βορείου Αιγαίου — Ιερό των Μεγάλων Θεών, Νίκη της Σαμοθράκης, όρος Φεγγάρι (1.611μ), καταρράκτες Φονιά, ιαματικές πηγές και ένα από τα πιο άγρια φυσικά περιβάλλοντα της Ελλάδας."
+    },
+    "pros": [
+      "Sanctuary of the Great Gods — one of the most important ancient sites in Greece, almost always empty",
+      "Mount Fengari — highest peak in the Aegean (1,611m), extraordinary summit views",
+      "Fonias River gorge and 12m waterfall — finest fresh-water swimming in the Aegean",
+      "Therma natural hot springs — free, used since antiquity, set among enormous plane trees",
+      "Zero mass tourism — no airport, no resorts, no beach clubs",
+      "Hiking paradise — from easy waterfall walks to demanding mountain ascents"
+    ],
+    "cons": [
+      "Remote and difficult to reach — ferry-only, no airport",
+      "Limited accommodation options — books out fully in peak season",
+      "Not a beach destination — beaches are wild pebble coves",
+      "Minimal nightlife and dining variety",
+      "Car essential for exploration — limited public transport",
+      "Weather-dependent activities — river gorges dangerous after rain"
+    ],
+    "insider_tips": [
+      "Start the Fonias gorge walk before 9am to have the waterfall pool to yourself",
+      "Visit the Sanctuary museum first (60–90min), then the site — the context transforms the ruins",
+      "The Therma hot springs are best at sunset when the air cools and the steam rises",
+      "Book ferry and accommodation at least two months ahead for July–August",
+      "Pack trail shoes, warm layers, headlamp and 2L water for the Fengari ascent",
+      "September is the finest month — crowds gone, sea warm, mountain clear"
+    ],
+    "mistakes_to_avoid": [
+      "Coming expecting a beach holiday — the beaches are decent but secondary",
+      "Arriving without accommodation booked in high season",
+      "Entering the Fonias gorge within 24 hours of rain — flash floods are dangerous",
+      "Treating the Sanctuary as a quick stop — it deserves a full half-day",
+      "Underestimating the Fengari ascent — 8–10 hours, 1,400m elevation gain",
+      "Skipping the Hora — the medieval hilltop capital is one of the finest in the North Aegean"
+    ]
+  },
+  "pricing_base": {
+    "budget_daily": 30,
+    "mid_daily": 55,
+    "luxury_daily": 120
+  },
+  "seasonality": {
+    "january": { "temp": 7, "price_multiplier": 0.4 },
+    "february": { "temp": 8, "price_multiplier": 0.4 },
+    "march": { "temp": 11, "price_multiplier": 0.5 },
+    "april": { "temp": 15, "price_multiplier": 0.6 },
+    "may": { "temp": 20, "price_multiplier": 0.8 },
+    "june": { "temp": 25, "price_multiplier": 1.0 },
+    "july": { "temp": 28, "price_multiplier": 1.3 },
+    "august": { "temp": 29, "price_multiplier": 1.4 },
+    "september": { "temp": 24, "price_multiplier": 1.1 },
+    "october": { "temp": 18, "price_multiplier": 0.7 },
+    "november": { "temp": 13, "price_multiplier": 0.5 },
+    "december": { "temp": 9, "price_multiplier": 0.4 }
+  },
+  "image": "/images/samothraki-cover.webp",
+  "guideLinks": [
+    {
+      "href": "/hotels/samothraki",
+      "label": { "en": "Where to Stay in Samothraki", "el": "Πού να μείνεις στη Σαμοθράκη" }
+    }
+  ]
+}

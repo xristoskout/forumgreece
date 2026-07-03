@@ -13694,4 +13694,252 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       ]
     },
   ],
+  samothraki: [
+    {
+      title: { en: "Why visit Samothraki", el: "Γιατί να επισκεφθείς τη Σαμοθράκη" },
+      layout: "numbered",
+      items: [
+        {
+          title: { en: "The Sanctuary of the Great Gods is one of the most important ancient sites in Greece — and almost always empty", el: "Το Ιερό των Μεγάλων Θεών είναι ένας από τους σημαντικότερους αρχαιολογικούς χώρους — και σχεδόν πάντα άδειος" },
+          text: { en: "The archaeological site of the Sanctuary stretches across a broad valley near the north coast and contains remains from the 7th century BC through the Roman period — temples, ceremonial halls, the propylon, the rotunda of Arsinoe and the Hieron spread across a landscape of plane trees and running water. The site sees a fraction of the visitors of Delphi or Olympia.", el: "Ο αρχαιολογικός χώρος του Ιερού εκτείνεται σε μια ευρεία κοιλάδα κοντά στη βόρεια ακτή και περιέχει ερείπια από τον 7ο αιώνα π.Χ. έως τη ρωμαϊκή περίοδο — ναούς, τελετουργικές αίθουσες και το Ιερό." }
+        },
+        {
+          title: { en: "The rivers and waterfalls are the finest natural fresh-water swimming in the entire Aegean", el: "Τα ποτάμια και οι καταρράκτες είναι το καλύτερο φυσικό κολύμπι γλυκού νερού σε όλο το Αιγαίο" },
+          text: { en: "The Fonias River on the northeast coast cuts a gorge through the granite mountain and drops into a series of natural pools of extraordinary clarity — the largest, at the base of a 12-metre waterfall, is one of the most photographed natural sites in northern Greece. This combination of mountain river, waterfall and natural pool is found nowhere else in the Aegean at this scale.", el: "Ο ποταμός Φονιάς στη βορειοανατολική ακτή σχηματίζει φαράγγι στο γρανιτένιο βουνό και δημιουργεί φυσικές πισίνες εξαιρετικής διαύγειας." }
+        },
+        {
+          title: { en: "Mount Fengari is the highest peak in the Aegean and one of the finest mountain hikes in the Greek islands", el: "Το όρος Φεγγάρι είναι η ψηλότερη κορυφή στο Αιγαίο και μία από τις καλύτερες ορεινές πεζοπορίες" },
+          text: { en: "The ascent of Fengari is the defining physical challenge of a Samothraki visit. The route begins in Therma and climbs through forest, open rock and high-altitude scrub to the bare granite summit, from which on clear days the coasts of Thrace, Lemnos, Thasos, and the mountains of the Peloponnese are visible.", el: "Η ανάβαση στο Φεγγάρι είναι η καθοριστική φυσική πρόκληση της Σαμοθράκης. Η διαδρομή ξεκινά από τα Θερμά και ανεβαίνει μέσα από δάσος και βράχο." }
+        },
+        {
+          title: { en: "The island has no airport — and this fact is the source of its preservation", el: "Το νησί δεν έχει αεροδρόμιο — και αυτό είναι η πηγή της διατήρησής του" },
+          text: { en: "Every visitor arrives by ferry from Alexandroupoli (2 hours) — a journey that requires time and commitment. The result has been a self-selecting visitor base of people who specifically want what Samothraki offers: nature, archaeology, quiet, wildness.", el: "Κάθε επισκέπτης φτάνει με πλοίο από την Αλεξανδρούπολη (2 ώρες) — ένα ταξίδι που απαιτεί χρόνο και αφοσίωση." }
+        },
+        {
+          title: { en: "Therma is the finest natural hot spring environment in Greece", el: "Τα Θερμά είναι το καλύτερο φυσικό ιαματικό περιβάλλον στην Ελλάδα" },
+          text: { en: "The village of Therma sits above natural mineral hot springs used since antiquity. The water emerges at approximately 40°C into stone-built bathing pools. The combination of hot mineral water, enormous plane trees, running streams and the view of the sea below makes Therma one of the most genuinely restorative environments in the Greek islands.", el: "Το χωριό Θερμά βρίσκεται πάνω από φυσικές ιαματικές πηγές που χρησιμοποιούνται από την αρχαιότητα." }
+        },
+        {
+          title: { en: "The Hora is one of the finest traditional villages in the northern Aegean", el: "Η Χώρα είναι ένα από τα ωραιότερα παραδοσιακά χωριά του βορείου Αιγαίου" },
+          text: { en: "The capital sits at 150 metres on the southern slope, invisible from the coast — built to hide from pirates. Pale stone houses, cobbled lanes, a Genoese castle above and a central square with a plane tree and a kafeneion that has been there for centuries.", el: "Η πρωτεύουσα βρίσκεται στα 150 μέτρα στη νότια πλαγιά, αόρατη από την ακτή. Πέτρινα σπίτια, καλντερίμια, γενοβέζικο κάστρο." }
+        },
+        {
+          title: { en: "The island's camping culture is a specific and irreplaceable part of the Samothraki experience", el: "Η κουλτούρα κάμπινγκ είναι αναντικατάστατο μέρος της εμπειρίας" },
+          text: { en: "Samothraki has had a camping culture since the 1970s — enormous plane trees, running fresh water within campsites, the sound of the river, the mountain above. For first-time visitors who have never camped in Greece, Samothraki's campsite environment is a revelation.", el: "Η Σαμοθράκη έχει κουλτούρα κάμπινγκ από τη δεκαετία του 1970 — τεράστια πλατάνια, τρεχούμενο νερό, ο ήχος του ποταμού." }
+        },
+        {
+          title: { en: "The island has a quality of light, silence and presence specific to it", el: "Το νησί έχει μια ποιότητα φωτός, σιωπής και παρουσίας μοναδική" },
+          text: { en: "Samothraki has an atmosphere — the mountain's scale, the sound of running water, the northern Aegean light, the absence of commercial noise, the weight of ancient history — that accumulates over a stay and becomes one of the most vivid sensory memories a Greek island visit can produce.", el: "Η Σαμοθράκη έχει μια ατμόσφαιρα — η κλίμακα του βουνού, ο ήχος του νερού, η απουσία εμπορικού θορύβου — που συσσωρεύεται και γίνεται μια από τις πιο ζωντανές αναμνήσεις." }
+        },
+      ]
+    },
+    {
+      title: { en: "Best time to visit Samothraki", el: "Καλύτερη εποχή για να επισκεφθείς τη Σαμοθράκη" },
+      layout: "list",
+      alert: {
+        en: "The rivers and waterfalls are at their most spectacular in May and June when snowmelt from Mount Fengari fills the gorges. September is the finest all-round month — warm sea, empty trails, the mountain at its most accessible.",
+        el: "Τα ποτάμια και οι καταρράκτες είναι πιο εντυπωσιακοί Μάιο και Ιούνιο. Ο Σεπτέμβριος είναι ο καλύτερος μήνας συνολικά."
+      },
+      items: [
+        {
+          title: { en: "May – June", el: "Μάιος – Ιούνιος" },
+          text: { en: "The finest months. Rivers run at maximum volume from spring snowmelt — the Fonias waterfall at its most spectacular. Mountain green, wildflowers, uncrowded. Ideal for hikers.", el: "Οι καλύτεροι μήνες. Τα ποτάμια έχουν μέγιστη ροή, το καταρράκτη Φονιά στο πιο εντυπωσιακό του." }
+        },
+        {
+          title: { en: "July – August", el: "Ιούλιος – Αύγουστος" },
+          text: { en: "Peak season. Camping fills; Fonias crowded by midday; sea warm enough for swimming. Book ferry and accommodation well in advance.", el: "Περίοδος αιχμής. Τα κάμπινγκ γεμίζουν. Κλείστε πλοίο και διαμονή νωρίς." }
+        },
+        {
+          title: { en: "September", el: "Σεπτέμβριος" },
+          text: { en: "Arguably the finest month. Rivers still running, sea at best temperature, crowds gone. The mountain turns gold.", el: "Ίσως ο καλύτερος μήνας. Ποτάμια ακόμα τρέχουν, θάλασσα ζεστή, τα πλήθη έχουν φύγει." }
+        },
+        {
+          title: { en: "October – April", el: "Οκτώβριος – Απρίλιος" },
+          text: { en: "A different island — rivers fill again, snow on the mountain by November. The Sanctuary open year-round. Requires self-sufficiency.", el: "Ένα διαφορετικό νησί — χιόνι στο βουνό από Νοέμβριο. Απαιτεί αυτάρκεια." }
+        },
+      ]
+    },
+    {
+      title: { en: "The Sanctuary of the Great Gods", el: "Ιερό των Μεγάλων Θεών" },
+      layout: "list",
+      items: [
+        {
+          title: { en: "One of the most sacred sites in the ancient world", el: "Ένας από τους πιο ιερούς τόπους του αρχαίου κόσμου" },
+          text: { en: "The Sanctuary of the Great Gods was one of the most important pan-Hellenic religious centres — attracting worshippers from across the Greek and Roman world for nearly a thousand years. Unlike the Olympian religion, the mysteries of Samothrace were secret: initiates were sworn to silence. The specific nature of the Samothracian mysteries remains unknown to this day.", el: "Το Ιερό των Μεγάλων Θεών ήταν ένα από τα σημαντικότερα πανελλήνια θρησκευτικά κέντρα. Οι μύστες ορκίζονταν σιωπή." }
+        },
+        {
+          title: { en: "The Winged Victory of Samothrace", el: "Νίκη της Σαμοθράκης" },
+          text: { en: "The Winged Victory (Nike of Samothrace) was created around 190 BC to celebrate a naval victory. Discovered in 1863 by Charles Champoiseau, it was transported to the Louvre where it remains today. The carved ship's prow base remains at the Samothraki Archaeological Museum.", el: "Η Νίκη της Σαμοθράκης δημιουργήθηκε γύρω στο 190 π.Χ. Ανακαλύφθηκε το 1863 και μεταφέρθηκε στο Λούβρο." }
+        },
+        {
+          title: { en: "The archaeological site", el: "Ο αρχαιολογικός χώρος" },
+          text: { en: "The most significant structures include the Anaktoron (hall of initiation), the Arsinoëion (the largest circular building in Greece), the Hieron (great hall of higher initiation), and the Victory Fountain — the stepped base where the Winged Victory originally stood. The site spans nearly a millennium of construction.", el: "Τα σημαντικότερα κτίρια περιλαμβάνουν το Ανάκτορο, την Αρσινόη (το μεγαλύτερο κυκλικό κτίριο στην Ελλάδα) και το Ιερό." }
+        },
+      ]
+    },
+    {
+      title: { en: "Rivers, Waterfalls & Natural Pools", el: "Ποτάμια, Καταρράκτες & Φυσικές Πισίνες" },
+      layout: "grid",
+      items: [
+        {
+          title: { en: "Fonias River & Waterfall", el: "Ποταμός Φονιάς & Καταρράκτης" },
+          text: { en: "A gorge walk of 45 minutes leads to a 12-metre waterfall above a deep natural pool. The most dramatic swimming environment in the Aegean. The boulder scramble requires trail shoes or good trainers.", el: "Περπάτημα 45 λεπτών σε φαράγγι οδηγεί σε καταρράκτη 12 μέτρων. Η πιο εντυπωσιακή εμπειρία κολύμπι στο Αιγαίο." }
+        },
+        {
+          title: { en: "Vatos River Pools", el: "Πισίνες ποταμού Βάτου" },
+          text: { en: "Quieter pools on the southern slope in a more forested setting — accessible with scrambling but more solitary than Fonias. The quieter alternative on the mountain's southern slope.", el: "Πιο ήσυχες πισίνες στη νότια πλαγιά. Απαιτούν σκαρφάλωμα αλλά είναι πιο απομονωμένες." }
+        },
+        {
+          title: { en: "Kremasto Nero", el: "Κρεμαστό Νερό" },
+          text: { en: "A waterfall easily reached from near Therma — excellent for families, with a shallow pool safe for children. A taste of the gorge landscape without the boulder scramble.", el: "Καταρράκτης εύκολα προσβάσιμος από τα Θερμά — ιδανικός για οικογένειες." }
+        },
+        {
+          title: { en: "Therma Hot Springs", el: "Ιαματικές Πηγές Θερμά" },
+          text: { en: "Natural mineral springs at 40°C flowing into stone-built pools. Used therapeutically since antiquity. Free to use. The outdoor pools function best in the hour before sunset when the air cools.", el: "Φυσικές ιαματικές πηγές στους 40°C. Δωρεάν χρήση. Καλύτερα την ώρα πριν τη δύση." }
+        },
+      ]
+    },
+    {
+      title: { en: "What to see and do", el: "Τι να δεις και να κάνεις" },
+      layout: "numbered",
+      items: [
+        {
+          title: { en: "The Sanctuary of the Great Gods — the archaeological site and museum", el: "Ιερό των Μεγάλων Θεών — ο αρχαιολογικός χώρος και το μουσείο" },
+          text: { en: "The Sanctuary occupies a broad, green valley approximately two kilometres east of Kamariotissa. The site covers approximately 50 hectares with ancient plane trees. Spend at least two hours at the site after the museum. The most atmospheric time is late afternoon.", el: "Το Ιερό καταλαμβάνει μια ευρεία κοιλάδα ανατολικά της Καμαριώτισσας. Αφιερώστε τουλάχιστον δύο ώρες στον χώρο." }
+        },
+        {
+          title: { en: "The Fonias River gorge and waterfall", el: "Φαράγγι και καταρράκτης Φονιά" },
+          text: { en: "The walk begins from the coast road 8km east of Kamariotissa and follows the river upstream through a gorge of enormous granite boulders. The 45-minute path requires scrambling. The swimming is cold (16–18°C in July). Do not enter the gorge within 24 hours of rain on the mountain.", el: "Η διαδρομή ξεκινά 8χλμ ανατολικά της Καμαριώτισσας. Απαιτεί σκαρφάλωμα. Μην μπείτε στο φαράγγι αν έχει βρέξει τις τελευταίες 24 ώρες." }
+        },
+        {
+          title: { en: "The Hora — the medieval hilltop capital", el: "Χώρα — η μεσαιωνική πρωτεύουσα στο λόφο" },
+          text: { en: "The Hora sits on the southern slope at 150m, invisible from the north coast. Pale granite houses, cobbled lanes, and at the highest point the ruins of a Genoese kastro. The village square has a kafeneion of long tenure. Visit in late afternoon when the light falls across the stone facades.", el: "Η Χώρα βρίσκεται στη νότια πλαγιά. Πέτρινα σπίτια, καλντερίμια. Επισκεφθείτε το απόγευμα για το φως στις πέτρινες προσόψεις." }
+        },
+        {
+          title: { en: "Therma — hot springs, plane trees and mountain atmosphere", el: "Θερμά — ιαματικές πηγές, πλατάνια και ορεινή ατμόσφαιρα" },
+          text: { en: "Therma, 14km east of Kamariotissa, is the primary base for nature-focused visitors. The landscape of enormous plane trees shades the open bathing pools. The combination of a morning in the Fonias gorge and an afternoon in the Therma springs is the defining Samothraki physical experience.", el: "Τα Θερμά, 14χλμ ανατολικά της Καμαριώτισσας, είναι η κύρια βάση για τους επισκέπτες της φύσης." }
+        },
+        {
+          title: { en: "Mount Fengari — ascent to the highest peak in the Aegean", el: "Όρος Φεγγάρι — ανάβαση στην ψηλότερη κορυφή του Αιγαίου" },
+          text: { en: "The ascent is approximately 8km with 1,400m of elevation gain from Therma. The summit plateau at 1,611m offers views of the Thracian coast, Lemnos, Thasos and, on exceptional days, Mount Olympus. Start no later than 5am. Carry minimum 2.5L water, warm layers, wind shell and head torch.", el: "Η ανάβαση είναι περίπου 8χλμ με 1.400μ υψομετρική διαφορά. Ξεκινήστε το αργότερο στις 5 π.μ." }
+        },
+        {
+          title: { en: "Kamariotissa and the southern coast", el: "Καμαριώτισσα και νότια ακτή" },
+          text: { en: "Kamariotissa is the port and main commercial settlement. The waterfront has good tavernas. The bakery opens at 6am — buy provisions here before any hike or river day.", el: "Η Καμαριώτισσα είναι το λιμάνι. Το φούρνο ανοίγει στις 6 π.μ. — προμηθευτείτε εδώ για πεζοπορία." }
+        },
+      ]
+    },
+    {
+      title: { en: "Hiking routes on Samothraki", el: "Διαδρομές πεζοπορίας στη Σαμοθράκη" },
+      layout: "grid",
+      items: [
+        {
+          title: { en: "Fonias River Gorge", el: "Φαράγγι Φονιά" },
+          text: { en: "4km return, 1.5–2hr. Moderate. Boulder scramble with river crossings to the 12m waterfall and natural pool. Footwear with grip essential. Avoid after rain.", el: "4χλμ, 1.5-2 ώρες. Μέτριας δυσκολίας. Απαιτεί παπούτσια με κράτημα." }
+        },
+        {
+          title: { en: "Mount Fengari Ascent", el: "Ανάβαση Φεγγαριού" },
+          text: { en: "16km return, 8–10hr. Demanding. Highest peak in the Aegean at 1,611m. 2.5L water, warm layers essential. June–September only.", el: "16χλμ, 8-10 ώρες. Απαιτητική. Νερό 2,5L, ζεστά ρούχα. Ιούνιο-Σεπτέμβριο." }
+        },
+        {
+          title: { en: "Kremasto Nero Waterfall", el: "Καταρράκτης Κρεμαστό Νερό" },
+          text: { en: "1.5km return, 30–45min. Easy. Short, well-marked path suitable for families near Therma.", el: "1,5χλμ, 30-45 λεπτά. Εύκολη. Σύντομη διαδρομή κατάλληλη για οικογένειες." }
+        },
+        {
+          title: { en: "Therma to Hora Path", el: "Μονοπάτι Θερμά-Χώρα" },
+          text: { en: "8km one way, 2.5–3hr. Easy–Moderate. The old mule path through chestnut groves.", el: "8χλμ, 2.5-3 ώρες. Εύκολη-Μέτρια. Το παλιό μονοπάτι μέσα από καστανιές." }
+        },
+        {
+          title: { en: "Vatos River Pools", el: "Πισίνες Βάτου" },
+          text: { en: "Variable, 2–4hr. Moderate. Quieter alternative to Fonias on the southern slope.", el: "2-4 ώρες. Μέτρια. Ήσυχη εναλλακτική του Φονιά." }
+        },
+        {
+          title: { en: "Sanctuary Valley Circuit", el: "Περίπατος κοιλάδας Ιερού" },
+          text: { en: "3km circuit, 1–1.5hr. Easy. Walk through the archaeological site and plane tree valley.", el: "3χλμ, 1-1.5 ώρες. Εύκολη. Μέσα από τον αρχαιολογικό χώρο." }
+        },
+      ]
+    },
+    {
+      title: { en: "What to eat and drink", el: "Τι να φας και να πιεις" },
+      layout: "grid",
+      items: [
+        {
+          title: { en: "Goat and lamb from mountain pastures", el: "Κατσίκι και αρνί από ορεινά βοσκοτόπια" },
+          text: { en: "Free-ranging goats graze on wild herbs at 400–1,200m, producing meat of exceptional flavour. Slow-roasted or grilled — the island's finest food.", el: "Κατσίκια ελεύθερης βοσκής που τρέφονται με άγρια βότανα." }
+        },
+        {
+          title: { en: "Fresh-caught north Aegean fish", el: "Φρέσκο ψάρι βορείου Αιγαίου" },
+          text: { en: "Kamariotissa's fishing boats supply daily catches. Bluefish, red mullet, sea bass — fish here is a local food, not a tourist luxury.", el: "Τα ψαροκάικα της Καμαριώτισσας προμηθεύουν καθημερινά φρέσκο ψάρι." }
+        },
+        {
+          title: { en: "Samothraki honey", el: "Μέλι Σαμοθράκης" },
+          text: { en: "Produced from wild thyme, heather and mountain herbs — intensely aromatic, dark, complex. Produced in very small quantities.", el: "Παράγεται από θυμάρι, ρείκι και βουνίσια βότανα." }
+        },
+        {
+          title: { en: "Tsipouro at the Hora kafeneion", el: "Τσίπουρο στο καφενείο της Χώρας" },
+          text: { en: "Locally produced tsipouro served with olives, cheese, nuts. Drunk slowly under the plane tree.", el: "Τοπικό τσίπουρο με ελιές, τυρί, ξηρούς καρπούς." }
+        },
+      ]
+    },
+    {
+      title: { en: "Practical tips for Samothraki", el: "Πρακτικές συμβουλές για τη Σαμοθράκη" },
+      layout: "list",
+      alert: {
+        en: "Samothraki has a specific quality that no travel writing fully captures. The first day is often difficult — the ferry is rough, the port underwhelming, the accommodation simple. By the third day something has shifted. Stay long enough for the island to reveal itself.",
+        el: "Η Σαμοθράκη έχει μια ποιότητα που δεν αποκαλύπτεται την πρώτη μέρα. Μείνετε αρκετά για να σας αποκαλυφθεί."
+      },
+      items: [
+        {
+          title: { en: "Getting there — ferry only", el: "Πώς θα πας — μόνο πλοίο" },
+          text: { en: "Samothraki has no airport. Primary connection: ferry from Alexandroupoli (2hr). Closest airport is Alexandroupoli (direct flights from Athens). Book tickets in advance for July and August.", el: "Η Σαμοθράκη δεν έχει αεροδρόμιο. Πλοίο από Αλεξανδρούπολη (2 ώρες)." }
+        },
+        {
+          title: { en: "Do I need a car?", el: "Χρειάζομαι αυτοκίνητο;" },
+          text: { en: "Yes — for meaningful exploration. Car hire available at the port. Book in advance in summer. A small car covers all paved roads.", el: "Ναι — για σημαντική εξερεύνηση. Ενοικίαση στο λιμάνι." }
+        },
+        {
+          title: { en: "Where to base yourself", el: "Πού να μείνεις" },
+          text: { en: "Therma for nature-focused visitors (proximity to springs, Fonias, mountain). Kamariotissa for ferry convenience. The Hora for atmosphere. Camping for the finest outdoor experience.", el: "Θερμά για φύση. Καμαριώτισσα για άνεση. Χώρα για ατμόσφαιρα." }
+        },
+        {
+          title: { en: "How many days?", el: "Πόσες μέρες;" },
+          text: { en: "Four days minimum. Six to seven days allows the Fengari ascent, south coast, Vatos, and a longer Sanctuary visit.", el: "Τέσσερις μέρες minimum. Έξι με επτά μέρες επιτρέπουν όλες τις δραστηριότητες." }
+        },
+        {
+          title: { en: "What to pack", el: "Τι να πάρεις μαζί σου" },
+          text: { en: "Trail shoes, warm layers, waterproof layer, headlamp, water bottles (min 2L), cash. Download offline maps — the Fonias gorge has no mobile signal.", el: "Παπούτσια πεζοπορίας, ζεστά ρούχα, φακός, νερό, μετρητά." }
+        },
+      ]
+    },
+    {
+      layout: "faq",
+      title: { en: "FAQ about Samothraki", el: "Συχνές ερωτήσεις για τη Σαμοθράκη" },
+      items: [
+        {
+          title: { en: "What is the Winged Victory of Samothrace and why is it in the Louvre?", el: "Τι είναι η Νίκη της Σαμοθράκης και γιατί είναι στο Λούβρο;" },
+          text: { en: "The Winged Victory (Nike of Samothrace) is a Hellenistic marble sculpture created around 190 BC to celebrate a naval victory. It was placed at the Sanctuary of the Great Gods. Discovered in 1863 by Charles Champoiseau, it was transported to the Louvre where it remains today. The carved ship's prow base is in the Samothraki Archaeological Museum.", el: "Η Νίκη της Σαμοθράκης είναι ένα ελληνιστικό μάρμαρο που δημιουργήθηκε γύρω στο 190 π.Χ. Ανακαλύφθηκε το 1863 και μεταφέρθηκε στο Λούβρο." }
+        },
+        {
+          title: { en: "Is the Fonias waterfall walk suitable for children?", el: "Είναι η διαδρομή Φονιά κατάλληλη για παιδιά;" },
+          text: { en: "For older children (10+) with outdoor experience, yes — with supervision. The Kremasto Nero waterfall near Therma is a safer alternative for younger children with a short, easy path and shallow pool.", el: "Για μεγαλύτερα παιδιά (10+) με επίβλεψη, ναι. Το Κρεμαστό Νερό είναι ασφαλέστερη εναλλακτική." }
+        },
+        {
+          title: { en: "How difficult is the ascent of Mount Fengari?", el: "Πόσο δύσκολη είναι η ανάβαση στο Φεγγάρι;" },
+          text: { en: "Demanding but does not require technical equipment in summer. The ascent gains 1,400m from Therma; round trip takes 8–10 hours.", el: "Απαιτητική αλλά δεν χρειάζεται τεχνικό εξοπλισμό το καλοκαίρι. Διάρκεια 8-10 ώρες." }
+        },
+        {
+          title: { en: "What were the Samothracian Mysteries?", el: "Τι ήταν τα Σαμοθρακικά Μυστήρια;" },
+          text: { en: "The Samothracian Mysteries were a secret initiation rite at the Sanctuary of the Great Gods. Initiation was believed to confer divine protection at sea. Philip II of Macedon came here and met Olympias. The specific rites remain unknown as initiates were sworn to silence.", el: "Τα Σαμοθρακικά Μυστήρια ήταν μια μυστική τελετή μύησης. Ο Φίλιππος Β' ήρθε εδώ και γνώρισε την Ολυμπιάδα." }
+        },
+        {
+          title: { en: "Can I visit Samothraki as a day trip?", el: "Μπορώ να επισκεφθώ τη Σαμοθράκη ως ημερήσια εκδρομή;" },
+          text: { en: "Technically yes — the ferry from Alexandroupoli takes 2 hours each way. In practice, a day trip gives time for only the Sanctuary or the Fonias walk. Samothraki rewards multi-day stays.", el: "Τεχνικά ναι — αλλά μια ημερήσια εκδρομή δίνει χρόνο μόνο για το Ιερό ή τον Φονιά." }
+        },
+        {
+          title: { en: "Is Samothraki good in September?", el: "Είναι καλή η Σαμοθράκη τον Σεπτέμβριο;" },
+          text: { en: "September is arguably the finest month — summer crowds gone, rivers still running, sea at its warmest, mountain clarity for the Fengari ascent.", el: "Ο Σεπτέμβριος είναι ίσως ο καλύτερος μήνας." }
+        },
+      ]
+    },
+  ],
 };

@@ -1,0 +1,79 @@
+{
+  "id": "ikaria",
+  "slug": "ikaria",
+  "name": "Ikaria",
+  "type": "island",
+  "coordinates": { "lat": 37.6, "lng": 26.3 },
+  "scores": {
+    "family": { "value": 7, "reason": "Quiet beaches, traditional villages, safe environment" },
+    "couples": { "value": 8, "reason": "Blue Zone mystique, thermal springs, wild landscapes" },
+    "nightlife": { "value": 3, "reason": "Panigiri festivals are the main event — no club scene" },
+    "food": { "value": 9, "reason": "Blue Zone diet, wild greens, local wine and honey" },
+    "beaches": { "value": 7, "reason": "Seychelles Beach, Nas, Messakti — varied and beautiful" },
+    "walking": { "value": 7, "reason": "Mountainous terrain, coastal trails, village walks" }
+  },
+  "content": {
+    "quick_summary": {
+      "en": "One of the world's five Blue Zones — where people live past 90 as a matter of course. Wild nature, thermal springs, all-night panigiri festivals, Seychelles Beach, and a pace of life unlike anywhere else in Greece.",
+      "el": "Μία από τις πέντε Μπλε Ζώνες του κόσμου — όπου οι άνθρωποι ζουν πάνω από 90 ως φυσιολογικό. Άγρια φύση, ιαματικές πηγές, πανηγύρια, παραλία Σεϋχέλλες."
+    },
+    "pros": [
+      "One of only five Blue Zones worldwide — unparalleled longevity culture",
+      "Panigiri festivals — the most authentic community celebrations in Greece",
+      "Thermal springs at Therma — used therapeutically since antiquity",
+      "Seychelles Beach — exotic turquoise water, among the finest in the Aegean",
+      "Traditional Ikarian diet — wild greens, legumes, olive oil, local wine",
+      "Christos Raches — the village that wakes at midnight, a completely unique Greek experience"
+    ],
+    "cons": [
+      "Remote — 8–10 hour ferry from Piraeus, small airport with limited flights",
+      "Mountainous terrain can be challenging for less mobile visitors",
+      "Limited nightlife outside the panigiri season",
+      "Minimal luxury accommodation options",
+      "Car essential for exploring the island properly",
+      "Summer Meltemi wind can affect northern beaches"
+    ],
+    "insider_tips": [
+      "Plan your trip around a panigiri — ask locals for dates, they are the island's cultural highlight",
+      "Eat at the taverna at Nas beach — grilled fish with Ikarian wine at sunset is unforgettable",
+      "Visit Christos Raches after midnight when the village comes alive",
+      "Skip the formal spa facilities at Therma — swim where the hot springs meet the cold sea",
+      "Book ferry and accommodation months ahead for August when the island is busiest",
+      "Take the hiking path between Armenistis and Nas along the coast — 45 minutes of extraordinary views"
+    ],
+    "mistakes_to_avoid": [
+      "Not renting a car — Ikaria is too large and mountainous to explore on foot or by bus",
+      "Skipping the panigiri — it is the single most authentic cultural experience on the island",
+      "Treating Seychelles Beach as a casual visit — it requires effort to reach",
+      "Expecting Cycladic whitewashed architecture — Ikaria's villages are stone and terracotta",
+      "Ignoring the mountain villages in favour of only the coast",
+      "Not trying local honey and wild greens before leaving"
+    ]
+  },
+  "pricing_base": {
+    "budget_daily": 35,
+    "mid_daily": 60,
+    "luxury_daily": 130
+  },
+  "seasonality": {
+    "january": { "temp": 10, "price_multiplier": 0.4 },
+    "february": { "temp": 10, "price_multiplier": 0.4 },
+    "march": { "temp": 13, "price_multiplier": 0.5 },
+    "april": { "temp": 17, "price_multiplier": 0.6 },
+    "may": { "temp": 22, "price_multiplier": 0.8 },
+    "june": { "temp": 27, "price_multiplier": 1.0 },
+    "july": { "temp": 30, "price_multiplier": 1.3 },
+    "august": { "temp": 30, "price_multiplier": 1.4 },
+    "september": { "temp": 26, "price_multiplier": 1.1 },
+    "october": { "temp": 20, "price_multiplier": 0.7 },
+    "november": { "temp": 15, "price_multiplier": 0.5 },
+    "december": { "temp": 12, "price_multiplier": 0.4 }
+  },
+  "image": "/images/ikaria.webp",
+  "guideLinks": [
+    {
+      "href": "/travel-info/hidden-greek-islands",
+      "label": { "en": "Hidden Greek Islands Guide", "el": "Οδηγός Κρυμμένων Νησιών" }
+    }
+  ]
+}
