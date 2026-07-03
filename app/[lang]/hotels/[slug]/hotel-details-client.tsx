@@ -63,6 +63,7 @@ const STAY22_EMBEDS: Record<string, string> = {
     andros: "https://stay22.com/embed/6a379b93f2f946e502905fa4",
     nafpaktos: "https://stay22.com/embed/6a37a7c0f2f946e5029094ce",
     kea: "https://stay22.com/embed/6a3f79ab1c8b38e97c6828b1",
+    samothraki: "https://stay22.com/embed/6a47c03dace97994fbfc31fe",
 };
 
 const HOTEL_NAMES: Record<string, string[]> = {
@@ -110,7 +111,8 @@ const HOTEL_NAMES: Record<string, string[]> = {
   karpathos: ["Alimounda Mare Hotel", "Konstantinos Palace", "CHC Sound of the Sea", "Poseidon Blue Gastronomy Hotel", "Hotel Atlantis", "Astra Studios", "SOPHID Wellness Suites", "Almi Luxury Rooms", "Casa Garden", "Olympos Studios", "Argo Hotel", "Alona Luxury Villas", "Arkasa Bay Hotel", "Hotel Finiki View", "Arhontiko Hotel", "Sunset Studio", "Olympos Archipelagos", "Aphrodite Hotel"],
    samos: ["Blue Island", "Hotel Vathy", "Anthemis", "Kokkari Beach", "Samos Sun"],
    chios: ["Grecian Castle", "Chios Chandris Hotel", "City Inn", "City Point", "Erytha Hotel & Resort", "Aegean Dream Hotel", "Melia Sol Art", "Sunset Hotel", "Efta Anemi", "Archontiki Riziko", "Mouzaliko Mansion", "Voulamandis House", "Pyrgos Rodocanachi", "Lida Mary", "Mesta Mastic", "Chrisyis Traditional Guest House", "Emporios Bay Hotel"],
-   nafpaktos: ["Nafpaktos Boutique Hotel", "Lena's Nest Nafpaktos", "Akti", "Ξενοδοχείο Ναύπακτος", "Battaglia di Lepanto", "View By the Castle Nafpaktos"],
+    nafpaktos: ["Nafpaktos Boutique Hotel", "Lena's Nest Nafpaktos", "Akti", "Ξενοδοχείο Ναύπακτος", "Battaglia di Lepanto", "View By the Castle Nafpaktos"],
+    samothraki: ["Karydies Hotel", "Hotel Katerina", "Hotel Akropolis", "Therma Campground"],
 };
 
 function getStay22Url(slug: string): string {

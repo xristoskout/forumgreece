@@ -4234,6 +4234,127 @@ export const hotels: HotelCard[] = [
     }
   },
   {
+    slug: "samothraki",
+    name: "Where to Stay in Samothraki",
+    place: "Samothraki — North Aegean",
+    info: {
+      en: "A complete guide to the best areas and accommodation on one of Greece's most wild and unspoiled islands — from the port of Kamariotissa and the thermal springs of Therma to the medieval Hora, the Sanctuary of the Great Gods and the island's extraordinary network of river gorges and waterfall pools.",
+      el: "Ένας πλήρης οδηγός για τις καλύτερες περιοχές και καταλύματα σε ένα από τα πιο άγρια και ανέγγιχτα νησιά της Ελλάδας — από το λιμάνι της Καμαριώτισσας και τις ιαματικές πηγές των Θερμών μέχρι τη μεσαιωνική Χώρα, το Ιερό των Μεγάλων Θεών και το εκπληκτικό δίκτυο φαραγγιών και καταρρακτών.",
+    },
+    image: "/images/samothraki.webp",
+    overview: {
+      en: "Samothraki is unlike any other Greek island. There is no whitewashed Cycladic architecture, no sandy beach resorts, no international hotel chains, no all-inclusives, no beach clubs, no nightlife to speak of. What the island offers instead — offered since antiquity, when it was one of the most sacred sites in the ancient Greek world — is a quality of raw, elemental wildness that no amount of tourism development has ever managed to dilute. Mount Fengari rises 1,611 metres of ancient granite directly from the sea — the highest peak in the Aegean — and its flanks are cut by a series of river gorges with plunging waterfalls, deep green pools, and an almost prehistoric quality of silence and power.",
+      el: "Η Σαμοθράκη δεν μοιάζει με κανένα άλλο ελληνικό νησί. Δεν υπάρχει ασβεστωμένη κυκλαδίτικη αρχιτεκτονική, δεν υπάρχουν παραθαλάσσια θέρετρα, διεθνείς αλυσίδες ξενοδοχείων ή νυχτερινή ζωή. Αυτό που προσφέρει το νησί — από την αρχαιότητα που ήταν ένας από τους ιερότερους τόπους του ελληνικού κόσμου — είναι μια ποιότητα ακατέργαστης, στοιχειώδους αγριότητας. Το όρος Φεγγάρι υψώνεται 1.611 μέτρα αρχαίου γρανίτη κατευθείαν από τη θάλασσα.",
+    },
+    description: {
+      en: "Samothraki operates on a fundamentally different logic from the standard Greek island model. There is a single small port (Kamariotissa), one functional town (the Hora, the medieval hilltop capital), a thermal spring settlement (Therma), a few scattered beach areas (Lakkoma, Pachia Ammos, Platia), and the extraordinary Sanctuary of the Great Gods — the ancient mystery cult site where the Winged Victory was discovered — sitting in a valley near the north coast. Everything else is mountain, river, forest, waterfall, and the particular quality of northern Aegean light that changes the colour of the granite hour by hour.\n\nAccommodation on Samothraki reflects the island's character: simple, functional, family-run, and priced well below most Greek island equivalents. There are no luxury hotels in any conventional sense. What exists is a scatter of small hotels, guesthouses, studios and rooms in the port, the Hora and Therma, supplemented by one of the most atmospheric camping scenes in Greece — the valley campsites near the Sanctuary and the coast are an institution among Greek and international travellers who return year after year.\n\nA rental car is essential for any meaningful exploration of the island. Samothraki is approximately 28 kilometres long and 18 kilometres wide, but the mountain road across the island's interior is slow, winding and frequently steep. Without a car you are limited to the immediate Kamariotissa–Hora–Therma triangle and cannot reach the river gorges, the waterfall pools or the best beaches. Bring cash: there is one ATM at the port and it frequently runs out in summer.\n\nThe single most important piece of accommodation advice for Samothraki is to book well ahead for July and August — not because the island is crowded by Santorini standards, but because the total accommodation stock is genuinely small and both indoor rooms and campsites fill entirely. June and September offer the best balance of open facilities, reliable weather and quieter conditions. May and October are possible but many hotels, tavernas and facilities operate on a seasonal schedule and may not be fully open until mid-June.\n\nSamothraki is not a beach destination in the conventional sense, though it has decent beaches. It is a destination for hikers, waterfall swimmers, archaeology enthusiasts, campers, and travellers who understand that the most powerful Greek island experiences are not necessarily the most comfortable ones. The accommodation here supports this type of travel: it is honest, practical, often basic, and occasionally genuinely memorable.",
+      el: "Η Σαμοθράκη λειτουργεί με εντελώς διαφορετική λογική από το τυπικό ελληνικό νησιωτικό μοντέλο. Υπάρχει ένα μικρό λιμάνι (Καμαριώτισσα), μια λειτουργική πόλη (Χώρα), ένας οικισμός με ιαματικές πηγές (Θέρμα), μερικές διάσπαρτες παραλίες και το εκπληκτικό Ιερό των Μεγάλων Θεών. Όλα τα υπόλοιπα είναι βουνό, ποτάμι, δάσος, καταρράκτης.\n\nΗ διαμονή στη Σαμοθράκη αντικατοπτρίζει τον χαρακτήρα του νησιού: απλή, λειτουργική, οικογενειακή και με τιμές πολύ κάτω από τα αντίστοιχα κυκλαδίτικα νησιά. Δεν υπάρχουν πολυτελή ξενοδοχεία. Υπάρχουν μικρά ξενοδοχεία, ξενώνες, στούντιο και κάμπινγκ. Η ενοικίαση αυτοκινήτου είναι απαραίτητη. Η πιο σημαντική συμβουλή είναι να κλείσετε έγκαιρα για Ιούλιο-Αύγουστο.",
+    },
+    features: {
+      en: [
+        "Kamariotissa (Port & Practical Base)",
+        "Therma (Hot Springs & River Gorges)",
+        "Hora (Medieval Hilltop Capital)",
+        "Paleopoli — Sanctuary of the Great Gods",
+        "Lakkoma & Pachia Ammos (Beaches)",
+        "Mount Fengari — highest Aegean peak (1,611m)",
+        "Fonias River & 12m Waterfall",
+        "Gria Vathra & Kremastos Nerá waterfalls",
+        "Camping culture — valley campsites",
+        "Winged Victory of Samothrace original home"
+      ],
+      el: [
+        "Καμαριώτισσα (Λιμάνι & Πρακτική Βάση)",
+        "Θέρμα (Ιαματικές Πηγές & Φαράγγια)",
+        "Χώρα (Μεσαιωνική Πρωτεύουσα)",
+        "Παλαιόπολη — Ιερό των Μεγάλων Θεών",
+        "Λάκκωμα & Παχιά Άμμος (Παραλίες)",
+        "Όρος Φεγγάρι — ψηλότερη κορυφή Αιγαίου",
+        "Φαράγγι Φονιά & Καταρράκτης 12μ",
+        "Γριά Βαθρά & Κρεμαστός Νερά",
+        "Κάμπινγκ — θεσμός στην Ελλάδα",
+        "Βάση της Νίκης της Σαμοθράκης"
+      ]
+    },
+    sections: [
+      {
+        title: { en: "1. Kamariotissa — the Port, the Ferry and the Most Practical Base", el: "1. Καμαριώτισσα — Το Λιμάνι, το Πλοίο και η Πιο Πρακτική Βάση" },
+        content: {
+          en: "Kamariotissa is the only ferry port on Samothraki and the island's commercial centre — a small waterfront settlement oriented around the harbour, with a handful of hotels, rooms, cafés, tavernas, car rental agencies, a pharmacy, the single ATM on the island, and a supermarket. Every visitor arrives here by default; for many, it is where they stay as well, because the logic of the island's infrastructure makes Kamariotissa the most practical base for exploring without excessive daily driving.\n\nThe port sits on the west coast, facing the Thracian mainland. The ferry from Alexandroupoli takes approximately 2–3 hours depending on the vessel. Kamariotissa itself is not a beautiful town — it functions as a working port and has the unpolished, practical character that implies — but it is well-positioned relative to the island's main sights: the Hora is 6km east up the mountain road, the Sanctuary of the Great Gods at Paleopoli is 12km east along the coast road, and Therma and the river gorge trailheads are 15–20 minutes north by car.\n\nAccommodation in Kamariotissa is the most varied on the island, though still modest by any comparative standard: small family hotels with functional rooms, studios with kitchenettes for self-catering, and a handful of guesthouses with basic but clean accommodation. Prices are the lowest on the island, reflecting the town's lack of scenic charisma. Staying in Kamariotissa works well for ferry passengers arriving late, departing early, or using the port as a base for day trips across the island.\n\nHonest note: Kamariotissa is the least atmospheric base on Samothraki. The waterfront is pleasant enough for an evening taverna meal but the town has no real charm in the way the Hora or Therma do. For travellers who prioritise scenery and atmosphere over practical convenience, Kamariotissa is a functional first or last night stop rather than a multi-day base.",
+          el: "Η Καμαριώτισσα είναι το μοναδικό λιμάνι της Σαμοθράκης και το εμπορικό κέντρο του νησιού. Κάθε επισκέπτης φτάνει εδώ. Το λιμάνι βρίσκεται στη δυτική ακτή. Το πλοίο από την Αλεξανδρούπολη διαρκεί περίπου 2-3 ώρες. Η Καμαριώτισσα δεν είναι όμορφη πόλη — λειτουργεί ως λιμάνι — αλλά είναι καλά τοποθετημένη για τα κύρια αξιοθέατα. Η διαμονή εδώ είναι η πιο ποικίλη στο νησί αλλά παραμένει λιτή. Οι τιμές είναι οι χαμηλότερες στο νησί."
+        }
+      },
+      {
+        title: { en: "2. Therma — Hot Springs, River Gorges & the Most Atmospheric Base", el: "2. Θέρμα — Ιαματικές Πηγές, Φαράγγια & η Πιο Ατμοσφαιρική Βάση" },
+        content: {
+          en: "Therma is the settlement that best captures the particular character of Samothraki. Set at the mouth of a river gorge on the northwest coast, a short drive north from Kamariotissa, it is a scatter of buildings — tavernas, a bakery, a few minimarkets, small hotels, campsites — arranged around natural thermal springs that empty into the sea and a series of remarkable inland river pools. The atmosphere here is genuinely unlike anywhere else in Greece: barefoot travellers, campers, hikers and families sharing a quality of focused relaxation that no resort could manufacture.\n\nThe main attraction of Therma is the river itself — the Therma River (also known as Kremastos Nerá) which descends from Mount Fengari through a series of pools and small waterfalls accessible on foot from the village. The gorge walk begins behind the campsite and follows the river upstream through granite channels, deep green pools and overhung rock, with the sound of falling water and the scent of mountain herbs the only company. The natural hot springs at the mouth of the river — where hot mineral water meets the cold Aegean — have been used for therapeutic bathing since antiquity.\n\nAccommodation in Therma is limited — a handful of small hotels, family-run studios, and rooms above tavernas — supplemented by two of the best campsites in the Aegean (Therma Campground and the nearby Paleopoli campground). Book well ahead for July and August; both indoor accommodation and camping spots fill completely.\n\nHonest note: Therma is the most atmospheric base on the island but also the most basic. Rooms are simple, prices are low, and the evening scene revolves entirely around campsites, taverna dinners and the hot springs at the river mouth. There is no nightlife, no formal entertainment and no luxury infrastructure of any kind. This is precisely its appeal.",
+          el: "Τα Θέρμα είναι ο οικισμός που αποτυπώνει καλύτερα τον ιδιαίτερο χαρακτήρα της Σαμοθράκης. Βρίσκεται στο στόμιο ενός φαραγγιού στη βορειοδυτική ακτή. Η ατμόσφαιρα εδώ μοιάζει με κανένα άλλο μέρος στην Ελλάδα. Το κύριο αξιοθέατο είναι το ποτάμι — η Kremastos Nerá — που κατεβαίνει από το Φεγγάρι μέσα από μια σειρά πισινών και μικρών καταρρακτών. Η διαμονή εδώ είναι λιτή και βασική. Κανένα nightlife, καμία πολυτέλεια. Αυτή είναι ακριβώς η γοητεία του."
+        }
+      },
+      {
+        title: { en: "3. Hora (Samothraki Town) — the Medieval Hilltop Capital", el: "3. Χώρα — Η Μεσαιωνική Πρωτεύουσα" },
+        content: {
+          en: "The Hora is the island's capital — a fortified medieval settlement perched on a hilltop at approximately 200 metres elevation, 6km east of Kamariotissa. It is the most conventionally attractive base on Samothraki: a network of cobbled lanes, stone houses with red tile roofs, small churches, a Genoese-era fortress at the summit, and squares with plane trees and cafés that offer sweeping views across the north coast to the sea.\n\nThe Hora has a handful of excellent tavernas — most notably the ones in the main square and the lanes branching off it — some small shops, a bakery, a few cafés that function as the island's most concentrated evening social scene, and a small folklore museum. The fortress at the top of the hill, built by the Gattilusi family in the 15th century, offers panoramic views in all directions and is worth the climb at sunset.\n\nAccommodation in the Hora is limited and concentrated: a few family-run guesthouses and small hotels set into the old stone houses, a handful of studios with views across the coast, and — increasingly — restored village houses available as self-catering rentals. Quality varies significantly; the best properties retain the original stone architecture and offer terraces with sea views. The worst are simple rooms with dated furniture and thin walls.\n\nHonest note: The Hora is the best base for travellers who want the island's most attractive village atmosphere combined with access to Kamariotissa and the port (6km downhill, about 10 minutes by car). The road up from the port is winding but short. Be aware that the Hora is quiet — genuinely quiet — after 10pm. For anyone wanting a comfortable, atmospheric base that is not as basic as Therma, this is the strongest choice.",
+          el: "Η Χώρα είναι η πρωτεύουσα του νησιού — ένας οχυρωμένος μεσαιωνικός οικισμός σε λόφο 200 μέτρων. Είναι η πιο συμβατικά ελκυστική βάση στη Σαμοθράκη. Η διαμονή στη Χώρα είναι περιορισμένη: μερικοί οικογενειακοί ξενώνες, μικρά ξενοδοχεία και παραδοσιακά σπίτια. Η Χώρα είναι ήσυχη — πραγματικά ήσυχη — μετά τις 10 μ.μ."
+        }
+      },
+      {
+        title: { en: "4. Paleopoli — the Sanctuary, the Campsites & the Valley", el: "4. Παλαιόπολη — Το Ιερό, τα Κάμπινγκ & η Κοιλάδα" },
+        content: {
+          en: "Paleopoli is not a village in the conventional sense — it is the valley on the north coast that contains the Sanctuary of the Great Gods, and its accommodation is almost entirely campsite-based. The Sanctuary itself is one of the most important archaeological sites in Greece: a vast complex of temples, altars, stoas and theatre buildings set in a pine-forested valley by the sea, where the mystery cult of the Great Gods (the Kabeiroi) was practised for over a thousand years. It was here that the Winged Victory of Samothrace — now in the Louvre — was discovered in 1863.\n\nThe valley floor below the Sanctuary contains two of the island's most established campsites — Paleopoli Campground and another nearby — which together form the centre of Samothraki's legendary camping culture. These are not boutique glamping operations; they are straightforward, well-run campsites under plane trees by the river, with basic facilities, a communal atmosphere and direct walking access to both the Sanctuary and the beach. For a generation of Greek and European travellers, camping at Paleopoli has been a rite of passage: the combination of sleeping under the stars, swimming in the Fonias river pools and walking through the Sanctuary at dawn is genuinely transformative.\n\nFor non-campers, Paleopoli has a small number of basic rooms and studios at the valley entrance. The Fonias River trail — the island's most famous gorge walk, leading to a 12-metre waterfall with a deep swimming hole — begins from the road behind the Sanctuary. The walk takes approximately 45 minutes each way and requires crossing the river multiple times; wear footwear that can get wet.\n\nHonest note: Paleopoli is not a base for travellers who need hotel amenities, reliable WiFi, restaurants beyond the campsite taverna, or privacy. It is the most special place to stay on Samothraki for travellers who camp and the least suitable for those who do not. If you are not camping, consider basing yourself in Therma or the Hora and driving to the Sanctuary for a full morning visit.",
+          el: "Η Παλαιόπολη δεν είναι χωριό — είναι η κοιλάδα που περιέχει το Ιερό των Μεγάλων Θεών. Η διαμονή εδώ είναι σχεδόν αποκλειστικά σε κάμπινγκ. Το Ιερό είναι ένας από τους σημαντικότερους αρχαιολογικούς χώρους στην Ελλάδα. Εδώ ανακαλύφθηκε η Νίκη της Σαμοθράκης το 1863. Η κοιλάδα κάτω από το Ιερό περιέχει τα πιο γνωστά κάμπινγκ του νησιού. Για όσους δεν κάνουν κάμπινγκ, υπάρχουν ελάχιστα βασικά δωμάτια. Η Παλαιόπολη δεν είναι βάση για όσους χρειάζονται ανέσεις ξενοδοχείου."
+        }
+      },
+      {
+        title: { en: "5. Lakkoma, Pachia Ammos & the Beaches — Summer swimming bases", el: "5. Λάκκωμα, Παχιά Άμμος & οι Παραλίες" },
+        content: {
+          en: "Samothraki's beaches are decent rather than spectacular by Greek island standards — the island's strength lies in its mountain and river landscape rather than its coastline — but there are several areas where staying close to the sea makes sense for a summer swimming holiday.\n\nLakkoma, on the northwest coast between Kamariotissa and Therma, is the island's most developed beach area: a long pebble-and-sand beach with a handful of tavernas, sunbeds and accommodation options in the form of studios and apartments set back from the shore. The water is clear and clean, the beach is well-oriented for sunsets, and the location is convenient for both the port and Therma.\n\nPachia Ammos (\"Thick Sand\"), on the northeast coast beyond Paleopoli, is the finest sand beach on the island — a long stretch of golden sand accessible only by a dirt road, with no organised facilities and very few people even in peak season. There is basic accommodation in the nearby area — a handful of rooms and apartments — but no real village or infrastructure. This is a beach for those who want isolation, not amenities.\n\nPlatia Beach, at the mouth of the Fonias River, is a sheltered pebble cove adjacent to the Sanctuary valley, popular with campers and day-trippers who combine river gorge walking with a swim in the sea.\n\nHonest note: If your primary holiday priority is a beautiful beach within walking distance of your accommodation, Samothraki is the wrong island. The beaches here are pleasant but secondary to the mountains, rivers and archaeological sites. Consider basing yourself on Thassos or the Halkidiki mainland instead if beach quality is your main criterion.",
+          el: "Οι παραλίες της Σαμοθράκης είναι αξιοπρεπείς αλλά όχι θεαματικές. Το Λάκκωμα είναι η πιο ανεπτυγμένη παραλιακή περιοχή με ταβέρνες και ξαπλώστρες. Η Παχιά Άμμος είναι η καλύτερη αμμώδης παραλία, προσβάσιμη μόνο μέσω χωματόδρομου. Εάν η κύρια προτεραιότητά σας είναι η ωραία παραλία, η Σαμοθράκη είναι λάθος νησί."
+        }
+      }
+    ],
+    faq: [
+      {
+        q: { en: "How do I get to Samothraki?", el: "Πώς φτάνω στη Σαμοθράκη;" },
+        a: { en: "By ferry from Alexandroupoli (2–3 hours, year-round service with multiple departures weekly, increased frequency in summer). The ferry arrives at Kamariotissa. There are no flights to Samothraki. The nearest airport is Alexandroupoli (AXD), from which you take a taxi or bus to the port for the ferry crossing.", el: "Με πλοίο από την Αλεξανδρούπολη (2-3 ώρες). Δεν υπάρχουν πτήσεις. Το κοντινότερο αεροδρόμιο είναι της Αλεξανδρούπολης." }
+      },
+      {
+        q: { en: "Do I need a rental car on Samothraki?", el: "Χρειάζομαι ενοικίαση αυτοκινήτου στη Σαμοθράκη;" },
+        a: { en: "Yes — essential. Samothraki is larger than it appears on a map, the internal roads are winding and mountainous, and public transport is extremely limited. A car lets you reach the river gorges, the waterfall trailheads, the Sanctuary, the Hora, Therma and the beaches on your own schedule. Without a car you are effectively confined to the Kamariotissa–Hora–Therma triangle. Scooters and ATVs are also available but the mountain roads require caution.", el: "Ναι — απαραίτητο. Η Σαμοθράκη είναι μεγαλύτερη απ' ό,τι φαίνεται και τα λεωφορεία είναι περιορισμένα." }
+      },
+      {
+        q: { en: "What is the best time to visit Samothraki?", el: "Ποια είναι η καλύτερη εποχή για τη Σαμοθράκη;" },
+        a: { en: "June and September offer the best balance of warm weather, open facilities and fewer visitors. July and August are peak season — the campsites fill, the gorge trails are busiest and the island has its fullest energy, but accommodation must be booked well in advance. May is beautiful for hiking and waterfalls (the rivers are fuller) but many facilities are not yet open for the season. October is quiet and atmospheric but prone to early autumn storms.", el: "Ιούνιος και Σεπτέμβριος έχουν την καλύτερη ισορροπία. Ιούλιος και Αύγουστος είναι αιχμή. Μάιος είναι ωραίος για πεζοπορία." }
+      },
+      {
+        q: { en: "Is Samothraki good for camping?", el: "Είναι η Σαμοθράκη καλή για κάμπινγκ;" },
+        a: { en: "Samothraki has one of the most legendary camping scenes in Greece. The valley campsites near Paleopoli and Therma are institutionally important to generations of Greek and European travellers. Facilities are basic (cold showers, shared toilets, camp kitchens) but the setting — under plane trees by a river gorge, within walking distance of the Sanctuary and the hot springs — is unmatched anywhere in the Aegean. Camping equipment can be brought on the ferry; there is a small camping shop in Therma for supplies.", el: "Η Σαμοθράκη έχει μία από τις πιο θρυλικές σκηνές κάμπινγκ στην Ελλάδα, ιδιαίτερα στην Παλαιόπολη και τα Θέρμα." }
+      },
+      {
+        q: { en: "How many nights should I spend on Samothraki?", el: "Πόσες νύχτες να μείνω στη Σαμοθράκη;" },
+        a: { en: "A minimum of three nights, ideally four to five. The island reveals itself slowly — the first day is often disorienting (rough ferry, simple accommodation, no obvious resort infrastructure), the second day you start to find your rhythm, and by the third day the landscape begins to work its particular magic. Three nights gives you time for the Fonias gorge walk (half day), the Sanctuary (half day), one full mountain hike or waterfall circuit, and one beach day. Five nights allows a more relaxed pace with time for the Fengari summit hike and a day exploring both coasts.", el: "Τουλάχιστον τρεις νύχτες, ιδανικά τέσσερις με πέντε. Η Σαμοθράκη αποκαλύπτεται σιγά σιγά." }
+      },
+      {
+        q: { en: "What are the essential things to do in Samothraki?", el: "Ποια είναι τα απαραίτητα στη Σαμοθράκη;" },
+        a: { en: "Walk the Fonias River gorge to the 12m waterfall and swim in the pool below — this is the single best experience on the island. Visit the Sanctuary of the Great Gods — allow at least two hours, ideally early morning. Swim at the hot springs in Therma where the thermal water meets the sea. Climb to the Hora fortress for sunset. Walk the Gria Vathra gorge for a quieter, less crowded river experience. If you are a serious hiker, summit Mount Fengari (6–8 hours return, requires preparation, guide recommended in summer heat).", el: "Περπάτημα στο φαράγγι του Φονιά, επίσκεψη στο Ιερό, βουτιά στις ιαματικές πηγές, θέα ηλιοβασιλέματος από τη Χώρα." }
+      },
+      {
+        q: { en: "Is Samothraki suitable for families with children?", el: "Είναι η Σαμοθράκη κατάλληλη για οικογένειες;" },
+        a: { en: "It depends on the family. Children who enjoy outdoor activity — river walking, swimming in waterfalls, camping, hiking — will find Samothraki an extraordinary playground. Families seeking organised children's facilities, beach clubs, kids' menus, shallow sandy beaches or reliable evening entertainment should choose a different island. The river gorges require caution with young children (slippery rocks, cold water, uneven terrain). The best family base is Kamariotissa or Lakkoma for practical convenience.", el: "Εξαρτάται. Παιδιά που αγαπούν την υπαίθρια δραστηριότητα θα βρουν τη Σαμοθράκη εκπληκτική. Οικογένειες που θέλουν οργανωμένες εγκαταστάσεις πρέπει να επιλέξουν άλλο νησί." }
+      }
+    ],
+    seo: {
+      title: {
+        en: "Where to Stay in Samothraki | Best Areas & Hotels | GoGreeceNow",
+        el: "Πού να Μείνετε στη Σαμοθράκη | Καλύτερες Περιοχές & Ξενοδοχεία | GoGreeceNow"
+      },
+      description: {
+        en: "Find the best places to stay in Samothraki — from the port of Kamariotissa and the hot springs of Therma to the medieval Hora, the Sanctuary valley and the beach areas. Complete Samothraki accommodation guide with honest advice on areas, hotels and camping.",
+        el: "Βρείτε τα καλύτερα μέρη για διαμονή στη Σαμοθράκη — από το λιμάνι της Καμαριώτισσας και τις ιαματικές πηγές των Θερμών μέχρι τη μεσαιωνική Χώρα, την κοιλάδα του Ιερού και τις παραλίες."
+      }
+    }
+  },
+  {
     slug: "karpathos",
     name: "Where to Stay in Karpathos",
     place: "Karpathos — Dodecanese",
