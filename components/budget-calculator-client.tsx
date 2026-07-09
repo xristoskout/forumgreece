@@ -14,12 +14,10 @@ const CURRENCIES = { EUR: 1, USD: 1.05, GBP: 0.85, CNY: 7.6 };
 
 export default function BudgetCalculatorClient({ 
   pricingBase, 
-  seasonality = {}, 
-  name 
+  seasonality = {} 
 }: { 
   pricingBase: PricingBase, 
-  seasonality: Seasonality, 
-  name: string 
+  seasonality: Seasonality 
 }) {
   const [mounted, setMounted] = useState(false);
   const [days, setDays] = useState(3);
@@ -30,8 +28,11 @@ export default function BudgetCalculatorClient({
 
   useEffect(() => {
     const months = Object.keys(seasonality);
-    if (months.length > 0) setMonth(months[0]);
-    setMounted(true);
+    if (months.length > 0) {
+      setTimeout(() => setMonth(months[0]), 0);
+    }
+    const id = setTimeout(() => setMounted(true), 0);
+    return () => clearTimeout(id);
   }, [seasonality]);
 
   // Σταθερό height για αποφυγή hydration mismatch
@@ -54,7 +55,7 @@ export default function BudgetCalculatorClient({
     <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 max-w-lg">
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-xl font-bold">Budget Trip Planner</h2>
-        <select value={currency} onChange={(e) => setCurrency(e.target.value as any)} className="bg-slate-50 border rounded-lg p-1">
+        <select value={currency} onChange={(e) => setCurrency(e.target.value as 'EUR' | 'USD' | 'GBP' | 'CNY')} className="bg-slate-50 border rounded-lg p-1">
           <option value="EUR">EUR (€)</option>
           <option value="USD">USD ($)</option>
           <option value="GBP">GBP (£)</option>
@@ -83,7 +84,7 @@ export default function BudgetCalculatorClient({
         </div>
         <div>
           <label className="text-sm text-slate-500">Travel Style</label>
-          <select value={style} onChange={(e) => setStyle(e.target.value as any)} className="w-full p-2 border rounded-lg">
+          <select value={style} onChange={(e) => setStyle(e.target.value as 'budget' | 'mid' | 'luxury')} className="w-full p-2 border rounded-lg">
             <option value="budget">Budget</option>
             <option value="mid">Mid-range</option>
             <option value="luxury">Luxury</option>

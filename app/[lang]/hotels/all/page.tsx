@@ -3,7 +3,7 @@ import { hotels } from '../../../../lib/hotels-data';
 import SiteHeader from '../../../../components/site-header';
 import HotelsDirectoryClient from './hotels-directory-client';
 import { SITE_URL } from '../../../../lib/content';
-import { Lang, isLang } from '../../../../lib/locale';
+import { isLang } from '../../../../lib/locale';
 import { collectionPageSchema } from '../../../../lib/structured-data';
 
 type Props = {

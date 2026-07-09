@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo, useCallback } from "react";
+import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 function pathLabel(path: string): string {
@@ -43,7 +43,8 @@ function parseLinkSegments(text: string): LinkSegment[] {
 
 const linkBtnClass = 'inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-100 text-indigo-700 text-sm font-semibold hover:bg-indigo-200 transition-all mt-1 mx-0.5';
 
-function linkify(text: string, lang: string): React.ReactNode {
+function linkify(text: string, _lang: string): React.ReactNode {
+  void _lang;
   const segments = parseLinkSegments(text);
   const children: React.ReactNode[] = [];
   for (let i = 0; i < segments.length; i++) {
@@ -90,21 +91,6 @@ const MONTH_LABELS: Record<string, { en: string; el: string }> = {
   october: { en: "October", el: "Οκτώβριος" },
   november: { en: "November", el: "Νοέμβριος" },
   december: { en: "December", el: "Δεκέμβριος" },
-};
-
-const REGIONS: Record<string, { en: string; el: string }> = {
-  "Cyclades": { en: "Cyclades", el: "Κυκλάδες" },
-  "Crete": { en: "Crete", el: "Κρήτη" },
-  "Ionian Islands": { en: "Ionian Islands", el: "Ιόνια Νησιά" },
-  "North Aegean": { en: "North Aegean", el: "Βόρειο Αιγαίο" },
-  "Dodecanese": { en: "Dodecanese", el: "Δωδεκάνησα" },
-  "Attica": { en: "Attica", el: "Αττική" },
-  "Northern Greece": { en: "Northern Greece", el: "Βόρεια Ελλάδα" },
-  "Peloponnese": { en: "Peloponnese", el: "Πελοπόννησος" },
-  "Thessaly": { en: "Thessaly", el: "Θεσσαλία" },
-  "Epirus": { en: "Epirus", el: "Ήπειρος" },
-  "Sporades": { en: "Sporades", el: "Σποράδες" },
-  "Central Greece": { en: "Central Greece", el: "Στερεά Ελλάδα" },
 };
 
 const INTEREST_OPTIONS = [
@@ -179,6 +165,8 @@ export default function TripPlannerClient({
   const [destSearch, setDestSearch] = useState("");
   const [shareOpen, setShareOpen] = useState(false);
 
+  void SITE_URL; // suppress unused warning (available for future use)
+
   const grouped = useMemo(() => {
     const map: Record<string, Destination[]> = {};
     for (const d of destinations) {
@@ -232,10 +220,10 @@ export default function TripPlannerClient({
         try { const err = await res.json(); errMsg = err.error || errMsg; } catch {}
         throw new Error(errMsg);
       }
-      let data: any;
+      let data: Itinerary;
       try { data = await res.json(); } catch { throw new Error("Invalid response from server"); }
       setItinerary(data);
-    } catch (e: any) {
+    } catch (e: unknown) {
       setError(e.message || (lang === "el" ? "Αποτυχία δημιουργίας" : "Generation failed"));
     } finally {
       setLoading(false);

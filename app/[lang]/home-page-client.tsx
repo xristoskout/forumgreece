@@ -3,12 +3,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import SiteHeader from "../../components/site-header";
-import { Lang, withLang } from "../../lib/locale";
+import type { Lang } from "../../lib/locale";
 import { categories } from "../../lib/site-config";
 import { destinations } from "../../lib/destinations-data";
 import { food } from "../../lib/food-data";
 import { hotels } from "../../lib/hotels-data";
-import { travelInfoGuides } from "../../lib/travel-info-data";
 import { tours } from "../../lib/tours-data";
 import type { HomeContent } from "../../lib/home-translations";
 
@@ -39,10 +38,6 @@ export default function HomePageClient({
     return `/${locale}${cleanPath}`;
   }
 
-  function isExternalUrl(url: string) {
-    return /^https?:\/\//i.test(url);
-  }
-
   const quickFacts = [
     {
       value: "50+",
@@ -59,42 +54,6 @@ export default function HomePageClient({
     {
       value: lang === "en" ? "Trusted" : "Αξιόπιστο",
       label: { en: "by travelers", el: "από ταξιδιώτες" },
-    },
-  ];
-
-  const heroJumpLinks = [
-    {
-      label: { en: "Destination guides", el: "Οδηγοί προορισμών" },
-      href: withLang("/destinations"),
-      kind: "route" as const,
-    },
-    {
-      label: { en: "Greece Islands Map", el: "Χάρτης Νησιών" },
-      href: withLang("/travel-info/greece-islands-map-guide"),
-      kind: "route" as const,
-    },
-    {
-      label: { en: "How to get to Greece", el: "Πώς να έρθεις στην Ελλάδα" },
-      href: withLang("/travel-info/how-to-get-to-greece"),
-      kind: "route" as const,
-    },
-    {
-      label: { en: "Hotels in Greece", el: "Ξενοδοχεία στην Ελλάδα" },
-      href: withLang("/hotels"),
-      kind: "route" as const,
-    },
-    {
-      label: { en: "Tours in Greece", el: "Εκδρομές στην Ελλάδα" },
-      href: withLang("/tours/all"),
-      kind: "route" as const,
-    },
-    {
-      label: {
-        en: "Greek food guides",
-        el: "Οδηγοί ελληνικής γαστρονομίας",
-      },
-      href: "#food",
-      kind: "anchor" as const,
     },
   ];
 

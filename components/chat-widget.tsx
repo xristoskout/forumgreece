@@ -16,7 +16,8 @@ export default function ChatWidget() {
   const lang = pathname?.startsWith("/el") ? "el" : "en";
 
   useEffect(() => {
-    setMounted(true);
+    const id = setTimeout(() => setMounted(true), 0);
+    return () => clearTimeout(id);
   }, []);
 
   const { messages, sendMessage, status } = useChat({
@@ -134,7 +135,7 @@ export default function ChatWidget() {
                             <ReactMarkdown
                               key={index}
                               components={{
-                                a: ({ node, ...props }) => (
+                                a: ({ ...props }) => (
                                   <a 
                                     {...props} 
                                     className="text-amber-600 hover:text-amber-700 font-medium underline underline-offset-4 decoration-amber-600/30 hover:decoration-amber-600 transition-all"
@@ -142,7 +143,7 @@ export default function ChatWidget() {
                                     rel="noopener noreferrer"
                                   />
                                 ),
-                                p: ({ node, ...props }) => <p {...props} className="mb-2 last:mb-0" />
+                                p: ({ ...props }) => <p {...props} className="mb-2 last:mb-0" />
                               }}
                             >
                               {part.text}

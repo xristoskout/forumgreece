@@ -1,6 +1,7 @@
 const SITE_URL = "https://www.gogreecenow.com";
 
-export function jsonLd(data: Record<string, unknown>, lang: string) {
+export function jsonLd(data: Record<string, unknown>, _lang: string) {
+  void _lang;
   const json = JSON.stringify(data);
   return { __html: json };
 }

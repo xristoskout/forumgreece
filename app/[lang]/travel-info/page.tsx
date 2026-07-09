@@ -4,15 +4,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useMemo } from "react";
 import SiteHeader from "../../../components/site-header";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { type Lang } from "../../../lib/locale";
-import { siteBrand, siteBrandLine } from "../../../lib/site-config";
 import { travelInfoGuides } from "../../../lib/travel-info-data";
 import { faqPageSchema, breadcrumbSchema } from "../../../lib/structured-data";
 
 export default function TravelInfoHubPage() {
   const pathname = usePathname();
-  const router = useRouter();
 
   const lang: Lang = pathname.startsWith("/el") ? "el" : "en";
 
@@ -32,10 +30,6 @@ export default function TravelInfoHubPage() {
     }
 
     return `/${locale}${cleanPath}`;
-  }
-
-  function switchLanguage(nextLang: Lang) {
-    router.push(withLang(pathname, nextLang));
   }
 
   const [searchQuery, setSearchQuery] = useState("");

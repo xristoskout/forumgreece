@@ -3,7 +3,7 @@
 import { useMemo } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import SiteHeader from "../../../components/site-header";
 
 type Lang = "en" | "el";
@@ -22,9 +22,110 @@ type ForumCard = {
   image?: string;
 };
 
+type ForumSectionProps = {
+  eyebrow: string;
+  title: string;
+  items: ForumCard[];
+  accent: "sky" | "emerald" | "amber";
+  ctaLabel: string;
+};
+
+function ForumSection({ eyebrow, title, items, accent, ctaLabel }: ForumSectionProps) {
+  const accentStyles =
+    accent === "sky"
+      ? {
+          pill: "bg-sky-500/20 border border-sky-500/30 text-sky-300",
+          card: "from-sky-900/40 via-slate-900/40 to-slate-50",
+        }
+      : accent === "emerald"
+      ? {
+          pill: "bg-emerald-500/20 border border-emerald-500/30 text-emerald-300",
+          card: "from-emerald-900/40 via-slate-900/40 to-slate-50",
+        }
+      : {
+          pill: "bg-amber-500/20 border border-amber-500/30 text-amber-300",
+          card: "from-amber-900/40 via-slate-900/40 to-slate-50",
+        };
+
+  return (
+    <section className="mx-auto max-w-7xl px-6 py-16">
+      <div className="mb-12 text-center">
+        <p className="inline-flex rounded-full border border-indigo-200 bg-indigo-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-indigo-700 backdrop-blur-md">
+          {eyebrow}
+        </p>
+        <h2 className="mt-4 text-4xl font-extrabold tracking-tight">{title}</h2>
+      </div>
+
+      <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+        {items.map((item) => (
+          <article
+            key={item.title}
+            className="group relative overflow-hidden rounded-[2.5rem] border border-slate-200 bg-white/90 backdrop-blur-md shadow-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(0,0,0,0.06)]"
+          >
+            <a href={item.href} target="_blank" rel="noreferrer" className="block">
+              <div className={
+                item.image
+                  ? "aspect-[4/3] w-full relative overflow-hidden"
+                  : `aspect-[4/3] w-full bg-gradient-to-br transition-all duration-700 group-hover:scale-110 group-hover:brightness-110 ${accentStyles.card}`
+              }>
+                {item.image && (
+                  <>
+                    <div className="absolute inset-0 transition-all duration-700 group-hover:scale-110 group-hover:brightness-110">
+                        <Image
+                          src={item.image}
+                          alt={item.title}
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 768px) 100vw, 33vw"
+                        />
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-slate-900/10" />
+                  </>
+                )}
+              </div>
+            </a>
+
+            <div className="p-8 relative z-10 bg-white/80 backdrop-blur-md flex-1 flex flex-col h-[60%]">
+              <div className="flex items-center justify-between gap-4">
+                <span
+                  className={`rounded-full px-3 py-1.5 text-xs font-semibold ${accentStyles.pill} transition-colors group-hover:bg-opacity-40`}
+                >
+                  {item.category.en}
+                </span>
+
+                <span className="text-xs font-medium text-slate-500">
+                   📍 {item.region.en}
+                </span>
+              </div>
+
+              <a href={item.href} target="_blank" rel="noreferrer" className="mt-6 block">
+                <h3 className="text-2xl font-bold leading-snug group-hover:text-indigo-800 transition-colors">
+                  {item.title}
+                </h3>
+              </a>
+
+              <p className="mt-4 text-sm leading-relaxed text-slate-500 flex-1">
+                {item.description.en}
+              </p>
+
+              <a
+                href={item.href}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-8 inline-block text-sm font-bold text-indigo-700 hover:text-indigo-800 transition-colors"
+              >
+                {ctaLabel}
+              </a>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 export default function TravelToGreecePage() {
   const pathname = usePathname();
-  const router = useRouter();
 
   const lang: Lang = pathname.startsWith("/el") ? "el" : "en";
 
@@ -44,10 +145,6 @@ export default function TravelToGreecePage() {
     }
 
     return `/${locale}${cleanPath}`;
-  }
-
-  function switchLanguage(nextLang: Lang) {
-    router.push(withLang(pathname, nextLang));
   }
 
   const t = useMemo(
@@ -285,110 +382,6 @@ export default function TravelToGreecePage() {
     },
   ];
 
-  const ForumSection = ({
-    eyebrow,
-    title,
-    items,
-    accent,
-  }: {
-    eyebrow: string;
-    title: string;
-    items: ForumCard[];
-    accent: "sky" | "emerald" | "amber";
-  }) => {
-    const accentStyles =
-      accent === "sky"
-        ? {
-            pill: "bg-sky-500/20 border border-sky-500/30 text-sky-300",
-            card: "from-sky-900/40 via-slate-900/40 to-slate-50",
-          }
-        : accent === "emerald"
-        ? {
-            pill: "bg-emerald-500/20 border border-emerald-500/30 text-emerald-300",
-            card: "from-emerald-900/40 via-slate-900/40 to-slate-50",
-          }
-        : {
-            pill: "bg-amber-500/20 border border-amber-500/30 text-amber-300",
-            card: "from-amber-900/40 via-slate-900/40 to-slate-50",
-          };
-
-    return (
-      <section className="mx-auto max-w-7xl px-6 py-16">
-        <div className="mb-12 text-center">
-          <p className="inline-flex rounded-full border border-indigo-200 bg-indigo-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-indigo-700 backdrop-blur-md">
-            {eyebrow}
-          </p>
-          <h2 className="mt-4 text-4xl font-extrabold tracking-tight">{title}</h2>
-        </div>
-
-        <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
-          {items.map((item) => (
-            <article
-              key={item.title}
-              className="group relative overflow-hidden rounded-[2.5rem] border border-slate-200 bg-white/90 backdrop-blur-md shadow-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(0,0,0,0.06)]"
-            >
-              <a href={item.href} target="_blank" rel="noreferrer" className="block">
-                <div className={
-                  item.image
-                    ? "aspect-[4/3] w-full relative overflow-hidden"
-                    : `aspect-[4/3] w-full bg-gradient-to-br transition-all duration-700 group-hover:scale-110 group-hover:brightness-110 ${accentStyles.card}`
-                }>
-                  {item.image && (
-                    <>
-                      <div className="absolute inset-0 transition-all duration-700 group-hover:scale-110 group-hover:brightness-110">
-                          <Image
-                            src={item.image}
-                            alt={item.title}
-                            fill
-                            className="object-cover"
-                            sizes="(max-width: 768px) 100vw, 33vw"
-                          />
-                      </div>
-                      <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-slate-900/10" />
-                    </>
-                  )}
-                </div>
-              </a>
-
-              <div className="p-8 relative z-10 bg-white/80 backdrop-blur-md flex-1 flex flex-col h-[60%]">
-                <div className="flex items-center justify-between gap-4">
-                  <span
-                    className={`rounded-full px-3 py-1.5 text-xs font-semibold ${accentStyles.pill} transition-colors group-hover:bg-opacity-40`}
-                  >
-                    {item.category[lang]}
-                  </span>
-
-                  <span className="text-xs font-medium text-slate-500">
-                     📍 {item.region[lang]}
-                  </span>
-                </div>
-
-                <a href={item.href} target="_blank" rel="noreferrer" className="mt-6 block">
-                  <h3 className="text-2xl font-bold leading-snug group-hover:text-indigo-800 transition-colors">
-                    {item.title}
-                  </h3>
-                </a>
-
-                <p className="mt-4 text-sm leading-relaxed text-slate-500 flex-1">
-                  {item.description[lang]}
-                </p>
-
-                <a
-                  href={item.href}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-8 inline-block text-sm font-bold text-indigo-700 hover:text-indigo-800 transition-colors"
-                >
-                  {t.ctaOpen[lang]}
-                </a>
-              </div>
-            </article>
-          ))}
-        </div>
-      </section>
-    );
-  };
-
   return (
     <>
       <SiteHeader />
@@ -453,6 +446,7 @@ export default function TravelToGreecePage() {
           title={t.islandsTitle[lang]}
           items={islandForums}
           accent="sky"
+          ctaLabel={t.ctaOpen[lang]}
         />
       </div>
 
@@ -461,6 +455,7 @@ export default function TravelToGreecePage() {
         title={t.mainlandTitle[lang]}
         items={mainlandForums}
         accent="emerald"
+        ctaLabel={t.ctaOpen[lang]}
       />
 
       <ForumSection
@@ -468,6 +463,7 @@ export default function TravelToGreecePage() {
         title={t.themedTitle[lang]}
         items={themedForums}
         accent="amber"
+        ctaLabel={t.ctaOpen[lang]}
       />
 
     </main>

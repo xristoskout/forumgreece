@@ -2,10 +2,9 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname, useRouter } from "next/navigation";
 import SiteHeader from "../../../../components/site-header";
 
-import { type FoodCard, type Lang, siteBrand, siteBrandLine } from "../../../../lib/content";
+import { type FoodCard, type Lang } from "../../../../lib/content";
 import { type ExperienceBusiness } from "../../../../lib/experiences";
 
 type EatDrinkClientProps = {
@@ -15,9 +14,6 @@ type EatDrinkClientProps = {
 };
 
 export default function EatDrinkClient({ item, lang, businesses }: EatDrinkClientProps) {
-  const pathname = usePathname();
-  const router = useRouter();
-
   function stripLocale(path: string) {
     const stripped = path.replace(/^\/(en|el)(?=\/|$)/, "");
     return stripped || "/";
@@ -34,10 +30,6 @@ export default function EatDrinkClient({ item, lang, businesses }: EatDrinkClien
     }
 
     return `/${locale}${cleanPath}`;
-  }
-
-  function switchLanguage(nextLang: Lang) {
-    router.push(withLang(pathname, nextLang));
   }
 
   const t = {

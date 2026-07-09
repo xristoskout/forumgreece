@@ -24,7 +24,7 @@ export default function BusinessGallery({
   );
 
   useEffect(() => {
-    setSelectedImage(galleryImages[0] ?? initialImage);
+    queueMicrotask(() => setSelectedImage(galleryImages[0] ?? initialImage));
   }, [galleryImages, initialImage]);
 
   return (

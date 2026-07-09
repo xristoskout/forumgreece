@@ -14,7 +14,7 @@ export default function ConsentAwareScripts() {
   useEffect(() => {
     const stored = localStorage.getItem(COOKIE_CONSENT_KEY);
     if (stored === "accepted" || stored === "declined") {
-      setConsent(stored);
+      queueMicrotask(() => setConsent(stored));
     }
 
     function handleConsentChange(e: Event) {

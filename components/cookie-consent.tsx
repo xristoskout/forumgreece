@@ -14,7 +14,8 @@ export default function CookieConsent() {
 
   useEffect(() => {
     const hasConsent = localStorage.getItem(COOKIE_CONSENT_KEY);
-    setShow(!hasConsent);
+    const id = setTimeout(() => setShow(!hasConsent), 0);
+    return () => clearTimeout(id);
   }, []);
 
   function applyConsent(granted: boolean) {

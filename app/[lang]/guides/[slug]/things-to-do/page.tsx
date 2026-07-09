@@ -42,8 +42,8 @@ const THINGS_KEYWORDS_EN = ["things to do", "top attractions", "top experiences"
 const THINGS_KEYWORDS_EL = ["πράγματα να κάν", "αξιοθέατ", "κορυφαία αξιοθέατα", "εμπειρίες"];
 const WHY_VISIT_KEYWORDS_EN = ["why visit"];
 
-function findThingsSection(sections: any[]) {
-  const exact = sections.find((s: any) => {
+function findThingsSection(sections: { title?: { en?: string; el?: string }; layout?: string }[]) {
+  const exact = sections.find((s) => {
     const en = (s.title?.en || "").toLowerCase();
     const el = (s.title?.el || "").toLowerCase();
     return THINGS_KEYWORDS_EN.some((k) => en.includes(k))
@@ -51,13 +51,13 @@ function findThingsSection(sections: any[]) {
   });
   if (exact) return exact;
 
-  const whyVisit = sections.find((s: any) => {
+  const whyVisit = sections.find((s) => {
     const en = (s.title?.en || "").toLowerCase();
     return WHY_VISIT_KEYWORDS_EN.some((k) => en.includes(k));
   });
   if (whyVisit) return whyVisit;
 
-  const numbered = sections.find((s: any) => s.layout === "numbered");
+  const numbered = sections.find((s) => s.layout === "numbered");
   return numbered;
 }
 
@@ -123,7 +123,7 @@ export default async function ThingsToDoPage({ params }: Props) {
           {thingsSection ? (
             <div className="space-y-6">
               <h2 className="text-3xl font-bold text-slate-900 mb-8">{thingsSection.title?.[lang] || thingsSection.title?.en}</h2>
-              {(thingsSection as any).items?.map((item: any, idx: number) => (
+              {(thingsSection as { items?: { title?: { en?: string; el?: string }; text?: { en?: string; el?: string } }[] }).items?.map((item, idx: number) => (
                 <article key={idx} className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm hover:shadow-md transition-shadow">
                   {thingsSection.layout === "numbered" && (
                     <span className="mb-3 inline-flex items-center justify-center w-8 h-8 rounded-full bg-amber-100 text-amber-800 text-sm font-bold">

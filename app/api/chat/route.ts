@@ -69,14 +69,14 @@ ${databaseContext}
           });
 
           writer.merge(result.toUIMessageStream());
-        } catch (error) {
+        } catch {
           // Error handled by onError callback
         }
       },
     });
 
     return createUIMessageStreamResponse({ stream });
-  } catch (error) {
+  } catch {
     return new Response('Internal Server Error', { status: 500 });
   }
 }

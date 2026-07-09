@@ -1,4 +1,3 @@
-import { type Lang } from "./locale";
 export type { Lang } from "./locale";
 export { isLang } from "./locale";
 

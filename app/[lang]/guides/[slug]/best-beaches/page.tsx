@@ -57,7 +57,7 @@ export default async function BestBeachesPage({ params }: Props) {
   let beachSection = null;
   try {
     const sections = destinationSections[slug];
-    if (sections) beachSection = sections.find((s: any) =>
+    if (sections) beachSection = sections.find((s: { title?: { en?: string; el?: string } }) =>
       (s.title?.en || "").toLowerCase().includes("beach")
       || (s.title?.el || "").toLowerCase().includes("παραλ")
     );
@@ -112,7 +112,7 @@ export default async function BestBeachesPage({ params }: Props) {
 
           {beachSection ? (
             <div className="space-y-6">
-              {(beachSection as any).items?.map((item: any, idx: number) => (
+              {(beachSection as { items?: { title?: { en?: string; el?: string }; text?: { en?: string; el?: string } }[] }).items?.map((item, idx: number) => (
                 <article key={idx} className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm hover:shadow-md transition-shadow">
                   <h2 className="text-2xl font-bold text-slate-900 mb-3">{item.title?.[lang] || item.title?.en}</h2>
                   <div className="text-slate-600 leading-relaxed" dangerouslySetInnerHTML={{ __html: renderBeachText(item.text?.[lang] || item.text?.en || "", lang) }} />

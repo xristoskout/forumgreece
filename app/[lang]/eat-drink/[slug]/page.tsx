@@ -64,7 +64,7 @@ export default async function EatDrinkPage({ params }: { params: Params }) {
   const lang: Lang = resolvedParams.lang === "el" ? "el" : "en";
   const slug = resolvedParams.slug;
 
-  let item = food.find((entry) => entry.slug === slug);
+  const item = food.find((entry) => entry.slug === slug);
 
   if (!item) {
     const byPlace = food.filter(entry => entry.place?.toLowerCase() === slug);

@@ -4,12 +4,11 @@ import Link from "next/link";
 import Image from "next/image";
 import SiteHeader from "../../../../components/site-header";
 import InteractiveMap from "../../../../components/interactive-map";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import type { Lang } from "../../../../lib/content";
 
 export default function GreeceIslandsMapGuidePage() {
   const pathname = usePathname();
-  const router = useRouter();
 
   const lang: Lang = pathname.startsWith("/el") ? "el" : "en";
 
@@ -24,10 +23,6 @@ export default function GreeceIslandsMapGuidePage() {
     const cleanPath = stripLocale(normalized);
     if (cleanPath === "/") return `/${locale}`;
     return `/${locale}${cleanPath}`;
-  }
-
-  function switchLanguage(nextLang: Lang) {
-    router.push(withLang(pathname, nextLang));
   }
 
   const t = {

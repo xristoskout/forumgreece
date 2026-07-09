@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { experienceBusinesses } from "../../../../lib/experiences";
 import { SITE_URL } from "../../../../lib/content";
 import BusinessDetailsClient from "./business-details-client";
-import { Lang, isLang, supportedLangs } from "../../../../lib/locale";
+import { isLang, supportedLangs } from "../../../../lib/locale";
 import { localBusinessSchema } from "../../../../lib/structured-data";
 
 type BusinessPageProps = {

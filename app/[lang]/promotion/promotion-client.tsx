@@ -265,7 +265,7 @@ const faqs = [
   { q: "faq9_q", a: "faq9_a" },
 ];
 
-const go = (key: string, l: string) => (t as any)[key]?.[l] ?? key;
+const go = (key: string, l: string) => (t as Record<string, Record<string, string>>)[key]?.[l] ?? key;
 
 export default function PromotionClient() {
   const { lang } = useLocale();

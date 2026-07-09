@@ -161,7 +161,6 @@ function TravelToolsStructuredData({ lang }: { lang: string }) {
 export default async function TravelToolsPage({ params }: Props) {
   const { lang } = await params;
   const destinations = await getAllDestinations();
-  const seo = travelToolsSeo[lang as keyof typeof travelToolsSeo] || travelToolsSeo.en;
 
   return (
     <>

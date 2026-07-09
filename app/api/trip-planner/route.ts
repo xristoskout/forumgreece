@@ -148,8 +148,9 @@ Interests: ${interests.length ? interests.join(', ') : 'general'}`;
       })),
     });
 
-  } catch (error: any) {
-    console.error('[trip-planner] Error:', error?.message || error);
-    return Response.json({ error: `Failed: ${error?.message || 'Unknown error'}` }, { status: 500 });
+  } catch (error: unknown) {
+    const msg = error instanceof Error ? error.message : 'Unknown error';
+    console.error('[trip-planner] Error:', msg);
+    return Response.json({ error: `Failed: ${msg}` }, { status: 500 });
   }
 }

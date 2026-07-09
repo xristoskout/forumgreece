@@ -3,20 +3,22 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useMemo, useRef, useState } from "react";
-import { usePathname } from "next/navigation";
 import { siteBrand, siteBrandLine } from "../lib/content";
-import { Lang, useLocale } from "../lib/useLocale";
+import { useLocale } from "../lib/useLocale";
 
 export default function SiteHeader() {
-  const { lang, pathname, withLang, withLangHash, switchLanguage } = useLocale();
+  const { lang, pathname, withLang, switchLanguage } = useLocale();
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [toolsOpen, setToolsOpen] = useState(false);
   const toolsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    setMenuOpen(false);
-    setToolsOpen(false);
+    const id = setTimeout(() => {
+      setMenuOpen(false);
+      setToolsOpen(false);
+    }, 0);
+    return () => clearTimeout(id);
   }, [pathname]);
 
   useEffect(() => {
@@ -52,6 +54,8 @@ export default function SiteHeader() {
     close: { en: "Close", el: "Κλείσιμο" },
   };
 
+  const tNav = t;
+
   const isHome = pathname === `/${lang}` || pathname === `/${lang}/`;
   const showLangSwitcher = /^\/(en|el)\/(contact|about|privacy-policy|promotion)$/.test(pathname);
 
@@ -59,48 +63,48 @@ export default function SiteHeader() {
     () => [
       {
         key: "destinations",
-        label: t.destinations[lang],
+        label: tNav.destinations[lang],
         href: withLang("/destinations"),
         active: pathname.startsWith(`/${lang}/destinations`),
       },
       {
         key: "travel-tools",
-        label: t.travelTools[lang],
+        label: tNav.travelTools[lang],
         href: withLang("/travel-tools"),
         active: pathname.startsWith(`/${lang}/travel-tools`) || pathname.startsWith(`/${lang}/trip-planner`),
       },
       {
         key: "stays",
-        label: t.stays[lang],
+        label: tNav.stays[lang],
         href: withLang("/hotels"),
         active: pathname.startsWith(`/${lang}/hotels`),
       },
       {
         key: "tours-experiences",
-        label: t.toursExperiences[lang],
+        label: tNav.toursExperiences[lang],
         href: withLang("/tours/all"),
         active: pathname.startsWith(`/${lang}/tours`),
       },
       {
         key: "food-wine",
-        label: t.foodWine[lang],
+        label: tNav.foodWine[lang],
         href: withLang("/collections/greece-food-and-drink"),
         active: pathname.startsWith(`/${lang}/collections/greece-food-and-drink`),
       },
       {
         key: "blog",
-        label: t.blog[lang],
+        label: tNav.blog[lang],
         href: withLang("/blog"),
         active: pathname.startsWith(`/${lang}/blog`),
       },
       {
         key: "about-greece",
-        label: t.aboutGreece[lang],
+        label: tNav.aboutGreece[lang],
         href: withLang("/travel-info"),
         active: pathname.startsWith(`/${lang}/travel-info`),
       },
     ],
-    [isHome, lang, pathname, withLang, withLangHash]
+    [tNav, lang, pathname, withLang]
   );
 
   return (

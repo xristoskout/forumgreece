@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { blogPosts, SITE_URL, Lang, isLang } from "../../../../lib/content";
+import { blogPosts, SITE_URL, isLang } from "../../../../lib/content";
 import { withLang } from "../../../../lib/locale";
 import BlogDetailClient from "./blog-detail-client";
 

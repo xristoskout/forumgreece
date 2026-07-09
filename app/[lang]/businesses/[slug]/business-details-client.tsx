@@ -3,7 +3,6 @@
 import { useMemo } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
 import SiteHeader from "../../../../components/site-header";
 import BusinessGallery from "./business-gallery";
 import type { Lang } from "../../../../lib/content";
@@ -81,9 +80,6 @@ export default function BusinessDetailsClient({
   business,
   lang,
 }: BusinessDetailsClientProps) {
-  const pathname = usePathname();
-  const router = useRouter();
-
   function stripLocale(path: string) {
     const stripped = path.replace(/^\/(en|el)(?=\/|$)/, "");
     return stripped || "/";
@@ -100,10 +96,6 @@ export default function BusinessDetailsClient({
     }
 
     return `/${locale}${cleanPath}`;
-  }
-
-  function switchLanguage(nextLang: Lang) {
-    router.push(withLang(pathname, nextLang));
   }
 
   const galleryImages = useMemo(() => {

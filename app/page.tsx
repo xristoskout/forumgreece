@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { redirect } from "next/navigation";
-import { headers } from "next/headers";
 
 const SITE_URL = "https://www.gogreecenow.com";
 

@@ -3,7 +3,7 @@ import { destinations } from '../../../lib/destinations-data';
 import { SITE_URL } from '../../../lib/content';
 import SiteHeader from '../../../components/site-header';
 import DestinationsClient from './destinations-client';
-import { Lang, isLang } from '../../../lib/locale';
+import { isLang } from '../../../lib/locale';
 import { breadcrumbSchema, collectionPageSchema } from '../../../lib/structured-data';
 
 type Props = {

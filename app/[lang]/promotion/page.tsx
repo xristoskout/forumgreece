@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Lang, isLang, supportedLangs } from "../../../lib/locale";
+import { isLang, supportedLangs } from "../../../lib/locale";
 import { SITE_URL } from "../../../lib/content";
 import PromotionClient from "./promotion-client";
 

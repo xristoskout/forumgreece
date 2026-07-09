@@ -101,7 +101,7 @@ export default function TravelInfoGuideClient({ lang, slug, item }: TravelInfoGu
   const parseTable = (text: string) => {
     const lines = text.trim().split("\n").filter((l) => l.trim());
     let headerRow: string[] = [];
-    let rows: string[][] = [];
+    const rows: string[][] = [];
     let startIdx = 0;
 
     if (lines.length >= 2 && /^\|[-| :]+\|?$/.test(lines[1].trim())) {

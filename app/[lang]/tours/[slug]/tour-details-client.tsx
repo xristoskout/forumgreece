@@ -2,10 +2,8 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname, useRouter } from "next/navigation";
 import SiteHeader from "../../../../components/site-header";
 
-import { siteBrand, siteBrandLine } from "../../../../lib/site-config";
 import { type Lang } from "../../../../lib/locale";
 import { type TourItem } from "../../../../lib/types";
 
@@ -18,9 +16,6 @@ export default function TourDetailsClient({
   tour,
   lang,
 }: TourDetailsClientProps) {
-  const pathname = usePathname();
-  const router = useRouter();
-
   function stripLocale(path: string) {
     const stripped = path.replace(/^\/(en|el)(?=\/|$)/, "");
     return stripped || "/";
@@ -37,10 +32,6 @@ export default function TourDetailsClient({
     }
 
     return `/${locale}${cleanPath}`;
-  }
-
-  function switchLanguage(nextLang: Lang) {
-    router.push(withLang(pathname, nextLang));
   }
 
   return (

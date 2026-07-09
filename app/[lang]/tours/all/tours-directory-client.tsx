@@ -39,7 +39,7 @@ const regions = [
   { key: "Zakynthos", label: { en: "Zakynthos", el: "Ζάκυνθος" }, emoji: "🐢", image: "/images/zakynthos.webp", count: 90, description: { en: "Navagio Beach, Blue Caves, turtles.", el: "Ναυάγιο, Γαλάζιες Σπηλιές, χελώνες." }, highlights: { en: ["Navagio Beach", "Blue Caves", "Turtle spotting"], el: ["Ναυάγιο", "Γαλάζιες Σπηλιές", "Χελώνες"] }, destinationSlug: "zakynthos" },
 ];
 
-export default function ToursDirectoryClient({ lang, tours }: Props) {
+export default function ToursDirectoryClient({ lang }: Props) {
   const [selectedRegion, setSelectedRegion] = useState<string | null>(null);
   const widgetRef = useRef<HTMLDivElement>(null);
 

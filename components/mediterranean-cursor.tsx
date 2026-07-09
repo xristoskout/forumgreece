@@ -25,9 +25,12 @@ export default function MediterraneanCursor() {
   const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
-    if (window.matchMedia("(pointer: fine)").matches) {
-      setIsDesktop(true);
-    }
+    const id = setTimeout(() => {
+      if (window.matchMedia("(pointer: fine)").matches) {
+        setIsDesktop(true);
+      }
+    }, 0);
+    return () => clearTimeout(id);
   }, []);
 
   // Don't render ANYTHING on mobile / touch devices

@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useParams, usePathname, useRouter } from "next/navigation";
-import { hotels, destinations, type Lang, siteBrand, siteBrandLine } from "../../../../lib/content";
+import { useParams } from "next/navigation";
+import { hotels, destinations, type Lang } from "../../../../lib/content";
 import { experienceBusinesses } from "../../../../lib/experiences";
 import BusinessGallery from "../../businesses/[slug]/business-gallery";
 import SiteHeader from "../../../../components/site-header";
@@ -240,37 +240,8 @@ function ListCard({ title, items, icon = "•" }: ListCardProps) {
   );
 }
 
-function getYouTubeVideoId(url: string) {
-  try {
-    const parsed = new URL(url);
-
-    if (parsed.hostname.includes("youtu.be")) {
-      return parsed.pathname.replace("/", "") || null;
-    }
-
-    const fromQuery = parsed.searchParams.get("v");
-    if (fromQuery) return fromQuery;
-
-    const parts = parsed.pathname.split("/").filter(Boolean);
-    const embedIndex = parts.findIndex(
-      (part) => part === "embed" || part === "shorts"
-    );
-
-    if (embedIndex !== -1 && parts[embedIndex + 1]) {
-      return parts[embedIndex + 1];
-    }
-
-    return null;
-  } catch {
-    return null;
-  }
-}
-
 export default function HotelDetailsClient({ lang: serverLang, slug: serverSlug, item: serverItem }: { lang: string; slug: string; item: typeof hotels[number] }) {
   const params = useParams<{ lang: string; slug: string }>();
-  const pathname = usePathname();
-  const router = useRouter();
-
   const lang: Lang = serverLang === "el" ? "el" : (params?.lang === "el" ? "el" : "en");
   const slug = serverSlug || params?.slug || "";
 
@@ -292,10 +263,6 @@ export default function HotelDetailsClient({ lang: serverLang, slug: serverSlug,
     }
 
     return `/${locale}${cleanPath}`;
-  }
-
-  function switchLanguage(nextLang: Lang) {
-    router.push(withLang(pathname, nextLang));
   }
 
   const t = {
@@ -333,15 +300,8 @@ export default function HotelDetailsClient({ lang: serverLang, slug: serverSlug,
 
   const galleryImages = item.galleryImages || [item.image];
   const hasContact = Boolean(item.phone || item.email || item.youtube || item.website);
-  const videoId = item.youtube ? getYouTubeVideoId(item.youtube) : null;
-  const videoEmbedUrl = videoId ? `https://www.youtube-nocookie.com/embed/${videoId}` : null;
-  
   const mapSrc = item.mapQuery
     ? `https://www.google.com/maps?q=${encodeURIComponent(item.mapQuery)}&z=14&output=embed`
-    : null;
-
-  const mapLink = item.mapQuery
-    ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(item.mapQuery)}`
     : null;
 
   const destination = destinations.find((d) => d.slug === slug);

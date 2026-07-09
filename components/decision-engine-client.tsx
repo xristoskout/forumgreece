@@ -3,7 +3,43 @@ import { useState, useEffect } from 'react';
 
 const CURRENCIES = { EUR: 1, USD: 1.05, GBP: 0.85, CNY: 7.6 };
 
-const REAL_PRICING: Record<string, any> = {
+type RealPricing = Record<string, {
+  region: string;
+  budget_meal: number;
+  midrange_meal: number;
+  luxury_meal: number;
+  coffee: number;
+  beer_bar: number;
+  cocktail: number;
+  water_bottle: number;
+  taxi_5km: number | null;
+  bus_ticket: number | null;
+  atv_scooter_day: number | null;
+  car_rental_day: number | null;
+  avg_hotel_low: number;
+  avg_hotel_may_june: number;
+  avg_hotel_july_aug: number;
+  avg_hotel_sept_oct: number;
+  avg_daily_budget_backpacker: number;
+  avg_daily_budget_midrange: number;
+  avg_daily_budget_luxury: number;
+  airport_transfer: number | null;
+  crowd_level_july_aug: string;
+  crowd_level_may_june: string;
+  crowd_level_sept_oct: string;
+  best_for: string[];
+  not_ideal_for: string[];
+  beach_score: number;
+  nightlife_score: number;
+  family_score: number;
+  value_score: number;
+  food_score: number;
+  nature_score: number;
+  history_score: number;
+  temp?: number;
+}>;
+
+const REAL_PRICING: RealPricing = {
   santorini: {
     region: "Cyclades",
     budget_meal: 18,
@@ -1574,19 +1610,21 @@ const getRealData = (slug: string) => {
   return REAL_PRICING[key] || REAL_PRICING['paros'];
 };
 
-export default function DecisionEngineClient({ destinations, lang }: { destinations: any[]; lang: "en" | "el" }) {
+type DestItem = { slug: string; id: string; name: string; seasonality?: Record<string, unknown>; content?: { pros?: string[]; cons?: string[]; insider_tips?: string[] }; pros?: string[]; cons?: string[]; insider_tips?: string[] };
+
+export default function DecisionEngineClient({ destinations, lang }: { destinations: DestItem[]; lang: "en" | "el" }) {
   const [mounted, setMounted] = useState(false);
-  const [s1, setS1] = useState(destinations.find((d: any) => d.slug === 'santorini') || destinations[0]);
-  const [s2, setS2] = useState(destinations.find((d: any) => d.slug === 'athens') || destinations[1]);
+  const [s1, setS1] = useState<DestItem>(destinations.find((d) => d.slug === 'santorini') || destinations[0]);
+  const [s2, setS2] = useState<DestItem>(destinations.find((d) => d.slug === 'athens') || destinations[1]);
   const [adults, setAdults] = useState(2);
   const [days, setDays] = useState(5);
   const [style, setStyle] = useState<'budget' | 'mid' | 'luxury'>('mid');
   const [month, setMonth] = useState(Object.keys(MONTH_LABELS)[new Date().getMonth()]);
   const [currency, setCurrency] = useState<'EUR' | 'USD' | 'GBP' | 'CNY'>('EUR');
 
-  useEffect(() => { setMounted(true); }, []);
+  useEffect(() => { const id = setTimeout(() => setMounted(true), 0); return () => clearTimeout(id); }, []);
 
-  const calc = (d: any) => {
+  const calc = (d: DestItem) => {
     const real = getRealData(d.slug);
 
     // Dynamic Season selection from Month (lowercase standard months)
@@ -1612,7 +1650,7 @@ export default function DecisionEngineClient({ destinations, lang }: { destinati
         hotelCost = custom[style] * rooms * days;
       }
     } else {
-      let baseHotelPrice = real[`avg_hotel_${season}`] || 80;
+      const baseHotelPrice = real[`avg_hotel_${season}`] || 80;
       let styleMultiplier = 1.0;
       if (style === 'budget') styleMultiplier = 0.5;
       if (style === 'luxury') styleMultiplier = 3.2;
@@ -1623,8 +1661,8 @@ export default function DecisionEngineClient({ destinations, lang }: { destinati
     // 2. Food & Wine
     let mealCost = real.midrange_meal || 30;
     let drinkCost = real.beer_bar || 5;
-    let coffeeCost = real.coffee || 3.5;
-    let waterCost = real.water_bottle || 1;
+    const coffeeCost = real.coffee || 3.5;
+    const waterCost = real.water_bottle || 1;
     let dailyFoodCost = 0;
 
     if (style === 'budget') {
@@ -1680,7 +1718,7 @@ export default function DecisionEngineClient({ destinations, lang }: { destinati
   const c1 = calc(s1);
   const c2 = calc(s2);
   const diff = c1.total - c2.total;
-  const sym = currency === 'EUR' ? '€' : currency === 'USD' ? '$' : currency === 'GBP' ? '£' : '¥';
+  const sym = currency === 'EUR' ? '\u20AC' : currency === 'USD' ? '$' : currency === 'GBP' ? '\u00A3' : '\u00A5';
 
   // Pre-select logic via URL params
   useEffect(() => {
@@ -1689,12 +1727,12 @@ export default function DecisionEngineClient({ destinations, lang }: { destinati
     const paramS2 = params.get('s2');
     
     if (paramS1) {
-      const found = destinations.find((d: any) => d.slug === paramS1);
-      if (found) setS1(found);
+      const found = destinations.find((d: DestItem) => d.slug === paramS1);
+      if (found) queueMicrotask(() => setS1(found));
     }
     if (paramS2) {
-      const found = destinations.find((d: any) => d.slug === paramS2);
-      if (found) setS2(found);
+      const found = destinations.find((d) => d.slug === paramS2);
+      if (found) queueMicrotask(() => setS2(found));
     }
   }, [destinations]);
 
@@ -1752,11 +1790,11 @@ export default function DecisionEngineClient({ destinations, lang }: { destinati
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-3 sm:gap-4">
             <div className="space-y-1">
                 <label className="text-xs font-semibold text-slate-500">{t.dest1[lang]}</label>
-                <select onChange={e => setS1(destinations.find((d: any) => d.slug === e.target.value))} value={s1.slug} className="w-full p-3 border rounded-xl bg-slate-50">{destinations.map((d: any) => <option key={d.id} value={d.slug}>{d.name}</option>)}</select>
+                <select onChange={e => setS1(destinations.find((d) => d.slug === e.target.value)!)} value={s1.slug} className="w-full p-3 border rounded-xl bg-slate-50">{destinations.map(d => <option key={d.id} value={d.slug}>{d.name}</option>)}</select>
             </div>
             <div className="space-y-1">
                 <label className="text-xs font-semibold text-slate-500">{t.dest2[lang]}</label>
-                <select onChange={e => setS2(destinations.find((d: any) => d.slug === e.target.value))} value={s2.slug} className="w-full p-3 border rounded-xl bg-slate-50">{destinations.map((d: any) => <option key={d.id} value={d.slug}>{d.name}</option>)}</select>
+                <select onChange={e => setS2(destinations.find((d) => d.slug === e.target.value)!)} value={s2.slug} className="w-full p-3 border rounded-xl bg-slate-50">{destinations.map(d => <option key={d.id} value={d.slug}>{d.name}</option>)}</select>
             </div>
             <div className="space-y-1">
                 <label className="text-xs font-semibold text-slate-500">{t.adults[lang]}</label>
@@ -1776,7 +1814,7 @@ export default function DecisionEngineClient({ destinations, lang }: { destinati
             </div>
             <div className="space-y-1">
                 <label className="text-xs font-semibold text-slate-500">{t.budgetStyle[lang]}</label>
-                <select value={style} onChange={e => setStyle(e.target.value as any)} className="w-full p-3 border rounded-xl bg-slate-50">
+                <select value={style} onChange={e => setStyle(e.target.value as 'budget' | 'mid' | 'luxury')} className="w-full p-3 border rounded-xl bg-slate-50">
                     <option value="budget">{t.budget[lang]}</option>
                     <option value="mid">{t.mid[lang]}</option>
                     <option value="luxury">{t.luxury[lang]}</option>
@@ -1784,7 +1822,7 @@ export default function DecisionEngineClient({ destinations, lang }: { destinati
             </div>
             <div className="space-y-1">
                 <label className="text-xs font-semibold text-slate-500">{t.currency[lang]}</label>
-                <select value={currency} onChange={e => setCurrency(e.target.value as any)} className="w-full p-3 border rounded-xl bg-slate-50">{Object.keys(CURRENCIES).map(c => <option key={c} value={c}>{c}</option>)}</select>
+                <select value={currency} onChange={e => setCurrency(e.target.value as 'EUR' | 'USD' | 'GBP' | 'CNY')} className="w-full p-3 border rounded-xl bg-slate-50">{Object.keys(CURRENCIES).map(c => <option key={c} value={c}>{c}</option>)}</select>
             </div>
         </div>
       </div>
@@ -1867,8 +1905,8 @@ export default function DecisionEngineClient({ destinations, lang }: { destinati
                 {/* Dynamically mapped average temperature */}
                 <tr className="border-b font-semibold text-indigo-900 bg-indigo-50/30">
                     <td className="p-2 sm:p-4">{t.avgTemp[lang]} ({MONTH_LABELS[month]?.[lang as 'en' | 'el'] || month})</td>
-                    <td className="p-2 sm:p-4 text-center">{s1.seasonality?.[month]?.temp ?? getRealData(s1.slug).temp ?? 'N/A'}°C</td>
-                    <td className="p-2 sm:p-4 text-center">{s2.seasonality?.[month]?.temp ?? getRealData(s2.slug).temp ?? 'N/A'}°C</td>
+                    <td className="p-2 sm:p-4 text-center">              {(getRealData(s1.slug) as Record<string, unknown>).temp ?? 'N/A'}°C</td>
+                    <td className="p-2 sm:p-4 text-center">{(getRealData(s2.slug) as Record<string, unknown>).temp ?? 'N/A'}°C</td>
                 </tr>
                 {featureKeys.map(item => {
                   const val1 = getRealData(s1.slug)[item.key] ?? 7;
@@ -1912,13 +1950,13 @@ export default function DecisionEngineClient({ destinations, lang }: { destinati
                         <div>
                           <h5 className="font-bold text-green-700 mb-1.5">{t.pros[lang]}</h5>
                           <ul className="text-slate-700 text-sm space-y-1">
-                             {(d.content?.pros ?? d.pros)?.map((p:string) => <li key={p}>✓ {p}</li>) ?? <li>N/A</li>}
+                             {(d.content?.pros ?? d.pros)?.map((p: string) => <li key={p}>{'\u2713'} {p}</li>) ?? <li>N/A</li>}
                           </ul>
                         </div>
                         <div>
                           <h5 className="font-bold text-red-700 mb-1.5">{t.cons[lang]}</h5>
                           <ul className="text-slate-500 text-sm space-y-1">
-                             {(d.content?.cons ?? d.cons)?.map((c:string) => <li key={c}>✕ {c}</li>) ?? <li>N/A</li>}
+                             {(d.content?.cons ?? d.cons)?.map((c: string) => <li key={c}>{'\u2715'} {c}</li>) ?? <li>N/A</li>}
                           </ul>
                         </div>
                     </div>
@@ -1955,7 +1993,7 @@ export default function DecisionEngineClient({ destinations, lang }: { destinati
                     <div className="border-t border-slate-100 pt-4">
                       <h5 className="font-bold text-indigo-800 mb-2">{t.insiderTips[lang]}</h5>
                       <ul className="text-slate-600 text-sm space-y-1 italic">
-                         {(d.content?.insider_tips ?? d.insider_tips)?.map((tip:string) => <li key={tip}>"{tip}"</li>) ?? <li>No tips yet</li>}
+                         {(d.content?.insider_tips ?? d.insider_tips)?.map((tip:string) => <li key={tip}>&ldquo;{tip}&rdquo;</li>) ?? <li>No tips yet</li>}
                       </ul>
                     </div>
                 </div>

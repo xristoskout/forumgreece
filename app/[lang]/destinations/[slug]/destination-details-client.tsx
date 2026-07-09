@@ -2,9 +2,8 @@
 
 import { Fragment } from "react";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
 import SiteHeader from "../../../../components/site-header";
-import { siteBrand, food, type Destination, type Lang } from "../../../../lib/content";
+import { food, type Destination, type Lang } from "../../../../lib/content";
 import Image from "next/image";
 import { destinationSections } from "../../../../lib/destination-sections";
 import { destinationDetails } from "../../../../lib/destination-details";
@@ -18,9 +17,6 @@ export default function DestinationDetailsClient({
   destination: Destination;
   lang: Lang;
 }) {
-  const pathname = usePathname();
-  const router = useRouter();
-
   const slug = destination.slug;
   const businesses = experienceBusinesses.filter(
     (b) => b.landingSlug === `${slug}-tours` || b.landingSlug === slug || b.destinationSlugs?.includes(slug)
@@ -53,7 +49,7 @@ export default function DestinationDetailsClient({
     return parts.map((part, index) => {
       const match = part.match(/\[(.*?)\]\((.*?)\)/);
       if (match) {
-        const [_, label, href] = match;
+        const [, label, href] = match;
         return (
           <Link key={index} href={withLang(href)} className="text-indigo-300 font-semibold hover:underline underline-offset-4 decoration-indigo-300/50">
             {label}
@@ -69,7 +65,7 @@ export default function DestinationDetailsClient({
     return parts.map((part, index) => {
       const match = part.match(/\[(.*?)\]\((.*?)\)/);
       if (match) {
-        const [_, label, href] = match;
+        const [, label, href] = match;
         return (
           <Link key={index} href={withLang(href)} className="text-indigo-600 font-semibold hover:underline underline-offset-4 decoration-indigo-600/50">
             {label}
@@ -272,11 +268,11 @@ export default function DestinationDetailsClient({
             ))}
             {(() => {
               const sections = destinationSections[slug] || [];
-              const hasBeaches = sections.some((s: any) =>
+              const hasBeaches = sections.some((s: { title?: { en?: string; el?: string } }) =>
                 (s.title?.en || "").toLowerCase().includes("beach")
                 || (s.title?.el || "").toLowerCase().includes("παραλ")
               );
-              const hasThings = sections.some((s: any) => {
+              const hasThings = sections.some((s: { title?: { en?: string; el?: string } }) => {
                 const en = (s.title?.en || "").toLowerCase();
                 const el = (s.title?.el || "").toLowerCase();
                 return en.includes("things to do") || en.includes("top attractions") || en.includes("why visit")

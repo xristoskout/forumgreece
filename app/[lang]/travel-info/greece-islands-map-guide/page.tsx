@@ -24,7 +24,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const canonicalUrl = `${SITE_URL}/${lang}/travel-info/greece-islands-map-guide`;
   const enUrl = `${SITE_URL}/en/travel-info/greece-islands-map-guide`;
-  const elUrl = `${SITE_URL}/el/travel-info/greece-islands-map-guide`;
 
   return {
     title: { absolute: title },

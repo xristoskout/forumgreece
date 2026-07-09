@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SiteHeader from "../../../components/site-header";
-import { SITE_URL, Lang, isLang } from "../../../lib/content";
+import { SITE_URL, isLang } from "../../../lib/content";
 import { withLang } from "../../../lib/locale";
 import { breadcrumbSchema } from "../../../lib/structured-data";
 

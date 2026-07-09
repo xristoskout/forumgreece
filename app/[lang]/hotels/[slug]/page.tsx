@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { notFound, redirect, permanentRedirect } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { hotels, SITE_URL } from "../../../../lib/content";
 import HotelDetailsClient from "./hotel-details-client";
-import { Lang, isLang, supportedLangs } from "../../../../lib/locale";
+import { isLang, supportedLangs } from "../../../../lib/locale";
 import { breadcrumbSchema, hotelSchema } from "../../../../lib/structured-data";
 
 type HotelPageProps = {

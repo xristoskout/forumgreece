@@ -2,11 +2,9 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname, useRouter } from "next/navigation";
 import SiteHeader from "../../../../components/site-header";
 import ViatorWidget from "../../../../components/viator-widget";
 
-import { siteBrand, siteBrandLine } from "../../../../lib/site-config";
 import { type Lang } from "../../../../lib/locale";
 import {
   type ExperienceBusiness,
@@ -24,10 +22,6 @@ export default function ExperienceDetailsClient({
   businesses,
   lang,
 }: ExperienceDetailsClientProps) {
-  const pathname = usePathname();
-  const router = useRouter();
-
-
   function stripLocale(path: string) {
     const stripped = path.replace(/^\/(en|el)(?=\/|$)/, "");
     return stripped || "/";
@@ -44,10 +38,6 @@ export default function ExperienceDetailsClient({
     }
 
     return `/${locale}${cleanPath}`;
-  }
-
-  function switchLanguage(nextLang: Lang) {
-    router.push(withLang(pathname, nextLang));
   }
 
   function isExternalUrl(url: string) {

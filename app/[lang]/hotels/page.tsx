@@ -70,21 +70,6 @@ export default async function HotelsListingPage({ params }: Props) {
   const { lang: rawLang } = await params;
   const lang = (rawLang === 'el' ? 'el' : 'en') as Lang;
 
-  const t = {
-    h1: { en: "Where to Stay in Greece", el: "Πού να Μείνετε στην Ελλάδα" },
-    sub: {
-      en: "Browse hotel and accommodation guides by destination.",
-      el: "Δείτε οδηγούς ξενοδοχείων και καταλυμάτων ανά προορισμό.",
-    },
-    intro: {
-      en: "Choosing the right area matters more than choosing the right hotel — a caldera view in Santorini, a beach base in Naxos or a historic quarter in Athens each create a completely different trip. Our guides break down every destination area by area, with honest advice on views, prices, crowds and who each base suits best.",
-      el: "",
-    },
-    view: { en: 'View Guide', el: 'Προβολή Οδηγού' },
-    place: { en: 'Location', el: 'Τοποθεσία' },
-    tag: { en: "Where to Stay", el: "Διαμονή" }
-  };
-
   const breadcrumb = breadcrumbSchema(lang, [
     { label: lang === "en" ? "Home" : "Αρχική", path: "" },
     { label: lang === "en" ? "Hotels" : "Ξενοδοχεία", path: "/hotels" },

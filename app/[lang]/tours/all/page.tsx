@@ -4,7 +4,7 @@ import { experienceLandings } from '../../../../lib/experiences';
 import SiteHeader from '../../../../components/site-header';
 import ToursDirectoryClient from './tours-directory-client';
 import { SITE_URL } from '../../../../lib/content';
-import { Lang, isLang } from '../../../../lib/locale';
+import { isLang } from '../../../../lib/locale';
 import { breadcrumbSchema, collectionPageSchema } from '../../../../lib/structured-data';
 
 type Props = {
@@ -32,7 +32,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const canonicalUrl = `${SITE_URL}/${lang}/tours/all`;
   const enUrl = `${SITE_URL}/en/tours/all`;
-  const elUrl = `${SITE_URL}/el/tours/all`;
 
   return {
     title: t.title[lang],

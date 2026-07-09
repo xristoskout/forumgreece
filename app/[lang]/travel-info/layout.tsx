@@ -10,7 +10,6 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
 
   const canonicalUrl = `${SITE_URL}/${lang}/travel-info`;
   const enUrl = `${SITE_URL}/en/travel-info`;
-  const elUrl = `${SITE_URL}/el/travel-info`;
 
   return {
     title: {

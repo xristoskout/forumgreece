@@ -2,18 +2,10 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
 
 export default function NotFound() {
   const pathname = usePathname();
-  const [isGreek, setIsGreek] = useState(false);
-
-  useEffect(() => {
-    // Detect Greek language from pathname
-    if (pathname?.startsWith("/el")) {
-      setIsGreek(true);
-    }
-  }, [pathname]);
+  const isGreek = pathname?.startsWith("/el") ?? false;
 
   return (
     <main className="min-h-[85vh] flex flex-col items-center justify-center p-6 relative overflow-hidden text-slate-900">

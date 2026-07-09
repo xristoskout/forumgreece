@@ -48,7 +48,7 @@ export default function DiscoverCarsWidget({
       `data-layout_title="on"`,
     ].join(" ");
 
-    setSrcDoc(`<!DOCTYPE html>
+    setTimeout(() => setSrcDoc(`<!DOCTYPE html>
 <html lang="${lang}">
 <head>
   <meta charset="utf-8" />
@@ -63,7 +63,7 @@ export default function DiscoverCarsWidget({
   <div id="dchwidget" ${dataAttrs}></div>
   <script src="${WIDGET_SCRIPT}?v=${Date.now()}"><\/script>
 </body>
-</html>`);
+</html>`), 0);
   }, [location, lang]);
 
   return (
