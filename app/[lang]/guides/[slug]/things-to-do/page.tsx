@@ -123,7 +123,7 @@ export default async function ThingsToDoPage({ params }: Props) {
           {thingsSection ? (
             <div className="space-y-6">
               <h2 className="text-3xl font-bold text-slate-900 mb-8">{thingsSection.title?.[lang] || thingsSection.title?.en}</h2>
-              {(thingsSection as { items?: { title?: { en?: string; el?: string }; text?: { en?: string; el?: string } }[] }).items?.map((item, idx: number) => (
+              {(thingsSection as { items?: { title?: { en?: string; el?: string }; text?: { en?: string; el?: string }; content?: { en?: string; el?: string } }[] }).items?.map((item, idx: number) => (
                 <article key={idx} className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm hover:shadow-md transition-shadow">
                   {thingsSection.layout === "numbered" && (
                     <span className="mb-3 inline-flex items-center justify-center w-8 h-8 rounded-full bg-amber-100 text-amber-800 text-sm font-bold">

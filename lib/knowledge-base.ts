@@ -13,12 +13,14 @@ type LocalizedRecord = Record<string, string | string[]>;
 function getLocalized(item: LocalizedRecord | undefined, field: string, lang: Lang): string {
   if (!item) return '';
   const val = item[field];
-  if (typeof val === 'object') return (val as LocalizedRecord)?.[lang] as string || ((val as LocalizedRecord)?.en as string) || '';
-  return String(val || '');
+  if (Array.isArray(val)) return val.join(', ');
+  if (typeof val === 'object') return String((val as LocalizedRecord)?.[lang] ?? (val as LocalizedRecord)?.en ?? '');
+  return String(val ?? '');
 }
 function getLocalizedList(item: LocalizedRecord | undefined, field: string, lang: Lang): string[] {
   if (!item) return [];
   const val = item[field];
+  if (Array.isArray(val)) return val;
   if (typeof val === 'object') return ((val as LocalizedRecord)?.[lang] || (val as LocalizedRecord)?.en || []) as string[];
   return [];
 }

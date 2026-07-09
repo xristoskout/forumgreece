@@ -14,6 +14,7 @@ type RealPricing = Record<string, {
   water_bottle: number;
   taxi_5km: number | null;
   bus_ticket: number | null;
+  metro_ticket?: number;
   atv_scooter_day: number | null;
   car_rental_day: number | null;
   avg_hotel_low: number;
@@ -1905,12 +1906,12 @@ export default function DecisionEngineClient({ destinations, lang }: { destinati
                 {/* Dynamically mapped average temperature */}
                 <tr className="border-b font-semibold text-indigo-900 bg-indigo-50/30">
                     <td className="p-2 sm:p-4">{t.avgTemp[lang]} ({MONTH_LABELS[month]?.[lang as 'en' | 'el'] || month})</td>
-                    <td className="p-2 sm:p-4 text-center">              {(getRealData(s1.slug) as Record<string, unknown>).temp ?? 'N/A'}°C</td>
-                    <td className="p-2 sm:p-4 text-center">{(getRealData(s2.slug) as Record<string, unknown>).temp ?? 'N/A'}°C</td>
+                    <td className="p-2 sm:p-4 text-center">              {getRealData(s1.slug).temp ?? 'N/A'}°C</td>
+                    <td className="p-2 sm:p-4 text-center">{getRealData(s2.slug).temp ?? 'N/A'}°C</td>
                 </tr>
                 {featureKeys.map(item => {
-                  const val1 = getRealData(s1.slug)[item.key] ?? 7;
-                  const val2 = getRealData(s2.slug)[item.key] ?? 7;
+                  const val1 = Number((getRealData(s1.slug) as Record<string, unknown>)[item.key] ?? 7);
+                  const val2 = Number((getRealData(s2.slug) as Record<string, unknown>)[item.key] ?? 7);
                   return (
                     <tr key={item.key} className="border-b">
                         <td className="p-2 sm:p-4 font-semibold">{lang === 'el' ? item.label.el : item.label.en}</td>

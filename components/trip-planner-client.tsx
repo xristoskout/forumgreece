@@ -224,7 +224,7 @@ export default function TripPlannerClient({
       try { data = await res.json(); } catch { throw new Error("Invalid response from server"); }
       setItinerary(data);
     } catch (e: unknown) {
-      setError(e.message || (lang === "el" ? "Αποτυχία δημιουργίας" : "Generation failed"));
+      setError(e instanceof Error ? e.message : (lang === "el" ? "Αποτυχία δημιουργίας" : "Generation failed"));
     } finally {
       setLoading(false);
     }

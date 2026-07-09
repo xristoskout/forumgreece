@@ -5,6 +5,7 @@ import Image from "next/image";
 import SiteHeader from "../../../../components/site-header";
 import ViatorWidget from "../../../../components/viator-widget";
 
+import { siteBrand } from "../../../../lib/site-config";
 import { type Lang } from "../../../../lib/locale";
 import {
   type ExperienceBusiness,
