@@ -1,7 +1,10 @@
 import { Ratelimit } from "@upstash/ratelimit";
 import { Redis } from "@upstash/redis";
 
-const redis = Redis.fromEnv();
+let redis: Redis | null = null;
+try {
+  redis = Redis.fromEnv();
+} catch {}
 
 export async function checkRateLimit(
   identifier: string,
@@ -9,6 +12,7 @@ export async function checkRateLimit(
   windowMs: number = 60 * 1000
 ): Promise<{ allowed: boolean; remaining: number }> {
   try {
+    if (!redis) return { allowed: true, remaining: maxRequests };
     const windowSec = Math.ceil(windowMs / 1000);
 
     const limit = new Ratelimit({

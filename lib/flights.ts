@@ -5,7 +5,12 @@ const ADB_KEY = process.env.RAPIDAPI_KEY ?? "";
 const CACHE_TTL = 300; // 5 minutes fresh cache
 const STALE_TTL = 1800; // 30 minutes — serve stale on 429
 
-const redis = Redis.fromEnv();
+let redis: Redis | null = null;
+try {
+  redis = Redis.fromEnv();
+} catch {
+  console.warn("[flights] Redis not configured — caching disabled");
+}
 
 // L1 in-memory cache (survives across requests in same server process)
 const memCache = new Map<string, { ts: number; data: FlightData }>();
@@ -73,19 +78,21 @@ export async function fetchFlights(
   if (mem && Date.now() - mem.ts < MEM_TTL) return mem.data;
 
   // 1. Check Redis cache (fresh)
-  try {
-    const cached = await redis.get<FlightData>(cacheKey);
-    if (cached && Object.keys(cached).length > 0) {
-      const hasData =
-        (cached.departures?.length ?? 0) > 0 ||
-        (cached.arrivals?.length ?? 0) > 0;
-      if (hasData) {
-        memCache.set(cacheKey, { ts: Date.now(), data: cached });
-        return cached;
+  if (redis) {
+    try {
+      const cached = await redis.get<FlightData>(cacheKey);
+      if (cached && Object.keys(cached).length > 0) {
+        const hasData =
+          (cached.departures?.length ?? 0) > 0 ||
+          (cached.arrivals?.length ?? 0) > 0;
+        if (hasData) {
+          memCache.set(cacheKey, { ts: Date.now(), data: cached });
+          return cached;
+        }
       }
+    } catch {
+      // Redis unavailable — fall through to API
     }
-  } catch {
-    // Redis unavailable — fall through to API
   }
 
   // 2. Fetch from AeroDataBox using IATA
@@ -107,10 +114,12 @@ export async function fetchFlights(
     if (res.status === 429) {
       console.warn(`[flights] Rate limited for ${iata} — trying stale cache`);
       // On 429, try stale cache with longer TTL
-      try {
-        const stale = await redis.get<FlightData>(cacheKey);
-        if (stale) return stale;
-      } catch {}
+      if (redis) {
+        try {
+          const stale = await redis.get<FlightData>(cacheKey);
+          if (stale) return stale;
+        } catch {}
+      }
       // No stale cache either — return empty but don't cache it
       return { departures: [], arrivals: [] };
     }
@@ -129,19 +138,23 @@ export async function fetchFlights(
 
     if (hasFlights) {
       memCache.set(cacheKey, { ts: Date.now(), data });
-      try {
-        await redis.set(cacheKey, data, { ex: CACHE_TTL });
-      } catch {}
+      if (redis) {
+        try {
+          await redis.set(cacheKey, data, { ex: CACHE_TTL });
+        } catch {}
+      }
     }
 
     return data;
   } catch (err) {
     console.error(`[flights] Fetch failed for ${iata}:`, err);
     // Try stale cache on network error
-    try {
-      const stale = await redis.get<FlightData>(cacheKey);
-      if (stale) return stale;
-    } catch {}
+    if (redis) {
+      try {
+        const stale = await redis.get<FlightData>(cacheKey);
+        if (stale) return stale;
+      } catch {}
+    }
     return null;
   }
 }
