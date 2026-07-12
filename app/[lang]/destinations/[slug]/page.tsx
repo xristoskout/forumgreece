@@ -65,6 +65,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+export async function generateStaticParams() {
+  return destinations.map((d) => ({ slug: d.slug }));
+}
+
 export default async function DestinationDetailsPage({ params }: Props) {
   const resolvedParams = await params;
   const lang = (isLang(resolvedParams.lang) ? resolvedParams.lang : "en");

@@ -9,6 +9,8 @@ import { destinationSections } from "../../../../lib/destination-sections";
 import { destinationDetails } from "../../../../lib/destination-details";
 import DiscoverCarsWidget from "../../../../components/discovercars-widget";
 import { experienceBusinesses } from "../../../../lib/experiences";
+import FlightWidgetClient from "../../../../components/flight-widget-client";
+import { getAirportForDestination, getSeoText } from "../../../../lib/destination-airports";
 
 export default function DestinationDetailsClient({
   destination,
@@ -619,6 +621,25 @@ export default function DestinationDetailsClient({
                     {lang === "en" ? "View All Tours →" : "Δες Όλες τις Εκδρομές →"}
                   </Link>
                 </article>
+              );
+            })()}
+
+            {/* Flight Widget — only for destinations with airports */}
+            {(() => {
+              const airport = getAirportForDestination(slug);
+              if (!airport) return null;
+              const seoText = getSeoText(slug, airport);
+              return (
+                <>
+                  <FlightWidgetClient
+                    airportIcao={airport.icao}
+                    airportName={airport.name}
+                    lang={lang}
+                  />
+                  <article className="rounded-[28px] border border-slate-100 bg-slate-50 p-6 text-sm text-slate-500 leading-relaxed">
+                    <p>{seoText[lang]}</p>
+                  </article>
+                </>
               );
             })()}
 
