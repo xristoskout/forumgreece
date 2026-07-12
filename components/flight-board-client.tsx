@@ -194,7 +194,7 @@ export default function FlightBoardClient({
     setFlights([]);
     fetchData();
     if (timerRef.current) clearInterval(timerRef.current);
-    timerRef.current = setInterval(fetchData, 30_000);
+    timerRef.current = setInterval(fetchData, 300_000);
     return () => {
       if (timerRef.current) clearInterval(timerRef.current);
     };
@@ -343,7 +343,7 @@ export default function FlightBoardClient({
         <span>
           {flights.length} flight{flights.length !== 1 ? "s" : ""}
         </span>
-        <span>Auto-refresh: 30s</span>
+        <span>Auto-refresh: 5 min</span>
       </div>
     </div>
   );

@@ -168,7 +168,7 @@ export default function FlightWidgetClient({
     setLoading(true);
     fetchData();
     if (timerRef.current) clearInterval(timerRef.current);
-    timerRef.current = setInterval(fetchData, 30_000);
+    timerRef.current = setInterval(fetchData, 300_000);
     return () => { if (timerRef.current) clearInterval(timerRef.current); };
   }, [fetchData]);
 
@@ -304,7 +304,7 @@ export default function FlightWidgetClient({
       {!loading && flights.length > 0 && (
         <div className="px-4 py-2 border-t border-sky-100 text-center">
           <p className="text-[10px] text-slate-400">
-            {lang === "el" ? "Ενημέρωση κάθε 30δ." : "Updates every 30s"} ·{" "}
+            {lang === "el" ? "Ενημέρωση κάθε 5 λεπτά" : "Updates every 5 min"} ·{" "}
             <a
               href="https://www.flightradar24.com/data/airports/greece"
               target="_blank"
