@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const COOKIE_CONSENT_KEY = "gogreecenow_cookie_consent";
 const GA4_ID = "G-17ZPLMXNSF";
@@ -40,7 +39,6 @@ export default function ConsentAwareScripts() {
             {`gtag('js', new Date()); gtag('config', '${GA4_ID}', { anonymize_ip: true });`}
           </Script>
           <Analytics />
-          <SpeedInsights />
         </>
       )}
     </>
