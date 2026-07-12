@@ -9,7 +9,15 @@ let redis: Redis | null = null;
 try {
   redis = Redis.fromEnv();
 } catch {
-  console.warn("[flights] Redis not configured — caching disabled");
+  // Fallback: try with UPSTASH_REDIS_REST_KEY (older env var name)
+  try {
+    const url = process.env.UPSTASH_REDIS_REST_URL;
+    const key = process.env.UPSTASH_REDIS_REST_KEY;
+    if (url && key) {
+      redis = new Redis({ url, token: key });
+    }
+  } catch {}
+  if (!redis) console.warn("[flights] Redis not configured — caching disabled");
 }
 
 // L1 in-memory cache (survives across requests in same server process)

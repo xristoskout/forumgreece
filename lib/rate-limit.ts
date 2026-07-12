@@ -4,7 +4,15 @@ import { Redis } from "@upstash/redis";
 let redis: Redis | null = null;
 try {
   redis = Redis.fromEnv();
-} catch {}
+} catch {
+  try {
+    const url = process.env.UPSTASH_REDIS_REST_URL;
+    const key = process.env.UPSTASH_REDIS_REST_KEY;
+    if (url && key) {
+      redis = new Redis({ url, token: key });
+    }
+  } catch {}
+}
 
 export async function checkRateLimit(
   identifier: string,
