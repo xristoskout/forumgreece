@@ -87,9 +87,9 @@ export default async function RootLayout({
   return (
     <html
       lang={lang}
-      className={`${geistSans.variable} ${notoGreek.variable} ${playfair.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${notoGreek.variable} ${playfair.variable} h-full antialiased overflow-x-hidden`}
     >
-      <body className="min-h-full flex flex-col bg-[#f4f7fb] text-slate-900 relative selection:bg-purple-500/30">
+      <body className="min-h-full flex flex-col bg-[#f4f7fb] text-slate-900 relative selection:bg-purple-500/30 overflow-x-hidden">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

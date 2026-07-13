@@ -1019,6 +1019,107 @@ export const experienceLandings: ExperienceLanding[] = [
 
 export const experienceBusinesses: ExperienceBusiness[] = [
   {
+    slug: "papadellis-olive-oil",
+    landingSlug: "lesvos-tours",
+    name: "Papadellis Olive Oil",
+    category: {
+      en: "Local Products / Olive Oil",
+      el: "Τοπικά Προϊόντα / Ελαιόλαδο",
+    },
+    place: "Loutropoli Thermis, Lesvos",
+    info: {
+      en: "A family-owned business in Lesvos producing high-quality extra virgin olive oils (like the premium Sapfo), nutritious olives, and natural olive oil soaps, maintaining the island's authentic tradition.",
+      el: "Οικογενειακή επιχείρηση στη Λέσβο που παράγει υψηλής ποιότητας εξαιρετικό παρθένο ελαιόλαδο (όπως το premium Sapfo), θρεπτικές ελιές και φυσικά σαπούνια, διατηρώντας την αυθεντική παράδοση του νησιού.",
+    },
+    image: "/images/businesses/papadellis/papadellis.webp",
+    href: "/businesses/papadellis-olive-oil",
+    badge: "Local Producer",
+    overview: {
+      en: "Papadellis Olive Oil is a local producer based in Loutropoli Thermis, on the island of Lesvos. With deep respect for the area's centuries-old olive oil heritage, the Papadellis family crafts premium extra virgin olive oils, table olives, and naturally formulated soaps using traditional methods. Their distinctive products act as true ambassadors of the Mediterranean diet and the fertile Lesvian land.",
+      el: "Η Papadellis Olive Oil είναι μια τοπική επιχείρηση στη Λουτρόπολη Θέρμης, στη Λέσβο. Με βαθύ σεβασμό στη μακραίωνη ελαιοκομική παράδοση της περιοχής, η οικογένεια Παπαδέλλη δημιουργεί εξαιρετικά παρθένα ελαιόλαδα, επιτραπέζιες ελιές και φυσικά σαπούνια. Τα ξεχωριστά προϊόντα τους αποτελούν πραγματικούς πρεσβευτές της Μεσογειακής διατροφής και της εύφορης λεσβιακής γης.",
+    },
+    description: {
+      en: "Discover the authentic taste of Lesvos with Papadellis Olive Oil. Operating from Loutropoli Thermis, the business produces exceptional extra virgin olive oils, starring the acclaimed 'Sapfo' brand. Beyond olive oil, they offer nutrient-rich table olives harvested directly from their privately-owned groves and purely natural olive oil soaps that are perfect for gentle skin care. A true encapsulation of the tradition and rich aromas generously offered by the island.",
+      el: "Ανακαλύψτε την αυθεντική γεύση της Λέσβου μέσα από την Papadellis Olive Oil. Με έδρα τη Λουτρόπολη Θέρμης, η επιχείρηση παράγει εξαιρετικό παρθένο ελαιόλαδο, με πρωταγωνιστή τη φημισμένη σειρά 'Sapfo'. Πέρα από το ελαιόλαδο, προσφέρουν υψηλής διατροφικής αξίας ελιές από τους ιδιόκτητους ελαιώνες τους και απολύτως φυσικά σαπούνια ελαιολάδου, ιδανικά για την περιποίηση του δέρματος. Μια ολοκληρωμένη εμπειρία παράδοσης και αρωμάτων που χαρίζει η λεσβιακή γη.",
+    },
+    highlights: {
+      en: [
+        "Premium Extra Virgin Olive Oils",
+        "Nutrient-rich table olives",
+        "Natural olive oil soaps",
+        "Directly from privately-owned groves",
+      ],
+      el: [
+        "Premium Εξαιρετικό Παρθένο Ελαιόλαδο",
+        "Θρεπτικές επιτραπέζιες ελιές",
+        "Φυσικά σαπούνια ελαιολάδου",
+        "Απευθείας από ιδιόκτητους ελαιώνες",
+      ],
+    },
+    services: {
+      en: [
+        "Extra Virgin Olive Oils (Sapfo, Alkeos, Imerti)",
+        "Olives cultivated via natural processes",
+        "Olive oil soaps for face and body care",
+        "Options for B2B and HO.RE.CA",
+      ],
+      el: [
+        "Εξαιρετικά Παρθένα Ελαιόλαδα (Sapfo, Αλκαίος, Ιμερτή)",
+        "Ελιές που καλλιεργούνται με φυσικές διαδικασίες",
+        "Σαπούνια ελαιολάδου για πρόσωπο και σώμα",
+        "Επιλογές για επιχειρήσεις B2B και HO.RE.CA",
+      ],
+    },
+    story: {
+      en: "Firmly rooted in Loutropoli Thermis on the island of Lesvos, the Papadellis family has been passionately cultivating olive trees and producing olive oil, eager to share the unique characteristics and benefits of Lesvian olive varieties with the world.",
+      el: "Με σταθερές ρίζες στη Λουτρόπολη Θέρμης Λέσβου, η οικογένεια Παπαδέλλη καλλιεργεί τα ελαιόδεντρα και παράγει ελαιόλαδο με πάθος, με στόχο να ταξιδέψει σε όλο τον κόσμο τα μοναδικά χαρακτηριστικά και οφέλη των λεσβιακών ποικιλιών ελιάς.",
+    },
+    practicalInfo: {
+      en: [
+        "Based in Loutropoli Thermis, Lesvos",
+        "Contact directly at (+30) 22510 71377 for product inquiries",
+        "Products available for purchase via their online shop",
+      ],
+      el: [
+        "Η έδρα βρίσκεται στη Λουτρόπολη Θέρμης, Λέσβος",
+        "Απευθείας επικοινωνία στο (+30) 22510 71377 για πληροφορίες προϊόντων",
+        "Τα προϊόντα είναι διαθέσιμα για αγορά μέσω του e-shop τους",
+      ],
+    },
+    routes: {
+      en: [
+        "Loutropoli Thermis",
+        "Lesvos Island",
+      ],
+      el: [
+        "Λουτρόπολη Θέρμης",
+        "Νησί της Λέσβου",
+      ],
+    },
+    perfectFor: {
+      en: [
+        "Gastronomy lovers exploring Greek olive oil",
+        "Visitors discovering the traditional products of Lesvos",
+        "Anyone who embraces the Mediterranean diet",
+      ],
+      el: [
+        "Λάτρεις της γαστρονομίας που αναζητούν αυθεντικό ελληνικό ελαιόλαδο",
+        "Επισκέπτες που ανακαλύπτουν τα παραδοσιακά προϊόντα της Λέσβου",
+        "Όσους αγαπούν και ακολουθούν τη Μεσογειακή διατροφή",
+      ],
+    },
+    ctaLabel: {
+      en: "Explore products",
+      el: "Δείτε τα προϊόντα",
+    },
+    phone: "+302251071377",
+    email: "info@papadellis.eu",
+    website: "https://papadellis.eu/",
+    youtube: "",
+    galleryCount: 0,
+    mapQuery: "Papadellis Olive Oil Loutropoli Thermis Lesvos",
+  },
+  {
     slug: "iren-rooms",
     landingSlug: "lesvos-tours",
     name: "Iren Rooms",
@@ -1487,107 +1588,6 @@ practicalInfo: {
     youtube: "",
     galleryCount: 0,
     mapQuery: "Ταξί Express Πάτρας 450000",
-  },
-  {
-    slug: "papadellis-olive-oil",
-    landingSlug: "seafood-by-the-harbor",
-    name: "Papadellis Olive Oil",
-    category: {
-      en: "Local Products / Olive Oil",
-      el: "Τοπικά Προϊόντα / Ελαιόλαδο",
-    },
-    place: "Loutropoli Thermis, Lesvos",
-    info: {
-      en: "A family-owned business in Lesvos producing high-quality extra virgin olive oils (like the premium Sapfo), nutritious olives, and natural olive oil soaps, maintaining the island's authentic tradition.",
-      el: "Οικογενειακή επιχείρηση στη Λέσβο που παράγει υψηλής ποιότητας εξαιρετικό παρθένο ελαιόλαδο (όπως το premium Sapfo), θρεπτικές ελιές και φυσικά σαπούνια, διατηρώντας την αυθεντική παράδοση του νησιού.",
-    },
-    image: "/images/businesses/papadellis/papadellis.webp",
-    href: "/businesses/papadellis-olive-oil",
-    badge: "Local Producer",
-    overview: {
-      en: "Papadellis Olive Oil is a local producer based in Loutropoli Thermis, on the island of Lesvos. With deep respect for the area's centuries-old olive oil heritage, the Papadellis family crafts premium extra virgin olive oils, table olives, and naturally formulated soaps using traditional methods. Their distinctive products act as true ambassadors of the Mediterranean diet and the fertile Lesvian land.",
-      el: "Η Papadellis Olive Oil είναι μια τοπική επιχείρηση στη Λουτρόπολη Θέρμης, στη Λέσβο. Με βαθύ σεβασμό στη μακραίωνη ελαιοκομική παράδοση της περιοχής, η οικογένεια Παπαδέλλη δημιουργεί εξαιρετικά παρθένα ελαιόλαδα, επιτραπέζιες ελιές και φυσικά σαπούνια. Τα ξεχωριστά προϊόντα τους αποτελούν πραγματικούς πρεσβευτές της Μεσογειακής διατροφής και της εύφορης λεσβιακής γης.",
-    },
-    description: {
-      en: "Discover the authentic taste of Lesvos with Papadellis Olive Oil. Operating from Loutropoli Thermis, the business produces exceptional extra virgin olive oils, starring the acclaimed 'Sapfo' brand. Beyond olive oil, they offer nutrient-rich table olives harvested directly from their privately-owned groves and purely natural olive oil soaps that are perfect for gentle skin care. A true encapsulation of the tradition and rich aromas generously offered by the island.",
-      el: "Ανακαλύψτε την αυθεντική γεύση της Λέσβου μέσα από την Papadellis Olive Oil. Με έδρα τη Λουτρόπολη Θέρμης, η επιχείρηση παράγει εξαιρετικό παρθένο ελαιόλαδο, με πρωταγωνιστή τη φημισμένη σειρά 'Sapfo'. Πέρα από το ελαιόλαδο, προσφέρουν υψηλής διατροφικής αξίας ελιές από τους ιδιόκτητους ελαιώνες τους και απολύτως φυσικά σαπούνια ελαιολάδου, ιδανικά για την περιποίηση του δέρματος. Μια ολοκληρωμένη εμπειρία παράδοσης και αρωμάτων που χαρίζει η λεσβιακή γη.",
-    },
-    highlights: {
-      en: [
-        "Premium Extra Virgin Olive Oils",
-        "Nutrient-rich table olives",
-        "Natural olive oil soaps",
-        "Directly from privately-owned groves",
-      ],
-      el: [
-        "Premium Εξαιρετικό Παρθένο Ελαιόλαδο",
-        "Θρεπτικές επιτραπέζιες ελιές",
-        "Φυσικά σαπούνια ελαιολάδου",
-        "Απευθείας από ιδιόκτητους ελαιώνες",
-      ],
-    },
-    services: {
-      en: [
-        "Extra Virgin Olive Oils (Sapfo, Alkeos, Imerti)",
-        "Olives cultivated via natural processes",
-        "Olive oil soaps for face and body care",
-        "Options for B2B and HO.RE.CA",
-      ],
-      el: [
-        "Εξαιρετικά Παρθένα Ελαιόλαδα (Sapfo, Αλκαίος, Ιμερτή)",
-        "Ελιές που καλλιεργούνται με φυσικές διαδικασίες",
-        "Σαπούνια ελαιολάδου για πρόσωπο και σώμα",
-        "Επιλογές για επιχειρήσεις B2B και HO.RE.CA",
-      ],
-    },
-    story: {
-      en: "Firmly rooted in Loutropoli Thermis on the island of Lesvos, the Papadellis family has been passionately cultivating olive trees and producing olive oil, eager to share the unique characteristics and benefits of Lesvian olive varieties with the world.",
-      el: "Με σταθερές ρίζες στη Λουτρόπολη Θέρμης Λέσβου, η οικογένεια Παπαδέλλη καλλιεργεί τα ελαιόδεντρα και παράγει ελαιόλαδο με πάθος, με στόχο να ταξιδέψει σε όλο τον κόσμο τα μοναδικά χαρακτηριστικά και οφέλη των λεσβιακών ποικιλιών ελιάς.",
-    },
-    practicalInfo: {
-      en: [
-        "Based in Loutropoli Thermis, Lesvos",
-        "Contact directly at (+30) 22510 71377 for product inquiries",
-        "Products available for purchase via their online shop",
-      ],
-      el: [
-        "Η έδρα βρίσκεται στη Λουτρόπολη Θέρμης, Λέσβος",
-        "Απευθείας επικοινωνία στο (+30) 22510 71377 για πληροφορίες προϊόντων",
-        "Τα προϊόντα είναι διαθέσιμα για αγορά μέσω του e-shop τους",
-      ],
-    },
-    routes: {
-      en: [
-        "Loutropoli Thermis",
-        "Lesvos Island",
-      ],
-      el: [
-        "Λουτρόπολη Θέρμης",
-        "Νησί της Λέσβου",
-      ],
-    },
-    perfectFor: {
-      en: [
-        "Gastronomy lovers exploring Greek olive oil",
-        "Visitors discovering the traditional products of Lesvos",
-        "Anyone who embraces the Mediterranean diet",
-      ],
-      el: [
-        "Λάτρεις της γαστρονομίας που αναζητούν αυθεντικό ελληνικό ελαιόλαδο",
-        "Επισκέπτες που ανακαλύπτουν τα παραδοσιακά προϊόντα της Λέσβου",
-        "Όσους αγαπούν και ακολουθούν τη Μεσογειακή διατροφή",
-      ],
-    },
-    ctaLabel: {
-      en: "Explore products",
-      el: "Δείτε τα προϊόντα",
-    },
-    phone: "+302251071377",
-    email: "info@papadellis.eu",
-    website: "https://papadellis.eu/",
-    youtube: "",
-    galleryCount: 0,
-    mapQuery: "Papadellis Olive Oil Loutropoli Thermis Lesvos",
   },
   {
     slug: "vintage-wedding-cars",
