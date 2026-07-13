@@ -519,7 +519,7 @@ export default function DestinationDetailsClient({
               })}
           </div>
 
-          <aside className="space-y-6">
+          <aside className="space-y-6 overflow-hidden">
             {sections.filter(s => s.title.en.toLowerCase().includes("honest advice") || s.title.en.toLowerCase().includes("what to skip") || s.title.en.toLowerCase().includes("what nobody tells you") || s.title.el.includes("Ειλικρινής Συμβουλή") || s.title.el.includes("Τι να Αποφύγεις") || s.title.el.includes("Τι δεν σου λέει κανείς")).map((section, idx) => {
               let items: string[] = [];
               let insight = '';

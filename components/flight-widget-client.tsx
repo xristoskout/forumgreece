@@ -250,13 +250,13 @@ export default function FlightWidgetClient({
                 {time}
               </span>
 
-              {/* Airline logo */}
+              {/* Airline logo — hidden on very small screens */}
               {carrier ? (
                 <img
                   src={`https://pics.avs.io/80/40/${carrier}.png`}
                   alt={airlineName}
                   title={airlineName}
-                  className="w-14 h-7 object-contain shrink-0 rounded bg-white border border-slate-100 shadow-sm"
+                  className="w-14 h-7 object-contain shrink-0 rounded bg-white border border-slate-100 shadow-sm hidden sm:block"
                   loading="lazy"
                   onError={(e) => {
                     const el = e.currentTarget as HTMLImageElement;
@@ -274,7 +274,7 @@ export default function FlightWidgetClient({
               </div>
 
               {/* Flight number */}
-              <span className="font-mono text-xs font-bold text-slate-700 shrink-0">
+              <span className="font-mono text-[11px] font-bold text-slate-700 shrink-0 hidden sm:inline">
                 {f.number}
               </span>
 
@@ -289,9 +289,9 @@ export default function FlightWidgetClient({
                 <span className={`text-[10px] font-semibold ${si.color}`}>{si.label}</span>
               </div>
 
-              {/* Gate */}
+              {/* Gate — hidden on mobile */}
               {gate && (
-                <span className="font-mono text-[10px] text-slate-400 bg-slate-100 px-1.5 py-0.5 rounded shrink-0">
+                <span className="font-mono text-[10px] text-slate-400 bg-slate-100 px-1.5 py-0.5 rounded shrink-0 hidden sm:inline">
                   {gate}
                 </span>
               )}
