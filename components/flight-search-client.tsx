@@ -1,22 +1,87 @@
 "use client";
 
-import { useState, useRef, useEffect, useCallback } from "react";
+import { useState, useRef, useEffect, useMemo } from "react";
 import Image from "next/image";
 
-type SuggestionAirport = {
-  id: string;
-  name: string;
-  city: string;
-  distance: string;
-};
-
-type Suggestion = {
-  name: string;
-  type: string;
-  description: string;
-  id: string;
-  airports: SuggestionAirport[];
-};
+const AIRPORTS = [
+  // Major European hubs
+  { code: "ATH", name: "Athens", country: "Greece" },
+  { code: "SKG", name: "Thessaloniki", country: "Greece" },
+  { code: "HER", name: "Heraklion", country: "Greece" },
+  { code: "CHQ", name: "Chania", country: "Greece" },
+  { code: "JTR", name: "Santorini", country: "Greece" },
+  { code: "JMK", name: "Mykonos", country: "Greece" },
+  { code: "RHO", name: "Rhodes", country: "Greece" },
+  { code: "CFU", name: "Corfu", country: "Greece" },
+  { code: "EFL", name: "Kefalonia", country: "Greece" },
+  { code: "ZTH", name: "Zakynthos", country: "Greece" },
+  { code: "KGS", name: "Kos", country: "Greece" },
+  { code: "MJT", name: "Lesvos", country: "Greece" },
+  { code: "JKH", name: "Chios", country: "Greece" },
+  { code: "PAS", name: "Paros", country: "Greece" },
+  { code: "JNX", name: "Naxos", country: "Greece" },
+  { code: "AOK", name: "Karpathos", country: "Greece" },
+  { code: "MLO", name: "Milos", country: "Greece" },
+  { code: "JSI", name: "Skiathos", country: "Greece" },
+  { code: "PVK", name: "Preveza", country: "Greece" },
+  { code: "KVA", name: "Kavala", country: "Greece" },
+  { code: "SMI", name: "Samos", country: "Greece" },
+  { code: "JIK", name: "Ikaria", country: "Greece" },
+  { code: "KLX", name: "Kalamata", country: "Greece" },
+  { code: "GPA", name: "Patras", country: "Greece" },
+  { code: "LXS", name: "Lemnos", country: "Greece" },
+  // Major European departure cities
+  { code: "LHR", name: "London Heathrow", country: "UK" },
+  { code: "LGW", name: "London Gatwick", country: "UK" },
+  { code: "STN", name: "London Stansted", country: "UK" },
+  { code: "LTN", name: "London Luton", country: "UK" },
+  { code: "CDG", name: "Paris CDG", country: "France" },
+  { code: "ORY", name: "Paris Orly", country: "France" },
+  { code: "FRA", name: "Frankfurt", country: "Germany" },
+  { code: "MUC", name: "Munich", country: "Germany" },
+  { code: "BER", name: "Berlin", country: "Germany" },
+  { code: "DUS", name: "Düsseldorf", country: "Germany" },
+  { code: "TXL", name: "Berlin Tegel", country: "Germany" },
+  { code: "AMS", name: "Amsterdam", country: "Netherlands" },
+  { code: "BRU", name: "Brussels", country: "Belgium" },
+  { code: "MAD", name: "Madrid", country: "Spain" },
+  { code: "BCN", name: "Barcelona", country: "Spain" },
+  { code: "FCO", name: "Rome Fiumicino", country: "Italy" },
+  { code: "MXP", name: "Milan Malpensa", country: "Italy" },
+  { code: "VIE", name: "Vienna", country: "Austria" },
+  { code: "ZRH", name: "Zurich", country: "Switzerland" },
+  { code: "GVA", name: "Geneva", country: "Switzerland" },
+  { code: "CPH", name: "Copenhagen", country: "Denmark" },
+  { code: "ARN", name: "Stockholm", country: "Sweden" },
+  { code: "OSL", name: "Oslo", country: "Norway" },
+  { code: "HEL", name: "Helsinki", country: "Finland" },
+  { code: "WAW", name: "Warsaw", country: "Poland" },
+  { code: "PRG", name: "Prague", country: "Czech Republic" },
+  { code: "BUD", name: "Budapest", country: "Hungary" },
+  { code: "OTP", name: "Bucharest", country: "Romania" },
+  { code: "SOF", name: "Sofia", country: "Bulgaria" },
+  { code: "BEG", name: "Belgrade", country: "Serbia" },
+  { code: "ZAG", name: "Zagreb", country: "Croatia" },
+  { code: "BCN", name: "Barcelona", country: "Spain" },
+  { code: "LIS", name: "Lisbon", country: "Portugal" },
+  { code: "DUB", name: "Dublin", country: "Ireland" },
+  { code: "EDI", name: "Edinburgh", country: "UK" },
+  { code: "MAN", name: "Manchester", country: "UK" },
+  { code: "BHX", name: "Birmingham", country: "UK" },
+  // Middle East hubs
+  { code: "DXB", name: "Dubai", country: "UAE" },
+  { code: "DOH", name: "Doha", country: "Qatar" },
+  { code: "AUH", name: "Abu Dhabi", country: "UAE" },
+  { code: "IST", name: "Istanbul", country: "Turkey" },
+  // US gateways
+  { code: "JFK", name: "New York JFK", country: "USA" },
+  { code: "EWR", name: "Newark", country: "USA" },
+  { code: "LAX", name: "Los Angeles", country: "USA" },
+  { code: "ORD", name: "Chicago O'Hare", country: "USA" },
+  { code: "BOS", name: "Boston", country: "USA" },
+  { code: "MIA", name: "Miami", country: "USA" },
+  { code: "SFO", name: "San Francisco", country: "USA" },
+];
 
 type FlightLeg = {
   departure_airport: { name: string; id: string; time: string };
@@ -50,13 +115,6 @@ type FlightResult = {
 
 type Tab = "best" | "cheapest" | "fastest";
 
-const TRAVEL_CLASSES = [
-  { value: "1", label: "Economy" },
-  { value: "2", label: "Premium Economy" },
-  { value: "3", label: "Business" },
-  { value: "4", label: "First" },
-];
-
 function formatDuration(mins: number): string {
   const h = Math.floor(mins / 60);
   const m = mins % 60;
@@ -82,25 +140,27 @@ function getStopsColor(layovers: FlightResult["layovers"]): string {
 }
 
 function AirportInput({
-  value,
+  code,
   displayValue,
-  onChange,
-  onAirportSelect,
+  onPick,
   placeholder,
   label,
 }: {
-  value: string;
+  code: string;
   displayValue: string;
-  onChange: (val: string) => void;
-  onAirportSelect: (airportCode: string, displayName: string) => void;
+  onPick: (code: string, display: string) => void;
   placeholder: string;
   label: string;
 }) {
-  const [suggestions, setSuggestions] = useState<Suggestion[]>([]);
+  const [query, setQuery] = useState(displayValue);
   const [open, setOpen] = useState(false);
-  const [loading, setLoading] = useState(false);
+  const [highlight, setHighlight] = useState(-1);
   const wrapperRef = useRef<HTMLDivElement>(null);
-  const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const listRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    setQuery(displayValue);
+  }, [displayValue]);
 
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
@@ -112,27 +172,24 @@ function AirportInput({
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  const fetchResults = useCallback((q: string) => {
-    if (debounceRef.current) clearTimeout(debounceRef.current);
-    if (q.length < 2) {
-      setSuggestions([]);
-      setOpen(false);
-      return;
-    }
-    setLoading(true);
-    debounceRef.current = setTimeout(async () => {
-      try {
-        const res = await fetch(`/api/flight-autocomplete?q=${encodeURIComponent(q)}`);
-        const data = await res.json();
-        setSuggestions(data.suggestions ?? []);
-        setOpen(true);
-      } catch {
-        setSuggestions([]);
-      } finally {
-        setLoading(false);
-      }
-    }, 350);
-  }, []);
+  const filtered = useMemo(() => {
+    if (query.length < 1) return [];
+    const q = query.toLowerCase();
+    return AIRPORTS.filter(
+      (a) =>
+        a.code.toLowerCase().includes(q) ||
+        a.name.toLowerCase().includes(q) ||
+        a.country.toLowerCase().includes(q)
+    ).slice(0, 12);
+  }, [query]);
+
+  function selectAirport(a: { code: string; name: string; country: string }) {
+    const display = `${a.name} (${a.code})`;
+    setQuery(display);
+    setOpen(false);
+    setHighlight(-1);
+    onPick(a.code, display);
+  }
 
   return (
     <div ref={wrapperRef} className="relative flex-1 min-w-0">
@@ -141,89 +198,61 @@ function AirportInput({
       </label>
       <input
         type="text"
-        value={displayValue}
+        value={query}
         onChange={(e) => {
-          onChange(e.target.value);
-          onAirportSelect("", "");
-          fetchResults(e.target.value);
+          setQuery(e.target.value);
+          onPick("", "");
+          setOpen(true);
+          setHighlight(-1);
         }}
         onFocus={() => {
-          if (suggestions.length > 0) setOpen(true);
+          if (query.length >= 1) setOpen(true);
+        }}
+        onKeyDown={(e) => {
+          if (!open || filtered.length === 0) return;
+          if (e.key === "ArrowDown") {
+            e.preventDefault();
+            setHighlight((prev) => (prev < filtered.length - 1 ? prev + 1 : 0));
+          } else if (e.key === "ArrowUp") {
+            e.preventDefault();
+            setHighlight((prev) => (prev > 0 ? prev - 1 : filtered.length - 1));
+          } else if (e.key === "Enter" && highlight >= 0) {
+            e.preventDefault();
+            selectAirport(filtered[highlight]);
+          } else if (e.key === "Escape") {
+            setOpen(false);
+          }
         }}
         placeholder={placeholder}
         className="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 placeholder:text-slate-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all"
       />
-      {loading && (
-        <div className="absolute right-3 top-[26px]">
-          <span className="w-4 h-4 border-2 border-slate-200 border-t-blue-500 rounded-full animate-spin block" />
+      {open && filtered.length > 0 && (
+        <div ref={listRef} className="absolute z-50 mt-1 w-full rounded-xl border border-slate-200 bg-white shadow-xl max-h-72 overflow-y-auto">
+          {filtered.map((a, i) => (
+            <button
+              key={a.code}
+              type="button"
+              onMouseDown={(e) => {
+                e.preventDefault();
+                selectAirport(a);
+              }}
+              onMouseEnter={() => setHighlight(i)}
+              className={`w-full text-left px-4 py-2.5 flex items-center gap-3 transition-colors border-b border-slate-50 last:border-0 ${
+                highlight === i ? "bg-blue-50" : "hover:bg-slate-50"
+              }`}
+            >
+              <span className="text-xs font-mono font-bold bg-slate-100 px-2 py-0.5 rounded text-slate-600 shrink-0">
+                {a.code}
+              </span>
+              <span className="text-sm text-slate-700 truncate">{a.name}</span>
+              <span className="ml-auto text-[10px] text-slate-400 shrink-0">{a.country}</span>
+            </button>
+          ))}
         </div>
       )}
-      {open && suggestions.length > 0 && (
-        <div className="absolute z-50 mt-1 w-full rounded-xl border border-slate-200 bg-white shadow-xl max-h-72 overflow-y-auto">
-          {suggestions.map((s, sIdx) => {
-            const primaryAirport = s.airports?.[0];
-            return (
-              <div key={sIdx}>
-                {/* City header */}
-                <button
-                  type="button"
-                  onClick={() => {
-                    if (primaryAirport) {
-                      onAirportSelect(primaryAirport.id, `${s.name} (${primaryAirport.id})`);
-                    } else {
-                      onAirportSelect(s.id, s.name);
-                    }
-                    setOpen(false);
-                  }}
-                  className="w-full text-left px-4 py-3 hover:bg-blue-50 transition-colors border-b border-slate-100"
-                >
-                  <div className="flex items-center gap-3">
-                    <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-blue-100 text-blue-600">
-                      {s.type === "airport" ? (
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg>
-                      ) : (
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-                      )}
-                    </div>
-                    <div className="min-w-0">
-                      <p className="text-sm font-semibold text-slate-800 truncate">{s.name}</p>
-                      {s.description && (
-                        <p className="text-[11px] text-slate-400 truncate">{s.description}</p>
-                      )}
-                    </div>
-                    {primaryAirport && (
-                      <span className="ml-auto text-xs font-mono font-bold bg-slate-100 px-2 py-0.5 rounded text-slate-500 shrink-0">
-                        {primaryAirport.id}
-                      </span>
-                    )}
-                  </div>
-                </button>
-
-                {/* Sub-airports for city */}
-                {s.airports && s.airports.length > 1 && s.airports.map((airport) => (
-                  <button
-                    key={airport.id}
-                    type="button"
-                    onClick={() => {
-                      onAirportSelect(airport.id, `${airport.name} (${airport.id})`);
-                      setOpen(false);
-                    }}
-                    className="w-full text-left px-4 py-2.5 pl-14 hover:bg-blue-50 transition-colors border-b border-slate-50 last:border-0"
-                  >
-                    <div className="flex items-center gap-2">
-                      <span className="text-xs font-mono font-bold bg-slate-100 px-2 py-0.5 rounded text-slate-500">
-                        {airport.id}
-                      </span>
-                      <span className="text-xs text-slate-500 truncate">{airport.name}</span>
-                      {airport.distance && (
-                        <span className="ml-auto text-[10px] text-slate-300 shrink-0">{airport.distance}</span>
-                      )}
-                    </div>
-                  </button>
-                ))}
-              </div>
-            );
-          })}
+      {open && query.length >= 1 && filtered.length === 0 && (
+        <div className="absolute z-50 mt-1 w-full rounded-xl border border-slate-200 bg-white shadow-xl px-4 py-3 text-sm text-slate-400">
+          No airport found. Type IATA code (e.g. ATH).
         </div>
       )}
     </div>
@@ -239,10 +268,14 @@ export default function FlightSearchClient({
   destinationName?: string;
   lang?: string;
 }) {
+  const defaultDisplay = defaultArrival && destinationName
+    ? `${destinationName} (${defaultArrival})`
+    : "";
+
   const [fromCode, setFromCode] = useState("");
   const [fromDisplay, setFromDisplay] = useState("");
   const [toCode, setToCode] = useState(defaultArrival || "");
-  const [toDisplay, setToDisplay] = useState(defaultArrival ? `${destinationName || ""} (${defaultArrival})` : "");
+  const [toDisplay, setToDisplay] = useState(defaultDisplay);
   const [outboundDate, setOutboundDate] = useState("");
   const [returnDate, setReturnDate] = useState("");
   const [tripType, setTripType] = useState<"1" | "2">("1");
@@ -298,9 +331,8 @@ export default function FlightSearchClient({
 
   return (
     <div className="w-full">
-      {/* Search Form */}
       <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-        {/* Trip Type Toggle */}
+        {/* Trip Type */}
         <div className="flex gap-2 mb-4">
           <button
             type="button"
@@ -329,29 +361,21 @@ export default function FlightSearchClient({
         {/* From / To */}
         <div className="flex gap-3 mb-4">
           <AirportInput
-            value={fromCode}
+            code={fromCode}
             displayValue={fromDisplay}
-            onChange={(val) => {
-              setFromDisplay(val);
-              setFromCode("");
+            onPick={(c, d) => {
+              setFromCode(c);
+              setFromDisplay(d);
             }}
-            onAirportSelect={(code, name) => {
-              setFromCode(code);
-              if (name) setFromDisplay(name);
-            }}
-            placeholder={lang === "el" ? "Πόλη αναχώρησης" : "City or airport"}
+            placeholder={lang === "el" ? "Πόλη ή αεροδρόμιο" : "City or airport"}
             label={lang === "el" ? "Από" : "From"}
           />
           <AirportInput
-            value={toCode}
+            code={toCode}
             displayValue={toDisplay}
-            onChange={(val) => {
-              setToDisplay(val);
-              setToCode("");
-            }}
-            onAirportSelect={(code, name) => {
-              setToCode(code);
-              if (name) setToDisplay(name);
+            onPick={(c, d) => {
+              setToCode(c);
+              setToDisplay(d);
             }}
             placeholder={destinationName || (lang === "el" ? "Προορισμός" : "Destination")}
             label={lang === "el" ? "Προς" : "To"}
@@ -415,11 +439,10 @@ export default function FlightSearchClient({
               onChange={(e) => setTravelClass(e.target.value)}
               className="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all"
             >
-              {TRAVEL_CLASSES.map((c) => (
-                <option key={c.value} value={c.value}>
-                  {c.label}
-                </option>
-              ))}
+              <option value="1">Economy</option>
+              <option value="2">Premium Economy</option>
+              <option value="3">Business</option>
+              <option value="4">First</option>
             </select>
           </div>
         </div>
@@ -466,7 +489,6 @@ export default function FlightSearchClient({
       {/* Results */}
       {results.length > 0 && (
         <div className="mt-4">
-          {/* Tabs */}
           <div className="flex gap-2 mb-4">
             {(["best", "cheapest", "fastest"] as Tab[]).map((tab) => {
               const tabSorted = [...results].sort((a, b) => {
@@ -497,7 +519,6 @@ export default function FlightSearchClient({
             })}
           </div>
 
-          {/* Flight Cards */}
           <div className="space-y-3">
             {sorted.map((flight, idx) => {
               const firstLeg = flight.flights[0];
@@ -508,7 +529,6 @@ export default function FlightSearchClient({
                   key={idx}
                   className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition-shadow"
                 >
-                  {/* Header: Price + Airline */}
                   <div className="flex items-center justify-between mb-3">
                     <div className="flex items-center gap-2">
                       {flight.airline_logo && (
@@ -528,14 +548,11 @@ export default function FlightSearchClient({
                           : ""}
                       </span>
                     </div>
-                    <div className="text-right">
-                      <span className="text-lg font-extrabold text-slate-900">
-                        &euro;{flight.price}
-                      </span>
-                    </div>
+                    <span className="text-lg font-extrabold text-slate-900">
+                      &euro;{flight.price}
+                    </span>
                   </div>
 
-                  {/* Route: Time -> Time | Duration | Stops */}
                   <div className="flex items-center gap-3">
                     <div className="text-center">
                       <p className="text-lg font-bold text-slate-900 font-mono">
@@ -553,9 +570,7 @@ export default function FlightSearchClient({
                       <div className="w-full flex items-center gap-1">
                         <div className="h-px flex-1 bg-slate-200" />
                         {flight.layovers.map((_, i) => (
-                          <div key={i} className="flex items-center gap-1">
-                            <div className="w-2 h-2 rounded-full bg-amber-400 border-2 border-white shadow-sm -mx-1" />
-                          </div>
+                          <div key={i} className="w-2 h-2 rounded-full bg-amber-400 border-2 border-white shadow-sm -mx-1" />
                         ))}
                         <div className="h-px flex-1 bg-slate-200" />
                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-slate-400 shrink-0"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg>
@@ -576,7 +591,6 @@ export default function FlightSearchClient({
                     </div>
                   </div>
 
-                  {/* Layover Details */}
                   {flight.layovers.length > 0 && (
                     <div className="mt-2 text-[10px] text-slate-400 text-center">
                       {flight.layovers.map((l, i) => (
@@ -588,7 +602,6 @@ export default function FlightSearchClient({
                     </div>
                   )}
 
-                  {/* Book Button */}
                   <div className="mt-3">
                     <a
                       href={flight.google_flights_url || `https://www.google.com/travel/flights?q=flights+from+${firstLeg.departure_airport.id}+to+${lastLeg.arrival_airport.id}`}
