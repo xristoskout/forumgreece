@@ -262,11 +262,9 @@ function AirportInput({
 export default function FlightSearchClient({
   defaultArrival,
   destinationName,
-  lang,
 }: {
   defaultArrival?: string;
   destinationName?: string;
-  lang?: string;
 }) {
   const defaultDisplay = defaultArrival && destinationName
     ? `${destinationName} (${defaultArrival})`
@@ -343,7 +341,7 @@ export default function FlightSearchClient({
                 : "bg-slate-100 text-slate-500 hover:bg-slate-200"
             }`}
           >
-            {lang === "el" ? "Επιστροφή" : "Round Trip"}
+            Round Trip
           </button>
           <button
             type="button"
@@ -354,7 +352,7 @@ export default function FlightSearchClient({
                 : "bg-slate-100 text-slate-500 hover:bg-slate-200"
             }`}
           >
-            {lang === "el" ? "Μονό" : "One Way"}
+            One Way
           </button>
         </div>
 
@@ -367,8 +365,8 @@ export default function FlightSearchClient({
               setFromCode(c);
               setFromDisplay(d);
             }}
-            placeholder={lang === "el" ? "Πόλη ή αεροδρόμιο" : "City or airport"}
-            label={lang === "el" ? "Από" : "From"}
+            placeholder="City or airport"
+            label="From"
           />
           <AirportInput
             code={toCode}
@@ -377,8 +375,8 @@ export default function FlightSearchClient({
               setToCode(c);
               setToDisplay(d);
             }}
-            placeholder={destinationName || (lang === "el" ? "Προορισμός" : "Destination")}
-            label={lang === "el" ? "Προς" : "To"}
+            placeholder={destinationName || "Destination"}
+            label="To"
           />
         </div>
 
@@ -386,23 +384,25 @@ export default function FlightSearchClient({
         <div className="flex gap-3 mb-4">
           <div className="flex-1 min-w-0">
             <label className="block text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1.5">
-              {lang === "el" ? "Αναχώρηση" : "Depart"}
+              Depart
             </label>
-            <input
-              type="date"
-              value={outboundDate}
-              min={today}
-              onChange={(e) => setOutboundDate(e.target.value)}
-              className="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all"
-            />
+              <input
+                type="date"
+                lang="en"
+                value={outboundDate}
+                min={today}
+                onChange={(e) => setOutboundDate(e.target.value)}
+                className="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all"
+              />
           </div>
           {tripType === "1" && (
             <div className="flex-1 min-w-0">
               <label className="block text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1.5">
-                {lang === "el" ? "Επιστροφή" : "Return"}
+                Return
               </label>
               <input
                 type="date"
+                lang="en"
                 value={returnDate}
                 min={outboundDate || today}
                 onChange={(e) => setReturnDate(e.target.value)}
@@ -416,7 +416,7 @@ export default function FlightSearchClient({
         <div className="flex gap-3 mb-4">
           <div className="flex-1 min-w-0">
             <label className="block text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1.5">
-              {lang === "el" ? "Επιβάτες" : "Passengers"}
+              Passengers
             </label>
             <select
               value={passengers}
@@ -432,7 +432,7 @@ export default function FlightSearchClient({
           </div>
           <div className="flex-1 min-w-0">
             <label className="block text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1.5">
-              {lang === "el" ? "Κλάση" : "Class"}
+              Class
             </label>
             <select
               value={travelClass}
@@ -457,12 +457,12 @@ export default function FlightSearchClient({
           {loading ? (
             <>
               <span className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-              {lang === "el" ? "Αναζήτηση..." : "Searching..."}
+              Searching...
             </>
           ) : (
             <>
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-              {lang === "el" ? "Ψάξε Πτήσεις" : "Search Flights"}
+              Search Flights
             </>
           )}
         </button>
@@ -479,9 +479,7 @@ export default function FlightSearchClient({
       {searched && !loading && results.length === 0 && !error && (
         <div className="mt-4 rounded-xl border border-slate-200 bg-white p-8 text-center">
           <p className="text-slate-400 text-sm">
-            {lang === "el"
-              ? "Δεν βρέθηκαν πτήσεις. Δοκιμάστε διαφορετικές ημερομηνίες."
-              : "No flights found. Try different dates."}
+            No flights found. Try different dates.
           </p>
         </div>
       )}
@@ -609,7 +607,7 @@ export default function FlightSearchClient({
                       rel="noopener noreferrer"
                       className="block w-full text-center rounded-xl bg-blue-600 py-2.5 text-xs font-bold text-white hover:bg-blue-500 transition-colors shadow-sm"
                     >
-                      {lang === "el" ? "Βιβλίωση στο Google Flights" : "Book on Google Flights"} &rarr;
+                      Book on Google Flights &rarr;
                     </a>
                   </div>
                 </div>
