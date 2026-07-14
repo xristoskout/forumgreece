@@ -9,7 +9,7 @@ export async function GET(req: NextRequest) {
 
   const q = req.nextUrl.searchParams.get("q");
   if (!q || q.length < 2) {
-    return NextResponse.json({ results: [] });
+    return NextResponse.json({ suggestions: [] });
   }
 
   try {
@@ -21,20 +21,25 @@ export async function GET(req: NextRequest) {
 
     const res = await fetch(`https://serpapi.com/search?${params.toString()}`);
     if (!res.ok) {
-      return NextResponse.json({ results: [] }, { status: 502 });
+      return NextResponse.json({ suggestions: [] }, { status: 502 });
     }
 
     const data = await res.json();
-    const airports = (data.airports ?? []).map((a: Record<string, unknown>) => ({
-      id: a.id,
-      name: a.name,
-      airport_name: a.airport_name,
-      city: a.city,
-      type: a.type,
+    const suggestions = (data.suggestions ?? []).map((s: Record<string, unknown>) => ({
+      name: s.name,
+      type: s.type,
+      description: s.description,
+      id: s.id,
+      airports: (s.airports as Array<Record<string, unknown>> ?? []).map((a) => ({
+        id: a.id,
+        name: a.name,
+        city: a.city,
+        distance: a.distance,
+      })),
     }));
 
-    return NextResponse.json({ results: airports });
+    return NextResponse.json({ suggestions });
   } catch {
-    return NextResponse.json({ results: [] });
+    return NextResponse.json({ suggestions: [] });
   }
 }
