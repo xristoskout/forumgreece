@@ -3,7 +3,6 @@ import path from 'path';
 import type { Metadata } from 'next';
 import SiteHeader from '../../../components/site-header';
 import DecisionEngineClient from '../../../components/decision-engine-client';
-import FlightBoardClient from '../../../components/flight-board-client';
 
 type Props = { params: Promise<{ lang: string }> };
 
@@ -201,25 +200,6 @@ export default async function TravelToolsPage({ params }: Props) {
         <main className="container mx-auto px-6 pb-12 -mt-12 relative z-10">
           <DecisionEngineClient destinations={destinations} lang={lang as "en" | "el"} />
         </main>
-
-        {/* Flight Status Board */}
-        <section className="container mx-auto px-6 pb-12">
-          <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-8">
-              <h2 className="text-2xl md:text-3xl font-bold text-slate-800 mb-3">
-                {lang === "el"
-                  ? "Ζωντανές Πτήσεις — Ελληνικά Αεροδρόμια"
-                  : "Live Flights — Greek Airports"}
-              </h2>
-              <p className="text-slate-500 text-sm max-w-2xl mx-auto">
-                {lang === "el"
-                  ? "Παρακολούθησε αναχωρήσεις και αφίξεις σε πραγματικό χρόνο από όλα τα ελληνικά αεροδρόμια. Δελτέο αεροδρομίου, gate, καθυστέρηση."
-                  : "Track departures and arrivals in real-time from all Greek airports. Gate, terminal, delays, and aircraft info updated every 30 seconds."}
-              </p>
-            </div>
-            <FlightBoardClient compact={false} />
-          </div>
-        </section>
 
         {/* Outro text after the tool */}
         <div className="max-w-3xl mx-auto px-6 pb-8">
