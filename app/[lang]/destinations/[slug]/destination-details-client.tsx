@@ -8,7 +8,9 @@ import Image from "next/image";
 import { destinationSections } from "../../../../lib/destination-sections";
 import { destinationDetails } from "../../../../lib/destination-details";
 import DiscoverCarsWidget from "../../../../components/discovercars-widget";
+import FlightSearchClient from "../../../../components/flight-search-client";
 import { experienceBusinesses } from "../../../../lib/experiences";
+import { DESTINATION_AIRPORTS } from "../../../../lib/destination-airports";
 
 
 export default function DestinationDetailsClient({
@@ -622,6 +624,25 @@ export default function DestinationDetailsClient({
                 </article>
               );
             })()}
+
+            <article className="overflow-hidden rounded-[28px] border border-slate-200 bg-gradient-to-br from-sky-50 to-white p-8 shadow-sm">
+              <div className="text-xs font-bold uppercase tracking-[0.2em] text-sky-700 mb-3">
+                {lang === "el" ? "Πτήσεις" : "Flights"}
+              </div>
+              <h4 className="text-xl font-extrabold mb-1 text-slate-800">
+                {lang === "el" ? `Πτήσεις για ${destination.name}` : `Flights to ${destination.name}`}
+              </h4>
+              <p className="text-sm text-slate-500 mb-5 leading-relaxed">
+                {lang === "el"
+                  ? `Σύγκρινε τιμές πτήσεων για τη ${destination.name}. Βρες τις φθηνότερες από χιλιάδες διαδρομές.`
+                  : `Compare flight prices to ${destination.name}. Find the cheapest from thousands of routes.`}
+              </p>
+              <FlightSearchClient
+                defaultArrival={DESTINATION_AIRPORTS[destination.slug]?.iata}
+                destinationName={destination.name}
+                lang={lang}
+              />
+            </article>
 
             <article className="rounded-[28px] border border-slate-200 bg-gradient-to-br from-blue-50 to-white p-8 shadow-sm">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">
