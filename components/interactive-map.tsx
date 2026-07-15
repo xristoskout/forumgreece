@@ -62,11 +62,11 @@ type RegionPopup = {
 const POPUP_DATA: Record<string, RegionPopup> = {
   GRL: {
     id: "GRL",
-    title: { en: "Cyclades", el: "Κυκλάδες" },
+    title: { en: "South Aegean", el: "Νότιο Αιγαίο" },
     tagline: { en: "Best for iconic island-hopping", el: "Καλύτερο για εμβληματικό island hopping" },
     bestFor: { en: "First-time visitors, couples, summer atmosphere", el: "Πρώτο ταξίδι, ζευγάρια, καλοκαιρινή ατμόσφαιρα" },
-    topIslands: { en: "Santorini, Mykonos, Naxos, Paros, Ios, Milos", el: "Σαντορίνη, Μύκονος, Νάξος, Πάρος, Ίος, Μήλος" },
-    href: "/travel-info/greece-islands-map-guide#cyclades",
+    topIslands: { en: "Santorini, Mykonos, Rhodes, Naxos, Paros, Kos", el: "Σαντορίνη, Μύκονος, Ρόδος, Νάξος, Πάρος, Κως" },
+    href: "/travel-info/greece-islands-map-guide#south-aegean",
   },
   GRF: {
     id: "GRF",

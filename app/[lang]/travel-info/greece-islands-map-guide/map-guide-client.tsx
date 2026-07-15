@@ -26,7 +26,7 @@ export default function GreeceIslandsMapGuidePage() {
   }
 
   const REGION_TO_SECTION: Record<string, string> = {
-    GRL: "cyclades",
+    GRL: "south-aegean",
     GRF: "ionian",
     GRA1: "argo-saronic",
     GRK: "north-aegean",
@@ -133,12 +133,11 @@ export default function GreeceIslandsMapGuidePage() {
   ];
 
   const jumpLinks = [
-    { id: "cyclades", en: "Cyclades", el: "Κυκλάδες" },
+    { id: "south-aegean", en: "South Aegean", el: "Νότιο Αιγαίο" },
     { id: "ionian", en: "Ionian Islands", el: "Ιόνιο" },
     { id: "argo-saronic", en: "Argo-Saronic", el: "Αργοσαρωνικό" },
     { id: "north-aegean", en: "North Aegean", el: "Βόρειο Αιγαίο" },
     { id: "crete", en: "Crete", el: "Κρήτη" },
-    { id: "dodecanese", en: "Dodecanese", el: "Δωδεκάνησα" },
     { id: "sporades", en: "Sporades & Thessaly", el: "Σποράδες & Θεσσαλία" },
     { id: "peloponnese", en: "Peloponnese", el: "Πελοπόννησος" },
     { id: "central-macedonia", en: "Central Macedonia", el: "Κεντρική Μακεδονία" },
@@ -152,41 +151,41 @@ export default function GreeceIslandsMapGuidePage() {
 
   const regions = [
     {
-      id: "cyclades",
+      id: "south-aegean",
       number: "1",
       color: "border-blue-400",
       bg: "bg-blue-50",
       badge: "bg-blue-100 text-blue-800",
-      title: { en: "Cyclades", el: "Κυκλάδες" },
+      title: { en: "South Aegean (Cyclades & Dodecanese)", el: "Νότιο Αιγαίο (Κυκλάδες & Δωδεκάνησα)" },
       tagline: {
-        en: "Best for iconic Greece",
-        el: "Καλύτερο για εμβληματική Ελλάδα",
+        en: "Best for iconic island-hopping and history",
+        el: "Καλύτερο για εμβληματικό island hopping και ιστορία",
       },
       body: {
-        en: "The Cyclades are the island group most international travelers picture first when they think of Greece. Whitewashed villages, blue-domed churches, bright summer light, scenic ferry arrivals and classic island-hopping routes all come together here.\n\nSantorini and Mykonos are the best-known islands, but the Cyclades are much broader than that. Naxos and Paros offer a more balanced experience, often combining beaches, villages and a more relaxed pace. The Cyclades are especially good for couples, first-time visitors and travelers who want that instantly recognizable Greek island feeling.",
-        el: "Οι Κυκλάδες είναι το νησιωτικό σύμπλεγμα που οι περισσότεροι ξένοι ταξιδιώτες φαντάζονται πρώτο όταν σκέφτονται την Ελλάδα. Λευκά χωριά, γαλάζιοι τρούλοι, έντονο καλοκαιρινό φως, εντυπωσιακές αφίξεις με πλοίο και κλασικό island hopping.\n\nΗ Σαντορίνη και η Μύκονος είναι τα πιο γνωστά νησιά, όμως οι Κυκλάδες δεν περιορίζονται εκεί. Η Νάξος και η Πάρος προσφέρουν πιο ισορροπημένη εμπειρία, με παραλίες, χωριά και πιο χαλαρό ρυθμό. Ιδανικές κυρίως για ζευγάρια, πρώτο ταξίδι και τη χαρακτηριστική εικόνα ελληνικού νησιού.",
+        en: "The South Aegean is the largest and most famous island region of Greece, covering two distinct island groups: the Cyclades and the Dodecanese. Together they offer some of the most iconic and diverse island experiences in the Mediterranean.\n\nThe Cyclades are what most people picture when they think of Greece — whitewashed villages, blue-domed churches, bright summer light and classic island-hopping routes. Santorini and Mykonos are the best-known islands, while Naxos, Paros and Milos offer a more balanced and often more affordable experience.\n\nThe Dodecanese, closer to the Turkish coast, bring a different character — medieval heritage (especially Rhodes), quieter beaches and a slightly more eastern Mediterranean atmosphere. Rhodes, Kos, Karpathos and Kalymnos each offer something distinct.",
+        el: "Το Νότιο Αιγαίο είναι η μεγαλύτερη και πιο γνωστή νησιωτική περιοχή της Ελλάδας, καλύπτοντας δύο ξεχωριστά νησιωτικά συμπλέγματα: τις Κυκλάδες και τα Δωδεκάνησα.\n\nΟι Κυκλάδες είναι αυτό που φαντάζονται οι περισσότεροι όταν σκέφτονται την Ελλάδα — λευκά χωριά, γαλάζιοι τρούλοι, κλασικό island hopping. Η Σαντορίνη και η Μύκονος είναι τα πιο γνωστά, ενώ Νάξος, Πάρος και Μήλος προσφέρουν πιο ισορροπημένη εμπειρία.\n\nΤα Δωδεκάνησα, πιο κοντά στην τουρκική ακτή, έχουν διαφορετικό χαρακτήρα — μεσαιωνική κληρονομιά (ειδικά η Ρόδος), πιο ήσυχες παραλίες και μια πιο ανατολική μεσογειακή ατμόσφαιρα.",
       },
       bestFor: {
-        en: "First-time visitors, couples, island hopping, summer atmosphere",
-        el: "Πρώτο ταξίδι, ζευγάρια, island hopping, καλοκαιρινή ατμόσφαιρα",
+        en: "Island hopping, iconic scenery, history, beaches, couples, first-time visitors",
+        el: "Island hopping, εμβληματικά τοπία, ιστορία, παραλίες, ζευγάρια, πρώτο ταξίδι",
       },
       topIslands: {
-        en: "Santorini, Mykonos, Naxos, Paros",
-        el: "Σαντορίνη, Μύκονος, Νάξος, Πάρος",
+        en: "Santorini, Mykonos, Rhodes, Naxos, Paros, Kos, Milos, Karpathos",
+        el: "Σαντορίνη, Μύκονος, Ρόδος, Νάξος, Πάρος, Κως, Μήλος, Κάρπαθος",
       },
       style: {
-        en: "Scenic, sunny, stylish, classic Greek island experience",
-        el: "Σκηνικό, ηλιόλουστο, κοσμοπολίτικο, κλασική εμπειρία ελληνικού νησιού",
+        en: "Scenic, sunny, varied, iconic to historic",
+        el: "Σκηνικό, ηλιόλουστο, ποικίλο, εμβληματικό ως ιστορικό",
       },
       goodToKnow: {
-        en: "Some islands are easier without a car. If you want simplicity, choose your base carefully and avoid fitting too many islands into one short trip.",
-        el: "Κάποια νησιά είναι πιο εύκολα χωρίς αυτοκίνητο. Αν θέλεις απλότητα, διάλεξε σωστά τη βάση σου.",
+        en: "The Cyclades and Dodecanese have different ferry connections. Combine them only if you have enough time — otherwise focus on one group.",
+        el: "Οι Κυκλάδες και τα Δωδεκάνησα έχουν διαφορετικές συνδέσεις πλοίων. Συνδυάστε τα μόνο αν έχετε αρκετό χρόνο.",
       },
       links: [
         { href: "/destinations/santorini", en: "Santorini guide", el: "Οδηγός Σαντορίνης" },
         { href: "/destinations/mykonos", en: "Mykonos guide", el: "Οδηγός Μυκόνου" },
+        { href: "/destinations/rhodes", en: "Rhodes guide", el: "Οδηγός Ρόδου" },
         { href: "/travel-info/first-time-in-greece", en: "Best Greek Islands for First-Time Visitors", el: "Καλύτερα Νησιά για Πρώτο Ταξίδι" },
-        { href: "/travel-info/getting-around-greece", en: "Greek Islands Without a Car", el: "Ελληνικά Νησιά Χωρίς Αυτοκίνητο" },
       ],
     },
     {
@@ -334,42 +333,6 @@ export default function GreeceIslandsMapGuidePage() {
         { href: "/destinations/crete", en: "Crete destination guide", el: "Οδηγός Κρήτης" },
         { href: "/travel-info/family-travel-in-greece", en: "Family Travel in Greece", el: "Οικογενειακές Διακοπές στην Ελλάδα" },
         { href: "/travel-info/7-and-10-days-in-greece", en: "10 Days in Greece", el: "10 Ημέρες στην Ελλάδα" },
-      ],
-    },
-    {
-      id: "dodecanese",
-      number: "6",
-      color: "border-orange-400",
-      bg: "bg-orange-50",
-      badge: "bg-orange-100 text-orange-800",
-      title: { en: "Dodecanese", el: "Δωδεκάνησα" },
-      tagline: {
-        en: "Best for history and varied holidays",
-        el: "Καλύτερο για ιστορία και ποικιλόμορφες διακοπές",
-      },
-      body: {
-        en: "The Dodecanese islands are a strong choice for travelers who want history, island scenery and a slightly different atmosphere from the Cyclades. Rhodes is the best-known island in the group and works well for travelers who want beaches, heritage and a more complete resort-and-town combination.",
-        el: "Τα Δωδεκάνησα αποτελούν πολύ καλή επιλογή για ταξιδιώτες που θέλουν ιστορία, νησιωτικό τοπίο και μια κάπως διαφορετική αίσθηση από τις Κυκλάδες. Η Ρόδος είναι το πιο γνωστό νησί και ταιριάζει σε όσους θέλουν παραλίες, ιστορικό χαρακτήρα και συνδυασμό resort και πόλης.",
-      },
-      bestFor: {
-        en: "History, varied holidays, beach plus town combinations",
-        el: "Ιστορία, πολυδιάστατες διακοπές, συνδυασμός παραλίας και πόλης",
-      },
-      topIslands: {
-        en: "Rhodes and selected Dodecanese islands",
-        el: "Ρόδος και επιλεγμένα νησιά των Δωδεκανήσων",
-      },
-      style: {
-        en: "Historic, sunny, varied, southeastern feel",
-        el: "Ιστορικό, ηλιόλουστο, ποικίλο, νοτιοανατολικός χαρακτήρας",
-      },
-      goodToKnow: {
-        en: "Rhodes is large enough to explore in depth and works well as a single-island holiday base.",
-        el: "Η Ρόδος είναι αρκετά μεγάλη για να εξερευνηθεί σε βάθος και λειτουργεί καλά ως μονή βάση ταξιδιού.",
-      },
-      links: [
-        { href: "/destinations/rhodes", en: "Rhodes guide", el: "Οδηγός Ρόδου" },
-        { href: "/travel-info/first-time-in-greece", en: "Best Greek Islands for First-Time Visitors", el: "Καλύτερα Νησιά για Πρώτο Ταξίδι" },
       ],
     },
     {
