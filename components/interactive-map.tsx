@@ -62,10 +62,10 @@ type RegionPopup = {
 const POPUP_DATA: Record<string, RegionPopup> = {
   GRL: {
     id: "GRL",
-    title: { en: "Cyclades & Dodecanese", el: "Κυκλάδες & Δωδεκάνησα" },
+    title: { en: "Cyclades", el: "Κυκλάδες" },
     tagline: { en: "Best for iconic island-hopping", el: "Καλύτερο για εμβληματικό island hopping" },
     bestFor: { en: "First-time visitors, couples, summer atmosphere", el: "Πρώτο ταξίδι, ζευγάρια, καλοκαιρινή ατμόσφαιρα" },
-    topIslands: { en: "Santorini, Mykonos, Rhodes, Naxos, Paros", el: "Σαντορίνη, Μύκονος, Ρόδος, Νάξος, Πάρος" },
+    topIslands: { en: "Santorini, Mykonos, Naxos, Paros, Ios, Milos", el: "Σαντορίνη, Μύκονος, Νάξος, Πάρος, Ίος, Μήλος" },
     href: "/travel-info/greece-islands-map-guide#cyclades",
   },
   GRF: {
@@ -78,10 +78,10 @@ const POPUP_DATA: Record<string, RegionPopup> = {
   },
   GRK: {
     id: "GRK",
-    title: { en: "North Aegean & Sporades", el: "Βόρειο Αιγαίο & Σποράδες" },
+    title: { en: "North Aegean", el: "Βόρειο Αιγαίο" },
     tagline: { en: "Best for authentic, slower travel", el: "Καλύτερο για αυθεντικό και πιο αργό ταξίδι" },
     bestFor: { en: "Authentic trips, local food, return visitors", el: "Αυθεντικά ταξίδια, τοπική γαστρονομία" },
-    topIslands: { en: "Lesvos, Ikaria, Chios, Skiathos", el: "Λέσβος, Ικαρία, Χίος, Σκιάθος" },
+    topIslands: { en: "Lesvos, Ikaria, Chios, Samos", el: "Λέσβος, Ικαρία, Χίος, Σάμος" },
     href: "/travel-info/greece-islands-map-guide#north-aegean",
   },
   GRM: {
@@ -130,7 +130,7 @@ const POPUP_DATA: Record<string, RegionPopup> = {
     tagline: { en: "Best for Meteora & diverse landscapes", el: "Καλύτερο για Μετέωρα & ποικίλα τοπία" },
     bestFor: { en: "Meteora, Mount Pelion, hiking, skiing", el: "Μετέωρα, Πήλιο, πεζοπορία, σκι" },
     topIslands: { en: "Meteora, Mount Pelion, Skiathos, Skopelos", el: "Μετέωρα, Πήλιο, Σκιάθος, Σκόπελος" },
-    href: "/travel-info/greece-islands-map-guide#thessaly",
+    href: "/travel-info/greece-islands-map-guide#sporades",
   },
   GRH: {
     id: "GRH",
