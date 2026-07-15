@@ -5,6 +5,8 @@ import HotelDetailsClient from "./hotel-details-client";
 import { isLang, supportedLangs } from "../../../../lib/locale";
 import { breadcrumbSchema, hotelSchema } from "../../../../lib/structured-data";
 
+export const revalidate = 3600;
+
 type HotelPageProps = {
   params: Promise<{ lang: string; slug: string }>;
 };

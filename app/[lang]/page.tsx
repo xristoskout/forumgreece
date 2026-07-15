@@ -133,7 +133,7 @@ function HomeStructuredData({ lang }: { lang: Lang }) {
   );
 }
 
-export const revalidate = 60;
+export const revalidate = 3600;
 
 export function generateStaticParams() {
   return [{ lang: "en" }, { lang: "el" }];

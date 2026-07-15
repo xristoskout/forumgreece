@@ -6,6 +6,8 @@ import { isLang } from '../../../../lib/locale';
 import { breadcrumbSchema, touristAttractionSchema, touristDestinationSchema, articleSchema, faqPageSchema } from '../../../../lib/structured-data';
 import { destinationSections } from '../../../../lib/destination-sections';
 
+export const revalidate = 3600;
+
 type Props = {
   params: Promise<{ lang: string; slug: string }>;
 };
