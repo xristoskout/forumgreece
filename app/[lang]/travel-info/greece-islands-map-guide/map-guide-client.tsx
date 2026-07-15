@@ -37,7 +37,7 @@ export default function GreeceIslandsMapGuidePage() {
     GRB: "central-macedonia",
     GRA: "eastern-macedonia",
     GR69: "mount-athos",
-    GRE: "thessaly",
+    GRE: "sporades",
     GRH: "central-greece",
     GRG: "western-greece",
   };
@@ -139,12 +139,11 @@ export default function GreeceIslandsMapGuidePage() {
     { id: "north-aegean", en: "North Aegean", el: "Βόρειο Αιγαίο" },
     { id: "crete", en: "Crete", el: "Κρήτη" },
     { id: "dodecanese", en: "Dodecanese", el: "Δωδεκάνησα" },
-    { id: "sporades", en: "Sporades", el: "Σποράδες" },
+    { id: "sporades", en: "Sporades & Thessaly", el: "Σποράδες & Θεσσαλία" },
     { id: "peloponnese", en: "Peloponnese", el: "Πελοπόννησος" },
     { id: "central-macedonia", en: "Central Macedonia", el: "Κεντρική Μακεδονία" },
     { id: "western-macedonia", en: "Western Macedonia", el: "Δυτική Μακεδονία" },
     { id: "eastern-macedonia", en: "E. Macedonia & Thrace", el: "Α. Μακεδονία & Θράκη" },
-    { id: "thessaly", en: "Thessaly", el: "Θεσσαλία" },
     { id: "central-greece", en: "Central Greece", el: "Στερεά Ελλάδα" },
     { id: "western-greece", en: "Western Greece", el: "Δυτική Ελλάδα" },
     { id: "epirus", en: "Epirus", el: "Ήπειρος" },
@@ -259,8 +258,9 @@ export default function GreeceIslandsMapGuidePage() {
         el: "Δεν είναι η καλύτερη επιλογή για πολυήμερες παραλιακές διακοπές. Ταιριάζουν περισσότερο σε ατμόσφαιρα και σύντομη γραφική διαμονή.",
       },
       links: [
+        { href: "/destinations/aegina", en: "Aegina guide", el: "Οδηγός Αίγινας" },
+        { href: "/destinations/hydra", en: "Hydra guide", el: "Οδηγός Ύδρας" },
         { href: "/travel-info/getting-around-greece", en: "Greek Islands Without a Car", el: "Ελληνικά Νησιά Χωρίς Αυτοκίνητο" },
-        { href: "/travel-info/7-and-10-days-in-greece", en: "7 Days in Greece", el: "7 Ημέρες στην Ελλάδα" },
       ],
     },
     {
@@ -368,6 +368,7 @@ export default function GreeceIslandsMapGuidePage() {
         el: "Η Ρόδος είναι αρκετά μεγάλη για να εξερευνηθεί σε βάθος και λειτουργεί καλά ως μονή βάση ταξιδιού.",
       },
       links: [
+        { href: "/destinations/rhodes", en: "Rhodes guide", el: "Οδηγός Ρόδου" },
         { href: "/travel-info/first-time-in-greece", en: "Best Greek Islands for First-Time Visitors", el: "Καλύτερα Νησιά για Πρώτο Ταξίδι" },
       ],
     },
@@ -377,32 +378,33 @@ export default function GreeceIslandsMapGuidePage() {
       color: "border-teal-400",
       bg: "bg-teal-50",
       badge: "bg-teal-100 text-teal-800",
-      title: { en: "Sporades", el: "Σποράδες" },
+      title: { en: "Sporades & Thessaly", el: "Σποράδες & Θεσσαλία" },
       tagline: {
-        en: "Best for nature and softer island pace",
-        el: "Καλύτερο για φύση και πιο ήπιο ρυθμό",
+        en: "Best for Meteora, nature and softer island pace",
+        el: "Καλύτερο για Μετέωρα, φύση και πιο ήπιο ρυθμό",
       },
       body: {
-        en: "The Sporades are a good fit for travelers looking for greenery, beaches and a softer island atmosphere without the intensity of the Cyclades. They work particularly well for travelers who want nature, swimming and a simpler island rhythm.",
-        el: "Οι Σποράδες ταιριάζουν σε ταξιδιώτες που αναζητούν πράσινο, παραλίες και μια πιο ήπια νησιωτική ατμόσφαιρα. Λειτουργούν ιδιαίτερα καλά για όσους θέλουν φύση, θάλασσα και πιο απλό ρυθμό διακοπών.",
+        en: "The Sporades and Thessaly form a connected travel region that combines mainland mountain drama with some of the greenest islands in Greece. Meteora — with its UNESCO-listed monasteries perched on towering rock pillars — is the region's most iconic sight and one of the most breathtaking landscapes in Europe.\n\nThe Sporades islands (Skiathos, Skopelos, Alonissos) are known for pine-forested hills, turquoise waters and a softer, less crowded island atmosphere than the Cyclades. Mount Pelion, according to Greek mythology, was the summer home of the gods — it combines mountain villages, forests and nearby beaches on the Pagasetic Gulf.",
+        el: "Οι Σποράδες και η Θεσσαλία αποτελούν συνδεδεμένη ταξιδιωτική περιοχή που συνδυάζει ορεινό δράμα με τα πιο πράσινα νησιά της Ελλάδας. Τα Μετέωρα — με τα μοναστήρια UNESCO σε τεράστια βραχοσχήματα — είναι το πιο εμβληματικό αξιοθέατο.\n\nΟι Σποράδες (Σκιάθος, Σκόπελος, Αλόννησος) ξεχωρίζουν για δασωμένες πλαγιές, τιρκουάζ νερά και πιο ήπια ατμόσφαιρα. Το Πήλιο, σύμφωνα με τον μύθο, ήταν η καλοκαιρινή κατοικία των θεών.",
       },
       bestFor: {
-        en: "Nature, beaches, softer pace",
-        el: "Φύση, παραλίες, πιο ήρεμος ρυθμός",
+        en: "Meteora, island nature, hiking, swimming, softer pace",
+        el: "Μετέωρα, νησιωτική φύση, πεζοπορία, κολύμβηση, πιο ήρεμος ρυθμός",
       },
       topIslands: {
-        en: "Skiathos and nearby Sporades islands",
-        el: "Σκιάθος και κοντινές Σποράδες",
+        en: "Meteora, Skiathos, Skopelos, Mount Pelion, Alonissos",
+        el: "Μετέωρα, Σκιάθος, Σκόπελος, Πήλιο, Αλόννησος",
       },
       style: {
-        en: "Green, lush, peaceful, beach-focused",
-        el: "Πράσινο, καταπράσινο, ήσυχο, με επίκεντρο την παραλία",
+        en: "Green, lush, peaceful, scenic, mythological",
+        el: "Πράσινο, καταπράσινο, ήσυχο, γραφικό, μυθολογικό",
       },
       goodToKnow: {
-        en: "The Sporades are a great choice when you want to enjoy a Greek island at a calmer pace without the summer crowds.",
-        el: "Οι Σποράδες είναι εξαιρετική επιλογή για να απολαύσεις ελληνικό νησί σε ήρεμο ρυθμό, χωρίς τα πλήθη του καλοκαιριού.",
+        en: "Meteora is best visited early morning. The Sporades are great in summer but also rewarding in spring and autumn. Pelion is beautiful year-round.",
+        el: "Τα Μετέωρα είναι καλύτερα νωρίς το πρωί. Οι Σποράδες είναι καλές το καλοκαίρι αλλά και την άνοιξη και το φθινόπωρο. Το Πήλιο είναι όμορφο όλο τον χρόνο.",
       },
       links: [
+        { href: "/destinations/skiathos", en: "Skiathos guide", el: "Οδηγός Σκιάθου" },
         { href: "/travel-info/best-time-to-visit-greece", en: "Best Time to Visit Greece", el: "Καλύτερη Εποχή για Ελλάδα" },
       ],
     },
@@ -547,7 +549,7 @@ export default function GreeceIslandsMapGuidePage() {
         el: "Το αυτοκίνητο είναι απαραίτητο. Οι ορεινοί δρόμοι είναι γραφικοί αλλά αργοί. Η Ιωάννινα είναι η βάση εξερεύνησης.",
       },
       links: [
-        { href: "/destinations/corfu", en: "Corfu guide (nearby)", el: "Οδηγός Κέρκυρας (κοντά)" },
+        { href: "/destinations/parga", en: "Parga guide", el: "Οδηγός Πάργας" },
         { href: "/travel-info/best-time-to-visit-greece", en: "Best Time to Visit Greece", el: "Καλύτερη Εποχή για Ελλάδα" },
       ],
     },
@@ -588,42 +590,6 @@ export default function GreeceIslandsMapGuidePage() {
       ],
     },
     {
-      id: "thessaly",
-      number: "13",
-      color: "border-rose-500",
-      bg: "bg-rose-50",
-      badge: "bg-rose-100 text-rose-800",
-      title: { en: "Thessaly", el: "Θεσσαλία" },
-      tagline: {
-        en: "Best for Meteora and diverse landscapes",
-        el: "Καλύτερο για Μετέωρα και ποικίλα τοπία",
-      },
-      body: {
-        en: "Thessaly is one of the most geographically diverse regions in Greece. It includes the flat Thessalian plain — one of the largest agricultural areas in the country — the dramatic rock pillars of Meteora, the forested slopes of Mount Pelion and the gateway to the Sporades islands.\n\nMeteora is the region's crown jewel: a UNESCO World Heritage site where massive rock pillars rise from the valley floor, topped by centuries-old monasteries that seem to float in the sky. Mount Pelion, according to mythology, was the summer home of the gods. It combines mountain villages, lush forests and nearby beaches on the Pagasetic Gulf.",
-        el: "Η Θεσσαλία είναι μία από τις πιο γεωγραφικά ποικίλες περιοχές της Ελλάδας. Περιλαμβάνει τα δραματικά βραχοσχήματα των Μετεώρων, τις δασωμένες πλαγιές του Πηλίου και την πύλη προς τις Σποράδες.\n\nΤα Μετέωρα είναι το κορυφαίο κοσμήματα: Ιστορικός Μνημείος Παγκόσμιας Κληρονομιάς UNESCO. Το Πήλιο, σύμφωνα με τον μύθο, ήταν η καλοκαιρινή κατοικία των θεών.",
-      },
-      bestFor: {
-        en: "Meteora, hiking, Mount Pelion, winter sports, island gateways",
-        el: "Μετέωρα, πεζοπορία, Πήλιο, χειμερινά σπορ, πύλη νησιών",
-      },
-      topIslands: {
-        en: "Meteora monasteries, Mount Pelion, Skiathos, Skopelos, Alonissos",
-        el: "Μοναστήρια Μετεώρων, Πήλιο, Σκιάθος, Σκόπελος, Αλόννησος",
-      },
-      style: {
-        en: "Diverse, mythological, scenic, year-round",
-        el: "Ποικίλο, μυθολογικό, γραφικό, όλο τον χρόνο",
-      },
-      goodToKnow: {
-        en: "Meteora is one of the most visited sites in mainland Greece. Early morning visits are best. Pelion is wonderful in every season.",
-        el: "Τα Μετέωρα είναι από τα πιο επισκέψιμα μέρη στην ηπειρωτική Ελλάδα. Επισκεφθείτε νωρίς το πρωί.",
-      },
-      links: [
-        { href: "/destinations/skiathos", en: "Skiathos guide", el: "Οδηγός Σκιάθου" },
-        { href: "/travel-info/best-time-to-visit-greece", en: "Best Time to Visit Greece", el: "Καλύτερη Εποχή για Ελλάδα" },
-      ],
-    },
-    {
       id: "central-greece",
       number: "14",
       color: "border-violet-500",
@@ -655,7 +621,7 @@ export default function GreeceIslandsMapGuidePage() {
         el: "Συνδυάστε Δελφούς, Αράχοβα και Οσίο Λουκά σε μία εκδρομή από Αθήνα. Η Ναύπακτος ταιριάζει σαν στάση.",
       },
       links: [
-        { href: "/destinations/nafplio", en: "Nafplio guide (nearby)", el: "Οδηγός Ναυπλίου (κοντά)" },
+        { href: "/destinations/delphi", en: "Delphi guide", el: "Οδηγός Δελφών" },
         { href: "/travel-info/best-time-to-visit-greece", en: "Best Time to Visit Greece", el: "Καλύτερη Εποχή για Ελλάδα" },
       ],
     },
@@ -691,7 +657,7 @@ export default function GreeceIslandsMapGuidePage() {
         el: "Η περιοχή συνδέεται καλά οδικώς από Αθήνα. Η Πάτρα έχει σύνδεση πλοίου με Ιταλία.",
       },
       links: [
-        { href: "/destinations/nafplio", en: "Nafplio guide (nearby)", el: "Οδηγός Ναυπλίου (κοντά)" },
+        { href: "/destinations/patras", en: "Patras guide", el: "Οδηγός Πάτρας" },
         { href: "/travel-info/getting-around-greece", en: "Getting Around Greece", el: "Πώς να Μετακινηθείτε στην Ελλάδα" },
       ],
     },
