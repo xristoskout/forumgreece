@@ -8,6 +8,7 @@ import { MAP_PINS } from "../lib/map-pins";
 type Props = {
   lang: Lang;
   withLang: (path: string) => string;
+  onRegionClick?: (svgId: string) => void;
 };
 
 const REGION_COLORS: Record<string, string> = {
@@ -186,7 +187,7 @@ const MAINLAND_INFO: Record<string, { en: string; el: string }> = {
   GRG: { en: "Western Greece", el: "Δυτική Ελλάδα" },
 };
 
-export default function InteractiveMap({ lang, withLang }: Props) {
+export default function InteractiveMap({ lang, withLang, onRegionClick }: Props) {
   const [active, setActive] = useState<string | null>(null);
   const [activePin, setActivePin] = useState<string | null>(null);
   const [popupPos, setPopupPos] = useState<{ x: number; y: number } | null>(null);
@@ -199,6 +200,7 @@ export default function InteractiveMap({ lang, withLang }: Props) {
   const loadedRef = useRef(false);
   const activeRef = useRef<string | null>(null);
   const activePinRef = useRef<string | null>(null);
+  const onRegionClickRef = useRef(onRegionClick);
 
   useEffect(() => {
     activeRef.current = active;
@@ -207,6 +209,10 @@ export default function InteractiveMap({ lang, withLang }: Props) {
   useEffect(() => {
     activePinRef.current = activePin;
   }, [activePin]);
+
+  useEffect(() => {
+    onRegionClickRef.current = onRegionClick;
+  }, [onRegionClick]);
 
   useEffect(() => {
     if (loadedRef.current) return;
@@ -270,14 +276,19 @@ export default function InteractiveMap({ lang, withLang }: Props) {
           path.addEventListener("click", (e) => {
             e.stopPropagation();
             setActivePin(null);
-            const svgEl = svgContainerRef.current?.querySelector("svg");
-            if (!svgEl || !containerRef.current) return;
-            const svgRect = svgEl.getBoundingClientRect();
-            const containerRect = containerRef.current.getBoundingClientRect();
-            const relX = svgRect.left - containerRect.left + svgRect.width / 2;
-            const relY = svgRect.top - containerRect.top + svgRect.height / 2;
-            setPopupPos({ x: relX, y: relY });
-            setActive(activeRef.current === id ? null : id);
+            setActive(null);
+            if (onRegionClickRef.current) {
+              onRegionClickRef.current(id);
+            } else {
+              const svgEl = svgContainerRef.current?.querySelector("svg");
+              if (!svgEl || !containerRef.current) return;
+              const svgRect = svgEl.getBoundingClientRect();
+              const containerRect = containerRef.current.getBoundingClientRect();
+              const relX = svgRect.left - containerRect.left + svgRect.width / 2;
+              const relY = svgRect.top - containerRect.top + svgRect.height / 2;
+              setPopupPos({ x: relX, y: relY });
+              setActive(activeRef.current === id ? null : id);
+            }
           });
         });
       });

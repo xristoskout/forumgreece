@@ -25,6 +25,31 @@ export default function GreeceIslandsMapGuidePage() {
     return `/${locale}${cleanPath}`;
   }
 
+  const REGION_TO_SECTION: Record<string, string> = {
+    GRL: "cyclades",
+    GRF: "ionian",
+    GRA1: "argo-saronic",
+    GRK: "north-aegean",
+    GRM: "crete",
+    GRJ: "peloponnese",
+    GRC: "western-macedonia",
+    GRD: "epirus",
+    GRB: "central-macedonia",
+    GRA: "eastern-macedonia",
+    GR69: "mount-athos",
+    GRE: "thessaly",
+    GRH: "central-greece",
+    GRG: "western-greece",
+  };
+
+  function handleRegionClick(svgId: string) {
+    const sectionId = REGION_TO_SECTION[svgId];
+    if (!sectionId) return;
+    setTimeout(() => {
+      document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 50);
+  }
+
   const t = {
     eyebrow: { en: "Travel Info", el: "Ταξιδιωτικές Πληροφορίες" },
     back: { en: "← Back to Travel Hub", el: "← Επιστροφή στο Travel Hub" },
@@ -116,6 +141,14 @@ export default function GreeceIslandsMapGuidePage() {
     { id: "dodecanese", en: "Dodecanese", el: "Δωδεκάνησα" },
     { id: "sporades", en: "Sporades", el: "Σποράδες" },
     { id: "peloponnese", en: "Peloponnese", el: "Πελοπόννησος" },
+    { id: "central-macedonia", en: "Central Macedonia", el: "Κεντρική Μακεδονία" },
+    { id: "western-macedonia", en: "Western Macedonia", el: "Δυτική Μακεδονία" },
+    { id: "eastern-macedonia", en: "E. Macedonia & Thrace", el: "Α. Μακεδονία & Θράκη" },
+    { id: "thessaly", en: "Thessaly", el: "Θεσσαλία" },
+    { id: "central-greece", en: "Central Greece", el: "Στερεά Ελλάδα" },
+    { id: "western-greece", en: "Western Greece", el: "Δυτική Ελλάδα" },
+    { id: "epirus", en: "Epirus", el: "Ήπειρος" },
+    { id: "mount-athos", en: "Mount Athos", el: "Άγιον Όρος" },
   ];
 
   const regions = [
@@ -411,6 +444,292 @@ export default function GreeceIslandsMapGuidePage() {
         { href: "/travel-info/7-and-10-days-in-greece", en: "7 & 10 Days in Greece", el: "7 & 10 Ημέρες στην Ελλάδα" },
       ],
     },
+    {
+      id: "central-macedonia",
+      number: "9",
+      color: "border-teal-500",
+      bg: "bg-teal-50",
+      badge: "bg-teal-100 text-teal-800",
+      title: { en: "Central Macedonia", el: "Κεντρική Μακεδονία" },
+      tagline: {
+        en: "Best for city culture & Halkidiki beaches",
+        el: "Καλύτερο για πολιτιστική ζωή & παραλίες Χαλκιδικής",
+      },
+      body: {
+        en: "Central Macedonia is the economic and cultural heart of northern Greece, anchored by Thessaloniki — the country's second-largest city and one of its most vibrant. Thessaloniki blends Byzantine heritage, Ottoman layers, a legendary food scene and a youthful university-town energy that makes it one of the most rewarding cities in Greece.\n\nBeyond the city, the Chalkidiki peninsula offers some of the best beach holidays in mainland Greece, with pine-fringed coastlines, turquoise waters and resort villages. This region also serves as a gateway to Mount Athos, the UNESCO-listed monastic republic on the eastern prong of Chalkidiki.",
+        el: "Η Κεντρική Μακεδονία είναι το οικονομικό και πολιτιστικό κέντρο της βόρειας Ελλάδας, με βάση τη Θεσσαλονίκη — τη δεύτερη μεγαλύτερη πόλη της χώρας. Η Θεσσαλονίκη συνδυάζει Βυζαντινή κληρονομιά, Οθωμανικά στρώματα, θρυλική γαστρονομία και νεανική ενέργεια.\n\nΠέρα από την πόλη, η χερσόνησος της Χαλκιδικής προσφέρει κορυφαίες παραλιακές εμπειρίες στην ηπειρωτική Ελλάδα, με πεύκα, τιρκουάζ νερά και θεριστικά χωριά. Η περιοχή λειτουργεί επίσης ως πύλη προς το Άγιον Όρος.",
+      },
+      bestFor: {
+        en: "City breaks, beach holidays, food, history, Chalkidiki resorts",
+        el: "City breaks, παραλιακές διακοπές, φαγητό, ιστορία, θεριστικά Χαλκιδικής",
+      },
+      topIslands: {
+        en: "Thessaloniki, Chalkidiki, Sithonia, Kassandra, Mount Athos",
+        el: "Θεσσαλονίκη, Χαλκιδική, Σιθωνία, Κασσάνδρα, Άγιον Όρος",
+      },
+      style: {
+        en: "Urban, cultural, coastal, historically layered",
+        el: "Αστικό, πολιτιστικό, παραλιακό, ιστορικά στρωματοποιημένο",
+      },
+      goodToKnow: {
+        en: "Thessaloniki is best explored on foot. Chalkidiki beaches are busiest in July–August. Each of the three 'legs' of Chalkidiki has a different character.",
+        el: "Η Θεσσαλονίκη εξερευνιέται καλύτερα με τα πόδια. Οι παραλίες της Χαλκιδικής είναι πιο πολυσύχναστες τον Ιούλιο–Αύγουστο.",
+      },
+      links: [
+        { href: "/destinations/thessaloniki", en: "Thessaloniki guide", el: "Οδηγός Θεσσαλονίκης" },
+        { href: "/travel-info/best-time-to-visit-greece", en: "Best Time to Visit Greece", el: "Καλύτερη Εποχή για Ελλάδα" },
+      ],
+    },
+    {
+      id: "western-macedonia",
+      number: "10",
+      color: "border-indigo-500",
+      bg: "bg-indigo-50",
+      badge: "bg-indigo-100 text-indigo-800",
+      title: { en: "Western Macedonia", el: "Δυτική Μακεδονία" },
+      tagline: {
+        en: "Best for lakes, mountains and winter sports",
+        el: "Καλύτερο για λίμνες, βουνά και χειμερινά σπορ",
+      },
+      body: {
+        en: "Western Macedonia is one of the most underrated regions in Greece. Far from the island tourism spotlight, it offers dramatic mountain scenery, pristine lakes and a deeply traditional way of life that feels untouched by mass tourism.\n\nKastoria, built around a beautiful lake and filled with Byzantine churches and traditional mansions, is one of the most picturesque towns in northern Greece. Florina is a gateway to winter sports and lake landscapes. The Prespa Lakes — shared with Albania and North Macedonia — are a biodiversity hotspot and one of the most peaceful natural areas in the country.",
+        el: "Η Δυτική Μακεδονία είναι μία από τις πιο υποτιμημένες περιοχές της Ελλάδας. Μακριά από το προσκήνιο του νησιωτικού τουρισμού, προσφέρει δραματικά ορεινά τοπία, ακέραιες λίμνες και παραδοσιακό τρόπο ζωής.\n\nΗ Καστοριά, χτισμένη γύρω από μια όμορφη λίμνη, είναι από τις πιο εντυπωσιακές πόλεις της βόρειας Ελλάδας. Η Φλώρινα είναι πύλη για χειμερινά σπορ και λιμναία τοπία. Οι Πρέσπες αποτελούν hotspot βιοποικιλότητας.",
+      },
+      bestFor: {
+        en: "Lake holidays, mountain scenery, winter sports, off-the-beaten-path",
+        el: "Λιμναίες διακοπές, ορεινά τοπία, χειμερινά σπορ, εκτός δρομολογίου",
+      },
+      topIslands: {
+        en: "Kastoria, Florina, Prespes Lakes, Edessa waterfalls",
+        el: "Καστοριά, Φλώρινα, Λίμνες Πρεσπών, Καταρράκτες Έδεσσας",
+      },
+      style: {
+        en: "Mountainous, traditional, peaceful, seasonal",
+        el: "Ορεινό, παραδοσιακό, ήσυχο, εποχιακό",
+      },
+      goodToKnow: {
+        en: "Best visited in autumn for colours, winter for snow sports or spring for wildflowers. Summer is also pleasant and crowd-free.",
+        el: "Καλύτερα το φθινόπωρο για χρώματα, τον χειμώνα για χιονοσπορία ή την άνοιξη για άγρια λουλούδια.",
+      },
+      links: [
+        { href: "/travel-info/best-time-to-visit-greece", en: "Best Time to Visit Greece", el: "Καλύτερη Εποχή για Ελλάδα" },
+      ],
+    },
+    {
+      id: "epirus",
+      number: "11",
+      color: "border-cyan-500",
+      bg: "bg-cyan-50",
+      badge: "bg-cyan-100 text-cyan-800",
+      title: { en: "Epirus", el: "Ήπειρος" },
+      tagline: {
+        en: "Best for mountain villages and the Ionian coast",
+        el: "Καλύτερο για ορεινά χωριά και Ιόνια ακτή",
+      },
+      body: {
+        en: "Epirus is one of the most dramatically beautiful regions in Greece. It is defined by the Pindus mountain range, deep gorges, stone villages and a wilder, more isolated feeling than most of the country. For travelers who want real mountains, traditional architecture and fewer tourists, Epirus is exceptional.\n\nThe Zagori area is the highlight — a cluster of over 40 stone villages set in a landscape of rivers, forests and the famous Vikos Gorge, one of the deepest in the world. On the coast, Parga is a colorful seaside town that offers a gentler, Ionian-flavoured contrast to the mountain interior.",
+        el: "Η Ήπειρος είναι μία από τις πιο δραματικά όμορφες περιοχές της Ελλάδας. Ορίζεται από τον Πίνδο, βαθιά φαράγγια, πέτρινα χωριά και πιο απομονωμένο χαρακτήρα.\n\nΗ περιοχή Ζαγορί είναι το αποκορύφωμα — ένα σύμπλεγμα πάνω από 40 πέτρινων χωριών. Στην ακτή, η Πάργα είναι πολύχρωμη παραθαλάσσια πόλη που προσφέρει έναν πιο ήπιο Ιόνιο χαρακτήρα.",
+      },
+      bestFor: {
+        en: "Mountain villages, hiking, rafting, stone architecture, off-grid",
+        el: "Ορεινά χωριά, πεζοπορία, ράφτινγκ, πέτρινη αρχιτεκτονική, απομόνωση",
+      },
+      topIslands: {
+        en: "Zagori villages, Vikos Gorge, Parga, Ioannina, Metsovo",
+        el: "Χωριά Ζαγορί, Φαράγγι Βίκου, Πάργα, Ιωάννινα, Μέτσοβο",
+      },
+      style: {
+        en: "Mountainous, traditional, wild, dramatic",
+        el: "Ορεινό, παραδοσιακό, άγριο, δραματικό",
+      },
+      goodToKnow: {
+        en: "A car is essential for exploring Epirus. The mountain roads are scenic but slow. Ioannina is the main base for exploring the region.",
+        el: "Το αυτοκίνητο είναι απαραίτητο. Οι ορεινοί δρόμοι είναι γραφικοί αλλά αργοί. Η Ιωάννινα είναι η βάση εξερεύνησης.",
+      },
+      links: [
+        { href: "/destinations/corfu", en: "Corfu guide (nearby)", el: "Οδηγός Κέρκυρας (κοντά)" },
+        { href: "/travel-info/best-time-to-visit-greece", en: "Best Time to Visit Greece", el: "Καλύτερη Εποχή για Ελλάδα" },
+      ],
+    },
+    {
+      id: "eastern-macedonia",
+      number: "12",
+      color: "border-emerald-500",
+      bg: "bg-emerald-50",
+      badge: "bg-emerald-100 text-emerald-800",
+      title: { en: "Eastern Macedonia & Thrace", el: "Ανατολική Μακεδονία & Θράκη" },
+      tagline: {
+        en: "Best for pristine nature and border culture",
+        el: "Καλύτερο για άγρια φύση και συνοριακό πολιτισμό",
+      },
+      body: {
+        en: "Eastern Macedonia and Thrace is the most remote and least touristed region of mainland Greece. It stretches from Kavala to the Turkish and Bulgarian borders and offers a landscape shaped by multiple cultures, dense forests and a very different pace of travel.\n\nThis region rewards travelers who want to get well off the beaten path. Kavala is a beautiful port town and a good base. Alexandroupoli is the gateway to the Dadia Forest — one of the last refuges of rare raptors in Europe. The area has a distinctive crossroads identity, blending Greek, Turkish and Bulgarian influences in its food, architecture and local customs.",
+        el: "Η Ανατολική Μακεδονία και η Θράκη είναι η πιο απομακρυσμένη και λιγότερο τουριστική περιοχή της ηπειρωτικής Ελλάδας. Από την Καβάλα μέχρι τα σύνορα με Τουρκία και Βουλγαρία.\n\nΗ περιοχή ανταμείβει ταξιδιώτες που θέλουν να απομακρυνθούν. Η Καβάλα είναι όμορφο λιμάνι. Η Αλεξανδρούπολη είναι πύλη προς το Δάσος Δαδίας — ένα από τα τελευταία καταφύγια σπάνιων αρπακτικών στην Ευρώπη.",
+      },
+      bestFor: {
+        en: "Off-the-beaten-path, birdwatching, hot springs, cultural crossroads",
+        el: "Εκτός δρομολογίου, birdwatching, ιαματικές πηγές, πολιτισμικός σταυρός δρόμων",
+      },
+      topIslands: {
+        en: "Kavala, Alexandroupoli, Dadia Forest, Thassos (accessible from here)",
+        el: "Καβάλα, Αλεξανδρούπολη, Δάσος Δαδίας, Θάσος",
+      },
+      style: {
+        en: "Remote, multicultural, wild, authentic",
+        el: "Απομακρυσμένο, πολυπολιτισμικό, άγριο, αυθεντικό",
+      },
+      goodToKnow: {
+        en: "Few foreign tourists visit this region. It is best for travelers who want a truly different side of Greece with minimal tourism infrastructure.",
+        el: "Λίγοι ξένοι τουρίστες επισκέπτονται αυτή την περιοχή. Ιδανικό για ταξιδιώτες που θέλουν μια πραγματικά διαφορετική πλευρά της Ελλάδας.",
+      },
+      links: [
+        { href: "/destinations/thassos", en: "Thassos guide", el: "Οδηγός Θάσου" },
+        { href: "/travel-info/best-time-to-visit-greece", en: "Best Time to Visit Greece", el: "Καλύτερη Εποχή για Ελλάδα" },
+      ],
+    },
+    {
+      id: "thessaly",
+      number: "13",
+      color: "border-rose-500",
+      bg: "bg-rose-50",
+      badge: "bg-rose-100 text-rose-800",
+      title: { en: "Thessaly", el: "Θεσσαλία" },
+      tagline: {
+        en: "Best for Meteora and diverse landscapes",
+        el: "Καλύτερο για Μετέωρα και ποικίλα τοπία",
+      },
+      body: {
+        en: "Thessaly is one of the most geographically diverse regions in Greece. It includes the flat Thessalian plain — one of the largest agricultural areas in the country — the dramatic rock pillars of Meteora, the forested slopes of Mount Pelion and the gateway to the Sporades islands.\n\nMeteora is the region's crown jewel: a UNESCO World Heritage site where massive rock pillars rise from the valley floor, topped by centuries-old monasteries that seem to float in the sky. Mount Pelion, according to mythology, was the summer home of the gods. It combines mountain villages, lush forests and nearby beaches on the Pagasetic Gulf.",
+        el: "Η Θεσσαλία είναι μία από τις πιο γεωγραφικά ποικίλες περιοχές της Ελλάδας. Περιλαμβάνει τα δραματικά βραχοσχήματα των Μετεώρων, τις δασωμένες πλαγιές του Πηλίου και την πύλη προς τις Σποράδες.\n\nΤα Μετέωρα είναι το κορυφαίο κοσμήματα: Ιστορικός Μνημείος Παγκόσμιας Κληρονομιάς UNESCO. Το Πήλιο, σύμφωνα με τον μύθο, ήταν η καλοκαιρινή κατοικία των θεών.",
+      },
+      bestFor: {
+        en: "Meteora, hiking, Mount Pelion, winter sports, island gateways",
+        el: "Μετέωρα, πεζοπορία, Πήλιο, χειμερινά σπορ, πύλη νησιών",
+      },
+      topIslands: {
+        en: "Meteora monasteries, Mount Pelion, Skiathos, Skopelos, Alonissos",
+        el: "Μοναστήρια Μετεώρων, Πήλιο, Σκιάθος, Σκόπελος, Αλόννησος",
+      },
+      style: {
+        en: "Diverse, mythological, scenic, year-round",
+        el: "Ποικίλο, μυθολογικό, γραφικό, όλο τον χρόνο",
+      },
+      goodToKnow: {
+        en: "Meteora is one of the most visited sites in mainland Greece. Early morning visits are best. Pelion is wonderful in every season.",
+        el: "Τα Μετέωρα είναι από τα πιο επισκέψιμα μέρη στην ηπειρωτική Ελλάδα. Επισκεφθείτε νωρίς το πρωί.",
+      },
+      links: [
+        { href: "/destinations/skiathos", en: "Skiathos guide", el: "Οδηγός Σκιάθου" },
+        { href: "/travel-info/best-time-to-visit-greece", en: "Best Time to Visit Greece", el: "Καλύτερη Εποχή για Ελλάδα" },
+      ],
+    },
+    {
+      id: "central-greece",
+      number: "14",
+      color: "border-violet-500",
+      bg: "bg-violet-50",
+      badge: "bg-violet-100 text-violet-800",
+      title: { en: "Central Greece", el: "Στερεά Ελλάδα" },
+      tagline: {
+        en: "Best for Delphi and ancient sites",
+        el: "Καλύτερο για Δελφούς και αρχαίους τόπους",
+      },
+      body: {
+        en: "Central Greece is the geographical heart of the mainland and home to some of the most important ancient sites in the Western world. It is not a major tourism region in the island sense, but it offers extraordinary cultural depth and dramatic mountain landscapes.\n\nDelphi — the ancient sanctuary of Apollo and home of the famous Oracle — is one of the most significant archaeological sites in all of Europe. Nearby Arachova is a mountain village that has become a stylish year-round destination. The region also includes the dramatic mountain monastery of Hosios Loukas and the coastal town of Nafpaktos, gateway to the Peloponnese.",
+        el: "Η Στερεά Ελλάδα είναι γεωγραφικά η καρδιά της ηπειρωτικής Ελλάδας και στεγάζει κάποιους από τους πιο σημαντικούς αρχαίους τόπους.\n\nΟι Δελφοί — το αρχαίο ιερό του Απόλλωνα — είναι ένα από τα πιο σημαντικά αρχαιολογικά μνημεία της Ευρώπης. Η Αράχοβα είναι ορεινό χωριά με στυλ. Η Ναύπακτος είναι η πύλη προς την Πελοπόννησο.",
+      },
+      bestFor: {
+        en: "Archaeology, mountain monasteries, road trips, history",
+        el: "Αρχαιολογία, ορεινά μοναστήρια, road trips, ιστορία",
+      },
+      topIslands: {
+        en: "Delphi, Arachova, Nafpaktos, Hosios Loukas monastery",
+        el: "Δελφοί, Αράχοβα, Ναύπακτος, Μονή Οσίου Λουκά",
+      },
+      style: {
+        en: "Historic, cultural, mountainous, underexplored",
+        el: "Ιστορικό, πολιτιστικό, ορεινό, ανεξερεύνητο",
+      },
+      goodToKnow: {
+        en: "Combine Delphi with a visit to Arachova and Hosios Loukas in a single day trip from Athens. Nafpaktos works well as a stop between Athens and the Peloponnese.",
+        el: "Συνδυάστε Δελφούς, Αράχοβα και Οσίο Λουκά σε μία εκδρομή από Αθήνα. Η Ναύπακτος ταιριάζει σαν στάση.",
+      },
+      links: [
+        { href: "/destinations/nafplio", en: "Nafplio guide (nearby)", el: "Οδηγός Ναυπλίου (κοντά)" },
+        { href: "/travel-info/best-time-to-visit-greece", en: "Best Time to Visit Greece", el: "Καλύτερη Εποχή για Ελλάδα" },
+      ],
+    },
+    {
+      id: "western-greece",
+      number: "15",
+      color: "border-orange-500",
+      bg: "bg-orange-50",
+      badge: "bg-orange-100 text-orange-800",
+      title: { en: "Western Greece", el: "Δυτική Ελλάδα" },
+      tagline: {
+        en: "Best for Patras, ancient Olympia and wine country",
+        el: "Καλύτερο για Πάτρα, αρχαία Ολυμπία και κρασί",
+      },
+      body: {
+        en: "Western Greece stretches from the Gulf of Patras to the northern Peloponnese and includes some of the most historically important sites on the mainland. It is also one of the best wine-producing regions in the country.\n\nPatras is the major city and cultural capital of the region, known for its Carnival — one of the biggest in Europe — and its vibrant port-town energy. Ancient Olympia, birthplace of the Olympic Games, is located in the western Peloponnese and remains one of the most evocative archaeological sites in Greece. The mountain town of Kalavryta and the cave of lakes add natural beauty to the cultural richness.",
+        el: "Η Δυτική Ελλάδα εκτείνεται από τον Κόλπο της Πάτρας μέχρι τη βόρεια Πελοπόννησο και περιλαμβάνει κάποιους από τους πιο ιστορικά σημαντικούς τόπους.\n\nΗ Πάτρα είναι πολιτιστική πρωτεύουσα, γνωστή για το Καρναβάλι της. Η αρχαία Ολυμπία, γενέτειρα των Ολυμπιακών Αγώνων, παραμένει ένα από τα πιο εντυπωσιακά αρχαιολογικά μνημεία.",
+      },
+      bestFor: {
+        en: "Ancient Olympia, wine tours, Carnival, mountain escapes",
+        el: "Αρχαία Ολυμπία, wine tours, Καρναβάλι, ορεινές αποδράσεις",
+      },
+      topIslands: {
+        en: "Patras, Ancient Olympia, Kalavryta, Aigio, Rio-Antirio bridge",
+        el: "Πάτρα, Αρχαία Ολυμπία, Καλάβρυτα, Αίγιο, Γέφυρα Ρίου-Αντιρρίου",
+      },
+      style: {
+        en: "Historic, cultural, wine country, year-round",
+        el: "Ιστορικό, πολιτιστικό, οινοπαραγωγικό, όλο τον χρόνο",
+      },
+      goodToKnow: {
+        en: "The region is well connected by road from Athens. Patras has a ferry link to Italy, making it a useful stop for travelers continuing to Western Europe.",
+        el: "Η περιοχή συνδέεται καλά οδικώς από Αθήνα. Η Πάτρα έχει σύνδεση πλοίου με Ιταλία.",
+      },
+      links: [
+        { href: "/destinations/nafplio", en: "Nafplio guide (nearby)", el: "Οδηγός Ναυπλίου (κοντά)" },
+        { href: "/travel-info/getting-around-greece", en: "Getting Around Greece", el: "Πώς να Μετακινηθείτε στην Ελλάδα" },
+      ],
+    },
+    {
+      id: "mount-athos",
+      number: "16",
+      color: "border-slate-500",
+      bg: "bg-slate-50",
+      badge: "bg-slate-100 text-slate-800",
+      title: { en: "Mount Athos", el: "Άγιον Όρος" },
+      tagline: {
+        en: "A monastic republic unlike anywhere else",
+        el: "Μοναστική πολιτεία χωρίς αντίστοιχη",
+      },
+      body: {
+        en: "Mount Athos is not a typical travel destination — it is an autonomous monastic state within Greece, home to 20 Eastern Orthodox monasteries and over 1,000 monks. It has been a centre of Orthodox Christian spirituality for over 1,000 years and remains one of the most unspoiled cultural landscapes in Europe.\n\nAccess is restricted: men can visit with a special permit (maximum 4 days), while women are not permitted to enter. Visitors arrive by boat from Ouranoupoli on the Sithonia peninsula. The experience is austere, quiet and deeply spiritual — a journey into a way of life that has barely changed in centuries.",
+        el: "Το Άγιον Όρος δεν είναι τυπικός τουριστικός προορισμός — είναι αυτόνομη μοναστική πολιτεία, σπίτι 20 μονών και πάνω από 1.000 μοναχών. Είναι κέντρο Ορθόδοξης πνευματικότητας για πάνω από 1.000 χρόνια.\n\nΗ πρόσβαση περιορίζεται: άνδρες μπορούν να επισκεφθούν με ειδική άδεια (μέγιστο 4 ημέρες), ενώ γυναίκες δεν επιτρέπεται. Οι επισκέψεις γίνονται με βάρκα από την Ουρανούπολη.",
+      },
+      bestFor: {
+        en: "Pilgrimage, hiking, monastic heritage, spiritual travel",
+        el: "Προσκύνημα, πεζοπορία, μοναστική κληρονομιά, πνευματικό ταξίδι",
+      },
+      topIslands: {
+        en: "20 monasteries, Karyes, Ouranoupoli boat departure",
+        el: "20 μοναστήρια, Καρυές, αποβάθρα Ουρανούπολης",
+      },
+      style: {
+        en: "Sacred, austere, timeless, restricted",
+        el: "Ιερό, αυστηρό, χωρίς χρόνο, περιορισμένο",
+      },
+      goodToKnow: {
+        en: "Men must apply for a diamonitirion (visitor permit) well in advance. No more than 4 days allowed. No women permitted. Bring supplies — facilities are minimal.",
+        el: "Οι άνδρες πρέπει να υποβάλουν αίτηση για διαμονητήριο εκ των προτέρων. Μέγιστο 4 ημέρες. Δεν επιτρέπονται γυναίκες.",
+      },
+      links: [
+        { href: "/destinations/thessaloniki", en: "Thessaloniki guide (nearest city)", el: "Οδηγός Θεσσαλονίκης (πλησιέστερη πόλη)" },
+      ],
+    },
   ];
 
   const relatedGuides = [
@@ -542,7 +861,7 @@ export default function GreeceIslandsMapGuidePage() {
           </p>
         </div>
 
-        <InteractiveMap lang={lang} withLang={withLang} />
+        <InteractiveMap lang={lang} withLang={withLang} onRegionClick={handleRegionClick} />
       </section>
 
       {/* ── JUMP NAVIGATION ── */}
@@ -569,7 +888,7 @@ export default function GreeceIslandsMapGuidePage() {
           <article
             key={r.id}
             id={r.id}
-            className={`rounded-[2rem] border-l-4 ${r.color} ${r.bg} border border-slate-200 shadow-xl overflow-hidden`}
+            className={`scroll-mt-24 rounded-[2rem] border-l-4 ${r.color} ${r.bg} border border-slate-200 shadow-xl overflow-hidden`}
           >
             <div className="p-8 md:p-10">
               {/* Header */}
