@@ -13942,4 +13942,599 @@ export const destinationSections: Record<string, DestinationSection[]> = {
       ]
     },
   ],
+
+  aegina: [
+    {
+      title: { en: "Why visit Aegina", el: "Γιατί να επισκεφθείς την Αίγινα" },
+      layout: "numbered",
+      items: [
+        {
+          title: { en: "The Temple of Aphaia — one of Greece's finest", el: "Ο Ναός της Αφαίας — ένας από τους ωραιότερους στην Ελλάδα" },
+          text: {
+            en: "Perched on a pine-covered hilltop overlooking the Saronic Gulf, the Temple of Aphaia is one of the best-preserved Ancient Greek temples anywhere. Part of the Sacred Triangle with the Parthenon and Sounion, it receives a fraction of the visitors but delivers an equally powerful archaeological experience.",
+            el: "Σε έναν λοφίσκο γεμάτο πεύκα με θέα στον Αργοσαρωνικό, ο Ναός της Αφαίας είναι ένας από τους καλύτερα διατηρημένους αρχαίους ελληνικούς ναούς. Μέρος του Ιερού Τριγώνου με τον Παρθενώνα και το Σούνιο, δέχεται κλάσμα των επισκεπτών αλλά προσφέρει εξίσου ισχυρή αρχαιολογική εμπειρία."
+          }
+        },
+        {
+          title: { en: "The pistachio capital of Greece", el: "Η πρωτεύουσα του φιστικιού της Ελλάδας" },
+          text: {
+            en: "Aegina's pistachios have PDO status and are considered the finest in the country. The agricultural plain around Aegina Town is covered in pistachio groves, and during harvest season (August–September) the whole island smells of roasting nuts. Don't leave without trying pistachio spoon sweets, ice cream, and nougat.",
+            el: "Τα φιστίκια της Αίγινας έχουν καταχώρηση ΠΟΠ και θεωρούνται τα καλύτερα της χώρας. Η γεωργική πεδιάδα γύρω από την πόλη της Αίγινας είναι γεμάτη φιστικιές, και κατά τη συγκομιδή (Αύγουστος–Σεπτέμβριος) όλο το νησί μυρίζει ψημένα φιστίκια."
+          }
+        },
+        {
+          title: { en: "40 minutes from Athens — no excuses needed", el: "40 λεπτά από την Αθήνα — δεν χρειάζεται δικαιολογία" },
+          text: {
+            en: "A hydrofoil from Piraeus reaches Aegina in 40 minutes. This makes it the most accessible island escape from Athens — perfect for a weekend, a long day trip, or as a base for exploring the Saronic Gulf. You can leave work on Friday and be eating pistachios by the harbour by sunset.",
+            el: "Μια υδροπτέρυγα από τον Πειραιά φτάνει στην Αίγινα σε 40 λεπτά. Αυτό τη κάνει το πιο προσβάσιμο νησί από την Αθήνα — ιδανική για ένα σαββατοκύριακο ή μια μακριά ημερήσια εκδρομή."
+          }
+        },
+        {
+          title: { en: "Perdika — a real fishing village", el: "Πέρδικα — ένα πραγματικό ψαροχώρι" },
+          text: {
+            en: "At the southern tip of Aegina, Perdika is a cluster of white houses wrapping around a tiny harbour filled with fishing boats. The tavernas here serve the freshest fish on the island, and the view across to the islet of Moni is one of the most photographed in the Saronic Gulf.",
+            el: "Στο νότιο άκρο της Αίγινας, η Πέρδικα είναι ένα σύμπλεγμα λευκών σπιτιών γύρω από ένα μικρό λιμάνι γεμάτο ψαροβάρκες. Τα εστιατόρια εδώ σερβίρουν το πιο φρέσκο ψάρι του νησιού."
+          }
+        },
+        {
+          title: { en: "Palaiochora — the abandoned hilltop capital", el: "Παλαιοχώρα — η εγκαταλελειμμένη πρωτεύουσα στην κορυφή" },
+          text: {
+            en: "Before Aegina Town became the capital, the island's main settlement was Palaiochora — a medieval ghost town perched on a hilltop with 30+ Byzantine churches. Today you can wander through roofless stone houses and chapel ruins with panoramic views over the island.",
+            el: "Πριν γίνει η Αίγινα Town πρωτεύουσα, κύριος οικισμός ήταν η Παλαιοχώρα — μια μεσαιωνική εγκαταλελειμμένη πόλη στην κορυφή με 30+ βυζαντινές εκκλησίες."
+          }
+        },
+      ],
+    },
+    {
+      title: { en: "Best time to visit Aegina", el: "Καλύτερη εποχή για να επισκεφθείς την Αίγινα" },
+      layout: "list",
+      alert: {
+        en: "Secret: Aegina is at its best in May and September — the pistachio groves are green, the tavernas are open, the sea is warm, and the weekend Athens crowds have not yet arrived (or have already left).",
+        el: "Μικρό μυστικό: Η Αίγινα είναι στο καλύτερη σε Μάιο και Σεπτέμβριο — οι φιστικιές είναι πράσινες, τα εστιατόρια ανοιχτά, η θάλασσα ζεστή, και τα πιοάτικα κρούσματα από την Αθήνα δεν έχουν φτάσει (ή έχουν ήδη φύγει)."
+      },
+      items: [
+        {
+          title: { en: "April – May", el: "Απρίλιος – Μάιος" },
+          text: {
+            en: "Ideal. Wildflowers everywhere, comfortable temperatures for the Temple of Aphaia walk, uncrowded beaches, and the harbour cafés at their most pleasant.",
+            el: "Ιδανική. Άγρια λουλούδια παντού, ευχάριστες θερμοκρασίες, ακτές χωρίς πλήθος."
+          }
+        },
+        {
+          title: { en: "June", el: "Ιούνιος" },
+          text: {
+            en: "The sweet spot. Warm enough for swimming, long days, everything open, before the peak summer rush.",
+            el: "Το ιδανικό. Ζεστά αρκετά για μπάνιο, μακριές μέρες, πριν την αιχμή του καλοκαιριού."
+          }
+        },
+        {
+          title: { en: "July – August", el: "Ιούλιος – Αύγουστος" },
+          text: {
+            en: "Peak season. The island fills with Athenian weekend visitors. Beaches get crowded, the harbour is lively, and accommodation prices rise. Book ahead if visiting in August.",
+            el: "Αιχμή σεζόν. Το νησί γεμίζει με Αθηναίους το σαββατοκύριακο. Οι ακτές γεμίζουν, τα τιμήματα ανεβαίνουν."
+          }
+        },
+        {
+          title: { en: "September", el: "Σεπτέμβριος" },
+          text: {
+            en: "Arguably the best month. Sea at its warmest, pistachio harvest underway, crowds thinning, golden light for photography.",
+            el: "Ίσως ο καλύτερος μήνας. Θάλασσα ζεστή, συγκομιδή φιστικιού, λιγότεροι άνθρωποι."
+          }
+        },
+        {
+          title: { en: "October – March", el: "Οκτώβριος – Μάρτιος" },
+          text: {
+            en: "Quiet season. Many tavernas and hotels close. The island returns to its local rhythm — moody, peaceful, and very different from the summer version.",
+            el: "Ήσυχη σεζόν. Πολλά εστιατόρια και ξενοδοχεία κλείνουν. Το νησί γυρίζει στον τοπικό του ρυθμό."
+          }
+        },
+      ],
+    },
+    {
+      title: { en: "How to get to Aegina", el: "Πώς φτάνεις στην Αίγινα" },
+      layout: "list",
+      alert: {
+        en: "The hydrofoil (Flying Dolphin) from Piraeus takes 40 minutes and runs multiple times daily. The conventional ferry takes 75 minutes and is cheaper — and more scenic.",
+        el: "Το υδροπτέρυγο (Flying Dolphin) από τον Πειραιά παίρνει 40 λεπτά και τρέχει πολλές φορές την ημέρα. Το συμβατικό πλοίο παίρνει 75 λεπτά και είναι πιο φτηνό."
+      },
+      items: [
+        {
+          title: { en: "By hydrofoil from Piraeus", el: "Με υδροπτέρυγο από τον Πειραιά" },
+          text: {
+            en: "The fastest option. Flying Dolphins depart from Piraeus Port Gate E7 and reach Aegina in 40 minutes. Multiple daily departures, especially in summer. Book online at seajets.gr or buy at the port.",
+            el: "Η πιο γρήγορη επιλογή. Τα Flying Dolphin αναχωρούν από την Πύλη E7 του Πειραιά και φτάνουν στην Αίγινα σε 40 λεπτά."
+          }
+        },
+        {
+          title: { en: "By conventional ferry from Piraeus", el: "Με συμβατικό πλοίο από τον Πειραιά" },
+          text: {
+            en: "Cheaper and more relaxed. The journey takes about 75 minutes. Blue Star Ferries and ANES Ferries operate the route. You can bring a car, though most visitors find they don't need one.",
+            el: "Πιο φτηνή και πιο χαλαρή. Το ταξίδι παίρνει περίπου 75 λεπτά. Blue Star Ferries και ANES Ferries εκτελούν τη γραμμή."
+          }
+        },
+      ],
+    },
+    {
+      title: { en: "Top things to do in Aegina", el: "Κορυφαία πράγματα στην Αίγινα" },
+      layout: "numbered",
+      items: [
+        {
+          title: { en: "Visit the Temple of Aphaia", el: "Επισκέψου τον Ναό της Αφαίας" },
+          text: {
+            en: "Arrive early morning or late afternoon to avoid tour groups. The surrounding pine forest is peaceful, and the views from the hilltop stretch across the Saronic Gulf to Athens and the Peloponnese.",
+            el: "Πήγαινε νωρίς το πρωί ή αργά το απόγευμα. Η γύρω δασική περιοχή είναι ήσυχη και η θέα από την κορυφή προς τον Αργοσαρωνικό είναι εντυπωσιακή."
+          }
+        },
+        {
+          title: { en: "Explore the Kolonna archaeological site", el: "Εξερεύνησε τον αρχαιολογικό χώρο Κολόνας" },
+          text: {
+            en: "Right in Aegina Town, this site features a single standing Doric column (the Kolonna) from a 6th-century BC temple — one of the oldest stone buildings in Greece. Small but atmospheric, with a good museum.",
+            el: "Στην καρδιά της Αίγινας, αυτός ο χώρος έχει ένα μόνο δωρικό κίονα (την Κολόνα) από ναό του 6ου αιώνα π.Χ. — ένα από τα παλαιότερα πέτρινα κτίρια της Ελλάδας."
+          }
+        },
+        {
+          title: { en: "Wander through Palaiochora", el: "Περιπλανήσου στην Παλαιοχώρα" },
+          text: {
+            en: "The abandoned medieval capital sits on a hilltop with over 30 Byzantine churches, many with surviving frescoes. Wander through roofless stone houses and enjoy panoramic views. Free entry.",
+            el: "Η εγκαταλελειμμένη μεσαιωνική πρωτεύουσα βρίσκεται στην κορυφή λόφου με πάνω από 30 βυζαντινές εκκλησίες. Ελεύθερη είσοδος."
+          }
+        },
+        {
+          title: { en: "Day trip to Moni islet", el: "Ημερήσια εκδρομή στο νησί Μονή" },
+          text: {
+            en: "A tiny car-free island off Perdika's coast, reachable by small boat (5 minutes). Peacocks roam free, the water is crystal clear, and there's a single taverna. Perfect for a half-day swim stop.",
+            el: "Ένα μικρό νησί χωρίς αυτοκίνητα απέναντι από την Πέρδικα, προσβάσιμο με βάρκα (5 λεπτά). Τα παγώνια περιφέρονται ελεύθερα."
+          }
+        },
+        {
+          title: { en: "Pay respects at Agios Nektarios", el: "Απότισε φόρο τιμής στον Άγιο Νεκτάριο" },
+          text: {
+            en: "One of Greece's most visited pilgrimage sites. The large modern church and the old monastery on the hill above are worth visiting even if you're not religious — the complex is architecturally impressive and the views are excellent.",
+            el: "Ένα από τα πιο επισκέψιμα προσκυνήματα της Ελλάδας. Ο μεγάλος σύγχρονος ναός και η παλιά μονή προσφέρουν εξαιρετική θέα."
+          }
+        },
+      ],
+    },
+    {
+      title: { en: "Best beaches in Aegina", el: "Καλύτερες παραλίες στην Αίγινα" },
+      layout: "list",
+      alert: {
+        en: "Most Aegina beaches are pebbly or mixed sand-pebble. If you want fine sand, head to Marathonas or the south coast beaches near Perdika.",
+        el: "Οι περισσότερες παραλίες της Αίγινας είναι βραχώδεις ή μεικτές. Αν θες λεπτή άμμο, πήγαινε στο Μαραθώνα ή τις νότιες παραλίες κοντά στην Πέρδικα."
+      },
+      items: [
+        {
+          title: { en: "Marathonas", el: "Μαραθώνας" },
+          text: {
+            en: "The island's best sandy beach. Organized with sunbeds and a couple of beach bars, but also has free sections. Clear shallow water, ideal for families.",
+            el: "Η καλύτερη αμμώδης παραλία του νησιού. Οργανωμένη με ηλιοσκοιές και παραλιακά μπαρ."
+          }
+        },
+        {
+          title: { en: "Souvala", el: "Σούβαλα" },
+          text: {
+            en: "A quiet pebble beach on the north coast with a handful of tavernas right on the water. Great for a peaceful swim and fresh fish lunch.",
+            el: "Ήσυχη βραχώδης παραλία στον βόρειο ακτογραμμή με λίγα εστιατόρια πάνω στο νερό."
+          }
+        },
+        {
+          title: { en: "Perdika beaches", el: "Παραλίες Πέρδικας" },
+          text: {
+            en: "Several small pebble coves around the fishing village. The beach near Moni islet has the clearest water and is less crowded than the village beach.",
+            el: "Πολλά μικρά βραχώδη κολπάκια γύρω από το ψαροχώρι. Η παραλία κοντά στο νησί Μονή έχει το πιο καθαρό νερό."
+          }
+        },
+        {
+          title: { en: "Vagia", el: "Βαγιά" },
+          text: {
+            en: "A sheltered pebble beach on the south coast with tamarisk trees for natural shade. Few visitors, calm water, and a couple of simple tavernas.",
+            el: "Ένα προστατευμένο βραχώδες παραλάκι στη νότια ακτογραμμή με θύμαρα για φυσική σκιά."
+          }
+        },
+      ],
+    },
+    {
+      title: { en: "Local food & flavours", el: "Τοπικές γεύσεις & φαγητό" },
+      layout: "list",
+      items: [
+        {
+          title: { en: "Pistachio everything", el: "Φιστίκια σε όλα" },
+          text: {
+            en: "Aegina's pistachios have PDO status. Try pistachio spoon sweets, pistachio ice cream, pistachio nougat, pistachio pesto, and pistachio butter. The annual Pistachio Festival in September is worth timing a visit around.",
+            el: "Τα φιστίκια της Αίγινας έχουν καταχώρηση ΠΟΠ. Δοκίμασε φιστικένια γλυκά του κουταλιού, παγωτό, νουγκά, passo και βούτυρο φιστικιού."
+          }
+        },
+        {
+          title: { en: "Fresh fish at Perdika", el: "Φρέσκο ψάρι στην Πέρδικα" },
+          text: {
+            en: "The harbour tavernas in Perdika serve some of the freshest fish in the Saronic Gulf. Order grilled octopus, fish soup, or the catch of the day — all at reasonable prices compared to more touristy islands.",
+            el: "Τα παραλιακά εστιατόρια της Πέρδικας σερβίρουν από τα πιο φρέσκα ψάρια του Αργοσαρωνικού."
+          }
+        },
+        {
+          title: { en: "Traditional pastries & sweets", el: "Παραδοσιακά γλυκά" },
+          text: {
+            en: "Look for amygdalota (almond biscuits), pasteli (sesame honey bars), and local honey from Aegina's pine forests. The bakery near the Temple of Kolonna is a local institution.",
+            el: "Ψάξε για αμυγδαλωτά, παστέλι και τοπικό μέλι από τα πεύκα της Αίγινας."
+          }
+        },
+      ],
+    },
+    {
+      title: { en: "Practical tips", el: "Πρακτικές συμβουλές" },
+      layout: "numbered",
+      items: [
+        {
+          title: { en: "Day trip or overnight?", el: "Ημερήσια ή διανυκτέρευση;" },
+          text: {
+            en: "A day trip works if you just want the Temple of Aphaia and Aegina Town. But an overnight stay lets you explore Perdika, Palaiochora, and the beaches at a relaxed pace — and the island is wonderfully peaceful after the last ferry leaves.",
+            el: "Μια ημερήσια εκδρομή αρκεί για τον Ναό της Αφαίας και την πόλη. Μια διανυκτέρευση σας αφήνει να εξερευνήσετε Πέρδικα, Παλαιοχώρα και παραλίες."
+          }
+        },
+        {
+          title: { en: "Do you need a car?", el: "Χρειάζεσαι αυτοκίνητο;" },
+          text: {
+            en: "For a quick visit, no — Aegina Town is walkable and buses connect major spots. For a full exploration, rent an ATV or car. Roads are good and the island is small enough to cover in a day.",
+            el: "Για μια γρήγορη επίσκεψη, όχι — η Αίγινα Town είναι πεζοπορήσιμη. Για πλήρη εξερεύνηση, νοίκιασε ATV ή αυτοκίνητο."
+          }
+        },
+        {
+          title: { en: "Best base on the island", el: "Καλύτερη βάση στο νησί" },
+          text: {
+            en: "Stay in Aegina Town for harbour views, easy dining, and ferry access. Stay in Perdika for a quieter, more traditional atmosphere. Beaches are more accessible if you're based in the south.",
+            el: "Μείνε στην Αίγινα Town για θέα στο λιμάνι και εύκολη πρόσβαση. Μείνε στην Πέρδικα για πιο ήσυχη ατμόσφαιρα."
+          }
+        },
+        {
+          title: { en: "Combine with other Saronic islands", el: "Συνδύασε με άλλα νησιά του Αργοσαρωνικού" },
+          text: {
+            en: "Aegina pairs well with Poros, Hydra, or Spetses for a multi-island hopping trip. Ferries connect all four, and the combined route is one of the most popular island-hopping circuits from Athens.",
+            el: "Η Αίγινα συνδυάζεται καλά με Πόρο, Ύδρα ή Σπέτσες. Τα πλοία ενώνουν τα τέσσερα νησιά."
+          }
+        },
+      ],
+    },
+    {
+      title: { en: "Frequently Asked Questions", el: "Συχνές ερωτήσεις" },
+      layout: "faq",
+      items: [
+        {
+          title: { en: "How long is the ferry from Piraeus to Aegina?", el: "Πόση ώρα παίρνει το πλοίο από Πειραιά στην Αίγινα;" },
+          text: {
+            en: "The hydrofoil (Flying Dolphin) takes 40 minutes. The conventional ferry takes about 75 minutes. Multiple departures daily, more in summer.",
+            el: "Το υδροπτέρυγο παίρνει 40 λεπτά. Το συμβατικό πλοίο περίπου 75 λεπτά."
+          }
+        },
+        {
+          title: { en: "Is Aegina worth visiting?", el: "Αξίζει να επισκεφθείς την Αίγινα;" },
+          text: {
+            en: "Absolutely. The Temple of Aphaia alone justifies the trip, and combined with Perdika, the pistachio culture, and the easy Athens access, Aegina is one of the best short-break destinations in Greece.",
+            el: "Σίγουρα. Ο Ναός της Αφαίας μόνος του αξίζει το ταξίδι, και σε συνδυασμό με την Πέρδικα, τα φιστίκια και την πρόσβαση από την Αθήνα, η Αίγινα είναι από τις καλύτερες επιλογές για σύντομο ταξίδι."
+          }
+        },
+        {
+          title: { en: "Can I visit Aegina as a day trip from Athens?", el: "Μπορώ να επισκεφθώ την Αίγινα ως ημερήσια εκδρομή από την Αθήνα;" },
+          text: {
+            en: "Yes — it's one of the best day trips from Athens. Take the 40-minute hydrofoil, spend the morning at the Temple of Aphaia, have lunch at the harbour, and return by evening. The last hydrofoil typically departs around 7:30 PM.",
+            el: "Ναι — είναι μια από τις καλύτερες ημερήσιες εκδρομές από την Αθήνα. Πάρε το υδροπτέρυγο, περνά το πρωί στον Ναό, γεύσου στο λιμάνι και γύρνα απόγευμα."
+          }
+        },
+      ],
+    },
+  ],
+
+  hydra: [
+    {
+      title: { en: "Why visit Hydra", el: "Γιατί να επισκεφθείς την Ύδρα" },
+      layout: "numbered",
+      items: [
+        {
+          title: { en: "The only car-free island in Greece", el: "Το μόνο νησί χωρίς αυτοκίνητο στην Ελλάδα" },
+          text: {
+            en: "Hydra banned motor vehicles in the 1950s. The result is an island where transport means donkeys, mules, water taxis, or your own two feet. The harbour looks almost exactly as it did in the 18th century when Hydra's merchant fleet dominated Mediterranean trade — and it's preserved not by tourism but by genuine community choice.",
+            el: "Η Ύδρα απαγόρευσε τα μηχανοκίνητα οχήματα στη δεκαετία του 1950. Το αποτέλεσμα είναι ένα νησί όπου η μεταφορά γίνεται με γαϊδούρια, μουλάρια, θαλάσσια ταξί ή τα πόδια σου."
+          }
+        },
+        {
+          title: { en: "Leonard Cohen's island", el: "Το νησί του Leonard Cohen" },
+          text: {
+            en: "Leonard Cohen bought a house on Hydra in 1960 for $1,500, wrote some of the finest songs of the 20th century on its terrace, and returned for decades. The creative energy he embodied still runs through the island — artists, writers, and musicians are drawn here by the same silence and light.",
+            el: "Ο Leonard Cohen αγόρασε ένα σπίτι στην Ύδρα το 1960 για 1.500 δολάρια, έγραψε μερικά από τα καλύτερα τραγούδια του 20ού αιώνα στην αυλή του και επέστρεφε για δεκαετίες."
+          }
+        },
+        {
+          title: { en: "Architecture frozen in stone", el: "Αρχιτεκτονική παγωμένη σε πέτρα" },
+          text: {
+            en: "The harbour's grey stone mansions — built by 18th-century ship captains and merchants — climb the hillside in a cascade of arches, courtyards, and balconies. Many are now museums, galleries, or boutique hotels. The visual continuity with the past is extraordinary.",
+            el: "Τα γκρίζα πέτρινα αρχοντικά του λιμανιού — χτισμένα από καπετάνια και εμπόρους του 18ου αιώνα — σκαρφαλώνουν στον λόφο σε μια καταιγίδα αψίδων, αυλών και μπαλκονιών."
+          }
+        },
+        {
+          title: { en: "A serious hiking island", el: "Ένα σοβαρό νησί για πεζοπορία" },
+          text: {
+            en: "With no roads and a mountainous interior, Hydra is one of the best hiking islands in Greece. The trail to Profitis Ilias monastery (500m) offers panoramic views, and coastal paths connect beaches that are unreachable by any other means.",
+            el: "Χωρίς δρόμους και με ορεινό εσωτερικό, η Ύδρα είναι ένα από τα καλύτερα νησιά για πεζοπορία. Το μονοπάτι προς τη Μονή Προφήτη Ηλία (500μ) προσφέρει πανοραμική θέα."
+          }
+        },
+        {
+          title: { en: "Contemporary art meets tradition", el: "Σύγχρονη τέχνη συναντά παράδοση" },
+          text: {
+            en: "The Deste Foundation's Slaughterhouse — a former abattoir converted into a world-class art space — hosts rotating exhibitions by international artists. It's one of the most interesting contemporary art venues in the Mediterranean.",
+            el: "Το Σφαγείο του Ιδρύματος ΔΕΣΤΕ — ένα πρώην σφαγείο μετατροπή σε χώρο τέχνης παγκόσμιας κλάσης — φιλοξενεί περιοδικές εκθέσεις διεθνών καλλιτεχνών."
+          }
+        },
+      ],
+    },
+    {
+      title: { en: "Best time to visit Hydra", el: "Καλύτερη εποχή για να επισκεφθείς την Ύδρα" },
+      layout: "list",
+      alert: {
+        en: "Secret: Hydra in late October is magical — the summer crowds are gone, the light is extraordinary, the stone streets are quiet, and you can walk the entire island without seeing another tourist.",
+        el: "Μικρό μυστικό: Η Ύδρα στα τέλη Οκτωβρίου είναι μαγική — οι καλοκαιρινοί τουρίστες έχουν φύγει, το φως είναι εξαιρετικό, οι πέτρινες στενές ήσυχες."
+      },
+      items: [
+        {
+          title: { en: "April – May", el: "Απρίλιος – Μάιος" },
+          text: {
+            en: "Perfect. Wildflowers on the mountain trails, comfortable walking temperatures, uncrowded harbour, everything opening up. The best time for hikers.",
+            el: "Τέλεια. Άγρια λουλούδια στα ορεινά μονοπάτια, ευχάριστες θερμοκρασίες, ακαταίσχυντο λιμάνι."
+          }
+        },
+        {
+          title: { en: "June", el: "Ιούνιος" },
+          text: {
+            en: "Warm, long days, beach season begins, the harbour is lively but not overwhelmed. Excellent overall.",
+            el: "Ζεστά, μακριές μέρες, η σεζόν των παραλιών αρχίζει."
+          }
+        },
+        {
+          title: { en: "July – August", el: "Ιούλιος – Αύγουστος" },
+          text: {
+            en: "Peak season. The harbour fills with yachts and visitors, the social scene is at its peak, but walking the mountain trails in midday heat is uncomfortable. Book accommodation well ahead.",
+            el: "Αιχμή σεζόν. Το λιμάνι γεμίζει με γιοτ και επισκέπτες. Η πεζοπορία στη μεσημερια ζέστη είναι δύσκολη."
+          }
+        },
+        {
+          title: { en: "September – October", el: "Σεπτέμβριος – Οκτώβριος" },
+          text: {
+            en: "Arguably the finest period. Warm sea, golden light, thinning crowds, and the mountain trails at their best. October evenings in the harbour are unforgettable.",
+            el: "Ίσως η καλύτερη περίοδος. Ζεστή θάλασσα, χρυσό φως, λιγότεροι άνθρωποι."
+          }
+        },
+        {
+          title: { en: "November – March", el: "Νοέμβριος – Μάρτιος" },
+          text: {
+            en: "Very quiet. Most businesses close. The island has a raw, melancholic beauty — empty stone streets, empty courtyards, the sound of the sea. For some visitors, this is the real Hydra.",
+            el: "Πολύ ήσυχη. Τα περισσότερα καταστήματα κλείνουν. Το νησί έχει ακατέργαστη, μελαγχολική ομορφιά."
+          }
+        },
+      ],
+    },
+    {
+      title: { en: "How to get to Hydra", el: "Πώς φτάνεις στην Ύδρα" },
+      layout: "list",
+      alert: {
+        en: "Hydra has no airport and no car ferry — only hydrofoils and catamarans from Piraeus (1.5 hours). This car-free access is part of the island's identity.",
+        el: "Η Ύδρα δεν έχει αεροδρόμιο και δεν δέχεται αυτοκινητοφόρα πλοία — μόνο υδροπτέρυγα και καταμαράν από τον Πειραιά (1,5 ώρα)."
+      },
+      items: [
+        {
+          title: { en: "By hydrofoil from Piraeus", el: "Με υδροπτέρυγο από τον Πειραιά" },
+          text: {
+            en: "Hellenic Seaways and SeaJets operate hydrofoils and catamarans from Piraeus to Hydra. Journey time: about 1.5 hours. Multiple departures daily in summer, fewer off-season. Book at hellenicseaways.gr or seajets.gr.",
+            el: "Hellenic Seaways και SeaJets εκτελούν υδροπτέρυγα και καταμαράν από τον Πειραιά στην Ύδρα. Χρόνος ταξιδιού: 1,5 ώρα."
+          }
+        },
+        {
+          title: { en: "By ferry from Ermioni or Metochi (Poros)", el: "Με πλοίο από Ερμιονή ή Μετόχι (Πόρος)" },
+          text: {
+            en: "Less common but useful if you're island-hopping through the Saronic Gulf. Small ferries connect Ermioni and Poros (Metochi) to Hydra in about 20–30 minutes.",
+            el: "Λιγότερο συνηθισμένο αλλά χρήσιμο αν κάνετε island hopping στον Αργοσαρωνικό. Μικρά πλοία ενώνουν Ερμιονή και Πόρο με Ύδρα."
+          }
+        },
+      ],
+    },
+    {
+      title: { en: "Top things to do in Hydra", el: "Κορυφαία πράγματα στην Ύδρα" },
+      layout: "numbered",
+      items: [
+        {
+          title: { en: "Walk the harbour and discover the mansions", el: "Περπάτα στο λιμάνι και ανακάλυψε τα αρχοντικά" },
+          text: {
+            en: "The waterfront is lined with 18th-century stone mansions built by Hydra's merchant fleet captains. Many are now museums (Kountouriotis, Tompazis, Lazaros Kountouriotis) or galleries. The entire harbour is essentially an open-air museum.",
+            el: "Η παραλιακή είναι γεμάτη με πέτρινα αρχοντικά του 18ου αιώνα. Πολλά είναι πλέον μουσεία (Κουντουριώτη, Τομπάζη) ή γκαλερί."
+          }
+        },
+        {
+          title: { en: "Visit the Deste Foundation Slaughterhouse", el: "Επισκέψου το Σφαγείο ΔΕΣΤΕ" },
+          text: {
+            en: "A former abattoir converted into one of the most interesting contemporary art spaces in the Mediterranean. Free entry. Check the program for current exhibitions — they're curated by major international names.",
+            el: "Ένα πρώην σφαγείο μετατροπή σε έναν από τους πιο ενδιαφέροντες χώρους σύγχρονης τέχνης. Δωρεάν είσοδος."
+          }
+        },
+        {
+          title: { en: "Hike to Profitis Ilias Monastery", el: "Πεζοπόρησε στη Μονή Προφήτη Ηλία" },
+          text: {
+            en: "The trail from the harbour to the 18th-century monastery on Mount Eros (500m) takes about 45 minutes and rewards you with panoramic views of the Peloponnese, the Saronic Gulf, and on clear days, Crete.",
+            el: "Το μονοπάτι από το λιμάνι στη μονή του 18ου αιώνα στον Όρο Έρως (500μ) παίρνει 45 λεπτά και προσφέρει πανοραμική θέα."
+          }
+        },
+        {
+          title: { en: "Leonard Cohen's Hydra", el: "Η Ύδρα του Leonard Cohen" },
+          text: {
+            en: "Cohen's house sits above the harbour on the path towards the monastery. You can't enter it, but the walk up offers the same views he had from his terrace. A plaque marks the spot. Fans sometimes leave notes.",
+            el: "Το σπίτι του Cohen βρίσκεται πάνω από το λιμάνι στο μονοπάτι προς τη μονή. Δεν μπορείς να μπεις, αλλά η διαδρομή προσφέρει τις ίδιες θέες."
+          }
+        },
+        {
+          title: { en: "Take a water taxi to hidden beaches", el: "Πάρε θαλάσσιο ταξί σε κρυμμένες παραλίες" },
+          text: {
+            en: "Hydra's beaches are mostly accessible only by boat or on foot. Water taxis from the harbour reach Bisti, Mandraki, and Agioi Anargyroi in 10–20 minutes. Spilia, carved into the rocks near Kamini, is walkable.",
+            el: "Οι παραλίες της Ύδρας είναι προσβάσιμες κυρίως μόνο με βάρκα. Θαλάσσια ταξί από το λιμάνι σε Μπίστι, Μανδρακί και Αγίους Αναργύρους."
+          }
+        },
+        {
+          title: { en: "Wander the interior paths", el: "Περιπλανήσου στα εσωτερικά μονοπάτια" },
+          text: {
+            en: "Beyond the harbour, stone mule paths criss-cross the island connecting tiny chapels, abandoned farms, and wild coves. The path from Kamini to Vlychos passes through olive groves and offers stunning coastal views.",
+            el: "Πέρα από το λιμάνι, πέτρινα μουλαρίσια μονοπάτια διασταυρώνονται σε όλο το νησί, ενώνοντας μικρές εκκλησίες, εγκαταλελειμμένα αμπελοκτήματα και άγρια κολπάκια."
+          }
+        },
+      ],
+    },
+    {
+      title: { en: "Beaches on Hydra", el: "Παραλίες στην Ύδρα" },
+      layout: "list",
+      alert: {
+        en: "Hydra's beaches are mostly pebble or rock, reached by boat or steep paths. Bring water shoes and your own supplies — there are few facilities. The effort is always worth it.",
+        el: "Οι παραλίες της Ύδρας είναι κυρίως βραχώδεις, προσβάσιμες με βάρκα ή απότομα μονοπάτια. Φέρε νεροπαπούτσια και προμήθειες."
+      },
+      items: [
+        {
+          title: { en: "Spilia", el: "Σπίλια" },
+          text: {
+            en: "A natural rock swimming platform carved into the cliffs near Kamini. Wooden ladders lead into deep, crystal-clear water. The island's most unique swimming experience — bring a mask for snorkeling.",
+            el: "Ένα φυσικό βραχώδες μπάνιο στους βράχους κοντά στο Καμίνι. Ξύλινες σκάλες οδηγούν σε βαθύ, κρυστάλλινο νερό."
+          }
+        },
+        {
+          title: { en: "Bisti", el: "Μπίστι" },
+          text: {
+            en: "A secluded pebble beach on the southeast coast, accessible by water taxi or a 45-minute walk. Pine trees reach the water's edge, the setting is dramatic, and you may have it entirely to yourself.",
+            el: "Μια απομακρυσμένη βραχώδης παραλία στα νοτιοανατολικά, προσβάσιμη με θαλάσσιο ταξί ή με 45λεπτο πεζοπόρημα."
+          }
+        },
+        {
+          title: { en: "Kamini", el: "Καμίνι" },
+          text: {
+            en: "A small fishing hamlet 20 minutes' walk from the harbour. Two or three tavernas serve fish right on the water. The pebble beach is small but the setting — old stone houses, fishing boats, tamarisk trees — is perfect.",
+            el: "Ένα μικρό ψαροχώρι 20 λεπτά με τα πόδια από το λιμάνι. Δύο-τρία εστιατόρια σερβίρουν ψάρι ακριβώς πάνω στο νερό."
+          }
+        },
+        {
+          title: { en: "Vlychos", el: "Βλύχος" },
+          text: {
+            en: "A sheltered pebble beach 40 minutes' walk from the harbour, with a couple of tavernas and calm, clear water. Good for families who make the walk.",
+            el: "Ένα προστατευμένο βραχώδες παραλάκι 40 λεπτά με τα πόδια από το λιμάνι, με ήσυχο, καθαρό νερό."
+          }
+        },
+        {
+          title: { en: "Mandraki", el: "Μανδρακί" },
+          text: {
+            en: "One of the larger beaches, accessible by water taxi. Organized with sunbeds and a beach bar in summer. Pine-covered hills behind, deep water in front.",
+            el: "Μία από τις μεγαλύτερες παραλίες, προσβάσιμη με θαλάσσιο ταξί. Οργανωμένη με ηλιοσκοιές το καλοκαίρι."
+          }
+        },
+      ],
+    },
+    {
+      title: { en: "Local food & flavours", el: "Τοπικές γεύσεις & φαγητό" },
+      layout: "list",
+      items: [
+        {
+          title: { en: "Fresh fish at Kamini", el: "Φρέσκο ψάρι στο Καμίνι" },
+          text: {
+            en: "The tiny fishing hamlet of Kamini, 20 minutes' walk from the harbour, has two or three tavernas that serve the day's catch right on the water. Grilled fish, sea urchin, and local wine in a setting that hasn't changed in decades.",
+            el: "Το μικρό ψαροχώρι Καμίνι, 22 λεπτά με τα πόδια από το λιμάνι, έχει δύο-τρία εστιατόρια που σερβίρουν τη σημερινή σύλληψη ακριβώς πάνω στο νερό."
+          }
+        },
+        {
+          title: { en: "Amygdalota — Hydra's almond biscuits", el: "Αμυγδαλωτά — τα αμύγδαλα γλυκά της Ύδρας" },
+          text: {
+            en: "Every bakery and café on Hydra serves these fragrant almond biscuits scented with rosewater or mastic. They pair perfectly with Greek coffee on the harbour front.",
+            el: "Κάθε φούρνος και καφέ στην Ύδρα σερβίρει αυτά τα αρωματισμένα αμυγδαλωτά με νερότζαμ ή μαστίχα."
+          }
+        },
+        {
+          title: { en: "Lobster pasta at the harbour", el: "Μπαρμπούνια-μακαρόνια στο λιμάνι" },
+          text: {
+            en: "Hydra's tavernas are not cheap, but the quality of seafood justifies the prices. The lobster pasta at techne or Taverna Gitoniko is worth the splurge — cooked simply, letting the freshness speak.",
+            el: "Τα εστιατόρια της Ύδρας δεν είναι φτηνά, αλλά η ποιότητα των θαλασσινών δικαιολογεί τις τιμές."
+          }
+        },
+      ],
+    },
+    {
+      title: { en: "Practical tips", el: "Πρακτικές συμβουλές" },
+      layout: "numbered",
+      items: [
+        {
+          title: { en: "No cars — plan your luggage", el: "Χωρίς αυτοκίνητα — σχεδίασε τα αποσκευά σου" },
+          text: {
+            en: "Since there are no vehicles, all luggage is transported by donkey, mule, or hand-pulled cart. Most hotels offer porters. Pack light — it makes the arrival experience much more pleasant.",
+            el: "Δεν υπάρχουν οχήματα, οπότε τα αποσκευά μεταφέρονται με γάιδαρο, μουλάρι ή χειροκίνητο βαγγόνι. Πάρε λίγα πράγματα."
+          }
+        },
+        {
+          title: { en: "Book accommodation early for summer", el: "Κλείσε διαμονή νωρίς για το καλοκαίρι" },
+          text: {
+            en: "Hydra is small and popular — accommodation is limited and fills up fast in July–August. The best boutique hotels and captain's mansions are booked months ahead. Off-season, you'll find availability and lower prices.",
+            el: "Η Ύδρα είναι μικρή και δημοφιλής — η διαμονή είναι περιορισμένη και γεμίζει γρήγορα τον Ιούλιο–Αύγουστο."
+          }
+        },
+        {
+          title: { en: "Bring water shoes", el: "Φέρε νεροπαπούτσια" },
+          text: {
+            en: "Most Hydra beaches are pebble or rock. Water shoes make swimming access much easier and protect your feet on the stone paths between beaches.",
+            el: "Οι περισσότερες παραλίες της Ύδρας είναι βραχώδεις. Νεροπαπούτσια κάνουν την πρόσβαση πιο εύκολη."
+          }
+        },
+        {
+          title: { en: "ATMs are limited", el: "Τα ATM είναι λίγα" },
+          text: {
+            en: "There are only a couple of ATMs on the island, and they can run out of cash in peak season. Bring enough cash or a card — most places accept cards, but not all.",
+            el: "Υπάρχουν μόνο λίγα ATM στο νησί, και μπορεί να αδειάσουν την αιχμή σεζόν. Φέρε αρκετά μετρητά."
+          }
+        },
+        {
+          title: { en: "Combine with Spetses or Poros", el: "Συνδύασε με Σπέτσες ή Πόρο" },
+          text: {
+            en: "Hydra pairs perfectly with Spetses (another car-free island, 1 hour by ferry) or Poros. The Saronic Gulf circuit — Aegina, Poros, Hydra, Spetses — is one of Greece's classic multi-island routes.",
+            el: "Η Ύδρα συνδυάζεται τέλεια με Σπέτσες (άλλο νησί χωρίς αυτοκίνητα, 1 ώρα με πλοίο) ή Πόρο."
+          }
+        },
+      ],
+    },
+    {
+      title: { en: "Frequently Asked Questions", el: "Συχνές ερωτήσεις" },
+      layout: "faq",
+      items: [
+        {
+          title: { en: "How do you get around Hydra without a car?", el: "Πώς μετακινείσαι στην Ύδρα χωρίς αυτοκίνητο;" },
+          text: {
+            en: "On foot, by donkey, by water taxi, or by boat. The harbour is walkable, beaches are reached by foot paths or water taxis, and mules carry luggage and supplies to remote areas.",
+            el: "Με τα πόδια, με γάιδαρο, με θαλάσσιο ταξί ή με βάρκα. Το λιμάνι είναι πεζοπορήσιμο, οι παραλίες προσβάσιμες με μονοπάτια ή θαλάσσια ταξί."
+          }
+        },
+        {
+          title: { en: "Is Hydra expensive?", el: "Είναι ακριβή η Ύδρα;" },
+          text: {
+            en: "Compared to other Greek islands, yes — accommodation, dining, and transport all cost more. The car-free logistics, limited supply chain, and upscale character push prices up. But the experience justifies the premium.",
+            el: "Σε σύγκριση με άλλα ελληνικά νησιά, ναι — διαμονή, φαγητό και μεταφορά κοστίζουν περισσότερο. Αλλά η εμπειρία αξίζει."
+          }
+        },
+        {
+          title: { en: "How many days do I need on Hydra?", el: "Πόσες μέρες χρειάζομαι στην Ύδρα;" },
+          text: {
+            en: "2–3 days covers the highlights: harbour, mansions, Deste Foundation, a beach day, and a hike to Profitis Ilias. For a deeper experience — discovering hidden coves, reading in empty courtyards, watching light change on the stone — 4–5 days is ideal.",
+            el: "2–3 μέρες καλύπτουν τα βασικά: λιμάνι, αρχοντικά, ΔΕΣΤΕ, μια μέρα παραλίας και μια πεζοπορία στον Προφήτη Ηλία."
+          }
+        },
+        {
+          title: { en: "Can I take a car to Hydra?", el: "Μπορώ να πάρω αυτοκίνητο στην Ύδρα;" },
+          text: {
+            en: "No. Cars, motorcycles, and scooters have been banned since the 1950s. No ferry to Hydra accepts vehicles. This is non-negotiable and is what makes Hydra unique.",
+            el: "Όχι. Αυτοκίνητα, μηχανάκια και σκούτερ απαγορεύονται από τη δεκαετία του 1950. Κανένα πλοίο δεν δέχεται οχήματα."
+          }
+        },
+        {
+          title: { en: "Is Hydra good for swimming?", el: "Είναι καλή για μπάνιο η Ύδρα;" },
+          text: {
+            en: "Hydra's beaches are beautiful but mostly pebble/rock and require effort to reach. The water is exceptionally clear. If you want easy sandy beaches, Hydra may not be your best choice — but for dramatic swimming spots reached by boat, it's hard to beat.",
+            el: "Οι παραλίες της Ύδρας είναι όμορφες αλλά κυρίως βραχώδεις και απαιτούν προσπάθεια. Το νερό είναι εξαιρετικά καθαρό."
+          }
+        },
+      ],
+    },
+  ],
 };
