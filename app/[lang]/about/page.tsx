@@ -85,7 +85,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: "website",
       images: [
         {
-          url: `${SITE_URL}/images/hero/greece-main.webp`,
+          url: `${SITE_URL}/images/hero-greece.webp`,
           width: 1600,
           height: 900,
           alt: "About GoGreeceNow",
@@ -96,7 +96,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       card: "summary_large_image",
       title: pageTitle,
       description,
-      images: [`${SITE_URL}/images/hero/greece-main.webp`],
+      images: [`${SITE_URL}/images/hero-greece.webp`],
     },
   };
 }

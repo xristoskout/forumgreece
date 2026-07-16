@@ -12,12 +12,12 @@ type Props = {
 
 const seo = {
   en: {
-    title: "Greek Travel Blog | GoGreeceNow",
+    title: "Greek Travel Blog: Tips, Guides & Local Insights",
     description: "Read the latest travel tips, destination guides, and local insights for planning your trip to Greece.",
     path: "/en/blog",
   },
   el: {
-    title: "Ταξιδιωτικό Blog | GoGreeceNow",
+    title: "Ταξιδιωτικό Blog: Tips, Οδηγοί & Συμβουλές",
     description: "Διάβασε τα τελευταία ταξιδιωτικά tips, οδηγούς προορισμών και τοπικές συμβουλές για το ταξίδι σου στην Ελλάδα.",
     path: "/el/blog",
   },

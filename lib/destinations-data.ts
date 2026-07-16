@@ -920,8 +920,8 @@ export const destinations: Destination[] = [
     ],
     seo: {
       title: {
-        en: "Chania Travel Guide 2026 | Venetian Harbour, Old Market Reopened, Beaches & Best Restaurants",
-        el: "Χανιά: Οδηγός Ταξιδιού 2026 | Ενετικό Λιμάνι, Δημοτική Αγορά, Παραλίες & Καλύτερα Εστιατόρια"
+        en: "Chania Travel Guide: Venetian Harbour, Beaches & Best Restaurants",
+        el: "Χανιά: Οδηγός Ταξιδιού — Ενετικό Λιμάνι, Παραλίες & Εστιατόρια"
       },
       description: {
         en: "Chania 2026 — fully updated guide. Municipal Market reopens summer 2026, Hilton opens in the Old Town, JW Marriott on Marathi Beach. Venetian harbour, Splantzia, Balos, Elafonisi, Samaria Gorge, and the best restaurants in western Crete.",
@@ -1196,8 +1196,8 @@ export const destinations: Destination[] = [
     featured: true,
     seo: {
       title: {
-        en: "Samothraki Travel Guide: Sanctuary of the Gods, Waterfalls & Wild Island | GoGreeceNow",
-        el: "Σαμοθράκη: Οδηγός Ταξιδιού — Ιερό Θεών, Καταρράκτες & Άγριο Νησί"
+        en: "Samothraki Travel Guide: Waterfalls, Sanctuary & Wild Island",
+        el: "Σαμοθράκη: Οδηγός Ταξιδιού — Καταρράκτες, Ιερό & Άγριο Νησί"
       },
       description: {
         en: "Complete travel guide to Samothraki — the sacred mountain island of the North Aegean, home of the Sanctuary of the Great Gods, the Winged Victory of Samothrace, wild rivers with waterfalls, Mount Fengari (1,611m), natural hot springs at Therma, and one of the most untamed natural environments in Greece.",
