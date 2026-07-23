@@ -1326,13 +1326,13 @@ It's the kind of place that rewards low expectations and slow movement. It also 
 
 ## Getting There: Day Trips from Patras
 
-**By car:** Nafpaktos is 52 kilometers from Patras city center — about 45 minutes including the bridge. Messolonghi is around 90 kilometers, roughly 1.5 hours. Galaxidi adds another 45 minutes beyond Nafpaktos. Kalogria beach goes the other direction — 35 kilometers west, about 40 minutes.
+- **By car:** Nafpaktos is 52 kilometers from Patras city center — about 45 minutes including the bridge. Messolonghi is around 90 kilometers, roughly 1.5 hours. Galaxidi adds another 45 minutes beyond Nafpaktos. Kalogria beach goes the other direction — 35 kilometers west, about 40 minutes.
 
-**By public transport:** Buses from Patras to Nafpaktos run but are infrequent, and connections onward to Messolonghi or Galaxidi require careful planning and patience. For anything beyond a single-destination day trip, public transport is not practical.
+- **By public transport:** Buses from Patras to Nafpaktos run but are infrequent, and connections onward to Messolonghi or Galaxidi require careful planning and patience. For anything beyond a single-destination day trip, public transport is not practical.
 
-**By taxi or private transfer:** For travelers who want to cover Nafpaktos, Messolonghi, and possibly Galaxidi in a single day — or who simply don't want to navigate the bridge toll, unfamiliar roads, and limited parking — a private taxi from Patras is the most practical option. The distances between stops make this kind of touring considerably easier with a driver who knows the routes.
+- **By taxi or private transfer:** For travelers who want to cover Nafpaktos, Messolonghi, and possibly Galaxidi in a single day — or who simply don't want to navigate the bridge toll, unfamiliar roads, and limited parking — a private taxi from Patras is the most practical option. The distances between stops make this kind of touring considerably easier with a driver who knows the routes.
 
-[Taxi Express Patras](https://taxiexpresspatras.gr/) operates private taxi and excursion services from Patras covering the Gulf of Patras corridor — including Nafpaktos, Messolonghi, Galaxidi, and connections to Delphi and Ancient Olympia. A reliable option for travelers who want to cover this coastline without renting a car.
+- **Taxi Express Patras:** [Taxi Express Patras](https://taxiexpresspatras.gr/) operates private taxi and excursion services from Patras covering the Gulf of Patras corridor — including Nafpaktos, Messolonghi, Galaxidi, and connections to Delphi and Ancient Olympia. A reliable option for travelers who want to cover this coastline without renting a car.
 
 ---
 
@@ -1438,11 +1438,11 @@ For anyone spending more than ten days in Greece, or anyone who's already done t
 
 ## Πώς Φτάνεις: Εκδρομές από την Πάτρα
 
-**Με αυτοκίνητο:** Η Ναύπακτος είναι 52 χλμ. — περίπου 45 λεπτά με τη γέφυρα. Το Μεσολόγγι περίπου 1,5 ώρα. Το Γαλαξίδι ακόμα 45 λεπτά πέρα από Ναύπακτο. Η Καλόγρια 35 χλμ. δυτικά, 40 λεπτά.
+- **Με αυτοκίνητο:** Η Ναύπακτος είναι 52 χλμ. — περίπου 45 λεπτά με τη γέφυρα. Το Μεσολόγγι περίπου 1,5 ώρα. Το Γαλαξίδι ακόμα 45 λεπτά πέρα από Ναύπακτο. Η Καλόγρια 35 χλμ. δυτικά, 40 λεπτά.
 
-**Με δημόσια μέσα:** Λεωφορεία Πάτρα–Ναύπακτος υπάρχουν αλλά σπάνια. Για περισσότερους από έναν προορισμό, τα δημόσια μέσα δεν είναι πρακτικά.
+- **Με δημόσια μέσα:** Λεωφορεία Πάτρα–Ναύπακτος υπάρχουν αλλά σπάνια. Για περισσότερους από έναν προορισμό, τα δημόσια μέσα δεν είναι πρακτικά.
 
-**Με ταξί ή ιδιωτική μεταφορά:** Για ταξιδιώτες που θέλουν να καλύψουν Ναύπακτο, Μεσολόγγι και Γαλαξίδι σε μια μέρα — ή που απλά δεν θέλουν να οδηγήσουν — ένα ιδιωτικό ταξί από την Πάτρα είναι η πιο πρακτική επιλογή.
+- **Με ταξί ή ιδιωτική μεταφορά:** Για ταξιδιώτες που θέλουν να καλύψουν Ναύπακτο, Μεσολόγγι και Γαλαξίδι σε μια μέρα — ή που απλά δεν θέλουν να οδηγήσουν — ένα ιδιωτικό ταξί από την Πάτρα είναι η πιο πρακτική επιλογή.
 
 ---
 
