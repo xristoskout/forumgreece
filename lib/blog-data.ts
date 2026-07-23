@@ -1248,7 +1248,7 @@ We can help you choose the right island, match you with the perfect hotel, and b
 
 - **Best beach near Patras:** Kalogria (~35 km west)
 - **Best town across the water:** Nafpaktos (Lepanto) — 52 km via bridge
-- **Bridge toll (Rio–Antirrion):** approx. €13.10 for a passenger car (2025)
+- **Bridge toll (Rio–Antirrion):** €15.90 for a passenger car (2025)
 - **Best season:** May–June or September–October
 - **Day trip range from Patras:** Nafpaktos 45 min / Messolonghi 1.5 hr / Galaxidi 2 hr
 
@@ -1280,7 +1280,7 @@ Just north of Kalogria, the Araxos Peninsula stretches into the Gulf of Patras. 
 
 The Charilaos Trikoupis Bridge connecting Rio (just north of Patras) to Antirrion in Aetolia-Acarnania is one of the longest cable-stayed bridges in Europe at 2.2 kilometers. It opened in 2004, replacing a ferry crossing that had operated for centuries across this narrow strait.
 
-Driving across it is genuinely impressive. The bridge rises high above the water, and on a clear day you can see south toward the open Corinthian Gulf and north into the mountains of central Greece. The crossing takes about 10 minutes. The toll is around €13.10 for a regular passenger car.
+Driving across it is genuinely impressive. The bridge rises high above the water, and on a clear day you can see south toward the open Corinthian Gulf and north into the mountains of central Greece. The crossing takes about 10 minutes. The toll is €15.90 for a regular passenger car.
 
 **Secret Note:** If you're crossing for the first time, slow down (within reason) as you approach the Antirrion side going north — the view back toward the mountains above Patras is the better angle. On the return crossing, the descent toward Rio with the Peloponnese hills rising behind gives you a sense of just how dramatically this bridge spans what was once an impassable geographic boundary. Greeks call it simply "η γέφυρα" — the bridge — with no further specification needed.
 
@@ -1342,7 +1342,7 @@ It's the kind of place that rewards low expectations and slow movement. It also 
 
 - **Getting to Patras from Athens:** KTEL intercity buses, ~3 hours. Also accessible by train (slower but scenic along the Corinthian coast).
 - **Ferry connections to Patras:** Italy (Ancona, Venice, Bari, Brindisi); Ionian islands (Corfu, Kefalonia, Ithaca, Zakynthos).
-- **Bridge toll (2025):** ~€13.10 passenger car (one way). Verify current rates — they update periodically. Payment by card accepted.
+- **Bridge toll (2025):** €15.90 passenger car (one way). Payment by card accepted.
 - **Accommodation:** Patras has a full range of hotels for port stays. For the Aetolian side, staying in Nafpaktos itself is worthwhile — there are good small hotels near the harbor.
 - **Best months:** May–June or September–October. The region is noticeably cooler than the Aegean islands and the beaches are rarely crowded outside August.
 - **Nafpaktos to Athens:** ~230 km, about 2.5 hours by car. Combines naturally with a Delphi visit (70 km north of Nafpaktos).
@@ -1367,7 +1367,7 @@ For anyone spending more than ten days in Greece, or anyone who's already done t
 
 - **Καλύτερη παραλία κοντά στην Πάτρα:** Καλόγρια (~35 χλμ. δυτικά)
 - **Καλύτερη πόλη απέναντι:** Ναύπακτος (Λεπάντο) — 52 χλμ. με γέφυρα
-- **Τέλος γέφυρας (Ρίο–Αντίρριο):** περίπου €13,10 για επιβατικό αυτοκίνητο (2025)
+- **Τέλος γέφυρας (Ρίο–Αντίρριο):** €15,90 για επιβατικό αυτοκίνητο (2025)
 - **Καλύτερη εποχή:** Μάιος–Ιούνιος ή Σεπτέμβριος–Οκτώβριος
 
 ## Η Πάτρα η ίδια: Ρύθμισε τις προσδοκίες σου
@@ -1396,7 +1396,7 @@ For anyone spending more than ten days in Greece, or anyone who's already done t
 
 Η γέφυρα Χαρίλαου Τρικούπη συνδέει το Ρίο με το Αντίρριο — 2,2 χιλιόμετρα, μία από τις μεγαλύτερες καλωδιωτές γέφυρες της Ευρώπης. Άνοιξε το 2004, αντικαθιστώντας ένα πλοίο που λειτουργούσε γιαιώνες.
 
-Η διέλευση παίρνει περίπου 10 λεπτά. Το τέλος είναι περίπου €13,10.
+Η διέλευση παίρνει περίπου 10 λεπτά. Το τέλος είναι €15,90.
 
 **Secret Note:** Αν περνάς για πρώτη φορά, αργήσε (λογικά) καθώς πλησιάζεις το Αντίρριο — η θέα πίσω προς τα βουνά πάνω από την Πάτρα είναι η καλύτερη γωνιά.
 
@@ -1450,7 +1450,7 @@ For anyone spending more than ten days in Greece, or anyone who's already done t
 
 - **Πώς φτάνεις στην Πάτρα από την Αθήνα:** KTEL, ~3 ώρες. Και με τρένο (πιο αργό αλλά θεαματικό).
 - **Ακτοπλοϊκές συνδέσεις Πάτρας:** Ιταλία (Ανκόνα, Βενετία, Μπάρι, Μπρίντιζι); Ιόνια νησιά (Κέρκυρα, Κεφαλλονιά, Ιθάκη, Ζάκυνθος).
-- **Τέλος γέφυρας (2025):** ~€13,10 επιβατικό (μονής). Επιβεβαίωσε τις τρέχουσες τιμές.
+- **Τέλος γέφυρας (2025):** €15,90 επιβατικό (μονής).
 - **Διαμονή:** Η Πάτρα έχει πλήρη ποικιλία ξενοδοχείων. Για την Αιτωλική πλευρά, μείνε στη Ναύπακτο — υπάρχουν καλά μικρά ξενοδοχεία κοντά στο λιμάνι.
 - **Καλύτεροι μήνες:** Μάιος–Ιούνιος ή Σεπτέμβριος–Οκτώβριος.
 
