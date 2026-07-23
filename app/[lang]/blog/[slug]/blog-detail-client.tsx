@@ -76,16 +76,34 @@ export default function BlogDetailClient({ post, lang }: Props) {
         out.push(`<h2 class="mt-10 mb-4 text-2xl font-bold text-slate-900">${line.replace("## ", "")}</h2>`);
       } else if (line.startsWith("### ")) {
         out.push(`<h3 class="mt-8 mb-3 text-xl font-bold text-slate-900">${line.replace("### ", "")}</h3>`);
-      } else if (line.startsWith("**") && line.endsWith("**")) {
-        out.push(`<p class="text-base font-bold leading-8 text-slate-900">${line.replace(/^\*\*|\*\*$/g, "")}</p>`);
-      } else if (line.startsWith("- **") && line.includes("**:")) {
-        const rest = line.replace("- **", "").replace("**:", ":");
-        out.push(`<li class="ml-4 list-disc text-slate-600"><strong>${rest}</strong></li>`);
-      } else if (line.startsWith("- ")) {
-        out.push(`<li class="ml-4 list-disc text-slate-600">${line.replace("- ", "")}</li>`);
       } else {
-        const withLinks = line.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, text, url) => `<a href="${withLang(url)}" class="text-indigo-600 underline hover:text-indigo-800 transition-colors font-medium">${text}</a>`);
-        out.push(`<p class="text-base leading-8 text-slate-600">${withLinks}</p>`);
+        const calloutMatch = line.match(/^\*\*(.+?):\*\*\s*(.*)/);
+        if (calloutMatch && !line.endsWith("**")) {
+          const [, label, body] = calloutMatch;
+          const configs: Record<string, { bg: string; border: string; icon: string; labelCls: string; bodyCls: string }> = {
+            "Honest Note":          { bg: "bg-amber-50",   border: "border-amber-200",  icon: "\uD83D\uDCDD", labelCls: "text-amber-800",  bodyCls: "text-amber-700/80" },
+            "Secret Note":          { bg: "bg-violet-50",  border: "border-violet-200", icon: "\uD83E\uDD2B", labelCls: "text-violet-800", bodyCls: "text-violet-700/80" },
+            "Honest Skip":          { bg: "bg-rose-50",    border: "border-rose-200",   icon: "\u23ED\uFE0F",  labelCls: "text-rose-800",   bodyCls: "text-rose-700/80" },
+            "\u0395\u03B9\u03BB\u03B9\u03BA\u03C1\u03B9\u03BD\u03AE\u03C2 \u03A3\u03B7\u03BC\u03B5\u03AF\u03C9\u03C3\u03B7": { bg: "bg-amber-50", border: "border-amber-200", icon: "\uD83D\uDCDD", labelCls: "text-amber-800", bodyCls: "text-amber-700/80" },
+          };
+          const cfg = configs[label];
+          if (cfg) {
+            const linkedBody = body.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_: string, t: string, u: string) => `<a href="${withLang(u)}" class="underline hover:text-current transition-colors font-medium">${t}</a>`);
+            out.push(`<div class="${cfg.bg} border ${cfg.border} rounded-xl p-5 my-6"><p class="text-base leading-8 ${cfg.bodyCls}"><span class="mr-1.5">${cfg.icon}</span><strong class="${cfg.labelCls}">${label}:</strong> ${linkedBody}</p></div>`);
+          } else {
+            out.push(`<p class="text-base leading-8 text-slate-600">${line}</p>`);
+          }
+        } else if (line.startsWith("**") && line.endsWith("**")) {
+          out.push(`<p class="text-base font-bold leading-8 text-slate-900">${line.replace(/^\*\*|\*\*$/g, "")}</p>`);
+        } else if (line.startsWith("- **") && line.includes("**:")) {
+          const rest = line.replace("- **", "").replace("**:", ":");
+          out.push(`<li class="ml-4 list-disc text-slate-600"><strong>${rest}</strong></li>`);
+        } else if (line.startsWith("- ")) {
+          out.push(`<li class="ml-4 list-disc text-slate-600">${line.replace("- ", "")}</li>`);
+        } else {
+          const withLinks = line.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, text, url) => `<a href="${withLang(url)}" class="text-indigo-600 underline hover:text-indigo-800 transition-colors font-medium">${text}</a>`);
+          out.push(`<p class="text-base leading-8 text-slate-600">${withLinks}</p>`);
+        }
       }
     }
     if (inTable) flushTable();

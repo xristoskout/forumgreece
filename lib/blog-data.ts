@@ -1332,7 +1332,7 @@ It's the kind of place that rewards low expectations and slow movement. It also 
 
 **By taxi or private transfer:** For travelers who want to cover Nafpaktos, Messolonghi, and possibly Galaxidi in a single day — or who simply don't want to navigate the bridge toll, unfamiliar roads, and limited parking — a private taxi from Patras is the most practical option. The distances between stops make this kind of touring considerably easier with a driver who knows the routes.
 
-**Taxi Express Patras** operates private taxi and excursion services from Patras covering the Gulf of Patras corridor — including Nafpaktos, Messolonghi, Galaxidi, and connections to Delphi and Ancient Olympia. A reliable option for travelers who want to cover this coastline without renting a car.
+[Taxi Express Patras](https://taxiexpresspatras.gr/) operates private taxi and excursion services from Patras covering the Gulf of Patras corridor — including Nafpaktos, Messolonghi, Galaxidi, and connections to Delphi and Ancient Olympia. A reliable option for travelers who want to cover this coastline without renting a car.
 
 ---
 
