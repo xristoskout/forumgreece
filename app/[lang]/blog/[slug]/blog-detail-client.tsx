@@ -97,7 +97,8 @@ export default function BlogDetailClient({ post, lang }: Props) {
           out.push(`<p class="text-base font-bold leading-8 text-slate-900">${line.replace(/^\*\*|\*\*$/g, "")}</p>`);
         } else if (line.startsWith("- **") && line.includes("**:")) {
           const rest = line.replace("- **", "").replace("**:", ":");
-          out.push(`<li class="ml-4 list-disc text-slate-600"><strong>${rest}</strong></li>`);
+          const linkedRest = rest.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_: string, t: string, u: string) => `<a href="${withLang(u)}" class="underline hover:text-current transition-colors font-medium">${t}</a>`);
+          out.push(`<div class="flex items-start gap-3 rounded-xl border border-slate-200 bg-slate-50 p-4 my-3"><span class="mt-0.5 shrink-0 h-2 w-2 rounded-full bg-indigo-500"></span><p class="text-sm leading-7 text-slate-700">${linkedRest}</p></div>`);
         } else if (line.startsWith("- ")) {
           out.push(`<li class="ml-4 list-disc text-slate-600">${line.replace("- ", "")}</li>`);
         } else {
