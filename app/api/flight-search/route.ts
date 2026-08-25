@@ -13,7 +13,7 @@ export async function GET(req: NextRequest) {
   const returnDate = req.nextUrl.searchParams.get("return_date");
   const passengers = req.nextUrl.searchParams.get("passengers") || "1";
   const travelClass = req.nextUrl.searchParams.get("travel_class") || "1";
-  const type = req.nextUrl.searchParams.get("type") || "1";
+  let type = req.nextUrl.searchParams.get("type") || "1";
   const currency = req.nextUrl.searchParams.get("currency") || "EUR";
 
   if (!from || !to || !outboundDate) {
@@ -21,6 +21,10 @@ export async function GET(req: NextRequest) {
       { error: "Missing required params: from, to, outbound_date" },
       { status: 400 }
     );
+  }
+
+  if (type === "1" && !returnDate) {
+    type = "2";
   }
 
   const params = new URLSearchParams({

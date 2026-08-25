@@ -287,6 +287,10 @@ export default function FlightSearchClient({
 
   const search = async () => {
     if (!fromCode || !toCode || !outboundDate) return;
+    if (tripType === "1" && !returnDate) {
+      setError("Please select a return date for round trip.");
+      return;
+    }
     setLoading(true);
     setError(null);
     setResults([]);
